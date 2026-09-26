@@ -27,7 +27,7 @@
     },
     "cost_usd": 5404301,
     "description": "Replace the Queensboro – Ft Johnson 115 kV Line and structures as they have reached the end of life.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Queensboro",
         "norm": "QUEENSBORO",
@@ -36,9 +36,20 @@
       {
         "name": "Ft Johnson",
         "norm": "FT JOHNSON",
-        "raw": "Ft Johnson 115 kV & Queensboro"
+        "raw": "Ft Johnson 115 kV"
+      },
+      {
+        "name": "Bayfront",
+        "norm": "BAYFRONT",
+        "raw": "Bayfront 115kV"
+      },
+      {
+        "name": "James Island",
+        "norm": "JAMES ISLAND",
+        "raw": "James Island Sect"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 1,
@@ -91,7 +102,10 @@
     "need": "This project is required due to address end of life issues.",
     "owner_code": null,
     "project_key": "DESC:6807 B",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 1 of 44\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nQueensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV\n(Queensboro-James Island Sect)\nProject ID\n6807 B\nProject Description\nReplace the Queensboro – Ft Johnson 115 kV Line and structures as they have reached the end of life.\nProject Need\nThis project is required due to address end of life issues.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/23\nEstimated Project Cost\nPrevious 2024 2025 2026 2027 2028 Total*\n$4,604,301 $800,000 $0 $0 $0 $0 $5,404,301\n*Total Estimated Amount applied to 2024 Rate Base Calculation",
     "source": {
       "page": 1,
@@ -1495,7 +1509,7 @@
     },
     "cost_usd": 11745543,
     "description": "9.5 miles. Scope includes rebuilding the 115 and 46 kV lines in this corridor SPDC.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Stevens Creek",
         "norm": "STEVENS CREEK",
@@ -1504,9 +1518,15 @@
       {
         "name": "Hooks",
         "norm": "HOOKS",
-        "raw": "Hooks 115kV/LR Plumb Branch 46kV Rebuilds"
+        "raw": "Hooks 115kV"
+      },
+      {
+        "name": "LR Plumb Branch",
+        "norm": "LR PLUMB BRANCH",
+        "raw": "LR Plumb Branch 46kV Rebuilds"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 14,
@@ -1559,7 +1579,10 @@
     "need": "This project is required to address end of life and reliability issues on these lines.",
     "owner_code": null,
     "project_key": "DESC:6809 E",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 14 of 44\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nStevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds\nProject ID\n6809 E\nProject Description\n9.5 miles. Scope includes rebuilding the 115 and 46 kV lines in this corridor SPDC.\nProject Need\nThis project is required to address end of life and reliability issues on these lines.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/24\nEstimated Project Cost\nPrevious 2024 2025 2026 2027 2028 Total\n$8,195,543 $3,550,000 $0 $0 $0 $0 $11,745,543\n*Total Estimated Amount applied to the 2024 Rate Base Calculation",
     "source": {
       "page": 14,
@@ -4270,7 +4293,7 @@
     },
     "cost_usd": 34174682,
     "description": "Construct a 230 kV transmission line from Church Creek to Charleston Transmission. The Church Creek – Faber Place 230kV and 115kV lines will be rebuilt, and a 230kV line will be added between Faber Place and Charleston Transmission. Add 230/115kV transformer at Charleston Transmission. Add/upgrade terminals and bus work at impacted substations.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Church Creek",
         "norm": "CHURCH CREEK",
@@ -4280,8 +4303,14 @@
         "name": "Faber Place",
         "norm": "FABER PLACE",
         "raw": "Faber Place"
+      },
+      {
+        "name": "Charleston Transmission",
+        "norm": "CHARLESTON TRANSMISSION",
+        "raw": "Charleston Transmission"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 39,
@@ -4334,7 +4363,10 @@
     "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
     "owner_code": null,
     "project_key": "DESC:6847 A-B, D-H",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_multi_asset"
+    ],
     "raw_text": "Project 39 of 44\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nChurch Creek – Faber Place – Charleston Transmission: Add 230kV Line\nProject ID\n6847 A-B, D-H\nProject Description\nConstruct a 230 kV transmission line from Church Creek to Charleston Transmission. The Church Creek –\nFaber Place 230kV and 115kV lines will be rebuilt, and a 230kV line will be added between Faber Place\nand Charleston Transmission. Add 230/115kV transformer at Charleston Transmission. Add/upgrade\nterminals and bus work at impacted substations.\nProject Need\nThis project is needed to improve system performance and to meet NERC TPL and internal DESC\nPlanning Criteria for reliability.\nProject Status\nIn Progress\nPlanned In-Service Date\n05/01/2027\nEstimated Project Cost\nPrevious 2024 2025 2026 2027 2028 Total*\n$1,772,338 $975,000 $4,250,000 $21,063,338 $6,114,006 $0 $34,174,682\n*Total Estimated Amount applied to 2027 Rate Base Calculation",
     "source": {
       "page": 39,
@@ -5057,11 +5089,16 @@
     },
     "cost_usd": 11630257,
     "description": "Expand existing Okatie Transmission sub, add a 230-115 autobank and fold the Jasper – Yemassee 230 kV #1 line into the 230 kV side. Construct two additional 115 kV bus tie lines.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Okatie",
         "norm": "OKATIE",
-        "raw": "Okatie 230-115kV Substation, Jasper"
+        "raw": "Okatie 230-115kV Substation"
+      },
+      {
+        "name": "Jasper",
+        "norm": "JASPER",
+        "raw": "Jasper"
       },
       {
         "name": "Yemassee",
@@ -5069,6 +5106,7 @@
         "raw": "Yemassee 230kV #1 Fold-in"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 2,
@@ -5121,7 +5159,10 @@
     "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
     "owner_code": null,
     "project_key": "DESC:0139 M,N",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_multi_asset"
+    ],
     "raw_text": "Project 2 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nOkatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in\nProject ID\n0139 M,N\nProject Description\nExpand existing Okatie Transmission sub, add a 230-115 autobank and fold the Jasper – Yemassee 230\nkV #1 line into the 230 kV side. Construct two additional 115 kV bus tie lines.\nProject Need\nThis project is needed to improve system performance and to meet NERC TPL and internal DESC\nPlanning Criteria for reliability.\nProject Status\nIn Progress\nPlanned In-Service Date\n5/31/2026\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$7,204,010 $3,401,335 $1,024,912 $0 $0 $0 $11,630,257\n*Total Estimated Amount applied to 2026 Rate Base Calculation",
     "source": {
       "page": 2,
@@ -5284,7 +5325,7 @@
     },
     "cost_usd": 12000000,
     "description": "Replace wooden structures with Self Supporting Steel Structures and restring with 1272 ACSR conductor for the Burton – Frogmore Transmission section.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Burton",
         "norm": "BURTON",
@@ -5294,8 +5335,14 @@
         "name": "St Helena",
         "norm": "ST HELENA",
         "raw": "St Helena 115kV"
+      },
+      {
+        "name": "Frogmore Transmission",
+        "norm": "FROGMORE TRANSMISSION",
+        "raw": "Frogmore Transmission Section"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 4,
@@ -5348,7 +5395,10 @@
     "need": "This project is required to address end of life and reliability issues on these lines.",
     "owner_code": null,
     "project_key": "DESC:6808 K",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 4 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nBurton-St Helena 115kV: Rebuild Burton-Frogmore Transmission\nSection\nProject ID\n6808 K\nProject Description\nReplace wooden structures with Self Supporting Steel Structures and restring with 1272 ACSR conductor\nfor the Burton – Frogmore Transmission section.\nProject Need\nThis project is required to address end of life and reliability issues on these lines.\nProject Status\nIn Progress\nPlanned In-Service Date\n4/30/2025\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$11,200,001 $799,999 $0 $0 $0 $0 $12,000,000\n*Total Estimated Amount applied to 2025",
     "source": {
       "page": 4,
@@ -5397,7 +5447,7 @@
     },
     "cost_usd": 18825000,
     "description": "Replace wooden structures with Self Supporting Steel Structures and upgrade to 795 ACSR for the Frogmore Distribution Tap – St. Helena section.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Burton",
         "norm": "BURTON",
@@ -5406,9 +5456,15 @@
       {
         "name": "St Helena",
         "norm": "ST HELENA",
-        "raw": "St Helena 115kV"
+        "raw": "St Helena"
+      },
+      {
+        "name": "Frogmore Distribution Tap",
+        "norm": "FROGMORE DISTRIBUTION TAP",
+        "raw": "Frogmore Distribution Tap"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 5,
@@ -5461,7 +5517,10 @@
     "need": "This project is required to address end of life and reliability issues on these lines.",
     "owner_code": null,
     "project_key": "DESC:6808 L",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 5 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nBurton-St Helena 115kV: Frogmore Distribution - St Helena\nProject ID\n6808 L\nProject Description\nReplace wooden structures with Self Supporting Steel Structures and upgrade to 795 ACSR for the\nFrogmore Distribution Tap – St. Helena section.\nProject Need\nThis project is required to address end of life and reliability issues on these lines.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/27\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$3,400,000 $3,300,000 $3,273,669 $8,851,331 $0 $0 $18,825,000\n*Total Estimated Amount applied to 2027 Rate Base Calculations",
     "source": {
       "page": 5,
@@ -5510,7 +5569,7 @@
     },
     "cost_usd": 8667157,
     "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and restring with standard 1272 ACSR conductor.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "VCS1",
         "norm": "VCS1",
@@ -5519,9 +5578,15 @@
       {
         "name": "Denny Terrace",
         "norm": "DENNY TERRACE",
-        "raw": "Denny Terrace 230kV & VCS1"
+        "raw": "Denny Terrace 230kV"
+      },
+      {
+        "name": "Pineland",
+        "norm": "PINELAND",
+        "raw": "Pineland 230kV"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 6,
@@ -5574,7 +5639,10 @@
     "need": "This project is required to address end of life and reliability issues on these lines.",
     "owner_code": null,
     "project_key": "DESC:6808 N,O",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_multi_asset"
+    ],
     "raw_text": "Project 6 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nVCS1-Denny Terrace 230kV & VCS1-Pineland 230kV: Rebuild Single\nCircuit Sections\nProject ID\n6808 N,O\nProject Description\nReplace wooden H-Frame structures with Self Supporting Steel Structures and restring with standard\n1272 ACSR conductor.\nProject Need\nThis project is required to address end of life and reliability issues on these lines.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/27\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$567,157 $0 $100,000 $8,000,000 $0 $0 $8,667,157\n*Total Estimated Amount applied to the 2027 Rate Base Calculations",
     "source": {
       "page": 6,
@@ -5962,7 +6030,7 @@
     },
     "cost_usd": 13218768,
     "description": "Replace wooden structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Faber Place",
         "norm": "FABER PLACE",
@@ -5971,9 +6039,15 @@
       {
         "name": "Bayfront",
         "norm": "BAYFRONT",
-        "raw": "Bayfront 115kV"
+        "raw": "Bayfront"
+      },
+      {
+        "name": "North Bridge Terrace",
+        "norm": "NORTH BRIDGE TERRACE",
+        "raw": "North Bridge Terrace"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 10,
@@ -6026,7 +6100,10 @@
     "need": "This project is required to address end of life and reliability issues on these lines.",
     "owner_code": null,
     "project_key": "DESC:6808 V",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 10 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nFaber Place-Bayfront 115kV: Rebuild North Bridge Terrace to Bayfront\nSection\nProject ID\n6808 V\nProject Description\nReplace wooden structures with Self Supporting Steel Structures and upgrade conductor to standard\n1272 ACSR.\nProject Need\nThis project is required to address end of life and reliability issues on these lines.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/28\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$918,768 $100,000 $200,000 $6,000,000 $6,000,000 $0 $13,218,768\n*Total Estimated Amount applied to 2028 Rate Base Calculation",
     "source": {
       "page": 10,
@@ -6298,13 +6375,24 @@
     },
     "cost_usd": 11182924,
     "description": "Replace switch house, switch house equipment, and relay panels at Williams Street substation. Replace the switch house at AM Williams substation. Add Switching House at McMeekin Substation to move relays from plant relay room.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Williams St Sub",
         "norm": "WILLIAMS ST",
         "raw": "Williams St Sub"
+      },
+      {
+        "name": "AM Williams Sub",
+        "norm": "AM WILLIAMS",
+        "raw": "AM Williams Sub"
+      },
+      {
+        "name": "McMeekin Sub",
+        "norm": "MCMEEKIN",
+        "raw": "McMeekin Sub"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 13,
@@ -6357,7 +6445,10 @@
     "need": "This project is required to address end of life and maintenance issues on these transformers.",
     "owner_code": null,
     "project_key": "DESC:1060A, I, L",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_multi_asset"
+    ],
     "raw_text": "Project 13 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nWilliams St Sub: Replace Sw House & Relays, AM Williams Sub: Replace\nSw House, and McMeekin Sub: Add Sw House\nProject ID\n1060A, I, L\nProject Description\nReplace switch house, switch house equipment, and relay panels at Williams Street substation. Replace\nthe switch house at AM Williams substation. Add Switching House at McMeekin Substation to move\nrelays from plant relay room.\nProject Need\nThis project is required to address end of life and maintenance issues on these transformers.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/28\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$2,098,924 $650,000 $1,700,000 $4,134,000 $2,600,000 $0 $11,182,924\n*Total Estimated Amount applied to 2028 Rate Base Calculation",
     "source": {
       "page": 13,
@@ -7292,13 +7383,29 @@
     },
     "cost_usd": 9678370,
     "description": "Rebuilding the Williams Goose Creek 230 and 115 kV lines and the Williams - Faber Place 230 kV line across the Goose Creek Reservoir.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Goose Creek Reservoir",
         "norm": "GOOSE CREEK RESERVOIR",
         "raw": "Goose Creek Reservoir"
+      },
+      {
+        "name": "Williams",
+        "norm": "WILLIAMS",
+        "raw": "Williams"
+      },
+      {
+        "name": "Goose Creek",
+        "norm": "GOOSE CREEK",
+        "raw": "Goose Creek"
+      },
+      {
+        "name": "Faber Place",
+        "norm": "FABER PLACE",
+        "raw": "Faber Place"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 22,
@@ -7351,7 +7458,10 @@
     "need": "This project is required to address end of life and maintenance issues.",
     "owner_code": null,
     "project_key": "DESC:06810 G",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 22 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nGoose Creek Reservoir: Rebuild Transmission Line Crossings\nProject ID\n06810 G\nProject Description\nRebuilding the Williams Goose Creek 230 and 115 kV lines and the Williams - Faber Place 230 kV line\nacross the Goose Creek Reservoir.\nProject Need\nThis project is required to address end of life and maintenance issues.\nProject Status\nIn Progress\nPlanned In-Service Date\n10/31/2025\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$3,378,370 $6,300,000 $0 $0 $0 $0 $9,678,370\n*Total Estimated Amount applied to 2025 Rate Base Calculation",
     "source": {
       "page": 22,
@@ -7398,13 +7508,14 @@
     },
     "cost_usd": 12475000,
     "description": "Replacing several wood pole sections on the Summerville 115 kV Loop that have reached the end of life.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
-        "name": "Summerville",
-        "norm": "SUMMERVILLE",
+        "name": "Summerville 115kV Loop",
+        "norm": "SUMMERVILLE 115KV LOOP",
         "raw": "Summerville 115kV Loop"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 23,
@@ -7457,7 +7568,10 @@
     "need": "This project is required to address end of life and maintenance issues.",
     "owner_code": null,
     "project_key": "DESC:06810 H",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
+    ],
     "raw_text": "Project 23 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nSummerville 115kV Loop: Rebuild\nProject ID\n06810 H\nProject Description\nReplacing several wood pole sections on the Summerville 115 kV Loop that have reached the end of life.\nProject Need\nThis project is required to address end of life and maintenance issues.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/25\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$8,475,000 $4,000,000 $0 $0 $0 $0 $12,475,000\n*Total Estimated Amount applied to 2025 Rate Base Calculation",
     "source": {
       "page": 23,
@@ -7506,7 +7620,7 @@
     },
     "cost_usd": 5000000,
     "description": "Rebuild Line from Santee Substation - Duke/Progress Energy Tie.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "St George",
         "norm": "ST GEORGE",
@@ -7516,8 +7630,19 @@
         "name": "Sumter",
         "norm": "SUMTER",
         "raw": "Sumter 230kV Tie"
+      },
+      {
+        "name": "Santee Substation",
+        "norm": "SANTEE",
+        "raw": "Santee Substation"
+      },
+      {
+        "name": "Duke/Progress Energy Tie",
+        "norm": "DUKE/PROGRESS ENERGY TIE",
+        "raw": "Duke/Progress Energy Tie"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 24,
@@ -7571,7 +7696,9 @@
     "owner_code": null,
     "project_key": "DESC:6809 M",
     "quality_flags": [
-      "cost_currency_symbol_missing:2027"
+      "cost_currency_symbol_missing:2027",
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
     ],
     "raw_text": "Project 24 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nSt George - Sumter 230kV Tie: Rebuild Line from Santee Substation -\nDuke/Progress Energy Tie\nProject ID\n6809 M\nProject Description\nRebuild Line from Santee Substation - Duke/Progress Energy Tie.\nProject Need\nGrid hardening.\nProject Status\nIn Progress\nPlanned In-Service Date\n12/31/2027\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$150,000 $100,000 $50,000 4,700,000 $0 $0 $5,000,000\n*Total Estimated Amount applied to 2027 Rate Base Calculation",
     "source": {
@@ -8515,7 +8642,7 @@
     },
     "cost_usd": 40336395,
     "description": "Construct a 230 kV transmission line from Church Creek to Charleston Transmission. The Church Creek – Faber Place 230kV and 115kV lines will be rebuilt, and a 230kV line will be added between Faber Place and Charleston Transmission. Add 230/115kV transformer at Charleston Transmission. Add/upgrade terminals and bus work at impacted substations.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Church Creek",
         "norm": "CHURCH CREEK",
@@ -8525,8 +8652,14 @@
         "name": "Faber Place",
         "norm": "FABER PLACE",
         "raw": "Faber Place"
+      },
+      {
+        "name": "Charleston Transmission",
+        "norm": "CHARLESTON TRANSMISSION",
+        "raw": "Charleston Transmission"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 33,
@@ -8579,7 +8712,10 @@
     "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
     "owner_code": null,
     "project_key": "DESC:6847",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_multi_asset"
+    ],
     "raw_text": "Project 33 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nChurch Creek – Faber Place – Charleston Transmission: Add 230kV Line\nProject ID\n6847\nProject Description\nConstruct a 230 kV transmission line from Church Creek to Charleston Transmission. The Church Creek –\nFaber Place 230kV and 115kV lines will be rebuilt, and a 230kV line will be added between Faber Place\nand Charleston Transmission. Add 230/115kV transformer at Charleston Transmission. Add/upgrade\nterminals and bus work at impacted substations.\nProject Need\nThis project is needed to improve system performance and to meet NERC TPL and internal DESC\nPlanning Criteria for reliability.\nProject Status\nIn Progress\nPlanned In-Service Date\n5/1/2027\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$3,556,350 $7,399,577 $23,763,000 $5,617,468 $0 $0 $40,336,395\n*Total Estimated Amount applied to 2027 Rate Base Calculation",
     "source": {
       "page": 33,
@@ -9080,7 +9216,7 @@
     },
     "cost_usd": 8550000,
     "description": "Rebuilding the 46 kV line between Cameron Jct and St Matthews. 9.8 miles.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Cameron Jct",
         "norm": "CAMERON JCT",
@@ -9090,8 +9226,14 @@
         "name": "Cameron",
         "norm": "CAMERON",
         "raw": "Cameron"
+      },
+      {
+        "name": "St Matthews",
+        "norm": "ST MATTHEWS",
+        "raw": "St Matthews"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 38,
@@ -9144,7 +9286,10 @@
     "need": "System hardening.",
     "owner_code": null,
     "project_key": "DESC:6810 T",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous",
+      "endpoint_multi_asset"
+    ],
     "raw_text": "Project 38 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nCameron Jct – Cameron – St Matthews 46 kV Rebuild\nProject ID\n6810 T\nProject Description\nRebuilding the 46 kV line between Cameron Jct and St Matthews. 9.8 miles.\nProject Need\nSystem hardening.\nProject Status\nPlanned\nPlanned In-Service Date\n12/31/2028\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$0 $0 $100,000 $100,000 $8,350,000 $0 $8,550,000\n*Total Estimated Amount applied to 2028 Rate Base Calculation",
     "source": {
       "page": 38,
@@ -9645,7 +9790,7 @@
     },
     "cost_usd": 33750000,
     "description": "The remaining section of Church Creek – Dawson 230 kV needs to be rebuilt with B1272 ACSR (approximately 13.5 additional miles). The 8.5 mile section of Dawson – Faber Place 230 kV that is adjacent to Church Creek – Dawson 230 kV will also be rebuilt with B1272 ACSR.",
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "Church Creek",
         "norm": "CHURCH CREEK",
@@ -9654,9 +9799,20 @@
       {
         "name": "Dawson",
         "norm": "DAWSON",
-        "raw": "Dawson 230 kV"
+        "raw": "Dawson"
+      },
+      {
+        "name": "Long Savannah",
+        "norm": "LONG SAVANNAH",
+        "raw": "Long Savannah"
+      },
+      {
+        "name": "Faber Place",
+        "norm": "FABER PLACE",
+        "raw": "Faber Place"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "cost_usd": {
         "page": 43,
@@ -9710,7 +9866,9 @@
     "owner_code": null,
     "project_key": "DESC:6877 A",
     "quality_flags": [
-      "cost_currency_symbol_missing:2025"
+      "cost_currency_symbol_missing:2025",
+      "endpoint_ambiguous",
+      "endpoint_scope_ambiguous"
     ],
     "raw_text": "Project 43 of 47\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nChurch Creek – Dawson 230 kV: Rebuild from Long Savannah to Dawson\nProject ID\n6877 A\nProject Description\nThe remaining section of Church Creek – Dawson 230 kV needs to be rebuilt with B1272 ACSR\n(approximately 13.5 additional miles). The 8.5 mile section of Dawson – Faber Place 230 kV that is\nadjacent to Church Creek – Dawson 230 kV will also be rebuilt with B1272 ACSR.\nProject Need\nThis project is needed to improve system performance and to meet NERC TPL and internal DESC\nPlanning Criteria for reliability.\nProject Status\nPlanned\nPlanned In-Service Date\n12/31/2028\nEstimated Project Cost\nPrevious 2025 2026 2027 2028 2029 Total*\n$0 50,000 $175,000 $15,000,000 $18,525,000 $0 $33,750,000\n*Total Estimated Amount applied to 2028 Rate Base Calculation",
     "source": {
