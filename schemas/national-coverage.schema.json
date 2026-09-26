@@ -1,0 +1,28 @@
+{
+  "$id": "https://gridbridge.local/schemas/national-coverage.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Measured national import coverage; not national completeness",
+  "type": "object", "additionalProperties": true,
+  "required": ["schema_version", "projects_total", "located_count", "sources", "failures", "notes"],
+  "properties": {
+    "schema_version": {"const": "national-coverage-v1"},
+    "projects_total": {"type": "integer", "minimum": 0},
+    "located_count": {"type": "integer", "minimum": 0},
+    "sources": {
+      "type": "array", "items": {
+        "type": "object", "required": ["source_id", "project_count", "located_count", "active_status_count", "unknown_state_count", "unknown_county_count", "status_counts"],
+        "properties": {
+          "source_id": {"type": "string"},
+          "project_count": {"type": "integer", "minimum": 0},
+          "located_count": {"type": "integer", "minimum": 0},
+          "active_status_count": {"type": "integer", "minimum": 0, "description": "Planned/proposed/under_construction source status; not proof of a future date"},
+          "unknown_state_count": {"type": "integer", "minimum": 0},
+          "unknown_county_count": {"type": "integer", "minimum": 0},
+          "status_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+        }
+      }
+    },
+    "failures": {"type": "array", "items": {"type": "object", "required": ["source_id", "message"], "properties": {"source_id": {"type": "string"}, "message": {"type": "string"}}}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}
