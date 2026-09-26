@@ -55,10 +55,11 @@ function Summary({ cards, extractions }: { cards: Card[]; extractions: Extractio
   if (processed === 0) {
     return (
       <section className={s.unavailable} role="status">
-        <strong>Gemini extraction unavailable.</strong> 0 of {cards.length} DESC cards processed and no stored model output,
-        because live Gemini runs were deferred (no credentials tonight). Nothing on this page is presented as a Gemini result.
-        The source text and the deterministic parse below are real; the Gemini column fills in once the pipeline&apos;s
-        batch run is committed.
+        <strong>Gemini extraction unavailable.</strong> 0 of {cards.length} DESC cards processed and no stored model output
+        (live Gemini runs were deferred). Nothing on this page is presented as a Gemini result.
+        {cards.length
+          ? " The source text and the deterministic parse below are real; the Gemini column fills in once the pipeline's batch run is committed."
+          : ""}
       </section>
     );
   }

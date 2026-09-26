@@ -97,6 +97,15 @@
 .flags {
   font-size: 12px;
   color: var(--band1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.fields thead th:last-child,
+.fields td:last-child {
+  width: 110px;
+  white-space: nowrap;
 }
 
 .text {
