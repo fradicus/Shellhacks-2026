@@ -1,6 +1,6 @@
 # Track evidence — draft, not eligibility confirmation
 
-Checkpoint: main `18da907`, 2026-09-26. Recheck against the selected deployed revision before submission.
+Checkpoint: main `ac2c506`, 2026-09-26. Recheck against the selected deployed revision before submission.
 
 The [official MLH ShellHacks prize page](https://www.mlh.com/events/shellhacks-b9/prizes) lists Gemini API, MongoDB Atlas and GoDaddy Registry domain categories. This does not establish team eligibility or completed integration. Exact event submission rules/deadline and team details are [unverified].
 

@@ -1,13 +1,13 @@
 # GridBridge build status
 
-Checkpoint: 2026-09-26T17:30:38-04:00. Inspected main: `18da907`. Analysis date: 2026-09-26.
+Checkpoint: 2026-09-26T17:44:07-04:00. Inspected main: `ac2c506`. Analysis date: 2026-09-26.
 This is a dated checkpoint, not a live dashboard. Recheck main, individual CI jobs and the deployed dataset before presenting.
 
 ## Current result
 
 F00–F16, F19, F30 and F31 have completion markers on main. Coverage, the Three.js time view, national source
 import and the national explorer are implemented. F17 has no completion marker; F18 final acceptance and STOP
-have not landed. F32 remains a separate prototype. Implementation completion is separate from live integration
+have not landed. F21 has a merged visual-system spec, with implementation still pending; F32 remains a separate prototype. Implementation completion is separate from live integration
 and user-task evaluation.
 
 The follow-up product direction is a PM investigating one real project, checking nearby work and changes,
@@ -19,7 +19,7 @@ This documentation checkpoint does not start the potential equipment-rental/subl
 
 | Area | Evidence at this checkpoint | Remaining limitation |
 |---|---|---|
-| Required main checks | [Run 36265428715](https://github.com/fradicus/Shellhacks-2026/actions/runs/36265428715): Ruff, 342 pipeline tests, web lint/typecheck/build, nine national module checks and spec lint passed | Main's optional browser job failed; workflow-level success is not an all-checks-green claim. |
+| Required main checks | [Run 36273811311](https://github.com/fradicus/Shellhacks-2026/actions/runs/36273811311): Ruff, 342 pipeline tests, web lint/typecheck/build, nine national module checks and spec lint passed | Main's optional browser job failed; workflow-level success is not an all-checks-green claim. |
 | Browser checks | Four national browser cases passed; legacy suite: 17 passed, one failed | Time-view mobile heading tracked in [issue88](https://github.com/fradicus/Shellhacks-2026/issues/88). [PR96](https://github.com/fradicus/Shellhacks-2026/pull/96) has successful ci/e2e on its own head but is not merged at this checkpoint. |
 | Legacy source/location audit | [Audit](audit/summary.md): effective pair states 15 rejected, four needs review, zero confirmed | Project-area identity remains insufficient for confirmation. Correct distance arithmetic does not establish the identity of the locations. |
 | Gemini extraction on main | [Evaluation](../data/extraction/eval.json): zero processed responses/calls and null model/accuracy | No main extraction result should be presented as a live model evaluation. |
@@ -55,8 +55,11 @@ At this checkpoint:
   Their proposed Gemini configuration does not change main's delivered configuration until the contracts land.
 - [PR96](https://github.com/fradicus/Shellhacks-2026/pull/96): F19 mobile accessibility fix.
 - [PR89](https://github.com/fradicus/Shellhacks-2026/pull/89): F32 separate optional app-controls prototype.
-- [Issue97](https://github.com/fradicus/Shellhacks-2026/issues/97): another coordinator's C15 operations-phase claim.
+- [PR102](https://github.com/fradicus/Shellhacks-2026/pull/102), tracked in [issue97](https://github.com/fradicus/Shellhacks-2026/issues/97): another coordinator's C15 operations contracts.
   Its independently authorized scope remains separate from the sponsor-feedback documentation and deferred product ideas.
+- [PR101](https://github.com/fradicus/Shellhacks-2026/pull/101) merged the F21 visual-system spec; its foundation
+  implementation is separately claimed in [PR103](https://github.com/fradicus/Shellhacks-2026/pull/103). A merged spec
+  does not establish that the visual redesign is delivered.
 - [PR99](https://github.com/fradicus/Shellhacks-2026/pull/99) and this [PR100](https://github.com/fradicus/Shellhacks-2026/pull/100):
   bounded Mac documentation integration under [issue98](https://github.com/fradicus/Shellhacks-2026/issues/98).
 - [PR78](https://github.com/fradicus/Shellhacks-2026/pull/78) and [PR77](https://github.com/fradicus/Shellhacks-2026/pull/77):

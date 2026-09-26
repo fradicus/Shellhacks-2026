@@ -2,7 +2,7 @@
 
 Draft only. Live deployment, team eligibility, production URL and submission deadline are unverified. No event submission has been made.
 
-Evidence baseline: main `18da907`, 2026-09-26. See [status](../reports/status.md) for pending PRs and separate automated,
+Evidence baseline: main `ac2c506`, 2026-09-26. See [status](../reports/status.md) for pending PRs and separate automated,
 live and user acceptance. Refresh this draft against the actual demo revision before submission.
 
 ## Inspiration
