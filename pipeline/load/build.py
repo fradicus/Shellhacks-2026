@@ -5,8 +5,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from briefs.facts import current_input_hash
 from common import SchemaError, load_json, validate
-from load.review_subjects import current_subjects, subject_hash, supporting_endpoints
+from load.review_subjects import FINGERPRINT_VERSION, current_subjects, subject_hash, supporting_endpoints
 from matches.core import center
 
 # data/ prefix -> (collection, schema). Anything else under data/ (fixtures, osm, owners, summaries) is not loaded.
@@ -163,35 +164,47 @@ def _utc(at: str) -> datetime | None:
 
 
 def decide(reviews: list[dict], subjects: dict[tuple[str, str], dict]) -> dict[tuple[str, str], str]:
-    """Newest timezone-aware decision per (subject_type, record_id); at the same instant a downgrade beats a
-    confirmation. Its verdict applies only while the review's `subject_hash` equals the record's current hash (C7,
-    #57); a stale or missing binding yields needs_review and never falls back to an older decision. Other verdicts
-    and undated reviews are skipped. Legacy reviews without a subject_type count as pair reviews."""
-    latest: dict[tuple[str, str], tuple[datetime, str, str | None]] = {}
+    """Apply the complete newest decision group only when every member is bound to the current subject.
+
+    Equal-time decisions are one conservative group: any stale, missing, or unsupported binding makes the result
+    needs_review regardless of input order. If every binding is current, a downgrade wins. Older evidence never
+    substitutes for an invalid newest group. Other verdicts and undated reviews are ignored.
+    """
+    Decision = tuple[str, str | None, str | None]
+    latest: dict[tuple[str, str], tuple[datetime, list[Decision]]] = {}
     for r in reviews:
         state, at = PAIR_VERDICTS.get(r["verdict"]), _utc(r["at"])
         if state is None or at is None:
             continue
         key = (r.get("subject_type", "pair"), r["record_id"])
+        decision = (state, r.get("fingerprint_version"), r.get("subject_hash"))
         cur = latest.get(key)
-        if cur is None or at > cur[0] or (at == cur[0] and state == "rejected"):
-            latest[key] = (at, state, r.get("subject_hash"))
-    return {key: state if key in subjects and h == subject_hash(subjects[key]) else "needs_review"
-            for key, (_, state, h) in latest.items()}
+        if cur is None or at > cur[0]:
+            latest[key] = (at, [decision])
+        elif at == cur[0]:
+            cur[1].append(decision)
+
+    decided: dict[tuple[str, str], str] = {}
+    for key, (_, group) in latest.items():
+        subject = subjects.get(key)
+        current_hash = subject_hash(subject) if subject is not None else None
+        if current_hash is None or any(version != FINGERPRINT_VERSION or value != current_hash
+                                       for _, version, value in group):
+            decided[key] = "needs_review"
+        else:
+            decided[key] = "rejected" if any(state == "rejected" for state, _, _ in group) else "confirmed"
+    return decided
 
 
 def apply_reviews(matches: list[dict], reviews: list[dict], subjects: dict[tuple[str, str], dict]) -> list[dict]:
     """Set each match's review_state from its decided pair review. A confirmation also needs every supporting endpoint
     (the located ones its centers rest on) to carry a current confirmed review; otherwise the pair stays
-    needs_review. Matches with no decision keep the producer's review_state."""
+    needs_review. Matches with no current bound decision always need review, regardless of producer state."""
     decided = decide(reviews, subjects)
     out = []
     for m in matches:
         key = ("pair", m["_id"])
-        state = decided.get(key)
-        if state is None:
-            out.append(m)
-            continue
+        state = decided.get(key, "needs_review")
         if state == "confirmed":
             eps = supporting_endpoints(subjects[key])
             if not eps or any(decided.get(("endpoint", e)) != "confirmed" for e in eps):
@@ -220,11 +233,12 @@ def check_briefs(briefs: list[dict], ready: dict[str, list[dict]], brief_hash: B
     return out
 
 
-def stage(records: dict[str, list[dict]], dataset: str, brief_hash: BriefHash | None = None) -> dict[str, list[dict]]:
+def stage(records: dict[str, list[dict]], dataset: str,
+          brief_hash: BriefHash | None = current_input_hash) -> dict[str, list[dict]]:
     """Documents as stored: `_id` = `<dataset>:<record _id>`, plus `id` and `dataset`. The API maps `id` back to `_id`.
 
-    ponytail: brief_hash is None until F12 publishes its pure fact/hash builder (#43), so every passed brief fails
-    closed as unverified; make that builder the default here when it lands."""
+    The default F12 callback verifies brief facts after joining locations and before dataset-prefixing ids. Passing
+    None explicitly keeps the fail-closed unverified behavior available to callers and tests."""
     ready = dict(records)
     ready["projects"] = join_projects(records.get("projects", []), records.get("locations", []))
     ready["matches"] = apply_reviews(records.get("matches", []), records.get("reviews", []), current_subjects(ready))

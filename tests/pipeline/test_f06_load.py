@@ -7,10 +7,12 @@ from pathlib import Path
 import mongomock
 import pytest
 
+from briefs.facts import current_input_hash
+from briefs.runner import load_inputs
 from common import REPO_ROOT, load_json
 from load.__main__ import load
 from load.build import collect, join_projects, stage
-from load.review_subjects import FINGERPRINT_VERSION, current_subjects, subject_hash, supporting_endpoints
+from load.review_subjects import FINGERPRINT_VERSION, current_subjects, endpoint_subject, subject_hash, supporting_endpoints
 
 FIX = REPO_ROOT / "data/fixtures"
 
@@ -338,6 +340,27 @@ def test_pair_and_endpoint_subjects_exist_for_fixture_data(data_root):
     assert subject_hash({"b": 1, "a": [1.5, None, "é"]}) == "10c71012fb391fead6e4d481b11c8b16696561c1fd93a68cca35fa194c3aa97d"
 
 
+def test_endpoint_subject_rejects_contradictory_explicit_bindings(data_root):
+    records, _, _ = collect(data_root)
+    projects = join_projects(records["projects"], records["locations"])
+    location = records["locations"][0]
+    project = next(p for p in projects if p["_id"] == location["project_id"])
+    source = next(s for s in records["sources"] if s["_id"] == project["source"]["source_id"])
+    subject = endpoint_subject(location, project, source)
+    assert subject["location"]["project_id"] == project["_id"]
+    assert subject["location"]["source_id"] == source["_id"]
+
+    contradictions = [
+        (location | {"project_key": "DESC:OTHER"}, project, source),
+        (location | {"project_id": "DESC:OTHER@source"}, project, source),
+        (location | {"source_id": "other-source"}, project, source),
+        (location, project, source | {"_id": "other-source"}),
+    ]
+    for candidate in contradictions:
+        with pytest.raises(ValueError, match="contradictory endpoint project/source binding"):
+            endpoint_subject(*candidate)
+
+
 @pytest.mark.parametrize("build, state", [
     (lambda s, p: [], "needs_review"),
     (lambda s, p: [review("confirmed", T1, p, subjects=s)] + endpoint_confirmations(s, p), "confirmed"),
@@ -373,6 +396,26 @@ def test_audit_verdicts_apply_to_review_state(data_root, build, state):
     records, _, _ = collect(data_root)
     subs = subjects_of(records)
     assert staged_state(records, build(subs, records["matches"][0]["_id"])) == state
+
+
+@pytest.mark.parametrize("invalid", ["stale", "missing", "unsupported"])
+def test_equal_time_group_fails_closed_if_any_binding_is_invalid(data_root, invalid):
+    records, _, _ = collect(data_root)
+    subjects, pair = subjects_of(records), records["matches"][0]["_id"]
+    current = review("confirmed", T1, pair, subjects=subjects)
+    if invalid == "stale":
+        other = review("confirmed", T1, pair, subjects=subjects, stale=True)
+    elif invalid == "missing":
+        other = review("confirmed", T1, pair)
+    else:
+        other = review("confirmed", T1, pair, subjects=subjects) | {"fingerprint_version": "audit-subject-v999"}
+    assert staged_state(records, [current, other, *endpoint_confirmations(subjects, pair)]) == "needs_review"
+
+
+def test_producer_confirmation_without_current_review_needs_review(data_root):
+    records, _, _ = collect(data_root)
+    records = edit_first_match(records, review_state="confirmed")
+    assert staged_state(records, []) == "needs_review"
 
 
 @pytest.mark.parametrize("change", [
@@ -462,3 +505,15 @@ def test_unverifiable_or_orphaned_briefs_fail_closed(data_root):
     rejected = make_brief(records, "rejected") | {"rejection_reason": "number not in input"}
     assert staged_brief(records, rejected) == {**rejected, "_id": "ds:brief-rejected", "id": "brief-rejected",
                                                "dataset": "ds"}
+
+
+def test_stage_uses_f12_current_input_hash_by_default():
+    records = load_inputs(REPO_ROOT)
+    match_id = records["matches"][0]["_id"]
+    input_hash = current_input_hash(match_id, records)
+    assert input_hash is not None
+    brief = {"_id": "brief-f12-default", "match_id": match_id, "input_hash": input_hash, "model": "offline-fixture",
+             "prompt_version": "test", "generated_at": "2026-09-26T10:00:00Z", "supported_facts": [],
+             "possible_shared_activities": [], "questions": [], "limitations": [], "validation": "passed"}
+    [staged] = stage({**records, "briefs": [brief]}, "ds")["briefs"]
+    assert staged["validation"] == "passed" and "source_validation" not in staged
