@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "desc-2024",
+    "filing": "2024-2028",
+    "local_path": "docs/Sperry-Tech-Challenge/Project Listings/Dominion Energy/2024-2028-2million-and-above-project-descriptions.pdf",
+    "pages": 44,
+    "public_status": "public",
+    "publisher": "Dominion Energy South Carolina",
+    "sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+    "title": "DESC Planned Transmission Projects $2M and Above Total - 2024-2028",
+    "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf"
+  },
+  {
+    "_id": "desc-2025",
+    "filing": "2025-2029",
+    "http_last_modified": "2026-06-18T13:15:14Z",
+    "local_path": "data/sources/desc-2025.pdf",
+    "pages": 47,
+    "public_status": "public",
+    "publisher": "Dominion Energy South Carolina",
+    "sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+    "source_metadata_checked_at": "2026-09-26T09:04:40Z",
+    "title": "DESC Planned Transmission Projects $2M and Above Total - 2025-2029",
+    "url": "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf"
+  },
+  {
+    "_id": "gpc-2025",
+    "filing": "2025 IRP",
+    "local_path": "docs/Sperry-Tech-Challenge/Project Listings/Georgia Power/2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf",
+    "pages": 668,
+    "public_status": "public_with_banner",
+    "publisher": "Georgia Power Company",
+    "restrictions": "Decision D2: deterministic Ten-Year Plan table parsing only; no Gemini, page images, or excerpts beyond project names.",
+    "sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+    "title": "2025 IRP Technical Appendix Volume 3 - Transmission Plan - Public Disclosure"
+  },
+  {
+    "_id": "sample",
+    "filing": "ShellHacks 2026 Gridlock challenge",
+    "local_path": "docs/Sperry-Tech-Challenge/Projects_Overlaps.xlsx",
+    "pages": null,
+    "public_status": "public",
+    "publisher": "Sperry Tech",
+    "sha256": "fe01df4ed0691d55fd565784a7510ddfe4682316ff63fb70b963b934c5974f24",
+    "title": "Projects_Overlaps.xlsx sponsor sample"
+  }
+]
