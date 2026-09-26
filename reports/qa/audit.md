@@ -19,3 +19,7 @@ Initial audit base: `b99f3cb` (F00, F05, F06, C1 and the F05/F06 fixes).
 Reproduction: call `load(db, records, [], "same-revision")` successfully; replace `db.projects.insert_many` with a function raising `RuntimeError`; repeat the same load. `db.meta.active.dataset` remains `same-revision`, but its previously published project documents have been deleted. Readers can observe incomplete data on an active-revision retry.
 
 Continue this audit at checkpoints as later features merge. This report is evidence for the revisions named above, not a release-wide sign-off.
+
+## Rebase checkpoint: 6a151ea
+
+Reviewed the C2 type additions, F06 endpoint/source fix (#18), and F01 parser changes (#5). Filed endpoint names are preserved separately from located endpoints; pair queries return only sources cited by their projects/version changes. F01 retains raw page evidence, flags inconsistent costs, leaves multi-date milestones unknown, and introduces no coordinates or matching formula. The full pipeline checks now pass **98 tests**, including F01 card counts, schema checks and deterministic reruns. The independent golden audit and all nine verifier fault checks still pass. This is a code/integration audit; independent page-by-page extraction review remains F13 work.
