@@ -156,7 +156,8 @@ test("filing history cites both public pages and filters to an honest empty stat
   await expect(page.getByRole("link", { name: "DESC filing 2025-2029, p. 2" })).toHaveAttribute(
     "href", "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf#page=2");
   await page.getByRole("button", { name: "Cost (0)", exact: true }).click();
-  await expect(page.getByRole("heading", { name: "No filing changes" })).toBeVisible();
+  await expect(page.getByRole("status")).toContainText("No filing changes");
+  await expect(page.getByRole("status")).toContainText("No changes for this field.");
   await page.getByRole("button", { name: "In-service date (1)", exact: true }).click();
   await expect(page.getByText("DESC:0139 M,N", { exact: true })).toBeVisible();
 });
