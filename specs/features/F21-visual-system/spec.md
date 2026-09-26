@@ -66,7 +66,8 @@ one product in the time view's language. Background: [C16 sponsor context](../..
 ## Delivery
 1. `[C17]` this spec, the roadmap row and the decision record.
 2. `[C18]` foundation: `globals.css` tokens (color, type scale, space, radius, glass, motion, print), fonts in
-   `layout.tsx`, nav restyle and labels, `ui/` primitives restyled, `web/components/brand/` wordmark and motifs.
+   `layout.tsx`, nav restyle and labels, `ui/` primitives restyled plus `Readout` and `Unknown`, and the `Mark` (two overlapping service rings) exported from
+   `nav/` so the marketing page can reuse it. `web/components/brand/` holds later shared motifs, if any.
 3. One `[FIX-<ID>]` per route in the table's order: F19, F11, F14, F16, F15, F17. Each touches only that feature's
    `owns`. If a route already has an open PR from its owner, F21 waits for it and rebases instead of competing.
 
