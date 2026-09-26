@@ -18,6 +18,8 @@ Rebase checkpoint `c8a8902`: C4 aligns fixture filing source IDs with F01's mani
 
 Checkpoint `39cd085`: F14 now renders filing history. Added desktop/mobile checks for the verified 0139 M,N date change, both public PDF page links, historical labeling, field filtering and the empty state. The suite now contains 18 checks. A separate Chromium Letter-size print of the sponsor OVL_2 card produced one page with both evidence panels; arbitrary future content pagination remains unverified.
 
+Checkpoint `684e270`: verified the F06 loader fix with independent in-memory failure injection. Reloading the active revision leaves its documents unchanged, and a failed new revision preserves the active pointer/data and records a failed run. Repo checks pass with **101 pipeline tests**; all **18 browser checks pass (4.7s)** on the rebased branch. The URL-page finding #28 remains separate.
+
 ## Confirmed defect outside F07 ownership
 
 [F11 issue #28](https://github.com/fradicus/Shellhacks-2026/issues/28): metadata/page code decodes the route ID again. A temporary copy of the sponsor fixtures with only a synthetic match identifier (`QA:SYNTHETIC%zz__PAIR`) renders a server-error screen and React error #441. The response can be HTTP 200, so checking status alone misses the failure. The regular pair tests now assert the actual coordination-card region.
