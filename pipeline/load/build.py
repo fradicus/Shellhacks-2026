@@ -21,9 +21,12 @@ SOURCES: list[tuple[str, str, str]] = [
     ("data/review/", "reviews", "review"),
     ("data/coverage/", "coverage", "coverage"),
     ("data/versions/", "version_changes", "version_change"),
+    ("data/embeddings/", "embeddings", "embedding"),
+    ("data/neighbors/", "neighbors", "neighbor"),
 ]
 # Stored collections (locations are joined into projects rather than stored on their own).
-COLLECTIONS = ["sources", "projects", "matches", "briefs", "extractions", "reviews", "coverage", "version_changes"]
+COLLECTIONS = ["sources", "projects", "matches", "briefs", "extractions", "reviews", "coverage", "version_changes",
+               "embeddings", "neighbors"]
 CONFIDENCE_RANK = {"high": 0, "medium": 1, "low": 2}
 # F13 audit verdict -> match.review_state. Any other verdict is kept as evidence but changes nothing.
 PAIR_VERDICTS = {"confirmed": "confirmed", "downgraded": "rejected", "rejected": "rejected"}

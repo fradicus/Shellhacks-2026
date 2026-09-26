@@ -19,6 +19,11 @@ from load.build import COLLECTIONS, collect, stage
 
 KEEP_DATASETS = 2  # active + previous, so a bad load can be flipped back by hand
 
+# F19 semantic search: Atlas Vector Search index on embeddings.vector. Dimensions must match the
+# embedding model's output_dimensionality (GEMINI_EMBED_MODEL, default gemini-embedding-001 @ 768).
+VECTOR_INDEX = "embedding_vector"
+VECTOR_DIMENSIONS = 768
+
 
 def _now() -> str:
     return datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
@@ -37,6 +42,39 @@ def ensure_indexes(db: Any) -> None:
     db.matches.create_index([("dataset", ASCENDING), ("rank", ASCENDING)])
     db.briefs.create_index([("dataset", ASCENDING), ("match_id", ASCENDING)])
     db.version_changes.create_index([("dataset", ASCENDING), ("project_key", ASCENDING)])
+    db.neighbors.create_index([("dataset", ASCENDING), ("ref_id", ASCENDING)])
+
+
+def ensure_vector_index(db: Any) -> None:
+    """Create the Atlas Vector Search index for F19 semantic search (idempotent by name).
+
+    Atlas-only API: mongomock and pre-7.0 servers raise, and an existing index of the same name
+    errors too. None of that may fail the load — the core API never touches this index — so every
+    failure degrades to a printed warning."""
+    from pymongo.operations import SearchIndexModel
+
+    model = SearchIndexModel(
+        name=VECTOR_INDEX,
+        type="vectorSearch",
+        definition={
+            "fields": [
+                {"type": "vector", "path": "vector", "numDimensions": VECTOR_DIMENSIONS, "similarity": "cosine"},
+                {"type": "filter", "path": "dataset"},
+            ]
+        },
+    )
+    try:
+        names = [ix.get("name") for ix in db.embeddings.list_search_indexes()]
+    except Exception as e:  # noqa: BLE001 - mongomock / old servers: no search-index API at all
+        print(f"load: vector index not verified ({type(e).__name__}); ensure {VECTOR_INDEX!r} exists in Atlas")
+        return
+    if VECTOR_INDEX in names:
+        return
+    try:
+        db.embeddings.create_search_index(model)
+        print(f"load: created vector search index {VECTOR_INDEX!r} ({VECTOR_DIMENSIONS} dims, cosine)")
+    except Exception as e:  # noqa: BLE001 - e.g. insufficient privileges on the RW user
+        print(f"load: vector index creation failed ({type(e).__name__}); create it in the Atlas UI")
 
 
 def _run(db: Any, dataset: str, started: str, status: str, counts: dict, errors: list[str] | None = None) -> None:
@@ -61,6 +99,7 @@ def load(db: Any, records: dict[str, list[dict]], errors: list[str], dataset: st
         return 0
     try:
         ensure_indexes(db)
+        ensure_vector_index(db)
         for coll, docs in stage(records, dataset).items():
             # Not active yet, so clearing leftovers from an earlier failed attempt can't affect readers.
             db[coll].delete_many({"dataset": dataset})
