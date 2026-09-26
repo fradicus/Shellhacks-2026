@@ -917,3 +917,128 @@
 .l_bead[data-side="c"] .labelInner {
   transform: translate(-50%, calc(-100% - 18px));
 }
+
+/* --- the story ------------------------------------------------------------------------------------------------- */
+
+.play {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 18px 12px 0 0;
+  padding: 8px 14px 8px 12px;
+  border: 1px solid rgba(191, 233, 255, 0.28);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(191, 233, 255, 0.14), rgba(191, 233, 255, 0.04));
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.play span {
+  font-size: 9px;
+  color: var(--sheet);
+}
+.play:hover:not(:disabled) {
+  border-color: rgba(191, 233, 255, 0.6);
+  box-shadow: 0 0 24px rgba(191, 233, 255, 0.18);
+}
+.play:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.caption {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 30px;
+  width: min(540px, calc(100% - 880px));
+  min-width: 340px;
+  translate: -50% 0;
+  padding: 16px 20px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(191, 233, 255, 0.16);
+  background: rgba(7, 10, 16, 0.84);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  animation: rise 0.7s both cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.kicker {
+  margin: 0 0 6px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sheet);
+}
+.captionText {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 23px;
+  line-height: 1.22;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.captionNames {
+  margin: 8px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 11.5px;
+  color: var(--ink-3);
+}
+.progress {
+  display: flex;
+  gap: 5px;
+  margin-top: 12px;
+}
+.progress i {
+  flex: 1;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--ink-4);
+  overflow: hidden;
+  position: relative;
+}
+.progress i[data-state="done"] {
+  background: var(--sheet);
+}
+.progress i[data-state="now"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--sheet);
+  transform-origin: left;
+  animation: fill 7s linear both;
+}
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 860px) {
+  .caption {
+    top: auto;
+    bottom: calc(48% + 24px);
+    width: calc(100% - 24px);
+    min-width: 0;
+  }
+  .captionText {
+    font-size: 18px;
+  }
+}
+.l_todayShort .labelInner {
+  transform: translate(14px, -50%);
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sheet);
+  text-shadow: 0 0 12px rgba(191, 233, 255, 0.55);
+}

@@ -95,6 +95,8 @@ export function TimeView({
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
   const [trayOpen, setTrayOpen] = useState(false);
+  const [tour, setTour] = useState<number | null>(null);
+  const tourTimer = useRef<number | null>(null);
 
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
@@ -281,7 +283,13 @@ export function TimeView({
   if (!flat) {
     for (let y = 0; y <= Math.ceil(topYears); y++)
       labelSpecs.push({ id: `y${y}`, ...rulerAt, years: y, kind: "tick", text: epoch + y });
-    labelSpecs.push({ id: "today", ...rulerAt, years: todayYears, kind: "today", text: <>Today · {fmtDate(analysisDate)}</> });
+    labelSpecs.push({
+      id: "today",
+      ...rulerAt,
+      years: todayYears,
+      kind: pair ? "todayShort" : "today",
+      text: pair ? "Today" : <>Today · {fmtDate(analysisDate)}</>,
+    });
   }
   if (pair && pa?.center && pb?.center) {
     const mid = { lng: (pa.center.lon + pb.center.lon) / 2, lat: (pa.center.lat + pb.center.lat) / 2 };
@@ -353,11 +361,17 @@ export function TimeView({
       setProjectKey(null);
       const p = id ? pairs.find((x) => x.id === id) : null;
       if (p) {
-        setYearPx((px) => Math.max(px, 84));
+        const tops = [p.a, p.b].map((k) => {
+          const sp = spans.get(k);
+          return sp?.kind === "exact" ? sp.day : sp?.kind === "range" ? sp.to : 0;
+        });
+        const years = Math.max(...tops, 1) / DAYS_PER_YEAR;
+        const room = (container.current?.clientHeight ?? 800) * 0.42;
+        setYearPx(Math.max(16, Math.min(84, Math.round(room / years / 2) * 2)));
         frame(byKey.get(p.a), byKey.get(p.b));
       }
     },
-    [pairs, byKey, frame],
+    [pairs, byKey, frame, spans],
   );
 
   const overview = useCallback(() => {
@@ -429,12 +443,74 @@ export function TimeView({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
+        if (tourTimer.current) window.clearTimeout(tourTimer.current);
+        setTour(null);
         setPairId(null);
         setProjectKey(null);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  // --- the story: a short guided flight for people who have never read a transmission filing ---------------------------
+  // Every caption is built from stored facts: the top-ranked pair, then the pair with the widest day gap.
+  const story = useMemo(() => {
+    const first = visible[0];
+    const wide = [...visible]
+      .filter((p) => p.id !== first?.id && p.time_gap_days !== null)
+      .sort((x, y) => y.time_gap_days! - x.time_gap_days!)[0];
+    const name = (k: string) => byKey.get(k)?.name ?? k;
+    const facts = (p: TimePair) =>
+      `${miles(p.distance_mi)} apart on the ground, ${p.time_gap_days === null ? "day gap unknown" : fmtDays(p.time_gap_days) + " apart in service"}.`;
+    const names = (p: TimePair) => `${name(p.a)}  ·  ${name(p.b)}`;
+    const steps: { pair: string | null; kicker: string; text: string; names?: string }[] = [
+      {
+        pair: null,
+        kicker: "The map",
+        text: `${located.length} utility projects from public filings, each raised to its filed in-service date. The glass sheet is today.`,
+      },
+    ];
+    if (first)
+      steps.push({ pair: first.id, kicker: "The top lead", text: `${facts(first)} The first call to make.`, names: names(first) });
+    if (wide && first)
+      steps.push({
+        pair: wide.id,
+        kicker: wide.distance_mi < first.distance_mi ? "Closer, but not sooner" : "Near, but not together",
+        text: `${facts(wide)} Same neighbourhood, different years, so it ranks lower.`,
+        names: names(wide),
+      });
+    steps.push({ pair: null, kicker: "The rule", text: "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
+    return steps;
+  }, [visible, byKey, located.length]);
+
+  const stopTour = useCallback(() => {
+    if (tourTimer.current) window.clearTimeout(tourTimer.current);
+    tourTimer.current = null;
+    setTour(null);
+  }, []);
+  const stepRef = useRef<(i: number) => void>(() => {});
+  const goStep = useCallback(
+    (i: number) => {
+      const step = story[i];
+      if (tourTimer.current) window.clearTimeout(tourTimer.current);
+      if (!step) {
+        tourTimer.current = null;
+        setTour(null);
+        return;
+      }
+      setTour(i);
+      if (step.pair) selectPair(step.pair);
+      else overview();
+      tourTimer.current = window.setTimeout(() => stepRef.current(i + 1), 7000);
+    },
+    [story, selectPair, overview],
+  );
+  useEffect(() => {
+    stepRef.current = goStep;
+  }, [goStep]);
+  useEffect(() => () => {
+    if (tourTimer.current) window.clearTimeout(tourTimer.current);
   }, []);
 
   const changeView = (v: View) => {
@@ -494,6 +570,9 @@ export function TimeView({
             <dd>1 Jan {epoch}</dd>
           </div>
         </dl>
+        <button type="button" className={s.play} onClick={() => (tour === null ? goStep(0) : stopTour())} disabled={!ready}>
+          <span aria-hidden>{tour === null ? "▶" : "■"}</span> {tour === null ? "Play the story" : "Stop the story"}
+        </button>
         {fixtureMode ? <p className={s.fixture}>Sample data · fixture mode</p> : null}
       </header>
 
@@ -515,7 +594,10 @@ export function TimeView({
                   <button
                     type="button"
                     aria-pressed={p.id === pairId}
-                    onClick={() => selectPair(p.id === pairId ? null : p.id)}
+                    onClick={() => {
+                      stopTour();
+                      selectPair(p.id === pairId ? null : p.id);
+                    }}
                     onMouseEnter={() => setHover(null)}
                   >
                     <span className={s.rank}>{String(i + 1).padStart(2, "0")}</span>
@@ -689,6 +771,20 @@ export function TimeView({
       </section>
 
 
+      {tour !== null && story[tour] ? (
+        <div className={s.caption} role="status" aria-live="polite" key={tour}>
+          <p className={s.kicker}>
+            {String(tour + 1).padStart(2, "0")} / {String(story.length).padStart(2, "0")} · {story[tour].kicker}
+          </p>
+          <p className={s.captionText}>{story[tour].text}</p>
+          {story[tour].names ? <p className={s.captionNames}>{story[tour].names}</p> : null}
+          <div className={s.progress} aria-hidden>
+            {story.map((_, i) => (
+              <i key={i} data-state={i < tour ? "done" : i === tour ? "now" : "next"} />
+            ))}
+          </div>
+        </div>
+      ) : null}
       {!ready && !failure ? <div className={s.loading}>Raising the time axis…</div> : null}
       {failure ? (
         <div className={s.failure} role="status">
