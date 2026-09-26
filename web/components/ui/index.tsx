@@ -70,6 +70,49 @@ export function ErrorState({ title = "Data unavailable", children }: { title?: s
   );
 }
 
+/** A null value, drawn: hatched and labeled "unknown" (or a more specific word). Never an empty cell. */
+export function Unknown({ children = "unknown", title }: { children?: ReactNode; title?: string }) {
+  return (
+    <em className="unknown" title={title}>
+      {children}
+    </em>
+  );
+}
+
+/** A figure read off an instrument: large display number, mono unit, optional label above and note below.
+ *  `value` null renders Unknown; callers pass stored values only. */
+export function Readout({
+  label,
+  value,
+  unit,
+  note,
+  size = "m",
+}: {
+  label?: ReactNode;
+  value: ReactNode | null;
+  unit?: ReactNode;
+  note?: ReactNode;
+  size?: "s" | "m" | "l";
+}) {
+  const sizeClass = size === "s" ? s.readoutS : size === "l" ? s.readoutL : "";
+  return (
+    <span className={`${s.readout} ${sizeClass}`}>
+      {label ? <span className={s.readoutLabel}>{label}</span> : null}
+      {value === null ? (
+        <span className={`${s.readoutValue} ${s.isUnknown}`}>
+          <Unknown />
+        </span>
+      ) : (
+        <span className={`${s.readoutValue} num`}>
+          {value}
+          {unit ? <small>{unit}</small> : null}
+        </span>
+      )}
+      {note ? <span className={s.readoutNote}>{note}</span> : null}
+    </span>
+  );
+}
+
 // --- display formatting (display only; never used to decide eligibility) ------------------------------------------------
 
 /** Distances are stored unrounded; round to 2 dp only for display. */

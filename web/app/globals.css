@@ -1,35 +1,69 @@
-/* Frozen after F00. Feature styles belong in each feature's CSS modules; only shared tokens live here. */
+/* Frozen after F00; restyled by F21 (C18). Feature styles belong in each feature's CSS modules; only shared tokens
+   and element defaults live here. Token names are a contract: re-valued, never renamed. */
 
 :root {
-  --bg: #f7f7f5;
-  --surface: #ffffff;
-  --surface-2: #f1f1ee;
-  --border: #deded9;
-  --text: #1c1c1a;
-  --muted: #62625c;
-  --accent: #0f766e;
-  --focus: #2563eb;
+  color-scheme: dark;
 
-  --desc: #2563eb; /* Dominion Energy South Carolina */
-  --desc-bg: #e6eefd;
-  --gpc: #ea580c; /* Georgia Power */
-  --gpc-bg: #fdede3;
-  --unknown: #71717a;
-  --unknown-bg: #ededee;
+  /* Surfaces: a night instrument. Glass floats over the map; panels sit on the page. */
+  --bg: #06080d;
+  --surface: #0c1119;
+  --surface-2: #131a25;
+  --surface-3: #1a2331;
+  --glass: rgba(9, 12, 19, 0.74);
+  --edge: rgba(190, 225, 255, 0.1);
+  --border: rgba(190, 225, 255, 0.12);
+  --border-strong: rgba(190, 225, 255, 0.26);
 
-  --band0: #0f766e;
-  --band0-bg: #dcf2ef;
-  --band1: #7c5b12;
-  --band1-bg: #f6ecd2;
-  --warn: #9a3412;
-  --warn-bg: #fdebdd;
-  --ok: #166534;
-  --ok-bg: #dcf3e3;
+  /* Ink: warm paper white at four strengths. --muted and --text-3 are solid so they don't stack over glass. */
+  --text: #f4efe6;
+  --muted: #aaa59d;
+  --text-3: #7c7a76;
+  --text-4: rgba(244, 239, 230, 0.16);
 
-  --radius: 6px;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  --nav-h: 48px;
+  --accent: #bfe9ff; /* sky: selection, focus, links, "today" */
+  --accent-ink: #06121b; /* text on an accent fill */
+  --focus: #bfe9ff;
+
+  /* The only saturated hues are the two utilities. */
+  --desc: #5cc8ff; /* Dominion Energy South Carolina */
+  --desc-bg: rgba(92, 200, 255, 0.13);
+  --gpc: #ffae42; /* Georgia Power */
+  --gpc-bg: rgba(255, 174, 66, 0.13);
+  --unknown: #a3a8b6;
+  --unknown-bg: rgba(163, 168, 182, 0.1);
+
+  --band0: #86e5cf;
+  --band0-bg: rgba(134, 229, 207, 0.11);
+  --band1: #e9cd83;
+  --band1-bg: rgba(233, 205, 131, 0.11);
+  --warn: #ff9a78;
+  --warn-bg: rgba(255, 154, 120, 0.12);
+  --ok: #96e3aa;
+  --ok-bg: rgba(150, 227, 170, 0.11);
+
+  /* Null values are drawn, not left blank. */
+  --hatch: repeating-linear-gradient(135deg, rgba(244, 239, 230, 0.09) 0 1px, transparent 1px 6px);
+
+  --radius: 8px;
+  --radius-l: 14px;
+  --shadow: 0 18px 50px -20px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  --font-display: var(--gb-display), "Arial Narrow", sans-serif;
+  --font-sans: var(--gb-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--gb-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --fs-xs: 11px;
+  --fs-s: 12px;
+  --fs-m: 14px;
+  --fs-l: 17px;
+  --fs-xl: 26px;
+  --fs-2xl: 40px;
+  --fs-hero: 64px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 420ms;
+
+  --nav-h: 52px;
 }
 
 * {
@@ -43,16 +77,45 @@ body {
 }
 
 body {
-  background: var(--bg);
+  min-height: 100dvh;
+  background:
+    radial-gradient(90% 60% at 70% -10%, rgba(92, 200, 255, 0.07), transparent 60%),
+    radial-gradient(60% 50% at 0% 110%, rgba(255, 174, 66, 0.04), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-sans);
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: var(--fs-m);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Film grain: one fixed layer, so dark flats don't band. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+::selection {
+  background: rgba(191, 233, 255, 0.28);
+  color: var(--text);
 }
 
 a {
   color: var(--accent);
+  text-decoration-color: rgba(191, 233, 255, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 160ms;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
 }
 
 :focus-visible {
@@ -63,7 +126,8 @@ a {
 code,
 .mono {
   font-family: var(--font-mono);
-  font-size: 0.92em;
+  font-size: 0.86em;
+  letter-spacing: -0.01em;
 }
 
 .num {
@@ -79,30 +143,173 @@ code,
   white-space: nowrap;
 }
 
+/* A null value: hatched and labeled, so "unknown" is visible rather than blank. */
+.unknown {
+  padding: 0 5px;
+  border-radius: 3px;
+  background: var(--hatch), var(--unknown-bg);
+  color: var(--unknown);
+  font-style: normal;
+}
+
+/* Small instrument label: mono, spaced caps. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
 main {
-  padding: 16px;
-  max-width: 1600px;
+  padding: 28px 24px 56px;
+  max-width: 1480px;
   margin: 0 auto;
+  animation: gb-rise var(--dur) var(--ease) both;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  line-height: 1.02;
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: 20px;
-  margin: 0 0 8px;
+  font-size: var(--fs-2xl);
+  margin: 0 0 10px;
 }
 
 h2 {
-  font-size: 16px;
-  margin: 16px 0 8px;
+  font-size: var(--fs-xl);
+  margin: 28px 0 10px;
 }
 
 h3 {
-  font-size: 14px;
-  margin: 12px 0 6px;
+  font-size: var(--fs-m);
+  font-weight: 650;
+  margin: 16px 0 6px;
 }
 
+p {
+  text-wrap: pretty;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong) 20%, var(--border-strong) 80%, transparent);
+  margin: 24px 0;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-3);
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: rgba(190, 225, 255, 0.4);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(190, 225, 255, 0.14);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes gb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 20px 16px 48px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Paper is light: exported cards never print dark. */
 @media print {
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --surface: #fff;
+    --surface-2: #f3f3f0;
+    --surface-3: #ebebe6;
+    --glass: #fff;
+    --edge: #d6d6d0;
+    --border: #d6d6d0;
+    --border-strong: #b9b9b2;
+    --text: #111;
+    --muted: #4d4d48;
+    --text-3: #6b6b65;
+    --accent: #0b5d8a;
+    --accent-ink: #fff;
+    --desc: #1d4ed8;
+    --desc-bg: #e6eefd;
+    --gpc: #c2410c;
+    --gpc-bg: #fdede3;
+    --unknown: #52525b;
+    --unknown-bg: #ededee;
+    --band0: #0f766e;
+    --band0-bg: #dcf2ef;
+    --band1: #7c5b12;
+    --band1-bg: #f6ecd2;
+    --warn: #9a3412;
+    --warn-bg: #fdebdd;
+    --ok: #166534;
+    --ok-bg: #dcf3e3;
+    --hatch: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.12) 0 1px, transparent 1px 6px);
+    --shadow: none;
+  }
   body {
     background: #fff;
+  }
+  body::before {
+    display: none;
   }
   .no-print {
     display: none !important;
@@ -110,5 +317,6 @@ h3 {
   main {
     padding: 0;
     max-width: none;
+    animation: none;
   }
 }
