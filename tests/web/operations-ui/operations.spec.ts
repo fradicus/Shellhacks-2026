@@ -49,8 +49,8 @@ async function mockMetadata(page: Page, failReferenceOnce = false) {
 
 async function fillWorksite(page: Page) {
   await page.getByLabel("Worksite label").fill("Synthetic Seattle yard");
-  await page.getByLabel("Latitude").fill(String(point.lat));
-  await page.getByLabel("Longitude").fill(String(point.lon));
+  await page.getByLabel("Latitude", { exact: true }).fill(String(point.lat));
+  await page.getByLabel("Longitude", { exact: true }).fill(String(point.lon));
   await page.getByLabel("Annual AEF year").selectOption("2025");
 }
 
@@ -60,8 +60,12 @@ test("real backend readiness renders at desktop and mobile without a site reques
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/operations");
   await expect(page.getByRole("heading", { name: "Plan one mobilization" })).toBeVisible();
+  await page.locator("summary").filter({ hasText: "Truck route" }).click();
   await expect(page.getByText("Local time zone: America/New_York").first()).toBeVisible();
   await expect(page.getByText("Checking…")).toHaveCount(0);
+  await expect(page.getByText("3,413 utilities · 2024 EIA vintage")).toBeVisible();
+  await expect(page.getByText(/Separate LVR provisioning required/)).toBeVisible();
+  await expect(page.getByText(/No current, externally approved model/)).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("operations-real-backend-initial-1440.png"), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }));
@@ -81,6 +85,8 @@ test("mixed provider states stay bound to the submitted worksite without hydrati
     aef: emptyEnvelope("aef", "unavailable", "Synthetic test-only AEF point/year unavailable."),
   } }));
   await page.goto("/operations");
+  await page.locator("summary").filter({ hasText: "Truck route" }).click();
+  await page.locator("summary").filter({ hasText: "Construction duration evidence" }).click();
   await expect(page.getByText("Local time zone: America/New_York").first()).toBeVisible();
   await fillWorksite(page);
   await page.getByRole("button", { name: "Check worksite" }).press("Enter");
@@ -94,6 +100,75 @@ test("mixed provider states stay bound to the submitted worksite without hydrati
   await page.screenshot({ path: testInfo.outputPath("mocked-operations-1440.png"), fullPage: true });
 });
 
+test("stale responses cannot replace evidence and polling stops while hidden or unmounted", async ({ page }) => {
+  await page.clock.install({ time: new Date(stamp) });
+  await mockMetadata(page);
+  let siteCalls = 0;
+  let releaseFirstSite!: () => void;
+  let markFirstSiteStarted!: () => void;
+  const firstSiteStarted = new Promise<void>((resolve) => { markFirstSiteStarted = resolve; });
+  const firstSiteRelease = new Promise<void>((resolve) => { releaseFirstSite = resolve; });
+  await page.route("**/api/operations/site?*", async (route) => {
+    siteCalls += 1;
+    const url = new URL(route.request().url());
+    const requestPoint = { lat: Number(url.searchParams.get("lat")), lon: Number(url.searchParams.get("lon")) };
+    if (siteCalls === 1) { markFirstSiteStarted(); await firstSiteRelease; }
+    const boundWeather = { ...weather, data: { ...weather.data, samples: [{ ...weather.data.samples[0], point: requestPoint }] } };
+    await route.fulfill({ json: { request: { ...requestPoint, year: 2025 }, weather: boundWeather, roadwork,
+      soil: emptyEnvelope("soil", "unavailable", "Synthetic test-only soil unavailable."),
+      aef: emptyEnvelope("aef", "unavailable", "Synthetic test-only AEF unavailable.") } });
+  });
+  let conditionCalls = 0;
+  let releaseFirstCondition!: () => void;
+  let markFirstConditionStarted!: () => void;
+  const firstConditionStarted = new Promise<void>((resolve) => { markFirstConditionStarted = resolve; });
+  const firstConditionRelease = new Promise<void>((resolve) => { releaseFirstCondition = resolve; });
+  await page.route("**/api/operations/conditions?*", async (route) => {
+    conditionCalls += 1;
+    const url = new URL(route.request().url());
+    const requestPoint = { lat: Number(url.searchParams.get("lat")), lon: Number(url.searchParams.get("lon")) };
+    if (conditionCalls === 1) { markFirstConditionStarted(); await firstConditionRelease; }
+    const description = conditionCalls === 1 ? "Synthetic stale response must not render" : "Synthetic visible poll response";
+    const boundWeather = { ...weather, data: { ...weather.data, samples: [{ ...weather.data.samples[0], point: requestPoint,
+      forecast: [{ ...weather.data.samples[0].forecast[0], description }] }] } };
+    await route.fulfill({ json: { request: requestPoint, weather: boundWeather, roadwork } });
+  });
+  await page.goto("/operations");
+  await fillWorksite(page);
+  await page.getByRole("button", { name: "Check worksite" }).click();
+  await firstSiteStarted;
+  await page.getByLabel("Latitude", { exact: true }).fill("47.7");
+  releaseFirstSite();
+  await expect(page.getByRole("heading", { name: "No active worksite" })).toBeVisible();
+
+  await page.getByLabel("Latitude", { exact: true }).fill(String(point.lat));
+  await page.getByRole("button", { name: "Check worksite" }).click();
+  await expect(page.getByRole("alert").last()).toContainText("including failed checks");
+  expect(siteCalls).toBe(1);
+  await page.clock.fastForward(60_100);
+  await page.getByRole("button", { name: "Check worksite" }).click();
+  await expect(page.getByRole("heading", { name: "Synthetic Seattle yard" })).toBeVisible();
+  await page.clock.fastForward(60_100);
+  await firstConditionStarted;
+  await page.getByLabel("Longitude", { exact: true }).fill("-122.4");
+  releaseFirstCondition();
+  await expect(page.getByText("Synthetic stale response must not render")).toHaveCount(0);
+
+  await page.getByLabel("Longitude", { exact: true }).fill(String(point.lon));
+  await page.getByRole("button", { name: "Check worksite" }).click();
+  await expect(page.getByText(/Existing soil and annual evidence was reused/)).toBeVisible();
+  await page.evaluate(() => { Object.defineProperty(document, "visibilityState", { configurable: true, value: "hidden" }); document.dispatchEvent(new Event("visibilitychange")); });
+  await page.clock.fastForward(120_000);
+  expect(conditionCalls).toBe(1);
+  await page.evaluate(() => { Object.defineProperty(document, "visibilityState", { configurable: true, value: "visible" }); document.dispatchEvent(new Event("visibilitychange")); });
+  await page.clock.fastForward(60_100);
+  await expect.poll(() => conditionCalls).toBe(2);
+  await expect(page.getByText("Synthetic visible poll response")).toBeVisible();
+  await page.goto("/");
+  await page.clock.fastForward(120_000);
+  expect(conditionCalls).toBe(2);
+});
+
 test("readiness can retry and bounds errors are field-friendly", async ({ page }) => {
   const referenceCalls = await mockMetadata(page, true);
   await page.goto("/operations");
@@ -102,8 +177,8 @@ test("readiness can retry and bounds errors are field-friendly", async ({ page }
   await expect(page.getByText("Refresh 60s while visible")).toBeVisible();
   expect(referenceCalls()).toBe(2);
   await page.getByLabel("Worksite label").fill("Invalid point");
-  await page.getByLabel("Latitude").fill("91");
-  await page.getByLabel("Longitude").fill("-122.3");
+  await page.getByLabel("Latitude", { exact: true }).fill("91");
+  await page.getByLabel("Longitude", { exact: true }).fill("-122.3");
   await page.getByLabel("Annual AEF year").selectOption("2025");
   await page.getByRole("button", { name: "Check worksite" }).click();
   const alert = page.getByRole("alert").last();

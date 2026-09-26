@@ -197,6 +197,13 @@ export function OperationsDesk() {
       setSiteNotice("Existing soil and annual evidence was reused. Current conditions refresh independently at the published cadence.");
       return;
     }
+    const key = JSON.stringify({ lat: built.request.lat, lon: built.request.lon });
+    const cooldownUntil = claimAttempt(conditionAttempts.current, key, conditionsInterval(reference));
+    if (cooldownUntil === null) {
+      setSiteError(`Provider attempts for this point are limited to every ${conditionsInterval(reference) / 1000} seconds, including failed checks. Wait for the cooldown before checking again.`);
+      return;
+    }
+    setConditionCooldownUntil(cooldownUntil);
     const ticket = siteLane.current.begin(); setSiteLoading(true);
     try {
       const query = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon), year: String(built.request.year) });
@@ -206,9 +213,6 @@ export function OperationsDesk() {
       if (ticket.current()) {
         setSiteResult(value); setActiveSite({ label: built.label, point: { lat: built.request.lat, lon: built.request.lon }, year: built.request.year });
         setConditions({ request: { lat: built.request.lat, lon: built.request.lon }, weather: value.weather, roadwork: value.roadwork });
-        const key = JSON.stringify({ lat: built.request.lat, lon: built.request.lon });
-        const cooldownUntil = claimAttempt(conditionAttempts.current, key, conditionsInterval(reference));
-        if (cooldownUntil !== null) setConditionCooldownUntil(cooldownUntil);
         setConditionsError(null); setSiteOutdated(false); setRouteOutdated(routeResult !== null);
       }
     } catch (error) { if (ticket.current()) setSiteError(message(error)); }

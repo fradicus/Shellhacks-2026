@@ -6,6 +6,7 @@ import {
   PredictionResponseSchema,
   RequestEpoch,
   SiteResponseSchema,
+  VerifiedListResponseSchema,
   VisibilityPoller,
   buildOutcomeRequest,
   buildRouteRequest,
@@ -87,9 +88,10 @@ test("strict response validation keeps mixed provider states and checks request 
   assert.equal(SiteResponseSchema.safeParse({ ...site, extra: true }).success, false);
   assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, data: { benign: true } } }).success, false);
   assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, status: "unavailable" } }).success, false);
+  assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, status: "out_of_coverage" } }).success, false);
   assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, data: null } }).success, false);
   assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, source_url: "javascript:alert(1)" } }).success, false);
-  assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, coverage: { ...conditions.weather.coverage, completed: 2 } } }).success, false);
+  assert.equal(ConditionsResponseSchema.safeParse({ ...conditions, weather: { ...conditions.weather, coverage: { ...conditions.weather.coverage, failed: 1 } } }).success, false);
 });
 
 test("unavailable actual-history payload cannot contain a numerical prediction", () => {
@@ -100,6 +102,20 @@ test("unavailable actual-history payload cannot contain a numerical prediction",
   assert.equal(PredictionResponseSchema.safeParse({ ...unavailable, status: "predicted", prediction: { duration_days: { lower: 1, median: 2, upper: 3 }, delay_probability: null } }).success, false);
   const status = OutcomeStatusSchema.parse({ status: "unavailable", reason: "No approved model", model_version: null, support: null, evaluation: null, limitations: [] });
   assert.equal(status.status, "unavailable");
+  const predicted = { status: "predicted", reason: "Synthetic test only", request: { job_type: "substation", company_id: "company-1", region: "northwest", as_of: stamp },
+    prediction: { duration_days: { lower: 10, median: 20, upper: 30 }, delay_probability: null }, support: { training: 30, calibration: 20, holdout: 20 },
+    evaluation: { passed: true, evaluated_at: stamp, mae_days: 4, baseline_mae_days: 5, interval_coverage: .8 }, model_version: "synthetic-test-only",
+    limitations: ["Synthetic test-only response."], probability_evidence: null };
+  assert.equal(PredictionResponseSchema.safeParse(predicted).success, true);
+  assert.equal(PredictionResponseSchema.safeParse({ ...predicted, prediction: { ...predicted.prediction, duration_days: { lower: 30, median: 20, upper: 1 } } }).success, false);
+  assert.equal(PredictionResponseSchema.safeParse({ ...predicted, evaluation: { ...predicted.evaluation, mae_days: -1 } }).success, false);
+  assert.equal(PredictionResponseSchema.safeParse({ ...predicted, support: { training: 0, calibration: 0, holdout: 0 } }).success, false);
+  const baselinePrediction = { ...predicted, request: { ...predicted.request, planned_duration_days: 25, planned_duration_confirmed_at_as_of: true as const },
+    prediction: { ...predicted.prediction, delay_probability: .5 }, probability_evidence: { numerator: 15, denominator: 30,
+      interval_95: { lower: .7, upper: .6 }, interpretation: "Synthetic test-only interval." } };
+  assert.equal(PredictionResponseSchema.safeParse(baselinePrediction).success, false);
+  assert.equal(PredictionResponseSchema.safeParse({ ...baselinePrediction, probability_evidence: { ...baselinePrediction.probability_evidence,
+    numerator: 31, denominator: 30, interval_95: { lower: .8, upper: 1 } }, prediction: { ...baselinePrediction.prediction, delay_probability: 1 } }).success, false);
 });
 
 test("typed unavailable responses survive HTTP status while malformed payloads fail", async () => {
@@ -108,6 +124,11 @@ test("typed unavailable responses survive HTTP status while malformed payloads f
   await assert.rejects(() => readResponse(new Response("not json", { status: 502 }), OutcomeStatusSchema), /malformed JSON/);
   const usable = { request: { lat: 47.6, lon: -122.3 }, weather: base("weather", "available", weatherData), roadwork: base("roadwork", "out_of_coverage", null) };
   await assert.rejects(() => readResponse(new Response(JSON.stringify(usable), { status: 500 }), ConditionsResponseSchema), /usable evidence with HTTP 500/);
+  const unavailableDirectory = { available: false, reason: "Synthetic outage", dataset: null, generated_at: null,
+    filters: { page: 1, limit: 10 }, total: 1, page: 1, limit: 10, records: [{ id: "synthetic", eia_utility_id: "1", data_year: 2024,
+      name: "Synthetic utility", state_fips: [], county_geoids: [], source_ids: ["synthetic"], validation_status: "accepted", limitations: [] }] };
+  assert.equal(VerifiedListResponseSchema.safeParse(unavailableDirectory).success, false);
+  await assert.rejects(() => readResponse(new Response(JSON.stringify(unavailableDirectory), { status: 503 }), VerifiedListResponseSchema), /Request failed/);
 });
 
 test("request epochs abort stale work and never let an older response become current", () => {

@@ -105,12 +105,12 @@ function envelope<T>(provider: keyof typeof providerSources, data: z.ZodType<T>)
     if (value.source_url !== providerSources[provider]) {
       context.addIssue({ code: "custom", path: ["source_url"], message: "Source URL must match the credential-free HTTPS provider resource." });
     }
-    const noData = value.status === "unavailable" || value.status === "not_configured" || value.status === "deferred";
+    const noData = value.status === "unavailable" || value.status === "out_of_coverage" || value.status === "not_configured" || value.status === "deferred";
     if (value.status === "available" && value.data === null) context.addIssue({ code: "custom", path: ["data"], message: "Available evidence must include data." });
     if (noData && value.data !== null) context.addIssue({ code: "custom", path: ["data"], message: `${value.status} evidence cannot include usable data.` });
     if (value.data === null && value.coverage.completed !== 0) context.addIssue({ code: "custom", path: ["coverage", "completed"], message: "Evidence without data cannot report completed coverage." });
-    if (value.coverage.completed > value.coverage.requested || value.coverage.failed > value.coverage.requested) {
-      context.addIssue({ code: "custom", path: ["coverage"], message: "Coverage counts cannot exceed requested checks." });
+    if (value.coverage.completed + value.coverage.failed !== value.coverage.requested) {
+      context.addIssue({ code: "custom", path: ["coverage"], message: "Completed and failed coverage must equal requested checks." });
     }
     if (value.coverage.truncated && value.status === "available") context.addIssue({ code: "custom", path: ["status"], message: "Truncated evidence cannot be marked available." });
   });
@@ -162,7 +162,14 @@ const VerifiedFiltersSchema = z.object({
 export const VerifiedListResponseSchema: z.ZodType<VerifiedListResponse> = z.object({
   available: z.boolean(), reason: z.string().nullable(), dataset: z.string().nullable(), generated_at: stamp.nullable(), filters: VerifiedFiltersSchema,
   total: z.number().int().nonnegative(), page: z.number().int().positive(), limit: z.number().int().positive(), records: z.array(VerifiedRecordSchema),
-}).strict();
+}).strict().superRefine((value, context) => {
+  if (!value.available && (value.total !== 0 || value.records.length !== 0)) {
+    context.addIssue({ code: "custom", message: "Unavailable directory responses cannot carry records or a positive total." });
+  }
+  if (value.available && (!value.dataset || !value.generated_at || value.total < value.records.length)) {
+    context.addIssue({ code: "custom", message: "Available directory responses require dataset identity and consistent counts." });
+  }
+});
 const CoverageCountsSchema = z.object({
   sources: z.number().int().nonnegative(), utilities: z.number().int().nonnegative(), utility_activities: z.number().int().nonnegative(),
   service_territory_rows: z.number().int().nonnegative(), assertions: z.number().int().nonnegative(), quarantine: z.number().int().nonnegative(),
@@ -177,7 +184,9 @@ export const VerifiedCoverageResponseSchema: z.ZodType<VerifiedCoverageResponse>
     schema_version: z.literal("verified-directory-v1"), dataset: z.string(), generated_at: stamp, data_year: z.literal(2024),
     source_vintages: z.record(z.string(), z.string().nullable()), counts: CoverageCountsSchema, limitations: z.array(z.string()),
   }).strict().nullable(),
-}).strict();
+}).strict().superRefine((value, context) => {
+  if (value.available !== (value.coverage !== null)) context.addIssue({ code: "custom", message: "Directory availability must match coverage data." });
+});
 
 const identifier = z.string().min(1).max(120).regex(/^[A-Za-z0-9_ .:/-]+$/);
 export const OutcomeRequestSchema = z.object({
@@ -198,12 +207,12 @@ export const OutcomeStatusSchema = z.object({
 export const PredictionResponseSchema: z.ZodType<PredictionResponse> = z.object({
   status: z.enum(["predicted", "insufficient_evidence", "unavailable", "invalid"]), reason: z.string(), request: OutcomeRequestResponseSchema,
   prediction: z.object({
-    duration_days: z.object({ lower: z.number().finite(), median: z.number().finite(), upper: z.number().finite() }).strict(),
+    duration_days: z.object({ lower: z.number().finite().positive(), median: z.number().finite().positive(), upper: z.number().finite().positive() }).strict(),
     delay_probability: z.number().min(0).max(1).nullable(),
   }).strict().nullable(),
-  support: z.object({ training: z.number().int().nonnegative(), calibration: z.number().int().nonnegative(), holdout: z.number().int().nonnegative() }).strict().nullable(),
-  evaluation: z.object({ passed: z.literal(true), evaluated_at: stamp, mae_days: z.number().finite(), baseline_mae_days: z.number().finite(), interval_coverage: z.number().min(0).max(1) }).strict().nullable(),
-  model_version: z.string().nullable(), limitations: OutcomeLimitations,
+  support: z.object({ training: z.number().int().min(30), calibration: z.number().int().min(20), holdout: z.number().int().min(20) }).strict().nullable(),
+  evaluation: z.object({ passed: z.literal(true), evaluated_at: stamp, mae_days: z.number().finite().nonnegative(), baseline_mae_days: z.number().finite().nonnegative(), interval_coverage: z.number().min(0).max(1) }).strict().nullable(),
+  model_version: z.string().min(1).nullable(), limitations: OutcomeLimitations,
   probability_evidence: z.object({
     numerator: z.number().int().nonnegative(), denominator: z.number().int().positive(),
     interval_95: z.object({ lower: z.number().min(0).max(1), upper: z.number().min(0).max(1) }).strict(), interpretation: z.string(),
@@ -220,6 +229,17 @@ export const PredictionResponseSchema: z.ZodType<PredictionResponse> = z.object(
   }
   if ((value.prediction?.delay_probability !== null && value.prediction?.delay_probability !== undefined) !== (value.probability_evidence !== null)) {
     context.addIssue({ code: "custom", message: "Delay probability requires its evidence counts." });
+  }
+  const duration = value.prediction?.duration_days;
+  if (duration && !(duration.lower <= duration.median && duration.median <= duration.upper)) {
+    context.addIssue({ code: "custom", path: ["prediction", "duration_days"], message: "Duration bounds must be ordered." });
+  }
+  const probability = value.probability_evidence;
+  if (probability && (probability.numerator > probability.denominator || probability.interval_95.lower > probability.interval_95.upper
+    || value.prediction?.delay_probability !== probability.numerator / probability.denominator
+    || probability.denominator !== value.support?.training
+    || !value.request?.planned_duration_confirmed_at_as_of)) {
+    context.addIssue({ code: "custom", path: ["probability_evidence"], message: "Probability evidence must be ordered, supported and bound to the confirmed baseline." });
   }
 });
 
