@@ -6,7 +6,7 @@ Target length: about two minutes [unverified until rehearsed]. Use explicit fixt
 
 GridBridge reads the public DESC filings and the permitted Georgia planning-table fields. It preserves source versions, original owner codes and uncertainty. Our current register covers 262 active projects and 400 filed endpoints. Only 89 endpoints have medium-confidence locations; we show the unresolved records instead of inventing coordinates.
 
-Here is the ranked list. Geography decides whether a pair overlaps; exact in-service dates determine its place within a distance band. A milestone is not a construction window. The current run finds 19 candidates: 16 historical, three tentative and no qualifying future pairs. Every candidate still needs review.
+Here is the ranked list. Geography decides whether a pair overlaps; exact in-service dates determine its place within a distance band. A milestone is not a construction window. The current run finds 19 candidates: 16 historical, three tentative and no qualifying future pairs. None is independently confirmed; the audit downgrades the featured pairs where location identity remains uncertain.
 
 Open a coordination card to inspect both filed milestones, source pages and location evidence. The center is an endpoint approximation, not a corridor intersection. The audit calls out insufficient county evidence, so a similar substation name does not become a confirmed opportunity.
 
@@ -18,4 +18,4 @@ Our next step is planner-reviewed location evidence and a configured live deploy
 
 ## Number sources
 
-Corpus/location counts: [committed F09 coverage](../data/locations/coverage.json). Match counts and ranking: [committed F10 summary](../data/matches/summary.json). Sample counterexample: [untouched golden overlaps](../data/fixtures/golden/overlaps.json). Gemini status: [committed evaluation](../data/extraction/eval.json). Audit wording remains subject to final F13 artifacts.
+Corpus/location counts: [committed F09 coverage](../data/locations/coverage.json). Match counts and ranking: [committed F10 summary](../data/matches/summary.json). Sample counterexample: [untouched golden overlaps](../data/fixtures/golden/overlaps.json). Gemini status: [committed evaluation](../data/extraction/eval.json). Audit evidence: [completed independent audit](../reports/audit/summary.md).
