@@ -23,7 +23,11 @@ test("text state restores with browser Back and empty differs from invalid URL",
   await page.getByRole("button", { name: "Search" }).click();
   await expect(page.getByText("No matches in the imported records")).toBeVisible();
   await page.getByRole("button", { name: "Reset" }).click();
+  await expect(page).toHaveURL(/\/explore$/);
+  await expect(page.getByLabel("Project text")).toHaveValue("");
+  await expect(page.locator("section[aria-label='Filtered project counts'] strong").first()).toHaveText("1,286");
   await page.goBack();
+  await expect(page).toHaveURL(/text=zzzz-test-no-national-project/);
   await expect(page.getByLabel("Project text")).toHaveValue("zzzz-test-no-national-project");
   await expect(page.getByText("No matches in the imported records")).toBeVisible();
 
