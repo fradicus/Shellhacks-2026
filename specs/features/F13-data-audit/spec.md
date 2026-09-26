@@ -28,3 +28,5 @@ The sponsor guide warns that the common false match is a similarly named substat
 
 ## Defaults
 - If you can't confirm a pair, don't mark it confirmed. A downgrade isn't a failure; it's the product working.
+- A hash-verified cached OSM feature may support a conservative downgrade when a live feature-page inspection or county/project-area identity is unavailable. Record that limit explicitly; cache inspection does not establish positive location identity.
+- Bind verdicts to current source/filing/endpoint facts through the safe F06 projection/hash helper. Reuse no production matcher or parser for independent numerical or source checks. Historical source observations must be distinguished from the refreshed accepted output.
