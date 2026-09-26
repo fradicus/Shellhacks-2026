@@ -180,3 +180,12 @@ def test_rejected_briefs_and_inactive_projects_are_excluded(tmp_path):
     kinds = sorted(rec["kind"] for rec in embeddings)
     assert kinds == ["match", "project"]  # no brief, no inactive project
     assert summary["corpus"] == 2
+
+
+def test_summary_files_and_non_records_are_skipped(tmp_path):
+    """Real data/ trees carry summary dicts (gpc_summary.json) and may carry unparsed rows."""
+    root = make_root(tmp_path)
+    (root / "data/projects/gpc_summary.json").write_text(json.dumps({"parsed": 44, "unparsed": 0}))
+    (root / "data/projects/junk.json").write_text(json.dumps(["not a record", 42, None]))
+    summary = run_batch(repo_root=root, live=True, embed_fn=fake_vectors, now=NOW)
+    assert summary["status"] == "ok" and summary["corpus"] == 4

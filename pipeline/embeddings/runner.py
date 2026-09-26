@@ -26,26 +26,39 @@ def _text_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def _records(obj: object) -> list[dict]:
+    """Mirror load.build._records_in: an array of records, or one record; anything else is skipped."""
+    if isinstance(obj, list):
+        return [r for r in obj if isinstance(r, dict) and "_id" in r]
+    if isinstance(obj, dict) and "_id" in obj:
+        return [obj]
+    return []
+
+
 def collect_corpus(root: Path) -> list[dict]:
     """{kind, ref_id, text} for every match, active project and passed brief under data/."""
     corpus: list[dict] = []
-    projects = []
+    projects: list[dict] = []
     projects_dir = root / "data/projects"
     if projects_dir.is_dir():
         for path in sorted(projects_dir.rglob("*.json")):
-            projects.extend(load_json(path))
+            # The loader is the schema validator; here the minimal corpus contract is an identity
+            # and the fields project_text reads, so summaries and unparsed rows can't leak in.
+            projects.extend(
+                rec for rec in _records(load_json(path)) if rec.get("project_key") and rec.get("utility")
+            )
     active_by_key = {p["project_key"]: p for p in projects if p.get("active")}
 
     matches_path = root / "data/matches/matches.json"
     if matches_path.exists():
-        for match in load_json(matches_path):
+        for match in _records(load_json(matches_path)):
             corpus.append({"kind": "match", "ref_id": match["_id"], "text": match_text(match, active_by_key)})
     for project in projects:
         if project.get("active"):
             corpus.append({"kind": "project", "ref_id": project["_id"], "text": project_text(project)})
     briefs_path = root / "data/briefs/briefs.json"
     if briefs_path.exists():
-        for brief in load_json(briefs_path):
+        for brief in _records(load_json(briefs_path)):
             if brief.get("validation") == "passed":
                 corpus.append({"kind": "brief", "ref_id": brief["_id"], "text": brief_text(brief)})
     return [entry for entry in corpus if entry["text"].strip()]
