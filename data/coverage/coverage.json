@@ -1,0 +1,1626 @@
+[
+  {
+    "_id": "desc-2024",
+    "counts": {
+      "active_by_utility": {
+        "DESC": 7
+      },
+      "active_projects": 7,
+      "contract_version": "coverage-v1",
+      "coverage_scope": "canonical_projects",
+      "distinct_matched_project_versions": 0,
+      "distinct_project_keys": 44,
+      "effective_match_states": {},
+      "endpoint_confidence": {
+        "high": 0,
+        "low": 0,
+        "medium": 0,
+        "rejected": 7
+      },
+      "filed_endpoint_projects_active": {
+        "0": 3,
+        "1": 1,
+        "2": 3
+      },
+      "filed_endpoint_projects_all_versions": {
+        "0": 4,
+        "1": 13,
+        "2": 27
+      },
+      "filed_endpoints_all_versions": 67,
+      "flagged_active_projects": 3,
+      "flagged_versions": 7,
+      "global": {
+        "active_projects": 262,
+        "audit_review_counts": {
+          "confirmed": 0,
+          "downgraded": 29,
+          "endpoints": 14,
+          "pairs": 15
+        },
+        "distinct_matched_project_versions": 15,
+        "effective_match_states": {
+          "needs_review": 4,
+          "rejected": 15
+        },
+        "gemini": {
+          "corpus_pages": 91,
+          "live_calls": 0,
+          "measurement": "validated_field_agreement_with_f01_not_independent_human_accuracy",
+          "model": null,
+          "pages_processed": 0,
+          "per_field": {
+            "description": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "endpoints": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "in_service_raw": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "name": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "need": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "project_id": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "status": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "total_cost": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "voltage_kv": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "yearly_spend": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            }
+          },
+          "qa_checked": null,
+          "reason": "live_execution_not_requested",
+          "status": "unavailable"
+        },
+        "located_endpoints": 89,
+        "located_project_versions": 79,
+        "location_records": 400,
+        "manual_source_audit": {
+          "agreements": 108,
+          "field_group_count": 9,
+          "gemini_comparison": {
+            "accuracy": null,
+            "real_records": 0,
+            "status": "unavailable; live Gemini explicitly deferred"
+          },
+          "mismatches": 0,
+          "sample_count": 12
+        },
+        "matches": 19,
+        "project_versions": 299,
+        "raw_match_states": {
+          "needs_review": 19
+        }
+      },
+      "inactive_projects": 37,
+      "located_active_projects": 0,
+      "located_endpoints": 0,
+      "location_records": 7,
+      "match_views": {},
+      "matches_involving_source": 0,
+      "project_versions": 44,
+      "quality_flags": {
+        "cost_amount_invalid:2024": 1,
+        "cost_consistency_mismatch": 2,
+        "endpoint_ambiguous": 4,
+        "endpoint_multi_asset": 2,
+        "endpoint_scope_ambiguous": 2,
+        "in_service_multiple_dates": 1,
+        "yearly_spend_incomplete": 1
+      },
+      "raw_match_states": {},
+      "rows_parsed": 44,
+      "rows_seen": 44,
+      "unlocated_active": [
+        {
+          "name": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV (Queensboro-James Island Sect)",
+          "project_id": "DESC:6807 B@desc-2024",
+          "project_key": "DESC:6807 B"
+        },
+        {
+          "name": "Eastover - Square D 115kV: Rebuild",
+          "project_id": "DESC:6808 J@desc-2024",
+          "project_key": "DESC:6808 J"
+        },
+        {
+          "name": "Square D - Hopkins 115kV: Rebuild",
+          "project_id": "DESC:6808 W@desc-2024",
+          "project_key": "DESC:6808 W"
+        },
+        {
+          "name": "Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds",
+          "project_id": "DESC:6809 E@desc-2024",
+          "project_key": "DESC:6809 E"
+        },
+        {
+          "name": "Summerville: Replace and Spare 230-115kV 336MVA Auto Bank",
+          "project_id": "DESC:05004 P@desc-2024",
+          "project_key": "DESC:05004 P"
+        },
+        {
+          "name": "Hooks - Thurmond 115kV Tie: Rebuild",
+          "project_id": "DESC:6810 A@desc-2024",
+          "project_key": "DESC:6810 A"
+        },
+        {
+          "name": "Church Creek – Faber Place – Charleston Transmission: Add 230kV Line",
+          "project_id": "DESC:6847 A-B, D-H@desc-2024",
+          "project_key": "DESC:6847 A-B, D-H"
+        }
+      ],
+      "unlocated_active_projects": 7
+    }
+  },
+  {
+    "_id": "desc-2025",
+    "counts": {
+      "active_by_utility": {
+        "DESC": 47
+      },
+      "active_projects": 47,
+      "contract_version": "coverage-v1",
+      "coverage_scope": "canonical_projects",
+      "distinct_matched_project_versions": 3,
+      "distinct_project_keys": 47,
+      "effective_match_states": {
+        "needs_review": 4,
+        "rejected": 15
+      },
+      "endpoint_confidence": {
+        "high": 0,
+        "low": 0,
+        "medium": 16,
+        "rejected": 40
+      },
+      "filed_endpoint_projects_active": {
+        "0": 13,
+        "1": 12,
+        "2": 22
+      },
+      "filed_endpoint_projects_all_versions": {
+        "0": 13,
+        "1": 12,
+        "2": 22
+      },
+      "filed_endpoints_all_versions": 56,
+      "flagged_active_projects": 17,
+      "flagged_versions": 17,
+      "global": {
+        "active_projects": 262,
+        "audit_review_counts": {
+          "confirmed": 0,
+          "downgraded": 29,
+          "endpoints": 14,
+          "pairs": 15
+        },
+        "distinct_matched_project_versions": 15,
+        "effective_match_states": {
+          "needs_review": 4,
+          "rejected": 15
+        },
+        "gemini": {
+          "corpus_pages": 91,
+          "live_calls": 0,
+          "measurement": "validated_field_agreement_with_f01_not_independent_human_accuracy",
+          "model": null,
+          "pages_processed": 0,
+          "per_field": {
+            "description": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "endpoints": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "in_service_raw": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "name": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "need": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "project_id": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "status": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "total_cost": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "voltage_kv": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "yearly_spend": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            }
+          },
+          "qa_checked": null,
+          "reason": "live_execution_not_requested",
+          "status": "unavailable"
+        },
+        "located_endpoints": 89,
+        "located_project_versions": 79,
+        "location_records": 400,
+        "manual_source_audit": {
+          "agreements": 108,
+          "field_group_count": 9,
+          "gemini_comparison": {
+            "accuracy": null,
+            "real_records": 0,
+            "status": "unavailable; live Gemini explicitly deferred"
+          },
+          "mismatches": 0,
+          "sample_count": 12
+        },
+        "matches": 19,
+        "project_versions": 299,
+        "raw_match_states": {
+          "needs_review": 19
+        }
+      },
+      "inactive_projects": 0,
+      "located_active_projects": 16,
+      "located_endpoints": 16,
+      "location_records": 56,
+      "match_views": {
+        "historical": 16,
+        "tentative": 3
+      },
+      "matches_involving_source": 19,
+      "project_versions": 47,
+      "quality_flags": {
+        "cost_consistency_mismatch": 2,
+        "cost_currency_symbol_missing:2025": 1,
+        "cost_currency_symbol_missing:2027": 1,
+        "endpoint_ambiguous": 13,
+        "endpoint_multi_asset": 5,
+        "endpoint_scope_ambiguous": 8,
+        "in_service_multiple_dates": 1,
+        "yearly_spend_not_published": 2
+      },
+      "raw_match_states": {
+        "needs_review": 19
+      },
+      "rows_parsed": 47,
+      "rows_seen": 47,
+      "unlocated_active": [
+        {
+          "name": "Union Pier 115-13.8 kV Sub: Tap",
+          "project_id": "DESC:0167C-D@desc-2025",
+          "project_key": "DESC:0167C-D"
+        },
+        {
+          "name": "Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",
+          "project_id": "DESC:0139 M,N@desc-2025",
+          "project_key": "DESC:0139 M,N"
+        },
+        {
+          "name": "Burton-St Helena 115kV: Rebuild Burton-Frogmore Transmission Section",
+          "project_id": "DESC:6808 K@desc-2025",
+          "project_key": "DESC:6808 K"
+        },
+        {
+          "name": "Burton-St Helena 115kV: Frogmore Distribution - St Helena",
+          "project_id": "DESC:6808 L@desc-2025",
+          "project_key": "DESC:6808 L"
+        },
+        {
+          "name": "VCS1-Denny Terrace 230kV & VCS1-Pineland 230kV: Rebuild Single Circuit Sections",
+          "project_id": "DESC:6808 N,O@desc-2025",
+          "project_key": "DESC:6808 N,O"
+        },
+        {
+          "name": "Hopkins-CIP 230kV: Rebuild",
+          "project_id": "DESC:6808 U@desc-2025",
+          "project_key": "DESC:6808 U"
+        },
+        {
+          "name": "Faber Place-Bayfront 115kV: Rebuild North Bridge Terrace to Bayfront Section",
+          "project_id": "DESC:6808 V@desc-2025",
+          "project_key": "DESC:6808 V"
+        },
+        {
+          "name": "Edenwood Sub: #1 & #2 230-115kV Autobanks, Replace with 336MVA",
+          "project_id": "DESC:6805 G@desc-2025",
+          "project_key": "DESC:6805 G"
+        },
+        {
+          "name": "Williams St Sub: Replace Sw House & Relays, AM Williams Sub: Replace Sw House, and McMeekin Sub: Add Sw House",
+          "project_id": "DESC:1060A, I, L@desc-2025",
+          "project_key": "DESC:1060A, I, L"
+        },
+        {
+          "name": "Harleyville 115KV Transmission Tap – Construct (1.4 miles)",
+          "project_id": "DESC:06005 B@desc-2025",
+          "project_key": "DESC:06005 B"
+        },
+        {
+          "name": "Sherwood Tap: Construct Tap",
+          "project_id": "DESC:06367 A - C, H@desc-2025",
+          "project_key": "DESC:06367 A - C, H"
+        },
+        {
+          "name": "Wagener 115kV Tap: Construct Tap",
+          "project_id": "DESC:06371 D@desc-2025",
+          "project_key": "DESC:06371 D"
+        },
+        {
+          "name": "Goose Creek Reservoir: Rebuild Transmission Line Crossings",
+          "project_id": "DESC:06810 G@desc-2025",
+          "project_key": "DESC:06810 G"
+        },
+        {
+          "name": "Summerville 115kV Loop: Rebuild",
+          "project_id": "DESC:06810 H@desc-2025",
+          "project_key": "DESC:06810 H"
+        },
+        {
+          "name": "St George - Sumter 230kV Tie: Rebuild Line from Santee Substation - Duke/Progress Energy Tie",
+          "project_id": "DESC:6809 M@desc-2025",
+          "project_key": "DESC:6809 M"
+        },
+        {
+          "name": "Coit – Gills Creek 115kV: Construct",
+          "project_id": "DESC:5392 A-C@desc-2025",
+          "project_key": "DESC:5392 A-C"
+        },
+        {
+          "name": "Scout 230 kV Sub and Fold-in: Construct",
+          "project_id": "DESC:6853 B-F@desc-2025",
+          "project_key": "DESC:6853 B-F"
+        },
+        {
+          "name": "Dawson 230kV Sub and Fold-in: Construct and Rebuild",
+          "project_id": "DESC:6859@desc-2025",
+          "project_key": "DESC:6859"
+        },
+        {
+          "name": "Jack Primus 115 kV Tap: Construct",
+          "project_id": "DESC:0147 B, J@desc-2025",
+          "project_key": "DESC:0147 B, J"
+        },
+        {
+          "name": "Church Creek – Faber Place – Charleston Transmission: Add 230kV Line",
+          "project_id": "DESC:6847@desc-2025",
+          "project_key": "DESC:6847"
+        },
+        {
+          "name": "Eastover – Sumter 115kV DEP Tie: Rebuild with 1272 ACSR",
+          "project_id": "DESC:6846 A@desc-2025",
+          "project_key": "DESC:6846 A"
+        },
+        {
+          "name": "Urquhart – Aiken PSA 46 kV: Rebuild",
+          "project_id": "DESC:6810 O@desc-2025",
+          "project_key": "DESC:6810 O"
+        },
+        {
+          "name": "Cameron Jct – Cameron – St Matthews 46 kV Rebuild",
+          "project_id": "DESC:6810 T@desc-2025",
+          "project_key": "DESC:6810 T"
+        },
+        {
+          "name": "Saluda Hydro – Bush River 115kV #1 and #2 Tie Lines Rebuild",
+          "project_id": "DESC:6870 A@desc-2025",
+          "project_key": "DESC:6870 A"
+        },
+        {
+          "name": "Orangeburg #1 - Cameron Jct 46kV Line Rebuild",
+          "project_id": "DESC:6809 F@desc-2025",
+          "project_key": "DESC:6809 F"
+        },
+        {
+          "name": "Okatie – McIntosh 115kV Tie: Add Series Reactor",
+          "project_id": "DESC:6888@desc-2025",
+          "project_key": "DESC:6888"
+        },
+        {
+          "name": "Church Creek – Dawson 230 kV: Rebuild from Long Savannah to Dawson",
+          "project_id": "DESC:6877 A@desc-2025",
+          "project_key": "DESC:6877 A"
+        },
+        {
+          "name": "Fairfax-Yemassee 115kV: Upgrade for DESCSQ #1151 Interconnection",
+          "project_id": "DESC:6238 H@desc-2025",
+          "project_key": "DESC:6238 H"
+        },
+        {
+          "name": "Winnsboro West 230-115 kV Sub and Fold-in: Construct",
+          "project_id": "DESC:6873@desc-2025",
+          "project_key": "DESC:6873"
+        },
+        {
+          "name": "Millrace 115 kV Tap: Construct",
+          "project_id": "DESC:6864 D, E@desc-2025",
+          "project_key": "DESC:6864 D, E"
+        },
+        {
+          "name": "Long Savannah 115 kV Tap: Construct",
+          "project_id": "DESC:6869 D@desc-2025",
+          "project_key": "DESC:6869 D"
+        }
+      ],
+      "unlocated_active_projects": 31
+    }
+  },
+  {
+    "_id": "gpc-2025",
+    "counts": {
+      "active_by_utility": {
+        "GPC": 138,
+        "unknown": 70
+      },
+      "active_projects": 208,
+      "contract_version": "coverage-v1",
+      "coverage_scope": "canonical_projects",
+      "distinct_matched_project_versions": 12,
+      "distinct_project_keys": 208,
+      "effective_match_states": {
+        "needs_review": 4,
+        "rejected": 15
+      },
+      "endpoint_confidence": {
+        "high": 0,
+        "low": 0,
+        "medium": 73,
+        "rejected": 264
+      },
+      "filed_endpoint_projects_active": {
+        "0": 8,
+        "1": 63,
+        "2": 137
+      },
+      "filed_endpoint_projects_all_versions": {
+        "0": 8,
+        "1": 63,
+        "2": 137
+      },
+      "filed_endpoints_all_versions": 337,
+      "flagged_active_projects": 9,
+      "flagged_versions": 9,
+      "global": {
+        "active_projects": 262,
+        "audit_review_counts": {
+          "confirmed": 0,
+          "downgraded": 29,
+          "endpoints": 14,
+          "pairs": 15
+        },
+        "distinct_matched_project_versions": 15,
+        "effective_match_states": {
+          "needs_review": 4,
+          "rejected": 15
+        },
+        "gemini": {
+          "corpus_pages": 91,
+          "live_calls": 0,
+          "measurement": "validated_field_agreement_with_f01_not_independent_human_accuracy",
+          "model": null,
+          "pages_processed": 0,
+          "per_field": {
+            "description": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "endpoints": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "in_service_raw": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "name": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "need": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "project_id": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "status": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "total_cost": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "voltage_kv": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "yearly_spend": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            }
+          },
+          "qa_checked": null,
+          "reason": "live_execution_not_requested",
+          "status": "unavailable"
+        },
+        "located_endpoints": 89,
+        "located_project_versions": 79,
+        "location_records": 400,
+        "manual_source_audit": {
+          "agreements": 108,
+          "field_group_count": 9,
+          "gemini_comparison": {
+            "accuracy": null,
+            "real_records": 0,
+            "status": "unavailable; live Gemini explicitly deferred"
+          },
+          "mismatches": 0,
+          "sample_count": 12
+        },
+        "matches": 19,
+        "project_versions": 299,
+        "raw_match_states": {
+          "needs_review": 19
+        }
+      },
+      "inactive_projects": 0,
+      "located_active_projects": 63,
+      "located_endpoints": 73,
+      "location_records": 337,
+      "match_views": {
+        "historical": 16,
+        "tentative": 3
+      },
+      "matches_involving_source": 19,
+      "project_versions": 208,
+      "quality_flags": {
+        "endpoint_ambiguous": 8,
+        "source_status_conflict": 1
+      },
+      "raw_match_states": {
+        "needs_review": 19
+      },
+      "rows_parsed": 208,
+      "rows_seen": 208,
+      "unlocated_active": [
+        {
+          "name": "FENWICK STREET - SAND BAR FERRY 115KV (RECONDUCTOR/REBUILD)",
+          "project_id": "GPC:16007@gpc-2025",
+          "project_key": "GPC:16007"
+        },
+        {
+          "name": "MEAG: RAY PLACE RD - WASHINGTON #3",
+          "project_id": "GPC:20270@gpc-2025",
+          "project_key": "GPC:20270"
+        },
+        {
+          "name": "MEAG: RAY PLACE RD - WASHINGTON (WASHINGTON - WASHINGTON 3)",
+          "project_id": "GPC:20271@gpc-2025",
+          "project_key": "GPC:20271"
+        },
+        {
+          "name": "MEAG: RAY PLACE RD - WARRENTON PRIMARY",
+          "project_id": "GPC:20264@gpc-2025",
+          "project_key": "GPC:20264"
+        },
+        {
+          "name": "GOSHEN AREA STRATEGIC SOLUTION",
+          "project_id": "GPC:21116@gpc-2025",
+          "project_key": "GPC:21116"
+        },
+        {
+          "name": "HATCH - WADLEY 500 KV LINE STRATEGIC PROJECT",
+          "project_id": "GPC:20756@gpc-2025",
+          "project_key": "GPC:20756"
+        },
+        {
+          "name": "THOMSON PRIMARY 230/115KV SECOND TRANSFORMER",
+          "project_id": "GPC:14222@gpc-2025",
+          "project_key": "GPC:14222"
+        },
+        {
+          "name": "SAV: CC - HYUNDAI MOTORS SAVANNAH AKA. PROJECT EA",
+          "project_id": "GPC:19523@gpc-2025",
+          "project_key": "GPC:19523"
+        },
+        {
+          "name": "SAV: LITTLE OGEECHEE 230- 115KV: RELAY MODERNIZATION",
+          "project_id": "GPC:17075@gpc-2025",
+          "project_key": "GPC:17075"
+        },
+        {
+          "name": "SAV: CC - BIG OGEECHEE 500/230KV (CC NETWORK IMPROVEMENTS)",
+          "project_id": "GPC:19966@gpc-2025",
+          "project_key": "GPC:19966"
+        },
+        {
+          "name": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+          "project_id": "GPC:20065@gpc-2025",
+          "project_key": "GPC:20065"
+        },
+        {
+          "name": "SAV: RICE HOPE NEW AUTO TRANSFORMER",
+          "project_id": "GPC:20989@gpc-2025",
+          "project_key": "GPC:20989"
+        },
+        {
+          "name": "SAV: MELDRIM BANK D REPLACEMENT",
+          "project_id": "GPC:20796@gpc-2025",
+          "project_key": "GPC:20796"
+        },
+        {
+          "name": "SAV: LITTLE OGEECHEE 230/115KV BANK REPLACEMENT",
+          "project_id": "GPC:20787@gpc-2025",
+          "project_key": "GPC:20787"
+        },
+        {
+          "name": "CC - GARRETT ROAD SWITCHING STATION - TRAE LANE",
+          "project_id": "GPC:20243@gpc-2025",
+          "project_key": "GPC:20243"
+        },
+        {
+          "name": "CC - EMBLEM RIVERSIDE CUSTOMER SUB (FLEXENTIAL)",
+          "project_id": "GPC:20509@gpc-2025",
+          "project_key": "GPC:20509"
+        },
+        {
+          "name": "CC - SUMMER LAKE - VILLA RICA 230KV REBUILD (CC IMPROVMNT)",
+          "project_id": "GPC:20781@gpc-2025",
+          "project_key": "GPC:20781"
+        },
+        {
+          "name": "GTC: ADAMSVILLE - BUZZARD ROOST 230KV REBUILD",
+          "project_id": "GPC:20858@gpc-2025",
+          "project_key": "GPC:20858"
+        },
+        {
+          "name": "GTC: GARRETT RD - V. RICA 230KV LINE RECONDUCTOR (CC NET IM)",
+          "project_id": "GPC:20505@gpc-2025",
+          "project_key": "GPC:20505"
+        },
+        {
+          "name": "GTC: SWITCH WAY - THORNTON ROAD 230KV LINE REBUILD",
+          "project_id": "GPC:20506@gpc-2025",
+          "project_key": "GPC:20506"
+        },
+        {
+          "name": "CC - EAST VILLA RICA AREA SWITCHING STATION (CC IMPROVEMENT)",
+          "project_id": "GPC:20797@gpc-2025",
+          "project_key": "GPC:20797"
+        },
+        {
+          "name": "SMART VALVES AT EAST VILLA RICA SWITCHING STATION",
+          "project_id": "GPC:21069@gpc-2025",
+          "project_key": "GPC:21069"
+        },
+        {
+          "name": "BUZZARD ROOST - FACTORY SHOALS 230KV NEW LINE",
+          "project_id": "GPC:21036@gpc-2025",
+          "project_key": "GPC:21036"
+        },
+        {
+          "name": "GTC: CLIFTONDALE - LINE CREEK 230KV LINE",
+          "project_id": "GPC:20849@gpc-2025",
+          "project_key": "GPC:20849"
+        },
+        {
+          "name": "GTC: TENASKA - WANSLEY 500KV NEW LINE",
+          "project_id": "GPC:21123@gpc-2025",
+          "project_key": "GPC:21123"
+        },
+        {
+          "name": "ATKINSON - NORTHSIDE DRIVE 115KV REBUILD",
+          "project_id": "GPC:20764@gpc-2025",
+          "project_key": "GPC:20764"
+        },
+        {
+          "name": "ATKINSON - NORTHWEST 115KV REBUILD",
+          "project_id": "GPC:20761@gpc-2025",
+          "project_key": "GPC:20761"
+        },
+        {
+          "name": "GTC: BUZZARD ROOST - CAVENDER DRIVE 230KV NEW LINE",
+          "project_id": "GPC:21014@gpc-2025",
+          "project_key": "GPC:21014"
+        },
+        {
+          "name": "GTC: CAVENDER DRIVE 500/230KV AUTOBANK",
+          "project_id": "GPC:21013@gpc-2025",
+          "project_key": "GPC:21013"
+        },
+        {
+          "name": "NEW CAVENDER DRIVE - TRIBUTARY 230KV LINE",
+          "project_id": "GPC:20857@gpc-2025",
+          "project_key": "GPC:20857"
+        },
+        {
+          "name": "TRIBUTARY - THORNTON RD 230KV REBUILD",
+          "project_id": "GPC:21098@gpc-2025",
+          "project_key": "GPC:21098"
+        },
+        {
+          "name": "NORCROSS 230KV BUS 1-3 SERIES BUS TIE BREAKER INSTALLATION",
+          "project_id": "GPC:20464@gpc-2025",
+          "project_key": "GPC:20464"
+        },
+        {
+          "name": "LAWRENCEVILLE - WINDER 115KV LINE REBUILD",
+          "project_id": "GPC:10143@gpc-2025",
+          "project_key": "GPC:10143"
+        },
+        {
+          "name": "GTC: BAY CREEK 230/115KV SECOND AUTO TRANSFORMER",
+          "project_id": "GPC:10814@gpc-2025",
+          "project_key": "GPC:10814"
+        },
+        {
+          "name": "GTC: HOPEWELL 230/115 KV BANK A",
+          "project_id": "GPC:20760@gpc-2025",
+          "project_key": "GPC:20760"
+        },
+        {
+          "name": "NORCROSS - NORTH DRUID HILLS 115KV REBUILD",
+          "project_id": "GPC:20757@gpc-2025",
+          "project_key": "GPC:20757"
+        },
+        {
+          "name": "WINDER PRIMARY 230KV BUS 1-2 PARALLEL BUS-TIE INSTALLATION",
+          "project_id": "GPC:20759@gpc-2025",
+          "project_key": "GPC:20759"
+        },
+        {
+          "name": "ADAMSVILLE - JACK MCDONOUGH 230KV LINE REBUILD",
+          "project_id": "GPC:19676@gpc-2025",
+          "project_key": "GPC:19676"
+        },
+        {
+          "name": "MEAG: ALCOVY ROAD - SKC 115 KV RECONDUCTOR",
+          "project_id": "GPC:13753@gpc-2025",
+          "project_key": "GPC:13753"
+        },
+        {
+          "name": "JEFFERSON STREET#3 - NORTHWEST (WHITE) 115 KV RECONDUCTOR",
+          "project_id": "GPC:18889@gpc-2025",
+          "project_key": "GPC:18889"
+        },
+        {
+          "name": "GRADY - MORROW (WHITE) 115KV REBUILD",
+          "project_id": "GPC:21139@gpc-2025",
+          "project_key": "GPC:21139"
+        },
+        {
+          "name": "GRADY 230/115KV RELAY MODERNIZATION",
+          "project_id": "GPC:20474@gpc-2025",
+          "project_key": "GPC:20474"
+        },
+        {
+          "name": "GTC: CONYERS - CORNISH MOUNTAIN 115KV LINE UPGRADE",
+          "project_id": "GPC:21137@gpc-2025",
+          "project_key": "GPC:21137"
+        },
+        {
+          "name": "KLONDIKE RELAY MODERNIZATION",
+          "project_id": "GPC:20490@gpc-2025",
+          "project_key": "GPC:20490"
+        },
+        {
+          "name": "SCOTTDALE RELAY MODERNIZATION",
+          "project_id": "GPC:20489@gpc-2025",
+          "project_key": "GPC:20489"
+        },
+        {
+          "name": "GRADY-WEST END 115KV REBUILD",
+          "project_id": "GPC:19287@gpc-2025",
+          "project_key": "GPC:19287"
+        },
+        {
+          "name": "GTC: SKC 115KV BUS AND JUMPER REPLACEMENT",
+          "project_id": "GPC:19606@gpc-2025",
+          "project_key": "GPC:19606"
+        },
+        {
+          "name": "JACK MCDONOUGH - NORTHWEST (BLACK) 230KV RECONDUCTOR",
+          "project_id": "GPC:20777@gpc-2025",
+          "project_key": "GPC:20777"
+        },
+        {
+          "name": "CONYERS - KLONDIKE 230 KV SECOND LINE",
+          "project_id": "GPC:21142@gpc-2025",
+          "project_key": "GPC:21142"
+        },
+        {
+          "name": "GLENWOOD SPRINGS - PORTERDALE PRIMARY 230KV LINE SWITCH REPL",
+          "project_id": "GPC:21138@gpc-2025",
+          "project_key": "GPC:21138"
+        },
+        {
+          "name": "LLOYD SHOALS - PORTERDALE PRIMARY 115KV REBUILD",
+          "project_id": "GPC:21141@gpc-2025",
+          "project_key": "GPC:21141"
+        },
+        {
+          "name": "CC - QTS FAYETTEVILLE TRANSMISSION NEEDS",
+          "project_id": "GPC:20018@gpc-2025",
+          "project_key": "GPC:20018"
+        },
+        {
+          "name": "ADAMSVILLE - BUZZARD ROOST 230KV REBUILD AND JUMPER UPGRADE",
+          "project_id": "GPC:19597@gpc-2025",
+          "project_key": "GPC:19597"
+        },
+        {
+          "name": "CC - STONEWALL TELL ROAD (TA REALTY)",
+          "project_id": "GPC:20216@gpc-2025",
+          "project_key": "GPC:20216"
+        },
+        {
+          "name": "EAST POINT RELAY MODERNIZATION",
+          "project_id": "GPC:20491@gpc-2025",
+          "project_key": "GPC:20491"
+        },
+        {
+          "name": "MORROW 115KV RELAY UPGRADE",
+          "project_id": "GPC:20300@gpc-2025",
+          "project_key": "GPC:20300"
+        },
+        {
+          "name": "UNION CITY - YATES 230 KV WHITE LINE REBUILD",
+          "project_id": "GPC:17900@gpc-2025",
+          "project_key": "GPC:17900"
+        },
+        {
+          "name": "UNION CITY - YATES 230KV (WHITE) SWITCH AND TRAP REPLACEMENT",
+          "project_id": "GPC:20691@gpc-2025",
+          "project_key": "GPC:20691"
+        },
+        {
+          "name": "OHARA BREAKER REPLACEMENT",
+          "project_id": "GPC:21022@gpc-2025",
+          "project_key": "GPC:21022"
+        },
+        {
+          "name": "DRESDEN LINE PROTECTIVE RELAYING",
+          "project_id": "GPC:20668@gpc-2025",
+          "project_key": "GPC:20668"
+        },
+        {
+          "name": "GTC: DRESDEN 500KV BUS EXPANSION",
+          "project_id": "GPC:20273@gpc-2025",
+          "project_key": "GPC:20273"
+        },
+        {
+          "name": "MORROW - MOUNTAIN VIEW 115 KV REBUILD",
+          "project_id": "GPC:19363@gpc-2025",
+          "project_key": "GPC:19363"
+        },
+        {
+          "name": "CC - GULLATT ROAD TRANSMISSION IMPROVEMENTS",
+          "project_id": "GPC:20771@gpc-2025",
+          "project_key": "GPC:20771"
+        },
+        {
+          "name": "CC - MICROSOFT - SHUGART (CCO06)",
+          "project_id": "GPC:18736@gpc-2025",
+          "project_key": "GPC:18736"
+        },
+        {
+          "name": "CC - TA REALTY ELLENWOOD NETWORK IMPROVEMENTS",
+          "project_id": "GPC:20736@gpc-2025",
+          "project_key": "GPC:20736"
+        },
+        {
+          "name": "CC - TOMOCHICHI 500/230KV SOLUTION (CC NETWORK IMPROVEMENTS)",
+          "project_id": "GPC:20717@gpc-2025",
+          "project_key": "GPC:20717"
+        },
+        {
+          "name": "PLANT YATES BREAKER AND HALF STATION",
+          "project_id": "GPC:20656@gpc-2025",
+          "project_key": "GPC:20656"
+        },
+        {
+          "name": "UNION CITY - YATES 230KV (BLACK) LINE REBUILD",
+          "project_id": "GPC:20274@gpc-2025",
+          "project_key": "GPC:20274"
+        },
+        {
+          "name": "ASHLEY PARK-WANSLEY 500KV",
+          "project_id": "GPC:21062@gpc-2025",
+          "project_key": "GPC:21062"
+        },
+        {
+          "name": "GTC: BIG SMARR - TOMOCHICHI 500KV",
+          "project_id": "GPC:21073@gpc-2025",
+          "project_key": "GPC:21073"
+        },
+        {
+          "name": "GRID - BREMEN - CROOKED CREEK (APC) 115 KV PROJECT",
+          "project_id": "GPC:19187@gpc-2025",
+          "project_key": "GPC:19187"
+        },
+        {
+          "name": "VILLA RICA LOW SIDE BREAKER",
+          "project_id": "GPC:20431@gpc-2025",
+          "project_key": "GPC:20431"
+        },
+        {
+          "name": "CC - CASS PINE- HILL VIEW 230 KV LINE- CC IMPROVEMENTS",
+          "project_id": "GPC:20152@gpc-2025",
+          "project_key": "GPC:20152"
+        },
+        {
+          "name": "CC - PROJECT CHRONOS- SK/HYUNDAI",
+          "project_id": "GPC:20175@gpc-2025",
+          "project_key": "GPC:20175"
+        },
+        {
+          "name": "DU: EAST DALTON - OOSTANAULA 115KV REBUILD",
+          "project_id": "GPC:18679@gpc-2025",
+          "project_key": "GPC:18679"
+        },
+        {
+          "name": "HAMMOND - WEISS DAM 115KV LINE REBUILD",
+          "project_id": "GPC:19636@gpc-2025",
+          "project_key": "GPC:19636"
+        },
+        {
+          "name": "CC - CASS PINE 230/25 NEW SUB - QCELLS - CC IMPROVEMENTS",
+          "project_id": "GPC:20151@gpc-2025",
+          "project_key": "GPC:20151"
+        },
+        {
+          "name": "CC - HILL VIEW & GRASSY HOLLOW SUB - CC IMPROVEMENTS",
+          "project_id": "GPC:20150@gpc-2025",
+          "project_key": "GPC:20150"
+        },
+        {
+          "name": "DYER ROAD - EAST ROANOKE 115KV (REBUILD)",
+          "project_id": "GPC:20024@gpc-2025",
+          "project_key": "GPC:20024"
+        },
+        {
+          "name": "CC - VILLA RICA UPGRADES (CC NETWORK IMPROVEMENTS)",
+          "project_id": "GPC:20774@gpc-2025",
+          "project_key": "GPC:20774"
+        },
+        {
+          "name": "ANNISTON - HAMMOND 230KV LINE",
+          "project_id": "GPC:21129@gpc-2025",
+          "project_key": "GPC:21129"
+        },
+        {
+          "name": "BOWEN #10 500/230KV AUTOBANK REPLACEMENT",
+          "project_id": "GPC:10811@gpc-2025",
+          "project_key": "GPC:10811"
+        },
+        {
+          "name": "GTC: BANKS CROSSING - POND FORK 115 KV",
+          "project_id": "GPC:18670@gpc-2025",
+          "project_key": "GPC:18670"
+        },
+        {
+          "name": "ANTHONY SHOALS STATCOM SYSTEM",
+          "project_id": "GPC:20326@gpc-2025",
+          "project_key": "GPC:20326"
+        },
+        {
+          "name": "GRID - GAINESVILLE #2 EQUIPMENT REPLACEMENT",
+          "project_id": "GPC:19706@gpc-2025",
+          "project_key": "GPC:19706"
+        },
+        {
+          "name": "GTC: MORNING HORNET 2ND 230/115 KV BANK & THUMBS UP 115KV TL",
+          "project_id": "GPC:20015@gpc-2025",
+          "project_key": "GPC:20015"
+        },
+        {
+          "name": "DOYLE - LG&E MONROE 230KV - JACKS CREEK LOOP IN",
+          "project_id": "GPC:20234@gpc-2025",
+          "project_key": "GPC:20234"
+        },
+        {
+          "name": "GTC: EAST WALTON 500/230KV PROJECT",
+          "project_id": "GPC:09662@gpc-2025",
+          "project_key": "GPC:09662"
+        },
+        {
+          "name": "CC - NORTH GEORGIA DATA NETWORK UPGRADES",
+          "project_id": "GPC:21130@gpc-2025",
+          "project_key": "GPC:21130"
+        },
+        {
+          "name": "CORNELIA - TALLULAH LODGE 115KV REBUILD",
+          "project_id": "GPC:10478@gpc-2025",
+          "project_key": "GPC:10478"
+        },
+        {
+          "name": "GTC: EAST WATKINSVILLE 230 KV STATION MODIFICATION",
+          "project_id": "GPC:20375@gpc-2025",
+          "project_key": "GPC:20375"
+        },
+        {
+          "name": "GTC: HARTWELL DAM - HARTWELL ENERGY 230KV SERIES REACTORS",
+          "project_id": "GPC:21111@gpc-2025",
+          "project_key": "GPC:21111"
+        },
+        {
+          "name": "GTC: HARTWELL ENERGY - MIDDLE FORK 230KV LINE",
+          "project_id": "GPC:21113@gpc-2025",
+          "project_key": "GPC:21113"
+        },
+        {
+          "name": "GTC: POND FORK - MIDWAY 115KV LINE",
+          "project_id": "GPC:21131@gpc-2025",
+          "project_key": "GPC:21131"
+        },
+        {
+          "name": "JEFFERSON ROAD - WINDER PRIMARY 115KV REBUILD",
+          "project_id": "GPC:20789@gpc-2025",
+          "project_key": "GPC:20789"
+        },
+        {
+          "name": "GTC: CLARKSBORO - WINDER PRIMARY 230KV REBUILD",
+          "project_id": "GPC:20773@gpc-2025",
+          "project_key": "GPC:20773"
+        },
+        {
+          "name": "GTC: EAST WALTON - MIDDLE FORK 500KV",
+          "project_id": "GPC:21075@gpc-2025",
+          "project_key": "GPC:21075"
+        },
+        {
+          "name": "GTC: SHOAL CREEK - SOUTH HALL 230KV REBUILD",
+          "project_id": "GPC:20791@gpc-2025",
+          "project_key": "GPC:20791"
+        },
+        {
+          "name": "GOAT ROCK 230KV SWITCH, JUMPER, & LINE TRAP REPLACEMENT",
+          "project_id": "GPC:20516@gpc-2025",
+          "project_key": "GPC:20516"
+        },
+        {
+          "name": "MEAG: DRESDEN - LAGRANGE PRIMARY 230KV UPGRADE & JUMPERS",
+          "project_id": "GPC:19598@gpc-2025",
+          "project_key": "GPC:19598"
+        },
+        {
+          "name": "GTC: BARNESVILLE PRIMARY- BARNESVILLE #1 115KV RECONDUCTOR",
+          "project_id": "GPC:20874@gpc-2025",
+          "project_key": "GPC:20874"
+        },
+        {
+          "name": "MEAG: FORTSON 230KV SUBSTATION MODERNIZATION",
+          "project_id": "GPC:18832@gpc-2025",
+          "project_key": "GPC:18832"
+        },
+        {
+          "name": "PITTMAN ROAD - WEST POINT DAM (USA) 115KV REBUILD",
+          "project_id": "GPC:20482@gpc-2025",
+          "project_key": "GPC:20482"
+        },
+        {
+          "name": "FIRST AVENUE - NORTH COLUMBUS 115KV LINE REBUILD",
+          "project_id": "GPC:13166@gpc-2025",
+          "project_key": "GPC:13166"
+        },
+        {
+          "name": "GOAT ROCK REACTORS INSTALLATION",
+          "project_id": "GPC:21128@gpc-2025",
+          "project_key": "GPC:21128"
+        },
+        {
+          "name": "THOMASTON 230 NEW BUILD SUB",
+          "project_id": "GPC:20160@gpc-2025",
+          "project_key": "GPC:20160"
+        },
+        {
+          "name": "MEAG: SOUTH GRIFFIN 230/115KV BANK #5",
+          "project_id": "GPC:21114@gpc-2025",
+          "project_key": "GPC:21114"
+        },
+        {
+          "name": "ECHECONNEE-WELLSTON 115KV REBUILD",
+          "project_id": "GPC:18800@gpc-2025",
+          "project_key": "GPC:18800"
+        },
+        {
+          "name": "GTC: BONAIRE PRI- ECHECONNEE 115 KV PARTIAL REBUILD",
+          "project_id": "GPC:18153@gpc-2025",
+          "project_key": "GPC:18153"
+        },
+        {
+          "name": "SMART VALVE INSTALLATION",
+          "project_id": "GPC:20466@gpc-2025",
+          "project_key": "GPC:20466"
+        },
+        {
+          "name": "GORDON-N DUBLIN 115KV (GORDON-ENGL MCI J) REBUILD",
+          "project_id": "GPC:19618@gpc-2025",
+          "project_key": "GPC:19618"
+        },
+        {
+          "name": "GTC: ROBINS SPRING BUS REPLACEMENT",
+          "project_id": "GPC:19999@gpc-2025",
+          "project_key": "GPC:19999"
+        },
+        {
+          "name": "GTC: ROBINS SPRING CAPACITOR BANK INSTALLATION",
+          "project_id": "GPC:20001@gpc-2025",
+          "project_key": "GPC:20001"
+        },
+        {
+          "name": "KATHLEEN AREA IMPROVEMENTS",
+          "project_id": "GPC:20512@gpc-2025",
+          "project_key": "GPC:20512"
+        },
+        {
+          "name": "GTC: GORDON - SANDERSVILLE #1 115KV LINE REBUILD",
+          "project_id": "GPC:20002@gpc-2025",
+          "project_key": "GPC:20002"
+        },
+        {
+          "name": "GTC: RIDDLEVILLE BUS REPLACEMENT",
+          "project_id": "GPC:19622@gpc-2025",
+          "project_key": "GPC:19622"
+        },
+        {
+          "name": "SANDERSVILLE #1 - WADLEY PRI. 115KV REBUILD/RECONDUCTOR",
+          "project_id": "GPC:19248@gpc-2025",
+          "project_key": "GPC:19248"
+        },
+        {
+          "name": "GRID - ARKWRIGHT - LLOYD SHOALS 115KV",
+          "project_id": "GPC:18573@gpc-2025",
+          "project_key": "GPC:18573"
+        },
+        {
+          "name": "AULTMAN ROAD-PERRY 115KV LINE REBUILD",
+          "project_id": "GPC:19997@gpc-2025",
+          "project_key": "GPC:19997"
+        },
+        {
+          "name": "GTC: BONAIRE PRIMARY 500/230KV XFMR REPLCMNT & RELAY MOD",
+          "project_id": "GPC:20873@gpc-2025",
+          "project_key": "GPC:20873"
+        },
+        {
+          "name": "SOUTH MACON 115KV BUSES 1 & 2 REPLACEMENT",
+          "project_id": "GPC:20768@gpc-2025",
+          "project_key": "GPC:20768"
+        },
+        {
+          "name": "GTC: NORTH DUBLIN 230/115KV TRANSFORMERS AND BUS-TIE BREAKER",
+          "project_id": "GPC:20586@gpc-2025",
+          "project_key": "GPC:20586"
+        },
+        {
+          "name": "BROADWAY - ECHECONNEE 115 KV LINE REBUILD",
+          "project_id": "GPC:21047@gpc-2025",
+          "project_key": "GPC:21047"
+        },
+        {
+          "name": "ECHECONNEE-WELLSTON 115KV LINE REBUILD",
+          "project_id": "GPC:19627@gpc-2025",
+          "project_key": "GPC:19627"
+        },
+        {
+          "name": "GORDON-SANDERSVILLE #1 115KV LINE REBUILD (DEEPSTEP-SAND #6)",
+          "project_id": "GPC:20428@gpc-2025",
+          "project_key": "GPC:20428"
+        },
+        {
+          "name": "GTC: ROCKVILLE - TIGER CREEK -WARTHEN 500KV LINES",
+          "project_id": "GPC:21077@gpc-2025",
+          "project_key": "GPC:21077"
+        },
+        {
+          "name": "GTC: TIGER CREEK- ROCKVILLE-NORTH SPA 230KV PROJECT",
+          "project_id": "GPC:21094@gpc-2025",
+          "project_key": "GPC:21094"
+        },
+        {
+          "name": "NORTH SPA 230KV STRATEGIC PROJECT",
+          "project_id": "GPC:21093@gpc-2025",
+          "project_key": "GPC:21093"
+        },
+        {
+          "name": "GLENWOOD SPRINGS 115KV CAP BANK",
+          "project_id": "GPC:19626@gpc-2025",
+          "project_key": "GPC:19626"
+        },
+        {
+          "name": "MEAG: PIO NONO 230/115KV AREA SOLUTION",
+          "project_id": "GPC:21099@gpc-2025",
+          "project_key": "GPC:21099"
+        },
+        {
+          "name": "ARKWRIGHT BUS AND JUMPER REPLACEMENT",
+          "project_id": "GPC:20767@gpc-2025",
+          "project_key": "GPC:20767"
+        },
+        {
+          "name": "PINE GROVE PRIMARY 115 KV DUAL STAGE CAPACITOR BANK",
+          "project_id": "GPC:19631@gpc-2025",
+          "project_key": "GPC:19631"
+        },
+        {
+          "name": "GTC: LIZARD LOPE - WESTOVER 115 KV NEW LINE",
+          "project_id": "GPC:18691@gpc-2025",
+          "project_key": "GPC:18691"
+        },
+        {
+          "name": "PALMYRA REACTOR REMOVAL",
+          "project_id": "GPC:18690@gpc-2025",
+          "project_key": "GPC:18690"
+        },
+        {
+          "name": "CC - PROJECT PAYTON BAINBRIDGE",
+          "project_id": "GPC:20223@gpc-2025",
+          "project_key": "GPC:20223"
+        },
+        {
+          "name": "GTC: BARNEYVILLE - EAST MOULTRIE 115KV NEW LINE",
+          "project_id": "GPC:20503@gpc-2025",
+          "project_key": "GPC:20503"
+        },
+        {
+          "name": "MEAG: THOMASVILLE 230/115KV AUTOBANK REPLACEMENT",
+          "project_id": "GPC:19630@gpc-2025",
+          "project_key": "GPC:19630"
+        },
+        {
+          "name": "LOWER RIVER - WEBB (APC) 115KV RECONDUCTOR",
+          "project_id": "GPC:20285@gpc-2025",
+          "project_key": "GPC:20285"
+        },
+        {
+          "name": "MEAG: SLAPPEY DRIVE - WESTOVER 115KV LINE REBUILD",
+          "project_id": "GPC:11051@gpc-2025",
+          "project_key": "GPC:11051"
+        },
+        {
+          "name": "FARLEY (APC)-TAZEWELL 500KV",
+          "project_id": "GPC:21063@gpc-2025",
+          "project_key": "GPC:21063"
+        },
+        {
+          "name": "GTC: TALLBOT #2 - TAZEWELL 500KV LINE",
+          "project_id": "GPC:21076@gpc-2025",
+          "project_key": "GPC:21076"
+        },
+        {
+          "name": "BAINBRIDGE TRANSMISSION: EAST RIVER ROAD, EAST BAINBRIDGE",
+          "project_id": "GPC:18848@gpc-2025",
+          "project_key": "GPC:18848"
+        },
+        {
+          "name": "GTC: CAMDEN INDUSTRIAL PARK 230/115KV NEW SUBSTATION",
+          "project_id": "GPC:20342@gpc-2025",
+          "project_key": "GPC:20342"
+        },
+        {
+          "name": "THALMANN AND COLERAIN 23O KV LINE RELAY PANEL UPGRADES",
+          "project_id": "GPC:21046@gpc-2025",
+          "project_key": "GPC:21046"
+        },
+        {
+          "name": "CAMDEN INDUSTRIAL PARK (GPC)",
+          "project_id": "GPC:20684@gpc-2025",
+          "project_key": "GPC:20684"
+        }
+      ],
+      "unlocated_active_projects": 145
+    }
+  },
+  {
+    "_id": "sample",
+    "counts": {
+      "active_by_utility": {},
+      "active_projects": null,
+      "contract_version": "coverage-v1",
+      "coverage_scope": "fixture_reference_only",
+      "distinct_matched_project_versions": null,
+      "distinct_project_keys": null,
+      "effective_match_states": null,
+      "endpoint_confidence": null,
+      "filed_endpoint_projects_active": null,
+      "filed_endpoint_projects_all_versions": null,
+      "filed_endpoints_all_versions": null,
+      "flagged_active_projects": null,
+      "flagged_versions": null,
+      "global": {
+        "active_projects": 262,
+        "audit_review_counts": {
+          "confirmed": 0,
+          "downgraded": 29,
+          "endpoints": 14,
+          "pairs": 15
+        },
+        "distinct_matched_project_versions": 15,
+        "effective_match_states": {
+          "needs_review": 4,
+          "rejected": 15
+        },
+        "gemini": {
+          "corpus_pages": 91,
+          "live_calls": 0,
+          "measurement": "validated_field_agreement_with_f01_not_independent_human_accuracy",
+          "model": null,
+          "pages_processed": 0,
+          "per_field": {
+            "description": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "endpoints": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "in_service_raw": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "name": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "need": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "project_id": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "status": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "total_cost": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "voltage_kv": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            },
+            "yearly_spend": {
+              "accuracy": null,
+              "denominator": 0,
+              "invalid": 0,
+              "matched": 0,
+              "mismatched": 0,
+              "missing": 0
+            }
+          },
+          "qa_checked": null,
+          "reason": "live_execution_not_requested",
+          "status": "unavailable"
+        },
+        "located_endpoints": 89,
+        "located_project_versions": 79,
+        "location_records": 400,
+        "manual_source_audit": {
+          "agreements": 108,
+          "field_group_count": 9,
+          "gemini_comparison": {
+            "accuracy": null,
+            "real_records": 0,
+            "status": "unavailable; live Gemini explicitly deferred"
+          },
+          "mismatches": 0,
+          "sample_count": 12
+        },
+        "matches": 19,
+        "project_versions": 299,
+        "raw_match_states": {
+          "needs_review": 19
+        }
+      },
+      "inactive_projects": null,
+      "located_active_projects": null,
+      "located_endpoints": null,
+      "location_records": null,
+      "match_views": null,
+      "matches_involving_source": null,
+      "project_versions": null,
+      "quality_flags": null,
+      "raw_match_states": null,
+      "rows_parsed": null,
+      "rows_seen": null,
+      "unlocated_active": [],
+      "unlocated_active_projects": null
+    }
+  }
+]
