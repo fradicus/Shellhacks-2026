@@ -1,0 +1,3218 @@
+[
+  {
+    "_id": "review:v1:b3a24230cad9cf231ec6d3db",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:7a81a216365da414c25ddb03",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:649c0367c6a5661ce19d436d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/229116275; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:2fe7c9b920f3e61a3fb765f2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:3e541474e6e95ee521bf79af",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:0a88600e53c68cd751f45fa6",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ff66238af7bc7272d53bc13b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:1cc41fa7c7cf69457794ba4e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:82827507f7487a89af8e4b8e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:29a6b5b1287e9d465cdabe1d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9250e7bf562c685f5a9afdc5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/185032900; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:0e366c65ad5ebd551bd15ce7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:82abb310fe58adf856e40d2d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3ba00cf55f689ad6f28febff",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b349191a310ecb963eb67d01",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:098b8aafbdb5baa991bf8746",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4bf16bc295c9e043e06510be",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/185380597; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:3994702bfb7711c00894935b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:986c9d24d7b74094042a4e65",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:06760eacb40e3a375d35de68",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3ed9f8cc550e8a78794aa371",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:11bbaa914e3b1404f9ac5bf1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:311d983b3839aa4a4bfabbce",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/185330726; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:4efcf1c399c5417eaf34fb97",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:2f020d7c3fdf30538507004f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d2954d2c7aa3bd09a961227d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:aba722f55284bb3493bd92b2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:14174acffb3a4f15418d72b8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:05321fbffa9760c51a261b86",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/185197506; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:3b1f772d5b45618a4790599b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b19f88087e53f8fc03a17343",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:a926082916e96e414de43daf",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:14052e3224041b85b68be94a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:62a4550443834b5594a45c35",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d12d67d4b1a771ee69626de5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: source_gate:filed_title_and_description_endpoint_scope_conflict.",
+    "record_id": "location:v1:56a608223890ea4a58044c9e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4a0bb8b07b75e9b7fc480cff",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: source_gate:filed_title_and_description_endpoint_scope_conflict.",
+    "record_id": "location:v1:3b3e38521c40e947794c61d1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7e464d764bbca6d6fe9d635f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/229116275; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:8d58673d87c221e9af5bf197",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:10af1486a75cf4b1bd310f93",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:35bcfe367b31dc13513992c2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:150aec1be0ce28065717dcd3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/185317032; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:fd8f385dc643a022b27c16c3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:6328d25bb6666d4c5e99679b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:4c9f38c539ef118850864b94",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:743eea30728415a906030b67",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/184867924; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:0c16ea47a281ddf7cd89b461",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:e7553504232e70190797edbe",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:f5ca7b301cfe32c42da600d1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:dfde90f5ae3cb47e6176853e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ba543427a2f7470d79d5c03b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:75a428e93239315d523d11e2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:5ca9d25658102a8e90591381",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e6e922171da7d6887eeabb3b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:762cf1afe24a759921f9a9e3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1a6787502117da27d4bc9f8f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1082130490; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:831347ffeeaa77fc820f70f1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:1933359e42f5944e979350ac",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d7f29a925c006d103f101ce1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ec9514be5bc6e7aa4e38a076",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1082130490; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:2dd1f256046f474e41452981",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:5d11fb1b80094d39f8adf996",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:187f3cb28100069443e5c8b8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b170436d7ae6614db3d65ff2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:63257260448e742d08dd5023",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:85228ac9d8f839942c174f15",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/498967268; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:7cb43c87c67acc0b6f8a487e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:ef91cdd1952296c1ba11c681",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:38d1175c12e4d3876a8c69ed",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d65695efde60af5a505c9a2f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:42ba27292a4b5b1720d26fd9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f47d6646357332a6318ba501",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c3b44fac5b2d10750387f39f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:de41ac151aa1396395c55d2a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e83fe99853c80171982d5c4f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1087f6ed45a765c1efe6ee8e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:57e46e0f63b001d01b23b397",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:459c55a2b231c442b05e55ed",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3d583b561284c1d9a67539a0",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:07ecaa45f9e7cb40d148cd66",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:23561f9630595c2d9e1e2cde",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b0d64bc88aed31670b3c42c7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1074904620; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:a59e43299281b7c6f70ac39a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:c2fba12018d693d6593ba66f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/178951280; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:808ca5d46aa280b726171069",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:1a4800944bab085f70e65ff4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:b9aa27a5df0b0333b2c2c519",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:599d2c35ec5aa01804a158c4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:80e05079a74352b5ff153914",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f2148463c70d5be6b7119bcc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:086dca9f4824c57851ecfc4b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d93bc6cd2acfbceb677fd3ca",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1075509549; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:0b1afa40412341e0f763f756",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:6ea2c7419876368fab25398e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:eaa12ba14fe49248ee2f7450",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a47530badb757a1d32e88ca8",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:43f8e014a525937a950fca0e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0cd9a8316bbdf59e27031dba",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e8606c2307d095b4eba14419",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:33ea172403a46a88342d1050",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:199e64dea29ee598ce8edf3d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3148b7d0ec024e8b90ddc83d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1075509549; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:87ce33bf372b09745f564bca",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:a14491c5ef16772d73bd671c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:b20d2a459982d02d0b4dce1d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6cabfd7f3aef0fbb04bd786a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:198c4de7882f6919f9824812",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:bb699251e83309a663f57da6",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:1cfbf8b81fd1862b3cc0ad2f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:23447b03da47fb25053afdfb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1073259467; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:ca3c412afb966d3919f5ebbc",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:a06cc2e54b04643bb622bf34",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:139ffb3d6f5f0201c9e663d5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d9bcd9d13248b08c9f4ca71a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:108068df0e6fd4ed3e8365fa",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:822434769e0d9a136cc09901",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:0617ed4876ec5492de7acda8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:eb7c503d07d7d8f8baffa9d7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c6e64bb8ffc795de24f0a9a6",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:43a9697532b8f8e306d5f81a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c36c3dfc7cb5b48ac1ef1979",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:11cbcd013d576d12a04249b7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3ab30912efa1b1cff83c7a4f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:282cc14d22def505768ae74b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:72ee0fcebae5620a48e3c2b7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:145fb5e643d15c291762d7b3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:b3594f12f0563a7aef3c31c3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:54ad942d6ddf298c7e808d9c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:d8e51b253908c9f090662ef4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7eae54c6d038fc63e0da9072",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/564834100; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:8e96cc6ea4d4a8baab5629e2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b6af38a623935f8b980348bd",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:eff8dd602cd2b0ccea54969e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d92b5ea9ff6a926ea439c151",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/159758301; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:814cd63f370f193fa190e839",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:ff19d8116ed9afba9476a951",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1dba4c2e56e508988423c013",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1d5fdbc6deca16773c36eebf",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:4408d14e0f9aa011df1758f0",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:dc4cfa1badfb284c2f41f080",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:1373dcf49d2d5144cf9375b3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:25f1dd05220d101d44fefdfc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:175911c580ba62b558f75929",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:22640ad68f3ae300556f959f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/270628470; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:f370996c4b5e9a42c60ac2e2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:37526b38d14c0495fdd4707a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7e3db6e0a111ab73d4021f66",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ad980312be715bcf18322ac0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:14aad336d6723d1d2553c8f8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:35cf04d71a512117670e01a0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6c8f3296b16abbd9e4696e09",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:81bd3a72ad4d35ac34856a39",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/516459394; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:7f52b8ec6ebef0f470f7ad14",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:71aa9381150064077f44fb92",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:378fe7fcdb5b9bbbf247673b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:03f12e69517870eed963c87a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/174399121; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:cdc0f3fe75c03d984193ef27",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:85a3bf96b7c8ce066f99c7ae",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:63513c9093b4218e7911b044",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:83323246d4d52da97ee6e6fc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:23c19254f22405fe3d1ca97d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:eba1ca367c2fdfbfc3647cac",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f50851144b370c1868240486",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:494ac14a81db32bc4a336c68",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:b73af56ffb2206ae8c61e2e9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0f2a3eae7197c33caeac5fa6",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:5e16ecfe3c9ec6789f7aaf15",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4ee433cd8f370e1e55eaaeba",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/103029795; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:653985dc8df83176aa78191b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:8912e31caf52bc282ae88ada",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/358894868; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:4cf62e73d45c4bba8e63ca3f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:26ad35209cc16ef07ef94e57",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:6f13d347c29b841b2c403194",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2038db1bf5f1648ee78e71e3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1037359821; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:baf7a4820023fbc52dbc1dbc",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:36a5a4b9eb7c87b9c431995a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171531630; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:ace3836d0d79a148a6d008cc",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:398d68a890e7d70b390f62b2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:db15e0f0b7e2cc11feed00b5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:45e5b9a01ce4de1b5cdfcc7d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171540518; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:4850542e13545679a8a89a10",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:e232b3efb57402d332f616ac",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9798f97145dbc394ede09320",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0fb11bd0338206370d42ab75",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8ce65fd5205edf2e67d360e4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1e52bb29d5dba1504fb8d299",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d89e2bdbb18ec918e853f617",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2fe13f3bba518194980f7e61",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/165831924; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:db285f1c34935dbe1a53345e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:535c46b973e8e74a49a7571b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:37ca932ecd45f20253cc225a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:338dc517f823e8140898881e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:85e44aff89eab0d545f7b743",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:afc6590aa8bb54b5197e4ebf",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:888f437ed1ee992bdadc5d2f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5f409af05b92296984a41ebe",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:e21cf7ffaa7c14c9b5e5eeaa",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:375bb1b410a133d56baf2794",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/160308109; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:1ee5515d2b8a550756e4e791",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:7eb9c513c941f075de655f3c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1137f5d574cb8985566b5f98",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3c02f37fb85f938b617d2c38",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:30eb3debcd355d8eb2868e50",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:59ba89fe21633a10ab711c4f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/652943491; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:303297a67ac97b0b0eb10a8b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:494d18f623a6b8b57d244428",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:2677a2fd240760a48904de7c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3b84487c8fb6c6e116baeab7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:78cc3bd703d6bb9211d5fef3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:475bc7acee4faf31f392e4f5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/170999705; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:eef817a7f32875b7befe220e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:ec629bd000bc1326c838b84d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:cb4d82f48d2d5343885b5804",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:13fd51d8a08824ed3b22bea0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:a271e582d8f464622ca1b4a3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ec0c9b5479fa196293255201",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:5d2e771ef7a0507fffac3dec",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ecd54d86c13c923336d96d3e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/493048692; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:957fa97dd3afa2ae4b9c9705",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:8520e5d74b1bfd737f62335a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:afdd2e4297f8689a640b9e31",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c0525648dd8f306563e09a0e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3e0361c2ed48f8d60112d975",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f5435425afd6abebebbdf2ae",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171540528; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:ef33b09cad9e1cb1c6cea37c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:c90666304459f76fa940ea88",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171540512; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:fa6958ad4c364a81f59b6808",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b50be590953b434d51766cb1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/52103255; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:c9b239b2722bcd994b7dc82f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:9816712811cbc2e0b5ff081e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:abdd84152b32f2b93a2322ab",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fd44a9e351f3b57b1abd056d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ef4a20167d5b3e3745a57a27",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8052b94c1606bfebcd7ff233",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/656743294; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:9f6fad1959f428a00a7ef83f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:3adf0ef7e79f40fc079ca9c1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:e40d2603a6396256751c0bca",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:79d103d1e4a6c48afcf7ad3c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/103029795; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:28d5f167c77dfb3b2f5e6564",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:5a668f0d57a60a61365f3652",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/52069715; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:40ce25a3051955774afa5b32",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b28f88d3951fbf862a825a59",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:f7fbc3f21322ca6765651c43",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ad8c2c646a3a2b615d39a52e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171713857; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:a61abf76353d0526c89a40f9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:1d1c06fd6ecf0cde287e1041",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:eb84e30c14fa5f950d87265d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6b1a30148dd7b944a7ea14ef",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ab7bfa54355e0a5294fe58e0",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:eae4002525bdb7e59d21ea9c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1dc74b71b993cf2979507976",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:65ca0d4529253efd388a287a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:4f9482a1f87092b1ed539acf",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b6298bb5854945a741faa1b4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:25d24f54200e064377c24225",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8709c5d3b61deaad0f212e6a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1ca6c8d4d427db9af3a44e00",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:63bd25f29011cee6d27dbac9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c441bf418319234962a84d66",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f9d9ed08f610bcf7f0306542",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/177912657; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:405adcb33b304ea714b479ed",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:d6fb4dba5097f5216023e0ed",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:44a4ffe11695f4c993400815",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e43e0071a6a323e5b5cd0731",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/163891193; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:ced499ac8985b871b4883bcc",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:316e330ec896a31ddc0d25de",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:cf7e8ed29a4b76985aece03b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:bb2c973ea729956b0b709664",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8c0a589e61bed52da4faa345",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9ab199aacbb27217c9513ef9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e0c9845861cd5ed742a4bb37",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4b9b1a3b29ff9580f420b690",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8c6a99918a3ab399831ef9a3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:597e9f111553a74fb4c43713",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:da4910316ef07c2bcfb8cf65",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e5d856300e9ccd6d39a6a5da",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ba5e9e4565e8ec1d0b6afb1a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:70edee0a8d16bf4ca66ac608",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/178249108; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:fea197fa7c1f304aa2ba1871",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:d61747924f3a344a90cfa838",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/177931262; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:eea909591a8378945079df5f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:4e76b191de37a8ea0d35a88f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:fcdcbdd78c9f96a56aff24f5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5800fb0bf9fac2bf1f12c3bd",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6c029dc3c6e03204e55fde39",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:729f33464e71809e58248102",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:11f5806cce5be424cd7dd4c1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e4dc529c63b2908da78a2504",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171039366; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:ebed575a5df287a2d9e91928",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:ab72ba49c754ea899ed264c9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:aa04dc50cfd95b9d3f0ce9a9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ad34ff832cf5c04f0e4c42d3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/174466530; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:a88a4f9026c7dd2f1f43bfcc",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b5004044a1a0c763ef681d4b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:eaa9b6bf165f1990ecdeb033",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4e2f6bf1e424180320a63701",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:f9fcef174a2eaebd0dee685a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a876621bb331827b850ac545",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:77d7a5f1985e2511bcf59601",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1f3ae87ee75c5811aaa59d17",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:35bdd85e5b36867e05e5422a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f5750eedec8c3feb909eb5ba",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:672916e1472a614f24836939",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d99f34b69f65098b5b140084",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:19ea61294a19bc383da5b288",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2d629b6cda2947740b6eb3df",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:40f3d36bbe9bf0c26e28e9f5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8e63c13f16913d655febc0b6",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:00e1372cb6f8dd9af1e7cc92",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4f8faf60038d59d183fb62f7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3abc8990f506b64cd4ff448a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8812695f3361998d04467b52",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:f6bb4c02173d7dd972781063",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ad33b1698d0956af4877f957",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/652943491; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:7a4eb966547ff21012f6ecf9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:3858d9216e6ae13da73f0c23",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:77c97950c9e26602022105da",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:efd8cb03dd3114dd64f18338",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:01f143b56510e8e0a1adbc81",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:37b71927d7492794ec7eeee1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1037359821; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:9b4c20d426f2ad2d5f9881f7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:5ccbf1384d2144c3cc643cf0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e32cfa93f0024963a8c8a79f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e3bc1c34d1612e1263a91f17",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:38f6274a05841740b587580a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a168af315019005206856603",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d7d427fc9e8284fb34343da2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f78515a3c9dadc821ea67757",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9749174911ee85e041d2867b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2da9800112cc70bd7ba9d5bb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f379f691f95f8a138a3a7cb8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2edeac5142fedcf18bb2ac07",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/165831924; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:490cea88e932300e20a5b112",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:f87beffb91560ab7bdd6392b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:bb4459baf15612faa882bc39",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:12aa4264c53f8cb74dba7472",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6429dcb5688841f0ace7828d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0d34855b9195fd24507cf114",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/700215120; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:37e791d90180b5fcfae50484",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:95407084904efef840a3e2ee",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:c02d5e9b57610c5307d94b96",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:35c75318a61a57bc24820d25",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e06b91826b4aa0712bb1483a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c03c65edef9a1656472314a3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/159758304; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:3471adc642a4743bab59aa04",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:3b933079f18c32576175d3d0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:05826a78c1d019cf3a3926db",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:caa164866c73a7d21b147e5b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ab4600c5a4742c7fb1cf78c8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6048dee6e5959966996fa032",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:3bda76894d88873687aae2ce",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c00a4dc20a08b12694f156e0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:a923bae6c2961c2727faf5df",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:11ca71639977ebfb45aad251",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:124cdfd454b568f3533c09f5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9970e1f76ae89f0426e8b779",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:72b0aa7ad2fb22923a7ec017",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ecd0233e13c5242444fd6755",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/163891152; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:156650dc47ad47c33eaa6f8b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b97cd76d5c3067961a7db18e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:975f41513a8fffaea0adc3d0",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:332e0810b1b0c1e9cc3c8507",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c3ad4e5d758300e928009546",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8e616aa32358c0064c23a92b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:314b772944e196cca1670017",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7a3609429d1b52b5c9fb59ca",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:116b24dfcd2e7c50756a38c3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ab7c1f48a6cbe6e8b7217012",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171531630; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:68d7e3c38d0f189c48708b04",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:ce4f60836832ca295f64bde1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:da156c16dbbe69b9c98518ce",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:148dca2bedc392af6431c693",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/52440914; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:983d009163ff5bffdf690022",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:6b7737511d363e2aed598e25",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:77d4e8f80fb7d009fb647ae8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b27a9be457f437a05c44a409",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/170296005; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:7992ef0aa35cf28dfd0b5366",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:4ae14343f9643ffc6957b0ff",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:963891f3a40ed32bf3bcedfa",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3ebf44be53a60db361e48708",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:10af81ceacf8100c6b1c6854",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:172b79b646743d6e1f9d8d18",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:27a718feaeeff17d4f24d1ce",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3762bcc357b012f600cfb2c1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:1a911e1112cc33135ee7e2ce",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5127c36a62ddf7cfeb521361",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:6417242fe565432ec641b2c1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3ace598e2f3b2cd1dadf4981",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171540506; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:0383c7a985a83fc8c6fccb82",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:6cddef08958bec91f96fca33",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:879ac3ca9ee048337c90bcfd",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6699a36ce60197f24c4abae3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e58f546686c0063b1c5f7169",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:86f8996a6a62020936251141",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:97dab1b1d55ee3c47349b290",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3b64cefac76d8af7798c3e19",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1d721186d5be52763a7d0e1a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:988808846f31a2acacde6b20",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to relation/14670084; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:e76a59d83de1b8f7c5d37379",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:8851e308a37ad22fb66da16c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6e5202138bd3ea60c8451eb5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f09625a2076e90a9536088bc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:66cd7a94fb7eeda8a5a2b1e9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0697ffd2ab410af180413177",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:fae10abd34eb6dd741b0236d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7c70970e9791c673d673f8c0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:f8f3ba4eb3f719251345ff3d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4c796d57fd1c2012bf28e52c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:6972c54f9e867e832d414f39",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ed08c6f278f264314f66942e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/381797798; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:ff44dd955e869de62ba48945",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:678fe39ce00d9c4fcc8d1f87",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/122007500; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:bc76519aa790f252459b1619",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:db2fb89b18862c276f9745d0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/122007500; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:e038d708e4504e1dcc3cf30a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:0c54a80b013aa924dce55775",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121857248; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:c413d4acfa4f966d0fac4348",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:7d6b5000cf8929b2a165dfac",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:25d2c473fc55172832a566f1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:09b67a3304133887c6177fac",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f1eacf42c2ca753caa5837cd",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ae4e96c04a901646465bd8a5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8f80d7477478dd309539cf6f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7ec0ce746246f22b3b75c895",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:58c4d0aac621c95b663584b8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:17ec4811e9ea7a7f700e061d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1a75d1605b6f4b1e083f33c8",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:78e8dbcc75195390377e44f8",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d607595b01391de76ab9d3aa",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:dd08dd4cfc179a2527f83288",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:994bf3399e26f1172f093452",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:798b0c7494bad671a6ce8ed5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:35bea052ec18fc48f0108208",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7c9bde75cbd7bf941da00ad5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:4ebf35253deafd7add45b411",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6d441d636983513b4202d84d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/175826909; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:dda4224c7f9a196659e0494d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:2ba9b2c70c850d0a6072fdc1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:521ac6e49cb097688f619611",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5530334feb6279f125febecb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:5d806f34783057896241b50e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:de15c5009fb754ca781b9e9e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:580c0e8cee9c6758a678e9bd",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2e58bf2f76a780bb95e008f7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:98f4992cc5ce8ec0f3ef0fc4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ef2f7574f67536f3d1bc2e52",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:503c4fe94cce1deb2e1ae29d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c8456eb922829becdc89428a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7363afe4aad34e6ba7489c9c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1d8618ed639491b387387582",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:217f161dbe0e842a893bbdb3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b8340811bc46b43b98bd3923",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8eec252d4d632de3cee91ad0",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:744099e5c8a3b929459a78d2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:36f285a7a29337b3b59c4476",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4005212875a901fd71fb4e82",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d6c8b79c02cf08a8533ce320",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7f89e3c5c46ce0a2fd43d346",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121624352; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:eccd3ce5428c781251342862",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:7592d520e89e0e7009ae6b8d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:74191542396079f839154c13",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:809e9fea00e74daf2cb5daf4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:688815fff45d5d4995a7bec7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:64cba455e751307bf24058ce",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/174399121; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:6eeed6e37fd1aeedcdb01bda",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:db24bb9123cdabe672e497e7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:80b0ef2f8a0eb2e3a19d2da7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3b2bf41fd8ae0412c525f48a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:0bcf312a067e2b39cc3d7262",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0584d6b900d6a6c1d5726649",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c1a1bbec3a6704bfaef6754f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1eeef9f4c6c601e527cd9ece",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1054868572; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:73a9c1c46ea720d3d6186b72",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:7de0b40bfe870ef766dd0da5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:2360dcbd95fe28345a1e8b38",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0a2b8436ce4086afb2f14191",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e511138aa6c42881aa52adc9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d00096e3d0fee58735450836",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:4550092f5b0a70628761ed90",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:88b31bbd36449754008d26cc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f2e377811cd1ff8c2b33e261",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:bb344d9656799923be9258e4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/174697782; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:14c10d8d60f3cb2e16092466",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:bce67e6ff7ee4a51f39330d2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:718d5e77756edc7c2b79cd64",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3a50bad968796c4d706273fe",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121857248; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:f4e6e3adff2e47819e338d0c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:9ec0737f33fa9febd51b8818",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:73423c3d395bb0e569a7334c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3ed1910ddc7c8fe7d3f89ed1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:81df2516c35d9f233f3eb2b1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b722aa65e4d74b74d47317fb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:52f6e24f037f2f4ccfe39d27",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f79578dcc11bc4f699250442",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f769811daaa4078679540f9c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:54d466792b150aad70cb926b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d079c6f91bf27d2ad345afc3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:23929f396edc80093793f1cf",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1e9d2f9d4bbdd88b5ae54fcf",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d837d8d59c3832b446f767fd",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to relation/14128477; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:27f5284990ccec850ec7e18f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:bc555fcd8f9549ccc88e5a52",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6608454ead6c112819533afa",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:13979174f04681513643b8fd",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: source_gate:source_status_conflict.",
+    "record_id": "location:v1:77f6ce3dfc803f0efb009fa6",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:519e1f95b18dfbc87b17e3c9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: source_gate:source_status_conflict.",
+    "record_id": "location:v1:bf59b02c9822497ce6ef502b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5ecd9dc88466e5e5397bd256",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6cc4f8a2477947a82b9aa9e4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:46ad4cfa657245e50f4a236b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f684dc4ec21e391039018fce",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6fc7055c21ccf70e01ce6402",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c2104179dfcd0f23fb516988",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c842e721f750e9cfd3a5a27d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:7186a82f4d753fcefdbc1936",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3e98b172541ec25bfb0590e7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:505fe870994534c16b7c18ee",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:071ebf9bbea7268d310066c9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:0cc8618910a7da7f13fe8a70",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:057d7ea0110ed55d78c09bc6",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7450645bae261b723acc379b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d61467bc168109a9f6f7bf9d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ad7730aa3dc6c98ca8035d5f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2916b4b0ca971ab7ad2a3ddb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:420d2e74d0aa416c21174bc5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b57d94b4ce36cb5e0082e91e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7971a1c376f2d6e623866293",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f72cf1e19bdecf23635b1802",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:60d8cf7562bf0632e3932552",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:54350e24e816de3cac0ca693",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1b6f2b1569de71ce7dfe000b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3feb01bb185d97df696e3013",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:407bfd2b7e3689fb96412e3c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6508d643752caedbabacbbd1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1aa041b960b9d2f6286a6fad",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:749e547a9f5cdeede7a6f249",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171527955; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:c0faf21a5af1e17eb4e7984a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:8fd694a883dee7f8f73ee5a9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d7fbf37ed13c8d900e9966d2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0cf9553328d66e4e285385b0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171527955; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:e71728609972c40b85a0375b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:598abcfc38d9d94f3a835950",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:eee4de74db5e06874c8e94bb",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fad6c2fe5d8cf6d7b384cab0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e4d21273f5c18697872ace11",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a985fba33e99268a0cd3973a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6f9e05041957673ff8ec9533",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a797ce3f270f05945b76595b",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:3f6ad9fe7f65e5adb3676caa",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8833fbd03694d3f944384699",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to relation/14128477; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:8e7ed04f4ac57d80269faec9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:d72066d19bc67bb29f94bfb8",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:1082f3c4b41843bdbe652aad",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b16ea0a0b5ecc3189b958935",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:ac04a3ceb99aa2f6f3689bbe",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:cbfa1ee0a4e3ff9b956c01fc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8dcce4f3a3486d03832bc355",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5743d29153cfff9256d6f959",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:03aeb5a86b698956cb7ff092",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:12f6b08f7bba954083f4b4dc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9f3492a6d16d4e084817b754",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:42780c0cb96012f110e0acd5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c010fe2db4889cc9eb8dce22",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:510efe951f2dd060b3eda1bf",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:84e246dc771dc43ca7fa7442",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:4a5fab2675c1674675629ba4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8aad79aa5bd5cd5b4babddb9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fb39a9851c08a8ccb66eb943",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e900a3a124b316f4c8fb09a1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fd57f27f8de5498a845b31f6",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:5a68832f26cac53159d3801a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0836bd7dc55d28c5b210c5f0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c16e605638174d44d99eaa42",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:16b0f56168a86c047dfd949c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/175826909; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:4a7d90e39647992fc90d3583",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:2e92a7e591d56bb984b07be2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:cec99a5861ca314b0f87035c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d9a53d246396dee09e86b1ec",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:5d163fdbc49febd28cb03f89",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ed13e423f1428727986a6533",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:087bb59361f332bdfb7231b5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ccc7c03decb5ab5a93578afc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6282169f10552a7877746cc7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2fd1abe3d78048c2c11fb2bf",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:5982a95b31220f0238a13916",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e22601c72e4f7c249e2b7289",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7b10b5556c24d524cd605234",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:bf850d1c7b70f96841994b86",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:654a66ea28871046463e4d18",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f7d5ac0323064ff21ac9500a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e615aadc8cf18c8d87c30782",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6ac297734e5426bec937a358",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:aebfcfe11f15534e9522440d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3f28258f9163fea5f318769e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1d2f1715f762f9f74f1aa0c2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:51eef7f5f4e270e71bc860d2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:052875acdd2e17dcc9a07cda",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1c68e1fa3b78dd72d59e7cff",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6b1008fcd4df78392c147ce5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:392ce109dccb16b17497c677",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:6ad10d95c1bba3b0702b8753",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:94f468e1ea4092fe2f64bacb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:0dffa30bbcc085d35bc26b0c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:679e194439cb39f6ad5a2b45",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:dc9ca904f75620bcbc57c538",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f223939cde6343f3d349f6d8",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9a39895658bec764bcdbc8a9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3e0eabcde68397ec8c652e58",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/159758304; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:6df1dace0b1f3333029f6dee",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:d26291c8daa7c24e308edf9d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:786a678b33a0cceee5676dcd",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:20e4ab17b918fb904f639d18",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3d1ca8f9e665f3cefa416549",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:dd07c0e4668990522962d321",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/176906118; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:ad11705bf0deb1a931c2c70e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:9f0ea30995d8e521cba6d42f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:eee35bc4a867b35ccbf4dfd6",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3ed244fec7e0a4ba3b3d8f3e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:754a6881e7f7625f0b497383",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9213f2f976e99b908ce46da4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121674829; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:c297636ce45e0e28def7f3ff",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:9904832b70c2c033f5bb221c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:80003b312081ac22170bbc86",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:bb6b14a89463fb602f8f56e5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121624363; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:cf5200910d96c400153f4fc5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:ee358e51b35988fe5c00a088",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: multiple_contextually_viable_candidates.",
+    "record_id": "location:v1:761803e5a33b5d4e037ecf9f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6385238b8932ab99cd206e34",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121986375; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:98b8855a4a6ce7baf3aa3fb2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:e50fe50db8a1ea7c8f3e73a2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:fad5680662ef953546b120cc",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a59134b7b492e216d287989f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:d9bf7fe711ddae7fd133e186",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a900aae1750cb9b40cac1eb3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:502517bbead90e5ba20d5b3e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fa46f567b47e6b616c944487",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:748200ab5b4bd5a545a8facd",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2f6a75df8926c3300676cb8f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:d9f9e86fbcc48cdfb539500c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:923569a587b163a0c48afd4e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/52103255; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:8820c5d64942ace9e8308562",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:104feb2891596c8e6018acf6",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:5f873dd508b942c59bbbb456",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:129a2a05048c05f91c306a68",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/52103255; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:8cf3ad0ae7f45dde60d05d30",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:118defa721a90368ddae62db",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:40b209167cff6876201b38a0",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9d56dff9af7d740d1d0f0939",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:b96db1fa34e7d66499cb7c46",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f93da9cc37c422775bd9530f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:71e80161f7ff8c80ea8889c5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1dcafb658ed343b54843f62a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e7813aa0448c607d56ed5a31",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8d5af17c434680ddac6257af",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:02006454eeaf3e3d5536361b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:d54409f819c9892edc9a5a61",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:c45442a8f1748562fd5db9b5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:50109ec6dec7b1dc7863b287",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:4f3b02be1b8d63f7719111a7",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f7bc21febfaafe0b9db98abd",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9268c50fdbb631d5cefa5aa4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:dfce5f4db32dd7988bfe0d77",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:0cb17c7de71b3d71cd68a1e2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:0baed87dda9b6823897f80b3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:630eb60a9609bd4af7cd1b40",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c1d3fd1d99cb7a0e8877acd4",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:42af651f2284c61593ae27f3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:a7fa4b79bcc5e0aaf9e99bd3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:2c6c9fcb7111559a487163da",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:07446f4e04e637fab4256928",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f3d2c355c26078efc4c4da6b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:119d99495defff5326550e61",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/381797798; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:f01413bbcf24f6159afa6eee",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:118c178295adb2b8c1436200",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121857248; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:a52ab96d44fa6c797d0a77ac",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:b3b9b1c213c32399990e3713",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:90edbbd032984f4ea534b17b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9636311816f24fc2af9fd53c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:bd2a709d635823507527ef68",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fdf481b844e185f23497988e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:2789e01127209996a383d1df",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:58f43e66d7e1f85adad0765e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:3cfdff2f49569e52af450b25",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:265b06177523ab6994048d48",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121674829; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:9cbf1414e0d0c3171d07c0de",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:a7eeb4866149b015b764b9b2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/121701191; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:d6bbf50a43a5620db32220e1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:015e64a61231df52f36660cc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:da56fdd666bc0fec696c945c",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:37b4ba8d60f733019b071191",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6366c36cc936a7359582ab2b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ffc4bb8825246609593b410c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:924998d3a84c1acce359e50d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:601e2ec80521c53cfe36f731",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:db9c36929d10ed1e3dc3a368",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:10b3d0ea4cbf806c78236871",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:eaa6431c9987ee77842eb80f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2b19b7dc19cc929c94b5791f",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/617660021; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:d8c4954409a79084dd4a5b2b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:51b8b24fe2e6bfa5ba4b0396",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d24cc3ef2ddc5825662b5d34",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b52183ca7c6e6a465fb8de89",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/1037359821; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:7c7a2e74c627cd50239fb860",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:bd81d4194338b710af72bd8e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:841132ed0a0a7454d50dfc18",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:959ef10195364702e420dff0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e2ec827151e8613742f65c9b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:540ab71b6bf64f29eba34af9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:e0df01ee8e171885b2eda72f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e600258e13a0c2e6bba8b5ee",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:fa25533b60f5b3cdda6d37c1",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9738cbdc3d7cbde1a69ac2ee",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:76bd119cf74ab13fc670405b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f7b3d847a7a1fceefb43f7a1",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:df0c4efb0c3f1d687e462be5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:258a71cd05545bed427ca0fc",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9279e1578965454ff9405aca",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:46274d5dc6a2e2c60a8a35a3",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7123f2d6462cf99ce7f02aa9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:da2527660447299564dea136",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:515ae1697fcec392f69f8360",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:f31eda7cd1302429f4ae1b13",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:596cac8e090bd6b0e4b125e9",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:fe1a7580066bbdfaab27dd09",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:32601b5fa3282b11052f5138",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e7957742ca0df286044c5002",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ab58322609713af98692c709",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:2ccaa61ec6fb6468d82e082c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d6c1f4dddef9c10c45b3531a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8225105883c730ed85c09286",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:15e58330860b1de6708fa14f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1befd3c2c5d4ef184fe1eb54",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to relation/14128477; state evidence home_state_only; operator evidence match; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified.",
+    "record_id": "location:v1:d529dbc53e3f7d9350694bd3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:0025efc4f1c4519675bb07c8",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f8f1fadaf2f9472a46fa9d51",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b16e74e200ac56a7fa990266",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:de440e5721ad5d1dd6ced52a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:5f0570051b0092ae05dfe27e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6e6b5ea389fadaee222c2605",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6eaf06ad642cdb2c7c56375e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1e78e7914a6bfe9037cb02a2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:460e85c5c2f2a334bc7f0096",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:d2df9c599ae190a8f1c1aebd",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:34c60742d397f09b10c591cf",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:6b910d8efe306d2258b0345f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b9d5bcfc795e8a4a69e3ad95",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/564834100; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:5642da12ec7429e237bc1160",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:2a2eba0b2bf0f7c8a77fb18d",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/160308061; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:b6619eac80b539dfe946a4e4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:7e1f89d0b2966e36fff8bb16",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:7145bea1af5bc2589fa241e5",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:79d96e19b5794397c2e77188",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:1aebe5a8de2ac525d4568b5f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3cd150844d4ae03b3b54ab23",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:18a3a1ed1706da16b31a8899",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b4efcf5bf9921d86e020aaee",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:60dfb8cef833bc0308ed209a",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:b22abf1863ca19510860edd0",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/171540528; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:83c1a2d457287ff056904813",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:4281945e998274f45db5ad12",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:06fb081f478a33b3c1befe9d",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:3cc0d616817eb4c499c743e5",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:b7835310d0b38b895363fc23",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8a5b43b100c3a6eb9c53c64c",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:86a7bc8f66f998b94cc4d81f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9b590307a53eb042801454a7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:fc21f6633bf2682009c56b71",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:e45b427bc1f6770af7a1e539",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:f2b08b037cf3e7150334d817",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ced6f97ca6d33494f76d20db",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: fuzzy_name_without_fine_area_evidence.",
+    "record_id": "location:v1:255f2ada1662ba93676f40e4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:694373c5596b741c8126cb9e",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:cc39540a86c97c15a18e777f",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:6923f0ac4f44072bba0d7f53",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:9aa232d012adc99fb7135597",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7b36b38acd4c68a19cb837d7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:60770d482bc049638b4a1c26",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9d7df39a42d97b2eb95be4de",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:e88ea7282d1976072ae6d74e",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:21eb2702691aa213a96322b9",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:ee196056013f76c8c0aa2c43",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:9f4326a0a035371545f80741",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8355d5699f9f81a6ef4442d4",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:8d7cf49895f4f86b7fc34397",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:8dac09d304ce06b0ff9bcd96",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:602b1777d21bcbfd20e612db",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:94d2d8e829e7183e764d0141",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:ba8dc2a2e7cd19c512da009a",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:985c69a62c82c6322d649ad3",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c9b9de9bea741c8f5bbdf6bd",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:5e147c2e9048555d3417422b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:7f7cf6b04f453d2a558b7ac2",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/160308109; state evidence home_state_only; operator evidence unverifiable_owner; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, owner_mapping_unverified.",
+    "record_id": "location:v1:83a52d775c74171c00b15575",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:8074f2b06ff2cfeeeffd30bb",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Medium by location-review-v1: exact normalized-name match to way/164880657; state evidence home_state_only; operator evidence missing; voltage evidence match; coordinate method overpass_bbox_center; limitations project_area_unverified, operator_missing.",
+    "record_id": "location:v1:0fd07c011f818a42dbd22446",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "accepted_by_f09_rules"
+  },
+  {
+    "_id": "review:v1:0c9ae0ab2ac0bfaef5a17765",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_candidate_passed_type_geography_operator_voltage_review.",
+    "record_id": "location:v1:a02e52af2c865c2630778c41",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:c5eb1edaba05fd2a9aa50a02",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:34c3855283e1dd4ebf2d273b",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:07c5c9e511cb8046863103a7",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:55d4371c89deac9aa153c481",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  },
+  {
+    "_id": "review:v1:1b8d864897626737f257dbda",
+    "at": "2026-09-26T00:00:00Z",
+    "reason": "Unlocated by location-review-v1: no_named_osm_candidate.",
+    "record_id": "location:v1:73f61f88aa8e11ad081ae1f2",
+    "reviewer": "f09-deterministic-rules-v1",
+    "verdict": "unresolved"
+  }
+]
