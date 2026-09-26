@@ -7,7 +7,7 @@ test("user assumptions, holding cost, negative result, dates, print and reset", 
   await page.goto("/impact");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expect(page.getByTestId("result-Base")).toHaveText("Not calculated");
-  await page.screenshot({ path: `../specs/features/F17-impact-scenario/empty-${testInfo.project.name}.png`, fullPage: true });
+  await page.screenshot({ path: `../specs/features/F17-impact-scenario/empty-${testInfo.project.name}.png`, fullPage: true, animations: "disabled" });
   const base = page.getByRole("region", { name: "Base", exact: true });
   await base.getByLabel("Mobilizations avoided", { exact: true }).fill("2");
   await base.getByLabel("Quoted cost per mobilization · USD", { exact: true }).fill("1000");
@@ -25,7 +25,7 @@ test("user assumptions, holding cost, negative result, dates, print and reset", 
   await page.getByLabel("Assumed in-service date B", { exact: true }).fill("2024-03-01");
   await expect(page.getByText("2 days", { exact: true })).toBeVisible();
   await page.evaluate(() => window.scrollTo(0, 0));
-  await page.screenshot({ path: `../specs/features/F17-impact-scenario/filled-${testInfo.project.name}.png`, fullPage: true });
+  await page.screenshot({ path: `../specs/features/F17-impact-scenario/filled-${testInfo.project.name}.png`, fullPage: true, animations: "disabled" });
   await page.emulateMedia({ media: "print" });
   await expect(page.getByText("Quote references and open questions: Synthetic test inputs only.", { exact: false })).toBeVisible();
   await page.emulateMedia({ media: "screen" });
