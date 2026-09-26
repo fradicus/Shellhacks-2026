@@ -1,3 +1,9 @@
-export function GET() {
-  return Response.json({ error: "not implemented", feature: "F06" }, { status: 501 });
+import { z } from "zod";
+import { handle } from "@/lib/server/http";
+import { coverage } from "@/lib/server/queries";
+
+export const dynamic = "force-dynamic";
+
+export function GET(req: Request) {
+  return handle(req, z.strictObject({}), (_q, db, dataset) => coverage(db, dataset));
 }
