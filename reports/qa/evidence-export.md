@@ -14,6 +14,8 @@ The production-fixture Playwright suite now has **16 passing checks** across des
 
 Local result: **16 passed (4.8s)** on Node 24.13.0 / Playwright 1.63.0. Existing pipeline: **98 passed (13.30s)**. Web lint, typecheck and fixture production build pass.
 
+Rebase checkpoint `c8a8902`: C4 aligns fixture filing source IDs with F01's manifest and includes the two cited public DESC sources. Reviewed those changes and reran all repo checks (98 pipeline tests), the test-file TypeScript check, and all 16 browser checks successfully.
+
 ## Confirmed defect outside F07 ownership
 
 [F11 issue #28](https://github.com/fradicus/Shellhacks-2026/issues/28): metadata/page code decodes the route ID again. A temporary copy of the sponsor fixtures with only a synthetic match identifier (`QA:SYNTHETIC%zz__PAIR`) renders a server-error screen and React error #441. The response can be HTTP 200, so checking status alone misses the failure. The regular pair tests now assert the actual coordination-card region.
