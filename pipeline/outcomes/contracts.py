@@ -3,7 +3,8 @@
 from datetime import date, datetime
 from typing import Annotated, Literal
 
-from pydantic import AfterValidator, BaseModel, ConfigDict, Field
+from pydantic import AfterValidator, BaseModel, ConfigDict, Field, with_config
+from typing_extensions import TypedDict
 
 
 def timestamp(value: str) -> str:
@@ -21,7 +22,7 @@ def day(value: str) -> str:
 
 Stamp = Annotated[str, AfterValidator(timestamp)]
 Day = Annotated[str, AfterValidator(day)]
-Identifier = Annotated[str, Field(min_length=1, max_length=120, pattern=r"^[\w .:/-]+$")]
+Identifier = Annotated[str, Field(min_length=1, max_length=120, pattern=r"^[A-Za-z0-9_ .:/-]+$")]
 Digest = Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]
 
 
@@ -114,12 +115,76 @@ class Cutoffs(Strict):
     evaluation: Stamp
 
 
+class AuditSource(Strict):
+    id: Identifier
+    publisher: Identifier
+    lineage: Identifier
+    sha256: Digest
+    published_at: Stamp
+    received_at: Stamp
+    reviewed_at: Stamp
+    authorization_ref: Identifier
+    reviewer: Identifier
+
+
+class Provenance(Strict):
+    import_sha256: Digest
+    sources: Annotated[list[AuditSource], Field(max_length=1000)]
+    reviews: Annotated[list[Review], Field(max_length=10000)]
+
+
+@with_config(ConfigDict(extra="forbid", strict=True))
+class Interval(TypedDict):
+    lower: float
+    median: float
+    upper: float
+
+
+@with_config(ConfigDict(extra="forbid", strict=True))
+class Metrics(TypedDict):
+    mae_days: float
+    baseline_mae_days: float
+    interval_coverage: Annotated[float, Field(ge=0, le=1)]
+
+
+@with_config(ConfigDict(extra="forbid", strict=True))
+class Domain(TypedDict):
+    lower: Annotated[int, Field(gt=0, le=3650)]
+    upper: Annotated[int, Field(gt=0, le=3650)]
+
+
+@with_config(ConfigDict(extra="forbid", strict=True))
+class ProbabilityEvaluation(TypedDict):
+    passed: bool
+    domain: Domain
+    calibration: Annotated[int, Field(ge=0)]
+    holdout: Annotated[int, Field(ge=0)]
+    calibration_brier: Annotated[float, Field(ge=0, le=1)]
+    holdout_brier: Annotated[float, Field(ge=0, le=1)]
+    calibration_baseline_brier: Annotated[float, Field(ge=0, le=1)]
+    holdout_baseline_brier: Annotated[float, Field(ge=0, le=1)]
+
+
+@with_config(ConfigDict(extra="forbid", strict=True))
+class Evaluation(TypedDict):
+    training: Annotated[int, Field(ge=0)]
+    calibration: Annotated[int, Field(ge=0)]
+    holdout: Annotated[int, Field(ge=0)]
+    passed: bool
+    reasons: list[str]
+    interval: Interval | None
+    metrics: Metrics | None
+    probability: ProbabilityEvaluation | None
+
+
 class Artifact(Strict):
     schema_version: Literal["outcomes-model-v1"]
     purpose: Literal["authorized_actual_history", "synthetic_test_only"]
     policy_version: Literal["empirical-cohort-v1"]
     target: Literal["physical_construction_start_to_complete_calendar_days"]
     dataset_hash: Digest
+    provenance: Provenance
+    provenance_hash: Digest
     cutoffs: Cutoffs
     observations: Annotated[list[Observation], Field(max_length=10000)]
-    evaluation: dict[str, dict]
+    evaluation: dict[str, Evaluation]

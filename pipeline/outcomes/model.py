@@ -2,10 +2,11 @@
 
 import json
 import math
+from bisect import bisect_right
 from datetime import date, datetime, timedelta
 from statistics import mean, median
 
-from outcomes.contracts import Artifact, Cutoffs, Observation, timestamp
+from outcomes.contracts import Artifact, Cutoffs, Observation, Provenance, timestamp
 from outcomes.importer import digest
 
 MIN_TRAIN, MIN_CAL, MIN_TEST = 30, 20, 20
@@ -30,10 +31,6 @@ def split(rows: list[Observation], cutoffs: Cutoffs) -> tuple[list, list, list]:
 def quantile(values: list[float], probability: float) -> float:
     """Finite-sample conformal order statistic, never interpolation across residuals."""
     return sorted(values)[min(len(values) - 1, math.ceil((len(values) + 1) * probability) - 1)]
-
-
-def exceedance(rows: list[Observation], baseline: float) -> float:
-    return sum(row.duration_days > baseline for row in rows) / len(rows)
 
 
 def validate_observations(rows: list[Observation], cutoffs: Cutoffs) -> None:
@@ -61,11 +58,20 @@ def validate_observations(rows: list[Observation], cutoffs: Cutoffs) -> None:
 def evaluate(rows: list[Observation], cutoffs: Cutoffs) -> dict:
     validate_observations(rows, cutoffs)
     all_train, all_cal, all_test = split(rows, cutoffs)
+
+    def grouped(items, key):
+        result = {}
+        for item in items:
+            result.setdefault(key(item), []).append(item)
+        return result
+
+    train_groups, cal_groups, test_groups = [grouped(items, cohort) for items in (all_train, all_cal, all_test)]
+    baselines = grouped(all_train, lambda row: row.job_type)
     evaluations = {}
     for key in sorted({cohort(row) for row in rows}):
-        training = [row for row in all_train if cohort(row) == key]
-        calibration = [row for row in all_cal if cohort(row) == key]
-        holdout = [row for row in all_test if cohort(row) == key]
+        training = train_groups.get(key, [])
+        calibration = cal_groups.get(key, [])
+        holdout = test_groups.get(key, [])
         entry = {
             "training": len(training),
             "calibration": len(calibration),
@@ -84,7 +90,7 @@ def evaluate(rows: list[Observation], cutoffs: Cutoffs) -> dict:
         residuals = [abs(row.duration_days - center) for row in calibration]
         radius = quantile(residuals, 0.8)
         lower, upper = max(1.0, center - radius), center + radius
-        baseline_rows = [row for row in all_train if row.job_type == training[0].job_type]
+        baseline_rows = baselines[training[0].job_type]
         baseline_center = float(median(row.duration_days for row in baseline_rows))
         mae = mean(abs(row.duration_days - center) for row in holdout)
         baseline_mae = mean(abs(row.duration_days - baseline_center) for row in holdout)
@@ -115,8 +121,13 @@ def evaluate(rows: list[Observation], cutoffs: Cutoffs) -> dict:
             continue
 
         def brier(observations, distribution):
+            durations = sorted(r.duration_days for r in distribution)
             return mean(
-                (exceedance(distribution, r.planned_duration_days) - int(r.duration_days > r.planned_duration_days)) ** 2
+                (
+                    (len(durations) - bisect_right(durations, r.planned_duration_days)) / len(durations)
+                    - int(r.duration_days > r.planned_duration_days)
+                )
+                ** 2
                 for r in observations
             )
 
@@ -141,7 +152,7 @@ def evaluate(rows: list[Observation], cutoffs: Cutoffs) -> dict:
     return evaluations
 
 
-def build_artifact(rows: list[Observation], cutoffs: Cutoffs, *, purpose: str) -> Artifact:
+def build_artifact(rows: list[Observation], cutoffs: Cutoffs, *, purpose: str, provenance: Provenance) -> Artifact:
     ordered = sorted(rows, key=lambda row: row.job_id)
     return Artifact(
         schema_version="outcomes-model-v1",
@@ -149,6 +160,8 @@ def build_artifact(rows: list[Observation], cutoffs: Cutoffs, *, purpose: str) -
         policy_version="empirical-cohort-v1",
         target="physical_construction_start_to_complete_calendar_days",
         dataset_hash=digest([r.model_dump() for r in ordered]),
+        provenance=provenance,
+        provenance_hash=digest(provenance.model_dump()),
         cutoffs=cutoffs,
         observations=ordered,
         evaluation=evaluate(ordered, cutoffs),
@@ -166,6 +179,26 @@ def validate_artifact(artifact: Artifact, *, now: str, allow_test: bool = False)
         raise ValueError("model evaluation expired")
     if artifact.dataset_hash != digest([row.model_dump() for row in artifact.observations]):
         raise ValueError("observation digest mismatch")
+    if artifact.provenance_hash != digest(artifact.provenance.model_dump()):
+        raise ValueError("authorization/review provenance digest mismatch")
+    sources = artifact.provenance.sources
+    if len({s.id for s in sources}) != len(sources):
+        raise ValueError("duplicate provenance source identity")
+    hashes = {s.sha256 for s in sources}
+    reviews = {review.job_id: review for review in artifact.provenance.reviews}
+    if len(reviews) != len(artifact.provenance.reviews) or set(reviews) != {r.job_id for r in artifact.observations}:
+        raise ValueError("review provenance does not cover exactly the accepted observations")
+    for source in sources:
+        if not source.published_at <= source.received_at <= source.reviewed_at <= artifact.cutoffs.evaluation:
+            raise ValueError("invalid source provenance times")
+    for row in artifact.observations:
+        review = reviews[row.job_id]
+        if (
+            not set(row.evidence_hashes).issubset(hashes)
+            or review.decision != "accepted"
+            or review.reviewed_at > row.available_at
+        ):
+            raise ValueError("missing authorization/review binding")
     if canonical_metrics(artifact.evaluation) != canonical_metrics(evaluate(artifact.observations, artifact.cutoffs)):
         raise ValueError("claimed support/evaluation differs from reproducible evaluation")
 

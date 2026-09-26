@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
-import { open, realpath } from "node:fs/promises";
-import { isAbsolute } from "node:path";
+import { access, open, realpath, stat } from "node:fs/promises";
+import { dirname, isAbsolute, join } from "node:path";
 import { z } from "zod";
 
 const stamp = z.string().regex(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/).refine((s) => {
@@ -11,7 +11,7 @@ const day = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((s) => {
   const value = Date.parse(`${s}T00:00:00Z`);
   return Number.isFinite(value) && new Date(value).toISOString().slice(0, 10) === s;
 });
-const id = z.string().min(1).max(120).regex(/^[\p{L}\p{N}_ .:/-]+$/u);
+const id = z.string().min(1).max(120).regex(/^[A-Za-z0-9_ .:/-]+$/);
 const hash = z.string().regex(/^[0-9a-f]{64}$/);
 const positiveDays = z.number().int().min(1).max(3650);
 export const PredictRequestSchema = z.object({
@@ -46,11 +46,22 @@ const evaluationSchema = z.object({
   }).strict().nullable(),
 }).strict();
 export type Evaluation = z.infer<typeof evaluationSchema>;
+const AuditSourceSchema = z.object({
+  id, publisher: id, lineage: id, sha256: hash, published_at: stamp, received_at: stamp, reviewed_at: stamp,
+  authorization_ref: id, reviewer: id,
+}).strict();
+const ReviewSchema = z.object({
+  job_id: id, decision: z.enum(["accepted", "rejected", "unresolved"]), reviewed_at: stamp, reviewer: id,
+  reason: z.string().min(1).max(1000), start_semantics: z.literal("physical_construction_start"),
+  completion_semantics: z.literal("physical_construction_complete"),
+}).strict();
+const ProvenanceSchema = z.object({ import_sha256: hash, sources: z.array(AuditSourceSchema).max(1000), reviews: z.array(ReviewSchema).max(10000) }).strict();
 const ArtifactSchema = z.object({
   schema_version: z.literal("outcomes-model-v1"), purpose: z.literal("authorized_actual_history"),
   policy_version: z.literal("empirical-cohort-v1"),
   target: z.literal("physical_construction_start_to_complete_calendar_days"),
   dataset_hash: hash, cutoffs: CutoffsSchema, observations: z.array(ObservationSchema).max(10000),
+  provenance: ProvenanceSchema, provenance_hash: hash,
   evaluation: z.record(z.string(), evaluationSchema),
 }).strict();
 export type Artifact = z.infer<typeof ArtifactSchema>;
@@ -90,14 +101,22 @@ function validateObservations(rows: Observation[], cutoffs: Cutoffs) {
       || (r.planned_available_at !== null && r.planned_available_at > r.decision_at)) throw new Error("baseline leakage");
   }
 }
-const exceedance = (rows: Observation[], baseline: number) => rows.filter((r) => r.duration_days > baseline).length / rows.length;
-
 export function evaluate(rows: Observation[], cutoffs: Cutoffs): Record<string, Evaluation> {
   validateObservations(rows, cutoffs);
   const [allTrain, allCal, allTest] = split(rows, cutoffs);
+  const group = (items: Observation[], key: (row: Observation) => string) => {
+    const groups = new Map<string, Observation[]>();
+    for (const item of items) {
+      const groupKey = key(item), values = groups.get(groupKey);
+      if (values) values.push(item); else groups.set(groupKey, [item]);
+    }
+    return groups;
+  };
+  const [trainGroups, calGroups, testGroups] = [allTrain, allCal, allTest].map((items) => group(items, cohort));
+  const baselines = group(allTrain, (row) => row.job_type);
   const result: Record<string, Evaluation> = {};
   for (const key of [...new Set(rows.map(cohort))].sort()) {
-    const training = allTrain.filter((r) => cohort(r) === key), calibration = allCal.filter((r) => cohort(r) === key), holdout = allTest.filter((r) => cohort(r) === key);
+    const training = trainGroups.get(key) ?? [], calibration = calGroups.get(key) ?? [], holdout = testGroups.get(key) ?? [];
     const entry: Evaluation = { training: training.length, calibration: calibration.length, holdout: holdout.length,
       passed: false, reasons: [], interval: null, metrics: null, probability: null };
     result[key] = entry;
@@ -108,7 +127,7 @@ export function evaluate(rows: Observation[], cutoffs: Cutoffs): Record<string, 
     const residuals = calibration.map((r) => Math.abs(r.duration_days - center)).sort((a, b) => a - b);
     const radius = residuals[Math.min(residuals.length - 1, Math.ceil((residuals.length + 1) * 0.8) - 1)];
     const lower = Math.max(1, center - radius), upper = center + radius;
-    const baselineRows = allTrain.filter((r) => r.job_type === training[0].job_type);
+    const baselineRows = baselines.get(training[0].job_type)!;
     const baselineCenter = median(baselineRows.map((r) => r.duration_days));
     const mae = mean(holdout.map((r) => Math.abs(r.duration_days - center)));
     const baselineMae = mean(holdout.map((r) => Math.abs(r.duration_days - baselineCenter)));
@@ -124,8 +143,17 @@ export function evaluate(rows: Observation[], cutoffs: Cutoffs): Record<string, 
     const supported = (r: Observation) => r.planned_duration_days !== null && domain.lower <= r.planned_duration_days && r.planned_duration_days <= domain.upper;
     const probCal = calibration.filter(supported), probTest = holdout.filter(supported);
     if (probCal.length < 20 || probTest.length < 20) continue;
-    const brier = (sample: Observation[], distribution: Observation[]) => mean(sample.map((r) =>
-      (exceedance(distribution, r.planned_duration_days!) - Number(r.duration_days > r.planned_duration_days!)) ** 2));
+    const brier = (sample: Observation[], distribution: Observation[]) => {
+      const durations = distribution.map((r) => r.duration_days).sort((a, b) => a - b);
+      return mean(sample.map((r) => {
+        let low = 0, high = durations.length;
+        while (low < high) {
+          const mid = Math.floor((low + high) / 2);
+          if (durations[mid] <= r.planned_duration_days!) low = mid + 1; else high = mid;
+        }
+        return ((durations.length - low) / durations.length - Number(r.duration_days > r.planned_duration_days!)) ** 2;
+      }));
+    };
     const calBrier = brier(probCal, training), testBrier = brier(probTest, training);
     const calBase = brier(probCal, baselineRows), testBase = brier(probTest, baselineRows);
     const covered = [probCal, probTest].every((sample) => Math.min(...sample.map((r) => r.planned_duration_days!)) <= domain.lower
@@ -147,17 +175,38 @@ export function validateArtifact(value: unknown, now: Date): Artifact {
   const evaluated = Date.parse(artifact.cutoffs.evaluation);
   if (evaluated > now.getTime() || now.getTime() - evaluated > 180 * DAY) throw new Error("model future or expired");
   if (sha256(canonical(artifact.observations)) !== artifact.dataset_hash) throw new Error("dataset hash mismatch");
+  if (sha256(canonical(artifact.provenance)) !== artifact.provenance_hash) throw new Error("provenance hash mismatch");
+  const sources = artifact.provenance.sources;
+  if (new Set(sources.map((s) => s.id)).size !== sources.length) throw new Error("duplicate audit source");
+  const sourceHashes = new Set(sources.map((s) => s.sha256));
+  const reviews = new Map(artifact.provenance.reviews.map((r) => [r.job_id, r]));
+  if (reviews.size !== artifact.provenance.reviews.length || reviews.size !== artifact.observations.length) throw new Error("incomplete review audit");
+  for (const source of sources) {
+    if (!(source.published_at <= source.received_at && source.received_at <= source.reviewed_at && source.reviewed_at <= artifact.cutoffs.evaluation)) throw new Error("source audit times");
+  }
+  for (const row of artifact.observations) {
+    const review = reviews.get(row.job_id);
+    if (!row.evidence_hashes.every((h) => sourceHashes.has(h)) || review?.decision !== "accepted" || review.reviewed_at > row.available_at) throw new Error("unbound authorization/review");
+  }
   const computed = evaluate(artifact.observations, artifact.cutoffs);
   if (!sameMetrics(artifact.evaluation, computed)) throw new Error("unsupported evaluation claims");
   return { ...artifact, evaluation: computed };
 }
 
-export type LoadedModel = { artifact: Artifact; version: string } | null;
-export async function loadApprovedModel(env: { OUTCOMES_MODEL_PATH?: string; OUTCOMES_APPROVED_SHA256?: string }, now = new Date()): Promise<LoadedModel> {
-  const path = env.OUTCOMES_MODEL_PATH, approved = env.OUTCOMES_APPROVED_SHA256;
-  if (!path || !isAbsolute(path) || !approved || !hash.safeParse(approved).success) return null;
+export type LoadedModel = { artifact: Artifact; version: string; approved_at: string } | null;
+export type ModelEnvironment = { OUTCOMES_MODEL_PATH?: string; OUTCOMES_APPROVED_SHA256?: string; OUTCOMES_APPROVED_AT?: string };
+export async function loadApprovedModel(env: ModelEnvironment, now = new Date()): Promise<LoadedModel> {
+  const path = env.OUTCOMES_MODEL_PATH, approved = env.OUTCOMES_APPROVED_SHA256, approvedAt = env.OUTCOMES_APPROVED_AT;
+  if (!path || !isAbsolute(path) || !approved || !hash.safeParse(approved).success || !approvedAt || !stamp.safeParse(approvedAt).success || Date.parse(approvedAt) > now.getTime()) return null;
   try {
     const resolved = await realpath(path);
+    for (let directory = dirname(resolved);;) {
+      const gitPresent = await access(join(directory, ".git")).then(() => true, () => false);
+      if (gitPresent) return null;
+      const parent = dirname(directory);
+      if (parent === directory) break;
+      directory = parent;
+    }
     // Configuration is server-controlled; no request can supply a filename or hash.
     const file = await open(resolved, "r");
     let raw: Buffer;
@@ -175,8 +224,29 @@ export async function loadApprovedModel(env: { OUTCOMES_MODEL_PATH?: string; OUT
       raw = buffer.subarray(0, offset);
     } finally { await file.close(); }
     if (sha256(raw) !== approved) return null;
-    return { artifact: validateArtifact(JSON.parse(raw.toString("utf8")), now), version: approved };
+    const artifact = validateArtifact(JSON.parse(raw.toString("utf8")), now);
+    if (approvedAt < artifact.cutoffs.evaluation) return null;
+    return { artifact, version: approved, approved_at: approvedAt };
   } catch { return null; } // Never expose source paths, private values or parser diagnostics.
+}
+
+export function createModelLoader() {
+  let cached: { key: string; checked_at: number; pending: Promise<LoadedModel> } | null = null;
+  return async (env: ModelEnvironment, now = new Date()): Promise<LoadedModel> => {
+    if (!env.OUTCOMES_MODEL_PATH || !env.OUTCOMES_APPROVED_SHA256 || !env.OUTCOMES_APPROVED_AT) { cached = null; return null; }
+    try {
+      const path = await realpath(env.OUTCOMES_MODEL_PATH), info = await stat(path);
+      const key = JSON.stringify([path, env.OUTCOMES_APPROVED_SHA256, env.OUTCOMES_APPROVED_AT, info.ino, info.size, info.mtimeMs, info.ctimeMs]);
+      if (cached?.key !== key) cached = { key, checked_at: now.getTime(), pending: loadApprovedModel(env, now) };
+      let loaded = await cached.pending;
+      if (!loaded && now.getTime() - cached.checked_at >= 30_000) {
+        cached = { key, checked_at: now.getTime(), pending: loadApprovedModel(env, now) };
+        loaded = await cached.pending;
+      }
+      if (loaded && (now.getTime() - Date.parse(loaded.artifact.cutoffs.evaluation) > 180 * DAY || Date.parse(loaded.approved_at) > now.getTime())) return null;
+      return loaded;
+    } catch { cached = null; return null; }
+  };
 }
 
 export type PredictionResponse = {
@@ -184,7 +254,8 @@ export type PredictionResponse = {
   reason: string; request: PredictRequest | null;
   prediction: { duration_days: { lower: number; median: number; upper: number }; delay_probability: number | null } | null;
   support: { training: number; calibration: number; holdout: number } | null;
-  evaluation: Evaluation | null; model_version: string | null; limitations: string[];
+  evaluation: { passed: true; evaluated_at: string; mae_days: number; baseline_mae_days: number; interval_coverage: number } | null;
+  model_version: string | null; limitations: string[];
   probability_evidence: { numerator: number; denominator: number; interval_95: { lower: number; upper: number }; interpretation: string } | null;
 };
 const LIMITATIONS = ["Physical construction start to physical construction complete, in calendar days; not an in-service milestone.",
@@ -197,7 +268,7 @@ export function predict(loaded: LoadedModel, input: unknown, now = new Date()): 
   if (!parsed.success || Date.parse(parsed.data.as_of) > now.getTime()) return response;
   if (!loaded) return { ...response, status: "unavailable", reason: "No current, externally approved model from verified actual job histories is available." };
   const { artifact, version } = loaded, request = parsed.data;
-  if (request.as_of < artifact.cutoffs.evaluation || Date.parse(request.as_of) - Date.parse(artifact.cutoffs.evaluation) > 180 * DAY) {
+  if (request.as_of < loaded.approved_at || request.as_of < artifact.cutoffs.evaluation || Date.parse(request.as_of) - Date.parse(artifact.cutoffs.evaluation) > 180 * DAY) {
     return { ...response, status: "insufficient_evidence", reason: "This model cannot support the requested decision time." };
   }
   const entry = artifact.evaluation[cohort(request)];
@@ -216,7 +287,9 @@ export function predict(loaded: LoadedModel, input: unknown, now = new Date()): 
   }
   return { ...response, status: "predicted", reason: "Cohort passed the declared temporal holdout gates.",
     prediction: { duration_days: entry.interval, delay_probability: probability },
-    support: { training: entry.training, calibration: entry.calibration, holdout: entry.holdout }, evaluation: entry,
+    support: { training: entry.training, calibration: entry.calibration, holdout: entry.holdout },
+    evaluation: { passed: true, evaluated_at: artifact.cutoffs.evaluation, mae_days: Math.round(entry.metrics!.mae_days),
+      baseline_mae_days: Math.round(entry.metrics!.baseline_mae_days), interval_coverage: Math.round(entry.metrics!.interval_coverage * 20) / 20 },
     model_version: version, probability_evidence: probabilityEvidence,
     limitations: [...LIMITATIONS, ...(probability === null ? ["Duration-overrun probability withheld: a supported confirmed baseline and passing probability evaluation are required."] : ["Planned duration is user-provided, not independently verified."])] };
 }

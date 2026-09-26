@@ -14,7 +14,7 @@
         "component_id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Component Id",
           "type": "string"
         },
@@ -35,14 +35,14 @@
         "id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Id",
           "type": "string"
         },
         "job_id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Job Id",
           "type": "string"
         },
@@ -96,7 +96,7 @@
         "source_id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Source Id",
           "type": "string"
         }
@@ -114,14 +114,14 @@
         "company_id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Company Id",
           "type": "string"
         },
         "component_id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Component Id",
           "type": "string"
         },
@@ -139,28 +139,28 @@
         "id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Id",
           "type": "string"
         },
         "job_type": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Job Type",
           "type": "string"
         },
         "project_lineage": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Project Lineage",
           "type": "string"
         },
         "region": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Region",
           "type": "string"
         }
@@ -199,7 +199,7 @@
         "job_id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Job Id",
           "type": "string"
         },
@@ -216,7 +216,7 @@
         "reviewer": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Reviewer",
           "type": "string"
         },
@@ -244,21 +244,21 @@
         "authorization_ref": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Authorization Ref",
           "type": "string"
         },
         "id": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Id",
           "type": "string"
         },
         "lineage": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Lineage",
           "type": "string"
         },
@@ -275,7 +275,7 @@
         "publisher": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Publisher",
           "type": "string"
         },
@@ -290,7 +290,7 @@
         "reviewer": {
           "maxLength": 120,
           "minLength": 1,
-          "pattern": "^[\\w .:/-]+$",
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
           "title": "Reviewer",
           "type": "string"
         },

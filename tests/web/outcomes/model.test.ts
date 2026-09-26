@@ -5,7 +5,7 @@ import { readFile, mkdtemp, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { basename, join, resolve, sep } from "node:path";
 import test from "node:test";
-import { canonical, evaluate, loadApprovedModel, modelStatus, predict, PredictRequestSchema, validateArtifact } from "../../../web/lib/outcomes/model.ts";
+import { canonical, createModelLoader, evaluate, loadApprovedModel, modelStatus, predict, PredictRequestSchema, validateArtifact } from "../../../web/lib/outcomes/model.ts";
 
 const fixture = JSON.parse(await readFile(new URL("./synthetic-model.testfixture.json", import.meta.url), "utf8"));
 const NOW = new Date("2023-06-02T00:00:00Z");
@@ -13,7 +13,7 @@ const request = { job_type: "synthetic-type", company_id: "synthetic-company", r
 const sha = (value: string) => createHash("sha256").update(value).digest("hex");
 // Only this isolated test harness simulates the type of an externally approved real-history artifact.
 const candidate = () => ({ ...structuredClone(fixture), purpose: "authorized_actual_history" });
-const loaded = () => ({ artifact: validateArtifact(candidate(), NOW), version: "a".repeat(64) });
+const loaded = () => ({ artifact: validateArtifact(candidate(), NOW), version: "a".repeat(64), approved_at: "2023-06-02T00:00:00Z" });
 
 test("Python-built test fixture has exactly reproducible TypeScript hashes and held-out metrics", () => {
   const model = candidate();
@@ -40,11 +40,19 @@ test("external deployment hash pin is required even for an internally consistent
     const path = join(directory, "synthetic-only.json"), raw = JSON.stringify(candidate());
     await writeFile(path, raw);
     assert.equal(await loadApprovedModel({ OUTCOMES_MODEL_PATH: path }, NOW), null);
-    assert.equal(await loadApprovedModel({ OUTCOMES_MODEL_PATH: path, OUTCOMES_APPROVED_SHA256: "b".repeat(64) }, NOW), null);
-    const approved = await loadApprovedModel({ OUTCOMES_MODEL_PATH: path, OUTCOMES_APPROVED_SHA256: sha(raw) }, NOW);
+    assert.equal(await loadApprovedModel({ OUTCOMES_MODEL_PATH: path, OUTCOMES_APPROVED_SHA256: "b".repeat(64), OUTCOMES_APPROVED_AT: NOW.toISOString().replace(".000Z", "Z") }, NOW), null);
+    const env = { OUTCOMES_MODEL_PATH: path, OUTCOMES_APPROVED_SHA256: sha(raw), OUTCOMES_APPROVED_AT: "2023-06-02T00:00:00Z" };
+    const approved = await loadApprovedModel(env, NOW);
     assert.ok(approved);
+    const cached = createModelLoader();
+    const first = await cached(env, NOW);
+    assert.ok(first);
+    assert.equal(await cached(env, NOW), first);
+    assert.equal(await cached(env, new Date("2024-01-01T00:00:00Z")), null);
+    assert.equal(await cached({ ...env, OUTCOMES_APPROVED_AT: "2024-01-01T00:00:00Z" }, NOW), null);
     await writeFile(path, raw + " ");
-    assert.equal(await loadApprovedModel({ OUTCOMES_MODEL_PATH: path, OUTCOMES_APPROVED_SHA256: sha(raw) }, NOW), null);
+    assert.equal(await cached(env, NOW), null);
+    assert.equal(await loadApprovedModel(env, NOW), null);
   } finally {
     const target = resolve(directory);
     if (!target.startsWith(resolve(tmpdir()) + sep) || !basename(target).startsWith("gridbridge-synthetic-f35-")) throw new Error("unsafe test cleanup path");
@@ -57,6 +65,8 @@ test("duration and overrun probability remain distinct and baseline confirmation
   assert.equal(duration.status, "predicted");
   assert.deepEqual(duration.prediction?.duration_days, { lower: 28, median: 30, upper: 32 });
   assert.equal(duration.prediction?.delay_probability, null);
+  assert.ok(!JSON.stringify(duration.evaluation).includes("domain"));
+  assert.ok(!JSON.stringify(duration.evaluation).includes("brier"));
   assert.equal(predict(loaded(), { ...request, planned_duration_days: 40 }, NOW).status, "invalid");
   assert.equal(PredictRequestSchema.safeParse({ ...request, planned_duration_confirmed_at_as_of: true }).success, false);
   const supported = predict(loaded(), { ...request, planned_duration_days: 40, planned_duration_confirmed_at_as_of: true }, NOW);
@@ -87,6 +97,7 @@ test("future, expired, hindsight and unknown-cohort predictions abstain without 
   assert.throws(() => validateArtifact(candidate(), new Date("2024-01-01T00:00:00Z")));
   assert.equal(predict(loaded(), { ...request, as_of: "2024-01-01T00:00:00Z" }, NOW).status, "invalid");
   assert.equal(predict(loaded(), { ...request, as_of: "2022-01-01T00:00:00Z" }, NOW).status, "insufficient_evidence");
+  assert.equal(predict(loaded(), { ...request, as_of: "2023-06-01T12:00:00Z" }, NOW).status, "insufficient_evidence");
   const unknown = predict(loaded(), { ...request, company_id: "unknown" }, NOW);
   assert.equal(unknown.status, "insufficient_evidence");
   assert.equal(unknown.support, null);
@@ -95,4 +106,5 @@ test("future, expired, hindsight and unknown-cohort predictions abstain without 
     assert.equal(predict(loaded(), { ...request, planned_duration_days: bad, planned_duration_confirmed_at_as_of: true }, NOW).status, "invalid");
   }
   assert.equal(predict(loaded(), { ...request, model_path: "/private/model.json" }, NOW).status, "invalid");
+  for (const company of ["a\u0301", "a\u203f", "é"]) assert.equal(predict(loaded(), { ...request, company_id: company }, NOW).status, "invalid");
 });

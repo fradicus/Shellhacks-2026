@@ -6,7 +6,7 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
-from outcomes.contracts import Bundle, Observation, Source, day, timestamp
+from outcomes.contracts import Bundle, Observation, Provenance, Source, day, timestamp
 
 MAX_SOURCE_BYTES = 16 * 1024 * 1024
 
@@ -57,6 +57,20 @@ def pointer(document, path: str):
 
 def available(source: Source) -> str:
     return max(source.published_at, source.received_at, source.reviewed_at)
+
+
+def provenance_for(bundle: Bundle, accepted: list[Observation]) -> Provenance:
+    path_free = bundle.model_dump()
+    for source in path_free["sources"]:
+        del source["local_path"]
+    eligible = {row.job_id for row in accepted}
+    return Provenance.model_validate(
+        {
+            "import_sha256": digest(path_free),
+            "sources": sorted(path_free["sources"], key=lambda source: source["id"]),
+            "reviews": sorted([r for r in path_free["reviews"] if r["job_id"] in eligible], key=lambda review: review["job_id"]),
+        }
+    )
 
 
 def validate_bundle(bundle: Bundle, *, as_of: str, allow_test: bool = False) -> tuple[list[Observation], list[dict]]:

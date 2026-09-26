@@ -7,7 +7,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from outcomes.contracts import Artifact, Bundle, Cutoffs
-from outcomes.importer import read_bounded, strict_json, validate_bundle
+from outcomes.importer import MAX_SOURCE_BYTES, provenance_for, read_bounded, strict_json, validate_bundle
 from outcomes.model import build_artifact, validate_artifact
 
 REPO = Path(__file__).resolve().parents[2]
@@ -42,10 +42,12 @@ def main() -> None:
         if cutoffs.evaluation > now:
             raise ValueError("future evaluation cutoff")
         rows, quarantine = validate_bundle(bundle, as_of=cutoffs.evaluation)
-        artifact = build_artifact(rows, cutoffs, purpose=bundle.purpose)
+        artifact = build_artifact(rows, cutoffs, purpose=bundle.purpose, provenance=provenance_for(bundle, rows))
         validate_artifact(artifact, now=now)
-        output.mkdir(parents=True, exist_ok=False)
         raw = (artifact.model_dump_json(indent=2) + "\n").encode("utf-8")
+        if len(raw) > MAX_SOURCE_BYTES:
+            raise ValueError("model exceeds the 16 MiB runtime artifact budget")
+        output.mkdir(parents=True, exist_ok=False)
         (output / "model.json").write_bytes(raw)
         (output / "quarantine.json").write_text(json.dumps(quarantine, indent=2) + "\n", encoding="utf-8")
         contracts = {"import": Bundle.model_json_schema(), "model": Artifact.model_json_schema()}

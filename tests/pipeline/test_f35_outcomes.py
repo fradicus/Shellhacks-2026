@@ -9,9 +9,45 @@ import pytest
 from pydantic import ValidationError
 
 from outcomes.__main__ import external_path
-from outcomes.contracts import Bundle, Cutoffs, Observation
-from outcomes.importer import digest, strict_json, validate_bundle
-from outcomes.model import build_artifact, evaluate, validate_artifact
+from outcomes.contracts import Bundle, Cutoffs, Observation, Provenance
+from outcomes.importer import digest, provenance_for, strict_json, validate_bundle
+from outcomes.model import build_artifact as build_candidate
+from outcomes.model import evaluate, validate_artifact
+
+
+def build_artifact(rows, cutoffs, *, purpose):
+    """Synthetic authorization metadata, isolated to this test fixture."""
+    provenance = Provenance.model_validate(
+        {
+            "import_sha256": "c" * 64,
+            "sources": [
+                {
+                    "id": "synthetic-source",
+                    "publisher": "synthetic-publisher",
+                    "lineage": "synthetic-source-lineage",
+                    "sha256": "a" * 64,
+                    "published_at": "2020-01-01T00:00:00Z",
+                    "received_at": "2020-01-01T00:00:00Z",
+                    "reviewed_at": "2020-01-01T00:00:00Z",
+                    "authorization_ref": "synthetic-only",
+                    "reviewer": "test",
+                }
+            ],
+            "reviews": [
+                {
+                    "job_id": row.job_id,
+                    "decision": "accepted",
+                    "reviewed_at": row.available_at,
+                    "reviewer": "test",
+                    "reason": "Synthetic fixture only",
+                    "start_semantics": "physical_construction_start",
+                    "completion_semantics": "physical_construction_complete",
+                }
+                for row in sorted(rows, key=lambda r: r.job_id)
+            ],
+        }
+    )
+    return build_candidate(rows, cutoffs, purpose=purpose, provenance=provenance)
 
 
 def synthetic_observations():
@@ -236,3 +272,24 @@ def test_observation_digest_is_ordered_and_reproducible():
     second = build_artifact(list(reversed(rows)), synthetic_cutoffs(), purpose="synthetic_test_only")
     assert first == second
     assert first.dataset_hash == digest([r.model_dump() for r in first.observations])
+
+
+def test_authorization_and_review_changes_are_bound_without_local_paths(synthetic_bundle):
+    bundle = Bundle.model_validate(synthetic_bundle)
+    rows, _ = validate_bundle(bundle, as_of="2023-06-01T00:00:00Z", allow_test=True)
+    original = provenance_for(bundle, rows)
+    changed = bundle.model_copy(deep=True)
+    changed.sources[0].authorization_ref = "authorization-changed"
+    assert digest(original.model_dump()) != digest(provenance_for(changed, rows).model_dump())
+    changed = bundle.model_copy(deep=True)
+    changed.reviews[0].reason = "review changed"
+    assert digest(original.model_dump()) != digest(provenance_for(changed, rows).model_dump())
+    assert "local_path" not in original.model_dump_json()
+
+
+@pytest.mark.parametrize("identifier", ["a\u0301", "a\u203f", "é"])
+def test_identifier_keys_use_the_same_explicit_ascii_contract_as_web(identifier):
+    data = synthetic_observations()[0].model_dump()
+    data["company_id"] = identifier
+    with pytest.raises(ValidationError):
+        Observation.model_validate(data)

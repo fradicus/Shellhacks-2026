@@ -1,7 +1,10 @@
 import "server-only";
-import { loadApprovedModel } from "./model";
+import type { LoadedModel } from "./model";
+import { createModelLoader } from "./model";
 
-export const loadOutcomeModel = () => loadApprovedModel({
-  OUTCOMES_MODEL_PATH: process.env.OUTCOMES_MODEL_PATH,
-  OUTCOMES_APPROVED_SHA256: process.env.OUTCOMES_APPROVED_SHA256,
-});
+const loadCached = createModelLoader();
+export async function loadOutcomeModel(): Promise<LoadedModel> {
+  const env = { OUTCOMES_MODEL_PATH: process.env.OUTCOMES_MODEL_PATH,
+    OUTCOMES_APPROVED_SHA256: process.env.OUTCOMES_APPROVED_SHA256, OUTCOMES_APPROVED_AT: process.env.OUTCOMES_APPROVED_AT };
+  return loadCached(env);
+}
