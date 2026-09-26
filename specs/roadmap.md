@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16]
+  claude-local: [F00, F05, F11, F14, F16, F19]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18]
 frozen_paths:
   - schemas/
@@ -94,6 +94,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F16 | Gemini workbench | B | frontend-engineer | 3 | F03, F06 | allowed |
 | F17 | Impact scenario (stretch) | B | technical-lead | 3 | F11 | allowed |
 | F18 | Status, acceptance, submission draft, STOP | C | ceo | 4 | none | never |
+| F19 | Time view (Three.js), added after run 1 by the human | B | frontend-engineer | 3 | F05, F06 | allowed |
 
 F18 starts at 0:00 alongside F00 and merges
 status updates as `[F18] status HH:MM` parts. At the user's expedited-completion request, F18 may publish its final report, `STOP` and `changes/F18.md` before the scheduled `report` gate once all non-stretch implementation features and core corrections are verified complete (or an allowed cut is explicitly recorded), the final integration checks pass, and deferred live services are stated clearly. Otherwise the scheduled report gate remains the deadline. F18 itself is the final reporting step; optional F17 need not start. This does not waive merge checks or permit an unresolved core defect to be called complete.
