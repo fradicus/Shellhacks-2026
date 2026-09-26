@@ -8,9 +8,9 @@
   --sheet: #bfe9ff;
   --glass: rgba(9, 12, 19, 0.74);
   --edge: rgba(190, 225, 255, 0.1);
-  --display: var(--tv-display), "Iowan Old Style", Georgia, serif;
-  --sans: var(--tv-sans), var(--font-sans);
-  --mono: var(--tv-mono), var(--font-mono);
+  --display: var(--font-display);
+  --sans: var(--font-sans);
+  --mono: var(--font-mono);
 
   position: relative;
   max-width: none;
@@ -124,8 +124,8 @@
 .l_gap .labelInner {
   transform: translate(16px, -50%);
   font-family: var(--display);
-  font-style: italic;
-  font-size: 34px;
+  font-weight: 800;
+  font-size: 40px;
   line-height: 1;
   color: var(--ink);
   text-shadow:
@@ -214,14 +214,14 @@
 .title {
   margin: 0;
   font-family: var(--display);
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 0.92;
-  letter-spacing: -0.015em;
+  font-weight: 800;
+  font-size: 66px;
+  line-height: 0.88;
+  letter-spacing: 0.005em;
   color: var(--ink);
 }
 .title em {
-  font-style: italic;
+  font-style: normal;
   background: linear-gradient(180deg, #ffffff 10%, var(--sheet) 90%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -256,7 +256,8 @@
 .stats dd {
   margin: 0;
   font-family: var(--display);
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
@@ -493,9 +494,9 @@
 }
 .figures strong {
   font-family: var(--display);
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 0.9;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 0.88;
   font-variant-numeric: tabular-nums;
 }
 .figures span {
@@ -517,9 +518,9 @@
 .proj h2 {
   margin: 2px 0 4px;
   font-family: var(--display);
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 1.12;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.04;
   color: var(--ink);
 }
 .proj p {
@@ -994,9 +995,10 @@
 }
 .captionText {
   margin: 0;
-  font-family: var(--display);
-  font-size: 23px;
-  line-height: 1.22;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.45;
   color: var(--ink);
   text-wrap: pretty;
 }

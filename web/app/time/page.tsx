@@ -1,14 +1,10 @@
-import { Instrument_Sans, Instrument_Serif, Martian_Mono } from "next/font/google";
 import { TimeView, type TimePair, type TimeProject } from "@/components/time/TimeView";
 import { ErrorState } from "@/components/ui";
 import { analysisDate, getMatches, getProjects, isFixtureMode } from "@/lib/data";
 import { isUnavailable, type Project } from "@/lib/types";
 
-const display = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["normal", "italic"], variable: "--tv-display" });
-const sans = Instrument_Sans({ subsets: ["latin"], variable: "--tv-sans" });
-const mono = Martian_Mono({ subsets: ["latin"], variable: "--tv-mono" });
 
-export const metadata = { title: "Time view · GridBridge" };
+export const metadata = { title: "Overlaps · GridBridge" };
 
 export default async function TimePage() {
   const [matches, projects] = await Promise.all([getMatches({ limit: 500 }), getProjects()]);
@@ -50,8 +46,6 @@ export default async function TimePage() {
   }));
 
   return (
-    <div className={`${display.variable} ${sans.variable} ${mono.variable}`}>
-      <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} />
-    </div>
+    <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} />
   );
 }
