@@ -1,0 +1,3 @@
+# Response hashes bind exact HTTP bytes on both Windows and Unix checkouts.
+/raw/*.json -text linguist-generated=true
+/substations.json linguist-generated=true

@@ -1,0 +1,140 @@
+{
+  "attribution": {
+    "license": "Open Data Commons Open Database License (ODbL) 1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1.0/",
+    "notice": "Data © OpenStreetMap contributors",
+    "source_url": "https://www.openstreetmap.org/copyright"
+  },
+  "bboxes": {
+    "infrastructure": [
+      30.3,
+      -85.7,
+      35.3,
+      -78.5
+    ],
+    "line": [
+      31.8,
+      -82.6,
+      33.9,
+      -80.6
+    ]
+  },
+  "counts": {
+    "conflicting_duplicates": 0,
+    "duplicate_elements": 0,
+    "excluded_power_values": {
+      "pole;switch": 3,
+      "switchgear": 16
+    },
+    "infrastructure_elements": 9548,
+    "line_elements": 2518,
+    "missing_coordinates": 0,
+    "missing_name": 6911,
+    "missing_operator": 6701,
+    "normalized": 9529,
+    "with_operator": 2828
+  },
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "finished_at": "2026-09-26T11:13:19.644673Z",
+  "landmark_verification": {
+    "expected": 3,
+    "items": [
+      {
+        "expected_lat": 33.6601,
+        "expected_lon": -82.1959,
+        "keyword": "THURMOND",
+        "nearest_any": {
+          "distance_mi": 0.0025836367248602394,
+          "name": "Thurmond Substation",
+          "osm_id": "way/52102019",
+          "power": "substation"
+        },
+        "nearest_named_distance_mi": 0.0025836367248602394,
+        "nearest_named_osm_id": "way/52102019",
+        "status": "matched"
+      },
+      {
+        "expected_lat": 32.3521,
+        "expected_lon": -81.1751,
+        "keyword": "MCINTOSH",
+        "nearest_any": {
+          "distance_mi": 0.0013329433808489492,
+          "name": "McIntosh Substation",
+          "osm_id": "way/121624352",
+          "power": "substation"
+        },
+        "nearest_named_distance_mi": 0.0013329433808489492,
+        "nearest_named_osm_id": "way/121624352",
+        "status": "matched"
+      },
+      {
+        "expected_lat": 32.3338,
+        "expected_lon": -81.0325,
+        "keyword": "OKATIE",
+        "nearest_any": {
+          "distance_mi": 0.006727722209771849,
+          "name": null,
+          "osm_id": "way/1064022697",
+          "power": "substation"
+        },
+        "nearest_named_distance_mi": null,
+        "nearest_named_osm_id": null,
+        "status": "missing_named_candidate"
+      }
+    ],
+    "matched": 2,
+    "status": "partial"
+  },
+  "normalization_version": "osm-inventory-v1",
+  "queries": [
+    {
+      "attempts": 1,
+      "bbox": [
+        30.3,
+        -85.7,
+        35.3,
+        -78.5
+      ],
+      "bytes": 2370678,
+      "cache_hit": true,
+      "depth": 0,
+      "elements": 9548,
+      "kind": "infrastructure",
+      "osm_base_timestamp": "2026-09-26T11:07:02Z",
+      "query_path": "queries/infrastructure-full.overpassql",
+      "query_sha256": "23992ea9ee033ef7da9f1068e25bef7b562e908fff0bafa987f2caa4f431ce83",
+      "raw_path": "raw/infrastructure-full.json",
+      "retrieved_at": "2026-09-26T11:09:43.913340Z",
+      "sha256": "e2230f236988ec256ef3ff336b661f83e0f65e64541106083fe0b12ada717c30",
+      "status": "complete",
+      "suffix": "full"
+    },
+    {
+      "attempts": 1,
+      "bbox": [
+        31.8,
+        -82.6,
+        33.9,
+        -80.6
+      ],
+      "bytes": 475457,
+      "cache_hit": true,
+      "depth": 0,
+      "elements": 2518,
+      "kind": "line",
+      "osm_base_timestamp": "2026-09-26T11:08:02Z",
+      "query_path": "queries/line-full.overpassql",
+      "query_sha256": "5e88caca9ee4e4be5b154d25b3415d5b83342ba4479286da729910faefe937b1",
+      "raw_path": "raw/line-full.json",
+      "retrieved_at": "2026-09-26T11:09:47.195020Z",
+      "sha256": "2b50f3cd26da6b9bf2ce30286dcbc29fc4da4a80a94d4126b8ab4b91aeea6f38",
+      "status": "complete",
+      "suffix": "full"
+    }
+  ],
+  "requests_made": 0,
+  "retrieval_requests": 2,
+  "started_at": "2026-09-26T11:13:19.368060Z",
+  "status": "complete",
+  "total_raw_bytes": 2846135
+}
