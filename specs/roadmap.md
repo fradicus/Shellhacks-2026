@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F06, F11, F14, F16]
-  codex-local: [F01, F02, F03, F04, F07, F08, F09, F10, F12, F13, F15, F17, F18]
+  claude-local: [F00, F05, F11, F14, F16]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18]
 frozen_paths:
   - schemas/
   - scripts/
@@ -54,7 +54,7 @@ For a shorter run, scale every `at` value proportionally in the pre-flight commi
 - **Local:** Claude Code and Codex use `local_workers`, adopting each feature's named role/lane. One implementation feature per session; the F18 owner also handles short reporting checkpoints in a separate worktree.
 - **Hybrid:** local sessions own only IDs listed in `local_workers`; Paperclip owns the remaining features through the existing role/lane assignments. Trim the local map before launch. Pause the old owner before any reassignment.
 
-The launch split gives Claude the bootstrap and the app (F00, F05, F06, F11, F14, F16), and Codex the data, QA, release and reporting. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
+The launch split gave Claude the bootstrap and the app (F00, F05, F06, F11, F14, F16), and Codex the data, QA, release and reporting. After the user confirmed the Claude worker had stopped, C8 transferred remaining F06 corrections to Codex in the same technical-lead role; the original F06 delivery remains credited to its author. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
 
 ## Phase 0: bootstrap (lane B alone)
 Skeleton, contracts, fixtures, the canonical matcher and golden test, CI, the ownership gate, placeholder routes. After this, everyone works in parallel without touching shared files.
@@ -96,7 +96,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F18 | Status, acceptance, submission draft, STOP | C | ceo | 4 | none | never |
 
 F18 starts at 0:00 alongside F00 and merges
-status updates as `[F18] status HH:MM` parts and adds `changes/F18.md` only at the `report` gate.
+status updates as `[F18] status HH:MM` parts. At the user's expedited-completion request, F18 may publish its final report, `STOP` and `changes/F18.md` before the scheduled `report` gate once all non-stretch implementation features and core corrections are verified complete (or an allowed cut is explicitly recorded), the final integration checks pass, and deferred live services are stated clearly. Otherwise the scheduled report gate remains the deadline. F18 itself is the final reporting step; optional F17 need not start. This does not waive merge checks or permit an unresolved core defect to be called complete.
 
 ## Critical path
 F00 → F01 + F02 (+F04) → F09 → F10 → F12, with F05 → F11 and F06 in parallel. If F09 is late at 4:30, geo
@@ -104,3 +104,5 @@ narrows to the border-area projects (see F09 Defaults) rather than miss F10.
 
 ## Post-run (humans, morning)
 Read `reports/final.md`. Review `specs/decisions/*`, especially 000. Check the domain and the Devpost submission. Merge nothing overnight-generated that you haven't looked at into the event submission unless it's already on `main`.
+
+
