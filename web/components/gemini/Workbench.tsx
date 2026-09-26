@@ -183,7 +183,7 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
               return (
                 <tr key={f}>
                   <th scope="row">{label}</th>
-                  <td>
+                  <td data-label="Gemini">
                     {!ext ? (
                       <span className={s.muted}>Not extracted</span>
                     ) : fld ? (
@@ -196,8 +196,8 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
                       <span className={s.muted}>—</span>
                     )}
                   </td>
-                  <td>{fmt(f, det)}</td>
-                  <td>
+                  <td data-label="Deterministic (F01)">{fmt(f, det)}</td>
+                  <td data-label="Result">
                     {cmp ? (
                       <Badge tone={cmp === "match" && fld && !fld.valid ? "warn" : (COMPARISON_TONE[cmp] ?? "neutral")}>
                         {cmp === "match" && fld && !fld.valid ? "match, invalid cite" : cmp}

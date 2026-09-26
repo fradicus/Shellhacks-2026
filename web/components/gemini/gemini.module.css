@@ -66,9 +66,23 @@
   gap: 8px 16px;
 }
 
+.picker label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  max-width: 100%;
+  font-size: 12px;
+  color: var(--muted);
+}
+
 .picker select {
   font: inherit;
+  font-size: 14px;
+  color: var(--text);
   padding: 4px 6px;
+  width: 100%;
+  min-width: 0;
   max-width: 100%;
 }
 
@@ -178,5 +192,38 @@
   }
   .text {
     max-height: 300px;
+  }
+  .picker {
+    flex-direction: column;
+  }
+}
+
+/* Narrow screens: each field becomes a stacked block instead of four squeezed columns. */
+@media (max-width: 700px) {
+  .fields thead {
+    display: none;
+  }
+  .fields tr {
+    display: block;
+    border-top: 1px solid var(--border);
+    padding: 6px 0;
+  }
+  .fields tbody th,
+  .fields td,
+  .fields td:last-child {
+    display: block;
+    width: auto;
+    border-top: none;
+    padding: 2px 0;
+    white-space: normal;
+  }
+  .fields tbody th {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .fields td::before {
+    content: attr(data-label) ": ";
+    color: var(--muted);
+    font-size: 12px;
   }
 }
