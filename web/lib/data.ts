@@ -16,6 +16,7 @@ import type {
   PairDetail,
   Project,
   Result,
+  Source,
   View,
   VersionChange,
   Brief,
@@ -83,21 +84,30 @@ const fixtureApi = {
       .map((m) => ({ ...m, project_a: byKey.get(m.a) ?? null, project_b: byKey.get(m.b) ?? null }));
   },
   async pair(id: string): Promise<PairDetail | null> {
-    const [matches, projects, briefs, changes] = await Promise.all([
+    const [matches, projects, briefs, changes, sources] = await Promise.all([
       fixture<Match>("matches"),
       fixtureProjects(true),
       fixture<Brief>("briefs"),
       fixture<VersionChange>("version_changes"),
+      fixture<Source>("sources"),
     ]);
     const match = matches.find((m) => m._id === id);
     if (!match) return null;
     const byKey = new Map(projects.map((p) => [p.project_key, p]));
+    const a = byKey.get(match.a) ?? null;
+    const b = byKey.get(match.b) ?? null;
+    const version_changes = changes.filter((c) => c.project_key === match.a || c.project_key === match.b);
+    const cited = new Set([
+      ...[a, b].flatMap((p) => (p ? [p.source.source_id] : [])),
+      ...version_changes.flatMap((c) => [c.from_source, c.to_source]),
+    ]);
     return {
       match,
-      a: byKey.get(match.a) ?? null,
-      b: byKey.get(match.b) ?? null,
-      brief: briefs.find((b) => b.match_id === id && b.validation === "passed") ?? null,
-      version_changes: changes.filter((c) => c.project_key === match.a || c.project_key === match.b),
+      a,
+      b,
+      brief: briefs.find((x) => x.match_id === id && x.validation === "passed") ?? null,
+      version_changes,
+      sources: sources.filter((s) => cited.has(s._id)),
     };
   },
 };

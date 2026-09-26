@@ -69,6 +69,25 @@ export interface Project {
   geo?: { type: "Point"; coordinates: [number, number] } | null;
   /** Joined from locations (API and fixture mode both join them). */
   endpoints?: Location[];
+  /** Endpoint names as filed (F01/F02), kept separately from located endpoints by the loader. */
+  filed_endpoints?: FiledEndpoint[];
+  /** Per-field provenance from the parser: page and verbatim quote. */
+  field_evidence?: Record<string, FieldEvidence>;
+  need?: string | null;
+  cost_usd?: number | null;
+  raw_text?: string | null;
+  quality_flags?: string[];
+}
+
+export interface FiledEndpoint {
+  name: string;
+  raw?: string;
+  norm?: string;
+}
+
+export interface FieldEvidence {
+  page: number | null;
+  quote: string;
 }
 
 export interface Match {
@@ -174,6 +193,8 @@ export interface PairDetail {
   brief: Brief | null;
   version_changes: VersionChange[];
   reviews?: Review[];
+  /** Source documents cited by either project or by the version changes. */
+  sources?: Source[];
 }
 
 export interface Unavailable {
