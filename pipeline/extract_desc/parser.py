@@ -61,6 +61,15 @@ WORK_ONLY_RE = re.compile(r"^(?:ADD|CONSTRUCT|REBUILD|TAP|UPGRADE)\b", re.IGNORE
 # replace automatic endpoint inference only for the listed cards. Candidate labels retain source
 # language for later review; they are not accepted endpoints.
 ENDPOINT_REVIEW_OVERRIDES: dict[tuple[str, int], dict[str, Any]] = {
+    ("desc-2024", 3): {
+        "project_key": "DESC:0139 M,N",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("Okatie", "Okatie 230-115kV Substation"),
+            ("Jasper", "Jasper"),
+            ("Yemassee", "Yemassee 230kV #1 Fold-in"),
+        ),
+    },
     ("desc-2025", 2): {
         "project_key": "DESC:0139 M,N",
         "class_flag": "endpoint_multi_asset",
@@ -196,6 +205,16 @@ ENDPOINT_REVIEW_OVERRIDES: dict[tuple[str, int], dict[str, Any]] = {
         "class_flag": "endpoint_scope_ambiguous",
         "candidates": (("Summerville 115kV Loop", "Summerville 115kV Loop"),),
     },
+    ("desc-2025", 44): {
+        "project_key": "DESC:6238 H",
+        "class_flag": "endpoint_scope_ambiguous",
+        "description_evidence": "DESCSQ #1151 - Yemassee 115 kV line",
+        "candidates": (
+            ("Fairfax", "Fairfax"),
+            ("Yemassee", "Yemassee"),
+            ("DESCSQ #1151", "DESCSQ #1151"),
+        ),
+    },
 }
 
 
@@ -307,6 +326,11 @@ def _reviewed_endpoint_data(
     if project_key != review["project_key"]:
         raise ValueError(
             f"reviewed endpoint override key mismatch for {source_id} page {page}: {project_key}"
+        )
+    description_evidence = review.get("description_evidence")
+    if description_evidence is not None and description_evidence not in (description or ""):
+        raise ValueError(
+            f"reviewed endpoint description mismatch for {source_id} page {page}: {project_key}"
         )
 
     source_fields = f"{name}\n{description or ''}"

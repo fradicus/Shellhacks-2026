@@ -32,12 +32,17 @@ cut: never
 - 44 + 47 cards parsed, or every miss listed with its page in `data/projects/desc_unparsed.json`.
 - Sum of yearly spend = Total within $1, otherwise the record gets a `quality_flags` entry.
 - Deterministic: running it twice gives byte-identical output.
+- Reviewed multi-asset or source-scope ambiguities retain ordered `endpoint_candidates` and emit no accepted
+  endpoint pair. Exceptions are bound to the pinned source bytes, page, project key, and any decisive description
+  evidence.
 
 ## Validation
 - `tests/pipeline/test_f01_desc.py` asserts:
   - card counts 44 / 47
   - `DESC:0139 M,N` in service 2024-12-31 in desc-2024 and 2026-05-31 in desc-2025, with a version_change emitted
   - `DESC:6888` (Okatie – McIntosh 115kV Tie: Add Series Reactor) exists in desc-2025 with in-service 2028-12-31
+  - both `DESC:0139 M,N` filings preserve Okatie, Jasper, and Yemassee as candidates; `DESC:6238 H` preserves
+    Fairfax, Yemassee, and DESCSQ #1151 as candidates because its title and described work section differ
   - every record validates
 - PR body: counts per filing, number of 2/1/0-endpoint records, 5 random records with pages.
 
