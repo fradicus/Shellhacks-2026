@@ -1,0 +1,2025 @@
+{
+  "schema_version": "outcomes-model-v1",
+  "purpose": "synthetic_test_only",
+  "policy_version": "empirical-cohort-v1",
+  "target": "physical_construction_start_to_complete_calendar_days",
+  "dataset_hash": "6fa3bbd23fee83df8ac35d72b24fb0277bcbaa0dfbd6047ba1234fdbfb9feca1",
+  "provenance": {
+    "import_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "sources": [
+      {
+        "id": "synthetic-source",
+        "publisher": "synthetic-publisher",
+        "lineage": "synthetic-source-lineage",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "published_at": "2020-01-01T00:00:00Z",
+        "received_at": "2020-01-01T00:00:00Z",
+        "reviewed_at": "2020-01-01T00:00:00Z",
+        "authorization_ref": "synthetic-only",
+        "reviewer": "test"
+      }
+    ],
+    "reviews": [
+      {
+        "job_id": "synthetic-only-2021-0",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-1",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-10",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-11",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-12",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-13",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-14",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-15",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-16",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-17",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-18",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-19",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-2",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-20",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-21",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-22",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-23",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-24",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-25",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-26",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-27",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-28",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-29",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-3",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-4",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-5",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-6",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-7",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-8",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2021-9",
+        "decision": "accepted",
+        "reviewed_at": "2021-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-0",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-1",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-10",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-11",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-12",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-13",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-14",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-15",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-16",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-17",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-18",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-19",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-2",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-3",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-4",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-5",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-6",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-7",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-8",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2022-9",
+        "decision": "accepted",
+        "reviewed_at": "2022-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-0",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-1",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-10",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-11",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-12",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-13",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-14",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-15",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-16",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-17",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-18",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-19",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-2",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-3",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-4",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-5",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-6",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-7",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-8",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      },
+      {
+        "job_id": "synthetic-only-2023-9",
+        "decision": "accepted",
+        "reviewed_at": "2023-03-01T00:00:00Z",
+        "reviewer": "test",
+        "reason": "Synthetic fixture only",
+        "start_semantics": "physical_construction_start",
+        "completion_semantics": "physical_construction_complete"
+      }
+    ]
+  },
+  "provenance_hash": "84d9987f84135a9cb706eb671c7adbfbd50f1a6ba9b742a75c57b752090d46a9",
+  "cutoffs": {
+    "training": "2021-06-01T00:00:00Z",
+    "calibration": "2022-06-01T00:00:00Z",
+    "evaluation": "2023-06-01T00:00:00Z"
+  },
+  "observations": [
+    {
+      "job_id": "synthetic-only-2021-0",
+      "project_lineage": "synthetic-lineage-2021-0",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-1",
+      "project_lineage": "synthetic-lineage-2021-1",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-10",
+      "project_lineage": "synthetic-lineage-2021-10",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-11",
+      "project_lineage": "synthetic-lineage-2021-11",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-12",
+      "project_lineage": "synthetic-lineage-2021-12",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-13",
+      "project_lineage": "synthetic-lineage-2021-13",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-14",
+      "project_lineage": "synthetic-lineage-2021-14",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-15",
+      "project_lineage": "synthetic-lineage-2021-15",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-16",
+      "project_lineage": "synthetic-lineage-2021-16",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-17",
+      "project_lineage": "synthetic-lineage-2021-17",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-18",
+      "project_lineage": "synthetic-lineage-2021-18",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-19",
+      "project_lineage": "synthetic-lineage-2021-19",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-2",
+      "project_lineage": "synthetic-lineage-2021-2",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-20",
+      "project_lineage": "synthetic-lineage-2021-20",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-21",
+      "project_lineage": "synthetic-lineage-2021-21",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-22",
+      "project_lineage": "synthetic-lineage-2021-22",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-23",
+      "project_lineage": "synthetic-lineage-2021-23",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-24",
+      "project_lineage": "synthetic-lineage-2021-24",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-25",
+      "project_lineage": "synthetic-lineage-2021-25",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-26",
+      "project_lineage": "synthetic-lineage-2021-26",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-27",
+      "project_lineage": "synthetic-lineage-2021-27",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-28",
+      "project_lineage": "synthetic-lineage-2021-28",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-29",
+      "project_lineage": "synthetic-lineage-2021-29",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-3",
+      "project_lineage": "synthetic-lineage-2021-3",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-4",
+      "project_lineage": "synthetic-lineage-2021-4",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-5",
+      "project_lineage": "synthetic-lineage-2021-5",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-6",
+      "project_lineage": "synthetic-lineage-2021-6",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-7",
+      "project_lineage": "synthetic-lineage-2021-7",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-01",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-8",
+      "project_lineage": "synthetic-lineage-2021-8",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-02-03",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2021-9",
+      "project_lineage": "synthetic-lineage-2021-9",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2021-01-01T00:00:00Z",
+      "features_available_at": "2021-01-01T00:00:00Z",
+      "actual_start": "2021-01-02",
+      "actual_complete": "2021-01-30",
+      "available_at": "2021-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2021-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-0",
+      "project_lineage": "synthetic-lineage-2022-0",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-1",
+      "project_lineage": "synthetic-lineage-2022-1",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-10",
+      "project_lineage": "synthetic-lineage-2022-10",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-11",
+      "project_lineage": "synthetic-lineage-2022-11",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-03",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-12",
+      "project_lineage": "synthetic-lineage-2022-12",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-13",
+      "project_lineage": "synthetic-lineage-2022-13",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-14",
+      "project_lineage": "synthetic-lineage-2022-14",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-03",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-15",
+      "project_lineage": "synthetic-lineage-2022-15",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-16",
+      "project_lineage": "synthetic-lineage-2022-16",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-17",
+      "project_lineage": "synthetic-lineage-2022-17",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-03",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-18",
+      "project_lineage": "synthetic-lineage-2022-18",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-19",
+      "project_lineage": "synthetic-lineage-2022-19",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-2",
+      "project_lineage": "synthetic-lineage-2022-2",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-03",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-3",
+      "project_lineage": "synthetic-lineage-2022-3",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-4",
+      "project_lineage": "synthetic-lineage-2022-4",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-5",
+      "project_lineage": "synthetic-lineage-2022-5",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-03",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-6",
+      "project_lineage": "synthetic-lineage-2022-6",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-7",
+      "project_lineage": "synthetic-lineage-2022-7",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-01",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-8",
+      "project_lineage": "synthetic-lineage-2022-8",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-02-03",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2022-9",
+      "project_lineage": "synthetic-lineage-2022-9",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2022-01-01T00:00:00Z",
+      "features_available_at": "2022-01-01T00:00:00Z",
+      "actual_start": "2022-01-02",
+      "actual_complete": "2022-01-30",
+      "available_at": "2022-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2022-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-0",
+      "project_lineage": "synthetic-lineage-2023-0",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-1",
+      "project_lineage": "synthetic-lineage-2023-1",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-10",
+      "project_lineage": "synthetic-lineage-2023-10",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-11",
+      "project_lineage": "synthetic-lineage-2023-11",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-03",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-12",
+      "project_lineage": "synthetic-lineage-2023-12",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-13",
+      "project_lineage": "synthetic-lineage-2023-13",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-14",
+      "project_lineage": "synthetic-lineage-2023-14",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-03",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-15",
+      "project_lineage": "synthetic-lineage-2023-15",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-16",
+      "project_lineage": "synthetic-lineage-2023-16",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-17",
+      "project_lineage": "synthetic-lineage-2023-17",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-03",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-18",
+      "project_lineage": "synthetic-lineage-2023-18",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-19",
+      "project_lineage": "synthetic-lineage-2023-19",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-2",
+      "project_lineage": "synthetic-lineage-2023-2",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-03",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-3",
+      "project_lineage": "synthetic-lineage-2023-3",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-4",
+      "project_lineage": "synthetic-lineage-2023-4",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-5",
+      "project_lineage": "synthetic-lineage-2023-5",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-03",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-6",
+      "project_lineage": "synthetic-lineage-2023-6",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-7",
+      "project_lineage": "synthetic-lineage-2023-7",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-01",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 30,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-8",
+      "project_lineage": "synthetic-lineage-2023-8",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-02-03",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 32,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    },
+    {
+      "job_id": "synthetic-only-2023-9",
+      "project_lineage": "synthetic-lineage-2023-9",
+      "component_id": "test-component",
+      "job_type": "synthetic-type",
+      "company_id": "synthetic-company",
+      "region": "synthetic-region",
+      "decision_at": "2023-01-01T00:00:00Z",
+      "features_available_at": "2023-01-01T00:00:00Z",
+      "actual_start": "2023-01-02",
+      "actual_complete": "2023-01-30",
+      "available_at": "2023-03-01T00:00:00Z",
+      "duration_days": 28,
+      "planned_duration_days": 40,
+      "planned_available_at": "2023-01-01T00:00:00Z",
+      "evidence_hashes": [
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ]
+    }
+  ],
+  "evaluation": {
+    "[\"synthetic-type\",\"synthetic-company\",\"synthetic-region\"]": {
+      "training": 30,
+      "calibration": 20,
+      "holdout": 20,
+      "passed": true,
+      "reasons": [],
+      "interval": {
+        "lower": 28.0,
+        "median": 30.0,
+        "upper": 32.0
+      },
+      "metrics": {
+        "mae_days": 1.3,
+        "baseline_mae_days": 1.3,
+        "interval_coverage": 1.0
+      },
+      "probability": {
+        "passed": true,
+        "domain": {
+          "lower": 40,
+          "upper": 40
+        },
+        "calibration": 20,
+        "holdout": 20,
+        "calibration_brier": 0.0,
+        "holdout_brier": 0.0,
+        "calibration_baseline_brier": 0.0,
+        "holdout_baseline_brier": 0.0
+      }
+    }
+  }
+}

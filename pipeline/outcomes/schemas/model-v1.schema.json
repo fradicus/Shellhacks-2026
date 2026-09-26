@@ -1,0 +1,591 @@
+{
+  "$defs": {
+    "AuditSource": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_ref": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Authorization Ref",
+          "type": "string"
+        },
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "lineage": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Lineage",
+          "type": "string"
+        },
+        "published_at": {
+          "title": "Published At",
+          "type": "string"
+        },
+        "publisher": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Publisher",
+          "type": "string"
+        },
+        "received_at": {
+          "title": "Received At",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "publisher",
+        "lineage",
+        "sha256",
+        "published_at",
+        "received_at",
+        "reviewed_at",
+        "authorization_ref",
+        "reviewer"
+      ],
+      "title": "AuditSource",
+      "type": "object"
+    },
+    "Cutoffs": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration": {
+          "title": "Calibration",
+          "type": "string"
+        },
+        "evaluation": {
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "training": {
+          "title": "Training",
+          "type": "string"
+        }
+      },
+      "required": [
+        "training",
+        "calibration",
+        "evaluation"
+      ],
+      "title": "Cutoffs",
+      "type": "object"
+    },
+    "Domain": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "exclusiveMinimum": 0,
+          "maximum": 3650,
+          "title": "Lower",
+          "type": "integer"
+        },
+        "upper": {
+          "exclusiveMinimum": 0,
+          "maximum": 3650,
+          "title": "Upper",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "Domain",
+      "type": "object"
+    },
+    "Evaluation": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration": {
+          "minimum": 0,
+          "title": "Calibration",
+          "type": "integer"
+        },
+        "holdout": {
+          "minimum": 0,
+          "title": "Holdout",
+          "type": "integer"
+        },
+        "interval": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Interval"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "metrics": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Metrics"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProbabilityEvaluation"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        },
+        "training": {
+          "minimum": 0,
+          "title": "Training",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "training",
+        "calibration",
+        "holdout",
+        "passed",
+        "reasons",
+        "interval",
+        "metrics",
+        "probability"
+      ],
+      "title": "Evaluation",
+      "type": "object"
+    },
+    "Interval": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "median": {
+          "title": "Median",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "median",
+        "upper"
+      ],
+      "title": "Interval",
+      "type": "object"
+    },
+    "Metrics": {
+      "additionalProperties": false,
+      "properties": {
+        "baseline_mae_days": {
+          "title": "Baseline Mae Days",
+          "type": "number"
+        },
+        "interval_coverage": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Interval Coverage",
+          "type": "number"
+        },
+        "mae_days": {
+          "title": "Mae Days",
+          "type": "number"
+        }
+      },
+      "required": [
+        "mae_days",
+        "baseline_mae_days",
+        "interval_coverage"
+      ],
+      "title": "Metrics",
+      "type": "object"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "properties": {
+        "actual_complete": {
+          "title": "Actual Complete",
+          "type": "string"
+        },
+        "actual_start": {
+          "title": "Actual Start",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "company_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Company Id",
+          "type": "string"
+        },
+        "component_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Component Id",
+          "type": "string"
+        },
+        "decision_at": {
+          "title": "Decision At",
+          "type": "string"
+        },
+        "duration_days": {
+          "exclusiveMinimum": 0,
+          "maximum": 3650,
+          "title": "Duration Days",
+          "type": "integer"
+        },
+        "evidence_hashes": {
+          "items": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "maxItems": 10,
+          "minItems": 1,
+          "title": "Evidence Hashes",
+          "type": "array"
+        },
+        "features_available_at": {
+          "title": "Features Available At",
+          "type": "string"
+        },
+        "job_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Job Id",
+          "type": "string"
+        },
+        "job_type": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Job Type",
+          "type": "string"
+        },
+        "planned_available_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Planned Available At"
+        },
+        "planned_duration_days": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 3650,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Planned Duration Days"
+        },
+        "project_lineage": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Project Lineage",
+          "type": "string"
+        },
+        "region": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Region",
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_id",
+        "project_lineage",
+        "component_id",
+        "job_type",
+        "company_id",
+        "region",
+        "decision_at",
+        "features_available_at",
+        "actual_start",
+        "actual_complete",
+        "available_at",
+        "duration_days",
+        "planned_duration_days",
+        "planned_available_at",
+        "evidence_hashes"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "ProbabilityEvaluation": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration": {
+          "minimum": 0,
+          "title": "Calibration",
+          "type": "integer"
+        },
+        "calibration_baseline_brier": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Calibration Baseline Brier",
+          "type": "number"
+        },
+        "calibration_brier": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Calibration Brier",
+          "type": "number"
+        },
+        "domain": {
+          "$ref": "#/$defs/Domain"
+        },
+        "holdout": {
+          "minimum": 0,
+          "title": "Holdout",
+          "type": "integer"
+        },
+        "holdout_baseline_brier": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Holdout Baseline Brier",
+          "type": "number"
+        },
+        "holdout_brier": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Holdout Brier",
+          "type": "number"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "passed",
+        "domain",
+        "calibration",
+        "holdout",
+        "calibration_brier",
+        "holdout_brier",
+        "calibration_baseline_brier",
+        "holdout_baseline_brier"
+      ],
+      "title": "ProbabilityEvaluation",
+      "type": "object"
+    },
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "import_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Import Sha256",
+          "type": "string"
+        },
+        "reviews": {
+          "items": {
+            "$ref": "#/$defs/Review"
+          },
+          "maxItems": 10000,
+          "title": "Reviews",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/AuditSource"
+          },
+          "maxItems": 1000,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "import_sha256",
+        "sources",
+        "reviews"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "completion_semantics": {
+          "const": "physical_construction_complete",
+          "title": "Completion Semantics",
+          "type": "string"
+        },
+        "decision": {
+          "enum": [
+            "accepted",
+            "rejected",
+            "unresolved"
+          ],
+          "title": "Decision",
+          "type": "string"
+        },
+        "job_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Job Id",
+          "type": "string"
+        },
+        "reason": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "start_semantics": {
+          "const": "physical_construction_start",
+          "title": "Start Semantics",
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_id",
+        "decision",
+        "reviewed_at",
+        "reviewer",
+        "reason",
+        "start_semantics",
+        "completion_semantics"
+      ],
+      "title": "Review",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "cutoffs": {
+      "$ref": "#/$defs/Cutoffs"
+    },
+    "dataset_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Dataset Hash",
+      "type": "string"
+    },
+    "evaluation": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Evaluation"
+      },
+      "title": "Evaluation",
+      "type": "object"
+    },
+    "observations": {
+      "items": {
+        "$ref": "#/$defs/Observation"
+      },
+      "maxItems": 10000,
+      "title": "Observations",
+      "type": "array"
+    },
+    "policy_version": {
+      "const": "empirical-cohort-v1",
+      "title": "Policy Version",
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    },
+    "provenance_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Provenance Hash",
+      "type": "string"
+    },
+    "purpose": {
+      "enum": [
+        "authorized_actual_history",
+        "synthetic_test_only"
+      ],
+      "title": "Purpose",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "outcomes-model-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "target": {
+      "const": "physical_construction_start_to_complete_calendar_days",
+      "title": "Target",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "purpose",
+    "policy_version",
+    "target",
+    "dataset_hash",
+    "provenance",
+    "provenance_hash",
+    "cutoffs",
+    "observations",
+    "evaluation"
+  ],
+  "title": "Artifact",
+  "type": "object"
+}

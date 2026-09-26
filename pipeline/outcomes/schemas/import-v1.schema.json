@@ -1,0 +1,377 @@
+{
+  "$defs": {
+    "Event": {
+      "additionalProperties": false,
+      "properties": {
+        "actuality": {
+          "enum": [
+            "actual",
+            "planned"
+          ],
+          "title": "Actuality",
+          "type": "string"
+        },
+        "component_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Component Id",
+          "type": "string"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Date"
+        },
+        "evidence": {
+          "$ref": "#/$defs/Evidence"
+        },
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "job_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Job Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "construction_start",
+            "construction_complete"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "known_at": {
+          "title": "Known At",
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            "unknown"
+          ],
+          "title": "Precision",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "job_id",
+        "component_id",
+        "kind",
+        "actuality",
+        "date",
+        "precision",
+        "known_at",
+        "evidence"
+      ],
+      "title": "Event",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "pointer": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "pattern": "^/",
+          "title": "Pointer",
+          "type": "string"
+        },
+        "source_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "pointer"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Job": {
+      "additionalProperties": false,
+      "properties": {
+        "company_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Company Id",
+          "type": "string"
+        },
+        "component_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Component Id",
+          "type": "string"
+        },
+        "decision_at": {
+          "title": "Decision At",
+          "type": "string"
+        },
+        "evidence": {
+          "$ref": "#/$defs/Evidence"
+        },
+        "features_known_at": {
+          "title": "Features Known At",
+          "type": "string"
+        },
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "job_type": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Job Type",
+          "type": "string"
+        },
+        "project_lineage": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Project Lineage",
+          "type": "string"
+        },
+        "region": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Region",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "project_lineage",
+        "component_id",
+        "job_type",
+        "company_id",
+        "region",
+        "decision_at",
+        "features_known_at",
+        "evidence"
+      ],
+      "title": "Job",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "completion_semantics": {
+          "const": "physical_construction_complete",
+          "title": "Completion Semantics",
+          "type": "string"
+        },
+        "decision": {
+          "enum": [
+            "accepted",
+            "rejected",
+            "unresolved"
+          ],
+          "title": "Decision",
+          "type": "string"
+        },
+        "job_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Job Id",
+          "type": "string"
+        },
+        "reason": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "start_semantics": {
+          "const": "physical_construction_start",
+          "title": "Start Semantics",
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_id",
+        "decision",
+        "reviewed_at",
+        "reviewer",
+        "reason",
+        "start_semantics",
+        "completion_semantics"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_ref": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Authorization Ref",
+          "type": "string"
+        },
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "lineage": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Lineage",
+          "type": "string"
+        },
+        "local_path": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Local Path",
+          "type": "string"
+        },
+        "published_at": {
+          "title": "Published At",
+          "type": "string"
+        },
+        "publisher": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Publisher",
+          "type": "string"
+        },
+        "received_at": {
+          "title": "Received At",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_ .:/-]+$",
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "publisher",
+        "lineage",
+        "local_path",
+        "sha256",
+        "published_at",
+        "received_at",
+        "reviewed_at",
+        "authorization_ref",
+        "reviewer"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "events": {
+      "items": {
+        "$ref": "#/$defs/Event"
+      },
+      "maxItems": 50000,
+      "title": "Events",
+      "type": "array"
+    },
+    "jobs": {
+      "items": {
+        "$ref": "#/$defs/Job"
+      },
+      "maxItems": 10000,
+      "title": "Jobs",
+      "type": "array"
+    },
+    "purpose": {
+      "enum": [
+        "authorized_actual_history",
+        "synthetic_test_only"
+      ],
+      "title": "Purpose",
+      "type": "string"
+    },
+    "reviews": {
+      "items": {
+        "$ref": "#/$defs/Review"
+      },
+      "maxItems": 10000,
+      "title": "Reviews",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "outcomes-import-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "maxItems": 1000,
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "purpose",
+    "sources",
+    "jobs",
+    "events",
+    "reviews"
+  ],
+  "title": "Bundle",
+  "type": "object"
+}
