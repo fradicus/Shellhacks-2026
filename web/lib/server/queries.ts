@@ -87,7 +87,9 @@ export async function pair(db: Db, dataset: string, id: string): Promise<PairDet
 export const versions = (db: Db, dataset: string) =>
   find<VersionChange>(db, "version_changes", { dataset }, { sort: { project_key: 1, id: 1 } });
 
-export const coverage = (db: Db, dataset: string) => find<Coverage>(db, "coverage", { dataset }, { sort: { id: 1 } });
+export const sources = (db: Db, dataset: string) => find<Source>(db, "sources", { dataset }, { sort: { id: 1 } });
+
+export const coverage =(db: Db, dataset: string) => find<Coverage>(db, "coverage", { dataset }, { sort: { id: 1 } });
 
 export const extractions = (db: Db, dataset: string, q: { source?: string }) =>
   find<Extraction>(db, "extractions", q.source ? { dataset, source_id: q.source } : { dataset }, {
