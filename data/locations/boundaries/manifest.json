@@ -1,0 +1,26 @@
+{
+  "cache_version": "census-state-boundary-v1",
+  "copyright": "Source: U.S. Census Bureau",
+  "feature_count": 2,
+  "layer_description": "States (or statistically equivalent entities); January 1, 2026 vintage",
+  "metadata_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/4?f=pjson",
+  "query_parameters": {
+    "f": "geojson",
+    "outFields": "STATE,GEOID,STUSAB,BASENAME",
+    "outSR": "4326",
+    "returnGeometry": "true",
+    "where": "STATE IN ('13','45')"
+  },
+  "query_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/4/query?where=STATE+IN+%28%2713%27%2C%2745%27%29&outFields=STATE%2CGEOID%2CSTUSAB%2CBASENAME&returnGeometry=true&outSR=4326&f=geojson",
+  "raw_geojson_path": "raw/ga-sc-states-2026.geojson",
+  "raw_geojson_sha256": "b8734276783a5cef4f0fed32fa7e0901f95335da3b23583d1d887c011858bf15",
+  "raw_metadata_path": "raw/states-layer-4.pjson",
+  "raw_metadata_sha256": "94b039ad2c3ae7a39f1bf77c41d759411d5480c582121f23f8e9308c708c45a3",
+  "retrieved_at": "2026-09-26T11:57:15.897386Z",
+  "source": "U.S. Census Bureau TIGERweb",
+  "source_vintage": "January 1, 2026",
+  "states": [
+    "GA",
+    "SC"
+  ]
+}

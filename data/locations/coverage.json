@@ -1,0 +1,349 @@
+{
+  "analysis_date": "2026-09-26",
+  "boundary_source": {
+    "query_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/4/query?where=STATE+IN+%28%2713%27%2C%2745%27%29&outFields=STATE%2CGEOID%2CSTUSAB%2CBASENAME&returnGeometry=true&outSR=4326&f=geojson",
+    "raw_geojson_sha256": "b8734276783a5cef4f0fed32fa7e0901f95335da3b23583d1d887c011858bf15",
+    "retrieved_at": "2026-09-26T11:57:15.897386Z",
+    "source": "U.S. Census Bureau TIGERweb",
+    "source_vintage": "January 1, 2026"
+  },
+  "confidence_policy": {
+    "high_requires_positive_fine_area_evidence": true,
+    "numeric_gpc_zone_is_geography": false,
+    "state_membership_is_fine_area_evidence": false,
+    "unique_exact_fallback": "medium with project_area_unverified"
+  },
+  "coverage_scope": "full",
+  "matcher_version": "location-review-v2",
+  "per_utility": {
+    "DESC": {
+      "active_projects": 54,
+      "filed_endpoints": 63,
+      "located": 16,
+      "medium": 16,
+      "rejected": 47,
+      "zero_endpoint_projects": 16
+    },
+    "GPC": {
+      "active_projects": 138,
+      "filed_endpoints": 218,
+      "located": 49,
+      "medium": 49,
+      "rejected": 169,
+      "zero_endpoint_projects": 8
+    },
+    "unknown": {
+      "active_projects": 70,
+      "filed_endpoints": 119,
+      "located": 24,
+      "medium": 24,
+      "rejected": 95
+    }
+  },
+  "review_history": {
+    "automatic_decision_version": "f09-auto-review-v2",
+    "events": 802,
+    "latest_automatic_events": 400,
+    "provisional_v1_events_preserved": 402
+  },
+  "sampled_locations": [
+    {
+      "_id": "location:v1:9f6fad1959f428a00a7ef83f",
+      "confidence": "medium",
+      "name": "MITCHELL",
+      "osm_url": "https://www.openstreetmap.org/way/656743294",
+      "project_id": "GPC:18492@gpc-2025"
+    },
+    {
+      "_id": "location:v1:a61abf76353d0526c89a40f9",
+      "confidence": "medium",
+      "name": "NELSON",
+      "osm_url": "https://www.openstreetmap.org/way/171713857",
+      "project_id": "GPC:18669@gpc-2025"
+    },
+    {
+      "_id": "location:v1:eccd3ce5428c781251342862",
+      "confidence": "medium",
+      "name": "MCINTOSH",
+      "osm_url": "https://www.openstreetmap.org/way/121624352",
+      "project_id": "GPC:20277@gpc-2025"
+    },
+    {
+      "_id": "location:v1:f4e6e3adff2e47819e338d0c",
+      "confidence": "medium",
+      "name": "MAGNOLIA",
+      "osm_url": "https://www.openstreetmap.org/way/121857248",
+      "project_id": "GPC:20407@gpc-2025"
+    },
+    {
+      "_id": "location:v1:831347ffeeaa77fc820f70f1",
+      "confidence": "medium",
+      "name": "Wateree",
+      "osm_url": "https://www.openstreetmap.org/way/1082130490",
+      "project_id": "DESC:6808 P@desc-2025"
+    }
+  ],
+  "sanity_checks": {
+    "DESC:6888": {
+      "mcintosh": {
+        "candidate_ids": [
+          "way/121624352"
+        ],
+        "confidence": "rejected",
+        "note": "Exact name exists, but Georgia Power/230 kV conflicts require review for the filed 115 kV DESC tie."
+      },
+      "okatie": {
+        "confidence": "rejected",
+        "named_candidate_count": 0,
+        "note": "No named OSM identity; sponsor workbook coordinates were not used.",
+        "unnamed_diagnostic": {
+          "coordinate_method": "overpass_bbox_center",
+          "name": null,
+          "operator": null,
+          "osm_id": "way/1064022697",
+          "status": "candidate_only_not_asserted_as_okatie",
+          "voltage": "230000"
+        }
+      },
+      "status": "partial"
+    }
+  },
+  "semantic_input_sha256": {
+    "desc_projects": "ae5b60ebc4ea8086d3fd03e8e642ad62cd47ab8867084f6dbaae21d425a3f319",
+    "gpc_projects": "025546d29b86aa26e9f1a1f8e2e968b2919ec5827f79b2c406384b9b4fcf4f67",
+    "osm_substations": "0dd4e57be395718104f6a123801844103f48683a138f8da6682415ff20792e0d"
+  },
+  "source_gates": {
+    "endpoint_ambiguous": [
+      {
+        "project_id": "DESC:6807 B@desc-2024",
+        "project_key": "DESC:6807 B",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6809 E@desc-2024",
+        "project_key": "DESC:6809 E",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6847 A-B, D-H@desc-2024",
+        "project_key": "DESC:6847 A-B, D-H",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:0139 M,N@desc-2025",
+        "project_key": "DESC:0139 M,N",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6808 K@desc-2025",
+        "project_key": "DESC:6808 K",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6808 L@desc-2025",
+        "project_key": "DESC:6808 L",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6808 N,O@desc-2025",
+        "project_key": "DESC:6808 N,O",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6808 V@desc-2025",
+        "project_key": "DESC:6808 V",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:1060A, I, L@desc-2025",
+        "project_key": "DESC:1060A, I, L",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:06810 G@desc-2025",
+        "project_key": "DESC:06810 G",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:06810 H@desc-2025",
+        "project_key": "DESC:06810 H",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6809 M@desc-2025",
+        "project_key": "DESC:6809 M",
+        "quality_flags": [
+          "cost_currency_symbol_missing:2027",
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6847@desc-2025",
+        "project_key": "DESC:6847",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6810 T@desc-2025",
+        "project_key": "DESC:6810 T",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6877 A@desc-2025",
+        "project_key": "DESC:6877 A",
+        "quality_flags": [
+          "cost_currency_symbol_missing:2025",
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "DESC:6238 H@desc-2025",
+        "project_key": "DESC:6238 H",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous",
+          "yearly_spend_not_published"
+        ],
+        "utility": "DESC"
+      },
+      {
+        "project_id": "GPC:20243@gpc-2025",
+        "project_key": "GPC:20243",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:20781@gpc-2025",
+        "project_key": "GPC:20781",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:18736@gpc-2025",
+        "project_key": "GPC:18736",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:19187@gpc-2025",
+        "project_key": "GPC:19187",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:20151@gpc-2025",
+        "project_key": "GPC:20151",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:20150@gpc-2025",
+        "project_key": "GPC:20150",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:20234@gpc-2025",
+        "project_key": "GPC:20234",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      },
+      {
+        "project_id": "GPC:18573@gpc-2025",
+        "project_key": "GPC:18573",
+        "quality_flags": [
+          "endpoint_ambiguous"
+        ],
+        "utility": "GPC"
+      }
+    ],
+    "source_status_conflict": [
+      {
+        "project_id": "GPC:20482@gpc-2025",
+        "project_key": "GPC:20482",
+        "quality_flags": [
+          "source_status_conflict"
+        ],
+        "utility": "GPC"
+      }
+    ]
+  },
+  "totals": {
+    "active_projects": 262,
+    "filed_endpoints": 400,
+    "located": 89,
+    "medium": 89,
+    "rejected": 311,
+    "zero_endpoint_projects": 24
+  }
+}
