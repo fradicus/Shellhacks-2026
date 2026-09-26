@@ -116,6 +116,7 @@ def test_all_records_and_manifests_validate_and_costs_reconcile():
 def test_reviewed_endpoint_scope_rows_and_valid_counterexamples():
     outputs = build_outputs()
     multi_asset = {
+        ("desc-2024", 3, "DESC:0139 M,N"): ["Okatie", "Jasper", "Yemassee"],
         ("desc-2025", 2, "DESC:0139 M,N"): ["Okatie", "Jasper", "Yemassee"],
         ("desc-2025", 6, "DESC:6808 N,O"): ["VCS1", "Denny Terrace", "Pineland"],
         ("desc-2025", 13, "DESC:1060A, I, L"): [
@@ -185,6 +186,11 @@ def test_reviewed_endpoint_scope_rows_and_valid_counterexamples():
             "Faber Place",
         ],
         ("desc-2025", 23, "DESC:06810 H"): ["Summerville 115kV Loop"],
+        ("desc-2025", 44, "DESC:6238 H"): [
+            "Fairfax",
+            "Yemassee",
+            "DESCSQ #1151",
+        ],
     }
     expected = {**multi_asset, **scope_ambiguous}
     flagged = {
@@ -223,7 +229,9 @@ def test_reviewed_endpoint_scope_rows_and_valid_counterexamples():
         assert "endpoint_candidates" not in record
 
 
-def test_reviewed_endpoint_override_rejects_wrong_project_key_and_source_bytes(tmp_path: Path):
+def test_reviewed_endpoint_override_rejects_wrong_project_key_description_and_source_bytes(
+    tmp_path: Path,
+):
     outputs = build_outputs()
     reviewed = _record(outputs, "DESC:6807 B", "desc-2024")
     tampered = reviewed["raw_text"].replace(
@@ -232,6 +240,16 @@ def test_reviewed_endpoint_override_rejects_wrong_project_key_and_source_bytes(t
     assert tampered != reviewed["raw_text"]
     with pytest.raises(ValueError, match="reviewed endpoint override key mismatch"):
         parse_card(tampered, "desc-2024", 1, 44)
+
+    scoped = _record(outputs, "DESC:6238 H", "desc-2025")
+    changed_scope = scoped["raw_text"].replace(
+        "DESCSQ #1151 - Yemassee 115 kV line",
+        "Fairfax - Yemassee 115 kV line",
+        1,
+    )
+    assert changed_scope != scoped["raw_text"]
+    with pytest.raises(ValueError, match="reviewed endpoint description mismatch"):
+        parse_card(changed_scope, "desc-2025", 44, 47)
 
     changed_pdf = tmp_path / "desc-2024-changed.pdf"
     changed_pdf.write_bytes(b"changed source bytes")
