@@ -12,7 +12,7 @@ if (!existsSync(path.join(root, "web/app/explore/page.tsx")) || !existsSync(path
   process.exit(0);
 }
 const routes = [
-  "explore/page", "api/national/reference/route", "api/national/projects/route", "api/national/export/route",
+  "explore/page", "api/national/reference/route", "api/national/route", "api/national/export/route",
 ];
 if (existsSync(path.join(root, "web/app/assistant/page.tsx"))) routes.push("assistant/page");
 for (const route of routes) {
