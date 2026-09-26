@@ -1,0 +1,4 @@
+# CI-only tooling for the Azure test-generation pipeline (azure-pipelines.yml).
+# Deliberately separate from pipeline/pyproject.toml, which is a frozen contract
+# (specs/roadmap.md frozen_paths). These packages are never imported by product code.
+openai>=1.40

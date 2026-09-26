@@ -1,0 +1,103 @@
+# Azure Pipelines: automatic pytest generation for feature-branch pushes.
+# Design + rationale: specs/decisions/000-azure-testgen.md
+#
+# Loop prevention (two layers, both required):
+#   1. The bot only ever commits under tests/**, which is excluded from this trigger.
+#   2. Generation only runs on feature branches; the Suite stage alone runs on main.
+# GitHub Actions remains the required PR gate (.github/workflows/ci.yml is frozen); the bot
+# commit intentionally does NOT contain [skip ci], so the PR's `ci` check reruns and
+# re-validates the generated tests on synchronize.
+#
+# Secrets live in the `testgen-secrets` variable group (Pipelines -> Library):
+#   OPENAI_API_KEY   - key for the OpenAI-compatible endpoint (currently a Gemini API key)
+#   OPENAI_BASE_URL  - https://generativelanguage.googleapis.com/v1beta/openai/ for Gemini
+#   TESTGEN_MODEL    - model id served by that endpoint, e.g. the repo's GEMINI_MODEL
+#   GITHUB_BOT_PAT   - fine-grained PAT, this repo only, Contents: read/write
+
+trigger:
+  batch: true # one run per burst of agent commits; cheaper LLM spend
+  branches:
+    include: ["f*", "codex-*", "claude-*", "features/*", "main"]
+  paths:
+    exclude:
+      - tests/**
+      - data/**
+      - docs/**
+      - plans/**
+      - specs/**
+      - reports/**
+      - changes/**
+      - web/**
+      - schemas/**
+      - .github/**
+      - "*.md"
+
+pr: none # GitHub Actions owns PR validation; Azure adds test generation on top
+
+# Self-hosted agent (new orgs get no Microsoft-hosted parallelism without a grant). The agent must
+# provide Python 3.12 and Git Bash on PATH; bash: steps run under Git Bash on Windows agents.
+# Microsoft-hosted alternative once the grant lands: `pool: { vmImage: ubuntu-latest }`.
+pool: Default
+
+variables:
+  - group: testgen-secrets
+
+stages:
+  # ---- Feature branches only: generate tests from the branch diff, commit survivors ----
+  - stage: TestGen
+    condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+    jobs:
+      - job: Generate
+        steps:
+          - checkout: self
+            fetchDepth: 0 # the generator diffs against origin/main
+            persistCredentials: false # pushes use the bot PAT, never the pipeline identity
+
+          - bash: python -m pip install -r ci/requirements.txt uv
+            displayName: "Install testgen tooling (openai, uv)"
+
+          - bash: cd pipeline && uv sync --locked
+            displayName: "Sync locked pipeline env"
+
+          - bash: |
+              git fetch origin main
+              python ci/generate_tests.py --base origin/main --head HEAD
+            displayName: "Generate tests from branch diff"
+            env:
+              OPENAI_API_KEY: $(OPENAI_API_KEY)
+              OPENAI_BASE_URL: $(OPENAI_BASE_URL)
+              TESTGEN_MODEL: $(TESTGEN_MODEL)
+
+          - bash: python ci/validate_new_tests.py
+            displayName: "Prune any failing auto tests"
+
+          - bash: |
+              set -e
+              git config user.email "testgen-bot@users.noreply.github.com"
+              git config user.name "testgen-bot"
+              git remote set-url origin "https://x-access-token:${GITHUB_BOT_PAT}@github.com/fradicus/Shellhacks-2026.git"
+              git add -A tests/pipeline/
+              if git diff --cached --quiet; then
+                echo "no generated tests to commit"
+                exit 0
+              fi
+              git commit -m "auto: generated pytest tests (${BUILD_SOURCEBRANCHNAME})"
+              # Never force-push. If the owning agent pushed again mid-run, skip; the next
+              # trigger regenerates from the new tip.
+              git push origin "HEAD:${BUILD_SOURCEBRANCH}" || echo "non-fast-forward: branch advanced; skipping commit push"
+            displayName: "Commit passing tests to the feature branch"
+            env:
+              GITHUB_BOT_PAT: $(GITHUB_BOT_PAT)
+
+  # ---- Everywhere (incl. main): the repo's own checks, mirrored from GitHub Actions ----
+  - stage: Suite
+    jobs:
+      - job: Checks
+        steps:
+          - checkout: self
+
+          - bash: python -m pip install uv
+            displayName: "Install uv"
+
+          - bash: cd pipeline && uv sync --locked && uv run ruff check . && uv run pytest -q
+            displayName: "ruff + pytest (incl. golden)"

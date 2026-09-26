@@ -16,6 +16,8 @@ frozen_paths:
   - schemas/
   - scripts/
   - .github/
+  - azure-pipelines.yml
+  - ci/
   - pipeline/pyproject.toml
   - pipeline/uv.lock
   - pipeline/common/
