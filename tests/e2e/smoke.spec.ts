@@ -31,8 +31,10 @@ test("every navigation route returns 200 and renders without console errors", as
   expect((await page.goto("/"))?.status()).toBe(200);
   const nav = page.getByRole("navigation", { name: "Main" });
   const hrefs = await nav.getByRole("link").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
-  expect(hrefs).toEqual(["/", "/changes", "/coverage", "/gemini", "/impact"]);
+  expect(hrefs).toEqual(expect.arrayContaining(["/", "/time", "/changes", "/coverage", "/gemini", "/impact"]));
+  expect(new Set(hrefs).size, "Navigation destinations are unique").toBe(hrefs.length);
   for (const href of hrefs) {
+    expect(href, "Navigation stays inside the app").toMatch(/^\/(?:[a-z0-9-]+\/?)*$/);
     expect((await page.goto(href!))?.status(), href!).toBe(200);
     await expect(page.getByRole("main")).toBeVisible();
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
