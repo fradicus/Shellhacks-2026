@@ -28,3 +28,16 @@
     Arrow keys step through the ranked list unless focus is in an input or on the map canvas.
 11. **Unmapped owners show their filed code** ("Owner code MEAG, not mapped") instead of "Owner unknown": the 70
     unmapped current projects carry GTC, MEAG or DU. Matching is unchanged (D3).
+
+## 12. Polish pass (issue #119)
+- **Sweep instead of a global grow.** The old intro scaled every pillar at once, so timing was invisible. Clipping each
+  pillar at a rising sweep shows order in time, which is the view's point. Alternative: animate the camera only, but
+  that says nothing about dates.
+- **Rings, not a lens.** Two 25-mile circles show the rule as defined (a center inside the other's circle). A filled
+  intersection would suggest an "overlap area" that the method does not compute. Rejected.
+- **Fake bloom.** EffectComposer needs its own render targets. The layer draws into MapLibre's framebuffer, so glow
+  is additive halo sprites. The cost is that glow doesn't bleed across lines, which is acceptable.
+- **Booth mode reuses the story.** A second scripted camera path would drift from the facts the story already derives
+  from stored values.
+- **Scrubber labels itself.** Moving the sheet off the analysis date relabels it "As of"; showing "Today" at another
+  date would be false.
