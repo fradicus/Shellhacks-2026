@@ -16,6 +16,7 @@ import type {
   PairDetail,
   Project,
   Result,
+  Run,
   Source,
   View,
   VersionChange,
@@ -181,6 +182,22 @@ export function getSources(): Promise<Result<Source[]>> {
   return guard("getSources", async () =>
     isFixtureMode() ? fixture<Source>("sources") : ((await api<Source[]>("/api/sources")) ?? []),
   );
+}
+
+/** Every stored brief, passed and rejected (the workbench shows rejection reasons). */
+export function getBriefs(): Promise<Result<Brief[]>> {
+  return guard("getBriefs", async () =>
+    isFixtureMode() ? fixture<Brief>("briefs") : ((await api<Brief[]>("/api/briefs")) ?? []),
+  );
+}
+
+/** Latest pipeline run (by started_at, then _id), or null when none is stored. */
+export function getLatestRun(): Promise<Result<Run | null>> {
+  return guard("getLatestRun", async () => {
+    if (!isFixtureMode()) return api<Run>("/api/runs");
+    const runs = await fixture<Run>("runs");
+    return runs.sort((a, b) => b.started_at.localeCompare(a.started_at) || b._id.localeCompare(a._id))[0] ?? null;
+  });
 }
 
 export function getCoverage(): Promise<Result<Coverage[]>> {
