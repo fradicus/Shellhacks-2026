@@ -55,7 +55,15 @@
         "null"
       ]
     },
+    "project_id": {
+      "description": "<project_key>@<source_id>: the filing version this evidence belongs to (#47). Without it (and source_id) the loader binds to the key's only active version.",
+      "type": "string"
+    },
     "project_key": {
+      "type": "string"
+    },
+    "source_id": {
+      "description": "The filing (source _id) the evidence was produced for",
       "type": "string"
     }
   },
