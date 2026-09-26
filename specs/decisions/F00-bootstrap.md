@@ -12,9 +12,9 @@ Each entry: context, choice, how to undo.
    `owner_code` is null with `owner_basis: "utility column of the sponsor sample"` (the workbook gives the utility, not
    an owner code). Sample coordinates get confidence `high` with the workbook row/column as evidence; missing sample
    coordinates are `rejected` location records ("No coordinates in the sponsor sample") so the UI shows them as unknown.
-4. **Version-change fixture source ids** are `desc-2024-2028` and `desc-2025-2029`. F01 should use the same ids for the
-   two DESC filings so the fixture and real data line up. The 2024–2028 side (p. 3, `12/31/2024`) was checked in the
-   PDF; the 2025–2029 side comes from the spec (that PDF isn't in `docs/`).
+4. **Version-change fixture source ids** follow F01's registered ids, `desc-2024` and `desc-2025` (C4; F00 had
+   guessed `desc-2024-2028`/`desc-2025-2029`). The fixture's `sources.json` includes those two F01 source records so
+   fixture mode cites and links filings like production. The 2024–2028 side (p. 3, `12/31/2024`) was checked in the PDF.
 5. **`data.ts` in API mode fetches this app's own `/api/*`** (spec). Server-side base URL: `SITE_URL`, else the
    production domain (`VERCEL_PROJECT_PRODUCTION_URL`) in production, else `VERCEL_URL`, else localhost. The unique
    deployment URL is skipped in production because Vercel deployment protection can 401 it. Fetches use

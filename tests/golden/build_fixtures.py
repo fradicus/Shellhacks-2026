@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 
 import openpyxl  # noqa: E402
 
-from common import REPO_ROOT, project_id, validate, write_json  # noqa: E402
+from common import REPO_ROOT, load_json, project_id, validate, write_json  # noqa: E402
 from matches.core import center, overlaps, priority_sort  # noqa: E402
 
 WORKBOOK = REPO_ROOT / "docs/Sperry-Tech-Challenge/Projects_Overlaps.xlsx"
@@ -91,6 +91,8 @@ def ui_fixtures(golden):
         "public_status": "public",
         "local_path": "docs/Sperry-Tech-Challenge/Projects_Overlaps.xlsx",
     }]
+    # The two DESC filings the version-change fixture cites, exactly as F01 registered them.
+    sources += [s for s in load_json(REPO_ROOT / "data/sources/sources.json") if s["_id"] in ("desc-2024", "desc-2025")]
     projects, locations = [], []
     for g in golden:
         key = f"{g['utility']}:{g['project_id']}"
@@ -124,10 +126,10 @@ def ui_fixtures(golden):
         })
     matches = [m | {"review_state": "needs_review"} for m in priority_sort(overlaps(projects, ANALYSIS_DATE))]
     version_changes = [{
-        "_id": "DESC:0139 M,N|in_service.date|desc-2024-2028>desc-2025-2029",
+        "_id": "DESC:0139 M,N|in_service.date|desc-2024>desc-2025",
         "project_key": "DESC:0139 M,N",
-        "from_source": "desc-2024-2028",
-        "to_source": "desc-2025-2029",
+        "from_source": "desc-2024",
+        "to_source": "desc-2025",
         "field": "in_service.date",
         "old": "2024-12-31",
         "new": "2026-05-31",
