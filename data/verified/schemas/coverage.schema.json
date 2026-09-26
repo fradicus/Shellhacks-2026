@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gridbridge.local/schemas/verified-coverage-v1.json",
+  "title": "Measured verified-directory import coverage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset", "generated_at", "data_year", "source_vintages", "counts", "limitations"],
+  "properties": {
+    "schema_version": {"const": "verified-directory-v1"},
+    "dataset": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_year": {"const": 2024},
+    "source_vintages": {"type": "object", "additionalProperties": {"type": ["string", "null"]}},
+    "counts": {
+      "type": "object",
+      "required": ["sources", "utilities", "utility_activities", "service_territory_rows", "assertions", "quarantine", "resolved_county_rows", "unresolved_county_rows", "conflicting_county_rows", "rejected_county_rows", "independently_corroborated_service_claims", "comparable_field_conflicts", "unknown_utility_rows", "county_identity_quarantine_rows"],
+      "properties": {
+        "sources": {"type": "integer", "minimum": 0},
+        "utilities": {"type": "integer", "minimum": 0},
+        "utility_activities": {"type": "integer", "minimum": 0},
+        "service_territory_rows": {"type": "integer", "minimum": 0},
+        "assertions": {"type": "integer", "minimum": 0},
+        "quarantine": {"type": "integer", "minimum": 0},
+        "resolved_county_rows": {"type": "integer", "minimum": 0},
+        "unresolved_county_rows": {"type": "integer", "minimum": 0},
+        "conflicting_county_rows": {"type": "integer", "minimum": 0},
+        "rejected_county_rows": {"type": "integer", "minimum": 0},
+        "independently_corroborated_service_claims": {"const": 0},
+        "comparable_field_conflicts": {"type": "integer", "minimum": 0},
+        "unknown_utility_rows": {"type": "integer", "minimum": 0},
+        "county_identity_quarantine_rows": {"type": "integer", "minimum": 0}
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  }
+}

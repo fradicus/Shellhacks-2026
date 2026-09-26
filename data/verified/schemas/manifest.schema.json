@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gridbridge.local/schemas/verified-manifest-v1.json",
+  "title": "Verified-directory deterministic artifact manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset", "generated_at", "content_hash_excludes", "files"],
+  "properties": {
+    "schema_version": {"const": "verified-directory-v1"},
+    "dataset": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "content_hash_excludes": {"const": ["generated_at", "dataset", "manifest"]},
+    "files": {
+      "type": "object",
+      "minProperties": 7,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sha256", "records"],
+        "properties": {
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "records": {"type": ["integer", "null"], "minimum": 0}
+        }
+      }
+    }
+  }
+}
