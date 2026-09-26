@@ -11,8 +11,8 @@ from typing import Any
 import openpyxl
 
 from .fetch import ARCHIVE_SHA256, ARCHIVE_URL, checked_archive, sha256_bytes
-from .geography import GeographyIndex
-from .validate import validate_snapshot
+from .geography import GeographyIndex, normalized_name
+from .validate import validate_records_schema, validate_snapshot
 
 SCHEMA_VERSION = "verified-directory-v1"
 SOURCE_EIA = "eia-861-2024-final"
@@ -27,6 +27,10 @@ EIA_RETRIEVED_AT = "2026-09-26T18:00:22.262176+00:00"
 
 def canonical(value: Any) -> bytes:
     return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode()
+
+
+def canonical_json_sha(value: Any) -> str:
+    return hashlib.sha256(canonical(value)).hexdigest()
 
 
 def _clean(value: Any) -> Any:
@@ -82,6 +86,9 @@ def _source_records(geography: dict[str, Any], geography_sha: str) -> list[dict[
             "retrieved_at": min((item.get("retrieved_at") for item in census_sources if item.get("retrieved_at")), default=None),
             "landing_url": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
             "content_sha256": geography_sha,
+            "digest_semantics": (
+                "SHA-256 of the canonical normalized data/national/geography.json value; not an original Census download digest"
+            ),
             "upstream_lineage": "census-geography-reference",
             "role": "geography_identity_reference",
             "limitations": [
@@ -149,7 +156,18 @@ def _frame_utilities(member: bytes) -> list[dict[str, Any]]:
     return records
 
 
-def _activities(member: bytes, geography: GeographyIndex, known: set[str]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def comparable_conflicts(reference: dict[str, Any], *, name: str, ownership: str | None = None) -> list[str]:
+    conflicts = []
+    if normalized_name(reference["name"]) != normalized_name(name):
+        conflicts.append("name")
+    if ownership and reference.get("ownership") and normalized_name(reference["ownership"]) != normalized_name(ownership):
+        conflicts.append("ownership")
+    return conflicts
+
+
+def _activities(
+    member: bytes, geography: GeographyIndex, known: dict[str, dict[str, Any]]
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     records: list[dict[str, Any]] = []
     quarantine: list[dict[str, Any]] = []
     for sheet in ("States", "Territories"):
@@ -159,9 +177,14 @@ def _activities(member: bytes, geography: GeographyIndex, known: set[str]) -> tu
             state_fips = geography.state_fips(state_raw)
             limitations: list[str] = []
             status = "accepted"
-            if utility_id not in known:
+            reference = known.get(utility_id)
+            conflicts = comparable_conflicts(reference, name=str(row[2]), ownership=row[4] or None) if reference else []
+            if reference is None:
                 status = "rejected"
                 limitations.append("utility number is absent from the reviewed Frame workbook")
+            elif conflicts:
+                status = "rejected"
+                limitations.append(f"same-vintage Frame conflict in comparable field(s): {', '.join(conflicts)}")
             if state_fips is None:
                 limitations.append("state or foreign area has no Census state FIPS identity in the reference index")
             record_id = f"eia861-2024-activity-{sheet.casefold()}-{row_number}"
@@ -211,12 +234,14 @@ def _activities(member: bytes, geography: GeographyIndex, known: set[str]) -> tu
             }
             records.append(record)
             if status == "rejected":
+                reason = "comparable_field_conflict" if conflicts else "unknown_utility_number"
                 quarantine.append(
                     {
                         "id": f"quarantine-{record_id}",
                         "record_type": "utility_activity",
                         "record_id": record_id,
-                        "reason": "unknown_utility_number",
+                        "reason": reason,
+                        "conflicting_fields": conflicts,
                         "evidence": record["evidence"],
                     }
                 )
@@ -224,7 +249,7 @@ def _activities(member: bytes, geography: GeographyIndex, known: set[str]) -> tu
 
 
 def _territories(
-    member: bytes, geography: GeographyIndex, known: set[str]
+    member: bytes, geography: GeographyIndex, known: dict[str, dict[str, Any]]
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     territories: list[dict[str, Any]] = []
     assertions: list[dict[str, Any]] = []
@@ -236,15 +261,19 @@ def _territories(
             state_fips = geography.state_fips(state_raw)
             match = geography.match_county(state_raw, county_raw) if state_fips else None
             status = match.status if match else "unresolved"
-            if utility_id not in known:
+            reference = known.get(utility_id)
+            conflicts = comparable_conflicts(reference, name=str(row[2])) if reference else []
+            if reference is None or conflicts:
                 status = "rejected"
             record_id = f"eia861-2024-territory-{sheet.casefold()}-{row_number}"
             limitations = [
                 "EIA reports distribution-equipment presence; this is not an exclusive service polygon.",
                 "This row is not a transmission project location.",
             ]
-            if status != "accepted":
+            if not match or match.status != "accepted":
                 limitations.append("county identity did not resolve uniquely against the Census reference")
+            if conflicts:
+                limitations.append(f"same-vintage Frame conflict in comparable field(s): {', '.join(conflicts)}")
             evidence = _evidence(
                 "Service_Territory_2024.xlsx",
                 sheet,
@@ -288,8 +317,10 @@ def _territories(
             assertions.append(assertion)
             if status != "accepted":
                 reason = "ambiguous_county_identity" if status == "conflicting" else "unresolved_county_identity"
-                if utility_id not in known:
+                if reference is None:
                     reason = "unknown_utility_number"
+                elif conflicts:
+                    reason = "comparable_field_conflict"
                 quarantine.append(
                     {
                         "id": f"quarantine-{record_id}",
@@ -297,6 +328,7 @@ def _territories(
                         "record_id": record_id,
                         "reason": reason,
                         "candidate_geoids": record["candidate_geoids"],
+                        "conflicting_fields": conflicts,
                         "evidence": evidence,
                     }
                 )
@@ -347,6 +379,7 @@ def _coverage(
 ) -> dict[str, Any]:
     territory_status = Counter(record["validation_status"] for record in territories)
     utility_status = Counter(record["validation_status"] for record in utilities)
+    quarantine_reasons = Counter(record["reason"] for record in quarantine)
     return {
         "schema_version": SCHEMA_VERSION,
         "data_year": 2024,
@@ -365,6 +398,11 @@ def _coverage(
             "conflicting_county_rows": territory_status["conflicting"],
             "rejected_county_rows": territory_status["rejected"],
             "independently_corroborated_service_claims": 0,
+            "comparable_field_conflicts": quarantine_reasons["comparable_field_conflict"],
+            "unknown_utility_rows": quarantine_reasons["unknown_utility_number"],
+            "county_identity_quarantine_rows": (
+                quarantine_reasons["unresolved_county_identity"] + quarantine_reasons["ambiguous_county_identity"]
+            ),
         },
         "limitations": [
             "Coverage measures rows in the reviewed EIA-861 2024 final archive, "
@@ -388,11 +426,11 @@ def build_snapshot(repo_root: Path, *, generated_at: str, cache_dir: Path | None
     geography = json.loads(geography_bytes)
     index = GeographyIndex(geography)
     utilities = _frame_utilities(members["Frame_2024.xlsx"])
-    known = {record["eia_utility_id"] for record in utilities}
+    known = {record["eia_utility_id"]: record for record in utilities}
     activities, activity_quarantine = _activities(members["Utility_Data_2024.xlsx"], index, known)
     territories, assertions, territory_quarantine = _territories(members["Service_Territory_2024.xlsx"], index, known)
     _decorate_utilities(utilities, activities, territories)
-    sources = _source_records(geography, sha256_bytes(geography_bytes))
+    sources = _source_records(geography, canonical_json_sha(geography))
     quarantine = sorted(activity_quarantine + territory_quarantine, key=lambda item: item["id"])
     utilities.sort(key=lambda item: item["id"])
     activities.sort(key=lambda item: item["id"])
@@ -417,6 +455,12 @@ def build_snapshot(repo_root: Path, *, generated_at: str, cache_dir: Path | None
 
 def write_snapshot(snapshot: dict[str, Any], output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
+    records = [
+        record
+        for key in ("sources", "utilities", "utility-activities", "service-territory", "assertions", "quarantine")
+        for record in snapshot[key]
+    ]
+    validate_records_schema(records, output_dir / "schemas" / "domain-record.schema.json")
     manifest_files: dict[str, dict[str, Any]] = {}
     for name in ("sources", "utilities", "utility-activities", "service-territory", "assertions", "quarantine"):
         envelope = {

@@ -13,7 +13,7 @@
     "source_vintages": {"type": "object", "additionalProperties": {"type": ["string", "null"]}},
     "counts": {
       "type": "object",
-      "required": ["sources", "utilities", "utility_activities", "service_territory_rows", "assertions", "quarantine", "resolved_county_rows", "unresolved_county_rows", "conflicting_county_rows", "rejected_county_rows", "independently_corroborated_service_claims"],
+      "required": ["sources", "utilities", "utility_activities", "service_territory_rows", "assertions", "quarantine", "resolved_county_rows", "unresolved_county_rows", "conflicting_county_rows", "rejected_county_rows", "independently_corroborated_service_claims", "comparable_field_conflicts", "unknown_utility_rows", "county_identity_quarantine_rows"],
       "properties": {
         "sources": {"type": "integer", "minimum": 0},
         "utilities": {"type": "integer", "minimum": 0},
@@ -25,7 +25,10 @@
         "unresolved_county_rows": {"type": "integer", "minimum": 0},
         "conflicting_county_rows": {"type": "integer", "minimum": 0},
         "rejected_county_rows": {"type": "integer", "minimum": 0},
-        "independently_corroborated_service_claims": {"const": 0}
+        "independently_corroborated_service_claims": {"const": 0},
+        "comparable_field_conflicts": {"type": "integer", "minimum": 0},
+        "unknown_utility_rows": {"type": "integer", "minimum": 0},
+        "county_identity_quarantine_rows": {"type": "integer", "minimum": 0}
       }
     },
     "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}

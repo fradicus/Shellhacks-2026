@@ -3,7 +3,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { filterVerifiedUtilities, validateVerifiedGeography } from "./filters";
+import { filterVerifiedUtilities, InvalidVerifiedQuery, validateVerifiedGeography } from "./filters";
 import type {
   VerifiedCoverage, VerifiedCoverageResponse, VerifiedFilters, VerifiedListResponse, VerifiedUtilityRecord,
 } from "./types";
@@ -74,7 +74,7 @@ export async function loadVerifiedDirectory(filters: VerifiedFilters): Promise<V
   try {
     const source = await loadDirectory();
     const geographyIssue = validateVerifiedGeography(filters, source.geography);
-    if (geographyIssue) throw new TypeError(geographyIssue);
+    if (geographyIssue) throw new InvalidVerifiedQuery(geographyIssue);
     const filtered = filterVerifiedUtilities(source.utilities, filters);
     const offset = (filters.page - 1) * filters.limit;
     const records = filtered.slice(offset, offset + filters.limit).map((record) => ({
@@ -93,7 +93,7 @@ export async function loadVerifiedDirectory(filters: VerifiedFilters): Promise<V
       filters, total: filtered.length, page: filters.page, limit: filters.limit, records,
     };
   } catch (error) {
-    if (error instanceof TypeError) throw error;
+    if (error instanceof InvalidVerifiedQuery) throw error;
     return {
       available: false, reason: "Verified public directory is unavailable.", dataset: null, generated_at: null,
       filters, total: 0, page: filters.page, limit: filters.limit, records: [],

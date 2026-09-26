@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { filterVerifiedUtilities, parseVerifiedParams, validateVerifiedGeography } from "../../../web/lib/verified/filters.ts";
+import {
+  filterVerifiedUtilities,
+  InvalidVerifiedQuery,
+  parseVerifiedParams,
+  rejectVerifiedCoverageParams,
+  validateVerifiedGeography,
+} from "../../../web/lib/verified/filters.ts";
 import type { VerifiedUtilityRecord } from "../../../web/lib/verified/types.ts";
 
 const geography = {
@@ -14,11 +20,16 @@ const utilities: VerifiedUtilityRecord[] = [
 ];
 
 test("strict query parsing rejects duplicates, unknowns, unparented county and unsafe bounds", () => {
-  assert.throws(() => parseVerifiedParams(new URLSearchParams("state=13&state=25")), /duplicate/);
+  assert.throws(() => parseVerifiedParams(new URLSearchParams("state=13&state=25")), InvalidVerifiedQuery);
   assert.throws(() => parseVerifiedParams(new URLSearchParams("owner=x")), /unknown/);
   assert.throws(() => parseVerifiedParams(new URLSearchParams("county=13001")), /requires/);
   assert.throws(() => parseVerifiedParams(new URLSearchParams("state=13&limit=101")), /<=100|less than or equal/);
   assert.throws(() => parseVerifiedParams(new URLSearchParams(`q=${"x".repeat(121)}`)), /too big|less than or equal/i);
+});
+
+test("coverage rejects every query parameter", () => {
+  assert.doesNotThrow(() => rejectVerifiedCoverageParams(new URLSearchParams()));
+  assert.throws(() => rejectVerifiedCoverageParams(new URLSearchParams("state=13")), InvalidVerifiedQuery);
 });
 
 test("state and county filters validate known parentage", () => {

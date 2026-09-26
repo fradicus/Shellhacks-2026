@@ -5,6 +5,8 @@ export const VERIFIED_DEFAULT_LIMIT = 25;
 export const VERIFIED_MAX_LIMIT = 100;
 const ALLOWED = new Set(["state", "county", "q", "page", "limit"]);
 
+export class InvalidVerifiedQuery extends Error {}
+
 const Query = z.strictObject({
   state: z.string().regex(/^\d{2}$/).optional(),
   county: z.string().regex(/^\d{5}$/).optional(),
@@ -16,14 +18,21 @@ const Query = z.strictObject({
 export function parseVerifiedParams(params: URLSearchParams): VerifiedFilters {
   const raw: Record<string, string> = {};
   for (const key of params.keys()) {
-    if (!ALLOWED.has(key)) throw new Error(`${key}: unknown parameter`);
-    if (params.getAll(key).length !== 1) throw new Error(`${key}: duplicate parameter`);
+    if (!ALLOWED.has(key)) throw new InvalidVerifiedQuery(`${key}: unknown parameter`);
+    if (params.getAll(key).length !== 1) throw new InvalidVerifiedQuery(`${key}: duplicate parameter`);
     raw[key] = params.get(key)!;
   }
   const parsed = Query.safeParse(raw);
-  if (!parsed.success) throw new Error(parsed.error.issues.map((issue) => `${issue.path.join(".")}: ${issue.message}`).join("; "));
-  if (parsed.data.county && !parsed.data.state) throw new Error("county requires its parent state");
+  if (!parsed.success) {
+    throw new InvalidVerifiedQuery(parsed.error.issues.map((issue) => `${issue.path.join(".")}: ${issue.message}`).join("; "));
+  }
+  if (parsed.data.county && !parsed.data.state) throw new InvalidVerifiedQuery("county requires its parent state");
   return parsed.data;
+}
+
+export function rejectVerifiedCoverageParams(params: URLSearchParams): void {
+  const key = params.keys().next();
+  if (!key.done) throw new InvalidVerifiedQuery(`${key.value}: unknown parameter`);
 }
 
 export function validateVerifiedGeography(

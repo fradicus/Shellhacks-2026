@@ -52,6 +52,9 @@ export type VerifiedCoverage = {
     conflicting_county_rows: number;
     rejected_county_rows: number;
     independently_corroborated_service_claims: 0;
+    comparable_field_conflicts: number;
+    unknown_utility_rows: number;
+    county_identity_quarantine_rows: number;
   };
   limitations: string[];
 };

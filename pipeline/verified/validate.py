@@ -9,10 +9,15 @@ from typing import Any
 from jsonschema import Draft202012Validator, FormatChecker
 
 from .fetch import ARCHIVE_SHA256
+from .geography import normalized_name
 
 
 def _canonical(value: Any) -> bytes:
     return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode()
+
+
+def canonical_json_sha(value: Any) -> str:
+    return hashlib.sha256(_canonical(value)).hexdigest()
 
 
 def _unique(records: list[dict[str, Any]], label: str) -> None:
@@ -42,6 +47,11 @@ def _assert_counts(snapshot: dict[str, Any]) -> None:
         "rejected_county_rows": sum(item["validation_status"] == "rejected" for item in snapshot["service-territory"]),
         "independently_corroborated_service_claims": sum(
             bool(item["independently_corroborated"]) for item in snapshot["assertions"]
+        ),
+        "comparable_field_conflicts": sum(item["reason"] == "comparable_field_conflict" for item in snapshot["quarantine"]),
+        "unknown_utility_rows": sum(item["reason"] == "unknown_utility_number" for item in snapshot["quarantine"]),
+        "county_identity_quarantine_rows": sum(
+            item["reason"] in {"unresolved_county_identity", "ambiguous_county_identity"} for item in snapshot["quarantine"]
         ),
     }
     if counts != exact:
@@ -74,6 +84,11 @@ def validate_snapshot(snapshot: dict[str, Any], geography: dict[str, Any]) -> No
         raise ValueError("verified source registry must contain the pinned EIA and Census references")
     if sources["eia-861-2024-final"]["content_sha256"] != ARCHIVE_SHA256:
         raise ValueError("EIA source hash does not match the reviewed final archive")
+    census = sources["census-geography-reference"]
+    if census["content_sha256"] != canonical_json_sha(geography) or "canonical normalized" not in census.get(
+        "digest_semantics", ""
+    ):
+        raise ValueError("Census reference source must bind the canonical normalized geography value")
     utilities = {item["eia_utility_id"]: item for item in snapshot["utilities"]}
     if len(utilities) != len(snapshot["utilities"]):
         raise ValueError("EIA utility numbers must be unique within the 2024 Frame workbook")
@@ -90,23 +105,38 @@ def validate_snapshot(snapshot: dict[str, Any], geography: dict[str, Any]) -> No
             if evidence.get("source_id") != "eia-861-2024-final" or not isinstance(evidence.get("row"), int):
                 raise ValueError("EIA row evidence must bind a source, member, sheet and row")
     for activity in snapshot["utility-activities"]:
-        known = activity["eia_utility_id"] in utilities
-        if known != (activity["validation_status"] != "rejected"):
+        reference = utilities.get(activity["eia_utility_id"])
+        conflicts = []
+        if reference:
+            if normalized_name(reference["name"]) != normalized_name(activity["name"]):
+                conflicts.append("name")
+            if (
+                activity["ownership"]
+                and reference["ownership"]
+                and normalized_name(reference["ownership"]) != normalized_name(activity["ownership"])
+            ):
+                conflicts.append("ownership")
+        rejected = reference is None or bool(conflicts)
+        if rejected != (activity["validation_status"] == "rejected"):
             raise ValueError("activity foreign-key status disagrees with the Frame utility registry")
         state = activity["state_fips"]
         if state is not None and state not in state_ids:
             raise ValueError("activity references an unknown Census state FIPS")
-        if not known and activity["id"] not in quarantine_ids:
-            raise ValueError("unknown utility activity must be preserved in quarantine")
+        if rejected and activity["id"] not in quarantine_ids:
+            raise ValueError("unknown or conflicting utility activity must be preserved in quarantine")
     for territory in snapshot["service-territory"]:
+        reference = utilities.get(territory["eia_utility_id"])
+        conflicts = [] if reference and normalized_name(reference["name"]) == normalized_name(territory["name"]) else ["name"]
         state, county = territory["state_fips"], territory["county_geoid"]
         if state is not None and state not in state_ids:
             raise ValueError("service territory references an unknown Census state FIPS")
         if county is not None and (county not in county_parent or county_parent[county] != state):
             raise ValueError("service territory county must exist and belong to its resolved state")
-        if territory["validation_status"] == "accepted" and county is None:
+        if territory["validation_status"] == "accepted" and (county is None or reference is None or conflicts):
             raise ValueError("accepted service territory requires a resolved county GEOID")
-        if territory["validation_status"] != "accepted" and territory["id"] not in quarantine_ids:
+        if (territory["validation_status"] != "accepted" or reference is None or conflicts) and territory[
+            "id"
+        ] not in quarantine_ids:
             raise ValueError("non-accepted service territory must be preserved in quarantine")
     for assertion in snapshot["assertions"]:
         target = assertion["id"].removeprefix("assertion-")
@@ -156,6 +186,12 @@ def load_published_snapshot(repo_root: Path) -> tuple[dict[str, Any], dict[str, 
 def validate_published(repo_root: Path) -> None:
     snapshot, geography = load_published_snapshot(repo_root)
     validate_snapshot(snapshot, geography)
+    records = [
+        record
+        for key in ("sources", "utilities", "utility-activities", "service-territory", "assertions", "quarantine")
+        for record in snapshot[key]
+    ]
+    validate_records_schema(records, repo_root / "data" / "verified" / "schemas" / "domain-record.schema.json")
 
 
 def validate_schema(instance: Any, schema_path: Path) -> None:
@@ -164,3 +200,12 @@ def validate_schema(instance: Any, schema_path: Path) -> None:
     issues = sorted(validator.iter_errors(instance), key=lambda issue: list(issue.path))
     if issues:
         raise ValueError("; ".join(issue.message for issue in issues[:5]))
+
+
+def validate_records_schema(records: list[dict[str, Any]], schema_path: Path) -> None:
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    for record in records:
+        issues = sorted(validator.iter_errors(record), key=lambda issue: list(issue.path))
+        if issues:
+            raise ValueError(f"record {record.get('id', '<missing>')}: {issues[0].message}")

@@ -1,15 +1,23 @@
 from __future__ import annotations
 
 import copy
+import io
 import json
 from pathlib import Path
 
+import openpyxl
 import pytest
 
-from verified.build import build_snapshot
+from verified.build import _activities, _territories, build_snapshot, canonical_json_sha
 from verified.fetch import checked_archive
 from verified.geography import GeographyIndex
-from verified.validate import load_published_snapshot, validate_published, validate_schema, validate_snapshot
+from verified.validate import (
+    load_published_snapshot,
+    validate_published,
+    validate_records_schema,
+    validate_schema,
+    validate_snapshot,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / "data" / "verified" / "cache" / "f8612024.zip"
@@ -31,10 +39,13 @@ def test_published_artifacts_bind_manifest_schemas_and_exact_denominators() -> N
         "quarantine.json",
     ):
         validate_schema(json.loads((ROOT / "data" / "verified" / filename).read_text(encoding="utf-8")), envelope_schema)
+    assert (ROOT / "data" / "verified" / ".gitattributes").read_text(encoding="utf-8") == "*.json text eol=lf\n"
     assert coverage["counts"] == {
         "assertions": 11_866,
+        "comparable_field_conflicts": 0,
         "conflicting_county_rows": 11,
         "independently_corroborated_service_claims": 0,
+        "county_identity_quarantine_rows": 48,
         "quarantine": 51,
         "rejected_county_rows": 0,
         "resolved_county_rows": 11_818,
@@ -42,6 +53,7 @@ def test_published_artifacts_bind_manifest_schemas_and_exact_denominators() -> N
         "service_territory_rows": 11_866,
         "sources": 2,
         "unresolved_county_rows": 37,
+        "unknown_utility_rows": 3,
         "utilities": 3_413,
         "utilities_by_validation_status": {"accepted": 3_380, "needs_review": 33},
         "utility_activities": 1_706,
@@ -118,3 +130,60 @@ def test_cache_is_required_and_never_replaced_by_fixture_data(tmp_path: Path) ->
     corrupt.write_bytes(b"not reviewed source bytes")
     with pytest.raises(ValueError, match="hash"):
         checked_archive(corrupt)
+
+
+def test_normalized_geography_digest_is_line_ending_independent_and_domain_schema_is_strict() -> None:
+    value = {"states": [{"state_fips": "13"}], "counties": []}
+    lf = json.dumps(value, indent=2) + "\n"
+    crlf = lf.replace("\n", "\r\n")
+    assert canonical_json_sha(json.loads(lf)) == canonical_json_sha(json.loads(crlf))
+    snapshot, _ = load_published_snapshot(ROOT)
+    malformed = {**snapshot["utilities"][0], "unexpected": True}
+    with pytest.raises(ValueError, match="record"):
+        validate_records_schema([malformed], ROOT / "data" / "verified" / "schemas" / "domain-record.schema.json")
+
+
+def _workbook_bytes(sheets: dict[str, tuple[int, list[object]]]) -> bytes:
+    workbook = openpyxl.Workbook()
+    workbook.remove(workbook.active)
+    for name, (header_row, values) in sheets.items():
+        sheet = workbook.create_sheet(name)
+        for row in range(1, header_row):
+            sheet.cell(row, 1, "title")
+        sheet.append([f"field-{index}" for index in range(len(values))])
+        sheet.append(values)
+    output = io.BytesIO()
+    workbook.save(output)
+    return output.getvalue()
+
+
+def test_same_vintage_name_and_ownership_conflicts_are_rejected_and_quarantined() -> None:
+    geography = GeographyIndex(
+        {
+            "states": [{"state_fips": "13", "usps": "GA"}],
+            "counties": [
+                {
+                    "county_geoid": "13001",
+                    "state_fips": "13",
+                    "state_usps": "GA",
+                    "name": "Appling",
+                    "full_name": "Appling County",
+                }
+            ],
+        }
+    )
+    known = {"1": {"eia_utility_id": "1", "name": "Reference Utility", "ownership": "Investor Owned"}}
+    activity = [2024, 1, "Different Utility", "GA", "Municipal", None, *([None] * 26)]
+    activity_bytes = _workbook_bytes({"States": (2, activity), "Territories": (2, [])})
+    activities, activity_quarantine = _activities(activity_bytes, geography, known)
+    assert activities[0]["validation_status"] == "rejected"
+    assert activity_quarantine[0]["reason"] == "comparable_field_conflict"
+    assert activity_quarantine[0]["conflicting_fields"] == ["name", "ownership"]
+
+    territory = [2024, 1, "Different Utility", None, "GA", "Appling"]
+    territory_bytes = _workbook_bytes({"Counties_States": (1, territory), "Counties_Territories": (1, [])})
+    territories, assertions, territory_quarantine = _territories(territory_bytes, geography, known)
+    assert territories[0]["county_geoid"] == "13001"
+    assert territories[0]["validation_status"] == "rejected"
+    assert assertions[0]["validation_status"] == "rejected"
+    assert territory_quarantine[0]["reason"] == "comparable_field_conflict"

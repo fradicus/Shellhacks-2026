@@ -4,7 +4,7 @@ This snapshot imports the reviewed 2024 final Form EIA-861 archive. It contains 
 
 EIA's county rows mean distribution-equipment presence. They are neither exclusive service polygons nor transmission project locations. Census checks the county identity and state parent only; it does not independently corroborate EIA's service claim. Accordingly, `coverage.json` reports zero independently corroborated service claims.
 
-The tracked artifacts are normalized public records. Raw workbooks and the source ZIP stay in the ignored `data/verified/cache/` directory. Each row retains its EIA archive/member hashes, sheet and row; `manifest.json` binds every tracked artifact. `generated_at` is an explicit replay input and is excluded from the dataset hash. The source retrieval time remains bound to the reviewed source record.
+The tracked artifacts are normalized public records. Raw workbooks and the source ZIP stay in the ignored `data/verified/cache/` directory. Each row retains its EIA archive/member hashes, sheet and row; `manifest.json` binds every tracked artifact. The Census source record binds a labeled canonical digest of the normalized `data/national/geography.json` value, rather than claiming that digest is an original Census download hash. JSON artifacts are pinned to LF so byte hashes survive Windows checkouts. `generated_at` is an explicit replay input and is excluded from the dataset hash. The source retrieval time remains bound to the reviewed source record.
 
 From `pipeline/`, use the pinned environment:
 
@@ -13,6 +13,6 @@ uv run python -m verified --repo-root .. --generated-at 2026-09-26T18:00:22.2621
 uv run python -m verified --repo-root .. --generated-at 2026-09-26T18:00:22.262176+00:00
 ```
 
-The first command validates a replay against the committed dataset without writing. The second writes artifacts after all archive, member, foreign-key, geography-parent, lineage and exact-count checks pass. `--refresh` is optional and accepts only bounded credential-free HTTPS redirects on `www.eia.gov`; the result must still equal the reviewed archive hash. A changed official release requires a new source review and hash update.
+The first command validates a replay against the committed dataset without writing. The second writes artifacts after all archive, member, foreign-key, same-vintage comparable-field, geography-parent, lineage, strict record-schema and exact-count checks pass. Comparable name/ownership conflicts are rejected into quarantine; the reviewed archive currently has zero. `--refresh` is optional and accepts only bounded credential-free HTTPS redirects on `www.eia.gov`; the result must still equal the reviewed archive hash. A changed official release requires a new source review and hash update.
 
 `GET /api/verified` accepts only `state`, `county`, `q`, `page` and `limit`. County requires its two-digit parent state; `q` performs bounded literal matching against utility ID/name; page starts at 1 and limit defaults to 25 with a maximum of 100. `GET /api/verified/coverage` exposes vintages, counts and limitations. Missing or hash-invalid artifacts return an unavailable response rather than fixture rows. Public API records omit raw workbook evidence.
