@@ -7,12 +7,22 @@ import { isUnavailable } from "@/lib/types";
 
 type Props = { params: Promise<{ id: string }> };
 
+/** Page params arrive still percent-encoded (unlike route handlers), so decode exactly once; malformed -> null. */
+function pairId(raw: string): string | null {
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return null;
+  }
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return { title: `Pair ${decodeURIComponent((await params).id)} · GridBridge` };
+  return { title: `Pair ${pairId((await params).id) ?? ""} · GridBridge` };
 }
 
 export default async function PairPage({ params }: Props) {
-  const id = decodeURIComponent((await params).id);
+  const id = pairId((await params).id);
+  if (!id) notFound();
   const detail = await getPair(id);
   if (isUnavailable(detail)) {
     return (
