@@ -67,6 +67,8 @@ test("real backend readiness renders at desktop and mobile without a site reques
   await expect(readiness.getByText("3,413 utilities · 2024 EIA vintage")).toBeVisible();
   await expect(readiness.getByText(/Separate LVR provisioning required/)).toBeVisible();
   await expect(readiness.getByText(/No current, externally approved model/)).toBeVisible();
+  await page.locator("summary").filter({ hasText: "Truck route" }).click();
+  await page.evaluate(() => scrollTo(0, 0));
   await page.screenshot({ path: testInfo.outputPath("operations-real-backend-initial-1440.png"), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }));
@@ -93,11 +95,14 @@ test("mixed provider states stay bound to the submitted worksite without hydrati
   await page.getByRole("button", { name: "Check worksite" }).press("Enter");
   await expect(page.getByRole("heading", { name: "Synthetic Seattle yard" })).toBeVisible();
   await expect(page.getByText("Synthetic test-only clouds")).toBeVisible();
-  await expect(page.getByText("outside supported road-work coverage", { exact: false })).toBeVisible();
+  await expect(page.getByRole("paragraph").filter({ hasText: "outside supported road-work coverage" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Evaluate actual-outcome cohort" })).toBeDisabled();
   await expect(page.getByText(/No numerical estimate/)).toHaveCount(0);
   await expect(page.getByRole("button", { name: "Refresh cooling down" })).toBeDisabled();
   expect(errors.filter((error) => /hydration|did not match|uncaught/i.test(error))).toEqual([]);
+  await page.locator("summary").filter({ hasText: "Truck route" }).click();
+  await page.locator("summary").filter({ hasText: "Construction duration evidence" }).click();
+  await page.evaluate(() => scrollTo(0, 0));
   await page.screenshot({ path: testInfo.outputPath("mocked-operations-1440.png"), fullPage: true });
 });
 
@@ -144,7 +149,7 @@ test("stale responses cannot replace evidence and polling stops while hidden or 
 
   await page.getByLabel("Latitude", { exact: true }).fill(String(point.lat));
   await page.getByRole("button", { name: "Check worksite" }).click();
-  await expect(page.getByRole("alert").last()).toContainText("including failed checks");
+  await expect(page.locator("main").getByRole("alert").filter({ hasText: "including failed checks" })).toBeVisible();
   expect(siteCalls).toBe(1);
   await page.clock.fastForward(60_100);
   await page.getByRole("button", { name: "Check worksite" }).click();
@@ -182,7 +187,7 @@ test("readiness can retry and bounds errors are field-friendly", async ({ page }
   await page.getByLabel("Longitude", { exact: true }).fill("-122.3");
   await page.getByLabel("Annual AEF year").selectOption("2025");
   await page.getByRole("button", { name: "Check worksite" }).click();
-  const alert = page.getByRole("alert").last();
+  const alert = page.locator("main").getByRole("alert").filter({ hasText: "Latitude:" });
   await expect(alert).toContainText("Latitude:");
   await expect(alert).not.toContainText('"code"');
 });

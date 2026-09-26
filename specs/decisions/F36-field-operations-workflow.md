@@ -1,0 +1,11 @@
+# F36: one-estimator evidence workflow
+
+The operations desk starts from a label, exact latitude/longitude and annual AEF year supplied by the estimator. It does not infer a site from a utility, county, project record or satellite embedding. The verified EIA directory is optional source context, and its county rows are not asserted service territory or project geography.
+
+Weather, road work, soil, annual AEF, truck routing and completed-job outcomes remain separate evidence cards with provider state, retrieval/source times, coverage and limitations. A missing or stale provider does not erase another provider's valid evidence. Route results are an attributed route-only presentation and never appear on MapLibre. Route travel time is not construction duration. The AEF embedding is annual context, not live navigation, soil strength or a physical approval.
+
+The first worksite request checks all site providers. Later weather and road-work attempts use the slowest declared current-provider interval, never less than 60 seconds, and one per-point attempt clock covers initial, manual and automatic requests, including failures. Polling runs only for the active unchanged point while the page is visible. Draft changes, hidden visibility and unmount abort obsolete requests; late responses cannot replace current evidence. Rechecking unchanged point/year reuses soil and annual evidence rather than invoking those providers again.
+
+The browser independently validates strict response shapes, provider/status/data coherence, coverage partitions, credential-free HTTPS source allowlists and the exact submitted request binding. Schema-valid usable evidence returned with an HTTP error is rejected. Outcome intervals require positive ordered bounds, the F35 support minima, nonnegative evaluation errors and coherent probability counts. If no externally approved actual-history model exists, the page abstains without a duration or probability.
+
+Browser evidence includes real-backend initial desktop/mobile readiness and explicitly named synthetic mixed-state screenshots. Real provider calls beyond readiness are not made by the browser tests. The page remains usable without route credentials, an AEF point match or an outcome model; these states are shown as unavailable rather than replaced with fixtures or guesses.
