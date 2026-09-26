@@ -598,6 +598,15 @@ export function TimeView({
       <div className={s.vignette} aria-hidden />
       <div className={s.grain} aria-hidden />
 
+      <p className="visually-hidden" role="status" aria-live="polite">
+        {pair && pa && pb
+          ? `Selected: ${pa.name} and ${pb.name}. ${miles(pair.distance_mi)} apart; ${
+              pair.time_gap_days === null ? "day gap unknown" : fmtDays(pair.time_gap_days) + " between in-service dates"
+            }. ${REVIEW[pair.review_state ?? "needs_review"]}.`
+          : project
+            ? `Selected project: ${project.name}.`
+            : ""}
+      </p>
       <div className={s.labels} aria-hidden>
         {labelSpecs.map((l) => (
           <div
@@ -689,7 +698,14 @@ export function TimeView({
             })}
           </ol>
         ) : (
-          <p className={s.empty}>No {view} pairs in this data. Zero is a valid result.</p>
+          <div className={s.empty}>
+            <p>No {view} pairs in this data. Zero is a valid result, not a failure to look.</p>
+            {VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (
+              <button key={v} type="button" onClick={() => changeView(v)}>
+                Show {label.toLowerCase()} ({counts[v]}) →
+              </button>
+            ))}
+          </div>
         )}
         <p className={s.footnote}>Priority order as stored: nearer band first, then the smaller exact day gap.</p>
       </nav>
