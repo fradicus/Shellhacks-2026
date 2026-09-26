@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "owner:DU",
+    "citation": null,
+    "code": "DU",
+    "mapping_status": "unverified",
+    "organization": null,
+    "reason": "No approved owner-code legend or official code mapping was found within F02 scope.",
+    "utility": "unknown"
+  },
+  {
+    "_id": "owner:GPC",
+    "basis": "The plan sponsor code is GPC; the cited official company page identifies Georgia Power.",
+    "citation": {
+      "accessed_at": "2026-09-26",
+      "publisher": "Georgia Power Company",
+      "title": "Company Overview",
+      "url": "https://www.georgiapower.com/about/company.html"
+    },
+    "code": "GPC",
+    "mapping_status": "verified",
+    "organization": "Georgia Power Company",
+    "utility": "GPC"
+  },
+  {
+    "_id": "owner:GTC",
+    "citation": null,
+    "code": "GTC",
+    "mapping_status": "unverified",
+    "organization": null,
+    "reason": "No approved owner-code legend or official code mapping was found within F02 scope.",
+    "utility": "unknown"
+  },
+  {
+    "_id": "owner:MEAG",
+    "citation": null,
+    "code": "MEAG",
+    "mapping_status": "unverified",
+    "organization": null,
+    "reason": "No approved owner-code legend or official code mapping was found within F02 scope.",
+    "utility": "unknown"
+  },
+  {
+    "_id": "owner:SAV",
+    "basis": "Georgia Power's SEC-filed Form 8-K states that Savannah Electric merged with and into Georgia Power on 2006-07-01, with Georgia Power as the surviving corporation.",
+    "citation": {
+      "accessed_at": "2026-09-26",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "title": "Georgia Power Company Form 8-K - Savannah Electric merger",
+      "url": "https://www.sec.gov/Archives/edgar/data/41091/000009212206000285/gamerger8k07-06edg.htm"
+    },
+    "code": "SAV",
+    "mapping_status": "verified",
+    "organization": "Georgia Power Company",
+    "utility": "GPC"
+  }
+]

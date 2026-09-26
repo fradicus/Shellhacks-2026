@@ -1,0 +1,43 @@
+{
+  "ambiguous_rows": 0,
+  "coverage_note": "full_current_plan",
+  "denominator_rows": 208,
+  "duplicate_native_ids": [],
+  "duplicate_project_keys": [],
+  "excluded_tables": [
+    {
+      "page": 191,
+      "reason": "Separate cancelled-projects table; rows are removed from the current Ten-Year Plan."
+    }
+  ],
+  "mapped_owner_rows": 138,
+  "rows_emitted": 208,
+  "rows_per_owner_code": {
+    "DU": 2,
+    "GPC": 122,
+    "GTC": 54,
+    "MEAG": 14,
+    "SAV": 16
+  },
+  "rows_per_zone": {
+    "201": 20,
+    "202": 10,
+    "206": 14,
+    "208": 22,
+    "211": 14,
+    "212": 28,
+    "213": 15,
+    "214": 32,
+    "215": 13,
+    "216": 18,
+    "218": 6,
+    "219": 16
+  },
+  "source_id": "gpc-2025",
+  "table": "GA ITS Ten-Year Plan (2025-2034)",
+  "table_pages": {
+    "first": 177,
+    "last": 190
+  },
+  "unknown_owner_rows": 70
+}
