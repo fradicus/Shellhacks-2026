@@ -109,3 +109,14 @@ def test_failed_validation_does_not_flip(data_root):
     assert db.meta.find_one({"_id": "active"})["dataset"] == "good"
     assert db.runs.find_one({"_id": "load:bad"})["status"] == "failed"
     assert db.matches.count_documents({"dataset": "bad"}) == 0
+
+
+def test_filed_endpoints_kept_apart_from_locations(data_root):
+    records, _, _ = collect(data_root)
+    p = dict(records["projects"][0])
+    p["endpoints"] = [{"name": "Queensboro", "raw": "Queensboro", "norm": "QUEENSBORO"}]
+    [joined] = join_projects([p], [])
+    assert joined["filed_endpoints"] == p["endpoints"] and "endpoints" not in joined
+    [joined] = join_projects([p], [loc for loc in records["locations"] if loc["project_key"] == p["project_key"]])
+    assert joined["filed_endpoints"][0]["name"] == "Queensboro"
+    assert all("confidence" in e for e in joined["endpoints"])

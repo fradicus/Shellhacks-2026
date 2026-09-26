@@ -78,6 +78,9 @@ def join_projects(projects: list[dict], locations: list[dict]) -> list[dict]:
     for p in projects:
         eps = sorted(by_key.get(p["project_key"], []), key=lambda e: (e["endpoint_index"], e["_id"]))
         joined = dict(p)
+        # Parsers (F01/F02) emit filed endpoint names under `endpoints`; keep them apart from located endpoints.
+        if "endpoints" in joined:
+            joined["filed_endpoints"] = joined.pop("endpoints")
         if eps:
             joined["endpoints"] = eps
             joined["center"] = center(eps)
