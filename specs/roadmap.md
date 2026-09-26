@@ -103,7 +103,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F33 | Verified EIA directory and evidence reconciliation | A | data-researcher | 6 | F00 | never |
 | F34 | Environmental evidence, current conditions and truck route adapters | A | geo-engineer | 6 | F00 | never |
 | F35 | Actual job outcomes, evaluated duration and delay estimates | B | technical-lead | 6 | F00 | never |
-| F36 | Field operations planning desk | B | frontend-engineer | 6 | F00 | never |
+| F36 | Field operations planning desk | B | frontend-engineer | 6 | F33, F34, F35 | never |
 
 ## Authorized follow-on: national discovery
 
@@ -111,7 +111,7 @@ The user's 2026-09-26 follow-on authorizes C11/F30/F31 and a separate F32 branch
 
 ## Authorized follow-on: verified field operations
 
-The user's later sponsor Q&A transcript and board photo authorize C15/F33–F36 after the original run gates. [C15](decisions/C15-verified-operations.md) governs source reconciliation, EIA scope, annual AlphaEarth context, current conditions, truck restrictions, and real outcome evaluation. Workers may build the independent modules concurrently against the C15 contract; integrated acceptance requires all applicable artifacts and honest unavailable states. The root owns C15/shared integration and F35. F33 is the data researcher, F34 the geospatial engineer, F36 the frontend engineer. Each uses a separate worktree and independent review. Existing F06/F12/F19/F20 and C13/C14 work on other computers remains with its current owners. F32 remains an optional separate branch. Credentials and actual completed-job data are prerequisites for live results, not permission to invent them.
+The user's later sponsor Q&A transcript and board photo authorize C15/F33–F36 after the original run gates. [C15](decisions/C15-verified-operations.md) governs source reconciliation, EIA scope, annual AlphaEarth context, current conditions, truck restrictions, and real outcome evaluation. F33/F34/F35 may build their independent modules concurrently against C15; F36 starts after their exported types and completion markers exist. Integrated acceptance requires all applicable artifacts and honest unavailable states. The root owns C15/shared integration and F35. F33 is the data researcher, F34 the geospatial engineer, F36 the frontend engineer. Each uses a separate worktree and independent review. Existing F06/F12/F19/F20 and C13/C14 work on other computers remains with its current owners. F32 remains an optional separate branch. Credentials and actual completed-job data are prerequisites for live results, not permission to invent them.
 
 F18 starts at 0:00 alongside F00 and merges
 status updates as `[F18] status HH:MM` parts. At the user's expedited-completion request, F18 may publish its final report, `STOP` and `changes/F18.md` before the scheduled `report` gate once all non-stretch implementation features and core corrections are verified complete (or an allowed cut is explicitly recorded), the final integration checks pass, and deferred live services are stated clearly. Otherwise the scheduled report gate remains the deadline. F18 itself is the final reporting step; optional F17 need not start. This does not waive merge checks or permit an unresolved core defect to be called complete.
