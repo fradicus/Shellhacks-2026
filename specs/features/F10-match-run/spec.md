@@ -30,4 +30,4 @@ cut: never
 - PR body: pairs evaluated, overlaps per view/band, and the top 10 with distance and gap.
 
 ## Defaults
-- A project with one located endpoint uses it as the center, with `center_basis: one`, and is never `future` unless that endpoint is high confidence.
+- A project with one located endpoint uses it as the center, with `center.basis: "one"`, and is never `future` unless that endpoint is high confidence.

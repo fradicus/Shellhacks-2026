@@ -6,6 +6,7 @@
 //
 // Call it from server components and route handlers. Client components get data as props, or fetch /api/* directly.
 
+import { unstable_rethrow } from "next/navigation";
 import type {
   Coverage,
   Extraction,
@@ -128,6 +129,8 @@ async function guard<T>(what: string, fn: () => Promise<T>): Promise<Result<T>> 
   try {
     return await fn();
   } catch (err) {
+    // Let Next's own control-flow errors through (e.g. the "render dynamically" bailout during build).
+    unstable_rethrow(err);
     const reason = err instanceof Error ? err.message : String(err);
     console.error(`data.${what} unavailable: ${reason}`);
     return { unavailable: true, reason: `${what}: ${reason}` };

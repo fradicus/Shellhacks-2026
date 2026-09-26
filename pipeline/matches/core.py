@@ -69,14 +69,20 @@ def is_overlap(pa: dict[str, Any], pb: dict[str, Any]) -> tuple[bool, float | No
     return d < OVERLAP_MI, d
 
 
+def trusted_center(p: dict[str, Any]) -> bool:
+    """A center good enough for `future`: high/medium confidence, and high if it rests on one endpoint (F10)."""
+    conf = p.get("location_confidence")
+    basis = (p.get("center") or {}).get("basis")
+    return conf == "high" or (conf == "medium" and basis != "one")
+
+
 def view(pa: dict[str, Any], pb: dict[str, Any], analysis_date: date) -> str:
-    """historical: an exact date before analysis_date. future: both exact dates on/after it and both centers from
-    high/medium locations. tentative: everything else (unknown date, low or unknown location confidence)."""
+    """historical: an exact date before analysis_date. future: both exact dates on/after it and both centers trusted
+    (see trusted_center). tentative: everything else (unknown date, low/unknown confidence, one-endpoint medium)."""
     da, db = exact_date(pa.get("in_service")), exact_date(pb.get("in_service"))
     if (da and da < analysis_date) or (db and db < analysis_date):
         return "historical"
-    trusted = ("high", "medium")
-    if da and db and pa.get("location_confidence") in trusted and pb.get("location_confidence") in trusted:
+    if da and db and trusted_center(pa) and trusted_center(pb):
         return "future"
     return "tentative"
 
