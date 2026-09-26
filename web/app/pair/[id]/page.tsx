@@ -7,22 +7,24 @@ import { isUnavailable } from "@/lib/types";
 
 type Props = { params: Promise<{ id: string }> };
 
-/** Page params arrive still percent-encoded (unlike route handlers), so decode exactly once; malformed -> null. */
-function pairId(raw: string): string | null {
-  try {
-    return decodeURIComponent(raw);
-  } catch {
-    return null;
-  }
+/** Next hands pages a partly decoded segment (in testing `%25` arrived decoded but `%3A` didn't), so neither "decode"
+ * nor "don't" is right for every id. Decode only well-formed `%XX` runs; a literal `%zz` survives. */
+function pairId(raw: string): string {
+  return raw.replace(/(?:%[0-9A-Fa-f]{2})+/g, (run) => {
+    try {
+      return decodeURIComponent(run);
+    } catch {
+      return run;
+    }
+  });
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return { title: `Pair ${pairId((await params).id) ?? ""} · GridBridge` };
+  return { title: `Pair ${pairId((await params).id)} · GridBridge` };
 }
 
 export default async function PairPage({ params }: Props) {
   const id = pairId((await params).id);
-  if (!id) notFound();
   const detail = await getPair(id);
   if (isUnavailable(detail)) {
     return (
