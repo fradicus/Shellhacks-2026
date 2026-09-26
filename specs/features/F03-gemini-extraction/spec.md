@@ -26,8 +26,8 @@ This is the visible proof that Gemini does real work (the Gemini track). **DESC 
 - Report measured numbers only.
 
 ## Validation
-- `tests/pipeline/test_f03_*.py`, **offline** (no key in CI): the validation and comparison logic runs on 2 recorded responses stored in `tests/pipeline/test_f03_fixtures/`. Include one prompt-injection page ("ignore previous instructions...") that must not change the output schema.
-- PR body: the model id, pages processed, the accuracy table, and 3 example mismatches.
+- `tests/pipeline/test_f03_*.py`, **offline** (no key in CI): the validation and comparison logic runs on 2 explicitly labeled synthetic responses stored in `tests/pipeline/test_f03_fixtures/` while live credentials are deferred. Never describe these as recorded API responses. Include one prompt-injection page ("ignore previous instructions...") that must not change the output schema; this proves local validation only, not live model resistance. Supplement with genuine recorded responses after an authorized live run.
+- PR body: the actual configured model id (or unavailable), pages processed, measured accuracy table (null when unavailable), and up to 3 actual mismatch examples. No live run means zero calls/processed responses and no invented mismatch examples. See `specs/decisions/F03-offline-evidence.md`.
 
 ## Defaults
 - If Gemini is unavailable all night: ship the pipeline, the validation logic and tests; `eval.json` records `status: unavailable`; log a decision. Never fabricate outputs.

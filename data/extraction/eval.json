@@ -1,0 +1,99 @@
+{
+  "cache_hits": 0,
+  "corpus_pages": 91,
+  "live_calls": 0,
+  "measurement": "validated_field_agreement_with_f01_not_independent_human_accuracy",
+  "model": null,
+  "pages_accepted": 0,
+  "pages_failed": 0,
+  "pages_processed": 0,
+  "pages_rejected": 0,
+  "per_field": {
+    "description": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "endpoints": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "in_service_raw": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "name": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "need": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "project_id": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "status": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "total_cost": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "voltage_kv": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    },
+    "yearly_spend": {
+      "accuracy": null,
+      "denominator": 0,
+      "invalid": 0,
+      "matched": 0,
+      "mismatched": 0,
+      "missing": 0
+    }
+  },
+  "prompt_version": "desc-evidence-v1",
+  "qa_checked": null,
+  "reason": "live_execution_not_requested",
+  "responses_received": 0,
+  "schema_version": "desc-extraction-v1",
+  "status": "unavailable"
+}
