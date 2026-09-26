@@ -1,0 +1,69 @@
+{
+  "$id": "https://gridbridge.local/schemas/source.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "anyOf": [
+    {
+      "required": [
+        "url"
+      ]
+    },
+    {
+      "required": [
+        "local_path"
+      ]
+    }
+  ],
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "filing": {
+      "type": "string"
+    },
+    "local_path": {
+      "type": "string"
+    },
+    "pages": {
+      "minimum": 1,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "public_status": {
+      "enum": [
+        "public",
+        "public_with_banner",
+        "excluded"
+      ]
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "_id",
+    "publisher",
+    "title",
+    "sha256",
+    "pages",
+    "public_status"
+  ],
+  "title": "A public source document",
+  "type": "object"
+}

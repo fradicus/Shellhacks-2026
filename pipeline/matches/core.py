@@ -1,0 +1,118 @@
+"""Canonical overlap rules (specs/mission.md). The ONLY implementation; every feature imports it. Pure, no I/O.
+
+A project dict, as consumed here:
+    {"project_key": "DESC:6807B", "utility": "DESC" | "GPC" | "unknown",
+     "center": {"lat": float, "lon": float, "basis": "two" | "one"} | None,
+     "in_service": {"raw": str, "date": "YYYY-MM-DD" | None, "precision": "day" | "month" | "year" | "unknown"},
+     "location_confidence": "high" | "medium" | "low" | None}   # weakest endpoint used for the center
+"""
+
+from collections.abc import Iterable
+from datetime import date
+from itertools import combinations
+from math import asin, cos, radians, sin, sqrt
+from typing import Any
+
+from common.ids import match_id
+
+EARTH_RADIUS_MI = 3958.8
+OVERLAP_MI = 25.0
+NEAR_BAND_MI = 10.0
+RULE_VERSION = "overlap-25mi-v1"
+RANK_VERSION = "nearby-band-v1"
+KNOWN_UTILITIES = ("DESC", "GPC")
+
+
+def center(endpoints: Iterable[dict[str, Any]]) -> dict[str, Any] | None:
+    """Mean lat/lon of the located endpoints; one located -> that point; none -> None. Rejected endpoints never count."""
+    pts = [
+        (e["lat"], e["lon"])
+        for e in endpoints
+        if e.get("lat") is not None and e.get("lon") is not None and e.get("confidence") != "rejected"
+    ]
+    if not pts:
+        return None
+    return {
+        "lat": sum(p[0] for p in pts) / len(pts),
+        "lon": sum(p[1] for p in pts) / len(pts),
+        "basis": "one" if len(pts) == 1 else "two",
+    }
+
+
+def haversine_mi(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    p1, p2 = radians(lat1), radians(lat2)
+    h = sin((p2 - p1) / 2) ** 2 + cos(p1) * cos(p2) * sin(radians(lon2 - lon1) / 2) ** 2
+    h = min(1.0, max(0.0, h))  # float error can push h just outside [0, 1]
+    return 2 * EARTH_RADIUS_MI * asin(sqrt(h))
+
+
+def exact_date(in_service: dict[str, Any] | None) -> date | None:
+    """Only day-precision dates count. Never impute Jan 1 / Dec 31 for month or year precision."""
+    if not in_service or in_service.get("precision") != "day" or not in_service.get("date"):
+        return None
+    return date.fromisoformat(in_service["date"])
+
+
+def time_gap_days(a: dict[str, Any] | None, b: dict[str, Any] | None) -> int | None:
+    da, db = exact_date(a), exact_date(b)
+    return None if da is None or db is None else abs((da - db).days)
+
+
+def is_overlap(pa: dict[str, Any], pb: dict[str, Any]) -> tuple[bool, float | None]:
+    """(overlap?, unrounded distance). Different known utilities AND both centers AND distance < 25 mi (25.0 is out)."""
+    if pa["utility"] not in KNOWN_UTILITIES or pb["utility"] not in KNOWN_UTILITIES or pa["utility"] == pb["utility"]:
+        return False, None
+    ca, cb = pa.get("center"), pb.get("center")
+    if not ca or not cb:
+        return False, None
+    d = haversine_mi(ca["lat"], ca["lon"], cb["lat"], cb["lon"])
+    return d < OVERLAP_MI, d
+
+
+def view(pa: dict[str, Any], pb: dict[str, Any], analysis_date: date) -> str:
+    """historical: an exact date before analysis_date. future: both exact dates on/after it and both centers from
+    high/medium locations. tentative: everything else (unknown date, low or unknown location confidence)."""
+    da, db = exact_date(pa.get("in_service")), exact_date(pb.get("in_service"))
+    if (da and da < analysis_date) or (db and db < analysis_date):
+        return "historical"
+    trusted = ("high", "medium")
+    if da and db and pa.get("location_confidence") in trusted and pb.get("location_confidence") in trusted:
+        return "future"
+    return "tentative"
+
+
+def overlaps(projects: Iterable[dict[str, Any]], analysis_date: date | str) -> list[dict[str, Any]]:
+    """Every overlapping cross-utility pair as a match dict (unsorted; see priority_sort). Distances stay unrounded."""
+    if isinstance(analysis_date, str):
+        analysis_date = date.fromisoformat(analysis_date)
+    out = []
+    for p, q in combinations(projects, 2):
+        hit, d = is_overlap(p, q)
+        if not hit:
+            continue
+        pa, pb = sorted((p, q), key=lambda x: x["project_key"])
+        out.append(
+            {
+                "_id": match_id(pa["project_key"], pb["project_key"]),
+                "a": pa["project_key"],
+                "b": pb["project_key"],
+                "distance_mi": d,
+                "time_gap_days": time_gap_days(pa.get("in_service"), pb.get("in_service")),
+                "band": 0 if d < NEAR_BAND_MI else 1,
+                "rule_version": RULE_VERSION,
+                "rank_version": RANK_VERSION,
+                "analysis_date": analysis_date.isoformat(),
+                "view": view(pa, pb, analysis_date),
+            }
+        )
+    return out
+
+
+def priority_key(m: dict[str, Any]) -> tuple:
+    gap = m["time_gap_days"]
+    return (m["band"], gap is None, gap if gap is not None else 0, m["distance_mi"], m["_id"])
+
+
+def priority_sort(matches: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    """nearby-band-v1: band 0 before 1, exact gap ascending (unknown last), unrounded distance, pair id. Adds `rank`."""
+    return [{**m, "rank": i} for i, m in enumerate(sorted(matches, key=priority_key), start=1)]

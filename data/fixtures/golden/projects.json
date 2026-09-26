@@ -1,0 +1,212 @@
+[
+  {
+    "endpoints": [
+      {
+        "lat": 33.562599,
+        "lon": -82.051362,
+        "name": "Stevens Creek Sub"
+      },
+      {
+        "lat": null,
+        "lon": null,
+        "name": "Hooks Sub"
+      }
+    ],
+    "in_service_date": "2024-12-31",
+    "in_service_raw": "12/31/2024",
+    "project_id": "DESC_1",
+    "project_name": "Stevens Creek - Hooks 115 kV / LR Plumb Branch 46 kV Rebuilds",
+    "row": 2,
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": null,
+        "lon": null,
+        "name": "Hooks Sub"
+      },
+      {
+        "lat": 33.660127,
+        "lon": -82.195931,
+        "name": "Thurmond Sub"
+      }
+    ],
+    "in_service_date": "2024-12-31",
+    "in_service_raw": "12/31/2024",
+    "project_id": "DESC_2",
+    "project_name": "Hooks - Thurmond 115 kV Tie: Rebuild",
+    "row": 3,
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 32.35912,
+        "lon": -81.1246,
+        "name": "Jasper Sub"
+      },
+      {
+        "lat": 32.333758,
+        "lon": -81.032495,
+        "name": "Okatie Sub"
+      }
+    ],
+    "in_service_date": "2025-12-31",
+    "in_service_raw": "12/31/2025",
+    "project_id": "DESC_3",
+    "project_name": "Jasper - Okatie 230 kV #2: Construct",
+    "row": 4,
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 32.722793,
+        "lon": -79.967332,
+        "name": "Queensboro Sub"
+      },
+      {
+        "lat": null,
+        "lon": null,
+        "name": "Ft Johnson Sub"
+      }
+    ],
+    "in_service_date": "2023-12-31",
+    "in_service_raw": "12/31/2023",
+    "project_id": "DESC_4",
+    "project_name": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115 kV (Queensboro-James Island Sect)",
+    "row": 5,
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 32.333758,
+        "lon": -81.032495,
+        "name": "Okatie Sub"
+      },
+      {
+        "lat": 32.235027,
+        "lon": -80.853384,
+        "name": "Bluffton Sub"
+      }
+    ],
+    "in_service_date": "2025-06-01",
+    "in_service_raw": "6/1/2025",
+    "project_id": "DESC_5",
+    "project_name": "Okatie-Bluffton 115 kV: Rebuild",
+    "row": 6,
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 33.543994,
+        "lon": -82.168648,
+        "name": "EVANS PRIMARY"
+      },
+      {
+        "lat": 33.660127,
+        "lon": -82.195931,
+        "name": "THURMOND DAM #5"
+      }
+    ],
+    "in_service_date": "2033-06-01",
+    "in_service_raw": "6/1/2033",
+    "project_id": "GPC_1",
+    "project_name": "EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD",
+    "row": 7,
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 32.352116,
+        "lon": -81.175112,
+        "name": "MCINTOSH"
+      },
+      {
+        "lat": null,
+        "lon": null,
+        "name": "PURRYSBURG"
+      }
+    ],
+    "in_service_date": "2026-06-01",
+    "in_service_raw": "6/1/2026",
+    "project_id": "GPC_2",
+    "project_name": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
+    "row": 8,
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 32.248701,
+        "lon": -81.209472,
+        "name": "GOSHEN"
+      },
+      {
+        "lat": 32.352116,
+        "lon": -81.182105,
+        "name": "MCINTOSH"
+      }
+    ],
+    "in_service_date": "2027-06-01",
+    "in_service_raw": "6/1/2027",
+    "project_id": "GPC_3",
+    "project_name": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+    "row": 9,
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 31.447121,
+        "lon": -84.133843,
+        "name": "Mitchell Substation"
+      },
+      {
+        "lat": 31.478089,
+        "lon": -83.54913,
+        "name": "North Tifton Substation"
+      }
+    ],
+    "in_service_date": "2025-05-01",
+    "in_service_raw": "5/1/2025",
+    "project_id": "GPC_4",
+    "project_name": "MITCHELL - NORTH TIFTON 230KV RECONDUCTOR",
+    "row": 10,
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "endpoints": [
+      {
+        "lat": 31.603106,
+        "lon": -81.924947,
+        "name": "JESUP"
+      },
+      {
+        "lat": 31.721597,
+        "lon": -81.743703,
+        "name": "LUDOWICI PRIMARY"
+      }
+    ],
+    "in_service_date": "2025-06-01",
+    "in_service_raw": "6/1/2025",
+    "project_id": "GPC_5",
+    "project_name": "JESUP - LUDOWICI PRIMARY 115KV REBUILD",
+    "row": 11,
+    "state": "GA",
+    "utility": "GPC"
+  }
+]

@@ -1,0 +1,32 @@
+[project]
+name = "gridbridge-pipeline"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pdfplumber",
+    "openpyxl",
+    "google-genai",
+    "pymongo",
+    "jsonschema",
+    "pyyaml",
+    "mongomock",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+# Tests live at the repo root (tests/golden, tests/pipeline); pipeline packages import as top-level modules.
+pythonpath = ["."]
+testpaths = ["../tests/golden", "../tests/pipeline"]
+addopts = "--import-mode=importlib"
+
+[tool.ruff]
+line-length = 130
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

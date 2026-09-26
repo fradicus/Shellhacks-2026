@@ -1,0 +1,76 @@
+{
+  "$id": "https://gridbridge.local/schemas/match.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "a": {
+      "type": "string"
+    },
+    "analysis_date": {
+      "format": "date",
+      "type": "string"
+    },
+    "b": {
+      "type": "string"
+    },
+    "band": {
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "distance_mi": {
+      "exclusiveMaximum": 25,
+      "minimum": 0,
+      "type": "number"
+    },
+    "rank": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "rank_version": {
+      "type": "string"
+    },
+    "review_state": {
+      "enum": [
+        "needs_review",
+        "confirmed",
+        "rejected"
+      ]
+    },
+    "rule_version": {
+      "type": "string"
+    },
+    "time_gap_days": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "view": {
+      "enum": [
+        "future",
+        "historical",
+        "tentative"
+      ]
+    }
+  },
+  "required": [
+    "_id",
+    "a",
+    "b",
+    "distance_mi",
+    "time_gap_days",
+    "band",
+    "rule_version",
+    "rank_version",
+    "analysis_date",
+    "view"
+  ],
+  "title": "A cross-utility overlap produced by pipeline/matches/core.py",
+  "type": "object"
+}

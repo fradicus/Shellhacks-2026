@@ -1,0 +1,194 @@
+[
+  {
+    "_id": "DESC:DESC_1#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 2 cols F:G",
+    "lat": 33.562599,
+    "lon": -82.051362,
+    "name": "Stevens Creek Sub",
+    "project_key": "DESC:DESC_1"
+  },
+  {
+    "_id": "DESC:DESC_1#1",
+    "confidence": "rejected",
+    "endpoint_index": 1,
+    "evidence": "No coordinates in the sponsor sample (projects row 2)",
+    "name": "Hooks Sub",
+    "project_key": "DESC:DESC_1"
+  },
+  {
+    "_id": "DESC:DESC_2#0",
+    "confidence": "rejected",
+    "endpoint_index": 0,
+    "evidence": "No coordinates in the sponsor sample (projects row 3)",
+    "name": "Hooks Sub",
+    "project_key": "DESC:DESC_2"
+  },
+  {
+    "_id": "DESC:DESC_2#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 3 cols I:J",
+    "lat": 33.660127,
+    "lon": -82.195931,
+    "name": "Thurmond Sub",
+    "project_key": "DESC:DESC_2"
+  },
+  {
+    "_id": "DESC:DESC_3#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 4 cols F:G",
+    "lat": 32.35912,
+    "lon": -81.1246,
+    "name": "Jasper Sub",
+    "project_key": "DESC:DESC_3"
+  },
+  {
+    "_id": "DESC:DESC_3#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 4 cols I:J",
+    "lat": 32.333758,
+    "lon": -81.032495,
+    "name": "Okatie Sub",
+    "project_key": "DESC:DESC_3"
+  },
+  {
+    "_id": "DESC:DESC_4#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 5 cols F:G",
+    "lat": 32.722793,
+    "lon": -79.967332,
+    "name": "Queensboro Sub",
+    "project_key": "DESC:DESC_4"
+  },
+  {
+    "_id": "DESC:DESC_4#1",
+    "confidence": "rejected",
+    "endpoint_index": 1,
+    "evidence": "No coordinates in the sponsor sample (projects row 5)",
+    "name": "Ft Johnson Sub",
+    "project_key": "DESC:DESC_4"
+  },
+  {
+    "_id": "DESC:DESC_5#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 6 cols F:G",
+    "lat": 32.333758,
+    "lon": -81.032495,
+    "name": "Okatie Sub",
+    "project_key": "DESC:DESC_5"
+  },
+  {
+    "_id": "DESC:DESC_5#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 6 cols I:J",
+    "lat": 32.235027,
+    "lon": -80.853384,
+    "name": "Bluffton Sub",
+    "project_key": "DESC:DESC_5"
+  },
+  {
+    "_id": "GPC:GPC_1#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 7 cols F:G",
+    "lat": 33.543994,
+    "lon": -82.168648,
+    "name": "EVANS PRIMARY",
+    "project_key": "GPC:GPC_1"
+  },
+  {
+    "_id": "GPC:GPC_1#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 7 cols I:J",
+    "lat": 33.660127,
+    "lon": -82.195931,
+    "name": "THURMOND DAM #5",
+    "project_key": "GPC:GPC_1"
+  },
+  {
+    "_id": "GPC:GPC_2#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 8 cols F:G",
+    "lat": 32.352116,
+    "lon": -81.175112,
+    "name": "MCINTOSH",
+    "project_key": "GPC:GPC_2"
+  },
+  {
+    "_id": "GPC:GPC_2#1",
+    "confidence": "rejected",
+    "endpoint_index": 1,
+    "evidence": "No coordinates in the sponsor sample (projects row 8)",
+    "name": "PURRYSBURG",
+    "project_key": "GPC:GPC_2"
+  },
+  {
+    "_id": "GPC:GPC_3#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 9 cols F:G",
+    "lat": 32.248701,
+    "lon": -81.209472,
+    "name": "GOSHEN",
+    "project_key": "GPC:GPC_3"
+  },
+  {
+    "_id": "GPC:GPC_3#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 9 cols I:J",
+    "lat": 32.352116,
+    "lon": -81.182105,
+    "name": "MCINTOSH",
+    "project_key": "GPC:GPC_3"
+  },
+  {
+    "_id": "GPC:GPC_4#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 10 cols F:G",
+    "lat": 31.447121,
+    "lon": -84.133843,
+    "name": "Mitchell Substation",
+    "project_key": "GPC:GPC_4"
+  },
+  {
+    "_id": "GPC:GPC_4#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 10 cols I:J",
+    "lat": 31.478089,
+    "lon": -83.54913,
+    "name": "North Tifton Substation",
+    "project_key": "GPC:GPC_4"
+  },
+  {
+    "_id": "GPC:GPC_5#0",
+    "confidence": "high",
+    "endpoint_index": 0,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 11 cols F:G",
+    "lat": 31.603106,
+    "lon": -81.924947,
+    "name": "JESUP",
+    "project_key": "GPC:GPC_5"
+  },
+  {
+    "_id": "GPC:GPC_5#1",
+    "confidence": "high",
+    "endpoint_index": 1,
+    "evidence": "Coordinates from the sponsor sample workbook, projects row 11 cols I:J",
+    "lat": 31.721597,
+    "lon": -81.743703,
+    "name": "LUDOWICI PRIMARY",
+    "project_key": "GPC:GPC_5"
+  }
+]

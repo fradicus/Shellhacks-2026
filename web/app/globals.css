@@ -1,0 +1,114 @@
+/* Frozen after F00. Feature styles belong in each feature's CSS modules; only shared tokens live here. */
+
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --surface-2: #f1f1ee;
+  --border: #deded9;
+  --text: #1c1c1a;
+  --muted: #62625c;
+  --accent: #0f766e;
+  --focus: #2563eb;
+
+  --desc: #2563eb; /* Dominion Energy South Carolina */
+  --desc-bg: #e6eefd;
+  --gpc: #ea580c; /* Georgia Power */
+  --gpc-bg: #fdede3;
+  --unknown: #71717a;
+  --unknown-bg: #ededee;
+
+  --band0: #0f766e;
+  --band0-bg: #dcf2ef;
+  --band1: #7c5b12;
+  --band1-bg: #f6ecd2;
+  --warn: #9a3412;
+  --warn-bg: #fdebdd;
+  --ok: #166534;
+  --ok-bg: #dcf3e3;
+
+  --radius: 6px;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --nav-h: 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+code,
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+main {
+  padding: 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 16px 0 8px;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 12px 0 6px;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0;
+    max-width: none;
+  }
+}

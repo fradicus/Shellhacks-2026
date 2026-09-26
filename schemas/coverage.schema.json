@@ -1,0 +1,20 @@
+{
+  "$id": "https://gridbridge.local/schemas/coverage.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "description": "source_id",
+      "type": "string"
+    },
+    "counts": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "_id",
+    "counts"
+  ],
+  "title": "Extraction/location/review counts for one source, with denominators",
+  "type": "object"
+}

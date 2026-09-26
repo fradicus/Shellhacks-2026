@@ -1,0 +1,178 @@
+{
+  "$id": "https://gridbridge.local/schemas/project.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "description": "<project_key>@<source_id>",
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "center": {
+      "properties": {
+        "basis": {
+          "enum": [
+            "two",
+            "one"
+          ]
+        },
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "geo": {
+      "description": "GeoJSON Point of the center for the 2dsphere index",
+      "oneOf": [
+        {
+          "properties": {
+            "coordinates": {
+              "description": "[lon, lat] (GeoJSON order)",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            "type": {
+              "const": "Point"
+            }
+          },
+          "required": [
+            "type",
+            "coordinates"
+          ],
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "in_service": {
+      "properties": {
+        "date": {
+          "format": "date",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            "unknown"
+          ]
+        },
+        "raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "raw",
+        "date",
+        "precision"
+      ],
+      "type": "object"
+    },
+    "location_confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        null
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "native_id": {
+      "type": "string"
+    },
+    "owner_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_key": {
+      "pattern": "^(DESC|GPC|UNKNOWN):.+$",
+      "type": "string"
+    },
+    "source": {
+      "properties": {
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "source_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "page"
+      ],
+      "type": "object"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "utility": {
+      "enum": [
+        "DESC",
+        "GPC",
+        "unknown"
+      ]
+    },
+    "voltage_kv": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "_id",
+    "project_key",
+    "utility",
+    "owner_code",
+    "native_id",
+    "name",
+    "source",
+    "in_service",
+    "active"
+  ],
+  "title": "One project as published in one filing",
+  "type": "object"
+}

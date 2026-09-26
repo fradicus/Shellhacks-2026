@@ -1,0 +1,332 @@
+[
+  {
+    "_id": "DESC:DESC_1@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "one",
+      "lat": 33.562599,
+      "lon": -82.051362
+    },
+    "geo": {
+      "coordinates": [
+        -82.051362,
+        33.562599
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2024-12-31",
+      "precision": "day",
+      "raw": "12/31/2024"
+    },
+    "location_confidence": "high",
+    "name": "Stevens Creek - Hooks 115 kV / LR Plumb Branch 46 kV Rebuilds",
+    "native_id": "DESC_1",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "DESC:DESC_1",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "_id": "DESC:DESC_2@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "one",
+      "lat": 33.660127,
+      "lon": -82.195931
+    },
+    "geo": {
+      "coordinates": [
+        -82.195931,
+        33.660127
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2024-12-31",
+      "precision": "day",
+      "raw": "12/31/2024"
+    },
+    "location_confidence": "high",
+    "name": "Hooks - Thurmond 115 kV Tie: Rebuild",
+    "native_id": "DESC_2",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "DESC:DESC_2",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "_id": "DESC:DESC_3@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "two",
+      "lat": 32.346439000000004,
+      "lon": -81.0785475
+    },
+    "geo": {
+      "coordinates": [
+        -81.0785475,
+        32.346439000000004
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2025-12-31",
+      "precision": "day",
+      "raw": "12/31/2025"
+    },
+    "location_confidence": "high",
+    "name": "Jasper - Okatie 230 kV #2: Construct",
+    "native_id": "DESC_3",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "DESC:DESC_3",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "_id": "DESC:DESC_4@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "one",
+      "lat": 32.722793,
+      "lon": -79.967332
+    },
+    "geo": {
+      "coordinates": [
+        -79.967332,
+        32.722793
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2023-12-31",
+      "precision": "day",
+      "raw": "12/31/2023"
+    },
+    "location_confidence": "high",
+    "name": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115 kV (Queensboro-James Island Sect)",
+    "native_id": "DESC_4",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "DESC:DESC_4",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "_id": "DESC:DESC_5@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "two",
+      "lat": 32.2843925,
+      "lon": -80.9429395
+    },
+    "geo": {
+      "coordinates": [
+        -80.9429395,
+        32.2843925
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2025-06-01",
+      "precision": "day",
+      "raw": "6/1/2025"
+    },
+    "location_confidence": "high",
+    "name": "Okatie-Bluffton 115 kV: Rebuild",
+    "native_id": "DESC_5",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "DESC:DESC_5",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "SC",
+    "utility": "DESC"
+  },
+  {
+    "_id": "GPC:GPC_1@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "two",
+      "lat": 33.6020605,
+      "lon": -82.1822895
+    },
+    "geo": {
+      "coordinates": [
+        -82.1822895,
+        33.6020605
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2033-06-01",
+      "precision": "day",
+      "raw": "6/1/2033"
+    },
+    "location_confidence": "high",
+    "name": "EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD",
+    "native_id": "GPC_1",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "GPC:GPC_1",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "_id": "GPC:GPC_2@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "one",
+      "lat": 32.352116,
+      "lon": -81.175112
+    },
+    "geo": {
+      "coordinates": [
+        -81.175112,
+        32.352116
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2026-06-01",
+      "precision": "day",
+      "raw": "6/1/2026"
+    },
+    "location_confidence": "high",
+    "name": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
+    "native_id": "GPC_2",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "GPC:GPC_2",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "_id": "GPC:GPC_3@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "two",
+      "lat": 32.3004085,
+      "lon": -81.1957885
+    },
+    "geo": {
+      "coordinates": [
+        -81.1957885,
+        32.3004085
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2027-06-01",
+      "precision": "day",
+      "raw": "6/1/2027"
+    },
+    "location_confidence": "high",
+    "name": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+    "native_id": "GPC_3",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "GPC:GPC_3",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "_id": "GPC:GPC_4@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "two",
+      "lat": 31.462605,
+      "lon": -83.8414865
+    },
+    "geo": {
+      "coordinates": [
+        -83.8414865,
+        31.462605
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2025-05-01",
+      "precision": "day",
+      "raw": "5/1/2025"
+    },
+    "location_confidence": "high",
+    "name": "MITCHELL - NORTH TIFTON 230KV RECONDUCTOR",
+    "native_id": "GPC_4",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "GPC:GPC_4",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "GA",
+    "utility": "GPC"
+  },
+  {
+    "_id": "GPC:GPC_5@sperry-sample",
+    "active": true,
+    "center": {
+      "basis": "two",
+      "lat": 31.6623515,
+      "lon": -81.834325
+    },
+    "geo": {
+      "coordinates": [
+        -81.834325,
+        31.6623515
+      ],
+      "type": "Point"
+    },
+    "in_service": {
+      "date": "2025-06-01",
+      "precision": "day",
+      "raw": "6/1/2025"
+    },
+    "location_confidence": "high",
+    "name": "JESUP - LUDOWICI PRIMARY 115KV REBUILD",
+    "native_id": "GPC_5",
+    "owner_basis": "utility column of the sponsor sample",
+    "owner_code": null,
+    "project_key": "GPC:GPC_5",
+    "source": {
+      "page": null,
+      "source_id": "sperry-sample"
+    },
+    "state": "GA",
+    "utility": "GPC"
+  }
+]

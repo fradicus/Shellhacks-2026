@@ -1,0 +1,121 @@
+{
+  "$id": "https://gridbridge.local/schemas/brief.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "facts": {
+      "items": {
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "input_hash": {
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "match_id": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "possible_shared_activities": {
+      "items": {
+        "properties": {
+          "fact_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "fact_ids"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "prompt_version": {
+      "type": "string"
+    },
+    "questions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "rejection_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "supported_facts": {
+      "items": {
+        "properties": {
+          "fact_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "fact_ids"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "validation": {
+      "enum": [
+        "passed",
+        "rejected"
+      ]
+    }
+  },
+  "required": [
+    "_id",
+    "match_id",
+    "input_hash",
+    "model",
+    "prompt_version",
+    "generated_at",
+    "supported_facts",
+    "possible_shared_activities",
+    "questions",
+    "limitations",
+    "validation"
+  ],
+  "title": "A grounded Gemini coordination brief",
+  "type": "object"
+}
