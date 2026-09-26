@@ -1,0 +1,211 @@
+[
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 138993,
+    "cache_name": "2025_Gaz_counties_national.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-2025-gaz-counties-national",
+    "last_modified": "Wed, 10 Sep 2025 17:30:11 GMT",
+    "max_bytes": 277986,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:02Z",
+    "sha256": "4c90d0f805779923b5958ab13d0c1e9b99fe4932b786bfcf75dd739bb2dcb4ea",
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_Gaz_counties_national.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 2863,
+    "cache_name": "2025_Gaz_state_national.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-2025-gaz-state-national",
+    "last_modified": "Wed, 10 Sep 2025 17:30:11 GMT",
+    "max_bytes": 68399,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:02Z",
+    "sha256": "5c0bb56f4824af366538d73bffd229e790d301356624302eeca24d09cf27ba30",
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_Gaz_state_national.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 139190,
+    "cache_name": "2026_Gaz_counties_national.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-2026-gaz-counties-national",
+    "last_modified": "Tue, 08 Sep 2026 21:00:12 GMT",
+    "max_bytes": 278380,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:02Z",
+    "sha256": "6a99ca00efbc0be5112e225d4102704c51d5ce3b16e3afd6e4159460595fd12a",
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_counties_national.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 2865,
+    "cache_name": "2026_Gaz_state_national.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-2026-gaz-state-national",
+    "last_modified": "Tue, 08 Sep 2026 21:00:12 GMT",
+    "max_bytes": 68401,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:02Z",
+    "sha256": "54352ca34f869b4deca03a65da72cccb8e9f0c2702340061949b63c76c63f852",
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_state_national.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 11758981,
+    "cache_name": "cb_2025_us_county_500k.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-cb-2025-us-county-500k",
+    "last_modified": "Thu, 23 Apr 2026 13:45:35 GMT",
+    "max_bytes": 23517962,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:03Z",
+    "sha256": "aa976c00b181939755d0da757f4c7c2dc0103c3b3b4530fb2a91c2bb62fc777c",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 695096,
+    "cache_name": "cb_2025_us_division_5m.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-cb-2025-us-division-5m",
+    "last_modified": "Thu, 23 Apr 2026 13:45:35 GMT",
+    "max_bytes": 1390192,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:05Z",
+    "sha256": "15253d7024e7997745768330ea6039ddc6adef4e25495216c08a75f14db5fdbd",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_division_5m.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 508071,
+    "cache_name": "cb_2025_us_region_5m.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-cb-2025-us-region-5m",
+    "last_modified": "Thu, 23 Apr 2026 13:45:35 GMT",
+    "max_bytes": 1016142,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:04Z",
+    "sha256": "74d6bede87bd0e308b903d9b195e3527886a7cdb8241bd2a7207ffbff391f466",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_region_5m.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 3245373,
+    "cache_name": "cb_2025_us_state_500k.zip",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-cb-2025-us-state-500k",
+    "last_modified": "Thu, 23 Apr 2026 13:45:35 GMT",
+    "max_bytes": 6490746,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:03Z",
+    "sha256": "9cbfe171dad1555e11770c981d8f4db9e687a65c86f5bdae684eeb487e2e9b80",
+    "url": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_state_500k.zip"
+  },
+  {
+    "allowed_hosts": [
+      "www2.census.gov"
+    ],
+    "bytes": 14700,
+    "cache_name": "state-geocodes-v2025.xlsx",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "application/zip"
+    ],
+    "id": "census-state-geocodes-v2025",
+    "last_modified": "Thu, 14 May 2026 13:00:32 GMT",
+    "max_bytes": 80236,
+    "max_members": 512,
+    "max_uncompressed_bytes": 268435456,
+    "purpose": "Census reference geography only; never project coordinates",
+    "retrieved_at": "2026-09-26T17:56:02Z",
+    "sha256": "327c7fa3dfeb6526b20cd3d1cef7f471ec08316e92b183f12c5b168bfed7da84",
+    "url": "https://www2.census.gov/programs-surveys/popest/geographies/2025/state-geocodes-v2025.xlsx"
+  },
+  {
+    "allowed_hosts": [
+      "www.iso-ne.com"
+    ],
+    "bytes": 1967096,
+    "cache_name": "final_rsp_project_list_jun_2026.xlsx",
+    "content_types": [
+      "application/octet-stream",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    ],
+    "id": "iso-ne-rsp-2026-06",
+    "max_bytes": 8388608,
+    "max_members": 512,
+    "max_uncompressed_bytes": 134217728,
+    "published_at": "2026-07-09T10:00:00.000Z",
+    "purpose": "ISO-NE RSP_sortable project rows",
+    "retrieved_at": "2026-09-26T18:00:22.262176+00:00",
+    "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+    "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+  }
+]

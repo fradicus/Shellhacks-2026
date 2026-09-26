@@ -1,0 +1,65 @@
+{
+  "failures": [],
+  "located_count": 69,
+  "notes": [
+    "Counts cover imported records only and do not claim nationwide project completeness.",
+    "ISO-NE county and coordinate fields are absent from the source and remain unknown.",
+    "Legacy project state assignments and every current project county remain unknown rather than inferred.",
+    "Legacy discovery includes current filing versions only; superseded versions remain in the filing-change view.",
+    "Census bounds and representative points frame reference geography and never become project locations.",
+    "EIA-861 remains a reference-only catalog entry; no utility identity or service-area match is inferred."
+  ],
+  "projects_total": 1286,
+  "schema_version": "national-coverage-v1",
+  "sources": [
+    {
+      "active_status_count": 7,
+      "located_count": 0,
+      "project_count": 7,
+      "source_id": "desc-2024",
+      "status_counts": {
+        "under_construction": 7
+      },
+      "unknown_county_count": 7,
+      "unknown_state_count": 7
+    },
+    {
+      "active_status_count": 47,
+      "located_count": 14,
+      "project_count": 47,
+      "source_id": "desc-2025",
+      "status_counts": {
+        "planned": 16,
+        "under_construction": 31
+      },
+      "unknown_county_count": 47,
+      "unknown_state_count": 47
+    },
+    {
+      "active_status_count": 0,
+      "located_count": 55,
+      "project_count": 208,
+      "source_id": "gpc-2025",
+      "status_counts": {
+        "unknown": 208
+      },
+      "unknown_county_count": 208,
+      "unknown_state_count": 208
+    },
+    {
+      "active_status_count": 46,
+      "located_count": 0,
+      "project_count": 1024,
+      "source_id": "iso-ne-rsp-2026-06",
+      "status_counts": {
+        "cancelled": 335,
+        "in_service": 643,
+        "planned": 37,
+        "proposed": 2,
+        "under_construction": 7
+      },
+      "unknown_county_count": 1024,
+      "unknown_state_count": 4
+    }
+  ]
+}
