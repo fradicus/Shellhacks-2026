@@ -16,11 +16,14 @@ function Missing({ k }: { k: string }) {
   );
 }
 
-function Name({ p, k }: { p: Project | null; k: string }) {
+function Name({ p, k, side }: { p: Project | null; k: string; side: "A" | "B" }) {
   return (
-    <div className={s.pairName}>
+    <div className={s.pairName} data-utility={p?.utility ?? "unknown"}>
+      <span className={s.sideTag} aria-hidden="true">
+        {side}
+      </span>
       <UtilityBadge utility={p?.utility ?? "unknown"} />
-      <span>{p?.name ?? k}</span>
+      <span className={s.nameText}>{p?.name ?? k}</span>
     </div>
   );
 }
@@ -31,13 +34,13 @@ export function PairView({ detail }: { detail: PairDetail }) {
   return (
     <main className={s.page}>
       <nav className="no-print" aria-label="Breadcrumb">
-        <Link href="/">← All overlaps</Link>
+        <Link href={`/time?pair=${encodeURIComponent(m._id)}`}>← All overlaps</Link>
       </nav>
 
       <header className={s.header}>
         <div className={s.names}>
-          <Name p={a} k={m.a} />
-          <Name p={b} k={m.b} />
+          <Name p={a} k={m.a} side="A" />
+          <Name p={b} k={m.b} side="B" />
         </div>
         <div className={s.headline}>
           <span className={s.big + " num"}>{fmtMiles(m.distance_mi)}</span>

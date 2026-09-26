@@ -124,7 +124,7 @@ export function EvidencePanel({
   const evidence = p.field_evidence ?? {};
   const fields = Object.keys(FIELD_LABEL).filter((f) => f in evidence);
   return (
-    <article className={s.panel} aria-labelledby={`p-${side}`}>
+    <article className={s.panel} data-utility={p.utility} aria-labelledby={`p-${side}`}>
       <header className={s.panelHead}>
         <span className={s.side}>{side}</span>
         <div>
