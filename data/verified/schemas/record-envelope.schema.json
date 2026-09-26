@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gridbridge.local/schemas/verified-record-envelope-v1.json",
+  "title": "Versioned verified-directory record artifact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset", "generated_at", "records"],
+  "properties": {
+    "schema_version": {"const": "verified-directory-v1"},
+    "dataset": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "records": {
+      "type": "array",
+      "items": {"type": "object", "required": ["id"], "properties": {"id": {"type": "string", "minLength": 1}}}
+    }
+  }
+}
