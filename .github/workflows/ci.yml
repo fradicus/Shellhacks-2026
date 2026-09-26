@@ -107,9 +107,20 @@ jobs:
         run: |
           ln -s web/node_modules node_modules # lets tests/e2e resolve @playwright/test from web/
           if [ -f tests/web/national/playwright.config.ts ]; then
-            web/node_modules/.bin/playwright test -c tests/web/national/playwright.config.ts
+            web/node_modules/.bin/playwright test -c tests/web/national/playwright.config.ts --output test-results/national
           fi
           if [ -f tests/web/assistant/playwright.config.ts ]; then
-            web/node_modules/.bin/playwright test -c tests/web/assistant/playwright.config.ts
+            web/node_modules/.bin/playwright test -c tests/web/assistant/playwright.config.ts --output test-results/assistant
           fi
-          web/node_modules/.bin/playwright test -c tests/e2e
+          web/node_modules/.bin/playwright test -c tests/e2e --output test-results/legacy
+
+      - name: Browser evidence
+        if: always() && steps.detect.outputs.present == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-evidence-${{ github.sha }}
+          path: |
+            test-results/
+            playwright-report/
+          if-no-files-found: ignore
+          retention-days: 7

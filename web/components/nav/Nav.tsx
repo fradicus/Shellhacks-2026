@@ -7,6 +7,7 @@ import styles from "./Nav.module.css";
 // Every route in the app, so no feature ever needs to edit the nav.
 export const ROUTES = [
   { href: "/", label: "Overlaps" },
+  { href: "/explore", label: "National explorer" },
   { href: "/time", label: "Time view" },
   { href: "/changes", label: "Filing changes" },
   { href: "/coverage", label: "Coverage" },
