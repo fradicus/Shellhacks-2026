@@ -18,3 +18,22 @@ Implement fixed-host server-side NWS forecast/alerts, USDA mapped soil context, 
 Use independent result envelopes, strict bounded inputs, timeouts and response-size budgets, typed parse validation, source times and stated freshness limits. Do not retain stale observations as live or fill missing severity/date/units with benign values. Never fetch arbitrary client-supplied URLs or pass arbitrary SQL; USDA query coordinates must be validated numbers embedded only in a fixed query. No provider secret or raw Google response in git/browser output.
 
 Test HTTP failures, stale/future/missing times, null alert geometry, route sampling gaps, unknown jurisdictions, incomplete vehicle profiles, ignored restrictions, malformed provider output, cache binding and unavailable AEF. Verify at least one permitted real public sample/feed where reachable, record failures honestly, and preserve unit fixtures as test-only. Full checks and independent review required.
+
+Implementation scope: one evidenced Seattle point/year2025 is committed; exact
+uncovered point/year queries remain unavailable. A bounded index-range extractor
+and COG sampler allow additional reviewed samples without a full-index/COG download.
+The v2 evidence manifest retains each sample's retrieval/ranges/object identity;
+the web validates it and the LF-normalized snapshot hash. Google vehicle inputs
+must be exact whole-millimetre dimensions and whole-kilogram weights; unsupported
+fractions fail validation. A real Census2026Washington polygon guards WSDOT
+jurisdiction. The feed's freshness policy is15minutes; NWS forecast policy6hours.
+Route evidence is limited to at most5points,100mendpoint road snapping, and a
+reported maximum along-route gap. Conditions are explicitly not resolved to
+per-point arrival times, so route assessments remain incomplete. There is no
+ordinary-driving fallback or universal live AEF coverage.
+
+Focused validation: `node --import ./tests/web/operations-providers/loader.mjs --test tests/web/operations-providers/*.test.ts`
+from root; `uv run pytest -c pyproject.toml -q ../tests/pipeline/test_f34_environment.py`
+from `pipeline/`. Public probe/sample commands and actual source limitations are
+documented in `data/environment/README.md`. Optional public probes are not CI
+tests and never call paid Google routing or read credentials.

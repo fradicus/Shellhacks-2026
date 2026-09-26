@@ -110,3 +110,16 @@ test("route transport identity changes aggregate environmental binding and warni
   assert.equal(first.route.evidence_hash, "1".repeat(64)); assert.notEqual(first.weather.evidence_hash, second.weather.evidence_hash);
   assert.match(first.limitations.join(" "), /not resolved to per-point arrival/);
 });
+
+test("partial AEF aggregate retrieval comes from actual data, not current unavailable samples", async () => {
+  const data = JSON.parse(await readFile(new URL("../../../data/environment/aef-samples.json", import.meta.url), "utf8"));
+  const evidence = JSON.parse(await readFile(new URL("../../../data/environment/aef-samples.evidence.json", import.meta.url), "utf8"));
+  const snapshot = validateSnapshot(data, evidence);
+  function encode(n: number) { let v = n < 0 ? -n * 2 - 1 : n * 2; let s = ""; while (v >= 32) { s += String.fromCharCode((v % 32) + 95); v = Math.floor(v / 32); } return s + String.fromCharCode(v + 63); }
+  const encoded = encode(Math.round(point.lat * 1e5)) + encode(Math.round(point.lon * 1e5)) + encode(10) + "?";
+  const later = new Date(Date.parse(evidence.records[0].retrieved_at) + 3600000);
+  const result = await route({ ...request, departure_at: later.toISOString(), destination: { lat: point.lat + .0001, lon: point.lon } }, { now: later, googleKey: "synthetic", lvrEnabled: true, io: async (url) => url.includes("routes.googleapis.com") ? wrap({ routes: [{ distanceMeters: 12, duration: "1s", polyline: { encodedPolyline: encoded } }] }) : wrap({}) }, snapshot);
+  assert.equal(result.aef.data?.samples.length, 1); assert.equal(result.aef.coverage.failed, 1);
+  assert.equal(result.aef.retrieved_at, new Date(evidence.records[0].retrieved_at).toISOString());
+  assert.match(result.aef.limitations.join(" "), /retrieved/);
+});

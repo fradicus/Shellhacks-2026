@@ -50,11 +50,11 @@ function combine<T>(provider: "weather" | "roadwork" | "aef", request: RouteRequ
   const result = empty<T>(provider, request, `Route point samples only; maximum along-route sample gap ${gap.toFixed(2)} km. Not continuous corridor coverage.`, "partial", now);
   const completed = results.filter((r) => r.status === "available").length;
   result.data = data; result.coverage = { requested: results.length, completed, failed: results.length - completed, truncated: limited };
-  result.limitations.push(...new Set(results.flatMap((r) => [`Sample status: ${r.status}; source updated ${r.source_updated_at ?? "unknown"}.`, ...r.limitations])));
+  result.limitations.push(...new Set(results.flatMap((r) => [`Sample status: ${r.status}; retrieved ${r.retrieved_at}; source updated ${r.source_updated_at ?? "unknown"}.`, ...r.limitations])));
   const times = results.map((r) => r.source_updated_at).filter((t): t is string => !!t).sort((a, b) => Date.parse(a) - Date.parse(b));
   result.source_updated_at = times[0] ?? null;
   result.evidence_hash = digest({ binding, samples: results.map((r) => ({ request_hash: r.request_hash, evidence_hash: r.evidence_hash, status: r.status, retrieved_at: r.retrieved_at })) });
-  result.retrieved_at = results.map((r) => r.retrieved_at).sort((a, b) => Date.parse(b) - Date.parse(a))[0] ?? now.toISOString();
+  result.retrieved_at = results.filter((r) => r.data !== null).map((r) => r.retrieved_at).sort((a, b) => Date.parse(b) - Date.parse(a))[0] ?? now.toISOString();
   if (!data) result.status = "unavailable";
   else if (results.some((r) => r.status === "stale")) result.status = "stale";
   // Route sampling always remains partial: even closely spaced points can miss a narrow hazard.
