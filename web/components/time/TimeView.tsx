@@ -348,7 +348,10 @@ export function TimeView({
       kind: "hover",
       text: (
         <>
-          <b>{hovered.name}</b>
+          <b>
+            <i style={{ background: COLOR[hovered.utility] }} />
+            {hovered.name}
+          </b>
           <span>
             {UTILITY[hovered.utility]} · {describe(spans.get(hovered.key)!, hovered.in_service.raw)}
           </span>
@@ -376,7 +379,12 @@ export function TimeView({
         {
           padding:
             (container.current?.clientWidth ?? 1400) <= 860
-              ? { top: 260, bottom: Math.round((container.current?.clientHeight ?? 800) * 0.5), left: 40, right: 40 }
+              ? {
+                  top: Math.round((container.current?.clientHeight ?? 800) * 0.3) + 60,
+                  bottom: Math.round((container.current?.clientHeight ?? 800) * 0.5),
+                  left: 40,
+                  right: 40,
+                }
               : { top: 300, bottom: 150, left: 500, right: 460 },
           bearing: brg,
           maxZoom: 10.5,

@@ -1042,3 +1042,45 @@
   color: var(--sheet);
   text-shadow: 0 0 12px rgba(191, 233, 255, 0.55);
 }
+.l_hover b i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 8px 1px 0;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0 0 8px currentColor;
+}
+@media (max-width: 860px) {
+  .detail {
+    max-height: 30%;
+    padding: 12px 14px 10px;
+  }
+  .figures {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    gap: 10px;
+  }
+  .figures strong {
+    font-size: 30px;
+  }
+  .proj {
+    margin-bottom: 6px;
+  }
+  .proj h2 {
+    font-size: 15px;
+    margin: 0;
+  }
+  .proj p:not(.projUtil) {
+    display: none;
+  }
+  .detailFoot {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 860px) {
+  /* The card above names both projects; on a phone the in-scene names only collide. */
+  .l_bead {
+    display: none;
+  }
+}
