@@ -9,6 +9,12 @@ def miles_to_km(miles: float) -> float:
     return round(miles * 1.609344, 3)
 
 
+def km_to_miles(km: float) -> float:
+    if km < 0:
+        raise ValueError("distance cannot be negative")
+    return round(km / 1.609344, 3)
+
+
 def overlap_days(a_start: int, a_end: int, b_start: int, b_end: int) -> int:
     """Inclusive overlap, in days, of two [start, end] day-number windows; 0 if disjoint."""
     if a_start > a_end or b_start > b_end:
