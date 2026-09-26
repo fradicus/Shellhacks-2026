@@ -80,8 +80,10 @@ F33/F34/F35 maintain domain-owned versioned JSON schemas and Zod contracts insid
 
 Operations environment names are `NWS_USER_AGENT` (identifying contact), `GOOGLE_ROUTES_API_KEY` and `GOOGLE_LVR_ENABLED=true` (both required; LVR provisioning must also exist), and `OUTCOMES_MODEL_PATH` plus `OUTCOMES_APPROVED_SHA256` (optional local model artifact and its external deployment approval pin; both required for activation). No `NEXT_PUBLIC_` credential is allowed. AEF uses a reviewed public GCS index/object, with no invented asset version. Provider-specific operational freshness thresholds are implementation policy, displayed and tested, not claims that a provider guarantees accuracy. Google route content must not be rendered on MapLibre; use a separate attributed route-only presentation. See C15's official documentation links.
 
-## Credentials before the run
-
 F35 activation also requires `OUTCOMES_APPROVED_AT`, an externally recorded UTC approval timestamp bound to the approved artifact hash. A request cannot be backdated before approval. It is server-only deployment configuration and never supplied by the browser; absence means forecasts are unavailable. Private model files must be provisioned outside Git checkouts and are not copied into public deployment assets by this repository.
+
+NWS does not require an API key. The server identifies itself by default as `GridBridge (https://github.com/fradicus/Shellhacks-2026/issues)`; deployments may override that public identifying contact with `NWS_USER_AGENT`. Weather remains usable without supplying a secret. Provider availability still depends on successful requests and valid current source responses.
+
+## Credentials before the run
 
 Set `GEMINI_API_KEY` and a tested `GEMINI_MODEL` tonight for real F03/F12 extraction and briefs. Without them, offline coding/tests can proceed but Gemini integration remains incomplete. Atlas RW belongs only in GitHub Actions; RO goes to Vercel and the app/QA runtime before live integration. Offline CI needs no live Gemini/Atlas credentials. Local coding-tool authentication is separate from the product Gemini key. See [preflight.md](preflight.md) for the short checklist and both launch options.
