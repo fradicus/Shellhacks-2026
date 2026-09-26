@@ -9,9 +9,18 @@ GridBridge is a **coordination discovery tool**. It finds leads worth a planner'
 compliance or promise savings.
 
 ## Who
-Primary: a transmission planner or regional planning analyst preparing for a coordination meeting. Judges: Sperry
-Tech's AI team (they value extraction pipelines, validation, and tracing any number back to its source), plus MLH
-track judges.
+Primary follow-up user: a contractor or construction project manager investigating nearby work before a
+coordination conversation. Utility transmission planners and regional planning analysts remain users of the same
+evidence workflow. A simpler foreman/field experience is a potential later product, pending task validation.
+Judges: Sperry Tech's team and MLH track judges. See the [sponsor context](context/README.md) and
+[C16 decision](decisions/C16-sponsor-context.md) for the reasoning behind this refinement.
+
+## Follow-up outcome
+
+A PM can investigate a real project, compare relevant nearby work where evidence permits, understand filed
+milestones and changes, inspect uncertainty, and export evidence and questions for a follow-up conversation.
+The [acceptance scenario](followup.md) distinguishes implementation, live verification and observed user success.
+It does not require inventing a usable pair where the evidence is insufficient.
 
 ## What (the product)
 A web app that compares **Dominion Energy South Carolina (DESC)** and **Georgia Power / Georgia ITS** planned
@@ -44,8 +53,16 @@ transmission projects from public filings:
 ## Tone
 Plain, precise, evidence-first. Say "in service 152 days apart", never "built at the same time". Say "possible shared activity", never "savings".
 
-## Out of scope tonight
-Auth and accounts, live Gemini calls from the public site, a third utility, route or corridor geometry, schedule optimization, notifications.
+## Original run exclusions
+The first run excluded auth/accounts, live Gemini calls from the public site, a third utility, route/corridor
+geometry, schedule optimization and notifications. Later explicit contract decisions may authorize bounded
+extensions; the national follow-on below already extends discovery. These historical exclusions do not silently
+cancel separately authorized work. Potential product ideas remain deferred under [C16](decisions/C16-sponsor-context.md).
 
 ## National follow-on authorized by the user
 The first-run limits above are historical. C11/F30/F31 extend discovery to verified public national sources and state/county/Census-region/planning-region filters, starting with an actual regional import plus the reviewed legacy corpus. Government geography and a source directory must not imply imported project coverage everywhere. Preserve the sponsor's strict distance rule, source evidence, unknown locations and milestone precision. F32 is a separate potential-feature branch for a controlled natural-language side panel; it does not activate a public live model. Plans B and D supply source-audit and map/table/Ask-the-grid guidance within the current stack.
+
+Use the [shared vocabulary](vocabulary.md) across product and presentation. Source counts are maintained in
+producer artifacts and dated status reports, rather than fixed into this mission. Equipment rental/subleasing,
+automatic dispatch, a new field-account product and unsupported prediction claims are
+[potential work—do not implement](followup.md#potential-work-do-not-implement) without their own explicit decision.

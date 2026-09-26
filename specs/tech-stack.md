@@ -46,6 +46,21 @@ Before F00 merges, only F00 runs, and it creates these tools.
 ## Read-only inputs
 `docs/` (sponsor originals) and `plans/` (historical plans A–E). Never edit them.
 
+The [dated context notes](context/README.md) under `specs/context/` capture product feedback separately from source
+inputs. They inform decisions; they do not alter the authority or interpretation of source records. Keep their
+historical observations stable and append explicit corrections or later answers.
+
+## Evidence and freshness semantics
+
+Follow the [shared vocabulary](vocabulary.md): source publication/vintage, retrieval/check time, observed change
+time and project milestones describe different facts. Preserve unknown values and original date precision.
+A refresh success is not evidence that a publisher changed a project. Changes need comparable old/new source
+evidence; failed refreshes preserve the last valid dataset and disclose the failed attempt separately.
+
+These are acceptance requirements for the [PM follow-up](followup.md), not a claim that all history fields already
+exist. Any missing shared fields require an additive contract through their owner. Keep the current stack and
+sole-writer/deployment boundaries; this documentation update introduces no migration, provider or scheduled job.
+
 ## Environment variables
 | Name | Where | Used by |
 |---|---|---|
