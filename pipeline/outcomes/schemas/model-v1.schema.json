@@ -1,0 +1,216 @@
+{
+  "$defs": {
+    "Cutoffs": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration": {
+          "title": "Calibration",
+          "type": "string"
+        },
+        "evaluation": {
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "training": {
+          "title": "Training",
+          "type": "string"
+        }
+      },
+      "required": [
+        "training",
+        "calibration",
+        "evaluation"
+      ],
+      "title": "Cutoffs",
+      "type": "object"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "properties": {
+        "actual_complete": {
+          "title": "Actual Complete",
+          "type": "string"
+        },
+        "actual_start": {
+          "title": "Actual Start",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "company_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[\\w .:/-]+$",
+          "title": "Company Id",
+          "type": "string"
+        },
+        "component_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[\\w .:/-]+$",
+          "title": "Component Id",
+          "type": "string"
+        },
+        "decision_at": {
+          "title": "Decision At",
+          "type": "string"
+        },
+        "duration_days": {
+          "exclusiveMinimum": 0,
+          "maximum": 3650,
+          "title": "Duration Days",
+          "type": "integer"
+        },
+        "evidence_hashes": {
+          "items": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "maxItems": 10,
+          "minItems": 1,
+          "title": "Evidence Hashes",
+          "type": "array"
+        },
+        "features_available_at": {
+          "title": "Features Available At",
+          "type": "string"
+        },
+        "job_id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[\\w .:/-]+$",
+          "title": "Job Id",
+          "type": "string"
+        },
+        "job_type": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[\\w .:/-]+$",
+          "title": "Job Type",
+          "type": "string"
+        },
+        "planned_available_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Planned Available At"
+        },
+        "planned_duration_days": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 3650,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Planned Duration Days"
+        },
+        "project_lineage": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[\\w .:/-]+$",
+          "title": "Project Lineage",
+          "type": "string"
+        },
+        "region": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[\\w .:/-]+$",
+          "title": "Region",
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_id",
+        "project_lineage",
+        "component_id",
+        "job_type",
+        "company_id",
+        "region",
+        "decision_at",
+        "features_available_at",
+        "actual_start",
+        "actual_complete",
+        "available_at",
+        "duration_days",
+        "planned_duration_days",
+        "planned_available_at",
+        "evidence_hashes"
+      ],
+      "title": "Observation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "cutoffs": {
+      "$ref": "#/$defs/Cutoffs"
+    },
+    "dataset_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Dataset Hash",
+      "type": "string"
+    },
+    "evaluation": {
+      "additionalProperties": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Evaluation",
+      "type": "object"
+    },
+    "observations": {
+      "items": {
+        "$ref": "#/$defs/Observation"
+      },
+      "maxItems": 10000,
+      "title": "Observations",
+      "type": "array"
+    },
+    "policy_version": {
+      "const": "empirical-cohort-v1",
+      "title": "Policy Version",
+      "type": "string"
+    },
+    "purpose": {
+      "enum": [
+        "authorized_actual_history",
+        "synthetic_test_only"
+      ],
+      "title": "Purpose",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "outcomes-model-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "target": {
+      "const": "physical_construction_start_to_complete_calendar_days",
+      "title": "Target",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "purpose",
+    "policy_version",
+    "target",
+    "dataset_hash",
+    "cutoffs",
+    "observations",
+    "evaluation"
+  ],
+  "title": "Artifact",
+  "type": "object"
+}
