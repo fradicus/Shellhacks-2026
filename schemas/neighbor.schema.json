@@ -1,0 +1,56 @@
+{
+  "$id": "https://gridbridge.local/schemas/neighbor.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "ref_id": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "computed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "neighbors": {
+      "items": {
+        "properties": {
+          "ref_id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": ["match", "project", "brief"]
+          },
+          "score": {
+            "type": "number"
+          },
+          "rank": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ref_id",
+          "kind",
+          "score",
+          "rank"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "_id",
+    "ref_id",
+    "model",
+    "computed_at",
+    "neighbors"
+  ],
+  "title": "Precomputed nearest neighbors of one embedded record (cosine, same model)",
+  "type": "object"
+}

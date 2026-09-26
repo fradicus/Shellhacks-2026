@@ -95,6 +95,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F17 | Impact scenario (stretch) | B | technical-lead | 3 | F11 | allowed |
 | F18 | Status, acceptance, submission draft, STOP | C | ceo | 4 | none | never |
 | F19 | Time view (Three.js), added after run 1 by the human | B | frontend-engineer | 3 | F05, F06 | allowed |
+| F20 | Semantic search: Gemini embeddings, Atlas vector index, search UI | B | technical-lead | 5 | F10 | allowed |
 | F30 | Trusted national sources, Census geography, regional imports | A | data-researcher | 5 | F00 | never |
 | F31 | National explorer with state/county/region filters | B | frontend-engineer | 5 | F00 | never |
 | F32 | Optional AI app controls, separate prototype branch | B | gemini-engineer | 5 | F31 | allowed |

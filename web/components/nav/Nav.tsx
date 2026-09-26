@@ -13,6 +13,7 @@ export const ROUTES = [
   { href: "/coverage", label: "Coverage" },
   { href: "/gemini", label: "Gemini workbench" },
   { href: "/impact", label: "Impact" },
+  { href: "/search", label: "Search" },
 ] as const;
 
 export function Nav() {

@@ -49,7 +49,8 @@ Before F00 merges, only F00 runs, and it creates these tools.
 ## Environment variables
 | Name | Where | Used by |
 |---|---|---|
-| `GEMINI_API_KEY`, `GEMINI_MODEL` | data runtime only (Paperclip env or local process) | Gemini pipeline stages |
+| `GEMINI_API_KEY`, `GEMINI_MODEL` | data runtime (local process); `GEMINI_API_KEY` also in Vercel for F20 query embedding | Gemini pipeline stages, `/api/search` query vectors |
+| `GEMINI_EMBED_MODEL` | pipeline + Vercel | F20 embedding model id (default `gemini-embedding-001`, 768 dimensions) |
 | `MONGODB_URI_RW` | GitHub Actions secret only | `load` workflow |
 | `MONGODB_URI_RO`, `MONGODB_DB=gridbridge` | Vercel env; app/QA runtimes | web API, QA |
 | `DATA_MODE=fixture` | CI and local dev without Atlas | web reads `data/fixtures` via `lib/data.ts`; **never in production** |

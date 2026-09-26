@@ -1,0 +1,53 @@
+{
+  "$id": "https://gridbridge.local/schemas/embedding.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": ["match", "project", "brief"]
+    },
+    "ref_id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "text_hash": {
+      "type": "string"
+    },
+    "vector": {
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "model": {
+      "type": "string"
+    },
+    "dimensions": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "embedded_at": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "_id",
+    "kind",
+    "ref_id",
+    "text",
+    "text_hash",
+    "vector",
+    "model",
+    "dimensions",
+    "embedded_at"
+  ],
+  "title": "A Gemini embedding of one stored record's search text",
+  "type": "object"
+}
