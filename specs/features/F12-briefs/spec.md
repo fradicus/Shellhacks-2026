@@ -21,8 +21,12 @@ cut: never
 - Gemini key from env only. Cache by `input_hash`. No live calls from the web.
 
 ## Validation
-- `tests/pipeline/test_f12_*.py`, offline: the validator rejects a brief containing a number not in the input, and accepts a clean one (recorded responses).
-- PR body: generated / passed / rejected counts and one full example brief.
+- `tests/pipeline/test_f12_*.py`, offline: the validator rejects unsupported and cross-fact numbers, unknown citations,
+  and prohibited claims, and accepts explicitly synthetic responses. No recorded live responses exist in this run.
+- PR body: actual generated / passed / rejected counts; examples are explicitly synthetic when live generation is deferred.
 
 ## Defaults
 - Gemini unavailable: skip the generation, keep the validator and tests, and log it. The UI shows "brief unavailable".
+- The user deferred live Gemini: default CLI makes zero calls even with credentials present; `--live` is explicit.
+  Preserve existing artifacts on no-call/unavailable runs. Cache identity binds facts, model, prompt and schema version.
+- `briefs.facts.current_input_hash` is the pure F06 callback, documented in `data/briefs/README.md`; F06 owns its wiring.

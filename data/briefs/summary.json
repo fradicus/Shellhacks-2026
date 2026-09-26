@@ -1,0 +1,77 @@
+{
+  "cache_hits": 0,
+  "calls": 0,
+  "failures": [],
+  "generated": 0,
+  "model": null,
+  "passed": 0,
+  "preserved_records": 0,
+  "prompt_version": "coordination-brief-v1",
+  "reason": "live_execution_deferred",
+  "rejected": 0,
+  "schema_version": "coordination-response-v1",
+  "selected": 15,
+  "selected_inputs": [
+    {
+      "input_hash": "87ee51ff8f709c10cfa1ff390076fb6f041b4d96e296e6a8dbe1090bbae0b2db",
+      "match_id": "DESC:06367 D - G__GPC:20277"
+    },
+    {
+      "input_hash": "c4a23b109e6054130cbdf9bb1da2b9cecd9e43c0e89f438657773c9183500f50",
+      "match_id": "DESC:6808 S__GPC:20067"
+    },
+    {
+      "input_hash": "04b436ffc65259596e1d788e5e8e8733b2db9abdea4b94188f787065f05cbcf6",
+      "match_id": "DESC:06367 D - G__GPC:20066"
+    },
+    {
+      "input_hash": "310082a0b184d3e55a32d6115cd62a43e2709cb84046775ff195e61a3f8f2b0a",
+      "match_id": "DESC:06367 D - G__GPC:20067"
+    },
+    {
+      "input_hash": "0e8d4accce90e33a9c3e33414d6b5efcc58760f30b2a2ae25c68d8fa74c8d906",
+      "match_id": "DESC:6808 S__GPC:20066"
+    },
+    {
+      "input_hash": "5a0541be1c63a14a03c45b34ac5e62a97565b33a45534fea4b40dbde2c3f6bbe",
+      "match_id": "DESC:6808 S__GPC:20277"
+    },
+    {
+      "input_hash": "6f3b8f07b0a2e02f29de0653266bfc8d1aa1021a5a349f20e7432ee959cb4b98",
+      "match_id": "DESC:06367 D - G__GPC:20785"
+    },
+    {
+      "input_hash": "9643fd2011a99701e4cc7f1cb77073b29de1e21d5d11293ee2f77e9eeac76a23",
+      "match_id": "DESC:6808 S__GPC:20785"
+    },
+    {
+      "input_hash": "42c3fd42dc750187e18e0e5536c4f11cd1f9212a33ddd42372c4a30a8caec8cb",
+      "match_id": "DESC:06367 D - G__GPC:20783"
+    },
+    {
+      "input_hash": "801553872fb56f32001c7acc0caf347a616f5fd0fd8f53826657aaf5b09b6669",
+      "match_id": "DESC:06367 D - G__GPC:20407"
+    },
+    {
+      "input_hash": "885ca2f4a5364e2d2c576cbb16aa3bc7c3fe5782748f626f0ff89dfaf3b7054d",
+      "match_id": "DESC:6808 S__GPC:20407"
+    },
+    {
+      "input_hash": "f01c3565ed25e72aea4838bb838a895be263d2b4a5ddd71f194641df599713eb",
+      "match_id": "DESC:6808 S__GPC:20783"
+    },
+    {
+      "input_hash": "4fca3e829694d4af74cba328814a9a3fc66a3a5ecf38b58217b2ab230d3f24e3",
+      "match_id": "DESC:06367 D - G__GPC:21023"
+    },
+    {
+      "input_hash": "9856cccc46a7a5dede39e41c5cc4a4bb309b39f36a2042acccb1882279728869",
+      "match_id": "DESC:06367 D - G__GPC:21006"
+    },
+    {
+      "input_hash": "b6dbb5395417a6d0d71930e165ea2343a4d27421c6c75d6f06b14483b523ca7b",
+      "match_id": "DESC:6808 S__GPC:21006"
+    }
+  ],
+  "status": "unavailable"
+}
