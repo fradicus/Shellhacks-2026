@@ -1,21 +1,49 @@
-# Planner workflow pitch — draft
+# Project-manager workflow pitch — draft
 
-Target length: about two minutes [unverified until rehearsed]. Use explicit fixture mode for a demo until a real database-backed deployment is configured. Do not imply this script has been recorded or presented.
+About two minutes; timing remains unverified until rehearsed. Before presenting, check the selected revision and
+active dataset against [status](../reports/status.md) and [release evidence](../release/deploys.md). Use the actual
+mode label: sponsor sample, local snapshot, or verified live dataset. This script does not establish deployment.
 
-“Neighboring utilities publish construction plans separately. A planner needs a way to find nearby work and inspect the evidence before contacting another utility.
+## Spoken flow
 
-GridBridge reads the public DESC filings and the permitted Georgia planning-table fields. It preserves source versions, original owner codes and uncertainty. Our current register covers 262 active projects and 400 filed endpoints. Only 89 endpoints have medium-confidence locations; we show the unresolved records instead of inventing coordinates.
+“GridBridge helps project managers investigate nearby transmission work before starting a coordination conversation.
+Utilities and regional planners publish project information separately. The contractor still has to find the
+relevant records, understand their dates, and check whether the locations and project identities are right.
 
-Here is the ranked list. Geography decides whether a pair overlaps; exact in-service dates determine its place within a distance band. A milestone is not a construction window. The current run finds 19 candidates: 16 historical, three tentative and no qualifying future pairs. None is independently confirmed; the audit downgrades the featured pairs where location identity remains uncertain.
+Our sponsor conversations made the operational problem clearer: a job can wait for approval and then need crews
+and equipment at very short notice. Earlier visibility is useful, but it has to come with evidence and uncertainty.
 
-Open a coordination card to inspect both filed milestones, source pages and location evidence. The center is an endpoint approximation, not a corridor intersection. The audit calls out insufficient county evidence, so a similar substation name does not become a confirmed opportunity.
+Here is the time view. Height represents the filed in-service milestone, preserving the source's date precision.
+It helps explain geographic proximity and separation in time. It does not tell us when construction happens.
 
-The sample demonstrates why the closest pair need not be the top-ranked pair. Then the filing-change view shows how the same project's milestone changed between documents. Both original sources remain available, and the card can be exported or printed.
+Select this candidate and open its evidence. The card shows the stored distance and date gap, source references,
+location basis and review state. Nearby projects with close milestones are leads to investigate; they are not
+proof that equipment or crews can be shared.
 
-The Gemini workbench currently shows that live outputs are unavailable. Its pipeline and validation are testable, but we are not claiming real model accuracy, Atlas hosting or an HTTPS domain before those integrations run.
+The filing-change view preserves earlier statements, so we can explain a changed milestone when comparable
+versions are available. The national explorer adds searchable regional planning records and reference geography,
+while showing where project locations and coverage are missing.
 
-Our next step is planner-reviewed location evidence and a configured live deployment. GridBridge makes a lead inspectable; it does not promise savings.”
+We want a PM to leave with a useful evidence packet: what the sources say, what remains uncertain, and what to ask
+before contacting the neighboring project team. Our next acceptance step is observing that workflow on a real project.
 
-## Number sources
+What would you check first before deciding this candidate is worth a conversation?”
 
-Corpus/location counts: [committed F09 coverage](../data/locations/coverage.json). Match counts and ranking: [committed F10 summary](../data/matches/summary.json). Sample counterexample: [untouched golden overlaps](../data/fixtures/golden/overlaps.json). Gemini status: [committed evaluation](../data/extraction/eval.json). Audit evidence: [completed independent audit](../reports/audit/summary.md).
+## Evidence to have ready
+
+- Pick and rehearse one pair; identify sample versus real data and show its actual effective review state.
+- The legacy [audit](../reports/audit/summary.md) confirms no pairs. Do not call a rejected pair an actionable opportunity.
+- If explaining scale, take numbers from [legacy coverage](../data/locations/coverage.json) and
+  [national coverage](../data/national/coverage.json), with their different denominators and statuses.
+- Show Gemini output only when the selected revision and dataset actually contain it. Pending PR91 reports do not
+  establish what the demo serves. [Main extraction](../data/extraction/eval.json), [main brief summary](../data/briefs/summary.json).
+- Keep a table/evidence route available if the 3D view fails. The mobile-heading issue is tracked in the status report.
+
+## Expansion answer — optional
+
+“We can extend discovery source by source, preserving each source's meaning, update history and location evidence.
+The national explorer already separates imported records from reference geography. We will measure useful coverage
+and validate the PM workflow as we expand. Equipment rental/subleasing, automatic dispatch and predictive claims
+are potential later work requiring separate evidence and decisions.”
+
+The accepted context integration and potential-work register are in [C16 / PR99](https://github.com/fradicus/Shellhacks-2026/pull/99).
