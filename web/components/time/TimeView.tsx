@@ -99,6 +99,7 @@ export function TimeView({
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
   const [trayOpen, setTrayOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
   const [tour, setTour] = useState<number | null>(null);
   const tourTimer = useRef<number | null>(null);
 
@@ -781,6 +782,18 @@ export function TimeView({
             <span className={s.review} data-state={pair.review_state ?? "needs_review"}>
               {REVIEW[pair.review_state ?? "needs_review"]}
             </span>
+            <button
+              type="button"
+              className={s.copy}
+              onClick={() =>
+                navigator.clipboard?.writeText(window.location.href).then(() => {
+                  setCopied(true);
+                  window.setTimeout(() => setCopied(false), 1600);
+                })
+              }
+            >
+              {copied ? "Copied" : "Copy link"}
+            </button>
             <Link href={`/pair/${encodeURIComponent(pair.id)}`} className={s.evidence}>
               Open evidence →
             </Link>
