@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 from collections import Counter, defaultdict
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -12,25 +13,22 @@ from common.schema import validate
 
 from .boundaries import StateBoundaries
 from .core import (
+    AUTO_REVIEW_VERSION,
+    AUTO_REVIEWER,
     MATCHER_VERSION,
-    PROJECT_SOURCE_GATES,
     SOURCE_BLOCKING_FLAGS,
+    automatic_decision_hash,
     candidate_index,
     canonical_json_sha256,
     find_candidates,
     grade_candidates,
     location_id,
-    review_id,
+    review_event_id,
 )
-
-DEFAULT_REVIEW_AT = f"{os.getenv('ANALYSIS_DATE', '2026-09-26')}T00:00:00Z"
 
 
 def _source_gate(project: dict[str, Any]) -> list[str]:
-    gates = sorted(SOURCE_BLOCKING_FLAGS & set(project.get("quality_flags", [])))
-    if project["_id"] in PROJECT_SOURCE_GATES:
-        gates.append(PROJECT_SOURCE_GATES[project["_id"]])
-    return gates
+    return sorted(SOURCE_BLOCKING_FLAGS & set(project.get("quality_flags", [])))
 
 
 def _evidence_text(confidence: str, selected: dict[str, Any] | None, reasons: list[str]) -> str:
@@ -149,16 +147,6 @@ def _coverage(
         for project in projects
         if "source_status_conflict" in project.get("quality_flags", [])
     ]
-    f09_scope_reviews = [
-        {
-            "project_id": project["_id"],
-            "project_key": project["project_key"],
-            "reason": PROJECT_SOURCE_GATES[project["_id"]],
-            "utility": _utility_key(project),
-        }
-        for project in projects
-        if project["_id"] in PROJECT_SOURCE_GATES
-    ]
     located = [location for location in locations if location["confidence"] != "rejected"]
     sample = sorted(
         located,
@@ -197,7 +185,6 @@ def _coverage(
         ],
         "source_gates": {
             "endpoint_ambiguous": source_ambiguities,
-            "f09_endpoint_scope_review": f09_scope_reviews,
             "source_status_conflict": status_conflicts,
         },
         "totals": dict(sorted(totals.items())),
@@ -234,11 +221,111 @@ def _sanity(locations: list[dict[str, Any]], inventory: list[dict[str, Any]]) ->
     }
 
 
+def _parse_utc_timestamp(value: Any) -> datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None or parsed.utcoffset() is None:
+        return None
+    return parsed.astimezone(UTC)
+
+
+def _format_utc_timestamp(value: datetime) -> str:
+    return value.astimezone(UTC).isoformat().replace("+00:00", "Z")
+
+
+def _review_history(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    value = load_json(path)
+    history = value if isinstance(value, list) else [value]
+    ids = set()
+    for review in history:
+        validate(review, "review")
+        if review["_id"] in ids:
+            raise ValueError(f"duplicate append-only review id: {review['_id']}")
+        ids.add(review["_id"])
+    return history
+
+
+def _latest_review(history: list[dict[str, Any]], record_id: str) -> dict[str, Any] | None:
+    candidates = [
+        (timestamp, position, review)
+        for position, review in enumerate(history)
+        if review.get("record_id") == record_id
+        and (timestamp := _parse_utc_timestamp(review.get("at"))) is not None
+    ]
+    return max(candidates, default=(None, -1, None), key=lambda item: (item[0], item[1]))[2]
+
+
+def _append_automatic_reviews(
+    path: Path,
+    locations: list[dict[str, Any]],
+    *,
+    review_at: str | None = None,
+) -> tuple[list[dict[str, Any]], int]:
+    """Append changed automatic decisions; exact replay preserves the latest event byte-for-byte."""
+    history = _review_history(path)
+    existing_ids = {review["_id"] for review in history}
+    requested_time = _parse_utc_timestamp(review_at) if review_at is not None else datetime.now(UTC)
+    if requested_time is None:
+        raise ValueError("review_at must be a timezone-aware ISO-8601 timestamp")
+    appended = 0
+    for location in locations:
+        verdict = "accepted_by_f09_rules" if location["confidence"] != "rejected" else "unresolved"
+        reason = location["evidence"]
+        decision_hash = automatic_decision_hash(location, verdict, reason)
+        previous = _latest_review(history, location["_id"])
+        if (
+            previous is not None
+            and previous.get("reviewer") == AUTO_REVIEWER
+            and previous.get("decision_version") == AUTO_REVIEW_VERSION
+            and previous.get("decision_hash") == decision_hash
+        ):
+            continue
+        previous_at = _parse_utc_timestamp(previous.get("at")) if previous else None
+        event_time = requested_time
+        if previous_at is not None and event_time <= previous_at:
+            event_time = previous_at + timedelta(microseconds=1)
+        at = _format_utc_timestamp(event_time)
+        event_id = review_event_id(location["_id"], decision_hash, at, previous.get("_id") if previous else None)
+        if event_id in existing_ids:
+            raise ValueError(f"append-only review identity collision: {event_id}")
+        review = {
+            "_id": event_id,
+            "at": at,
+            "decision_hash": decision_hash,
+            "decision_version": AUTO_REVIEW_VERSION,
+            "matcher_version": MATCHER_VERSION,
+            "reason": reason,
+            "record_id": location["_id"],
+            "reviewer": AUTO_REVIEWER,
+            "verdict": verdict,
+        }
+        if previous is not None:
+            review["supersedes"] = previous["_id"]
+            review["supersession_reason"] = (
+                "supersedes_provisional_midnight_v1"
+                if previous.get("reviewer") == "f09-deterministic-rules-v1"
+                and previous.get("at") == "2026-09-26T00:00:00Z"
+                else "automatic_decision_changed"
+            )
+        validate(review, "review")
+        history.append(review)
+        existing_ids.add(event_id)
+        appended += 1
+    write_json(path, history)
+    return history, appended
+
+
 def build_locations(
     *,
     repo_root: Path = REPO_ROOT,
     live_boundaries: bool = False,
-    review_at: str = DEFAULT_REVIEW_AT,
+    review_at: str | None = None,
 ) -> dict[str, Any]:
     desc = load_json(repo_root / "data/projects/desc.json")
     gpc = load_json(repo_root / "data/projects/gpc.json")
@@ -253,20 +340,6 @@ def build_locations(
     ]
     locations.sort(key=lambda item: (item["project_id"], item["endpoint_index"], item["_id"]))
 
-    reviews = []
-    for location in locations:
-        verdict = "accepted_by_f09_rules" if location["confidence"] != "rejected" else "unresolved"
-        review = {
-            "_id": review_id(location["_id"], verdict),
-            "at": review_at,
-            "reason": location["evidence"],
-            "record_id": location["_id"],
-            "reviewer": "f09-deterministic-rules-v1",
-            "verdict": verdict,
-        }
-        validate(review, "review")
-        reviews.append(review)
-
     coverage = _coverage(projects, locations, boundaries.manifest)
     coverage["sanity_checks"] = _sanity(locations, inventory)
     coverage["semantic_input_sha256"] = {
@@ -275,6 +348,16 @@ def build_locations(
         "osm_substations": canonical_json_sha256(inventory),
     }
     write_json(repo_root / "data/locations/locations.json", locations)
+    reviews, _ = _append_automatic_reviews(
+        repo_root / "data/review/locations/geo.json", locations, review_at=review_at
+    )
+    coverage["review_history"] = {
+        "automatic_decision_version": AUTO_REVIEW_VERSION,
+        "events": len(reviews),
+        "latest_automatic_events": sum(review.get("decision_version") == AUTO_REVIEW_VERSION for review in reviews),
+        "provisional_v1_events_preserved": sum(
+            review.get("reviewer") == "f09-deterministic-rules-v1" for review in reviews
+        ),
+    }
     write_json(repo_root / "data/locations/coverage.json", coverage)
-    write_json(repo_root / "data/review/locations/geo.json", reviews)
     return coverage

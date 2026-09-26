@@ -14,15 +14,15 @@
     "unique_exact_fallback": "medium with project_area_unverified"
   },
   "coverage_scope": "full",
-  "matcher_version": "location-review-v1",
+  "matcher_version": "location-review-v2",
   "per_utility": {
     "DESC": {
       "active_projects": 54,
-      "filed_endpoints": 65,
+      "filed_endpoints": 63,
       "located": 16,
       "medium": 16,
-      "rejected": 49,
-      "zero_endpoint_projects": 15
+      "rejected": 47,
+      "zero_endpoint_projects": 16
     },
     "GPC": {
       "active_projects": 138,
@@ -39,6 +39,12 @@
       "medium": 24,
       "rejected": 95
     }
+  },
+  "review_history": {
+    "automatic_decision_version": "f09-auto-review-v2",
+    "events": 802,
+    "latest_automatic_events": 400,
+    "provisional_v1_events_preserved": 402
   },
   "sampled_locations": [
     {
@@ -103,7 +109,7 @@
     }
   },
   "semantic_input_sha256": {
-    "desc_projects": "1396293b9f32f884630d6207366991f0fcf5104823c81e8c402769d690766ff1",
+    "desc_projects": "ae5b60ebc4ea8086d3fd03e8e642ad62cd47ab8867084f6dbaae21d425a3f319",
     "gpc_projects": "025546d29b86aa26e9f1a1f8e2e968b2919ec5827f79b2c406384b9b4fcf4f67",
     "osm_substations": "0dd4e57be395718104f6a123801844103f48683a138f8da6682415ff20792e0d"
   },
@@ -247,6 +253,16 @@
         "utility": "DESC"
       },
       {
+        "project_id": "DESC:6238 H@desc-2025",
+        "project_key": "DESC:6238 H",
+        "quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous",
+          "yearly_spend_not_published"
+        ],
+        "utility": "DESC"
+      },
+      {
         "project_id": "GPC:20243@gpc-2025",
         "project_key": "GPC:20243",
         "quality_flags": [
@@ -311,14 +327,6 @@
         "utility": "GPC"
       }
     ],
-    "f09_endpoint_scope_review": [
-      {
-        "project_id": "DESC:6238 H@desc-2025",
-        "project_key": "DESC:6238 H",
-        "reason": "filed_title_and_description_endpoint_scope_conflict",
-        "utility": "DESC"
-      }
-    ],
     "source_status_conflict": [
       {
         "project_id": "GPC:20482@gpc-2025",
@@ -332,10 +340,10 @@
   },
   "totals": {
     "active_projects": 262,
-    "filed_endpoints": 402,
+    "filed_endpoints": 400,
     "located": 89,
     "medium": 89,
-    "rejected": 313,
-    "zero_endpoint_projects": 23
+    "rejected": 311,
+    "zero_endpoint_projects": 24
   }
 }

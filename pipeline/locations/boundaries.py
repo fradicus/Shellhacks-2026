@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from common.io import load_json, write_json
+from matches.core import EARTH_RADIUS_MI, haversine_mi
 
 LAYER_URL = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/4"
 QUERY_PARAMS = [
@@ -152,15 +153,58 @@ def _in_geometry(lon: float, lat: float, geometry: dict[str, Any]) -> bool:
 
 
 def _segment_distance_miles(lon: float, lat: float, a: list[float], b: list[float]) -> float:
-    """Local equirectangular point-to-segment distance; retain full precision for the 10 mi rule."""
-    lon_scale = 69.172 * math.cos(math.radians(lat))
-    lat_scale = 69.0
-    ax, ay = (a[0] - lon) * lon_scale, (a[1] - lat) * lat_scale
-    bx, by = (b[0] - lon) * lon_scale, (b[1] - lat) * lat_scale
-    dx, dy = bx - ax, by - ay
-    denominator = dx * dx + dy * dy
-    fraction = 0.0 if denominator == 0 else max(0.0, min(1.0, -(ax * dx + ay * dy) / denominator))
-    return math.hypot(ax + fraction * dx, ay + fraction * dy)
+    """Great-circle point-to-arc distance using the canonical 3,958.8-mile radius."""
+
+    def xyz(point: tuple[float, float] | list[float]) -> tuple[float, float, float]:
+        point_lon, point_lat = map(math.radians, point[:2])
+        return (
+            math.cos(point_lat) * math.cos(point_lon),
+            math.cos(point_lat) * math.sin(point_lon),
+            math.sin(point_lat),
+        )
+
+    def dot(left: tuple[float, float, float], right: tuple[float, float, float]) -> float:
+        return sum(x * y for x, y in zip(left, right, strict=True))
+
+    def cross(
+        left: tuple[float, float, float], right: tuple[float, float, float]
+    ) -> tuple[float, float, float]:
+        return (
+            left[1] * right[2] - left[2] * right[1],
+            left[2] * right[0] - left[0] * right[2],
+            left[0] * right[1] - left[1] * right[0],
+        )
+
+    def magnitude(vector: tuple[float, float, float]) -> float:
+        return math.sqrt(dot(vector, vector))
+
+    def unit(vector: tuple[float, float, float]) -> tuple[float, float, float]:
+        length = magnitude(vector)
+        return tuple(value / length for value in vector)  # type: ignore[return-value]
+
+    def angle(left: tuple[float, float, float], right: tuple[float, float, float]) -> float:
+        return math.atan2(magnitude(cross(left, right)), dot(left, right))
+
+    point_xyz, start_xyz, end_xyz = xyz((lon, lat)), xyz(a), xyz(b)
+    endpoint_distance = min(
+        haversine_mi(lat, lon, a[1], a[0]),
+        haversine_mi(lat, lon, b[1], b[0]),
+    )
+    normal = cross(start_xyz, end_xyz)
+    if magnitude(normal) < 1e-15:
+        return endpoint_distance
+    normal = unit(normal)
+    projection = tuple(
+        point_xyz[index] - dot(point_xyz, normal) * normal[index] for index in range(3)
+    )
+    if magnitude(projection) < 1e-15:
+        return endpoint_distance
+    foot = unit(projection)
+    segment_angle = angle(start_xyz, end_xyz)
+    for candidate in (foot, tuple(-value for value in foot)):
+        if abs(angle(start_xyz, candidate) + angle(candidate, end_xyz) - segment_angle) < 1e-10:
+            endpoint_distance = min(endpoint_distance, EARTH_RADIUS_MI * angle(point_xyz, candidate))
+    return endpoint_distance
 
 
 @dataclass(frozen=True)

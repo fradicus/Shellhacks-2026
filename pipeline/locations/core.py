@@ -5,12 +5,15 @@ from __future__ import annotations
 import difflib
 import hashlib
 import json
+import re
 from collections import defaultdict
 from typing import Any
 
 from .boundaries import StateBoundaries
 
-MATCHER_VERSION = "location-review-v1"
+MATCHER_VERSION = "location-review-v2"
+AUTO_REVIEW_VERSION = "f09-auto-review-v2"
+AUTO_REVIEWER = "f09-deterministic-rules-v2"
 DESC_OPERATOR_ALIASES = {
     "dominion energy south carolina",
     "south carolina electric & gas",
@@ -18,9 +21,6 @@ DESC_OPERATOR_ALIASES = {
 }
 GPC_OPERATOR_ALIASES = {"georgia power", "georgia power company"}
 SOURCE_BLOCKING_FLAGS = {"endpoint_ambiguous", "source_status_conflict"}
-PROJECT_SOURCE_GATES = {
-    "DESC:6238 H@desc-2025": "filed_title_and_description_endpoint_scope_conflict",
-}
 
 
 def canonical_json_sha256(value: Any) -> str:
@@ -34,9 +34,48 @@ def location_id(project_id: str, endpoint_index: int, endpoint_norm: str, eviden
     return f"location:v1:{hashlib.sha256(identity.encode()).hexdigest()[:24]}"
 
 
-def review_id(record_id: str, verdict: str) -> str:
-    identity = f"v1\0{record_id}\0{verdict}\0f09-deterministic-rules-v1"
-    return f"review:v1:{hashlib.sha256(identity.encode()).hexdigest()[:24]}"
+def automatic_decision_hash(location: dict[str, Any], verdict: str, reason: str) -> str:
+    """Hash F09's automatic decision facts without claiming a C7/F13 audit-subject fingerprint."""
+    return canonical_json_sha256(
+        {
+            "decision_version": AUTO_REVIEW_VERSION,
+            "evidence_sha256": canonical_json_sha256(location),
+            "matcher_version": MATCHER_VERSION,
+            "reason": reason,
+            "record_id": location["_id"],
+            "reviewer": AUTO_REVIEWER,
+            "verdict": verdict,
+        }
+    )
+
+
+def review_event_id(record_id: str, decision_hash: str, at: str, previous_event_id: str | None) -> str:
+    """Identify one append-only event; A→B→A produces three identities while exact replay reuses the latest."""
+    identity = f"v2\0{record_id}\0{decision_hash}\0{at}\0{previous_event_id or 'first'}"
+    return f"review:f09-auto-v2:{hashlib.sha256(identity.encode()).hexdigest()[:24]}"
+
+
+def cross_border_tie_evidence(project: dict[str, Any]) -> dict[str, Any] | None:
+    """Return a filed source quote that calls the project a tie, excluding local bus-tie equipment."""
+    field_evidence = project.get("field_evidence")
+    if not isinstance(field_evidence, dict):
+        return None
+    for field in ("name", "description"):
+        evidence = field_evidence.get(field)
+        if not isinstance(evidence, dict) or not isinstance(evidence.get("quote"), str):
+            continue
+        quote = evidence["quote"]
+        for match in re.finditer(r"\btie(?:\s+lines?)?\b", quote, flags=re.IGNORECASE):
+            prefix = quote[max(0, match.start() - 5) : match.start()]
+            if re.search(r"bus[-\s]*$", prefix, flags=re.IGNORECASE):
+                continue
+            return {
+                "field": field,
+                "page": evidence.get("page"),
+                "quote": quote,
+                "source_id": (project.get("source") or {}).get("source_id"),
+            }
+    return None
 
 
 def parse_voltage_kv(value: Any) -> list[float]:
@@ -86,6 +125,7 @@ def _candidate_record(
     lat, lon = osm.get("lat"), osm.get("lon")
     state = boundaries.state_for(lon, lat) if isinstance(lat, (int, float)) and isinstance(lon, (int, float)) else None
     home_state = _home_state(project)
+    tie_evidence = cross_border_tie_evidence(project)
     border_distance = None
     geography_status = "outside_ga_sc"
     if state == home_state:
@@ -102,7 +142,7 @@ def _candidate_record(
     if geography_status == "home_state_only":
         reasons.append("state_is_coarse_context_only")
     elif geography_status == "other_state_within_10_mi":
-        reasons.append("cross_border_candidate_requires_tie_evidence")
+        reasons.append("cross_border_tie_source_supported" if tie_evidence else "cross_border_tie_evidence_missing")
     elif geography_status == "other_state_over_10_mi":
         reasons.append("outside_allowed_border_distance")
     else:
@@ -124,6 +164,7 @@ def _candidate_record(
     return {
         "border_distance_mi": border_distance,
         "coordinate_method": osm.get("coordinate_method"),
+        "cross_border_tie_evidence": tie_evidence,
         "decision": "rejected",
         "lat": lat,
         "lon": lon,
@@ -185,6 +226,8 @@ def _context_viable(candidate: dict[str, Any]) -> bool:
         return False
     if candidate["state_evidence"] not in {"home_state_only", "other_state_within_10_mi"}:
         return False
+    if candidate["state_evidence"] == "other_state_within_10_mi" and not candidate.get("cross_border_tie_evidence"):
+        return False
     if candidate["operator_status"] == "conflict":
         return False
     if candidate["voltage_status"] == "conflict":
@@ -218,7 +261,7 @@ def grade_candidates(
     if selected["voltage_status"] == "missing":
         limitations.append("voltage_missing")
     if selected["state_evidence"] == "other_state_within_10_mi":
-        limitations.append("cross_border_tie_not_independently_verified")
+        limitations.append("cross_border_tie_source_supported")
     if selected["match_type"] == "fuzzy":
         confidence = "low"
     elif fine_area_verified and selected["operator_status"] in {"match", "missing"}:
