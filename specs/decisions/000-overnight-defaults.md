@@ -18,8 +18,8 @@ review this file first after the run.
 | D10 | Schedule | 36 hours, R0–R4 | 8 hours, phases 0–4. E's R3 (third utility) and R4 are out of scope. E's scenario drawer = F17 stretch | none |
 | D11 | Geocoding | Official maps + OSM, no automated Nominatim | Same. OSM Overpass bulk pulls, cached. No Nominatim automation. Gemini never asserts coordinates | none |
 | D12 | Timeline-only matches | Excluded | Excluded. Geography alone decides overlap (mission rules) | none |
-| D13 | Machines unknown | none | 3 lanes (A data, B app, C quality) from the roadmap front matter; the machine mapping is filled in at launch (`preflight.md` §6) | none |
-| D14 | Model ids | Pick an available stable model | Gemini: the `GEMINI_MODEL` env value set in pre-flight. Claude agents: whatever each machine's adapter is configured with. Record both in the PR body | none |
+| D13 | Machines unknown | none | Choose Paperclip, local Claude Code + Codex, or hybrid in roadmap `execution_mode`. Keep three logical lanes; local assignments come from `local_workers`. In hybrid mode Paperclip skips local IDs. Fill runtime/machine ownership before launch | none |
+| D14 | Model ids | Pick an available stable model | Gemini: the `GEMINI_MODEL` env value set in pre-flight. Coding agents: the model selected in the Paperclip adapter or local Claude/Codex session. Record runtime/model separately from the product Gemini model in the PR body | none |
 | D15 | Other regional sources | none | **Don't ingest** the 2026 SERTP preliminary expansion report: it's labeled Non-CEII but its text carries CEII headings (found by Plan E's review). Only the sources in F01's manifest are ingested tonight | Revisit after the sponsor clarifies |
 
 ## Ambiguity rules (when neither the spec nor this table covers it)

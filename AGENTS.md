@@ -3,6 +3,9 @@
 This repo is built with spec-driven development by autonomous agents. The **spec is the source of truth**; chat
 memory and old plans aren't.
 
+## Execution options
+Use Paperclip, local Claude Code + Codex, or both with separate feature assignments. Select `execution_mode` in `specs/roadmap.md` and follow `specs/preflight.md`. All modes share the same specs, separate feature worktrees, PR claims and CI gates. Never assign the same feature to a local session and a Paperclip agent.
+
 ## Every run
 1. Follow `specs/overnight.md`. It's the process: picking work, branches, PRs, merging, ownership, stop switch, gates.
 2. Load `specs/mission.md`, `specs/tech-stack.md`, `specs/roadmap.md` and your feature's `specs/features/<ID>-*/spec.md` from `origin/main`.

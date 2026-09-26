@@ -11,7 +11,7 @@ cut: never
 
 # F18 Status, acceptance, submission
 
-Runs the whole night as the reporting agent (`overnight.md` §9–10).
+Runs through the CEO agent in Paperclip mode. In local/hybrid mode, the worker assigned F18 makes reporting checkpoints in a separate worktree between implementation steps, prioritizing final reporting at its gate. A local session that exits must be resumed; these specs do not create an automatic scheduler (`overnight.md` §9–10).
 
 ## Plan
 1. **Every 30 minutes:** `reports/status.md`, merged as `[F18] status HH:MM`. It covers done and in-progress features with PR links, `main` red or green, time left, cuts made, stale claims closed, and issues labeled `human-morning`.
