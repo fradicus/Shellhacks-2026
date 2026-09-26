@@ -62,10 +62,11 @@ test("real backend readiness renders at desktop and mobile without a site reques
   await expect(page.getByRole("heading", { name: "Plan one mobilization" })).toBeVisible();
   await page.locator("summary").filter({ hasText: "Truck route" }).click();
   await expect(page.getByText("Local time zone: America/New_York").first()).toBeVisible();
-  await expect(page.getByText("Checking…")).toHaveCount(0);
-  await expect(page.getByText("3,413 utilities · 2024 EIA vintage")).toBeVisible();
-  await expect(page.getByText(/Separate LVR provisioning required/)).toBeVisible();
-  await expect(page.getByText(/No current, externally approved model/)).toBeVisible();
+  const readiness = page.getByRole("region", { name: "Provider readiness" });
+  await expect(readiness.getByText("Checking…")).toHaveCount(0);
+  await expect(readiness.getByText("3,413 utilities · 2024 EIA vintage")).toBeVisible();
+  await expect(readiness.getByText(/Separate LVR provisioning required/)).toBeVisible();
+  await expect(readiness.getByText(/No current, externally approved model/)).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("operations-real-backend-initial-1440.png"), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }));
