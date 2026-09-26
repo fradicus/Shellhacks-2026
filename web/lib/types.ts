@@ -140,11 +140,30 @@ export interface Extraction {
   page: number;
   model: string;
   prompt_version: string;
+  /** Per field (F03): {value, quote, page, valid, reasons}. Malformed responses use {}. */
   fields: Record<string, unknown>;
+  /** Per field: "match" | "mismatch" | "missing". */
   comparison: Record<string, unknown>;
   accepted: boolean;
   generated_at?: string;
   schema_version?: string;
+  source_sha256?: string;
+  /** The exact page text the model saw (DESC only, D2). */
+  source_text?: string;
+  source_quality_flags?: string[];
+  /** F01's deterministic values under the same field names as `fields`. */
+  deterministic?: Record<string, unknown>;
+  status?: "accepted" | "rejected" | "failed";
+  rejection_reason?: string | null;
+  evaluation?: Record<string, unknown>;
+}
+
+export interface ExtractionField {
+  value: unknown;
+  quote: string | null;
+  page: number | null;
+  valid: boolean;
+  reasons: string[];
 }
 
 export interface Review {
@@ -163,6 +182,8 @@ export interface Run {
   finished_at: string | null;
   status: "ok" | "failed" | "partial";
   counts: Record<string, unknown>;
+  /** The dataset (git sha) this run loaded; a failed run's dataset is not the active one. */
+  dataset?: string;
 }
 
 export interface Coverage {

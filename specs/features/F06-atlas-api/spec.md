@@ -5,7 +5,7 @@ lane: B
 agent: technical-lead
 phase: 1
 depends_on: [F00]
-owns: [pipeline/load/, tests/pipeline/test_f06_, web/app/api/projects/, web/app/api/matches/, web/app/api/pairs/, web/app/api/versions/, web/app/api/coverage/, web/app/api/extraction/, web/app/api/sources/, web/lib/server/]
+owns: [pipeline/load/, tests/pipeline/test_f06_, web/app/api/projects/, web/app/api/matches/, web/app/api/pairs/, web/app/api/versions/, web/app/api/coverage/, web/app/api/extraction/, web/app/api/sources/, web/app/api/briefs/, web/app/api/runs/, web/lib/server/]
 cut: never
 ---
 
@@ -25,7 +25,7 @@ The `load` GitHub Action is the **only writer** to Atlas (tech-stack). This feat
    - `GET /api/projects?bbox=w,s,e,n&view=`: `$geoWithin` `$box` when bbox is given; null-center projects included only when no bbox is given
    - `GET /api/matches?view=&maxDistance=&limit=`: priority order as stored
    - `GET /api/pairs/[id]`: the match, both projects with endpoints and evidence, the brief (if passed), version changes for either project
-   - `GET /api/versions`, `GET /api/coverage`, `GET /api/extraction?source=`, `GET /api/sources` (added by C3)
+   - `GET /api/versions`, `GET /api/coverage`, `GET /api/extraction?source=`, `GET /api/sources` (added by C3), `GET /api/briefs` (all, passed and rejected) and `GET /api/runs` (latest run or null; public Run fields only) (added by C5)
 4. Validate every query param with `zod`: bbox within +/-180/90, limit <= 500, enums checked. Unknown params -> 400. Only read the active dataset.
 5. Atlas unreachable -> 503 `{unavailable: true}`. Never serve fixtures in production.
 
