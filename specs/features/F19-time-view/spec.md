@@ -31,6 +31,8 @@ Added by the human after run 1's freeze (Plan E VIS-01..04, issue 23's 3D part o
 
 ## Validation
 - lint, typecheck, fixture build; screenshots of overview, a selected pair, 2D and phone width.
+- In a fresh visible browser tab, navigate Home → Overlaps → National explorer → Overlaps.
+  On both Overlaps visits, the map container fills the stage and the basemap, pillars and year ruler render.
 
 ## Defaults
 - `three` pinned exactly via this feature's `[C9]`. Fonts via `next/font/google` scoped to the route.
