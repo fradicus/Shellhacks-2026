@@ -1,0 +1,61 @@
+{
+  "elements": [
+    {
+      "center": {
+        "lat": 33.6601273,
+        "lon": -82.1959307
+      },
+      "id": 52102019,
+      "tags": {
+        "barrier": "fence",
+        "name": "Thurmond Substation",
+        "operator": "Georgia Power",
+        "operator:wikidata": "Q5547666",
+        "operator:wikipedia": "en:Georgia Power",
+        "power": "substation",
+        "substation": "generation",
+        "voltage": "115000"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 32.3521162,
+        "lon": -81.1751124
+      },
+      "id": 121624352,
+      "tags": {
+        "barrier": "fence",
+        "frequency": "60",
+        "location": "outdoor",
+        "name": "McIntosh Substation",
+        "operator": "Georgia Power",
+        "operator:wikidata": "Q5547666",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "230000"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 32.3337624,
+        "lon": -81.0326063
+      },
+      "id": 1064022697,
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "switching",
+        "voltage": "230000"
+      },
+      "type": "way"
+    }
+  ],
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp_osm_base": "2026-09-26T11:07:02Z"
+  },
+  "version": 0.6
+}

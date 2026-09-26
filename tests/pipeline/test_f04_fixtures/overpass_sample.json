@@ -1,0 +1,78 @@
+{
+  "elements": [
+    {
+      "id": 101,
+      "lat": 33.6601234567,
+      "lon": -82.1959123456,
+      "tags": {
+        "name": "Thurmond Dam (USA) #5 Sub",
+        "operator": "Example Utility",
+        "power": "substation",
+        "voltage": "230000;115000"
+      },
+      "type": "node"
+    },
+    {
+      "center": {
+        "lat": 32.3521123456,
+        "lon": -81.1751123456
+      },
+      "id": 202,
+      "tags": {
+        "addr:county": "Effingham County",
+        "name": "McIntosh Primary",
+        "power": "switch"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 32.3338123456,
+        "lon": -81.0325123456
+      },
+      "id": 303,
+      "tags": {
+        "name": "Okatie Generating Plant",
+        "power": "plant"
+      },
+      "type": "relation"
+    },
+    {
+      "center": {
+        "lat": 32.3521123456,
+        "lon": -81.1751123456
+      },
+      "id": 202,
+      "tags": {
+        "addr:county": "Effingham County",
+        "name": "McIntosh Primary",
+        "power": "switch"
+      },
+      "type": "way"
+    },
+    {
+      "id": 404,
+      "tags": {
+        "power": "substation"
+      },
+      "type": "node"
+    },
+    {
+      "center": {
+        "lat": 32.4,
+        "lon": -81.0
+      },
+      "id": 505,
+      "tags": {
+        "name": "Not a candidate",
+        "power": "line"
+      },
+      "type": "way"
+    }
+  ],
+  "generator": "synthetic unit test fixture",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-26T00:00:00Z"
+  },
+  "version": 0.6
+}

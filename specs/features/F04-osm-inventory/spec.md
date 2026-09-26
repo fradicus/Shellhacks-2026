@@ -25,7 +25,7 @@ Starts right after F00, so geo isn't idle while the registers are parsed.
 - At most 1 request at a time, and sleep 10 s between tiles. Handle 429/504 by backing off and retrying up to 3 times.
 
 ## Validation
-- `tests/pipeline/test_f04_*.py`: the normalizer on a recorded sample. Plus a sanity check: the substations nearest the sample coordinates (Thurmond 33.6601,-82.1959; McIntosh 32.3521,-81.1751; Okatie 32.3338,-81.0325) are within 1 mi of a node whose `norm` contains THURMOND, MCINTOSH or OKATIE (skip, with a message, if the raw data is missing).
+- `tests/pipeline/test_f04_*.py`: the normalizer on a recorded sample. Plus a sanity check: for the sample coordinates (Thurmond 33.6601,-82.1959; McIntosh 32.3521,-81.1751; Okatie 32.3338,-81.0325), verify and report whether a feature whose `norm` contains THURMOND, MCINTOSH or OKATIE is within 1 mi (skip, with a message, if the raw data is missing). A nearby unnamed OSM feature remains unnamed and is reported as a gap; never assign the sample name to make this check pass.
 - PR body: counts, bbox, and how many substations have operator tags.
 
 ## Defaults
