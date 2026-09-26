@@ -9,3 +9,9 @@ Run verified-directory, operational-provider and outcome Node tests in the requi
 F35 deployment additionally requires `OUTCOMES_APPROVED_AT` (UTC timestamp), alongside `OUTCOMES_MODEL_PATH` and `OUTCOMES_APPROVED_SHA256`. It is an external approval record: requests earlier than this timestamp cannot use the newly approved model. The model itself binds path-free import/source/authorization/review provenance; it cannot self-activate. The hash and timestamp are deployment configuration, not browser inputs. Missing actual records, approval or a passing evaluated cohort means no prediction.
 
 No live Google truck-route access, private histories, model accuracy, national work-zone coverage or production deployment is claimed by integration checks. Each provider's actual coverage and current status remain visible. F32's optional assistant stays on its separate branch.
+
+## Additive current-conditions contract
+
+F34 adds `GET /api/operations/conditions?lat=<number>&lon=<number>` with exactly one of each required parameter, finite latitude/longitude bounds matching its point schema, and rejection of extra parameters. `ConditionsResponse` is `{ request: { lat, lon }, weather: Envelope<WeatherData>, roadwork: Envelope<RoadworkData> }`, using the existing provider contracts and independent failure states. It never calls soil, AEF or paid routing. This root-reviewed addition preserves the existing site and route contracts.
+
+F36 performs a full site request initially, then refreshes only these current conditions every 60 seconds while visible and bound to the active point. It retains the original soil/annual AEF evidence timestamps and stops polling on changed inputs, hidden pages and unmount. Refresh failures must remain visible and cannot make older evidence appear current. This avoids turning USDA's 24-hour reference interval into a 24-hour delay for weather updates.
