@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   applyFilterAction,
@@ -98,4 +99,23 @@ test("filter actions stay typed and reset keeps the user's page size", () => {
 test("CSV keeps numeric coordinates numeric and neutralizes text formula prefixes", () => {
   const csv = toCsv(["value"], [[-81.2], ["=1+1"], ["\t=1+1"], ["\r=1+1"]]);
   assert.equal(csv, "value\r\n-81.2\r\n'=1+1\r\n'\t=1+1\r\n\"'\r=1+1\"\r\n");
+});
+
+test("committed national snapshot counts and geography assignments agree", async () => {
+  const load = async <T>(name: string) => JSON.parse(await readFile(new URL(`../../../data/national/${name}`, import.meta.url), "utf8")) as T;
+  const [projects, actualGeography, coverage] = await Promise.all([
+    load<NationalProject[]>("projects.json"),
+    load<NationalGeography>("geography.json"),
+    load<{ projects_total: number; located_count: number; sources: { unknown_state_count: number; unknown_county_count: number }[] }>("coverage.json"),
+  ]);
+  assert.equal(projects.length, coverage.projects_total);
+  assert.equal(projects.filter((item) => item.center !== null).length, coverage.located_count);
+  assert.equal(projects.filter((item) => item.states.length === 0).length, coverage.sources.reduce((sum, item) => sum + item.unknown_state_count, 0));
+  assert.equal(projects.filter((item) => item.counties.length === 0).length, coverage.sources.reduce((sum, item) => sum + item.unknown_county_count, 0));
+
+  const region = actualGeography.regions[0];
+  const regionStates = new Set(actualGeography.states.filter((state) => state.census_region_code === region.region_code).map((state) => state.state_fips));
+  const filtered = filterNationalProjects(projects, parseNationalFilters({ region: region.region_code }), actualGeography);
+  assert.ok(filtered.every((item) => item.states.some((code) => regionStates.has(code))));
+  assert.ok(filtered.every((item) => item.states.length > 0));
 });
