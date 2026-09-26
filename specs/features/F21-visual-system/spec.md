@@ -5,7 +5,7 @@ lane: B
 agent: frontend-engineer
 phase: 5
 depends_on: [F19]
-owns: [web/components/brand/]
+owns: [web/components/brand/, web/app/not-found.tsx]
 cut: allowed
 ---
 
@@ -53,6 +53,10 @@ one product in the time view's language. Background: [C16 sponsor context](../..
 | `/gemini` | FIX-F16 | Code-review layout: source, Gemini, parse; a match/mismatch gutter like a diff |
 | `/impact` | FIX-F17 | Inputs panel; null dollars hatched as unknown |
 | `/explore`, `/search` | owners | Inherit tokens; bespoke work only with the owner's agreement |
+
+## Not found (issue #123)
+`web/app/not-found.tsx`: the two service rings drawn apart ("No overlap here."), with links to Overlaps and Home.
+Styles live in `web/components/brand/`.
 
 ## Requirements
 - Visual only. No data, API, schema or ranking change. Headings, labels, roles and accessible names stay as they
