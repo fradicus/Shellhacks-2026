@@ -19,6 +19,11 @@ follows:
 If these files conflict with anything else in the repo (old plans, skills, READMEs), the spec wins. If this
 protocol conflicts with the spec on project facts, the spec wins. On process rules, this protocol wins.
 
+## Execution mode
+Read `execution_mode` and `local_workers` from the roadmap. Paperclip runs the existing role/lane assignments. Local sessions adopt the role/lane of their allocated features. In hybrid mode, Paperclip must skip every feature assigned to a local worker. Both use the same PR claim and checks; no feature has two active owners.
+
+Local sessions have no Paperclip heartbeat or automatic restart. While active, they can recheck pending prerequisites between tasks; if the session exits, the operator resumes it. F18 reporting happens at checkpoints in its assigned local session, or through the CEO agent in Paperclip mode.
+
 ## 1. Start of every run (every agent, every heartbeat)
 
 1. `git fetch origin`. If `STOP` exists at the root of `origin/main`: comment "stopped" on your open PR, push nothing, and end the run.
@@ -31,17 +36,17 @@ protocol conflicts with the spec on project facts, the spec wins. On process rul
 
 - A feature is **done** when `changes/<ID>.md` exists on `origin/main`. Nothing else counts (no checkboxes, no issue states).
 - A feature is **ready** when:
-  - its `lane` matches yours and its `agent` matches your slug (or you're the lane's fallback after a stale close, section 9)
+  - you own it under the execution-mode rules above; Paperclip also matches its named role/lane, while a local worker adopts the assigned feature's role/lane
   - every ID in `depends_on` is done
   - no open PR has a title starting `[<ID>]`
   - the active gate allows its `phase`
-- Take the lowest-numbered ready feature. One feature at a time per agent. Each feature runs in its own git worktree.
-- No ready feature? Look for work in your lane's open issues (`contract-change`, `main-red`, bugs labeled with your lane). If there's none, end the run. Don't invent scope.
+- Take the lowest-numbered ready feature. One implementation feature at a time per worker. Each feature runs in its own git worktree. A local F18 owner may make short reporting checkpoints in a separate worktree between implementation steps.
+- No ready feature? Look for work in your lane's open issues (`contract-change`, `main-red`, bugs labeled with your lane). If there's none, leave a resume note. Paperclip can wake again on its configured heartbeat; an ended local session needs the operator to resume it. Don't invent scope.
 
 ## 3. Branch, PR, merge
 
-1. `git switch -c <id>-<slug> origin/main`, using a lowercase id (e.g. `f08-locations`).
-2. Push and open a **draft** PR titled `[<ID>] <name>` right away. That draft PR is your claim.
+1. Use a separate feature worktree: `git worktree add ../gridbridge-f09-locations -b f09-locations origin/main` (example). Open the assigned worker in that folder; never switch branches in another worker's directory. Paperclip may provision the equivalent isolated workspace.
+2. Push and open a **draft** PR titled `[<ID>] <name>` right away. That draft PR is your claim. Include the runtime/session and logical role in its body, especially when both tools use one GitHub account.
 3. Edit only files that match your feature's `owns` globs, plus `changes/<ID>.md`, `specs/features/<ID>-*/**` and `specs/decisions/<ID>-*.md`.
 4. Commit small; messages say why. **No `Co-Authored-By` or other trailers.**
 5. Run your feature's Validation section and the repo-wide checks in `AGENTS.md`. Paste the commands and results into the PR body. A failing check is reported as failing.
@@ -92,8 +97,7 @@ wrong, open an issue for its lane and don't edit it.
 
 ## 7. Budgets
 
-At 75% of its budget, an agent finishes its current feature and takes no new ones. Hard budget stops are set in the
-agent runner (Paperclip) and are the backstop.
+At 75% of an observable chosen budget, take no new feature work. In Paperclip mode configure its agent budgets; in local mode use the actual Claude/Codex account or API limits. Set Gemini application quotas/billing separately in both modes. Billing alerts and these instructions are not hard spending caps. All workers obey the elapsed-time gates.
 
 ## 8. Gates
 
@@ -114,7 +118,7 @@ A feature with `cut: never` is never skipped because of a gate. If it's late, th
 
 - A draft PR with no push for 45 minutes is stale. The reporting agent comments on it.
 - At 60 minutes, the reporting agent closes it and logs the decision.
-- The feature then becomes ready for any agent in the **same lane**. Another lane never takes it over.
+- Reassign only after the old worker has stopped writing; preserve the feature role/lane and update the mode assignment if transferring between Paperclip and a local session. A closed PR alone is not permission for two workers to continue the same feature.
 
 ## 10. Reporting
 

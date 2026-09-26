@@ -5,6 +5,7 @@ time; don't upgrade during the run. New dependencies only via a `[C<n>]` contrac
 
 | Layer | Choice |
 |---|---|
+| Agent runtime | Paperclip orchestration, local Claude Code + Codex, or disjoint hybrid assignments. All share root specs, feature worktrees and GitHub CI; choose in roadmap `execution_mode`. |
 | Pipeline | Python 3.12, `uv`, `pdfplumber`, `openpyxl`, `google-genai`, `pymongo`, `jsonschema`, `pyyaml`, `mongomock`, `pytest`, `ruff` |
 | Data | JSON files under `data/` committed to git (reviewable, diffable); JSON Schema in `schemas/` is the contract |
 | Database | MongoDB Atlas (M0), database `gridbridge`. **Only the `load` GitHub Action writes to it**, on pushes to `main` touching `data/**` |
@@ -48,10 +49,13 @@ Before F00 merges, only F00 runs, and it creates these tools.
 ## Environment variables
 | Name | Where | Used by |
 |---|---|---|
-| `GEMINI_API_KEY`, `GEMINI_MODEL` | lane A machine | Gemini pipeline stages |
+| `GEMINI_API_KEY`, `GEMINI_MODEL` | data runtime only (Paperclip env or local process) | Gemini pipeline stages |
 | `MONGODB_URI_RW` | GitHub Actions secret only | `load` workflow |
-| `MONGODB_URI_RO`, `MONGODB_DB=gridbridge` | Vercel env; lanes B/C machines | web API, QA |
+| `MONGODB_URI_RO`, `MONGODB_DB=gridbridge` | Vercel env; app/QA runtimes | web API, QA |
 | `DATA_MODE=fixture` | CI and local dev without Atlas | web reads `data/fixtures` via `lib/data.ts`; **never in production** |
 | `ANALYSIS_DATE` | Vercel env + pipeline | future vs historical split (default: `run_start` date) |
 
 Production without Atlas shows an explicit "database unavailable" state. It never silently serves fixtures.
+
+## Credentials before the run
+Set `GEMINI_API_KEY` and a tested `GEMINI_MODEL` tonight for real F03/F12 extraction and briefs. Without them, offline coding/tests can proceed but Gemini integration remains incomplete. Atlas RW belongs only in GitHub Actions; RO goes to Vercel and the app/QA runtime before live integration. Offline CI needs no live Gemini/Atlas credentials. Local coding-tool authentication is separate from the product Gemini key. See [preflight.md](preflight.md) for the short checklist and both launch options.

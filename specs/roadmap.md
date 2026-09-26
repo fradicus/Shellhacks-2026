@@ -1,12 +1,17 @@
 ---
 run_start: "SET-AT-LAUNCH"          # human sets e.g. "2026-09-26T23:30:00-04:00" in the last pre-flight commit
 analysis_date: "SET-AT-LAUNCH"      # same calendar date as run_start unless decided otherwise
+execution_mode: paperclip           # paperclip | local | hybrid; choose at launch
 contract_owner: technical-lead
 reporting_agent: ceo
 lanes:
   A: { name: data,    agents: [data-researcher, gemini-engineer, geo-engineer] }
   B: { name: app,     agents: [technical-lead, frontend-engineer] }
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
+# Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
+local_workers:
+  claude-local: [F01, F02, F03, F04, F07, F09, F10, F12]
+  codex-local: [F00, F05, F06, F08, F11, F13, F14, F15, F16, F17, F18]
 frozen_paths:
   - schemas/
   - scripts/
@@ -43,6 +48,13 @@ stretch: [F17]
 
 Each phase leaves a working, deployable product on `main`. The gates in the front matter assume an **8-hour run**.
 For a shorter run, scale every `at` value proportionally in the pre-flight commit (a 6-hour run is 0.75×).
+
+## Execution options
+- **Paperclip:** agents use their named role/lane assignments; the local worker map is ignored.
+- **Local:** Claude Code and Codex use `local_workers`, adopting each feature's named role/lane. One implementation feature per session; the F18 owner also handles short reporting checkpoints in a separate worktree.
+- **Hybrid:** local sessions own only IDs listed in `local_workers`; Paperclip owns the remaining features through the existing role/lane assignments. Trim the local map before launch. Pause the old owner before any reassignment.
+
+The sample local split gives Claude the data work and QA harness, and Codex the app, data audit, release and reporting. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
 
 ## Phase 0: bootstrap (lane B alone)
 Skeleton, contracts, fixtures, the canonical matcher and golden test, CI, the ownership gate, placeholder routes. After this, everyone works in parallel without touching shared files.
