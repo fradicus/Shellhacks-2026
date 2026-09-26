@@ -1,8 +1,8 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  max-width: 1100px;
+  gap: 18px;
+  max-width: 1160px;
 }
 
 .head h1 {
@@ -10,16 +10,16 @@
 }
 
 .sub {
-  margin: 4px 0 0;
+  margin: 6px 0 0;
   color: var(--muted);
-  max-width: 80ch;
+  max-width: 76ch;
 }
 
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 16px;
 }
 
 .groups {
@@ -28,30 +28,53 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .group {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px 14px;
+  border-radius: var(--radius-l);
+  padding: 16px 20px 8px;
+  box-shadow: var(--shadow);
+  animation: gb-rise var(--dur) var(--ease) both;
+  transition: border-color 200ms;
 }
 
+.group:hover {
+  border-color: var(--border-strong);
+}
+
+.group:nth-child(2) { animation-delay: 50ms; }
+.group:nth-child(3) { animation-delay: 100ms; }
+.group:nth-child(4) { animation-delay: 150ms; }
+.group:nth-child(n + 5) { animation-delay: 200ms; }
+
+/* The sponsor-verified example: lit edge rather than a heavy box. */
 .verified {
-  border-color: var(--ok);
-  box-shadow: 0 0 0 1px var(--ok);
+  border-color: rgba(150, 227, 170, 0.45);
+  box-shadow: var(--shadow), 0 0 0 1px rgba(150, 227, 170, 0.18), 0 0 40px -18px rgba(150, 227, 170, 0.5);
 }
 
 .groupHead {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 6px 10px;
+  gap: 6px 12px;
+  padding-bottom: 10px;
+}
+
+.groupHead strong {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
 }
 
 .groupHead code {
-  color: var(--muted);
+  color: var(--text-3);
 }
 
 .inMatch {
@@ -62,13 +85,16 @@
 
 .noMatch {
   margin-left: auto;
-  color: var(--muted);
-  font-size: 13px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
 }
 
 .changes {
   list-style: none;
-  margin: 8px 0 0;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -77,30 +103,41 @@
 .change {
   display: grid;
   grid-template-columns: 150px 1fr;
-  gap: 2px 12px;
-  padding: 6px 0;
+  gap: 4px 16px;
+  padding: 12px 0;
   border-top: 1px solid var(--border);
 }
 
 .field {
-  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-top: 4px;
 }
 
 .values {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 10px;
+  align-items: baseline;
+  gap: 4px 12px;
   font-variant-numeric: tabular-nums;
 }
 
 .old {
+  font-family: var(--font-mono);
+  font-size: 13px;
   text-decoration: line-through;
-  color: var(--muted);
+  text-decoration-color: rgba(244, 239, 230, 0.35);
+  color: var(--text-3);
 }
 
 .new {
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .delta {
@@ -114,12 +151,121 @@
   color: var(--muted);
 }
 
+/* --- slip bar: the filed date's move on the page's shared year axis ------------------------------------------ */
+
+.slip {
+  grid-column: 2;
+  position: relative;
+  height: 30px;
+  margin: 4px 0 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tick {
+  position: absolute;
+  bottom: -1px;
+  width: 1px;
+  height: 6px;
+  background: var(--border-strong);
+}
+
+.tick em {
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-style: normal;
+  color: var(--text-3);
+}
+
+.today {
+  position: absolute;
+  top: -2px;
+  bottom: -1px;
+  width: 1px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+  opacity: 0.8;
+}
+
+.today::before {
+  content: "today";
+  position: absolute;
+  top: -3px;
+  left: 5px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.run {
+  position: absolute;
+  top: 15px;
+  height: 2px;
+  border-radius: 2px;
+  transform-origin: left;
+  animation: grow 900ms var(--ease) 200ms both;
+}
+
+.from,
+.to {
+  position: absolute;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border-radius: 50%;
+}
+
+.from {
+  border: 1.5px solid var(--text-3);
+  background: var(--surface);
+}
+
+.to {
+  animation: pop 500ms var(--ease) 800ms both;
+}
+
+/* Slip colors stay off the utility hues: sand for later, mint for earlier. */
+.later.run {
+  background: linear-gradient(90deg, rgba(233, 205, 131, 0.12), var(--band1));
+}
+.later.to {
+  background: var(--band1);
+  box-shadow: 0 0 12px rgba(233, 205, 131, 0.8);
+}
+.earlier.run {
+  background: linear-gradient(90deg, var(--band0), rgba(134, 229, 207, 0.15));
+}
+.earlier.to {
+  background: var(--band0);
+  box-shadow: 0 0 12px rgba(134, 229, 207, 0.8);
+}
+
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+}
+
 @media (max-width: 600px) {
   .change {
     grid-template-columns: 1fr;
   }
-  .cites {
+  .cites,
+  .slip {
     grid-column: 1;
+  }
+  .tick:nth-child(2n) em {
+    display: none;
   }
   .inMatch,
   .noMatch {
