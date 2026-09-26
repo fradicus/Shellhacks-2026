@@ -1,26 +1,52 @@
 import { z } from "zod";
-import {
+import type {
+  Envelope,
   AEFData,
-  EnvelopeSchema,
-  HazmatSchema,
-  PointSchema,
-  RouteRequestSchema,
-  SiteRequestSchema,
-  type Envelope,
-  type Point,
-  type ReferenceResponse,
-  type RoadworkData,
-  type RouteData,
-  type RouteRequest,
-  type SiteRequest,
-  type SoilData,
-  type WeatherData,
-} from "@/lib/operations/contracts";
-import type { VerifiedCoverageResponse, VerifiedListResponse } from "@/lib/verified/types";
-import type { PredictionResponse } from "@/lib/outcomes/model";
+  Point,
+  ReferenceResponse,
+  RoadworkData,
+  RouteData,
+  RouteRequest,
+  SiteRequest,
+  SoilData,
+  WeatherData,
+} from "../../lib/operations/contracts";
+import type { VerifiedCoverageResponse, VerifiedListResponse } from "../../lib/verified/types";
+import type { PredictionResponse } from "../../lib/outcomes/model";
 
 const stamp = z.string().datetime({ offset: true });
 const sha = z.string().regex(/^[0-9a-f]{64}$/);
+const providerSources = {
+  weather: "https://api.weather.gov",
+  soil: "https://sdmdataaccess.nrcs.usda.gov/Tabular/post.rest",
+  roadwork: "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed",
+  route: "https://routes.googleapis.com/directions/v2:computeRoutes",
+  aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL",
+} as const;
+const PointSchema = z.object({ lat: z.number().finite().min(-90).max(90), lon: z.number().finite().min(-180).max(180) }).strict();
+function millimeters(value: number): number {
+  const [whole, fraction = ""] = String(value).split(".");
+  if (!/^\d+$/.test(whole) || !/^\d{0,3}$/.test(fraction)) throw new Error("Dimensions must be exact whole millimetres");
+  return Number(whole) * 1000 + Number(fraction.padEnd(3, "0"));
+}
+const dimension = (max: number) => z.number().min(.001).max(max).refine((value) => { try { millimeters(value); return true; } catch { return false; } }, "Dimensions must be exact whole millimetres");
+const HazmatSchema = z.enum(["EXPLOSIVES", "GASES", "FLAMMABLE", "COMBUSTIBLE", "ORGANIC", "POISON", "CORROSIVE", "ASPIRATION_HAZARD", "ENVIRONMENTAL_HAZARD", "OTHER"]);
+const RouteRequestSchema = z.object({
+  origin: PointSchema, destination: PointSchema, departure_at: stamp,
+  truck: z.object({
+    height_m: dimension(10), width_m: dimension(10), length_m: dimension(100), gross_weight_kg: z.number().int().min(1).max(500000),
+    axle_count: z.number().int().min(2).max(50), trailers: z.array(z.object({ length_m: dimension(50) }).strict()).max(5),
+    hazmat: z.array(HazmatSchema).max(10).refine((values) => new Set(values).size === values.length, "Duplicate hazardous goods"),
+  }).strict().refine((value) => value.trailers.reduce((total, trailer) => total + trailer.length_m, 0) < value.length_m, "Trailer lengths must fit combined vehicle length"),
+}).strict();
+const SiteRequestSchema = PointSchema.extend({ year: z.number().int().min(2017).max(2100) }).strict();
+const EnvelopeSchema = z.object({
+  schema_version: z.literal("operations-v1"), provider: z.string(), status: z.enum(["available", "partial", "stale", "unavailable", "out_of_coverage", "not_configured", "deferred"]),
+  request_hash: z.string(), retrieved_at: stamp, source_updated_at: stamp.nullable(), valid_from: stamp.nullable(), valid_to: stamp.nullable(),
+  source_url: z.string().url(), source_version: z.string().nullable(), evidence_hash: z.string().nullable(),
+  coverage: z.object({ requested: z.number().int().nonnegative(), completed: z.number().int().nonnegative(), failed: z.number().int().nonnegative(), truncated: z.boolean() }).strict(),
+  data: z.unknown().nullable(), limitations: z.array(z.string()),
+}).strict();
 
 const ForecastPeriodSchema = z.object({
   start: stamp,
@@ -74,8 +100,20 @@ const RouteDataSchema: z.ZodType<RouteData> = z.object({
   restrictions_partially_ignored: z.boolean(), warnings: z.array(z.string()), attribution: z.literal("Google Maps"),
 }).strict();
 
-function envelope<T>(provider: string, data: z.ZodType<T>) {
-  return EnvelopeSchema.extend({ provider: z.literal(provider), data: data.nullable() });
+function envelope<T>(provider: keyof typeof providerSources, data: z.ZodType<T>) {
+  return EnvelopeSchema.extend({ provider: z.literal(provider), data: data.nullable() }).superRefine((value, context) => {
+    if (value.source_url !== providerSources[provider]) {
+      context.addIssue({ code: "custom", path: ["source_url"], message: "Source URL must match the credential-free HTTPS provider resource." });
+    }
+    const noData = value.status === "unavailable" || value.status === "not_configured" || value.status === "deferred";
+    if (value.status === "available" && value.data === null) context.addIssue({ code: "custom", path: ["data"], message: "Available evidence must include data." });
+    if (noData && value.data !== null) context.addIssue({ code: "custom", path: ["data"], message: `${value.status} evidence cannot include usable data.` });
+    if (value.data === null && value.coverage.completed !== 0) context.addIssue({ code: "custom", path: ["coverage", "completed"], message: "Evidence without data cannot report completed coverage." });
+    if (value.coverage.completed > value.coverage.requested || value.coverage.failed > value.coverage.requested) {
+      context.addIssue({ code: "custom", path: ["coverage"], message: "Coverage counts cannot exceed requested checks." });
+    }
+    if (value.coverage.truncated && value.status === "available") context.addIssue({ code: "custom", path: ["status"], message: "Truncated evidence cannot be marked available." });
+  });
 }
 export const WeatherEnvelopeSchema = envelope("weather", WeatherDataSchema);
 export const SoilEnvelopeSchema = envelope("soil", SoilDataSchema);
@@ -170,7 +208,20 @@ export const PredictionResponseSchema: z.ZodType<PredictionResponse> = z.object(
     numerator: z.number().int().nonnegative(), denominator: z.number().int().positive(),
     interval_95: z.object({ lower: z.number().min(0).max(1), upper: z.number().min(0).max(1) }).strict(), interpretation: z.string(),
   }).strict().nullable(),
-}).strict();
+}).strict().superRefine((value, context) => {
+  if ((value.status === "predicted") !== (value.prediction !== null)) {
+    context.addIssue({ code: "custom", message: "Prediction values must match predicted status." });
+  }
+  if (value.status === "predicted" && (!value.request || !value.support || !value.evaluation || !value.model_version)) {
+    context.addIssue({ code: "custom", message: "Predictions require bound request, support, evaluation and model identity." });
+  }
+  if (value.status !== "predicted" && (value.support || value.evaluation || value.model_version || value.probability_evidence)) {
+    context.addIssue({ code: "custom", message: "Non-predictions cannot carry model results." });
+  }
+  if ((value.prediction?.delay_probability !== null && value.prediction?.delay_probability !== undefined) !== (value.probability_evidence !== null)) {
+    context.addIssue({ code: "custom", message: "Delay probability requires its evidence counts." });
+  }
+});
 
 export type SiteResponse = z.infer<typeof SiteResponseSchema>;
 export type ConditionsResponse = z.infer<typeof ConditionsResponseSchema>;
@@ -200,8 +251,16 @@ function requiredInteger(value: string, name: string): number {
 }
 function localToIso(value: string, name: string): string {
   if (!value) throw new Error(`${name} is required.`);
+  const match = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})(?::(\d{2}))?$/.exec(value);
+  if (!match) throw new Error(`${name} is invalid.`);
   const date = new Date(value);
   if (!Number.isFinite(date.getTime())) throw new Error(`${name} is invalid.`);
+  const parts = match.slice(1, 6).map(Number);
+  const seconds = match[6] ? Number(match[6]) : 0;
+  if (date.getFullYear() !== parts[0] || date.getMonth() + 1 !== parts[1] || date.getDate() !== parts[2]
+    || date.getHours() !== parts[3] || date.getMinutes() !== parts[4] || date.getSeconds() !== seconds) {
+    throw new Error(`${name} does not exist in the current local time zone.`);
+  }
   return date.toISOString().replace(".000Z", "Z");
 }
 
@@ -246,10 +305,14 @@ export function buildOutcomeRequest(draft: OutcomeDraft): z.infer<typeof Outcome
 }
 
 export function siteBinding(response: SiteResponse, request: SiteRequest): boolean {
-  return response.request.lat === request.lat && response.request.lon === request.lon && response.request.year === request.year;
+  const pointMatches = (point: Point) => point.lat === request.lat && point.lon === request.lon;
+  return response.request.lat === request.lat && response.request.lon === request.lon && response.request.year === request.year
+    && (response.weather.data?.samples.every((sample) => pointMatches(sample.point)) ?? true)
+    && (response.aef.data?.samples.every((sample) => pointMatches(sample.point) && sample.year === request.year) ?? true);
 }
 export function pointBinding(response: ConditionsResponse, point: Point): boolean {
-  return response.request.lat === point.lat && response.request.lon === point.lon;
+  return response.request.lat === point.lat && response.request.lon === point.lon
+    && (response.weather.data?.samples.every((sample) => sample.point.lat === point.lat && sample.point.lon === point.lon) ?? true);
 }
 export function routeBinding(response: RouteResponse, request: RouteRequest): boolean {
   return JSON.stringify(response.request) === JSON.stringify(request);
@@ -257,12 +320,23 @@ export function routeBinding(response: RouteResponse, request: RouteRequest): bo
 export function outcomeBinding(response: PredictionResponse, request: z.infer<typeof OutcomeRequestSchema>): boolean {
   return response.request !== null && JSON.stringify(response.request) === JSON.stringify(request);
 }
+export function directoryBinding(response: VerifiedListResponse, query: string): boolean {
+  const expected = query.trim() || undefined;
+  return response.page === 1 && response.limit === 10 && response.filters.page === 1 && response.filters.limit === 10 && response.filters.q === expected
+    && response.filters.state === undefined && response.filters.county === undefined;
+}
 
 export async function readResponse<T>(response: Response, schema: z.ZodType<T>): Promise<T> {
   const value: unknown = await response.json().catch(() => { throw new Error("The service returned malformed JSON."); });
   const parsed = schema.safeParse(value);
   // Domain APIs use a validated unavailable payload with a non-2xx status. Preserve that reason/state.
-  if (parsed.success) return parsed.data;
+  if (parsed.success && response.ok) return parsed.data;
+  if (parsed.success) {
+    const typed = parsed.data as Record<string, unknown>;
+    const unavailable = typed.available === false || (typeof typed.status === "string" && ["unavailable", "insufficient_evidence", "invalid", "not_configured", "out_of_coverage", "deferred"].includes(typed.status));
+    if (unavailable) return parsed.data;
+    throw new Error(`The service returned usable evidence with HTTP ${response.status}; it was rejected.`);
+  }
   if (!response.ok) {
     const message = typeof value === "object" && value !== null && "error" in value && typeof value.error === "string" ? value.error : `Request failed (${response.status}).`;
     throw new Error(message);
@@ -280,6 +354,13 @@ export function conditionsInterval(reference: ReferenceResponse | null): number 
   const seconds = reference?.providers.filter((provider) => provider.id === "weather" || provider.id === "roadwork")
     .flatMap((provider) => provider.refresh_seconds === null ? [] : [provider.refresh_seconds]) ?? [];
   return Math.max(60, ...seconds) * 1000;
+}
+
+export function claimAttempt(attempts: Map<string, number>, key: string, intervalMs: number, now = Date.now()): number | null {
+  const previous = attempts.get(key);
+  if (previous !== undefined && now - previous < intervalMs) return null;
+  attempts.set(key, now);
+  return now + intervalMs;
 }
 
 export class RequestEpoch {
@@ -303,7 +384,12 @@ export class VisibilityPoller {
   private key: string | null = null;
   private visible = true;
   private stopped = false;
-  constructor(private readonly intervalMs: number, private readonly run: (key: string) => Promise<void>, private readonly timers: PollScheduler = scheduler) {}
+  private readonly intervalMs: number;
+  private readonly run: (key: string) => Promise<void>;
+  private readonly timers: PollScheduler;
+  constructor(intervalMs: number, run: (key: string) => Promise<void>, timers: PollScheduler = scheduler) {
+    this.intervalMs = intervalMs; this.run = run; this.timers = timers;
+  }
   bind(key: string) { this.stopTimer(); this.key = key; this.stopped = false; this.schedule(); }
   setVisible(visible: boolean) { this.visible = visible; this.stopTimer(); if (visible) this.schedule(); }
   stop() { this.stopped = true; this.key = null; this.stopTimer(); }

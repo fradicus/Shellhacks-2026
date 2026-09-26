@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
+import { ZodError } from "zod";
 import { HazmatSchema, type Point, type ReferenceResponse } from "@/lib/operations/contracts";
 import type { VerifiedCoverageResponse, VerifiedListResponse } from "@/lib/verified/types";
 import type { PredictionResponse } from "@/lib/outcomes/model";
@@ -18,7 +19,9 @@ import {
   buildOutcomeRequest,
   buildRouteRequest,
   buildSiteRequest,
+  claimAttempt,
   conditionsInterval,
+  directoryBinding,
   outcomeBinding,
   pointBinding,
   readResponse,
@@ -42,7 +45,16 @@ const EMPTY_ROUTE: RouteDraft = {
 };
 const EMPTY_OUTCOME: OutcomeDraft = { jobType: "", companyId: "", region: "", asOfLocal: "", plannedDurationDays: "", baselineConfirmed: false };
 
-function message(error: unknown) { return error instanceof Error ? error.message : "The request could not be completed."; }
+const FIELD_NAMES: Record<string, string> = {
+  "lat": "Latitude", "lon": "Longitude", "year": "AEF year", "truck.height_m": "Total height", "truck.width_m": "Total width",
+  "truck.length_m": "Total length", "truck.gross_weight_kg": "Gross weight", "truck.axle_count": "Axle count", "truck.trailers": "Trailers",
+  "truck.hazmat": "Hazardous goods", "job_type": "Job type", "company_id": "Company ID", "region": "Region", "as_of": "Decision as-of time",
+  "planned_duration_days": "Planned duration",
+};
+function message(error: unknown) {
+  if (error instanceof ZodError) return error.issues.map((issue) => `${FIELD_NAMES[issue.path.join(".")] ?? "Request"}: ${issue.message}`).join(" ");
+  return error instanceof Error ? error.message : "The request could not be completed.";
+}
 function Field({ label, hint, children }: { label: string; hint?: string; children: ReactNode }) {
   return <label className={styles.field}><span>{label}</span>{children}{hint && <small>{hint}</small>}</label>;
 }
@@ -58,12 +70,15 @@ export function OperationsDesk() {
   const [coverageError, setCoverageError] = useState<string | null>(null);
   const [outcomeStatus, setOutcomeStatus] = useState<OutcomeStatus | null>(null);
   const [outcomeStatusError, setOutcomeStatusError] = useState<string | null>(null);
+  const [metadataLoading, setMetadataLoading] = useState(true);
+  const [timeZone, setTimeZone] = useState("local device time");
 
   const [siteDraft, setSiteDraft] = useState<SiteDraft>(EMPTY_SITE);
   const [siteResult, setSiteResult] = useState<SiteResponse | null>(null);
   const [activeSite, setActiveSite] = useState<{ label: string; point: Point; year: number } | null>(null);
   const [siteLoading, setSiteLoading] = useState(false);
   const [siteError, setSiteError] = useState<string | null>(null);
+  const [siteNotice, setSiteNotice] = useState<string | null>(null);
   const [siteOutdated, setSiteOutdated] = useState(false);
   const [conditions, setConditions] = useState<ConditionsResponse | null>(null);
   const [conditionsError, setConditionsError] = useState<string | null>(null);
@@ -79,6 +94,7 @@ export function OperationsDesk() {
   const [directoryResult, setDirectoryResult] = useState<VerifiedListResponse | null>(null);
   const [directoryLoading, setDirectoryLoading] = useState(false);
   const [directoryError, setDirectoryError] = useState<string | null>(null);
+  const [directoryOutdated, setDirectoryOutdated] = useState(false);
 
   const [outcomeDraft, setOutcomeDraft] = useState<OutcomeDraft>(EMPTY_OUTCOME);
   const [outcomeResult, setOutcomeResult] = useState<PredictionResponse | null>(null);
@@ -90,19 +106,32 @@ export function OperationsDesk() {
   const routeLane = useRef(new RequestEpoch());
   const directoryLane = useRef(new RequestEpoch());
   const outcomeLane = useRef(new RequestEpoch());
+  const metadataController = useRef<AbortController | null>(null);
+  const conditionAttempts = useRef(new Map<string, number>());
+  const [conditionCooldownUntil, setConditionCooldownUntil] = useState(0);
 
-  useEffect(() => {
-    const controller = new AbortController();
+  const loadMetadata = useCallback(() => {
+    metadataController.current?.abort();
+    const controller = new AbortController(); metadataController.current = controller;
+    setMetadataLoading(true); setReferenceError(null); setCoverageError(null); setOutcomeStatusError(null);
     void Promise.allSettled([
       fetch("/api/operations/reference", { cache: "no-store", signal: controller.signal }).then((response) => readResponse(response, ReferenceResponseSchema)).then(setReference).catch((error) => { if (!controller.signal.aborted) setReferenceError(message(error)); }),
       fetch("/api/verified/coverage", { cache: "no-store", signal: controller.signal }).then((response) => readResponse(response, VerifiedCoverageResponseSchema)).then(setCoverage).catch((error) => { if (!controller.signal.aborted) setCoverageError(message(error)); }),
       fetch("/api/outcomes/status", { cache: "no-store", signal: controller.signal }).then((response) => readResponse(response, OutcomeStatusSchema)).then(setOutcomeStatus).catch((error) => { if (!controller.signal.aborted) setOutcomeStatusError(message(error)); }),
-    ]);
-    return () => controller.abort();
+    ]).finally(() => { if (metadataController.current === controller) setMetadataLoading(false); });
   }, []);
+
+  useEffect(() => {
+    const zoneTimer = setTimeout(() => setTimeZone(Intl.DateTimeFormat().resolvedOptions().timeZone || "local device time"), 0);
+    const metadataTimer = setTimeout(loadMetadata, 0);
+    return () => { clearTimeout(zoneTimer); clearTimeout(metadataTimer); metadataController.current?.abort(); };
+  }, [loadMetadata]);
 
   const refreshConditions = useCallback(async (key: string) => {
     const point = JSON.parse(key) as Point;
+    const cooldownUntil = claimAttempt(conditionAttempts.current, key, conditionsInterval(reference));
+    if (cooldownUntil === null) return;
+    setConditionCooldownUntil(cooldownUntil);
     const ticket = conditionsLane.current.begin();
     setConditionsLoading(true); setConditionsError(null);
     try {
@@ -114,7 +143,13 @@ export function OperationsDesk() {
     } catch (error) {
       if (ticket.current()) setConditionsError(message(error));
     } finally { if (ticket.current()) setConditionsLoading(false); }
-  }, []);
+  }, [reference]);
+
+  useEffect(() => {
+    if (conditionCooldownUntil <= Date.now()) return;
+    const timer = setTimeout(() => setConditionCooldownUntil(0), conditionCooldownUntil - Date.now() + 20);
+    return () => clearTimeout(timer);
+  }, [conditionCooldownUntil]);
 
   useEffect(() => {
     if (!activeSite || siteOutdated || !siteResult) return;
@@ -125,7 +160,7 @@ export function OperationsDesk() {
     poller.bind(key);
     const visibility = () => {
       const visible = document.visibilityState === "visible";
-      if (!visible) lane.invalidate();
+      if (!visible) { lane.invalidate(); setConditionsLoading(false); }
       poller.setVisible(visible);
     };
     document.addEventListener("visibilitychange", visibility);
@@ -154,9 +189,14 @@ export function OperationsDesk() {
   };
 
   async function checkSite(event: FormEvent) {
-    event.preventDefault(); setSiteError(null);
+    event.preventDefault(); setSiteError(null); setSiteNotice(null);
     let built: ReturnType<typeof buildSiteRequest>;
     try { built = buildSiteRequest(siteDraft); } catch (error) { setSiteError(message(error)); return; }
+    if (siteResult && activeSite && activeSite.point.lat === built.request.lat && activeSite.point.lon === built.request.lon && activeSite.year === built.request.year) {
+      setActiveSite({ ...activeSite, label: built.label }); setSiteOutdated(false);
+      setSiteNotice("Existing soil and annual evidence was reused. Current conditions refresh independently at the published cadence.");
+      return;
+    }
     const ticket = siteLane.current.begin(); setSiteLoading(true);
     try {
       const query = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon), year: String(built.request.year) });
@@ -166,6 +206,9 @@ export function OperationsDesk() {
       if (ticket.current()) {
         setSiteResult(value); setActiveSite({ label: built.label, point: { lat: built.request.lat, lon: built.request.lon }, year: built.request.year });
         setConditions({ request: { lat: built.request.lat, lon: built.request.lon }, weather: value.weather, roadwork: value.roadwork });
+        const key = JSON.stringify({ lat: built.request.lat, lon: built.request.lon });
+        const cooldownUntil = claimAttempt(conditionAttempts.current, key, conditionsInterval(reference));
+        if (cooldownUntil !== null) setConditionCooldownUntil(cooldownUntil);
         setConditionsError(null); setSiteOutdated(false); setRouteOutdated(routeResult !== null);
       }
     } catch (error) { if (ticket.current()) setSiteError(message(error)); }
@@ -197,7 +240,8 @@ export function OperationsDesk() {
     try {
       const response = await fetch(`/api/verified?${params}`, { cache: "no-store", signal: ticket.signal });
       const value = await readResponse(response, VerifiedListResponseSchema);
-      if (ticket.current()) setDirectoryResult(value);
+      if (!directoryBinding(value, q)) throw new Error("Directory results did not match the submitted search.");
+      if (ticket.current()) { setDirectoryResult(value); setDirectoryOutdated(false); }
     } catch (error) { if (ticket.current()) setDirectoryError(message(error)); }
     finally { if (ticket.current()) setDirectoryLoading(false); }
   }
@@ -210,7 +254,7 @@ export function OperationsDesk() {
     try {
       const response = await fetch("/api/outcomes/predict", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(request), signal: ticket.signal });
       const value = await readResponse(response, PredictionResponseSchema);
-      if (value.request !== null && !outcomeBinding(value, request)) throw new Error("Outcome result did not match the submitted cohort.");
+      if (!outcomeBinding(value, request)) throw new Error("Outcome result did not match the submitted cohort.");
       if (ticket.current()) setOutcomeResult(value);
     } catch (error) { if (ticket.current()) setOutcomeError(message(error)); }
     finally { if (ticket.current()) setOutcomeLoading(false); }
@@ -222,8 +266,8 @@ export function OperationsDesk() {
   const years = reference?.aef_years ?? [];
   const hazmat = reference?.hazmat ?? [...HazmatSchema.options];
   const conditionRefresh = conditionsInterval(reference) / 1000;
+  const conditionCoolingDown = conditionCooldownUntil !== 0;
   const sourceSummary = useMemo(() => coverage?.coverage ? `${coverage.coverage.counts.utilities.toLocaleString()} utilities · ${coverage.coverage.data_year} EIA vintage` : null, [coverage]);
-  const timeZone = useMemo(() => Intl.DateTimeFormat().resolvedOptions().timeZone || "local device time", []);
 
   return <main className={styles.page}>
     <header className={styles.hero}>
@@ -232,11 +276,15 @@ export function OperationsDesk() {
     </header>
 
     <section className={styles.readiness} aria-label="Provider readiness">
-      <div><span className="eyebrow">Verified directory</span><strong>{coverage?.available ? sourceSummary : coverage?.reason ?? coverageError ?? "Checking…"}</strong></div>
-      <div><span className="eyebrow">Current conditions</span><strong>{reference ? `Refresh ${conditionRefresh}s while visible` : referenceError ?? "Checking…"}</strong></div>
-      <div><span className="eyebrow">Truck route</span><strong>{routeReady?.ready ? "Configured" : routeReady?.reason ?? "Checking…"}</strong></div>
+      <div><span className="eyebrow">Verified directory</span><strong>{coverage?.available ? sourceSummary : coverage?.reason ?? coverageError ?? (metadataLoading ? "Checking…" : "Unavailable")}</strong></div>
+      <div><span className="eyebrow">Current conditions</span><strong>{reference ? `Refresh ${conditionRefresh}s while visible` : referenceError ?? (metadataLoading ? "Checking…" : "Unavailable")}</strong></div>
+      <div><span className="eyebrow">Truck route</span><strong>{routeReady?.ready ? "Configured" : routeReady?.reason ?? referenceError ?? (metadataLoading ? "Checking…" : "Unavailable")}</strong></div>
       <div><span className="eyebrow">Duration model</span><strong>{outcomeStatus?.reason ?? outcomeStatusError ?? "Checking…"}</strong></div>
     </section>
+    {(referenceError || coverageError || outcomeStatusError) && <div className={styles.metadataRetry} role="alert">
+      <span>Some readiness checks failed. Available sections remain usable.</span>
+      <button type="button" className={styles.secondary} disabled={metadataLoading} onClick={loadMetadata}>{metadataLoading ? "Retrying…" : "Retry readiness checks"}</button>
+    </div>}
 
     <div className={styles.workspace}>
       <div className={styles.controls}>
@@ -253,8 +301,9 @@ export function OperationsDesk() {
               </Field>
             </div>
             <InlineError>{siteError}</InlineError>
+            {siteNotice && <p className={styles.inlineNotice} role="status">{siteNotice}</p>}
             {siteOutdated && <p className={styles.inlineWarning}>Worksite inputs changed. Older evidence remains visible but current-condition polling has stopped.</p>}
-            <div className={styles.actions}><button className={styles.primary} disabled={siteLoading}>{siteLoading ? "Checking worksite…" : "Check worksite"}</button>{siteLoading && <Loading>Provider checks are independent; partial results remain possible.</Loading>}</div>
+            <div className={styles.actions}><button className={styles.primary} disabled={siteLoading || (!!siteResult && !siteOutdated)}>{siteLoading ? "Checking worksite…" : siteResult && !siteOutdated ? "Site evidence checked" : "Check worksite"}</button>{siteLoading && <Loading>Provider checks are independent; partial results remain possible.</Loading>}</div>
           </form>
         </section>
 
@@ -263,11 +312,12 @@ export function OperationsDesk() {
           <div className={styles.detailBody}>
             <p className={styles.scope}>EIA distribution-equipment counties are reference context, not a transmission project location or exclusive service territory.</p>
             <form onSubmit={searchDirectory} noValidate>
-              <Field label="Utility name or EIA ID"><input value={directoryQuery} onChange={(event) => setDirectoryQuery(event.target.value)} /></Field>
+              <Field label="Utility name or EIA ID"><input value={directoryQuery} onChange={(event) => { directoryLane.current.invalidate(); setDirectoryLoading(false); setDirectoryQuery(event.target.value); if (directoryResult) setDirectoryOutdated(true); }} /></Field>
               <p className={styles.small}>Use the <a href="/explore">National explorer</a> for named state and county filters.</p>
               <InlineError>{directoryError}</InlineError><button className={styles.secondary} disabled={directoryLoading}>{directoryLoading ? "Searching…" : "Search verified directory"}</button>
             </form>
             {directoryResult && <div className={styles.directoryResults} aria-live="polite">
+              {directoryOutdated && <p className={styles.inlineWarning}>Search text changed. These retained results belong to the earlier submitted query.</p>}
               <p><strong>{directoryResult.available ? directoryResult.total.toLocaleString() : "Unavailable"}</strong> matching utilities · dataset {directoryResult.dataset ?? "not available"}</p>
               {directoryResult.records.map((record) => <article key={record.id} className={styles.directoryRow}>
                 <div><strong>{record.name}</strong><span>EIA {record.eia_utility_id} · {record.data_year}</span></div><StatusBadge status={record.validation_status} />
@@ -326,9 +376,9 @@ export function OperationsDesk() {
             <SoilPanel envelope={siteResult.soil} />
             <AEFPanel envelope={siteResult.aef} />
           </div>
-          {!siteOutdated && activeSite && <div className={styles.refreshLine}><span>Current conditions are bound to {activeSite.point.lat}, {activeSite.point.lon}.</span><button type="button" disabled={conditionsLoading} onClick={() => void refreshConditions(JSON.stringify(activeSite.point))}>Refresh now</button></div>}
+          {!siteOutdated && activeSite && <div className={styles.refreshLine}><span>Current conditions are bound to {activeSite.point.lat}, {activeSite.point.lon}. Attempts are limited to every {conditionRefresh}s.</span><button type="button" disabled={conditionsLoading || conditionCoolingDown} onClick={() => void refreshConditions(JSON.stringify(activeSite.point))}>{conditionCoolingDown ? "Refresh cooling down" : "Refresh now"}</button></div>}
         </>}
-        {routeResult && <section className={styles.resultGroup}><h2>Route assessment</h2><RoutePanel envelope={routeResult.route} limitations={routeResult.limitations} outdated={routeOutdated} /><details className={styles.routeSamples}><summary>Sampled route context</summary><div className={styles.evidenceGrid}><WeatherPanel envelope={routeResult.weather} /><RoadworkPanel envelope={routeResult.roadwork} /><AEFPanel envelope={routeResult.aef} /></div></details></section>}
+        {routeResult && <section className={styles.resultGroup}><h2>Route assessment</h2><RoutePanel envelope={routeResult.route} request={routeResult.request} limitations={routeResult.limitations} outdated={routeOutdated} /><details className={styles.routeSamples}><summary>Sampled route context</summary><div className={styles.evidenceGrid}><WeatherPanel envelope={routeResult.weather} /><RoadworkPanel envelope={routeResult.roadwork} /><AEFPanel envelope={routeResult.aef} /></div></details></section>}
         {outcomeResult && <section className={styles.resultGroup}><h2>Outcome evidence</h2><OutcomePanel response={outcomeResult} /></section>}
       </section>
     </div>

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { Envelope, WeatherData, RoadworkData, SoilData, AEFData, RouteData } from "@/lib/operations/contracts";
+import type { Envelope, WeatherData, RoadworkData, SoilData, AEFData, RouteData, RouteRequest } from "@/lib/operations/contracts";
 import type { PredictionResponse } from "@/lib/outcomes/model";
 import { providerLabel, statusTone } from "./logic";
 import styles from "./operations.module.css";
@@ -54,8 +54,9 @@ export function WeatherPanel({ envelope, refreshFailed }: { envelope: Envelope<W
       {alerts.length > 0 && <ul className={styles.eventList}>{alerts.slice(0, 3).map((alert) => <li key={alert.id}><strong>{alert.event}</strong><span>{alert.severity ?? "Severity not published"} · expires {formatTime(alert.expires)}</span></li>)}</ul>}
       {forecast.length > 0 && <ol className={styles.forecast}>{forecast.map((period) => <li key={`${period.start}-${period.end}`}>
         <time>{formatTime(period.start)}</time><strong>{period.temperature == null ? "Temperature unknown" : `${number(period.temperature)}°${period.temperature_unit ?? ""}`}</strong>
-        <span>{period.description} · precip {period.precipitation_probability == null ? "unknown" : `${number(period.precipitation_probability)}%`}</span>
+        <span>{period.description} · precip {period.precipitation_probability == null ? "unknown" : `${number(period.precipitation_probability)}%`} · wind {[period.wind_direction, period.wind_speed].filter(Boolean).join(" ") || "unknown"}</span>
       </li>)}</ol>}
+      {alerts.length > 0 && <details className={styles.evidenceDetails}><summary>All {alerts.length} returned alerts</summary><ul>{alerts.map((alert) => <li key={alert.id}><strong>{alert.event}</strong> · {alert.severity ?? "severity unknown"} · expires {formatTime(alert.expires)}<br />{alert.description}</li>)}</ul></details>}
     </>}
   </EnvelopeFrame>;
 }
@@ -71,6 +72,7 @@ export function RoadworkPanel({ envelope, refreshFailed }: { envelope: Envelope<
         <strong>{event.road_names.join(", ") || "Road name not published"}</strong>
         <span>{event.vehicle_impact} · {formatTime(event.start)} to {formatTime(event.end)}</span>
       </li>)}</ul>}
+      {events.length > 0 && <details className={styles.evidenceDetails}><summary>All {events.length} returned road-work events and restrictions</summary><ul>{events.map((event) => <li key={event.id}><strong>{event.road_names.join(", ") || "Road name not published"}</strong> · {event.vehicle_impact} · {formatTime(event.start)} to {formatTime(event.end)}<br />{event.description ?? "Description not published"}{event.restrictions.length ? <ul>{event.restrictions.map((restriction, index) => <li key={`${restriction.type}-${index}`}>{restriction.type}: {restriction.value ?? "value unknown"} {restriction.unit ?? ""}</li>)}</ul> : <span> · restrictions not published</span>}</li>)}</ul></details>}
     </>}
   </EnvelopeFrame>;
 }
@@ -82,6 +84,7 @@ export function SoilPanel({ envelope }: { envelope: Envelope<SoilData> }) {
       <p className={styles.scope}>{envelope.data.scope}</p>
       <p className={styles.bigValue}>{units.length}<span>mapped soil units</span></p>
       <ul className={styles.eventList}>{units.slice(0, 4).map((unit) => <li key={unit.mukey}><strong>{unit.name}</strong><span>{unit.area_symbol} · {unit.components.length} components · survey {unit.survey_updated_at ?? "date unknown"}</span></li>)}</ul>
+      {units.length > 0 && <details className={styles.evidenceDetails}><summary>All mapped units and component facts</summary>{units.map((unit) => <section key={unit.mukey}><h4>{unit.name} · {unit.mukey}</h4><ul>{unit.components.length ? unit.components.map((component) => <li key={component.cokey}>{component.name ?? "Component name unknown"} · {component.percent ?? "percent unknown"}% · drainage {component.drainage_class ?? "unknown"} · hydrologic group {component.hydrologic_group ?? "unknown"}</li>) : <li>No component facts published.</li>}</ul></section>)}</details>}
     </>}
   </EnvelopeFrame>;
 }
@@ -99,7 +102,7 @@ export function AEFPanel({ envelope }: { envelope: Envelope<AEFData> }) {
   </EnvelopeFrame>;
 }
 
-export function RoutePanel({ envelope, limitations, outdated }: { envelope: Envelope<RouteData>; limitations: string[]; outdated?: boolean }) {
+export function RoutePanel({ envelope, request, limitations, outdated }: { envelope: Envelope<RouteData>; request: RouteRequest; limitations: string[]; outdated?: boolean }) {
   const route = envelope.data;
   return <EnvelopeFrame envelope={envelope} title="Truck route · route-only presentation">
     {outdated && <p className={styles.inlineWarning}>Inputs changed. This route remains visible as older evidence; run it again before use.</p>}
@@ -112,6 +115,11 @@ export function RoutePanel({ envelope, limitations, outdated }: { envelope: Enve
       {route.restrictions_partially_ignored && <p className={styles.inlineWarning}>The provider ignored some vehicle restrictions. This route is incomplete.</p>}
       {route.warnings.length > 0 && <ul>{route.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>}
       <p className={styles.scope}>Travel time is not construction duration. No route is certified safe or legal.</p>
+      <details className={styles.evidenceDetails}><summary>Submitted trip and vehicle</summary><dl className={styles.requestFacts}>
+        <div><dt>Origin</dt><dd>{request.origin.lat}, {request.origin.lon}</dd></div><div><dt>Destination</dt><dd>{request.destination.lat}, {request.destination.lon}</dd></div>
+        <div><dt>Departure</dt><dd>{formatTime(request.departure_at)}</dd></div><div><dt>Vehicle</dt><dd>{request.truck.height_m}m H · {request.truck.width_m}m W · {request.truck.length_m}m L · {number(request.truck.gross_weight_kg, 0)}kg · {request.truck.axle_count} axles</dd></div>
+        <div><dt>Trailers</dt><dd>{request.truck.trailers.length ? request.truck.trailers.map((trailer) => `${trailer.length_m}m`).join(", ") : "Explicitly none"}</dd></div><div><dt>Hazardous goods</dt><dd>{request.truck.hazmat.length ? request.truck.hazmat.join(", ") : "Explicitly none"}</dd></div>
+      </dl></details>
     </>}
     {limitations.length > 0 && <details className={styles.evidenceDetails}><summary>Assessment limitations</summary><ul>{limitations.map((item) => <li key={item}>{item}</li>)}</ul></details>}
   </EnvelopeFrame>;
@@ -131,6 +139,7 @@ export function OutcomePanel({ response }: { response: PredictionResponse }) {
       {response.evaluation && <p className={styles.small}>Evaluated {formatTime(response.evaluation.evaluated_at)} · interval coverage {number(response.evaluation.interval_coverage * 100, 0)}%</p>}
       {response.probability_evidence && <p className={styles.small}>{response.probability_evidence.numerator}/{response.probability_evidence.denominator} training outcomes exceeded the user baseline. {response.probability_evidence.interpretation}</p>}
     </>}
+    {response.request && <details className={styles.evidenceDetails}><summary>Submitted cohort and decision context</summary><dl className={styles.requestFacts}><div><dt>Job type</dt><dd>{response.request.job_type}</dd></div><div><dt>Company ID</dt><dd>{response.request.company_id}</dd></div><div><dt>Region</dt><dd>{response.request.region}</dd></div><div><dt>As of</dt><dd>{formatTime(response.request.as_of)}</dd></div><div><dt>Planned baseline</dt><dd>{response.request.planned_duration_days == null ? "Not supplied" : `${response.request.planned_duration_days} days · user confirmed as known then`}</dd></div></dl></details>}
     <details className={styles.evidenceDetails}><summary>Limits</summary><ul>{response.limitations.map((item) => <li key={item}>{item}</li>)}</ul></details>
   </article>;
 }
