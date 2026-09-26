@@ -31,7 +31,8 @@
   color: inherit;
 }
 
-.map {
+/* Other routes also load MapLibre CSS; keep its relative positioning from winning. */
+.stage .map {
   position: absolute;
   inset: 0;
   animation: fadeIn 1.6s ease-out both;
