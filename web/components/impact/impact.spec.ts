@@ -1,0 +1,58 @@
+import { expect, test } from "@playwright/test";
+
+test("user assumptions, holding cost, negative result, dates, print and reset", async ({ page }, testInfo) => {
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
+  await page.goto("/impact");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  await expect(page.getByTestId("result-Base")).toHaveText("Not calculated");
+  await page.screenshot({ path: `../specs/features/F17-impact-scenario/empty-${testInfo.project.name}.png`, fullPage: true, animations: "disabled" });
+  const base = page.getByRole("region", { name: "Base", exact: true });
+  await base.getByLabel("Mobilizations avoided", { exact: true }).fill("2");
+  await base.getByLabel("Quoted cost per mobilization · USD", { exact: true }).fill("1000");
+  await base.getByLabel("Additional coordination cost · USD", { exact: true }).fill("500");
+  await expect(page.getByTestId("result-Base")).toHaveText("$1,500.00");
+  await page.getByLabel("Include extra idle rental / holding costs").check();
+  await expect(page.getByTestId("result-Base")).toHaveText("Not calculated");
+  await base.getByLabel("Extra idle rental days", { exact: true }).fill("4");
+  await base.getByLabel("Daily holding cost · USD", { exact: true }).fill("200");
+  await expect(page.getByTestId("result-Base")).toHaveText("$700.00");
+  await expect(base.getByText("7 idle days", { exact: true })).toBeVisible();
+  await page.getByLabel("Mat or equipment package", { exact: true }).fill("Synthetic test package — not a supplier quote");
+  await page.getByLabel("Quote references and open questions").fill("Synthetic test inputs only. Confirm transfer and release dates.");
+  await page.getByLabel("Assumed in-service date A", { exact: true }).fill("2024-02-28");
+  await page.getByLabel("Assumed in-service date B", { exact: true }).fill("2024-03-01");
+  await expect(page.getByText("2 days", { exact: true })).toBeVisible();
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: `../specs/features/F17-impact-scenario/filled-${testInfo.project.name}.png`, fullPage: true, animations: "disabled" });
+  await page.emulateMedia({ media: "print" });
+  await expect(page.getByText("Quote references and open questions: Synthetic test inputs only.", { exact: false })).toBeVisible();
+  await page.emulateMedia({ media: "screen" });
+  await base.getByLabel("Extra idle rental days", { exact: true }).fill("8");
+  await expect(page.getByTestId("result-Base")).toHaveText("-$100.00");
+  await base.getByLabel("Quoted cost per mobilization · USD", { exact: true }).fill("-1");
+  await expect(page.getByTestId("result-Base")).toHaveText("Not calculated");
+  await expect(base.getByText("Enter a nonnegative amount with up to 2 decimals.")).toBeVisible();
+  await page.getByRole("button", { name: "Reset worksheet", exact: true }).click();
+  await expect(page.getByTestId("result-Base")).toHaveText("Not calculated");
+  await expect(page.getByLabel("Mat or equipment package", { exact: true })).toHaveValue("");
+  await expect(page.getByLabel("Assumed in-service date A", { exact: true })).toHaveValue("");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  expect(errors).toEqual([]);
+});
+
+test("pair context attaches through the picker and missing IDs remain explicit", async ({ page }) => {
+  await page.goto("/impact");
+  const select = page.getByLabel("Project pair (optional)");
+  const id = await select.locator("option").nth(1).getAttribute("value");
+  expect(id).toBeTruthy();
+  await select.selectOption(id!);
+  await page.getByRole("button", { name: "Open worksheet", exact: true }).click();
+  await expect(page.getByRole("link", { name: "Inspect pair evidence and review details" })).toBeVisible();
+  await expect(page.getByText("Sponsor sample / fixture data.", { exact: false })).toBeVisible();
+  await expect(page.getByText("Filed in-service:", { exact: false })).toHaveCount(2);
+  await page.goto("/impact?pair=missing-pair");
+  await expect(page.getByText("The requested pair was not found", { exact: false })).toBeVisible();
+  await expect(page.getByTestId("result-Base")).toHaveText("Not calculated");
+});
