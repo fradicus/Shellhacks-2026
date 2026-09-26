@@ -252,7 +252,7 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
       const k = BRIGHT[e];
       const c = hex(it.color);
       const [x, y] = local(it.lng, it.lat);
-      rings.push({ p: [x, y, 0], c, size: e === "dim" ? 8 : 11, shape: 1, bright: k * 0.8 });
+      rings.push({ p: [x, y, 0], c, size: e === "dim" ? 8 : e === "sel" ? 20 : 11, shape: 1, bright: k * 0.8 });
       if (it.span.kind === "unknown") continue;
       const top = topOf(it.span);
       // The pillar: a beam of light from the ground anchor up to the date, brightening with height.

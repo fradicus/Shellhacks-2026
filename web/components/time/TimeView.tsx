@@ -782,7 +782,7 @@ export function TimeView({
               {REVIEW[pair.review_state ?? "needs_review"]}
             </span>
             <Link href={`/pair/${encodeURIComponent(pair.id)}`} className={s.evidence}>
-              Evidence &amp; coordination card →
+              Open evidence →
             </Link>
           </div>
         </aside>
