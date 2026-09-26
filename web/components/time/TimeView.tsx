@@ -103,7 +103,11 @@ export function TimeView({
   const layerRef = useRef<TimeLayer | null>(null);
   const labelEls = useRef(new Map<string, HTMLElement>());
   const reduced = useRef(false);
+  const leftRef = useRef<HTMLDivElement>(null);
+  const detailRef = useRef<HTMLElement>(null);
   const fitPx = useRef(30);
+  const incoming = useRef<string | null | undefined>(undefined);
+  const selectPairRef = useRef<(id: string | null) => void>(() => {});
 
   // --- facts, derived once --------------------------------------------------------------------------------------------
   const byKey = useMemo(() => new Map(projects.map((p) => [p.key, p])), [projects]);
@@ -197,6 +201,22 @@ export function TimeView({
                 labelEls.current.get(l[0])?.setAttribute("data-side", near ? "l" : "c");
                 labelEls.current.get(r[0])?.setAttribute("data-side", near ? "r" : "c");
               }
+              // Keep bead and hover labels in the open band between the side panels.
+              const box = container.current?.getBoundingClientRect();
+              if (!box) return;
+              const lo = leftRef.current && box.width > 860 ? leftRef.current.getBoundingClientRect().right - box.left + 10 : 8;
+              const hi = detailRef.current ? detailRef.current.getBoundingClientRect().left - box.left - 10 : box.width - 8;
+              for (const [id, p] of pos) {
+                if (!id.startsWith("sel-") && id !== "hover") continue;
+                const el = labelEls.current.get(id);
+                const inner = el?.firstElementChild as HTMLElement | null;
+                if (!el || !inner) continue;
+                const w = inner.offsetWidth;
+                const side = el.dataset.side ?? (id === "hover" ? "r" : "c");
+                const x0 = side === "l" ? p.x - w - 14 : side === "r" ? p.x + 14 : p.x - w / 2;
+                const dx = x0 < lo ? lo - x0 : x0 + w > hi ? Math.max(hi - (x0 + w), lo - x0) : 0;
+                inner.style.translate = `${dx.toFixed(1)}px 0`;
+              }
             },
           });
           layerRef.current = layer;
@@ -226,7 +246,20 @@ export function TimeView({
     layer.setItems(items, todayYears);
     const ms = reduced.current ? 0 : 2200;
     layer.setHeight(1, ms);
-    map.easeTo({ pitch: 58, bearing: -16, duration: ms, easing: (t) => 1 - (1 - t) ** 3 });
+    const want = incoming.current ?? new URLSearchParams(window.location.search).get("pair");
+    const wanted = pairs.find((p) => p.id === want);
+    incoming.current = null;
+    if (!wanted) {
+      map.easeTo({ pitch: 58, bearing: -16, duration: ms, easing: (t) => 1 - (1 - t) ** 3 });
+      return;
+    }
+    const id = window.setTimeout(() => {
+      setView(wanted.view);
+      selectPairRef.current(wanted.id);
+    }, ms * 0.4);
+    return () => window.clearTimeout(id);
+    // Runs once per dataset; the pair link is read only on arrival.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, items, todayYears]);
 
   // --- focus: what's selected, hovered and linked ---------------------------------------------------------------------
@@ -374,6 +407,10 @@ export function TimeView({
     [pairs, byKey, frame, spans],
   );
 
+  useEffect(() => {
+    selectPairRef.current = selectPair;
+  }, [selectPair]);
+
   const overview = useCallback(() => {
     setYearPx(fitPx.current);
     setPairId(null);
@@ -442,6 +479,17 @@ export function TimeView({
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const typing = target instanceof HTMLInputElement || !!target?.closest?.(".maplibregl-map");
+      if (!typing && (e.key === "ArrowDown" || e.key === "ArrowUp") && visible.length) {
+        e.preventDefault();
+        const i = visible.findIndex((p) => p.id === pairId);
+        const next = e.key === "ArrowDown" ? (i + 1) % visible.length : (i <= 0 ? visible.length : i) - 1;
+        if (tourTimer.current) window.clearTimeout(tourTimer.current);
+        setTour(null);
+        selectPair(visible[next].id);
+        return;
+      }
       if (e.key === "Escape") {
         if (tourTimer.current) window.clearTimeout(tourTimer.current);
         setTour(null);
@@ -451,7 +499,18 @@ export function TimeView({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [visible, pairId, selectPair]);
+
+  // The selected pair lives in the URL, so a demo can open straight onto it and a link can be shared.
+  useEffect(() => {
+    // Hold an incoming ?pair= until the intro has opened it; syncing earlier would erase it.
+    if (incoming.current === undefined) incoming.current = new URLSearchParams(window.location.search).get("pair");
+    if (!pairId && incoming.current) return;
+    const u = new URL(window.location.href);
+    if (pairId) u.searchParams.set("pair", pairId);
+    else u.searchParams.delete("pair");
+    window.history.replaceState(window.history.state, "", u);
+  }, [pairId]);
 
   // --- the story: a short guided flight for people who have never read a transmission filing ---------------------------
   // Every caption is built from stored facts: the top-ranked pair, then the pair with the widest day gap.
@@ -546,7 +605,7 @@ export function TimeView({
         ))}
       </div>
 
-      <div className={s.left}>
+      <div className={s.left} ref={leftRef}>
       <header className={s.masthead}>
         <p className={s.overline}>GridBridge · Time view</p>
         <h1 className={s.title}>
@@ -594,6 +653,7 @@ export function TimeView({
                   <button
                     type="button"
                     aria-pressed={p.id === pairId}
+                    title={`${p.a} · ${p.b}`}
                     onClick={() => {
                       stopTour();
                       selectPair(p.id === pairId ? null : p.id);
@@ -655,7 +715,7 @@ export function TimeView({
 
 
       {pair && pa && pb ? (
-        <aside className={s.detail} aria-label="Selected pair" key={pair.id}>
+        <aside className={s.detail} aria-label="Selected pair" key={pair.id} ref={detailRef}>
           <button type="button" className={s.close} onClick={() => selectPair(null)} aria-label="Close pair">
             ×
           </button>
@@ -693,7 +753,7 @@ export function TimeView({
           </div>
         </aside>
       ) : project ? (
-        <aside className={s.detail} aria-label="Selected project" key={project.key}>
+        <aside className={s.detail} aria-label="Selected project" key={project.key} ref={detailRef}>
           <button type="button" className={s.close} onClick={() => setProjectKey(null)} aria-label="Close project">
             ×
           </button>
@@ -767,7 +827,7 @@ export function TimeView({
             Overview
           </button>
         </div>
-        <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt and turn · Esc clears</p>
+        <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through pairs · Esc clears</p>
       </section>
 
 
