@@ -181,11 +181,11 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
               const cmp = ext ? String(ext.comparison[f] ?? "missing") : null;
               const det = ext?.deterministic?.[f] ?? card.deterministic[f];
               return (
-                <tr key={f}>
+                <tr key={f} data-result={!cmp ? "none" : cmp === "match" && fld && !fld.valid ? "invalid" : cmp}>
                   <th scope="row">{label}</th>
                   <td data-label="Gemini">
                     {!ext ? (
-                      <span className={s.muted}>Not extracted</span>
+                      <em className="unknown">Not extracted</em>
                     ) : fld ? (
                       <>
                         <div>{fmt(f, fld.value)}</div>
