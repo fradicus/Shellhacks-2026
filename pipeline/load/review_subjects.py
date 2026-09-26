@@ -12,8 +12,8 @@ from typing import Any
 
 FINGERPRINT_VERSION = "audit-subject-v1"
 PROJECT_FIELDS = ("_id", "project_key", "native_id", "active", "name", "utility", "owner_code", "status", "description")
-LOCATION_FIELDS = ("_id", "project_key", "endpoint_index", "name", "lat", "lon", "confidence", "evidence", "osm_id",
-                   "osm_url")
+LOCATION_FIELDS = ("_id", "project_key", "project_id", "source_id", "endpoint_index", "name", "lat", "lon",
+                   "confidence", "evidence", "osm_id", "osm_url")
 MATCH_FIELDS = ("_id", "a", "b", "distance_mi", "time_gap_days", "band", "rule_version", "analysis_date", "view")
 
 
@@ -41,8 +41,15 @@ def _project(p: dict, source: dict) -> dict:
 
 def endpoint_subject(location: dict, project: dict, source: dict) -> dict:
     """What an endpoint review confirms: the location record and the filing version it belongs to."""
+    project_source_id = project["source"]["source_id"]
+    if (location["project_key"] != project["project_key"]
+            or location.get("project_id", project["_id"]) != project["_id"]
+            or location.get("source_id", project_source_id) != project_source_id
+            or source["_id"] != project_source_id):
+        raise ValueError("contradictory endpoint project/source binding")
+    bound_location = {**location, "project_id": project["_id"], "source_id": project_source_id}
     return {"fingerprint_version": FINGERPRINT_VERSION, "subject_type": "endpoint", "record_id": location["_id"],
-            "project": _project(project, source), "location": {k: location.get(k) for k in LOCATION_FIELDS}}
+            "project": _project(project, source), "location": {k: bound_location.get(k) for k in LOCATION_FIELDS}}
 
 
 def pair_subject(match: dict, projects_by_key: dict[str, dict], locations_by_key: dict[str, list[dict]],

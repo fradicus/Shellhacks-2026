@@ -31,13 +31,13 @@
     Rejected candidates stay allowed (F09 keeps them as evidence).
 11. **Audit verdicts set `match.review_state` at staging (#38).** Reviews whose `record_id` is the pair id count;
     `confirmed` -> confirmed, `downgraded`/`rejected` -> rejected, newest timezone-aware `at` wins, and at the same
-    instant a downgrade wins. Other verdicts, endpoint reviews and undated reviews change nothing; with no decision the
-    producer's state stays. All reviews are stored. Not done: the subject-fingerprint proposal in #38's comment
-    (a confirmation that survives changed facts); it needs an agreed review contract first.
-12. **Passed briefs must prove their `input_hash` is current (#43).** Staging recomputes it with a `brief_hash`
-    function; a mismatch, an unknown match, or no function at all stores the brief as `validation: rejected` with the
-    reason and `source_validation: passed`, so neither the pair route nor `/api/briefs` shows it as approved. F12's
-    builder doesn't exist yet, so today every passed brief fails closed; wire it in as the default when F12 lands.
+    instant a downgrade wins. Other verdicts and undated reviews change nothing. A match without a current bound
+    decision is always `needs_review`, regardless of the producer's state. All reviews are stored.
+12. **Passed briefs must prove their `input_hash` is current (#43).** Staging recomputes it with F12's
+    `briefs.facts.current_input_hash` by default, after joining locations and before dataset-prefixing ids. Callers may
+    inject a compatible `brief_hash` for tests; explicitly passing `None` fails closed. A mismatch, an unknown match,
+    or an unavailable hash stores the brief as `validation: rejected` with the reason and
+    `source_validation: passed`, so neither the pair route nor `/api/briefs` shows it as approved.
 13. **`/api/briefs` and `/api/runs` (C5, #41).** Briefs: all in the active dataset, sorted `match_id, generated_at,
     id`. Runs: not dataset-namespaced, so read as stored via `handleDb` (no active dataset needed, so a failed first
     load still shows); latest by `started_at` desc then `_id` desc; public fields only (never `errors`); 404 when
@@ -56,8 +56,10 @@
     review confirms (`endpoint_subject`: the location plus its filing version and source sha; `pair_subject`: the
     match facts, both active projects and the located endpoints their centers rest on) and hashes the canonical JSON
     (`audit-subject-v1`). Staging rebuilds every subject before prefixing ids; `decide()` takes the newest decision
-    per `(subject_type, record_id)` and applies it only if its `subject_hash` equals the current one, else
-    `needs_review` with no fallback to an older confirmation. A pair confirmation also needs a current confirmed
+    per `(subject_type, record_id)`. Every decision at that newest instant must use `audit-subject-v1` and match the
+    current hash; one missing, stale, or unsupported binding makes the whole group `needs_review`, with no fallback to
+    an older confirmation. Endpoint subjects validate and hash the explicit `project_key`, `project_id`, and
+    `source_id` linkage. A pair confirmation also needs a current confirmed
     review on every supporting endpoint; an endpoint downgrade or a missing endpoint review holds the pair at
     `needs_review`. Legacy reviews (no binding) can never confirm. Same-instant conflicts still favour the downgrade.
     `rank`, `rank_version`, `review_state`, `dataset` and unrelated records are outside the hash, so re-ranking
