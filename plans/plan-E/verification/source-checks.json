@@ -1,0 +1,529 @@
+{
+  "checked_at_utc": "2026-09-26T08:21:08.923783+00:00",
+  "method": "HTTP GET via Python urllib; redirects followed; maximum two attempts",
+  "results": [
+    {
+      "url": "https://agentcompanies.io/specification",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:37.792562+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://agentcompanies.io/specification",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 299849,
+      "sha256": "18bfd4d2d13e20d75dc1c3ddaba5df3bc6996413905aec01c3a2ecc8337efdfb",
+      "attempts": 1
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/api-key",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:37.793771+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/api-key",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 126473,
+      "sha256": "3f77c2f6762205baa662f4f9e80ec118aad47fc91b9e16c13fa017a63c80449c",
+      "attempts": 1
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/document-processing",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:37.793864+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/document-processing",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 403782,
+      "sha256": "6f546bb5b757de9e2701220f3511339d43a22be279ba1c1db25ab9a17e3c2b5f",
+      "attempts": 1
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/structured-output",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:37.793920+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 422996,
+      "sha256": "bf928b8f9ccaad6510d5cf75ec1ee97621ebda163deb342b827b584f8b161874",
+      "attempts": 1
+    },
+    {
+      "url": "https://code.claude.com/docs/en/quickstart",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.286020+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://code.claude.com/docs/en/quickstart",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 694759,
+      "sha256": "0fc8b43e6daf075006cc1099ca67c05d645525ae70c3de6a25fa2da4a88dcaa3",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/guides/day-to-day/costs/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.297987+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/costs/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 137267,
+      "sha256": "3f0bdf671705f492739eb28632b570487acd1edc913278012ace19ede07b0aaf",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/guides/getting-started/installation/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.515269+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/guides/getting-started/installation/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 131795,
+      "sha256": "4eebe65557cb6861825f9b183ab1b91e23da253dc3b2a6100e6d1e7b50e23ea7",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/guides/projects-workflow/workspaces/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.545573+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/guides/projects-workflow/workspaces/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 155762,
+      "sha256": "30f2ea65ebed61c4e87b091e45b48bdf04d6254abc1d36d82c3e57fb0a1d6274",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/how-to/write-a-company-skill/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.596037+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/how-to/write-a-company-skill/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 131790,
+      "sha256": "c3560621cc2f089ccc20dcc000f2ebf4ceb16d99fbd1604ce6dcfba7e777833a",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/reference/adapters/claude-code/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.653120+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/reference/adapters/claude-code/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 119977,
+      "sha256": "7bc209ef6c10588da2677e5b1763c383a9dd31f689616deed42ebe4c43d35dce",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/reference/cli/company/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.957395+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/reference/cli/company/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 125773,
+      "sha256": "d6592710478dafc856c732a4ac50a55a2aab715182fe138ec22dc3426a6512f8",
+      "attempts": 1
+    },
+    {
+      "url": "https://docs.paperclip.ing/reference/deploy/secrets/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.960579+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://docs.paperclip.ing/reference/deploy/secrets/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 113478,
+      "sha256": "82be6cb94f62cd417d7bab90653534ab44d8f12ff0db8a61d0c30bf2fa4f5ce8",
+      "attempts": 1
+    },
+    {
+      "url": "https://github.com/fradicus/Shellhacks-2026",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:38.974929+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/fradicus/Shellhacks-2026",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 223449,
+      "sha256": "aaaab9d522ecc9fa73a11856e431c5f971573389da326b2a9ec965864418a6c9",
+      "attempts": 1
+    },
+    {
+      "url": "https://github.com/paperclipai/companies",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.062490+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://github.com/paperclipai/companies",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 405896,
+      "sha256": "b7bcc11f91e13e8014860bc9dbf6ebd4024a4f11a20fa006aa58a5afc0d0ec98",
+      "attempts": 1
+    },
+    {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/examples/add-a-3d-model-using-threejs/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.185777+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://maplibre.org/maplibre-gl-js/docs/examples/add-a-3d-model-using-threejs/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 222749,
+      "sha256": "6f01e609a51ef82f09bf3b823f749c16c8395163f5fec52d1abfcbf67e50fb62",
+      "attempts": 1
+    },
+    {
+      "url": "https://mlh.link/GoDaddyRegistry",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.312777+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://mlh.link/GoDaddyRegistry",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1564,
+      "sha256": "60bfd359c85361c4ccae798fc530fd2279cff4551e7b49b79a7d347c8fa8deff",
+      "attempts": 1
+    },
+    {
+      "url": "https://openfreemap.org/quick_start/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.556788+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://openfreemap.org/quick_start/",
+      "content_type": "text/html",
+      "bytes": 16975,
+      "sha256": "6f525d4af69b8aaa05da4a58b8cf267c9aa49073143f87950c4922ed180b5de5",
+      "attempts": 1
+    },
+    {
+      "url": "https://operations.osmfoundation.org/policies/nominatim/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.559833+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://operations.osmfoundation.org/policies/nominatim/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 8274,
+      "sha256": "19054224850561fd66851158b3aca27ac87481e46174aa9b4e0f19d1fdb50ed4",
+      "attempts": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/paperclipai/companies/514503bf4f0ca88ebf16d5dc648e085d587f268f/skills/company-creator/references/companies-spec.md",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.614330+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/paperclipai/companies/514503bf4f0ca88ebf16d5dc648e085d587f268f/skills/company-creator/references/companies-spec.md",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3465,
+      "sha256": "a7cc00895428b419882c94fcd8faef3377b0100339f5af4f21b90fab3fdce8df",
+      "attempts": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/paperclipai/paperclip/master/docs/companies/companies-spec.md",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.696300+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/paperclipai/paperclip/master/docs/companies/companies-spec.md",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 17741,
+      "sha256": "842593181cea94789997da9de4a56e84bc348490a95c8332404352274adf6d28",
+      "attempts": 1
+    },
+    {
+      "url": "https://scrtp.stge.dominionenergyse.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.811821+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://scrtp.stge.dominionenergyse.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
+      "content_type": "application/pdf",
+      "bytes": 427859,
+      "sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+      "attempts": 1
+    },
+    {
+      "url": "https://vercel.com/docs/frameworks/full-stack/nextjs",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.928725+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://vercel.com/docs/frameworks/full-stack/nextjs",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1831254,
+      "sha256": "1c2040445a06b8bbdac21b38f9528fb3cffe5394674c330c7d216d1e78a10af7",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.caiso.com/generation-transmission/transmission/transmission-planning",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.958486+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.caiso.com/generation-transmission/transmission/transmission-planning",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 134880,
+      "sha256": "36244ba550d2722ea3f51ef67579e340c9bac4e376e618056214a6ad4430bb4d",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.georgiapower.com/about/company/filings/irp.html",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:40.026295+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.georgiapower.com/about/company/filings/irp.html",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 176310,
+      "sha256": "db7483caf5e4da2c080a045354b7aa8a5fb5d5eec8a5dab813ceb02f10efde5c",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.mlh.com/events/prizes",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:40.341284+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.mlh.com/events/prizes",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 140701,
+      "sha256": "77f35192f61250c051a493087566a719549f2e83c34ffacefaa0a6933bae7b99",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/driver-connection/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:40.429808+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/driver-connection/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1247602,
+      "sha256": "7ee2acafec098bf77065ca05556460ef5fa456887ca0e98ca7b1a79f06cfe0b4",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/security/ip-access-list/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:40.917499+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/security/ip-access-list/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1020153,
+      "sha256": "5d1b6bcfc5e5888f4feb2b59f631a89be43fda88760db5772a8bc3044c3e98b1",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/geospatial/2dsphere/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:40.965300+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/geospatial/2dsphere/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 925212,
+      "sha256": "9061ac848c1280fbb5880d249325817f5351d8adf640eb3b471c37eca045f151",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.pjm.com/planning/rtep-development",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.027558+00:00",
+      "ok": false,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "status": null,
+      "attempts": 2
+    },
+    {
+      "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.458052+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
+      "content_type": "application/pdf",
+      "bytes": 413986,
+      "sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.southeasternrtp.com/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.593015+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.southeasternrtp.com/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 104661,
+      "sha256": "b3b821d651126fa93400549cfcc34e94ab6bb43cab2cda369d62590ab469c5be",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.782900+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1996939,
+      "sha256": "d3785576bb2f558f558931b7fea22503deaafc6d1f81cec25b8d471deb32cb2c",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.southeasternrtp.com/reference_library.cshtml",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:42.339318+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.southeasternrtp.com/reference_library.cshtml",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 20572,
+      "sha256": "bee169c4538c52a19b45207c7ba564c7bb9a217667ce79d4c2779262d0897d6b",
+      "attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+schema: paperclip/v1
+# Models: Opus for the two agents that plan and review, Sonnet for builders.
+# ANTHROPIC_API_KEY is optional on every agent: leave it empty to use a Claude subscription login instead.
+agents:
+  ceo:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-opus-5-5
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+  cto:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-opus-5-5
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        VERCEL_TOKEN: { kind: secret, requirement: optional }
+        MONGODB_URI: { kind: secret, requirement: required }
+        GEMINI_API_KEY: { kind: secret, requirement: required }
+  data-engineer:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-sonnet-5
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        GEMINI_API_KEY: { kind: secret, requirement: required }
+  geo-engineer:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-sonnet-5
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        GEMINI_API_KEY: { kind: secret, requirement: required }
+        NOMINATIM_EMAIL: { kind: plain, requirement: required }
+  backend-engineer:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-sonnet-5
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        MONGODB_URI: { kind: secret, requirement: required }
+        GEMINI_API_KEY: { kind: secret, requirement: required }
+  ai-engineer:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-sonnet-5
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        GEMINI_API_KEY: { kind: secret, requirement: required }
+        MONGODB_URI: { kind: secret, requirement: required }
+  frontend-engineer:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-sonnet-5
+        chrome: true
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        MONGODB_URI: { kind: secret, requirement: required }
+        GEMINI_API_KEY: { kind: secret, requirement: required }
+  qa-verifier:
+    adapter:
+      type: claude_local
+      config:
+        model: claude-sonnet-5
+        chrome: true
+    inputs:
+      env:
+        ANTHROPIC_API_KEY: { kind: secret, requirement: optional, default: "" }
+        GH_TOKEN: { kind: secret, requirement: required }
+        MONGODB_URI: { kind: secret, requirement: required }
+routines:
+  status-sweep:
+    triggers:
+      - kind: schedule
+        cronExpression: "0 */2 * * *"
+        timezone: America/New_York
