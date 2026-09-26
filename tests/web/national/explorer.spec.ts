@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("state and county cascade stays in the URL and clears stale descendants", async ({ page }) => {
+test("state and county cascade stays in the URL and clears stale descendants", async ({ page }, testInfo) => {
   await page.goto("/explore");
   await expect(page.getByRole("heading", { name: "Transmission project explorer" })).toBeVisible();
   await page.getByLabel("Census region").selectOption("1");
@@ -13,6 +13,7 @@ test("state and county cascade stays in the URL and clears stale descendants", a
   await expect(page).toHaveURL(/region=3/);
   await expect(page).not.toHaveURL(/state=25|county=25001/);
   await expect(page.getByLabel("County or equivalent")).toBeDisabled();
+  await page.screenshot({ path: testInfo.outputPath("explore-desktop.png"), fullPage: true });
 });
 
 test("text state restores with browser Back and empty differs from invalid URL", async ({ page }) => {
@@ -31,12 +32,13 @@ test("text state restores with browser Back and empty differs from invalid URL",
   await expect(page.getByText("Project records are unavailable")).toBeVisible();
 });
 
-test("mobile explorer has no document-level horizontal overflow", async ({ page }) => {
+test("mobile explorer has no document-level horizontal overflow", async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/explore");
   const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }));
   expect(dimensions.scroll).toBeLessThanOrEqual(dimensions.client);
   await expect(page.getByRole("heading", { name: "Transmission project explorer" })).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("explore-mobile.png"), fullPage: true });
 });
 
 test("API rejects duplicate parameters and its exact counts drive the page", async ({ page, request }) => {
