@@ -19,15 +19,15 @@ Use independent result envelopes, strict bounded inputs, timeouts and response-s
 
 Test HTTP failures, stale/future/missing times, null alert geometry, route sampling gaps, unknown jurisdictions, incomplete vehicle profiles, ignored restrictions, malformed provider output, cache binding and unavailable AEF. Verify at least one permitted real public sample/feed where reachable, record failures honestly, and preserve unit fixtures as test-only. Full checks and independent review required.
 
-Implementation scope: one evidenced Seattle point/year2025 is committed; exact
+Implementation scope: one evidenced Seattle point, year 2025, is committed; exact
 uncovered point/year queries remain unavailable. A bounded index-range extractor
 and COG sampler allow additional reviewed samples without a full-index/COG download.
 The v2 evidence manifest retains each sample's retrieval/ranges/object identity;
 the web validates it and the LF-normalized snapshot hash. Google vehicle inputs
 must be exact whole-millimetre dimensions and whole-kilogram weights; unsupported
-fractions fail validation. A real Census2026Washington polygon guards WSDOT
-jurisdiction. The feed's freshness policy is15minutes; NWS forecast policy6hours.
-Route evidence is limited to at most5points,100mendpoint road snapping, and a
+fractions fail validation. A real Census 2026 Washington polygon guards WSDOT
+jurisdiction. The feed's freshness policy is 15 minutes; NWS forecast policy is six hours.
+Route evidence is limited to at most five points, 100 m endpoint road snapping, and a
 reported maximum along-route gap. Conditions are explicitly not resolved to
 per-point arrival times, so route assessments remain incomplete. There is no
 ordinary-driving fallback or universal live AEF coverage.
