@@ -46,6 +46,16 @@ jobs:
           npm run typecheck
           npm run build
 
+      - name: National and optional assistant checks
+        run: |
+          node scripts/check_national_traces.mjs
+          if [ -d tests/web/national ]; then
+            node --test tests/web/national/*.test.ts
+          fi
+          if [ -f tests/web/assistant/commands.test.mjs ]; then
+            node --test tests/web/assistant/commands.test.mjs
+          fi
+
       - name: spec lint
         run: python3 scripts/check_ownership.py --lint-specs
 
@@ -80,6 +90,7 @@ jobs:
         working-directory: web
         env:
           DATA_MODE: fixture
+          NATIONAL_DATA_MODE: snapshot
           NEXT_TELEMETRY_DISABLED: "1"
         run: |
           npm ci
@@ -92,6 +103,26 @@ jobs:
         if: steps.detect.outputs.present == 'yes'
         env:
           BASE_URL: http://localhost:3000
+          PLAYWRIGHT_BASE_URL: http://localhost:3000
         run: |
           ln -s web/node_modules node_modules # lets tests/e2e resolve @playwright/test from web/
-          web/node_modules/.bin/playwright test -c tests/e2e
+          browser_status=0
+          if [ -f tests/web/national/playwright.config.ts ]; then
+            web/node_modules/.bin/playwright test -c tests/web/national/playwright.config.ts --output test-results/national || browser_status=1
+          fi
+          if [ -f tests/web/assistant/playwright.config.ts ]; then
+            web/node_modules/.bin/playwright test -c tests/web/assistant/playwright.config.ts --output test-results/assistant || browser_status=1
+          fi
+          web/node_modules/.bin/playwright test -c tests/e2e --output test-results/legacy || browser_status=1
+          exit "$browser_status"
+
+      - name: Browser evidence
+        if: always() && steps.detect.outputs.present == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-evidence-${{ github.sha }}
+          path: |
+            test-results/
+            playwright-report/
+          if-no-files-found: ignore
+          retention-days: 7
