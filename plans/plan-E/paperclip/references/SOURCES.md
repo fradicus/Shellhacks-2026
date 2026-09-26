@@ -1,6 +1,6 @@
 # Source and format references
 
-Public references used for this package. Retrieval checks are recorded in the repository Plan E verification report. Local sponsor documents remain the authoritative challenge inputs; URLs alone do not establish permission or prize eligibility.
+Sources for Plan E, including national discovery and the Three.js spec revision. URL retrieval proves availability, not permission or completed ingestion. The 2026 SERTP report has conflicting classification signals and remains quarantined; no project data from it is adopted.
 
 - [Reference 1](https://agentcompanies.io/specification)
 - [Reference 2](https://ai.google.dev/gemini-api/docs/api-key)
@@ -16,19 +16,24 @@ Public references used for this package. Retrieval checks are recorded in the re
 - [Reference 12](https://docs.paperclip.ing/reference/deploy/secrets/)
 - [Reference 13](https://github.com/fradicus/Shellhacks-2026)
 - [Reference 14](https://github.com/paperclipai/companies)
-- [Reference 15](https://mlh.link/GoDaddyRegistry)
-- [Reference 16](https://openfreemap.org/quick_start/)
-- [Reference 17](https://operations.osmfoundation.org/policies/nominatim/)
-- [Reference 18](https://raw.githubusercontent.com/paperclipai/companies/514503bf4f0ca88ebf16d5dc648e085d587f268f/skills/company-creator/references/companies-spec.md)
-- [Reference 19](https://raw.githubusercontent.com/paperclipai/paperclip/master/docs/companies/companies-spec.md)
-- [Reference 20](https://scrtp.stge.dominionenergyse.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf)
-- [Reference 21](https://vercel.com/docs/frameworks/full-stack/nextjs)
-- [Reference 22](https://www.georgiapower.com/about/company/filings/irp.html)
-- [Reference 23](https://www.mlh.com/events/prizes)
-- [Reference 24](https://www.mongodb.com/docs/atlas/driver-connection/)
-- [Reference 25](https://www.mongodb.com/docs/atlas/security/ip-access-list/)
-- [Reference 26](https://www.mongodb.com/docs/manual/core/indexes/index-types/geospatial/2dsphere/)
-- [Reference 27](https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf)
-- [Reference 28](https://www.southeasternrtp.com/reference_library.cshtml)
+- [Reference 15](https://maplibre.org/maplibre-gl-js/docs/examples/add-a-3d-model-using-threejs/)
+- [Reference 16](https://mlh.link/GoDaddyRegistry)
+- [Reference 17](https://openfreemap.org/quick_start/)
+- [Reference 18](https://operations.osmfoundation.org/policies/nominatim/)
+- [Reference 19](https://raw.githubusercontent.com/paperclipai/companies/514503bf4f0ca88ebf16d5dc648e085d587f268f/skills/company-creator/references/companies-spec.md)
+- [Reference 20](https://raw.githubusercontent.com/paperclipai/paperclip/master/docs/companies/companies-spec.md)
+- [Reference 21](https://scrtp.stge.dominionenergyse.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf)
+- [Reference 22](https://vercel.com/docs/frameworks/full-stack/nextjs)
+- [Reference 23](https://www.caiso.com/generation-transmission/transmission/transmission-planning)
+- [Reference 24](https://www.georgiapower.com/about/company/filings/irp.html)
+- [Reference 25](https://www.mlh.com/events/prizes)
+- [Reference 26](https://www.mongodb.com/docs/atlas/driver-connection/)
+- [Reference 27](https://www.mongodb.com/docs/atlas/security/ip-access-list/)
+- [Reference 28](https://www.mongodb.com/docs/manual/core/indexes/index-types/geospatial/2dsphere/)
+- [Reference 29](https://www.pjm.com/planning/rtep-development)
+- [Reference 30](https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf)
+- [Reference 31](https://www.southeasternrtp.com/)
+- [Reference 32](https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf)
+- [Reference 33](https://www.southeasternrtp.com/reference_library.cshtml)
 
-Format baseline: Agent Companies reference at companies commit `514503bf4f0ca88ebf16d5dc648e085d587f268f`. The Paperclip vendor specification and CLI documentation were inspected on September 26, 2026. Static validation does not replace a server import preview.
+Format baseline: Agent Companies reference at companies commit `514503bf4f0ca88ebf16d5dc648e085d587f268f`. Live Paperclip import is still unverified.

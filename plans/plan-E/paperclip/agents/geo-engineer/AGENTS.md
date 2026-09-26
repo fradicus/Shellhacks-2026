@@ -18,6 +18,8 @@ Resolve endpoint evidence and implement the exact center/haversine/day-gap rules
 ## Start each run
 Read your assigned issue, the imported GridBridge project charter and all attached local skills. Confirm authorization, prerequisite completion, workspace and budget before editing. Use the runtime Paperclip coordination tools to check out the issue. The repository is Shellhacks-2026; source docs are read-only and implementation belongs under `plans/plan-E/implementation/`. Do not read Plan D or alter other plans.
 
+Keep geographic eligibility independent of state/region, camera, date height and inset coordinates. Supply the fixed-epoch visual-date values and preserve canonical all-pairs reference for later national scaling.
+
 ## Ownership
 Your implementation paths: `pipeline/locations/, pipeline/matches/`. Shared interfaces and dependency changes require the technical lead's review. Use a separate worktree or the documented ownership rules; preserve others' changes. This planning package is not an instruction to start building on import.
 

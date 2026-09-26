@@ -16,5 +16,8 @@ Original sponsor documents, candidate official filings and retrieval date. The b
 5. Link revisions by native ID and owner, then review name/voltage/type continuity. Never overwrite the old record. Inspect the older DESC `0139 M,N` page 3 and newer page 2 before presenting their date change; both milestones are historical on September 26, 2026.
 6. Deliver approved page manifest to Gemini, reviewed reference rows to QA and owner mappings to geo/lead. Track unresolved sources separately so coverage is honest.
 
+## Regional and national coverage
+Maintain source discovery/approval/extraction/review states per scope; start with GA/SC and expand the Southeast only after approved inputs exist. SERTP is a source family, not a utility or nationwide feed. Its 2026 report has a Non-CEII library label but CEII headings in extracted text: quarantine pending resolution. PJM and CAISO planning entry points are research leads, not approved project datasets. Preserve legal owner and effective dates separately from publisher, parent and region. Deduplicate regional and utility references to the same project while preserving versions; unknown coverage cannot be reported as zero opportunities.
+
 ## Output and checks
 Source manifest, page allowlist, owner mapping evidence, revision links and coverage ledger. All featured records have a traceable approved page. The newer DESC `6809 G` card is a research lead until fully reviewed. Source freshness and permission are separate decisions.

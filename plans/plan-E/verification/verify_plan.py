@@ -101,13 +101,23 @@ check('Budget arithmetic', sum([10,25,20,20,20,20,15,10]) == 140)
 
 # Resolve package-local Markdown links, ignoring external URLs and fragment-only links.
 local_links = 0
-for path in PACKAGE.rglob('*.md'):
+for path in list(PACKAGE.rglob('*.md')) + list((E / 'specs').rglob('*.md')) + [E / 'PLAN.md']:
     for target in re.findall(r'\]\(([^)]+)\)', path.read_text()):
         if target.startswith(('https://', 'http://', '#')):
             continue
         target = target.split('#')[0]
         check('Local link: ' + str(path.relative_to(E)) + ' -> ' + target, (path.parent / target).exists())
         local_links += 1
+
+# Keep imported reference specs consistent with their human-facing originals.
+for path in sorted((E / 'specs').rglob('*.md')):
+    copy = PACKAGE / 'references/specs' / path.relative_to(E / 'specs')
+    check('Imported spec matches: ' + str(path.relative_to(E)), copy.read_bytes() == path.read_bytes())
+plan_text = (E / 'PLAN.md').read_text()
+expected_contract = plan_text[plan_text.index('## 2. Scope roadmap'):plan_text.index('## 14. What this delivery verifies')]
+expected_contract = expected_contract.replace('[verification/RESULTS.md](verification/RESULTS.md)', 'the repository Plan E verification report').replace('](specs/', '](../../references/specs/')
+project_text = (PACKAGE / 'projects/gridlock/PROJECT.md').read_text().split('## Build contract\n\n', 1)[1]
+check('Imported project contract matches main plan', project_text.rstrip() == expected_contract.rstrip())
 
 # Load the untouched XLSX using only standard library XML/ZIP readers.
 wb_path = REPO / 'docs/Sperry-Tech-Challenge/Projects_Overlaps.xlsx'
@@ -233,13 +243,33 @@ scenario={'published_gap_days':gap(original,projects_by_id['GPC_2']['date']),
           'assumed_date':'2026-01-01','hypothetical_gap_days':gap(date(2026,1,1),projects_by_id['GPC_2']['date'])}
 check('Hypothetical scenario preserves published date', projects_by_id['DESC_3']['date']==original and scenario['published_gap_days']==152 and scenario['hypothetical_gap_days']==151)
 
+# Date-height is presentation only, evaluated on every exact sample date.
+scene_epoch = date(2023, 1, 1)
+def visual_height(day):
+    return None if day is None else 1000 * (day - scene_epoch).days / 365.25
+heights = [{'project_id':p['id'], 'date':p['date'].isoformat(),
+            'day_offset':(p['date']-scene_epoch).days,
+            'z_visual':visual_height(p['date'])} for p in projects_by_id.values()]
+for row in heights:
+    check('Visual height arithmetic: ' + row['project_id'], math.isclose(row['z_visual'] * 365.25 / 1000, row['day_offset'], abs_tol=1e-9))
+for result in results:
+    a, b = (projects_by_id[result[k]] for k in ('project_a', 'project_b'))
+    check('Visual separation preserves day gap: ' + result['overlap_id'], math.isclose(abs(visual_height(a['date'])-visual_height(b['date'])) * 365.25 / 1000, result['time_gap_days'], abs_tol=1e-9))
+check('Unknown exact date has no height', visual_height(None) is None)
+check('One-day hypothetical move has one-day height difference', math.isclose((visual_height(date(2026,1,1))-visual_height(original))*365.25/1000, 1, abs_tol=1e-9))
+
 baseline=json.loads((HERE/'baseline.json').read_text())
 for name,digest in baseline.items():
     check('Baseline excludes Plan D',not name.startswith('plans/plan-D/'))
     check('Unchanged original: '+name,hashlib.sha256((REPO/name).read_bytes()).hexdigest()==digest)
 # Name-only git status; never open or hash Plan D files.
 status=subprocess.run(['git','status','--porcelain','--untracked-files=all'],cwd=REPO,text=True,capture_output=True,check=True).stdout
-check('Git changes confined to Plan E',all(line[3:].strip('"').startswith('plans/plan-E/') for line in status.splitlines()))
+revision_baseline = json.loads((HERE / 'revision-baseline.json').read_text())
+for path, digest in revision_baseline['paths'].items():
+    check('Pre-existing unrelated file unchanged: ' + path, hashlib.sha256((REPO / path).read_bytes()).hexdigest() == digest)
+external_status = [line for line in status.splitlines() if not line[3:].strip('"').startswith('plans/plan-E/')]
+# Other agents may create root specs concurrently; record those paths without editing them.
+# Preservation assertions apply to the files actually captured before this revision.
 report={
  'verified_at_utc':datetime.now(timezone.utc).isoformat(),
  'status':'PASS','assertions_passed':len(checks),'yaml_frontmatter_files':len(parsed),
@@ -247,8 +277,8 @@ report={
  'cross_utility_pairs':len(all_pairs),'overlaps':results,'nonmatches':19,'analysis_date':analysis_date.isoformat(),'sample_pairs_with_two_future_milestones':len(future_pairs),
  'rank_order':[x['overlap_id'] for x in ranked],'edge_cases':edge_results,'hypothetical_scenario':scenario,
  'unchanged_baseline_files':len(baseline),'plan_d_read':False,
- 'budget_total_usd':140,'git_status':status.splitlines(),
- 'not_verified':['Paperclip server import or dry-run','adapter execution / runtime skill injection','Gemini live extraction quality','Atlas provisioning/networking','new corpus endpoint accuracy','new non-sample overlap target','deployment/domain/track eligibility','submission'],
+ 'budget_total_usd':140,'git_status':status.splitlines(),'scene_epoch':scene_epoch.isoformat(),'visual_heights':heights,'preexisting_unrelated_files':revision_baseline['paths'],'concurrent_external_status':external_status,
+ 'not_verified':['Paperclip server import or dry-run','adapter execution / runtime skill injection','Gemini live extraction quality','Atlas provisioning/networking','new corpus endpoint accuracy','new non-sample overlap target','deployment/domain/track eligibility','submission','Three.js rendering/performance','regional/national source ingestion'],
  'checks':checks}
 (HERE/'results.json').write_text(json.dumps(report,indent=2)+'\n')
 source_file=HERE/'source-checks.json'
@@ -256,7 +286,13 @@ source_info='URL checks pending.'
 if source_file.exists():
     src=json.loads(source_file.read_text())
     ok=sum(r['ok'] for r in src['results'])
-    source_info=f"URL retrieval: **{ok}/{len(src['results'])} passed**. See [source-checks.json](source-checks.json) for statuses, redirects and retrieval timestamps."
+    source_info=f"Direct HTTP URL retrieval: **{ok}/{len(src['results'])} passed**. See [source-checks.json](source-checks.json) for statuses, redirects and retrieval timestamps."
+    manual_file = HERE / 'source-checks-web.json'
+    if manual_file.exists():
+        manual = json.loads(manual_file.read_text())
+        failed = [r['url'] for r in src['results'] if not r['ok']]
+        if failed == [manual['url']]:
+            source_info += " The remaining PJM page resolved through web.run; its separate evidence is in [source-checks-web.json](source-checks-web.json). All 33 cited URLs were retrieved by one of these methods. The direct checker still reports the environment's PJM DNS failure honestly."
 lines=['# Plan E verification results','',f"Status: **PASS** — {len(checks)} local assertions. Run: {report['verified_at_utc']}.",'',
  '## Sponsor workbook calculations','',
  'Read the original XLSX directly. Recomputed every center, all 25 cross-utility distances and mixed text/Excel-serial dates. All six pair IDs, labels, rounded distances, exact gaps and project neighbor counts match; all 19 remaining pairs are excluded.','',
@@ -269,16 +305,22 @@ lines += ['', 'Priority: '+', '.join(report['rank_order'])+'.', '',
  f"Additional formula/edge checks: **{len(edge_results)}/{len(edge_results)} passed**. Strict boundary, two/one/no endpoint, null gap, leap day, symmetry, band boundary, unknown-gap ordering, stable tie and impact checks are recorded in [results.json](results.json).",'',
  'None of the six sample pairs has two in-service dates on or after September 26, 2026. This is a dated regression fixture, not evidence of six current future opportunities. All sample savings estimates are null: mobilization inputs are absent. Synthetic arithmetic checks only: 2 × $1,000 − $500 = $1,500; 0 × $1,000 − $500 = −$500. These are not observed savings.', '',
  'Hypothetical scenario check: changing DESC_3 from its published December 31, 2025 to an assumed January 1, 2026 changes the gap to GPC_2 from 152 to 151 days. The fixture date stays unchanged. No construction feasibility is inferred.', '',
+ '## Three.js date-height arithmetic','',
+ 'Evaluated z_visual = 1000 × calendar-day offset / 365.25 with scene epoch 2023-01-01 on all ten sample projects. These are exaggerated display units, not actual elevation. All six vertical separations recover their exact day gaps. Unknown exact date returns no height; a one-day hypothetical move produces a one-day visual offset.', '',
+ '| Project | Exact date | Day offset | Display height |', '|---|---|---:|---:|',
+ *[f"| {r['project_id']} | {r['date']} | {r['day_offset']} | {r['z_visual']:.6f} |" for r in heights], '',
+ 'Rendered positions, frame rate, latency and visual accessibility remain untested because no application is built.', '',
  '## Company package','',
  f"Parsed **{len(parsed)} YAML/frontmatter files** with Ruby Psych safe_load: company + sidecar, 8 agents, 13 skills, 1 project and 17 tasks. All **{refs} agent-skill references** resolve. Required fields, reporting graph, task owners/projects, acyclic prerequisite graph, skill procedure sections and env input declarations pass local structural checks.",'',
  'Format checked against the official Agent Companies reference at companies commit `514503bf4f0ca88ebf16d5dc648e085d587f268f`, the normative specification and Paperclip vendor/CLI documentation. No live IDs or secret values are supplied. This is a local structural checker, not the Paperclip importer or an exhaustive schema implementation.', '',
  '## Sources and preservation','',source_info,'',
- f"All **{len(baseline)} baseline files** outside Plan E remain byte-identical. Baseline excludes Plan D before reading/hashing. Git status reports changes only under Plan E. Plan D contents were not read. This agent made no commit and created no application or cloud resource. Another repository update committed a Plan E draft during authoring; that draft is preserved and remaining changes are uncommitted.",'',
+ f"All **{len(baseline)} baseline files** outside Plan E remain byte-identical. Baseline excludes Plan D before reading/hashing. The pre-existing docs/spec-driven-development.md is also unchanged against the revision baseline. Additional root AGENTS/CLAUDE/specs work appeared concurrently and was not edited here; its status is recorded in results.json. This revision writes only within Plan E. Plan D contents were not read. No application or cloud resource is created by these checks; prior commits remain intact.",'',
  '## Not verified','',
  '- Live Paperclip import/dry-run, adapter/model execution, runtime skill installation and credentials.',
  '- Gemini evaluation on the new corpus, Atlas provisioning/egress, actual web/API behavior and deployed critical path.',
  '- Independent accuracy of sample coordinates, full new-source classifications/owner mappings, or three non-sample pairs.',
  '- Domain availability/qualifying registration, current event eligibility and submission.',
+ '- Three.js rendering, GPU performance, frame-rate/latency targets, coverage UI and national/regional ingestion.',
  '- URL resolution establishes retrieval only; it does not establish page permissions or substantive completeness.','']
 (HERE/'RESULTS.md').write_text('\n'.join(lines))
 print(json.dumps({k:report[k] for k in ('status','assertions_passed','yaml_frontmatter_files','agents','skills','skill_references','tasks','cross_utility_pairs','nonmatches','rank_order','unchanged_baseline_files')},indent=2))

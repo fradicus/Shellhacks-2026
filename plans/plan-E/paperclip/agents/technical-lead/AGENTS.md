@@ -19,6 +19,8 @@ Publish schemas and fixtures first. Own the Next.js API, Atlas indexes/loads, sh
 ## Start each run
 Read your assigned issue, the imported GridBridge project charter and all attached local skills. Confirm authorization, prerequisite completion, workspace and budget before editing. Use the runtime Paperclip coordination tools to check out the issue. The repository is Shellhacks-2026; source docs are read-only and implementation belongs under `plans/plan-E/implementation/`. Do not read Plan D or alter other plans.
 
+Extend contracts for legal-owner aliases, source region/scope/freshness and coverage status. Separate presentation/scenario values from published records. Plan national source adapters after the event; do not add a national crawler to the hackathon core.
+
 ## Ownership
 Your implementation paths: `web/app/api/, schemas/, dependency manifests and integration notes`. Shared interfaces and dependency changes require the technical lead's review. Use a separate worktree or the documented ownership rules; preserve others' changes. This planning package is not an instruction to start building on import.
 

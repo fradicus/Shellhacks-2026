@@ -17,5 +17,8 @@ Original untouched workbook, approved source pages, build revision, dataset vers
 6. Run the full map/list/detail/export flow, historical/future filters, keyboard route and empty states. For R2 compare published and hypothetical views then reset; inspect original records for accidental mutation.
 7. Re-run the critical path against the actual deployed revision after release. Record host/domain/TLS outcomes, Gemini metadata and Atlas query evidence. Mark unresolved core requirements as blockers, not implied passes.
 
+## National and 3D acceptance
+Verify the date-height formula on all golden records; toggle 2D/3D without changing any match facts. Check unknown-date tray, scenario ghost/reset, reduced motion, region-seam pair selection and WebGL fallback. Reconcile region/utility counts to actual reviewed source scope; inspect duplicates and missing-coverage labels. Measure the declared rendering/feedback targets on the real demo device. No planning-only test proves graphics performance or national data coverage.
+
 ## Output and checks
 Acceptance matrix with case, expected/observed outcome, command or steps, revision/dataset and evidence path. State what was not exercised. QA signs off independently; authors do not approve their own featured evidence. After freezes, widen testing only for changes or unresolved failures.

@@ -12,7 +12,7 @@ import re
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parent
 # Authoring documents only; reports are generated evidence, not new source inputs.
-paths=[ROOT/'PLAN.md']+list((ROOT/'paperclip').rglob('*.md'))
+paths=[ROOT/'PLAN.md']+list((ROOT/'paperclip').rglob('*.md'))+list((ROOT/'specs').rglob('*.md'))
 refs={}
 for p in paths:
     for url in set(re.findall(r'https://[^\s<>`\)]+',p.read_text())):

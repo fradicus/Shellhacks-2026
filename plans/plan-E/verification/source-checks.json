@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-26T07:53:00.155753+00:00",
+  "checked_at_utc": "2026-09-26T08:21:08.923783+00:00",
   "method": "HTTP GET via Python urllib; redirects followed; maximum two attempts",
   "results": [
     {
@@ -9,7 +9,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:56.595526+00:00",
+      "checked_at_utc": "2026-09-26T08:20:37.792562+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://agentcompanies.io/specification",
@@ -25,13 +25,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:56.595844+00:00",
+      "checked_at_utc": "2026-09-26T08:20:37.793771+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://ai.google.dev/gemini-api/docs/api-key",
       "content_type": "text/html; charset=utf-8",
       "bytes": 126473,
-      "sha256": "734fa7bceda118d4cf5ccf22c9deedaf9a42e927e2160931bbe38c78c30a4d8a",
+      "sha256": "3f77c2f6762205baa662f4f9e80ec118aad47fc91b9e16c13fa017a63c80449c",
       "attempts": 1
     },
     {
@@ -41,13 +41,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:56.596870+00:00",
+      "checked_at_utc": "2026-09-26T08:20:37.793864+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://ai.google.dev/gemini-api/docs/document-processing",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 403778,
-      "sha256": "a1ec2526f1acd35fbbdbe38b9c715d40daedce1a45a77178935b1a7ea60b82bd",
+      "bytes": 403782,
+      "sha256": "6f546bb5b757de9e2701220f3511339d43a22be279ba1c1db25ab9a17e3c2b5f",
       "attempts": 1
     },
     {
@@ -57,13 +57,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:56.596941+00:00",
+      "checked_at_utc": "2026-09-26T08:20:37.793920+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://ai.google.dev/gemini-api/docs/structured-output",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 423000,
-      "sha256": "7feead3ace1e4acf0daadc88f4fe546c634b82885fea209efd1b01eb04205fb8",
+      "bytes": 422996,
+      "sha256": "bf928b8f9ccaad6510d5cf75ec1ee97621ebda163deb342b827b584f8b161874",
       "attempts": 1
     },
     {
@@ -73,7 +73,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.152780+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.286020+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://code.claude.com/docs/en/quickstart",
@@ -89,7 +89,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.353058+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.297987+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/guides/day-to-day/costs/",
@@ -105,13 +105,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.431913+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.515269+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/guides/getting-started/installation/",
       "content_type": "text/html; charset=utf-8",
       "bytes": 131795,
-      "sha256": "eca25fa9fbbfdb58e34622668a53d8bfb71a369692dbf3cde1dc371f31c8f466",
+      "sha256": "4eebe65557cb6861825f9b183ab1b91e23da253dc3b2a6100e6d1e7b50e23ea7",
       "attempts": 1
     },
     {
@@ -121,7 +121,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.531910+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.545573+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/guides/projects-workflow/workspaces/",
@@ -137,7 +137,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.571087+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.596037+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/how-to/write-a-company-skill/",
@@ -153,7 +153,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.601841+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.653120+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/reference/adapters/claude-code/",
@@ -169,7 +169,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.611306+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.957395+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/reference/cli/company/",
@@ -185,7 +185,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.696387+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.960579+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://docs.paperclip.ing/reference/deploy/secrets/",
@@ -201,13 +201,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.839944+00:00",
+      "checked_at_utc": "2026-09-26T08:20:38.974929+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/fradicus/Shellhacks-2026",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 223451,
-      "sha256": "d7bf7f56d9371b66a4904dac70093def0f343c0aa2503e5b8ecce42f9467b229",
+      "bytes": 223449,
+      "sha256": "aaaab9d522ecc9fa73a11856e431c5f971573389da326b2a9ec965864418a6c9",
       "attempts": 1
     },
     {
@@ -217,13 +217,29 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.864400+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.062490+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://github.com/paperclipai/companies",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 405898,
-      "sha256": "1e40ea100c2037736a216e67a46763059fea1c238dc35259e071938586f1ed94",
+      "bytes": 405896,
+      "sha256": "b7bcc11f91e13e8014860bc9dbf6ebd4024a4f11a20fa006aa58a5afc0d0ec98",
+      "attempts": 1
+    },
+    {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/examples/add-a-3d-model-using-threejs/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.185777+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://maplibre.org/maplibre-gl-js/docs/examples/add-a-3d-model-using-threejs/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 222749,
+      "sha256": "6f01e609a51ef82f09bf3b823f749c16c8395163f5fec52d1abfcbf67e50fb62",
       "attempts": 1
     },
     {
@@ -233,7 +249,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.879095+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.312777+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://mlh.link/GoDaddyRegistry",
@@ -249,7 +265,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:57.918218+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.556788+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://openfreemap.org/quick_start/",
@@ -265,7 +281,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.080669+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.559833+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://operations.osmfoundation.org/policies/nominatim/",
@@ -281,7 +297,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.398248+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.614330+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://raw.githubusercontent.com/paperclipai/companies/514503bf4f0ca88ebf16d5dc648e085d587f268f/skills/company-creator/references/companies-spec.md",
@@ -297,7 +313,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.496390+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.696300+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://raw.githubusercontent.com/paperclipai/paperclip/master/docs/companies/companies-spec.md",
@@ -312,7 +328,7 @@
         "PLAN.md",
         "paperclip/references/SOURCES.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.526626+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.811821+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://scrtp.stge.dominionenergyse.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
@@ -328,13 +344,29 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.586645+00:00",
+      "checked_at_utc": "2026-09-26T08:20:39.928725+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://vercel.com/docs/frameworks/full-stack/nextjs",
       "content_type": "text/html; charset=utf-8",
       "bytes": 1831254,
-      "sha256": "f2d0778996e83bbd0f8c5192c2e20c7233a4482aa6994ba3cf86a929cd2771e9",
+      "sha256": "1c2040445a06b8bbdac21b38f9528fb3cffe5394674c330c7d216d1e78a10af7",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.caiso.com/generation-transmission/transmission/transmission-planning",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:39.958486+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.caiso.com/generation-transmission/transmission/transmission-planning",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 134880,
+      "sha256": "36244ba550d2722ea3f51ef67579e340c9bac4e376e618056214a6ad4430bb4d",
       "attempts": 1
     },
     {
@@ -344,13 +376,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.628370+00:00",
+      "checked_at_utc": "2026-09-26T08:20:40.026295+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.georgiapower.com/about/company/filings/irp.html",
       "content_type": "text/html;charset=utf-8",
-      "bytes": 176311,
-      "sha256": "9c1c154b311eaf6317f5f96e704584d48b34ec9c018de22305bf90fff3fc913b",
+      "bytes": 176310,
+      "sha256": "db7483caf5e4da2c080a045354b7aa8a5fb5d5eec8a5dab813ceb02f10efde5c",
       "attempts": 1
     },
     {
@@ -360,13 +392,13 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.636937+00:00",
+      "checked_at_utc": "2026-09-26T08:20:40.341284+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.mlh.com/events/prizes",
       "content_type": "text/html; charset=utf-8",
       "bytes": 140701,
-      "sha256": "d090adb05b7f3c7e0da89cb0ab8dfbf84da28bb5a1101ea7af1f7fd969cfb60d",
+      "sha256": "77f35192f61250c051a493087566a719549f2e83c34ffacefaa0a6933bae7b99",
       "attempts": 1
     },
     {
@@ -376,7 +408,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:58.971825+00:00",
+      "checked_at_utc": "2026-09-26T08:20:40.429808+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.mongodb.com/docs/atlas/driver-connection/",
@@ -392,7 +424,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:59.112796+00:00",
+      "checked_at_utc": "2026-09-26T08:20:40.917499+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.mongodb.com/docs/atlas/security/ip-access-list/",
@@ -408,7 +440,7 @@
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:59.131116+00:00",
+      "checked_at_utc": "2026-09-26T08:20:40.965300+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/geospatial/2dsphere/",
@@ -418,12 +450,25 @@
       "attempts": 1
     },
     {
+      "url": "https://www.pjm.com/planning/rtep-development",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.027558+00:00",
+      "ok": false,
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "status": null,
+      "attempts": 2
+    },
+    {
       "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
       "cited_in": [
         "PLAN.md",
         "paperclip/references/SOURCES.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:59.418215+00:00",
+      "checked_at_utc": "2026-09-26T08:20:41.458052+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
@@ -433,13 +478,45 @@
       "attempts": 1
     },
     {
+      "url": "https://www.southeasternrtp.com/",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.593015+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.southeasternrtp.com/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 104661,
+      "sha256": "b3b821d651126fa93400549cfcc34e94ab6bb43cab2cda369d62590ab469c5be",
+      "attempts": 1
+    },
+    {
+      "url": "https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf",
+      "cited_in": [
+        "PLAN.md",
+        "paperclip/references/SOURCES.md",
+        "paperclip/projects/gridlock/PROJECT.md"
+      ],
+      "checked_at_utc": "2026-09-26T08:20:41.782900+00:00",
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1996939,
+      "sha256": "d3785576bb2f558f558931b7fea22503deaafc6d1f81cec25b8d471deb32cb2c",
+      "attempts": 1
+    },
+    {
       "url": "https://www.southeasternrtp.com/reference_library.cshtml",
       "cited_in": [
         "PLAN.md",
         "paperclip/references/SOURCES.md",
         "paperclip/projects/gridlock/PROJECT.md"
       ],
-      "checked_at_utc": "2026-09-26T07:52:59.741135+00:00",
+      "checked_at_utc": "2026-09-26T08:20:42.339318+00:00",
       "ok": true,
       "status": 200,
       "final_url": "https://www.southeasternrtp.com/reference_library.cshtml",

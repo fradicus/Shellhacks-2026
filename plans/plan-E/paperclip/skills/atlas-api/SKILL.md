@@ -17,5 +17,8 @@ Shared schemas, source/record versions, canonical matcher output and scoped conn
 6. Implement protected brief generation from approved stored pair IDs, with rate limits and a cache keyed by inputs. Validate the server-side OPERATOR_API_TOKEN from a local operator CLI bearer header; reject missing/invalid credentials without logging them. The public browser never holds this token. Public browse can read accepted cached briefs. Never expose keys in NEXT_PUBLIC variables, logs or client bundles.
 7. Escape spreadsheet formula prefixes in CSV. Test unknown IDs, invalid filters, missing geometry, interrupted imports, repeated imports and unavailable Atlas/Gemini.
 
+## Regional contract
+Persist source scope, public/review status, freshness, verified legal-owner aliases and planning-region metadata. Coverage counts refer to unique active records in a defined inventory, not the whole U.S. utility universe. Keep camera/date-height/ghost state outside canonical records. State memberships can be multi-valued. Regional source grouping must not prevent cross-boundary pairs. National rollout must reconcile duplicates across utility and regional filings before counting opportunities.
+
 ## Output and checks
 Documented JSON contracts, indexes and live query evidence behind an integrated UI interaction. QA verifies two identical imports do not duplicate records and stale briefs invalidate after a source change. A static JSON screen does not satisfy the Atlas track.

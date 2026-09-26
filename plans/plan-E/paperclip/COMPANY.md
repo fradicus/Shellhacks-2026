@@ -8,7 +8,10 @@ version: "1.0.0"
 
 # GridBridge company
 
-Plan B supplies the product direction. This package assigns eight agents, thirteen written skills, one project and seventeen seed tasks to a 36-hour ShellHacks build. Follow the GridBridge project charter for rules, scope gates, dependencies and acceptance. The CEO has seven direct reports; technical lead owns integration and QA reviews independently.
+Plan B supplies the product direction: United States vision, Southeast rollout and GA/SC reviewed proof, with a Three.js date view. This package assigns eight agents, thirteen written skills, one project and seventeen seed tasks to a 36-hour ShellHacks build. Follow the GridBridge project charter for rules, scope gates, dependencies and acceptance. The CEO has seven direct reports; technical lead owns integration and QA reviews independently.
+
+## Active specification handoff
+A concurrent root specification defines a separate 8-hour overnight build and treats plans as history. Before launching this 36-hour company, reconcile `references/specs/INTEGRATION.md` with the active spec owner. Import validation alone does not resolve that conflict; do not run both configurations in one workspace.
 
 ## Import and launch
 Use the local package import preview before applying. Bind workspace, model, credentials and budgets through the running Paperclip instance. Timer heartbeats remain off; keep agents paused until the human starts kickoff. Imported task bodies contain prerequisite slugs; CEO creates native dependency links. Import itself is not build or spending authorization.

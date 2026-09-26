@@ -17,5 +17,8 @@ Active project versions, accepted endpoint centers, verified owners, analysis da
 6. If the R2 scenario feature is enabled, copy published facts into a separate hypothetical state. User-entered dates reuse the same gap formula and are visibly assumptions; reset restores published dates. They cannot mutate source records or prove construction feasibility.
 7. Optional savings arithmetic is avoided mobilizations times sourced unit cost minus coordination/transfer cost. Any missing input produces null. Keep negative outcomes, cite all factual inputs and label user scenarios. Never extrapolate the contractor anecdote as a ratio.
 
+## Presentation and regional seams
+Date-height is presentation only. Calculate the charter's fixed-epoch display values from exact dates; no heights for partial/unknown dates. Hypothetical dates never overwrite canonical source versions. State, source-region, viewport and Alaska/Hawaii inset boundaries cannot exclude otherwise eligible pairs. Keep all-pairs as the reference until any future indexed candidate path proves recall; flag antimeridian center ambiguity for explicit rule review.
+
 ## Output and checks
 Exact OVL_1–OVL_6, 19 nonmatches, expected gaps and rounded distances; rank order OVL_2, OVL_3, OVL_1, OVL_4, OVL_5, OVL_6. Test the strict threshold, missing geometry/dates, ties, leap dates, input order and null impact. Atlas/UI consume these canonical results, not independent competing math.

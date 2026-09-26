@@ -11,6 +11,8 @@ Dependencies: acceptance, deploy
 ## Work
 Check exact deployed revision/dataset, domain/TLS, Atlas-backed API, real Gemini evidence, source links, filters, CSV and saved-result fallback. Test any release-blocking fixes again.
 
+Rehearse national discovery → Southeast → reviewed pair → Reveal time → source → card. Capture real 3D performance and fallback outcomes; planning tests are insufficient.
+
 ## Acceptance
 Deployed critical path passes or precise blocker recorded. Release freezes at hour 30; screenshots/video correspond to this release, not an earlier branch.
 

@@ -1,6 +1,6 @@
 # Plan E verification results
 
-Status: **PASS** — 461 local assertions. Run: 2026-09-26T07:54:13.787929+00:00.
+Status: **PASS** — 505 local assertions. Run: 2026-09-26T08:22:06.565610+00:00.
 
 ## Sponsor workbook calculations
 
@@ -23,6 +23,25 @@ None of the six sample pairs has two in-service dates on or after September 26, 
 
 Hypothetical scenario check: changing DESC_3 from its published December 31, 2025 to an assumed January 1, 2026 changes the gap to GPC_2 from 152 to 151 days. The fixture date stays unchanged. No construction feasibility is inferred.
 
+## Three.js date-height arithmetic
+
+Evaluated z_visual = 1000 × calendar-day offset / 365.25 with scene epoch 2023-01-01 on all ten sample projects. These are exaggerated display units, not actual elevation. All six vertical separations recover their exact day gaps. Unknown exact date returns no height; a one-day hypothetical move produces a one-day visual offset.
+
+| Project | Exact date | Day offset | Display height |
+|---|---|---:|---:|
+| DESC_1 | 2024-12-31 | 730 | 1998.631075 |
+| DESC_2 | 2024-12-31 | 730 | 1998.631075 |
+| DESC_3 | 2025-12-31 | 1095 | 2997.946612 |
+| DESC_4 | 2023-12-31 | 364 | 996.577687 |
+| DESC_5 | 2025-06-01 | 882 | 2414.784394 |
+| GPC_1 | 2033-06-01 | 3804 | 10414.784394 |
+| GPC_2 | 2026-06-01 | 1247 | 3414.099932 |
+| GPC_3 | 2027-06-01 | 1612 | 4413.415469 |
+| GPC_4 | 2025-05-01 | 851 | 2329.911020 |
+| GPC_5 | 2025-06-01 | 882 | 2414.784394 |
+
+Rendered positions, frame rate, latency and visual accessibility remain untested because no application is built.
+
 ## Company package
 
 Parsed **41 YAML/frontmatter files** with Ruby Psych safe_load: company + sidecar, 8 agents, 13 skills, 1 project and 17 tasks. All **45 agent-skill references** resolve. Required fields, reporting graph, task owners/projects, acyclic prerequisite graph, skill procedure sections and env input declarations pass local structural checks.
@@ -31,9 +50,9 @@ Format checked against the official Agent Companies reference at companies commi
 
 ## Sources and preservation
 
-URL retrieval: **28/28 passed**. See [source-checks.json](source-checks.json) for statuses, redirects and retrieval timestamps.
+Direct HTTP URL retrieval: **32/33 passed**. See [source-checks.json](source-checks.json) for statuses, redirects and retrieval timestamps. The remaining PJM page resolved through web.run; its separate evidence is in [source-checks-web.json](source-checks-web.json). All 33 cited URLs were retrieved by one of these methods. The direct checker still reports the environment's PJM DNS failure honestly.
 
-All **45 baseline files** outside Plan E remain byte-identical. Baseline excludes Plan D before reading/hashing. Git status reports changes only under Plan E. Plan D contents were not read. This agent made no commit and created no application or cloud resource. Another repository update committed a Plan E draft during authoring; that draft is preserved and remaining changes are uncommitted.
+All **45 baseline files** outside Plan E remain byte-identical. Baseline excludes Plan D before reading/hashing. The pre-existing docs/spec-driven-development.md is also unchanged against the revision baseline. Additional root AGENTS/CLAUDE/specs work appeared concurrently and was not edited here; its status is recorded in results.json. This revision writes only within Plan E. Plan D contents were not read. No application or cloud resource is created by these checks; prior commits remain intact.
 
 ## Not verified
 
@@ -41,4 +60,5 @@ All **45 baseline files** outside Plan E remain byte-identical. Baseline exclude
 - Gemini evaluation on the new corpus, Atlas provisioning/egress, actual web/API behavior and deployed critical path.
 - Independent accuracy of sample coordinates, full new-source classifications/owner mappings, or three non-sample pairs.
 - Domain availability/qualifying registration, current event eligibility and submission.
+- Three.js rendering, GPU performance, frame-rate/latency targets, coverage UI and national/regional ingestion.
 - URL resolution establishes retrieval only; it does not establish page permissions or substantive completeness.

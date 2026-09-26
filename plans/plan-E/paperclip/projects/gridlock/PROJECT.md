@@ -41,10 +41,11 @@ The goal is a planning intelligence product, not just a six-pair map. Treat the 
 | Stage | Experience / ambition | Dependency and release gate | Owner |
 |---|---|---|---|
 | **R0 — Trust the result, hours 0–8** | A judge can trace the exact sample results back to endpoints and dates. Approved source manifest, owner mappings, contracts, Atlas and first Gemini extraction work. | Six exact matches, 19 exclusions; no ambiguous pages enter Gemini; Atlas read/write and model call succeed. | Lead + QA + data |
-| **R1 — Competition core, hours 8–20** | Browse two utilities, find geographic overlaps, inspect source evidence, see grounded Gemini work and export a coordination card. Public corpus extends beyond the sample. | Core definition of done, reviewed featured records, source coverage ledger, current/historical separation. | Geo + Gemini + frontend |
-| **R2 — Ambitious hackathon target, hours 14–24** | A **plan-change watchlist** shows the verified DESC date change and whether changed inputs alter a pair's priority. A **coordination scenario drawer** lets a planner choose alternative in-service milestones, preview resulting day gaps and compare optional sourced mobilization assumptions without overwriting the published plan. A **coverage explorer** reveals where missing locations prevent analysis. | R1 integrated by hour 18; QA validates original vs scenario labels, version attribution and deterministic recomputation. New UI freezes at hour 24. | Data + geo + frontend, lead integrates |
-| **R3 — Exceptional stretch, only if R2 passes by hour 22** | Add a third verified utility from approved public tables and compare every selected cross-utility pair; group pairwise opportunities into a meeting agenda. Show an on-demand refresh preview with added/changed/removed project versions. | Owner/source review completed; no changes to the canonical pair rule; bounded workload and QA available before freeze. At hour 22 choose at most one stretch feature. | CEO selects; data + lead + QA |
-| **R4 — Product after the event** | Scheduled filing monitoring, a user-approved notification digest, corridor geometry alongside sponsor centers, actual construction-window evidence, resource compatibility and multi-project schedule/cost optimization. Planners review changes and collaborate with an audit trail. | Reliable ingestion over multiple refreshes; public geometry and real schedule/resource evidence; account/permission model; validated assumptions and user research. | Future roadmap; not seeded as hackathon tasks |
+| **R1 — Competition core, hours 8–20** | Open a U.S. discovery map, enter the Southeast and inspect two reviewed GA/SC utilities. Click **Reveal time** to lift exact in-service milestones into a Three.js date axis above their geographic centers. Keep map/list, source evidence, visible Gemini work and export. | Golden math, reviewed featured records, Atlas-backed reads and source coverage ledger pass. The signature date view and accessible 2D fallback both work; unreviewed states are explicitly labeled. | Geo + Gemini + frontend |
+| **R2 — Ambitious hackathon target, hours 14–24** | Animate a verified filing revision; drag a hypothetical milestone while preserving a ghost of the published date; update its day gap and rank. Expand approved Southeast inventory toward 3–5 utilities and 100–300 extracted records, with 20–40 records reviewed for owner/date and 10–20 located projects. | R1 integrated by hour 18. Expansion targets are conditional on approved sources, not minimum fabricated counts. Date drag cannot alter geography. All featured pairs reviewed; freeze features at hour 24. | Data + geo + frontend |
+| **R3 — Exceptional stretch, selected at hour 22** | Choose one: add a reviewed second regional pilot outside the Southeast, or build a multi-utility coordination agenda from accepted pairs. A national flyover highlights only real ingested data. | R2 passes by hour 22; one prepared source/feature fits remaining QA time. A source link without reviewed records is catalog coverage only. | CEO selects; data + lead + QA |
+| **R4 — National rollout after the event** | Add source-specific ingestion across U.S. planning regions and individual utilities; cover all 50 states plus DC, with separate Alaska/Hawaii views. Regional source inventory, filing refreshes, cross-boundary match discovery and a national opportunity index remain traceable to public evidence. | Two reviewed utilities per promoted pilot; source/owner/date/geometry review, duplicate control and boundary-complete spatial retrieval. Nationwide coverage is declared only against an explicit source inventory. | Future source, platform and QA work |
+| **R5 — National coordination platform** | Planners subscribe to reviewed changes, build shared agendas, compare sourced scenarios and eventually investigate corridor geometry, resource availability and schedule optimization. | Permissioned collaboration, sustained refresh validation, actual construction/resource data and validated optimization assumptions. Public-only baseline remains intact. | Future product work; outside 36 hours |
 
 ### What makes the ambition useful
 
@@ -53,19 +54,61 @@ The goal is a planning intelligence product, not just a six-pair map. Treat the 
 - **Scale should expose uncertainty.** More utilities and documents increase the opportunity set, but unresolved ownership, CEII status and locations remain in the coverage ledger. The watchlist must not quietly turn extraction guesses into accepted facts.
 - **A meeting agenda is not proof of joint feasibility.** A group of related pairwise matches may contain projects more than 25 miles apart from each other. Show every supporting pair and its own distance; never imply all members qualify as one geographic overlap.
 
-The executable acceptance scope is R0–R1 plus the verified filing comparison. R2 is the desired competition finish, with explicit gates; R3 is one optional stretch. R4 supplies the larger product story. The hour-by-hour plan protects a usable release while giving the team a concrete ambitious target.
+The executable acceptance scope is R0–R1 plus the verified filing comparison. R2 is the desired competition finish, with explicit gates; R3 is one optional stretch. R4–R5 supply the national product roadmap. The hour-by-hour plan protects a usable release while giving the team a concrete ambitious target.
+
+### Geographic scope: United States → Southeast → reviewed projects
+
+“America” means the **United States: 50 states plus DC** for this roadmap. The initial viewport is the contiguous U.S.; Alaska and Hawaii have explicit navigation/insets. Those screen placements never enter distance calculations. Canada, Mexico and U.S. territories are future scope decisions. The national frame can ship in 36 hours; nationwide source ingestion and validation are R4.
+
+Our first **Southeast product lens** is GA, SC, NC, FL, AL, MS, TN and KY. This is an explicit product grouping, not an official regulatory or transmission-planning boundary. Start with GA/SC, then prioritize NC/SC, then GA/AL or TN border areas according to approved source availability. State borders are navigation aids: match different verified utilities even within a state and across planning-region boundaries. Do not require projects to be in the same viewport or planning region to become candidates.
+
+| Layer | What ships / what qualifies | What users see |
+|---|---|---|
+| National discovery | State navigation, source catalog and evidence-coverage status. R1 can have reviewed data only in GA/SC. | **Not inventoried**, **Source found**, **Approved/extracted**, or **Reviewed projects**, with last review and source-version counts. No fake project markers in unreviewed areas. |
+| Southeast rollout | Inventory approved source families; 3–5 utilities and 100–300 extracted records are R2 targets, conditional on quality. | Actual extracted, owner/date-reviewed, located, future/historical and unresolved counts per utility and source scope. “No reviewed data” is different from zero matches. |
+| GA/SC proof | DESC plus verified Georgia Power records from approved sources; exact golden test stays separate. | Fully traceable featured pairs, genuine Gemini work and reproducible center/distance/date calculations. |
+| Regional expansion | Candidate owner families include Duke Carolinas/Progress, Santee Cooper, TVA and utilities whose records appear in Southern Company planning material, after source and legal-owner review. | Candidate names stay in the source catalog until admitted; parent companies and report publishers are not substituted for project owners. |
+
+The [SERTP public library](https://www.southeasternrtp.com/reference_library.cshtml) helps locate regional material, but SERTP is neither one utility nor a complete U.S./Southeast data feed. Its [home page](https://www.southeasternrtp.com/) describes participating organizations and a planned SCRTP transition; do not assume that transition has already completed. Use explicit source-region and effective-date metadata.
+
+**Source review finding:** the library labels the [2026 preliminary report](https://www.southeasternrtp.com/docs/general/2026/2026_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf) Non-CEII, while the retrieved text contains CEII headings. This is an unresolved classification conflict; keep that report quarantined for project ingestion until resolved. No project facts from it are adopted in this spec. A filename cannot waive the sponsor exclusion.
+
+For national pilots, [PJM's RTEP development page](https://www.pjm.com/planning/rtep-development) and [CAISO's transmission-planning page](https://www.caiso.com/generation-transmission/transmission/transmission-planning) are verified discovery entry points. These links establish where research starts, not approved projects or completed connectors. Subsequent regions need their own official sources and public-status review; an ISO/RTO report's publisher is not automatically the project owner. Keep proposed, approved, canceled and in-service statuses separate, and never treat an interconnection queue as a committed construction plan.
+
+### National ambition with explicit evidence gates
+
+At national scale, count unique project versions and canonical pairs, deduplicate the same asset appearing in utility and regional filings, and record every source's scope and freshness. Do not rank regions by raw match counts as though ingestion coverage were equal. Regional shading represents **our evidence coverage**, not grid health, congestion or economic benefit.
+
+The small hackathon corpus still uses canonical all-pairs comparison. R4 introduces bounded spatial candidate retrieval with independently verified recall at the 25-mile boundary and across region seams before replacing all-pairs. Keep original geographic coordinates for Alaska/Hawaii; flag antimeridian-crossing endpoint cases for an explicit center-rule review rather than silently applying a misleading midpoint. The sponsor rule version and six golden results remain unchanged.
+
+Feature-level requirements and validation are in [the scope specification](../../references/specs/features/national-southeast-3d/requirements.md); [mission](../../references/specs/mission.md), [stack](../../references/specs/tech-stack.md) and [roadmap](../../references/specs/roadmap.md) capture the durable decisions.
 
 ## 3. What the judges use
 
 ### Four screens, one coherent workflow
 
-**Overview:** utility selectors, explicit analysis date, future/historical toggle, source versions and coverage counts. Default production view requires two verified owners, reviewed locations and exact in-service dates on or after the analysis date. Unknown-date and tentative-location records remain available under clearly labeled filters. Historical fixture mode is separate and conspicuous.
+**Overview:** U.S. → Southeast → reviewed project navigation, explicit coverage status for each region, utility selectors, explicit analysis date, future/historical toggle, source versions and coverage counts. Default production view requires two verified owners, reviewed locations and exact in-service dates on or after the analysis date. Unknown-date and tentative-location records remain available under clearly labeled filters. Historical fixture mode is separate and conspicuous.
 
-**Map and ranked list:** two utility colors, project centers, selected pair connector, mileage and date-gap columns. Map selection and table selection stay synchronized. A connector represents center-to-center distance, not a transmission route. Filters narrow existing geographic overlaps; they never turn distant projects into overlaps. An accessible table works when map tiles fail.
+**Map and ranked list:** MapLibre with a Three.js date layer, distinct utility colors, project centers, selected pair connector, mileage and date-gap columns. Map selection and table selection stay synchronized. A connector represents center-to-center distance, not a transmission route. Filters narrow existing geographic overlaps; they never turn distant projects into overlaps. An accessible table works when map tiles fail.
 
 **Evidence drawer:** original names, native IDs, raw owner codes, both endpoints, accepted/rejected location evidence, source document/page, raw date text, precision, project versions and supersession. Unknowns read “Not published” or “Needs review.” Show one-endpoint centers explicitly. Review decisions include author, reason and time.
 
 **Coordination card:** deterministic pair facts, Gemini's supported summary, source-linked possible shared activities and unanswered questions. Export projects and overlaps as CSV plus a printable card. Optional impact inputs are labeled user scenarios, never claimed realized savings. A compact old/new filing comparison lives in the drawer, not a separate large product.
+
+### Signature Three.js interaction
+
+1. **Discover:** show the national evidence map and fly into the reviewed GA/SC area. Unreviewed areas stay neutral and selectable with a source-status explanation.
+2. **Reveal time:** a selected pair's markers rise above their true centers on a shared vertical date axis. Ground anchors stay fixed. Label “Height = in-service date; not elevation or construction duration.” Keep the original distance and date-gap badges visible.
+3. **Understand:** in historical fixture mode, contrast 4.09 miles / 3,074 days against 5.65 miles / 152 days. A connector is a relationship, not a power line or energy flow.
+4. **Explore (R2):** drag a hypothetical marker vertically or use a keyboard/date input; preserve the published ghost marker and show assumption labels. Recompute only permitted scenario values; unchanged locations mean unchanged geographic eligibility. Reset restores the source values exactly.
+5. **Replay (R2):** move between verified filing versions with old/new dates and source pages visible. Gemini summarizes accepted changes and drafts the coordination questions. Unknown removals are not automatically cancellations.
+6. **Act:** export a source-linked card or, in the agenda stretch, a set of individually qualified pairs.
+
+Rendering convention: `z_visual = 1000 * (exact_date - scene_epoch).days / 365.25`. Units are exaggerated display meters, never real elevation. Use a fixed, labeled epoch per scene; the golden fixture epoch is 2023-01-01. The date axis uses actual calendar labels. Keep the same scale during comparisons and drag. Unknown/partial dates stay in an “Exact date unknown” tray, not at a fabricated height; a user's hypothetical exact date may be previewed only as an assumption. Camera position, zoom and height cannot feed the matcher.
+
+Use direct Three.js inside a MapLibre custom layer sharing its camera/WebGL context; load only on the client and pin compatible tested versions. The [official MapLibre example](https://maplibre.org/maplibre-gl-js/docs/examples/add-a-3d-model-using-threejs/) demonstrates this integration. Limit detailed date geometry to selected/local records, suppress unselected connectors, and aggregate overview markers from real records. Do not add a second map engine, photorealistic substations or an invented national grid network. Three.js needs no additional API key.
+
+QA targets on the declared demo laptop/browser: at least 30 FPS during a 10-second orbit of the maximum loaded hackathon scene (test up to 300 real or explicitly labeled synthetic performance records); no more than 250 ms for local selection feedback after data is loaded. These are future measured acceptance targets, not current benchmark results. Reduced-motion mode removes flyovers/lifts; WebGL failure preserves the complete 2D/table workflow. Falling back is honest but does not count as shipping the promised 3D signature feature.
 
 ### Definition of done
 
@@ -75,6 +118,7 @@ The executable acceptance scope is R0–R1 plus the verified filing comparison. 
 - Every featured non-sample pair is independently reviewed from approved public evidence. Sparse results are acceptable; fabricated results are not.
 - Atlas is the active database behind the deployed UI. Gemini performs real extraction and visible coordination work.
 - CSV, evidence, empty states, service failure states and the main keyboard flow work.
+- The national discovery frame distinguishes unreviewed coverage from zero matches; the GA/SC date-lift view preserves exact facts and has reduced-motion/2D fallback. Regional and national rollout claims reflect actual reviewed source scope.
 - Human confirms the event's final rules and domain eligibility, obtains the domain, and authorizes publication/submission. HTTPS and track evidence are then checked during implementation.
 
 ## 4. Source policy and research scope
@@ -156,10 +200,12 @@ MongoDB Atlas: sources / projects / matches / runs / reviews / briefs
                                               |
 Next.js server routes + native MongoDB driver + server-side Gemini briefs
                                               |
-React UI + MapLibre + OpenFreeMap --> HTTPS application + qualifying domain
+React UI + MapLibre + Three.js date layer + OpenFreeMap --> HTTPS + qualifying domain
 ```
 
 **One Next.js application**, TypeScript and schema validation; **one Python batch pipeline** for PDF processing and deterministic matching. This retains B's contracts and workflow while avoiding a separate Express deployment and leveraging A's PDF approach. Shared JSON Schemas and canonical fixtures bridge Python and TypeScript; one canonical Python matcher produces stored results, and the browser never independently decides eligibility. The technical lead owns schema and lockfile changes. Pin tested dependencies during implementation.
+
+Keep presentation state (camera, selected region, date-axis epoch, hypothetical dates and ghosts) separate from published project records and canonical matches. Add owner aliases and legal-owner evidence, source planning-region IDs, source scope/freshness and coverage status to the shared schema; state membership may be multi-valued for cross-border projects. No inferred state or utility-territory geometry is stored as fact. Three.js renders Atlas-backed accepted values and never becomes a second matcher.
 
 Use the supported Google Gen AI SDK in each environment that calls Gemini. Choose an available stable model with tested PDF and structured-output support, store its exact ID in `GEMINI_MODEL`, and record prompt/schema/model versions per run. No speculative model name is embedded in the package. [Gemini document processing](https://ai.google.dev/gemini-api/docs/document-processing), [structured output](https://ai.google.dev/gemini-api/docs/structured-output).
 
@@ -255,7 +301,7 @@ An account is not automatically an API key. No keys are included in this package
 | Hosting account; `VERCEL_TOKEN` | Hosting account required to publish; CLI token optional | Human signs in to Vercel and connects the repository or deploys through UI; create token only for automated deployment. | Release engineer only. App secrets are configured on the host separately from agent inputs. |
 | Registrar account and qualifying domain | Required for domain track; **no registrar API key needed** | Human checks [MLH prizes](https://www.mlh.com/events/prizes) and [GoDaddy Registry offer](https://mlh.link/GoDaddyRegistry), confirms ShellHacks eligibility and obtains qualifying domain through the stated registrar. | Human purchases/redeems, controls DNS and confirms registration evidence. Release supplies exact DNS records from host. |
 | MLH/Devpost/event submission account | Yes for submission | Human uses ShellHacks' actual submission link and selects eligible tracks. | Human submits team/project and accepts terms. No Devpost automation token needed. |
-| MapLibre / OpenFreeMap | No key | Follow [OpenFreeMap quick start](https://openfreemap.org/quick_start/); preserve attribution. | Browser basemap; no paid map API required. |
+| Three.js / MapLibre / OpenFreeMap | No key | Follow [OpenFreeMap quick start](https://openfreemap.org/quick_start/); preserve attribution. | Browser basemap; no paid map API required. |
 | Cloudflare, MapTiler, geocoding vendor, OpenAI, Atlas Admin API | No | Not part of the baseline. | Add only if a concrete need is approved; none is needed to satisfy the requested tracks. |
 
 Plain configuration: `GEMINI_MODEL`, `MONGODB_DB=gridbridge`, `SOURCE_DOCS_DIR` pointing to repo `docs`, `ANALYSIS_DATE`, host-selected coding model, and deployment URL. `PAPERCLIP_*` runtime context is supplied by Paperclip. Do not manually share another agent's credential. The portable sidecar declares only role-specific inputs; machine paths, secret bindings and model selection are configured after import.
@@ -304,7 +350,7 @@ The package uses `schema: agentcompanies/v1`, local skill shortnames, project ow
 
 ### 10.4 Kickoff
 
-Human explicitly starts `kickoff` after accounts, source handling, scope and spend are settled. CEO creates dependency links from PROJECT.md, logs the analysis date and limits, then releases `contracts`, `source-audit` and `golden-reference`. Frontend and Gemini work start from approved contracts/fixtures without waiting for all geolocation. The technical lead reviews interface changes; QA signs off independent evidence. CEOs and specialists use the supplied `paperclip-work` procedure for checkout, progress, blockers and completion.
+Before launch, resolve the active-root-spec handoff in specs/INTEGRATION.md with the specification owner; do not start this company against conflicting workspace instructions. Human explicitly starts `kickoff` after accounts, source handling, scope and spend are settled. CEO creates dependency links from PROJECT.md, logs the analysis date and limits, then releases `contracts`, `source-audit` and `golden-reference`. Frontend and Gemini work start from approved contracts/fixtures without waiting for all geolocation. The technical lead reviews interface changes; QA signs off independent evidence. CEOs and specialists use the supplied `paperclip-work` procedure for checkout, progress, blockers and completion.
 
 The app must keep serving after Paperclip is stopped; Paperclip is the build manager. Its own operational database is separate from the application's required Atlas database.
 
@@ -317,24 +363,24 @@ Hours are elapsed from authorized kickoff. An hour row is a milestone, not an in
 | 0–1 | Human tests runtimes, import, secrets and budget; CEO records kickoff and dependency links. |
 | 1–2 | Lead publishes first contract; data audits source classifications; QA independently calculates golden fixture. |
 | 2–3 | Lead finalizes schemas/fixtures; data maps owners; QA confirms six pairs and 19 nonmatches. |
-| 3–4 | Release checks host-to-Atlas networking and domain eligibility; Gemini starts approved-page extraction; frontend scaffolds fixture map/table. |
+| 3–4 | Release checks host-to-Atlas networking and domain eligibility; Gemini starts approved-page extraction; frontend scaffolds national navigation and fixture map/table. |
 | 4–5 | Data builds approved page manifest; Gemini validates first schema outputs; frontend detail drawer. |
 | 5–6 | Lead creates Atlas schema/index/load path; data labels reference rows; geo starts endpoint candidate review. |
 | 6–7 | Lead read API against Atlas; geo records accepted/rejected candidates; Gemini extraction retries/citation validation. |
 | 7–8 | Data reviews extraction; frontend connects read API; geo resolves prioritized border endpoints. |
 | 8–9 | Geo implements canonical matcher; Gemini produces evaluation counts; lead checks idempotent versioned loads. |
-| 9–10 | Frontend displays ranked pairs; data expands real public corpus; QA checks extraction failures. |
+| 9–10 | Frontend builds Three.js selected-pair layer and displays ranked pairs; data expands real public corpus; QA checks extraction failures. |
 | 10–11 | Geo verifies centers/precision; Gemini builds grounded briefs; release prepares protected deployment settings. |
 | 11–12 | Data inventories newer sources; lead connects brief storage; CEO reviews current two-utility coverage gate. |
-| 12–13 | Human resolves any CEII/owner source questions; geo reviews non-sample candidates; frontend shows unknown states. |
+| 12–13 | Human resolves any CEII/owner source questions; geo reviews non-sample candidates; frontend adds fixed date axis, lift and unknown-date tray. |
 | 13–14 | Data links old/new DESC ID; Gemini validates briefing fact IDs; QA audits first featured pair. |
-| 14–15 | Frontend adds filing diff and review evidence; lead tests API bounds; geo publishes match/rank driver records. |
+| 14–15 | Frontend integrates date lift, source drawer and filing-diff data; lead tests API bounds; geo publishes match/rank driver records. |
 | 15–16 | QA reviews candidate pairs independently; Gemini fixes observed extraction/citation failures; data closes coverage ledger. |
 | 16–17 | Frontend implements CSV/print card; lead integrates; release performs first authorized staging deployment. |
-| 17–18 | QA tests historical/future separation and failure states; geo optional transparent impact inputs; data resolves high-value gaps. |
-| 18–19 | Frontend makes Gemini input/output and scenario labels visible; lead fixes integration defects; release tests TLS/domain configuration. |
+| 17–18 | QA tests historical/future separation and failure states; geo validates hypothetical-date preview and optional impact inputs; data resolves high-value gaps. |
+| 18–19 | Frontend adds R2 date drag/ghosts and Gemini evidence; lead fixes integration defects; release tests TLS/domain configuration. |
 | 19–20 | QA tests complete page-to-pair-to-export flow; Gemini runs bounded live-call rehearsal; CEO drafts supported track claims. |
-| 20–21 | Data/geo finalize chosen opportunities; frontend accessibility pass; lead confirms stable active dataset promotion. |
+| 20–21 | Data/geo finalize Southeast coverage; frontend measures 3D performance and accessibility; lead confirms stable active dataset promotion. |
 | 21–22 | QA checks all featured facts/owners/citations; release verifies secrets are absent from client output; CEO applies cut order. |
 | 22–23 | Fix blocking correctness bugs; rehearse source-page and filing-change interactions; preserve redacted evidence logs. |
 | 23–24 | Integrated acceptance candidate; CEO confirms scope. **Feature freeze at hour 24.** |
@@ -353,7 +399,7 @@ Hours are elapsed from authorized kickoff. An hour row is a milestone, not an in
 
 ### Cut order and protected core
 
-At hour 12, cut wide-area research beyond the defined border inventory if quality is slipping. At hour 20, cut R3 stretch first, then optional cost scenarios, then hypothetical-date controls, then cosmetic animations, then expanded diff UI (retain the verified old/new card). At hour 24, stop all new features. Live Gemini regeneration may fall back to a labeled previously generated result, but actual Gemini extraction/brief work and its evidence remain required. Never cut the golden checks, source/owner review, strict overlap rule, Atlas-backed reads, usable map/list, two-utility evidence, visible Gemini work or required domain/submission tasks. A missing core item is an open requirement, not a successful cut.
+At hour 12, stop expanding regional ingestion if the GA/SC evidence gate is slipping; retain the honest national discovery catalog. Reserve the existing frontend hours for selected-pair date lift before R2 interactions. No extra always-on agent is added. At hour 20, cut R3 stretch first, then optional cost scenarios, then regional expansion beyond the reviewed two-utility core, then hypothetical-date controls, then expanded filing animations and cosmetic effects, then expanded diff UI (retain the verified old/new card). At hour 24, stop all new features. Live Gemini regeneration may fall back to a labeled previously generated result, but actual Gemini extraction/brief work and its evidence remain required. Never cut the golden checks, source/owner review, strict overlap rule, Atlas-backed reads, usable map/list with the promised selected-pair date lift and its fallback, two-utility evidence, visible Gemini work or required domain/submission tasks. A missing core item is an open requirement, not a successful cut.
 
 ## 12. Human tasks and risk handling
 
@@ -373,15 +419,15 @@ At hour 12, cut wide-area research beyond the defined border inventory if qualit
 
 ## 13. Two-minute pitch and track evidence
 
-**0:00–0:20:** “Utilities publish years of construction plans, but nearby work can remain invisible to the people coordinating crews and equipment. GridBridge turns those public plans into a shortlist a planner can audit.”
+**0:00–0:20:** Open the U.S. coverage view and enter the Southeast, naming what is actually reviewed. “Utilities publish years of construction plans, but nearby work can remain invisible to the people coordinating crews and equipment. GridBridge turns those public plans into a shortlist a planner can audit.”
 
 **0:20–0:45:** Open both utilities on the map and a reviewed pair. “This distance comes from the sponsor's endpoint-center rule. These are in-service milestones, not promised construction windows. Here are the original pages and the location evidence.” Show real counts from the finished build; never replace this with an invented opportunity count.
 
-**0:45–1:05:** Switch to the labeled sample comparison. “The closest pair is 4.09 miles apart, but its milestones differ by 3,074 days. This 5.65-mile pair has a 152-day gap. We preserve both facts instead of treating every nearby project as equally useful.”
+**0:45–1:05:** Switch to the labeled sample comparison and click Reveal time; the markers rise on the date axis. “The closest pair is 4.09 miles apart, but its milestones differ by 3,074 days. This 5.65-mile pair has a 152-day gap. We preserve both facts instead of treating every nearby project as equally useful.”
 
 **1:05–1:30:** Show an approved page and Gemini's structured extraction, then the coordination brief. “Gemini reads the plan and drafts the questions a planner should ask. The distances and dates come from deterministic code, and every factual claim links back to evidence.”
 
-**1:30–1:50:** Show filing change and card export. “Plans change, so Atlas preserves document versions, reviewed projects and match results. This card gives both planners the evidence and unanswered questions they need for a useful conversation.”
+**1:30–1:50:** Play the verified filing change or a clearly hypothetical date move if R2 shipped, then export the card. “Plans change, so Atlas preserves document versions, reviewed projects and match results. This card gives both planners the evidence and unanswered questions they need for a useful conversation.”
 
 **1:50–2:00:** Point to the qualifying domain and close. “We help utilities find where coordination is worth investigating, with enough evidence to trust the next step.”
 
