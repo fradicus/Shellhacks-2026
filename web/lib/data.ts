@@ -36,7 +36,9 @@ export interface MatchQuery {
   limit?: number;
 }
 
-export const isFixtureMode = () => process.env.DATA_MODE === "fixture";
+/** Fixture mode is refused on a Vercel production deployment even if DATA_MODE is set there by mistake:
+ * production then reads the API (Atlas) and shows "unavailable" rather than sample data. */
+export const isFixtureMode = () => process.env.DATA_MODE === "fixture" && process.env.VERCEL_ENV !== "production";
 
 /** Analysis date for the future/historical split. */
 export function analysisDate(): string {
