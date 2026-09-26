@@ -23,9 +23,10 @@ COLLECTIONS = ["sources", "projects", "matches", "briefs", "extractions", "revie
 CONFIDENCE_RANK = {"high": 0, "medium": 1, "low": 2}
 
 
-def _records_in(obj: Any) -> list[dict] | None:
-    """A file holds a JSON array of records, or one record (an object with `_id`). Anything else isn't loadable."""
-    if isinstance(obj, list) and all(isinstance(r, dict) for r in obj):
+def _records_in(obj: Any) -> list | None:
+    """A file holds a JSON array of records, or one record (an object with `_id`). Other objects (summaries) are
+    skipped; non-object entries inside an array come back as-is so collect() reports them as errors."""
+    if isinstance(obj, list):
         return obj
     if isinstance(obj, dict) and "_id" in obj:
         return [obj]
@@ -52,6 +53,9 @@ def collect(root: Path) -> tuple[dict[str, list[dict]], list[str], list[str]]:
                 skipped.append(rel)
                 continue
             for i, rec in enumerate(recs):
+                if not isinstance(rec, dict):
+                    errors.append(f"{rel}[{i}]: not a JSON object ({type(rec).__name__})")
+                    continue
                 if coll == "locations" and "_id" not in rec:
                     rec = {**rec, "_id": f"{rec.get('project_key')}#{rec.get('endpoint_index')}#{i}"}
                 try:
