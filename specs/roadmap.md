@@ -11,7 +11,7 @@ lanes:
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
   claude-local: [F00, F05, F11, F14, F16, F19, F21]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F37]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37]
 frozen_paths:
   - schemas/
   - scripts/
@@ -100,10 +100,18 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F31 | National explorer with state/county/region filters | B | frontend-engineer | 5 | F00 | never |
 | F32 | Optional AI app controls, separate prototype branch | B | gemini-engineer | 5 | F31 | allowed |
 | F37 | 3D History page and sourced project/contract events (spec only; implementation pending) | B | frontend-engineer | 6 | F19 | allowed |
+| F33 | Verified EIA directory and evidence reconciliation | A | data-researcher | 6 | F00 | never |
+| F34 | Environmental evidence, current conditions and truck route adapters | A | geo-engineer | 6 | F00 | never |
+| F35 | Actual job outcomes, evaluated duration and delay estimates | B | technical-lead | 6 | F00 | never |
+| F36 | Field operations planning desk | B | frontend-engineer | 6 | F00 | never |
 
 ## Authorized follow-on: national discovery
 
 The user's 2026-09-26 follow-on authorizes C11/F30/F31 and a separate F32 branch after the first run. Read [C11](decisions/C11-national-follow-on.md) for the boundary: Plans B/D guide traceability and interaction, the existing sponsor math stays canonical, and Census geography is not nationwide project coverage. The original elapsed gates and run start remain historical; they do not cancel this new request. F30 and F31 may proceed in separate delegated worktrees against the frozen national schema contract; F31 cannot claim integrated data delivery until F30's validated snapshot is available. The root coordinator reviews shared integration and leaves the independent MongoDB/search/embedding worker's files alone. Old F08/F18 drafts remain paused.
+
+## Authorized follow-on: verified field operations
+
+The user's later sponsor Q&A transcript and board photo authorize C15/F33–F36 after the original run gates. [C15](decisions/C15-verified-operations.md) governs source reconciliation, EIA scope, annual AlphaEarth context, current conditions, truck restrictions, and real outcome evaluation. Workers may build the independent modules concurrently against the C15 contract; integrated acceptance requires all applicable artifacts and honest unavailable states. The root owns C15/shared integration and F35. F33 is the data researcher, F34 the geospatial engineer, F36 the frontend engineer. Each uses a separate worktree and independent review. Existing F06/F12/F19/F20 and C13/C14 work on other computers remains with its current owners. F32 remains an optional separate branch. Credentials and actual completed-job data are prerequisites for live results, not permission to invent them.
 
 F18 starts at 0:00 alongside F00 and merges
 status updates as `[F18] status HH:MM` parts. At the user's expedited-completion request, F18 may publish its final report, `STOP` and `changes/F18.md` before the scheduled `report` gate once all non-stretch implementation features and core corrections are verified complete (or an allowed cut is explicitly recorded), the final integration checks pass, and deferred live services are stated clearly. Otherwise the scheduled report gate remains the deadline. F18 itself is the final reporting step; optional F17 need not start. This does not waive merge checks or permit an unresolved core defect to be called complete.
