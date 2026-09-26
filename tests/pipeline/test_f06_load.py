@@ -201,7 +201,7 @@ BASE = [synth_loc(0, 0.0), synth_loc(1, 2.0)]
 
 @pytest.mark.parametrize("locs, error", [
     (BASE, None),
-    (BASE + [synth_loc(0, 4.0, n=1)], "2 accepted candidates for 'DESC:DESC_3' endpoint 0"),
+    (BASE + [synth_loc(0, 4.0, n=1)], "2 accepted candidates for 'DESC:DESC_3@sperry-sample' endpoint 0"),
     (BASE + [synth_loc(2, 4.0)], "endpoint_index 2"),
     (BASE + [synth_loc(0, 4.0, "rejected", n=1)], None),  # F09 keeps rejected alternatives as evidence
     (BASE + [synth_loc(2, 4.0, "rejected")], None),
@@ -226,6 +226,71 @@ def test_ambiguous_endpoints_block_activation_and_keep_previous(qa_root):
     assert load(db, *collect(qa_root)[:2], "bad") == 1
     assert db.meta.find_one({"_id": "active"})["dataset"] == "good"
     assert db.projects.find_one({"dataset": "good"})["center"]["lon"] == 1.0
+
+
+# --- #47: a location is evidence for one filing version, never for every version of its project_key ------------
+
+def versions(active_source="v2"):
+    """Two filing versions of one synthetic project; only `active_source` is active. Filed names stay on both."""
+    [p] = [p for p in load_json(FIX / "projects.json") if p["project_key"] == "DESC:DESC_3"]
+    base = {k: v for k, v in p.items() if k not in ("center", "geo", "location_confidence")}
+    return [{**base, "_id": f"DESC:DESC_3@{sid}", "active": sid == active_source,
+             "source": {**base["source"], "source_id": sid}, "endpoints": [{"name": "Filed", "norm": "FILED",
+                                                                            "raw": "Filed Sub"}]}
+            for sid in ("v1", "v2")]
+
+
+def bound(index, lon, **fields):
+    return {**synth_loc(index, lon), "_id": f"qa#{index}#{fields.get('project_id', fields.get('source_id', 'legacy'))}",
+            **fields}
+
+
+def test_location_joins_only_its_declared_filing_version():
+    locs = [bound(0, 0.0, project_id="DESC:DESC_3@v2", source_id="v2"), bound(1, 2.0, project_id="DESC:DESC_3@v2")]
+    for order in (versions(), versions()[::-1]):  # record order can't change the binding
+        joined = {p["_id"]: p for p in join_projects(order, locs)}
+        assert joined["DESC:DESC_3@v2"]["center"] == {"lat": 0.0, "lon": 1.0, "basis": "two"}
+        old = joined["DESC:DESC_3@v1"]
+        assert old["center"] is None and old["geo"] is None and "endpoints" not in old
+        assert old["filed_endpoints"][0]["name"] == "Filed"
+
+
+def test_source_id_alone_names_the_version_and_inactive_versions_can_hold_evidence():
+    [old, new] = join_projects(versions(), [bound(0, 0.0, source_id="v1")])
+    assert old["_id"] == "DESC:DESC_3@v1" and old["center"]["basis"] == "one" and new["center"] is None
+
+
+def test_legacy_location_binds_to_the_only_active_version(tmp_path):
+    write(tmp_path, "data/projects/qa.json", versions())
+    write(tmp_path, "data/locations/qa.json", [synth_loc(0, 0.0)])  # no project_id / source_id, e.g. the fixtures
+    records, errors, _ = collect(tmp_path)
+    assert errors == [] and records["locations"][0]["project_id"] == "DESC:DESC_3@v2"
+    joined = {p["_id"]: p for p in join_projects(records["projects"], records["locations"])}
+    assert joined["DESC:DESC_3@v2"]["center"] is not None and joined["DESC:DESC_3@v1"]["center"] is None
+
+
+@pytest.mark.parametrize("projects, loc, error", [
+    (versions(), bound(0, 0.0, project_id="DESC:DESC_3@v9"), "unknown project 'DESC:DESC_3@v9'"),
+    (versions(), bound(0, 0.0, project_id="DESC:DESC_3@v2", source_id="v1"), "contradicts project 'DESC:DESC_3@v2'"),
+    (versions(), bound(0, 0.0, project_id="DESC:DESC_3@v2") | {"project_key": "DESC:OTHER"}, "contradicts project"),
+    (versions(), bound(0, 0.0, source_id="v9"), "unknown project 'DESC:DESC_3@v9'"),
+    ([{**v, "active": True} for v in versions()], synth_loc(0, 0.0), "has 2 active versions"),
+    ([{**v, "active": False} for v in versions()], synth_loc(0, 0.0), "has 0 active versions"),
+    ([], synth_loc(0, 0.0), "has 0 active versions"),
+])
+def test_inconsistent_or_unplaceable_binding_blocks_activation(tmp_path, projects, loc, error):
+    write(tmp_path, "data/projects/qa.json", projects)
+    write(tmp_path, "data/locations/qa.json", [loc])
+    records, errors, _ = collect(tmp_path)
+    assert len(errors) == 1 and error in errors[0] and records["locations"] == []
+    assert all(p["center"] is None for p in join_projects(records["projects"], [loc]))
+    assert load(mongomock.MongoClient().db, records, errors, "bad") == 1
+
+
+def test_accepted_uniqueness_is_per_filing_version(tmp_path):
+    write(tmp_path, "data/projects/qa.json", versions())
+    write(tmp_path, "data/locations/qa.json", [bound(0, 0.0, source_id="v1"), bound(0, 2.0, source_id="v2")])
+    assert collect(tmp_path)[1] == []
 
 
 # --- #38: audit verdicts set match.review_state ----------------------------------------------------------------------

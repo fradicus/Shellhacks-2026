@@ -13,7 +13,7 @@
    The 2dsphere index is on `geo`, not `center` (`center` is `{lat, lon}`, not GeoJSON).
 4. **Locations are joined into `projects.endpoints`** and not stored as their own collection. `center` comes from
    `core.center`, `location_confidence` is the weakest confidence among the endpoints used, and projects with no
-   locations keep any `center` they already had.
+   locations get `center: null` (decision 14).
 5. **Loaded folders:** `data/{sources,projects,locations,matches,briefs,extraction,review,coverage,versions}/`. A file
    is a JSON array of records or one object with `_id`; anything else (e.g. `data/matches/summary.json`) is skipped and
    listed. `data/fixtures/`, `data/osm/`, `data/owners/` are never loaded.
@@ -42,3 +42,13 @@
     id`. Runs: not dataset-namespaced, so read as stored via `handleDb` (no active dataset needed, so a failed first
     load still shows); latest by `started_at` desc then `_id` desc; public fields only (never `errors`); 404 when
     none. `started_at` has one-second resolution, so two runs in the same second fall back to `_id` order.
+14. **A location is evidence for one filing version (#47).** `join_projects` grouped locations by `project_key`, so a
+    superseded filing (`DESC:0167C-D@desc-2024`) inherited coordinates reviewed only for the current one. Now
+    `bind_locations` binds each location to `project_id`, or `<project_key>@<source_id>` when only `source_id` is
+    given (the project `_id` convention), and only that version gets the endpoint. The version must exist and agree
+    with `project_key`/`source_id`; a location naming neither (today's fixtures) binds to the key's *only* active
+    version. Zero or several active versions, an unknown version, or a contradiction are `collect()` errors and block
+    activation (no silent drop, no enrichment of every version). Accepted-candidate uniqueness (#35) is now per
+    `(project_id, endpoint_index)`, so two versions may each carry their own reviewed endpoint. Unlocated projects
+    now store `center: null` explicitly. Alternative rejected: join by key and only mark `active` versions, which
+    still lets an inactive version own evidence produced for another filing.

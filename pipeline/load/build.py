@@ -76,8 +76,10 @@ def collect(root: Path) -> tuple[dict[str, list[dict]], list[str], list[str]]:
             if r["_id"] in seen:
                 errors.append(f"{coll}: duplicate _id {r['_id']!r}")
             seen.add(r["_id"])
-    # A project has at most two endpoints, one accepted location each; rejected candidates are kept as evidence.
-    # core.center averages whatever it's given, so an extra accepted candidate would silently move the center.
+    records["locations"], bind_errors = bind_locations(records["projects"], records["locations"])
+    errors += bind_errors
+    # A filing version has at most two endpoints, one accepted location each; rejected candidates are kept as
+    # evidence. core.center averages whatever it's given, so an extra accepted candidate would silently move the center.
     accepted: dict[tuple[str, int], list[str]] = {}
     for loc in records["locations"]:
         if loc["confidence"] == "rejected":
@@ -85,21 +87,57 @@ def collect(root: Path) -> tuple[dict[str, list[dict]], list[str], list[str]]:
         if loc["endpoint_index"] not in (0, 1):
             errors.append(f"locations: {loc['_id']!r} is accepted with endpoint_index {loc['endpoint_index']}; "
                           "only 0 and 1 exist")
-        accepted.setdefault((loc["project_key"], loc["endpoint_index"]), []).append(loc["_id"])
-    for (key, index), ids in sorted(accepted.items()):
+        accepted.setdefault((loc["project_id"], loc["endpoint_index"]), []).append(loc["_id"])
+    for (pid, index), ids in sorted(accepted.items()):
         if len(ids) > 1:
-            errors.append(f"locations: {len(ids)} accepted candidates for {key!r} endpoint {index}: {sorted(ids)}")
+            errors.append(f"locations: {len(ids)} accepted candidates for {pid!r} endpoint {index}: {sorted(ids)}")
     return records, errors, skipped
 
 
-def join_projects(projects: list[dict], locations: list[dict]) -> list[dict]:
-    """Attach endpoints; compute center (pipeline/matches/core.center), weakest used confidence and a GeoJSON point."""
-    by_key: dict[str, list[dict]] = {}
+def bind_locations(projects: list[dict], locations: list[dict]) -> tuple[list[dict], list[str]]:
+    """Each location is evidence for exactly one filing version (#47): its `project_id`, or `<project_key>@<source_id>`
+    when only `source_id` is given. That version must exist and agree with the location's `project_key` (and
+    `source_id`). A legacy location naming neither binds to the key's only active version; with zero or several active
+    versions it can't be placed and is an error. Superseded filings never inherit the current filing's coordinates.
+    Returns the bindable locations with `project_id` filled in, plus one error per location left out."""
+    by_id = {p["_id"]: p for p in projects}
+    active: dict[str, list[str]] = {}
+    for p in projects:
+        if p["active"]:
+            active.setdefault(p["project_key"], []).append(p["_id"])
+    out: list[dict] = []
+    errors: list[str] = []
     for loc in locations:
-        by_key.setdefault(loc["project_key"], []).append(loc)
+        key, pid, sid = loc["project_key"], loc.get("project_id"), loc.get("source_id")
+        if pid is None and sid is not None:
+            pid = f"{key}@{sid}"
+        if pid is None:
+            versions = active.get(key, [])
+            if len(versions) != 1:
+                errors.append(f"locations: {loc['_id']!r} names no filing version and {key!r} has "
+                              f"{len(versions)} active versions")
+                continue
+            pid = versions[0]
+        p = by_id.get(pid)
+        if p is None:
+            errors.append(f"locations: {loc['_id']!r} is bound to unknown project {pid!r}")
+        elif p["project_key"] != key or (sid is not None and sid != p["source"]["source_id"]):
+            errors.append(f"locations: {loc['_id']!r} (project_key {key!r}, source_id {sid!r}) contradicts "
+                          f"project {pid!r}")
+        else:
+            out.append({**loc, "project_id": pid})
+    return out, errors
+
+
+def join_projects(projects: list[dict], locations: list[dict]) -> list[dict]:
+    """Attach each filing version's own endpoints (bind_locations); compute center (pipeline/matches/core.center),
+    weakest used confidence and a GeoJSON point. Unbindable locations are dropped here; collect() reports them."""
+    by_id: dict[str, list[dict]] = {}
+    for loc in bind_locations(projects, locations)[0]:
+        by_id.setdefault(loc["project_id"], []).append(loc)
     out = []
     for p in projects:
-        eps = sorted(by_key.get(p["project_key"], []), key=lambda e: (e["endpoint_index"], e["_id"]))
+        eps = sorted(by_id.get(p["_id"], []), key=lambda e: (e["endpoint_index"], e["_id"]))
         joined = dict(p)
         # Parsers (F01/F02) emit filed endpoint names under `endpoints`; keep them apart from located endpoints.
         if "endpoints" in joined:
@@ -109,7 +147,7 @@ def join_projects(projects: list[dict], locations: list[dict]) -> list[dict]:
             joined["center"] = center(eps)
             used = [e["confidence"] for e in eps if e["confidence"] != "rejected" and e.get("lat") is not None]
             joined["location_confidence"] = max(used, key=CONFIDENCE_RANK.__getitem__) if used else None
-        c = joined.get("center")
+        c = joined.setdefault("center", None)  # unlocated stays null and visible
         joined["geo"] = {"type": "Point", "coordinates": [c["lon"], c["lat"]]} if c else None
         out.append(joined)
     return out
