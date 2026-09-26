@@ -1,12 +1,12 @@
 # GridBridge build status
 
-Checkpoint: 2026-09-26 06:03 EDT. Analysis date: 2026-09-26.
+Checkpoint: 2026-09-26 06:07 EDT. Analysis date: 2026-09-26.
 
 - Runtime: local execution under the root specs. This Windows Codex session is `codex-local`; Eric Zhang's Claude session owns the app/bootstrap features. Feature draft PRs are the shared claims across computers.
-- Completed features on main: [F00 bootstrap](https://github.com/fradicus/Shellhacks-2026/pull/3), [F01 DESC register](https://github.com/fradicus/Shellhacks-2026/pull/5), [F05 map/list](https://github.com/fradicus/Shellhacks-2026/pull/6), [F06 loader/read API](https://github.com/fradicus/Shellhacks-2026/pull/8), [F07 independent QA](https://github.com/fradicus/Shellhacks-2026/pull/16), [F11 evidence/card](https://github.com/fradicus/Shellhacks-2026/pull/19), and [F14 filing changes](https://github.com/fradicus/Shellhacks-2026/pull/25). F18 continues reporting without a completion marker.
-- Main: [CI is running](https://github.com/fradicus/Shellhacks-2026/actions/runs/36234567855) at `5354acf`; the previous `684e270` main run passed. F02's Windows integration passes ruff, 107 pipeline tests, web lint/typecheck/fixture production build, spec ownership lint and feature diff checks (Node 24.19.0, Python 3.12.14). Only a green current branch/main will be merged.
+- Completed features on main: [F00 bootstrap](https://github.com/fradicus/Shellhacks-2026/pull/3), [F01 DESC register](https://github.com/fradicus/Shellhacks-2026/pull/5), [F02 Georgia register](https://github.com/fradicus/Shellhacks-2026/pull/20), [F05 map/list](https://github.com/fradicus/Shellhacks-2026/pull/6), [F06 loader/read API](https://github.com/fradicus/Shellhacks-2026/pull/8), [F07 independent QA](https://github.com/fradicus/Shellhacks-2026/pull/16), [F11 evidence/card](https://github.com/fradicus/Shellhacks-2026/pull/19), and [F14 filing changes](https://github.com/fradicus/Shellhacks-2026/pull/25). F18 continues reporting without a completion marker.
+- Main: [CI is running](https://github.com/fradicus/Shellhacks-2026/actions/runs/36234745831) at `ef6110c`; the previous `5354acf` main run passed. F02's final commit passed CI before merge, with ruff, 107 pipeline tests, web lint/typecheck/fixture production build, spec ownership lint and feature diff checks (Windows: Node 24.19.0, Python 3.12.14). Only a green current branch/main will be merged.
 - Run started 04:45 EDT; the 8-hour hard stop is 12:45 EDT. Freeze is 11:15 EDT and final reporting begins 12:15 EDT. No cuts made.
-- Current Windows Codex implementation feature: [F02 Georgia register](https://github.com/fradicus/Shellhacks-2026/pull/20), through independent source review and awaiting final integration. F03's Gemini engineer completed a read-only design review; implementation follows F02. F07 was explicitly transferred to and delivered by the Mac Codex session, whose expanded evidence/filing tests are in PR 26. Claude owns shared-contract/app work. No feature is assigned to two active workers.
+- Current Windows Codex implementation feature: [F03 Gemini extraction](https://github.com/fradicus/Shellhacks-2026/pull/33), following F02's completed merge and a read-only contract review. F07 was explicitly transferred to and delivered by the Mac Codex session, whose expanded evidence/filing tests are in PR 26. Claude owns shared-contract/app work. No feature is assigned to two active workers.
 
 ## Role and skill setup
 
@@ -18,8 +18,8 @@ Coding model selection is separate from the application's Gemini model. The coor
 |---|---|---|
 | CEO | Codex F18 | GPT-6 Astra |
 | Technical lead | Claude F00/F06; Codex F15/F17 | Remote Claude owner; GPT-5.6 Sol high for isolated Codex features |
-| Data researcher | Windows Codex F01/F02 | GPT-5.6 Sol high (F01 delivered, F02 started) |
-| Gemini engineer | Codex F03/F12 | GPT-6 Astra high |
+| Data researcher | Windows Codex F01/F02 | GPT-5.6 Sol high (both delivered) |
+| Gemini engineer | Codex F03/F12 | GPT-6 Astra high (F03 started) |
 | Geospatial engineer | Codex F04/F09/F10 | GPT-5.6 Sol high |
 | Frontend engineer | Claude F05/F11/F14/F16 | Remote Claude owner; F00 PR records `claude-opus-5-5` |
 | QA verifier | Mac Codex F07; Windows Codex F13 and bounded reviews | Windows reviews: GPT-6 Astra xhigh; Mac controls its runtime |
