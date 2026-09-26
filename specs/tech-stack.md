@@ -57,5 +57,8 @@ Before F00 merges, only F00 runs, and it creates these tools.
 
 Production without Atlas shows an explicit "database unavailable" state. It never silently serves fixtures.
 
+## C11 national extension
+The same Python/Next.js/MapLibre/MongoDB stack serves `/explore`. Additive national schemas in `schemas/national-*.schema.json` and F30 snapshots under `data/national/` keep legacy project enums and data unchanged. Use separate dataset-scoped `national_sources`, `national_projects`, optional `national_utilities` and `national_service_territory`, plus `national_runs` and `meta.national_active`; the existing load Action remains the sole Atlas writer. `python -m national.load` validates only without RW credentials. Public reference geography is independent of project database availability. `NATIONAL_DATA_MODE=snapshot` explicitly enables the committed regional snapshot in local/CI environments, is rejected on production Vercel, and is never a silent database fallback. F32 remains a separate prototype; the existing pipeline-only Gemini rule still applies to the delivered app.
+
 ## Credentials before the run
 Set `GEMINI_API_KEY` and a tested `GEMINI_MODEL` tonight for real F03/F12 extraction and briefs. Without them, offline coding/tests can proceed but Gemini integration remains incomplete. Atlas RW belongs only in GitHub Actions; RO goes to Vercel and the app/QA runtime before live integration. Offline CI needs no live Gemini/Atlas credentials. Local coding-tool authentication is separate from the product Gemini key. See [preflight.md](preflight.md) for the short checklist and both launch options.
