@@ -128,3 +128,16 @@ The roadmap names one `reporting_agent`. Every 30 minutes, that agent merges `re
 - time left and cuts made
 - blockers
 At the `report` gate, it writes `reports/final.md`: what shipped, what was cut, the open risks, and what the human should check first in the morning.
+
+## 11. Keep documentation aligned
+
+When a change affects behavior or product claims, its owner updates the relevant spec and acceptance criteria
+in the same PR, or opens the needed contract change for shared scope. Link the motivating evidence and decision
+for substantial new requirements. Do not turn an interview suggestion into a ready feature without an explicit
+scope and assignment. Potential ideas remain deferred until promoted by a decision.
+
+Preserve dated context notes; append corrections and later answers. Supersede changed decisions explicitly.
+Use the project's shared vocabulary and link volatile counts to producer artifacts or active-dataset evidence.
+Status and pitch updates must distinguish merged implementation, automated checks, verified live integration
+and observed user acceptance. Include the revision/time and inspect individual CI jobs, including optional failures.
+Existing feature ownership applies; documentation maintenance is not permission to edit another worker's files.

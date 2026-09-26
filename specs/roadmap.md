@@ -107,11 +107,29 @@ The user's 2026-09-26 follow-on authorizes C11/F30/F31 and a separate F32 branch
 F18 starts at 0:00 alongside F00 and merges
 status updates as `[F18] status HH:MM` parts. At the user's expedited-completion request, F18 may publish its final report, `STOP` and `changes/F18.md` before the scheduled `report` gate once all non-stretch implementation features and core corrections are verified complete (or an allowed cut is explicitly recorded), the final integration checks pass, and deferred live services are stated clearly. Otherwise the scheduled report gate remains the deadline. F18 itself is the final reporting step; optional F17 need not start. This does not waive merge checks or permit an unresolved core defect to be called complete.
 
-## Critical path
+## Sponsor-feedback follow-up: PM investigation
+
+[C16](decisions/C16-sponsor-context.md) integrates the sponsor panel and demo feedback into the mission and
+[PM acceptance scenario](followup.md). It authorizes this documentation reconciliation after the original run;
+it does not start a new autonomous feature run. Existing implementation assignments, C11/F30/F31, the separate
+F32 prototype and the operations claim in issue 97 retain their own boundaries.
+
+Next product milestone: a PM investigates one real project, checks nearby work, changes and evidence, and exports
+a useful follow-up packet. Required sequence: clarify claims, investigate a bounded location sample, expose useful
+freshness/history, verify the assembled deployed workflow, and observe a PM doing the task. Existing feature
+owners handle their paths after any gaps are explicitly scoped and claimed; no blanket reopening is implied.
+
+Treat equipment rental/subleasing, automatic dispatch, a new field-account product, predictive claims and a separate
+civic workflow as [potential work](followup.md#potential-work-do-not-implement), not ready features. The notes are
+context, not implementation permission. Record reason, decision and acceptance when promoting an idea.
+
+Feature completion markers continue to identify merged implementation. Reporting must separately show automated
+checks, live integration and user-task evaluation against a named revision. Check job-level CI conclusions; a
+successful workflow can contain a failed non-blocking browser job. See [documentation upkeep](context/README.md#keep-context-and-specs-aligned).
+
+## Original run critical path
 F00 → F01 + F02 (+F04) → F09 → F10 → F12, with F05 → F11 and F06 in parallel. If F09 is late at 4:30, geo
 narrows to the border-area projects (see F09 Defaults) rather than miss F10.
 
 ## Post-run (humans, morning)
 Read `reports/final.md`. Review `specs/decisions/*`, especially 000. Check the domain and the Devpost submission. Merge nothing overnight-generated that you haven't looked at into the event submission unless it's already on `main`.
-
-
