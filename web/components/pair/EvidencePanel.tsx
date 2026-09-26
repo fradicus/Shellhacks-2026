@@ -179,7 +179,7 @@ export function EvidencePanel({
                     <div>{fieldValue(p, f)}</div>
                     <details className={s.quote}>
                       <summary>
-                        <Cite c={cite(p, sources, p.source.source_id, evidence[f].page)} />
+                        <Cite c={cite(p, sources, p.source.source_id, evidence[f].page)} quote={evidence[f].quote} />
                       </summary>
                       <q>{evidence[f].quote}</q>
                     </details>

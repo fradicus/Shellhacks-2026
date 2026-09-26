@@ -19,6 +19,9 @@ cut: never
    - A link to `/impact?pair=<id>` (F17's route; it's a placeholder until F17 lands).
 2. `GET /api/export?type=matches|projects&view=`: a CSV with source and uncertainty columns. Prefix any cell starting with `= + - @` with `'`. Limit 5000 rows. It reads through the same active dataset (a server helper under `web/app/api/export/`).
 3. **Print:** a "Print card" button using `window.print()` and `@media print` CSS for a one-page card with citations. No PDF library.
+4. **Source peek (issue #123):** hovering or keyboard-focusing a citation shows, after about 300 ms, a small card with the
+   source title, the stored verbatim quote when one exists (never generated), and "Open page N ↗" only for linkable
+   DESC filings (Georgia stays page-number only, D2). CSS only, hover-capable devices only, hidden in print.
 
 ## Requirements
 - Every number shown has its source visible or one click away.

@@ -269,7 +269,6 @@ p.unknown {
 
 .panel {
   position: relative;
-  overflow: hidden;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-l);
@@ -283,6 +282,7 @@ p.unknown {
   position: absolute;
   inset: 0 0 auto;
   height: 2px;
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
   background: var(--unknown);
 }
 
