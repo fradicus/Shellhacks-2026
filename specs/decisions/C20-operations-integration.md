@@ -2,6 +2,8 @@
 
 Issue #97 coordinates C15/F33–F36. This shared integration belongs to the Windows root technical lead. It preserves the other computers' C14 search, C18 visual system, F19 time view and F37 historical-page work.
 
+Delivery is staged: package and validate the eight merged backend APIs first, so F36's own PR can run its UI checks through the shared workflow. Add the navigation entry in a C20 follow-on after the F36 page exists. The first integration PR does not claim the estimator screen is delivered.
+
 After the owned modules and page exist, add `/operations` navigation using the current shared visual system; trace the exact public verified-directory and environmental artifacts required by the deployed route handlers. Never package private actual-job histories, model candidates or synthetic test fixtures into public deployment assets. Outcome models remain explicitly configured external private files.
 
 Run verified-directory, operational-provider and outcome Node tests in the required CI check when their modules exist. Run F36 browser tests in the existing GitHub CI browser job, retaining the national, optional assistant and legacy tests. Check deployment traces after building. Local server launch remains prohibited by the earlier approval review; no alternate launcher is used.
