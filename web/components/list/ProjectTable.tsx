@@ -9,8 +9,9 @@ export function ProjectTable({ projects, superseded = 0 }: { projects: Project[]
   return (
     <details className={s.table}>
       <summary>
-        Current projects ({projects.length}), as a table
-        {superseded ? ` · ${superseded} older filing version${superseded === 1 ? "" : "s"} not shown` : ""}
+        {superseded
+          ? `Current projects (${projects.length}), as a table · ${superseded} older filing version${superseded === 1 ? "" : "s"} not shown`
+          : `All projects (${projects.length}), as a table`}
       </summary>
       {superseded ? (
         <p className={s.note}>
