@@ -4,6 +4,8 @@ Issue #97 coordinates C15/F33–F36. This shared integration belongs to the Wind
 
 Delivery is staged: package and validate the eight merged backend APIs first, so F36's own PR can run its UI checks through the shared workflow. Add the navigation entry in a C20 follow-on after the F36 page exists. The first integration PR does not claim the estimator screen is delivered.
 
+The navigation follow-on is claimed by the same Windows root technical lead. It adds a `Field planning` link to `/operations` after National explorer and preserves every existing route, including additions from other computers. It can merge only after F36's page and completion marker are on main, the new browser cases pass, and the integrated required check passes. This small shared change does not activate providers or outcome models.
+
 After the owned modules and page exist, add `/operations` navigation using the current shared visual system; trace the exact public verified-directory and environmental artifacts required by the deployed route handlers. Never package private actual-job histories, model candidates or synthetic test fixtures into public deployment assets. Outcome models remain explicitly configured external private files.
 
 Run verified-directory, operational-provider and outcome Node tests in the required CI check when their modules exist. Run F36 browser tests in the existing GitHub CI browser job, retaining the national, optional assistant and legacy tests. Check deployment traces after building. Local server launch remains prohibited by the earlier approval review; no alternate launcher is used.
