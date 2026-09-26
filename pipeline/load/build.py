@@ -1,5 +1,7 @@
 """Pure half of the loader: read data/, validate, join locations into projects, stage per dataset. No database I/O."""
 
+from collections.abc import Callable
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +23,10 @@ SOURCES: list[tuple[str, str, str]] = [
 # Stored collections (locations are joined into projects rather than stored on their own).
 COLLECTIONS = ["sources", "projects", "matches", "briefs", "extractions", "reviews", "coverage", "version_changes"]
 CONFIDENCE_RANK = {"high": 0, "medium": 1, "low": 2}
+# F13 audit verdict -> match.review_state. Any other verdict is kept as evidence but changes nothing.
+PAIR_VERDICTS = {"confirmed": "confirmed", "downgraded": "rejected", "rejected": "rejected"}
+# (match_id, staged records with joined projects) -> the hash of that match's current brief input facts, or None.
+BriefHash = Callable[[str, dict[str, list[dict]]], str | None]
 
 
 def _records_in(obj: Any) -> list | None:
@@ -70,6 +76,19 @@ def collect(root: Path) -> tuple[dict[str, list[dict]], list[str], list[str]]:
             if r["_id"] in seen:
                 errors.append(f"{coll}: duplicate _id {r['_id']!r}")
             seen.add(r["_id"])
+    # A project has at most two endpoints, one accepted location each; rejected candidates are kept as evidence.
+    # core.center averages whatever it's given, so an extra accepted candidate would silently move the center.
+    accepted: dict[tuple[str, int], list[str]] = {}
+    for loc in records["locations"]:
+        if loc["confidence"] == "rejected":
+            continue
+        if loc["endpoint_index"] not in (0, 1):
+            errors.append(f"locations: {loc['_id']!r} is accepted with endpoint_index {loc['endpoint_index']}; "
+                          "only 0 and 1 exist")
+        accepted.setdefault((loc["project_key"], loc["endpoint_index"]), []).append(loc["_id"])
+    for (key, index), ids in sorted(accepted.items()):
+        if len(ids) > 1:
+            errors.append(f"locations: {len(ids)} accepted candidates for {key!r} endpoint {index}: {sorted(ids)}")
     return records, errors, skipped
 
 
@@ -96,10 +115,58 @@ def join_projects(projects: list[dict], locations: list[dict]) -> list[dict]:
     return out
 
 
-def stage(records: dict[str, list[dict]], dataset: str) -> dict[str, list[dict]]:
-    """Documents as stored: `_id` = `<dataset>:<record _id>`, plus `id` and `dataset`. The API maps `id` back to `_id`."""
+def _utc(at: str) -> datetime | None:
+    try:
+        t = datetime.fromisoformat(at)
+    except ValueError:
+        return None
+    return t if t.tzinfo else None
+
+
+def apply_reviews(matches: list[dict], reviews: list[dict]) -> list[dict]:
+    """Audit decisions whose record_id is the pair id set its review_state. The newest decision wins; at the same
+    instant a downgrade beats a confirmation. Other verdicts, reviews without a timezone-aware `at` and reviews of
+    other records (endpoints) change nothing. With no decision the producer's review_state stays."""
+    latest: dict[str, tuple[datetime, str]] = {}
+    for r in reviews:
+        state, at = PAIR_VERDICTS.get(r["verdict"]), _utc(r["at"])
+        if state is None or at is None:
+            continue
+        cur = latest.get(r["record_id"])
+        if cur is None or at > cur[0] or (at == cur[0] and state == "rejected"):
+            latest[r["record_id"]] = (at, state)
+    return [{**m, "review_state": latest[m["_id"]][1]} if m["_id"] in latest else m for m in matches]
+
+
+def check_briefs(briefs: list[dict], ready: dict[str, list[dict]], brief_hash: BriefHash | None) -> list[dict]:
+    """A passed brief stays passed only if its input_hash equals the hash of its match's current facts. Otherwise it
+    is stored as rejected with the reason (original verdict in `source_validation`), so no route shows it approved."""
+    match_ids = {m["_id"] for m in ready.get("matches", [])}
+    out = []
+    for b in briefs:
+        current = brief_hash(b["match_id"], ready) if brief_hash and b["match_id"] in match_ids else None
+        if b["validation"] != "passed" or (current is not None and current == b["input_hash"]):
+            out.append(b)
+            continue
+        if b["match_id"] not in match_ids:
+            reason = "stale: match is not in this dataset"
+        elif current is None:
+            reason = "unverified: current input_hash could not be derived"
+        else:
+            reason = "stale: input facts changed since generation"
+        out.append({**b, "validation": "rejected", "source_validation": "passed", "rejection_reason": reason})
+    return out
+
+
+def stage(records: dict[str, list[dict]], dataset: str, brief_hash: BriefHash | None = None) -> dict[str, list[dict]]:
+    """Documents as stored: `_id` = `<dataset>:<record _id>`, plus `id` and `dataset`. The API maps `id` back to `_id`.
+
+    ponytail: brief_hash is None until F12 publishes its pure fact/hash builder (#43), so every passed brief fails
+    closed as unverified; make that builder the default here when it lands."""
     ready = dict(records)
     ready["projects"] = join_projects(records.get("projects", []), records.get("locations", []))
+    ready["matches"] = apply_reviews(records.get("matches", []), records.get("reviews", []))
+    ready["briefs"] = check_briefs(records.get("briefs", []), ready, brief_hash)
     return {
         coll: [{**r, "_id": f"{dataset}:{r['_id']}", "id": r["_id"], "dataset": dataset} for r in ready.get(coll, [])]
         for coll in COLLECTIONS

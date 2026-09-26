@@ -25,3 +25,20 @@
    `passed` brief only, version changes for either key, and reviews whose `record_id` is the pair id.
 9. **Manual check ran against a local MongoDB 8 container**, not Atlas: no `MONGODB_URI_RO` or `MONGODB_URI_RW` exists
    on this machine or in visible repo secrets. Same driver, same indexes, same queries.
+10. **Ambiguous accepted endpoints block activation (#35).** `collect()` reports an error for more than one
+    non-rejected location per `(project_key, endpoint_index)` and for a non-rejected `endpoint_index` other than 0/1.
+    `core.center` averages whatever it gets, so picking one candidate or averaging would both invent a center.
+    Rejected candidates stay allowed (F09 keeps them as evidence).
+11. **Audit verdicts set `match.review_state` at staging (#38).** Reviews whose `record_id` is the pair id count;
+    `confirmed` -> confirmed, `downgraded`/`rejected` -> rejected, newest timezone-aware `at` wins, and at the same
+    instant a downgrade wins. Other verdicts, endpoint reviews and undated reviews change nothing; with no decision the
+    producer's state stays. All reviews are stored. Not done: the subject-fingerprint proposal in #38's comment
+    (a confirmation that survives changed facts); it needs an agreed review contract first.
+12. **Passed briefs must prove their `input_hash` is current (#43).** Staging recomputes it with a `brief_hash`
+    function; a mismatch, an unknown match, or no function at all stores the brief as `validation: rejected` with the
+    reason and `source_validation: passed`, so neither the pair route nor `/api/briefs` shows it as approved. F12's
+    builder doesn't exist yet, so today every passed brief fails closed; wire it in as the default when F12 lands.
+13. **`/api/briefs` and `/api/runs` (C5, #41).** Briefs: all in the active dataset, sorted `match_id, generated_at,
+    id`. Runs: not dataset-namespaced, so read as stored via `handleDb` (no active dataset needed, so a failed first
+    load still shows); latest by `started_at` desc then `_id` desc; public fields only (never `errors`); 404 when
+    none. `started_at` has one-second resolution, so two runs in the same second fall back to `_id` order.
