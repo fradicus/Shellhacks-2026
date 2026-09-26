@@ -17,3 +17,7 @@ F34 adds `GET /api/operations/conditions?lat=<number>&lon=<number>` with exactly
 F36 performs a full site request initially, then refreshes only these current conditions every 60 seconds while visible and bound to the active point. It retains the original soil/annual AEF evidence timestamps and stops polling on changed inputs, hidden pages and unmount. Refresh failures must remain visible and cannot make older evidence appear current. This avoids turning USDA's 24-hour reference interval into a 24-hour delay for weather updates.
 
 NWS uses the public project issues URL as its default identifying contact, with `NWS_USER_AGENT` as a deployment override. No API credential is needed for the NWS adapter. This default does not bypass freshness or response validation, and does not imply coverage or availability when provider checks fail.
+
+## Dated adapter verification
+
+On 2026-09-26 at 22:40 UTC, the root independently called the F34 conditions service for the previously evidenced public Seattle point (47.6062, -122.3321), using the default identifying contact and no Google credentials. NWS returned `available`, 156 forecast periods, zero active point alerts, and a source update of 18:26:46 UTC. WSDOT was reachable but correctly returned `stale` because its source update was 00:00:14.8388927 UTC. These are observations of that adapter call, not a production deployment, a future forecast guarantee or a corridor-wide all-clear. No source file, private history or model was changed by this check.
