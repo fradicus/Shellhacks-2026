@@ -10,6 +10,7 @@ export const ROUTES = [
   { href: "/", label: "Home" },
   { href: "/time", label: "Overlaps" },
   { href: "/explore", label: "National explorer" },
+  { href: "/operations", label: "Field planning" },
   { href: "/changes", label: "Filing changes" },
   { href: "/coverage", label: "Coverage" },
   { href: "/gemini", label: "Gemini workbench" },
