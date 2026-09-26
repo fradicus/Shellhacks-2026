@@ -96,7 +96,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F18 | Status, acceptance, submission draft, STOP | C | ceo | 4 | none | never |
 
 F18 starts at 0:00 alongside F00 and merges
-status updates as `[F18] status HH:MM` parts and adds `changes/F18.md` only at the `report` gate.
+status updates as `[F18] status HH:MM` parts. At the user's expedited-completion request, F18 may publish its final report, `STOP` and `changes/F18.md` before the scheduled `report` gate once all non-stretch implementation features and core corrections are verified complete (or an allowed cut is explicitly recorded), the final integration checks pass, and deferred live services are stated clearly. Otherwise the scheduled report gate remains the deadline. F18 itself is the final reporting step; optional F17 need not start. This does not waive merge checks or permit an unresolved core defect to be called complete.
 
 ## Critical path
 F00 → F01 + F02 (+F04) → F09 → F10 → F12, with F05 → F11 and F06 in parallel. If F09 is late at 4:30, geo
@@ -104,4 +104,5 @@ narrows to the border-area projects (see F09 Defaults) rather than miss F10.
 
 ## Post-run (humans, morning)
 Read `reports/final.md`. Review `specs/decisions/*`, especially 000. Check the domain and the Devpost submission. Merge nothing overnight-generated that you haven't looked at into the event submission unless it's already on `main`.
+
 
