@@ -1,4 +1,4 @@
-import { HazmatSchema, SCHEMA_VERSION, PointSchema, type Envelope, type Point, type RouteRequest, type RouteResponse, type SiteRequest, type SiteResponse, type ReferenceResponse, type WeatherData, type RoadworkData, type AEFData } from "./contracts";
+import { HazmatSchema, SCHEMA_VERSION, PointSchema, type Envelope, type Point, type ConditionsResponse, type RouteRequest, type RouteResponse, type SiteRequest, type SiteResponse, type ReferenceResponse, type WeatherData, type RoadworkData, type AEFData } from "./contracts";
 import { aef, readSnapshot, type AEFSnapshot, ATTRIBUTION } from "./aef";
 import { context, empty, weather, soil, roadwork, truckRoute } from "./providers";
 import { digest } from "./transport";
@@ -15,6 +15,11 @@ export async function reference(ctx = context()): Promise<ReferenceResponse> {
   ] };
 }
 // No provider result caching: fresh independent calls, with UI refresh limits published above.
+export async function conditions(request: Point, ctx = context()): Promise<ConditionsResponse> {
+  const point = PointSchema.parse(request);
+  const [w, r] = await Promise.all([weather(point, ctx), roadwork(point, ctx)]);
+  return { request: point, weather: w, roadwork: r };
+}
 export async function site(request: SiteRequest, ctx = context(), snapshot?: AEFSnapshot | null): Promise<SiteResponse> {
   const point = { lat: request.lat, lon: request.lon };
   const [w, s, r, snap] = await Promise.all([weather(point, ctx), soil(point, ctx), roadwork(point, ctx), snapshot === undefined ? readSnapshot() : snapshot]);

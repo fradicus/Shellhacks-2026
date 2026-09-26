@@ -60,7 +60,8 @@ Runtime API contracts are exported from `web/lib/operations/contracts.ts`:
   never silently rounded. Only attributed textual Google
   summary is public; no geometry, token or raw response is retained or exported.
 
-NWS requests require `NWS_USER_AGENT` identifying contact. Forecasts older than
+NWS requests use the public project issue URL as identifying contact, with an optional
+`NWS_USER_AGENT` override. Forecasts older than
 six hours or without future periods are stale; future source timestamps fail.
 Point alerts retain null-geometry county/zone warnings. Poll no faster than 60s.
 USDA supplies map-unit/component survey context and source vintage, never measured
@@ -97,3 +98,4 @@ uv run pytest -c pyproject.toml -q ../tests/pipeline/test_f34_environment.py
 An optional public-only probe is `node --import ./tests/web/operations-providers/loader.mjs tests/web/operations-providers/public-probe.ts --allow-public-network`
 from repository root. It writes the historical verification report and does not
 read credentials or call Google routing. It is not part of offline CI.
+`GET /api/operations/conditions?lat=47.6062&lon=-122.3321` refreshes only weather and roadwork, at the published 60-second cadence. It does not repeat soil or annual AEF queries. NWS identifies this public project by default as `GridBridge (https://github.com/fradicus/Shellhacks-2026/issues)`; deployments may override the contact using `NWS_USER_AGENT`. No NWS secret is required.

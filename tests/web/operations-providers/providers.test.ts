@@ -1,18 +1,31 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
-import { RouteRequestSchema, parseSiteQuery, millimeters } from "../../../web/lib/operations/contracts.ts";
+import { RouteRequestSchema, parseSiteQuery, parseConditionsQuery, millimeters } from "../../../web/lib/operations/contracts.ts";
+import { GET as getConditions } from "../../../web/app/api/operations/conditions/route.ts";
 import { washingtonContains } from "../../../web/lib/operations/jurisdiction.ts";
 import { transport } from "../../../web/lib/operations/transport.ts";
-import { weather, soil, roadwork, truckRoute, type Context } from "../../../web/lib/operations/providers.ts";
+import { weather, soil, roadwork, truckRoute, context, DEFAULT_NWS_USER_AGENT, type Context } from "../../../web/lib/operations/providers.ts";
 import { validateSnapshot, aef } from "../../../web/lib/operations/aef.ts";
-import { sampleRoute, route } from "../../../web/lib/operations/service.ts";
+import { sampleRoute, route, conditions, reference } from "../../../web/lib/operations/service.ts";
 
 const now = new Date("2026-09-26T20:00:00Z");
 const point = { lat: 47.6062, lon: -122.3321 };
 const request = { origin: point, destination: point, departure_at: now.toISOString(), truck: { height_m: 4, width_m: 2.5, length_m: 20, gross_weight_kg: 30000, axle_count: 5, trailers: [{ length_m: 15 }], hazmat: [] } };
 const wrap = (value: unknown) => ({ value, hash: "a".repeat(64), retrieved: now.toISOString() });
 const ctx = (value: unknown): Context => ({ now, io: async () => wrap(value), userAgent: "GridBridge test" });
+
+test("NWS has a public identifying contact by default and respects an explicit override", async () => {
+  const prior = process.env.NWS_USER_AGENT;
+  try {
+    delete process.env.NWS_USER_AGENT;
+    assert.equal(context().userAgent, DEFAULT_NWS_USER_AGENT);
+    assert.equal((await reference(context())).providers.find((p) => p.id === "weather")?.ready, true);
+    process.env.NWS_USER_AGENT = "GridBridge deployment (https://example.org/contact)";
+    assert.equal(context().userAgent, process.env.NWS_USER_AGENT);
+    process.env.NWS_USER_AGENT = "  "; assert.equal(context().userAgent, DEFAULT_NWS_USER_AGENT);
+  } finally { if (prior === undefined) delete process.env.NWS_USER_AGENT; else process.env.NWS_USER_AGENT = prior; }
+});
 
 test("strict requests reject missing trailer facts, unsupported hazmat, coerced numbers and duplicated queries", () => {
   assert.equal(RouteRequestSchema.safeParse(request).success, true);
@@ -37,6 +50,27 @@ const alerts = { type: "FeatureCollection", features: [{ id: "alert1", geometry:
 function weatherContext(f = forecast, a: unknown = alerts): Context {
   return { now, userAgent: "GridBridge test", io: async (url) => wrap(url.includes("/points/") ? { properties: { forecastHourly: "https://api.weather.gov/gridpoints/SEW/1,2/forecast/hourly", gridId: "SEW", gridX: 1, gridY: 2 } } : url.includes("/alerts/") ? a : f) };
 }
+
+test("conditions refresh calls only weather and roadwork, validates strict points and rejects query drift", async () => {
+  const calls: string[] = [];
+  const weatherCtx = weatherContext();
+  const result = await conditions(point, { ...weatherCtx, googleKey: "synthetic-test-only", lvrEnabled: true, io: async (url, ...rest) => {
+    calls.push(url);
+    if (new URL(url).hostname === "wzdx.wsdot.wa.gov") return wrap({ type: "FeatureCollection", feed_info: { publisher: "WSDOT", version: "4.2", update_date: now.toISOString() }, features: [] });
+    assert.equal(new URL(url).hostname, "api.weather.gov");
+    return weatherCtx.io(url, ...rest);
+  } });
+  assert.deepEqual(Object.keys(result).sort(), ["request", "roadwork", "weather"]);
+  assert.equal(result.weather.status, "available"); assert.equal(result.roadwork.status, "available");
+  assert.equal(calls.length, 4); assert.equal(calls.filter((url) => new URL(url).hostname === "wzdx.wsdot.wa.gov").length, 1);
+  assert.deepEqual(parseConditionsQuery(new URLSearchParams("lat=47.6062&lon=-122.3321")), point);
+  await assert.rejects(conditions({ lat: 91, lon: 0 }, weatherCtx));
+  for (const query of ["lat=1&lon=2&year=2025", "lat=1&lon=2&lat=1", "lat=91&lon=2", "lat=1&lon=181", "lat=NaN&lon=2", "lat=1e2&lon=2", "lat=&lon=2", "lat=1", "lat=1&lon=2&url=x"]) {
+    assert.throws(() => parseConditionsQuery(new URLSearchParams(query)));
+    const response = await getConditions(new Request(`https://gridbridge.test/api/operations/conditions?${query}`));
+    assert.equal(response.status, 400); assert.equal(response.headers.get("cache-control"), "no-store");
+  }
+});
 test("weather preserves null polygon warnings and unknown numbers; stale/future/malformed responses fail visibly", async () => {
   const good = await weather(point, weatherContext());
   assert.equal(good.status, "available"); assert.equal(good.data?.samples[0].alerts.length, 1); assert.equal(good.data?.samples[0].forecast[0].temperature, null);

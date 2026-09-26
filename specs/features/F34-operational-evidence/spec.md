@@ -37,3 +37,5 @@ from root; `uv run pytest -c pyproject.toml -q ../tests/pipeline/test_f34_enviro
 from `pipeline/`. Public probe/sample commands and actual source limitations are
 documented in `data/environment/README.md`. Optional public probes are not CI
 tests and never call paid Google routing or read credentials.
+`GET /api/operations/conditions?lat&lon` strictly validates only a point and returns `ConditionsResponse={request,weather,roadwork}`. It calls only the existing independent weather and roadwork adapters; it does not read AEF or call soil or Google. Clients may refresh these current conditions at the existing 60-second provider cadence while keeping initial site context separate. Responses remain no-store and retain provider-specific freshness/coverage states.
+NWS uses the public identifying default `GridBridge (https://github.com/fradicus/Shellhacks-2026/issues)` with an optional nonblank `NWS_USER_AGENT` override. It requires no secret; readiness means configuration readiness, not an availability guarantee.

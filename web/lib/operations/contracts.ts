@@ -44,6 +44,7 @@ export type AEFSample = { point: Point; year: number; object_url: string; object
 export type AEFData = { samples: AEFSample[]; scope: "annual_satellite_embedding" };
 export type RouteData = { distance_m: number; travel_seconds: number; eta: string; restrictions_partially_ignored: boolean; warnings: string[]; attribution: "Google Maps" };
 export type SiteResponse = { request: SiteRequest; weather: Envelope<WeatherData>; soil: Envelope<SoilData>; aef: Envelope<AEFData>; roadwork: Envelope<RoadworkData> };
+export type ConditionsResponse = { request: Point; weather: Envelope<WeatherData>; roadwork: Envelope<RoadworkData> };
 export type RouteResponse = { request: RouteRequest; status: "complete" | "incomplete"; route: Envelope<RouteData>; weather: Envelope<WeatherData>; roadwork: Envelope<RoadworkData>; aef: Envelope<AEFData>; limitations: string[] };
 export type ReferenceResponse = { schema_version: typeof SCHEMA_VERSION; aef_years: number[]; providers: { id: string; ready: boolean; jurisdictions: string[]; refresh_seconds: number | null; attribution: string; reason: string | null }[]; hazmat: string[]; limits: { route_samples: number; route_sample_max_gap_km: number; max_departure_days: number }; };
 
@@ -52,4 +53,10 @@ export function parseSiteQuery(params: URLSearchParams): SiteRequest {
   for (const key of params.keys()) if (!keys.includes(key) || params.getAll(key).length !== 1) throw new Error("Unknown or duplicate parameter");
   const number = (key: string) => { const value = params.get(key); if (!value || !/^-?\d+(\.\d+)?$/.test(value)) throw new Error(`Invalid ${key}`); return Number(value); };
   return SiteRequestSchema.parse({ lat: number("lat"), lon: number("lon"), year: number("year") });
+}
+
+export function parseConditionsQuery(params: URLSearchParams): Point {
+  for (const key of params.keys()) if (!["lat", "lon"].includes(key) || params.getAll(key).length !== 1) throw new Error("Unknown or duplicate parameter");
+  const number = (key: string) => { const value = params.get(key); if (!value || !/^-?\d+(\.\d+)?$/.test(value)) throw new Error(`Invalid ${key}`); return Number(value); };
+  return PointSchema.parse({ lat: number("lat"), lon: number("lon") });
 }

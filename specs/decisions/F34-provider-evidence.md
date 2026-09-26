@@ -37,3 +37,5 @@ the accepted feature code. Full Python checks preceded that visual-token-only
 rebase; focused and web checks were repeated afterward. Exact-head CI is required.
 Undo by removing the F34 owned modules/artifacts and optional Rasterio extra via
 the contract owner. No existing data or MongoDB writer is changed.
+`/api/operations/conditions` is an additive point-only current-conditions endpoint for F36 polling. It uses the existing weather/roadwork adapters exclusively, preserving independent status/time/evidence and 60-second reference cadence without repeating USDA, AEF or Google. The focused regression checks both allowed provider calls and strict malformed/unknown/duplicate query rejection at the actual route handler. Site and route APIs are unchanged. This extension was rebased onto main 62cf6c85 before implementation; its final checks and exact-head CI supersede the earlier marker.
+The NWS default identifies the public project issue URL; a nonblank `NWS_USER_AGENT` overrides it. Missing credentials no longer disable this free provider. Focused tests verify default/override/blank fallback and reference readiness without making any live request.

@@ -5,7 +5,8 @@ import { digest, transport, type Transport } from "./transport";
 
 export const SOURCES = { weather: "https://api.weather.gov", soil: "https://sdmdataaccess.nrcs.usda.gov/Tabular/post.rest", roadwork: "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed", route: "https://routes.googleapis.com/directions/v2:computeRoutes", aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL" } as const;
 export type Context = { io: Transport; now: Date; userAgent?: string; googleKey?: string; lvrEnabled?: boolean };
-export const context = (): Context => ({ io: transport(), now: new Date(), userAgent: process.env.NWS_USER_AGENT, googleKey: process.env.GOOGLE_ROUTES_API_KEY, lvrEnabled: process.env.GOOGLE_LVR_ENABLED === "true" });
+export const DEFAULT_NWS_USER_AGENT = "GridBridge (https://github.com/fradicus/Shellhacks-2026/issues)";
+export const context = (): Context => ({ io: transport(), now: new Date(), userAgent: process.env.NWS_USER_AGENT?.trim() || DEFAULT_NWS_USER_AGENT, googleKey: process.env.GOOGLE_ROUTES_API_KEY, lvrEnabled: process.env.GOOGLE_LVR_ENABLED === "true" });
 export function empty<T>(provider: keyof typeof SOURCES, request: unknown, reason: string, status: Envelope<T>["status"] = "unavailable", now = new Date()): Envelope<T> {
   return { schema_version: SCHEMA_VERSION, provider, status, request_hash: digest(request), retrieved_at: now.toISOString(), source_updated_at: null, valid_from: null, valid_to: null, source_url: SOURCES[provider], source_version: null, evidence_hash: null, coverage: { requested: 1, completed: 0, failed: 1, truncated: false }, data: null, limitations: [reason] };
 }
