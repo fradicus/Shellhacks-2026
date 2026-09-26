@@ -1,7 +1,7 @@
 ---
-run_start: "SET-AT-LAUNCH"          # human sets e.g. "2026-09-26T23:30:00-04:00" in the last pre-flight commit
-analysis_date: "SET-AT-LAUNCH"      # same calendar date as run_start unless decided otherwise
-execution_mode: paperclip           # paperclip | local | hybrid; choose at launch
+run_start: "2026-09-26T04:45:00-04:00"
+analysis_date: "2026-09-26"
+execution_mode: local               # paperclip | local | hybrid
 contract_owner: technical-lead
 reporting_agent: ceo
 lanes:
@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F01, F02, F03, F04, F07, F09, F10, F12]
-  codex-local: [F00, F05, F06, F08, F11, F13, F14, F15, F16, F17, F18]
+  claude-local: [F00, F05, F06, F11, F14, F16]
+  codex-local: [F01, F02, F03, F04, F07, F08, F09, F10, F12, F13, F15, F17, F18]
 frozen_paths:
   - schemas/
   - scripts/
@@ -54,7 +54,7 @@ For a shorter run, scale every `at` value proportionally in the pre-flight commi
 - **Local:** Claude Code and Codex use `local_workers`, adopting each feature's named role/lane. One implementation feature per session; the F18 owner also handles short reporting checkpoints in a separate worktree.
 - **Hybrid:** local sessions own only IDs listed in `local_workers`; Paperclip owns the remaining features through the existing role/lane assignments. Trim the local map before launch. Pause the old owner before any reassignment.
 
-The sample local split gives Claude the data work and QA harness, and Codex the app, data audit, release and reporting. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
+The launch split gives Claude the bootstrap and the app (F00, F05, F06, F11, F14, F16), and Codex the data, QA, release and reporting. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
 
 ## Phase 0: bootstrap (lane B alone)
 Skeleton, contracts, fixtures, the canonical matcher and golden test, CI, the ownership gate, placeholder routes. After this, everyone works in parallel without touching shared files.
