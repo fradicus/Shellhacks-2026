@@ -1,0 +1,10 @@
+{
+  "source_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/4/query?where=STATE%3D%2753%27&outFields=STATE,GEOID,STUSAB,BASENAME&returnGeometry=true&outSR=4326&f=geojson",
+  "publisher": "U.S. Census Bureau TIGERweb",
+  "layer": 4,
+  "vintage": "January 1, 2026",
+  "retrieved_at": "2026-09-26T22:11:14.937684+00:00",
+  "response_bytes": 324195,
+  "response_sha256": "3e023590953adacedb60539a200828139d45ba1159a4e4351c8e302febddf96e",
+  "artifact_sha256": "ff59ed9dd412cb38133c093208053da93ad96d79dd060a6f6047b6ece2c892cb"
+}

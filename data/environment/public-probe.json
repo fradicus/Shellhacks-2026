@@ -1,0 +1,59 @@
+{
+  "schema_version": "operations-public-probe-v1",
+  "retrieved_at": "2026-09-26T22:03:49.165Z",
+  "point": {
+    "lat": 47.6062,
+    "lon": -122.3321
+  },
+  "paid_calls": 0,
+  "providers": [
+    {
+      "provider": "weather",
+      "status": "available",
+      "source_url": "https://api.weather.gov",
+      "source_updated_at": "2026-09-26T18:26:46+00:00",
+      "evidence_hash": "15815922f1e1a8b41c226c387bf1dced930b0caa6e0325ec7126c0798afc38a4",
+      "coverage": {
+        "requested": 1,
+        "completed": 1,
+        "failed": 0,
+        "truncated": false
+      },
+      "limitations": [
+        "Forecast and alerts apply to the queried point; no corridor all-clear."
+      ]
+    },
+    {
+      "provider": "soil",
+      "status": "available",
+      "source_url": "https://sdmdataaccess.nrcs.usda.gov/Tabular/post.rest",
+      "source_updated_at": null,
+      "evidence_hash": "8899b7ce7f007996eaed8df82ad4c0bab24e4832ed391d22491fd1a19cd9e5c8",
+      "coverage": {
+        "requested": 1,
+        "completed": 1,
+        "failed": 0,
+        "truncated": false
+      },
+      "limitations": [
+        "SSURGO map-unit context, not a site test or engineering approval."
+      ]
+    },
+    {
+      "provider": "roadwork",
+      "status": "stale",
+      "source_url": "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed",
+      "source_updated_at": "2026-09-26T00:00:14.8388927+00:00",
+      "evidence_hash": "d55258f3f2768693c6a46edcbde04c699b1c5488bdecd1005a3780fa1cb1f4f4",
+      "coverage": {
+        "requested": 1,
+        "completed": 1,
+        "failed": 0,
+        "truncated": false
+      },
+      "limitations": [
+        "WSDOT reported work zones only; bounding-box vicinity is not proof of a road connection or complete closures."
+      ]
+    }
+  ]
+}
