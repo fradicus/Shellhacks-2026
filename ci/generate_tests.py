@@ -112,15 +112,11 @@ def build_prompt(source_path: str, source: str, conventions: str, anchor: str, e
 
 
 def run_pytest(test_file: Path) -> tuple[bool, str]:
-    rel = test_file.relative_to(ROOT / "pipeline")  # ../tests/pipeline/test_*.py
-    cmd = ["uv", "run", "pytest", str(rel), "-q", "--no-header"] if shutil.which("uv") else [
-        sys.executable,
-        "-m",
-        "pytest",
-        str(rel),
-        "-q",
-        "--no-header",
-    ]
+    rel = os.path.relpath(test_file, ROOT / "pipeline")  # ../tests/pipeline/test_*.py
+    # A path outside pipeline/ makes pytest skip pipeline/pyproject.toml (and its pythonpath),
+    # so the config and rootdir are pinned explicitly.
+    args = ["pytest", rel, "-q", "--no-header", "-c", "pyproject.toml", "--rootdir", "."]
+    cmd = ["uv", "run", *args] if shutil.which("uv") else [sys.executable, "-m", *args]
     try:
         proc = subprocess.run(cmd, cwd=ROOT / "pipeline", capture_output=True, text=True, timeout=300)
     except FileNotFoundError as exc:
