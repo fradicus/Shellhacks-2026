@@ -31,7 +31,8 @@ def ensure_indexes(db: Any) -> None:
     db.projects.create_index([("dataset", ASCENDING), ("utility", ASCENDING), ("active", ASCENDING)])
     db.projects.create_index([("dataset", ASCENDING), ("project_key", ASCENDING)])
     db.matches.create_index(
-        [("dataset", ASCENDING), ("view", ASCENDING), ("band", ASCENDING), ("time_gap_days", ASCENDING), ("distance_mi", ASCENDING)]
+        [("dataset", ASCENDING), ("view", ASCENDING), ("band", ASCENDING),
+         ("time_gap_days", ASCENDING), ("distance_mi", ASCENDING)]
     )
     db.matches.create_index([("dataset", ASCENDING), ("rank", ASCENDING)])
     db.briefs.create_index([("dataset", ASCENDING), ("match_id", ASCENDING)])
