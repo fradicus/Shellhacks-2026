@@ -142,7 +142,7 @@ export function ChangesView({
               <li key={key} className={`${s.group} ${key === VERIFIED ? s.verified : ""}`}>
                 <div className={s.groupHead}>
                   <UtilityBadge utility={["DESC", "GPC"].includes(utility) ? utility : "unknown"} />
-                  <strong>{meta?.name ?? key}</strong>
+                  {meta ? <strong>{meta.name}</strong> : null}
                   <code>{key}</code>
                   {key === VERIFIED ? <Badge tone="ok">verified example</Badge> : null}
                   {pairs.length ? (
