@@ -145,6 +145,22 @@ test("CSV neutralizes spreadsheet formulas and escapes quotes and newlines", asy
   expect(toCsv(["name", "count"], [['A, "quoted"\nname', 2]])).toBe('name,count\r\n"A, ""quoted""\nname",2\r\n');
 });
 
+test("filing history cites both public pages and filters to an honest empty state", async ({ page }) => {
+  await page.goto("/changes");
+  await expect(page.getByText("DESC:0139 M,N", { exact: true })).toBeVisible();
+  await expect(page.getByText("2024-12-31", { exact: true })).toBeVisible();
+  await expect(page.getByText("2026-05-31", { exact: true })).toBeVisible();
+  await expect(page.getByText("historical", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "DESC filing 2024-2028, p. 3" })).toHaveAttribute(
+    "href", "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf#page=3");
+  await expect(page.getByRole("link", { name: "DESC filing 2025-2029, p. 2" })).toHaveAttribute(
+    "href", "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf#page=2");
+  await page.getByRole("button", { name: "Cost (0)", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "No filing changes" })).toBeVisible();
+  await page.getByRole("button", { name: "In-service date (1)", exact: true }).click();
+  await expect(page.getByText("DESC:0139 M,N", { exact: true })).toBeVisible();
+});
+
 test("failed basemap preserves overlaps, selection, and accessible project table", async ({ page }) => {
   await page.route(styleUrl, (route) => route.fulfill({ status: 503, body: "Injected basemap failure" }));
   await page.goto("/");
