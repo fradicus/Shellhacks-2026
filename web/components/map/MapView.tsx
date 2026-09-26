@@ -203,6 +203,14 @@ export function MapView({
           {failure} The overlap list and the project table below work without the map.
         </div>
       ) : null}
+      {failure ? (
+        // The style's own attribution never loads when tiles fail; keep the credit visible anyway.
+        <p className={s.attribution}>
+          <a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a> ©{" "}
+          <a href="https://www.openmaptiles.org/" target="_blank" rel="noreferrer">OpenMapTiles</a> Data from{" "}
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a>
+        </p>
+      ) : null}
       <div className={s.legend} aria-label="Legend">
         <span>
           <i className={s.dot} style={{ background: COLORS.DESC }} /> Dominion Energy SC
