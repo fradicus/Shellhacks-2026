@@ -1,0 +1,97 @@
+name: ci
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited] # edited: a title fix reruns the ownership gate
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  # Job id `ci` is the required status check (specs/preflight.md §2).
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # the ownership gate diffs against the base branch
+
+      - uses: astral-sh/setup-uv@v6
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: pipeline (ruff, pytest incl. golden)
+        working-directory: pipeline
+        run: |
+          uv sync --locked
+          uv run ruff check .
+          uv run pytest -q
+
+      - name: web (lint, typecheck, build in fixture mode)
+        working-directory: web
+        env:
+          DATA_MODE: fixture
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: |
+          npm ci
+          npm run lint
+          npm run typecheck
+          npm run build
+
+      - name: spec lint
+        run: python3 scripts/check_ownership.py --lint-specs
+
+      - name: ownership
+        if: github.event_name == 'pull_request'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: python3 scripts/check_ownership.py --title "$PR_TITLE" --base "origin/$BASE_REF"
+
+  # Not required. Runs Playwright specs in tests/e2e (F07) against a fixture-mode production build.
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: detect specs
+        id: detect
+        run: echo "present=$([ -f tests/e2e/playwright.config.ts ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v5
+        if: steps.detect.outputs.present == 'yes'
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: build and serve (fixture mode)
+        if: steps.detect.outputs.present == 'yes'
+        working-directory: web
+        env:
+          DATA_MODE: fixture
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          npm run build
+          nohup npm start -- -p 3000 > /tmp/next.log 2>&1 &
+          npx --yes wait-on@8 -t 60000 http://localhost:3000/
+
+      - name: playwright
+        if: steps.detect.outputs.present == 'yes'
+        env:
+          BASE_URL: http://localhost:3000
+        run: |
+          ln -s web/node_modules node_modules # lets tests/e2e resolve @playwright/test from web/
+          web/node_modules/.bin/playwright test -c tests/e2e

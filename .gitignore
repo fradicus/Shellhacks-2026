@@ -3,3 +3,17 @@
 # Local credentials; example files contain placeholders only.
 .env*
 !.env.example
+
+# Dependencies and build output
+node_modules/
+.next/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.tsbuildinfo
+test-results/
+playwright-report/
+
+# Agent worktrees created inside the checkout (claude -w, EnterWorktree)
+.claude/worktrees/

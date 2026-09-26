@@ -1,0 +1,47 @@
+{
+  "$id": "https://gridbridge.local/schemas/version_change.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "from_page": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "from_source": {
+      "type": "string"
+    },
+    "new": {},
+    "old": {},
+    "project_key": {
+      "type": "string"
+    },
+    "to_page": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "to_source": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "_id",
+    "project_key",
+    "from_source",
+    "to_source",
+    "field",
+    "old",
+    "new"
+  ],
+  "title": "One field that changed for the same project between two filings",
+  "type": "object"
+}

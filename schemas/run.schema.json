@@ -1,0 +1,44 @@
+{
+  "$id": "https://gridbridge.local/schemas/run.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "counts": {
+      "type": "object"
+    },
+    "finished_at": {
+      "format": "date-time",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stage": {
+      "type": "string"
+    },
+    "started_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "failed",
+        "partial"
+      ]
+    }
+  },
+  "required": [
+    "_id",
+    "stage",
+    "started_at",
+    "finished_at",
+    "status",
+    "counts"
+  ],
+  "title": "One pipeline stage run",
+  "type": "object"
+}

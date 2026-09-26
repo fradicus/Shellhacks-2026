@@ -1,0 +1,50 @@
+{
+  "$id": "https://gridbridge.local/schemas/extraction.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "accepted": {
+      "type": "boolean"
+    },
+    "comparison": {
+      "type": "object"
+    },
+    "fields": {
+      "type": "object"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "prompt_version": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "_id",
+    "source_id",
+    "page",
+    "model",
+    "prompt_version",
+    "fields",
+    "comparison",
+    "accepted"
+  ],
+  "title": "Gemini's structured extraction of one source page, compared with the deterministic parse",
+  "type": "object"
+}

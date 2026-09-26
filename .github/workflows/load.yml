@@ -1,0 +1,29 @@
+name: load
+
+# The ONLY writer to Atlas (specs/tech-stack.md). Runs the F06 loader on every main push that changes data.
+on:
+  push:
+    branches: [main]
+    paths: ["data/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: load
+  cancel-in-progress: false
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+      - name: load data/ into Atlas
+        working-directory: pipeline
+        env:
+          MONGODB_URI_RW: ${{ secrets.MONGODB_URI_RW }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB || 'gridbridge' }}
+          GIT_SHA: ${{ github.sha }}
+        run: |
+          uv sync --locked
+          uv run python -m load

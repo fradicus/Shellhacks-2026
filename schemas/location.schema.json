@@ -1,0 +1,77 @@
+{
+  "$id": "https://gridbridge.local/schemas/location.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "if": {
+    "properties": {
+      "confidence": {
+        "not": {
+          "const": "rejected"
+        }
+      }
+    }
+  },
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "rejected"
+      ]
+    },
+    "endpoint_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "lat": {
+      "maximum": 90,
+      "minimum": -90,
+      "type": "number"
+    },
+    "lon": {
+      "maximum": 180,
+      "minimum": -180,
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "osm_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "osm_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "project_key": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_key",
+    "endpoint_index",
+    "name",
+    "confidence",
+    "evidence"
+  ],
+  "then": {
+    "required": [
+      "lat",
+      "lon"
+    ]
+  },
+  "title": "One endpoint location (or rejected candidate) with evidence",
+  "type": "object"
+}
