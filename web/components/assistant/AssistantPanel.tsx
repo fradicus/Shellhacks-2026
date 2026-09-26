@@ -92,7 +92,7 @@ export function AssistantPanel({ controller }: { controller: AssistantController
           if (event.key === "Escape") { event.stopPropagation(); close(); }
         }}>
           <header className={styles.header}>
-            <div><p className={styles.eyebrow}>Optional feature branch</p><h2>Ask the grid</h2></div>
+            <div><p className={styles.eyebrow}>App control preview</p><h2>Ask the grid</h2></div>
             <button type="button" onClick={close} aria-label="Close app control preview" className={styles.close}>×</button>
           </header>
           <p className={styles.notice}><strong>Offline commands.</strong> A language model is not connected. This preview can change filters, focus the map, and select a visible project.</p>

@@ -1,6 +1,6 @@
 # Optional app controls
 
-This branch is separate from the delivered national explorer. `/assistant` will embed the same explorer with a side button; it is not a new project database or search implementation.
+This branch is separate from the delivered national explorer. `/assistant` embeds the same explorer with a side button; it is not a new project database or search implementation.
 
 The offline preview supports explicit commands, labels itself as offline, and sends only validated actions to the same filter/selection controller used by manual controls. Unknown places ask for clarification; stale project IDs fail. Changing a map viewport cannot create a project location. Counts remain the explorer's measured counts and unavailable data stays unavailable.
 
