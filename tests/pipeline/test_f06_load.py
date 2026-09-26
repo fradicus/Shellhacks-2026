@@ -1,5 +1,6 @@
 """F06 loader: validation, locations->projects join, dataset staging, pointer flip, idempotence (mongomock)."""
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -178,3 +179,150 @@ def test_filed_endpoints_kept_apart_from_locations(data_root):
     [joined] = join_projects([p], [loc for loc in records["locations"] if loc["project_key"] == p["project_key"]])
     assert joined["filed_endpoints"][0]["name"] == "Queensboro"
     assert all("confidence" in e for e in joined["endpoints"])
+
+
+# --- #35: at most one accepted location per endpoint, endpoint_index 0 or 1 ------------------------------------------
+
+def synth_loc(index, lon, confidence="high", n=0):
+    """Clearly synthetic coordinates on the equator; never real endpoint data."""
+    return {"_id": f"qa#{index}#{n}", "project_key": "DESC:DESC_3", "endpoint_index": index, "name": "Synthetic QA",
+            "confidence": confidence, "evidence": "synthetic test coordinate", "lat": 0.0, "lon": lon}
+
+
+@pytest.fixture
+def qa_root(tmp_path):
+    [p] = [p for p in load_json(FIX / "projects.json") if p["project_key"] == "DESC:DESC_3"]
+    write(tmp_path, "data/projects/qa.json", [{k: v for k, v in p.items() if k not in ("center", "geo")}])
+    return tmp_path
+
+
+BASE = [synth_loc(0, 0.0), synth_loc(1, 2.0)]
+
+
+@pytest.mark.parametrize("locs, error", [
+    (BASE, None),
+    (BASE + [synth_loc(0, 4.0, n=1)], "2 accepted candidates for 'DESC:DESC_3' endpoint 0"),
+    (BASE + [synth_loc(2, 4.0)], "endpoint_index 2"),
+    (BASE + [synth_loc(0, 4.0, "rejected", n=1)], None),  # F09 keeps rejected alternatives as evidence
+    (BASE + [synth_loc(2, 4.0, "rejected")], None),
+    ([synth_loc(0, 0.0), synth_loc(0, 2.0, "low", n=1)], "2 accepted candidates"),
+])
+def test_accepted_endpoint_candidates_are_unambiguous(qa_root, locs, error):
+    write(qa_root, "data/locations/qa.json", locs)
+    records, errors, _ = collect(qa_root)
+    if error is None:
+        assert errors == []
+        [p] = join_projects(records["projects"], records["locations"])
+        assert p["center"] == {"lat": 0.0, "lon": 1.0, "basis": "two"} and len(p["endpoints"]) == len(locs)
+    else:
+        assert len(errors) == 1 and error in errors[0]
+
+
+def test_ambiguous_endpoints_block_activation_and_keep_previous(qa_root):
+    db = mongomock.MongoClient().db
+    write(qa_root, "data/locations/qa.json", BASE)
+    assert load(db, *collect(qa_root)[:2], "good") == 0
+    write(qa_root, "data/locations/qa.json", BASE + [synth_loc(0, 4.0, n=1)])
+    assert load(db, *collect(qa_root)[:2], "bad") == 1
+    assert db.meta.find_one({"_id": "active"})["dataset"] == "good"
+    assert db.projects.find_one({"dataset": "good"})["center"]["lon"] == 1.0
+
+
+# --- #38: audit verdicts set match.review_state ----------------------------------------------------------------------
+
+MATCH = {"_id": "A__B", "a": "A", "b": "B", "review_state": "needs_review"}
+
+
+def review(verdict, at, record_id="A__B"):
+    return {"_id": f"r-{record_id}-{verdict}-{at}", "record_id": record_id, "verdict": verdict, "reason": "synthetic",
+            "reviewer": "qa", "at": at}
+
+
+@pytest.mark.parametrize("reviews, state", [
+    ([], "needs_review"),
+    ([review("confirmed", "2026-09-26T10:00:00Z")], "confirmed"),
+    ([review("confirmed", "2026-09-26T10:00:00Z"), review("downgraded", "2026-09-26T11:00:00Z")], "rejected"),
+    ([review("downgraded", "2026-09-26T10:00:00Z"), review("confirmed", "2026-09-26T11:00:00Z")], "confirmed"),
+    ([review("rejected", "2026-09-26T10:00:00Z")], "rejected"),
+    # the same instant written with different offsets: conflicting decisions stay conservative
+    ([review("confirmed", "2026-09-26T10:00:00Z"), review("downgraded", "2026-09-26T06:00:00-04:00")], "rejected"),
+    # 10:00-04:00 is 14:00Z, later than 13:00Z
+    ([review("downgraded", "2026-09-26T13:00:00Z"), review("confirmed", "2026-09-26T10:00:00-04:00")], "confirmed"),
+    ([review("confirmed", "2026-09-26T10:00:00Z", record_id="A#0")], "needs_review"),  # an endpoint review
+    ([review("confirmed", "2026-09-26T10:00:00Z", record_id="A__C")], "needs_review"),  # another pair
+    ([review("note", "2026-09-26T10:00:00Z")], "needs_review"),  # irrelevant verdict
+    ([review("confirmed", "2026-09-26T10:00:00")], "needs_review"),  # no timezone: can't be ordered
+])
+def test_audit_verdicts_apply_to_review_state(reviews, state):
+    for order in (reviews, reviews[::-1]):  # append-only reviews: file order must not matter
+        [m] = stage({"matches": [MATCH], "reviews": order}, "ds")["matches"]
+        assert m["review_state"] == state
+
+
+def test_reviews_are_preserved_and_producer_records_untouched():
+    reviews = [review("confirmed", "2026-09-26T10:00:00Z"), review("note", "2026-09-26T09:00:00Z")]
+    staged = stage({"matches": [MATCH], "reviews": reviews}, "ds")
+    assert [r["id"] for r in staged["reviews"]] == [r["_id"] for r in reviews]
+    assert MATCH["review_state"] == "needs_review"
+
+
+# --- #43: a passed brief is served only while its input_hash matches the current facts -------------------------------
+
+def fake_hash(match_id, ready):
+    """Stand-in for F12's builder: hashes the match (minus review_state) and both joined projects."""
+    [m] = [{k: v for k, v in m.items() if k != "review_state"} for m in ready["matches"] if m["_id"] == match_id]
+    ps = sorted((p for p in ready["projects"] if p["project_key"] in (m["a"], m["b"])), key=lambda p: p["_id"])
+    return hashlib.sha256(json.dumps([m, ps], sort_keys=True).encode()).hexdigest()
+
+
+def make_brief(records, validation="passed"):
+    mid = records["matches"][0]["_id"]
+    ready = {"matches": records["matches"], "projects": join_projects(records["projects"], records["locations"])}
+    return {"_id": f"brief-{validation}", "match_id": mid, "input_hash": fake_hash(mid, ready), "model": "m",
+            "prompt_version": "p", "generated_at": "2026-09-26T10:00:00Z", "supported_facts": [],
+            "possible_shared_activities": [], "questions": [], "limitations": [], "validation": validation}
+
+
+def staged_brief(records, b, hash_fn=fake_hash):
+    [out] = stage({**records, "briefs": [b]}, "ds", hash_fn)["briefs"]
+    return out
+
+
+def edit_first_project(records, fn):
+    key = records["matches"][0]["a"]
+    return {**records, "projects": [fn(p) if p["project_key"] == key else p for p in records["projects"]]}
+
+
+def edit_first_match(records, **kw):
+    return {**records, "matches": [records["matches"][0] | kw, *records["matches"][1:]]}
+
+
+def test_unchanged_input_keeps_passed_brief(data_root):
+    records, _, _ = collect(data_root)
+    b = staged_brief(records, make_brief(records))
+    assert b["validation"] == "passed" and "source_validation" not in b
+
+
+@pytest.mark.parametrize("change", [
+    lambda r: edit_first_project(r, lambda p: p | {"in_service": {**p["in_service"], "date": "2030-01-01"}}),
+    lambda r: edit_first_project(r, lambda p: p | {"description": "changed description"}),
+    lambda r: edit_first_match(r, distance_mi=7.5),  # location-derived distance
+    lambda r: edit_first_match(r, time_gap_days=1, band=1),
+    lambda r: {**r, "locations": [loc | {"lon": loc["lon"] + 0.01} if loc.get("lon") is not None else loc
+                                  for loc in r["locations"]]},
+])
+def test_changed_input_makes_passed_brief_ineligible(data_root, change):
+    records, _, _ = collect(data_root)
+    b = staged_brief(change(records), make_brief(records))
+    assert (b["validation"], b["source_validation"]) == ("rejected", "passed")
+    assert b["rejection_reason"] == "stale: input facts changed since generation"
+
+
+def test_unverifiable_or_orphaned_briefs_fail_closed(data_root):
+    records, _, _ = collect(data_root)
+    assert staged_brief(records, make_brief(records), None)["rejection_reason"].startswith("unverified")
+    orphan = make_brief(records) | {"match_id": "X__Y"}
+    assert staged_brief(records, orphan)["rejection_reason"] == "stale: match is not in this dataset"
+    rejected = make_brief(records, "rejected") | {"rejection_reason": "number not in input"}
+    assert staged_brief(records, rejected) == {**rejected, "_id": "ds:brief-rejected", "id": "brief-rejected",
+                                               "dataset": "ds"}

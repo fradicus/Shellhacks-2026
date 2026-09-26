@@ -11,6 +11,7 @@ import type {
   PairDetail,
   Project,
   Review,
+  Run,
   Source,
   VersionChange,
   View,
@@ -91,7 +92,24 @@ export const sources = (db: Db, dataset: string) => find<Source>(db, "sources", 
 
 export const coverage =(db: Db, dataset: string) => find<Coverage>(db, "coverage", { dataset }, { sort: { id: 1 } });
 
-export const extractions = (db: Db, dataset: string, q: { source?: string }) =>
+/** Every brief, passed and rejected (stale or unverified passed briefs are stored as rejected by the loader). */
+export const briefs = (db: Db, dataset: string) =>
+  find<Brief>(db, "briefs", { dataset }, { sort: { match_id: 1, generated_at: 1, id: 1 } });
+
+/**
+ * The latest run of any dataset. Runs aren't dataset-namespaced (`_id: load:<sha>`), so they're read as stored, and
+ * only the public Run fields: never `errors`, which can hold exception text.
+ */
+export const latestRun = (db: Db) =>
+  db.collection<Run>("runs").findOne(
+    {},
+    {
+      sort: { started_at: -1, _id: -1 },
+      projection: { _id: 1, stage: 1, started_at: 1, finished_at: 1, status: 1, counts: 1, dataset: 1 },
+    },
+  );
+
+export const extractions =(db: Db, dataset: string, q: { source?: string }) =>
   find<Extraction>(db, "extractions", q.source ? { dataset, source_id: q.source } : { dataset }, {
     sort: { source_id: 1, page: 1 },
   });

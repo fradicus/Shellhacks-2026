@@ -25,10 +25,19 @@ const json = (body: unknown, status = 200) =>
  * Parse query params strictly (unknown params -> 400), open the active dataset, run `fn`.
  * Database problems -> 503 {unavailable: true}; never fixtures.
  */
-export async function handle<T>(
+export function handle<T>(
   req: Request,
   schema: z.ZodType<T>, // build with z.strictObject so unknown params fail
   fn: (q: T, db: Db, dataset: string) => Promise<unknown>,
+): Promise<Response> {
+  return handleDb(req, schema, async (q, db) => fn(q, db, await activeDataset(db)));
+}
+
+/** `handle` without requiring an active dataset: only for data that isn't dataset-scoped (runs). */
+export async function handleDb<T>(
+  req: Request,
+  schema: z.ZodType<T>,
+  fn: (q: T, db: Db) => Promise<unknown>,
 ): Promise<Response> {
   const params = Object.fromEntries(new URL(req.url).searchParams);
   const parsed = schema.safeParse(params);
@@ -37,8 +46,7 @@ export async function handle<T>(
   }
   try {
     const db = await getDb();
-    const dataset = await activeDataset(db);
-    const body = await fn(parsed.data, db, dataset);
+    const body = await fn(parsed.data, db);
     return body === null ? json({ error: "not found" }, 404) : json(body);
   } catch (err) {
     const reason = err instanceof DbUnavailable ? err.message : "database error";
