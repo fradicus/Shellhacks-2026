@@ -111,6 +111,64 @@ def test_failed_validation_does_not_flip(data_root):
     assert db.matches.count_documents({"dataset": "bad"}) == 0
 
 
+class FailingInserts:
+    """Wraps a mongomock db; insert_many on `coll` raises, like a dropped connection mid-load."""
+
+    def __init__(self, db, coll):
+        self._db, self._coll = db, coll
+
+    def __getattr__(self, name):
+        return getattr(self._db, name)
+
+    def __getitem__(self, name):
+        c = self._db[name]
+        if name != self._coll:
+            return c
+
+        class Broken:
+            def __getattr__(self, attr):
+                if attr == "insert_many":
+                    def boom(*a, **k):
+                        raise ConnectionError("simulated")
+                    return boom
+                return getattr(c, attr)
+
+        return Broken()
+
+
+def test_reloading_active_sha_is_a_no_op_even_if_writes_would_fail(data_root):
+    db = mongomock.MongoClient().db
+    records, errors, _ = collect(data_root)
+    assert load(db, records, errors, "sha1") == 0
+    before = db.sources.count_documents({"dataset": "sha1"})
+    assert load(FailingInserts(db, "sources"), records, errors, "sha1") == 0
+    assert db.sources.count_documents({"dataset": "sha1"}) == before > 0
+    assert db.meta.find_one({"_id": "active"})["dataset"] == "sha1"
+
+
+def test_write_failure_keeps_served_dataset(data_root):
+    db = mongomock.MongoClient().db
+    records, errors, _ = collect(data_root)
+    assert load(db, records, errors, "sha1") == 0
+    served = db.matches.count_documents({"dataset": "sha1"})
+    assert load(FailingInserts(db, "sources"), records, errors, "sha2") == 1
+    assert db.meta.find_one({"_id": "active"})["dataset"] == "sha1"
+    assert db.matches.count_documents({"dataset": "sha1"}) == served
+    run = db.runs.find_one({"_id": "load:sha2"})
+    assert run["status"] == "failed" and "ConnectionError" in run["errors"][0]
+    assert load(db, records, errors, "sha2") == 0  # a later retry of the failed sha still loads
+
+
+def test_non_object_entries_are_errors_and_block_activation(data_root):
+    write(data_root, "data/projects/mixed.json", [load_json(FIX / "projects.json")[0] | {"_id": "X@y"}, None])
+    records, errors, skipped = collect(data_root)
+    assert any("data/projects/mixed.json[1]: not a JSON object" in e for e in errors)
+    assert "data/projects/mixed.json" not in skipped
+    db = mongomock.MongoClient().db
+    assert load(db, records, errors, "sha1") == 1
+    assert db.meta.find_one({"_id": "active"}) is None
+
+
 def test_filed_endpoints_kept_apart_from_locations(data_root):
     records, _, _ = collect(data_root)
     p = dict(records["projects"][0])

@@ -39,38 +39,44 @@ def ensure_indexes(db: Any) -> None:
     db.version_changes.create_index([("dataset", ASCENDING), ("project_key", ASCENDING)])
 
 
+def _run(db: Any, dataset: str, started: str, status: str, counts: dict, errors: list[str] | None = None) -> None:
+    doc = {"_id": f"load:{dataset}", "stage": "load", "dataset": dataset, "started_at": started,
+           "finished_at": _now(), "status": status, "counts": counts}
+    if errors:
+        doc["errors"] = errors[:50]
+    db.runs.replace_one({"_id": doc["_id"]}, doc, upsert=True)
+
+
 def load(db: Any, records: dict[str, list[dict]], errors: list[str], dataset: str) -> int:
     started = _now()
     counts: dict[str, Any] = {coll: len(records.get(coll, [])) for coll in [*COLLECTIONS, "locations"]}
     if errors:
         counts["errors"] = len(errors)
-        db.runs.replace_one(
-            {"_id": f"load:{dataset}"},
-            {"_id": f"load:{dataset}", "stage": "load", "dataset": dataset, "started_at": started,
-             "finished_at": _now(), "status": "failed", "counts": counts, "errors": errors[:50]},
-            upsert=True,
-        )
+        _run(db, dataset, started, "failed", counts, errors)
         return 1
-    ensure_indexes(db)
-    for coll, docs in stage(records, dataset).items():
-        # Rewrite this dataset wholesale: reloading the same sha yields the same documents (idempotent).
-        db[coll].delete_many({"dataset": dataset})
-        if docs:
-            db[coll].insert_many(docs, ordered=False)
     meta = db.meta.find_one({"_id": "active"}) or {}
-    previous = meta.get("previous") if meta.get("dataset") == dataset else meta.get("dataset")
+    if meta.get("dataset") == dataset or db.runs.find_one({"_id": f"load:{dataset}", "status": "ok"}):
+        # A sha's data never changes: a completed or active dataset is left exactly as served (no rewrite window).
+        print(f"load: dataset {dataset} already loaded; nothing to do")
+        return 0
+    try:
+        ensure_indexes(db)
+        for coll, docs in stage(records, dataset).items():
+            # Not active yet, so clearing leftovers from an earlier failed attempt can't affect readers.
+            db[coll].delete_many({"dataset": dataset})
+            if docs:
+                db[coll].insert_many(docs, ordered=False)
+    except Exception as e:  # noqa: BLE001 - any write failure must leave the active dataset untouched
+        _run(db, dataset, started, "failed", counts, [f"write failed: {type(e).__name__}"])
+        return 1
+    previous = meta.get("dataset")
     db.meta.replace_one(
         {"_id": "active"}, {"_id": "active", "dataset": dataset, "previous": previous, "loaded_at": started}, upsert=True
     )
     keep = [d for d in (dataset, previous) if d][:KEEP_DATASETS]
     for coll in COLLECTIONS:
         db[coll].delete_many({"dataset": {"$nin": keep}})
-    db.runs.replace_one(
-        {"_id": f"load:{dataset}"},
-        {"_id": f"load:{dataset}", "stage": "load", "dataset": dataset, "started_at": started,
-         "finished_at": _now(), "status": "ok", "counts": counts},
-        upsert=True,
-    )
+    _run(db, dataset, started, "ok", counts)
     return 0
 
 
