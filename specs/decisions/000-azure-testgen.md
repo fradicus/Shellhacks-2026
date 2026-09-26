@@ -41,6 +41,11 @@ This conflicts with two standing rules:
   `tests/**`.
 - Scope: pipeline tests only. Secrets (`OPENAI_API_KEY`, `GITHUB_BOT_PAT`) live in an Azure
   DevOps variable group, never in the repo.
+- Follow-up (operator, 2026-09-26 evening): the generator talks to Gemini through Google's
+  OpenAI-compatible endpoint (`OPENAI_BASE_URL`, `TESTGEN_MODEL` in the variable group) instead
+  of an OpenAI key; `ci/generate_tests.py` is unchanged. Jobs run on a self-hosted agent in the
+  `Default` pool because the new org has no Microsoft-hosted parallelism grant, so the
+  `UsePythonVersion` task (hosted tool cache only) is dropped and the agent's own Python 3.12 is used.
 
 ## How to undo
 

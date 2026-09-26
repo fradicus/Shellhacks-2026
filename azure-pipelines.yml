@@ -9,7 +9,9 @@
 # re-validates the generated tests on synchronize.
 #
 # Secrets live in the `testgen-secrets` variable group (Pipelines -> Library):
-#   OPENAI_API_KEY   - OpenAI API key for generation
+#   OPENAI_API_KEY   - key for the OpenAI-compatible endpoint (currently a Gemini API key)
+#   OPENAI_BASE_URL  - https://generativelanguage.googleapis.com/v1beta/openai/ for Gemini
+#   TESTGEN_MODEL    - model id served by that endpoint, e.g. the repo's GEMINI_MODEL
 #   GITHUB_BOT_PAT   - fine-grained PAT, this repo only, Contents: read/write
 
 trigger:
@@ -32,10 +34,10 @@ trigger:
 
 pr: none # GitHub Actions owns PR validation; Azure adds test generation on top
 
-pool:
-  vmImage: ubuntu-latest
-  # Self-hosted alternative (no parallelism grant needed): `pool: Default`.
-  # The bash: steps below work on Windows agents via Git Bash.
+# Self-hosted agent (new orgs get no Microsoft-hosted parallelism without a grant). The agent must
+# provide Python 3.12 and Git Bash on PATH; bash: steps run under Git Bash on Windows agents.
+# Microsoft-hosted alternative once the grant lands: `pool: { vmImage: ubuntu-latest }`.
+pool: Default
 
 variables:
   - group: testgen-secrets
@@ -51,10 +53,6 @@ stages:
             fetchDepth: 0 # the generator diffs against origin/main
             persistCredentials: false # pushes use the bot PAT, never the pipeline identity
 
-          - task: UsePythonVersion@0
-            inputs:
-              versionSpec: "3.12"
-
           - bash: python -m pip install -r ci/requirements.txt uv
             displayName: "Install testgen tooling (openai, uv)"
 
@@ -67,6 +65,8 @@ stages:
             displayName: "Generate tests from branch diff"
             env:
               OPENAI_API_KEY: $(OPENAI_API_KEY)
+              OPENAI_BASE_URL: $(OPENAI_BASE_URL)
+              TESTGEN_MODEL: $(TESTGEN_MODEL)
 
           - bash: python ci/validate_new_tests.py
             displayName: "Prune any failing auto tests"
@@ -95,10 +95,6 @@ stages:
       - job: Checks
         steps:
           - checkout: self
-
-          - task: UsePythonVersion@0
-            inputs:
-              versionSpec: "3.12"
 
           - bash: python -m pip install uv
             displayName: "Install uv"
