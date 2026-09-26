@@ -176,6 +176,13 @@ export function getVersionChanges(): Promise<Result<VersionChange[]>> {
   );
 }
 
+/** Source documents (filings), for citing names, pages and public URLs. */
+export function getSources(): Promise<Result<Source[]>> {
+  return guard("getSources", async () =>
+    isFixtureMode() ? fixture<Source>("sources") : ((await api<Source[]>("/api/sources")) ?? []),
+  );
+}
+
 export function getCoverage(): Promise<Result<Coverage[]>> {
   return guard("getCoverage", async () =>
     isFixtureMode() ? fixture<Coverage>("coverage") : ((await api<Coverage[]>("/api/coverage")) ?? []),
