@@ -42,7 +42,7 @@ def collect(root: Path) -> tuple[dict[str, list[dict]], list[str], list[str]]:
         if not base.is_dir():
             continue
         for path in sorted(base.rglob("*.json")):
-            rel = str(path.relative_to(root))
+            rel = path.relative_to(root).as_posix()  # same diagnostics on Windows workers
             try:
                 recs = _records_in(load_json(path))
             except ValueError as e:
