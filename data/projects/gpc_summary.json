@@ -1,0 +1,61 @@
+{
+  "ambiguous_rows": 0,
+  "coverage_note": "full_current_plan",
+  "denominator_rows": 208,
+  "duplicate_native_ids": [],
+  "duplicate_project_keys": [],
+  "endpoint_ambiguous_rows": 8,
+  "excluded_tables": [
+    {
+      "page": 191,
+      "reason": "Separate cancelled-projects table; rows are removed from the current Ten-Year Plan."
+    }
+  ],
+  "mapped_owner_rows": 138,
+  "rows_emitted": 208,
+  "rows_per_owner_code": {
+    "DU": 2,
+    "GPC": 122,
+    "GTC": 54,
+    "MEAG": 14,
+    "SAV": 16
+  },
+  "rows_per_zone": {
+    "201": 20,
+    "202": 10,
+    "206": 14,
+    "208": 22,
+    "211": 14,
+    "212": 28,
+    "213": 15,
+    "214": 32,
+    "215": 13,
+    "216": 18,
+    "218": 6,
+    "219": 16
+  },
+  "source_contradictions": [
+    {
+      "current_table": {
+        "need_date": "6/1/2028",
+        "page": 184,
+        "table_status": "current"
+      },
+      "name": "PITTMAN ROAD - WEST POINT DAM (USA) 115KV REBUILD",
+      "native_id": "20482",
+      "other_table": {
+        "need_date": "6/1/2031",
+        "page": 191,
+        "table_status": "cancelled"
+      },
+      "resolution": "review_required"
+    }
+  ],
+  "source_id": "gpc-2025",
+  "table": "GA ITS Ten-Year Plan (2025-2034)",
+  "table_pages": {
+    "first": 177,
+    "last": 190
+  },
+  "unknown_owner_rows": 70
+}
