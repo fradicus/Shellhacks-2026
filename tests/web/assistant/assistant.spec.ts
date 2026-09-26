@@ -8,7 +8,7 @@ test("offline command changes the real explorer and undo restores the previous f
   await panel.getByLabel("What would you like to see?").fill("show projects in Massachusetts");
   await panel.getByRole("button", { name: "Apply command" }).click();
   await expect(page).toHaveURL(/\/assistant\?region=1&state=25/);
-  await expect(page.getByLabel("State or territory", { exact: true })).toHaveValue("25");
+  await expect(page.getByRole("combobox", { name: "State or territory", exact: true })).toHaveValue("25");
   await expect(panel).toContainText("matching imported records");
   await page.screenshot({ path: testInfo.outputPath("assistant-desktop.png") });
   await panel.getByRole("button", { name: "Undo last change" }).click();
