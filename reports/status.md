@@ -1,49 +1,45 @@
 # GridBridge build status
 
-Checkpoint: 2026-09-26 09:40 EDT. Analysis date: 2026-09-26.
+Checkpoint: 2026-09-26 10:10 EDT. Analysis date: 2026-09-26.
 
 ## Current result
 
-Main `66ca6b8` contains F00–F11, F14 and F16 completion markers. F12, F13, F15 and final F18 acceptance remain. The latest completed feature is [F10 / PR68](https://github.com/fradicus/Shellhacks-2026/pull/68); [F09 / PR46](https://github.com/fradicus/Shellhacks-2026/pull/46) is also merged. Their exact final heads passed required CI and browser smoke checks. Main CI must remain green before each subsequent merge; a green load workflow does not establish a live Atlas write.
+Main `b914b9c` contains F00–F12, F14 and F16 completion markers. [F12 / PR70](https://github.com/fradicus/Shellhacks-2026/pull/70) merged with exact-head CI and browser smoke checks green. The prior main `a89b459` was green; the new main CI must pass before another merge. F13, F15, loader corrections and final F18 acceptance remain.
 
-The committed matcher evaluated 656 centered cross-utility pairs from 7,452 known-owner combinations and produced 19 candidates: 16 historical, three tentative, zero future. All are `needs_review`. Its 250 pipeline tests, web lint/typecheck/fixture build, ownership checks, deterministic replay, independent 21-case malformed-input review and independent full-corpus arithmetic comparison passed. The sponsor fixture still reproduces six overlaps, 19 exclusions and the required ranking.
+The matcher retains 19 candidates (16 historical, three tentative, zero future) from 656 centered pairs and 7,452 known-owner combinations. All producer records are `needs_review`. There are 262 active projects, 400 filed endpoints, 89 medium-confidence locations and 311 rejected locations. No accepted location has high confidence or independently verified project-area identity.
 
-F09 reviewed 400 filed endpoints across 262 active projects: 89 medium, 311 rejected, with 24 projects retaining no unambiguous filed endpoints. All accepted locations retain `project_area_unverified`; none is high confidence. Its four correction checks and full-evidence digest were accepted independently, all raw cache hashes stayed unchanged, and 402 provisional review events were preserved before 400 actual-UTC successors were appended.
+F12 adds grounded brief validation, typed numeric citations, bounded optional transport/cache behavior and a pure current-fact hash callback. Full local checks passed with 291 pipeline tests; the final rebased head passed CI/e2e. Two independently found numeric citation bypasses were corrected and retested. An additional independent 73-check review covered all 19 real matches. The committed offline run selects 15 historical pairs, makes zero calls and emits zero briefs; model and live accuracy remain unavailable.
 
 ## Active work and timing
 
-- Windows Codex: F12 grounded briefs implementation has been dispatched from merged F10. Live Gemini remains explicitly deferred; zero-call offline behavior and current-fact hashing are the release scope.
-- Windows Codex: [F13 / PR69](https://github.com/fradicus/Shellhacks-2026/pull/69) is an active read-only QA claim opened before the phase-2 gate. The final merged selection passes 21 independent math/selection checks. Its top 15 pairs use 14 endpoint records and 10 source projects. Artifact/test writes follow F12, preserving one implementation feature at a time. County/project-area correlation is unresolved, so the proposed outcome is conservative downgrades with no confirmations.
-- F15 coverage is prepared and follows F13. Final local integration and the F08 command documentation follow the merged pipeline stages. Submission drafts now exist; they remain drafts and are not submitted.
-- The user requested an expedited completion. Optional F17 impact scenarios will not be started for this core handoff. Core correctness checks and evidence limits remain required. No feature is claimed by two active workers and no stale PR was closed or reassigned.
-- Original run start: 04:45 EDT; no-new-phase-2 gate: 09:45; freeze: 11:15; final report gate: 12:15; hard stop: 12:45. F13 has started; never-cut F12 remains required. F18 has no completion marker or STOP yet.
+- The user confirmed the remote Claude worker stopped. [C8 / PR72](https://github.com/fradicus/Shellhacks-2026/pull/72) transfers only the remaining F06 corrections to Windows Codex, retaining lane B / technical-lead. Original Claude delivery history is preserved. No active worker shares the feature.
+- F06 correction addresses [issue66](https://github.com/fradicus/Shellhacks-2026/issues/66) and [issue43](https://github.com/fradicus/Shellhacks-2026/issues/43): every newest tied audit must have a current supported fingerprint; missing reviews cannot preserve producer confirmation; endpoint linkage must agree; the F12 hash callback becomes the loader default. Independent adversarial harnesses will verify the repair before merge.
+- [F13 / PR69](https://github.com/fradicus/Shellhacks-2026/pull/69) started before the 09:45 phase-2 gate. Its read-only source and math checks are complete. Artifact/test writes follow the safe loader correction. The prepared outcome is 29 confidence downgrades (15 pairs and 14 endpoints), zero confirmations. The remaining four pairs stay unreviewed.
+- F15 coverage follows F13. Final F08 command documentation and a committed-data local MongoDB integration check follow the completed stages. Submission files are drafts and have not been submitted.
+- Optional F17 is not started. C8 permits early final acceptance once the non-stretch work and core fixes are verified complete or allowed cuts recorded; final integration and honest service limits remain required.
+- Run start 04:45; phase-2 gate 09:45; freeze 11:15; scheduled final report 12:15; hard stop 12:45 EDT. At this checkpoint 1h05 remains to freeze, 2h05 to scheduled reporting and 2h35 to hard stop. No STOP or F18 completion marker exists.
 
 ## Models and ownership
 
 | Role | Runtime/model |
 |---|---|
-| Coordinator/CEO | Windows Codex, GPT-6 Astra |
-| Data and geospatial implementation | GPT-5.6 Sol high |
+| Coordinator/CEO and final independent review | Windows Codex, GPT-6 Astra |
+| Geospatial, coverage and release implementation | GPT-5.6 Sol high |
 | Gemini engineering and independent source audit | GPT-6 Astra high |
-| Release, coverage and isolated technical work | GPT-5.6 Sol high |
-| Earlier independent data/math review | GPT-6 Astra xhigh |
-| App/bootstrap/shared contracts | Remote Claude owner; F00 records `claude-opus-5-5` |
-| F07 browser QA | Mac Codex; runtime controlled on that machine |
+| Current F06 correction | GPT-5.6 Sol high, independent Astra review |
+| Original app/bootstrap/loader | Remote Claude; F00 records `claude-opus-5-5`; worker now stopped |
+| F07 browser QA | Mac Codex, model controlled on that machine |
 
-The historical Plan E role/skill package was validated and its relevant skills applied. Root specs override its old paths, planning-only restrictions and schedule. Coding models are distinct from the application Gemini model, which remains null without live execution. Draft PRs are the cross-computer ownership claims; source documents and shared contracts remain protected.
+Relevant role skills and Graphify are used; current root specs override historical Plan E paths and schedule. Product Gemini model metadata is separate from coding-agent model selection. One Windows implementation feature runs at a time, with bounded read-only review in parallel and F18 reporting checkpoints in a separate worktree.
 
-## Remaining integration risks
+## Evidence and remaining limits
 
-- [Issue66](https://github.com/fradicus/Shellhacks-2026/issues/66): merged F06 audit guards still allow order-dependent timestamp ties, producer-supplied confirmation without reviews, unsupported fingerprint versions, and contradictory linkage in the pure endpoint subject helper. The remote owner was tagged and given a minimal repair proposal. Independent 26-case and integrated-schema reproductions remain available. No production pair is currently confirmed, and F13 will not invent approval bindings.
-- [Issue43](https://github.com/fradicus/Shellhacks-2026/issues/43): F12 must publish its pure current-fact hash helper and F06 must wire it as the loader default. Passed briefs currently fail closed without this helper; none exists in the real corpus yet.
-- Live Gemini, Atlas, Vercel and qualifying domain/HTTPS evidence are deferred by the user's explicit instruction, tracked in [issue10](https://github.com/fradicus/Shellhacks-2026/issues/10). Real Gemini calls/outputs remain zero and accuracy null. No live deployment is claimed.
-- Root's earlier local Next server launch was rejected by automatic approval review. It was not retried through another launch path. CI/remote browser evidence and direct handler imports are used. The local loopback MongoDB QA instance is not Atlas: its existing baseline is unchanged, health responds through a direct import, and final data reload waits for the integrated committed revision.
-- [Issue23](https://github.com/fradicus/Shellhacks-2026/issues/23): root MapLibre GA/SC scope remains the implementation basis; no national or 3D coverage is claimed.
+The independent F13 calculation gives 21/21 full-set, uniqueness and pair-math checks. Its top 15 pairs use 10 source projects and 14 endpoint records representing nine cached OSM objects. Two DESC cards and eight native-ID-anchored Georgia rows were independently checked. Stored coordinates and independent states agree for 14/14; 13 operator tags support the attribution and Jasper has no operator tag. County/project-area identity remains unverified for all 14. No live OSM page fetch was performed. These are confidence downgrades, not proven wrong coordinates.
 
-## Evidence and acceptance limits
+Twelve purposive DESC cards give 108/108 source-to-register agreement across nine non-location field groups. This is not Gemini accuracy or a corpus-wide estimate. Original pre-PR52 endpoint observations remain historical; the refreshed snapshot shows the two scope findings corrected. Georgia publication remains within D2 table-field limits.
 
-The source-audit preparation independently read the two featured DESC cards and eight Georgia table rows, checked 14 endpoint coordinates against hash-verified raw OSM, and checked states independently. County/project-area evidence remains insufficient. Twelve purposively selected DESC cards retain 108/108 agreement across nine non-location field groups; this is not Gemini accuracy or a corpus-wide accuracy estimate. The pre-correction endpoint snapshot is labeled separately; merged PR52 resolved its two scope findings.
+Live Gemini, Atlas, Vercel and qualifying domain/HTTPS evidence were explicitly deferred by the user; [issue10](https://github.com/fradicus/Shellhacks-2026/issues/10) remains open. Real model calls/outputs are zero, model accuracy null, and no public deployment is claimed. Local MongoDB QA does not establish Atlas use. [Issue23](https://github.com/fradicus/Shellhacks-2026/issues/23) records the root MapLibre GA/SC scope; no national or 3D coverage is claimed.
 
-F01 scope, F03 synthetic fixture identity, F04 canonical-distance use, F06 version binding, and F16 mobile layout corrections are merged. The final F09 accepted coordinates did not change. Completed source corrections preserve filing history. The exact F10 summary is `data/matches/summary.json`; F09 denominators are `data/locations/coverage.json`.
+Automatic approval review previously rejected a local Next server launch and later temporary dependency-link cleanup. Neither operation was retried through another method. Clean CI builds/browser checks and direct health-handler imports provide the available evidence. The blocked link remains untouched; future worktrees use ordinary local dependencies.
 
-Final acceptance, the integrated local load, final coverage and final submission checks remain outstanding. No completion is implied by this checkpoint.
+Final integrated acceptance and final submission checks remain outstanding. This checkpoint is not completion.
