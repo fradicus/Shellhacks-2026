@@ -1,13 +1,23 @@
+import Link from "next/link";
 import { Table, UtilityBadge } from "@/components/ui";
 import type { Project } from "@/lib/types";
 import s from "./list.module.css";
 
 /** Every project as a plain table: the accessible fallback when map tiles fail. */
-export function ProjectTable({ projects }: { projects: Project[] }) {
+export function ProjectTable({ projects, superseded = 0 }: { projects: Project[]; superseded?: number }) {
   const rows = [...projects].sort((a, b) => a.utility.localeCompare(b.utility) || a.name.localeCompare(b.name));
   return (
     <details className={s.table}>
-      <summary>All projects ({projects.length}), as a table</summary>
+      <summary>
+        Current projects ({projects.length}), as a table
+        {superseded ? ` · ${superseded} older filing version${superseded === 1 ? "" : "s"} not shown` : ""}
+      </summary>
+      {superseded ? (
+        <p className={s.note}>
+          Each project appears once, from its latest filing. Earlier versions are on{" "}
+          <Link href="/changes">Filing changes</Link> and in each pair&apos;s evidence.
+        </p>
+      ) : null}
       <Table>
         <thead>
           <tr>

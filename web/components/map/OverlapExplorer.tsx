@@ -18,13 +18,15 @@ const VIEW_HELP: Record<View, string> = {
 export function OverlapExplorer(props: {
   matches: MatchRow[];
   projects: Project[];
+  /** Older filing versions of these projects, not shown as current projects. */
+  superseded: number;
   counts: Record<View, number>;
   initialView: View;
   analysisDate: string;
   sources: string[];
   fixtureMode: boolean;
 }) {
-  const { matches, projects, counts, initialView, analysisDate, sources, fixtureMode } = props;
+  const { matches, projects, superseded, counts, initialView, analysisDate, sources, fixtureMode } = props;
   const [view, setView] = useState<View>(initialView);
   const [order, setOrder] = useState<Order>("priority");
   const [selection, setSelection] = useState<Selection>(null);
@@ -95,7 +97,7 @@ export function OverlapExplorer(props: {
         </div>
       </div>
 
-      <ProjectTable projects={projects} />
+      <ProjectTable projects={projects} superseded={superseded} />
     </main>
   );
 }
