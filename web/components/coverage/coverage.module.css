@@ -1,0 +1,57 @@
+.page { display: flex; flex-direction: column; gap: 18px; max-width: 1220px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 360px); gap: 24px; align-items: end; padding: 22px; color: #f7fffd; background: linear-gradient(125deg, #12312e 0%, #0f5f59 62%, #0f766e 100%); border-radius: 10px; box-shadow: 0 8px 30px rgb(15 55 51 / 12%); }
+.hero h1 { margin: 2px 0 6px; font-size: 30px; letter-spacing: -0.025em; }
+.hero p { max-width: 72ch; margin: 0; color: #d8efec; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 11px; font-weight: 700; }
+.reviewBox { display: flex; flex-direction: column; gap: 3px; padding: 14px; background: rgb(255 255 255 / 10%); border: 1px solid rgb(255 255 255 / 22%); border-radius: 8px; }
+.reviewBox span, .reviewBox small { color: #d8efec; }
+.reviewBox strong { font-size: 17px; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0; }
+.metric { padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.metric dt { color: var(--muted); font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.04em; }
+.metric dd { margin: 2px 0 0; font-size: 27px; font-weight: 700; }
+.metric p { margin: 0; color: var(--muted); font-size: 12px; }
+.run { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 12px 16px; background: #edf8f6; border: 1px solid #badbd6; border-radius: var(--radius); }
+.run h2, .run h3, .run p { margin: 0 0 3px; }
+.sourceGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.sourceCard { min-width: 0; padding: 15px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.sourceHead { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.sourceHead h3 { margin: 0; font-size: 16px; }
+.sourceHead p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+.bars { display: flex; flex-direction: column; gap: 8px; margin: 14px 0; }
+.barLabel { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; }
+.track { height: 7px; margin-top: 3px; overflow: hidden; background: var(--surface-2); border-radius: 999px; }
+.track span { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+.compactStats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.compactStats div { padding: 7px; background: var(--surface-2); border-radius: 4px; }
+.compactStats dt { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.03em; }
+.compactStats dd { margin: 2px 0 0; font-weight: 650; font-variant-numeric: tabular-nums; }
+.flags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; color: var(--muted); font-size: 11px; }
+.flags code { padding: 2px 5px; background: var(--warn-bg); color: var(--warn); border-radius: 3px; }
+.unlocated { margin-top: 10px; border-top: 1px solid var(--border); padding-top: 8px; }
+.unlocated summary { cursor: pointer; font-weight: 600; }
+.unlocated ul { max-height: 240px; overflow: auto; margin: 8px 0 0; padding-left: 18px; }
+.unlocated li { margin: 3px 0; }
+.quality { display: flex; flex-direction: column; gap: 8px; }
+.evidenceGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.evidenceGrid article { padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.evidenceGrid h3, .evidenceGrid p { margin: 0 0 4px; }
+.note, .publisher { color: var(--muted); font-size: 12px; }
+
+@media (max-width: 760px) {
+  .hero, .run, .sourceGrid, .evidenceGrid { grid-template-columns: 1fr; }
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .compactStats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 420px) {
+  .page { gap: 14px; }
+  .hero { padding: 17px; }
+  .hero h1 { font-size: 26px; }
+  .metrics { grid-template-columns: 1fr 1fr; gap: 7px; }
+  .metric { padding: 10px; }
+  .metric dd { font-size: 22px; }
+  .sourceCard { padding: 12px; }
+  .sourceHead { flex-direction: column; }
+  .barLabel { align-items: flex-start; flex-direction: column; gap: 1px; }
+}

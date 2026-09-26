@@ -22,3 +22,15 @@ Sperry's AI team hires for extraction + validation. This page shows ours, with d
 
 ## Defaults
 - A missing input (e.g. F03 unavailable) shows as "not available", never as 0%.
+
+## Implemented counting contract
+- Project denominators are filing versions grouped by `source_id`; active and inactive versions remain separate. The
+  sponsor sample is a fixture reference with canonical coverage `N/A`, and an empty real source is `not ingested`.
+- Location records include accepted and rejected candidates. Accepted endpoint and located-project totals exclude
+  `confidence: rejected`; every confidence category remains visible.
+- Match attribution uses F10's explicit project/source bindings. Raw producer states and F06's effective staged review
+  states are reported separately, and the F13 audit counts remain distinct from automatic extraction reviews.
+- Gemini evaluation and the F13 source spot check are global evidence. Missing artifacts produce JSON `null` and UI
+  `N/A`; a zero denominator never becomes a percentage.
+- Coverage records come from the active dataset. The latest load attempt is labeled separately because a failed attempt
+  does not replace the active pointer.
