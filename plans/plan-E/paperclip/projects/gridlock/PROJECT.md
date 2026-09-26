@@ -1,38 +1,38 @@
-# Plan E — GridBridge
+---
+name: "GridBridge"
+description: "Public utility overlap evidence and coordination roadmap for four ShellHacks tracks."
+owner: "technical-lead"
+---
 
-**Plan B is the backbone.** GridBridge turns public utility plans into a reviewable shortlist of nearby projects, with original evidence and questions that help planners coordinate crews, equipment and freight. Plan E keeps B's product, provenance, Gemini and track strategy; adds A's runnable company structure and C's planner handoff; and reduces the build to one web application and one batch pipeline.
+# GridBridge project charter
 
-Prepared September 26, 2026 for Sperry Tech **Gridlock**, MLH **Best Use of Gemini API**, **Best Use of MongoDB Atlas**, and **Best Domain Name from GoDaddy Registry**. This delivery contains planning documents, agent instructions and verification scripts only. It creates no application, running company, cloud resources or domain. The original delivery was prepared without making a commit; the user subsequently requested committing the completed package. Plan D was not read.
+This is the self-contained build contract for the imported company. Plan B is the preferred foundation. The human must authorize kickoff; import does not start the build. Source docs are read-only and implementation files belong under `plans/plan-E/implementation/`. Do not read Plan D.
 
-## 1. Why this version
+## Seed dependency graph
 
-### Comparison of the written plans
+Dependencies in task bodies are the portable source of truth. CEO resolves the following slugs to imported issue IDs and creates native blocked-by relationships at kickoff. Tasks may exchange reviewed intermediate artifacts, but downstream completion still requires accepted prerequisites. At most three assignments are active. `deploy` has an early preparation phase and a later publication gate; record acceptance and human authorization before publishing even though preparation starts early.
 
-Scores: 0 absent, 1 weak, 2 substantial gaps, 3 workable with changes, 4 strong, 5 complete for that criterion. These are editorial assessments of the plans, not measured application performance. “Skills” includes actual written procedures; a list of skills to author loses points.
-
-| Plan | Agents/jobs | Written skills | Paperclip setup | Keys/accounts | Sponsor outputs | Gemini | Atlas | Domain | 36 hours | Verdict |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| A | 4 | 4 | 3 | 4 | 4 | 4 | 5 | 4 | 4 | Best existing company scaffold; correct attribution, impact assumptions and setup details before reuse. |
-| B | 4 | 3 | 4 | 5 | 5 | 5 | 5 | 5 | 3 | Preferred foundation: strongest complete specification; materialize skills and reduce workload. |
-| C | 1 | 0 | 0 | 1 | 4 | 1 | 0 | 0 | 3 | Strong planner workflow and research; does not supply the required agent platform or MLH stack. |
-
-B's sponsor score reflects its map, list, evidence and impact coverage. Its optional timeline-only category still needs removal to follow this task's stricter definition of overlap. C's PostgreSQL choice fails the Atlas requirement even though its spatial design is useful.
-
-| Source | Keep | Leave out and why |
+| Task | Owner | Prerequisites |
 |---|---|---|
-| B — primary | Eight roles; map/list/detail/export flow; source and project versions; public-status review; separate owner codes; exact versus uncertain dates; Gemini extraction and briefs; track evidence and failure handling. | Timeline-only overlap and the 180-day threshold: this task requires geography to determine overlap. Dedicated Express service and paid basemap dependency: Next.js route handlers and OpenFreeMap reduce setup. Complex interval analysis: dates rarely support it within 36 hours. |
-| A | Concrete company folder, attached skills, Python document tooling, early deterministic fixtures, Atlas and MapLibre. | General chatbot; freight-percentage savings extrapolation; copying a known cost to a project with redacted cost; blanket GPC attribution; broad credentials; commands that hide failure. |
-| C | Evidence drawer, planner-ready coordination card, version changes, explicit in-service semantics and a rehearsed story. | Postgres/PostGIS because Atlas is required; four-human staffing because Paperclip agents build this; inclusive 25-mile boundary because the sponsor says under 25. |
+| `kickoff` | `ceo` | Human kickoff approval |
+| `contracts` | `technical-lead` | `kickoff` |
+| `source-audit` | `data-researcher` | `kickoff` |
+| `golden-reference` | `qa-verifier` | `kickoff` |
+| `gemini-extraction` | `gemini-engineer` | `contracts`, `source-audit` |
+| `extract-register` | `data-researcher` | `gemini-extraction` |
+| `resolve-locations` | `geo-engineer` | `extract-register` |
+| `match-pairs` | `geo-engineer` | `resolve-locations`, `golden-reference`, `contracts` |
+| `atlas-api` | `technical-lead` | `contracts` |
+| `map-ui` | `frontend-engineer` | `contracts` |
+| `gemini-briefs` | `gemini-engineer` | `match-pairs`, `gemini-extraction` |
+| `filing-diff` | `data-researcher` | `source-audit`, `extract-register` |
+| `integrate` | `technical-lead` | `atlas-api`, `map-ui`, `match-pairs`, `gemini-briefs`, `filing-diff` |
+| `acceptance` | `qa-verifier` | `integrate` |
+| `deploy` | `release-engineer` | `contracts` |
+| `live-check` | `qa-verifier` | `acceptance`, `deploy` |
+| `submission` | `ceo` | `live-check` |
 
-### How we compete with approximately 100 teams
-
-1. **Go beyond ten rows with an auditable coverage ledger.** Inventory all 44 supplied DESC cards, the newer 47-card filing, and a bounded Georgia public border inventory. Record every candidate as extracted, located, reviewed, unresolved, excluded, historical or future. Report denominators. Aim for three reviewed non-sample pairs; a count is a research target, never permission to manufacture matches.
-2. **Show a real filing change.** DESC project `0139 M,N` moves from December 31, 2024 in the older PDF, page 3, to May 31, 2026 in the newer PDF, page 2. Show both source pages and explain which version feeds the analysis. Both dates are historical on this plan's date; use this as version evidence, not a future opportunity. [Older DESC filing](https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf), [newer DESC filing](https://scrtp.stge.dominionenergyse.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf).
-3. **Expose a misleadingly attractive match.** The golden set's nearest pair is 4.09 miles apart but its in-service dates differ by 3,074 days. A 5.65-mile pair has a 152-day gap. Judges can see why proximity alone is insufficient, without pretending either proves overlapping construction.
-4. **Let judges inspect Gemini's work.** An approved PDF page, Gemini's extracted fields, schema/reviewer decisions, and the cited coordination brief appear together. A model error remains visible in the review queue. Show a real generation from approved facts, with a saved result if connectivity fails.
-5. **Produce something a planner can use.** One export includes the two projects, owners, miles, day gap, source versions, uncertain fields, plausible shared activities and the questions needed before anyone promises savings. This responds to the contractor's crew, freight and sequencing concerns.
-
-The intern listing's emphasis on Python, ETL, validation and traceability suggests that reliable data work will matter to these judges. That is our inference from the listing, not a published scoring rubric.
+## Build contract
 
 ## 2. Scope roadmap — ambitious, with a buildable first release
 
@@ -142,7 +142,7 @@ The independent plan verifier reads the XLSX directly, including mixed string an
 | OVL_5 | DESC_5 | GPC_2 | 14.34 | 365 | 5 |
 | OVL_6 | DESC_5 | GPC_3 | 14.81 | 730 | 6 |
 
-All six impact estimates are null. Golden mode keeps supplied utility labels and dates intact; it does not promote fixture coordinates or historical milestones into independently verified future opportunities. Actual run details are in [verification/RESULTS.md](verification/RESULTS.md).
+All six impact estimates are null. Golden mode keeps supplied utility labels and dates intact; it does not promote fixture coordinates or historical milestones into independently verified future opportunities. Actual run details are in the repository Plan E verification report.
 
 ## 6. Architecture and data contract
 
@@ -391,18 +391,3 @@ At hour 12, cut wide-area research beyond the defined border inventory if qualit
 | Gemini | Actual approved-page extraction, structured response and validation, model/request metadata, visible grounded brief, redacted logs and failure handling. |
 | Atlas | Real cluster/collection/index configuration, redacted query trace behind a UI interaction, persisted versions/matches; no static JSON masquerading as database use. |
 | GoDaddy Registry domain | Eligible registration confirmation, chosen qualifying suffix/registrar under current event terms, DNS and live HTTPS app; generic hosting URL alone is insufficient. |
-
-## 14. What this delivery verifies
-
-[Verification report](verification/RESULTS.md) records executed formula, YAML, reference and preservation checks. [Source checks](verification/source-checks.json) record public URL responses and redirects. The source checks prove retrieval, not licensing, current eligibility, semantic correctness of every page or private service access.
-
-**Not verified here:** live Paperclip server import/dry-run, adapter execution and skill injection, actual credential validity, Gemini quality on new rows, Atlas provisioning/networking, full-corpus coordinates, three new overlaps, deployed application, domain availability/eligibility or any submission. The selected folder structure follows inspected documentation; only a future server import can prove compatibility with the installed Paperclip release.
-
-Re-run the local plan checks from the repository root:
-
-```sh
-python3 plans/plan-E/verification/verify_plan.py
-python3 plans/plan-E/verification/verify_sources.py
-```
-
-The second command needs outbound network access. Both write reports only within Plan E; neither implements the application.

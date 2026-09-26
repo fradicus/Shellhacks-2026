@@ -1,0 +1,111 @@
+schema: paperclip/v1
+agents:
+  ceo:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+  technical-lead:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+        MONGODB_URI_RW:
+          kind: secret
+          requirement: required
+        MONGODB_URI_RO:
+          kind: secret
+          requirement: required
+        MONGODB_DB:
+          kind: plain
+          requirement: required
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
+        OPERATOR_API_TOKEN:
+          kind: secret
+          requirement: required
+  data-researcher:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+        SOURCE_DOCS_DIR:
+          kind: plain
+          requirement: required
+  gemini-engineer:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+        GEMINI_API_KEY:
+          kind: secret
+          requirement: required
+        GEMINI_MODEL:
+          kind: plain
+          requirement: required
+        SOURCE_DOCS_DIR:
+          kind: plain
+          requirement: required
+  geo-engineer:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+        ANALYSIS_DATE:
+          kind: plain
+          requirement: required
+  frontend-engineer:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+  qa-verifier:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+        MONGODB_URI_RO:
+          kind: secret
+          requirement: required
+        MONGODB_DB:
+          kind: plain
+          requirement: required
+        SOURCE_DOCS_DIR:
+          kind: plain
+          requirement: required
+  release-engineer:
+    adapter:
+      type: claude_local
+    inputs:
+      env:
+        ANTHROPIC_API_KEY:
+          kind: secret
+          requirement: optional
+        VERCEL_TOKEN:
+          kind: secret
+          requirement: optional
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
