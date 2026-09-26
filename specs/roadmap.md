@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F06, F11, F14, F16]
-  codex-local: [F01, F02, F03, F04, F07, F08, F09, F10, F12, F13, F15, F17, F18]
+  claude-local: [F00, F05, F11, F14, F16]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18]
 frozen_paths:
   - schemas/
   - scripts/
@@ -54,7 +54,7 @@ For a shorter run, scale every `at` value proportionally in the pre-flight commi
 - **Local:** Claude Code and Codex use `local_workers`, adopting each feature's named role/lane. One implementation feature per session; the F18 owner also handles short reporting checkpoints in a separate worktree.
 - **Hybrid:** local sessions own only IDs listed in `local_workers`; Paperclip owns the remaining features through the existing role/lane assignments. Trim the local map before launch. Pause the old owner before any reassignment.
 
-The launch split gives Claude the bootstrap and the app (F00, F05, F06, F11, F14, F16), and Codex the data, QA, release and reporting. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
+The launch split gave Claude the bootstrap and the app (F00, F05, F06, F11, F14, F16), and Codex the data, QA, release and reporting. After the user confirmed the Claude worker had stopped, C8 transferred remaining F06 corrections to Codex in the same technical-lead role; the original F06 delivery remains credited to its author. No extra agents or scheduler are required for local mode. See [preflight.md](preflight.md).
 
 ## Phase 0: bootstrap (lane B alone)
 Skeleton, contracts, fixtures, the canonical matcher and golden test, CI, the ownership gate, placeholder routes. After this, everyone works in parallel without touching shared files.
@@ -104,3 +104,4 @@ narrows to the border-area projects (see F09 Defaults) rather than miss F10.
 
 ## Post-run (humans, morning)
 Read `reports/final.md`. Review `specs/decisions/*`, especially 000. Check the domain and the Devpost submission. Merge nothing overnight-generated that you haven't looked at into the event submission unless it's already on `main`.
+
