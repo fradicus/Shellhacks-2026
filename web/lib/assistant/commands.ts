@@ -142,7 +142,7 @@ export function parseOfflineCommand(input: string, context: AssistantContext): C
   const planning = command.match(/^show planning region (.+)$/);
   if (planning) {
     const region = context.planningRegions.find((item) => fold(item) === planning[1]);
-    if (!region) return { ok: false, kind: "clarification", message: "Use a planning region identifier shown in the source catalog." };
+    if (!region) return { ok: false, kind: "clarification", message: "Use a planning region with imported project records, shown in the planning region filter. Catalog-only regions are not imported." };
     return result({ type: "filters.patch", filters: { planningRegion: region } }, `Filter the publishing planning region to ${region}.`, context);
   }
   const show = command.match(/^show (?:(planned|proposed|under construction|in service|cancelled|unknown) )?projects in (.+)$/);

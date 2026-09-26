@@ -25,7 +25,7 @@ export interface AssistantController {
 
 const EXAMPLES = ["show projects in Massachusetts", "show planned projects in Connecticut", "focus Alaska"];
 
-export function AssistantPanel({ controller }: { controller: AssistantController }) {
+export function AssistantPanel({ controller, planningRegions }: { controller: AssistantController; planningRegions: readonly string[] }) {
   const [open, setOpen] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [feedback, setFeedback] = useState("Try a supported command. This preview does not use a language model.");
@@ -48,7 +48,7 @@ export function AssistantPanel({ controller }: { controller: AssistantController
   function run(command: string) {
     const context: AssistantContext = {
       ...controller.reference,
-      planningRegions: [...new Set(controller.reference.sources.flatMap((source) => source.planning_region ? [source.planning_region] : []))],
+      planningRegions,
       owners: [], // Owner inference is deliberately outside this first offline command grammar.
       visibleProjectIds: loading || !available ? [] : controller.results.ids,
     };

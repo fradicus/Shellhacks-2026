@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { readFileSync } from "node:fs";
 import { parseOfflineCommand, validateAssistantAction } from "../../../web/lib/assistant/commands.ts";
 
 // Minimal reference fixtures test ambiguity and identity; these are not production project records.
@@ -16,6 +17,15 @@ const context = {
   regions: [{ region_code: "1", name: "Northeast" }, { region_code: "3", name: "South" }, { region_code: "4", name: "West" }],
   planningRegions: ["iso-ne", "caiso"], owners: ["Test owner"], visibleProjectIds: ["test:visible"],
 };
+
+test("catalog-only planning regions cannot become actionable project filters", () => {
+  const projects = JSON.parse(readFileSync(new URL("../../../data/national/projects.json", import.meta.url), "utf8"));
+  const sources = JSON.parse(readFileSync(new URL("../../../data/national/sources.json", import.meta.url), "utf8"));
+  const actual = { ...context, planningRegions: [...new Set(projects.map((project) => project.planning_region).filter(Boolean))] };
+  assert.ok(sources.some((source) => source.planning_region === "pjm"));
+  assert.equal(parseOfflineCommand("show planning region PJM", actual).ok, false);
+  assert.equal(parseOfflineCommand("show planning region ISO-NE", actual).ok, true);
+});
 
 test("supported commands retain string FIPS and source status semantics", () => {
   const parsed = parseOfflineCommand("Show planned projects in CA", context);
