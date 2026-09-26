@@ -11,7 +11,7 @@ lanes:
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
   claude-local: [F00, F05, F11, F14, F16, F19, F21]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F37]
 frozen_paths:
   - schemas/
   - scripts/
@@ -99,6 +99,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F30 | Trusted national sources, Census geography, regional imports | A | data-researcher | 5 | F00 | never |
 | F31 | National explorer with state/county/region filters | B | frontend-engineer | 5 | F00 | never |
 | F32 | Optional AI app controls, separate prototype branch | B | gemini-engineer | 5 | F31 | allowed |
+| F37 | 3D History page and sourced project/contract events (spec only; implementation pending) | B | frontend-engineer | 6 | F19 | allowed |
 
 ## Authorized follow-on: national discovery
 
@@ -126,6 +127,17 @@ context, not implementation permission. Record reason, decision and acceptance w
 Feature completion markers continue to identify merged implementation. Reporting must separately show automated
 checks, live integration and user-task evaluation against a named revision. Check job-level CI conclusions; a
 successful workflow can contain a failed non-blocking browser job. See [documentation upkeep](context/README.md#keep-context-and-specs-aligned).
+
+## Specified follow-on: 3D historical research
+
+The user's 2026-09-26 request authorizes C19 specification delivery, including its issue, worktree, PR and merge.
+[F37](features/F37-history-view/spec.md) defines `/history` as a close Three.js sibling of the main `/time` view:
+shared map interaction and visual language, a historical year plane, documented event sequences and contract
+evidence. See [C19](decisions/C19-history-view.md) and [issue 104](https://github.com/fradicus/Shellhacks-2026/issues/104).
+F37 is reserved to codex-local for later implementation; it is not eligible for autonomous pickup until the
+user starts that work and the shared-scene/data integration contract is accepted. Existing F19/F21 and proposed
+C15/F33–F36 ownership remain intact. A merged specification does not satisfy F37's completion criteria or claim
+that historical contracts have been acquired. Original run gates remain historical for this bounded spec task.
 
 ## Original run critical path
 F00 → F01 + F02 (+F04) → F09 → F10 → F12, with F05 → F11 and F06 in parallel. If F09 is late at 4:30, geo

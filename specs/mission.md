@@ -66,3 +66,12 @@ Use the [shared vocabulary](vocabulary.md) across product and presentation. Sour
 producer artifacts and dated status reports, rather than fixed into this mission. Equipment rental/subleasing,
 automatic dispatch, a new field-account product and unsupported prediction claims are
 [potential work—do not implement](followup.md#potential-work-do-not-implement) without their own explicit decision.
+
+## Historical research direction
+
+The main app view is `/time`, as specified by F21. The user selected a separate `/history` page with a very
+similar Three.js map and vertical time axis, historical year scrubbing and documented project events. It
+supports finding past work and inspecting contractor or contract evidence where verified records exist.
+Planned in-service dates, awards, actual construction and completion remain distinct. Read
+[F37](features/F37-history-view/spec.md) and [C19](decisions/C19-history-view.md) for design, evidence and delivery
+requirements. This is accepted product direction; implementation and contract coverage remain pending.
