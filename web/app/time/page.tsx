@@ -30,6 +30,7 @@ export default async function TimePage() {
     key: p.project_key,
     name: p.name,
     utility: p.utility,
+    owner_code: p.owner_code,
     center: p.center ? { lat: p.center.lat, lon: p.center.lon } : null,
     in_service: p.in_service,
     confidence: p.location_confidence ?? null,

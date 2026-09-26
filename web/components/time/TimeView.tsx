@@ -13,6 +13,7 @@ export interface TimeProject {
   key: string;
   name: string;
   utility: Utility;
+  owner_code: string | null;
   center: { lat: number; lon: number } | null;
   in_service: InService;
   confidence: "high" | "medium" | "low" | null;
@@ -33,7 +34,10 @@ export interface TimePair {
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 const COLOR: Record<Utility, string> = { DESC: "#5cc8ff", GPC: "#ffae42", unknown: "#8b93a7" };
-const UTILITY: Record<Utility, string> = { DESC: "Dominion Energy SC", GPC: "Georgia Power", unknown: "Owner unknown" };
+const UTILITY: Record<Utility, string> = { DESC: "Dominion Energy SC", GPC: "Georgia Power", unknown: "Owner not mapped" };
+/** An unmapped owner still has a filed code (MEAG, GTC ...); say which, and that it isn't matched to a utility. */
+const owner = (p: { utility: Utility; owner_code: string | null }) =>
+  p.utility === "unknown" && p.owner_code ? `Owner code ${p.owner_code}, not mapped` : UTILITY[p.utility];
 const VIEWS: { v: View; label: string; help: string }[] = [
   { v: "future", label: "Future", help: "Both dates exact and on or after the analysis date" },
   { v: "historical", label: "Historical", help: "At least one in-service date before the analysis date" },
@@ -353,7 +357,7 @@ export function TimeView({
             {hovered.name}
           </b>
           <span>
-            {UTILITY[hovered.utility]} · {describe(spans.get(hovered.key)!, hovered.in_service.raw)}
+            {owner(hovered)} · {describe(spans.get(hovered.key)!, hovered.in_service.raw)}
           </span>
         </>
       ),
@@ -712,7 +716,13 @@ export function TimeView({
       <section className={s.tray} aria-label="What is not drawn">
         <button type="button" onClick={() => setTrayOpen((o) => !o)} aria-expanded={trayOpen}>
           <span>Not drawn</span>
-          <b>{notLocated}</b> without a located endpoint · <b>{undated.length}</b> located without an exact date
+          <b>{notLocated}</b> without a located endpoint
+          {undated.length ? (
+            <>
+              {" "}
+              · <b>{undated.length}</b> without an exact date
+            </>
+          ) : null}
         </button>
         {trayOpen ? (
           <div className={s.trayBody}>
@@ -755,7 +765,7 @@ export function TimeView({
           </div>
           {[pa, pb].map((p) => (
             <section key={p.key} className={s.proj} style={{ ["--c" as string]: COLOR[p.utility] }}>
-              <p className={s.projUtil}>{UTILITY[p.utility]}</p>
+              <p className={s.projUtil}>{owner(p)}</p>
               <h2>{p.name}</h2>
               <p>
                 In service {describe(spans.get(p.key) ?? { kind: "unknown" }, p.in_service.raw)}
@@ -782,7 +792,7 @@ export function TimeView({
             ×
           </button>
           <section className={s.proj} style={{ ["--c" as string]: COLOR[project.utility] }}>
-            <p className={s.projUtil}>{UTILITY[project.utility]}</p>
+            <p className={s.projUtil}>{owner(project)}</p>
             <h2>{project.name}</h2>
             <p>In service {describe(spans.get(project.key) ?? { kind: "unknown" }, project.in_service.raw)}</p>
             <p className={s.src}>
@@ -820,7 +830,7 @@ export function TimeView({
               <i style={{ background: COLOR.GPC }} /> Georgia Power
             </span>
             <span>
-              <i style={{ background: COLOR.unknown }} /> Owner unknown
+              <i style={{ background: COLOR.unknown }} /> Owner not mapped
             </span>
           </li>
         </ul>
