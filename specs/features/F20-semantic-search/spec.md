@@ -1,15 +1,15 @@
 ---
-id: F19
+id: F20
 name: Semantic search over matches, projects and briefs
 lane: B
 agent: technical-lead
 phase: 5
 depends_on: [F10]
-owns: [pipeline/embeddings/, tests/pipeline/test_f19_, data/embeddings/, data/neighbors/, web/app/search/, web/app/api/search/, web/components/search/]
+owns: [pipeline/embeddings/, tests/pipeline/test_f20_, data/embeddings/, data/neighbors/, web/app/search/, web/app/api/search/, web/components/search/]
 cut: allowed
 ---
 
-# F19 Semantic search
+# F20 Semantic search
 
 Post-run feature requested by the human operator: vector search over the stored corpus with
 Gemini embeddings, plus precomputed "similar items" per record. Schemas and the loader's
@@ -36,14 +36,14 @@ collection/index support arrived via `[C10]` and `[FIX-F06]`; the nav link via `
 - Every embedding record stores the exact embedded `text`, its `text_hash`, the model id,
   dimensions and timestamp (traceability, like every other Gemini output).
 - Query-time embedding is the **only** live Gemini call the site makes; it returns vectors,
-  never generated text shown to users. Recorded in `specs/decisions/F19-live-query-embedding.md`.
+  never generated text shown to users. Recorded in `specs/decisions/F20-live-query-embedding.md`.
 - No new dependencies anywhere: pipeline uses the pinned `google-genai`; the web route calls
   the Gemini REST endpoint with `fetch`.
 - The API keeps the repo rule: database problems -> 503 `{unavailable: true}`, never fixtures.
 
 ## Validation
 
-- `tests/pipeline/test_f19_*.py`: text builders on synthetic records, cosine/top-K correctness,
+- `tests/pipeline/test_f20_*.py`: text builders on synthetic records, cosine/top-K correctness,
   cache reuse (no re-embed of unchanged text), offline mode writes nothing, end-to-end run with
   an injected fake embedder produces schema-valid `embeddings.json` and `neighbors.json`.
 - `cd pipeline && uv run ruff check . && uv run pytest -q`

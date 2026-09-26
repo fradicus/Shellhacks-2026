@@ -30,7 +30,7 @@ interface NeighborDoc {
   neighbors: { ref_id: string; kind: Hit["kind"]; score: number; rank: number }[];
 }
 
-/** Query-time embedding is the site's only live Gemini call (specs/decisions/F19-live-query-embedding.md). */
+/** Query-time embedding is the site's only live Gemini call (specs/decisions/F20-live-query-embedding.md). */
 async function embedQuery(q: string): Promise<number[]> {
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new DbUnavailable("query embedding not configured");

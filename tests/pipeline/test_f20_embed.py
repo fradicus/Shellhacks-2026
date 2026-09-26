@@ -1,4 +1,4 @@
-"""F19 semantic search: text builders, cosine neighbors, offline-first runner with cache reuse."""
+"""F20 semantic search: text builders, cosine neighbors, offline-first runner with cache reuse."""
 
 from __future__ import annotations
 

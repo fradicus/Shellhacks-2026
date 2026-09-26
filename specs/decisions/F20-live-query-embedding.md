@@ -1,8 +1,8 @@
-# F19: live query embedding on the public site
+# F20: live query embedding on the public site
 
 ## Context
 
-`specs/mission.md` says "The public site shows stored results; it never calls Gemini." F19's
+`specs/mission.md` says "The public site shows stored results; it never calls Gemini." F20's
 search box needs a vector for an arbitrary user query, which only an embedding model can produce
 at request time.
 
