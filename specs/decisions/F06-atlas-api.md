@@ -52,3 +52,13 @@
     `(project_id, endpoint_index)`, so two versions may each carry their own reviewed endpoint. Unlocated projects
     now store `center: null` explicitly. Alternative rejected: join by key and only mark `active` versions, which
     still lets an inactive version own evidence produced for another filing.
+15. **A review applies only while its fingerprint is current (C7, #57).** `load/review_subjects.py` projects what a
+    review confirms (`endpoint_subject`: the location plus its filing version and source sha; `pair_subject`: the
+    match facts, both active projects and the located endpoints their centers rest on) and hashes the canonical JSON
+    (`audit-subject-v1`). Staging rebuilds every subject before prefixing ids; `decide()` takes the newest decision
+    per `(subject_type, record_id)` and applies it only if its `subject_hash` equals the current one, else
+    `needs_review` with no fallback to an older confirmation. A pair confirmation also needs a current confirmed
+    review on every supporting endpoint; an endpoint downgrade or a missing endpoint review holds the pair at
+    `needs_review`. Legacy reviews (no binding) can never confirm. Same-instant conflicts still favour the downgrade.
+    `rank`, `rank_version`, `review_state`, `dataset` and unrelated records are outside the hash, so re-ranking
+    doesn't lapse a confirmation. Not done: `review_state` on endpoint records themselves (nothing reads it yet).

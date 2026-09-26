@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from common import SchemaError, load_json, validate
+from load.review_subjects import current_subjects, subject_hash, supporting_endpoints
 from matches.core import center
 
 # data/ prefix -> (collection, schema). Anything else under data/ (fixtures, osm, owners, summaries) is not loaded.
@@ -161,19 +162,42 @@ def _utc(at: str) -> datetime | None:
     return t if t.tzinfo else None
 
 
-def apply_reviews(matches: list[dict], reviews: list[dict]) -> list[dict]:
-    """Audit decisions whose record_id is the pair id set its review_state. The newest decision wins; at the same
-    instant a downgrade beats a confirmation. Other verdicts, reviews without a timezone-aware `at` and reviews of
-    other records (endpoints) change nothing. With no decision the producer's review_state stays."""
-    latest: dict[str, tuple[datetime, str]] = {}
+def decide(reviews: list[dict], subjects: dict[tuple[str, str], dict]) -> dict[tuple[str, str], str]:
+    """Newest timezone-aware decision per (subject_type, record_id); at the same instant a downgrade beats a
+    confirmation. Its verdict applies only while the review's `subject_hash` equals the record's current hash (C7,
+    #57); a stale or missing binding yields needs_review and never falls back to an older decision. Other verdicts
+    and undated reviews are skipped. Legacy reviews without a subject_type count as pair reviews."""
+    latest: dict[tuple[str, str], tuple[datetime, str, str | None]] = {}
     for r in reviews:
         state, at = PAIR_VERDICTS.get(r["verdict"]), _utc(r["at"])
         if state is None or at is None:
             continue
-        cur = latest.get(r["record_id"])
+        key = (r.get("subject_type", "pair"), r["record_id"])
+        cur = latest.get(key)
         if cur is None or at > cur[0] or (at == cur[0] and state == "rejected"):
-            latest[r["record_id"]] = (at, state)
-    return [{**m, "review_state": latest[m["_id"]][1]} if m["_id"] in latest else m for m in matches]
+            latest[key] = (at, state, r.get("subject_hash"))
+    return {key: state if key in subjects and h == subject_hash(subjects[key]) else "needs_review"
+            for key, (_, state, h) in latest.items()}
+
+
+def apply_reviews(matches: list[dict], reviews: list[dict], subjects: dict[tuple[str, str], dict]) -> list[dict]:
+    """Set each match's review_state from its decided pair review. A confirmation also needs every supporting endpoint
+    (the located ones its centers rest on) to carry a current confirmed review; otherwise the pair stays
+    needs_review. Matches with no decision keep the producer's review_state."""
+    decided = decide(reviews, subjects)
+    out = []
+    for m in matches:
+        key = ("pair", m["_id"])
+        state = decided.get(key)
+        if state is None:
+            out.append(m)
+            continue
+        if state == "confirmed":
+            eps = supporting_endpoints(subjects[key])
+            if not eps or any(decided.get(("endpoint", e)) != "confirmed" for e in eps):
+                state = "needs_review"
+        out.append({**m, "review_state": state})
+    return out
 
 
 def check_briefs(briefs: list[dict], ready: dict[str, list[dict]], brief_hash: BriefHash | None) -> list[dict]:
@@ -203,7 +227,7 @@ def stage(records: dict[str, list[dict]], dataset: str, brief_hash: BriefHash | 
     closed as unverified; make that builder the default here when it lands."""
     ready = dict(records)
     ready["projects"] = join_projects(records.get("projects", []), records.get("locations", []))
-    ready["matches"] = apply_reviews(records.get("matches", []), records.get("reviews", []))
+    ready["matches"] = apply_reviews(records.get("matches", []), records.get("reviews", []), current_subjects(ready))
     ready["briefs"] = check_briefs(records.get("briefs", []), ready, brief_hash)
     return {
         coll: [{**r, "_id": f"{dataset}:{r['_id']}", "id": r["_id"], "dataset": dataset} for r in ready.get(coll, [])]

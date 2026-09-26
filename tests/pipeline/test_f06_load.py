@@ -10,6 +10,7 @@ import pytest
 from common import REPO_ROOT, load_json
 from load.__main__ import load
 from load.build import collect, join_projects, stage
+from load.review_subjects import FINGERPRINT_VERSION, current_subjects, subject_hash, supporting_endpoints
 
 FIX = REPO_ROOT / "data/fixtures"
 
@@ -293,42 +294,112 @@ def test_accepted_uniqueness_is_per_filing_version(tmp_path):
     assert collect(tmp_path)[1] == []
 
 
-# --- #38: audit verdicts set match.review_state ----------------------------------------------------------------------
+# --- #38 / #57: audit verdicts set match.review_state only while their fingerprint is current ----------------------
 
-MATCH = {"_id": "A__B", "a": "A", "b": "B", "review_state": "needs_review"}
-
-
-def review(verdict, at, record_id="A__B"):
-    return {"_id": f"r-{record_id}-{verdict}-{at}", "record_id": record_id, "verdict": verdict, "reason": "synthetic",
-            "reviewer": "qa", "at": at}
+def subjects_of(records):
+    return current_subjects({**records, "projects": join_projects(records["projects"], records["locations"])})
 
 
-@pytest.mark.parametrize("reviews, state", [
-    ([], "needs_review"),
-    ([review("confirmed", "2026-09-26T10:00:00Z")], "confirmed"),
-    ([review("confirmed", "2026-09-26T10:00:00Z"), review("downgraded", "2026-09-26T11:00:00Z")], "rejected"),
-    ([review("downgraded", "2026-09-26T10:00:00Z"), review("confirmed", "2026-09-26T11:00:00Z")], "confirmed"),
-    ([review("rejected", "2026-09-26T10:00:00Z")], "rejected"),
-    # the same instant written with different offsets: conflicting decisions stay conservative
-    ([review("confirmed", "2026-09-26T10:00:00Z"), review("downgraded", "2026-09-26T06:00:00-04:00")], "rejected"),
-    # 10:00-04:00 is 14:00Z, later than 13:00Z
-    ([review("downgraded", "2026-09-26T13:00:00Z"), review("confirmed", "2026-09-26T10:00:00-04:00")], "confirmed"),
-    ([review("confirmed", "2026-09-26T10:00:00Z", record_id="A#0")], "needs_review"),  # an endpoint review
-    ([review("confirmed", "2026-09-26T10:00:00Z", record_id="A__C")], "needs_review"),  # another pair
-    ([review("note", "2026-09-26T10:00:00Z")], "needs_review"),  # irrelevant verdict
-    ([review("confirmed", "2026-09-26T10:00:00")], "needs_review"),  # no timezone: can't be ordered
-])
-def test_audit_verdicts_apply_to_review_state(reviews, state):
+def review(verdict, at, record_id, subject_type="pair", subjects=None, stale=False):
+    """A review bound to the current subject (or deliberately stale, or unbound when subjects is None)."""
+    r = {"_id": f"r-{subject_type}-{record_id}-{verdict}-{at}-{stale}", "record_id": record_id, "verdict": verdict,
+         "reason": "synthetic", "reviewer": "qa", "at": at}
+    if subjects is not None:
+        h = subject_hash(subjects[(subject_type, record_id)])
+        r |= {"subject_type": subject_type, "fingerprint_version": FINGERPRINT_VERSION,
+              "subject_hash": h[::-1] if stale else h}
+    return r
+
+
+def endpoint_confirmations(subjects, pair_id, at="2026-09-26T09:00:00Z", verdict="confirmed", skip=()):
+    return [review(verdict, at, e, "endpoint", subjects) for e in supporting_endpoints(subjects[("pair", pair_id)])
+            if e not in skip]
+
+
+def staged_state(records, reviews):
+    states = set()
     for order in (reviews, reviews[::-1]):  # append-only reviews: file order must not matter
-        [m] = stage({"matches": [MATCH], "reviews": order}, "ds")["matches"]
-        assert m["review_state"] == state
+        [m] = [m for m in stage({**records, "reviews": order}, "ds")["matches"] if m["id"] == records["matches"][0]["_id"]]
+        states.add(m["review_state"])
+    assert len(states) == 1
+    return states.pop()
 
 
-def test_reviews_are_preserved_and_producer_records_untouched():
-    reviews = [review("confirmed", "2026-09-26T10:00:00Z"), review("note", "2026-09-26T09:00:00Z")]
-    staged = stage({"matches": [MATCH], "reviews": reviews}, "ds")
+T1, T2 = "2026-09-26T10:00:00Z", "2026-09-26T11:00:00Z"
+
+
+def test_pair_and_endpoint_subjects_exist_for_fixture_data(data_root):
+    records, _, _ = collect(data_root)
+    subs = subjects_of(records)
+    pair = records["matches"][0]["_id"]
+    assert len(supporting_endpoints(subs[("pair", pair)])) == 3  # GPC_2 has one located endpoint
+    assert all(("endpoint", e) in subs for e in supporting_endpoints(subs[("pair", pair)]))
+    # canonical JSON, so the hash is stable across machines and TypeScript/Python reimplementations
+    assert subject_hash({"b": 1, "a": [1.5, None, "é"]}) == "10c71012fb391fead6e4d481b11c8b16696561c1fd93a68cca35fa194c3aa97d"
+
+
+@pytest.mark.parametrize("build, state", [
+    (lambda s, p: [], "needs_review"),
+    (lambda s, p: [review("confirmed", T1, p, subjects=s)] + endpoint_confirmations(s, p), "confirmed"),
+    (lambda s, p: [review("confirmed", T1, p, subjects=s)], "needs_review"),  # endpoints not yet reviewed
+    (lambda s, p: [review("confirmed", T1, p, subjects=s)] + endpoint_confirmations(s, p, skip=[
+        supporting_endpoints(s[("pair", p)])[0]]), "needs_review"),
+    (lambda s, p: [review("confirmed", T1, p, subjects=s)] + endpoint_confirmations(s, p)
+     + endpoint_confirmations(s, p, at=T2, verdict="downgraded")[:1], "needs_review"),  # an endpoint downgrade
+    (lambda s, p: [review("confirmed", T1, p, subjects=s), review("downgraded", T2, p, subjects=s)]
+     + endpoint_confirmations(s, p), "rejected"),
+    (lambda s, p: [review("downgraded", T1, p, subjects=s), review("confirmed", T2, p, subjects=s)]
+     + endpoint_confirmations(s, p), "confirmed"),
+    (lambda s, p: [review("rejected", T1, p, subjects=s)], "rejected"),
+    # the same instant written with different offsets: conflicting decisions stay conservative
+    (lambda s, p: [review("confirmed", T1, p, subjects=s), review("downgraded", "2026-09-26T06:00:00-04:00", p,
+                                                                   subjects=s)], "rejected"),
+    # 10:00-04:00 is 14:00Z, later than 13:00Z
+    (lambda s, p: [review("downgraded", "2026-09-26T13:00:00Z", p, subjects=s),
+                   review("confirmed", "2026-09-26T10:00:00-04:00", p, subjects=s)] + endpoint_confirmations(s, p),
+     "confirmed"),
+    (lambda s, p: [review("confirmed", T1, p)] + endpoint_confirmations(s, p), "needs_review"),  # legacy: no binding
+    (lambda s, p: [review("confirmed", T1, p, subjects=s, stale=True)] + endpoint_confirmations(s, p), "needs_review"),
+    (lambda s, p: [review("rejected", T1, p, subjects=s, stale=True)], "needs_review"),
+    # newest decision stale: no fallback to the older, still-valid confirmation
+    (lambda s, p: [review("confirmed", T1, p, subjects=s), review("confirmed", T2, p, subjects=s, stale=True)]
+     + endpoint_confirmations(s, p), "needs_review"),
+    (lambda s, p: [review("confirmed", T1, "DESC:DESC_1__GPC:GPC_1", subjects=s)], "needs_review"),  # another pair
+    (lambda s, p: [review("note", T1, p, subjects=s)] + endpoint_confirmations(s, p), "needs_review"),
+    (lambda s, p: [review("confirmed", "2026-09-26T10:00:00", p, subjects=s)] + endpoint_confirmations(s, p),
+     "needs_review"),  # no timezone: can't be ordered
+])
+def test_audit_verdicts_apply_to_review_state(data_root, build, state):
+    records, _, _ = collect(data_root)
+    subs = subjects_of(records)
+    assert staged_state(records, build(subs, records["matches"][0]["_id"])) == state
+
+
+@pytest.mark.parametrize("change", [
+    lambda r: edit_first_project(r, lambda p: p | {"in_service": {**p["in_service"], "date": "2030-01-01"}}),
+    lambda r: edit_first_match(r, distance_mi=7.5),
+    lambda r: {**r, "locations": [loc | {"lon": loc["lon"] + 0.01} if loc.get("lon") is not None else loc
+                                  for loc in r["locations"]]},
+    lambda r: {**r, "sources": [s | {"sha256": "0" * 64} for s in r["sources"]]},
+])
+def test_confirmation_lapses_when_its_facts_change(data_root, change):
+    records, _, _ = collect(data_root)
+    subs, pair = subjects_of(records), records["matches"][0]["_id"]
+    reviews = [review("confirmed", T1, pair, subjects=subs)] + endpoint_confirmations(subs, pair)
+    assert staged_state(records, reviews) == "confirmed"
+    assert staged_state(change(records), reviews) == "needs_review"
+    unrelated = {**records, "matches": [records["matches"][0] | {"rank": 99, "review_state": "rejected"},
+                                        *records["matches"][1:]]}
+    assert staged_state(unrelated, reviews) == "confirmed"  # rank and producer state are not facts under review
+
+
+def test_reviews_are_preserved_and_producer_records_untouched(data_root):
+    records, _, _ = collect(data_root)
+    match = records["matches"][0]
+    reviews = [review("confirmed", T1, match["_id"]), review("note", "2026-09-26T09:00:00Z", match["_id"])]
+    staged = stage({**records, "reviews": reviews}, "ds")
     assert [r["id"] for r in staged["reviews"]] == [r["_id"] for r in reviews]
-    assert MATCH["review_state"] == "needs_review"
+    assert match["review_state"] == "needs_review"
 
 
 # --- #43: a passed brief is served only while its input_hash matches the current facts -------------------------------
