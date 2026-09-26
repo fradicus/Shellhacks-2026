@@ -24,6 +24,7 @@ GPC_2025 = REPO_ROOT / (
     "2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
 )
 SAMPLE = REPO_ROOT / "docs/Sperry-Tech-Challenge/Projects_Overlaps.xlsx"
+DESC_2024_SNAPSHOT_SHA256 = "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46"
 DESC_2025_SNAPSHOT_SHA256 = "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0"
 DESC_2025_METADATA_CHECKED_AT = "2026-09-26T09:04:40Z"
 DESC_2025_HTTP_LAST_MODIFIED = "2026-06-18T13:15:14Z"
@@ -55,6 +56,147 @@ TRAILING_ASSET_RE = re.compile(
 )
 CIRCUIT_SUFFIX_RE = re.compile(r"\s+#\d+\b.*$", re.IGNORECASE)
 WORK_ONLY_RE = re.compile(r"^(?:ADD|CONSTRUCT|REBUILD|TAP|UPGRADE)\b", re.IGNORECASE)
+
+# These source-page decisions were reviewed against the pinned public PDFs. They deliberately
+# replace automatic endpoint inference only for the listed cards. Candidate labels retain source
+# language for later review; they are not accepted endpoints.
+ENDPOINT_REVIEW_OVERRIDES: dict[tuple[str, int], dict[str, Any]] = {
+    ("desc-2025", 2): {
+        "project_key": "DESC:0139 M,N",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("Okatie", "Okatie 230-115kV Substation"),
+            ("Jasper", "Jasper"),
+            ("Yemassee", "Yemassee 230kV #1 Fold-in"),
+        ),
+    },
+    ("desc-2025", 6): {
+        "project_key": "DESC:6808 N,O",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("VCS1", "VCS1"),
+            ("Denny Terrace", "Denny Terrace 230kV"),
+            ("Pineland", "Pineland 230kV"),
+        ),
+    },
+    ("desc-2025", 13): {
+        "project_key": "DESC:1060A, I, L",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("Williams St Sub", "Williams St Sub"),
+            ("AM Williams Sub", "AM Williams Sub"),
+            ("McMeekin Sub", "McMeekin Sub"),
+        ),
+    },
+    ("desc-2024", 39): {
+        "project_key": "DESC:6847 A-B, D-H",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("Church Creek", "Church Creek"),
+            ("Faber Place", "Faber Place"),
+            ("Charleston Transmission", "Charleston Transmission"),
+        ),
+    },
+    ("desc-2025", 33): {
+        "project_key": "DESC:6847",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("Church Creek", "Church Creek"),
+            ("Faber Place", "Faber Place"),
+            ("Charleston Transmission", "Charleston Transmission"),
+        ),
+    },
+    ("desc-2025", 38): {
+        "project_key": "DESC:6810 T",
+        "class_flag": "endpoint_multi_asset",
+        "candidates": (
+            ("Cameron Jct", "Cameron Jct"),
+            ("Cameron", "Cameron"),
+            ("St Matthews", "St Matthews"),
+        ),
+    },
+    ("desc-2024", 1): {
+        "project_key": "DESC:6807 B",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Queensboro", "Queensboro"),
+            ("Ft Johnson", "Ft Johnson 115 kV"),
+            ("Bayfront", "Bayfront 115kV"),
+            ("James Island", "James Island Sect"),
+        ),
+    },
+    ("desc-2024", 14): {
+        "project_key": "DESC:6809 E",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Stevens Creek", "Stevens Creek"),
+            ("Hooks", "Hooks 115kV"),
+            ("LR Plumb Branch", "LR Plumb Branch 46kV Rebuilds"),
+        ),
+    },
+    ("desc-2025", 4): {
+        "project_key": "DESC:6808 K",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Burton", "Burton"),
+            ("St Helena", "St Helena 115kV"),
+            ("Frogmore Transmission", "Frogmore Transmission Section"),
+        ),
+    },
+    ("desc-2025", 5): {
+        "project_key": "DESC:6808 L",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Burton", "Burton"),
+            ("St Helena", "St Helena"),
+            ("Frogmore Distribution Tap", "Frogmore Distribution Tap"),
+        ),
+    },
+    ("desc-2025", 10): {
+        "project_key": "DESC:6808 V",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Faber Place", "Faber Place"),
+            ("Bayfront", "Bayfront"),
+            ("North Bridge Terrace", "North Bridge Terrace"),
+        ),
+    },
+    ("desc-2025", 24): {
+        "project_key": "DESC:6809 M",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("St George", "St George"),
+            ("Sumter", "Sumter 230kV Tie"),
+            ("Santee Substation", "Santee Substation"),
+            ("Duke/Progress Energy Tie", "Duke/Progress Energy Tie"),
+        ),
+    },
+    ("desc-2025", 43): {
+        "project_key": "DESC:6877 A",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Church Creek", "Church Creek"),
+            ("Dawson", "Dawson"),
+            ("Long Savannah", "Long Savannah"),
+            ("Faber Place", "Faber Place"),
+        ),
+    },
+    ("desc-2025", 22): {
+        "project_key": "DESC:06810 G",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (
+            ("Goose Creek Reservoir", "Goose Creek Reservoir"),
+            ("Williams", "Williams"),
+            ("Goose Creek", "Goose Creek"),
+            ("Faber Place", "Faber Place"),
+        ),
+    },
+    ("desc-2025", 23): {
+        "project_key": "DESC:06810 H",
+        "class_flag": "endpoint_scope_ambiguous",
+        "candidates": (("Summerville 115kV Loop", "Summerville 115kV Loop"),),
+    },
+}
 
 
 def _sha256(path: Path) -> str:
@@ -150,6 +292,34 @@ def _endpoints(name: str) -> list[dict[str, str]]:
         endpoints.append({"name": cleaned, "norm": normalized, "raw": raw.strip()})
         seen.add(normalized)
     return endpoints
+
+
+def _reviewed_endpoint_data(
+    source_id: str,
+    page: int,
+    project_key: str,
+    name: str,
+    description: str | None,
+) -> tuple[list[dict[str, str]], list[dict[str, str]], list[str]]:
+    review = ENDPOINT_REVIEW_OVERRIDES.get((source_id, page))
+    if review is None:
+        return _endpoints(name), [], []
+    if project_key != review["project_key"]:
+        raise ValueError(
+            f"reviewed endpoint override key mismatch for {source_id} page {page}: {project_key}"
+        )
+
+    source_fields = f"{name}\n{description or ''}"
+    candidates: list[dict[str, str]] = []
+    for candidate_name, raw in review["candidates"]:
+        if raw not in source_fields:
+            raise ValueError(
+                f"reviewed endpoint candidate missing for {source_id} page {page}: {raw}"
+            )
+        candidates.append(
+            {"name": candidate_name, "norm": norm_name(candidate_name), "raw": raw}
+        )
+    return [], candidates, ["endpoint_ambiguous", review["class_flag"]]
 
 
 def _parse_amount(token: str, label: str, flags: list[str]) -> int | None:
@@ -252,9 +422,12 @@ def parse_card(text: str, source_id: str, page: int, expected_total: int) -> dic
 
     in_service = _parse_date(in_service_raw, flags)
     cost_usd, yearly_spend, cost_raw = _parse_costs(lines, cost_text, flags)
-    endpoints = _endpoints(name)
-    voltages = _voltages(name)
     key = f"DESC:{native_id}"
+    endpoints, endpoint_candidates, endpoint_flags = _reviewed_endpoint_data(
+        source_id, page, key, name, description
+    )
+    flags.extend(endpoint_flags)
+    voltages = _voltages(name)
 
     field_evidence = {
         "name": _evidence(page, name),
@@ -293,10 +466,22 @@ def parse_card(text: str, source_id: str, page: int, expected_total: int) -> dic
         "voltages_kv": voltages,
         "yearly_spend": yearly_spend,
     }
+    if endpoint_candidates:
+        record["endpoint_candidates"] = endpoint_candidates
     return record
 
 
 def parse_desc_pdf(path: Path, source_id: str, expected_cards: int) -> list[dict[str, Any]]:
+    expected_sha = {
+        "desc-2024": DESC_2024_SNAPSHOT_SHA256,
+        "desc-2025": DESC_2025_SNAPSHOT_SHA256,
+    }.get(source_id)
+    if expected_sha is None:
+        raise ValueError(f"unsupported DESC source: {source_id}")
+    actual_sha = _sha256(path)
+    if actual_sha != expected_sha:
+        raise ValueError(f"{source_id}: source SHA-256 changed: {actual_sha}")
+
     records: list[dict[str, Any]] = []
     with pdfplumber.open(path) as pdf:
         if len(pdf.pages) != expected_cards:
@@ -361,6 +546,9 @@ def build_version_changes(records: list[dict[str, Any]]) -> list[dict[str, Any]]
 
 
 def build_sources() -> list[dict[str, Any]]:
+    desc_2024_sha256 = _sha256(DESC_2024)
+    if desc_2024_sha256 != DESC_2024_SNAPSHOT_SHA256:
+        raise ValueError("desc-2024 PDF changed; reviewed endpoint decisions require pinned bytes")
     desc_2025_sha256 = _sha256(DESC_2025)
     if desc_2025_sha256 != DESC_2025_SNAPSHOT_SHA256:
         raise ValueError(
@@ -374,7 +562,7 @@ def build_sources() -> list[dict[str, Any]]:
             "pages": 44,
             "public_status": "public",
             "publisher": "Dominion Energy South Carolina",
-            "sha256": _sha256(DESC_2024),
+            "sha256": desc_2024_sha256,
             "title": "DESC Planned Transmission Projects $2M and Above Total - 2024-2028",
             "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
         },
