@@ -1,0 +1,2492 @@
+{
+  "input_kind": "canonical_F10_output",
+  "kind": "F13_independent_featured_pair_audit",
+  "at": "2026-09-26T13:38:02.697703+00:00",
+  "revision": "de43141fa00de6d906f3d4b1e5fd9303600a3632",
+  "input_hashes": {
+    "matches": "8ca775ad0414662874ff340203e63384b0bdfbf57f1e16d0de4fb7c385525bc0",
+    "locations": "3f4438d516630ad665666d083ad4101ed3315447bbdff291a9d1eda6a1eda4b1",
+    "projects": "2a2a7374b4f7e5cafd34fb20c571fb54afeabc0a639c749bc6cfa36ace2ea6cb"
+  },
+  "math_checks": [
+    {
+      "case": "complete_pair_ID_set",
+      "passed": true
+    },
+    {
+      "case": "unique_pair_IDs",
+      "passed": true
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20277",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20277",
+        "distance_mi": 3.032894292160517,
+        "time_gap_days": 1,
+        "band": 0,
+        "rank": 1
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:20067",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:20067",
+        "distance_mi": 18.15042002569446,
+        "time_gap_days": 0,
+        "band": 1,
+        "rank": 2
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20066",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20066",
+        "distance_mi": 21.25100027134533,
+        "time_gap_days": 1,
+        "band": 1,
+        "rank": 3
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20067",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20067",
+        "distance_mi": 22.08147501523513,
+        "time_gap_days": 364,
+        "band": 1,
+        "rank": 4
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:20066",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:20066",
+        "distance_mi": 18.935738955762826,
+        "time_gap_days": 365,
+        "band": 1,
+        "rank": 5
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:20277",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:20277",
+        "distance_mi": 20.458659378285947,
+        "time_gap_days": 365,
+        "band": 1,
+        "rank": 6
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20785",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20785",
+        "distance_mi": 14.742211031498835,
+        "time_gap_days": 366,
+        "band": 1,
+        "rank": 7
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:20785",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:20785",
+        "distance_mi": 18.13180698019737,
+        "time_gap_days": 730,
+        "band": 1,
+        "rank": 8
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20783",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20783",
+        "distance_mi": 19.52051821592881,
+        "time_gap_days": 732,
+        "band": 1,
+        "rank": 9
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20407",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20407",
+        "distance_mi": 23.45996197093115,
+        "time_gap_days": 732,
+        "band": 1,
+        "rank": 10
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:20407",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:20407",
+        "distance_mi": 20.019949067388993,
+        "time_gap_days": 1096,
+        "band": 1,
+        "rank": 11
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:20783",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:20783",
+        "distance_mi": 22.23391053014808,
+        "time_gap_days": 1096,
+        "band": 1,
+        "rank": 12
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:21023",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:21023",
+        "distance_mi": 22.52505899101948,
+        "time_gap_days": 1097,
+        "band": 1,
+        "rank": 13
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:21006",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:21006",
+        "distance_mi": 22.719890536816873,
+        "time_gap_days": 1097,
+        "band": 1,
+        "rank": 14
+      }
+    },
+    {
+      "case": "DESC:6808 S__GPC:21006",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6808 S__GPC:21006",
+        "distance_mi": 20.77853849572314,
+        "time_gap_days": 1461,
+        "band": 1,
+        "rank": 15
+      }
+    },
+    {
+      "case": "DESC:6809 G__GPC:20793",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6809 G__GPC:20793",
+        "distance_mi": 13.420145899028464,
+        "time_gap_days": 1979,
+        "band": 1,
+        "rank": 16
+      }
+    },
+    {
+      "case": "DESC:6809 G__GPC:20794",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6809 G__GPC:20794",
+        "distance_mi": 13.420145899028464,
+        "time_gap_days": 1979,
+        "band": 1,
+        "rank": 17
+      }
+    },
+    {
+      "case": "DESC:06367 D - G__GPC:20784",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:06367 D - G__GPC:20784",
+        "distance_mi": 20.126496504144857,
+        "time_gap_days": 2193,
+        "band": 1,
+        "rank": 18
+      }
+    },
+    {
+      "case": "DESC:6809 G__GPC:17993",
+      "passed": true,
+      "expected": {
+        "_id": "DESC:6809 G__GPC:17993",
+        "distance_mi": 13.420145899028464,
+        "time_gap_days": 2557,
+        "band": 1,
+        "rank": 19
+      }
+    }
+  ],
+  "total_matches": 19,
+  "selected_count": 15,
+  "selected_pairs": [
+    {
+      "_id": "DESC:06367 D - G__GPC:20277",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20277",
+      "band": 0,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3521162,
+            "lon": -81.1751124
+          },
+          "location_ids": [
+            "location:v1:eccd3ce5428c781251342862"
+          ],
+          "project_id": "GPC:20277@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 3.0328942921605173,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 1,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20067",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20067",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.044757399999995,
+            "lon": -81.0672826
+          },
+          "location_ids": [
+            "location:v1:e038d708e4504e1dcc3cf30a",
+            "location:v1:c413d4acfa4f966d0fac4348"
+          ],
+          "project_id": "GPC:20067@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 18.15042002569446,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 2,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 0,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20066",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20066",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.05402935,
+            "lon": -81.09642410000001
+          },
+          "location_ids": [
+            "location:v1:ff44dd955e869de62ba48945",
+            "location:v1:bc76519aa790f252459b1619"
+          ],
+          "project_id": "GPC:20066@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 21.251000271345333,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 3,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20067",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20067",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.044757399999995,
+            "lon": -81.0672826
+          },
+          "location_ids": [
+            "location:v1:e038d708e4504e1dcc3cf30a",
+            "location:v1:c413d4acfa4f966d0fac4348"
+          ],
+          "project_id": "GPC:20067@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 22.08147501523513,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 4,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 364,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20066",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20066",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.05402935,
+            "lon": -81.09642410000001
+          },
+          "location_ids": [
+            "location:v1:ff44dd955e869de62ba48945",
+            "location:v1:bc76519aa790f252459b1619"
+          ],
+          "project_id": "GPC:20066@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 18.935738955762826,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 5,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 365,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20277",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20277",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3521162,
+            "lon": -81.1751124
+          },
+          "location_ids": [
+            "location:v1:eccd3ce5428c781251342862"
+          ],
+          "project_id": "GPC:20277@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 20.458659378285944,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 6,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 365,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20785",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20785",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.1481353,
+            "lon": -81.1459835
+          },
+          "location_ids": [
+            "location:v1:98b8855a4a6ce7baf3aa3fb2"
+          ],
+          "project_id": "GPC:20785@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 14.742211031498835,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 7,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 366,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20785",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20785",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.1481353,
+            "lon": -81.1459835
+          },
+          "location_ids": [
+            "location:v1:98b8855a4a6ce7baf3aa3fb2"
+          ],
+          "project_id": "GPC:20785@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 18.13180698019737,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 8,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 730,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20783",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20783",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.0835097,
+            "lon": -81.1887223
+          },
+          "location_ids": [
+            "location:v1:c297636ce45e0e28def7f3ff"
+          ],
+          "project_id": "GPC:20783@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 19.52051821592881,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 9,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 732,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20407",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20407",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.0226869,
+            "lon": -81.0861807
+          },
+          "location_ids": [
+            "location:v1:f4e6e3adff2e47819e338d0c"
+          ],
+          "project_id": "GPC:20407@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 23.459961970931154,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 10,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 732,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20407",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20407",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.0226869,
+            "lon": -81.0861807
+          },
+          "location_ids": [
+            "location:v1:f4e6e3adff2e47819e338d0c"
+          ],
+          "project_id": "GPC:20407@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 20.019949067388993,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 11,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1096,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20783",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:20783",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "one",
+            "lat": 32.0835097,
+            "lon": -81.1887223
+          },
+          "location_ids": [
+            "location:v1:c297636ce45e0e28def7f3ff"
+          ],
+          "project_id": "GPC:20783@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 22.233910530148076,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 12,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1096,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:21023",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:21023",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.045147799999995,
+            "lon": -81.2209368
+          },
+          "location_ids": [
+            "location:v1:9cbf1414e0d0c3171d07c0de",
+            "location:v1:d6bbf50a43a5620db32220e1"
+          ],
+          "project_id": "GPC:21023@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 22.525058991019478,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 13,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1097,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:21006",
+      "a": "DESC:06367 D - G",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:21006",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.3606993,
+            "lon": -81.1241523
+          },
+          "location_ids": [
+            "location:v1:3994702bfb7711c00894935b"
+          ],
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.031958849999995,
+            "lon": -81.11532220000001
+          },
+          "location_ids": [
+            "location:v1:f01413bbcf24f6159afa6eee",
+            "location:v1:a52ab96d44fa6c797d0a77ac"
+          ],
+          "project_id": "GPC:21006@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 22.719890536816873,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 14,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1097,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:21006",
+      "a": "DESC:6808 S",
+      "analysis_date": "2026-09-26",
+      "b": "GPC:21006",
+      "band": 1,
+      "bindings": {
+        "a": {
+          "center": {
+            "basis": "one",
+            "lat": 32.2350272,
+            "lon": -80.8533836
+          },
+          "location_ids": [
+            "location:v1:7cb43c87c67acc0b6f8a487e"
+          ],
+          "project_id": "DESC:6808 S@desc-2025",
+          "source_id": "desc-2025"
+        },
+        "b": {
+          "center": {
+            "basis": "two",
+            "lat": 32.031958849999995,
+            "lon": -81.11532220000001
+          },
+          "location_ids": [
+            "location:v1:f01413bbcf24f6159afa6eee",
+            "location:v1:a52ab96d44fa6c797d0a77ac"
+          ],
+          "project_id": "GPC:21006@gpc-2025",
+          "source_id": "gpc-2025"
+        }
+      },
+      "distance_mi": 20.77853849572314,
+      "location_confidence": {
+        "a": "medium",
+        "b": "medium"
+      },
+      "rank": 15,
+      "rank_version": "nearby-band-v1",
+      "review_state": "needs_review",
+      "rule_version": "overlap-25mi-v1",
+      "time_gap_days": 1461,
+      "view": "historical"
+    }
+  ],
+  "supporting_endpoints": [
+    {
+      "record_id": "location:v1:3994702bfb7711c00894935b",
+      "project_id": "DESC:06367 D - G@desc-2025",
+      "project_key": "DESC:06367 D - G",
+      "source_id": "desc-2025",
+      "source_page": 18,
+      "name": "Jasper",
+      "osm_id": "way/185380597",
+      "osm_url": "https://www.openstreetmap.org/way/185380597",
+      "lat": 32.3606993,
+      "lon": -81.1241523,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "SC"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Jasper Substation",
+      "raw_operator": null,
+      "raw_voltage": "230000",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified",
+        "operator_missing"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:7cb43c87c67acc0b6f8a487e",
+      "project_id": "DESC:6808 S@desc-2025",
+      "project_key": "DESC:6808 S",
+      "source_id": "desc-2025",
+      "source_page": 8,
+      "name": "Bluffton",
+      "osm_id": "way/498967268",
+      "osm_url": "https://www.openstreetmap.org/way/498967268",
+      "lat": 32.2350272,
+      "lon": -80.8533836,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "SC"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Bluffton Substation",
+      "raw_operator": "South Carolina Electric & Gas",
+      "raw_voltage": "115000",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:ff44dd955e869de62ba48945",
+      "project_id": "GPC:20066@gpc-2025",
+      "project_key": "GPC:20066",
+      "source_id": "gpc-2025",
+      "source_page": 180,
+      "name": "BOULEVARD",
+      "osm_id": "way/381797798",
+      "osm_url": "https://www.openstreetmap.org/way/381797798",
+      "lat": 32.0412308,
+      "lon": -81.1444637,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Boulevard Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "230000;115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:bc76519aa790f252459b1619",
+      "project_id": "GPC:20066@gpc-2025",
+      "project_key": "GPC:20066",
+      "source_id": "gpc-2025",
+      "source_page": 180,
+      "name": "DEPTFORD",
+      "osm_id": "way/122007500",
+      "osm_url": "https://www.openstreetmap.org/way/122007500",
+      "lat": 32.0668279,
+      "lon": -81.0483845,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Deptford Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:e038d708e4504e1dcc3cf30a",
+      "project_id": "GPC:20067@gpc-2025",
+      "project_key": "GPC:20067",
+      "source_id": "gpc-2025",
+      "source_page": 178,
+      "name": "DEPTFORD",
+      "osm_id": "way/122007500",
+      "osm_url": "https://www.openstreetmap.org/way/122007500",
+      "lat": 32.0668279,
+      "lon": -81.0483845,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Deptford Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:c413d4acfa4f966d0fac4348",
+      "project_id": "GPC:20067@gpc-2025",
+      "project_key": "GPC:20067",
+      "source_id": "gpc-2025",
+      "source_page": 178,
+      "name": "MAGNOLIA",
+      "osm_id": "way/121857248",
+      "osm_url": "https://www.openstreetmap.org/way/121857248",
+      "lat": 32.0226869,
+      "lon": -81.0861807,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Magnolia Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:eccd3ce5428c781251342862",
+      "project_id": "GPC:20277@gpc-2025",
+      "project_key": "GPC:20277",
+      "source_id": "gpc-2025",
+      "source_page": 180,
+      "name": "MCINTOSH",
+      "osm_id": "way/121624352",
+      "osm_url": "https://www.openstreetmap.org/way/121624352",
+      "lat": 32.3521162,
+      "lon": -81.1751124,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "McIntosh Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "230000",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:f4e6e3adff2e47819e338d0c",
+      "project_id": "GPC:20407@gpc-2025",
+      "project_key": "GPC:20407",
+      "source_id": "gpc-2025",
+      "source_page": 184,
+      "name": "MAGNOLIA",
+      "osm_id": "way/121857248",
+      "osm_url": "https://www.openstreetmap.org/way/121857248",
+      "lat": 32.0226869,
+      "lon": -81.0861807,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Magnolia Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:c297636ce45e0e28def7f3ff",
+      "project_id": "GPC:20783@gpc-2025",
+      "project_key": "GPC:20783",
+      "source_id": "gpc-2025",
+      "source_page": 184,
+      "name": "DEAN FOREST",
+      "osm_id": "way/121674829",
+      "osm_url": "https://www.openstreetmap.org/way/121674829",
+      "lat": 32.0835097,
+      "lon": -81.1887223,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Dean Forest Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "230000;115000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:98b8855a4a6ce7baf3aa3fb2",
+      "project_id": "GPC:20785@gpc-2025",
+      "project_key": "GPC:20785",
+      "source_id": "gpc-2025",
+      "source_page": 183,
+      "name": "KRAFT",
+      "osm_id": "way/121986375",
+      "osm_url": "https://www.openstreetmap.org/way/121986375",
+      "lat": 32.1481353,
+      "lon": -81.1459835,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Kraft Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "115000",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:f01413bbcf24f6159afa6eee",
+      "project_id": "GPC:21006@gpc-2025",
+      "project_key": "GPC:21006",
+      "source_id": "gpc-2025",
+      "source_page": 186,
+      "name": "BOULEVARD",
+      "osm_id": "way/381797798",
+      "osm_url": "https://www.openstreetmap.org/way/381797798",
+      "lat": 32.0412308,
+      "lon": -81.1444637,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Boulevard Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "230000;115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:a52ab96d44fa6c797d0a77ac",
+      "project_id": "GPC:21006@gpc-2025",
+      "project_key": "GPC:21006",
+      "source_id": "gpc-2025",
+      "source_page": 186,
+      "name": "MAGNOLIA",
+      "osm_id": "way/121857248",
+      "osm_url": "https://www.openstreetmap.org/way/121857248",
+      "lat": 32.0226869,
+      "lon": -81.0861807,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Magnolia Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "115000;46000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:9cbf1414e0d0c3171d07c0de",
+      "project_id": "GPC:21023@gpc-2025",
+      "project_key": "GPC:21023",
+      "source_id": "gpc-2025",
+      "source_page": 186,
+      "name": "DEAN FOREST",
+      "osm_id": "way/121674829",
+      "osm_url": "https://www.openstreetmap.org/way/121674829",
+      "lat": 32.0835097,
+      "lon": -81.1887223,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Dean Forest Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "230000;115000;13800",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    },
+    {
+      "record_id": "location:v1:d6bbf50a43a5620db32220e1",
+      "project_id": "GPC:21023@gpc-2025",
+      "project_key": "GPC:21023",
+      "source_id": "gpc-2025",
+      "source_page": 186,
+      "name": "LITTLE OGEECHEE",
+      "osm_id": "way/121701191",
+      "osm_url": "https://www.openstreetmap.org/way/121701191",
+      "lat": 32.0067859,
+      "lon": -81.2531513,
+      "confidence": "medium",
+      "source_flags": [],
+      "states_independent": [
+        "GA"
+      ],
+      "raw_type_substation": true,
+      "coordinates_equal_raw": true,
+      "raw_name": "Little Ogeechee Substation",
+      "raw_operator": "Georgia Power",
+      "raw_voltage": "230000;115000",
+      "raw_county": null,
+      "producer_limitations": [
+        "project_area_unverified"
+      ],
+      "audit_limitations": [
+        "Independent county/project-area correlation has not been established",
+        "Live OSM page inspection not performed; hash-verified cached feature inspected"
+      ],
+      "confirmation_eligible": false,
+      "coordinate_method": "overpass_bbox_center"
+    }
+  ],
+  "source_hash_proofs": [
+    {
+      "source_id": "desc-2025",
+      "sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+      "path": "data/sources/desc-2025.pdf"
+    },
+    {
+      "source_id": "gpc-2025",
+      "sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+      "path": "docs/Sperry-Tech-Challenge/Project Listings/Georgia Power/2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
+    }
+  ],
+  "OSM_cache_proofs": [
+    {
+      "path": "raw/infrastructure-full.json",
+      "sha256": "e2230f236988ec256ef3ff336b661f83e0f65e64541106083fe0b12ada717c30",
+      "retrieved_at": "2026-09-26T11:09:43.913340Z"
+    },
+    {
+      "path": "raw/line-full.json",
+      "sha256": "2b50f3cd26da6b9bf2ce30286dcbc29fc4da4a80a94d4126b8ab4b91aeea6f38",
+      "retrieved_at": "2026-09-26T11:09:47.195020Z"
+    }
+  ],
+  "open_constraints": [
+    "County/project-area identity remains unverified for all 14 supporting endpoints.",
+    "Only hash-verified cached OSM features were inspected; no live OSM page fetch.",
+    "Live Gemini, Atlas and domain verification deferred by user; no real Gemini accuracy measurement."
+  ],
+  "gemini_real_records": 0,
+  "gemini_accuracy": null,
+  "bound_at": "2026-09-26T14:22:53.856128+00:00",
+  "binding_revision": "5fb62b98c0ce06245ff090f0535c3726e8778388",
+  "review_counts": {
+    "pairs": 15,
+    "endpoints": 14,
+    "confirmed": 0,
+    "downgraded": 29
+  },
+  "source_review": {
+    "desc": {
+      "kind": "independent_visual_read_of_hash_verified_public_DESC_cards",
+      "source_id": "desc-2025",
+      "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+      "observations": [
+        {
+          "project_id": "DESC:6808 S@desc-2025",
+          "page": 8,
+          "native_id": "6808 S",
+          "name": "Okatie-Bluffton 115kV: Rebuild",
+          "status": "In Progress",
+          "in_service_raw": "6/1/2025",
+          "in_service_date": "2025-06-01",
+          "scope": "Replace wooden H-Frame structures; upgrade conductor to standard 1272 ACSR.",
+          "county_or_precise_area_evidence": null
+        },
+        {
+          "project_id": "DESC:06367 D - G@desc-2025",
+          "page": 18,
+          "native_id": "06367 D - G",
+          "name": "Jasper – Okatie 230 kV #2: Construct",
+          "status": "In Progress",
+          "in_service_raw": "5/31/2026",
+          "in_service_date": "2026-05-31",
+          "scope": "Construct a 230 kV line from Jasper to Okatie 230/115 kV substation, estimated 6.5 miles; medium-impact substation/CIP Hut noted.",
+          "county_or_precise_area_evidence": null
+        }
+      ],
+      "limitation": "Source cards support filed names, scope and milestones; they do not establish the OSM endpoint county/identity. Both projects currently have one medium-confidence located endpoint."
+    },
+    "georgia": [
+      {
+        "project_id": "GPC:20067@gpc-2025",
+        "page": 178,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 145.91,
+        "stored_row_top": 145.9,
+        "independent_name": "SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2025",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:20066@gpc-2025",
+        "page": 180,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 381.19,
+        "stored_row_top": 381.2,
+        "independent_name": "SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2026",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:20277@gpc-2025",
+        "page": 180,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 448.15,
+        "stored_row_top": 448.1,
+        "independent_name": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2026",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:20785@gpc-2025",
+        "page": 183,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 224.42,
+        "stored_row_top": 224.4,
+        "independent_name": "SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2027",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:20783@gpc-2025",
+        "page": 184,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 403.15,
+        "stored_row_top": 403.1,
+        "independent_name": "SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2028",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:20407@gpc-2025",
+        "page": 184,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 425.71,
+        "stored_row_top": 425.7,
+        "independent_name": "SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2028",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:21006@gpc-2025",
+        "page": 186,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 246.86,
+        "stored_row_top": 246.9,
+        "independent_name": "SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2029",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      },
+      {
+        "project_id": "GPC:21023@gpc-2025",
+        "page": 186,
+        "source_sha256": "0dae2fc3a38462f0930cc2eb0acedca35e329cd0924e4749c81422bdc8602a12",
+        "independent_row_top": 280.36,
+        "stored_row_top": 280.4,
+        "independent_name": "SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD",
+        "name_matches": true,
+        "independent_date_raw": "6/1/2029",
+        "date_matches": true,
+        "independent_owner_code": "SAV",
+        "owner_matches": true,
+        "review_status": "independent_native_ID_anchored_table_columns_no_parser_import"
+      }
+    ]
+  },
+  "extraction_spot_check": {
+    "review_kind": "post_PR52_snapshot_refresh_of_original_independent_page_observations",
+    "reviewed_at": "2026-09-26T13:21:03.632007+00:00",
+    "current_revision": "a80da364edba791a56ec9dd98588d5eacc7769c2",
+    "original_observations_sha256": "a314a6ac5ab90af1819f355ec218f14e18ab9e6424f9731ecc87390623b255e3",
+    "original_snapshot_revision": "b72d6217c055f1127a65b80f55d3246e8201e2bd",
+    "original_endpoint_snapshot_status": "pre-PR52; retained as historical evidence, not current accepted output",
+    "sample_count": 12,
+    "field_group_count": 9,
+    "agreements": 108,
+    "mismatches": 0,
+    "gemini_comparison": {
+      "real_records": 0,
+      "accuracy": null,
+      "status": "unavailable; live Gemini explicitly deferred"
+    },
+    "resolved_source_findings": {
+      "DESC:0139 M,N@desc-2024": "PR52: now zero accepted endpoints; three candidates Okatie/Jasper/Yemassee retained",
+      "DESC:6238 H@desc-2025": "PR52: now zero accepted endpoints; title/description scope ambiguity retained"
+    },
+    "observations": [
+      {
+        "id": "DESC:6807 B@desc-2024",
+        "source_id": "desc-2024",
+        "page": 1,
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [],
+        "current_endpoint_names": [],
+        "current_endpoint_candidates": [
+          {
+            "name": "Queensboro",
+            "norm": "QUEENSBORO",
+            "raw": "Queensboro"
+          },
+          {
+            "name": "Ft Johnson",
+            "norm": "FT JOHNSON",
+            "raw": "Ft Johnson 115 kV"
+          },
+          {
+            "name": "Bayfront",
+            "norm": "BAYFRONT",
+            "raw": "Bayfront 115kV"
+          },
+          {
+            "name": "James Island",
+            "norm": "JAMES ISLAND",
+            "raw": "James Island Sect"
+          }
+        ],
+        "current_quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous"
+        ]
+      },
+      {
+        "id": "DESC:0167C-D@desc-2024",
+        "source_id": "desc-2024",
+        "page": 2,
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Union Pier"
+        ],
+        "current_endpoint_names": [
+          "Union Pier"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": []
+      },
+      {
+        "id": "DESC:0139 M,N@desc-2024",
+        "source_id": "desc-2024",
+        "page": 3,
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Okatie",
+          "Yemassee"
+        ],
+        "current_endpoint_names": [],
+        "current_endpoint_candidates": [
+          {
+            "name": "Okatie",
+            "norm": "OKATIE",
+            "raw": "Okatie 230-115kV Substation"
+          },
+          {
+            "name": "Jasper",
+            "norm": "JASPER",
+            "raw": "Jasper"
+          },
+          {
+            "name": "Yemassee",
+            "norm": "YEMASSEE",
+            "raw": "Yemassee 230kV #1 Fold-in"
+          }
+        ],
+        "current_quality_flags": [
+          "cost_consistency_mismatch",
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ]
+      },
+      {
+        "id": "DESC:6808 J@desc-2024",
+        "source_id": "desc-2024",
+        "page": 5,
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Eastover",
+          "Square D"
+        ],
+        "current_endpoint_names": [
+          "Eastover",
+          "Square D"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": []
+      },
+      {
+        "id": "DESC:06367 A - C, H@desc-2024",
+        "source_id": "desc-2024",
+        "page": 22,
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Riverport"
+        ],
+        "current_endpoint_names": [
+          "Riverport"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": [
+          "cost_amount_invalid:2024",
+          "yearly_spend_incomplete"
+        ]
+      },
+      {
+        "id": "DESC:6859@desc-2024",
+        "source_id": "desc-2024",
+        "page": 34,
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Dawson"
+        ],
+        "current_endpoint_names": [
+          "Dawson"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": [
+          "in_service_multiple_dates"
+        ]
+      },
+      {
+        "id": "DESC:0167C-D@desc-2025",
+        "source_id": "desc-2025",
+        "page": 1,
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Union Pier"
+        ],
+        "current_endpoint_names": [
+          "Union Pier"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": []
+      },
+      {
+        "id": "DESC:0139 M,N@desc-2025",
+        "source_id": "desc-2025",
+        "page": 2,
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [],
+        "current_endpoint_names": [],
+        "current_endpoint_candidates": [
+          {
+            "name": "Okatie",
+            "norm": "OKATIE",
+            "raw": "Okatie 230-115kV Substation"
+          },
+          {
+            "name": "Jasper",
+            "norm": "JASPER",
+            "raw": "Jasper"
+          },
+          {
+            "name": "Yemassee",
+            "norm": "YEMASSEE",
+            "raw": "Yemassee 230kV #1 Fold-in"
+          }
+        ],
+        "current_quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_multi_asset"
+        ]
+      },
+      {
+        "id": "DESC:6809 G@desc-2025",
+        "source_id": "desc-2025",
+        "page": 11,
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Hooks",
+          "Modoc"
+        ],
+        "current_endpoint_names": [
+          "Hooks",
+          "Modoc"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": []
+      },
+      {
+        "id": "DESC:6859@desc-2025",
+        "source_id": "desc-2025",
+        "page": 28,
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Dawson"
+        ],
+        "current_endpoint_names": [
+          "Dawson"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": [
+          "in_service_multiple_dates"
+        ]
+      },
+      {
+        "id": "DESC:6888@desc-2025",
+        "source_id": "desc-2025",
+        "page": 42,
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Okatie",
+          "McIntosh"
+        ],
+        "current_endpoint_names": [
+          "Okatie",
+          "McIntosh"
+        ],
+        "current_endpoint_candidates": [],
+        "current_quality_flags": []
+      },
+      {
+        "id": "DESC:6238 H@desc-2025",
+        "source_id": "desc-2025",
+        "page": 44,
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "non_location_checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Fairfax",
+          "Yemassee"
+        ],
+        "current_endpoint_names": [],
+        "current_endpoint_candidates": [
+          {
+            "name": "Fairfax",
+            "norm": "FAIRFAX",
+            "raw": "Fairfax"
+          },
+          {
+            "name": "Yemassee",
+            "norm": "YEMASSEE",
+            "raw": "Yemassee"
+          },
+          {
+            "name": "DESCSQ #1151",
+            "norm": "DESCSQ",
+            "raw": "DESCSQ #1151"
+          }
+        ],
+        "current_quality_flags": [
+          "endpoint_ambiguous",
+          "endpoint_scope_ambiguous",
+          "yearly_spend_not_published"
+        ]
+      }
+    ],
+    "source_observations": [
+      {
+        "id": "DESC:6807 B@desc-2024",
+        "source": "desc-2024",
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "page": 1,
+        "expected": {
+          "native_id": "6807 B",
+          "name": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV (Queensboro-James Island Sect)",
+          "description": "Replace the Queensboro – Ft Johnson 115 kV Line and structures as they have reached the end of life.",
+          "need": "This project is required due to address end of life issues.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "12/31/23",
+            "date": "2023-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 5404301,
+          "yearly_spend": {
+            "Previous": 4604301,
+            "2024": 800000,
+            "2025": 0,
+            "2026": 0,
+            "2027": 0,
+            "2028": 0
+          },
+          "voltages_kv": [
+            115
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": []
+      },
+      {
+        "id": "DESC:0167C-D@desc-2024",
+        "source": "desc-2024",
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "page": 2,
+        "expected": {
+          "native_id": "0167C-D",
+          "name": "Union Pier 115-13.8 kV Sub: Tap",
+          "description": "Installing a 115 kV Tap to feed the future Union Pier 115 kV Sub.",
+          "need": "This project is needed to for load growth in the Charleston area.",
+          "status": "Planned",
+          "in_service": {
+            "raw": "12/31/27",
+            "date": "2027-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 5300000,
+          "yearly_spend": {
+            "Previous": 0,
+            "2024": 0,
+            "2025": 100000,
+            "2026": 100000,
+            "2027": 5100000,
+            "2028": 0
+          },
+          "voltages_kv": [
+            115,
+            13.8
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Union Pier"
+        ]
+      },
+      {
+        "id": "DESC:0139 M,N@desc-2024",
+        "source": "desc-2024",
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "page": 3,
+        "expected": {
+          "native_id": "0139 M,N",
+          "name": "Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",
+          "description": "Expand existing Okatie Transmission sub, add a 230-115 autobank and fold the Jasper – Yemassee 230 kV #1 line into the 230 kV side. Construct two additional 115 kV bus tie lines.",
+          "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "12/31/2024",
+            "date": "2024-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 11116933,
+          "yearly_spend": {
+            "Previous": 2717933,
+            "2024": 6631000,
+            "2025": 1181000,
+            "2026": 0,
+            "2027": 0,
+            "2028": 0
+          },
+          "voltages_kv": [
+            230,
+            115
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Okatie",
+          "Yemassee"
+        ]
+      },
+      {
+        "id": "DESC:6808 J@desc-2024",
+        "source": "desc-2024",
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "page": 5,
+        "expected": {
+          "native_id": "6808 J",
+          "name": "Eastover - Square D 115kV: Rebuild",
+          "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and restring with 1272 ACSR conductor.",
+          "need": "This project is required to address end of life and reliability issues on these lines.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "06/01/24",
+            "date": "2024-06-01",
+            "precision": "day"
+          },
+          "cost_usd": 11700000,
+          "yearly_spend": {
+            "Previous": 9900000,
+            "2024": 1800000,
+            "2025": 0,
+            "2026": 0,
+            "2027": 0,
+            "2028": 0
+          },
+          "voltages_kv": [
+            115
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Eastover",
+          "Square D"
+        ]
+      },
+      {
+        "id": "DESC:06367 A - C, H@desc-2024",
+        "source": "desc-2024",
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "page": 22,
+        "expected": {
+          "native_id": "06367 A - C, H",
+          "name": "Riverport Tap: Construct Tap",
+          "description": "Construct Okatie – Riverport 230 kV to feed new Distribution substation.",
+          "need": "Load growth.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "12/31/25",
+            "date": "2025-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 34877427,
+          "yearly_spend": {
+            "Previous": 4337401,
+            "2024": null,
+            "2025": 11489845,
+            "2026": 50000,
+            "2027": 0,
+            "2028": 0
+          },
+          "voltages_kv": []
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Riverport"
+        ]
+      },
+      {
+        "id": "DESC:6859@desc-2024",
+        "source": "desc-2024",
+        "source_sha256": "890876d0faefd40576a0b5e598a804b54b4d8d2d56dd96fb7e40d5a406db0f46",
+        "page": 34,
+        "expected": {
+          "native_id": "6859",
+          "name": "Dawson 230kV Sub and Fold-in: Construct and Rebuild",
+          "description": "Construct Dawson 230kV substation. Fold in the existing Canadys – Church Creek and Canadys – Faber Place 230kV lines at the Dawson 230kV substation (phase 1). Rebuild Canadys – Dawson 230kV #1 and #2 with B1272 ACSR (phase 2).",
+          "need": "Load growth.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "10/1/2025 (phase 1) and 10/1/2026 (phase 2)",
+            "date": null,
+            "precision": "unknown",
+            "dates": [
+              "2025-10-01",
+              "2026-10-01"
+            ]
+          },
+          "cost_usd": 93538207,
+          "yearly_spend": {
+            "Previous": 284366,
+            "2024": 8014000,
+            "2025": 45475000,
+            "2026": 39764841,
+            "2027": 0,
+            "2028": 0
+          },
+          "voltages_kv": [
+            230
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Dawson"
+        ]
+      },
+      {
+        "id": "DESC:0167C-D@desc-2025",
+        "source": "desc-2025",
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "page": 1,
+        "expected": {
+          "native_id": "0167C-D",
+          "name": "Union Pier 115-13.8 kV Sub: Tap",
+          "description": "Installing a 115 kV Tap to feed the future Union Pier 115 kV Sub.",
+          "need": "This project is needed to for load growth in the Charleston area.",
+          "status": "Planned",
+          "in_service": {
+            "raw": "12/31/27",
+            "date": "2027-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 5300000,
+          "yearly_spend": {
+            "Previous": 0,
+            "2025": 0,
+            "2026": 0,
+            "2027": 5300000,
+            "2028": 0,
+            "2029": 0
+          },
+          "voltages_kv": [
+            115,
+            13.8
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Union Pier"
+        ]
+      },
+      {
+        "id": "DESC:0139 M,N@desc-2025",
+        "source": "desc-2025",
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "page": 2,
+        "expected": {
+          "native_id": "0139 M,N",
+          "name": "Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",
+          "description": "Expand existing Okatie Transmission sub, add a 230-115 autobank and fold the Jasper – Yemassee 230 kV #1 line into the 230 kV side. Construct two additional 115 kV bus tie lines.",
+          "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "5/31/2026",
+            "date": "2026-05-31",
+            "precision": "day"
+          },
+          "cost_usd": 11630257,
+          "yearly_spend": {
+            "Previous": 7204010,
+            "2025": 3401335,
+            "2026": 1024912,
+            "2027": 0,
+            "2028": 0,
+            "2029": 0
+          },
+          "voltages_kv": [
+            230,
+            115
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": []
+      },
+      {
+        "id": "DESC:6809 G@desc-2025",
+        "source": "desc-2025",
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "page": 11,
+        "expected": {
+          "native_id": "6809 G",
+          "name": "Hooks - Modoc 115/46 kV Rebuild",
+          "description": "Upgrade 6.5 miles of aging conductor with 1272 ACSR and rebuild with SPDC.",
+          "need": "This project is required to address end of life and reliability issues on these lines.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "12/31/27",
+            "date": "2027-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 7800000,
+          "yearly_spend": {
+            "Previous": 150000,
+            "2025": 0,
+            "2026": 100000,
+            "2027": 7550000,
+            "2028": 0,
+            "2029": 0
+          },
+          "voltages_kv": [
+            115,
+            46
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Hooks",
+          "Modoc"
+        ]
+      },
+      {
+        "id": "DESC:6859@desc-2025",
+        "source": "desc-2025",
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "page": 28,
+        "expected": {
+          "native_id": "6859",
+          "name": "Dawson 230kV Sub and Fold-in: Construct and Rebuild",
+          "description": "Construct Dawson 230kV substation. Fold in the existing Canadys – Church Creek and Canadys – Faber Place 230kV lines at the Dawson 230kV substation (phase 1). Rebuild Canadys – Dawson 230kV #1 and #2 with B1272 ACSR (phase 2).",
+          "need": "Load growth.",
+          "status": "In Progress",
+          "in_service": {
+            "raw": "10/1/2025 (phase 1) and 10/1/2026 (phase 2)",
+            "date": null,
+            "precision": "unknown",
+            "dates": [
+              "2025-10-01",
+              "2026-10-01"
+            ]
+          },
+          "cost_usd": 93603207,
+          "yearly_spend": {
+            "Previous": 12978366,
+            "2025": 40860000,
+            "2026": 39764841,
+            "2027": 0,
+            "2028": 0,
+            "2029": 0
+          },
+          "voltages_kv": [
+            230
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Dawson"
+        ]
+      },
+      {
+        "id": "DESC:6888@desc-2025",
+        "source": "desc-2025",
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "page": 42,
+        "expected": {
+          "native_id": "6888",
+          "name": "Okatie – McIntosh 115kV Tie: Add Series Reactor",
+          "description": "Construct Deerfield Switching Station and Install a 9% series reactor on the Okatie – McIntosh 115kV Tie Line.",
+          "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+          "status": "Planned",
+          "in_service": {
+            "raw": "12/31/2028",
+            "date": "2028-12-31",
+            "precision": "day"
+          },
+          "cost_usd": 5376418,
+          "yearly_spend": {
+            "Previous": 0,
+            "2025": 0,
+            "2026": 0,
+            "2027": 50000,
+            "2028": 5326418,
+            "2029": 0
+          },
+          "voltages_kv": [
+            115
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Okatie",
+          "McIntosh"
+        ]
+      },
+      {
+        "id": "DESC:6238 H@desc-2025",
+        "source": "desc-2025",
+        "source_sha256": "265453ccf14b4f95054fed304b7999270a478dbefc3a812163395b31422e74e0",
+        "page": 44,
+        "expected": {
+          "native_id": "6238 H",
+          "name": "Fairfax-Yemassee 115kV: Upgrade for DESCSQ #1151 Interconnection",
+          "description": "Upgrade 336 ACSR portion of DESCSQ #1151 - Yemassee 115 kV line to 1272 ACSR.",
+          "need": "This project is needed to interconnect DESCSQ #1151 in accordance with the DESC Transitional Cluster System Impact Study.",
+          "status": "Planned",
+          "in_service": {
+            "raw": "9/7/2027",
+            "date": "2027-09-07",
+            "precision": "day"
+          },
+          "cost_usd": 20350000,
+          "yearly_spend": {},
+          "voltages_kv": [
+            115
+          ]
+        },
+        "checks": {
+          "native_id": true,
+          "name": true,
+          "description": true,
+          "need": true,
+          "status": true,
+          "in_service": true,
+          "cost_usd": true,
+          "yearly_spend": true,
+          "voltages_kv": true
+        },
+        "pre_correction_endpoint_names": [
+          "Fairfax",
+          "Yemassee"
+        ]
+      }
+    ]
+  },
+  "binding_contract": {
+    "version": "audit-subject-v1",
+    "helper": "pipeline/load/review_subjects.py",
+    "scope": "Only subject projection/hash reused; distance/date/rank and source checks are independent."
+  },
+  "OSM_cache_base": "data/osm",
+  "state_boundary_proof": {
+    "path": "data/locations/boundaries/raw/ga-sc-states-2026.geojson",
+    "sha256": "b8734276783a5cef4f0fed32fa7e0901f95335da3b23583d1d887c011858bf15",
+    "method": "Independent ray crossing; no production geocoder or state lookup import."
+  }
+}
