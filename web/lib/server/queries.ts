@@ -11,6 +11,7 @@ import type {
   PairDetail,
   Project,
   Review,
+  Source,
   VersionChange,
   View,
 } from "@/lib/types";
@@ -71,14 +72,16 @@ export async function pair(db: Db, dataset: string, id: string): Promise<PairDet
     find<VersionChange>(db, "version_changes", { dataset, project_key: { $in: [match.a, match.b] } }, { sort: { id: 1 } }),
     find<Review>(db, "reviews", { dataset, record_id: id }, { sort: { at: 1 } }),
   ]);
-  return {
-    match,
-    a: byKey.get(match.a) ?? null,
-    b: byKey.get(match.b) ?? null,
-    brief: briefs[0] ?? null,
-    version_changes: versionChanges,
-    reviews,
-  };
+  const a = byKey.get(match.a) ?? null;
+  const b = byKey.get(match.b) ?? null;
+  const cited = [
+    ...new Set([
+      ...[a, b].flatMap((p) => (p ? [p.source.source_id] : [])),
+      ...versionChanges.flatMap((c) => [c.from_source, c.to_source]),
+    ]),
+  ];
+  const sources = await find<Source>(db, "sources", { dataset, id: { $in: cited } }, { sort: { id: 1 } });
+  return { match, a, b, brief: briefs[0] ?? null, version_changes: versionChanges, reviews, sources };
 }
 
 export const versions = (db: Db, dataset: string) =>
