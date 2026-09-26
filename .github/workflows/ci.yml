@@ -59,6 +59,22 @@ jobs:
       - name: spec lint
         run: python3 scripts/check_ownership.py --lint-specs
 
+      - name: Verified operations checks
+        run: |
+          node scripts/check_operations_traces.mjs
+          if [ -d tests/web/verified ]; then
+            node --test tests/web/verified/*.test.ts
+          fi
+          if [ -f tests/web/operations-providers/loader.mjs ]; then
+            node --import ./tests/web/operations-providers/loader.mjs --test tests/web/operations-providers/*.test.ts
+          fi
+          if [ -d tests/web/outcomes ]; then
+            node --test tests/web/outcomes/*.test.ts
+          fi
+          if [ -d tests/web/operations-ui ]; then
+            node --test tests/web/operations-ui/*.test.ts
+          fi
+
       - name: ownership
         if: github.event_name == 'pull_request'
         env:
@@ -112,6 +128,9 @@ jobs:
           fi
           if [ -f tests/web/assistant/playwright.config.ts ]; then
             web/node_modules/.bin/playwright test -c tests/web/assistant/playwright.config.ts --output test-results/assistant || browser_status=1
+          fi
+          if [ -f tests/web/operations-ui/playwright.config.ts ]; then
+            web/node_modules/.bin/playwright test -c tests/web/operations-ui/playwright.config.ts --output test-results/operations || browser_status=1
           fi
           web/node_modules/.bin/playwright test -c tests/e2e --output test-results/legacy || browser_status=1
           exit "$browser_status"

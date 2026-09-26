@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     "/api/national/*": ["../data/national/*.json"],
     // Only used on the separate optional F32 branch; no assistant route is activated here.
     "/assistant": ["../data/national/*.json"],
+    "/api/verified": ["../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json", "../data/national/geography.json"],
+    "/api/verified/*": ["../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json", "../data/national/geography.json"],
+    "/api/operations/*": ["../data/environment/aef-samples.json", "../data/environment/aef-samples.evidence.json", "../data/environment/washington-boundary.json", "../data/environment/washington-boundary.evidence.json"],
   },
 };
 
