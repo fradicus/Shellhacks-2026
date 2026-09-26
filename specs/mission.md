@@ -46,3 +46,6 @@ Plain, precise, evidence-first. Say "in service 152 days apart", never "built at
 
 ## Out of scope tonight
 Auth and accounts, live Gemini calls from the public site, a third utility, route or corridor geometry, schedule optimization, notifications.
+
+## National follow-on authorized by the user
+The first-run limits above are historical. C11/F30/F31 extend discovery to verified public national sources and state/county/Census-region/planning-region filters, starting with an actual regional import plus the reviewed legacy corpus. Government geography and a source directory must not imply imported project coverage everywhere. Preserve the sponsor's strict distance rule, source evidence, unknown locations and milestone precision. F32 is a separate potential-feature branch for a controlled natural-language side panel; it does not activate a public live model. Plans B and D supply source-audit and map/table/Ask-the-grid guidance within the current stack.

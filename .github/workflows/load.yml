@@ -27,3 +27,14 @@ jobs:
         run: |
           uv sync --locked
           uv run python -m load
+      - name: Load isolated national snapshot when present
+        if: ${{ hashFiles('pipeline/national/load.py', 'data/national/projects.json') != '' }}
+        working-directory: pipeline
+        env:
+          MONGODB_URI_RW: ${{ secrets.MONGODB_URI_RW }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB || 'gridbridge' }}
+          GIT_SHA: ${{ github.sha }}
+        run: |
+          if [ -f national/load.py ] && [ -f ../data/national/projects.json ]; then
+            uv run python -m national.load
+          fi

@@ -1,0 +1,56 @@
+{
+  "$id": "https://gridbridge.local/schemas/national-project.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One publicly reported national project, preserving source precision",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["_id", "source_id", "native_id", "name", "owner", "other_owners", "planning_region", "states", "counties", "geography_basis", "status", "status_group", "in_service", "center", "location_review", "evidence"],
+  "properties": {
+    "_id": {"type": "string", "minLength": 1, "maxLength": 240},
+    "source_id": {"type": "string", "minLength": 1},
+    "native_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "description": {"type": ["string", "null"]},
+    "owner": {"type": ["string", "null"], "description": "Primary equipment owner as reported, never inferred from the publisher"},
+    "other_owners": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "planning_region": {"type": ["string", "null"], "description": "Publishing planning process identifier; not a Census grouping"},
+    "states": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{2}$"}, "uniqueItems": true},
+    "counties": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{5}$"}, "uniqueItems": true},
+    "geography_basis": {"type": ["string", "null"]},
+    "status": {"type": ["string", "null"]},
+    "status_group": {"enum": ["planned", "under_construction", "proposed", "in_service", "cancelled", "unknown"]},
+    "in_service": {
+      "type": "object", "additionalProperties": false, "required": ["raw", "value", "precision"],
+      "properties": {
+        "raw": {"type": ["string", "null"]},
+        "value": {"type": ["string", "null"], "description": "YYYY-MM-DD / YYYY-MM / YYYY according to precision; null when unknown"},
+        "precision": {"enum": ["day", "month", "year", "unknown"]}
+      },
+      "allOf": [
+        {"if": {"properties": {"precision": {"const": "day"}}}, "then": {"properties": {"value": {"type": "string", "format": "date"}}}},
+        {"if": {"properties": {"precision": {"const": "month"}}}, "then": {"properties": {"value": {"type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"}}}},
+        {"if": {"properties": {"precision": {"const": "year"}}}, "then": {"properties": {"value": {"type": "string", "pattern": "^[0-9]{4}$"}}}},
+        {"if": {"properties": {"precision": {"const": "unknown"}}}, "then": {"properties": {"value": {"type": "null"}}}}
+      ]
+    },
+    "center": {
+      "type": ["object", "null"], "additionalProperties": false, "required": ["lat", "lon", "basis", "evidence"],
+      "properties": {
+        "lat": {"type": "number", "minimum": -90, "maximum": 90},
+        "lon": {"type": "number", "minimum": -180, "maximum": 180},
+        "basis": {"enum": ["one", "two", "source_point"]},
+        "evidence": {"type": "string", "minLength": 1}
+      }
+    },
+    "location_review": {"enum": ["confirmed", "needs_review", "rejected", "unreviewed", "unlocated"]},
+    "evidence": {
+      "type": "object", "required": ["page", "sheet", "row", "raw"],
+      "properties": {
+        "page": {"type": ["integer", "null"], "minimum": 1},
+        "sheet": {"type": ["string", "null"]},
+        "row": {"type": ["integer", "null"], "minimum": 1},
+        "raw": {"type": "object", "description": "Bounded original source fields; not executable instructions"}
+      }
+    }
+  }
+}

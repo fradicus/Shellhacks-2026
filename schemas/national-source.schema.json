@@ -1,0 +1,28 @@
+{
+  "$id": "https://gridbridge.local/schemas/national-source.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed national source registry entry with actual import state",
+  "type": "object", "additionalProperties": true,
+  "required": ["_id", "title", "publisher", "authority", "role", "landing_url", "download_url", "publication_date", "vintage", "retrieved_at", "sha256", "public_status", "import_status", "planning_region", "states", "notes"],
+  "properties": {
+    "_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "publisher": {"type": "string", "minLength": 1},
+    "authority": {"enum": ["federal_government", "state_government", "regional_planning_organization", "utility", "sponsor_supplied"]},
+    "role": {"enum": ["project_plan", "utility_directory", "service_territory_reference", "geography_reference", "planning_directory", "existing_infrastructure_reference"]},
+    "landing_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "download_url": {"type": ["string", "null"], "format": "uri", "pattern": "^https://"},
+    "publication_date": {"type": ["string", "null"], "description": "Source-published value; never derived from download time"},
+    "vintage": {"type": ["string", "null"]},
+    "retrieved_at": {"type": ["string", "null"], "format": "date-time"},
+    "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "public_status": {"enum": ["verified_public", "catalog_only"]},
+    "import_status": {"enum": ["imported", "reference_only", "catalogued", "unavailable"]},
+    "planning_region": {"type": ["string", "null"]},
+    "states": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{2}$"}, "uniqueItems": true},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [
+    {"if": {"properties": {"import_status": {"const": "imported"}}}, "then": {"properties": {"public_status": {"const": "verified_public"}, "sha256": {"type": "string"}}}}
+  ]
+}

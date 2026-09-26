@@ -1,0 +1,28 @@
+---
+id: F30
+name: Trusted national source registry, geography and ingestion
+lane: A
+agent: data-researcher
+phase: 5
+depends_on: [F00]
+owns: [pipeline/national/, data/national/, tests/pipeline/test_f30_]
+cut: never
+---
+
+# F30 National public data
+
+Follow Plans B and D's source, provenance, uncertainty and sponsor-rule requirements and C11's follow-on boundary. The scope is an extensible verified-source registry, complete federal state/county reference geography, and a real first regional project import; it is not a claim that every US project is already available.
+
+## Requirements
+
+1. Obtain authoritative Census state/county identifiers and label Census regions separately from transmission planning regions. Retain exact original URLs, SHA-256, retrieval timestamps, data vintage and field meanings. Leading zeroes are significant.
+2. Catalogue verified FERC/EIA and official regional/state/utility sources by their actual roles, authority and retrieval status. Do not copy unverified project counts from the user's research. Existing infrastructure geometry and distribution-service counties cannot establish future project sites.
+3. Implement a bounded download/cache and adapter interface with an explicit reviewed-source allowlist; no arbitrary URL ingestion from a user or extracted document. Fail on unexpected source format, duplicate identities, invalid geography, oversized/archive payloads or changed required columns. Keep original rows/pages and raw milestone text for traceability.
+4. Import at least one verified current public machine-readable regional project source into a separate national snapshot. Preserve source/project identity, owner-as-published, status, planning region, stated states/counties, exact or partial milestone precision and missing coordinates. Do not fabricate an EIA match, source publication date, project center, cost or confidence probability.
+5. Reuse sponsor arithmetic and strict <25-mile semantics if producing candidate pairs from verified owners and evidenced centers. No center means no spatial candidate. Exact day differences require two exact dates. Never replace canonical legacy matches with a new ranking.
+6. Validate all records and produce ingestion coverage/failures with explicit source-level counts. Repeat offline parsing is deterministic; retrieval time belongs to source evidence, not invented record events. Expose a CLI for intentional refresh and cached replay.
+7. Provide an isolated namespace loader for national snapshots as described in C11. Validate-only without RW; atomic national activation; idempotent dataset imports; never touch legacy datasets or the other worker's search/embedding collections.
+
+## Validation
+
+Meaningful tests cover source-row parsing and page/row citations, changed headers, uncertain dates, unknown/ambiguous owner and geography, leading-zero codes, duplicate IDs, missing geometry, unsafe downloads, deterministic replay, failed-load activation and idempotency. Validate a real retrieved snapshot and inspect representative rows against the official file. Run repo-wide checks. Document actual coverage and unimplemented adapters in `data/national/README.md`.
