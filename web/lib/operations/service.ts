@@ -46,14 +46,15 @@ export function sampleRoute(points: Point[]): { points: Point[]; maxGapKm: numbe
   }
   return { points: sampled, maxGapKm: total / (count - 1), limited: total / (count - 1) > LIMITS.route_sample_max_gap_km };
 }
-function combine<T>(provider: "weather" | "roadwork" | "aef", request: RouteRequest, results: Envelope<T>[], data: T | null, limited: boolean, gap: number, now: Date): Envelope<T> {
+function combine<T>(provider: "weather" | "roadwork" | "aef", request: RouteRequest, results: Envelope<T>[], data: T | null, limited: boolean, gap: number, now: Date, binding: unknown): Envelope<T> {
   const result = empty<T>(provider, request, `Route point samples only; maximum along-route sample gap ${gap.toFixed(2)} km. Not continuous corridor coverage.`, "partial", now);
   const completed = results.filter((r) => r.status === "available").length;
   result.data = data; result.coverage = { requested: results.length, completed, failed: results.length - completed, truncated: limited };
   result.limitations.push(...new Set(results.flatMap((r) => [`Sample status: ${r.status}; source updated ${r.source_updated_at ?? "unknown"}.`, ...r.limitations])));
   const times = results.map((r) => r.source_updated_at).filter((t): t is string => !!t).sort((a, b) => Date.parse(a) - Date.parse(b));
   result.source_updated_at = times[0] ?? null;
-  result.evidence_hash = digest(results.map((r) => r.evidence_hash));
+  result.evidence_hash = digest({ binding, samples: results.map((r) => ({ request_hash: r.request_hash, evidence_hash: r.evidence_hash, status: r.status, retrieved_at: r.retrieved_at })) });
+  result.retrieved_at = results.map((r) => r.retrieved_at).sort((a, b) => Date.parse(b) - Date.parse(a))[0] ?? now.toISOString();
   if (!data) result.status = "unavailable";
   else if (results.some((r) => r.status === "stale")) result.status = "stale";
   // Route sampling always remains partial: even closely spaced points can miss a narrow hazard.
@@ -68,16 +69,20 @@ export async function route(request: RouteRequest, ctx = context(), snapshot?: A
   if (!polyline) return response;
   try {
     const points = decodePolyline(polyline);
-    if (distanceKm(points[0], request.origin) > 5 || distanceKm(points.at(-1)!, request.destination) > 5) throw new Error("Route endpoints do not match request");
+    const originSnap = distanceKm(points[0], request.origin), destinationSnap = distanceKm(points.at(-1)!, request.destination);
+    if (originSnap > .1 || destinationSnap > .1) throw new Error("Route endpoints differ by more than 100m from request");
+    response.limitations.push(`Provider road snapping: origin ${(originSnap * 1000).toFixed(1)}m; destination ${(destinationSnap * 1000).toFixed(1)}m.`);
+    response.limitations.push("Environmental samples are not resolved to per-point arrival times; departure is retained for context only. Assessment remains incomplete.");
     const sampling = sampleRoute(points); const snap = snapshot === undefined ? await readSnapshot() : snapshot;
+    const binding = { route_request_hash: result.request_hash, route_evidence_hash: result.evidence_hash, route_retrieved_at: result.retrieved_at, geometry_sha256: digest(polyline), points: sampling.points, departure_at: request.departure_at, temporal_scope: "not_arrival_time_resolved" };
     const year = snap?.records.length ? Math.max(...snap.records.map((r) => r.year)) : ctx.now.getUTCFullYear() - 1;
     const results = await Promise.all(sampling.points.map(async (point) => ({ w: await weather(point, ctx), r: await roadwork(point, ctx), a: aef(point, year, snap, ctx.now) })));
     const weatherSamples = results.flatMap((r) => r.w.data?.samples ?? []);
     const zones = results.flatMap((r) => r.r.data?.events ?? []);
     const aefSamples = results.flatMap((r) => r.a.data?.samples ?? []);
-    response.weather = combine<WeatherData>("weather", request, results.map((r) => r.w), weatherSamples.length ? { samples: weatherSamples, scope: "sampled route points; current forecast, not guaranteed conditions at arrival" } : null, sampling.limited, sampling.maxGapKm, ctx.now);
-    response.roadwork = combine<RoadworkData>("roadwork", request, results.map((r) => r.r), results.some((r) => r.r.data) ? { events: [...new Map(zones.map((z) => [z.id, z])).values()], jurisdictions: ["WSDOT reported network only"], scope: "vicinities of sampled route points only" } : null, sampling.limited, sampling.maxGapKm, ctx.now);
-    response.aef = combine<AEFData>("aef", request, results.map((r) => r.a), aefSamples.length ? { samples: aefSamples, scope: "annual_satellite_embedding" } : null, sampling.limited, sampling.maxGapKm, ctx.now);
+    response.weather = combine<WeatherData>("weather", request, results.map((r) => r.w), weatherSamples.length ? { samples: weatherSamples, scope: "sampled route points; NOT resolved to arrival time" } : null, sampling.limited, sampling.maxGapKm, ctx.now, binding);
+    response.roadwork = combine<RoadworkData>("roadwork", request, results.map((r) => r.r), results.some((r) => r.r.data) ? { events: [...new Map(zones.map((z) => [z.id, z])).values()], jurisdictions: ["WSDOT reported network only"], scope: "vicinities of sampled route points only; NOT resolved to arrival time" } : null, sampling.limited, sampling.maxGapKm, ctx.now, binding);
+    response.aef = combine<AEFData>("aef", request, results.map((r) => r.a), aefSamples.length ? { samples: aefSamples, scope: "annual_satellite_embedding" } : null, sampling.limited, sampling.maxGapKm, ctx.now, binding);
     return response;
   } catch { response.limitations.push("Route geometry was invalid or could not be sampled; environmental assessment unavailable."); return response; }
 }

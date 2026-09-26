@@ -1,6 +1,13 @@
 import { z } from "zod";
 
 export const SCHEMA_VERSION = "operations-v1" as const;
+// Decimal parsing avoids binary floating underflow (e.g. 1.001 * 1000).
+export function millimeters(value: number): number {
+  const [whole, fraction = ""] = String(value).split(".");
+  if (!/^\d+$/.test(whole) || !/^\d{0,3}$/.test(fraction)) throw new Error("Dimensions must be exact whole millimetres");
+  return Number(whole) * 1000 + Number(fraction.padEnd(3, "0"));
+}
+const dimension = (max: number) => z.number().min(.001).max(max).refine((v) => { try { millimeters(v); return true; } catch { return false; } }, "Dimensions must be exact whole millimetres");
 export const PointSchema = z.object({ lat: z.number().finite().min(-90).max(90), lon: z.number().finite().min(-180).max(180) }).strict();
 export type Point = z.infer<typeof PointSchema>;
 export const HazmatSchema = z.enum(["EXPLOSIVES", "GASES", "FLAMMABLE", "COMBUSTIBLE", "ORGANIC", "POISON", "CORROSIVE", "ASPIRATION_HAZARD", "ENVIRONMENTAL_HAZARD", "OTHER"]);
@@ -8,9 +15,9 @@ export const RouteRequestSchema = z.object({
   origin: PointSchema, destination: PointSchema,
   departure_at: z.iso.datetime({ offset: true }),
   truck: z.object({
-    height_m: z.number().min(.001).max(10), width_m: z.number().min(.001).max(10), length_m: z.number().min(.001).max(100),
-    gross_weight_kg: z.number().min(1).max(500000), axle_count: z.number().int().min(2).max(50),
-    trailers: z.array(z.object({ length_m: z.number().min(.001).max(50) }).strict()).max(5),
+    height_m: dimension(10), width_m: dimension(10), length_m: dimension(100),
+    gross_weight_kg: z.number().int().min(1).max(500000), axle_count: z.number().int().min(2).max(50),
+    trailers: z.array(z.object({ length_m: dimension(50) }).strict()).max(5),
     hazmat: z.array(HazmatSchema).max(10).refine((v) => new Set(v).size === v.length, "Duplicate hazardous goods"),
   }).strict().refine((v) => v.trailers.reduce((n, t) => n + t.length_m, 0) < v.length_m, "Trailer lengths must fit combined vehicle length"),
 }).strict();

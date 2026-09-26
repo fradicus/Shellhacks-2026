@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
-import { RouteRequestSchema, parseSiteQuery } from "../../../web/lib/operations/contracts.ts";
+import { RouteRequestSchema, parseSiteQuery, millimeters } from "../../../web/lib/operations/contracts.ts";
+import { washingtonContains } from "../../../web/lib/operations/jurisdiction.ts";
 import { transport } from "../../../web/lib/operations/transport.ts";
 import { weather, soil, roadwork, truckRoute, type Context } from "../../../web/lib/operations/providers.ts";
 import { validateSnapshot, aef } from "../../../web/lib/operations/aef.ts";
@@ -71,8 +72,41 @@ test("route sampling exposes large gaps; absent truck route leaves assessment in
 });
 test("real AEF artifact binds exact point/year and rejects numeric/hash tampering", async () => {
   const data = JSON.parse(await readFile(new URL("../../../data/environment/aef-samples.json", import.meta.url), "utf8"));
-  const snapshot = validateSnapshot(data);
+  const evidence = JSON.parse(await readFile(new URL("../../../data/environment/aef-samples.evidence.json", import.meta.url), "utf8"));
+  const snapshot = validateSnapshot(data, evidence);
   assert.equal(aef(point, 2025, snapshot, now).status, "available"); assert.equal(aef(point, 2024, snapshot, now).data, null); assert.equal(aef({ ...point, lat: 47 }, 2025, snapshot, now).data, null);
-  const changed = structuredClone(data); changed.records[0].embedding[0] += .01; assert.throws(() => validateSnapshot(changed));
-  const raw = structuredClone(data); raw.records[0].raw[0] = -128; assert.throws(() => validateSnapshot(raw));
+  assert.equal(aef(point, 2025, snapshot, now).retrieved_at, new Date(evidence.records[0].retrieved_at).toISOString());
+  const changed = structuredClone(data); changed.records[0].embedding[0] += .01; assert.throws(() => validateSnapshot(changed, evidence));
+  const raw = structuredClone(data); raw.records[0].raw[0] = -128; assert.throws(() => validateSnapshot(raw, evidence));
+  for (const field of ["object_etag", "index_sha256", "sample_sha256"]) { const bad = structuredClone(evidence); bad.records[0][field] = "f".repeat(64); assert.throws(() => validateSnapshot(data, bad)); }
+  const noRanges = structuredClone(evidence); noRanges.records[0].ranges = []; assert.throws(() => validateSnapshot(data, noRanges));
+});
+
+test("vehicle conversion requires exact mm/kg and preserves 1.001m without floating floor loss", () => {
+  assert.equal(millimeters(1.001), 1001);
+  for (const truck of [{ ...request.truck, height_m: 4.0001 }, { ...request.truck, gross_weight_kg: 30000.99 }, { ...request.truck, trailers: [{ length_m: 15.0001 }] }]) assert.equal(RouteRequestSchema.safeParse({ ...request, truck }).success, false);
+});
+test("soil distinguishes exactly1000rows from1001sentinel and preserves1000rows", async () => {
+  const header = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp"];
+  const rows = Array.from({ length: 1001 }, (_, i) => [String(i), "Unit", "WA001", "2025-01-01", String(i), "Component", null, null, null]);
+  const exact = await soil(point, ctx({ Table: [header, header, ...rows.slice(0, 1000)] }));
+  assert.equal(exact.status, "available"); assert.equal(exact.coverage.truncated, false);
+  const more = await soil(point, ctx({ Table: [header, header, ...rows] }));
+  assert.equal(more.status, "partial"); assert.equal(more.data?.map_units.length, 1000); assert.equal(more.coverage.truncated, true);
+});
+test("Census Washington polygon rejects Portland and Idaho within old rectangular prefilter", async () => {
+  assert.equal(await washingtonContains(point), true);
+  for (const p of [{ lat: 45.52, lon: -122.67 }, { lat: 47.65, lon: -116.9 }]) {
+    assert.equal(await washingtonContains(p), false);
+    const result = await roadwork(p, { now, io: async () => { throw new Error("must not request"); } }); assert.equal(result.status, "out_of_coverage");
+  }
+});
+test("route transport identity changes aggregate environmental binding and warnings remain partial", async () => {
+  function encodedNumber(n: number) { let v = n < 0 ? -n * 2 - 1 : n * 2; let s = ""; while (v >= 32) { s += String.fromCharCode((v % 32) + 95); v = Math.floor(v / 32); } return s + String.fromCharCode(v + 63); }
+  const encoded = encodedNumber(Math.round(point.lat * 1e5)) + encodedNumber(Math.round(point.lon * 1e5)) + "??";
+  const make = (hash: string): Context => ({ ...weatherContext(), googleKey: "synthetic", lvrEnabled: true, io: async (url, init, max) => url.includes("routes.googleapis.com") ? { ...wrap({ routes: [{ distanceMeters: 0, duration: "1s", polyline: { encodedPolyline: encoded }, warnings: ["Check restrictions"] }] }), hash, retrieved: "2026-09-26T20:00:05Z" } : weatherContext().io(url, init, max) });
+  const first = await route(request, make("1".repeat(64)), null); const second = await route(request, make("2".repeat(64)), null);
+  assert.equal(first.route.status, "partial"); assert.equal(first.route.retrieved_at, "2026-09-26T20:00:05Z");
+  assert.equal(first.route.evidence_hash, "1".repeat(64)); assert.notEqual(first.weather.evidence_hash, second.weather.evidence_hash);
+  assert.match(first.limitations.join(" "), /not resolved to per-point arrival/);
 });

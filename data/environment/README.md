@@ -6,11 +6,13 @@ or an assessment of current site conditions. Other exact point/year requests
 return unavailable. There is no interpolation, geocoding or nearest-pixel fallback.
 
 `aef-samples.json` contains 64 signed raw values and their nonlinear decoding.
-`aef-samples.evidence.json` records the object ETag, native pixel locator, HTTP
+`aef-samples.evidence.json` v2 retains per-sample retrieval time, object ETag, HTTP
 ranges and hashes of the bytes actually read. The object was 3,380,177,694 bytes;
 the sampler read 31,820,382 bytes in 77 requests. A whole-object hash is **unknown**.
-The snapshot hash covers UTF-8 JSON after CRLF-to-LF normalization; the reader
-checks it before accepting any point binding. This is a reviewed static annual
+The snapshot binds each native pixel locator. Its hash covers UTF-8 JSON after CRLF-to-LF normalization; the reader
+checks it and each record's object/index/sample/range binding before accepting a point.
+Appending another sample preserves the older sample's evidence and retrieval time.
+This is a reviewed static annual
 artifact, not a live Earth Engine call or a validated downstream classifier.
 
 `seattle-index.csv` is a reviewed nine-row subset of the official index, selected
@@ -30,7 +32,7 @@ uv run --extra environment python -m environment --index "$env:TEMP/aef-seattle.
 The offset is a discovery hint for this reviewed subset, not a spatial index rule.
 If upstream index ordering or identity changes, no matching row must remain
 unavailable until a new subset is reviewed. The extractor reads at most 8,008,192
-bytes in two requests. The sampler permits at most 32 MiB and 80 HTTP requests,
+bytes in two requests with a 35-second process watchdog. The sampler permits at most 32 MiB and 80 HTTP requests,
 with a 45-second budget and a 50-second parent-process watchdog. Every range uses
 the same ETag. Errors preserve existing accepted artifacts. Rasterio uses a custom
 opener: ordinary file-like input would copy a whole COG and is deliberately avoided.
@@ -53,7 +55,9 @@ Runtime API contracts are exported from `web/lib/operations/contracts.ts`:
 - `/api/operations/site?lat=...&lon=...&year=...`: independent weather, soil, AEF and
   work-zone envelopes. Malformed, unknown or duplicate parameters return 400.
 - `POST /api/operations/route`: explicit origin/destination, departure and actual
-  truck dimensions/weight/axles/trailers/hazmat. Only attributed textual Google
+  truck dimensions/weight/axles/trailers/hazmat. Dimensions must be exact whole
+  millimetres and weight whole kilograms; unsupported fractions are rejected,
+  never silently rounded. Only attributed textual Google
   summary is public; no geometry, token or raw response is retained or exported.
 
 NWS requests require `NWS_USER_AGENT` identifying contact. Forecasts older than
@@ -61,14 +65,19 @@ six hours or without future periods are stale; future source timestamps fail.
 Point alerts retain null-geometry county/zone warnings. Poll no faster than 60s.
 USDA supplies map-unit/component survey context and source vintage, never measured
 soil strength or present moisture. WSDOT is the sole work-zone adapter; its broad
-WA bounding box is only a request prefilter and does not assert jurisdiction or
-complete road coverage. Work zones within the 0.05-degree point vicinity can be
+WA bounding box is only a request prefilter. A hash-bound 2026 Census Washington
+polygon then verifies jurisdiction, with boundary uncertainty failing closed.
+This does not assert complete road coverage. Work zones within the 0.05-degree point vicinity can be
 planned or active; dates, verification and vehicle impact remain explicit.
 
 Route context samples at most five points of actual returned truck geometry. Its
 maximum along-route gap and failed samples are displayed; it always remains a
 partial/incomplete corridor assessment. Even short gaps can miss hazards. Future
-arrival conditions are not guaranteed. Unavailable AEF remains visible. No
+arrival conditions are not guaranteed: this version explicitly does not resolve
+weather/work-zone samples to per-point ETAs. Snapping over 100m is rejected;
+accepted snapping distances are disclosed. Google response hash/retrieval, geometry
+hash, exact sample points, child request/hash/status and departure bind aggregate
+evidence without publishing the route geometry. Unavailable AEF remains visible. No
 passenger-car or straight-line route substitutes are generated.
 
 Provider transport rejects redirects and arbitrary hosts, limits bodies and

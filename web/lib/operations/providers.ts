@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { SCHEMA_VERSION, PointSchema, type Envelope, type Point, type WeatherData, type SoilData, type RoadworkData, type RouteRequest, type RouteData } from "./contracts";
+import { SCHEMA_VERSION, PointSchema, RouteRequestSchema, millimeters, type Envelope, type Point, type WeatherData, type SoilData, type RoadworkData, type RouteRequest, type RouteData } from "./contracts";
+import { washingtonContains } from "./jurisdiction";
 import { digest, transport, type Transport } from "./transport";
 
 export const SOURCES = { weather: "https://api.weather.gov", soil: "https://sdmdataaccess.nrcs.usda.gov/Tabular/post.rest", roadwork: "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed", route: "https://routes.googleapis.com/directions/v2:computeRoutes", aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL" } as const;
@@ -42,12 +43,13 @@ export async function weather(point: Point, ctx: Context): Promise<Envelope<Weat
     result.source_updated_at = forecast.updateTime; result.valid_from = periods[0]?.startTime ?? null; result.valid_to = periods.at(-1)?.endTime ?? null;
     result.coverage = { requested: 1, completed: 1, failed: 0, truncated: !!alerts.pagination?.next };
     result.evidence_hash = digest([metadata.hash, forecastResponse.hash, alertsResponse.hash]);
+    result.retrieved_at = alertsResponse.retrieved;
     if (alerts.pagination?.next) result.limitations.push("Alert results are paginated; coverage is incomplete.");
     return result;
   } catch (error) { return empty("weather", point, cleanFailure("weather", error), "unavailable", ctx.now); }
 }
 
-const SoilResponse = z.object({ Table: z.array(z.array(z.union([z.string(), z.number(), z.null()]))).max(1002) });
+const SoilResponse = z.object({ Table: z.array(z.array(z.union([z.string(), z.number(), z.null()]))).max(1003) });
 export async function soil(point: Point, ctx: Context): Promise<Envelope<SoilData>> {
   const result = empty<SoilData>("soil", point, "SSURGO map-unit context, not a site test or engineering approval.", "available", ctx.now);
   try {
@@ -71,8 +73,8 @@ export async function soil(point: Point, ctx: Context): Promise<Envelope<SoilDat
       }
     }
     result.data = { map_units: [...map.values()], scope: "mapped soil components at point; reference survey, not live soil conditions" };
-    result.status = map.size ? rows.length >= 1002 ? "partial" : "available" : "out_of_coverage";
-    result.coverage = { requested: 1, completed: map.size ? 1 : 0, failed: map.size ? 0 : 1, truncated: rows.length >= 1002 }; result.evidence_hash = response.hash;
+    result.status = map.size ? rows.length > 1002 ? "partial" : "available" : "out_of_coverage";
+    result.coverage = { requested: 1, completed: map.size ? 1 : 0, failed: map.size ? 0 : 1, truncated: rows.length > 1002 }; result.evidence_hash = response.hash; result.retrieved_at = response.retrieved;
     return result;
   } catch (error) { return empty("soil", point, cleanFailure("soil", error), "unavailable", ctx.now); }
 }
@@ -81,6 +83,8 @@ const Workzones = z.object({ type: z.literal("FeatureCollection"), feed_info: z.
 export function inWashington(point: Point) { return point.lat >= 45.5 && point.lat <= 49.01 && point.lon >= -124.9 && point.lon <= -116.8; }
 export async function roadwork(point: Point, ctx: Context): Promise<Envelope<RoadworkData>> {
   if (!inWashington(point)) return empty("roadwork", point, "Only the WSDOT feed is supported; other jurisdictions are unavailable.", "out_of_coverage", ctx.now);
+  const contained = await washingtonContains(point);
+  if (contained !== true) return empty("roadwork", point, contained === null ? "Washington boundary verification unavailable." : "Point is outside the verified Washington boundary.", contained === null ? "unavailable" : "out_of_coverage", ctx.now);
   const result = empty<RoadworkData>("roadwork", point, "WSDOT reported work zones only; bounding-box vicinity is not proof of a road connection or complete closures.", "available", ctx.now);
   try {
     const response = await ctx.io(SOURCES.roadwork, {}, 8_000_000); const feed = Workzones.parse(response.value); const meta = feed.feed_info ?? feed.road_event_feed_info;
@@ -101,7 +105,7 @@ export async function roadwork(point: Point, ctx: Context): Promise<Envelope<Roa
     }).slice(0, 100);
     result.data = { jurisdictions: ["WA: WSDOT reported network (not complete state coverage)"], scope: "0.05-degree point vicinity; includes future reported work zones", events: events.map((f) => ({ id: String(f.id ?? digest(f)), road_names: f.properties.core_details.road_names, direction: f.properties.core_details.direction, start: f.properties.start_date, end: f.properties.end_date, vehicle_impact: f.properties.vehicle_impact, description: f.properties.core_details.description ?? null, event_status: f.properties.event_status ?? null, start_verified: f.properties.is_start_date_verified ?? null, end_verified: f.properties.is_end_date_verified ?? null, source_updated_at: f.properties.core_details.update_date ?? null, restrictions: (f.properties.restrictions ?? []).map((r) => ({ type: r.type, value: r.value ?? null, unit: r.unit ?? null })) })) };
     result.status = !current ? "stale" : malformed || events.length === 100 ? "partial" : "available";
-    result.source_updated_at = meta.update_date; result.source_version = meta.version; result.evidence_hash = response.hash;
+    result.source_updated_at = meta.update_date; result.source_version = meta.version; result.evidence_hash = response.hash; result.retrieved_at = response.retrieved;
     result.coverage = { requested: 1, completed: 1, failed: malformed ? 1 : 0, truncated: events.length === 100 };
     if (malformed) result.limitations.push("Some feed geometries could not be assessed.");
     return result;
@@ -113,15 +117,18 @@ export async function truckRoute(request: RouteRequest, ctx: Context): Promise<{
   if ([request.origin, request.destination].some((p) => p.lat < 24 || p.lat > 49.5 || p.lon < -125 || p.lon > -66)) return { result: empty("route", request, "This adapter is restricted to contiguous-US routing; Alaska, Hawaii, territories and other countries are unsupported.", "out_of_coverage", ctx.now), polyline: null };
   if (!ctx.googleKey || !ctx.lvrEnabled) return { result: empty("route", request, "Google Routes key and separately provisioned LVR access are required.", "not_configured", ctx.now), polyline: null };
   try {
-    const { truck } = request; const convert = (value: number) => Math.floor(value * 1000);
+    RouteRequestSchema.parse(request);
+    const { truck } = request; const convert = millimeters;
     const response = await ctx.io(SOURCES.route, { method: "POST", headers: { "Content-Type": "application/json", "X-Goog-Api-Key": ctx.googleKey, "X-Goog-FieldMask": "routes.duration,routes.distanceMeters,routes.polyline.encodedPolyline,routes.travelAdvisory.routeRestrictionsPartiallyIgnored,routes.warnings" }, body: JSON.stringify({ origin: { location: { latLng: { latitude: request.origin.lat, longitude: request.origin.lon } } }, destination: { location: { latLng: { latitude: request.destination.lat, longitude: request.destination.lon } } }, departureTime: request.departure_at, travelMode: "TRUCK", routingPreference: "TRAFFIC_AWARE_OPTIMAL", routeModifiers: { vehicleInfo: { totalHeightMm: convert(truck.height_m), totalWidthMm: convert(truck.width_m), totalLengthMm: convert(truck.length_m), totalWeightKg: Math.floor(truck.gross_weight_kg), totalAxleCount: truck.axle_count, ...(truck.trailers.length ? { trailerInfo: truck.trailers.map((t) => ({ lengthMm: convert(t.length_m) })) } : {}), hazardousGoodsTypes: truck.hazmat } } }) });
     const route = GoogleResponse.parse(response.value).routes[0]; const seconds = Number(route.duration.slice(0, -1));
     if (!Number.isFinite(seconds) || seconds > 30 * 86400) throw new Error("Invalid route duration");
     const result = empty<RouteData>("route", request, "Google Maps route is not guaranteed safe or legal. Check road authority restrictions and actual vehicle clearance.", "available", ctx.now);
+    result.evidence_hash = response.hash; result.retrieved_at = response.retrieved;
     result.data = { distance_m: route.distanceMeters, travel_seconds: seconds, eta: new Date(Date.parse(request.departure_at) + seconds * 1000).toISOString(), restrictions_partially_ignored: route.travelAdvisory?.routeRestrictionsPartiallyIgnored ?? false, warnings: route.warnings ?? [], attribution: "Google Maps" };
     result.coverage = { requested: 1, completed: 1, failed: 0, truncated: false };
     result.valid_from = request.departure_at; result.valid_to = result.data.eta;
     if (result.data.restrictions_partially_ignored) { result.status = "partial"; result.limitations.push("Google returned a best-effort route that ignores vehicle restrictions."); }
+    if (result.data.warnings.length) { result.status = "partial"; result.limitations.push("Google route warnings require review."); }
     // Ephemeral internal geometry only: never returned, logged or persisted as public route data.
     return { result, polyline: route.polyline.encodedPolyline };
   } catch { return { result: empty("route", request, "Google truck route unavailable or invalid; no passenger-car fallback.", "unavailable", ctx.now), polyline: null }; }

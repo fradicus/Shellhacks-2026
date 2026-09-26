@@ -86,7 +86,7 @@ def test_committed_real_sample_decodes_and_has_partial_read_identity():
     if not (folder / "aef-samples.json").exists():
         pytest.skip("No public sample collected")
     snapshot = json.loads((folder / "aef-samples.json").read_text())
-    evidence = json.loads((folder / "aef-samples.evidence.json").read_text())
+    evidence = json.loads((folder / "aef-samples.evidence.json").read_text())["records"][0]
     record = snapshot["records"][0]
     assert record["embedding"] == decode(record["raw"])
     assert record["sample_sha256"] == hashlib.sha256(bytes(v & 255 for v in record["raw"])).hexdigest()
@@ -94,3 +94,20 @@ def test_committed_real_sample_decodes_and_has_partial_read_identity():
     assert evidence["bytes_read"] <= 32 * 1024 * 1024 and evidence["requests"] <= 80
     assert evidence["object_etag"] == record["object_etag"]
     assert record["point"] == {"lat": 47.6062, "lon": -122.3321}
+
+
+def test_appended_sample_preserves_previous_per_record_read_provenance(tmp_path):
+    from environment.__main__ import publish
+
+    folder = Path(__file__).resolve().parents[2] / "data" / "environment"
+    record = json.loads((folder / "aef-samples.json").read_text())["records"][0]
+    evidence = json.loads((folder / "aef-samples.evidence.json").read_text())["records"][0]
+    path = tmp_path / "sample.json"
+    publish(record, evidence, path, "2026-09-26T21:58:44Z")
+    first = json.loads(path.with_suffix(".evidence.json").read_text())["records"][0]
+    # Synthetic second sample tests persistence only, never committed or served.
+    second = {**record, "point": {"lat": 47.7, "lon": -122.3}}
+    publish(second, evidence, path, "2026-09-26T22:10:00Z")
+    after = json.loads(path.with_suffix(".evidence.json").read_text())["records"]
+    assert len(after) == 2 and after[0] == first
+    assert after[1]["retrieved_at"] == "2026-09-26T22:10:00Z"

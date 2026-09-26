@@ -46,40 +46,49 @@ def main():
         return 1
     record, evidence = result["result"]
     now = datetime.now(UTC).isoformat().replace("+00:00", "Z")
+    publish(record, evidence, args.output, now)
+    print(json.dumps({"status": "available", "bytes_read": evidence["bytes_read"], "requests": evidence["requests"]}))
+    return 0
+
+
+def publish(record, evidence, destination, now):
+    """Preserve each older sample's actual retrieval and range evidence."""
+    destination = Path(destination)
     output = {"schema_version": "aef-point-v1", "generated_at": now, "records": [record]}
-    if args.output.exists():
-        previous = json.loads(args.output.read_text())
+    evidence_records = []
+    if destination.exists():
+        previous_text = destination.read_text()
+        previous = json.loads(previous_text)
+        previous_evidence = json.loads(destination.with_suffix(".evidence.json").read_text())
+        if previous_evidence.get("schema_version") != "aef-read-evidence-v2":
+            raise ValueError("Existing evidence version unsupported")
+        if previous_evidence.get("snapshot_sha256") != hashlib.sha256(previous_text.encode()).hexdigest():
+            raise ValueError("Existing snapshot/evidence binding mismatch")
         if previous.get("schema_version") != "aef-point-v1":
             raise ValueError("Existing artifact has an unsupported schema")
         output["records"] = [r for r in previous["records"] if (r["point"], r["year"]) != (record["point"], record["year"])] + [
             record
         ]
-    args.output.parent.mkdir(parents=True, exist_ok=True)
+        evidence_records = [
+            r for r in previous_evidence["records"] if (r["point"], r["year"]) != (record["point"], record["year"])
+        ]
+    destination.parent.mkdir(parents=True, exist_ok=True)
     schema = json.loads(Path(__file__).with_name("aef-point.schema.json").read_text())
     jsonschema.Draft202012Validator(schema, format_checker=jsonschema.FormatChecker()).validate(output)
-    temporary = args.output.with_suffix(".tmp")
+    temporary = destination.with_suffix(".tmp")
     serialized = json.dumps(output, indent=2) + "\n"
     temporary.write_text(serialized, encoding="utf-8")
-    temporary.replace(args.output)
-    evidence.update(
-        {
-            "schema_version": "aef-read-evidence-v1",
-            "retrieved_at": now,
-            "snapshot_sha256": hashlib.sha256(serialized.encode()).hexdigest(),
-        }
-    )
-    args.output.with_suffix(".evidence.json").write_text(json.dumps(evidence, indent=2) + "\n", encoding="utf-8")
-    print(
-        json.dumps(
-            {
-                "status": "available",
-                "samples": len(output["records"]),
-                "bytes_read": evidence["bytes_read"],
-                "requests": evidence["requests"],
-            }
-        )
-    )
-    return 0
+    evidence = {**evidence, "retrieved_at": now, **{k: record[k] for k in ("point", "year", "sample_sha256")}}
+    evidence_records.append(evidence)
+    manifest = {
+        "schema_version": "aef-read-evidence-v2",
+        "snapshot_sha256": hashlib.sha256(serialized.encode()).hexdigest(),
+        "records": evidence_records,
+    }
+    evidence_temp = destination.with_suffix(".evidence.tmp")
+    evidence_temp.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    evidence_temp.replace(destination.with_suffix(".evidence.json"))
+    temporary.replace(destination)
 
 
 if __name__ == "__main__":
