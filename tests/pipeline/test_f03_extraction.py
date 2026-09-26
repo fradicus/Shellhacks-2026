@@ -13,10 +13,11 @@ from google.genai import errors
 
 from common import REPO_ROOT, load_json, validate, write_json
 from extract_desc.parser import parse_card
+from gemini_extract import __main__ as cli
 from gemini_extract import runner, sources, transport, validation
 from gemini_extract.evaluation import evaluate
 from gemini_extract.prompt import PROMPT_VERSION, SYSTEM_INSTRUCTION, document_prompt, response_schema
-from gemini_extract.runner import cache_key, extract_page, run_batch
+from gemini_extract.runner import ExistingExtractionsError, cache_key, cache_metadata, extract_page, run_batch
 from gemini_extract.sources import APPROVED, CORPUS_PAGES, Page, SourceError, expected_fields, load_pages
 from gemini_extract.transport import GeminiTransport, TransportFailure
 from gemini_extract.validation import parse_response, section, validate_response
@@ -37,6 +38,12 @@ def fixture(name="normal"):
 @pytest.fixture(scope="module")
 def approved_pages():
     return load_pages()
+
+
+@pytest.fixture
+def isolated_synthetic_source(monkeypatch):
+    """Only isolated synthetic cache/retry/evaluation tests bypass the real PDF text boundary."""
+    monkeypatch.setattr(runner, "verify_for_transport", lambda page: None)
 
 
 @pytest.mark.parametrize("name", ["normal", "injection"])
@@ -158,6 +165,7 @@ def test_all_approved_cards_have_supported_synthetic_validation_inputs(approved_
         assert not validate_response(response, page)[2], (page.source_id, page.number)
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_cache_hit_revalidates_and_has_no_loader_records(tmp_path):
     page, response = fixture()
     fake = Mock(generate=Mock(return_value=json.dumps(response)))
@@ -179,6 +187,7 @@ def test_cache_hit_revalidates_and_has_no_loader_records(tmp_path):
     assert len(skipped) == 1
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_cache_key_covers_all_required_inputs_and_rejects_metadata_tampering(tmp_path):
     page, response = fixture()
     original = cache_key(page, MODEL)
@@ -200,6 +209,7 @@ def test_cache_key_covers_all_required_inputs_and_rejects_metadata_tampering(tmp
     assert fake.generate.call_count == 3
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_cache_uses_current_parser_for_ambiguous_endpoints(monkeypatch, tmp_path):
     page, response = fixture()
     fake = Mock(generate=Mock(return_value=json.dumps(response)))
@@ -221,6 +231,7 @@ def test_cache_uses_current_parser_for_ambiguous_endpoints(monkeypatch, tmp_path
     assert fake.generate.call_count == 1
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_retry_cap_backoff_and_persistent_failure_visible(tmp_path):
     page, _ = fixture()
     fake = Mock(generate=Mock(side_effect=TransportFailure("gemini_transient_error", True)))
@@ -233,6 +244,7 @@ def test_retry_cap_backoff_and_persistent_failure_visible(tmp_path):
     assert not list(tmp_path.glob("*.json"))
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_transient_success_and_permanent_or_malformed_failures(tmp_path):
     page, response = fixture()
     fake = Mock(generate=Mock(side_effect=[TransportFailure("gemini_transient_error", True), json.dumps(response)]))
@@ -245,6 +257,7 @@ def test_transient_success_and_permanent_or_malformed_failures(tmp_path):
         assert result["status"] == status and result["attempts"] == 1
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_unexpected_exception_has_no_secret_in_output_or_cache(tmp_path, capsys):
     page, _ = fixture()
     secret = "AIza-secret-test-token"
@@ -271,6 +284,25 @@ def test_transport_rebinds_forged_desc_text_to_actual_pdf_before_network(monkeyp
     with pytest.raises(SourceError, match="page_text_not_approved"):
         sdk.generate(page)
     client.models.generate_content.assert_not_called()
+
+
+def test_forged_matching_cache_rejected_by_actual_pdf_verifier(tmp_path):
+    page, response = fixture()  # Claimed DESC hash/page, but text is invented.
+    cached = {
+        "metadata": cache_metadata(page, MODEL),
+        "text_sha256": page.text_sha256,
+        "generated_at": "2026-09-26T00:00:00Z",
+        "response": response,
+    }
+    path = tmp_path / f"{cache_key(page, MODEL)}.json"
+    write_json(path, cached)
+    before = path.read_bytes()
+    fake = Mock()
+    # No monkeypatch of either source verifier: cached acceptance must bind to actual PDF bytes.
+    with pytest.raises(SourceError, match="page_text_not_approved"):
+        extract_page(page, MODEL, fake, tmp_path)
+    fake.generate.assert_not_called()
+    assert path.read_bytes() == before
 
 
 def test_actual_sdk_configuration_no_live_network(monkeypatch, approved_pages):
@@ -325,6 +357,36 @@ def test_offline_and_missing_credentials_never_initialize_client(monkeypatch, tm
     assert "secret-test-value" not in (tmp_path / "data/extraction/eval.json").read_text()
 
 
+@pytest.mark.parametrize("mode", ["offline", "missing_key", "missing_model"])
+def test_unavailable_run_preserves_existing_artifacts_and_cli_fails(mode, monkeypatch, tmp_path, capsys):
+    output = tmp_path / "data/extraction"
+    paths = [output / "desc.json", output / "eval.json", output / "cache/saved.json"]
+    for path, value in zip(paths, [
+        [{"_id": "existing-response-evidence", "accepted": False}],
+        {"status": "partial", "pages_processed": 1},
+        {"metadata": {"saved": True}, "response": {}},
+    ], strict=True):
+        write_json(path, value)
+    before = {path: path.read_bytes() for path in paths}
+    monkeypatch.setenv("GEMINI_API_KEY", "synthetic-key")
+    monkeypatch.setenv("GEMINI_MODEL", MODEL)
+    if mode == "missing_key":
+        monkeypatch.delenv("GEMINI_API_KEY")
+    elif mode == "missing_model":
+        monkeypatch.delenv("GEMINI_MODEL")
+    client = Mock(side_effect=AssertionError("must not initialize a live client"))
+    monkeypatch.setattr(runner, "GeminiTransport", client)
+    live = mode != "offline"
+    with pytest.raises(ExistingExtractionsError, match="existing_extractions_preserved"):
+        run_batch(root=tmp_path, live=live)
+    monkeypatch.setattr(cli, "run_batch", lambda **args: run_batch(root=tmp_path, **args))
+    monkeypatch.setattr("sys.argv", ["gemini_extract"] + (["--live"] if live else []))
+    assert cli.main() == 1
+    assert json.loads(capsys.readouterr().out) == {"status": "failed", "reason": "existing_extractions_preserved"}
+    assert {path: path.read_bytes() for path in paths} == before
+    client.assert_not_called()
+
+
 def test_simulated_batch_and_replay_load_only_page_records(monkeypatch, tmp_path, approved_pages):
     # No real SDK or network. These generated test responses never leave pytest's temp directory.
     monkeypatch.setattr(runner, "load_pages", lambda root: approved_pages)
@@ -351,6 +413,7 @@ def test_simulated_batch_and_replay_load_only_page_records(monkeypatch, tmp_path
     assert len(skipped) == 92  # 91 cache envelopes plus eval summary, no duplicate records.
 
 
+@pytest.mark.usefixtures("isolated_synthetic_source")
 def test_evaluation_includes_failures_and_separates_invalid_agreement(tmp_path):
     page, response = fixture()
     good = extract_page(page, MODEL, Mock(generate=Mock(return_value=json.dumps(response))), tmp_path / "good")

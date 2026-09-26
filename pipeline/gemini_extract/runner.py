@@ -16,11 +16,15 @@ from common import REPO_ROOT, load_json, validate, write_json
 
 from .evaluation import evaluate
 from .prompt import PROMPT_VERSION, SCHEMA_VERSION
-from .sources import FIELD_NAMES, Page, SourceError, assert_approved, load_pages
+from .sources import FIELD_NAMES, Page, SourceError, assert_approved, load_pages, verify_for_transport
 from .transport import MODEL_RE, GeminiTransport, TransportFailure
 from .validation import parse_response, validate_response
 
 MAX_RETRIES = 2
+
+
+class ExistingExtractionsError(ValueError):
+    """A no-call run cannot replace existing response evidence with unavailable artifacts."""
 
 
 class Transport(Protocol):
@@ -65,6 +69,7 @@ def _cached(path: Path, page: Page, model: str) -> dict | None:
 
 def extract_page(page: Page, model: str, transport: Transport, cache_dir: Path, *, sleep: Callable = time.sleep) -> dict:
     assert_approved(page)  # Checked even for cache hits; Georgia never bypasses this boundary.
+    verify_for_transport(page)  # Metadata alone cannot authorize source text, including a cached response.
     key = cache_key(page, model)
     cache_path = cache_dir / f"{key}.json"
     cached = _cached(cache_path, page, model)
@@ -137,11 +142,20 @@ def extract_page(page: Page, model: str, transport: Transport, cache_dir: Path, 
 def run_batch(*, live: bool = False, root: Path = REPO_ROOT) -> tuple[list[dict], dict]:
     """No environment variable alone enables the network, and no document overrides exist."""
     output = root / "data/extraction"
-    # Verify the entire approved corpus before any client initialization or cache access.
-    pages = load_pages(root)
     model = os.environ.get("GEMINI_MODEL", "")
     api_key = os.environ.get("GEMINI_API_KEY", "")
     model = model if MODEL_RE.fullmatch(model) else None
+    if not (live and model and api_key):
+        existing_path = output / "desc.json"
+        if existing_path.exists():
+            try:
+                existing = load_json(existing_path)
+            except (OSError, ValueError):
+                raise ExistingExtractionsError("existing_extractions_preserved") from None
+            if not isinstance(existing, list) or existing:
+                raise ExistingExtractionsError("existing_extractions_preserved")
+    # Verify the entire approved corpus before any client initialization or cache access.
+    pages = load_pages(root)
     records: list[dict] = []
     reason = "live_execution_not_requested" if not live else "gemini_credentials_or_model_unavailable"
     if live and model and api_key:

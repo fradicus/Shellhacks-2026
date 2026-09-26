@@ -4,7 +4,7 @@ import argparse
 import json
 import sys
 
-from .runner import run_batch
+from .runner import ExistingExtractionsError, run_batch
 from .sources import SourceError
 
 
@@ -14,7 +14,7 @@ def main() -> int:
     args = parser.parse_args()
     try:
         _, report = run_batch(live=args.live)
-    except SourceError as exc:
+    except (SourceError, ExistingExtractionsError) as exc:
         print(json.dumps({"status": "failed", "reason": str(exc)}))
         return 1
     except Exception:

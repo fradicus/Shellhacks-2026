@@ -30,3 +30,8 @@ https://ai.google.dev/gemini-api/docs/structured-output (checked 2026-09-26).
 Undo: after an authorized live run, commit genuine validated responses/evaluation, keep synthetic
 tests labeled, and add separately recorded fixtures and independent QA evidence. Update both the
 prompt/schema version and relevant tests when changing extraction semantics.
+
+Independent QA follow-up: cache lookup now requires fresh binding of the complete page text and
+reference values to the approved PDF bytes, not only matching claimed metadata. No-call runs refuse
+to replace existing nonempty extraction evidence and return a safe nonzero CLI result while leaving
+response/evaluation/cache bytes intact. Initial empty/unavailable generation remains supported.

@@ -7,8 +7,11 @@ pages, zero live calls, and null accuracy. No synthetic response is product data
 From `pipeline/`, run `uv run python -m gemini_extract` for the offline unavailable artifact.
 An authorized operator can run `uv run python -m gemini_extract --live` with `GEMINI_API_KEY`
 and an explicitly chosen `GEMINI_MODEL` in the process environment. There is no default model and
-no automatic live mode. Offline mode writes an empty response list; use a separate checkout if
-preserving a previously generated response list. Never place credentials in command arguments or git.
+no automatic live mode. Offline mode writes an empty response list only when no prior nonempty
+response list exists. Offline or missing-credential/model runs refuse to replace existing extraction
+evidence, exit nonzero with `existing_extractions_preserved`, and preserve response/evaluation/cache
+files. An operator intentionally starting over must explicitly move the old outputs themselves.
+Never place credentials in command arguments or git.
 
 Live mode sends each of the 91 approved DESC card texts to the real `google-genai` SDK, sequentially.
 This is a local batch pipeline using `models.generate_content`, not the asynchronous Gemini Batch
@@ -59,7 +62,8 @@ accuracy is null, not zero. `qa_checked` stays null until F13 supplies independe
 Cache files are summary envelopes `{metadata, text_sha256, generated_at, response}` without a
 top-level `_id`; the loader skips them and `eval.json`. Cache keys cover source SHA-256, original
 page, exact model and prompt version. Raw parsed responses are always revalidated against the
-current parser/reference; accepted status and comparison are never replayed from cache. Changed
+current parser/reference; source text is rebound to actual approved PDF bytes before cache lookup,
+as well as at the network boundary. Accepted status and comparison are never replayed from cache. Changed
 PDF bytes are rejected until a reviewed allowlist change, regardless of cache contents.
 
 The two offline response fixtures under `tests/pipeline/test_f03_fixtures/` are explicitly synthetic.
