@@ -59,7 +59,54 @@ function Delta({ c, analysisDate }: { c: VersionChange; analysisDate: string }) 
   return null;
 }
 
-function ChangeRow({ c, utility, sources, analysisDate }: { c: VersionChange; utility: Utility; sources: Source[]; analysisDate: string }) {
+type Domain = { from: number; to: number; years: number[] };
+
+/** Shared year axis for every date change on the page, so bars compare across projects. */
+function dateDomain(changes: VersionChange[], analysisDate: string): Domain | null {
+  const ts = changes
+    .filter((c) => c.field === "in_service.date" && isIsoDate(c.old) && isIsoDate(c.new))
+    .flatMap((c) => [Date.parse(c.old as string), Date.parse(c.new as string)]);
+  if (!ts.length) return null;
+  ts.push(Date.parse(analysisDate));
+  const y0 = new Date(Math.min(...ts)).getUTCFullYear();
+  const y1 = new Date(Math.max(...ts)).getUTCFullYear() + 1;
+  const years = Array.from({ length: y1 - y0 + 1 }, (_, i) => y0 + i);
+  return { from: Date.UTC(y0, 0, 1), to: Date.UTC(y1, 0, 1), years };
+}
+
+/** The filed date's move drawn on the shared axis: hollow = earlier filing, solid = later filing. Display only. */
+function SlipBar({ from, to, domain, analysisDate }: { from: string; to: string; domain: Domain; analysisDate: string }) {
+  const x = (iso: string) => `${(((Date.parse(iso) - domain.from) / (domain.to - domain.from)) * 100).toFixed(2)}%`;
+  const later = to >= from;
+  const [l, r] = later ? [from, to] : [to, from];
+  return (
+    <div className={s.slip} aria-hidden="true">
+      {domain.years.map((y, i) => (
+        <span key={y} className={s.tick} style={{ left: x(`${y}-01-01`) }}>
+          {i < domain.years.length - 1 ? <em>{y}</em> : null}
+        </span>
+      ))}
+      <span className={s.today} style={{ left: x(analysisDate) }} />
+      <span className={`${s.run} ${later ? s.later : s.earlier}`} style={{ left: x(l), width: `calc(${x(r)} - ${x(l)})` }} />
+      <span className={s.from} style={{ left: x(from) }} />
+      <span className={`${s.to} ${later ? s.later : s.earlier}`} style={{ left: x(to) }} />
+    </div>
+  );
+}
+
+function ChangeRow({
+  c,
+  utility,
+  sources,
+  analysisDate,
+  domain,
+}: {
+  c: VersionChange;
+  utility: Utility;
+  sources: Source[];
+  analysisDate: string;
+  domain: Domain | null;
+}) {
   const p = { utility };
   return (
     <li className={s.change}>
@@ -71,6 +118,9 @@ function ChangeRow({ c, utility, sources, analysisDate }: { c: VersionChange; ut
         <span className={s.new}>{show(c.field, c.new)}</span>
         <Delta c={c} analysisDate={analysisDate} />
       </div>
+      {domain && c.field === "in_service.date" && isIsoDate(c.old) && isIsoDate(c.new) ? (
+        <SlipBar from={c.old} to={c.new} domain={domain} analysisDate={analysisDate} />
+      ) : null}
       <div className={s.cites}>
         <Cite c={cite(p, sources, c.from_source, c.from_page)} /> → <Cite c={cite(p, sources, c.to_source, c.to_page)} />
       </div>
@@ -104,6 +154,7 @@ export function ChangesView({
 
   const count = (f: Filter) => changes.filter((c) => FILTERS.find((x) => x.id === f)!.test(c.field)).length;
   const projectsChanged = new Set(changes.map((c) => c.project_key)).size;
+  const domain = useMemo(() => dateDomain(changes, analysisDate), [changes, analysisDate]);
 
   return (
     <main className={s.page}>
@@ -155,7 +206,7 @@ export function ChangesView({
                 </div>
                 <ul className={s.changes}>
                   {cs.map((c) => (
-                    <ChangeRow key={c._id} c={c} utility={utility} sources={sources} analysisDate={analysisDate} />
+                    <ChangeRow key={c._id} c={c} utility={utility} sources={sources} analysisDate={analysisDate} domain={domain} />
                   ))}
                 </ul>
               </li>
