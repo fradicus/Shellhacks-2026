@@ -17,5 +17,5 @@ Production URL: **not working / not provided**. Route identifiers `/`, `/pair/<i
 
 The committed loader defines a unique `(dataset,id)` index on stored collections; project indexes on `(dataset,geo:2dsphere)`, `(dataset,utility,active)` and `(dataset,project_key)`; match indexes on `(dataset,view,band,time_gap_days,distance_mi)` and `(dataset,rank)`; brief index `(dataset,match_id)`; and filing-change index `(dataset,project_key)`. These are code definitions, not a claim of live Atlas installation.
 
-The original eight evidence destinations returned HTTP 200 at the prior checkpoint. The newly linked brief/audit evidence is verified with this checkpoint; final link results will be refreshed at handoff. Unprovided production, domain and event-submission URLs remain explicitly marked above. Final product acceptance is pending.
+Link check on 2026-09-26: all ten linked evidence destinations returned HTTP 200 using curl with redirects, and every relative file exists locally. Unprovided production, domain and event-submission URLs remain explicitly marked above. Final product acceptance is pending.
 
