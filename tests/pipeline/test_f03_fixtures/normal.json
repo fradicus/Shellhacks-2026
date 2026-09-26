@@ -1,18 +1,18 @@
 {
   "fixture_kind": "synthetic_not_a_recorded_api_response",
   "description": "Hand-authored invented card for offline validation only; never product data.",
-  "page": 3,
-  "source_text": "Project 3 of 44\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nAlpha - Beta 115 kV: Rebuild\nProject ID\n1234 A\nProject Description\nReplace worn structures.\nProject Need\nAddress end of life.\nProject Status\nPlanned\nPlanned In-Service Date\n12/31/27\nEstimated Project Cost\nPrevious 2024 2025 2026 2027 2028 Total\n$0 $100 $0 $200 $0 $0 $300",
+  "page": 5,
+  "source_text": "Project 5 of 44\nDominion Energy South Carolina\nPlanned Transmission Projects $2M and above Total\n5 Year Budget\nAlpha - Beta 115 kV: Rebuild\nProject ID\n1234 A\nProject Description\nReplace worn structures.\nProject Need\nAddress end of life.\nProject Status\nPlanned\nPlanned In-Service Date\n12/31/27\nEstimated Project Cost\nPrevious 2024 2025 2026 2027 2028 Total\n$0 $100 $0 $200 $0 $0 $300",
   "response": {
-    "project_id": {"value": "1234 A", "quote": "1234 A", "page": 3},
-    "name": {"value": "Alpha - Beta 115 kV: Rebuild", "quote": "Alpha - Beta 115 kV: Rebuild", "page": 3},
-    "description": {"value": "Replace worn structures.", "quote": "Replace worn structures.", "page": 3},
-    "need": {"value": "Address end of life.", "quote": "Address end of life.", "page": 3},
-    "status": {"value": "Planned", "quote": "Planned", "page": 3},
-    "in_service_raw": {"value": "12/31/27", "quote": "12/31/27", "page": 3},
-    "total_cost": {"value": 300, "quote": "Previous 2024 2025 2026 2027 2028 Total\n$0 $100 $0 $200 $0 $0 $300", "page": 3},
-    "yearly_spend": {"value": {"Previous": 0, "2024": 100, "2025": 0, "2026": 200, "2027": 0, "2028": 0}, "quote": "Previous 2024 2025 2026 2027 2028 Total\n$0 $100 $0 $200 $0 $0 $300", "page": 3},
-    "endpoints": {"value": ["Alpha", "Beta"], "quote": "Alpha - Beta 115 kV: Rebuild", "page": 3},
-    "voltage_kv": {"value": [115], "quote": "Alpha - Beta 115 kV: Rebuild", "page": 3}
+    "project_id": {"value": "1234 A", "quote": "1234 A", "page": 5},
+    "name": {"value": "Alpha - Beta 115 kV: Rebuild", "quote": "Alpha - Beta 115 kV: Rebuild", "page": 5},
+    "description": {"value": "Replace worn structures.", "quote": "Replace worn structures.", "page": 5},
+    "need": {"value": "Address end of life.", "quote": "Address end of life.", "page": 5},
+    "status": {"value": "Planned", "quote": "Planned", "page": 5},
+    "in_service_raw": {"value": "12/31/27", "quote": "12/31/27", "page": 5},
+    "total_cost": {"value": 300, "quote": "Previous 2024 2025 2026 2027 2028 Total\n$0 $100 $0 $200 $0 $0 $300", "page": 5},
+    "yearly_spend": {"value": {"Previous": 0, "2024": 100, "2025": 0, "2026": 200, "2027": 0, "2028": 0}, "quote": "Previous 2024 2025 2026 2027 2028 Total\n$0 $100 $0 $200 $0 $0 $300", "page": 5},
+    "endpoints": {"value": ["Alpha", "Beta"], "quote": "Alpha - Beta 115 kV: Rebuild", "page": 5},
+    "voltage_kv": {"value": [115], "quote": "Alpha - Beta 115 kV: Rebuild", "page": 5}
   }
 }
