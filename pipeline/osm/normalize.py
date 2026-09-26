@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-import math
 from collections import Counter
 from collections.abc import Iterable
 from typing import Any
 
 from common import norm_name
+from matches.core import haversine_mi
 
 STATION_POWER_VALUES = {"plant", "substation", "switch"}
 LANDMARKS = {
@@ -112,13 +112,6 @@ def normalize_elements(payloads: Iterable[dict[str, Any]]) -> tuple[list[dict[st
     return normalized, counts
 
 
-def _haversine_miles(a: tuple[float, float], b: tuple[float, float]) -> float:
-    lat1, lon1, lat2, lon2 = map(math.radians, (*a, *b))
-    dlat, dlon = lat2 - lat1, lon2 - lon1
-    value = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2
-    return 2 * 3958.8 * math.asin(math.sqrt(value))
-
-
 def verify_landmarks(records: list[dict[str, Any]]) -> dict[str, Any]:
     """Report the spec's three checks without assigning a name to an unnamed OSM feature."""
     located = [record for record in records if record["lat"] is not None and record["lon"] is not None]
@@ -127,16 +120,18 @@ def verify_landmarks(records: list[dict[str, Any]]) -> dict[str, Any]:
         named = [record for record in located if keyword in record["norm"]]
         nearest_named = min(
             named,
-            key=lambda record: _haversine_miles(expected, (record["lat"], record["lon"])),
+            key=lambda record: haversine_mi(expected[0], expected[1], record["lat"], record["lon"]),
             default=None,
         )
         nearest_any = min(
             located,
-            key=lambda record: _haversine_miles(expected, (record["lat"], record["lon"])),
+            key=lambda record: haversine_mi(expected[0], expected[1], record["lat"], record["lon"]),
             default=None,
         )
         named_distance = (
-            _haversine_miles(expected, (nearest_named["lat"], nearest_named["lon"])) if nearest_named else None
+            haversine_mi(expected[0], expected[1], nearest_named["lat"], nearest_named["lon"])
+            if nearest_named
+            else None
         )
         item: dict[str, Any] = {
             "expected_lat": expected[0],
@@ -148,7 +143,7 @@ def verify_landmarks(records: list[dict[str, Any]]) -> dict[str, Any]:
         }
         if nearest_any:
             item["nearest_any"] = {
-                "distance_mi": _haversine_miles(expected, (nearest_any["lat"], nearest_any["lon"])),
+                "distance_mi": haversine_mi(expected[0], expected[1], nearest_any["lat"], nearest_any["lon"]),
                 "name": nearest_any["name"],
                 "osm_id": nearest_any["osm_id"],
                 "power": nearest_any["power"],

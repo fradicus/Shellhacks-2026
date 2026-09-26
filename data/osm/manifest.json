@@ -44,12 +44,12 @@
         "expected_lon": -82.1959,
         "keyword": "THURMOND",
         "nearest_any": {
-          "distance_mi": 0.0025836367248602394,
+          "distance_mi": 0.0025836367247060264,
           "name": "Thurmond Substation",
           "osm_id": "way/52102019",
           "power": "substation"
         },
-        "nearest_named_distance_mi": 0.0025836367248602394,
+        "nearest_named_distance_mi": 0.0025836367247060264,
         "nearest_named_osm_id": "way/52102019",
         "status": "matched"
       },
@@ -58,12 +58,12 @@
         "expected_lon": -81.1751,
         "keyword": "MCINTOSH",
         "nearest_any": {
-          "distance_mi": 0.0013329433808489492,
+          "distance_mi": 0.0013329433809159455,
           "name": "McIntosh Substation",
           "osm_id": "way/121624352",
           "power": "substation"
         },
-        "nearest_named_distance_mi": 0.0013329433808489492,
+        "nearest_named_distance_mi": 0.0013329433809159455,
         "nearest_named_osm_id": "way/121624352",
         "status": "matched"
       },
@@ -72,7 +72,7 @@
         "expected_lon": -81.0325,
         "keyword": "OKATIE",
         "nearest_any": {
-          "distance_mi": 0.006727722209771849,
+          "distance_mi": 0.006727722209406522,
           "name": null,
           "osm_id": "way/1064022697",
           "power": "substation"

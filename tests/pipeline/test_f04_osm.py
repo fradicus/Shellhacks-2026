@@ -9,8 +9,9 @@ from urllib.error import HTTPError
 import pytest
 
 from common import REPO_ROOT, load_json
+from matches.core import haversine_mi
 from osm.fetch import INFRASTRUCTURE_BBOX, LINE_BBOX, QueryJob, _retry_after, query_text, run_inventory
-from osm.normalize import normalize_elements, verify_landmarks
+from osm.normalize import LANDMARKS, normalize_elements, verify_landmarks
 
 SAMPLE = Path(__file__).with_name("test_f04_fixtures") / "overpass_sample.json"
 RECORDED = Path(__file__).with_name("test_f04_fixtures") / "overpass_recorded_2026-09-26.json"
@@ -76,6 +77,13 @@ def test_normalizer_on_recorded_overpass_sample_preserves_missing_okatie_name():
     assert records[2]["osm_id"] == "way/1064022697" and records[2]["name"] is None
     verification = verify_landmarks(records)
     assert verification["status"] == "partial" and verification["matched"] == 2
+    by_id = {record["osm_id"]: record for record in records}
+    for item in verification["items"]:
+        nearest = by_id[item["nearest_any"]["osm_id"]]
+        expected = LANDMARKS[item["keyword"]]
+        assert item["nearest_any"]["distance_mi"] == haversine_mi(
+            expected[0], expected[1], nearest["lat"], nearest["lon"]
+        )
     okatie = next(item for item in verification["items"] if item["keyword"] == "OKATIE")
     assert okatie["status"] == "missing_named_candidate"
     assert okatie["nearest_any"]["osm_id"] == "way/1064022697"
