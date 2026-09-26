@@ -46,6 +46,16 @@ jobs:
           npm run typecheck
           npm run build
 
+      - name: National and optional assistant checks
+        run: |
+          node scripts/check_national_traces.mjs
+          if [ -d tests/web/national ]; then
+            node --test tests/web/national/*.test.ts
+          fi
+          if [ -f tests/web/assistant/commands.test.mjs ]; then
+            node --test tests/web/assistant/commands.test.mjs
+          fi
+
       - name: spec lint
         run: python3 scripts/check_ownership.py --lint-specs
 
@@ -80,6 +90,7 @@ jobs:
         working-directory: web
         env:
           DATA_MODE: fixture
+          NATIONAL_DATA_MODE: snapshot
           NEXT_TELEMETRY_DISABLED: "1"
         run: |
           npm ci
@@ -92,6 +103,13 @@ jobs:
         if: steps.detect.outputs.present == 'yes'
         env:
           BASE_URL: http://localhost:3000
+          PLAYWRIGHT_BASE_URL: http://localhost:3000
         run: |
           ln -s web/node_modules node_modules # lets tests/e2e resolve @playwright/test from web/
+          if [ -f tests/web/national/playwright.config.ts ]; then
+            web/node_modules/.bin/playwright test -c tests/web/national/playwright.config.ts
+          fi
+          if [ -f tests/web/assistant/playwright.config.ts ]; then
+            web/node_modules/.bin/playwright test -c tests/web/assistant/playwright.config.ts
+          fi
           web/node_modules/.bin/playwright test -c tests/e2e
