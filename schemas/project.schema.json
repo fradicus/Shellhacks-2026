@@ -19,9 +19,13 @@
           ]
         },
         "lat": {
+          "maximum": 90,
+          "minimum": -90,
           "type": "number"
         },
         "lon": {
+          "maximum": 180,
+          "minimum": -180,
           "type": "number"
         }
       },
@@ -47,11 +51,20 @@
           "properties": {
             "coordinates": {
               "description": "[lon, lat] (GeoJSON order)",
-              "items": {
-                "type": "number"
-              },
-              "maxItems": 2,
+              "items": false,
               "minItems": 2,
+              "prefixItems": [
+                {
+                  "maximum": 180,
+                  "minimum": -180,
+                  "type": "number"
+                },
+                {
+                  "maximum": 90,
+                  "minimum": -90,
+                  "type": "number"
+                }
+              ],
               "type": "array"
             },
             "type": {

@@ -164,3 +164,19 @@ def test_views():
     assert overlaps(fut, ANALYSIS)[0]["view"] == "tentative"
     fut[1]["in_service"]["date"] = "2020-01-01"
     assert overlaps(fut, ANALYSIS)[0]["view"] == "historical"
+
+
+@pytest.mark.parametrize("basis,conf,expected", [
+    ("two", "medium", "future"),
+    ("two", "high", "future"),
+    ("one", "high", "future"),
+    ("one", "medium", "tentative"),  # issue #7 repro
+    ("one", None, "tentative"),
+    ("two", "low", "tentative"),
+])
+def test_one_endpoint_center_needs_high_confidence(basis, conf, expected):
+    a = proj("DESC:A", "DESC", 33, -81, "2027-03-01")
+    b = proj("GPC:B", "GPC", 33.01, -81, "2027-06-01")
+    a["center"]["basis"], a["location_confidence"] = basis, conf
+    b["location_confidence"] = "high"
+    assert overlaps([a, b], ANALYSIS)[0]["view"] == expected

@@ -47,6 +47,19 @@ def test_location_needs_coords_unless_rejected():
     validate(loc | {"confidence": "rejected"}, "location")
 
 
+@pytest.mark.parametrize("field,value", [
+    ("center", {"lat": 100.0, "lon": -81.0, "basis": "two"}),
+    ("center", {"lat": 33.0, "lon": -181.0, "basis": "two"}),
+    ("geo", {"type": "Point", "coordinates": [-81.0, 100.0]}),
+    ("geo", {"type": "Point", "coordinates": [-81.0, 33.0, 5.0]}),
+])
+def test_project_coordinates_bounded(field, value):
+    p = load_json(FIX / "projects.json")[0]
+    validate(p, "project")
+    with pytest.raises(ValueError):
+        validate(p | {field: value}, "project")
+
+
 def test_norm_name():
     assert norm_name("Thurmond Dam (USA) #5 Sub") == "THURMOND DAM"
     assert norm_name("EVANS PRIMARY") == "EVANS"
