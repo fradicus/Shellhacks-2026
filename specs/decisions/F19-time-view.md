@@ -20,3 +20,11 @@
    wrapper. The build fetches them once; CI has network.
 8. **Checked with real data** in a loopback MongoDB (`python -m load` of main's `data/`), not Atlas; and in fixture mode.
    Screenshots were taken with headless Chromium (SwiftShader), not a GPU browser, so frame rate wasn't measured.
+9. **"Play the story" picks its pairs from the data**: the top-ranked pair in the open view, then the pair with the
+   widest stored day gap. Captions contain only stored distance and gap. Nothing is hard-coded, so the tour stays true
+   when the corpus changes. Undo: remove the button; nothing else depends on it.
+10. **`/time?pair=<id>`** opens on that pair (switching to its view). The incoming id is held in a ref until the intro
+    consumes it, because syncing the URL first erased it (including under React's double-invoked dev effects).
+    Arrow keys step through the ranked list unless focus is in an input or on the map canvas.
+11. **Unmapped owners show their filed code** ("Owner code MEAG, not mapped") instead of "Owner unknown": the 70
+    unmapped current projects carry GTC, MEAG or DU. Matching is unchanged (D3).
