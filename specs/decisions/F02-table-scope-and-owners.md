@@ -18,6 +18,15 @@ redacted cost columns and sponsor codes `DU`, `GPC`, `GTC`, `MEAG`, and `SAV`.
   visible. This follows decision D3 instead of inferring organizations from abbreviations.
 - Store the 208-row denominator, per-zone counts, per-owner counts, and excluded-table reason in
   `data/projects/gpc_summary.json`. The loader intentionally skips summary objects without `_id`.
+- Split endpoint pairs only on top-level, whitespace-bounded hyphen, en-dash, or em-dash separators. Parenthetical
+  dashes stay inside the endpoint qualifier. Names with more than two top-level components produce no endpoint pair;
+  their candidate labels are retained in `endpoint_candidates` and the record is marked `endpoint_ambiguous` for
+  later review.
+- Preserve TEAMS `20482` from the current table as active-table provenance while marking it
+  `source_status_conflict`. The same TEAMS number, project name, zone, and sponsor appear in the cancelled-project
+  table on physical page 191 with a different need date. This conflict does not establish whether the project is
+  currently active. F09 and F10 must keep this project unconfirmed and exclude it from featured output until a
+  reviewer resolves the source conflict.
 
 ## Undo
 

@@ -224,9 +224,10 @@
         "raw": "RAY PLACE RD"
       },
       {
-        "name": "WASHINGTON (WASHINGTON",
-        "norm": "WASHINGTON (WASHINGTON",
-        "raw": "WASHINGTON (WASHINGTON"
+        "name": "WASHINGTON",
+        "norm": "WASHINGTON",
+        "qualifier": "WASHINGTON - WASHINGTON 3",
+        "raw": "WASHINGTON (WASHINGTON - WASHINGTON 3)"
       }
     ],
     "field_evidence": {
@@ -2032,9 +2033,14 @@
     "description": null,
     "endpoints": [
       {
-        "name": "BLANKETS CREEK – WOODSTOCK",
-        "norm": "BLANKETS CREEK – WOODSTOCK",
-        "raw": "BLANKETS CREEK – WOODSTOCK 115KV LINE REBUILD"
+        "name": "BLANKETS CREEK",
+        "norm": "BLANKETS CREEK",
+        "raw": "BLANKETS CREEK"
+      },
+      {
+        "name": "WOODSTOCK",
+        "norm": "WOODSTOCK",
+        "raw": "WOODSTOCK 115KV LINE REBUILD"
       }
     ],
     "field_evidence": {
@@ -2096,7 +2102,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "CC",
         "norm": "CC",
@@ -2106,8 +2112,14 @@
         "name": "GARRETT ROAD SWITCHING STATION",
         "norm": "GARRETT ROAD SWITCHING STATION",
         "raw": "GARRETT ROAD SWITCHING STATION"
+      },
+      {
+        "name": "TRAE LANE",
+        "norm": "TRAE LANE",
+        "raw": "TRAE LANE"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 179,
@@ -2146,7 +2158,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2026,
     "project_key": "GPC:20243",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 179,
       "row_top": 179.4,
@@ -2235,7 +2249,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "CC",
         "norm": "CC",
@@ -2245,8 +2259,15 @@
         "name": "SUMMER LAKE",
         "norm": "SUMMER LAKE",
         "raw": "SUMMER LAKE"
+      },
+      {
+        "name": "VILLA RICA",
+        "norm": "VILLA RICA",
+        "qualifier": "CC IMPROVMNT",
+        "raw": "VILLA RICA 230KV REBUILD (CC IMPROVMNT)"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 182,
@@ -2285,7 +2306,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2027,
     "project_key": "GPC:20781",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 182,
       "row_top": 168.4,
@@ -5981,7 +6004,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "CC",
         "norm": "CC",
@@ -5991,8 +6014,15 @@
         "name": "MICROSOFT",
         "norm": "MICROSOFT",
         "raw": "MICROSOFT"
+      },
+      {
+        "name": "SHUGART",
+        "norm": "SHUGART",
+        "qualifier": "CCO06",
+        "raw": "SHUGART (CCO06)"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 182,
@@ -6031,7 +6061,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2027,
     "project_key": "GPC:18736",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 182,
       "row_top": 145.9,
@@ -6608,7 +6640,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "GRID",
         "norm": "GRID",
@@ -6618,8 +6650,15 @@
         "name": "BREMEN",
         "norm": "BREMEN",
         "raw": "BREMEN"
+      },
+      {
+        "name": "CROOKED CREEK PROJECT",
+        "norm": "CROOKED CREEK PROJECT",
+        "qualifier": "APC",
+        "raw": "CROOKED CREEK (APC) 115 KV PROJECT"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 177,
@@ -6658,7 +6697,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2025,
     "project_key": "GPC:19187",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 177,
       "row_top": 305.2,
@@ -7025,7 +7066,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "CC",
         "norm": "CC",
@@ -7035,8 +7076,19 @@
         "name": "CASS PINE 230/25 NEW SUB",
         "norm": "CASS PINE 230/25 NEW",
         "raw": "CASS PINE 230/25 NEW SUB"
+      },
+      {
+        "name": "QCELLS",
+        "norm": "QCELLS",
+        "raw": "QCELLS"
+      },
+      {
+        "name": "CC IMPROVEMENTS",
+        "norm": "CC IMPROVEMENTS",
+        "raw": "CC IMPROVEMENTS"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 181,
@@ -7075,7 +7127,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2026,
     "project_key": "GPC:20151",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 181,
       "row_top": 302.8,
@@ -7237,7 +7291,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "CC",
         "norm": "CC",
@@ -7247,8 +7301,14 @@
         "name": "HILL VIEW & GRASSY HOLLOW SUB",
         "norm": "HILL VIEW & GRASSY HOLLOW",
         "raw": "HILL VIEW & GRASSY HOLLOW SUB"
+      },
+      {
+        "name": "CC IMPROVEMENTS",
+        "norm": "CC IMPROVEMENTS",
+        "raw": "CC IMPROVEMENTS"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 183,
@@ -7287,7 +7347,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2027,
     "project_key": "GPC:20150",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 183,
       "row_top": 403.1,
@@ -7857,7 +7919,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "DOYLE",
         "norm": "DOYLE",
@@ -7867,8 +7929,14 @@
         "name": "LG&E MONROE",
         "norm": "LG&E MONROE",
         "raw": "LG&E MONROE 230KV"
+      },
+      {
+        "name": "JACKS CREEK LOOP IN",
+        "norm": "JACKS CREEK LOOP IN",
+        "raw": "JACKS CREEK LOOP IN"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 182,
@@ -7907,7 +7975,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2027,
     "project_key": "GPC:20234",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 182,
       "row_top": 224.4,
@@ -10086,7 +10156,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2028,
     "project_key": "GPC:20482",
-    "quality_flags": [],
+    "quality_flags": [
+      "source_status_conflict"
+    ],
     "source": {
       "page": 184,
       "row_top": 347.2,
@@ -11460,7 +11532,7 @@
     "cost_status": "redacted_not_retained",
     "cost_usd": null,
     "description": null,
-    "endpoints": [
+    "endpoint_candidates": [
       {
         "name": "GRID",
         "norm": "GRID",
@@ -11470,8 +11542,14 @@
         "name": "ARKWRIGHT",
         "norm": "ARKWRIGHT",
         "raw": "ARKWRIGHT"
+      },
+      {
+        "name": "LLOYD SHOALS",
+        "norm": "LLOYD SHOALS",
+        "raw": "LLOYD SHOALS 115KV"
       }
     ],
+    "endpoints": [],
     "field_evidence": {
       "in_service": {
         "page": 183,
@@ -11510,7 +11588,9 @@
     "owner_mapping_status": "verified",
     "plan_year": 2027,
     "project_key": "GPC:18573",
-    "quality_flags": [],
+    "quality_flags": [
+      "endpoint_ambiguous"
+    ],
     "source": {
       "page": 183,
       "row_top": 313.7,

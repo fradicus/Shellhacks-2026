@@ -24,6 +24,23 @@ GPC_SOURCE_PAGES = 668
 TABLE_FIRST_PAGE = 177
 TABLE_LAST_PAGE = 190
 TABLE_NAME = "GA ITS Ten-Year Plan (2025-2034)"
+SOURCE_CONTRADICTIONS = [
+    {
+        "native_id": "20482",
+        "name": "PITTMAN ROAD - WEST POINT DAM (USA) 115KV REBUILD",
+        "current_table": {
+            "need_date": "6/1/2028",
+            "page": 184,
+            "table_status": "current",
+        },
+        "other_table": {
+            "need_date": "6/1/2031",
+            "page": 191,
+            "table_status": "cancelled",
+        },
+        "resolution": "review_required",
+    }
+]
 
 PROJECTS_PATH = Path("data/projects/gpc.json")
 SUMMARY_PATH = Path("data/projects/gpc_summary.json")
@@ -43,7 +60,6 @@ TEAMS_RE = re.compile(r"\d+")
 DATE_RE = re.compile(r"\d{1,2}/\d{1,2}/\d{4}")
 OWNER_PREFIX_RE = re.compile(r"^(?:SAV|GTC|MEAG):\s*", re.IGNORECASE)
 PAREN_RE = re.compile(r"\(([^)]*)\)")
-ENDPOINT_SPLIT_RE = re.compile(r"\s+-\s+")
 VOLTAGE_TOKEN_RE = re.compile(
     r"\b(?:(\d+(?:\.\d+)?)\s*[-/]\s*)?(\d+(?:\.\d+)?)\s*kV\b",
     re.IGNORECASE,
@@ -163,16 +179,47 @@ def _endpoint(raw: str) -> dict[str, str] | None:
     return endpoint
 
 
-def extract_endpoints(name: str) -> list[dict[str, str]]:
+def _split_endpoint_parts(asset: str) -> list[str]:
+    parts: list[str] = []
+    start = 0
+    depth = 0
+    for index, character in enumerate(asset):
+        if character == "(":
+            depth += 1
+        elif character == ")":
+            depth = max(depth - 1, 0)
+        elif (
+            character in "-\N{EN DASH}\N{EM DASH}"
+            and depth == 0
+            and index > 0
+            and index + 1 < len(asset)
+            and asset[index - 1].isspace()
+            and asset[index + 1].isspace()
+        ):
+            parts.append(asset[start:index].strip())
+            start = index + 1
+    parts.append(asset[start:].strip())
+    return [part for part in parts if part]
+
+
+def _endpoint_data(name: str) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
     asset = OWNER_PREFIX_RE.sub("", name).strip()
-    endpoints: list[dict[str, str]] = []
+    parts = _split_endpoint_parts(asset)
+    candidates: list[dict[str, str]] = []
     seen: set[str] = set()
-    for raw in ENDPOINT_SPLIT_RE.split(asset)[:2]:
+    for raw in parts:
         endpoint = _endpoint(raw)
         if endpoint is None or not endpoint["norm"] or endpoint["norm"] in seen:
             continue
-        endpoints.append(endpoint)
+        candidates.append(endpoint)
         seen.add(endpoint["norm"])
+    if len(parts) > 2:
+        return [], candidates
+    return candidates, []
+
+
+def extract_endpoints(name: str) -> list[dict[str, str]]:
+    endpoints, _ = _endpoint_data(name)
     return endpoints
 
 
@@ -279,7 +326,11 @@ def _record(
         owner_mapping_status = owner["mapping_status"]
 
     in_service = _parse_date(row["need_date"] or None, flags)
-    endpoints = extract_endpoints(row["name"])
+    endpoints, endpoint_candidates = _endpoint_data(row["name"])
+    if endpoint_candidates:
+        flags.append("endpoint_ambiguous")
+    if native_id == "20482":
+        flags.append("source_status_conflict")
     voltages = _voltages(row["name"])
     evidence = {
         "name": {"page": row["page"], "quote": row["name"]},
@@ -289,7 +340,7 @@ def _record(
         "plan_year": {"page": row["page"], "quote": row["year"]},
         "zone": {"page": row["page"], "quote": row["zone"]},
     }
-    return {
+    record = {
         "_id": project_id(project_key, GPC_SOURCE_ID),
         "active": True,
         "cost_status": "redacted_not_retained",
@@ -318,6 +369,9 @@ def _record(
         "voltages_kv": voltages,
         "zone": int(row["zone"]) if ZONE_RE.fullmatch(row["zone"]) else None,
     }
+    if endpoint_candidates:
+        record["endpoint_candidates"] = endpoint_candidates
+    return record
 
 
 def parse_gpc_pdf(
@@ -376,6 +430,9 @@ def build_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
         "denominator_rows": len(records),
         "duplicate_native_ids": [],
         "duplicate_project_keys": [],
+        "endpoint_ambiguous_rows": sum(
+            "endpoint_ambiguous" in record["quality_flags"] for record in records
+        ),
         "excluded_tables": [
             {
                 "page": 191,
@@ -387,6 +444,7 @@ def build_summary(records: list[dict[str, Any]]) -> dict[str, Any]:
         "rows_per_owner_code": dict(sorted(owner_counts.items())),
         "rows_per_zone": dict(sorted(zone_counts.items(), key=lambda item: int(item[0]))),
         "source_id": GPC_SOURCE_ID,
+        "source_contradictions": SOURCE_CONTRADICTIONS,
         "table": TABLE_NAME,
         "table_pages": {"first": TABLE_FIRST_PAGE, "last": TABLE_LAST_PAGE},
         "unknown_owner_rows": len(records) - mapped,
