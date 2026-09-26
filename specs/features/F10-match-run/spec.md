@@ -21,12 +21,28 @@ cut: never
 4. Write `data/matches/matches.json` (schema `match`) and `data/matches/summary.json` (counts per view and band, pairs evaluated).
 5. `review_state: needs_review` on every pair until F13 confirms it.
 
+### Full-corpus adapter policy
+
+- Recalculate the canonical parsed-JSON hashes for DESC projects, Georgia projects and the normalized OSM inventory,
+  and require an exact match to F09's recorded semantic input fingerprints before using its locations.
+- Bind every location to one active filing version by `project_id`, `source_id` and `project_key`, and to one actual
+  filed endpoint by integer index and normalized name. Require complete slot coverage and globally unique location ids;
+  duplicate slots, inactive or contradictory bindings, invalid coordinates and source-gated accepted locations fail
+  the run rather than being dropped or deduplicated.
+- Exclude unknown owners from cross-utility matching. Ignore any center already present on an input project and rebuild
+  it only from accepted, finite, in-range location coordinates with `matches.core.center`.
+- The summary distinguishes all active known-owner DESC×GPC combinations from centered pairs actually evaluated.
+  It records spatial nonmatches, project exclusion reasons and overlap counts by view and band. Distances remain
+  unrounded in stored data.
+
 ## Requirements
 - **Don't reimplement any overlap rule.** Import `core` only. A rule change needs a `[C<n>]` PR from the contract owner.
 - Sparse results are fine. Zero future overlaps is a valid answer, reported plainly.
 
 ## Validation
 - `tests/pipeline/test_f10_*.py`: running the golden fixture through the full run path reproduces OVL_1..6 and the priority order from F00.
+- Full-corpus replay must be byte-identical and reproduce 7,452 known-owner combinations, 656 centered pairs evaluated
+  and 19 overlaps from the accepted F09 corpus. All 19 remain `needs_review` pending F13.
 - PR body: pairs evaluated, overlaps per view/band, and the top 10 with distance and gap.
 
 ## Defaults

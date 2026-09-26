@@ -1,0 +1,154 @@
+{
+  "analysis_date": "2026-09-26",
+  "input_identity": {
+    "desc_projects": "ae5b60ebc4ea8086d3fd03e8e642ad62cd47ab8867084f6dbaae21d425a3f319",
+    "f09_locations": "3f4438d516630ad665666d083ad4101ed3315447bbdff291a9d1eda6a1eda4b1",
+    "gpc_projects": "025546d29b86aa26e9f1a1f8e2e968b2919ec5827f79b2c406384b9b4fcf4f67",
+    "osm_substations": "0dd4e57be395718104f6a123801844103f48683a138f8da6682415ff20792e0d"
+  },
+  "overlaps_by_band": {
+    "0": 1,
+    "1": 18
+  },
+  "overlaps_by_view": {
+    "future": 0,
+    "historical": 16,
+    "tentative": 3
+  },
+  "pairs": {
+    "all_known_cross_utility_combinations": 7452,
+    "centered_cross_utility_pairs_evaluated": 656,
+    "excluded_before_distance": 6796,
+    "overlaps": 19,
+    "spatial_nonmatches": 637
+  },
+  "projects": {
+    "active": 262,
+    "active_by_utility": {
+      "DESC": 54,
+      "GPC": 138,
+      "unknown": 70
+    },
+    "centered_including_unknown_owner": 79,
+    "centered_known_owner": 57,
+    "centered_known_owner_by_utility": {
+      "DESC": 16,
+      "GPC": 41
+    },
+    "excluded": {
+      "no_accepted_location": 110,
+      "source_gated": 25,
+      "unknown_owner": 70
+    }
+  },
+  "review_state": {
+    "needs_review": 19
+  },
+  "rules": {
+    "center": "matches.core.center",
+    "rank_version": "nearby-band-v1",
+    "rule_version": "overlap-25mi-v1"
+  },
+  "top_10": [
+    {
+      "_id": "DESC:06367 D - G__GPC:20277",
+      "a": "DESC:06367 D - G",
+      "b": "GPC:20277",
+      "band": 0,
+      "distance_mi": 3.0328942921605173,
+      "rank": 1,
+      "time_gap_days": 1,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20067",
+      "a": "DESC:6808 S",
+      "b": "GPC:20067",
+      "band": 1,
+      "distance_mi": 18.15042002569446,
+      "rank": 2,
+      "time_gap_days": 0,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20066",
+      "a": "DESC:06367 D - G",
+      "b": "GPC:20066",
+      "band": 1,
+      "distance_mi": 21.251000271345333,
+      "rank": 3,
+      "time_gap_days": 1,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20067",
+      "a": "DESC:06367 D - G",
+      "b": "GPC:20067",
+      "band": 1,
+      "distance_mi": 22.08147501523513,
+      "rank": 4,
+      "time_gap_days": 364,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20066",
+      "a": "DESC:6808 S",
+      "b": "GPC:20066",
+      "band": 1,
+      "distance_mi": 18.935738955762826,
+      "rank": 5,
+      "time_gap_days": 365,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20277",
+      "a": "DESC:6808 S",
+      "b": "GPC:20277",
+      "band": 1,
+      "distance_mi": 20.458659378285944,
+      "rank": 6,
+      "time_gap_days": 365,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20785",
+      "a": "DESC:06367 D - G",
+      "b": "GPC:20785",
+      "band": 1,
+      "distance_mi": 14.742211031498835,
+      "rank": 7,
+      "time_gap_days": 366,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:6808 S__GPC:20785",
+      "a": "DESC:6808 S",
+      "b": "GPC:20785",
+      "band": 1,
+      "distance_mi": 18.13180698019737,
+      "rank": 8,
+      "time_gap_days": 730,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20783",
+      "a": "DESC:06367 D - G",
+      "b": "GPC:20783",
+      "band": 1,
+      "distance_mi": 19.52051821592881,
+      "rank": 9,
+      "time_gap_days": 732,
+      "view": "historical"
+    },
+    {
+      "_id": "DESC:06367 D - G__GPC:20407",
+      "a": "DESC:06367 D - G",
+      "b": "GPC:20407",
+      "band": 1,
+      "distance_mi": 23.459961970931154,
+      "rank": 10,
+      "time_gap_days": 732,
+      "view": "historical"
+    }
+  ]
+}

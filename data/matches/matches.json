@@ -1,0 +1,845 @@
+[
+  {
+    "_id": "DESC:06367 D - G__GPC:20277",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20277",
+    "band": 0,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3521162,
+          "lon": -81.1751124
+        },
+        "location_ids": [
+          "location:v1:eccd3ce5428c781251342862"
+        ],
+        "project_id": "GPC:20277@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 3.0328942921605173,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 1,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20067",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20067",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.044757399999995,
+          "lon": -81.0672826
+        },
+        "location_ids": [
+          "location:v1:e038d708e4504e1dcc3cf30a",
+          "location:v1:c413d4acfa4f966d0fac4348"
+        ],
+        "project_id": "GPC:20067@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 18.15042002569446,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 2,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 0,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20066",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20066",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.05402935,
+          "lon": -81.09642410000001
+        },
+        "location_ids": [
+          "location:v1:ff44dd955e869de62ba48945",
+          "location:v1:bc76519aa790f252459b1619"
+        ],
+        "project_id": "GPC:20066@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 21.251000271345333,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 3,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20067",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20067",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.044757399999995,
+          "lon": -81.0672826
+        },
+        "location_ids": [
+          "location:v1:e038d708e4504e1dcc3cf30a",
+          "location:v1:c413d4acfa4f966d0fac4348"
+        ],
+        "project_id": "GPC:20067@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 22.08147501523513,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 4,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 364,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20066",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20066",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.05402935,
+          "lon": -81.09642410000001
+        },
+        "location_ids": [
+          "location:v1:ff44dd955e869de62ba48945",
+          "location:v1:bc76519aa790f252459b1619"
+        ],
+        "project_id": "GPC:20066@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 18.935738955762826,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 5,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 365,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20277",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20277",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3521162,
+          "lon": -81.1751124
+        },
+        "location_ids": [
+          "location:v1:eccd3ce5428c781251342862"
+        ],
+        "project_id": "GPC:20277@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 20.458659378285944,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 6,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 365,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20785",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20785",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.1481353,
+          "lon": -81.1459835
+        },
+        "location_ids": [
+          "location:v1:98b8855a4a6ce7baf3aa3fb2"
+        ],
+        "project_id": "GPC:20785@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 14.742211031498835,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 7,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 366,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20785",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20785",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.1481353,
+          "lon": -81.1459835
+        },
+        "location_ids": [
+          "location:v1:98b8855a4a6ce7baf3aa3fb2"
+        ],
+        "project_id": "GPC:20785@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 18.13180698019737,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 8,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 730,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20783",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20783",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.0835097,
+          "lon": -81.1887223
+        },
+        "location_ids": [
+          "location:v1:c297636ce45e0e28def7f3ff"
+        ],
+        "project_id": "GPC:20783@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 19.52051821592881,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 9,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 732,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20407",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20407",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.0226869,
+          "lon": -81.0861807
+        },
+        "location_ids": [
+          "location:v1:f4e6e3adff2e47819e338d0c"
+        ],
+        "project_id": "GPC:20407@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 23.459961970931154,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 10,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 732,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20407",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20407",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.0226869,
+          "lon": -81.0861807
+        },
+        "location_ids": [
+          "location:v1:f4e6e3adff2e47819e338d0c"
+        ],
+        "project_id": "GPC:20407@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 20.019949067388993,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 11,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1096,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20783",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20783",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.0835097,
+          "lon": -81.1887223
+        },
+        "location_ids": [
+          "location:v1:c297636ce45e0e28def7f3ff"
+        ],
+        "project_id": "GPC:20783@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 22.233910530148076,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 12,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1096,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:21023",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:21023",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.045147799999995,
+          "lon": -81.2209368
+        },
+        "location_ids": [
+          "location:v1:9cbf1414e0d0c3171d07c0de",
+          "location:v1:d6bbf50a43a5620db32220e1"
+        ],
+        "project_id": "GPC:21023@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 22.525058991019478,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 13,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1097,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:21006",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:21006",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.031958849999995,
+          "lon": -81.11532220000001
+        },
+        "location_ids": [
+          "location:v1:f01413bbcf24f6159afa6eee",
+          "location:v1:a52ab96d44fa6c797d0a77ac"
+        ],
+        "project_id": "GPC:21006@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 22.719890536816873,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 14,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1097,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:21006",
+    "a": "DESC:6808 S",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:21006",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.2350272,
+          "lon": -80.8533836
+        },
+        "location_ids": [
+          "location:v1:7cb43c87c67acc0b6f8a487e"
+        ],
+        "project_id": "DESC:6808 S@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "two",
+          "lat": 32.031958849999995,
+          "lon": -81.11532220000001
+        },
+        "location_ids": [
+          "location:v1:f01413bbcf24f6159afa6eee",
+          "location:v1:a52ab96d44fa6c797d0a77ac"
+        ],
+        "project_id": "GPC:21006@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 20.77853849572314,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 15,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1461,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6809 G__GPC:20793",
+    "a": "DESC:6809 G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20793",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 33.7362884,
+          "lon": -82.2015043
+        },
+        "location_ids": [
+          "location:v1:a59e43299281b7c6f70ac39a"
+        ],
+        "project_id": "DESC:6809 G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 33.5439942,
+          "lon": -82.1686481
+        },
+        "location_ids": [
+          "location:v1:8820c5d64942ace9e8308562"
+        ],
+        "project_id": "GPC:20793@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 13.420145899028464,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 16,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1979,
+    "view": "tentative"
+  },
+  {
+    "_id": "DESC:6809 G__GPC:20794",
+    "a": "DESC:6809 G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20794",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 33.7362884,
+          "lon": -82.2015043
+        },
+        "location_ids": [
+          "location:v1:a59e43299281b7c6f70ac39a"
+        ],
+        "project_id": "DESC:6809 G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 33.5439942,
+          "lon": -82.1686481
+        },
+        "location_ids": [
+          "location:v1:8cf3ad0ae7f45dde60d05d30"
+        ],
+        "project_id": "GPC:20794@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 13.420145899028464,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 17,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 1979,
+    "view": "tentative"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20784",
+    "a": "DESC:06367 D - G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:20784",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 32.3606993,
+          "lon": -81.1241523
+        },
+        "location_ids": [
+          "location:v1:3994702bfb7711c00894935b"
+        ],
+        "project_id": "DESC:06367 D - G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 32.1552821,
+          "lon": -81.368377
+        },
+        "location_ids": [
+          "location:v1:cf5200910d96c400153f4fc5"
+        ],
+        "project_id": "GPC:20784@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 20.126496504144857,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 18,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 2193,
+    "view": "historical"
+  },
+  {
+    "_id": "DESC:6809 G__GPC:17993",
+    "a": "DESC:6809 G",
+    "analysis_date": "2026-09-26",
+    "b": "GPC:17993",
+    "band": 1,
+    "bindings": {
+      "a": {
+        "center": {
+          "basis": "one",
+          "lat": 33.7362884,
+          "lon": -82.2015043
+        },
+        "location_ids": [
+          "location:v1:a59e43299281b7c6f70ac39a"
+        ],
+        "project_id": "DESC:6809 G@desc-2025",
+        "source_id": "desc-2025"
+      },
+      "b": {
+        "center": {
+          "basis": "one",
+          "lat": 33.5439942,
+          "lon": -82.1686481
+        },
+        "location_ids": [
+          "location:v1:c9b239b2722bcd994b7dc82f"
+        ],
+        "project_id": "GPC:17993@gpc-2025",
+        "source_id": "gpc-2025"
+      }
+    },
+    "distance_mi": 13.420145899028464,
+    "location_confidence": {
+      "a": "medium",
+      "b": "medium"
+    },
+    "rank": 19,
+    "rank_version": "nearby-band-v1",
+    "review_state": "needs_review",
+    "rule_version": "overlap-25mi-v1",
+    "time_gap_days": 2557,
+    "view": "tentative"
+  }
+]
