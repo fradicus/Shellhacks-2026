@@ -122,6 +122,18 @@
   animation: pop 0.5s 0.9s both cubic-bezier(0.2, 0.9, 0.2, 1.2);
 }
 
+.l_rule .labelInner {
+  transform: translate(-50%, -50%);
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(5, 7, 11, 0.7);
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  animation: pop 0.5s 0.5s both cubic-bezier(0.2, 0.9, 0.2, 1.2);
+}
+
 .l_gap .labelInner {
   transform: translate(16px, -50%);
   font-family: var(--display);
@@ -737,6 +749,44 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
+/* Scrubber: move the sheet off today. The label always says which date it shows. */
+.scrub {
+  display: grid;
+  gap: 3px;
+  margin-top: 9px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-3);
+}
+.scrub b {
+  font-weight: 400;
+  color: var(--sheet);
+}
+.scrubRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.scrubRow input {
+  flex: 1;
+  accent-color: var(--sheet);
+}
+.scrubRow input:disabled {
+  opacity: 0.35;
+}
+.scrubRow button {
+  padding: 3px 8px;
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
 .hint {
   margin: 9px 0 0;
   font-family: var(--mono);
@@ -801,7 +851,104 @@
 }
 .loading {
   top: 50%;
-  animation: breathe 1.6s ease-in-out infinite;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  translate: 0 -50%;
+}
+/* The two-ring mark draws itself while the basemap loads. */
+.loading svg {
+  width: 72px;
+  height: 48px;
+  overflow: visible;
+}
+.loading circle {
+  fill: none;
+  stroke-width: 1.3;
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  animation: draw 1.8s cubic-bezier(0.6, 0, 0.3, 1) infinite;
+}
+.loading circle:first-child {
+  stroke: #5cc8ff;
+}
+.loading circle:last-child {
+  stroke: #ffae42;
+  animation-delay: 0.25s;
+}
+@keyframes draw {
+  60% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+/* The intro's year counter: the sweep's year and how many projects are filed in service by then. */
+.sweep {
+  position: absolute;
+  z-index: 3;
+  top: 22px;
+  left: 50%;
+  translate: -50% 0;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.sweep[data-on="1"] {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+.sweep > b {
+  font-family: var(--display);
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 0.85;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  text-shadow:
+    0 0 30px rgba(191, 233, 255, 0.35),
+    0 2px 20px rgba(0, 0, 0, 0.9);
+}
+.sweep > span {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.sweep > span b {
+  font-weight: 500;
+  color: var(--sheet);
+}
+
+/* Booth mode: the caption says the view is presenting itself. */
+.booth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.booth i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff5d5d;
+  box-shadow: 0 0 10px #ff5d5d;
+  animation: breathe 1.4s ease-in-out infinite;
 }
 .failure {
   bottom: 26px;
@@ -1132,4 +1279,27 @@
 .copy:hover {
   color: var(--ink);
   border-color: rgba(191, 233, 255, 0.35);
+}
+
+/* Phones: the counter sits just above the bottom sheet, smaller; the scrubber stays a desktop instrument. */
+@media (max-width: 860px) {
+  .sweep {
+    top: auto;
+    bottom: calc(48% + 26px);
+    left: 16px;
+    translate: none;
+    justify-items: start;
+  }
+  .sweep > b {
+    font-size: 48px;
+  }
+  .sweep > span {
+    font-size: 9px;
+  }
+  .scrub {
+    display: none;
+  }
+  .loading {
+    top: 26%;
+  }
 }

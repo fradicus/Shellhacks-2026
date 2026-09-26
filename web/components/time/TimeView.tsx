@@ -5,7 +5,7 @@ import type { Map as MlMap } from "maplibre-gl";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { InService, Utility, View } from "@/lib/types";
-import type { Emphasis, LabelSpec, Projected, TimeItem, TimeLayer } from "./timeLayer";
+import type { Emphasis, LabelSpec, Projected, SweepState, TimeItem, TimeLayer } from "./timeLayer";
 import { DAYS_PER_YEAR, dayOf, epochYear, fmtDays, span, type Span } from "./timeScale";
 import s from "./time.module.css";
 
@@ -49,6 +49,17 @@ const REVIEW: Record<string, string> = {
   rejected: "Not confirmed by audit",
 };
 const miles = (d: number) => `${d.toFixed(2)} mi`;
+const SWEEP_MS = 4200;
+const BOOTH_IDLE_MS = 25_000;
+/** 25 statute miles in degrees of latitude (1° ≈ 69.05 mi), to place the rule's label on its circle. */
+const RULE_DEG_LAT = 25 / 69.05;
+/** A chosen date on the axis (years after 1 Jan of the epoch year) as "Mar 2029". Display only. */
+const monthOf = (epoch: number, years: number) =>
+  new Date(Date.UTC(epoch, 0, 1) + years * DAYS_PER_YEAR * 86_400_000).toLocaleDateString("en-US", {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  });
 const fmtDate = (iso: string) =>
   new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
@@ -101,6 +112,10 @@ export function TimeView({
   const [trayOpen, setTrayOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [tour, setTour] = useState<number | null>(null);
+  const [asOf, setAsOf] = useState<number | null>(null);
+  const [booth, setBooth] = useState(false);
+  const boothRef = useRef(false);
+  const sweepEl = useRef<HTMLDivElement>(null);
   const tourTimer = useRef<number | null>(null);
 
   const container = useRef<HTMLDivElement>(null);
@@ -111,6 +126,8 @@ export function TimeView({
   const leftRef = useRef<HTMLDivElement>(null);
   const detailRef = useRef<HTMLElement>(null);
   const fitPx = useRef(30);
+  const epochRef = useRef(0);
+  const topYearsRef = useRef(1);
   const incoming = useRef<string | null | undefined>(undefined);
   const selectPairRef = useRef<(id: string | null) => void>(() => {});
 
@@ -132,6 +149,10 @@ export function TimeView({
     const tops = [...spans.values()].map((sp) => (sp.kind === "exact" ? sp.day : sp.kind === "range" ? sp.to : 0));
     return Math.max(todayYears, ...tops.map((d) => d / DAYS_PER_YEAR), 1);
   }, [spans, todayYears]);
+  useEffect(() => {
+    epochRef.current = epoch;
+    topYearsRef.current = topYears;
+  }, [epoch, topYears]);
   const bbox = useMemo(() => {
     const lons = located.map((p) => p.center!.lon);
     const lats = located.map((p) => p.center!.lat);
@@ -191,6 +212,15 @@ export function TimeView({
           }
           const layer = createTimeLayer(ml, {
             yearPx,
+            onSweep: (st: SweepState) => {
+              const el = sweepEl.current;
+              if (!el) return;
+              el.dataset.on = st ? "1" : "0";
+              if (!st) return;
+              const [year, count] = el.querySelectorAll("b");
+              year.textContent = String(epochRef.current + Math.min(Math.floor(st.years), Math.ceil(topYearsRef.current)));
+              count.textContent = `${st.shown} of ${st.total}`;
+            },
             onFrame: (pos: Projected) => {
               for (const [id, p] of pos) {
                 const el = labelEls.current.get(id);
@@ -255,6 +285,8 @@ export function TimeView({
     const wanted = pairs.find((p) => p.id === want);
     incoming.current = null;
     if (!wanted) {
+      // The timelapse: pillars rise in the order they were filed to enter service, while the camera tilts.
+      layer.sweepIn(reduced.current ? 0 : SWEEP_MS, 700);
       map.easeTo({ pitch: 58, bearing: -16, duration: ms, easing: (t) => 1 - (1 - t) ** 3 });
       return;
     }
@@ -312,6 +344,23 @@ export function TimeView({
     layerRef.current?.setYearPx(yearPx);
   }, [yearPx, ready]);
 
+  // The 25-mile rule, drawn around both stored centers of the selected pair.
+  useEffect(() => {
+    if (!ready) return;
+    layerRef.current?.setRules(
+      pa?.center && pb?.center
+        ? {
+            a: { lng: pa.center.lon, lat: pa.center.lat, color: COLOR[pa.utility] },
+            b: { lng: pb.center.lon, lat: pb.center.lat, color: COLOR[pb.utility] },
+          }
+        : null,
+    );
+  }, [ready, pa, pb]);
+
+  useEffect(() => {
+    layerRef.current?.setAsOf(asOf);
+  }, [asOf, ready]);
+
   // --- labels: React owns their content, the layer moves them every frame ---------------------------------------------
   const heightOf = (key: string) => {
     const sp = spans.get(key);
@@ -324,14 +373,24 @@ export function TimeView({
     labelSpecs.push({
       id: "today",
       ...rulerAt,
-      years: todayYears,
+      years: asOf ?? todayYears,
       kind: pair ? "todayShort" : "today",
-      text: pair ? "Today" : <>Today · {fmtDate(analysisDate)}</>,
+      text: asOf !== null ? <>As of {monthOf(epoch, asOf)}</> : pair ? "Today" : <>Today · {fmtDate(analysisDate)}</>,
     });
   }
   if (pair && pa?.center && pb?.center) {
     const mid = { lng: (pa.center.lon + pb.center.lon) / 2, lat: (pa.center.lat + pb.center.lat) / 2 };
     labelSpecs.push({ id: "dist", ...mid, years: 0, kind: "dist", text: <>{miles(pair.distance_mi)} apart</> });
+    // The rule's label sits where A's 25-mile circle crosses the far side of the view: the camera faces A→B minus 90°.
+    const far = ((bearing(pa.center, pb.center) - 90) * Math.PI) / 180;
+    labelSpecs.push({
+      id: "rule",
+      lng: pa.center.lon + (RULE_DEG_LAT * Math.sin(far)) / Math.cos((pa.center.lat * Math.PI) / 180),
+      lat: pa.center.lat + RULE_DEG_LAT * Math.cos(far),
+      years: 0,
+      kind: "rule",
+      text: "25 mi overlap rule",
+    });
     if (dimension && !flat)
       labelSpecs.push({
         id: "gap",
@@ -567,6 +626,11 @@ export function TimeView({
       const step = story[i];
       if (tourTimer.current) window.clearTimeout(tourTimer.current);
       if (!step) {
+        // Booth mode loops the story; otherwise it ends.
+        if (boothRef.current) {
+          tourTimer.current = window.setTimeout(() => stepRef.current(0), 1500);
+          return;
+        }
         tourTimer.current = null;
         setTour(null);
         return;
@@ -574,6 +638,14 @@ export function TimeView({
       setTour(i);
       if (step.pair) selectPair(step.pair);
       else overview();
+      if (i === 0) layerRef.current?.sweepIn(reduced.current ? 0 : SWEEP_MS, 900);
+      // Booth mode: a slow orbit once the camera has arrived.
+      if (boothRef.current && !reduced.current) {
+        const map = mapRef.current;
+        window.setTimeout(() => {
+          if (boothRef.current && map) map.rotateTo(map.getBearing() + 24, { duration: 4600, easing: (t) => t });
+        }, 2100);
+      }
       tourTimer.current = window.setTimeout(() => stepRef.current(i + 1), 7000);
     },
     [story, selectPair, overview],
@@ -584,6 +656,36 @@ export function TimeView({
   useEffect(() => () => {
     if (tourTimer.current) window.clearTimeout(tourTimer.current);
   }, []);
+
+  // Booth mode: idle for a while and the view presents itself; any input hands it back.
+  useEffect(() => {
+    if (!ready || reduced.current) return;
+    let idle = 0;
+    const arm = () => {
+      window.clearTimeout(idle);
+      idle = window.setTimeout(() => {
+        boothRef.current = true;
+        setBooth(true);
+        stepRef.current(0);
+      }, BOOTH_IDLE_MS);
+    };
+    const poke = () => {
+      if (boothRef.current) {
+        boothRef.current = false;
+        setBooth(false);
+        stopTour();
+        mapRef.current?.stop();
+      }
+      arm();
+    };
+    const evs = ["pointerdown", "pointermove", "keydown", "wheel", "touchstart"] as const;
+    evs.forEach((e) => window.addEventListener(e, poke, { passive: true }));
+    arm();
+    return () => {
+      window.clearTimeout(idle);
+      evs.forEach((e) => window.removeEventListener(e, poke));
+    };
+  }, [ready, stopTour]);
 
   const changeView = (v: View) => {
     setView(v);
@@ -874,12 +976,52 @@ export function TimeView({
             Overview
           </button>
         </div>
+        <label className={s.scrub}>
+          <span>
+            Sheet at <b>{asOf === null ? `Today · ${fmtDate(analysisDate)}` : monthOf(epoch, asOf)}</b>
+            {asOf !== null ? (
+              <>
+                {" · "}
+                {
+                  [...spans.values()].filter((sp) => sp.kind !== "unknown" && (sp.kind === "exact" ? sp.day : sp.to) / DAYS_PER_YEAR <= asOf)
+                    .length
+                }{" "}
+                of {[...spans.values()].filter((sp) => sp.kind !== "unknown").length} filed in service by then
+              </>
+            ) : null}
+          </span>
+          <span className={s.scrubRow}>
+            <input
+              type="range"
+              min={0}
+              max={Math.ceil(topYears)}
+              step={1 / 12}
+              value={asOf ?? todayYears}
+              disabled={flat}
+              aria-label="Move the sheet to another date"
+              onChange={(e) => {
+                const v = Number(e.target.value);
+                setAsOf(Math.abs(v - todayYears) < 1 / 24 ? null : v);
+              }}
+            />
+            {asOf !== null ? (
+              <button type="button" onClick={() => setAsOf(null)}>
+                Today
+              </button>
+            ) : null}
+          </span>
+        </label>
         <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through pairs · Esc clears</p>
       </section>
 
 
       {tour !== null && story[tour] ? (
         <div className={s.caption} role="status" aria-live="polite" key={tour}>
+          {booth ? (
+            <p className={s.booth}>
+              <i aria-hidden /> Presenting · move the mouse to explore
+            </p>
+          ) : null}
           <p className={s.kicker}>
             {String(tour + 1).padStart(2, "0")} / {String(story.length).padStart(2, "0")} · {story[tour].kicker}
           </p>
@@ -892,7 +1034,21 @@ export function TimeView({
           </div>
         </div>
       ) : null}
-      {!ready && !failure ? <div className={s.loading}>Raising the time axis…</div> : null}
+      <div className={s.sweep} ref={sweepEl} data-on="0" aria-hidden>
+        <b />
+        <span>
+          <b /> projects filed in service by then
+        </span>
+      </div>
+      {!ready && !failure ? (
+        <div className={s.loading} role="status">
+          <svg viewBox="0 0 48 32" aria-hidden>
+            <circle cx="18" cy="16" r="12" />
+            <circle cx="30" cy="16" r="12" />
+          </svg>
+          Raising the time axis…
+        </div>
+      ) : null}
       {failure ? (
         <div className={s.failure} role="status">
           {failure}

@@ -36,6 +36,13 @@ export interface LabelSpec {
   years: number;
 }
 export type Projected = Map<string, { x: number; y: number; on: boolean }>;
+/** The two centers of a selected pair, for drawing the 25-mile rule around each. */
+export interface RuleRings {
+  a: { lng: number; lat: number; color: string };
+  b: { lng: number; lat: number; color: string };
+}
+/** Sweep progress during the intro: the year reached and how many dated items are filed in service by then. */
+export type SweepState = { years: number; shown: number; total: number } | null;
 
 const hex = (h: string): RGB => {
   const n = parseInt(h.slice(1), 16);
@@ -44,21 +51,25 @@ const hex = (h: string): RGB => {
 const mul = (c: RGB, k: number): RGB => [c[0] * k, c[1] * k, c[2] * k];
 const ease = (t: number) => 1 - (1 - t) ** 3;
 const INK: RGB = hex("#f4efe6");
-const BRIGHT: Record<Emphasis, number> = { normal: 1, dim: 0.26, hot: 1.5, sel: 1.6 };
+const BRIGHT: Record<Emphasis, number> = { normal: 1, dim: 0.18, hot: 1.5, sel: 1.6 };
+const RULE_M = 40_233.6; // 25 statute miles, the overlap rule's radius
+const GHOST = 0.2; // brightness of items filed after the scrubber's date
 const SIZE: Record<Emphasis, number> = { normal: 10, dim: 7, hot: 16, sel: 22 };
 
 // One point shader for beads (0), ground rings (1) and ruler ticks (2). Additive, so draw order doesn't matter.
 const POINT_VS = /* glsl */ `
   attribute vec3 tint; attribute float size; attribute float shape; attribute float bright;
-  uniform float uDpr;
-  varying vec3 vTint; varying float vShape; varying float vBright;
+  uniform float uDpr; uniform float uW0;
+  varying vec3 vTint; varying float vShape; varying float vBright; varying float vFade;
   void main() {
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
     gl_PointSize = size * uDpr;
     vTint = tint; vShape = shape; vBright = bright;
+    // Depth: points farther than the view's centre recede a little.
+    vFade = uW0 > 0.0 ? clamp(1.35 - 0.35 * gl_Position.w / uW0, 0.45, 1.0) : 1.0;
   }`;
 const POINT_FS = /* glsl */ `
-  varying vec3 vTint; varying float vShape; varying float vBright;
+  varying vec3 vTint; varying float vShape; varying float vBright; varying float vFade;
   void main() {
     vec2 c = gl_PointCoord * 2.0 - 1.0;
     float r = length(c);
@@ -73,11 +84,15 @@ const POINT_FS = /* glsl */ `
       float ring = smoothstep(0.2, 0.02, abs(r - 0.7));
       if (ring < 0.02) discard;
       col = vTint; a = ring * 0.9;
-    } else {
+    } else if (vShape < 2.5) {
       if (abs(c.y) > 0.11 || abs(c.x) > 0.95) discard;
       col = vTint; a = 0.9;
+    } else {
+      // Halo: a soft gaussian, the stand-in for bloom (no post-processing in a shared GL context).
+      if (r > 1.0) discard;
+      col = vTint; a = exp(-r * r * 4.5) * 0.55;
     }
-    gl_FragColor = vec4(col * vBright, a * min(vBright, 1.0));
+    gl_FragColor = vec4(col * vBright * vFade, a * min(vBright, 1.0) * vFade);
   }`;
 
 // The "today" sheet: faint glass with a 10-mile grid, fading out toward its edges.
@@ -104,7 +119,7 @@ function points(): THREE.Points<THREE.BufferGeometry, THREE.ShaderMaterial> {
   const mat = new THREE.ShaderMaterial({
     vertexShader: POINT_VS,
     fragmentShader: POINT_FS,
-    uniforms: { uDpr: { value: 1 } },
+    uniforms: { uDpr: { value: 1 }, uW0: { value: 0 } },
     transparent: true,
     depthTest: false,
     depthWrite: false,
@@ -149,6 +164,32 @@ function lines(width: number, opts: { dashed?: boolean; additive?: boolean } = {
   return { mesh, width };
 }
 
+/** A unit circle on the ground, scaled and placed per frame: one per end of the selected pair. */
+function ring() {
+  const pos: number[] = [];
+  const n = 128;
+  for (let i = 0; i < n; i++) {
+    const a0 = (i / n) * Math.PI * 2;
+    const a1 = ((i + 1) / n) * Math.PI * 2;
+    pos.push(Math.cos(a0), Math.sin(a0), 0, Math.cos(a1), Math.sin(a1), 0);
+  }
+  const g = new LineSegmentsGeometry();
+  g.setPositions(pos);
+  const mat = new LineMaterial({
+    color: 0xffffff,
+    linewidth: 1.5,
+    transparent: true,
+    opacity: 0.75,
+    depthTest: false,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+  });
+  const mesh = new LineSegments2(g, mat);
+  mesh.frustumCulled = false;
+  mesh.visible = false;
+  return { mesh, width: 1.5 };
+}
+
 function fillLines(l: { mesh: LineSegments2 }, segs: Seg[]) {
   if (!segs.length) {
     l.mesh.visible = false;
@@ -172,7 +213,10 @@ function split(z0: number, z1: number, zt: number): { below: [number, number] | 
   return { below: [lo, zt], above: [zt, hi] };
 }
 
-export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Projected) => void }) {
+export function createTimeLayer(
+  ml: Ml,
+  opts: { yearPx: number; onFrame: (p: Projected) => void; onSweep?: (s: SweepState) => void },
+) {
   let map: MlMap | null = null;
   let renderer: THREE.WebGLRenderer | null = null;
   const scene = new THREE.Scene();
@@ -188,6 +232,11 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
   let yearPx = opts.yearPx;
   let heightFactor = 0;
   let anim: { from: number; to: number; start: number; ms: number } | null = null;
+  // Intro sweep (years reached; Infinity = everything shown) and the scrubber's chosen date (null = analysis date).
+  let sweep = Infinity;
+  let sweepAnim: { start: number; ms: number; to: number } | null = null;
+  let asOf: number | null = null;
+  let rules: { a: [number, number, number]; b: [number, number, number]; start: number } | null = null;
   // Last frame's screen geometry for picking: pillar foot and top per item.
   let hits: { key: string; x0: number; y0: number; x1: number; y1: number }[] = [];
 
@@ -205,6 +254,9 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
   const beadsAbove = points();
   const anchors = points();
   const marks = points();
+  const halos = points();
+  const ruleA = ring();
+  const ruleB = ring();
   const plane = new THREE.Mesh(
     new THREE.PlaneGeometry(1, 1),
     new THREE.ShaderMaterial({
@@ -221,15 +273,15 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
 
   // Draw order: ground, everything below today, the glass sheet, everything above it, then the drafting marks.
   const ordered: THREE.Object3D[] = [
-    links.mesh, linksHot.mesh, anchors, pillarsBelow.mesh, rangesBelow.mesh, beadsBelow, plane,
+    ruleA.mesh, ruleB.mesh, links.mesh, linksHot.mesh, anchors, halos, pillarsBelow.mesh, rangesBelow.mesh, beadsBelow, plane,
     pillarsAbove.mesh, pillarsSel.mesh, rangesAbove.mesh, beadsAbove, ruler.mesh, dimDashed.mesh, dimSolid.mesh, marks,
   ];
   ordered.forEach((o, i) => {
     o.renderOrder = i;
     scene.add(o);
   });
-  const allLines = [links, linksHot, pillarsBelow, pillarsAbove, pillarsSel, rangesBelow, rangesAbove, ruler, dimSolid, dimDashed];
-  const allPoints = [beadsBelow, beadsAbove, anchors, marks];
+  const allLines = [links, linksHot, pillarsBelow, pillarsAbove, pillarsSel, rangesBelow, rangesAbove, ruler, dimSolid, dimDashed, ruleA, ruleB];
+  const allPoints = [beadsBelow, beadsAbove, anchors, marks, halos];
 
   const local = (lng: number, lat: number): [number, number] => {
     const m = ml.MercatorCoordinate.fromLngLat([lng, lat]);
@@ -240,23 +292,37 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
   function rebuild() {
     const byKey = new Map(items.map((it) => [it.key, it]));
     const emph = (k: string) => focus?.emphasis(k) ?? "normal";
-    const zt = todayYears;
+    const zt = asOf ?? todayYears;
     const segs = { pb: [] as Seg[], pa: [] as Seg[], ps: [] as Seg[], rb: [] as Seg[], ra: [] as Seg[] };
     const beads = { b: [] as Parameters<typeof fillPoints>[1], a: [] as Parameters<typeof fillPoints>[1] };
     const rings: Parameters<typeof fillPoints>[1] = [];
+    const glow: Parameters<typeof fillPoints>[1] = [];
+    const sweeping = sweepAnim !== null;
+    let shown = 0;
+    let dated = 0;
 
     // Dim first, bright last, so highlighted pillars read on top even with additive blending.
     const rank = { dim: 0, normal: 1, hot: 2, sel: 3 } as const;
     for (const it of [...items].sort((x, y) => rank[emph(x.key)] - rank[emph(y.key)])) {
       const e = emph(it.key);
-      const k = BRIGHT[e];
       const c = hex(it.color);
       const [x, y] = local(it.lng, it.lat);
+      const full = topOf(it.span);
+      // Scrubber: anything filed after the chosen date is a ghost.
+      const k = BRIGHT[e] * (asOf !== null && it.span.kind !== "unknown" && full > asOf ? GHOST : 1);
       rings.push({ p: [x, y, 0], c, size: e === "dim" ? 8 : e === "sel" ? 20 : 11, shape: 1, bright: k * 0.8 });
+      if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 46 : 28, shape: 3, bright: k * 0.32 });
       if (it.span.kind === "unknown") continue;
-      const top = topOf(it.span);
+      dated++;
+      // Sweep: the pillar grows to min(date, sweep); its bead appears, with a flash, once the sweep passes it.
+      if (sweep <= 0) continue;
+      const top = Math.min(full, sweep);
+      const reached = sweep >= full;
+      if (reached) shown++;
+      const flash = sweeping && reached ? Math.max(0, 1 - (sweep - full) / 0.9) : 0;
       // The pillar: a beam of light from the ground anchor up to the date, brightening with height.
-      const beam = split(0, it.span.kind === "range" ? it.span.from / 365.25 : top, zt);
+      const beamTop = it.span.kind === "range" ? Math.min(it.span.from / 365.25, top) : top;
+      const beam = split(0, beamTop, zt);
       const beamSeg = ([z0, z1]: [number, number]): Seg => ({
         a: [x, y, z0],
         b: [x, y, z1],
@@ -265,22 +331,24 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
       });
       if (e === "sel") {
         // A selected pillar is one bright, wide beam drawn above the glass, so it reads through it.
-        const z1 = it.span.kind === "range" ? it.span.from / 365.25 : top;
-        segs.ps.push({ a: [x, y, 0], b: [x, y, z1], ca: mul(c, 0.25), cb: mul(c, 1.1) });
+        segs.ps.push({ a: [x, y, 0], b: [x, y, beamTop], ca: mul(c, 0.25), cb: mul(c, 1.1) });
       } else {
         if (beam.below) segs.pb.push(beamSeg(beam.below));
         if (beam.above) segs.pa.push(beamSeg(beam.above));
       }
       if (it.span.kind === "exact") {
-        (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e], shape: 0, bright: k });
+        if (!reached) continue;
+        (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: 0, bright: k * (1 + 1.1 * flash) });
+        if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, top], c, size: SIZE[e] * (3.2 + 2.2 * flash), shape: 3, bright: k * (0.55 + 0.9 * flash) });
       } else {
         // A month or year: frosted column over the whole span, with rings at both ends. No day is picked.
+        if (sweep < it.span.from / 365.25) continue;
         const col = split(it.span.from / 365.25, top, zt);
         const colSeg = ([z0, z1]: [number, number]): Seg => ({ a: [x, y, z0], b: [x, y, z1], ca: mul(c, 0.32 * k), cb: mul(c, 0.32 * k) });
         if (col.below) segs.rb.push(colSeg(col.below));
         if (col.above) segs.ra.push(colSeg(col.above));
         for (const z of [it.span.from / 365.25, top])
-          (z >= zt ? beads.a : beads.b).push({ p: [x, y, z], c, size: SIZE[e] * 0.9, shape: 1, bright: k });
+          if (z <= sweep) (z >= zt ? beads.a : beads.b).push({ p: [x, y, z], c, size: SIZE[e] * 0.9, shape: 1, bright: k });
       }
     }
     fillLines(pillarsBelow, segs.pb);
@@ -291,6 +359,8 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
     fillPoints(beadsBelow, beads.b);
     fillPoints(beadsAbove, beads.a);
     fillPoints(anchors, rings);
+    fillPoints(halos, glow);
+    if (sweeping) opts.onSweep?.({ years: sweep, shown, total: dated });
 
     // Ground links: centre to centre, never a route.
     const link = (hot: boolean) =>
@@ -398,11 +468,22 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
     },
     render(gl, args) {
       if (!map || !renderer) return;
+      const now = performance.now();
       if (anim) {
-        const t = Math.min((performance.now() - anim.start) / anim.ms, 1);
+        const t = Math.min((now - anim.start) / anim.ms, 1);
         heightFactor = anim.from + (anim.to - anim.from) * ease(t);
         if (t >= 1) anim = null;
         map.triggerRepaint();
+      }
+      if (sweepAnim) {
+        // Linear in time so years pass at an even pace; the flash decay gives each bead its own beat.
+        const t = Math.max(0, (now - sweepAnim.start) / sweepAnim.ms);
+        sweep = t >= 1 ? Infinity : t * sweepAnim.to;
+        if (t >= 1) {
+          sweepAnim = null;
+          opts.onSweep?.(null);
+        }
+        rebuild();
       }
       const w = gl.drawingBufferWidth;
       const h = gl.drawingBufferHeight;
@@ -415,10 +496,29 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
         mat.gapSize = 5 * dpr;
       }
       for (const p of allPoints) p.material.uniforms.uDpr.value = dpr;
-      (plane.material as THREE.ShaderMaterial).uniforms.uOpacity.value = Math.min(heightFactor * 1.4, 1);
+      // The sheet fades in with the axis and, during the sweep, only once the sweep has reached it.
+      const sheetOn = sweep >= (asOf ?? todayYears) ? 1 : 0.18;
+      (plane.material as THREE.ShaderMaterial).uniforms.uOpacity.value = Math.min(heightFactor * 1.4, 1) * sheetOn;
       ruler.mesh.visible = marks.visible = heightFactor > 0.03 && ruler.mesh.geometry.attributes.instanceStart !== undefined;
 
       const m = frameMatrix(args);
+      // The 25-mile rule: a circle per end of the selected pair, growing in over 0.7 s.
+      for (const [r, end] of [
+        [ruleA, rules?.a],
+        [ruleB, rules?.b],
+      ] as const) {
+        r.mesh.visible = !!end;
+        if (!end || !rules) continue;
+        const g = ease(Math.min((now - rules.start) / 700, 1));
+        r.mesh.position.set(end[0], end[1], 0);
+        r.mesh.scale.set(end[2] * g, end[2] * g, 1);
+        r.mesh.updateMatrixWorld();
+        if (g < 1) map.triggerRepaint();
+      }
+      // Depth fade reference: the clip-space w of the view's centre on the ground.
+      const cc = map.getCenter();
+      const w0 = new THREE.Vector4(...local(cc.lng, cc.lat), 0, 1).applyMatrix4(m).w;
+      for (const p of allPoints) p.material.uniforms.uW0.value = w0 > 0 ? w0 : 0;
       camera.projectionMatrix.copy(m);
       camera.projectionMatrixInverse.copy(m).invert();
       renderer.resetState();
@@ -470,6 +570,40 @@ export function createTimeLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Pro
     setHeight(target: number, ms: number) {
       anim = ms > 0 ? { from: heightFactor, to: target, start: performance.now(), ms } : null;
       if (!anim) heightFactor = target;
+      map?.triggerRepaint();
+    },
+    /** Replay the intro sweep: pillars grow in date order over `ms` (0 = show everything at once). */
+    sweepIn(ms: number, delay = 0) {
+      if (ms <= 0) {
+        sweep = Infinity;
+        sweepAnim = null;
+        opts.onSweep?.(null);
+      } else {
+        sweep = 0;
+        sweepAnim = { start: performance.now() + delay, ms, to: Math.ceil(maxYears) + 0.4 };
+      }
+      rebuild();
+    },
+    /** Scrubber: ghost everything filed after `years` and move the sheet there; null = back to the analysis date. */
+    setAsOf(years: number | null) {
+      asOf = years;
+      rebuild();
+    },
+    /** Draw the 25-mile rule around both ends of the selected pair (null clears it). */
+    setRules(next: RuleRings | null) {
+      if (!next) {
+        rules = null;
+      } else {
+        const end = (e: RuleRings["a"]): [number, number, number] => {
+          const [x, y] = local(e.lng, e.lat);
+          // Metres at the end's own latitude, expressed in the layer's local units.
+          const r = (RULE_M * ml.MercatorCoordinate.fromLngLat([e.lng, e.lat]).meterInMercatorCoordinateUnits()) / unit;
+          return [x, y, r];
+        };
+        rules = { a: end(next.a), b: end(next.b), start: performance.now() };
+        (ruleA.mesh.material as LineMaterial).color.set(next.a.color);
+        (ruleB.mesh.material as LineMaterial).color.set(next.b.color);
+      }
       map?.triggerRepaint();
     },
     /** Nearest item to a screen point: distance to its pillar (foot to top), within `radius` CSS pixels. */
