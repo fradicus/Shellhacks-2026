@@ -26,8 +26,14 @@ The `load` GitHub Action is the **only writer** to Atlas (tech-stack). This feat
    - `GET /api/matches?view=&maxDistance=&limit=`: priority order as stored
    - `GET /api/pairs/[id]`: the match, both projects with endpoints and evidence, the brief (if passed), version changes for either project
    - `GET /api/versions`, `GET /api/coverage`, `GET /api/extraction?source=`, `GET /api/sources` (added by C3), `GET /api/briefs` (all, passed and rejected) and `GET /api/runs` (latest run or null; public Run fields only) (added by C5)
-4. Validate every query param with `zod`: bbox within +/-180/90, limit <= 500, enums checked. Unknown params -> 400. Only read the active dataset.
-5. Atlas unreachable -> 503 `{unavailable: true}`. Never serve fixtures in production.
+4. **Audit subjects** (`pipeline/load/review_subjects.py`, added by C7 for #57): pure `endpoint_subject`, `pair_subject`
+   and `subject_hash` (SHA-256 of canonical JSON, `fingerprint_version: audit-subject-v1`). Staging recomputes every
+   match's and accepted location's hash before dataset-prefixing; a review's `subject_hash` must equal it for its
+   verdict to apply, a pair confirmation also needs current confirmed reviews for its supporting endpoints, and a
+   review without a binding (or with a stale one) leaves `review_state` at `needs_review`. Location records bind to one
+   filing version via `project_id` / `source_id` (#47). F13 reuses only the projection and hash.
+5. Validate every query param with `zod`: bbox within +/-180/90, limit <= 500, enums checked. Unknown params -> 400. Only read the active dataset.
+6. Atlas unreachable -> 503 `{unavailable: true}`. Never serve fixtures in production.
 
 ## Requirements
 - No write routes. No raw operators from the request. The connection string is never logged.

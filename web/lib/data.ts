@@ -66,7 +66,7 @@ async function fixtureProjects(withEndpoints: boolean): Promise<Project[]> {
   return projects.map((p) => ({
     ...p,
     endpoints: locations
-      .filter((l) => l.project_key === p.project_key)
+      .filter((l) => l.project_key === p.project_key && (l.project_id ?? p._id) === p._id)
       .sort((x, y) => x.endpoint_index - y.endpoint_index),
   }));
 }

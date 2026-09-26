@@ -44,6 +44,9 @@ export interface Location {
   lon?: number;
   osm_id?: string | null;
   osm_url?: string | null;
+  /** `<project_key>@<source_id>`: the filing version this evidence belongs to (C7, #47) */
+  project_id?: string;
+  source_id?: string;
 }
 
 export interface Project {
@@ -173,6 +176,11 @@ export interface Review {
   reason: string;
   reviewer: string;
   at: string;
+  /** C7 (#57): a decision applies only while subject_hash equals the record's current audit-subject hash */
+  subject_type?: "pair" | "endpoint";
+  fingerprint_version?: string;
+  subject_hash?: string;
+  subject_snapshot?: Record<string, unknown>;
 }
 
 export interface Run {

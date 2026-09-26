@@ -2,12 +2,22 @@
   "$id": "https://gridbridge.local/schemas/review.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": true,
+  "dependentRequired": {
+    "subject_hash": [
+      "subject_type",
+      "fingerprint_version"
+    ]
+  },
   "properties": {
     "_id": {
       "type": "string"
     },
     "at": {
       "format": "date-time",
+      "type": "string"
+    },
+    "fingerprint_version": {
+      "description": "Projection version the subject_hash was computed with (audit-subject-v1)",
       "type": "string"
     },
     "reason": {
@@ -18,6 +28,22 @@
     },
     "reviewer": {
       "type": "string"
+    },
+    "subject_hash": {
+      "description": "SHA-256 of the reviewed facts, from pipeline/load/review_subjects.py. The loader applies a decision only while this equals the record's current hash; without it a review is evidence that cannot confirm.",
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "subject_snapshot": {
+      "description": "Optional copy of the hashed subject, for reproducibility",
+      "type": "object"
+    },
+    "subject_type": {
+      "description": "What record_id names: a match (pair) or a location (endpoint). C7 / #57",
+      "enum": [
+        "pair",
+        "endpoint"
+      ]
     },
     "verdict": {
       "type": "string"
