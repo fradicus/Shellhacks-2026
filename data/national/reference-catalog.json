@@ -1,0 +1,231 @@
+{
+  "eia": {
+    "authority_type": "federal statistical agency",
+    "bytes": 4568208,
+    "early_release_caveat": "2025 early release is explicitly not yet validated and excludes some respondents and state adjustments.",
+    "early_release_url": "https://www.eia.gov/electricity/data/eia861/zip/f8612025er.zip",
+    "index_updated": "2025-12-03",
+    "landing_url": "https://www.eia.gov/electricity/data/eia861/",
+    "members": [
+      {
+        "bytes": 342331,
+        "filename": "Frame_2024.xlsx",
+        "sha256": "220c6e9080e084271303b3ebdca147cf46e74cea4019f155fa35d4d5a260f14a",
+        "sheets": [
+          {
+            "columns": [
+              "Data Year",
+              "Utility Number",
+              "Utility Name",
+              "Short Form",
+              "Ownership Code",
+              "Ownership",
+              "Monthly",
+              "Advanced Metering",
+              "Delivery Company",
+              "Demand Response",
+              "Distribution Systems",
+              "Dynamic Pricing",
+              "Energy Efficiency",
+              "Mergers",
+              "Net Metering",
+              "Non Net Metering Distributed",
+              "Operational Data",
+              "Reliablity",
+              "Sales to Ultimate Customers",
+              "Service Territory",
+              "Utility Data"
+            ],
+            "header_row": 1,
+            "name": "Frame",
+            "rows": 3413,
+            "unique_utility_numbers": 3413
+          }
+        ]
+      },
+      {
+        "bytes": 260483,
+        "filename": "Utility_Data_2024.xlsx",
+        "sha256": "6eab71294e7738c712d103b7a4d19764bc8b27822a358e5a9c8736f52a7cbcb1",
+        "sheets": [
+          {
+            "columns": [
+              "Data Year",
+              "Utility Number",
+              "Utility Name",
+              "State",
+              "Ownership Type",
+              "NERC Region",
+              "TRE",
+              "FRCC",
+              "MRO",
+              "NPCC",
+              "RFC",
+              "SERC",
+              "SPP",
+              "WECC",
+              "CAISO",
+              "ERCOT",
+              "PJM",
+              "NYISO",
+              "SPP",
+              "MISO",
+              "ISONE",
+              "Other",
+              "Generation",
+              "Transmission",
+              "Buying Transmission",
+              "Distribution",
+              "Buying Distribution",
+              "Wholesale Marketing",
+              "Retail Marketing",
+              "Bundled",
+              "Alt Fuel Vehicle",
+              "Alt Fuel Vehicle 2"
+            ],
+            "header_row": 2,
+            "name": "States",
+            "rows": 1701,
+            "unique_utility_numbers": 1699
+          },
+          {
+            "columns": [
+              "Data Year",
+              "Utility Number",
+              "Utility Name",
+              "State",
+              "Ownership Type",
+              "NERC Region",
+              "TRE",
+              "FRCC",
+              "MRO",
+              "NPCC",
+              "RFC",
+              "SERC",
+              "SPP",
+              "WECC",
+              "CAISO",
+              "ERCOT",
+              "PJM",
+              "NYISO",
+              "SPP",
+              "MISO",
+              "ISONE",
+              "Other",
+              "Generation",
+              "Transmission",
+              "Buying Transmission",
+              "Distribution",
+              "Buying Distribution",
+              "Wholesale Marketing",
+              "Retail Marketing",
+              "Bundled",
+              "Alt Fuel Vehicle",
+              "Alt Fuel Vehicle 2"
+            ],
+            "header_row": 2,
+            "name": "Territories",
+            "rows": 5,
+            "unique_utility_numbers": 5
+          }
+        ]
+      },
+      {
+        "bytes": 440753,
+        "filename": "Service_Territory_2024.xlsx",
+        "sha256": "0292f880da42e06b443704af4ce373c73923322371b5346e46cfd22573c7eae7",
+        "sheets": [
+          {
+            "columns": [
+              "Data Year",
+              "Utility Number",
+              "Utility Name",
+              "Short Form",
+              "State",
+              "County"
+            ],
+            "header_row": 1,
+            "name": "Counties_States",
+            "rows": 11776,
+            "unique_utility_numbers": 2907
+          },
+          {
+            "columns": [
+              "Data Year",
+              "Utility Number",
+              "Utility Name",
+              "Short Form",
+              "State",
+              "County"
+            ],
+            "header_row": 1,
+            "name": "Counties_Territories",
+            "rows": 90,
+            "unique_utility_numbers": 5
+          }
+        ]
+      }
+    ],
+    "publisher": "U.S. Energy Information Administration",
+    "release_status": "final",
+    "semantics": "Service Territory counties identify distribution equipment serving ultimate customers; not project locations, exclusive polygons, transmission routes, or owner geography.",
+    "sha256": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+    "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip",
+    "vintage": 2024
+  },
+  "ferc": {
+    "authority_type": "federal regulator",
+    "coverage_caveat": "FERC interstate jurisdiction largely excludes Alaska, Hawaii and much of Texas; explicitly track coverage gaps.",
+    "current_framework_url": "https://www.ferc.gov/explainer-transmission-planning-and-cost-allocation-final-rule",
+    "landing_updated": "2024-02-05",
+    "landing_url": "https://www.ferc.gov/media/regions-map-printable-version-order-no-1000",
+    "publisher": "Federal Energy Regulatory Commission",
+    "rule_url": "https://www.ferc.gov/electric-transmission/order-no-1000-transmission-planning-and-cost-allocation",
+    "sha256": "4aef5cebd7eb15795953edc40129f4abd464044a8995a896d77c681eb1a336e0",
+    "url": "https://www.ferc.gov/sites/default/files/2024-02/Order100-Map-1-19-24_0.pdf",
+    "use": "Planning-region discovery/directory reference, not machine-readable exact project geometry or complete nationwide project list."
+  },
+  "iso_ne": {
+    "authority_type": "independent nonprofit regional transmission organization; not government",
+    "bytes": 1967096,
+    "ingestion_guards": [
+      "Do not combine duplicated formatted/subset/hidden historic worksheets.",
+      "Do not execute workbook code; veryHidden Macro1 exists.",
+      "State is explicit abbreviation or unknown; county/coordinates are not structured fields.",
+      "Equipment owner is not ISO-NE; EIA legal-entity mapping requires separate evidence.",
+      "Keep in-service and cancelled rows visible as history."
+    ],
+    "landing_url": "https://www.iso-ne.com/system-planning/system-plans-studies/rsp/rsp-project-list-and-the-asset-condition-list",
+    "public_evidence": {
+      "authentication_required": false,
+      "cell": "A1",
+      "sheet": "06_2026_RSP",
+      "value": "June 2026 ISO-NEW ENGLAND Project List Update - ISO-NE Public"
+    },
+    "public_status": "public",
+    "published_at": "2026-07-09T10:00:00.000Z",
+    "publisher": "ISO New England",
+    "record_count": 1024,
+    "selected_sheet": "RSP_sortable",
+    "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+    "source_vintage": "June 2026",
+    "state_values": {
+      "CT": 196,
+      "MA": 402,
+      "ME": 200,
+      "NH": 96,
+      "RI": 63,
+      "VT": 63,
+      "unknown": 4
+    },
+    "status_counts": {
+      "cancelled": 335,
+      "in-service": 643,
+      "planned": 37,
+      "proposed": 2,
+      "under construction": 7
+    },
+    "url": "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx"
+  },
+  "retrieved_at": "2026-09-26T18:00:22.262176+00:00"
+}
