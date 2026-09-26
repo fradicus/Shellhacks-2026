@@ -2,10 +2,10 @@ import type { Citation } from "./sources";
 
 export function Cite({ c }: { c: Citation }) {
   return c.href ? (
-    <a href={c.href} target="_blank" rel="noreferrer">
+    <a href={c.href} target="_blank" rel="noreferrer" title={c.title}>
       {c.label}
     </a>
   ) : (
-    <span>{c.label}</span>
+    <span title={c.title}>{c.label}</span>
   );
 }

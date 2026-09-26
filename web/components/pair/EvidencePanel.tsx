@@ -1,7 +1,7 @@
 import { Badge, UtilityBadge } from "@/components/ui";
 import type { Location, Project, Source, VersionChange } from "@/lib/types";
 import { Cite } from "./Cite";
-import { cite, sourceTitle } from "./sources";
+import { cite } from "./sources";
 import s from "./pair.module.css";
 
 const NOT_PUBLISHED = <span className={s.unknown}>Not published</span>;
@@ -39,6 +39,8 @@ function fieldValue(p: Project, field: string): React.ReactNode {
     }
   }
 }
+
+const show = (v: unknown) => (v === null || v === undefined ? "—" : typeof v === "number" ? v.toLocaleString("en-US") : String(v));
 
 function osmHref(l: Location): string | null {
   if (l.osm_url) return l.osm_url;
@@ -139,7 +141,7 @@ export function EvidencePanel({
         <dt>Source</dt>
         <dd>
           <Cite c={src} />
-          {p.utility === "GPC" ? <span className={s.muted}> (page number only; decision D2)</span> : null}
+          {p.utility === "GPC" && p.source.page ? <span className={s.muted}> (page number only; decision D2)</span> : null}
         </dd>
         <dt>Native ID</dt>
         <dd className="mono">{p.native_id}</dd>
@@ -195,8 +197,8 @@ export function EvidencePanel({
           <ul className={s.changes}>
             {changes.map((c) => (
               <li key={c._id}>
-                <code>{c.field}</code>: <span className="num">{String(c.old ?? "—")}</span> →{" "}
-                <span className="num">{String(c.new ?? "—")}</span>
+                <code>{c.field}</code>: <span className="num">{show(c.old)}</span> →{" "}
+                <span className="num">{show(c.new)}</span>
                 <div className={s.muted}>
                   <Cite c={cite(p, sources, c.from_source, c.from_page)} /> → <Cite c={cite(p, sources, c.to_source, c.to_page)} />
                 </div>
@@ -204,7 +206,7 @@ export function EvidencePanel({
             ))}
           </ul>
         ) : (
-          <p className={s.muted}>No changes recorded between filings{sources?.length ? ` (${sourceTitle(sources, p.source.source_id)})` : ""}.</p>
+          <p className={s.muted}>No changes recorded between filings.</p>
         )}
       </section>
 
