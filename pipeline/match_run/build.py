@@ -11,6 +11,7 @@ from typing import Any
 from common import REPO_ROOT, load_json, validate, write_json
 from locations.core import SOURCE_BLOCKING_FLAGS, canonical_json_sha256
 from matches import core
+from matches.routes import drives_for, load_routes, route_summary
 
 CONFIDENCE_RANK = {"high": 0, "medium": 1, "low": 2}
 KNOWN_UTILITIES = set(core.KNOWN_UTILITIES)
@@ -196,19 +197,25 @@ def run_match_adapter(
     locations: list[dict[str, Any]],
     *,
     analysis_date: str,
+    routes: dict[str, dict[str, Any]] | None = None,
     input_identity: dict[str, str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    """Bind the complete endpoint corpus, recompute centers, and delegate every match rule to frozen core."""
+    """Bind the complete endpoint corpus, recompute centers, and delegate every match rule to frozen core.
+    Without stored routes no pair has a known drive, so nothing overlaps."""
     date.fromisoformat(analysis_date)
+    routes = routes or {}
     active, by_project = _bind_locations(projects, locations)
     prepared, bindings, excluded = _prepared_projects(active, by_project)
     prepared_by_key = {project["project_key"]: project for project in prepared}
-    raw_matches = core.overlaps(prepared, analysis_date)
+    candidates = core.route_candidates(prepared)
+    drives, route_states = drives_for(candidates, routes)
+    raw_matches = core.overlaps(prepared, analysis_date, drives)
     enriched = []
     for match in raw_matches:
         a_binding, b_binding = bindings[match["a"]], bindings[match["b"]]
         record = {
             **match,
+            "route": route_summary(routes[match["_id"]]),
             "bindings": {"a": a_binding, "b": b_binding},
             "location_confidence": {
                 "a": prepared_by_key[match["a"]]["location_confidence"],
@@ -253,7 +260,14 @@ def run_match_adapter(
             "all_known_cross_utility_combinations": all_known_pairs,
             "centered_cross_utility_pairs_evaluated": centered_pairs,
             "excluded_before_distance": all_known_pairs - centered_pairs,
+            "within_straight_line_prefilter": len(candidates),
+            "route_states": _counts(
+                [{"state": s} for s in route_states.values()], "state", ("ok", "no_route", "missing", "stale")
+            ),
             "overlaps": len(matches),
+            "drive_over_limit": sum(
+                1 for mid, s in route_states.items() if s == "ok" and drives[mid] > core.OVERLAP_MI
+            ),
             "spatial_nonmatches": centered_pairs - len(matches),
         },
         "overlaps_by_band": _counts(matches, "band", (0, 1)),
@@ -271,6 +285,7 @@ def run_match_adapter(
                 "b": match["b"],
                 "band": match["band"],
                 "distance_mi": match["distance_mi"],
+                "drive_mi": match["drive_mi"],
                 "rank": match["rank"],
                 "time_gap_days": match["time_gap_days"],
                 "view": match["view"],
@@ -316,8 +331,12 @@ def build_matches(*, repo_root: Path = REPO_ROOT, analysis_date: str = "2026-09-
     coverage = load_json(repo_root / "data/locations/coverage.json")
     osm = load_json(repo_root / "data/osm/substations.json")
     identity = _verify_f09_identity(desc, gpc, osm, locations, coverage, analysis_date)
+    routes_path = repo_root / "data/routes/routes.json"
+    routes = load_routes(routes_path)
+    if routes_path.exists():
+        identity = {**identity, "routes": canonical_json_sha256(load_json(routes_path))}
     matches, summary = run_match_adapter(
-        [*desc, *gpc], locations, analysis_date=analysis_date, input_identity=identity
+        [*desc, *gpc], locations, analysis_date=analysis_date, routes=routes, input_identity=identity
     )
     write_json(repo_root / "data/matches/matches.json", matches)
     write_json(repo_root / "data/matches/summary.json", summary)
