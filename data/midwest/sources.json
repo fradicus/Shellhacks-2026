@@ -28,5 +28,33 @@
     ],
     "title": "SPP Q3 2026 Quarterly Project Tracking Report, Appendix 1",
     "vintage": "2026 Q3"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+    "notes": [
+      "F46 Midwest release (C43): rows listing only IA, MO, ND or SD from the workbook F40 pinned (miso-mtep26-eval); F40 kept the Great Lakes rows. Same artifact and hash.",
+      "Under-evaluation projects are proposals; M2 rows are Appendix A approved. Locations are unreviewed C33 candidates from named OSM substations; none is independently confirmed."
+    ],
+    "planning_region": "miso",
+    "project_count": 86,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Midcontinent Independent System Operator (MISO)",
+    "retrieved_at": "2026-09-27T08:42:58Z",
+    "role": "project_plan",
+    "sha256": "40f325fe4ce7cb4dbc24207219725f623956efafdf6febb2e67a90accb24e72e",
+    "states": [
+      "19",
+      "29",
+      "38",
+      "46"
+    ],
+    "title": "MTEP Projects Under Evaluation (MTEP26 cycle)",
+    "vintage": "MTEP26 cycle, retrieved date"
   }
 ]

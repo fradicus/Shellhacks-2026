@@ -13383,5 +13383,5464 @@
     "sheet": "Staff QPT Appendix 1",
     "source_id": "spp-qpt-2026q3",
     "uid": "172067"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reconductor Brownstown-Monroe #1 345 kV",
+    "native_id": "15871",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 3,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Brownstown - Wayne #2 345 kV Station Equipment & Sag Remediation",
+    "native_id": "15873",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 4,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Mount Vernon T3 138/69 kV Transformer",
+    "native_id": "15991",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 5,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Vigo 69/12 kV Distribution Substation",
+    "native_id": "15998",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 6,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "9 Mile SW STA – Pine River 69kV (6921/23) Line Rebuild",
+    "native_id": "16496",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 7,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ashland to Ironwood 88kV",
+    "native_id": "18008",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 8,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Hunters Creek - Stratford 120 kV Line",
+    "native_id": "18201",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 9,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Airport - WDHVN Tap 120 kV Sag Remediation",
+    "native_id": "18208",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 10,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Bingham - Cornell 138 kV",
+    "native_id": "20015",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 11,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cloquet Substation Modernization",
+    "native_id": "20087",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 12,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "133 Line Rebuild",
+    "native_id": "22285",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 13,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "24 Line Upgrade",
+    "native_id": "22286",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 14,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Cat 1 138 kV substation",
+    "native_id": "22877",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 15,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Cat Mossville 138 kV substation",
+    "native_id": "22879",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 16,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:22953",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Expand Wildwood 345/138 kV substation",
+    "native_id": "22953",
+    "row": 17,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:23066",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Point Prairie 161 kV ring bus",
+    "native_id": "23066",
+    "row": 18,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pine – Skanawan Tap – Eastom 115kV (I-9), OPGW Addition & Partial Rebuild",
+    "native_id": "23841",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 19,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Presque Isle SS Breaker and Relay Asset Renewal",
+    "native_id": "24981",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 20,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greenville McCord-S. Centralia 138 kV Rebuild",
+    "native_id": "24988",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 21,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Monroe - Verona 69 kV (Y-42/Y-208), Rebuild & OPGW",
+    "native_id": "25001",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 22,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Lake Geneva - Walworth 69 kV (Y-41), Partial Rebuild & OPGW",
+    "native_id": "25002",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 23,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South Lake Geneva - North Lake Geneva 69 kV (Y-152), Partial Rebuild & OPGW",
+    "native_id": "25004",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 24,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gran Grae - Hillside 69 kV (Y-161), Rebuild & OPGW",
+    "native_id": "25019",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 25,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lost Dauphin - Oak St 69 kV (E-31), Partial Rebuild",
+    "native_id": "25020",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 26,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Coles Wind (J2128) Wayward 345 kV Substation",
+    "native_id": "25121",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 27,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Dover 138 kV substation",
+    "native_id": "25192",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 28,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Verndale Modernization",
+    "native_id": "25255",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 29,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Port Calcite-Rockport 138 kV Station - Generator Interconnection J1914 - Network Upgrades (150 MW)",
+    "native_id": "25409",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 30,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Newton 138 kV Substation - Generation Interconnection J1916 - Network Upgrade (100 MW)",
+    "native_id": "25426",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 31,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Newton 138 kV Substation - Generator Interconnection J1916 - TOIF (100 MW)",
+    "native_id": "25451",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 32,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:25474",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MDU MTEP23 Generator Deliverability Upgrades",
+    "native_id": "25474",
+    "row": 33,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Nelson Road-Kenowa 345 kV station - Generator Interconnection J1918 - TOIF (132 MW)",
+    "native_id": "25476",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 34,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Port Calcite-Rockport Station - Generator Interconnection J1914 - TOIF (150 MW)",
+    "native_id": "25477",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 35,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Nelson Road-Kenowa 345 kV station - Generator Interconnection J1918 - Network Upgrades (132 MW)",
+    "native_id": "25488",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 36,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "W. Hattiesburg - N. Hattiesburg Loop Line",
+    "native_id": "25493",
+    "reason": "outside F46 states (MS)",
+    "row": 37,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New 138 kV Station - Generator Interconnection J2815 - Network Upgrades (140 MW)",
+    "native_id": "50015",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 38,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New 138 kV Station - Generator Interconnection J2815 - TOIF (140 MW)",
+    "native_id": "50016",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 39,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New San Jose Solar (J1653) 138 kV Interconnection",
+    "native_id": "50046",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 40,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Hercules Solar (J1626) 138 kV Interconnection",
+    "native_id": "50053",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 41,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50054",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Bollinger County Solar 345 kV Ring Bus Substation (J1519)",
+    "native_id": "50054",
+    "row": 42,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50055",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Reform Solar Odyssey 345 kV Ring Bus (J1836)",
+    "native_id": "50055",
+    "row": 43,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Shockey (J1831) 138 kV Interconnection",
+    "native_id": "50076",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 44,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New ADM North (J1839) 138 kV Interconnection",
+    "native_id": "50078",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 45,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Bureau (J1755) 138 kV Interconnection",
+    "native_id": "50080",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 46,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Leghorn (J1677) 345 kV Interconnection",
+    "native_id": "50083",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 47,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New San Jose Rail (J1725) 138 kV Interconnection",
+    "native_id": "50085",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 48,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Camp Creek Wind (J1701) 138 kV Substation",
+    "native_id": "50114",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 49,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Geranium Solar (J1712) 345 kV Interconnection",
+    "native_id": "50116",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 50,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Cumberland Road South Solar (J1744) 138 kV Interconnection",
+    "native_id": "50117",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 51,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Columbia SS Power Transformer Asset Renewal",
+    "native_id": "50122",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 52,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dam Heights - Kirkwood 69 kV (Y-75), Partial Rebuild",
+    "native_id": "50131",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 53,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Riverside (ALTE) - Erdman 69 kV (Y-82/X-64/X-37), Partial Rebuild & OPGW",
+    "native_id": "50132",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 54,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Zenda - Katzenberg 69 kV (Y-51 ALE), Partial Rebuild",
+    "native_id": "50133",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 55,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50177",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Castle Bluff Energy Center Meramec 138 kV connection (R1047)",
+    "native_id": "50177",
+    "row": 56,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Small Capital Project and Asset Renewal Program 2027",
+    "native_id": "50179",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 57,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Communications Reliability Program 2027",
+    "native_id": "50180",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 58,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line Clearance Mitigation Program 2027",
+    "native_id": "50181",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 59,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Load Interconnection Program 2027",
+    "native_id": "50182",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 60,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine - St. Rita 138 kV (8531), Rebuild",
+    "native_id": "50509",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 61,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50522",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Replace Labadie 345 kV 3-4 bus tie switches",
+    "native_id": "50522",
+    "row": 62,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dam Heights – Sauk City Oak St 69 kV (Y-14), Partial Rebuild & OPGW",
+    "native_id": "50537",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 63,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Battle Creek-Oneida - J2098 Generator Interconnection (Oxby) - TOIF",
+    "native_id": "50595",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 64,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Battle Creek-Oneida - J2098 Generator Interconnection (Oxby) - Network Upgrades",
+    "native_id": "50596",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 65,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Byron J1124 345kV Interconnection",
+    "native_id": "50605",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 66,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rutland J1566 161kV Interconnection",
+    "native_id": "50606",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 67,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Otto Area Rebuild",
+    "native_id": "50609",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 68,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Transmission Line Pole Replacement 2026",
+    "native_id": "50618",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 69,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Portage Street Breaker and SCADA Asset Renewal",
+    "native_id": "50620",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 70,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Bloomington NE 69/12 kV Substation",
+    "native_id": "50621",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 71,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Columbia - Portage 69 kV (Y-99), Partial Rebuild",
+    "native_id": "50627",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 72,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "R1041 Generator Interconnection - TOIF",
+    "native_id": "50630",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 73,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuilds on 138 kV from Diamond Core Load Addition (RECC Territory)",
+    "native_id": "50633",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 74,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Aviation - North Fond Du Lac 138 kV (G-111), Partial Rebuild",
+    "native_id": "50634",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 75,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Concord SS Breaker and Relay Asset Renewal",
+    "native_id": "50635",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 76,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "I-61/Q-43 69 kV Partial Rebuilds & OPGW",
+    "native_id": "50638",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 77,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sun Prairie - Highway 151, Fiber Installation",
+    "native_id": "50639",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 78,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Old Mead Road to Masonville, Underground Fiber Installation",
+    "native_id": "50640",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 79,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Iron Grove to Lincoln Ave (UPPCO) 69 kV (CRFY21), OPGW Installation",
+    "native_id": "50641",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 80,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Erdman - Edgewater 69 kV (Y-31), Partial Rebuild",
+    "native_id": "50645",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 81,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "3 Mile - 9 Mile 69 kV (ESE_6903/ESE_6902/ESE_6901), Rebuild and Reconfigure",
+    "native_id": "50648",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 82,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "East Campus - Blount 69 kV (6906), Replace Underground Cable",
+    "native_id": "50649",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 83,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Berlin - Ripon 69 kV (Y-93), Partial Rebuild",
+    "native_id": "50650",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 84,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South Beaver Dam - Columbus (ALTE) 69 kV (Y-21), Partial Rebuild",
+    "native_id": "50651",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 85,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Glenview - Lost Dauphin 69 kV (F-6), Partial Rebuild",
+    "native_id": "50652",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 86,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Mullet River - Sheboygan Falls 69 kV (Y-50), Rebuild",
+    "native_id": "50653",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 87,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Maplewood - Badger 138 kV (W-75), Rebuild",
+    "native_id": "50654",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 88,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hiawatha SS Control Building, Relays and Breaker Ends Asset Renewal",
+    "native_id": "50657",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 89,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lone Rock SS Phase Shifter, Breaker, and Relay Asset Renewals",
+    "native_id": "50658",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 90,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Madison 69kV SS Power Transformer and Breaker Asset Renewal",
+    "native_id": "50659",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 91,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Nordic SS Power Transformer Asset Renewal",
+    "native_id": "50660",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 92,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fitchburg SS Control Building, Relay, Breaker and Remote Ends Asset Renewal",
+    "native_id": "50661",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 93,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Plains SS Relay, Instrument Transformers and Breaker Asset Renewal",
+    "native_id": "50662",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 94,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mayville SS Control Building, Relays and Breaker Asset Renewal",
+    "native_id": "50663",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 95,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rio Pumping Station SS Control Building, Relay and Breaker Asset Renewal",
+    "native_id": "50664",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 96,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huiskamp SS Control Building and Relay Asset Renewal",
+    "native_id": "50665",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 97,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sigel SS Control Building and Relay Asset Renewal",
+    "native_id": "50666",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 98,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Forsyth SS Breaker and Relay Asset Renewal",
+    "native_id": "50668",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 99,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Manitowoc Area SS Relay Asset Renewal",
+    "native_id": "50669",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 100,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "St Martins - Oak Creek 138kV, reconfigure facilities to form new network line",
+    "native_id": "50672",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 101,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hat Trick Feeder Addition",
+    "native_id": "50674",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 102,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Lake SS Switch, Relay and Remote Ends Asset Renewal",
+    "native_id": "50676",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 103,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Shingleton - Seney (UPPCO) 69 kV (Inland), Rebuild",
+    "native_id": "50677",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 104,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Kansas (Norwich Term) - Harbor 138 kV (KANG41), Replace Underground Cable",
+    "native_id": "50681",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 105,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mukwonago - University 138 kV (UNIG52), Rebuild",
+    "native_id": "50682",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 106,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ESE_6903 East Riser - ESE_6903 West Riser 69 kV (ESE_6903), Replace Underground Cable",
+    "native_id": "50684",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 107,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Str 0707E1300 39/21, 4T - Timberlane Tap 69 kV (6927), Replace Underground Cable",
+    "native_id": "50688",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 108,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Aspen - Crystal Falls 69 kV (ASPY51), Partial Rebuild",
+    "native_id": "50689",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 109,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pulliam SW YD - Maplewood 138 kV (X-76/MSNG41/D-82), Rebuild",
+    "native_id": "50690",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 110,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Badger West 69kV 20ohm Series Reactor",
+    "native_id": "50692",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 111,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Antioch 345 kV Station and Load",
+    "native_id": "50700",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 112,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hubbard - Spring Brook 69 kV (Y-168), Rebuild",
+    "native_id": "50703",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 113,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Concord - Crawfish River 138 kV (9043), Rebuild",
+    "native_id": "50704",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 114,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crawfish River - Jefferson 138 kV (6654), Rebuild",
+    "native_id": "50705",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 115,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jefferson - Fort Atkinson 138 kV (6631), Rebuild",
+    "native_id": "50706",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 116,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Forward Energy Center - Butternut 138 kV (33542), Partial Rebuild",
+    "native_id": "50707",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 117,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South Fond du Lac - Forward Energy Center 138 kV (X-96), Rebuild",
+    "native_id": "50708",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 118,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South Fond Du Lac - Str 127484 69 kV (Y-25), Partial Rebuild",
+    "native_id": "50709",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 119,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwinn - Munising 69 kV (Autrain), Partial Rebuild",
+    "native_id": "50712",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 120,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mount Olive to Cargas 500 kV Project and Load Addition",
+    "native_id": "50713",
+    "reason": "outside F46 states (LA)",
+    "row": 121,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Morris St SS, DIC, Substation Rebuild",
+    "native_id": "50714",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 122,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Southwest Arkansas 345 kV",
+    "native_id": "50715",
+    "reason": "outside F46 states (AR)",
+    "row": 123,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodview Lane SS, DIC, New Substation",
+    "native_id": "50716",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 124,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "GoodHue SS, DIC, New Substation",
+    "native_id": "50717",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 125,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50721",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "East Kanesville 161 kV Substation & 161 kV Lines",
+    "native_id": "50721",
+    "row": 126,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "R1053 Oak Creek/Elm Road SS, Interconnection Facilities and Network Upgrades",
+    "native_id": "50726",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 127,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "R1040 Generator Replacement - TOIF",
+    "native_id": "50729",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 128,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cortland 120 kV Station Expansion",
+    "native_id": "50730",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 129,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50732",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Leemon 69 KV substation for load addition",
+    "native_id": "50732",
+    "row": 130,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New RECC Load Addition at Mogul 345 kV substation (Phase 2)",
+    "native_id": "50735",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 131,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Load Addition at Austin 345 kV substation",
+    "native_id": "50736",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 132,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50737",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Load Addition at New Elkhorn 345 kV substation (Elkhorn Phase 2)",
+    "native_id": "50737",
+    "row": 133,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50738",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Load Addition at New Yoshi 345 kV substation",
+    "native_id": "50738",
+    "row": 134,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Nelson Dewey SS 161kV, 161/138kV Transformer Addition",
+    "native_id": "50739",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 135,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Bayou 230 kV Station",
+    "native_id": "50740",
+    "reason": "outside F46 states (LA)",
+    "row": 136,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50741",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Montgomery 345 kV Temporary Tap (Elkhorn Phase 1)",
+    "native_id": "50741",
+    "row": 137,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50743",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Elkhorn 280 MVAR Cap Bank",
+    "native_id": "50743",
+    "row": 138,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Juban Trails (DEMCO) 230 kV Station",
+    "native_id": "50744",
+    "reason": "outside F46 states (LA)",
+    "row": 139,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Physical Security Program 2026 Asset Renewal",
+    "native_id": "50745",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 140,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "1803 - 2025 Age and Condition Program",
+    "native_id": "50746",
+    "reason": "outside F46 states (LA)",
+    "row": 141,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Sub 138kV Sub Fish Lake",
+    "native_id": "50747",
+    "reason": "outside F46 states (TX)",
+    "row": 142,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Nucor Steel 345 kV CBs and Relays",
+    "native_id": "50748",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 143,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Prescott 345/69 kV Bank 2 addition",
+    "native_id": "50749",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 144,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Mendota SS, DIC, New Substation",
+    "native_id": "50756",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 145,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rest Lake - Presque Isle Upgrades",
+    "native_id": "50761",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 146,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Magazine – Portage St., New 69 kV Line",
+    "native_id": "50767",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 147,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Uprate Sunnyside Autotransformer 345/138/34.5 kV",
+    "native_id": "50768",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 148,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Babbitt 115kV Project",
+    "native_id": "50769",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 149,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Western UP Reliability Project",
+    "native_id": "50770",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 150,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50771",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Big Hollow CTG Energy Center interconnection (R1057)",
+    "native_id": "50771",
+    "row": 151,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50772",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Big Hollow BESS Energy Center Connection (R1058)",
+    "native_id": "50772",
+    "row": 152,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Moro-Laclede NTP 478 MVA MPFCA 138 kV Line",
+    "native_id": "50773",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 153,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Four Creeks Wind (J2275) Wells 345 kV Ring Bus Switching Station",
+    "native_id": "50774",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 154,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50775",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Linn County 620 MW Load Addition",
+    "native_id": "50775",
+    "row": 155,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50776",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Macon County Solar Plainview 161 kV Ring Bus (J2050)",
+    "native_id": "50776",
+    "row": 156,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Transmission Line Pole Replacement 2027",
+    "native_id": "50777",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 157,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hillman - Falcon - Darlington 138 kV (X-14/X-101), Double Circuit Rebuild",
+    "native_id": "50778",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 158,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Riddle 230 kV Station and Line Upgrade",
+    "native_id": "50779",
+    "reason": "outside F46 states (LA)",
+    "row": 159,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Glencoe",
+    "native_id": "50780",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 160,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Guion South 345/138/13.75 kV Autotransformer",
+    "native_id": "50789",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 161,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Expand Blue Bluff 138 kV switchyard",
+    "native_id": "50790",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 162,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50791",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Project Point 345 kV BAAH substation",
+    "native_id": "50791",
+    "row": 163,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Ralston 138 kV Delivery Point",
+    "native_id": "50792",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 164,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "JNEC- Kirbyville to Entergy-Fawil 138kV Project",
+    "native_id": "50793",
+    "reason": "outside F46 states (TX)",
+    "row": 165,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Uprate Guion to Whitestown 345 kV-09",
+    "native_id": "50795",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 166,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50796",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Repair Wittenberg 138 kV Switching Station Access Road",
+    "native_id": "50796",
+    "row": 167,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50797",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Remediate Grand Tower 138 kV Foundation Erosion",
+    "native_id": "50797",
+    "row": 168,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Disco 138/69 kV Transformer",
+    "native_id": "50798",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 169,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Rock Creek 69 kV Capacitor Bank",
+    "native_id": "50799",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 170,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Allen Tap-Allen 69 kV Line",
+    "native_id": "50800",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 171,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Quaker 69 kV Breaker Station",
+    "native_id": "50802",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 172,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Kampsville-Carrollton 69 kV Line",
+    "native_id": "50803",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 173,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Smithfield 69 kV Breaker Station",
+    "native_id": "50804",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 174,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Hopewell 138/69 kV Substation and Lines",
+    "native_id": "50805",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 175,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Pearl Tap-Smith Jct. W. 69 kV Line",
+    "native_id": "50806",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 176,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Pearl Tap-Pearl 69 kV Line",
+    "native_id": "50807",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 177,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Barry-E. Hannibal 69 kV Line",
+    "native_id": "50808",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 178,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Winchester-Wolf Run 69 kV Line",
+    "native_id": "50809",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 179,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Atlas-Pearl 69 kV Line",
+    "native_id": "50810",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 180,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild El Dara BKR-Atlas 69 kV Line",
+    "native_id": "50811",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 181,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Y58 Oak Grove - Gateway 69 kV Line",
+    "native_id": "50812",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 182,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace 138 kV Breakers at Northeast Substation",
+    "native_id": "50813",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 183,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Y53 East Industrial - Heidelbach 69 kV Line",
+    "native_id": "50814",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 184,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mankato Area 115kV Rebuilds",
+    "native_id": "50815",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 185,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Yellow River Substation Rebuild",
+    "native_id": "50816",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 186,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brainerd Cap Bank Replacement",
+    "native_id": "50817",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 187,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Angel Mounds 69 kV Capacitor Bank",
+    "native_id": "50818",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 188,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arden Hills - Lexington Rebuild",
+    "native_id": "50819",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 189,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Douglas County 115kV Cap Bank Replacement",
+    "native_id": "50820",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 190,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Koch Cap Bank Replacement",
+    "native_id": "50821",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 191,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Stacer Road 138/12 kV Distribution Substation",
+    "native_id": "50822",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 192,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lester Prairie Area Substation",
+    "native_id": "50823",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 193,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Black Dog - Burnsville 115kV Rebuild",
+    "native_id": "50825",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 194,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Old State 69/12 kV Distribution Substation",
+    "native_id": "50826",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 195,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Maynard TR1 Replacement",
+    "native_id": "50827",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 196,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade AB Brown 138 kV - Breaker Repl. - 63kA",
+    "native_id": "50828",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 197,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Z85 Culley to Warrick North 138 kV Line",
+    "native_id": "50829",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 198,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Y65/66 69 kV Line",
+    "native_id": "50830",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 199,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Catawba Area Substation",
+    "native_id": "50831",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 200,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50832",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "DMAT North 345 kV Substation and line taps",
+    "native_id": "50832",
+    "row": 201,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Uprate Merom to Worthington 345 kV Terminal",
+    "native_id": "50833",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 202,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50834",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Clarinda 69 kV Terminal Upgrade",
+    "native_id": "50834",
+    "row": 203,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50835",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Carroll South 69 kV Terminal Uprate",
+    "native_id": "50835",
+    "row": 204,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50836",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Norwalk-Winterset 161 kV Line Uprate",
+    "native_id": "50836",
+    "row": 205,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eau Claire - Sterling 69kV structure replacement",
+    "native_id": "50837",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 206,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Southtown Substation ELR Upgrade",
+    "native_id": "50838",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 207,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Baxter-Warren 230kV Line",
+    "native_id": "50839",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 208,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mondovi Substation",
+    "native_id": "50840",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 209,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Navarre-DBGEN Tap-Waterman 230kV Line",
+    "native_id": "50841",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 210,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Waterman Transformer #201",
+    "native_id": "50842",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 211,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cashton Substation Rebuild",
+    "native_id": "50843",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 212,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Wayne Transformer #304 345-230kV",
+    "native_id": "50844",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 213,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Black Dog - Southtown 115kV Rebuild",
+    "native_id": "50845",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 214,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wilmarth - Franklin 115kV Upgrade",
+    "native_id": "50846",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 215,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Jamestown East 69/12kV substation",
+    "native_id": "50847",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 216,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Brownstown Transformer #302 345-230kV",
+    "native_id": "50848",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 217,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Decommission Trenton Channel East Mat",
+    "native_id": "50849",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 218,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild HE Willard Green Jct to HE Rocklane Jct 69 kV line",
+    "native_id": "50850",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 219,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Toll Road - Vital 120kV Line",
+    "native_id": "50851",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 220,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Swan Creek - Toll Road 120kV Line",
+    "native_id": "50852",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 221,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50853",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Booneville: Retire 13 kV Reactors",
+    "native_id": "50853",
+    "row": 222,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bird Island - Minnesota Valley 69kV Rebuild",
+    "native_id": "50854",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 223,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Dorset - Milan 120kV Line",
+    "native_id": "50855",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 224,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eau Claire - Truax 69kV Rebuild",
+    "native_id": "50856",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 225,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Zumbrota Area Distribution Substation",
+    "native_id": "50857",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 226,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Rockport Position 177 & 188 138 kV Equipment",
+    "native_id": "50858",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 227,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Polaris-Diesel 120kV Line Drop",
+    "native_id": "50859",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 228,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Red Cedar - DC Redundancy",
+    "native_id": "50860",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 229,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eau Claire - DC Redundancy",
+    "native_id": "50861",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 230,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stone Lake - DC Redundancy",
+    "native_id": "50862",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 231,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tremval - DC Redundancy",
+    "native_id": "50863",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 232,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Long Lake - DC Redundancy",
+    "native_id": "50864",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 233,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gleason Lake - DC Redundancy",
+    "native_id": "50865",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 234,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fort Ridgely - DC Redundancy",
+    "native_id": "50866",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 235,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eliminate Sag and Upgrade YOST-POLARIS-DIESEL 120kV Lines",
+    "native_id": "50867",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 236,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eastwood - DC Redundancy",
+    "native_id": "50868",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 237,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Bloomfield - Sunbird 120 kV",
+    "native_id": "50869",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 238,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Colvill - DC Redundancy",
+    "native_id": "50870",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 239,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cherry Creek - DC Redundancy",
+    "native_id": "50871",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 240,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lake Yankton - DC Redundancy",
+    "native_id": "50872",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 241,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Willmar - Litchfield - Forest City - Hutchinson Rebuild and 115 kV Conversion",
+    "native_id": "50873",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 242,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wilmarth - DC Redundancy",
+    "native_id": "50874",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 243,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Medford Area Projects",
+    "native_id": "50875",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 244,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Boulder Lake 115 kV Project",
+    "native_id": "50876",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 245,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pillsbury Area Projects",
+    "native_id": "50877",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 246,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Nobles - DC Redundancy",
+    "native_id": "50878",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 247,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50879",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Grant - Mitchell 115kV Rebuild",
+    "native_id": "50879",
+    "row": 248,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50880",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Cherry Creek - Grant 115kV Rebuild",
+    "native_id": "50880",
+    "row": 249,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Lake TR1 Replacement",
+    "native_id": "50881",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 250,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Breakers and Relays Program - MTEP26",
+    "native_id": "50882",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 251,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Pole and Insulator Program - MTEP26",
+    "native_id": "50883",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 252,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50884",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Upgrade Saunders 345/69kV substation (Phase 2)",
+    "native_id": "50884",
+    "row": 253,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New CADC 138 kV Ring bus",
+    "native_id": "50885",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 254,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Calhoun - Stable 138 kV line",
+    "native_id": "50888",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 255,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New 120 kV Substation - Conner Load Interconnection",
+    "native_id": "50890",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 256,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50891",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Replace Marshall 138 kV Aging Infrastructure",
+    "native_id": "50891",
+    "row": 257,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install New St.Antoine - Waterman 120kV Circuit",
+    "native_id": "50892",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 258,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Couch - Lewisville 115kV Uprate",
+    "native_id": "50893",
+    "reason": "outside F46 states (AR)",
+    "row": 259,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Frazier Pike 115kV Add Breakers and Capacitor Banks",
+    "native_id": "50894",
+    "reason": "outside F46 states (AR)",
+    "row": 260,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2027 EAL Asset Renewal Program",
+    "native_id": "50895",
+    "reason": "outside F46 states (AR)",
+    "row": 261,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Remediate Sag on Chopin - White Rd - Aphis 138 kV",
+    "native_id": "50896",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 262,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Galla Creek 161kV: Build new substation",
+    "native_id": "50897",
+    "reason": "outside F46 states (AR)",
+    "row": 263,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Remediate Sag on Delhi - Green 138 kV",
+    "native_id": "50898",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 264,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Remediate Sag on College - Green 138 kV",
+    "native_id": "50899",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 265,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Franklin 230 kV sub 69 kV Breaker and Relay",
+    "native_id": "50901",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 266,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Columbus Denois Crk 230 kV Ring Bus",
+    "native_id": "50902",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 267,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Relace Spencer 230 kV substation Relay",
+    "native_id": "50903",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 268,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Deedsville 69 kV to Wabash West Jct 69 kV line - 6925 ckt.",
+    "native_id": "50904",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 269,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Wabash 138 kV to Lagro Jct 69 kV line - 6921 ckt.",
+    "native_id": "50905",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 270,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Bringhurst to Deer Creek Jct 69 kV line - 6988 ckt.",
+    "native_id": "50906",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 271,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Battle Ground to TETC Jct 69 kV line - 61888 ckt.",
+    "native_id": "50907",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 272,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Tab Jct to Marshfield 69 kV line - 6936 ckt.",
+    "native_id": "50908",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 273,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Relocate Garfield substation",
+    "native_id": "50909",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 274,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brinkley East 230/115kV Transformer Upgrade",
+    "native_id": "50910",
+    "reason": "outside F46 states (AR)",
+    "row": 275,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Relocate Petoskey substation",
+    "native_id": "50912",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 276,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Cedar Springs to Pierson Junction 69 kV line to 138 kV capability",
+    "native_id": "50914",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 277,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Grawn - Lake Ann 69 kV line to 138 kV capability",
+    "native_id": "50915",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 278,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Fountain Tap 69 kV Radial to 138 kV capability",
+    "native_id": "50916",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 279,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Weare - Crystal Valley Junction 69 kV line to 138 kV capability",
+    "native_id": "50917",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 280,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Riverton Tap 69 kV Radial to 138 kV capability",
+    "native_id": "50918",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 281,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Victory - Victory Junction 69 kV line to 138 kV capability",
+    "native_id": "50919",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 282,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Stevenson Tap 69 kV Radial to 138 kV capability",
+    "native_id": "50920",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 283,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reconfigure Atlanta substation",
+    "native_id": "50921",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 284,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Nelson Lake 230 kV interconnections",
+    "native_id": "50922",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 285,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Franklin to Redwood Rebuild Part 1",
+    "native_id": "50923",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 286,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Franklin to Redwood Rebuild Part 2",
+    "native_id": "50924",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 287,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Circle Lake to Faribault Line Rebuild Projects",
+    "native_id": "50925",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 288,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sleepy Eye tap Line rebuild Projects",
+    "native_id": "50926",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 289,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2027 EML Asset Renewal Program",
+    "native_id": "50927",
+    "reason": "outside F46 states (MS)",
+    "row": 290,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S. Grenada - Elliott 115kV Line Rebuild",
+    "native_id": "50928",
+    "reason": "outside F46 states (MS)",
+    "row": 291,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2027 ELL Asset Renewal",
+    "native_id": "50929",
+    "reason": "outside F46 states (LA)",
+    "row": 292,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Deerfield 230kV: Build New Sub",
+    "native_id": "50930",
+    "reason": "outside F46 states (MS)",
+    "row": 293,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2027 Entergy New Orleans Asset Renewal",
+    "native_id": "50931",
+    "reason": "outside F46 states (LA)",
+    "row": 294,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2027 ETI Asset Renewal",
+    "native_id": "50932",
+    "reason": "outside F46 states (TX)",
+    "row": 295,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Paulson area projects",
+    "native_id": "50933",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 296,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Carlyss 230 kV SPOF",
+    "native_id": "50934",
+    "reason": "outside F46 states (LA)",
+    "row": 297,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Benton County 230 kV Breaker Replacement",
+    "native_id": "50935",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 298,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Carlyss 230-138 kV Autotransformer Upgrade",
+    "native_id": "50936",
+    "reason": "outside F46 states (LA)",
+    "row": 299,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Coly 500 kV GIS Bus replacement",
+    "native_id": "50937",
+    "reason": "outside F46 states (LA)",
+    "row": 300,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Peary Area Rebuild Projects",
+    "native_id": "50938",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 301,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jaguar 230 kV GIS Replacement",
+    "native_id": "50939",
+    "reason": "outside F46 states (LA)",
+    "row": 302,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McKnight 500 kV GIS Replacement",
+    "native_id": "50940",
+    "reason": "outside F46 states (LA)",
+    "row": 303,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Foley Sub Area Projects",
+    "native_id": "50941",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 304,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Holiday to Billeaud 69 kV Upgrade",
+    "native_id": "50942",
+    "reason": "outside F46 states (LA)",
+    "row": 305,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50943",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Kingston Substation Interconnection",
+    "native_id": "50943",
+    "row": 306,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "SLEMCO Dassas (Scott Area) 138 kV Station",
+    "native_id": "50944",
+    "reason": "outside F46 states (LA)",
+    "row": 307,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sterlington 500 kV GIS Replacement",
+    "native_id": "50945",
+    "reason": "outside F46 states (LA)",
+    "row": 308,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Thibodaux 230 kV Reactive Support",
+    "native_id": "50946",
+    "reason": "outside F46 states (LA)",
+    "row": 309,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tiger 230 kV SPOF",
+    "native_id": "50947",
+    "reason": "outside F46 states (LA)",
+    "row": 310,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50948",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Hazleton 69kV Capacitor Addition",
+    "native_id": "50948",
+    "row": 311,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Conroe 230 kV Autotransformer and Line Rebuild",
+    "native_id": "50949",
+    "reason": "outside F46 states (TX)",
+    "row": 312,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50950",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Traer Transformer Replacement",
+    "native_id": "50950",
+    "row": 313,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Springfield Load Addition",
+    "native_id": "50951",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 314,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Thompson Lake Area Projects",
+    "native_id": "50952",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 315,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dairyland to Summit Area Projects",
+    "native_id": "50953",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 316,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lewis Creek to Lacon 138 kV Upgrade",
+    "native_id": "50954",
+    "reason": "outside F46 states (TX)",
+    "row": 317,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "May Switch Replacement",
+    "native_id": "50955",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 318,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Millbend 138 kV Capacitor Bank",
+    "native_id": "50956",
+    "reason": "outside F46 states (TX)",
+    "row": 319,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Neches to Viway 138 kV Station Equipment Upgrade",
+    "native_id": "50957",
+    "reason": "outside F46 states (TX)",
+    "row": 320,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50958",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "SCADA Controlled Motor Operated Switch Addition blanket",
+    "native_id": "50958",
+    "row": 321,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stowell 138-69 kV Autotransformer Upgrade",
+    "native_id": "50959",
+    "reason": "outside F46 states (TX)",
+    "row": 322,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hugo Switch Retirement",
+    "native_id": "50960",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 323,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Legend to Sandling 230 kV Lines Rebuild",
+    "native_id": "50961",
+    "reason": "outside F46 states (TX)",
+    "row": 324,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "China 230 kV Station Reconfigure",
+    "native_id": "50962",
+    "reason": "outside F46 states (TX)",
+    "row": 325,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cypress 500/230/138 kV SPOF",
+    "native_id": "50963",
+    "reason": "outside F46 states (TX)",
+    "row": 326,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50964",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Load Interconnection Blanket",
+    "native_id": "50964",
+    "row": 327,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Kettle River Breaker Station Projects",
+    "native_id": "50965",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 328,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Spirit Lake to Opstead Area Projects",
+    "native_id": "50966",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 329,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Raywood to Pintail 138 kV Rebuild",
+    "native_id": "50967",
+    "reason": "outside F46 states (TX)",
+    "row": 330,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50968",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Asset Management Blanket",
+    "native_id": "50968",
+    "row": 331,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Zimmerman to Princeton Area Project",
+    "native_id": "50970",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 332,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blaine to Hugo Area Project",
+    "native_id": "50971",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 333,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sand Lake to Pike River Area Project",
+    "native_id": "50972",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 334,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blaine to Linwood Area Project",
+    "native_id": "50973",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 335,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Athens to Soderville Area Project",
+    "native_id": "50974",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 336,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hubbard Breaker Addition",
+    "native_id": "50976",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 337,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50977",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Replace New Bourbon 138 kV/69 kV transformer #1",
+    "native_id": "50977",
+    "row": 338,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reconstruction of Transmission - Erie Rd Sub to Xcel Lyon County Sub",
+    "native_id": "50978",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 339,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McLeod 230/115 kV Relay Upgrades",
+    "native_id": "50981",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 340,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Caledonia Area 69 kV Rebuild",
+    "native_id": "50983",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 341,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cedar Mills Switch Replacement",
+    "native_id": "50986",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 342,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rosendale Switch Replacement",
+    "native_id": "50987",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 343,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Spicer tap to Willmar line rebuild projects",
+    "native_id": "50988",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 344,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50991",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Hobart Lake 41.6 kV Line Reroute",
+    "native_id": "50991",
+    "row": 345,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Plummer 41.6 kV Line Rebuild",
+    "native_id": "50992",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 346,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dassel Tap Line Rebuild Projects",
+    "native_id": "50993",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 347,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Audubon 41.6 kV Line Rebuild",
+    "native_id": "50995",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 348,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Wilton - Bemidji 41.6 kV Line Rebuild",
+    "native_id": "50996",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 349,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50998",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP St. Thomas 41.6 kV Line Recloser",
+    "native_id": "50998",
+    "row": 350,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:50999",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Leland to Forest City N43 69 kV Rebuild",
+    "native_id": "50999",
+    "row": 351,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51000",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Browns Valley 41.6 kV Line Recloser",
+    "native_id": "51000",
+    "row": 352,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51001",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Pickert Reactor Retirement",
+    "native_id": "51001",
+    "row": 353,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Leland to Twin Lakes N40 69 kV Rebuild",
+    "native_id": "51003",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 354,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Delano to Crow River Area Project",
+    "native_id": "51004",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 355,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Delano to Elk River Area Project",
+    "native_id": "51006",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 356,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Loyal to T-Corners N45 69 kV Rebuild",
+    "native_id": "51008",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 357,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Oakdale to Babcock N55 69 kV Rebuild",
+    "native_id": "51009",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 358,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51012",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Decorah to Nordness N8 69 kV Rebuild",
+    "native_id": "51012",
+    "row": 359,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bell Center to Gays Mills 69 kV Rebuild",
+    "native_id": "51013",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 360,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Apple River Transformers Upgrade",
+    "native_id": "51015",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 361,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Airport - Mio Dam 138 kV line",
+    "native_id": "51016",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 362,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Cornell - Tihart 138 kV line",
+    "native_id": "51017",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 363,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Asset Management Blanket",
+    "native_id": "51018",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 364,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Navarre Station Equipment",
+    "native_id": "51019",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 365,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Croton 138 kV station",
+    "native_id": "51020",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 366,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wabaco to CapX Q34 161 kV Rebuild",
+    "native_id": "51021",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 367,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Customer Interconnections - 2029",
+    "native_id": "51024",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 368,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Line Relocation - 2028",
+    "native_id": "51025",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 369,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Asset Replacement Program - 2028",
+    "native_id": "51026",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 370,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Customer Interconnections - 2029",
+    "native_id": "51028",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 371,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Line Relocation - 2028",
+    "native_id": "51029",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 372,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Asset Replacement Program - 2028",
+    "native_id": "51030",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 373,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Milner's Corner 69 kV Line",
+    "native_id": "51032",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 374,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New College Avenue 138/12 kV Substation",
+    "native_id": "51033",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 375,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Drake 69/12 kV Substation",
+    "native_id": "51035",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 376,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Bridge Creek 69/12 kV Substation",
+    "native_id": "51036",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 377,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Convert Elizaville 69 kV",
+    "native_id": "51037",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 378,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Carpenter/Princeton 2nd 69 kV Source",
+    "native_id": "51038",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 379,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Marco to Lawrence 69 kV Tie",
+    "native_id": "51039",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 380,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Fieldon 69/12 kV Substation",
+    "native_id": "51040",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 381,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Foundry 138/12 kV Substation",
+    "native_id": "51041",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 382,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Lebanon Industrial North 69/12 kV Substation",
+    "native_id": "51042",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 383,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New LEAP 345 kV Phase 1 Reactive Mitigation",
+    "native_id": "51043",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 384,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New McCordsville 2nd Bank",
+    "native_id": "51044",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 385,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Pioneer 138/12 kV Substation",
+    "native_id": "51046",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 386,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Walnut Ridge 138/12 kV Substation",
+    "native_id": "51047",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 387,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Falmouth 138/12 kV Substation",
+    "native_id": "51048",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 388,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Guthrie 34.5/12 kV Substation",
+    "native_id": "51049",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 389,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Thompson Lake to Remmele area projects",
+    "native_id": "51050",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 390,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Greensburg 138 kV Load Addition",
+    "native_id": "51051",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 391,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51052",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Castle Bluff BESS Energy Center connection (R1059)",
+    "native_id": "51052",
+    "row": 392,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Litchfield 115 kV Voltage Conversion",
+    "native_id": "51053",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 393,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Owatonna 161/69kV Transmission Expansion",
+    "native_id": "51055",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 394,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Remove SIPC Transmission Line - Wheeler Creek 138 kV",
+    "native_id": "51056",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 395,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ozaukee County, DIC, New Substations",
+    "native_id": "51057",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 396,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "1803 - 2026 Age and Condition Program",
+    "native_id": "51058",
+    "reason": "outside F46 states (LA)",
+    "row": 397,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "1803 - 2027 Age and Condition Program",
+    "native_id": "51059",
+    "reason": "outside F46 states (LA)",
+    "row": 398,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "BREC Ownership of DEHV Station 345 kV",
+    "native_id": "51062",
+    "reason": "outside F46 states (KY)",
+    "row": 399,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ANGIE 230/69KV SUBSTATION - 230KV LINE BREAKER ADDITIONS",
+    "native_id": "51063",
+    "reason": "outside F46 states (LA)",
+    "row": 400,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "HOLTON 115/69KV SUBSTATION - 115KV LINE BREAKER ADDITIONS AND 69KV BUS TIE BREAKER ADDITION",
+    "native_id": "51064",
+    "reason": "outside F46 states (LA)",
+    "row": 401,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "TALISHEEK 230KV LINE BREAKER ADDITIONS AND 69KV BUS TIE BREAKER ADDITION",
+    "native_id": "51065",
+    "reason": "outside F46 states (LA)",
+    "row": 402,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MOSS BLUFF TO LONGVILLE 69KV LOOP",
+    "native_id": "51066",
+    "reason": "outside F46 states (LA)",
+    "row": 403,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "LONGVILLE TO DERIDDER 69KV LOOP",
+    "native_id": "51067",
+    "reason": "outside F46 states (LA)",
+    "row": 404,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "DERIDDER TO EAST LEESVILLE 69KV LOOP",
+    "native_id": "51068",
+    "reason": "outside F46 states (LA)",
+    "row": 405,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "DERIDDER TO LUDINGTON 69KV REBUILD",
+    "native_id": "51069",
+    "reason": "outside F46 states (LA)",
+    "row": 406,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "EAST MANDEVILLE 230/69KV SUBSTATION",
+    "native_id": "51070",
+    "reason": "outside F46 states (LA)",
+    "row": 407,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ROCKY BRANCH TO MARION 115KV LOOP",
+    "native_id": "51071",
+    "reason": "outside F46 states (LA)",
+    "row": 408,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "1803/LAGT WATERLOO TO CLECO YELLOW BAYOU TRANSMISSION LOOP",
+    "native_id": "51073",
+    "reason": "outside F46 states (LA)",
+    "row": 409,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51074",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Halliday Sub-Killdeer Rebuild",
+    "native_id": "51074",
+    "row": 410,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Glendive River Crossing TL003-1/TL009-1",
+    "native_id": "51075",
+    "reason": "outside F46 states (MT)",
+    "row": 411,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wagon Wheel Substation",
+    "native_id": "51076",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 412,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Glenwood Capacitor Addition",
+    "native_id": "51077",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 413,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Kohlman Lake Switch Upgrade",
+    "native_id": "51078",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 414,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Project Raider Load Substation 345 kV",
+    "native_id": "51079",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 415,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "1803/LAGT/NELPCO PINEY WOODS SUBSTATION",
+    "native_id": "51080",
+    "reason": "outside F46 states (LA)",
+    "row": 416,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51085",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Green Hill Substation and Associated 345 kV Lines",
+    "native_id": "51085",
+    "row": 417,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Load on Existing HUC Plant 2 69 kV sub",
+    "native_id": "51086",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 418,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51087",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Indian Creek West 161 kV Substation & Associated Upgrades",
+    "native_id": "51087",
+    "row": 419,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Morgan County 345/69 kV Transmission Station and 69 kV Line",
+    "native_id": "51088",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 420,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Jennings County 161/69 kV Transmission Station and 69 kV Line",
+    "native_id": "51089",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 421,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New St.Joesph to Northside 138 kV Line and 138/12 kV Station",
+    "native_id": "51090",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 422,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51091",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MTEP26 Transmission Pole Replacement Program, 138kv-69kV, various locations.",
+    "native_id": "51091",
+    "row": 423,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Customer A 138 kV",
+    "native_id": "51092",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 424,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Gill 345 kV Station and 345 kV Lines",
+    "native_id": "51093",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 425,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hutchinson Rebuild and 115 kV Conversion",
+    "native_id": "51094",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 426,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Inverhills TR10",
+    "native_id": "51095",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 427,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pratt - Frazier Pike 115kV: New Transmission Line",
+    "native_id": "51097",
+    "reason": "outside F46 states (AR)",
+    "row": 428,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Alexandria, Big Stone South & Riverview Reactors",
+    "native_id": "51098",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 429,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Physical Security Program 2027 ISD Asset Renewal",
+    "native_id": "51099",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 430,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Physical Security Program 2028 ISD Asset Renewal",
+    "native_id": "51100",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 431,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51101",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Burlington Generation - Deeds 1 161kV Sag Remediation",
+    "native_id": "51101",
+    "row": 432,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51102",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Iowa Falls Industrial T4 Replacement",
+    "native_id": "51102",
+    "row": 433,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Westwood to LEAP 345 kV Lines",
+    "native_id": "51103",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 434,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51105",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebuild Citizens 69kV Line (Groups A & B)",
+    "native_id": "51105",
+    "row": 435,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51106",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebuild Citizens 69kV Line (Groups C & E)",
+    "native_id": "51106",
+    "row": 436,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51108",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Upgrade New Bourbon bus tie breaker (B40)",
+    "native_id": "51108",
+    "row": 437,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Mulligan Storage (S1048) Fogarty Surplus 138 kV Interconnection",
+    "native_id": "51110",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 438,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1851 115 kV Interconnection on Beekman to Crossett North 115 kV",
+    "native_id": "51111",
+    "reason": "outside F46 states (LA)",
+    "row": 439,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Townline Rd - Rock River 138 kV, Construct New Line",
+    "native_id": "51112",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 440,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51113",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade Montgomery 345 kV terminal equipment",
+    "native_id": "51113",
+    "row": 441,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51114",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Apply Pike – Peno Creek 161 kV E3X",
+    "native_id": "51114",
+    "row": 442,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "TPL-001-5.1 SPFs Phase 2, Address Remaining 13c and 13d",
+    "native_id": "51115",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 443,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1872 & J1873 MPFCA El Dorado 500kV Point of Interconnection",
+    "native_id": "51116",
+    "reason": "outside F46 states (AR)",
+    "row": 444,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Kincaid-Austin-4522 C1801 MPFCA 345 kV Line",
+    "native_id": "51117",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 445,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1870 GIA Interconnection at Independence 230 kV",
+    "native_id": "51118",
+    "reason": "outside F46 states (LA)",
+    "row": 446,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1646 IC Facilities",
+    "native_id": "51119",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 447,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "AECC Dell-500 Rebuild",
+    "native_id": "51120",
+    "reason": "outside F46 states (AR)",
+    "row": 448,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51122",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Southern Hills-Booneville 345 kV Line Uprate",
+    "native_id": "51122",
+    "row": 449,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New 300 MVAR Cap Bank at Truett 345 kV Substation",
+    "native_id": "51123",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 450,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sheffield Substation Battery and Trip Coil Monitoring",
+    "native_id": "51124",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 451,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "E0014 GIA at Smalling 230 kV",
+    "native_id": "51125",
+    "reason": "outside F46 states (LA)",
+    "row": 452,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2143 Lake Village Bagby 115kV Point of Interconnection",
+    "native_id": "51126",
+    "reason": "outside F46 states (AR)",
+    "row": 453,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2153 Ashley 115kV expansion",
+    "native_id": "51127",
+    "reason": "outside F46 states (AR)",
+    "row": 454,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51128",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Upgrade Sioux-Roxford 138 kV Lines",
+    "native_id": "51128",
+    "row": 455,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Project Benton",
+    "native_id": "51134",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 456,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Victor 138 kV Capacitor Bank",
+    "native_id": "51138",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 457,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51139",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade Baumgartner-Watson-1 138 kV Line",
+    "native_id": "51139",
+    "row": 458,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Hobart 345 kV Load Addition",
+    "native_id": "51141",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 459,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Schahfer 345 kV Load Addition",
+    "native_id": "51142",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 460,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51143",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Upgrade Wildwood-GraySummit-2 138 kV Line to 2000 Amps",
+    "native_id": "51143",
+    "row": 461,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "E0012 SS Network Upgrades and Interconnection Facilities",
+    "native_id": "51144",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 462,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Crossroads 345 kV Transmission Station and Load",
+    "native_id": "51145",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 463,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "CCS 115 kV Station",
+    "native_id": "51146",
+    "reason": "outside F46 states (MS)",
+    "row": 464,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bolton 115 kV Expand Station (J2173)",
+    "native_id": "51147",
+    "reason": "outside F46 states (MS)",
+    "row": 465,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Trail Creek 138 kV Load Addition",
+    "native_id": "51148",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 466,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Project Raider Cap Banks 69 kV",
+    "native_id": "51149",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 467,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1858 Sandy Bayou 500kV Point of Interconnection",
+    "native_id": "51150",
+    "reason": "outside F46 states (AR)",
+    "row": 468,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J4146 Generator Interconnection at Green Acres 230 kV",
+    "native_id": "51151",
+    "reason": "outside F46 states (MS)",
+    "row": 469,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Merom to Gill 345 kV Line addition",
+    "native_id": "51152",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 470,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2088 Nash Corner 500kV Switching Station Point of Interconnection",
+    "native_id": "51153",
+    "reason": "outside F46 states (AR)",
+    "row": 471,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McAdams 230 kV: Solar Interconnection (J1891)",
+    "native_id": "51154",
+    "reason": "outside F46 states (MS)",
+    "row": 472,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2181 Dearman 161kV Switching Station Point of Interconnection",
+    "native_id": "51155",
+    "reason": "outside F46 states (AR)",
+    "row": 473,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2165 230kV Interconnection on Jacinto to Batiste Creek 230 kV",
+    "native_id": "51156",
+    "reason": "outside F46 states (TX)",
+    "row": 474,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2237 Flat Fork 230kV Expansion for Point of Interconnection",
+    "native_id": "51158",
+    "reason": "outside F46 states (AR)",
+    "row": 475,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1897/J1899/J2190 Steel Grove 500kV SS Point of Interconnection",
+    "native_id": "51159",
+    "reason": "outside F46 states (AR)",
+    "row": 476,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2089 Wilson Junction 161kV SS Point of Interconnection",
+    "native_id": "51162",
+    "reason": "outside F46 states (AR)",
+    "row": 477,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Innovation Park SS, DIC, New Substation",
+    "native_id": "51163",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 478,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Station Equipment Upgrade - WILLOW RUN",
+    "native_id": "51164",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 479,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Shetek Substation",
+    "native_id": "51166",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 480,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Sag on Lark-Washtenaw Jct. 138 kV",
+    "native_id": "51167",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 481,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2261 & J2262 Campbell 500kV SS Point of Interconnection",
+    "native_id": "51168",
+    "reason": "outside F46 states (AR)",
+    "row": 482,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2075 230kV Interconnection on Batiste Creek to China 230 kV",
+    "native_id": "51169",
+    "reason": "outside F46 states (TX)",
+    "row": 483,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2228 115 kV Interconnection at Red Gum 115 kV",
+    "native_id": "51170",
+    "reason": "outside F46 states (LA)",
+    "row": 484,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1904 138 kV Interconnection at Richard 138 kV",
+    "native_id": "51171",
+    "reason": "outside F46 states (LA)",
+    "row": 485,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2292 230 kV Interconnection at Goos Ferry 230 kV",
+    "native_id": "51172",
+    "reason": "outside F46 states (LA)",
+    "row": 486,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2302 New 500 kV Switching stationPoint of Interconnection",
+    "native_id": "51173",
+    "reason": "outside F46 states (LA)",
+    "row": 487,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51174",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MidAmerican Energy Upgrades for MTEP 50775 Linn County 620 MW Load Addition",
+    "native_id": "51174",
+    "row": 488,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51175",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebuild Carbide Tap-Viele 161 kV line (JUA AECI/NE Power)",
+    "native_id": "51175",
+    "row": 489,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Stallings-Roxford-4581 345 kV Temporary Tap (Truett Phase 0.5)",
+    "native_id": "51177",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 490,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Load Addition at New Truett 345 kV Substation (Truett Phase 1)",
+    "native_id": "51178",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 491,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New 345 kV Lines for New Truett Load Addition (Truett Phase 2)",
+    "native_id": "51179",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 492,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1684 IC Facilities",
+    "native_id": "51181",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 493,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Rodemacher to East Leesville",
+    "native_id": "51182",
+    "reason": "outside F46 states (LA)",
+    "row": 494,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Sag on Aphis-Meyer 138 kV line",
+    "native_id": "51183",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 495,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Mud Lake - Verona #2 138 kV",
+    "native_id": "51185",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 496,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2317 115 kV interconnection on Sterlington - Bastrop 115 kV",
+    "native_id": "51187",
+    "reason": "outside F46 states (LA)",
+    "row": 497,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Council Creek SS Relay Asset Renewal",
+    "native_id": "51188",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 498,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Munising SS AR Asset Renewal",
+    "native_id": "51189",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 499,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1849 GIA at Cypress 230 kV Station",
+    "native_id": "51190",
+    "reason": "outside F46 states (TX)",
+    "row": 500,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51192",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Webster and Lehigh Substation Terminal Equipment Upgrades",
+    "native_id": "51192",
+    "row": 501,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Buffalo Power Station 2 Interconnection",
+    "native_id": "51193",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 502,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "East Shakopee Interconnection",
+    "native_id": "51194",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 503,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51195",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Project Diamond Farms Temporary Taps",
+    "native_id": "51195",
+    "row": 504,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51196",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New 345 kV Substation for Project Diamond Farms Load Addition",
+    "native_id": "51196",
+    "row": 505,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Creal Springs 69 kV Switchyard",
+    "native_id": "51197",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 506,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Yellow Banks 69 kV Switchyard Bay Expansion",
+    "native_id": "51198",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 507,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "L163 (Moselle 161 - Station Creek 161) Uprate",
+    "native_id": "51199",
+    "reason": "outside F46 states (MS)",
+    "row": 508,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2249 GIA at Bayou Cove 138 kV",
+    "native_id": "51200",
+    "reason": "outside F46 states (LA)",
+    "row": 509,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J2071 GIA POI on Cypress to Rye 138 kV",
+    "native_id": "51201",
+    "reason": "outside F46 states (TX)",
+    "row": 510,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "DETEC-Horton Hill to Weirgate 138kV conversion",
+    "native_id": "51202",
+    "reason": "outside F46 states (TX)",
+    "row": 511,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arrester Asset Renewal Program 2029",
+    "native_id": "51204",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 512,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Garant Bayou 161kV: New Switching Station",
+    "native_id": "51205",
+    "reason": "outside F46 states (AR)",
+    "row": 513,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Y-95 Sectionalizing Project",
+    "native_id": "51206",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 514,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Gallagher 230 kV Load Addition",
+    "native_id": "51207",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 515,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Prague West Substation Improvements",
+    "native_id": "51208",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 516,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Leatherneck 138 kV Ring Bus",
+    "native_id": "51209",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 517,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51213",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Viking Large Load Addition",
+    "native_id": "51213",
+    "row": 518,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51215",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Britton Tie Rebuild",
+    "native_id": "51215",
+    "row": 519,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51216",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Van Meter 161 kV Substation and Associated 161 kV Upgrades",
+    "native_id": "51216",
+    "row": 520,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "East Shawano SS Relay Asset Renewal",
+    "native_id": "51217",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 521,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Shawano SS Relay Asset Renewal",
+    "native_id": "51218",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 522,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51219",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Wishek NW Data Center Load Addition",
+    "native_id": "51219",
+    "row": 523,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Project Cannoli",
+    "native_id": "51220",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 524,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Edwards 3 BESS (R1055) 138 kV Interconnection",
+    "native_id": "51222",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 525,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51223",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "E0002 New 345 kV Interconnection Substation and 345 kV Line Taps",
+    "native_id": "51223",
+    "row": 526,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Reynolds 138 kV Delivery Point",
+    "native_id": "51228",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 527,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Gill to Sullivan 345kV transmission line",
+    "native_id": "51237",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 528,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Galet 230kV: Expand Substation",
+    "native_id": "51238",
+    "reason": "outside F46 states (AR)",
+    "row": 529,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51244",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Agassiz 345kv Substation and Load",
+    "native_id": "51244",
+    "row": 530,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "138 kV Mobile Capacitor Banks",
+    "native_id": "51251",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 531,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Badger Pumping SS, DIC, Retire Substation",
+    "native_id": "51252",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 532,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "American SS, DIC, Transformer Addition",
+    "native_id": "51255",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 533,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Covington Substation",
+    "native_id": "51256",
+    "reason": "outside F46 states (LA)",
+    "row": 534,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51259",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Big Cedar 370 MW Load Addition",
+    "native_id": "51259",
+    "row": 535,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Fork Creek 500-230 kV Station",
+    "native_id": "51262",
+    "reason": "outside F46 states (LA)",
+    "row": 536,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Fork Creek to St Landry 500 kV Project",
+    "native_id": "51263",
+    "reason": "outside F46 states (LA)",
+    "row": 537,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "El Dorado to Smalling 500 kV Project",
+    "native_id": "51264",
+    "reason": "outside F46 states (AR,LA)",
+    "row": 538,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Prairie Flats Solar (J2273) New Position at Tabor 138 kV",
+    "native_id": "51275",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 539,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fulton County Solar (J2186) New Position at Duck Creek 345 kV",
+    "native_id": "51284",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 540,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51293",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hannover Data Center Load Addition",
+    "native_id": "51293",
+    "row": 541,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51296",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "New Greenbrier 345 kV Ring Bus on Denny - Zachary 345 kV line Sullivan Renewable Energy Center (E0013)",
+    "native_id": "51296",
+    "row": 542,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Marquette 230 kV New Substation",
+    "native_id": "51298",
+    "reason": "outside F46 states (MS)",
+    "row": 543,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Macaw 230 kV New Substation",
+    "native_id": "51299",
+    "reason": "outside F46 states (MS)",
+    "row": 544,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth load driven facility upgrades",
+    "native_id": "51300",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 545,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crown 230 kV Station - Jeff Davis Electric Co-op, Inc.",
+    "native_id": "51301",
+    "reason": "outside F46 states (LA)",
+    "row": 546,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51302",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Quinn 161 kV Ring Bus for Millcreek (E0017)",
+    "native_id": "51302",
+    "row": 547,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New RECC Load Addition at Mogul 345 kV Substation (Phase 3)",
+    "native_id": "51303",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 548,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Prairie Link 345 kV Load Addition",
+    "native_id": "51304",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 549,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S1096 North Arlington SS Network Upgrades",
+    "native_id": "51305",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 550,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Monroe-Driftwood 345 kV Rebuild",
+    "native_id": "51306",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 551,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Hackman Phase 1 Load addition",
+    "native_id": "51307",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 552,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Hackman Phase 2 Load addition",
+    "native_id": "51308",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 553,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Tallgrass 138/12 kV substation",
+    "native_id": "51309",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 554,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "DEMCO Juban Trails 500-230 kV Station",
+    "native_id": "51311",
+    "reason": "outside F46 states (LA)",
+    "row": 555,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sheridan North Load Addition",
+    "native_id": "51312",
+    "reason": "outside F46 states (AR)",
+    "row": 556,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Prairie Link 345 kV Temporary Connection",
+    "native_id": "51313",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 557,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brick Church - Zenda Tap 69 kV (Y-51 ALE), Partial Rebuild",
+    "native_id": "51316",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 558,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Barrel-North Nashville-1624 and North Nashville-Ashley-1482 Line Rebuild",
+    "native_id": "51318",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 559,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bemidji Hospital OTP-Puposky 69kV Line Rebuild",
+    "native_id": "51319",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 560,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Temporary Tap for Truett 500 MW (Truett Phase 1.5)",
+    "native_id": "51320",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 561,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51321",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Rebuild Montgomery-Guthrie 161 kV Line",
+    "native_id": "51321",
+    "row": 562,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51322",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Oxbow 69kV Distribution Substation Rebuild",
+    "native_id": "51322",
+    "row": 563,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51323",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Project Point 345 kV Temporary Tap",
+    "native_id": "51323",
+    "row": 564,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51324",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Abercrombie 230 kV Substation",
+    "native_id": "51324",
+    "row": 565,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51325",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Valley View-Salem Bulk 69 kV line",
+    "native_id": "51325",
+    "row": 566,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "E0029 GIA Interconnection at Waterford 500 kV",
+    "native_id": "51327",
+    "reason": "outside F46 states (LA)",
+    "row": 567,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brazos Plantersville 230 kV Station",
+    "native_id": "51329",
+    "reason": "outside F46 states (TX)",
+    "row": 568,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1851 Beekman Solar Remote End Upgrades",
+    "native_id": "51330",
+    "reason": "outside F46 states (AR)",
+    "row": 569,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51331",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Black Hawk: Install 345 kV 100 MVAR Capacitor",
+    "native_id": "51331",
+    "row": 570,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Sunnyside to Fall Creek 345 kV transmission line",
+    "native_id": "51333",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 571,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Addison 345 kV Capacitor (100 Mvar)",
+    "native_id": "51335",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 572,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IPL Adoption of Seasonal Ratings - BRP-MTEP26",
+    "native_id": "51336",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 573,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Noblesville to Durbin 230kV line",
+    "native_id": "51351",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 574,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Midbend 230 kV Station",
+    "native_id": "51352",
+    "reason": "outside F46 states (LA)",
+    "row": 575,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51353",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Plymouth 161-69 kV Transformer Replacement",
+    "native_id": "51353",
+    "row": 576,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace 138kV East Substation #5 Breaker",
+    "native_id": "51360",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 577,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51364",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Project Atom Load Interconnection",
+    "native_id": "51364",
+    "row": 578,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Station (Bread) - CE Baker Interconnection",
+    "native_id": "51365",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 579,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Project Skyway Large Load",
+    "native_id": "51366",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 580,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51368",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Project Point Stag 345 kV Capacitor Bank",
+    "native_id": "51368",
+    "row": 581,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51404",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Center upgrades for Hannover data center",
+    "native_id": "51404",
+    "row": 582,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New [PPI] Riverside - [AMIL] Jerseyville 138 kV line",
+    "native_id": "51405",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 583,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New [PPI] Alsey - [AMIL] Ballard 138 kV second circuit line",
+    "native_id": "51406",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 584,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "E0031 GIA Interconnection at Baxter Wilson",
+    "native_id": "51407",
+    "reason": "outside F46 states (MS)",
+    "row": 585,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Enbridge Cambridge SS, DIC, New Substation",
+    "native_id": "51414",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 586,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51416",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MidAmerican Energy Upgrades for MTEP 51259 Big Cedar 370 MW Load Addition",
+    "native_id": "51416",
+    "row": 587,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New 345kV E0046 Gas City Substation",
+    "native_id": "51418",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 588,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "L571 (Silver Creek 115 - Silver Creek GT 115) Rebuild",
+    "native_id": "51420",
+    "reason": "outside F46 states (MS)",
+    "row": 589,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "L572 (Silver Creek 115 - Silver Creek GT 115) Rebuild",
+    "native_id": "51421",
+    "reason": "outside F46 states (MS)",
+    "row": 590,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Andrus 230 kV: Connect Delta Blues Power Station",
+    "native_id": "51423",
+    "reason": "outside F46 states (MS)",
+    "row": 591,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New [HE] Prairie Creek 345 kV Transmission Station and Load Phase 1",
+    "native_id": "51425",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 592,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Project Pawnee Temporary Tap",
+    "native_id": "51428",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 593,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Project Pawnee Final",
+    "native_id": "51429",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 594,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51430",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebel West 345 kV Substation & Associated Upgrades",
+    "native_id": "51430",
+    "row": 595,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "_id": "miso-mtep26-eval-midwest:51431",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebel East and Westwood 345 kV Substations & Associated Upgrades",
+    "native_id": "51431",
+    "row": 596,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Paducah Load Interconnection - Phase 1",
+    "native_id": "51432",
+    "reason": "outside F46 states (KY)",
+    "row": 597,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Paducah Load Interconnection - Phase 2",
+    "native_id": "51433",
+    "reason": "F40 row (lists a Great Lakes state)",
+    "row": 598,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Andes 230kV Expansion Phase 2",
+    "native_id": "51434",
+    "reason": "outside F46 states (MS)",
+    "row": 599,
+    "sheet": "MTEP Projects Under Evaluation",
+    "source_id": "miso-mtep26-eval-midwest"
   }
 ]

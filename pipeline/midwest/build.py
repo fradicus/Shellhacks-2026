@@ -1,11 +1,12 @@
-"""F46 Midwest (IA, MO, KS, NE, ND, SD): SPP-approved upgrades with C33/C38 loose, labeled candidate locations.
+"""F46 Midwest (IA, MO, KS, NE, ND, SD): SPP and MISO projects with C33/C38 loose, labeled candidate locations.
 
 SPP's Quarterly Project Tracking workbook lists every upgrade SPP has approved, its owner, status and the owner's
-expected in-service date. Each upgrade is one record. Locations are candidates from named OSM substations in the
-row's own states; none is independently reviewed (C43).
+expected in-service date; each upgrade is one record. MISO's projects-under-evaluation workbook (pinned by F40, which
+kept only Great Lakes rows) adds the rows listing only these states. Locations are candidates from named OSM
+substations in the row's own states; none is independently reviewed (C43).
 
 From pipeline/:
-  uv run python -m midwest.build fetch --cache /tmp/midwest-f46    # SPP appendix zip + OSM substations, six states
+  uv run python -m midwest.build fetch --cache /tmp/midwest-f46    # SPP zip, MISO workbook, OSM substations (6 states)
   uv run python -m midwest.build build --cache /tmp/midwest-f46 [--check]
 OSM data (c) OpenStreetMap contributors, ODbL 1.0.
 """
@@ -18,6 +19,7 @@ import io
 import json
 import re
 import sys
+import warnings
 import zipfile
 from collections import Counter
 from datetime import datetime
@@ -28,6 +30,7 @@ from openpyxl import load_workbook
 
 from california.caiso import match
 from common import REPO_ROOT, load_json, write_json
+from greatlakes import miso
 from greatlakes.match import candidate_center, facilities_named, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
 
@@ -56,11 +59,18 @@ OPERATOR_KEYS = {
     "SPS": ["SOUTHWESTERN PUBLIC", "XCEL"], "CBPC": ["CORN BELT"], "ITCGP": ["ITC"], "NIPCO": ["NORTHWEST IOWA POWER"],
     "NEET": ["NEXTERA"],
 }
+MISO_SOURCE_ID = "miso-mtep26-eval-midwest"
+# MISO submitters F40's key list does not name, checked before it. OSM tags Montana-Dakota both ways.
+MISO_KEYS = [("MIDAMERICAN", ["MIDAMERICAN"]), ("MONTANA-DAKOTA", ["MONTANA-DAKOTA", "MDU"]),
+             ("CITIZENS ELECTRIC", ["CITIZENS ELECTRIC"]), ("CEDAR FALLS", ["CEDAR FALLS"])]
 # SPP name forms: "Craig 161 kV Ckt 2 Terminal Upgrade toward Midway 161 kV" is work at Craig; "toward" names the
 # far end. "Wolf Creek 345kV Terminal Equipment", "Sweetwater 345kV GEN-2016-074 Interconnection" are sites.
 TOWARD = re.compile(r"\s+toward\s+.*$", re.I)
 SITE = re.compile(r"^(?P<name>.+?)\s*\d+(?:/\d+)*\s?kV?\b(?P<tail>.*)$", re.I)
-SITE_WORK = re.compile(r"\b(Terminal|Interconnection|Substation|Sub|Transformer|Relay|Bus Tie|Shunt|Equipment)\b", re.I)
+# MISO forms: "Black Hawk: Install 345 kV 100 MVAR Capacitor" names the site before the colon.
+COLON_SITE = re.compile(r"^(?P<name>[A-Z][\w .'’]*?):\s+(?P<tail>.*)$")
+SITE_WORK = re.compile(r"\b(Terminal|Interconnection|Substation|Sub|Transformer|Relay|Bus Tie|Shunt|Equipment|"
+                       r"Reactors?|Capacitor)\b", re.I)
 # Bus numbers, generator queue positions and border points are not facilities.
 NOT_A_NAME = re.compile(r"^(?:S\s?\d+|Sub \d+|GEN-\d{4}-\d+|DISIS-\d{4}-\d+)$|\bBorder\b", re.I)
 QUEUE = re.compile(r"^(?:GEN|DISIS)-\d{4}-\d+$", re.I)
@@ -79,12 +89,18 @@ def row_states(cell) -> list[str]:
     return sorted({s.strip().upper() for s in re.split(r"[,/]", str(cell or "")) if s.strip()})
 
 
-def named(upgrade: str) -> dict:
+def named(upgrade: str, description: str | None = None) -> dict:
     """Facilities an SPP upgrade name states: F40's parser after SPP's own forms, then non-facility names dropped."""
     text = re.sub(r"(?<=[A-Za-z])(?=\d+\s?kV)", " ", upgrade)  # "Spring Creek345 kV"
     text = re.sub(r"\s+-\s+(?=\d+\s?kV)", " ", TOWARD.sub("", text))  # "Leland Olds - Finstad - 345 kV New Line"
-    got = facilities_named(text, None)
-    if got["reason"] == "no_named_facility" and (m := SITE.match(text)) and SITE_WORK.search(m["tail"]):
+    text = re.sub(r"^(?:Replace|Repair|Upgrade|Apply|Expand)\s+", "", text)  # MISO: "Replace Labadie 345 kV …"
+    text = re.sub(r"(\d+)-(\d+)(?=\s?kV)", r"\1/\2", text)  # "Plymouth 161-69 kV Transformer"
+    text = re.sub(r"\s+N\d{1,3}(?=\s)", "", text)  # ITC Midwest line numbers: "Leland to Forest City N43 69 kV"
+    text = re.sub(r"(?<=[A-Za-z])-\d(?=\s)", "", text)  # circuit numbers: "Baumgartner-Watson-1 138 kV"
+    got = facilities_named(text, description)
+    if got["reason"] == "no_named_facility" and (m := COLON_SITE.match(text)) and SITE_WORK.search(m["tail"]):
+        got = {"kind": "site", "names": [m["name"].strip()], "from": "name", "reason": None}
+    elif got["reason"] == "no_named_facility" and (m := SITE.match(text)) and SITE_WORK.search(m["tail"]):
         got = {"kind": "site", "names": [m["name"].strip()], "from": "name", "reason": None}
     names = [None if n is None or NOT_A_NAME.search(n.strip()) else n for n in got["names"]]
     if got["kind"] and not any(names):
@@ -95,11 +111,10 @@ def named(upgrade: str) -> dict:
     return got | {"names": names}
 
 
-def locate(upgrade: str, kv_cell, states: list[str], facilities: dict[str, list[dict]], keys: list[str]
-           ) -> tuple[dict | None, dict]:
-    got = named(upgrade)
+def locate(name: str, kv: set[int], states: list[str], facilities: dict[str, list[dict]], keys: list[str],
+           description: str | None = None) -> tuple[dict | None, dict]:
+    got = named(name, description)
     pool = [f for s in states for f in facilities.get(s, [])]
-    kv = voltages_kv(upgrade) | {int(v) for v in re.findall(r"\d+", str(kv_cell or "")) if int(v) > 0}
     matches = [match(n, pool, keys, kv) if n else {"status": "not_a_facility", "name": None} for n in got["names"]]
     center = candidate_center(got["kind"], matches) if got["kind"] else None
     fields = ("id", "name", "operator", "voltage", "state", "lat", "lon")
@@ -130,6 +145,28 @@ def read_rows(zip_bytes: bytes) -> list[dict]:
     return rows
 
 
+def day(cell) -> str | None:
+    return cell.date().isoformat() if isinstance(cell, datetime) and cell.year >= 2000 else None
+
+
+def dated_events(pid: str, native: str, status: str, group: str, value: str | None, artifact: dict, evidence: dict,
+                 label: str, slug: str, cited: str, column: str) -> list[dict]:
+    """An in-service status is dated only by a date on or before retrieval; any other stated date is a milestone."""
+    if group == "in_service":
+        reported = value if value and value <= artifact["retrieved_at"][:10] else None
+        return [{"id": f"{pid}:status-in-service", "type": "in_service", "date": reported,
+                 "precision": "day" if reported else "unknown", "native_project_link": native,
+                 "description": (f"Project status “{status}”; {label[0].lower() + label[1:]} {reported}."
+                                 if reported else f"Project status “{status}”; the workbook gives no "
+                                 "in-service date on or before retrieval."),
+                 "evidence": [evidence | {"facts": f"Project Status = {status}"}]}]
+    if not value:
+        return []
+    return [{"id": f"{pid}:{slug}", "type": "planned_milestone", "date": value, "precision": "day",
+             "native_project_link": native, "description": f"{label} {value} ({cited}).",
+             "evidence": [evidence | {"facts": f"{column} = {value}"}]}]
+
+
 def project(row: dict, artifact: dict, facilities: dict[str, list[dict]]) -> dict:
     native = str(row["UID"])
     pid = f"{SOURCE_ID}:{native}"
@@ -141,25 +178,14 @@ def project(row: dict, artifact: dict, facilities: dict[str, list[dict]]) -> dic
                 "locator": locator, "source_date": None, "retrieved_at": artifact["retrieved_at"],
                 "access_review": "Public SPP workbook; no login.", "facts": ""}
     cell = row["Project Owner Indicated In-Service Date"]
-    value = cell.date().isoformat() if isinstance(cell, datetime) and cell.year >= 2000 else None
+    value = day(cell)
     precision = "day" if value else "unknown"
-    events = []
-    if group == "in_service":
-        reported = value if value and value <= artifact["retrieved_at"][:10] else None
-        events.append({"id": f"{pid}:status-in-service", "type": "in_service", "date": reported,
-                       "precision": "day" if reported else "unknown", "native_project_link": native,
-                       "description": (f"Project status “{status}”; owner-indicated in-service date {reported}."
-                                       if reported else f"Project status “{status}”; the workbook gives no "
-                                       "in-service date on or before retrieval."),
-                       "evidence": [evidence | {"facts": f"Project Status = {status}"}]})
-    elif value:
-        events.append({"id": f"{pid}:owner-in-service", "type": "planned_milestone", "date": value,
-                       "precision": "day", "native_project_link": native,
-                       "description": f"Owner-indicated in-service date {value} (SPP Q3 2026 project tracking).",
-                       "evidence": [evidence | {"facts": f"Project Owner Indicated In-Service Date = {value}"}]})
+    events = dated_events(pid, native, status, group, value, artifact, evidence, "Owner-indicated in-service date",
+                          "owner-in-service", "SPP Q3 2026 project tracking",
+                          "Project Owner Indicated In-Service Date")
     owner = clean(row["ProjectOwner"])
-    center, candidate = locate(clean(row["Upgrade Name"]), row["Voltages (kV)"], states, facilities,
-                               OPERATOR_KEYS.get(owner, []))
+    kv = voltages_kv(row["Upgrade Name"]) | {int(v) for v in re.findall(r"\d+", str(row["Voltages (kV)"] or "")) if int(v) > 0}
+    center, candidate = locate(clean(row["Upgrade Name"]), kv, states, facilities, OPERATOR_KEYS.get(owner, []))
     text = row["Project Description/ Comments"]
     raw_keys = ("NTC ID", "PID", "UID", "ProjectOwner", "State(s)", "Project Name", "Upgrade Name", "Project Type",
                 "Project Owner Indicated In-Service Date", "Project Status", "Current Cost Estimate", "Voltages (kV)",
@@ -178,11 +204,66 @@ def project(row: dict, artifact: dict, facilities: dict[str, list[dict]]) -> dic
     }
 
 
+def miso_keys(submitter: str) -> list[str]:
+    up = submitter.upper()
+    return next((keys for fragment, keys in MISO_KEYS if fragment in up), None) or miso.operator_keys(submitter)
+
+
+def miso_rows(path: Path) -> list[dict]:
+    """Every data row of F40's pinned MISO workbook, with its sheet row number."""
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")  # openpyxl: unsupported data-validation extension
+        book = load_workbook(path, read_only=True)
+        table = list(book[miso.SHEET].iter_rows(values_only=True))  # read-only sheets parse (and warn) here
+    header = [str(h) for h in table[1]]
+    return [dict(zip(header, values, strict=True)) | {"_row": number}
+            for number, values in enumerate(table[2:], start=3)]
+
+
+def miso_states(cell) -> list[str]:
+    return sorted({s.strip() for s in str(cell or "").split(";") if s.strip()})
+
+
+def miso_project(row: dict, artifact: dict, facilities: dict[str, list[dict]]) -> dict:
+    native = str(row["MTEP Project ID"])
+    pid = f"{MISO_SOURCE_ID}:{native}"
+    status = clean(row["Planning Status"] or "Not stated")
+    group = miso.STATUS.get(status[:2], "unknown")
+    states = miso_states(row["State(s)"])
+    evidence = {"publisher": "Midcontinent Independent System Operator (MISO)", "url": artifact["url"],
+                "artifact_sha256": artifact["sha256"], "locator": f"{miso.FILE}#{miso.SHEET}!row-{row['_row']}",
+                "source_date": None, "retrieved_at": artifact["retrieved_at"],
+                "access_review": "Public MISO CDN workbook; no login.", "facts": ""}
+    value = day(row["Expected ISD"])
+    events = dated_events(pid, native, status, group, value, artifact, evidence, "Expected in-service date",
+                          "expected-isd", "MISO MTEP26 projects under evaluation", "Expected ISD")
+    name, text = clean(row["Project Name"]), row["Project Description"]
+    kv = {int(v) for v in (row["Max kV"], row["Min kV"]) if isinstance(v, int | float) and v > 0} | voltages_kv(name, text)
+    owner = clean(row["Submitting TO"])
+    center, candidate = locate(name, kv, states, facilities, miso_keys(owner), clean(text) if text else None)
+    raw_keys = ("Target MTEP Cycle", "Target Appendix", "Submitting TO", "Planning Region", "State(s)", "MTEP Project ID",
+                "Project Name", "Project Type", "Expected ISD", "Current Cost", "Planning Status", "Max kV", "Min kV")
+    return {
+        "_id": pid, "source_id": MISO_SOURCE_ID, "native_id": native, "name": name,
+        "description": clean(text)[:500] if text else None, "owner": owner, "other_owners": [], "planning_region": "miso",
+        "states": [STATES[s] for s in states], "counties": [], "geography_basis": "source_state",
+        "status": status, "status_group": group,
+        "in_service": {"raw": value, "value": value, "precision": "day" if value else "unknown"},
+        "center": center, "location_review": "unreviewed" if center else "unlocated",
+        "location_candidate": candidate, "project_events": events,
+        "evidence": {"page": None, "sheet": miso.SHEET, "row": row["_row"], "source_sha256": artifact["sha256"],
+                     "raw": {k: clean(row[k]) if row[k] is not None else None for k in raw_keys}},
+    }
+
+
 def fetch(cache: Path) -> None:
     cache.mkdir(parents=True, exist_ok=True)
     manifest = load_json(cache / "manifest.json") if (cache / "manifest.json").exists() else {}
     if ZIP not in manifest:
         fetch_into(cache, ZIP, URL, manifest)
+        write_json(cache / "manifest.json", manifest)
+    if miso.FILE not in manifest:
+        fetch_into(cache, miso.FILE, miso.URL, manifest)
         write_json(cache / "manifest.json", manifest)
     for state in STATES:
         if f"osm-{state.lower()}.json" not in manifest:
@@ -192,7 +273,7 @@ def fetch(cache: Path) -> None:
 
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
-    manifest = verify_cache(cache, [ZIP, *osm_files])
+    manifest = verify_cache(cache, [ZIP, miso.FILE, *osm_files])
     facilities = {s: osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s) for s in STATES}
     artifact = manifest[ZIP]
     projects, dispositions = [], []
@@ -208,23 +289,58 @@ def build(cache: Path) -> dict[Path, object]:
         projects.append(record)
         dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
                                      "location": record["location_candidate"]["tier"] or "unlocated"})
+    spp_count = len(projects)
+    great_lakes = set(miso.GREAT_LAKES)
+    for row in miso_rows(cache / miso.FILE):
+        states = miso_states(row["State(s)"])
+        where = {"source_id": MISO_SOURCE_ID, "sheet": miso.SHEET, "row": row["_row"],
+                 "native_id": str(row["MTEP Project ID"]), "name": clean(row["Project Name"] or "")}
+        if set(states) & great_lakes:
+            dispositions.append(where | {"disposition": "excluded", "reason": "F40 row (lists a Great Lakes state)"})
+            continue
+        if not states or not set(states) <= STATES.keys():
+            reason = "no state listed" if not states else f"outside F46 states ({','.join(states)})"
+            dispositions.append(where | {"disposition": "excluded", "reason": reason})
+            continue
+        record = miso_project(row, manifest[miso.FILE], facilities)
+        projects.append(record)
+        dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
+                                     "location": record["location_candidate"]["tier"] or "unlocated"})
     if len({p["_id"] for p in projects}) != len(projects):
-        raise SystemExit("SPP UID repeated within the workbook")
+        raise SystemExit("project ID repeated within a workbook")
     projects.sort(key=lambda p: p["_id"])
+    miso_artifact = manifest[miso.FILE]
+    miso_source = {
+        "_id": MISO_SOURCE_ID, "publisher": "Midcontinent Independent System Operator (MISO)",
+        "title": "MTEP Projects Under Evaluation (MTEP26 cycle)", "authority": "regional_planning_organization",
+        "role": "project_plan", "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+        "download_url": miso_artifact["url"], "publication_date": None, "vintage": "MTEP26 cycle, retrieved date",
+        "retrieved_at": miso_artifact["retrieved_at"], "sha256": miso_artifact["sha256"],
+        "public_status": "verified_public", "import_status": "imported", "access_policy": "public_document",
+        "planning_region": "miso",
+        "states": sorted({s for p in projects if p["source_id"] == MISO_SOURCE_ID for s in p["states"]}),
+        "project_count": len(projects) - spp_count,
+        "notes": ["F46 Midwest release (C43): rows listing only IA, MO, ND or SD from the workbook F40 pinned "
+                  "(miso-mtep26-eval); F40 kept the Great Lakes rows. Same artifact and hash.",
+                  "Under-evaluation projects are proposals; M2 rows are Appendix A approved. Locations are unreviewed "
+                  "C33 candidates from named OSM substations; none is independently confirmed."],
+    }
     source = {
         "_id": SOURCE_ID, "publisher": "Southwest Power Pool",
         "title": "SPP Q3 2026 Quarterly Project Tracking Report, Appendix 1", "authority": "regional_planning_organization",
         "role": "project_plan", "landing_url": LANDING, "download_url": artifact["url"], "publication_date": None,
         "vintage": "2026 Q3", "retrieved_at": artifact["retrieved_at"], "sha256": artifact["sha256"],
         "public_status": "verified_public", "import_status": "imported", "access_policy": "public_document",
-        "planning_region": "spp", "states": sorted({s for p in projects for s in p["states"]}),
-        "project_count": len(projects),
+        "planning_region": "spp",
+        "states": sorted({s for p in projects if p["source_id"] == SOURCE_ID for s in p["states"]}),
+        "project_count": spp_count,
         "notes": ["F46 Midwest release (C43): SPP upgrades whose listed states are all IA, MO, KS, NE, ND or SD. "
                   "Locations are unreviewed C33 candidates from named OSM substations; none is independently "
                   "confirmed. Source-bounded, not statewide coverage.",
                   f"sha256 is of the appendix zip; rows are read from its member “{MEMBER.split('/')[-1]}”."],
     }
-    return {OUT / "projects.json": projects, OUT / "sources.json": [source], OUT / "dispositions.json": dispositions,
+    return {OUT / "projects.json": projects, OUT / "sources.json": [source, miso_source],
+            OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",
                                        "named_substations": {s: len(f) for s, f in facilities.items()},
@@ -237,6 +353,8 @@ def summary(projects: list[dict]) -> dict:
     by_state = Counter(s for p in projects for s in p["states"])
     located_by_state = Counter(s for p in located for s in p["states"])
     return {"projects": len(projects), "located": len(located), "verified": 0,
+            "by_source": {s: {"projects": n, "located": sum(p["source_id"] == s for p in located)}
+                          for s, n in sorted(Counter(p["source_id"] for p in projects).items())},
             "distinct_points": len({(p["center"]["lat"], p["center"]["lon"]) for p in located}),
             "by_state": {s: {"projects": by_state[f], "located": located_by_state[f]} for s, f in STATES.items()},
             "by_tier": dict(sorted(Counter(p["location_candidate"]["tier"] for p in located).items())),
