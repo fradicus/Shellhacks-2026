@@ -27,3 +27,5 @@ previous full-suite-on-every-PR policy.
 GitHub documents that skipping an entire required workflow through path filters
 can leave checks pending; classification therefore happens inside the workflow:
 https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs
+
+Temporary docs-only CI smoke check; this branch will be closed without merging.
