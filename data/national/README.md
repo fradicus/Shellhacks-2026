@@ -26,7 +26,8 @@ uv run python -m national.load
 1. New England locations: `data/expansion/releases/active.json` (C23).
 2. Southeast additions: `data/southeast/releases/active.json` (C27).
 3. Mid-Atlantic additions: `data/expansion/mid-atlantic/releases/active.json` (C28).
-4. Texas candidates: `data/texas/releases/active.json` (C29).
+4. Texas: `data/texas/statewide/releases/active.json` (C32) when present; otherwise
+   `data/texas/releases/active.json` (C29). One exclusive slot; an invalid statewide release fails the load.
 
 Each producer validates its facts-bound release. The loader recomputes source/total
 coverage and validates the assembled snapshot before the national loader can stage it. Missing active releases
@@ -39,10 +40,13 @@ each producer’s coverage, review counts and gaps separately from the recompute
 The workbook still supplies no coordinates; separate reviewed evidence supplies any accepted ISO-NE locations.
 `national build` continues to write base snapshots only, so repeated loads do not bake overlays into originals.
 
-The Texas release contains eight ERCOT line-project candidates at five distinct center coordinates. Seven
-centers use one located endpoint and one uses the arithmetic mean of two located endpoints. All eight remain
-`location_review=unreviewed`; the public Georgetown facility ledger supports matching but is not another
-project source. These candidates never create national overlap pairs. F41's fixed release validates their
-source rows, facility links, source/GIS hashes and month-precision milestones before this loader sees them.
+The statewide Texas release contains 2,044 ERCOT TPIT projects from 2,049 observations: 635 tentative facility
+locations (183 full, 452 partial), 1,218 county-reference projects and 191 unlocated. Its 1,407 county anchors
+preserve all named counties under the existing project IDs. Exact centers and indexed `geo` remain null for
+county-only projects; the separate attributed anchors may display labeled approximate dots. OSM-derived
+facility references retain © OpenStreetMap contributors / ODbL 1.0 attribution. These records never create
+national overlap pairs. F41 validates source rows, unique IDs, ledger links/hashes, geometry and tier counts.
+The unchanged C29 fallback contains eight candidate projects at five centers. Removing only the statewide
+activation manifest restores that fallback on the next load, without double-counting Texas native IDs.
 The main-only load Action is triggered by this data documentation change; its receipt and the active Atlas
 dataset still need verification before calling the batch loaded or visible.

@@ -179,13 +179,17 @@ def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     errors = validate_snapshot_values(snapshot)
     if errors:
         raise ValueError("national snapshot validation failed:\n" + "\n".join(errors))
-    # Fixed producer order: C23 locations, C27 Southeast, C28 Mid-Atlantic, then C29 Texas.
+    # C32 replaces the C29 Texas slot; never append both representations of the same IDs.
+    texas = ("texas/statewide", "texas.statewide_publish") if (
+        root / "data/texas/statewide/releases/active.json"
+    ).exists() else ("texas", "texas.publish")
+    # Fixed producer order: C23 locations, C27 Southeast, C28 Mid-Atlantic, then Texas.
     # Source/candidate folders are never scanned and cannot activate themselves.
     for directory, module in (
         ("expansion", "expansion.publish"),
         ("southeast", "southeast.publish"),
         ("expansion/mid-atlantic", "expansion.mid_atlantic"),
-        ("texas", "texas.publish"),
+        texas,
     ):
         if not (root / "data" / directory / "releases" / "active.json").exists():
             continue
