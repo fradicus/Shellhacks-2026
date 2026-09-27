@@ -26,6 +26,7 @@ uv run python -m national.load
 1. New England locations: `data/expansion/releases/active.json` (C23).
 2. Southeast additions: `data/southeast/releases/active.json` (C27).
 3. Mid-Atlantic additions: `data/expansion/mid-atlantic/releases/active.json` (C28).
+4. Texas candidates: `data/texas/releases/active.json` (C29).
 
 Each producer validates its facts-bound release. The loader recomputes source/total
 coverage and validates the assembled snapshot before the national loader can stage it. Missing active releases
@@ -33,7 +34,15 @@ leave the base unchanged; invalid releases fail before staging. Candidate and re
 
 Expansion geometry and its source/review evidence are embedded in the same national project document and move
 with the existing atomic dataset pointer. Project IDs, original source rows, statuses and milestone precision
-remain unchanged. Runtime `coverage.expansion`, `coverage.southeast` and `coverage.mid_atlantic` preserve
+remain unchanged. Runtime `coverage.expansion`, `coverage.southeast`, `coverage.mid_atlantic` and `coverage.texas` preserve
 each producer’s coverage, review counts and gaps separately from the recomputed national totals.
 The workbook still supplies no coordinates; separate reviewed evidence supplies any accepted ISO-NE locations.
 `national build` continues to write base snapshots only, so repeated loads do not bake overlays into originals.
+
+The Texas release contains eight ERCOT line-project candidates at five distinct center coordinates. Seven
+centers use one located endpoint and one uses the arithmetic mean of two located endpoints. All eight remain
+`location_review=unreviewed`; the public Georgetown facility ledger supports matching but is not another
+project source. These candidates never create national overlap pairs. F41's fixed release validates their
+source rows, facility links, source/GIS hashes and month-precision milestones before this loader sees them.
+The main-only load Action is triggered by this data documentation change; its receipt and the active Atlas
+dataset still need verification before calling the batch loaded or visible.

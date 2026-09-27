@@ -49,3 +49,11 @@ After C23 and C27, invoke F38’s `expansion.mid_atlantic.apply_release` only wh
 preserve all producer summaries and evidence, recompute national and per-source coverage,
 and validate before staging. Missing releases preserve prior behavior; invalid releases
 prevent activation. Original snapshot generation and the sole load Action writer are unchanged.
+
+## Texas candidate release (C29)
+
+After the existing overlays, invoke F41's `texas.publish.apply_release` only when
+`data/texas/releases/active.json` exists. Its fixed eight-project candidate release must pass producer checks
+and final national snapshot validation before database staging. Recompute aggregate and per-source coverage
+under the same dataset pointer. The candidates remain `unreviewed` and generate no national overlap pairs.
+Missing input preserves previous behavior; invalid input fails before the sole load Action writes Atlas.
