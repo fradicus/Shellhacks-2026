@@ -38,16 +38,15 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
     <main className={s.page}>
       <header className={s.hero}>
         <span className="eyebrow">Impact / Site weather report</span>
-        <h1>Pick a site. Pick a date.<br />See what the weather costs.</h1>
-        <p>Ten years of NOAA station records replayed for any U.S. location, with last year&rsquo;s weather, the NWS forecast, wetland and soil context, and a PDF you can hand to the team.</p>
-        <Badge>Historical replay · user-entered costs</Badge>
+        <h1>Pick a site.<br />Price the weather delay.</h1>
+        <p>Replay ten years of NOAA station weather for a U.S. location, then add last year, the NWS forecast, and flood, wetland, and soil context. The dollar figures use the rates you enter.</p>
+        <Badge>Historical replay · your rates</Badge>
       </header>
 
-      <SiteFactors key={`factors-${id}`} pairLabel={pairLabel} points={sitePoints} projects={mapProjects} />
       <section className={s.section} aria-labelledby="pair-heading">
-        <span className="eyebrow">07 / Project pair (optional)</span>
+        <span className="eyebrow">Optional · project pair</span>
         <h2 id="pair-heading">Attach a project pair.</h2>
-        <p className={s.muted}>Adds both project centers as one-click sites on the map and keeps their filing evidence with the report.</p>
+        <p className={s.muted}>Adds both project centers as one-click sites and keeps their filing evidence with this worksheet.</p>
         <form action="/impact" className={`${s.picker} no-print`}>
           <label htmlFor="pair">Project pair (optional)
             <select id="pair" name="pair" defaultValue={id}>
@@ -79,8 +78,9 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
           <p className={s.warning}>{match.review_state === "rejected" ? "This pair was rejected in review. Its costs can be explored hypothetically, but it is not a validated coordination opportunity. " : match.review_state !== "confirmed" ? "This pair still needs review. " : "Review does not establish equipment availability. "}Center distance is not a truck route. Filed in-service dates are not construction windows.</p>
           <Link href={`/pair/${encodeURIComponent(match._id)}`}>Inspect pair evidence and review details →</Link>
           {!sitePoints.length && <p className={s.muted}>Neither project center has published coordinates, so pick the site on the map below.</p>}
-        </> : !id && <p className={s.muted}>No pair attached. Use this worksheet for your own two-job scenario, or choose a pair to keep its source evidence alongside your assumptions.</p>}
+        </> : !id && <p className={s.muted}>No pair attached. Choose one to keep its filing evidence with your rates, or continue with a standalone site.</p>}
       </section>
+      <SiteFactors key={`factors-${id}`} pairLabel={pairLabel} points={sitePoints} projects={mapProjects} />
       <aside className={s.research}>
         <strong>Where the numbers come from.</strong> Daily rain, temperature, snow and wind: <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noreferrer">NOAA NCEI GHCN-Daily</a> station records, 2016–2025, plus the latest observations.
         Forecast: National Weather Service. Flood zones: FEMA NFHL. Wetlands: USFWS NWI. Soil: USDA SSURGO. Wetland permit times: <a href="https://www.govinfo.gov/content/pkg/FR-2025-06-18/html/2025-11190.htm" target="_blank" rel="noreferrer">USACE FY2024 averages</a>.
