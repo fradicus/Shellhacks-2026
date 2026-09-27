@@ -24,7 +24,7 @@ FOLDER = Path("data/southeast/dense")
 ACTIVE = FOLDER / "releases" / "active.json"
 RELEASE_ID = "southeast-dense-1"
 # Fixed application order; a batch absent from the release file is simply not applied.
-BATCHES = ("aep", "duke", "scrtp", "virginia", "misospp", "sertp")
+BATCHES = ("aep", "duke", "scrtp", "virginia", "misospp", "sertp", "pages")
 FILES = ("projects", "sources")
 TIERS = ("official", "candidate", "candidate_unique_name")
 SE_STATES = {"FL": "12", "GA": "13", "AL": "01", "MS": "28", "SC": "45", "NC": "37", "TN": "47", "KY": "21",

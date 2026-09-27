@@ -1,0 +1,149 @@
+[
+  {
+    "_id": "southeast:ekpc",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.ekpc.coop/current-projects",
+    "import_status": "imported",
+    "landing_url": "https://www.ekpc.coop/current-projects",
+    "notes": [
+      "F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility names in the project title, not independently reviewed. Brochures give construction windows, not in-service dates, so no date is read."
+    ],
+    "planning_region": null,
+    "project_count": 6,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "East Kentucky Power Cooperative",
+    "retrieved_at": "2026-09-27T08:13:07Z",
+    "role": "project_plan",
+    "sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b",
+    "states": [
+      "21"
+    ],
+    "title": "East Kentucky Power Cooperative current transmission projects",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:firstenergy-wv",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia.html",
+    "notes": [
+      "F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility names in the project title, not independently reviewed. Status from the page's own wording; a 'be complete on or about' date is a planned milestone even when past. A page also listed on another state's index is counted once."
+    ],
+    "planning_region": null,
+    "project_count": 6,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T08:13:09Z",
+    "role": "project_plan",
+    "sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655",
+    "states": [
+      "24",
+      "51",
+      "54"
+    ],
+    "title": "FirstEnergy transmission projects: WV",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:firstenergy-va",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/virginia.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects/virginia.html",
+    "notes": [
+      "F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility names in the project title, not independently reviewed. Status from the page's own wording; a 'be complete on or about' date is a planned milestone even when past. A page also listed on another state's index is counted once."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T08:13:10Z",
+    "role": "project_plan",
+    "sha256": "18251b814873f2bf3151eb5eeabe36e3db9d9631f9e66860c28a161cf4848d83",
+    "states": [
+      "51"
+    ],
+    "title": "FirstEnergy transmission projects: VA",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:georgia-power",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+    "import_status": "imported",
+    "landing_url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects.html",
+    "notes": [
+      "F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility names in the project title, not independently reviewed. Timelines are tentative quarters; a 'Project complete(ion)' quarter is a year-precision planned milestone with the quarter kept in the event description. Pages whose endpoints and voltage equal a legacy Georgia Power record are that record's duplicates."
+    ],
+    "planning_region": null,
+    "project_count": 7,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Georgia Power",
+    "retrieved_at": "2026-09-27T08:13:12Z",
+    "role": "project_plan",
+    "sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd",
+    "states": [
+      "01",
+      "13"
+    ],
+    "title": "Georgia Power transmission projects",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:gtc-ecrp",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.gatransmission.com/ecrp/",
+    "import_status": "imported",
+    "landing_url": "https://www.gatransmission.com/ecrp/",
+    "notes": [
+      "F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility names in the project title, not independently reviewed. The page's one ready-for-service quarter applies to all six projects; kept at year precision."
+    ],
+    "planning_region": null,
+    "project_count": 5,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Georgia Transmission Corporation",
+    "retrieved_at": "2026-09-27T08:13:49Z",
+    "role": "project_plan",
+    "sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0",
+    "states": [
+      "13"
+    ],
+    "title": "Georgia Transmission East Central Georgia Reliability Projects",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:gtc-dresden-talbot",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.gatransmission.com/dresden-talbot/",
+    "import_status": "imported",
+    "landing_url": "https://www.gatransmission.com/dresden-talbot/",
+    "notes": [
+      "F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility names in the project title, not independently reviewed. One project page."
+    ],
+    "planning_region": null,
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Georgia Transmission Corporation",
+    "retrieved_at": "2026-09-27T08:13:50Z",
+    "role": "project_plan",
+    "sha256": "a912333627553124534c4b5c2eb8f9b3954e47e42622cb29cf43086abc187b78",
+    "states": [
+      "13"
+    ],
+    "title": "Georgia Transmission Dresden - Talbot 500 kV Transmission Line",
+    "vintage": null
+  }
+]
