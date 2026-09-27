@@ -99,15 +99,18 @@ the projects inside it to their dates and lays everything else down as a faint g
 meaning one thing only: the filed in-service date of a project you are looking at.
 
 15. **Scope bar.** A single control at the top centre of the map, between the side panels (top left on phones).
-    Closed, it reads the current scope and its count: `All projects · 1,414` or `Texas · 569 of 1,414 ×`. Opened, it
-    is a search field over three groups, each option with its drawn count, largest first:
-    - **Regions**: the four Census regions (`census_region_code` of each state in the committed Census geography).
-    - **Grid plans**: the stored `planning_region` of national projects, grouped case-insensitively and shown with a
-      readable name (ERCOT, NYISO, ATC 10-year …); unknown codes show as stored. It is the plan a record was filed
-      in, not an inferred operator; records with no stored value are reachable by state only.
-    - **States**: every state with at least one drawn project.
-    - **Pin 25 mi**: arm, then click the map.
-    Keyboard: ↑/↓ move, Enter picks, Esc closes; `/` focuses it. Only one scope is active; picking replaces it.
+    Closed, it reads the current scope and its count: `United States · 1,414` or `Texas · 569 of 1,414 ×`. Opened, it
+    is one search field over two tabs, each option with its drawn count:
+    - **Places** (the default): `United States` first (clears the scope), then the four Census regions largest
+      first (`census_region_code` of each state in the committed Census geography), then every state with at least
+      one drawn project, A–Z, down two columns.
+    - **Grid**: the stored `planning_region` of national projects, grouped case-insensitively, largest first, for
+      the plans named in `scope.ts` only (ERCOT, NYISO, ATC 10-year …). Any other stored value (some imports stored
+      a document's section heading there) is not a plan and is not listed. It is the plan a record was filed in,
+      not an inferred operator. The tab ends by saying how many drawn projects have no plan on file; those are
+      reachable under Places.
+    Typing searches both tabs. Keyboard: ↑/↓ move, ←/→ switch tabs, Enter picks, Esc closes; `/` opens it. Only one
+    scope is active; picking replaces it. The pin is not in the list: it is its own button beside the bar (item 19).
 16. **Membership, from stored facts only.** A national project is in a state if the state is in its stored `states`
     (so a two-state line is in both). A legacy project is in the state of the filing it came from: `desc-*` is South
     Carolina, `gpc-*` is Georgia. Region follows state. A pin scope contains every drawn project whose stored centre
@@ -120,13 +123,14 @@ meaning one thing only: the filed in-service date of a project you are looking a
 18. **Arrival.** Choosing a scope flies the camera to the scope's drawn projects (pin: the 25-mile circle) and
     replays the timelapse for just that scope (1.6 s; reduced motion: at once), so a region rises in date order.
     **Overview** and the story return to `All projects`.
-19. **Pin.** The 25-mile circle is drawn around the pin with the pair view's ring, labelled `25 mi · N projects`.
+19. **Pin.** A round reticle button beside the scope bar (or `P`) arms the pin; the next map click drops it and
+    the bar reads `Within 25 mi of pin`. The 25-mile circle is drawn around the pin with the pair view's ring, labelled `25 mi · N projects`.
     Every project card also offers **Within 25 mi →**, which pins its stored centre. The All projects drawer lists
     the scope's projects (for a pin, nearest first, with distance).
 20. **Lists follow scope.** The pair tabs count and list pairs with both ends in scope; the empty state names the
     scope. The tray counts and the drawer list are the scope's.
 21. **Shareable.** `?scope=region:3`, `state:48`, `plan:ercot` or `pin:29.7604,-95.3698` opens on that scope; the
-    URL follows changes. An unknown or malformed value is ignored.
+    URL follows changes. An unknown plan, or any malformed value, is ignored.
 
 ### Requirements (scope)
 - No inferred operator, state or location. Counts are counts of drawn projects; unlocated ones are never scoped.

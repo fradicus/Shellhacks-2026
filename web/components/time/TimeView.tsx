@@ -178,14 +178,19 @@ export function TimeView({
     const regions = tally((p) => statesOf(p).map((st) => regionOf.get(st) ?? "").filter(Boolean));
     const plans = tally((p) => { const pl = planOf(p); return pl ? [pl] : []; });
     const states = tally(statesOf);
+    // Places read as a map legend: the country, its regions by size, then states A–Z (people look a state up by name).
     return [
+      { tab: "places", group: null, scope: null, label: "United States", count: located.length },
       ...geography.regions.filter((r) => regions.get(r.code)).map((r): ScopeOption =>
-        ({ group: "Regions", scope: { kind: "region", code: r.code }, label: r.name, count: regions.get(r.code)! })).sort(byCount),
-      ...[...plans].map(([code, count]): ScopeOption => ({ group: "Grid plans", scope: { kind: "plan", code }, label: planName(code), count })).sort(byCount),
+        ({ tab: "places", group: "Regions", scope: { kind: "region", code: r.code }, label: r.name, count: regions.get(r.code)! })).sort(byCount),
       ...geography.states.filter((st) => states.get(st.fips)).map((st): ScopeOption =>
-        ({ group: "States", scope: { kind: "state", code: st.fips }, label: st.name, hint: st.usps, count: states.get(st.fips)! })).sort(byCount),
-    ];
+        ({ tab: "places", group: "States", scope: { kind: "state", code: st.fips }, label: st.name, hint: st.usps, count: states.get(st.fips)! }))
+        .sort((a, b) => a.label.localeCompare(b.label)),
+      ...[...plans].map(([code, count]): ScopeOption =>
+        ({ tab: "grid", group: "Grid plans", scope: { kind: "plan", code }, label: planName(code), count })).sort(byCount),
+    ] satisfies ScopeOption[];
   }, [located, geography, regionOf]);
+  const unplanned = useMemo(() => located.filter((p) => !planOf(p)).length, [located]);
   // The planning window: the ground is 1 Jan of the year before the analysis date (or the earliest drawn year, if
   // later), so one old filing can't stretch the axis. Earlier dates keep their facts and lie flat on the ground.
   const analysisYear = Number(analysisDate.slice(0, 4));
@@ -913,7 +918,8 @@ export function TimeView({
         ))}
       </div>
 
-      <ScopeBar current={scopeLabel} count={scoped.length} total={located.length} options={scopeOptions} pinArmed={pinArmed}
+      <ScopeBar current={scopeLabel} count={scoped.length} total={located.length} options={scopeOptions} unplanned={unplanned}
+        initialTab={scope?.kind === "plan" ? "grid" : "places"} pinArmed={pinArmed}
         onPick={pickScope} onClear={() => pickScope(null)} onPin={setPinArmed} />
 
       <div className={s.left} ref={leftRef}>
