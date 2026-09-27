@@ -202,8 +202,8 @@ test("landing controls work and the explorer returns to a working landing page",
     await expect(network).toHaveAttribute("aria-pressed", "true");
     await expect(page.getByText("One region. More possibilities.")).toBeVisible();
   } else {
-    // Truck-only Common Ground hero (no map toggle). Caption beat line stays visible on mobile.
-    await expect(page.getByText("Same roads. One network.")).toBeVisible();
+    // Truck-only Common Ground hero (no map toggle). Pause stays available without the old caption.
+    await expect(page.getByRole("button", { name: "Pause animation", exact: true })).toBeVisible();
   }
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
