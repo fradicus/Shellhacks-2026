@@ -1,0 +1,21 @@
+{
+  "approved_noaa_project_records": 343,
+  "coverage": {
+    "complete_endpoints": 41,
+    "partial_endpoint": 92,
+    "site": 210
+  },
+  "independent_review_file_sha256": "d4075e9448a6a9c78f04e8aaf58007f080f30d70f16ba8af33868960e66b4363",
+  "limitations": [
+    "Historical planning-scale sites only; no current-status refresh.",
+    "Line endpoint locations do not define actual route or affected spans.",
+    "92partial-endpoint projects preserve unknown opposite endpoint.",
+    "Receipt hashes exclude reviews and use C23canonical newline encoding.",
+    "Excluded producer/reviewer-conflict VTprojects, unresolved aliases, multi-site programs, component-only work, proposed sites and conflicted coordinates."
+  ],
+  "metadata_sha256": "061927af6a5fe0157d7b719511c0c6d64b26a40c7f6db8da27876ff217d1a436",
+  "original_geometry_sha256": "1d55ac72820bf82615c80d38dcbac86d6ff0e26c872e532814ace81b2f4b24f1",
+  "records_sha256": "b666d69343b0627be84548083e1aad70378a39a65ca0b53d9ec4b2a8ecb4f5fa",
+  "unique_noaa_coordinates": 185,
+  "unique_noaa_facility_ids": 185
+}

@@ -1,0 +1,538 @@
+{
+  "review_scope": "10 Vermont candidate links; no repository edits or activation; final release facts hashes require later review binding",
+  "candidate_file_sha256": "5374f8922ddee5920414e2056fb9cb2225febc66bf5c7cb98228fb34dec33927",
+  "records": [
+    {
+      "project_id": "iso-ne:1617",
+      "decision": "confirmed",
+      "reason": "Workbook row 324 identifies VELCO Connecticut River Valley Chelsea three-breaker rebuild. VELCO CRVP slide 6 independently identifies this exact 115 kV rebuild. DEC report PDF pages 3-4 explicitly connects the CRVP work to VELCO Chelsea Substation at 45 East Randolph Road, the exact address of PSD ESITEID 65694. DEC DMS coordinates independently corroborate the same site. Government geometry is a utility-submitted E911 substation site point; it does not locate individual breakers or certify survey accuracy.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.164063Z",
+      "candidate_sha256": "6622c60309549208fdfe65469f6813df3bc54b035eef5dff30e61ecef60f5212",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/velco-crvp.pdf",
+          "sha256": "dce4ca5078923c93f433f4bcdd7722c9132a8cc2c24afb786de922465ae6f6db"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/chelsea-dec-completion-2018.pdf",
+          "sha256": "07b0231c4f4c45165530c3ac5e450b544df853e3b55a385e52468568d9ff351f"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 324"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          502316.3546000002,
+          162277.83330000006
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 43.960740428002644,
+        "recomputed_lon": -72.47113915797885,
+        "source_output_lat": 43.96074042841999,
+        "source_output_lon": -72.47113915797026,
+        "max_error_degrees": 4.1734438127605245e-10,
+        "uncertainty_m": null,
+        "precision": null,
+        "dec_dms_corroboration": {
+          "lat": 43.960686111111116,
+          "lon": -72.47115833333334,
+          "separation_m": 6.231727805399136,
+          "note": "DEC site reference point, datum not explicitly identified in report. Corroborates facility vicinity and address; not a claim of survey agreement or replacement coordinates."
+        }
+      },
+      "site_meaning": "standalone_site",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1616",
+      "decision": "confirmed",
+      "reason": "Workbook row 325 identifies VELCO CRVP Hartford bank split (25 to two 12.5 MVAr banks). CRVP slide 8 independently identifies the exact work at Hartford substation and K26 terminal, and slide 9 identifies the VELCO Hartford 115/46 kV yard. PSD ESITEID 120596 is explicitly HARTFORD VELCO, utility GMP/VELCO, SITETYPE SUBSTATION, in Hartford VT. Review of all Hartford inventory entries distinguishes this named transmission site from Wilder, Quechee, Deweys Mills and GMP SUB_70/SUB_71. Confirmation is for the identified government-published substation site point, not individual capacitor placement; no numeric positional accuracy is supplied.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.169296Z",
+      "candidate_sha256": "f71d40292d02a48d7e3974a418b453a0747a31264972d50b30fc5d5b407cc667",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/velco-crvp.pdf",
+          "sha256": "dce4ca5078923c93f433f4bcdd7722c9132a8cc2c24afb786de922465ae6f6db"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 325"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          515171.5630999999,
+          131466.28189999983
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 43.68326944514103,
+        "recomputed_lon": -72.31183547058004,
+        "source_output_lat": 43.68326944547906,
+        "source_output_lon": -72.31183547052505,
+        "max_error_degrees": 3.3803360111051006e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "standalone_site",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1033",
+      "decision": "insufficient",
+      "reason": "Workbook explicitly creates Newfane 345/115 kV station, and PSD has a named NEWFANE GMP/VELCO point. Pinned identity evidence does not yet tie the Southern Loop project station to 340 VT Route 30 or corroborate the candidate voltage/site beyond name, utility and town. Obtain a siting/address/facility-ID link; coordinate transformation itself passes.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.171353Z",
+      "candidate_sha256": "03fea5b916514626cd6364c4e19d91eec78d3b54a8abdf9d76cad5c2e45e82c6",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 883"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          487549.0784999998,
+          51967.06430000067
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 42.96772645398884,
+        "recomputed_lon": -72.65262200299061,
+        "source_output_lat": 42.96772645412248,
+        "source_output_lon": -72.65262200303441,
+        "max_error_degrees": 1.3363887774175964e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "standalone_site",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1034",
+      "decision": "insufficient",
+      "reason": "Workbook explicitly names Newfane as a line-loop endpoint, but the same Newfane facility linkage gap as project 1033 remains. Do not infer the endpoint from a matching town/station name alone. If corroborated later, preserve this as a partial endpoint, not a complete line location.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.173319Z",
+      "candidate_sha256": "ec5f8c5fb9653b4938d45dbeaa7de0f49413c988a3aa2d1f25527d831b0137c0",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 882"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          487549.0784999998,
+          51967.06430000067
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 42.96772645398884,
+        "recomputed_lon": -72.65262200299061,
+        "source_output_lat": 42.96772645412248,
+        "source_output_lon": -72.65262200303441,
+        "max_error_degrees": 1.3363887774175964e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "partial_endpoint",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1171",
+      "decision": "insufficient",
+      "reason": "PSD candidate is WEST RUTLAND VMPD, with GMP/VELCO utility label. Workbook calls for VELCO 115 kV capacitor work. Several distinct West Rutland substations exist; pinned sources do not establish that the VMPD-named point is the exact VELCO 115 kV yard/bank location. Need voltage/address or site-plan corroboration, not substitution of a nearby substation.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.175321Z",
+      "candidate_sha256": "491b9c4225c2802d963abba1e02e932f1ccf4973784db9231f276397fc4bbd0c",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 768"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          454975.0948999999,
+          126121.5859999992
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 43.633956228834315,
+        "recomputed_lon": -73.05796639858805,
+        "source_output_lat": 43.63395622915792,
+        "source_output_lon": -73.05796639875031,
+        "max_error_degrees": 3.2360247814722243e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "standalone_site",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1250",
+      "decision": "insufficient",
+      "reason": "Same unresolved WEST RUTLAND VMPD facility link as 1171, plus no pinned evidence locates K30/K34 breakers or planned 115/46 kV transformer at this candidate site. Cancelled status remains unchanged; a confirmed proposed location would not establish construction.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.177323Z",
+      "candidate_sha256": "ef9eb2b91076d8d5255ea1b3c9bd6b7a498a1ba725c0ba29eebcee23f171b4f7",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 691"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          454975.0948999999,
+          126121.5859999992
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 43.633956228834315,
+        "recomputed_lon": -73.05796639858805,
+        "source_output_lat": 43.63395622915792,
+        "source_output_lon": -73.05796639875031,
+        "max_error_degrees": 3.2360247814722243e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "standalone_site",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1282",
+      "decision": "confirmed",
+      "reason": "Workbook row 659 explicitly identifies VELCO K27 Williston-Tafts Corner 115 kV line. Independently inspected VELCO 2023-09-29 Tafts filing cover and Haas testimony PDF page 5 identify the existing VELCO Tafts Corner 115 kV substation at 525 Sycamore Street, Williston, exactly matching PSD ESITEID 292242, TAFTS CORNERS, VEC/VELCO. This establishes only the named Tafts endpoint; the line remains partial and cancelled. The separate 2023 breaker proposal is used only to identify the pre-existing facility, not equated with this line project.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.179217Z",
+      "candidate_sha256": "681f41425a6d10a564c30aef7b33851cd3fc9b4438cda37deafee633e3e365de",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 659"
+        },
+        {
+          "file": "/private/tmp/f38-review-extra/tafts-cover.pdf",
+          "url": "https://www.velco.com/library/document/download/8009/VELCO%20%20Filing%20Cover%20Letter.pdf",
+          "sha256": "6a63a706e380fc7394274920bfb8ff5b13a67453fe59dd2bf8f617100369aa48",
+          "source_date": "2023-09-29",
+          "locator": "PDF page 1"
+        },
+        {
+          "file": "/private/tmp/f38-review-extra/tafts-haas.pdf",
+          "url": "https://www.velco.com/library/document/download/7988/Prefiled%20Testimony%20of%20D.%20Haas.pdf",
+          "sha256": "f0a9e6b39011889d36cd39bf40ac22123bc697b322df2943fafd24aedff640e2",
+          "source_date": "2023-09-29",
+          "locator": "PDF pages 5-7 (printed testimony pages 2-4)"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          451294.48110000044,
+          215784.6144999992
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 44.44066177397395,
+        "recomputed_lon": -73.11182303420411,
+        "source_output_lat": 44.44066177452787,
+        "source_output_lon": -73.11182303438457,
+        "max_error_degrees": 5.539178005165013e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "partial_endpoint",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1753",
+      "decision": "confirmed",
+      "reason": "Workbook row 188 explicitly identifies planned VELCO K27 Williston-Tafts Corner 115 kV reconductoring. Independently inspected Tafts cover and Haas testimony identify the existing VELCO 115 kV facility at 525 Sycamore Street, matching PSD ESITEID 292242. Only Tafts endpoint is confirmed, with the Williston endpoint unresolved. This is a utility-submitted E911 facility site point; the 2023 breaker proposal is facility identity evidence only and does not change line-project facts or status.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.181128Z",
+      "candidate_sha256": "078aca1cacdc8ffe12e02254058439a6acfed8de44c9ade07b87e3f940d07a26",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 188"
+        },
+        {
+          "file": "/private/tmp/f38-review-extra/tafts-cover.pdf",
+          "url": "https://www.velco.com/library/document/download/8009/VELCO%20%20Filing%20Cover%20Letter.pdf",
+          "sha256": "6a63a706e380fc7394274920bfb8ff5b13a67453fe59dd2bf8f617100369aa48",
+          "source_date": "2023-09-29",
+          "locator": "PDF page 1"
+        },
+        {
+          "file": "/private/tmp/f38-review-extra/tafts-haas.pdf",
+          "url": "https://www.velco.com/library/document/download/7988/Prefiled%20Testimony%20of%20D.%20Haas.pdf",
+          "sha256": "f0a9e6b39011889d36cd39bf40ac22123bc697b322df2943fafd24aedff640e2",
+          "source_date": "2023-09-29",
+          "locator": "PDF pages 5-7 (printed testimony pages 2-4)"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          451294.48110000044,
+          215784.6144999992
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 44.44066177397395,
+        "recomputed_lon": -73.11182303420411,
+        "source_output_lat": 44.44066177452787,
+        "source_output_lon": -73.11182303438457,
+        "max_error_degrees": 5.539178005165013e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "partial_endpoint",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1284",
+      "decision": "insufficient",
+      "reason": "PSD VELCO MIDDLEBURY record says SITETYPE UTILITY with correction note requesting Substation. Additional public Middlebury/VELCO documents support a Quarry Road station, but the pinned candidate package lacks reviewed K30 terminal-to-facility evidence. Several distinct Middlebury facilities exist. Keep candidate unresolved until exact K30 endpoint site is established.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.183158Z",
+      "candidate_sha256": "a026961b8ca4e2ae120ca1d9d2b54861f09ac14b625392eb078b427c06b9bd5a",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 657"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          449208.9960000003,
+          168432.6018000003
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 44.01438268782114,
+        "recomputed_lon": -73.13343186205896,
+        "source_output_lat": 44.01438268825329,
+        "source_output_lon": -73.13343186224441,
+        "max_error_degrees": 4.3215209188929293e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "partial_endpoint",
+      "activation_authorized": false
+    },
+    {
+      "project_id": "iso-ne:1752",
+      "decision": "insufficient",
+      "reason": "The workbook says replace a line drop for K30 Middlebury-Florance. It does not specify which terminal contains this localized work; choosing Middlebury merely because it is a line endpoint can falsely locate the project. Need a project-specific terminal/site link even if the Middlebury substation itself is identified.",
+      "reviewer": "f38_contract_review",
+      "producer": "f38_other_research",
+      "reviewed_at": "2026-09-27T01:22:27.185054Z",
+      "candidate_sha256": "d6315f3b625fe453de44bc060d906b27203bf0775c311489f2e21304f071ea47",
+      "evidence_files": [
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-meta.json",
+          "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-native.json",
+          "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0"
+        },
+        {
+          "file": "/private/tmp/f38-other-research/vermont-open-wgs84.json",
+          "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718"
+        },
+        {
+          "file": "/private/tmp/f38-source-replay/data/national/cache/final_rsp_project_list_jun_2026.xlsx",
+          "sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d",
+          "locator": "RSP_sortable row 189"
+        }
+      ],
+      "numeric_coordinate_review": {
+        "original_crs": "EPSG:32145",
+        "original_xy": [
+          449208.9960000003,
+          168432.6018000003
+        ],
+        "method": "PROJ inverse Vermont SPCS83 to NAD83 longitude/latitude, then inverse ESRI:108190 WGS_1984_(ITRF00)_To_NAD_1983; pyproj independent of ArcGIS producer",
+        "pyproj_version": "3.8.0",
+        "proj_version": "9.8.1",
+        "recomputed_lat": 44.01438268782114,
+        "recomputed_lon": -73.13343186205896,
+        "source_output_lat": 44.01438268825329,
+        "source_output_lon": -73.13343186224441,
+        "max_error_degrees": 4.3215209188929293e-10,
+        "uncertainty_m": null,
+        "precision": null
+      },
+      "site_meaning": "partial_endpoint",
+      "activation_authorized": false
+    }
+  ],
+  "extra_sources": [
+    {
+      "file": "/private/tmp/f38-review-extra/tafts-cover.pdf",
+      "url": "https://www.velco.com/library/document/download/8009/VELCO%20%20Filing%20Cover%20Letter.pdf",
+      "sha256": "6a63a706e380fc7394274920bfb8ff5b13a67453fe59dd2bf8f617100369aa48",
+      "source_date": "2023-09-29",
+      "locator": "PDF page 1"
+    },
+    {
+      "file": "/private/tmp/f38-review-extra/tafts-haas.pdf",
+      "url": "https://www.velco.com/library/document/download/7988/Prefiled%20Testimony%20of%20D.%20Haas.pdf",
+      "sha256": "f0a9e6b39011889d36cd39bf40ac22123bc697b322df2943fafd24aedff640e2",
+      "source_date": "2023-09-29",
+      "locator": "PDF pages 5-7 (printed testimony pages 2-4)"
+    }
+  ]
+}

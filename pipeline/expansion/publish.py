@@ -6,6 +6,7 @@ No network or database writes. F30 invokes this after validating its original sn
 from __future__ import annotations
 
 import math
+import re
 from collections import Counter
 from copy import deepcopy
 from datetime import UTC, datetime
@@ -31,9 +32,17 @@ def utc(value: str) -> datetime:
     return result
 
 
+def check_evidence(evidence: dict) -> None:
+    if not evidence["facts"].strip() or not evidence["access_review"].strip():
+        raise ValueError("evidence requires supported facts and source access review")
+    utc(evidence["retrieved_at"])
+
+
 def check_point(point: dict) -> None:
     original = point["original_geometry"]
     x, y = original["coordinates"]
+    if not all(math.isfinite(value) for value in (x, y, point["lat"], point["lon"])):
+        raise ValueError("coordinates must be finite")
     if original["crs"] in {"EPSG:3857", "EPSG:102100"}:
         expected = [math.degrees(x / 6378137), math.degrees(math.atan(math.sinh(y / 6378137)))]
         if abs(point["lon"] - expected[0]) > 1e-7 or abs(point["lat"] - expected[1]) > 1e-7:
@@ -51,9 +60,7 @@ def check_point(point: dict) -> None:
     if not (-74 < point["lon"] < -66 and 40 < point["lat"] < 48):
         raise ValueError("this release is bounded to New England, or coordinate axes were reversed")
     for evidence in point["geometry_evidence"] + point["identity_evidence"]:
-        if not evidence["facts"].strip() or not evidence["access_review"].strip():
-            raise ValueError("evidence requires supported facts and source access review")
-        utc(evidence["retrieved_at"])
+        check_evidence(evidence)
 
 
 def check_record(record: dict, project: dict) -> str:
@@ -88,10 +95,14 @@ def check_record(record: dict, project: dict) -> str:
         if precision == "unknown":
             if date is not None:
                 raise ValueError("unknown event dates must remain null")
-        elif not isinstance(date, str) or len(date) != {"day": 10, "month": 7, "year": 4}[precision]:
+        elif not isinstance(date, str) or not re.fullmatch(
+            {"day": r"[0-9]{4}-[0-9]{2}-[0-9]{2}", "month": r"[0-9]{4}-[0-9]{2}", "year": r"[0-9]{4}"}[precision], date
+        ):
             raise ValueError("event date does not preserve declared precision")
         else:
             datetime.fromisoformat(date + {"year": "-01-01", "month": "-01", "day": ""}[precision])
+        for evidence in event["evidence"]:
+            check_evidence(evidence)
         if event["native_project_link"] != project["native_id"]:
             raise ValueError("event is not explicitly linked to the native project")
     if not record["reviews"]:

@@ -1,0 +1,65 @@
+[
+  {
+    "bytes": 96847,
+    "file": "czm-ne-features.json",
+    "retrieved_utc": "2026-09-27T01:15:18.205500+00:00",
+    "sha256": "1d55ac72820bf82615c80d38dcbac86d6ff0e26c872e532814ace81b2f4b24f1",
+    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/New_England_Electrical_Transmission_Substations/FeatureServer/2/query?where=1%3D1&outFields=*&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=OBJECTID"
+  },
+  {
+    "bytes": 3648,
+    "file": "czm-ne-item.json",
+    "retrieved_utc": "2026-09-27T01:14:37.003146+00:00",
+    "sha256": "e213ccfbaf0bb2435175c6903deee008dc3ec16168f242ce9913c721a0f9c23b",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/e8f662e3baa5424481fabea06c621cf3?f=pjson"
+  },
+  {
+    "bytes": 46250,
+    "file": "czm-ne-metadata.xml",
+    "retrieved_utc": "2026-09-27T01:14:53.380956+00:00",
+    "sha256": "061927af6a5fe0157d7b719511c0c6d64b26a40c7f6db8da27876ff217d1a436",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/e8f662e3baa5424481fabea06c621cf3/info/metadata/metadata.xml"
+  },
+  {
+    "bytes": 12386,
+    "file": "czm-ne-layer.json",
+    "retrieved_utc": "2026-09-27T01:16:04.530969+00:00",
+    "sha256": "ef6ed34fbcd302457c45ff1bdcaa71be77c25f3ceda087b3090463615e0ccfb6",
+    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/New_England_Electrical_Transmission_Substations/FeatureServer/2?f=pjson"
+  },
+  {
+    "bytes": 227270,
+    "file": "ri-rirp-fact-memo.pdf",
+    "retrieved_utc": "2026-09-27T01:17:55.528415+00:00",
+    "sha256": "5920a20308ed5f9a86c860658d390b250ad8118435a6aae154d9f7a7ca5a7edb",
+    "url": "https://ripuc.ri.gov/sites/g/files/xkgbur841/files/efsb/efsb/SB2008_02_NG_PHFM.pdf"
+  },
+  {
+    "bytes": 3149612,
+    "file": "ri-efsb-order-65.pdf",
+    "retrieved_utc": "2026-09-27T01:17:22.236358+00:00",
+    "sha256": "f2c81a52f2b2f0fba9b2eadb4790a414991cb289f9a9dabae3ebfca223a1dc12",
+    "url": "https://ripuc.ri.gov/sites/g/files/xkgbur841/files/efsb/EFSB_-Order-65.pdf"
+  },
+  {
+    "bytes": 69909,
+    "file": "omp-ne-substations.json",
+    "retrieved_utc": "2026-09-27T01:19:01.909106+00:00",
+    "sha256": "d43565385e0772f037fb04ad2bb490971cce2eac3ecad93749122a5aedb7f979",
+    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/OMP_2021_18Nov2021/FeatureServer/4/query?where=STATE%20IN%20('MA','RI','CT','NH','VT','ME')&outFields=*&returnGeometry=true&f=json&resultRecordCount=1000"
+  },
+  {
+    "bytes": 17065,
+    "file": "omp-layer4.json",
+    "retrieved_utc": "2026-09-27T01:18:39.346512+00:00",
+    "sha256": "16ff9c58c5eda5937778ea04b53782139ac823a699830abbb6da64603084f065",
+    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/OMP_2021_18Nov2021/FeatureServer/4?f=pjson"
+  },
+  {
+    "bytes": 4909,
+    "file": "omp-item.json",
+    "retrieved_utc": "2026-09-27T01:18:14.090523+00:00",
+    "sha256": "269eda9082839b33ae6217a1befabf5e9ca97c7138805ff6b0911b22e30004ad",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/bdaa5690ba0744c39cc8519eb189abaf?f=pjson"
+  }
+]
