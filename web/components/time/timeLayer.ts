@@ -51,6 +51,8 @@ export interface RuleRings {
 }
 /** Sweep progress during the intro: the year reached and how many dated items are filed in service by then. */
 export type SweepState = { years: number; shown: number; total: number } | null;
+/** Dawn reveal progress (F53): how many drawn projects the line has reached, or null when it's over. */
+export type DawnState = { shown: number; total: number } | null;
 
 const INK: RGB = hex("#f4efe6");
 /** Out-of-scope trace: no data colour, so it never reads as a tier, a utility or an undated project. */
@@ -59,6 +61,9 @@ const BRIGHT: Record<Emphasis, number> = { out: 0.75, normal: 1, dim: 0.18, hot:
 const RULE_M = 40_233.6; // 25 statute miles, the overlap rule's radius
 const GHOST = 0.2; // brightness of items filed after the scrubber's date
 const SIZE: Record<Emphasis, number> = { out: 6, normal: 10, dim: 7, hot: 16, sel: 22 };
+const DAWN: RGB = hex("#ffd9a0");
+/** A reached pillar grows to its date over this long, then its bead flashes. */
+const DAWN_GROW_MS = 900;
 
 // One point shader for beads (0), ground rings (1) and ruler ticks (2). Additive, so draw order doesn't matter.
 const POINT_VS = /* glsl */ `
@@ -156,7 +161,7 @@ function split(z0: number, z1: number, zt: number): { below: [number, number] | 
 
 export function createTimeLayer(
   ml: Ml,
-  opts: { onFrame: (p: Projected) => void; onSweep?: (s: SweepState) => void },
+  opts: { onFrame: (p: Projected) => void; onSweep?: (s: SweepState) => void; onDawn?: (s: DawnState) => void },
 ) {
   let map: MlMap | null = null;
   let renderer: THREE.WebGLRenderer | null = null;
@@ -178,6 +183,9 @@ export function createTimeLayer(
   let sweep = Infinity;
   let sweepAnim: { start: number; ms: number; to: number } | null = null;
   let asOf: number | null = null;
+  // Dawn reveal (F53): a meridian crossing east to west; each item grows once the line has reached its longitude.
+  let dawn: { start: number; ms: number; east: number; west: number; south: number; north: number } | null = null;
+  let dawnNow = 0;
   let rules: { a: [number, number, number]; b?: [number, number, number]; start: number } | null = null;
   // Last frame's screen geometry for picking: pillar foot and top per item.
   let hits: { key: string; x0: number; y0: number; x1: number; y1: number }[] = [];
@@ -185,7 +193,7 @@ export function createTimeLayer(
   let calm = 1;
   let settle: number | null = null;
   const calmNow = (now: number) => {
-    if (!map || !focus?.quiet || sweepAnim) return 1;
+    if (!map || !focus?.quiet || sweepAnim || dawn) return 1;
     const t = settle === null ? 1 : Math.min((now - settle) / 1200, 1);
     if (t >= 1) settle = null;
     // Quantized, so zooming rebuilds a few dozen times rather than every frame.
@@ -200,6 +208,8 @@ export function createTimeLayer(
   const rangesBelow = lines(7);
   const rangesAbove = lines(7);
   const ruler = lines(1.2);
+  const dawnLine = lines(2);
+  const dawnGlow = lines(14);
   const dimSolid = lines(1.6);
   const dimDashed = lines(1.1, { dashed: true });
   const beadsBelow = points(POINT_VS, POINT_FS);
@@ -225,14 +235,14 @@ export function createTimeLayer(
 
   // Draw order: ground, everything below today, the glass sheet, everything above it, then the drafting marks.
   const ordered: THREE.Object3D[] = [
-    ruleA.mesh, ruleB.mesh, links.mesh, linksHot.mesh, anchors, halos, pillarsBelow.mesh, rangesBelow.mesh, beadsBelow, plane,
+    ruleA.mesh, ruleB.mesh, dawnGlow.mesh, dawnLine.mesh, links.mesh, linksHot.mesh, anchors, halos, pillarsBelow.mesh, rangesBelow.mesh, beadsBelow, plane,
     pillarsAbove.mesh, pillarsSel.mesh, rangesAbove.mesh, beadsAbove, ruler.mesh, dimDashed.mesh, dimSolid.mesh, marks,
   ];
   ordered.forEach((o, i) => {
     o.renderOrder = i;
     scene.add(o);
   });
-  const allLines = [links, linksHot, pillarsBelow, pillarsAbove, pillarsSel, rangesBelow, rangesAbove, ruler, dimSolid, dimDashed, ruleA, ruleB];
+  const allLines = [dawnLine, dawnGlow, links, linksHot, pillarsBelow, pillarsAbove, pillarsSel, rangesBelow, rangesAbove, ruler, dimSolid, dimDashed, ruleA, ruleB];
   const allPoints = [beadsBelow, beadsAbove, anchors, marks, halos];
 
   const local = (lng: number, lat: number): [number, number] => {
@@ -240,6 +250,19 @@ export function createTimeLayer(
     return [(m.x - origin.x) / unit, -(m.y - origin.y) / unit];
   };
   const topOf = (s: Span) => (s.kind === "exact" ? s.day : s.kind === "range" ? s.to : 0) / 365.25;
+
+  // Ease in-out over the crossing; an item's reach time inverts it, so the line and the pillars stay in step.
+  const dawnLng = (t: number) => (dawn ? dawn.east + (dawn.west - dawn.east) * (1 - Math.cos(Math.PI * t)) / 2 : 0);
+  const dawnReach = (lng: number) => {
+    if (!dawn) return 0;
+    const u = dawn.east === dawn.west ? 0 : (dawn.east - lng) / (dawn.east - dawn.west);
+    return dawn.start + (dawn.ms * Math.acos(1 - 2 * Math.min(Math.max(u, 0), 1))) / Math.PI;
+  };
+  /** 0 before the line reaches the item, 1 once its pillar has grown; 1 with no dawn running. */
+  const dawnGrow = (lng: number) => {
+    if (!dawn) return 1;
+    return Math.min(Math.max((dawnNow - dawnReach(lng)) / DAWN_GROW_MS, 0), 1);
+  };
 
   function rebuild() {
     const byKey = new Map(items.map((it) => [it.key, it]));
@@ -252,6 +275,7 @@ export function createTimeLayer(
     const sweeping = sweepAnim !== null;
     let shown = 0;
     let dated = 0;
+    let risen = 0;
 
     // Dim first, bright last, so highlighted pillars read on top even with additive blending.
     const rank = { out: -1, dim: 0, normal: 1, hot: 2, sel: 3 } as const;
@@ -261,9 +285,12 @@ export function createTimeLayer(
         rings.push({ p: [...local(it.lng, it.lat), 0], c: TRACE, size: SIZE.out, shape: 1, bright: BRIGHT.out });
         continue;
       }
+      const g = dawnGrow(it.lng);
+      if (g <= 0) continue;
+      risen++;
       const c = hex(it.color);
       const [x, y] = local(it.lng, it.lat);
-      const full = topOf(it.span);
+      const full = topOf(it.span) * ease(g);
       // Scrubber: anything filed after the chosen date is a ghost.
       const k = BRIGHT[e] * (asOf !== null && it.span.kind !== "unknown" && full > asOf ? GHOST : 1);
       // Quiet overview: an unfocused point is a dim stem (q) with a smaller-dimmed dot (dot) and no halo (lit).
@@ -280,7 +307,11 @@ export function createTimeLayer(
       const top = Math.min(full, sweep);
       const reached = sweep >= full;
       if (reached) shown++;
-      const flash = sweeping && reached ? Math.max(0, 1 - (sweep - full) / 0.9) : 0;
+      // Dawn: the bead rides the growing pillar and flashes as it lands; the sweep flashes as it passes.
+      const riding = g < 1;
+      const landed = dawn ? (dawnNow - DAWN_GROW_MS) : 0;
+      const flash = dawn ? (riding ? 0.4 : Math.max(0, 1 - (landed - dawnReach(it.lng)) / 700))
+        : sweeping && reached ? Math.max(0, 1 - (sweep - full) / 0.9) : 0;
       // The pillar: a beam of light from the ground anchor up to the date, brightening with height.
       const beamTop = it.span.kind === "range" ? Math.min(it.span.from / 365.25, top) : top;
       const beam = split(0, beamTop, zt);
@@ -298,13 +329,13 @@ export function createTimeLayer(
         if (beam.above) segs.pa.push(beamSeg(beam.above));
       }
       if (it.span.kind === "exact") {
-        if (!reached) continue;
+        if (!reached && !riding) continue;
         (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: it.outline ? 1 : 0, bright: k * (1 + 1.1 * flash) * dot });
         if (it.ringed) (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * 2, shape: 1, bright: k * 0.8 * dot });
         if (e !== "dim" && k > GHOST && lit > 0) glow.push({ p: [x, y, top], c, size: SIZE[e] * (3.2 + 2.2 * flash), shape: 3, bright: k * (0.55 + 0.9 * flash) * lit });
       } else {
         // A month or year: frosted column over the whole span, with rings at both ends. No day is picked.
-        if (sweep < it.span.from / 365.25) continue;
+        if (top < it.span.from / 365.25) continue;
         const col = split(it.span.from / 365.25, top, zt);
         const colSeg = ([z0, z1]: [number, number]): Seg => ({ a: [x, y, z0], b: [x, y, z1], ca: mul(c, 0.32 * k * q), cb: mul(c, 0.32 * k * q) });
         if (col.below) segs.rb.push(colSeg(col.below));
@@ -323,6 +354,29 @@ export function createTimeLayer(
     fillPoints(anchors, rings);
     fillPoints(halos, glow);
     if (sweeping) opts.onSweep?.({ years: sweep, shown, total: dated });
+    if (dawn) opts.onDawn?.({ shown: risen, total: items.length });
+
+    // The dawn line: a warm meridian over the drawn latitudes, brightest mid-span, fading after it reaches the west.
+    const dawnSegs: Seg[] = [];
+    const glowSegs: Seg[] = [];
+    if (dawn && items.length) {
+      const t = (dawnNow - dawn.start) / dawn.ms;
+      const fade = t < 0 ? 0 : t <= 1 ? Math.min(t * 8, 1) : Math.max(0, 1 - (t - 1) * (dawn.ms / 600));
+      const lo = dawn.south - 1;
+      const hi = dawn.north + 1;
+      const lng = dawnLng(Math.min(Math.max(t, 0), 1));
+      const n = 24;
+      for (let i = 0; i < n; i++) {
+        const k0 = Math.sin((Math.PI * i) / n) * fade;
+        const k1 = Math.sin((Math.PI * (i + 1)) / n) * fade;
+        const a: [number, number, number] = [...local(lng, lo + ((hi - lo) * i) / n), 0];
+        const b: [number, number, number] = [...local(lng, lo + ((hi - lo) * (i + 1)) / n), 0];
+        dawnSegs.push({ a, b, ca: mul(DAWN, k0), cb: mul(DAWN, k1) });
+        glowSegs.push({ a, b, ca: mul(DAWN, 0.14 * k0), cb: mul(DAWN, 0.14 * k1) });
+      }
+    }
+    fillLines(dawnLine, dawnSegs);
+    fillLines(dawnGlow, glowSegs);
 
     // Ground links: centre to centre, never a route.
     const link = (hot: boolean) =>
@@ -393,7 +447,8 @@ export function createTimeLayer(
   function frameMatrix(args: CustomRenderMethodInput): THREE.Matrix4 {
     const c = map!.getCenter();
     const zoom = map!.getZoom();
-    const yearPx = yearPxAt(zoom, fitYears ?? maxYears, map!.getCanvas().clientHeight * 0.75);
+    // A pair's ground line sits mid-frame (the side-on flight), so its axis gets the room above it, not 75% (F53 4).
+    const yearPx = yearPxAt(zoom, fitYears ?? maxYears, map!.getCanvas().clientHeight * (fitYears === null ? 0.75 : 0.42));
     const metresPerYear = yearPx * metersPerPixel(c.lat, zoom) * Math.max(heightFactor, 1e-4);
     const main = new THREE.Matrix4().fromArray(args.defaultProjectionData.mainMatrix as unknown as number[]);
     const localM = new THREE.Matrix4()
@@ -432,6 +487,16 @@ export function createTimeLayer(
           sweepAnim = null;
           settle = now;
           opts.onSweep?.(null);
+        }
+        rebuild();
+      }
+      if (dawn) {
+        dawnNow = now;
+        // Done once the last pillar has grown and the line has faded.
+        if (now > dawn.start + dawn.ms + Math.max(DAWN_GROW_MS, 600) + 700) {
+          dawn = null;
+          settle = now;
+          opts.onDawn?.(null);
         }
         rebuild();
       }
@@ -532,6 +597,7 @@ export function createTimeLayer(
     },
     /** Replay the intro sweep: pillars grow in date order over `ms` (0 = show everything at once). */
     sweepIn(ms: number, delay = 0) {
+      dawn = null;
       if (ms <= 0) {
         sweep = Infinity;
         sweepAnim = null;
@@ -539,6 +605,25 @@ export function createTimeLayer(
       } else {
         sweep = 0;
         sweepAnim = { start: performance.now() + delay, ms, to: Math.ceil(maxYears) + 0.4 };
+      }
+      rebuild();
+    },
+    /**
+     * Dawn reveal (F53): pillars rise east to west as a warm meridian crosses `box` [west, south, east, north] over `ms`
+     * (0 = at once). Items beyond the box's west edge (Alaska, Hawaii) rise as the line arrives there.
+     */
+    dawnIn(ms: number, delay = 0, box?: readonly [number, number, number, number]) {
+      sweep = Infinity;
+      sweepAnim = null;
+      if (ms <= 0 || !items.length) {
+        dawn = null;
+        opts.onDawn?.(null);
+      } else {
+        const lngs = items.map((it) => it.lng);
+        const lats = items.map((it) => it.lat);
+        const [west, south, east, north] = box ?? [Math.min(...lngs), Math.min(...lats), Math.max(...lngs), Math.max(...lats)];
+        dawn = { start: performance.now() + delay, ms, east, west, south, north };
+        dawnNow = performance.now();
       }
       rebuild();
     },
