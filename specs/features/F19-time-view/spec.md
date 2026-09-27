@@ -42,6 +42,8 @@ Motion and meaning, not more objects. Build order; each step ships only if the o
     Pillars filed after it are ghosted, and the sheet and its label read "As of <date>", never "Today". Reset returns
     to the analysis date.
 12. **Loading.** The two-ring mark draws itself while the basemap loads.
+13. **List preview (issue #123).** Hovering or focusing a pair in the list lights its two pillars, draws its 25-mile
+    circles and dims the rest before any click; a selected pair takes precedence.
 
 ## Requirements
 - Only stored values are shown: no recomputed distance or gap, no imputed dates. Review state shown as stored.

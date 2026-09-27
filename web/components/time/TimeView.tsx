@@ -105,6 +105,8 @@ export function TimeView({
   const [pairId, setPairId] = useState<string | null>(null);
   const [projectKey, setProjectKey] = useState<string | null>(null);
   const [hover, setHover] = useState<string | null>(null);
+  // A pair under the pointer (or keyboard focus) in the list: previewed on the map before any click.
+  const [preview, setPreview] = useState<string | null>(null);
   const [flat, setFlat] = useState(false);
   const [yearPx, setYearPx] = useState(30);
   const [ready, setReady] = useState(false);
@@ -166,6 +168,7 @@ export function TimeView({
     [pairs, view],
   );
   const pair = pairId ? (pairs.find((p) => p.id === pairId) ?? null) : null;
+  const previewed = !pair && preview ? (pairs.find((p) => p.id === preview) ?? null) : null;
   const pa = pair ? byKey.get(pair.a) : undefined;
   const pb = pair ? byKey.get(pair.b) : undefined;
   const project = projectKey ? byKey.get(projectKey) : undefined;
@@ -308,10 +311,11 @@ export function TimeView({
   const emphasis = useCallback(
     (key: string): Emphasis => {
       if (pair) return key === pair.a || key === pair.b ? "sel" : key === hover ? "hot" : "dim";
+      if (previewed) return key === previewed.a || key === previewed.b ? "hot" : "dim";
       if (projectKey) return key === projectKey ? "sel" : related.has(key) || key === hover ? "hot" : "dim";
       return key === hover ? "hot" : "normal";
     },
-    [pair, projectKey, related, hover],
+    [pair, previewed, projectKey, related, hover],
   );
 
   // The ruler stands east of the data (over open water) in the overview; for a pair it stands at the pair's midpoint,
@@ -333,29 +337,35 @@ export function TimeView({
         .map((p) => ({
         a: p.a,
         b: p.b,
-        hot: p.id === pairId || (!!projectKey && (p.a === projectKey || p.b === projectKey)) || (!!hover && (p.a === hover || p.b === hover)),
+        hot:
+          p.id === pairId ||
+          p.id === previewed?.id ||
+          (!!projectKey && (p.a === projectKey || p.b === projectKey)) ||
+          (!!hover && (p.a === hover || p.b === hover)),
       })),
       dimension: dimension && pair ? { a: pair.a, b: pair.b } : null,
       ruler: rulerAt,
     });
-  }, [ready, emphasis, visible, pairId, projectKey, hover, dimension, pair, rulerAt]);
+  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt]);
 
   useEffect(() => {
     layerRef.current?.setYearPx(yearPx);
   }, [yearPx, ready]);
 
-  // The 25-mile rule, drawn around both stored centers of the selected pair.
+  // The 25-mile rule, drawn around both stored centers of the selected (or previewed) pair.
+  const ra = pa ?? (previewed ? byKey.get(previewed.a) : undefined);
+  const rb = pb ?? (previewed ? byKey.get(previewed.b) : undefined);
   useEffect(() => {
     if (!ready) return;
     layerRef.current?.setRules(
-      pa?.center && pb?.center
+      ra?.center && rb?.center
         ? {
-            a: { lng: pa.center.lon, lat: pa.center.lat, color: COLOR[pa.utility] },
-            b: { lng: pb.center.lon, lat: pb.center.lat, color: COLOR[pb.utility] },
+            a: { lng: ra.center.lon, lat: ra.center.lat, color: COLOR[ra.utility] },
+            b: { lng: rb.center.lon, lat: rb.center.lat, color: COLOR[rb.utility] },
           }
         : null,
     );
-  }, [ready, pa, pb]);
+  }, [ready, ra, rb]);
 
   useEffect(() => {
     layerRef.current?.setAsOf(asOf);
@@ -782,7 +792,13 @@ export function TimeView({
                       stopTour();
                       selectPair(p.id === pairId ? null : p.id);
                     }}
-                    onMouseEnter={() => setHover(null)}
+                    onMouseEnter={() => {
+                      setHover(null);
+                      setPreview(p.id);
+                    }}
+                    onMouseLeave={() => setPreview(null)}
+                    onFocus={() => setPreview(p.id)}
+                    onBlur={() => setPreview(null)}
                   >
                     <span className={s.rank}>{String(i + 1).padStart(2, "0")}</span>
                     <span className={s.pairNames}>
