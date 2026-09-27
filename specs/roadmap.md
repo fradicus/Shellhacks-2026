@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51, F52]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51, F52, F53]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
@@ -381,3 +381,15 @@ follow stored state, selected-pair layout fixes, and the Gemini page's default t
 F48 adds dataset-scoped project/utility/ID search before pair pagination; F19 adds
 the search form and filed owner/source/native-ID labels. Ship sequential owner PRs
 against the current matching contract, preserving F52 and the quiet overview.
+
+## Overlaps story
+
+The user asked Claude local to redesign the `/time` story as the main demo and video footage.
+[C58](decisions/C58-overlaps-story.md) assigns [F53](features/F53-overlaps-story/spec.md): a 35-second film
+in seven beats (an east-to-west dawn reveal in 3D, a region, North Dakota, its best-timed pair and its evidence, a
+closer pair years apart, and a pull back to the nation), with cinema mode and a `?story` link. Like F52, it ships as `[FIX-F19]` PRs, and it
+changes no data or ranking.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F53 | Overlaps story | B | frontend-engineer | 7 | F19, F52 | allowed |
