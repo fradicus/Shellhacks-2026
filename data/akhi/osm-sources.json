@@ -1,0 +1,23 @@
+{
+  "named_substations": {
+    "AK": 26,
+    "HI": 144
+  },
+  "osm-ak.json": {
+    "bytes": 33723,
+    "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-AK\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+    "retrieved_at": "2026-09-27T09:43:16Z",
+    "sha256": "dd6640b4d5c34f47ffe0e2357538343d7fff88d8675f5868e3f8b071b9fb58ef",
+    "url": "https://overpass-api.de/api/interpreter"
+  },
+  "osm-hi.json": {
+    "bytes": 81779,
+    "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-HI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+    "retrieved_at": "2026-09-27T09:44:29Z",
+    "sha256": "25276a46160a7061dc0d3ed6664750e52ca3cd7fccff8dc544b59c36e41fd5e4",
+    "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+  },
+  "publisher": "OpenStreetMap contributors",
+  "rights": "ODbL 1.0; attribution required",
+  "role": "candidate facility geometry only (C33)"
+}

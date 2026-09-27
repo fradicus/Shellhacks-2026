@@ -1,0 +1,2200 @@
+[
+  {
+    "_id": "aea-update-2025-09:ciplink",
+    "center": null,
+    "counties": [],
+    "description": "High-voltage direct current link between the Southern and Central Railbelt via a 38-mile subsea cable, overland cable and converter stations.",
+    "evidence": {
+      "page": 8,
+      "raw": {
+        "cited": [
+          {
+            "page": 8,
+            "quotes": [
+              "CIPLink is a high-voltage direct current transmission system",
+              "38-mile subsea cable"
+            ],
+            "source": "aea-update-2025-09"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "35a5e532c960e1ec4509cf813df4e750182a28dca25bb3f7bed1d9805925c688"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AK (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Cook Inlet PowerLink (CIPLink) HVDC transmission",
+    "native_id": "ciplink",
+    "other_owners": [],
+    "owner": "Alaska Energy Authority",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "aea-update-2025-09",
+    "states": [
+      "02"
+    ],
+    "status": "Preliminary design, route evaluation and environmental review (FY2025).",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "aea-update-2025-09:sterling-quartz-creek",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/264899783 (Quartz Creek), the only facility with that name in the state (C33 name-only). Partial: one of two endpoints.",
+      "lat": 60.473181,
+      "lon": -149.748327
+    },
+    "counties": [],
+    "description": "Upgrade of 39.4 miles of 115 kV line from Sterling to Quartz Creek substation (Kenai Lake) to 230 kV, Kenai Peninsula.",
+    "evidence": {
+      "page": 9,
+      "raw": {
+        "cited": [
+          {
+            "page": 9,
+            "quotes": [
+              "39.4 miles of 115 kilovolt (kV) transmission",
+              "upgrade of the existing 115 kV line to 230 kV"
+            ],
+            "source": "aea-update-2025-09"
+          },
+          {
+            "page": 1,
+            "quotes": [
+              "Sterling Substation to Quartz Creek Substation"
+            ],
+            "source": "usfws-sq-final-ea-2025"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "35a5e532c960e1ec4509cf813df4e750182a28dca25bb3f7bed1d9805925c688"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AK (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sterling",
+          "norm": "STERLING",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/264899783",
+            "lat": 60.4731807,
+            "lon": -149.7483268,
+            "name": "Quartz Creek",
+            "operator": "Chugach Electric Association",
+            "osm_name": null,
+            "voltage": null
+          },
+          "name": "Quartz Creek",
+          "norm": "QUARTZ CREEK",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Sterling to Quartz Creek transmission line upgrade (115 kV to 230 kV)",
+    "native_id": "sterling-quartz-creek",
+    "other_owners": [],
+    "owner": "Alaska Energy Authority",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2025-09-25",
+        "description": "AEA reported construction started on the first section.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "35a5e532c960e1ec4509cf813df4e750182a28dca25bb3f7bed1d9805925c688",
+            "facts": "Construction has started on the first section",
+            "locator": "AEA Update, Alaska Power Association, page 9",
+            "publisher": "Alaska Energy Authority",
+            "retrieved_at": "2026-09-27T09:48:40Z",
+            "source_date": "2025-09-25",
+            "url": "https://www.akenergyauthority.org/Portals/0/Presentations/2025.09.23%20AEA%20Update%20Presentation%20to%20APA%20(Final).pdf?ver=N5G2ggM56ynvtNiMmLqOzw%3D%3D"
+          }
+        ],
+        "id": "aea-update-2025-09:sterling-quartz-creek:source_status:1",
+        "native_project_link": "sterling-quartz-creek",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": "2026-09",
+        "description": "Construction of the Three Johns Road to Mystery Hills section planned to begin.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "98acb6372b55f7bce28005f5de4db9075347804befd474b4a060cccfa2a58cc6",
+            "facts": "three johns road to mystery hills 31-3 to 12-7 september 2026 to april",
+            "locator": "Final Environmental Assessment, Right of Way Authorization for Projects 2 and 3 of the Sterling Substation to Quartz Creek Substation Transmission Line Rebuild, page 16",
+            "publisher": "U.S. Fish and Wildlife Service",
+            "retrieved_at": "2026-09-27T09:42:03Z",
+            "source_date": "2025-09",
+            "url": "https://www.fws.gov/sites/default/files/documents/2025-09/aea-sq-transmission-line-final-ea_september-2025_pdfua.pdf"
+          }
+        ],
+        "id": "aea-update-2025-09:sterling-quartz-creek:planned_milestone:2",
+        "native_project_link": "sterling-quartz-creek",
+        "precision": "month",
+        "type": "planned_milestone"
+      },
+      {
+        "date": "2028",
+        "description": "Construction planned to end (the EA's 2026–2028 window).",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "98acb6372b55f7bce28005f5de4db9075347804befd474b4a060cccfa2a58cc6",
+            "facts": "Construction would take place between 2026 and 2028",
+            "locator": "Final Environmental Assessment, Right of Way Authorization for Projects 2 and 3 of the Sterling Substation to Quartz Creek Substation Transmission Line Rebuild, page 29",
+            "publisher": "U.S. Fish and Wildlife Service",
+            "retrieved_at": "2026-09-27T09:42:03Z",
+            "source_date": "2025-09",
+            "url": "https://www.fws.gov/sites/default/files/documents/2025-09/aea-sq-transmission-line-final-ea_september-2025_pdfua.pdf"
+          }
+        ],
+        "id": "aea-update-2025-09:sterling-quartz-creek:planned_milestone:3",
+        "native_project_link": "sterling-quartz-creek",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "aea-update-2025-09",
+    "states": [
+      "02"
+    ],
+    "status": "Under construction (first section, AEA update of 2025-09-25).",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "aeec-soldotna-sterling:soldotna-sterling",
+    "center": null,
+    "counties": [],
+    "description": "Replacement of the Soldotna–Sterling line on or near its alignment with a double-circuit 230 kV line on steel poles, Kenai Peninsula.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "between the Soldotna Substation and the Sterling Substation",
+              "double circuit 230 kV transmission line on steel poles",
+              "Construction timing is pending budget approval"
+            ],
+            "source": "aeec-soldotna-sterling"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "db474bc0159a04c2711145da346ecd692675153e90b08df2022d7f2a94838d6a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AK (ODbL)",
+      "endpoints": [
+        {
+          "name": "Soldotna",
+          "norm": "SOLDOTNA",
+          "status": "no_facility"
+        },
+        {
+          "name": "Sterling",
+          "norm": "STERLING",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "HOMER ELECTRIC"
+      ],
+      "reason": "endpoints_not_in_osm",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Soldotna to Sterling transmission line upgrade (double-circuit 230 kV)",
+    "native_id": "soldotna-sterling",
+    "other_owners": [],
+    "owner": "Alaska Electric & Energy Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "aeec-soldotna-sterling",
+    "states": [
+      "02"
+    ],
+    "status": "Design substantially complete; construction pending budget approval.",
+    "status_group": "planned"
+  },
+  {
+    "_id": "chugach-girdwood-indian:girdwood-indian",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/432154889 (Girdwood Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 60.941462,
+      "lon": -149.170852
+    },
+    "counties": [],
+    "description": "Rebuild of the 12-mile segment of the 90.4-mile Quartz Creek 115 kV line between the Girdwood and Indian substations.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "between the Girdwood Substation and the Indian Substation",
+              "90.4-mile-long Quartz Creek 115 kilovolt (kV) transmission line"
+            ],
+            "source": "chugach-girdwood-indian"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "7c207e212b6c2134e0101247bba39c50d1370229701c98a8cdf796a39fb834d0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "work planned from January through March 2026, with Project completion expected in March",
+      "value": "2026-03"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AK (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/432154889",
+            "lat": 60.9414617,
+            "lon": -149.1708519,
+            "name": "Girdwood Substation",
+            "operator": "Chugach Electric Association, Inc.",
+            "osm_name": null,
+            "voltage": null
+          },
+          "name": "Girdwood",
+          "norm": "GIRDWOOD",
+          "status": "matched"
+        },
+        {
+          "name": "Indian",
+          "norm": "INDIAN",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "CHUGACH"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Girdwood to Indian transmission line reconstruction (Quartz Creek 115 kV line)",
+    "native_id": "girdwood-indian",
+    "other_owners": [],
+    "owner": "Chugach Electric Association",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2023",
+        "description": "Rebuild planned to begin.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "7c207e212b6c2134e0101247bba39c50d1370229701c98a8cdf796a39fb834d0",
+            "facts": "plans to rebuild a 12-mile-long segment … beginning in 2023",
+            "locator": "Girdwood to Indian Transmission Line Reconstruction Project, page text",
+            "publisher": "Chugach Electric Association",
+            "retrieved_at": "2026-09-27T09:43:06Z",
+            "source_date": null,
+            "url": "https://girdwoodtoindianrebuild.com/"
+          }
+        ],
+        "id": "chugach-girdwood-indian:girdwood-indian:planned_milestone:1",
+        "native_project_link": "girdwood-indian",
+        "precision": "year",
+        "type": "planned_milestone"
+      },
+      {
+        "date": "2026-03",
+        "description": "Project completion expected.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "7c207e212b6c2134e0101247bba39c50d1370229701c98a8cdf796a39fb834d0",
+            "facts": "work planned from January through March 2026, with Project completion expected in March",
+            "locator": "Girdwood to Indian Transmission Line Reconstruction Project, page text",
+            "publisher": "Chugach Electric Association",
+            "retrieved_at": "2026-09-27T09:43:06Z",
+            "source_date": null,
+            "url": "https://girdwoodtoindianrebuild.com/"
+          }
+        ],
+        "id": "chugach-girdwood-indian:girdwood-indian:planned_milestone:2",
+        "native_project_link": "girdwood-indian",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "chugach-girdwood-indian",
+    "states": [
+      "02"
+    ],
+    "status": "Under construction per project page; completion expected March 2026.",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "heco-igp-2026-update:2018-0185",
+    "center": null,
+    "counties": [],
+    "description": "New substation serving load growth in the Department of Transportation harbors area (Oahu).",
+    "evidence": {
+      "page": 15,
+      "raw": {
+        "cited": [
+          {
+            "page": 15,
+            "quotes": [
+              "Auiki Substation (Docket No. 2018-0185)",
+              "being constructed to serve the load growth in",
+              "the dot harbors area"
+            ],
+            "source": "heco-igp-2026-update"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "697c8bf7eafef63489e48d362c16a11cc0b9ed7b7c02d8ef8b89abbd74122383"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "name": "Auiki",
+          "norm": "AUIKI",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "endpoints_not_in_osm",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Auiki Substation",
+    "native_id": "2018-0185",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "heco-igp-2026-update",
+    "states": [
+      "15"
+    ],
+    "status": "Being constructed (2026 IGP update).",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "heco-igp-2026-update:2023-0212",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/307660694 (Kewalo Substation), corroborated by operator.",
+      "lat": 21.294556,
+      "lon": -157.849254
+    },
+    "counties": [],
+    "description": "New transformer and associated equipment at Kewalo for load growth in Kaka'ako and Kewalo (Oahu).",
+    "evidence": {
+      "page": 15,
+      "raw": {
+        "cited": [
+          {
+            "page": 15,
+            "quotes": [
+              "Kewalo T4 (Docket No. 2023-0212)",
+              "kaka'ako and kewalo areas"
+            ],
+            "source": "heco-igp-2026-update"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "697c8bf7eafef63489e48d362c16a11cc0b9ed7b7c02d8ef8b89abbd74122383"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/307660694",
+            "lat": 21.2945561,
+            "lon": -157.849254,
+            "name": "Kewalo Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "138000;46000;25000"
+          },
+          "name": "Kewalo",
+          "norm": "KEWALO",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Kewalo T4 transformer",
+    "native_id": "2023-0212",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "heco-igp-2026-update",
+    "states": [
+      "15"
+    ],
+    "status": "Being installed (2026 IGP update).",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "heco-igp-2026-update:south-maui-69kv-reconductor",
+    "center": null,
+    "counties": [],
+    "description": "69 kV reconductoring for South Maui load growth and wildfire risk mitigation (Maui).",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "cited": [
+          {
+            "page": 7,
+            "quotes": [
+              "a south maui 69 kv reconductor project",
+              "address south maui load growth capacity need"
+            ],
+            "source": "heco-igp-2026-update"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "697c8bf7eafef63489e48d362c16a11cc0b9ed7b7c02d8ef8b89abbd74122383"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "South Maui 69 kV reconductor",
+    "native_id": "south-maui-69kv-reconductor",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026-05",
+        "description": "Hawaiian Electric applied for DOE funding (SPARK, GRIP round 3) for the project.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "697c8bf7eafef63489e48d362c16a11cc0b9ed7b7c02d8ef8b89abbd74122383",
+            "facts": "in may 2026, hawaiian electric submitted an … speed to power through accelerated … a south maui 69 kv reconductor project",
+            "locator": "2026 Integrated Grid Plan Action Plan Annual Update, page 7",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:38Z",
+            "source_date": "2026",
+            "url": "https://www.hawaiianelectric.com/a/16558"
+          }
+        ],
+        "id": "heco-igp-2026-update:south-maui-69kv-reconductor:source_status:1",
+        "native_project_link": "south-maui-69kv-reconductor",
+        "precision": "month",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "heco-igp-2026-update",
+    "states": [
+      "15"
+    ],
+    "status": "Federal (DOE SPARK / GRIP round 3) funding application submitted May 2026.",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "heco-koa-ridge:2022-0141",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/452717281 (Wahiawa Substation), OSM way/648967184 (Waimano Substation), corroborated by operator.",
+      "lat": 21.44855,
+      "lon": -157.994978
+    },
+    "counties": [],
+    "description": "Relocation of part of the Wahiawa–Waimano 46 kV overhead sub-transmission line onto the adjacent 138 kV poles in Koa Ridge (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "Koa Ridge 46kV Overhead Line Relocation Project",
+              "Docket #2022-0141"
+            ],
+            "source": "heco-koa-ridge"
+          },
+          {
+            "page": null,
+            "quotes": [
+              "relocate a portion of the existing wahiawa waimano 46 kilovolt overhead sub-transmission line"
+            ],
+            "source": "hpuc-notice-2022-0141"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "64ed0192802b3a0510f9fe4d04559aa27e9cd7f9c083e92a6ea5450de20e6dde"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "day",
+      "raw": "On December 15, 2023, the Koa Ridge overhead line relocation project was completed",
+      "value": "2023-12-15"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/452717281",
+            "lat": 21.4926426,
+            "lon": -158.0244792,
+            "name": "Wahiawa Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "138000;46000;12470"
+          },
+          "name": "Wahiawa",
+          "norm": "WAHIAWA",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/648967184",
+            "lat": 21.4044573,
+            "lon": -157.9654761,
+            "name": "Waimano Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "46000;11500"
+          },
+          "name": "Waimano",
+          "norm": "WAIMANO",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Koa Ridge 46 kV overhead line relocation (Wahiawa–Waimano line)",
+    "native_id": "2022-0141",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2022-07-11",
+        "description": "Application filed with the Hawaii PUC.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "64ed0192802b3a0510f9fe4d04559aa27e9cd7f9c083e92a6ea5450de20e6dde",
+            "facts": "filed an application on July 11, 2022",
+            "locator": "Koa Ridge 46kV Overhead Line Relocation Project, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:39Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project"
+          }
+        ],
+        "id": "heco-koa-ridge:2022-0141:source_status:1",
+        "native_project_link": "2022-0141",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": "2022-10-11",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "6e94dc5a9f6ee84b6723bc9e9b272ada48a75f534131e07fd4a574b1b8c046dc",
+            "facts": "Tuesday, October 11, 2022, at 6:30 p.m.",
+            "locator": "Notice of public hearing, Docket 2022-0141 (Wahiawa-Waimano 46 kV relocation), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:14Z",
+            "source_date": "2022-09-15",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-for-application-of-hawaiian-electric-company-inc-for-approval-of-the-wahiawa-waimano-46-kv-overhead-sub-transmission-line-relocation-project-docket-no-2022-0141/"
+          }
+        ],
+        "id": "heco-koa-ridge:2022-0141:source_status:2",
+        "native_project_link": "2022-0141",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": "2023-07-05",
+        "description": "Hawaii PUC Decision and Order No. 40058 approved the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "64ed0192802b3a0510f9fe4d04559aa27e9cd7f9c083e92a6ea5450de20e6dde",
+            "facts": "On July 5, 2023, the PUC issued Decision and Order No. 40058",
+            "locator": "Koa Ridge 46kV Overhead Line Relocation Project, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:39Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project"
+          }
+        ],
+        "id": "heco-koa-ridge:2022-0141:certification:3",
+        "native_project_link": "2022-0141",
+        "precision": "day",
+        "type": "certification"
+      },
+      {
+        "date": "2023-12-15",
+        "description": "Relocation completed.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "64ed0192802b3a0510f9fe4d04559aa27e9cd7f9c083e92a6ea5450de20e6dde",
+            "facts": "On December 15, 2023, the Koa Ridge overhead line relocation project was completed",
+            "locator": "Koa Ridge 46kV Overhead Line Relocation Project, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:39Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/koa-ridge-46kv-overhead-line-relocation-project"
+          }
+        ],
+        "id": "heco-koa-ridge:2022-0141:completion:4",
+        "native_project_link": "2022-0141",
+        "precision": "day",
+        "type": "completion"
+      }
+    ],
+    "source_id": "heco-koa-ridge",
+    "states": [
+      "15"
+    ],
+    "status": "Completed 2023-12-15.",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "heco-roosevelt-ave:2023-0345",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/419449709 (CEIP Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 21.327627,
+      "lon": -158.096825
+    },
+    "counties": [],
+    "description": "Replacement of about 12,500 feet of 46 kV overhead line on the CEIP-46 circuit between the CEIP Substation and Fort Barrette Road (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "between the CEIP Substation and Fort Barrette Road",
+              "Docket No. 2023-0345"
+            ],
+            "source": "heco-roosevelt-ave"
+          },
+          {
+            "page": 49,
+            "quotes": [
+              "ceip-46 roosevelt ave reconductoring",
+              "2023-0345 $3.8 million closed - approved"
+            ],
+            "source": "hpuc-annual-report-fy2025"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "06533ab58979ff013a242e24dfe44257ef80b14a9d89a15bf9c523c39c0c2b13"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "placed in service by the end of April 2027",
+      "value": "2027-04"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/419449709",
+            "lat": 21.3276267,
+            "lon": -158.0968246,
+            "name": "CEIP Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": "Campbell Estate Industrial Park (CEIP) Substation",
+            "voltage": "138000;46000;12470"
+          },
+          "name": "CEIP",
+          "norm": "CEIP",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "CEIP-46 Roosevelt Avenue 46 kV reconductoring (Kalaeloa)",
+    "native_id": "2023-0345",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2025-05-27",
+        "description": "Hawaii PUC Decision and Order No. 41730 approved the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "06533ab58979ff013a242e24dfe44257ef80b14a9d89a15bf9c523c39c0c2b13",
+            "facts": "On May 27, 2025, the PUC issued Decision and Order No. 41730",
+            "locator": "Overhead Power Line Replacement project in Kalaeloa, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:39Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+          }
+        ],
+        "id": "heco-roosevelt-ave:2023-0345:certification:1",
+        "native_project_link": "2023-0345",
+        "precision": "day",
+        "type": "certification"
+      },
+      {
+        "date": "2026-09",
+        "description": "Construction planned to begin.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "06533ab58979ff013a242e24dfe44257ef80b14a9d89a15bf9c523c39c0c2b13",
+            "facts": "Starting September 2026, Hawaiian Electric plans to begin construction",
+            "locator": "Overhead Power Line Replacement project in Kalaeloa, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:39Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+          }
+        ],
+        "id": "heco-roosevelt-ave:2023-0345:planned_milestone:2",
+        "native_project_link": "2023-0345",
+        "precision": "month",
+        "type": "planned_milestone"
+      },
+      {
+        "date": "2027-04",
+        "description": "In service planned by the end of April 2027.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "06533ab58979ff013a242e24dfe44257ef80b14a9d89a15bf9c523c39c0c2b13",
+            "facts": "placed in service by the end of April 2027",
+            "locator": "Overhead Power Line Replacement project in Kalaeloa, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:39Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/overhead-power-line-replacement-project-in-kalaeloa"
+          }
+        ],
+        "id": "heco-roosevelt-ave:2023-0345:planned_milestone:3",
+        "native_project_link": "2023-0345",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "heco-roosevelt-ave",
+    "states": [
+      "15"
+    ],
+    "status": "Approved (Decision and Order No. 41730); construction planned from September 2026.",
+    "status_group": "planned"
+  },
+  {
+    "_id": "heco-waiau-structures:waiau-transmission-structures",
+    "center": null,
+    "counties": [],
+    "description": "Replacement of 1960s lattice structures carrying high-voltage lines from the Waiau Power Plant through Pearl City with steel poles (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "replace lattice structures that carry critical high-voltage transmission lines",
+              "starting from the Waiau Power Plant through Pearl City"
+            ],
+            "source": "heco-waiau-structures"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "cc38c0c9012b066376577f55621e19521b336d5208c038556f991839bf6b7859"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Waiau transmission structure replacements",
+    "native_id": "waiau-transmission-structures",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2023",
+        "description": "Site inspections for structures 4-7 completed.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "cc38c0c9012b066376577f55621e19521b336d5208c038556f991839bf6b7859",
+            "facts": "Site inspections for structures 4-7 (circled in red) were completed in 2023",
+            "locator": "Waiau Transmission Structure Replacements, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:40Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+          }
+        ],
+        "id": "heco-waiau-structures:waiau-transmission-structures:source_status:1",
+        "native_project_link": "waiau-transmission-structures",
+        "precision": "year",
+        "type": "source_status"
+      },
+      {
+        "date": "2030",
+        "description": "Survey and permitting work anticipated to begin.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "cc38c0c9012b066376577f55621e19521b336d5208c038556f991839bf6b7859",
+            "facts": "Survey and permitting work is anticipated to commence in 2030",
+            "locator": "Waiau Transmission Structure Replacements, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:40Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/about-us/our-vision-and-commitment/investing-in-the-future/waiau-transmission-structure-replacements"
+          }
+        ],
+        "id": "heco-waiau-structures:waiau-transmission-structures:planned_milestone:2",
+        "native_project_link": "waiau-transmission-structures",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "heco-waiau-structures",
+    "states": [
+      "15"
+    ],
+    "status": "Survey and permitting anticipated to begin in 2030.",
+    "status_group": "planned"
+  },
+  {
+    "_id": "heco-west-maui-2024:west-maui-backup-line",
+    "center": null,
+    "counties": [],
+    "description": "Rebuild of the back-up transmission line serving West Maui along former routes in the Lahaina area after the August 2023 fires (Maui).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "a critical transmission line that serves as a back-up route of power to approximately 11,000 customers in west maui"
+            ],
+            "source": "heco-west-maui-2024"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "0c77a9d0ba422f488b7e4b863364512525d3c5a33cf4fc4b9419b19493c60047"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "West Maui back-up transmission line rebuild (Lahaina)",
+    "native_id": "west-maui-backup-line",
+    "other_owners": [],
+    "owner": "Hawaiian Electric",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2024-05-09",
+        "description": "Hawaiian Electric reported the rebuilt line online.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "0c77a9d0ba422f488b7e4b863364512525d3c5a33cf4fc4b9419b19493c60047",
+            "facts": "kahului, may 9, 2024 … is now online after hawaiian electric rebuilt the line along former routes in the lahaina area",
+            "locator": "Hawaiian Electric completes West Maui transmission line work, page text",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:41Z",
+            "source_date": null,
+            "url": "https://www.hawaiianelectric.com/hawaiian-electric-completes-west-maui-transmission-line-work"
+          }
+        ],
+        "id": "heco-west-maui-2024:west-maui-backup-line:source_status:1",
+        "native_project_link": "west-maui-backup-line",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "heco-west-maui-2024",
+    "states": [
+      "15"
+    ],
+    "status": "Online (Hawaiian Electric release of 2024-05-09).",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "hpuc-annual-report-fy2025:2023-0303",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/800871264 (Waipio Substation), corroborated by operator.",
+      "lat": 21.426567,
+      "lon": -158.00186
+    },
+    "counties": [],
+    "description": "New transformer and associated equipment at Waipio Substation for Koa Ridge load growth (Oahu).",
+    "evidence": {
+      "page": 49,
+      "raw": {
+        "cited": [
+          {
+            "page": 49,
+            "quotes": [
+              "waipio substation transformer no. 3 2023-0303 $3.8 million closed - approved"
+            ],
+            "source": "hpuc-annual-report-fy2025"
+          },
+          {
+            "page": 15,
+            "quotes": [
+              "(Docket No. 2023-0303)",
+              "because of the koa ridge development"
+            ],
+            "source": "heco-igp-2026-update"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "7e28a9ed8350b092a341a6fada2bdecd1e3d9c28c69c8ac5c48c3fc05344346a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/800871264",
+            "lat": 21.4265674,
+            "lon": -158.0018599,
+            "name": "Waipio Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "46000;12470"
+          },
+          "name": "Waipio",
+          "norm": "WAIPIO",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Waipio Substation Transformer No. 3",
+    "native_id": "2023-0303",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "hpuc-annual-report-fy2025",
+    "states": [
+      "15"
+    ],
+    "status": "Being installed (2026 IGP update); PUC docket closed - approved.",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "hpuc-annual-report-fy2025:2024-0065",
+    "center": null,
+    "counties": [],
+    "description": "Phase 3 relocation of the 3400 line at Kilauea (Hawaii Island).",
+    "evidence": {
+      "page": 49,
+      "raw": {
+        "cited": [
+          {
+            "page": 49,
+            "quotes": [
+              "kilauea 3400 line relocation phase 3 helco 2024-0065 $6.1 million closed - approved"
+            ],
+            "source": "hpuc-annual-report-fy2025"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "7e28a9ed8350b092a341a6fada2bdecd1e3d9c28c69c8ac5c48c3fc05344346a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Kilauea 3400 Line Relocation Phase 3",
+    "native_id": "2024-0065",
+    "other_owners": [],
+    "owner": "Hawaii Electric Light Company",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "hpuc-annual-report-fy2025",
+    "states": [
+      "15"
+    ],
+    "status": "PUC docket closed - approved (FY2025 annual report). Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-annual-report-fy2025:2024-0137",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/301016667 (Waikoloa Substation), corroborated by operator.",
+      "lat": 19.920639,
+      "lon": -155.783884
+    },
+    "counties": [],
+    "description": "New transformer and associated equipment at Waikoloa for load growth (Hawaii Island).",
+    "evidence": {
+      "page": 49,
+      "raw": {
+        "cited": [
+          {
+            "page": 49,
+            "quotes": [
+              "waikoloa unit substation #2 project 2024-0137 $9.4 million in progress"
+            ],
+            "source": "hpuc-annual-report-fy2025"
+          },
+          {
+            "page": 15,
+            "quotes": [
+              "Waikoloa T2 (Docket No. 2024-0137)",
+              "waikoloa area on hawaii island"
+            ],
+            "source": "heco-igp-2026-update"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "7e28a9ed8350b092a341a6fada2bdecd1e3d9c28c69c8ac5c48c3fc05344346a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/301016667",
+            "lat": 19.9206388,
+            "lon": -155.7838837,
+            "name": "Waikoloa Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "69000;12470"
+          },
+          "name": "Waikoloa",
+          "norm": "WAIKOLOA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Waikoloa Unit Substation #2 (Waikoloa T2)",
+    "native_id": "2024-0137",
+    "other_owners": [],
+    "owner": "Hawaii Electric Light Company",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "hpuc-annual-report-fy2025",
+    "states": [
+      "15"
+    ],
+    "status": "Being installed (2026 IGP update); PUC docket in progress.",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "hpuc-annual-report-fy2025:2024-0343",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/325568368 (Iwilei Substation), corroborated by operator.",
+      "lat": 21.317804,
+      "lon": -157.867294
+    },
+    "counties": [],
+    "description": "Transformer and switchgear replacement at Iwilei Substation (Oahu).",
+    "evidence": {
+      "page": 49,
+      "raw": {
+        "cited": [
+          {
+            "page": 49,
+            "quotes": [
+              "heco iwilei transformer and switchgears 2024-0343 $23.3 million in progress"
+            ],
+            "source": "hpuc-annual-report-fy2025"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "7e28a9ed8350b092a341a6fada2bdecd1e3d9c28c69c8ac5c48c3fc05344346a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/325568368",
+            "lat": 21.3178039,
+            "lon": -157.8672937,
+            "name": "Iwilei Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "138000;46000;25000;11500"
+          },
+          "name": "Iwilei",
+          "norm": "IWILEI",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Iwilei Transformer and Switchgears",
+    "native_id": "2024-0343",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "hpuc-annual-report-fy2025",
+    "states": [
+      "15"
+    ],
+    "status": "PUC docket in progress (FY2025 annual report).",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "hpuc-notice-2019-0119:2019-0119",
+    "center": null,
+    "counties": [],
+    "description": "69 kV overhead transmission line segments to reconnect the Puna Geothermal Venture generating facility (Hawaii Island).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "construct 69 kilovolt overhead transmission line segments to the puna geothermal venture generating facility",
+              "Docket 2019-0119"
+            ],
+            "source": "hpuc-notice-2019-0119"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "61d9b63a127fd7a585b7ba5216d40cf2fff086ee57aea2be91dbe858c25345d0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Puna Geothermal Venture 69 kV overhead line segments",
+    "native_id": "2019-0119",
+    "other_owners": [],
+    "owner": "Hawaii Electric Light Company",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2020-01-29",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "61d9b63a127fd7a585b7ba5216d40cf2fff086ee57aea2be91dbe858c25345d0",
+            "facts": "Wednesday, January 29, 2020 at 6:00 p.m.",
+            "locator": "Notice of public hearing, Docket 2019-0119 (Puna Geothermal Venture 69 kV line segments), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:07Z",
+            "source_date": "2020-01-24",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-for-application-of-hawaii-electric-light-company-for-approval-to-construct-69-kilovolt-overhead-transmission-line-segments-to-reconnect-the-puna-geothermal-venture-generating/"
+          }
+        ],
+        "id": "hpuc-notice-2019-0119:2019-0119:source_status:1",
+        "native_project_link": "2019-0119",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2019-0119",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing noticed 2020-01-24. Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-notice-2020-0050:2020-0050",
+    "center": null,
+    "counties": [],
+    "description": "Relocation of a 46 kV overhead transmission line along Salt Lake Boulevard, Oahu.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "relocate a 46 kilovolt overhead transmission line along salt lake boulevard on the island of oahu",
+              "Docket No. 2020-0050"
+            ],
+            "source": "hpuc-notice-2020-0050"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "dced710e08f0dd0c4a5a66f812413aaa4b4009d048e7876785c504eb122843a1"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Salt Lake Boulevard 46 kV overhead line relocation",
+    "native_id": "2020-0050",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2021-03-16",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "dced710e08f0dd0c4a5a66f812413aaa4b4009d048e7876785c504eb122843a1",
+            "facts": "Tuesday, March 16, 2021, at 5:30 pm",
+            "locator": "Notice of public hearing, Docket 2020-0050 (Salt Lake Boulevard 46 kV relocation), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:09Z",
+            "source_date": "2021-02-26",
+            "url": "https://puc.hawaii.gov/news-release/public-hearing-for-application-of-heco-construction-of-overhead-transmission-line/"
+          }
+        ],
+        "id": "hpuc-notice-2020-0050:2020-0050:source_status:1",
+        "native_project_link": "2020-0050",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2020-0050",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing noticed 2021-02-26. Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-notice-2020-0139:2020-0139",
+    "center": null,
+    "counties": [],
+    "description": "46 kV overhead line extension to interconnect the AES Mountain View Solar facility in Waianae (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "construct a 46 kilovolt overhead line extension to interconnect the aes mountain view solar facility in waianae",
+              "Docket No. 2020-0139"
+            ],
+            "source": "hpuc-notice-2020-0139"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "79cbecf073006d0f2cc8eef483fa46b693deff86acbe717ee7daada918fc2886"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "46 kV overhead line extension for AES Mountain View Solar (Waianae)",
+    "native_id": "2020-0139",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2022-08-30",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "79cbecf073006d0f2cc8eef483fa46b693deff86acbe717ee7daada918fc2886",
+            "facts": "Tuesday, August 30, 2022 at 5:30 pm",
+            "locator": "Notice of public hearing, Docket 2020-0139 (Mountain View Solar 46 kV line extension), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:13Z",
+            "source_date": "2022-08-24",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-for-heco-application-for-overhead-line-extension-docket-no-2020-0139/"
+          }
+        ],
+        "id": "hpuc-notice-2020-0139:2020-0139:source_status:1",
+        "native_project_link": "2020-0139",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2020-0139",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing noticed 2022-08-24. Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-notice-2020-0182:2020-0182",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1383904204 (Kulanihakoi Substation), corroborated by operator.",
+      "lat": 21.356468,
+      "lon": -158.04632
+    },
+    "counties": [],
+    "description": "New substation with 46 kV lines built above and below ground, serving the Ho'opili development (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "proposed 46 kilovolt transmission lines",
+              "for the kulanihakoi substation project",
+              "Docket 2020-0182"
+            ],
+            "source": "hpuc-notice-2020-0182"
+          },
+          {
+            "page": 15,
+            "quotes": [
+              "Kulanihakoi Substation (Docket No. 2020-",
+              "0182) – A new substation was energized"
+            ],
+            "source": "heco-igp-2026-update"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "5ceb0e051fe256b4da0ba91142c8f785cffd4c4907b8b819eaafe9baa6f60cbc"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": "0182) – A new substation was energized",
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/1383904204",
+            "lat": 21.3564677,
+            "lon": -158.0463203,
+            "name": "Kulanihakoi Substation",
+            "operator": "Hawaiian Electric Company",
+            "osm_name": null,
+            "voltage": "46000"
+          },
+          "name": "Kulanihakoi",
+          "norm": "KULANIHAKOI",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Kulanihakoi Substation and 46 kV lines",
+    "native_id": "2020-0182",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2021-10-26",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "5ceb0e051fe256b4da0ba91142c8f785cffd4c4907b8b819eaafe9baa6f60cbc",
+            "facts": "Tuesday, October 26, 2021, at 5:30 p.m.",
+            "locator": "Notice of public hearing, Docket 2020-0182 (Kulanihakoi Substation 46 kV lines), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:10Z",
+            "source_date": "2021-10-25",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-for-application-of-heco-construction-of-overhead-transmission-line-2020-0182/"
+          }
+        ],
+        "id": "hpuc-notice-2020-0182:2020-0182:source_status:1",
+        "native_project_link": "2020-0182",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": null,
+        "description": "Hawaiian Electric's 2026 IGP update reports the substation energized; it gives no date.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "697c8bf7eafef63489e48d362c16a11cc0b9ed7b7c02d8ef8b89abbd74122383",
+            "facts": "0182) – A new substation was energized",
+            "locator": "2026 Integrated Grid Plan Action Plan Annual Update, page 15",
+            "publisher": "Hawaiian Electric",
+            "retrieved_at": "2026-09-27T09:41:38Z",
+            "source_date": "2026",
+            "url": "https://www.hawaiianelectric.com/a/16558"
+          }
+        ],
+        "id": "hpuc-notice-2020-0182:2020-0182:in_service:2",
+        "native_project_link": "2020-0182",
+        "precision": "unknown",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "hpuc-notice-2020-0182",
+    "states": [
+      "15"
+    ],
+    "status": "Energized (Hawaiian Electric 2026 IGP update); no date given.",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "hpuc-notice-2021-0070:2021-0070",
+    "center": null,
+    "counties": [],
+    "description": "46 kV overhead and underground relocation of the CEIP-46 circuit at the Honouliuli Wastewater Treatment Plant (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "honouliuli wastewater treatment plant ceip-46 46kv overhead sub-transmission line relocation project",
+              "Docket No. 2021-0070"
+            ],
+            "source": "hpuc-notice-2021-0070"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a5710f481be5e842e479bd9fc64ce26acd9f152c667c89d91919b56706078571"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Honouliuli WWTP CEIP-46 46 kV sub-transmission line relocation",
+    "native_id": "2021-0070",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2021-12-09",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "a5710f481be5e842e479bd9fc64ce26acd9f152c667c89d91919b56706078571",
+            "facts": "Thursday, December 9, 2021 at 5:30 pm",
+            "locator": "Notice of public hearing, Docket 2021-0070 (CEIP-46 relocation, Honouliuli), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:11Z",
+            "source_date": "2021-11-16",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-for-application-of-heco-for-construction-of-overhead-and-underground-line-2021-0070/"
+          }
+        ],
+        "id": "hpuc-notice-2021-0070:2021-0070:source_status:1",
+        "native_project_link": "2021-0070",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2021-0070",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing noticed 2021-11-16. Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-notice-2023-0234:2023-0234",
+    "center": null,
+    "counties": [],
+    "description": "Permanent overhead and underground relocation of a 46 kV sub-transmission line along Farrington Highway for its widening (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "pe005766-farrington highway widening project",
+              "Docket No. 2023-0234"
+            ],
+            "source": "hpuc-notice-2023-0234"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d625c7631ff11ff8f385aa5e60732b898f1a998ef2f57e744750a3368060112"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Farrington Highway widening 46 kV line relocation (PE005766)",
+    "native_id": "2023-0234",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2023-05-03",
+        "description": "Application filed with the Hawaii PUC.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "2d625c7631ff11ff8f385aa5e60732b898f1a998ef2f57e744750a3368060112",
+            "facts": "On May 3, 2023, Hawaiian Electric filed an Application",
+            "locator": "Notice of public hearing, Docket 2023-0234 (Farrington Highway 46 kV relocation), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:16Z",
+            "source_date": "2024-05-08",
+            "url": "https://puc.hawaii.gov/public-notice/notice-of-public-hearing-farrington-highway-widening-project-in-the-hoopili-development-docket-no-2023-0234-application-of-hawaiian-electric-company-inc-for-approval-to-constr/"
+          }
+        ],
+        "id": "hpuc-notice-2023-0234:2023-0234:source_status:1",
+        "native_project_link": "2023-0234",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": "2024-03-08",
+        "description": "Application revised.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "2d625c7631ff11ff8f385aa5e60732b898f1a998ef2f57e744750a3368060112",
+            "facts": "which was revised on March 8, 2024",
+            "locator": "Notice of public hearing, Docket 2023-0234 (Farrington Highway 46 kV relocation), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:16Z",
+            "source_date": "2024-05-08",
+            "url": "https://puc.hawaii.gov/public-notice/notice-of-public-hearing-farrington-highway-widening-project-in-the-hoopili-development-docket-no-2023-0234-application-of-hawaiian-electric-company-inc-for-approval-to-constr/"
+          }
+        ],
+        "id": "hpuc-notice-2023-0234:2023-0234:source_status:2",
+        "native_project_link": "2023-0234",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": "2024-06-04",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "2d625c7631ff11ff8f385aa5e60732b898f1a998ef2f57e744750a3368060112",
+            "facts": "Tuesday, June 4, 2024 at 5:30 p.m.",
+            "locator": "Notice of public hearing, Docket 2023-0234 (Farrington Highway 46 kV relocation), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:16Z",
+            "source_date": "2024-05-08",
+            "url": "https://puc.hawaii.gov/public-notice/notice-of-public-hearing-farrington-highway-widening-project-in-the-hoopili-development-docket-no-2023-0234-application-of-hawaiian-electric-company-inc-for-approval-to-constr/"
+          }
+        ],
+        "id": "hpuc-notice-2023-0234:2023-0234:source_status:3",
+        "native_project_link": "2023-0234",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2023-0234",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing noticed 2024-05-08. Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-notice-2023-0335:2023-0335",
+    "center": null,
+    "counties": [],
+    "description": "Dedicated substation with 46 kV line extensions through Joint Base Pearl Harbor-Hickam for the Dry Dock 5 load (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "proposed waimomi substation project which includes extensions and recircuiting of 46 kilovolt",
+              "Docket No. 2023-0335"
+            ],
+            "source": "hpuc-notice-2023-0335"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a3bd262c9ecd2d3bc04e59fd3b78eb0d789fb45eb4bf5bc20787a504c7f99637"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [
+        {
+          "name": "Waimomi",
+          "norm": "WAIMOMI",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "endpoints_not_in_osm",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Waimomi Substation and 46 kV sub-transmission lines",
+    "native_id": "2023-0335",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2024-03-14",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "a3bd262c9ecd2d3bc04e59fd3b78eb0d789fb45eb4bf5bc20787a504c7f99637",
+            "facts": "Thursday, March 14, 2024 at 5:30 p.m.",
+            "locator": "Notice of public hearing, Docket 2023-0335 (Waimomi Substation), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:15Z",
+            "source_date": "2024-02-22",
+            "url": "https://puc.hawaii.gov/public-notice/notice-of-public-hearing-sub-transmission-line-construction-at-joint-base-pearl-harbor-hickam-docket-no-2023-0335-application-of-heco-to-commit-excess-funds-for-waimomi-substation-projec/"
+          }
+        ],
+        "id": "hpuc-notice-2023-0335:2023-0335:source_status:1",
+        "native_project_link": "2023-0335",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2023-0335",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing noticed 2024-02-22. Later status not stated in the cited sources.",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "hpuc-notice-2025-0436:2025-0436",
+    "center": null,
+    "counties": [],
+    "description": "46 kV overhead sub-transmission line extension near Salt Lake Boulevard and Namur Road to interconnect Pu'uloa Solar (Oahu).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "cited": [
+          {
+            "page": null,
+            "quotes": [
+              "construct an overhead 46 kV sub-transmission line extension near the intersection of Salt Lake Boulevard and Namur Road",
+              "Docket No. 2025-0436"
+            ],
+            "source": "hpuc-notice-2025-0436"
+          }
+        ]
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "93a6b4d21ef152601e454e3e4979faaeb4c8a73f407e17b54b6b4f32ff3deeab"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, HI (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "HAWAIIAN ELECTRIC",
+        "HAWAII ELECTRIC LIGHT",
+        "MAUI ELECTRIC"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "46 kV overhead line extension for Pu'uloa Solar (Joint Base Pearl Harbor-Hickam)",
+    "native_id": "2025-0436",
+    "other_owners": [],
+    "owner": "Hawaiian Electric Company, Inc.",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2025-12-19",
+        "description": "Application filed with the Hawaii PUC.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "93a6b4d21ef152601e454e3e4979faaeb4c8a73f407e17b54b6b4f32ff3deeab",
+            "facts": "On December 19, 2025, Hawaiian Electric filed an Application",
+            "locator": "Notice of public hearing, Docket 2025-0436 (Pu'uloa Solar 46 kV line extension), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:18Z",
+            "source_date": "2026-02-12",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-hawaiian-electric-overhead-line-extension-for-puuloa-solar-at-joint-base-pearl-harbor-hickam-docket-no-2025-0436/"
+          }
+        ],
+        "id": "hpuc-notice-2025-0436:2025-0436:source_status:1",
+        "native_project_link": "2025-0436",
+        "precision": "day",
+        "type": "source_status"
+      },
+      {
+        "date": "2026-03-09",
+        "description": "Hawaii PUC public hearing scheduled on the application.",
+        "evidence": [
+          {
+            "access_review": "Public document; no login.",
+            "artifact_sha256": "93a6b4d21ef152601e454e3e4979faaeb4c8a73f407e17b54b6b4f32ff3deeab",
+            "facts": "Monday, March 9, 2026 at 6:00 p.m.",
+            "locator": "Notice of public hearing, Docket 2025-0436 (Pu'uloa Solar 46 kV line extension), page text",
+            "publisher": "Hawaii Public Utilities Commission",
+            "retrieved_at": "2026-09-27T09:41:18Z",
+            "source_date": "2026-02-12",
+            "url": "https://puc.hawaii.gov/news-release/notice-of-public-hearing-hawaiian-electric-overhead-line-extension-for-puuloa-solar-at-joint-base-pearl-harbor-hickam-docket-no-2025-0436/"
+          }
+        ],
+        "id": "hpuc-notice-2025-0436:2025-0436:source_status:2",
+        "native_project_link": "2025-0436",
+        "precision": "day",
+        "type": "source_status"
+      }
+    ],
+    "source_id": "hpuc-notice-2025-0436",
+    "states": [
+      "15"
+    ],
+    "status": "Applied to the Hawaii PUC; public hearing held 2026-03-09 per notice. Later status not stated in the cited sources.",
+    "status_group": "proposed"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "by_state": {
+    "02": 4,
+    "15": 19
+  },
+  "by_status": {
+    "in_service": 3,
+    "planned": 3,
+    "proposed": 4,
+    "under_construction": 6,
+    "unknown": 7
+  },
+  "by_tier": {
+    "candidate": 8,
+    "candidate_unique_name": 1
+  },
+  "located": 9,
+  "located_by_state": {
+    "02": 2,
+    "15": 7
+  },
+  "located_not_in_service": 7,
+  "located_with_dated_event": 5,
+  "projects": 23,
+  "verified": 0,
+  "with_dated_event": 15
+}
