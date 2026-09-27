@@ -1,23 +1,23 @@
 import { AssistantExplorer } from "@/components/assistant/AssistantExplorer";
 import { parseNationalFilters } from "@/lib/national/filters";
-import { loadNationalExplorer } from "@/lib/national/server";
-import type { NationalExplorerPayload } from "@/lib/national/types";
+import { loadNationalSummaries } from "@/lib/national/server";
+import type { NationalSummaryPayload } from "@/lib/national/types";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "App control preview · GridBridge" };
+export const metadata = { title: "Common Ground assistant · GridBridge" };
 
 export default async function AssistantPage({ searchParams }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  let initial: NationalExplorerPayload;
+  let initial: NationalSummaryPayload;
   try {
-    initial = await loadNationalExplorer(parseNationalFilters(await searchParams));
-  } catch {
-    const reference = await loadNationalExplorer(parseNationalFilters({}));
+    initial = await loadNationalSummaries(parseNationalFilters(await searchParams));
+  } catch (error) {
+    const reference = await loadNationalSummaries(parseNationalFilters({}));
     initial = {
       ...reference, available: false, mode: "unavailable", projects: [], mapProjects: [],
       total: 0, locatedTotal: 0, unlocatedTotal: 0, mapTruncated: false,
-      reason: "The URL contains unsupported filters. Reset the filters to continue.",
+      reason: `The URL contains unsupported filters (${error instanceof Error ? error.message : "invalid filters"}). Reset the filters to continue.`,
     };
   }
   return <AssistantExplorer initial={initial} />;
