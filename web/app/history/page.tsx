@@ -1,10 +1,15 @@
 import { HistoryView, type HistoryParams } from "@/components/history/HistoryView";
 import { ErrorState } from "@/components/ui";
 import { loadHistory } from "@/lib/history/server";
+import { NO_STATE_INK, stateInks, type StateFeature } from "@/components/time/stateInk";
+import usStates from "@/components/time/usStates.json";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = { title: "History · Common Ground" };
+
+// /time's state inks, so a project wears the same colour on both pages.
+const INK = stateInks((usStates as unknown as { features: StateFeature[] }).features);
 
 const KEYS = ["origin", "project", "from", "to", "at", "show", "source", "q"] as const;
 
@@ -26,5 +31,6 @@ export default async function HistoryPage({ searchParams }: { searchParams: Prom
       return [k, first ? first.slice(0, 200) : null];
     }),
   ) as HistoryParams;
+  for (const p of data.projects) p.ink = p.identity === "national" ? (INK[p.states[0]] ?? NO_STATE_INK) : undefined;
   return <HistoryView data={data} initial={initial} />;
 }

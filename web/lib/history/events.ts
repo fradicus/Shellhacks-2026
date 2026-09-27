@@ -43,6 +43,8 @@ export interface Thread {
   text: string;
 }
 
+const LEGACY_FIPS: Partial<Record<Utility, string>> = { DESC: "45", GPC: "13" };
+
 export interface HistoryProject {
   key: string;
   name: string;
@@ -51,6 +53,10 @@ export interface HistoryProject {
   source_id: string;
   source_title: string | null;
   region: string | null;
+  /** Stored state FIPS codes (national records; the legacy registers are each one state's filing). */
+  states: string[];
+  /** Pen colour from the page's state inks, as /time draws it; set by the page. */
+  ink?: string;
   /** The publisher's status text as stored (ISO-NE "In-service", PJM "IS"); a status, not an event date. */
   status: string | null;
   center: { lat: number; lon: number } | null;
@@ -192,6 +198,7 @@ export function nationalHistory(p: NationalProject, source: NationalSource | und
     source_id: p.source_id,
     source_title: source?.title ?? null,
     region: p.planning_region,
+    states: p.states ?? [],
     status: p.status,
     center: p.center ? { lat: p.center.lat, lon: p.center.lon } : null,
     events,
@@ -262,6 +269,7 @@ export function legacyHistory(p: Project, changes: VersionChange[], sources: Map
     source_id: p.source.source_id,
     source_title: sources.get(p.source.source_id)?.title ?? null,
     region: p.state ?? null,
+    states: LEGACY_FIPS[p.utility] ? [LEGACY_FIPS[p.utility]!] : [],
     status: p.status ?? null,
     center: p.center ? { lat: p.center.lat, lon: p.center.lon } : null,
     events,

@@ -56,12 +56,11 @@ function when(e: HistoryEvent): string {
 }
 const signed = (d: number) => `${d > 0 ? "+" : d < 0 ? "−" : ""}${Math.abs(d).toLocaleString("en-US")}`;
 // /time's tier colours and labels (C25); confirmed keeps the national colour.
-const TIER_COLOR: Record<NationalTier, string> = { confirmed: COLOR.national, official: "#8fb4ff", tentative: "#f0c36a" };
 const TIER_LABEL: Record<NationalTier, string> = {
   confirmed: "Location confirmed", official: "Owner-published location, not independently reviewed",
   tentative: "Tentative location, not independently reviewed",
 };
-const color = (p: HistoryProject) => (p.tier ? TIER_COLOR[p.tier] : COLOR[p.identity]);
+const color = (p: HistoryProject) => p.ink ?? COLOR[p.identity];
 
 function overviewPadding(el: HTMLElement | null) {
   const w = el?.clientWidth ?? 1400;
@@ -352,15 +351,16 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
     const n = new Map<string, number>();
     const key = (p: HistoryProject) => (p.tier ? `tier:${p.tier}` : `id:${p.identity}`);
     for (const { p } of rows) n.set(key(p), (n.get(key(p)) ?? 0) + 1);
-    const order: [string, string, string][] = [
-      ["tier:confirmed", "National, confirmed", TIER_COLOR.confirmed], ["tier:official", "Owner-published", TIER_COLOR.official],
-      ["tier:tentative", "Tentative", TIER_COLOR.tentative], ["id:national", "National", COLOR.national],
-      ["id:DESC", "Dominion SC", COLOR.DESC], ["id:GPC", "Georgia Power", COLOR.GPC], ["id:unknown", "Owner not mapped", COLOR.unknown],
+    // Colour is the state (as on /time); tier is the ground mark, so tiers get a glyph, legacy owners a swatch.
+    const order: [string, string, string | null, string | null][] = [
+      ["tier:confirmed", "Confirmed location", null, "confirmed"], ["tier:official", "Owner-published", null, "official"],
+      ["tier:tentative", "Tentative location", null, "tentative"], ["id:national", "National", COLOR.national, null],
+      ["id:DESC", "Dominion SC", COLOR.DESC, null], ["id:GPC", "Georgia Power", COLOR.GPC, null], ["id:unknown", "Owner not mapped", COLOR.unknown, null],
     ];
-    return order.filter(([k]) => n.get(k)).map(([k, label, color]) => ({ label, color, n: n.get(k)! }));
+    return order.filter(([k]) => n.get(k)).map(([k, label, color, tier]) => ({ label, color, tier, n: n.get(k)! }));
   }, [rows]);
-  const builtRows = rows.flatMap((r) => r.events.filter((e) => e.meaning === "actual"));
-  const builtByPlane = builtRows.filter((e) => e.from! <= planeDay).length;
+  // Projects, not events: a project with several documented actual dates counts once (F37 counts rule).
+  const builtByPlane = rows.filter((r) => r.events.some((e) => e.meaning === "actual" && e.from! <= planeDay)).length;
   // The record's own verdict: documented actual dates against the same row's required date.
   const required = rows.filter((r) => r.p.thread && r.events.some((e) => e.id === r.p.thread!.from && e.field === "RequiredDate") && r.events.some((e) => e.id === r.p.thread!.to));
   const early = required.filter((r) => r.p.thread!.days < 0).length;
@@ -370,6 +370,7 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
       rows.map(({ p, events }) => ({
         key: p.key,
         color: color(p),
+        tier: p.tier,
         lng: p.center!.lon,
         lat: p.center!.lat,
         glyphs: events.map((e) => ({
@@ -555,7 +556,6 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
     labelSpecs.push({ id: "y0", ...rulerAt, years: 0, kind: "tick", text: range[0] });
     for (let y = Math.ceil((range[0] + 1) / step) * step; y <= range[1] + 1; y += step)
       if (y - range[0] >= step / 2) labelSpecs.push({ id: `y${y}`, ...rulerAt, years: toYears(yearStart(y)), kind: "tick", text: y });
-    labelSpecs.push({ id: "plane", ...rulerAt, years: planeYears, kind: "plane", text: <>Plane · {monthLabel(planeDay)}</> });
     const ty = toYears(analysisDay);
     if (ty >= 0 && ty <= topYears && Math.abs(ty - planeYears) > 0.6)
       labelSpecs.push({ id: "today", ...rulerAt, years: ty, kind: "today", text: <>Analysis date · {fmtDay(analysisDay)}</> });
@@ -814,32 +814,19 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
             What was built, <em>when</em>.
           </h1>
           <p className={s.lede}>
-            Every located project stands where it is; each documented date sits at its height. Move the amber plane
-            through the years and watch the record fill in.
+            Every located project stands where it is, and each documented date sits at its height.
           </p>
-          <dl className={s.stats}>
-            <div>
-              <dt>Projects</dt>
-              <dd>{rows.length.toLocaleString("en-US")}</dd>
-            </div>
-            <div>
-              <dt>Events</dt>
-              <dd>{eventCount.toLocaleString("en-US")}</dd>
-            </div>
-            <div>
-              <dt>Built</dt>
-              <dd>{builtRows.length.toLocaleString("en-US")}</dd>
-            </div>
-          </dl>
           {required.length ? (
             <div className={s.verdict}>
               <p>
                 <b>{early}</b> of {required.length} upgrades documenting both a required date and an actual in-service date
                 entered service before the required date.
               </p>
-              <SlipChart days={required.map((r) => r.p.thread!.days)} />
+              {required.length >= 20 ? <SlipChart days={required.map((r) => r.p.thread!.days)} /> : null}
             </div>
           ) : null}
+          <details className={s.sources}>
+            <summary>Data and sources · {located.length.toLocaleString("en-US")} located projects · {eventCount.toLocaleString("en-US")} events</summary>
           <p className={s.provenance}>
             Window <b>{range[0]}–{range[1]}</b> · analysis date <b>{fmtDay(analysisDay)}</b>
             <br />
@@ -857,6 +844,7 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
           <p className={s.nullNote}>
             <span aria-hidden /> No contract or award evidence in this dataset. That is not evidence no contract existed.
           </p>
+          </details>
           <button type="button" className={s.play} onClick={() => (playing ? stop() : play())} disabled={!ready || !rows.length}>
             <span aria-hidden>{playing ? "■" : "▶"}</span> {playing ? "Stop" : "Play the record"}
           </button>
@@ -1031,18 +1019,20 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
             <li>
               <i className={s.gPlane} /> Year plane · above it, ghosted
             </li>
+            <li>
+              <i className={s.gState} /> Color: the project&apos;s state
+            </li>
             <li className={s.utils}>
               {kinds.map((k) => (
                 <span key={k.label} title={`${k.n.toLocaleString("en-US")} drawn in the window`}>
-                  <i style={{ background: k.color }} /> {k.label} <b className={s.kindCount}>{k.n.toLocaleString("en-US")}</b>
+                  {k.tier ? <i className={s.tierMark} data-t={k.tier} /> : <i style={{ background: k.color! }} />} {k.label} <b className={s.kindCount}>{k.n.toLocaleString("en-US")}</b>
                 </span>
               ))}
             </li>
           </ul>
           <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through projects · Esc clears</p>
         </LegendFold>
-        <SceneControls styles={s} flat={flat} onFlat={toggleFlat} yearPx={yearPx} onYearPx={setYearPx}
-          range={[4, 60, 1]} onOverview={overview} />
+        <SceneControls styles={s} flat={flat} onFlat={toggleFlat} onOverview={overview} />
       </section>
 
       <Ledger
@@ -1056,10 +1046,10 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
         onScrubStart={onScrubStart}
       />
 
-      <div className={s.counter} data-on={playing ? "1" : "0"} aria-hidden>
+      <div className={s.counter} data-on={ready && rows.length ? "1" : "0"} aria-hidden>
         <b>{new Date(planeDay * DAY_MS).getUTCFullYear()}</b>
         <span>
-          <b>{builtByPlane.toLocaleString("en-US")}</b> documented in-service dates by then
+          <b>{builtByPlane.toLocaleString("en-US")}</b> of {rows.length.toLocaleString("en-US")} projects documented in service by then
         </span>
       </div>
 
