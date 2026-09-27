@@ -11,29 +11,81 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Job id `ci` is the required status check (specs/preflight.md §2).
-  ci:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      scope: ${{ steps.scope.outputs.scope }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Classify PR diff (main always runs full CI)
+        id: scope
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          scope=full
+          if [ "$EVENT" = pull_request ]; then
+            scope=$(python3 scripts/ci_scope.py --base "$BASE_SHA" --head "$HEAD_SHA")
+          fi
+          echo "scope=$scope" >> "$GITHUB_OUTPUT"
+          echo "Validation scope: $scope" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Classifier regression tests
+        run: python3 -m unittest discover -s tests/golden -p test_ci_scope.py
+
+      - name: spec lint
+        run: python3 scripts/check_ownership.py --lint-specs
+
+      - name: ownership
+        if: github.event_name == 'pull_request'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: python3 scripts/check_ownership.py --title "$PR_TITLE" --base "origin/$BASE_REF"
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Ownership regression tests
+        working-directory: pipeline
+        run: |
+          uv sync --locked
+          uv run pytest -c pyproject.toml ../tests/golden/test_ownership.py -q
+
+  pipeline:
+    needs: checks
+    if: needs.checks.outputs.scope == 'full'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0 # the ownership gate diffs against the base branch
-
       - uses: astral-sh/setup-uv@v6
-
-      - uses: actions/setup-node@v5
         with:
-          node-version: 24
-          cache: npm
-          cache-dependency-path: web/package-lock.json
-
+          enable-cache: true
       - name: pipeline (ruff, pytest incl. golden)
         working-directory: pipeline
         run: |
           uv sync --locked
           uv run ruff check .
-          uv run pytest -q
+          uv run pytest -q --durations=10
+
+  web:
+    needs: checks
+    if: needs.checks.outputs.scope == 'full'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
 
       - name: web (lint, typecheck, build in fixture mode)
         working-directory: web
@@ -56,9 +108,6 @@ jobs:
             node --test tests/web/assistant/commands.test.mjs
           fi
 
-      - name: spec lint
-        run: python3 scripts/check_ownership.py --lint-specs
-
       - name: Verified operations checks
         run: |
           node scripts/check_operations_traces.mjs
@@ -75,15 +124,34 @@ jobs:
             node --test tests/web/operations-ui/*.test.ts
           fi
 
-      - name: ownership
-        if: github.event_name == 'pull_request'
+  # Preserve the required status name, including for docs-only PRs and failures.
+  ci:
+    needs: [checks, pipeline, web]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Require every applicable check
         env:
-          PR_TITLE: ${{ github.event.pull_request.title }}
-          BASE_REF: ${{ github.event.pull_request.base.ref }}
-        run: python3 scripts/check_ownership.py --title "$PR_TITLE" --base "origin/$BASE_REF"
+          CHECKS: ${{ needs.checks.result }}
+          SCOPE: ${{ needs.checks.outputs.scope }}
+          PIPELINE: ${{ needs.pipeline.result }}
+          WEB: ${{ needs.web.result }}
+        run: |
+          test "$CHECKS" = success
+          if [ "$SCOPE" = full ]; then
+            test "$PIPELINE" = success
+            test "$WEB" = success
+          else
+            test "$SCOPE" = docs
+            test "$PIPELINE" = skipped
+            test "$WEB" = skipped
+          fi
 
   # Not required. Runs Playwright specs in tests/e2e (F07) against a fixture-mode production build.
   e2e:
+    needs: checks
+    if: needs.checks.outputs.scope == 'full'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     continue-on-error: true

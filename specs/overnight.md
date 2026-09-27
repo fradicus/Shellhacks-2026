@@ -30,7 +30,7 @@ Local sessions have no Paperclip heartbeat or automatic restart. While active, t
 2. If `origin/main` CI is red (`gh run list --branch main --limit 1`): don't merge anything; follow section 6.
 3. Read `specs/mission.md`, `specs/tech-stack.md`, `specs/roadmap.md` and your current feature's spec, from `origin/main`. Don't rely on memory from earlier runs.
 4. Compute elapsed time: now minus `run_start` from the roadmap front matter. Find the active gate (section 8).
-5. Check your open PRs first: rebase if behind, fix if red, finish if in progress. Then pick new work (section 2).
+5. Check your open PRs first: fix if red, finish if in progress; rebase when required under section 3.8. Then pick new work (section 2).
 
 ## 2. Picking work
 
@@ -49,10 +49,10 @@ Local sessions have no Paperclip heartbeat or automatic restart. While active, t
 2. Push and open a **draft** PR titled `[<ID>] <name>` right away. That draft PR is your claim. Include the runtime/session and logical role in its body, especially when both tools use one GitHub account.
 3. Edit only files that match your feature's `owns` globs, plus `changes/<ID>.md`, `specs/features/<ID>-*/**` and `specs/decisions/<ID>-*.md`.
 4. Commit small; messages say why. **No `Co-Authored-By` or other trailers.**
-5. Run your feature's Validation section and the repo-wide checks in `AGENTS.md`. Paste the commands and results into the PR body. A failing check is reported as failing.
+5. Run your feature's Validation section and the change-scoped checks in `specs/tech-stack.md`. Successful CI on the exact PR revision satisfies repo-wide checks without a duplicate local run. Paste results or CI links into the PR; report failing and optional checks honestly.
 6. Write `changes/<ID>.md` **last** (3–8 lines: shipped, cut, known gaps). It's the done marker.
 7. Mark the PR ready and run `gh pr merge --auto --squash --delete-branch`. Branch protection merges it once the required check is green and the branch is up to date.
-8. If you're behind main: `git fetch && git rebase origin/main`, rerun the checks, then `git push --force-with-lease`. Force-push only your own feature branch; never `main` or someone else's branch.
+8. Keep a checked revision stable while CI runs. Rebase when conflicts, branch protection or a known integration dependency require it: `git fetch && git rebase origin/main`, reclassify the diff, validate the new revision under `specs/tech-stack.md`, then `git push --force-with-lease`. Being behind unrelated merges alone does not require repeated rebases. Force-push only your own feature branch; never `main` or someone else's branch.
 9. A feature may ship as sequential parts (`[<ID>] part 1/3`), with one open PR per feature at a time. Only the last part adds `changes/<ID>.md`.
 10. Never resolve a rebase conflict in a file you don't own. Abort the rebase, open an issue labeled `conflict` for the owning lane, and wait on it.
 
