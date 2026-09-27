@@ -1,0 +1,2396 @@
+[
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1314",
+    "center": null,
+    "counties": [],
+    "description": "115 kV Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2024,
+        "Origin": "Cheyenne, WY",
+        "ProjectName": "Orchard Valley 115 kV Substation",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Cheyenne, WY",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1314
+      },
+      "row": 121,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Orchard Valley",
+          "norm": "ORCHARD VALLEY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "project_name",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Orchard Valley 115 kV Substation",
+    "native_id": "1314",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 121 (projectid 1314)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1314:in-service",
+        "native_project_link": "1314",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1315",
+    "center": null,
+    "counties": [],
+    "description": "115 kV Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Substation",
+        "InService": 2024,
+        "Origin": "Cheyenne, WY",
+        "ProjectName": "Allison Draw 115 kV Substation",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Cheyenne, WY",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1315
+      },
+      "row": 122,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Allison Draw",
+          "norm": "ALLISON DRAW",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "project_name",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Allison Draw 115 kV Substation",
+    "native_id": "1315",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 122 (projectid 1315)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1315:in-service",
+        "native_project_link": "1315",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1316",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1153748098 (Bison Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.064898,
+      "lon": -104.780807
+    },
+    "counties": [],
+    "description": "115 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2024,
+        "Origin": "Bison 115 kV Substation",
+        "ProjectName": "Bison - Orchard Valley 115 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Orchard Valley 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1316
+      },
+      "row": 123,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1153748098",
+            "lat": 41.0648979,
+            "lon": -104.7808067,
+            "name": "Bison Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "Bison",
+          "norm": "BISON",
+          "status": "matched"
+        },
+        {
+          "name": "Orchard Valley",
+          "norm": "ORCHARD VALLEY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Bison - Orchard Valley 115 kV Line",
+    "native_id": "1316",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 123 (projectid 1316)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1316:in-service",
+        "native_project_link": "1316",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1317",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/711811013 (King Ranch Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.11835,
+      "lon": -104.908228
+    },
+    "counties": [],
+    "description": "115 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2024,
+        "Origin": "Orchard Valley 115 kV Substation",
+        "ProjectName": "Orchard Valley - King Ranch 115 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "King Ranch 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1317
+      },
+      "row": 124,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Orchard Valley",
+          "norm": "ORCHARD VALLEY",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/711811013",
+            "lat": 41.1183498,
+            "lon": -104.9082284,
+            "name": "King Ranch Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "King Ranch",
+          "norm": "KING RANCH",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Orchard Valley - King Ranch 115 kV Line",
+    "native_id": "1317",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 124 (projectid 1317)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1317:in-service",
+        "native_project_link": "1317",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1318",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1106458071 (West Cheyenne Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.108638,
+      "lon": -104.950147
+    },
+    "counties": [],
+    "description": "115 kV line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2024,
+        "Origin": "Orchard Valley 115 kV Substation",
+        "ProjectName": "Bison - West Cheyenne 115 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "West Cheyenne 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1318
+      },
+      "row": 125,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Orchard Valley",
+          "norm": "ORCHARD VALLEY",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1106458071",
+            "lat": 41.108638,
+            "lon": -104.9501472,
+            "name": "West Cheyenne Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "West Cheyenne",
+          "norm": "WEST CHEYENNE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Bison - West Cheyenne 115 kV Line",
+    "native_id": "1318",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 125 (projectid 1318)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1318:in-service",
+        "native_project_link": "1318",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1319",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/158100239 (Happy Jack Substation), OSM way/414055236 (North Range Substation), corroborated by operator, voltage.",
+      "lat": 41.128145,
+      "lon": -104.909311
+    },
+    "counties": [],
+    "description": "115 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Transmission Line",
+        "InService": 2026,
+        "Origin": "Happy Jack 115 kV Substation",
+        "ProjectName": "Happy Jack - North Range #2 115 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "North Range 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1319
+      },
+      "row": 126,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/158100239",
+            "lat": 41.1288393,
+            "lon": -104.911682,
+            "name": "Happy Jack Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "Happy Jack",
+          "norm": "HAPPY JACK",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/414055236",
+            "lat": 41.1274511,
+            "lon": -104.9069394,
+            "name": "North Range Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "North Range",
+          "norm": "NORTH RANGE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Happy Jack - North Range #2 115 kV Line",
+    "native_id": "1319",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Expected in service 2026 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2026",
+            "locator": "sheet All Projects, row 126 (projectid 1319)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1319:planned-in-service",
+        "native_project_link": "1319",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1320",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1197757145 (Campstool Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.144017,
+      "lon": -104.714939
+    },
+    "counties": [],
+    "description": "115 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2024,
+        "Origin": "Allison Draw 115 kV Substation",
+        "ProjectName": "Allison Draw - Campstool 115 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Campstool 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1320
+      },
+      "row": 127,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Allison Draw",
+          "norm": "ALLISON DRAW",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1197757145",
+            "lat": 41.1440171,
+            "lon": -104.7149394,
+            "name": "Campstool Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "Campstool",
+          "norm": "CAMPSTOOL",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Allison Draw - Campstool 115 kV Line",
+    "native_id": "1320",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 127 (projectid 1320)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1320:in-service",
+        "native_project_link": "1320",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1321",
+    "center": null,
+    "counties": [],
+    "description": "115 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2024,
+        "Origin": "Allison Draw 115 kV Substation",
+        "ProjectName": "Allison Draw - CPGS 115 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "CPGS 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1321
+      },
+      "row": 128,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Allison Draw",
+          "norm": "ALLISON DRAW",
+          "status": "no_facility"
+        },
+        {
+          "name": "CPGS",
+          "norm": "CPGS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Allison Draw - CPGS 115 kV Line",
+    "native_id": "1321",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Development “In-Service”; InService 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2024",
+            "locator": "sheet All Projects, row 128 (projectid 1321)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1321:in-service",
+        "native_project_link": "1321",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1323",
+    "center": null,
+    "counties": [],
+    "description": "230 kV Substation with 2x200 MVA 230/115 kV transformers",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Substation",
+        "InService": 2026,
+        "Origin": "Cheyenne, WY",
+        "ProjectName": "Sweetgrass 230 kV Substation",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Cheyenne, WY",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1323
+      },
+      "row": 130,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sweetgrass",
+          "norm": "SWEETGRASS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "project_name",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Sweetgrass 230 kV Substation",
+    "native_id": "1323",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Development “In-Service”; InService 2026.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2026",
+            "locator": "sheet All Projects, row 130 (projectid 1323)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1323:in-service",
+        "native_project_link": "1323",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1324",
+    "center": null,
+    "counties": [],
+    "description": "230 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2026,
+        "Origin": "Sweetgrass 230 kV Substation",
+        "ProjectName": "Sweetgrass - Bluffs 230 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Bluffs 230 kV Substation",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1324
+      },
+      "row": 131,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sweetgrass",
+          "norm": "SWEETGRASS",
+          "status": "no_facility"
+        },
+        {
+          "name": "Bluffs",
+          "norm": "BLUFFS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Sweetgrass - Bluffs 230 kV Line",
+    "native_id": "1324",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Development “In-Service”; InService 2026.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2026",
+            "locator": "sheet All Projects, row 131 (projectid 1324)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1324:in-service",
+        "native_project_link": "1324",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1325",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1106458071 (West Cheyenne Substation), corroborated by operator.",
+      "lat": 41.108638,
+      "lon": -104.950147
+    },
+    "counties": [],
+    "description": "230 kV Substation with 2x200 MVA 230/115 kV transformers",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Substation",
+        "InService": 2026,
+        "Origin": "Cheyenne, Wy",
+        "ProjectName": "West Cheyenne 230 kV Substation",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Cheyenne, Wy",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1325
+      },
+      "row": 132,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/1106458071",
+            "lat": 41.108638,
+            "lon": -104.9501472,
+            "name": "West Cheyenne Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "West Cheyenne",
+          "norm": "WEST CHEYENNE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "project_name",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "West Cheyenne 230 kV Substation",
+    "native_id": "1325",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Development “In-Service”; InService 2026.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2026",
+            "locator": "sheet All Projects, row 132 (projectid 1325)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1325:in-service",
+        "native_project_link": "1325",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1326",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1106458071 (West Cheyenne Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 41.108638,
+      "lon": -104.950147
+    },
+    "counties": [],
+    "description": "230 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2026,
+        "Origin": "West Cheyenne 230 kV Substation",
+        "ProjectName": "West Cheyenne - Sweetgrass 230 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Sweetgrass 230 kV Substation",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1326
+      },
+      "row": 133,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/1106458071",
+            "lat": 41.108638,
+            "lon": -104.9501472,
+            "name": "West Cheyenne Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "West Cheyenne",
+          "norm": "WEST CHEYENNE",
+          "status": "matched"
+        },
+        {
+          "name": "Sweetgrass",
+          "norm": "SWEETGRASS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "West Cheyenne - Sweetgrass 230 kV Line",
+    "native_id": "1326",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Development “In-Service”; InService 2026.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2026",
+            "locator": "sheet All Projects, row 133 (projectid 1326)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1326:in-service",
+        "native_project_link": "1326",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1327",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1106458071 (West Cheyenne Substation), OSM way/167015118 (Windstar Substation), corroborated by operator, voltage.",
+      "lat": 41.985131,
+      "lon": -105.36479
+    },
+    "counties": [],
+    "description": "230 kV Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Transmission Line",
+        "InService": 2026,
+        "Origin": "West Cheyenne 230 kV Substation",
+        "ProjectName": "West Cheyenne - Windstar 230 kV Line",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Windstar 230 kV Substation",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1327
+      },
+      "row": 134,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/1106458071",
+            "lat": 41.108638,
+            "lon": -104.9501472,
+            "name": "West Cheyenne Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "West Cheyenne",
+          "norm": "WEST CHEYENNE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/167015118",
+            "lat": 42.8616239,
+            "lon": -105.7794329,
+            "name": "Windstar Substation",
+            "operator": "Black Hills Energy;Rocky Mountain Power",
+            "voltage": "230000"
+          },
+          "name": "Windstar",
+          "norm": "WINDSTAR",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "West Cheyenne - Windstar 230 kV Line",
+    "native_id": "1327",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Development “In-Service”; InService 2026.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2026",
+            "locator": "sheet All Projects, row 134 (projectid 1327)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1327:in-service",
+        "native_project_link": "1327",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1359",
+    "center": null,
+    "counties": [],
+    "description": "Sectionalize Archer - Stegall 115 kV line by adding breakers at both Round Top Substation and Pole Creek Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Substation",
+        "InService": 2026,
+        "Origin": "Archer",
+        "ProjectName": "Archer - Stegall Sectionalization Project",
+        "Sponsor": "Tri-State Generation and Transmission Association",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Stegall",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1359
+      },
+      "row": 162,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Archer",
+          "norm": "ARCHER",
+          "status": "operator_conflict"
+        },
+        {
+          "name": "Stegall",
+          "norm": "STEGALL",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "TRI-STATE",
+        "TRI STATE"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Archer - Stegall Sectionalization Project",
+    "native_id": "1359",
+    "other_owners": [],
+    "owner": "Tri-State Generation and Transmission Association",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Development “In-Service”; InService 2026.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2026",
+            "locator": "sheet All Projects, row 162 (projectid 1359)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1359:in-service",
+        "native_project_link": "1359",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1548",
+    "center": null,
+    "counties": [],
+    "description": "New load serving substation in Cheyenne WY",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "In-Service",
+        "FacilityType": "Substation",
+        "InService": 2025,
+        "Origin": "Cheyenne, WY",
+        "ProjectName": "Wallick 115 kV Substation",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Cheyenne, WY",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1548
+      },
+      "row": 242,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2025",
+      "value": "2025"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Wallick",
+          "norm": "WALLICK",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "project_name",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Wallick 115 kV Substation",
+    "native_id": "1548",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2025",
+        "description": "Development “In-Service”; InService 2025.",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "Development = In-Service; InService = 2025",
+            "locator": "sheet All Projects, row 242 (projectid 1548)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1548:in-service",
+        "native_project_link": "1548",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1549",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1153748098 (Bison Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.064898,
+      "lon": -104.780807
+    },
+    "counties": [],
+    "description": "Double Circuit 115 kV line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Transmission Line",
+        "InService": 2027,
+        "Origin": "Sweetgrass 115 kV Substation",
+        "ProjectName": "Sweetgrass - Bison 115 kV #3 & #4 ",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Bison 115 kV Substation",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1549
+      },
+      "row": 243,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sweetgrass",
+          "norm": "SWEETGRASS",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1153748098",
+            "lat": 41.0648979,
+            "lon": -104.7808067,
+            "name": "Bison Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "Bison",
+          "norm": "BISON",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Sweetgrass - Bison 115 kV #3 & #4",
+    "native_id": "1549",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Expected in service 2027 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2027",
+            "locator": "sheet All Projects, row 243 (projectid 1549)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1549:planned-in-service",
+        "native_project_link": "1549",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1576",
+    "center": null,
+    "counties": [],
+    "description": "CLPT G20 Subsation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Substation",
+        "InService": 2027,
+        "Origin": "Sweetgrass – Bluffs 230 kV Line",
+        "ProjectName": "CLPT G20 365 MW Solar/BESS",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "NA",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1576
+      },
+      "row": 268,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "CLPT G20 365 MW Solar/BESS",
+    "native_id": "1576",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Expected in service 2027 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2027",
+            "locator": "sheet All Projects, row 268 (projectid 1576)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1576:planned-in-service",
+        "native_project_link": "1576",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1577",
+    "center": null,
+    "counties": [],
+    "description": "CLPT G16 Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Substation",
+        "InService": 2028,
+        "Origin": "West Cheyenne – Windstar 230 kV Line",
+        "ProjectName": "CLPT G16 300 MW Solar/Wind/BESS",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "NA",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1577
+      },
+      "row": 269,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "CLPT G16 300 MW Solar/Wind/BESS",
+    "native_id": "1577",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2028",
+            "locator": "sheet All Projects, row 269 (projectid 1577)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1577:planned-in-service",
+        "native_project_link": "1577",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1578",
+    "center": null,
+    "counties": [],
+    "description": "CLPT G18 Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Substation",
+        "InService": 2028,
+        "Origin": "West Cheyenne – Windstar 230 kV Line",
+        "ProjectName": "CLPT G18 255 MW Solar/BESS",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "NA",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1578
+      },
+      "row": 270,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": "no_named_endpoint",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "CLPT G18 255 MW Solar/BESS",
+    "native_id": "1578",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2028",
+            "locator": "sheet All Projects, row 270 (projectid 1578)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1578:planned-in-service",
+        "native_project_link": "1578",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1579",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1106458071 (West Cheyenne Substation), corroborated by operator, voltage.",
+      "lat": 41.108638,
+      "lon": -104.950147
+    },
+    "counties": [],
+    "description": "CLPT G11 Wind Generation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Other",
+        "InService": 2028,
+        "Origin": "West Cheyenne 115 kV",
+        "ProjectName": "CLPT G11 150 MW Wind",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "NA",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1579
+      },
+      "row": 271,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1106458071",
+            "lat": 41.108638,
+            "lon": -104.9501472,
+            "name": "West Cheyenne Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "West Cheyenne",
+          "norm": "WEST CHEYENNE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "CLPT G11 150 MW Wind",
+    "native_id": "1579",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2028",
+            "locator": "sheet All Projects, row 271 (projectid 1579)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1579:planned-in-service",
+        "native_project_link": "1579",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1580",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1313407222 (East Business Park Substation), corroborated by operator, voltage.",
+      "lat": 41.147554,
+      "lon": -104.693249
+    },
+    "counties": [],
+    "description": "CLPT G17 Generation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Other",
+        "InService": 2028,
+        "Origin": "East Business Park",
+        "ProjectName": "CLPT G17 300 MW Solar/Wind/Bess",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "NA",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1580
+      },
+      "row": 272,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1313407222",
+            "lat": 41.1475542,
+            "lon": -104.6932494,
+            "name": "East Business Park Substation",
+            "operator": "Cheyenne Light Fuel and Power",
+            "voltage": "115000"
+          },
+          "name": "East Business Park",
+          "norm": "EAST BUSINESS PARK",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "CLPT G17 300 MW Solar/Wind/Bess",
+    "native_id": "1580",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2028",
+            "locator": "sheet All Projects, row 272 (projectid 1580)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1580:planned-in-service",
+        "native_project_link": "1580",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1581",
+    "center": null,
+    "counties": [],
+    "description": "CLPT G21 Generation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Other",
+        "InService": 2028,
+        "Origin": "Sweetgrass 230 kV",
+        "ProjectName": "CLPT G21 400 MW Solar/BESS",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "NA",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1581
+      },
+      "row": 273,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sweetgrass",
+          "norm": "SWEETGRASS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "CLPT G21 400 MW Solar/BESS",
+    "native_id": "1581",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2028",
+            "locator": "sheet All Projects, row 273 (projectid 1581)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1581:planned-in-service",
+        "native_project_link": "1581",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1582",
+    "center": null,
+    "counties": [],
+    "description": "Convert Sweetgrass - CPGS Line #1 from 115kV to 230 kV",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Transmission Line",
+        "InService": 2028,
+        "Origin": "Sweetgrass 230kv",
+        "ProjectName": "Sweetgrass – CPGS 230 kV Voltage Conversion",
+        "Sponsor": "Cheyenne Light Fuel and Power",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "GPGS",
+        "Voltage": "230 kV",
+        "modifieddate": null,
+        "projectid": 1582
+      },
+      "row": 274,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sweetgrass",
+          "norm": "SWEETGRASS",
+          "status": "no_facility"
+        },
+        {
+          "name": "GPGS",
+          "norm": "GPGS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Sweetgrass – CPGS 230 kV Voltage Conversion",
+    "native_id": "1582",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel and Power",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2028",
+            "locator": "sheet All Projects, row 274 (projectid 1582)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1582:planned-in-service",
+        "native_project_link": "1582",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02-wy:1695",
+    "center": null,
+    "counties": [],
+    "description": "New Delivery Point substation tapping WAPA's Whiterock-Stegall line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Development": "Planned",
+        "FacilityType": "Substation",
+        "InService": 2026,
+        "Origin": "Whiterock",
+        "ProjectName": "Kinnan DP",
+        "Sponsor": "Tri-State Generation and Transmission Association",
+        "StateTraversed": "Wyoming",
+        "SubRegionalID_Name": "CCPG",
+        "Termination": "Stegall",
+        "Voltage": "115 kV",
+        "modifieddate": null,
+        "projectid": 1695
+      },
+      "row": 385,
+      "sheet": "All Projects",
+      "source_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "name": "Whiterock",
+          "norm": "WHITEROCK",
+          "status": "no_facility"
+        },
+        {
+          "name": "Stegall",
+          "norm": "STEGALL",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "names_from": "origin_termination",
+      "operator_keys": [
+        "TRI-STATE",
+        "TRI STATE"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Kinnan DP",
+    "native_id": "1695",
+    "other_owners": [],
+    "owner": "Tri-State Generation and Transmission Association",
+    "planning_region": "westconnect",
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Expected in service 2026 (development status “Planned”).",
+        "evidence": [
+          {
+            "access_review": "Public WestConnect TPPL workbook linked from the TPPL page; no login.",
+            "artifact_sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+            "facts": "InService = 2026",
+            "locator": "sheet All Projects, row 385 (projectid 1695)",
+            "publisher": "WestConnect",
+            "retrieved_at": "2026-09-27T09:36:01Z",
+            "source_date": null,
+            "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
+          }
+        ],
+        "id": "westconnect-tppl-2026-02-wy:1695:planned-in-service",
+        "native_project_link": "1695",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "westconnect-tppl-2026-02-wy",
+    "states": [
+      "56"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  }
+]

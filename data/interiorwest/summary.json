@@ -1,0 +1,31 @@
+{
+  "by_source": {
+    "westconnect-tppl-2026-02-wy": 24
+  },
+  "by_state": {
+    "56": 24
+  },
+  "by_status": {
+    "in_service": 14,
+    "planned": 10
+  },
+  "by_tier": {
+    "candidate": 11
+  },
+  "distinct_points": 7,
+  "located": 11,
+  "located_by_state": {
+    "56": 11
+  },
+  "located_by_status": {
+    "in_service": 7,
+    "planned": 4
+  },
+  "projects": 24,
+  "unlocated_reasons": {
+    "no_facility": 9,
+    "no_facility,operator_conflict": 1,
+    "no_named_endpoint": 3
+  },
+  "verified": 0
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "westconnect-tppl-2026-02-wy",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1",
+    "import_status": "imported",
+    "landing_url": "https://regplanning.westconnect.com/tppl.htm",
+    "notes": [
+      "F50 Interior West release (C50): the workbook's Wyoming rows; the same artifact and hash as F45's westconnect-tppl-2026-02. Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; none is independently confirmed. Source-bounded.",
+      "The workbook's Control sheet TimeStamp reads 2026-02-25 09:30; its meaning (save or send) is not stated."
+    ],
+    "planning_region": "westconnect",
+    "project_count": 24,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "WestConnect",
+    "retrieved_at": "2026-09-27T09:36:01Z",
+    "role": "project_plan",
+    "sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+    "states": [
+      "56"
+    ],
+    "title": "WestConnect Transmission Plan Project List (TPPL) workbook",
+    "vintage": null
+  }
+]
