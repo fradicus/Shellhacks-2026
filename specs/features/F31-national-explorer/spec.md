@@ -54,3 +54,11 @@ Implement within F31: reuse the unfiltered map loader's successful Atlas result 
 active dataset ID, with fresh pointer reads, bounded per-instance retention and
 failure retry. Preserve payloads and visuals. This also benefits History's existing
 call to the same loader; no F19/F37 presentation files are part of this claim.
+
+## Compact payload follow-up (2026-09-27)
+
+This Codex session owns [compact summaries and selected evidence](../../decisions/F31-compact-payload.md).
+F31 provides the additive summary DTO, detail API and Explorer integration; the same
+session follows with an F19 adoption PR. Keep the full loader/export contract for
+existing consumers and History's event derivation. Details must match the displayed
+dataset, with explicit loading/error/retry behavior and stale-response protection.

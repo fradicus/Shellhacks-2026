@@ -17,12 +17,14 @@ import type {
   NationalActionResult,
   NationalAssistantRenderer,
   NationalExplorerController,
-  NationalExplorerPayload,
+  NationalSummaryPayload,
+  NationalProjectSummary,
   NationalFilterAction,
   NationalFilters,
   NationalProject,
   NationalSource,
 } from "@/lib/national/types";
+import { ProjectDetail } from "./ProjectDetail";
 import { MindMap } from "./MindMap";
 import { NationalMap } from "./NationalMap";
 import { displayPoints, locationLabel } from "@/lib/national/locations";
@@ -67,12 +69,26 @@ function SourceEvidence({ project, source }: { project: NationalProject; source?
   );
 }
 
+function SelectedEvidence({ id, dataset, description = false }: { id: string; dataset: string | null; description?: boolean }) {
+  return <ProjectDetail id={id} dataset={dataset}>{({ project, source }) => <>
+    {description ? <p>{project.description ?? "No description was published in the imported row."}</p> : null}
+    <SourceEvidence project={project} source={source} />
+  </>}</ProjectDetail>;
+}
+
+function RowEvidence({ project, dataset }: { project: NationalProjectSummary; dataset: string | null }) {
+  const [open, setOpen] = useState(false);
+  return <details onToggle={(event) => setOpen(event.currentTarget.open)}><summary>Source evidence</summary>
+    {open ? <SelectedEvidence id={project._id} dataset={dataset} /> : null}
+  </details>;
+}
+
 export function NationalExplorer({
   initial,
   renderAssistant,
   basePath = "/explore",
 }: {
-  initial: NationalExplorerPayload;
+  initial: NationalSummaryPayload;
   renderAssistant?: NationalAssistantRenderer;
   basePath?: string;
 }) {
@@ -96,7 +112,6 @@ export function NationalExplorer({
     : mindError;
   const currentIds = useMemo(() => [...new Set([...initial.projects, ...initial.mapProjects].map((project) => project._id))], [initial.mapProjects, initial.projects]);
   const currentIdSet = useMemo(() => new Set(currentIds), [currentIds]);
-  const sourceById = useMemo(() => new Map(initial.sources.map((source) => [source._id, source])), [initial.sources]);
   const stateById = useMemo(() => new Map(geography?.states.map((state) => [state.state_fips, state.name]) ?? []), [geography]);
   const countyById = useMemo(() => new Map(geography?.counties.map((county) => [county.county_geoid, `${county.full_name}, ${county.state_usps}`]) ?? []), [geography]);
   const selected = useMemo(() => [...initial.projects, ...initial.mapProjects].find((project) => project._id === selectedId) ?? null, [initial.mapProjects, initial.projects, selectedId]);
@@ -325,8 +340,7 @@ export function NationalExplorer({
               {!initial.available ? <EmptyState title="Project records are unavailable">Reference geography is not a project dataset.</EmptyState> : initial.projects.length === 0 ? <EmptyState title="No matches in the imported records">This does not mean the selected area has no planned construction. Records with unknown state or county cannot satisfy a geographic filter.</EmptyState> : (
                 <ol className={s.projectList}>
                   {initial.projects.map((project) => {
-                    const source = sourceById.get(project.source_id);
-                    return <li key={project._id}><button className={project._id === selectedId ? s.selectedRow : s.projectRow} onClick={() => setSelectedId(project._id)}><span><strong>{project.name}</strong><small>{project.native_id} · {display(project.owner)}</small></span><span className={s.rowMeta}><Badge tone={displayPoints(project).length ? "ok" : "warn"}>{locationLabel(project)}</Badge><small>{STATUS_LABEL[project.status_group]}</small></span></button><details><summary>Source evidence</summary><SourceEvidence project={project} source={source} /></details></li>;
+                    return <li key={project._id}><button className={project._id === selectedId ? s.selectedRow : s.projectRow} onClick={() => setSelectedId(project._id)}><span><strong>{project.name}</strong><small>{project.native_id} · {display(project.owner)}</small></span><span className={s.rowMeta}><Badge tone={displayPoints(project).length ? "ok" : "warn"}>{locationLabel(project)}</Badge><small>{STATUS_LABEL[project.status_group]}</small></span></button><RowEvidence project={project} dataset={initial.dataset} /></li>;
                   })}
                 </ol>
               )}
@@ -336,7 +350,7 @@ export function NationalExplorer({
         </div>
       )}
 
-      {selected ? <aside className={s.drawer} aria-label="Selected project details"><div><p className={s.eyebrow}>Selected project</p><h2>{selected.name}</h2></div><Button onClick={() => setSelectedId(null)}>Close</Button><dl><div><dt>Owner</dt><dd>{display(selected.owner)}</dd></div><div><dt>Planning region</dt><dd>{display(selected.planning_region)}</dd></div><div><dt>Reported states</dt><dd>{selected.states.map((code) => stateById.get(code) ?? code).join(", ") || "Unknown"}</dd></div><div><dt>Reported counties</dt><dd>{selected.counties.map((code) => countyById.get(code) ?? code).join(", ") || "Unknown"}</dd></div><div><dt>Location basis</dt><dd>{display(selected.geography_basis)}</dd></div><div><dt>Milestone</dt><dd>{display(selected.in_service.raw)} ({selected.in_service.precision})</dd></div></dl><p>{selected.description ?? "No description was published in the imported row."}</p><div className={s.drawerEvidence}><SourceEvidence project={selected} source={sourceById.get(selected.source_id)} /></div></aside> : null}
+      {selected ? <aside className={s.drawer} aria-label="Selected project details"><div><p className={s.eyebrow}>Selected project</p><h2>{selected.name}</h2></div><Button onClick={() => setSelectedId(null)}>Close</Button><dl><div><dt>Owner</dt><dd>{display(selected.owner)}</dd></div><div><dt>Planning region</dt><dd>{display(selected.planning_region)}</dd></div><div><dt>Reported states</dt><dd>{selected.states.map((code) => stateById.get(code) ?? code).join(", ") || "Unknown"}</dd></div><div><dt>Reported counties</dt><dd>{selected.counties.map((code) => countyById.get(code) ?? code).join(", ") || "Unknown"}</dd></div><div><dt>Location basis</dt><dd>{display(selected.geography_basis)}</dd></div><div><dt>Milestone</dt><dd>{display(selected.in_service.raw)} ({selected.in_service.precision})</dd></div></dl><div className={s.drawerEvidence}><SelectedEvidence id={selected._id} dataset={initial.dataset} description /></div></aside> : null}
 
 
       <section className={s.provenance}>

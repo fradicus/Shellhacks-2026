@@ -1,5 +1,8 @@
 import "server-only";
 
+import { projectSummary } from "./summaries";
+import type { NationalSummaryPayload, NationalProjectDetail } from "./types";
+
 import { displayPoints } from "./locations";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -329,5 +332,39 @@ export async function loadNationalExport(filters: NationalFilters): Promise<Nati
     };
   } catch (error) {
     return unavailable(reference, filters, error instanceof NationalUnavailable ? error.message : "national database unavailable");
+  }
+}
+
+
+/** Preserve the full loader/cache for server consumers; trim at the client boundary. */
+export async function loadNationalSummaries(filters: NationalFilters): Promise<NationalSummaryPayload> {
+  const payload = await loadNationalExplorer(filters);
+  return { ...payload, projects: payload.projects.map(projectSummary), mapProjects: payload.mapProjects.map(projectSummary) };
+}
+
+export async function loadNationalProject(id: string, dataset: string): Promise<NationalProjectDetail> {
+  const changed = (): NationalProjectDetail => ({ available: false, status: 409,
+    reason: "The published dataset changed. Refresh the page to view its current evidence." });
+  const missing = (): NationalProjectDetail => ({ available: false, status: 404, reason: "Project evidence was not found in this dataset." });
+  if (snapshotRejected()) return { available: false, status: 503, reason: "Committed snapshots are disabled in production." };
+  try {
+    if (snapshotEnabled()) {
+      const snapshot = await fileSnapshot();
+      if (dataset !== snapshot.dataset) return changed();
+      const project = snapshot.projects.find((p) => p._id === id);
+      return project ? { available: true, dataset, project, source: snapshot.sources.find((s) => s._id === project.source_id) } : missing();
+    }
+    const active = await activeNationalDb();
+    if (dataset !== active.dataset) return changed();
+    const doc = await active.db.collection("national_projects").findOne({ dataset, id }, { maxTimeMS: QUERY_TIMEOUT_MS });
+    if (!doc) return missing();
+    const project = clean<NationalProject>(doc);
+    if (!validProjects([project])) throw new NationalUnavailable("Project evidence failed validation.");
+    const sourceDoc = await active.db.collection("national_sources").findOne({ dataset, id: project.source_id }, { maxTimeMS: QUERY_TIMEOUT_MS });
+    const source = sourceDoc ? clean<NationalSource>(sourceDoc) : undefined;
+    if (source && !validSources([source])) throw new NationalUnavailable("Project source failed validation.");
+    return { available: true, dataset, project, source };
+  } catch {
+    return { available: false, status: 503, reason: "Project evidence is temporarily unavailable." };
   }
 }

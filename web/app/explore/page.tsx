@@ -1,18 +1,18 @@
 import { NationalExplorer } from "@/components/national/NationalExplorer";
 import { parseNationalFilters } from "@/lib/national/filters";
-import { loadNationalExplorer } from "@/lib/national/server";
-import type { NationalExplorerPayload } from "@/lib/national/types";
+import { loadNationalSummaries } from "@/lib/national/server";
+import type { NationalSummaryPayload } from "@/lib/national/types";
 
 export const dynamic = "force-dynamic";
 
 export default async function ExplorePage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   const raw = await searchParams;
-  let initial: NationalExplorerPayload;
+  let initial: NationalSummaryPayload;
   try {
     const filters = parseNationalFilters(raw);
-    initial = await loadNationalExplorer(filters);
+    initial = await loadNationalSummaries(filters);
   } catch (error) {
-    const fallback = await loadNationalExplorer(parseNationalFilters({}));
+    const fallback = await loadNationalSummaries(parseNationalFilters({}));
     initial = {
       ...fallback,
       available: false as const,

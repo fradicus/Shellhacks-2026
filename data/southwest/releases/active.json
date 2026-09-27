@@ -1,0 +1,18 @@
+{
+  "expected_counts": {
+    "candidate": 144,
+    "candidate_unique_name": 18,
+    "centers": 172,
+    "distinct_points": 133,
+    "official": 10,
+    "projects": 272,
+    "sources": 2
+  },
+  "files": {
+    "projects": "f2a11021967a14b93c7f3a003461e811780ccac85c7ac3badbbd73d114010f52",
+    "sources": "92f4027d09f6c78aae491b333e85cf0a9353638c10f2285b90160473d523fb0e"
+  },
+  "policy": "C25",
+  "release_id": "southwest-westconnect-tppl-2026-02-candidates-1",
+  "rule": "C33"
+}

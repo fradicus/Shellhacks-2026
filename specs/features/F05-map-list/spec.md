@@ -5,7 +5,7 @@ lane: B
 agent: frontend-engineer
 phase: 1
 depends_on: [F00]
-owns: [web/app/page.tsx, web/app/map/, web/components/map/, web/components/list/]
+owns: [web/app/page.tsx, web/app/map/, web/components/map/, web/components/list/, web/components/landing/]
 cut: never
 ---
 

@@ -51,7 +51,7 @@ Local sessions have no Paperclip heartbeat or automatic restart. While active, t
 4. Commit small; messages say why. **No `Co-Authored-By` or other trailers.**
 5. Run your feature's Validation section and the change-scoped checks in `specs/tech-stack.md`. Successful CI on the exact PR revision satisfies repo-wide checks without a duplicate local run. Paste results or CI links into the PR; report failing and optional checks honestly.
 6. Write `changes/<ID>.md` **last** (3–8 lines: shipped, cut, known gaps). It's the done marker.
-7. Mark the PR ready and run `gh pr merge --auto --squash --delete-branch`. Branch protection merges it once the required check is green and the branch is up to date.
+7. Mark the PR ready. Agents may merge their own PRs: once the required check is green and the branch is up to date, run `gh pr merge <n> --squash --delete-branch` (repository auto-merge is disabled, so `--auto` fails).
 8. Keep a checked revision stable while CI runs. Rebase when conflicts, branch protection or a known integration dependency require it: `git fetch && git rebase origin/main`, reclassify the diff, validate the new revision under `specs/tech-stack.md`, then `git push --force-with-lease`. Being behind unrelated merges alone does not require repeated rebases. Force-push only your own feature branch; never `main` or someone else's branch.
 9. A feature may ship as sequential parts (`[<ID>] part 1/3`), with one open PR per feature at a time. Only the last part adds `changes/<ID>.md`.
 10. Never resolve a rebase conflict in a file you don't own. Abort the rebase, open an issue labeled `conflict` for the owning lane, and wait on it.

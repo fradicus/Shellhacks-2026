@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42, F44]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41, F19, F37]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37]
 frozen_paths:
   - schemas/
   - scripts/
@@ -271,3 +271,32 @@ C14/F20 embedding work "remains with its current owners" describe those closed P
 draft from the kept branch, which is the normal claim. #167's receipts are superseded by C37; its Florida
 PSC provider-audit research can be carried into a new F39 part. C31 is not adopted: new geographic work
 prefers exact or tentative facility locations over county anchors.
+
+## Launched follow-on: Southwest coverage
+
+The user instructed Claude local to cover Arizona, New Mexico, Colorado, Utah and Nevada, about 100–200 pins in total:
+as many as the data supports in the well-covered states, a few in Nevada and Utah. [C42](decisions/C42-southwest.md)
+assigns [F45](features/F45-southwest/spec.md) (WestConnect's public project workbook for AZ/NM/CO, WestTEC planned-line
+geometry for NV/UT; C33 tiers plus C38's operator guard).
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F45 | Southwest project coverage from WestConnect with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Midwest coverage
+
+The user instructed Claude local to cover the Midwest states F40 does not: Iowa, Missouri, Kansas, Nebraska, North
+Dakota and South Dakota. [C43](decisions/C43-midwest.md) assigns [F46](features/F46-midwest/spec.md) (SPP's public
+project tracking workbook, then the MISO rows F40 excluded; C33 tiers plus C38's operator guard). Iowa stays thin
+until state dockets are transcribed.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F46 | Midwest project coverage from SPP and MISO with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Dense Southeast (C45)
+
+The user told Claude local to make the Southeast dense with present and past points, split by geography.
+[C45](decisions/C45-southeast-density.md) moves [F39](features/F39-southeast/spec.md) to claude-local and applies
+C33's labeled tiers (with C38's operator guard) to new Southeast batches through one fixed dense release. The
+strict C27 release and its reviewed records are unchanged.

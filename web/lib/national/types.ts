@@ -49,6 +49,7 @@ export interface NationalProject {
   evidence: { page: number | null; sheet: string | null; row: number | null; raw: Record<string, unknown> };
   location_verification?: LocationVerification;
   location_candidate?: {
+    tier?: string;
     label?: string; note?: string; attribution?: string; license_url?: string;
     endpoints?: { side: string; osm_id?: string; url?: string; names?: Record<string, string>; lat: number; lon: number }[];
   };
@@ -252,3 +253,22 @@ export interface NationalExplorerPayload extends NationalReference {
     statuses: NationalStatus[];
   };
 }
+
+/** Map/list fields only. Full evidence is fetched for the selected project. */
+export type NationalProjectSummary = Pick<NationalProject,
+  "_id" | "source_id" | "native_id" | "name" | "owner" | "other_owners" | "planning_region" |
+  "states" | "counties" | "geography_basis" | "status" | "status_group" | "in_service" |
+  "location_review" | "approximate_location"> & {
+  center: Pick<NonNullable<NationalProject["center"]>, "lat" | "lon" | "basis"> | null;
+  evidence: Omit<NationalProject["evidence"], "raw">;
+  location_candidate?: Pick<NonNullable<NationalProject["location_candidate"]>, "tier" | "label">;
+};
+
+export type NationalSummaryPayload = Omit<NationalExplorerPayload, "projects" | "mapProjects"> & {
+  projects: NationalProjectSummary[];
+  mapProjects: NationalProjectSummary[];
+};
+
+export type NationalProjectDetail =
+  | { available: true; dataset: string; project: NationalProject; source?: NationalSource }
+  | { available: false; reason: string; status: 404 | 409 | 503 };

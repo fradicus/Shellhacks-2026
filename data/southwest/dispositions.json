@@ -1,0 +1,3375 @@
+[
+  {
+    "_id": "westconnect-tppl-2026-02:5",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 2",
+    "name": "Grier 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:17",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 3",
+    "name": "Alamogordo Voltage Support Phase II",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 4",
+    "name": "Northeastern Arizona - Phoenix 500kV line",
+    "reason": "state None; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:44",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 5",
+    "name": "Komatke 230/69kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:85",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 6",
+    "name": "Buckeye - TS11 - Sun Valley 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:86",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 7",
+    "name": "Sun Valley - TS10 - TS11 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:88",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 8",
+    "name": "Morgan to Outer Circle 230kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:93",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 9",
+    "name": "Sundance - TS33 - Milligan 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:100",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 10",
+    "name": "Lago Del Oro 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:102",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 11",
+    "name": "Corona 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:103",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 12",
+    "name": "Craycroft-Barril 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:106",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 13",
+    "name": "Golden Valley 230 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:108",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 14",
+    "name": "Griffith - N. Havasu 69/230 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:110",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 15",
+    "name": "Santa Rita (formerly Hartt) 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:112",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 16",
+    "name": "Grier 138-kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:166",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 17",
+    "name": "Orchard - Yucca 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:194",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 18",
+    "name": "El Sol - Westwing 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:271",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 19",
+    "name": "Winchester - Vail Double Circuit 345 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:315",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 20",
+    "name": "Verde 115 kV Substation (Load Serving Station Portion Added), 115/24kV 50 MVA Transformer Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:340",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 21",
+    "name": "Vail 345/138 kV Transformer T4",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:347",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 22",
+    "name": "Santa Rita - Copper World 138 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:348",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 23",
+    "name": "Copper World (formerly Rosemont) 138 kV Switchyard",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:349",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 24",
+    "name": "Rancho Vistoso - Lago Del Oro 138 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:450",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 25",
+    "name": "Naranja 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:451",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 26",
+    "name": "Vine 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:582",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 27",
+    "name": "Parachute - Cameo 230 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:675",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 28",
+    "name": "New 138 kV line North Loop to Naranja to La Canada",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:736",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 29",
+    "name": "Weld County Expansion Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:759",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 30",
+    "name": "NENM Reliability Improvement",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:792",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 31",
+    "name": "Wilson Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:793",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 32",
+    "name": "Glenwood-Rifle 115 kV Upgrade",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:877",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 33",
+    "name": "Irvington 138 kV breaker-and-a-half substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:878",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 34",
+    "name": "South Loop 138 kV, Conversion to breaker-and-a-half substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:884",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 35",
+    "name": "Lost Canyon - Main Switch 115 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:885",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 36",
+    "name": "San Luis Valley-Poncha 230 kV Line #2",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:951",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 37",
+    "name": "Gilman-Avon 115 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:952",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 38",
+    "name": "Weld to Rosedale 230 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:953",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 39",
+    "name": "Ault-Cloverly Transmission Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:954",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 40",
+    "name": "Rosedale - Box Elder - Ennis 115kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:970",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 41",
+    "name": "Rolling Meadows Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:976",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 42",
+    "name": "Burlington - Burlington (KCEA) 115kV Line Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:987",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 43",
+    "name": "Frontier Reactor Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 44",
+    "name": "Afton-Newman 345kV Line Reconfiguration, In and Out in Vado 345 kV Substation",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1042",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 45",
+    "name": "Palm Valley-Dromedary-TS27-Parkway 230kV Line Circuit #2",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1043",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 46",
+    "name": "Sun Valley – Trilby Wash 230kV Line Circuit #2",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 47",
+    "name": "Palo Verde – Saguaro 500kV Line",
+    "reason": "state None; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1055",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 48",
+    "name": "Gateway 230/138 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1072",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 49",
+    "name": "Naranja Capacitor Bank Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1079",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 50",
+    "name": "Gateway 138 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1080",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 51",
+    "name": "Gateway 138-kV Transmission Line (phase 2)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1081",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 52",
+    "name": "Re-Conductor Vail to Kantor 138 kV Transmission Line, south of Nogales Tap",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1082",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 53",
+    "name": "Kantor Capacitor Bank Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1085",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 54",
+    "name": "Irvington to Drexel to Midvale to South 138 kV Line Re-conductor",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1087",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 55",
+    "name": "Saguaro to Winchester 500 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1088",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 56",
+    "name": "Vail to South 345 kV Line - Second Circuit",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 57",
+    "name": "Springervile to Vail 345 kV Line - Second Circuit",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1090",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 58",
+    "name": "Tortolita to South 345 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1091",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 59",
+    "name": "Westwing to South 345 kV Transmission Line - Second Circuit",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 60",
+    "name": "Gateway to US/Mexico Border 230-kV Transmission Line",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1118",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 61",
+    "name": "Poncha - Front Range 230 kV transmission line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1129",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 62",
+    "name": "Loop-in Springerville-Vail 345 kV Line into Greenlee 345 kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 63",
+    "name": "Loop-in Springerville-Greenlee 345 kV line into Catron 345 kV",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1131",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 64",
+    "name": "Springerville-Catron 345 kV Circuit 2 Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1132",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 65",
+    "name": "Winchester to Vail 345 kV line uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1136",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 66",
+    "name": "DeMoss Petrie (DMP) 138 kV, Conversion to breaker-and-a-half substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1137",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 67",
+    "name": "Irvington - East Loop 138 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1140",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 68",
+    "name": "Wilmot Park (formerly Sears Wilmot) 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1141",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 69",
+    "name": "Olsen 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1142",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 70",
+    "name": "Rio Rico 138 kV Switchyard",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1143",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 71",
+    "name": "Gateway Capacitor Additions",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1144",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 72",
+    "name": "Greenlee Capacitor Additions",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1146",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 73",
+    "name": "Re-Conductor Kantor to Canez 138 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1147",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 74",
+    "name": "Re-Conductor Canez to Sonoita 138 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1148",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 75",
+    "name": "Rio Rico Capacitor Bank Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1194",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 76",
+    "name": "TS14 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1195",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 77",
+    "name": "TS21 500/230kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1197",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 78",
+    "name": "Three Rivers 230kV Transmission Line Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1199",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 79",
+    "name": "Parkway 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1200",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 80",
+    "name": "Contrail 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1201",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 81",
+    "name": "TS17 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1202",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 82",
+    "name": "Broadway 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1204",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 83",
+    "name": "Rodriguez 115/13.2 kV Distribution Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1231",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 84",
+    "name": "Rio Puerco Switching Station update for Proxy RPS",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1235",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 85",
+    "name": "Milk Creek Switchyard on Craig-Meeker 345kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1236",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 86",
+    "name": "Breaker Addition at Cahone Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1237",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 87",
+    "name": "Breaker Addition at Main Switch Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1238",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 88",
+    "name": "Breaker Addition at Escalante Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1240",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 89",
+    "name": "Belen Phase Shifting Transformer",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1241",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 90",
+    "name": "San Juan North 345 kV Station",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1242",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 91",
+    "name": "New Sun Switching Station",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1243",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 92",
+    "name": "Quail Ranch Switching Station",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 93",
+    "name": "Caliente-MPS 16700 115 kV Line (Partial Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 94",
+    "name": "McCombs Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1254",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 95",
+    "name": "Jornada-Arroyo 115 kV Line (Reconductor/Rebuild)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1255",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 96",
+    "name": "Apollo-Cox Line 69 kV to 115 kV (Moongate-Apollo Portion - Rebuild)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1256",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 97",
+    "name": "Afton North 345 kV Substation (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1257",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 98",
+    "name": "Afton-Afton North 345 kV Double Bundled Line (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1261",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 99",
+    "name": "Vado Substation 345/115 kV (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 100",
+    "name": "Seabeck Switching Station 115 kV (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 101",
+    "name": "Seabeck-Horizon 115 kV Line (Rebuild, Upgrade)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 102",
+    "name": "Seabeck-Wicked-San Felipe 115 kV Line (Reconfiguration)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 103",
+    "name": "San Felipe Substation 115/69 kV (New) & 1 X 115/69 kV Autotransformer",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 104",
+    "name": "Sparks-San Felipe Line (Voltage Conversion, Rebuild, Reconductor) 69 kV to 115 kV",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 105",
+    "name": "San Felipe (New) 115 kV Capacitors (2 x 15.9 MVAR) ",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 106",
+    "name": "Pine Switching Station 345/115 kV (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 107",
+    "name": "Pine-Seabeck 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 108",
+    "name": "Marvin-Pine 115kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 109",
+    "name": "Rio Grande-Sunset 69 kV Lines (5500/5600) (Rebuild, Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 110",
+    "name": "CE-2 Substation (New) and Related 115 kV West Loop Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1274",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 111",
+    "name": "Vado-Salopek 115 kV Line (Rebuild, Reconductor)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1275",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 112",
+    "name": "New Amrad SVC device connecting on high-voltage side to Amrad 345 kV side using its own dedicated step-up transformer to a dedicated bay.",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 113",
+    "name": "CE3 Substation (New) and Related 115 kV West Loop Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1278",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 114",
+    "name": "Anthony-Vado 115 kV Line (Rebuild, Reconductor)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 115",
+    "name": "CE-4 Substation (New) and Related 115 kV West Loop Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 116",
+    "name": "In-and-Out into Vado 345 kV Substation from Afton-Newman 345 kV Line (Same as aforementioned project)",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1283",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 117",
+    "name": "Vado 2 x 224 MVA Vado 345/115 kV Autotransformers (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 118",
+    "name": "Rio Grande-Executive-Sunset North 115 kV Line (Rebuild/Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1286",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 119",
+    "name": "Leasburg Substation 115 kV (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1307",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 120",
+    "name": "BHCT-G29 Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 121",
+    "name": "Orchard Valley 115 kV Substation",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 122",
+    "name": "Allison Draw 115 kV Substation",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 123",
+    "name": "Bison - Orchard Valley 115 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 124",
+    "name": "Orchard Valley - King Ranch 115 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 125",
+    "name": "Bison - West Cheyenne 115 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 126",
+    "name": "Happy Jack - North Range #2 115 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 127",
+    "name": "Allison Draw - Campstool 115 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 128",
+    "name": "Allison Draw - CPGS 115 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 129",
+    "name": "Bluffs 230 kV Substation",
+    "reason": "state Nebraska; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 130",
+    "name": "Sweetgrass 230 kV Substation",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 131",
+    "name": "Sweetgrass - Bluffs 230 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 132",
+    "name": "West Cheyenne 230 kV Substation",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 133",
+    "name": "West Cheyenne - Sweetgrass 230 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 134",
+    "name": "West Cheyenne - Windstar 230 kV Line",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1328",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 135",
+    "name": "Colorado's Power Pathway",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1329",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 136",
+    "name": "Stagecoach Switching Station",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1330",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 137",
+    "name": "Daniels Park to Prairie Reconductor 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1331",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 138",
+    "name": "Midway Transformer Upgrade",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1332",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 139",
+    "name": "Rillito 138 kV Conversion to breaker-and-a-half substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1333",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 140",
+    "name": "East Loop 138 kV Conversion to breaker-and-a-half substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1335",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 141",
+    "name": "Orange Grove Capacitor Bank Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1336",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 142",
+    "name": "New 230 kV Yard at Tortolita Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1337",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 143",
+    "name": "New 230 kV Yard at DMP Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1338",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 144",
+    "name": "New 230 kV Yard at Vail Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1339",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 145",
+    "name": "Tortolita to DMP 230 kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1340",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 146",
+    "name": "DMP to Vail 230 kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1341",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 147",
+    "name": "Tortolita 500/230 kV Transformers",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1342",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 148",
+    "name": "DMP 230/138 kV Transformers",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1343",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 149",
+    "name": "Vail 345/230 kV Transformers",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1344",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 150",
+    "name": "Tucson Estates (formerly Bopp-Donald) 138/13.8 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1345",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 151",
+    "name": "Midvale to Tucson Estates 138 kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1346",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 152",
+    "name": "Tucson Estates to South 138 kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1347",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 153",
+    "name": "TEPTDA 138 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1348",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 154",
+    "name": "500/345 kV Transformer addition at Pinal West",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1351",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 155",
+    "name": "Whetstone 138 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1352",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 156",
+    "name": "Monument Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1353",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 157",
+    "name": "Slater Double Circuit Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1355",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 158",
+    "name": "Burlington - Lamar 230 kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1356",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 159",
+    "name": "Boone - Huckleberry 230 kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1357",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 160",
+    "name": "Badger Creek - Big Sandy 230 kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1358",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 161",
+    "name": "Big Sandy - Burlington 230 kV Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 162",
+    "name": "Archer - Stegall Sectionalization Project",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1361",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 163",
+    "name": "Valent Switchyard on Walsenburg - Gladstone 230 kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1367",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 164",
+    "name": "Runway Additional 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1368",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 165",
+    "name": "TS22 Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1369",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 166",
+    "name": "Jojoba to Rudd 500kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1370",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 167",
+    "name": "North Gila – Orchard 230kV Line Circuit #2",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1372",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 168",
+    "name": "Bagdad 230kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1416",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 169",
+    "name": "Arroyo-Moongate 115 kV line - Reconductor, Reconfiguration",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 170",
+    "name": "Eastlake Temporary Substation (New) and Related 115 kV  line reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1433",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 171",
+    "name": "Verde 115 kV Switching Station (New) and Related 115 kV Line Reconfiguration",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 172",
+    "name": "Austin-Marlow 115 kV Line (Rebuild, Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 173",
+    "name": "Clint-Valley 69 kV Line (Rebuild, Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 174",
+    "name": "Lane-Americas 69 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 175",
+    "name": "Lane-Wrangler 115 kV Line (Rebuild, Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 176",
+    "name": "Rio Bosque-Ascarate 69 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 177",
+    "name": "Sparks-Felipe 69 kV Line (Rebuild, Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 178",
+    "name": "Westside Temporary Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 179",
+    "name": "Ascarate-Trowbridge 115 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 180",
+    "name": "Hawkins Substation 69 kV (New) and Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 181",
+    "name": "Horizon-Wicked-San Felipe 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 182",
+    "name": "Pellicano-Montwood 115 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 183",
+    "name": "WS2 Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 184",
+    "name": "Americas-Passmore 69 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 185",
+    "name": "Eastlake Substation (New) and Related 115 kV Line Reconductor and Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 186",
+    "name": "Passmore Bovee Substation (New) and Related 69 kV Line\nReconductor and Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 187",
+    "name": "Wrangler-Eastlake 115 kV Line (Rebuild, Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1450",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 188",
+    "name": "Arroyo Variable Line Shunt Reactor (50-100 MVAR) on the Arroyo end of the West Mesa-Arroyo 345 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 189",
+    "name": "Newman 2 Thermal Generation Conversion to Synchronous Condenser",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1452",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 190",
+    "name": "Afton North-Airport 345 kV Line (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 191",
+    "name": "Afton-Newman 345kV Line Reconfiguration",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1454",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 192",
+    "name": "Airport 345/115 kV Autotransformer (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1455",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 193",
+    "name": "Airport 345/115/24 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 194",
+    "name": "Marvin (FE6) 115 kV Switching Substation and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1457",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 195",
+    "name": "Artesia/Eddy HVDC Tie Replacement (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 196",
+    "name": "WS1 Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1459",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 197",
+    "name": "McNutt Substation (New) and Related 115 kV Line Reconfiguration",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1460",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 198",
+    "name": "Mirage 345 kV Substation, Airport to Mirage 345 kV line and Related 345 kV Line Reconfiguration\n",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 199",
+    "name": "Caliente-MPS 115 kV Circuits 2 & 3 Common Structure\nSeparation",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 200",
+    "name": "EA1 Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 201",
+    "name": "FE7 115 kV Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 202",
+    "name": "Caliente 345/115 kV Autotransformer T3 (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 203",
+    "name": "CE4-Executive 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 204",
+    "name": "Marlow-Trowbridge 115 kV Line (Rebuild, Reconductor)\n",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 205",
+    "name": "Newman-McCombs 115 kV Line Circuit 1 (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 206",
+    "name": "Newman-McCombs 115 kV Line Circuit 2 (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 207",
+    "name": "Copper Thermal Generation Conversion to Synchronous Condenser",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 208",
+    "name": "NE3 Substation (New) and Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 209",
+    "name": "Newman 3 Thermal Generation Conversion to Synchronous Condenser",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 210",
+    "name": "Newman 4 ST Thermal Generation Conversion to Synchronous Condenser",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 211",
+    "name": "Dyer 115/69 kV Autotransformer T1 (Upgrade)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 212",
+    "name": "Newman-Roberts 115 kV Line Circuit 1 (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 213",
+    "name": "CE2-Rio Grande 115 kV Line (Rebuild)",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1476",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 214",
+    "name": "Hidden Mountain Switching Station",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1477",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 215",
+    "name": "Metro Water Recovery Trans Service, Sub",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1478",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 216",
+    "name": "Kestrel Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1479",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 217",
+    "name": "Poder (Formerly Stock Show) Distribution Substation ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1480",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 218",
+    "name": "Husky Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1481",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 219",
+    "name": "Collins Street Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1482",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 220",
+    "name": "Sandstone Switching Station",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1502",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 221",
+    "name": "Crosspoint Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1503",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 222",
+    "name": "Sulfur Creek Tap",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1504",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 223",
+    "name": "La Junta Tie",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 224",
+    "name": "Breaker Addition at Sidney Substation",
+    "reason": "state Nebraska; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1506",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 225",
+    "name": "Breaker Addition at Garnet Mesa",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1507",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 226",
+    "name": "Breaker Addition at Hesperus Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1518",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 227",
+    "name": "Harshaw 138 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1519",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 228",
+    "name": "Rio Rico - Harshaw 138 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1520",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 229",
+    "name": "Kipper 138kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1521",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 230",
+    "name": "Canoa Ranch to Kantor 138 kV Transmission Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1522",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 231",
+    "name": "UNSTDB 138 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1523",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 232",
+    "name": "Kantor to UNSTDB 138 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1524",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 233",
+    "name": "Irvington to Sonoran 138 kV circuits 1, 2, & 3 reconductor ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1525",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 234",
+    "name": "Port 138 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1526",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 235",
+    "name": "Aerospace Research Campus Transmission Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1542",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 236",
+    "name": "Pueblo West Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1543",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 237",
+    "name": "Skala - Cañon City 115 kV Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1544",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 238",
+    "name": "Cañon City - Hogback 115 kV Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1545",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 239",
+    "name": "Hogback - Cañon West 115 kV Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1546",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 240",
+    "name": "Cañon West 230/115 kV Transformer Replacement",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1547",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 241",
+    "name": "West Station - Portland 115 kV Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 242",
+    "name": "Wallick 115 kV Substation",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 243",
+    "name": "Sweetgrass - Bison 115 kV #3 & #4 ",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1550",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 244",
+    "name": "Cheyenne - Rawhide 230 kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1551",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 245",
+    "name": "Serrano Solar and Storage Project Generation Tie Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1552",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 246",
+    "name": "Rabbit Canyon 500kV Switchyard and Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1553",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 247",
+    "name": "Dromedary 230kV Switchyard and Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1554",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 248",
+    "name": "Hashknife Energy Center Generation Tie Line Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1555",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 249",
+    "name": "Proving Ground Solar and Storage 500kV Interconnection",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1556",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 250",
+    "name": "West Camp Wind Gen Tie Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1557",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 251",
+    "name": "Sun Valley to Outer Circle 230kV line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1558",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 252",
+    "name": "Bianco 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1559",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 253",
+    "name": "Panda - Freedom 230kV Line Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1560",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 254",
+    "name": "Pinnacle Peak to Ocotillo 230kV Line Rebuilds",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1561",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 255",
+    "name": "Runway - Stratus 230kV Cut-In to TS21",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1562",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 256",
+    "name": "TS21 to Broadway 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 257",
+    "name": "Four Corners to Cholla to Pinnacle Peak 345kV Line Rebuilds",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1564",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 258",
+    "name": "Trilby Wash to Parkway 230kV circuit #2",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1565",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 259",
+    "name": "El Sol - Contrail - TS34 - Sabre - Parkway 230kV Line Circuit #2",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1566",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 260",
+    "name": "Delaney to Quartzsite 500kV and 230kV Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 261",
+    "name": "Quartzsite to Colorado River 500kV Line",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1568",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 262",
+    "name": "Milligan to Pinal Central 230kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1569",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 263",
+    "name": "TS27 Switchyard and Lines",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1572",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 264",
+    "name": "Nyberg – La Junta 115 kV line (Boone Bypass)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1573",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 265",
+    "name": "La Junta 115/69 kV Transformer Replacement (50 MVA)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1574",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 266",
+    "name": "Pueblo Plant 115 kV Substation Rebuild",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 267",
+    "name": "BHBE G25 115 MW RICE",
+    "reason": "state South Dakota; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 268",
+    "name": "CLPT G20 365 MW Solar/BESS",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 269",
+    "name": "CLPT G16 300 MW Solar/Wind/BESS",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 270",
+    "name": "CLPT G18 255 MW Solar/BESS",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 271",
+    "name": "CLPT G11 150 MW Wind",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 272",
+    "name": "CLPT G17 300 MW Solar/Wind/Bess",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 273",
+    "name": "CLPT G21 400 MW Solar/BESS",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 274",
+    "name": "Sweetgrass – CPGS 230 kV Voltage Conversion",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 275",
+    "name": "McCloud East Substation & Related 115 kV Line Reconfigurations",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 276",
+    "name": "Eastlake Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 277",
+    "name": "Eastwind 115 Substation (New) & Related 115 kV Line Reconfiguration",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 278",
+    "name": "Bovee Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 279",
+    "name": "Eastwind Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 280",
+    "name": "Chaparral-Escondido 115 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 281",
+    "name": "Marvin-Seabeck 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 282",
+    "name": "Thorn-Ripley 115 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 283",
+    "name": "Americas-Bovee 69 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 284",
+    "name": "EA-1 Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 285",
+    "name": "EA-2 Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 286",
+    "name": "FE-7 Substation 115 kV Capacitor Bank Addition (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 287",
+    "name": "Rio Bosque 69 kV 1x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 288",
+    "name": "WS-3 Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 289",
+    "name": "Dyer Substation (Voltage Conversion) 69 kV to 115 kV",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1598",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 290",
+    "name": "Afton North-Vado 345 kV Line (New, New Line)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 291",
+    "name": "Eastwind-Seabeck 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1600",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 292",
+    "name": "Leasburg Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 293",
+    "name": "Marvin Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 294",
+    "name": "WS-4 Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 295",
+    "name": "Bovee-Eastlake 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 296",
+    "name": "Bovee-Northloop 115 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 297",
+    "name": "Eastlake-Sparks 115 kV Line (Reconductor)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 298",
+    "name": "Thorn Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 299",
+    "name": "Alamo 345/115/69 kV Switching Station (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1608",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 300",
+    "name": "T_W1 345/115 kV Switching Station (New) & Related 345 kV Line Reconfiguration",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1609",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 301",
+    "name": "Luna-Diablo 345 kV Line Reconfiguration (In-and-Out at Afton 345 kV Substation)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 302",
+    "name": "Alamo-Bovee 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 303",
+    "name": "Alamo-Wicked 115 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 304",
+    "name": "Alamo-San Felipe (Voltage Conversion, Rebuild, Reconductor) 69 kV to 115 kV",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 305",
+    "name": "T_W1-WS-3 115 kV Line (New)",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 306",
+    "name": "Alamo 115/69 kV Autotransformer (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1615",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 307",
+    "name": "T_W1 345/115 kV Autotransformer (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 308",
+    "name": "McCombs Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 309",
+    "name": "WS-1 Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 310",
+    "name": "Americas Substation (Voltage Conversion) 69 kV to 115 kV",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 311",
+    "name": "Caliente-Pine 345 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 312",
+    "name": "Americas-Lane (Voltage Conversion, Rebuild, Reconductor) 69 kV to 115 kV",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1621",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 313",
+    "name": "Airport-Arroyo 115 kV Line (New)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1622",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 314",
+    "name": "Apollo-Moongate 115 kV Line (Reconfiguration, Reconductor)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 315",
+    "name": "Escondido-Oro Grande 115 kV Line (Reconductor)",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1624",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 316",
+    "name": "Oro Grande-Amrad 115 kV Line (Reconductor)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1625",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 317",
+    "name": "Amrad 345/115 kV Autotransformer (New, Additional)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 318",
+    "name": "Pine 345/115 kV Autotransformer (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 319",
+    "name": "WS-2 Substation 115 kV 2x15.9 MVAR Capacitor Bank (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 320",
+    "name": "Alamo – Pine 345 kV Line (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 321",
+    "name": "Alamo 345/115 kV Autotransformer (New)",
+    "reason": "state Texas; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1630",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 322",
+    "name": "New 115 kV Switching Station (Albuquerque)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1631",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 323",
+    "name": "Pajarito 345 kV Station Expansion",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1632",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 324",
+    "name": "Sun Ranch 115 kV Station Expansion",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1634",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 325",
+    "name": "Hidden Mountain 345 kV Expansion",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1635",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 326",
+    "name": "Rio Puerco-Pajarito-Prosperity 345 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1636",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 327",
+    "name": "Colorado’s Power Pathway – Segment 1",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1637",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 328",
+    "name": "Colorado’s Power Pathway – Segments 2 and 3",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1638",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 329",
+    "name": "Colorado’s Power Pathway – Segments 4 and 5",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1639",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 330",
+    "name": "Colorado’s Power Pathway - Voltage Control / Reactive Support",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1640",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 331",
+    "name": "Colorado’s Power Pathway - Voltage Control / Reactive Support ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1641",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 332",
+    "name": "Barker Distribution Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1642",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 333",
+    "name": "Circuit 5707 & 5111: Daniels Park - Prairie - Greenwood Uprate ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1643",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 334",
+    "name": "Circuit 5283: Leetsdale – Elati 230 kV Underground Transmission Line Upgrade",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1644",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 335",
+    "name": "Arapahoe Substation Upgrades (230/115kV Transformer)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1645",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 336",
+    "name": "Greenwood Substation Upgrades",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1646",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 337",
+    "name": "Circuits 9055, 9558, and 9464: Cherokee - Federal Heights - Semper – Broomfield Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1647",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 338",
+    "name": "Daniels Park Substation Upgrades (345/230kV Transformer)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1648",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 339",
+    "name": "Smoky Hill Substation (345/230kV Transformer)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1649",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 340",
+    "name": "Circuit 9955: Leetsdale to Harrison 115 kV Uprate ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1650",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 341",
+    "name": "Circuit 5709: Greenwood – Arapahoe 230kV Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1651",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 342",
+    "name": "PI-2024-06 Generation Interconnection Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1652",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 343",
+    "name": "Circuit 9335: Arapahoe – South Tap – Bancroft Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1653",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 344",
+    "name": "Circuit 5107: Daniels Park – Santa Fe Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1654",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 345",
+    "name": "Circuit 5717: Greenwood – Monaco Series Reactor ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1655",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 346",
+    "name": "Circuit 9332: Arapahoe - Air Liquide Tap - South - Gray Street Uprate ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1656",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 347",
+    "name": "New Substation A ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1657",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 348",
+    "name": "Circuit 9542: Cherokee - New Substation A",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1658",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 349",
+    "name": "Circuit 9546: Cherokee -Mapleton - New Substation A Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1659",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 350",
+    "name": "Circuit 9549: Cherokee - Conoco - New Substation A Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1660",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 351",
+    "name": "New 115 kV Transmission Line: Cherokee - New Substation A",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1661",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 352",
+    "name": "Circuits 5167 and 5285: Smoky Hill - Buckley - Tollgate - Jewell  –  Leetsdale Uprate ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1662",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 353",
+    "name": "South Substation Upgrade (230/115kV Transformer)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1663",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 354",
+    "name": "Circuit 5625: Denver Terminal – Elati Uprate",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1664",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 355",
+    "name": "Circuit 6584: Mitchell Creek – Ute (Rifle)",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1665",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 356",
+    "name": "Circuit 6671: Vineland – Ute Grand Junction",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1666",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 357",
+    "name": "Climax – Robinson Rack – Gilman 115 kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1667",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 358",
+    "name": "Circuit 9812: Smeltertown to Poncha 115kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1668",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 359",
+    "name": "Circuit 5207: Hopkins to Rifle 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1669",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 360",
+    "name": "Circuit 5205: Parachute to Rifle 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1670",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 361",
+    "name": "Circuit 5509: Bluestone Valley to Parachute 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1671",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 362",
+    "name": "Circuit 55123: Bluestone Valley to Cameo 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1672",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 363",
+    "name": "Circuit 5245: Hopkins to Hagerman Pass 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1673",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 364",
+    "name": "Circuit 5245: Hagerman Pass to Malta 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1674",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 365",
+    "name": "Circuit 5785: Cooley Mesa to Wolcott 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1675",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 366",
+    "name": "Circuit 5787: Cooley Mesa to Basalt 230kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1676",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 367",
+    "name": "Circuit 9188: Climax to Summit 115kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1677",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 368",
+    "name": "Circuits 9046, 9054, & 9688: Eldorado to Valmont, Valmont to Ralston, Ralston to Eldorado 115kV",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1678",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 369",
+    "name": "Owl Head Ranch Switchyard. Loop-in of Tortolita - North Loop 138 kV Line # 118",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1679",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 370",
+    "name": "Owl Head Ranch to Grier 2nd 138 kV Circuit",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1680",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 371",
+    "name": "South Houghton 138 kV Switchyard",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1681",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 372",
+    "name": "Loop-in of existing Greenlee - Vail 345 kV line into Winchester 345 kV Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1682",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 373",
+    "name": "500/345 kV Transformer addition at Pinal West",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1683",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 374",
+    "name": "Sonoran to Santa Rita 138 kV Line",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1684",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 375",
+    "name": "Rancho Vistoso Capacitor Bank Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1685",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 376",
+    "name": "DeMoss Petrie Capacitor Bank Addition",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 377",
+    "name": "Springerville to Greenlee 345 kV Line - Third Circuit",
+    "reason": "state Multiple; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1687",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 378",
+    "name": "Owl Head Ranch to Grier 1st 138 kV circuit ",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1688",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 379",
+    "name": "Midvale - TEPTDA 2nd 138 kV circuit",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1689",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 380",
+    "name": "Vail to South Houghton 4th 138 kV circuit",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1690",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "All Projects row 381",
+    "name": "Robert Bills to Vail 138 kV reconductor",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1691",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 382",
+    "name": "Robert Bills to Sonoran 138 kV reconductor",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1693",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 383",
+    "name": "Triton DP",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1694",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 384",
+    "name": "Mora Project",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "All Projects row 385",
+    "name": "Kinnan DP",
+    "reason": "state Wyoming; C42 scope is AZ/NM/CO",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1696",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 386",
+    "name": "Iron Muontain DP",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1697",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "All Projects row 387",
+    "name": "Breaker addition at Montrose Substation",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1698",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 388",
+    "name": "Sunrise DP",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1699",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 389",
+    "name": "Richie Gulch",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "_id": "westconnect-tppl-2026-02:1700",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "All Projects row 390",
+    "name": "Thoreau DP",
+    "source_id": "westconnect-tppl-2026-02"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Afton North-Airport 345 kV Line (New)",
+    "name": "Afton North-Airport 345 kV Line (New)",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Afton-Afton North 345 kV Double Bundled Line (New)",
+    "name": "Afton-Afton North 345 kV Double Bundled Line (New)",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Bethel-Round Butte 500kV upgrade",
+    "name": "Bethel-Round Butte 500kV upgrade",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Big Eddy - Ostrander-Pearl rebuild",
+    "name": "Big Eddy - Ostrander-Pearl rebuild",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Bolo Tie",
+    "name": "Bolo Tie",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Bonanza to Lower Columbia 500kV Reinforcement Project",
+    "name": "Bonanza to Lower Columbia 500kV Reinforcement Project",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Colorado River-Red Bluff 500 kV 1 Line Upgrade",
+    "name": "Colorado River-Red Bluff 500 kV 1 Line Upgrade",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Colorado's Power Pathway",
+    "name": "Colorado's Power Pathway",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Corral to Grassland Annex 500kV Line",
+    "name": "Corral to Grassland Annex 500kV Line",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Corral to Snow Goose 500kV Line",
+    "name": "Corral to Snow Goose 500kV Line",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Cross Cascades North Upgrade TSEP 2022",
+    "name": "Cross Cascades North Upgrade TSEP 2022",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Cross-Cascades Project",
+    "name": "Cross-Cascades Project",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Cross-Cascades Project --> Line break at Schultz",
+    "name": "Cross-Cascades Project --> Line break at Schultz",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:energize-the-existing-red-butte-st-george-line-at-345-kv",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Energize the existing Red Butte – St. George line at 345 kV",
+    "name": "Energize the existing Red Butte – St. George line at 345 kV",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:gateway-central-limber-to-terminal-segment-c",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway Central: Limber to Terminal (Segment C)",
+    "name": "Gateway Central: Limber to Terminal (Segment C)",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Borah to Midpoint (E-North)",
+    "name": "Gateway West: Borah to Midpoint (E-North)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Bridger/Anticline to Populus (Segment D3)",
+    "name": "Gateway West: Bridger/Anticline to Populus (Segment D3)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Cedar Hill to Hemingway (E-south)",
+    "name": "Gateway West: Cedar Hill to Hemingway (E-south)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Cedar Hill to Midpoint (Segment E)",
+    "name": "Gateway West: Cedar Hill to Midpoint (Segment E)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Midpoint to Hemingway (Segment E8)",
+    "name": "Gateway West: Midpoint to Hemingway (Segment E8)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Populus to Borah (E-North)",
+    "name": "Gateway West: Populus to Borah (E-North)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Gateway West: Populus to Cedar Hill (E-south)",
+    "name": "Gateway West: Populus to Cedar Hill (E-south)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Grand Coulee - Columbia - Schultz  - Olympia 500-kV",
+    "name": "Grand Coulee - Columbia - Schultz  - Olympia 500-kV",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Grassland Annex to B2H Tap Substation 500kV Line",
+    "name": "Grassland Annex to B2H Tap Substation 500kV Line",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:greenlink-north",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Greenlink North",
+    "name": "Greenlink North",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "32"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:greenlink-west",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Greenlink West",
+    "name": "Greenlink West",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "32"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Hassayampa - Pinal West 500kV #2",
+    "name": "Hassayampa - Pinal West 500kV #2",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Humboldt to Collinsville",
+    "name": "Humboldt to Collinsville",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Humboldt to Fern Road",
+    "name": "Humboldt to Fern Road",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Imperial Valley–North of SONGS 500 kV Line and Substation",
+    "name": "Imperial Valley–North of SONGS 500 kV Line and Substation",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Jojoba to Rudd 500kV line",
+    "name": "Jojoba to Rudd 500kV line",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:lantern-comstock-meadows-345-kv-line",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Lantern – Comstock Meadows 345 kV line",
+    "name": "Lantern – Comstock Meadows 345 kV line",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "32"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Longhorn to Hemingway (B2H)",
+    "name": "Longhorn to Hemingway (B2H)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#Montana to Washington (M2W)",
+    "name": "Montana to Washington (M2W)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#North Gila - Imperial Valley #2",
+    "name": "North Gila - Imperial Valley #2",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#North Plains Connector",
+    "name": "North Plains Connector",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#North of Marion: Marion-Chemawa-Pearl 500",
+    "name": "North of Marion: Marion-Chemawa-Pearl 500",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#North of Pearl 500-kV upgrade (incl. Pearl-Keeler #2 500)",
+    "name": "North of Pearl 500-kV upgrade (incl. Pearl-Keeler #2 500)",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#North of SONGS–Serrano 500 kV line",
+    "name": "North of SONGS–Serrano 500 kV line",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:oquirrh-terminal-345-kv-3-and-4-double-circuit-line",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Oquirrh-Terminal 345 kV #3 and #4 Double Circuit Line",
+    "name": "Oquirrh-Terminal 345 kV #3 and #4 Double Circuit Line",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Ostrander - Pearl #1 500",
+    "name": "Ostrander - Pearl #1 500",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Rio Puerco-Prosperity 345kV Line",
+    "name": "Rio Puerco-Prosperity 345kV Line",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#SWIP-North",
+    "name": "SWIP-North",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#San Jose Area HVDC 230 kV Line (Newark - NRS)",
+    "name": "San Jose Area HVDC 230 kV Line (Newark - NRS)",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Serrano–Del Amo–Mesa 500 kV Transmission Reinforcement",
+    "name": "Serrano–Del Amo–Mesa 500 kV Transmission Reinforcement",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:sigurd-clover-345-kv-line",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Sigurd - Clover 345 kV line",
+    "name": "Sigurd - Clover 345 kV line",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "WestTEC_10yr_Planned_Projects#South of Knight:  Rock Creek-John Day 500 kV line upgrade",
+    "name": "South of Knight:  Rock Creek-John Day 500 kV line upgrade",
+    "reason": "published by F42",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:spanish-fork-mercer-345-kv-line",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Spanish Fork - Mercer 345 kV line",
+    "name": "Spanish Fork - Mercer 345 kV line",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#SunZia",
+    "name": "SunZia",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Ten West Link",
+    "name": "Ten West Link",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:three-peaks-purgatory-flat-345-kv-line",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#Three Peaks - Purgatory Flat 345 kV line",
+    "name": "Three Peaks - Purgatory Flat 345 kV line",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "_id": "westtec-10yr-planned-sw:transwest-express",
+    "disposition": "accepted",
+    "locator": "WestTEC_10yr_Planned_Projects#TransWest Express",
+    "name": "TransWest Express",
+    "source_id": "westtec-10yr-planned-sw",
+    "state": "49"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Western Spirit - Chavez County 345kV Line",
+    "name": "Western Spirit - Chavez County 345kV Line",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WestTEC_10yr_Planned_Projects#Western Spirit - Hidden Mountain 345kV #2 Line",
+    "name": "Western Spirit - Hidden Mountain 345kV #2 Line",
+    "reason": "terminal mean outside NV/UT",
+    "source_id": "westtec-10yr-planned-sw"
+  }
+]
