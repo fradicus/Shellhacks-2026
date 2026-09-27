@@ -1,9 +1,9 @@
 import { z } from "zod";
-import { handle } from "@/lib/server/http";
-import { coverage } from "@/lib/server/queries";
+import { handleRead } from "@/lib/server/http";
+import { repository } from "@/lib/server/repository";
 
 export const dynamic = "force-dynamic";
 
 export function GET(req: Request) {
-  return handle(req, z.strictObject({}), (_q, db, dataset) => coverage(db, dataset));
+  return handleRead(req, z.strictObject({}), (_q, signal) => repository.coverage(signal));
 }

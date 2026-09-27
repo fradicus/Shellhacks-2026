@@ -1,6 +1,6 @@
-import type { Db } from "mongodb";
 import { z } from "zod";
-import { activeDataset, DbUnavailable, getDb } from "./db";
+import { DbUnavailable } from "./db";
+import { DeadlineExceeded } from "./deadline";
 
 export const VIEW = z.enum(["future", "historical", "tentative"]);
 
@@ -21,23 +21,22 @@ export const MAX_DISTANCE = z.coerce.number().finite().min(0).max(25);
 const json = (body: unknown, status = 200) =>
   Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 
-/**
- * Parse query params strictly (unknown params -> 400), open the active dataset, run `fn`.
- * Database problems -> 503 {unavailable: true}; never fixtures.
- */
-export function handle<T>(
-  req: Request,
-  schema: z.ZodType<T>, // build with z.strictObject so unknown params fail
-  fn: (q: T, db: Db, dataset: string) => Promise<unknown>,
-): Promise<Response> {
-  return handleDb(req, schema, async (q, db) => fn(q, db, await activeDataset(db)));
+/** A read failure as a status and a public reason. Never the exception text: it can carry hostnames. */
+export function readFailure(err: unknown): { status: 503 | 504; reason: string } {
+  if (err instanceof DeadlineExceeded) return { status: 504, reason: "database timed out" };
+  if (err instanceof DbUnavailable) return { status: 503, reason: err.message };
+  return { status: 503, reason: "database error" };
 }
 
-/** `handle` without requiring an active dataset: only for data that isn't dataset-scoped (runs). */
-export async function handleDb<T>(
+/**
+ * Parse query params strictly (unknown params -> 400), then run `fn` through the shared repository with the
+ * request's abort signal, so a client that goes away cancels its queries.
+ * Unavailable -> 503 {unavailable: true}; total deadline -> 504 {unavailable: true}; never fixtures.
+ */
+export async function handleRead<T>(
   req: Request,
-  schema: z.ZodType<T>,
-  fn: (q: T, db: Db) => Promise<unknown>,
+  schema: z.ZodType<T>, // build with z.strictObject so unknown params fail
+  fn: (q: T, signal: AbortSignal) => Promise<unknown>,
 ): Promise<Response> {
   const params = Object.fromEntries(new URL(req.url).searchParams);
   const parsed = schema.safeParse(params);
@@ -45,12 +44,11 @@ export async function handleDb<T>(
     return json({ error: "invalid query", issues: parsed.error.issues.map((i) => `${i.path.join(".") || "query"}: ${i.message}`) }, 400);
   }
   try {
-    const db = await getDb();
-    const body = await fn(parsed.data, db);
+    const body = await fn(parsed.data, req.signal);
     return body === null ? json({ error: "not found" }, 404) : json(body);
   } catch (err) {
-    const reason = err instanceof DbUnavailable ? err.message : "database error";
-    console.error(`api ${new URL(req.url).pathname}: ${reason}${err instanceof DbUnavailable ? "" : ` (${(err as Error)?.name})`}`);
-    return json({ unavailable: true, reason }, 503);
+    const { status, reason } = readFailure(err);
+    console.error(`api ${new URL(req.url).pathname}: ${reason}${err instanceof DbUnavailable || err instanceof DeadlineExceeded ? "" : ` (${(err as Error)?.name})`}`);
+    return json({ unavailable: true, reason }, status);
   }
 }

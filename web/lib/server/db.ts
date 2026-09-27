@@ -23,8 +23,8 @@ export async function getDb(): Promise<Db> {
 }
 
 /** The dataset (git sha) the loader last activated. The API only ever reads this dataset. */
-export async function activeDataset(db: Db): Promise<string> {
-  const meta = await db.collection<{ _id: string; dataset?: string }>("meta").findOne({ _id: "active" });
+export async function activeDataset(db: Db, signal?: AbortSignal): Promise<string> {
+  const meta = await db.collection<{ _id: string; dataset?: string }>("meta").findOne({ _id: "active" }, { maxTimeMS: 5_000, signal });
   if (!meta?.dataset) throw new DbUnavailable("no active dataset loaded");
   return meta.dataset;
 }

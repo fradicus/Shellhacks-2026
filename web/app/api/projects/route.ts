@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { BBOX, VIEW, handle } from "@/lib/server/http";
-import { projects } from "@/lib/server/queries";
+import { BBOX, VIEW, handleRead } from "@/lib/server/http";
+import { repository } from "@/lib/server/repository";
 
 export const dynamic = "force-dynamic";
 
@@ -8,5 +8,5 @@ export const dynamic = "force-dynamic";
 const Query = z.strictObject({ bbox: BBOX.optional(), view: VIEW.optional() });
 
 export function GET(req: Request) {
-  return handle(req, Query, (q, db, dataset) => projects(db, dataset, q));
+  return handleRead(req, Query, ({ bbox }, signal) => repository.projects({ bbox }, signal));
 }

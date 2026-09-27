@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { handle } from "@/lib/server/http";
-import { pair } from "@/lib/server/queries";
+import { handleRead } from "@/lib/server/http";
+import { repository } from "@/lib/server/repository";
 
 export const dynamic = "force-dynamic";
 
@@ -10,5 +10,5 @@ export async function GET(req: Request, { params }: { params: Promise<{ id: stri
   // Next has already decoded the segment; decoding again would turn a literal "%25" into "%" (or throw on "%zz").
   const id = Id.safeParse((await params).id);
   if (!id.success) return Response.json({ error: "invalid pair id" }, { status: 400 });
-  return handle(req, z.strictObject({}), (_q, db, dataset) => pair(db, dataset, id.data));
+  return handleRead(req, z.strictObject({}), (_q, signal) => repository.pair(id.data, signal));
 }
