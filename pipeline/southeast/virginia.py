@@ -3,7 +3,7 @@
 From pipeline/:
   uv run python -m southeast.virginia fetch --cache <dir>   # network: 2 list pages, Dominion project pages, OSM
   uv run python -m southeast.virginia build --cache <dir> [--check]
-Neither source publishes coordinates. Locations are C40 candidates from facility names in the project title matched to
+Neither source publishes coordinates. Locations are C45 candidates from facility names in the project title matched to
 OSM substations of the reported state(s). A Dominion page's explicit energized/in-service date is the only date read;
 an SCC case number's year is a filing year (`source_status`), never a certification or completion.
 OSM data (c) OpenStreetMap contributors, ODbL 1.0.
@@ -370,7 +370,7 @@ def build(cache: Path) -> dict:
         projects.append(placed(record, parts["work"], None, UTILITY_KEYS[row["utility"]]))
         dispositions.append(where | {"disposition": "accepted", "project_id": pid,
                                      "reason": "case listed on the SCC transmission line projects page"})
-    note = ("F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from "
+    note = ("F39 dense Southeast (C45). No coordinates in the source: points are OSM substation candidates from "
             "facility names in the title, not independently reviewed.")
     sources = [
         {"_id": DOM_ID, "title": "Dominion Energy power line projects", "publisher": DOM_PUB, "authority": "utility",

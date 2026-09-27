@@ -1,4 +1,4 @@
-# Dense Southeast: Virginia (Dominion power-line projects + Virginia SCC case list, C40)
+# Dense Southeast: Virginia (Dominion power-line projects + Virginia SCC case list, C45)
 
 ## Sources
 

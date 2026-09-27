@@ -1,4 +1,4 @@
-"""F39/C40 Virginia batch: Dominion page schedules, SCC case-list parsing, and the committed batch applying."""
+"""F39/C45 Virginia batch: Dominion page schedules, SCC case-list parsing, and the committed batch applying."""
 
 from common import REPO_ROOT, load_json
 from national.build import OUTPUTS
