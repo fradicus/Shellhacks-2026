@@ -21,7 +21,7 @@ from common import REPO_ROOT, load_json, validate, write_json
 
 FOLDER = Path("data/greatlakes")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "great-lakes-2026-09-candidates-1"
+RELEASE_ID = "great-lakes-2026-09-candidates-2"
 # Fixed producer order; each folder is one adapter's output.
 PRODUCERS = ["mn", "wi", "miso", "ny", "aep", "firstenergy"]
 OFFICIAL_SOURCES = {"aep-transmission-projects"}  # the owner's own project-map coordinate (C25 Official tier)
@@ -66,6 +66,14 @@ def slug(artifact: dict) -> str:
     return re.sub(r"(\.html?|\.json)$", "", name.replace("about--transmission_projects--", ""))
 
 
+def tier(project: dict, base_id: str) -> str:
+    """C25 tier: the owner's own map point, a corroborated candidate, or a name unique in its pool (C33, part 4)."""
+    if base_id in OFFICIAL_SOURCES:
+        return "official"
+    found = [e for e in project["location_candidate"]["endpoints"] if e["status"] == "matched"]
+    return "candidate_unique_name" if any(e["corroboration"] == ["unique_in_state"] for e in found) else "candidate"
+
+
 def build(root: Path = REPO_ROOT) -> dict[Path, object]:
     """Publication projects (one source per artifact, C25 tier added) plus national sources and the release."""
     projects, sources = [], []
@@ -99,8 +107,7 @@ def build(root: Path = REPO_ROOT) -> dict[Path, object]:
                 project["source_id"] = source_id
                 project["evidence"]["source_sha256"] = digest
                 if project["center"]:
-                    project["location_candidate"]["tier"] = ("official" if base["_id"] in OFFICIAL_SOURCES
-                                                             else "candidate")
+                    project["location_candidate"]["tier"] = tier(project, base["_id"])
                     project["location_candidate"]["independent_review"] = False
                 projects.append(project)
     projects.sort(key=lambda p: p["_id"])
@@ -108,11 +115,12 @@ def build(root: Path = REPO_ROOT) -> dict[Path, object]:
     outputs: dict[Path, object] = {root / FOLDER / "projects.json": projects, root / FOLDER / "sources.json": sources}
     tiers = Counter(p["location_candidate"].get("tier") for p in projects if p["center"])
     release = {
-        "release_id": RELEASE_ID, "policy": "C25", "rule": "C26",
+        "release_id": RELEASE_ID, "policy": "C25", "rule": "C33",
         "files": {name: hashlib.sha256(_encode(value)).hexdigest() for name, value in
                   (("projects", projects), ("sources", sources))},
         "expected_counts": {"projects": len(projects), "sources": len(sources), "centers": sum(tiers.values()),
-                            "candidate": tiers["candidate"], "official": tiers["official"],
+                            "candidate": tiers["candidate"], "candidate_unique_name": tiers["candidate_unique_name"],
+                            "official": tiers["official"],
                             "distinct_points": len({(p["center"]["lat"], p["center"]["lon"])
                                                     for p in projects if p["center"]})},
     }
@@ -148,7 +156,8 @@ def _check_center(project: dict, snapshot: dict) -> None:
         return
     points = [e["facility"] for e in candidate["endpoints"] if e["status"] == "matched"]
     basis = "source_point" if candidate["kind"] == "site" else ("two" if len(points) == 2 else "one")
-    if (candidate["tier"] != "candidate" or not center["evidence"].startswith("Unverified candidate:")
+    if (candidate["tier"] not in ("candidate", "candidate_unique_name")
+            or not center["evidence"].startswith("Unverified candidate:")
             or not points or len(points) > 2 or center["basis"] != basis
             or (candidate["kind"] == "site" and len(points) != 1)
             or abs(sum(p["lat"] for p in points) / len(points) - lat) > 1e-6
@@ -161,7 +170,7 @@ def apply_release(snapshot: dict, root: Path) -> dict:
     if not path.exists():
         return snapshot
     release = load_json(path)
-    if release["release_id"] != RELEASE_ID or release["policy"] != "C25" or release["rule"] != "C26":
+    if release["release_id"] != RELEASE_ID or release["policy"] != "C25" or release["rule"] != "C33":
         raise ValueError("Great Lakes release manifest changed")
     for name in ("projects", "sources"):
         if sha(root / FOLDER / f"{name}.json") != release["files"][name]:
@@ -189,7 +198,8 @@ def apply_release(snapshot: dict, root: Path) -> dict:
         raise ValueError("Great Lakes source project counts changed")
     tiers = Counter(p["location_candidate"]["tier"] for p in projects if p["center"])
     measured = {"projects": len(projects), "sources": len(sources), "centers": sum(tiers.values()),
-                "candidate": tiers["candidate"], "official": tiers["official"],
+                "candidate": tiers["candidate"], "candidate_unique_name": tiers["candidate_unique_name"],
+                "official": tiers["official"],
                 "distinct_points": len({(p["center"]["lat"], p["center"]["lon"]) for p in projects if p["center"]})}
     if measured != release["expected_counts"]:
         raise ValueError(f"Great Lakes counts changed: {measured} != {release['expected_counts']}")

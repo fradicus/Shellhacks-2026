@@ -36,7 +36,7 @@
         "ALLETE"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -90,7 +90,7 @@
         "MINNKOTA"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -148,7 +148,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230,
         250,
@@ -205,7 +205,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -261,7 +261,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -354,7 +354,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -419,7 +419,7 @@
         "MINNKOTA"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         42,
         69
@@ -498,7 +498,7 @@
         "OTTER TAIL"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         42,
         115
@@ -575,7 +575,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -638,7 +638,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -701,7 +701,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -766,7 +766,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -819,7 +819,7 @@
         "ALLETE"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -874,7 +874,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -936,7 +936,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -988,7 +988,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -1044,7 +1044,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -1103,7 +1103,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -1179,7 +1179,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -1261,7 +1261,7 @@
         "OTTER TAIL"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -1318,7 +1318,7 @@
         "MINNKOTA"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         25,
         42,
@@ -1405,7 +1405,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -1457,7 +1457,7 @@
         "ITC"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -1515,7 +1515,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         161
@@ -1568,7 +1568,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -1621,7 +1621,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -1671,7 +1671,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -1750,7 +1750,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -1830,7 +1830,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         14,
         115
@@ -1884,7 +1884,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -1935,7 +1935,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -1994,7 +1994,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         23,
         115,
@@ -2051,7 +2051,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -2104,7 +2104,7 @@
         "ALLETE"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -2180,7 +2180,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230
       ]
@@ -2233,7 +2233,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -2286,7 +2286,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -2306,7 +2306,12 @@
   },
   {
     "_id": "mn-btpr-2025:2021-NE-N27",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/146365880 (Wing River Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 46.387535,
+      "lon": -95.024253
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -2339,15 +2344,24 @@
           ],
           "name": "Riverton",
           "norm": "RIVERTON",
-          "status": "not_corroborated"
+          "status": "ambiguous"
         },
         {
-          "facility_ids": [
-            "way/146365880"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/146365880",
+            "lat": 46.3875348,
+            "lon": -95.0242526,
+            "name": "Wing River Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "230000;115000"
+          },
           "name": "Wing River",
           "norm": "WING RIVER",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -2356,10 +2370,10 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Riverton - Wing River Storm Structures",
     "native_id": "2021-NE-N27",
     "other_owners": [],
@@ -2374,7 +2388,12 @@
   },
   {
     "_id": "mn-btpr-2025:2021-NE-N3",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1485090224 (Hibbing), corroborated by unique_in_state.",
+      "lat": 47.42984,
+      "lon": -92.934472
+    },
     "counties": [],
     "description": "The Hibbing Substation is located west of Hibbing, Minnesota, The Hibbing Substation Modernization project involves replacing aging equipment, structures, and civil works at the substation as part of Minnesota Power’s asset renewal program",
     "evidence": {
@@ -2403,12 +2422,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/1485090224"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/1485090224",
+            "lat": 47.4298405,
+            "lon": -92.9344721,
+            "name": "Hibbing",
+            "operator": null,
+            "state": "MN",
+            "voltage": null
+          },
           "name": "Hibbing",
           "norm": "HIBBING",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -2418,10 +2446,10 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Hibbing Substation Modernization",
     "native_id": "2021-NE-N3",
     "other_owners": [],
@@ -2494,7 +2522,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34,
         115
@@ -2573,7 +2601,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34,
         115
@@ -2633,7 +2661,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34,
         115
@@ -2693,7 +2721,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -2750,7 +2778,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34
       ]
@@ -2808,7 +2836,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230
       ]
@@ -2866,7 +2894,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -2924,7 +2952,7 @@
           ],
           "name": "Pelican Rapids",
           "norm": "PELICAN RAPIDS",
-          "status": "not_corroborated"
+          "status": "operator_conflict"
         }
       ],
       "kind": "line",
@@ -2933,7 +2961,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -2951,7 +2979,12 @@
   },
   {
     "_id": "mn-btpr-2025:2021-SE-N2",
-    "center": null,
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 129464 (NORTHFIELD), HIFLD substation 129467 (FARMINGTON), corroborated by unique_in_state.",
+      "lat": 44.550141,
+      "lon": -93.159352
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -2978,14 +3011,38 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/129464",
+            "lat": 44.4589048,
+            "lon": -93.1623608,
+            "name": "NORTHFIELD",
+            "operator": null,
+            "state": "MN",
+            "voltage": "69000;69000"
+          },
           "name": "Northfield",
           "norm": "NORTHFIELD",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/129467",
+            "lat": 44.641378,
+            "lon": -93.1563435,
+            "name": "FARMINGTON",
+            "operator": null,
+            "state": "MN",
+            "voltage": "69000;69000"
+          },
           "name": "Farmington",
           "norm": "FARMINGTON",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -2995,10 +3052,10 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Northfield to Farmington Line Rebuild",
     "native_id": "2021-SE-N2",
     "other_owners": [],
@@ -3069,7 +3126,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         161
@@ -3125,7 +3182,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -3178,7 +3235,7 @@
         "ITC"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         161
@@ -3202,7 +3259,12 @@
   },
   {
     "_id": "mn-btpr-2025:2021-TC-N10",
-    "center": null,
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/24000744 (Bunker Lake Substation), OSM way/107726452 (Elk River Substation), corroborated by unique_in_state.",
+      "lat": 45.25949,
+      "lon": -93.430806
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -3229,20 +3291,38 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/24000744"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/24000744",
+            "lat": 45.2208701,
+            "lon": -93.3070206,
+            "name": "Bunker Lake Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "345000;230000;69000"
+          },
           "name": "Bunker Lake",
           "norm": "BUNKER LAKE",
-          "status": "not_corroborated"
+          "status": "matched"
         },
         {
-          "facility_ids": [
-            "way/107726452"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/107726452",
+            "lat": 45.2981103,
+            "lon": -93.5545923,
+            "name": "Elk River Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "230000;69000"
+          },
           "name": "Elk River",
           "norm": "ELK RIVER",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -3251,10 +3331,10 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Bunker Lake – Elk River Storm Structures",
     "native_id": "2021-TC-N10",
     "other_owners": [],
@@ -3301,7 +3381,7 @@
           ],
           "name": "Lawndale",
           "norm": "LAWNDALE",
-          "status": "not_corroborated"
+          "status": "operator_conflict"
         },
         {
           "name": "Bass Lake",
@@ -3315,7 +3395,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -3373,7 +3453,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230
       ]
@@ -3450,7 +3530,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -3528,7 +3608,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -3587,7 +3667,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -3681,7 +3761,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -3739,7 +3819,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -3796,7 +3876,7 @@
           ],
           "name": "Morris",
           "norm": "MORRIS",
-          "status": "not_corroborated"
+          "status": "operator_conflict"
         }
       ],
       "kind": "line",
@@ -3805,7 +3885,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -3856,7 +3936,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -3938,7 +4018,7 @@
         "MISSOURI RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -4019,7 +4099,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -4078,7 +4158,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -4136,7 +4216,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         230,
@@ -4219,7 +4299,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         14,
         115
@@ -4275,7 +4355,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -4328,7 +4408,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -4379,7 +4459,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -4438,7 +4518,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         23,
         115
@@ -4500,7 +4580,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34,
         46,
@@ -4557,7 +4637,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -4636,7 +4716,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -4715,7 +4795,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -4794,7 +4874,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34,
         115
@@ -4848,7 +4928,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -4927,7 +5007,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         42,
         230
@@ -4982,7 +5062,7 @@
         "GREAT RIVER"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -5033,7 +5113,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -5080,9 +5160,13 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
+          "facility_ids": [
+            "hifld/129606",
+            "hifld/129630"
+          ],
           "name": "Waseca",
           "norm": "WASECA",
-          "status": "no_facility"
+          "status": "ambiguous"
         },
         {
           "name": null,
@@ -5096,7 +5180,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -5162,7 +5246,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -5217,7 +5301,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -5278,7 +5362,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -5335,7 +5419,7 @@
           ],
           "name": "Pleasant Valley",
           "norm": "PLEASANT VALLEY",
-          "status": "not_corroborated"
+          "status": "operator_conflict"
         }
       ],
       "kind": "line",
@@ -5344,7 +5428,7 @@
         "DAIRYLAND"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -5409,7 +5493,7 @@
         "DAIRYLAND"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -5463,7 +5547,7 @@
         "DAIRYLAND"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -5523,7 +5607,7 @@
         "DAIRYLAND"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         161
@@ -5578,7 +5662,7 @@
         "ITC"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -5631,7 +5715,7 @@
         "SMMPA"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         12,
         69
@@ -5687,7 +5771,7 @@
         "SMMPA"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -5739,7 +5823,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161,
         345
@@ -5797,7 +5881,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -5876,7 +5960,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -5934,7 +6018,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -5997,7 +6081,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -6058,7 +6142,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -6078,7 +6162,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-SW-N8",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 129730 (WINTHROP), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 44.532217,
+      "lon": -94.361663
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -6107,9 +6196,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/129730",
+            "lat": 44.5322166,
+            "lon": -94.3616631,
+            "name": "WINTHROP",
+            "operator": null,
+            "state": "MN",
+            "voltage": "69000;69000"
+          },
           "name": "Winthrop",
           "norm": "WINTHROP",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": null,
@@ -6123,10 +6224,10 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Line 0719 Winthrop to STR 45 Rebuild",
     "native_id": "2023-SW-N8",
     "other_owners": [],
@@ -6199,7 +6300,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -6252,7 +6353,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -6305,7 +6406,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -6356,7 +6457,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -6430,7 +6531,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -6487,7 +6588,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -6544,7 +6645,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -6618,7 +6719,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -6636,7 +6737,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-TC-N20",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/80718621 (Scott County Substation), corroborated by unique_in_state.",
+      "lat": 44.775152,
+      "lon": -93.569961
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -6663,12 +6769,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/80718621"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/80718621",
+            "lat": 44.7751516,
+            "lon": -93.5699606,
+            "name": "Scott County Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "345000;115000;69000"
+          },
           "name": "Scott County",
           "norm": "SCOTT COUNTY",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -6678,10 +6793,10 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Scott County Sub",
     "native_id": "2023-TC-N20",
     "other_owners": [],
@@ -6731,7 +6846,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -6808,7 +6923,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -6887,7 +7002,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -6966,7 +7081,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161,
         345
@@ -7022,7 +7137,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230,
@@ -7079,7 +7194,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -7134,7 +7249,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7185,7 +7300,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7242,7 +7357,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7316,7 +7431,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -7390,7 +7505,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -7466,7 +7581,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -7522,7 +7637,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7578,7 +7693,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7630,7 +7745,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7688,7 +7803,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -7742,7 +7857,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7799,7 +7914,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7851,7 +7966,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -7926,7 +8041,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -7946,7 +8061,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-TC-N5",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/24001224 (Coon Creek Substation), corroborated by unique_in_state.",
+      "lat": 45.13733,
+      "lon": -93.284615
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -7973,12 +8093,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/24001224"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/24001224",
+            "lat": 45.1373303,
+            "lon": -93.2846147,
+            "name": "Coon Creek Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "345000;115000"
+          },
           "name": "Coon Creek",
           "norm": "COON CREEK",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -7988,10 +8117,10 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Coon Creek Sub",
     "native_id": "2023-TC-N5",
     "other_owners": [],
@@ -8006,7 +8135,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-TC-N6",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/92921851 (Rogers Lake Substation), corroborated by unique_in_state.",
+      "lat": 44.876807,
+      "lon": -93.130841
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -8033,12 +8167,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/92921851"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/92921851",
+            "lat": 44.8768072,
+            "lon": -93.1308406,
+            "name": "Rogers Lake Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "115000"
+          },
           "name": "Rogers Lake",
           "norm": "ROGERS LAKE",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -8048,10 +8191,10 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Rogers Lake Sub",
     "native_id": "2023-TC-N6",
     "other_owners": [],
@@ -8066,7 +8209,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-TC-N7",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/92933485 (Blue Lake Substation), corroborated by unique_in_state.",
+      "lat": 44.78678,
+      "lon": -93.426971
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -8093,12 +8241,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/92933485"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/92933485",
+            "lat": 44.7867803,
+            "lon": -93.4269709,
+            "name": "Blue Lake Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "345000;230000;115000"
+          },
           "name": "Blue Lake",
           "norm": "BLUE LAKE",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -8108,10 +8265,10 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Blue Lake Sub",
     "native_id": "2023-TC-N7",
     "other_owners": [],
@@ -8165,7 +8322,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -8216,7 +8373,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -8289,7 +8446,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -8341,7 +8498,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -8393,7 +8550,7 @@
         "MISSOURI RIVER"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -8453,7 +8610,7 @@
         "MISSOURI RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -8473,7 +8630,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-WC-N14",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1485090169 (Alexandria), corroborated by unique_in_state.",
+      "lat": 45.888813,
+      "lon": -95.379867
+    },
     "counties": [],
     "description": "Alexandria Substation will be expanded to add positions for new 345 kV transmission line to Big Oaks and Big Stone South substations.",
     "evidence": {
@@ -8502,12 +8664,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/1485090169"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/1485090169",
+            "lat": 45.8888133,
+            "lon": -95.3798672,
+            "name": "Alexandria",
+            "operator": null,
+            "state": "MN",
+            "voltage": null
+          },
           "name": "Alexandria",
           "norm": "ALEXANDRIA",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -8516,12 +8687,12 @@
         "MISSOURI RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Alexandria Substation Expansion",
     "native_id": "2023-WC-N14",
     "other_owners": [],
@@ -8579,7 +8750,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -8631,7 +8802,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -8687,7 +8858,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -8739,7 +8910,7 @@
         "OTTER TAIL"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         12,
         115,
@@ -8801,7 +8972,7 @@
         "NORTHERN STATES"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -8827,7 +8998,12 @@
   },
   {
     "_id": "mn-btpr-2025:2023-WC-N4",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/179652718 (Big Swan Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 45.092581,
+      "lon": -94.280719
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -8854,12 +9030,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/179652718"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/179652718",
+            "lat": 45.0925812,
+            "lon": -94.2807193,
+            "name": "Big Swan Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "115000;69000"
+          },
           "name": "Big Swan",
           "norm": "BIG SWAN",
-          "status": "not_corroborated"
+          "status": "matched"
         },
         {
           "name": "Wakefield",
@@ -8873,10 +9058,10 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Big Swan – Wakefield Storm Structure Addition",
     "native_id": "2023-WC-N4",
     "other_owners": [],
@@ -8928,7 +9113,7 @@
         "SMMPA"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -8985,7 +9170,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9043,7 +9228,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -9109,7 +9294,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -9168,7 +9353,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9229,7 +9414,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         23,
         115
@@ -9285,7 +9470,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9340,7 +9525,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -9393,7 +9578,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -9469,7 +9654,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9489,7 +9674,12 @@
   },
   {
     "_id": "mn-btpr-2025:2025-NE-N16",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/184120669 (Mud Lake Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 46.331975,
+      "lon": -94.075931
+    },
     "counties": [],
     "description": "This project will raise the operating temperature of the line from 195 °F to 212 °F maximizing the full conductor rating of the transmission line via pole replacements.",
     "evidence": {
@@ -9524,15 +9714,24 @@
           ],
           "name": "Riverton",
           "norm": "RIVERTON",
-          "status": "not_corroborated"
+          "status": "ambiguous"
         },
         {
-          "facility_ids": [
-            "way/184120669"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/184120669",
+            "lat": 46.331975,
+            "lon": -94.0759309,
+            "name": "Mud Lake Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "230000;115000"
+          },
           "name": "Mud Lake",
           "norm": "MUD LAKE",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -9541,10 +9740,10 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Riverton to Mud Lake Temperature Upgrade Project",
     "native_id": "2025-NE-N16",
     "other_owners": [],
@@ -9599,7 +9798,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -9651,7 +9850,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9705,7 +9904,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9764,7 +9963,7 @@
         "ATC"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -9821,7 +10020,7 @@
         "GREAT RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9875,7 +10074,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -9930,7 +10129,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -10008,7 +10207,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230
       ]
@@ -10063,7 +10262,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -10140,7 +10339,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         500
       ]
@@ -10218,7 +10417,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -10274,7 +10473,7 @@
         "ALLETE"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -10353,7 +10552,7 @@
         "ALLETE"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         14,
         115
@@ -10408,7 +10607,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -10462,7 +10661,7 @@
         "OTTER TAIL"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -10516,7 +10715,7 @@
         "OTTER TAIL"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -10536,7 +10735,12 @@
   },
   {
     "_id": "mn-btpr-2025:2025-NW-N4",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 134754 (BEMIDJI 115KV), corroborated by voltage.",
+      "lat": 47.469216,
+      "lon": -94.912987
+    },
     "counties": [],
     "description": "This project involves retiring the 115/69/13.2 kV transformer and the 41.6 kV equipment at the Bemidji 115 kV substation. These retirements will accommodate the addition of a new 115/12.5 kV transformer and a new distribution bus to support existing distribution feeders and multiple new express feeders.",
     "evidence": {
@@ -10565,9 +10769,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "hifld/134754",
+            "lat": 47.4692159,
+            "lon": -94.912987,
+            "name": "BEMIDJI 115KV",
+            "operator": null,
+            "state": "MN",
+            "voltage": "115000"
+          },
           "name": "Bemidji",
           "norm": "BEMIDJI",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -10576,7 +10792,7 @@
         "OTTER TAIL"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         12,
         13,
@@ -10585,7 +10801,7 @@
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Bemidji 115/12.5 kV Substation",
     "native_id": "2025-NW-N4",
     "other_owners": [],
@@ -10640,7 +10856,7 @@
         "MISSOURI RIVER"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -10711,7 +10927,7 @@
         "DAIRYLAND"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161,
         765
@@ -10732,7 +10948,12 @@
   },
   {
     "_id": "mn-btpr-2025:2025-SE-N10",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 156713 (GOODVIEW), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 44.069693,
+      "lon": -91.710139
+    },
     "counties": [],
     "description": "Rebuild 3 miles 69 kV with new structures, new OPGW shield wire, and new conductor.",
     "evidence": {
@@ -10761,9 +10982,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "hifld/156713",
+            "lat": 44.0696935,
+            "lon": -91.7101395,
+            "name": "GOODVIEW",
+            "operator": null,
+            "state": "MN",
+            "voltage": "69000"
+          },
           "name": "Goodview",
           "norm": "GOODVIEW",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": null,
@@ -10777,12 +11010,12 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "0774 Goodview - Str 444 Rebuild",
     "native_id": "2025-SE-N10",
     "other_owners": [],
@@ -10838,7 +11071,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -10856,7 +11089,12 @@
   },
   {
     "_id": "mn-btpr-2025:2025-SE-N12",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 157180 (CLEVELAND), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 44.303263,
+      "lon": -93.829351
+    },
     "counties": [],
     "description": "GRE will be rebuilding their portion of the existing Cleveland – Sheas Lake 69 kV line to address loading and congestion. GRE requested ITC Midwest also rebuild the ITC Midwest portion of the line, approximately 10 miles, to allow a significant increase in the thermal rating of the line instead of the very marginal increase that would only be achieved with a GRE only rebuild. Approximately 10 miles of the ITC Midwest portion Cleveland – Sheas Lake 69 kV line will be reconstructed on the existing right of way. The line will be re-constructed with a larger conductor size and will also be insulated to allow a potential conversion to a higher operating voltage in the future.",
     "evidence": {
@@ -10885,9 +11123,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "hifld/157180",
+            "lat": 44.303263,
+            "lon": -93.829351,
+            "name": "CLEVELAND",
+            "operator": null,
+            "state": "MN",
+            "voltage": "69000"
+          },
           "name": "Cleveland",
           "norm": "CLEVELAND",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": "Sheas Lake",
@@ -10901,12 +11151,12 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Cleveland – Sheas Lake Rebuild",
     "native_id": "2025-SE-N12",
     "other_owners": [],
@@ -10955,7 +11205,7 @@
         "ITC"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -11024,7 +11274,7 @@
         "DAIRYLAND"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161,
         765
@@ -11083,7 +11333,7 @@
         "SMMPA"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         12,
         69,
@@ -11146,7 +11396,7 @@
         "SMMPA"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -11166,7 +11416,12 @@
   },
   {
     "_id": "mn-btpr-2025:2025-SE-N4",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/134002901 (Byron Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 44.034578,
+      "lon": -92.669512
+    },
     "counties": [],
     "description": "Upgrade terminal equipment to 3000 A rating.",
     "evidence": {
@@ -11195,12 +11450,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/134002901"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/134002901",
+            "lat": 44.0345783,
+            "lon": -92.6695116,
+            "name": "Byron Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "345000;161000"
+          },
           "name": "Byron",
           "norm": "BYRON",
-          "status": "not_corroborated"
+          "status": "matched"
         },
         {
           "facility_ids": [
@@ -11208,7 +11472,7 @@
           ],
           "name": "Pleasant Valley",
           "norm": "PLEASANT VALLEY",
-          "status": "not_corroborated"
+          "status": "operator_conflict"
         }
       ],
       "kind": "line",
@@ -11218,10 +11482,10 @@
         "SMMPA"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Byron Substation – Pleasant Valley Terminal Upgrade",
     "native_id": "2025-SE-N4",
     "other_owners": [],
@@ -11271,7 +11535,7 @@
         "SMMPA"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -11366,7 +11630,7 @@
         "SMMPA"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -11386,7 +11650,12 @@
   },
   {
     "_id": "mn-btpr-2025:2025-SE-N7",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/134002901 (Byron Substation), corroborated by unique_in_state.",
+      "lat": 44.034578,
+      "lon": -92.669512
+    },
     "counties": [],
     "description": "Substation contains two breakers that were installed in 1988 and 1995, and they have become unreliable and difficult to maintain with their age. Along with these breakers, the associated switches and relays will also be replaced with newer and more reliable equipment. The new equipment includes new CTs, PTs, arresters, and new solid-state relay panels.",
     "evidence": {
@@ -11415,12 +11684,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/134002901"
+          "corroboration": [
+            "unique_in_state"
           ],
+          "facility": {
+            "id": "way/134002901",
+            "lat": 44.0345783,
+            "lon": -92.6695116,
+            "name": "Byron Substation",
+            "operator": null,
+            "state": "MN",
+            "voltage": "345000;161000"
+          },
           "name": "Byron",
           "norm": "BYRON",
-          "status": "not_corroborated"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -11430,10 +11708,10 @@
         "SMMPA"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Byron Substation Modernization",
     "native_id": "2025-SE-N7",
     "other_owners": [],
@@ -11482,7 +11760,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -11534,7 +11812,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -11598,7 +11876,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -11653,7 +11931,7 @@
         "SMMPA"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         161
       ]
@@ -11752,7 +12030,7 @@
         "ITC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -11838,7 +12116,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -11917,7 +12195,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         14
       ]
@@ -11998,7 +12276,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         345
@@ -12090,7 +12368,7 @@
         "ROCHESTER PUBLIC"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -12151,7 +12429,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -12212,7 +12490,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         2,
         12
@@ -12270,7 +12548,7 @@
         "ITC"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345,
         765
@@ -12329,7 +12607,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230
       ]
@@ -12412,7 +12690,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -12465,7 +12743,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -12518,7 +12796,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         230,
         345
@@ -12572,7 +12850,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -12667,7 +12945,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -12733,7 +13011,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -12794,7 +13072,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -12849,7 +13127,7 @@
         "NORTHERN STATES"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -12910,7 +13188,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -12986,7 +13264,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         345
@@ -13082,7 +13360,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unreviewed",
@@ -13140,7 +13418,7 @@
         "GREAT RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -13201,7 +13479,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         4,
         14
@@ -13298,7 +13576,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -13359,7 +13637,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -13422,7 +13700,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
@@ -13477,7 +13755,7 @@
         "NORTHERN STATES"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -13530,7 +13808,7 @@
         "NORTHERN STATES"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -13589,7 +13867,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         34,
         115
@@ -13644,7 +13922,7 @@
         "MISSOURI RIVER"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115,
         230
@@ -13699,7 +13977,7 @@
         "MISSOURI RIVER"
       ],
       "reason": "multi_terminal_line",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -13751,7 +14029,7 @@
         "GREAT RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -13811,7 +14089,7 @@
         "MISSOURI RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": []
     },
     "location_review": "unlocated",
@@ -13869,7 +14147,7 @@
         "MISSOURI RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -13924,7 +14202,7 @@
         "MISSOURI RIVER"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69,
         115
@@ -14002,7 +14280,7 @@
         "MISSOURI RIVER"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         115
       ]
@@ -14056,7 +14334,7 @@
         "OTTER TAIL"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         12,
         115
@@ -14116,7 +14394,7 @@
         "NORTHERN STATES"
       ],
       "reason": "no_named_facility",
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         345
       ]
@@ -14182,7 +14460,7 @@
         "NORTHERN STATES"
       ],
       "reason": null,
-      "rule": "C26",
+      "rule": "C33",
       "voltages_kv": [
         69
       ]
