@@ -1,0 +1,286 @@
+{
+  "expected_index_rows": 17,
+  "created_at": "2026-09-27T02:35:41.895750+00:00",
+  "artifacts": [
+    {
+      "key": "index",
+      "file": "conditions-certification.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification",
+      "sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+      "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review."
+    },
+    {
+      "key": "gis",
+      "file": "transmission-attributes.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&outFields=*&returnGeometry=false&f=pjson",
+      "sha256": "4d0611f68b0743df874795cfb1ea7921ab5a18c0b80bd2c00009295f61a5a483",
+      "retrieved_at": "2026-09-27T01:20:34.972152+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review."
+    },
+    {
+      "key": "ids",
+      "file": "transmission-ids.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&returnIdsOnly=true&f=pjson",
+      "sha256": "ad2301c2b7ecfb0f6f1844e00bc8bb4eb080159cf02d1017ebecff02ba473124",
+      "retrieved_at": "2026-09-27T01:24:41.417532+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review."
+    },
+    {
+      "key": "detail:duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "file": "duke-energy-florida-llc-and-tampa-electric-company-lake-agnes.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "sha256": "3b6644336997e23d96815d80f3be786c65b7693cb1ff05cd351cba03cc6a3332",
+      "retrieved_at": "2026-09-27T01:27:25.253727+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:florida-power-light-bobwhite-manatee-line",
+      "file": "florida-power-light-bobwhite-manatee-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line",
+      "sha256": "2e8249d5f714a27082b8839e9127e2e1b8fd244ba272917fc9e2eea2e66f9fd3",
+      "retrieved_at": "2026-09-27T01:27:25.460834+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:florida-power-light-duval-raven-line",
+      "file": "florida-power-light-duval-raven-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-raven-line",
+      "sha256": "abd249bdbc370bb8dc80f00043ee720e1d5fa8bf47cbae7072400e1eb12dd3eb",
+      "retrieved_at": "2026-09-27T01:27:24.667501+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:ouc-st-cloud-magnolia-230-kv-line",
+      "file": "ouc-st-cloud-magnolia-230-kv-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line",
+      "sha256": "caeb2e5a52296c2f15a6f1c11f18a876d6486bf2ed0de17df34713d4c9423add",
+      "retrieved_at": "2026-09-27T01:27:24.612462+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "file": "seminole-electric-cooperative-inc-and-jea-keystone-firestone.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "sha256": "08b9465e37f3de597dfcd6490fe62aeab9d94806102d8bf82643d6211f29f510",
+      "retrieved_at": "2026-09-27T01:27:25.724069+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:duke-energy-florida-llc-central-florida-kathleen-line",
+      "file": "duke-energy-florida-llc-central-florida-kathleen-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line",
+      "sha256": "5a4f3e82ea6b959ef0b8abe257536ae699799b4de30c4766816c010460b79d60",
+      "retrieved_at": "2026-09-27T02:14:38.252400+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:florida-power-light-duval-poinsett-line",
+      "file": "florida-power-light-duval-poinsett-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-poinsett-line",
+      "sha256": "60ffdb3435b722f9470de4a778d7cc7f20d6aa3d45867fca96563a3339ce6afb",
+      "retrieved_at": "2026-09-27T02:14:38.251986+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:florida-power-light-midway-jensen-crane-line",
+      "file": "florida-power-light-midway-jensen-crane-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line",
+      "sha256": "a52c7b79768de771608a9fd6916344f26ac541ff26f62ea5d179cc56706be490",
+      "retrieved_at": "2026-09-27T02:14:38.288737+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:florida-power-light-crane-bridge-plumosus-line",
+      "file": "florida-power-light-crane-bridge-plumosus-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line",
+      "sha256": "f7f5309706b6bd008a758d543d12e4d9f90d5a15c4ae22274897a5bfb6ebd0c8",
+      "retrieved_at": "2026-09-27T02:14:38.284388+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:florida-power-light-levee-midway-line",
+      "file": "florida-power-light-levee-midway-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-levee-midway-line",
+      "sha256": "1d0104161037ee19fed04cb475f6d0883a5b2cc10e1bc3e27b97076e54d327c8",
+      "retrieved_at": "2026-09-27T02:14:39.044164+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:duke-energy-florida-llc-debary-winter-springs-line",
+      "file": "duke-energy-florida-llc-debary-winter-springs-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line",
+      "sha256": "4cb95394272d2db953779c81005fa99fc5135e2c43a70a5b5e61ed0c0964ff6c",
+      "retrieved_at": "2026-09-27T02:14:39.006179+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:florida-power-light-collier-orange-river-line",
+      "file": "florida-power-light-collier-orange-river-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-collier-orange-river-line",
+      "sha256": "7b79b867a134ff5790366babbbda50f35d58aaa261f89118dcf3b45126f929ae",
+      "retrieved_at": "2026-09-27T02:14:39.041444+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:florida-power-light-st-johns-pellicer-pringle-line",
+      "file": "florida-power-light-st-johns-pellicer-pringle-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line",
+      "sha256": "e83e291f25aaa0b1b45f66d2f7cbbc2e7bf681b3a5236ae7c66e6ac1858cf527",
+      "retrieved_at": "2026-09-27T02:14:39.050573+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:tampa-electric-company-wheeler-davis-willow-oak-line",
+      "file": "tampa-electric-company-wheeler-davis-willow-oak-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line",
+      "sha256": "8a804e957dbe5a185a455e54a3c22d8f19f5d983768842f5d31b8f1a9d4ab3d4",
+      "retrieved_at": "2026-09-27T02:14:39.746003+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:fpl-sweatt-whidden-230kv-line",
+      "file": "fpl-sweatt-whidden-230kv-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/fpl-sweatt-whidden-230kv-line",
+      "sha256": "6f7a214b74f49dedd36c203dba4147b194b1cdabad66a3b5e0bad271a86d42e6",
+      "retrieved_at": "2026-09-27T02:14:39.556665+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "narrative:def-deland-west-dona-vista-230kv-transmission-line-project",
+      "file": "def-deland-west-dona-vista-230kv-transmission-line-project.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/def-deland-west-dona-vista-230kv-transmission-line-project",
+      "sha256": "50ab4237d0d43f143164c024d0e44a8079ecfde4dd7cb3aa7bbc1683a0528c32",
+      "retrieved_at": "2026-09-27T02:14:39.501557+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md."
+    },
+    {
+      "key": "detail:city-tallahassee-hopkins-bainbridge-line",
+      "file": "hopkins-project.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line",
+      "sha256": "fdf4c8fe388998adb491ca392e6e057c62c5ff7033591915e5e8d676b789f0ac",
+      "retrieved_at": "2026-09-27T02:30:09.048926+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "hopkins-facility",
+      "file": "hopkins-facility.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/arvah-b-hopkins-gnerating-station",
+      "sha256": "66fd61179902fd4e1b22e1d5973fb42a5124f1c346478efd3f59c19b332062a1",
+      "retrieved_at": "2026-09-27T02:30:09.368848+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "hopkins-native",
+      "file": "hopkins-native-point.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/2/query?where=OBJECTID%3D15&outFields=*&returnGeometry=true&f=pjson",
+      "sha256": "be6e2e39bbb9d8c16716314707535e143da5ed836b8c54a0bde9ae0e911e17b9",
+      "retrieved_at": "2026-09-27T02:30:09.437526+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "plant-layer",
+      "file": "power-plants-metadata.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/2?f=pjson",
+      "sha256": "55d7df530addd0f7d781ab18103cf7e67f55af3aaa3c7bf6116789e1b4ddba56",
+      "retrieved_at": "2026-09-27T02:30:09.339438+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "hopkins-wgs84",
+      "file": "hopkins-explicit-wgs84.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/2/query?where=OBJECTID%3D15&outFields=%2A&returnGeometry=true&outSR=4326&datumTransformation=%7B%22geoTransforms%22%3A+%5B%7B%22wkid%22%3A+108354%2C+%22transformForward%22%3A+false%7D%5D%7D&f=pjson",
+      "sha256": "c3d3fe0abd766f78b620dfa16857061c2f8fb2fc7b64c3c3e49d98152c141eb9",
+      "retrieved_at": "2026-09-27T02:30:09.804848+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "bobwhite-decision",
+      "file": "bobwhite-certification-2008.pdf",
+      "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_14_2008.pdf",
+      "sha256": "34067afbe16f101bc0d3ff5d42960c69ee448b3cd5c4367ac0de8e5c21de6793",
+      "retrieved_at": "2026-09-27T02:31:01.588435+00:00",
+      "publication_date": "2008-11-06",
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "duval-decision",
+      "file": "duval-poinsett-certification.pdf",
+      "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_03.pdf",
+      "sha256": "10233a5fedc978ec06fd150600a1534667ccb11225b6868163b0049007a5cfc1",
+      "retrieved_at": "2026-09-27T02:31:01.736335+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "deland-decision",
+      "file": "deland-final-order.pdf",
+      "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/DEF_DeLandWest-DonaVista_TA25-20/20260120_DEF_DeLand-DonaVista_TA25-20_FinalOrderConditions.pdf",
+      "sha256": "4fba976b2cdcf0936dcce1bfef1eea828ea3555a2424a7fc3bcdd6b03c4de8c7",
+      "retrieved_at": "2026-09-27T02:31:01.077027+00:00",
+      "publication_date": "2026-01-20",
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    },
+    {
+      "key": "esri-transform",
+      "file": "esri-transformations-12.1.pdf",
+      "url": "https://developers.arcgis.com/rest/services-reference/enterprise/d1865ecb5d1b957bb92e4444f93d769c/gtf_pdf_12.1.pdf",
+      "sha256": "928f623f5832d40c6e691924e83881ffbcf4445ead2d95fbc719c3101df94a73",
+      "retrieved_at": "2026-09-27T02:31:04.745567+00:00",
+      "publication_date": null,
+      "publisher": "Esri",
+      "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation."
+    }
+  ]
+}

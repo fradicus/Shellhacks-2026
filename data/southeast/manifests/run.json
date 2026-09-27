@@ -4,7 +4,7 @@
   "runtime": "Codex local",
   "producer": "southeast-root",
   "reviewer": "/root/f39_florida_review",
-  "reviewer_status": "Independent source identity/count review completed; no location review or promotion",
+  "reviewer_status": "Exact release identity approved at 2026-09-27T02:50:29.071628+00:00; 17 projects/events, one confirmed partial endpoint, 16 unlocated.",
   "states": [
     "FL",
     "GA",
@@ -22,9 +22,9 @@
   "deadline": null,
   "budget": null,
   "authority": "specs/decisions/C24-southeast-launch.md",
-  "phase": "source acquisition and reconciliation",
+  "phase": "Florida publication pilot validation",
   "publication_gate_passed": false,
-  "new_confirmed_points": 0,
+  "new_confirmed_points": 1,
   "new_activated_projects": 0,
   "request_limits": {
     "timeout_seconds": 45,
@@ -34,5 +34,6 @@
   },
   "stop_resume": "Honor origin/main STOP and main-red. Checkpoint per source/state; resume until full F39 acceptance. No completion marker for research.",
   "raw_cache": "/private/tmp/gridbridge-southeast-sources",
-  "next": "Reconcile Florida TLSA register and official project pages; acquire independent endpoint evidence. New-project activation requires additive contract beyond C23."
+  "next": "Complete release gates, merge fixed-path release, verify Action/Atlas RO/export/maps. Continue Florida provider coverage, Georgia, and all remaining Southeast states.",
+  "publication_contract": "C27 accepted; F30 assembly hook merged in 5a5c822. No live activation claimed by this manifest."
 }

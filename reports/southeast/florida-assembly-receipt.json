@@ -1,0 +1,54 @@
+{
+  "expansion_release": "f38-new-england-345-v1",
+  "located": 415,
+  "projects": 1303,
+  "scope": "local assembled release; not Atlas activation",
+  "southeast": {
+    "complete_endpoint_projects": 0,
+    "confirmed_projects": 1,
+    "confirmed_state_counts": {
+      "12": 1
+    },
+    "distinct_facility_sites": 1,
+    "event_type_counts": {
+      "certification": 17
+    },
+    "new_projects": 17,
+    "new_sources": 1,
+    "notes": [
+      "Complete 17-row current transmission index only. Not all Florida transmission construction.",
+      "Historical relinquished Lake Tarpon-Kathleen and other providers remain outside this batch.",
+      "Certification history does not establish current construction or operation.",
+      "One candidate facility-reference endpoint at Hopkins; other project geometry remains unlocated.",
+      "County assignments preserve reported scope and may omit counties; interstate extent remains partially assessed.",
+      "All current lifecycle statuses remain unknown. Certification events preserve distinct dates and source semantics."
+    ],
+    "partial_endpoint_projects": 1,
+    "release_id": "f39-florida-dep-17-v1",
+    "review_counts": {
+      "confirmed": 1
+    },
+    "source_completeness": {
+      "southeast:fl-dep:conditions-index": "complete"
+    },
+    "source_counts": {
+      "southeast:fl-dep:conditions-index": 17
+    },
+    "source_freshness": {
+      "southeast:fl-dep:conditions-index": {
+        "publication_date": null,
+        "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+        "vintage": null
+      }
+    },
+    "source_rows": 17,
+    "standalone_site_projects": 0,
+    "state_counts": {
+      "12": 17
+    },
+    "status_counts": {
+      "unknown": 17
+    },
+    "unlocated_projects": 16
+  }
+}
