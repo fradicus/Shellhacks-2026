@@ -45,6 +45,15 @@ test("mobile explorer has no document-level horizontal overflow", async ({ page 
   await page.screenshot({ path: testInfo.outputPath("explore-mobile.png"), fullPage: true });
 });
 
+test("mind map tab is reachable from explorer URL state", async ({ page }) => {
+  await page.goto("/explore?view=mindmap");
+  await expect(page.getByRole("tab", { name: "Mind map" })).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByRole("heading", { name: /Region circle → state → place → electrical/i })).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByLabel("Mind map charts")).toBeVisible();
+  await page.getByRole("tab", { name: "Map & list" }).click();
+  await expect(page).not.toHaveURL(/view=mindmap/);
+});
+
 test("API rejects duplicate parameters and its exact counts drive the page", async ({ page, request }) => {
   const duplicate = await request.get("/api/national?state=25&state=13");
   expect(duplicate.status()).toBe(400);

@@ -92,7 +92,7 @@ test("URL serialization is stable and reverse dates are rejected", () => {
 test("filter actions stay typed and reset keeps the user's page size", () => {
   const current = parseNationalFilters({ state: "25", limit: "25" });
   assert.equal(applyFilterAction(current, { type: "filters.patch", filters: { text: "harbor" } })?.text, "harbor");
-  assert.deepEqual(applyFilterAction(current, { type: "filters.reset" }), { page: 1, limit: 25 });
+  assert.deepEqual(applyFilterAction(current, { type: "filters.reset" }), { page: 1, limit: 25, view: "map" });
   assert.equal(applyFilterAction(current, { type: "project.select", projectId: "x" }), null);
 });
 

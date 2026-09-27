@@ -172,6 +172,8 @@ export interface NationalCoverage {
   notes: string[];
 }
 
+export type NationalExplorerView = "map" | "mindmap";
+
 export interface NationalFilters {
   region?: string;
   state?: string;
@@ -182,11 +184,13 @@ export interface NationalFilters {
   from?: string;
   to?: string;
   text?: string;
+  /** Explorer surface; omitted callers default to the map/list tab. */
+  view?: NationalExplorerView;
   page: number;
   limit: number;
 }
 
-export type NationalFilterKey = Exclude<keyof NationalFilters, "page" | "limit">;
+export type NationalFilterKey = Exclude<keyof NationalFilters, "page" | "limit" | "view">;
 
 export type NationalFilterAction =
   | { type: "filters.patch"; filters: Partial<Omit<NationalFilters, "page" | "limit">> }
