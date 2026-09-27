@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
+import { useRouter } from "next/navigation";
 import { ZodError } from "zod";
 import { HazmatSchema, type Point, type ReferenceResponse } from "@/lib/operations/contracts";
 import type { VerifiedCoverageResponse, VerifiedListResponse } from "@/lib/verified/types";
@@ -36,6 +37,7 @@ import {
   type SiteResponse,
 } from "./logic";
 import { AEFPanel, OutcomePanel, RoadworkPanel, RoutePanel, SoilPanel, StatusBadge, WeatherPanel, formatTime } from "./Evidence";
+import { FactorsBoard } from "./FactorsBoard";
 import styles from "./operations.module.css";
 
 const EMPTY_SITE: SiteDraft = { label: "", lat: "", lon: "", year: "" };
@@ -63,7 +65,19 @@ function InlineError({ children }: { children: string | null }) {
 }
 function Loading({ children }: { children: ReactNode }) { return <span aria-live="polite" className={styles.loading}>{children}</span>; }
 
-export function OperationsDesk() {
+export function OperationsDesk({ initialView = "planning" }: { initialView?: "planning" | "factors" }) {
+  const router = useRouter();
+  const [activeView, setActiveView] = useState<"planning" | "factors">(initialView);
+  const [prevInitialView, setPrevInitialView] = useState(initialView);
+  if (initialView !== prevInitialView) {
+    setPrevInitialView(initialView);
+    setActiveView(initialView);
+  }
+  const setView = (view: "planning" | "factors") => {
+    setActiveView(view);
+    router.replace(view === "factors" ? "/operations?view=factors" : "/operations", { scroll: false });
+  };
+
   const [reference, setReference] = useState<ReferenceResponse | null>(null);
   const [referenceError, setReferenceError] = useState<string | null>(null);
   const [coverage, setCoverage] = useState<VerifiedCoverageResponse | null>(null);
@@ -279,6 +293,25 @@ export function OperationsDesk() {
       <div className={styles.heroRule}><span>01</span><strong>Enter facts</strong><span>02</span><strong>Check sources</strong><span>03</span><strong>Review limits</strong></div>
     </header>
 
+    <div className={styles.viewTabs} role="tablist" aria-label="Field planning views">
+      <button type="button" role="tab" id="operations-tab-planning" aria-selected={activeView === "planning"} aria-controls="operations-panel-planning" className={activeView === "planning" ? styles.viewTabActive : styles.viewTab} onClick={() => setView("planning")}>Planning</button>
+      <button type="button" role="tab" id="operations-tab-factors" aria-selected={activeView === "factors"} aria-controls="operations-panel-factors" className={activeView === "factors" ? styles.viewTabActive : styles.viewTab} onClick={() => setView("factors")}>Factors</button>
+    </div>
+
+    {activeView === "factors" ? (
+      <div id="operations-panel-factors" role="tabpanel" aria-labelledby="operations-tab-factors">
+        <FactorsBoard
+          site={siteResult}
+          route={routeResult}
+          weather={currentWeather}
+          roadwork={currentRoadwork}
+          siteOutdated={siteOutdated}
+          routeOutdated={routeOutdated}
+          onOpenPlanning={() => setView("planning")}
+        />
+      </div>
+    ) : (
+    <div id="operations-panel-planning" role="tabpanel" aria-labelledby="operations-tab-planning">
     <section className={styles.readiness} aria-label="Provider readiness">
       <div><span className="eyebrow">Verified directory</span><strong>{coverage?.available ? sourceSummary : coverage?.reason ?? coverageError ?? (metadataLoading ? "Checking…" : "Unavailable")}</strong></div>
       <div><span className="eyebrow">Current conditions</span><strong>{reference ? `Refresh ${conditionRefresh}s while visible` : referenceError ?? (metadataLoading ? "Checking…" : "Unavailable")}</strong></div>
@@ -387,5 +420,7 @@ export function OperationsDesk() {
       </section>
     </div>
     <footer className={styles.footer}><p>Planning evidence only. Unknown or partial provider coverage is not an all-clear, route approval, geotechnical opinion, or construction guarantee.</p><p>Site evidence checked {siteResult ? formatTime(siteResult.weather.retrieved_at) : "not yet"}.</p></footer>
+    </div>
+    )}
   </main>;
 }
