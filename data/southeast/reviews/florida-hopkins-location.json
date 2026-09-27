@@ -1,0 +1,10 @@
+[
+  {
+    "decision": "confirmed",
+    "facts_sha256": "0deaeccf5914240b7a2ad1d1f8c3ba71c35f09c5a100cc182965ea935463ddd2",
+    "id": "f39-hopkins-facility-reference-20260927-review-1",
+    "reason": "Independent inspection confirms the exact TA81-01 project link to DEP generating-station PA74-03 OBJECTID15. Pinned native/output bytes and inverse ESRI108354 were independently reproduced. Confirmed only as an official facility-reference point for one named endpoint, partial; not a surveyed terminal, complete route or current operating-status claim. Exact equipment position, source accuracy and measurement date remain unknown; uncertainty_m stays null. Florida membership and reported Leon/Gadsden counties do not establish full interstate extent; South Bainbridge geometry remains unverified. Review binds this exact record and project hash.",
+    "reviewed_at": "2026-09-27T02:41:06.495622+00:00",
+    "reviewer": "/root/f39_florida_review"
+  }
+]

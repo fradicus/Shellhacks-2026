@@ -1,0 +1,2208 @@
+{
+  "acquisition": [
+    {
+      "completeness": "complete",
+      "enumeration_evidence": [
+        {
+          "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+          "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+          "facts": "Complete current transmission table independently enumerated; source-wide/statewide construction denominator unknown.",
+          "locator": "Transmission Lines table; all 17 certification rows from TA81-01 through TA25-20",
+          "publisher": "Florida Department of Environmental Protection",
+          "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+          "source_date": null,
+          "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+        }
+      ],
+      "expected_source_rows": 17,
+      "row_locators": [
+        "TA81-01",
+        "TA81-02",
+        "TA81-03",
+        "TA83-04",
+        "TA88-06",
+        "TA89-07",
+        "TA90-08",
+        "TA92-09",
+        "TA03-12",
+        "TA05-13",
+        "TA07-14",
+        "TA07-15",
+        "TA07-16",
+        "TA16-17",
+        "TA21-18",
+        "TA22-19",
+        "TA25-20"
+      ],
+      "scope": "Current transmission table only; excludes plant/gas tables and historical relinquished entries.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    }
+  ],
+  "coverage_notes": [
+    "Complete 17-row current transmission index only. Not all Florida transmission construction.",
+    "Historical relinquished Lake Tarpon-Kathleen and other providers remain outside this batch.",
+    "Certification history does not establish current construction or operation.",
+    "One candidate facility-reference endpoint at Hopkins; other project geometry remains unlocated.",
+    "County assignments preserve reported scope and may omit counties; interstate extent remains partially assessed.",
+    "All current lifecycle statuses remain unknown. Certification events preserve distinct dates and source semantics."
+  ],
+  "created_at": "2026-09-27T02:35:41.895750+00:00",
+  "dispositions": [
+    {
+      "disposition": "accepted",
+      "locator": "TA81-01",
+      "project_id": "southeast:fl-dep:ta81-01",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA81-02",
+      "project_id": "southeast:fl-dep:ta81-02",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA81-03",
+      "project_id": "southeast:fl-dep:ta81-03",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA83-04",
+      "project_id": "southeast:fl-dep:ta83-04",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA88-06",
+      "project_id": "southeast:fl-dep:ta88-06",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA89-07",
+      "project_id": "southeast:fl-dep:ta89-07",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA90-08",
+      "project_id": "southeast:fl-dep:ta90-08",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA92-09",
+      "project_id": "southeast:fl-dep:ta92-09",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA03-12",
+      "project_id": "southeast:fl-dep:ta03-12",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA05-13",
+      "project_id": "southeast:fl-dep:ta05-13",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA07-14",
+      "project_id": "southeast:fl-dep:ta07-14",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA07-15",
+      "project_id": "southeast:fl-dep:ta07-15",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA07-16",
+      "project_id": "southeast:fl-dep:ta07-16",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA16-17",
+      "project_id": "southeast:fl-dep:ta16-17",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA21-18",
+      "project_id": "southeast:fl-dep:ta21-18",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA22-19",
+      "project_id": "southeast:fl-dep:ta22-19",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    },
+    {
+      "disposition": "accepted",
+      "locator": "TA25-20",
+      "project_id": "southeast:fl-dep:ta25-20",
+      "reason": "One construction/certification project from the current DEP transmission table, with linked project evidence.",
+      "source_id": "southeast:fl-dep:conditions-index"
+    }
+  ],
+  "expected_counts": {
+    "confirmed_projects": 1,
+    "new_projects": 17,
+    "new_sources": 1,
+    "source_rows": 17
+  },
+  "location_verifications": [
+    {
+      "events": [],
+      "location_kind": "line",
+      "points": [
+        {
+          "facility_id": "fl-dep:PA74-03",
+          "facility_name": "Arvah B. Hopkins Generating Station",
+          "geometry_evidence": [
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "be6e2e39bbb9d8c16716314707535e143da5ed836b8c54a0bde9ae0e911e17b9",
+              "facts": "DEP certified generating-station point PA74-03 in native EPSG6439. Not a surveyed line terminal.",
+              "locator": "OBJECTID=15; geometry; spatialReference",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.437526+00:00",
+              "source_date": null,
+              "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/2/query?where=OBJECTID%3D15&outFields=*&returnGeometry=true&f=pjson"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "55d7df530addd0f7d781ab18103cf7e67f55af3aaa3c7bf6116789e1b4ddba56",
+              "facts": "Official Certified Power Plants point layer. Storage precision is not positional accuracy.",
+              "locator": "Layer 2 geometryType, spatialReference, description",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.339438+00:00",
+              "source_date": null,
+              "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/2?f=pjson"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "c3d3fe0abd766f78b620dfa16857061c2f8fb2fc7b64c3c3e49d98152c141eb9",
+              "facts": "Explicit ArcGIS output independently reproduced by the committed Florida transformation.",
+              "locator": "OBJECTID=15 geometry; explicit inverse ESRI108354 query",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.804848+00:00",
+              "source_date": null,
+              "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/2/query?where=OBJECTID%3D15&outFields=%2A&returnGeometry=true&outSR=4326&datumTransformation=%7B%22geoTransforms%22%3A+%5B%7B%22wkid%22%3A+108354%2C+%22transformForward%22%3A+false%7D%5D%7D&f=pjson"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "928f623f5832d40c6e691924e83881ffbcf4445ead2d95fbc719c3101df94a73",
+              "facts": "Coordinate_Frame parameters; inverse WGS84(ITRF00)-to-NAD83(2011). Operation accuracy is not facility accuracy.",
+              "locator": "PDF page 1841, operation 108354",
+              "publisher": "Esri",
+              "retrieved_at": "2026-09-27T02:31:04.745567+00:00",
+              "source_date": null,
+              "url": "https://developers.arcgis.com/rest/services-reference/enterprise/d1865ecb5d1b957bb92e4444f93d769c/gtf_pdf_12.1.pdf"
+            }
+          ],
+          "identity_evidence": [
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "fdf4c8fe388998adb491ca392e6e057c62c5ff7033591915e5e8d676b789f0ac",
+              "facts": "TA81-01 names Arvah B. Hopkins Generating Station as a line endpoint.",
+              "locator": "General Information / Description",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.048926+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "66fd61179902fd4e1b22e1d5973fb42a5124f1c346478efd3f59c19b332062a1",
+              "facts": "Named City of Tallahassee generating station PA74-03; matches official point facility identity.",
+              "locator": "General Information / Certification #, Licensee, Location",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.368848+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/arvah-b-hopkins-gnerating-station"
+            }
+          ],
+          "identity_rationale": "Project explicitly names the generating station; DEP point identifies that facility as PA74-03. This is a disclosed facility reference for one endpoint, not exact equipment position. South Bainbridge geometry is unverified; no midpoint or full route inferred.",
+          "lat": 30.452223774750653,
+          "lon": -84.3994653300266,
+          "original_geometry": {
+            "coordinates": [
+              361673.8020000011,
+              716135.9538000003
+            ],
+            "crs": "EPSG:6439",
+            "transform": "EPSG:6439 inverse Albers; inverse ESRI:108354; 2D height=0",
+            "type": "Point"
+          },
+          "precision": "Official DEP generating-station facility reference; exact terminal position, measurement date and source accuracy unknown.",
+          "role": "a",
+          "uncertainty_m": null
+        }
+      ],
+      "producer": "codex-local-f39-producer",
+      "project_facts_sha256": "1f16d1ffa63ef39a5ff338ef2d9e2c12009dc18adc8d2cd4258cbea807f7b613",
+      "project_id": "southeast:fl-dep:ta81-01",
+      "reviews": [
+        {
+          "decision": "confirmed",
+          "facts_sha256": "0deaeccf5914240b7a2ad1d1f8c3ba71c35f09c5a100cc182965ea935463ddd2",
+          "id": "f39-hopkins-facility-reference-20260927-review-1",
+          "reason": "Independent inspection confirms the exact TA81-01 project link to DEP generating-station PA74-03 OBJECTID15. Pinned native/output bytes and inverse ESRI108354 were independently reproduced. Confirmed only as an official facility-reference point for one named endpoint, partial; not a surveyed terminal, complete route or current operating-status claim. Exact equipment position, source accuracy and measurement date remain unknown; uncertainty_m stays null. Florida membership and reported Leon/Gadsden counties do not establish full interstate extent; South Bainbridge geometry remains unverified. Review binds this exact record and project hash.",
+          "reviewed_at": "2026-09-27T02:41:06.495622+00:00",
+          "reviewer": "/root/f39_florida_review"
+        }
+      ]
+    }
+  ],
+  "producer": "codex-local-f39-producer",
+  "project_events": [
+    {
+      "events": [
+        {
+          "date": "1981-08-04",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "fdf4c8fe388998adb491ca392e6e057c62c5ff7033591915e5e8d676b789f0ac",
+              "facts": "Date Certified 08/04/1981; raw Certification # TA 81-01",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.048926+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta81-01:certification:1981-08-04",
+          "native_project_link": "TA81-01",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta81-01"
+    },
+    {
+      "events": [
+        {
+          "date": "1982-07-26",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "5a4f3e82ea6b959ef0b8abe257536ae699799b4de30c4766816c010460b79d60",
+              "facts": "Date Certified 07/26/1982; raw Certification # TA 81-02",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.252400+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta81-02:certification:1982-07-26",
+          "native_project_link": "TA81-02",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta81-02"
+    },
+    {
+      "events": [
+        {
+          "date": "1982-11-18",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "60ffdb3435b722f9470de4a778d7cc7f20d6aa3d45867fca96563a3339ce6afb",
+              "facts": "Date Certified 11/18/1982; raw Certification # TA 81-03",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.251986+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-poinsett-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta81-03:certification:1982-11-18",
+          "native_project_link": "TA81-03",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta81-03"
+    },
+    {
+      "events": [
+        {
+          "date": "1984-01-17",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "a52c7b79768de771608a9fd6916344f26ac541ff26f62ea5d179cc56706be490",
+              "facts": "Date Certified 01/17/1984; raw Certification # TA 83-04",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.288737+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta83-04:certification:1984-01-17",
+          "native_project_link": "TA83-04",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta83-04"
+    },
+    {
+      "events": [
+        {
+          "date": "1989-08-08",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "f7f5309706b6bd008a758d543d12e4d9f90d5a15c4ae22274897a5bfb6ebd0c8",
+              "facts": "Date Certified 08/08/1989; raw Certification # TA 88-06",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.284388+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta88-06:certification:1989-08-08",
+          "native_project_link": "TA88-06",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta88-06"
+    },
+    {
+      "events": [
+        {
+          "date": "1990-04-20",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "1d0104161037ee19fed04cb475f6d0883a5b2cc10e1bc3e27b97076e54d327c8",
+              "facts": "Date Certified 04/20/1990; raw Certification # TA 89-07",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.044164+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-levee-midway-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta89-07:certification:1990-04-20",
+          "native_project_link": "TA89-07",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta89-07"
+    },
+    {
+      "events": [
+        {
+          "date": "1991-06-12",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "08b9465e37f3de597dfcd6490fe62aeab9d94806102d8bf82643d6211f29f510",
+              "facts": "Date Certified 06/12/1991; raw Certification # TA 90-08",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:25.724069+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+            }
+          ],
+          "id": "southeast:fl-dep:ta90-08:certification:1991-06-12",
+          "native_project_link": "TA90-08",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta90-08"
+    },
+    {
+      "events": [
+        {
+          "date": "1993-05-11",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "4cb95394272d2db953779c81005fa99fc5135e2c43a70a5b5e61ed0c0964ff6c",
+              "facts": "Date Certified 05/11/1993; raw Certification # TA 92-09",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.006179+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta92-09:certification:1993-05-11",
+          "native_project_link": "TA92-09",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta92-09"
+    },
+    {
+      "events": [
+        {
+          "date": "2004-07-19",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "7b79b867a134ff5790366babbbda50f35d58aaa261f89118dcf3b45126f929ae",
+              "facts": "Date Certified 07/19/2004; raw Certification # TA 03-12",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.041444+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-collier-orange-river-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta03-12:certification:2004-07-19",
+          "native_project_link": "TA03-12",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta03-12"
+    },
+    {
+      "events": [
+        {
+          "date": "2006-04-27",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "e83e291f25aaa0b1b45f66d2f7cbbc2e7bf681b3a5236ae7c66e6ac1858cf527",
+              "facts": "Date Certified 04/27/2006; raw Certification # TA 05-13",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.050573+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta05-13:certification:2006-04-27",
+          "native_project_link": "TA05-13",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta05-13"
+    },
+    {
+      "events": [
+        {
+          "date": "2008-11-06",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "2e8249d5f714a27082b8839e9127e2e1b8fd244ba272917fc9e2eea2e66f9fd3",
+              "facts": "Date Certified 11/06/2008; raw Certification # TA 06-14",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:25.460834+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "34067afbe16f101bc0d3ff5d42960c69ee448b3cd5c4367ac0de8e5c21de6793",
+              "facts": "Bobwhite-Manatee; TA07-14; certification dated 2008-11-06. Conflicting TA06-14 remains an alias.",
+              "locator": "PDF pages 1 and 4 (printed page 1 footer)",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:31:01.588435+00:00",
+              "source_date": "2008-11-06",
+              "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_14_2008.pdf"
+            }
+          ],
+          "id": "southeast:fl-dep:ta07-14:certification:2008-11-06",
+          "native_project_link": "TA07-14",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta07-14"
+    },
+    {
+      "events": [
+        {
+          "date": "2008-08-07",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "8a804e957dbe5a185a455e54a3c22d8f19f5d983768842f5d31b8f1a9d4ab3d4",
+              "facts": "Date Certified 08/07/2008; raw Certification # TA 07-15",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.746003+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta07-15:certification:2008-08-07",
+          "native_project_link": "TA07-15",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta07-15"
+    },
+    {
+      "events": [
+        {
+          "date": "2009-02-18",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "3b6644336997e23d96815d80f3be786c65b7693cb1ff05cd351cba03cc6a3332",
+              "facts": "Date Certified 02/18/2009; raw Certification # TA 07-16",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:25.253727+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+            }
+          ],
+          "id": "southeast:fl-dep:ta07-16:certification:2009-02-18",
+          "native_project_link": "TA07-16",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta07-16"
+    },
+    {
+      "events": [
+        {
+          "date": "2016-06-29",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "abd249bdbc370bb8dc80f00043ee720e1d5fa8bf47cbae7072400e1eb12dd3eb",
+              "facts": "Date Certified 06/29/2016; raw Certification # TA 16-17",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:24.667501+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-raven-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta16-17:certification:2016-06-29",
+          "native_project_link": "TA16-17",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta16-17"
+    },
+    {
+      "events": [
+        {
+          "date": "2021-12-13",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "caeb2e5a52296c2f15a6f1c11f18a876d6486bf2ed0de17df34713d4c9423add",
+              "facts": "Date Certified 12/13/2021; raw Certification # TA 21-18",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:24.612462+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta21-18:certification:2021-12-13",
+          "native_project_link": "TA21-18",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta21-18"
+    },
+    {
+      "events": [
+        {
+          "date": "2022-09-22",
+          "description": "DEP Date Certified; not a construction or in-service date.",
+          "evidence": [
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "6f7a214b74f49dedd36c203dba4147b194b1cdabad66a3b5e0bad271a86d42e6",
+              "facts": "Date Certified 9/22/2022; raw Certification # TA22-19",
+              "locator": "General Information / Date Certified",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.556665+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/fpl-sweatt-whidden-230kv-line"
+            }
+          ],
+          "id": "southeast:fl-dep:ta22-19:certification:2022-09-22",
+          "native_project_link": "TA22-19",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta22-19"
+    },
+    {
+      "events": [
+        {
+          "date": "2026-01-20",
+          "description": "Conditions of Certification document dated 2026-01-20; official page lists final-order filing on that date. A separate legal effective date is not established.",
+          "evidence": [
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "4fba976b2cdcf0936dcce1bfef1eea828ea3555a2424a7fc3bcdd6b03c4de8c7",
+              "facts": "Conditions dated 2026-01-20; DEF identified as owner/operator and licensee as of this document. No construction completion established.",
+              "locator": "PDF page 1 cover and page 6 (printed 1), Section A.I",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:31:01.077027+00:00",
+              "source_date": "2026-01-20",
+              "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/DEF_DeLandWest-DonaVista_TA25-20/20260120_DEF_DeLand-DonaVista_TA25-20_FinalOrderConditions.pdf"
+            }
+          ],
+          "id": "southeast:fl-dep:ta25-20:certification:2026-01-20",
+          "native_project_link": "TA25-20",
+          "precision": "day",
+          "type": "certification"
+        }
+      ],
+      "project_id": "southeast:fl-dep:ta25-20"
+    }
+  ],
+  "projects": [
+    {
+      "_id": "southeast:fl-dep:ta81-01",
+      "center": null,
+      "counties": [
+        "12039",
+        "12073"
+      ],
+      "description": "The City of Tallahassee constructed this transmission line from the Arvah B. Hopkins Generating Station to Georgia Power Cooperation's South Bainbridge Substation.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 81-01",
+            "Counties Crossed": "Leon and Gadsden",
+            "Date Certified": "08/04/1981",
+            "Description": "The City of Tallahassee constructed this transmission line from the Arvah B. Hopkins Generating Station to Georgia Power Cooperation's South Bainbridge Substation.",
+            "Licensee": "City of Tallahassee",
+            "Line Length": "17 Miles",
+            "Voltage": "2,200 MW"
+          },
+          "index": {
+            "certification_raw": "TA81-01",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_01.pdf"
+            ],
+            "licensee_raw": "City of Tallahassee",
+            "name": "Hopkins - Bainbridge",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line"
+            ]
+          },
+          "limitations": [
+            "Hopkins detail Voltage is 2,200 MW, a unit error; no voltage normalized from that cell.",
+            "Florida certification membership is supported; full interstate extent and Georgia membership remain unverified."
+          ],
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA81-01",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "fdf4c8fe388998adb491ca392e6e057c62c5ff7033591915e5e8d676b789f0ac",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:30:09.048926+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line"
+            }
+          ]
+        },
+        "row": 1,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Hopkins - Bainbridge",
+      "native_id": "TA81-01",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta81-02",
+      "center": null,
+      "counties": [
+        "12053",
+        "12101",
+        "12105",
+        "12119"
+      ],
+      "description": "The transmission line begins at the Central Florida Substation and ends at the Kathleen Substation.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 81-02",
+            "Counties Crossed": "Sumter, Polk, Hernando and Pasco",
+            "Date Certified": "07/26/1982",
+            "Description": "The transmission line begins at the Central Florida Substation and ends at the Kathleen Substation.",
+            "Licensee": "Duke Energy Florida, LLC",
+            "Line Length": "44.5 Miles",
+            "Voltage": "500 kV"
+          },
+          "index": {
+            "certification_raw": "TA81-02",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_02.pdf"
+            ],
+            "licensee_raw": "Florida Power Corporation (now Duke Energy Florida, LLC)",
+            "name": "Central Florida - Kathleen",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA81-02",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "5a4f3e82ea6b959ef0b8abe257536ae699799b4de30c4766816c010460b79d60",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.252400+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line"
+            }
+          ]
+        },
+        "row": 2,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Central Florida - Kathleen",
+      "native_id": "TA81-02",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta81-03",
+      "center": null,
+      "counties": [
+        "12019",
+        "12031",
+        "12035",
+        "12095",
+        "12107",
+        "12117",
+        "12127"
+      ],
+      "description": "Duval-to-Poinsett transmission corridor; primary certification Figure 1 names Duval and Poinsett endpoints.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "description_resolution": "Detail's Kathleen endpoint statement conflicts with the primary corridor map and is not used for location.",
+          "detail": {
+            "Certification #": "TA 81-03",
+            "Counties Crossed": "Duval, Clay, Flagler, Putnam, Volusia, Orange and Seminole",
+            "Date Certified": "11/18/1982",
+            "Description": "These transmission lines consist of two 500 kV lines from the Duval Substation in Duval County extending through the Rice Substation and ends at the Kathleen Substation.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "175 Miles",
+            "Voltage": "500 kV"
+          },
+          "index": {
+            "certification_raw": "TA81-03",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_03.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Duval - Poinsett",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-poinsett-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA81-03",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "60ffdb3435b722f9470de4a778d7cc7f20d6aa3d45867fca96563a3339ce6afb",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.251986+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-poinsett-line"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "10233a5fedc978ec06fd150600a1534667ccb11225b6868163b0049007a5cfc1",
+              "facts": "Duval and Poinsett are named endpoints; Rice and approximate Rima are intermediate. No coordinates inferred.",
+              "locator": "PDF page 33, Composite Attachment I, Figure 1",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:31:01.736335+00:00",
+              "source_date": null,
+              "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_03.pdf"
+            }
+          ]
+        },
+        "row": 3,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Duval - Poinsett",
+      "native_id": "TA81-03",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta83-04",
+      "center": null,
+      "counties": [
+        "12085",
+        "12111"
+      ],
+      "description": "The line connects Midway Substation in St. Lucie County to Turnpike No. 3, an intermediate substation, also located in St. Lucie County. From Turnpike No. 3 Substation, the line branches eastward to the Jensen Substation and then southward ending at the Crane Substation.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 83-04",
+            "Counties Crossed": "St. Lucie and Martin",
+            "Date Certified": "01/17/1984",
+            "Description": "The line connects Midway Substation in St. Lucie County to Turnpike No. 3, an intermediate substation, also located in St. Lucie County. From Turnpike No. 3 Substation, the line branches eastward to the Jensen Substation and then southward ending at the Crane Substation.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "22.5 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA83-04",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta83_04.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Midway - Jensen - Crane",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA83-04",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "a52c7b79768de771608a9fd6916344f26ac541ff26f62ea5d179cc56706be490",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.288737+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line"
+            }
+          ],
+          "topology_note": "Detail and GIS differ on branch topology; no route geometry or endpoint pairing inferred."
+        },
+        "row": 4,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Midway - Jensen - Crane",
+      "native_id": "TA83-04",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta88-06",
+      "center": null,
+      "counties": [
+        "12085",
+        "12099"
+      ],
+      "description": "This transmission line connects Crane Substation to Plumosus Substation, through connections to Mapp, Hanson, Bridge, Moroso, Alexander, Steeplechase, Ryder and Bonnette Substations.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 88-06",
+            "Counties Crossed": "Martin and Palm Beach",
+            "Date Certified": "08/08/1989",
+            "Description": "This transmission line connects Crane Substation to Plumosus Substation, through connections to Mapp, Hanson, Bridge, Moroso, Alexander, Steeplechase, Ryder and Bonnette Substations.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "40 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA88-06",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta88_06.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Crane - Bridge - Plumosus",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA88-06",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "f7f5309706b6bd008a758d543d12e4d9f90d5a15c4ae22274897a5bfb6ebd0c8",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:38.284388+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line"
+            }
+          ]
+        },
+        "row": 5,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Crane - Bridge - Plumosus",
+      "native_id": "TA88-06",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta89-07",
+      "center": null,
+      "counties": [
+        "12011",
+        "12085",
+        "12086",
+        "12099",
+        "12111"
+      ],
+      "description": "The Levee-Midway line connects Midway Substation in St. Lucie County to Levee Substation in Miami-Dade County via Corbett and Conservation Substations.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 89-07",
+            "Counties Crossed": "St. Lucie, Martin, Palm Beach, Broward and Miami-Dade",
+            "Date Certified": "04/20/1990",
+            "Description": "The Levee-Midway line connects Midway Substation in St. Lucie County to Levee Substation in Miami-Dade County via Corbett and Conservation Substations.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "150 Miles",
+            "Voltage": "500 kV"
+          },
+          "index": {
+            "certification_raw": "TA89-07",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta89_07.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Levee - Midway",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-levee-midway-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA89-07",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "1d0104161037ee19fed04cb475f6d0883a5b2cc10e1bc3e27b97076e54d327c8",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.044164+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-levee-midway-line"
+            }
+          ]
+        },
+        "row": 6,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Levee - Midway",
+      "native_id": "TA89-07",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta90-08",
+      "center": null,
+      "counties": [
+        "12031",
+        "12107"
+      ],
+      "description": "This transmission line begins at SECI's Seminole Generating Station and connects to Clay Electric Cooperative's Riverview, Florahome, Keystone and Black Creek Substations, ending at the JEA's Firestone Substation.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 90-08",
+            "Counties Crossed": "Putnam and Duval",
+            "Date Certified": "06/12/1991",
+            "Description": "This transmission line begins at SECI's Seminole Generating Station and connects to Clay Electric Cooperative's Riverview, Florahome, Keystone and Black Creek Substations, ending at the JEA's Firestone Substation.",
+            "Licensee": "Seminole Electric Cooperative, Inc (SECI) and JEA",
+            "Line Length": "70 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA90-08",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta90_08.pdf"
+            ],
+            "licensee_raw": "Seminole Electric Company, Inc. and JEA",
+            "name": "Seminole - Keystone - Firestone",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA90-08",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "08b9465e37f3de597dfcd6490fe62aeab9d94806102d8bf82643d6211f29f510",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:25.724069+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+            }
+          ]
+        },
+        "row": 7,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Seminole - Keystone - Firestone",
+      "native_id": "TA90-08",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta92-09",
+      "center": null,
+      "counties": [
+        "12117",
+        "12127"
+      ],
+      "description": "The transmission line begins at the DeBary Power Plant located in Volusia County and extends south to the Florida Power and Light Tie Substation and Sanford Plant through the Lake-Emma Substation and, North Longwood Substation, ending at the Winter Springs Substation in Seminole County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 92-09",
+            "Counties Crossed": "Seminole and Volusia",
+            "Date Certified": "05/11/1993",
+            "Description": "The transmission line begins at the DeBary Power Plant located in Volusia County and extends south to the Florida Power and Light Tie Substation and Sanford Plant through the Lake-Emma Substation and, North Longwood Substation, ending at the Winter Springs Substation in Seminole County.",
+            "Licensee": "Duke Energy Florida, LLC",
+            "Line Length": "19.1 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA92-09",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta92_09.pdf"
+            ],
+            "licensee_raw": "Florida Power Corporation (now Duke Energy Florida, LLC)",
+            "name": "Debary - Winter Springs",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA92-09",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "4cb95394272d2db953779c81005fa99fc5135e2c43a70a5b5e61ed0c0964ff6c",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.006179+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line"
+            }
+          ]
+        },
+        "row": 8,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Debary - Winter Springs",
+      "native_id": "TA92-09",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta03-12",
+      "center": null,
+      "counties": [
+        "12021",
+        "12071"
+      ],
+      "description": "The transmission line connects from the Orange river Substation in Lee County to the Collier Substation in Collier County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 03-12",
+            "Counties Crossed": "Collier and Lee",
+            "Date Certified": "07/19/2004",
+            "Description": "The transmission line connects from the Orange river Substation in Lee County to the Collier Substation in Collier County.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "53.9 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA03-12",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta03_12.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Collier - Orange River",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-collier-orange-river-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA03-12",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "7b79b867a134ff5790366babbbda50f35d58aaa261f89118dcf3b45126f929ae",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.041444+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-collier-orange-river-line"
+            }
+          ]
+        },
+        "row": 9,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Collier - Orange River",
+      "native_id": "TA03-12",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta05-13",
+      "center": null,
+      "counties": [
+        "12035",
+        "12109"
+      ],
+      "description": "The transmission line connects the existing St. Johns Substation near St. Augustine in St. Johns County to the Pringle Substation in the City of Palm Coast in Flagler County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 05-13",
+            "Counties Crossed": "St. Johns and Flagler",
+            "Date Certified": "04/27/2006",
+            "Description": "The transmission line connects the existing St. Johns Substation near St. Augustine in St. Johns County to the Pringle Substation in the City of Palm Coast in Flagler County.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "26.1 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA05-13",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta05_13_A.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "St. Johns - Pellicer - Pringle",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA05-13",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "e83e291f25aaa0b1b45f66d2f7cbbc2e7bf681b3a5236ae7c66e6ac1858cf527",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.050573+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line"
+            }
+          ]
+        },
+        "row": 10,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "St. Johns - Pellicer - Pringle",
+      "native_id": "TA05-13",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta07-14",
+      "center": null,
+      "counties": [
+        "12081",
+        "12115"
+      ],
+      "description": "The transmission line connects the Manatee Energy Center switchyard to the Bobwhite Substation located east of Interstate 75 in Sarasota County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 06-14",
+            "Counties Crossed": "Sarasota and Manatee",
+            "Date Certified": "11/06/2008",
+            "Description": "The transmission line connects the Manatee Energy Center switchyard to the Bobwhite Substation located east of Interstate 75 in Sarasota County.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "25.5 Miles",
+            "Voltage": "230 kV"
+          },
+          "identity_aliases": [
+            "TA07-14",
+            "TA06-14"
+          ],
+          "identity_resolution": "Primary Conditions of Certification identifies TA07-14; retain TA06-14 as conflicting detail/GIS/register observation.",
+          "index": {
+            "certification_raw": "TA07-14",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_14_2008.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Bobwhite - Manatee",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA07-14",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "2e8249d5f714a27082b8839e9127e2e1b8fd244ba272917fc9e2eea2e66f9fd3",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:25.460834+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "34067afbe16f101bc0d3ff5d42960c69ee448b3cd5c4367ac0de8e5c21de6793",
+              "facts": "Bobwhite-Manatee; TA07-14; certification dated 2008-11-06. Conflicting TA06-14 remains an alias.",
+              "locator": "PDF pages 1 and 4 (printed page 1 footer)",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:31:01.588435+00:00",
+              "source_date": "2008-11-06",
+              "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_14_2008.pdf"
+            }
+          ]
+        },
+        "row": 11,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Bobwhite - Manatee",
+      "native_id": "TA07-14",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta07-15",
+      "center": null,
+      "counties": [
+        "12057",
+        "12105"
+      ],
+      "description": "This transmission line connects the Davis Substation located in Temple Terrace to the intermediate Wheeler Substation located along Wheeler Road northeast of Brandon and ends at the Willow Oak Substation west of Mulberry.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 07-15",
+            "Counties Crossed": "Hillsborough and Polk",
+            "Date Certified": "08/07/2008",
+            "Description": "This transmission line connects the Davis Substation located in Temple Terrace to the intermediate Wheeler Substation located along Wheeler Road northeast of Brandon and ends at the Willow Oak Substation west of Mulberry.",
+            "Licensee": "Tampa Electric Company",
+            "Line Length": "30 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA07-15",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_15_2009_A.pdf"
+            ],
+            "licensee_raw": "Tampa Electric Company",
+            "name": "Willow Oak - Wheeler - Davis",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA07-15",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "8a804e957dbe5a185a455e54a3c22d8f19f5d983768842f5d31b8f1a9d4ab3d4",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.746003+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line"
+            }
+          ]
+        },
+        "row": 12,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Willow Oak - Wheeler - Davis",
+      "native_id": "TA07-15",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta07-16",
+      "center": null,
+      "counties": [
+        "12095",
+        "12097",
+        "12105"
+      ],
+      "description": "This transmission line begins at Tampa Electric Company’s existing Lake Agnes Substation in Polk County to Duke Energy Florida's existing GIfford Substation in Orange County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 07-16",
+            "Counties Crossed": "Polk, Osceola and Orange",
+            "Date Certified": "02/18/2009",
+            "Description": "This transmission line begins at Tampa Electric Company’s existing Lake Agnes Substation in Polk County to Duke Energy Florida's existing GIfford Substation in Orange County.",
+            "Licensee": "Duke Energy Florida, LLC and Tampa Electric Company",
+            "Line Length": "27.5 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA07-16",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_16_2012_A.pdf"
+            ],
+            "licensee_raw": "Progress Energy Florida (now Duke Energy Florida, LLC) and Tampa Electric Company",
+            "name": "Lake Agnes - Gifford",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA07-16",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "3b6644336997e23d96815d80f3be786c65b7693cb1ff05cd351cba03cc6a3332",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:25.253727+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+            }
+          ]
+        },
+        "row": 13,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Lake Agnes - Gifford",
+      "native_id": "TA07-16",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta16-17",
+      "center": null,
+      "counties": [
+        "12003",
+        "12023",
+        "12031",
+        "12089"
+      ],
+      "description": "The line begins at the existing Duval Substation in Duval County and terminates at the Raven Substation in Columbia County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 16-17",
+            "Counties Crossed": "Duval, Nassau, Baker and Columbia",
+            "Date Certified": "06/29/2016",
+            "Description": "The line begins at the existing Duval Substation in Duval County and terminates at the Raven Substation in Columbia County.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "39 Miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA16-17",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/TA16_17_2016_scrivenor_error_2021_9_17.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Duval - Raven",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-raven-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA16-17",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "abd249bdbc370bb8dc80f00043ee720e1d5fa8bf47cbae7072400e1eb12dd3eb",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:24.667501+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-raven-line"
+            }
+          ]
+        },
+        "row": 14,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Duval - Raven",
+      "native_id": "TA16-17",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta21-18",
+      "center": null,
+      "counties": [
+        "12095",
+        "12097"
+      ],
+      "description": "The line begins at the existing Magnolia North substation in Osceola County and terminates at the St. Cloud East substation in Orange County",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA 21-18",
+            "Counties Crossed": "Osceola and Orange",
+            "Date Certified": "12/13/2021",
+            "Description": "The line begins at the existing Magnolia North substation in Osceola County and terminates at the St. Cloud East substation in Orange County",
+            "Licensee": "Orlando Utilities Commission",
+            "Line Length": "21 miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA21-18",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta21_18.pdf"
+            ],
+            "licensee_raw": "Orlando Utilities Commission",
+            "name": "St. Cloud - Magnolia",
+            "project_urls": [
+              "https://floridadep.gov/air/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA21-18",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+              "artifact_sha256": "caeb2e5a52296c2f15a6f1c11f18a876d6486bf2ed0de17df34713d4c9423add",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:27:24.612462+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line"
+            }
+          ]
+        },
+        "row": 15,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "St. Cloud - Magnolia",
+      "native_id": "TA21-18",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta22-19",
+      "center": null,
+      "counties": [
+        "12027",
+        "12043",
+        "12055",
+        "12093"
+      ],
+      "description": "The line begins at the Sweatt Substation in Okeechobee County and ends at the Whidden substation located in DeSoto County.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA22-19",
+            "Counties Crossed": "DeSoto, Glades, Highlands and Okeechobee",
+            "Date Certified": "9/22/2022",
+            "Description": "The line begins at the Sweatt Substation in Okeechobee County and ends at the Whidden substation located in DeSoto County.",
+            "Licensee": "Florida Power & Light Company",
+            "Line Length": "80 miles",
+            "Voltage": "230"
+          },
+          "index": {
+            "certification_raw": "TA22-19",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta22_19.pdf"
+            ],
+            "licensee_raw": "Florida Power & Light Company",
+            "name": "Sweatt-Whidden",
+            "project_urls": [
+              "https://floridadep.gov/water/siting-coordination-office/content/fpl-sweatt-whidden-230kv-line"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA22-19",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "6f7a214b74f49dedd36c203dba4147b194b1cdabad66a3b5e0bad271a86d42e6",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "General Information table",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.556665+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/fpl-sweatt-whidden-230kv-line"
+            }
+          ],
+          "voltage_note": "Raw Voltage cell lacks units; page title says 230kV. No unit inferred from the number alone."
+        },
+        "row": 16,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "Sweatt-Whidden",
+      "native_id": "TA22-19",
+      "other_owners": [],
+      "owner": null,
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    },
+    {
+      "_id": "southeast:fl-dep:ta25-20",
+      "center": null,
+      "counties": [
+        "12069",
+        "12127"
+      ],
+      "description": "Duke Energy Florida (DEF) Deland West-Dona Vista 230kV Transmission Line Project (TA25-20): For the construction, operation and maintenance of a new 230 kilovolt (kV) line. The proposed line is approximately 26.26 miles beginning at the DeLand West Substation in Volusia County and ending at the Dona Vista Substation in Lake County. The transmission line corridor crosses Volusia County, Lake County, the City of Umatilla and the City of Eustis. This application is being processed under the Florida Electrical Transmission Line Siting Act.",
+      "evidence": {
+        "page": null,
+        "raw": {
+          "county_reference": {
+            "path": "data/national/geography.json",
+            "sha256": "4d8918bcb725e28c214550f58830f8d283b6dd740fe137e2bf5e4e589ec95ddf"
+          },
+          "detail": {
+            "Certification #": "TA25-20",
+            "Counties Crossed": "Volusia and Lake",
+            "Date Certified": null,
+            "Description": "Duke Energy Florida (DEF) Deland West-Dona Vista 230kV Transmission Line Project (TA25-20): For the construction, operation and maintenance of a new 230 kilovolt (kV) line. The proposed line is approximately 26.26 miles beginning at the DeLand West Substation in Volusia County and ending at the Dona Vista Substation in Lake County. The transmission line corridor crosses Volusia County, Lake County, the City of Umatilla and the City of Eustis. This application is being processed under the Florida Electrical Transmission Line Siting Act.",
+            "Licensee": null,
+            "Line Length": "approximately 26.26 miles",
+            "Voltage": "230 kV"
+          },
+          "index": {
+            "certification_raw": "TA25-20",
+            "document_urls": [
+              "https://publicfiles.dep.state.fl.us/Siting/Outgoing/DEF_DeLandWest-DonaVista_TA25-20/20260120_DEF_DeLand-DonaVista_TA25-20_FinalOrderConditions.pdf"
+            ],
+            "licensee_raw": "Duke Energy Florida",
+            "name": "DeLand West - Dona Vista",
+            "project_urls": [
+              "https://floridadep.gov/water/siting-coordination-office/content/def-deland-west-dona-vista-230kv-transmission-line-project"
+            ]
+          },
+          "normalization": "Counties are the detail page's reported counties, not an exhaustive independently mapped route. Licensee is not silently treated as equipment owner. Current status and service date remain unknown.",
+          "owner_observation": {
+            "as_of_document_date": "2026-01-20",
+            "current_ownership_independently_confirmed": false,
+            "owner": "Duke Energy Florida",
+            "role": "owner/operator and licensee"
+          },
+          "source_evidence": [
+            {
+              "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+              "artifact_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+              "facts": "Transmission certification index row: name, native ID and licensee.",
+              "locator": "TA25-20",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+            },
+            {
+              "access_review": "Public official project page; bounded project facts. Independent access review in florida-details-002-review.md.",
+              "artifact_sha256": "50ab4237d0d43f143164c024d0e44a8079ecfde4dd7cb3aa7bbc1683a0528c32",
+              "facts": "Project description, reported counties and certification observations; current service status not established.",
+              "locator": "Opening project paragraph",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:14:39.501557+00:00",
+              "source_date": null,
+              "url": "https://floridadep.gov/water/siting-coordination-office/content/def-deland-west-dona-vista-230kv-transmission-line-project"
+            },
+            {
+              "access_review": "Public official source; bounded facts independently inspected in Hopkins/Bobwhite/primary003 review reports. No inferred survey accuracy or current operation.",
+              "artifact_sha256": "4fba976b2cdcf0936dcce1bfef1eea828ea3555a2424a7fc3bcdd6b03c4de8c7",
+              "facts": "Conditions dated 2026-01-20; DEF identified as owner/operator and licensee as of this document. No construction completion established.",
+              "locator": "PDF page 1 cover and page 6 (printed 1), Section A.I",
+              "publisher": "Florida Department of Environmental Protection",
+              "retrieved_at": "2026-09-27T02:31:01.077027+00:00",
+              "source_date": "2026-01-20",
+              "url": "https://publicfiles.dep.state.fl.us/Siting/Outgoing/DEF_DeLandWest-DonaVista_TA25-20/20260120_DEF_DeLand-DonaVista_TA25-20_FinalOrderConditions.pdf"
+            }
+          ]
+        },
+        "row": 17,
+        "sheet": null,
+        "source_sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216"
+      },
+      "geography_basis": "Florida DEP certification scope and detail-reported counties; county list may be incomplete. Cross-border extent is not fully assessed; membership does not mean the whole line is in Florida.",
+      "in_service": {
+        "precision": "unknown",
+        "raw": null,
+        "value": null
+      },
+      "location_review": "unlocated",
+      "name": "DeLand West - Dona Vista",
+      "native_id": "TA25-20",
+      "other_owners": [],
+      "owner": "Duke Energy Florida",
+      "planning_region": null,
+      "source_id": "southeast:fl-dep:conditions-index",
+      "states": [
+        "12"
+      ],
+      "status": null,
+      "status_group": "unknown"
+    }
+  ],
+  "release_id": "f39-florida-dep-17-v1",
+  "schema_version": "southeast-release-v1",
+  "sources": [
+    {
+      "_id": "southeast:fl-dep:conditions-index",
+      "access_policy": "public_document",
+      "authority": "state_government",
+      "download_url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification",
+      "import_status": "imported",
+      "landing_url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification",
+      "notes": [
+        "Complete 17-row current transmission index only. Not all Florida transmission construction.",
+        "Historical relinquished Lake Tarpon-Kathleen and other providers remain outside this batch.",
+        "Certification history does not establish current construction or operation."
+      ],
+      "planning_region": null,
+      "project_count": 17,
+      "public_status": "verified_public",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+      "role": "project_plan",
+      "sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+      "states": [
+        "12"
+      ],
+      "title": "Florida DEP current transmission Conditions of Certification index",
+      "vintage": null
+    }
+  ]
+}
