@@ -49,3 +49,17 @@ After C23 and C27, invoke F38’s `expansion.mid_atlantic.apply_release` only wh
 preserve all producer summaries and evidence, recompute national and per-source coverage,
 and validate before staging. Missing releases preserve prior behavior; invalid releases
 prevent activation. Original snapshot generation and the sole load Action writer are unchanged.
+
+## Texas release (C29 / C32)
+
+After the existing overlays, use `texas.statewide_publish.apply_release` when the fixed
+`data/texas/statewide/releases/active.json` exists; otherwise use `texas.publish.apply_release` for the
+unchanged eight-project `data/texas/releases/active.json`. Select one Texas slot, never both. An invalid
+statewide release fails before staging; it cannot silently fall back to C29. Removing the statewide activation
+file restores the eight-project fallback on the next load. Missing both preserves the original snapshot.
+
+Recompute aggregate and per-source coverage and validate the final snapshot before staging. Preserve the
+2,044 statewide identities, raw source rows, candidate labels, OSM attribution and county display anchors.
+County-only records retain null exact centers and null indexed `geo`; their separate anchors are display
+references. Candidate and approximate references generate no national overlap pairs. The existing load
+Action remains the sole writer; verify its receipt and the active read-only dataset separately from UI rendering.
