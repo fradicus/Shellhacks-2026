@@ -1,0 +1,55 @@
+{
+  "source_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+  "crs": "EPSG:4326",
+  "facilities": [
+    {
+      "name": "RIVERY",
+      "owner": "LCRA",
+      "global_id": "{2BC75451-1100-4712-9006-66C176DDE112}",
+      "lat": 30.648550166321616,
+      "lon": -97.68963465119309
+    },
+    {
+      "name": "GABRIEL",
+      "owner": "LCRA",
+      "global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744
+    },
+    {
+      "name": "CHIEF BRADY",
+      "owner": "LCRA",
+      "global_id": "{87DF5B20-2FCB-4F22-908D-7B0D863029ED}",
+      "lat": 30.59173745625645,
+      "lon": -97.69552231778087
+    },
+    {
+      "name": "GEORGETOWN SOUTH",
+      "owner": "COG",
+      "global_id": "{8D80EC4F-268B-45A6-9719-E686B78C32FF}",
+      "lat": 30.588441508737983,
+      "lon": -97.68311206819418
+    },
+    {
+      "name": "GEORGETOWN EAST",
+      "owner": "COG",
+      "global_id": "{C5BFC797-3CAE-40EE-879A-F9AA71230F14}",
+      "lat": 30.62354558857126,
+      "lon": -97.64475265163803
+    },
+    {
+      "name": "GLASSCOCK",
+      "owner": "LCRA",
+      "global_id": "{CCC3468C-4EE9-49F9-B691-FE1C9BA5F569}",
+      "lat": 30.739601811022286,
+      "lon": -97.69429338355134
+    },
+    {
+      "name": "GEORGETOWN",
+      "owner": "LCRA",
+      "global_id": "{FAF1CFEC-49C1-4C76-B60E-9BD9229B0252}",
+      "lat": 30.632378491182916,
+      "lon": -97.68723828041044
+    }
+  ]
+}

@@ -83,6 +83,7 @@ def extract_more(workbook: Path, gis: Path) -> tuple[dict[str, list[dict]], dict
                     "lat": sum(e["lat"] for e in endpoints) / len(endpoints),
                     "lon": sum(e["lon"] for e in endpoints) / len(endpoints),
                     "endpoints": endpoints, "gis_url": GIS_URL, "gis_sha256": gis_hash,
+                    "gis_crs": "EPSG:4326",
                     "owner_relation_url": OWNER_RELATION if number == 1140 else None,
                     "independent_review": False,
                 }
@@ -163,6 +164,18 @@ def main() -> None:
     for sheet_name, filename in ((FUTURE, "future-observations.json"), (COMPLETED, "completed-observations.json")):
         (folder / filename).write_text(json.dumps(cohorts[sheet_name], indent=2) + "\n")
     (folder / "more-summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    features = json.loads(gis.read_text())["features"]
+    ledger = {
+        "source_sha256": summary["gis_sha256"], "crs": "EPSG:4326",
+        "facilities": sorted(({
+            "name": feature["properties"]["Name"],
+            "owner": feature["properties"].get("OWNER"),
+            "global_id": feature["properties"]["GlobalID"],
+            "lat": feature["geometry"]["coordinates"][1],
+            "lon": feature["geometry"]["coordinates"][0],
+        } for feature in features), key=lambda item: item["global_id"]),
+    }
+    (folder / "facility-ledger.json").write_text(json.dumps(ledger, indent=2) + "\n")
     from texas.project import main as stage_projects
 
     stage_projects()
