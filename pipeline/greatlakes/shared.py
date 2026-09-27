@@ -22,7 +22,7 @@ OVERPASS_URLS = ["https://overpass-api.de/api/interpreter", "https://maps.mail.r
 MAX_BYTES = 16 * 1024 * 1024
 OUT = REPO_ROOT / "data" / "greatlakes"
 # Fixed publication order (C26): each state's projects are appended to data/greatlakes/projects.json.
-STATES = ["mn", "wi", "miso"]
+STATES = ["mn", "wi", "miso", "ny"]
 # Operator-name fragments per utility, matched against the OSM operator tag.
 OPERATOR_KEYS = {
     "XEL": ["XCEL", "NORTHERN STATES"], "XCEL": ["XCEL", "NORTHERN STATES"], "GRE": ["GREAT RIVER"],
@@ -103,7 +103,12 @@ def osm_extract(raw: dict, state: str) -> list[dict]:
 def locate(name: str, description: str | None, facilities: list[dict], keys: list[str], kv: set[int],
            dataset: str) -> tuple[dict | None, dict]:
     """C26 candidate center (or None) and the location_candidate evidence block."""
-    named = facilities_named(name, description)
+    return locate_named(facilities_named(name, description), facilities, keys, kv, dataset)
+
+
+def locate_named(named: dict, facilities: list[dict], keys: list[str], kv: set[int], dataset: str
+                 ) -> tuple[dict | None, dict]:
+    """Candidate from facility names already stated by the source (e.g. a table's From/To terminal columns)."""
     matches = [match_facility(n, facilities, keys, kv) for n in named["names"]]
     center = candidate_center(named["kind"], matches) if named["kind"] else None
     fields = ("id", "name", "operator", "voltage", "state", "lat", "lon")

@@ -119,3 +119,16 @@ def test_miso_names_sites_and_operator_keys():
     assert operator_keys("METC") == ["ITC", "METC", "MICHIGAN ELECTRIC TRANS"]
     assert operator_keys("NORTHERN STATES POWER COMPANY") == ["XCEL", "NORTHERN STATES"]
     assert operator_keys("Unknown Utility") == []
+
+
+def test_nyiso_columns_terminals_and_owners():
+    from greatlakes.nyiso import column, operator_keys, terminal
+
+    assert [column(x) for x in (45, 91, 139, 216, 292, 332, 349, 372, 400, 549, 730)] == [
+        "queue", "owner", "from", "to", "length", "prior", "year", "kv_operating", "kv_design", "description",
+        "class_type"]
+    assert terminal("Dover (New Station)", in_service=False) is None
+    assert terminal("Dover (New Station)", in_service=True) == "Dover"
+    assert terminal("CT State Line", in_service=False) is None
+    assert terminal("TBD", in_service=False) is None
+    assert operator_keys("NYPA/NGRID") == ["NYPA", "NEW YORK POWER AUTHORITY", "NATIONAL GRID", "NIAGARA MOHAWK"]

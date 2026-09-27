@@ -37,6 +37,15 @@
       "url": "https://overpass-api.de/api/interpreter"
     },
     {
+      "bytes": 709215,
+      "named_substations": 1275,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-NY\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T02:55:35Z",
+      "sha256": "802fde5029d4cad52c3edc8a6da077afc4e154ef79cdc52a914b56b9ce71e5ce",
+      "state": "NY",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
       "bytes": 381280,
       "named_substations": 685,
       "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
