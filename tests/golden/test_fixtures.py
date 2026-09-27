@@ -3,12 +3,14 @@
 import pytest
 
 from common import REPO_ROOT, load_json, norm_name, validate
-from matches.core import overlaps, priority_sort
+from matches.core import DRIVE_RULE_VERSION, overlaps, priority_sort, route_candidates
+from matches.routes import drives_for, load_routes
 
 FIX = REPO_ROOT / "data/fixtures"
 SCHEMA_OF = {
     "sources": "source", "projects": "project", "locations": "location", "matches": "match", "version_changes": "version_change",
     "briefs": "brief", "extractions": "extraction", "reviews": "review", "runs": "run", "coverage": "coverage",
+    "routes": "route", "golden/routes": "route",
 }
 
 
@@ -23,9 +25,12 @@ def test_fixture_validates(name):
 def test_match_fixture_is_core_output():
     projects = load_json(FIX / "projects.json")
     stored = load_json(FIX / "matches.json")
-    fresh = priority_sort(overlaps(projects, stored[0]["analysis_date"]))
-    assert [m["_id"] for m in stored] == [m["_id"] for m in fresh]
-    assert all(m["view"] == "historical" for m in stored)
+    drives, states = drives_for(route_candidates(projects), load_routes(FIX / "routes.json"))
+    assert set(states.values()) <= {"ok", "no_route"}, f"stale or missing fixture routes: {states}"
+    fresh = priority_sort(overlaps(projects, stored[0]["analysis_date"], drives))
+    assert [(m["_id"], m["drive_mi"], m["rank"]) for m in stored] == [(m["_id"], m["drive_mi"], m["rank"]) for m in fresh]
+    assert all(m["view"] == "historical" and m["rule_version"] == DRIVE_RULE_VERSION for m in stored)
+    assert all(m["route"]["polyline"] for m in stored)
 
 
 def test_version_change_fixture():
@@ -34,10 +39,13 @@ def test_version_change_fixture():
 
 
 def test_schema_rejects_bad_match():
-    bad = {"_id": "x", "a": "DESC:A", "b": "GPC:B", "distance_mi": 25.0, "time_gap_days": None, "band": 1,
+    bad = {"_id": "x", "a": "DESC:A", "b": "GPC:B", "distance_mi": 25.01, "time_gap_days": None, "band": 1,
            "rule_version": "r", "rank_version": "r", "analysis_date": "2026-09-26", "view": "future"}
     with pytest.raises(ValueError):
         validate(bad, "match")
+    with pytest.raises(ValueError):
+        validate(bad | {"distance_mi": 20.0, "drive_mi": 25.01}, "match")
+    validate(bad | {"distance_mi": 25.0, "drive_mi": 25.0}, "match")
 
 
 def test_location_needs_coords_unless_rejected():

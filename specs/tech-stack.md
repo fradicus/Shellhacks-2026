@@ -103,6 +103,13 @@ Production without Atlas shows an explicit "database unavailable" state. It neve
 ## C11 national extension
 The same Python/Next.js/MapLibre/MongoDB stack serves `/explore`. Additive national schemas in `schemas/national-*.schema.json` and F30 snapshots under `data/national/` keep legacy project enums and data unchanged. Use separate dataset-scoped `national_sources`, `national_projects`, optional `national_utilities` and `national_service_territory`, plus `national_runs` and `meta.national_active`; the existing load Action remains the sole Atlas writer. `python -m national.load` validates only without RW credentials. Public reference geography is independent of project database availability. `NATIONAL_DATA_MODE=snapshot` explicitly enables the committed regional snapshot in local/CI environments, is rejected on production Vercel, and is never a silent database fallback. F32 remains a separate prototype; the existing pipeline-only Gemini rule still applies to the delivered app.
 
+## C46 drive routes
+Overlaps use stored OSRM driving routes ([C46](decisions/C46-drive-route-overlaps.md)); standard library HTTP only,
+no new package or secret. `OSRM_URL` (optional, default the public demo) is read only by the route-fetch commands a
+person runs; neither the web app nor the load Action calls a router. Committed routes: `data/fixtures/routes.json`,
+`data/fixtures/golden/routes.json`, `data/routes/routes.json` (F10) and, after F48's drive follow-up, `data/national_pairs/routes.json`, all schema
+`route`.
+
 ## C15 field operations extension
 F33/F34/F35 maintain domain-owned versioned JSON schemas and Zod contracts inside their exclusive prefixes for reference artifacts, provider responses and actual job outcomes. Their public API contracts are frozen by `specs/decisions/C15-verified-operations.md`; cross-feature changes require a contract review. No existing national or legacy schema is renamed. F36 consumes these APIs from a separate `/operations` page. Approved public reference artifacts may be committed; raw private job history, credentials, provider tokens, Google route responses and downloaded caches must not be committed. No new database writer is introduced. The optional pinned Python `environment` extra installs Rasterio for bounded public AEF COG sampling; normal web/CI use does not require live raster reads. Tests use explicitly named fixtures and never return them as production data. Live APIs are requested only from server-side adapters with fixed hosts, bounded requests, freshness/coverage checks and clear failure states. Existing live-service credential deferral remains in effect for this worker.
 

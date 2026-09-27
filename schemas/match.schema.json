@@ -23,9 +23,34 @@
       ]
     },
     "distance_mi": {
-      "exclusiveMaximum": 25,
+      "description": "Unrounded center-to-center great-circle miles; under the drive rule only the routing pre-filter",
+      "maximum": 25,
       "minimum": 0,
       "type": "number"
+    },
+    "drive_mi": {
+      "description": "Unrounded driving miles from the stored route; the drive-rule overlap test (<= 25)",
+      "maximum": 25,
+      "minimum": 0,
+      "type": "number"
+    },
+    "route": {
+      "additionalProperties": false,
+      "description": "The stored route the drive rule used (schemas/route.schema.json fields, nothing recomputed)",
+      "properties": {
+        "provider": {"type": "string"},
+        "travel_mode": {"const": "DRIVE"},
+        "routing_preference": {"type": ["string", "null"]},
+        "data_source": {"type": ["string", "null"]},
+        "computed_at": {"type": "string"},
+        "duration_s": {"minimum": 0, "type": ["integer", "null"]},
+        "polyline": {"type": ["string", "null"]},
+        "start": {"$ref": "https://gridbridge.local/schemas/route.schema.json#/$defs/nullable_point"},
+        "end": {"$ref": "https://gridbridge.local/schemas/route.schema.json#/$defs/nullable_point"},
+        "snap_m": {"$ref": "https://gridbridge.local/schemas/route.schema.json#/properties/snap_m"}
+      },
+      "required": ["provider", "travel_mode", "computed_at", "polyline"],
+      "type": "object"
     },
     "rank": {
       "minimum": 1,

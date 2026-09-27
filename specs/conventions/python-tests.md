@@ -38,11 +38,17 @@ distilled from the existing suite (`tests/pipeline/test_f01_desc.py`, `test_f06_
 
 - Project center = arithmetic mean of the two located endpoints; one located endpoint -> that point;
   none -> no center.
-- Overlap = different utilities AND both centers known AND haversine (R = 3958.8 mi) < 25 miles.
-  Exactly 25 is **not** an overlap. Classify on unrounded values; round to 2 dp for display only.
+- Overlap (C46 drive rule) = different known utilities AND both centers known AND a stored driving route
+  of **at most** 25 miles (exactly 25 is an overlap). Only pairs within 25 haversine miles (R = 3958.8 mi,
+  inclusive) are routed; an unknown route is never an overlap. Classify on unrounded values; round to 2 dp
+  for display only. Tests never call a router: use stored route fixtures or synthetic `drives` mappings.
+- The straight-line example rule (`overlaps(projects, date)` with no drives: haversine < 25, exactly 25 out)
+  stays for the sponsor workbook check only.
 - Time gap = exact-date difference in days; missing/imprecise dates -> `None`, never imputed.
-- Priority `nearby-band-v1`: band 0 (< 10 mi) before band 1 (10-25 mi), then exact gap ascending
-  (unknown last), then unrounded distance, then canonical pair id.
+- Priority `nearby-band-drive-v1`: band 0 (< 10 drive mi) before band 1 (10-25), then exact gap ascending
+  (unknown last), then unrounded drive distance, then straight-line distance, then canonical pair id.
+- Never assert a full-corpus overlap count; corpora grow. Assert the rule, and compare stored output
+  against a fresh run of the canonical matcher.
 
 ## What a generated test must do
 

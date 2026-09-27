@@ -24,7 +24,8 @@ Added by the human after run 1's freeze (Plan E VIS-01..04, issue 23's 3D part o
    is picked. Unknown dates stay on the ground and are listed. Unlocated projects are counted, not drawn.
 4. A translucent sheet at the analysis date ("today", 10-mile grid) and a year ruler.
 5. Selecting a pair turns the camera side-on and draws a drafting dimension between the two beads, labeled with the
-   stored `time_gap_days`; the ground link is labeled with the stored `distance_mi` (2 dp). Null gap: no bracket.
+   stored `time_gap_days`; the ground link is labeled with the stored `distance_mi` (2 dp), or under C46 with the
+   stored `drive_mi` along the stored route (step 22). Null gap: no bracket.
 6. 2D toggle flattens the axis; facts, IDs and list are unchanged. The pair list (keyboard) carries every fact shown.
 
 ## Polish pass (issue #119)
@@ -142,6 +143,30 @@ meaning one thing only: the filed in-service date of a project you are looking a
   format round trip, rejection of malformed values, haversine against the matcher, pin boundary, legacy states).
 - Screenshots at 1440 and 390: national, a region, a state, a grid plan, a pin, a pair selected under a scope.
 - Repo-wide checks.
+
+## Stored road routes (C46)
+
+The user asked that the Overlaps page keep its UI exactly and replace the straight line between two related
+centers with the actual fastest driving route, with the distance to match. Decision:
+[C46](../../decisions/C46-drive-route-overlaps.md).
+
+22. **Route, not a chord.** When a pair carries a stored `route.polyline`, every place that draws the ground link
+    between its two centers draws center A → the route's snapped start → the decoded route → its snapped end →
+    center B instead, as the same line style. The camera fit includes the path. No route: the straight link, as before.
+23. **Road miles.** A pair with `drive_mi` is labeled with the stored drive to 2 dp and reads "mi by road"
+    wherever the straight-line distance was shown as the pair's distance; the straight-line `distance_mi` stays in the
+    pair's detail facts. Pairs without `drive_mi` keep their stored straight-line label.
+24. **National pairs (F48).** When F48's national pairs carry `drive_mi` and a stored `route` (the C46 follow-up),
+    they are drawn and labeled per steps 22-23; until then they keep C48's straight-line provisional wording.
+
+### Requirements (routes)
+- Decode only; never request, recompute or simplify a route in the browser. Route data credit: "Routes © OpenStreetMap
+  contributors (ODbL), OSRM", shown where the route facts are shown.
+- No other visual change: same colors, widths, rings, labels' positions and controls.
+
+### Validation (routes)
+- Polyline decoder unit test (known vector); a selected pair's drawn path starts and ends at the two stored centers.
+- Screenshots at 1440: a selected filing pair with its route; repo-wide checks.
 
 ### Deferred
 - A cursor-following focus lens: it does the same job as the scope, reads worse on a trackpad, and would need a

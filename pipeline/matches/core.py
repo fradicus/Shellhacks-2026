@@ -5,9 +5,15 @@ A project dict, as consumed here:
      "center": {"lat": float, "lon": float, "basis": "two" | "one"} | None,
      "in_service": {"raw": str, "date": "YYYY-MM-DD" | None, "precision": "day" | "month" | "year" | "unknown"},
      "location_confidence": "high" | "medium" | "low" | None}   # weakest endpoint used for the center
+
+Two rules (C46). The product rule is the DRIVE rule: a comparable pair overlaps when its stored driving route between
+the two centers is <= 25 mi. A road is never shorter than the great-circle line, so only pairs within 25 straight-line
+mi (inclusive) are candidates worth routing. Pass `drives` (match _id -> unrounded drive miles, None = unknown) to
+`overlaps` to apply it; an unknown drive is never an overlap. Without `drives`, `overlaps` applies the sponsor's
+straight-line example rule (< 25 mi), kept for the workbook check and for records produced before routes existed.
 """
 
-from collections.abc import Iterable
+from collections.abc import Container, Iterable, Mapping
 from datetime import date
 from math import asin, cos, radians, sin, sqrt
 from typing import Any
@@ -19,6 +25,8 @@ OVERLAP_MI = 25.0
 NEAR_BAND_MI = 10.0
 RULE_VERSION = "overlap-25mi-v1"
 RANK_VERSION = "nearby-band-v1"
+DRIVE_RULE_VERSION = "overlap-25mi-drive-v1"
+DRIVE_RANK_VERSION = "nearby-band-drive-v1"
 KNOWN_UTILITIES = ("DESC", "GPC")
 
 
@@ -57,15 +65,56 @@ def time_gap_days(a: dict[str, Any] | None, b: dict[str, Any] | None) -> int | N
     return None if da is None or db is None else abs((da - db).days)
 
 
-def is_overlap(pa: dict[str, Any], pb: dict[str, Any]) -> tuple[bool, float | None]:
-    """(overlap?, unrounded distance). Different known utilities AND both centers AND distance < 25 mi (25.0 is out)."""
-    if pa["utility"] not in KNOWN_UTILITIES or pb["utility"] not in KNOWN_UTILITIES or pa["utility"] == pb["utility"]:
-        return False, None
+def comparable(pa: dict[str, Any], pb: dict[str, Any], known: Container[str] | None = KNOWN_UTILITIES) -> bool:
+    """Different utilities, both known. `known=None` accepts any named utility (the national corpus), never "unknown"."""
+    ua, ub = pa.get("utility"), pb.get("utility")
+    if known is None:
+        named = all(isinstance(u, str) and u and u != "unknown" for u in (ua, ub))
+        return named and ua != ub
+    return ua in known and ub in known and ua != ub
+
+
+def straight_line_mi(
+    pa: dict[str, Any], pb: dict[str, Any], known: Container[str] | None = KNOWN_UTILITIES
+) -> float | None:
+    """Unrounded center-to-center great-circle miles for a comparable pair with both centers, else None."""
+    if not comparable(pa, pb, known):
+        return None
     ca, cb = pa.get("center"), pb.get("center")
     if not ca or not cb:
-        return False, None
-    d = haversine_mi(ca["lat"], ca["lon"], cb["lat"], cb["lon"])
-    return d < OVERLAP_MI, d
+        return None
+    return haversine_mi(ca["lat"], ca["lon"], cb["lat"], cb["lon"])
+
+
+def is_overlap(pa: dict[str, Any], pb: dict[str, Any]) -> tuple[bool, float | None]:
+    """Straight-line example rule: (overlap?, unrounded distance). Comparable pair AND distance < 25 mi (25.0 is out)."""
+    d = straight_line_mi(pa, pb)
+    return (False, None) if d is None else (d < OVERLAP_MI, d)
+
+
+def is_drive_overlap(
+    pa: dict[str, Any], pb: dict[str, Any], drive_mi: float | None, known: Container[str] | None = KNOWN_UTILITIES
+) -> tuple[bool, float | None]:
+    """Drive rule: (overlap?, unrounded straight-line distance). Comparable pair within the straight-line pre-filter
+    AND a known drive <= 25 mi (25.0 is in). An unknown drive (no route, never fetched, stale) is never an overlap."""
+    d = straight_line_mi(pa, pb, known)
+    if d is None or d > OVERLAP_MI or drive_mi is None:
+        return False, d
+    return drive_mi <= OVERLAP_MI, d
+
+
+def route_candidates(
+    projects: Iterable[dict[str, Any]], known: Container[str] | None = KNOWN_UTILITIES
+) -> list[tuple[dict[str, Any], dict[str, Any], float]]:
+    """(a, b, straight-line mi) for every comparable pair within 25 straight-line mi (inclusive), a/b by project_key."""
+    items = list(projects)
+    out = []
+    for i, j in candidate_pairs(items, known):
+        d = straight_line_mi(items[i], items[j], known)
+        if d is not None and d <= OVERLAP_MI:
+            pa, pb = sorted((items[i], items[j]), key=lambda x: x["project_key"])
+            out.append((pa, pb, d))
+    return out
 
 
 def trusted_center(p: dict[str, Any]) -> bool:
@@ -91,15 +140,17 @@ def view(pa: dict[str, Any], pb: dict[str, Any], analysis_date: date) -> str:
 _LAT_WINDOW_RAD = OVERLAP_MI / EARTH_RADIUS_MI + 1e-9
 
 
-def candidate_pairs(projects: list[dict[str, Any]]) -> list[tuple[int, int]]:
-    """Index pairs (i < j, input order) that could overlap: both located, known and different utilities, latitudes within
-    25 mi. A superset of the overlapping pairs; `is_overlap` stays the only predicate."""
+def candidate_pairs(
+    projects: list[dict[str, Any]], known: Container[str] | None = KNOWN_UTILITIES
+) -> list[tuple[int, int]]:
+    """Index pairs (i < j, input order) that could overlap: both located, comparable utilities, latitudes within
+    25 mi. A superset of the overlapping pairs; the distance predicates stay the only test."""
     located = [
-        (radians(p["center"]["lat"]), i, p["utility"])
+        (radians(p["center"]["lat"]), i, p.get("utility"))
         for i, p in enumerate(projects)
-        if p.get("center") and p["utility"] in KNOWN_UTILITIES
+        if p.get("center") and (p.get("utility") in known if known is not None else True)
     ]
-    located.sort()
+    located.sort(key=lambda row: (row[0], row[1]))
     out: list[tuple[int, int]] = []
     lo = 0
     for hi, (lat, i, utility) in enumerate(located):
@@ -112,42 +163,61 @@ def candidate_pairs(projects: list[dict[str, Any]]) -> list[tuple[int, int]]:
     return out
 
 
-def overlaps(projects: Iterable[dict[str, Any]], analysis_date: date | str) -> list[dict[str, Any]]:
-    """Every overlapping cross-utility pair as a match dict (unsorted; see priority_sort). Distances stay unrounded.
-    Pairs come out in the same order as a scan of every combination of the input."""
+def overlaps(
+    projects: Iterable[dict[str, Any]],
+    analysis_date: date | str,
+    drives: Mapping[str, float | None] | None = None,
+    *,
+    known: Container[str] | None = KNOWN_UTILITIES,
+) -> list[dict[str, Any]]:
+    """Every overlapping pair as a match dict (unsorted; see priority_sort). Distances stay unrounded.
+    Pairs come out in the same order as a scan of every combination of the input.
+
+    With `drives` (match _id -> drive miles; None or absent = unknown) this is the drive rule and each match carries
+    `drive_mi`, its band taken from the drive. Without it, the straight-line example rule."""
     if isinstance(analysis_date, str):
         analysis_date = date.fromisoformat(analysis_date)
-    items = list(projects)
     out = []
-    for i, j in candidate_pairs(items):
-        hit, d = is_overlap(items[i], items[j])
-        if hit:
-            out.append(match_record(items[i], items[j], d, analysis_date))
+    for pa, pb, d in route_candidates(projects, known):
+        if drives is None:
+            if d < OVERLAP_MI:
+                out.append(match_record(pa, pb, d, analysis_date))
+            continue
+        drive = drives.get(match_id(pa["project_key"], pb["project_key"]))
+        if is_drive_overlap(pa, pb, drive, known)[0]:
+            out.append(match_record(pa, pb, d, analysis_date, drive=drive))
     return out
 
 
-def match_record(p: dict[str, Any], q: dict[str, Any], d: float, analysis_date: date) -> dict[str, Any]:
-    """The stored match for an overlapping pair at unrounded distance `d`."""
+def match_record(
+    p: dict[str, Any], q: dict[str, Any], d: float, analysis_date: date, *, drive: float | None = None
+) -> dict[str, Any]:
+    """The stored match for an overlapping pair at unrounded straight-line distance `d`; `drive` only under the drive
+    rule, which then sets the band and rule versions."""
     pa, pb = sorted((p, q), key=lambda x: x["project_key"])
+    if drive is None:
+        rule = {"band": 0 if d < NEAR_BAND_MI else 1, "rule_version": RULE_VERSION, "rank_version": RANK_VERSION}
+    else:
+        rule = {"drive_mi": drive, "band": 0 if drive < NEAR_BAND_MI else 1,
+                "rule_version": DRIVE_RULE_VERSION, "rank_version": DRIVE_RANK_VERSION}
     return {
         "_id": match_id(pa["project_key"], pb["project_key"]),
         "a": pa["project_key"],
         "b": pb["project_key"],
         "distance_mi": d,
         "time_gap_days": time_gap_days(pa.get("in_service"), pb.get("in_service")),
-        "band": 0 if d < NEAR_BAND_MI else 1,
-        "rule_version": RULE_VERSION,
-        "rank_version": RANK_VERSION,
+        **rule,
         "analysis_date": analysis_date.isoformat(),
         "view": view(pa, pb, analysis_date),
     }
 
-
 def priority_key(m: dict[str, Any]) -> tuple:
-    gap = m["time_gap_days"]
-    return (m["band"], gap is None, gap if gap is not None else 0, m["distance_mi"], m["_id"])
+    gap, drive = m["time_gap_days"], m.get("drive_mi")
+    return (m["band"], gap is None, gap if gap is not None else 0,
+            m["distance_mi"] if drive is None else drive, m["distance_mi"], m["_id"])
 
 
 def priority_sort(matches: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
-    """nearby-band-v1: band 0 before 1, exact gap ascending (unknown last), unrounded distance, pair id. Adds `rank`."""
+    """nearby-band-v1 / nearby-band-drive-v1: band 0 before 1, exact gap ascending (unknown last), unrounded drive
+    distance (straight-line when there is no drive), then straight-line distance, then pair id. Adds `rank`."""
     return [{**m, "rank": i} for i, m in enumerate(sorted(matches, key=priority_key), start=1)]
