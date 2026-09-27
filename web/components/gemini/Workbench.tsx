@@ -144,7 +144,7 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
             <span>p. {card.page}</span>
           )}
         </h3>
-        <p className={s.muted}>{ext?.source_text ? "Exactly the text Gemini was given." : "Text as extracted by the deterministic parser (F01)."}</p>
+        <p className={s.muted}>{ext?.source_text ? "Exactly the text Gemini was given." : "Text as extracted by the deterministic parser."}</p>
         {card.flags.length ? (
           <p className={s.flags}>
             Parser flags: {card.flags.map((f) => <code key={f}>{f}</code>)}
@@ -171,7 +171,7 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
             <tr>
               <th scope="col">Field</th>
               <th scope="col">Gemini (structured, with quote)</th>
-              <th scope="col">Deterministic parse (F01)</th>
+              <th scope="col">Deterministic parse</th>
               <th scope="col">Result</th>
             </tr>
           </thead>
@@ -196,7 +196,7 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
                       <span className={s.muted}>—</span>
                     )}
                   </td>
-                  <td data-label="Deterministic (F01)">{fmt(f, det)}</td>
+                  <td data-label="Deterministic">{fmt(f, det)}</td>
                   <td data-label="Result">
                     {cmp ? (
                       <Badge tone={cmp === "match" && fld && !fld.valid ? "warn" : (COMPARISON_TONE[cmp] ?? "neutral")}>
@@ -218,7 +218,7 @@ function CardView({ card, ext, source }: { card: Card; ext: Extraction | undefin
 
 function Briefs({ briefs }: { briefs: Brief[] }) {
   if (!briefs.length) {
-    return <EmptyState title="No briefs generated yet">Grounded briefs appear here once the brief pipeline (F12) has run.</EmptyState>;
+    return <EmptyState title="No briefs generated yet">Grounded briefs appear here once the brief pipeline has run.</EmptyState>;
   }
   return (
     <Table caption={`${briefs.length} generated brief${briefs.length === 1 ? "" : "s"}`}>
@@ -262,7 +262,8 @@ export function Workbench({
   sources: Source[];
   briefs: Brief[];
 }) {
-  const [tab, setTab] = useState<"extraction" | "briefs">("extraction");
+  // With no stored extraction output, the briefs are what Gemini has actually produced, so they open first (F52).
+  const [tab, setTab] = useState<"extraction" | "briefs">(extractions.length === 0 && briefs.length > 0 ? "briefs" : "extraction");
   const byKey = useMemo(() => new Map(extractions.map((e) => [`${e.source_id}#${e.page}`, e])), [extractions]);
   const sourceIds = useMemo(() => [...new Set(cards.map((c) => c.sourceId))], [cards]);
   const first = cards.find((c) => byKey.has(c.key)) ?? cards[0];
@@ -282,7 +283,7 @@ export function Workbench({
         <p className={s.sub}>
           How Gemini&apos;s structured extraction of DESC project cards compares with the deterministic parser, field by field.
           Fields are accepted only if their quote is found on the cited page and the value agrees with the source. Georgia
-          pages are never sent to Gemini (decision D2).
+          pages are <span title="Decision D2">never sent to Gemini</span>.
         </p>
         <div role="group" aria-label="Workbench views" className={s.tabs}>
           <Button aria-pressed={tab === "extraction"} onClick={() => setTab("extraction")}>
