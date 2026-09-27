@@ -1,0 +1,17 @@
+{
+  "extracts": {
+    "osm-wy.json": {
+      "bytes": 137544,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WY\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:36:08Z",
+      "sha256": "f79b8482f713d19445f36e0819a499e068b2944bfa5e1189573c047b43650931",
+      "url": "https://overpass-api.de/api/interpreter"
+    }
+  },
+  "named_substations": {
+    "WY": 99
+  },
+  "publisher": "OpenStreetMap contributors",
+  "rights": "ODbL 1.0; attribution required",
+  "role": "candidate facility geometry only (C33)"
+}
