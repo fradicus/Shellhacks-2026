@@ -185,14 +185,16 @@ test("failed basemap preserves overlaps, selection, and accessible project table
 
 test("landing controls work and the explorer returns to a working landing page", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Every mile.Connected.");
+  // Brand-first reference hero ("GridBridge") or the prior marketing headline.
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/GridBridge|Every mile/);
   const network = page.getByRole("button", { name: "02 The network", exact: true });
   await network.click();
   await expect(network).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByText("One region. More possibilities.", { exact: true })).toBeVisible();
+  // Caption is a text node beside siblings; avoid exact-on-element matching.
+  await expect(page.getByText("One region. More possibilities.")).toBeVisible();
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
-  await page.getByRole("link", { name: "Explore the overlaps", exact: true }).click();
+  await page.getByRole("link", { name: "Launch explorer", exact: true }).click();
   await expect(page).toHaveURL(/\/time$/);
   await page.getByRole("link", { name: "Home", exact: true }).click();
   await expect(page.getByRole("button", { name: "01 The road", exact: true })).toHaveAttribute("aria-pressed", "true");
