@@ -8,7 +8,11 @@ import styles from "./operations.module.css";
 const STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
 const US_BOUNDS: [[number, number], [number, number]] = [[-125, 24], [-66, 50]];
 
-type MapHost = HTMLDivElement & { __worksiteMap?: MlMap };
+type MapHost = HTMLDivElement & {
+  __worksiteMap?: MlMap;
+  /** Same pick path as a real map click; used by Playwright without MapLibre event quirks. */
+  __worksitePick?: (point: { lat: number; lon: number }) => void;
+};
 
 export function WorksiteMap({
   lat,
@@ -29,6 +33,7 @@ export function WorksiteMap({
 
   useEffect(() => {
     pickRef.current = onPick;
+    if (frame.current) frame.current.__worksitePick = (point) => pickRef.current(point);
   }, [onPick]);
 
   useEffect(() => {
@@ -49,6 +54,7 @@ export function WorksiteMap({
         });
         mapRef.current = map;
         frame.current.__worksiteMap = map;
+        frame.current.__worksitePick = (point) => pickRef.current(point);
         map.addControl(new ml.NavigationControl({ showCompass: false }), "top-right");
         // Register immediately: CI may never finish style/tile load, and Playwright can
         // click the canvas before a load-scoped handler would exist.
@@ -76,7 +82,10 @@ export function WorksiteMap({
     return () => {
       cancelled = true;
       if (readyFallback) clearTimeout(readyFallback);
-      if (frame.current?.__worksiteMap) delete frame.current.__worksiteMap;
+      if (frame.current) {
+        delete frame.current.__worksiteMap;
+        delete frame.current.__worksitePick;
+      }
       markerRef.current?.remove();
       markerRef.current = null;
       map?.remove();

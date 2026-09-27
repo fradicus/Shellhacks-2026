@@ -221,12 +221,12 @@ test("map click with year selected calls the site API for the clicked point", as
   await expect(page.getByLabel("Annual AEF year")).toHaveValue("2025");
   const map = page.getByRole("application", { name: "Click the map to set the worksite coordinates" });
   await expect(map).toHaveAttribute("data-ready", "true", { timeout: 30_000 });
-  // Playwright's canvas click is unreliable with MapLibre; fire the same map click handler
-  // the UI registers, at a fixed CONUS point.
+  // MapLibre map.fire("click") requires originalEvent.target (_onMapClick). Drive the same
+  // worksite pick callback the real click handler uses, at a fixed CONUS point.
   const fired = await map.evaluate((node) => {
-    const host = node as HTMLDivElement & { __worksiteMap?: { fire(type: string, data: { lngLat: { lat: number; lng: number } }): void } };
-    if (!host.__worksiteMap) return false;
-    host.__worksiteMap.fire("click", { lngLat: { lat: 47.6062, lng: -122.3321 } });
+    const host = node as HTMLDivElement & { __worksitePick?: (point: { lat: number; lon: number }) => void };
+    if (!host.__worksitePick) return false;
+    host.__worksitePick({ lat: 47.6062, lon: -122.3321 });
     return true;
   });
   expect(fired).toBe(true);
