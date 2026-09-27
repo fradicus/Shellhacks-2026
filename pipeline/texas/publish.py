@@ -160,6 +160,10 @@ def apply_release(snapshot: dict, root: Path) -> dict:
             or geo_audit["reacquired_sha256"] != geo_audit["sha256"]
             or release["gis_retrieved_at"] != geo_audit["reacquired_at"]
             or geo_audit["crs"] != "EPSG:4326"
+            or geo_audit["layer_url"] != GIS_URL
+            or source["download_url"] != source_audit["url"]
+            or source["publication_date"] != source_audit["publication_date"]
+            or source["vintage"] != source_audit["source_as_of"]
             or ledger["source_sha256"] != geo_audit["sha256"]
             or ledger["crs"] != "EPSG:4326"
             or len(ledger["facilities"]) != geo_audit["feature_count"]

@@ -87,3 +87,10 @@ def test_release_rejects_changed_facility_coordinates_with_updated_hash(tmp_path
     _rewrite(folder, "facilities", move_gabriel)
     with pytest.raises(ValueError, match="candidate terminal or Texas coordinates changed"):
         apply_release({"sources": [], "projects": [], "coverage": {}}, tmp_path)
+
+
+def test_release_rejects_changed_download_url_with_updated_hash(tmp_path):
+    folder = _copy_release(tmp_path)
+    _rewrite(folder, "source", lambda source: source.update(download_url="https://example.invalid/other.xlsx"))
+    with pytest.raises(ValueError, match="source acquisition or identity changed"):
+        apply_release({"sources": [], "projects": [], "coverage": {}}, tmp_path)
