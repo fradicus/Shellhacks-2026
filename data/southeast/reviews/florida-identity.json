@@ -1,0 +1,7 @@
+{
+  "reviewer": "/root/f39_florida_review",
+  "reviewed_at": "2026-09-27T02:50:29.071628+00:00",
+  "facts_sha256": "a0bf08b5705e56d63885048bf02a0fdcace74ef6ce0401ba9cd080bf2a1b3e3e",
+  "decision": "approved",
+  "evidence": "Independent review of the exact 17-row current Florida DEP Transmission Lines conditions-of-certification index batch: 17 distinct canonical certification identities, 17 sourced historical events, one imported index source, acquisition and accepted disposition row sets, and 28 unchanged pinned raw artifact hashes. Prior independent primary-source inspections resolve Bobwhite TA07-14 and Duval-Poinsett naming and preserve document-date, licensee/owner, status and geographic-scope limits. Hopkins location record and its independent review hashes match; confirmed only as one official generating-station facility-reference endpoint, partial, unknown source accuracy, with independently reproduced EPSG:6439/inverse ESRI:108354 transformation. No other coordinates approved. Existing corpus identity comparisons found no duplicate project; matching endpoint names alone were not merged. Approval binds this exact release hash and counts (17 projects, 17 events, 1 source, 17 rows, 1 confirmed partial endpoint); complete acquisition describes this current index table only, not Florida or Southeast completeness, complete interstate scope, present operation, surveyed equipment position, or live activation."
+}

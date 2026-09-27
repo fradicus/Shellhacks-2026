@@ -77,7 +77,10 @@ def test_reviewed_release_integrates_without_changing_prior_corpus(tmp_path):
     hopkins = actual['southeast:fl-dep:ta81-01']
     assert hopkins['location_review'] == 'confirmed'
     assert hopkins['status_group'] == 'unknown'
-    assert hopkins['center'] == {'lat': 30.452223774750653, 'lon': -84.3994653300266}
+    assert hopkins['center']['lat'] == 30.452223774750653
+    assert hopkins['center']['lon'] == -84.3994653300266
+    assert hopkins['center']['basis'] == 'one'
+    assert 'partial location' in hopkins['center']['evidence']
     records = stage(assembled, 'synthetic-test-dataset')['national_projects']
     loaded = next(p for p in records if p['id'] == hopkins['_id'])
     assert loaded['project_events'] == hopkins['project_events']

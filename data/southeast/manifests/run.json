@@ -4,7 +4,7 @@
   "runtime": "Codex local",
   "producer": "southeast-root",
   "reviewer": "/root/f39_florida_review",
-  "reviewer_status": "All 17 Florida current-index identities/events independently inspected; exact Hopkins partial facility-reference location confirmed; final release identity review pending.",
+  "reviewer_status": "Exact release identity approved at 2026-09-27T02:50:29.071628+00:00; 17 projects/events, one confirmed partial endpoint, 16 unlocated.",
   "states": [
     "FL",
     "GA",
@@ -34,6 +34,6 @@
   },
   "stop_resume": "Honor origin/main STOP and main-red. Checkpoint per source/state; resume until full F39 acceptance. No completion marker for research.",
   "raw_cache": "/private/tmp/gridbridge-southeast-sources",
-  "next": "Finish facts-bound release identity approval and all checks; merge approved fixed-path release, verify Action/Atlas RO/export/maps. Continue Florida provider coverage, Georgia, and all remaining Southeast states.",
+  "next": "Complete release gates, merge fixed-path release, verify Action/Atlas RO/export/maps. Continue Florida provider coverage, Georgia, and all remaining Southeast states.",
   "publication_contract": "C27 accepted; F30 assembly hook merged in 5a5c822. No live activation claimed by this manifest."
 }
