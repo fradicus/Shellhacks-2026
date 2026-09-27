@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "mn-btpr-2025",
+    "artifacts": [
+      {
+        "bytes": 46366,
+        "page": "Ch_6_Needs-6.3.htm",
+        "retrieved_at": "2026-09-27T01:40:27Z",
+        "sha256": "208cd57374a4b6e7b34f79c4a3811224adfc7cf803641e5a5dfecc67aa68cf22",
+        "url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.3.htm"
+      },
+      {
+        "bytes": 229532,
+        "page": "Ch_6_Needs-6.4.htm",
+        "retrieved_at": "2026-09-27T01:40:28Z",
+        "sha256": "74db979ccfdb1cc2fb1b6ee54ae0cc3591c210f32301395ad20004bd844e97d2",
+        "url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.4.htm"
+      },
+      {
+        "bytes": 116681,
+        "page": "Ch_6_Needs-6.5.htm",
+        "retrieved_at": "2026-09-27T01:40:30Z",
+        "sha256": "0795a6808161a96a345de56967af20b6854e11d62afc7f45124a933ee29c3db4",
+        "url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.5.htm"
+      },
+      {
+        "bytes": 108308,
+        "page": "Ch_6_Needs-6.6.htm",
+        "retrieved_at": "2026-09-27T01:40:31Z",
+        "sha256": "287612985b96be2fa42b71724cc6e8832effe520d7f074946b90ad16df7407c6",
+        "url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.6.htm"
+      },
+      {
+        "bytes": 80619,
+        "page": "Ch_6_Needs-6.7.htm",
+        "retrieved_at": "2026-09-27T01:40:33Z",
+        "sha256": "47c88d39b3582de1f26324d9a7bc6528f07f6ca0d2961450300ebb5d29785942",
+        "url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.7.htm"
+      },
+      {
+        "bytes": 88437,
+        "page": "Ch_6_Needs-6.8.htm",
+        "retrieved_at": "2026-09-27T01:40:34Z",
+        "sha256": "25cd194c4fd64d4dfc2aa5d1d78d4aaf37b5c265bd9944a5ac889116af74613b",
+        "url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.8.htm"
+      }
+    ],
+    "publisher": "Minnesota Transmission Owners (MPUC Docket E999/M-25-99)",
+    "rights": "Public regulatory filing, published openly on minnelectrans.com",
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6 zone pages",
+    "vintage": "2025-10-31"
+  },
+  {
+    "_id": "osm-mn-substations",
+    "artifacts": [
+      {
+        "bytes": 420436,
+        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MN\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+        "retrieved_at": "2026-09-27T01:40:51Z",
+        "sha256": "7587377b6372f0863721e1f0a3631243b6b32812d9025f522c19125bade23435",
+        "url": "https://overpass-api.de/api/interpreter"
+      }
+    ],
+    "publisher": "OpenStreetMap contributors",
+    "rights": "ODbL 1.0; attribution required",
+    "role": "candidate facility geometry only (C26)"
+  }
+]

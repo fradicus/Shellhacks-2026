@@ -1,0 +1,5339 @@
+[
+  {
+    "id": "node/12288289024",
+    "lat": 44.9791849,
+    "lon": -93.2710806,
+    "name": "5th Street Substation",
+    "norm": "5TH STREET",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "node/12401110928",
+    "lat": 44.115585,
+    "lon": -96.1246839,
+    "name": "Tholen Interconnection Station",
+    "norm": "THOLEN INTERCONNECTION STATION",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "node/12401512114",
+    "lat": 44.0515819,
+    "lon": -96.0845181,
+    "name": "Boeve Interconnect Substation",
+    "norm": "BOEVE INTERCONNECT",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "node/12408081247",
+    "lat": 44.0806957,
+    "lon": -96.0918468,
+    "name": "McBeth Interconnection Station",
+    "norm": "MCBETH INTERCONNECTION STATION",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "node/12410143763",
+    "lat": 44.2836663,
+    "lon": -96.3918895,
+    "name": "JJN Wind Farm Interconnect Station",
+    "norm": "JJN WIND FARM INTERCONNECT STATION",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "node/13453142473",
+    "lat": 45.0574749,
+    "lon": -93.9228789,
+    "name": "Montrose Interconnect",
+    "norm": "MONTROSE INTERCONNECT",
+    "operator": null,
+    "voltage": "12470"
+  },
+  {
+    "id": "node/13453160120",
+    "lat": 45.1943119,
+    "lon": -93.8070058,
+    "name": "Lake Pulaski Interconnect Station",
+    "norm": "LAKE PULASKI INTERCONNECT STATION",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "node/13453179346",
+    "lat": 44.090015,
+    "lon": -93.5274018,
+    "name": "Waseca Interconnect Station",
+    "norm": "WASECA INTERCONNECT STATION",
+    "operator": null,
+    "voltage": "23900"
+  },
+  {
+    "id": "node/13453257195",
+    "lat": 45.2539613,
+    "lon": -94.1145405,
+    "name": "Annandale Interconnect",
+    "norm": "ANNANDALE INTERCONNECT",
+    "operator": null,
+    "voltage": "12470"
+  },
+  {
+    "id": "relation/9094967",
+    "lat": 45.5428151,
+    "lon": -94.2743683,
+    "name": "Quarry Substation",
+    "norm": "QUARRY",
+    "operator": null,
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "relation/9098050",
+    "lat": 45.8472814,
+    "lon": -95.4059638,
+    "name": "Alexandria Switching Substation",
+    "norm": "ALEXANDRIA SWITCHING",
+    "operator": "Western Minnesota Municipal Power Agency",
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "relation/9127955",
+    "lat": 44.5122727,
+    "lon": -92.9394135,
+    "name": "Cannon Falls Substation",
+    "norm": "CANNON FALLS",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/102345117",
+    "lat": 44.0217836,
+    "lon": -96.0522078,
+    "name": "Chanarambie Substation",
+    "norm": "CHANARAMBIE",
+    "operator": "Xcel Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/103024865",
+    "lat": 44.9631337,
+    "lon": -93.3608051,
+    "name": "Cedar Lake Substation",
+    "norm": "CEDAR LAKE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/104535667",
+    "lat": 43.5571308,
+    "lon": -92.6806332,
+    "name": "Adams Substation",
+    "norm": "ADAMS",
+    "operator": "ITC",
+    "voltage": "345000;161000;69000"
+  },
+  {
+    "id": "way/104906648",
+    "lat": 46.6954806,
+    "lon": -96.6537202,
+    "name": "Baker Substation",
+    "norm": "BAKER",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/104909311",
+    "lat": 46.8277182,
+    "lon": -95.0111268,
+    "name": "Hubbard Substation",
+    "norm": "HUBBARD",
+    "operator": "Great River Energy",
+    "voltage": "230000;115000;34500"
+  },
+  {
+    "id": "way/1061548184",
+    "lat": 43.5107339,
+    "lon": -93.1884572,
+    "name": "Freeborn Switching Substation",
+    "norm": "FREEBORN SWITCHING",
+    "operator": "Xcel Energy",
+    "voltage": "161000;34500"
+  },
+  {
+    "id": "way/106935619",
+    "lat": 45.3309749,
+    "lon": -93.8463591,
+    "name": "Monticello Substation",
+    "norm": "MONTICELLO",
+    "operator": null,
+    "voltage": "345000;230000;115000;34500;13800"
+  },
+  {
+    "id": "way/106939227",
+    "lat": 45.1392872,
+    "lon": -93.4640383,
+    "name": "Elm Creek Substation",
+    "norm": "ELM CREEK",
+    "operator": "Xcel Energy",
+    "voltage": "345000;115000;34500;13800"
+  },
+  {
+    "id": "way/106952850",
+    "lat": 45.3749189,
+    "lon": -93.8975986,
+    "name": "Sherburne County Substation",
+    "norm": "SHERBURNE COUNTY",
+    "operator": "Xcel Energy",
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/106981752",
+    "lat": 44.6249773,
+    "lon": -92.6342857,
+    "name": "Prairie Island Substation",
+    "norm": "PRAIRIE ISLAND",
+    "operator": null,
+    "voltage": "345000;161000;34500;13800"
+  },
+  {
+    "id": "way/107141495",
+    "lat": 44.8286159,
+    "lon": -93.2050067,
+    "name": "Cedarvale Substation",
+    "norm": "CEDARVALE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/107192124",
+    "lat": 44.8096302,
+    "lon": -93.2516039,
+    "name": "Black Dog Substation",
+    "norm": "BLACK DOG",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/107269774",
+    "lat": 45.0571807,
+    "lon": -93.8055766,
+    "name": "Crow River Substation",
+    "norm": "CROW RIVER",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/107336795",
+    "lat": 44.1985321,
+    "lon": -94.0083349,
+    "name": "Wilmarth Substation",
+    "norm": "WILMARTH",
+    "operator": null,
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/107387127",
+    "lat": 44.5357903,
+    "lon": -94.8856785,
+    "name": "Franklin Substation",
+    "norm": "FRANKLIN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/107456160",
+    "lat": 45.0302559,
+    "lon": -92.7812202,
+    "name": "King Plant Substation",
+    "norm": "KING PLANT",
+    "operator": null,
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/107458399",
+    "lat": 44.9473754,
+    "lon": -92.8547522,
+    "name": "Afton",
+    "norm": "AFTON",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/107666197",
+    "lat": 45.0161152,
+    "lon": -93.332442,
+    "name": "Indiana Substation",
+    "norm": "INDIANA",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/107719099",
+    "lat": 44.9775209,
+    "lon": -93.2905428,
+    "name": "Aldrich Substation",
+    "norm": "ALDRICH",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/107726452",
+    "lat": 45.2981103,
+    "lon": -93.5545923,
+    "name": "Elk River Substation",
+    "norm": "ELK RIVER",
+    "operator": null,
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/107935478",
+    "lat": 44.9653447,
+    "lon": -93.1149002,
+    "name": "Western Substation",
+    "norm": "WESTERN",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/107935727",
+    "lat": 44.9723722,
+    "lon": -93.2544382,
+    "name": "Elliot Park Substation",
+    "norm": "ELLIOT PARK",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/107935842",
+    "lat": 44.9507231,
+    "lon": -93.2670677,
+    "name": "Midtown Substation",
+    "norm": "MIDTOWN",
+    "operator": "Xcel Energy",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/108059482",
+    "lat": 45.0341373,
+    "lon": -92.9657242,
+    "name": "Long Lake Substation",
+    "norm": "LONG LAKE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/108059880",
+    "lat": 45.0339773,
+    "lon": -93.1053124,
+    "name": "Ramsey Substation",
+    "norm": "RAMSEY",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/108059988",
+    "lat": 45.0365437,
+    "lon": -93.2174991,
+    "name": "Apache Substation",
+    "norm": "APACHE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/108060077",
+    "lat": 45.0679119,
+    "lon": -93.1686971,
+    "name": "Arden Hills Substation",
+    "norm": "ARDEN HILLS",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/108140482",
+    "lat": 44.8035211,
+    "lon": -93.573,
+    "name": "Chaska SW Station",
+    "norm": "CHASKA SW STATION",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1081621826",
+    "lat": 45.0702782,
+    "lon": -95.135508,
+    "name": "Priam Substation",
+    "norm": "PRIAM",
+    "operator": "Willmar Municipal Utilities",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/108232980",
+    "lat": 44.8762418,
+    "lon": -93.1962895,
+    "name": "Airport",
+    "norm": "AIRPORT",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1118204502",
+    "lat": 43.9793881,
+    "lon": -96.0772238,
+    "name": "Windstock Windfarm Substation",
+    "norm": "WINDSTOCK WINDFARM",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/113576197",
+    "lat": 44.5430764,
+    "lon": -92.8921407,
+    "name": "Byllesby",
+    "norm": "BYLLESBY",
+    "operator": "Dakota Electric Association",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/113576198",
+    "lat": 44.5066585,
+    "lon": -92.9174296,
+    "name": "Cannon Falls Dist",
+    "norm": "CANNON FALLS DIST",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1144467050",
+    "lat": 44.0220903,
+    "lon": -96.0502175,
+    "name": "Stoneray Switching Substation",
+    "norm": "STONERAY SWITCHING",
+    "operator": "EDF Renewables North America",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1144467052",
+    "lat": 44.0189584,
+    "lon": -96.0653892,
+    "name": "Ridgewind Interconnect Substation",
+    "norm": "RIDGEWIND INTERCONNECT",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/118941517",
+    "lat": 44.9592424,
+    "lon": -93.1810564,
+    "name": "Prior Substation",
+    "norm": "PRIOR",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1218917792",
+    "lat": 46.6588552,
+    "lon": -96.1310969,
+    "name": "Pelican Lake Substation",
+    "norm": "PELICAN LAKE",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/1232463883",
+    "lat": 44.6124587,
+    "lon": -94.0681771,
+    "name": "East Substation",
+    "norm": "EAST",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1237462415",
+    "lat": 45.1112105,
+    "lon": -93.7474484,
+    "name": "Rockford Substation",
+    "norm": "ROCKFORD",
+    "operator": "Wright-Hennepin Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/123833136",
+    "lat": 44.7458781,
+    "lon": -93.1876589,
+    "name": "Apple Valley Substation",
+    "norm": "APPLE VALLEY",
+    "operator": null,
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/123833137",
+    "lat": 44.7314406,
+    "lon": -93.2068397,
+    "name": "Fischer Substation",
+    "norm": "FISCHER",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/123939010",
+    "lat": 44.7311523,
+    "lon": -93.1842674,
+    "name": "Johnnycake Substation",
+    "norm": "JOHNNYCAKE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1243552786",
+    "lat": 45.1505532,
+    "lon": -93.3826732,
+    "name": "CenterPoint Energy",
+    "norm": "CENTERPOINT ENERGY",
+    "operator": "CenterPoint Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/126010801",
+    "lat": 44.9797905,
+    "lon": -93.2331975,
+    "name": "4th Street Switch Station",
+    "norm": "4TH STREET SWITCH STATION",
+    "operator": "University of Minnesota",
+    "voltage": null
+  },
+  {
+    "id": "way/126012742",
+    "lat": 46.8468472,
+    "lon": -96.7776622,
+    "name": "Brookdale Substation",
+    "norm": "BROOKDALE",
+    "operator": "Moorhead Public Service",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1265390869",
+    "lat": 45.2306238,
+    "lon": -93.4397465,
+    "name": "Energy Park Substation",
+    "norm": "ENERGY PARK",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1266346748",
+    "lat": 45.8775215,
+    "lon": -93.2875018,
+    "name": "65 Substation",
+    "norm": "65",
+    "operator": "Mora Municipal Utilities",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/1266346751",
+    "lat": 45.8770972,
+    "lon": -93.2949062,
+    "name": "Power Plant Substation",
+    "norm": "POWER PLANT",
+    "operator": "Mora Municipal Utilities",
+    "voltage": "69000;12470;4160"
+  },
+  {
+    "id": "way/126670640",
+    "lat": 46.7684088,
+    "lon": -96.7489585,
+    "name": "Moorhead Substation",
+    "norm": "MOORHEAD",
+    "operator": "Moorhead Public Service",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/1271368477",
+    "lat": 44.6441133,
+    "lon": -93.2201385,
+    "name": "Cedar Lake Substation",
+    "norm": "CEDAR LAKE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/127669411",
+    "lat": 44.5080303,
+    "lon": -92.3643231,
+    "name": "Frontenac",
+    "norm": "FRONTENAC",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/127669412",
+    "lat": 44.5684168,
+    "lon": -92.5166464,
+    "name": "Red Wing",
+    "norm": "RED WING",
+    "operator": null,
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/127673419",
+    "lat": 44.7469652,
+    "lon": -93.0260021,
+    "name": "Rosemount Substation",
+    "norm": "ROSEMOUNT",
+    "operator": "Xcel Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/127675613",
+    "lat": 44.6463192,
+    "lon": -93.0459453,
+    "name": "Empire Substation",
+    "norm": "EMPIRE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/127676911",
+    "lat": 44.4748185,
+    "lon": -92.9092144,
+    "name": "South Cannon Falls",
+    "norm": "SOUTH CANNON FALLS",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/127681032",
+    "lat": 44.8473631,
+    "lon": -92.9484623,
+    "name": "Cottage Grove",
+    "norm": "COTTAGE GROVE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/128366689",
+    "lat": 44.7322937,
+    "lon": -93.1948465,
+    "name": "Williams Bros Substation",
+    "norm": "WILLIAMS BROS",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1301919592",
+    "lat": 44.7751381,
+    "lon": -94.1341681,
+    "name": "Union Substation",
+    "norm": "UNION",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1305653415",
+    "lat": 45.1968425,
+    "lon": -93.0411352,
+    "name": "Hugo Substation",
+    "norm": "HUGO",
+    "operator": "Connexus Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/1317270142",
+    "lat": 45.0354014,
+    "lon": -93.7865904,
+    "name": "Delano Substation",
+    "norm": "DELANO",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1317325811",
+    "lat": 45.0874071,
+    "lon": -93.5433724,
+    "name": "Corcoran Substation",
+    "norm": "CORCORAN",
+    "operator": "Wright Hennepin Cooperative Electric Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1317325813",
+    "lat": 45.0884295,
+    "lon": -93.541751,
+    "name": "Corcoran II Substation",
+    "norm": "CORCORAN II",
+    "operator": "Wright Hennepin Cooperative Electric Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1318442120",
+    "lat": 48.5701983,
+    "lon": -96.9323884,
+    "name": "L67 Substation",
+    "norm": "L67",
+    "operator": "Enbridge",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1318442121",
+    "lat": 48.5694224,
+    "lon": -96.9324224,
+    "name": "L3R Substation",
+    "norm": "L3R",
+    "operator": "Enbridge",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1318856780",
+    "lat": 48.4525866,
+    "lon": -96.8687595,
+    "name": "Stephen Substation",
+    "norm": "STEPHEN",
+    "operator": null,
+    "voltage": "41600"
+  },
+  {
+    "id": "way/1319189772",
+    "lat": 45.8809643,
+    "lon": -93.2759989,
+    "name": "Industrial Substation",
+    "norm": "INDUSTRIAL",
+    "operator": "Mora Municipal Utilities",
+    "voltage": "12470;4160"
+  },
+  {
+    "id": "way/1322944650",
+    "lat": 47.0176106,
+    "lon": -95.1490458,
+    "name": "Elisha Substation",
+    "norm": "ELISHA",
+    "operator": "Great River Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1322972411",
+    "lat": 46.7367773,
+    "lon": -95.1386001,
+    "name": "Blueberry Substation",
+    "norm": "BLUEBERRY",
+    "operator": null,
+    "voltage": "115000;34500;12470"
+  },
+  {
+    "id": "way/1322972453",
+    "lat": 46.8197892,
+    "lon": -95.1509807,
+    "name": "Straight River Substation",
+    "norm": "STRAIGHT RIVER",
+    "operator": "Minnesota Power",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1322972455",
+    "lat": 46.8196174,
+    "lon": -95.1492921,
+    "name": "Pipeline Substation",
+    "norm": "PIPELINE",
+    "operator": "Minnesota Power",
+    "voltage": "34500;4160"
+  },
+  {
+    "id": "way/1323053502",
+    "lat": 46.7765161,
+    "lon": -95.0171002,
+    "name": "Twin Lakes Substation",
+    "norm": "TWIN LAKES",
+    "operator": "Todd-Wadena Electric Cooperative",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1323053508",
+    "lat": 46.6696618,
+    "lon": -95.0808106,
+    "name": "Red Eye Substation",
+    "norm": "RED EYE",
+    "operator": "Todd-Wadena Electric Cooperative",
+    "voltage": "115000;4160"
+  },
+  {
+    "id": "way/1323053512",
+    "lat": 46.9169684,
+    "lon": -94.2796802,
+    "name": "Wapebo Substation",
+    "norm": "WAPEBO",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1323505837",
+    "lat": 47.0362798,
+    "lon": -95.3403294,
+    "name": "Pine River Substation",
+    "norm": "PINE RIVER",
+    "operator": "Itasca-Mantrap Electrical Cooperative Association",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1323505841",
+    "lat": 46.9365057,
+    "lon": -94.4615897,
+    "name": "Pleasant Lake Substation",
+    "norm": "PLEASANT LAKE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1323549843",
+    "lat": 46.5146182,
+    "lon": -95.0924663,
+    "name": "Leaf River Substation",
+    "norm": "LEAF RIVER",
+    "operator": "Todd-Wadena Electric Cooperative",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1323734155",
+    "lat": 46.7199491,
+    "lon": -95.9585211,
+    "name": "Lake Eunice Substation",
+    "norm": "LAKE EUNICE",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1323948792",
+    "lat": 46.5002426,
+    "lon": -96.0882529,
+    "name": "Erhard Substation",
+    "norm": "ERHARD",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/1324002162",
+    "lat": 46.3972367,
+    "lon": -95.8173715,
+    "name": "Maine Substation",
+    "norm": "MAINE",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/1324293706",
+    "lat": 44.8257369,
+    "lon": -95.5510971,
+    "name": "Palmer Creek Substation",
+    "norm": "PALMER CREEK",
+    "operator": null,
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1324838705",
+    "lat": 44.5441187,
+    "lon": -93.1535339,
+    "name": "Castle Rock Substation",
+    "norm": "CASTLE ROCK",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1327588237",
+    "lat": 44.6997616,
+    "lon": -92.894242,
+    "name": "Hastings Substation",
+    "norm": "HASTINGS",
+    "operator": "Dakota Electric Association",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/1327907433",
+    "lat": 44.7998579,
+    "lon": -93.099234,
+    "name": "Wescott Substation",
+    "norm": "WESCOTT",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1327907445",
+    "lat": 44.7891512,
+    "lon": -93.1202656,
+    "name": "Lebanon Hills Substation",
+    "norm": "LEBANON HILLS",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1331113082",
+    "lat": 47.2098824,
+    "lon": -95.1359764,
+    "name": "Laporte Substation",
+    "norm": "LAPORTE",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "115000;4160"
+  },
+  {
+    "id": "way/1333753558",
+    "lat": 44.9593205,
+    "lon": -93.839062,
+    "name": "Watertown Substation",
+    "norm": "WATERTOWN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1334848555",
+    "lat": 46.7715697,
+    "lon": -92.293976,
+    "name": "Arrowhead Substation 345/230 kV",
+    "norm": "ARROWHEAD 345/230 KV",
+    "operator": "American Transmission Company",
+    "voltage": "345000;230000;24900"
+  },
+  {
+    "id": "way/1336890080",
+    "lat": 45.0267597,
+    "lon": -93.5054128,
+    "name": "Hollydale Substation",
+    "norm": "HOLLYDALE",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800"
+  },
+  {
+    "id": "way/1339501292",
+    "lat": 43.9219573,
+    "lon": -93.225361,
+    "name": "River Point Substation",
+    "norm": "RIVER POINT",
+    "operator": "ITC Midwest",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1339501293",
+    "lat": 43.921292,
+    "lon": -93.2255164,
+    "name": "River Point Substation #8",
+    "norm": "RIVER POINT",
+    "operator": "Steele-Waseca Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/134002901",
+    "lat": 44.0345783,
+    "lon": -92.6695116,
+    "name": "Byron Substation",
+    "norm": "BYRON",
+    "operator": null,
+    "voltage": "345000;161000"
+  },
+  {
+    "id": "way/1340395468",
+    "lat": 44.0943801,
+    "lon": -96.1037879,
+    "name": "Golf Interconnect",
+    "norm": "GOLF INTERCONNECT",
+    "operator": "Xcel Energy",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/136060746",
+    "lat": 46.4606849,
+    "lon": -94.0614197,
+    "name": "Riverton 115/34 KV Substation",
+    "norm": "RIVERTON 115/34 KV",
+    "operator": null,
+    "voltage": "115000;34000"
+  },
+  {
+    "id": "way/136060747",
+    "lat": 46.4520658,
+    "lon": -94.0663819,
+    "name": "Riverton 230/115 KV Substation",
+    "norm": "RIVERTON 230/115 KV",
+    "operator": null,
+    "voltage": "230000;115000;69000"
+  },
+  {
+    "id": "way/137930909",
+    "lat": 43.9967358,
+    "lon": -92.4970074,
+    "name": "Bamber Valley Substation",
+    "norm": "BAMBER VALLEY",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/137930910",
+    "lat": 44.0322499,
+    "lon": -92.4905678,
+    "name": "Cascade Creek Substation",
+    "norm": "CASCADE CREEK",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/137930911",
+    "lat": 44.0275707,
+    "lon": -92.4674311,
+    "name": "Crosstown Cascade Substation",
+    "norm": "CROSSTOWN CASCADE",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/137930912",
+    "lat": 44.0297145,
+    "lon": -92.5875878,
+    "name": "Maple Leaf Substation",
+    "norm": "MAPLE LEAF",
+    "operator": null,
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/137937087",
+    "lat": 44.8277059,
+    "lon": -95.5532606,
+    "name": "Granite Falls Substation",
+    "norm": "GRANITE FALLS",
+    "operator": "Western Area Power Administration",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/137937089",
+    "lat": 44.8145014,
+    "lon": -94.3380939,
+    "name": "McLeod Substation",
+    "norm": "MCLEOD",
+    "operator": null,
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/137943676",
+    "lat": 45.5845331,
+    "lon": -96.0164336,
+    "name": "Morris Substation",
+    "norm": "MORRIS",
+    "operator": "Western Area Power Administration;Otter Tail Power Company",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/1380155323",
+    "lat": 44.720137,
+    "lon": -94.4901609,
+    "name": "Stewart Substation",
+    "norm": "STEWART",
+    "operator": "Xcel Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/138048455",
+    "lat": 44.0643664,
+    "lon": -92.4727192,
+    "name": "Zumbro River Substation",
+    "norm": "ZUMBRO RIVER",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/138252410",
+    "lat": 45.0072835,
+    "lon": -96.3840983,
+    "name": "Marietta 115kV Substation",
+    "norm": "MARIETTA 115KV",
+    "operator": "Otter Tail Power Company",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/138262000",
+    "lat": 44.8035306,
+    "lon": -95.5291756,
+    "name": "Minnesota Valley Substation",
+    "norm": "MINNESOTA VALLEY",
+    "operator": "Xcel Energy",
+    "voltage": "230000;115000;69000;23900"
+  },
+  {
+    "id": "way/138262001",
+    "lat": 44.8113664,
+    "lon": -94.9160692,
+    "name": "Panther Substation",
+    "norm": "PANTHER",
+    "operator": "Great River Energy",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/138318457",
+    "lat": 45.2194329,
+    "lon": -93.8226219,
+    "name": "Lake Constance Substation",
+    "norm": "LAKE CONSTANCE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/138318458",
+    "lat": 45.1863706,
+    "lon": -93.8058829,
+    "name": "Lake Pulaski Substation",
+    "norm": "LAKE PULASKI",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/138365449",
+    "lat": 43.9858098,
+    "lon": -92.4524892,
+    "name": "Golden Hill",
+    "norm": "GOLDEN HILL",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/139807565",
+    "lat": 44.0416676,
+    "lon": -92.5551629,
+    "name": "Kalmar Substation",
+    "norm": "KALMAR",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/140354613",
+    "lat": 44.0268255,
+    "lon": -92.4606424,
+    "name": "Silver Lake Substation",
+    "norm": "SILVER LAKE",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/1418767054",
+    "lat": 47.8129988,
+    "lon": -95.9976934,
+    "name": "Brooks Substation",
+    "norm": "BROOKS",
+    "operator": "Otter Tail",
+    "voltage": null
+  },
+  {
+    "id": "way/142856299",
+    "lat": 45.461469,
+    "lon": -92.9125631,
+    "name": "Chisago Substation",
+    "norm": "CHISAGO",
+    "operator": "Xcel Energy",
+    "voltage": "500000;345000;115000;34500"
+  },
+  {
+    "id": "way/143079878",
+    "lat": 44.7959962,
+    "lon": -92.9131196,
+    "name": "Chemolite Substation",
+    "norm": "CHEMOLITE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/145023946",
+    "lat": 45.6716843,
+    "lon": -92.9211342,
+    "name": "Rush City/CAPS",
+    "norm": "RUSH CITY/CAPS",
+    "operator": null,
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/145027712",
+    "lat": 46.6557651,
+    "lon": -92.3320812,
+    "name": "Wrenshall Substation",
+    "norm": "WRENSHALL",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/145027717",
+    "lat": 46.6667698,
+    "lon": -92.2938896,
+    "name": "Fond-Du-Lac Hydro Electric Station",
+    "norm": "FOND-DU-LAC HYDRO ELECTRIC STATION",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/146214955",
+    "lat": 46.7736775,
+    "lon": -92.2943144,
+    "name": "Arrowhead Substation 230/115 kV",
+    "norm": "ARROWHEAD 230/115 KV",
+    "operator": "Minnesota Power",
+    "voltage": "250000;230000;115000"
+  },
+  {
+    "id": "way/146214957",
+    "lat": 46.7679117,
+    "lon": -92.2805047,
+    "name": "Midway Substation",
+    "norm": "MIDWAY",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/146365872",
+    "lat": 46.4011476,
+    "lon": -95.0195307,
+    "name": "Verndale Substation",
+    "norm": "VERNDALE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/146365880",
+    "lat": 46.3875348,
+    "lon": -95.0242526,
+    "name": "Wing River Substation",
+    "norm": "WING RIVER",
+    "operator": null,
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/146661885",
+    "lat": 44.1955504,
+    "lon": -94.0062133,
+    "name": "Summit Avenue Substation",
+    "norm": "SUMMIT AVENUE",
+    "operator": "Xcel Energy",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/1468093152",
+    "lat": 44.6850855,
+    "lon": -94.1530237,
+    "name": "High Island",
+    "norm": "HIGH ISLAND",
+    "operator": "McLeod Cooperative Power",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/147271532",
+    "lat": 45.1273121,
+    "lon": -95.0248891,
+    "name": "East Substation",
+    "norm": "EAST",
+    "operator": "Willmar Municipal Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/147280976",
+    "lat": 45.0824099,
+    "lon": -95.0534617,
+    "name": "Willmar Substation",
+    "norm": "WILLMAR",
+    "operator": null,
+    "voltage": "230000;115000;69000"
+  },
+  {
+    "id": "way/147280977",
+    "lat": 45.1025262,
+    "lon": -95.0529279,
+    "name": "South Substation",
+    "norm": "SOUTH",
+    "operator": "Willmar Municipal Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/147289564",
+    "lat": 45.105197,
+    "lon": -95.0845597,
+    "name": "Southwest Substation",
+    "norm": "SOUTHWEST",
+    "operator": "Willmar Municipal Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/147544473",
+    "lat": 44.7450587,
+    "lon": -92.8519935,
+    "name": "Hastings Substation",
+    "norm": "HASTINGS",
+    "operator": "Xcel Energy",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/147545678",
+    "lat": 44.7372209,
+    "lon": -92.894939,
+    "name": "West Hastings Substation",
+    "norm": "WEST HASTINGS",
+    "operator": "Xcel Energy",
+    "voltage": "115000;69000;12470"
+  },
+  {
+    "id": "way/148096122",
+    "lat": 45.3917614,
+    "lon": -94.7129096,
+    "name": "Paynesville Substation",
+    "norm": "PAYNESVILLE",
+    "operator": null,
+    "voltage": "230000;115000p;69000"
+  },
+  {
+    "id": "way/148098951",
+    "lat": 45.4008877,
+    "lon": -93.8913409,
+    "name": "Becker Substation",
+    "norm": "BECKER",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/148284721",
+    "lat": 46.6281965,
+    "lon": -95.6054984,
+    "name": "Perham Substation",
+    "norm": "PERHAM",
+    "operator": null,
+    "voltage": "41600"
+  },
+  {
+    "id": "way/148343144",
+    "lat": 45.0159079,
+    "lon": -93.5832157,
+    "name": "Medina Substation",
+    "norm": "MEDINA",
+    "operator": "Great River Energy;Wright-Hennepin Electric Cooperative",
+    "voltage": "115000;69000;12470"
+  },
+  {
+    "id": "way/148408363",
+    "lat": 46.3008435,
+    "lon": -96.1018148,
+    "name": "Edgetown Substation",
+    "norm": "EDGETOWN",
+    "operator": "Otter Tail Power Company",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/148408364",
+    "lat": 46.3158566,
+    "lon": -96.0391083,
+    "name": "Fergus Falls Substation",
+    "norm": "FERGUS FALLS",
+    "operator": "Otter Tail Power Company",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1485090096",
+    "lat": 48.6071818,
+    "lon": -93.406854,
+    "name": "International Falls Power",
+    "norm": "INTERNATIONAL FALLS POWER",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090103",
+    "lat": 46.5915832,
+    "lon": -95.5658238,
+    "name": "Perham Incinerator",
+    "norm": "PERHAM INCINERATOR",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090123",
+    "lat": 43.9491603,
+    "lon": -95.2907303,
+    "name": "South Storden Substation",
+    "norm": "SOUTH STORDEN",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090128",
+    "lat": 44.1073662,
+    "lon": -94.2191738,
+    "name": "Lake Crystal",
+    "norm": "LAKE CRYSTAL",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090137",
+    "lat": 45.2917246,
+    "lon": -93.4420138,
+    "name": "Anoka",
+    "norm": "ANOKA",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090140",
+    "lat": 45.9749952,
+    "lon": -94.3692541,
+    "name": "Little Falls (mn)",
+    "norm": "LITTLE FALLS",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090156",
+    "lat": 45.4968272,
+    "lon": -94.4545722,
+    "name": "Big Fish",
+    "norm": "BIG FISH",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090169",
+    "lat": 45.8888133,
+    "lon": -95.3798672,
+    "name": "Alexandria",
+    "norm": "ALEXANDRIA",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090190",
+    "lat": 44.7708347,
+    "lon": -94.1582078,
+    "name": "Glencoe",
+    "norm": "GLENCOE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090193",
+    "lat": 45.0648963,
+    "lon": -93.9716655,
+    "name": "Waverly",
+    "norm": "WAVERLY",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090195",
+    "lat": 45.040902,
+    "lon": -93.7903046,
+    "name": "Delano",
+    "norm": "DELANO",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090198",
+    "lat": 44.5429685,
+    "lon": -93.5736097,
+    "name": "New Prague",
+    "norm": "NEW PRAGUE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090200",
+    "lat": 43.8658979,
+    "lon": -93.0510349,
+    "name": "Blooming Prairie",
+    "norm": "BLOOMING PRAIRIE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090206",
+    "lat": 44.7955804,
+    "lon": -92.9114179,
+    "name": "Lsp-cottage Grove Lp",
+    "norm": "LSP-COTTAGE GROVE LP",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090209",
+    "lat": 45.1535761,
+    "lon": -93.1878698,
+    "name": "Lexington",
+    "norm": "LEXINGTON",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/1485090224",
+    "lat": 47.4298405,
+    "lon": -92.9344721,
+    "name": "Hibbing",
+    "norm": "HIBBING",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/148530712",
+    "lat": 44.536932,
+    "lon": -92.9183028,
+    "name": "Colville Substation",
+    "norm": "COLVILLE",
+    "operator": "Xcel Energy",
+    "voltage": "161000;115000;69000"
+  },
+  {
+    "id": "way/148588693",
+    "lat": 46.7602061,
+    "lon": -95.7724329,
+    "name": "Burlington Substation",
+    "norm": "BURLINGTON",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/148596767",
+    "lat": 45.5459732,
+    "lon": -94.1498739,
+    "name": "St. Cloud Substation",
+    "norm": "ST. CLOUD",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/148610965",
+    "lat": 46.36999,
+    "lon": -96.0320947,
+    "name": "Elizabeth Substation",
+    "norm": "ELIZABETH",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/148616201",
+    "lat": 46.3257385,
+    "lon": -96.0307385,
+    "name": "Fergus Falls Division Rural Substation",
+    "norm": "FERGUS FALLS DIVISION RURAL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/148659581",
+    "lat": 46.557631,
+    "lon": -96.1156421,
+    "name": "Pelican Rapids Substation",
+    "norm": "PELICAN RAPIDS",
+    "operator": "Otter Tail Power Company",
+    "voltage": "115000;41600"
+  },
+  {
+    "id": "way/148920600",
+    "lat": 46.8655041,
+    "lon": -96.7465979,
+    "name": "Centennial Substation",
+    "norm": "CENTENNIAL",
+    "operator": "Moorhead Public Service",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1510290132",
+    "lat": 45.4560805,
+    "lon": -96.4361382,
+    "name": "Clinton Substation",
+    "norm": "CLINTON",
+    "operator": "Otter Tail Power Company",
+    "voltage": null
+  },
+  {
+    "id": "way/151289328",
+    "lat": 43.5595338,
+    "lon": -93.2693791,
+    "name": "Glenville Substation",
+    "norm": "GLENVILLE",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/151658418",
+    "lat": 47.5578105,
+    "lon": -96.0141019,
+    "name": "Winger Substation",
+    "norm": "WINGER",
+    "operator": "Otter Tail Power Company;Minnkota Power Cooperative",
+    "voltage": "230000;115000;69000;13200"
+  },
+  {
+    "id": "way/151661270",
+    "lat": 47.9377197,
+    "lon": -96.9858426,
+    "name": "Industrial Park Substation",
+    "norm": "INDUSTRIAL PARK",
+    "operator": "East Grand Forks Water and Light",
+    "voltage": "115000;69000;12470"
+  },
+  {
+    "id": "way/151714590",
+    "lat": 47.7681166,
+    "lon": -96.6541072,
+    "name": "Crookston Substation",
+    "norm": "CROOKSTON",
+    "operator": null,
+    "voltage": "115000;41600"
+  },
+  {
+    "id": "way/151717651",
+    "lat": 47.5278159,
+    "lon": -96.1313417,
+    "name": "Rindal Substation",
+    "norm": "RINDAL",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/151954686",
+    "lat": 47.3685022,
+    "lon": -96.1303764,
+    "name": "Waukon Substation",
+    "norm": "WAUKON",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/152484322",
+    "lat": 48.8332459,
+    "lon": -95.329076,
+    "name": "Moranville",
+    "norm": "MORANVILLE",
+    "operator": "Minnkota Power Cooperative Inc.",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/1539509286",
+    "lat": 47.7835939,
+    "lon": -95.7076293,
+    "name": "Trail Substation",
+    "norm": "TRAIL",
+    "operator": "Otter Tail Power",
+    "voltage": null
+  },
+  {
+    "id": "way/158100238",
+    "lat": 45.0452224,
+    "lon": -93.3301539,
+    "name": "Twin Lakes Substation",
+    "norm": "TWIN LAKES",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/158134365",
+    "lat": 47.4863438,
+    "lon": -94.9518036,
+    "name": "Wilton Substation",
+    "norm": "WILTON",
+    "operator": null,
+    "voltage": "230000;115000;69000;13800"
+  },
+  {
+    "id": "way/159608784",
+    "lat": 47.933233,
+    "lon": -97.0115192,
+    "name": "Sugar Hills Substation",
+    "norm": "SUGAR HILLS",
+    "operator": "East Grand Forks Water and Light",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/160279734",
+    "lat": 45.5760106,
+    "lon": -95.9118618,
+    "name": "Morris South 115kV Substation",
+    "norm": "MORRIS SOUTH 115KV",
+    "operator": "Otter Tail Power Company",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/161818385",
+    "lat": 46.3909506,
+    "lon": -94.2936606,
+    "name": "Baxter Substation",
+    "norm": "BAXTER",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/162011226",
+    "lat": 45.839991,
+    "lon": -95.3672546,
+    "name": "MRES Alexandria Substation",
+    "norm": "MRES ALEXANDRIA",
+    "operator": "Missouri River Energy Services",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/162011228",
+    "lat": 45.8757754,
+    "lon": -95.3664719,
+    "name": "Nokomis Substation",
+    "norm": "NOKOMIS",
+    "operator": "Alexandria Light & Power Utilities Company",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/162157546",
+    "lat": 47.9046065,
+    "lon": -96.0201566,
+    "name": "Plummer Station",
+    "norm": "PLUMMER STATION",
+    "operator": "Enbridge Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/162164404",
+    "lat": 48.5872057,
+    "lon": -96.5169088,
+    "name": "Karlstad Substation",
+    "norm": "KARLSTAD",
+    "operator": null,
+    "voltage": "115000;69000;41600"
+  },
+  {
+    "id": "way/165512221",
+    "lat": 48.8891213,
+    "lon": -95.4389568,
+    "name": "Roseau County Substation",
+    "norm": "ROSEAU COUNTY",
+    "operator": null,
+    "voltage": "500000"
+  },
+  {
+    "id": "way/167628270",
+    "lat": 46.8576173,
+    "lon": -92.0470733,
+    "name": "Colbyville Substation",
+    "norm": "COLBYVILLE",
+    "operator": "Minnesota Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/167707091",
+    "lat": 44.7977331,
+    "lon": -93.1658038,
+    "name": "Pilot Knob Substation",
+    "norm": "PILOT KNOB",
+    "operator": "Great River Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/168726234",
+    "lat": 47.3641257,
+    "lon": -92.6906654,
+    "name": "Forbes Substation",
+    "norm": "FORBES",
+    "operator": "Minnesota Power",
+    "voltage": "500000;230000;115000;20000"
+  },
+  {
+    "id": "way/170017168",
+    "lat": 43.669994,
+    "lon": -95.1437998,
+    "name": "Lakefield Junction Substation",
+    "norm": "LAKEFIELD JUNCTION",
+    "operator": null,
+    "voltage": "345000;161000;69000"
+  },
+  {
+    "id": "way/171228189",
+    "lat": 46.9286528,
+    "lon": -94.5105716,
+    "name": "Birch Lake Substation",
+    "norm": "BIRCH LAKE",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/172081534",
+    "lat": 44.8953238,
+    "lon": -93.0123743,
+    "name": "Northstar Steel",
+    "norm": "NORTHSTAR STEEL",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/172096275",
+    "lat": 47.3790805,
+    "lon": -94.6387415,
+    "name": "Cass Lake Substation",
+    "norm": "CASS LAKE",
+    "operator": null,
+    "voltage": "230000;115000;69000;41600;13800"
+  },
+  {
+    "id": "way/172878243",
+    "lat": 48.3873276,
+    "lon": -93.6062276,
+    "name": "Littlefork Substation",
+    "norm": "LITTLEFORK",
+    "operator": null,
+    "voltage": "230000;115000;69000"
+  },
+  {
+    "id": "way/172996603",
+    "lat": 45.3806639,
+    "lon": -93.8810883,
+    "name": "Salida Crossing Substation",
+    "norm": "SALIDA CROSSING",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/173063596",
+    "lat": 44.7980281,
+    "lon": -93.0643233,
+    "name": "Inver Grove Substation",
+    "norm": "INVER GROVE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/173063598",
+    "lat": 44.7826721,
+    "lon": -93.038596,
+    "name": "Rich Valley Substation",
+    "norm": "RICH VALLEY",
+    "operator": "Xcel Energy",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/173826743",
+    "lat": 47.0004081,
+    "lon": -94.7552059,
+    "name": "Akeley Substation",
+    "norm": "AKELEY",
+    "operator": "Minnesota Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/173826744",
+    "lat": 46.9685433,
+    "lon": -94.8311278,
+    "name": "Nevis Substation",
+    "norm": "NEVIS",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/173859595",
+    "lat": 46.8354955,
+    "lon": -92.1126419,
+    "name": "Ridgeview Substation",
+    "norm": "RIDGEVIEW",
+    "operator": "Minnesota Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/174021176",
+    "lat": 45.8615753,
+    "lon": -94.3582989,
+    "name": "Blanchard Substation",
+    "norm": "BLANCHARD",
+    "operator": null,
+    "voltage": "115000;34500,6600"
+  },
+  {
+    "id": "way/174943540",
+    "lat": 47.6147089,
+    "lon": -96.2700232,
+    "name": "Maple Bay Substation",
+    "norm": "MAPLE BAY",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/174949423",
+    "lat": 46.8609068,
+    "lon": -95.9913088,
+    "name": "Audubon Substation",
+    "norm": "AUDUBON",
+    "operator": "Missouri River Energy Services/Otter Tail Power Company",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/174949993",
+    "lat": 46.8367726,
+    "lon": -96.1347405,
+    "name": "Christensen Substation",
+    "norm": "CHRISTENSEN",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/175876389",
+    "lat": 46.8755423,
+    "lon": -94.7223589,
+    "name": "Badoura 115/34 KV Substation",
+    "norm": "BADOURA 115/34 KV",
+    "operator": null,
+    "voltage": "115000;34000"
+  },
+  {
+    "id": "way/175876393",
+    "lat": 46.8758016,
+    "lon": -94.7195826,
+    "name": "Badoura 230/115 KV Substation",
+    "norm": "BADOURA 230/115 KV",
+    "operator": null,
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/175879593",
+    "lat": 46.4747706,
+    "lon": -94.1783267,
+    "name": "Merrifield Substation",
+    "norm": "MERRIFIELD",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/175879595",
+    "lat": 46.6164898,
+    "lon": -94.308725,
+    "name": "Pequot Lakes Substation",
+    "norm": "PEQUOT LAKES",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/175888639",
+    "lat": 48.5717782,
+    "lon": -96.9339855,
+    "name": "Donaldson Substation",
+    "norm": "DONALDSON",
+    "operator": null,
+    "voltage": "115000;41600"
+  },
+  {
+    "id": "way/176029694",
+    "lat": 47.3726069,
+    "lon": -93.148534,
+    "name": "Nashwauk Substation",
+    "norm": "NASHWAUK",
+    "operator": null,
+    "voltage": "115000;23000"
+  },
+  {
+    "id": "way/176503131",
+    "lat": 47.4997096,
+    "lon": -93.0330662,
+    "name": "Shannon Substation",
+    "norm": "SHANNON",
+    "operator": null,
+    "voltage": "230000;115000;69000"
+  },
+  {
+    "id": "way/176987492",
+    "lat": 44.8347539,
+    "lon": -93.1600365,
+    "name": "Lemay Lake Substation",
+    "norm": "LEMAY LAKE",
+    "operator": null,
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/178310988",
+    "lat": 44.927475,
+    "lon": -92.9653843,
+    "name": "Woodbury Substation",
+    "norm": "WOODBURY",
+    "operator": "Xcel Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/178310989",
+    "lat": 44.9552237,
+    "lon": -92.9960758,
+    "name": "Tanners Lake Substation",
+    "norm": "TANNERS LAKE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/178323756",
+    "lat": 44.9813041,
+    "lon": -93.5029736,
+    "name": "Gleason Lake Substation",
+    "norm": "GLEASON LAKE",
+    "operator": "Xcel Energy",
+    "voltage": "115000;69000;34500;13800"
+  },
+  {
+    "id": "way/178415093",
+    "lat": 44.2242317,
+    "lon": -95.4615935,
+    "name": "Walnut Grove ITC Substation",
+    "norm": "WALNUT GROVE ITC",
+    "operator": "Redwood Electric Coopeartive",
+    "voltage": null
+  },
+  {
+    "id": "way/178419215",
+    "lat": 44.4706765,
+    "lon": -95.7897112,
+    "name": "Erie Road Substation",
+    "norm": "ERIE ROAD",
+    "operator": "Marshall Municipal Utilities",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/178424529",
+    "lat": 44.4465425,
+    "lon": -95.791972,
+    "name": "Saratoga Substation",
+    "norm": "SARATOGA",
+    "operator": "Marshall Municipal Utilities",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/178424532",
+    "lat": 44.4875468,
+    "lon": -95.7364513,
+    "name": "Marshall 115/69 Substation",
+    "norm": "MARSHALL 115/69",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/178424533",
+    "lat": 44.4258025,
+    "lon": -95.8040401,
+    "name": "Southwest Substation",
+    "norm": "SOUTHWEST",
+    "operator": "Marshall Municipal Utilities",
+    "voltage": "115000;13800;4160"
+  },
+  {
+    "id": "way/178424945",
+    "lat": 44.4734697,
+    "lon": -95.6738187,
+    "name": "Lyon County (LYC) Substation",
+    "norm": "LYON COUNTY",
+    "operator": "Xcel Energy",
+    "voltage": "345000;115000;69000"
+  },
+  {
+    "id": "way/178424949",
+    "lat": 44.4715633,
+    "lon": -95.7569971,
+    "name": "Switching Substation",
+    "norm": "SWITCHING",
+    "operator": "Marshall Municipal Utilities",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/178496504",
+    "lat": 44.1696236,
+    "lon": -93.9397989,
+    "name": "Eastwood Substation",
+    "norm": "EASTWOOD",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/178581655",
+    "lat": 44.5162506,
+    "lon": -95.9005359,
+    "name": "Ghent Substation",
+    "norm": "GHENT",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/179652718",
+    "lat": 45.0925812,
+    "lon": -94.2807193,
+    "name": "Big Swan Substation",
+    "norm": "BIG SWAN",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/179653724",
+    "lat": 45.2813027,
+    "lon": -93.5806024,
+    "name": "Otsego Substation",
+    "norm": "OTSEGO",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/18021726",
+    "lat": 46.5883496,
+    "lon": -92.88761,
+    "name": "Cromwell Substation",
+    "norm": "CROMWELL",
+    "operator": "Great River Energy",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/180464806",
+    "lat": 45.5760336,
+    "lon": -94.1415581,
+    "name": "Granite City Substation",
+    "norm": "GRANITE CITY",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/180464807",
+    "lat": 45.5690738,
+    "lon": -94.0387574,
+    "name": "Benton County Substation",
+    "norm": "BENTON COUNTY",
+    "operator": null,
+    "voltage": "345000;230000;115000;69000"
+  },
+  {
+    "id": "way/180523897",
+    "lat": 44.7695874,
+    "lon": -94.1617445,
+    "name": "Armstrong Substation",
+    "norm": "ARMSTRONG",
+    "operator": "Light & Power Commission",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/180734309",
+    "lat": 45.4713262,
+    "lon": -94.1178305,
+    "name": "I-94 Substation",
+    "norm": "I-94",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/181033884",
+    "lat": 44.9403237,
+    "lon": -95.7220712,
+    "name": "Montevideo Substation",
+    "norm": "MONTEVIDEO",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800;4160"
+  },
+  {
+    "id": "way/182478704",
+    "lat": 44.0031504,
+    "lon": -96.319813,
+    "name": "Pipestone Substation",
+    "norm": "PIPESTONE",
+    "operator": "Xcel Energy",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/182486137",
+    "lat": 43.9784007,
+    "lon": -95.7563668,
+    "name": "Slayton Substation",
+    "norm": "SLAYTON",
+    "operator": "Nobles Electric Cooperative",
+    "voltage": "69000;13800"
+  },
+  {
+    "id": "way/182487460",
+    "lat": 44.0230411,
+    "lon": -96.0519953,
+    "name": "Moraine II Interconnection Station",
+    "norm": "MORAINE II INTERCONNECTION STATION",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/182487463",
+    "lat": 43.9779249,
+    "lon": -95.7655085,
+    "name": "Slayton West Substation",
+    "norm": "SLAYTON WEST",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800;7970"
+  },
+  {
+    "id": "way/182487465",
+    "lat": 44.0230783,
+    "lon": -96.0526566,
+    "name": "Northern Wind Rock Aetna Switching Substation",
+    "norm": "NORTHERN WIND ROCK AETNA SWITCHING",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/182630046",
+    "lat": 44.9239169,
+    "lon": -93.5227374,
+    "name": "Deephaven Substation",
+    "norm": "DEEPHAVEN",
+    "operator": null,
+    "voltage": "69000;13800"
+  },
+  {
+    "id": "way/183100806",
+    "lat": 47.3541246,
+    "lon": -92.5743331,
+    "name": "UTAC Substation",
+    "norm": "UTAC",
+    "operator": "Minnesota Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/184112546",
+    "lat": 47.2298037,
+    "lon": -93.3134559,
+    "name": "Blackberry 230/115 kV Substation",
+    "norm": "BLACKBERRY 230/115 KV",
+    "operator": null,
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/184120669",
+    "lat": 46.331975,
+    "lon": -94.0759309,
+    "name": "Mud Lake Substation",
+    "norm": "MUD LAKE",
+    "operator": null,
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/184253420",
+    "lat": 47.5252451,
+    "lon": -92.5647795,
+    "name": "Virginia Substation",
+    "norm": "VIRGINIA",
+    "operator": null,
+    "voltage": "115000;46000;23000"
+  },
+  {
+    "id": "way/184336303",
+    "lat": 45.1902673,
+    "lon": -93.1595192,
+    "name": "Blaine Substation",
+    "norm": "BLAINE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/184336320",
+    "lat": 45.2009431,
+    "lon": -93.2356493,
+    "name": "Johnsville Substation",
+    "norm": "JOHNSVILLE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/184572989",
+    "lat": 44.7558815,
+    "lon": -93.1147955,
+    "name": "Kegan Lake Substation",
+    "norm": "KEGAN LAKE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/184690914",
+    "lat": 44.5440392,
+    "lon": -93.1537449,
+    "name": "Castle Rock Substation",
+    "norm": "CASTLE ROCK",
+    "operator": "Dakota Electric Association",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/186082080",
+    "lat": 45.3867774,
+    "lon": -93.8797677,
+    "name": "Liberty Substation",
+    "norm": "LIBERTY",
+    "operator": "Great River Energy",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/186370533",
+    "lat": 46.8121382,
+    "lon": -92.1769441,
+    "name": "Haines Road Substation",
+    "norm": "HAINES ROAD",
+    "operator": "Minnesota Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/187089891",
+    "lat": 44.3120009,
+    "lon": -93.2793065,
+    "name": "Fair Park Substation",
+    "norm": "FAIR PARK",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800;4160"
+  },
+  {
+    "id": "way/188704411",
+    "lat": 48.107346,
+    "lon": -96.1746504,
+    "name": "Morris Owen Substation",
+    "norm": "MORRIS OWEN",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/188704414",
+    "lat": 48.1203936,
+    "lon": -96.1096803,
+    "name": "Thief River Falls Highway 1 Substation",
+    "norm": "THIEF RIVER FALLS HIGHWAY 1",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/188704415",
+    "lat": 48.1149784,
+    "lon": -96.1796936,
+    "name": "Thief River Falls Municipal Substation",
+    "norm": "THIEF RIVER FALLS MUNICIPAL",
+    "operator": "Thief River Falls Municipal Utilities",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/200812829",
+    "lat": 45.9625914,
+    "lon": -96.0187815,
+    "name": "Grant County Substation",
+    "norm": "GRANT COUNTY",
+    "operator": "Missouri River Energy Services",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/200820142",
+    "lat": 44.4575827,
+    "lon": -95.7614401,
+    "name": "SW College Substation",
+    "norm": "SW COLLEGE",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/200829878",
+    "lat": 45.962597,
+    "lon": -95.943809,
+    "name": "Elbow Lake 115kV Substation",
+    "norm": "ELBOW LAKE 115KV",
+    "operator": "Missouri River Energy Services",
+    "voltage": "115000;41600"
+  },
+  {
+    "id": "way/200986806",
+    "lat": 44.5420658,
+    "lon": -95.1290354,
+    "name": "West Substation",
+    "norm": "WEST",
+    "operator": "Redwood Falls Public Utilities",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/203162430",
+    "lat": 44.6456689,
+    "lon": -93.1655862,
+    "name": "Vermillion River Substation",
+    "norm": "VERMILLION RIVER",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/203162434",
+    "lat": 44.5986136,
+    "lon": -93.2960213,
+    "name": "Lake Marion Substation",
+    "norm": "LAKE MARION",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/203162440",
+    "lat": 44.645623,
+    "lon": -93.2285832,
+    "name": "Airlake Substation",
+    "norm": "AIRLAKE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/203165642",
+    "lat": 44.7168574,
+    "lon": -93.179681,
+    "name": "Lakeville Substation",
+    "norm": "LAKEVILLE",
+    "operator": "Dakota Electric Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/205636559",
+    "lat": 46.7358139,
+    "lon": -92.1536392,
+    "name": "M.L. Hibbard S.E. Station",
+    "norm": "M.L. HIBBARD S.E. STATION",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/205636569",
+    "lat": 46.7510808,
+    "lon": -92.199545,
+    "name": "Hilltop 230/115KV Substation",
+    "norm": "HILLTOP 230/115KV",
+    "operator": "Minnesota Power",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/205636582",
+    "lat": 46.7370753,
+    "lon": -92.159739,
+    "name": "Lake Superior Paper Substation",
+    "norm": "LAKE SUPERIOR PAPER",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/207512405",
+    "lat": 45.2878116,
+    "lon": -93.0097014,
+    "name": "Forest Lake Substation",
+    "norm": "FOREST LAKE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/207512409",
+    "lat": 45.31182,
+    "lon": -92.9858963,
+    "name": "Wyoming Substation",
+    "norm": "WYOMING",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/210803503",
+    "lat": 45.9621995,
+    "lon": -94.2991958,
+    "name": "Little Falls Substation",
+    "norm": "LITTLE FALLS",
+    "operator": "Minnesota Power",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/210807103",
+    "lat": 46.3310106,
+    "lon": -94.1669227,
+    "name": "Brainerd Substation",
+    "norm": "BRAINERD",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/210807104",
+    "lat": 46.2007729,
+    "lon": -94.176471,
+    "name": "Dewing Substation",
+    "norm": "DEWING",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/210809355",
+    "lat": 46.3514639,
+    "lon": -94.0645659,
+    "name": "Oak Lawn Substation",
+    "norm": "OAK LAWN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/211477108",
+    "lat": 47.572047,
+    "lon": -95.7468264,
+    "name": "Fosston Municipal Substation",
+    "norm": "FOSSTON MUNICIPAL",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/211477109",
+    "lat": 47.520825,
+    "lon": -95.7504474,
+    "name": "Sand Hill Substation",
+    "norm": "SAND HILL",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/211478002",
+    "lat": 47.5734432,
+    "lon": -95.419658,
+    "name": "Bagley Substation",
+    "norm": "BAGLEY",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/211479829",
+    "lat": 47.1952637,
+    "lon": -94.7977339,
+    "name": "Laporte Switch & Substation",
+    "norm": "LAPORTE SWITCH &",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/211479831",
+    "lat": 47.4864987,
+    "lon": -94.9266763,
+    "name": "Airport Substation",
+    "norm": "AIRPORT",
+    "operator": "Otter Tail Corporation",
+    "voltage": null
+  },
+  {
+    "id": "way/211479832",
+    "lat": 47.5283938,
+    "lon": -95.2065181,
+    "name": "Northwoods Substation",
+    "norm": "NORTHWOODS",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/211479838",
+    "lat": 47.5506568,
+    "lon": -95.0551665,
+    "name": "Lakehead Pipeline Substation",
+    "norm": "LAKEHEAD PIPELINE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/212392997",
+    "lat": 46.896997,
+    "lon": -92.5453769,
+    "name": "Burnett 115/14 KV Substation",
+    "norm": "BURNETT 115/14 KV",
+    "operator": null,
+    "voltage": "115000;14000"
+  },
+  {
+    "id": "way/212394130",
+    "lat": 46.7302063,
+    "lon": -92.4496757,
+    "name": "Cloquet 115/14 KV Substation",
+    "norm": "CLOQUET 115/14 KV",
+    "operator": "Minnesota Power",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/212398616",
+    "lat": 46.7261591,
+    "lon": -92.4274494,
+    "name": "Potlatch 115KV Substation",
+    "norm": "POTLATCH 115KV",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/215641913",
+    "lat": 46.8976184,
+    "lon": -96.7454636,
+    "name": "Northeast Substation",
+    "norm": "NORTHEAST",
+    "operator": "Moorhead Public Service",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/228906381",
+    "lat": 47.0331605,
+    "lon": -92.9334659,
+    "name": "Cedar Valley Substation",
+    "norm": "CEDAR VALLEY",
+    "operator": "Lake Country Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/230084103",
+    "lat": 44.7608156,
+    "lon": -93.0330882,
+    "name": "Pine Bend Substation",
+    "norm": "PINE BEND",
+    "operator": "Xcel Energy",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/230084167",
+    "lat": 44.7654279,
+    "lon": -93.0363784,
+    "name": "Koch Substation",
+    "norm": "KOCH",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/232190882",
+    "lat": 45.9488313,
+    "lon": -96.2675245,
+    "name": "Wendell Substation",
+    "norm": "WENDELL",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": null
+  },
+  {
+    "id": "way/232584992",
+    "lat": 45.9616637,
+    "lon": -95.6046838,
+    "name": "Brandon Substation",
+    "norm": "BRANDON",
+    "operator": "Missouri River Energy Services",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/232584993",
+    "lat": 45.8371182,
+    "lon": -95.2858158,
+    "name": "Hudson Substation",
+    "norm": "HUDSON",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/233197842",
+    "lat": 45.9699592,
+    "lon": -94.2501507,
+    "name": "Little Falls Substation",
+    "norm": "LITTLE FALLS",
+    "operator": "Crow Wing Coop Power & Light, Inc.",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/236990861",
+    "lat": 44.5758208,
+    "lon": -92.596726,
+    "name": "Burnside Substation",
+    "norm": "BURNSIDE",
+    "operator": null,
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/238811237",
+    "lat": 46.8915839,
+    "lon": -96.6943923,
+    "name": "Dilworth Substation",
+    "norm": "DILWORTH",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/239383338",
+    "lat": 43.5585985,
+    "lon": -96.2335674,
+    "name": "Steen Substation",
+    "norm": "STEEN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/24000744",
+    "lat": 45.2208701,
+    "lon": -93.3070206,
+    "name": "Bunker Lake Substation",
+    "norm": "BUNKER LAKE",
+    "operator": null,
+    "voltage": "345000;230000;69000"
+  },
+  {
+    "id": "way/24001224",
+    "lat": 45.1373303,
+    "lon": -93.2846147,
+    "name": "Coon Creek Substation",
+    "norm": "COON CREEK",
+    "operator": null,
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/240451344",
+    "lat": 43.6335029,
+    "lon": -95.6091684,
+    "name": "West Substation",
+    "norm": "WEST",
+    "operator": "Worthington Public Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/241207024",
+    "lat": 44.0082792,
+    "lon": -96.2846606,
+    "name": "Pipestone Substation",
+    "norm": "PIPESTONE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/241216016",
+    "lat": 44.1099364,
+    "lon": -96.2859946,
+    "name": "Holland Substation",
+    "norm": "HOLLAND",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/241335702",
+    "lat": 47.304168,
+    "lon": -95.1879226,
+    "name": "Itasca Substation",
+    "norm": "ITASCA",
+    "operator": null,
+    "voltage": "115000;4160"
+  },
+  {
+    "id": "way/241524387",
+    "lat": 46.8462983,
+    "lon": -96.7513044,
+    "name": "Southeast Substation",
+    "norm": "SOUTHEAST",
+    "operator": "Moorhead Public Service",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/241745392",
+    "lat": 43.7118556,
+    "lon": -95.7195836,
+    "name": "Nobles County Substation",
+    "norm": "NOBLES COUNTY",
+    "operator": "Xcel Energy",
+    "voltage": "345000;115000;34500"
+  },
+  {
+    "id": "way/241871273",
+    "lat": 45.046131,
+    "lon": -93.4543367,
+    "name": "Plymouth Substation",
+    "norm": "PLYMOUTH",
+    "operator": "Great River Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/242007256",
+    "lat": 43.7091001,
+    "lon": -95.4526414,
+    "name": "Brewster Substation",
+    "norm": "BREWSTER",
+    "operator": "Nobles Cooperative Electric/Great River Energy",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/242009288",
+    "lat": 43.7104562,
+    "lon": -95.5925098,
+    "name": "Elk Substation",
+    "norm": "ELK",
+    "operator": "ITC",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/242420887",
+    "lat": 44.4483914,
+    "lon": -95.7550351,
+    "name": "Southeast Substation",
+    "norm": "SOUTHEAST",
+    "operator": "Marshall Municipal Utilities",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/242666938",
+    "lat": 44.9523935,
+    "lon": -95.7073506,
+    "name": "Fiesta City Substation",
+    "norm": "FIESTA CITY",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800;7970"
+  },
+  {
+    "id": "way/242674744",
+    "lat": 45.0711895,
+    "lon": -93.0329079,
+    "name": "Goose Lake Substation",
+    "norm": "GOOSE LAKE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/246970396",
+    "lat": 44.9955601,
+    "lon": -92.9825359,
+    "name": "Oakdale",
+    "norm": "OAKDALE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/247848626",
+    "lat": 48.9165545,
+    "lon": -95.3224954,
+    "name": "Haslerud Substation",
+    "norm": "HASLERUD",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/255979070",
+    "lat": 46.7227721,
+    "lon": -95.6998291,
+    "name": "Frazee Substation",
+    "norm": "FRAZEE",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/255979074",
+    "lat": 46.7186292,
+    "lon": -95.6998358,
+    "name": "Frazee Substation",
+    "norm": "FRAZEE",
+    "operator": "Great River Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/256204546",
+    "lat": 47.0754874,
+    "lon": -96.2633226,
+    "name": "Ulen Substation",
+    "norm": "ULEN",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/256204547",
+    "lat": 46.9796232,
+    "lon": -96.2582834,
+    "name": "Hitterdal Substation",
+    "norm": "HITTERDAL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/267837438",
+    "lat": 44.9701579,
+    "lon": -93.2289942,
+    "name": "Fulton Switch Station",
+    "norm": "FULTON SWITCH STATION",
+    "operator": "University of Minnesota",
+    "voltage": null
+  },
+  {
+    "id": "way/274485415",
+    "lat": 45.5655629,
+    "lon": -94.2646481,
+    "name": "Westwood Substation",
+    "norm": "WESTWOOD",
+    "operator": "Stearns Electric Association",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/274485426",
+    "lat": 45.5630327,
+    "lon": -94.2261237,
+    "name": "M.E. International Substation",
+    "norm": "M.E. INTERNATIONAL",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/274492420",
+    "lat": 45.5598767,
+    "lon": -94.2028848,
+    "name": "Crossroads Substation",
+    "norm": "CROSSROADS",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/29116108",
+    "lat": 45.1108898,
+    "lon": -93.8101439,
+    "name": "Dickinson Station",
+    "norm": "DICKINSON STATION",
+    "operator": "Great River Energy",
+    "voltage": "345000;115000;69000"
+  },
+  {
+    "id": "way/297278766",
+    "lat": 44.9518063,
+    "lon": -93.2396249,
+    "name": "Hiawatha West Substation",
+    "norm": "HIAWATHA WEST",
+    "operator": null,
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/298049204",
+    "lat": 44.0459271,
+    "lon": -93.0174095,
+    "name": "Al-Corn Substation",
+    "norm": "AL-CORN",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/307376771",
+    "lat": 46.2678205,
+    "lon": -96.5889794,
+    "name": "Water Plant Substation",
+    "norm": "WATER PLANT",
+    "operator": "Breckenridge Public Utilities",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/310462769",
+    "lat": 45.8536431,
+    "lon": -95.1498694,
+    "name": "Douglas County Substation",
+    "norm": "DOUGLAS COUNTY",
+    "operator": "Xcel Energy",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/312342859",
+    "lat": 45.8979339,
+    "lon": -95.492295,
+    "name": "Lake Mina Substation",
+    "norm": "LAKE MINA",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/334798905",
+    "lat": 46.7089262,
+    "lon": -92.4229826,
+    "name": "Scanlon Substation",
+    "norm": "SCANLON",
+    "operator": "Minnesota Power",
+    "voltage": "23000;13800"
+  },
+  {
+    "id": "way/337285144",
+    "lat": 44.8616854,
+    "lon": -93.398018,
+    "name": "Viking Substation",
+    "norm": "VIKING",
+    "operator": "Xcel Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/345419289",
+    "lat": 45.0799206,
+    "lon": -93.5014616,
+    "name": "Lawndale Substation",
+    "norm": "LAWNDALE",
+    "operator": "Wright Hennepin Cooperative Electric Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/349690787",
+    "lat": 45.1449438,
+    "lon": -94.5027949,
+    "name": "Litchfield Substation #1",
+    "norm": "LITCHFIELD",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/351778922",
+    "lat": 45.3032144,
+    "lon": -96.4494651,
+    "name": "Ortonville 115kV Substation",
+    "norm": "ORTONVILLE 115KV",
+    "operator": "Otter Tail Power Company",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/351778937",
+    "lat": 45.316574,
+    "lon": -96.4432356,
+    "name": "Burdick Substation",
+    "norm": "BURDICK",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/351933990",
+    "lat": 46.8745612,
+    "lon": -96.5044932,
+    "name": "Stockwood Substation",
+    "norm": "STOCKWOOD",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "23900"
+  },
+  {
+    "id": "way/352702251",
+    "lat": 44.2230622,
+    "lon": -92.6589151,
+    "name": "North Rochester Substation",
+    "norm": "NORTH ROCHESTER",
+    "operator": null,
+    "voltage": "345000"
+  },
+  {
+    "id": "way/355866643",
+    "lat": 45.6725414,
+    "lon": -94.7978241,
+    "name": "East Melrose Substation",
+    "norm": "EAST MELROSE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/358564260",
+    "lat": 45.5447549,
+    "lon": -94.2763691,
+    "name": "Sauk River Substation",
+    "norm": "SAUK RIVER",
+    "operator": "Xcel Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/361495340",
+    "lat": 46.6803202,
+    "lon": -92.8950502,
+    "name": "Cromwell Substation",
+    "norm": "CROMWELL",
+    "operator": "Lake Country Power",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/364599469",
+    "lat": 45.6302527,
+    "lon": -94.5853446,
+    "name": "Albany Substation",
+    "norm": "ALBANY",
+    "operator": "Xcel Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/368323099",
+    "lat": 46.2612952,
+    "lon": -96.5769777,
+    "name": "South Substation",
+    "norm": "SOUTH",
+    "operator": "Breckenridge Public Utilities",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/368323102",
+    "lat": 46.2821188,
+    "lon": -96.5884394,
+    "name": "Ken Twito Substation",
+    "norm": "KEN TWITO",
+    "operator": "Breckenridge Public Utilities",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/36852641",
+    "lat": 44.9929057,
+    "lon": -93.4570648,
+    "name": "Parkers Lake Substation",
+    "norm": "PARKERS LAKE",
+    "operator": "Xcel Energy",
+    "voltage": "345000;115000;13800"
+  },
+  {
+    "id": "way/36853705",
+    "lat": 44.8745458,
+    "lon": -93.3592263,
+    "name": "Edina",
+    "norm": "EDINA",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/36875992",
+    "lat": 44.9938791,
+    "lon": -93.4077239,
+    "name": "Bassett Creek Substation",
+    "norm": "BASSETT CREEK",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/36876063",
+    "lat": 44.9895312,
+    "lon": -93.3840302,
+    "name": "Medicine Lake Substation",
+    "norm": "MEDICINE LAKE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/380323672",
+    "lat": 45.4568022,
+    "lon": -95.0092254,
+    "name": "Crow Lake Substation",
+    "norm": "CROW LAKE",
+    "operator": "Stearns Electric",
+    "voltage": null
+  },
+  {
+    "id": "way/382413476",
+    "lat": 45.1806275,
+    "lon": -93.868496,
+    "name": "Buffalo Power Substation",
+    "norm": "BUFFALO POWER",
+    "operator": "Buffalo Municipal Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/383222156",
+    "lat": 45.2191921,
+    "lon": -93.418945,
+    "name": "Enterprise Park Substation",
+    "norm": "ENTERPRISE PARK",
+    "operator": "Anoka Municipal Utilities",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/38400943",
+    "lat": 44.9834293,
+    "lon": -93.2545371,
+    "name": "Main Street Substation",
+    "norm": "MAIN STREET",
+    "operator": "Xcel Energy",
+    "voltage": null
+  },
+  {
+    "id": "way/38452461",
+    "lat": 45.0164049,
+    "lon": -93.1795788,
+    "name": "Rose Place",
+    "norm": "ROSE PLACE",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/386224364",
+    "lat": 44.2392553,
+    "lon": -96.259237,
+    "name": "Buffalo Ridge Substation",
+    "norm": "BUFFALO RIDGE",
+    "operator": "Xcel Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/386224365",
+    "lat": 44.2516901,
+    "lon": -95.8773382,
+    "name": "Lake Yankton Substation",
+    "norm": "LAKE YANKTON",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/386399172",
+    "lat": 44.2820283,
+    "lon": -96.4224933,
+    "name": "Yankee Substation",
+    "norm": "YANKEE",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/386399174",
+    "lat": 44.3858549,
+    "lon": -96.252448,
+    "name": "Ivanhoe 115/69 Substation",
+    "norm": "IVANHOE 115/69",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/386399176",
+    "lat": 44.2836621,
+    "lon": -96.422198,
+    "name": "PPM Energy MinnDakota Collector Switching Station",
+    "norm": "PPM ENERGY MINNDAKOTA COLLECTOR SWITCHING STATION",
+    "operator": "MinnDakota Wind",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/386677755",
+    "lat": 44.1534454,
+    "lon": -95.9632351,
+    "name": "Ellsborough Substation",
+    "norm": "ELLSBOROUGH",
+    "operator": "Nobles Cooperative Electric",
+    "voltage": null
+  },
+  {
+    "id": "way/386813593",
+    "lat": 43.8815908,
+    "lon": -95.9229569,
+    "name": "Fenton Substation",
+    "norm": "FENTON",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/387623255",
+    "lat": 45.2180013,
+    "lon": -93.5481837,
+    "name": "Hassan Substation",
+    "norm": "HASSAN",
+    "operator": "Xcel Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/389112817",
+    "lat": 44.7403066,
+    "lon": -96.2280104,
+    "name": "Canby 115kV Substation",
+    "norm": "CANBY 115KV",
+    "operator": "Otter Tail Power Company",
+    "voltage": "115000;41600"
+  },
+  {
+    "id": "way/389792820",
+    "lat": 45.230187,
+    "lon": -96.1611654,
+    "name": "Correll Substation",
+    "norm": "CORRELL",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/389792821",
+    "lat": 45.2388632,
+    "lon": -96.1999819,
+    "name": "Marsh Lake Substation",
+    "norm": "MARSH LAKE",
+    "operator": "Great River Energy",
+    "voltage": "115000;41600"
+  },
+  {
+    "id": "way/389792823",
+    "lat": 45.2615062,
+    "lon": -96.3227696,
+    "name": "Odessa Substation",
+    "norm": "ODESSA",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/389792825",
+    "lat": 45.2092594,
+    "lon": -96.0420251,
+    "name": "Appleton Substation",
+    "norm": "APPLETON",
+    "operator": "Western Minnesota Municipal Power Agency",
+    "voltage": "115000;41600;12470"
+  },
+  {
+    "id": "way/389970824",
+    "lat": 45.1102307,
+    "lon": -96.0623348,
+    "name": "Louisburg Junction Substation",
+    "norm": "LOUISBURG JUNCTION",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/389970825",
+    "lat": 44.7764085,
+    "lon": -96.1948642,
+    "name": "Canby Substation",
+    "norm": "CANBY",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/389970828",
+    "lat": 44.9368262,
+    "lon": -96.0581255,
+    "name": "Dawson Substation",
+    "norm": "DAWSON",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/390914717",
+    "lat": 45.0206998,
+    "lon": -95.4931878,
+    "name": "Gluek Substation",
+    "norm": "GLUEK",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/390914718",
+    "lat": 44.9489032,
+    "lon": -95.4933581,
+    "name": "Maynard Distribution Substation",
+    "norm": "MAYNARD DISTRIBUTION",
+    "operator": "Xcel Energy",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/390914720",
+    "lat": 44.9476651,
+    "lon": -95.4943026,
+    "name": "Maynard Transmission Substation",
+    "norm": "MAYNARD TRANSMISSION",
+    "operator": "Xcel Energy",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/391623159",
+    "lat": 46.3116339,
+    "lon": -96.1321596,
+    "name": "Fergus Substation",
+    "norm": "FERGUS",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/392521059",
+    "lat": 46.6591019,
+    "lon": -96.1162638,
+    "name": "Tamarac Substation",
+    "norm": "TAMARAC",
+    "operator": "Great River Energy",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/394950150",
+    "lat": 46.1662759,
+    "lon": -95.371307,
+    "name": "Parkers Prairie Substation",
+    "norm": "PARKERS PRAIRIE",
+    "operator": null,
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/395797832",
+    "lat": 48.58677,
+    "lon": -96.6929072,
+    "name": "Halma Substation",
+    "norm": "HALMA",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/396052058",
+    "lat": 48.1073521,
+    "lon": -96.2030409,
+    "name": "Anderson Substation",
+    "norm": "ANDERSON",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/397850184",
+    "lat": 46.9186756,
+    "lon": -95.0180666,
+    "name": "Long Lake Substation",
+    "norm": "LONG LAKE",
+    "operator": null,
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/39800220",
+    "lat": 44.9933247,
+    "lon": -93.2070232,
+    "name": "Terminal Substation",
+    "norm": "TERMINAL",
+    "operator": "Xcel Energy",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/39822060",
+    "lat": 44.9235774,
+    "lon": -93.0417776,
+    "name": "Battle Creek Substation",
+    "norm": "BATTLE CREEK",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/40521134",
+    "lat": 44.9373901,
+    "lon": -93.3633846,
+    "name": "St. Louis Park Substation",
+    "norm": "ST. LOUIS PARK",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/426483203",
+    "lat": 46.9512986,
+    "lon": -92.8917998,
+    "name": "Savanna Substation",
+    "norm": "SAVANNA",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/427402706",
+    "lat": 46.5761292,
+    "lon": -93.6500142,
+    "name": "Kimberly Substation",
+    "norm": "KIMBERLY",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/427839226",
+    "lat": 46.8593907,
+    "lon": -92.8488398,
+    "name": "Gowan Substation",
+    "norm": "GOWAN",
+    "operator": "Lake Country Power",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/427839240",
+    "lat": 46.8549287,
+    "lon": -92.847766,
+    "name": "Gowan Substation",
+    "norm": "GOWAN",
+    "operator": "Great River Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/451340034",
+    "lat": 44.5225322,
+    "lon": -96.4515198,
+    "name": "Hendricks Wind Turbine Substation",
+    "norm": "HENDRICKS WIND TURBINE",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/461983414",
+    "lat": 44.5390868,
+    "lon": -95.0828196,
+    "name": "East Substation",
+    "norm": "EAST",
+    "operator": "Redwood Falls Public Utilities",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/462900297",
+    "lat": 43.6325769,
+    "lon": -95.571469,
+    "name": "East Substation",
+    "norm": "EAST",
+    "operator": "Worthington Public Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/468764208",
+    "lat": 43.8008348,
+    "lon": -94.8402625,
+    "name": "Trimont Substation",
+    "norm": "TRIMONT",
+    "operator": null,
+    "voltage": "345000;34500"
+  },
+  {
+    "id": "way/468764209",
+    "lat": 43.799719,
+    "lon": -94.8414178,
+    "name": "Martin County Substation",
+    "norm": "MARTIN COUNTY",
+    "operator": "Great River Energy",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/48665919",
+    "lat": 45.0344927,
+    "lon": -93.0387451,
+    "name": "Kohlman Lake",
+    "norm": "KOHLMAN LAKE",
+    "operator": "Xcel Energy",
+    "voltage": "345000;115000;13800"
+  },
+  {
+    "id": "way/488776105",
+    "lat": 44.9931155,
+    "lon": -93.6245764,
+    "name": "Orono Substation",
+    "norm": "ORONO",
+    "operator": "Xcel Energy",
+    "voltage": "115000;13800;12470"
+  },
+  {
+    "id": "way/503644935",
+    "lat": 47.7465241,
+    "lon": -96.867358,
+    "name": "Fisher Substation",
+    "norm": "FISHER",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/50792225",
+    "lat": 45.0654533,
+    "lon": -93.1512917,
+    "name": "Lexington Substation",
+    "norm": "LEXINGTON",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/52492779",
+    "lat": 44.755909,
+    "lon": -93.2518916,
+    "name": "Burnsville Substation",
+    "norm": "BURNSVILLE",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/527390434",
+    "lat": 44.9488597,
+    "lon": -95.370592,
+    "name": "Clara City Substation",
+    "norm": "CLARA CITY",
+    "operator": "Xcel Energy",
+    "voltage": "69000;23900"
+  },
+  {
+    "id": "way/527719106",
+    "lat": 44.9356063,
+    "lon": -94.9004706,
+    "name": "Lake Lillian Substation",
+    "norm": "LAKE LILLIAN",
+    "operator": null,
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/528021155",
+    "lat": 44.6383102,
+    "lon": -92.9966351,
+    "name": "Hampton Substation",
+    "norm": "HAMPTON",
+    "operator": null,
+    "voltage": "345000"
+  },
+  {
+    "id": "way/528031124",
+    "lat": 44.5959151,
+    "lon": -93.2959173,
+    "name": "Chub Lake Substation",
+    "norm": "CHUB LAKE",
+    "operator": null,
+    "voltage": "345000;115000;69000"
+  },
+  {
+    "id": "way/545930107",
+    "lat": 47.8319517,
+    "lon": -96.1376032,
+    "name": "Terrebonne Substation",
+    "norm": "TERREBONNE",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/545947875",
+    "lat": 47.8473594,
+    "lon": -95.8794639,
+    "name": "Oklee Substation",
+    "norm": "OKLEE",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": null
+  },
+  {
+    "id": "way/546438182",
+    "lat": 47.8747195,
+    "lon": -96.2775703,
+    "name": "Red Lake Falls 41.6kV Substation",
+    "norm": "RED LAKE FALLS 41.6KV",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/546443455",
+    "lat": 47.8623957,
+    "lon": -96.3737346,
+    "name": "Huot Substation",
+    "norm": "HUOT",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/55411748",
+    "lat": 44.862861,
+    "lon": -93.4353314,
+    "name": "Eden Prairie Substation",
+    "norm": "EDEN PRAIRIE",
+    "operator": null,
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/554749102",
+    "lat": 46.8262434,
+    "lon": -92.1661378,
+    "name": "Swan Lake Road Substation",
+    "norm": "SWAN LAKE ROAD",
+    "operator": "Minnesota Power",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/556326310",
+    "lat": 48.0227319,
+    "lon": -96.0545273,
+    "name": "Hazel Substation",
+    "norm": "HAZEL",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/560206332",
+    "lat": 47.3015489,
+    "lon": -93.451875,
+    "name": "Canisteo Substation",
+    "norm": "CANISTEO",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/562894107",
+    "lat": 45.1875291,
+    "lon": -93.411547,
+    "name": "Champlin Substation",
+    "norm": "CHAMPLIN",
+    "operator": "Anoka Municipal Utilities",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/583366351",
+    "lat": 45.6651533,
+    "lon": -94.88584,
+    "name": "Black Oak Substation",
+    "norm": "BLACK OAK",
+    "operator": "Xcel Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/588468706",
+    "lat": 47.9772503,
+    "lon": -96.6550691,
+    "name": "Euclid Substation",
+    "norm": "EUCLID",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/598197702",
+    "lat": 47.9457951,
+    "lon": -97.0227127,
+    "name": "Central Substation",
+    "norm": "CENTRAL",
+    "operator": "East Grand Forks Water and Light",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/598985854",
+    "lat": 47.8010524,
+    "lon": -96.7978746,
+    "name": "Fisher Substation",
+    "norm": "FISHER",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/601813623",
+    "lat": 48.5751392,
+    "lon": -96.8966994,
+    "name": "Donaldson Substation",
+    "norm": "DONALDSON",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/602140790",
+    "lat": 48.6454065,
+    "lon": -96.9081414,
+    "name": "Kennedy Substation",
+    "norm": "KENNEDY",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/60322178",
+    "lat": 44.9000301,
+    "lon": -93.5652705,
+    "name": "Excelsior Substation",
+    "norm": "EXCELSIOR",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800"
+  },
+  {
+    "id": "way/605977285",
+    "lat": 48.1260345,
+    "lon": -96.1527904,
+    "name": "Northland Substation",
+    "norm": "NORTHLAND",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/60692113",
+    "lat": 44.9540443,
+    "lon": -93.0753571,
+    "name": "Dayton's Bluff Substation",
+    "norm": "DAYTON'S BLUFF",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/607853582",
+    "lat": 43.8004751,
+    "lon": -92.6824841,
+    "name": "Pleasant Valley Substation",
+    "norm": "PLEASANT VALLEY",
+    "operator": "Great River Energy",
+    "voltage": "345000;161000"
+  },
+  {
+    "id": "way/608013585",
+    "lat": 43.7423844,
+    "lon": -92.6685369,
+    "name": "Grand Meadow Wind Farm Substation",
+    "norm": "GRAND MEADOW WIND FARM",
+    "operator": null,
+    "voltage": "161000"
+  },
+  {
+    "id": "way/608020368",
+    "lat": 43.7907544,
+    "lon": -92.7702642,
+    "name": "Sargeant Substation",
+    "norm": "SARGEANT",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/613142787",
+    "lat": 47.3502018,
+    "lon": -96.8318623,
+    "name": "Halstad Municipal Substation",
+    "norm": "HALSTAD MUNICIPAL",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/618683010",
+    "lat": 48.4064398,
+    "lon": -93.0637053,
+    "name": "Kabetogama Substation",
+    "norm": "KABETOGAMA",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/640750642",
+    "lat": 44.5312279,
+    "lon": -96.1620322,
+    "name": "Hawks Nest Lake Substation",
+    "norm": "HAWKS NEST LAKE",
+    "operator": "Xcel Energy",
+    "voltage": "345000;34500"
+  },
+  {
+    "id": "way/641089889",
+    "lat": 44.4732307,
+    "lon": -95.6713688,
+    "name": "Marshall Solar Project Substation",
+    "norm": "MARSHALL SOLAR PROJECT",
+    "operator": null,
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/641704663",
+    "lat": 44.5153562,
+    "lon": -94.8283917,
+    "name": "Cedar Mountain Substation",
+    "norm": "CEDAR MOUNTAIN",
+    "operator": "Great River Energy",
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/641746264",
+    "lat": 47.7894711,
+    "lon": -96.6084408,
+    "name": "Crookston Parkview Substation",
+    "norm": "CROOKSTON PARKVIEW",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/642011496",
+    "lat": 44.5550743,
+    "lon": -93.6568588,
+    "name": "Helena Substation",
+    "norm": "HELENA",
+    "operator": null,
+    "voltage": "345000"
+  },
+  {
+    "id": "way/645703379",
+    "lat": 44.6890549,
+    "lon": -95.910072,
+    "name": "Minneota Substation",
+    "norm": "MINNEOTA",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/645777412",
+    "lat": 44.7748477,
+    "lon": -94.1020968,
+    "name": "Diamond Substation",
+    "norm": "DIAMOND",
+    "operator": "Light & Power Commission",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/649365063",
+    "lat": 44.7734735,
+    "lon": -95.6020045,
+    "name": "Hazel Creek Substation",
+    "norm": "HAZEL CREEK",
+    "operator": null,
+    "voltage": "345000;230000"
+  },
+  {
+    "id": "way/65580044",
+    "lat": 44.9489278,
+    "lon": -93.1660319,
+    "name": "Merriam Park Substation",
+    "norm": "MERRIAM PARK",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/65584171",
+    "lat": 45.0871863,
+    "lon": -93.6863588,
+    "name": "Greenfield Substation",
+    "norm": "GREENFIELD",
+    "operator": "Xcel Energy",
+    "voltage": "69000;12470;120"
+  },
+  {
+    "id": "way/656134204",
+    "lat": 44.4595737,
+    "lon": -92.4741714,
+    "name": "Belvidere Hills Substation",
+    "norm": "BELVIDERE HILLS",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/656346032",
+    "lat": 45.1084989,
+    "lon": -93.1224069,
+    "name": "Birch Substation",
+    "norm": "BIRCH",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/656358951",
+    "lat": 48.5541514,
+    "lon": -93.3800795,
+    "name": "International Falls Substation",
+    "norm": "INTERNATIONAL FALLS",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/656364454",
+    "lat": 48.3988067,
+    "lon": -93.5667616,
+    "name": "Running Substation",
+    "norm": "RUNNING",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/656604857",
+    "lat": 48.6278672,
+    "lon": -94.1461693,
+    "name": "Birchdale Substation",
+    "norm": "BIRCHDALE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/659545285",
+    "lat": 47.724834,
+    "lon": -90.4726977,
+    "name": "Lutsen Substation",
+    "norm": "LUTSEN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/669548254",
+    "lat": 44.1946475,
+    "lon": -92.4230094,
+    "name": "Zumbro Substation",
+    "norm": "ZUMBRO",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/675575139",
+    "lat": 45.6909052,
+    "lon": -96.014526,
+    "name": "Donnelly Substation",
+    "norm": "DONNELLY",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/681929921",
+    "lat": 47.8992323,
+    "lon": -96.9762498,
+    "name": "Huntsville Substation",
+    "norm": "HUNTSVILLE",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/683365954",
+    "lat": 44.196884,
+    "lon": -94.008568,
+    "name": "Wilmarth Substation",
+    "norm": "WILMARTH",
+    "operator": "Xcel Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/690760631",
+    "lat": 45.8027917,
+    "lon": -96.1306811,
+    "name": "Herman Norcross Substation",
+    "norm": "HERMAN NORCROSS",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/691498360",
+    "lat": 47.7673245,
+    "lon": -96.6316688,
+    "name": "Crookston American Sugar Subdivision",
+    "norm": "CROOKSTON AMERICAN SUGAR SUBDIVISION",
+    "operator": "Otter Tail Power",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/692844527",
+    "lat": 46.8775623,
+    "lon": -96.0928086,
+    "name": "Lake Park Substation",
+    "norm": "LAKE PARK",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/700705749",
+    "lat": 44.8924159,
+    "lon": -93.0120639,
+    "name": "Maxwell",
+    "norm": "MAXWELL",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/712351833",
+    "lat": 46.8399016,
+    "lon": -96.7037357,
+    "name": "Opportunity Substation",
+    "norm": "OPPORTUNITY",
+    "operator": "Moorhead Public Service",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/715952394",
+    "lat": 44.9376376,
+    "lon": -93.6625725,
+    "name": "Mound Substation",
+    "norm": "MOUND",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800"
+  },
+  {
+    "id": "way/729190294",
+    "lat": 48.3307849,
+    "lon": -96.8267362,
+    "name": "Argyle Substation",
+    "norm": "ARGYLE",
+    "operator": "Ottter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/760048551",
+    "lat": 44.3561639,
+    "lon": -96.4037798,
+    "name": "Alpha Interconnection Station",
+    "norm": "ALPHA INTERCONNECTION STATION",
+    "operator": "Lake Benton Power Partners",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/761265498",
+    "lat": 43.6382548,
+    "lon": -91.5057133,
+    "name": "Wild Turkey Substation",
+    "norm": "WILD TURKEY",
+    "operator": null,
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/779477381",
+    "lat": 44.4429489,
+    "lon": -95.7350971,
+    "name": "Dudley Substation",
+    "norm": "DUDLEY",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/78286333",
+    "lat": 44.0802795,
+    "lon": -92.5377601,
+    "name": "Northern Hills Substation",
+    "norm": "NORTHERN HILLS",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/78290269",
+    "lat": 44.864261,
+    "lon": -93.4707498,
+    "name": "Westgate",
+    "norm": "WESTGATE",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/78537790",
+    "lat": 44.5752822,
+    "lon": -92.5952855,
+    "name": "Spring Creek Substation",
+    "norm": "SPRING CREEK",
+    "operator": null,
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/788085438",
+    "lat": 46.1227215,
+    "lon": -95.9993568,
+    "name": "Ten Mile Lake Substation",
+    "norm": "TEN MILE LAKE",
+    "operator": "Lake Region Electric Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/788085441",
+    "lat": 45.8036354,
+    "lon": -95.8844665,
+    "name": "Roseville Switching Station",
+    "norm": "ROSEVILLE SWITCHING STATION",
+    "operator": null,
+    "voltage": "41600"
+  },
+  {
+    "id": "way/788085442",
+    "lat": 45.8029494,
+    "lon": -95.8842888,
+    "name": "Roseville Substation",
+    "norm": "ROSEVILLE",
+    "operator": null,
+    "voltage": "41600"
+  },
+  {
+    "id": "way/788099205",
+    "lat": 44.3115815,
+    "lon": -95.7547162,
+    "name": "Amiret Substation",
+    "norm": "AMIRET",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/788256197",
+    "lat": 48.0642556,
+    "lon": -95.8083405,
+    "name": "High Landing Substation",
+    "norm": "HIGH LANDING",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/788256198",
+    "lat": 48.3065847,
+    "lon": -95.6156488,
+    "name": "Grygla Substation",
+    "norm": "GRYGLA",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/788301285",
+    "lat": 44.1385802,
+    "lon": -95.7432279,
+    "name": "Lake Sarah Substation",
+    "norm": "LAKE SARAH",
+    "operator": "Nobles Cooperative Electric",
+    "voltage": null
+  },
+  {
+    "id": "way/788308476",
+    "lat": 44.4024029,
+    "lon": -95.2686517,
+    "name": "Wabasso Substation",
+    "norm": "WABASSO",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/788322686",
+    "lat": 44.4724853,
+    "lon": -95.6654113,
+    "name": "Green Valley 69kV Substation",
+    "norm": "GREEN VALLEY 69KV",
+    "operator": "Otter Tail Power Company",
+    "voltage": "69000;41600;12470"
+  },
+  {
+    "id": "way/788340743",
+    "lat": 44.4717356,
+    "lon": -95.7782082,
+    "name": "N 7th Street Substation",
+    "norm": "N 7TH STREET",
+    "operator": "Marshall Municipal Utilities",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/788340749",
+    "lat": 45.2395768,
+    "lon": -95.9013506,
+    "name": "Moyer Substation",
+    "norm": "MOYER",
+    "operator": "Agralite Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/788340750",
+    "lat": 45.2395817,
+    "lon": -95.9142728,
+    "name": "Holloway Substation",
+    "norm": "HOLLOWAY",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/788616639",
+    "lat": 45.1670489,
+    "lon": -95.9188999,
+    "name": "Milan Substation",
+    "norm": "MILAN",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/788621771",
+    "lat": 44.5917886,
+    "lon": -96.0633027,
+    "name": "Taunton-St. Leo Substation",
+    "norm": "TAUNTON-ST. LEO",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/788662193",
+    "lat": 44.5521354,
+    "lon": -95.9717146,
+    "name": "Minneota E Industrial Substation",
+    "norm": "MINNEOTA E INDUSTRIAL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/788662195",
+    "lat": 44.791003,
+    "lon": -96.4493682,
+    "name": "Gary, SD Substation",
+    "norm": "GARY, SD",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/788725330",
+    "lat": 44.3990555,
+    "lon": -95.8963049,
+    "name": "Lynd Substation",
+    "norm": "LYND",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/788725331",
+    "lat": 44.7450058,
+    "lon": -96.3595242,
+    "name": "Burr Substation",
+    "norm": "BURR",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/789063633",
+    "lat": 47.1778925,
+    "lon": -96.2592048,
+    "name": "Syre Substation",
+    "norm": "SYRE",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/789139927",
+    "lat": 44.4877507,
+    "lon": -95.3497246,
+    "name": "Sheridian Substation",
+    "norm": "SHERIDIAN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/791614295",
+    "lat": 46.9773781,
+    "lon": -96.7458221,
+    "name": "Kragnes Substation",
+    "norm": "KRAGNES",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/791934741",
+    "lat": 44.4862664,
+    "lon": -95.5330495,
+    "name": "Milroy Substation",
+    "norm": "MILROY",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/792026448",
+    "lat": 44.3118033,
+    "lon": -95.9370859,
+    "name": "Russell Substation",
+    "norm": "RUSSELL",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/792352691",
+    "lat": 44.6447276,
+    "lon": -95.6143031,
+    "name": "Wood Lake Substation",
+    "norm": "WOOD LAKE",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/792352692",
+    "lat": 44.6154016,
+    "lon": -95.614232,
+    "name": "Yellow Medicine Substation",
+    "norm": "YELLOW MEDICINE",
+    "operator": "Xcel Energy",
+    "voltage": "69000;23900"
+  },
+  {
+    "id": "way/79236456",
+    "lat": 44.8874623,
+    "lon": -93.0114903,
+    "name": "Red Rock",
+    "norm": "RED ROCK",
+    "operator": null,
+    "voltage": "345000;230000;115000"
+  },
+  {
+    "id": "way/79236457",
+    "lat": 44.8870208,
+    "lon": -93.0214461,
+    "name": "Stockyards Substation",
+    "norm": "STOCKYARDS",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/792713061",
+    "lat": 45.5913087,
+    "lon": -95.9178071,
+    "name": "Morris 41.6kV Steel Substation",
+    "norm": "MORRIS 41.6KV STEEL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/792734000",
+    "lat": 45.6578005,
+    "lon": -96.0055358,
+    "name": "Donnelly Substation",
+    "norm": "DONNELLY",
+    "operator": "Agralite Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/792761892",
+    "lat": 44.2351472,
+    "lon": -95.7714884,
+    "name": "Garvin Substation",
+    "norm": "GARVIN",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/793047730",
+    "lat": 46.9778626,
+    "lon": -96.1098104,
+    "name": "Hitterdal Substation",
+    "norm": "HITTERDAL",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/793651925",
+    "lat": 44.5626745,
+    "lon": -95.9913567,
+    "name": "Minneota Substation",
+    "norm": "MINNEOTA",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/793655917",
+    "lat": 44.2247072,
+    "lon": -95.2700785,
+    "name": "Lamberton Substation",
+    "norm": "LAMBERTON",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/793655918",
+    "lat": 44.2388926,
+    "lon": -95.6335859,
+    "name": "Tracy Switching Station",
+    "norm": "TRACY SWITCHING STATION",
+    "operator": "Xcel Energy",
+    "voltage": "69000;13800;7970"
+  },
+  {
+    "id": "way/795005968",
+    "lat": 44.7179295,
+    "lon": -96.2608024,
+    "name": "Canby Substation",
+    "norm": "CANBY",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/797238964",
+    "lat": 44.2766931,
+    "lon": -96.1344272,
+    "name": "Tyler Substation",
+    "norm": "TYLER",
+    "operator": "East River Electric Power",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/797238965",
+    "lat": 44.3132148,
+    "lon": -96.1847929,
+    "name": "Tyler Substation",
+    "norm": "TYLER",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/797742727",
+    "lat": 47.7679871,
+    "lon": -96.4824905,
+    "name": "Gentilly Creek Substation",
+    "norm": "GENTILLY CREEK",
+    "operator": "Red Lake Electric Cooperative",
+    "voltage": null
+  },
+  {
+    "id": "way/798604830",
+    "lat": 44.2881586,
+    "lon": -95.5139346,
+    "name": "Walnut Grove Substation",
+    "norm": "WALNUT GROVE",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/799451731",
+    "lat": 46.8187729,
+    "lon": -96.6107473,
+    "name": "Sabin Substation",
+    "norm": "SABIN",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/804321587",
+    "lat": 46.9197351,
+    "lon": -95.2682415,
+    "name": "Osage Substation",
+    "norm": "OSAGE",
+    "operator": "Itasca-Mantrap Electrical Cooperative Association",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/806186738",
+    "lat": 44.2350108,
+    "lon": -95.624403,
+    "name": "Tracy Substation",
+    "norm": "TRACY",
+    "operator": "Xcel Energy",
+    "voltage": "69000;4160"
+  },
+  {
+    "id": "way/806549117",
+    "lat": 44.6461511,
+    "lon": -96.3375617,
+    "name": "Marble Substation",
+    "norm": "MARBLE",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/806549118",
+    "lat": 44.2612731,
+    "lon": -96.2931082,
+    "name": "Lake Benton Substation",
+    "norm": "LAKE BENTON",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12500"
+  },
+  {
+    "id": "way/806549119",
+    "lat": 44.5035188,
+    "lon": -96.4222123,
+    "name": "Hendricks Substation",
+    "norm": "HENDRICKS",
+    "operator": "Otter Tail Power Company",
+    "voltage": null
+  },
+  {
+    "id": "way/80718621",
+    "lat": 44.7751516,
+    "lon": -93.5699606,
+    "name": "Scott County Substation",
+    "norm": "SCOTT COUNTY",
+    "operator": null,
+    "voltage": "345000;115000;69000"
+  },
+  {
+    "id": "way/80718623",
+    "lat": 44.8423516,
+    "lon": -93.5739455,
+    "name": "Bluff Creek",
+    "norm": "BLUFF CREEK",
+    "operator": null,
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/807352074",
+    "lat": 44.1588079,
+    "lon": -94.0308499,
+    "name": "Sibley Park Substation",
+    "norm": "SIBLEY PARK",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/807680383",
+    "lat": 44.7181433,
+    "lon": -96.2975632,
+    "name": "Canby W Rural Substation",
+    "norm": "CANBY W RURAL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/807904879",
+    "lat": 44.6889297,
+    "lon": -96.2492309,
+    "name": "Canby SE Rural Substation",
+    "norm": "CANBY SE RURAL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/809868331",
+    "lat": 47.078708,
+    "lon": -96.6056201,
+    "name": "Georgetown Substation",
+    "norm": "GEORGETOWN",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/810074420",
+    "lat": 47.2952438,
+    "lon": -96.7753424,
+    "name": "Hendrum Substation",
+    "norm": "HENDRUM",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/810075627",
+    "lat": 47.6811713,
+    "lon": -96.7811109,
+    "name": "Eldred Substation",
+    "norm": "ELDRED",
+    "operator": "Otter Tail Power Company",
+    "voltage": "23900;4160"
+  },
+  {
+    "id": "way/81049505",
+    "lat": 44.9927737,
+    "lon": -93.2768656,
+    "name": "West River Road Substation",
+    "norm": "WEST RIVER ROAD",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/81049527",
+    "lat": 45.0225028,
+    "lon": -93.2757563,
+    "name": "Riverside Substation",
+    "norm": "RIVERSIDE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/815018822",
+    "lat": 46.9701112,
+    "lon": -95.4558794,
+    "name": "Shell Lake Substation",
+    "norm": "SHELL LAKE",
+    "operator": "Itasca-Mantrap Electrical Cooperative Association",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/817434123",
+    "lat": 43.6475241,
+    "lon": -93.2627184,
+    "name": "Hayward Substation",
+    "norm": "HAYWARD",
+    "operator": "ITC Midwest",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/819272483",
+    "lat": 43.6455407,
+    "lon": -92.6186422,
+    "name": "Prairie Star Substation",
+    "norm": "PRAIRIE STAR",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/821264690",
+    "lat": 46.5294321,
+    "lon": -94.4533536,
+    "name": "Stonybrook Substation",
+    "norm": "STONYBROOK",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/822405186",
+    "lat": 44.0150554,
+    "lon": -92.3776761,
+    "name": "Chester Substation",
+    "norm": "CHESTER",
+    "operator": null,
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/823650869",
+    "lat": 43.616624,
+    "lon": -92.597891,
+    "name": "Mower County Wind Energy Substation",
+    "norm": "MOWER COUNTY WIND ENERGY",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/83669410",
+    "lat": 44.8578233,
+    "lon": -93.2304773,
+    "name": "East Bloomington Substation",
+    "norm": "EAST BLOOMINGTON",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/837286250",
+    "lat": 46.1985599,
+    "lon": -96.0188146,
+    "name": "Dalton Substation",
+    "norm": "DALTON",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/837495188",
+    "lat": 45.1381509,
+    "lon": -93.8303853,
+    "name": "Mary Lake Substation",
+    "norm": "MARY LAKE",
+    "operator": "Wright-Hennepin Cooperative Electric Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/839158051",
+    "lat": 44.4792195,
+    "lon": -95.7539548,
+    "name": "Green Valley Substation",
+    "norm": "GREEN VALLEY",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/847718507",
+    "lat": 44.2994004,
+    "lon": -96.3643597,
+    "name": "Lake Benton Substation",
+    "norm": "LAKE BENTON",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/847718508",
+    "lat": 44.2842542,
+    "lon": -96.3429859,
+    "name": "Charlie Interconnect Station",
+    "norm": "CHARLIE INTERCONNECT STATION",
+    "operator": "Lake Benton Power Partners",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/847722841",
+    "lat": 44.4306967,
+    "lon": -96.2813717,
+    "name": "Ivanhoe Substation",
+    "norm": "IVANHOE",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/847722842",
+    "lat": 44.4670183,
+    "lon": -96.2497029,
+    "name": "Ivanhoe-Wilno Substation",
+    "norm": "IVANHOE-WILNO",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/84831629",
+    "lat": 44.8604361,
+    "lon": -93.2796439,
+    "name": "Wilson Substation",
+    "norm": "WILSON",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/848562798",
+    "lat": 43.8955897,
+    "lon": -95.9442638,
+    "name": "Chandler Substation",
+    "norm": "CHANDLER",
+    "operator": "Nobles Electric Cooperative",
+    "voltage": null
+  },
+  {
+    "id": "way/849560016",
+    "lat": 44.8545582,
+    "lon": -95.9311323,
+    "name": "Appeldorn Substation",
+    "norm": "APPELDORN",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "230000;;69000"
+  },
+  {
+    "id": "way/849573177",
+    "lat": 44.8338184,
+    "lon": -95.7462442,
+    "name": "Lisbon Substation",
+    "norm": "LISBON",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/849977162",
+    "lat": 45.9095257,
+    "lon": -95.892704,
+    "name": "Barrett Substation",
+    "norm": "BARRETT",
+    "operator": "Otter Tail Power Company",
+    "voltage": null
+  },
+  {
+    "id": "way/852192947",
+    "lat": 43.5729458,
+    "lon": -95.954109,
+    "name": "Adrian Substation",
+    "norm": "ADRIAN",
+    "operator": "Nobles Cooperative Electric",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/852192948",
+    "lat": 43.7478096,
+    "lon": -95.9525678,
+    "name": "Lismore City Substation",
+    "norm": "LISMORE CITY",
+    "operator": "Nobles Cooperative Electric",
+    "voltage": null
+  },
+  {
+    "id": "way/858347891",
+    "lat": 45.239317,
+    "lon": -96.0313824,
+    "name": "Shible Substation",
+    "norm": "SHIBLE",
+    "operator": "Agralite Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/858347892",
+    "lat": 45.2977445,
+    "lon": -96.199236,
+    "name": "Akron Substation",
+    "norm": "AKRON",
+    "operator": "Agralite Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/858347894",
+    "lat": 45.3984935,
+    "lon": -96.2191949,
+    "name": "Artichoke Substation",
+    "norm": "ARTICHOKE",
+    "operator": "Agralite Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/858354335",
+    "lat": 45.3835782,
+    "lon": -95.9733468,
+    "name": "Fairfield Substation",
+    "norm": "FAIRFIELD",
+    "operator": "Agralite Cooperative",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/858616594",
+    "lat": 44.4127637,
+    "lon": -94.9066775,
+    "name": "Morgan Substation",
+    "norm": "MORGAN",
+    "operator": null,
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859453338",
+    "lat": 44.2532032,
+    "lon": -95.2687403,
+    "name": "Cottonwood Substation",
+    "norm": "COTTONWOOD",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859453339",
+    "lat": 44.3409218,
+    "lon": -95.4100356,
+    "name": "Johnsonville Substation",
+    "norm": "JOHNSONVILLE",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859465378",
+    "lat": 44.4847248,
+    "lon": -95.1079535,
+    "name": "Redwood Substation",
+    "norm": "REDWOOD",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859465379",
+    "lat": 44.3398724,
+    "lon": -95.2072722,
+    "name": "Wanda Substation",
+    "norm": "WANDA",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859465380",
+    "lat": 44.3257905,
+    "lon": -95.0877164,
+    "name": "Sundown Substation",
+    "norm": "SUNDOWN",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859535300",
+    "lat": 44.2313041,
+    "lon": -95.2935351,
+    "name": "Highwater Ethanol Substation",
+    "norm": "HIGHWATER ETHANOL",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/859535302",
+    "lat": 44.2237604,
+    "lon": -95.3621287,
+    "name": "Revere Substation",
+    "norm": "REVERE",
+    "operator": "Redwood Electric Cooperative",
+    "voltage": null
+  },
+  {
+    "id": "way/859802126",
+    "lat": 44.5162603,
+    "lon": -96.040226,
+    "name": "Ghent Substation",
+    "norm": "GHENT",
+    "operator": "East River Electric Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/860194813",
+    "lat": 44.6437483,
+    "lon": -95.4629604,
+    "name": "Echo Substation",
+    "norm": "ECHO",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/860226774",
+    "lat": 44.6152003,
+    "lon": -95.7470944,
+    "name": "Vallers Substation",
+    "norm": "VALLERS",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/860226775",
+    "lat": 44.8765523,
+    "lon": -95.5336185,
+    "name": "Asbury Substation",
+    "norm": "ASBURY",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/863097271",
+    "lat": 45.2983158,
+    "lon": -93.825613,
+    "name": "First Lake Substation",
+    "norm": "FIRST LAKE",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/872046081",
+    "lat": 44.6334612,
+    "lon": -96.1638881,
+    "name": "Porter Substation",
+    "norm": "PORTER",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/872338053",
+    "lat": 45.6563485,
+    "lon": -94.7083712,
+    "name": "Riverview Substation",
+    "norm": "RIVERVIEW",
+    "operator": "Great River Energy",
+    "voltage": "345000;115000;69000"
+  },
+  {
+    "id": "way/872369707",
+    "lat": 48.1524034,
+    "lon": -96.1535023,
+    "name": "Dakota Junction Substation",
+    "norm": "DAKOTA JUNCTION",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/872691868",
+    "lat": 46.9778513,
+    "lon": -96.501401,
+    "name": "Averill Substation",
+    "norm": "AVERILL",
+    "operator": "Xcel Energy",
+    "voltage": "69000;23900;4160"
+  },
+  {
+    "id": "way/874796924",
+    "lat": 44.9363817,
+    "lon": -94.7185427,
+    "name": "Adams Windtower Substation",
+    "norm": "ADAMS WINDTOWER",
+    "operator": "Adams Wind Generations",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/874915267",
+    "lat": 46.4715037,
+    "lon": -96.2786526,
+    "name": "Rothsay Substation",
+    "norm": "ROTHSAY",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/878003081",
+    "lat": 44.327097,
+    "lon": -96.4036529,
+    "name": "Lake Benton Power Partners Bravo",
+    "norm": "LAKE BENTON POWER PARTNERS BRAVO",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/879312012",
+    "lat": 45.3043986,
+    "lon": -93.7999871,
+    "name": "Linn Street Substation",
+    "norm": "LINN STREET",
+    "operator": "Xcel Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/879468680",
+    "lat": 44.5332081,
+    "lon": -95.1116205,
+    "name": "South Substation",
+    "norm": "SOUTH",
+    "operator": "Redwood Falls Public Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/880367296",
+    "lat": 45.5566971,
+    "lon": -96.0554943,
+    "name": "Alberta Substation",
+    "norm": "ALBERTA",
+    "operator": null,
+    "voltage": "41600"
+  },
+  {
+    "id": "way/882164177",
+    "lat": 46.3267256,
+    "lon": -95.8142185,
+    "name": "Silver Lake Substation",
+    "norm": "SILVER LAKE",
+    "operator": "Great River Energy",
+    "voltage": "230000;41600"
+  },
+  {
+    "id": "way/883873414",
+    "lat": 48.0069264,
+    "lon": -96.869812,
+    "name": "Tabor Substation",
+    "norm": "TABOR",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/884211962",
+    "lat": 47.0491513,
+    "lon": -96.3011987,
+    "name": "Ulen Substation",
+    "norm": "ULEN",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/884852592",
+    "lat": 47.840759,
+    "lon": -95.8587542,
+    "name": "Oklee Substation",
+    "norm": "OKLEE",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/885909510",
+    "lat": 46.0061202,
+    "lon": -95.9563231,
+    "name": "Cats Eye Substation",
+    "norm": "CATS EYE",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/885909514",
+    "lat": 46.0362877,
+    "lon": -96.1038035,
+    "name": "Wendell Substation",
+    "norm": "WENDELL",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/885946668",
+    "lat": 45.5018613,
+    "lon": -95.792047,
+    "name": "Hancock Substation",
+    "norm": "HANCOCK",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/888325983",
+    "lat": 45.6638612,
+    "lon": -94.6937586,
+    "name": "Wobegon Trail Substation",
+    "norm": "WOBEGON TRAIL",
+    "operator": "Xcel Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/890778167",
+    "lat": 45.2991391,
+    "lon": -96.4418783,
+    "name": "Cashtown Substation",
+    "norm": "CASHTOWN",
+    "operator": null,
+    "voltage": "41600"
+  },
+  {
+    "id": "way/890822542",
+    "lat": 46.8811805,
+    "lon": -96.3178846,
+    "name": "Hawley Municipal Substation",
+    "norm": "HAWLEY MUNICIPAL",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/890822543",
+    "lat": 46.8336845,
+    "lon": -96.282226,
+    "name": "Hawley Rural Substation",
+    "norm": "HAWLEY RURAL",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/890822545",
+    "lat": 46.8332172,
+    "lon": -96.1752473,
+    "name": "Lake Park Substation",
+    "norm": "LAKE PARK",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/891120661",
+    "lat": 46.3110553,
+    "lon": -96.141943,
+    "name": "Fergus Falls Pipeline Substation",
+    "norm": "FERGUS FALLS PIPELINE",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600"
+  },
+  {
+    "id": "way/891124612",
+    "lat": 46.3036325,
+    "lon": -96.0733106,
+    "name": "Fergus Falls North Cleveland Substation",
+    "norm": "FERGUS FALLS NORTH CLEVELAND",
+    "operator": "Otter Tail Power Company",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/891942910",
+    "lat": 45.0219153,
+    "lon": -95.6754578,
+    "name": "Rosewood Substation",
+    "norm": "ROSEWOOD",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/892075493",
+    "lat": 47.2958925,
+    "lon": -96.5000452,
+    "name": "Ada Substation",
+    "norm": "ADA",
+    "operator": "Xcel Energy",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/892075495",
+    "lat": 47.2957715,
+    "lon": -96.5437128,
+    "name": "Ada Substation",
+    "norm": "ADA",
+    "operator": "Minnkota Power Cooperative",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/892385590",
+    "lat": 45.0188422,
+    "lon": -95.8785379,
+    "name": "Watson Substation",
+    "norm": "WATSON",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/892768700",
+    "lat": 45.723721,
+    "lon": -94.9585843,
+    "name": "Sauk Centre Substation",
+    "norm": "SAUK CENTRE",
+    "operator": "Sauk Centre Public Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/892785969",
+    "lat": 45.6801972,
+    "lon": -94.7157573,
+    "name": "Millwood Substation",
+    "norm": "MILLWOOD",
+    "operator": "Stearns Electric Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/892827348",
+    "lat": 45.5647585,
+    "lon": -94.2755735,
+    "name": "West St. Cloud Substation",
+    "norm": "WEST ST. CLOUD",
+    "operator": "Great River Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/893103364",
+    "lat": 45.0981281,
+    "lon": -95.1515978,
+    "name": "Water Plant Substation",
+    "norm": "WATER PLANT",
+    "operator": "Willmar Municipal Utilities",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/893147376",
+    "lat": 45.0663273,
+    "lon": -94.3280236,
+    "name": "Dassel Substation #4",
+    "norm": "DASSEL",
+    "operator": "Meeker Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/893147377",
+    "lat": 45.0078217,
+    "lon": -94.3690756,
+    "name": "Lake Jennie Substation #11",
+    "norm": "LAKE JENNIE",
+    "operator": "Meeker Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/893753949",
+    "lat": 44.9070811,
+    "lon": -96.0840956,
+    "name": "Riverside Substation",
+    "norm": "RIVERSIDE",
+    "operator": "Minnesota Valley Cooperative Light & Power Association",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/907164661",
+    "lat": 44.2823405,
+    "lon": -96.4200358,
+    "name": "Community Wind North Project Collector Substation",
+    "norm": "COMMUNITY WIND NORTH PROJECT COLLECTOR",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/911204354",
+    "lat": 47.2303299,
+    "lon": -93.303368,
+    "name": "Iron Range Substation",
+    "norm": "IRON RANGE",
+    "operator": "Minnesota Power",
+    "voltage": "500000;230000;46000"
+  },
+  {
+    "id": "way/92921839",
+    "lat": 44.8330672,
+    "lon": -93.1362148,
+    "name": "Yankee Doodle Substation",
+    "norm": "YANKEE DOODLE",
+    "operator": null,
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/92921849",
+    "lat": 44.8467267,
+    "lon": -93.130648,
+    "name": "Lone Oak Substation",
+    "norm": "LONE OAK",
+    "operator": null,
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/92921851",
+    "lat": 44.8768072,
+    "lon": -93.1308406,
+    "name": "Rogers Lake Substation",
+    "norm": "ROGERS LAKE",
+    "operator": null,
+    "voltage": "115000"
+  },
+  {
+    "id": "way/92933485",
+    "lat": 44.7867803,
+    "lon": -93.4269709,
+    "name": "Blue Lake Substation",
+    "norm": "BLUE LAKE",
+    "operator": null,
+    "voltage": "345000;230000;115000"
+  },
+  {
+    "id": "way/92933497",
+    "lat": 44.7805281,
+    "lon": -93.4732166,
+    "name": "Dean Lake Substation",
+    "norm": "DEAN LAKE",
+    "operator": null,
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/92993911",
+    "lat": 44.8597525,
+    "lon": -93.3371061,
+    "name": "Nine Mile Creek Substation",
+    "norm": "NINE MILE CREEK",
+    "operator": "Xcel Energy",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/936908395",
+    "lat": 48.7878069,
+    "lon": -95.4197133,
+    "name": "Warroad River Series Compensation Station",
+    "norm": "WARROAD RIVER SERIES COMPENSATION STATION",
+    "operator": "Minnesota Power",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/94497942",
+    "lat": 44.9044081,
+    "lon": -93.1562934,
+    "name": "Shepard Substation",
+    "norm": "SHEPARD",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/949255045",
+    "lat": 45.0223929,
+    "lon": -93.929915,
+    "name": "Woodland Substation",
+    "norm": "WOODLAND",
+    "operator": "Wright-Hennepin Electric",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/976810167",
+    "lat": 47.0157192,
+    "lon": -95.1088951,
+    "name": "Potato Lake Substation",
+    "norm": "POTATO LAKE",
+    "operator": "Itasca-Mantrap Electrical Cooperative Association",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/976810174",
+    "lat": 47.0070958,
+    "lon": -94.9974555,
+    "name": "Mantrap Substation",
+    "norm": "MANTRAP",
+    "operator": "Itasca-Mantrap Electrical Cooperative Association",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/98183833",
+    "lat": 44.9310942,
+    "lon": -93.2259634,
+    "name": "Southtown",
+    "norm": "SOUTHTOWN",
+    "operator": null,
+    "voltage": null
+  },
+  {
+    "id": "way/985390016",
+    "lat": 43.9203873,
+    "lon": -93.1402379,
+    "name": "Oak Glen Wind Project Substation",
+    "norm": "OAK GLEN WIND PROJECT",
+    "operator": null,
+    "voltage": "69000;34500"
+  },
+  {
+    "id": "way/988438049",
+    "lat": 46.7391837,
+    "lon": -95.0935366,
+    "name": "Spirit Lake Substation",
+    "norm": "SPIRIT LAKE",
+    "operator": null,
+    "voltage": "34500"
+  },
+  {
+    "id": "way/992471243",
+    "lat": 46.9196175,
+    "lon": -95.0535309,
+    "name": "Park Rapids Substation",
+    "norm": "PARK RAPIDS",
+    "operator": "Itasca-Mantrap Electrical Cooperative Association",
+    "voltage": "34500"
+  }
+]
