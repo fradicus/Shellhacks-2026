@@ -1,5 +1,5 @@
 {
-  "version": "national-owner-aliases-v1",
+  "version": "national-owner-aliases-v2",
   "notes": [
     "Exact case/whitespace normalization only. Explicit grouped aliases conservatively suppress intra-family pairs. Unlisted owners and unresolved co-owners are excluded. Filed literal identities cite their imported public sources; no publisher is substituted for an owner."
   ],
@@ -478,20 +478,6 @@
     },
     {
       "identities": [
-        "bepc"
-      ],
-      "aliases": [
-        "BEPC"
-      ],
-      "evidence": [
-        "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
-        "https://www.ercot.com/gridinfo/sysplan",
-        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
-        "https://www.spp.org/engineering/project-tracking-ntcs/"
-      ]
-    },
-    {
-      "identities": [
         "nppd"
       ],
       "aliases": [
@@ -591,6 +577,34 @@
       "evidence": [
         "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
         "https://www.ercot.com/gridinfo/sysplan"
+      ]
+    },
+    {
+      "identities": [
+        "brazos-electric"
+      ],
+      "aliases": [
+        "BEPC"
+      ],
+      "source_ids": [
+        "ercot-tpit-2026-07"
+      ],
+      "evidence": [
+        "https://www.ercot.com/files/docs/2024/08/13/10-2-oncor-temple-area-regional-planning-group-rpg-project.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "basin-electric"
+      ],
+      "aliases": [
+        "BEPC"
+      ],
+      "source_ids": [
+        "spp-qpt-2026q3"
+      ],
+      "evidence": [
+        "https://opsportal.spp.org/documents/studies/files/2019_Generation_Studies/GEN2019037%20IFS%20Summary%20FINAL%20Combined.pdf"
       ]
     }
   ]

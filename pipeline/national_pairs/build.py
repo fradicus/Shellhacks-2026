@@ -24,26 +24,35 @@ def owner_key(value: str) -> str:
     return " ".join(value.casefold().split())
 
 
-def owner_index(ledger: dict) -> dict[str, frozenset[str]]:
+def owner_index(ledger: dict) -> dict[tuple[str, str], frozenset[str]]:
     """Only explicit aliases. A conflicting alias fails the release, never picks a winner."""
     result = {}
     for entry in ledger["entries"]:
         identities = frozenset(entry["identities"])
         if not identities or not entry["evidence"]:
             raise ValueError("owner identity and evidence are required")
-        for alias in entry["aliases"]:
-            key = owner_key(alias)
-            if not key or key in result and result[key] != identities:
-                raise ValueError(f"ambiguous owner alias: {alias}")
-            result[key] = identities
+        for source in entry.get("source_ids", ["*"]):
+            for alias in entry["aliases"]:
+                key = (source, owner_key(alias))
+                if not key[1] or key in result and result[key] != identities:
+                    raise ValueError(f"ambiguous owner alias: {source}: {alias}")
+                result[key] = identities
     return result
 
 
-def identities(p: dict, owners: dict) -> frozenset[str] | None:
-    names = [p.get("owner"), *p.get("other_owners", [])]
-    if any(not isinstance(name, str) or owner_key(name) not in owners for name in names):
+def resolve_owner(name: str | None, source: str, owners: dict) -> frozenset[str] | None:
+    if not isinstance(name, str):
         return None
-    return frozenset().union(*(owners[owner_key(name)] for name in names))
+    key = owner_key(name)
+    return owners.get((source, key), owners.get(("*", key)))
+
+
+def identities(p: dict, owners: dict) -> frozenset[str] | None:
+    matches = [resolve_owner(name, p.get("source_id", ""), owners)
+               for name in [p.get("owner"), *p.get("other_owners", [])]]
+    if any(match is None for match in matches):
+        return None
+    return frozenset().union(*matches)
 
 
 def exclusion(p: dict) -> str | None:
@@ -93,7 +102,7 @@ def generate(snapshot: dict, ledger: dict | None = None, root: Path = REPO_ROOT)
         if not ids:
             excluded["unresolved_owner"] += 1
             for name in [p.get("owner"), *p.get("other_owners", [])]:
-                if not isinstance(name, str) or owner_key(name) not in owners:
+                if resolve_owner(name, p.get("source_id", ""), owners) is None:
                     unknown[str(name)] += 1
             continue
         accepted.append((p, ids))
