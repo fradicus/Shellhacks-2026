@@ -40,7 +40,10 @@ under F38/C23; a rejection returns it to unlocated with the reason retained.
 
 ## Integration and undo
 
-F40 writes national-schema-valid records to `data/greatlakes/projects.json`. Getting them into the national
-snapshot needs a small F30 build hook that validates and appends that fixed path (new IDs only, no silent overwrite),
-which F30's owner claims separately. The shared new-project contract from C24 supersedes this hook if it lands first.
-Undo by deleting `data/greatlakes/` or setting candidate centers back to null; verified data is untouched.
+Publication follows the fixed-release pattern of [C29](C29-texas-candidate-publication.md) under the
+[C25](C25-main-demo-map.md) display tiers, which already name this rule as its candidate tier. F40 owns
+`data/greatlakes/releases/active.json` and `pipeline/greatlakes/publish.py` (`apply_release`); the release pins the
+exact `data/greatlakes/projects.json` hash, per-source hashes and expected counts, and adds new IDs only. F30's owner
+appends that call to the national build under a separate claim; a missing or invalid file changes nothing. A
+transmission owner's own published project-map coordinate (e.g. AEP) is C25's Official tier, not a candidate.
+Undo by deleting the active release or `data/greatlakes/`; verified data is untouched.

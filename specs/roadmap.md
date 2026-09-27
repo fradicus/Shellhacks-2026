@@ -205,7 +205,7 @@ candidate and area-only display tiers in [C25](decisions/C25-main-demo-map.md). 
 The user instructed Claude local to fill the map across the Great Lakes, starting with Minnesota, targeting ~5,000
 points, and chose a labeled candidate-location tier over the F38 review bar for this rollout. [C26](decisions/C26-great-lakes-candidates.md)
 assigns [F40](features/F40-great-lakes/spec.md): MN, WI, MI, IL, IN, OH, PA, NY. Candidates are never counted as verified.
-Publication needs a separately claimed F30 hook or the C24 shared new-project contract.
+Publication uses a fixed F40 release appended by F30's owner, following C29.
 
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
