@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { type FormEvent, useCallback, useMemo, useState, useTransition } from "react";
+import { type FormEvent, useCallback, useEffect, useMemo, useState, useTransition } from "react";
 import { Badge, Button, EmptyState, ErrorState } from "@/components/ui";
 import {
   applyFilterAction,
@@ -11,6 +11,7 @@ import {
   STATUS_LABEL,
   validateGeographyFilters,
 } from "@/lib/national/filters";
+import type { MindMapTree } from "@/lib/national/mindmap";
 import type {
   GeoBounds,
   NationalActionResult,
@@ -22,6 +23,7 @@ import type {
   NationalProject,
   NationalSource,
 } from "@/lib/national/types";
+import { MindMap } from "./MindMap";
 import { NationalMap } from "./NationalMap";
 import { LocationEvidence } from "./LocationEvidence";
 import s from "./national.module.css";
@@ -77,7 +79,18 @@ export function NationalExplorer({
   const [validationError, setValidationError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const [history, setHistory] = useState<HistoryItem[]>([]);
+  const [mindTree, setMindTree] = useState<MindMapTree | null>(null);
+  const [mindError, setMindError] = useState<string | null>(null);
+  const [mindLoadedKey, setMindLoadedKey] = useState<string | null>(null);
+  const [mindTick, setMindTick] = useState(0);
   const geography = initial.geography;
+  const activeView = initial.filters.view === "mindmap" ? "mindmap" : "map";
+  const mindQuery = serializeNationalFilters({ ...initial.filters, page: 1, view: undefined });
+  const mindRequestKey = `${mindQuery}#${mindTick}`;
+  const mindLoading = activeView === "mindmap" && initial.available && mindLoadedKey !== mindRequestKey;
+  const mindMapError = !initial.available
+    ? (initial.reason ?? "National projects unavailable")
+    : mindError;
   const currentIds = useMemo(() => [...new Set([...initial.projects, ...initial.mapProjects].map((project) => project._id))], [initial.mapProjects, initial.projects]);
   const currentIdSet = useMemo(() => new Set(currentIds), [currentIds]);
   const sourceById = useMemo(() => new Map(initial.sources.map((source) => [source._id, source])), [initial.sources]);
@@ -177,9 +190,34 @@ export function NationalExplorer({
     patch({ text: String(data.get("text") ?? "").trim() || undefined });
   };
   const pages = Math.max(1, Math.ceil(initial.total / initial.limit));
-  const exportQuery = serializeNationalFilters({ ...initial.filters, page: 1 });
+  const exportQuery = serializeNationalFilters({ ...initial.filters, page: 1, view: undefined });
   const unknownStateCount = initial.coverage?.sources.reduce((sum, source) => sum + source.unknown_state_count, 0);
   const unknownCountyCount = initial.coverage?.sources.reduce((sum, source) => sum + source.unknown_county_count, 0);
+
+  useEffect(() => {
+    if (activeView !== "mindmap" || !initial.available) return;
+    const abort = new AbortController();
+    const requestKey = mindRequestKey;
+    const url = `/api/national/mindmap${mindQuery ? `?${mindQuery}` : ""}`;
+    fetch(url, { signal: abort.signal, headers: { Accept: "application/json" } })
+      .then(async (response) => {
+        const body = await response.json() as { available?: boolean; reason?: string; tree?: MindMapTree | null };
+        if (!response.ok || !body.available || !body.tree) {
+          throw new Error(body.reason ?? `Mind map request failed (${response.status})`);
+        }
+        if (abort.signal.aborted) return;
+        setMindTree(body.tree);
+        setMindError(null);
+        setMindLoadedKey(requestKey);
+      })
+      .catch((error: unknown) => {
+        if (abort.signal.aborted) return;
+        setMindTree(null);
+        setMindError(error instanceof Error ? error.message : "Mind map unavailable");
+        setMindLoadedKey(requestKey);
+      });
+    return () => abort.abort();
+  }, [activeView, initial.available, mindQuery, mindRequestKey]);
 
   return (
     <main className={s.page} aria-busy={pending}>
@@ -225,33 +263,75 @@ export function NationalExplorer({
         {unknownStateCount !== undefined || unknownCountyCount !== undefined ? <p className={s.coverageHint}>Assignment coverage in the published snapshot: {unknownStateCount === undefined ? "unknown" : n(unknownStateCount)} records have no asserted state and {unknownCountyCount === undefined ? "unknown" : n(unknownCountyCount)} have no asserted county. Reference boundaries do not fill those gaps.</p> : null}
       </section>
 
-      <div className={s.workspace}>
-        <div className={s.mapCol}>
-          <NationalMap
-            projects={initial.mapProjects}
-            selectedId={selectedId}
-            focusBounds={focusBounds}
-            emptyMessage={initial.mapProjects.length ? undefined : !initial.available ? "Project points unavailable. Reference geography is not a project dataset." : initial.total ? `${n(initial.total)} records match, but none has an evidenced project point.` : "No project points match the current filters."}
-            onSelect={setSelectedId}
-          />
-          {initial.mapTruncated ? <p className={s.note}>The map reached its 2,000-point safety limit. Narrow the filters; the table count remains exact.</p> : null}
-        </div>
-        <section className={s.results} aria-label="Filtered projects">
-          <div className={s.resultsHead}>
-            <div><h2>Projects</h2><p>{initial.available ? <>Showing {initial.projects.length ? n((initial.page - 1) * initial.limit + 1) : 0}–{n(Math.min(initial.page * initial.limit, initial.total))} of {n(initial.total)}</> : "Results unavailable"}</p></div>
-            {initial.available ? <div><a className={s.export} href={`/api/national/export${exportQuery ? `?${exportQuery}` : ""}`}>Export CSV</a><br /><a className={s.export} href={`/api/national/export?${exportQuery ? `${exportQuery}&` : ""}format=json`}>Export JSON evidence</a></div> : null}
-          </div>
-          {!initial.available ? <EmptyState title="Project records are unavailable">Reference geography is not a project dataset.</EmptyState> : initial.projects.length === 0 ? <EmptyState title="No matches in the imported records">This does not mean the selected area has no planned construction. Records with unknown state or county cannot satisfy a geographic filter.</EmptyState> : (
-            <ol className={s.projectList}>
-              {initial.projects.map((project) => {
-                const source = sourceById.get(project.source_id);
-                return <li key={project._id}><button className={project._id === selectedId ? s.selectedRow : s.projectRow} onClick={() => setSelectedId(project._id)}><span><strong>{project.name}</strong><small>{project.native_id} · {display(project.owner)}</small></span><span className={s.rowMeta}><Badge tone={project.center ? "ok" : "warn"}>{project.center ? project.location_review.replaceAll("_", " ") : "location unknown"}</Badge><small>{STATUS_LABEL[project.status_group]}</small></span></button><details><summary>Source evidence</summary><SourceEvidence project={project} source={source} /></details></li>;
-              })}
-            </ol>
-          )}
-          <div className={s.pagination}><Button disabled={initial.page <= 1 || pending} onClick={() => navigate({ ...initial.filters, page: initial.page - 1 }, false)}>Previous</Button><span>Page {n(initial.page)} of {n(pages)}</span><Button disabled={initial.page >= pages || pending} onClick={() => navigate({ ...initial.filters, page: initial.page + 1 }, false)}>Next</Button></div>
-        </section>
+      <div className={s.viewTabs} role="tablist" aria-label="Explorer views">
+        <button
+          type="button"
+          role="tab"
+          id="explore-tab-map"
+          aria-selected={activeView === "map"}
+          aria-controls="explore-panel-map"
+          className={activeView === "map" ? s.viewTabActive : s.viewTab}
+          onClick={() => patch({ view: "map" })}
+        >
+          Map &amp; list
+        </button>
+        <button
+          type="button"
+          role="tab"
+          id="explore-tab-mindmap"
+          aria-selected={activeView === "mindmap"}
+          aria-controls="explore-panel-mindmap"
+          className={activeView === "mindmap" ? s.viewTabActive : s.viewTab}
+          onClick={() => patch({ view: "mindmap" })}
+        >
+          Mind map
+        </button>
       </div>
+
+      {activeView === "mindmap" ? (
+        <div id="explore-panel-mindmap" role="tabpanel" aria-labelledby="explore-tab-mindmap">
+          <MindMap
+            tree={mindTree}
+            loading={mindLoading}
+            error={mindMapError}
+            onSelectProject={(project) => {
+              setSelectedId(project.id);
+              patch({ view: "map", text: project.nativeId.slice(0, 120) });
+            }}
+            onRetry={() => setMindTick((value) => value + 1)}
+          />
+        </div>
+      ) : (
+        <div id="explore-panel-map" role="tabpanel" aria-labelledby="explore-tab-map">
+          <div className={s.workspace}>
+            <div className={s.mapCol}>
+              <NationalMap
+                projects={initial.mapProjects}
+                selectedId={selectedId}
+                focusBounds={focusBounds}
+                emptyMessage={initial.mapProjects.length ? undefined : !initial.available ? "Project points unavailable. Reference geography is not a project dataset." : initial.total ? `${n(initial.total)} records match, but none has an evidenced project point.` : "No project points match the current filters."}
+                onSelect={setSelectedId}
+              />
+              {initial.mapTruncated ? <p className={s.note}>The map reached its 2,000-point safety limit. Narrow the filters; the table count remains exact.</p> : null}
+            </div>
+            <section className={s.results} aria-label="Filtered projects">
+              <div className={s.resultsHead}>
+                <div><h2>Projects</h2><p>{initial.available ? <>Showing {initial.projects.length ? n((initial.page - 1) * initial.limit + 1) : 0}–{n(Math.min(initial.page * initial.limit, initial.total))} of {n(initial.total)}</> : "Results unavailable"}</p></div>
+                {initial.available ? <div><a className={s.export} href={`/api/national/export${exportQuery ? `?${exportQuery}` : ""}`}>Export CSV</a><br /><a className={s.export} href={`/api/national/export?${exportQuery ? `${exportQuery}&` : ""}format=json`}>Export JSON evidence</a></div> : null}
+              </div>
+              {!initial.available ? <EmptyState title="Project records are unavailable">Reference geography is not a project dataset.</EmptyState> : initial.projects.length === 0 ? <EmptyState title="No matches in the imported records">This does not mean the selected area has no planned construction. Records with unknown state or county cannot satisfy a geographic filter.</EmptyState> : (
+                <ol className={s.projectList}>
+                  {initial.projects.map((project) => {
+                    const source = sourceById.get(project.source_id);
+                    return <li key={project._id}><button className={project._id === selectedId ? s.selectedRow : s.projectRow} onClick={() => setSelectedId(project._id)}><span><strong>{project.name}</strong><small>{project.native_id} · {display(project.owner)}</small></span><span className={s.rowMeta}><Badge tone={project.center ? "ok" : "warn"}>{project.center ? project.location_review.replaceAll("_", " ") : "location unknown"}</Badge><small>{STATUS_LABEL[project.status_group]}</small></span></button><details><summary>Source evidence</summary><SourceEvidence project={project} source={source} /></details></li>;
+                  })}
+                </ol>
+              )}
+              <div className={s.pagination}><Button disabled={initial.page <= 1 || pending} onClick={() => navigate({ ...initial.filters, page: initial.page - 1 }, false)}>Previous</Button><span>Page {n(initial.page)} of {n(pages)}</span><Button disabled={initial.page >= pages || pending} onClick={() => navigate({ ...initial.filters, page: initial.page + 1 }, false)}>Next</Button></div>
+            </section>
+          </div>
+        </div>
+      )}
 
       {selected ? <aside className={s.drawer} aria-label="Selected project details"><div><p className={s.eyebrow}>Selected project</p><h2>{selected.name}</h2></div><Button onClick={() => setSelectedId(null)}>Close</Button><dl><div><dt>Owner</dt><dd>{display(selected.owner)}</dd></div><div><dt>Planning region</dt><dd>{display(selected.planning_region)}</dd></div><div><dt>Reported states</dt><dd>{selected.states.map((code) => stateById.get(code) ?? code).join(", ") || "Unknown"}</dd></div><div><dt>Reported counties</dt><dd>{selected.counties.map((code) => countyById.get(code) ?? code).join(", ") || "Unknown"}</dd></div><div><dt>Location basis</dt><dd>{display(selected.geography_basis)}</dd></div><div><dt>Milestone</dt><dd>{display(selected.in_service.raw)} ({selected.in_service.precision})</dd></div></dl><p>{selected.description ?? "No description was published in the imported row."}</p><div className={s.drawerEvidence}><SourceEvidence project={selected} source={sourceById.get(selected.source_id)} /></div></aside> : null}
 
