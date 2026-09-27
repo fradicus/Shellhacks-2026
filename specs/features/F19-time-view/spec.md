@@ -86,3 +86,61 @@ are ones their publisher lists as in service, dated 2001–2025, which pushed "t
 plans and `/history` (F37) keeps the record, so `/time` now draws national records that are not in service; the
 in-service count links to History. The ground rule in step 2 bounds the axis to about 2025–2035 on the current data.
 Stored pairs, distances, gaps and rankings are unchanged. Each project card links to `/history?origin=<key>`.
+
+## Scope and focus (2026-09-27)
+
+The user reported that the national view is overwhelming: 1,400 near-identical cream pillars, all full height, in
+five dense blobs. The user asked for a way to go from the national picture to the part a person cares about, by
+region, by state, and by "everything within 25 miles of this point", without adding more clutter. Decisions:
+[F19-scope-focus](../../decisions/F19-scope-focus.md).
+
+**The one idea.** There is always one *scope*. The national view stays as the opening shot. Choosing a scope lifts
+the projects inside it to their dates and lays everything else down as a faint ground trace. Height keeps
+meaning one thing only: the filed in-service date of a project you are looking at.
+
+15. **Scope bar.** A single control at the top centre of the map, between the side panels (top left on phones).
+    Closed, it reads the current scope and its count: `All projects · 1,414` or `Texas · 569 of 1,414 ×`. Opened, it
+    is a search field over three groups, each option with its drawn count, largest first:
+    - **Regions**: the four Census regions (`census_region_code` of each state in the committed Census geography).
+    - **Grid plans**: the stored `planning_region` of national projects, grouped case-insensitively and shown with a
+      readable name (ERCOT, NYISO, ATC 10-year …); unknown codes show as stored. It is the plan a record was filed
+      in, not an inferred operator; records with no stored value are reachable by state only.
+    - **States**: every state with at least one drawn project.
+    - **Pin 25 mi**: arm, then click the map.
+    Keyboard: ↑/↓ move, Enter picks, Esc closes; `/` focuses it. Only one scope is active; picking replaces it.
+16. **Membership, from stored facts only.** A national project is in a state if the state is in its stored `states`
+    (so a two-state line is in both). A legacy project is in the state of the filing it came from: `desc-*` is South
+    Carolina, `gpc-*` is Georgia. Region follows state. A pin scope contains every drawn project whose stored centre
+    is within 25 statute miles of the pin, by the matcher's own haversine (R = 3,958.8 mi). Nothing is recomputed
+    for pairs; the pin is a lookup, not an overlap.
+17. **Focus.** In scope: unchanged. Out of scope: no pillar, no bead, no halo; only a small neutral-grey ground ring
+    at low brightness, so the national shape stays as context without competing. The grey is distinct from every
+    data colour, so a grey ring never reads as "no date". Out-of-scope projects are not pickable. The today sheet,
+    the year ruler and the sweep counter follow the scope. A selected or previewed pair still wins over scope.
+18. **Arrival.** Choosing a scope flies the camera to the scope's drawn projects (pin: the 25-mile circle) and
+    replays the timelapse for just that scope (1.6 s; reduced motion: at once), so a region rises in date order.
+    **Overview** and the story return to `All projects`.
+19. **Pin.** The 25-mile circle is drawn around the pin with the pair view's ring, labelled `25 mi · N projects`.
+    Every project card also offers **Within 25 mi →**, which pins its stored centre. The All projects drawer lists
+    the scope's projects (for a pin, nearest first, with distance).
+20. **Lists follow scope.** The pair tabs count and list pairs with both ends in scope; the empty state names the
+    scope. The tray counts and the drawer list are the scope's.
+21. **Shareable.** `?scope=region:3`, `state:48`, `plan:ercot` or `pin:29.7604,-95.3698` opens on that scope; the
+    URL follows changes. An unknown or malformed value is ignored.
+
+### Requirements (scope)
+- No inferred operator, state or location. Counts are counts of drawn projects; unlocated ones are never scoped.
+- Scope never changes a pair, distance, gap, rank, date or tier. Clearing it restores the exact previous view.
+- Accessible: the scope control is a labelled combobox/listbox; the chosen scope and its count are announced.
+
+### Validation (scope)
+- `node --import ./tests/web/operations-providers/loader.mjs --test web/components/time/scope.test.ts` (parse and
+  format round trip, rejection of malformed values, haversine against the matcher, pin boundary, legacy states).
+- Screenshots at 1440 and 390: national, a region, a state, a grid plan, a pin, a pair selected under a scope.
+- Repo-wide checks.
+
+### Deferred
+- A cursor-following focus lens: it does the same job as the scope, reads worse on a trackpad, and would need a
+  GPU path to stay cheap. Revisit only if a scoped view still feels crowded.
+- Rebuilding GPU buffers on every hover change is fine at 1.4k projects; move emphasis to a shader attribute when
+  the drawn count passes ~10k.

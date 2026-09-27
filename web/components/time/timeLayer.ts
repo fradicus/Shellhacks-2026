@@ -11,7 +11,8 @@ import { hex, mul, ease, points, fillPoints, lines, fillLines, project, createRe
 
 type Ml = typeof import("maplibre-gl");
 
-export type Emphasis = "normal" | "dim" | "hot" | "sel";
+/** `out`: outside the chosen scope, laid down as a grey ground trace (F19 spec 17). */
+export type Emphasis = "out" | "normal" | "dim" | "hot" | "sel";
 export interface TimeItem {
   key: string;
   color: string;
@@ -41,16 +42,19 @@ export type Projected = Map<string, { x: number; y: number; on: boolean }>;
 /** The two centers of a selected pair, for drawing the 25-mile rule around each. */
 export interface RuleRings {
   a: { lng: number; lat: number; color: string };
-  b: { lng: number; lat: number; color: string };
+  /** Absent for a pin: one circle. */
+  b?: { lng: number; lat: number; color: string };
 }
 /** Sweep progress during the intro: the year reached and how many dated items are filed in service by then. */
 export type SweepState = { years: number; shown: number; total: number } | null;
 
 const INK: RGB = hex("#f4efe6");
-const BRIGHT: Record<Emphasis, number> = { normal: 1, dim: 0.18, hot: 1.5, sel: 1.6 };
+/** Out-of-scope trace: no data colour, so it never reads as a tier, a utility or an undated project. */
+const TRACE: RGB = hex("#7d8799");
+const BRIGHT: Record<Emphasis, number> = { out: 0.75, normal: 1, dim: 0.18, hot: 1.5, sel: 1.6 };
 const RULE_M = 40_233.6; // 25 statute miles, the overlap rule's radius
 const GHOST = 0.2; // brightness of items filed after the scrubber's date
-const SIZE: Record<Emphasis, number> = { normal: 10, dim: 7, hot: 16, sel: 22 };
+const SIZE: Record<Emphasis, number> = { out: 6, normal: 10, dim: 7, hot: 16, sel: 22 };
 
 // One point shader for beads (0), ground rings (1) and ruler ticks (2). Additive, so draw order doesn't matter.
 const POINT_VS = /* glsl */ `
@@ -169,7 +173,7 @@ export function createTimeLayer(
   let sweep = Infinity;
   let sweepAnim: { start: number; ms: number; to: number } | null = null;
   let asOf: number | null = null;
-  let rules: { a: [number, number, number]; b: [number, number, number]; start: number } | null = null;
+  let rules: { a: [number, number, number]; b?: [number, number, number]; start: number } | null = null;
   // Last frame's screen geometry for picking: pillar foot and top per item.
   let hits: { key: string; x0: number; y0: number; x1: number; y1: number }[] = [];
 
@@ -235,9 +239,13 @@ export function createTimeLayer(
     let dated = 0;
 
     // Dim first, bright last, so highlighted pillars read on top even with additive blending.
-    const rank = { dim: 0, normal: 1, hot: 2, sel: 3 } as const;
+    const rank = { out: -1, dim: 0, normal: 1, hot: 2, sel: 3 } as const;
     for (const it of [...items].sort((x, y) => rank[emph(x.key)] - rank[emph(y.key)])) {
       const e = emph(it.key);
+      if (e === "out") {
+        rings.push({ p: [...local(it.lng, it.lat), 0], c: TRACE, size: SIZE.out, shape: 1, bright: BRIGHT.out });
+        continue;
+      }
       const c = hex(it.color);
       const [x, y] = local(it.lng, it.lat);
       const full = topOf(it.span);
@@ -346,8 +354,9 @@ export function createTimeLayer(
     fillPoints(marks, marksRows);
 
     // The glass sheet covers the drawn area with a margin, centred on it.
-    if (items.length) {
-      const xs = items.map((it) => local(it.lng, it.lat));
+    const lifted = items.filter((it) => emph(it.key) !== "out");
+    if (lifted.length) {
+      const xs = lifted.map((it) => local(it.lng, it.lat));
       const minX = Math.min(...xs.map((p) => p[0]));
       const maxX = Math.max(...xs.map((p) => p[0]));
       const minY = Math.min(...xs.map((p) => p[1]));
@@ -447,7 +456,8 @@ export function createTimeLayer(
       const ch = map.getCanvas().clientHeight;
       const out: Projected = new Map();
       for (const l of labels) out.set(l.id, project(m, ...local(l.lng, l.lat), l.years, cw, ch));
-      hits = items.map((it) => {
+      // Out-of-scope traces are context, not targets.
+      hits = items.filter((it) => focus?.emphasis(it.key) !== "out").map((it) => {
         const [x, y] = local(it.lng, it.lat);
         const foot = project(m, x, y, 0, cw, ch);
         const top = project(m, x, y, topOf(it.span), cw, ch);
@@ -506,7 +516,7 @@ export function createTimeLayer(
       asOf = years;
       rebuild();
     },
-    /** Draw the 25-mile rule around both ends of the selected pair (null clears it). */
+    /** Draw the 25-mile rule around both ends of the selected pair, or around a pin (null clears it). */
     setRules(next: RuleRings | null) {
       if (!next) {
         rules = null;
@@ -517,9 +527,9 @@ export function createTimeLayer(
           const r = (RULE_M * ml.MercatorCoordinate.fromLngLat([e.lng, e.lat]).meterInMercatorCoordinateUnits()) / unit;
           return [x, y, r];
         };
-        rules = { a: end(next.a), b: end(next.b), start: performance.now() };
+        rules = { a: end(next.a), b: next.b ? end(next.b) : undefined, start: performance.now() };
         (ruleA.mesh.material as LineMaterial).color.set(next.a.color);
-        (ruleB.mesh.material as LineMaterial).color.set(next.b.color);
+        if (next.b) (ruleB.mesh.material as LineMaterial).color.set(next.b.color);
       }
       map?.triggerRepaint();
     },

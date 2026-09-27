@@ -54,8 +54,13 @@ export default async function TimePage() {
     review_state: m.review_state ?? null,
   }));
 
+  // Scope needs only names, postal codes and Census regions; counties and bounds stay on the server.
+  const geography = {
+    states: (national.geography?.states ?? []).map((st) => ({ fips: st.state_fips, name: st.name, usps: st.usps, region: st.census_region_code ?? "" })),
+    regions: (national.geography?.regions ?? []).map((r) => ({ code: r.region_code, name: r.name })),
+  };
   return (
-    <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
+    <TimeView projects={slim} geography={geography} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
         drawn: nationalPoints.length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );
