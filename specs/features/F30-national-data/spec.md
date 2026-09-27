@@ -33,3 +33,11 @@ Validate the committed base, apply F38's fixed `data/expansion/releases/active.j
 and per-source coverage, and validate the assembled result before staging. Missing releases preserve the base;
 invalid releases fail closed. Preserve F38's expansion summary and embed its evidence under the same national
 dataset pointer. `build_snapshot` continues to emit only original base observations, never an applied overlay.
+
+## Southeast additions (C27)
+
+After the validated base and optional C23 overlay, invoke F39's fixed-path assembler for
+`data/southeast/releases/active.json`. Recompute national and per-source coverage and validate
+the combined snapshot before staging. Preserve both producer summaries, project events and
+location evidence. Missing active releases leave the original base behavior intact; invalid
+Southeast releases must prevent activation. The existing load Action remains the sole writer.
