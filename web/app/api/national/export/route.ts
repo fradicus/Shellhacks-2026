@@ -1,5 +1,6 @@
 import { parseNationalFilters } from "@/lib/national/filters";
 import { loadNationalExport } from "@/lib/national/server";
+import { locationLabel } from "@/lib/national/locations";
 import { toCsv } from "@/app/api/export/csv";
 
 export const dynamic = "force-dynamic";
@@ -22,18 +23,20 @@ export async function GET(req: Request) {
     }
     if (format === "json") return Response.json({
       dataset: payload.dataset, mode: payload.mode, filters: payload.filters,
-      total: payload.total, locatedTotal: payload.locatedTotal, unlocatedTotal: payload.unlocatedTotal,
+      total: payload.total, locatedTotal: payload.locatedTotal, unlocatedTotal: payload.unlocatedTotal, approximateTotal: payload.approximateTotal ?? 0,
       projects: payload.projects, sources: payload.sources, coverage: payload.coverage,
     }, { headers: {
       "Cache-Control": "no-store",
       "Content-Disposition": 'attachment; filename="gridbridge-national-projects.json"',
     } });
-    const header = ["id", "name", "owner", "planning_region", "states", "counties", "status", "in_service_raw", "in_service_value", "in_service_precision", "location_review", "latitude", "longitude", "source_id", "source_page", "source_sheet", "source_row"];
+    const header = ["id", "name", "owner", "planning_region", "states", "counties", "status", "in_service_raw", "in_service_value", "in_service_precision", "location_review", "latitude", "longitude", "source_id", "source_page", "source_sheet", "source_row", "location_label", "approximate_location", "candidate_evidence"];
     const rows = payload.projects.map((project) => [
       project._id, project.name, project.owner, project.planning_region, project.states.join("|"), project.counties.join("|"),
       project.status ?? project.status_group, project.in_service.raw, project.in_service.value, project.in_service.precision,
       project.location_review, project.center?.lat, project.center?.lon, project.source_id, project.evidence.page,
-      project.evidence.sheet, project.evidence.row,
+      project.evidence.sheet, project.evidence.row, locationLabel(project),
+      project.approximate_location ? JSON.stringify(project.approximate_location) : null,
+      project.location_candidate ? JSON.stringify(project.location_candidate) : null,
     ]);
     const csv = toCsv(header, rows);
     return new Response(csv, {

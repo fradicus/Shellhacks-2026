@@ -23,6 +23,8 @@ import type {
   NationalSource,
 } from "@/lib/national/types";
 import { NationalMap } from "./NationalMap";
+import { displayPoints, locationLabel } from "@/lib/national/locations";
+import { LocationSummary } from "./LocationSummary";
 import { LocationEvidence } from "./LocationEvidence";
 import s from "./national.module.css";
 
@@ -56,6 +58,7 @@ function SourceEvidence({ project, source }: { project: NationalProject; source?
       <p>Access: {source?.access_policy?.replaceAll("_", " ") ?? "not reported"} · SHA-256: <code>{source?.sha256 ?? "not available"}</code></p>
       {source?.notes.length ? <ul>{source.notes.map((note, index) => <li key={`${source._id}-note-${index}`}>{note}</li>)}</ul> : null}
       {source?.landing_url ? <p><a href={source.landing_url} target="_blank" rel="noreferrer">Open source landing page</a></p> : null}
+      <LocationSummary project={project} />
       {project.location_verification ? <LocationEvidence verification={project.location_verification} /> : null}
       {raw.length ? <details><summary>Imported source fields</summary><dl className={s.rawFields}>{raw.map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{rawValue(value)}</dd></div>)}</dl></details> : null}
     </div>
@@ -142,7 +145,7 @@ export function NationalExplorer({
 
   const controller: NationalExplorerController = useMemo(() => ({
     filters: initial.filters,
-    results: { ids: currentIds, total: initial.total, located: initial.locatedTotal, unlocated: initial.unlocatedTotal },
+    results: { ids: currentIds, total: initial.total, located: initial.locatedTotal + (initial.approximateTotal ?? 0), unlocated: initial.unlocatedTotal },
     availability: { loading: pending, available: initial.available, mode: initial.mode },
     reference: {
       regions: geography?.regions ?? [], states: geography?.states ?? [], counties: geography?.counties ?? [], sources: initial.sources,
@@ -151,7 +154,7 @@ export function NationalExplorer({
     applyAction,
     reset,
     undo,
-  }), [applyAction, currentIds, geography, initial.available, initial.filters, initial.locatedTotal, initial.mode, initial.sources, initial.total, initial.unlocatedTotal, pending, reset, selectedId, undo]);
+  }), [applyAction, currentIds, geography, initial.available, initial.filters, initial.locatedTotal, initial.approximateTotal, initial.mode, initial.sources, initial.total, initial.unlocatedTotal, pending, reset, selectedId, undo]);
 
   const states = useMemo(() => geography?.states.filter((state) => !initial.filters.region || state.census_region_code === initial.filters.region) ?? [], [geography, initial.filters.region]);
   const counties = useMemo(() => geography?.counties.filter((county) => !initial.filters.state || county.state_fips === initial.filters.state) ?? [], [geography, initial.filters.state]);
@@ -206,7 +209,7 @@ export function NationalExplorer({
 
       <section className={s.metrics} aria-label="Filtered project counts">
         <div><strong>{initial.available ? n(initial.total) : "—"}</strong><span>filtered records</span></div>
-        <div><strong>{initial.available ? n(initial.locatedTotal) : "—"}</strong><span>evidenced points</span></div>
+        <div><strong>{initial.available ? n(initial.locatedTotal + (initial.approximateTotal ?? 0)) : "—"}</strong><span>projects with map locations</span></div>
         <div><strong>{initial.available ? n(initial.unlocatedTotal) : "—"}</strong><span>location unknown</span></div>
         <div><strong>{n(initial.sources.filter((source) => source.import_status === "imported").length)}</strong><span>imported sources</span></div>
       </section>
@@ -245,7 +248,7 @@ export function NationalExplorer({
             <ol className={s.projectList}>
               {initial.projects.map((project) => {
                 const source = sourceById.get(project.source_id);
-                return <li key={project._id}><button className={project._id === selectedId ? s.selectedRow : s.projectRow} onClick={() => setSelectedId(project._id)}><span><strong>{project.name}</strong><small>{project.native_id} · {display(project.owner)}</small></span><span className={s.rowMeta}><Badge tone={project.center ? "ok" : "warn"}>{project.center ? project.location_review.replaceAll("_", " ") : "location unknown"}</Badge><small>{STATUS_LABEL[project.status_group]}</small></span></button><details><summary>Source evidence</summary><SourceEvidence project={project} source={source} /></details></li>;
+                return <li key={project._id}><button className={project._id === selectedId ? s.selectedRow : s.projectRow} onClick={() => setSelectedId(project._id)}><span><strong>{project.name}</strong><small>{project.native_id} · {display(project.owner)}</small></span><span className={s.rowMeta}><Badge tone={displayPoints(project).length ? "ok" : "warn"}>{locationLabel(project)}</Badge><small>{STATUS_LABEL[project.status_group]}</small></span></button><details><summary>Source evidence</summary><SourceEvidence project={project} source={source} /></details></li>;
               })}
             </ol>
           )}
