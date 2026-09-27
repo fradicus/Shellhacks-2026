@@ -1,0 +1,92 @@
+{
+  "firstenergy-transmission-projects:OH:avery-hayes": {
+    "evidence": {
+      "docket": "PUCO 26-0504-EL-FOR",
+      "form": 46,
+      "joined_by": "siting case",
+      "retrieved_at": "2026-09-27T08:39:34Z",
+      "sha256": "b853b5093cbc4f4115c23f52e4ab4f5eb4d2f7d2dbe992340ac02ede52e5b975",
+      "url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26F02B44352J03794"
+    },
+    "in_service": {
+      "precision": "year",
+      "raw": "Operation: 2027 (FirstEnergy 2026 LTFR Form FE3-T9: Avery-Hayes 138 kV Line)",
+      "value": "2027"
+    }
+  },
+  "firstenergy-transmission-projects:OH:evergreen-highland-interconnection-project": {
+    "evidence": {
+      "docket": "PUCO 26-0504-EL-FOR",
+      "form": 13,
+      "joined_by": "siting case",
+      "retrieved_at": "2026-09-27T08:39:34Z",
+      "sha256": "b853b5093cbc4f4115c23f52e4ab4f5eb4d2f7d2dbe992340ac02ede52e5b975",
+      "url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26F02B44352J03794"
+    },
+    "in_service": {
+      "precision": "year",
+      "raw": "Operation: 2026 (FirstEnergy 2026 LTFR Form FE3-T9: Evergreen to Highland 138 kV Line)",
+      "value": "2026"
+    }
+  },
+  "firstenergy-transmission-projects:OH:evergreen-highland-project": {
+    "evidence": {
+      "docket": "PUCO 26-0504-EL-FOR",
+      "form": 13,
+      "joined_by": "same two terminals",
+      "retrieved_at": "2026-09-27T08:39:34Z",
+      "sha256": "b853b5093cbc4f4115c23f52e4ab4f5eb4d2f7d2dbe992340ac02ede52e5b975",
+      "url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26F02B44352J03794"
+    },
+    "in_service": {
+      "precision": "year",
+      "raw": "Operation: 2026 (FirstEnergy 2026 LTFR Form FE3-T9: Evergreen to Highland 138 kV Line)",
+      "value": "2026"
+    }
+  },
+  "firstenergy-transmission-projects:OH:hawthorne-substation-project": {
+    "evidence": {
+      "docket": "PUCO 26-0504-EL-FOR",
+      "form": 47,
+      "joined_by": "siting case",
+      "retrieved_at": "2026-09-27T08:39:34Z",
+      "sha256": "b853b5093cbc4f4115c23f52e4ab4f5eb4d2f7d2dbe992340ac02ede52e5b975",
+      "url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26F02B44352J03794"
+    },
+    "in_service": {
+      "precision": "year",
+      "raw": "Operation: 2028 (FirstEnergy 2026 LTFR Form FE3-T9: Angola-Midway 138 kV Line)",
+      "value": "2028"
+    }
+  },
+  "firstenergy-transmission-projects:OH:nevada-substation-expansion-project": {
+    "evidence": {
+      "docket": "PUCO 26-0504-EL-FOR",
+      "form": 42,
+      "joined_by": "siting case",
+      "retrieved_at": "2026-09-27T08:39:34Z",
+      "sha256": "b853b5093cbc4f4115c23f52e4ab4f5eb4d2f7d2dbe992340ac02ede52e5b975",
+      "url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26F02B44352J03794"
+    },
+    "in_service": {
+      "precision": "year",
+      "raw": "Operation: 2026 (FirstEnergy 2026 LTFR Form FE3-T9: Boardman-Sammis 138 kV Line)",
+      "value": "2026"
+    }
+  },
+  "firstenergy-transmission-projects:OH:niles-shenango-transmission-line-project": {
+    "evidence": {
+      "docket": "PUCO 26-0504-EL-FOR",
+      "form": 72,
+      "joined_by": "same two terminals",
+      "retrieved_at": "2026-09-27T08:39:34Z",
+      "sha256": "b853b5093cbc4f4115c23f52e4ab4f5eb4d2f7d2dbe992340ac02ede52e5b975",
+      "url": "https://dis.puc.state.oh.us/ViewImage.aspx?CMID=A1001001A26F02B44352J03794"
+    },
+    "in_service": {
+      "precision": "year",
+      "raw": "Operation: 2027 (FirstEnergy 2026 LTFR Form FE3-T9: Niles - Shenango 345 kV Line)",
+      "value": "2027"
+    }
+  }
+}
