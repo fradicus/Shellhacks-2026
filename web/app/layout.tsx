@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Big_Shoulders, Martian_Mono, Public_Sans } from "next/font/google";
 import { Nav } from "@/components/nav/Nav";
+import { AssistantHost } from "@/components/assistant/AssistantHost";
 import "./globals.css";
 
 // Signage and instrument type (F21 decision 2): condensed display for headings and figures, the U.S. government's
@@ -22,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
         <Nav />
-        {children}
+        <AssistantHost>{children}</AssistantHost>
       </body>
     </html>
   );
