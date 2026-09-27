@@ -13,6 +13,7 @@ import {
   RequestEpoch,
   RouteResponseSchema,
   SiteResponseSchema,
+  WaterResponseSchema,
   VerifiedCoverageResponseSchema,
   VerifiedListResponseSchema,
   VisibilityPoller,
@@ -22,6 +23,8 @@ import {
   claimAttempt,
   conditionsInterval,
   directoryBinding,
+  draftFromSearchParams,
+  formatCoordinate,
   outcomeBinding,
   pointBinding,
   readResponse,
@@ -34,8 +37,10 @@ import {
   type RouteResponse,
   type SiteDraft,
   type SiteResponse,
+  type WaterResponse,
 } from "./logic";
-import { AEFPanel, OutcomePanel, RoadworkPanel, RoutePanel, SoilPanel, StatusBadge, WeatherPanel, formatTime } from "./Evidence";
+import { AEFPanel, OutcomePanel, RoadworkPanel, RoutePanel, SoilPanel, StatusBadge, WaterPanel, WeatherPanel, formatTime } from "./Evidence";
+import { WorksiteMap } from "./WorksiteMap";
 import styles from "./operations.module.css";
 
 const EMPTY_SITE: SiteDraft = { label: "", lat: "", lon: "", year: "" };
@@ -83,6 +88,8 @@ export function OperationsDesk() {
   const [conditions, setConditions] = useState<ConditionsResponse | null>(null);
   const [conditionsError, setConditionsError] = useState<string | null>(null);
   const [conditionsLoading, setConditionsLoading] = useState(false);
+  const [waterResult, setWaterResult] = useState<WaterResponse | null>(null);
+  const [waterError, setWaterError] = useState<string | null>(null);
 
   const [routeDraft, setRouteDraft] = useState<RouteDraft>(EMPTY_ROUTE);
   const [routeResult, setRouteResult] = useState<RouteResponse | null>(null);
@@ -124,7 +131,11 @@ export function OperationsDesk() {
   useEffect(() => {
     const zoneTimer = setTimeout(() => setTimeZone(Intl.DateTimeFormat().resolvedOptions().timeZone || "local device time"), 0);
     const metadataTimer = setTimeout(loadMetadata, 0);
-    return () => { clearTimeout(zoneTimer); clearTimeout(metadataTimer); metadataController.current?.abort(); };
+    const paramsTimer = setTimeout(() => {
+      const seed = draftFromSearchParams(new URLSearchParams(window.location.search));
+      if (Object.keys(seed).length) setSiteDraft((current) => ({ ...current, ...seed }));
+    }, 0);
+    return () => { clearTimeout(zoneTimer); clearTimeout(metadataTimer); clearTimeout(paramsTimer); metadataController.current?.abort(); };
   }, [loadMetadata]);
 
   const refreshConditions = useCallback(async (key: string) => {
@@ -177,6 +188,8 @@ export function OperationsDesk() {
     setSiteLoading(false); setConditionsLoading(false); setRouteLoading(false);
     if (siteResult) setSiteOutdated(true);
     if (routeResult) setRouteOutdated(true);
+    setWaterResult(null);
+    setWaterError(null);
   };
 
   const changeRoute = (update: (current: RouteDraft) => RouteDraft) => {
@@ -188,10 +201,10 @@ export function OperationsDesk() {
     outcomeLane.current.invalidate(); setOutcomeLoading(false); setOutcomeResult(null); setOutcomeDraft(update);
   };
 
-  async function checkSite(event: FormEvent) {
-    event.preventDefault(); setSiteError(null); setSiteNotice(null);
+  async function runSiteCheck(draft: SiteDraft) {
+    setSiteError(null); setSiteNotice(null);
     let built: ReturnType<typeof buildSiteRequest>;
-    try { built = buildSiteRequest(siteDraft); } catch (error) { setSiteError(message(error)); return; }
+    try { built = buildSiteRequest(draft); } catch (error) { setSiteError(message(error)); return; }
     if (siteResult && activeSite && activeSite.point.lat === built.request.lat && activeSite.point.lon === built.request.lon && activeSite.year === built.request.year) {
       setActiveSite({ ...activeSite, label: built.label }); setSiteOutdated(false);
       setSiteNotice("Existing soil and annual evidence was reused. Current conditions refresh independently at the published cadence.");
@@ -214,10 +227,49 @@ export function OperationsDesk() {
         setSiteResult(value); setActiveSite({ label: built.label, point: { lat: built.request.lat, lon: built.request.lon }, year: built.request.year });
         setConditions({ request: { lat: built.request.lat, lon: built.request.lon }, weather: value.weather, roadwork: value.roadwork });
         setConditionsError(null); setSiteOutdated(false); setRouteOutdated(routeResult !== null);
+        setWaterResult(null); setWaterError(null);
+      }
+      // Water is additive and independent: never block or fail the site board on it.
+      const waterQuery = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon) });
+      try {
+        const waterResponse = await fetch(`/api/operations/water?${waterQuery}`, { cache: "no-store", signal: ticket.signal });
+        const water = await readResponse(waterResponse, WaterResponseSchema);
+        if (water.request.lat !== built.request.lat || water.request.lon !== built.request.lon) {
+          throw new Error("Water evidence did not match the submitted worksite.");
+        }
+        if (ticket.current()) { setWaterResult(water); setWaterError(null); }
+      } catch (error) {
+        if (ticket.current() && (error as Error).name !== "AbortError") setWaterError(message(error));
       }
     } catch (error) { if (ticket.current()) setSiteError(message(error)); }
     finally { if (ticket.current()) setSiteLoading(false); }
   }
+
+  async function checkSite(event: FormEvent) {
+    event.preventDefault();
+    await runSiteCheck(siteDraft);
+  }
+
+  const pickMapPoint = (point: { lat: number; lon: number }) => {
+    const next: SiteDraft = {
+      label: siteDraft.label.trim() || "Map-selected worksite",
+      lat: formatCoordinate(point.lat),
+      lon: formatCoordinate(point.lon),
+      year: siteDraft.year,
+    };
+    siteLane.current.invalidate(); conditionsLane.current.invalidate(); routeLane.current.invalidate();
+    setSiteLoading(false); setConditionsLoading(false); setRouteLoading(false);
+    if (siteResult) setSiteOutdated(true);
+    if (routeResult) setRouteOutdated(true);
+    setSiteDraft(next);
+    setSiteError(null);
+    if (!next.year) {
+      setSiteNotice("Map point captured. Choose an annual AEF year, then check the worksite to call weather, soil, AEF and road-work providers.");
+      return;
+    }
+    setSiteNotice("Map point captured. Checking worksite evidence…");
+    void runSiteCheck(next);
+  };
 
   async function checkRoute(event: FormEvent) {
     event.preventDefault(); setRouteError(null);
@@ -293,7 +345,8 @@ export function OperationsDesk() {
     <div className={styles.workspace}>
       <div className={styles.controls}>
         <section className={styles.panel}>
-          <div className={styles.sectionHeading}><span className={styles.step}>01</span><div><h2>Confirm the worksite</h2><p>Coordinates are manual user input. Common Ground does not verify or infer this location.</p></div></div>
+          <div className={styles.sectionHeading}><span className={styles.step}>01</span><div><h2>Confirm the worksite</h2><p>Click the map or enter coordinates. Common Ground does not verify the point; provider evidence stays source-bound.</p></div></div>
+          <WorksiteMap lat={siteDraft.lat} lon={siteDraft.lon} onPick={pickMapPoint} />
           <form onSubmit={checkSite} noValidate>
             <Field label="Worksite label"><input value={siteDraft.label} onChange={(event) => invalidateSiteDraft({ label: event.target.value })} autoComplete="off" required /></Field>
             <div className={styles.fieldGrid}>
@@ -378,6 +431,7 @@ export function OperationsDesk() {
             {currentWeather && <WeatherPanel envelope={currentWeather} refreshFailed={conditionsError} />}
             {currentRoadwork && <RoadworkPanel envelope={currentRoadwork} refreshFailed={conditionsError} />}
             <SoilPanel envelope={siteResult.soil} />
+            {waterResult ? <WaterPanel envelope={waterResult.water} /> : waterError ? <article className={styles.evidenceCard}><div className={styles.cardHeading}><div><span className="eyebrow">Water context</span><h3>Water context</h3></div><StatusBadge status="unavailable" /></div><p className={styles.empty}>{waterError}</p></article> : null}
             <AEFPanel envelope={siteResult.aef} />
           </div>
           {!siteOutdated && activeSite && <div className={styles.refreshLine}><span>Current conditions are bound to {activeSite.point.lat}, {activeSite.point.lon}. Attempts are limited to every {conditionRefresh}s.</span><button type="button" disabled={conditionsLoading || conditionCoolingDown} onClick={() => void refreshConditions(JSON.stringify(activeSite.point))}>{conditionCoolingDown ? "Refresh cooling down" : "Refresh now"}</button></div>}
