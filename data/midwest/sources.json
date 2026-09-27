@@ -333,5 +333,33 @@
     ],
     "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2017",
     "vintage": "2017 Q4"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://cdn.misoenergy.org/20250306%20LRTP%20TR2.1%20Eligible%20Projects671260.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+    "notes": [
+      "FIX-F46: one record per LRTP Tranche 2.1 facility in IA, MO, ND or SD. The workbook states no status or in-service date, so none is recorded.",
+      "Unreviewed C33 candidates from F46's name parser; none is independently confirmed."
+    ],
+    "planning_region": "miso",
+    "project_count": 72,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Midcontinent Independent System Operator (MISO)",
+    "retrieved_at": "2026-09-27T11:00:17Z",
+    "role": "project_plan",
+    "sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723",
+    "states": [
+      "19",
+      "29",
+      "38",
+      "46"
+    ],
+    "title": "LRTP Tranche 2.1 Eligible Projects workbook (2025-03-06)",
+    "vintage": "LRTP Tranche 2.1"
   }
 ]

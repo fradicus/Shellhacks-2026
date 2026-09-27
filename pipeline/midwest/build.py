@@ -35,6 +35,8 @@ from greatlakes.match import candidate_center, facilities_named, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
 from southeast import misospp  # F39's MTEP25 Appendix A workbook helpers, by import
 
+from . import lrtp
+
 OUT = REPO_ROOT / "data" / "midwest"
 STATES = {"IA": "19", "MO": "29", "KS": "20", "NE": "31", "ND": "38", "SD": "46"}
 SOURCE_ID = "spp-qpt-2026q3"
@@ -330,6 +332,31 @@ def miso_a_project(row: dict, artifact: dict, as_of: str, facilities: dict[str, 
     }
 
 
+def lrtp_project(row: dict, states: list[str], artifact: dict, facilities: dict[str, list[dict]]) -> dict:
+    native = str(row["MTEP Facility ID"])
+    pid = f"{lrtp.SOURCE_ID}:{native}"
+    name = clean(row["Facility"])
+    codes = lrtp.owners(row["Geographic Location by TO Member System"])
+    scope = row.get("Scope of Work")
+    center, candidate = locate(name, voltages_kv(name, scope), states, facilities, lrtp.keys(codes))
+    raw_keys = ("Plan Cycle", "Project", "LRTP Project ID", "MTEP Project ID", "Facility", "MTEP Facility ID",
+                "Geographic Location by TO Member System", "State", "Estimated Facility Cost (2024 U.S. Dollars)",
+                "Exclusion")
+    return {
+        "_id": pid, "source_id": lrtp.SOURCE_ID, "native_id": native, "name": name,
+        "major_project": clean(row["Project"]) if row.get("Project") else None, "part": name,
+        "description": clean(scope)[:500] if scope else None,
+        "owner": codes[0] if codes else None, "other_owners": codes[1:],
+        "planning_region": "miso", "states": [STATES[s] for s in states], "counties": [],
+        "geography_basis": "source_state", "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+        "status_group": "unknown", "in_service": {"raw": None, "value": None, "precision": "unknown"},
+        "center": center, "location_review": "unreviewed" if center else "unlocated",
+        "location_candidate": candidate, "project_events": [],
+        "evidence": {"page": None, "sheet": row["_sheet"], "row": row["_row"], "source_sha256": artifact["sha256"],
+                     "raw": {k: clean(row[k]) if row.get(k) is not None else None for k in raw_keys}},
+    }
+
+
 def fetch(cache: Path) -> None:
     cache.mkdir(parents=True, exist_ok=True)
     manifest = load_json(cache / "manifest.json") if (cache / "manifest.json").exists() else {}
@@ -344,7 +371,7 @@ def fetch(cache: Path) -> None:
         write_json(cache / "manifest.json", manifest)
     from sppsouth.history import files
 
-    for name, url in files().items():
+    for name, url in [*files().items(), (lrtp.FILE, lrtp.URL)]:
         if name not in manifest:
             fetch_into(cache, name, url, manifest)
             write_json(cache / "manifest.json", manifest)
@@ -358,7 +385,7 @@ def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
     from sppsouth import history as spp_history
 
-    manifest = verify_cache(cache, [ZIP, miso.FILE, MISO_A_FILE, *spp_history.files(), *osm_files])
+    manifest = verify_cache(cache, [ZIP, miso.FILE, MISO_A_FILE, *spp_history.files(), lrtp.FILE, *osm_files])
     facilities = {s: osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s) for s in STATES}
     artifact = manifest[ZIP]
     projects, dispositions = [], []
@@ -421,6 +448,21 @@ def build(cache: Path) -> dict[Path, object]:
                                         STATES, OPERATOR_KEYS, "C43", suffix="midwest")
     projects += past
     dispositions += more
+    # FIX-F46: LRTP Tranche 2.1 facilities (MISO), one record per MTEP facility ID.
+    tr21 = manifest[lrtp.FILE]
+    for row in lrtp.rows(cache / lrtp.FILE):
+        states = [s for s in [str(row.get("State") or "").strip()] if s]
+        native = str(row["MTEP Facility ID"])
+        where = {"source_id": lrtp.SOURCE_ID, "sheet": row["_sheet"], "row": row["_row"], "native_id": native,
+                 "name": clean(row["Facility"] or "")}
+        if not states or not set(states) <= STATES.keys():
+            dispositions.append(where | {"disposition": "excluded",
+                                         "reason": f"outside F46 states ({','.join(states) or 'none'})"})
+            continue
+        record = lrtp_project(row, states, tr21, facilities)
+        projects.append(record)
+        dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
+                                     "location": record["location_candidate"]["tier"] or "unlocated"})
     if len({p["_id"] for p in projects}) != len(projects):
         raise SystemExit("project ID repeated within a workbook")
     projects.sort(key=lambda p: p["_id"])
@@ -471,7 +513,20 @@ def build(cache: Path) -> dict[Path, object]:
                   "the title. Unreviewed C33 candidates; none is independently confirmed."]}
     past_sources = history.sources(used, projects, "F46 Midwest (FIX-F46): completed IA/MO/KS/NE/ND/SD upgrades "
                                    "absent from the 2026 Q3 edition.", suffix="midwest")
-    return {OUT / "projects.json": projects, OUT / "sources.json": [source, miso_source, a_source, *past_sources],
+    tr21_source = {
+        "_id": lrtp.SOURCE_ID, "publisher": "Midcontinent Independent System Operator (MISO)",
+        "title": "LRTP Tranche 2.1 Eligible Projects workbook (2025-03-06)", "authority": "regional_planning_organization",
+        "role": "project_plan", "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+        "download_url": tr21["url"], "publication_date": None, "vintage": "LRTP Tranche 2.1",
+        "retrieved_at": tr21["retrieved_at"], "sha256": tr21["sha256"], "public_status": "verified_public",
+        "import_status": "imported", "access_policy": "public_document", "planning_region": "miso",
+        "states": sorted({s for p in projects if p["source_id"] == lrtp.SOURCE_ID for s in p["states"]}),
+        "project_count": sum(p["source_id"] == lrtp.SOURCE_ID for p in projects),
+        "notes": ["FIX-F46: one record per LRTP Tranche 2.1 facility in IA, MO, ND or SD. The workbook states no "
+                  "status or in-service date, so none is recorded.",
+                  "Unreviewed C33 candidates from F46's name parser; none is independently confirmed."]}
+    return {OUT / "projects.json": projects,
+            OUT / "sources.json": [source, miso_source, a_source, *past_sources, tr21_source],
             OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",

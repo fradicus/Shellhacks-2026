@@ -17,7 +17,7 @@ from common import REPO_ROOT, load_json, validate
 
 FOLDER = Path("data/midwest")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "midwest-spp-miso-candidates-4"
+RELEASE_ID = "midwest-spp-miso-candidates-5"
 TIERS = ("candidate", "candidate_unique_name")
 FIPS = {"19", "29", "20", "31", "38", "46"}  # IA, MO, KS, NE, ND, SD
 
