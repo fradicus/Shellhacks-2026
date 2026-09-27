@@ -152,3 +152,17 @@ def test_aep_status_reads_only_plain_statements():
                   "All components of Niles North are now in service.") == "legend"
     text = "Menu X Project AEP plans a rebuild. Project Updates Fall 2026: Construction is underway. Summer 2026: Prep."
     assert describe(text, "X Project") == ("AEP plans a rebuild.", "Fall 2026: Construction is underway.")
+
+
+def test_firstenergy_titles_and_status():
+    from greatlakes.firstenergy import read_page, status_of
+
+    raw = ("<title>Avery-Hayes 138-kV Transmission Line Rebuild Project</title><body><nav>menu</nav>"
+           "<p>Avery-Hayes 138-kV Transmission Line Rebuild Project</p><p>ATSI proposes to rebuild the line in Erie "
+           "County, Ohio.</p><h3>Project Documents</h3></body>")
+    title, text = read_page(raw)
+    assert title == "Avery-Hayes 138-kV Transmission Line Rebuild Project"
+    assert text == "ATSI proposes to rebuild the line in Erie County, Ohio."
+    assert status_of(text) == "proposed"
+    assert facilities_named(title, None)["names"] == ["Avery", "Hayes"]
+    assert facilities_named("Evergreen-Highland No. 3 138-kV Transmission Line", None)["names"] == ["Evergreen", "Highland"]

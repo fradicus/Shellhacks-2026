@@ -1,0 +1,26 @@
+{
+  "by_basis": {
+    "one": 8,
+    "source_point": 4,
+    "two": 11
+  },
+  "by_status": {
+    "in_service": 1,
+    "proposed": 35,
+    "unknown": 6
+  },
+  "candidate_located": 23,
+  "distinct_points": 22,
+  "located_by_status": {
+    "proposed": 18,
+    "unknown": 5
+  },
+  "projects": 42,
+  "unlocated_reasons": {
+    "multi_terminal_line": 6,
+    "no_facility": 6,
+    "no_named_facility": 1,
+    "program_area_or_multi_facility": 6
+  },
+  "verified": 0
+}

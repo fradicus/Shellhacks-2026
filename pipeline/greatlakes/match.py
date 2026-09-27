@@ -20,8 +20,9 @@ DESCRIPTORS = {
     "INTERCONNECTION", "DELIVERY", "RETIREMENT", "RELAY", "RELAYS", "SS", "SWT", "STA", "SW", "DIC", "GENERATOR",
     "NETWORK", "OPGW", "CONTROL", "POWER", "HOUSE", "NEW", "PARTIAL", "SVC", "STATION", "SWITCHYARD", "AUTOTRANSFORMER",
     "SWITCH", "CBS", "EQUIPMENT", "POINT", "LOAD", "DC", "REDUNDANCY",
+    "NO.", "NO", "IMPROVEMENTS", "IMPROVEMENT", "RELIABILITY",
 }
-NUMERIC = re.compile(r"T\d+|TR\d+|[\d./]+(KV)?")
+NUMERIC = re.compile(r"T\d+|TR\d+|[\d./]+-?(KV)?")
 QUEUE_ID = re.compile(r"[JSR]\d+(/[JSR]\d+)*")
 PARTICLES = {"du", "de", "la", "le"}
 ABBREVIATIONS = {"RD": "ROAD", "CO": "COUNTY", "SAINT": "ST", "JCT": "JUNCTION", "AVE": "AVENUE", "MT": "MOUNT"}

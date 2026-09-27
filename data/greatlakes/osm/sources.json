@@ -46,6 +46,24 @@
       "url": "https://overpass-api.de/api/interpreter"
     },
     {
+      "bytes": 975151,
+      "named_substations": 1338,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-OH\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:10:42Z",
+      "sha256": "240bb8e2742b452542f01c9efce2c759935bbe159ad6fa209d2460fb39fa975a",
+      "state": "OH",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 885836,
+      "named_substations": 1373,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-PA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:12:07Z",
+      "sha256": "313fc6f7e176f6e338b8b4d58f71723d76309c1a046f40c930b1dd2e8f61c574",
+      "state": "PA",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    },
+    {
       "bytes": 381280,
       "named_substations": 685,
       "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",

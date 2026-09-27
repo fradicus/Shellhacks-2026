@@ -107280,5 +107280,3538 @@
     ],
     "status": "Projects Pending Regulatory Approval; SUMMER 2026: As the project progresses, AEP Transmission representatives have identified proposed adjustments to the previously approved line route near Van Wert to reconfigure the transmission line’s entry into the station to address detailed engineering design and landowner requests. AEP Transmission officials have submitted these adjustments with the OPSB as the Van Wert-Haviland 138 kV Transmission Line Adjustment Project, Public Utilities Commission of Ohio Case No. 26-0729-EL-BLN . If approved, construction is planned to begin in fall 2026 and conclude early 2028. Landowners can reach ou",
     "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT",
+    "center": null,
+    "counties": [],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility TUSC 138KV Substation Six-Breaker Ring Bus Expansion Project (Case No. 26-0267-EL-BNR) In this project, ATSI is proposing to expand the existing Tusc 138 kV Substation to accommodate the expansion of the four-breaker ring bus into a six-breaker ring bus. To facilitate this, the substation will expand from its existing square footage of approximately 55,541 square feet to approximately 99,686 square feet. This will result in an approximate 80 percent increase in square footage. In addition to the substation expansion, the adjacent Pine–Wadsworth Muni 138 kV Transmission Line will be looped into the Tusc Substation. The new transmission line loop will create two new transmission lines, the Pine–Tusc 138 kV and Tusc–Wadsworth Muni 138 kV transmission lines. Due to the proximity of the parallel Barberton–West Akron 138 kV Transmission Line, a new mid-span steel monopole structure on a concrete foundation is required to be installed on the Barberton West Akron 138 kV Transmission Line to control conductor movement and ensure adequate clearances between all circuits, operating equipment, and structures in the area. To accomplish the connection of the existing Star-Tusc and Tusc-Urban 138 kV transmission lines to the Tusc Substation, the existing wood pole structures (4998 and #4999) will be replaced ",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "974b35382f1dcbb3fc8f815215717c27954437de056db65046392214f43f34bd",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT.html",
+        "title": "TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT",
+    "native_id": "OH:TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0267-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:ashtabula-east-substation-138kv-line-connection-reconfiguation-project",
+    "center": null,
+    "counties": [
+      "39007"
+    ],
+    "description": "In this Project, ATSI proposes to reconfigure a 138 kV transmission line connection to the existing Ashtabula East Substation. ATSI will: Modify four existing structures: Structure #12688, Structure #12467 and Structure #12468 on the existing Ashtabula East-Ashtabula 138 kV Transmission Line and Structure #12469 on the existing Ashtabula-Pittsconn Docks 138 kV Q15 Transmission Line. The existing switch (A301) on Structure #12467 will be removed as part of this Project. Install five new structures: two (2) new switch structures (Structures #2 and #3A), one (1) tap structure (Structure #3), and two (2) single circuit deadend structures on concrete foundations (Structures #1 and #4). Approximately 4,300 linear feet of 336.4 kcmil 26/7 ACSR new conductor (for three phases of conductor) will be installed. Remove existing Structures #12686 and #12687 and the associated transmission line conductor. The Project is in Ashtabula Township, Ashtabula County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "42c15dd6fe1e8ee4a338319ac15ab0ed9d94c208febe3e562e01bb1e8d5f6c2e",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/ashtabula-east-substation-138kv-line-connection-reconfiguation-project.html",
+        "title": "Ashtabula East Substation 138 kV Transmission Line Connection Reconfiguration Project (OPSB Case No. 26-0010-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/ashtabula-east-substation-138kv-line-connection-reconfiguation-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Ashtabula East",
+          "norm": "ASHTABULA EAST",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Ashtabula East Substation 138 kV Transmission Line Connection Reconfiguration Project (OPSB Case No. 26-0010-EL-BNR)",
+    "native_id": "OH:ashtabula-east-substation-138kv-line-connection-reconfiguation-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0010-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:avery-hayes",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/138462454 (Avery Substation), OSM way/977073869 (Hayes Substation), corroborated by operator, voltage.",
+      "lat": 41.35563,
+      "lon": -82.682875
+    },
+    "counties": [
+      "39043"
+    ],
+    "description": "- Case No. 25-1038-EL-BLN In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to rebuild the existing approximately 6.5 miles long Avery-Hayes 138 kV Transmission Line. The rebuild Project will consist of 47 structure replacements, and conductor and shield wire upgrades. The Project is located in Perkins, Oxford, and Milan Townships in Erie County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "c7054ef84e97c149b3a42374b44526a183a94189f433140d5932178460fc39a4",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/avery-hayes.html",
+        "title": "Avery-Hayes 138-kV Transmission Line Rebuild Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/avery-hayes.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/138462454",
+            "lat": 41.3363604,
+            "lon": -82.6358799,
+            "name": "Avery Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000;69000"
+          },
+          "name": "Avery",
+          "norm": "AVERY",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/977073869",
+            "lat": 41.3748997,
+            "lon": -82.7298705,
+            "name": "Hayes Substation",
+            "operator": "FirstEnergy",
+            "state": "OH",
+            "voltage": "345000;138000"
+          },
+          "name": "Hayes",
+          "norm": "HAYES",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Avery-Hayes 138-kV Transmission Line Rebuild Project",
+    "native_id": "OH:avery-hayes",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "25-1038-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:ayersville-substation-expansion-and-transmission-rebuild",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/449598305 (Ayersville Substation), corroborated by voltage.",
+      "lat": 41.267465,
+      "lon": -84.342317
+    },
+    "counties": [
+      "39039"
+    ],
+    "description": "In this Project, ATSI is proposing to expand the existing Ayersville Substation to convert the existing substation configuration into a (4) breaker 138 kV ring bus as well as the installation of a 138/69 kV transformer. To facilitate this, the substation will expand from its existing square footage of approximately 7,000 square feet to approximately 85,950 square feet. As part of the Project, an approximately 0.5-mile section of the existing Ayersville-Richland 138 kV Transmission Line will be rebuilt to support the 138 kV line and complete the new extension of the Ayersville-Sand Ridge 69 kV Transmission Line to Ayersville Substation. To facilitate this, a total of sixteen (16) new structures will be installed, including four (4) steel structures on concrete foundations, eleven (11) direct embed steel structures and one (1) wood pole. The Project is in the city of Defiance and Richland Township, Defiance County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "5f926332ae12ba6d7617c48b0e797e48b9e63d2a6aa6f0dc9e20e10d9a558236",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/ayersville-substation-expansion-and-transmission-rebuild.html",
+        "title": "Ayersville Substation Expansion and 138 kV Transmission Line Partial Rebuild Project (OPSB Case No. 26-0122-EL-BLN)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/ayersville-substation-expansion-and-transmission-rebuild.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/449598305",
+            "lat": 41.267465,
+            "lon": -84.3423167,
+            "name": "Ayersville Substation",
+            "operator": "Toldeo Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Ayersville",
+          "norm": "AYERSVILLE",
+          "status": "matched"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        69,
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Ayersville Substation Expansion and 138 kV Transmission Line Partial Rebuild Project (OPSB Case No. 26-0122-EL-BLN)",
+    "native_id": "OH:ayersville-substation-expansion-and-transmission-rebuild",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0122-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:bayshore-jeep",
+    "center": null,
+    "counties": [
+      "39095"
+    ],
+    "description": "(OPSB Case No. 25-0558-EL-BNR) In this Project, ATSI is proposing to replace and relocate four (4) existing structures and install one (1) new structure on the Bayshore-Jeep No. 2 Stickney 138 kV Transmission Line. Existing structures Nos. 51, 52, 53 and 54, which are common structures for both the Bayshore-Jeep No. 2 Stickney 138 kV Transmission Line and the Ironville-Lapier 69 kV Transmission Line, will be removed and new structures installed at different locations. Structure No. 51 will be relocated approximately 120 feet to the west and along the same centerline as its existing location and be replaced with a single steel monopole on concrete foundation. Structure No. 52 will be relocated approximately 50 feet to the west and along the same centerline as its existing location and be replaced with a Valmont pyramax tower on concrete foundations. Structure No. 53 will be relocated to the inside of the existing Lapier 69 kV Substation and replaced with a Valmont pyramax tower on concrete foundations. Structure No. 54, currently located inside of the Ironville 69 kV Substation, will be relocated approximately 250 feet to the west and along the same centerline as its existing location and be replaced with a single steel monopole on concrete foundation. New Structure No. 50A, a common structure for both the Bayshore-Jeep No. 2 Stickney 138 kV Transmission Line and the Ironville-Lapier 69 kV Transmission Line, will be a single steel monopole on concrete foundation installed approximately 117 feet northwest of the existing Structure No. 50 and along the same centerline. FAA catenary lighting will be installed on structures 52 and 53. The total Project length is approximately 0.8-mile. The Project is in the city of Toledo, Lucas County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "f184d627fe3da414c465641bc17e4958acc458c85210c3d6ac6fc23c1058ee56",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-jeep.html",
+        "title": "Bayshore-Jeep No. 2 Stickney 138 kV Transmission Line Structure Relocation and Replacement Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-jeep.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Bayshore",
+          "norm": "BAYSHORE",
+          "status": "no_facility"
+        },
+        {
+          "name": "Jeep",
+          "norm": "JEEP",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        69,
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Bayshore-Jeep No. 2 Stickney 138 kV Transmission Line Structure Relocation and Replacement Project",
+    "native_id": "OH:bayshore-jeep",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "25-0558-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:bayshore-substation-expansion-ii-project",
+    "center": null,
+    "counties": [
+      "39095"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility Bayshore Substation Expansion II Project (OPSB Case No. 26-0797-EL-BNR) In this Project, ATSI is proposing a second Bayshore Substation expansion in addition to the 1.26% expansion approved in OPSB Case No. 26-0019-EL-BNR. To facilitate this, the substation will expand from the approved total area 486,996 square feet to approximately 494,525 square feet. This will result in an approximate 1.55% increase in square footage. The electrical configuration of the substation remains unchanged. The Project is in the city of Oregon in Lucas County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "d3e912c649078a455ceefbc52531be0bac9cdafba07b23d4b6dbe34d48bee443",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-substation-expansion-ii-project.html",
+        "title": "Bayshore-Substation-Expansion-II-Project-(OPSB-Case-No.-26-0797-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-substation-expansion-ii-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C26",
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Bayshore-Substation-Expansion-II-Project-(OPSB-Case-No.-26-0797-EL-BNR)",
+    "native_id": "OH:bayshore-substation-expansion-ii-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0797-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:bayshore-substation-expansion-project",
+    "center": null,
+    "counties": [
+      "39095"
+    ],
+    "description": "In this Project, ATSI is proposing to expand the existing Bayshore Substation 138 kV to accommodate the installation of a new 138 kV Packaged Control Enclosure (“PCE”). To facilitate this, the substation will expand from its current area of 486,996 square feet to approximately 493,121 square feet. This will result in an approximate 1.26% increase in square footage. The electrical configuration of the substation remains unchanged. The Project is in the city of Oregon in Lucas County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "999155a604a2af96fd473caf2ab110e556467cb1646fdd04c6177b29ed34fa1d",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-substation-expansion-project.html",
+        "title": "Bayshore Substation Expansion Project (OPSB Case No. 26-0019-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-substation-expansion-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Bayshore",
+          "norm": "BAYSHORE",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Bayshore Substation Expansion Project (OPSB Case No. 26-0019-EL-BNR)",
+    "native_id": "OH:bayshore-substation-expansion-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0019-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:bloomingville-345-kv-transmission-line-loop-to-bloomingville-substation-project",
+    "center": null,
+    "counties": [
+      "39043"
+    ],
+    "description": "In this project, ATSI is proposing to loop the Beaver-Davis Besse 345 KV S-26 Transmission Line into the new Bloomingville 345 kV Substation. The Bloomingville 345 kV Substation was approved by the Ohio Power Siting Board in Case No. 19-1073-EL-BTX. To construct the transmission line loop, two new single steel monopole structures, #41800A and #41800B, will be installed along the existing centerline of the Beaver-Davis Besse 345 kV Transmission Line. From the new transmission structures, one span of transmission line will be constructed into the new substation. The construction of the loop will create two new circuits designated as the Beaver-Bloomingville 345 kV Transmission Line and the Bloomingville-Davis Besse 345 kV Transmission Line. The Project is located in Oxford Township in Erie County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "b22f8897a47c786e907d3f7edf68587c410835d3a1e72d4caf92abca2efadb22",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bloomingville-345-kv-transmission-line-loop-to-bloomingville-substation-project.html",
+        "title": "Bloomingville 345 kV Transmission Line Loop to Bloomingville Substation Project Case No. 26-0705-EL-BNR"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bloomingville-345-kv-transmission-line-loop-to-bloomingville-substation-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C26",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Bloomingville 345 kV Transmission Line Loop to Bloomingville Substation Project Case No. 26-0705-EL-BNR",
+    "native_id": "OH:bloomingville-345-kv-transmission-line-loop-to-bloomingville-substation-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0705-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:brady-darrow-138kv-tx-line-damaged-twr-no7832-replacement-project",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/236349946 (Brady Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.152298,
+      "lon": -81.326335
+    },
+    "counties": [
+      "39133"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy Company, proposes to relocate and replace Structure No. 7832 on the Brady–Darrow 138 kV Transmission Line which also supports the Ravenna–Streetsboro 69 kV Transmission Line. The existing steel lattice tower, which is located within a ravine and has sustained structural damage, will be removed and replaced with a new double circuit single steel monopole deadend structure approximately 94 feet southeast of the current tower location. The Project is located in Franklin Township, Portage County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "7ef6c721f7dbc1ef1dcc5edc46a795a59179e8d2726b1b7541582959bdfe9ebc",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/brady-darrow-138kv-tx-line-damaged-twr-no7832-replacement-project.html",
+        "title": "Brady-Darrow 138kV Transmission Line -Damaged Tower No. 7832 Replacement Project (OPSB Case No. 26-0079-ELBNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/brady-darrow-138kv-tx-line-damaged-twr-no7832-replacement-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/236349946",
+            "lat": 41.1522975,
+            "lon": -81.3263351,
+            "name": "Brady Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000;12470"
+          },
+          "name": "Brady",
+          "norm": "BRADY",
+          "status": "matched"
+        },
+        {
+          "name": "Darrow",
+          "norm": "DARROW",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        69,
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Brady-Darrow 138kV Transmission Line -Damaged Tower No. 7832 Replacement Project (OPSB Case No. 26-0079-ELBNR)",
+    "native_id": "OH:brady-darrow-138kv-tx-line-damaged-twr-no7832-replacement-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:broadview-substation-expansion-project",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/133183065 (Broadview Substation), corroborated by voltage.",
+      "lat": 40.011785,
+      "lon": -83.769661
+    },
+    "counties": [
+      "39023"
+    ],
+    "description": "In this Project, ATSI proposes to expand the existing Broadview Substation for the installation of a new 138 kV 75 Megavolt-ampere reactive (“MVAR”) reactor and associated substation equipment. To facilitate this, the Substation will expand from its existing square footage of approximately 106,260 square feet to approximately 137,060 square feet. This will result in an approximate 29 percent increase in square footage. The Project is in Moorefield Township, Clark County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "db22add71529fbf47d07f44adbd4d605272c49d24a6889b418e699651cc7af78",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/broadview-substation-expansion-project.html",
+        "title": "Broadview Substation Expansion Project (OPSB Case No. 26-0137-EL-BLN)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/broadview-substation-expansion-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/133183065",
+            "lat": 40.011785,
+            "lon": -83.7696605,
+            "name": "Broadview Substation",
+            "operator": null,
+            "state": "OH",
+            "voltage": "138000;69000"
+          },
+          "name": "Broadview",
+          "norm": "BROADVIEW",
+          "status": "matched"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Broadview Substation Expansion Project (OPSB Case No. 26-0137-EL-BLN)",
+    "native_id": "OH:broadview-substation-expansion-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0137-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:brookside-longview-madison-project",
+    "center": null,
+    "counties": [
+      "39005",
+      "39139"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated, (“ATSI”), a FirstEnergy company, is proposing to replace six (6) existing steel lattice structures that support multiple 138 kV transmission lines within a combined Right-Of-Way (“ROW”). Four (4) existing double circuit suspension lattice structures that support the Brookside-Longview East 138 kV Transmission Line and the Longview-Madison 138 kV Transmission Line, will be replaced with new double circuit steel pole suspension structures on concrete foundations. One (1) double circuit suspension lattice structure that currently supports the Brookside-Longview East 138 kV and Brookside-Madison 138 kV Transmission Lines will be replaced with a double circuit steel pole strain structure on a concrete foundation. Lastly, one (1) double circuit tangent deadend lattice tower that supports the Brookside-Longview East 138 kV and Brookside-Madison 138 kV Transmission Lines will be replaced with a double circuit steel pole strain structure on a concrete foundation. The Project is located in the City of Mansfield; Madison and Mifflin Townships in Richland County, Ohio; and in the city of Ashland; Mifflin, Milton, and Montgomery Townships in Ashland County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "9654b5584f04555a316f8ae23290bb0c462c6813346d5de01cefc648ab40478b",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/brookside-longview-madison-project.html",
+        "title": "Brookside-Longview East 138-kV Transmission Line, Brookside-Madison 138-kV Transmission Line, Longview-Madison 138-kV Transmission Line Structure Replacement Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/brookside-longview-madison-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Brookside-Longview East 138-kV Transmission Line, Brookside-Madison 138-kV Transmission Line, Longview-Madison 138-kV Transmission Line Structure Replacement Project",
+    "native_id": "OH:brookside-longview-madison-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:dobbins-toronto-transmission-line-tower-project",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/328902632 (Dobbins Substation), OSM way/664155631 (Toronto Substation), corroborated by operator, voltage.",
+      "lat": 40.743211,
+      "lon": -80.586339
+    },
+    "counties": [
+      "39029"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to replace a steel lattice structure, Structure No. 8118, on the existing six-wired Dobbins–Toronto 138 kV Transmission Line with two new single steel monopole structures on concrete foundations, installed on the existing transmission line centerline in existing right‑of‑way (“ROW”). The lattice tower has experienced creek‑related erosion, resulting in full exposure of one tower leg and jeopardizing a second tower leg. To address this condition and maintain system reliability, one steel monopole structure, (Structure No. 8118), will be located approximately 328 feet south of existing structure No. 8118, and the other steel monopole structure, (Structure No. 8118A), will be located 499 feet north of existing structure No. 8118. The existing conductor and shield wire will be transferred to the new structures. Following completion of the structure installation, the existing lattice tower will be removed. The Project is in Fairfield and Elkrun Townships, Columbiana County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "f8cb1a47f5c7376aa32d5cadfd197f702276c7f58b05e301a90a4315e334179a",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/dobbins-toronto-transmission-line-tower-project.html",
+        "title": "Dobbins-Toronto 138kV Transmission Line -Tower Replacement Project (OPSB Case No. 26-0141-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/dobbins-toronto-transmission-line-tower-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/328902632",
+            "lat": 41.0035633,
+            "lon": -80.5675033,
+            "name": "Dobbins Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Dobbins",
+          "norm": "DOBBINS",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/664155631",
+            "lat": 40.4828587,
+            "lon": -80.6051746,
+            "name": "Toronto Substation",
+            "operator": null,
+            "state": "OH",
+            "voltage": "345000;138000"
+          },
+          "name": "Toronto",
+          "norm": "TORONTO",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Dobbins-Toronto 138kV Transmission Line -Tower Replacement Project (OPSB Case No. 26-0141-EL-BNR)",
+    "native_id": "OH:dobbins-toronto-transmission-line-tower-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0141-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:east-akron-evans-138kv-transmission-line-switch-replacement",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/90178462 (East Akron Substation), OSM way/284363542 (Evans Substation), corroborated by operator, voltage.",
+      "lat": 41.076649,
+      "lon": -81.46696
+    },
+    "counties": [
+      "39153"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility East Akron-Evans 138 kV Transmission Line Switch Replacement Project Case No. 26-0266-EL-BNR In this project, ATSI is proposing to replace an existing one-way inoperable switch, existing switch A-281 on existing structure #9177, by installing one (1) new SCADA controlled switch on a new single steel monopole on a concrete foundation, on the East Akron–Evans 138 kV Transmission Line. The new structure and switch will be located approximately 35 feet north of the existing structure. In addition, the existing 605 kcmil ACSR conductor will be transferred from structure #9178 to the new structure #9177, and new 605 kcmil conductor will replace the same conductor from structure #9177 to #6797. The existing 3#6 Alumoweld shield wire will be transferred from #9178 to #9177. The existing 101.8 kcmil ACSR shield wire between #9175 and #6797 will remain in place. New 3#6 Alumoweld shield wire will be installed from #9175 to #9177. The Project is located in the city of Akron, Summit County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "11f38a57f9fb5f5aeba74b348e7e9ebb7981a5c544f8f065a1e9d3c65a127cbb",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-akron-evans-138kv-transmission-line-switch-replacement.html",
+        "title": "East Akron-Evans 138 kV Transmission Line Switch Replacement Project (Case No. 26-0266-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-akron-evans-138kv-transmission-line-switch-replacement.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/90178462",
+            "lat": 41.0591579,
+            "lon": -81.4600889,
+            "name": "East Akron Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000;23000"
+          },
+          "name": "East Akron",
+          "norm": "EAST AKRON",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/284363542",
+            "lat": 41.0941396,
+            "lon": -81.4738319,
+            "name": "Evans Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Evans",
+          "norm": "EVANS",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "East Akron-Evans 138 kV Transmission Line Switch Replacement Project (Case No. 26-0266-EL-BNR)",
+    "native_id": "OH:east-akron-evans-138kv-transmission-line-switch-replacement",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "26-0266-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:east-fayette-stryker-project",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/363757531 (East Fayette Substation), OSM way/452474841 (Stryker Substation), corroborated by voltage.",
+      "lat": 41.58734,
+      "lon": -84.367975
+    },
+    "counties": [
+      "39171"
+    ],
+    "description": "(OPSB Case No. 25-0163-EL-BNR) In this Project, ATSI proposes to replace and relocate one wood pole structure on the East Fayette-Stryker 138 kV Transmission Line approximately 30 feet south of the existing structure location along the same centerline. The existing conductor and static wire will be transferred to the new structure. The structure supports both the East Fayette-Stryker 138 kV Transmission Line and the Snyder-Stryker 69 kV Transmission Line. The structure is being replaced as part of the Snyder-Stryker (West Unity) 69 kV Transmission Line Rebuild Project. The Project will be located within existing right-of-way in Springfield Township, Williams County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "ab40e00c539aa47496df224dc2cd391ce27f832a3e9f5a5aeec9f384af56e309",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-fayette-stryker-project.html",
+        "title": "East Fayette-Stryker 138-kV Transmission Line Structure Replacement Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-fayette-stryker-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/363757531",
+            "lat": 41.6722099,
+            "lon": -84.3065472,
+            "name": "East Fayette Substation",
+            "operator": "Toldeo Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "East Fayette",
+          "norm": "EAST FAYETTE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/452474841",
+            "lat": 41.5024696,
+            "lon": -84.4294037,
+            "name": "Stryker Substation",
+            "operator": "Toldeo Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Stryker",
+          "norm": "STRYKER",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        69,
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "East Fayette-Stryker 138-kV Transmission Line Structure Replacement Project",
+    "native_id": "OH:east-fayette-stryker-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "25-0163-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:east-fayette-substation-transmission-line-project",
+    "center": null,
+    "counties": [
+      "39051"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility AF1-206 East Fayette Substation Expansion-138kV Transmission Line Point of Interconnection and Retermination Project (OPSB Case No. 26-0659-EL-BLN) In this project, American Transmission Systems, Incorporated (ATSI), a FirstEnergy company, proposes to expand the existing East Fayette Substation from a 138-kV four-breaker ring-bus configuration to an eight-breaker 138 kV double-breaker, double-bus (DBDB) configuration to facilitate the interconnection of the 199-MW CG Fulton County LLC generating facility, as approved in Case No. 24-0928-EL-BGN. The project also includes a transmission line extension to the Customer and a new transmission line extension replacement and retermination of the East Fayette-Arche Energy 138 kV Transmission Line. To accommodate these modifications, the substation will be expanded from its existing footprint of approximately 44,000 square feet to approximately 71,000 square feet representing a 61% increase in size. The Project is located in Gorham Township, Fulton County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "c4e764dee95d7d30fb8a5c8b5599a4ee8b9bead6c4344a33f4cec9e1b0fc8b1a",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-fayette-substation-transmission-line-project.html",
+        "title": "AF1-206 East Fayette Substation Expansion-138kV Transmission Line Point of Interconnection and Retermination Project, Case No. 26-0659-EL-BLN"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-fayette-substation-transmission-line-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "AF1-206 East Fayette Substation Expansion-138kV Transmission Line Point of Interconnection and Retermination Project, Case No. 26-0659-EL-BLN",
+    "native_id": "OH:east-fayette-substation-transmission-line-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0659-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:evergreen-highland-interconnection-project",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168706695 (Evergreen Substation), OSM way/90341615 (Highland Substation), corroborated by operator, voltage.",
+      "lat": 41.193845,
+      "lon": -80.819692
+    },
+    "counties": [
+      "39155"
+    ],
+    "description": "- Case No. 25-0914-EL-BNR In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to construct a 0.2-mile line extension of the existing Evergreen-Highland No. 3 138 transmission line. The proposed line extension is needed to provide a new 138 kV retail delivery point for Emerald City (The Customer). The construction of the proposed line extension will require the replacement of three (3) existing structures, and the addition of four (4) structures, two (2) new SCADA controlled switches, and approximately 1,585 feet of 795 kcmil “Drake” ACSR conductor and 7#8 Alumoweld shield wire. The Project is located in the city of Warren, and Howland and Warren Townships, Trumbull County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "f57871d4757c8c0728b267e0600327f8db72576b354fdb5b3dbf582c13133739",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/evergreen-highland-interconnection-project.html",
+        "title": "Evergreen-Highland No. 3 138-kV Transmission Line Interconnection Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/evergreen-highland-interconnection-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168706695",
+            "lat": 41.2101157,
+            "lon": -80.8150184,
+            "name": "Evergreen Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Evergreen",
+          "norm": "EVERGREEN",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/90341615",
+            "lat": 41.177574,
+            "lon": -80.8243652,
+            "name": "Highland Substation",
+            "operator": "American Transmission Systems",
+            "state": "OH",
+            "voltage": "345000;138000"
+          },
+          "name": "Highland",
+          "norm": "HIGHLAND",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Evergreen-Highland No. 3 138-kV Transmission Line Interconnection Project",
+    "native_id": "OH:evergreen-highland-interconnection-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "25-0914-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:evergreen-highland-project",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168706695 (Evergreen Substation), OSM way/90341615 (Highland Substation), corroborated by operator, voltage.",
+      "lat": 41.193845,
+      "lon": -80.819692
+    },
+    "counties": [
+      "39155"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to replace two (2) existing line air switches on the Evergreen-Highland No. 3 138 kV Transmission Line. The Project will require the replacement of the two (2) existing switches and one (1) existing structure. The project will install two (2) new custom 138 kV single circuit tubular steel single pole switch structures, two (2) new SCADA operated switches. The project will also require approximately 70 feet of new 477 KCMIL 26/7 “HAWK” ACSR conductor that will span from existing structure #9029 to new structure #9029A, and to a midspan “air tap” point on the existing transmission line between structures #9029 and #9030. The Project is located in Weathersfield Township, Trumbull County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "94bc00e630f43a7cbda8d4c54b2c1c7ea1ed980cc2be5dccfe75e6b54833370c",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/evergreen-highland-project.html",
+        "title": "Evergreen-Highland No. 3 138 kV Transmission Line Switch Replacement Project - Case No. 25-0913-EL-BNR"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/evergreen-highland-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168706695",
+            "lat": 41.2101157,
+            "lon": -80.8150184,
+            "name": "Evergreen Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Evergreen",
+          "norm": "EVERGREEN",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/90341615",
+            "lat": 41.177574,
+            "lon": -80.8243652,
+            "name": "Highland Substation",
+            "operator": "American Transmission Systems",
+            "state": "OH",
+            "voltage": "345000;138000"
+          },
+          "name": "Highland",
+          "norm": "HIGHLAND",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Evergreen-Highland No. 3 138 kV Transmission Line Switch Replacement Project",
+    "native_id": "OH:evergreen-highland-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "25-0913-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:fowles-fox-138-kv-q-12-transmission-line",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/86821374 (Fowles Substation), OSM way/87965397 (Fox Substation), corroborated by operator, voltage.",
+      "lat": 41.388556,
+      "lon": -81.795194
+    },
+    "counties": [
+      "39035"
+    ],
+    "description": ", the Fowles-Fox 138 kV Q-13 Transmission Line, the Fowles-Nasa 138 kV Q-17 Transmission Line, and the Fowles-Nasa 138 kV Q-18 Transmission Line located in a common corridor to support customer development. The relocation of these four (4) transmissions lines will require the installation of 34 new double circuit 138 kV ductile iron direct embedded transmission structures. Of the 34 structures, 17 of the structures will support the Fowles-Fox Q-12 and Q-13 138 kV Transmission Lines, and 17 of the structures will support the Fowles-Nasa 138 kV Q-17 and Q-18 138 kV Transmission Lines. The four relocated transmission lines will terminate into the existing Ford Brookpark Substation. The Project is located in the city of Brook Park, Cuyahoga County, Ohio. Project Document Construction Notice A paper copy of the application can be supplied within five (5) business days upon request at no more than the cost of printing and shipping. Request for a paper copy can be made by contacting the transmission project hotline at 1-888-311-4737 or by emailing transmissionprojects@firstenergycorp.com . Please reference the project name and case number (25-0864-EL-BNR) in all communications.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "ce183f53851d7755f4d1fc1350d9325fa10bcb7e77424985bf862dd799093d2e",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fowles-fox-138-kv-q-12-transmission-line.html",
+        "title": "Fowles-Fox 138 kV Q-12 Transmission Line"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fowles-fox-138-kv-q-12-transmission-line.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/86821374",
+            "lat": 41.3533379,
+            "lon": -81.8343681,
+            "name": "Fowles Substation",
+            "operator": "ATSI",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Fowles",
+          "norm": "FOWLES",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/87965397",
+            "lat": 41.4237739,
+            "lon": -81.7560196,
+            "name": "Fox Substation",
+            "operator": "The Illuminating Company",
+            "state": "OH",
+            "voltage": "345000;138000"
+          },
+          "name": "Fox",
+          "norm": "FOX",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Fowles-Fox 138 kV Q-12 Transmission Line",
+    "native_id": "OH:fowles-fox-138-kv-q-12-transmission-line",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:fowles-pleasant-valley-tower-2047-replacement",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/86821374 (Fowles Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.353338,
+      "lon": -81.834368
+    },
+    "counties": [
+      "39035"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to relocate and replace Structure No. 2047 that supports both the Fowles-Pleasant Valley 138 kV Q1 and Q2 transmission lines. The existing steel lattice tower has sustained extensive stream related ground erosion around two of the four legs with one leg fully exposed and the second leg in jeopardy of similar ground erosion as a result of being by an existing stream. The existing tower will be removed and replaced with a new double‑circuit steel single pole suspension structure and will be installed approximately 25 feet west along the existing centerline of the current tower location. The project is located in the city of Parma, Cuyahoga County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "6b0e84ae8fc5fc93792e3b7b018b7b253214b3e32f1e20aa053128629268b33b",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fowles-pleasant-valley-tower-2047-replacement.html",
+        "title": "Fowles-Pleasant Valley 138kV Line -Tower No. 2047 Replacement Project (OPSB Case No. 26-0078-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fowles-pleasant-valley-tower-2047-replacement.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/86821374",
+            "lat": 41.3533379,
+            "lon": -81.8343681,
+            "name": "Fowles Substation",
+            "operator": "ATSI",
+            "state": "OH",
+            "voltage": "138000"
+          },
+          "name": "Fowles",
+          "norm": "FOWLES",
+          "status": "matched"
+        },
+        {
+          "name": "Pleasant Valley",
+          "norm": "PLEASANT VALLEY",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Fowles-Pleasant Valley 138kV Line -Tower No. 2047 Replacement Project (OPSB Case No. 26-0078-EL-BNR)",
+    "native_id": "OH:fowles-pleasant-valley-tower-2047-replacement",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0078-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:fulton-north-star-melbourne-sydney",
+    "center": null,
+    "counties": [
+      "39051"
+    ],
+    "description": "(OPSB Case No. 25-0772-EL-BLN) In this Project, ATSI is proposing to to adjust the Dowling-Fulton 345 kV Transmission Line Tap exits at Fulton Substation (one structure) and Melbourne Substation (seven structures). ATSI submitted a Certificate Application to the Ohio Power Siting Board (“OPSB”) for the Dowling-Fulton 345 kV Transmission Line Tap to Melbourne Substation Project (“Project”) on March 7, 2023, in Case Number 22-0248-EL-BTX (the “Application”). The OPSB approved the Application and issued a Certificate of Environmental Compatibility and Public Need (“Certificate”) for the Project on May 16, 2024. Since then, ATSI has determined that these adjustments to the Preferred Route are necessary based upon more detailed engineering and accommodation of the proposed substation reconfiguration. These adjustments are confined within the right-of-way area and surveyed corridor presented in the Application. Total eight (8) structure locations are being adjusted as part of the Project. The Project is in Fulton and York Townships, Fulton County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "575d7306adfedf2e942adf16e7f5bccb12be339c0935a2aba7409e8f0138710b",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fulton-north-star-melbourne-sydney.html",
+        "title": "Fulton-North Star Steel Sydney 345-kV and Melbourne-Sydney 345-kV Transmission Line Relocations Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fulton-north-star-melbourne-sydney.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Fulton-North Star Steel Sydney 345-kV and Melbourne-Sydney 345-kV Transmission Line Relocations Project",
+    "native_id": "OH:fulton-north-star-melbourne-sydney",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "25-0772-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:glenmount-substation-transmission-lines-project",
+    "center": null,
+    "counties": [
+      "39153"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated, (“ATSI”), a FirstEnergy company, is proposing to construct the new Glenmount 138 kV Transmission Substation. The substation will be located approximately 85 feet south of the existing South Akron Substation. The proposed project will also reconfigure the line entrances/ exits of the existing Firestone-South Akron 138 kV Transmission Line, South Akron-Toronto 138 kV Transmission Line, Lakemore-South Akron 138 kV Transmission Line, and the Dale-South Akron 138 kV Transmission Line. This reconfiguration will require removal of seven existing structures, and the replacement/relocation of five existing structures. The Project will require the installation of approximately 0.82 miles of 795.0 kcmil 26/7 strand ACSR conductor and 7#8 Alumoweld shield wire. The Project is located in the City of Akron in Summit County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "67e26e449168be86572651d251f3ec509ce41f40a5b6fe72ac24a4cc96a22dc4",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/glenmount-substation-transmission-lines-project.html",
+        "title": "Glenmount Substation and 138 kV Transmission Lines Project (Case No.: 26-0487-EL-BLN)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/glenmount-substation-transmission-lines-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Glenmount",
+          "norm": "GLENMOUNT",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Glenmount Substation and 138 kV Transmission Lines Project (Case No.: 26-0487-EL-BLN)",
+    "native_id": "OH:glenmount-substation-transmission-lines-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:harding-juniper-and-chamberlin-harding",
+    "center": null,
+    "counties": [
+      "39035"
+    ],
+    "description": "- Case No. 26-0017-EL-BLN In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to relocate approximately 0.75 miles of the existing double circuit Harding-Juniper 345 kV and Chamberlin-Harding 345 kV Transmission Lines approximately 450’ to the north of its current location. Currently the existing double circuit transmission line centerline passes through an active construction debris landfill. The landfill owner wants to expand operation to the area currently encumbered by the existing transmission lines . The Project is located in the Village of Valley View, Cuyahoga County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "3df17bb9405e6a972f224316d0a101d62be4a900e72b1d659d081e3418538980",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/harding-juniper-and-chamberlin-harding.html",
+        "title": "Harding-Juniper 345 kV & Chamberlin-Harding 345 kV Transmission Line Relocation Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/harding-juniper-and-chamberlin-harding.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Harding-Juniper 345 kV & Chamberlin-Harding 345 kV Transmission Line Relocation Project",
+    "native_id": "OH:harding-juniper-and-chamberlin-harding",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0017-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:harding-leroy-center-glenwillow-inland-transmission-lines-structure-replacement",
+    "center": null,
+    "counties": [
+      "39035"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to replace four (4) double circuit structures that currently support the existing Harding-Leroy Center S-6 and Glenwillow-Inland S-5 345 kV Transmission Lines. The proposed project was requested by the Ohio Department of Transportation to increase the height of the affected structures to accommodate a bridge replacement. The Project is located in the city of Garfield Heights, Cuyahoga County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "3a9d15c0b900b49ff99b8a2a996102e33b351f9228c52054b197780583614617",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/harding-leroy-center-glenwillow-inland-transmission-lines-structure-replacement.html",
+        "title": "Harding-Leroy Center S-6, Glenwillow-Inland S-5 345 kV Transmission Lines Structure Replacement Project (Case No.: 26-0016-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/harding-leroy-center-glenwillow-inland-transmission-lines-structure-replacement.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Harding-Leroy Center S-6, Glenwillow-Inland S-5 345 kV Transmission Lines Structure Replacement Project (Case No.: 26-0016-EL-BNR)",
+    "native_id": "OH:harding-leroy-center-glenwillow-inland-transmission-lines-structure-replacement",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:hawthorne-substation-project",
+    "center": null,
+    "counties": [
+      "39095"
+    ],
+    "description": "(OPSB Case No. 25-0876-EL-BLN) In this Project, ATSI is proposing to expand the existing Hawthorne Substation to expand the existing Hawthorne 138 kV Substation to convert the existing substation into a ring bus substation configuration. The substation will expand from its existing square footage of approximately 15,624 square feet to approximately 27,526 square feet. This expansion represents an approximate 76 percent increase in square footage. As part of the Project, the existing Angola-Midway 138 kV Transmission Line will be re-terminated inside the reconfigured Hawthorne Substation. This will create the Angola-Hawthorne 138 kV Transmission Line and Hawthorne-Midway 138 kV Transmission Line. The existing structures outside of the Hawthorne Substation will remain, and new conductors will be strung from the existing structure immediately outside of Hawthorn Substation to the new substation take-off structures. The Project is in the city of Toledo, Lucas County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "a960ff7a9bbf4b77b5e72a5a623145bd997291be96c5b35491ec27b074028dce",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/hawthorne-substation-project.html",
+        "title": "Hawthorne Substation Expansion Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/hawthorne-substation-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Hawthorne",
+          "norm": "HAWTHORNE",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Hawthorne Substation Expansion Project",
+    "native_id": "OH:hawthorne-substation-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "25-0876-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:london-tangy-harriot-substation-project",
+    "center": null,
+    "counties": [
+      "39159"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility London-Tangy 138 kV Transmission Line Tap to Harriot Substation Project Case Number 26-0015-EL-BNR In this Project ATSI and Ohio Edison proposes to construct an approximately 200-foot (0.03 mile) transmission line tap from the existing London-Tangy 138 kV Transmission Line to the new Ohio Edison owned Harriot Substation. The project will require the replacement of three existing structures, the installation of three new structures, the installation of three new SCADA controlled switches, and the installation of approximately 200 feet of new conductor. The Project is located in Millcreek Township, Union County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "14fb3501ee9bdbbf40ee22e8793f905200619cee7df89e17ecbea96b5d9d561f",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/london-tangy-harriot-substation-project.html",
+        "title": "London-Tangy 138 kV Transmission Line Tap to Harriot Substation Project (Case Number 26-0015-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/london-tangy-harriot-substation-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "London-Tangy 138 kV Transmission Line Tap to Harriot Substation Project (Case Number 26-0015-EL-BNR)",
+    "native_id": "OH:london-tangy-harriot-substation-project",
+    "other_owners": [],
+    "owner": "Ohio Edison",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:nevada-substation-expansion-project",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/431106076 (Nevada Substation), corroborated by operator, voltage.",
+      "lat": 41.011422,
+      "lon": -80.652647
+    },
+    "counties": [
+      "39099"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility Nevada Substation Expansion and 138 kV Transmission Lines Partial Rebuild Project (OPSB Case No. 25-0703-EL-BLN) In this Project, ATSI proposes to expand the existing Nevada Substation for the installation of a four-breaker ring bus. To facilitate this, the Substation will expand from its existing square footage of approximately 25,478 square feet to approximately 44,926 square feet. This will result in an approximate 76.3 percent increase in square footage. As part of the Project, the existing Boardman-Sammis 138 kV Transmission Line connection to Nevada Substation will be relocated to the east side of the substation as part of the reconfigured Nevada Substation. This transmission line relocation will require the modification of one (1) existing structure, the installation of three (3) new steel monopole structures on concrete foundations and the removal of eight (8) wood poles and of the line conductor from Structure 14079 to the substation. The Project is in Boardman Township, Mahoning County Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "8682708e22dd2c2451ad4e3fcfc1f90b65dd26f1ace75161ac5b85f176b4f158",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/nevada-substation-expansion-project.html",
+        "title": "Nevada Substation Expansion and 138-kV Transmission Lines Partial Rebuild Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/nevada-substation-expansion-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/431106076",
+            "lat": 41.0114219,
+            "lon": -80.6526468,
+            "name": "Nevada Substation",
+            "operator": "FirstEnergy",
+            "state": "OH",
+            "voltage": "138000;69000;23000;13200"
+          },
+          "name": "Nevada",
+          "norm": "NEVADA",
+          "status": "matched"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Nevada Substation Expansion and 138-kV Transmission Lines Partial Rebuild Project",
+    "native_id": "OH:nevada-substation-expansion-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": "25-0703-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:niles-shenango-transmission-line-project",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/631392692 (Niles Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 41.163783,
+      "lon": -80.747804
+    },
+    "counties": [
+      "39155"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to rebuild approximately 14.5 miles of the existing Niles Shenango 345 kV Transmission Line, from the existing Niles Substation to Structure No. 42033. To accomplish this, ATSI will replace eighty-eight (88) existing wood pole and steel pole structures with eighty-eight (88) new steel structures on concrete foundations. The new structures will be a combination of 345 kV H-frames, 345 kV 3-poles single-circuit steel structures, and 345 kV double-circuit steel monopoles, and will replace the existing structures in approximately the same locations. The Project will also encompass replacing the existing double bundled 954 kcmil 48/7 ACSR conductor with double bundled 954 kcmil 54/7 ACSS conductor. The new installation will consist of two shield wires, one being 7#6 Alumoweld and the other SFSJ-J-14069 Optical Ground Wire (“OPGW”). The Project is in the city of Hubbard, Hubbard Township, Liberty Township, city of Niles, and Weathersfield Township, Trumbull County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "195b444c7195caf5ec7a57cd60831978359ccec6c6840cf397ade723f15f96ac",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/niles-shenango-transmission-line-project.html",
+        "title": "Niles-Shenango 345 kV Transmission Line Rebuild Project (OPSB Case No. 26-0374-EL-BLN)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/niles-shenango-transmission-line-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/631392692",
+            "lat": 41.1637827,
+            "lon": -80.7478044,
+            "name": "Niles Substation",
+            "operator": null,
+            "state": "OH",
+            "voltage": "345000;138000"
+          },
+          "name": "Niles",
+          "norm": "NILES",
+          "status": "matched"
+        },
+        {
+          "name": "Shenango",
+          "norm": "SHENANGO",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Niles-Shenango 345 kV Transmission Line Rebuild Project (OPSB Case No. 26-0374-EL-BLN)",
+    "native_id": "OH:niles-shenango-transmission-line-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0374-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:pine-wadsworth-transmission-project",
+    "center": null,
+    "counties": [
+      "39153"
+    ],
+    "description": "In this project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to relocate and replace Structures No. 6697 through 6700 that support both the Pine‑Wadsworth Muni 138 kV and Barberton‑West Akron 138 kV transmission lines. The existing steel lattice towers have sustained significant deterioration, especially on Structures No. 6698 and 6699, where the legs show advanced structural degradation. In addition, a railroad spur that carries tank cars carrying hazardous and flammable materials passes beneath the energized conductors and a multi‑story metal building located within the transmission line right-of-way (“ROW”) increases safety risk in the event of a conductor failure. To address these issues and maintain system reliability, four new double‑circuit single steel monopole structures on drilled concrete pier foundations along with new conductor and shield wire will be installed. Structures 6698 and 6699 will be installed approximately 222 feet to the west of their existing locations. Structures 6697 and 6700 will be approximately 20 and 28 feet south of their current locations, respectively. Upon completion of installation, the existing lattice towers will be removed. The project is located in Copley Township, Summit County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "79ddb8ea89877c07367fa3976d959f945a39f43cc0925c123939c39e0c227c8f",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/pine-wadsworth-transmission-project.html",
+        "title": "Pine-Wadsworth Muni 138 kV Transmission Line-Structure Replacement and Reroute Project (OPSB Case No. 26-0140-EL-BLN)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/pine-wadsworth-transmission-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Pine-Wadsworth Muni 138 kV Transmission Line-Structure Replacement and Reroute Project (OPSB Case No. 26-0140-EL-BLN)",
+    "native_id": "OH:pine-wadsworth-transmission-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0140-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "in_service"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:sandusky-south-substations-and-138-kv-transmission-line-connections",
+    "center": null,
+    "counties": [
+      "39043"
+    ],
+    "description": "In this Project, ATSI and Ohio Edison are proposing to construct the new 345/138 kV Sandusky South Substation and connect existing associated transmission lines to the new substation to provide two 138 kV retail delivery points for a new data center customer, Aligned Data Centers NEO PropCo LLC (“Customer”). The construction of the Sandusky South Substation and associated transmission lines is a three-phase Project comprised of the following: Phase 1: Relay Setting Adjustments (No OPSB filing); Phase 2: Construct entire footprint of the proposed 5.9-acre Sandusky South Substation and build the 138 kV yard which includes a 9-breaker, breaker-and-a-half and reconfiguration of 4 existing 138 kV transmission lines, subject of this filing; Phase 3: Construct the 345 kV 4-breaker ring bus within the footprint of the Sandusky South Substation, add additional 6 new 138 kV breakers and connect an existing 345 kV transmission line, subject of a future OPSB filing. The Project is in Perkins Township, Erie County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "80b0f1937d48cd9cf27bd6b9614c9b8c21e8ed8a7534c1afdd92026e3f4cfbee",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/sandusky-south-substations-and-138-kv-transmission-line-connections.html",
+        "title": "Sandusky South Substation and 138 kV Transmission Line Connections Project (OPSB Case No. 26-0527-EL-BLN)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/sandusky-south-substations-and-138-kv-transmission-line-connections.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Sandusky South",
+          "norm": "SANDUSKY SOUTH",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Sandusky South Substation and 138 kV Transmission Line Connections Project (OPSB Case No. 26-0527-EL-BLN)",
+    "native_id": "OH:sandusky-south-substations-and-138-kv-transmission-line-connections",
+    "other_owners": [],
+    "owner": "Ohio Edison",
+    "planning_region": null,
+    "siting_case": "26-0527-EL-BLN",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:OH:visteon-greenfield-138kv-switch-replacement-project",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/303690835 (Greenfield Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.432758,
+      "lon": -82.727611
+    },
+    "counties": [
+      "39043"
+    ],
+    "description": "In this Project, American Transmission Systems, Incorporated (“ATSI”), a FirstEnergy company, proposes to replace one (1) existing transmission line switch and one (1) associated existing transmission structure on the Visteon-Greenfield 138 kV Transmission Line. The Project will require the removal of one (1) existing switch and one (1) existing structure and will require the installation of one (1) new 1-way switch and one (1) new steel pole, on a drilled pier concrete foundation. The existing conductor 336.4 kcmil 26/7 ACSR “Linnet” will be transferred to the new structure. The existing shield wire will not be transferred. The Project is located in Perkins Township, Erie County, Ohio.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "a59d4791957e7d7f0ea464cb0e0c267bcebd8280192ee0a0e404503166e196cf",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/visteon-greenfield-138kv-switch-replacement-project.html",
+        "title": "Visteon-Greenfield 138kV Switch Replacement Project (OPSB Case No. 26-0021-EL-BNR)"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/ohio/visteon-greenfield-138kv-switch-replacement-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Visteon",
+          "norm": "VISTEON",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/303690835",
+            "lat": 41.4327578,
+            "lon": -82.727611,
+            "name": "Greenfield Substation",
+            "operator": "Ohio Edison",
+            "state": "OH",
+            "voltage": "138000;69000;34500;12470"
+          },
+          "name": "Greenfield",
+          "norm": "GREENFIELD",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Visteon-Greenfield 138kV Switch Replacement Project (OPSB Case No. 26-0021-EL-BNR)",
+    "native_id": "OH:visteon-greenfield-138kv-switch-replacement-project",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": "26-0021-EL-BNR",
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "39"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:bethlen-ethelsprings",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/423030611 (Bethlen Substation), OSM way/1246931957 (Ethel Springs Substation), corroborated by voltage.",
+      "lat": 40.290849,
+      "lon": -79.27523
+    },
+    "counties": [
+      "42129"
+    ],
+    "description": "Update At FirstEnergy, it is our responsibility to deliver the power our customers depend on in their daily lives. Keystone Appalachian Transmission Company (“KATCo”), a FirstEnergy company, has identified a need for a new 138-kilovolt (kV) transmission line in Westmoreland County, Pennsylvania, to enhance service reliability for distribution customers. KATCo evaluated the existing transmission system in the area and identified the need to construct a new 138-kV transmission line to connect the existing Ethel Springs Substation to the existing Bethlen Substation. The project was presented to PJM, the regional transmission organization that coordinates the movement electricity in Pennsylvania and 12 other states. The line will extend approximately 8 to 10 miles and will be supported primarily by steel pole structures. The project is needed to reinforce the transmission and distribution systems and will enhance service reliability for approximately 11,200 customers in Westmoreland County. KATCo held a public open house on February 7, 2024, to solicit feedback from interested parties about the new line through portions of Derry Township, Ligonier Township and Ligonier Borough in Westmoreland County. Feedback received was evaluated by KATCo representatives and a proposed route selected.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "304762e4824426266b76cc4bf584cacf2e9faa1fc4563fd109cb962ea94dbfc8",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/bethlen-ethelsprings.html",
+        "title": "Bethlen-Ethel Springs 138-kV Transmission Line Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/bethlen-ethelsprings.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/423030611",
+            "lat": 40.2491222,
+            "lon": -79.2368603,
+            "name": "Bethlen Substation",
+            "operator": null,
+            "state": "PA",
+            "voltage": "138000;34500"
+          },
+          "name": "Bethlen",
+          "norm": "BETHLEN",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1246931957",
+            "lat": 40.332576,
+            "lon": -79.3136005,
+            "name": "Ethel Springs Substation",
+            "operator": null,
+            "state": "PA",
+            "voltage": "138000"
+          },
+          "name": "Ethel Springs",
+          "norm": "ETHEL SPRINGS",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Bethlen-Ethel Springs 138-kV Transmission Line Project",
+    "native_id": "PA:bethlen-ethelsprings",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:carroll-hunterstown-project",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168817229 (Hunterstown Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 39.868177,
+      "lon": -77.164536
+    },
+    "counties": [],
+    "description": ", 341 White Pond Drive, Akron, Ohio 44320. * By clicking these links you are leaving the FirstEnergy website, and entering a website maintained by a third party. That party is entirely responsible for the content of its website.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "45a540e13a3a7eb1d112c04a0093d58973381e5ad663d6919ccf5dd0265914f2",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/carroll-hunterstown-project.html",
+        "title": "Carroll-Hunterstown Improvements Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/carroll-hunterstown-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Carroll",
+          "norm": "CARROLL",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/168817229",
+            "lat": 39.8681774,
+            "lon": -77.1645359,
+            "name": "Hunterstown Substation",
+            "operator": "Met-Ed",
+            "state": "PA",
+            "voltage": "115000"
+          },
+          "name": "Hunterstown",
+          "norm": "HUNTERSTOWN",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Carroll-Hunterstown Improvements Project",
+    "native_id": "PA:carroll-hunterstown-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:cranberry-pine",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/391321453 (Cranberry Substation), OSM way/230331726 (Pine Substation), corroborated by operator, voltage.",
+      "lat": 40.686995,
+      "lon": -80.072673
+    },
+    "counties": [
+      "42019"
+    ],
+    "description": "American Transmission Systems, Inc. (“ATSI”) is proposing to build a new electric transmission line in Butler County, Pennsylvania to enhance service reliability and support residential and business expansion plans in the area. The Cranberry-Pine No. 3 Transmission Line Project includes construction of a new, approximately four-mile-long 138-kilovolt (kV) transmission line that will connect the existing Cranberry Substation to the existing Maple-Pine 138/69-kV transmission line. Questions or comments may be directed to transmissionprojects@firstenergycorp.com , or contact a company representative at 1-800-589-2837. Please reference Cranberry-Pine #3 Electric Transmission Line Project in all communications.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "8a1e6c4d6acb6258d64d4d6af047d5735b4cba0ba8f06130021982190334af8a",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/cranberry-pine.html",
+        "title": "Cranberry-Pine #3 138-kV Transmission Line Construction"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/cranberry-pine.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/391321453",
+            "lat": 40.7229659,
+            "lon": -80.0984135,
+            "name": "Cranberry Substation",
+            "operator": null,
+            "state": "PA",
+            "voltage": "500000;138000"
+          },
+          "name": "Cranberry",
+          "norm": "CRANBERRY",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/230331726",
+            "lat": 40.6510237,
+            "lon": -80.0469334,
+            "name": "Pine Substation",
+            "operator": "FirstEnergy",
+            "state": "PA",
+            "voltage": "138000;69000"
+          },
+          "name": "Pine",
+          "norm": "PINE",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        69,
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Cranberry-Pine #3 138-kV Transmission Line Construction",
+    "native_id": "PA:cranberry-pine",
+    "other_owners": [],
+    "owner": "American Transmission Systems",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:dutch-fork-enon-rebuild-project",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/399366238 (Enon Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 39.971077,
+      "lon": -80.408303
+    },
+    "counties": [
+      "42059"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility Dutch Fork-Enon 138-kV Rebuild Project At FirstEnergy, it is our responsibility to deliver the power our customers depend on in their daily lives. Keystone Appalachian Transmission Company (“KATCo”), a FirstEnergy company, has identified the need to rebuild the existing Dutch Fork-Enon 138-kilovolt (kV) transmission line in Washington County and Greene County, Pennsylvania, due to the condition of the transmission line. KATCo is evaluating alternative routes for the rebuild through portions of East Finley Township, West Finley Township, Donegal Township and Morris Township in Washington County and Richhill Township in Greene County in Pennsylvania. KATCo evaluated the existing condition of the Dutch Fork-Enon 138 kV Transmission Line in the area and identified the need to construct a new 138-kV transmission line to connect the existing Dutch fork Substation to the existing Enon Substation. The line will extend approximately 15 miles and will be supported primarily by steel pole structures. The project is needed due to the deteriorating condition of the existing transmission line that cannot be rebuilt due to outage constraints. KATCo will hold a public open house to solicit feedback from interested parties about the new line through portions of East Finley Township, West Finley Township, Donega",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "f5e18afecfe37cdb59e12a449bf3a1a25ecc00fd88b71a3eb7c386d55ed7738d",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/dutch-fork-enon-rebuild-project.html",
+        "title": "Dutch Fork-Enon 138kV Rebuild Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/dutch-fork-enon-rebuild-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "Dutch Fork",
+          "norm": "DUTCH FORK",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/399366238",
+            "lat": 39.971077,
+            "lon": -80.4083031,
+            "name": "Enon Substation",
+            "operator": null,
+            "state": "PA",
+            "voltage": "138000;34500"
+          },
+          "name": "Enon",
+          "norm": "ENON",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Dutch Fork-Enon 138kV Rebuild Project",
+    "native_id": "PA:dutch-fork-enon-rebuild-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:east-germantown",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/99714143 (Germantown Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 39.758475,
+      "lon": -77.125962
+    },
+    "counties": [],
+    "description": "MAIT completed an evaluation of the existing electric system in Adams County and identified a need to construct a 115 kilovolt (“kV”) transmission line that will extend from the existing Germantown Substation to the proposed substation named East Germantown Substation. The transmission line will be supported primarily on wood pole structures and occasional steel structures where necessary. Construction of the new line and substation will improve reliability for customers in the area. Additionally, the project will increase switching opportunities to enable quicker service restoration during outages. This work will accommodate existing and future growth, provide an additional source of electricity to the area, and greatly improve the operational flexibility of the electric system in the project area. PJM, the regional transmission system operator, and the PJM stakeholders have reviewed the proposed project and have assigned the supplemental upgrade identification number s2409. More information about the project can be found at www.pjm.com.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "211c6fb3ee5b8042e6b58683e1529c5330fdccfd77790ac970e58eb419f49b2f",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/east-germantown.html",
+        "title": "East Germantown-Germantown Reliability Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/east-germantown.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "name": "East Germantown",
+          "norm": "EAST GERMANTOWN",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/99714143",
+            "lat": 39.7584748,
+            "lon": -77.1259619,
+            "name": "Germantown Substation",
+            "operator": "Met-Ed",
+            "state": "PA",
+            "voltage": "138000;115000;13200"
+          },
+          "name": "Germantown",
+          "norm": "GERMANTOWN",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "East Germantown-Germantown Reliability Project",
+    "native_id": "PA:east-germantown",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:elko-moshannon-transmission-line-rebuild-project",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/181047003 (Elko Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 41.365166,
+      "lon": -78.598644
+    },
+    "counties": [
+      "42033"
+    ],
+    "description": "The Project consists of rebuilding approximately 21.5 miles of the existing Elko-Moshannon 230 kV Transmission Line. The existing Elko-Moshannon 230 kV Transmission Line is located within Elk and Clearfield Counties, Pennsylvania. The proposed project is necessary to mitigate the risks associated with the existing condition of the transmission line. The Project has been presented to PJM, the regional transmission system operator. More information about the project can be found at www.pjm.com *.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "97d9f41032ef8fc69a667b6936973ef6cd07b70a9932ab28ff9860ef1a96283f",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/elko-moshannon-transmission-line-rebuild-project.html",
+        "title": "Elko-Moshannon 230kV Transmission Line Rebuild Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/elko-moshannon-transmission-line-rebuild-project.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/181047003",
+            "lat": 41.3651658,
+            "lon": -78.5986438,
+            "name": "Elko Substation",
+            "operator": "West Penn Power",
+            "state": "PA",
+            "voltage": "230000;138000"
+          },
+          "name": "Elko",
+          "norm": "ELKO",
+          "status": "matched"
+        },
+        {
+          "name": "Moshannon",
+          "norm": "MOSHANNON",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Elko-Moshannon 230kV Transmission Line Rebuild Project",
+    "native_id": "PA:elko-moshannon-transmission-line-rebuild-project",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:erie-south-piney-seward-trans-projects",
+    "center": null,
+    "counties": [],
+    "description": "Erie South-Piney 115-kV Transmission Line Rebuild Project: Mid-Atlantic Interstate Transmission, LLC (“MAIT”), is proposing to rebuild the Erie South-Piney 115-kilovolt (kV) transmission line in Clarion, Crawford, Erie and Venango counties to enhance service reliability and accommodate existing and future demand in the area. Piney-Seward 115-kV Transmission Line Rebuild Project: Mid-Atlantic Interstate Transmission, LLC (“MAIT”) is proposing to rebuild the Piney-Seward 115 kV transmission line in Westmoreland, Indiana, Jefferson, Armstrong and Clarion counties to enhance service reliability and accommodate load growth in the area.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "24e1c8f5df9b6b2d7474857f6562227833c9835a6daf108a545145607b964a26",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/erie-south-piney-seward-trans-projects.html",
+        "title": "Erie South-Piney-Seward 115-kV Transmission Lines Rebuild Projects"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/erie-south-piney-seward-trans-projects.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C26",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Erie South-Piney-Seward 115-kV Transmission Lines Rebuild Projects",
+    "native_id": "PA:erie-south-piney-seward-trans-projects",
+    "other_owners": [],
+    "owner": "Mid-Atlantic Interstate Transmission",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:hunterstown-orrtanna",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168817229 (Hunterstown Substation), OSM way/1239726617 (Orrtanna Substation), corroborated by operator, voltage.",
+      "lat": 39.856172,
+      "lon": -77.257671
+    },
+    "counties": [],
+    "description": "FirstEnergy is proposing to reinforce the regional transmission network by building a new 115-kilovolt (kV) transmission line linking the Orrtanna Substation in Highland Township and Hunterstown Substation in Straban Township, which are both located in the service area of Metropolitan Edison (Met-Ed), a FirstEnergy utility.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "d04a0237ecdf150c7ec7cb218827cf4b781e4f85f7dad114d857dc570a5dc79b",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/hunterstown-orrtanna.html",
+        "title": "Hunterstown-Orrtanna 115-kV Transmission Line Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/hunterstown-orrtanna.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168817229",
+            "lat": 39.8681774,
+            "lon": -77.1645359,
+            "name": "Hunterstown Substation",
+            "operator": "Met-Ed",
+            "state": "PA",
+            "voltage": "115000"
+          },
+          "name": "Hunterstown",
+          "norm": "HUNTERSTOWN",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1239726617",
+            "lat": 39.8441665,
+            "lon": -77.3508057,
+            "name": "Orrtanna Substation",
+            "operator": "Adams Electric Cooperative",
+            "state": "PA",
+            "voltage": "115000"
+          },
+          "name": "Orrtanna",
+          "norm": "ORRTANNA",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Hunterstown-Orrtanna 115-kV Transmission Line Project",
+    "native_id": "PA:hunterstown-orrtanna",
+    "other_owners": [],
+    "owner": "Metropolitan Edison",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:niles-valley",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/441707777 (Niles Valley Substation), corroborated by operator, voltage.",
+      "lat": 41.819716,
+      "lon": -77.288515
+    },
+    "counties": [
+      "42117"
+    ],
+    "description": "Mid-Atlantic Interstate Transmission, LLC (“MAIT”), a FirstEnergy subsidiary, is planning to construct a new 115 kilovolt (“kV”) substation in Tioga County, Pennsylvania. The new substation will require a transmission line extension that taps nearby existing transmission lines to provide electricity to the new substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "653af11a3dec79b8c388b9c72403d047ee6473bf9f48d8cc3cdb698fa6c1bf1d",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/niles-valley.html",
+        "title": "Niles Valley 115-kV Ring Bus Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/niles-valley.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/441707777",
+            "lat": 41.8197164,
+            "lon": -77.2885146,
+            "name": "Niles Valley Substation",
+            "operator": "Pennsylvania Electric Company",
+            "state": "PA",
+            "voltage": "115000;34500"
+          },
+          "name": "Niles Valley",
+          "norm": "NILES VALLEY",
+          "status": "matched"
+        }
+      ],
+      "kind": "site",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Niles Valley 115-kV Ring Bus Project",
+    "native_id": "PA:niles-valley",
+    "other_owners": [],
+    "owner": "Mid-Atlantic Interstate Transmission",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:saxton-shade-gap",
+    "center": null,
+    "counties": [],
+    "description": "Team, 341 White Pond Drive, Akron, Ohio 44320.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "08d4594ec5410433c22e99fe17683363bc567f0802551ee2fc193ee148676090",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/saxton-shade-gap.html",
+        "title": "Saxton-Shade Gap 115-kV Transmission Line Tap to Texas Eastern Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/saxton-shade-gap.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C26",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Saxton-Shade Gap 115-kV Transmission Line Tap to Texas Eastern Project",
+    "native_id": "PA:saxton-shade-gap",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:shawnee-walker",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/180628930 (Shawnee Substation), OSM way/738940893 (Walker Substation), corroborated by operator, voltage.",
+      "lat": 40.814017,
+      "lon": -76.198456
+    },
+    "counties": [],
+    "description": "in all communications.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "23aa94561dd980beeda81874c1478e348730e902e02dd1f4dc073dc1db2e50a9",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/shawnee-walker.html",
+        "title": "Shawnee-Walker 69-kV Transmission Line Reliability Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/shawnee-walker.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/180628930",
+            "lat": 41.0604751,
+            "lon": -75.0596874,
+            "name": "Shawnee Substation",
+            "operator": "Met-Ed",
+            "state": "PA",
+            "voltage": "230000;34500"
+          },
+          "name": "Shawnee",
+          "norm": "SHAWNEE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/738940893",
+            "lat": 40.5675582,
+            "lon": -77.337224,
+            "name": "Walker Substation",
+            "operator": "PPL",
+            "state": "PA",
+            "voltage": "69000"
+          },
+          "name": "Walker",
+          "norm": "WALKER",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": null,
+      "rule": "C26",
+      "voltages_kv": [
+        69
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Shawnee-Walker 69-kV Transmission Line Reliability Project",
+    "native_id": "PA:shawnee-walker",
+    "other_owners": [],
+    "owner": null,
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:PA:van-reed",
+    "center": null,
+    "counties": [
+      "42011"
+    ],
+    "description": "Versions Not Supported You are currently using a browser and/or operating system we do not support. Some of the functionality and menus may not be available with this browser. Please upgrade your browser and/or operating system to improve your user experience. CLOSE warning Oops! close It is taking longer than expected for this page to load. Please try refreshing the page. Close About Us Electric Companies Grid Investments Transmission Projects Ohio Pennsylvania New Jersey West Virginia Maryland Virginia Public Meetings Generation System Company History Board of Directors Leadership Team Standards of Conduct and Affiliate Restrictions Lighting the Way Corporate Responsibility Van Reed 69-kV Transmission Project Met-Ed, a FirstEnergy electric utility, has identified a need for a new substation and distribution line capacity that will require a 69-kilovolt (kV) transmission line near the Reading Airport in Berks County, Pennsylvania, to enhance service reliability for existing customers and support higher electrical demand associated with planned business expansion. Mid-Atlantic Interstate Transmission, LLC (MAIT), FirstEnergy’s transmission affiliate company, is proposing to build the Van Reed 69-kV Transmission Line to the new substation in Bern Township from an existing transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "source_sha256": "8ce24296d95831b661321a6f8417e8df4862da099aaef2c8a22e034519a3f077",
+        "source_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/van-reed.html",
+        "title": "Van Reed 69-kV Project"
+      },
+      "row": null,
+      "sheet": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/van-reed.html"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{oh,pa}-substations.json",
+      "endpoints": [],
+      "kind": null,
+      "names_from": "name",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "ATSI",
+        "AMERICAN TRANSMISSION SYSTEMS",
+        "OHIO EDISON",
+        "TOLEDO EDISON",
+        "CLEVELAND ELECTRIC",
+        "PENELEC",
+        "PENNSYLVANIA ELECTRIC",
+        "MET-ED",
+        "METROPOLITAN EDISON",
+        "WEST PENN",
+        "MID-ATLANTIC INTERSTATE",
+        "MAIT",
+        "ILLUMINATING"
+      ],
+      "reason": "no_named_facility",
+      "rule": "C26",
+      "voltages_kv": [
+        69
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Van Reed 69-kV Project",
+    "native_id": "PA:van-reed",
+    "other_owners": [],
+    "owner": "Mid-Atlantic Interstate Transmission",
+    "planning_region": null,
+    "siting_case": null,
+    "source_id": "firstenergy-transmission-projects",
+    "states": [
+      "42"
+    ],
+    "status": null,
+    "status_group": "proposed"
   }
 ]
