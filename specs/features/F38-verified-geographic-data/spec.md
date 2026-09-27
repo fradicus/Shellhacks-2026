@@ -28,6 +28,16 @@ F30 source and emit non-publishable audit artifacts before the shared integratio
 location promotion, release assembly and map publication still require that contract and independent evidence review.
 This research checkpoint does not pass the geographic pilot gate.
 
+## Mid-Atlantic continuation
+
+The user explicitly directed this worker to move to the Mid-Atlantic after publication of the New England batch.
+[F38 Mid-Atlantic decision](../../decisions/F38-mid-atlantic-next.md) scopes NY, NJ, PA, DE, MD and DC. Virginia and
+West Virginia remain with the existing Southeast worker. Preserve the published New England release and its reviews.
+Aim for the preceding 250–500 reviewed project-record scale, subject to the same evidence gates, and distinguish
+records, distinct facility sites and derived map positions. New source/project publication requires an additive
+contract and F30 integration; C23's existing-ID overlay cannot introduce new projects. Research may proceed while
+that separately claimed contract is reviewed. Original run gates remain historical for this explicit continuation.
+
 ## Refined request
 
 Build a reproducible database of publicly documented electric transmission construction and upgrade projects,
