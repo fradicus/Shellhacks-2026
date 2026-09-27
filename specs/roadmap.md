@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
@@ -343,3 +343,14 @@ C38's operator guard).
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F50 | Interior West project coverage (WY, NV, UT, ID, MT) with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: California municipal utilities
+
+Continuing the user's sparse-area goal (the user named California). [C51](decisions/C51-california-munis.md) assigns
+[F51](features/F51-california-munis/spec.md): page-verified transcriptions of the 2026 WECC Annual Progress Reports
+of the California utilities outside CAISO's Transmission Development Forum (LADWP, IID, SMUD, TANC, TID, MID),
+through F50's progress-report reader (C33 tiers plus C38's operator guard).
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F51 | California municipal-utility project coverage from WECC progress reports | A | data-researcher | 7 | F00, F30, F50 | never |
