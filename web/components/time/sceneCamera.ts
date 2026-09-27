@@ -5,4 +5,3 @@ export function bearing(a: { lat: number; lon: number }, b: { lat: number; lon: 
   const x = Math.cos(a.lat * r) * Math.sin(b.lat * r) - Math.sin(a.lat * r) * Math.cos(b.lat * r) * Math.cos((b.lon - a.lon) * r);
   return (Math.atan2(y, x) * 180) / Math.PI;
 }
-
