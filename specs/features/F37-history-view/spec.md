@@ -148,3 +148,9 @@ the same M rows: actual in-service date minus required date, in half-year bars f
 median in days. Same rows and same two documented dates as the verdict; not a construction duration. Hidden with the
 masthead on phones. Validation: `node --import ./tests/web/loader.mjs --test tests/web/history/slip.test.ts`;
 headless screenshot at 1440 on live data.
+
+## Legend lists what is drawn (2026-09-27)
+
+The legend's colors are the kinds with at least one row in the window, each with its count: national tiers
+(confirmed, owner-published, tentative) and legacy owners (Dominion SC, Georgia Power, owner not mapped). The counts
+sum to the window's projects. A kind with none drawn is not listed; "owner not mapped" is listed when drawn.
