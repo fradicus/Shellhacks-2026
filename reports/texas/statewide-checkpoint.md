@@ -12,7 +12,7 @@ source-bounded ERCOT coverage, not an inventory of every Texas project. No indep
 | Unlocated | 191 | 191 |
 | Total | 2,049 | 2,044 |
 
-The 635 candidate projects and 1,218 county-reference projects make 1,853 projects geographically displayable.
+The 635 candidate projects (443 distinct centers) and 1,218 county-reference projects make 1,853 projects geographically displayable.
 County projects have 1,407 linked anchors because some name multiple counties. They remain 1,218 projects;
 coincident county dots are not separate physical sites. Exact centers stay null for these projects. All candidate
 and county locations are excluded from overlap calculations. Nothing is promoted to independently confirmed.
