@@ -1,10 +1,13 @@
+"use client";
+
+import { ProjectDetail } from "@/components/national/ProjectDetail";
 import { LocationEvidence } from "@/components/national/LocationEvidence";
 import { STATUS_LABEL } from "@/lib/national/filters";
-import type { NationalProject, NationalSource } from "@/lib/national/types";
+import type { NationalProject, NationalProjectSummary, NationalSource } from "@/lib/national/types";
 import { nationalTier } from "./nationalProjects";
 import s from "./time.module.css";
 
-export function NationalProjectEvidence({ project, source, dataset }: { project: NationalProject; source?: NationalSource; dataset: string | null }) {
+function FullEvidence({ project, source, dataset }: { project: NationalProject; source?: NationalSource; dataset: string | null }) {
   const locator = [project.evidence.page !== null ? `page ${project.evidence.page}` : null,
     project.evidence.sheet, project.evidence.row !== null ? `row ${project.evidence.row}` : null].filter(Boolean).join(" · ");
   const basis = project.center?.basis === "two" ? "Mean of two located endpoints"
@@ -24,4 +27,10 @@ export function NationalProjectEvidence({ project, source, dataset }: { project:
     <p>Dataset: <code>{dataset ?? "Unknown"}</code></p>
     <p>National discovery point; overlap matching has not been run for this project.</p>
   </div>;
+}
+
+export function NationalProjectEvidence({ project, dataset }: { project: NationalProjectSummary; dataset: string | null }) {
+  return <ProjectDetail id={project._id} dataset={dataset}>
+    {({ project: full, source }) => <FullEvidence project={full} source={source} dataset={dataset} />}
+  </ProjectDetail>;
 }
