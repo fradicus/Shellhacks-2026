@@ -16,3 +16,8 @@ Validation: desktop/mobile list, state/pin scopes, load more, pair selection,
 source evidence, share/reload, 2D/3D, legacy switch, failed and stale responses,
 plus map/scope tests and exact-revision CI. Preserve unknown dates and location
 labels; no new point coordinates, route calls, eligibility math or dependencies.
+
+Committed snapshot mode has no published pair collection (F48 explicitly refuses
+it). Show that limitation without making a request known to fail; keep Legacy
+pairs available. Real Atlas failures still use retry/refresh and never an empty
+success. CI navigation checks caught the unnecessary snapshot request.

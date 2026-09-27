@@ -130,7 +130,8 @@ export function TimeView({
   const [scope, setScope] = useState<Scope | null>(() => parseScope(initialScope));
   const [candidateMode, setCandidateMode] = useState(!initialPairId || initialPairId.startsWith("npc:"));
   const [sharedId, setSharedId] = useState(initialPairId?.startsWith("npc:") ? initialPairId : null);
-  const candidates = useCandidatePairs(national.dataset, scope ? formatScope(scope) : null, candidateMode, sharedId);
+  const candidates = useCandidatePairs(national.dataset, scope ? formatScope(scope) : null, candidateMode && national.mode !== "snapshot", sharedId);
+  const candidateError = national.mode === "snapshot" ? "Nearby candidates are unavailable in committed snapshot mode." : candidates.error;
   const candidatePairs = useMemo<TimePair[]>(() => (candidates.page?.pairs ?? []).map((p) => ({ ...p,
     candidate: true, view: "tentative", review_state: null })), [candidates.page]);
   const pairs = useMemo<TimePair[]>(() => candidateMode ? [...candidatePairs,
@@ -1008,11 +1009,11 @@ export function TimeView({
             </button>
           ))}
         </div>}
-        {candidateMode && candidates.error ? <div className={s.empty} role="alert">
-          <p>{candidates.error}</p>
-          <button type="button" onClick={() => candidates.refresh ? window.location.reload() : candidates.retry()}>
+        {candidateMode && candidateError ? <div className={s.empty} role="alert">
+          <p>{candidateError}</p>
+          {national.mode !== "snapshot" ? <button type="button" onClick={() => candidates.refresh ? window.location.reload() : candidates.retry()}>
             {candidates.refresh ? "Refresh page" : "Retry candidates"}
-          </button>
+          </button> : null}
         </div> : null}
         {visible.length ? (
           <ol className={s.pairList}>
@@ -1059,9 +1060,9 @@ export function TimeView({
               );
             })}
           </ol>
-        ) : candidateMode && candidates.error ? null : (
+        ) : candidateMode && candidateError ? null : (
           <div className={s.empty}>
-            <p>{candidateMode ? (candidates.loading ? "Loading candidates…" : candidates.error ? "" : "No candidates with both projects in this scope.") : !pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
+            <p>{candidateMode ? (candidates.loading ? "Loading candidates…" : candidateError ? "" : "No candidates with both projects in this scope.") : !pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
               : scopeLabel ? `No ${view} pairs with both projects ${scope?.kind === "pin" ? `within ${RULE_MI} mi of the pin` : `in ${scopeLabel}`}. Zero is a valid result, not a failure to look.`
               : `No ${view} pairs in this data. Zero is a valid result, not a failure to look.`}</p>
             {!candidateMode && VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (
