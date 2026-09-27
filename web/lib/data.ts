@@ -1,12 +1,18 @@
 // The one data access layer for pages. Frozen after F00.
 //
 // DATA_MODE=fixture: reads data/fixtures/*.json from disk (dev and CI only; never set in production).
-// Otherwise: fetches this app's own /api/* routes, which read MongoDB Atlas (F06).
+// Otherwise: calls the same server repository the /api/* route handlers use, which reads MongoDB Atlas (F06) under one
+// total deadline per read. Pages no longer fetch their own API over HTTP.
 // Every function returns `Result<T>`: on any failure it returns `{unavailable: true}`, never fixtures.
 //
-// Call it from server components and route handlers. Client components get data as props, or fetch /api/* directly.
+// Server components and route handlers only. Client components get data as props, or fetch /api/* directly.
 
+import "server-only";
 import { unstable_rethrow } from "next/navigation";
+import { fileIdentity, IdentityCache } from "./server/cache";
+import { DbUnavailable } from "./server/db";
+import { DeadlineExceeded } from "./server/deadline";
+import { repository } from "./server/repository";
 import type {
   Coverage,
   Extraction,
@@ -28,6 +34,8 @@ export type BBox = [west: number, south: number, east: number, north: number];
 export interface ProjectQuery {
   bbox?: BBox;
   view?: View;
+  /** Include located endpoints (default true). List pages that never read them pass false. */
+  endpoints?: boolean;
 }
 
 export interface MatchQuery {
@@ -47,11 +55,16 @@ export function analysisDate(): string {
 
 // --- fixture mode ------------------------------------------------------------------------------------------------------
 
+// Parsed fixture files by file identity: an edited fixture is re-read, an unchanged one is parsed once.
+const fixtureFiles = new IdentityCache<unknown[]>(16);
+
 async function fixture<T>(name: string): Promise<T[]> {
   const { readFile } = await import("node:fs/promises");
   const { join } = await import("node:path");
   const dir = process.env.FIXTURE_DIR ?? join(process.cwd(), "..", "data", "fixtures");
-  return JSON.parse(await readFile(join(dir, `${name}.json`), "utf8")) as T[];
+  const path = join(dir, `${name}.json`);
+  // Callers get a shallow copy, so sorting or filtering one never reorders another's rows.
+  return [...(await fixtureFiles.get(await fileIdentity(path), async () => JSON.parse(await readFile(path, "utf8"))))] as T[];
 }
 
 function inBBox(p: Project, [w, s, e, n]: BBox): boolean {
@@ -73,7 +86,7 @@ async function fixtureProjects(withEndpoints: boolean): Promise<Project[]> {
 
 const fixtureApi = {
   async projects(q: ProjectQuery): Promise<Project[]> {
-    const all = await fixtureProjects(true);
+    const all = await fixtureProjects(q.endpoints !== false);
     // Same rule as /api/projects: null-center projects only when no bbox is given.
     return q.bbox ? all.filter((p) => inBBox(p, q.bbox!)) : all;
   },
@@ -115,27 +128,6 @@ const fixtureApi = {
   },
 };
 
-// --- API mode ----------------------------------------------------------------------------------------------------------
-
-function baseUrl(): string {
-  if (typeof window !== "undefined") return "";
-  if (process.env.SITE_URL) return process.env.SITE_URL;
-  // Production: the public domain (the per-deployment URL sits behind Vercel deployment protection).
-  const host =
-    process.env.VERCEL_ENV === "production" ? process.env.VERCEL_PROJECT_PRODUCTION_URL : process.env.VERCEL_URL;
-  return host ? `https://${host}` : `http://localhost:${process.env.PORT ?? 3000}`;
-}
-
-async function api<T>(path: string, params: Record<string, string | number | undefined> = {}): Promise<T | null> {
-  const qs = new URLSearchParams();
-  for (const [k, v] of Object.entries(params)) if (v !== undefined) qs.set(k, String(v));
-  const url = `${baseUrl()}${path}${qs.size ? `?${qs}` : ""}`;
-  const res = await fetch(url, { cache: "no-store" });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`${path} -> HTTP ${res.status}`);
-  return (await res.json()) as T;
-}
-
 // --- public API --------------------------------------------------------------------------------------------------------
 
 async function guard<T>(what: string, fn: () => Promise<T>): Promise<Result<T>> {
@@ -144,74 +136,72 @@ async function guard<T>(what: string, fn: () => Promise<T>): Promise<Result<T>> 
   } catch (err) {
     // Let Next's own control-flow errors through (e.g. the "render dynamically" bailout during build).
     unstable_rethrow(err);
-    const reason = err instanceof Error ? err.message : String(err);
+    // Driver errors can carry hostnames; only the repository's own classified reasons are passed on.
+    const reason = err instanceof DbUnavailable || err instanceof DeadlineExceeded ? err.message : err instanceof Error ? err.name : String(err);
     console.error(`data.${what} unavailable: ${reason}`);
     return { unavailable: true, reason: `${what}: ${reason}` };
   }
 }
 
+/** The release the legacy pages and exports read: the loader's active dataset id, or for fixtures the content hash
+ * of the fixture files, so a page and its export can be shown to describe the same snapshot. */
+export function getRelease(): Promise<Result<string>> {
+  return guard("getRelease", async () => {
+    if (!isFixtureMode()) return repository.release();
+    const [{ readFile }, { join }, { createHash }] = await Promise.all([import("node:fs/promises"), import("node:path"), import("node:crypto")]);
+    const dir = process.env.FIXTURE_DIR ?? join(process.cwd(), "..", "data", "fixtures");
+    const hash = createHash("sha256");
+    for (const name of ["projects", "matches", "locations"]) hash.update(await readFile(join(dir, `${name}.json`)));
+    return `fixture-${hash.digest("hex").slice(0, 12)}`;
+  });
+}
+
 export function getProjects(q: ProjectQuery = {}): Promise<Result<Project[]>> {
-  return guard("getProjects", async () =>
-    isFixtureMode()
-      ? fixtureApi.projects(q)
-      : ((await api<Project[]>("/api/projects", { bbox: q.bbox?.join(","), view: q.view })) ?? []),
+  return guard("getProjects", () =>
+    isFixtureMode() ? fixtureApi.projects(q) : repository.projects({ bbox: q.bbox, endpoints: q.endpoints }),
   );
 }
 
 export function getMatches(q: MatchQuery = {}): Promise<Result<MatchRow[]>> {
-  return guard("getMatches", async () =>
-    isFixtureMode()
-      ? fixtureApi.matches(q)
-      : ((await api<MatchRow[]>("/api/matches", { view: q.view, maxDistance: q.maxDistance, limit: q.limit })) ?? []),
-  );
+  return guard("getMatches", () => (isFixtureMode() ? fixtureApi.matches(q) : repository.matches(q)));
 }
 
 /** null when the pair doesn't exist. */
 export function getPair(id: string): Promise<Result<PairDetail | null>> {
-  return guard("getPair", async () =>
-    isFixtureMode() ? fixtureApi.pair(id) : api<PairDetail>(`/api/pairs/${encodeURIComponent(id)}`),
-  );
+  return guard("getPair", () => (isFixtureMode() ? fixtureApi.pair(id) : repository.pair(id)));
 }
 
 export function getVersionChanges(): Promise<Result<VersionChange[]>> {
-  return guard("getVersionChanges", async () =>
-    isFixtureMode() ? fixture<VersionChange>("version_changes") : ((await api<VersionChange[]>("/api/versions")) ?? []),
-  );
+  return guard("getVersionChanges", () => (isFixtureMode() ? fixture<VersionChange>("version_changes") : repository.versions()));
 }
 
 /** Source documents (filings), for citing names, pages and public URLs. */
 export function getSources(): Promise<Result<Source[]>> {
-  return guard("getSources", async () =>
-    isFixtureMode() ? fixture<Source>("sources") : ((await api<Source[]>("/api/sources")) ?? []),
-  );
+  return guard("getSources", () => (isFixtureMode() ? fixture<Source>("sources") : repository.sources()));
 }
 
 /** Every stored brief, passed and rejected (the workbench shows rejection reasons). */
 export function getBriefs(): Promise<Result<Brief[]>> {
-  return guard("getBriefs", async () =>
-    isFixtureMode() ? fixture<Brief>("briefs") : ((await api<Brief[]>("/api/briefs")) ?? []),
-  );
+  return guard("getBriefs", () => (isFixtureMode() ? fixture<Brief>("briefs") : repository.briefs()));
 }
 
 /** Latest pipeline run (by started_at, then _id), or null when none is stored. */
 export function getLatestRun(): Promise<Result<Run | null>> {
   return guard("getLatestRun", async () => {
-    if (!isFixtureMode()) return api<Run>("/api/runs");
+    if (!isFixtureMode()) return repository.latestRun();
     const runs = await fixture<Run>("runs");
     return runs.sort((a, b) => b.started_at.localeCompare(a.started_at) || b._id.localeCompare(a._id))[0] ?? null;
   });
 }
 
 export function getCoverage(): Promise<Result<Coverage[]>> {
-  return guard("getCoverage", async () =>
-    isFixtureMode() ? fixture<Coverage>("coverage") : ((await api<Coverage[]>("/api/coverage")) ?? []),
-  );
+  return guard("getCoverage", () => (isFixtureMode() ? fixture<Coverage>("coverage") : repository.coverage()));
 }
 
 export function getExtractions(q: { source?: string } = {}): Promise<Result<Extraction[]>> {
   return guard("getExtractions", async () =>
     isFixtureMode()
       ? (await fixture<Extraction>("extractions")).filter((e) => !q.source || e.source_id === q.source)
-      : ((await api<Extraction[]>("/api/extraction", { source: q.source })) ?? []),
+      : repository.extractions(q),
   );
 }
