@@ -5,6 +5,7 @@ export const RULE = "national-provisional-25mi-v1";
 const fields = z.object({
   dataset: z.string().regex(/^[a-zA-Z0-9._:-]{1,128}$/),
   scope: z.string().max(160).optional(),
+  q: z.string().max(120).transform(value => value.trim().replace(/[\s_]+/g, " ")).optional(),
   offset: z.coerce.number().int().min(0).max(1_000_000).default(0),
   id: z.string().regex(/^npc:[a-f0-9]{32}$/).optional(),
 }).strict();
@@ -17,7 +18,7 @@ export function parseQuery(params: URLSearchParams): PairQuery {
     input[key] = params.get(key)!;
   }
   const query = fields.parse(input);
-  if (query.id && (query.scope || query.offset)) throw new Error("A selection cannot include scope or offset");
+  if (query.id && (query.scope || query.offset || query.q)) throw new Error("A selection cannot include scope, offset or search");
   pairFilter(query); // validate scope even before any database access
   return query;
 }

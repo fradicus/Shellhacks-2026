@@ -7,6 +7,7 @@ import type { CandidatePage } from "./types";
 import { PAGE_SIZE, RULE, pairFilter, type PairQuery } from "./query";
 
 const TIMEOUT = 5000;
+const MAX_SEARCH_PROJECTS = 10_000;
 const pair = z.object({
   id: z.string().regex(/^npc:[a-f0-9]{32}$/), a: z.string().min(1), b: z.string().min(1),
   distance_mi: z.number().min(0).lt(25), time_gap_days: z.number().int().min(0).nullable(),
@@ -33,6 +34,16 @@ export async function loadCandidatePairs(query: PairQuery): Promise<CandidatePag
     throw new PairReadError(503, "Nearby candidates have not been published for this dataset yet.");
   }
   const filter = pairFilter(query);
+  if (query.q) {
+    const pattern = query.q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "[\\s_]+");
+    const matches = await db.collection("national_projects").find({ dataset: query.dataset,
+      $or: ["name", "owner", "other_owners", "native_id", "id", "source_id"].map(field =>
+        ({ [field]: { $regex: pattern, $options: "i" } })),
+    }, { projection: { _id: 0, id: 1 } }).limit(MAX_SEARCH_PROJECTS + 1).maxTimeMS(TIMEOUT).toArray();
+    if (matches.length > MAX_SEARCH_PROJECTS) throw new PairReadError(422, "Search matches too many projects. Use more specific text.");
+    const matchingIds = matches.map(project => project.id);
+    filter.$or = [{ a: { $in: matchingIds } }, { b: { $in: matchingIds } }];
+  }
   const [total, docs] = await Promise.all([
     db.collection("national_candidate_pairs").countDocuments(filter, options),
     db.collection("national_candidate_pairs").find(filter).sort({ rank: 1, id: 1 })
