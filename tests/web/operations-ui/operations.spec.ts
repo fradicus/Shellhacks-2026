@@ -231,7 +231,7 @@ test("map click with year selected calls the site API for the clicked point", as
   });
   expect(fired).toBe(true);
   await expect(page.getByRole("heading", { name: "Map-selected worksite" })).toBeVisible({ timeout: 15_000 });
-  await expect(page.getByText("pH 6.4")).toBeVisible();
+  await expect(page.getByRole("strong").filter({ hasText: /^pH 6\.4$/ })).toBeVisible();
   await expect(page.getByText(/depth 0-15 cm/)).toBeVisible();
   const called = new URL(siteUrl);
   expect(called.searchParams.get("year")).toBe("2025");
