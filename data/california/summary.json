@@ -1,0 +1,45 @@
+{
+  "by_basis": {
+    "one": 43,
+    "source_point": 74,
+    "two": 29
+  },
+  "by_status": {
+    "cancelled": 6,
+    "in_service": 79,
+    "planned": 192,
+    "proposed": 59,
+    "under_construction": 17,
+    "unknown": 7
+  },
+  "by_tier": {
+    "candidate": 139,
+    "candidate_unique_name": 7
+  },
+  "distinct_points": 89,
+  "located": 146,
+  "located_by_status": {
+    "cancelled": 2,
+    "in_service": 37,
+    "planned": 69,
+    "proposed": 28,
+    "under_construction": 7,
+    "unknown": 3
+  },
+  "located_not_in_service": 109,
+  "located_with_events": 146,
+  "projects": 360,
+  "unlocated_reasons": {
+    "ambiguous": 5,
+    "ambiguous,no_facility": 3,
+    "endpoint_not_named": 1,
+    "multi_terminal_line": 22,
+    "no_facility": 67,
+    "no_facility,not_a_facility": 4,
+    "no_facility,operator_conflict": 1,
+    "no_named_facility": 46,
+    "operator_conflict": 4,
+    "program_area_or_multi_facility": 61
+  },
+  "verified": 0
+}

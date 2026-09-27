@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "caiso-tdf-2026-07",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jul-2026.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.caiso.com/library/transmission-development-forum",
+    "notes": [
+      "F43 California release (C34). Locations are unreviewed C33 candidates from named OSM substations; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "caiso",
+    "project_count": 231,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "California ISO",
+    "retrieved_at": "2026-09-27T05:47:26Z",
+    "role": "project_plan",
+    "sha256": "d2ce176ed6b44bc368df8412918d5cb0d7cb61234e2b3b8b0f50743c21d75c4e",
+    "states": [
+      "06"
+    ],
+    "title": "CAISO Approved Projects - Transmission Planning Process (Jul 2026 Transmission Development Forum)",
+    "vintage": "jul-2026"
+  },
+  {
+    "_id": "caiso-tdf-2025-07",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jul-2025.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.caiso.com/library/transmission-development-forum",
+    "notes": [
+      "F43 California release (C34). Locations are unreviewed C33 candidates from named OSM substations; none is independently confirmed. Source-bounded, not statewide coverage.",
+      "Only in-service projects the newer edition no longer lists are imported."
+    ],
+    "planning_region": "caiso",
+    "project_count": 29,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "California ISO",
+    "retrieved_at": "2026-09-27T05:47:27Z",
+    "role": "project_plan",
+    "sha256": "aa64152366aee0a08e29ac895aa2b79fe1c7bc1b235d93dadbbd379553de15b4",
+    "states": [
+      "06"
+    ],
+    "title": "CAISO Approved Projects - Transmission Planning Process (Jul 2025 Transmission Development Forum)",
+    "vintage": "jul-2025"
+  },
+  {
+    "_id": "caiso-tdf-2025-01",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jan-2025.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.caiso.com/library/transmission-development-forum",
+    "notes": [
+      "F43 California release (C34). Locations are unreviewed C33 candidates from named OSM substations; none is independently confirmed. Source-bounded, not statewide coverage.",
+      "Only in-service projects the newer edition no longer lists are imported."
+    ],
+    "planning_region": "caiso",
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "California ISO",
+    "retrieved_at": "2026-09-27T05:47:28Z",
+    "role": "project_plan",
+    "sha256": "98d9295c222b1e7193235ec5948c8e60633536d735dbfaeb5f13c4e90f58b8de",
+    "states": [
+      "06"
+    ],
+    "title": "CAISO Approved Projects - Transmission Planning Process (Jan 2025 Transmission Development Forum)",
+    "vintage": "jan-2025"
+  },
+  {
+    "_id": "caiso-nu-2025-07",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.caiso.com/documents/network-upgrades-generator-interconnection-jul-2025.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.caiso.com/library/transmission-development-forum",
+    "notes": [
+      "F43 California release (C34). Locations are unreviewed C33 candidates from named OSM substations; none is independently confirmed. Source-bounded, not statewide coverage.",
+      "Removed, replaced and not-triggered upgrades are excluded."
+    ],
+    "planning_region": "caiso",
+    "project_count": 99,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "California ISO",
+    "retrieved_at": "2026-09-27T05:51:53Z",
+    "role": "project_plan",
+    "sha256": "e949bbd1fab57a9a85483af6c21c94f57f06ffe4622f162395d05a359854fe0b",
+    "states": [
+      "06"
+    ],
+    "title": "CAISO Network Upgrades - Generator Interconnection (Jul 2025 Transmission Development Forum)",
+    "vintage": "jul-2025"
+  }
+]
