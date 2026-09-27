@@ -9,6 +9,7 @@ import type {
   RouteRequest,
   SiteRequest,
   SoilData,
+  WaterData,
   WeatherData,
 } from "../../lib/operations/contracts";
 import type { VerifiedCoverageResponse, VerifiedListResponse } from "../../lib/verified/types";
@@ -22,6 +23,7 @@ const providerSources = {
   roadwork: "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed",
   route: "https://routes.googleapis.com/directions/v2:computeRoutes",
   aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL",
+  water: "https://waterservices.usgs.gov/nwis/iv/",
 } as const;
 const PointSchema = z.object({ lat: z.number().finite().min(-90).max(90), lon: z.number().finite().min(-180).max(180) }).strict();
 function millimeters(value: number): number {
@@ -69,12 +71,21 @@ const WeatherDataSchema: z.ZodType<WeatherData> = z.object({
   }).strict()),
   scope: z.string(),
 }).strict();
+const SoilHorizonSchema = z.object({
+  chkey: z.string(),
+  depth_top_cm: z.number().finite().nullable(),
+  depth_bottom_cm: z.number().finite().nullable(),
+  ph_h2o_1_to_1: z.number().finite().nullable(),
+  ph_method: z.literal("1:1 soil-water"),
+  depth_unit: z.literal("cm"),
+}).strict();
 const SoilDataSchema: z.ZodType<SoilData> = z.object({
   map_units: z.array(z.object({
     mukey: z.string(), name: z.string(), area_symbol: z.string(), survey_updated_at: z.string().nullable(),
     components: z.array(z.object({
       cokey: z.string(), name: z.string().nullable(), percent: z.number().finite().nullable(),
       drainage_class: z.string().nullable(), hydrologic_group: z.string().nullable(),
+      horizons: z.array(SoilHorizonSchema),
     }).strict()),
   }).strict()),
   scope: z.string(),
@@ -99,6 +110,41 @@ const RouteDataSchema: z.ZodType<RouteData> = z.object({
   distance_m: z.number().finite().nonnegative(), travel_seconds: z.number().finite().nonnegative(), eta: stamp,
   restrictions_partially_ignored: z.boolean(), warnings: z.array(z.string()), attribution: z.literal("Google Maps"),
 }).strict();
+const WaterDataSchema: z.ZodType<WaterData> = z.object({
+  rivers: z.object({
+    search_radius_mi: z.number().finite().positive(),
+    gauges: z.array(z.object({
+      site_id: z.string(), name: z.string(), lat: z.number().finite(), lon: z.number().finite(), distance_mi: z.number().finite(),
+      parameter: z.string(), parameter_name: z.string(), unit: z.string(), value: z.number().finite().nullable(), observed_at: stamp,
+    }).strict()),
+    scope: z.string(),
+  }).strict().nullable(),
+  tides: z.object({
+    search_radius_mi: z.number().finite().positive(),
+    station: z.object({
+      id: z.string(), name: z.string(), lat: z.number().finite(), lon: z.number().finite(),
+      state: z.string().nullable(), distance_mi: z.number().finite(),
+    }).strict().nullable(),
+    highs_lows: z.array(z.object({
+      time: stamp, value_ft: z.number().finite().nullable(), type: z.enum(["high", "low"]),
+    }).strict()),
+    scope: z.string(),
+  }).strict().nullable(),
+  flood: z.object({
+    zones: z.array(z.object({
+      zone: z.string().nullable(), subtype: z.string().nullable(), special_flood_hazard_area: z.boolean().nullable(),
+    }).strict()),
+    scope: z.string(),
+  }).strict().nullable(),
+  wetlands: z.object({
+    mapped: z.boolean(),
+    features: z.array(z.object({
+      wetland_type: z.string().nullable(), attribute: z.string().nullable(), acres: z.number().finite().nullable(),
+    }).strict()),
+    scope: z.string(),
+  }).strict().nullable(),
+  scope: z.string(),
+}).strict();
 
 function envelope<T>(provider: keyof typeof providerSources, data: z.ZodType<T>) {
   return EnvelopeSchema.extend({ provider: z.literal(provider), data: data.nullable() }).superRefine((value, context) => {
@@ -120,6 +166,12 @@ export const SoilEnvelopeSchema = envelope("soil", SoilDataSchema);
 export const RoadworkEnvelopeSchema = envelope("roadwork", RoadworkDataSchema);
 export const AEFEnvelopeSchema = envelope("aef", AEFDataSchema);
 export const RouteEnvelopeSchema = envelope("route", RouteDataSchema);
+export const WaterEnvelopeSchema = envelope("water", WaterDataSchema);
+
+export const WaterResponseSchema = z.object({
+  request: PointSchema,
+  water: WaterEnvelopeSchema,
+}).strict();
 
 export const SiteResponseSchema = z.object({
   request: SiteRequestSchema,
@@ -245,6 +297,7 @@ export const PredictionResponseSchema: z.ZodType<PredictionResponse> = z.object(
 
 export type SiteResponse = z.infer<typeof SiteResponseSchema>;
 export type ConditionsResponse = z.infer<typeof ConditionsResponseSchema>;
+export type WaterResponse = z.infer<typeof WaterResponseSchema>;
 export type RouteResponse = z.infer<typeof RouteResponseSchema>;
 export type OutcomeStatus = z.infer<typeof OutcomeStatusSchema>;
 
@@ -291,6 +344,25 @@ export function buildSiteRequest(draft: SiteDraft): { label: string; request: Si
     lat: requiredNumber(draft.lat, "Worksite latitude"), lon: requiredNumber(draft.lon, "Worksite longitude"),
     year: requiredInteger(draft.year, "AEF year"),
   }) };
+}
+
+/** Round WGS84 degrees for form fields without inventing precision beyond map clicks. */
+export function formatCoordinate(value: number): string {
+  if (!Number.isFinite(value)) throw new Error("Coordinate must be finite.");
+  return value.toFixed(6);
+}
+
+export function draftFromSearchParams(params: URLSearchParams): Partial<SiteDraft> {
+  const next: Partial<SiteDraft> = {};
+  const label = params.get("label");
+  const lat = params.get("lat");
+  const lon = params.get("lon");
+  const year = params.get("year");
+  if (label != null && label.trim()) next.label = label.trim().slice(0, 120);
+  if (lat != null && /^-?\d+(\.\d+)?$/.test(lat)) next.lat = lat;
+  if (lon != null && /^-?\d+(\.\d+)?$/.test(lon)) next.lon = lon;
+  if (year != null && /^\d{4}$/.test(year)) next.year = year;
+  return next;
 }
 
 export function buildRouteRequest(draft: RouteDraft, destination: Point): RouteRequest {
@@ -425,7 +497,7 @@ export class VisibilityPoller {
 }
 
 export function providerLabel(provider: string): string {
-  return ({ weather: "Weather", roadwork: "Road work", soil: "Soil survey", aef: "Annual AEF context", route: "Truck route" } as Record<string, string>)[provider] ?? provider;
+  return ({ weather: "Weather", roadwork: "Road work", soil: "Soil survey", aef: "Annual AEF context", route: "Truck route", water: "Water context" } as Record<string, string>)[provider] ?? provider;
 }
 
-export type AnyEnvelope = Envelope<WeatherData | RoadworkData | SoilData | AEFData | RouteData>;
+export type AnyEnvelope = Envelope<WeatherData | RoadworkData | SoilData | AEFData | RouteData | WaterData>;

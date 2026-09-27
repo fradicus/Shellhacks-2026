@@ -4,7 +4,8 @@ const stamp = "2026-09-26T16:00:00Z";
 const point = { lat: 47.6062, lon: -122.3321 };
 const sources: Record<string, string> = { weather: "https://api.weather.gov", soil: "https://sdmdataaccess.nrcs.usda.gov/Tabular/post.rest",
   roadwork: "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed", route: "https://routes.googleapis.com/directions/v2:computeRoutes",
-  aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL" };
+  aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL",
+  water: "https://waterservices.usgs.gov/nwis/iv/" };
 const emptyEnvelope = (provider: string, status: string, reason: string) => ({
   schema_version: "operations-v1", provider, status, request_hash: "synthetic-request", retrieved_at: stamp,
   source_updated_at: null, valid_from: null, valid_to: null, source_url: sources[provider],
@@ -44,6 +45,14 @@ async function mockMetadata(page: Page, failReferenceOnce = false) {
     status: "unavailable", reason: "Synthetic test-only: no approved actual-history model.", model_version: null,
     support: null, evaluation: null, limitations: ["No synthetic prediction is shown."],
   } }));
+  await page.route("**/api/operations/water?*", async (route) => {
+    const url = new URL(route.request().url());
+    const requestPoint = { lat: Number(url.searchParams.get("lat")), lon: Number(url.searchParams.get("lon")) };
+    return route.fulfill({ json: {
+      request: requestPoint,
+      water: emptyEnvelope("water", "unavailable", "Synthetic test-only water unavailable."),
+    } });
+  });
   return () => referenceCalls;
 }
 
@@ -190,6 +199,53 @@ test("readiness can retry and bounds errors are field-friendly", async ({ page }
   const alert = page.locator("main").getByRole("alert").filter({ hasText: "Latitude:" });
   await expect(alert).toContainText("Latitude:");
   await expect(alert).not.toContainText('"code"');
+});
+
+test("map click with year selected calls the site API for the clicked point", async ({ page }) => {
+  await mockMetadata(page);
+  let siteUrl = "";
+  await page.route("**/api/operations/site?*", async (route) => {
+    siteUrl = route.request().url();
+    const url = new URL(siteUrl);
+    const requestPoint = { lat: Number(url.searchParams.get("lat")), lon: Number(url.searchParams.get("lon")) };
+    const boundWeather = { ...weather, data: { ...weather.data, samples: [{ ...weather.data.samples[0], point: requestPoint }] } };
+    await route.fulfill({ json: {
+      request: { ...requestPoint, year: 2025 }, weather: boundWeather, roadwork,
+      soil: {
+        ...emptyEnvelope("soil", "available", "Synthetic soil with horizon pH."),
+        evidence_hash: "c".repeat(64),
+        coverage: { requested: 1, completed: 1, failed: 0, truncated: false },
+        data: {
+          scope: "Synthetic soil horizons.",
+          map_units: [{ mukey: "1", name: "Synthetic unit", area_symbol: "WA001", survey_updated_at: null, components: [{
+            cokey: "2", name: "Synthetic component", percent: 100, drainage_class: "Well drained", hydrologic_group: "B",
+            horizons: [{ chkey: "h1", depth_top_cm: 0, depth_bottom_cm: 15, ph_h2o_1_to_1: 6.4, ph_method: "1:1 soil-water", depth_unit: "cm" }],
+          }] }],
+        },
+      },
+      aef: emptyEnvelope("aef", "unavailable", "Synthetic test-only AEF unavailable."),
+    } });
+  });
+  await page.goto("/operations?year=2025");
+  await expect(page.getByLabel("Annual AEF year")).toHaveValue("2025");
+  const map = page.getByRole("application", { name: "Click the map to set the worksite coordinates" });
+  await expect(map).toHaveAttribute("data-ready", "true", { timeout: 30_000 });
+  // MapLibre map.fire("click") requires originalEvent.target (_onMapClick). Drive the same
+  // worksite pick callback the real click handler uses, at a fixed CONUS point.
+  const fired = await map.evaluate((node) => {
+    const host = node as HTMLDivElement & { __worksitePick?: (point: { lat: number; lon: number }) => void };
+    if (!host.__worksitePick) return false;
+    host.__worksitePick({ lat: 47.6062, lon: -122.3321 });
+    return true;
+  });
+  expect(fired).toBe(true);
+  await expect(page.getByRole("heading", { name: "Map-selected worksite" })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole("strong").filter({ hasText: /^pH 6\.4$/ })).toBeVisible();
+  await expect(page.getByText(/depth 0-15 cm/)).toBeVisible();
+  const called = new URL(siteUrl);
+  expect(called.searchParams.get("year")).toBe("2025");
+  expect(called.searchParams.get("lat")).toBe("47.6062");
+  expect(called.searchParams.get("lon")).toBe("-122.3321");
 });
 
 test("mobile layout keeps the worksite form before the evidence board and does not overflow", async ({ page }, testInfo: TestInfo) => {

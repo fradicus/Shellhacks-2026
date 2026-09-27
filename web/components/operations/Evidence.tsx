@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { Envelope, WeatherData, RoadworkData, SoilData, AEFData, RouteData, RouteRequest } from "@/lib/operations/contracts";
+import type { Envelope, WeatherData, RoadworkData, SoilData, AEFData, RouteData, RouteRequest, WaterData } from "@/lib/operations/contracts";
 import type { PredictionResponse } from "@/lib/outcomes/model";
 import { providerLabel, statusTone } from "./logic";
 import styles from "./operations.module.css";
@@ -79,12 +79,50 @@ export function RoadworkPanel({ envelope, refreshFailed }: { envelope: Envelope<
 
 export function SoilPanel({ envelope }: { envelope: Envelope<SoilData> }) {
   const units = envelope.data?.map_units ?? [];
-  return <EnvelopeFrame envelope={envelope} title="Reference evidence">
+  const phSamples = units.flatMap((unit) => unit.components.flatMap((component) => (component.horizons ?? [])
+    .filter((horizon) => horizon.ph_h2o_1_to_1 != null)
+    .map((horizon) => ({ unit: unit.name, component: component.name, horizon }))));
+  return <EnvelopeFrame envelope={envelope} title="Soil pH (survey estimate, 0–30 cm)">
     {!envelope.data ? <p className={styles.empty}>{envelope.limitations[0] ?? "Soil survey context is unavailable."}</p> : <>
       <p className={styles.scope}>{envelope.data.scope}</p>
-      <p className={styles.bigValue}>{units.length}<span>mapped soil units</span></p>
+      <div className={styles.metricRow}>
+        <div><strong>{units.length}</strong><span>mapped soil units</span></div>
+        <div><strong>{phSamples.length}</strong><span>horizons with survey pH</span></div>
+      </div>
+      {phSamples.length === 0 && <p className={styles.empty}>No pH in survey for this map unit</p>}
+      {phSamples.length > 0 && <ul className={styles.eventList}>{phSamples.slice(0, 4).map(({ unit, component, horizon }) => <li key={`${horizon.chkey}`}>
+        <strong>pH {number(horizon.ph_h2o_1_to_1!, 1)}</strong>
+        <span>{horizon.ph_method} · depth {horizon.depth_top_cm ?? "?"}-{horizon.depth_bottom_cm ?? "?"} {horizon.depth_unit} · {component ?? "component unknown"} · {unit}</span>
+      </li>)}</ul>}
       <ul className={styles.eventList}>{units.slice(0, 4).map((unit) => <li key={unit.mukey}><strong>{unit.name}</strong><span>{unit.area_symbol} · {unit.components.length} components · survey {unit.survey_updated_at ?? "date unknown"}</span></li>)}</ul>
-      {units.length > 0 && <details className={styles.evidenceDetails}><summary>All mapped units and component facts</summary>{units.map((unit) => <section key={unit.mukey}><h4>{unit.name} · {unit.mukey}</h4><ul>{unit.components.length ? unit.components.map((component) => <li key={component.cokey}>{component.name ?? "Component name unknown"} · {component.percent ?? "percent unknown"}% · drainage {component.drainage_class ?? "unknown"} · hydrologic group {component.hydrologic_group ?? "unknown"}</li>) : <li>No component facts published.</li>}</ul></section>)}</details>}
+      {units.length > 0 && <details className={styles.evidenceDetails}><summary>All mapped units, components and horizon pH</summary>{units.map((unit) => <section key={unit.mukey}><h4>{unit.name} · {unit.mukey}</h4><ul>{unit.components.length ? unit.components.map((component) => { const horizons = component.horizons ?? []; return <li key={component.cokey}>{component.name ?? "Component name unknown"} · {component.percent ?? "percent unknown"}% · drainage {component.drainage_class ?? "unknown"} · hydrologic group {component.hydrologic_group ?? "unknown"}{horizons.length ? <ul>{horizons.map((horizon) => <li key={horizon.chkey}>Horizon {horizon.depth_top_cm ?? "?"}-{horizon.depth_bottom_cm ?? "?"} {horizon.depth_unit}: pH {horizon.ph_h2o_1_to_1 == null ? "not published" : number(horizon.ph_h2o_1_to_1, 1)} ({horizon.ph_method})</li>)}</ul> : <span> · no horizon rows published</span>}</li>; }) : <li>No component facts published.</li>}</ul></section>)}</details>}
+    </>}
+  </EnvelopeFrame>;
+}
+
+export function WaterPanel({ envelope }: { envelope: Envelope<WaterData> }) {
+  const data = envelope.data;
+  const gauges = data?.rivers?.gauges ?? [];
+  const tides = data?.tides;
+  const flood = data?.flood?.zones?.[0] ?? null;
+  const wetland = data?.wetlands;
+  return <EnvelopeFrame envelope={envelope} title="Water context">
+    {!data ? <p className={styles.empty}>{envelope.limitations[0] ?? "Water context is unavailable."}</p> : <>
+      <p className={styles.scope}>{data.scope}</p>
+      <div className={styles.metricRow}>
+        <div><strong>{gauges.length}</strong><span>nearby gauges</span></div>
+        <div><strong>{flood?.zone ?? "unknown"}</strong><span>flood zone</span></div>
+      </div>
+      {gauges.length > 0 ? <ul className={styles.eventList}>{gauges.slice(0, 3).map((gauge) => <li key={gauge.site_id}>
+        <strong>{gauge.value == null ? "No reading" : `${number(gauge.value, 2)} ${gauge.unit}`}</strong>
+        <span>{gauge.name} · {number(gauge.distance_mi, 1)} mi · observed {formatTime(gauge.observed_at)}</span>
+      </li>)}</ul> : <p className={styles.empty}>{data.rivers?.scope ?? "No gauges in search radius"}</p>}
+      {tides?.station ? <p className={styles.small}>Tides · {tides.station.name} ({number(tides.station.distance_mi, 1)} mi) · {tides.highs_lows.map((event) => `${event.type} ${event.value_ft == null ? "?" : number(event.value_ft, 1)} ft`).join(" · ") || "no highs/lows today"}</p>
+        : <p className={styles.empty}>{tides?.scope ?? "No tide station within range (inland or unavailable)"}</p>}
+      {flood ? <p className={styles.small}>Flood zone {flood.zone ?? "unknown"}{flood.subtype ? ` · ${flood.subtype}` : ""}{flood.special_flood_hazard_area ? " · special flood hazard area" : ""}</p>
+        : <p className={styles.empty}>Flood zone unknown — no FEMA polygon at this point</p>}
+      {wetland ? <p className={styles.small}>{wetland.mapped ? `Wetland mapped${wetland.features[0]?.wetland_type ? ` · ${wetland.features[0].wetland_type}` : ""}` : "No mapped wetland at this point"}</p>
+        : <p className={styles.empty}>Wetland map unavailable</p>}
     </>}
   </EnvelopeFrame>;
 }
