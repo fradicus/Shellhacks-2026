@@ -4,7 +4,8 @@ const stamp = "2026-09-26T16:00:00Z";
 const point = { lat: 47.6062, lon: -122.3321 };
 const sources: Record<string, string> = { weather: "https://api.weather.gov", soil: "https://sdmdataaccess.nrcs.usda.gov/Tabular/post.rest",
   roadwork: "https://wzdx.wsdot.wa.gov/api/v4/WorkZoneFeed", route: "https://routes.googleapis.com/directions/v2:computeRoutes",
-  aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL" };
+  aef: "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL",
+  water: "https://waterservices.usgs.gov/nwis/iv/" };
 const emptyEnvelope = (provider: string, status: string, reason: string) => ({
   schema_version: "operations-v1", provider, status, request_hash: "synthetic-request", retrieved_at: stamp,
   source_updated_at: null, valid_from: null, valid_to: null, source_url: sources[provider],
@@ -44,6 +45,14 @@ async function mockMetadata(page: Page, failReferenceOnce = false) {
     status: "unavailable", reason: "Synthetic test-only: no approved actual-history model.", model_version: null,
     support: null, evaluation: null, limitations: ["No synthetic prediction is shown."],
   } }));
+  await page.route("**/api/operations/water?*", async (route) => {
+    const url = new URL(route.request().url());
+    const requestPoint = { lat: Number(url.searchParams.get("lat")), lon: Number(url.searchParams.get("lon")) };
+    return route.fulfill({ json: {
+      request: requestPoint,
+      water: emptyEnvelope("water", "unavailable", "Synthetic test-only water unavailable."),
+    } });
+  });
   return () => referenceCalls;
 }
 

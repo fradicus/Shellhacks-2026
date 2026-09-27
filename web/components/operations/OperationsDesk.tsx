@@ -220,28 +220,26 @@ export function OperationsDesk() {
     const ticket = siteLane.current.begin(); setSiteLoading(true);
     try {
       const query = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon), year: String(built.request.year) });
-      const waterQuery = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon) });
-      const [response, waterResponse] = await Promise.all([
-        fetch(`/api/operations/site?${query}`, { cache: "no-store", signal: ticket.signal }),
-        fetch(`/api/operations/water?${waterQuery}`, { cache: "no-store", signal: ticket.signal }),
-      ]);
+      const response = await fetch(`/api/operations/site?${query}`, { cache: "no-store", signal: ticket.signal });
       const value = await readResponse(response, SiteResponseSchema);
       if (!siteBinding(value, built.request)) throw new Error("Site evidence did not match the submitted worksite.");
-      let water: WaterResponse | null = null;
-      let nextWaterError: string | null = null;
-      try {
-        water = await readResponse(waterResponse, WaterResponseSchema);
-        if (water.request.lat !== built.request.lat || water.request.lon !== built.request.lon) {
-          throw new Error("Water evidence did not match the submitted worksite.");
-        }
-      } catch (error) {
-        nextWaterError = message(error);
-      }
       if (ticket.current()) {
         setSiteResult(value); setActiveSite({ label: built.label, point: { lat: built.request.lat, lon: built.request.lon }, year: built.request.year });
         setConditions({ request: { lat: built.request.lat, lon: built.request.lon }, weather: value.weather, roadwork: value.roadwork });
         setConditionsError(null); setSiteOutdated(false); setRouteOutdated(routeResult !== null);
-        setWaterResult(water); setWaterError(nextWaterError);
+        setWaterResult(null); setWaterError(null);
+      }
+      // Water is additive and independent: never block or fail the site board on it.
+      const waterQuery = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon) });
+      try {
+        const waterResponse = await fetch(`/api/operations/water?${waterQuery}`, { cache: "no-store", signal: ticket.signal });
+        const water = await readResponse(waterResponse, WaterResponseSchema);
+        if (water.request.lat !== built.request.lat || water.request.lon !== built.request.lon) {
+          throw new Error("Water evidence did not match the submitted worksite.");
+        }
+        if (ticket.current()) { setWaterResult(water); setWaterError(null); }
+      } catch (error) {
+        if (ticket.current() && (error as Error).name !== "AbortError") setWaterError(message(error));
       }
     } catch (error) { if (ticket.current()) setSiteError(message(error)); }
     finally { if (ticket.current()) setSiteLoading(false); }

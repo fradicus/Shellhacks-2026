@@ -85,7 +85,7 @@ const SoilDataSchema: z.ZodType<SoilData> = z.object({
     components: z.array(z.object({
       cokey: z.string(), name: z.string().nullable(), percent: z.number().finite().nullable(),
       drainage_class: z.string().nullable(), hydrologic_group: z.string().nullable(),
-      horizons: z.array(SoilHorizonSchema).optional(),
+      horizons: z.array(SoilHorizonSchema),
     }).strict()),
   }).strict()),
   scope: z.string(),
