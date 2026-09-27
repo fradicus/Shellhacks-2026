@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42, F44, F45]
+  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42, F44, F45, F46]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41, F19, F37]
 frozen_paths:
   - schemas/
@@ -282,3 +282,14 @@ geometry for NV/UT; C33 tiers plus C38's operator guard).
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F45 | Southwest project coverage from WestConnect with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Midwest coverage
+
+The user instructed Claude local to cover the Midwest states F40 does not: Iowa, Missouri, Kansas, Nebraska, North
+Dakota and South Dakota. [C43](decisions/C43-midwest.md) assigns [F46](features/F46-midwest/spec.md) (SPP's public
+project tracking workbook, then the MISO rows F40 excluded; C33 tiers plus C38's operator guard). Iowa stays thin
+until state dockets are transcribed.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F46 | Midwest project coverage from SPP and MISO with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
