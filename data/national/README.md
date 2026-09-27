@@ -1,6 +1,6 @@
 # National data snapshot
 
-This directory contains the reviewed, schema-validated national discovery snapshot. The unchanged base has 1,286 projects: all 1,024 rows from ISO-NE's June 2026 Regional System Plan list and 262 current GridBridge filing projects. Its 69 base centers all come from current legacy records whose location evidence remains eligible after the source audit. ISO-NE supplies no county or coordinate columns. Legacy records do not contain reviewed project state or county assignments. All current project counties and all legacy project states therefore remain unknown rather than inferred.
+This directory contains the reviewed, schema-validated national discovery snapshot. The unchanged base has 1,286 projects: all 1,024 rows from ISO-NE's June 2026 Regional System Plan list and 262 current GridBridge filing projects. Its 69 base centers all come from current legacy records whose location evidence remains eligible after the source audit. ISO-NE supplies no county or coordinate columns. Eligible legacy endpoint coordinates now establish state membership by containment in the pinned Census boundaries: 55 Georgia records and 14 South Carolina records. These remain candidate locations; containment does not confirm the endpoint or establish the full route. The other 193 legacy records retain unknown states. All base project counties remain unknown.
 
 `sources.json` records 26 source entries. Eleven regional planning pages are catalogued only; their pages were verified, but no project count or geographic footprint is inferred. EIA-861 and FERC material is also reference-only. The snapshot does not claim nationwide project completeness or utility service-territory coverage.
 
@@ -9,6 +9,7 @@ From `pipeline/`, use the pinned Python environment:
 ```powershell
 uv run python -m national validate
 uv run python -m national build
+uv run python -m national rebuild-legacy
 uv run python -m national refresh --source iso-ne-rsp-2026-06
 uv run python -m national.load
 ```
@@ -50,3 +51,22 @@ The unchanged C29 fallback contains eight candidate projects at five centers. Re
 activation manifest restores that fallback on the next load, without double-counting Texas native IDs.
 The main-only load Action is triggered by this data documentation change; its receipt and the active Atlas
 dataset still need verification before calling the batch loaded or visible.
+
+## Location consistency
+
+`rebuild-legacy` refreshes only the base legacy projection from the committed source, location and review
+artifacts. It validates before writing, preserves non-legacy observations and never bakes regional overlays
+into the base. State assignments retain endpoint IDs and the Census boundary URL, vintage and SHA-256.
+Rejected endpoints supply neither centers nor state assignments. Unknown geometry stays unknown.
+
+Aggregate `coverage.location_counts` separates confirmed centers, candidate centers, approximate-only
+references and records with no display location. Those four counts partition the assembled records.
+`rejected_projects` is an overlapping review count. `located_count` still means a non-null project center;
+county reference anchors do not increase it. These counts describe stored location evidence, not how many
+markers a renderer displays after filtering or clustering.
+
+The September 27 audit found ten legacy project centers excluded by current endpoint rejections in the
+national projection but retained by the legacy loader. This change preserves their national exclusions.
+The legacy display correction is tracked with its owner in
+[PR 184](https://github.com/fradicus/Shellhacks-2026/pull/184#issuecomment-5852940187).
+See `consistency-audit.json` for the reproducible source snapshot counts and affected project IDs.
