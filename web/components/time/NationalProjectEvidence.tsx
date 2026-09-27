@@ -3,7 +3,7 @@ import { STATUS_LABEL } from "@/lib/national/filters";
 import type { NationalProject, NationalSource } from "@/lib/national/types";
 import s from "./time.module.css";
 
-export function NationalProjectEvidence({ project, source }: { project: NationalProject; source?: NationalSource }) {
+export function NationalProjectEvidence({ project, source, dataset }: { project: NationalProject; source?: NationalSource; dataset: string | null }) {
   const locator = [project.evidence.page !== null ? `page ${project.evidence.page}` : null,
     project.evidence.sheet, project.evidence.row !== null ? `row ${project.evidence.row}` : null].filter(Boolean).join(" · ");
   const basis = project.center?.basis === "two" ? "Mean of two located endpoints"
@@ -19,6 +19,7 @@ export function NationalProjectEvidence({ project, source }: { project: National
     {source?.landing_url ? <p><a href={source.landing_url} target="_blank" rel="noreferrer">Open project source ↗</a></p> : null}
     {project.location_verification ? <LocationEvidence verification={project.location_verification} />
       : <p>{project.center?.evidence ?? "Detailed location evidence not reported."}</p>}
+    <p>Dataset: <code>{dataset ?? "Unknown"}</code></p>
     <p>National discovery point; overlap matching has not been run for this project.</p>
   </div>;
 }

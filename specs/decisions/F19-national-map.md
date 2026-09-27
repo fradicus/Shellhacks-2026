@@ -14,3 +14,9 @@ unlocated records remain accessible through the explorer; the time drawer does n
 all national records. Do not convert month/year milestones into exact dates or inferred completion.
 
 Undo by reverting this follow-up; no database or source data changes are required.
+
+C25 merged during this implementation. This increment delivers issue #139's accepted confirmed
+projection, including independent legacy/national failure states. C25's new official/candidate tiers
+await additive shared producer/loader/read contracts; no unpublished tier is inferred here. Its broader
+state filters and unified unlocated search remain a separate follow-up; the existing explorer provides
+those controls now. This PR does not claim full C25 acceptance or regional data completion.

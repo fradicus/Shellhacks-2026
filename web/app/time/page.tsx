@@ -14,7 +14,7 @@ export default async function TimePage() {
   const [matches, projects, national] = await Promise.all([
     getMatches({ limit: 500 }), getProjects(), loadNationalExplorer({ page: 1, limit: 1 }),
   ]);
-  if (isUnavailable(matches) || isUnavailable(projects)) {
+  if (isUnavailable(projects) && !national.available) {
     return (
       <main>
         <h1>Time view</h1>
@@ -25,7 +25,7 @@ export default async function TimePage() {
 
   // One current record per project key, exactly as the overlap page chooses it.
   const current = new Map<string, Project>();
-  for (const p of [...projects].sort((a, b) => Number(b.active) - Number(a.active) || a._id.localeCompare(b._id))) {
+  for (const p of [...(isUnavailable(projects) ? [] : projects)].sort((a, b) => Number(b.active) - Number(a.active) || a._id.localeCompare(b._id))) {
     if (!current.has(p.project_key)) current.set(p.project_key, p);
   }
   const slim: TimeProject[] = [...current.values()].map((p) => ({
@@ -41,7 +41,7 @@ export default async function TimePage() {
   }));
   const nationalPoints = national.available ? nationalTimeProjects(national.mapProjects, national.sources) : [];
   slim.push(...nationalPoints);
-  const pairs: TimePair[] = matches.map((m) => ({
+  const pairs: TimePair[] = (isUnavailable(matches) || isUnavailable(projects) ? [] : matches).map((m) => ({
     id: m._id,
     a: m.a,
     b: m.b,
@@ -54,7 +54,7 @@ export default async function TimePage() {
   }));
 
   return (
-    <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()}
+    <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
         drawn: nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );

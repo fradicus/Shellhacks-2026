@@ -96,11 +96,15 @@ export function TimeView({
   analysisDate,
   fixtureMode,
   national,
+  legacyAvailable,
+  pairsAvailable,
 }: {
   projects: TimeProject[];
   pairs: TimePair[];
   analysisDate: string;
   fixtureMode: boolean;
+  legacyAvailable: boolean;
+  pairsAvailable: boolean;
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
     drawn: number; unlocated: number; truncated: boolean };
 }) {
@@ -792,6 +796,7 @@ export function TimeView({
         <p className={s.provenance}>
           Analysis date <b>{fmtDate(analysisDate)}</b> · {sources.length} sources
         </p>
+        {!legacyAvailable ? <p role="status" className={s.provenance}>Legacy projects unavailable; national projects remain available.</p> : null}
         <p className={s.provenance}>
           {national.available ? <>{national.drawn} confirmed national projects included.
             {national.mode === "snapshot" ? " Committed snapshot mode." : ""}
@@ -858,7 +863,7 @@ export function TimeView({
           </ol>
         ) : (
           <div className={s.empty}>
-            <p>No {view} pairs in this data. Zero is a valid result, not a failure to look.</p>
+            <p>{pairsAvailable ? `No ${view} pairs in this data. Zero is a valid result, not a failure to look.` : "Legacy overlap pairs unavailable. Project discovery remains available."}</p>
             {VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (
               <button key={v} type="button" onClick={() => changeView(v)}>
                 Show {label.toLowerCase()} ({counts[v]}) →
@@ -1018,7 +1023,7 @@ export function TimeView({
               {project.page !== null ? ` p. ${project.page}` : ""} · location {project.confidence ?? "unknown"} confidence
             </p> : null}
           </section>
-          {project.national ? <NationalProjectEvidence {...project.national} /> : <p className={s.note}>
+          {project.national ? <NationalProjectEvidence {...project.national} dataset={national.dataset} /> : <p className={s.note}>
             {related.size ? `In ${related.size - 1} ${view} pair${related.size === 2 ? "" : "s"}; linked projects glow.` : `Not in any ${view} pair.`}
           </p>}
         </aside>
