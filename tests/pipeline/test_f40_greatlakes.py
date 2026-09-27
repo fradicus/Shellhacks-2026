@@ -249,3 +249,28 @@ def test_candidate_center_must_follow_its_facilities():
     project["center"]["lat"] = 10.0
     with pytest.raises(ValueError, match="outside its states"):
         _check_center(project, snapshot)
+
+
+def test_timeline_date_is_the_one_printed_under_the_label():
+    from greatlakes.dates import timeline_date
+
+    def word(text, left, top):
+        return {"text": text, "left": left, "top": top, "width": 80, "height": 30}
+
+    # Wheelersburg's graphic: OCR order puts the pre-construction row ("Late 2027") right after the label.
+    words = [word("Ongoing-Late", 6, 1324), word("2027", 194, 1324), word("FACILITIES", 3, 1471),
+             word("PLACED", 192, 1471), word("SERVICE", 378, 1471), word("Spring", 6, 1512), word("2028", 104, 1511),
+             word("2025", 1200, 686), word("2026", 1400, 686)]
+    when, year, label, _ = timeline_date(words)
+    assert (when, year, label) == ("Spring", "2028", "Placed In Service")
+    assert timeline_date([word("SERVICE", 10, 100), word("2028", 10, 140)]) is None  # a bare axis year never counts
+
+
+def test_date_overlay_fills_only_unknown_dates():
+    from common import REPO_ROOT
+
+    projects = {p["_id"]: p for p in load_json(REPO_ROOT / "data" / "greatlakes" / "projects.json")}
+    for name in ("aep", "firstenergy"):
+        for pid, entry in load_json(REPO_ROOT / "data" / "greatlakes" / "dates" / f"{name}.json").items():
+            assert projects[pid]["in_service"] == entry["in_service"]
+            assert projects[pid]["in_service_evidence"] == entry["evidence"]

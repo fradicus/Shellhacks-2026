@@ -69,6 +69,8 @@ def slug(artifact: dict) -> str:
 def build(root: Path = REPO_ROOT) -> dict[Path, object]:
     """Publication projects (one source per artifact, C25 tier added) plus national sources and the release."""
     projects, sources = [], []
+    # Dates found after the source import (greatlakes.dates): fill unknown in-service only, with their evidence.
+    dates = {k: v for path in sorted((root / FOLDER / "dates").glob("*.json")) for k, v in load_json(path).items()}
     for producer in PRODUCERS:
         base = load_json(root / FOLDER / producer / "sources.json")[0]
         artifacts = {a["sha256"]: a for a in base["artifacts"]}
@@ -91,6 +93,9 @@ def build(root: Path = REPO_ROOT) -> dict[Path, object]:
                           "map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."],
             })
             for project in members:
+                if project["in_service"]["precision"] == "unknown" and project["_id"] in dates:
+                    project["in_service"] = dates[project["_id"]]["in_service"]
+                    project["in_service_evidence"] = dates[project["_id"]]["evidence"]
                 project["source_id"] = source_id
                 project["evidence"]["source_sha256"] = digest
                 if project["center"]:
