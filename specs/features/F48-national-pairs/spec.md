@@ -31,3 +31,12 @@ eligible with their visible uncertainty. No data quotas or invented dates.
 Implement [C55](../../decisions/C55-candidate-search.md)'s optional `q` read API
 and focused tests before F19 uses it. Search preserves the published matching
 rule and stored rank; it never re-generates pairs or guesses owner identities.
+
+## Drive rule follow-up (C46)
+The user chose to move these pairs to [C46](../../decisions/C46-drive-route-overlaps.md)'s rule: a stored driving route of
+25 miles or less decides, with this release's straight-line candidates (now <= 25) as the prefilter. F48 stores routes in
+`data/national_pairs/routes.json` (schema `route`), fetched by a person-run command through
+`pipeline/matches/routes.py` (one request per second; the load Action and the website never route). A candidate without a
+current route is excluded and counted, never guessed. Pairs then carry `drive_mi` and a `route` summary, rank on the
+drive, and the provisional wording names driving distance. Until the routes are committed, the straight-line release
+above stands.

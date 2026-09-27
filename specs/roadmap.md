@@ -381,3 +381,11 @@ follow stored state, selected-pair layout fixes, and the Gemini page's default t
 F48 adds dataset-scoped project/utility/ID search before pair pagination; F19 adds
 the search form and filed owner/source/native-ID labels. Ship sequential owner PRs
 against the current matching contract, preserving F52 and the quiet overview.
+
+## Drive-route overlaps (C46)
+
+The user asked that a pair overlap when the driving route between the two project centers is 25 miles or less,
+and that the same rule apply to every data point. [C46](decisions/C46-drive-route-overlaps.md) applies it to the
+filing pairs (F10) and draws the stored routes on the Overlaps page (F19). The user then chose to upgrade F48's
+national pairs to the same rule as a follow-up on F48's own files; until F48 stores routes, its pairs stay
+straight-line and labeled provisional.

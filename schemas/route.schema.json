@@ -1,0 +1,51 @@
+{
+  "$id": "https://gridbridge.local/schemas/route.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "$defs": {
+    "point": {
+      "additionalProperties": false,
+      "properties": {
+        "lat": {"maximum": 90, "minimum": -90, "type": "number"},
+        "lon": {"maximum": 180, "minimum": -180, "type": "number"}
+      },
+      "required": ["lat", "lon"],
+      "type": "object"
+    },
+    "nullable_point": {
+      "oneOf": [{"$ref": "#/$defs/point"}, {"type": "null"}]
+    }
+  },
+  "properties": {
+    "_id": {"description": "match _id of the pair (sorted project keys joined by __)", "type": "string"},
+    "a": {"type": "string"},
+    "b": {"type": "string"},
+    "origin": {"$ref": "#/$defs/point", "description": "Center of a when the route was computed"},
+    "destination": {"$ref": "#/$defs/point", "description": "Center of b when the route was computed"},
+    "status": {"enum": ["ok", "no_route"]},
+    "distance_m": {"minimum": 0, "type": ["number", "null"]},
+    "drive_mi": {"description": "Unrounded driving miles between the road points nearest each center", "minimum": 0, "type": ["number", "null"]},
+    "duration_s": {"minimum": 0, "type": ["integer", "null"]},
+    "polyline": {"description": "Encoded polyline, precision 5", "type": ["string", "null"]},
+    "start": {"$ref": "#/$defs/nullable_point"},
+    "end": {"$ref": "#/$defs/nullable_point"},
+    "snap_m": {
+      "description": "Meters from each center to the road point the router snapped it to",
+      "oneOf": [
+        {"items": {"minimum": 0, "type": "number"}, "maxItems": 2, "minItems": 2, "type": "array"},
+        {"type": "null"}
+      ]
+    },
+    "provider": {"type": "string"},
+    "travel_mode": {"const": "DRIVE"},
+    "routing_preference": {"type": "string"},
+    "data_source": {"type": "string"},
+    "computed_at": {"format": "date-time", "type": "string"}
+  },
+  "required": ["_id", "a", "b", "origin", "destination", "status", "distance_m", "drive_mi", "duration_s", "polyline",
+               "start", "end", "snap_m", "provider", "travel_mode", "routing_preference", "data_source", "computed_at"],
+  "if": {"properties": {"status": {"const": "ok"}}},
+  "then": {"properties": {"drive_mi": {"type": "number"}, "distance_m": {"type": "number"}}},
+  "title": "A stored driving route between two project centers (C46 drive rule)",
+  "type": "object"
+}

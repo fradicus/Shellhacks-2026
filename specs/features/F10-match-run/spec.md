@@ -5,7 +5,7 @@ lane: A
 agent: geo-engineer
 phase: 2
 depends_on: [F09]
-owns: [pipeline/match_run/, tests/pipeline/test_f10_, data/matches/]
+owns: [pipeline/match_run/, tests/pipeline/test_f10_, data/matches/, data/routes/]
 cut: never
 ---
 
@@ -13,7 +13,10 @@ cut: never
 
 ## Plan
 1. Join active projects (F01, F02) with locations (F09); drop `rejected` endpoints. Compute centers **with `pipeline.matches.core.center`**.
-2. Run `core.overlaps` over all DESC × GPC pairs where both utilities are known and different. Apply `core.priority_sort`.
+2. Apply the C46 drive rule: route every `core.route_candidates` pair through `matches.routes.fetch_missing`
+   (stored in `data/routes/routes.json`, schema `route`; only missing or stale pairs are requested), bind drives with
+   `matches.routes.drives_for`, then run `core.overlaps(prepared, analysis_date, drives)` and `core.priority_sort`.
+   Each match carries `drive_mi` and `route` (`matches.routes.route_summary`). The match run itself never calls a router.
 3. **View:**
    - `future`: both dates exact and >= `analysis_date`, and both centers from high/medium locations
    - `historical`: a date before `analysis_date`
@@ -41,9 +44,11 @@ cut: never
 
 ## Validation
 - `tests/pipeline/test_f10_*.py`: running the golden fixture through the full run path reproduces OVL_1..6 and the priority order from F00.
-- Full-corpus replay must be byte-identical and reproduce 7,452 known-owner combinations, 656 centered pairs evaluated
-  and 19 overlaps from the accepted F09 corpus. All 19 remain `needs_review` pending F13.
-- PR body: pairs evaluated, overlaps per view/band, and the top 10 with distance and gap.
+- Full-corpus replay from the committed inputs and stored routes must be byte-identical to the committed output. Do not
+  assert fixed corpus counts (C46: corpora grow); every stored overlap stays `needs_review` pending F13.
+- The summary counts routing candidates and route states (`ok`, `no_route`, `missing`, `stale`) so unknown drives are
+  visible, never silently dropped.
+- PR body: pairs evaluated, overlaps per view/band, and the top 10 with drive distance, straight-line distance and gap.
 
 ## Defaults
 - A project with one located endpoint uses it as the center, with `center.basis: "one"`, and is never `future` unless that endpoint is high confidence.

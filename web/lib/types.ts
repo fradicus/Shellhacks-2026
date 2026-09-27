@@ -93,13 +93,31 @@ export interface FieldEvidence {
   quote: string;
 }
 
+/** The stored driving route a drive-rule match was decided on (C46; schemas/route.schema.json). */
+export interface MatchRoute {
+  provider: string;
+  travel_mode: "DRIVE";
+  routing_preference?: string | null;
+  data_source?: string | null;
+  computed_at: string;
+  duration_s?: number | null;
+  /** Encoded polyline (precision 5) between the road points nearest each center. */
+  polyline: string | null;
+  start?: { lat: number; lon: number } | null;
+  end?: { lat: number; lon: number } | null;
+  snap_m?: [number, number] | null;
+}
+
 export interface Match {
   /** Sorted project keys joined by `__`. */
   _id: string;
   a: string;
   b: string;
-  /** Unrounded miles; round to 2 dp for display only. */
+  /** Unrounded center-to-center miles; round to 2 dp for display only. Under the drive rule, the routing pre-filter. */
   distance_mi: number;
+  /** Unrounded driving miles from the stored route: the drive-rule overlap test (<= 25). Absent on straight-line records. */
+  drive_mi?: number;
+  route?: MatchRoute;
   time_gap_days: number | null;
   band: 0 | 1;
   rule_version: string;
