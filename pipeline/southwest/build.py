@@ -23,7 +23,7 @@ from pathlib import Path
 
 from openpyxl import load_workbook
 
-from california.caiso import match, sha, slug
+from california.caiso import match, slug
 from common import REPO_ROOT, load_json, write_json
 from greatlakes.match import candidate_center, facility_key, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
