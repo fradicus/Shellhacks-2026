@@ -342,6 +342,12 @@ def fetch(cache: Path) -> None:
     if MISO_A_FILE not in manifest:
         fetch_into(cache, MISO_A_FILE, MISO_A_URL, manifest)
         write_json(cache / "manifest.json", manifest)
+    from sppsouth.history import files
+
+    for name, url in files().items():
+        if name not in manifest:
+            fetch_into(cache, name, url, manifest)
+            write_json(cache / "manifest.json", manifest)
     for state in STATES:
         if f"osm-{state.lower()}.json" not in manifest:
             fetch_osm(cache, state, manifest)
@@ -350,11 +356,14 @@ def fetch(cache: Path) -> None:
 
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
-    manifest = verify_cache(cache, [ZIP, miso.FILE, MISO_A_FILE, *osm_files])
+    from sppsouth import history as spp_history
+
+    manifest = verify_cache(cache, [ZIP, miso.FILE, MISO_A_FILE, *spp_history.files(), *osm_files])
     facilities = {s: osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s) for s in STATES}
     artifact = manifest[ZIP]
     projects, dispositions = [], []
-    for row in read_rows((cache / ZIP).read_bytes()):
+    spp_rows = read_rows((cache / ZIP).read_bytes())
+    for row in spp_rows:
         states = row_states(row["State(s)"])
         where = {"source_id": SOURCE_ID, "sheet": row["_sheet"], "row": row["_row"], "uid": str(row["UID"]),
                  "name": clean(row["Upgrade Name"] or "")}
@@ -403,6 +412,15 @@ def build(cache: Path) -> dict[Path, object]:
         projects.append(record)
         dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
                                      "location": record["location_candidate"]["tier"] or "unlocated"})
+    # FIX-F46: completed SPP upgrades only the older Q4 editions list, through F47's reader (sppsouth.history).
+    from sppsouth import history
+    from sppsouth.build import published_uids as south_uids
+
+    taken_spp = south_uids() | {p["native_id"] for p in load_json(REPO_ROOT / "data" / "sppsouth" / "projects.json")}
+    past, more, used = history.projects(cache, manifest, {str(r["UID"]) for r in spp_rows}, taken_spp, facilities,
+                                        STATES, OPERATOR_KEYS, "C43", suffix="midwest")
+    projects += past
+    dispositions += more
     if len({p["_id"] for p in projects}) != len(projects):
         raise SystemExit("project ID repeated within a workbook")
     projects.sort(key=lambda p: p["_id"])
@@ -451,7 +469,9 @@ def build(cache: Path) -> dict[Path, object]:
                   "F39 reads the same workbook for its own states.",
                   "Located from the Facility sheet's From/To substations when they name one site or line, else from "
                   "the title. Unreviewed C33 candidates; none is independently confirmed."]}
-    return {OUT / "projects.json": projects, OUT / "sources.json": [source, miso_source, a_source],
+    past_sources = history.sources(used, projects, "F46 Midwest (FIX-F46): completed IA/MO/KS/NE/ND/SD upgrades "
+                                   "absent from the 2026 Q3 edition.", suffix="midwest")
+    return {OUT / "projects.json": projects, OUT / "sources.json": [source, miso_source, a_source, *past_sources],
             OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",

@@ -92,8 +92,8 @@ def test_committed_release_appends_unreviewed_candidates_in_their_states():
     snapshot["coverage"].update(_coverage(snapshot["projects"], imported))
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / "data" / "midwest" / "releases" / "active.json")
-    added = [p for p in snapshot["projects"]
-             if p["source_id"] in {"spp-qpt-2026q3", "miso-mtep26-eval-midwest", "miso-mtep25-appendix-a-midwest"}]
+    released = {s["_id"] for s in load_json(REPO_ROOT / "data" / "midwest" / "sources.json")}
+    added = [p for p in snapshot["projects"] if p["source_id"] in released]
     assert len(added) == release["expected_counts"]["projects"]
     assert all(set(p["states"]) <= {"19", "29", "20", "31", "38", "46"} for p in added)
     assert all(p["location_review"] == ("unreviewed" if p["center"] else "unlocated") for p in added)
@@ -106,3 +106,12 @@ def test_appendix_a_rows_are_new_mtep_ids_in_f46_states():
     assert appendix and all(set(p["states"]) <= {"19", "29", "38", "46"} for p in appendix)
     earlier = {p["native_id"] for p in projects if p["source_id"] == "miso-mtep26-eval-midwest"}
     assert not {p["native_id"] for p in appendix} & earlier
+
+
+def test_older_spp_editions_add_only_completed_upgrades_no_other_rollout_has():
+    projects = load_json(REPO_ROOT / "data" / "midwest" / "projects.json")
+    past = [p for p in projects if p["source_id"].startswith("spp-qpt-20") and p["source_id"].endswith("-midwest")]
+    current = {p["native_id"] for p in projects if p["source_id"] == "spp-qpt-2026q3"}
+    south = {p["native_id"] for p in load_json(REPO_ROOT / "data" / "sppsouth" / "projects.json")}
+    assert past and all(p["status_group"] == "in_service" for p in past)
+    assert not {p["native_id"] for p in past} & (current | south)

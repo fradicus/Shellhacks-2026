@@ -1,8 +1,8 @@
 {
   "by_basis": {
-    "one": 86,
-    "source_point": 213,
-    "two": 28
+    "one": 123,
+    "source_point": 276,
+    "two": 51
   },
   "by_source": {
     "miso-mtep25-appendix-a-midwest": {
@@ -13,6 +13,42 @@
       "located": 18,
       "projects": 86
     },
+    "spp-qpt-2017q4-midwest": {
+      "located": 15,
+      "projects": 19
+    },
+    "spp-qpt-2018q4-midwest": {
+      "located": 14,
+      "projects": 26
+    },
+    "spp-qpt-2019q4-midwest": {
+      "located": 38,
+      "projects": 61
+    },
+    "spp-qpt-2020q4-midwest": {
+      "located": 17,
+      "projects": 32
+    },
+    "spp-qpt-2021q4-midwest": {
+      "located": 8,
+      "projects": 17
+    },
+    "spp-qpt-2022q4-midwest": {
+      "located": 6,
+      "projects": 8
+    },
+    "spp-qpt-2023q4-midwest": {
+      "located": 12,
+      "projects": 29
+    },
+    "spp-qpt-2024q4-midwest": {
+      "located": 1,
+      "projects": 9
+    },
+    "spp-qpt-2025q4-midwest": {
+      "located": 12,
+      "projects": 15
+    },
     "spp-qpt-2026q3": {
       "located": 280,
       "projects": 587
@@ -21,66 +57,66 @@
   "by_state": {
     "IA": {
       "located": 15,
-      "projects": 76
+      "projects": 81
     },
     "KS": {
-      "located": 87,
-      "projects": 137
+      "located": 154,
+      "projects": 242
     },
     "MO": {
-      "located": 77,
-      "projects": 152
+      "located": 90,
+      "projects": 171
     },
     "ND": {
-      "located": 62,
-      "projects": 131
+      "located": 86,
+      "projects": 163
     },
     "NE": {
-      "located": 51,
-      "projects": 109
+      "located": 62,
+      "projects": 150
     },
     "SD": {
-      "located": 36,
-      "projects": 151
+      "located": 44,
+      "projects": 165
     }
   },
   "by_status": {
     "cancelled": 3,
-    "in_service": 130,
+    "in_service": 346,
     "planned": 440,
     "proposed": 178,
     "under_construction": 3
   },
   "by_tier": {
-    "candidate": 304,
-    "candidate_unique_name": 23
+    "candidate": 420,
+    "candidate_unique_name": 30
   },
-  "distinct_points": 173,
-  "located": 327,
+  "distinct_points": 238,
+  "located": 450,
   "located_by_status": {
     "cancelled": 1,
-    "in_service": 65,
+    "in_service": 188,
     "planned": 201,
     "proposed": 59,
     "under_construction": 1
   },
   "located_not_in_service": 261,
-  "located_with_dated_events": 288,
-  "projects": 754,
+  "located_with_dated_events": 407,
+  "projects": 970,
   "unlocated_reasons": {
     "ambiguous": 5,
     "ambiguous,no_facility": 1,
     "ambiguous,not_a_facility": 2,
     "ambiguous,operator_conflict": 2,
-    "endpoint_not_named": 10,
-    "multi_terminal_line": 3,
-    "no_facility": 267,
-    "no_facility,not_a_facility": 7,
+    "endpoint_not_named": 16,
+    "multi_terminal_line": 6,
+    "no_facility": 320,
+    "no_facility,not_a_facility": 9,
     "no_facility,operator_conflict": 21,
-    "no_named_facility": 50,
-    "not_a_facility": 17,
-    "operator_conflict": 28,
-    "program_area_or_multi_facility": 14
+    "no_named_facility": 65,
+    "not_a_facility": 26,
+    "operator_conflict": 31,
+    "program_area_or_multi_facility": 16
   },
   "verified": 0
 }
