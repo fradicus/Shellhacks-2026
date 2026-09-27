@@ -84,9 +84,10 @@ def verify(file: str, i: int, row: dict, text: dict[int, str]) -> None:
         raise SystemExit(f"{file} row {i}: not on page {row['page']}: {missing}")
 
 
-def locate(row: dict, states: list[str], facilities: dict[str, list[dict]]) -> tuple[dict | None, dict]:
+def locate(row: dict, states: list[str], facilities: dict[str, list[dict]], operator_keys: dict | None = None
+           ) -> tuple[dict | None, dict]:
     """C33/C38 match per named facility across the row's states (or, with no stated state, the owner's territory)."""
-    keys = OPERATOR_KEYS.get(row["owner"], [])
+    keys = (operator_keys or OPERATOR_KEYS).get(row["owner"], [])
     kv = set(row["voltages_kv"])
     pool = [f for s in states for f in facilities.get(s, [])]
     matches = [match(n, pool, keys, kv) for n in row["facilities"]] if row["kind"] else []
@@ -108,14 +109,18 @@ def locate(row: dict, states: list[str], facilities: dict[str, list[dict]]) -> t
                     "dataset": f"OpenStreetMap power=substation, {'/'.join(states)} (ODbL)"}
 
 
-def projects(cache: Path, manifest: dict, facilities: dict[str, list[dict]], fips: dict[str, str]
+def projects(cache: Path, manifest: dict, facilities: dict[str, list[dict]], fips: dict[str, str],
+             reports: dict = REPORTS, territory: dict = TERRITORY, operator_keys: dict = OPERATOR_KEYS,
+             transcriptions: Path = TRANSCRIPTIONS, published: set[str] | None = None, scope: str = "C50"
              ) -> tuple[list[dict], list[dict]]:
-    published = published_ids()
+    """Accepted records and every row's disposition. Another rollout can pass its own reports, territory, operator
+    keys, transcription folder and already-published IDs."""
+    published = published_ids() if published is None else published
     out, dispositions = [], []
-    for file, (name, _, source_id, publisher) in REPORTS.items():
+    for file, (name, _, source_id, publisher) in reports.items():
         artifact = manifest[name]
         text = pages(cache / name)
-        for i, row in enumerate(load_json(TRANSCRIPTIONS / f"{file}.json")["rows"], start=1):
+        for i, row in enumerate(load_json(transcriptions / f"{file}.json")["rows"], start=1):
             verify(file, i, row, text)
             native = row["native_id"]
             where = {"source_id": source_id, "locator": f"{name}#page={row['page']}", "name": row["name"]}
@@ -123,12 +128,12 @@ def projects(cache: Path, manifest: dict, facilities: dict[str, list[dict]], fip
             reason = (f"{row['work_type']} work, not a transmission project" if row["work_type"] != "transmission"
                       else f"same project as {row['published_as']}" if row["published_as"] in published
                       else f"published_as {row['published_as']} not found" if row["published_as"]
-                      else f"outside C50 states ({','.join(row['states'])})" if row["states"] and not stated
+                      else f"outside {scope} states ({','.join(row['states'])})" if row["states"] and not stated
                       else None)
             if reason:
                 dispositions.append(where | {"disposition": "excluded", "reason": reason})
                 continue
-            center, candidate = locate(row, stated or TERRITORY[row["owner"]], facilities)
+            center, candidate = locate(row, stated or territory[row["owner"]], facilities, operator_keys)
             states = stated or sorted({e["facility"]["state"] for e in candidate["endpoints"] if "facility" in e})
             if not states:
                 dispositions.append(where | {"disposition": "excluded", "reason": "no state in the text and no "
@@ -164,7 +169,7 @@ def projects(cache: Path, manifest: dict, facilities: dict[str, list[dict]], fip
                 "center": center, "location_review": "unreviewed" if center else "unlocated",
                 "location_candidate": candidate, "project_events": events,
                 "evidence": {"page": row["page"], "sheet": None, "row": None, "source_sha256": artifact["sha256"],
-                             "raw": {"quote": row["quote"], "transcription": f"{file}.json#{i}",
+                             "raw": {"quote": row["quote"], "transcription": f"{transcriptions.name}/{file}.json#{i}",
                                      "in_service_raw": row["in_service_raw"], "status_raw": row["status_raw"]}},
             })
             dispositions.append(where | {"disposition": "accepted", "_id": pid,
