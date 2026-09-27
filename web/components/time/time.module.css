@@ -475,6 +475,7 @@
 
 .close {
   position: absolute;
+  z-index: 1;
   top: 8px;
   right: 10px;
   width: 28px;
@@ -1084,6 +1085,7 @@
   animation: breathe 1.4s ease-in-out infinite;
 }
 .failure {
+  pointer-events: none;
   z-index: 5;
   bottom: 26px;
   width: max-content;
@@ -1182,7 +1184,13 @@
     border: 0;
   }
   .tray {
-    display: none;
+    display: block;
+    flex-shrink: 0;
+  }
+  .drawer {
+    inset: 12px;
+    width: auto;
+    max-height: calc(100% - 24px);
   }
   .detail {
     top: 12px;
@@ -1448,4 +1456,24 @@
     inset: 12px;
     width: auto;
   }
+}
+
+.nationalEvidence {
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.nationalEvidence p { margin: 10px 0; }
+.nationalEvidence h3 { font-size: 14px; margin-top: 18px; }
+.nationalEvidence h4 { font-size: 12px; }
+.nationalEvidence a { color: #88dbc1; text-decoration: underline; }
+.nationalEvidence details { margin: 12px 0; }
+.nationalEvidence summary { cursor: pointer; }
+.nationalEvidence ul { padding-left: 16px; }
+
+/* Leave room for the expanded source evidence above the controls. */
+.detail ~ .dock .legend { display: none; }
+
+@media (max-width: 860px) {
+  .failure { bottom: 50%; }
 }

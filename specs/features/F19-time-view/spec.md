@@ -63,3 +63,16 @@ Motion and meaning, not more objects. Build order; each step ships only if the o
 
 ## Defaults
 - `three` pinned exactly via this feature's `[C9]`. Fonts via `next/font/google` scoped to the route.
+
+## National map integration (issue #139)
+
+The user's explicit follow-up assigns this bounded implementation to Codex under
+`specs/decisions/F19-national-map.md`. Fetch the active national projection used by `/explore` and
+render confirmed nonlegacy centers on `/time` by default. Preserve native IDs, actual owners,
+source lifecycle status, milestone precision and site/complete/partial endpoint evidence. Exclude
+national legacy projections and preserve stored pairs without calculating additional overlaps.
+
+Expose source and independent review evidence when selecting a national project. Disclose national
+unavailability and map truncation; link to the explorer for unlocated records. Default bounds include
+the delivered points. Validate projection/deduplication and date precision, desktop/mobile selection,
+2D/3D, navigation re-entry, fallback behavior and the repo-wide checks.
