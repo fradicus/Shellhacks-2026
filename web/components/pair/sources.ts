@@ -5,6 +5,8 @@ export interface Citation {
   title?: string;
   /** Only DESC filings link out (public PDF, `#page=N`); Georgia cites the page number only (decision D2). */
   href?: string;
+  /** The cited page, when known; shown in the source peek. */
+  page?: number;
 }
 
 export function cite(project: Pick<Project, "utility">, sources: Source[] | undefined, sourceId: string, page: number | null | undefined): Citation {
@@ -12,5 +14,10 @@ export function cite(project: Pick<Project, "utility">, sources: Source[] | unde
   const doc = src?.filing ? `${project.utility === "unknown" ? src.publisher : project.utility} filing ${src.filing}` : (src?.title ?? sourceId);
   const label = `${doc}${page ? `, p. ${page}` : ""}`;
   const linkable = project.utility === "DESC" && src?.url && src.public_status === "public";
-  return { label, title: src?.title, href: linkable ? (page ? `${src.url}#page=${page}` : src.url) : undefined };
+  return {
+    label,
+    title: src?.title,
+    href: linkable ? (page ? `${src.url}#page=${page}` : src.url) : undefined,
+    page: page ?? undefined,
+  };
 }
