@@ -1,0 +1,75 @@
+{
+  "by_basis": {
+    "one": 72,
+    "source_point": 164,
+    "two": 17
+  },
+  "by_owner": {
+    "AEP": 114,
+    "EKC": 1,
+    "EM": 1,
+    "EMW": 1,
+    "ETEC": 147,
+    "GRDA": 16,
+    "LEA": 5,
+    "NEET": 4,
+    "NPPD": 1,
+    "OGE": 178,
+    "SPS": 208,
+    "SWPA": 1,
+    "TBD": 3,
+    "TSOK": 3,
+    "WAPA": 1,
+    "WFEC": 38
+  },
+  "by_state": {
+    "NM": {
+      "located": 64,
+      "projects": 126
+    },
+    "OK": {
+      "located": 160,
+      "projects": 327
+    },
+    "TX": {
+      "located": 29,
+      "projects": 269
+    }
+  },
+  "by_status": {
+    "cancelled": 4,
+    "in_service": 131,
+    "planned": 506,
+    "proposed": 80,
+    "unknown": 1
+  },
+  "by_tier": {
+    "candidate": 223,
+    "candidate_unique_name": 30
+  },
+  "distinct_points": 106,
+  "located": 253,
+  "located_by_status": {
+    "in_service": 56,
+    "planned": 164,
+    "proposed": 32,
+    "unknown": 1
+  },
+  "projects": 722,
+  "unlocated_reasons": {
+    "ambiguous": 15,
+    "ambiguous,no_facility": 2,
+    "ambiguous,not_a_facility": 2,
+    "endpoint_not_named": 2,
+    "multi_terminal_line": 17,
+    "no_facility": 326,
+    "no_facility,not_a_facility": 23,
+    "no_facility,operator_conflict": 12,
+    "no_named_facility": 25,
+    "not_a_facility": 3,
+    "not_a_facility,operator_conflict": 1,
+    "operator_conflict": 26,
+    "program_area_or_multi_facility": 15
+  },
+  "verified": 0
+}
