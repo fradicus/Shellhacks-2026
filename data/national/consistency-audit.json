@@ -101,5 +101,17 @@
     "legacy:GPC:21023@gpc-2025"
   ],
   "base_projects_sha256": "c37c9dd0c9dd6f29ef35b170c6e7ea978cbaf890ceeca909e8d0060d514b90c3",
-  "boundary_sha256": "b8734276783a5cef4f0fed32fa7e0901f95335da3b23583d1d887c011858bf15"
+  "boundary_sha256": "b8734276783a5cef4f0fed32fa7e0901f95335da3b23583d1d887c011858bf15",
+  "post_great_lakes_assembly": {
+    "base_revision": "01df6cccab8364c0181449b8f1514d8aa4b6b0e4",
+    "projects": 5097,
+    "located_count": 1979,
+    "location_counts": {
+      "confirmed_centers": 612,
+      "candidate_centers": 1367,
+      "approximate_only": 1218,
+      "no_display_location": 1900,
+      "rejected_projects": 10
+    }
+  }
 }

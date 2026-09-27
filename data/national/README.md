@@ -37,7 +37,7 @@ leave the base unchanged; invalid releases fail before staging. Candidate and re
 
 Expansion geometry and its source/review evidence are embedded in the same national project document and move
 with the existing atomic dataset pointer. Project IDs, original source rows, statuses and milestone precision
-remain unchanged. Runtime `coverage.expansion`, `coverage.southeast`, `coverage.mid_atlantic`, `coverage.texas` and `coverage.greatlakes` preserve
+remain unchanged. Runtime `coverage.expansion`, `coverage.southeast`, `coverage.mid_atlantic`, `coverage.texas` and `coverage.great_lakes` preserve
 each producer’s coverage, review counts and gaps separately from the recomputed national totals.
 The workbook still supplies no coordinates; separate reviewed evidence supplies any accepted ISO-NE locations.
 `national build` continues to write base snapshots only, so repeated loads do not bake overlays into originals.
