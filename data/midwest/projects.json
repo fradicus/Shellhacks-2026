@@ -1,5 +1,5605 @@
 [
   {
+    "_id": "miso-lrtp-tr21-midwest:50898",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/525033653 (Bison Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 46.950774,
+      "lon": -97.075872
+    },
+    "counties": [],
+    "description": "Install second 345kV circuit on existing spare position.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "19600000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "MN/ND State Line - Bison 345kV Transmission Line",
+        "Geographic Location by TO Member System": "GRE, MP, MRES, OTP, XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50898",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 4,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "name": "MN/ND State",
+          "norm": "MN/ND STATE",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/525033653",
+            "lat": 46.9507742,
+            "lon": -97.0758717,
+            "name": "Bison Substation",
+            "operator": null,
+            "state": "ND",
+            "voltage": "345000"
+          },
+          "name": "Bison",
+          "norm": "BISON",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "GREAT RIVER",
+        "MINNESOTA POWER",
+        "MISSOURI RIVER",
+        "OTTER TAIL",
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "MN/ND State Line - Bison 345kV Transmission Line",
+    "native_id": "50898",
+    "other_owners": [
+      "MP",
+      "MRES",
+      "OTP",
+      "XEL"
+    ],
+    "owner": "GRE",
+    "part": "MN/ND State Line - Bison 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50899",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/127851936 (Cass County Substation), OSM way/98325753 (Red River Substation), corroborated by operator, voltage.",
+      "lat": 46.877872,
+      "lon": -96.828994
+    },
+    "counties": [],
+    "description": "Replace existing Cass County - Red River 115kV single-circuit transmission line with 115kV single-circuit structures and conductor to achieve 3000A rating.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "5400000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Cass County - Red River 115kV Transmission Line",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50899",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 7,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/127851936",
+            "lat": 46.875282,
+            "lon": -96.8498435,
+            "name": "Cass County Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "115000;23900;13800;2400"
+          },
+          "name": "Cass County",
+          "norm": "CASS COUNTY",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/98325753",
+            "lat": 46.8804615,
+            "lon": -96.808145,
+            "name": "Red River Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "115000;23900;13800"
+          },
+          "name": "Red River",
+          "norm": "RED RIVER",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Cass County - Red River 115kV Transmission Line",
+    "native_id": "50899",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Cass County - Red River 115kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50900",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/127851936 (Cass County Substation), corroborated by operator, voltage.",
+      "lat": 46.875282,
+      "lon": -96.849844
+    },
+    "counties": [],
+    "description": "Replace 115kV substation bus and equipment to achieve 3000A rating for the outgoing Red River 115kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "7700000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Cass County Substation",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50900",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 6,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/127851936",
+            "lat": 46.875282,
+            "lon": -96.8498435,
+            "name": "Cass County Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "115000;23900;13800;2400"
+          },
+          "name": "Cass County",
+          "norm": "CASS COUNTY",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Cass County Substation",
+    "native_id": "50900",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Cass County Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50901",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/525033653 (Bison Substation), corroborated by voltage.",
+      "lat": 46.950774,
+      "lon": -97.075872
+    },
+    "counties": [],
+    "description": "Add one 345kV position and convert the existing four-position ring bus into a five-position breaker-and-a-half bus arrangement.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Bison Substation",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50901",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 5,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/525033653",
+            "lat": 46.9507742,
+            "lon": -97.0758717,
+            "name": "Bison Substation",
+            "operator": null,
+            "state": "ND",
+            "voltage": "345000"
+          },
+          "name": "Bison",
+          "norm": "BISON",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Bison Substation",
+    "native_id": "50901",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Bison Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50902",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/98325753 (Red River Substation), corroborated by operator, voltage.",
+      "lat": 46.880462,
+      "lon": -96.808145
+    },
+    "counties": [],
+    "description": "Replace existing 115kV substation bus and equipment to achieve 3000A rating for the outgoing Cass County 115kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4800000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Red River Substation",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50902",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 8,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/98325753",
+            "lat": 46.8804615,
+            "lon": -96.808145,
+            "name": "Red River Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "115000;23900;13800"
+          },
+          "name": "Red River",
+          "norm": "RED RIVER",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Red River Substation",
+    "native_id": "50902",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Red River Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50903",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/125417221 (Sheyenne Substation), corroborated by operator, voltage.",
+      "lat": 46.83177,
+      "lon": -96.860265
+    },
+    "counties": [],
+    "description": "Replace existing 230kV substation bus and equipment to achieve 3000A rating for the outgoing Fargo (WAPA) and Maple River 230kV transmission lines.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "8500000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Sheyenne Substation",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50903",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 9,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/125417221",
+            "lat": 46.8317696,
+            "lon": -96.8602647,
+            "name": "Sheyenne Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "230000;115000;13800"
+          },
+          "name": "Sheyenne",
+          "norm": "SHEYENNE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Sheyenne Substation",
+    "native_id": "50903",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Sheyenne Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50904",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/125417221 (Sheyenne Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 46.83177,
+      "lon": -96.860265
+    },
+    "counties": [],
+    "description": "Replace existing Sheyenne - Fargo (WAPA) 230kV single-circuit transmission line with 230kV single-circuit structures to achieve 3000A rating.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "9300000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Sheyenne - Fargo (WAPA) 230kV Transmission Line",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50904",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 10,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/125417221",
+            "lat": 46.8317696,
+            "lon": -96.8602647,
+            "name": "Sheyenne Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "230000;115000;13800"
+          },
+          "name": "Sheyenne",
+          "norm": "SHEYENNE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Fargo",
+          "norm": "FARGO",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Sheyenne - Fargo (WAPA) 230kV Transmission Line",
+    "native_id": "50904",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Sheyenne - Fargo (WAPA) 230kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50905",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/126003785 (Fargo Substation), corroborated by operator, voltage.",
+      "lat": 46.834765,
+      "lon": -96.948623
+    },
+    "counties": [],
+    "description": "Replace existing 230kV substation bus and equipment to achieve 3000A rating for the outgoing Sheyenne 230kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "5400000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Fargo (WAPA) Substation",
+        "Geographic Location by TO Member System": "WAPA",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50905",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 11,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/126003785",
+            "lat": 46.834765,
+            "lon": -96.9486234,
+            "name": "Fargo Substation",
+            "operator": "Western Area Power Administration",
+            "state": "ND",
+            "voltage": "230000;115000"
+          },
+          "name": "Fargo",
+          "norm": "FARGO",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "WESTERN AREA",
+        "WAPA"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Fargo (WAPA) Substation",
+    "native_id": "50905",
+    "other_owners": [],
+    "owner": "WAPA",
+    "part": "Fargo (WAPA) Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50906",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/125417221 (Sheyenne Substation), OSM way/139884254 (Maple River Substation), corroborated by operator, voltage.",
+      "lat": 46.87466,
+      "lon": -96.867281
+    },
+    "counties": [],
+    "description": "Replace existing Sheyenne - Maple River 230kV single-circuit transmission line with 230kV single-circuit structures to achieve 3000A rating.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "13400000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Sheyenne - Maple River 230kV Transmission Line",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50906",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 12,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/125417221",
+            "lat": 46.8317696,
+            "lon": -96.8602647,
+            "name": "Sheyenne Substation",
+            "operator": "Xcel Energy",
+            "state": "ND",
+            "voltage": "230000;115000;13800"
+          },
+          "name": "Sheyenne",
+          "norm": "SHEYENNE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/139884254",
+            "lat": 46.9175511,
+            "lon": -96.8742967,
+            "name": "Maple River Substation",
+            "operator": "Minnkota Power Cooperative/Xcel Energy",
+            "state": "ND",
+            "voltage": "345000;230000;115000;69000"
+          },
+          "name": "Maple River",
+          "norm": "MAPLE RIVER",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Sheyenne - Maple River 230kV Transmission Line",
+    "native_id": "50906",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Sheyenne - Maple River 230kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50907",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/127997263 (Forman Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 46.096047,
+      "lon": -97.63241
+    },
+    "counties": [],
+    "description": "Replace existing Forman - Hankinson 230kV single-circuit transmission line with 230kV single-circuit structures to achieve 2000A rating.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "66500000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Forman - Hankinson 230kV Transmission Line",
+        "Geographic Location by TO Member System": "OTP",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50907",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 13,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/127997263",
+            "lat": 46.0960466,
+            "lon": -97.6324103,
+            "name": "Forman Substation",
+            "operator": "Otter Tail Power Company",
+            "state": "ND",
+            "voltage": "230000;115000;41600"
+          },
+          "name": "Forman",
+          "norm": "FORMAN",
+          "status": "matched"
+        },
+        {
+          "name": "Hankinson",
+          "norm": "HANKINSON",
+          "status": "ambiguous"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "OTTER TAIL"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Bison - Alexandria",
+    "name": "Forman - Hankinson 230kV Transmission Line",
+    "native_id": "50907",
+    "other_owners": [],
+    "owner": "OTP",
+    "part": "Forman - Hankinson 230kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50908",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 230kV substation bus and equipment to achieve 2000A rating for the outgoing Forman 230kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "1100000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Hankinson Substation",
+        "Geographic Location by TO Member System": "OTP",
+        "LRTP Project ID": "19",
+        "MTEP Facility ID": "50908",
+        "MTEP Project ID": "50552",
+        "Plan Cycle": "MTEP24",
+        "Project": "Bison - Alexandria",
+        "State": "ND"
+      },
+      "row": 14,
+      "sheet": "19",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "name": "Hankinson",
+          "norm": "HANKINSON",
+          "status": "ambiguous"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "OTTER TAIL"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Bison - Alexandria",
+    "name": "Hankinson Substation",
+    "native_id": "50908",
+    "other_owners": [],
+    "owner": "OTP",
+    "part": "Hankinson Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50910",
+    "center": null,
+    "counties": [],
+    "description": "Add one ring bus position to the existing four-position 345kV ring bus: 1) 345kV line to Cuyuna. Add 1-345kV 50MVAr line reactor with dedicated circuit breaker (for outgoing line to Cuyuna). Replace existing 230kV substation bus and equipment to achieve 3000A rating for the outgoing Sheyenne 230kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "12500000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Maple River Substation",
+        "Geographic Location by TO Member System": "OTP",
+        "LRTP Project ID": "20",
+        "MTEP Facility ID": "50910",
+        "MTEP Project ID": "50553",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maple River - Cuyuna",
+        "State": "ND"
+      },
+      "row": 4,
+      "sheet": "20",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Maple River",
+          "norm": "MAPLE RIVER",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "OTTER TAIL"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maple River - Cuyuna",
+    "name": "Maple River Substation",
+    "native_id": "50910",
+    "other_owners": [],
+    "owner": "OTP",
+    "part": "Maple River Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50911",
+    "center": null,
+    "counties": [],
+    "description": "Construct new 345kV single-circuit transmission line on double-circuit-capable structures. Note: The structure design should allow for a Surge Impedance Loading (SIL) on the 345kV circuit of 550 MW or greater.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "29700000",
+        "Exclusion": "State ROFR",
+        "Facility": "Maple River - ND/MN State Line 345kV Transmission Line",
+        "Geographic Location by TO Member System": "GRE, MP, OTP",
+        "LRTP Project ID": "20",
+        "MTEP Facility ID": "50911",
+        "MTEP Project ID": "50553",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maple River - Cuyuna",
+        "State": "ND"
+      },
+      "row": 5,
+      "sheet": "20",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ND (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Maple River",
+          "norm": "MAPLE RIVER",
+          "status": "operator_conflict"
+        },
+        {
+          "name": "ND/MN State",
+          "norm": "ND/MN STATE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "GREAT RIVER",
+        "MINNESOTA POWER",
+        "OTTER TAIL"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maple River - Cuyuna",
+    "name": "Maple River - ND/MN State Line 345kV Transmission Line",
+    "native_id": "50911",
+    "other_owners": [
+      "MP",
+      "OTP"
+    ],
+    "owner": "GRE",
+    "part": "Maple River - ND/MN State Line 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "38"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50922",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/641025665 (Big Stone South Substation), corroborated by operator, voltage.",
+      "lat": 45.281508,
+      "lon": -96.506939
+    },
+    "counties": [],
+    "description": "Add a single 765kV breaker between two bus positions. The two positions are: 1) New 765kV transmission line to Brookings County, 2) 765/345kV 2250MVA transformer #1. Note: All of these positions have a minimum 4000A rating. Add 1-765/345kV 2250MVA transformer. Add 1-765kV 300MVAr line reactor with dedicated circuit breaker (for outgoing line to Brookings County). Add 1-345kV double-breaker, double-bus line position: 1) 765/345kV 2250MVA transformer #1. Note: This position has a minimum 4000A rat",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "165700000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Big Stone South Substation",
+        "Geographic Location by TO Member System": "OTP",
+        "LRTP Project ID": "22",
+        "MTEP Facility ID": "50922",
+        "MTEP Project ID": "50555",
+        "Plan Cycle": "MTEP24",
+        "Project": "Big Stone South - Brookings County - Lakefield Junction",
+        "State": "SD"
+      },
+      "row": 4,
+      "sheet": "22",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, SD (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/641025665",
+            "lat": 45.2815082,
+            "lon": -96.5069388,
+            "name": "Big Stone South Substation",
+            "operator": "Otter Tail Power Company",
+            "state": "SD",
+            "voltage": "345000;230000"
+          },
+          "name": "Big Stone South",
+          "norm": "BIG STONE SOUTH",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "OTTER TAIL"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345,
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Big Stone South - Brookings County - Lakefield Junction",
+    "name": "Big Stone South Substation",
+    "native_id": "50922",
+    "other_owners": [],
+    "owner": "OTP",
+    "part": "Big Stone South Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "46"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50923",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/641025665 (Big Stone South Substation), OSM way/169997774 (Brookings County Substation), corroborated by operator.",
+      "lat": 44.835473,
+      "lon": -96.518125
+    },
+    "counties": [],
+    "description": "Construct new 765kV single-circuit transmission line. Minimum Surge Impedance Loading (SIL) should be 2400 MW.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "310100000",
+        "Exclusion": "State ROFR",
+        "Facility": "Big Stone South - Brookings County 765kV Transmission Line",
+        "Geographic Location by TO Member System": "OTP, XEL",
+        "LRTP Project ID": "22",
+        "MTEP Facility ID": "50923",
+        "MTEP Project ID": "50555",
+        "Plan Cycle": "MTEP24",
+        "Project": "Big Stone South - Brookings County - Lakefield Junction",
+        "State": "SD"
+      },
+      "row": 5,
+      "sheet": "22",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, SD (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/641025665",
+            "lat": 45.2815082,
+            "lon": -96.5069388,
+            "name": "Big Stone South Substation",
+            "operator": "Otter Tail Power Company",
+            "state": "SD",
+            "voltage": "345000;230000"
+          },
+          "name": "Big Stone South",
+          "norm": "BIG STONE SOUTH",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/169997774",
+            "lat": 44.389437,
+            "lon": -96.5293104,
+            "name": "Brookings County Substation",
+            "operator": "Xcel Energy",
+            "state": "SD",
+            "voltage": "345000;115000"
+          },
+          "name": "Brookings County",
+          "norm": "BROOKINGS COUNTY",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "OTTER TAIL",
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Big Stone South - Brookings County - Lakefield Junction",
+    "name": "Big Stone South - Brookings County 765kV Transmission Line",
+    "native_id": "50923",
+    "other_owners": [
+      "XEL"
+    ],
+    "owner": "OTP",
+    "part": "Big Stone South - Brookings County 765kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "46"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50924",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/169997774 (Brookings County Substation), corroborated by operator, voltage.",
+      "lat": 44.389437,
+      "lon": -96.52931
+    },
+    "counties": [],
+    "description": "Add 3-765kV double-breaker, double-bus line positions: 1) New 765kV transmission line to Big Stone South, 2) New 765kV transmission line to Lakefield Junction, 3) 765/345kV 2250MVA transformer. Note: All of these positions have a minimum 4000A rating. Add 1-765/345kV 2250MVA transformer. Add 2-765kV 300MVAr line reactor with dedicated circuit breaker (for each outgoing line to Big Stone South and Lakefield Junction). Add 1-345kV double-breaker, double-bus line position: 1) 765/345kV 2250MVA tran",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "196500000",
+        "Exclusion": "State ROFR, Upgrade",
+        "Facility": "Brookings County Substation",
+        "Geographic Location by TO Member System": "XEL",
+        "LRTP Project ID": "22",
+        "MTEP Facility ID": "50924",
+        "MTEP Project ID": "50555",
+        "Plan Cycle": "MTEP24",
+        "Project": "Big Stone South - Brookings County - Lakefield Junction",
+        "State": "SD"
+      },
+      "row": 6,
+      "sheet": "22",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, SD (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/169997774",
+            "lat": 44.389437,
+            "lon": -96.5293104,
+            "name": "Brookings County Substation",
+            "operator": "Xcel Energy",
+            "state": "SD",
+            "voltage": "345000;115000"
+          },
+          "name": "Brookings County",
+          "norm": "BROOKINGS COUNTY",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        115,
+        345,
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Big Stone South - Brookings County - Lakefield Junction",
+    "name": "Brookings County Substation",
+    "native_id": "50924",
+    "other_owners": [],
+    "owner": "XEL",
+    "part": "Brookings County Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "46"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50925",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/169997774 (Brookings County Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 44.389437,
+      "lon": -96.52931
+    },
+    "counties": [],
+    "description": "Construct new 765kV single-circuit transmission line. Minimum Surge Impedance Loading (SIL) should be 2400 MW.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "51200000",
+        "Exclusion": "State ROFR",
+        "Facility": "Brookings County - SD/MN State Line 765kV Transmission Line",
+        "Geographic Location by TO Member System": "ITCM, XEL",
+        "LRTP Project ID": "22",
+        "MTEP Facility ID": "50925",
+        "MTEP Project ID": "50555",
+        "Plan Cycle": "MTEP24",
+        "Project": "Big Stone South - Brookings County - Lakefield Junction",
+        "State": "SD"
+      },
+      "row": 7,
+      "sheet": "22",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, SD (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/169997774",
+            "lat": 44.389437,
+            "lon": -96.5293104,
+            "name": "Brookings County Substation",
+            "operator": "Xcel Energy",
+            "state": "SD",
+            "voltage": "345000;115000"
+          },
+          "name": "Brookings County",
+          "norm": "BROOKINGS COUNTY",
+          "status": "matched"
+        },
+        {
+          "name": "SD/MN State",
+          "norm": "SD/MN STATE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "ITC",
+        "XCEL",
+        "NORTHERN STATES"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Big Stone South - Brookings County - Lakefield Junction",
+    "name": "Brookings County - SD/MN State Line 765kV Transmission Line",
+    "native_id": "50925",
+    "other_owners": [
+      "XEL"
+    ],
+    "owner": "ITCM",
+    "part": "Brookings County - SD/MN State Line 765kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "46"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50929",
+    "center": null,
+    "counties": [],
+    "description": "Construct new 765kV single-circuit transmission line. Minimum Surge Impedance Loading (SIL) should be 2400 MW.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "874100000",
+        "Exclusion": "Competitive",
+        "Facility": "MN/IA State Line - East Adair 765kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50929",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 5,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "MN/IA State",
+          "norm": "MN/IA STATE",
+          "status": "no_facility"
+        },
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        765
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "MN/IA State Line - East Adair 765kV Transmission Line",
+    "native_id": "50929",
+    "other_owners": [],
+    "owner": null,
+    "part": "MN/IA State Line - East Adair 765kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50930",
+    "center": null,
+    "counties": [],
+    "description": "Construct new four-position 765kV double-breaker, double-bus and seven-position 345kV breaker-and-a-half bus substation. 765kV bus positions: 1) New 765kV transmission line to MN/IA State Border (Lakefield Junction), 2) New 765kV transmission line to Marshalltown (Twinkle), 3) 765/345kV 2250MVA transformer #1, 4) 765/345kV 2250MVA transformer #2. Note: All of these positions have a minimum 4000A rating. 345kV breaker-and-a-half bus positions: 1) New 345kV transmission line to Arbor Hill, 2) Cut-",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "241500000",
+        "Exclusion": "Competitive",
+        "Facility": "East Adair Substation",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50930",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 6,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345,
+        765
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "East Adair Substation",
+    "native_id": "50930",
+    "other_owners": [],
+    "owner": null,
+    "part": "East Adair Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50931",
+    "center": null,
+    "counties": [],
+    "description": "Modify the existing Booneville - Southern Hills 345kV single-circuit line by constructing transmission structures to cut-in the Booneville - Southern 345kV line into the East Adair substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "East Adair Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50931",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 7,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "East Adair Substation",
+    "native_id": "50931",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "East Adair Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50932",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing single-circuit 345kV structures and conductors with single-circuit 345kV structures that are capable of 1792 MVA from Orient to within approximately 0.2 miles of the intersection of York Avenue and the existing Orient - Madison County 345kV line. The structures being replaced are part of the existing Orient - Madison County 345kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "22200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Orient - Deadend East of York Avenue 345kV Transmission Line",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50932",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 8,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Orient",
+          "norm": "ORIENT",
+          "status": "no_facility"
+        },
+        {
+          "name": "Deadend East",
+          "norm": "DEADEND EAST",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "Orient - Deadend East of York Avenue 345kV Transmission Line",
+    "native_id": "50932",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Orient - Deadend East of York Avenue 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50933",
+    "center": null,
+    "counties": [],
+    "description": "Construct new 345kV double-circuit transmission line from within approximately 0.2 miles of the intersection of York Avenue and the existing Orient - Madison County 345kV line. One circuit is to cut-in the existing Orient - Madison County 345kV line into the East Adair substation. The other circuit is part of the Orient - East Adair 345kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "36900000",
+        "Exclusion": "Competitive",
+        "Facility": "Deadend East of York Avenue - East Adair 345kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50933",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 9,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Deadend East",
+          "norm": "DEADEND EAST",
+          "status": "no_facility"
+        },
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "Deadend East of York Avenue - East Adair 345kV Transmission Line",
+    "native_id": "50933",
+    "other_owners": [],
+    "owner": null,
+    "part": "Deadend East of York Avenue - East Adair 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50934",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing single-circuit 345kV structures and conductors with single-circuit 345kV structures that are capable of 1792 MVA. The structures being replaced are part of the existing Southern Hills - Booneville 345kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "28300000",
+        "Exclusion": "Upgrade",
+        "Facility": "Southern Hills - East Adair 345kV Transmission Line",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50934",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 10,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Southern Hills",
+          "norm": "SOUTHERN HILLS",
+          "status": "no_facility"
+        },
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "Southern Hills - East Adair 345kV Transmission Line",
+    "native_id": "50934",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Southern Hills - East Adair 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50935",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1008913729 (Arbor Hill Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 41.466797,
+      "lon": -94.262586
+    },
+    "counties": [],
+    "description": "Construct new 345kV single-circuit transmission line on double-circuit-capable structures.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "73800000",
+        "Exclusion": "Competitive",
+        "Facility": "East Adair - Arbor Hill 345kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50935",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 11,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1008913729",
+            "lat": 41.4667973,
+            "lon": -94.2625858,
+            "name": "Arbor Hill Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000"
+          },
+          "name": "Arbor Hill",
+          "norm": "ARBOR HILL",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "East Adair - Arbor Hill 345kV Transmission Line",
+    "native_id": "50935",
+    "other_owners": [],
+    "owner": null,
+    "part": "East Adair - Arbor Hill 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50936",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1008913729 (Arbor Hill Substation), corroborated by operator, voltage.",
+      "lat": 41.466797,
+      "lon": -94.262586
+    },
+    "counties": [],
+    "description": "Add 1-345kV line position (ring bus).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Arbor Hill Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "23",
+        "MTEP Facility ID": "50936",
+        "MTEP Project ID": "50556",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lakefield Junction - East Adair",
+        "State": "IA"
+      },
+      "row": 12,
+      "sheet": "23",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1008913729",
+            "lat": 41.4667973,
+            "lon": -94.2625858,
+            "name": "Arbor Hill Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000"
+          },
+          "name": "Arbor Hill",
+          "norm": "ARBOR HILL",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Lakefield Junction - East Adair",
+    "name": "Arbor Hill Substation",
+    "native_id": "50936",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Arbor Hill Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51139",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/584482034 (Maywood Substation), corroborated by operator, voltage.",
+      "lat": 39.836685,
+      "lon": -91.59514
+    },
+    "counties": [],
+    "description": "Add one 345kV line position to the existing breaker-and-a-half bus arrangement.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "3300000",
+        "Exclusion": "Upgrade",
+        "Facility": "Maywood Substation",
+        "Geographic Location by TO Member System": "ATXI",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51139",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 4,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/584482034",
+            "lat": 39.8366847,
+            "lon": -91.5951398,
+            "name": "Maywood Substation",
+            "operator": "Ameren",
+            "state": "MO",
+            "voltage": "345000"
+          },
+          "name": "Maywood",
+          "norm": "MAYWOOD",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Maywood Substation",
+    "native_id": "51139",
+    "other_owners": [],
+    "owner": "ATXI",
+    "part": "Maywood Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51140",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/584482034 (Maywood Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 39.836685,
+      "lon": -91.59514
+    },
+    "counties": [],
+    "description": "Construct new 345kV single-circuit transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "9700000",
+        "Exclusion": "Competitive → Upgrade (Facility Upgrades ≥ 80% of Estimated Project Cost)",
+        "Facility": "Maywood - Palmyra 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51140",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 5,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/584482034",
+            "lat": 39.8366847,
+            "lon": -91.5951398,
+            "name": "Maywood Substation",
+            "operator": "Ameren",
+            "state": "MO",
+            "voltage": "345000"
+          },
+          "name": "Maywood",
+          "norm": "MAYWOOD",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Palmyra",
+          "norm": "PALMYRA",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Maywood - Palmyra 345kV Transmission Line",
+    "native_id": "51140",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Maywood - Palmyra 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51141",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing single-circuit 161kV structures with double-circuit structures that have one circuit operating at 161kV and one circuit operating at 345kV.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "85000000",
+        "Exclusion": "Upgrade",
+        "Facility": "Palmyra - Spalding 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51141",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 6,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Palmyra",
+          "norm": "PALMYRA",
+          "status": "operator_conflict"
+        },
+        {
+          "name": "Spalding",
+          "norm": "SPALDING",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Palmyra - Spalding 345kV Transmission Line",
+    "native_id": "51141",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Palmyra - Spalding 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51142",
+    "center": null,
+    "counties": [],
+    "description": "Construct new 345kV single-circuit transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "9700000",
+        "Exclusion": "Competitive → Upgrade (Facility Upgrades ≥ 80% of Estimated Project Cost)",
+        "Facility": "Spalding - Finn Tap 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO, MJMEUC",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51142",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 7,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Spalding",
+          "norm": "SPALDING",
+          "status": "no_facility"
+        },
+        {
+          "name": null,
+          "status": "not_a_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Spalding - Finn Tap 345kV Transmission Line",
+    "native_id": "51142",
+    "other_owners": [
+      "MJMEUC"
+    ],
+    "owner": "AmerenMO",
+    "part": "Spalding - Finn Tap 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51143",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176989433 (Belleau Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 38.826423,
+      "lon": -90.680721
+    },
+    "counties": [],
+    "description": "Replace existing single-circuit 161kV structures with double-circuit structures that have one circuit operating at 161kV and one circuit operating at 345kV.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "361300000",
+        "Exclusion": "Upgrade",
+        "Facility": "Finn Tap - Belleau 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO, MJMEUC",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51143",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 8,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": null,
+          "status": "not_a_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176989433",
+            "lat": 38.826423,
+            "lon": -90.6807211,
+            "name": "Belleau Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "345000;138000"
+          },
+          "name": "Belleau",
+          "norm": "BELLEAU",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        161,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Finn Tap - Belleau 345kV Transmission Line",
+    "native_id": "51143",
+    "other_owners": [
+      "MJMEUC"
+    ],
+    "owner": "AmerenMO",
+    "part": "Finn Tap - Belleau 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51144",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Hannibal West Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51144",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 9,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Hannibal West",
+          "norm": "HANNIBAL WEST",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Hannibal West Substation",
+    "native_id": "51144",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Hannibal West Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51145",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Spalding Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51145",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 10,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Spalding",
+          "norm": "SPALDING",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Spalding Substation",
+    "native_id": "51145",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Spalding Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51146",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Peno Creek EC Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51146",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 11,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Peno Creek EC",
+          "norm": "PENO CREEK EC",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Peno Creek EC Substation",
+    "native_id": "51146",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Peno Creek EC Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51147",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Pike Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51147",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 12,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Pike",
+          "norm": "PIKE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Pike Substation",
+    "native_id": "51147",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Pike Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51148",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Cyrene Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51148",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 13,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Cyrene",
+          "norm": "CYRENE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Cyrene Substation",
+    "native_id": "51148",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Cyrene Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51149",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "New Hope Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51149",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 14,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Hope",
+          "norm": "HOPE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "New Hope Substation",
+    "native_id": "51149",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "New Hope Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51150",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 161kV cut-ins with cut-ins to the co-located 161kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4200000",
+        "Exclusion": "Upgrade",
+        "Facility": "Troy Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51150",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 15,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Troy",
+          "norm": "TROY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        161
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Troy Substation",
+    "native_id": "51150",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Troy Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51151",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176989433 (Belleau Substation), corroborated by operator, voltage.",
+      "lat": 38.826423,
+      "lon": -90.680721
+    },
+    "counties": [],
+    "description": "Modify the existing 345kV three-position straight bus by adding three positions and creating 6-345kV ring bus positions: 1) Existing 345/138kV transformer #1, 2) Existing 345kV Root Beer transmission line, 3) Existing 345kV MRPD transmission line #1, 4) New 345kV Maywood transmission line, 5) New 345kV MRPD transmission line #2, 6) New 345/138kV transformer #2. Add a 50MVAr switchable shunt reactor connected to the Maywood line termination. Add a 700MVA 345/138kV transformer and add a 138kV posi",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "23800000",
+        "Exclusion": "Upgrade",
+        "Facility": "Belleau Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51151",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 16,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176989433",
+            "lat": 38.826423,
+            "lon": -90.6807211,
+            "name": "Belleau Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "345000;138000"
+          },
+          "name": "Belleau",
+          "norm": "BELLEAU",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Belleau Substation",
+    "native_id": "51151",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Belleau Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51152",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176989433 (Belleau Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 38.826423,
+      "lon": -90.680721
+    },
+    "counties": [],
+    "description": "Replace existing single-circuit 138kV structures with double-circuit structures that have one circuit operating at 138kV and one circuit operating at 345kV.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "79900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Belleau - MRPD 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51152",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 17,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176989433",
+            "lat": 38.826423,
+            "lon": -90.6807211,
+            "name": "Belleau Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "345000;138000"
+          },
+          "name": "Belleau",
+          "norm": "BELLEAU",
+          "status": "matched"
+        },
+        {
+          "name": "MRPD",
+          "norm": "MRPD",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Belleau - MRPD 345kV Transmission Line",
+    "native_id": "51152",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Belleau - MRPD 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51153",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 138kV cut-ins with cut-ins to the co-located 138kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4100000",
+        "Exclusion": "Upgrade",
+        "Facility": "Fort Zumwalt Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51153",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 18,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Fort Zumwalt",
+          "norm": "FORT ZUMWALT",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Fort Zumwalt Substation",
+    "native_id": "51153",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Fort Zumwalt Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51154",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 138kV cut-ins with cut-ins to the co-located 138kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4100000",
+        "Exclusion": "Upgrade",
+        "Facility": "McClay Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51154",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 19,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "McClay",
+          "norm": "MCCLAY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "McClay Substation",
+    "native_id": "51154",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "McClay Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51155",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/146280023 (Huster Substation), corroborated by operator, voltage.",
+      "lat": 38.822222,
+      "lon": -90.529539
+    },
+    "counties": [],
+    "description": "Replace existing 138kV cut-ins with cut-ins to the co-located 138kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4100000",
+        "Exclusion": "Upgrade",
+        "Facility": "Huster Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51155",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 20,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/146280023",
+            "lat": 38.8222223,
+            "lon": -90.5295392,
+            "name": "Huster Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "138000"
+          },
+          "name": "Huster",
+          "norm": "HUSTER",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Huster Substation",
+    "native_id": "51155",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Huster Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51156",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 138kV cut-ins with cut-ins to the co-located 138kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "1800000",
+        "Exclusion": "Upgrade",
+        "Facility": "Fountain Lakes Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51156",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 21,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Fountain Lakes",
+          "norm": "FOUNTAIN LAKES",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Fountain Lakes Substation",
+    "native_id": "51156",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Fountain Lakes Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51157",
+    "center": null,
+    "counties": [],
+    "description": "Construct new five-position 345kV breaker and a half substation: 1) New 345kV transmission line to Belleau, 2) New 345kV transmission line to Sioux, 3) New 345kV transmission line to Bugle, 4) Cut-in to existing Belleau - Sioux 345kV transmission line #1, 5) Cut-in to existing Belleau - Sioux 345kV transmission line #2. The location of the substation is near the existing Herleman - Bugle and Belleau - Sioux 138/345kV crossing.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "20800000",
+        "Exclusion": "Competitive → Upgrade (Facility Upgrades ≥ 80% of Estimated Project Cost)",
+        "Facility": "MRPD Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51157",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 22,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "MRPD",
+          "norm": "MRPD",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "MRPD Substation",
+    "native_id": "51157",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "MRPD Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51158",
+    "center": null,
+    "counties": [],
+    "description": "Modify the existing Belleau - Sioux 345kV single-circuit line by constructing structures to cut-in the existing Belleau - Sioux 345kV line into the MRPD substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "6800000",
+        "Exclusion": "Upgrade",
+        "Facility": "MRPD Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51158",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 23,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "MRPD",
+          "norm": "MRPD",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "MRPD Substation",
+    "native_id": "51158",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "MRPD Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51159",
+    "center": null,
+    "counties": [],
+    "description": "Decommission two de-energized double-circuit 138kV lines and construct a new line of double-circuit 345kV structures (one circuit to Sioux and the other circuit to Bugle) from MRPD substation to the 3-way junction approximately three miles southeast of MRPD substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "22100000",
+        "Exclusion": "Competitive → Upgrade (Facility Upgrades ≥ 80% of Estimated Project Cost)",
+        "Facility": "MRPD - 3-Way Junction 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51159",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 24,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "MRPD",
+          "norm": "MRPD",
+          "status": "no_facility"
+        },
+        {
+          "name": "3-Way Junction",
+          "norm": "3-WAY JUNCTION",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "MRPD - 3-Way Junction 345kV Transmission Line",
+    "native_id": "51159",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "MRPD - 3-Way Junction 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51160",
+    "center": null,
+    "counties": [],
+    "description": "Increase the nominal operating voltage of existing (currently operated at 138kV) conductors on existing double-circuit structures to 345kV. Replace existing 138kV line with single-circuit 138kV structures from the 3-way junction approximately three miles southeast of MRPD substation to Sioux substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "19800000",
+        "Exclusion": "Upgrade",
+        "Facility": "3-Way Junction - Sioux 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51160",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 25,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "3-Way Junction",
+          "norm": "3-WAY JUNCTION",
+          "status": "no_facility"
+        },
+        {
+          "name": "Sioux",
+          "norm": "SIOUX",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "3-Way Junction - Sioux 345kV Transmission Line",
+    "native_id": "51160",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "3-Way Junction - Sioux 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51161",
+    "center": null,
+    "counties": [],
+    "description": "Add 1-345kV bus position (ring bus). Relocate two existing 345kV line connections at Sioux to accommodate the new Sioux-MRPD line. Remove one 138kV line termination.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "8300000",
+        "Exclusion": "Upgrade",
+        "Facility": "Sioux Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51161",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 26,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sioux",
+          "norm": "SIOUX",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Sioux Substation",
+    "native_id": "51161",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Sioux Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51162",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1434039470 (Bugle Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 38.680093,
+      "lon": -90.311285
+    },
+    "counties": [],
+    "description": "Decommission existing 138kV single-circuit structures from the 3-way junction approximately three miles southeast of MRPD substation to Bugle substation and construct a new line of single-circuit 345kV structures.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "48700000",
+        "Exclusion": "Competitive → Upgrade (Facility Upgrades ≥ 80% of Estimated Project Cost)",
+        "Facility": "3-Way Junction - Bugle 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51162",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 27,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "3-Way Junction",
+          "norm": "3-WAY JUNCTION",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1434039470",
+            "lat": 38.6800931,
+            "lon": -90.3112852,
+            "name": "Bugle Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "138000"
+          },
+          "name": "Bugle",
+          "norm": "BUGLE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "3-Way Junction - Bugle 345kV Transmission Line",
+    "native_id": "51162",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "3-Way Junction - Bugle 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51163",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1434039470 (Bugle Substation), corroborated by operator, voltage.",
+      "lat": 38.680093,
+      "lon": -90.311285
+    },
+    "counties": [],
+    "description": "Add 5-345kV ring bus positions: 1) New 345kV transmission line to MRPD, 2) New 345kV Roxford line, 3) New 345kV Gateway line, 4) New 345/138kV 700MVA transformer #1, 5) New 345/138kV 700MVA transformer #2. Remove the 138kV Sioux line termination. Add 2-345/138kV 700MVA transformer. Add 2-138kV bus positions: 1) 345/138kV 700MVA transformer #1, 2) 345/138kV 700MVA transformer #2.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "38800000",
+        "Exclusion": "Upgrade",
+        "Facility": "Bugle Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51163",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 28,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1434039470",
+            "lat": 38.6800931,
+            "lon": -90.3112852,
+            "name": "Bugle Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "138000"
+          },
+          "name": "Bugle",
+          "norm": "BUGLE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Bugle Substation",
+    "native_id": "51163",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Bugle Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51164",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1434039470 (Bugle Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 38.680093,
+      "lon": -90.311285
+    },
+    "counties": [],
+    "description": "Replace two existing 138kV single-circuit lines by replacing both lines of single-circuit 138kV structures with two lines of double-circuit structures that each have one circuit operating at 138kV and one circuit operating at 345kV.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "79700000",
+        "Exclusion": "Upgrade",
+        "Facility": "Bugle - IL/MO State Line 345kV Transmission Line",
+        "Geographic Location by TO Member System": "AmerenIL, AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51164",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 29,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1434039470",
+            "lat": 38.6800931,
+            "lon": -90.3112852,
+            "name": "Bugle Substation",
+            "operator": "Ameren Missouri",
+            "state": "MO",
+            "voltage": "138000"
+          },
+          "name": "Bugle",
+          "norm": "BUGLE",
+          "status": "matched"
+        },
+        {
+          "name": "IL/MO State",
+          "norm": "IL/MO STATE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "AMEREN",
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        138,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Bugle - IL/MO State Line 345kV Transmission Line",
+    "native_id": "51164",
+    "other_owners": [
+      "AmerenMO"
+    ],
+    "owner": "AmerenIL",
+    "part": "Bugle - IL/MO State Line 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51166",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 138kV cut-ins with cut-ins to the co-located 138kV line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "4100000",
+        "Exclusion": "Upgrade",
+        "Facility": "Euclid Substation",
+        "Geographic Location by TO Member System": "AmerenMO",
+        "LRTP Project ID": "37",
+        "MTEP Facility ID": "51166",
+        "MTEP Project ID": "50570",
+        "Plan Cycle": "MTEP24",
+        "Project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+        "State": "MO"
+      },
+      "row": 31,
+      "sheet": "37",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, MO (ODbL)",
+      "endpoints": [
+        {
+          "name": "Euclid",
+          "norm": "EUCLID",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Maywood - Belleau - MRPD - Sioux - Bugle",
+    "name": "Euclid Substation",
+    "native_id": "51166",
+    "other_owners": [],
+    "owner": "AmerenMO",
+    "part": "Euclid Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "29"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51167",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/156270807 (Marshalltown Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 42.045137,
+      "lon": -92.862026
+    },
+    "counties": [],
+    "description": "Construct new 765kV single-circuit transmission line. Minimum Surge Impedance Loading (SIL) should be 2400 MW.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "566200000",
+        "Exclusion": "Competitive",
+        "Facility": "East Adair - Marshalltown (Twinkle) 765kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51167",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 4,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "East Adair",
+          "norm": "EAST ADAIR",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/156270807",
+            "lat": 42.045137,
+            "lon": -92.8620255,
+            "name": "Marshalltown Substation",
+            "operator": "ITC",
+            "state": "IA",
+            "voltage": "161000;115000;69000"
+          },
+          "name": "Marshalltown",
+          "norm": "MARSHALLTOWN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": [
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "East Adair - Marshalltown (Twinkle) 765kV Transmission Line",
+    "native_id": "51167",
+    "other_owners": [],
+    "owner": null,
+    "part": "East Adair - Marshalltown (Twinkle) 765kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51168",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/156270807 (Marshalltown Substation), corroborated by operator.",
+      "lat": 42.045137,
+      "lon": -92.862026
+    },
+    "counties": [],
+    "description": "Add 5-765kV double-breaker, double-bus line positions: 1) New 765kV transmission line to East Adair, 2) New 765kV transmission line to Sub T, 3) 765/345kV 2250MVA transformer #1, 4) 765/345kV 2250MVA transformer #2, 5) 300MVAr Reactor position with future 765kV line position. Note: All of these positions have a minimum 4000A rating. Add 2-765/345kV 2250MVA transformers. Add 3-765kV 300MVAr line reactors with dedicated circuit breakers (for each outgoing line to East Adair and Sub T). Add 4-345kV",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "286900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Marshalltown (Twinkle) Substation",
+        "Geographic Location by TO Member System": "ITCM",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51168",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 5,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/156270807",
+            "lat": 42.045137,
+            "lon": -92.8620255,
+            "name": "Marshalltown Substation",
+            "operator": "ITC",
+            "state": "IA",
+            "voltage": "161000;115000;69000"
+          },
+          "name": "Marshalltown",
+          "norm": "MARSHALLTOWN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "ITC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345,
+        456,
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Marshalltown (Twinkle) Substation",
+    "native_id": "51168",
+    "other_owners": [],
+    "owner": "ITCM",
+    "part": "Marshalltown (Twinkle) Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51169",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/156270807 (Marshalltown Substation), corroborated by unique_in_state.",
+      "lat": 42.045137,
+      "lon": -92.862026
+    },
+    "counties": [],
+    "description": "Construct new 765kV single-circuit transmission line. Minimum Surge Impedance Loading (SIL) should be 2400 MW.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "439400000",
+        "Exclusion": "Competitive",
+        "Facility": "Marshalltown (Twinkle) - Sub T 765kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51169",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 6,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/156270807",
+            "lat": 42.045137,
+            "lon": -92.8620255,
+            "name": "Marshalltown Substation",
+            "operator": "ITC",
+            "state": "IA",
+            "voltage": "161000;115000;69000"
+          },
+          "name": "Marshalltown",
+          "norm": "MARSHALLTOWN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": [
+        765
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Marshalltown (Twinkle) - Sub T 765kV Transmission Line",
+    "native_id": "51169",
+    "other_owners": [],
+    "owner": null,
+    "part": "Marshalltown (Twinkle) - Sub T 765kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51170",
+    "center": null,
+    "counties": [],
+    "description": "Add 3-765kV double-breaker, double-bus line position: 1) New 765kV transmission line to Marshalltown (Twinkle), 2) New 765kV transmission line to Woodford County, 3) 765/345kV 2250MVA transformer. Note: All of these positions have a minimum 4000A rating. Add 1-765/345kV 2250MVA transformer. Add 2-765kV 300MVAr line reactors with dedicated circuit breakers (for each outgoing line to Marshalltown (Twinkle) and Woodford County). Replace existing three-position 345kV ring bus with five-position 345k",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "181700000",
+        "Exclusion": "Upgrade",
+        "Facility": "Sub T Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51170",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 7,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": "no_named_facility",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345,
+        765
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Sub T Substation",
+    "native_id": "51170",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Sub T Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51171",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing Sub 93 Louisa - Oak Grove 345kV single-circuit transmission line with 345kV single-circuit structures and conductors to achieve a 3000A rating.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "5900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Sub 93 Louisa - IA/IL State Line 345kV Transmission Line",
+        "Geographic Location by TO Member System": "ITCM, MEC",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51171",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 8,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "IA/IL State",
+          "norm": "IA/IL STATE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "ITC",
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Sub 93 Louisa - IA/IL State Line 345kV Transmission Line",
+    "native_id": "51171",
+    "other_owners": [
+      "MEC"
+    ],
+    "owner": "ITCM",
+    "part": "Sub 93 Louisa - IA/IL State Line 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51172",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing 345kV substation bus and equipment to achieve 3000A rating for the outgoing Oak Grove 345kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "1300000",
+        "Exclusion": "Upgrade",
+        "Facility": "Sub 93 Louisa Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51172",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 9,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": "no_named_facility",
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Sub 93 Louisa Substation",
+    "native_id": "51172",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Sub 93 Louisa Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51173",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/14965555 (Hills Substation), corroborated by operator, voltage.",
+      "lat": 41.570388,
+      "lon": -91.535512
+    },
+    "counties": [],
+    "description": "Modify the existing Hills - Tiffin 345kV single-circuit line by constructing transmission structures to cut-in the existing Hills - Tiffin 345kV line into the Hills substation to an adjacent position from the existing position.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Hills Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51173",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 11,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "relation/14965555",
+            "lat": 41.5703883,
+            "lon": -91.5355122,
+            "name": "Hills Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000;161000;69000"
+          },
+          "name": "Hills",
+          "norm": "HILLS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Hills Substation",
+    "native_id": "51173",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Hills Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51174",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/14965555 (Hills Substation), corroborated by operator, voltage.",
+      "lat": 41.570388,
+      "lon": -91.535512
+    },
+    "counties": [],
+    "description": "Modify the existing Hills - Diamond Trail 345kV single-circuit line by constructing transmission structures to cut-in the existing Hills - Diamond Trail 345kV line into the Hills substation to an adjacent position from the existing position.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Hills Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51174",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 12,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "relation/14965555",
+            "lat": 41.5703883,
+            "lon": -91.5355122,
+            "name": "Hills Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000;161000;69000"
+          },
+          "name": "Hills",
+          "norm": "HILLS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Hills Substation",
+    "native_id": "51174",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Hills Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51175",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing single-circuit 345kV transmission line with double-circuit structures that have one circuit operating at 345kV and one circuit operating at 345kV.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "90000000",
+        "Exclusion": "Upgrade",
+        "Facility": "Hills - Sub T 345kV Transmission Line",
+        "Geographic Location by TO Member System": "Ameren",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51175",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 13,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Hills",
+          "norm": "HILLS",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "AMEREN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Hills - Sub T 345kV Transmission Line",
+    "native_id": "51175",
+    "other_owners": [],
+    "owner": "Ameren",
+    "part": "Hills - Sub T 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51176",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/170148552 (Lehigh Substation), corroborated by operator, voltage.",
+      "lat": 42.371343,
+      "lon": -94.116461
+    },
+    "counties": [],
+    "description": "Add 1-345kV bus position (ring bus) and replace existing 345kV substation equipment to achieve 3000A rating for the outgoing Twinkle 345kV transmission line. Re-terminate the Webster 345kV transmission line into a new position.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "10900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Lehigh Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51176",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 4,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/170148552",
+            "lat": 42.3713427,
+            "lon": -94.1164605,
+            "name": "Lehigh Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000"
+          },
+          "name": "Lehigh",
+          "norm": "LEHIGH",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Lehigh Substation",
+    "native_id": "51176",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Lehigh Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51177",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/170148552 (Lehigh Substation), OSM way/156270807 (Marshalltown Substation), corroborated by unique_in_state, voltage.",
+      "lat": 42.20824,
+      "lon": -93.489243
+    },
+    "counties": [],
+    "description": "Construct new 345kV single-circuit transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "284200000",
+        "Exclusion": "Competitive",
+        "Facility": "Lehigh - Marshalltown (Twinkle) 345kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51177",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 5,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/170148552",
+            "lat": 42.3713427,
+            "lon": -94.1164605,
+            "name": "Lehigh Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000"
+          },
+          "name": "Lehigh",
+          "norm": "LEHIGH",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/156270807",
+            "lat": 42.045137,
+            "lon": -92.8620255,
+            "name": "Marshalltown Substation",
+            "operator": "ITC",
+            "state": "IA",
+            "voltage": "161000;115000;69000"
+          },
+          "name": "Marshalltown",
+          "norm": "MARSHALLTOWN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Lehigh - Marshalltown (Twinkle) 345kV Transmission Line",
+    "native_id": "51177",
+    "other_owners": [],
+    "owner": null,
+    "part": "Lehigh - Marshalltown (Twinkle) 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51178",
+    "center": null,
+    "counties": [],
+    "description": "Add 1-345kV line position (breaker-and-a-half bus). Install 1-345kV 50MVAr shunt reactor with dedicated circuit breaker on one of the 345kV busses.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "8400000",
+        "Exclusion": "Upgrade",
+        "Facility": "Franklin North Substation",
+        "Geographic Location by TO Member System": "To Be Determined (Subject To Tranche 1 Facility Ownership)",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51178",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 7,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Franklin North",
+          "norm": "FRANKLIN NORTH",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Franklin North Substation",
+    "native_id": "51178",
+    "other_owners": [],
+    "owner": null,
+    "part": "Franklin North Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51179",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/156270807 (Marshalltown Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 42.045137,
+      "lon": -92.862026
+    },
+    "counties": [],
+    "description": "Construct new 345kV double-circuit transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "208400000",
+        "Exclusion": "Competitive",
+        "Facility": "Marshalltown (Twinkle) - Montezuma 345kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51179",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 8,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/156270807",
+            "lat": 42.045137,
+            "lon": -92.8620255,
+            "name": "Marshalltown Substation",
+            "operator": "ITC",
+            "state": "IA",
+            "voltage": "161000;115000;69000"
+          },
+          "name": "Marshalltown",
+          "norm": "MARSHALLTOWN",
+          "status": "matched"
+        },
+        {
+          "name": "Montezuma",
+          "norm": "MONTEZUMA",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Marshalltown (Twinkle) - Montezuma 345kV Transmission Line",
+    "native_id": "51179",
+    "other_owners": [],
+    "owner": null,
+    "part": "Marshalltown (Twinkle) - Montezuma 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51180",
+    "center": null,
+    "counties": [],
+    "description": "Replace existing four-position 345kV ring bus with six-position breaker-and-a-half bus: 1) Cut-in to existing 345kV transmission line to Bondurant, 2) Cut-in to existing 345kV to Diamond Trail, 3) Cut-in to existing 345kV line to Ottumwa, 4) Cut-in existing 345kV line to North English, 5) New 345kV transmission line to Marshalltown (Twinkle) #1, 6) New 345kV transmission line to Marshalltown (Twinkle) #2. Install 1-345kV 50MVAr shunt reactor with dedicated circuit breaker on one of the 345kV bus",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "26700000",
+        "Exclusion": "Upgrade",
+        "Facility": "Montezuma Substation",
+        "Geographic Location by TO Member System": "ITCM, MEC",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51180",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 9,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Montezuma",
+          "norm": "MONTEZUMA",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "ITC",
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Montezuma Substation",
+    "native_id": "51180",
+    "other_owners": [
+      "MEC"
+    ],
+    "owner": "ITCM",
+    "part": "Montezuma Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51181",
+    "center": null,
+    "counties": [],
+    "description": "Modify the existing Montezuma - Bondurant 345kV single-circuit line by constructing transmission structures to cut-in the Montezuma - Bondurant 345kV line into the Montezuma substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Montezuma Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51181",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 10,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Montezuma",
+          "norm": "MONTEZUMA",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Montezuma Substation",
+    "native_id": "51181",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Montezuma Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51182",
+    "center": null,
+    "counties": [],
+    "description": "Modify the existing Montezuma - Diamond Trail 345kV single-circuit line by constructing transmission structures to cut-in the Montezuma - Diamond Trail 345kV line into the Montezuma substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Montezuma Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51182",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 11,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Montezuma",
+          "norm": "MONTEZUMA",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Montezuma Substation",
+    "native_id": "51182",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Montezuma Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51183",
+    "center": null,
+    "counties": [],
+    "description": "Modify the existing Montezuma - Ottumwa 345kV single-circuit line by constructing transmission structures to cut-in the Montezuma - Ottumwa 345kV line into the Montezuma substation.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "2900000",
+        "Exclusion": "Upgrade",
+        "Facility": "Montezuma Substation",
+        "Geographic Location by TO Member System": "ITCM, MEC",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51183",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 12,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "Montezuma",
+          "norm": "MONTEZUMA",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "ITC",
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Montezuma Substation",
+    "native_id": "51183",
+    "other_owners": [
+      "MEC"
+    ],
+    "owner": "ITCM",
+    "part": "Montezuma Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51184",
+    "center": null,
+    "counties": [],
+    "description": "Construct new 765kV single-circuit transmission line. Minimum Surge Impedance Loading (SIL) should be 2400 MW.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "152300000",
+        "Exclusion": "Competitive",
+        "Facility": "Sub T - IA/IL State Line 765kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined",
+        "LRTP Project ID": "40",
+        "MTEP Facility ID": "51184",
+        "MTEP Project ID": "50573",
+        "Plan Cycle": "MTEP24",
+        "Project": "Sub T - Woodford County - Collins & Reynolds",
+        "State": "IA"
+      },
+      "row": 4,
+      "sheet": "40",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "name": "IA/IL State",
+          "norm": "IA/IL STATE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        765
+      ]
+    },
+    "location_review": "unlocated",
+    "major_project": "Sub T - Woodford County - Collins & Reynolds",
+    "name": "Sub T - IA/IL State Line 765kV Transmission Line",
+    "native_id": "51184",
+    "other_owners": [],
+    "owner": null,
+    "part": "Sub T - IA/IL State Line 765kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51217",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/14965555 (Hills Substation), corroborated by operator, voltage.",
+      "lat": 41.570388,
+      "lon": -91.535512
+    },
+    "counties": [],
+    "description": "Add 1-345kV bus position (breaker-and-a-half bus).",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "5400000",
+        "Exclusion": "Upgrade",
+        "Facility": "Hills Substation",
+        "Geographic Location by TO Member System": "MEC",
+        "LRTP Project ID": "38",
+        "MTEP Facility ID": "51217",
+        "MTEP Project ID": "50571",
+        "Plan Cycle": "MTEP24",
+        "Project": "East Adair - Marshalltown (Twinkle) - Sub T",
+        "State": "IA"
+      },
+      "row": 10,
+      "sheet": "38",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "relation/14965555",
+            "lat": 41.5703883,
+            "lon": -91.5355122,
+            "name": "Hills Substation",
+            "operator": "MidAmerican Energy",
+            "state": "IA",
+            "voltage": "345000;161000;69000"
+          },
+          "name": "Hills",
+          "norm": "HILLS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "MIDAMERICAN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "East Adair - Marshalltown (Twinkle) - Sub T",
+    "name": "Hills Substation",
+    "native_id": "51217",
+    "other_owners": [],
+    "owner": "MEC",
+    "part": "Hills Substation",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51218",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/156270807 (Marshalltown Substation), corroborated by unique_in_state. Partial: one of two endpoints.",
+      "lat": 42.045137,
+      "lon": -92.862026
+    },
+    "counties": [],
+    "description": "Install second 345kV circuit on existing spare position on existing structures on existing Marshalltown (Twinkle) - Franklin North 345kV transmission line.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "Estimated Facility Cost (2024 U.S. Dollars)": "41000000",
+        "Exclusion": "Upgrade",
+        "Facility": "Marshalltown (Twinkle) - Franklin North 345kV Transmission Line",
+        "Geographic Location by TO Member System": "To Be Determined (Subject To Tranche 1 Facility Ownership)",
+        "LRTP Project ID": "39",
+        "MTEP Facility ID": "51218",
+        "MTEP Project ID": "50572",
+        "Plan Cycle": "MTEP24",
+        "Project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+        "State": "IA"
+      },
+      "row": 6,
+      "sheet": "39",
+      "source_sha256": "be69a771b2cdefee3d38e92dea2e11cb580251dd49df07f4ed7c597fd0842723"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, IA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/156270807",
+            "lat": 42.045137,
+            "lon": -92.8620255,
+            "name": "Marshalltown Substation",
+            "operator": "ITC",
+            "state": "IA",
+            "voltage": "161000;115000;69000"
+          },
+          "name": "Marshalltown",
+          "norm": "MARSHALLTOWN",
+          "status": "matched"
+        },
+        {
+          "name": "Franklin North",
+          "norm": "FRANKLIN NORTH",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "major_project": "Lehigh - Marshalltown (Twinkle) - Franklin North & Montezuma",
+    "name": "Marshalltown (Twinkle) - Franklin North 345kV Transmission Line",
+    "native_id": "51218",
+    "other_owners": [],
+    "owner": null,
+    "part": "Marshalltown (Twinkle) - Franklin North 345kV Transmission Line",
+    "planning_region": "miso",
+    "project_events": [],
+    "source_id": "miso-lrtp-tr21-midwest",
+    "states": [
+      "19"
+    ],
+    "status": "LRTP Tranche 2.1 eligible project (no status stated)",
+    "status_group": "unknown"
+  },
+  {
     "_id": "miso-mtep25-appendix-a-midwest:22793",
     "center": {
       "basis": "source_point",

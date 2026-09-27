@@ -26015,5 +26015,2975 @@
     "sheet": "Appendix I",
     "source_id": "spp-qpt-2017q4-midwest",
     "uid": "51635"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50898",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "MN/ND State Line - Bison 345kV Transmission Line",
+    "native_id": "50898",
+    "row": 4,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50901",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Bison Substation",
+    "native_id": "50901",
+    "row": 5,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50900",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Cass County Substation",
+    "native_id": "50900",
+    "row": 6,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50899",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Cass County - Red River 115kV Transmission Line",
+    "native_id": "50899",
+    "row": 7,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50902",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Red River Substation",
+    "native_id": "50902",
+    "row": 8,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50903",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sheyenne Substation",
+    "native_id": "50903",
+    "row": 9,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50904",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sheyenne - Fargo (WAPA) 230kV Transmission Line",
+    "native_id": "50904",
+    "row": 10,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50905",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Fargo (WAPA) Substation",
+    "native_id": "50905",
+    "row": 11,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50906",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sheyenne - Maple River 230kV Transmission Line",
+    "native_id": "50906",
+    "row": 12,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50907",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Forman - Hankinson 230kV Transmission Line",
+    "native_id": "50907",
+    "row": 13,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50908",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hankinson Substation",
+    "native_id": "50908",
+    "row": 14,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Alexandria Substation",
+    "native_id": "50909",
+    "reason": "outside F46 states (MN)",
+    "row": 15,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Alexandria - MN/ND State Line 345kV Transmission Line",
+    "native_id": "51213",
+    "reason": "outside F46 states (MN)",
+    "row": 16,
+    "sheet": "19",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50910",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Maple River Substation",
+    "native_id": "50910",
+    "row": 4,
+    "sheet": "20",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50911",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Maple River - ND/MN State Line 345kV Transmission Line",
+    "native_id": "50911",
+    "row": 5,
+    "sheet": "20",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ND/MN State Line - Cuyuna 345kV Transmission Line",
+    "native_id": "50912",
+    "reason": "outside F46 states (MN)",
+    "row": 6,
+    "sheet": "20",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cuyuna Substation",
+    "native_id": "50913",
+    "reason": "outside F46 states (MN)",
+    "row": 7,
+    "sheet": "20",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Iron Range Substation",
+    "native_id": "50914",
+    "reason": "outside F46 states (MN)",
+    "row": 4,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Iron Range - St. Louis County 345kV Transmission Line",
+    "native_id": "50915",
+    "reason": "outside F46 states (MN)",
+    "row": 5,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "St. Louis County Substation",
+    "native_id": "50916",
+    "reason": "outside F46 states (MN)",
+    "row": 6,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "St. Louis County - Arrowhead 345kV Transmission Line",
+    "native_id": "50917",
+    "reason": "outside F46 states (MN)",
+    "row": 7,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arrowhead Substation",
+    "native_id": "50918",
+    "reason": "outside F46 states (MN)",
+    "row": 8,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stinson Substation",
+    "native_id": "50919",
+    "reason": "outside F46 states (WI)",
+    "row": 9,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stinson Substation",
+    "native_id": "50920",
+    "reason": "outside F46 states (WI)",
+    "row": 10,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stinson Substation",
+    "native_id": "50921",
+    "reason": "outside F46 states (WI)",
+    "row": 11,
+    "sheet": "21",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50922",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Big Stone South Substation",
+    "native_id": "50922",
+    "row": 4,
+    "sheet": "22",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50923",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Big Stone South - Brookings County 765kV Transmission Line",
+    "native_id": "50923",
+    "row": 5,
+    "sheet": "22",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50924",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Brookings County Substation",
+    "native_id": "50924",
+    "row": 6,
+    "sheet": "22",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50925",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Brookings County - SD/MN State Line 765kV Transmission Line",
+    "native_id": "50925",
+    "row": 7,
+    "sheet": "22",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "SD/MN State Line - Lakefield Junction 765kV Transmission Line",
+    "native_id": "50926",
+    "reason": "outside F46 states (MN)",
+    "row": 8,
+    "sheet": "22",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakefield Junction Substation",
+    "native_id": "50927",
+    "reason": "outside F46 states (MN)",
+    "row": 9,
+    "sheet": "22",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakefield Junction - MN/IA State Line 765kV Transmission Line",
+    "native_id": "50928",
+    "reason": "outside F46 states (MN)",
+    "row": 4,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50929",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MN/IA State Line - East Adair 765kV Transmission Line",
+    "native_id": "50929",
+    "row": 5,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50930",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "East Adair Substation",
+    "native_id": "50930",
+    "row": 6,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50931",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "East Adair Substation",
+    "native_id": "50931",
+    "row": 7,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50932",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Orient - Deadend East of York Avenue 345kV Transmission Line",
+    "native_id": "50932",
+    "row": 8,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50933",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Deadend East of York Avenue - East Adair 345kV Transmission Line",
+    "native_id": "50933",
+    "row": 9,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50934",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Southern Hills - East Adair 345kV Transmission Line",
+    "native_id": "50934",
+    "row": 10,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50935",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "East Adair - Arbor Hill 345kV Transmission Line",
+    "native_id": "50935",
+    "row": 11,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:50936",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Arbor Hill Substation",
+    "native_id": "50936",
+    "row": 12,
+    "sheet": "23",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakefield Junction - Pleasant Valley 765kV Transmission Line",
+    "native_id": "50937",
+    "reason": "outside F46 states (MN)",
+    "row": 4,
+    "sheet": "24",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pleasant Valley Substation",
+    "native_id": "50938",
+    "reason": "outside F46 states (MN)",
+    "row": 5,
+    "sheet": "24",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pleasant Valley - North Rochester 765kV Transmission Line",
+    "native_id": "50939",
+    "reason": "outside F46 states (MN)",
+    "row": 6,
+    "sheet": "24",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Rochester Substation",
+    "native_id": "50940",
+    "reason": "outside F46 states (MN)",
+    "row": 7,
+    "sheet": "24",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pleasant Valley - North Rochester 345kV Transmission Line",
+    "native_id": "50941",
+    "reason": "outside F46 states (MN)",
+    "row": 4,
+    "sheet": "25",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Rochester - Hampton Corner 345kV Transmission Line",
+    "native_id": "51214",
+    "reason": "outside F46 states (MN)",
+    "row": 5,
+    "sheet": "25",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hampton Corner Substation",
+    "native_id": "50942",
+    "reason": "outside F46 states (MN)",
+    "row": 6,
+    "sheet": "25",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Rochester - Existing 161kV Line Near Marion 765kV Transmission Line",
+    "native_id": "50943",
+    "reason": "outside F46 states (MN)",
+    "row": 4,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Existing 161kV Line Near Marion - Existing 161kV Line Near Adams 765kV Transmission Line",
+    "native_id": "50944",
+    "reason": "outside F46 states (MN)",
+    "row": 5,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Existing 161kV Line Near Adams - MN/WI State Line (Existing Genoa River Crossing) 765kV Transmission Line",
+    "native_id": "50945",
+    "reason": "outside F46 states (MN)",
+    "row": 6,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Beaver Creek Substation",
+    "native_id": "50946",
+    "reason": "outside F46 states (MN)",
+    "row": 7,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Harmony Substation",
+    "native_id": "50947",
+    "reason": "outside F46 states (MN)",
+    "row": 8,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MN/WI State Line (Existing Genoa River Crossing) - Existing 161kV Line Near Bell Center 765kV Transmission Line",
+    "native_id": "50948",
+    "reason": "outside F46 states (WI)",
+    "row": 9,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Existing 161kV Line Near Bell Center - Columbia 765kV Transmission Line",
+    "native_id": "50949",
+    "reason": "outside F46 states (WI)",
+    "row": 10,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Columbia Substation",
+    "native_id": "50950",
+    "reason": "outside F46 states (WI)",
+    "row": 11,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Genoa Substation",
+    "native_id": "50951",
+    "reason": "outside F46 states (WI)",
+    "row": 12,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Seneca Substation",
+    "native_id": "50952",
+    "reason": "outside F46 states (WI)",
+    "row": 13,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bell Center Substation",
+    "native_id": "50953",
+    "reason": "outside F46 states (WI)",
+    "row": 14,
+    "sheet": "26",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rocky Run Substation",
+    "native_id": "50954",
+    "reason": "outside F46 states (WI)",
+    "row": 4,
+    "sheet": "27",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rocky Run - East of US 45 345kV Transmission Line",
+    "native_id": "50955",
+    "reason": "outside F46 states (WI)",
+    "row": 5,
+    "sheet": "27",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "East of US 45 - Werner West 345kV Transmission Line",
+    "native_id": "50956",
+    "reason": "outside F46 states (WI)",
+    "row": 6,
+    "sheet": "27",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Werner West Substation",
+    "native_id": "50957",
+    "reason": "outside F46 states (WI)",
+    "row": 7,
+    "sheet": "27",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Werner West - North Appleton 345kV Transmission Line",
+    "native_id": "50958",
+    "reason": "outside F46 states (WI)",
+    "row": 8,
+    "sheet": "27",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Appleton Substation",
+    "native_id": "50959",
+    "reason": "outside F46 states (WI)",
+    "row": 9,
+    "sheet": "27",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South Fond du Lac Substation",
+    "native_id": "50960",
+    "reason": "outside F46 states (WI)",
+    "row": 4,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South Fond du Lac - Jefferson 345kV Transmission Line",
+    "native_id": "50961",
+    "reason": "outside F46 states (WI)",
+    "row": 5,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jefferson Substation",
+    "native_id": "50962",
+    "reason": "outside F46 states (WI)",
+    "row": 6,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jefferson - Rockdale 345kV Transmission Line",
+    "native_id": "50963",
+    "reason": "outside F46 states (WI)",
+    "row": 7,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rockdale Substation",
+    "native_id": "50964",
+    "reason": "outside F46 states (WI)",
+    "row": 8,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jefferson - Fort Atkinson 345kV Transmission Line",
+    "native_id": "50965",
+    "reason": "outside F46 states (WI)",
+    "row": 9,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fort Atkinson Substation",
+    "native_id": "50966",
+    "reason": "outside F46 states (WI)",
+    "row": 10,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Whitewater Substation",
+    "native_id": "50967",
+    "reason": "outside F46 states (WI)",
+    "row": 11,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fort Atkinson - Whitewater 345kV Transmission Line",
+    "native_id": "50968",
+    "reason": "outside F46 states (WI)",
+    "row": 12,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Whitewater - Sugar Creek 345kV Transmission Line",
+    "native_id": "50969",
+    "reason": "outside F46 states (WI)",
+    "row": 13,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Whitewater - Guardian Tap 138kV Transmission Line",
+    "native_id": "50970",
+    "reason": "outside F46 states (WI)",
+    "row": 14,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Whitewater - Bluff Creek Tap 138kV Transmission Line",
+    "native_id": "50971",
+    "reason": "outside F46 states (WI)",
+    "row": 15,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Big Bend Substation",
+    "native_id": "50972",
+    "reason": "outside F46 states (WI)",
+    "row": 16,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Big Bend Substation",
+    "native_id": "50973",
+    "reason": "outside F46 states (WI)",
+    "row": 17,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Big Bend - Sugar Creek 345kV Transmission Line",
+    "native_id": "50974",
+    "reason": "outside F46 states (WI)",
+    "row": 18,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sugar Creek - Paris 345kV Transmission Line",
+    "native_id": "50975",
+    "reason": "outside F46 states (WI)",
+    "row": 19,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Lake Geneva Tap",
+    "native_id": "50976",
+    "reason": "outside F46 states (WI)",
+    "row": 20,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Burlington",
+    "native_id": "50977",
+    "reason": "outside F46 states (WI)",
+    "row": 21,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Air Liquide Tap",
+    "native_id": "50978",
+    "reason": "outside F46 states (WI)",
+    "row": 22,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Paris Substation",
+    "native_id": "50979",
+    "reason": "outside F46 states (WI)",
+    "row": 23,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Paris Substation",
+    "native_id": "50980",
+    "reason": "outside F46 states (WI)",
+    "row": 24,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sugar Creek - REC Bradford 345kV Transmission Line",
+    "native_id": "50981",
+    "reason": "outside F46 states (WI)",
+    "row": 25,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "REC Bradford - Kitty Hawk 345kV Transmission Line",
+    "native_id": "50982",
+    "reason": "outside F46 states (WI)",
+    "row": 26,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rock River Substation",
+    "native_id": "50983",
+    "reason": "outside F46 states (WI)",
+    "row": 27,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "REC La Prairie Substation",
+    "native_id": "50984",
+    "reason": "outside F46 states (WI)",
+    "row": 28,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "REC Bradford Substation",
+    "native_id": "50985",
+    "reason": "outside F46 states (WI)",
+    "row": 29,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Kitty Hawk Substation",
+    "native_id": "50986",
+    "reason": "outside F46 states (WI)",
+    "row": 30,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sheboygan River Substation",
+    "native_id": "50987",
+    "reason": "outside F46 states (WI)",
+    "row": 31,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sheboygan River Substation",
+    "native_id": "50988",
+    "reason": "outside F46 states (WI)",
+    "row": 32,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sheboygan River Substation",
+    "native_id": "50989",
+    "reason": "outside F46 states (WI)",
+    "row": 33,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mullet River Junction Substation",
+    "native_id": "50990",
+    "reason": "outside F46 states (WI)",
+    "row": 34,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mullet River Junction Substation",
+    "native_id": "50991",
+    "reason": "outside F46 states (WI)",
+    "row": 35,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mullet River Junction Substation",
+    "native_id": "50992",
+    "reason": "outside F46 states (WI)",
+    "row": 36,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cedar Creek Junction Substation",
+    "native_id": "50993",
+    "reason": "outside F46 states (WI)",
+    "row": 37,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cedar Creek Junction Substation",
+    "native_id": "50994",
+    "reason": "outside F46 states (WI)",
+    "row": 38,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cedar Creek Junction Substation",
+    "native_id": "50995",
+    "reason": "outside F46 states (WI)",
+    "row": 39,
+    "sheet": "28",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Granville Substation",
+    "native_id": "50996",
+    "reason": "outside F46 states (WI)",
+    "row": 4,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Granville - Deadend for Butler/Tosa/Tamarack Tap 345kV Transmission Line",
+    "native_id": "50997",
+    "reason": "outside F46 states (WI)",
+    "row": 5,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Butler Substation",
+    "native_id": "50998",
+    "reason": "outside F46 states (WI)",
+    "row": 6,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tosa Substation",
+    "native_id": "50999",
+    "reason": "outside F46 states (WI)",
+    "row": 7,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Deadend for Butler/Tosa/Tamarack Tap - Butler 345kV Transmission Line",
+    "native_id": "51000",
+    "reason": "outside F46 states (WI)",
+    "row": 8,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Butler - Structure 4271 345kV Transmission Line",
+    "native_id": "51001",
+    "reason": "outside F46 states (WI)",
+    "row": 9,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Structure 4271 - Line 5401 345kV Transmission Line",
+    "native_id": "51002",
+    "reason": "outside F46 states (WI)",
+    "row": 10,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 5401 - Bluemound 345kV Transmission Line",
+    "native_id": "51003",
+    "reason": "outside F46 states (WI)",
+    "row": 11,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bluemound Substation",
+    "native_id": "51004",
+    "reason": "outside F46 states (WI)",
+    "row": 12,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bluemound - Deadend for Triple-Circuit South of Bluemound 345kV Transmission Line",
+    "native_id": "51005",
+    "reason": "outside F46 states (WI)",
+    "row": 13,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Deadend for Triple-Circuit South of Bluemound - Elm Road 345kV Transmission Line",
+    "native_id": "51006",
+    "reason": "outside F46 states (WI)",
+    "row": 14,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Deadend for Triple-Circuit South of Bluemound - Arcadian 345kV Transmission Line",
+    "native_id": "51007",
+    "reason": "outside F46 states (WI)",
+    "row": 15,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arcadian Substation",
+    "native_id": "51008",
+    "reason": "outside F46 states (WI)",
+    "row": 16,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arcadian Substation",
+    "native_id": "51009",
+    "reason": "outside F46 states (WI)",
+    "row": 17,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arcadian - Waukesha 138kV Transmission Line",
+    "native_id": "51010",
+    "reason": "outside F46 states (WI)",
+    "row": 18,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Waukesha Substation",
+    "native_id": "51011",
+    "reason": "outside F46 states (WI)",
+    "row": 19,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arcadian - Muskego Dam Road 345kV Transmission Line",
+    "native_id": "51012",
+    "reason": "outside F46 states (WI)",
+    "row": 20,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Muskego Dam Road Substation",
+    "native_id": "51013",
+    "reason": "outside F46 states (WI)",
+    "row": 21,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Muskego Dam Road Substation",
+    "native_id": "51014",
+    "reason": "outside F46 states (WI)",
+    "row": 22,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Muskego Dam Road Substation",
+    "native_id": "51015",
+    "reason": "outside F46 states (WI)",
+    "row": 23,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Muskego Dam Road - 3.3 Miles West of Elm Road 345kV Transmission Line",
+    "native_id": "51016",
+    "reason": "outside F46 states (WI)",
+    "row": 24,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "3.3 Miles West of Elm Road - Elm Road 345kV Transmission Line",
+    "native_id": "51017",
+    "reason": "outside F46 states (WI)",
+    "row": 25,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Elm Road Substation",
+    "native_id": "51018",
+    "reason": "outside F46 states (WI)",
+    "row": 26,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Elm Road - Deadend North of Existing 345/138kV 345kV Transmission Line",
+    "native_id": "51019",
+    "reason": "outside F46 states (WI)",
+    "row": 27,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Deadend North of Existing 345/138kV - Structure 4923 345kV Transmission Line",
+    "native_id": "51020",
+    "reason": "outside F46 states (WI)",
+    "row": 28,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Structure 4923 - Racine 345kV Transmission Line",
+    "native_id": "51021",
+    "reason": "outside F46 states (WI)",
+    "row": 29,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine Substation",
+    "native_id": "51022",
+    "reason": "outside F46 states (WI)",
+    "row": 30,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakeview Substation",
+    "native_id": "51023",
+    "reason": "outside F46 states (WI)",
+    "row": 31,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakeview Substation",
+    "native_id": "51024",
+    "reason": "outside F46 states (WI)",
+    "row": 32,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakeview Substation",
+    "native_id": "51025",
+    "reason": "outside F46 states (WI)",
+    "row": 33,
+    "sheet": "29",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Columbia - Sugar Creek 765kV Transmission Line",
+    "native_id": "51026",
+    "reason": "outside F46 states (WI)",
+    "row": 4,
+    "sheet": "30",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sugar Creek Substation",
+    "native_id": "51027",
+    "reason": "outside F46 states (WI)",
+    "row": 5,
+    "sheet": "30",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sugar Creek - IL/WI State Line 765kV Transmission Line",
+    "native_id": "51028",
+    "reason": "outside F46 states (WI)",
+    "row": 4,
+    "sheet": "31",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IL/WI State Line - Collins (PJM) 765kV Transmission Line",
+    "native_id": "51029",
+    "reason": "outside F46 states (IL)",
+    "row": 5,
+    "sheet": "31",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Collins (PJM) Substation",
+    "native_id": "51030",
+    "reason": "outside F46 states (IL)",
+    "row": 6,
+    "sheet": "31",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denver Substation",
+    "native_id": "51031",
+    "reason": "outside F46 states (MI)",
+    "row": 4,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denver - Ludington 345kV Transmission Line",
+    "native_id": "51032",
+    "reason": "outside F46 states (MI)",
+    "row": 5,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ludington Substation",
+    "native_id": "51033",
+    "reason": "outside F46 states (MI)",
+    "row": 6,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denver - Nelson Road 345kV Transmission Line",
+    "native_id": "51034",
+    "reason": "outside F46 states (MI)",
+    "row": 7,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Nelson Road Substation",
+    "native_id": "51035",
+    "reason": "outside F46 states (MI)",
+    "row": 8,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denver - Salt River 138kV Transmission Line",
+    "native_id": "51215",
+    "reason": "outside F46 states (MI)",
+    "row": 9,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denver - Salt River 138kV Transmission Line",
+    "native_id": "51216",
+    "reason": "outside F46 states (MI)",
+    "row": 10,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Salt River Substation",
+    "native_id": "51036",
+    "reason": "outside F46 states (MI)",
+    "row": 11,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Salt River Substation",
+    "native_id": "51037",
+    "reason": "outside F46 states (MI)",
+    "row": 12,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denver - Tittabawassee 345kV Transmission Line",
+    "native_id": "51038",
+    "reason": "outside F46 states (MI)",
+    "row": 13,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tittabawassee Substation",
+    "native_id": "51039",
+    "reason": "outside F46 states (MI)",
+    "row": 14,
+    "sheet": "32",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greentown Substation",
+    "native_id": "51040",
+    "reason": "outside F46 states (IN)",
+    "row": 4,
+    "sheet": "33",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greentown - Sorenson (PJM) 765kV Transmission Line",
+    "native_id": "51041",
+    "reason": "outside F46 states (IN)",
+    "row": 5,
+    "sheet": "33",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sorenson (PJM) Substation",
+    "native_id": "51042",
+    "reason": "outside F46 states (IN)",
+    "row": 6,
+    "sheet": "33",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sorenson (PJM) - IN/MI State Line 765kV Transmission Line",
+    "native_id": "51043",
+    "reason": "outside F46 states (IN)",
+    "row": 7,
+    "sheet": "33",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IN/MI State Line - Lulu 765kV Transmission Line",
+    "native_id": "51044",
+    "reason": "outside F46 states (MI)",
+    "row": 8,
+    "sheet": "33",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lulu Substation",
+    "native_id": "51045",
+    "reason": "outside F46 states (MI)",
+    "row": 9,
+    "sheet": "33",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Oneida Substation",
+    "native_id": "51046",
+    "reason": "outside F46 states (MI)",
+    "row": 4,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Oneida - Existing 138kV Line Near Williamston 345kV Transmission Line",
+    "native_id": "51047",
+    "reason": "outside F46 states (MI)",
+    "row": 5,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Existing 138kV Line Near Williamston - Sabine Lake 345kV Transmission Line",
+    "native_id": "51048",
+    "reason": "outside F46 states (MI)",
+    "row": 6,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blackfoot Substation",
+    "native_id": "51049",
+    "reason": "outside F46 states (MI)",
+    "row": 7,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blackfoot Substation",
+    "native_id": "51050",
+    "reason": "outside F46 states (MI)",
+    "row": 8,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blackfoot Substation",
+    "native_id": "51051",
+    "reason": "outside F46 states (MI)",
+    "row": 9,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blackfoot - Sabine Lake 345kV Transmission Line",
+    "native_id": "51052",
+    "reason": "outside F46 states (MI)",
+    "row": 10,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sabine Lake Substation",
+    "native_id": "51053",
+    "reason": "outside F46 states (MI)",
+    "row": 11,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sabine Lake Substation",
+    "native_id": "51054",
+    "reason": "outside F46 states (MI)",
+    "row": 12,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sabine Lake - I-96 345kV Transmission Line",
+    "native_id": "51055",
+    "reason": "outside F46 states (MI)",
+    "row": 13,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "I-96 - Madrid 345kV Transmission Line",
+    "native_id": "51056",
+    "reason": "outside F46 states (MI)",
+    "row": 14,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Madrid - Calla 120kV Transmission Line",
+    "native_id": "51057",
+    "reason": "outside F46 states (MI)",
+    "row": 15,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Route 36 Crossing Near Pinckney - Calla 120kV Transmission Line",
+    "native_id": "51058",
+    "reason": "outside F46 states (MI)",
+    "row": 16,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Calla - Majestic 345kV Transmission Line",
+    "native_id": "51059",
+    "reason": "outside F46 states (MI)",
+    "row": 17,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Calla - Majestic 120kV Transmission Line",
+    "native_id": "51060",
+    "reason": "outside F46 states (MI)",
+    "row": 18,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Majestic Substation",
+    "native_id": "51061",
+    "reason": "outside F46 states (MI)",
+    "row": 19,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Van Dyke Substation",
+    "native_id": "51062",
+    "reason": "outside F46 states (MI)",
+    "row": 20,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Van Dyke Substation",
+    "native_id": "51063",
+    "reason": "outside F46 states (MI)",
+    "row": 21,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Van Dyke Substation",
+    "native_id": "51064",
+    "reason": "outside F46 states (MI)",
+    "row": 22,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Van Dyke Substation",
+    "native_id": "51065",
+    "reason": "outside F46 states (MI)",
+    "row": 23,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crimson Substation",
+    "native_id": "51066",
+    "reason": "outside F46 states (MI)",
+    "row": 24,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crimson Substation",
+    "native_id": "51067",
+    "reason": "outside F46 states (MI)",
+    "row": 25,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crimson - Jewell 345kV Transmission Line",
+    "native_id": "51068",
+    "reason": "outside F46 states (MI)",
+    "row": 26,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pontiac Substation",
+    "native_id": "51069",
+    "reason": "outside F46 states (MI)",
+    "row": 27,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pontiac - Crimson #2 345kV Transmission Line",
+    "native_id": "51070",
+    "reason": "outside F46 states (MI)",
+    "row": 28,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jewell Substation",
+    "native_id": "51071",
+    "reason": "outside F46 states (MI)",
+    "row": 29,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jewell Substation",
+    "native_id": "51072",
+    "reason": "outside F46 states (MI)",
+    "row": 30,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wayne Substation",
+    "native_id": "51073",
+    "reason": "outside F46 states (MI)",
+    "row": 31,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wayne Substation",
+    "native_id": "51074",
+    "reason": "outside F46 states (MI)",
+    "row": 32,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Laplaisance Creek Substation",
+    "native_id": "51075",
+    "reason": "outside F46 states (MI)",
+    "row": 33,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Laplaisance Creek Substation",
+    "native_id": "51076",
+    "reason": "outside F46 states (MI)",
+    "row": 34,
+    "sheet": "34",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sullivan (PJM) Substation",
+    "native_id": "51077",
+    "reason": "outside F46 states (IN)",
+    "row": 4,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sullivan (PJM) Substation",
+    "native_id": "51078",
+    "reason": "outside F46 states (IN)",
+    "row": 5,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Merom Substation",
+    "native_id": "51079",
+    "reason": "outside F46 states (IN)",
+    "row": 6,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Merom Substation",
+    "native_id": "51080",
+    "reason": "outside F46 states (IN)",
+    "row": 7,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Worthington Substation",
+    "native_id": "51081",
+    "reason": "outside F46 states (IN)",
+    "row": 8,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Worthington Substation",
+    "native_id": "51082",
+    "reason": "outside F46 states (IN)",
+    "row": 9,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Creek Substation",
+    "native_id": "51083",
+    "reason": "outside F46 states (IN)",
+    "row": 10,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Creek Substation",
+    "native_id": "51084",
+    "reason": "outside F46 states (IN)",
+    "row": 11,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Creek Substation",
+    "native_id": "51085",
+    "reason": "outside F46 states (IN)",
+    "row": 12,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Creek Substation",
+    "native_id": "51086",
+    "reason": "outside F46 states (IN)",
+    "row": 13,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "AB Brown Substation",
+    "native_id": "51087",
+    "reason": "outside F46 states (IN)",
+    "row": 14,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pike County Substation",
+    "native_id": "51088",
+    "reason": "outside F46 states (IN)",
+    "row": 15,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pike County Substation",
+    "native_id": "51089",
+    "reason": "outside F46 states (IN)",
+    "row": 16,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pike County Substation",
+    "native_id": "51090",
+    "reason": "outside F46 states (IN)",
+    "row": 17,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pike County - Petersburg 345kV Transmission Line",
+    "native_id": "51091",
+    "reason": "outside F46 states (IN)",
+    "row": 18,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Petersburg Substation",
+    "native_id": "51092",
+    "reason": "outside F46 states (IN)",
+    "row": 19,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pike County - Duff 345kV Transmission Line",
+    "native_id": "51093",
+    "reason": "outside F46 states (IN)",
+    "row": 20,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Duff Substation",
+    "native_id": "51094",
+    "reason": "outside F46 states (IN)",
+    "row": 21,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Duff Substation",
+    "native_id": "51095",
+    "reason": "outside F46 states (IN)",
+    "row": 22,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Duff - Culley 345kV Transmission Line",
+    "native_id": "51096",
+    "reason": "outside F46 states (IN)",
+    "row": 23,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Culley 345kV Substation",
+    "native_id": "51097",
+    "reason": "outside F46 states (IN)",
+    "row": 24,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Culley 345kV - IN/KY State Line 345kV Transmission Line",
+    "native_id": "51098",
+    "reason": "outside F46 states (IN)",
+    "row": 25,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Culley 345kV - Darlington 138kV Transmission Line",
+    "native_id": "51099",
+    "reason": "outside F46 states (IN)",
+    "row": 26,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Culley 345kV - Warrick North 138kV Transmission Line",
+    "native_id": "51100",
+    "reason": "outside F46 states (IN)",
+    "row": 27,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Darlington Substation",
+    "native_id": "51101",
+    "reason": "outside F46 states (IN)",
+    "row": 28,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Warrick North Substation",
+    "native_id": "51102",
+    "reason": "outside F46 states (IN)",
+    "row": 29,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IN/KY State Line - Reid EHV 345kV Transmission Line",
+    "native_id": "51103",
+    "reason": "outside F46 states (KY)",
+    "row": 30,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reid EHV Substation",
+    "native_id": "51104",
+    "reason": "outside F46 states (KY)",
+    "row": 31,
+    "sheet": "35",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greensboro Substation",
+    "native_id": "51105",
+    "reason": "outside F46 states (IN)",
+    "row": 4,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greensboro - Madison County 345kV Transmission Line",
+    "native_id": "51106",
+    "reason": "outside F46 states (IN)",
+    "row": 5,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Madison County Substation",
+    "native_id": "51107",
+    "reason": "outside F46 states (IN)",
+    "row": 6,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Madison County Substation",
+    "native_id": "51108",
+    "reason": "outside F46 states (IN)",
+    "row": 7,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Madison County Substation",
+    "native_id": "51109",
+    "reason": "outside F46 states (IN)",
+    "row": 8,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwynneville Substation",
+    "native_id": "51110",
+    "reason": "outside F46 states (IN)",
+    "row": 9,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwynneville Substation",
+    "native_id": "51111",
+    "reason": "outside F46 states (IN)",
+    "row": 10,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwynneville Substation",
+    "native_id": "51112",
+    "reason": "outside F46 states (IN)",
+    "row": 11,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwynneville Substation",
+    "native_id": "51113",
+    "reason": "outside F46 states (IN)",
+    "row": 12,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwynneville Substation",
+    "native_id": "51114",
+    "reason": "outside F46 states (IN)",
+    "row": 13,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gwynneville Substation",
+    "native_id": "51115",
+    "reason": "outside F46 states (IN)",
+    "row": 14,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Decatur County Substation",
+    "native_id": "51116",
+    "reason": "outside F46 states (IN)",
+    "row": 15,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greensburg Substation",
+    "native_id": "51117",
+    "reason": "outside F46 states (IN)",
+    "row": 16,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Decatur County - Greensburg 138kV Transmission Line",
+    "native_id": "51118",
+    "reason": "outside F46 states (IN)",
+    "row": 17,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51119",
+    "reason": "outside F46 states (IN)",
+    "row": 18,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51120",
+    "reason": "outside F46 states (IN)",
+    "row": 19,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51121",
+    "reason": "outside F46 states (IN)",
+    "row": 20,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51122",
+    "reason": "outside F46 states (IN)",
+    "row": 21,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51123",
+    "reason": "outside F46 states (IN)",
+    "row": 22,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51124",
+    "reason": "outside F46 states (IN)",
+    "row": 23,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville Substation",
+    "native_id": "51125",
+    "reason": "outside F46 states (IN)",
+    "row": 24,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Batesville - Hubbell 138kV Transmission Line",
+    "native_id": "51126",
+    "reason": "outside F46 states (IN)",
+    "row": 25,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Weisburg Substation",
+    "native_id": "51127",
+    "reason": "outside F46 states (IN)",
+    "row": 26,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hubbell Substation",
+    "native_id": "51128",
+    "reason": "outside F46 states (IN)",
+    "row": 27,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hubbell - Greendale 138kV Transmission Line",
+    "native_id": "51129",
+    "reason": "outside F46 states (IN)",
+    "row": 28,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hidden Valley Substation",
+    "native_id": "51130",
+    "reason": "outside F46 states (IN)",
+    "row": 29,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greendale Substation",
+    "native_id": "51131",
+    "reason": "outside F46 states (IN)",
+    "row": 30,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sutton Ridge Substation",
+    "native_id": "51132",
+    "reason": "outside F46 states (IN)",
+    "row": 31,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sutton Ridge Substation",
+    "native_id": "51133",
+    "reason": "outside F46 states (IN)",
+    "row": 32,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sutton Ridge Substation",
+    "native_id": "51134",
+    "reason": "outside F46 states (IN)",
+    "row": 33,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sutton Ridge Substation",
+    "native_id": "51135",
+    "reason": "outside F46 states (IN)",
+    "row": 34,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Greendale - IN/OH State Line 138kV Transmission Line",
+    "native_id": "51136",
+    "reason": "outside F46 states (IN)",
+    "row": 35,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IN/OH State Line - Miami Fort (PJM) 138kV Transmission Line",
+    "native_id": "51137",
+    "reason": "outside F46 states (OH)",
+    "row": 36,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Miami Fort (PJM) Substation",
+    "native_id": "51138",
+    "reason": "outside F46 states (OH)",
+    "row": 37,
+    "sheet": "36",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51139",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Maywood Substation",
+    "native_id": "51139",
+    "row": 4,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51140",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Maywood - Palmyra 345kV Transmission Line",
+    "native_id": "51140",
+    "row": 5,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51141",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Palmyra - Spalding 345kV Transmission Line",
+    "native_id": "51141",
+    "row": 6,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51142",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Spalding - Finn Tap 345kV Transmission Line",
+    "native_id": "51142",
+    "row": 7,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51143",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Finn Tap - Belleau 345kV Transmission Line",
+    "native_id": "51143",
+    "row": 8,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51144",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hannibal West Substation",
+    "native_id": "51144",
+    "row": 9,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51145",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Spalding Substation",
+    "native_id": "51145",
+    "row": 10,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51146",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Peno Creek EC Substation",
+    "native_id": "51146",
+    "row": 11,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51147",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Pike Substation",
+    "native_id": "51147",
+    "row": 12,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51148",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Cyrene Substation",
+    "native_id": "51148",
+    "row": 13,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51149",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Hope Substation",
+    "native_id": "51149",
+    "row": 14,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51150",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Troy Substation",
+    "native_id": "51150",
+    "row": 15,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51151",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Belleau Substation",
+    "native_id": "51151",
+    "row": 16,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51152",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Belleau - MRPD 345kV Transmission Line",
+    "native_id": "51152",
+    "row": 17,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51153",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Fort Zumwalt Substation",
+    "native_id": "51153",
+    "row": 18,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51154",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "McClay Substation",
+    "native_id": "51154",
+    "row": 19,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51155",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Huster Substation",
+    "native_id": "51155",
+    "row": 20,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51156",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Fountain Lakes Substation",
+    "native_id": "51156",
+    "row": 21,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51157",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MRPD Substation",
+    "native_id": "51157",
+    "row": 22,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51158",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MRPD Substation",
+    "native_id": "51158",
+    "row": 23,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51159",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MRPD - 3-Way Junction 345kV Transmission Line",
+    "native_id": "51159",
+    "row": 24,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51160",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "3-Way Junction - Sioux 345kV Transmission Line",
+    "native_id": "51160",
+    "row": 25,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51161",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sioux Substation",
+    "native_id": "51161",
+    "row": 26,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51162",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "3-Way Junction - Bugle 345kV Transmission Line",
+    "native_id": "51162",
+    "row": 27,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51163",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Bugle Substation",
+    "native_id": "51163",
+    "row": 28,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51164",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Bugle - IL/MO State Line 345kV Transmission Line",
+    "native_id": "51164",
+    "row": 29,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IL/MO State Line - Roxford/Gateway 345kV Transmission Line",
+    "native_id": "51165",
+    "reason": "outside F46 states (IL)",
+    "row": 30,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51166",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Euclid Substation",
+    "native_id": "51166",
+    "row": 31,
+    "sheet": "37",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51167",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "East Adair - Marshalltown (Twinkle) 765kV Transmission Line",
+    "native_id": "51167",
+    "row": 4,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51168",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Marshalltown (Twinkle) Substation",
+    "native_id": "51168",
+    "row": 5,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51169",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Marshalltown (Twinkle) - Sub T 765kV Transmission Line",
+    "native_id": "51169",
+    "row": 6,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51170",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub T Substation",
+    "native_id": "51170",
+    "row": 7,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51171",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub 93 Louisa - IA/IL State Line 345kV Transmission Line",
+    "native_id": "51171",
+    "row": 8,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51172",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub 93 Louisa Substation",
+    "native_id": "51172",
+    "row": 9,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51217",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Hills Substation",
+    "native_id": "51217",
+    "row": 10,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51173",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Hills Substation",
+    "native_id": "51173",
+    "row": 11,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51174",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Hills Substation",
+    "native_id": "51174",
+    "row": 12,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51175",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hills - Sub T 345kV Transmission Line",
+    "native_id": "51175",
+    "row": 13,
+    "sheet": "38",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51176",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Lehigh Substation",
+    "native_id": "51176",
+    "row": 4,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51177",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Lehigh - Marshalltown (Twinkle) 345kV Transmission Line",
+    "native_id": "51177",
+    "row": 5,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51218",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Marshalltown (Twinkle) - Franklin North 345kV Transmission Line",
+    "native_id": "51218",
+    "row": 6,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51178",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Franklin North Substation",
+    "native_id": "51178",
+    "row": 7,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51179",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Marshalltown (Twinkle) - Montezuma 345kV Transmission Line",
+    "native_id": "51179",
+    "row": 8,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51180",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Montezuma Substation",
+    "native_id": "51180",
+    "row": 9,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51181",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Montezuma Substation",
+    "native_id": "51181",
+    "row": 10,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51182",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Montezuma Substation",
+    "native_id": "51182",
+    "row": 11,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51183",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Montezuma Substation",
+    "native_id": "51183",
+    "row": 12,
+    "sheet": "39",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "_id": "miso-lrtp-tr21-midwest:51184",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub T - IA/IL State Line 765kV Transmission Line",
+    "native_id": "51184",
+    "row": 4,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IA/IL State Line - Oak Grove 345kV Transmission Line",
+    "native_id": "51185",
+    "reason": "outside F46 states (IL)",
+    "row": 5,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Oak Grove Substation",
+    "native_id": "51186",
+    "reason": "outside F46 states (IL)",
+    "row": 6,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IA/IL State Line - Woodford County 765kV Transmission Line",
+    "native_id": "51187",
+    "reason": "outside F46 states (IL)",
+    "row": 7,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodford County Substation",
+    "native_id": "51188",
+    "reason": "outside F46 states (IL)",
+    "row": 8,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodford County - Collins (PJM) 765kV Transmission Line",
+    "native_id": "51189",
+    "reason": "outside F46 states (IL)",
+    "row": 9,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodford County - IL/IN State Line 765kV Transmission Line",
+    "native_id": "51190",
+    "reason": "outside F46 states (IL)",
+    "row": 10,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IL/IN State Line - Reynolds 765kV Transmission Line",
+    "native_id": "51191",
+    "reason": "outside F46 states (IN)",
+    "row": 11,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reynolds Substation",
+    "native_id": "51192",
+    "reason": "outside F46 states (IN)",
+    "row": 12,
+    "sheet": "40",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodford County Substation",
+    "native_id": "51193",
+    "reason": "outside F46 states (IL)",
+    "row": 4,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodford County - Woodhall 345kV Transmission Line",
+    "native_id": "51194",
+    "reason": "outside F46 states (IL)",
+    "row": 5,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodhall - Fargo 345kV Transmission Line",
+    "native_id": "51195",
+    "reason": "outside F46 states (IL)",
+    "row": 6,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Alta Substation",
+    "native_id": "51196",
+    "reason": "outside F46 states (IL)",
+    "row": 7,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mossville Substation",
+    "native_id": "51197",
+    "reason": "outside F46 states (IL)",
+    "row": 8,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hallock Substation",
+    "native_id": "51198",
+    "reason": "outside F46 states (IL)",
+    "row": 9,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodhall Substation",
+    "native_id": "51199",
+    "reason": "outside F46 states (IL)",
+    "row": 10,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fargo Substation",
+    "native_id": "51200",
+    "reason": "outside F46 states (IL)",
+    "row": 11,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Woodford County - Near Woodford County 345kV Transmission Line",
+    "native_id": "51201",
+    "reason": "outside F46 states (IL)",
+    "row": 12,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Near Woodford County - Radbourn 345kV Transmission Line",
+    "native_id": "51202",
+    "reason": "outside F46 states (IL)",
+    "row": 13,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McLean Substation",
+    "native_id": "51203",
+    "reason": "outside F46 states (IL)",
+    "row": 14,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "East Normal Substation",
+    "native_id": "51204",
+    "reason": "outside F46 states (IL)",
+    "row": 15,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Towanda Substation",
+    "native_id": "51205",
+    "reason": "outside F46 states (IL)",
+    "row": 16,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brokaw Substation",
+    "native_id": "51206",
+    "reason": "outside F46 states (IL)",
+    "row": 17,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Radbourn Substation",
+    "native_id": "51207",
+    "reason": "outside F46 states (IL)",
+    "row": 18,
+    "sheet": "41",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Babcock Substation",
+    "native_id": "51208",
+    "reason": "outside F46 states (IN)",
+    "row": 4,
+    "sheet": "42",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Babcock Substation",
+    "native_id": "51209",
+    "reason": "outside F46 states (IN)",
+    "row": 5,
+    "sheet": "42",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Burr Oak Substation",
+    "native_id": "51210",
+    "reason": "outside F46 states (IN)",
+    "row": 6,
+    "sheet": "42",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Burr Oak - Schahfer 345kV Transmission Line",
+    "native_id": "51219",
+    "reason": "outside F46 states (IN)",
+    "row": 7,
+    "sheet": "42",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Burr Oak Substation",
+    "native_id": "51211",
+    "reason": "outside F46 states (IN)",
+    "row": 8,
+    "sheet": "42",
+    "source_id": "miso-lrtp-tr21-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Schahfer Substation",
+    "native_id": "51212",
+    "reason": "outside F46 states (IN)",
+    "row": 9,
+    "sheet": "42",
+    "source_id": "miso-lrtp-tr21-midwest"
   }
 ]

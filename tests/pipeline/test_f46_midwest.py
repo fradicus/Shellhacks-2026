@@ -115,3 +115,14 @@ def test_older_spp_editions_add_only_completed_upgrades_no_other_rollout_has():
     south = {p["native_id"] for p in load_json(REPO_ROOT / "data" / "sppsouth" / "projects.json")}
     assert past and all(p["status_group"] == "in_service" for p in past)
     assert not {p["native_id"] for p in past} & (current | south)
+
+
+def test_lrtp_tranche_2_1_facilities_state_no_status_or_owner_they_do_not_have():
+    from midwest.lrtp import owners
+
+    assert owners("GRE, MP, MRES, OTP, XEL") == ["GRE", "MP", "MRES", "OTP", "XEL"]
+    assert owners("To Be Determined (Subject To Tranche 1 Facility Ownership)") == []
+    tr21 = [p for p in load_json(REPO_ROOT / "data" / "midwest" / "projects.json")
+            if p["source_id"] == "miso-lrtp-tr21-midwest"]
+    assert tr21 and all(p["status_group"] == "unknown" and p["in_service"]["value"] is None for p in tr21)
+    assert all(set(p["states"]) <= {"19", "29", "38", "46"} for p in tr21)
