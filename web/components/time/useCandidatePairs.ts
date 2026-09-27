@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import type { CandidateError, CandidatePage } from "@/lib/national-pairs/types";
 
 /** Pages belong to one dataset and scope. Aborted requests cannot replace a newer scope. */
-export function useCandidatePairs(dataset: string | null, scope: string | null, enabled: boolean, sharedId: string | null) {
-  const key = JSON.stringify([dataset, scope, enabled, sharedId]);
+export function useCandidatePairs(dataset: string | null, scope: string | null, enabled: boolean, sharedId: string | null, query: string) {
+  const key = JSON.stringify([dataset, scope, enabled, sharedId, query]);
   const [cursor, setCursor] = useState({ key: "", offset: 0 });
   const [attempt, setAttempt] = useState(0);
   const offset = cursor.key === key ? cursor.offset : 0;
@@ -27,6 +27,7 @@ export function useCandidatePairs(dataset: string | null, scope: string | null, 
     }
     const params = new URLSearchParams({ dataset, offset: String(offset) });
     if (scope) params.set("scope", scope);
+    if (query) params.set("q", query);
     Promise.all([
       get(params),
       offset === 0 && sharedId ? get(new URLSearchParams({ dataset, id: sharedId })) : Promise.resolve(undefined),
@@ -42,13 +43,14 @@ export function useCandidatePairs(dataset: string | null, scope: string | null, 
         error: error.message || "Candidate list unavailable.", refresh: error.refresh }));
     });
     return () => controller.abort();
-  }, [dataset, scope, enabled, sharedId, key, offset, request]);
+  }, [dataset, scope, enabled, sharedId, query, key, offset, request]);
   const current = result.key === key ? result : undefined;
   return {
     page: current?.page, shared: current?.shared,
     loading: enabled && !!dataset && current?.request !== request,
     error: enabled && !dataset ? "National dataset unavailable." : current?.error,
     refresh: current?.refresh,
+    reset: () => setCursor({ key, offset: 0 }),
     retry: () => setAttempt((n) => n + 1),
     loadMore: () => { if (current?.page?.nextOffset != null) setCursor({ key, offset: current.page.nextOffset }); },
   };

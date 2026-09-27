@@ -111,6 +111,7 @@ export function TimeView({
   pairs: legacyPairs,
   initialScope,
   initialPairId,
+  initialQuery,
   analysisDate,
   fixtureMode,
   national,
@@ -121,6 +122,7 @@ export function TimeView({
 }: {
   initialScope: string | null;
   initialPairId: string | null;
+  initialQuery: string;
   projects: TimeProject[];
   pairs: TimePair[];
   analysisDate: string;
@@ -137,7 +139,9 @@ export function TimeView({
   const [scope, setScope] = useState<Scope | null>(() => parseScope(initialScope));
   const [candidateMode, setCandidateMode] = useState(!initialPairId || initialPairId.startsWith("npc:"));
   const [sharedId, setSharedId] = useState(initialPairId?.startsWith("npc:") ? initialPairId : null);
-  const candidates = useCandidatePairs(national.dataset, scope ? formatScope(scope) : null, candidateMode && national.mode !== "snapshot", sharedId);
+  const [searchQuery, setSearchQuery] = useState(initialQuery);
+  const [searchDraft, setSearchDraft] = useState(initialQuery);
+  const candidates = useCandidatePairs(national.dataset, scope ? formatScope(scope) : null, candidateMode && national.mode !== "snapshot", sharedId, searchQuery);
   const candidateError = national.mode === "snapshot" ? "Nearby candidates are unavailable in committed snapshot mode." : candidates.error;
   const candidatePairs = useMemo<TimePair[]>(() => (candidates.page?.pairs ?? []).map((p) => ({ ...p,
     candidate: true, view: "tentative", review_state: null })), [candidates.page]);
@@ -716,6 +720,25 @@ export function TimeView({
     [overview],
   );
 
+  function searchCandidates(value: string) {
+    const query = value.replace(/[\s_]+/g, " ").trim();
+    stopTourRef.current();
+    incoming.current = null;
+    setSharedId(null);
+    setPairId(null);
+    setProjectKey(null);
+    setHover(null);
+    setPreview(null);
+    setSearchDraft(query);
+    setSearchQuery(query);
+    candidates.reset();
+    const url = new URL(window.location.href);
+    if (query) url.searchParams.set("q", query);
+    else url.searchParams.delete("q");
+    url.searchParams.delete("pair");
+    window.history.replaceState(window.history.state, "", url);
+  }
+
   // Pointer: hover and click on pillars and beads, picked in screen space.
   useEffect(() => {
     const el = container.current;
@@ -1024,8 +1047,17 @@ export function TimeView({
             {mode ? "Nearby candidates" : "Legacy pairs"}
           </button>)}
         </div>
+        {candidateMode ? <form className={s.candidateSearch} onSubmit={(event) => { event.preventDefault(); searchCandidates(searchDraft); }}>
+          <label htmlFor="candidate-search">Search projects or utilities</label>
+          <div>
+            <input id="candidate-search" type="search" maxLength={120} value={searchDraft}
+              placeholder="Name, utility or project ID" onChange={(event) => setSearchDraft(event.target.value)} />
+            <button type="submit">Search</button>
+            {searchDraft || searchQuery ? <button type="button" onClick={() => searchCandidates("")}>Clear</button> : null}
+          </div>
+        </form> : null}
         {candidateMode ? <p className={s.footnote} aria-live="polite">
-          {candidates.page ? `${candidates.page.total.toLocaleString("en-US")} candidates · ${scopeLabel ?? "United States"}` : candidates.loading ? "Loading candidates…" : "Candidates unavailable"}
+          {candidates.page ? `${candidates.page.total.toLocaleString("en-US")} ${searchQuery ? `matches for “${searchQuery}”` : "candidates"} · ${scopeLabel ?? "United States"}` : candidates.loading ? "Loading candidates…" : "Candidates unavailable"}
         </p> : <div className={s.tabs} role="group" aria-label="Which pairs">
           {VIEWS.map(({ v, label, help }) => (
             <button key={v} type="button" aria-pressed={view === v} title={help} onClick={() => changeView(v)}>
@@ -1067,11 +1099,19 @@ export function TimeView({
                     <span className={`${s.pairNames} ${candidateMode ? s.candidateNames : ""}`}>
                       <span>
                         <i style={{ background: a ? projectColor(a) : NO_STATE_INK }} />
-                        {(a?.name ?? p.a).replaceAll("_", " ")}
+                        <span className={p.candidate ? s.endpointIdentity : undefined}>
+                          {(a?.name ?? p.a).replaceAll("_", " ")}
+                          {p.candidate ? <small>{a?.national?.project.owner ?? "Owner unknown"}<br />
+                            {a?.source_id ?? "Source unknown"} · {a?.national?.project.native_id ?? "Project ID unknown"}</small> : null}
+                        </span>
                       </span>
                       <span>
                         <i style={{ background: b ? projectColor(b) : NO_STATE_INK }} />
-                        {(b?.name ?? p.b).replaceAll("_", " ")}
+                        <span className={p.candidate ? s.endpointIdentity : undefined}>
+                          {(b?.name ?? p.b).replaceAll("_", " ")}
+                          {p.candidate ? <small>{b?.national?.project.owner ?? "Owner unknown"}<br />
+                            {b?.source_id ?? "Source unknown"} · {b?.national?.project.native_id ?? "Project ID unknown"}</small> : null}
+                        </span>
                       </span>
                     </span>
                     <span className={s.pairNums}>
@@ -1088,7 +1128,7 @@ export function TimeView({
           </ol>
         ) : candidateMode && candidateError ? null : (
           <div className={s.empty}>
-            <p>{candidateMode ? (candidates.loading ? "Loading candidates…" : candidateError ? "" : "No candidates with both projects in this scope.") : !pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
+            <p>{candidateMode ? (candidates.loading ? "Loading candidates…" : candidateError ? "" : searchQuery ? `No candidates match “${searchQuery}” in ${scopeLabel ?? "the United States"}.` : "No candidates with both projects in this scope.") : !pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
               : scopeLabel ? `No ${view} pairs with both projects ${scope?.kind === "pin" ? `within ${RULE_MI} mi of the pin` : `in ${scopeLabel}`}. Zero is a valid result, not a failure to look.`
               : `No ${view} pairs in this data. Zero is a valid result, not a failure to look.`}</p>
             {!candidateMode && VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (

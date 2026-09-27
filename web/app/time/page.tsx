@@ -66,7 +66,7 @@ export default async function TimePage({ searchParams }: { searchParams: Promise
     regions: (national.geography?.regions ?? []).map((r) => ({ code: r.region_code, name: r.name })),
   };
   return (
-    <TimeView initialScope={typeof query.scope === "string" ? query.scope : null} initialPairId={typeof query.pair === "string" ? query.pair : null} projects={slim} geography={geography} stateInk={INK} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
+    <TimeView initialQuery={typeof query.q === "string" ? query.q : ""} initialScope={typeof query.scope === "string" ? query.scope : null} initialPairId={typeof query.pair === "string" ? query.pair : null} projects={slim} geography={geography} stateInk={INK} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
         drawn: nationalPoints.length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );

@@ -1671,3 +1671,19 @@
 .candidateNames > span { white-space: normal; overflow-wrap: anywhere; }
 .loadMore { width: 100%; padding: 12px; color: inherit; background: transparent; border: 0; border-top: 1px solid #ffffff18; cursor: pointer; }
 .loadMore:disabled { opacity: .5; cursor: wait; }
+
+/* Submitted search keeps typing independent from the current result set. */
+.candidateSearch { padding: 10px 16px 0; }
+.candidateSearch label { display: block; font-size: 12px; margin-bottom: 6px; color: #b8bdc4; }
+.candidateSearch > div { display: flex; gap: 6px; }
+.candidateSearch input { min-width: 0; flex: 1; }
+.candidateSearch input, .candidateSearch button {
+  font: inherit; font-size: 13px; color: inherit; background: #ffffff0a;
+  border: 1px solid #ffffff30; border-radius: 6px; padding: 8px;
+}
+.candidateSearch button { cursor: pointer; }
+.endpointIdentity { min-width: 0; user-select: text; }
+.endpointIdentity small { display: block; color: #aab1ba; font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
+@media (max-width: 860px) {
+  .left:has(.candidateSearch) { height: 56%; max-height: 56%; }
+}
