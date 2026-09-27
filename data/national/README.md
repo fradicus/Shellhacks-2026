@@ -29,6 +29,7 @@ uv run python -m national.load
 3. Mid-Atlantic additions: `data/expansion/mid-atlantic/releases/active.json` (C28).
 4. Texas: `data/texas/statewide/releases/active.json` (C32) when present; otherwise
    `data/texas/releases/active.json` (C29). One exclusive slot; an invalid statewide release fails the load.
+5. Great Lakes additions: `data/greatlakes/releases/active.json` (C26).
 
 Each producer validates its facts-bound release. The loader recomputes source/total
 coverage and validates the assembled snapshot before the national loader can stage it. Missing active releases
@@ -36,7 +37,7 @@ leave the base unchanged; invalid releases fail before staging. Candidate and re
 
 Expansion geometry and its source/review evidence are embedded in the same national project document and move
 with the existing atomic dataset pointer. Project IDs, original source rows, statuses and milestone precision
-remain unchanged. Runtime `coverage.expansion`, `coverage.southeast`, `coverage.mid_atlantic` and `coverage.texas` preserve
+remain unchanged. Runtime `coverage.expansion`, `coverage.southeast`, `coverage.mid_atlantic`, `coverage.texas` and `coverage.greatlakes` preserve
 each producer’s coverage, review counts and gaps separately from the recomputed national totals.
 The workbook still supplies no coordinates; separate reviewed evidence supplies any accepted ISO-NE locations.
 `national build` continues to write base snapshots only, so repeated loads do not bake overlays into originals.
@@ -68,5 +69,5 @@ markers a renderer displays after filtering or clustering.
 The September 27 audit found ten legacy project centers excluded by current endpoint rejections in the
 national projection but retained by the legacy loader. This change preserves their national exclusions.
 The legacy display correction is tracked with its owner in
-[PR 184](https://github.com/fradicus/Shellhacks-2026/pull/184#issuecomment-5852940187).
+[issue 191](https://github.com/fradicus/Shellhacks-2026/issues/191).
 See `consistency-audit.json` for the reproducible source snapshot counts and affected project IDs.
