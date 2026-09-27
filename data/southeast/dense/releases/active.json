@@ -118,6 +118,43 @@
         "sources": "94ee6514af6e285d16d6d531825cbb5572e4df42014ddf4dbdfff4836e3a49a6"
       }
     },
+    "sertp": {
+      "expected_counts": {
+        "by_state": {
+          "01": 30,
+          "12": 1,
+          "13": 45,
+          "21": 2,
+          "28": 1,
+          "37": 28,
+          "45": 8,
+          "47": 5
+        },
+        "candidate": 116,
+        "candidate_unique_name": 1,
+        "distinct_points": 87,
+        "located": 117,
+        "located_by_state": {
+          "01": 30,
+          "12": 1,
+          "13": 45,
+          "21": 2,
+          "28": 1,
+          "37": 28,
+          "45": 8,
+          "47": 5
+        },
+        "located_dated": 117,
+        "located_not_in_service": 117,
+        "official": 0,
+        "projects": 331,
+        "sources": 4
+      },
+      "files": {
+        "projects": "88323525fd2b3cfe366631244745ce5c999a3e65fd2d1b603fdb883cb9d36c6a",
+        "sources": "1e188d236eedea58cab18ad5dc25f3acf8726b744c551ffca63c9e7b05b7f6e4"
+      }
+    },
     "virginia": {
       "expected_counts": {
         "by_state": {
