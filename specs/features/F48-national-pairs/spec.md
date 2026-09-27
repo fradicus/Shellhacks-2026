@@ -25,3 +25,9 @@ Use standard-library spatial buckets and existing MongoDB/Zod clients. No new
 packages, routing requests or public-site computation of cross-project distances.
 Unresolved owners stay excluded with a reason; tentative facility locations remain
 eligible with their visible uncertainty. No data quotas or invented dates.
+
+## C55 search
+
+Implement [C55](../../decisions/C55-candidate-search.md)'s optional `q` read API
+and focused tests before F19 uses it. Search preserves the published matching
+rule and stored rank; it never re-generates pairs or guesses owner identities.
