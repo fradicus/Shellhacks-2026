@@ -38,3 +38,12 @@ jobs:
           if [ -f national/load.py ] && [ -f ../data/national/projects.json ]; then
             uv run python -m national.load
           fi
+      # C37: the Action's step summary is the publication receipt; no receipt-only PRs.
+      - name: Verify Atlas serves the expected publication
+        if: ${{ hashFiles('pipeline/national/load.py', 'data/national/projects.json') != '' }}
+        working-directory: pipeline
+        env:
+          MONGODB_URI_RW: ${{ secrets.MONGODB_URI_RW }}
+          MONGODB_DB: ${{ secrets.MONGODB_DB || 'gridbridge' }}
+          GIT_SHA: ${{ github.sha }}
+        run: uv run python -m common.publication
