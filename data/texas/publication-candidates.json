@@ -1,0 +1,254 @@
+[
+  {
+    "_id": "ercot-tpit:80546B",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "80546B",
+    "name": "Upgrade the Hutto & Round Rock - Salado 138 kV Line",
+    "description": null,
+    "owner": "ONCOR",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT Williamson County terminal; Census coordinate county check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2026-05-15T00:00:00",
+      "value": "2026-05",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.62354558857126,
+      "lon": -97.64475265163803,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT row 67 terminal matched City of Georgetown facility {C5BFC797-3CAE-40EE-879A-F9AA71230F14} (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.62354558857126,
+      "lon": -97.64475265163803,
+      "facility_name": "GEORGETOWN EAST",
+      "facility_global_id": "{C5BFC797-3CAE-40EE-879A-F9AA71230F14}",
+      "facility_owner_raw": "COG",
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_crs": "EPSG:4326",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "match": "unique normalized source terminal + named Williamson County",
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "PlannedTPIT071326NoCost",
+      "row": 67,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "80546B",
+        "Project Title": "Upgrade the Hutto & Round Rock - Salado 138 kV Line",
+        "Terminal from": "Round Rock Westinghouse Tap",
+        "Terminal to": "Georgetown East",
+        "Transmission Status": "Planned",
+        "Transmission Owner": "ONCOR",
+        "Projected In-Service Date": "2026-05-15T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "138"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:92629",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "92629",
+    "name": "Gabriel - Rivery MLSE Upgrade",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT Williamson County terminal; Census coordinate county check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2026-06-30T00:00:00",
+      "value": "2026-06",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT row 105 terminal matched City of Georgetown facility {2C60F723-5BA1-4A1C-A64B-554182454355} (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "facility_name": "GABRIEL",
+      "facility_global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
+      "facility_owner_raw": "LCRA",
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_crs": "EPSG:4326",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "match": "unique normalized source terminal + named Williamson County",
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "PlannedTPIT071326NoCost",
+      "row": 105,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "92629",
+        "Project Title": "Gabriel - Rivery MLSE Upgrade",
+        "Terminal from": "Gabriel Substation",
+        "Terminal to": null,
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2026-06-30T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "138"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:80546C",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "80546C",
+    "name": "Upgrade the Hutto & Round Rock - Salado 138 kV Line",
+    "description": null,
+    "owner": "ONCOR",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT Williamson County terminal; Census coordinate county check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2026-12-15T00:00:00",
+      "value": "2026-12",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.62354558857126,
+      "lon": -97.64475265163803,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT row 285 terminal matched City of Georgetown facility {C5BFC797-3CAE-40EE-879A-F9AA71230F14} (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.62354558857126,
+      "lon": -97.64475265163803,
+      "facility_name": "GEORGETOWN EAST",
+      "facility_global_id": "{C5BFC797-3CAE-40EE-879A-F9AA71230F14}",
+      "facility_owner_raw": "COG",
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_crs": "EPSG:4326",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "match": "unique normalized source terminal + named Williamson County",
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "PlannedTPIT071326NoCost",
+      "row": 285,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "80546C",
+        "Project Title": "Upgrade the Hutto & Round Rock - Salado 138 kV Line",
+        "Terminal from": "Georgetown East",
+        "Terminal to": "Sonterra",
+        "Transmission Status": "Planned",
+        "Transmission Owner": "ONCOR",
+        "Projected In-Service Date": "2026-12-15T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "138"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:85973",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "85973",
+    "name": "Georgetown - Rivery Transmission Line Upgrade",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT Williamson County terminal; Census coordinate county check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2026-12-31T00:00:00",
+      "value": "2026-12",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.632378491182916,
+      "lon": -97.68723828041044,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT row 333 terminal matched City of Georgetown facility {FAF1CFEC-49C1-4C76-B60E-9BD9229B0252} (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.632378491182916,
+      "lon": -97.68723828041044,
+      "facility_name": "GEORGETOWN",
+      "facility_global_id": "{FAF1CFEC-49C1-4C76-B60E-9BD9229B0252}",
+      "facility_owner_raw": "LCRA",
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_crs": "EPSG:4326",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "match": "unique normalized source terminal + named Williamson County",
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "PlannedTPIT071326NoCost",
+      "row": 333,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "85973",
+        "Project Title": "Georgetown - Rivery Transmission Line Upgrade",
+        "Terminal from": "Georgetown Substation",
+        "Terminal to": null,
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2026-12-31T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "138"
+      }
+    }
+  }
+]

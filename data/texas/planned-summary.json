@@ -1,0 +1,19 @@
+{
+  "source_id": "ercot-tpit-2026-07",
+  "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+  "sheet": "PlannedTPIT071326NoCost",
+  "observations": 358,
+  "unique_ids": 358,
+  "status_raw_counts": {
+    "Conceptual": 13,
+    "In-Service": 11,
+    "Planned": 301,
+    "Under Construction": 25,
+    "unknown": 8
+  },
+  "candidate_locations": 4,
+  "official_locations": 0,
+  "published_projects": 0,
+  "scope_review_pending": 358,
+  "missing_titles": 7
+}
