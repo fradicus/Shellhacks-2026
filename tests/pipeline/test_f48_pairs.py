@@ -89,3 +89,17 @@ def test_grid_equals_brute_force_including_poles_and_date_line():
     assert {(p["a"], p["b"]) for p in actual["pairs"]} == expected
     assert actual["coverage"]["distance_comparisons"] < len(rows) * (len(rows) - 1) / 4
     assert [p["rank"] for p in actual["pairs"]] == list(range(1, len(expected) + 1))
+
+
+def test_same_owner_code_is_resolved_in_its_source_only():
+    ledger = {"version": "test", "entries": [
+        {"identities": ["brazos"], "aliases": ["BEPC"], "source_ids": ["ercot"], "evidence": ["test"]},
+        {"identities": ["basin"], "aliases": ["BEPC"], "source_ids": ["spp"], "evidence": ["test"]},
+    ]}
+    owners = owner_index(ledger)
+    assert identities(project("a", owner="BEPC", source_id="ercot"), owners) == {"brazos"}
+    assert identities(project("b", owner="BEPC", source_id="spp"), owners) == {"basin"}
+    assert identities(project("c", owner="BEPC", source_id="unmapped"), owners) is None
+    ledger["entries"][1]["source_ids"].append("ercot")
+    with pytest.raises(ValueError, match="ambiguous"):
+        owner_index(ledger)
