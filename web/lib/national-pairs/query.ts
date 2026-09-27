@@ -5,7 +5,7 @@ export const RULE = "national-provisional-25mi-v1";
 const fields = z.object({
   dataset: z.string().regex(/^[a-zA-Z0-9._:-]{1,128}$/),
   scope: z.string().max(160).optional(),
-  q: z.string().max(120).transform(value => value.trim().replace(/[\s_]+/g, " ")).optional(),
+  q: z.string().max(120).transform(value => value.replace(/[\s_]+/g, " ").trim()).optional(),
   offset: z.coerce.number().int().min(0).max(1_000_000).default(0),
   id: z.string().regex(/^npc:[a-f0-9]{32}$/).optional(),
 }).strict();
