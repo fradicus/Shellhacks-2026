@@ -77,3 +77,9 @@ approximate-only references and no-display-location records partition the datase
 overlapping review count. Keep the existing center-based located count. Validate counts against records,
 prove replay is deterministic and verify supported GA/SC filters through the active read-only API after load.
 Different frontend cohorts may have different totals; frontend and legacy loader changes remain owner work.
+
+## C48 candidate publication
+
+As specified in [F30 candidate publication](../../decisions/F30-candidate-publication.md),
+stage F48's generated pairs atomically with each assembled national dataset. Failure
+preserves the previous dataset. The same Codex session owns this bounded hookup.

@@ -134,3 +134,63 @@ def test_indexes_are_separate_for_array_filters():
     assert (("dataset", 1), ("states", 1), ("counties", 1)) not in keys
     assert (("dataset", 1), ("in_service.value", 1)) in keys
     assert (("dataset", 1), ("geo", "2dsphere")) in keys
+
+
+def candidate_snapshot():
+    value = snapshot()
+    first = value["projects"][0]
+    first.update(owner="Oncor Electric Delivery", location_review="confirmed", other_owners=[])
+    first["in_service"] = {"value": "2028-01-01", "precision": "day"}
+    value["projects"].append({**first, "_id": "second", "owner": "CNP"})
+    return value
+
+
+def test_candidates_publish_before_activation_with_coverage_and_retention():
+    db = mongomock.MongoClient().gridbridge
+    for dataset in ("first", "second", "third"):
+        assert load(db, candidate_snapshot(), dataset) == 0
+        assert db.national_candidate_pairs.count_documents({"dataset": dataset}) == 1
+        record = db.national_candidate_pairs.find_one({"dataset": dataset})
+        assert {record["a"], record["b"]} == {"project", "second"}
+        run = db.national_runs.find_one({"dataset": dataset})
+        assert run["counts"]["national_candidate_pairs"] == 1
+        assert run["candidate_pair_coverage"]["eligible_projects"] == 2
+    assert db.national_candidate_pairs.count_documents({"dataset": "first"}) == 0
+    assert load(db, candidate_snapshot(), "third") == 0
+
+
+def test_pair_write_failure_preserves_previous_dataset(monkeypatch):
+    db = mongomock.MongoClient().gridbridge
+    assert load(db, candidate_snapshot(), "previous") == 0
+
+    def fail(*args, **kwargs):
+        raise RuntimeError("test pair write failure")
+
+    monkeypatch.setattr(db.national_candidate_pairs, "insert_many", fail)
+    assert load(db, candidate_snapshot(), "candidate") == 1
+    assert db.meta.find_one({"_id": "national_active"})["dataset"] == "previous"
+    assert db.national_candidate_pairs.count_documents({"dataset": "previous"}) == 1
+
+
+def test_pair_count_mismatch_and_generation_failure_do_not_activate(monkeypatch):
+    import national.load as loader
+
+    db = mongomock.MongoClient().gridbridge
+    assert load(db, candidate_snapshot(), "previous") == 0
+    monkeypatch.setattr(db.national_candidate_pairs, "insert_many", lambda *args, **kwargs: None)
+    assert load(db, candidate_snapshot(), "incomplete") == 1
+    assert db.meta.find_one({"_id": "national_active"})["dataset"] == "previous"
+
+    def fail(*args, **kwargs):
+        raise ValueError("test identity ambiguity")
+
+    monkeypatch.setattr(loader, "generate", fail)
+    assert load(db, candidate_snapshot(), "bad-generation") == 1
+    assert db.meta.find_one({"_id": "national_active"})["dataset"] == "previous"
+
+
+def test_active_candidate_pairs_cannot_be_silently_repaired_in_place():
+    db = mongomock.MongoClient().gridbridge
+    assert load(db, candidate_snapshot(), "active") == 0
+    db.national_candidate_pairs.delete_many({})
+    assert load(db, candidate_snapshot(), "active") == 1
