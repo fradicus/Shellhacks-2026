@@ -3,13 +3,17 @@ from collections import Counter
 from copy import deepcopy
 
 import pytest
-
 from common import REPO_ROOT
-from national.build import load_snapshot, validate_snapshot_values
+from national.build import OUTPUTS, load_snapshot, validate_snapshot_values
+
+
+def committed_snapshot():
+    return {name: json.loads((REPO_ROOT / "data" / "national" / f"{name}.json").read_text()) for name in OUTPUTS}
 
 
 def test_committed_snapshot_has_measured_not_national_claims():
-    snapshot = load_snapshot(REPO_ROOT)
+    snapshot = committed_snapshot()
+    assert validate_snapshot_values(snapshot) == []
     projects, coverage = snapshot["projects"], snapshot["coverage"]
     assert len(projects) == coverage["projects_total"] == 1_286
     assert coverage["located_count"] == 69
@@ -35,7 +39,7 @@ def test_committed_snapshot_has_measured_not_national_claims():
 
 
 def test_iso_rows_preserve_source_precision_and_row_evidence():
-    projects = {project["_id"]: project for project in load_snapshot(REPO_ROOT)["projects"]}
+    projects = {project["_id"]: project for project in committed_snapshot()["projects"]}
     assert projects["iso-ne:1926"]["in_service"] == {
         "raw": "2026-06-01T00:00:00",
         "value": "2026-06",

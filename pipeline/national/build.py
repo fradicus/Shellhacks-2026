@@ -68,7 +68,7 @@ def _coverage(projects: list[dict[str, Any]], imported_source_ids: set[str]) -> 
         "failures": [],
         "notes": [
             "Counts cover imported records only and do not claim nationwide project completeness.",
-            "ISO-NE county and coordinate fields are absent from the source and remain unknown.",
+            "ISO-NE supplies no counties or coordinates; independently reviewed expansion evidence may locate projects.",
             "Legacy project state assignments and every current project county remain unknown rather than inferred.",
             "Legacy discovery includes current filing versions only; superseded versions remain in the filing-change view.",
             "Census bounds and representative points frame reference geography and never become project locations.",
@@ -178,4 +178,18 @@ def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     errors = validate_snapshot_values(snapshot)
     if errors:
         raise ValueError("national snapshot validation failed:\n" + "\n".join(errors))
+    # Only the fixed release path activates F38; source/candidate folders are never scanned.
+    if (root / "data" / "expansion" / "releases" / "active.json").exists():
+        from expansion.publish import apply_release
+
+        snapshot = apply_release(snapshot, root)
+        imported_source_ids = {
+            source["_id"] for source in snapshot["sources"] if source["import_status"] == "imported"
+        }
+        measured = _coverage(snapshot["projects"], imported_source_ids)
+        for name in ("projects_total", "located_count", "sources", "notes"):
+            snapshot["coverage"][name] = measured[name]
+        errors = validate_snapshot_values(snapshot)
+        if errors:
+            raise ValueError("assembled national snapshot validation failed:\n" + "\n".join(errors))
     return snapshot
