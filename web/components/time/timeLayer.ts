@@ -7,9 +7,9 @@ import { LineSegments2 } from "three/examples/jsm/lines/LineSegments2.js";
 import { LineSegmentsGeometry } from "three/examples/jsm/lines/LineSegmentsGeometry.js";
 import type { CustomLayerInterface, CustomRenderMethodInput, Map as MlMap } from "maplibre-gl";
 import { metersPerPixel, type Span } from "./timeScale";
+import { hex, mul, ease, points, fillPoints, lines, fillLines, project, createRenderer, disposeScene, type RGB, type Seg } from "./scenePrimitives";
 
 type Ml = typeof import("maplibre-gl");
-type RGB = [number, number, number];
 
 export type Emphasis = "normal" | "dim" | "hot" | "sel";
 export interface TimeItem {
@@ -46,12 +46,6 @@ export interface RuleRings {
 /** Sweep progress during the intro: the year reached and how many dated items are filed in service by then. */
 export type SweepState = { years: number; shown: number; total: number } | null;
 
-const hex = (h: string): RGB => {
-  const n = parseInt(h.slice(1), 16);
-  return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
-};
-const mul = (c: RGB, k: number): RGB => [c[0] * k, c[1] * k, c[2] * k];
-const ease = (t: number) => 1 - (1 - t) ** 3;
 const INK: RGB = hex("#f4efe6");
 const BRIGHT: Record<Emphasis, number> = { normal: 1, dim: 0.18, hot: 1.5, sel: 1.6 };
 const RULE_M = 40_233.6; // 25 statute miles, the overlap rule's radius
@@ -117,55 +111,6 @@ const PLANE_FS = /* glsl */ `
     gl_FragColor = vec4(uColor, (0.05 + line * 0.13 + rim) * fade * uOpacity);
   }`;
 
-function points(): THREE.Points<THREE.BufferGeometry, THREE.ShaderMaterial> {
-  const mat = new THREE.ShaderMaterial({
-    vertexShader: POINT_VS,
-    fragmentShader: POINT_FS,
-    uniforms: { uDpr: { value: 1 }, uW0: { value: 0 } },
-    transparent: true,
-    depthTest: false,
-    depthWrite: false,
-    blending: THREE.AdditiveBlending,
-  });
-  const pts = new THREE.Points(new THREE.BufferGeometry(), mat);
-  pts.frustumCulled = false;
-  return pts;
-}
-
-function fillPoints(
-  pts: THREE.Points<THREE.BufferGeometry, THREE.ShaderMaterial>,
-  rows: { p: [number, number, number]; c: RGB; size: number; shape: number; bright: number }[],
-) {
-  const g = new THREE.BufferGeometry();
-  g.setAttribute("position", new THREE.Float32BufferAttribute(rows.flatMap((r) => r.p), 3));
-  g.setAttribute("tint", new THREE.Float32BufferAttribute(rows.flatMap((r) => r.c), 3));
-  g.setAttribute("size", new THREE.Float32BufferAttribute(rows.map((r) => r.size), 1));
-  g.setAttribute("shape", new THREE.Float32BufferAttribute(rows.map((r) => r.shape), 1));
-  g.setAttribute("bright", new THREE.Float32BufferAttribute(rows.map((r) => r.bright), 1));
-  pts.geometry.dispose();
-  pts.geometry = g;
-  pts.visible = rows.length > 0;
-}
-
-type Seg = { a: [number, number, number]; b: [number, number, number]; ca: RGB; cb: RGB };
-
-function lines(width: number, opts: { dashed?: boolean; additive?: boolean } = {}) {
-  const mat = new LineMaterial({
-    vertexColors: true,
-    linewidth: width,
-    transparent: true,
-    depthTest: false,
-    depthWrite: false,
-    dashed: !!opts.dashed,
-    dashSize: 6,
-    gapSize: 5,
-    blending: opts.additive === false ? THREE.NormalBlending : THREE.AdditiveBlending,
-  });
-  const mesh = new LineSegments2(new LineSegmentsGeometry(), mat);
-  mesh.frustumCulled = false;
-  return { mesh, width };
-}
-
 /** A unit circle on the ground, scaled and placed per frame: one per end of the selected pair. */
 function ring() {
   const pos: number[] = [];
@@ -190,20 +135,6 @@ function ring() {
   mesh.frustumCulled = false;
   mesh.visible = false;
   return { mesh, width: 1.5 };
-}
-
-function fillLines(l: { mesh: LineSegments2 }, segs: Seg[]) {
-  if (!segs.length) {
-    l.mesh.visible = false;
-    return;
-  }
-  const g = new LineSegmentsGeometry();
-  g.setPositions(segs.flatMap((s) => [...s.a, ...s.b]));
-  g.setColors(segs.flatMap((s) => [...s.ca, ...s.cb]));
-  l.mesh.geometry.dispose();
-  l.mesh.geometry = g;
-  if ((l.mesh.material as LineMaterial).dashed) l.mesh.computeLineDistances();
-  l.mesh.visible = true;
 }
 
 /** Split a vertical segment at the today plane so its lower part renders under the glass and the rest above it. */
@@ -252,11 +183,11 @@ export function createTimeLayer(
   const ruler = lines(1.2);
   const dimSolid = lines(1.6);
   const dimDashed = lines(1.1, { dashed: true });
-  const beadsBelow = points();
-  const beadsAbove = points();
-  const anchors = points();
-  const marks = points();
-  const halos = points();
+  const beadsBelow = points(POINT_VS, POINT_FS);
+  const beadsAbove = points(POINT_VS, POINT_FS);
+  const anchors = points(POINT_VS, POINT_FS);
+  const marks = points(POINT_VS, POINT_FS);
+  const halos = points(POINT_VS, POINT_FS);
   const ruleA = ring();
   const ruleB = ring();
   const plane = new THREE.Mesh(
@@ -439,32 +370,16 @@ export function createTimeLayer(
     return main.multiply(localM);
   }
 
-  function project(m: THREE.Matrix4, x: number, y: number, z: number, w: number, h: number) {
-    const v = new THREE.Vector4(x, y, z, 1).applyMatrix4(m);
-    if (v.w <= 0) return { x: 0, y: 0, on: false };
-    const sx = ((v.x / v.w + 1) / 2) * w;
-    const sy = ((1 - v.y / v.w) / 2) * h;
-    return { x: sx, y: sy, on: sx > -40 && sy > -40 && sx < w + 40 && sy < h + 40 };
-  }
-
   const layer: CustomLayerInterface = {
     id: "gridbridge-time",
     type: "custom",
     renderingMode: "3d",
     onAdd(m, gl) {
       map = m;
-      THREE.ColorManagement.enabled = false;
-      renderer = new THREE.WebGLRenderer({ canvas: m.getCanvas(), context: gl, antialias: true });
-      renderer.autoClear = false;
-      renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+      renderer = createRenderer(m, gl);
     },
     onRemove() {
-      scene.traverse((o) => {
-        const mesh = o as THREE.Mesh;
-        mesh.geometry?.dispose();
-        (mesh.material as THREE.Material | undefined)?.dispose();
-      });
-      renderer?.dispose();
+      disposeScene(scene, renderer);
       renderer = null;
       map = null;
     },

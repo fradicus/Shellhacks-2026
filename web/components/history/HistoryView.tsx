@@ -10,6 +10,8 @@ import type { NationalTier } from "@/components/time/nationalProjects";
 import type { Emphasis, HistoryItem, HistoryLayer, LabelSpec, Projected } from "./historyLayer";
 import { Ledger, type LedgerYear } from "./Ledger";
 import s from "./history.module.css";
+import { bearing as bearingDeg } from "@/components/time/sceneCamera";
+import { SceneControls } from "@/components/time/SceneControls";
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 // Identity colours exactly as on /time: the utilities, and the national records.
@@ -56,13 +58,6 @@ const TIER_LABEL: Record<NationalTier, string> = {
   tentative: "Tentative location, not independently reviewed",
 };
 const color = (p: HistoryProject) => (p.tier ? TIER_COLOR[p.tier] : COLOR[p.identity]);
-
-function bearingDeg(a: { lat: number; lon: number }, b: { lat: number; lon: number }) {
-  const r = Math.PI / 180;
-  const y = Math.sin((b.lon - a.lon) * r) * Math.cos(b.lat * r);
-  const x = Math.cos(a.lat * r) * Math.sin(b.lat * r) - Math.sin(a.lat * r) * Math.cos(b.lat * r) * Math.cos((b.lon - a.lon) * r);
-  return (Math.atan2(y, x) * 180) / Math.PI;
-}
 
 function overviewPadding(el: HTMLElement | null) {
   const w = el?.clientWidth ?? 1400;
@@ -992,25 +987,8 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
             </span>
           </li>
         </ul>
-        <div className={s.controls}>
-          <div className={s.seg} role="group" aria-label="Dimensions">
-            <button type="button" aria-pressed={flat} onClick={() => toggleFlat(true)}>
-              2D
-            </button>
-            <button type="button" aria-pressed={!flat} onClick={() => toggleFlat(false)}>
-              3D
-            </button>
-          </div>
-          <label className={s.slider}>
-            <span>
-              1 year = <b>{yearPx}px</b>
-            </span>
-            <input type="range" min={4} max={60} step={1} value={yearPx} disabled={flat} onChange={(e) => setYearPx(Number(e.target.value))} />
-          </label>
-          <button type="button" className={s.reset} onClick={overview}>
-            Overview
-          </button>
-        </div>
+        <SceneControls styles={s} flat={flat} onFlat={toggleFlat} yearPx={yearPx} onYearPx={setYearPx}
+          range={[4, 60, 1]} onOverview={overview} />
         <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through projects · Esc clears</p>
       </section>
 
