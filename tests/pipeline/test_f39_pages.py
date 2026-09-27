@@ -1,4 +1,4 @@
-"""F39/C40 pages batch: schedule wording, page parsing, legacy-duplicate rule, committed batch."""
+"""F39/C45 pages batch: schedule wording, page parsing, legacy-duplicate rule, committed batch."""
 
 from common import REPO_ROOT, load_json
 from national.build import OUTPUTS

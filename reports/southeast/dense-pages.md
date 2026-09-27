@@ -1,4 +1,4 @@
-# Dense Southeast: small utility project pages (EKPC, FirstEnergy WV/VA, Georgia Power, Georgia Transmission; C40)
+# Dense Southeast: small utility project pages (EKPC, FirstEnergy WV/VA, Georgia Power, Georgia Transmission; C45)
 
 ## Sources
 

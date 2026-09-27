@@ -3,7 +3,7 @@
 From pipeline/:
   uv run python -m southeast.pages fetch --cache <dir>   # network: index/project pages, EKPC brochures, OSM KY/WV/VA/GA
   uv run python -m southeast.pages build --cache <dir> [--check]
-No page publishes coordinates. Locations are C40 candidates from facility names in the project title matched to OSM
+No page publishes coordinates. Locations are C45 candidates from facility names in the project title matched to OSM
 substations of the page's state(s). Dates only from a page's own completion/ready-for-service statement: Georgia Power's
 and Georgia Transmission's quarterly targets become year-precision planned milestones (quarter kept in the description);
 FirstEnergy's "be complete on or about <date>" is a planned milestone even when that date has passed.
@@ -198,7 +198,7 @@ KEYS = {"ekpc": ["EAST KENTUCKY", "EKPC"],
 PUBLISHERS = {"ekpc": "East Kentucky Power Cooperative", "fe": "FirstEnergy", "gpc": "Georgia Power",
               "gtc": "Georgia Transmission Corporation"}
 ACCESS = "Public utility website; no login, no CEII banner."
-NOTE = ("F39 dense Southeast (C40). No coordinates in the source: points are OSM substation candidates from facility "
+NOTE = ("F39 dense Southeast (C45). No coordinates in the source: points are OSM substation candidates from facility "
         "names in the project title, not independently reviewed.")
 
 
