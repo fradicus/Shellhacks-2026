@@ -3,9 +3,9 @@
   "named_substations": 1195,
   "publisher": "OpenStreetMap contributors",
   "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-CA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-  "retrieved_at": "2026-09-27T05:41:05Z",
+  "retrieved_at": "2026-09-27T09:55:36Z",
   "rights": "ODbL 1.0; attribution required",
   "role": "candidate facility geometry only (C33)",
-  "sha256": "0fcaa3c1fcac5b85e3f594dd99b7f676d3ab3e7ba812ab66f5ea187da54fb8a2",
+  "sha256": "31592e79d55121af290cb505e3fc8b5f8a9262b70a01efed7c4180f6c22763f8",
   "url": "https://overpass-api.de/api/interpreter"
 }
