@@ -8,7 +8,7 @@
 | Status | planned 158, in service 54, cancelled 10, unknown 3 |
 | Candidate located | 52: 38 sites, 7 lines with both endpoints, 7 partial lines (one endpoint) |
 | Candidate located by status | planned 41, in service 9, cancelled 2 |
-| Unlocated | 174: no OSM facility with that exact name 57, no single facility named 51, area/program/multi-facility 39, name found but no operator/voltage corroboration 11, multi-terminal line 10, mixed 5, endpoint unnamed 1 |
+| Unlocated | 173: no OSM facility with that exact name 58, no single facility named 58, area/program/multi-facility 24, name found but no operator/voltage corroboration 11, multi-terminal line 10, mixed endpoint reasons 10, endpoints unnamed 2 |
 | Counties from source text | 11 projects |
 
 ## Sources
