@@ -34,14 +34,14 @@
         "active_projects": 262,
         "audit_review_counts": {
           "confirmed": 0,
-          "downgraded": 29,
+          "downgraded": 16,
           "endpoints": 14,
-          "pairs": 15
+          "pairs": 2
         },
-        "distinct_matched_project_versions": 15,
+        "distinct_matched_project_versions": 7,
         "effective_match_states": {
-          "needs_review": 4,
-          "rejected": 15
+          "needs_review": 3,
+          "rejected": 2
         },
         "gemini": {
           "corpus_pages": 91,
@@ -149,10 +149,10 @@
           "mismatches": 0,
           "sample_count": 12
         },
-        "matches": 19,
+        "matches": 5,
         "project_versions": 299,
         "raw_match_states": {
-          "needs_review": 19
+          "needs_review": 5
         }
       },
       "inactive_projects": 37,
@@ -226,8 +226,8 @@
       "distinct_matched_project_versions": 3,
       "distinct_project_keys": 47,
       "effective_match_states": {
-        "needs_review": 4,
-        "rejected": 15
+        "needs_review": 3,
+        "rejected": 2
       },
       "endpoint_confidence": {
         "high": 0,
@@ -252,14 +252,14 @@
         "active_projects": 262,
         "audit_review_counts": {
           "confirmed": 0,
-          "downgraded": 29,
+          "downgraded": 16,
           "endpoints": 14,
-          "pairs": 15
+          "pairs": 2
         },
-        "distinct_matched_project_versions": 15,
+        "distinct_matched_project_versions": 7,
         "effective_match_states": {
-          "needs_review": 4,
-          "rejected": 15
+          "needs_review": 3,
+          "rejected": 2
         },
         "gemini": {
           "corpus_pages": 91,
@@ -367,10 +367,10 @@
           "mismatches": 0,
           "sample_count": 12
         },
-        "matches": 19,
+        "matches": 5,
         "project_versions": 299,
         "raw_match_states": {
-          "needs_review": 19
+          "needs_review": 5
         }
       },
       "inactive_projects": 0,
@@ -378,10 +378,10 @@
       "located_endpoints": 16,
       "location_records": 56,
       "match_views": {
-        "historical": 16,
+        "historical": 2,
         "tentative": 3
       },
-      "matches_involving_source": 19,
+      "matches_involving_source": 5,
       "project_versions": 47,
       "quality_flags": {
         "cost_consistency_mismatch": 2,
@@ -394,7 +394,7 @@
         "yearly_spend_not_published": 2
       },
       "raw_match_states": {
-        "needs_review": 19
+        "needs_review": 5
       },
       "rows_parsed": 47,
       "rows_seen": 47,
@@ -568,11 +568,11 @@
       "active_projects": 208,
       "contract_version": "coverage-v1",
       "coverage_scope": "canonical_projects",
-      "distinct_matched_project_versions": 12,
+      "distinct_matched_project_versions": 4,
       "distinct_project_keys": 208,
       "effective_match_states": {
-        "needs_review": 4,
-        "rejected": 15
+        "needs_review": 3,
+        "rejected": 2
       },
       "endpoint_confidence": {
         "high": 0,
@@ -597,14 +597,14 @@
         "active_projects": 262,
         "audit_review_counts": {
           "confirmed": 0,
-          "downgraded": 29,
+          "downgraded": 16,
           "endpoints": 14,
-          "pairs": 15
+          "pairs": 2
         },
-        "distinct_matched_project_versions": 15,
+        "distinct_matched_project_versions": 7,
         "effective_match_states": {
-          "needs_review": 4,
-          "rejected": 15
+          "needs_review": 3,
+          "rejected": 2
         },
         "gemini": {
           "corpus_pages": 91,
@@ -712,10 +712,10 @@
           "mismatches": 0,
           "sample_count": 12
         },
-        "matches": 19,
+        "matches": 5,
         "project_versions": 299,
         "raw_match_states": {
-          "needs_review": 19
+          "needs_review": 5
         }
       },
       "inactive_projects": 0,
@@ -723,17 +723,17 @@
       "located_endpoints": 73,
       "location_records": 337,
       "match_views": {
-        "historical": 16,
+        "historical": 2,
         "tentative": 3
       },
-      "matches_involving_source": 19,
+      "matches_involving_source": 5,
       "project_versions": 208,
       "quality_flags": {
         "endpoint_ambiguous": 8,
         "source_status_conflict": 1
       },
       "raw_match_states": {
-        "needs_review": 19
+        "needs_review": 5
       },
       "rows_parsed": 208,
       "rows_seen": 208,
@@ -1487,14 +1487,14 @@
         "active_projects": 262,
         "audit_review_counts": {
           "confirmed": 0,
-          "downgraded": 29,
+          "downgraded": 16,
           "endpoints": 14,
-          "pairs": 15
+          "pairs": 2
         },
-        "distinct_matched_project_versions": 15,
+        "distinct_matched_project_versions": 7,
         "effective_match_states": {
-          "needs_review": 4,
-          "rejected": 15
+          "needs_review": 3,
+          "rejected": 2
         },
         "gemini": {
           "corpus_pages": 91,
@@ -1602,10 +1602,10 @@
           "mismatches": 0,
           "sample_count": 12
         },
-        "matches": 19,
+        "matches": 5,
         "project_versions": 299,
         "raw_match_states": {
-          "needs_review": 19
+          "needs_review": 5
         }
       },
       "inactive_projects": null,

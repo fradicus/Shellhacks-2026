@@ -27,11 +27,14 @@ def test_current_source_counts_and_effective_review_states():
     assert rows["gpc-2025"]["active_by_utility"] == {"GPC": 138, "unknown": 70}
     assert rows["sample"]["coverage_scope"] == "fixture_reference_only"
     assert rows["sample"]["project_versions"] is None
-    assert rows["desc-2025"]["effective_match_states"] == {"needs_review": 4, "rejected": 15}
-    assert rows["desc-2025"]["global"] == rows["gpc-2025"]["global"]
-    assert rows["desc-2025"]["global"]["audit_review_counts"] == {
-        "pairs": 15, "endpoints": 14, "confirmed": 0, "downgraded": 29,
+    audited = load_json(REPO_ROOT / "reports/audit/evidence.json")["review_counts"]
+    matches = load_json(REPO_ROOT / "data/matches/matches.json")
+    assert rows["desc-2025"]["effective_match_states"] == {
+        "needs_review": len(matches) - audited["pairs"], "rejected": audited["pairs"],
     }
+    assert rows["desc-2025"]["global"] == rows["gpc-2025"]["global"]
+    assert rows["desc-2025"]["global"]["audit_review_counts"] == audited
+    assert audited["confirmed"] == 0 and audited["downgraded"] == audited["pairs"] + audited["endpoints"]
     assert rows["desc-2025"]["global"]["gemini"]["status"] == "unavailable"
     assert all("gemini" not in row for row in rows.values())  # one global DESC evaluation, not per-source accuracy
 
