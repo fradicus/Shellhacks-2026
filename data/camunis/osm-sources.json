@@ -1,0 +1,33 @@
+{
+  "extracts": {
+    "osm-ca.json": {
+      "bytes": 1030838,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-CA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:55:36Z",
+      "sha256": "31592e79d55121af290cb505e3fc8b5f8a9262b70a01efed7c4180f6c22763f8",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    "osm-nv.json": {
+      "bytes": 116669,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-NV\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:56:13Z",
+      "sha256": "81f1dd54937d9b823adbf10442936943855e474c4da37bc4f52c28f9f2e2909b",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    "osm-ut.json": {
+      "bytes": 189693,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-UT\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:55:55Z",
+      "sha256": "7081fc0754c7662eaf783080e6bb020a681572b586b63c26c33772976e4a27af",
+      "url": "https://overpass-api.de/api/interpreter"
+    }
+  },
+  "named_substations": {
+    "CA": 1221,
+    "NV": 111,
+    "UT": 138
+  },
+  "publisher": "OpenStreetMap contributors",
+  "rights": "ODbL 1.0; attribution required",
+  "role": "candidate facility geometry only (C33)"
+}

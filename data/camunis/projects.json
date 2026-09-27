@@ -1,0 +1,2274 @@
+[
+  {
+    "_id": "wecc-apr-2026-iid:ks2-ramon-mirage-circuit-2",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/61430457 (Ramon Substation), OSM way/61430458 (Mirage Substation), corroborated by operator, voltage.",
+      "lat": 33.818087,
+      "lon": -116.368481
+    },
+    "counties": [],
+    "description": "230kV “KS2” Ramon-Mirage Circuit #2 – New redundant circuit to accompany the existing “KN” and II. Transmission Facilities “KS” lines between IID and SCE. This new circuit is expected to be an additional component of Path 42 and has an expected in-service date of Q4 2030.",
+    "evidence": {
+      "page": 1,
+      "raw": {
+        "in_service_raw": "Q4 2030",
+        "quote": "230kV “KS2” Ramon-Mirage Circuit #2 – New redundant circuit to accompany the existing “KN” and II. Transmission Facilities “KS” lines between IID and SCE. This new circuit is expected to be an additional component of Path 42 and has an expected in-service date of Q4 2030.",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_iid_2026.json#1"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "eeb891f730c0158170f0a39b311eb1d5402004f3f1323759c3fdb8f75309aaa8"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q4 2030",
+      "value": "2030"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/61430457",
+            "lat": 33.8178295,
+            "lon": -116.3673893,
+            "name": "Ramon Substation",
+            "operator": "Imperial Irrigation District",
+            "state": "CA",
+            "voltage": "230000;92000"
+          },
+          "name": "Ramon",
+          "norm": "RAMON",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/61430458",
+            "lat": 33.8183451,
+            "lon": -116.3695726,
+            "name": "Mirage Substation",
+            "operator": null,
+            "state": "CA",
+            "voltage": "230000;220000;115000"
+          },
+          "name": "Mirage",
+          "norm": "MIRAGE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "IMPERIAL IRRIGATION"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "230kV “KS2” Ramon-Mirage Circuit #2",
+    "native_id": "ks2-ramon-mirage-circuit-2",
+    "other_owners": [],
+    "owner": "Imperial Irrigation District",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030",
+        "description": "Expected in service Q4 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "eeb891f730c0158170f0a39b311eb1d5402004f3f1323759c3fdb8f75309aaa8",
+            "facts": "230kV “KS2” Ramon-Mirage Circuit #2 – New redundant circuit to accompany the existing “KN” and II. Transmission Facilities “KS” lines between IID and SCE. This new circuit is expected to be an additional component of Path 42 and has an expected in-service date of Q4 2030.",
+            "locator": "IID_2026_APR.pdf#page=1",
+            "publisher": "Imperial Irrigation District",
+            "retrieved_at": "2026-09-27T09:54:51Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/IID%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-iid:ks2-ramon-mirage-circuit-2:planned-in-service",
+        "native_project_link": "ks2-ramon-mirage-circuit-2",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-iid",
+    "states": [
+      "06"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-adelanto-rinaldi-line-1",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/7042144 (Rinaldi), corroborated by operator. Partial: one of two endpoints. OSM relation/7042144 is named “Rinaldi Receiving Station”; “Rinaldi” is its LADWP alias.",
+      "lat": 34.280856,
+      "lon": -118.47831
+    },
+    "counties": [],
+    "description": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1 Design December 2027",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "December 2027",
+        "quote": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1 Design December 2027",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#18"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2027",
+      "value": "2027-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Adelanto",
+          "norm": "ADELANTO",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "relation/7042144",
+            "lat": 34.2808564,
+            "lon": -118.4783097,
+            "name": "Rinaldi",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Rinaldi Receiving Station",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Rinaldi",
+          "norm": "RINALDI",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1",
+    "native_id": "clearance-mitigation-upgrade-adelanto-rinaldi-line-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2027-12",
+        "description": "Expected in service December 2027 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1 Design December 2027",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-adelanto-rinaldi-line-1:planned-in-service",
+        "native_project_link": "clearance-mitigation-upgrade-adelanto-rinaldi-line-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-for-adelanto-toluca-line-1",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71817088 (Toluca), corroborated by operator. Partial: one of two endpoints. OSM way/71817088 is named “Receiving Station E - Toluca”; “Toluca” is its LADWP alias.",
+      "lat": 34.175654,
+      "lon": -118.359853
+    },
+    "counties": [],
+    "description": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1 Design January 2030",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "January 2030",
+        "quote": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1 Design January 2030",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#31"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "January 2030",
+      "value": "2030-01"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Adelanto",
+          "norm": "ADELANTO",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/71817088",
+            "lat": 34.1756538,
+            "lon": -118.3598529,
+            "name": "Toluca",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station E - Toluca",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Toluca",
+          "norm": "TOLUCA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1",
+    "native_id": "clearance-mitigation-upgrade-for-adelanto-toluca-line-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030-01",
+        "description": "Expected in service January 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1 Design January 2030",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-for-adelanto-toluca-line-1:planned-in-service",
+        "native_project_link": "clearance-mitigation-upgrade-for-adelanto-toluca-line-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-for-victorville-rinaldi-line-1",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/7042144 (Rinaldi), corroborated by operator. Partial: one of two endpoints. OSM relation/7042144 is named “Rinaldi Receiving Station”; “Rinaldi” is its LADWP alias.",
+      "lat": 34.280856,
+      "lon": -118.47831
+    },
+    "counties": [],
+    "description": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1 Construction June 2026",
+    "evidence": {
+      "page": 1,
+      "raw": {
+        "in_service_raw": "June 2026",
+        "quote": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1 Construction June 2026",
+        "status_raw": "Construction",
+        "transcription": "transcriptions/apr_ladwp_2026.json#10"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "June 2026",
+      "value": "2026-06"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "name": "Victorville",
+          "norm": "VICTORVILLE",
+          "status": "territory_needs_corroboration"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "relation/7042144",
+            "lat": 34.2808564,
+            "lon": -118.4783097,
+            "name": "Rinaldi",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Rinaldi Receiving Station",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Rinaldi",
+          "norm": "RINALDI",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1",
+    "native_id": "clearance-mitigation-upgrade-for-victorville-rinaldi-line-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2026-06",
+        "description": "Expected in service June 2026 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1 Construction June 2026",
+            "locator": "LADWP_2026_APR.pdf#page=1",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-for-victorville-rinaldi-line-1:planned-in-service",
+        "native_project_link": "clearance-mitigation-upgrade-for-victorville-rinaldi-line-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Construction",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-barren-ridge-statcom",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/691497714 (Barren Ridge), corroborated by operator. OSM way/691497714 is named “Barren Ridge Switching Station”; “Barren Ridge” is its LADWP alias.",
+      "lat": 35.237136,
+      "lon": -118.054565
+    },
+    "counties": [],
+    "description": "New Barren Ridge STATCOM In-Service October 2025",
+    "evidence": {
+      "page": 1,
+      "raw": {
+        "in_service_raw": "October 2025",
+        "quote": "New Barren Ridge STATCOM In-Service October 2025",
+        "status_raw": "In-Service",
+        "transcription": "transcriptions/apr_ladwp_2026.json#5"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "October 2025",
+      "value": "2025-10"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/691497714",
+            "lat": 35.2371362,
+            "lon": -118.0545653,
+            "name": "Barren Ridge",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Barren Ridge Switching Station",
+            "state": "CA",
+            "voltage": "230000"
+          },
+          "name": "Barren Ridge",
+          "norm": "BARREN RIDGE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "New Barren Ridge STATCOM",
+    "native_id": "new-barren-ridge-statcom",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2025-10",
+        "description": "Reported “In-Service”; in service 2025-10.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "New Barren Ridge STATCOM In-Service October 2025",
+            "locator": "LADWP_2026_APR.pdf#page=1",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:new-barren-ridge-statcom:in-service",
+        "native_project_link": "new-barren-ridge-statcom",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-rs-e-reactor",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71817088 (RS-E), corroborated by operator. OSM way/71817088 is named “Receiving Station E - Toluca”; “RS-E” is its LADWP alias.",
+      "lat": 34.175654,
+      "lon": -118.359853
+    },
+    "counties": [],
+    "description": "New RS-E Reactor In-Service February 2026",
+    "evidence": {
+      "page": 1,
+      "raw": {
+        "in_service_raw": "February 2026",
+        "quote": "New RS-E Reactor In-Service February 2026",
+        "status_raw": "In-Service",
+        "transcription": "transcriptions/apr_ladwp_2026.json#8"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "February 2026",
+      "value": "2026-02"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/71817088",
+            "lat": 34.1756538,
+            "lon": -118.3598529,
+            "name": "RS-E",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station E - Toluca",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "RS-E",
+          "norm": "RS-E",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "New RS-E Reactor",
+    "native_id": "new-rs-e-reactor",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2026-02",
+        "description": "Reported “In-Service”; in service 2026-02.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "New RS-E Reactor In-Service February 2026",
+            "locator": "LADWP_2026_APR.pdf#page=1",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:new-rs-e-reactor:in-service",
+        "native_project_link": "new-rs-e-reactor",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-toluca-atwater-line-2-and-upgrade-toluca-atwater-line-1",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71817088 (Toluca), OSM way/160544538 (Atwater), corroborated by operator. OSM way/71817088 is named “Receiving Station E - Toluca”; “Toluca” is its LADWP alias. OSM way/160544538 is named “Receiving Station G - Atwater”; “Atwater” is its LADWP alias.",
+      "lat": 34.142581,
+      "lon": -118.3071
+    },
+    "counties": [],
+    "description": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1 Planning May 2032",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2032",
+        "quote": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1 Planning May 2032",
+        "status_raw": "Planning",
+        "transcription": "transcriptions/apr_ladwp_2026.json#35"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2032",
+      "value": "2032-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/71817088",
+            "lat": 34.1756538,
+            "lon": -118.3598529,
+            "name": "Toluca",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station E - Toluca",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Toluca",
+          "norm": "TOLUCA",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/160544538",
+            "lat": 34.1095081,
+            "lon": -118.2543462,
+            "name": "Atwater",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station G - Atwater",
+            "state": "CA",
+            "voltage": "230000"
+          },
+          "name": "Atwater",
+          "norm": "ATWATER",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1",
+    "native_id": "new-toluca-atwater-line-2-and-upgrade-toluca-atwater-line-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2032-05",
+        "description": "Expected in service May 2032 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1 Planning May 2032",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:new-toluca-atwater-line-2-and-upgrade-toluca-atwater-line-1:planned-in-service",
+        "native_project_link": "new-toluca-atwater-line-2-and-upgrade-toluca-atwater-line-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Planning",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-valley-rinaldi-line-3-and-upgrade-valley-rinaldi-lines-1",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/7042144 (Rinaldi), corroborated by operator. Partial: one of two endpoints. OSM relation/7042144 is named “Rinaldi Receiving Station”; “Rinaldi” is its LADWP alias.",
+      "lat": 34.280856,
+      "lon": -118.47831
+    },
+    "counties": [],
+    "description": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1 Planning May 2033 and 2",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2033",
+        "quote": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1 Planning May 2033 and 2",
+        "status_raw": "Planning",
+        "transcription": "transcriptions/apr_ladwp_2026.json#37"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2033",
+      "value": "2033-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Valley",
+          "norm": "VALLEY",
+          "status": "operator_conflict"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "relation/7042144",
+            "lat": 34.2808564,
+            "lon": -118.4783097,
+            "name": "Rinaldi",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Rinaldi Receiving Station",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Rinaldi",
+          "norm": "RINALDI",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1",
+    "native_id": "new-valley-rinaldi-line-3-and-upgrade-valley-rinaldi-lines-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2033-05",
+        "description": "Expected in service May 2033 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1 Planning May 2033 and 2",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:new-valley-rinaldi-line-3-and-upgrade-valley-rinaldi-lines-1:planned-in-service",
+        "native_project_link": "new-valley-rinaldi-line-3-and-upgrade-valley-rinaldi-lines-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Planning",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-valley-toluca-line-3-and-upgrade-valley-toluca-lines-1",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71817088 (Toluca), corroborated by operator. Partial: one of two endpoints. OSM way/71817088 is named “Receiving Station E - Toluca”; “Toluca” is its LADWP alias.",
+      "lat": 34.175654,
+      "lon": -118.359853
+    },
+    "counties": [],
+    "description": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1 Budgeted May 2031 and 2",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2031",
+        "quote": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1 Budgeted May 2031 and 2",
+        "status_raw": "Budgeted",
+        "transcription": "transcriptions/apr_ladwp_2026.json#34"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2031",
+      "value": "2031-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Valley",
+          "norm": "VALLEY",
+          "status": "operator_conflict"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/71817088",
+            "lat": 34.1756538,
+            "lon": -118.3598529,
+            "name": "Toluca",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station E - Toluca",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Toluca",
+          "norm": "TOLUCA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1",
+    "native_id": "new-valley-toluca-line-3-and-upgrade-valley-toluca-lines-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2031-05",
+        "description": "Expected in service May 2031 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1 Budgeted May 2031 and 2",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:new-valley-toluca-line-3-and-upgrade-valley-toluca-lines-1:planned-in-service",
+        "native_project_link": "new-valley-toluca-line-3-and-upgrade-valley-toluca-lines-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Budgeted",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-a-substation-replacement",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/86454167 (RS-A), corroborated by operator. OSM way/86454167 is named “Receiving Station A”; “RS-A” is its LADWP alias.",
+      "lat": 34.067088,
+      "lon": -118.226161
+    },
+    "counties": [],
+    "description": "RS-A Substation Replacement Planning May 2032",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2032",
+        "quote": "RS-A Substation Replacement Planning May 2032",
+        "status_raw": "Planning",
+        "transcription": "transcriptions/apr_ladwp_2026.json#36"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2032",
+      "value": "2032-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/86454167",
+            "lat": 34.0670879,
+            "lon": -118.2261612,
+            "name": "RS-A",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station A",
+            "state": "CA",
+            "voltage": "230000"
+          },
+          "name": "RS-A",
+          "norm": "RS-A",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "RS-A Substation Replacement",
+    "native_id": "rs-a-substation-replacement",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2032-05",
+        "description": "Expected in service May 2032 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "RS-A Substation Replacement Planning May 2032",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:rs-a-substation-replacement:planned-in-service",
+        "native_project_link": "rs-a-substation-replacement",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Planning",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-b-rack-a-and-bank-a",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/49048130 (RS-B), corroborated by operator. OSM way/49048130 is named “Receiving Station B”; “RS-B” is its LADWP alias.",
+      "lat": 33.947989,
+      "lon": -118.255315
+    },
+    "counties": [],
+    "description": "RS-B Rack A and Bank A Construction June 2026",
+    "evidence": {
+      "page": 1,
+      "raw": {
+        "in_service_raw": "June 2026",
+        "quote": "RS-B Rack A and Bank A Construction June 2026",
+        "status_raw": "Construction",
+        "transcription": "transcriptions/apr_ladwp_2026.json#11"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "June 2026",
+      "value": "2026-06"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/49048130",
+            "lat": 33.9479894,
+            "lon": -118.2553146,
+            "name": "RS-B",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station B",
+            "state": "CA",
+            "voltage": "287000;230000;138000"
+          },
+          "name": "RS-B",
+          "norm": "RS-B",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "RS-B Rack A and Bank A",
+    "native_id": "rs-b-rack-a-and-bank-a",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2026-06",
+        "description": "Expected in service June 2026 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "RS-B Rack A and Bank A Construction June 2026",
+            "locator": "LADWP_2026_APR.pdf#page=1",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:rs-b-rack-a-and-bank-a:planned-in-service",
+        "native_project_link": "rs-b-rack-a-and-bank-a",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Construction",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-e-bank-g-replacement",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71817088 (RS-E), corroborated by operator. OSM way/71817088 is named “Receiving Station E - Toluca”; “RS-E” is its LADWP alias.",
+      "lat": 34.175654,
+      "lon": -118.359853
+    },
+    "counties": [],
+    "description": "RS-E Bank G Replacement LA Basin Design December 2028",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "December 2028",
+        "quote": "RS-E Bank G Replacement LA Basin Design December 2028",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#40"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2028",
+      "value": "2028-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/71817088",
+            "lat": 34.1756538,
+            "lon": -118.3598529,
+            "name": "RS-E",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station E - Toluca",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "RS-E",
+          "norm": "RS-E",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "RS-E Bank G Replacement",
+    "native_id": "rs-e-bank-g-replacement",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-12",
+        "description": "Expected in service December 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "RS-E Bank G Replacement LA Basin Design December 2028",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:rs-e-bank-g-replacement:planned-in-service",
+        "native_project_link": "rs-e-bank-g-replacement",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-rinaldi-bank-g1-g2-replacement",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/7042144 (Rinaldi), corroborated by operator. OSM relation/7042144 is named “Rinaldi Receiving Station”; “Rinaldi” is its LADWP alias.",
+      "lat": 34.280856,
+      "lon": -118.47831
+    },
+    "counties": [],
+    "description": "RS-Rinaldi Bank G1 & G2 Replacement LA Basin Design December 2031",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "December 2031",
+        "quote": "RS-Rinaldi Bank G1 & G2 Replacement LA Basin Design December 2031",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#41"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2031",
+      "value": "2031-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "relation/7042144",
+            "lat": 34.2808564,
+            "lon": -118.4783097,
+            "name": "Rinaldi",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Rinaldi Receiving Station",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Rinaldi",
+          "norm": "RINALDI",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "RS-Rinaldi Bank G1 & G2 Replacement",
+    "native_id": "rs-rinaldi-bank-g1-g2-replacement",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2031-12",
+        "description": "Expected in service December 2031 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "RS-Rinaldi Bank G1 & G2 Replacement LA Basin Design December 2031",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:rs-rinaldi-bank-g1-g2-replacement:planned-in-service",
+        "native_project_link": "rs-rinaldi-bank-g1-g2-replacement",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-circuit-breakers-at-victorville-500kv",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/12204669 (Victorville Substation), corroborated by voltage.",
+      "lat": 34.564297,
+      "lon": -117.319863
+    },
+    "counties": [],
+    "description": "Upgrade Circuit Breakers at Victorville 500kV Construction June 2029",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "June 2029",
+        "quote": "Upgrade Circuit Breakers at Victorville 500kV Construction June 2029",
+        "status_raw": "Construction",
+        "transcription": "transcriptions/apr_ladwp_2026.json#30"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "June 2029",
+      "value": "2029-06"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "relation/12204669",
+            "lat": 34.5642973,
+            "lon": -117.3198626,
+            "name": "Victorville Substation",
+            "operator": null,
+            "state": "CA",
+            "voltage": "500000;287000"
+          },
+          "name": "Victorville",
+          "norm": "VICTORVILLE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Circuit Breakers at Victorville 500kV",
+    "native_id": "upgrade-circuit-breakers-at-victorville-500kv",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2029-06",
+        "description": "Expected in service June 2029 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Circuit Breakers at Victorville 500kV Construction June 2029",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-circuit-breakers-at-victorville-500kv:planned-in-service",
+        "native_project_link": "upgrade-circuit-breakers-at-victorville-500kv",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Construction",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-circuit-switcher-for-mccullough-victorville-lines-1",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/79671032 (McCullough Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 35.803885,
+      "lon": -115.013013
+    },
+    "counties": [],
+    "description": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1 Budgeted December 2030 and 2",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "December 2030",
+        "quote": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1 Budgeted December 2030 and 2",
+        "status_raw": "Budgeted",
+        "transcription": "transcriptions/apr_ladwp_2026.json#33"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2030",
+      "value": "2030-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/79671032",
+            "lat": 35.8038852,
+            "lon": -115.0130133,
+            "name": "McCullough Substation",
+            "operator": "Los Angeles Department of Water and Power",
+            "state": "NV",
+            "voltage": "500000;230000"
+          },
+          "name": "McCullough",
+          "norm": "MCCULLOUGH",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "name": "Victorville",
+          "norm": "VICTORVILLE",
+          "status": "territory_needs_corroboration"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1",
+    "native_id": "upgrade-circuit-switcher-for-mccullough-victorville-lines-1",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030-12",
+        "description": "Expected in service December 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1 Budgeted December 2030 and 2",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-circuit-switcher-for-mccullough-victorville-lines-1:planned-in-service",
+        "native_project_link": "upgrade-circuit-switcher-for-mccullough-victorville-lines-1",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "32"
+    ],
+    "status": "Budgeted",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-mccullough-victorville-series-compensation",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/79671032 (McCullough Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 35.803885,
+      "lon": -115.013013
+    },
+    "counties": [],
+    "description": "Upgrade McCullough – Victorville Series Compensation Construction December 2028",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "December 2028",
+        "quote": "Upgrade McCullough – Victorville Series Compensation Construction December 2028",
+        "status_raw": "Construction",
+        "transcription": "transcriptions/apr_ladwp_2026.json#25"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2028",
+      "value": "2028-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/79671032",
+            "lat": 35.8038852,
+            "lon": -115.0130133,
+            "name": "McCullough Substation",
+            "operator": "Los Angeles Department of Water and Power",
+            "state": "NV",
+            "voltage": "500000;230000"
+          },
+          "name": "McCullough",
+          "norm": "MCCULLOUGH",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "name": "Victorville",
+          "norm": "VICTORVILLE",
+          "status": "territory_needs_corroboration"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade McCullough – Victorville Series Compensation",
+    "native_id": "upgrade-mccullough-victorville-series-compensation",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-12",
+        "description": "Expected in service December 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade McCullough – Victorville Series Compensation Construction December 2028",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-mccullough-victorville-series-compensation:planned-in-service",
+        "native_project_link": "upgrade-mccullough-victorville-series-compensation",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "32"
+    ],
+    "status": "Construction",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-mccullough-victorville-transmission-line",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/79671032 (McCullough Substation), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 35.803885,
+      "lon": -115.013013
+    },
+    "counties": [],
+    "description": "Upgrade McCullough – Victorville Transmission Line Design December 2028",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "December 2028",
+        "quote": "Upgrade McCullough – Victorville Transmission Line Design December 2028",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#26"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2028",
+      "value": "2028-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/79671032",
+            "lat": 35.8038852,
+            "lon": -115.0130133,
+            "name": "McCullough Substation",
+            "operator": "Los Angeles Department of Water and Power",
+            "state": "NV",
+            "voltage": "500000;230000"
+          },
+          "name": "McCullough",
+          "norm": "MCCULLOUGH",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "name": "Victorville",
+          "norm": "VICTORVILLE",
+          "status": "territory_needs_corroboration"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade McCullough – Victorville Transmission Line",
+    "native_id": "upgrade-mccullough-victorville-transmission-line",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-12",
+        "description": "Expected in service December 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade McCullough – Victorville Transmission Line Design December 2028",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-mccullough-victorville-transmission-line:planned-in-service",
+        "native_project_link": "upgrade-mccullough-victorville-transmission-line",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "32"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-rinaldi-airway-lines-1-and-2",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/7042144 (Rinaldi), corroborated by operator. Partial: one of two endpoints. OSM relation/7042144 is named “Rinaldi Receiving Station”; “Rinaldi” is its LADWP alias.",
+      "lat": 34.280856,
+      "lon": -118.47831
+    },
+    "counties": [],
+    "description": "Upgrade Rinaldi - Airway Lines 1 and 2 Planning May 2030",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2030",
+        "quote": "Upgrade Rinaldi - Airway Lines 1 and 2 Planning May 2030",
+        "status_raw": "Planning",
+        "transcription": "transcriptions/apr_ladwp_2026.json#32"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2030",
+      "value": "2030-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "relation/7042144",
+            "lat": 34.2808564,
+            "lon": -118.4783097,
+            "name": "Rinaldi",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Rinaldi Receiving Station",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Rinaldi",
+          "norm": "RINALDI",
+          "status": "matched"
+        },
+        {
+          "name": "Airway",
+          "norm": "AIRWAY",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Rinaldi - Airway Lines 1 and 2",
+    "native_id": "upgrade-rinaldi-airway-lines-1-and-2",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030-05",
+        "description": "Expected in service May 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Rinaldi - Airway Lines 1 and 2 Planning May 2030",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-rinaldi-airway-lines-1-and-2:planned-in-service",
+        "native_project_link": "upgrade-rinaldi-airway-lines-1-and-2",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Planning",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-rinaldi-tarzana-line-1-2",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/7042144 (Rinaldi), OSM way/32663174 (Tarzana), corroborated by operator. OSM relation/7042144 is named “Rinaldi Receiving Station”; “Rinaldi” is its LADWP alias. OSM way/32663174 is named “Receiving Station U - Tarzana”; “Tarzana” is its LADWP alias.",
+      "lat": 34.230087,
+      "lon": -118.511025
+    },
+    "counties": [],
+    "description": "Upgrade Rinaldi Tarzana Line 1 & 2 In-Service April 2025",
+    "evidence": {
+      "page": 1,
+      "raw": {
+        "in_service_raw": "April 2025",
+        "quote": "Upgrade Rinaldi Tarzana Line 1 & 2 In-Service April 2025",
+        "status_raw": "In-Service",
+        "transcription": "transcriptions/apr_ladwp_2026.json#1"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "April 2025",
+      "value": "2025-04"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "relation/7042144",
+            "lat": 34.2808564,
+            "lon": -118.4783097,
+            "name": "Rinaldi",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Rinaldi Receiving Station",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Rinaldi",
+          "norm": "RINALDI",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/32663174",
+            "lat": 34.1793184,
+            "lon": -118.5437398,
+            "name": "Tarzana",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station U - Tarzana",
+            "state": "CA",
+            "voltage": "230000"
+          },
+          "name": "Tarzana",
+          "norm": "TARZANA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Rinaldi Tarzana Line 1 & 2",
+    "native_id": "upgrade-rinaldi-tarzana-line-1-2",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2025-04",
+        "description": "Reported “In-Service”; in service 2025-04.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Rinaldi Tarzana Line 1 & 2 In-Service April 2025",
+            "locator": "LADWP_2026_APR.pdf#page=1",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-rinaldi-tarzana-line-1-2:in-service",
+        "native_project_link": "upgrade-rinaldi-tarzana-line-1-2",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-tarzana-olympic-1a-and-1b-conversion-to-2-230kv",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/32663174 (Tarzana), OSM way/267159397 (Olympic), corroborated by operator, voltage. OSM way/32663174 is named “Receiving Station U - Tarzana”; “Tarzana” is its LADWP alias. OSM way/267159397 is named “Receiving Station K - Olympic”; “Olympic” is its LADWP alias.",
+      "lat": 34.106256,
+      "lon": -118.501867
+    },
+    "counties": [],
+    "description": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV Design May 2029 lines",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2029",
+        "quote": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV Design May 2029 lines",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#27"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2029",
+      "value": "2029-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/32663174",
+            "lat": 34.1793184,
+            "lon": -118.5437398,
+            "name": "Tarzana",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station U - Tarzana",
+            "state": "CA",
+            "voltage": "230000"
+          },
+          "name": "Tarzana",
+          "norm": "TARZANA",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/267159397",
+            "lat": 34.0331936,
+            "lon": -118.4599949,
+            "name": "Olympic",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station K - Olympic",
+            "state": "CA",
+            "voltage": "230000;138000;34500"
+          },
+          "name": "Olympic",
+          "norm": "OLYMPIC",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV",
+    "native_id": "upgrade-tarzana-olympic-1a-and-1b-conversion-to-2-230kv",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2029-05",
+        "description": "Expected in service May 2029 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV Design May 2029 lines",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-tarzana-olympic-1a-and-1b-conversion-to-2-230kv:planned-in-service",
+        "native_project_link": "upgrade-tarzana-olympic-1a-and-1b-conversion-to-2-230kv",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-toluca-hollywood-line-1-underground-cable",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71817088 (Toluca), corroborated by operator. Partial: one of two endpoints. OSM way/71817088 is named “Receiving Station E - Toluca”; “Toluca” is its LADWP alias.",
+      "lat": 34.175654,
+      "lon": -118.359853
+    },
+    "counties": [],
+    "description": "Upgrade Toluca-Hollywood Line 1 Underground Cable Design June 2028",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "June 2028",
+        "quote": "Upgrade Toluca-Hollywood Line 1 Underground Cable Design June 2028",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#24"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "June 2028",
+      "value": "2028-06"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/71817088",
+            "lat": 34.1756538,
+            "lon": -118.3598529,
+            "name": "Toluca",
+            "operator": "Los Angeles Department of Water and Power",
+            "osm_name": "Receiving Station E - Toluca",
+            "state": "CA",
+            "voltage": "500000;230000;34500"
+          },
+          "name": "Toluca",
+          "norm": "TOLUCA",
+          "status": "matched"
+        },
+        {
+          "name": "Hollywood",
+          "norm": "HOLLYWOOD",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": []
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Toluca-Hollywood Line 1 Underground Cable",
+    "native_id": "upgrade-toluca-hollywood-line-1-underground-cable",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-06",
+        "description": "Expected in service June 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Toluca-Hollywood Line 1 Underground Cable Design June 2028",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-toluca-hollywood-line-1-underground-cable:planned-in-service",
+        "native_project_link": "upgrade-toluca-hollywood-line-1-underground-cable",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-wavetraps-and-cvts-at-victorville-287kv-to-300kv",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/12204669 (Victorville Substation), corroborated by voltage.",
+      "lat": 34.564297,
+      "lon": -117.319863
+    },
+    "counties": [],
+    "description": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV Design May 2029",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2029",
+        "quote": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV Design May 2029",
+        "status_raw": "Design",
+        "transcription": "transcriptions/apr_ladwp_2026.json#28"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2029",
+      "value": "2029-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CA/UT/NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "relation/12204669",
+            "lat": 34.5642973,
+            "lon": -117.3198626,
+            "name": "Victorville Substation",
+            "operator": null,
+            "state": "CA",
+            "voltage": "500000;287000"
+          },
+          "name": "Victorville",
+          "norm": "VICTORVILLE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "LOS ANGELES DEPARTMENT OF WATER",
+        "LADWP"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        287,
+        300
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV",
+    "native_id": "upgrade-wavetraps-and-cvts-at-victorville-287kv-to-300kv",
+    "other_owners": [],
+    "owner": "Los Angeles Department of Water and Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2029-05",
+        "description": "Expected in service May 2029 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2d0f80927fc3f2e55af3dc7f7b4b5b2e8ba3e751a82ee2ff0d316f9429e8bc29",
+            "facts": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV Design May 2029",
+            "locator": "LADWP_2026_APR.pdf#page=2",
+            "publisher": "Los Angeles Department of Water and Power",
+            "retrieved_at": "2026-09-27T09:54:49Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/LADWP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ladwp:upgrade-wavetraps-and-cvts-at-victorville-287kv-to-300kv:planned-in-service",
+        "native_project_link": "upgrade-wavetraps-and-cvts-at-victorville-287kv-to-300kv",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ladwp",
+    "states": [
+      "06"
+    ],
+    "status": "Design",
+    "status_group": "planned"
+  }
+]

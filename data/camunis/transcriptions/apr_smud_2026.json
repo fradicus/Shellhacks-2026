@@ -1,0 +1,63 @@
+{
+  "file": "SMUD_2026_APR",
+  "rows": [
+    {
+      "native_id": "country-acres-generation-project",
+      "name": "Country Acres Generation Project",
+      "page": 1,
+      "quote": "Country Acres Generation Project is a 344 MW solar combined with 172 MW battery hybrid generation power plant with 344 MW power output at the Point of Interconnection (POI). The Country Acres project will be interconnected through a new 230 kV switch station",
+      "owner": "Sacramento Municipal Utility District",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "December 2026",
+      "status_raw": "Ongoing",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "elverta-el-rio-230-kv-substation-rebuild-and-expansion",
+      "name": "Elverta (El Rio) 230 kV Substation Rebuild and Expansion",
+      "page": 2,
+      "quote": "2. Elverta (El Rio) 230 kV Substation Rebuild and Expansion (2024 Waiver Granted) The proposed in-service date of this project is December of 2026.",
+      "owner": "Sacramento Municipal Utility District",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Elverta"
+      ],
+      "voltages_kv": [
+        230,
+        115,
+        69
+      ],
+      "in_service_raw": "December of 2026",
+      "status_raw": "Ongoing",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "sacramento-valley-energy-center-coyote-creek-generation-project",
+      "name": "Sacramento Valley Energy Center (Coyote Creek) Generation Project",
+      "page": 2,
+      "quote": "III. Delayed Project(s) 1. Sacramento Valley Energy Center (Coyote Creek) Generation Project (2022 Waiver Granted)",
+      "owner": "Sacramento Municipal Utility District",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "Spring of 2027",
+      "status_raw": "Delayed",
+      "work_type": "transmission",
+      "published_as": null
+    }
+  ]
+}

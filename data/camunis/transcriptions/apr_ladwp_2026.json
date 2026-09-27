@@ -1,0 +1,987 @@
+{
+  "file": "LADWP_2026_APR",
+  "rows": [
+    {
+      "native_id": "upgrade-rinaldi-tarzana-line-1-2",
+      "name": "Upgrade Rinaldi Tarzana Line 1 & 2",
+      "page": 1,
+      "quote": "Upgrade Rinaldi Tarzana Line 1 & 2 In-Service April 2025",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Rinaldi",
+        "Tarzana"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "April 2025",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "ipp-ac-switchyard-extension",
+      "name": "IPP AC Switchyard extension",
+      "page": 1,
+      "quote": "IPP AC Switchyard extension In-Service April 2025",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "IPP"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "April 2025",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-receiving-station-rs-x-lax",
+      "name": "New Receiving Station RS-X (LAX)",
+      "page": 1,
+      "quote": "New Receiving Station RS-X (LAX) In-Service May 2025",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "RS-X"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2025",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "cod-eland-i-and-ii",
+      "name": "(COD): Eland I and II",
+      "page": 1,
+      "quote": "(COD): Eland I and II In-Service November 2024/ July 2025",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "November 2024/ July 2025",
+      "status_raw": "In-Service",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "new-barren-ridge-statcom",
+      "name": "New Barren Ridge STATCOM",
+      "page": 1,
+      "quote": "New Barren Ridge STATCOM In-Service October 2025",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Barren Ridge"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "October 2025",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "ipp-coal-unit-replacement-with-cc-natural-gas",
+      "name": "IPP Coal Unit Replacement with CC Natural Gas",
+      "page": 1,
+      "quote": "IPP Coal Unit Replacement with CC Natural Gas In-Service December 2025",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "IPP"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2025",
+      "status_raw": "In-Service",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-victorville-bank-k-phase-iv",
+      "name": "Upgrade Victorville Bank K (Phase IV)",
+      "page": 1,
+      "quote": "Upgrade Victorville Bank K (Phase IV) In-Service January 2026",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Victorville"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "January 2026",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-rs-e-reactor",
+      "name": "New RS-E Reactor",
+      "page": 1,
+      "quote": "New RS-E Reactor In-Service February 2026",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "RS-E"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "February 2026",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-wavetraps-and-cvts-at-mead-287kv-to-300kv",
+      "name": "Upgrade Wavetraps and CVTs at Mead 287kV to 300kV",
+      "page": 1,
+      "quote": "Upgrade Wavetraps and CVTs at Mead 287kV to 300kV Construction TBD",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Mead"
+      ],
+      "voltages_kv": [
+        287,
+        300
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "clearance-mitigation-upgrade-for-victorville-rinaldi-line-1",
+      "name": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1",
+      "page": 1,
+      "quote": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1 Construction June 2026",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Victorville",
+        "Rinaldi"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "June 2026",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "rs-b-rack-a-and-bank-a",
+      "name": "RS-B Rack A and Bank A",
+      "page": 1,
+      "quote": "RS-B Rack A and Bank A Construction June 2026",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "RS-B"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "June 2026",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-ipp-synchronous-condensers",
+      "name": "New IPP Synchronous Condensers",
+      "page": 1,
+      "quote": "New IPP Synchronous Condensers Construction July 2026",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "IPP"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "July 2026",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-rosamond-switching-station",
+      "name": "New Rosamond Switching Station",
+      "page": 1,
+      "quote": "New Rosamond Switching Station Construction September 2026",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Rosamond"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "September 2026",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "lugo-victorville-line-1-upgrade",
+      "name": "Lugo - Victorville Line 1 upgrade",
+      "page": 1,
+      "quote": "Lugo - Victorville Line 1 upgrade Construction March 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Lugo",
+        "Victorville"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "March 2027",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-haskell-bank-g-pp1-haskell-l1",
+      "name": "New Haskell Bank G (PP1-Haskell L1)",
+      "page": 1,
+      "quote": "New Haskell Bank G (PP1-Haskell L1) Delayed March 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Haskell"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "March 2027",
+      "status_raw": "Delayed",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "lugo-victorville-line-1-terminal-equipment",
+      "name": "Lugo-Victorville Line 1 Terminal Equipment",
+      "page": 1,
+      "quote": "Lugo-Victorville Line 1 Terminal Equipment Construction November 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Lugo",
+        "Victorville"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "November 2027",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-apex-crystal-line-1-subsynchronous-resonance",
+      "name": "New Apex-Crystal Line 1 & Subsynchronous Resonance",
+      "page": 2,
+      "quote": "New Apex-Crystal Line 1 & Subsynchronous Resonance Design TBD Protection",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Apex",
+        "Crystal"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "TBD",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "clearance-mitigation-upgrade-adelanto-rinaldi-line-1",
+      "name": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1",
+      "page": 2,
+      "quote": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1 Design December 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Adelanto",
+        "Rinaldi"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2027",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-spare-mead-bank-m",
+      "name": "New Spare Mead Bank M",
+      "page": 2,
+      "quote": "New Spare Mead Bank M Design March 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Mead"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "March 2028",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "adelanto-statcom",
+      "name": "Adelanto STATCOM",
+      "page": 2,
+      "quote": "Adelanto STATCOM Planning April 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Adelanto"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "April 2028",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-converter-station-at-ipp-and-adelanto",
+      "name": "New Converter Station at IPP and Adelanto",
+      "page": 2,
+      "quote": "New Converter Station at IPP and Adelanto Construction April 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "IPP",
+        "Adelanto"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "April 2028",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "adelanto-ac-switchyard-extension",
+      "name": "Adelanto AC Switchyard extension",
+      "page": 2,
+      "quote": "Adelanto AC Switchyard extension Construction May 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Adelanto"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2028",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-scattergood-auto-and-phase-shifting-transformer",
+      "name": "Upgrade Scattergood Auto and Phase Shifting Transformer",
+      "page": 2,
+      "quote": "Upgrade Scattergood Auto and Phase Shifting Transformer Design May 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Scattergood"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2028",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-toluca-hollywood-line-1-underground-cable",
+      "name": "Upgrade Toluca-Hollywood Line 1 Underground Cable",
+      "page": 2,
+      "quote": "Upgrade Toluca-Hollywood Line 1 Underground Cable Design June 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Toluca",
+        "Hollywood"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "June 2028",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-mccullough-victorville-series-compensation",
+      "name": "Upgrade McCullough – Victorville Series Compensation",
+      "page": 2,
+      "quote": "Upgrade McCullough – Victorville Series Compensation Construction December 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "McCullough",
+        "Victorville"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2028",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-mccullough-victorville-transmission-line",
+      "name": "Upgrade McCullough – Victorville Transmission Line",
+      "page": 2,
+      "quote": "Upgrade McCullough – Victorville Transmission Line Design December 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "McCullough",
+        "Victorville"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2028",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-tarzana-olympic-1a-and-1b-conversion-to-2-230kv",
+      "name": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV",
+      "page": 2,
+      "quote": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV Design May 2029 lines",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Tarzana",
+        "Olympic"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "May 2029",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-wavetraps-and-cvts-at-victorville-287kv-to-300kv",
+      "name": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV",
+      "page": 2,
+      "quote": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV Design May 2029",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Victorville"
+      ],
+      "voltages_kv": [
+        287,
+        300
+      ],
+      "in_service_raw": "May 2029",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-wavetraps-and-cvts-at-century-rs-b-287kv-to",
+      "name": "Upgrade Wavetraps and CVTs at Century (RS-B) 287kV to",
+      "page": 2,
+      "quote": "Upgrade Wavetraps and CVTs at Century (RS-B) 287kV to Design May 2029 300kV",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Century"
+      ],
+      "voltages_kv": [
+        287,
+        300
+      ],
+      "in_service_raw": "May 2029",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-circuit-breakers-at-victorville-500kv",
+      "name": "Upgrade Circuit Breakers at Victorville 500kV",
+      "page": 2,
+      "quote": "Upgrade Circuit Breakers at Victorville 500kV Construction June 2029",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Victorville"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "June 2029",
+      "status_raw": "Construction",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "clearance-mitigation-upgrade-for-adelanto-toluca-line-1",
+      "name": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1",
+      "page": 2,
+      "quote": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1 Design January 2030",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Adelanto",
+        "Toluca"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "January 2030",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-rinaldi-airway-lines-1-and-2",
+      "name": "Upgrade Rinaldi - Airway Lines 1 and 2",
+      "page": 2,
+      "quote": "Upgrade Rinaldi - Airway Lines 1 and 2 Planning May 2030",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Rinaldi",
+        "Airway"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2030",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "upgrade-circuit-switcher-for-mccullough-victorville-lines-1",
+      "name": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1",
+      "page": 2,
+      "quote": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1 Budgeted December 2030 and 2",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "McCullough",
+        "Victorville"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2030",
+      "status_raw": "Budgeted",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-valley-toluca-line-3-and-upgrade-valley-toluca-lines-1",
+      "name": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1",
+      "page": 2,
+      "quote": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1 Budgeted May 2031 and 2",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Valley",
+        "Toluca"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2031",
+      "status_raw": "Budgeted",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-toluca-atwater-line-2-and-upgrade-toluca-atwater-line-1",
+      "name": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1",
+      "page": 2,
+      "quote": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1 Planning May 2032",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Toluca",
+        "Atwater"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2032",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "rs-a-substation-replacement",
+      "name": "RS-A Substation Replacement",
+      "page": 2,
+      "quote": "RS-A Substation Replacement Planning May 2032",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "RS-A"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2032",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-valley-rinaldi-line-3-and-upgrade-valley-rinaldi-lines-1",
+      "name": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1",
+      "page": 2,
+      "quote": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1 Planning May 2033 and 2",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Valley",
+        "Rinaldi"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2033",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "new-180-mvar-variable-shunt-reactor-at-marketplace",
+      "name": "New 180 MVAR Variable Shunt Reactor at Marketplace",
+      "page": 2,
+      "quote": "New 180 MVAR Variable Shunt Reactor at Marketplace Planning TBD",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Marketplace"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "TBD",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "valley-rs-m-rack-a",
+      "name": "Valley (RS-M) Rack A",
+      "page": 2,
+      "quote": "Valley (RS-M) Rack A LA Basin Design June 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Valley"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "June 2027",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "rs-e-bank-g-replacement",
+      "name": "RS-E Bank G Replacement",
+      "page": 2,
+      "quote": "RS-E Bank G Replacement LA Basin Design December 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "RS-E"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2028",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "rs-rinaldi-bank-g1-g2-replacement",
+      "name": "RS-Rinaldi Bank G1 & G2 Replacement",
+      "page": 2,
+      "quote": "RS-Rinaldi Bank G1 & G2 Replacement LA Basin Design December 2031",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Rinaldi"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2031",
+      "status_raw": "Design",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "castaic-haskell-line-1-disconnect-switches",
+      "name": "Castaic - Haskell Line 1 Disconnect Switches",
+      "page": 2,
+      "quote": "Castaic - Haskell Line 1 Disconnect Switches LA Basin Planning TBD Upgrade",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Castaic",
+        "Haskell"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "TBD",
+      "status_raw": "Planning",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "haynes-gs-cooling-system-retrofit",
+      "name": "Haynes GS Cooling System Retrofit",
+      "page": 3,
+      "quote": "Haynes GS Cooling System Retrofit Haynes Generating Station 567 MW Planning May 2030",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Haynes"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2030",
+      "status_raw": "Planning",
+      "work_type": "other",
+      "published_as": null
+    },
+    {
+      "native_id": "harbor-gs-cooling-system-retrofit",
+      "name": "Harbor GS Cooling System Retrofit",
+      "page": 3,
+      "quote": "Harbor GS Cooling System Retrofit Harbor Generating Station 221 MW Planning May 2030",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Harbor"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "May 2030",
+      "status_raw": "Planning",
+      "work_type": "other",
+      "published_as": null
+    },
+    {
+      "native_id": "scattergood-units-1-2-green",
+      "name": "Scattergood Units 1&2 Green",
+      "page": 3,
+      "quote": "Scattergood Units 1&2 Green Scattergood 337 MW Planning TBD Hydrogen Ready Modernization Generating Station",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Scattergood"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "TBD",
+      "status_raw": "Planning",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "milford-solar",
+      "name": "Milford Solar",
+      "page": 3,
+      "quote": "Milford Solar 300 MW Design February 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Intermountain"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "February 2027",
+      "status_raw": "Design",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "notch-peak-solar",
+      "name": "Notch Peak Solar",
+      "page": 3,
+      "quote": "Notch Peak Solar 324 MW Budgeted April 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Intermountain"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "April 2027",
+      "status_raw": "Budgeted",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "utah-solar-1",
+      "name": "Utah Solar 1",
+      "page": 3,
+      "quote": "Utah Solar 1 300 MW Design May 2027",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Intermountain"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "May 2027",
+      "status_raw": "Design",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "dodger-solar-champagne-solar",
+      "name": "Dodger Solar/Champagne Solar",
+      "page": 3,
+      "quote": "Dodger Solar/Champagne Solar 270 MW Planning June 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Rosamond"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "June 2028",
+      "status_raw": "Planning",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "sylmar-bank-e",
+      "name": "Sylmar Bank E",
+      "page": 4,
+      "quote": "Sylmar Bank E 230/220kV 600 \\ 800 MVA 1290 \\ 1610 MVA March 1, 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Sylmar"
+      ],
+      "voltages_kv": [
+        230,
+        220
+      ],
+      "in_service_raw": "March 1, 2028",
+      "status_raw": "The project is currently going through the design and procurement process.",
+      "work_type": "transmission",
+      "published_as": "caiso-tdf-2026-07:2223-R-22"
+    },
+    {
+      "native_id": "sylmar-bank-f",
+      "name": "Sylmar Bank F",
+      "page": 4,
+      "quote": "Sylmar Bank F 230/220kV 600 \\ 800 MVA 1290 \\ 1610 MVA September 1, 2028",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Sylmar"
+      ],
+      "voltages_kv": [
+        230,
+        220
+      ],
+      "in_service_raw": "September 1, 2028",
+      "status_raw": "The project is currently going through the design and procurement process.",
+      "work_type": "transmission",
+      "published_as": "caiso-tdf-2026-07:2223-R-22"
+    },
+    {
+      "native_id": "sylmar-bank-g",
+      "name": "Sylmar Bank G",
+      "page": 4,
+      "quote": "Sylmar Bank G 230/220kV 900 \\ 1134 MVA 1290 \\ 1610 MVA TBD",
+      "owner": "Los Angeles Department of Water and Power",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Sylmar"
+      ],
+      "voltages_kv": [
+        230,
+        220
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": "The project is currently going through the design and procurement process.",
+      "work_type": "transmission",
+      "published_as": "caiso-tdf-2026-07:2223-R-22"
+    }
+  ]
+}

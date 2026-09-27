@@ -1,0 +1,26 @@
+{
+  "file": "IID_2026_APR",
+  "rows": [
+    {
+      "native_id": "ks2-ramon-mirage-circuit-2",
+      "name": "230kV “KS2” Ramon-Mirage Circuit #2",
+      "page": 1,
+      "quote": "230kV “KS2” Ramon-Mirage Circuit #2 – New redundant circuit to accompany the existing “KN” and II. Transmission Facilities “KS” lines between IID and SCE. This new circuit is expected to be an additional component of Path 42 and has an expected in-service date of Q4 2030.",
+      "owner": "Imperial Irrigation District",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Ramon",
+        "Mirage"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "Q4 2030",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    }
+  ]
+}
