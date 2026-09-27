@@ -10,8 +10,8 @@ ownership changes.
 
 - California has 146 located records, all from F44's CAISO Transmission Development Forum workbooks: 360 projects,
   214 unlocated. CAISO's forum covers only its participating transmission owners (PG&E, SCE, SDG&E and others).
-- The utilities that plan and own transmission outside CAISO, LADWP (about 40% of Los Angeles's load path plus
-  Intermountain in Utah), IID, SMUD, TANC, TID and MID, have no record. Each filed a 2026 WECC Annual Progress Report,
+- The utilities that plan and own transmission outside CAISO's forum, LADWP (including its Intermountain facilities
+  in Utah), IID, SMUD, TANC, TID and MID, have no record. Each filed a 2026 WECC Annual Progress Report,
   public on wecc.org (plain HTTPS, no login): `https://www.wecc.org/sites/default/files/documents/progress_report/2026/<ORG>%202026%20APR.pdf`.
 - F50 (C50) already reads WECC progress reports: page-cited transcriptions re-verified against the pinned PDF, C33/C38
   locations, territory placement only with corroboration. Its reader takes a rollout's own reports and territory.
