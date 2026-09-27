@@ -63,3 +63,17 @@ Recompute aggregate and per-source coverage and validate the final snapshot befo
 County-only records retain null exact centers and null indexed `geo`; their separate anchors are display
 references. Candidate and approximate references generate no national overlap pairs. The existing load
 Action remains the sole writer; verify its receipt and the active read-only dataset separately from UI rendering.
+
+## Legacy location consistency
+
+Rebuild the legacy base without changing other source observations or baking release overlays into it.
+Assign state membership from eligible individual endpoints contained in the existing pinned Census state
+boundaries. Preserve endpoint review status, null geometry, identities, source values and milestone precision.
+Store boundary provenance and endpoint decisions in existing raw evidence. Rejected endpoints must not
+contribute to centers or state assignment; never substitute publisher or utility headquarters for geography.
+
+Recompute aggregate location counts after each applied release: confirmed centers, candidate centers,
+approximate-only references and no-display-location records partition the dataset; rejected projects are an
+overlapping review count. Keep the existing center-based located count. Validate counts against records,
+prove replay is deterministic and verify supported GA/SC filters through the active read-only API after load.
+Different frontend cohorts may have different totals; frontend and legacy loader changes remain owner work.

@@ -48,6 +48,17 @@ export interface NationalProject {
   location_review: "confirmed" | "needs_review" | "rejected" | "unreviewed" | "unlocated";
   evidence: { page: number | null; sheet: string | null; row: number | null; raw: Record<string, unknown> };
   location_verification?: LocationVerification;
+  location_candidate?: {
+    label?: string; note?: string; attribution?: string; license_url?: string;
+    endpoints?: { side: string; osm_id?: string; url?: string; names?: Record<string, string>; lat: number; lon: number }[];
+  };
+  approximate_location?: {
+    precision: "county";
+    label: string;
+    anchors: { county_geoid: string; county_name: string; lat: number; lon: number; method: string; source_id: string }[];
+    reference_source: { id: string; url: string; sha256: string; retrieved_at: string };
+    eligible_for_matching: false;
+  };
 }
 
 /** Additive C23 publication evidence; the pipeline controls confirmation. */
@@ -230,6 +241,7 @@ export interface NationalExplorerPayload extends NationalReference {
   mapProjects: NationalProject[];
   total: number;
   locatedTotal: number;
+  approximateTotal?: number;
   unlocatedTotal: number;
   page: number;
   limit: number;

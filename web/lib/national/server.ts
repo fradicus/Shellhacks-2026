@@ -1,5 +1,6 @@
 import "server-only";
 
+import { displayPoints } from "./locations";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Db, Document, Filter } from "mongodb";
@@ -56,6 +57,9 @@ function validProjects(value: unknown): value is NationalProject[] {
       && Array.isArray(item.counties) && item.counties.every((code) => /^\d{5}$/.test(code))
       && typeof item.status_group === "string" && statuses.has(item.status_group)
       && !!item.in_service && ["day", "month", "year", "unknown"].includes(item.in_service.precision)
+      && (!item.approximate_location || (center === null && Array.isArray(item.approximate_location.anchors)
+        && item.approximate_location.anchors.length > 0
+        && displayPoints(item as NationalProject).length === item.approximate_location.anchors.length))
       && !!item.evidence && item.evidence.raw !== null && typeof item.evidence.raw === "object" && !Array.isArray(item.evidence.raw) && centerValid;
   });
 }
@@ -139,6 +143,18 @@ const locatedFilter = (base: Filter<Document>): Filter<Document> => ({
   $and: [base, { center: { $type: "object" } }, { "center.lat": { $type: "number" } }, { "center.lon": { $type: "number" } }],
 });
 
+const approximateFilter = (base: Filter<Document>): Filter<Document> => ({
+  $and: [base, { center: null, location_review: { $ne: "rejected" },
+    "approximate_location.precision": "county", "approximate_location.eligible_for_matching": false,
+    "approximate_location.reference_source.url": { $type: "string" },
+    "approximate_location.anchors": { $elemMatch: {
+      lat: { $type: "number", $gte: -90, $lte: 90 }, lon: { $type: "number", $gte: -180, $lte: 180 },
+      county_geoid: { $type: "string" },
+    } },
+  }],
+});
+const displayFilter = (base: Filter<Document>): Filter<Document> => ({ $or: [locatedFilter(base), approximateFilter(base)] });
+
 async function facets(db: Db, dataset: string) {
   const grouped = async (pipeline: Document[]) => {
     const rows = await db.collection("national_projects").aggregate<{ _id: string }>([
@@ -162,11 +178,12 @@ async function atlasQuery(filters: NationalFilters, geography: NationalGeography
   const { db, dataset } = await activeNationalDb();
   const filter = mongoFilter(filters, geography, dataset);
   const offset = (filters.page - 1) * filters.limit;
-  const [total, locatedTotal, projectDocs, mapDocs, sourceDocs, run, filterFacets] = await Promise.all([
+  const [total, locatedTotal, approximateTotal, projectDocs, mapDocs, sourceDocs, run, filterFacets] = await Promise.all([
     db.collection("national_projects").countDocuments(filter, { maxTimeMS: QUERY_TIMEOUT_MS }),
     db.collection("national_projects").countDocuments(locatedFilter(filter), { maxTimeMS: QUERY_TIMEOUT_MS }),
+    db.collection("national_projects").countDocuments(approximateFilter(filter), { maxTimeMS: QUERY_TIMEOUT_MS }),
     db.collection("national_projects").find(filter).sort({ id: 1 }).skip(offset).limit(filters.limit).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
-    db.collection("national_projects").find(locatedFilter(filter)).sort({ id: 1 }).limit(MAX_MAP_POINTS + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
+    db.collection("national_projects").find(displayFilter(filter)).sort({ id: 1 }).limit(MAX_MAP_POINTS + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
     db.collection("national_sources").find({ dataset }).sort({ id: 1 }).limit(SOURCE_LIMIT + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
     db.collection("national_runs").findOne({ dataset }, { sort: { finished_at: -1, _id: -1 }, maxTimeMS: QUERY_TIMEOUT_MS }),
     facets(db, dataset),
@@ -178,7 +195,7 @@ async function atlasQuery(filters: NationalFilters, geography: NationalGeography
   if (!validProjects(projects) || !validProjects(mapProjects) || !validSources(sources)) throw new NationalUnavailable("active national records failed their public shape check");
   const candidate = run?.coverage ?? run?.counts?.coverage ?? null;
   return {
-    dataset, projects, mapProjects, sources, total, locatedTotal,
+    dataset, projects, mapProjects, sources, total, locatedTotal, approximateTotal,
     mapTruncated: mapDocs.length > MAX_MAP_POINTS,
     coverage: validCoverage(candidate) ? candidate : null,
     facets: filterFacets,
@@ -201,7 +218,7 @@ async function fileSnapshot() {
 function unavailable(reference: NationalReference, filters: NationalFilters, reason: string, invalidQuery = false): NationalExplorerPayload {
   return {
     ...reference, available: false, mode: "unavailable", dataset: null, reason, filters,
-    projects: [], mapProjects: [], total: 0, locatedTotal: 0, unlocatedTotal: 0,
+    projects: [], mapProjects: [], total: 0, locatedTotal: 0, approximateTotal: 0, unlocatedTotal: 0,
     page: filters.page, limit: filters.limit, mapTruncated: false,
     facets: { planningRegions: [], owners: [], statuses: [] }, invalidQuery,
   };
@@ -219,13 +236,15 @@ export async function loadNationalExplorer(filters: NationalFilters): Promise<Na
       const source = await fileSnapshot();
       const filtered = filterNationalProjects(source.projects, filters, reference.geography);
       const located = filtered.filter((project) => project.center !== null);
+      const mapped = filtered.filter((project) => displayPoints(project).length > 0);
+      const approximateTotal = mapped.filter((project) => project.center === null).length;
       const offset = (filters.page - 1) * filters.limit;
       return {
         ...reference, sources: source.sources, coverage: source.coverage,
         available: true, mode: "snapshot", dataset: source.dataset, filters,
-        projects: filtered.slice(offset, offset + filters.limit), mapProjects: located.slice(0, MAX_MAP_POINTS),
-        total: filtered.length, locatedTotal: located.length, unlocatedTotal: filtered.length - located.length,
-        page: filters.page, limit: filters.limit, mapTruncated: located.length > MAX_MAP_POINTS,
+        projects: filtered.slice(offset, offset + filters.limit), mapProjects: mapped.slice(0, MAX_MAP_POINTS),
+        total: filtered.length, locatedTotal: located.length, approximateTotal, unlocatedTotal: filtered.length - located.length - approximateTotal,
+        page: filters.page, limit: filters.limit, mapTruncated: mapped.length > MAX_MAP_POINTS,
         facets: {
           planningRegions: values(source.projects.map((project) => project.planning_region)),
           owners: values(source.projects.flatMap((project) => [project.owner, ...project.other_owners])),
@@ -238,7 +257,8 @@ export async function loadNationalExplorer(filters: NationalFilters): Promise<Na
       ...reference, sources: source.sources, coverage: source.coverage,
       available: true, mode: "atlas", dataset: source.dataset, filters,
       projects: source.projects, mapProjects: source.mapProjects,
-      total: source.total, locatedTotal: source.locatedTotal, unlocatedTotal: source.total - source.locatedTotal,
+      total: source.total, locatedTotal: source.locatedTotal, approximateTotal: source.approximateTotal,
+      unlocatedTotal: source.total - source.locatedTotal - source.approximateTotal,
       page: filters.page, limit: filters.limit, mapTruncated: source.mapTruncated, facets: source.facets,
     };
   } catch (error) {
@@ -280,10 +300,11 @@ export async function loadNationalExport(filters: NationalFilters): Promise<Nati
     }
     if (projects.length > MAX_EXPORT) return unavailable(reference, filters, `Export is limited to ${MAX_EXPORT.toLocaleString("en-US")} filtered records.`);
     const located = projects.filter((project) => project.center !== null);
+    const approximateTotal = projects.filter((project) => project.center === null && displayPoints(project).length > 0).length;
     return {
       ...reference, sources, coverage, available: true, mode, dataset, filters,
       projects, mapProjects: [], total: projects.length, locatedTotal: located.length,
-      unlocatedTotal: projects.length - located.length, page: 1, limit: projects.length,
+      approximateTotal, unlocatedTotal: projects.length - located.length - approximateTotal, page: 1, limit: projects.length,
       mapTruncated: false, facets: { planningRegions: [], owners: [], statuses: [] },
     };
   } catch (error) {

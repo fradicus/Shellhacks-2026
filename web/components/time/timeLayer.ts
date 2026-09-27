@@ -18,6 +18,8 @@ export interface TimeItem {
   lng: number;
   lat: number;
   span: Span;
+  /** Tentative location (C25): drawn as a hollow bead so it never reads as a reviewed point. */
+  outline?: boolean;
 }
 export interface Focus {
   emphasis: (key: string) => Emphasis;
@@ -338,7 +340,7 @@ export function createTimeLayer(
       }
       if (it.span.kind === "exact") {
         if (!reached) continue;
-        (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: 0, bright: k * (1 + 1.1 * flash) });
+        (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: it.outline ? 1 : 0, bright: k * (1 + 1.1 * flash) });
         if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, top], c, size: SIZE[e] * (3.2 + 2.2 * flash), shape: 3, bright: k * (0.55 + 0.9 * flash) });
       } else {
         // A month or year: frosted column over the whole span, with rings at both ends. No day is picked.
