@@ -54,4 +54,10 @@ The fixed `data/expansion/releases/active.json` is the only activation input; re
 
 ## Validation
 
-24 targeted publication tests pass, including exact approval sets, stale facts, source projection, endpoint semantics, status/date preservation, all 345 committed approvals and all 1,024 dispositions. Full repository checks and live publication receipts are appended at the next checkpoint.
+24 targeted publication tests pass, including exact approval sets, stale facts, source projection, endpoint semantics, status/date preservation, all 345 committed approvals and all 1,024 dispositions.
+
+F38 release PR #142 merged as `6a038d92b0309f4dd040516ce2f05ad2d0334b22` after required hosted CI passed. Final local checks: ruff passed; **422 pytest passed, 1 skipped**; web lint, typecheck and fixture production build passed; spec lint passed for 31 features; all 17 changed paths passed F38 ownership. Whitespace/stat review found no secrets, read-only inputs or unrelated changes. The existing Big Shoulders fallback-font warning was nonfatal.
+
+F31 evidence/export PR #148 merged as `3ab64daf2833df53cd0e594a4123203993fc5eeb` after required hosted CI passed. Its actual assembled-snapshot browser check selected Chelsea, exposed the pinned evidence and matching review receipt, verified complete/partial endpoint labels, and found no horizontal overflow at 390px. Optional legacy landing smoke failures are tracked separately in #134/#150; optional Azure testgen failure is tracked in #130. These failures were not silently reported as passing.
+
+The original local main checkout has been fast-forwarded to the merged evidence UI. F30 loader integration and the subsequent live receipt remain pending at this checkpoint.
