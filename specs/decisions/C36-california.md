@@ -1,4 +1,4 @@
-# C35: California rollout, and the labeled candidate tier on History
+# C36: California rollout, and the labeled candidate tier on History
 
 ## Authority
 

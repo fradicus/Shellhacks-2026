@@ -289,7 +289,7 @@ def build(cache: Path) -> dict[Path, object]:
             "retrieved_at": artifact["retrieved_at"], "sha256": artifact["sha256"], "public_status": "verified_public",
             "import_status": "imported", "access_policy": "public_document", "planning_region": "caiso",
             "states": ["06"] if any(p["center"] for p in kept) else [], "project_count": len(kept),
-            "notes": ["F43 California release (C35). Locations are unreviewed C33 candidates from named OSM "
+            "notes": ["F43 California release (C36). Locations are unreviewed C33 candidates from named OSM "
                       "substations; none is independently confirmed. Source-bounded, not statewide coverage."]
             + (["Only in-service projects the newer edition no longer lists are imported."] if older else [])
             + (["Removed, replaced and not-triggered upgrades are excluded."] if url == NU_URL else []),

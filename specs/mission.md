@@ -25,7 +25,7 @@ It does not require inventing a usable pair where the evidence is insufficient.
 ## What (the product)
 A web app that compares **Dominion Energy South Carolina (DESC)** and **Georgia Power / Georgia ITS** planned
 transmission projects from public filings:
-1. **Map + ranked list:** both utilities' projects, with geographic overlaps highlighted and ranked.
+1. **Three.js planning map (`/time`) + ranked list:** both utilities' projects, with geographic overlaps highlighted and ranked.
 2. **Evidence drawer:** every value traced to its source document and page, location evidence, raw text, unknowns shown as unknown.
 3. **Coordination card:** deterministic pair facts, a Gemini brief grounded in cited facts, possible shared activities, open questions, CSV and print export.
 4. **Filing-change view:** the same DESC project across two filing versions (e.g. project `0139 M,N` moved from 2024-12-31 to 2026-05-31).
@@ -87,3 +87,12 @@ visible on the existing US maps. Imported rows, asset inventories and state-only
 project points. Report source-bounded coverage and unresolved gaps; do not claim every US project is discoverable.
 Historical observations/events remain distinct from current construction, and source-backed unknowns remain useful
 records. Implementation and an overnight launch require F38's recorded prerequisites; this is specification delivery.
+
+## Project map retirement — 2026-09-27
+
+The user retired the separate `/map` Project map. [C35](decisions/C35-retire-project-map.md)
+supersedes its active requirements: `/time` remains the main planning surface, `/history` retains
+historical research and `/explore` retains national search/evidence. Agents must not add a new
+Project map or route users to the retired view. Route/navigation removal is tracked in issue #193.
+On `/time`, show accepted tentative facility centers with their review note; exclude county-only
+anchors. County evidence remains available through the national explorer and exports.

@@ -1,0 +1,23 @@
+{
+ "projects": 237,
+ "located_tentative": 129,
+ "distinct_centers": 99,
+ "unlocated": 108,
+ "county_centers_used": 0,
+ "by_source": {
+  "fpl": 76,
+  "frcc": 53
+ },
+ "basis": {
+  "one": 56,
+  "source_point": 63,
+  "two": 10
+ },
+ "dep_duplicates": [
+  "southeast:fl-dep:ta05-13",
+  "southeast:fl-dep:ta16-17",
+  "southeast:fl-dep:ta22-19",
+  "southeast:fl-dep:ta89-07"
+ ],
+ "independently_confirmed": 0
+}

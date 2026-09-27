@@ -10,6 +10,7 @@ Always exits 0: "nothing left to commit" is a success state.
 
 from __future__ import annotations
 
+import os
 import shutil
 import subprocess
 import sys
@@ -20,15 +21,11 @@ TESTS_DIR = ROOT / "tests" / "pipeline"
 
 
 def run_pytest(test_file: Path) -> bool:
-    rel = test_file.relative_to(ROOT / "pipeline")
-    cmd = ["uv", "run", "pytest", str(rel), "-q", "--no-header"] if shutil.which("uv") else [
-        sys.executable,
-        "-m",
-        "pytest",
-        str(rel),
-        "-q",
-        "--no-header",
-    ]
+    rel = os.path.relpath(test_file, ROOT / "pipeline")
+    # A path outside pipeline/ makes pytest skip pipeline/pyproject.toml (and its pythonpath),
+    # so the config and rootdir are pinned explicitly.
+    args = ["pytest", rel, "-q", "--no-header", "-c", "pyproject.toml", "--rootdir", "."]
+    cmd = ["uv", "run", *args] if shutil.which("uv") else [sys.executable, "-m", *args]
     try:
         return subprocess.run(cmd, cwd=ROOT / "pipeline", capture_output=True, text=True, timeout=300).returncode == 0
     except (FileNotFoundError, subprocess.TimeoutExpired):

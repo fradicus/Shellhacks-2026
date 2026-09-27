@@ -82,7 +82,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F02 | Georgia register (Ten-Year Plan tables, owner codes) | A | data-researcher | 1 | F00 | never |
 | F03 | Gemini extraction of DESC cards + evaluation | A | gemini-engineer | 1 | F01 | never |
 | F04 | OSM power-infrastructure inventory | A | geo-engineer | 1 | F00 | allowed |
-| F05 | Map + ranked list (fixtures, then API) | B | frontend-engineer | 1 | F00 | never |
+| F05 | Landing page and retired map cleanup (C35) | B | frontend-engineer | 1 | F00 | never |
 | F06 | Atlas loader + read API | B | technical-lead | 1 | F00 | never |
 | F07 | QA harness: independent golden + e2e smoke | C | qa-verifier | 1 | F00 | allowed |
 | F08 | Release: deploy, health, domain verification | C | release-engineer | 1 | F05 | never |
@@ -234,9 +234,20 @@ behavior-preserving presentation cleanup. This reserves their scene/view/CSS wor
 that session until its feature PRs finish. Existing data and F31 claims remain intact.
 This does not launch F37 contract/award discovery or change either page's evidence semantics.
 
+## Project map retirement and Texas frontend follow-up
+
+[C35](decisions/C35-retire-project-map.md) retires the separate Project map as an active product
+requirement. Issue #193 tracks navigation removal, `/map` redirect and unused-component cleanup;
+existing F05 landing-page claims retain ownership. Do not rebuild or expand the retired map.
+The user assigned the Texas frontend follow-up to the F41/F31 Codex session. Shared F31 support
+merged in #189; the existing F19 owner delivered the compatible tentative-point renderer in #196.
+The Texas session verified their combined result instead of opening a duplicate F19 implementation.
+Issue #190 retains its separate cleanup claim. County-only anchors are excluded from `/time`;
+tentative facility centers remain eligible for display.
+
 ## Launched follow-on: California coverage
 
-The user instructed Claude local to get about 100 History and 100 Overlaps pins in California. [C35](decisions/C35-california.md)
+The user instructed Claude local to get about 100 History and 100 Overlaps pins in California. [C36](decisions/C36-california.md)
 assigns [F43](features/F43-california/spec.md) (CAISO Transmission Development Forum workbooks, C33 tiers plus an
 operator guard) and draws C25's labeled tiers on `/history` (`/time` already does since #196).
 

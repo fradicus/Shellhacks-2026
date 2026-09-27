@@ -80,12 +80,15 @@ def test_cx_memo_fields_counties_and_window():
 
 
 def test_release_applies_to_the_national_snapshot():
-    from national.build import load_snapshot
+    from national.build import load_snapshot, validate_snapshot_values
     from pnw.publish import apply_release, release
 
     assert load_json(REPO_ROOT / "data" / "pnw" / "releases" / "active.json") == release()
-    before = load_snapshot()
-    after = apply_release(before, REPO_ROOT)
-    added = len(after["projects"]) - len(before["projects"])
-    assert added == after["coverage"]["pacific_northwest"]["projects"] and added > 0
-    assert after["coverage"]["pacific_northwest"]["independently_confirmed_projects"] == 0
+    snapshot = load_snapshot()
+    hooked = "pacific_northwest" in snapshot["coverage"]
+    if not hooked:  # before F30's loader hook; the loader, not apply_release, recomputes coverage totals
+        snapshot = apply_release(snapshot, REPO_ROOT)
+    released = {p["_id"] for p in load_json(REPO_ROOT / "data" / "pnw" / "projects.json")}
+    assert sum(p["_id"] in released for p in snapshot["projects"]) == len(released) > 0
+    assert snapshot["coverage"]["pacific_northwest"]["independently_confirmed_projects"] == 0
+    assert not hooked or validate_snapshot_values(snapshot) == []

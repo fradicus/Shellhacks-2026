@@ -1,6 +1,6 @@
 # F30: Append the fixed California release
 
-**Context.** C35 routes F43's California release through the same fixed-release pattern as the Great Lakes
+**Context.** C36 routes F43's California release through the same fixed-release pattern as the Great Lakes
 ([F30-great-lakes-hook](F30-great-lakes-hook.md)). The user directed this Claude local session to deliver California
 pins, which needs the one-entry hook in F30's loader; F30 ownership otherwise stays with codex-local.
 
