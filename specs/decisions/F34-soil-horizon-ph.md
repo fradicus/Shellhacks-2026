@@ -6,3 +6,5 @@ Each component may carry horizons with `ph_h2o_1_to_1` (1:1 soil-water method),
 Null pH remains visible; reversed depths and out-of-range pH fail closed.
 Does not treat the board "Ph Area" note as a confirmed requirement (C15).
 Site/route/conditions HTTP contracts are unchanged; only soil envelope data grows.
+`SoilComponent.horizons` is optional on the shared type so existing F36 Zod schemas
+that omit the field still typecheck; the adapter always returns `horizons: []` or more.

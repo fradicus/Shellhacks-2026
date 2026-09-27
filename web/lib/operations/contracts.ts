@@ -53,7 +53,8 @@ export type SoilComponent = {
   percent: number | null;
   drainage_class: string | null;
   hydrologic_group: string | null;
-  horizons: SoilHorizon[];
+  /** Present on current site responses; optional so pre-horizon UI schemas still typecheck. */
+  horizons?: SoilHorizon[];
 };
 export type SoilData = {
   map_units: {

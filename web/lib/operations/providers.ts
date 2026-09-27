@@ -69,7 +69,8 @@ export async function soil(point: Point, ctx: Context): Promise<Envelope<SoilDat
     const rows = SoilResponse.parse(response.value).Table;
     if (JSON.stringify(rows[0]) !== JSON.stringify([...SOIL_COLUMNS]) || !rows[1] || rows[1].length !== SOIL_COLUMNS.length) throw new Error("Unexpected SDA table metadata");
     const map = new Map<string, SoilData["map_units"][number]>();
-    const components = new Map<string, SoilData["map_units"][number]["components"][number]>();
+    type MutableComponent = SoilData["map_units"][number]["components"][number] & { horizons: NonNullable<SoilData["map_units"][number]["components"][number]["horizons"]> };
+    const components = new Map<string, MutableComponent>();
     for (const row of rows.slice(2, 1002)) {
       if (row.length !== SOIL_COLUMNS.length || !row[0] || !row[1] || !row[2]) throw new Error("Malformed soil row");
       const [key, name, area, vintage, component, componentName, percent, drainage, hydro, chkey, depthTop, depthBottom, ph] = row;
