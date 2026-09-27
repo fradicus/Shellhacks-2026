@@ -1,0 +1,306 @@
+[
+  {
+    "_id": "southeast:miso-mtep25-appendix-a",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://cdn.misoenergy.org/MTEP25%20Appendix%20A%20-%20New%20Local%20Reliability%20Projects720399.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://cdn.misoenergy.org/MTEP25%20Appendix%20A%20-%20New%20Local%20Reliability%20Projects720399.xlsx",
+    "notes": [
+      "F39 dense Southeast (C40): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates (C33 tiers, C38 operator guard). MISO's login-only project status report was not used."
+    ],
+    "planning_region": "miso",
+    "project_count": 43,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Midcontinent Independent System Operator (MISO)",
+    "retrieved_at": "2026-09-27T07:56:23Z",
+    "role": "project_plan",
+    "sha256": "53f74cfe5db7db136cf09887ff257c3fa88ff75476eabba2487ad5adca335bbb",
+    "states": [
+      "05",
+      "21",
+      "22",
+      "28"
+    ],
+    "title": "MTEP25 Appendix A, recommended new projects and facility details (as of 8/28/2025)",
+    "vintage": "as of 2025-08-28"
+  },
+  {
+    "_id": "southeast:miso-mtep26-eval",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+    "notes": [
+      "F39 dense Southeast (C40): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates (C33 tiers, C38 operator guard). MISO's login-only project status report was not used."
+    ],
+    "planning_region": "miso",
+    "project_count": 88,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Midcontinent Independent System Operator (MISO)",
+    "retrieved_at": "2026-09-27T07:56:25Z",
+    "role": "project_plan",
+    "sha256": "40f325fe4ce7cb4dbc24207219725f623956efafdf6febb2e67a90accb24e72e",
+    "states": [
+      "05",
+      "21",
+      "22",
+      "28"
+    ],
+    "title": "MTEP Projects Under Evaluation (MTEP26 cycle)",
+    "vintage": "as of 2026-07-31"
+  },
+  {
+    "_id": "southeast:spp-qpt-2026q3",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 40,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:27Z",
+    "role": "project_plan",
+    "sha256": "9870923806c427e4a390160ec20c4a9f0e2cf66dcec480fcf6c53f6891d3786d",
+    "states": [
+      "05",
+      "20",
+      "22",
+      "40"
+    ],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q3 2026",
+    "vintage": "Q3 2026"
+  },
+  {
+    "_id": "southeast:spp-qpt-2025q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/75201/4Q%202025%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:29Z",
+    "role": "project_plan",
+    "sha256": "fa6d5e86662af0c93ee99ce10c9fad938ef47501548501b9545bfc456bbf65d7",
+    "states": [],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2025",
+    "vintage": "Q4 2025"
+  },
+  {
+    "_id": "southeast:spp-qpt-2024q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/72785/4Q%202024%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%26%202.zip",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:31Z",
+    "role": "project_plan",
+    "sha256": "4b95b600795c51a9daaba37812666dc58dce86e0b32dd121f90951d824d8cc89",
+    "states": [
+      "05"
+    ],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2024",
+    "vintage": "Q4 2024"
+  },
+  {
+    "_id": "southeast:spp-qpt-2023q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/70609/4Q%202023%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%20%26%202.zip",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:33Z",
+    "role": "project_plan",
+    "sha256": "2ddf243968b1c65d4ad3dedaf7ad98e015629a854ca5ff3e07be7c8d15e2a813",
+    "states": [],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2023",
+    "vintage": "Q4 2023"
+  },
+  {
+    "_id": "southeast:spp-qpt-2022q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/68142/4Q%202022%20Report%20Quarterly%20Project%20Tracking%20Report%20Appendix%201.xlsm",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:35Z",
+    "role": "project_plan",
+    "sha256": "4957a5e1fb490f6c76177214ebcee0f274b83846c1d798d5672b4ed51c70fda0",
+    "states": [
+      "05"
+    ],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2022",
+    "vintage": "Q4 2022"
+  },
+  {
+    "_id": "southeast:spp-qpt-2021q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/65840/Q4%202021%20Quarterly%20Project%20Tracking%20Appendix%201.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:37Z",
+    "role": "project_plan",
+    "sha256": "5cf7b1df1795866c040ba2afb45a1349d3af720189b8b5aff629991bf05d5684",
+    "states": [],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2021",
+    "vintage": "Q4 2021"
+  },
+  {
+    "_id": "southeast:spp-qpt-2020q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/63259/Q4%202020%20Quarterly%20Project%20Tracking%20Appendix%201.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 6,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:39Z",
+    "role": "project_plan",
+    "sha256": "e5024914723ce1c0764d37dba76748ca5d9b1ff7717bade5c8f922ce721b4d31",
+    "states": [
+      "05",
+      "22"
+    ],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2020",
+    "vintage": "Q4 2020"
+  },
+  {
+    "_id": "southeast:spp-qpt-2019q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/60925/Q4%202019%20Appendix%201.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 16,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:49Z",
+    "role": "project_plan",
+    "sha256": "f26770cc3406c2d25a57255728f6744f82a65b0d1ac767c1aa0388e805fcedbe",
+    "states": [
+      "05",
+      "22",
+      "40",
+      "48"
+    ],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2019",
+    "vintage": "Q4 2019"
+  },
+  {
+    "_id": "southeast:spp-qpt-2018q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/58950/Q4%202018%20Appendix%201.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 2,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:57Z",
+    "role": "project_plan",
+    "sha256": "b7d069816eeafdae6cb40370b71ec6b3cff9dc7f461136a077570da2862308fb",
+    "states": [
+      "05",
+      "22"
+    ],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2018",
+    "vintage": "Q4 2018"
+  },
+  {
+    "_id": "southeast:spp-qpt-2017q4",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/55027/Q4%202017%20Quarterly%20Project%20Tracking%20-%20Appendix%201.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
+    "notes": [
+      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
+    ],
+    "planning_region": "spp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool (SPP)",
+    "retrieved_at": "2026-09-27T07:56:59Z",
+    "role": "project_plan",
+    "sha256": "9ed54628b924d159224e9e19b76404a230c14518727e86cf6966cf8d64e52a1a",
+    "states": [],
+    "title": "SPP Quarterly Project Tracking Appendix 1, Q4 2017",
+    "vintage": "Q4 2017"
+  }
+]
