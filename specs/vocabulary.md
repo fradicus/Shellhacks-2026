@@ -22,5 +22,17 @@ it does not rename stored fields or authorize schema changes.
 | Observed change | A difference between comparable source versions, with old/new evidence. The observation date is not automatically the real-world event date. |
 | Live integration verified | A named deployed revision and active dataset/provider path were actually exercised, with dated evidence. A green offline test or configured account is insufficient. |
 
+For [F38 expansion](features/F38-verified-geographic-data/spec.md), **verified project location** means a current
+independent review establishes the exact project-to-location link and its stated precision. It does not prove the
+project is currently under construction or that a canonical center is a surveyed job site. **Location unresolved**
+means that evidence is missing, ambiguous, conflicting or not yet reviewed; include the specific reason and next
+check. A rejected candidate does not mean the project itself is false. Existing `needs_review`/`rejected` fields
+retain their current semantics; F38's richer reason/evidence fields require its additive implementation contract.
+
+**Source-complete** describes all eligible records in named source artifacts, vintages and scopes having a reconciled
+disposition. It is not statewide or nationwide real-world completeness. **Visible verified coverage** counts accepted
+project locations actually served and accessible in the existing map, with active dataset and evidence references;
+source catalogues, geometry vertices, duplicate observations and unconfirmed candidates do not increase that count.
+
 Unknown fields remain unknown. Preserve differing source statements and their dates instead of forcing agreement.
 See the [mission](mission.md), [C11](decisions/C11-national-follow-on.md) and [context index](context/README.md).
