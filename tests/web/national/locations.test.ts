@@ -14,7 +14,7 @@ test("Texas display keeps 635 tentative and 1218 county projects, without changi
   const county = mapped.filter((p) => !p.center);
   assert.equal(county.length, 1218);
   assert.equal(county.flatMap(displayPoints).length, 1407);
-  assert.ok(county.every((p) => locationLabel(p).includes("exact site unknown")));
+  assert.ok(county.every((p) => locationLabel(p) === "Approximate location — county only"));
   assert.ok(mapped.filter((p) => p.center).every((p) => locationLabel(p) === "Tentative location"));
   assert.equal(JSON.stringify(projects), before);
 });
