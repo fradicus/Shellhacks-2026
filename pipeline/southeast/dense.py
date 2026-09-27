@@ -1,4 +1,4 @@
-"""C40 dense Southeast release: labeled, unreviewed batches appended after the Florida tentative release.
+"""C45 dense Southeast release: labeled, unreviewed batches appended after the Florida tentative release.
 
 Each source module writes one batch folder, data/southeast/dense/<batch>/{projects,sources,dispositions,summary}.json,
 and records its pinned file hashes and expected counts in the single fixed release file. `apply_release` replays
@@ -57,7 +57,7 @@ def locate(name: str, description: str | None, facilities: list[dict], keys: lis
     tier = None
     if center:
         tier = "candidate" if all(m["corroboration"] != ["unique_in_state"] for m in found) else "candidate_unique_name"
-    return center, {"rule": "C40", "tier": tier, "independent_review": False, "kind": got["kind"],
+    return center, {"rule": "C45", "tier": tier, "independent_review": False, "kind": got["kind"],
                     "reason": got["reason"], "voltages_kv": sorted(kv), "operator_keys": keys,
                     "endpoints": endpoints, "dataset": OSM_DATASET}
 
@@ -93,7 +93,7 @@ def write_batch(batch: str, projects: list[dict], sources: list[dict], dispositi
     folder = root / FOLDER / batch
     release_path = root / ACTIVE
     release = load_json(release_path) if release_path.exists() else {
-        "release_id": RELEASE_ID, "policy": "C25", "rule": "C40", "batches": {}}
+        "release_id": RELEASE_ID, "policy": "C25", "rule": "C45", "batches": {}}
     release["batches"][batch] = {"files": {"projects": sha(projects), "sources": sha(sources)},
                                  "expected_counts": counts(projects, sources)}
     release["batches"] = {b: release["batches"][b] for b in BATCHES if b in release["batches"]}
@@ -180,7 +180,7 @@ def apply_release(snapshot: dict, root: Path) -> dict:
     if not path.exists():
         return snapshot
     release = load_json(path)
-    if release["release_id"] != RELEASE_ID or release["policy"] != "C25" or release["rule"] != "C40":
+    if release["release_id"] != RELEASE_ID or release["policy"] != "C25" or release["rule"] != "C45":
         raise ValueError("Southeast dense release manifest changed")
     if not set(release["batches"]) <= set(BATCHES):
         raise ValueError("Southeast dense release names an unknown batch")
@@ -195,14 +195,14 @@ def apply_release(snapshot: dict, root: Path) -> dict:
         coverage[batch] = release["batches"][batch]["expected_counts"]
     result["coverage"]["southeast_dense"] = {
         "release_id": RELEASE_ID, "batches": coverage, "independently_confirmed_projects": 0,
-        "notes": "C40 labeled tiers: official source points and OSM name candidates, all unreviewed; "
+        "notes": "C45 labeled tiers: official source points and OSM name candidates, all unreviewed; "
                  "source-bounded, no statewide completeness claim."}
     return result
 
 
 def refresh(root: Path = REPO_ROOT) -> dict:
     """Re-pin every committed batch (after a merge of two batch branches); producers still own the batch files."""
-    release = {"release_id": RELEASE_ID, "policy": "C25", "rule": "C40", "batches": {}}
+    release = {"release_id": RELEASE_ID, "policy": "C25", "rule": "C45", "batches": {}}
     for batch in BATCHES:
         folder = root / FOLDER / batch
         if (folder / "projects.json").exists():

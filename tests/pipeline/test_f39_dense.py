@@ -1,4 +1,4 @@
-"""F39/C40: the dense Southeast release applies only unreviewed, labeled, source-bound batches."""
+"""F39/C45: the dense Southeast release applies only unreviewed, labeled, source-bound batches."""
 
 import json
 import shutil

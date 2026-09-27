@@ -3,7 +3,7 @@
 From pipeline/:
   uv run python -m southeast.aep fetch --cache <dir>   # network: 6 map files + one page per project
   uv run python -m southeast.aep build --cache <dir> [--check]
-Each marker is AEP's own point for the project on its public map (C40 `official` tier); placement precision is
+Each marker is AEP's own point for the project on its public map (C45 `official` tier); placement precision is
 unstated, so it is never a confirmed location. Page parsing is F40's `greatlakes.aep`, reused by import.
 """
 
@@ -137,7 +137,7 @@ def build(cache: Path) -> dict:
                     "center": official_center(lat, lon, f"AEP Transmission project-map marker {marker_id} "
                                                          f"({BASE.format(state)}geojson/map-setup.json)"),
                     "location_review": "unreviewed",
-                    "location_candidate": {"rule": "C40", "tier": "official", "independent_review": False,
+                    "location_candidate": {"rule": "C45", "tier": "official", "independent_review": False,
                                            "kind": "site", "marker_id": marker_id,
                                            "source_point": {"lat": round(lat, 6), "lon": round(lon, 6)},
                                            "shared_marker": len(marker["projects"]) > 1, "legend": label},
@@ -160,7 +160,7 @@ def build(cache: Path) -> dict:
             "retrieved_at": artifact["retrieved_at"], "sha256": artifact["sha256"], "public_status": "verified_public",
             "import_status": "imported", "access_policy": "public_document", "planning_region": None,
             "states": [fips], "project_count": kept,
-            "notes": ["F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement "
+            "notes": ["F39 dense Southeast (C45). Markers are AEP's own project points (official tier), placement "
                       "precision unstated, not independently reviewed. Legend colors are the map's own labels."]})
     return {"projects": projects, "sources": sources, "dispositions": dispositions}
 

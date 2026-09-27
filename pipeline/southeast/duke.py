@@ -3,7 +3,7 @@
 From pipeline/:
   uv run python -m southeast.duke fetch --cache <dir>   # network: the map's data.json + one page per project
   uv run python -m southeast.duke build --cache <dir> [--check]
-Each point is Duke's own map coordinate for the project (C40 `official` tier); placement precision is unstated.
+Each point is Duke's own map coordinate for the project (C45 `official` tier); placement precision is unstated.
 A page's stated expected-completion year is a planned milestone at year precision, never a completion.
 """
 
@@ -87,7 +87,7 @@ def schedule(text: str | None) -> dict | None:
     if done or len({p[0][:4] for p in planned}) != 1:
         return None
     # Several phrasings of the same year: keep the most precise one.
-    value, precision, phrase = sorted(planned, key=lambda p: (p[1] != "month", p[0]))[0]
+    value, precision, phrase = sorted(planned, key=lambda p: (p[1] != "month", p[0], p[2]))[0]
     return {"kind": "planned_milestone", "value": value, "precision": precision, "phrase": phrase}
 
 
@@ -139,7 +139,7 @@ def build(cache: Path) -> dict:
                            if stated else {"raw": None, "value": None, "precision": "unknown"}),
             "center": official_center(lat, lon, f"Duke Energy transmission-project map point, {locator}"),
             "location_review": "unreviewed",
-            "location_candidate": {"rule": "C40", "tier": "official", "independent_review": False, "kind": "site",
+            "location_candidate": {"rule": "C45", "tier": "official", "independent_review": False, "kind": "site",
                                    "source_point": {"lat": round(lat, 6), "lon": round(lon, 6)},
                                    "area": row["details"].get("city")},
             "project_events": events,
@@ -157,7 +157,7 @@ def build(cache: Path) -> dict:
         "public_status": "verified_public", "import_status": "imported", "access_policy": "public_document",
         "planning_region": None, "states": sorted({s for p in projects for s in p["states"]}),
         "project_count": len(projects),
-        "notes": ["F39 dense Southeast (C40). Points are Duke's own map coordinates (official tier), placement "
+        "notes": ["F39 dense Southeast (C45). Points are Duke's own map coordinates (official tier), placement "
                   "precision unstated, not independently reviewed. The map lists no status; pages give schedules "
                   "in prose, read only from an expected-completion statement."]}]
     return {"projects": projects, "sources": sources, "dispositions": dispositions}

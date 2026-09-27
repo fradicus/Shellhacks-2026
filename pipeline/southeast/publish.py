@@ -110,7 +110,7 @@ def check_location(record: dict, project: dict) -> str:
 
 def apply_release(snapshot: dict, root: Path) -> dict:
     # Tentative Florida candidates append after the reviewed batch, whose DEP IDs absorb their duplicates;
-    # C40 dense batches append last, so their identity check sees every earlier Southeast record.
+    # C45 dense batches append last, so their identity check sees every earlier Southeast record.
     return dense.apply_release(florida_tentative.apply_release(_apply_reviewed(snapshot, root), root), root)
 
 

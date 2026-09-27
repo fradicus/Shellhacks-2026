@@ -48,7 +48,7 @@
       "area": "Greenville and Anderson counties",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.747252,
         "lon": -82.410706
@@ -132,14 +132,14 @@
     "geography_basis": "source_state",
     "in_service": {
       "precision": "month",
-      "raw": "Projected project completion date: December 2023",
+      "raw": "Anticipated completion: December 2023",
       "value": "2023-12"
     },
     "location_candidate": {
       "area": "Wilmington",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.210964,
         "lon": -77.885117
@@ -155,12 +155,12 @@
     "project_events": [
       {
         "date": "2023-12",
-        "description": "Duke's project page states “Projected project completion date: December 2023”. A planned date, not a completion.",
+        "description": "Duke's project page states “Anticipated completion: December 2023”. A planned date, not a completion.",
         "evidence": [
           {
             "access_review": "Public Duke Energy website; no login.",
             "artifact_sha256": "0e1cd8c158c266346ceeb1cdb98c3c625e375c3c70f250f84884d999bb2880f7",
-            "facts": "Projected project completion date: December 2023",
+            "facts": "Anticipated completion: December 2023",
             "locator": "project page schedule text",
             "publisher": "Duke Energy",
             "retrieved_at": "2026-09-27T07:49:09Z",
@@ -178,7 +178,7 @@
     "states": [
       "37"
     ],
-    "status": "Projected project completion date: December 2023",
+    "status": "Anticipated completion: December 2023",
     "status_group": "unknown"
   },
   {
@@ -230,7 +230,7 @@
       "area": "Covington",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 39.077467,
         "lon": -84.521323
@@ -300,7 +300,7 @@
       "area": "Marion",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.417778,
         "lon": -79.368056
@@ -370,7 +370,7 @@
       "area": "Murphy",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.046206,
         "lon": -84.080369
@@ -440,7 +440,7 @@
       "area": "Raleigh",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.775,
         "lon": -78.64
@@ -510,7 +510,7 @@
       "area": "Batavia",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 39.071948,
         "lon": -84.101308
@@ -581,7 +581,7 @@
       "area": "Spartanburg",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.97253,
         "lon": -81.945674
@@ -672,7 +672,7 @@
       "area": "Piedmont",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.70249,
         "lon": -82.463245
@@ -742,7 +742,7 @@
       "area": "Johnston County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.6131,
         "lon": -78.41566
@@ -805,14 +805,14 @@
     "geography_basis": "source_state",
     "in_service": {
       "precision": "year",
-      "raw": "planned to be completed by mid-2026",
+      "raw": "Project Complete Mid-2026",
       "value": "2026"
     },
     "location_candidate": {
       "area": "Archer",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.558145,
         "lon": -82.505377
@@ -828,12 +828,12 @@
     "project_events": [
       {
         "date": "2026",
-        "description": "Duke's project page states “planned to be completed by mid-2026”. A planned date, not a completion.",
+        "description": "Duke's project page states “Project Complete Mid-2026”. A planned date, not a completion.",
         "evidence": [
           {
             "access_review": "Public Duke Energy website; no login.",
             "artifact_sha256": "32a4d6e7568b69ba0fde14a4d49982fd52f7c51c6d4ddc3dfecc5dd28d48f07b",
-            "facts": "planned to be completed by mid-2026",
+            "facts": "Project Complete Mid-2026",
             "locator": "project page schedule text",
             "publisher": "Duke Energy",
             "retrieved_at": "2026-09-27T07:46:28Z",
@@ -851,7 +851,7 @@
     "states": [
       "12"
     ],
-    "status": "planned to be completed by mid-2026",
+    "status": "Project Complete Mid-2026",
     "status_group": "unknown"
   },
   {
@@ -896,14 +896,14 @@
     "geography_basis": "source_state",
     "in_service": {
       "precision": "year",
-      "raw": "expected to be completed in early 2028",
+      "raw": "Project Complete 2028",
       "value": "2028"
     },
     "location_candidate": {
       "area": "Archer",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.669871,
         "lon": -82.594308
@@ -919,12 +919,12 @@
     "project_events": [
       {
         "date": "2028",
-        "description": "Duke's project page states “expected to be completed in early 2028”. A planned date, not a completion.",
+        "description": "Duke's project page states “Project Complete 2028”. A planned date, not a completion.",
         "evidence": [
           {
             "access_review": "Public Duke Energy website; no login.",
             "artifact_sha256": "e9a37d7d5f8dc465da197856ee6eec7cee89401ce0db12819e89bedac6fd7120",
-            "facts": "expected to be completed in early 2028",
+            "facts": "Project Complete 2028",
             "locator": "project page schedule text",
             "publisher": "Duke Energy",
             "retrieved_at": "2026-09-27T07:46:32Z",
@@ -942,7 +942,7 @@
     "states": [
       "12"
     ],
-    "status": "expected to be completed in early 2028",
+    "status": "Project Complete 2028",
     "status_group": "unknown"
   },
   {
@@ -994,7 +994,7 @@
       "area": "Iredell County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.677639,
         "lon": -80.850797
@@ -1064,7 +1064,7 @@
       "area": "Tarpon Springs",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.144141,
         "lon": -82.695215
@@ -1155,7 +1155,7 @@
       "area": "Eustis",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.852976,
         "lon": -81.684254
@@ -1225,7 +1225,7 @@
       "area": "Ocala",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.216936,
         "lon": -82.096958
@@ -1316,7 +1316,7 @@
       "area": "Alachua County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.557399,
         "lon": -82.508634
@@ -1386,7 +1386,7 @@
       "area": "Jacksonville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.75398,
         "lon": -77.45224
@@ -1456,7 +1456,7 @@
       "area": "Auburndale",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.065133,
         "lon": -81.788123
@@ -1526,7 +1526,7 @@
       "area": "Hebron",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 39.08466,
         "lon": -84.71069
@@ -1596,7 +1596,7 @@
       "area": "Williston",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.387654,
         "lon": -82.444535
@@ -1666,7 +1666,7 @@
       "area": "Laurens",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.509321,
         "lon": -81.99925
@@ -1757,7 +1757,7 @@
       "area": "Sumter County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.776481,
         "lon": -81.956375
@@ -1848,7 +1848,7 @@
       "area": "Alexandria",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 38.914561,
         "lon": -84.396266
@@ -1918,7 +1918,7 @@
       "area": "Crystal River",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.9025,
         "lon": -82.5926
@@ -1988,7 +1988,7 @@
       "area": "Anderson County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.7494,
         "lon": -82.5238
@@ -2058,7 +2058,7 @@
       "area": "Pinellas County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 27.876913,
         "lon": -82.77928
@@ -2128,7 +2128,7 @@
       "area": "Ocala",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.005216,
         "lon": -82.261611
@@ -2219,7 +2219,7 @@
       "area": "Hernando and Sumter counties",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.555704,
         "lon": -82.366103
@@ -2310,7 +2310,7 @@
       "area": "Asheville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.53957,
         "lon": -82.63018
@@ -2380,7 +2380,7 @@
       "area": "Rosman",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.154163,
         "lon": -82.811381
@@ -2471,7 +2471,7 @@
       "area": "Asheville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.59769,
         "lon": -82.55454
@@ -2541,7 +2541,7 @@
       "area": "Fayetteville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.33469,
         "lon": -78.65612
@@ -2611,7 +2611,7 @@
       "area": "Perry",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 30.107929,
         "lon": -83.574183
@@ -2702,7 +2702,7 @@
       "area": "Pinellas County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 27.810119,
         "lon": -82.68773
@@ -2793,7 +2793,7 @@
       "area": "Spartanburg",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.820589,
         "lon": -82.09616
@@ -2884,7 +2884,7 @@
       "area": "Cumberland County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.898458,
         "lon": -78.94545
@@ -2954,7 +2954,7 @@
       "area": "Rocky Mount",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.952248,
         "lon": -77.832841
@@ -3024,7 +3024,7 @@
       "area": "Greenville County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.6489,
         "lon": -82.30997
@@ -3094,7 +3094,7 @@
       "area": "Lee and Moore counties",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.350906,
         "lon": -79.3705
@@ -3164,7 +3164,7 @@
       "area": "Seminole County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.672653,
         "lon": -81.455414
@@ -3255,7 +3255,7 @@
       "area": "Hamilton/Madison counties",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 30.474297,
         "lon": -83.614372
@@ -3346,7 +3346,7 @@
       "area": "Pinellas County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 27.914392,
         "lon": -82.773493
@@ -3430,14 +3430,14 @@
     "geography_basis": "source_state",
     "in_service": {
       "precision": "year",
-      "raw": "Project completion Late 2025",
+      "raw": "Project completion : Late 2025",
       "value": "2025"
     },
     "location_candidate": {
       "area": "Osceola County",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.335775,
         "lon": -81.529322
@@ -3453,12 +3453,12 @@
     "project_events": [
       {
         "date": "2025",
-        "description": "Duke's project page states “Project completion Late 2025”. A planned date, not a completion.",
+        "description": "Duke's project page states “Project completion : Late 2025”. A planned date, not a completion.",
         "evidence": [
           {
             "access_review": "Public Duke Energy website; no login.",
             "artifact_sha256": "4f363429362cbad555d14560694607caaab5327f227ae74919b20df88086302a",
-            "facts": "Project completion Late 2025",
+            "facts": "Project completion : Late 2025",
             "locator": "project page schedule text",
             "publisher": "Duke Energy",
             "retrieved_at": "2026-09-27T07:46:40Z",
@@ -3476,7 +3476,7 @@
     "states": [
       "12"
     ],
-    "status": "Project completion Late 2025",
+    "status": "Project completion : Late 2025",
     "status_group": "unknown"
   },
   {
@@ -3528,7 +3528,7 @@
       "area": "Hamilton County, OH and Boone County, KY",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 39.114386,
         "lon": -84.806088
@@ -3599,7 +3599,7 @@
       "area": "Chatham, Harnett and Wake counties",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.395269,
         "lon": -78.512684
@@ -3669,7 +3669,7 @@
       "area": "Morrisville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.849091,
         "lon": -78.826833
@@ -3739,7 +3739,7 @@
       "area": "Florence",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 39.021942,
         "lon": -84.638872
@@ -3809,7 +3809,7 @@
       "area": "Greenville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.612377,
         "lon": -77.366528
@@ -3879,7 +3879,7 @@
       "area": "Florence",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 39.021787,
         "lon": -84.638856
@@ -3949,7 +3949,7 @@
       "area": "Cheraw",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.680248,
         "lon": -79.886016
@@ -4040,7 +4040,7 @@
       "area": "Rockingham",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.904398,
         "lon": -79.758741
@@ -4131,7 +4131,7 @@
       "area": "Newton",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.660174,
         "lon": -81.209989
@@ -4201,7 +4201,7 @@
       "area": "Greenville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.852619,
         "lon": -82.394012
@@ -4264,14 +4264,14 @@
     "geography_basis": "source_state",
     "in_service": {
       "precision": "year",
-      "raw": "planned to be completed in late 2026",
+      "raw": "Project completion & restoration Mid-to-late 2026",
       "value": "2026"
     },
     "location_candidate": {
       "area": "Newberry",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.2746,
         "lon": -81.6187
@@ -4287,12 +4287,12 @@
     "project_events": [
       {
         "date": "2026",
-        "description": "Duke's project page states “planned to be completed in late 2026”. A planned date, not a completion.",
+        "description": "Duke's project page states “Project completion & restoration Mid-to-late 2026”. A planned date, not a completion.",
         "evidence": [
           {
             "access_review": "Public Duke Energy website; no login.",
             "artifact_sha256": "d6012e432c167cad5ec822235a9615def32c2836b497375ae1dfe584f507cdff",
-            "facts": "planned to be completed in late 2026",
+            "facts": "Project completion & restoration Mid-to-late 2026",
             "locator": "project page schedule text",
             "publisher": "Duke Energy",
             "retrieved_at": "2026-09-27T07:47:44Z",
@@ -4310,7 +4310,7 @@
     "states": [
       "45"
     ],
-    "status": "planned to be completed in late 2026",
+    "status": "Project completion & restoration Mid-to-late 2026",
     "status_group": "unknown"
   },
   {
@@ -4362,7 +4362,7 @@
       "area": "Monroe",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.9854,
         "lon": -80.5495
@@ -4432,7 +4432,7 @@
       "area": "St. Petersburg",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 27.758134,
         "lon": -82.671496
@@ -4523,7 +4523,7 @@
       "area": "Lilesville",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.9677,
         "lon": -79.9845
@@ -4614,7 +4614,7 @@
       "area": "Winston-Salem",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 36.191351,
         "lon": -80.215785
@@ -4684,7 +4684,7 @@
       "area": "Denver",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 35.427081,
         "lon": -80.958408
@@ -4754,7 +4754,7 @@
       "area": "Liberty",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 34.788333,
         "lon": -82.695
@@ -4845,7 +4845,7 @@
       "area": "DeLand",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 28.974444,
         "lon": -81.539722
@@ -4936,7 +4936,7 @@
       "area": "Bronson",
       "independent_review": false,
       "kind": "site",
-      "rule": "C40",
+      "rule": "C45",
       "source_point": {
         "lat": 29.460274,
         "lon": -82.653924

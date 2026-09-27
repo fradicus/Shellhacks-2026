@@ -1,8 +1,8 @@
-# Dense Southeast 001: AEP and Duke utility project maps (C40)
+# Dense Southeast 001: AEP and Duke utility project maps (C45)
 
 Source: AEP Transmission's public project maps (`/<state>/geojson/map-setup.json`) and one page per project, for
 Kentucky, Virginia, West Virginia, Tennessee, Louisiana and Arkansas. Every point is AEP's own marker for the project
-(C40 `official` tier), with unstated placement precision, never independently reviewed.
+(C45 `official` tier), with unstated placement precision, never independently reviewed.
 
 | State | Batch | Projects (all located) | Not in service | Dated |
 |---|---|---|---|---|
