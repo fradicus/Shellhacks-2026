@@ -55,7 +55,7 @@ jobs:
         working-directory: pipeline
         run: |
           uv sync --locked
-          uv run pytest ../tests/golden/test_ownership.py -q
+          uv run pytest -c pyproject.toml ../tests/golden/test_ownership.py -q
 
   pipeline:
     needs: checks

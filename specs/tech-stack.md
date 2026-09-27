@@ -55,7 +55,7 @@ For **every PR**, including docs:
 python3 -m unittest discover -s tests/golden -p test_ci_scope.py
 python3 scripts/check_ownership.py --lint-specs
 python3 scripts/check_ownership.py --title "<your PR title>" --base origin/main
-(cd pipeline && uv run pytest ../tests/golden/test_ownership.py -q)
+(cd pipeline && uv run pytest -c pyproject.toml ../tests/golden/test_ownership.py -q)
 ```
 For **full** changes, also run (Python and web may run concurrently):
 ```bash
