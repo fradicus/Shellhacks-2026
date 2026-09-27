@@ -1,0 +1,490 @@
+{
+ "file": "BHC_2026_APR",
+ "rows": [
+  {
+   "native_id": "aeolus-to-cheyenne-230-kv",
+   "name": "Aeolus to Cheyenne 230 kV",
+   "page": 2,
+   "quote": "The Aeolus to Cheyenne 230 kV project consists of two (2) 135-mile 230 kV transmission lines sharing common right-of-way from PacifiCorp’s Aeolus substation to a new substation located southwest of Cheyenne, WY. The project is currently in Phase 1 of the WECC Path Rating Process.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [
+    "WY"
+   ],
+   "state_basis": "text",
+   "kind": "line",
+   "facilities": [
+    "Aeolus",
+    "Cheyenne"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": null,
+   "status_raw": "currently in Phase 1 of the WECC Path Rating Process",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "robinson-230-kv-substation",
+   "name": "Robinson 230 kV Substation",
+   "page": 3,
+   "quote": "The Robinson 230 kV substation is a new load serving substation tapping the Sweetgrass – West Cheyenne 230 kV line.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Robinson"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": null,
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "clpt-g17",
+   "name": "CLPT-G17 200 MW Solar/Wind/BESS",
+   "page": 3,
+   "quote": "The CLPT-G17 project is a 200 MW combined solar, wind, and battery generation facility with a planned commercial operation date in 2028.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "East Business Park"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": "westconnect-tppl-2026-02-wy:1580"
+  },
+  {
+   "native_id": "clpt-g20",
+   "name": "CLPT-G20 365 MW Solar/BESS",
+   "page": 3,
+   "quote": "The Large Generating Facility shall not exceed 365 MW net output at the point of interconnection which will be a new substation, Holliday, tapping the Bluffs – Sweetgrass 230 kV line near Cheyenne, WY.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [
+    "WY"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Holliday"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2027",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": "westconnect-tppl-2026-02-wy:1576"
+  },
+  {
+   "native_id": "clpt-g21",
+   "name": "CLPT-G21 400 MW Solar/BESS",
+   "page": 4,
+   "quote": "The CLPT-G21 project is a 400 MW combined solar and battery generation facility with a planned commercial operation date in 2028.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Sweetgrass"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": "westconnect-tppl-2026-02-wy:1581"
+  },
+  {
+   "native_id": "cpgs-sweetgrass-230-kv-conversion",
+   "name": "CPGS – Sweetgrass 230 kV Conversion",
+   "page": 4,
+   "quote": "The CPGS – Sweetgrass 230 kV Conversion project is converting an existing 115 kV line to 230 kV. This project was identified as mitigation necessary for the CLPT-G21 project listed above. Part of this project is to add a new 230 kV bus to the Cheyenne Prairie Generating Station (CPGS) substation in Cheyenne, WY along with a 200 MVA 230/115 kV transformer.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [
+    "WY"
+   ],
+   "state_basis": "text",
+   "kind": "line",
+   "facilities": [
+    "CPGS",
+    "Sweetgrass"
+   ],
+   "voltages_kv": [
+    230,
+    115
+   ],
+   "in_service_raw": null,
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1582"
+  },
+  {
+   "native_id": "bhct-g49",
+   "name": "BHCT-G49 200 MW Solar",
+   "page": 4,
+   "quote": "The Large Generating Facility shall not exceed 200 MW net output at the point of interconnection which will be a new substation, tapping the Reader – Rattlesnake 115 kV south of Pueblo, CO.",
+   "owner": "Black Hills Energy",
+   "states": [
+    "CO"
+   ],
+   "state_basis": "text",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2029",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "clpt-g16",
+   "name": "CLPT-G16 300 MW Solar/Wind/BESS",
+   "page": 5,
+   "quote": "The Large Generating Facility shall not exceed 300 MW net output at the point of interconnection which will be a new substation, Chugwater, tapping the West Cheyenne – Windstar 230 kV line near Chugwater, WY.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [
+    "WY"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Chugwater"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": "westconnect-tppl-2026-02-wy:1577"
+  },
+  {
+   "native_id": "clpt-g18",
+   "name": "CLPT-G18 300 MW Solar/BESS",
+   "page": 5,
+   "quote": "The Large Generating Facility shall not exceed 300 MW net output at the point of interconnection which will be a new substation, Dutchman, tapping the West Cheyenne – Windstar 230 kV line near Glenrock, WY.",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [
+    "WY"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Dutchman"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": "westconnect-tppl-2026-02-wy:1578"
+  },
+  {
+   "native_id": "bluffs-230-kv-substation",
+   "name": "Bluffs 230 kV substation",
+   "page": 6,
+   "quote": "Bluffs 230 kV substation will tap the Westhill – Stegall 230 kV transmission line in Nebraska near the Stegall substation",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [
+    "NE"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Bluffs"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "windstar-west-cheyenne-230-kv",
+   "name": "Windstar (PacifiCorp) – West Cheyenne 230 kV",
+   "page": 6,
+   "quote": "Windstar (PacifiCorp) – West Cheyenne 230 kV (148 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Windstar",
+    "West Cheyenne"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1327"
+  },
+  {
+   "native_id": "west-cheyenne-sweetgrass-230-kv",
+   "name": "West Cheyenne – Sweetgrass 230 kV",
+   "page": 6,
+   "quote": "West Cheyenne – Sweetgrass 230 kV (14 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "West Cheyenne",
+    "Sweetgrass"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1326"
+  },
+  {
+   "native_id": "sweetgrass-bluffs-230-kv",
+   "name": "Sweetgrass – Bluffs 230 kV",
+   "page": 6,
+   "quote": "Sweetgrass – Bluffs 230 kV (85 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Sweetgrass",
+    "Bluffs"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1324"
+  },
+  {
+   "native_id": "west-cheyenne-230-115-kv-transformers",
+   "name": "Two at the West Cheyenne Substation",
+   "page": 6,
+   "quote": "Four (4) new 230/115 kV 200 MVA Transformers o Two at the West Cheyenne Substation",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "West Cheyenne"
+   ],
+   "voltages_kv": [
+    230,
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1325"
+  },
+  {
+   "native_id": "sweetgrass-230-115-kv-transformers",
+   "name": "Two at the Sweetgrass Substation",
+   "page": 6,
+   "quote": "o Two at the Sweetgrass Substation",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Sweetgrass"
+   ],
+   "voltages_kv": [
+    230,
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1323"
+  },
+  {
+   "native_id": "allison-draw-115-kv-substation",
+   "name": "Allison Draw 115 kV",
+   "page": 6,
+   "quote": "Allison Draw 115 kV will serve distribution feeders from the Crow Creek 115 kV substation",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Allison Draw"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1315"
+  },
+  {
+   "native_id": "orchard-valley-115-kv-substation",
+   "name": "Orchard Valley 115 kV",
+   "page": 6,
+   "quote": "Orchard Valley 115 kV will serve distribution feeders from the Hilltop 115 kV substation",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Orchard Valley"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1314"
+  },
+  {
+   "native_id": "allison-draw-campstool-115-kv",
+   "name": "Allison Draw – Campstool 115 kV",
+   "page": 6,
+   "quote": "Allison Draw – Campstool 115 kV (5 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Allison Draw",
+    "Campstool"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1320"
+  },
+  {
+   "native_id": "allison-draw-cheyenne-prairie-generation-station",
+   "name": "Allison Draw – Cheyenne Prairie Generation Station",
+   "page": 6,
+   "quote": "Allison Draw – Cheyenne Prairie Generation Station (3 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Allison Draw",
+    "Cheyenne Prairie Generation Station"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1321"
+  },
+  {
+   "native_id": "bison-orchard-valley-115-kv",
+   "name": "Bison – Orchard Valley 115 kV",
+   "page": 6,
+   "quote": "Bison – Orchard Valley 115 kV (5 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Bison",
+    "Orchard Valley"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1316"
+  },
+  {
+   "native_id": "orchard-valley-king-ranch-115-kv",
+   "name": "Orchard Valley – King Ranch 115 kV",
+   "page": 6,
+   "quote": "Orchard Valley – King Ranch 115 kV (6 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Orchard Valley",
+    "King Ranch"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1317"
+  },
+  {
+   "native_id": "bison-west-cheyenne-115-kv",
+   "name": "Bison – West Cheyenne 115 kV",
+   "page": 6,
+   "quote": "Bison – West Cheyenne 115 kV (12 miles)",
+   "owner": "Cheyenne Light Fuel & Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Bison",
+    "West Cheyenne"
+   ],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2025",
+   "status_raw": "completed and placed in-service in 2025",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02-wy:1318"
+  },
+  {
+   "native_id": "turkey-creek-solar-project",
+   "name": "Turkey Creek Solar Project",
+   "page": 6,
+   "quote": "The Turkey Creek Solar project is a 200 MW solar facility consisting of sixty (60) 3.69 MVA photovoltaic inverters with a planned in-service date in 2026. This project is in the Black Hills Colorado Electric (BHCE) service territory near the city of Penrose, Colorado.",
+   "owner": "Black Hills Energy",
+   "states": [
+    "CO"
+   ],
+   "state_basis": "text",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2026",
+   "status_raw": "A notice to suspend this Large Generator Interconnection project was received in 2024",
+   "work_type": "generation",
+   "published_as": "westconnect-tppl-2026-02:1307"
+  }
+ ]
+}

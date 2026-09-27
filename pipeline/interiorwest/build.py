@@ -144,7 +144,9 @@ def build(cache: Path) -> dict[Path, object]:
         projects.append(project)
         dispositions.append(where | {"disposition": "accepted", "_id": project["_id"],
                                      "location": project["location_candidate"]["tier"] or "unlocated"})
-    reported, more = apr.projects(cache, manifest, facilities, STATES)
+    # A report row may name a TPPL Wyoming record built above as the same project.
+    reported, more = apr.projects(cache, manifest, facilities, STATES,
+                                  published=apr.published_ids() | {p["_id"] for p in projects})
     projects += reported
     dispositions += more
     if len({p["_id"] for p in projects}) != len(projects):

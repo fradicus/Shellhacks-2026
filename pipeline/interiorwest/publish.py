@@ -17,7 +17,7 @@ from midwest.publish import _check_center, counts
 
 FOLDER = Path("data/interiorwest")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "interiorwest-candidates-2"
+RELEASE_ID = "interiorwest-candidates-3"
 FIPS = {"56", "32", "49", "16", "30"}  # WY, NV, UT, ID, MT
 
 
