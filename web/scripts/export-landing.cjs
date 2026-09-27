@@ -30,7 +30,7 @@ require.extensions['.tsx'] = function(module, filename) {
 };
 const {LandingPage}=require(root+'/components/landing/LandingPage.tsx');
 const {Nav}=require(root+'/components/nav/Nav.tsx');
-let body=renderToStaticMarkup(React.createElement(React.Fragment,null,React.createElement(Nav),React.createElement(LandingPage,{fixtureMode:true})));
+let body=renderToStaticMarkup(React.createElement(React.Fragment,null,React.createElement(Nav),React.createElement(LandingPage)));
 body=body.replace(/href="\/"/g,'href="#top"').replace(/href="\/(?!\/)([^"#]+)"/g,(_, route) => 'href="'+escapeAttribute(appOrigin+'/'+route)+'"');
 const scope=css=>css.replace(/\.([a-zA-Z_][\w-]*)/g,'.gb-$1');
 const css=fs.readFileSync(root+'/app/globals.css','utf8')+'\n'+scope(fs.readFileSync(root+'/components/landing/landing.module.css','utf8'))+'\n'+scope(fs.readFileSync(root+'/components/nav/Nav.module.css','utf8'))+'\n:root{--gb-sans:Arial,sans-serif;--gb-display:Arial,sans-serif;--gb-mono:monospace}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}';

@@ -5,7 +5,8 @@ import { Button } from "@/components/ui";
 import { money } from "./model";
 import type { SitePoint } from "./SiteEvidence";
 import { SiteMap, type MapProject } from "./SiteMap";
-import { evidenceLines, PH_DEPTH_CM, SiteSchema, soilPhSummary, WaterSchema, type SiteEvidenceData, type WaterEvidence } from "./siteModel";
+import { WeatherDelay, type HistoryPayload } from "./WeatherDelay";
+import { evidenceLines, HistorySchema, PH_DEPTH_CM, SiteSchema, soilPhSummary, WaterSchema, type SiteEvidenceData, type WaterEvidence } from "./siteModel";
 import { calculateShare, calculateTask, emptyShare, emptyTask, type ShareInputs, type TaskInputs } from "./taskModel";
 import s from "./impact.module.css";
 
@@ -21,8 +22,8 @@ const TASK_FIELDS: { key: keyof TaskInputs; label: string; help: string; mode: "
   { key: "standbyPerDay", label: "Standby cost per closed day · USD", help: "Cost of a mobilized day with no usable window. Enter 0 if demobilized.", mode: "decimal" },
 ];
 
-type Loaded = { loading: boolean; siteError: string | null; waterError: string | null; site: SiteEvidenceData | null; water: WaterEvidence | null };
-const IDLE: Loaded = { loading: false, siteError: null, waterError: null, site: null, water: null };
+type Loaded = { loading: boolean; siteError: string | null; waterError: string | null; historyError: string | null; site: SiteEvidenceData | null; water: WaterEvidence | null; history: HistoryPayload | null };
+const IDLE: Loaded = { loading: false, siteError: null, waterError: null, historyError: null, site: null, water: null, history: null };
 
 async function getJson<T>(url: string, schema: { parse: (v: unknown) => T }, signal: AbortSignal): Promise<T> {
   const response = await fetch(url, { cache: "no-store", signal });
@@ -49,12 +50,14 @@ function useSite() {
     Promise.allSettled([
       getJson(`/api/operations/site?${new URLSearchParams({ ...at, year: String(year) })}`, SiteSchema, controller.signal),
       getJson(`/api/operations/water?${new URLSearchParams(at)}`, WaterSchema, controller.signal),
-    ]).then(([site, water]) => {
+      getJson(`/api/weather-history?${new URLSearchParams(at)}`, HistorySchema, controller.signal),
+    ]).then(([site, water, history]) => {
       if (controller.signal.aborted) return;
       setState({
         loading: false,
         site: site.status === "fulfilled" ? site.value : null, siteError: site.status === "rejected" ? `Soil and weather: ${reason(site.reason)}` : null,
         water: water.status === "fulfilled" ? water.value.water : null, waterError: water.status === "rejected" ? `Water: ${reason(water.reason)}` : null,
+        history: history.status === "fulfilled" ? history.value.history : null, historyError: history.status === "rejected" ? `Weather history: ${reason(history.reason)}` : null,
       });
     });
   }
@@ -87,7 +90,7 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
   const [manualError, setManualError] = useState<string | null>(null);
   const [task, setTask] = useState<TaskInputs>(emptyTask);
   const [share, setShare] = useState<ShareInputs>(emptyShare);
-  const { point, select, loading, siteError, waterError, site, water } = useSite();
+  const { point, select, loading, siteError, waterError, historyError, site, water, history } = useSite();
   const outcome = calculateTask(task);
   const split = calculateShare(share);
   const evidence = evidenceLines(site, water);
@@ -134,9 +137,11 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
       </div>}
     </section>
 
+    <WeatherDelay history={history} loading={loading} error={historyError} standbyPerDay={task.standbyPerDay} />
+
     <section className={s.section} aria-labelledby="task-heading">
       <div className={s.sectionHead}>
-        <div><span className="eyebrow">03 / User scenario</span><h2 id="task-heading">What does a restricted work window cost?</h2></div>
+        <div><span className="eyebrow">04 / User scenario</span><h2 id="task-heading">What does a restricted work window cost?</h2></div>
         <div className={`no-print ${s.actions}`}><Button onClick={reset}>Reset site worksheet</Button><Button variant="primary" onClick={() => window.print()}>Print / save PDF</Button></div>
       </div>
       <p className={s.formula}>work days × paid hours/day × (crew + equipment rate) × site multiplier + permit cost + closed days × standby cost</p>
@@ -180,7 +185,7 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
     </section>
 
     <section className={s.section} aria-labelledby="share-heading">
-      <span className="eyebrow">04 / Shared access item</span>
+      <span className="eyebrow">05 / Shared access item</span>
       <h2 id="share-heading">If both utilities use one access road, mat run or bridge</h2>
       <p className={s.muted}>Split one shared item pro rata, for example by mat-days or crossings each utility uses. Optionally enter what each would pay to build alone to see the modeled difference.{pairLabel ? ` Pair: ${pairLabel}.` : ""}</p>
       <div className={s.shareGrid}>

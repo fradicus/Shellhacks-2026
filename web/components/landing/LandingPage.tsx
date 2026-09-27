@@ -18,7 +18,7 @@ export function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   );
 }
 
-export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
+export function LandingPage() {
   return (
     <div className={s.landing}>
       <main className={s.main} id="main-content">
@@ -27,54 +27,12 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
             <h1 id="hero-title" className={s.srOnly}>
               Common Ground — Every mile. Connected.
             </h1>
-            <div className={s.heroContent}>
-              <p className={s.heroDescription}>
-                The next opportunity could be just down the road.
-                <br className={s.desktopBreak} /> See where utility projects meet—and where
-                <br className={s.desktopBreak} /> a conversation could change the plan.
-              </p>
-              <div className={s.actions}>
-                <Link href="/time" className={s.primary}>
-                  Explore the overlaps <Arrow />
-                </Link>
-                <a href="#how-it-works" className={s.secondary}>
-                  See how it works <span aria-hidden="true">↘</span>
-                </a>
-              </div>
-              <p className={s.heroNote}>
-                {fixtureMode ? "Sample data available · No account needed" : "Public-source evidence · No account needed"}
-              </p>
-            </div>
             <HeroScene />
             <a href="#how-it-works" className={s.scrollHint}>
               FOLLOW THE CONNECTION <span aria-hidden="true">↓</span>
             </a>
           </section>
         </HeroStory>
-
-        <section className={s.ctaBand} aria-labelledby="cta-band-title">
-          <div className={s.ctaBandCopy}>
-            <p className={s.eyebrow}>
-              <span className={s.statusDot} /> START WITH ONE CORRIDOR
-            </p>
-            <h2 id="cta-band-title">
-              Two plans, one region.
-              <br />
-              <span>See where they meet.</span>
-            </h2>
-          </div>
-          <div className={s.ctaBandSide}>
-            <p>Pick a project pair, read the filings side by side, and bring the evidence to the next planning call.</p>
-            <div className={s.actions}>
-              <Link href="/time" className={s.primary}>
-                Open the overlaps map <Arrow />
-              </Link>
-              <Link href="/explore" className={s.secondary}>
-                Browse by state <span aria-hidden="true">↗</span>
-              </Link>
-            </div>
-          </div>
-        </section>
 
         <section className={`${s.section} ${s.workflow}`} id="how-it-works" aria-labelledby="how-title">
           <div className={s.sectionHeading}>
@@ -86,10 +44,20 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
                 <span>A bigger picture.</span>
               </h2>
             </div>
-            <p>
-              Neighboring utilities plan work independently. Common Ground brings the records together, so you can spot
-              nearby projects and investigate the evidence behind them.
-            </p>
+            <div className={s.headingSide}>
+              <p>
+                Neighboring utilities plan work independently. Common Ground brings the records together, so you can spot
+                nearby projects and investigate the evidence behind them.
+              </p>
+              <div className={s.actions}>
+                <Link href="/time" className={s.primary}>
+                  Explore the overlaps <Arrow />
+                </Link>
+                <Link href="/explore" className={s.secondary}>
+                  Browse by state <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            </div>
           </div>
           <div className={s.steps}>
             <article className={s.step}>
@@ -102,9 +70,6 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
               </div>
               <h3>Start with the source.</h3>
               <p>Public filings become project records with the utility, dates, location evidence, and source page kept in view.</p>
-              <Link href="/coverage">
-                Inspect coverage <Arrow />
-              </Link>
             </article>
             <article className={s.step}>
               <div className={s.stepTop}>
@@ -119,9 +84,6 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
               </div>
               <h3>Find the common ground.</h3>
               <p>Discover cross-utility project centers less than 25 miles apart. Compare their timing and review location confidence.</p>
-              <Link href="/time">
-                Explore overlaps <Arrow />
-              </Link>
             </article>
             <article className={s.step}>
               <div className={s.stepTop}>
@@ -132,9 +94,6 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
               </div>
               <h3>Make the next conversation count.</h3>
               <p>Open the pair evidence, check what is still uncertain, and export a coordination card for the people planning the work.</p>
-              <Link href="/time">
-                Open the overlaps map <Arrow />
-              </Link>
             </article>
           </div>
         </section>

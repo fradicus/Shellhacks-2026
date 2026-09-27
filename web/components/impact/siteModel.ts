@@ -22,6 +22,14 @@ export const WaterSchema = z.object({ water: z.object({
     wetlands: z.object({ mapped: z.boolean(), features: z.array(z.object({ wetland_type: z.string().nullable(), attribute: z.string().nullable(), acres: num })) }).nullable(),
   }).nullable(),
 }) });
+const StationRef = z.object({ id: z.string(), name: z.string(), distance_mi: z.number().finite().nonnegative(), source_url: z.string().url() });
+const DailySeries = z.array(num).min(365).max(4000);
+/** /api/weather-history: committed NOAA station series; null history = no analyzed station within range. */
+export const HistorySchema = z.object({ history: z.object({
+  window: z.object({ start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }),
+  citation: z.string().url(), rain: StationRef, wind: StationRef.nullable(),
+  prcp_in: DailySeries, tmax_f: DailySeries, wsf2_mph: DailySeries.nullable(),
+}).refine((h) => h.prcp_in.length === h.tmax_f.length && (!h.wsf2_mph || h.wsf2_mph.length === h.prcp_in.length), "Series lengths differ").nullable() });
 export type SiteEvidenceData = z.infer<typeof SiteSchema>;
 export type WaterEvidence = z.infer<typeof WaterSchema>["water"];
 type SoilData = NonNullable<z.infer<typeof SoilSchema>["data"]>;

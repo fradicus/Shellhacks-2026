@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { LandingPage } from "@/components/landing/LandingPage";
-import { isFixtureMode } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Common Ground — Every mile. Connected.",
@@ -8,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <LandingPage fixtureMode={isFixtureMode()} />;
+  return <LandingPage />;
 }
