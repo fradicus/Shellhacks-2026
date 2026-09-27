@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeroScene } from "./HeroScene";
+import { HeroEntrance } from "./HeroEntrance";
 import { NetworkIllustration } from "./NetworkIllustration";
 import s from "./landing.module.css";
 
@@ -10,20 +10,8 @@ export function Arrow({diagonal=false}:{diagonal?:boolean}) {
 export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
   return <div className={s.landing}>
     <main className={s.main} id="main-content">
-      <section className={s.hero} aria-labelledby="hero-title">
-        <div className={s.heroContent}>
-          {/* Hero strings from docs/GridBridge-reference.html final overlay + scroll-story beats. */}
-          <h1 id="hero-title">GridBridge</h1>
-          <p className={s.heroTag}>Every mile. Connected.</p>
-          <div className={s.actions}>
-            <a href="#how-it-works" className={s.primary}>See how it works <Arrow/></a>
-          </div>
-          <p className={s.heroNote}>{fixtureMode ? "Sample data available · No account needed" : "Public-source evidence · No account needed"}</p>
-        </div>
-        <p className={s.sr}>GridBridge. Every mile. Connected. A truck drives through the title, then the view tilts down to a network of trucks across the Southeast United States.</p>
-        <HeroScene/>
-        <a href="#how-it-works" className={s.scrollHint}>Scroll <span aria-hidden="true">↓</span></a>
-      </section>
+      {/* Hero strings from docs/GridBridge-reference.html; truck-first entrance then brand. */}
+      <HeroEntrance fixtureMode={fixtureMode} />
 
       <div className={s.proofStrip}>
         <span>GROUNDED IN<br/><b>PUBLIC UTILITY FILINGS</b></span>
