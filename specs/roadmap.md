@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42, F44]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41, F19, F37]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37]
 frozen_paths:
   - schemas/
   - scripts/
@@ -271,3 +271,10 @@ C14/F20 embedding work "remains with its current owners" describe those closed P
 draft from the kept branch, which is the normal claim. #167's receipts are superseded by C37; its Florida
 PSC provider-audit research can be carried into a new F39 part. C31 is not adopted: new geographic work
 prefers exact or tentative facility locations over county anchors.
+
+## Dense Southeast (C40)
+
+The user told Claude local to make the Southeast dense with present and past points, split by geography.
+[C40](decisions/C40-southeast-density.md) moves [F39](features/F39-southeast/spec.md) to claude-local and applies
+C33's labeled tiers (with C38's operator guard) to new Southeast batches through one fixed dense release. The
+strict C27 release and its reviewed records are unchanged.
