@@ -199,3 +199,7 @@ candidate and area-only display tiers in [C25](decisions/C25-main-demo-map.md). 
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F41 | Texas transmission project research and map delivery | A | data-researcher | 7 | F00, F30 | never |
+
+## Governing location-policy amendment — 2026-09-27
+
+[C31](decisions/C31-location-precision.md) supersedes conflicting geographic publication gates: official, candidate and explicitly labeled county/area locations may publish without mandatory independent review. Approximate administrative display anchors are allowed separately from exact project centers. All geographic agents and map/API consumers must follow that policy; existing ownership remains unchanged.

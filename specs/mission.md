@@ -87,3 +87,7 @@ visible on the existing US maps. Imported rows, asset inventories and state-only
 project points. Report source-bounded coverage and unresolved gaps; do not claim every US project is discoverable.
 Historical observations/events remain distinct from current construction, and source-backed unknowns remain useful
 records. Implementation and an overnight launch require F38's recorded prerequisites; this is specification delivery.
+
+## Governing location-policy amendment — 2026-09-27
+
+[C31](decisions/C31-location-precision.md) supersedes conflicting geographic publication gates: official, candidate and explicitly labeled county/area locations may publish without mandatory independent review. Approximate administrative display anchors are allowed separately from exact project centers. All geographic agents and map/API consumers must follow that policy; existing ownership remains unchanged.

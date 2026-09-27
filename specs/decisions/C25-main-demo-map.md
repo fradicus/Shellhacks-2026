@@ -180,3 +180,7 @@ selected evidence, unknown-date and unlocated states. Verify `/explore` agrees o
 review and dataset. Record unavailable services or pending gates explicitly; fixture screenshots prove UI behavior
 only. No required dot quota overrides evidence. If zero new locations qualify, report zero and keep map-population
 acceptance pending.
+
+## Governing location-policy amendment — 2026-09-27
+
+[C31](C31-location-precision.md) supersedes conflicting geographic publication gates: official, candidate and explicitly labeled county/area locations may publish without mandatory independent review. Approximate administrative display anchors are allowed separately from exact project centers. All geographic agents and map/API consumers must follow that policy; existing ownership remains unchanged.
