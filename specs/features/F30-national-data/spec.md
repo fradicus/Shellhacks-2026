@@ -26,3 +26,10 @@ Follow Plans B and D's source, provenance, uncertainty and sponsor-rule requirem
 ## Validation
 
 Meaningful tests cover source-row parsing and page/row citations, changed headers, uncertain dates, unknown/ambiguous owner and geography, leading-zero codes, duplicate IDs, missing geometry, unsafe downloads, deterministic replay, failed-load activation and idempotency. Validate a real retrieved snapshot and inspect representative rows against the official file. Run repo-wide checks. Document actual coverage and unimplemented adapters in `data/national/README.md`.
+
+## Reviewed location publication (C23)
+
+Validate the committed base, apply F38's fixed `data/expansion/releases/active.json` in memory, recompute national
+and per-source coverage, and validate the assembled result before staging. Missing releases preserve the base;
+invalid releases fail closed. Preserve F38's expansion summary and embed its evidence under the same national
+dataset pointer. `build_snapshot` continues to emit only original base observations, never an applied overlay.
