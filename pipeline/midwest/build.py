@@ -33,6 +33,7 @@ from common import REPO_ROOT, load_json, write_json
 from greatlakes import miso
 from greatlakes.match import candidate_center, facilities_named, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
+from southeast import misospp  # F39's MTEP25 Appendix A workbook helpers, by import
 
 OUT = REPO_ROOT / "data" / "midwest"
 STATES = {"IA": "19", "MO": "29", "KS": "20", "NE": "31", "ND": "38", "SD": "46"}
@@ -60,6 +61,13 @@ OPERATOR_KEYS = {
     "NEET": ["NEXTERA"],
 }
 MISO_SOURCE_ID = "miso-mtep26-eval-midwest"
+# FIX-F46: MISO's MTEP25 Appendix A workbook (approved App. A and App. B rows); F39 pins the same file for its states.
+MISO_A_SOURCE_ID = "miso-mtep25-appendix-a-midwest"
+MISO_A_FILE = "miso-mtep25-appendix-a.xlsx"
+MISO_A_URL = misospp.MISO_FILES[misospp.MISO_A][0]
+MISO_A_SHEETS = ("MTEP25 Data Pull - App. A", "MTEP25 Data Pull - App. B")
+# MTEP IDs other rollouts already publish: F40's MISO list and F39's MISO/SPP batch.
+MISO_PUBLISHED = ("data/greatlakes/miso/projects.json", "data/southeast/dense/misospp/projects.json")
 # MISO submitters F40's key list does not name, checked before it. OSM tags Montana-Dakota both ways.
 MISO_KEYS = [("MIDAMERICAN", ["MIDAMERICAN"]), ("MONTANA-DAKOTA", ["MONTANA-DAKOTA", "MDU"]),
              ("CITIZENS ELECTRIC", ["CITIZENS ELECTRIC"]), ("CEDAR FALLS", ["CEDAR FALLS"])]
@@ -113,7 +121,12 @@ def named(upgrade: str, description: str | None = None) -> dict:
 
 def locate(name: str, kv: set[int], states: list[str], facilities: dict[str, list[dict]], keys: list[str],
            description: str | None = None) -> tuple[dict | None, dict]:
-    got = named(name, description)
+    return place(named(name, description), kv, states, facilities, keys)
+
+
+def place(got: dict, kv: set[int], states: list[str], facilities: dict[str, list[dict]], keys: list[str]
+          ) -> tuple[dict | None, dict]:
+    """C33 candidate for facility names already parsed ({'kind', 'names', 'reason'}) in the row's own states."""
     pool = [f for s in states for f in facilities.get(s, [])]
     matches = [match(n, pool, keys, kv) if n else {"status": "not_a_facility", "name": None} for n in got["names"]]
     center = candidate_center(got["kind"], matches) if got["kind"] else None
@@ -256,6 +269,67 @@ def miso_project(row: dict, artifact: dict, facilities: dict[str, list[dict]]) -
     }
 
 
+def miso_a_rows(path: Path) -> tuple[str, list[dict]]:
+    """Appendix A/B project rows with their Facility-sheet rows, and the workbook's "as of" date."""
+    sheets = {ws.title: ws for ws in misospp.workbook(path).worksheets}
+    title = next(sheets[MISO_A_SHEETS[0]].iter_rows(values_only=True, max_row=1))[0]
+    as_of = datetime.strptime(re.search(r"as of (\d+/\d+/\d{4})", title)[1], "%m/%d/%Y").date().isoformat()
+    facilities: dict[str, list[dict]] = {}
+    for n, f in misospp.sheet_rows(sheets["MTEP25 Data Pull - Facility"], 1):
+        facilities.setdefault(misospp.mtep_id(f["MTEP Project ID (Project) (Project)"]), []).append(f | {"_row": n})
+    rows = []
+    for sheet in MISO_A_SHEETS:
+        for n, c in misospp.sheet_rows(sheets[sheet], 1):
+            native = misospp.mtep_id(c["MTEP Project ID"])
+            rows.append(c | {"_sheet": sheet, "_row": n, "_native": native, "_facilities": facilities.get(native, [])})
+    return as_of, rows
+
+
+def miso_a_project(row: dict, artifact: dict, as_of: str, facilities: dict[str, list[dict]]) -> dict:
+    native = row["_native"]
+    pid = f"{MISO_A_SOURCE_ID}:{native}"
+    status = clean(row["Planning Status"] or "Not stated")
+    group = miso.STATUS.get(status[:2], "unknown")
+    states = miso_states(row["State(s)"])
+    locator = f"{MISO_A_FILE}#{row['_sheet']}!row-{row['_row']}"
+    evidence = {"publisher": "Midcontinent Independent System Operator (MISO)", "url": artifact["url"],
+                "artifact_sha256": artifact["sha256"], "locator": locator, "source_date": as_of,
+                "retrieved_at": artifact["retrieved_at"], "access_review": "Public MISO CDN workbook; no login.",
+                "facts": ""}
+    value = day(row["Expected ISD"])
+    events = dated_events(pid, native, status, group, value, artifact, evidence, "Expected in-service date",
+                          "expected-isd", f"MISO MTEP25 Appendix A, as of {as_of}", "Expected ISD")
+    name, text = clean(row["Project Name"]), row["Project Description"]
+    rows = row["_facilities"]
+    kv = ({int(v) for v in (row.get("Max kV"), row.get("Min kV")) if isinstance(v, int | float) and v > 0}
+          | {int(f["Max kV"]) for f in rows if isinstance(f["Max kV"], int | float) and f["Max kV"] > 0}
+          | voltages_kv(name, text))
+    owner = clean(row["Submitting TO"])
+    # The Facility sheet's From/To substations, when they name one site or one line (F39's rule); else the title.
+    subs = None if misospp.PROGRAM.search(name) else misospp.facility_names(rows)
+    if subs:
+        center, candidate = place({"kind": subs[0], "names": subs[1], "from": "facility_from_to", "reason": None},
+                                  kv, states, facilities, miso_keys(owner))
+    else:
+        center, candidate = locate(name, kv, states, facilities, miso_keys(owner), clean(text) if text else None)
+    raw_keys = ("MTEP Project ID", "Target Appendix", "Submitting TO", "State(s)", "Project Name", "Project Type",
+                "Expected ISD", "Current Cost", "Planning Status", "Max kV", "Min kV")
+    return {
+        "_id": pid, "source_id": MISO_A_SOURCE_ID, "native_id": native, "name": name,
+        "description": clean(text)[:500] if text else None, "owner": owner, "other_owners": [], "planning_region": "miso",
+        "states": [STATES[s] for s in states], "counties": [], "geography_basis": "source_state",
+        "status": status, "status_group": group,
+        "in_service": {"raw": value, "value": value, "precision": "day" if value else "unknown"},
+        "center": center, "location_review": "unreviewed" if center else "unlocated",
+        "location_candidate": candidate | {"names_from": "facility_from_to" if subs else "name"},
+        "project_events": events,
+        "evidence": {"page": None, "sheet": row["_sheet"], "row": row["_row"], "source_sha256": artifact["sha256"],
+                     "raw": {k: clean(row[k]) if row.get(k) is not None else None for k in raw_keys}
+                     | {"facilities": [{k: clean(v) for k, v in f.items() if k and not k.startswith("_") and v is not None}
+                                       for f in rows]}},
+    }
+
+
 def fetch(cache: Path) -> None:
     cache.mkdir(parents=True, exist_ok=True)
     manifest = load_json(cache / "manifest.json") if (cache / "manifest.json").exists() else {}
@@ -265,6 +339,9 @@ def fetch(cache: Path) -> None:
     if miso.FILE not in manifest:
         fetch_into(cache, miso.FILE, miso.URL, manifest)
         write_json(cache / "manifest.json", manifest)
+    if MISO_A_FILE not in manifest:
+        fetch_into(cache, MISO_A_FILE, MISO_A_URL, manifest)
+        write_json(cache / "manifest.json", manifest)
     for state in STATES:
         if f"osm-{state.lower()}.json" not in manifest:
             fetch_osm(cache, state, manifest)
@@ -273,7 +350,7 @@ def fetch(cache: Path) -> None:
 
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
-    manifest = verify_cache(cache, [ZIP, miso.FILE, *osm_files])
+    manifest = verify_cache(cache, [ZIP, miso.FILE, MISO_A_FILE, *osm_files])
     facilities = {s: osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s) for s in STATES}
     artifact = manifest[ZIP]
     projects, dispositions = [], []
@@ -306,6 +383,26 @@ def build(cache: Path) -> dict[Path, object]:
         projects.append(record)
         dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
                                      "location": record["location_candidate"]["tier"] or "unlocated"})
+    miso_count = len(projects) - spp_count
+    taken = {p["native_id"] for p in projects if p["source_id"] == MISO_SOURCE_ID} | {
+        p["native_id"] for path in MISO_PUBLISHED for p in load_json(REPO_ROOT / path) if "miso" in p["source_id"]}
+    as_of, a_rows = miso_a_rows(cache / MISO_A_FILE)
+    for row in a_rows:
+        states = miso_states(row["State(s)"])
+        where = {"source_id": MISO_A_SOURCE_ID, "sheet": row["_sheet"], "row": row["_row"],
+                 "native_id": row["_native"], "name": clean(row["Project Name"] or "")}
+        reason = ("no state listed" if not states
+                  else f"outside F46 states ({','.join(states)})" if not set(states) <= STATES.keys()
+                  else "MTEP ID already published (F46 MTEP26 list, F40 or F39)" if row["_native"] in taken
+                  else None)
+        if reason:
+            dispositions.append(where | {"disposition": "excluded", "reason": reason})
+            continue
+        taken.add(row["_native"])  # App. B repeats of an App. A ID stay out
+        record = miso_a_project(row, manifest[MISO_A_FILE], as_of, facilities)
+        projects.append(record)
+        dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
+                                     "location": record["location_candidate"]["tier"] or "unlocated"})
     if len({p["_id"] for p in projects}) != len(projects):
         raise SystemExit("project ID repeated within a workbook")
     projects.sort(key=lambda p: p["_id"])
@@ -319,7 +416,7 @@ def build(cache: Path) -> dict[Path, object]:
         "public_status": "verified_public", "import_status": "imported", "access_policy": "public_document",
         "planning_region": "miso",
         "states": sorted({s for p in projects if p["source_id"] == MISO_SOURCE_ID for s in p["states"]}),
-        "project_count": len(projects) - spp_count,
+        "project_count": miso_count,
         "notes": ["F46 Midwest release (C43): rows listing only IA, MO, ND or SD from the workbook F40 pinned "
                   "(miso-mtep26-eval); F40 kept the Great Lakes rows. Same artifact and hash.",
                   "Under-evaluation projects are proposals; M2 rows are Appendix A approved. Locations are unreviewed "
@@ -339,7 +436,22 @@ def build(cache: Path) -> dict[Path, object]:
                   "confirmed. Source-bounded, not statewide coverage.",
                   f"sha256 is of the appendix zip; rows are read from its member “{MEMBER.split('/')[-1]}”."],
     }
-    return {OUT / "projects.json": projects, OUT / "sources.json": [source, miso_source],
+    a_artifact = manifest[MISO_A_FILE]
+    a_source = {
+        "_id": MISO_A_SOURCE_ID, "publisher": "Midcontinent Independent System Operator (MISO)",
+        "title": "MTEP25 Appendix A workbook (App. A approved and App. B rows)",
+        "authority": "regional_planning_organization", "role": "project_plan",
+        "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+        "download_url": a_artifact["url"], "publication_date": None, "vintage": f"MTEP25, as of {as_of}",
+        "retrieved_at": a_artifact["retrieved_at"], "sha256": a_artifact["sha256"], "public_status": "verified_public",
+        "import_status": "imported", "access_policy": "public_document", "planning_region": "miso",
+        "states": sorted({s for p in projects if p["source_id"] == MISO_A_SOURCE_ID for s in p["states"]}),
+        "project_count": sum(p["source_id"] == MISO_A_SOURCE_ID for p in projects),
+        "notes": ["FIX-F46 (Midwest release): rows listing only IA, MO, ND or SD whose MTEP ID no rollout publishes; "
+                  "F39 reads the same workbook for its own states.",
+                  "Located from the Facility sheet's From/To substations when they name one site or line, else from "
+                  "the title. Unreviewed C33 candidates; none is independently confirmed."]}
+    return {OUT / "projects.json": projects, OUT / "sources.json": [source, miso_source, a_source],
             OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",

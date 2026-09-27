@@ -92,8 +92,17 @@ def test_committed_release_appends_unreviewed_candidates_in_their_states():
     snapshot["coverage"].update(_coverage(snapshot["projects"], imported))
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / "data" / "midwest" / "releases" / "active.json")
-    added = [p for p in snapshot["projects"] if p["source_id"] in {"spp-qpt-2026q3", "miso-mtep26-eval-midwest"}]
+    added = [p for p in snapshot["projects"]
+             if p["source_id"] in {"spp-qpt-2026q3", "miso-mtep26-eval-midwest", "miso-mtep25-appendix-a-midwest"}]
     assert len(added) == release["expected_counts"]["projects"]
     assert all(set(p["states"]) <= {"19", "29", "20", "31", "38", "46"} for p in added)
     assert all(p["location_review"] == ("unreviewed" if p["center"] else "unlocated") for p in added)
     assert snapshot["coverage"]["midwest"]["independently_confirmed_projects"] == 0
+
+
+def test_appendix_a_rows_are_new_mtep_ids_in_f46_states():
+    projects = load_json(REPO_ROOT / "data" / "midwest" / "projects.json")
+    appendix = [p for p in projects if p["source_id"] == "miso-mtep25-appendix-a-midwest"]
+    assert appendix and all(set(p["states"]) <= {"19", "29", "38", "46"} for p in appendix)
+    earlier = {p["native_id"] for p in projects if p["source_id"] == "miso-mtep26-eval-midwest"}
+    assert not {p["native_id"] for p in appendix} & earlier
