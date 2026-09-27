@@ -1,0 +1,62 @@
+{
+  "id": "F38-new-england-locations-02",
+  "started_at": "2026-09-27T01:20:48.725917+00:00",
+  "deadline": "2026-09-27T09:20:48.725917+00:00",
+  "runtime": "Codex local",
+  "model": "GPT-6 session",
+  "integrator": "root",
+  "researchers": {
+    "f38_grid_research": "NOAA/MassCZM and MA/RI project evidence",
+    "f38_other_research": "VT utility/government sources; independent NOAA review after handoff"
+  },
+  "reviewers": {
+    "f38_contract_review": "VT source/geometry independent review",
+    "f38_other_research": "NOAA source/geometry independent review; cannot approve own VT proposals"
+  },
+  "states": [
+    "CT",
+    "ME",
+    "MA",
+    "NH",
+    "RI",
+    "VT"
+  ],
+  "sources": [
+    "iso-ne-rsp-2026-06",
+    "noaa-czm-ne-substations-2013",
+    "vermont-psd-electric-substations",
+    "public-utility-and-regulator-project-documents-linked-in-manifests"
+  ],
+  "target": {
+    "verified_projects_min": 250,
+    "verified_projects_max": 500
+  },
+  "scope": "Actual project location evidence, reviewed release and existing national loader/explorer delivery; F19 integration tracked separately with its owner. Broaden beyond first300 worklist only within existing1024 RSP records; retain explicit historical status.",
+  "limits": {
+    "max_artifact_bytes": 33554432,
+    "request_timeout_seconds": 30,
+    "max_download_attempts": 2,
+    "max_requests": 200,
+    "max_projects_per_release": 500
+  },
+  "budget": {
+    "wall_clock_hours": 8,
+    "monetary_budget": null,
+    "account_meter": "not exposed"
+  },
+  "stop_rules": [
+    "Honor origin/main STOP and required CI red.",
+    "At75% elapsed stop new source work.",
+    "One hour before deadline start no new source; last30min validation/report only.",
+    "Do not weaken location evidence to reach target.",
+    "No restricted source; National Grid portal not eligible for redistribution."
+  ],
+  "contract": "PR137/C23; must merge before production implementation",
+  "baseline": {
+    "revision": "a0cfee7da1d0e5e097fae74db21f5c8aad9af60e",
+    "iso_ne_records": 1024,
+    "iso_ne_located": 0,
+    "national_records": 1286
+  },
+  "prior_geographic_gate": "not passed; this run must prove live verified points"
+}
