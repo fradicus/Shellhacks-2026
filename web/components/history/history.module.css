@@ -1308,3 +1308,40 @@
   font-weight: 400;
   color: var(--ink-3);
 }
+
+/* F54: colour is the state (/time's inks), tier is the ground mark. */
+.gState {
+  flex: none;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: conic-gradient(#ff6b81 0 60deg, #ffa94d 0 120deg, #ffe066 0 180deg, #51e0a0 0 240deg, #4cc9f0 0 300deg, #b197fc 0);
+  vertical-align: middle;
+}
+.tierMark {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink-2, #d8d2c4);
+  vertical-align: middle;
+}
+.tierMark[data-t="confirmed"] { outline: 1px solid var(--ink-3, #a9a293); outline-offset: 1.5px; margin: 0 3px 0 2px; }
+.tierMark[data-t="tentative"] { width: 6px; height: 6px; opacity: 0.7; }
+
+/* F54: provenance folds away, as /time's "Data and sources" does. */
+.sources summary {
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.sources summary:hover,
+.sources[open] summary {
+  color: var(--ink-2);
+}
+.sources > * + * {
+  margin-top: 8px;
+}

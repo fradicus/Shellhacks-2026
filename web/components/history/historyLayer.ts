@@ -26,6 +26,8 @@ export interface Glyph {
 export interface HistoryItem {
   key: string;
   color: string;
+  /** Location tier (C25), drawn on the ground mark: confirmed double ring, owner-published ring, tentative small ring. */
+  tier?: "confirmed" | "official" | "tentative";
   lng: number;
   lat: number;
   glyphs: Glyph[];
@@ -145,6 +147,9 @@ function circle() {
   return { mesh, width: 1.4, dashed: true };
 }
 
+/** Where a pillar's lit stem starts: its earliest documented date (years above the axis ground). */
+export const stemFrom = (glyphs: { z0: number }[]) => glyphs.reduce((m, g) => Math.min(m, g.z0), Infinity);
+
 export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: Projected) => void }) {
   let map: MlMap | null = null;
   let renderer: THREE.WebGLRenderer | null = null;
@@ -242,12 +247,21 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
       const top = topOf(it);
       const lit = Math.min(top, plane);
       const reached = it.glyphs.some((g) => g.z0 <= plane);
-      ground.push({ p: [x, y, 0], c, size: e === "sel" ? 18 : e === "dim" ? 6 : 9, shape: 1, bright: k * (reached ? 0.8 : 0.3) * dot });
+      const gs = (e === "sel" ? 18 : e === "dim" ? 6 : 9) * (it.tier === "tentative" ? 0.7 : 1);
+      const gb = k * (reached ? 0.8 : 0.3) * dot * (it.tier === "tentative" ? 0.7 : 1);
+      ground.push({ p: [x, y, 0], c, size: gs, shape: 1, bright: gb });
+      if (it.tier === "confirmed") ground.push({ p: [x, y, 0], c, size: gs * 1.8, shape: 1, bright: gb * 0.7 });
       if (reached && e !== "dim" && glowK > 0) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 44 : 24, shape: 3, bright: k * 0.3 * glowK });
-      // The pillar grows up to the plane; what the record documents later stands above it as a faint dashed ghost.
-      if (lit > 0) {
-        if (e === "sel") segs.sel.push({ a: [x, y, 0], b: [x, y, lit], ca: mul(c, 0.25), cb: mul(c, 1.1) });
-        else segs.lit.push({ a: [x, y, 0], b: [x, y, lit], ca: mul(c, 0.05 * k * q), cb: mul(c, 0.5 * k * q) });
+      // The lit stem spans the record: first documented date up to the plane (stemFrom). Below it, a hairline drop
+      // anchors the pillar to its ground mark; the window start is no fact about the project, so it gets no stem.
+      const first = stemFrom(it.glyphs);
+      if (lit > first) {
+        if (e === "sel") segs.sel.push({ a: [x, y, first], b: [x, y, lit], ca: mul(c, 0.45), cb: mul(c, 1.1) });
+        else segs.lit.push({ a: [x, y, first], b: [x, y, lit], ca: mul(c, 0.2 * k * q), cb: mul(c, 0.5 * k * q) });
+      }
+      if (first > 0 && reached) {
+        const d = e === "normal" ? 0.3 * q : 1;
+        segs.lit.push({ a: [x, y, 0], b: [x, y, Math.min(first, plane)], ca: mul(c, 0.03 * k * d), cb: mul(c, 0.12 * k * d) });
       }
       if (top > plane) segs.ghost.push({ a: [x, y, Math.max(plane, 0)], b: [x, y, top], ca: mul(c, 0.12 * k * q), cb: mul(c, 0.12 * k * q) });
       if (it.thread) {
