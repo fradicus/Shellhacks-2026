@@ -26,7 +26,7 @@ from .shared import locate_named, write_outputs
 SOURCE_ID = "nyiso-gold-book-2026"
 URL = "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8"
 SHA256 = "43865c1cbe38ca2ef4c8319d11454881de2b9dde3e48867dbbd2e94855b908bf"
-RETRIEVED = "2026-09-27"  # downloaded by the user in a browser (NYISO blocks scripted requests)
+RETRIEVED = "2026-09-27T02:53:05Z"  # the user's browser download (file mtime); NYISO challenges scripts
 TITLE = "Table VII: Proposed Transmission Facilities"
 DATASET = "OpenStreetMap (ODbL), data/greatlakes/osm/ny-substations.json"
 # Column left edges (PDF points) measured from the table header; each word belongs to the last edge at or before it.

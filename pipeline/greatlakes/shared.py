@@ -21,8 +21,6 @@ USER_AGENT = "GridBridge/0.1 (https://github.com/fradicus/Shellhacks-2026)"
 OVERPASS_URLS = ["https://overpass-api.de/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
 MAX_BYTES = 16 * 1024 * 1024
 OUT = REPO_ROOT / "data" / "greatlakes"
-# Fixed publication order (C26): each state's projects are appended to data/greatlakes/projects.json.
-STATES = ["mn", "wi", "miso", "ny", "aep", "firstenergy"]
 # Operator-name fragments per utility, matched against the OSM operator tag.
 OPERATOR_KEYS = {
     "XEL": ["XCEL", "NORTHERN STATES"], "XCEL": ["XCEL", "NORTHERN STATES"], "GRE": ["GREAT RIVER"],
@@ -142,10 +140,5 @@ def write_outputs(state: str, result: dict, check: bool) -> int:
         return 1 if stale else 0
     for path, value in outputs.items():
         write_json(path, value)
-    combined = [p for s in STATES if (OUT / s / "projects.json").exists() for p in load_json(OUT / s / "projects.json")]
-    ids = [p["_id"] for p in combined]
-    if len(ids) != len(set(ids)):
-        raise SystemExit("duplicate _id across states")
-    write_json(OUT / "projects.json", combined)
     print(json.dumps(summary(result["projects"]), indent=2))
     return 0
