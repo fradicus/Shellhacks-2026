@@ -22,7 +22,7 @@ query, retrieval time and raw hash. Raw downloads stay outside Git. Source vinta
 Use the existing `_facility` normalizer equally on source terminal and OSM `name`, `alt_name`, `old_name`.
 Require exact normalized equality, containment of the OSM reference point in the row's exact named county,
 and one surviving OSM element ID. Repeated aliases on one element count once; two elements are ambiguous.
-Boundary/ambiguous county membership does not qualify. No fuzzy match, nearby substitute or county centroid.
+Boundary/ambiguous county membership does not qualify. No fuzzy facility match or nearby substitute.
 One matching endpoint is partial; two use the mission arithmetic mean. These are tentative terminal references,
 not surveyed construction sites or line routes. Retain that distinction for new substations named along lines.
 
@@ -30,8 +30,13 @@ Display Candidate / tentative with this visible note:
 "OSM facility reference point matched by exact name + county; not independently reviewed; not survey-grade."
 Keep `location_review=unreviewed`. Preserve source links, both row citations where duplicated, OSM attribution
 and reference-point meaning in selection and exports. Candidate geometry never enters overlap calculations.
-Area-only rows retain recognized named counties and null center; unlocated rows retain raw unknown geography.
-Texas county-only records never become dots, including under any broader C31 county-location policy.
+The user subsequently allowed county dots to keep the graph simple. Align with C31: county-only rows retain
+null exact center and separate attributed Census display anchors, labeled "County reference — exact site
+unknown." Multi-county projects retain linked anchors under one project ID; never silently choose one county.
+Use the same map with a visible precision label. The additive `approximate_location` field carries
+`precision=county`, `label`, `anchors` (county GEOID/name, lat/lon, method and source ID),
+`reference_source` (URL/hash/retrieval time), and `eligible_for_matching=false`. Exact `center` remains null.
+Unlocated rows retain raw unknown geography.
 Completed-sheet names do not override conflicting row statuses; preserve the conflict and actual/projected
 milestones independently. No inferred dates or completion claims.
 
@@ -48,7 +53,7 @@ dataset on failure. Roll back by removing the statewide activation file and load
 
 F31 preserves candidate/area/unlocated evidence and ODbL attribution in API, explorer and exports. F19 admits
 candidate points only with the visible tentative distinction, partial-endpoint meaning and selection evidence;
-area-only remains searchable without a point. Each existing owner implements its own paths. No new worker is
+county-only records use labeled reference dots. Each existing owner implements its own paths. No new worker is
 assigned. Report observation and canonical counts separately: full/partial candidates, area-only, unlocated,
 ambiguous terminals and affected rows. Staged, merged, loaded, active-read and selectable-map counts are distinct.
 Live delivery requires the successful Action, matching active RO read and selectable `/time` candidate evidence.
