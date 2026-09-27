@@ -70,7 +70,7 @@ def _coverage(projects: list[dict[str, Any]], imported_source_ids: set[str]) -> 
         "notes": [
             "Counts cover imported records only and do not claim nationwide project completeness.",
             "ISO-NE supplies no counties or coordinates; independently reviewed expansion evidence may locate projects.",
-            "Legacy project state assignments and every current project county remain unknown rather than inferred.",
+            "Unknown project states and counties remain unknown rather than inferred.",
             "Legacy discovery includes current filing versions only; superseded versions remain in the filing-change view.",
             "Census bounds and representative points frame reference geography and never become project locations.",
             "EIA-861 remains a reference-only catalog entry; no utility identity or service-area match is inferred.",
