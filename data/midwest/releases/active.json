@@ -1,17 +1,17 @@
 {
   "expected_counts": {
-    "candidate": 277,
-    "candidate_unique_name": 21,
-    "centers": 298,
-    "distinct_points": 151,
-    "projects": 673,
-    "sources": 2
+    "candidate": 304,
+    "candidate_unique_name": 23,
+    "centers": 327,
+    "distinct_points": 173,
+    "projects": 754,
+    "sources": 3
   },
   "files": {
-    "projects": "a654cad57481a0e6fed5007838ccdfbf5ca6c41755a279e930c506f6f8a38636",
-    "sources": "4f6b56ff5df6ddaf5ef7e9cb9d435ed8b71d319160a17f89553a3f57fe05b047"
+    "projects": "4ff2bbae90444d79f3c2014d61169ec2f08eb86495b9528e48381fc75e543bf5",
+    "sources": "4c982c3f67a11352903a8312adb303be02f87dd2602ac4ef4886d6360c732887"
   },
   "policy": "C25",
-  "release_id": "midwest-spp-miso-candidates-2",
+  "release_id": "midwest-spp-miso-candidates-3",
   "rule": "C33"
 }

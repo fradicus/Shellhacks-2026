@@ -1,45 +1,45 @@
 {
   "extracts": {
     "osm-ia.json": {
-      "bytes": 467889,
+      "bytes": 467890,
       "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-IA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-      "retrieved_at": "2026-09-27T08:12:40Z",
-      "sha256": "6dccf18af278ca4c43e80128eeb73a420fd6a50666d69b92ba71ea2b38eaf0c6",
-      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-    },
-    "osm-ks.json": {
-      "bytes": 304071,
-      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-KS\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-      "retrieved_at": "2026-09-27T08:16:51Z",
-      "sha256": "71c873ee8364e3201d4a8b8bdc7336146f75d49b55e1ddacf459c73b87152e1f",
-      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-    },
-    "osm-mo.json": {
-      "bytes": 408021,
-      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MO\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-      "retrieved_at": "2026-09-27T08:13:42Z",
-      "sha256": "f0dee87fa1ef07aeeb9fd32470ab392f8332b273a39440f00c3eb449a11e3938",
+      "retrieved_at": "2026-09-27T10:09:33Z",
+      "sha256": "a517f956c6c1c1f567bd867158af443a3c001b38e9e2a2be4318ab3e78c92684",
       "url": "https://overpass-api.de/api/interpreter"
     },
-    "osm-nd.json": {
-      "bytes": 276755,
-      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-ND\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-      "retrieved_at": "2026-09-27T08:19:37Z",
-      "sha256": "3ead6dea4feffc4ea5b99107ebac2f621e81c91c8db6bbb5b2ea3e26f8949175",
+    "osm-ks.json": {
+      "bytes": 304072,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-KS\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T10:11:51Z",
+      "sha256": "51e8e80ebbff65a82ff8e05be0fda48071296e9e6168d970f1b56c745e49dae2",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    "osm-mo.json": {
+      "bytes": 408020,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MO\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T10:10:53Z",
+      "sha256": "84fc9d7b621dffe7161c71f5056afa9453b265d356996d6c27930bcc35cea724",
       "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    },
+    "osm-nd.json": {
+      "bytes": 276756,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-ND\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T10:12:26Z",
+      "sha256": "ca66e8c0117fec739c9244ca599d8eed1187b6deb3d86d4eceaa35e93a73e6a7",
+      "url": "https://overpass-api.de/api/interpreter"
     },
     "osm-ne.json": {
       "bytes": 263785,
       "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-NE\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-      "retrieved_at": "2026-09-27T08:17:57Z",
-      "sha256": "2adf6434bfe0783b580f554cd3beb3f6af71952f2577f235d69bf12b149686c9",
+      "retrieved_at": "2026-09-27T10:12:07Z",
+      "sha256": "acf8dacc32c25de9021356bee80685b916ac4a1ffe1b38cb4baf34bcc4df037f",
       "url": "https://overpass-api.de/api/interpreter"
     },
     "osm-sd.json": {
       "bytes": 247787,
       "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-SD\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-      "retrieved_at": "2026-09-27T08:20:04Z",
-      "sha256": "ebb262302ff9ff9acfded7bbb06797e9694ad13a2f266960281b429e156a060f",
+      "retrieved_at": "2026-09-27T10:13:23Z",
+      "sha256": "6e125c0a1009c176f9654b4b79b39390ec00e486916d8bcb5533ed2fbd928f9b",
       "url": "https://overpass-api.de/api/interpreter"
     }
   },

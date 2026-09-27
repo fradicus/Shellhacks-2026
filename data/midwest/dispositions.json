@@ -18842,5 +18842,4262 @@
     "row": 599,
     "sheet": "MTEP Projects Under Evaluation",
     "source_id": "miso-mtep26-eval-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Moonshine Solar Bootleg 138 kV switching station (J1382)",
+    "native_id": "25018",
+    "reason": "outside F46 states (IL)",
+    "row": 3,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Aster 138 kV interconnection (J1777)",
+    "native_id": "50077",
+    "reason": "outside F46 states (IL)",
+    "row": 4,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Ramsey East 138 kV Connection (J1714)",
+    "native_id": "50084",
+    "reason": "outside F46 states (IL)",
+    "row": 5,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Powerton-Tazewell 345 kV line (AE1-163)",
+    "native_id": "50118",
+    "reason": "outside F46 states (IL)",
+    "row": 6,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Moro-Cottage Hills 138 kV Line (C1908 MPFCA)",
+    "native_id": "50119",
+    "reason": "outside F46 states (IL)",
+    "row": 7,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Latham-Docket-1409 138 kV line (C1903 MPFCA)",
+    "native_id": "50189",
+    "reason": "outside F46 states (IL)",
+    "row": 8,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Dupo Ferry 138 kV breakers",
+    "native_id": "50504",
+    "reason": "outside F46 states (IL)",
+    "row": 9,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Prest-Tibbs 138 kV line (1558)",
+    "native_id": "22788",
+    "reason": "outside F46 states (IL)",
+    "row": 10,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Tuscola West 138 kV substation",
+    "native_id": "22907",
+    "reason": "outside F46 states (IL)",
+    "row": 11,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Joppa - Marion South 161kV line",
+    "native_id": "22908",
+    "reason": "outside F46 states (IL)",
+    "row": 12,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace West Frankfort East 345/138 kV transformer 1",
+    "native_id": "25269",
+    "reason": "outside F46 states (IL)",
+    "row": 13,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Charleston NE 138kV line",
+    "native_id": "25328",
+    "reason": "outside F46 states (IL)",
+    "row": 14,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50140",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Upgrade Fargo 138 kV Line Position for Lucky",
+    "native_id": "50140",
+    "row": 15,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Taylorville South 138 kV Substation",
+    "native_id": "50175",
+    "reason": "outside F46 states (IL)",
+    "row": 16,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Marion South 161/138 kV transformer",
+    "native_id": "50185",
+    "reason": "outside F46 states (IL)",
+    "row": 17,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Peru-Princeton 138 kV line",
+    "native_id": "50190",
+    "reason": "outside F46 states (IL)",
+    "row": 18,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Wieland Metals 138 kV Load Addition",
+    "native_id": "50198",
+    "reason": "outside F46 states (IL)",
+    "row": 19,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Harco South-Carrier Mills 161 kV line",
+    "native_id": "50230",
+    "reason": "outside F46 states (IL)",
+    "row": 20,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reconfigure Steeleville 138 kV Substation to Ring Bus",
+    "native_id": "50257",
+    "reason": "outside F46 states (IL)",
+    "row": 21,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Radbourn 345 kV and Leghorn 345 kV Shunt Reactors",
+    "native_id": "50282",
+    "reason": "outside F46 states (IL)",
+    "row": 22,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Marblehead North 161/138 kV transformer",
+    "native_id": "50288",
+    "reason": "outside F46 states (IL)",
+    "row": 23,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Wakefield 138 kV switching station",
+    "native_id": "50299",
+    "reason": "outside F46 states (IL)",
+    "row": 24,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reconductor Grand Tower-Campbell Hill 138 kV line",
+    "native_id": "9740",
+    "reason": "outside F46 states (IL)",
+    "row": 25,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:23530",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "New Spencer Creek generation interconnection MPFCA (J956/J1026)",
+    "native_id": "23530",
+    "row": 26,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50154",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Grain Belt Express AECI Facilities Construction Agreement (GI-083)",
+    "native_id": "50154",
+    "row": 27,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50186",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Grain Belt Express HVDC Network Upgrades (H104-H105)",
+    "native_id": "50186",
+    "row": 28,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50220",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Rebuild McCredie-Overton 345 kV Line (MPFCA)",
+    "native_id": "50220",
+    "row": 29,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50221",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Rebuild Overton-McBaine Tap 161 kV Line (MPFCA)",
+    "native_id": "50221",
+    "row": 30,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50222",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Rebuild Overton-Sedalia East 161 kV Line (MPFCA)",
+    "native_id": "50222",
+    "row": 31,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:22874",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Upgrade Ashley 161 kV substation",
+    "native_id": "22874",
+    "row": 32,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:22881",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade Belleau 138 kV substation",
+    "native_id": "22881",
+    "row": 33,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:23046",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade Montgomery 345/161 kV Substation",
+    "native_id": "23046",
+    "row": 34,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:25040",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Replace Tyson 345/138 kV transformer 3",
+    "native_id": "25040",
+    "row": 35,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:25496",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Blanchette 138 kV Ring Bus",
+    "native_id": "25496",
+    "row": 36,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:25497",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Reconfigure Overton 161kV Substation",
+    "native_id": "25497",
+    "row": 37,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50100",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebuild Baumgartner 138 kV Substation",
+    "native_id": "50100",
+    "row": 38,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50226",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Vulcan 138/34 kV Substation",
+    "native_id": "50226",
+    "row": 39,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50227",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade California 161 kV Terminal",
+    "native_id": "50227",
+    "row": 40,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50256",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Tibbe 138/34.5 kV Substation",
+    "native_id": "50256",
+    "row": 41,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50259",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Rebuild Fletcher-Pilot Knob-2 161 kV line",
+    "native_id": "50259",
+    "row": 42,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50403",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Relocate Dardenne 161/138 kV Substation",
+    "native_id": "50403",
+    "row": 43,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50531",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "New AECI Load Addition at Ameren Fredericktown 138 kV",
+    "native_id": "50531",
+    "row": 44,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50615",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "New Central 138 kV Substation Load Addition",
+    "native_id": "50615",
+    "row": 45,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50616",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "New Rootbeer 345 kV Substation Load Addition",
+    "native_id": "50616",
+    "row": 46,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50617",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "New 345 kV Lumberjack substation for Load Connection",
+    "native_id": "50617",
+    "row": 47,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50696",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "New Huster-McClay 138 kV line tap for Hayford load",
+    "native_id": "50696",
+    "row": 48,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50631",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Missouri Multi-Entity New Transmission (MoMENT) Project (Primary)",
+    "native_id": "50631",
+    "row": 49,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Diamond Core Load Addition (RECC Territory) at Mogul 345 kV substation",
+    "native_id": "50636",
+    "reason": "outside F46 states (IL,MO)",
+    "row": 50,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mill Road – Granville Project",
+    "native_id": "24919",
+    "reason": "outside F46 states (WI)",
+    "row": 51,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50157",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Big Cedar Load Expansion",
+    "native_id": "50157",
+    "row": 52,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine County, DIC, Jupiter Substation",
+    "native_id": "50167",
+    "reason": "outside F46 states (WI)",
+    "row": 53,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine County, DIC, Cosmos Substation",
+    "native_id": "50543",
+    "reason": "outside F46 states (WI)",
+    "row": 54,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Split Rock - Chanarambie 345kV line JTIQ",
+    "native_id": "50489",
+    "reason": "outside F46 states (MN,SD)",
+    "row": 55,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine County Western Feed Transmission Line Project",
+    "native_id": "50168",
+    "reason": "outside F46 states (WI)",
+    "row": 56,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "LG - 2",
+    "native_id": "50481",
+    "reason": "outside F46 states (MN)",
+    "row": 57,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine County, DIC, Mount Pleasant Substation Expansion",
+    "native_id": "50166",
+    "reason": "outside F46 states (WI)",
+    "row": 58,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brookings County - Lyon County 345kV Davit Arm Replacement",
+    "native_id": "50711",
+    "reason": "outside F46 states (MN,SD)",
+    "row": 59,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Riverton STATCOM",
+    "native_id": "50218",
+    "reason": "outside F46 states (MN)",
+    "row": 60,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine County, DIC, Stratus Substation",
+    "native_id": "50165",
+    "reason": "outside F46 states (WI)",
+    "row": 61,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50329",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Substation 91 Expansion",
+    "native_id": "50329",
+    "row": 62,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sun Prairie Area Reliability Project",
+    "native_id": "25161",
+    "reason": "outside F46 states (WI)",
+    "row": 63,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50445",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sioux Falls 115kV Conversion",
+    "native_id": "50445",
+    "row": 64,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITC Midwest Asset Management blanket",
+    "native_id": "50380",
+    "reason": "outside F46 states (IA,IL,MN)",
+    "row": 65,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pine – Skanawan Tap – Eastom 115kV (I-9), OPGW Addition & Partial Rebuild",
+    "native_id": "23841",
+    "reason": "outside F46 states (WI)",
+    "row": 66,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Small Capital Project and Asset Renewal Program 2026",
+    "native_id": "25185",
+    "reason": "outside F46 states (MI,WI)",
+    "row": 67,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rock Creek 345 kV Substation Expansion and Rock Creek - Quad Cities #2 345 kV line",
+    "native_id": "50213",
+    "reason": "outside F46 states (IA,IL)",
+    "row": 68,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pittsville Area Reliability Project",
+    "native_id": "25314",
+    "reason": "outside F46 states (WI)",
+    "row": 69,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Appleton Area Reliability Project",
+    "native_id": "50529",
+    "reason": "outside F46 states (WI)",
+    "row": 70,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install Inver Hills TRs and Feeders",
+    "native_id": "50398",
+    "reason": "outside F46 states (MN)",
+    "row": 71,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50260",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Hettinger-Elgin rebuild to 115 kV",
+    "native_id": "50260",
+    "row": 72,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "LG - 3",
+    "native_id": "50482",
+    "reason": "outside F46 states (MN)",
+    "row": 73,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Maple Grove Substation",
+    "native_id": "50440",
+    "reason": "outside F46 states (MN)",
+    "row": 74,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Lake Geneva – Elkhorn 138 kV (X-55), Rebuild",
+    "native_id": "50225",
+    "reason": "outside F46 states (WI)",
+    "row": 75,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1629 Welsh Prairie SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50508",
+    "reason": "outside F46 states (WI)",
+    "row": 76,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Soderville Area Projects",
+    "native_id": "50264",
+    "reason": "outside F46 states (MN)",
+    "row": 77,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50336",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Substation Equipment Replacement Blanket",
+    "native_id": "50336",
+    "row": 78,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Byron - Pleasant Valley 161kV Line Upgrade",
+    "native_id": "50500",
+    "reason": "outside F46 states (MN)",
+    "row": 79,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1502 Emerson Rd SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50514",
+    "reason": "outside F46 states (WI)",
+    "row": 80,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Load Interconnection Program 2026",
+    "native_id": "25187",
+    "reason": "outside F46 states (MI,WI)",
+    "row": 81,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1706 North Monroe SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50506",
+    "reason": "outside F46 states (WI)",
+    "row": 82,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Birnamwood Area Reliability Project",
+    "native_id": "50233",
+    "reason": "outside F46 states (WI)",
+    "row": 83,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bena Area Projects",
+    "native_id": "50419",
+    "reason": "outside F46 states (MN)",
+    "row": 84,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Portage - Columbia 138 kV (X-13/X-20), Reconductor",
+    "native_id": "50673",
+    "reason": "outside F46 states (WI)",
+    "row": 85,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50497",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "MidAmerican Upgrades for MTEP 50157 Big Cedar Load Expansion",
+    "native_id": "50497",
+    "row": 86,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1752 Shady Dr SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50545",
+    "reason": "outside F46 states (WI)",
+    "row": 87,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50211",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hayward - County Line - Ellendale 69 kV Rebuild",
+    "native_id": "50211",
+    "row": 88,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cormorant to Pelican Rapids Rebuild Projects",
+    "native_id": "50284",
+    "reason": "outside F46 states (MN)",
+    "row": 89,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install Stewart TR2",
+    "native_id": "50459",
+    "reason": "outside F46 states (MN)",
+    "row": 90,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1508 Galvin Ave SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50507",
+    "reason": "outside F46 states (WI)",
+    "row": 91,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fort Ridgely 69kV Rebuild",
+    "native_id": "50456",
+    "reason": "outside F46 states (MN)",
+    "row": 92,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50194",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1532 POI New 69 kV Interconnection Substation and 69 kV Line Taps",
+    "native_id": "50194",
+    "row": 93,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50192",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1529 POI New 69 kV Interconnection Substation and 69 kV Line Taps",
+    "native_id": "50192",
+    "row": 94,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50193",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1530 POI New 69 kV Interconnection Substation and 69 kV Line Taps",
+    "native_id": "50193",
+    "row": 95,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild 0735 St Bonifacius to Mound",
+    "native_id": "50417",
+    "reason": "outside F46 states (MN)",
+    "row": 96,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Empire Mine – Huron 138 kV (X-119), OPGW Addition",
+    "native_id": "50161",
+    "reason": "outside F46 states (MI)",
+    "row": 97,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50424",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Maple Street Substation",
+    "native_id": "50424",
+    "row": 98,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild 0737 Gleason Lake to Mound",
+    "native_id": "50421",
+    "reason": "outside F46 states (MN)",
+    "row": 99,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Green Lake Area Projects",
+    "native_id": "50266",
+    "reason": "outside F46 states (MN)",
+    "row": 100,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fargo-St. Cloud-Monticello 345kV Davit Arm Replacement",
+    "native_id": "50720",
+    "reason": "outside F46 states (MN)",
+    "row": 101,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 0868 Le Sauk - Fischer Hills - St Stephens Rebuild",
+    "native_id": "50461",
+    "reason": "outside F46 states (MN)",
+    "row": 102,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50428",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Replace Cass County TR1",
+    "native_id": "50428",
+    "row": 103,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1750 Grace Lake SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50530",
+    "reason": "outside F46 states (MI)",
+    "row": 104,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50334",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Eagle Grove-Goldfield 69 kV Interconnection and Clarion-Latimer 69 kV Line Rebuild",
+    "native_id": "50334",
+    "row": 105,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rush City Area Projects",
+    "native_id": "50263",
+    "reason": "outside F46 states (MN)",
+    "row": 106,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Substation Technology Package #2 – 2026",
+    "native_id": "50162",
+    "reason": "outside F46 states (WI)",
+    "row": 107,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Denham - Kettle River Rebuild",
+    "native_id": "50418",
+    "reason": "outside F46 states (MN)",
+    "row": 108,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Straits SS Power Transformer Asset Renewal",
+    "native_id": "24924",
+    "reason": "outside F46 states (MI)",
+    "row": 109,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth - North Transmission Substation Add 84/140 MVA transformer",
+    "native_id": "50261",
+    "reason": "outside F46 states (MN)",
+    "row": 110,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pennock Area Projects",
+    "native_id": "50473",
+    "reason": "outside F46 states (MN)",
+    "row": 111,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Substation 39 Replace 345-161 kV Transformer 9T1",
+    "native_id": "50331",
+    "reason": "outside F46 states (IL)",
+    "row": 112,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1824 Academy SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50534",
+    "reason": "outside F46 states (WI)",
+    "row": 113,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Prairie Reactor",
+    "native_id": "50455",
+    "reason": "outside F46 states (MN,ND)",
+    "row": 114,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install Avon Area Substation",
+    "native_id": "50458",
+    "reason": "outside F46 states (MN)",
+    "row": 115,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ellinwood SS Power Transformer Asset Renewal",
+    "native_id": "50173",
+    "reason": "outside F46 states (WI)",
+    "row": 116,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1732 Wolfram Rd SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50535",
+    "reason": "outside F46 states (WI)",
+    "row": 117,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Winthrop to Bell rebuild projects",
+    "native_id": "50427",
+    "reason": "outside F46 states (MN)",
+    "row": 118,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arpin SS Power Transformer Asset Renewal",
+    "native_id": "50172",
+    "reason": "outside F46 states (WI)",
+    "row": 119,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "180 Line Rebuild",
+    "native_id": "25267",
+    "reason": "outside F46 states (MN)",
+    "row": 120,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "PLPL81 and W-30 345 kV Line, Uprate",
+    "native_id": "50200",
+    "reason": "outside F46 states (WI)",
+    "row": 121,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Highland – Hill Valley 138 kV, Construct New Line",
+    "native_id": "25203",
+    "reason": "outside F46 states (WI)",
+    "row": 122,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Merton Area Projects",
+    "native_id": "50243",
+    "reason": "outside F46 states (MN)",
+    "row": 123,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Beloit Area DIC, New Substation",
+    "native_id": "50145",
+    "reason": "outside F46 states (WI)",
+    "row": 124,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Audubon 230 kV Load Addition and Line upgrades",
+    "native_id": "50176",
+    "reason": "outside F46 states (LA)",
+    "row": 125,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Babel to Webre 500 kV New Line",
+    "native_id": "50350",
+    "reason": "outside F46 states (LA)",
+    "row": 126,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New BREC Bon Harbor-OMU Sub ‘M’ 69 kV Interconnection",
+    "native_id": "50396",
+    "reason": "outside F46 states (KY)",
+    "row": 127,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Henderson County Capacitor Bank",
+    "native_id": "50577",
+    "reason": "outside F46 states (KY)",
+    "row": 128,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line Clearance Mitigation Program 2026",
+    "native_id": "25240",
+    "reason": "outside F46 states (MI,WI)",
+    "row": 129,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50324",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "88th Street Substation bus expansion and 161-13 kV transformer installation",
+    "native_id": "50324",
+    "row": 130,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "St. John's Lake Breaker Station",
+    "native_id": "50483",
+    "reason": "outside F46 states (MN)",
+    "row": 131,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Priam Second Transformer",
+    "native_id": "50484",
+    "reason": "outside F46 states (MN)",
+    "row": 132,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install Pine Island Island Area Substation",
+    "native_id": "50433",
+    "reason": "outside F46 states (MN)",
+    "row": 133,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50204",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Clinton Rail and Air Park 161 kV Interconnection",
+    "native_id": "50204",
+    "row": 134,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huiskamp - Division Street Tap 69 kV (Y-132), Rebuild",
+    "native_id": "50134",
+    "reason": "outside F46 states (WI)",
+    "row": 135,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Slugger to LGE Trimble 34530 Ckt. 345kV Line",
+    "native_id": "50201",
+    "reason": "outside F46 states (IN)",
+    "row": 136,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Staunton 230/138kV Xfmr Bk1 and 2",
+    "native_id": "50279",
+    "reason": "outside F46 states (IN)",
+    "row": 137,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Cayuga to Nucor 345 kV line",
+    "native_id": "50718",
+    "reason": "outside F46 states (IN)",
+    "row": 138,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Nucor to Wolf Creek 345 kV line",
+    "native_id": "50719",
+    "reason": "outside F46 states (IN)",
+    "row": 139,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Kokomo HP to Tipton West to Cammack Rd Jct 230kV",
+    "native_id": "50725",
+    "reason": "outside F46 states (IN)",
+    "row": 140,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace New London to Kokomo Highland Park 230kV Line",
+    "native_id": "50370",
+    "reason": "outside F46 states (IN)",
+    "row": 141,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Dresser 345kV Line",
+    "native_id": "50374",
+    "reason": "outside F46 states (IN)",
+    "row": 142,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Neuron - Lafayette 27MW load",
+    "native_id": "50280",
+    "reason": "outside F46 states (IN)",
+    "row": 143,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New HE Shadow Lake 138/12kV Sub",
+    "native_id": "50285",
+    "reason": "outside F46 states (IN)",
+    "row": 144,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Wabash Industrial 69/12kV Sub",
+    "native_id": "50289",
+    "reason": "outside F46 states (IN)",
+    "row": 145,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace 34507 Gibson-Petersburg 345 kV Line",
+    "native_id": "50341",
+    "reason": "outside F46 states (IN)",
+    "row": 146,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Greencastle Industrial Jct. to WVPA Vandalia 69kV Line",
+    "native_id": "50342",
+    "reason": "outside F46 states (IN)",
+    "row": 147,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Terre Haure Water St. 138kV Ring Bus",
+    "native_id": "50343",
+    "reason": "outside F46 states (IN)",
+    "row": 148,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New WVPA Richland 69kV ring bus",
+    "native_id": "50345",
+    "reason": "outside F46 states (IN)",
+    "row": 149,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Frankfort 230/69 Bk1",
+    "native_id": "50347",
+    "reason": "outside F46 states (IN)",
+    "row": 150,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crane Naval Base load expansion",
+    "native_id": "50349",
+    "reason": "outside F46 states (IN)",
+    "row": 151,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Arcadia N to Arcadia 69kV Line",
+    "native_id": "50351",
+    "reason": "outside F46 states (IN)",
+    "row": 152,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Huntington Goblesville Jct to United Jct 69kV Line",
+    "native_id": "50369",
+    "reason": "outside F46 states (IN)",
+    "row": 153,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild HE Bethany to Charlestown Jct 69kV Line",
+    "native_id": "50376",
+    "reason": "outside F46 states (IN)",
+    "row": 154,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Harelson-Jones Creek Tap 69kV Upgrades",
+    "native_id": "50357",
+    "reason": "outside F46 states (LA)",
+    "row": 155,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2026 EML Asset Renewal Program",
+    "native_id": "50367",
+    "reason": "outside F46 states (MS)",
+    "row": 156,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Admiral 138 kV New Substation and Transmission Line",
+    "native_id": "50196",
+    "reason": "outside F46 states (LA)",
+    "row": 157,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McAdams 500 kV Bus SPOF",
+    "native_id": "50368",
+    "reason": "outside F46 states (MS)",
+    "row": 158,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bobville Area Menu Phases 1 through 7",
+    "native_id": "25436",
+    "reason": "outside F46 states (TX)",
+    "row": 159,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Amelia to Poly 69 kV Upgrades",
+    "native_id": "50352",
+    "reason": "outside F46 states (TX)",
+    "row": 160,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Mid County to Stonegate 138 kV Rebuild",
+    "native_id": "50354",
+    "reason": "outside F46 states (TX)",
+    "row": 161,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rhodair 230 kV New Substation and Transmission Lines",
+    "native_id": "50199",
+    "reason": "outside F46 states (TX)",
+    "row": 162,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2026 ENOL Asset Renewal Program",
+    "native_id": "50353",
+    "reason": "outside F46 states (LA)",
+    "row": 163,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Oak Bend 230 kV station",
+    "native_id": "50600",
+    "reason": "outside F46 states (MS)",
+    "row": 164,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2026 ELL Asset Renewal Program",
+    "native_id": "50355",
+    "reason": "outside F46 states (LA)",
+    "row": 165,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Benoit 230 kV Station",
+    "native_id": "50528",
+    "reason": "outside F46 states (LA)",
+    "row": 166,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Willow Glen 138 kV Bus SPOF",
+    "native_id": "50361",
+    "reason": "outside F46 states (LA)",
+    "row": 167,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cargas 500 kV and Smalling 500-230 kV stations",
+    "native_id": "50539",
+    "reason": "outside F46 states (LA)",
+    "row": 168,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Andes 230 kV Expansion",
+    "native_id": "50601",
+    "reason": "outside F46 states (MS)",
+    "row": 169,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bluepoint 230 kV New Substation and line Cut-ins",
+    "native_id": "50546",
+    "reason": "outside F46 states (LA)",
+    "row": 170,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Beebe North 115kV SS - Nelson 115kV SS",
+    "native_id": "50191",
+    "reason": "outside F46 states (AR)",
+    "row": 171,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hot Springs 500kV SPOF",
+    "native_id": "50384",
+    "reason": "outside F46 states (AR)",
+    "row": 172,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "South China 138 kV New Substation",
+    "native_id": "50209",
+    "reason": "outside F46 states (TX)",
+    "row": 173,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "El Dorado Donan - El Dorado Monsanto 115 kV: Rebuild Line",
+    "native_id": "50385",
+    "reason": "outside F46 states (AR)",
+    "row": 174,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Riparian 115 kV Station",
+    "native_id": "50608",
+    "reason": "outside F46 states (LA)",
+    "row": 175,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Port Acres Bulk to Legend 230 kV Rebuild",
+    "native_id": "50356",
+    "reason": "outside F46 states (TX)",
+    "row": 176,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hilltop - Saint Joe 161kV: Rebuild Line",
+    "native_id": "50386",
+    "reason": "outside F46 states (AR)",
+    "row": 177,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Helena Harbor Load Addition",
+    "native_id": "50594",
+    "reason": "outside F46 states (AR)",
+    "row": 178,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2026 EAL Asset Renewal Program",
+    "native_id": "50383",
+    "reason": "outside F46 states (AR)",
+    "row": 179,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wrightsville 115kV: Build two 115kV lines",
+    "native_id": "50441",
+    "reason": "outside F46 states (AR)",
+    "row": 180,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Richard 500/138 kV Bus SPOF",
+    "native_id": "50362",
+    "reason": "outside F46 states (LA)",
+    "row": 181,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Saint Joe - Everton Road 161kV: Rebuild Line",
+    "native_id": "50387",
+    "reason": "outside F46 states (AR)",
+    "row": 182,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 4B Rebuild",
+    "native_id": "25502",
+    "reason": "outside F46 states (MS)",
+    "row": 183,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Little Prairie – Mud Lake Low Voltage Project",
+    "native_id": "50363",
+    "reason": "outside F46 states (LA)",
+    "row": 184,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Everton Road - Harrison East 161kV: Rebuild Line",
+    "native_id": "50388",
+    "reason": "outside F46 states (AR)",
+    "row": 185,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dupont Beamont to Nitro 69 kV Station Upgrades",
+    "native_id": "50358",
+    "reason": "outside F46 states (TX)",
+    "row": 186,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 5 Rebuild",
+    "native_id": "25541",
+    "reason": "outside F46 states (MS)",
+    "row": 187,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "RiverPlex 500-230 kV Station",
+    "native_id": "50671",
+    "reason": "outside F46 states (LA)",
+    "row": 188,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "2026 ETI Asset Renewal Program",
+    "native_id": "50586",
+    "reason": "outside F46 states (TX)",
+    "row": 189,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fort Mountain 161kV: Build New Substation",
+    "native_id": "50581",
+    "reason": "outside F46 states (AR)",
+    "row": 190,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Green Acres 500/230 kV New Substation",
+    "native_id": "50602",
+    "reason": "outside F46 states (MS)",
+    "row": 191,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Waterford 500/230 kV AT Upgrade",
+    "native_id": "50364",
+    "reason": "outside F46 states (LA)",
+    "row": 192,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Bryan to Runny 138 kV New Line and Substation",
+    "native_id": "50359",
+    "reason": "outside F46 states (TX)",
+    "row": 193,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cove Ridge 138 kV Station",
+    "native_id": "50675",
+    "reason": "outside F46 states (LA)",
+    "row": 194,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 74B Rebuild",
+    "native_id": "50391",
+    "reason": "outside F46 states (MS)",
+    "row": 195,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MPFCA Replace Sherwood 115kV Breakers",
+    "native_id": "50496",
+    "reason": "outside F46 states (AR)",
+    "row": 196,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Horseshoe Lake Substation",
+    "native_id": "50437",
+    "reason": "outside F46 states (MN)",
+    "row": 197,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Heartland Lakes Area Projects",
+    "native_id": "50273",
+    "reason": "outside F46 states (MN)",
+    "row": 198,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Elm Road HVB Breaker and Relay Asset Renewal",
+    "native_id": "50702",
+    "reason": "outside F46 states (WI)",
+    "row": 199,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Transmission Line Pole Replacement 2025",
+    "native_id": "50395",
+    "reason": "outside F46 states (MN)",
+    "row": 200,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Victor Area Projects",
+    "native_id": "50265",
+    "reason": "outside F46 states (MN)",
+    "row": 201,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Donaldson South J1575 Interconnection",
+    "native_id": "50521",
+    "reason": "outside F46 states (MN,ND)",
+    "row": 202,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Monroe County Breaker and Transformer EOL Replacement",
+    "native_id": "50443",
+    "reason": "outside F46 states (MN,WI)",
+    "row": 203,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Prairie Island TR10 Replacement",
+    "native_id": "50460",
+    "reason": "outside F46 states (MN)",
+    "row": 204,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Coyne Street SS Relay, Breaker and House Asset Renewal",
+    "native_id": "50126",
+    "reason": "outside F46 states (WI)",
+    "row": 205,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "rebuild W3449 Marshland to Mississippi River",
+    "native_id": "50436",
+    "reason": "outside F46 states (WI)",
+    "row": 206,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Forest Junction – Branch River 345 kV (W-15), Line Uprate",
+    "native_id": "50588",
+    "reason": "outside F46 states (WI)",
+    "row": 207,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1773 J1781 MPFCA Network Upgrades",
+    "native_id": "50518",
+    "reason": "outside F46 states (WI)",
+    "row": 208,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "West Byron TR 2",
+    "native_id": "50429",
+    "reason": "outside F46 states (MN)",
+    "row": 209,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50195",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Carroll County-Carroll South 69 kV Line Rebuild for DPP 2020",
+    "native_id": "50195",
+    "row": 210,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50449",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Roughrider Substation",
+    "native_id": "50449",
+    "row": 211,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install Montrose TR2",
+    "native_id": "50457",
+    "reason": "outside F46 states (MN)",
+    "row": 212,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50426",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Thunder Substation",
+    "native_id": "50426",
+    "row": 213,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "East Beloit SS, DIC, Sub Rebuild",
+    "native_id": "50547",
+    "reason": "outside F46 states (WI)",
+    "row": 214,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Portage SS Relay and Breaker Asset Renewal",
+    "native_id": "50124",
+    "reason": "outside F46 states (WI)",
+    "row": 215,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stiles - Sherwood 138 kV (L-142), Partial Rebuild",
+    "native_id": "50532",
+    "reason": "outside F46 states (WI)",
+    "row": 216,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Sweden Area Projects",
+    "native_id": "50242",
+    "reason": "outside F46 states (MN)",
+    "row": 217,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install East Mankato Area Substation",
+    "native_id": "50435",
+    "reason": "outside F46 states (MN)",
+    "row": 218,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Meire Grove TR1",
+    "native_id": "50434",
+    "reason": "outside F46 states (MN)",
+    "row": 219,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Range Line Dist (WE) - Range Line Switchyard 138 kV (61452), Replace Underground Cable",
+    "native_id": "24925",
+    "reason": "outside F46 states (WI)",
+    "row": 220,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Finger Road SS Relays and Remote Ends Asset Renewal",
+    "native_id": "50127",
+    "reason": "outside F46 states (WI)",
+    "row": 221,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rock River SS and Remote Ends Asset Renewal",
+    "native_id": "50125",
+    "reason": "outside F46 states (WI)",
+    "row": 222,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sigel - Vesper 69 kV (Y-108/Y-107), Partial Rebuild",
+    "native_id": "21922",
+    "reason": "outside F46 states (WI)",
+    "row": 223,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Merom Station 345kV Expansion and New 345kV line",
+    "native_id": "50490",
+    "reason": "outside F46 states (IN)",
+    "row": 224,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Ellettsville 345kV Station",
+    "native_id": "50491",
+    "reason": "outside F46 states (IN)",
+    "row": 225,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Expand Wheeler Creek 138 kV Station",
+    "native_id": "50492",
+    "reason": "outside F46 states (IN)",
+    "row": 226,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Ashland Tap - Cisne Junction 69 kV Line",
+    "native_id": "50493",
+    "reason": "outside F46 states (IL)",
+    "row": 227,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Merom 345 kV Substation Load Addition",
+    "native_id": "50599",
+    "reason": "outside F46 states (IN)",
+    "row": 228,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Marble Hill 345 kV Station and Load",
+    "native_id": "50614",
+    "reason": "outside F46 states (IN)",
+    "row": 229,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Scotland 345/69kV Substation",
+    "native_id": "50698",
+    "reason": "outside F46 states (IN)",
+    "row": 230,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Petersburg 138 kV Breakers - 3 Breakers",
+    "native_id": "50216",
+    "reason": "outside F46 states (IN)",
+    "row": 231,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Stout South Breakers - 12 Breakers 138 kV",
+    "native_id": "50217",
+    "reason": "outside F46 states (IN)",
+    "row": 232,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Southwest-Stout CT_132-02_138 kV Line",
+    "native_id": "50306",
+    "reason": "outside F46 states (IN)",
+    "row": 233,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Southwest-Northwest 132-04 138 kV Line",
+    "native_id": "50307",
+    "reason": "outside F46 states (IN)",
+    "row": 234,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Stout North-Sanitation Belmont-Southwest_132-01_&_132-74_138 kV Lines",
+    "native_id": "50311",
+    "reason": "outside F46 states (IN)",
+    "row": 235,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Southwest-Lilly South 132-10 138 kV Line",
+    "native_id": "50312",
+    "reason": "outside F46 states (IN)",
+    "row": 236,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Lilly South-Center 132-61 138 kV Line",
+    "native_id": "50313",
+    "reason": "outside F46 states (IN)",
+    "row": 237,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Georgetown-North 132-86 138 kV Line",
+    "native_id": "50314",
+    "reason": "outside F46 states (IN)",
+    "row": 238,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Ralstone 138 kV Substation Eagle Valley Reinforcement",
+    "native_id": "50315",
+    "reason": "outside F46 states (IN)",
+    "row": 239,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Pond Creek 345 : 138 kV Substation",
+    "native_id": "50722",
+    "reason": "outside F46 states (IN)",
+    "row": 240,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Uprate IPL Petersburg to Cato 138 kV Equipment",
+    "native_id": "50723",
+    "reason": "outside F46 states (IN)",
+    "row": 241,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Thompson 345/138/13.75 MVA Autotransformer at Thompson Substation",
+    "native_id": "50727",
+    "reason": "outside F46 states (IN)",
+    "row": 242,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "IPL Adoption of Seasonal Ratings - BRP",
+    "native_id": "50731",
+    "reason": "outside F46 states (IN)",
+    "row": 243,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Brownsburg East 138 kV Substation",
+    "native_id": "50502",
+    "reason": "outside F46 states (IN)",
+    "row": 244,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Pleasant Acres Substation Feed 2 138 kV line",
+    "native_id": "50503",
+    "reason": "outside F46 states (IN)",
+    "row": 245,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Gaylord - Mio Dam 138kV line",
+    "native_id": "20020",
+    "reason": "outside F46 states (MI)",
+    "row": 246,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild and Relocate Alma 138 kV substation",
+    "native_id": "50203",
+    "reason": "outside F46 states (MI)",
+    "row": 247,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New [METC] Keystone 138 kV STATCOM",
+    "native_id": "15993",
+    "reason": "outside F46 states (MI)",
+    "row": 248,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Avery - New DTE Interconnection",
+    "native_id": "50212",
+    "reason": "outside F46 states (MI)",
+    "row": 249,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Oneida - Tallman 138 kV circuit",
+    "native_id": "50229",
+    "reason": "outside F46 states (MI)",
+    "row": 250,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Caniff #303AB PST Transformer",
+    "native_id": "50246",
+    "reason": "outside F46 states (MI)",
+    "row": 251,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Batavia - Dorrance #1 & #2 138 kV lines",
+    "native_id": "50251",
+    "reason": "outside F46 states (MI)",
+    "row": 252,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Tower - Black Lake 69 kV line to 138 kV capability",
+    "native_id": "50337",
+    "reason": "outside F46 states (MI)",
+    "row": 253,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Hagensville Junction Interconnection (METC)",
+    "native_id": "50317",
+    "reason": "outside F46 states (MI)",
+    "row": 254,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Oliver - New DTE Interconnection",
+    "native_id": "50253",
+    "reason": "outside F46 states (MI)",
+    "row": 255,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Blackstone 138 kV Station",
+    "native_id": "50377",
+    "reason": "outside F46 states (MI)",
+    "row": 256,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MPFCA J1503 & J1504 - Network Upgrades - Huntley 345 kV Bus",
+    "native_id": "50239",
+    "reason": "outside F46 states (MN)",
+    "row": 257,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50207",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Spirit Lake Anchor 69 kV Interconnection",
+    "native_id": "50207",
+    "row": 258,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Appleton - Werner West (NAPL31) 345 kV, Rerate",
+    "native_id": "50724",
+    "reason": "outside F46 states (WI)",
+    "row": 259,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakefield Area Projects",
+    "native_id": "50420",
+    "reason": "outside F46 states (MN)",
+    "row": 260,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reactor Relocation from North Madison SS to J1502 POI SS",
+    "native_id": "50519",
+    "reason": "outside F46 states (WI)",
+    "row": 261,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Chaffee Creek SS Breaker Asset Renewal",
+    "native_id": "50262",
+    "reason": "outside F46 states (WI)",
+    "row": 262,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eden SS Relay and House Asset Renewal",
+    "native_id": "50128",
+    "reason": "outside F46 states (WI)",
+    "row": 263,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade end of life Wilmarth TR7 and TR8",
+    "native_id": "50450",
+    "reason": "outside F46 states (MN)",
+    "row": 264,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Butternut Area Projects",
+    "native_id": "50237",
+    "reason": "outside F46 states (MN)",
+    "row": 265,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Juneau Industrial SS, DIC, Transformer Addition",
+    "native_id": "50548",
+    "reason": "outside F46 states (WI)",
+    "row": 266,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth Northeast Add 2nd Transformer 20-37.3 MVA",
+    "native_id": "50269",
+    "reason": "outside F46 states (MN)",
+    "row": 267,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Erie Road Substation Rebuild",
+    "native_id": "50464",
+    "reason": "outside F46 states (MN)",
+    "row": 268,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Werner SS Relay and Remote Asset Renewal",
+    "native_id": "50670",
+    "reason": "outside F46 states (WI)",
+    "row": 269,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50205",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Belmond Diesel to Hancock 69 kV Line Reroute",
+    "native_id": "50205",
+    "row": 270,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50244",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1520 Generator Interconnection - Network Upgrades",
+    "native_id": "50244",
+    "row": 271,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50206",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Rock Creek T2 Replacement",
+    "native_id": "50206",
+    "row": 272,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Range Line Dist (WE) - Range Line Switchyard 138 kV (61441), Replace Underground Cable",
+    "native_id": "24982",
+    "reason": "outside F46 states (WI)",
+    "row": 273,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huiskamp - Ruskin 69 kV (6937), OPGW Addition",
+    "native_id": "50255",
+    "reason": "outside F46 states (WI)",
+    "row": 274,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50254",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Remsen Township 345 kV Substation Expansion for J1590",
+    "native_id": "50254",
+    "row": 275,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Customer Interconnections - 2028",
+    "native_id": "50468",
+    "reason": "outside F46 states (MI)",
+    "row": 276,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Lincoln Junction - Lincoln 69 kV line to 138 kV capability",
+    "native_id": "50338",
+    "reason": "outside F46 states (MI)",
+    "row": 277,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New [CONS] Baker Interconnection",
+    "native_id": "50447",
+    "reason": "outside F46 states (MI)",
+    "row": 278,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Mud Lake - Verona #1 138 kV line",
+    "native_id": "50366",
+    "reason": "outside F46 states (MI)",
+    "row": 279,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Line Relocation - 2026",
+    "native_id": "50476",
+    "reason": "outside F46 states (MI)",
+    "row": 280,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild [CONS] Blackstone 46 kV Station",
+    "native_id": "50463",
+    "reason": "outside F46 states (MI)",
+    "row": 281,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Bass Lake - Wolf Lake 69 kV line to 138 kV capability",
+    "native_id": "50339",
+    "reason": "outside F46 states (MI)",
+    "row": 282,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild East Jordan Junction - Barnard 69 kV line to 138 kV capability",
+    "native_id": "50401",
+    "reason": "outside F46 states (MI)",
+    "row": 283,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Customer Interconnections - 2028",
+    "native_id": "50466",
+    "reason": "outside F46 states (MI)",
+    "row": 284,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Line Relocation - 2027",
+    "native_id": "50477",
+    "reason": "outside F46 states (MI)",
+    "row": 285,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITCT Asset Replacement Program - 2027",
+    "native_id": "50479",
+    "reason": "outside F46 states (MI)",
+    "row": 286,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "DTE New Hudson Interconnection",
+    "native_id": "50597",
+    "reason": "outside F46 states (MI)",
+    "row": 287,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Line Relocation - 2026",
+    "native_id": "50474",
+    "reason": "outside F46 states (MI)",
+    "row": 288,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Line Relocation - 2027",
+    "native_id": "50475",
+    "reason": "outside F46 states (MI)",
+    "row": 289,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "METC Asset Replacement Program - 2027",
+    "native_id": "50478",
+    "reason": "outside F46 states (MI)",
+    "row": 290,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Iron Range 500kV Reactor Addition",
+    "native_id": "50393",
+    "reason": "outside F46 states (MN)",
+    "row": 291,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Byron - Pleasant Valley 161kV Terminal Upgrade",
+    "native_id": "50501",
+    "reason": "outside F46 states (MN)",
+    "row": 292,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50236",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1444 Generator Interconnection - Network Upgrade",
+    "native_id": "50236",
+    "row": 293,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITC Midwest Load interconnection blanket",
+    "native_id": "50379",
+    "reason": "outside F46 states (IA,IL,MN)",
+    "row": 294,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Byron - Cascade Creek Line Relocation",
+    "native_id": "50498",
+    "reason": "outside F46 states (MN)",
+    "row": 295,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Owatonna 161kV Cap Bank Addition",
+    "native_id": "50153",
+    "reason": "outside F46 states (MN)",
+    "row": 296,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Whitewater – Sugar Creek 138 kV (WHIG53), Flow Control Device",
+    "native_id": "50223",
+    "reason": "outside F46 states (WI)",
+    "row": 297,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Terrace Ave Riser SS 69kV Pumping Plant Upgrade",
+    "native_id": "50612",
+    "reason": "outside F46 states (WI)",
+    "row": 298,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Wilson St SS, DIC, Transformer Addition",
+    "native_id": "50549",
+    "reason": "outside F46 states (WI)",
+    "row": 299,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Central SS, DIC, New Substation",
+    "native_id": "50613",
+    "reason": "outside F46 states (WI)",
+    "row": 300,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "ITC Midwest SCADA Controlled Motor Operated Switch Addition blanket",
+    "native_id": "50378",
+    "reason": "outside F46 states (IA,IL,MN)",
+    "row": 301,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Monroe Breaker and SCADA Asset Renewal",
+    "native_id": "50550",
+    "reason": "outside F46 states (WI)",
+    "row": 302,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Substation High Voltage Protection (HVP) Equipment Removal",
+    "native_id": "50622",
+    "reason": "outside F46 states (WI)",
+    "row": 303,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Substation Technology Package #3 - 2026",
+    "native_id": "50642",
+    "reason": "outside F46 states (WI)",
+    "row": 304,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arrowhead 230kV SPF Upgrade",
+    "native_id": "50149",
+    "reason": "outside F46 states (MN)",
+    "row": 305,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Prairie Island Breaker Addition",
+    "native_id": "50453",
+    "reason": "outside F46 states (MN)",
+    "row": 306,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Genoa Dist Tap-Ringe Tap N470 Rebuild",
+    "native_id": "50272",
+    "reason": "outside F46 states (MN)",
+    "row": 307,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50210",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Keokuk West Relay Replacement and 69 kV Tie Breaker Addition",
+    "native_id": "50210",
+    "row": 308,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Winnebago County, New DIC",
+    "native_id": "24474",
+    "reason": "outside F46 states (WI)",
+    "row": 309,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth West Sub Transformer Upgrade",
+    "native_id": "50275",
+    "reason": "outside F46 states (MN)",
+    "row": 310,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Riverton Asset Renewal",
+    "native_id": "50394",
+    "reason": "outside F46 states (MN)",
+    "row": 311,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50319",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "West Des Moines 69 kV Breaker Replacement",
+    "native_id": "50319",
+    "row": 312,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Progress SS, DIC, Substation Rebuild",
+    "native_id": "50598",
+    "reason": "outside F46 states (WI)",
+    "row": 313,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "BOC Gasses Tap – Town Line Road 138 kV (X-111), Rebuild",
+    "native_id": "50146",
+    "reason": "outside F46 states (WI)",
+    "row": 314,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild 5400 Richmond to Rich Springs Tap",
+    "native_id": "50442",
+    "reason": "outside F46 states (MN)",
+    "row": 315,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth Rice Street Transformer Replacement",
+    "native_id": "50268",
+    "reason": "outside F46 states (MN)",
+    "row": 316,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Johnsville Double End",
+    "native_id": "50267",
+    "reason": "outside F46 states (MN)",
+    "row": 317,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Darnen Substation",
+    "native_id": "50587",
+    "reason": "outside F46 states (MN)",
+    "row": 318,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Iona Area Projects",
+    "native_id": "50274",
+    "reason": "outside F46 states (MN)",
+    "row": 319,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Coon Creek Breaker ELR",
+    "native_id": "50422",
+    "reason": "outside F46 states (MN)",
+    "row": 320,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50332",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Division-Eastside 69 kV Line Rebuild & Terminal Upgrades",
+    "native_id": "50332",
+    "row": 321,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Communications Reliability Program 2026",
+    "native_id": "25186",
+    "reason": "outside F46 states (MI,WI)",
+    "row": 322,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1745 Fitzgerald SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50495",
+    "reason": "outside F46 states (WI)",
+    "row": 323,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hawick Breaker Station",
+    "native_id": "50472",
+    "reason": "outside F46 states (MN)",
+    "row": 324,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50335",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Johnson Creek Add 161 kV Breakers",
+    "native_id": "50335",
+    "row": 325,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ridgeview Transformer Addition",
+    "native_id": "25264",
+    "reason": "outside F46 states (MN)",
+    "row": 326,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50430",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Souris Upgrades",
+    "native_id": "50430",
+    "row": 327,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Dune Acres 138 kV Breaker additions",
+    "native_id": "50390",
+    "reason": "outside F46 states (IN)",
+    "row": 328,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New J1358 IC Facilities Interconnection 138 kV",
+    "native_id": "50163",
+    "reason": "outside F46 states (IN)",
+    "row": 329,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New J1355 IC Facilities Interconnection 138 kV",
+    "native_id": "50170",
+    "reason": "outside F46 states (IN)",
+    "row": 330,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Schahfer 345kV substation Redundancy",
+    "native_id": "50171",
+    "reason": "outside F46 states (IN)",
+    "row": 331,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1386 IC Facilities",
+    "native_id": "50538",
+    "reason": "outside F46 states (IN)",
+    "row": 332,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade PJM project b3775.8 St. John to Crete 345 kV",
+    "native_id": "50104",
+    "reason": "outside F46 states (IN)",
+    "row": 333,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Reconfigure PJM project b3775.9. Green Acres 345kV substation",
+    "native_id": "50105",
+    "reason": "outside F46 states (IN)",
+    "row": 334,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Leesburg 345/138kV Transformer addition",
+    "native_id": "50389",
+    "reason": "outside F46 states (IN)",
+    "row": 335,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Dumont to Stillwell 138 kV line (PJM Project B3775.11)",
+    "native_id": "50488",
+    "reason": "outside F46 states (IN)",
+    "row": 336,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50438",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Line 0955 Relocation",
+    "native_id": "50438",
+    "row": 337,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50231",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "J1359 Generator Interconnection - TOIF - PCI 69kV Terminal & Line",
+    "native_id": "50231",
+    "row": 338,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1746 Columbia SS Network Upgrades and Interconnection Facilities",
+    "native_id": "50511",
+    "reason": "outside F46 states (WI)",
+    "row": 339,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Shannon Capacitor Bank Replacement",
+    "native_id": "50365",
+    "reason": "outside F46 states (MN)",
+    "row": 340,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50624",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Substation 74: Relocate 161 kV Capacitor Bank from Substation A",
+    "native_id": "50624",
+    "row": 341,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Boswell 115/23kV Transformer Addition",
+    "native_id": "50402",
+    "reason": "outside F46 states (MN)",
+    "row": 342,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50328",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Neal North: Replace 161-69 kV Transformer Relaying & 69 kV Breaker Replacement",
+    "native_id": "50328",
+    "row": 343,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50452",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Peace Garden Reactor",
+    "native_id": "50452",
+    "row": 344,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fischer Substation Rebuild",
+    "native_id": "50425",
+    "reason": "outside F46 states (MN)",
+    "row": 345,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S1018 7 Mile Creek SS Network Upgrades",
+    "native_id": "50517",
+    "reason": "outside F46 states (WI)",
+    "row": 346,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth Substation Rebuild Projects",
+    "native_id": "50305",
+    "reason": "outside F46 states (MN)",
+    "row": 347,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1808 Generation Interconnection Network Upgrades.",
+    "native_id": "50270",
+    "reason": "outside F46 states (WI)",
+    "row": 348,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50485",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Eden - Grenville 41.6 kV Rebuild",
+    "native_id": "50485",
+    "row": 349,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pine City Breaker Replacement",
+    "native_id": "50416",
+    "reason": "outside F46 states (MN)",
+    "row": 350,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rock Dell-Pleasant Valley N469 Rebuild",
+    "native_id": "50271",
+    "reason": "outside F46 states (MN)",
+    "row": 351,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Grand Lake Area Projects",
+    "native_id": "50415",
+    "reason": "outside F46 states (MN)",
+    "row": 352,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Cyrus - Farwell 41.6 kV Rebuild",
+    "native_id": "50470",
+    "reason": "outside F46 states (MN)",
+    "row": 353,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MPFCA Rockdale SS Network Upgrade",
+    "native_id": "50544",
+    "reason": "outside F46 states (WI)",
+    "row": 354,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50240",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1520 Generator Interconnection - TOIF",
+    "native_id": "50240",
+    "row": 355,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MPFCA J1503 & J1504 - TOIF - Huntley 345 kV Terminal",
+    "native_id": "50238",
+    "reason": "outside F46 states (MN)",
+    "row": 356,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50454",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Line 0730 Souris - West Sioux Falls Rebuild",
+    "native_id": "50454",
+    "row": 357,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50486",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Casselton Town New 115 kV Delivery",
+    "native_id": "50486",
+    "row": 358,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Slayton Area Projects",
+    "native_id": "50304",
+    "reason": "outside F46 states (MN)",
+    "row": 359,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1778 Paris SS Network Upgrades",
+    "native_id": "50512",
+    "reason": "outside F46 states (WI)",
+    "row": 360,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S1016 Lone Rock SS Network Upgrades",
+    "native_id": "50533",
+    "reason": "outside F46 states (WI)",
+    "row": 361,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Donaldson - Donaldson South J1575 Network Upgrades",
+    "native_id": "50520",
+    "reason": "outside F46 states (MN)",
+    "row": 362,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50235",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J1444 Generator Interconnection - TOIF - DAEC 345kV Terminal",
+    "native_id": "50235",
+    "row": 363,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50327",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Raun: Tekamah 161 kV Line Relay Replacement SPP DISIS-2017",
+    "native_id": "50327",
+    "row": 364,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50318",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Adams County-Creston 161 kV Line Uprate for DPP 2020",
+    "native_id": "50318",
+    "row": 365,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lake Yankton SVC Retirement",
+    "native_id": "25371",
+    "reason": "outside F46 states (MN)",
+    "row": 366,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Essig Substation Rebuild",
+    "native_id": "50423",
+    "reason": "outside F46 states (MN)",
+    "row": 367,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Bellingham 115 kV Delivery",
+    "native_id": "50510",
+    "reason": "outside F46 states (MN)",
+    "row": 368,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "MN River Breaker Install (position 5M518)",
+    "native_id": "50234",
+    "reason": "outside F46 states (MN)",
+    "row": 369,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50465",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Pella Underground Conversion",
+    "native_id": "50465",
+    "row": 370,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50451",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Magic City Reactor",
+    "native_id": "50451",
+    "row": 371,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50232",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "J1359 Generator Interconnection - Network Upgrades - PCI 69kV Bus",
+    "native_id": "50232",
+    "row": 372,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50325",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "NE Ankeny - Ames 161 kV relay replacements",
+    "native_id": "50325",
+    "row": 373,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Ivanhoe 41.6kV Line Recloser",
+    "native_id": "50471",
+    "reason": "outside F46 states (MN)",
+    "row": 374,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "OTP Bemidji Nymore Circuit Breaker",
+    "native_id": "50487",
+    "reason": "outside F46 states (MN)",
+    "row": 375,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50330",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Plymouth-Merrill 69 kV Line Uprate",
+    "native_id": "50330",
+    "row": 376,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50333",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Franklin: Replace Nuthatch Line Relaying",
+    "native_id": "50333",
+    "row": 377,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "R1049/R5061 Edgewater SS, Network Upgrades and Interconnection Facilities",
+    "native_id": "50655",
+    "reason": "outside F46 states (WI)",
+    "row": 378,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S1017 Tennyson SS Network Upgrades",
+    "native_id": "50516",
+    "reason": "outside F46 states (WI)",
+    "row": 379,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S1025 Sheepskin SS Network Upgrades",
+    "native_id": "50542",
+    "reason": "outside F46 states (WI)",
+    "row": 380,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 0846 Relocation",
+    "native_id": "50431",
+    "reason": "outside F46 states (MN)",
+    "row": 381,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1793 Holland SS Network Upgrades",
+    "native_id": "50505",
+    "reason": "outside F46 states (WI)",
+    "row": 382,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Elk River Muni West",
+    "native_id": "50392",
+    "reason": "outside F46 states (MN)",
+    "row": 383,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Knight Substation",
+    "native_id": "50494",
+    "reason": "outside F46 states (MN)",
+    "row": 384,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "J1779 Rockdale SS Interconnection Facilities",
+    "native_id": "50515",
+    "reason": "outside F46 states (WI)",
+    "row": 385,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50467",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Maple River Reactor Retirements",
+    "native_id": "50467",
+    "row": 386,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50469",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "OTP Big Stone South Reactor Retirement",
+    "native_id": "50469",
+    "row": 387,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Riverside-Hardin Tap 69 kV line",
+    "native_id": "50381",
+    "reason": "outside F46 states (IL)",
+    "row": 388,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Relocate Berlin-Amos 69 kV line",
+    "native_id": "50405",
+    "reason": "outside F46 states (IL)",
+    "row": 389,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Breiner-Kington 69 kV line",
+    "native_id": "50406",
+    "reason": "outside F46 states (IL)",
+    "row": 390,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Macomb-Spring Lake Junction 69 kV line",
+    "native_id": "50407",
+    "reason": "outside F46 states (IL)",
+    "row": 391,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild El Dara Junction-Hadley 69 kV line",
+    "native_id": "50408",
+    "reason": "outside F46 states (IL)",
+    "row": 392,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Andrew-Salisbury Tap 69 kV line",
+    "native_id": "50409",
+    "reason": "outside F46 states (IL)",
+    "row": 393,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Tice-Virginia 69 kV line",
+    "native_id": "50411",
+    "reason": "outside F46 states (IL)",
+    "row": 394,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Paragon-Grove City 69 kV line",
+    "native_id": "50412",
+    "reason": "outside F46 states (IL)",
+    "row": 395,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Edinburg 69 kV breaker station",
+    "native_id": "50413",
+    "reason": "outside F46 states (IL)",
+    "row": 396,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Henton 69 kV breaker station",
+    "native_id": "50414",
+    "reason": "outside F46 states (IL)",
+    "row": 397,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Line 35A Rebuild",
+    "native_id": "50399",
+    "reason": "outside F46 states (MS)",
+    "row": 398,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ovett 69kV Delivery Point",
+    "native_id": "50400",
+    "reason": "outside F46 states (MS)",
+    "row": 399,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lake Walthall 115kV Delivery Point",
+    "native_id": "50404",
+    "reason": "outside F46 states (MS)",
+    "row": 400,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "El Dorado 500/345kV Autotransformer Upgrade",
+    "native_id": "50541",
+    "reason": "outside F46 states (AR)",
+    "row": 401,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Sarepta to Mount Olive 500 kV Project",
+    "native_id": "50540",
+    "reason": "outside F46 states (LA)",
+    "row": 402,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "War Eagle 138 kV: Construct New Substation and Lines",
+    "native_id": "50360",
+    "reason": "outside F46 states (TX)",
+    "row": 403,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Big Muddy Solar - J1303 Generator Interconnection",
+    "native_id": "50637",
+    "reason": "outside F46 states (IL)",
+    "row": 404,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Boonville T1 69 kV",
+    "native_id": "50241",
+    "reason": "outside F46 states (IN)",
+    "row": 405,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Culley 138kV CCVT Boxes",
+    "native_id": "50245",
+    "reason": "outside F46 states (IN)",
+    "row": 406,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Elliott Transformer and Substation 69 kV",
+    "native_id": "50247",
+    "reason": "outside F46 states (IN)",
+    "row": 407,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Replace Newburgh Circuit Switcher 69 kV",
+    "native_id": "50248",
+    "reason": "outside F46 states (IN)",
+    "row": 408,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Dubois T2 138/69 kV Transformer",
+    "native_id": "50249",
+    "reason": "outside F46 states (IN)",
+    "row": 409,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Z84 Duff to Petersburgh 138 kV",
+    "native_id": "50316",
+    "reason": "outside F46 states (IN)",
+    "row": 410,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Z95 Northwest to AB Brown 138kV",
+    "native_id": "50326",
+    "reason": "outside F46 states (IN)",
+    "row": 411,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50320",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "E. 17th & Washington 69 kV bus expansion and line breaker installations",
+    "native_id": "50320",
+    "row": 412,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50321",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "E. 17th & Broadway 69 kV breaker installations",
+    "native_id": "50321",
+    "row": 413,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50603",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "OTP Big Stone South Load Addition",
+    "native_id": "50603",
+    "row": 414,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "LEAP Phase 2 EPR Mitigations",
+    "native_id": "50691",
+    "reason": "outside F46 states (IN)",
+    "row": 415,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Add 3rd 345/138kV Bank at Edwards Sub",
+    "native_id": "50728",
+    "reason": "outside F46 states (IN)",
+    "row": 416,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New LEAP Transmission Network",
+    "native_id": "50208",
+    "reason": "outside F46 states (IN)",
+    "row": 417,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lebanon Industrial 2nd 69kV Source",
+    "native_id": "50286",
+    "reason": "outside F46 states (IN)",
+    "row": 418,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Gessie 69kV Rebuild",
+    "native_id": "50287",
+    "reason": "outside F46 states (IN)",
+    "row": 419,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fishback Creek 69/12kV Substation",
+    "native_id": "50292",
+    "reason": "outside F46 states (IN)",
+    "row": 420,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "6923 69kV Ring Bus",
+    "native_id": "50293",
+    "reason": "outside F46 states (IN)",
+    "row": 421,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Romine 69kV Switching Station",
+    "native_id": "50294",
+    "reason": "outside F46 states (IN)",
+    "row": 422,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "69154 69kV Ring Bus",
+    "native_id": "50295",
+    "reason": "outside F46 states (IN)",
+    "row": 423,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dover 69/12kV Substation",
+    "native_id": "50296",
+    "reason": "outside F46 states (IN)",
+    "row": 424,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Milnon 69/12kV Substation",
+    "native_id": "50297",
+    "reason": "outside F46 states (IN)",
+    "row": 425,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Four Corners 69/12kV Substation",
+    "native_id": "50298",
+    "reason": "outside F46 states (IN)",
+    "row": 426,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hayworth 69/12kV Substation",
+    "native_id": "50300",
+    "reason": "outside F46 states (IN)",
+    "row": 427,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Maple Leaf 69kV Line",
+    "native_id": "50301",
+    "reason": "outside F46 states (IN)",
+    "row": 428,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lacrosse 69/12kV Substation",
+    "native_id": "50302",
+    "reason": "outside F46 states (IN)",
+    "row": 429,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Jacob Mack 2nd Bank & Source",
+    "native_id": "50303",
+    "reason": "outside F46 states (IN)",
+    "row": 430,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lee Hanna 69/12kV Rebuild",
+    "native_id": "50371",
+    "reason": "outside F46 states (IN)",
+    "row": 431,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Stillwell to Elderberry 345kV Line",
+    "native_id": "50551",
+    "reason": "outside F46 states (IN)",
+    "row": 432,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade LEAP Transmission Network Phase 2",
+    "native_id": "50628",
+    "reason": "outside F46 states (IN)",
+    "row": 433,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Hines - Levan 120 kV Line",
+    "native_id": "18192",
+    "reason": "outside F46 states (MI)",
+    "row": 434,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Dupont-White Lake 138 kV line",
+    "native_id": "50372",
+    "reason": "outside F46 states (MI)",
+    "row": 435,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Upgrade Sunset 120 kV Switch",
+    "native_id": "50590",
+    "reason": "outside F46 states (MI)",
+    "row": 436,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Install Phoenix 120 kV Capacitor",
+    "native_id": "50591",
+    "reason": "outside F46 states (MI)",
+    "row": 437,
+    "sheet": "MTEP25 Data Pull - App. A",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:22850",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade Miner 161 kV Substation",
+    "native_id": "22850",
+    "row": 3,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:22793",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Upgrade Arnold 138 kV substation",
+    "native_id": "22793",
+    "row": 4,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:23128",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Reconductor Sioux-Maline 138 kV lines 3&4",
+    "native_id": "23128",
+    "row": 5,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Point Prairie 161 kV line breakers",
+    "native_id": "23066",
+    "reason": "MTEP ID already published (F46 MTEP26 list, F40 or F39)",
+    "row": 6,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest:50632",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Missouri Multi-Entity New Transmission (MoMENT) Project (Alternate)",
+    "native_id": "50632",
+    "row": 7,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Birnanwood – Brookes Corners 69kV (Y-86), Partial Rebuild",
+    "native_id": "50629",
+    "reason": "outside F46 states (WI)",
+    "row": 8,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dam Heights – Sauk City Oak St 69 kV (Y-14), Partial Rebuild & OPGW",
+    "native_id": "50537",
+    "reason": "outside F46 states (WI)",
+    "row": 9,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Columbia SS Power Transformer Asset Renewal",
+    "native_id": "50122",
+    "reason": "outside F46 states (WI)",
+    "row": 10,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Highway V SS Power Transformers Asset Renewal",
+    "native_id": "50123",
+    "reason": "outside F46 states (WI)",
+    "row": 11,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Silver River - North Lake 138 kV (NLKG31), Rebuild",
+    "native_id": "50129",
+    "reason": "outside F46 states (MI)",
+    "row": 12,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Dam Heights - Kirkwood 69 kV (Y-75), Partial Rebuild",
+    "native_id": "50131",
+    "reason": "outside F46 states (WI)",
+    "row": 13,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Riverside (ALTE) - Erdman 69 kV (Y-82/X-64/X-37), Partial Rebuild & OPGW",
+    "native_id": "50132",
+    "reason": "outside F46 states (WI)",
+    "row": 14,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Zenda - Katzenberg 69 kV (Y-51 ALE), Partial Rebuild",
+    "native_id": "50133",
+    "reason": "outside F46 states (WI)",
+    "row": 15,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Indian Lake – Hiawatha, 69 kV New Line and 138 kV Conversion",
+    "native_id": "50578",
+    "reason": "outside F46 states (MI)",
+    "row": 16,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Highland – Verona 69 kV (Y-138/Y-36/Y-209/Y-136), Partial Rebuild",
+    "native_id": "50694",
+    "reason": "outside F46 states (WI)",
+    "row": 17,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Badger West 69kV 20ohm Series Reactor",
+    "native_id": "50692",
+    "reason": "outside F46 states (WI)",
+    "row": 18,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huebner SS, DIC, Transformer Addition",
+    "native_id": "50346",
+    "reason": "outside F46 states (WI)",
+    "row": 19,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Racine - St. Rita 138 kV (8531), Partial Rebuild",
+    "native_id": "50509",
+    "reason": "outside F46 states (WI)",
+    "row": 20,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth North Substation Upgrade 1st 161/69 Transformer to 45-60-75 MVA",
+    "native_id": "50276",
+    "reason": "outside F46 states (MN)",
+    "row": 21,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth Northeast Sub Upgrade 1st transformer to 20-37.3 MVA",
+    "native_id": "50277",
+    "reason": "outside F46 states (MN)",
+    "row": 22,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Earth new North to Northeast 69 kV line",
+    "native_id": "50278",
+    "reason": "outside F46 states (MN)",
+    "row": 23,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Latson-Dean Road-Oakland 138 kV Line",
+    "native_id": "50592",
+    "reason": "outside F46 states (MI)",
+    "row": 24,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Eureka 138kV Station",
+    "native_id": "50309",
+    "reason": "outside F46 states (MI)",
+    "row": 25,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rebuild Beals Road 138 kV Station",
+    "native_id": "50446",
+    "reason": "outside F46 states (MI)",
+    "row": 26,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Haines Road Substation Modernization",
+    "native_id": "50344",
+    "reason": "outside F46 states (MN)",
+    "row": 27,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "181 Line Rebuild",
+    "native_id": "50348",
+    "reason": "outside F46 states (MN)",
+    "row": 28,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "King Transmission Connection",
+    "native_id": "25398",
+    "reason": "outside F46 states (MN)",
+    "row": 29,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Minnesota Energy Connection",
+    "native_id": "25282",
+    "reason": "outside F46 states (MN)",
+    "row": 30,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Purvis Bulk Transformer Bonus Rating",
+    "native_id": "50499",
+    "reason": "outside F46 states (MS)",
+    "row": 31,
+    "sheet": "MTEP25 Data Pull - App. B",
+    "source_id": "miso-mtep25-appendix-a-midwest"
   }
 ]
