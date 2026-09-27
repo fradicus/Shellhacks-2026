@@ -173,3 +173,9 @@ Decision: [F19 state ink](../../decisions/F19-state-ink.md). Supersedes "not rec
 - `node --import ./tests/web/operations-providers/loader.mjs --test web/components/time/stateInk.test.ts`: 51
   states, no shared border vertex between two states of one ink, inks spread across the palette.
 - Screenshots at 1440 in 2D and 3D on live data.
+## C48 nearby candidates
+
+The user selected provisional straight-line circles. Implement the scoped, paged
+national candidate list and existing map selection under
+[F19 national candidates](../../decisions/F19-national-candidates.md). Keep the
+legacy pair views accessible as a separate choice and load evidence on selection.
