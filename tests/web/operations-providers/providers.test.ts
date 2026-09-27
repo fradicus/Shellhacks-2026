@@ -82,10 +82,29 @@ test("weather preserves null polygon warnings and unknown numbers; stale/future/
   assert.equal((await weather(point, { ...ctx({}), userAgent: undefined })).status, "not_configured");
 });
 test("soil validates fixed schema and preserves missing component facts", async () => {
-  const data = { Table: [["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp"], Array(9).fill("metadata"), ["1", "Unit", "WA001", "2025-01-01", "2", "Component", null, null, null]] };
+  const header = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp", "chkey", "hzdept_r", "hzdepb_r", "ph1to1h2o_r"];
+  const data = { Table: [header, Array(13).fill("metadata"), ["1", "Unit", "WA001", "2025-01-01", "2", "Component", null, null, null, null, null, null, null]] };
   const result = await soil(point, ctx(data)); assert.equal(result.status, "available"); assert.equal(result.data?.map_units[0].components[0].percent, null);
+  assert.deepEqual(result.data?.map_units[0].components[0].horizons, []);
+  assert.match(result.limitations.join(" "), /No SSURGO 1:1 soil-water pH/);
   assert.equal((await soil(point, ctx({ Table: [] }))).status, "unavailable");
   assert.equal((await soil({ lat: NaN, lon: 0 }, ctx(data))).status, "unavailable");
+});
+test("soil reports horizon pH with centimeter depths and 1:1 method", async () => {
+  const header = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp", "chkey", "hzdept_r", "hzdepb_r", "ph1to1h2o_r"];
+  const data = { Table: [header, Array(13).fill("metadata"),
+    ["1", "Unit", "WA001", "2025-01-01", "2", "Component", 80, "Well drained", "B", "h1", 0, 20, 6.2],
+    ["1", "Unit", "WA001", "2025-01-01", "2", "Component", 80, "Well drained", "B", "h2", 20, 50, null],
+  ] };
+  const result = await soil(point, ctx(data));
+  assert.equal(result.status, "available");
+  assert.equal(result.data?.map_units[0].components.length, 1);
+  assert.deepEqual(result.data?.map_units[0].components[0].horizons, [
+    { chkey: "h1", depth_top_cm: 0, depth_bottom_cm: 20, ph_h2o_1_to_1: 6.2, ph_method: "1:1 soil-water", depth_unit: "cm" },
+    { chkey: "h2", depth_top_cm: 20, depth_bottom_cm: 50, ph_h2o_1_to_1: null, ph_method: "1:1 soil-water", depth_unit: "cm" },
+  ]);
+  assert.equal((await soil(point, ctx({ Table: [header, Array(13).fill("metadata"), ["1", "Unit", "WA001", "2025-01-01", "2", "Component", 80, "Well drained", "B", "h1", 20, 10, 6.2]] }))).status, "unavailable");
+  assert.equal((await soil(point, ctx({ Table: [header, Array(13).fill("metadata"), ["1", "Unit", "WA001", "2025-01-01", "2", "Component", 80, "Well drained", "B", "h1", 0, 20, 15]] }))).status, "unavailable");
 });
 test("unknown road jurisdiction does not call provider or claim zero events", async () => {
   const result = await roadwork({ lat: 32, lon: -80 }, { now, io: async () => { throw new Error("Should not call"); } });
@@ -121,8 +140,8 @@ test("vehicle conversion requires exact mm/kg and preserves 1.001m without float
   for (const truck of [{ ...request.truck, height_m: 4.0001 }, { ...request.truck, gross_weight_kg: 30000.99 }, { ...request.truck, trailers: [{ length_m: 15.0001 }] }]) assert.equal(RouteRequestSchema.safeParse({ ...request, truck }).success, false);
 });
 test("soil distinguishes exactly1000rows from1001sentinel and preserves1000rows", async () => {
-  const header = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp"];
-  const rows = Array.from({ length: 1001 }, (_, i) => [String(i), "Unit", "WA001", "2025-01-01", String(i), "Component", null, null, null]);
+  const header = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp", "chkey", "hzdept_r", "hzdepb_r", "ph1to1h2o_r"];
+  const rows = Array.from({ length: 1001 }, (_, i) => [String(i), "Unit", "WA001", "2025-01-01", String(i), "Component", null, null, null, null, null, null, null]);
   const exact = await soil(point, ctx({ Table: [header, header, ...rows.slice(0, 1000)] }));
   assert.equal(exact.status, "available"); assert.equal(exact.coverage.truncated, false);
   const more = await soil(point, ctx({ Table: [header, header, ...rows] }));

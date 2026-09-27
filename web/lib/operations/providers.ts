@@ -51,31 +51,55 @@ export async function weather(point: Point, ctx: Context): Promise<Envelope<Weat
 }
 
 const SoilResponse = z.object({ Table: z.array(z.array(z.union([z.string(), z.number(), z.null()]))).max(1003) });
+const SOIL_COLUMNS = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp", "chkey", "hzdept_r", "hzdepb_r", "ph1to1h2o_r"] as const;
+function finiteOrNull(value: string | number | null, label: string): number | null {
+  if (value == null) return null;
+  const n = Number(value);
+  if (!Number.isFinite(n)) throw new Error(`Invalid ${label}`);
+  return n;
+}
 export async function soil(point: Point, ctx: Context): Promise<Envelope<SoilData>> {
   const result = empty<SoilData>("soil", point, "SSURGO map-unit context, not a site test or engineering approval.", "available", ctx.now);
   try {
     PointSchema.parse(point);
     // Point has already passed strict finite/range validation; no user SQL or identifiers.
-    const query = `SELECT TOP 1001 m.mukey,m.muname,l.areasymbol,s.saverest,c.cokey,c.compname,c.comppct_r,c.drainagecl,c.hydgrp FROM SDA_Get_Mukey_from_intersection_with_WktWgs84('POINT(${point.lon} ${point.lat})') p JOIN mapunit m ON m.mukey=p.mukey JOIN legend l ON l.lkey=m.lkey JOIN sacatalog s ON s.areasymbol=l.areasymbol LEFT JOIN component c ON c.mukey=m.mukey ORDER BY m.mukey,c.cokey`;
+    // Horizon pH is SSURGO ph1to1h2o_r with hzdept_r/hzdepb_r in centimeters (C15 depth+units rule).
+    const query = `SELECT TOP 1001 m.mukey,m.muname,l.areasymbol,s.saverest,c.cokey,c.compname,c.comppct_r,c.drainagecl,c.hydgrp,ch.chkey,ch.hzdept_r,ch.hzdepb_r,ch.ph1to1h2o_r FROM SDA_Get_Mukey_from_intersection_with_WktWgs84('POINT(${point.lon} ${point.lat})') p JOIN mapunit m ON m.mukey=p.mukey JOIN legend l ON l.lkey=m.lkey JOIN sacatalog s ON s.areasymbol=l.areasymbol LEFT JOIN component c ON c.mukey=m.mukey LEFT JOIN chorizon ch ON ch.cokey=c.cokey ORDER BY m.mukey,c.cokey,ch.hzdept_r,ch.chkey`;
     const response = await ctx.io(SOURCES.soil, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query, format: "JSON+COLUMNNAME+METADATA" }) });
     const rows = SoilResponse.parse(response.value).Table;
-    const columns = ["mukey", "muname", "areasymbol", "saverest", "cokey", "compname", "comppct_r", "drainagecl", "hydgrp"];
-    if (JSON.stringify(rows[0]) !== JSON.stringify(columns) || !rows[1] || rows[1].length !== columns.length) throw new Error("Unexpected SDA table metadata");
+    if (JSON.stringify(rows[0]) !== JSON.stringify([...SOIL_COLUMNS]) || !rows[1] || rows[1].length !== SOIL_COLUMNS.length) throw new Error("Unexpected SDA table metadata");
     const map = new Map<string, SoilData["map_units"][number]>();
+    const components = new Map<string, SoilData["map_units"][number]["components"][number]>();
     for (const row of rows.slice(2, 1002)) {
-      if (row.length !== columns.length || !row[0] || !row[1] || !row[2]) throw new Error("Malformed soil row");
-      const [key, name, area, vintage, component, componentName, percent, drainage, hydro] = row;
+      if (row.length !== SOIL_COLUMNS.length || !row[0] || !row[1] || !row[2]) throw new Error("Malformed soil row");
+      const [key, name, area, vintage, component, componentName, percent, drainage, hydro, chkey, depthTop, depthBottom, ph] = row;
       const id = String(key); const sourceDate = vintage == null ? null : String(vintage);
       if (!map.has(id)) map.set(id, { mukey: id, name: String(name), area_symbol: String(area), survey_updated_at: sourceDate, components: [] });
-      if (component != null) {
+      if (component == null) continue;
+      const componentId = `${id}:${component}`;
+      let entry = components.get(componentId);
+      if (!entry) {
         const percentage = percent == null ? null : Number(percent);
         if (percentage != null && (!Number.isFinite(percentage) || percentage < 0 || percentage > 100)) throw new Error("Invalid component percentage");
-        map.get(id)!.components.push({ cokey: String(component), name: componentName == null ? null : String(componentName), percent: percentage, drainage_class: drainage == null ? null : String(drainage), hydrologic_group: hydro == null ? null : String(hydro) });
+        entry = { cokey: String(component), name: componentName == null ? null : String(componentName), percent: percentage, drainage_class: drainage == null ? null : String(drainage), hydrologic_group: hydro == null ? null : String(hydro), horizons: [] };
+        components.set(componentId, entry);
+        map.get(id)!.components.push(entry);
       }
+      if (chkey == null) continue;
+      const top = finiteOrNull(depthTop, "horizon top depth");
+      const bottom = finiteOrNull(depthBottom, "horizon bottom depth");
+      if (top != null && bottom != null && bottom < top) throw new Error("Reversed horizon depths");
+      const phValue = finiteOrNull(ph, "horizon pH");
+      if (phValue != null && (phValue < 0 || phValue > 14)) throw new Error("pH out of range");
+      if (entry.horizons.some((horizon) => horizon.chkey === String(chkey))) continue;
+      entry.horizons.push({ chkey: String(chkey), depth_top_cm: top, depth_bottom_cm: bottom, ph_h2o_1_to_1: phValue, ph_method: "1:1 soil-water", depth_unit: "cm" });
     }
-    result.data = { map_units: [...map.values()], scope: "mapped soil components at point; reference survey, not live soil conditions" };
+    result.data = { map_units: [...map.values()], scope: "mapped soil components and horizon survey pH at point; reference survey with depth in cm, not a live soil test" };
     result.status = map.size ? rows.length > 1002 ? "partial" : "available" : "out_of_coverage";
     result.coverage = { requested: 1, completed: map.size ? 1 : 0, failed: map.size ? 0 : 1, truncated: rows.length > 1002 }; result.evidence_hash = response.hash; result.retrieved_at = response.retrieved;
+    if (map.size && ![...components.values()].some((c) => c.horizons.some((h) => h.ph_h2o_1_to_1 != null))) {
+      result.limitations.push("No SSURGO 1:1 soil-water pH values were published for the returned horizons; depths remain reported when present.");
+    }
     return result;
   } catch (error) { return empty("soil", point, cleanFailure("soil", error), "unavailable", ctx.now); }
 }
