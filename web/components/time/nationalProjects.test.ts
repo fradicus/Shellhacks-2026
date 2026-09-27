@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { nationalTimeProjects } from "./nationalProjects";
+import { nationalTimeProjects, stillPlanned } from "./nationalProjects";
 import { epochYear, span } from "./timeScale";
 import type { NationalProject, NationalSource } from "../../lib/national/types";
 
@@ -44,4 +44,13 @@ test("partial milestones remain intervals and legacy exact dates stay exact", ()
     { kind: "exact", day: 92, iso: "2028-04-02" });
   assert.deepEqual(span(unknown, 2028), { kind: "unknown" });
   assert.deepEqual(span({ ...month, date: null }, 2028), { kind: "unknown" });
+});
+
+test("records their publisher lists as in service go to History, not the planning axis", () => {
+  const [planned] = nationalTimeProjects([project], []);
+  const [built] = nationalTimeProjects([{ ...project, status_group: "in_service", in_service: { value: "2003-06-13", raw: "6/13/2003", precision: "day" } }], []);
+  assert.equal(stillPlanned(planned), true);
+  assert.equal(stillPlanned(built), false);
+  // Legacy filings are plans by definition and always stay.
+  assert.equal(stillPlanned({ ...planned, national: undefined }), true);
 });
