@@ -23,9 +23,13 @@ FOLDER = Path("data/greatlakes")
 ACTIVE = FOLDER / "releases" / "active.json"
 RELEASE_ID = "great-lakes-2026-09-candidates-2"
 # Fixed producer order; each folder is one adapter's output.
-PRODUCERS = ["mn", "wi", "miso", "ny", "aep", "firstenergy"]
+PRODUCERS = ["mn", "wi", "miso", "ny", "aep", "firstenergy", "pjm"]
 OFFICIAL_SOURCES = {"aep-transmission-projects"}  # the owner's own project-map coordinate (C25 Official tier)
 META = {
+    "greatlakes-pjm-pa": {"title": "PJM public construction register: Pennsylvania upgrades",
+                         "publisher": "PJM Interconnection", "authority": "regional_planning_organization",
+                         "landing_url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+                         "publication_date": None, "vintage": None, "planning_region": "PJM"},
     "mn-btpr-2025": {"title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
                      "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
                      "authority": "utility", "landing_url": "https://www.minnelectrans.com/report-2025.html",

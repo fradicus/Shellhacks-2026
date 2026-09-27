@@ -1,16 +1,16 @@
 {
   "expected_counts": {
-    "candidate": 563,
-    "candidate_unique_name": 109,
-    "centers": 799,
-    "distinct_points": 647,
+    "candidate": 1672,
+    "candidate_unique_name": 203,
+    "centers": 2002,
+    "distinct_points": 1145,
     "official": 127,
-    "projects": 1475,
-    "sources": 54
+    "projects": 4441,
+    "sources": 55
   },
   "files": {
-    "projects": "8213eca4b5c7277370efbe81e2a7c344fb746092909fc888bd40bb8f01244719",
-    "sources": "1371546c095cc393f7fd1a072ac7b1eb0a114981bac0aba1f66dee657c832445"
+    "projects": "839a6fd3544b0f9af307c96511d48d56ac192e6da2a4ade3306d4b3650846a9a",
+    "sources": "08c2546794c5d952a56c5ab25c5673401bbed8472a521279d9c6fd3075332ced"
   },
   "policy": "C25",
   "release_id": "great-lakes-2026-09-candidates-2",

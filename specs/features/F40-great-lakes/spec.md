@@ -47,3 +47,11 @@ Tech-stack checks, plus `tests/pipeline/test_f40_*`: parser replay against the p
 substring/fuzzy names, out-of-state and ambiguous same-name facilities; centers follow the mean/partial rule; every
 record validates against the national schema. Spot-check at least 10 candidates per state against the source text and
 map, and report the sample and any errors. `changes/F40.md` only after all eight states have ledgers and published data.
+
+## Part 5: Pennsylvania construction register
+
+Use the browser-saved, SHA-256-pinned PJM XML through the strict existing F38 reader. Import only explicit
+PA rows and exclude already-published PJM native IDs plus source-described distribution-only work. Preserve
+a disposition for every row, raw owner codes and separate milestone dates. An unresolved site-equipment
+circuit label stays unlocated; the shared line candidate policy remains unchanged. Publish inside the existing
+Great Lakes release, with no new loader folder. See [F40-pjm-pa](../../decisions/F40-pjm-pa.md).

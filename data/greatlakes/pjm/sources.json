@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "greatlakes-pjm-pa",
+    "artifacts": [
+      {
+        "access_review": "Public XML saved through Brave; no login or warning bypass.",
+        "file": "projectCostUpgrades.xml",
+        "retrieved_at": "2026-09-27T12:31:06.802585+00:00",
+        "sha256": "cb96605a3dd65cc62111df5ef58ba54075116e53b60b965b198d4b86d764f002",
+        "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml"
+      }
+    ],
+    "notes": [
+      "PJM upgrade/component IDs, not a count of distinct construction sites. Owner codes retained verbatim.",
+      "Actual, projected and revised service dates remain separate source events. No completion inferred."
+    ],
+    "project_count": 2966
+  }
+]
