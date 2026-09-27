@@ -1,0 +1,124 @@
+{
+  "$id": "https://gridbridge.local/schemas/mid-atlantic-release.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Approved Mid-Atlantic additions before independent location projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "release_id",
+    "created_at",
+    "producer",
+    "sources",
+    "projects",
+    "location_verifications",
+    "dispositions",
+    "expected_counts",
+    "coverage_notes",
+    "identity_review",
+    "acquisition",
+    "project_events"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "mid-atlantic-release-v1"
+    },
+    "release_id": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/release_id"
+    },
+    "created_at": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/created_at"
+    },
+    "producer": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/producer"
+    },
+    "sources": {
+      "allOf": [
+        {
+          "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/sources"
+        },
+        {
+          "items": {
+            "properties": {
+              "_id": {
+                "pattern": "^mid-atlantic:.+"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "https://gridbridge.local/schemas/national-project.schema.json"
+          },
+          {
+            "properties": {
+              "_id": {
+                "type": "string",
+                "pattern": "^mid-atlantic:[^:]+:.+"
+              },
+              "center": {
+                "type": "null"
+              },
+              "location_review": {
+                "const": "unlocated"
+              },
+              "states": {
+                "contains": {
+                  "enum": [
+                    "10",
+                    "11",
+                    "24",
+                    "34",
+                    "36",
+                    "42"
+                  ]
+                }
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "location_verification"
+                  ]
+                },
+                {
+                  "required": [
+                    "project_events"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "location_verifications": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/location_verifications"
+    },
+    "dispositions": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/dispositions"
+    },
+    "expected_counts": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/expected_counts"
+    },
+    "coverage_notes": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/coverage_notes"
+    },
+    "identity_review": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/identity_review"
+    },
+    "acquisition": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/acquisition"
+    },
+    "project_events": {
+      "$ref": "https://gridbridge.local/schemas/southeast-release.schema.json#/properties/project_events"
+    }
+  }
+}
