@@ -751,7 +751,7 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
 
       <div className={s.left}>
         <header className={s.masthead}>
-          <p className={s.overline}>GridBridge · History · the record</p>
+          <p className={s.overline}>Common Ground · History · the record</p>
           <h1 className={s.title}>
             What was built, <em>when</em>.
           </h1>

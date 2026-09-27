@@ -24,10 +24,10 @@ export function HeroStory({ children }: { children: ReactNode }) {
       let rect=element.getBoundingClientRect();
       if(autoplay && !document.hidden && element.dataset.animationPaused!=='true'){
         elapsed+=dt;
-        if(elapsed>2.2){
+        if(elapsed>1.2){
           const travel=Math.max(1,rect.height-innerHeight+52);
-          // Truck passes: Same roads, then One network, then Common Ground.
-          const position=Math.min(travel+innerHeight*.55,(elapsed-2.2)*travel/18);
+          // Same roads on arrival, one truck pass turns it into One network, then Common Ground.
+          const position=Math.min(travel+innerHeight*.55,(elapsed-1.2)*travel/12);
           scrollTo({top:scrollY+rect.top-52+position,behavior:'instant'});
           rect=element.getBoundingClientRect();
           if(position>=travel+innerHeight*.55)autoplay=false;
@@ -38,9 +38,8 @@ export function HeroStory({ children }: { children: ReactNode }) {
       if(Math.abs(target-current)<.0001)current=target;
       const segment=(a:number,b:number)=>Math.max(0,Math.min(1,(current-a)/(b-a)));
       element.style.setProperty('--story-progress',String(current));
-      element.style.setProperty('--beat-one',String(segment(.05,.1)*(1-segment(.32,.4))));
-      element.style.setProperty('--beat-two',String(segment(.38,.44)*(1-segment(.68,.78))));
-      element.style.setProperty('--brand-reveal',String(segment(.78,.9)));
+      element.style.setProperty('--beat-two',String(1-segment(.56,.68)));
+      element.style.setProperty('--brand-reveal',String(segment(.64,.86)));
       if(autoplay || current!==target)frame=requestAnimationFrame(update);
     }
     function schedule(){if(!frame)frame=requestAnimationFrame(update);}

@@ -6,7 +6,7 @@ import { getMatches, getPair, isFixtureMode } from "@/lib/data";
 import { isUnavailable } from "@/lib/types";
 import s from "@/components/impact/impact.module.css";
 
-export const metadata: Metadata = { title: "Impact scenario · GridBridge" };
+export const metadata: Metadata = { title: "Impact scenario · Common Ground" };
 
 export default async function ImpactPage({ searchParams }: { searchParams: Promise<{ pair?: string | string[] }> }) {
   const params = await searchParams;

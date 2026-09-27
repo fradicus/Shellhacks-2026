@@ -4,7 +4,7 @@ import { loadHistory } from "@/lib/history/server";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = { title: "History · GridBridge" };
+export const metadata = { title: "History · Common Ground" };
 
 const KEYS = ["origin", "project", "from", "to", "at", "show", "source", "q"] as const;
 

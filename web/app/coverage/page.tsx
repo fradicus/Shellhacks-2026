@@ -3,7 +3,7 @@ import { ErrorState } from "@/components/ui";
 import { getCoverage, getLatestRun, getSources } from "@/lib/data";
 import { isUnavailable } from "@/lib/types";
 
-export const metadata = { title: "Data quality · GridBridge" };
+export const metadata = { title: "Data quality · Common Ground" };
 
 export default async function CoveragePage() {
   const [coverage, sources, latestRun] = await Promise.all([getCoverage(), getSources(), getLatestRun()]);

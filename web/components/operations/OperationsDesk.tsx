@@ -293,7 +293,7 @@ export function OperationsDesk() {
     <div className={styles.workspace}>
       <div className={styles.controls}>
         <section className={styles.panel}>
-          <div className={styles.sectionHeading}><span className={styles.step}>01</span><div><h2>Confirm the worksite</h2><p>Coordinates are manual user input. GridBridge does not verify or infer this location.</p></div></div>
+          <div className={styles.sectionHeading}><span className={styles.step}>01</span><div><h2>Confirm the worksite</h2><p>Coordinates are manual user input. Common Ground does not verify or infer this location.</p></div></div>
           <form onSubmit={checkSite} noValidate>
             <Field label="Worksite label"><input value={siteDraft.label} onChange={(event) => invalidateSiteDraft({ label: event.target.value })} autoComplete="off" required /></Field>
             <div className={styles.fieldGrid}>

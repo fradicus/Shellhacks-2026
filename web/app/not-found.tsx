@@ -1,7 +1,7 @@
 import Link from "next/link";
 import s from "@/components/brand/notFound.module.css";
 
-export const metadata = { title: "No such page · GridBridge" };
+export const metadata = { title: "No such page · Common Ground" };
 
 /** 404 in the product's own grammar: two service rings that don't overlap. */
 export default function NotFound() {
@@ -14,7 +14,7 @@ export default function NotFound() {
       </svg>
       <p className={s.eyebrow}>404 · no such page</p>
       <h1 className={s.title}>No overlap here.</h1>
-      <p className={s.lede}>This address doesn&apos;t match a page in GridBridge. The leads are on the overlap view.</p>
+      <p className={s.lede}>This address doesn&apos;t match a page in Common Ground. The leads are on the overlap view.</p>
       <div className={s.actions}>
         <Link href="/time" className={s.primary}>
           Go to Overlaps →

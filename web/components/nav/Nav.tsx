@@ -38,7 +38,7 @@ export function Nav() {
     <header className={`${styles.bar} no-print`}>
       <Link href="/" className={styles.brand}>
         <Mark />
-        <span>GridBridge</span>
+        <span>Common Ground</span>
       </Link>
       <nav aria-label="Main" className={styles.nav}>
         <ul className={styles.links}>

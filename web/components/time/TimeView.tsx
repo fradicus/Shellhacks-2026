@@ -913,7 +913,7 @@ export function TimeView({
 
       <div className={s.left} ref={leftRef}>
       <header className={s.masthead}>
-        <p className={s.overline}>GridBridge · Overlaps in time</p>
+        <p className={s.overline}>Common Ground · Overlaps in time</p>
         <h1 className={s.title}>
           When, <em>above</em> where.
         </h1>

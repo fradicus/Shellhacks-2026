@@ -27,8 +27,14 @@ export function HeroScene() {
         <p>Find the overlap. See what connects.</p>
       </div>
       <div className={s.brandReveal} aria-hidden="true">
-        <strong>Common Ground</strong>
+        <span className={s.brandHalo} />
+        <span className={s.brandMark}>
+          <i />
+          <i />
+        </span>
+        <strong data-text="Common Ground">Common Ground</strong>
         <p>Every mile. Connected.</p>
+        <span className={s.brandRule} />
       </div>
       {/* Hidden controls keep the standalone HTML exporter’s adapter stable; map toggle is retired. */}
       <div className={s.sceneControls} role="group" aria-label="Illustration view" hidden>

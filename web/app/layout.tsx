@@ -12,7 +12,7 @@ const mono = Martian_Mono({ subsets: ["latin"], variable: "--gb-mono", display: 
 export const viewport: Viewport = { themeColor: "#06080d", colorScheme: "dark" };
 
 export const metadata: Metadata = {
-  title: "GridBridge: transmission coordination leads",
+  title: "Common Ground: transmission coordination leads",
   description:
     "Where Dominion Energy South Carolina and Georgia Power plan transmission work within 25 miles of each other, traced to public filings.",
 };

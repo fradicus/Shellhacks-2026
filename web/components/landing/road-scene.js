@@ -91,14 +91,11 @@ function truck(xf,rot,mk,hd){
    const dt=Math.min(.05,Math.max(0,(now-last)/1000));last=now;
    if(!(typeof paused === "function" ? paused() : paused)&&!reduced.matches)elapsed+=dt;
    const t=elapsed;
-   const reveal=reduced.matches?1:clamp((t-.8)/1.6);
-   const ease=reveal*reveal*(3-2*reveal);
-   const introL=Math.min(W*.84,1100),finalL=W<700?W*.88:Math.min(W*.55,860);
-   L=introL+(finalL-introL)*ease;
+   L=W<700?W*.88:Math.min(W*.55,860);
    const p=reduced.matches?0:Number(story?.style.getPropertyValue('--story-progress')||0);
    const seg=(a,b)=>clamp((p-a)/(b-a));
    const smooth=x=>x*x*(3-2*x);
-   roadY=H*(.65+.16*ease-.12*smooth(seg(.02,.14)));
+   roadY=H*(.81-.12*smooth(seg(.02,.14)));
    ctx.setTransform(DPR,0,0,DPR,0,0); ctx.clearRect(0,0,W,H);
    const road=ctx.createLinearGradient(0,roadY,0,H);
    road.addColorStop(0,'#111114'); road.addColorStop(1,'#000');
@@ -106,17 +103,11 @@ function truck(xf,rot,mk,hd){
    ctx.strokeStyle='rgba(255,226,176,.12)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,roadY);ctx.lineTo(W,roadY);ctx.stroke();
    ctx.strokeStyle='rgba(255,255,255,.09)';ctx.setLineDash([48,100]);ctx.lineDashOffset=t*30;
    ctx.beginPath();ctx.moveTo(0,roadY+30);ctx.lineTo(W,roadY+30);ctx.stroke();ctx.setLineDash([]);
-   // Park briefly, then Same roads pass, pause off-screen, One network pass, hold for brand.
-   const startX=(W-L)*.5,endX=W<700?(W-L)*.5:W-L-W*.04;
-   let xf=startX+(endX-startX)*ease;
-   if(p>=.05 && p<.32)xf=endX+(-L-80-endX)*smooth(seg(.05,.32));
-   else if(p>=.32 && p<.38)xf=-L-80;
-   else if(p>=.38 && p<.68)xf=W+60+(-L-80-W-60)*smooth(seg(.38,.68));
-   else if(p>=.68)xf=-L-80;
+   // Same roads waits on arrival; one drive-by covers it and leaves One network in its wake.
+   const xf=reduced.matches?(W<700?(W-L)*.5:W-L-W*.04):W+60+(-L-80-W-60)*smooth(seg(.06,.5));
    if(story){
-     const edge=`${clamp((xf+L)/W)*100}%`;
-     story.style.setProperty('--wipe-one',p<.05?'100%':p<.32?edge:'0%');
-     story.style.setProperty('--wipe-two',p<.38?'100%':p<.68?edge:'0%');
+     story.style.setProperty('--wipe-one',`${(1-clamp(xf/W))*100}%`);
+     story.style.setProperty('--wipe-two',`${clamp((xf+L)/W)*100}%`);
    }
    beam(xf,1,t); truck(xf,xf/(L*.032),1,1);
  }

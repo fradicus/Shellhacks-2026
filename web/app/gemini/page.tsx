@@ -3,7 +3,7 @@ import { ErrorState } from "@/components/ui";
 import { getBriefs, getExtractions, getProjects, getSources } from "@/lib/data";
 import { isUnavailable, type Project } from "@/lib/types";
 
-export const metadata = { title: "Gemini workbench · GridBridge" };
+export const metadata = { title: "Gemini workbench · Common Ground" };
 
 /** F01's deterministic parse under F03's field names, so both columns line up. */
 function deterministic(p: Project): Record<string, unknown> {

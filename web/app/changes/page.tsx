@@ -3,7 +3,7 @@ import { ErrorState } from "@/components/ui";
 import { analysisDate, getMatches, getProjects, getSources, getVersionChanges } from "@/lib/data";
 import { isUnavailable } from "@/lib/types";
 
-export const metadata = { title: "Filing changes · GridBridge" };
+export const metadata = { title: "Filing changes · Common Ground" };
 
 export default async function ChangesPage() {
   const [changes, sources, projects, matches] = await Promise.all([

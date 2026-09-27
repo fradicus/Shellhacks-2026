@@ -8,7 +8,7 @@ import { isUnavailable, type Project } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-export const metadata = { title: "Overlaps · GridBridge" };
+export const metadata = { title: "Overlaps · Common Ground" };
 
 export default async function TimePage() {
   const [matches, projects, national] = await Promise.all([

@@ -20,7 +20,7 @@ function pairId(raw: string): string {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  return { title: `Pair ${pairId((await params).id)} · GridBridge` };
+  return { title: `Pair ${pairId((await params).id)} · Common Ground` };
 }
 
 export default async function PairPage({ params }: Props) {
