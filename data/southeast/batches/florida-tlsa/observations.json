@@ -1,0 +1,867 @@
+{
+  "gis_acquisition_reconciled": true,
+  "gis_ids_missing_from_index": [
+    "TA06-14"
+  ],
+  "gis_rows": 16,
+  "gis_unique_certification_ids": 14,
+  "index_ids_missing_from_gis": [
+    "TA07-14",
+    "TA21-18",
+    "TA22-19",
+    "TA25-20"
+  ],
+  "index_rows": 17,
+  "limitations": [
+    "Observations are not canonical projects or verified current construction.",
+    "Certification ID discrepancies require explicit source reconciliation.",
+    "Linked documents are references, not automatic acquisition approval.",
+    "This source does not cover every Florida transmission construction project."
+  ],
+  "new_confirmed_points": 0,
+  "observations": [
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA81-01",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_01.pdf"
+        ],
+        "licensee_raw": "City of Tallahassee",
+        "name": "Hopkins - Bainbridge",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA81-01",
+      "observation_id": "dep-index:TA81-01",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA81-02",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_02.pdf"
+        ],
+        "licensee_raw": "Florida Power Corporation (now Duke Energy Florida, LLC)",
+        "name": "Central Florida - Kathleen",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA81-02",
+      "observation_id": "dep-index:TA81-02",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA81-03",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta81_03.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Duval - Poinsett",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-poinsett-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA81-03",
+      "observation_id": "dep-index:TA81-03",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA83-04",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta83_04.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Midway - Jensen - Crane",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA83-04",
+      "observation_id": "dep-index:TA83-04",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA88-06",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta88_06.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Crane - Bridge - Plumosus",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA88-06",
+      "observation_id": "dep-index:TA88-06",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA89-07",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta89_07.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Levee - Midway",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-levee-midway-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA89-07",
+      "observation_id": "dep-index:TA89-07",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA90-08",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta90_08.pdf"
+        ],
+        "licensee_raw": "Seminole Electric Company, Inc. and JEA",
+        "name": "Seminole - Keystone - Firestone",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA90-08",
+      "observation_id": "dep-index:TA90-08",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA92-09",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta92_09.pdf"
+        ],
+        "licensee_raw": "Florida Power Corporation (now Duke Energy Florida, LLC)",
+        "name": "Debary - Winter Springs",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA92-09",
+      "observation_id": "dep-index:TA92-09",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA03-12",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta03_12.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Collier - Orange River",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-collier-orange-river-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA03-12",
+      "observation_id": "dep-index:TA03-12",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA05-13",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta05_13_A.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "St. Johns - Pellicer - Pringle",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA05-13",
+      "observation_id": "dep-index:TA05-13",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA07-14",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_14_2008.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Bobwhite - Manatee",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA07-14",
+      "observation_id": "dep-index:TA07-14",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA07-15",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_15_2009_A.pdf"
+        ],
+        "licensee_raw": "Tampa Electric Company",
+        "name": "Willow Oak - Wheeler - Davis",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA07-15",
+      "observation_id": "dep-index:TA07-15",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA07-16",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta07_16_2012_A.pdf"
+        ],
+        "licensee_raw": "Progress Energy Florida (now Duke Energy Florida, LLC) and Tampa Electric Company",
+        "name": "Lake Agnes - Gifford",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA07-16",
+      "observation_id": "dep-index:TA07-16",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA16-17",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/TA16_17_2016_scrivenor_error_2021_9_17.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Duval - Raven",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-raven-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA16-17",
+      "observation_id": "dep-index:TA16-17",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA21-18",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta21_18.pdf"
+        ],
+        "licensee_raw": "Orlando Utilities Commission",
+        "name": "St. Cloud - Magnolia",
+        "project_urls": [
+          "https://floridadep.gov/air/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA21-18",
+      "observation_id": "dep-index:TA21-18",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA22-19",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/Web/Certification/ta22_19.pdf"
+        ],
+        "licensee_raw": "Florida Power & Light Company",
+        "name": "Sweatt-Whidden",
+        "project_urls": [
+          "https://floridadep.gov/water/siting-coordination-office/content/fpl-sweatt-whidden-230kv-line"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA22-19",
+      "observation_id": "dep-index:TA22-19",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "certification_raw": "TA25-20",
+        "document_urls": [
+          "https://publicfiles.dep.state.fl.us/Siting/Outgoing/DEF_DeLandWest-DonaVista_TA25-20/20260120_DEF_DeLand-DonaVista_TA25-20_FinalOrderConditions.pdf"
+        ],
+        "licensee_raw": "Duke Energy Florida",
+        "name": "DeLand West - Dona Vista",
+        "project_urls": [
+          "https://floridadep.gov/water/siting-coordination-office/content/def-deland-west-dona-vista-230kv-transmission-line-project"
+        ]
+      },
+      "location_review": "unlocated",
+      "locator": "TA25-20",
+      "observation_id": "dep-index:TA25-20",
+      "source_id": "dep-conditions-index"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA89-07",
+        "CERTIFICATION_DATE": "4/20/1990",
+        "COUNTIES": "St. Lucie, Martin, Palm Beach, Broward, Dade",
+        "DESCRIPTION": "The Levee-Midway line connects Midway Substation in St. Lucie County to Levee Substation in Dade County via Corbett and Conservation Substations.",
+        "DISTRICTS": "Florida Department of Environmental Protection Southeast District\r\nSouth Florida Water Management District",
+        "LENGTH_MILES": 150.0,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Levee - Midway",
+        "OBJECTID": 1,
+        "SHAPE.LEN": 195345.442240071,
+        "VOLTAGE_KV": 500.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-levee-midway-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=1",
+      "observation_id": "dep-gis:1",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA88-06",
+        "CERTIFICATION_DATE": "8/8/1989",
+        "COUNTIES": "Martin, Palm Beach",
+        "DESCRIPTION": "This transmission line connects Crane substation to Plumosus Substation, through connections to Mapp, Hanson, Bridge, Moroso, Alexander, Steeplechase, Ryder, and Bonnette substations.",
+        "DISTRICTS": "Florida Department of Environmental Protection Central and Southeast Districts\nSouth Florida Water Management District",
+        "LENGTH_MILES": 40.0,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Crane - Bridge - Plumosus",
+        "OBJECTID": 2,
+        "SHAPE.LEN": 133548.166869203,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=2",
+      "observation_id": "dep-gis:2",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA81-03",
+        "CERTIFICATION_DATE": "11/18/1982",
+        "COUNTIES": "Duval, Clay, Flagler, Putnam, Volusia, Orange, Seminole",
+        "DESCRIPTION": "These lines consist of two 500kV transmission lines from the Duval Substation in Duval County extending through the Rice Substation in Putnam County and the Rima Substation in Volusia County ending at the Poinsett Substation in Orange County.",
+        "DISTRICTS": "Florida Department of Environmental Protection Northeast and Central Districts\nSt. Johns River Water Management District",
+        "LENGTH_MILES": 175.0,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Duval - Poinsett",
+        "OBJECTID": 3,
+        "SHAPE.LEN": 564884.88347295,
+        "VOLTAGE_KV": 500.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-poinsett-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=3",
+      "observation_id": "dep-gis:3",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA06-14",
+        "CERTIFICATION_DATE": "11/6/2008",
+        "COUNTIES": "Sarasota, Manatee",
+        "DESCRIPTION": "The transmission line connects from the Manatee Energy Center switchyard, within Manatee County, to the Bobwhite Substation located east of Interstate 75 in Sarasota County.",
+        "DISTRICTS": "Florida Department of Environmental Protection Southwest and South Districts\nSouthwest Florida Water Management District",
+        "LENGTH_MILES": 25.5,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Bobwhite - Manatee",
+        "OBJECTID": 4,
+        "SHAPE.LEN": 81933.118184688,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=4",
+      "observation_id": "dep-gis:4",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA03-12",
+        "CERTIFICATION_DATE": "7/19/2004",
+        "COUNTIES": "Collier, Lee",
+        "DESCRIPTION": "The line connects from the Orange River Substation in Lee County to the Collier Substation in Collier County.",
+        "DISTRICTS": "Florida Department of Environmental Protection South District\nSouth Florida Water Management District",
+        "LENGTH_MILES": 53.90000153,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Collier - Orange River",
+        "OBJECTID": 5,
+        "SHAPE.LEN": 219419.167868426,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-collier-orange-river-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=5",
+      "observation_id": "dep-gis:5",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA05-13",
+        "CERTIFICATION_DATE": "4/27/2006",
+        "COUNTIES": "St. Johns, Flagler",
+        "DESCRIPTION": "The line will connect the existing St. Johns Substation near St. Augustine in St. Johns County to the proposed Pringle Substation in the city of Palm Coast in Flagler County",
+        "DISTRICTS": "Florida Department of Environmental Protection Northeast District\nSt. Johns River Water Management District",
+        "LENGTH_MILES": 26.10000038,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "St. Johns - Pellicer - Pringle",
+        "OBJECTID": 6,
+        "SHAPE.LEN": 86094.569029273,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=6",
+      "observation_id": "dep-gis:6",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA16-17",
+        "CERTIFICATION_DATE": "6/29/2016",
+        "COUNTIES": "Duval, Nassau, Baker, Columbia",
+        "DESCRIPTION": "The line begins at the existing Duval Substation in Duval County and terminates at the Raven Substation in Columbia County.",
+        "DISTRICTS": "Florida Department of Environmental Protection Northeast District\r\nSt. Johns River Florida Water Management District and Suwanee River Water Management District",
+        "LENGTH_MILES": 39.0,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Duval - Raven",
+        "OBJECTID": 7,
+        "SHAPE.LEN": 127580.784779933,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-raven-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=7",
+      "observation_id": "dep-gis:7",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA83-04",
+        "CERTIFICATION_DATE": "1/17/1984",
+        "COUNTIES": "St. Lucie, Martin",
+        "DESCRIPTION": "The line connects Midway Substation in St. Lucie County to Turnpike No. 3, an intermediate substation, also in St. Lucie County. From Turnpike No. 3 Substation the line will branch eastward to the Jensen Substation and southward to the Crane Substation.",
+        "DISTRICTS": "Florida Department of Environmental Protection Southeast District\r\nSouth Florida Water Management District",
+        "LENGTH_MILES": 22.5,
+        "LICENSEE": "Florida Power & Light",
+        "NAME": "Midway - Jensen - Crane",
+        "OBJECTID": 8,
+        "SHAPE.LEN": 61350.4001746092,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=8",
+      "observation_id": "dep-gis:8",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA92-09",
+        "CERTIFICATION_DATE": "5/11/1993",
+        "COUNTIES": "Seminole, Volusia",
+        "DESCRIPTION": "The transmission line begins at the DeBary Power Plant in Volusia County, extends south to the FPL Tie Station and Sanford Plant through the Lake-Emma Substation, the North Longwood Substation, ending at the Winter Springs Substation in Seminole County.",
+        "DISTRICTS": "Florida Department of Environmental Protection Central District,\r\nSt. Johns River Water Management District",
+        "LENGTH_MILES": 19.10000038,
+        "LICENSEE": "Duke Energy Florida",
+        "NAME": "DeBary - Winter Springs",
+        "OBJECTID": 9,
+        "SHAPE.LEN": 66465.6295476932,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=9",
+      "observation_id": "dep-gis:9",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA81-02",
+        "CERTIFICATION_DATE": "7/26/1982",
+        "COUNTIES": "Sumter, Polk, Hernando, Pasco",
+        "DESCRIPTION": "The transmission line begins at the Central Florida Substation and ends at the Kathleen Substation.",
+        "DISTRICTS": "Florida Department of Environmental Protection Central and Southwest Districts,\r\nSouthwest Florida Water Management District",
+        "LENGTH_MILES": 44.5,
+        "LICENSEE": "Duke Energy Florida",
+        "NAME": "Central Florida - Kathleen",
+        "OBJECTID": 10,
+        "SHAPE.LEN": 142575.465711094,
+        "VOLTAGE_KV": 500.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=10",
+      "observation_id": "dep-gis:10",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA07-16",
+        "CERTIFICATION_DATE": "2/18/2009",
+        "COUNTIES": "Polk, Orange, Osceola",
+        "DESCRIPTION": "The line originates at Lake Agnes Substation in Polk County extends east, northeast through Osceola County along state road 429 ending at the Gifford Substation located in Orange County.",
+        "DISTRICTS": "Florida Department of Environmental Protection Central and Southwest Districts\r\nSouth Florida Water Management District",
+        "LENGTH_MILES": 27.5,
+        "LICENSEE": "Duke Energy Florida",
+        "NAME": "Lake Agnes - Gifford",
+        "OBJECTID": 11,
+        "SHAPE.LEN": 27650.2000608735,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=11",
+      "observation_id": "dep-gis:11",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA07-15",
+        "CERTIFICATION_DATE": "8/7/2008",
+        "COUNTIES": "Hillsborough, Polk",
+        "DESCRIPTION": "Connects from the Davis Substation in Temple Terrace, Hillsborough County to the intermediate Wheeler Substation located along Wheeler Road northeast of Brandon in Hillsborough County and ends at the Willow Oak Substation west of Mulberry in Polk County.",
+        "DISTRICTS": "Florida Department of Environmental Protection Southwest District\n Southwest &  South Water Management Districts",
+        "LENGTH_MILES": 30.0,
+        "LICENSEE": "Tampa Electric Company",
+        "NAME": "Davis to Willow",
+        "OBJECTID": 12,
+        "SHAPE.LEN": 103240.985840428,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=12",
+      "observation_id": "dep-gis:12",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA07-16",
+        "CERTIFICATION_DATE": "2/18/2009",
+        "COUNTIES": "Polk, Osceola, Orange",
+        "DESCRIPTION": "This transmission line begins at TECO's existing Lake Agnes Substation in Polk County to Duke Energy Florida's existing Gifford Substation in Orange County",
+        "DISTRICTS": "Florida Department of Environmental Protection Southwest &  Central District\nSouth Florida Water Management District",
+        "LENGTH_MILES": 27.5,
+        "LICENSEE": "Tampa Electric Company",
+        "NAME": "Lake Agnes to Gifford",
+        "OBJECTID": 13,
+        "SHAPE.LEN": 97692.6925082095,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=13",
+      "observation_id": "dep-gis:13",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA81-01",
+        "CERTIFICATION_DATE": "8/4/1981",
+        "COUNTIES": "Leon, Gadsden",
+        "DESCRIPTION": "The City of Tallahassee constructed this transmission line from the Arvah B. Hopkins Generating Station to Georgia Power Cooperation's South Bainbridge Substation.",
+        "DISTRICTS": " Florida Department of Environmental Protection Northwest District\r\nNorthwest Florida Water Management District",
+        "LENGTH_MILES": 17.0,
+        "LICENSEE": "City of Tallahassee",
+        "NAME": "Hopkins - Bainbridge Line",
+        "OBJECTID": 14,
+        "SHAPE.LEN": 28417.534283405897,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=14",
+      "observation_id": "dep-gis:14",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA90-08",
+        "CERTIFICATION_DATE": "6/12/1991",
+        "COUNTIES": "Marion, Putnam, Clay, Duval",
+        "DESCRIPTION": "This transmission line begins at SECI's Seminole Generating Station and connects to Clay Electric Cooperative's Riverview, Florahome, Keystone, and Black Creek Substations, ending at the JEA's Firestone Substation",
+        "DISTRICTS": " Florida Department of Environmental Protection Northeast District\r\nSt. Johns River Water Management District",
+        "LENGTH_MILES": 70.0,
+        "LICENSEE": "Seminole Electric Cooperative",
+        "NAME": "Seminole - Keystone - Firestone (SECI)",
+        "OBJECTID": 15,
+        "SHAPE.LEN": 180602.92624225502,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=15",
+      "observation_id": "dep-gis:15",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "CERTIFICATION": "TA90-08",
+        "CERTIFICATION_DATE": "6/12/1991",
+        "COUNTIES": "Marion, Putnam, Clay, Duval",
+        "DESCRIPTION": "This transmission line begins at SECI's Seminole Generating Station and connects to Clay Electric Cooperative's Riverview, Florahome, Keystone, and Black Creek Substations, ending at the JEA's Firestone Substation",
+        "DISTRICTS": " Florida Department of Environmental Protection Northeast District\r\nSt. Johns River Water Management District",
+        "LENGTH_MILES": 70.0,
+        "LICENSEE": "JEA",
+        "NAME": "Seminole - Keystone - Firestone (JEA)",
+        "OBJECTID": 16,
+        "SHAPE.LEN": 10682.642930263199,
+        "VOLTAGE_KV": 230.0,
+        "WEBSITE": "https://floridadep.gov/air/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+      },
+      "location_review": "unlocated",
+      "locator": "OBJECTID=16",
+      "observation_id": "dep-gis:16",
+      "source_id": "dep-transmission-gis"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "Certification #": "TA 07-16",
+        "Counties Crossed": "Polk, Osceola and Orange",
+        "Date Certified": "02/18/2009",
+        "Description": "This transmission line begins at Tampa Electric Company’s existing Lake Agnes Substation in Polk County to Duke Energy Florida's existing GIfford Substation in Orange County.",
+        "Licensee": "Duke Energy Florida, LLC and Tampa Electric Company",
+        "Line Length": "27.5 Miles",
+        "Voltage": "230 kV"
+      },
+      "location_review": "unlocated",
+      "locator": "General Information table",
+      "observation_id": "detail:duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "source_id": "detail:duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "Certification #": "TA 06-14",
+        "Counties Crossed": "Sarasota and Manatee",
+        "Date Certified": "11/06/2008",
+        "Description": "The transmission line connects the Manatee Energy Center switchyard to the Bobwhite Substation located east of Interstate 75 in Sarasota County.",
+        "Licensee": "Florida Power & Light Company",
+        "Line Length": "25.5 Miles",
+        "Voltage": "230 kV"
+      },
+      "location_review": "unlocated",
+      "locator": "General Information table",
+      "observation_id": "detail:florida-power-light-bobwhite-manatee-line",
+      "source_id": "detail:florida-power-light-bobwhite-manatee-line"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "Certification #": "TA 16-17",
+        "Counties Crossed": "Duval, Nassau, Baker and Columbia",
+        "Date Certified": "06/29/2016",
+        "Description": "The line begins at the existing Duval Substation in Duval County and terminates at the Raven Substation in Columbia County.",
+        "Licensee": "Florida Power & Light Company",
+        "Line Length": "39 Miles",
+        "Voltage": "230 kV"
+      },
+      "location_review": "unlocated",
+      "locator": "General Information table",
+      "observation_id": "detail:florida-power-light-duval-raven-line",
+      "source_id": "detail:florida-power-light-duval-raven-line"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "Certification #": "TA 21-18",
+        "Counties Crossed": "Osceola and Orange",
+        "Date Certified": "12/13/2021",
+        "Description": "The line begins at the existing Magnolia North substation in Osceola County and terminates at the St. Cloud East substation in Orange County",
+        "Licensee": "Orlando Utilities Commission",
+        "Line Length": "21 miles",
+        "Voltage": "230 kV"
+      },
+      "location_review": "unlocated",
+      "locator": "General Information table",
+      "observation_id": "detail:ouc-st-cloud-magnolia-230-kv-line",
+      "source_id": "detail:ouc-st-cloud-magnolia-230-kv-line"
+    },
+    {
+      "center": null,
+      "disposition": "pending_project_reconciliation",
+      "facts": {
+        "Certification #": "TA 90-08",
+        "Counties Crossed": "Putnam and Duval",
+        "Date Certified": "06/12/1991",
+        "Description": "This transmission line begins at SECI's Seminole Generating Station and connects to Clay Electric Cooperative's Riverview, Florahome, Keystone and Black Creek Substations, ending at the JEA's Firestone Substation.",
+        "Licensee": "Seminole Electric Cooperative, Inc (SECI) and JEA",
+        "Line Length": "70 Miles",
+        "Voltage": "230 kV"
+      },
+      "location_review": "unlocated",
+      "locator": "General Information table",
+      "observation_id": "detail:seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "source_id": "detail:seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+    }
+  ],
+  "publication_eligible": false,
+  "sources": [
+    {
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+      "file": "conditions-certification.html",
+      "key": "index",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+      "sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification"
+    },
+    {
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+      "file": "transmission-attributes.json",
+      "key": "gis",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:20:34.972152+00:00",
+      "sha256": "4d0611f68b0743df874795cfb1ea7921ab5a18c0b80bd2c00009295f61a5a483",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&outFields=*&returnGeometry=false&f=pjson"
+    },
+    {
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review.",
+      "file": "transmission-ids.json",
+      "key": "ids",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:24:41.417532+00:00",
+      "sha256": "ad2301c2b7ecfb0f6f1844e00bc8bb4eb080159cf02d1017ebecff02ba473124",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&returnIdsOnly=true&f=pjson"
+    },
+    {
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+      "file": "duke-energy-florida-llc-and-tampa-electric-company-lake-agnes.html",
+      "key": "detail:duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:27:25.253727+00:00",
+      "sha256": "3b6644336997e23d96815d80f3be786c65b7693cb1ff05cd351cba03cc6a3332",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes"
+    },
+    {
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+      "file": "florida-power-light-bobwhite-manatee-line.html",
+      "key": "detail:florida-power-light-bobwhite-manatee-line",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:27:25.460834+00:00",
+      "sha256": "2e8249d5f714a27082b8839e9127e2e1b8fd244ba272917fc9e2eea2e66f9fd3",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line"
+    },
+    {
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+      "file": "florida-power-light-duval-raven-line.html",
+      "key": "detail:florida-power-light-duval-raven-line",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:27:24.667501+00:00",
+      "sha256": "abd249bdbc370bb8dc80f00043ee720e1d5fa8bf47cbae7072400e1eb12dd3eb",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-raven-line"
+    },
+    {
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+      "file": "ouc-st-cloud-magnolia-230-kv-line.html",
+      "key": "detail:ouc-st-cloud-magnolia-230-kv-line",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:27:24.612462+00:00",
+      "sha256": "caeb2e5a52296c2f15a6f1c11f18a876d6486bf2ed0de17df34713d4c9423add",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line"
+    },
+    {
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired.",
+      "file": "seminole-electric-cooperative-inc-and-jea-keystone-firestone.html",
+      "key": "detail:seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "retrieved_at": "2026-09-27T01:27:25.724069+00:00",
+      "sha256": "08b9465e37f3de597dfcd6490fe62aeab9d94806102d8bf82643d6211f29f510",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone"
+    }
+  ]
+}

@@ -38,3 +38,21 @@ endpoint solely because it appears first/last in an array. Current Florida utili
 remain required; this historical certification source is only one part of statewide coverage. Georgia repair and
 AL/MS/SC/NC/TN/KY/VA/WV/AR/LA source inventories remain outstanding. Publication requires a shared additive contract
 for new national projects/sources, followed by F30/F31/F19 integration and Atlas/map acceptance.
+
+## Follow-up evidence: 2026-09-27
+
+Independent review is recorded in independent-source-review-001.md. The complete GIS ID query matches all 16
+returned feature IDs, proving acquisition completeness for that layer response. The current official transmission
+index contains 17 rows. It includes Sweatt–Whidden and DeLand West–Dona Vista beyond the older GIS/PDF coverage.
+The historical relinquished Lake Tarpon entry remains separately relevant. This is not all Florida construction.
+
+Five individual DEP pages are now hash-pinned. Their General Information tables corroborate St. Cloud as OUC,
+TA21-18, and Duval–Raven as FPL, TA16-17. The PDF's St. Cloud ID/licensee cells are erroneous. The index itself
+labels Bobwhite TA07-14 while its individual page, PDF and GIS say TA06-14; these remain distinct observations
+of one identity discrepancy, not two approved projects. Joint-licensee detail pages support the two GIS duplicate
+pairs. No construction-status or coordinate approval follows from this review.
+
+Replay: from pipeline, `uv run python -m southeast.florida --cache /private/tmp/gridbridge-southeast-sources --check`.
+The parser requires pinned hashes, exact reviewed index row count, unique source IDs and matching GIS ID lists.
+It preserves all factual observations and never fetches document links or creates a non-null center. The new-project
+publication contract request is issue 146. Source observations still need canonical assembly and endpoint evidence.
