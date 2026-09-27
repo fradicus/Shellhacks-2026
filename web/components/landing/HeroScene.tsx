@@ -36,7 +36,7 @@ export function HeroScene() {
       </div>
       <div className={s.sceneCaption}>
         <span className={s.statusDot} />
-        {view === "road" ? "Separate projects. A shared horizon." : "One region. More possibilities."}
+        <span>{view === "road" ? "Separate projects. A shared horizon." : "One region. More possibilities."}</span>
         <span>Illustrative animation</span>
       </div>
       <button className={s.pause} type="button" onClick={() => setPaused(!paused)} aria-pressed={paused}>
