@@ -55,6 +55,7 @@ Local sessions have no Paperclip heartbeat or automatic restart. While active, t
 8. Keep a checked revision stable while CI runs. Rebase when conflicts, branch protection or a known integration dependency require it: `git fetch && git rebase origin/main`, reclassify the diff, validate the new revision under `specs/tech-stack.md`, then `git push --force-with-lease`. Being behind unrelated merges alone does not require repeated rebases. Force-push only your own feature branch; never `main` or someone else's branch.
 9. A feature may ship as sequential parts (`[<ID>] part 1/3`), with one open PR per feature at a time. Only the last part adds `changes/<ID>.md`.
 10. Never resolve a rebase conflict in a file you don't own. Abort the rebase, open an issue labeled `conflict` for the owning lane, and wait on it.
+11. Data releases carry their own receipt ([C37](decisions/C37-publication-receipts.md)): paste the expected table from `python -m common.publication` into the PR, then link the load Action's verification summary on the merged PR. Never open receipt-only PRs.
 
 ## 4. Ownership (enforced by CI)
 

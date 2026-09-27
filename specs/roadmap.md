@@ -245,9 +245,15 @@ The Texas session verified their combined result instead of opening a duplicate 
 Issue #190 retains its separate cleanup claim. County-only anchors are excluded from `/time`;
 tentative facility centers remain eligible for display.
 
+## Publication receipts
+
+[C37](decisions/C37-publication-receipts.md) moves post-merge publication checks into the load Action.
+Data PRs paste the expected per-state table; the Action's readback of the active Atlas dataset is the receipt.
+Receipt-only PRs and committed receipt files are no longer required for any geographic feature.
+
 ## Launched follow-on: California coverage
 
-The user instructed Claude local to get about 100 History and 100 Overlaps pins in California. [C37](decisions/C37-california.md)
+The user instructed Claude local to get about 100 History and 100 Overlaps pins in California. [C38](decisions/C38-california.md)
 assigns [F44](features/F44-california/spec.md) (CAISO Transmission Development Forum workbooks, C33 tiers plus an
 operator guard) and draws C25's labeled tiers on `/history` (`/time` already does since #196).
 

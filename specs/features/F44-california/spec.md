@@ -13,7 +13,7 @@ cut: never
 
 ## Scope
 
-California under [C37](../../decisions/C37-california.md), using C33's location tiers plus C37's operator guard.
+California under [C38](../../decisions/C38-california.md), using C33's location tiers plus C38's operator guard.
 F38's source, identity and no-invention rules apply. Do not edit other rollouts' artifacts or releases.
 
 ## Plan

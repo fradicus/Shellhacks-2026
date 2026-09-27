@@ -1,4 +1,4 @@
-# C37: California rollout, and the labeled candidate tier on History
+# C38: California rollout, and the labeled candidate tier on History
 
 ## Authority
 
