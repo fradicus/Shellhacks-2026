@@ -14,6 +14,8 @@ let invalidRecord = false;
 let reads = 0;
 let pointers = 0;
 const blocked = new Map<string, Promise<void>>();
+// A published release never changes, so its three facet reads happen once per dataset id.
+const faceted = new Set<string>();
 const fixtureProject = (dataset: string) => ({
   id: `${dataset}:project`, dataset, name: "Explicit cache test fixture", source_id: "test:source",
   states: ["48"], counties: ["48001"], status_group: "planned", location_review: "unreviewed",
@@ -49,7 +51,8 @@ const db = {
           maxTimeMS: () => cursor, toArray: () => read(filter, true) };
         return cursor;
       },
-      aggregate() {
+      aggregate(pipeline: { $match?: { dataset?: string } }[]) {
+        faceted.add(pipeline[0]?.$match?.dataset ?? "missing");
         const cursor = { maxTimeMS: () => cursor, async toArray() { reads++; return []; } };
         return cursor;
       },
@@ -73,9 +76,10 @@ const { loadNationalExplorer, loadNationalSummaries } = await import("../../../w
 const map = () => loadNationalExplorer({ page: 1, limit: 1 });
 const nextFill = async () => {
   const before = reads;
+  const expected = faceted.has(active ?? "missing") ? 7 : 10;
   const result = await map();
   assert.equal(result.available, true);
-  assert.equal(reads - before, 10, "one fill does the existing ten data/count/facet reads");
+  assert.equal(reads - before, expected, "one fill does the seven data/count reads, plus three facet reads for a new release");
   return result;
 };
 
@@ -99,7 +103,7 @@ test("map cache preserves results, dataset freshness, isolation and retry", { ti
     await loadNationalExplorer(filters);
     await loadNationalExplorer(filters);
   }
-  assert.equal(reads - warmReads, 60, "other queries never reuse the map result");
+  assert.equal(reads - warmReads, 6 * 7, "other queries never reuse the map result (only the release's facets)");
 
   pointerFails = true;
   assert.equal((await map()).available, false, "no old-cache fallback on pointer failure");
