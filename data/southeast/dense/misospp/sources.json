@@ -7,7 +7,7 @@
     "import_status": "imported",
     "landing_url": "https://cdn.misoenergy.org/MTEP25%20Appendix%20A%20-%20New%20Local%20Reliability%20Projects720399.xlsx",
     "notes": [
-      "F39 dense Southeast (C40): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates (C33 tiers, C38 operator guard). MISO's login-only project status report was not used."
+      "F39 dense Southeast (C45): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates (C33 tiers, C38 operator guard). MISO's login-only project status report was not used."
     ],
     "planning_region": "miso",
     "project_count": 43,
@@ -34,7 +34,7 @@
     "import_status": "imported",
     "landing_url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
     "notes": [
-      "F39 dense Southeast (C40): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates (C33 tiers, C38 operator guard). MISO's login-only project status report was not used."
+      "F39 dense Southeast (C45): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates (C33 tiers, C38 operator guard). MISO's login-only project status report was not used."
     ],
     "planning_region": "miso",
     "project_count": 88,
@@ -61,7 +61,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -89,7 +89,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -112,7 +112,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -137,7 +137,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -160,7 +160,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -185,7 +185,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -208,7 +208,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -234,7 +234,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -262,7 +262,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",
@@ -288,7 +288,7 @@
     "import_status": "imported",
     "landing_url": "https://www.spp.org/spp-documents-filings/?id=18641",
     "notes": [
-      "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
+      "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
       "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."
     ],
     "planning_region": "spp",

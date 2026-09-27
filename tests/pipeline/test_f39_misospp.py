@@ -1,4 +1,4 @@
-"""F39/C40 MISO South + SPP batch: parser and rule checks on small invented fixtures, plus the committed batch."""
+"""F39/C45 MISO South + SPP batch: parser and rule checks on small invented fixtures, plus the committed batch."""
 
 from datetime import datetime
 

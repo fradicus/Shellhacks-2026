@@ -61,7 +61,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -183,7 +183,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -330,7 +330,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -484,7 +484,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -682,7 +682,7 @@
         "ARKANSAS ELECTRIC COOP"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -820,7 +820,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         138
@@ -958,7 +958,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -1066,7 +1066,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -1172,7 +1172,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -1319,7 +1319,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -1449,7 +1449,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -1581,7 +1581,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -1695,7 +1695,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -1825,7 +1825,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -1932,7 +1932,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -2061,7 +2061,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -2168,7 +2168,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -2280,7 +2280,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -2400,7 +2400,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -2537,7 +2537,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         161
@@ -2686,7 +2686,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         161
@@ -2835,7 +2835,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         161
@@ -2957,7 +2957,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -3074,7 +3074,7 @@
         "BIG RIVERS"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -3213,7 +3213,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -3354,7 +3354,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -3495,7 +3495,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -3646,7 +3646,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate_unique_name",
       "voltages_kv": [
         115
@@ -3760,7 +3760,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -3901,7 +3901,7 @@
         "SMEPA"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -4036,7 +4036,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -4167,7 +4167,7 @@
         "ENTERGY"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230,
@@ -4360,7 +4360,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -4493,7 +4493,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -4610,7 +4610,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -4724,7 +4724,7 @@
         "BIG RIVERS"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -4840,7 +4840,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -4970,7 +4970,7 @@
         "ARKANSAS ELECTRIC COOP"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -5120,7 +5120,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -5234,7 +5234,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -5415,7 +5415,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230,
@@ -5531,7 +5531,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -5647,7 +5647,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -5762,7 +5762,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         138
@@ -5880,7 +5880,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -5976,7 +5976,7 @@
         "ARKANSAS ELECTRIC COOP"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         345
@@ -6072,7 +6072,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -6168,7 +6168,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -6258,7 +6258,7 @@
         "1803"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -6352,7 +6352,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -6470,7 +6470,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         115
@@ -6566,7 +6566,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -6656,7 +6656,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -6750,7 +6750,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -6863,7 +6863,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         115,
@@ -6954,7 +6954,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -7070,7 +7070,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         115
@@ -7160,7 +7160,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -7254,7 +7254,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -7344,7 +7344,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -7455,7 +7455,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -7568,7 +7568,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138,
@@ -7682,7 +7682,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -7795,7 +7795,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -7907,7 +7907,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -8037,7 +8037,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -8133,7 +8133,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         138
@@ -8229,7 +8229,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -8342,7 +8342,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -8454,7 +8454,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -8544,7 +8544,7 @@
         "1803"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -8632,7 +8632,7 @@
         "1803"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -8726,7 +8726,7 @@
         "BIG RIVERS"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         345
@@ -8822,7 +8822,7 @@
         "1803"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69,
@@ -8919,7 +8919,7 @@
         "1803"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69,
@@ -9016,7 +9016,7 @@
         "1803"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69,
@@ -9107,7 +9107,7 @@
         "1803"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -9197,7 +9197,7 @@
         "1803"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -9287,7 +9287,7 @@
         "1803"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -9377,7 +9377,7 @@
         "1803"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -9473,7 +9473,7 @@
         "1803"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69,
@@ -9564,7 +9564,7 @@
         "1803"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -9654,7 +9654,7 @@
         "1803"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -9748,7 +9748,7 @@
         "1803"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -9847,7 +9847,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -9937,7 +9937,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -10050,7 +10050,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -10164,7 +10164,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -10254,7 +10254,7 @@
         "ARKANSAS ELECTRIC COOP"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -10349,7 +10349,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -10462,7 +10462,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         115
@@ -10558,7 +10558,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -10654,7 +10654,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -10750,7 +10750,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -10846,7 +10846,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -10943,7 +10943,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -11039,7 +11039,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -11151,7 +11151,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         230
@@ -11247,7 +11247,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -11343,7 +11343,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -11439,7 +11439,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -11535,7 +11535,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -11631,7 +11631,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -11728,7 +11728,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -11842,7 +11842,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -11939,7 +11939,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -12035,7 +12035,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -12163,7 +12163,7 @@
         "CLECO"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": []
     },
@@ -12251,7 +12251,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         115
@@ -12343,7 +12343,7 @@
         "SMEPA"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -12438,7 +12438,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         138
@@ -12534,7 +12534,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -12630,7 +12630,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -12726,7 +12726,7 @@
         "CLECO"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -12820,7 +12820,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230,
@@ -12922,7 +12922,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         500
@@ -13040,7 +13040,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -13137,7 +13137,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -13233,7 +13233,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -13323,7 +13323,7 @@
         "ENTERGY"
       ],
       "reason": "program_area_or_multi_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -13419,7 +13419,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230,
@@ -13510,7 +13510,7 @@
         "ARKANSAS ELECTRIC COOP"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -13621,7 +13621,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate_unique_name",
       "voltages_kv": [
         500
@@ -13711,7 +13711,7 @@
         "ENTERGY"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -13805,7 +13805,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -13918,7 +13918,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": []
     },
@@ -14008,7 +14008,7 @@
         "SMEPA"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -14098,7 +14098,7 @@
         "SMEPA"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -14192,7 +14192,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -14282,7 +14282,7 @@
         "GRIDLIANCE"
       ],
       "reason": "no_named_facility",
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": []
     },
@@ -14376,7 +14376,7 @@
         "ENTERGY"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230
@@ -14491,7 +14491,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -14644,7 +14644,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -14776,7 +14776,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -14910,7 +14910,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -15056,7 +15056,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -15202,7 +15202,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -15349,7 +15349,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -15555,7 +15555,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -15681,7 +15681,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -15791,7 +15791,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -15901,7 +15901,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -16009,7 +16009,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         345
@@ -16097,7 +16097,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -16244,7 +16244,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         115,
@@ -16390,7 +16390,7 @@
       "kind": "line",
       "operator_keys": [],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -16496,7 +16496,7 @@
       "kind": "line",
       "operator_keys": [],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -16606,7 +16606,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -16710,7 +16710,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -16814,7 +16814,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -16917,7 +16917,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -17020,7 +17020,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -17144,7 +17144,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -17269,7 +17269,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -17394,7 +17394,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -17520,7 +17520,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138,
@@ -17625,7 +17625,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -17729,7 +17729,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138,
@@ -17834,7 +17834,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138,
@@ -17939,7 +17939,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -18043,7 +18043,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -18151,7 +18151,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         765
@@ -18254,7 +18254,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         765
@@ -18357,7 +18357,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         765
@@ -18460,7 +18460,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         765
@@ -18563,7 +18563,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         765
@@ -18667,7 +18667,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -18772,7 +18772,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345
@@ -18876,7 +18876,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -18981,7 +18981,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19086,7 +19086,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19191,7 +19191,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19296,7 +19296,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19401,7 +19401,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19506,7 +19506,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19611,7 +19611,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         345,
@@ -19717,7 +19717,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         161,
@@ -19868,7 +19868,7 @@
         "OG&E"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -19996,7 +19996,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -20114,7 +20114,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         138
@@ -20245,7 +20245,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -20377,7 +20377,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -20492,7 +20492,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -20607,7 +20607,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -20720,7 +20720,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         230,
@@ -20848,7 +20848,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         500
@@ -20994,7 +20994,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -21105,7 +21105,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161,
@@ -21231,7 +21231,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -21395,7 +21395,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -21559,7 +21559,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -21723,7 +21723,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         138
@@ -21887,7 +21887,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": "candidate",
       "voltages_kv": [
         69
@@ -22022,7 +22022,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         161
@@ -22153,7 +22153,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         138
@@ -22310,7 +22310,7 @@
         "AMERICAN ELECTRIC POWER"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69
@@ -22442,7 +22442,7 @@
         "ARKANSAS ELECTRIC COOP"
       ],
       "reason": null,
-      "rule": "C40",
+      "rule": "C45",
       "tier": null,
       "voltages_kv": [
         69

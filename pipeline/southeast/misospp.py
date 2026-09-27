@@ -1,4 +1,4 @@
-"""MISO South and SPP planning workbooks for LA, AR, MS (and MISO's KY rows): C40 OSM name candidates.
+"""MISO South and SPP planning workbooks for LA, AR, MS (and MISO's KY rows): C45 OSM name candidates.
 
 From pipeline/:
   uv run python -m southeast.misospp fetch --cache <dir>   # network: 2 MISO + 10 SPP workbooks, OSM for 4 states
@@ -171,7 +171,7 @@ def locate_text(name: str, description: str | None, facilities: list[dict], keys
 
 def locate_names(kind: str, names: list[str], kv: set[int], facilities: list[dict], keys: list[str],
                  names_from: str) -> tuple[dict | None, dict]:
-    """dense.locate for facility names the source states in separate columns (same C40 tiers and C38 guard)."""
+    """dense.locate for facility names the source states in separate columns (same C45 tiers and C38 guard)."""
     matches = [match(n, facilities, keys, kv) for n in names]
     center = candidate_center(kind, matches)
     found = [m for m in matches if m["status"] == "matched"]
@@ -182,7 +182,7 @@ def locate_names(kind: str, names: list[str], kv: set[int], facilities: list[dic
     endpoints = [{k: v for k, v in m.items() if k not in ("facility", "facility_ids")}
                  | ({"facility": {f: m["facility"].get(f) for f in fields}} if m["status"] == "matched" else {})
                  for m in matches]
-    return center, {"rule": "C40", "tier": tier, "independent_review": False, "kind": kind, "reason": None,
+    return center, {"rule": "C45", "tier": tier, "independent_review": False, "kind": kind, "reason": None,
                     "names_from": names_from, "voltages_kv": sorted(kv), "operator_keys": keys,
                     "endpoints": endpoints, "dataset": OSM_DATASET}
 
@@ -493,14 +493,14 @@ def build(cache: Path) -> dict:
         sid = f"southeast:{source}"
         sources.append(source_record(sid, title, "miso", url, url, f"as of {as_of[source]}", art, projects,
                                      count[sid], [
-            "F39 dense Southeast (C40): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates "
+            "F39 dense Southeast (C45): LA, AR, MS and KY rows. Locations are unreviewed OSM name candidates "
             "(C33 tiers, C38 operator guard). MISO's login-only project status report was not used."]))
     for edition in SPP_EDITIONS:
         art = manifest[spp_file(edition)]
         sid = f"southeast:spp-qpt-{edition}"
         sources.append(source_record(sid, spp_title(edition), "spp", SPP_INDEX, art["url"],
                                      f"{edition[4:].upper()} {edition[:4]}", art, projects, count[sid], [
-            "F39 dense Southeast (C40): LA and AR upgrades. Older editions only add upgrades later editions "
+            "F39 dense Southeast (C45): LA and AR upgrades. Older editions only add upgrades later editions "
             "dropped (closed-out upgrades leave the report) and each edition's changed in-service date as history.",
             "SPP state tags are filtered by an owner rule (see pipeline/southeast/misospp.py SPP_CORE/SPP_OUTSIDE)."]))
     return {"projects": projects, "sources": sources, "dispositions": miso_disp + spp_disp}

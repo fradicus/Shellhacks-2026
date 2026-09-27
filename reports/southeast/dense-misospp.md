@@ -1,4 +1,4 @@
-# Dense Southeast: MISO South and SPP planning workbooks (C40)
+# Dense Southeast: MISO South and SPP planning workbooks (C45)
 
 Batch `misospp`: 197 projects (131 MISO, 66 SPP) in LA, AR, MS and KY. 86 located, all unreviewed OSM name
 candidates (84 `candidate`, 2 `candidate_unique_name`, 0 official), at 48 distinct points. 0 verified.
