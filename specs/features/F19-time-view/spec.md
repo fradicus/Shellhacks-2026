@@ -197,3 +197,9 @@ Decision: [F19 quiet overview](../../decisions/F19-quiet-overview.md). Amends it
 - `node --import ./tests/web/operations-providers/loader.mjs --test web/components/time/timeScale.test.ts`
   (`yearPxAt` at 12 px, the `calmAt` ramp).
 - Screenshots on live data: overview at 1900×910 after the settle, Texas scope at 1440, phone at 390.
+
+## C55 candidate search
+
+Implement [C55](../../decisions/C55-candidate-search.md) through
+[F19 candidate search](../../decisions/F19-candidate-search.md): submitted search
+across all scoped candidates, persistent query URLs and filed endpoint identities.
