@@ -1,1 +1,3469 @@
-[]
+[
+  {
+    "_id": "brief:14398d7098a8a4636eca47d9d3feb9eeb23be0ab343752a972e6ba566698aedb",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "21006"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2029-06-01",
+          "precision": "day",
+          "raw": "6/1/2029"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 20.77853849572314
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1461
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "20.78"
+      }
+    ],
+    "generated_at": "2026-09-26T18:14:15.626045Z",
+    "input_hash": "b6dbb5395417a6d0d71930e165ea2343a4d27421c6c75d6f06b14483b523ca7b",
+    "limitations": [
+      "Missing county and precise geographic location data limits spatial verification.",
+      "Actual construction schedules are unavailable as only in-service milestone dates are provided."
+    ],
+    "match_id": "DESC:6808 S__GPC:21006",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Coordination of equipment sharing could be explored across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint procurement for materials may be evaluated by both utilities."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Work crews could be scheduled sequentially across the regional projects."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Shared freight/mobilization staging may offer operational alignment."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Landowner outreach efforts potential alignment may facilitate regional community communication."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "What are the specific substation endpoints and transmission alignments for both projects?",
+      "Which contractor teams will be selected to support the line rebuilds?",
+      "How do the transmission providers intend to align regional outage scheduling requirements?",
+      "Will environmental permitting processes require joint stakeholder consultations?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation between the projects is 20.78 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the project milestones is 1461 days."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "a.in_service",
+          "a.status"
+        ],
+        "text": "Project Okatie-Bluffton Rebuild has an in-service date of 2025-06-01 and status In Progress."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "a.utility",
+          "a.native_id"
+        ],
+        "text": "Project Okatie-Bluffton Rebuild is associated with utility DESC and native ID 6808 S."
+      },
+      {
+        "fact_ids": [
+          "b.name",
+          "b.in_service",
+          "b.utility",
+          "b.owner_code",
+          "b.native_id"
+        ],
+        "text": "Project Boulevard to Magnolia has an in-service date of 2029-06-01, utility GPC, owner code SAV, and native ID 21006."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date",
+          "match.view"
+        ],
+        "text": "The historical analysis date is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:3f4fa7603fb589bbd70627dbd52cee1abd482d34a19125ca426d73e448381c85",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "20407"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2028-06-01",
+          "precision": "day",
+          "raw": "6/1/2028"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 20.019949067388993
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1096
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "20.02"
+      }
+    ],
+    "generated_at": "2026-09-26T18:13:09.974536Z",
+    "input_hash": "885ca2f4a5364e2d2c576cbb16aa3bc7c3fe5782748f626f0ff89dfaf3b7054d",
+    "limitations": [
+      "Precise county and geographic location data are missing from the input records.",
+      "Detailed construction schedules, work sequence phases, and duration evidence are not provided beyond in-service milestones."
+    ],
+    "match_id": "DESC:6808 S__GPC:20407",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could coordinate procurement of transmission line materials."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project planners may align crews for transmission line work."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Both entities could explore potential shared freight/mobilization staging areas."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "It is possible that teams share matting across project locations."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The organizations could align an outage window with regional grid operators."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Staff may coordinate landowner outreach efforts in adjacent service territories."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Are the project milestones expected to shift as engineering work progresses?",
+      "Could the utilities align contractor availability across both regional projects?",
+      "Would shared staging locations support equipment mobilization across both service areas?",
+      "Are there regional transmission constraints affecting planned outage scheduling?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "a.native_id",
+          "a.in_service"
+        ],
+        "text": "The project by DESC has native ID 6808 S and has an in-service date of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.native_id",
+          "b.owner_code",
+          "b.in_service"
+        ],
+        "text": "The project by GPC has native ID 20407, owner code SAV, and has an in-service date of 2028-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation distance between the projects is 20.02 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the project in-service dates is 1096 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The historical analysis date recorded for the match is 2026-09-26."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "a.status"
+        ],
+        "text": "The DESC project status is In Progress."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:3f6f9c557cb27c919a202d00842ca3225013eccb93f0f2bcffa28d212017176c",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "20407"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2028-06-01",
+          "precision": "day",
+          "raw": "6/1/2028"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 23.459961970931154
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 732
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "23.46"
+      }
+    ],
+    "generated_at": "2026-09-26T18:12:51.468944Z",
+    "input_hash": "801553872fb56f32001c7acc0caf347a616f5fd0fd8f53826657aaf5b09b6669",
+    "limitations": [
+      "Exact county and geographic location details are missing from the provided facts.",
+      "Detailed construction schedules are not provided, as only in-service milestone dates are available."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:20407",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could coordinate procurement of transmission line materials across projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project teams may align equipment sharing between locations."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Coordination of crews is a potential option if schedules align."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is possible coordination for freight/mobilization across regional operations."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Are there opportunities to sequence contractor crews between DESC and GPC projects?",
+      "Can specialized equipment be shared across both project locations?",
+      "Would coordinated landowner outreach improve regional stakeholder alignment?",
+      "How might transmission outage window requirements be aligned with system operators?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation between the projects is 23.46 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The milestone gap between the projects is 732 days."
+      },
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.in_service"
+        ],
+        "text": "The project with native ID 06367 D - G has an in-service milestone date of 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.in_service"
+        ],
+        "text": "The project with native ID 20407 has an in-service milestone date of 2028-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.owner_code"
+        ],
+        "text": "The project with native ID 20407 has owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.description"
+        ],
+        "text": "The project with native ID 06367 D - G involves a 230 kV line."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:416536bfba5d2cb285ab8383680a3574fe4c563d2fbb39677f83b49c85e1e360",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "20067"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 22.08147501523513
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 364
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "22.08"
+      }
+    ],
+    "generated_at": "2026-09-26T18:11:28.017324Z",
+    "input_hash": "310082a0b184d3e55a32d6115cd62a43e2709cb84046775ff195e61a3f8f2b0a",
+    "limitations": [
+      "Detailed geographic coordinates and specific county locations are missing from the project data.",
+      "Actual construction schedules, duration phases, and work windows are not provided in the records.",
+      "Evidence regarding contractor assignments, equipment availability, and material staging is absent."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:20067",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities may coordinate procurement of conductor materials and structural components across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project planners could coordinate equipment sharing for heavy machinery between DESC and GPC."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to align freight/mobilization efforts to transport construction resources to the region."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The entities could coordinate outage window scheduling with regional transmission operators."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "What are the specific construction start and completion schedules for each transmission project?",
+      "Are regional contractors and crews available to support both projects during their implementation phases?",
+      "Can DESC and GPC establish a joint communication protocol to coordinate outage window scheduling?",
+      "Will access roads or staging areas be shared between the utility teams?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.name",
+          "a.native_id",
+          "a.status",
+          "a.utility"
+        ],
+        "text": "The Jasper – Okatie 230 kV project is identified by native ID 06367 D - G and has status In Progress with utility DESC."
+      },
+      {
+        "fact_ids": [
+          "a.in_service"
+        ],
+        "text": "The in-service date for the Jasper – Okatie project is 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.owner_code",
+          "b.native_id"
+        ],
+        "text": "The project from utility GPC has owner code SAV and native ID 20067."
+      },
+      {
+        "fact_ids": [
+          "b.in_service"
+        ],
+        "text": "The in-service date for the GPC project is 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation distance between both projects is 22.08 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the project milestones is 364 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The analysis date recorded for the evaluation is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:4adada9f0d38564af41588986bed4e26007d53419cfc062599fcd11a7d81b8b7",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "20066"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2026-06-01",
+          "precision": "day",
+          "raw": "6/1/2026"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 21.251000271345333
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "21.25"
+      }
+    ],
+    "generated_at": "2026-09-26T18:11:08.742422Z",
+    "input_hash": "04b436ffc65259596e1d788e5e8e8733b2db9abdea4b94188f787065f05cbcf6",
+    "limitations": [
+      "Missing specific county and geographic location data limits precise corridor coordination.",
+      "Lack of detailed construction schedule milestones restricts sequencing analysis beyond stated in-service milestones."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:20066",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project planners could coordinate equipment sharing across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Teams may align procurement packages for required materials."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to share crews during scheduled work."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint freight/mobilization could be evaluated to transport materials."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Planners may coordinate the outage window requirements with grid operators."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can DESC and GPC align outage scheduling to minimize grid disruption?",
+      "Are there opportunities to share heavy transport resources in the region?",
+      "Could both utilities establish a joint liaison for landowner outreach?",
+      "Will material delivery schedules support coordinated contractor availability?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "a.native_id",
+          "a.status"
+        ],
+        "text": "The DESC project has native ID 06367 D - G and status In Progress."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.owner_code",
+          "b.native_id"
+        ],
+        "text": "The GPC project has owner code SAV and native ID 20066."
+      },
+      {
+        "fact_ids": [
+          "a.name"
+        ],
+        "text": "The DESC project involves 230 kV facilities."
+      },
+      {
+        "fact_ids": [
+          "a.in_service"
+        ],
+        "text": "The in-service milestone for the DESC project is 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "b.in_service"
+        ],
+        "text": "The in-service milestone for the GPC project is 2026-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation between both projects is 21.25 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between milestones is 1 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The analysis date is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:7808158b6f9633b7446fbd82e3115e464010d6c6c6f4c19721d852d3e29ff2bf",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "20277"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2026-06-01",
+          "precision": "day",
+          "raw": "6/1/2026"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 20.458659378285944
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 365
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "20.46"
+      }
+    ],
+    "generated_at": "2026-09-26T18:11:59.448353Z",
+    "input_hash": "5a0541be1c63a14a03c45b34ac5e62a97565b33a45534fea4b40dbde2c3f6bbe",
+    "limitations": [
+      "Missing location and county evidence limits the precision of geographic coordination.",
+      "Missing construction schedule evidence prevents establishing actual project timelines beyond in-service milestones."
+    ],
+    "match_id": "DESC:6808 S__GPC:20277",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could coordinate shared equipment between the projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint planning for an outage window may be explored to align transmission work."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to coordinate contractor crews across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Shared freight/mobilization could be evaluated to sequence deliveries."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint landowner outreach is a possible opportunity for regional alignment."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "What are the specific physical locations and line routing for both projects?",
+      "Can the utilities coordinate work sequences between the project teams?",
+      "What are the detailed transmission outage requirements for each facility?",
+      "Will environmental permitting or seasonal restrictions impact either project timeline?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.in_service"
+        ],
+        "text": "The DESC project has native ID 6808 S and an in-service date of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.in_service"
+        ],
+        "text": "The GPC project has native ID 20277 and an in-service date of 2026-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation between both projects is 20.46 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the in-service dates is 365 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The analysis date recorded for the match is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:84801b517f8e58d19aea5dd3361b248581a5ea164e09956665a407ff3639b2fe",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "20785"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2027-06-01",
+          "precision": "day",
+          "raw": "6/1/2027"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 18.13180698019737
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 730
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "18.13"
+      }
+    ],
+    "generated_at": "2026-09-26T18:12:25.196067Z",
+    "input_hash": "9643fd2011a99701e4cc7f1cb77073b29de1e21d5d11293ee2f77e9eeac76a23",
+    "limitations": [
+      "Missing precise location coordinates and county level routing details for both projects.",
+      "Lack of actual construction schedule details beyond the targeted in-service milestones."
+    ],
+    "match_id": "DESC:6808 S__GPC:20785",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could coordinate joint procurement for structural materials."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project planners may align crews for line rebuild work across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to coordinate heavy equipment staging between DESC and GPC."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The teams could explore shared freight/mobilization efforts to align logistics."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can outage window scheduling be coordinated between DESC and GPC to prevent grid disruption?",
+      "Are contractor crews able to transition from the DESC rebuild project to the GPC rebuild project?",
+      "Can landowner outreach processes be aligned where right-of-way communications intersect?",
+      "Is there shared equipment that can be transferred between the project sites?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.in_service"
+        ],
+        "text": "The project with native ID 6808 S has an in-service milestone of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.in_service",
+          "b.owner_code"
+        ],
+        "text": "The project with native ID 20785 has an in-service milestone of 2027-06-01 and owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The projects have an indicated separation distance of 18.13 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the project milestones is 730 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The analysis date is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:8d3bcb1ec072323e6545eb87fff68d753d33508dbfd3474f1c964aa5eadbc261",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "20785"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 183,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2027-06-01",
+          "precision": "day",
+          "raw": "6/1/2027"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 14.742211031498835
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 366
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "14.74"
+      }
+    ],
+    "generated_at": "2026-09-26T18:12:11.238463Z",
+    "input_hash": "6f3b8f07b0a2e02f29de0653266bfc8d1aa1021a5a349f20e7432ee959cb4b98",
+    "limitations": [
+      "Specific county names and precise geographic coordinates are not provided in the source records.",
+      "Detailed construction schedules, actual work sequences, and completion durations are missing from the supplied facts."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:20785",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could coordinate procurement of transmission line materials."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project teams may align equipment delivery and shared mobilization logistics."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to coordinate crews between regional transmission efforts."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The planners could coordinate outage window scheduling with regional system operators."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Are the project engineering plans finalized for both transmission lines?",
+      "Can DESC and GPC establish a joint communication protocol for field management?",
+      "Will environmental and outage timing requirements align across utilities?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.utility",
+          "a.status"
+        ],
+        "text": "The project with native ID 06367 D - G is managed by DESC and has status In Progress."
+      },
+      {
+        "fact_ids": [
+          "a.in_service"
+        ],
+        "text": "The DESC project has an in-service milestone date of 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "a.description"
+        ],
+        "text": "The project includes a 230 kV line."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.utility",
+          "b.owner_code"
+        ],
+        "text": "The project with native ID 20785 is managed by GPC with owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "b.in_service"
+        ],
+        "text": "The GPC project has an in-service milestone date of 2027-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The projects have an estimated separation of 14.74 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The in-service dates have a gap of 366 days."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:93d0b2bf473f77a9ad939095462115228fc63c4fb7de9a0e340d2ca61d9c0ea1",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "21023"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2029-06-01",
+          "precision": "day",
+          "raw": "6/1/2029"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 22.525058991019478
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1097
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "22.53"
+      }
+    ],
+    "generated_at": "2026-09-26T18:13:45.697805Z",
+    "input_hash": "4fca3e829694d4af74cba328814a9a3fc66a3a5ecf38b58217b2ab230d3f24e3",
+    "limitations": [
+      "Specific county locations and detailed geospatial coordinates are omitted from the provided records.",
+      "Actual construction schedules, work progress milestones, and mobilization timelines are not documented.",
+      "The available data reflects in-service milestones rather than comprehensive schedule evidence."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:21023",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Both utilities could align procurement activities for conductors and substation components."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Planners may coordinate the deployment of shared equipment across both project locations."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to coordinate contractor crews between DESC and GPC."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities may coordinate outage window planning to minimize regional transmission impacts."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can outage window requirements be coordinated across both utilities to maintain grid stability?",
+      "Are joint procurement opportunities available for standard transmission hardware?",
+      "Could shared equipment staging areas be established between DESC and GPC?",
+      "Can landowner outreach strategies be harmonized for communities in the project vicinity?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.name",
+          "a.native_id",
+          "a.utility",
+          "a.status"
+        ],
+        "text": "Project Jasper – Okatie 230 kV: Construct has native ID 06367 D - G and is managed by DESC with status In Progress."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.owner_code",
+          "b.utility"
+        ],
+        "text": "The project with native ID 21023 and owner code SAV is managed by utility GPC."
+      },
+      {
+        "fact_ids": [
+          "a.in_service",
+          "a.utility"
+        ],
+        "text": "The in-service milestone for the DESC project is 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "b.in_service",
+          "b.utility"
+        ],
+        "text": "The in-service milestone for the GPC project is 2029-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation between both projects is 22.53 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the project milestones is 1097 days."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:96c5ade47f4f4e3a1fe693a82a53935bffc128f6e83d268c0ee687230010ae07",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "20067"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 178,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 18.15042002569446
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 0
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "18.15"
+      }
+    ],
+    "generated_at": "2026-09-26T18:10:51.743616Z",
+    "input_hash": "c4a23b109e6054130cbdf9bb1da2b9cecd9e43c0e89f438657773c9183500f50",
+    "limitations": [
+      "Specific county and precise location data are missing from the provided facts.",
+      "Detailed construction schedules and milestone sequencing evidence are not available in the records."
+    ],
+    "match_id": "DESC:6808 S__GPC:20067",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "Given the spatial separation of 18.15 miles, sharing equipment between utilities could be possible."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities may coordinate procurement of materials across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Both utilities could align outage window planning to minimize grid impacts."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Coordination of crews across both projects is a potential option."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint freight/mobilization planning could be explored for transport to project locations."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can outage window requirements be aligned between the respective transmission operators?",
+      "Are contractor crews available to service both project locations in sequence?",
+      "Could joint procurement of transmission hardware provide supply chain advantages?",
+      "What coordination protocols exist between DESC and GPC for transmission work?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.utility"
+        ],
+        "text": "Project A has native ID 6808 S and is associated with utility DESC."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.utility"
+        ],
+        "text": "Project B has native ID 20067 and is associated with utility GPC."
+      },
+      {
+        "fact_ids": [
+          "b.owner_code"
+        ],
+        "text": "Project B has owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "a.status"
+        ],
+        "text": "Project A has status In Progress."
+      },
+      {
+        "fact_ids": [
+          "a.in_service"
+        ],
+        "text": "Project A has an in-service date of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.in_service"
+        ],
+        "text": "Project B has an in-service date of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The spatial separation between both projects is 18.15 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the in-service dates is 0 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The analysis date for the comparison is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:d39807a42f6bf42ecd5931acb3fd47f4a490a623c4c30ed4b52a46477f26d747",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "21006"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 186,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2029-06-01",
+          "precision": "day",
+          "raw": "6/1/2029"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 22.719890536816873
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1097
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "22.72"
+      }
+    ],
+    "generated_at": "2026-09-26T18:14:02.895885Z",
+    "input_hash": "9856cccc46a7a5dede39e41c5cc4a4bb309b39f36a2042acccb1882279728869",
+    "limitations": [
+      "Specific county and GIS location coordinates are missing from the provided facts.",
+      "Detailed construction schedules and milestone sequencing are not provided."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:21006",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Coordination of equipment and crews could be explored between DESC and GPC."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint procurement of materials and matting may offer opportunities for coordination."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Shared freight/mobilization and landowner outreach could be considered where feasible."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "What are the specific staging areas planned for each project?",
+      "Can an outage window be coordinated between DESC and GPC to accommodate transmission tie-ins?",
+      "Are there shared right-of-way sections that would benefit from aligned landowner outreach?",
+      "Will procurement lead times affect the delivery schedules of transmission components?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.name",
+          "a.native_id",
+          "a.utility"
+        ],
+        "text": "The Jasper – Okatie 230 kV project has native ID 06367 D - G and is sponsored by DESC."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "a.in_service",
+          "a.status"
+        ],
+        "text": "The Jasper – Okatie 230 kV project has an in-service date of 2026-05-31 and status In Progress."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.owner_code",
+          "b.native_id"
+        ],
+        "text": "The project sponsored by GPC has owner code SAV and native ID 21006."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.in_service"
+        ],
+        "text": "The project sponsored by GPC has an in-service date of 2029-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation between both projects is 22.72 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the in-service dates is 1097 days."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:e6f22b8266eae9f940336f4fd5cd8ff93e5645a088918215b45cb76a32e89b21",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "20066"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2026-06-01",
+          "precision": "day",
+          "raw": "6/1/2026"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 18.935738955762826
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 365
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "18.94"
+      }
+    ],
+    "generated_at": "2026-09-26T18:11:46.186495Z",
+    "input_hash": "0e8d4accce90e33a9c3e33414d6b5efcc58760f30b2a2ae25c68d8fa74c8d906",
+    "limitations": [
+      "Specific county and detailed location data are missing from the project records.",
+      "Actual construction start dates and complete schedule evidence are unavailable.",
+      "Detailed equipment specifications and contractor assignments are not provided."
+    ],
+    "match_id": "DESC:6808 S__GPC:20066",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could align procurement for transmission line structures and materials across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project planners may coordinate equipment sharing for reconductoring and rebuilding activities."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "There is potential to coordinate crews to optimize staging across the regional projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The transmission operators could coordinate each outage window to maintain local system reliability."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Both utilities may explore freight/mobilization logistics to transfer heavy machinery between sites."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can DESC and GPC align outage window schedules to avoid regional transmission constraints?",
+      "Are specialized crews available to sequence work between the rebuild and reconductor projects?",
+      "Could shared freight/mobilization arrangements improve access to heavy equipment for both utilities?",
+      "How will landowner outreach be managed across jurisdictions in South Carolina and Georgia?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.in_service",
+          "a.utility"
+        ],
+        "text": "The project managed by DESC has an in-service date of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.in_service",
+          "b.utility"
+        ],
+        "text": "The project managed by GPC has an in-service date of 2026-06-01."
+      },
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.utility"
+        ],
+        "text": "The project managed by DESC has native ID 6808 S."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.utility"
+        ],
+        "text": "The project managed by GPC has native ID 20066."
+      },
+      {
+        "fact_ids": [
+          "b.owner_code",
+          "b.utility"
+        ],
+        "text": "The project managed by GPC has owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation distance between the projects is 18.94 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the project milestones is 365 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The analysis date is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:f06a41f8c17a4a71482ceaf44e4583ed80d320fd65ab703e256795c337b22df4",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "20783"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2028-06-01",
+          "precision": "day",
+          "raw": "6/1/2028"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 19.52051821592881
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 732
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "19.52"
+      }
+    ],
+    "generated_at": "2026-09-26T18:12:37.414691Z",
+    "input_hash": "42c3fd42dc750187e18e0e5536c4f11cd1f9212a33ddd42372c4a30a8caec8cb",
+    "limitations": [
+      "Specific county locations and detailed geographic coordinates are missing from the project descriptions.",
+      "Detailed construction schedules are not provided beyond the stated in-service milestones.",
+      "No evidence is available regarding whether actual construction phases will align."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:20783",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Project teams could evaluate shared procurement for transmission hardware."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint coordination of equipment may be considered across both utilities."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Coordination of crews is a potential option if project sequencing aligns."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Shared freight/mobilization could provide logistical coordination for both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "It is possible that matting resources are coordinated between both project teams."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "What are the anticipated construction start dates for each project?",
+      "Are there shared outage window constraints affecting regional transmission lines?",
+      "Can environmental permitting and landowner outreach efforts be aligned across jurisdictions?",
+      "Will staging yards be established to support shared equipment storage?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.utility",
+          "a.native_id",
+          "a.status"
+        ],
+        "text": "The project from utility DESC has native ID 06367 D - G and status In Progress."
+      },
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.in_service"
+        ],
+        "text": "The in-service milestone date for project native ID 06367 D - G is 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.native_id",
+          "b.owner_code"
+        ],
+        "text": "The project from utility GPC has native ID 20783 and owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.in_service"
+        ],
+        "text": "The in-service milestone date for project native ID 20783 is 2028-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation distance between both projects is 19.52 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time interval between the project milestones is 732 days."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:f737471f7fca4f59c28b32bdfa70a8d47d203ac91c863bad89dca0bb22a3ee4f",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Okatie-Bluffton 115kV: Rebuild"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "6808 S"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2025-06-01",
+          "precision": "day",
+          "raw": "6/1/2025"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 8,
+          "source_id": "desc-2025"
+        },
+        "value": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "20783"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 184,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2028-06-01",
+          "precision": "day",
+          "raw": "6/1/2028"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 22.233910530148076
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1096
+      },
+      {
+        "id": "match.band",
+        "value": 1
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "22.23"
+      }
+    ],
+    "generated_at": "2026-09-26T18:13:23.292931Z",
+    "input_hash": "f01c3565ed25e72aea4838bb838a895be263d2b4a5ddd71f194641df599713eb",
+    "limitations": [
+      "Specific county locations and detailed geographic coordinates are omitted from the project records.",
+      "Actual construction schedules are unavailable because the provided dates represent in-service milestones rather than work windows."
+    ],
+    "match_id": "DESC:6808 S__GPC:20783",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.description",
+          "b.name"
+        ],
+        "text": "Utilities could coordinate procurement for structural materials across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Project planners may evaluate shared equipment mobilization for line rebuild activities."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Joint planning for an outage window could be explored to align transmission work."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Contractors could share matting resources along regional access routes."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "b.name"
+        ],
+        "text": "Coordination of specialized line crews may be possible if schedules align."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can outage window timing be harmonized between both operating companies?",
+      "Are shared freight/mobilization staging yards viable for regional line rebuild work?",
+      "Could joint contractor crews be utilized across both transmission projects?",
+      "Will procurement specifications for steel structures be standardized between the utilities?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.native_id",
+          "a.in_service"
+        ],
+        "text": "The DESC project has native ID 6808 S and has an in-service date of 2025-06-01."
+      },
+      {
+        "fact_ids": [
+          "b.native_id",
+          "b.owner_code",
+          "b.in_service"
+        ],
+        "text": "The GPC project has native ID 20783, owner code SAV, and has an in-service date of 2028-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The separation distance between both projects is 22.23 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The time gap between the scheduled dates is 1096 days."
+      },
+      {
+        "fact_ids": [
+          "a.status"
+        ],
+        "text": "The DESC project status is In Progress."
+      }
+    ],
+    "validation": "passed"
+  },
+  {
+    "_id": "brief:fa08569532f407c9b45b23870a4afbaf3c84616d145a8ef1775b5db028efd9c4",
+    "facts": [
+      {
+        "id": "a.name",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Jasper – Okatie 230 kV #2: Construct"
+      },
+      {
+        "id": "a.native_id",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "06367 D - G"
+      },
+      {
+        "id": "a.utility",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "DESC"
+      },
+      {
+        "id": "a.owner_code",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": null
+      },
+      {
+        "id": "a.in_service",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": {
+          "date": "2026-05-31",
+          "precision": "day",
+          "raw": "5/31/2026"
+        }
+      },
+      {
+        "id": "a.status",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "In Progress"
+      },
+      {
+        "id": "a.description",
+        "source": {
+          "page": 18,
+          "source_id": "desc-2025"
+        },
+        "value": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut."
+      },
+      {
+        "id": "b.name",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS"
+      },
+      {
+        "id": "b.native_id",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "20277"
+      },
+      {
+        "id": "b.utility",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "GPC"
+      },
+      {
+        "id": "b.owner_code",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": "SAV"
+      },
+      {
+        "id": "b.in_service",
+        "source": {
+          "page": 180,
+          "source_id": "gpc-2025"
+        },
+        "value": {
+          "date": "2026-06-01",
+          "precision": "day",
+          "raw": "6/1/2026"
+        }
+      },
+      {
+        "id": "match.distance_mi",
+        "value": 3.0328942921605173
+      },
+      {
+        "id": "match.time_gap_days",
+        "value": 1
+      },
+      {
+        "id": "match.band",
+        "value": 0
+      },
+      {
+        "id": "match.view",
+        "value": "historical"
+      },
+      {
+        "id": "match.analysis_date",
+        "value": "2026-09-26"
+      },
+      {
+        "id": "match.distance_display_mi",
+        "value": "3.03"
+      }
+    ],
+    "generated_at": "2026-09-26T18:10:32.266708Z",
+    "input_hash": "87ee51ff8f709c10cfa1ff390076fb6f041b4d96e296e6a8dbe1090bbae0b2db",
+    "limitations": [
+      "Specific county and detailed geographic location data are missing from the provided facts.",
+      "Detailed project construction schedule milestones and phasing information are not provided beyond the in-service dates.",
+      "Environmental permitting constraints and ground condition details such as matting requirements are unavailable."
+    ],
+    "match_id": "DESC:06367 D - G__GPC:20277",
+    "model": "gemini-3.8-flash",
+    "possible_shared_activities": [
+      {
+        "fact_ids": [
+          "a.name",
+          "b.utility"
+        ],
+        "text": "Project teams could coordinate procurement of substation materials and conductor lines across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Shared freight/mobilization may be arranged to transport heavy transmission components between project sites."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "The utilities could align outage window scheduling to minimize regional grid disruptions during connection work."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Coordination of specialized crews and equipment is potential across both projects."
+      },
+      {
+        "fact_ids": [
+          "a.utility",
+          "b.utility"
+        ],
+        "text": "Joint landowner outreach may be conducted for communities located near the project areas."
+      }
+    ],
+    "prompt_version": "coordination-brief-v2",
+    "questions": [
+      "Can outage window timing be harmonized between DESC and GPC to prevent transmission operational conflicts?",
+      "Are specialized installation crews and equipment available to sequence between both projects?",
+      "Could joint freight/mobilization logistics be established to simplify heavy component deliveries?",
+      "Will joint landowner outreach efforts be beneficial for adjacent property owners affected by both projects?"
+    ],
+    "rejection_reason": null,
+    "schema_version": "coordination-response-v1",
+    "supported_facts": [
+      {
+        "fact_ids": [
+          "a.name",
+          "a.native_id",
+          "a.utility",
+          "a.status"
+        ],
+        "text": "Project Jasper – Okatie 230 kV has native ID 06367 D - G and is managed by utility DESC with status In Progress."
+      },
+      {
+        "fact_ids": [
+          "a.name",
+          "a.in_service"
+        ],
+        "text": "Project Jasper – Okatie 230 kV has an in-service date of 2026-05-31."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.native_id",
+          "b.owner_code"
+        ],
+        "text": "The GPC project has native ID 20277 and owner code SAV."
+      },
+      {
+        "fact_ids": [
+          "b.utility",
+          "b.in_service"
+        ],
+        "text": "The GPC project has an in-service date of 2026-06-01."
+      },
+      {
+        "fact_ids": [
+          "match.distance_display_mi"
+        ],
+        "text": "The projects have a separation distance of 3.03 miles."
+      },
+      {
+        "fact_ids": [
+          "match.time_gap_days"
+        ],
+        "text": "The projects have an in-service time gap of 1 days."
+      },
+      {
+        "fact_ids": [
+          "match.analysis_date"
+        ],
+        "text": "The match analysis date is 2026-09-26."
+      }
+    ],
+    "validation": "passed"
+  }
+]
