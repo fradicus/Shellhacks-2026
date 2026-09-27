@@ -1,0 +1,112 @@
+{
+ "file": "GBT_2026_APR",
+ "rows": [
+  {
+   "native_id": "swip-north",
+   "name": "Southwest Intertie Project – North",
+   "page": 2,
+   "quote": "SWIP-North consists of a 500 kV AC transmission circuit, traversing approximately 285 miles from Idaho Power Company’s Midpoint 500 kV substation (near Twin Falls, Idaho) to the Robinson Summit 500 kV substation (near Ely, Nevada) operated by NV Energy.",
+   "owner": "Great Basin Transmission",
+   "states": [
+    "ID",
+    "NV"
+   ],
+   "state_basis": "text",
+   "kind": "line",
+   "facilities": [
+    "Midpoint",
+    "Robinson Summit"
+   ],
+   "voltages_kv": [
+    500
+   ],
+   "in_service_raw": "Q2 2028",
+   "status_raw": "Planned start of construction by Q1 2026",
+   "work_type": "transmission",
+   "published_as": "westtec-10yr-planned:swip-north"
+  },
+  {
+   "native_id": "robinson-summit-500-kv-shunt-capacitors",
+   "name": "Three (3) +150 MVAR switchable shunt capacitors",
+   "page": 2,
+   "quote": "Three (3) +150 MVAR switchable shunt capacitors (on a 525 kV base) located at the Robinson Summit 500 kV bus.",
+   "owner": "Great Basin Transmission",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Robinson Summit"
+   ],
+   "voltages_kv": [
+    500
+   ],
+   "in_service_raw": "Q2 2028",
+   "status_raw": "Planned start of construction by Q1 2026",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "robinson-summit-345-kv-shunt-capacitor",
+   "name": "One (1) +150 MVAR shunt capacitor",
+   "page": 2,
+   "quote": "One (1) +150 MVAR shunt capacitor (on a 345 kV base) added to the Robinson Summit 345 kV bus.",
+   "owner": "Great Basin Transmission",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Robinson Summit"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "Q2 2028",
+   "status_raw": "Planned start of construction by Q1 2026",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "robinson-summit-phase-shifting-transformers",
+   "name": "Two (2) 345/345 kV phase-shifting transformers",
+   "page": 2,
+   "quote": "Two (2) 345/345 kV phase-shifting transformers (each with a normal rating of 600 MVA) at Robinson Summit: one connected towards Falcon, and the other towards Gonder.",
+   "owner": "Great Basin Transmission",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Robinson Summit"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "Q2 2028",
+   "status_raw": "Planned start of construction by Q1 2026",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "swip-south",
+   "name": "Southwest Intertie Project – South",
+   "page": 3,
+   "quote": "SWIP-South is an upgraded/series-compensated version of the existing Robinson Summit-Harry Allen 500 kV line (also known as “ON Line”). The existing (uncompensated) line was energized in 2014 and traverses 231 miles between the Robinson Summit 500 kV substation (near Ely, Nevada) and Harry Allen 500 kV substation (near Las Vegas, NV).",
+   "owner": "Great Basin Transmission",
+   "states": [
+    "NV"
+   ],
+   "state_basis": "text",
+   "kind": "line",
+   "facilities": [
+    "Robinson Summit",
+    "Harry Allen"
+   ],
+   "voltages_kv": [
+    500
+   ],
+   "in_service_raw": "Q2 2028",
+   "status_raw": "SWIP-South was granted Phase 3 status on July 31, 2023",
+   "work_type": "transmission",
+   "published_as": null
+  }
+ ]
+}

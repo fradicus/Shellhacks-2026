@@ -99,5 +99,55 @@
     ],
     "title": "Idaho Power Company 2026 WECC Annual Progress Report",
     "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-gbt",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/GBT%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/GBT%202026%20APR.pdf",
+    "notes": [
+      "F50 Interior West release (C50 part 2): transmission rows transcribed with a page and verbatim quote the build re-finds in the PDF; rows another rollout publishes are excluded.",
+      "Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; a row whose text names no state is placed only by a corroborated facility in the owner's territory."
+    ],
+    "planning_region": "WECC",
+    "project_count": 2,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Great Basin Transmission",
+    "retrieved_at": "2026-09-27T10:57:32Z",
+    "role": "project_plan",
+    "sha256": "637e1359cc5112a553860e463c2ee92da203bbe410c5d09f0ec76b371f522311",
+    "states": [
+      "32"
+    ],
+    "title": "Great Basin Transmission 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-bhc",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/BHC%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/BHC%202026%20APR.pdf",
+    "notes": [
+      "F50 Interior West release (C50 part 2): transmission rows transcribed with a page and verbatim quote the build re-finds in the PDF; rows another rollout publishes are excluded.",
+      "Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; a row whose text names no state is placed only by a corroborated facility in the owner's territory."
+    ],
+    "planning_region": "WECC",
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Black Hills Corporation",
+    "retrieved_at": "2026-09-27T10:57:34Z",
+    "role": "project_plan",
+    "sha256": "cea641161f64175f9d82efd4642c27dfaab401c996236585584588e7db033882",
+    "states": [
+      "56"
+    ],
+    "title": "Black Hills Corporation 2026 WECC Annual Progress Report",
+    "vintage": "2026"
   }
 ]

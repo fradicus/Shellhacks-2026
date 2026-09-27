@@ -26,10 +26,16 @@ REPORTS = {
     "apr_pacificorp_2026": ("PacifiCorp_2026_APR.pdf", BASE + "PacifiCorp%202026%20APR.pdf",
                             "wecc-apr-2026-pacificorp", "PacifiCorp"),
     "apr_ipc_2026": ("IPC_2026_APR.pdf", BASE + "IPC%202026%20APR.pdf", "wecc-apr-2026-ipc", "Idaho Power Company"),
+    "apr_gbt_2026": ("GBT_2026_APR.pdf", BASE + "GBT%202026%20APR.pdf", "wecc-apr-2026-gbt", "Great Basin Transmission"),
+    "apr_bhc_2026": ("BHC_2026_APR.pdf", BASE + "BHC%202026%20APR.pdf", "wecc-apr-2026-bhc", "Black Hills Corporation"),
 }
-TERRITORY = {"NV Energy": ["NV"], "PacifiCorp": ["WY", "UT", "ID"], "Idaho Power Company": ["ID"]}
+TERRITORY = {"NV Energy": ["NV"], "PacifiCorp": ["WY", "UT", "ID"], "Idaho Power Company": ["ID"],
+             "Great Basin Transmission": ["NV", "ID"], "Cheyenne Light Fuel & Power": ["WY"],
+             "Black Hills Energy": ["WY"]}
 OPERATOR_KEYS = {"NV Energy": ["NV ENERGY", "NEVADA POWER", "SIERRA PACIFIC"],
-                 "PacifiCorp": ["PACIFICORP", "ROCKY MOUNTAIN POWER"], "Idaho Power Company": ["IDAHO POWER"]}
+                 "PacifiCorp": ["PACIFICORP", "ROCKY MOUNTAIN POWER"], "Idaho Power Company": ["IDAHO POWER"],
+                 "Great Basin Transmission": ["GREAT BASIN"], "Cheyenne Light Fuel & Power": ["CHEYENNE LIGHT", "BLACK HILLS"],
+                 "Black Hills Energy": ["BLACK HILLS"]}
 # Other rollouts' projects a transcribed row may point to with published_as.
 PUBLISHED = ("data/pnw/projects.json", "data/southwest/projects.json")
 MONTHS = {m: i for i, m in enumerate(("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov",

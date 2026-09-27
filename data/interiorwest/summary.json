@@ -1,5 +1,7 @@
 {
   "by_source": {
+    "wecc-apr-2026-bhc": 1,
+    "wecc-apr-2026-gbt": 2,
     "wecc-apr-2026-ipc": 3,
     "wecc-apr-2026-nve": 11,
     "wecc-apr-2026-pacificorp": 10,
@@ -7,35 +9,38 @@
   },
   "by_state": {
     "16": 3,
-    "32": 11,
+    "32": 13,
     "49": 3,
-    "56": 32
+    "56": 33
   },
   "by_status": {
     "in_service": 24,
-    "planned": 24
+    "planned": 26,
+    "under_construction": 1
   },
   "by_tier": {
-    "candidate": 31,
+    "candidate": 33,
     "candidate_unique_name": 1
   },
-  "distinct_points": 26,
-  "located": 32,
+  "distinct_points": 28,
+  "located": 34,
   "located_by_state": {
     "16": 2,
-    "32": 9,
+    "32": 11,
     "49": 3,
     "56": 19
   },
   "located_by_status": {
     "in_service": 17,
-    "planned": 15
+    "planned": 16,
+    "under_construction": 1
   },
-  "projects": 48,
+  "projects": 51,
   "unlocated_reasons": {
     "no_facility": 12,
     "no_facility,operator_conflict": 1,
-    "no_named_endpoint": 3
+    "no_named_endpoint": 3,
+    "operator_conflict": 1
   },
   "verified": 0
 }

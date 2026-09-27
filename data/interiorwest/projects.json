@@ -1,5 +1,285 @@
 [
   {
+    "_id": "wecc-apr-2026-bhc:aeolus-to-cheyenne-230-kv",
+    "center": null,
+    "counties": [],
+    "description": "The Aeolus to Cheyenne 230 kV project consists of two (2) 135-mile 230 kV transmission lines sharing common right-of-way from PacifiCorp’s Aeolus substation to a new substation located southwest of Cheyenne, WY. The project is currently in Phase 1 of the WECC Path Rating Process.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": null,
+        "quote": "The Aeolus to Cheyenne 230 kV project consists of two (2) 135-mile 230 kV transmission lines sharing common right-of-way from PacifiCorp’s Aeolus substation to a new substation located southwest of Cheyenne, WY. The project is currently in Phase 1 of the WECC Path Rating Process.",
+        "status_raw": "currently in Phase 1 of the WECC Path Rating Process",
+        "transcription": "transcriptions/apr_bhc_2026.json#1"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "cea641161f64175f9d82efd4642c27dfaab401c996236585584588e7db033882"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Aeolus",
+          "norm": "AEOLUS",
+          "status": "operator_conflict"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Cheyenne",
+          "norm": "CHEYENNE",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "CHEYENNE LIGHT",
+        "BLACK HILLS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Aeolus to Cheyenne 230 kV",
+    "native_id": "aeolus-to-cheyenne-230-kv",
+    "other_owners": [],
+    "owner": "Cheyenne Light Fuel & Power",
+    "planning_region": "WECC",
+    "project_events": [],
+    "source_id": "wecc-apr-2026-bhc",
+    "states": [
+      "56"
+    ],
+    "status": "currently in Phase 1 of the WECC Path Rating Process",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-gbt:robinson-summit-500-kv-shunt-capacitors",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/374247112 (Robinson Summit Substation), corroborated by voltage.",
+      "lat": 39.357789,
+      "lon": -115.169006
+    },
+    "counties": [],
+    "description": "Three (3) +150 MVAR switchable shunt capacitors (on a 525 kV base) located at the Robinson Summit 500 kV bus.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "Q2 2028",
+        "quote": "Three (3) +150 MVAR switchable shunt capacitors (on a 525 kV base) located at the Robinson Summit 500 kV bus.",
+        "status_raw": "Planned start of construction by Q1 2026",
+        "transcription": "transcriptions/apr_gbt_2026.json#2"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "637e1359cc5112a553860e463c2ee92da203bbe410c5d09f0ec76b371f522311"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q2 2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/374247112",
+            "lat": 39.3577887,
+            "lon": -115.1690063,
+            "name": "Robinson Summit Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000"
+          },
+          "name": "Robinson Summit",
+          "norm": "ROBINSON SUMMIT",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "GREAT BASIN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Three (3) +150 MVAR switchable shunt capacitors",
+    "native_id": "robinson-summit-500-kv-shunt-capacitors",
+    "other_owners": [],
+    "owner": "Great Basin Transmission",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service Q2 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "637e1359cc5112a553860e463c2ee92da203bbe410c5d09f0ec76b371f522311",
+            "facts": "Three (3) +150 MVAR switchable shunt capacitors (on a 525 kV base) located at the Robinson Summit 500 kV bus.",
+            "locator": "GBT_2026_APR.pdf#page=2",
+            "publisher": "Great Basin Transmission",
+            "retrieved_at": "2026-09-27T10:57:32Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/GBT%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-gbt:robinson-summit-500-kv-shunt-capacitors:planned-in-service",
+        "native_project_link": "robinson-summit-500-kv-shunt-capacitors",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-gbt",
+    "states": [
+      "32"
+    ],
+    "status": "Planned start of construction by Q1 2026",
+    "status_group": "under_construction"
+  },
+  {
+    "_id": "wecc-apr-2026-gbt:swip-south",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/374247112 (Robinson Summit Substation), OSM way/71837876 (Harry Allen Substation), corroborated by voltage.",
+      "lat": 37.892595,
+      "lon": -115.037969
+    },
+    "counties": [],
+    "description": "SWIP-South is an upgraded/series-compensated version of the existing Robinson Summit-Harry Allen 500 kV line (also known as “ON Line”). The existing (uncompensated) line was energized in 2014 and traverses 231 miles between the Robinson Summit 500 kV substation (near Ely, Nevada) and Harry Allen 500 kV substation (near Las Vegas, NV).",
+    "evidence": {
+      "page": 3,
+      "raw": {
+        "in_service_raw": "Q2 2028",
+        "quote": "SWIP-South is an upgraded/series-compensated version of the existing Robinson Summit-Harry Allen 500 kV line (also known as “ON Line”). The existing (uncompensated) line was energized in 2014 and traverses 231 miles between the Robinson Summit 500 kV substation (near Ely, Nevada) and Harry Allen 500 kV substation (near Las Vegas, NV).",
+        "status_raw": "SWIP-South was granted Phase 3 status on July 31, 2023",
+        "transcription": "transcriptions/apr_gbt_2026.json#5"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "637e1359cc5112a553860e463c2ee92da203bbe410c5d09f0ec76b371f522311"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q2 2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/374247112",
+            "lat": 39.3577887,
+            "lon": -115.1690063,
+            "name": "Robinson Summit Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000"
+          },
+          "name": "Robinson Summit",
+          "norm": "ROBINSON SUMMIT",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/71837876",
+            "lat": 36.4274003,
+            "lon": -114.9069319,
+            "name": "Harry Allen Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000;345000;230000"
+          },
+          "name": "Harry Allen",
+          "norm": "HARRY ALLEN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "GREAT BASIN"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Southwest Intertie Project – South",
+    "native_id": "swip-south",
+    "other_owners": [],
+    "owner": "Great Basin Transmission",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service Q2 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "637e1359cc5112a553860e463c2ee92da203bbe410c5d09f0ec76b371f522311",
+            "facts": "SWIP-South is an upgraded/series-compensated version of the existing Robinson Summit-Harry Allen 500 kV line (also known as “ON Line”). The existing (uncompensated) line was energized in 2014 and traverses 231 miles between the Robinson Summit 500 kV substation (near Ely, Nevada) and Harry Allen 500 kV substation (near Las Vegas, NV).",
+            "locator": "GBT_2026_APR.pdf#page=3",
+            "publisher": "Great Basin Transmission",
+            "retrieved_at": "2026-09-27T10:57:32Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/GBT%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-gbt:swip-south:planned-in-service",
+        "native_project_link": "swip-south",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-gbt",
+    "states": [
+      "32"
+    ],
+    "status": "SWIP-South was granted Phase 3 status on July 31, 2023",
+    "status_group": "planned"
+  },
+  {
     "_id": "wecc-apr-2026-ipc:blacks-creek-substation",
     "center": null,
     "counties": [],

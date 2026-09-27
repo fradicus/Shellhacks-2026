@@ -3441,5 +3441,204 @@
     "name": "Pleasant Valley – Mayfield 230kV line",
     "reason": "same project as northerngrid-scope-2026-2027:mayfield-pleasant-valley-solar-230kv",
     "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "GBT_2026_APR.pdf#page=2",
+    "name": "Southwest Intertie Project – North",
+    "reason": "same project as westtec-10yr-planned:swip-north",
+    "source_id": "wecc-apr-2026-gbt"
+  },
+  {
+    "_id": "wecc-apr-2026-gbt:robinson-summit-500-kv-shunt-capacitors",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "GBT_2026_APR.pdf#page=2",
+    "name": "Three (3) +150 MVAR switchable shunt capacitors",
+    "source_id": "wecc-apr-2026-gbt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "GBT_2026_APR.pdf#page=2",
+    "name": "One (1) +150 MVAR shunt capacitor",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-gbt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "GBT_2026_APR.pdf#page=2",
+    "name": "Two (2) 345/345 kV phase-shifting transformers",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-gbt"
+  },
+  {
+    "_id": "wecc-apr-2026-gbt:swip-south",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "GBT_2026_APR.pdf#page=3",
+    "name": "Southwest Intertie Project – South",
+    "source_id": "wecc-apr-2026-gbt"
+  },
+  {
+    "_id": "wecc-apr-2026-bhc:aeolus-to-cheyenne-230-kv",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "BHC_2026_APR.pdf#page=2",
+    "name": "Aeolus to Cheyenne 230 kV",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=3",
+    "name": "Robinson 230 kV Substation",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=3",
+    "name": "CLPT-G17 200 MW Solar/Wind/BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=3",
+    "name": "CLPT-G20 365 MW Solar/BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=4",
+    "name": "CLPT-G21 400 MW Solar/BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=4",
+    "name": "CPGS – Sweetgrass 230 kV Conversion",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1582",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=4",
+    "name": "BHCT-G49 200 MW Solar",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=5",
+    "name": "CLPT-G16 300 MW Solar/Wind/BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=5",
+    "name": "CLPT-G18 300 MW Solar/BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Bluffs 230 kV substation",
+    "reason": "outside C50 states (NE)",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Windstar (PacifiCorp) – West Cheyenne 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1327",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "West Cheyenne – Sweetgrass 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1326",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Sweetgrass – Bluffs 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1324",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Two at the West Cheyenne Substation",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1325",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Two at the Sweetgrass Substation",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1323",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Allison Draw 115 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1315",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Orchard Valley 115 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1314",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Allison Draw – Campstool 115 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1320",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Allison Draw – Cheyenne Prairie Generation Station",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1321",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Bison – Orchard Valley 115 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1316",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Orchard Valley – King Ranch 115 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1317",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Bison – West Cheyenne 115 kV",
+    "reason": "same project as westconnect-tppl-2026-02-wy:1318",
+    "source_id": "wecc-apr-2026-bhc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "BHC_2026_APR.pdf#page=6",
+    "name": "Turkey Creek Solar Project",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-bhc"
   }
 ]
