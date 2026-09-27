@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { readFileSync } from "node:fs";
-import { parseOfflineCommand, validateAssistantAction } from "../../../web/lib/assistant/commands.ts";
+import { buildAssistantHref, parseOfflineCommand, validateAssistantAction } from "../../../web/lib/assistant/commands.ts";
 
 // Minimal reference fixtures test ambiguity and identity; these are not production project records.
 const context = {
@@ -19,12 +18,35 @@ const context = {
 };
 
 test("catalog-only planning regions cannot become actionable project filters", () => {
-  const projects = JSON.parse(readFileSync(new URL("../../../data/national/projects.json", import.meta.url), "utf8"));
-  const sources = JSON.parse(readFileSync(new URL("../../../data/national/sources.json", import.meta.url), "utf8"));
-  const actual = { ...context, planningRegions: [...new Set(projects.map((project) => project.planning_region).filter(Boolean))] };
-  assert.ok(sources.some((source) => source.planning_region === "pjm"));
+  const actual = { ...context, planningRegions: ["iso-ne"] };
   assert.equal(parseOfflineCommand("show planning region PJM", actual).ok, false);
   assert.equal(parseOfflineCommand("show planning region ISO-NE", actual).ok, true);
+});
+
+test("global commands build only approved routes and clear incompatible geography", () => {
+  assert.equal(buildAssistantHref({ type: "navigate", view: "overlaps" }), "/time");
+  assert.equal(buildAssistantHref({ type: "navigate", view: "history" }), "/history");
+  assert.equal(buildAssistantHref({ type: "navigate", view: "operations" }), "/operations");
+  assert.equal(buildAssistantHref({ type: "project.select", projectId: "test:visible" }), null);
+  const moved = new URL(buildAssistantHref({ type: "filters.patch", filters: { state: "12" } }, { region: "4", state: "06", county: "06059", status: "planned", page: 7 }), "https://app.invalid");
+  assert.equal(moved.pathname, "/assistant");
+  assert.equal(moved.searchParams.get("state"), "12");
+  assert.equal(moved.searchParams.get("region"), null);
+  assert.equal(moved.searchParams.get("county"), null);
+  assert.equal(moved.searchParams.get("status"), "planned");
+  assert.equal(moved.searchParams.get("page"), null);
+  assert.equal(buildAssistantHref({ type: "geography.focus", kind: "county", code: "12095" }, { state: "06", region: "4" }), "/assistant?state=12&county=12095");
+  const literal = new URL(buildAssistantHref({ type: "filters.patch", filters: { text: "a&state=06<script>" } }), "https://app.invalid");
+  assert.equal(literal.searchParams.get("text"), "a&state=06<script>");
+  assert.equal(literal.searchParams.get("state"), null);
+  assert.throws(() => buildAssistantHref({ type: "navigate", view: "//evil.example" }));
+});
+
+test("calendar filters reject nonexistent and reversed ranges before changing the app", () => {
+  assert.throws(() => validateAssistantAction({ type: "filters.patch", filters: { from: "2027-02-29" } }, context));
+  assert.throws(() => validateAssistantAction({ type: "filters.patch", filters: { from: "2028-03-01", to: "2028-02-29" } }, context));
+  assert.throws(() => buildAssistantHref({ type: "filters.patch", filters: { from: "2028-03-01" } }, { to: "2028-02-29" }));
+  assert.match(buildAssistantHref({ type: "filters.patch", filters: { from: "2028-02-29", view: "mindmap" } }), /from=2028-02-29&view=mindmap/);
 });
 
 test("supported commands retain string FIPS and source status semantics", () => {

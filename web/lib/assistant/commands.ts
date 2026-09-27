@@ -3,6 +3,10 @@ import { z } from "zod";
 // Provider outputs and offline commands must pass this same bounded action boundary.
 // This module never executes code, fetches URLs, or accepts a database expression.
 const Status = z.enum(["planned", "under_construction", "proposed", "in_service", "cancelled", "unknown"]);
+const CalendarDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine((value) => {
+  const date = new Date(`${value}T00:00:00Z`);
+  return Number.isFinite(date.valueOf()) && date.toISOString().slice(0, 10) === value;
+}, "Use a real calendar date.");
 const Filters = z.strictObject({
   region: z.string().regex(/^[1-4]$/).optional(),
   state: z.string().regex(/^\d{2}$/).optional(),
@@ -11,6 +15,9 @@ const Filters = z.strictObject({
   owner: z.string().trim().min(1).max(160).optional(),
   status: Status.optional(),
   text: z.string().trim().min(1).max(120).optional(),
+  from: CalendarDate.optional(),
+  to: CalendarDate.optional(),
+  view: z.enum(["map", "mindmap"]).optional(),
 });
 
 export const AssistantActionSchema = z.discriminatedUnion("type", [
@@ -18,7 +25,7 @@ export const AssistantActionSchema = z.discriminatedUnion("type", [
   z.strictObject({ type: z.literal("filters.reset") }),
   z.strictObject({ type: z.literal("project.select"), projectId: z.string().min(1).max(240) }),
   z.strictObject({ type: z.literal("geography.focus"), kind: z.enum(["state", "county", "region"]), code: z.string().min(1).max(5) }),
-  z.strictObject({ type: z.literal("navigate"), view: z.enum(["overlaps", "time", "coverage", "changes", "explore"]) }),
+  z.strictObject({ type: z.literal("navigate"), view: z.enum(["home", "overlaps", "time", "history", "coverage", "changes", "explore", "operations", "gemini", "impact"]) }),
 ]);
 
 export type AssistantAction = z.infer<typeof AssistantActionSchema>;
@@ -36,7 +43,8 @@ export type CommandResult =
   | { ok: false; kind: "clarification" | "unsupported" | "invalid"; message: string };
 
 export const APPROVED_VIEWS = {
-  overlaps: "/", time: "/time", coverage: "/coverage", changes: "/changes", explore: "/assistant",
+  home: "/", overlaps: "/time", time: "/time", history: "/history", coverage: "/coverage", changes: "/changes",
+  explore: "/explore", operations: "/operations", gemini: "/gemini", impact: "/impact",
 } as const;
 
 const fold = (text: string) => text.normalize("NFKC").trim().replace(/\s+/g, " ").toLocaleLowerCase("en-US");
@@ -58,6 +66,7 @@ export function validateAssistantAction(value: unknown, context: AssistantContex
   if (action.type === "filters.patch") {
     const filters = action.filters;
     if (!Object.keys(filters).length) throw new Error("No supported filter change was provided.");
+    if (filters.from && filters.to && filters.from > filters.to) throw new Error("The start date must not follow the end date.");
     const state = context.states.find((item) => item.state_fips === filters.state);
     const county = context.counties.find((item) => item.county_geoid === filters.county);
     if (filters.state && !state) throw new Error("Unknown state.");
@@ -72,6 +81,36 @@ export function validateAssistantAction(value: unknown, context: AssistantContex
     if (filters.owner && !context.owners.includes(filters.owner)) throw new Error("Unknown owner in this dataset.");
   }
   return action;
+}
+
+/** URL fallback outside the registered explorer; project IDs never become arbitrary URLs. */
+export function buildAssistantHref(value: AssistantAction, currentFilters: Partial<AssistantFilters> & { page?: number; limit?: number } = {}): string | null {
+  const action = AssistantActionSchema.parse(value);
+  if (action.type === "navigate") return APPROVED_VIEWS[action.view];
+  if (action.type === "project.select") return null;
+  if (action.type === "filters.reset") return "/assistant";
+  const { page: _page, limit: _limit, ...rest } = currentFilters;
+  void _page; void _limit;
+  const current = Filters.parse(rest);
+  const patch: AssistantFilters = action.type === "geography.focus"
+    ? action.kind === "region" ? { region: action.code } : action.kind === "state" ? { state: action.code } : { county: action.code }
+    : action.filters;
+  const next: AssistantFilters = { ...current };
+  // A newly supplied ancestor clears retained descendants. Without an explicit region,
+  // a new state/county must not inherit a previous, potentially incompatible region.
+  if (patch.region !== undefined) { delete next.state; delete next.county; }
+  if (patch.state !== undefined) { delete next.county; if (patch.region === undefined) delete next.region; }
+  if (patch.county !== undefined && patch.state === undefined) {
+    next.state = patch.county.slice(0, 2);
+    if (patch.region === undefined) delete next.region;
+  }
+  Object.assign(next, patch);
+  const parsed = Filters.parse(next);
+  if (parsed.from && parsed.to && parsed.from > parsed.to) throw new Error("The start date must not follow the end date.");
+  if (parsed.county && parsed.state && !parsed.county.startsWith(parsed.state)) throw new Error("County and state disagree.");
+  const params = new URLSearchParams();
+  for (const [key, value] of Object.entries(parsed)) if (value !== undefined) params.set(key === "planningRegion" ? "planningregion" : key, value);
+  return `/assistant${params.size ? `?${params}` : ""}`;
 }
 
 function result(action: AssistantAction, summary: string, context: AssistantContext): CommandResult {
@@ -124,7 +163,7 @@ export function parseOfflineCommand(input: string, context: AssistantContext): C
   if (/^(reset|clear filters|show all projects)$/.test(command)) {
     return result({ type: "filters.reset" }, "Reset all project filters.", context);
   }
-  const navigation = command.match(/^(?:go to|open) (overlaps|time|coverage|changes|explore)$/);
+  const navigation = command.match(/^(?:go to|open) (home|overlaps|time|history|coverage|changes|explore|operations|gemini|impact)$/);
   if (navigation) {
     const view = navigation[1] as keyof typeof APPROVED_VIEWS;
     return result({ type: "navigate", view }, `Open ${view}.`, context);
