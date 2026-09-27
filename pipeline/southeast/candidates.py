@@ -9,7 +9,7 @@ from common import REPO_ROOT, load_json, write_json
 OBSERVATIONS = Path("data/southeast/batches/florida-tlsa/observations.json")
 OUTPUT = Path("data/southeast/batches/florida-tlsa/project-candidates.json")
 SOURCE_ID = "southeast:fl-dep:conditions-index"
-# The linked individual project page resolves this index transcription discrepancy.
+# Same linked project, conflicting codes: retain the index ID pending documentary resolution.
 ALIASES = {"TA07-14": "TA06-14"}
 
 
@@ -24,7 +24,7 @@ def build(batch: dict) -> dict:
             continue
         facts = row["facts"]
         raw_id = facts["certification_raw"]
-        native_id = ALIASES.get(raw_id, raw_id)
+        native_id = raw_id
         project_id = "southeast:fl-dep:" + native_id.lower()
         linked_details = [key for key in details if any(
             url.rstrip("/").endswith("/" + key.removeprefix("detail:"))
@@ -34,7 +34,7 @@ def build(batch: dict) -> dict:
         detail = details[linked_details[0]] if linked_details else None
         if raw_id in ALIASES and detail is None:
             raise ValueError("index alias requires linked individual project evidence")
-        if detail and detail["facts"]["Certification #"].replace(" ", "") != native_id:
+        if detail and detail["facts"]["Certification #"].replace(" ", "") != ALIASES.get(raw_id, raw_id):
             raise ValueError("linked project certification conflicts with canonical identity")
         evidence = {"index": row, "index_artifact": artifacts["index"],
                     "normalization": "Licensee retained as licensee; equipment owner and current status unknown."}
@@ -42,10 +42,12 @@ def build(batch: dict) -> dict:
             used_details.add(detail["source_id"])
             evidence["detail"] = detail
             evidence["detail_artifact"] = artifacts[detail["source_id"]]
-        if raw_id != native_id:
+        if raw_id in ALIASES:
+            evidence["identity_aliases"] = [raw_id, ALIASES[raw_id]]
             evidence["identity_resolution"] = (
                 "Index TA07-14 links to the Bobwhite-Manatee individual page whose certification is TA06-14. "
-                "Retain both observations; use the individual page certification as the proposed native ID.")
+                "That page also links a TA07-14 certification document. Same project is supported; the code conflict "
+                "is unresolved. Retain index TA07-14 as provisional native ID with TA06-14 alias pending decision review.")
         projects.append({
             "_id": project_id, "source_id": SOURCE_ID, "native_id": native_id,
             "name": facts["name"], "owner": None, "other_owners": [], "planning_region": None,
@@ -71,7 +73,8 @@ def build(batch: dict) -> dict:
                               "artifact_sha256": source["sha256"], "locator": "General Information / Date Certified",
                               "source_date": source["publication_date"], "retrieved_at": source["retrieved_at"],
                               "access_review": source["access_review"],
-                              "facts": "Certification # " + native_id + "; Date Certified " + detail["facts"]["Date Certified"]}],
+                              "facts": "Certification # " + detail["facts"]["Certification #"]
+                              + "; Date Certified " + detail["facts"]["Date Certified"]}],
             }]})
     if used_details != set(details):
         raise ValueError("unreconciled individual project detail")
