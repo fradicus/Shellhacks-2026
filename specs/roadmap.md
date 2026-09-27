@@ -11,7 +11,7 @@ lanes:
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
   claude-local: [F00, F05, F11, F14, F16, F19, F21]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38]
 frozen_paths:
   - schemas/
   - scripts/
@@ -106,6 +106,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F34 | Environmental evidence, current conditions and truck route adapters | A | geo-engineer | 6 | F00 | never |
 | F35 | Actual job outcomes, evaluated duration and delay estimates | B | technical-lead | 6 | F00 | never |
 | F36 | Field operations planning desk | B | frontend-engineer | 6 | F33, F34, F35 | never |
+| F38 | Verified geographic project data: Florida to contiguous US (spec only; launch pending) | A | data-researcher | 7 | F00, F30 | never |
 
 ## Authorized follow-on: national discovery
 
@@ -148,6 +149,25 @@ F37 is reserved to codex-local for later implementation; it is not eligible for 
 user starts that work and the shared-scene/data integration contract is accepted. Existing F19/F21 and proposed
 C15/F33–F36 ownership remain intact. A merged specification does not satisfy F37's completion criteria or claim
 that historical contracts have been acquired. Original run gates remain historical for this bounded spec task.
+
+## Specified follow-on: verified geographic expansion
+
+[C22](decisions/C22-verified-geographic-data.md) and [F38](features/F38-verified-geographic-data/spec.md) capture the
+user's data-first request: verified project locations visibly filling the existing US map, beginning in Florida,
+then repairing/expanding Georgia, then the defined Southeast, then the 48 contiguous states plus DC. Alaska/Hawaii
+are stretch. Preserve current and documented historical work with distinct lifecycle/status evidence. A count of
+imported records or a list of regional sources does not satisfy location coverage.
+
+This authorizes specification delivery only. F38 is reserved to codex-local and is not eligible for autonomous pickup
+until the additive evidence/loader/API/map compatibility contract is accepted and the user explicitly launches the
+work. Its later run uses a newly recorded start/deadline, budget, source scope, independent reviewer and incremental
+PR checkpoints; the original run clock is historical. No overnight worker is started by this spec. Existing feature
+owners retain F06/F09/F13/F19/F30/F31/F37 paths, and root STOP/main-red rules remain binding.
+
+Data acquisition and independent identity/location verification are the main work. Minimal integration into existing
+maps is required so accepted points actually appear; redesign and new History interactions remain deferred. F37 still
+owns `/history`; F38's sourced observations/events may feed its accepted contract later. The F38 completion marker
+requires its source-bounded coverage and visible publication acceptance, not just an importer or a nationwide basemap.
 
 ## Original run critical path
 F00 → F01 + F02 (+F04) → F09 → F10 → F12, with F05 → F11 and F06 in parallel. If F09 is late at 4:30, geo

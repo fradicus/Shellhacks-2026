@@ -77,3 +77,13 @@ Planned in-service dates, awards, actual construction and completion remain dist
 requirements. This is accepted product direction; implementation and contract coverage remain pending.
 ## Sponsor transcript and board follow-on
 The user additionally requests a field-estimator workflow grounded in the sponsor's emphasis on data quality, small usable increments and actual construction outcomes. F33–F36 add verified reference data, annual environmental evidence, current weather/roadwork, truck-specific planning routes and independently evaluated job duration/delay estimates. These are distinct from the original transmission-overlap rule. AEF is AlphaEarth Foundations annual satellite embeddings, not a live routing or weather service. No source can certify a route or site as safe; unknown coverage remains unknown. An LLM may eventually explain grounded results but must not supply numerical duration labels or silently retrain itself from its own output. Only authorized actual outcomes may support predictions; lack of such records means no prediction.
+
+## Verified geographic expansion direction
+
+[C22](decisions/C22-verified-geographic-data.md) and [F38](features/F38-verified-geographic-data/spec.md) specify
+Florida-first acquisition and independent verification, followed by Georgia, a defined Southeast scope and the
+contiguous United States plus DC; Alaska/Hawaii are stretch. The intended outcome is more evidenced project locations
+visible on the existing US maps. Imported rows, asset inventories and state-only records do not count as verified
+project points. Report source-bounded coverage and unresolved gaps; do not claim every US project is discoverable.
+Historical observations/events remain distinct from current construction, and source-backed unknowns remain useful
+records. Implementation and an overnight launch require F38's recorded prerequisites; this is specification delivery.
