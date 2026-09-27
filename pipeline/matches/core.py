@@ -9,7 +9,6 @@ A project dict, as consumed here:
 
 from collections.abc import Iterable
 from datetime import date
-from itertools import combinations
 from math import asin, cos, radians, sin, sqrt
 from typing import Any
 
@@ -87,31 +86,61 @@ def view(pa: dict[str, Any], pb: dict[str, Any], analysis_date: date) -> str:
     return "tentative"
 
 
+# Great-circle distance is never shorter than the latitude arc between two points, so a pair whose latitudes alone are
+# 25 mi apart cannot overlap. The margin keeps float error from ever pruning a pair the exact predicate would keep.
+_LAT_WINDOW_RAD = OVERLAP_MI / EARTH_RADIUS_MI + 1e-9
+
+
+def candidate_pairs(projects: list[dict[str, Any]]) -> list[tuple[int, int]]:
+    """Index pairs (i < j, input order) that could overlap: both located, known and different utilities, latitudes within
+    25 mi. A superset of the overlapping pairs; `is_overlap` stays the only predicate."""
+    located = [
+        (radians(p["center"]["lat"]), i, p["utility"])
+        for i, p in enumerate(projects)
+        if p.get("center") and p["utility"] in KNOWN_UTILITIES
+    ]
+    located.sort()
+    out: list[tuple[int, int]] = []
+    lo = 0
+    for hi, (lat, i, utility) in enumerate(located):
+        while located[lo][0] < lat - _LAT_WINDOW_RAD:
+            lo += 1
+        for _, j, utility2 in located[lo:hi]:
+            if utility2 != utility:
+                out.append((min(i, j), max(i, j)))
+    out.sort()
+    return out
+
+
 def overlaps(projects: Iterable[dict[str, Any]], analysis_date: date | str) -> list[dict[str, Any]]:
-    """Every overlapping cross-utility pair as a match dict (unsorted; see priority_sort). Distances stay unrounded."""
+    """Every overlapping cross-utility pair as a match dict (unsorted; see priority_sort). Distances stay unrounded.
+    Pairs come out in the same order as a scan of every combination of the input."""
     if isinstance(analysis_date, str):
         analysis_date = date.fromisoformat(analysis_date)
+    items = list(projects)
     out = []
-    for p, q in combinations(projects, 2):
-        hit, d = is_overlap(p, q)
-        if not hit:
-            continue
-        pa, pb = sorted((p, q), key=lambda x: x["project_key"])
-        out.append(
-            {
-                "_id": match_id(pa["project_key"], pb["project_key"]),
-                "a": pa["project_key"],
-                "b": pb["project_key"],
-                "distance_mi": d,
-                "time_gap_days": time_gap_days(pa.get("in_service"), pb.get("in_service")),
-                "band": 0 if d < NEAR_BAND_MI else 1,
-                "rule_version": RULE_VERSION,
-                "rank_version": RANK_VERSION,
-                "analysis_date": analysis_date.isoformat(),
-                "view": view(pa, pb, analysis_date),
-            }
-        )
+    for i, j in candidate_pairs(items):
+        hit, d = is_overlap(items[i], items[j])
+        if hit:
+            out.append(match_record(items[i], items[j], d, analysis_date))
     return out
+
+
+def match_record(p: dict[str, Any], q: dict[str, Any], d: float, analysis_date: date) -> dict[str, Any]:
+    """The stored match for an overlapping pair at unrounded distance `d`."""
+    pa, pb = sorted((p, q), key=lambda x: x["project_key"])
+    return {
+        "_id": match_id(pa["project_key"], pb["project_key"]),
+        "a": pa["project_key"],
+        "b": pb["project_key"],
+        "distance_mi": d,
+        "time_gap_days": time_gap_days(pa.get("in_service"), pb.get("in_service")),
+        "band": 0 if d < NEAR_BAND_MI else 1,
+        "rule_version": RULE_VERSION,
+        "rank_version": RANK_VERSION,
+        "analysis_date": analysis_date.isoformat(),
+        "view": view(pa, pb, analysis_date),
+    }
 
 
 def priority_key(m: dict[str, Any]) -> tuple:

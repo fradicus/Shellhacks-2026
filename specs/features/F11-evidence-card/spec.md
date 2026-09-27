@@ -5,7 +5,7 @@ lane: B
 agent: frontend-engineer
 phase: 2
 depends_on: [F05, F06]
-owns: [web/app/pair/, web/components/pair/, web/app/api/export/]
+owns: [web/app/pair/, web/components/pair/, web/app/api/export/, tests/web/export/]
 cut: never
 ---
 

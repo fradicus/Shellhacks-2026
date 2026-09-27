@@ -37,6 +37,7 @@ frozen_paths:
   - web/components/ui/
   - AGENTS.md
   - CLAUDE.md
+  - tests/web/loader.mjs
 gates:
   - { at: "0:00", only: [F00, F18] }
   - { at: "5:00", no_new_phase: 2 }
@@ -354,3 +355,11 @@ through F50's progress-report reader (C33 tiers plus C38's operator guard).
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F51 | California municipal-utility project coverage from WECC progress reports | A | data-researcher | 7 | F00, F30, F50 | never |
+
+## Audit hardening (M4–M12)
+
+The user asked for the audit's M4–M12 findings to be implemented in full. [C52](decisions/C52-audit-hardening.md)
+records the contracts, assigns the new unowned paths (legacy contract to F06, the shared scene hooks to F19, health
+tests and `.env.example` to F08, the acceptance suite to F07) and freezes the Node test loader.
+[C53](decisions/C53-provider-routing-and-upload.md) records the map/routing provider policy and the contract-upload
+acceptance boundary. No feature is added and existing assignments remain.

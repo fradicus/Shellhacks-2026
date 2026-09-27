@@ -5,7 +5,7 @@ lane: B
 agent: technical-lead
 phase: 1
 depends_on: [F00]
-owns: [pipeline/load/, tests/pipeline/test_f06_, web/app/api/projects/, web/app/api/matches/, web/app/api/pairs/, web/app/api/versions/, web/app/api/coverage/, web/app/api/extraction/, web/app/api/sources/, web/app/api/briefs/, web/app/api/runs/, web/lib/server/]
+owns: [pipeline/load/, tests/pipeline/test_f06_, web/app/api/projects/, web/app/api/matches/, web/app/api/pairs/, web/app/api/versions/, web/app/api/coverage/, web/app/api/extraction/, web/app/api/sources/, web/app/api/briefs/, web/app/api/runs/, web/lib/server/, web/lib/legacy/, tests/web/legacy/]
 cut: never
 ---
 

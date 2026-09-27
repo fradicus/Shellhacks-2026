@@ -5,7 +5,7 @@ lane: B
 agent: frontend-engineer
 phase: 3
 depends_on: [F05, F06]
-owns: [web/app/time/, web/components/time/]
+owns: [web/app/time/, web/components/time/, web/components/scene/, tests/web/time/]
 cut: allowed
 ---
 
