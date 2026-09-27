@@ -11,7 +11,7 @@ lanes:
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
   claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
   - scripts/
@@ -310,3 +310,14 @@ tracking workbook that list only OK, NM or TX, none of which any rollout publish
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F47 | SPP South project coverage (OK, NM, non-ERCOT TX) with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: provisional national nearby pairs
+
+[C48](decisions/C48-national-candidate-pairs.md) assigns F48 to this Codex session,
+followed by sequential F30 publication and F19 scoped-list integration. The user
+explicitly selected simple straight-line 25-mile provisional candidates for now.
+F47 remains SPP South; draft C46 national driving eligibility is separate.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F48 | Precomputed provisional national nearby pairs | B | technical-lead | 7 | F30, F31, F19 | never |
