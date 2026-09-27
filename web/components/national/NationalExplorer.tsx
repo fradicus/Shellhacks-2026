@@ -289,7 +289,9 @@ export function NationalExplorer({
           aria-selected={activeView === "map"}
           aria-controls="explore-panel-map"
           className={activeView === "map" ? s.viewTabActive : s.viewTab}
-          onClick={() => patch({ view: "map" })}
+          onClick={() => {
+            if (activeView !== "map") patch({ view: "map" });
+          }}
         >
           Map &amp; list
         </button>
@@ -300,7 +302,9 @@ export function NationalExplorer({
           aria-selected={activeView === "mindmap"}
           aria-controls="explore-panel-mindmap"
           className={activeView === "mindmap" ? s.viewTabActive : s.viewTab}
-          onClick={() => patch({ view: "mindmap" })}
+          onClick={() => {
+            if (activeView !== "mindmap") patch({ view: "mindmap" });
+          }}
         >
           Mind map
         </button>
