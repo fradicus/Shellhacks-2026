@@ -3,6 +3,8 @@ import path from "node:path";
 import { cell, toCsv } from "../../web/app/api/export/csv";
 
 const styleUrl = "https://tiles.openfreemap.org/styles/positron";
+// Overlaps (/time) draws on the dark style; stub it the same way.
+const darkStyleUrl = "https://tiles.openfreemap.org/styles/dark";
 const test = base.extend({
   page: async ({ page }, use, testInfo) => {
     const errors: string[] = [];
@@ -10,13 +12,13 @@ const test = base.extend({
     page.on("console", (message) => {
       if (message.type() !== "error") return;
       // Only the deliberately failed style request is allowed in the fallback test.
-      if (testInfo.title.includes("failed basemap") && message.location().url === styleUrl &&
+      if (testInfo.title.includes("failed basemap") && [styleUrl, darkStyleUrl].includes(message.location().url) &&
           message.text().includes("503")) return;
       errors.push(message.text());
     });
     // Keep smoke tests offline: exercise real MapLibre with an empty background style
     // and the installed matching worker. Tile quality/live provider uptime is not asserted.
-    await page.route(styleUrl, (route) => route.fulfill({
+    for (const url of [styleUrl, darkStyleUrl]) await page.route(url, (route) => route.fulfill({
       json: { version: 8, sources: {}, layers: [{ id: "background", type: "background" }] },
     }));
     await page.route("https://cdn.jsdelivr.net/npm/maplibre-gl@*/dist/maplibre-gl-worker.mjs", (route) =>
@@ -28,6 +30,8 @@ const test = base.extend({
 });
 
 test("every navigation route returns 200 and renders without console errors", async ({ page }) => {
+  // Loads every nav route in turn; cold /time and /history builds alone can take most of the default 30s.
+  test.setTimeout(60_000);
   expect((await page.goto("/map"))?.status()).toBe(200);
   const nav = page.getByRole("navigation", { name: "Main" });
   const hrefs = await nav.getByRole("link").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
@@ -42,23 +46,29 @@ test("every navigation route returns 200 and renders without console errors", as
   }
 });
 
-test("six historical pairs rank correctly, select on map, and open evidence", async ({ page }) => {
-  await page.goto("/map");
-  await expect(page.getByText("Sample data (fixture mode)")).toBeVisible();
-  await expect(page.getByRole("button", { name: "Historical (6)", exact: true })).toHaveAttribute("aria-pressed", "true");
-  const list = page.getByRole("region", { name: "Ranked overlaps" });
-  const rows = list.getByRole("listitem");
+// /map was retired (C35) and redirects to /time; the sponsor pairs now live in its Legacy pairs list.
+test("six historical pairs rank correctly, select on the Overlaps map, and open evidence", async ({ page }) => {
+  await page.goto("/time");
+  await expect(page.getByText("Sample data · fixture mode")).toBeVisible();
+  const list = page.getByRole("navigation", { name: "Overlap pairs" });
+  await list.getByRole("button", { name: "Legacy pairs", exact: true }).click();
+  await expect(list.getByRole("button", { name: "Historical 6", exact: true })).toHaveAttribute("aria-pressed", "true");
+  const rows = list.locator("ol > li > button");
   await expect(rows).toHaveCount(6);
   const pairs = ["DESC:DESC_3__GPC:GPC_2", "DESC:DESC_3__GPC:GPC_3", "DESC:DESC_2__GPC:GPC_1",
     "DESC:DESC_1__GPC:GPC_1", "DESC:DESC_5__GPC:GPC_2", "DESC:DESC_5__GPC:GPC_3"];
   for (const [index, pair] of pairs.entries()) {
-    await expect(rows.nth(index).getByRole("link", { name: /Evidence/ })).toHaveAttribute("href", `/pair/${encodeURIComponent(pair)}`);
+    // Each row's title leads with its two project keys, in stored rank order.
+    await expect(rows.nth(index)).toHaveAttribute("title", new RegExp(`^${pair.replace("__", " · ")} · `));
   }
-  const select = rows.first().getByRole("button", { name: /Show on map/ });
-  await select.click();
-  await expect(select).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByText("5.65 mi center-to-center, not a route", { exact: true })).toBeVisible();
-  await rows.first().getByRole("link", { name: /Evidence/ }).click();
+  await rows.first().click();
+  await expect(rows.first()).toHaveAttribute("aria-pressed", "true");
+  const detail = page.getByRole("complementary", { name: "Selected pair" });
+  await expect(detail).toContainText("5.65");
+  await expect(detail).toContainText("miles apart, center to center");
+  const evidence = detail.getByRole("link", { name: /Open evidence/ });
+  await expect(evidence).toHaveAttribute("href", `/pair/${encodeURIComponent(pairs[0])}`);
+  await evidence.click();
   await expect(page).toHaveURL(new RegExp(`/pair/${encodeURIComponent(pairs[0])}$`));
   await expect(page.getByRole("main")).toBeVisible();
   await expect(page.getByRole("region", { name: "Coordination card" })).toBeVisible();
@@ -165,17 +175,20 @@ test("filing history cites both public pages and filters to an honest empty stat
 });
 
 test("failed basemap preserves overlaps, selection, and accessible project table", async ({ page }) => {
-  await page.route(styleUrl, (route) => route.fulfill({ status: 503, body: "Injected basemap failure" }));
-  await page.goto("/map");
+  await page.route(darkStyleUrl, (route) => route.fulfill({ status: 503, body: "Injected basemap failure" }));
+  await page.goto("/time");
   await expect(page.getByRole("status").filter({ hasText: "Basemap tiles failed to load" })).toBeVisible();
-  const rows = page.getByRole("region", { name: "Ranked overlaps" }).getByRole("listitem");
+  const list = page.getByRole("navigation", { name: "Overlap pairs" });
+  await list.getByRole("button", { name: "Legacy pairs", exact: true }).click();
+  const rows = list.locator("ol > li > button");
   await expect(rows).toHaveCount(6);
-  await rows.first().getByRole("button").click();
-  await expect(rows.first().getByRole("button")).toHaveAttribute("aria-pressed", "true");
-  await page.getByText("All projects (10), as a table", { exact: true }).click();
-  await expect(page.getByRole("table")).toBeVisible();
-  await expect(page.getByRole("table").locator("tbody tr")).toHaveCount(10);
-  await expect(page.getByRole("link", { name: "OpenStreetMap", exact: true })).toBeVisible();
+  await rows.first().click();
+  await expect(rows.first()).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("complementary", { name: "Selected pair" })).toContainText("5.65");
+  await page.getByRole("region", { name: "All projects" }).getByRole("button").click();
+  const drawer = page.getByRole("complementary", { name: "All projects" });
+  await expect(drawer).toBeVisible();
+  await expect(drawer.getByRole("listitem")).toHaveCount(10);
 });
 
 
@@ -194,7 +207,7 @@ test("landing controls work and the explorer returns to a working landing page",
   }
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
-  await page.getByRole("link", { name: "Explore the overlaps", exact: true }).click();
+  await page.getByRole("link", { name: "Explore overlaps", exact: true }).click();
   await expect(page).toHaveURL(/\/time$/);
   await page.getByRole("link", { name: "Home", exact: true }).click();
   if (await page.getByRole("button", { name: "01 The road", exact: true }).isVisible()) {
