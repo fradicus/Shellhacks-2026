@@ -1,0 +1,5292 @@
+[
+  {
+    "id": "hifld/109381",
+    "lat": 32.7769275,
+    "lon": -88.6592287,
+    "name": "DEKALB",
+    "norm": "DEKALB",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/109386",
+    "lat": 32.8265841,
+    "lon": -89.5396556,
+    "name": "SINGLETON",
+    "norm": "SINGLETON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/109390",
+    "lat": 32.7191654,
+    "lon": -89.5743469,
+    "name": "CARTHAGE (MS)",
+    "norm": "CARTHAGE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/109663",
+    "lat": 32.4120226,
+    "lon": -90.0982646,
+    "name": "CHARITY CHURCH",
+    "norm": "CHARITY CHURCH",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/109753",
+    "lat": 31.7618695,
+    "lon": -89.1010546,
+    "name": "TAP109753",
+    "norm": "TAP109753",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/109762",
+    "lat": 31.6783335,
+    "lon": -88.6953533,
+    "name": "WAYNESBORO",
+    "norm": "WAYNESBORO",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000"
+  },
+  {
+    "id": "hifld/109889",
+    "lat": 32.3118301,
+    "lon": -90.8620871,
+    "name": "EAST VICKSBURG",
+    "norm": "EAST VICKSBURG",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/109890",
+    "lat": 32.3121612,
+    "lon": -90.8089468,
+    "name": "BEACH GROVE",
+    "norm": "BEACH GROVE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/109976",
+    "lat": 32.333588,
+    "lon": -90.1758792,
+    "name": "FONDREN",
+    "norm": "FONDREN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/109977",
+    "lat": 31.9215836,
+    "lon": -90.394279,
+    "name": "GALLMAN",
+    "norm": "GALLMAN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110160",
+    "lat": 31.8684145,
+    "lon": -90.3816815,
+    "name": "HAZLEHURST",
+    "norm": "HAZLEHURST",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110209",
+    "lat": 31.1574356,
+    "lon": -88.5590669,
+    "name": "LEAKESVILLE GOAB",
+    "norm": "LEAKESVILLE GOAB",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/110253",
+    "lat": 31.0220784,
+    "lon": -88.5150202,
+    "name": "SOUTHEAST GREENE",
+    "norm": "SOUTHEAST GREENE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "hifld/110254",
+    "lat": 31.0048691,
+    "lon": -88.5192692,
+    "name": "SAWMILL ROAD",
+    "norm": "SAWMILL ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/110308",
+    "lat": 30.8759671,
+    "lon": -88.7948088,
+    "name": "BENNDALE 230",
+    "norm": "BENNDALE 230",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "hifld/110548",
+    "lat": 30.3047499,
+    "lon": -89.4048735,
+    "name": "WAVELAND",
+    "norm": "WAVELAND",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/110647",
+    "lat": 31.218193,
+    "lon": -90.4261302,
+    "name": "EAST MCCOMB",
+    "norm": "EAST MCCOMB",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110671",
+    "lat": 32.2764469,
+    "lon": -90.8234385,
+    "name": "SOUTHEAST VICKSBURG",
+    "norm": "SOUTHEAST VICKSBURG",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110721",
+    "lat": 33.7626664,
+    "lon": -90.7213896,
+    "name": "CLEVELAND",
+    "norm": "CLEVELAND",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110730",
+    "lat": 33.4585836,
+    "lon": -90.5076709,
+    "name": "MOORHEAD",
+    "norm": "MOORHEAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110760",
+    "lat": 34.0793848,
+    "lon": -89.9088646,
+    "name": "NORTH OAKLAND",
+    "norm": "NORTH OAKLAND",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/110828",
+    "lat": 31.3496836,
+    "lon": -90.2435048,
+    "name": "JAYESS",
+    "norm": "JAYESS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110843",
+    "lat": 31.6957588,
+    "lon": -91.0894394,
+    "name": "FAYETTE",
+    "norm": "FAYETTE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110927",
+    "lat": 34.239087,
+    "lon": -90.279844,
+    "name": "MARKS",
+    "norm": "MARKS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/110938",
+    "lat": 34.9343087,
+    "lon": -90.0457999,
+    "name": "CHURCH ROAD",
+    "norm": "CHURCH ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/110941",
+    "lat": 34.9937456,
+    "lon": -90.0395377,
+    "name": "SOUTHAVEN",
+    "norm": "SOUTHAVEN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "hifld/111287",
+    "lat": 34.9457461,
+    "lon": -89.4363136,
+    "name": "SLAYDEN",
+    "norm": "SLAYDEN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/141963",
+    "lat": 33.7283806,
+    "lon": -88.4530155,
+    "name": "TAP141963",
+    "norm": "TAP141963",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141964",
+    "lat": 33.7284772,
+    "lon": -88.4536861,
+    "name": "TAP141964",
+    "norm": "TAP141964",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141965",
+    "lat": 33.4841454,
+    "lon": -88.4382951,
+    "name": "TAP141965",
+    "norm": "TAP141965",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141966",
+    "lat": 33.9238707,
+    "lon": -89.3641775,
+    "name": "TAP141966",
+    "norm": "TAP141966",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/141967",
+    "lat": 30.7792446,
+    "lon": -88.6481432,
+    "name": "TAP141967",
+    "norm": "TAP141967",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/141968",
+    "lat": 30.7434307,
+    "lon": -88.8005243,
+    "name": "TAP141968",
+    "norm": "TAP141968",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141969",
+    "lat": 30.6387579,
+    "lon": -88.7450715,
+    "name": "TAP141969",
+    "norm": "TAP141969",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141970",
+    "lat": 30.4989512,
+    "lon": -88.9177783,
+    "name": "TAP141970",
+    "norm": "TAP141970",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141971",
+    "lat": 30.5837621,
+    "lon": -88.5519614,
+    "name": "TAP141971",
+    "norm": "TAP141971",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141972",
+    "lat": 30.5005626,
+    "lon": -88.5338095,
+    "name": "TAP141972",
+    "norm": "TAP141972",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141973",
+    "lat": 30.4566615,
+    "lon": -88.519908,
+    "name": "TAP141973",
+    "norm": "TAP141973",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141974",
+    "lat": 30.4397741,
+    "lon": -88.5175095,
+    "name": "TAP141974",
+    "norm": "TAP141974",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141975",
+    "lat": 30.4396314,
+    "lon": -88.4978169,
+    "name": "TAP141975",
+    "norm": "TAP141975",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141976",
+    "lat": 30.6425568,
+    "lon": -88.5593663,
+    "name": "TAP141976",
+    "norm": "TAP141976",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141977",
+    "lat": 30.4875608,
+    "lon": -88.497673,
+    "name": "TAP141977",
+    "norm": "TAP141977",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141978",
+    "lat": 30.435182,
+    "lon": -88.9390414,
+    "name": "TAP141978",
+    "norm": "TAP141978",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141979",
+    "lat": 30.438073,
+    "lon": -88.9325669,
+    "name": "TAP141979",
+    "norm": "TAP141979",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141980",
+    "lat": 30.4617972,
+    "lon": -88.8669859,
+    "name": "TAP141980",
+    "norm": "TAP141980",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141981",
+    "lat": 30.4429441,
+    "lon": -88.7886921,
+    "name": "TAP141981",
+    "norm": "TAP141981",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141982",
+    "lat": 30.4627222,
+    "lon": -88.8463922,
+    "name": "TAP141982",
+    "norm": "TAP141982",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141983",
+    "lat": 30.4171663,
+    "lon": -88.7686346,
+    "name": "TAP141983",
+    "norm": "TAP141983",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141984",
+    "lat": 30.4547932,
+    "lon": -88.892411,
+    "name": "TAP141984",
+    "norm": "TAP141984",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141985",
+    "lat": 30.499596,
+    "lon": -88.9162367,
+    "name": "TAP141985",
+    "norm": "TAP141985",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141986",
+    "lat": 30.4544487,
+    "lon": -88.9106025,
+    "name": "TAP141986",
+    "norm": "TAP141986",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/141987",
+    "lat": 33.4897543,
+    "lon": -88.4067176,
+    "name": "TAP141987",
+    "norm": "TAP141987",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142013",
+    "lat": 31.8865277,
+    "lon": -89.9788543,
+    "name": "TAP142013",
+    "norm": "TAP142013",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142014",
+    "lat": 31.8778305,
+    "lon": -90.3833969,
+    "name": "TAP142014",
+    "norm": "TAP142014",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142015",
+    "lat": 32.2474212,
+    "lon": -90.0568121,
+    "name": "TAP142015",
+    "norm": "TAP142015",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142016",
+    "lat": 31.8469383,
+    "lon": -91.0093017,
+    "name": "TAP142016",
+    "norm": "TAP142016",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142155",
+    "lat": 32.705539,
+    "lon": -90.3690785,
+    "name": "TAP142155",
+    "norm": "TAP142155",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142156",
+    "lat": 32.3336109,
+    "lon": -90.1668991,
+    "name": "TAP142156",
+    "norm": "TAP142156",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142157",
+    "lat": 32.3314956,
+    "lon": -90.1668571,
+    "name": "TAP142157",
+    "norm": "TAP142157",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142158",
+    "lat": 32.3706472,
+    "lon": -90.1930062,
+    "name": "TAP142158",
+    "norm": "TAP142158",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142159",
+    "lat": 33.4870331,
+    "lon": -90.3252394,
+    "name": "TAP142159",
+    "norm": "TAP142159",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142160",
+    "lat": 33.6894739,
+    "lon": -90.3214569,
+    "name": "TAP142160",
+    "norm": "TAP142160",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142162",
+    "lat": 32.3687094,
+    "lon": -90.735782,
+    "name": "TAP142162",
+    "norm": "TAP142162",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142163",
+    "lat": 32.4056291,
+    "lon": -90.6986098,
+    "name": "TAP142163",
+    "norm": "TAP142163",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142164",
+    "lat": 32.4764292,
+    "lon": -90.8109113,
+    "name": "TAP142164",
+    "norm": "TAP142164",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142165",
+    "lat": 32.5120365,
+    "lon": -90.7902396,
+    "name": "TAP142165",
+    "norm": "TAP142165",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142166",
+    "lat": 32.7043994,
+    "lon": -90.9249114,
+    "name": "TAP142166",
+    "norm": "TAP142166",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142167",
+    "lat": 33.1196133,
+    "lon": -90.6969577,
+    "name": "TAP142167",
+    "norm": "TAP142167",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142168",
+    "lat": 33.0573651,
+    "lon": -90.5966891,
+    "name": "TAP142168",
+    "norm": "TAP142168",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142169",
+    "lat": 33.2521184,
+    "lon": -90.5965787,
+    "name": "TAP142169",
+    "norm": "TAP142169",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142170",
+    "lat": 33.3288898,
+    "lon": -90.6179822,
+    "name": "TAP142170",
+    "norm": "TAP142170",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142171",
+    "lat": 33.2560679,
+    "lon": -90.9053704,
+    "name": "TAP142171",
+    "norm": "TAP142171",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142172",
+    "lat": 33.3400602,
+    "lon": -91.0052463,
+    "name": "TAP142172",
+    "norm": "TAP142172",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142173",
+    "lat": 33.4358917,
+    "lon": -90.7298183,
+    "name": "TAP142173",
+    "norm": "TAP142173",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142174",
+    "lat": 33.5877289,
+    "lon": -90.6353274,
+    "name": "TAP142174",
+    "norm": "TAP142174",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142175",
+    "lat": 33.807709,
+    "lon": -90.8415846,
+    "name": "TAP142175",
+    "norm": "TAP142175",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142176",
+    "lat": 33.7983605,
+    "lon": -90.7790916,
+    "name": "TAP142176",
+    "norm": "TAP142176",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142177",
+    "lat": 33.458441,
+    "lon": -90.5076429,
+    "name": "TAP142177",
+    "norm": "TAP142177",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142758",
+    "lat": 31.7648156,
+    "lon": -89.8750621,
+    "name": "TAP142758",
+    "norm": "TAP142758",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142759",
+    "lat": 31.6377376,
+    "lon": -89.7401826,
+    "name": "TAP142759",
+    "norm": "TAP142759",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142760",
+    "lat": 31.5894833,
+    "lon": -90.0672034,
+    "name": "TAP142760",
+    "norm": "TAP142760",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142761",
+    "lat": 31.4576267,
+    "lon": -89.9660913,
+    "name": "TAP142761",
+    "norm": "TAP142761",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142762",
+    "lat": 31.4961175,
+    "lon": -90.4282631,
+    "name": "TAP142762",
+    "norm": "TAP142762",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142763",
+    "lat": 31.4949183,
+    "lon": -90.416987,
+    "name": "TAP142763",
+    "norm": "TAP142763",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142764",
+    "lat": 31.6066145,
+    "lon": -90.4981848,
+    "name": "TAP142764",
+    "norm": "TAP142764",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142765",
+    "lat": 31.6020901,
+    "lon": -90.5824456,
+    "name": "TAP142765",
+    "norm": "TAP142765",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142766",
+    "lat": 31.6439074,
+    "lon": -90.5916339,
+    "name": "TAP142766",
+    "norm": "TAP142766",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142767",
+    "lat": 31.4451156,
+    "lon": -90.6676311,
+    "name": "TAP142767",
+    "norm": "TAP142767",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142768",
+    "lat": 31.5999683,
+    "lon": -91.3656711,
+    "name": "TAP142768",
+    "norm": "TAP142768",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142795",
+    "lat": 30.424267,
+    "lon": -89.2310487,
+    "name": "TAP142795",
+    "norm": "TAP142795",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142796",
+    "lat": 30.4030118,
+    "lon": -89.3661742,
+    "name": "TAP142796",
+    "norm": "TAP142796",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142797",
+    "lat": 30.3709258,
+    "lon": -89.4160145,
+    "name": "TAP142797",
+    "norm": "TAP142797",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142798",
+    "lat": 30.4169583,
+    "lon": -88.7686887,
+    "name": "TAP142798",
+    "norm": "TAP142798",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142799",
+    "lat": 30.411584,
+    "lon": -88.7637255,
+    "name": "TAP142799",
+    "norm": "TAP142799",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142800",
+    "lat": 30.4180583,
+    "lon": -88.6985354,
+    "name": "TAP142800",
+    "norm": "TAP142800",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142801",
+    "lat": 30.398023,
+    "lon": -88.6984444,
+    "name": "TAP142801",
+    "norm": "TAP142801",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142802",
+    "lat": 30.4181426,
+    "lon": -88.6740273,
+    "name": "TAP142802",
+    "norm": "TAP142802",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142803",
+    "lat": 30.3991743,
+    "lon": -88.6584293,
+    "name": "TAP142803",
+    "norm": "TAP142803",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142804",
+    "lat": 30.3847187,
+    "lon": -88.6155333,
+    "name": "TAP142804",
+    "norm": "TAP142804",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142805",
+    "lat": 30.4249089,
+    "lon": -88.6507335,
+    "name": "TAP142805",
+    "norm": "TAP142805",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142806",
+    "lat": 30.3898578,
+    "lon": -88.5136052,
+    "name": "TAP142806",
+    "norm": "TAP142806",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142807",
+    "lat": 30.3752979,
+    "lon": -88.5134128,
+    "name": "TAP142807",
+    "norm": "TAP142807",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142827",
+    "lat": 30.4503823,
+    "lon": -89.065959,
+    "name": "TAP142827",
+    "norm": "TAP142827",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142828",
+    "lat": 30.4786866,
+    "lon": -89.4719026,
+    "name": "TAP142828",
+    "norm": "TAP142828",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142829",
+    "lat": 30.4637069,
+    "lon": -89.4364877,
+    "name": "TAP142829",
+    "norm": "TAP142829",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142830",
+    "lat": 30.4718131,
+    "lon": -89.045915,
+    "name": "TAP142830",
+    "norm": "TAP142830",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142831",
+    "lat": 30.5911259,
+    "lon": -89.1551929,
+    "name": "TAP142831",
+    "norm": "TAP142831",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142832",
+    "lat": 30.5261725,
+    "lon": -89.1483185,
+    "name": "TAP142832",
+    "norm": "TAP142832",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/142833",
+    "lat": 30.5619709,
+    "lon": -88.7942146,
+    "name": "TAP142833",
+    "norm": "TAP142833",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142834",
+    "lat": 30.5350394,
+    "lon": -88.6860912,
+    "name": "TAP142834",
+    "norm": "TAP142834",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142867",
+    "lat": 33.8356383,
+    "lon": -89.8142179,
+    "name": "TAP142867",
+    "norm": "TAP142867",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/142868",
+    "lat": 33.3826992,
+    "lon": -90.0851245,
+    "name": "TAP142868",
+    "norm": "TAP142868",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142912",
+    "lat": 31.5087648,
+    "lon": -91.3038586,
+    "name": "TAP142912",
+    "norm": "TAP142912",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142945",
+    "lat": 31.0078823,
+    "lon": -90.7828147,
+    "name": "TAP142945",
+    "norm": "TAP142945",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/142946",
+    "lat": 31.283944,
+    "lon": -91.0929455,
+    "name": "TAP142946",
+    "norm": "TAP142946",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143051",
+    "lat": 30.4273952,
+    "lon": -89.1865496,
+    "name": "TAP143051",
+    "norm": "TAP143051",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143052",
+    "lat": 30.8146497,
+    "lon": -89.0516213,
+    "name": "TAP143052",
+    "norm": "TAP143052",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143053",
+    "lat": 30.8008827,
+    "lon": -89.2816848,
+    "name": "TAP143053",
+    "norm": "TAP143053",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143054",
+    "lat": 30.4771119,
+    "lon": -88.993083,
+    "name": "TAP143054",
+    "norm": "TAP143054",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143055",
+    "lat": 30.4856741,
+    "lon": -88.9562629,
+    "name": "TAP143055",
+    "norm": "TAP143055",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143056",
+    "lat": 33.0417019,
+    "lon": -90.5746813,
+    "name": "TAP143056",
+    "norm": "TAP143056",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143057",
+    "lat": 33.0251413,
+    "lon": -90.8660302,
+    "name": "TAP143057",
+    "norm": "TAP143057",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143067",
+    "lat": 31.2039625,
+    "lon": -89.3206536,
+    "name": "TAP143067",
+    "norm": "TAP143067",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143068",
+    "lat": 31.2692147,
+    "lon": -89.1536478,
+    "name": "TAP143068",
+    "norm": "TAP143068",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143069",
+    "lat": 31.3360325,
+    "lon": -89.2733642,
+    "name": "TAP143069",
+    "norm": "TAP143069",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143070",
+    "lat": 31.335871,
+    "lon": -89.273453,
+    "name": "TAP143070",
+    "norm": "TAP143070",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143071",
+    "lat": 31.2681047,
+    "lon": -88.9216691,
+    "name": "TAP143071",
+    "norm": "TAP143071",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143072",
+    "lat": 31.3607155,
+    "lon": -89.04842,
+    "name": "TAP143072",
+    "norm": "TAP143072",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143073",
+    "lat": 31.3675418,
+    "lon": -89.1647057,
+    "name": "TAP143073",
+    "norm": "TAP143073",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143074",
+    "lat": 31.3224126,
+    "lon": -88.8045121,
+    "name": "TAP143074",
+    "norm": "TAP143074",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143076",
+    "lat": 31.2442909,
+    "lon": -89.0393822,
+    "name": "TAP143076",
+    "norm": "TAP143076",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143078",
+    "lat": 31.3291726,
+    "lon": -89.4120706,
+    "name": "TAP143078",
+    "norm": "TAP143078",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143079",
+    "lat": 31.412006,
+    "lon": -89.5479891,
+    "name": "TAP143079",
+    "norm": "TAP143079",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143080",
+    "lat": 31.2362117,
+    "lon": -89.7515581,
+    "name": "TAP143080",
+    "norm": "TAP143080",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143081",
+    "lat": 31.2591242,
+    "lon": -89.5817113,
+    "name": "TAP143081",
+    "norm": "TAP143081",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143082",
+    "lat": 31.4104802,
+    "lon": -89.497213,
+    "name": "TAP143082",
+    "norm": "TAP143082",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143083",
+    "lat": 31.3388476,
+    "lon": -89.4010875,
+    "name": "TAP143083",
+    "norm": "TAP143083",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143084",
+    "lat": 31.3285063,
+    "lon": -89.3539926,
+    "name": "TAP143084",
+    "norm": "TAP143084",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143085",
+    "lat": 31.3043105,
+    "lon": -89.355768,
+    "name": "TAP143085",
+    "norm": "TAP143085",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143086",
+    "lat": 31.2758169,
+    "lon": -89.3539381,
+    "name": "TAP143086",
+    "norm": "TAP143086",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143087",
+    "lat": 31.3219928,
+    "lon": -89.4085256,
+    "name": "TAP143087",
+    "norm": "TAP143087",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143088",
+    "lat": 31.2252011,
+    "lon": -89.3673965,
+    "name": "TAP143088",
+    "norm": "TAP143088",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143089",
+    "lat": 31.2770197,
+    "lon": -89.4143981,
+    "name": "TAP143089",
+    "norm": "TAP143089",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143090",
+    "lat": 31.2127486,
+    "lon": -90.1151566,
+    "name": "TAP143090",
+    "norm": "TAP143090",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143091",
+    "lat": 31.2468239,
+    "lon": -90.303286,
+    "name": "TAP143091",
+    "norm": "TAP143091",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143092",
+    "lat": 31.3963873,
+    "lon": -90.4279161,
+    "name": "TAP143092",
+    "norm": "TAP143092",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143093",
+    "lat": 31.2184241,
+    "lon": -90.4269889,
+    "name": "TAP143093",
+    "norm": "TAP143093",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143094",
+    "lat": 31.3617259,
+    "lon": -90.6910793,
+    "name": "TAP143094",
+    "norm": "TAP143094",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143351",
+    "lat": 31.1373809,
+    "lon": -88.6160092,
+    "name": "TAP143351",
+    "norm": "TAP143351",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143352",
+    "lat": 31.1276279,
+    "lon": -89.8437971,
+    "name": "TAP143352",
+    "norm": "TAP143352",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143353",
+    "lat": 31.0791825,
+    "lon": -89.5973554,
+    "name": "TAP143353",
+    "norm": "TAP143353",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143354",
+    "lat": 31.1930162,
+    "lon": -89.375615,
+    "name": "TAP143354",
+    "norm": "TAP143354",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143355",
+    "lat": 31.138385,
+    "lon": -88.8120602,
+    "name": "TAP143355",
+    "norm": "TAP143355",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143356",
+    "lat": 31.17455,
+    "lon": -88.52546,
+    "name": "TAP143356",
+    "norm": "TAP143356",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143359",
+    "lat": 31.0370109,
+    "lon": -90.0398014,
+    "name": "TAP143359",
+    "norm": "TAP143359",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143360",
+    "lat": 31.0543329,
+    "lon": -90.4485894,
+    "name": "TAP143360",
+    "norm": "TAP143360",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143361",
+    "lat": 31.0549552,
+    "lon": -90.3456805,
+    "name": "TAP143361",
+    "norm": "TAP143361",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143368",
+    "lat": 30.9623194,
+    "lon": -89.4462393,
+    "name": "TAP143368",
+    "norm": "TAP143368",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143369",
+    "lat": 30.9385525,
+    "lon": -89.1843357,
+    "name": "TAP143369",
+    "norm": "TAP143369",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143370",
+    "lat": 30.9391205,
+    "lon": -89.2030283,
+    "name": "TAP143370",
+    "norm": "TAP143370",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143371",
+    "lat": 30.8426778,
+    "lon": -89.1796755,
+    "name": "TAP143371",
+    "norm": "TAP143371",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143372",
+    "lat": 31.0045073,
+    "lon": -88.5193295,
+    "name": "TAP143372",
+    "norm": "TAP143372",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143373",
+    "lat": 30.9591019,
+    "lon": -88.6131139,
+    "name": "TAP143373",
+    "norm": "TAP143373",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143374",
+    "lat": 30.8373246,
+    "lon": -89.1853585,
+    "name": "TAP143374",
+    "norm": "TAP143374",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143375",
+    "lat": 30.928734,
+    "lon": -88.6187109,
+    "name": "TAP143375",
+    "norm": "TAP143375",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143388",
+    "lat": 30.2211054,
+    "lon": -89.5522515,
+    "name": "TAP143388",
+    "norm": "TAP143388",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143389",
+    "lat": 30.2418356,
+    "lon": -89.542676,
+    "name": "TAP143389",
+    "norm": "TAP143389",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143390",
+    "lat": 30.3104471,
+    "lon": -89.5901824,
+    "name": "TAP143390",
+    "norm": "TAP143390",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143391",
+    "lat": 30.306616,
+    "lon": -89.3640363,
+    "name": "TAP143391",
+    "norm": "TAP143391",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143392",
+    "lat": 30.3658501,
+    "lon": -88.523541,
+    "name": "TAP143392",
+    "norm": "TAP143392",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143393",
+    "lat": 30.3658946,
+    "lon": -88.5101441,
+    "name": "TAP143393",
+    "norm": "TAP143393",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143394",
+    "lat": 30.3656888,
+    "lon": -88.5132832,
+    "name": "TAP143394",
+    "norm": "TAP143394",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143395",
+    "lat": 30.304325,
+    "lon": -89.405253,
+    "name": "TAP143395",
+    "norm": "TAP143395",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143396",
+    "lat": 30.3409403,
+    "lon": -88.4934068,
+    "name": "TAP143396",
+    "norm": "TAP143396",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143397",
+    "lat": 30.3410765,
+    "lon": -88.4934162,
+    "name": "TAP143397",
+    "norm": "TAP143397",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143399",
+    "lat": 31.4751125,
+    "lon": -89.4041602,
+    "name": "TAP143399",
+    "norm": "TAP143399",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143400",
+    "lat": 31.6434642,
+    "lon": -89.5109904,
+    "name": "TAP143400",
+    "norm": "TAP143400",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143401",
+    "lat": 31.5428826,
+    "lon": -89.3485493,
+    "name": "TAP143401",
+    "norm": "TAP143401",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143402",
+    "lat": 31.653568,
+    "lon": -89.5109717,
+    "name": "TAP143402",
+    "norm": "TAP143402",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143403",
+    "lat": 31.6813958,
+    "lon": -89.2522762,
+    "name": "TAP143403",
+    "norm": "TAP143403",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143404",
+    "lat": 31.6172877,
+    "lon": -89.271545,
+    "name": "TAP143404",
+    "norm": "TAP143404",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143405",
+    "lat": 31.6579334,
+    "lon": -88.6378328,
+    "name": "TAP143405",
+    "norm": "TAP143405",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143406",
+    "lat": 31.6323413,
+    "lon": -88.6609614,
+    "name": "TAP143406",
+    "norm": "TAP143406",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143407",
+    "lat": 31.5442453,
+    "lon": -88.5362366,
+    "name": "TAP143407",
+    "norm": "TAP143407",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143408",
+    "lat": 31.6247361,
+    "lon": -89.0529574,
+    "name": "TAP143408",
+    "norm": "TAP143408",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143409",
+    "lat": 31.5291995,
+    "lon": -89.3026469,
+    "name": "TAP143409",
+    "norm": "TAP143409",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/143410",
+    "lat": 31.4756188,
+    "lon": -89.3482915,
+    "name": "TAP143410",
+    "norm": "TAP143410",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143411",
+    "lat": 31.5263023,
+    "lon": -89.2980051,
+    "name": "TAP143411",
+    "norm": "TAP143411",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143428",
+    "lat": 30.7645069,
+    "lon": -89.6021876,
+    "name": "TAP143428",
+    "norm": "TAP143428",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143429",
+    "lat": 30.7664428,
+    "lon": -89.601079,
+    "name": "TAP143429",
+    "norm": "TAP143429",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143430",
+    "lat": 30.7935455,
+    "lon": -89.7432291,
+    "name": "TAP143430",
+    "norm": "TAP143430",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143431",
+    "lat": 30.6660143,
+    "lon": -89.6566949,
+    "name": "TAP143431",
+    "norm": "TAP143431",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143432",
+    "lat": 30.6231138,
+    "lon": -89.6618998,
+    "name": "TAP143432",
+    "norm": "TAP143432",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143433",
+    "lat": 30.5462198,
+    "lon": -89.5972378,
+    "name": "TAP143433",
+    "norm": "TAP143433",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/143434",
+    "lat": 30.5447125,
+    "lon": -89.5736132,
+    "name": "TAP143434",
+    "norm": "TAP143434",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/143435",
+    "lat": 30.5076953,
+    "lon": -89.6533056,
+    "name": "TAP143435",
+    "norm": "TAP143435",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143436",
+    "lat": 30.5901112,
+    "lon": -89.6769697,
+    "name": "TAP143436",
+    "norm": "TAP143436",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143455",
+    "lat": 31.8904168,
+    "lon": -88.9524874,
+    "name": "TAP143455",
+    "norm": "TAP143455",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143456",
+    "lat": 32.3953408,
+    "lon": -88.4653074,
+    "name": "TAP143456",
+    "norm": "TAP143456",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/143457",
+    "lat": 32.3685285,
+    "lon": -88.5718977,
+    "name": "TAP143457",
+    "norm": "TAP143457",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144743",
+    "lat": 32.9719735,
+    "lon": -88.8980931,
+    "name": "TAP144743",
+    "norm": "TAP144743",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144744",
+    "lat": 33.0988067,
+    "lon": -89.0137887,
+    "name": "TAP144744",
+    "norm": "TAP144744",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144745",
+    "lat": 32.9828563,
+    "lon": -88.5571219,
+    "name": "TAP144745",
+    "norm": "TAP144745",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144746",
+    "lat": 32.7898495,
+    "lon": -88.5933339,
+    "name": "TAP144746",
+    "norm": "TAP144746",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144747",
+    "lat": 32.7492069,
+    "lon": -88.8173076,
+    "name": "TAP144747",
+    "norm": "TAP144747",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144748",
+    "lat": 32.7397962,
+    "lon": -89.0232296,
+    "name": "TAP144748",
+    "norm": "TAP144748",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144749",
+    "lat": 31.9683665,
+    "lon": -89.2607467,
+    "name": "TAP144749",
+    "norm": "TAP144749",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144750",
+    "lat": 32.3610887,
+    "lon": -89.1287145,
+    "name": "TAP144750",
+    "norm": "TAP144750",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144751",
+    "lat": 32.1427035,
+    "lon": -89.0059716,
+    "name": "TAP144751",
+    "norm": "TAP144751",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144752",
+    "lat": 31.9679361,
+    "lon": -89.1066187,
+    "name": "TAP144752",
+    "norm": "TAP144752",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/144753",
+    "lat": 32.4589113,
+    "lon": -89.1252735,
+    "name": "TAP144753",
+    "norm": "TAP144753",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144757",
+    "lat": 32.3342226,
+    "lon": -89.1494801,
+    "name": "TAP144757",
+    "norm": "TAP144757",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144758",
+    "lat": 32.3485637,
+    "lon": -89.1535867,
+    "name": "TAP144758",
+    "norm": "TAP144758",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144759",
+    "lat": 32.3453599,
+    "lon": -89.2390276,
+    "name": "TAP144759",
+    "norm": "TAP144759",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144760",
+    "lat": 33.3561594,
+    "lon": -88.4795236,
+    "name": "TAP144760",
+    "norm": "TAP144760",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144761",
+    "lat": 33.4775492,
+    "lon": -88.7371394,
+    "name": "TAP144761",
+    "norm": "TAP144761",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144762",
+    "lat": 33.5822779,
+    "lon": -88.4499593,
+    "name": "TAP144762",
+    "norm": "TAP144762",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144763",
+    "lat": 33.644701,
+    "lon": -88.4940577,
+    "name": "TAP144763",
+    "norm": "TAP144763",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144764",
+    "lat": 33.4949989,
+    "lon": -88.4147607,
+    "name": "TAP144764",
+    "norm": "TAP144764",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144765",
+    "lat": 33.4934696,
+    "lon": -88.4142676,
+    "name": "TAP144765",
+    "norm": "TAP144765",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144766",
+    "lat": 33.4897504,
+    "lon": -88.4076945,
+    "name": "TAP144766",
+    "norm": "TAP144766",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144767",
+    "lat": 33.5112532,
+    "lon": -88.4154633,
+    "name": "TAP144767",
+    "norm": "TAP144767",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144768",
+    "lat": 33.5019932,
+    "lon": -88.3632211,
+    "name": "TAP144768",
+    "norm": "TAP144768",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144769",
+    "lat": 33.5196768,
+    "lon": -88.3540338,
+    "name": "TAP144769",
+    "norm": "TAP144769",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144770",
+    "lat": 33.644397,
+    "lon": -88.3159668,
+    "name": "TAP144770",
+    "norm": "TAP144770",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144771",
+    "lat": 33.7025199,
+    "lon": -88.3032168,
+    "name": "TAP144771",
+    "norm": "TAP144771",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144772",
+    "lat": 33.8829402,
+    "lon": -88.2694537,
+    "name": "TAP144772",
+    "norm": "TAP144772",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144773",
+    "lat": 33.4693619,
+    "lon": -88.3638679,
+    "name": "TAP144773",
+    "norm": "TAP144773",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144774",
+    "lat": 33.5285847,
+    "lon": -88.4285842,
+    "name": "TAP144774",
+    "norm": "TAP144774",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144775",
+    "lat": 33.705632,
+    "lon": -88.3171476,
+    "name": "TAP144775",
+    "norm": "TAP144775",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144776",
+    "lat": 34.284727,
+    "lon": -88.3963853,
+    "name": "TAP144776",
+    "norm": "TAP144776",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144777",
+    "lat": 33.7250144,
+    "lon": -88.4524992,
+    "name": "TAP144777",
+    "norm": "TAP144777",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144778",
+    "lat": 33.7272527,
+    "lon": -88.4601534,
+    "name": "TAP144778",
+    "norm": "TAP144778",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144779",
+    "lat": 33.7674377,
+    "lon": -88.5620533,
+    "name": "TAP144779",
+    "norm": "TAP144779",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144780",
+    "lat": 33.8632717,
+    "lon": -88.7225535,
+    "name": "TAP144780",
+    "norm": "TAP144780",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144781",
+    "lat": 33.4659481,
+    "lon": -88.9037993,
+    "name": "TAP144781",
+    "norm": "TAP144781",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144782",
+    "lat": 33.4504417,
+    "lon": -88.8014987,
+    "name": "TAP144782",
+    "norm": "TAP144782",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/144783",
+    "lat": 33.4780866,
+    "lon": -89.2010709,
+    "name": "TAP144783",
+    "norm": "TAP144783",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144784",
+    "lat": 33.5921057,
+    "lon": -88.9671753,
+    "name": "TAP144784",
+    "norm": "TAP144784",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144785",
+    "lat": 33.3370962,
+    "lon": -89.1832302,
+    "name": "TAP144785",
+    "norm": "TAP144785",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144786",
+    "lat": 32.985688,
+    "lon": -89.5574675,
+    "name": "TAP144786",
+    "norm": "TAP144786",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144787",
+    "lat": 32.3629025,
+    "lon": -88.6267831,
+    "name": "TAP144787",
+    "norm": "TAP144787",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144788",
+    "lat": 32.4160958,
+    "lon": -88.7234672,
+    "name": "TAP144788",
+    "norm": "TAP144788",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144789",
+    "lat": 33.2459118,
+    "lon": -88.5563798,
+    "name": "TAP144789",
+    "norm": "TAP144789",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144790",
+    "lat": 33.119562,
+    "lon": -88.5668168,
+    "name": "TAP144790",
+    "norm": "TAP144790",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144791",
+    "lat": 31.9522838,
+    "lon": -88.7260552,
+    "name": "TAP144791",
+    "norm": "TAP144791",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144792",
+    "lat": 31.949758,
+    "lon": -88.5880283,
+    "name": "TAP144792",
+    "norm": "TAP144792",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144793",
+    "lat": 32.0782889,
+    "lon": -89.7725314,
+    "name": "TAP144793",
+    "norm": "TAP144793",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144794",
+    "lat": 34.4792403,
+    "lon": -88.3098879,
+    "name": "TAP144794",
+    "norm": "TAP144794",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144795",
+    "lat": 33.8325018,
+    "lon": -88.4569521,
+    "name": "TAP144795",
+    "norm": "TAP144795",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144796",
+    "lat": 33.8167288,
+    "lon": -88.5373034,
+    "name": "TAP144796",
+    "norm": "TAP144796",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144797",
+    "lat": 34.0107093,
+    "lon": -88.737857,
+    "name": "TAP144797",
+    "norm": "TAP144797",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/144798",
+    "lat": 33.9047117,
+    "lon": -89.179186,
+    "name": "TAP144798",
+    "norm": "TAP144798",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144799",
+    "lat": 34.1207555,
+    "lon": -88.7083855,
+    "name": "TAP144799",
+    "norm": "TAP144799",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/144800",
+    "lat": 34.1553166,
+    "lon": -88.7258536,
+    "name": "TAP144800",
+    "norm": "TAP144800",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144801",
+    "lat": 34.2646039,
+    "lon": -88.7571324,
+    "name": "TAP144801",
+    "norm": "TAP144801",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144802",
+    "lat": 34.2640459,
+    "lon": -88.7301529,
+    "name": "TAP144802",
+    "norm": "TAP144802",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144803",
+    "lat": 34.2264867,
+    "lon": -88.7158672,
+    "name": "TAP144803",
+    "norm": "TAP144803",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144804",
+    "lat": 32.5560864,
+    "lon": -88.6059396,
+    "name": "TAP144804",
+    "norm": "TAP144804",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144805",
+    "lat": 32.6226506,
+    "lon": -88.6822285,
+    "name": "TAP144805",
+    "norm": "TAP144805",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/144806",
+    "lat": 32.4473001,
+    "lon": -88.7411914,
+    "name": "TAP144806",
+    "norm": "TAP144806",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144807",
+    "lat": 32.4502559,
+    "lon": -88.7409811,
+    "name": "TAP144807",
+    "norm": "TAP144807",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144808",
+    "lat": 32.4351106,
+    "lon": -88.730946,
+    "name": "TAP144808",
+    "norm": "TAP144808",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144809",
+    "lat": 32.4254037,
+    "lon": -88.7314132,
+    "name": "TAP144809",
+    "norm": "TAP144809",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144810",
+    "lat": 32.4145002,
+    "lon": -88.727223,
+    "name": "TAP144810",
+    "norm": "TAP144810",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144811",
+    "lat": 33.5160586,
+    "lon": -89.7474095,
+    "name": "TAP144811",
+    "norm": "TAP144811",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/144812",
+    "lat": 33.676799,
+    "lon": -89.764666,
+    "name": "TAP144812",
+    "norm": "TAP144812",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/145954",
+    "lat": 33.3466677,
+    "lon": -91.1197181,
+    "name": "TAP145954",
+    "norm": "TAP145954",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/145955",
+    "lat": 33.5115799,
+    "lon": -90.1271264,
+    "name": "TAP145955",
+    "norm": "TAP145955",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/145956",
+    "lat": 32.8871255,
+    "lon": -90.4150822,
+    "name": "TAP145956",
+    "norm": "TAP145956",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/145957",
+    "lat": 33.2060636,
+    "lon": -89.9624307,
+    "name": "TAP145957",
+    "norm": "TAP145957",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/145958",
+    "lat": 33.2772868,
+    "lon": -90.0120604,
+    "name": "TAP145958",
+    "norm": "TAP145958",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/145959",
+    "lat": 33.4950255,
+    "lon": -89.9187633,
+    "name": "TAP145959",
+    "norm": "TAP145959",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/145960",
+    "lat": 32.2667948,
+    "lon": -90.2110216,
+    "name": "TAP145960",
+    "norm": "TAP145960",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/145961",
+    "lat": 32.2351894,
+    "lon": -90.228422,
+    "name": "TAP145961",
+    "norm": "TAP145961",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/146069",
+    "lat": 32.5767838,
+    "lon": -89.3246951,
+    "name": "TAP146069",
+    "norm": "TAP146069",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/146070",
+    "lat": 32.3182025,
+    "lon": -89.3449768,
+    "name": "TAP146070",
+    "norm": "TAP146070",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/146071",
+    "lat": 32.7447117,
+    "lon": -89.239095,
+    "name": "TAP146071",
+    "norm": "TAP146071",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/146072",
+    "lat": 32.3580192,
+    "lon": -89.5209773,
+    "name": "TAP146072",
+    "norm": "TAP146072",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/146073",
+    "lat": 32.3567694,
+    "lon": -89.5209986,
+    "name": "TAP146073",
+    "norm": "TAP146073",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/146074",
+    "lat": 32.3697556,
+    "lon": -89.5081599,
+    "name": "TAP146074",
+    "norm": "TAP146074",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/146075",
+    "lat": 32.4271836,
+    "lon": -89.8853461,
+    "name": "TAP146075",
+    "norm": "TAP146075",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/146076",
+    "lat": 32.4258503,
+    "lon": -89.8862892,
+    "name": "TAP146076",
+    "norm": "TAP146076",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/146077",
+    "lat": 32.3165511,
+    "lon": -90.1317417,
+    "name": "TAP146077",
+    "norm": "TAP146077",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/146078",
+    "lat": 32.6918753,
+    "lon": -90.4095238,
+    "name": "TAP146078",
+    "norm": "TAP146078",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/146079",
+    "lat": 32.5452009,
+    "lon": -90.2935269,
+    "name": "TAP146079",
+    "norm": "TAP146079",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/146080",
+    "lat": 32.3632676,
+    "lon": -90.248031,
+    "name": "TAP146080",
+    "norm": "TAP146080",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149062",
+    "lat": 33.0579185,
+    "lon": -88.562597,
+    "name": "S. MACON",
+    "norm": "S. MACON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149063",
+    "lat": 32.9826569,
+    "lon": -88.5574593,
+    "name": "SHUQUALAK",
+    "norm": "SHUQUALAK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149443",
+    "lat": 32.4879218,
+    "lon": -89.8689918,
+    "name": "SAND HILL",
+    "norm": "SAND HILL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149444",
+    "lat": 32.4399725,
+    "lon": -89.9390116,
+    "name": "FANNIN",
+    "norm": "FANNIN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149475",
+    "lat": 34.8829638,
+    "lon": -88.6397988,
+    "name": "KOSSUTH",
+    "norm": "KOSSUTH",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149476",
+    "lat": 34.9516289,
+    "lon": -88.450554,
+    "name": "KIMBERLY CLARK",
+    "norm": "KIMBERLY CLARK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149477",
+    "lat": 34.8681885,
+    "lon": -88.4308859,
+    "name": "GLEN",
+    "norm": "GLEN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149478",
+    "lat": 34.8612771,
+    "lon": -89.6908042,
+    "name": "BYHALIA",
+    "norm": "BYHALIA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149495",
+    "lat": 34.5016682,
+    "lon": -89.0148252,
+    "name": "TAP149495",
+    "norm": "TAP149495",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149496",
+    "lat": 34.3252845,
+    "lon": -88.1797126,
+    "name": "STATELINE",
+    "norm": "STATELINE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149497",
+    "lat": 34.2562035,
+    "lon": -88.6964196,
+    "name": "TUPELO",
+    "norm": "TUPELO",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149498",
+    "lat": 34.2716916,
+    "lon": -88.5276267,
+    "name": "MOOREVILLE",
+    "norm": "MOOREVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149499",
+    "lat": 34.377831,
+    "lon": -88.8585011,
+    "name": "UNION",
+    "norm": "UNION",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;161000"
+  },
+  {
+    "id": "hifld/149500",
+    "lat": 34.2413474,
+    "lon": -88.7690188,
+    "name": "BISSELL",
+    "norm": "BISSELL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149501",
+    "lat": 34.4497076,
+    "lon": -88.6579464,
+    "name": "GUNTOWN",
+    "norm": "GUNTOWN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149502",
+    "lat": 34.3321132,
+    "lon": -89.9352479,
+    "name": "BATEVILLE",
+    "norm": "BATEVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000"
+  },
+  {
+    "id": "hifld/149503",
+    "lat": 34.482701,
+    "lon": -88.9922618,
+    "name": "NEW ALBANY",
+    "norm": "NEW ALBANY",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149504",
+    "lat": 34.5321996,
+    "lon": -88.9888249,
+    "name": "N. HAVEN",
+    "norm": "N. HAVEN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149505",
+    "lat": 34.4105988,
+    "lon": -88.8663129,
+    "name": "BLUE SPRINGS",
+    "norm": "BLUE SPRINGS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149506",
+    "lat": 34.5411527,
+    "lon": -88.9379916,
+    "name": "PLEASANT HILL",
+    "norm": "PLEASANT HILL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/149507",
+    "lat": 34.2626224,
+    "lon": -89.0692993,
+    "name": "MCGREGOR CHAPEL",
+    "norm": "MCGREGOR CHAPEL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149508",
+    "lat": 34.2543812,
+    "lon": -89.0165629,
+    "name": "PONTOTOC",
+    "norm": "PONTOTOC",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149509",
+    "lat": 34.2611567,
+    "lon": -88.9366737,
+    "name": "BANDHEAD",
+    "norm": "BANDHEAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149510",
+    "lat": 34.7300559,
+    "lon": -88.9015506,
+    "name": "E. RIPLEY",
+    "norm": "E. RIPLEY",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149511",
+    "lat": 34.7575044,
+    "lon": -88.9395273,
+    "name": "RIPLEY",
+    "norm": "RIPLEY",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149512",
+    "lat": 34.8374583,
+    "lon": -88.305301,
+    "name": "BURNSVILLE",
+    "norm": "BURNSVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149513",
+    "lat": 34.8142854,
+    "lon": -88.1722293,
+    "name": "IUKA",
+    "norm": "IUKA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149514",
+    "lat": 34.5860082,
+    "lon": -88.471141,
+    "name": "HILLS CHAPEL",
+    "norm": "HILLS CHAPEL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149515",
+    "lat": 34.5985036,
+    "lon": -88.5299278,
+    "name": "BOONEVILLE",
+    "norm": "BOONEVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149516",
+    "lat": 34.523934,
+    "lon": -88.6275659,
+    "name": "BALDWYN",
+    "norm": "BALDWYN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149517",
+    "lat": 34.4904854,
+    "lon": -88.6609663,
+    "name": "S. BALDWYN",
+    "norm": "S. BALDWYN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149518",
+    "lat": 34.480644,
+    "lon": -88.6789931,
+    "name": "CAMPBELLTOWN",
+    "norm": "CAMPBELLTOWN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149519",
+    "lat": 34.4664624,
+    "lon": -88.6469751,
+    "name": "N. LEE",
+    "norm": "N. LEE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149520",
+    "lat": 34.8007014,
+    "lon": -89.439531,
+    "name": "N. HOLLY SPRINGS",
+    "norm": "N. HOLLY SPRINGS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149521",
+    "lat": 34.761639,
+    "lon": -89.43468,
+    "name": "HOLLY SPRINGS",
+    "norm": "HOLLY SPRINGS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149522",
+    "lat": 34.3551008,
+    "lon": -89.6657343,
+    "name": "W. OXFORD",
+    "norm": "W. OXFORD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149523",
+    "lat": 34.350441,
+    "lon": -89.533518,
+    "name": "OXFORD",
+    "norm": "OXFORD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149524",
+    "lat": 34.3485785,
+    "lon": -89.5142863,
+    "name": "SE. OXFORD",
+    "norm": "SE. OXFORD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149525",
+    "lat": 34.3037191,
+    "lon": -89.2634026,
+    "name": "LAFAYETTE SPRINGS",
+    "norm": "LAFAYETTE SPRINGS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149526",
+    "lat": 34.3596215,
+    "lon": -89.4850137,
+    "name": "BRITTANY WOODS",
+    "norm": "BRITTANY WOODS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149527",
+    "lat": 34.4380389,
+    "lon": -89.8891406,
+    "name": "N. SARDIS",
+    "norm": "N. SARDIS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149529",
+    "lat": 34.6273507,
+    "lon": -90.1440034,
+    "name": "BLUE GOOSE",
+    "norm": "BLUE GOOSE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149530",
+    "lat": 33.6355139,
+    "lon": -88.6536383,
+    "name": "WESTPOINT",
+    "norm": "WESTPOINT",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000"
+  },
+  {
+    "id": "hifld/149531",
+    "lat": 33.8558876,
+    "lon": -89.2914273,
+    "name": "DERMA",
+    "norm": "DERMA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149532",
+    "lat": 33.816995,
+    "lon": -88.5389009,
+    "name": "ABERDEEN",
+    "norm": "ABERDEEN",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/149533",
+    "lat": 33.9825808,
+    "lon": -88.7348671,
+    "name": "OKOLONA",
+    "norm": "OKOLONA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "hifld/149534",
+    "lat": 33.9224302,
+    "lon": -88.9953618,
+    "name": "HOUSTON",
+    "norm": "HOUSTON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149535",
+    "lat": 33.8963166,
+    "lon": -89.2934647,
+    "name": "CALHOUN CITY",
+    "norm": "CALHOUN CITY",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149536",
+    "lat": 34.1658649,
+    "lon": -88.7135211,
+    "name": "N. SHANNON",
+    "norm": "N. SHANNON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149537",
+    "lat": 33.9922358,
+    "lon": -89.6580411,
+    "name": "COFFEEVILLE",
+    "norm": "COFFEEVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149538",
+    "lat": 33.3468979,
+    "lon": -89.0893633,
+    "name": "STURGIS",
+    "norm": "STURGIS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000"
+  },
+  {
+    "id": "hifld/149539",
+    "lat": 33.3588129,
+    "lon": -88.4596526,
+    "name": "WEYERHAEUSER CO",
+    "norm": "WEYERHAEUSER CO",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149540",
+    "lat": 33.1169105,
+    "lon": -88.5670993,
+    "name": "MACON",
+    "norm": "MACON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149541",
+    "lat": 33.5274432,
+    "lon": -89.2592963,
+    "name": "EUPORA",
+    "norm": "EUPORA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149542",
+    "lat": 33.2984397,
+    "lon": -89.4127739,
+    "name": "FRENCH CAMP",
+    "norm": "FRENCH CAMP",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/149543",
+    "lat": 33.24582,
+    "lon": -88.5568782,
+    "name": "BROOKSVILLE",
+    "norm": "BROOKSVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149544",
+    "lat": 31.371533,
+    "lon": -89.2681924,
+    "name": "TAP149544",
+    "norm": "TAP149544",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149545",
+    "lat": 32.7815775,
+    "lon": -88.6773117,
+    "name": "DE KALB",
+    "norm": "DE KALB",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149546",
+    "lat": 32.7765035,
+    "lon": -89.2269425,
+    "name": "PEARL RIVER",
+    "norm": "PEARL RIVER",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149765",
+    "lat": 32.7671015,
+    "lon": -89.115553,
+    "name": "PHILADELPHIA",
+    "norm": "PHILADELPHIA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149766",
+    "lat": 32.7497848,
+    "lon": -89.492329,
+    "name": "LEAKE",
+    "norm": "LEAKE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149767",
+    "lat": 32.4019371,
+    "lon": -89.9518509,
+    "name": "LANGFORD",
+    "norm": "LANGFORD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149821",
+    "lat": 31.5244792,
+    "lon": -90.644043,
+    "name": "FRANKLIN",
+    "norm": "FRANKLIN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000"
+  },
+  {
+    "id": "hifld/149822",
+    "lat": 31.4226131,
+    "lon": -90.5867642,
+    "name": "ARLINGTON",
+    "norm": "ARLINGTON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149823",
+    "lat": 31.5682369,
+    "lon": -91.3693489,
+    "name": "NATCHEZ",
+    "norm": "NATCHEZ",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149824",
+    "lat": 31.5990467,
+    "lon": -91.3471727,
+    "name": "NATCHEZ",
+    "norm": "NATCHEZ",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149909",
+    "lat": 34.5151581,
+    "lon": -89.0083042,
+    "name": "TAP149909",
+    "norm": "TAP149909",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149910",
+    "lat": 34.4691835,
+    "lon": -89.0770701,
+    "name": "TAP149910",
+    "norm": "TAP149910",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/149911",
+    "lat": 34.4712449,
+    "lon": -89.1486003,
+    "name": "TAP149911",
+    "norm": "TAP149911",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/149912",
+    "lat": 34.5050733,
+    "lon": -88.9938791,
+    "name": "TAP149912",
+    "norm": "TAP149912",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149914",
+    "lat": 34.4108307,
+    "lon": -88.8656815,
+    "name": "TAP149914",
+    "norm": "TAP149914",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149915",
+    "lat": 34.3521209,
+    "lon": -88.863124,
+    "name": "TAP149915",
+    "norm": "TAP149915",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149916",
+    "lat": 34.5864839,
+    "lon": -88.4717771,
+    "name": "TAP149916",
+    "norm": "TAP149916",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149917",
+    "lat": 34.5242148,
+    "lon": -88.6273401,
+    "name": "TAP149917",
+    "norm": "TAP149917",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149918",
+    "lat": 34.4478747,
+    "lon": -88.6537594,
+    "name": "TAP149918",
+    "norm": "TAP149918",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149956",
+    "lat": 34.3344474,
+    "lon": -89.9209915,
+    "name": "TAP149956",
+    "norm": "TAP149956",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149957",
+    "lat": 34.342629,
+    "lon": -90.5276425,
+    "name": "TAP149957",
+    "norm": "TAP149957",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/149958",
+    "lat": 34.3728178,
+    "lon": -89.8211856,
+    "name": "TAP149958",
+    "norm": "TAP149958",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149959",
+    "lat": 34.4644032,
+    "lon": -89.8129551,
+    "name": "TAP149959",
+    "norm": "TAP149959",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149960",
+    "lat": 34.3551947,
+    "lon": -89.6650838,
+    "name": "TAP149960",
+    "norm": "TAP149960",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149961",
+    "lat": 34.3491195,
+    "lon": -89.5139879,
+    "name": "TAP149961",
+    "norm": "TAP149961",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/149962",
+    "lat": 34.359773,
+    "lon": -89.485602,
+    "name": "TAP149962",
+    "norm": "TAP149962",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/150052",
+    "lat": 32.2884464,
+    "lon": -89.9642459,
+    "name": "RANKIN",
+    "norm": "RANKIN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/150053",
+    "lat": 32.2828927,
+    "lon": -90.0144311,
+    "name": "BRANDON",
+    "norm": "BRANDON",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/150054",
+    "lat": 32.24866,
+    "lon": -90.0817981,
+    "name": "WHITFIELD",
+    "norm": "WHITFIELD",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/150055",
+    "lat": 32.2827561,
+    "lon": -90.0908727,
+    "name": "AIRPORT",
+    "norm": "AIRPORT",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/150056",
+    "lat": 32.2806878,
+    "lon": -90.187691,
+    "name": "SOUTH JACKSON",
+    "norm": "SOUTH JACKSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "hifld/150057",
+    "lat": 32.2952448,
+    "lon": -90.177169,
+    "name": "EAST JACKSON",
+    "norm": "EAST JACKSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/150058",
+    "lat": 32.2827995,
+    "lon": -90.1432066,
+    "name": "FLOWOOD",
+    "norm": "FLOWOOD",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/150059",
+    "lat": 32.1944156,
+    "lon": -90.1425234,
+    "name": "FLORENCE",
+    "norm": "FLORENCE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150060",
+    "lat": 32.3155146,
+    "lon": -90.8925323,
+    "name": "VICKSBURG",
+    "norm": "VICKSBURG",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150061",
+    "lat": 32.3075809,
+    "lon": -90.1680237,
+    "name": "LARSON STREET",
+    "norm": "LARSON STREET",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/150062",
+    "lat": 32.3300255,
+    "lon": -90.1681362,
+    "name": "MEDICAL CENTER",
+    "norm": "MEDICAL CENTER",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150063",
+    "lat": 32.2976109,
+    "lon": -90.1918456,
+    "name": "GALLATIN",
+    "norm": "GALLATIN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150064",
+    "lat": 32.3080853,
+    "lon": -90.1925462,
+    "name": "MONUMENT STREET",
+    "norm": "MONUMENT STREET",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150065",
+    "lat": 32.3410483,
+    "lon": -90.2084367,
+    "name": "MIAMI",
+    "norm": "MIAMI",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150066",
+    "lat": 32.3396908,
+    "lon": -90.2475867,
+    "name": "NORTHWEST JACKSON",
+    "norm": "NORTHWEST JACKSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150067",
+    "lat": 32.3312143,
+    "lon": -90.3075809,
+    "name": "CLINTON",
+    "norm": "CLINTON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/150068",
+    "lat": 32.283286,
+    "lon": -90.2583896,
+    "name": "ROBINSON ROAD",
+    "norm": "ROBINSON ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/150069",
+    "lat": 32.302514,
+    "lon": -90.2482946,
+    "name": "WEST JACKSON",
+    "norm": "WEST JACKSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150070",
+    "lat": 32.2668397,
+    "lon": -90.2111338,
+    "name": "KINGSWOOD",
+    "norm": "KINGSWOOD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/150071",
+    "lat": 32.253213,
+    "lon": -90.2475625,
+    "name": "SOUTHWEST JACKSON",
+    "norm": "SOUTHWEST JACKSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000"
+  },
+  {
+    "id": "hifld/150072",
+    "lat": 32.2561363,
+    "lon": -90.2858634,
+    "name": "FOREST HILL",
+    "norm": "FOREST HILL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/150073",
+    "lat": 32.3110655,
+    "lon": -90.3292238,
+    "name": "RAY BRASWELL",
+    "norm": "RAY BRASWELL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;115000"
+  },
+  {
+    "id": "hifld/150074",
+    "lat": 32.3123779,
+    "lon": -90.324305,
+    "name": "SPRING RIDGE ROAD",
+    "norm": "SPRING RIDGE ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/150075",
+    "lat": 32.281038,
+    "lon": -90.9287115,
+    "name": "BAXTER WILSON",
+    "norm": "BAXTER WILSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;115000"
+  },
+  {
+    "id": "hifld/150076",
+    "lat": 32.0054753,
+    "lon": -91.0440532,
+    "name": "GRAND GULF",
+    "norm": "GRAND GULF",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/150077",
+    "lat": 32.270446,
+    "lon": -90.9183531,
+    "name": "SOUTH VICKSBURG",
+    "norm": "SOUTH VICKSBURG",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150078",
+    "lat": 32.3487633,
+    "lon": -90.8838603,
+    "name": "WEST VICKSBURG",
+    "norm": "WEST VICKSBURG",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150079",
+    "lat": 31.9725745,
+    "lon": -90.9765533,
+    "name": "PORT GIBSON",
+    "norm": "PORT GIBSON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150096",
+    "lat": 34.0173183,
+    "lon": -90.646592,
+    "name": "TAP150096",
+    "norm": "TAP150096",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150099",
+    "lat": 34.2193429,
+    "lon": -90.5348596,
+    "name": "TAP150099",
+    "norm": "TAP150099",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150100",
+    "lat": 34.2048679,
+    "lon": -90.5673003,
+    "name": "TAP150100",
+    "norm": "TAP150100",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/150101",
+    "lat": 34.3012847,
+    "lon": -89.2644644,
+    "name": "TAP150101",
+    "norm": "TAP150101",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/150102",
+    "lat": 34.2634433,
+    "lon": -88.9621546,
+    "name": "TAP150102",
+    "norm": "TAP150102",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/150134",
+    "lat": 33.9827568,
+    "lon": -89.2952416,
+    "name": "TAP150134",
+    "norm": "TAP150134",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/150210",
+    "lat": 30.5315184,
+    "lon": -88.5542949,
+    "name": "DANIEL STATION",
+    "norm": "DANIEL STATION",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "hifld/150262",
+    "lat": 31.2816017,
+    "lon": -89.3536409,
+    "name": "HATTIESBURG SOUTHWEST",
+    "norm": "HATTIESBURG SOUTHWEST",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "hifld/150263",
+    "lat": 31.1189807,
+    "lon": -90.1147492,
+    "name": "TYLERTOWN",
+    "norm": "TYLERTOWN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153527",
+    "lat": 33.6472995,
+    "lon": -88.3125421,
+    "name": "LOWNDES",
+    "norm": "LOWNDES",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/153530",
+    "lat": 34.6711881,
+    "lon": -90.383973,
+    "name": "TUNICA",
+    "norm": "TUNICA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "hifld/153531",
+    "lat": 34.7876255,
+    "lon": -90.3246638,
+    "name": "HAMBRICK",
+    "norm": "HAMBRICK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153532",
+    "lat": 34.8616086,
+    "lon": -90.2629474,
+    "name": "ROBINSONVILLE",
+    "norm": "ROBINSONVILLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/153533",
+    "lat": 34.8611713,
+    "lon": -90.2621913,
+    "name": "BANKS",
+    "norm": "BANKS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/153534",
+    "lat": 34.9393983,
+    "lon": -90.1692125,
+    "name": "TWINKLETOWN",
+    "norm": "TWINKLETOWN",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/153535",
+    "lat": 34.9617349,
+    "lon": -90.1470478,
+    "name": "WALLS",
+    "norm": "WALLS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153536",
+    "lat": 34.9768702,
+    "lon": -90.064982,
+    "name": "DESOTO",
+    "norm": "DESOTO",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153537",
+    "lat": 34.9677687,
+    "lon": -90.0181247,
+    "name": "HORN LAKE",
+    "norm": "HORN LAKE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "hifld/153538",
+    "lat": 34.9643183,
+    "lon": -89.9715526,
+    "name": "GREENBROOK",
+    "norm": "GREENBROOK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153539",
+    "lat": 34.9315526,
+    "lon": -89.9821687,
+    "name": "PLUM POINT",
+    "norm": "PLUM POINT",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153540",
+    "lat": 34.9027128,
+    "lon": -89.9712448,
+    "name": "NESBIT TAP",
+    "norm": "NESBIT TAP",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153541",
+    "lat": 34.9049233,
+    "lon": -89.9962882,
+    "name": "NESBIT",
+    "norm": "NESBIT",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153542",
+    "lat": 34.861768,
+    "lon": -89.9643891,
+    "name": "GETWELL",
+    "norm": "GETWELL",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "hifld/153543",
+    "lat": 34.8122674,
+    "lon": -89.9698048,
+    "name": "HERNANDO",
+    "norm": "HERNANDO",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153544",
+    "lat": 34.6994218,
+    "lon": -89.9529155,
+    "name": "COLDWATER",
+    "norm": "COLDWATER",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153545",
+    "lat": 33.6495734,
+    "lon": -88.2724816,
+    "name": "CALEDONIA",
+    "norm": "CALEDONIA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/153552",
+    "lat": 33.6485568,
+    "lon": -88.2721314,
+    "name": "CALEDONIA 500 KV SWITCHING YARD",
+    "norm": "CALEDONIA 500 KV SWITCHING YARD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/153554",
+    "lat": 33.6477916,
+    "lon": -88.3159356,
+    "name": "LOWNDES",
+    "norm": "LOWNDES",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000"
+  },
+  {
+    "id": "hifld/153555",
+    "lat": 33.291456,
+    "lon": -89.421124,
+    "name": "WOLF CREEK",
+    "norm": "WOLF CREEK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/153556",
+    "lat": 33.2894347,
+    "lon": -89.421611,
+    "name": "WOLF CREEK",
+    "norm": "WOLF CREEK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000;500000"
+  },
+  {
+    "id": "hifld/153557",
+    "lat": 33.0147595,
+    "lon": -89.6813746,
+    "name": "MCADAMS",
+    "norm": "MCADAMS",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000"
+  },
+  {
+    "id": "hifld/153558",
+    "lat": 32.3822829,
+    "lon": -90.2144038,
+    "name": "LAKEOVER",
+    "norm": "LAKEOVER",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000"
+  },
+  {
+    "id": "hifld/153559",
+    "lat": 33.4391555,
+    "lon": -90.6336673,
+    "name": "INDIANOLA",
+    "norm": "INDIANOLA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000"
+  },
+  {
+    "id": "hifld/153560",
+    "lat": 32.5113468,
+    "lon": -90.0837808,
+    "name": "YANDELL ROAD",
+    "norm": "YANDELL ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/153561",
+    "lat": 32.5153774,
+    "lon": -90.1371555,
+    "name": "BOZEMAN ROAD",
+    "norm": "BOZEMAN ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/153563",
+    "lat": 33.3491205,
+    "lon": -91.1213802,
+    "name": "GERALD ANDRUS STATION",
+    "norm": "GERALD ANDRUS STATION",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/153564",
+    "lat": 33.9655397,
+    "lon": -89.901102,
+    "name": "TILLATOBA",
+    "norm": "TILLATOBA",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000"
+  },
+  {
+    "id": "hifld/153565",
+    "lat": 32.360275,
+    "lon": -90.2165919,
+    "name": "REX BROWN 230KV",
+    "norm": "REX BROWN 230KV",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000"
+  },
+  {
+    "id": "hifld/153566",
+    "lat": 32.3584958,
+    "lon": -90.2788184,
+    "name": "NORTHSIDE DRIVE",
+    "norm": "NORTHSIDE DRIVE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/153571",
+    "lat": 32.3900248,
+    "lon": -90.8847236,
+    "name": "HAINING ROAD",
+    "norm": "HAINING ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153572",
+    "lat": 32.3838688,
+    "lon": -90.8617723,
+    "name": "NORTH VICKSBURG",
+    "norm": "NORTH VICKSBURG",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/153575",
+    "lat": 34.8289766,
+    "lon": -89.2003575,
+    "name": "BENTON",
+    "norm": "BENTON",
+    "operator": null,
+    "state": "MS",
+    "voltage": "500000"
+  },
+  {
+    "id": "hifld/154296",
+    "lat": 34.6993025,
+    "lon": -89.9522774,
+    "name": "TAP154296",
+    "norm": "TAP154296",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/154297",
+    "lat": 34.9028095,
+    "lon": -89.8658091,
+    "name": "TAP154297",
+    "norm": "TAP154297",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154298",
+    "lat": 34.9452312,
+    "lon": -89.7231596,
+    "name": "TAP154298",
+    "norm": "TAP154298",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154299",
+    "lat": 34.940404,
+    "lon": -89.6080385,
+    "name": "TAP154299",
+    "norm": "TAP154299",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154300",
+    "lat": 34.8001926,
+    "lon": -89.439522,
+    "name": "TAP154300",
+    "norm": "TAP154300",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154301",
+    "lat": 34.9451512,
+    "lon": -89.4232634,
+    "name": "TAP154301",
+    "norm": "TAP154301",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154368",
+    "lat": 34.948778,
+    "lon": -89.7403716,
+    "name": "MILLER",
+    "norm": "MILLER",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154373",
+    "lat": 34.7283792,
+    "lon": -88.9032274,
+    "name": "TAP154373",
+    "norm": "TAP154373",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154374",
+    "lat": 34.7565166,
+    "lon": -88.9379798,
+    "name": "TAP154374",
+    "norm": "TAP154374",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154375",
+    "lat": 34.8832733,
+    "lon": -88.6392846,
+    "name": "TAP154375",
+    "norm": "TAP154375",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154376",
+    "lat": 34.8942782,
+    "lon": -88.5387847,
+    "name": "TAP154376",
+    "norm": "TAP154376",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154377",
+    "lat": 34.9262582,
+    "lon": -88.5215058,
+    "name": "TAP154377",
+    "norm": "TAP154377",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154378",
+    "lat": 34.9207743,
+    "lon": -88.5141094,
+    "name": "TAP154378",
+    "norm": "TAP154378",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154379",
+    "lat": 34.9532918,
+    "lon": -88.4529826,
+    "name": "TAP154379",
+    "norm": "TAP154379",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154380",
+    "lat": 34.8145185,
+    "lon": -88.1718875,
+    "name": "TAP154380",
+    "norm": "TAP154380",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154381",
+    "lat": 34.9265988,
+    "lon": -88.2570987,
+    "name": "TAP154381",
+    "norm": "TAP154381",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154382",
+    "lat": 34.8674939,
+    "lon": -88.4306054,
+    "name": "TAP154382",
+    "norm": "TAP154382",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/154383",
+    "lat": 34.6677141,
+    "lon": -88.5547001,
+    "name": "TAP154383",
+    "norm": "TAP154383",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/159895",
+    "lat": 34.968023,
+    "lon": -89.732152,
+    "name": "TAP159895",
+    "norm": "TAP159895",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/159896",
+    "lat": 34.9809078,
+    "lon": -89.6306499,
+    "name": "TAP159896",
+    "norm": "TAP159896",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/159899",
+    "lat": 34.978247,
+    "lon": -89.645186,
+    "name": "TAP159899",
+    "norm": "TAP159899",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/159900",
+    "lat": 34.9771501,
+    "lon": -89.611973,
+    "name": "TAP159900",
+    "norm": "TAP159900",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161138",
+    "lat": 33.801174,
+    "lon": -88.666278,
+    "name": "TAP161138",
+    "norm": "TAP161138",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/161139",
+    "lat": 34.009068,
+    "lon": -88.731253,
+    "name": "TAP161139",
+    "norm": "TAP161139",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/161142",
+    "lat": 34.242738,
+    "lon": -88.833004,
+    "name": "TAP161142",
+    "norm": "TAP161142",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161192",
+    "lat": 34.8587504,
+    "lon": -89.197925,
+    "name": "ASHLAND",
+    "norm": "ASHLAND",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161194",
+    "lat": 34.7724502,
+    "lon": -89.4187818,
+    "name": "TAP161194",
+    "norm": "TAP161194",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161204",
+    "lat": 33.4479102,
+    "lon": -88.7691996,
+    "name": "BLACKJACK",
+    "norm": "BLACKJACK",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/161206",
+    "lat": 32.8039696,
+    "lon": -89.0627943,
+    "name": "TAP161206",
+    "norm": "TAP161206",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161207",
+    "lat": 33.0307074,
+    "lon": -89.6006798,
+    "name": "KOSCIUSKO",
+    "norm": "KOSCIUSKO",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161208",
+    "lat": 33.9998217,
+    "lon": -90.0118366,
+    "name": "CHARLESTON",
+    "norm": "CHARLESTON",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/161257",
+    "lat": 33.4736307,
+    "lon": -88.7986279,
+    "name": "TAP161257",
+    "norm": "TAP161257",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/161670",
+    "lat": 34.503553,
+    "lon": -90.571131,
+    "name": "TAP161670",
+    "norm": "TAP161670",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167269",
+    "lat": 31.7103409,
+    "lon": -89.8940417,
+    "name": "DEADEND167269",
+    "norm": "DEADEND167269",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167270",
+    "lat": 31.7238801,
+    "lon": -89.8635608,
+    "name": "DEADEND167270",
+    "norm": "DEADEND167270",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167271",
+    "lat": 32.9774785,
+    "lon": -89.679879,
+    "name": "DEADEND167271",
+    "norm": "DEADEND167271",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167272",
+    "lat": 32.9774806,
+    "lon": -89.679979,
+    "name": "DEADEND167272",
+    "norm": "DEADEND167272",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167273",
+    "lat": 31.530912,
+    "lon": -89.301055,
+    "name": "DEADEND167273",
+    "norm": "DEADEND167273",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167274",
+    "lat": 31.5283617,
+    "lon": -89.2433113,
+    "name": "DEADEND167274",
+    "norm": "DEADEND167274",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167275",
+    "lat": 33.0985544,
+    "lon": -89.0618051,
+    "name": "DEADEND167275",
+    "norm": "DEADEND167275",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167276",
+    "lat": 33.485949,
+    "lon": -88.4076485,
+    "name": "DEADEND167276",
+    "norm": "DEADEND167276",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167277",
+    "lat": 33.479309,
+    "lon": -88.4065605,
+    "name": "DEADEND167277",
+    "norm": "DEADEND167277",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169437",
+    "lat": 34.937925,
+    "lon": -88.473602,
+    "name": "TAP169437",
+    "norm": "TAP169437",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169439",
+    "lat": 33.9527244,
+    "lon": -90.6682162,
+    "name": "TAP169439",
+    "norm": "TAP169439",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169442",
+    "lat": 31.8313341,
+    "lon": -90.3809867,
+    "name": "TAP169442",
+    "norm": "TAP169442",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169444",
+    "lat": 30.899562,
+    "lon": -88.6167981,
+    "name": "TAP169444",
+    "norm": "TAP169444",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169446",
+    "lat": 31.1441006,
+    "lon": -88.8163922,
+    "name": "TAP169446",
+    "norm": "TAP169446",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/169448",
+    "lat": 31.2007717,
+    "lon": -88.6205626,
+    "name": "TAP169448",
+    "norm": "TAP169448",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169450",
+    "lat": 33.9004074,
+    "lon": -89.7834887,
+    "name": "TAP169450",
+    "norm": "TAP169450",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169453",
+    "lat": 30.5972341,
+    "lon": -88.5274028,
+    "name": "TAP169453",
+    "norm": "TAP169453",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169455",
+    "lat": 31.8497753,
+    "lon": -88.9754585,
+    "name": "TAP169455",
+    "norm": "TAP169455",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169457",
+    "lat": 31.8693689,
+    "lon": -89.1516084,
+    "name": "TAP169457",
+    "norm": "TAP169457",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/169459",
+    "lat": 31.8594787,
+    "lon": -89.3694737,
+    "name": "TAP169459",
+    "norm": "TAP169459",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169462",
+    "lat": 34.365034,
+    "lon": -89.4843031,
+    "name": "TAP169462",
+    "norm": "TAP169462",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169464",
+    "lat": 31.145932,
+    "lon": -89.395678,
+    "name": "TAP169464",
+    "norm": "TAP169464",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169466",
+    "lat": 32.3256974,
+    "lon": -88.7946056,
+    "name": "TAP169466",
+    "norm": "TAP169466",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169467",
+    "lat": 32.6867494,
+    "lon": -89.5551963,
+    "name": "TAP169467",
+    "norm": "TAP169467",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169470",
+    "lat": 34.2861783,
+    "lon": -88.5630416,
+    "name": "TAP169470",
+    "norm": "TAP169470",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169473",
+    "lat": 34.1226013,
+    "lon": -88.7079948,
+    "name": "TAP169473",
+    "norm": "TAP169473",
+    "operator": null,
+    "state": "MS",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/169474",
+    "lat": 33.4624831,
+    "lon": -88.4968637,
+    "name": "TAP169474",
+    "norm": "TAP169474",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169476",
+    "lat": 33.43038,
+    "lon": -88.5500798,
+    "name": "TAP169476",
+    "norm": "TAP169476",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169477",
+    "lat": 33.4518894,
+    "lon": -88.5672578,
+    "name": "TAP169477",
+    "norm": "TAP169477",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169478",
+    "lat": 32.437253,
+    "lon": -90.1418684,
+    "name": "SUNNYBROOK",
+    "norm": "SUNNYBROOK",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169479",
+    "lat": 32.462323,
+    "lon": -90.1311037,
+    "name": "LAKE CASTLE",
+    "norm": "LAKE CASTLE",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169481",
+    "lat": 31.3762403,
+    "lon": -89.8724099,
+    "name": "TAP169481",
+    "norm": "TAP169481",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169482",
+    "lat": 34.9146198,
+    "lon": -89.592047,
+    "name": "TAP169482",
+    "norm": "TAP169482",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169483",
+    "lat": 34.9369298,
+    "lon": -89.5097901,
+    "name": "COLDWATER",
+    "norm": "COLDWATER",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169484",
+    "lat": 33.968161,
+    "lon": -88.4785141,
+    "name": "TAP169484",
+    "norm": "TAP169484",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169486",
+    "lat": 33.8010477,
+    "lon": -88.540882,
+    "name": "TAP169486",
+    "norm": "TAP169486",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169488",
+    "lat": 32.4434191,
+    "lon": -89.1223607,
+    "name": "TAP169488",
+    "norm": "TAP169488",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169489",
+    "lat": 32.447127,
+    "lon": -89.0760483,
+    "name": "TAP169489",
+    "norm": "TAP169489",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169490",
+    "lat": 32.4434101,
+    "lon": -89.0990501,
+    "name": "TAP169490",
+    "norm": "TAP169490",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169492",
+    "lat": 31.2708041,
+    "lon": -90.4785435,
+    "name": "TAP169492",
+    "norm": "TAP169492",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169493",
+    "lat": 31.2774898,
+    "lon": -90.5184589,
+    "name": "TAP169493",
+    "norm": "TAP169493",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169497",
+    "lat": 32.2263057,
+    "lon": -90.0356698,
+    "name": "DEADEND169497",
+    "norm": "DEADEND169497",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169498",
+    "lat": 32.0553599,
+    "lon": -90.1911495,
+    "name": "TAP169498",
+    "norm": "TAP169498",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169500",
+    "lat": 32.3670453,
+    "lon": -89.4059825,
+    "name": "TAP169500",
+    "norm": "TAP169500",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169502",
+    "lat": 32.3227426,
+    "lon": -89.6397181,
+    "name": "TAP169502",
+    "norm": "TAP169502",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169503",
+    "lat": 31.8689795,
+    "lon": -89.6652924,
+    "name": "TAP169503",
+    "norm": "TAP169503",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169504",
+    "lat": 32.0016416,
+    "lon": -89.3719226,
+    "name": "TAP169504",
+    "norm": "TAP169504",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169506",
+    "lat": 30.7477145,
+    "lon": -89.17161,
+    "name": "TAP169506",
+    "norm": "TAP169506",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169513",
+    "lat": 31.6911587,
+    "lon": -88.8396626,
+    "name": "TAP169513",
+    "norm": "TAP169513",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169518",
+    "lat": 31.6838306,
+    "lon": -88.7377776,
+    "name": "TAP169518",
+    "norm": "TAP169518",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169520",
+    "lat": 31.7377786,
+    "lon": -88.7586178,
+    "name": "TAP169520",
+    "norm": "TAP169520",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  },
+  {
+    "id": "hifld/169522",
+    "lat": 33.0155697,
+    "lon": -89.1060712,
+    "name": "TAP169522",
+    "norm": "TAP169522",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169524",
+    "lat": 34.1535983,
+    "lon": -89.6628636,
+    "name": "TAP169524",
+    "norm": "TAP169524",
+    "operator": null,
+    "state": "MS",
+    "voltage": "161000;161000"
+  },
+  {
+    "id": "hifld/169525",
+    "lat": 32.901194,
+    "lon": -90.3786741,
+    "name": "TAP169525",
+    "norm": "TAP169525",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/169527",
+    "lat": 31.631391,
+    "lon": -89.5218733,
+    "name": "TAP169527",
+    "norm": "TAP169527",
+    "operator": null,
+    "state": "MS",
+    "voltage": "115000;115000"
+  },
+  {
+    "id": "hifld/173182",
+    "lat": 32.4287476,
+    "lon": -90.4020744,
+    "name": "TINNIN ROAD",
+    "norm": "TINNIN ROAD",
+    "operator": null,
+    "state": "MS",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/173492",
+    "lat": 32.4645512,
+    "lon": -89.1232753,
+    "name": "TAP173492",
+    "norm": "TAP173492",
+    "operator": null,
+    "state": "MS",
+    "voltage": null
+  }
+]

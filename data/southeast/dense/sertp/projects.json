@@ -9492,9 +9492,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/130528",
+            "lat": 38.1797521,
+            "lon": -85.8845087,
+            "name": "CANE RUN",
+            "norm": "CANE RUN",
+            "operator": null,
+            "state": "KY",
+            "voltage": "345000"
+          },
           "name": "Cane Run",
           "norm": "CANE RUN",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         }
       ],
       "footprint_states": [
@@ -9551,7 +9564,12 @@
   },
   {
     "_id": "southeast:sertp:lg-e-ku--cane-run-345-138-kv-transformer-replace",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 130528 (CANE RUN), corroborated by voltage.",
+      "lat": 38.179752,
+      "lon": -85.884509
+    },
     "counties": [],
     "description": "Replace all terminal equipment at Cane Run CT associated with the Cane Run 345/138 kV transformer.",
     "evidence": {
@@ -9567,19 +9585,32 @@
       "sheet": null,
       "source_sha256": "462f9f3dee796a9c010d31581eca3402f8b93be625af68cc73b2bdba81bed0ae"
     },
-    "geography_basis": null,
+    "geography_basis": "candidate_facility_state",
     "in_service": {
       "precision": "year",
       "raw": "2030",
       "value": "2030"
     },
     "location_candidate": {
-      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state; HIFLD public substations, data/southeast/hifld/sources.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "hifld/130528",
+            "lat": 38.1797521,
+            "lon": -85.8845087,
+            "name": "CANE RUN",
+            "norm": "CANE RUN",
+            "operator": null,
+            "state": "KY",
+            "voltage": "345000"
+          },
           "name": "Cane Run",
           "norm": "CANE RUN",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "footprint_states": [
@@ -9596,13 +9627,13 @@
       ],
       "reason": null,
       "rule": "C45",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         138,
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "CANE RUN 345/138 KV TRANSFORMER, REPLACE",
     "native_id": "lg-e-ku--cane-run-345-138-kv-transformer-replace",
     "other_owners": [],
@@ -9631,7 +9662,9 @@
       }
     ],
     "source_id": "southeast:sertp:2025-preliminary",
-    "states": [],
+    "states": [
+      "21"
+    ],
     "status": "Listed in the 2025 SERTP Preliminary Expansion Plan Report (Non-CEII); In-Service Year 2030",
     "status_group": "planned"
   },
@@ -9663,9 +9696,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/130528",
+            "lat": 38.1797521,
+            "lon": -85.8845087,
+            "name": "CANE RUN",
+            "norm": "CANE RUN",
+            "operator": null,
+            "state": "KY",
+            "voltage": "345000"
+          },
           "name": "Cane Run",
           "norm": "CANE RUN",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         },
         {
           "name": "Lake Dreamland",
@@ -9753,9 +9799,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/130528",
+            "lat": 38.1797521,
+            "lon": -85.8845087,
+            "name": "CANE RUN",
+            "norm": "CANE RUN",
+            "operator": null,
+            "state": "KY",
+            "voltage": "345000"
+          },
           "name": "Cane Run",
           "norm": "CANE RUN",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         },
         {
           "name": "Lake Dreamland",
@@ -9903,7 +9962,12 @@
   },
   {
     "_id": "southeast:sertp:lg-e-ku--middletown-buckner-345-kv-transmission-line",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 130652 (MIDDLETOWN 345 KV), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 38.224585,
+      "lon": -85.512349
+    },
     "counties": [],
     "description": "Replace the 345 kV breakers at Middletown and Buckner associated with the Middletown - Buckner 345 kV transmission line.",
     "evidence": {
@@ -9919,19 +9983,32 @@
       "sheet": null,
       "source_sha256": "462f9f3dee796a9c010d31581eca3402f8b93be625af68cc73b2bdba81bed0ae"
     },
-    "geography_basis": null,
+    "geography_basis": "candidate_facility_state",
     "in_service": {
       "precision": "year",
       "raw": "2026",
       "value": "2026"
     },
     "location_candidate": {
-      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state; HIFLD public substations, data/southeast/hifld/sources.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "hifld/130652",
+            "lat": 38.2245847,
+            "lon": -85.5123491,
+            "name": "MIDDLETOWN 345 KV",
+            "norm": "MIDDLETOWN 345 KV",
+            "operator": null,
+            "state": "KY",
+            "voltage": "345000;138000"
+          },
           "name": "Middletown",
           "norm": "MIDDLETOWN",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": "Buckner",
@@ -9953,12 +10030,12 @@
       ],
       "reason": null,
       "rule": "C45",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "MIDDLETOWN - BUCKNER 345 KV TRANSMISSION LINE",
     "native_id": "lg-e-ku--middletown-buckner-345-kv-transmission-line",
     "other_owners": [],
@@ -9987,7 +10064,9 @@
       }
     ],
     "source_id": "southeast:sertp:2025-preliminary",
-    "states": [],
+    "states": [
+      "21"
+    ],
     "status": "Listed in the 2025 SERTP Preliminary Expansion Plan Report (Non-CEII); In-Service Year 2026",
     "status_group": "planned"
   },
@@ -15817,9 +15896,22 @@
           "status": "ambiguous_in_footprint"
         },
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/150373",
+            "lat": 27.0569502,
+            "lon": -80.560515,
+            "name": "MARTIN",
+            "norm": "MARTIN",
+            "operator": null,
+            "state": "FL",
+            "voltage": "500000"
+          },
           "name": "Martin",
           "norm": "MARTIN",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         }
       ],
       "footprint_states": [
@@ -23570,9 +23662,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/152918",
+            "lat": 29.8796524,
+            "lon": -82.1340716,
+            "name": "HAMPTON",
+            "norm": "HAMPTON",
+            "operator": null,
+            "state": "FL",
+            "voltage": "138000;138000"
+          },
           "name": "Hampton",
           "norm": "HAMPTON",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         },
         {
           "name": "Mcdonough",
@@ -23669,9 +23774,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/152918",
+            "lat": 29.8796524,
+            "lon": -82.1340716,
+            "name": "HAMPTON",
+            "norm": "HAMPTON",
+            "operator": null,
+            "state": "FL",
+            "voltage": "138000;138000"
+          },
           "name": "Hampton",
           "norm": "HAMPTON",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         },
         {
           "name": "Ohara",
@@ -23768,9 +23886,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/152918",
+            "lat": 29.8796524,
+            "lon": -82.1340716,
+            "name": "HAMPTON",
+            "norm": "HAMPTON",
+            "operator": null,
+            "state": "FL",
+            "voltage": "138000;138000"
+          },
           "name": "Hampton",
           "norm": "HAMPTON",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         },
         {
           "name": "South Griffin",
@@ -32577,9 +32708,22 @@
       "dataset": "OpenStreetMap power=substation (ODbL), reported state",
       "endpoints": [
         {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "hifld/147889",
+            "lat": 36.288747,
+            "lon": -82.1699212,
+            "name": "HAMPTON",
+            "norm": "HAMPTON",
+            "operator": null,
+            "state": "TN",
+            "voltage": "161000;161000"
+          },
           "name": "Hampton",
           "norm": "HAMPTON",
-          "status": "no_facility"
+          "status": "voltage_conflict"
         }
       ],
       "footprint_states": [
@@ -33479,7 +33623,12 @@
   },
   {
     "_id": "southeast:sertp:tva--philadelphia-161-kv-reactors-install",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to HIFLD substation 149765 (PHILADELPHIA), corroborated by voltage.",
+      "lat": 32.767102,
+      "lon": -89.115553
+    },
     "counties": [],
     "description": "Install three reactors at the Philadelphia 161 kV Substation.",
     "evidence": {
@@ -33495,19 +33644,32 @@
       "sheet": null,
       "source_sha256": "462f9f3dee796a9c010d31581eca3402f8b93be625af68cc73b2bdba81bed0ae"
     },
-    "geography_basis": null,
+    "geography_basis": "candidate_facility_state",
     "in_service": {
       "precision": "year",
       "raw": "2027",
       "value": "2027"
     },
     "location_candidate": {
-      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state; HIFLD public substations, data/southeast/hifld/sources.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "hifld/149765",
+            "lat": 32.7671015,
+            "lon": -89.115553,
+            "name": "PHILADELPHIA",
+            "norm": "PHILADELPHIA",
+            "operator": null,
+            "state": "MS",
+            "voltage": "161000;161000"
+          },
           "name": "Philadelphia",
           "norm": "PHILADELPHIA",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "footprint_states": [
@@ -33527,12 +33689,12 @@
       ],
       "reason": null,
       "rule": "C45",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         161
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "PHILADELPHIA 161 KV REACTORS, INSTALL",
     "native_id": "tva--philadelphia-161-kv-reactors-install",
     "other_owners": [],
@@ -33561,7 +33723,9 @@
       }
     ],
     "source_id": "southeast:sertp:2025-preliminary",
-    "states": [],
+    "states": [
+      "28"
+    ],
     "status": "Listed in the 2025 SERTP Preliminary Expansion Plan Report (Non-CEII); In-Service Year 2027",
     "status_group": "planned"
   },

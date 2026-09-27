@@ -9,7 +9,7 @@
     "notes": [
       "CEII content check (pdftotext -layout): 5 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
       "F39 dense Southeast (C45). History only: rows whose name a current-edition row repeats add planned_milestone events; other rows are excluded.",
-      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+      "Rows give no state or owner column: states come from the matched OSM or HIFLD facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
     ],
     "planning_region": "sertp",
     "project_count": 0,
@@ -44,7 +44,7 @@
     "notes": [
       "CEII content check (pdftotext -layout): 0 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
       "F39 dense Southeast (C45). History only: rows whose name a current-edition row repeats add planned_milestone events; other rows are excluded.",
-      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+      "Rows give no state or owner column: states come from the matched OSM or HIFLD facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
     ],
     "planning_region": "sertp",
     "project_count": 0,
@@ -79,7 +79,7 @@
     "notes": [
       "CEII content check (pdftotext -layout): 5 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
       "F39 dense Southeast (C45). History only: rows whose name a current-edition row repeats add planned_milestone events; other rows are excluded.",
-      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+      "Rows give no state or owner column: states come from the matched OSM or HIFLD facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
     ],
     "planning_region": "sertp",
     "project_count": 0,
@@ -115,7 +115,7 @@
       "CEII content check (pdftotext -layout): 0 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
       "Other editions checked, not ingested: 2025 Regional Transmission Plan and Input Assumptions.pdf (sha256 9183e3ffcb4fc06e46db2afc50510948b6c0f950312440b6272aaa862bc9da6b, CEII lines 319, markings 194): fail: \"TRANSMISSION PROJECTS (CEII)\" page headings; 2022_Regional_Transmission_Plan_and_Input_Assumptions_Final_Non-CEII.pdf (sha256 bf4fbdfbb9d8f98143aab1882c8c6c7cf24873c9db62940bcf06c64564bcd80f, CEII lines 5, markings 0): pass (disclaimer only); not used: different page layout; 2021-Regional-Transmission-Plan-and-Input-Assumptions-Non-CEII.pdf (sha256 679d4f16333ebfbc3d4563edb4b3a4730c41c5aeec5d333687c19c6a7611af85, CEII lines 5, markings 0): pass (disclaimer only); not used: older than the linked history; 2026 SERTP preliminary expansion report (sha256 n/a, CEII lines n/a, markings n/a): excluded by D15; not downloaded",
       "F39 dense Southeast (C45). Current edition: one project per block.",
-      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+      "Rows give no state or owner column: states come from the matched OSM or HIFLD facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
     ],
     "planning_region": "sertp",
     "project_count": 331,
