@@ -29,10 +29,12 @@ for (const width of [1440, 390]) {
     await expect(card).toContainText(detail.dataset);
     expect(details).toBe(1);
     await page.screenshot({ path: testInfo.outputPath("selected-3d.png") });
+    // The phone layout hides dimension controls while the detail card is open.
+    if (width < 600) await page.getByRole("button", { name: "Close project", exact: true }).click();
     await page.getByRole("button", { name: "2D", exact: true }).click();
     await expect(page.getByRole("button", { name: "2D", exact: true })).toHaveAttribute("aria-pressed", "true");
-    await expect(card).toContainText(project!.native_id);
-    await page.screenshot({ path: testInfo.outputPath("selected-2d.png") });
+    if (width >= 600) await expect(card).toContainText(project!.native_id);
+    await page.screenshot({ path: testInfo.outputPath("2d.png") });
     await page.getByRole("button", { name: "3D", exact: true }).click();
     expect(details).toBe(1);
   });
