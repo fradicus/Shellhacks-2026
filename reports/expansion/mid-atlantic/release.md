@@ -1,6 +1,6 @@
 # Mid-Atlantic release: 275 project records, 266 confirmed locations
 
-Publication status: approved and validated locally; PR157 and the sole-writer load Action must complete before these are live.
+Publication status: **published and verified in Atlas**. [PR157](https://github.com/fradicus/Shellhacks-2026/pull/157) merged as `19fa5a17045455ac71f4f3316caaab6b3ed911b1`; [load Action 36292952034](https://github.com/fradicus/Shellhacks-2026/actions/runs/36292952034) succeeded. See [publication receipt](publication.md) for live API and browser evidence.
 
 ## Counts
 
@@ -41,4 +41,4 @@ The source replay command is documented in data/expansion/mid-atlantic/README.md
 
 Repo-wide final checks are recorded in PR157. An initial test run had three temporary-directory errors from a full local disk; disposable outputs were removed and checks rerun. An initial sandboxed web build could not fetch existing Google Fonts; the network-enabled build passed. No product code or evidence was weakened for either environment issue.
 
-After the merged load Action, verify every new Atlas/export record against the reviewed projection and preserve the active dataset ID and browser evidence in the live receipt. Until then, offline counts are not a claim of publication. F38 remains incomplete nationally; DC, inland coverage, prior comparable source vintages and unresolved projects remain gaps.
+Every new Atlas/export record was compared with the reviewed projection after loading. The immediate pre-load baseline included the concurrently published 17-record Florida batch: all 1,303 prior records remain exactly unchanged. The live result is 1,578 projects, 681 located and 897 unlocated. Browser checks confirm the six state counts, planned site, complete endpoint pair, partial endpoint evidence and existing time-map integration. F38 remains incomplete nationally; DC, inland coverage, prior comparable source vintages and unresolved projects remain gaps.
