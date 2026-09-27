@@ -24,6 +24,8 @@ from greatlakes.match import voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
 from midwest import build as spp
 
+from . import history
+
 OUT = REPO_ROOT / "data" / "sppsouth"
 STATES = {"OK": "40", "NM": "35", "TX": "48"}
 SOURCE_ID = "spp-qpt-2026q3-south"
@@ -102,6 +104,10 @@ def fetch(cache: Path) -> None:
     if spp.ZIP not in manifest:
         fetch_into(cache, spp.ZIP, spp.URL, manifest)
         write_json(cache / "manifest.json", manifest)
+    for name, url in history.files().items():
+        if name not in manifest:
+            fetch_into(cache, name, url, manifest)
+            write_json(cache / "manifest.json", manifest)
     for state in STATES:
         if f"osm-{state.lower()}.json" not in manifest:
             fetch_osm(cache, state, manifest)
@@ -110,14 +116,15 @@ def fetch(cache: Path) -> None:
 
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
-    manifest = verify_cache(cache, [spp.ZIP, *osm_files])
+    manifest = verify_cache(cache, [spp.ZIP, *history.files(), *osm_files])
     facilities = {s: with_aliases(osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s))
                   for s in STATES}
     osm_names = {(f["id"], f["name"]): f["osm_name"] for fs in facilities.values() for f in fs if "osm_name" in f}
     artifact = manifest[spp.ZIP]
     taken = published_uids()
     projects, dispositions = [], []
-    for row in spp.read_rows((cache / spp.ZIP).read_bytes()):
+    rows = spp.read_rows((cache / spp.ZIP).read_bytes())
+    for row in rows:
         states = spp.row_states(row["State(s)"])
         where = {"source_id": SOURCE_ID, "sheet": row["_sheet"], "row": row["_row"], "uid": str(row["UID"]),
                  "name": spp.clean(row["Upgrade Name"] or "")}
@@ -135,6 +142,16 @@ def build(cache: Path) -> dict[Path, object]:
         projects.append(record)
         dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
                                      "location": record["location_candidate"]["tier"] or "unlocated"})
+    current_count = len(projects)
+    past, more, used = history.projects(cache, manifest, {str(r["UID"]) for r in rows}, taken, facilities, STATES,
+                                        OPERATOR_KEYS, "C47")
+    for record in past:  # the same alias provenance as the current edition's records
+        for e in record["location_candidate"]["endpoints"]:
+            if (f := e.get("facility")) and (f["id"], f["name"]) in osm_names:
+                f["osm_name"] = osm_names[(f["id"], f["name"])]
+                record["center"]["evidence"] += f" OSM {f['id']} is named “{f['osm_name']}”; “{f['name']}” is its alias."
+    projects += past
+    dispositions += more
     if len({p["_id"] for p in projects}) != len(projects):
         raise SystemExit("project ID repeated within the workbook")
     projects.sort(key=lambda p: p["_id"])
@@ -144,14 +161,17 @@ def build(cache: Path) -> dict[Path, object]:
         "role": "project_plan", "landing_url": spp.LANDING, "download_url": artifact["url"], "publication_date": None,
         "vintage": "2026 Q3", "retrieved_at": artifact["retrieved_at"], "sha256": artifact["sha256"],
         "public_status": "verified_public", "import_status": "imported", "access_policy": "public_document",
-        "planning_region": "spp", "states": sorted({s for p in projects for s in p["states"]}),
-        "project_count": len(projects),
+        "planning_region": "spp", "states": sorted({s for p in projects if p["source_id"] == SOURCE_ID
+                                                    for s in p["states"]}),
+        "project_count": current_count,
         "notes": ["F47 SPP South release (C47): SPP upgrades whose listed states are all OK, NM or TX; the same "
                   "artifact and hash as F46's spp-qpt-2026q3. Locations are unreviewed C33 candidates from named OSM "
                   "substations; none is independently confirmed. Source-bounded, not statewide coverage.",
                   f"sha256 is of the appendix zip; rows are read from its member “{spp.MEMBER.split('/')[-1]}”."],
     }
-    return {OUT / "projects.json": projects, OUT / "sources.json": [source],
+    past_sources = history.sources(used, projects, "F47 SPP South (FIX-F47): completed OK/NM/TX upgrades absent from "
+                                   "the 2026 Q3 edition.")
+    return {OUT / "projects.json": projects, OUT / "sources.json": [source, *past_sources],
             OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",

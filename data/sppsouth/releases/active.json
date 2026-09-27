@@ -1,17 +1,17 @@
 {
   "expected_counts": {
-    "candidate": 244,
-    "candidate_unique_name": 30,
-    "centers": 274,
-    "distinct_points": 114,
-    "projects": 722,
-    "sources": 1
+    "candidate": 376,
+    "candidate_unique_name": 45,
+    "centers": 421,
+    "distinct_points": 197,
+    "projects": 1021,
+    "sources": 10
   },
   "files": {
-    "projects": "0d8f371999ebf9704113a7c4ad3713ce5be9c31dd1f78da19e5e8e1fd182249c",
-    "sources": "82c62844275192e5e899f63dc449c643e1df7dffc32412e67d7da367c641c528"
+    "projects": "178439e9650afed7325d730ba001d7f578b6e033009a8954342c9f02861a997a",
+    "sources": "8f36cf7df5cc5849f79eded8c238c64ceccb792b56d3a5eab1532709853ee431"
   },
   "policy": "C25",
-  "release_id": "sppsouth-spp-candidates-2",
+  "release_id": "sppsouth-spp-candidates-3",
   "rule": "C33"
 }

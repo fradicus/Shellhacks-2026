@@ -17,7 +17,7 @@ from midwest.publish import _check_center, counts
 
 FOLDER = Path("data/sppsouth")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "sppsouth-spp-candidates-2"
+RELEASE_ID = "sppsouth-spp-candidates-3"
 FIPS = {"40", "35", "48"}  # OK, NM, TX
 
 
@@ -73,7 +73,8 @@ def apply_release(snapshot: dict, root: Path) -> dict:
     result["projects"].extend(deepcopy(projects))
     result["coverage"]["sppsouth"] = {
         "release_id": RELEASE_ID, **measured, "independently_confirmed_projects": 0,
-        "notes": "SPP-approved transmission upgrades (Q3 2026 project tracking) in Oklahoma, eastern New Mexico and "
-                 "non-ERCOT Texas. Candidate points are labeled and never confirmed; no statewide completeness claim.",
+        "notes": "SPP-approved transmission upgrades (Q3 2026 project tracking, plus completed upgrades only older Q4 "
+                 "editions list) in Oklahoma, eastern New Mexico and non-ERCOT Texas. "
+                 "Candidate points are labeled and never confirmed; no statewide completeness claim.",
     }
     return result
