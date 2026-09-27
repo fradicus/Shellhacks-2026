@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51, F52]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
@@ -363,3 +363,14 @@ records the contracts, assigns the new unowned paths (legacy contract to F06, th
 tests and `.env.example` to F08, the acceptance suite to F07) and freezes the Node test loader.
 [C53](decisions/C53-provider-routing-and-upload.md) records the map/routing provider policy and the contract-upload
 acceptance boundary. No feature is added and existing assignments remain.
+
+## Overlaps clarity pass
+
+After a frontend review, the user told Claude local to own a spec and drive it. [C54](decisions/C54-overlaps-clarity.md)
+assigns [F52](features/F52-overlaps-clarity/spec.md): review state on the filing-pair rows, story captions that
+follow stored state, selected-pair layout fixes, and the Gemini page's default tab. Like F21, it ships as
+`[FIX-<ID>]` PRs in the owners' paths. It changes no data or ranking.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F52 | Overlaps clarity pass | B | frontend-engineer | 7 | F19, F21 | allowed |
