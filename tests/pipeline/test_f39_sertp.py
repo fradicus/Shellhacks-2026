@@ -1,4 +1,4 @@
-"""F39/C40 SERTP batch: block parser, CEII marking check, cross-edition links, name guard, committed release."""
+"""F39/C45 SERTP batch: block parser, CEII marking check, cross-edition links, name guard, committed release."""
 
 from common import REPO_ROOT, load_json
 from southeast import dense

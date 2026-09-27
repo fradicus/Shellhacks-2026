@@ -1,4 +1,4 @@
-# Dense Southeast: SERTP expansion plans (C40)
+# Dense Southeast: SERTP expansion plans (C45)
 
 Source: the Southeastern Regional Transmission Planning (SERTP) public [archive](https://www.southeasternrtp.com/archive.cshtml).
 Each project block gives In-Service Year, Project Name, Description and Supporting Statement under a Balancing
@@ -23,7 +23,7 @@ re-runs the check and refuses to build if it finds a CEII marking.
 331 projects are accepted; 93 more rows are duplicates of legacy Georgia Power projects (see below). All 331 are
 `planned`: listed with a future In-Service Year, which is year precision. Every project has at least the 2025
 `planned_milestone` event. 69 link to an older edition, and 35 of those record a changed year. Located
-records are C40 `candidate` (OSM exact name plus operator or voltage) or `candidate_unique_name`, and all are
+records are C45 `candidate` (OSM exact name plus operator or voltage) or `candidate_unique_name`, and all are
 `unreviewed`. There are 0 official points and 0 verified.
 
 | State | Projects | Candidate | Name-only | Not in service | Dated |

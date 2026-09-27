@@ -5,7 +5,7 @@
 F39 owns Southeast delivery and must "preserve … SERTP D15 exclusion" and review source content before acquisition.
 [D15](000-overnight-defaults.md) excludes the 2026 SERTP preliminary expansion report because its text carries CEII
 headings. This records the content check for the other editions on the public
-[SERTP archive](https://www.southeasternrtp.com/archive.cshtml), as used by the C40 dense batch `sertp`.
+[SERTP archive](https://www.southeasternrtp.com/archive.cshtml), as used by the C45 dense batch `sertp`.
 
 ## Check
 

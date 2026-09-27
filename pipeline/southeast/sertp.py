@@ -391,7 +391,7 @@ def build(cache: Path) -> dict:
                     f"{f} (sha256 {h or 'n/a'}, CEII lines {n if n is not None else 'n/a'}, markings "
                     f"{m if m is not None else 'n/a'}): {v}" for f, h, n, m, v in NOT_INGESTED)]
                   if edition == CURRENT else []),
-                "F39 dense Southeast (C40). " + ("Current edition: one project per block." if edition == CURRENT else
+                "F39 dense Southeast (C45). " + ("Current edition: one project per block." if edition == CURRENT else
                                                  "History only: rows whose name a current-edition row repeats add "
                                                  "planned_milestone events; other rows are excluded."),
                 "Rows give no state or owner column: states come from the matched OSM facility within the Balancing "
