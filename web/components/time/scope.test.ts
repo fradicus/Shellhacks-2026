@@ -18,7 +18,7 @@ const regionOf = new Map([["48", "3"], ["22", "3"], ["36", "1"]]);
 test("parse and format round-trip, and malformed values are ignored", () => {
   for (const raw of ["region:3", "state:48", "plan:ercot", "pin:29.7604,-95.3698"])
     assert.equal(formatScope(parseScope(raw)!), raw);
-  for (const raw of [null, "", "region:5", "state:4", "plan:ER COT", "pin:,", "pin:91,0", "pin:1,2,3", "pin:a,b", "county:01"])
+  for (const raw of [null, "", "region:5", "state:4", "plan:ER COT", "plan:terminal-facilities", "plan:constructor", "pin:,", "pin:91,0", "pin:1,2,3", "pin:a,b", "county:01"])
     assert.equal(parseScope(raw), null, String(raw));
 });
 
@@ -46,4 +46,6 @@ test("state and region come from stored states or the legacy filing", () => {
   assert.equal(planOf(line), "pjm");
   assert.ok(inScope(line, { kind: "plan", code: "pjm" }, regionOf));
   assert.equal(planOf(national([], null)), null);
+  // A section heading stored in the field is not a plan.
+  assert.equal(planOf(national(["41"], "Terminal Facilities; BPA")), null);
 });

@@ -27,3 +27,18 @@ both merge, so F19 never has two open PRs or two active writers.
 - **Pin radius = the overlap rule's 25 statute miles, by the matcher's haversine.** The pin lists neighbours;
   it creates no pair and no rank.
 - **No cursor lens** (see the spec's Deferred list).
+
+## Revision: Places, Grid and a pin button (2026-09-27)
+The user reviewed the first scope bar: the grid-plan group was flooded, there was no way back to the whole country
+from the list, and the list was long. They chose to keep both Census regions (legible to a general judge) and grid
+plans (for sponsor judges), and to make the pin its own quick control.
+- **Two tabs, not one long list.** Places (United States, regions, states) and Grid (plans) share one search, so
+  typing still finds anything, but neither audience scrolls past the other's rows.
+- **Grid lists only named plans.** F42's Pacific Northwest import stores PDF section headings in
+  `planning_region` (`pipeline/pnw/build.py`: 83 distinct values such as `terminal facilities; bpa` on 312
+  records). Those are not plans. F19 lists the plans it names and says how many drawn projects have none, rather
+  than editing F42's data; the heading is also kept in the record's evidence, so F42 can null the field later.
+- **Names as filed, not merged into operators.** ATC 10-year and Minnesota biennial stay separate from MISO:
+  merging them would be our inference.
+- **States A–Z down two columns.** People look a state up by name; two columns halve the height.
+- **Pin is a button (`P`), not the last row.** It is picked on the map, not from a list.

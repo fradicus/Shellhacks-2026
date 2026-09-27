@@ -24,8 +24,14 @@ export function statesOf(p: TimeProject): string[] {
   return hit ? [hit[1]] : [];
 }
 
-/** Stored planning label, grouped case-insensitively ("PJM" and "pjm" are one plan). */
-export const planOf = (p: TimeProject) => p.national?.project.planning_region?.trim().toLowerCase() || null;
+/**
+ * Stored planning label, grouped case-insensitively ("PJM" and "pjm" are one plan). Only the plans named below count:
+ * some imports stored a document's section heading in the field ("terminal facilities; bpa"), which is not a plan.
+ */
+export const planOf = (p: TimeProject) => {
+  const code = p.national?.project.planning_region?.trim().toLowerCase();
+  return code && Object.hasOwn(PLAN_NAME, code) ? code : null;
+};
 const PLAN_NAME: Record<string, string> = {
   ercot: "ERCOT", nyiso: "NYISO", frcc: "FRCC", "atc-tya": "ATC 10-year", miso: "MISO", "mn-biennial": "Minnesota biennial",
   pjm: "PJM", "iso-ne": "ISO-NE", nypsc: "NY PSC", caiso: "CAISO", spp: "SPP", sertp: "SERTP", scrtp: "SCRTP",
@@ -50,7 +56,7 @@ export function parseScope(raw: string | null): Scope | null {
   const [, kind, code] = m;
   if (kind === "region") return /^[1-4]$/.test(code) ? { kind, code } : null;
   if (kind === "state") return /^\d{2}$/.test(code) ? { kind, code } : null;
-  if (kind === "plan") return /^[a-z0-9-]{1,40}$/.test(code) ? { kind, code } : null;
+  if (kind === "plan") return Object.hasOwn(PLAN_NAME, code) ? { kind, code } : null;
   const ll = code.match(/^(-?\d{1,3}(?:\.\d+)?),(-?\d{1,3}(?:\.\d+)?)$/);
   const [lat, lon] = [Number(ll?.[1]), Number(ll?.[2])];
   return ll && Math.abs(lat) <= 90 && Math.abs(lon) <= 180 ? { kind: "pin", lat, lon } : null;
