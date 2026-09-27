@@ -6,6 +6,7 @@ Run from ``pipeline/`` with ``uv run python -m national.load``. Without
 
 from __future__ import annotations
 
+import json
 import os
 import subprocess
 import sys
@@ -17,8 +18,10 @@ from pymongo import ASCENDING, GEOSPHERE
 
 from common import REPO_ROOT
 from national.build import load_snapshot
+from national_pairs.build import COLLECTION as PAIRS_COLLECTION
+from national_pairs.build import generate
 
-COLLECTIONS = ("national_sources", "national_projects")
+COLLECTIONS = ("national_sources", "national_projects", PAIRS_COLLECTION)
 KEEP_DATASETS = 2
 
 
@@ -26,7 +29,7 @@ def _now() -> str:
     return datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
-def stage(snapshot: dict[str, Any], dataset: str) -> dict[str, list[dict[str, Any]]]:
+def stage(snapshot: dict[str, Any], dataset: str, pairs: list[dict] | None = None) -> dict[str, list[dict[str, Any]]]:
     sources = [{**source, "_id": f"{dataset}:{source['_id']}", "id": source["_id"], "dataset": dataset}
                for source in snapshot["sources"]]
     projects = []
@@ -40,7 +43,10 @@ def stage(snapshot: dict[str, Any], dataset: str) -> dict[str, list[dict[str, An
             "dataset": dataset,
             "geo": geo,
         })
-    return {"national_sources": sources, "national_projects": projects}
+    pairs = generate(snapshot)["pairs"] if pairs is None else pairs
+    staged_pairs = [{**pair, "_id": f"{dataset}:{pair['_id']}", "id": pair["_id"], "dataset": dataset}
+                    for pair in pairs]
+    return {"national_sources": sources, "national_projects": projects, PAIRS_COLLECTION: staged_pairs}
 
 
 def ensure_indexes(db: Any) -> None:
@@ -53,11 +59,18 @@ def ensure_indexes(db: Any) -> None:
     db.national_projects.create_index([("dataset", ASCENDING), ("status_group", ASCENDING)])
     db.national_projects.create_index([("dataset", ASCENDING), ("in_service.value", ASCENDING)])
     db.national_projects.create_index([("dataset", ASCENDING), ("geo", GEOSPHERE)])
+    db[PAIRS_COLLECTION].create_index([("dataset", ASCENDING), ("id", ASCENDING)], unique=True)
+    db[PAIRS_COLLECTION].create_index([("dataset", ASCENDING), ("rank", ASCENDING)], unique=True)
+    for field in ("shared_states", "shared_regions", "shared_plans"):
+        db[PAIRS_COLLECTION].create_index([("dataset", ASCENDING), (field, ASCENDING), ("rank", ASCENDING)])
+    for field in ("geo_a", "geo_b"):
+        db[PAIRS_COLLECTION].create_index([("dataset", ASCENDING), (field, GEOSPHERE)])
     db.national_runs.create_index([("dataset", ASCENDING), ("status", ASCENDING)])
 
 
 def _run(db: Any, dataset: str, started: str, status: str, counts: dict[str, int],
-         coverage: dict[str, Any], errors: list[str] | None = None) -> None:
+         coverage: dict[str, Any], errors: list[str] | None = None,
+         candidate_coverage: dict[str, Any] | None = None) -> None:
     document: dict[str, Any] = {
         "_id": f"national-load:{dataset}",
         "stage": "national_load",
@@ -68,14 +81,22 @@ def _run(db: Any, dataset: str, started: str, status: str, counts: dict[str, int
         "counts": counts,
         "coverage": coverage,
     }
+    if candidate_coverage is not None:
+        document["candidate_pair_coverage"] = candidate_coverage
     if errors:
         document["errors"] = errors[:50]
     db.national_runs.replace_one({"_id": document["_id"]}, document, upsert=True)
 
 
-def load(db: Any, snapshot: dict[str, Any], dataset: str) -> int:
+def load(db: Any, snapshot: dict[str, Any], dataset: str, candidates: dict | None = None) -> int:
     started = _now()
-    records = stage(snapshot, dataset)
+    try:
+        candidates = generate(snapshot) if candidates is None else candidates
+        records = stage(snapshot, dataset, candidates["pairs"])
+    except (ValueError, KeyError, TypeError) as exc:
+        print(f"national load: candidate generation failed ({type(exc).__name__}); previous dataset retained")
+        return 1
+    candidate_coverage = candidates["coverage"]
     counts = {collection: len(records[collection]) for collection in COLLECTIONS}
     meta = db.meta.find_one({"_id": "national_active"}) or {}
     if meta.get("dataset") == dataset:
@@ -85,7 +106,7 @@ def load(db: Any, snapshot: dict[str, Any], dataset: str) -> int:
             print(f"national load: active dataset {dataset} is incomplete; refusing in-place rewrite")
             return 1
         try:
-            _run(db, dataset, started, "ok", counts, snapshot["coverage"])
+            _run(db, dataset, started, "ok", counts, snapshot["coverage"], candidate_coverage=candidate_coverage)
         except Exception as exc:  # noqa: BLE001 - an active dataset must retain its coverage record
             print(f"national load: could not persist active coverage ({type(exc).__name__})")
             return 1
@@ -97,11 +118,14 @@ def load(db: Any, snapshot: dict[str, Any], dataset: str) -> int:
             db[collection].delete_many({"dataset": dataset})
             if documents:
                 db[collection].insert_many(documents, ordered=False)
-        _run(db, dataset, started, "ready", counts, snapshot["coverage"])
+        if any(db[collection].count_documents({"dataset": dataset}) != count
+               for collection, count in counts.items()):
+            raise RuntimeError("staged dataset count mismatch")
+        _run(db, dataset, started, "ready", counts, snapshot["coverage"], candidate_coverage=candidate_coverage)
     except Exception as exc:  # noqa: BLE001 - any write/evidence failure must leave national_active unchanged
         try:
             _run(db, dataset, started, "failed", counts, snapshot["coverage"],
-                 [f"write failed: {type(exc).__name__}"])
+                 [f"write failed: {type(exc).__name__}"], candidate_coverage=candidate_coverage)
         except Exception:  # noqa: BLE001 - the original failure remains the actionable result
             pass
         return 1
@@ -116,7 +140,7 @@ def load(db: Any, snapshot: dict[str, Any], dataset: str) -> int:
         print(f"national load: activation did not complete ({type(exc).__name__})")
         return 1
     try:
-        _run(db, dataset, started, "ok", counts, snapshot["coverage"])
+        _run(db, dataset, started, "ok", counts, snapshot["coverage"], candidate_coverage=candidate_coverage)
     except Exception as exc:  # noqa: BLE001 - ready coverage was persisted before the active pointer moved
         print(f"national load: warning: active with ready coverage; final run status failed ({type(exc).__name__})")
     keep = [value for value in (dataset, previous) if value][:KEEP_DATASETS]
@@ -137,12 +161,14 @@ def dataset_id(root: Path = REPO_ROOT) -> str:
 def main() -> int:
     try:
         snapshot = load_snapshot(REPO_ROOT)
+        candidates = generate(snapshot)
     except (OSError, ValueError) as exc:
         print(f"national load: INVALID {exc}")
         return 1
     dataset = dataset_id()
     print(f"national load: sources  {len(snapshot['sources']):6} records")
     print(f"national load: projects {len(snapshot['projects']):6} records")
+    print("national candidate coverage: " + json.dumps(candidates["coverage"], sort_keys=True))
     uri = os.environ.get("MONGODB_URI_RW")
     if not uri:
         print("::warning::MONGODB_URI_RW is not set; validated only, nothing loaded")
@@ -151,7 +177,20 @@ def main() -> int:
 
     client = MongoClient(uri, serverSelectionTimeoutMS=20_000, appname="gridbridge-national-load")
     try:
-        result = load(client[os.environ.get("MONGODB_DB", "gridbridge")], snapshot, dataset)
+        db = client[os.environ.get("MONGODB_DB", "gridbridge")]
+        result = load(db, snapshot, dataset, candidates)
+        if result == 0:
+            actual = db[PAIRS_COLLECTION].count_documents({"dataset": dataset})
+            if actual != len(candidates["pairs"]):
+                print("national candidate readback mismatch")
+                return 1
+            report = (f"\n## Provisional national pairs\n\nDataset `{dataset}`: {actual:,} pairs. "
+                      "Straight-line distance <25 mi; no driving-route or construction-window claim.\n\n"
+                      + "```json\n" + json.dumps(candidates["coverage"], indent=2) + "\n```\n")
+            print(report)
+            if os.environ.get("GITHUB_STEP_SUMMARY"):
+                with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as out:
+                    out.write(report)
     finally:
         client.close()
     print(f"national load: dataset {dataset} {'active' if result == 0 else 'NOT activated'}")
