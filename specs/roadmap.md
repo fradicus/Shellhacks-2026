@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F19, F21, F40, F42]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F41]
+  claude-local: [F00, F05, F11, F14, F16, F19, F21, F37, F40, F42]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41]
 frozen_paths:
   - schemas/
   - scripts/
@@ -101,7 +101,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F30 | Trusted national sources, Census geography, regional imports | A | data-researcher | 5 | F00 | never |
 | F31 | National explorer with state/county/region filters | B | frontend-engineer | 5 | F00 | never |
 | F32 | Optional AI app controls, separate prototype branch | B | gemini-engineer | 5 | F31 | allowed |
-| F37 | 3D History page and sourced project/contract events (spec only; implementation pending) | B | frontend-engineer | 6 | F19 | allowed |
+| F37 | 3D History page and sourced project/contract events (part 1 started 2026-09-27; award evidence pending) | B | frontend-engineer | 6 | F19 | allowed |
 | F33 | Verified EIA directory and evidence reconciliation | A | data-researcher | 6 | F00 | never |
 | F34 | Environmental evidence, current conditions and truck route adapters | A | geo-engineer | 6 | F00 | never |
 | F35 | Actual job outcomes, evaluated duration and delay estimates | B | technical-lead | 6 | F00 | never |
@@ -149,6 +149,11 @@ F37 is reserved to codex-local for later implementation; it is not eligible for 
 user starts that work and the shared-scene/data integration contract is accepted. Existing F19/F21 and proposed
 C15/F33–F36 ownership remain intact. A merged specification does not satisfy F37's completion criteria or claim
 that historical contracts have been acquired. Original run gates remain historical for this bounded spec task.
+
+2026-09-27: the user explicitly started F37 in a local Claude Code session. [C32](decisions/C32-history-navigation.md)
+moves F37 to claude-local (no codex-local F37 PR or branch existed) and adds the History nav item. F37 part 1 reads
+the existing loaders only; the shared-scene extraction stays deferred because F37 keeps its own layer and edits no
+F19 file. Award/contract evidence remains F37's unmet part 2.
 
 ## Specified follow-on: verified geographic expansion
 

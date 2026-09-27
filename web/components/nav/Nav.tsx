@@ -9,6 +9,7 @@ import styles from "./Nav.module.css";
 export const ROUTES = [
   { href: "/", label: "Home" },
   { href: "/time", label: "Overlaps" },
+  { href: "/history", label: "History" },
   { href: "/map", label: "Project map" },
   { href: "/explore", label: "National explorer" },
   { href: "/operations", label: "Field planning" },
