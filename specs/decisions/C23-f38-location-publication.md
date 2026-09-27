@@ -21,7 +21,7 @@ identity rationale. Routes/corridors are preserved as evidence; a vertex/centroi
 
 A record binds to the complete original national project with `project_facts_sha256`. Every review binds to a
 `facts_sha256` over the record excluding its `reviews` list. Hash encoding is UTF-8 JSON with Python
-`json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2, allow_nan=False) + "\\n"`.
+`json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2, allow_nan=False) + "\n"`.
 No review may be its own producer. The last appended review controls; timestamps must be ordered and real UTC.
 Only `confirmed` with a matching current facts hash can publish. Missing/stale/conflicting/insufficient/rejected
 reviews leave the project unlocated; malformed references fail the release. A change needs a new appended review.
