@@ -1,0 +1,39 @@
+{
+  "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+  "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+  "sheets": {
+    "FutureTPIT071326NoCost": {
+      "observations": 1429,
+      "unique_ids": 1424,
+      "duplicate_ids": [
+        "102795",
+        "110733",
+        "110749",
+        "110751",
+        "110753"
+      ],
+      "statuses": {
+        "Conceptual": 279,
+        "In-Service": 3,
+        "Planned": 1113,
+        "Under Construction": 6,
+        "unknown": 28
+      },
+      "candidate_projects": 4,
+      "publication_status": "research_only"
+    },
+    "CompletedTPIT071326NoCost": {
+      "observations": 262,
+      "unique_ids": 262,
+      "duplicate_ids": [],
+      "statuses": {
+        "In-Service": 145,
+        "Planned": 104,
+        "Under Construction": 11,
+        "unknown": 2
+      },
+      "candidate_projects": 0,
+      "publication_status": "research_only"
+    }
+  }
+}

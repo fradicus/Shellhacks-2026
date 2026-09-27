@@ -1,5 +1,289 @@
 [
   {
+    "_id": "ercot-tpit:109790",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "109790",
+    "name": "LCRATSC Gabriel Rivery Transmission Line Upgrade",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT named terminal; city GIS; Census Williamson County check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2029-05-15T00:00:00",
+      "value": "2029-05",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.65772714484269,
+      "lon": -97.67540997641026,
+      "basis": "two",
+      "evidence": "Unverified candidate: ERCOT FutureTPIT071326NoCost row 940 terminals linked to City of Georgetown features (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "two",
+      "lat": 30.65772714484269,
+      "lon": -97.67540997641026,
+      "endpoints": [
+        {
+          "side": "from",
+          "name": "GABRIEL",
+          "global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
+          "lat": 30.666904123363757,
+          "lon": -97.66118530162744,
+          "county_check": "48491"
+        },
+        {
+          "side": "to",
+          "name": "RIVERY",
+          "global_id": "{2BC75451-1100-4712-9006-66C176DDE112}",
+          "lat": 30.648550166321616,
+          "lon": -97.68963465119309,
+          "county_check": "48491"
+        }
+      ],
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "owner_relation_url": null,
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "FutureTPIT071326NoCost",
+      "row": 940,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "109790",
+        "Project Title": "LCRATSC Gabriel Rivery Transmission Line Upgrade",
+        "Terminal from": "Gabriel",
+        "Terminal to": "Rivery",
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2029-05-15T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "138"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:109814",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "109814",
+    "name": "LCRATSC Gabriel Glasscock Transmission Line Upgrade",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT named terminal; city GIS; Census Williamson County check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2030-02-01T00:00:00",
+      "value": "2030-02",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.739601811022286,
+      "lon": -97.69429338355134,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT FutureTPIT071326NoCost row 1140 terminals linked to City of Georgetown features (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.739601811022286,
+      "lon": -97.69429338355134,
+      "endpoints": [
+        {
+          "side": "to",
+          "name": "GLASSCOCK",
+          "global_id": "{CCC3468C-4EE9-49F9-B691-FE1C9BA5F569}",
+          "lat": 30.739601811022286,
+          "lon": -97.69429338355134,
+          "county_check": "48491"
+        }
+      ],
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "owner_relation_url": "https://www.lcra.org/energy/electric-transmission/",
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "FutureTPIT071326NoCost",
+      "row": 1140,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "109814",
+        "Project Title": "LCRATSC Gabriel Glasscock Transmission Line Upgrade",
+        "Terminal from": "Structure 21",
+        "Terminal to": "Glasscock Sub",
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2030-02-01T00:00:00",
+        "County from": "Williamson",
+        "County to": null,
+        "Service Level kV": "138"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:110120",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "110120",
+    "name": "LCRATSC Gabriel - Hutto Transmission Line Addition",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT named terminal; city GIS; Census Williamson County check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2031-12-31T00:00:00",
+      "value": "2031-12",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT FutureTPIT071326NoCost row 1366 terminals linked to City of Georgetown features (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "endpoints": [
+        {
+          "side": "from",
+          "name": "GABRIEL",
+          "global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
+          "lat": 30.666904123363757,
+          "lon": -97.66118530162744,
+          "county_check": "48491"
+        }
+      ],
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "owner_relation_url": null,
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "FutureTPIT071326NoCost",
+      "row": 1366,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "110120",
+        "Project Title": "LCRATSC Gabriel - Hutto Transmission Line Addition",
+        "Terminal from": "Gabriel",
+        "Terminal to": "Hutto",
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2031-12-31T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "345"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:110122",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "110122",
+    "name": "LCRATSC Gabriel - Salado Sw Transmission Line Addition",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT named terminal; city GIS; Census Williamson County check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2031-12-31T00:00:00",
+      "value": "2031-12",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT FutureTPIT071326NoCost row 1358 terminals linked to City of Georgetown features (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "endpoints": [
+        {
+          "side": "from",
+          "name": "GABRIEL",
+          "global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
+          "lat": 30.666904123363757,
+          "lon": -97.66118530162744,
+          "county_check": "48491"
+        }
+      ],
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "owner_relation_url": null,
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "FutureTPIT071326NoCost",
+      "row": 1358,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "110122",
+        "Project Title": "LCRATSC Gabriel - Salado Sw Transmission Line Addition",
+        "Terminal from": "Gabriel",
+        "Terminal to": "Salado Switch",
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2031-12-31T00:00:00",
+        "County from": "Williamson",
+        "County to": "Bell",
+        "Service Level kV": "345"
+      }
+    }
+  },
+  {
     "_id": "ercot-tpit:80546B",
     "source_id": "ercot-tpit-2026-07",
     "native_id": "80546B",
@@ -56,69 +340,6 @@
         "Transmission Status": "Planned",
         "Transmission Owner": "ONCOR",
         "Projected In-Service Date": "2026-05-15T00:00:00",
-        "County from": "Williamson",
-        "County to": "Williamson",
-        "Service Level kV": "138"
-      }
-    }
-  },
-  {
-    "_id": "ercot-tpit:92629",
-    "source_id": "ercot-tpit-2026-07",
-    "native_id": "92629",
-    "name": "Gabriel - Rivery MLSE Upgrade",
-    "description": null,
-    "owner": "LCRATSC",
-    "other_owners": [],
-    "planning_region": "ercot",
-    "states": [
-      "48"
-    ],
-    "counties": [
-      "48491"
-    ],
-    "geography_basis": "ERCOT Williamson County terminal; Census coordinate county check",
-    "status": "Planned",
-    "status_group": "planned",
-    "in_service": {
-      "raw": "2026-06-30T00:00:00",
-      "value": "2026-06",
-      "precision": "month"
-    },
-    "center": {
-      "lat": 30.666904123363757,
-      "lon": -97.66118530162744,
-      "basis": "one",
-      "evidence": "Unverified candidate: ERCOT row 105 terminal matched City of Georgetown facility {2C60F723-5BA1-4A1C-A64B-554182454355} (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
-    },
-    "location_review": "unreviewed",
-    "location_candidate": {
-      "tier": "candidate",
-      "basis": "one",
-      "lat": 30.666904123363757,
-      "lon": -97.66118530162744,
-      "facility_name": "GABRIEL",
-      "facility_global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
-      "facility_owner_raw": "LCRA",
-      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
-      "gis_crs": "EPSG:4326",
-      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
-      "match": "unique normalized source terminal + named Williamson County",
-      "independent_review": false
-    },
-    "evidence": {
-      "page": null,
-      "sheet": "PlannedTPIT071326NoCost",
-      "row": 105,
-      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
-      "raw": {
-        "ERCOT Project Number": "92629",
-        "Project Title": "Gabriel - Rivery MLSE Upgrade",
-        "Terminal from": "Gabriel Substation",
-        "Terminal to": null,
-        "Transmission Status": "Planned",
-        "Transmission Owner": "LCRATSC",
-        "Projected In-Service Date": "2026-06-30T00:00:00",
         "County from": "Williamson",
         "County to": "Williamson",
         "Service Level kV": "138"
@@ -245,6 +466,69 @@
         "Transmission Status": "Planned",
         "Transmission Owner": "LCRATSC",
         "Projected In-Service Date": "2026-12-31T00:00:00",
+        "County from": "Williamson",
+        "County to": "Williamson",
+        "Service Level kV": "138"
+      }
+    }
+  },
+  {
+    "_id": "ercot-tpit:92629",
+    "source_id": "ercot-tpit-2026-07",
+    "native_id": "92629",
+    "name": "Gabriel - Rivery MLSE Upgrade",
+    "description": null,
+    "owner": "LCRATSC",
+    "other_owners": [],
+    "planning_region": "ercot",
+    "states": [
+      "48"
+    ],
+    "counties": [
+      "48491"
+    ],
+    "geography_basis": "ERCOT Williamson County terminal; Census coordinate county check",
+    "status": "Planned",
+    "status_group": "planned",
+    "in_service": {
+      "raw": "2026-06-30T00:00:00",
+      "value": "2026-06",
+      "precision": "month"
+    },
+    "center": {
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "basis": "one",
+      "evidence": "Unverified candidate: ERCOT row 105 terminal matched City of Georgetown facility {2C60F723-5BA1-4A1C-A64B-554182454355} (https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31)"
+    },
+    "location_review": "unreviewed",
+    "location_candidate": {
+      "tier": "candidate",
+      "basis": "one",
+      "lat": 30.666904123363757,
+      "lon": -97.66118530162744,
+      "facility_name": "GABRIEL",
+      "facility_global_id": "{2C60F723-5BA1-4A1C-A64B-554182454355}",
+      "facility_owner_raw": "LCRA",
+      "gis_url": "https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31",
+      "gis_crs": "EPSG:4326",
+      "gis_sha256": "8744d520a685689b8166948af6077f8b52447b2b61842a6b25ba72f0e7b97f49",
+      "match": "unique normalized source terminal + named Williamson County",
+      "independent_review": false
+    },
+    "evidence": {
+      "page": null,
+      "sheet": "PlannedTPIT071326NoCost",
+      "row": 105,
+      "source_sha256": "4a08ea0f26af780f0d63c21304f3969ee876a49b152b827be8b48b8edb655b05",
+      "raw": {
+        "ERCOT Project Number": "92629",
+        "Project Title": "Gabriel - Rivery MLSE Upgrade",
+        "Terminal from": "Gabriel Substation",
+        "Terminal to": null,
+        "Transmission Status": "Planned",
+        "Transmission Owner": "LCRATSC",
+        "Projected In-Service Date": "2026-06-30T00:00:00",
         "County from": "Williamson",
         "County to": "Williamson",
         "Service Level kV": "138"

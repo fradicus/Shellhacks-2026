@@ -1,15 +1,39 @@
-# F41 part 2 scope: Future and Completed TPIT sheets
+# F41 part 2: July 2026 ERCOT Future and Completed cohorts
 
-This checkpoint extends the same pinned July 2026 ERCOT workbook and City of Georgetown GIS source used in part 1.
-Review all `FutureTPIT071326NoCost` and `CompletedTPIT071326NoCost` rows with ID/row reconciliation; retain status
-and date precision, and resolve the five duplicate native IDs in the Future sheet before canonical promotion.
+The pinned public [ERCOT TPIT workbook](https://www.ercot.com/gridinfo/sysplan) has 1,429 nonblank Future-sheet
+rows (1,424 unique native IDs) and 262 Completed-sheet rows (262 unique IDs). The five repeated Future IDs are
+`102795`, `110733`, `110749`, `110751` and `110753`. These remain separate source observations; none enters
+the staged set. Together with the 358 Planned-sheet rows from part 1, this is 2,049 observations across three
+sheets, not a count of unique Texas projects. Rows retain their source sheet and row, raw status, month-precision
+milestones, source hash and nullable location. The workbook hash is recorded in `data/texas/more-summary.json`.
+The raw workbook remains outside the repository.
 
-Initial candidate leads: Future rows 940, 1140, 1358 and 1366; Completed row 35. Row 940 names Gabriel and Rivery
-line endpoints; row 35 names Chief Brady and Georgetown. Both can support a two-endpoint center only if their actual
-project-to-facility links remain unambiguous. The other leads may support one endpoint and must be labeled partial.
-Census county checks for Chief Brady, Glasscock and Rivery returned Williamson County (48491).
+Four Future-sheet line projects join the four Planned-sheet candidates. Their named terminals match unique
+features in the [City of Georgetown utility GIS layer](https://gis.georgetowntexas.gov/arcgis/rest/services/GUS/GUSOPERATIONS_Webmap/MapServer/31).
+[Census coordinate-to-county checks](https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html) placed
+the relevant facilities in Williamson County (48491). All eight are **candidate** locations with
+`location_review=unreviewed`; the GIS facilities are supporting asset evidence, not separate projects.
 
-Do not place Future row 555 at its Gabriel/Glasscock line endpoints: it builds a new Aviation Substation along the
-line, and those endpoints do not locate Aviation. Do not place Completed row 48 at its line terminals as a location
-for the Florence Substation Addition. A `Completed` sheet with a `Planned` row status preserves that conflict.
-Only source-supported candidate geometry may be staged. The loaded and visible counts remain zero for this batch.
+| ERCOT ID | Future row | Location used | Basis | Projected service month |
+|---|---:|---|---|---|
+| `109790` | 940 | Gabriel and Rivery | Mean of two endpoints | 2029-05 |
+| `109814` | 1140 | Glasscock | One endpoint | 2030-02 |
+| `110122` | 1358 | Gabriel | One endpoint | 2031-12 |
+| `110120` | 1366 | Gabriel | One endpoint | 2031-12 |
+
+For row 1140, the terminal county cell is blank. The source owner is `LCRATSC`, the matching GIS facility is
+marked `LCRA`, and [LCRA identifies its transmission role](https://www.lcra.org/energy/electric-transmission/).
+That supports a labeled candidate, while the missing county remains null in the evidence. The other three
+candidate rows have a Williamson County entry at each used terminal. One-endpoint centers do not locate the
+full line route or its unknown other endpoint.
+
+Future row 555 describes an Aviation Substation addition between Gabriel and Glasscock; those line terminals do
+not locate Aviation. Completed row 48 likewise describes a Florence Substation addition whose named terminals
+do not locate Florence. Completed row 35 names Chief Brady and Georgetown line terminals, but its row status is
+`Planned` despite appearing on the Completed sheet. The source conflict remains visible in the observation, and
+this checkpoint stages no Completed-sheet project. A row on that sheet does not by itself establish completion.
+
+**Release state:** 8 staged candidates at 5 distinct center coordinates; 0 accepted release entries, 0 Atlas load
+receipts and 0 verified visible Texas selections from this batch. No independently confirmed or official-coordinate
+project has been claimed. The next task is the fixed publication contract and loader/map handoff in
+[issue #164](https://github.com/fradicus/Shellhacks-2026/issues/164).
