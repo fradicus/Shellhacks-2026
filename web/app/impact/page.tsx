@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ImpactWorksheet } from "@/components/impact/ImpactWorksheet";
 import { SiteEvidence, type SitePoint } from "@/components/impact/SiteEvidence";
+import { SiteFactors } from "@/components/impact/SiteFactors";
+import type { MapProject } from "@/components/impact/SiteMap";
 import { Badge, ReviewBadge, UtilityBadge, buttonClass, fmtMiles, gapText } from "@/components/ui";
-import { getMatches, getPair, isFixtureMode } from "@/lib/data";
+import { getMatches, getPair, getProjects, isFixtureMode } from "@/lib/data";
 import { isUnavailable, type Project } from "@/lib/types";
 import s from "@/components/impact/impact.module.css";
 
@@ -16,16 +18,25 @@ function projectPoint(project: Project | null | undefined, fallbackLabel: string
   return { label: project?.name ?? fallbackLabel, lat, lon };
 }
 
-export default async function ImpactPage({ searchParams }: { searchParams: Promise<{ pair?: string | string[] }> }) {
+export default async function ImpactPage({ searchParams }: { searchParams: Promise<{ pair?: string | string[]; tab?: string | string[] }> }) {
   const params = await searchParams;
   const id = typeof params.pair === "string" ? params.pair : "";
-  const [matches, pair] = await Promise.all([getMatches({ limit: 100 }), id ? getPair(id) : Promise.resolve(null)]);
+  const tab = params.tab === "site" ? "site" : "mobilization";
+  const tabHref = (next: string) => `/impact?${new URLSearchParams({ ...(id ? { pair: id } : {}), ...(next === "site" ? { tab: "site" } : {}) })}`;
+  const [matches, pair, projectList] = await Promise.all([getMatches({ limit: 100 }), id ? getPair(id) : Promise.resolve(null), tab === "site" ? getProjects() : Promise.resolve([])]);
   const detail = pair && !isUnavailable(pair) ? pair : null;
   const rows = isUnavailable(matches) ? [] : matches;
   const match = detail?.match;
   const sitePoints = detail && match
     ? [projectPoint(detail.a, match.a ?? "Project A"), projectPoint(detail.b, match.b ?? "Project B")].filter((point): point is SitePoint => point !== null)
     : [];
+  const pairLabel = detail ? `${detail.a?.name ?? match?.a} / ${detail.b?.name ?? match?.b}` : null;
+  // Same located-point rule as the pair points above; unlocated projects stay off the map.
+  const pairKeys = new Set([detail?.a?.project_key, detail?.b?.project_key].filter(Boolean));
+  const mapProjects: MapProject[] = isUnavailable(projectList) ? [] : projectList.flatMap((project) => {
+    const point = projectPoint(project, project.project_key);
+    return point ? [{ key: project.project_key, name: project.name, utility: project.utility, lat: point.lat, lon: point.lon, confidence: project.location_confidence ?? null, inPair: pairKeys.has(project.project_key) }] : [];
+  });
   return (
     <main className={s.page}>
       <header className={s.hero}>
@@ -33,11 +44,16 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
         <h1>Move the package.<br />Understand the tradeoff.</h1>
         <p>A worksheet for project managers weighing a second mobilization against transferring mats or equipment between jobs.</p>
         <Badge>User-entered assumptions · USD</Badge>
+        <nav className={`${s.tabs} no-print`} aria-label="Impact worksheets">
+          <Link href={tabHref("mobilization")} aria-current={tab === "mobilization" ? "page" : undefined}>Mobilization</Link>
+          <Link href={tabHref("site")} aria-current={tab === "site" ? "page" : undefined}>Site factors</Link>
+        </nav>
       </header>
       <section className={s.section} aria-labelledby="pair-heading">
         <span className="eyebrow">01 / Project context</span>
         <h2 id="pair-heading">Start with the evidence.</h2>
         <form action="/impact" className={`${s.picker} no-print`}>
+          {tab === "site" && <input type="hidden" name="tab" value="site" />}
           <label htmlFor="pair">Project pair (optional)
             <select id="pair" name="pair" defaultValue={id}>
               <option value="">Standalone worksheet</option>
@@ -70,8 +86,10 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
           {!sitePoints.length && <p className={s.muted}>Neither project center has published coordinates, so Field planning context is not attached.</p>}
         </> : !id && <p className={s.muted}>No pair attached. Use this worksheet for your own two-job scenario, or choose a pair to keep its source evidence alongside your assumptions.</p>}
       </section>
-      {sitePoints.length > 0 && <SiteEvidence key={`site-${id}`} points={sitePoints} />}
-      <ImpactWorksheet key={id} pairLabel={detail ? `${detail.a?.name ?? match?.a} / ${detail.b?.name ?? match?.b}` : null} />
+      {tab === "site" ? <SiteFactors key={`factors-${id}`} pairLabel={pairLabel} points={sitePoints} projects={mapProjects} /> : <>
+        {sitePoints.length > 0 && <SiteEvidence key={`site-${id}`} points={sitePoints} />}
+        <ImpactWorksheet key={id} pairLabel={pairLabel} />
+      </>}
       <aside className={s.research}>
         <strong>Why these inputs?</strong> Sponsor conversations highlighted freight, short-notice mobilization and idle rented equipment.
         One contractor described $1.5M in freight on a $5M job. That anecdote is context only; it is not a default rate or savings ratio.

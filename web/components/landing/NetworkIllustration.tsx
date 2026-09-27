@@ -7,25 +7,32 @@ import s from "./landing.module.css";
 /** Decorative lower-48 network on Census TIGERweb state outlines. Links are illustrative, not matching output. */
 type State = { c: string; d: string; p: [number, number] };
 
-const links: [string, string][] = [
-  ["WA", "OR"], ["OR", "CA"], ["CA", "NV"], ["CA", "AZ"], ["NV", "UT"], ["UT", "CO"], ["AZ", "NM"], ["NM", "TX"],
-  ["ID", "MT"], ["MT", "ND"], ["WY", "CO"], ["CO", "KS"], ["KS", "MO"], ["NE", "IA"], ["SD", "MN"], ["ND", "MN"],
-  ["OK", "TX"], ["TX", "LA"], ["LA", "MS"], ["MS", "AL"], ["AL", "GA"], ["GA", "SC"], ["SC", "NC"], ["NC", "VA"],
-  ["GA", "FL"], ["TN", "GA"], ["MO", "TN"], ["AR", "TN"], ["MN", "WI"], ["WI", "IL"], ["IL", "IN"], ["IN", "OH"],
-  ["MI", "OH"], ["OH", "PA"], ["KY", "TN"], ["WV", "VA"], ["VA", "MD"], ["MD", "PA"], ["PA", "NY"], ["NY", "MA"],
-  ["MA", "ME"], ["IA", "IL"], ["OK", "KS"], ["WA", "ID"],
+// Long corridors threaded through neighbouring states, so lines read like routes rather than hops.
+const routes: string[][] = [
+  ["WA", "OR", "CA", "AZ", "NM", "TX", "LA", "MS", "AL", "GA", "SC", "NC", "VA", "PA", "NY", "MA", "ME"],
+  ["WA", "ID", "MT", "ND", "MN", "WI", "MI", "OH", "PA"],
+  ["CA", "NV", "UT", "CO", "KS", "MO", "IL", "IN", "OH", "WV", "VA"],
+  ["TX", "OK", "KS", "NE", "SD", "ND"],
+  ["FL", "GA", "TN", "KY", "OH"],
+  ["AR", "TN", "NC"],
+  ["MT", "WY", "NE", "IA", "IL", "IN"],
 ];
-const hubs = ["CA", "TX", "IL", "GA", "NY", "WA", "CO", "SC", "PA", "FL"];
+const hubs = ["CA", "TX", "IL", "GA", "NY", "WA", "CO", "OH", "KS", "TN"];
 
-function arc(a: [number, number], b: [number, number]) {
-  const [x1, y1] = a, [x2, y2] = b;
-  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
-  const len = Math.hypot(x2 - x1, y2 - y1);
-  // Bow each link upward-ish, perpendicular to its direction.
-  const nx = -(y2 - y1) / len, ny = (x2 - x1) / len;
-  const bend = len * 0.14 * (ny > 0 ? -1 : 1);
-  return `M${x1},${y1}Q${(mx + nx * bend).toFixed(1)},${(my + ny * bend).toFixed(1)} ${x2},${y2}`;
+/** Catmull-Rom spline through the points, as cubic Béziers. */
+function smoothPath(pts: [number, number][]) {
+  let d = `M${pts[0][0]},${pts[0][1]}`;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+    const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
+    const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+    d += `C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)} ${p2[0]},${p2[1]}`;
+  }
+  return d;
 }
+
+// Satellite orbit: a shallow arc over the country, entering west and leaving east.
+const ORBIT = "M-60,300 C180,-40 820,-60 1070,250";
 
 export function NetworkIllustration() {
   const root = useRef<SVGSVGElement>(null);
@@ -43,12 +50,17 @@ export function NetworkIllustration() {
       { threshold: 0.25 },
     );
     io.observe(svg);
+    // SMIL ignores prefers-reduced-motion, so park the satellite mid-orbit instead.
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      svg.pauseAnimations();
+      svg.setCurrentTime(11);
+    }
     return () => io.disconnect();
   }, []);
 
   const states = us.states as State[];
   const at = Object.fromEntries(states.map((st) => [st.c, st.p]));
-  const paths = links.filter(([a, b]) => at[a] && at[b]).map(([a, b]) => ({ id: `${a}-${b}`, d: arc(at[a], at[b]) }));
+  const paths = routes.map((r) => ({ id: r.join("-"), d: smoothPath(r.filter((c) => at[c]).map((c) => at[c])) }));
   const { width: W, height: H } = us;
 
   return (
@@ -71,6 +83,10 @@ export function NetworkIllustration() {
         <filter id="us-soft" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="2.4" />
         </filter>
+        <linearGradient id="sat-beam" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#9fdcff" stopOpacity="0.35" />
+          <stop offset="1" stopColor="#9fdcff" stopOpacity="0" />
+        </linearGradient>
         <clipPath id="us-clip">
           {states.map((st) => (
             <path key={st.c} d={st.d} />
@@ -107,27 +123,26 @@ export function NetworkIllustration() {
             d={p.d}
             pathLength={1}
             stroke="url(#us-link)"
-            strokeOpacity="0.45"
-            strokeWidth="1.3"
+            strokeOpacity="0.5"
+            strokeWidth="1.4"
             strokeLinecap="round"
-            style={{ animationDelay: `${0.8 + i * 0.035}s` }}
+            strokeLinejoin="round"
+            style={{ animationDelay: `${0.8 + i * 0.25}s`, animationDuration: "2.4s" }}
           />
         ))}
       </g>
       <g className={s.usPulses} filter="url(#us-soft)">
-        {paths.map((p, i) =>
-          i % 2 === 0 ? (
-            <path
-              key={p.id}
-              d={p.d}
-              pathLength={1}
-              stroke={i % 4 === 0 ? "#ffe2b0" : "#9fdcff"}
-              strokeWidth="3.4"
-              strokeLinecap="round"
-              style={{ animationDelay: `-${(i * 0.37) % 3.2}s`, animationDuration: `${2.6 + (i % 5) * 0.35}s` }}
-            />
-          ) : null,
-        )}
+        {paths.map((p, i) => (
+          <path
+            key={p.id}
+            d={p.d}
+            pathLength={1}
+            stroke={i % 2 === 0 ? "#ffe2b0" : "#9fdcff"}
+            strokeWidth="3.2"
+            strokeLinecap="round"
+            style={{ strokeDasharray: ".018 .982", animationDelay: `-${i * 1.7}s`, animationDuration: `${9 + (i % 3) * 2}s` }}
+          />
+        ))}
       </g>
 
       <g className={s.usHubs}>
@@ -142,6 +157,25 @@ export function NetworkIllustration() {
             </g>
           );
         })}
+      </g>
+
+      <g className={s.usSatellite}>
+        <path d={ORBIT} stroke="#9fdcff" strokeOpacity="0.22" strokeWidth="1" strokeDasharray="2 6" />
+        <g>
+          <animateMotion dur="28s" repeatCount="indefinite" path={ORBIT} />
+          {/* Downward sensor beam and ground ping */}
+          <path d="M-5,6 L5,6 L26,86 L-26,86Z" fill="url(#sat-beam)" />
+          <ellipse className={s.satPing} cx="0" cy="86" rx="26" ry="7" stroke="#9fdcff" strokeOpacity="0.5" />
+          <g transform="rotate(-12)">
+            <rect x="-24" y="-3.5" width="15" height="7" rx="0.8" fill="#1d3b57" stroke="#5cc8ff" strokeWidth="0.8" />
+            <rect x="9" y="-3.5" width="15" height="7" rx="0.8" fill="#1d3b57" stroke="#5cc8ff" strokeWidth="0.8" />
+            <path d="M-19,-3.5v7M-14,-3.5v7M14,-3.5v7M19,-3.5v7M-9,0H-6M6,0H9" stroke="#5cc8ff" strokeOpacity="0.6" strokeWidth="0.6" />
+            <rect x="-6" y="-5" width="12" height="10" rx="1.6" fill="#d9dde5" />
+            <rect x="-6" y="-5" width="12" height="3" rx="1.2" fill="#f4f6fa" />
+            <path d="M0,5v3.5" stroke="#d9dde5" strokeWidth="1" />
+            <circle cy="9" r="1.6" fill="#ffae42" />
+          </g>
+        </g>
       </g>
 
       <text x={W / 2} y={H + 22} fill="#61666e" fontSize="13" letterSpacing="7" textAnchor="middle">
