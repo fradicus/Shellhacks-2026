@@ -1623,3 +1623,7 @@
     top: auto;
   }
 }
+
+.candidateNames > span { white-space: normal; overflow-wrap: anywhere; }
+.loadMore { width: 100%; padding: 12px; color: inherit; background: transparent; border: 0; border-top: 1px solid #ffffff18; cursor: pointer; }
+.loadMore:disabled { opacity: .5; cursor: wait; }

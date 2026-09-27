@@ -25,7 +25,7 @@ function FullEvidence({ project, source, dataset }: { project: NationalProject; 
     {project.location_verification ? <LocationEvidence verification={project.location_verification} />
       : <p>{project.center?.evidence ?? "Detailed location evidence not reported."}</p>}
     <p>Dataset: <code>{dataset ?? "Unknown"}</code></p>
-    <p>National discovery point; overlap matching has not been run for this project.</p>
+    <p>National discovery point. Proximity is a lead for investigation; it does not establish coordinated construction.</p>
   </div>;
 }
 

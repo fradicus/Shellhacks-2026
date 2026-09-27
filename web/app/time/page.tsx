@@ -15,7 +15,8 @@ export const metadata = { title: "Overlaps · Common Ground" };
 /** One pen color per state from the Census boundaries, neighbors never alike. Derived once per server. */
 const INK = stateInks((usStates as unknown as { features: StateFeature[] }).features);
 
-export default async function TimePage() {
+export default async function TimePage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const query = await searchParams;
   const [matches, projects, national] = await Promise.all([
     getMatches({ limit: 500 }), getProjects(), loadNationalSummaries({ page: 1, limit: 1 }),
   ]);
@@ -65,7 +66,7 @@ export default async function TimePage() {
     regions: (national.geography?.regions ?? []).map((r) => ({ code: r.region_code, name: r.name })),
   };
   return (
-    <TimeView projects={slim} geography={geography} stateInk={INK} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
+    <TimeView initialScope={typeof query.scope === "string" ? query.scope : null} initialPairId={typeof query.pair === "string" ? query.pair : null} projects={slim} geography={geography} stateInk={INK} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
         drawn: nationalPoints.length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );
