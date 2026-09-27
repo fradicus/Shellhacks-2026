@@ -49,7 +49,8 @@ def test_committed_release_appends_unreviewed_candidates_in_their_states():
     snapshot["coverage"].update(_coverage(snapshot["projects"], imported))
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / "data" / "sppsouth" / "releases" / "active.json")
-    added = [p for p in snapshot["projects"] if p["source_id"] == "spp-qpt-2026q3-south"]
+    released = {s["_id"] for s in load_json(REPO_ROOT / "data" / "sppsouth" / "sources.json")}
+    added = [p for p in snapshot["projects"] if p["source_id"] in released]
     assert len(added) == release["expected_counts"]["projects"]
     assert all(set(p["states"]) <= {"40", "35", "48"} for p in added)
     assert all(p["location_review"] == ("unreviewed" if p["center"] else "unlocated") for p in added)
@@ -66,3 +67,13 @@ def test_xcel_interchange_aliases_come_only_from_sps_osm_names():
     located = project(row(**{"ProjectOwner": "SPS", "State(s)": "TX", "Upgrade Name": "Potter County 345 kV Line Reactor"}),
                       ARTIFACT, {"TX": with_aliases([site])})
     assert located["center"]["basis"] == "source_point"
+
+
+def test_older_editions_add_only_completed_upgrades_the_current_edition_dropped():
+    projects = load_json(REPO_ROOT / "data" / "sppsouth" / "projects.json")
+    current = {p["native_id"] for p in projects if p["source_id"] == "spp-qpt-2026q3-south"}
+    past = [p for p in projects if p["source_id"] != "spp-qpt-2026q3-south"]
+    assert past and all(p["status_group"] == "in_service" and "last listed in" in p["status"] for p in past)
+    assert not {p["native_id"] for p in past} & current
+    assert len({p["native_id"] for p in projects}) == len(projects)  # one record per UID across editions
+    assert all(e["type"] == "in_service" for p in past for e in p["project_events"])
