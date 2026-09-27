@@ -29,3 +29,13 @@
 - **Context:** dark screens wash out in sunlight, and sponsors named field crews. The demo and the PM persona are
   indoors on laptops.
 - **Choice:** dark only for now; everything is tokens so a daylight set is a later swap. Print uses a light set.
+
+## 5. Contrast check (spec Validation)
+WCAG 2.x ratios computed from the `:root` tokens in `globals.css`; translucent colors composited over the surface they sit on.
+- **Body text passes everywhere (4.5:1).** `--text` is 13.8–17.5; `--muted` is 6.5–8.2; `--accent` is 12.3–15.6.
+  Utility, band and state colors are 7.6–13.5 on every surface. Every badge's text on its own tint is 6.9–10.2.
+  `--accent-ink` on `--accent` is 14.7.
+- **One failure fixed.** `--text-3`, used for small mono labels, was `#7c7a76`: 4.68 on `--bg` but 4.42, 4.08 and 3.69 on
+  `--surface`, `--surface-2` and `--surface-3`. It is now `#8c8a85` (5.81 / 5.49 / 5.07 / 4.58): the smallest step that
+  passes on every surface while staying clearly dimmer than `--muted` (5.49 vs 7.73 on `--surface`), so the hierarchy holds.
+- **Not covered here:** the time view's own translucent inks over the live map (a moving background). That is checked in F19.
