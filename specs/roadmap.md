@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
@@ -321,3 +321,14 @@ F47 remains SPP South; draft C46 national driving eligibility is separate.
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F48 | Precomputed provisional national nearby pairs | B | technical-lead | 7 | F30, F31, F19 | never |
+
+## Launched follow-on: Alaska and Hawaii
+
+The user told Claude local to fill in Alaska and Hawaii, C22's stretch states. [C49](decisions/C49-alaska-hawaii.md)
+assigns [F49](features/F49-alaska-hawaii/spec.md): projects hand-transcribed from public documents with quote-checked
+facts (Hawaii PUC notices and capital dockets, Hawaiian Electric's IGP update, Alaska Energy Authority and cooperative
+documents), C33 tiers plus C38's operator guard, and an antimeridian-safe center check for Alaska.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F49 | Alaska and Hawaii project coverage from transcribed public documents | A | data-researcher | 7 | F00, F30 | never |
