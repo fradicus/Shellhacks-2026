@@ -191,7 +191,7 @@ test("landing controls work and the explorer returns to a working landing page",
   await network.click();
   await expect(network).toHaveAttribute("aria-pressed", "true");
   // Caption is a text node beside siblings; avoid exact-on-element matching.
-  await expect(page.getByText("One region. More possibilities.")).toBeVisible();
+  await expect(page.getByText("One network.")).toBeVisible();
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("link", { name: "Launch explorer", exact: true }).click();
