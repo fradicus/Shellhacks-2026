@@ -226,6 +226,44 @@
 .coverageToggle input { width: 14px; height: 14px; accent-color: var(--accent); }
 .stationPopup :global(.maplibregl-popup-content) { background: var(--glass); color: var(--text); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 6px 10px; font-size: 12px; backdrop-filter: blur(8px); box-shadow: var(--shadow); }
 .stationPopup :global(.maplibregl-popup-tip) { display: none; }
+/* Calendar day dialog */
+.dayDialog { width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 48px); padding: 0; border: 1px solid var(--border-strong); border-radius: var(--radius-l); background: radial-gradient(120% 60% at 50% 0%, #0f1826 0%, var(--surface) 60%); color: var(--text); box-shadow: var(--shadow); }
+.dayDialog::backdrop { background: rgba(3, 5, 9, 0.72); backdrop-filter: blur(4px); }
+.dayDialog[open] { animation: dayIn 160ms ease-out; }
+@keyframes dayIn { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .dayDialog[open] { animation: none; } }
+.dayBody { display: grid; gap: 14px; padding: 20px 22px 18px; }
+.dayHead { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.dayHead h3 { margin: 6px 0 0; font-family: var(--font-display); font-size: clamp(24px, 4vw, 32px); line-height: 1.05; }
+.dayClose { width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font-size: 20px; line-height: 1; cursor: pointer; }
+.dayClose:hover { border-color: var(--accent); }
+.dayRisk { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface-2); }
+.dayRisk strong { font-family: var(--font-display); font-size: 38px; line-height: 1; }
+.dayRisk span { color: var(--muted); font-size: 13px; }
+.dayRisk[data-tone="high"] { border-color: rgba(255, 154, 120, 0.5); background: var(--warn-bg); }
+.dayRisk[data-tone="high"] strong { color: var(--warn); }
+.dayRisk[data-tone="mid"] { border-color: rgba(233, 205, 131, 0.45); background: var(--band1-bg); }
+.dayRisk[data-tone="low"] { border-color: rgba(134, 229, 207, 0.4); background: var(--band0-bg); }
+.dayForecast { display: grid; gap: 2px; padding: 12px 14px; border-radius: var(--radius); border: 1px solid rgba(191, 233, 255, 0.35); background: rgba(191, 233, 255, 0.06); }
+.dayForecast span:last-child { color: var(--muted); font-size: 13px; font-family: var(--font-mono); }
+.dayStats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.dayStats div { padding: 10px; border: 1px solid var(--border); border-radius: var(--radius); }
+.dayStats dt { font: 600 10px var(--font-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--text-3); }
+.dayStats dd { margin: 4px 0 0; font-family: var(--font-mono); font-size: 13px; }
+.dayLast p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+.dayLast strong { color: var(--text); }
+.dayLast em, .dayYears em { font-style: normal; }
+.dayLast em[data-stop="true"] { color: var(--warn); font-weight: 600; }
+.dayYears { display: grid; gap: 3px; font-size: 12px; font-family: var(--font-mono); }
+.dayYears > div { display: grid; grid-template-columns: 40px minmax(0, 1fr) 72px 84px 90px; white-space: nowrap; gap: 10px; align-items: center; padding: 4px 6px; border-radius: 6px; }
+.dayYears > div:hover { background: var(--surface-2); }
+.dayYears > div > span:last-child { color: var(--text-3); text-align: right; }
+.dayYears > div[data-stop="true"] > span:last-child { color: var(--warn); }
+.dayBarTrack { height: 8px; border-radius: 4px; background: var(--surface-3); overflow: hidden; }
+.dayBarTrack i { display: block; height: 100%; border-radius: 4px; background: var(--band0); }
+.dayYears > div[data-stop="true"] .dayBarTrack i { background: var(--warn); }
+.dayActions { display: flex; justify-content: flex-end; gap: 8px; padding-top: 4px; border-top: 1px solid var(--border); }
+.dayActions button { margin-top: 12px; }
 .printNotes, .printOnly { display: none; }
 @media (max-width: 850px) {
   .sectionHead { align-items: start; flex-direction: column; }
@@ -249,6 +287,10 @@
   .siteMapWrap::after { height: 320px; }
   .pointPicker label { flex-basis: 100%; }
   .reportInputs, .reportCards { grid-template-columns: 1fr; }
+  .dayStats { grid-template-columns: 1fr 1fr; }
+  .dayYears > div { grid-template-columns: 36px minmax(0, 1fr) 62px 60px; }
+  .dayYears > div > span:last-child { display: none; }
+  .dayBody { padding: 16px; }
   .calDay { min-height: 0; font-size: 12px; border-radius: 8px; }
   .mapAction { flex-direction: column; align-items: stretch; }
 }

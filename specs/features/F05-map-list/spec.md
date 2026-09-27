@@ -34,3 +34,17 @@ The original implementation requirements remain in Git history, not in the activ
 ## Defaults
 The retirement implementation remains pending under issue #193. This specification is not a claim
 that the route or navigation has already been removed. Existing landing-page claims retain ownership.
+
+## Landing simplification — 2026-09-27
+
+The final Common Ground reveal holds on a circular Explore link to `/time`, available
+when the reveal is visible and immediately for reduced motion. The user removed the
+three-step introduction. The next section retains the illustrative national network,
+with softened rounded routes shared by the moving trucks. Research tools and field
+inputs share one workspace section. Public-filing attribution, brand and navigation
+form a single footer. Old `/map` bookmarks redirect to `/time`.
+The retired components remain on disk; their deletion is separate cleanup.
+
+Acceptance: verify the Explore link reaches `/time`, the removed introduction has no
+remaining anchor, the workspace and footer fit desktop and phone widths, and the
+existing truck opening remains intact. Do not imply live fleet or universal coverage.

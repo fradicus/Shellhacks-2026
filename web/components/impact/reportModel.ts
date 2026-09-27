@@ -45,3 +45,54 @@ export function lastYear(history: Series & { tmin_f?: (number | null)[] | null; 
   }
   return { year, from, start, days, run: replay(series, index, v.workdays, rules, inputs.weekdaysOnly, year), sourceUrl: from === "recent" ? recent!.source_url : null };
 }
+
+export type DayYear = { year: number; date: string; prcp: number | null; tmax: number | null; tmin: number | null; snow: number | null; wind: number | null; reasons: string[] };
+export type DayDetails = {
+  date: string;
+  years: DayYear[];
+  /** Share of recorded years this calendar day crossed a stop rule (years with no reading are left out). */
+  stopShare: number | null;
+  recorded: number;
+  avgHigh: number | null; avgLow: number | null; wetYears: number; maxRain: number | null; maxWind: number | null; snowYears: number;
+  lastYear: (DayYear & { from: "recent" | "record" }) | null;
+};
+
+const mean = (v: number[]) => (v.length ? Math.round(v.reduce((a, b) => a + b, 0) / v.length) : null);
+
+/** Everything the records say about one calendar day at this station: each recorded year, then last year. */
+export function dayDetails(history: Series & { tmin_f?: (number | null)[] | null; snow_in?: (number | null)[] | null }, recent: Recent | null, dateIso: string, inputs: DelayInputs): DayDetails | null {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateIso)) return null;
+  const v = validate(inputs);
+  const md = dateIso.slice(5), t0 = parse(history.start);
+  const firstYear = new Date(t0).getUTCFullYear(), lastRecordYear = new Date(t0 + (history.prcp_in.length - 1) * DAY).getUTCFullYear();
+  const pickDay = (s: typeof history, rules: Rules, year: number): DayYear | null => {
+    const d = `${year}-${md}`;
+    if (!Number.isFinite(parse(d)) || iso(parse(d)) !== d) return null; // Feb 29 only in leap years
+    const i = Math.round((parse(d) - parse(s.start)) / DAY);
+    if (i < 0 || i >= s.prcp_in.length) return null;
+    const x = { prcp: s.prcp_in[i], tmax: s.tmax_f[i], tmin: s.tmin_f?.[i] ?? null, snow: s.snow_in?.[i] ?? null, wind: s.wsf2_mph?.[i] ?? null };
+    return { year, date: d, ...x, reasons: reasons(rules, x) };
+  };
+  const rules = rulesFor(history, v);
+  const years: DayYear[] = [];
+  for (let y = firstYear; y <= lastRecordYear; y++) { const d = pickDay(history, rules, y); if (d) years.push(d); }
+  const known = years.filter((y) => y.prcp !== null || y.tmax !== null);
+  const nums = (k: "tmax" | "tmin" | "prcp" | "wind") => known.map((y) => y[k]).filter((n): n is number => n !== null);
+  // Last year: the latest observations when they include it, otherwise the 10-year record.
+  const target = Number(dateIso.slice(0, 4)) - 1;
+  let lastYear: DayDetails["lastYear"] = null;
+  if (recent) {
+    const rs = { start: recent.start, prcp_in: recent.prcp_in, tmax_f: recent.tmax_f, wsf2_mph: recent.wsf2_mph, tmin_f: recent.tmin_f, snow_in: recent.snow_in };
+    const d = pickDay(rs, rulesFor(rs, v), target);
+    if (d && (d.prcp !== null || d.tmax !== null)) lastYear = { ...d, from: "recent" };
+  }
+  if (!lastYear) { const d = years.find((y) => y.year === target); if (d) lastYear = { ...d, from: "record" }; }
+  return {
+    date: dateIso, years, recorded: known.length,
+    stopShare: known.length ? known.filter((y) => y.reasons.length).length / known.length : null,
+    avgHigh: mean(nums("tmax")), avgLow: mean(nums("tmin")),
+    wetYears: known.filter((y) => (y.prcp ?? 0) >= 0.01).length,
+    maxRain: nums("prcp").length ? Math.max(...nums("prcp")) : null, maxWind: nums("wind").length ? Math.max(...nums("wind")) : null,
+    snowYears: known.filter((y) => (y.snow ?? 0) > 0).length, lastYear,
+  };
+}

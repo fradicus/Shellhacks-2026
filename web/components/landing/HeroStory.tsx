@@ -24,10 +24,10 @@ export function HeroStory({ children }: { children: ReactNode }) {
       let rect=element.getBoundingClientRect();
       if(autoplay && !document.hidden && element.dataset.animationPaused!=='true'){
         elapsed+=dt;
-        const travel=Math.max(1,rect.height-innerHeight+52),exit=1+innerHeight*.55/travel;
+        const travel=Math.max(1,rect.height-innerHeight+52);
         // Paced so each line can be read: [seconds, story progress]. Same roads holds, the truck
-        // passes, One network holds, Common Ground fades in and holds, then the page moves on.
-        const stops=[[0,0],[3,.1],[8,.46],[11,.58],[13.5,.8],[17,1],[19,exit]];
+        // passes, One network holds, Common Ground fades in and holds on the Explore action.
+        const stops=[[0,0],[3,.1],[8,.46],[11,.58],[13.5,.8],[17,1]];
         let i=1;while(i<stops.length-1&&elapsed>stops[i][0])i++;
         const [t0,p0]=stops[i-1],[t1,p1]=stops[i],k=Math.max(0,Math.min(1,(elapsed-t0)/(t1-t0)));
         const position=travel*(p0+(p1-p0)*k*k*(3-2*k));
@@ -42,6 +42,7 @@ export function HeroStory({ children }: { children: ReactNode }) {
       element.style.setProperty('--story-progress',String(current));
       element.style.setProperty('--beat-two',String(1-segment(.58,.66)));
       element.style.setProperty('--brand-reveal',String(segment(.64,.8)));
+      element.toggleAttribute('data-brand-ready', reduced.matches || current >= .79);
       if(autoplay || current!==target)frame=requestAnimationFrame(update);
     }
     function schedule(){if(!frame)frame=requestAnimationFrame(update);}

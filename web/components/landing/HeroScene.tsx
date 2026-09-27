@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { startRoadScene } from "./road-scene";
 import s from "./landing.module.css";
@@ -24,15 +25,21 @@ export function HeroScene() {
       </div>
       <div className={`${s.storyBeat} ${s.storyBeatTwo}`} aria-hidden="true">
         <strong>One network.</strong>
-        <p>Find the overlap. See what connects.</p>
+        <p>Nearby projects. Evidence for your next conversation.</p>
       </div>
-      <div className={s.brandReveal} aria-hidden="true">
+      <div className={s.brandReveal}>
         <span className={s.brandMark}>
           <i />
           <i />
         </span>
         <strong>Common Ground</strong>
         <p>Every mile. Connected.</p>
+        <Link href="/time" className={s.brandExplore} aria-label="Explore nearby projects">
+          <span>Explore</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Link>
       </div>
       <div className={`${s.scene} ${paused ? s.paused : ""}`}>
         <div className={s.roadLayer}>

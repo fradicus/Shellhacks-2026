@@ -128,6 +128,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 .scope {
   display: inline-flex;
   align-items: center;
@@ -157,6 +158,8 @@
   }
 }
 
+=======
+>>>>>>> Stashed changes
 @media (max-width: 900px) {
   .bar {
     gap: 10px;

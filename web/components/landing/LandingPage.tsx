@@ -26,78 +26,19 @@ export function LandingPage() {
         <HeroStory>
           <section className={s.hero} aria-labelledby="hero-title">
             <h1 id="hero-title" className={s.srOnly}>
-              Common Ground — Every mile. Connected.
+              Common Ground — Find nearby utility projects.
             </h1>
             <HeroScene />
-            <a href="#how-it-works" className={s.scrollHint}>
-              FOLLOW THE CONNECTION <span aria-hidden="true">↓</span>
+            <div className={s.heroIntro}>
+              <p>TRANSMISSION PROJECT PLANNING</p>
+              <span>Find nearby utility projects. Compare the evidence.</span>
+              <Link href="/time">Explore nearby projects <Arrow /></Link>
+            </div>
+            <a href="#the-corridor" className={s.scrollHint}>
+              DISCOVER THE NETWORK <span aria-hidden="true">↓</span>
             </a>
           </section>
         </HeroStory>
-
-        <section className={`${s.section} ${s.workflow}`} id="how-it-works" aria-labelledby="how-title">
-          <div className={s.sectionHeading}>
-            <div>
-              <p className={s.eyebrow}>01 / CONNECT THE DOTS</p>
-              <h2 id="how-title">
-                Separate filings.
-                <br />
-                <span>A bigger picture.</span>
-              </h2>
-            </div>
-            <div className={s.headingSide}>
-              <p>
-                Neighboring utilities plan work independently. Common Ground brings the records together, so you can spot
-                nearby projects and investigate the evidence behind them.
-              </p>
-              <div className={s.actions}>
-                <Link href="/time" className={s.primary}>
-                  Explore the overlaps <Arrow />
-                </Link>
-                <Link href="/explore" className={s.secondary}>
-                  Browse by state <span aria-hidden="true">↗</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className={s.steps}>
-            <article className={s.step}>
-              <div className={s.stepTop}>
-                <span>01</span>
-                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <path d="M14 7h16l8 8v26H14zM30 7v9h8M20 23h12M20 29h12M20 35h7" stroke="currentColor" strokeWidth="1.4" />
-                  <path d="M9 13H7v29h23" stroke="currentColor" strokeOpacity=".35" />
-                </svg>
-              </div>
-              <h3>Start with the source.</h3>
-              <p>Public filings become project records with the utility, dates, location evidence, and source page kept in view.</p>
-            </article>
-            <article className={s.step}>
-              <div className={s.stepTop}>
-                <span>02</span>
-                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <circle cx="18" cy="24" r="13" stroke="currentColor" strokeWidth="1.4" />
-                  <circle cx="31" cy="24" r="13" stroke="currentColor" strokeWidth="1.4" />
-                  <path d="M18 24h13" stroke="currentColor" strokeDasharray="2 3" />
-                  <circle cx="18" cy="24" r="2" fill="currentColor" />
-                  <circle cx="31" cy="24" r="2" fill="currentColor" />
-                </svg>
-              </div>
-              <h3>Find the common ground.</h3>
-              <p>Discover cross-utility project centers less than 25 miles apart. Compare their timing and review location confidence.</p>
-            </article>
-            <article className={s.step}>
-              <div className={s.stepTop}>
-                <span>03</span>
-                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <path d="M9 9h30v23H22l-9 8v-8H9zM16 17h16M16 24h10" stroke="currentColor" strokeWidth="1.4" />
-                </svg>
-              </div>
-              <h3>Make the next conversation count.</h3>
-              <p>Open the pair evidence, check what is still uncertain, and export a coordination card for the people planning the work.</p>
-            </article>
-          </div>
-        </section>
 
         <section className={s.corridor} id="the-corridor" aria-labelledby="corridor-title">
           <div className={s.corridorMap}>
@@ -107,14 +48,14 @@ export function LandingPage() {
             </span>
           </div>
           <div className={s.corridorCopy}>
-            <p className={s.eyebrow}>02 / A SHARED CORRIDOR</p>
+            <p className={s.eyebrow}>01 / A SHARED CORRIDOR</p>
             <h2 id="corridor-title">
               Closer than
               <br />
               they look.
             </h2>
             <p>
-              Across the country, nearby work can sit in separate plans. Start with the evidence. Follow what connects.
+              Explore public project records by state. Coverage varies by source; the national view helps you see what is available and where evidence is missing.
             </p>
             <div className={s.metrics}>
               <div>
@@ -130,10 +71,10 @@ export function LandingPage() {
             </div>
             <div className={s.scopeNote}>
               <span aria-hidden="true">↗</span>
-              <p>Distance identifies a lead. Source evidence, timing, and a planner’s review determine what comes next.</p>
+              <p>Nearby projects are leads to investigate. In-service dates are milestones, not construction schedules or proof that crews can work together.</p>
             </div>
             <Link href="/time" className={s.textLink}>
-              Investigate the corridor <Arrow />
+              Compare nearby projects <Arrow />
             </Link>
           </div>
         </section>
@@ -141,105 +82,30 @@ export function LandingPage() {
         <section className={s.section} id="workspace" aria-labelledby="workspace-title">
           <div className={s.sectionHeading}>
             <div>
-              <p className={s.eyebrow}>03 / YOUR NEXT MOVE</p>
-              <h2 id="workspace-title">
-                Less searching.
-                <br />
-                <span>More understanding.</span>
-              </h2>
+              <p className={s.eyebrow}>02 / A CONNECTED WORKSPACE</p>
+              <h2 id="workspace-title">From the project.<br /><span>To the worksite.</span></h2>
             </div>
-            <p>Move from the big picture to the supporting record. Your research tools are already connected.</p>
+            <p>Find the project, understand the site, and bring the evidence into your next planning conversation.</p>
           </div>
-          <div className={s.tools}>
-            <Link href="/explore" className={`${s.tool} ${s.toolLarge}`}>
-              <div className={s.toolVisual} aria-hidden="true">
-                <div className={s.crosshair} />
-                <span className={s.coord}>STATE → COUNTY → SOURCE</span>
-                <div className={s.orbit} />
-                <div className={s.orbitSmall} />
-                <span className={s.mapPoint} />
-              </div>
-              <div className={s.toolBody}>
-                <span className={s.toolLabel}>
-                  THE WIDER VIEW <Arrow diagonal />
-                </span>
-                <h3>Find your place in the network.</h3>
-                <p>Browse the national explorer by geography and inspect the source coverage available for each area.</p>
-                <span className={s.toolAction}>
-                  Open national explorer <Arrow />
-                </span>
-              </div>
-            </Link>
-            <div className={s.toolStack}>
-              <Link href="/changes" className={s.tool}>
-                <div className={s.toolBody}>
-                  <span className={s.toolLabel}>
-                    FILING CHANGES <Arrow diagonal />
-                  </span>
-                  <h3>
-                    Plans change.
-                    <br />
-                    Keep the context.
-                  </h3>
-                  <p>Compare filing versions and see what changed in the published record.</p>
-                  <span className={s.toolAction}>
-                    Review changes <Arrow />
-                  </span>
-                </div>
-                <div className={s.changeArt} aria-hidden="true">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-              </Link>
-              <Link href="/coverage" className={s.tool}>
-                <div className={s.toolBody}>
-                  <span className={s.toolLabel}>
-                    EVIDENCE & COVERAGE <Arrow diagonal />
-                  </span>
-                  <h3>Know what you know.</h3>
-                  <p>Check source coverage and uncertainty before you act on a lead.</p>
-                  <span className={s.toolAction}>
-                    See coverage <Arrow />
-                  </span>
-                </div>
-              </Link>
+          <div className={s.workspaceGrid}>
+            <div className={s.workspaceTools}>
+              {[
+                { href: "/explore", title: "Find nearby work", text: "Browse projects by state and county, with the public records behind each location." },
+                { href: "/changes", title: "Follow the changes", text: "Compare filing versions and see what changed in the published plan." },
+                { href: "/operations", title: "Understand the site", text: "Review available weather, water, soil, and annual satellite evidence." },
+                { href: "/impact", title: "Build a cost scenario", text: "Bring your own crew, contractor, and equipment rates into the calculation." },
+              ].map((tool) => (
+                <Link key={tool.href} href={tool.href} className={s.workspaceTool}>
+                  <div><h3>{tool.title}</h3><p>{tool.text}</p></div>
+                  <Arrow diagonal />
+                </Link>
+              ))}
+            </div>
+            <div className={s.workspaceVisual} id="connected">
+              <Integrations />
+              <p>Public evidence and your inputs, brought together. Availability varies by location; work-zone data covers Washington and satellite evidence is annual.</p>
             </div>
           </div>
-        </section>
-
-        <section className={`${s.section} ${s.connected}`} id="connected" aria-labelledby="connected-title">
-          <div className={s.connectedCopy}>
-            <p className={s.eyebrow}>04 / CONNECTED</p>
-            <h2 id="connected-title">
-              One plan.
-              <br />
-              <span>Every input.</span>
-            </h2>
-            <p>
-              Common Ground brings public weather, water, soil, satellite, and road data to the worksite, then puts your
-              crews, contractors, and cost rates beside it. Every figure keeps its source.
-            </p>
-            <ul className={s.connectedList}>
-              <li>
-                <b>Live public sources</b>
-                <span>NWS, NOAA, USGS, FEMA, USDA, WZDx</span>
-              </li>
-              <li>
-                <b>Your field inputs</b>
-                <span>Crew, contractor, and equipment rates you enter</span>
-              </li>
-              <li>
-                <b>Nothing assumed</b>
-                <span>Blank inputs stay blank; no default rates</span>
-              </li>
-            </ul>
-            <Link href="/operations" className={s.textLink}>
-              Open field planning <Arrow />
-            </Link>
-          </div>
-          <Integrations />
         </section>
 
         <section className={s.finalCta}>
@@ -250,45 +116,28 @@ export function LandingPage() {
             <span>just down the road.</span>
           </h2>
           <Link href="/time" className={s.primary}>
-            Find the connection <Arrow />
+            Explore nearby projects <Arrow />
           </Link>
           <p>Discover a lead. Check the evidence. Start a conversation.</p>
         </section>
 
-        <div className={s.proofStrip}>
-          <span>
-            GROUNDED IN
-            <br />
-            <b>PUBLIC UTILITY FILINGS</b>
-          </span>
-          <div>
-            Dominion Energy <span>South Carolina</span>
-          </div>
-          <span className={s.plus} aria-hidden="true">
-            +
-          </span>
-          <div>
-            Georgia Power <span>Georgia</span>
-          </div>
-          <Link href="/coverage">
-            See the evidence <Arrow diagonal />
-          </Link>
-        </div>
       </main>
-      <footer className={s.footer}>
-        <Link href="/" className={s.footerBrand}>
-          Common Ground<span>Every mile. Connected.</span>
-        </Link>
-        <div>
-          <Link href="/time">Overlaps</Link>
-          <Link href="/explore">National explorer</Link>
-          <Link href="/coverage">Source coverage</Link>
+      <footer className={s.closing}>
+        <div className={s.closingTop}>
+          <div>
+            <Link href="/" className={s.footerBrand}>Common Ground<span>Every mile. Connected.</span></Link>
+            <p className={s.closingDescription}>A clearer view of nearby utility work, grounded in public records.</p>
+          </div>
+          <nav aria-label="Footer" className={s.closingLinks}>
+            <Link href="/time">Explore overlaps <Arrow diagonal /></Link>
+            <Link href="/explore">Browse projects <Arrow diagonal /></Link>
+            <Link href="/coverage">Sources & coverage <Arrow diagonal /></Link>
+          </nav>
         </div>
-        <p>
-          Coordination discovery from public records.
-          <br />
-          Illustrations are conceptual. Project evidence stays in the app.
-        </p>
+        <div className={s.closingBottom}>
+          <p>Built on public utility filings, including Dominion Energy South Carolina and Georgia Power.</p>
+          <span>Network illustrations are conceptual.</span>
+        </div>
       </footer>
     </div>
   );

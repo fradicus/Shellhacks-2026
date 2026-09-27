@@ -35,6 +35,15 @@ test("search a place, pick a start date on the calendar, get the report and down
   await expect(page.getByText("Water:", { exact: false }).first()).toBeVisible();
   const day = page.getByRole("gridcell").filter({ hasText: /^15$/ }).first();
   await day.click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByText(/of the last \d+ years this date crossed a stop rule/)).toBeVisible();
+  await expect(dialog.getByRole("row")).toHaveCount(10);
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
+  await day.click();
+  await dialog.getByRole("button", { name: "Start the task on this day" }).click();
+  await expect(dialog).toBeHidden();
   await expect(page.getByText("Normal finish", { exact: true })).toBeVisible();
   await expect(page.getByText(/Typical weather · median of \d+ years/)).toBeVisible();
   await page.getByLabel("Cost of one delay day · USD").fill("1000");

@@ -19,16 +19,17 @@ const routes: string[][] = [
 ];
 const hubs = ["CA", "TX", "IL", "GA", "NY", "WA", "CO", "OH", "KS", "TN"];
 
-/** Catmull-Rom spline through the points, as cubic Béziers. */
+/** Rounded passages through the corridor points, without spline overshoot at tight turns. */
 function smoothPath(pts: [number, number][]) {
   let d = `M${pts[0][0]},${pts[0][1]}`;
-  for (let i = 0; i < pts.length - 1; i++) {
-    const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
-    const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
-    const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
-    d += `C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)} ${p2[0]},${p2[1]}`;
+  for (let i = 1; i < pts.length - 1; i++) {
+    const previous = pts[i - 1], point = pts[i], next = pts[i + 1];
+    const before = [point[0] + (previous[0] - point[0]) * .22, point[1] + (previous[1] - point[1]) * .22];
+    const after = [point[0] + (next[0] - point[0]) * .22, point[1] + (next[1] - point[1]) * .22];
+    d += `L${before[0]},${before[1]}Q${point[0]},${point[1]} ${after[0]},${after[1]}`;
   }
-  return d;
+  const end = pts[pts.length - 1];
+  return `${d}L${end[0]},${end[1]}`;
 }
 
 // Satellite orbit: a shallow arc over the country, entering west and leaving east.
@@ -132,8 +133,8 @@ export function NetworkIllustration() {
             d={p.d}
             pathLength={1}
             stroke="url(#us-link)"
-            strokeOpacity="0.5"
-            strokeWidth="1.4"
+            strokeOpacity="0.34"
+            strokeWidth="1.2"
             strokeLinecap="round"
             strokeLinejoin="round"
             style={{ animationDelay: `${0.8 + i * 0.25}s`, animationDuration: "2.4s" }}

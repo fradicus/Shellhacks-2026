@@ -22,3 +22,17 @@ test("falls back to the 10-year record, and returns null when neither covers las
   assert.equal(lastYear(history, null, "2030-03-10", DEFAULT_DELAY, 10), null);
   assert.equal(lastYear(history, null, "2025-03-01", DEFAULT_DELAY, 3).start, "2024-03-01");
 });
+
+test("day details summarize one calendar day across recorded years and prefer recent data for last year", async () => {
+  const { dayDetails } = await import("./reportModel.ts");
+  const h = { ...history, prcp_in: [...history.prcp_in], tmax_f: [...history.tmax_f], tmin_f: [...history.tmin_f] };
+  h.prcp_in[9] = 1.1; h.tmax_f[9] = 60; // 2016-01-10
+  const d = dayDetails(h, recent("2025-01-01", 30, { 9: 0.6 }), "2026-01-10", DEFAULT_DELAY);
+  assert.equal(d.years.length, 10); assert.equal(d.recorded, 10);
+  assert.equal(d.stopShare, 0.1); assert.equal(d.wetYears, 1); assert.equal(d.maxRain, 1.1);
+  assert.equal(d.avgHigh, 69); assert.equal(d.avgLow, 50);
+  assert.deepEqual([d.lastYear.date, d.lastYear.from, d.lastYear.reasons], ["2025-01-10", "recent", ["rain"]]);
+  const leap = dayDetails(h, null, "2028-02-29", DEFAULT_DELAY);
+  assert.deepEqual(leap.years.map((y) => y.year), [2016, 2020, 2024]);
+  assert.equal(leap.lastYear, null); // 2027-02-29 does not exist
+});

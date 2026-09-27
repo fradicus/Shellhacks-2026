@@ -12,7 +12,11 @@ const nextConfig: NextConfig = {
     "/api/verified": ["../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json", "../data/national/geography.json"],
     "/api/verified/*": ["../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json", "../data/national/geography.json"],
     "/api/weather-history/stations": ["../data/weather_history/index.json"],
+<<<<<<< Updated upstream
     "/api/weather-history": ["../data/weather_history/index.json", "../data/weather_history/stations/*.json", "../data/weather_history/stations/*.json.gz"],
+=======
+    "/api/weather-history": ["../data/weather_history/index.json", "../data/weather_history/stations/*.json.gz"],
+>>>>>>> Stashed changes
     // Readiness checks the verified artifacts and the national snapshot without serving them.
     "/api/health": ["../data/national/*.json", "../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json"],
     "/api/operations/*": ["../data/environment/aef-samples.json", "../data/environment/aef-samples.evidence.json", "../data/environment/washington-boundary.json", "../data/environment/washington-boundary.evidence.json"],

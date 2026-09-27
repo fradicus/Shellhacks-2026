@@ -21,15 +21,15 @@ const NODES: Node[] = [
     icon: I(<><path d="M2 9c2 0 2-1.5 4-1.5S8 9 10 9s2-1.5 4-1.5S16 9 18 9s2-1.5 4-1.5" /><path d="M2 15c2 0 2-1.5 4-1.5S8 15 10 15s2-1.5 4-1.5S16 15 18 15s2-1.5 4-1.5" /></>) },
   { id: "soil", label: "Soil", source: "USDA NRCS", x: 90, y: 350,
     icon: I(<><path d="M12 3 2 8l10 5 10-5-10-5Z" /><path d="m2 13 10 5 10-5" /><path d="m2 17.5 10 5 10-5" /></>) },
-  { id: "satellite", label: "Satellite", source: "Earth Engine", x: 300, y: 38,
+  { id: "satellite", label: "Satellite", source: "Annual evidence", x: 300, y: 38,
     icon: I(<><path d="m13 7 4-4 4 4-4 4" /><path d="m7 13-4 4 4 4 4-4" /><path d="m9 9 6 6" /><rect x="8.5" y="8.5" width="7" height="7" rx="1" transform="rotate(45 12 12)" /><path d="M16 21a5 5 0 0 0 5-5" /></>) },
-  { id: "crews", label: "Crews & contractors", source: "Crew plan you enter", x: 510, y: 70,
+  { id: "crews", label: "Crews & contractors", source: "Rates you enter", x: 510, y: 70,
     icon: I(<><path d="M2.5 18h19" /><path d="M4.5 18v-2a7.5 7.5 0 0 1 15 0v2" /><path d="M10 9.2V6.5a2 2 0 0 1 4 0v2.7" /><path d="M8 11.5v6.5M16 11.5v6.5" /></>) },
   { id: "cost", label: "Cost scenarios", source: "Impact scenarios", x: 520, y: 210,
     icon: I(<><circle cx="12" cy="12" r="9.5" /><path d="M15 9.2c-.5-1-1.6-1.6-3-1.6-1.8 0-3 .9-3 2.2 0 3 6 1.6 6 4.5 0 1.3-1.3 2.2-3 2.2-1.5 0-2.6-.7-3.1-1.7M12 6v1.6M12 16.5V18" /></>) },
   { id: "routes", label: "Drive time", source: "Google Routes", x: 510, y: 350,
     icon: I(<><circle cx="6" cy="19" r="2.5" /><circle cx="18" cy="5" r="2.5" /><path d="M8.5 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5" /></>) },
-  { id: "workzones", label: "Work zones", source: "WZDx feeds", x: 300, y: 382,
+  { id: "workzones", label: "Work zones", source: "Washington · WZDx", x: 300, y: 382,
     icon: I(<><path d="M9.5 4h5l4.5 15h-14z" /><path d="M7.6 12h8.8M6.4 16h11.2" /><path d="M3 21h18" /></>) },
 ];
 

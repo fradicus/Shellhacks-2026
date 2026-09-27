@@ -1,11 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui";
 import { dayRisk, replayDate, type DelayInputs } from "./delayModel";
 import { money } from "./model";
 import { downloadReportPdf } from "./reportPdf";
-import { lastYear, type LastYear, type Recent } from "./reportModel";
+import { dayDetails, lastYear, type DayDetails, type LastYear, type Recent } from "./reportModel";
 import type { ForecastDay, SiteHints } from "./siteModel";
 import type { HistoryPayload } from "./WeatherDelay";
 import s from "./impact.module.css";
@@ -91,6 +91,60 @@ function LastYearChart({ view, rainRule }: { view: LastYear; rainRule: number | 
   </div>;
 }
 
+/** One calendar day, as recorded: each of the last 10 years, last year, and the NWS forecast when it reaches that far. */
+function DayDialog({ details, forecast, station, open, onClose, onStart, isStart }: { details: DayDetails | null; forecast: ForecastDay | null; station: string; open: boolean; onClose: () => void; onStart: () => void; isStart: boolean }) {
+  const ref = useRef<HTMLDialogElement>(null);
+  useEffect(() => {
+    const d = ref.current;
+    if (!d) return;
+    if (open && !d.open) d.showModal();
+    if (!open && d.open) d.close();
+  }, [open]);
+  const d = details;
+  const maxRain = Math.max(0.5, ...(d?.years.map((y) => y.prcp ?? 0) ?? [0]));
+  const pct = d?.stopShare === null || !d ? null : Math.round(d.stopShare * 100);
+  const tone = pct === null ? "unknown" : pct >= 30 ? "high" : pct >= 10 ? "mid" : "low";
+  const stopText = (r: string[]) => (r.length ? `Stop: ${r.join(", ")}` : "Workable");
+  return <dialog ref={ref} className={s.dayDialog} aria-labelledby="day-dialog-title" onClose={onClose} onClick={(e) => { if (e.target === ref.current) onClose(); }}>
+    {d && <div className={s.dayBody}>
+      <header className={s.dayHead}>
+        <div><span className="eyebrow">Weather on this date · {station}</span><h3 id="day-dialog-title">{longDate(d.date)}</h3></div>
+        <button type="button" className={s.dayClose} onClick={onClose} aria-label="Close">×</button>
+      </header>
+      <div className={s.dayRisk} data-tone={tone}>
+        <strong>{pct === null ? "No record" : `${pct}%`}</strong>
+        <span>{pct === null ? "No reading for this date at this station." : `of the last ${d.recorded} years this date crossed a stop rule (${d.years.filter((y) => y.reasons.length).length} of ${d.recorded}).`}</span>
+      </div>
+      {forecast && <div className={s.dayForecast}><span className="eyebrow">NWS forecast</span><strong>{forecast.summary || "Forecast"}</strong><span>{forecast.maxPrecipChance ?? "–"}% chance of rain · high {forecast.maxTemp ?? "–"}°F</span></div>}
+      <dl className={s.dayStats}>
+        <div><dt>Typical high / low</dt><dd>{d.avgHigh ?? "–"}° / {d.avgLow ?? "–"}°F</dd></div>
+        <div><dt>Years with rain</dt><dd>{d.wetYears} of {d.recorded}</dd></div>
+        <div><dt>Wettest</dt><dd>{d.maxRain === null ? "–" : `${d.maxRain} in`}</dd></div>
+        <div><dt>Strongest gust</dt><dd>{d.maxWind === null ? "no wind record" : `${d.maxWind} mph`}</dd></div>
+        <div><dt>Years with snow</dt><dd>{d.snowYears}</dd></div>
+      </dl>
+      <div className={s.dayLast}>
+        <span className="eyebrow">Last year · {d.lastYear ? `${longDate(d.lastYear.date)}${d.lastYear.from === "recent" ? " · latest NOAA observations" : ""}` : "not recorded yet"}</span>
+        {d.lastYear ? <p><strong>{d.lastYear.prcp ?? "–"} in rain</strong> · high {d.lastYear.tmax ?? "–"}° · low {d.lastYear.tmin ?? "–"}° · gust {d.lastYear.wind ?? "–"} mph{d.lastYear.snow ? ` · snow ${d.lastYear.snow} in` : ""} · <em data-stop={d.lastYear.reasons.length > 0}>{stopText(d.lastYear.reasons)}</em></p>
+          : <p className={s.muted}>No observation for this date last year yet.</p>}
+      </div>
+      <div className={s.dayYears} role="table" aria-label="This date in each recorded year">
+        {d.years.map((y) => <div key={y.year} role="row" data-stop={y.reasons.length > 0} title={`${y.date}: rain ${y.prcp ?? "–"} in, high ${y.tmax ?? "–"}°, low ${y.tmin ?? "–"}°, gust ${y.wind ?? "–"} mph. ${stopText(y.reasons)}`}>
+          <span role="cell">{y.year}</span>
+          <span role="cell" className={s.dayBarTrack}><i style={{ width: `${y.prcp === null ? 0 : Math.max(2, (y.prcp / maxRain) * 100)}%` }} /></span>
+          <span role="cell">{y.prcp === null ? "no reading" : `${y.prcp} in`}</span>
+          <span role="cell">{y.tmax ?? "–"}° / {y.tmin ?? "–"}°</span>
+          <span role="cell">{y.reasons.length ? y.reasons.join(", ") : "ok"}</span>
+        </div>)}
+      </div>
+      <footer className={s.dayActions}>
+        <Button onClick={onClose}>Close</Button>
+        <Button variant="primary" onClick={onStart}>{isStart ? "Start date set ✓" : "Start the task on this day"}</Button>
+      </footer>
+    </div>}
+  </dialog>;
+}
+
 export type ReportProps = {
   history: HistoryPayload | null; recent: Recent | null; recentError: string | null; loading: boolean;
   pointLabel: string | null; point: { lat: number; lon: number } | null; hints: SiteHints | null; forecast: ForecastDay[];
@@ -100,6 +154,7 @@ export type ReportProps = {
 export function SiteReport(p: ReportProps) {
   const { history, inputs, setInputs } = p;
   const [start, setStart] = useState<string | null>(null);
+  const [openDay, setOpenDay] = useState<string | null>(null);
   const series = useMemo(() => (history ? { start: history.window.start, prcp_in: history.prcp_in, tmax_f: history.tmax_f, wsf2_mph: history.wsf2_mph, tmin_f: history.tmin_f ?? null, snow_in: history.snow_in ?? null } : null), [history]);
   const risk = useMemo(() => (series ? dayRisk(series, inputs) : null), [series, inputs]);
   const result = useMemo(() => (series && start ? replayDate(series, start, inputs) : null), [series, start, inputs]);
@@ -112,6 +167,7 @@ export function SiteReport(p: ReportProps) {
   const forecastSet = useMemo(() => new Set(p.forecast.map((f) => f.date)), [p.forecast]);
   const win = { normal: report?.target.normalFinish ?? null, typical: report?.target.typicalFinish ?? null, worst: report?.target.worstFinish ?? null };
   const inWindow = start && win.worst ? p.forecast.filter((f) => f.date >= start && f.date <= win.worst!) : [];
+  const details = useMemo(() => (series && openDay ? dayDetails(series, p.recent, openDay, inputs) : null), [series, p.recent, openDay, inputs]);
   const wetSite = !!p.hints && (p.hints.poorlyDrained || p.hints.wetlandMapped === true);
   const field = (key: keyof DelayInputs, label: string, help: string) => <div className={s.field}>
     <label htmlFor={`rpt-${key}`}>{label}</label>
@@ -136,7 +192,9 @@ export function SiteReport(p: ReportProps) {
     {history && <>
       <p className={s.stationLine}>{p.pointLabel} · records from <a href={history.rain.source_url} target="_blank" rel="noreferrer">{history.rain.name}</a> ({history.rain.distance_mi} mi){history.wind ? <>, wind from {history.wind.name} ({history.wind.distance_mi} mi)</> : ", no wind record nearby"}{history.origin === "live" ? " · looked up live from NOAA" : ""}.</p>
       <div className={s.reportGrid}>
-        <StartCalendar risk={risk} selected={start} onSelect={setStart} window={win} forecast={forecastSet} />
+        <StartCalendar risk={risk} selected={start} onSelect={setOpenDay} window={win} forecast={forecastSet} />
+        <DayDialog details={details} forecast={p.forecast.find((f) => f.date === openDay) ?? null} station={history.rain.name} open={!!openDay && !!details}
+          isStart={openDay === start} onClose={() => setOpenDay(null)} onStart={() => { setStart(openDay); setOpenDay(null); }} />
         <div className={s.reportSide}>
           <div className={s.reportInputs}>
             {field("workdays", "Workable days needed", "Crew days of actual work.")}
@@ -162,10 +220,10 @@ export function SiteReport(p: ReportProps) {
             <span>{p.hints!.poorlyDrained ? `Soil survey: ${p.hints!.drainage}` : "NWI wetland mapped"}. Ground can stay too wet to work after rain.</span>
             <button type="button" onClick={() => setInputs({ ...inputs, dryingDays: "1" })}>Try 1 wet-ground day</button>
           </div>}
-          {!start && <p className={s.calPrompt}>Tap a day on the calendar to start. Darker days were stop days in more of the last 10 years.</p>}
+          {!start && <p className={s.calPrompt}>Tap any day to see its weather: each of the last 10 years, last year, and the forecast. Then start the task from there. Darker days were stop days more often.</p>}
           {report && start && <div className={s.reportCards} aria-live="polite">
             <div><span className="eyebrow">Normal finish</span><strong>{longDate(report.target.normalFinish)}</strong><span>{report.baselineDays} calendar days, no weather</span></div>
-            <div><span className="eyebrow">Typical weather · median of {report.runs.length} years</span><strong>{longDate(report.target.typicalFinish)}</strong><span>+{report.medianExtra} days{cost !== null && report.medianExtra !== null ? ` · ${money(Math.round(report.medianExtra * cost))}` : ""}</span></div>
+            <div><span className="eyebrow">Typical weather · median of {report.runs.length} years</span><strong>{longDate(report.target.typicalFinish)}</strong><span>+{report.medianExtra} {report.medianExtra === 1 ? "day" : "days"}{cost !== null && report.medianExtra !== null ? ` · ${money(Math.round(report.medianExtra * cost))}` : ""}</span></div>
             <div data-wet="true"><span className="eyebrow">Worst recorded · {report.worst?.year ?? "–"}</span><strong>{longDate(report.target.worstFinish)}</strong><span>+{report.worst?.extraDays ?? "–"} days{cost !== null && report.worst ? ` · ${money(report.worst.extraDays * cost)}` : ""}</span></div>
             <div data-last="true"><span className="eyebrow">This time last year · {ly?.year ?? "–"}</span><strong>{ly?.run ? `+${ly.run.extraDays} days` : "Not available"}</strong><span>{ly?.run ? `${ly.run.stops.rain} rain, ${ly.run.stops.wind} wind, ${ly.run.stops.heat + ly.run.stops.freeze + ly.run.stops.snow} temp/snow stops${ly.run.stops.wet ? `, ${ly.run.stops.wet} wet-ground` : ""}${cost !== null ? ` · ${money(ly.run.extraDays * cost)}` : ""}` : ly ? "Task runs past the latest NOAA record" : p.recentError ?? "No record for last year's dates"}</span></div>
           </div>}
