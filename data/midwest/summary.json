@@ -1,0 +1,70 @@
+{
+  "by_basis": {
+    "one": 68,
+    "source_point": 187,
+    "two": 25
+  },
+  "by_state": {
+    "IA": {
+      "located": 0,
+      "projects": 7
+    },
+    "KS": {
+      "located": 87,
+      "projects": 137
+    },
+    "MO": {
+      "located": 55,
+      "projects": 85
+    },
+    "ND": {
+      "located": 56,
+      "projects": 109
+    },
+    "NE": {
+      "located": 51,
+      "projects": 109
+    },
+    "SD": {
+      "located": 31,
+      "projects": 141
+    }
+  },
+  "by_status": {
+    "cancelled": 3,
+    "in_service": 128,
+    "planned": 413,
+    "proposed": 43
+  },
+  "by_tier": {
+    "candidate": 259,
+    "candidate_unique_name": 21
+  },
+  "distinct_points": 135,
+  "located": 280,
+  "located_by_status": {
+    "cancelled": 1,
+    "in_service": 63,
+    "planned": 196,
+    "proposed": 20
+  },
+  "located_not_in_service": 216,
+  "located_with_dated_events": 241,
+  "projects": 587,
+  "unlocated_reasons": {
+    "ambiguous": 5,
+    "ambiguous,no_facility": 1,
+    "ambiguous,not_a_facility": 2,
+    "ambiguous,operator_conflict": 2,
+    "endpoint_not_named": 10,
+    "multi_terminal_line": 1,
+    "no_facility": 201,
+    "no_facility,not_a_facility": 6,
+    "no_facility,operator_conflict": 19,
+    "no_named_facility": 13,
+    "not_a_facility": 17,
+    "operator_conflict": 25,
+    "program_area_or_multi_facility": 5
+  },
+  "verified": 0
+}

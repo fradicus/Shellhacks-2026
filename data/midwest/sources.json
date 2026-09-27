@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "spp-qpt-2026q3",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+    "import_status": "imported",
+    "landing_url": "https://www.spp.org/engineering/project-tracking-ntcs/",
+    "notes": [
+      "F46 Midwest release (C43): SPP upgrades whose listed states are all IA, MO, KS, NE, ND or SD. Locations are unreviewed C33 candidates from named OSM substations; none is independently confirmed. Source-bounded, not statewide coverage.",
+      "sha256 is of the appendix zip; rows are read from its member “Q3 2026 Quarterly Project Tracking Appendix 1.xlsm”."
+    ],
+    "planning_region": "spp",
+    "project_count": 587,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southwest Power Pool",
+    "retrieved_at": "2026-09-27T08:09:55Z",
+    "role": "project_plan",
+    "sha256": "9870923806c427e4a390160ec20c4a9f0e2cf66dcec480fcf6c53f6891d3786d",
+    "states": [
+      "19",
+      "20",
+      "29",
+      "31",
+      "38",
+      "46"
+    ],
+    "title": "SPP Q3 2026 Quarterly Project Tracking Report, Appendix 1",
+    "vintage": "2026 Q3"
+  }
+]
