@@ -65,12 +65,27 @@ def _coverage(projects: list[dict[str, Any]], imported_source_ids: set[str]) -> 
         "schema_version": "national-coverage-v1",
         "projects_total": len(projects),
         "located_count": sum(project["center"] is not None for project in projects),
+        "location_counts": {
+            "confirmed_centers": sum(p["center"] is not None and p["location_review"] == "confirmed"
+                                     for p in projects),
+            "candidate_centers": sum(p["center"] is not None and p["location_review"] != "confirmed"
+                                     for p in projects),
+            "approximate_only": sum(p["center"] is None and bool((p.get("approximate_location") or {}).get("anchors"))
+                                    for p in projects),
+            "no_display_location": sum(p["center"] is None and not (p.get("approximate_location") or {}).get("anchors")
+                                       for p in projects),
+            "rejected_projects": sum(p["location_review"] == "rejected" for p in projects),
+        },
         "sources": source_rows,
         "failures": [],
         "notes": [
             "Counts cover imported records only and do not claim nationwide project completeness.",
             "ISO-NE supplies no counties or coordinates; independently reviewed expansion evidence may locate projects.",
-            "Unknown project states and counties remain unknown rather than inferred.",
+            "Legacy state membership uses eligible endpoint containment in pinned Census boundaries; "
+            "it retains candidate review status and does not establish full route extent. Other unknown geography stays unknown.",
+            "Located counts require a project center. Approximate-only county references remain outside that count; "
+            "confirmed centers, candidate centers, approximate-only records and no-display-location records partition projects. "
+            "Rejected projects are an overlapping review count, not an additional location category.",
             "Legacy discovery includes current filing versions only; superseded versions remain in the filing-change view.",
             "Census bounds and representative points frame reference geography and never become project locations.",
             "EIA-861 remains a reference-only catalog entry; no utility identity or service-area match is inferred.",
@@ -142,6 +157,9 @@ def validate_snapshot_values(snapshot: dict[str, Any]) -> list[str]:
     expected_coverage = _coverage(snapshot["projects"], imported_source_ids)
     if snapshot["coverage"].get("sources") != expected_coverage["sources"]:
         errors.append("coverage: per-source counts do not match projects")
+    if ("location_counts" in snapshot["coverage"]
+            and snapshot["coverage"]["location_counts"] != expected_coverage["location_counts"]):
+        errors.append("coverage: location counts do not match projects")
     actual_counts = Counter(project["source_id"] for project in snapshot["projects"])
     for source_id in imported_source_ids:
         if source_by_id[source_id].get("project_count") != actual_counts[source_id]:
@@ -174,6 +192,30 @@ def build_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     return snapshot
 
 
+def rebuild_legacy(root: Path = REPO_ROOT) -> dict[str, Any]:
+    """Refresh the legacy projection without re-downloading or baking in regional overlays."""
+    snapshot = {name: load_json(root / "data/national" / f"{name}.json") for name in OUTPUTS}
+    errors = validate_snapshot_values(snapshot)
+    if errors:
+        raise ValueError("national base validation failed:\n" + "\n".join(errors))
+    snapshot["projects"] = sorted(
+        [p for p in snapshot["projects"] if not p["_id"].startswith("legacy:")] + normalize_legacy(root),
+        key=lambda p: p["_id"],
+    )
+    counts = Counter(p["source_id"] for p in snapshot["projects"])
+    imported = {s["_id"] for s in snapshot["sources"] if s["import_status"] == "imported"}
+    for source in snapshot["sources"]:
+        if source["_id"] in imported:
+            source["project_count"] = counts[source["_id"]]
+    snapshot["coverage"] = _coverage(snapshot["projects"], imported)
+    errors = validate_snapshot_values(snapshot)
+    if errors:
+        raise ValueError("refreshed national base validation failed:\n" + "\n".join(errors))
+    for name in ("projects", "sources", "coverage"):
+        write_json(root / "data/national" / f"{name}.json", snapshot[name])
+    return snapshot
+
+
 def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     snapshot = {name: load_json(root / "data" / "national" / f"{name}.json") for name in OUTPUTS}
     errors = validate_snapshot_values(snapshot)
@@ -199,7 +241,7 @@ def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
             source["_id"] for source in snapshot["sources"] if source["import_status"] == "imported"
         }
         measured = _coverage(snapshot["projects"], imported_source_ids)
-        for name in ("projects_total", "located_count", "sources", "notes"):
+        for name in ("projects_total", "located_count", "location_counts", "sources", "notes"):
             snapshot["coverage"][name] = measured[name]
         errors = validate_snapshot_values(snapshot)
         if errors:

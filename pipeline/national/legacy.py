@@ -9,6 +9,7 @@ from typing import Any
 from common import load_json
 from load.build import bind_locations, collect, decide, join_projects
 from load.review_subjects import current_subjects
+from locations.boundaries import STATE_CODES, StateBoundaries
 from matches.core import center
 
 STATUS_GROUPS = {"planned": "planned", "in progress": "under_construction"}
@@ -48,6 +49,8 @@ def normalize(root: Path) -> list[dict[str, Any]]:
     source_hashes = {
         source["_id"]: source["sha256"] for source in load_json(root / "data" / "sources" / "sources.json")
     }
+    boundaries = StateBoundaries.load(root / "data/locations/boundaries")
+    state_fips = {name: code for code, name in STATE_CODES.items()}
 
     projects = []
     for project in records["projects"]:
@@ -66,6 +69,14 @@ def normalize(root: Path) -> list[dict[str, Any]]:
             location_review = "rejected"
         else:
             location_review = "unlocated"
+        # State membership follows eligible endpoints, never the utility name or a line's mean point.
+        endpoint_states = [
+            {"endpoint_id": endpoint["_id"], "state_fips": state_fips[state]}
+            for endpoint in endpoints
+            if endpoint.get("lat") is not None and endpoint.get("lon") is not None
+            if (state := boundaries.state_for(endpoint["lon"], endpoint["lat"])) is not None
+        ]
+        states = sorted({entry["state_fips"] for entry in endpoint_states})
         source = project["source"]
         status = project.get("status")
         projects.append({
@@ -77,9 +88,13 @@ def normalize(root: Path) -> list[dict[str, Any]]:
             "owner": project.get("owner_code"),
             "other_owners": [],
             "planning_region": None,
-            "states": [],
+            "states": states,
             "counties": [],
-            "geography_basis": "reviewed_legacy_endpoints" if located else None,
+            "geography_basis": (
+                "Census containment of eligible legacy endpoints; candidate location review retained; "
+                "endpoint membership does not establish the full route or county."
+                if states else "reviewed_legacy_endpoints" if located else None
+            ),
             "status": status,
             "status_group": STATUS_GROUPS.get((status or "").strip().lower(), "unknown"),
             "in_service": _milestone(project.get("in_service")),
@@ -100,6 +115,17 @@ def normalize(root: Path) -> list[dict[str, Any]]:
                     "status": status,
                     "in_service": project.get("in_service"),
                     "row_top": source.get("row_top"),
+                    "endpoint_reviews": {
+                        endpoint["_id"]: endpoint_decisions.get(endpoint["_id"], "needs_review")
+                        for endpoint in accepted.get(project["_id"], [])
+                    },
+                    "state_assignment": {
+                        "method": "eligible_endpoint_containment",
+                        "boundary_url": boundaries.manifest["query_url"],
+                        "boundary_sha256": boundaries.manifest["raw_geojson_sha256"],
+                        "boundary_vintage": boundaries.manifest["source_vintage"],
+                        "endpoints": endpoint_states,
+                    } if states else None,
                 },
             },
         })
