@@ -1,0 +1,3 @@
+# F32: live assistant continuation
+
+The user explicitly resumed the AI side-button on 2026-09-27 and requested it ready to ship. Resume the kept prototype on a fresh branch based on current main; preserve the original branch. C60 authorizes live Gemini interpretation with server-only credentials, strict validated UI actions and an app-wide launcher. Root owns client integration; delegated Gemini engineer owns the isolated provider/API module; independent review and existing CI are required. No private project data, invented answers, write actions or arbitrary navigation.
