@@ -53,6 +53,8 @@ const REVIEW: Record<string, string> = {
   rejected: "Not confirmed by audit",
 };
 const miles = (d: number) => `${d.toFixed(2)} mi`;
+/** F37: History opens around this project's stored center, as a research aid. */
+const pastWork = (key: string) => `/history?origin=${encodeURIComponent(key)}`;
 const SWEEP_MS = 4200;
 const BOOTH_IDLE_MS = 25_000;
 /** 25 statute miles in degrees of latitude (1° ≈ 69.05 mi), to place the rule's label on its circle. */
@@ -990,6 +992,9 @@ export function TimeView({
                 {p.source_id}
                 {p.page !== null ? ` p. ${p.page}` : ""} · location {p.confidence ?? "unknown"} confidence
               </p>
+              <Link href={pastWork(p.key)} className={s.evidence}>
+                Past work nearby →
+              </Link>
             </section>
           ))}
           <div className={s.detailFoot}>
@@ -1030,6 +1035,9 @@ export function TimeView({
           {project.national ? <NationalProjectEvidence {...project.national} dataset={national.dataset} /> : <p className={s.note}>
             {related.size ? `In ${related.size - 1} ${view} pair${related.size === 2 ? "" : "s"}; linked projects glow.` : `Not in any ${view} pair.`}
           </p>}
+          <Link href={pastWork(project.key)} className={s.evidence}>
+            Find past work nearby in History →
+          </Link>
         </aside>
       ) : null}
 
