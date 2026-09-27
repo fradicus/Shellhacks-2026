@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51, F52, F53]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50, F51, F52, F53, F54]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
@@ -393,3 +393,14 @@ changes no data or ranking.
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F53 | Overlaps story | B | frontend-engineer | 7 | F19, F52 | allowed |
+
+## History parity
+
+The user asked Claude local to bring `/history` to rough parity with `/time`. [C59](decisions/C59-history-parity.md)
+assigns [F54](features/F54-history-parity/spec.md): stems that span the documented record, state inks with tier on
+the ground mark, `/time`'s year readout and scope bar, a quiet rail, dock and phone parity, and a record mode for
+Play. It ships as `[FIX-F37]` PRs and changes no data or count definition.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F54 | History parity with Overlaps | B | frontend-engineer | 7 | F37, F19, F52 | allowed |
