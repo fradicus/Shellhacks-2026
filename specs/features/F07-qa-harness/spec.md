@@ -5,7 +5,7 @@ lane: C
 agent: qa-verifier
 phase: 1
 depends_on: [F00]
-owns: [tests/e2e/, reports/qa/]
+owns: [tests/e2e/, reports/qa/, tests/acceptance/]
 cut: allowed
 ---
 

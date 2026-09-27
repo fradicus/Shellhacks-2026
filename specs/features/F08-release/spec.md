@@ -5,7 +5,7 @@ lane: C
 agent: release-engineer
 phase: 1
 depends_on: [F05]
-owns: [release/, web/app/api/health/, README.md]
+owns: [release/, web/app/api/health/, README.md, tests/web/health/, .env.example]
 cut: never
 ---
 

@@ -102,7 +102,7 @@ jobs:
         run: |
           node scripts/check_national_traces.mjs
           if [ -d tests/web/national ]; then
-            node --test tests/web/national/*.test.ts
+            node --import ./tests/web/loader.mjs --test tests/web/national/*.test.ts
           fi
           if [ -f tests/web/assistant/commands.test.mjs ]; then
             node --test tests/web/assistant/commands.test.mjs
@@ -112,7 +112,7 @@ jobs:
         run: |
           node scripts/check_operations_traces.mjs
           if [ -d tests/web/verified ]; then
-            node --test tests/web/verified/*.test.ts
+            node --import ./tests/web/loader.mjs --test tests/web/verified/*.test.ts
           fi
           if [ -f tests/web/operations-providers/loader.mjs ]; then
             node --import ./tests/web/operations-providers/loader.mjs --test tests/web/operations-providers/*.test.ts
