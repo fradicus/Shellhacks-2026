@@ -1,0 +1,258 @@
+[
+  {
+    "disposition": "accepted",
+    "locator": "ekpc.html project summaries block 1",
+    "name": "Cooper Station to KU Alcalde double-circuit transmission line",
+    "project_id": "southeast:ekpc:cooper-station-to-ku-alcalde-double-circuit-transmission-line",
+    "reason": "project listed on East Kentucky Power Cooperative's project page",
+    "source_id": "southeast:ekpc"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ekpc.html project summaries block 2",
+    "name": "Bonnieville-Cub Run transmission line & substation",
+    "project_id": "southeast:ekpc:bonnieville-cub-run-transmission-line-substation",
+    "reason": "project listed on East Kentucky Power Cooperative's project page",
+    "source_id": "southeast:ekpc"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ekpc.html project summaries block 3",
+    "name": "Coburg - Campbellsville transmission line",
+    "project_id": "southeast:ekpc:coburg-campbellsville-transmission-line",
+    "reason": "project listed on East Kentucky Power Cooperative's project page",
+    "source_id": "southeast:ekpc"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ekpc.html project summaries block 4",
+    "name": "Marion County - Metts transmission line & substation project",
+    "project_id": "southeast:ekpc:marion-county-metts-transmission-line-substation-project",
+    "reason": "project listed on East Kentucky Power Cooperative's project page",
+    "source_id": "southeast:ekpc"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ekpc.html project summaries block 5",
+    "name": "Autumn Leaf transmission line & substation project",
+    "project_id": "southeast:ekpc:autumn-leaf-transmission-line-substation-project",
+    "reason": "project listed on East Kentucky Power Cooperative's project page",
+    "source_id": "southeast:ekpc"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ekpc.html project summaries block 6",
+    "name": "Big Hill to Three Links transmission line & substation project",
+    "project_id": "southeast:ekpc:big-hill-to-three-links-transmission-line-substation-project",
+    "reason": "project listed on East Kentucky Power Cooperative's project page",
+    "source_id": "southeast:ekpc"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-westvirginia.html link /about/transmission_projects/westvirginia/glen-falls.html",
+    "name": "glen-falls",
+    "project_id": "southeast:firstenergy-wv:glen-falls",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-wv"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-westvirginia.html link /about/transmission_projects/westvirginia/gore-doubs.html",
+    "name": "gore-doubs",
+    "project_id": "southeast:firstenergy-wv:gore-doubs",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-wv"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-westvirginia.html link /about/transmission_projects/westvirginia/gore-hampshire-rebuild.html",
+    "name": "gore-hampshire-rebuild",
+    "project_id": "southeast:firstenergy-wv:gore-hampshire-rebuild",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-wv"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-westvirginia.html link /about/transmission_projects/westvirginia/messick-road-morgan.html",
+    "name": "messick-road-morgan",
+    "project_id": "southeast:firstenergy-wv:messick-road-morgan",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-wv"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-westvirginia.html link /about/transmission_projects/westvirginia/sutton-substation-equipment-replacement-project.html",
+    "name": "sutton-substation-equipment-replacement-project",
+    "project_id": "southeast:firstenergy-wv:sutton-substation-equipment-replacement-project",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-wv"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-westvirginia.html link /about/transmission_projects/westvirginia/wv-misop-projects.html",
+    "name": "wv-misop-projects",
+    "project_id": "southeast:firstenergy-wv:wv-misop-projects",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-wv"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "fe-virginia.html link /about/transmission_projects/virginia/gore-doubs.html",
+    "name": "gore-doubs",
+    "project_id": "southeast:firstenergy-wv:gore-doubs",
+    "reason": "same project page also listed on the VA index",
+    "source_id": "southeast:firstenergy-va"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "fe-virginia.html link /about/transmission_projects/virginia/gore-hampshire-rebuild.html",
+    "name": "gore-hampshire-rebuild",
+    "project_id": "southeast:firstenergy-wv:gore-hampshire-rebuild",
+    "reason": "same project page also listed on the VA index",
+    "source_id": "southeast:firstenergy-va"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "fe-virginia.html link /about/transmission_projects/virginia/page-sperryville.html",
+    "name": "page-sperryville",
+    "project_id": "southeast:firstenergy-va:page-sperryville",
+    "reason": "project listed on FirstEnergy's project page",
+    "source_id": "southeast:firstenergy-va"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/ashley-park.html",
+    "name": "Ashley Park – Wansley 500 kV Transmission Line Project",
+    "project_id": "legacy:GPC:21062@gpc-2025",
+    "reason": "same endpoint names and voltage as the legacy Georgia Power record; this page states “Q2 2028 Project complete”",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html",
+    "name": "Big Tazewell - Farley 500kv Transmission Project",
+    "project_id": "southeast:georgia-power:big-tazewell-farley",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+    "name": "Callaway Road – Thomson Transmission Area Project",
+    "project_id": "southeast:georgia-power:callaway-thomson",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/conyers-klondike.html",
+    "name": "Conyers-Klondike 230 kV Transmission Line Project",
+    "project_id": "legacy:GPC:21142@gpc-2025",
+    "reason": "same endpoint names and voltage as the legacy Georgia Power record; this page states “Q1 2028 Project complete”",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html",
+    "name": "Decatur – Scottdale 115 kV Transmission Line Project",
+    "project_id": "southeast:georgia-power:decatur-scottdale",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+    "name": "Effingham County Transmission Project",
+    "project_id": "southeast:georgia-power:effingham-county",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html",
+    "name": "Grassy Hollow–Great Valley 230 kv Transmission Line Project",
+    "project_id": "southeast:georgia-power:grassy-hollow-great-valley",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hatch-wadley.html",
+    "name": "Hatch-Wadley Primary 500 kV Transmission Line Project",
+    "project_id": "legacy:GPC:20756@gpc-2025",
+    "reason": "same endpoint names and voltage as the legacy Georgia Power record; this page states “Q1 2031 Project Completion”",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html",
+    "name": "Hills Bridge - Speedway 230/500 kV Transmission Line Project",
+    "project_id": "southeast:georgia-power:hills-bridge-speedway",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gpc.html link /about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html",
+    "name": "Tomochichi – Towaliga River Area Project",
+    "project_id": "southeast:georgia-power:tomochichi-towaliga",
+    "reason": "project listed on Georgia Power's project page",
+    "source_id": "southeast:georgia-power"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "gtc-ecrp.html Project Details item 1",
+    "name": "East Walton 500/230 kV Substation (Walton County)",
+    "project_id": "legacy:GPC:09662@gpc-2025",
+    "reason": "same facility name and voltage as the legacy Georgia Power record (GTC-owned); the page states all projects “ready for service Q2 2027”",
+    "source_id": "southeast:gtc-ecrp"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gtc-ecrp.html Project Details item 2",
+    "name": "Bostwick 230 kV Switching Station (Morgan County)",
+    "project_id": "southeast:gtc-ecrp:bostwick-230-kv-switching-station",
+    "reason": "project listed on Georgia Transmission Corporation's project page",
+    "source_id": "southeast:gtc-ecrp"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gtc-ecrp.html Project Details item 3",
+    "name": "East Walton – Rockville 500 kV Transmission Line (Walton, Morgan and Putnam Counties)",
+    "project_id": "southeast:gtc-ecrp:east-walton-rockville-500-kv-transmission-line",
+    "reason": "project listed on Georgia Transmission Corporation's project page",
+    "source_id": "southeast:gtc-ecrp"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gtc-ecrp.html Project Details item 4",
+    "name": "Bostwick – East Walton 230 kV Transmission Line (Walton and Morgan Counties)",
+    "project_id": "southeast:gtc-ecrp:bostwick-east-walton-230-kv-transmission-line",
+    "reason": "project listed on Georgia Transmission Corporation's project page",
+    "source_id": "southeast:gtc-ecrp"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gtc-ecrp.html Project Details item 5",
+    "name": "East Walton – Jacks Creek 230 kV Transmission Line (Walton County)",
+    "project_id": "southeast:gtc-ecrp:east-walton-jacks-creek-230-kv-transmission-line",
+    "reason": "project listed on Georgia Transmission Corporation's project page",
+    "source_id": "southeast:gtc-ecrp"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "gtc-ecrp.html Project Details item 6",
+    "name": "Bethabara – East Walton 230 kV Transmission Line (Walton and Oconee Counties)",
+    "project_id": "southeast:gtc-ecrp:bethabara-east-walton-230-kv-transmission-line",
+    "reason": "project listed on Georgia Transmission Corporation's project page",
+    "source_id": "southeast:gtc-ecrp"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "gtc-dresden-talbot.html page title",
+    "name": "Dresden – Talbot 500 kV Transmission Line",
+    "project_id": "legacy:GPC:19950@gpc-2025",
+    "reason": "same endpoint names and voltage as the legacy Georgia Power record (GTC-owned); this page states “ready for service by Q4 2031”",
+    "source_id": "southeast:gtc-dresden-talbot"
+  }
+]
