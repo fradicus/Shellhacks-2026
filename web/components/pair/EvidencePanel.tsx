@@ -2,6 +2,7 @@ import { Badge, UtilityBadge } from "@/components/ui";
 import type { Location, Project, Source, VersionChange } from "@/lib/types";
 import { Cite } from "./Cite";
 import { cite } from "./sources";
+import { filedOwnerLabel } from "./evidenceLabels";
 import s from "./pair.module.css";
 
 const NOT_PUBLISHED = <span className={s.unknown}>Not published</span>;
@@ -130,7 +131,7 @@ export function EvidencePanel({
         <div>
           <h3 id={`p-${side}`}>{p.name}</h3>
           <div className={s.idLine}>
-            <UtilityBadge utility={p.utility} />
+        {filedOwnerLabel(p) ? <Badge>{filedOwnerLabel(p)}</Badge> : <UtilityBadge utility={p.utility} />}
             <code>{p.project_key}</code>
             {p.active ? null : <Badge tone="warn">superseded filing</Badge>}
           </div>

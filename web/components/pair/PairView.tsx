@@ -3,6 +3,7 @@ import { Badge, BandBadge, ReviewBadge, UtilityBadge, fmtMiles, gapText } from "
 import type { PairDetail, Project } from "@/lib/types";
 import { CoordinationCard } from "./CoordinationCard";
 import { EvidencePanel } from "./EvidencePanel";
+import { filedOwnerLabel, pairDescription } from "./evidenceLabels";
 import s from "./pair.module.css";
 
 function Missing({ k }: { k: string }) {
@@ -22,7 +23,7 @@ function Name({ p, k, side }: { p: Project | null; k: string; side: "A" | "B" })
       <span className={s.sideTag} aria-hidden="true">
         {side}
       </span>
-      <UtilityBadge utility={p?.utility ?? "unknown"} />
+      {filedOwnerLabel(p) ? <Badge>{filedOwnerLabel(p)}</Badge> : <UtilityBadge utility={p?.utility ?? "unknown"} />}
       <span className={s.nameText}>{p?.name ?? k}</span>
     </div>
   );
@@ -51,8 +52,7 @@ export function PairView({ detail }: { detail: PairDetail }) {
           {m.rank ? <Badge tone="neutral">rank {m.rank}</Badge> : null}
         </div>
         <p className={s.muted}>
-          Pair <code>{m._id}</code>. A coordination lead worth a planner&apos;s conversation, not a compliance finding or a
-          savings estimate.
+          Pair <code>{m._id}</code>. {pairDescription(m.review_state)}
         </p>
       </header>
 
