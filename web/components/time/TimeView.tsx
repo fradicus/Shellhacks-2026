@@ -950,6 +950,8 @@ export function TimeView({
             ? "Nearby candidates are under 25 straight-line miles apart; height shows filed timing."
             : "Distance on the ground decides an overlap; height only shows timing."}
         </p>
+        <details className={s.provenance} open={!candidateMode}>
+          <summary>Data and sources · {located.length.toLocaleString("en-US")} mapped projects</summary>
         <dl className={s.stats}>
           <div>
             <dt>Drawn</dt>
@@ -982,6 +984,7 @@ export function TimeView({
           </> : "National projects unavailable; showing the legacy dataset."}
           {" "}<Link href="/explore">Explore national records{national.available ? ` (${national.unlocated} unlocated)` : ""} →</Link>
           </p>
+        </details>
         </details>
         <button type="button" className={s.play} onClick={() => (tour === null ? goStep(0) : stopTour())} disabled={!ready}>
           <span aria-hidden>{tour === null ? "▶" : "■"}</span> {tour === null ? "Play the story" : "Stop the story"}
@@ -1056,7 +1059,7 @@ export function TimeView({
               );
             })}
           </ol>
-        ) : (
+        ) : candidateMode && candidates.error ? null : (
           <div className={s.empty}>
             <p>{candidateMode ? (candidates.loading ? "Loading candidates…" : candidates.error ? "" : "No candidates with both projects in this scope.") : !pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
               : scopeLabel ? `No ${view} pairs with both projects ${scope?.kind === "pin" ? `within ${RULE_MI} mi of the pin` : `in ${scopeLabel}`}. Zero is a valid result, not a failure to look.`
