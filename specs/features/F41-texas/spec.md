@@ -69,3 +69,13 @@ commit derived facility evidence with OSM element IDs, exact query, retrieval pr
 attribution. Report full/partial candidate, area-only, unlocated and ambiguous counts with denominators.
 The supplied prototype is a lead to reproduce, not an authoritative count. C32 must authorize the broader
 release and F30 consumer hook before activation; C29's eight-ID release must not be expanded silently.
+
+## Final frontend direction and receipt — 2026-09-27
+
+The user's latest instruction supersedes the county-dot permission for the main Three.js map:
+include tentative facility centers on `/time`, exclude county-only anchors. Keep county evidence in
+`/explore` and exports. Preserve the existing planning/history split, so source-reported in-service
+records do not enter the planning scene. F31 #189 and F19 #196 implement this without a second F19
+writer. See [the live receipt](../../../reports/texas/main-map-receipt.md) for source-bounded counts,
+active dataset, representative selection and limitations. The bounded F41 release is complete;
+this does not claim every Texas project has been acquired or independently reviewed.
