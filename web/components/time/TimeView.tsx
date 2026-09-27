@@ -884,7 +884,7 @@ export function TimeView({
         text: `${facts(wide)} Same neighborhood, different years, so it ranks lower.${wide.review_state === "rejected" ? " An audit rejected it." : ""}`,
         names: names(wide),
       });
-    steps.push({ pair: null, kicker: "The rule", text: candidateMode ? "Provisional candidates are under 25 straight-line miles apart. Routes and construction schedules have not been checked." : "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
+    steps.push({ pair: null, kicker: "The rule", text: candidateMode ? "Provisional candidates are within 25 miles by road, on stored driving routes. Construction schedules have not been checked." : "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
     return steps;
   }, [visible, byKey, located.length, candidateMode]);
 
@@ -1018,7 +1018,7 @@ export function TimeView({
         </h1>
         <p className={s.lede}>
           Every located project rises to its filed in-service date. {candidateMode
-            ? "Nearby candidates are under 25 straight-line miles apart; height shows filed timing."
+            ? "Nearby candidates are within 25 miles by road; height shows filed timing."
             : "Distance on the ground decides an overlap; height only shows timing."}
         </p>
         <details className={s.provenance} open={!candidateMode}>
@@ -1164,7 +1164,7 @@ export function TimeView({
         {candidateMode && candidates.page?.nextOffset != null ? <button type="button" className={s.loadMore}
           disabled={candidates.loading} onClick={candidates.loadMore}>{candidates.loading ? "Loading…" : "Load more candidates"}</button> : null}
         <p className={s.footnote}>{candidateMode
-          ? "Provisional · under 25 miles straight-line. Driving routes and construction schedules have not been checked."
+          ? "Provisional · within 25 miles by road. Construction schedules have not been checked."
           : "Priority order as stored: nearer band first, then the smaller exact day gap."}</p>
       </nav>
       <section className={s.tray} aria-label="All projects">

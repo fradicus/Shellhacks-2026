@@ -10,7 +10,9 @@ from the dataset-pinned API. Scope changes clear selection and restart paging;
 requests are abortable and old responses never replace the new scope. Shared
 candidate links retrieve their pair even outside page one. Evidence remains lazy.
 Only selected/hovered national connections draw. Label every candidate provisional,
-straight-line and not checked against routes or construction schedules.
+straight-line and not checked against routes or construction schedules. Once F48's
+pairs carry stored routes (C46), a connection follows the road and the labels read
+"within 25 miles by road"; construction schedules remain unchecked.
 
 Validation: desktop/mobile list, state/pin scopes, load more, pair selection,
 source evidence, share/reload, 2D/3D, legacy switch, failed and stale responses,
