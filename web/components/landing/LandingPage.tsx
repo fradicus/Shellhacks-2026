@@ -14,8 +14,8 @@ export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
       <HeroStory>
       <section className={s.hero} aria-labelledby="hero-title">
         <div className={s.heroContent}>
-          <p className={s.eyebrow}><span className={s.statusDot}/> TRANSMISSION INTELLIGENCE, CONNECTED</p>
-          <h1 id="hero-title">Every mile.<br/><span>Connected.</span></h1>
+          <h1 id="hero-title">GridBridge</h1>
+          <p className={s.heroTagline}>Every mile. Connected.</p>
           <p className={s.heroDescription}>The next opportunity could be just down the road.<br className={s.desktopBreak}/> See where utility projects meet—and where<br className={s.desktopBreak}/> a conversation could change the plan.</p>
           <div className={s.actions}>
             <Link href="/time" className={s.primary}>Explore the overlaps <Arrow/></Link>
@@ -24,7 +24,7 @@ export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
           <p className={s.heroNote}>{fixtureMode ? "Sample data available · No account needed" : "Public-source evidence · No account needed"}</p>
         </div>
         <HeroScene/>
-        <a href="#how-it-works" className={s.scrollHint}>SCROLL TO CONNECT <span aria-hidden="true">↓</span></a>
+        <a href="#how-it-works" className={s.scrollHint}>FOLLOW THE CONNECTION <span aria-hidden="true">↓</span></a>
       </section>
       </HeroStory>
 

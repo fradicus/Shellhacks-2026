@@ -185,3 +185,20 @@
 .hero:has(.sceneNetwork) .storyBeat {visibility:hidden;}
 @media(max-width:700px){.storyBeat {top:43%;}.storyBeat strong {font-size:clamp(44px,10.5vw,75px);}.storyBeat p {font-size:13px;max-width:260px;margin:18px auto;}}
 @media(prefers-reduced-motion:reduce){.heroContent > * {animation:none;}.storyBeat {display:none;}}
+
+/* Reference typography: a single bold wordmark with a quiet supporting line. */
+.heroContent {padding-top:clamp(115px,20vh,210px);}
+.hero h1,.storyBeat strong {font-family:"Helvetica Neue",Arial,sans-serif;font-weight:600;letter-spacing:-.055em;}
+.hero h1 {font-size:clamp(64px,10.4vw,150px);line-height:1.02;}
+.heroTagline {font-size:clamp(19px,2.2vw,30px);line-height:1.4;color:#d2d2d7;margin:14px 0 0;letter-spacing:-.025em;}
+.heroDescription {font-size:14px;max-width:390px;margin:24px 0;}
+.storyBeat strong {font-size:clamp(60px,11.5vw,168px);}
+.storyBeatTwo strong {color:#f5f5f7;}
+.storyBeat p {color:#86868b;letter-spacing:-.015em;}
+@media(max-width:700px){
+ .heroContent {padding-top:110px;}
+ .hero h1 {font-size:clamp(48px,12.5vw,86px);}
+ .heroTagline {font-size:21px;}
+ .heroDescription {font-size:13px;max-width:320px;}
+ .storyBeat strong {font-size:clamp(44px,11.5vw,80px);}
+}
