@@ -153,3 +153,23 @@ meaning one thing only: the filed in-service date of a project you are looking a
 
 Use summaries for initial rendering and load dataset-pinned evidence on selection.
 See [F19 compact payload](../../decisions/F19-compact-payload.md) for acceptance.
+
+## Point inks (2026-09-27)
+
+Decision: [F19 state ink](../../decisions/F19-state-ink.md). Supersedes "not recoloured by region" in
+[F19 scope focus](../../decisions/F19-scope-focus.md).
+
+22. **Color is the state.** Every drawn project (pillar, bead, ground ring, halo, list dot, card, pair rule) is
+    drawn in its first stored state's ink, one of six pen colors, with no two states that share a border alike.
+    A project with no stored state is neutral. The map itself is unchanged: no fills.
+    Neighbors come from shared border vertices in the Census generalized 1:20M state boundaries, committed
+    byte-for-byte as `web/components/time/usStates.json` (query, retrieval time, SHA-256 in
+    `usStates.source.json`), and are computed on the server; the file never ships to the browser.
+23. **Shape is the location tier (C25).** Confirmed: the bead and ground mark carry an outer ring. Owner-published
+    (including the legacy utility filings): a solid bead. Tentative: a hollow bead. Color never carries the tier,
+    so a state's ink never upgrades a point. The legend says both, in two lines.
+
+### Validation (point inks)
+- `node --import ./tests/web/operations-providers/loader.mjs --test web/components/time/stateInk.test.ts`: 51
+  states, no shared border vertex between two states of one ink, inks spread across the palette.
+- Screenshots at 1440 in 2D and 3D on live data.

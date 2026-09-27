@@ -1,6 +1,8 @@
 import { loadNationalSummaries } from "@/lib/national/server";
 import { nationalTimeProjects, stillPlanned } from "@/components/time/nationalProjects";
 import { TimeView, type TimePair, type TimeProject } from "@/components/time/TimeView";
+import { stateInks, type StateFeature } from "@/components/time/stateInk";
+import usStates from "@/components/time/usStates.json";
 import { ErrorState } from "@/components/ui";
 import { analysisDate, getMatches, getProjects, isFixtureMode } from "@/lib/data";
 import { isUnavailable, type Project } from "@/lib/types";
@@ -9,6 +11,9 @@ import { isUnavailable, type Project } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 export const metadata = { title: "Overlaps · Common Ground" };
+
+/** One pen color per state from the Census boundaries, neighbors never alike. Derived once per server. */
+const INK = stateInks((usStates as unknown as { features: StateFeature[] }).features);
 
 export default async function TimePage() {
   const [matches, projects, national] = await Promise.all([
@@ -60,7 +65,7 @@ export default async function TimePage() {
     regions: (national.geography?.regions ?? []).map((r) => ({ code: r.region_code, name: r.name })),
   };
   return (
-    <TimeView projects={slim} geography={geography} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
+    <TimeView projects={slim} geography={geography} stateInk={INK} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
         drawn: nationalPoints.length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );

@@ -1,19 +1,21 @@
-// State fills under the time layer: a map's colors (neighbors differ) or drawn projects per state.
+// Point inks: each state's projects are drawn in one pen color, and no two neighboring states share one.
 type Ring = [number, number][];
 export interface StateFeature {
   properties: { GEOID: string; STUSAB: string };
   geometry: { type: "Polygon"; coordinates: Ring[] } | { type: "MultiPolygon"; coordinates: Ring[][] };
 }
 
-/** Muted and cool, so the warm project points stay the brightest thing on the map. */
-export const MAP_PALETTE = ["#5d8fd6", "#3fa69a", "#9178c9", "#c0658e", "#6fa35f", "#4fa3c7"];
+/** Gel-pen inks, bright on the dark basemap. None is grey, which is the out-of-scope trace. */
+export const INKS = ["#ff6b81", "#ffa94d", "#ffe066", "#51e0a0", "#4cc9f0", "#b197fc"];
+/** A project with no stored state. */
+export const NO_STATE_INK = "#c9d1e0";
 
 /**
  * A color index per state (GEOID) with no two neighbors alike. Neighbors are states sharing a border vertex:
  * the Census generalized file is topologically consistent, so shared borders are the same coordinates.
  * Greedy, most-connected first, least-used color among the free ones so the colors spread evenly.
  */
-export function neighborColors(features: StateFeature[], k = MAP_PALETTE.length): Map<string, number> {
+export function neighborColors(features: StateFeature[], k = INKS.length): Map<string, number> {
   const owners = new Map<string, Set<string>>();
   for (const f of features) {
     const g = f.geometry;
@@ -38,3 +40,7 @@ export function neighborColors(features: StateFeature[], k = MAP_PALETTE.length)
   }
   return color;
 }
+
+/** State FIPS → ink, computed on the server so the boundary file never ships to the browser. */
+export const stateInks = (features: StateFeature[]): Record<string, string> =>
+  Object.fromEntries([...neighborColors(features)].map(([fips, c]) => [fips, INKS[c]]));

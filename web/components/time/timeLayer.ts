@@ -21,6 +21,8 @@ export interface TimeItem {
   span: Span;
   /** Tentative location (C25): drawn as a hollow bead so it never reads as a reviewed point. */
   outline?: boolean;
+  /** Independently confirmed location (C25): the bead and its ground mark carry an outer ring. Color is the state. */
+  ringed?: boolean;
 }
 export interface Focus {
   emphasis: (key: string) => Emphasis;
@@ -76,7 +78,7 @@ const POINT_FS = /* glsl */ `
     vec3 col; float a;
     if (vShape < 0.5) {
       if (r > 1.0) discard;
-      float core = smoothstep(0.36, 0.2, r);
+      float core = smoothstep(0.24, 0.12, r);
       float glow = pow(max(1.0 - r, 0.0), 2.4);
       col = mix(vTint * 1.15, vec3(1.0, 0.975, 0.94), core);
       a = max(core, glow * 0.85);
@@ -253,7 +255,8 @@ export function createTimeLayer(
       // Scrubber: anything filed after the chosen date is a ghost.
       const k = BRIGHT[e] * (asOf !== null && it.span.kind !== "unknown" && full > asOf ? GHOST : 1);
       rings.push({ p: [x, y, 0], c, size: e === "dim" ? 8 : e === "sel" ? 20 : 11, shape: 1, bright: k * 0.8 });
-      if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 46 : 28, shape: 3, bright: k * 0.32 });
+      if (it.ringed) rings.push({ p: [x, y, 0], c, size: e === "dim" ? 15 : e === "sel" ? 36 : 20, shape: 1, bright: k * 0.6 });
+      if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 46 : 20, shape: 3, bright: k * 0.16 });
       if (it.span.kind === "unknown") continue;
       dated++;
       // Sweep: the pillar grows to min(date, sweep); its bead appears, with a flash, once the sweep passes it.
@@ -281,6 +284,7 @@ export function createTimeLayer(
       if (it.span.kind === "exact") {
         if (!reached) continue;
         (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: it.outline ? 1 : 0, bright: k * (1 + 1.1 * flash) });
+        if (it.ringed) (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * 2, shape: 1, bright: k * 0.8 });
         if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, top], c, size: SIZE[e] * (3.2 + 2.2 * flash), shape: 3, bright: k * (0.55 + 0.9 * flash) });
       } else {
         // A month or year: frosted column over the whole span, with rings at both ends. No day is picked.
