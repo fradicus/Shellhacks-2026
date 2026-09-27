@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "westconnect-tppl-2026-02",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1",
+    "import_status": "imported",
+    "landing_url": "https://regplanning.westconnect.com/tppl.htm",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "Arizona, New Mexico and Colorado rows only. Candidate points are C33 exact-name OSM matches with C38's operator guard. SRP, NV Energy and PacifiCorp do not file in the TPPL.",
+      "The workbook's Control sheet TimeStamp reads 2026-02-25 09:30; its meaning (save or send) is not stated."
+    ],
+    "planning_region": "westconnect",
+    "project_count": 262,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "WestConnect",
+    "retrieved_at": "2026-09-27T08:01:51Z",
+    "role": "project_plan",
+    "sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
+    "states": [
+      "04",
+      "08",
+      "35"
+    ],
+    "title": "WestConnect Transmission Plan Project List (TPPL) workbook",
+    "vintage": null
+  },
+  {
+    "_id": "westtec-10yr-planned-sw",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/WestTEC_10yr_Planned_Projects/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+    "import_status": "imported",
+    "landing_url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/WestTEC_10yr_Planned_Projects/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "Only lines whose terminal-vertex mean is in Nevada or Utah and that F42 did not publish. The layer gives no dates."
+    ],
+    "planning_region": "WestTEC 10-year",
+    "project_count": 10,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "WestTEC (layer hosted by BPA)",
+    "retrieved_at": "2026-09-27T08:01:53Z",
+    "role": "project_plan",
+    "sha256": "0490586465c9e95eca10bc8b1d2c9cae2d545af6504274ddddf203590ace764c",
+    "states": [
+      "32",
+      "49"
+    ],
+    "title": "WestTEC 10-year planned projects layer (Nevada and Utah lines)",
+    "vintage": null
+  }
+]

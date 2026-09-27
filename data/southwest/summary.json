@@ -1,0 +1,48 @@
+{
+  "by_state": {
+    "04": 119,
+    "08": 97,
+    "32": 3,
+    "35": 46,
+    "49": 7
+  },
+  "by_status": {
+    "cancelled": 4,
+    "in_service": 41,
+    "planned": 173,
+    "proposed": 50,
+    "under_construction": 4
+  },
+  "by_tier": {
+    "candidate": 144,
+    "candidate_unique_name": 18,
+    "official": 10
+  },
+  "distinct_points": 133,
+  "located": 172,
+  "located_by_state": {
+    "04": 69,
+    "08": 66,
+    "32": 3,
+    "35": 27,
+    "49": 7
+  },
+  "located_by_status": {
+    "cancelled": 2,
+    "in_service": 19,
+    "planned": 121,
+    "proposed": 30
+  },
+  "located_not_in_service": 151,
+  "located_with_dated_event": 131,
+  "projects": 272,
+  "unlocated_reasons": {
+    "ambiguous": 1,
+    "ambiguous,no_facility": 2,
+    "no_facility": 72,
+    "no_facility,operator_conflict": 13,
+    "no_named_endpoint": 5,
+    "operator_conflict": 7
+  },
+  "verified": 0
+}
