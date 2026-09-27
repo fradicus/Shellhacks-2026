@@ -1,8 +1,8 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useId, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { APPROVED_VIEWS, AssistantActionSchema, buildAssistantHref, validateAssistantAction, type AssistantAction, type AssistantContext } from "@/lib/assistant/commands";
+import { AssistantActionSchema, buildAssistantHref, validateAssistantAction, type AssistantAction, type AssistantContext } from "@/lib/assistant/commands";
 import type { AssistantResponse, AssistantStatus } from "@/lib/assistant/contracts";
 import type { NationalExplorerController, NationalFilters } from "@/lib/national/types";
 import styles from "./assistant.module.css";
@@ -60,8 +60,9 @@ function assistantContext(value: AssistantRegistration): AssistantContext {
 }
 function filterSignature(filters: Readonly<NationalFilters>): string { return JSON.stringify(filters, Object.keys(filters).sort()); }
 function currentSafeHref(pathname: string): string | null {
-  const safePaths = new Set<string>([...Object.values(APPROVED_VIEWS), "/assistant"]);
-  return safePaths.has(pathname) ? `${pathname}${typeof window === "undefined" ? "" : window.location.search}` : null;
+  // usePathname supplies only this app's path; reject URL-like or Windows separators before retaining it for one undo.
+  if (!pathname.startsWith("/") || pathname.startsWith("//") || pathname.includes("\\") || /[\u0000-\u001f]/.test(pathname)) return null;
+  return `${pathname}${typeof window === "undefined" ? "" : window.location.search}`;
 }
 export function useAssistantHost(): HostContextValue | null { return useContext(HostContext); }
 
@@ -101,7 +102,7 @@ function AssistantPanel({ registration }: { registration: AssistantRegistration 
     } catch { if (!abort.signal.aborted) { setStatus(null); setStatusError("Assistant readiness could not be checked."); } }
     finally { if (statusAbort.current === abort) { statusAbort.current = null; setStatusLoading(false); } }
   }, []);
-  useEffect(() => { latestSignature.current = contextSignature; }, [contextSignature]);
+  useLayoutEffect(() => { latestSignature.current = contextSignature; }, [contextSignature]);
   useEffect(() => { const timer = setTimeout(() => void loadStatus(), 0); return () => clearTimeout(timer); }, [loadStatus]);
   useEffect(() => () => { active.current?.abort.abort(); statusAbort.current?.abort(); }, []);
   useEffect(() => {
@@ -130,19 +131,19 @@ function AssistantPanel({ registration }: { registration: AssistantRegistration 
       try { action = validateAssistantAction(actionValue, assistantContext(registration)); }
       catch (error) { return { ok: false, reason: error instanceof Error ? error.message : "The action is no longer valid." }; }
       if (action.type !== "navigate") {
-        if (registration.controller.availability.loading || !registration.controller.availability.available) return { ok: false, reason: "Wait for the current project results before applying that action." };
+        if (action.type !== "filters.reset" && (registration.controller.availability.loading || !registration.controller.availability.available)) return { ok: false, reason: "Wait for the current project results before applying that action." };
         const before = filterSignature(registration.controller.filters); const result = registration.controller.applyAction(action);
         if (result.ok) { setUndoTarget({ kind: "controller" }); if (action.type.startsWith("filters.")) setAwaitingCount(before); }
         return result;
       }
       const href = buildAssistantHref(action, registration.controller.filters); if (!href) return { ok: false, reason: "That destination is not available." };
-      const previous = currentSafeHref(pathname); if (previous) setUndoTarget({ kind: "route", href: previous }); router.push(href); return { ok: true };
+      const previous = currentSafeHref(pathname); setUndoTarget(previous ? { kind: "route", href: previous } : null); router.push(href); return { ok: true };
     }
     let href: string | null;
     try { href = buildAssistantHref(AssistantActionSchema.parse(actionValue), filters); }
     catch (error) { return { ok: false, reason: error instanceof Error ? error.message : "That action is not supported." }; }
     if (!href) return { ok: false, reason: "Open the explorer before selecting a project or changing the map focus." };
-    const previous = currentSafeHref(pathname); if (previous) setUndoTarget({ kind: "route", href: previous }); router.push(href); return { ok: true };
+    const previous = currentSafeHref(pathname); setUndoTarget(previous ? { kind: "route", href: previous } : null); router.push(href); return { ok: true };
   }
 
   async function ask(text: string) {
@@ -203,7 +204,7 @@ function AssistantPanel({ registration }: { registration: AssistantRegistration 
         {registration?.dataset ? <small>Dataset {registration.dataset}</small> : null}</section>
       <div className={styles.actions}><button type="button" onClick={undo} disabled={!undoTarget}>Undo assistant action</button><button type="button" onClick={() => {
         if (registration) { registration.controller.reset(); setUndoTarget({ kind: "controller" }); }
-        else { const previous = currentSafeHref(pathname); if (previous) setUndoTarget({ kind: "route", href: previous }); router.push("/assistant"); }
+        else { const previous = currentSafeHref(pathname); setUndoTarget(previous ? { kind: "route", href: previous } : null); router.push("/assistant"); }
       }}>Reset explorer filters</button></div>
       <p className={styles.footer}>Common Ground can operate approved controls and explain bounded evidence. It cannot write data, run code, open arbitrary URLs, invent locations or promise savings.</p>
     </section> : null}

@@ -40,8 +40,9 @@ function ambiguousCounty(request: AssistantRequest, context: AssistantContext): 
 function modelInput(data: NationalSummaryPayload, request: AssistantRequest, context: AssistantContext) {
   const ids = new Set(context.visibleProjectIds);
   const projects = [...new Map([...data.projects, ...data.mapProjects].filter((p) => ids.has(p._id)).map((p) => [p._id, p])).values()];
-  const message = folded(request.message);
-  const counties = context.counties.filter((c) => message.includes(folded(c.name)) || c.state_fips === request.filters.state).slice(0, 100);
+  const named = context.counties.filter((c) => mentions(request.message, c.name) || mentions(request.message, c.full_name));
+  const selected = context.counties.filter((c) => c.state_fips === request.filters.state);
+  const counties = [...new Map([...named, ...selected].map((c) => [c.county_geoid, c])).values()].slice(0, 100);
   return { request: request.message, filters: request.filters, dataset: data.dataset, available: data.available,
     // Deliberately omit source descriptions, raw rows, URLs and all Georgia document text.
     untrusted_catalog: { states: context.states, regions: context.regions, counties, counties_truncated: counties.length < context.counties.length, planningRegions: context.planningRegions.slice(0, 100), owners: context.owners.slice(0, 200), projects: projects.map((p) => ({ id: p._id, name: p.name.slice(0, 160), states: p.states, counties: p.counties, status: p.status_group })) } };

@@ -92,6 +92,17 @@ test("editing explorer controls cancels a delayed reply before it can act", asyn
   await expect(panel.getByText("TEST DATA: stale Florida action.")).toHaveCount(0);
 });
 
+test("reset remains a recovery action while explorer results are unavailable", async ({ page }) => {
+  await mockAssistant(page, (input) => ({ status: "action", message: "TEST DATA: reset unavailable explorer filters.", action: { type: "filters.reset" }, requestId: input.requestId, dataset: input.dataset, model: "test-gemini-model", provider: "gemini" }));
+  await page.goto("/assistant?from=2029-01-01&to=2028-01-01");
+  const panel = await openAssistant(page);
+  await expect(panel.getByText("Project data is unavailable. No count is claimed.", { exact: true })).toBeVisible();
+  await panel.locator("textarea").fill("Reset the explorer filters");
+  await panel.getByRole("button", { name: /Ask Gemini/ }).click();
+  await expect(page).toHaveURL(/\/assistant$/);
+  await expect(panel.getByText("Action applied through the current app controls.", { exact: true })).toBeVisible();
+});
+
 test("standalone assistant fits mobile, restores focus, and navigates an approved route", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await mockAssistant(page, (input) => ({ status: "action", message: "TEST DATA: open field planning.", action: { type: "navigate", view: "operations" }, requestId: input.requestId, dataset: input.dataset, model: "test-gemini-model", provider: "gemini" }));
@@ -112,15 +123,15 @@ test("standalone assistant fits mobile, restores focus, and navigates an approve
   await expect(page).toHaveURL(/\/operations$/);
 });
 
-test("global host keeps chat mounted while an approved navigation is undone", async ({ page }) => {
+test("global host preserves a dynamic app route for one safe navigation undo", async ({ page }) => {
   test.skip(!sharedLayoutHasHost, "C60 shared-layout integration not yet present");
   await mockAssistant(page, (input) => ({ status: "action", message: "TEST DATA: open field planning.", action: { type: "navigate", view: "operations" }, requestId: input.requestId, dataset: input.dataset, model: "test-gemini-model", provider: "gemini" }));
-  await page.goto("/coverage");
+  await page.goto("/pair/OVL_2");
   const panel = await openAssistant(page);
   await panel.locator("textarea").fill("Open field planning");
   await panel.getByRole("button", { name: /Ask Gemini/ }).click();
   await expect(page).toHaveURL(/\/operations$/);
   await expect(panel.getByText("TEST DATA: open field planning.", { exact: true })).toBeVisible();
   await panel.getByRole("button", { name: "Undo assistant action" }).click();
-  await expect(page).toHaveURL(/\/coverage$/);
+  await expect(page).toHaveURL(/\/pair\/OVL_2$/);
 });

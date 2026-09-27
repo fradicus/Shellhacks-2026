@@ -76,6 +76,16 @@ test("overlap help states the current inclusive stored fastest-drive rule", asyn
   assert.match(answer.message, /missing or unverified route is not a confirmed overlap/);
 });
 
+test("named county survives the context cap after more than100 selected-state counties", async () => {
+  const counties = Array.from({ length: 150 }, (_, index) => ({ county_geoid: `48${String(index).padStart(3, "0")}`, name: `Synthetic${index}`, full_name: `Synthetic${index} County`, state_fips: "48", state_name: "Texas" }));
+  counties.push({ county_geoid: "48507", name: "Zavala", full_name: "Zavala County", state_fips: "48", state_name: "Texas" });
+  let observed;
+  const h = handler({ load: async () => ({ ...data, geography: { ...data.geography, states: [...data.geography.states, { state_fips: "48", name: "Texas", usps: "TX", census_region_code: "3" }], counties } }), generate: async (_config, context) => { observed = context.untrusted_catalog.counties; return decision; } });
+  assert.equal((await h.POST(request({ ...input, message: "show Zavala County", filters: { ...input.filters, state: "48" } }))).status, 200);
+  assert.equal(observed.length, 100); assert.equal(observed[0].county_geoid, "48507");
+  assert.equal(new Set(observed.map((c) => c.county_geoid)).size, 100);
+});
+
 test("unqualified duplicate county clarifies before any billable call", async () => {
   let calls = 0;
   const h = handler({ generate: async () => { calls++; return decision; } });
