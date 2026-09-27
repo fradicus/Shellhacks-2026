@@ -1085,6 +1085,7 @@
   animation: breathe 1.4s ease-in-out infinite;
 }
 .failure {
+  pointer-events: none;
   z-index: 5;
   bottom: 26px;
   width: max-content;
@@ -1472,3 +1473,7 @@
 
 /* Leave room for the expanded source evidence above the controls. */
 .detail ~ .dock .legend { display: none; }
+
+@media (max-width: 860px) {
+  .failure { bottom: 50%; }
+}
