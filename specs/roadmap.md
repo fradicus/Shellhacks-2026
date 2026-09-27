@@ -11,7 +11,7 @@ lanes:
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
   claude-local: [F00, F05, F11, F14, F16, F19, F21]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39]
 frozen_paths:
   - schemas/
   - scripts/
@@ -175,3 +175,17 @@ narrows to the border-area projects (see F09 Defaults) rather than miss F10.
 
 ## Post-run (humans, morning)
 Read `reports/final.md`. Review `specs/decisions/*`, especially 000. Check the domain and the Devpost submission. Merge nothing overnight-generated that you haven't looked at into the event submission unless it's already on `main`.
+
+## Launched follow-on: complete Southeast coverage
+
+The user explicitly instructed Codex to continue until the entire Southeast is done. [C24](decisions/C24-southeast-launch.md)
+assigns [F39](features/F39-southeast/spec.md) to this local session, separate from F38's New England checkpoint.
+FL, GA, AL, MS, SC, NC, TN, KY, VA, WV, AR and LA remain the full objective. Florida is the publication pilot,
+followed by Georgia and the remaining states. Original run gates are historical for this launch. No deadline or
+token budget was requested; use resumable checkpoints without treating a checkpoint as completion.
+Existing F38 and shared-contract claims retain their owners. F39 cannot publish until the applicable shared
+contract and loader integration are accepted. Research can proceed independently during that integration.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F39 | Verified Southeast project coverage and geographic delivery | A | data-researcher | 7 | F00, F30 | never |
