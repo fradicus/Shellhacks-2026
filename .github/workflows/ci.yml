@@ -105,7 +105,7 @@ jobs:
             node --import ./tests/web/loader.mjs --test tests/web/national/*.test.ts
           fi
           if [ -f tests/web/assistant/commands.test.mjs ]; then
-            node --test tests/web/assistant/commands.test.mjs
+            node --import ./tests/web/loader.mjs --test tests/web/assistant/*.test.mjs
           fi
 
       - name: Verified operations checks

@@ -405,6 +405,10 @@ Play. It ships as `[FIX-F37]` PRs and changes no data or count definition.
 |---|---|---|---|---|---|---|
 | F54 | History parity with Overlaps | B | frontend-engineer | 7 | F37, F19, F52 | allowed |
 
+## Resumed live assistant (C60)
+
+The user's 2026-09-27 instruction resumes F32 under codex-local on a fresh branch from current main. C60 authorizes a bounded live Gemini interpreter and app-wide side button after independent acceptance. The old prototype branch remains preserved; its closed PR is superseded by the new draft claim. Root coordinates disjoint F32 frontend/provider paths and owns shared layout integration. No other active feature claim is transferred.
+
 ## Drive-route overlaps (C46)
 
 The user asked that a pair overlap when the driving route between the two project centers is 25 miles or less,

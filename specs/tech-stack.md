@@ -11,7 +11,7 @@ time; don't upgrade during the run. New dependencies only via a `[C<n>]` contrac
 | Database | MongoDB Atlas (M0), database `gridbridge`. **Only the `load` GitHub Action writes to it**, on pushes to `main` touching `data/**` |
 | Web | Next.js (App Router) + TypeScript strict, one app in `web/`; route handlers for the API; native `mongodb` driver; `zod` to validate query params |
 | Map | `maplibre-gl` + OpenFreeMap tiles (no key). An accessible table must work if tiles fail |
-| AI | Gemini via `google-genai`, **pipeline only** (batch). Model id in `GEMINI_MODEL`; the exact id, prompt version and schema version are stored with every output. The public site shows stored results; it never calls Gemini |
+| AI | Gemini batch extraction/briefs via `google-genai`; F32/C60 additionally permits a bounded server-only Gemini REST app-control endpoint. Model id in `GEMINI_MODEL`; keys remain server-only. F32 additionally requires `ASSISTANT_ENABLED=true` and never fabricates a provider response when configuration is missing |
 | Tests | `pytest` (pipeline, golden), `next build` + `tsc` (web), Playwright smoke (`tests/e2e`, non-blocking job) |
 | CI | GitHub Actions: required check **`ci`** (spec/ownership checks; parallel Python/web validation for full changes) and `load` (Atlas upsert from `main`) |
 | Hosting | Vercel project, root `web/`, production deploys from `main`, previews per PR |
@@ -92,7 +92,8 @@ sole-writer/deployment boundaries; this documentation update introduces no migra
 ## Environment variables
 | Name | Where | Used by |
 |---|---|---|
-| `GEMINI_API_KEY`, `GEMINI_MODEL` | data runtime only (Paperclip env or local process) | Gemini pipeline stages |
+| `GEMINI_API_KEY`, `GEMINI_MODEL` | server-side data runtime or web deployment only | Gemini pipeline stages and explicitly enabled F32 assistant |
+| `ASSISTANT_ENABLED=true` | server-side web deployment | F32 live assistant; requires both Gemini settings above |
 | `MONGODB_URI_RW` | GitHub Actions secret only | `load` workflow |
 | `MONGODB_URI_RO`, `MONGODB_DB=gridbridge` | Vercel env; app/QA runtimes | web API, QA |
 | `DATA_MODE=fixture` | CI and local dev without Atlas | web reads `data/fixtures` via `lib/data.ts`; **never in production** |
@@ -101,7 +102,7 @@ sole-writer/deployment boundaries; this documentation update introduces no migra
 Production without Atlas shows an explicit "database unavailable" state. It never silently serves fixtures.
 
 ## C11 national extension
-The same Python/Next.js/MapLibre/MongoDB stack serves `/explore`. Additive national schemas in `schemas/national-*.schema.json` and F30 snapshots under `data/national/` keep legacy project enums and data unchanged. Use separate dataset-scoped `national_sources`, `national_projects`, optional `national_utilities` and `national_service_territory`, plus `national_runs` and `meta.national_active`; the existing load Action remains the sole Atlas writer. `python -m national.load` validates only without RW credentials. Public reference geography is independent of project database availability. `NATIONAL_DATA_MODE=snapshot` explicitly enables the committed regional snapshot in local/CI environments, is rejected on production Vercel, and is never a silent database fallback. F32 remains a separate prototype; the existing pipeline-only Gemini rule still applies to the delivered app.
+The same Python/Next.js/MapLibre/MongoDB stack serves `/explore`. Additive national schemas in `schemas/national-*.schema.json` and F30 snapshots under `data/national/` keep legacy project enums and data unchanged. Use separate dataset-scoped `national_sources`, `national_projects`, optional `national_utilities` and `national_service_territory`, plus `national_runs` and `meta.national_active`; the existing load Action remains the sole Atlas writer. `python -m national.load` validates only without RW credentials. Public reference geography is independent of project database availability. `NATIONAL_DATA_MODE=snapshot` explicitly enables the committed regional snapshot in local/CI environments, is rejected on production Vercel, and is never a silent database fallback. C11 originally kept F32 as a separate prototype; the later user-authorized [C60 continuation](decisions/C60-live-assistant.md) supersedes that prototype and pipeline-only restriction for the bounded server-side assistant.
 
 ## C46 drive routes
 Overlaps use stored OSRM driving routes ([C46](decisions/C46-drive-route-overlaps.md)); standard library HTTP only,

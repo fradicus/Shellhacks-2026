@@ -7,8 +7,9 @@ const nextConfig: NextConfig = {
     "/explore": ["../data/national/*.json"],
     "/api/national": ["../data/national/*.json"],
     "/api/national/*": ["../data/national/*.json"],
-    // Only used on the separate optional F32 branch; no assistant route is activated here.
+    // F32 reads the same source-bounded national reference and dataset as the explorer.
     "/assistant": ["../data/national/*.json"],
+    "/api/assistant": ["../data/national/*.json"],
     "/api/verified": ["../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json", "../data/national/geography.json"],
     "/api/verified/*": ["../data/verified/manifest.json", "../data/verified/utilities.json", "../data/verified/coverage.json", "../data/national/geography.json"],
     "/api/weather-history/stations": ["../data/weather_history/index.json"],

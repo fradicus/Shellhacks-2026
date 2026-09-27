@@ -88,6 +88,10 @@ project points. Report source-bounded coverage and unresolved gaps; do not claim
 Historical observations/events remain distinct from current construction, and source-backed unknowns remain useful
 records. Implementation and an overnight launch require F38's recorded prerequisites; this is specification delivery.
 
+## Live assistant continuation — 2026-09-27
+
+The later explicit request to ship the AI side button authorizes the bounded F32/C60 live Gemini assistant. It interprets validated read-only app controls and documented help; server-derived facts remain authoritative. This supersedes the earlier F32 prototype-only provider deferral, not the data-quality rules or independent production-configuration requirements.
+
 ## Project map retirement — 2026-09-27
 
 The user retired the separate `/map` Project map. [C35](decisions/C35-retire-project-map.md)

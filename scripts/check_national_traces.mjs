@@ -15,6 +15,7 @@ const routes = [
   "explore/page", "api/national/reference/route", "api/national/route", "api/national/export/route",
 ];
 if (existsSync(path.join(root, "web/app/assistant/page.tsx"))) routes.push("assistant/page");
+if (existsSync(path.join(root, "web/app/api/assistant/route.ts"))) routes.push("api/assistant/route");
 for (const route of routes) {
   const traceFile = path.join(root, "web/.next/server/app", `${route}.js.nft.json`);
   assert.ok(existsSync(traceFile), `missing server trace for ${route}`);
