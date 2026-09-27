@@ -68,12 +68,11 @@
 .usMap { overflow:visible; }
 .usStates path { transition:fill .3s ease, stroke .3s ease; }
 .usStates path:hover { fill:#1d2533; stroke:#5cc8ff99; }
-.usPulses path { stroke-dasharray:.05 .95; animation:us-pulse 3s linear infinite; }
 .usRing { animation:us-ring 2.8s ease-out infinite; transform-box:fill-box; transform-origin:center; }
 .usMap[data-armed] .usHalo { opacity:0; transition:opacity 1.6s ease .4s; }
 .usMap[data-armed] .usStates path { opacity:0; }
 .usMap[data-armed] .usLinks path { stroke-dasharray:1; stroke-dashoffset:1; }
-.usMap[data-armed] .usPulses { opacity:0; transition:opacity 1s ease 2.4s; }
+.usMap[data-armed] .usFleet { opacity:0; transition:opacity 1s ease 2.4s; }
 .usMap[data-armed] .usHubs > g { opacity:0; }
 .usMap[data-armed] .usSatellite { opacity:0; transition:opacity 1.2s ease 2s; }
 .usMap[data-inview] .usSatellite { opacity:1; }
@@ -82,15 +81,15 @@
 .usMap[data-inview] .usHalo { opacity:1; }
 .usMap[data-inview] .usStates path { animation:us-state .9s cubic-bezier(.2,.7,.2,1) both; }
 .usMap[data-inview] .usLinks path { animation:us-draw 1.4s cubic-bezier(.5,0,.2,1) forwards; }
-.usMap[data-inview] .usPulses { opacity:1; }
+.usMap[data-inview] .usFleet { opacity:1; }
 .usMap[data-inview] .usHubs > g { animation:us-fade .6s ease forwards; }
 @keyframes us-state { from {opacity:0;} to {opacity:1;} }
 @keyframes us-draw { to {stroke-dashoffset:0;} }
 @keyframes us-fade { to {opacity:1;} }
-@keyframes us-pulse { from {stroke-dashoffset:1;} to {stroke-dashoffset:0;} }
 @keyframes us-ring { from {r:4;opacity:.9;} to {r:18;opacity:0;} }
 @media(prefers-reduced-motion:reduce){
- .usPulses,.usRing,.satPing {display:none;}
+ .usRing,.satPing {display:none;}
+ .usMap[data-armed] .usFleet {opacity:1;transition:none;}
  .usMap[data-armed] .usSatellite {opacity:1;transition:none;}
  .usMap[data-armed] .usHalo,.usMap[data-armed] .usStates path,.usMap[data-armed] .usHubs > g {opacity:1;animation:none;transition:none;}
  .usMap[data-armed] .usLinks path {stroke-dasharray:none;stroke-dashoffset:0;animation:none;}

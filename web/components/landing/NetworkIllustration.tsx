@@ -80,13 +80,22 @@ export function NetworkIllustration() {
         <filter id="us-glow" x="-20%" y="-20%" width="140%" height="140%">
           <feGaussianBlur stdDeviation="9" />
         </filter>
-        <filter id="us-soft" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="2.4" />
-        </filter>
         <linearGradient id="sat-beam" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#9fdcff" stopOpacity="0.35" />
           <stop offset="1" stopColor="#9fdcff" stopOpacity="0" />
         </linearGradient>
+        {/* Side-view semi facing +x, wheels on the route line: trailer, orange cab, lights. */}
+        <g id="us-semi">
+          <rect x="-15" y="-11.5" width="19.5" height="8" rx="0.8" fill="#dfe2e7" stroke="#0b0d11" strokeWidth="0.6" />
+          <path d="M5,-3.2V-10Q5,-11 6,-11H9L11.6,-7.4V-3.2Z" fill="#ffae42" stroke="#0b0d11" strokeWidth="0.6" />
+          <path d="M9.1,-10.3L11,-7.6H9.1Z" fill="#1b2330" />
+          <rect x="-15" y="-3.6" width="26.6" height="1.2" fill="#0b0d11" />
+          {[-12, -9, 1.2, 7.8].map((x) => (
+            <circle key={x} cx={x} cy="-1.5" r="1.5" fill="#0b0d11" stroke="#a3a8b1" strokeWidth="0.5" />
+          ))}
+          <circle cx="11.4" cy="-4.4" r="0.7" fill="#fff1d6" />
+          <rect x="-15.6" y="-5.4" width="0.8" height="1.6" fill="#ff4a3d" />
+        </g>
         <clipPath id="us-clip">
           {states.map((st) => (
             <path key={st.c} d={st.d} />
@@ -131,18 +140,26 @@ export function NetworkIllustration() {
           />
         ))}
       </g>
-      <g className={s.usPulses} filter="url(#us-soft)">
-        {paths.map((p, i) => (
-          <path
-            key={p.id}
-            d={p.d}
-            pathLength={1}
-            stroke={i % 2 === 0 ? "#ffe2b0" : "#9fdcff"}
-            strokeWidth="3.2"
-            strokeLinecap="round"
-            style={{ strokeDasharray: ".018 .982", animationDelay: `-${i * 1.7}s`, animationDuration: `${9 + (i % 3) * 2}s` }}
-          />
-        ))}
+      {/* Semis driving each corridor in both directions. */}
+      <g className={s.usFleet}>
+        {paths.flatMap((p, i) =>
+          [0, 1].map((n) => {
+            const dur = 22 + (i % 3) * 5;
+            return (
+              <g key={`${p.id}-${n}`}>
+                {/* Stays upright; the second truck drives the route the other way. */}
+                <animateMotion
+                  dur={`${dur}s`}
+                  begin={`-${(i * 3.1 + n * dur * 0.5) % dur}s`}
+                  repeatCount="indefinite"
+                  path={p.d}
+                  {...(n ? { keyPoints: "1;0", keyTimes: "0;1", calcMode: "linear" } : {})}
+                />
+                <use href="#us-semi" transform={n ? "scale(-1.25 1.25)" : "scale(1.25)"} />
+              </g>
+            );
+          }),
+        )}
       </g>
 
       <g className={s.usHubs}>

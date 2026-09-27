@@ -34,10 +34,27 @@ function beam(xf,h,t){
   ctx.restore();
 }
 function wheel(x,r,rot){
-  ctx.fillStyle='#030303';ctx.beginPath();ctx.arc(x,-r,r,0,7);ctx.fill();
-  const g=ctx.createRadialGradient(x-r*.15,-r*1.15,0,x,-r,r*.58);g.addColorStop(0,'#5C5F66');g.addColorStop(1,'#1C1D21');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,-r,r*.56,0,7);ctx.fill();
-  ctx.strokeStyle='rgba(0,0,0,.55)';ctx.lineWidth=.004;for(let i=0;i<8;i++){const a=rot+i*Math.PI/4;ctx.beginPath();ctx.moveTo(x+Math.cos(a)*r*.16,-r+Math.sin(a)*r*.16);ctx.lineTo(x+Math.cos(a)*r*.5,-r+Math.sin(a)*r*.5);ctx.stroke()}
-  ctx.fillStyle='#0A0A0B';ctx.beginPath();ctx.arc(x,-r,r*.12,0,7);ctx.fill();
+  const cy=-r;
+  // Tyre: rubber falloff with a faint sidewall ring and road-side shading.
+  let g=ctx.createRadialGradient(x,cy,r*.55,x,cy,r);g.addColorStop(0,'#1b1c20');g.addColorStop(.8,'#0b0b0d');g.addColorStop(1,'#030303');
+  ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,cy,r,0,7);ctx.fill();
+  ctx.strokeStyle='rgba(255,255,255,.06)';ctx.lineWidth=r*.035;ctx.beginPath();ctx.arc(x,cy,r*.82,0,7);ctx.stroke();
+  ctx.strokeStyle='rgba(255,240,215,.12)';ctx.lineWidth=r*.05;ctx.beginPath();ctx.arc(x,cy,r*.94,Math.PI*1.1,Math.PI*1.45);ctx.stroke();
+  // Polished aluminium rim, lit from the upper left.
+  g=ctx.createRadialGradient(x-r*.2,cy-r*.25,0,x,cy,r*.64);g.addColorStop(0,'#c9ccd2');g.addColorStop(.45,'#7d8189');g.addColorStop(1,'#2a2c31');
+  ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,cy,r*.62,0,7);ctx.fill();
+  ctx.strokeStyle='rgba(0,0,0,.6)';ctx.lineWidth=r*.04;ctx.beginPath();ctx.arc(x,cy,r*.62,0,7);ctx.stroke();
+  ctx.strokeStyle='rgba(255,255,255,.35)';ctx.lineWidth=r*.025;ctx.beginPath();ctx.arc(x,cy,r*.55,0,7);ctx.stroke();
+  // Hand holes turn with the wheel.
+  ctx.fillStyle='#16171a';
+  for(let i=0;i<8;i++){const a=rot+i*Math.PI/4;ctx.save();ctx.translate(x+Math.cos(a)*r*.4,cy+Math.sin(a)*r*.4);ctx.rotate(a);ctx.beginPath();ctx.ellipse(0,0,r*.09,r*.055,0,0,7);ctx.fill();ctx.restore()}
+  // Hub, lug nuts and cap.
+  g=ctx.createRadialGradient(x-r*.06,cy-r*.08,0,x,cy,r*.24);g.addColorStop(0,'#e4e6ea');g.addColorStop(1,'#4a4d54');
+  ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,cy,r*.24,0,7);ctx.fill();
+  ctx.fillStyle='#2b2d32';
+  for(let i=0;i<10;i++){const a=rot+i*Math.PI/5;ctx.beginPath();ctx.arc(x+Math.cos(a)*r*.17,cy+Math.sin(a)*r*.17,r*.026,0,7);ctx.fill()}
+  ctx.fillStyle='#101114';ctx.beginPath();ctx.arc(x,cy,r*.08,0,7);ctx.fill();
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.beginPath();ctx.arc(x-r*.025,cy-r*.03,r*.025,0,7);ctx.fill();
 }
 function truck(xf,rot,mk,hd){
   if(xf>W+10||xf+L<-10)return;
