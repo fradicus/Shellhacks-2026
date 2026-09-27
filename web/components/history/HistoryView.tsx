@@ -276,8 +276,10 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
       const latest = events.reduce((a, b) => ((b.from ?? -Infinity) > (a.from ?? -Infinity) ? b : a));
       out.push({ p, events, latest, miles: origin?.center && p.center ? milesBetween(origin.center, p.center) : null });
     }
-    return out.sort((a, b) => (b.latest?.from ?? 0) - (a.latest?.from ?? 0) || a.p.name.localeCompare(b.p.name));
-  }, [located, matches, kept, lo, hi, origin]);
+    // Most recent *past* event first: History leads with what has happened; rows with only later dates follow.
+    const past = (r: Row) => Math.max(-Infinity, ...r.events.filter((e) => e.from! <= analysisDay).map((e) => e.from!));
+    return out.sort((a, b) => past(b) - past(a) || (b.latest?.from ?? 0) - (a.latest?.from ?? 0) || a.p.name.localeCompare(b.p.name));
+  }, [located, matches, kept, lo, hi, origin, analysisDay]);
 
   const near = useMemo(
     () => (origin?.center ? rows.filter((r) => r.p.key !== origin.key && r.miles !== null && r.miles <= NEAR_MI).sort((a, b) => a.miles! - b.miles!) : []),
