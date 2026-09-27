@@ -1,0 +1,67 @@
+{
+  "assignments": {
+    "New York producer": "f38_other_research",
+    "PJM producer": "f38_grid_research",
+    "contract then independent review": "f38_contract_review",
+    "integration and release": "/root"
+  },
+  "budget": {
+    "observable_basis": "elapsed time and bounded requests",
+    "requested_token_budget": null,
+    "stop_new_sources_minutes_before_deadline": 60,
+    "stop_new_work_fraction": 0.75,
+    "validation_only_minutes_before_deadline": 30
+  },
+  "deadline": "2026-09-27T10:13:28+00:00",
+  "execution_mode": "local",
+  "feature": "F38",
+  "independence": "Producers cannot approve own project/location records; reviewers bind exact current facts. Release integrator is the sole writer of active release.",
+  "limits": {
+    "max_artifact_bytes": 35000000,
+    "network_timeout_seconds": 45,
+    "requests_per_producer": 80,
+    "retries": 2
+  },
+  "model": "GPT-6 session configuration",
+  "producer": "codex-local /root",
+  "publication": {
+    "atlas_writer": "existing load GitHub Action only",
+    "completion": "Read-only active dataset comparison and actual /explore browser evidence; /time remains separate owner.",
+    "new_project_contract": "required, pending separately claimed contract",
+    "preserve_prior_confirmed_records": 345,
+    "prior_new_england_release": "f38-new-england-345-v1"
+  },
+  "run_id": "f38-mid-atlantic-2026-09-27",
+  "runtime": "Codex",
+  "scope": {
+    "excluded_shared_assignments": {
+      "Great Lakes": "F40",
+      "Texas": "F41",
+      "VA": "F39",
+      "WV": "F39"
+    },
+    "state_fips": [
+      "36",
+      "34",
+      "42",
+      "10",
+      "24",
+      "11"
+    ],
+    "states": [
+      "NY",
+      "NJ",
+      "PA",
+      "DE",
+      "MD",
+      "DC"
+    ],
+    "target_is_not_an_evidence_exception": true,
+    "target_project_locations": [
+      250,
+      500
+    ]
+  },
+  "started_at": "2026-09-27T02:13:28+00:00",
+  "stop_resume": "Honor root STOP and main-red; keep reviewed batches and exact remaining counts; never claim the regional target met by imported unlocated rows or candidate guesses."
+}

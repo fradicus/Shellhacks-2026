@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-27T02:34:22.923493+00:00",
+  "reviewer": "f38_contract_review",
+  "projects_checked": 270,
+  "fields_per_original_project": 31,
+  "typed_events_checked": 768,
+  "project_facts_hashes_checked": 269,
+  "all_passed": true,
+  "method": "Independent ElementTree parse, explicit state/status mapping and datetime parsing; no producer normalization functions called. Outer XML whitespace trimmed; native values otherwise preserved. Actual service versus projected/revised/required/ISA meanings checked separately.",
+  "input_files": {
+    "pjm-projects.json": "ffc0bd384855a3790c015557d2f8ba34e141aeb37373d17d369789719186b4f5",
+    "pjm-locations.json": "c63562c4612a3a39e731cdb10580ced2721cea8c08ba22024a28906656bee428",
+    "pjm-events.json": "0a3d73cd252c1dee0d7516764e1c9c56118b977bc838e241f11f8b1179a3f1b2",
+    "pjm-source.json": "752c22004373b8d83071c39f6091997ad6f43abc17eaa219bf4d7c7ed49852e5",
+    "pjm-enumeration.json": "41f1a9ca0e29037aeb15e8228be8b359f0b31b87cbf6d7b5ed32339d906a1c49"
+  }
+}

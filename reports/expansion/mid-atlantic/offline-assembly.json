@@ -1,0 +1,116 @@
+{
+  "all_previous_project_facts_identical": true,
+  "assembled_located": 680,
+  "assembled_projects": 1561,
+  "base_located": 414,
+  "base_projects": 1286,
+  "baseline_atlas_dataset": "6373fc13414a73a59ca156ecbeac95574d578027",
+  "baseline_comparison_note": "Atlas-only derived geo index field checked against unchanged center then excluded from the source-fact comparison.",
+  "coverage": {
+    "complete_endpoint_projects": 3,
+    "confirmed_projects": 266,
+    "confirmed_state_counts": {
+      "10": 5,
+      "24": 63,
+      "34": 101,
+      "36": 3,
+      "42": 94
+    },
+    "distinct_facility_sites": 62,
+    "distinct_map_positions": 65,
+    "event_type_counts": {
+      "in_service": 235,
+      "planned_milestone": 533
+    },
+    "new_projects": 275,
+    "new_sources": 6,
+    "notes": [
+      "Scope NY, NJ, PA, DE, MD and DC. VA/WV remain F39. Preserve all previously accepted New England projects and other producer summaries.",
+      "Counts represent native construction upgrades/cases, not distinct facilities, project programs or map positions; shared sites and component IDs remain explicit.",
+      "PJM XML acquisition is complete for the pinned 15,662-row artifact. Publication is a bounded selected cohort, not complete PJM or state coverage; 5,749 initially eligible rows included deferred work.",
+      "PJM 80 target rows explicitly withholding Location as CEII were excluded without geocoding; 17 cross-assignment rows deferred; 574 missing-state and 9,242 out-of-assignment rows excluded.",
+      "Current statuses are retained as reported; most selected PJM records are historical in-service upgrades. Active queue-related network upgrades are proposed, never inferred to be under construction.",
+      "Reference points are historical: NOAA 2017 coastal subset (processed 2018), maximum intended scale 1:80000, unknown numerical uncertainty. It includes taps; confirmed facility identity was separately reviewed.",
+      "NY uses five original public case-description documents with bounded-partial acquisition. Current construction status and service date stay unknown; September2025 register web text is research only.",
+      "New York Clay and STAR East component scope remains insufficient; no center implied for either. Partial endpoints do not trace routes or locate every ancillary project component.",
+      "DC has no approved point in this cohort. Inland PA and NY coverage is sparse because coastal/345kV references are incomplete. No comparable prior project-register vintage was acquired; source status timestamps are not construction event dates.",
+      "PJM authenticated system-map geometry, restrictive PSEG MPRP map content, route centroids and name-only asset matches were excluded.",
+      "No /time UI change; typed source-backed events are exported through the existing optional project_events field."
+    ],
+    "partial_endpoint_projects": 8,
+    "release_id": "mid-atlantic-2026-09-27-01",
+    "review_counts": {
+      "confirmed": 266,
+      "insufficient": 2
+    },
+    "source_completeness": {
+      "mid-atlantic:nypsc:23-T-0660": "bounded_partial",
+      "mid-atlantic:nypsc:24-T-0113": "bounded_partial",
+      "mid-atlantic:nypsc:25-T-0184": "bounded_partial",
+      "mid-atlantic:nypsc:25-T-0238": "bounded_partial",
+      "mid-atlantic:nypsc:25-T-0241": "bounded_partial",
+      "mid-atlantic:pjm-construction": "complete"
+    },
+    "source_counts": {
+      "mid-atlantic:nypsc:23-T-0660": 1,
+      "mid-atlantic:nypsc:24-T-0113": 1,
+      "mid-atlantic:nypsc:25-T-0184": 1,
+      "mid-atlantic:nypsc:25-T-0238": 1,
+      "mid-atlantic:nypsc:25-T-0241": 1,
+      "mid-atlantic:pjm-construction": 270
+    },
+    "source_freshness": {
+      "mid-atlantic:nypsc:23-T-0660": {
+        "publication_date": "2023-11-06",
+        "retrieved_at": "2026-09-27T02:18:24.278335+00:00",
+        "vintage": "2023-11-06"
+      },
+      "mid-atlantic:nypsc:24-T-0113": {
+        "publication_date": "2025-06-12",
+        "retrieved_at": "2026-09-27T02:21:46.893937+00:00",
+        "vintage": "2025-06-12"
+      },
+      "mid-atlantic:nypsc:25-T-0184": {
+        "publication_date": "2026-05-27",
+        "retrieved_at": "2026-09-27T02:18:23.491710+00:00",
+        "vintage": "2026-05-27"
+      },
+      "mid-atlantic:nypsc:25-T-0238": {
+        "publication_date": "2025-04-14",
+        "retrieved_at": "2026-09-27T02:19:03.548487+00:00",
+        "vintage": "2025-04-14"
+      },
+      "mid-atlantic:nypsc:25-T-0241": {
+        "publication_date": "2025-04-15",
+        "retrieved_at": "2026-09-27T02:21:46.100920+00:00",
+        "vintage": "2025-04-15"
+      },
+      "mid-atlantic:pjm-construction": {
+        "publication_date": null,
+        "retrieved_at": "2026-09-27T02:17:08.797434+00:00",
+        "vintage": null
+      }
+    },
+    "source_rows": 15667,
+    "standalone_site_projects": 255,
+    "state_counts": {
+      "10": 5,
+      "24": 66,
+      "34": 105,
+      "36": 5,
+      "42": 94
+    },
+    "status_counts": {
+      "in_service": 237,
+      "planned": 24,
+      "proposed": 6,
+      "under_construction": 3,
+      "unknown": 5
+    },
+    "unlocated_projects": 9,
+    "unresolved_reasons": {
+      "insufficient": 2,
+      "no_location": 7
+    }
+  }
+}

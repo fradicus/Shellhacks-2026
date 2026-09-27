@@ -1,0 +1,87 @@
+[
+  {
+    "project_id": "mid-atlantic:nypsc:25-T-0184",
+    "facility_id": "hifld:144055",
+    "original_geometry": {
+      "coordinates": [
+        -8479345.3169,
+        5342185.542499997
+      ],
+      "crs": "EPSG:3857",
+      "transform": "Inverse spherical Web Mercator (EPSG:3857), radius=6378137 metres",
+      "type": "Point"
+    },
+    "independent_lon": -76.17125497498557,
+    "independent_lat": 43.198179118096576,
+    "max_difference_degrees": 0.0,
+    "method": "Spherical inverse for EPSG:3857; WGS84 ellipsoidal inverse solved by 85-step bisection for EPSG:3395; raw source coordinate equality asserted."
+  },
+  {
+    "project_id": "mid-atlantic:nypsc:23-T-0660",
+    "facility_id": "hifld:144052",
+    "original_geometry": {
+      "coordinates": [
+        -8614370.1086,
+        5320416.823399998
+      ],
+      "crs": "EPSG:3857",
+      "transform": "Inverse spherical Web Mercator (EPSG:3857), radius=6378137 metres",
+      "type": "Point"
+    },
+    "independent_lon": -77.38420331617722,
+    "independent_lat": 43.05545727919183,
+    "max_difference_degrees": 0.0,
+    "method": "Spherical inverse for EPSG:3857; WGS84 ellipsoidal inverse solved by 85-step bisection for EPSG:3395; raw source coordinate equality asserted."
+  },
+  {
+    "project_id": "mid-atlantic:nypsc:25-T-0238",
+    "facility_id": "hifld:144063",
+    "original_geometry": {
+      "coordinates": [
+        -8458300.5259,
+        5181456.108999997
+      ],
+      "crs": "EPSG:3857",
+      "transform": "Inverse spherical Web Mercator (EPSG:3857), radius=6378137 metres",
+      "type": "Point"
+    },
+    "independent_lon": -75.98220640092157,
+    "independent_lat": 42.13655093117018,
+    "max_difference_degrees": 0.0,
+    "method": "Spherical inverse for EPSG:3857; WGS84 ellipsoidal inverse solved by 85-step bisection for EPSG:3395; raw source coordinate equality asserted."
+  },
+  {
+    "project_id": "mid-atlantic:nypsc:25-T-0241",
+    "facility_id": "hifld:136426",
+    "original_geometry": {
+      "coordinates": [
+        -8173712.912799999,
+        4961010.8266
+      ],
+      "crs": "EPSG:3395",
+      "transform": "Inverse ellipsoidal World Mercator (EPSG:3395), WGS84 a=6378137, e2=0.0066943799901413165",
+      "type": "Point"
+    },
+    "independent_lon": -73.42571237573333,
+    "independent_lat": 40.8412917741949,
+    "max_difference_degrees": 0.0,
+    "method": "Spherical inverse for EPSG:3857; WGS84 ellipsoidal inverse solved by 85-step bisection for EPSG:3395; raw source coordinate equality asserted."
+  },
+  {
+    "project_id": "mid-atlantic:nypsc:24-T-0113",
+    "facility_id": "hifld:135920",
+    "original_geometry": {
+      "coordinates": [
+        -8059274.6723,
+        4968542.412299998
+      ],
+      "crs": "EPSG:3395",
+      "transform": "Inverse ellipsoidal World Mercator (EPSG:3395), WGS84 a=6378137, e2=0.0066943799901413165",
+      "type": "Point"
+    },
+    "independent_lon": -72.39769617044438,
+    "independent_lat": 40.892653565332864,
+    "max_difference_degrees": 0.0,
+    "method": "Spherical inverse for EPSG:3857; WGS84 ellipsoidal inverse solved by 85-step bisection for EPSG:3395; raw source coordinate equality asserted."
+  }
+]

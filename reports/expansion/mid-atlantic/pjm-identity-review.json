@@ -1,0 +1,7 @@
+{
+  "decision": "approved",
+  "evidence": "Independent original-source, acquisition and canonical identity review: all 270 PJM XML native upgrade/component records and five original public NYPSC case identities/descriptions checked; all 15,667 acquired row dispositions reconciled, with 15,662 XML rows independently enumerated and five bounded-partial cases retaining unknown wider denominators. Original artifact hashes, accepted row/source/project links, owner/agent distinction, geography, unknown dates, 768 typed events, null input centers, all exact location-review hashes/times and expected counts checked. 266 confirmed locations and nine unresolved projects; historical facility points and partial/complete endpoint meanings retained. Entire current 1,286-project national baseline checked for native IDs, canonical IDs and normalized-name collisions; current C27 active release absent, future producers remain guarded by full-snapshot activation checks. Detailed independent receipt retained in F38 batch audit. Schema validation and the actual F38 apply_release path, followed by national coverage recomputation and complete national snapshot validation, passed in isolated scratch. Supersedes the prior approval after removing only the empty b0003 event wrapper and updating release creation time; all 768 actual event facts and all project/location facts are unchanged.",
+  "facts_sha256": "4d62455a61f698eda04fce8bf25ec18cb4886a8030a3c7445f8b1c43f651871b",
+  "reviewed_at": "2026-09-27T02:53:30.872118+00:00",
+  "reviewer": "f38_contract_review"
+}

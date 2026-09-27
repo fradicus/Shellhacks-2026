@@ -1,0 +1,24 @@
+[
+  {
+    "access_review": "Public PJM PDF read without authentication; bounded factual identity corroboration with citation. No restricted map, location guessing or full document republication.",
+    "artifact_sha256": "246987e68f3ac10aec9b09616b4a8bd0ed2a06e4e4ad94724ed8fa2522b3e377",
+    "facts": "Map places New Freedom 500 kV immediately northeast of Sickler 230 kV in southern New Jersey, in the PSEG zone near the ACE zone. This corroborates the original NOAA New Freedom point and resolves its erroneous CITY=WAYNE label; no coordinates were derived from this map.",
+    "file": "pjm-ace-20240314.pdf",
+    "locator": "PDF page 3, Atlantic City Electric transmission-zone map; New Freedom 500 kV and adjacent Sickler 230 kV labels",
+    "publisher": "PJM Interconnection",
+    "retrieved_at": "2026-09-27T02:34:52.208909+00:00",
+    "source_date": "2024-03-14",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/srrtep-ma/2024/20240314/20240314-item-03---ace-supplemental-projects.pdf"
+  },
+  {
+    "access_review": "Public PJM PDF read without authentication; bounded factual identity corroboration with citation. No restricted map, location guessing or full document republication.",
+    "artifact_sha256": "3cc0fddeac07933ddddf17ce6b9f5009727490289ef31dc073f44b15b78321e2",
+    "facts": "PJM AE1-020 facilities study explicitly identifies existing Oyster Creek 230 kV substation in Ocean County, New Jersey, and Jersey Central Power and Light (FirstEnergy) as transmission owner. It independently resolves the erroneous NOAA CITY=KENILWORTH label; the source project here is the separate PJM upgrade s2300, not the proposed generator.",
+    "file": "pjm-oyster-creek-ae1020.pdf",
+    "locator": "April 2022 report, PDF page 3 section A.1 and page 4 Point of Interconnection",
+    "publisher": "PJM Interconnection",
+    "retrieved_at": "2026-09-27T02:35:22.463913+00:00",
+    "source_date": null,
+    "url": "https://www.pjm.com/pub/planning/project-queues/facilities/ae1020_fac.pdf"
+  }
+]

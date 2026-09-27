@@ -1,0 +1,276 @@
+[
+  {
+    "path": "nyiso-gold-index.html",
+    "url": "https://www.nyiso.com/load-capacity-data-report-gold-book-",
+    "resolved_url": "https://www.nyiso.com/load-capacity-data-report-gold-book-",
+    "retrieved_at": "2026-09-27T02:13:48.523375+00:00",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eligibility": "not acquired: empty response; bot challenge observed through web tool; no bypass"
+  },
+  {
+    "path": "dps-index.html",
+    "url": "https://dps.ny.gov/article-vii-major-electric-and-gas-transmission-facilities",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "dps-terms.html",
+    "url": "https://dps.ny.gov/disclaimer",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "dps-active-2025.pdf",
+    "url": "https://dps.ny.gov/active-article-vii-cases-table",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "nyiso-ipsac-2026.pdf",
+    "url": "https://www.iso-ne.com/static-assets/documents/100035/2026-05-29_ipsac_a02.3_nyiso_updates_on_comprehensive_system_planning_process.pdf",
+    "resolved_url": "https://www.iso-ne.com/static-assets/documents/100035/2026-05-29_ipsac_a02.3_nyiso_updates_on_comprehensive_system_planning_process.pdf",
+    "retrieved_at": "2026-09-27T02:14:22.054673+00:00",
+    "bytes": 586567,
+    "sha256": "828013ca3341068481d783ce92cf265902a41c312add2f8894c94dda72b6b0d3",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "tioga-item.json",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/261b83ceeda440f3825522920b5db34e?f=json",
+    "resolved_url": "https://www.arcgis.com/sharing/rest/content/items/261b83ceeda440f3825522920b5db34e?f=json",
+    "retrieved_at": "2026-09-27T02:15:24.833661+00:00",
+    "bytes": 1456,
+    "sha256": "c7f3b7a73b0782059b8f3a9a9ada69f8e9923c676e4999532bd8e1f9b8b8e9ee"
+  },
+  {
+    "path": "tioga-layer.json",
+    "url": "https://services3.arcgis.com/PvkAiSMFS7cpxnJP/ArcGIS/rest/services/Electric_Infrastructure/FeatureServer/0?f=pjson",
+    "resolved_url": "https://services3.arcgis.com/PvkAiSMFS7cpxnJP/ArcGIS/rest/services/Electric_Infrastructure/FeatureServer/0?f=pjson",
+    "retrieved_at": "2026-09-27T02:15:25.183613+00:00",
+    "bytes": 17542,
+    "sha256": "621f5b57c8463324fc5e7685e218eec406d53afaeb50779f49b56eda39377a12"
+  },
+  {
+    "path": "dps-colton-index.html",
+    "url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-T-0373",
+    "resolved_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-T-0373",
+    "retrieved_at": "2026-09-27T02:15:25.956496+00:00",
+    "bytes": 66458,
+    "sha256": "30cf946b0210bdafc619dae26926ef3da4955d51522376c5e73e06968998ccbc"
+  },
+  {
+    "path": "nyiso-gold-2026.pdf",
+    "url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+    "resolved_url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+    "retrieved_at": "2026-09-27T02:16:14.719061+00:00",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eligibility": "not acquired: empty response; bot challenge observed through web tool; no bypass"
+  },
+  {
+    "path": "omp-layer4.json",
+    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/OMP_2021_18Nov2021/FeatureServer/4?f=pjson",
+    "resolved_url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/OMP_2021_18Nov2021/FeatureServer/4?f=pjson",
+    "retrieved_at": "2026-09-27T02:16:14.924965+00:00",
+    "bytes": 17065,
+    "sha256": "16ff9c58c5eda5937778ea04b53782139ac823a699830abbb6da64603084f065"
+  },
+  {
+    "path": "dps-validate.js",
+    "url": "https://documents.dps.ny.gov/public/Js/Validate.js",
+    "resolved_url": "https://documents.dps.ny.gov/public/Js/Validate.js",
+    "retrieved_at": "2026-09-27T02:16:15.292543+00:00",
+    "bytes": 45090,
+    "sha256": "58759aec224490b558d0bcf966743639e50d1a1cd449086c5dc4dd8b1f6504d9"
+  },
+  {
+    "path": "omp-ny-345.json",
+    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/OMP_2021_18Nov2021/FeatureServer/4/query?where=STATE%3D%27NY%27&outFields=*&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=FID",
+    "resolved_url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/OMP_2021_18Nov2021/FeatureServer/4/query?where=STATE%3D%27NY%27&outFields=*&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=FID",
+    "retrieved_at": "2026-09-27T02:16:37.371178+00:00",
+    "bytes": 50674,
+    "sha256": "ecd47ddf9f868b10bc11c1646b5956fd96f31cdbc368dad04edd1bef00a0601b"
+  },
+  {
+    "path": "dps-apphelper.js",
+    "url": "https://documents.dps.ny.gov/public/Js/appHelper.js",
+    "resolved_url": "https://documents.dps.ny.gov/public/Js/appHelper.js",
+    "retrieved_at": "2026-09-27T02:16:49.540366+00:00",
+    "bytes": 1092,
+    "sha256": "267f113b6866a43f95b5c7d43ec812a824a9935512883960953688eb7965e8bb"
+  },
+  {
+    "path": "dps-colton-documents.json",
+    "url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/73771",
+    "resolved_url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/73771",
+    "retrieved_at": "2026-09-27T02:17:15.301506+00:00",
+    "bytes": 798575,
+    "sha256": "77d7256c4a2f1c2b70340d0314cb55554106e329779317ef624b3905f2dba774"
+  },
+  {
+    "path": "dps-clay-index.html",
+    "url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0184",
+    "resolved_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0184",
+    "retrieved_at": "2026-09-27T02:17:16.060881+00:00",
+    "bytes": 66843,
+    "sha256": "9f465eef622d5a6b69760af14b8f034172bc4acf47a21b6fdc9b052215e1f7ec"
+  },
+  {
+    "path": "dps-pannell-index.html",
+    "url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=23-T-0660",
+    "resolved_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=23-T-0660",
+    "retrieved_at": "2026-09-27T02:17:16.585507+00:00",
+    "bytes": 66122,
+    "sha256": "f4bf5fff673ebfe8a5ca9d9d69040b35168bfc6defd06d0805c6f9ffb5c92b36"
+  },
+  {
+    "path": "dps-star-east-index.html",
+    "url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0238",
+    "resolved_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0238",
+    "retrieved_at": "2026-09-27T02:17:17.097417+00:00",
+    "bytes": 66215,
+    "sha256": "6b4cd5e4f64d8f8ec887ab7aea575e65f035c51ed016bfb6f91431e4156c547a"
+  },
+  {
+    "path": "dps-clay-documents.json",
+    "url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/85716",
+    "resolved_url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/85716",
+    "retrieved_at": "2026-09-27T02:17:53.829399+00:00",
+    "bytes": 1441397,
+    "sha256": "70b5b7b9e065f4bd59afb5a64b414e48fd14c0a53d3d01275b95835840964f11"
+  },
+  {
+    "path": "dps-pannell-documents.json",
+    "url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/72084",
+    "resolved_url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/72084",
+    "retrieved_at": "2026-09-27T02:17:55.316491+00:00",
+    "bytes": 342219,
+    "sha256": "a3241aa6fa014dd1899f5b5249a5df672ed3d312e02bb2db117f5e8a45fc7a9f"
+  },
+  {
+    "path": "dps-star-east-documents.json",
+    "url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/85933",
+    "resolved_url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/85933",
+    "retrieved_at": "2026-09-27T02:17:56.639331+00:00",
+    "bytes": 301720,
+    "sha256": "71079601ef9945de5be4b6dcbdbd5317afb8d7ee6b3af1d922793ab051b813b0"
+  },
+  {
+    "path": "clay-project-description.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BF00F699E-0000-C731-998F-D04728FA0220%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BF00F699E-0000-C731-998F-D04728FA0220%7D",
+    "retrieved_at": "2026-09-27T02:18:23.491710+00:00",
+    "bytes": 421253,
+    "sha256": "f83ad994b34507b94642a26fa48c4b9b4eff7aae27a6f56325383ee56eac7af0",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "pannell-line-description.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B0051A68B-0000-CF79-9689-08670EC0961C%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B0051A68B-0000-CF79-9689-08670EC0961C%7D",
+    "retrieved_at": "2026-09-27T02:18:24.278335+00:00",
+    "bytes": 233533,
+    "sha256": "8fc972f63b561bf0470467b830a667a0fec9bbe37d00263594dbf5ae2b7c53d0",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "star-east-general.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BA0563596-0000-C022-B271-4291EE8A931D%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BA0563596-0000-C022-B271-4291EE8A931D%7D",
+    "retrieved_at": "2026-09-27T02:18:24.933595+00:00",
+    "bytes": 192063,
+    "sha256": "c00b50ffc81bc59de0e8328718405106c3fce576cf63c85b8bc29a1941ca5353",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "star-east-glossary.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BF0563596-0000-C06F-BE14-642FE773138D%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BF0563596-0000-C06F-BE14-642FE773138D%7D",
+    "retrieved_at": "2026-09-27T02:19:03.548487+00:00",
+    "bytes": 176364,
+    "sha256": "1ef5a76a9252bc4ffa12b0feaf564ff35eb42792c67d8ac7afafd691b577b924",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "star-east-line-description.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B20673596-0000-CE23-BB8C-629E001C2E86%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B20673596-0000-CE23-BB8C-629E001C2E86%7D",
+    "retrieved_at": "2026-09-27T02:19:13.297754+00:00",
+    "bytes": 12392139,
+    "sha256": "3ff1a5704cac3e3b11a6bd2b55c27962728c35812f28f17f46a5e53ff23fe47a",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "star-east-site.html",
+    "url": "https://www.southerntierreliabilityeast.com/index.htm",
+    "error": "HTTP Error 403: Forbidden",
+    "retrieved_at": "2026-09-27T02:19:13.501718+00:00"
+  },
+  {
+    "path": "dps-syosset-index.html",
+    "url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0241",
+    "resolved_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0241",
+    "retrieved_at": "2026-09-27T02:21:10.880514+00:00",
+    "bytes": 66077,
+    "sha256": "e9f6277f7e7caaccb19470bb7a6b4a073e01ccbc83e253c7f5f3a5675f39e000"
+  },
+  {
+    "path": "dps-southampton-index.html",
+    "url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-T-0113",
+    "resolved_url": "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-T-0113",
+    "retrieved_at": "2026-09-27T02:21:11.469660+00:00",
+    "bytes": 66047,
+    "sha256": "1c7a322a35276a0a9bed04646eb82bafd11410fe8ab04f200552f104224ab463"
+  },
+  {
+    "path": "dps-syosset-documents.json",
+    "url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/85948",
+    "resolved_url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/85948",
+    "retrieved_at": "2026-09-27T02:21:26.203911+00:00",
+    "bytes": 439749,
+    "sha256": "3bc0975c67f0569c7bf0a37762e28c9b9435fcc0d83d2def56f2d2df052d6f73"
+  },
+  {
+    "path": "dps-southampton-documents.json",
+    "url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/72806",
+    "resolved_url": "https://documents.dps.ny.gov/public/CaseMaster/PublicDocuments/72806",
+    "retrieved_at": "2026-09-27T02:21:28.162336+00:00",
+    "bytes": 517931,
+    "sha256": "cc72636137da3e3b514b51c127ae8793010824f5369052213bd0216da89a9f1a"
+  },
+  {
+    "path": "syosset-line-description.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100E3B96-0000-C013-A1AC-AB256FFF7BC0%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100E3B96-0000-C013-A1AC-AB256FFF7BC0%7D",
+    "retrieved_at": "2026-09-27T02:21:46.100920+00:00",
+    "bytes": 357301,
+    "sha256": "a7845caf382ff2ce236083f160076ab6327834fb647e57dc7163ce27c0629c58",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "southampton-project-description.pdf",
+    "url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BE0856597-0000-C24D-B9B9-7E15895499DF%7D",
+    "resolved_url": "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BE0856597-0000-C24D-B9B9-7E15895499DF%7D",
+    "retrieved_at": "2026-09-27T02:21:46.893937+00:00",
+    "bytes": 145018,
+    "sha256": "8a3214f81579f2e76d66f868f35d519b48b48a36b041531db389403b68c14b82",
+    "access_review": "Public operator presentation or public-marked NYPSC docket filing. Acquired project PDFs inspected for restriction markings; no CEII/confidential/proprietary marking found. No private or restricted filing content requested."
+  },
+  {
+    "path": "dps-active-table-web-capture.txt",
+    "url": "https://dps.ny.gov/active-article-vii-cases-table",
+    "retrieved_at": "2026-09-27T02:24:49.409380+00:00",
+    "sha256": "31c057939f9481b5111cd31cd45a3f56a12d191a13427074eb6688c24752cff1",
+    "bytes": 19811,
+    "source_date": "2025-09",
+    "artifact_kind": "web-tool extracted PDF text capture, NOT original PDF bytes",
+    "original_pdf_sha256": null,
+    "limitations": "Direct original PDF retrieval returned403. Capture retains source line/page locators. Underlying web cached retrieval time unknown; not a refreshed2026status source."
+  },
+  {
+    "path": "omp-item.json",
+    "url": "https://www.arcgis.com/sharing/rest/content/items/bdaa5690ba0744c39cc8519eb189abaf?f=json",
+    "retrieved_at": null,
+    "sha256": "269eda9082839b33ae6217a1befabf5e9ca97c7138805ff6b0911b22e30004ad",
+    "artifact_kind": "exact copy of previously acquired public metadata from F38 New England source research; original receipt available in producer scratch",
+    "access_review": "CommonwealthMassachusetts source as-is terms permit use without warranty; no redistribution prohibition present; retain attribution and vintage."
+  }
+]
