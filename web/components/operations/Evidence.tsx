@@ -79,7 +79,7 @@ export function RoadworkPanel({ envelope, refreshFailed }: { envelope: Envelope<
 
 export function SoilPanel({ envelope }: { envelope: Envelope<SoilData> }) {
   const units = envelope.data?.map_units ?? [];
-  const phSamples = units.flatMap((unit) => unit.components.flatMap((component) => component.horizons
+  const phSamples = units.flatMap((unit) => unit.components.flatMap((component) => (component.horizons ?? [])
     .filter((horizon) => horizon.ph_h2o_1_to_1 != null)
     .map((horizon) => ({ unit: unit.name, component: component.name, horizon }))));
   return <EnvelopeFrame envelope={envelope} title="Reference evidence">
@@ -94,7 +94,7 @@ export function SoilPanel({ envelope }: { envelope: Envelope<SoilData> }) {
         <span>{horizon.ph_method} · depth {horizon.depth_top_cm ?? "?"}-{horizon.depth_bottom_cm ?? "?"} {horizon.depth_unit} · {component ?? "component unknown"} · {unit}</span>
       </li>)}</ul>}
       <ul className={styles.eventList}>{units.slice(0, 4).map((unit) => <li key={unit.mukey}><strong>{unit.name}</strong><span>{unit.area_symbol} · {unit.components.length} components · survey {unit.survey_updated_at ?? "date unknown"}</span></li>)}</ul>
-      {units.length > 0 && <details className={styles.evidenceDetails}><summary>All mapped units, components and horizon pH</summary>{units.map((unit) => <section key={unit.mukey}><h4>{unit.name} · {unit.mukey}</h4><ul>{unit.components.length ? unit.components.map((component) => <li key={component.cokey}>{component.name ?? "Component name unknown"} · {component.percent ?? "percent unknown"}% · drainage {component.drainage_class ?? "unknown"} · hydrologic group {component.hydrologic_group ?? "unknown"}{component.horizons.length ? <ul>{component.horizons.map((horizon) => <li key={horizon.chkey}>Horizon {horizon.depth_top_cm ?? "?"}-{horizon.depth_bottom_cm ?? "?"} {horizon.depth_unit}: pH {horizon.ph_h2o_1_to_1 == null ? "not published" : number(horizon.ph_h2o_1_to_1, 1)} ({horizon.ph_method})</li>)}</ul> : <span> · no horizon rows published</span>}</li>) : <li>No component facts published.</li>}</ul></section>)}</details>}
+      {units.length > 0 && <details className={styles.evidenceDetails}><summary>All mapped units, components and horizon pH</summary>{units.map((unit) => <section key={unit.mukey}><h4>{unit.name} · {unit.mukey}</h4><ul>{unit.components.length ? unit.components.map((component) => { const horizons = component.horizons ?? []; return <li key={component.cokey}>{component.name ?? "Component name unknown"} · {component.percent ?? "percent unknown"}% · drainage {component.drainage_class ?? "unknown"} · hydrologic group {component.hydrologic_group ?? "unknown"}{horizons.length ? <ul>{horizons.map((horizon) => <li key={horizon.chkey}>Horizon {horizon.depth_top_cm ?? "?"}-{horizon.depth_bottom_cm ?? "?"} {horizon.depth_unit}: pH {horizon.ph_h2o_1_to_1 == null ? "not published" : number(horizon.ph_h2o_1_to_1, 1)} ({horizon.ph_method})</li>)}</ul> : <span> · no horizon rows published</span>}</li>; }) : <li>No component facts published.</li>}</ul></section>)}</details>}
     </>}
   </EnvelopeFrame>;
 }
