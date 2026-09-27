@@ -20,12 +20,14 @@ const EMPTY = { type: "FeatureCollection" as const, features: [] };
  * Click a project dot to snap to its located center, or click anywhere else to check that exact point.
  * The basemap comes from OpenFreeMap; every environmental lookup goes through our own /api/operations/site.
  */
-export function SiteMap({ projects, point, water, onPick }: { projects: MapProject[]; point: PickedPoint | null; water: NonNullable<WaterEvidence["data"]> | null; onPick: (p: PickedPoint) => void }) {
+export function SiteMap({ projects, point, water, onPick, onReport, loading }: { projects: MapProject[]; point: PickedPoint | null; water: NonNullable<WaterEvidence["data"]> | null; onPick: (p: PickedPoint) => void; onReport?: () => void; loading?: boolean }) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
   const onPickRef = useRef(onPick);
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
+  const [coverage, setCoverage] = useState(true);
+  const [stationCount, setStationCount] = useState<number | null>(null);
 
   useEffect(() => { onPickRef.current = onPick; }, [onPick]);
 
@@ -44,7 +46,22 @@ export function SiteMap({ projects, point, water, onPick }: { projects: MapProje
         map.on("error", (e) => { if (/fetch|load|tile|style|NetworkError|Failed/i.test(e.error?.message ?? "")) setFailure("Basemap tiles failed to load. Use the buttons or coordinates instead."); });
         map.on("load", () => {
           if (!map) return;
-          for (const id of ["projects", "picked", "gauges", "tide"]) map.addSource(id, { type: "geojson", data: EMPTY });
+          for (const id of ["stations", "projects", "picked", "gauges", "tide"]) map.addSource(id, { type: "geojson", data: EMPTY });
+          // Coverage: every saved 10-year NOAA station, drawn faint and underneath so sites stay primary.
+          map.addLayer({ id: "stations-reach", type: "circle", source: "stations", paint: { "circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 3, 2, 6, 14, 9, 110], "circle-color": COLORS.accent, "circle-opacity": 0.05 } });
+          map.addLayer({ id: "stations", type: "circle", source: "stations", paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 3.5], "circle-color": COLORS.accent, "circle-opacity": 0.55 } });
+          const tip = new ml.Popup({ closeButton: false, closeOnClick: false, className: s.stationPopup, offset: 8 });
+          map.on("mouseenter", "stations", (e) => {
+            const f = e.features?.[0]; if (!f || f.geometry.type !== "Point") return;
+            const q = f.properties as { name: string; wind: boolean; snow: boolean };
+            tip.setLngLat(f.geometry.coordinates as [number, number]).setText(`${q.name} · 10-yr NOAA record${q.wind ? " · wind" : ""}${q.snow ? " · snow" : ""}`).addTo(map!);
+          });
+          map.on("mouseleave", "stations", () => tip.remove());
+          fetch("/api/weather-history/stations").then((r) => (r.ok ? r.json() : null)).then((body: { stations?: { id: string; name: string; lat: number; lon: number; wind: boolean; snow: boolean }[] } | null) => {
+            if (!body?.stations || !map || cancelled) return;
+            (map.getSource("stations") as GeoJSONSource).setData({ type: "FeatureCollection", features: body.stations.map((st) => ({ type: "Feature", geometry: { type: "Point", coordinates: [st.lon, st.lat] }, properties: { id: st.id, name: st.name, wind: st.wind, snow: st.snow } })) });
+            setStationCount(body.stations.length);
+          }).catch(() => { /* coverage layer is optional; lookups still work */ });
           const color = ["match", ["get", "utility"], "DESC", COLORS.DESC, "GPC", COLORS.GPC, COLORS.unknown];
           map.addLayer({ id: "pair-halo", type: "circle", source: "projects", filter: ["==", ["get", "inPair"], 1], paint: { "circle-radius": 14, "circle-color": COLORS.accent, "circle-opacity": 0.22, "circle-stroke-color": COLORS.accent, "circle-stroke-width": 1, "circle-stroke-opacity": 0.6 } });
           map.addLayer({
@@ -106,10 +123,21 @@ export function SiteMap({ projects, point, water, onPick }: { projects: MapProje
     if (point) map.easeTo({ center: [point.lon, point.lat], zoom: Math.max(map.getZoom(), 9) });
   }, [ready, point, water]);
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map) return;
+    for (const id of ["stations", "stations-reach"]) map.setLayoutProperty(id, "visibility", coverage ? "visible" : "none");
+  }, [ready, coverage]);
+
   return <div className={s.siteMapWrap}>
     <div ref={container} className={s.siteMap} role="region" aria-label={`Site map with ${projects.length} located project centers. Click a project or any point to check site evidence; the buttons and coordinate fields do the same.`} />
     {!ready && !failure && <div className={s.siteMapStatus}>Loading map…</div>}
     {failure && <div className={s.siteMapStatus} role="status">{failure}</div>}
+    {!point && ready && <div className={s.mapHint} aria-hidden>Click anywhere to drop a pin</div>}
+    {point && onReport && <div className={s.mapAction}>
+      <span>{point.label.length > 42 ? `${point.label.slice(0, 40)}…` : point.label}</span>
+      <button type="button" onClick={onReport} disabled={loading}>{loading ? "Loading records…" : "Report this spot ↓"}</button>
+    </div>}
     <ul className={s.legend} aria-label="Map legend">
       <li><i style={{ background: COLORS.DESC }} />DESC project</li>
       <li><i style={{ background: COLORS.GPC }} />Georgia Power project</li>
@@ -118,6 +146,7 @@ export function SiteMap({ projects, point, water, onPick }: { projects: MapProje
       <li><i className={s.legendPicked} />Checked point</li>
       <li><i style={{ background: COLORS.gauge }} />USGS gauge</li>
       <li><i style={{ background: COLORS.tide }} />NOAA tide station</li>
+      <li><label className={s.coverageToggle}><input type="checkbox" checked={coverage} onChange={(e) => setCoverage(e.target.checked)} /><i className={s.legendStation} />Saved 10-yr weather stations{stationCount !== null ? ` (${stationCount.toLocaleString("en-US")})` : ""}; anywhere else is looked up live</label></li>
     </ul>
   </div>;
 }

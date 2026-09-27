@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ImpactWorksheet } from "@/components/impact/ImpactWorksheet";
-import { SiteEvidence, type SitePoint } from "@/components/impact/SiteEvidence";
+import type { SitePoint } from "@/components/impact/SiteEvidence";
 import { SiteFactors } from "@/components/impact/SiteFactors";
 import type { MapProject } from "@/components/impact/SiteMap";
 import { Badge, ReviewBadge, UtilityBadge, buttonClass, fmtMiles, gapText } from "@/components/ui";
@@ -9,7 +8,7 @@ import { getMatches, getPair, getProjects, isFixtureMode } from "@/lib/data";
 import { isUnavailable, type Project } from "@/lib/types";
 import s from "@/components/impact/impact.module.css";
 
-export const metadata: Metadata = { title: "Impact scenario · Common Ground" };
+export const metadata: Metadata = { title: "Site weather report · Common Ground" };
 
 function projectPoint(project: Project | null | undefined, fallbackLabel: string): SitePoint | null {
   const lat = project?.center?.lat ?? project?.geo?.coordinates?.[1];
@@ -18,12 +17,10 @@ function projectPoint(project: Project | null | undefined, fallbackLabel: string
   return { label: project?.name ?? fallbackLabel, lat, lon };
 }
 
-export default async function ImpactPage({ searchParams }: { searchParams: Promise<{ pair?: string | string[]; tab?: string | string[] }> }) {
+export default async function ImpactPage({ searchParams }: { searchParams: Promise<{ pair?: string | string[] }> }) {
   const params = await searchParams;
   const id = typeof params.pair === "string" ? params.pair : "";
-  const tab = params.tab === "site" ? "site" : "mobilization";
-  const tabHref = (next: string) => `/impact?${new URLSearchParams({ ...(id ? { pair: id } : {}), ...(next === "site" ? { tab: "site" } : {}) })}`;
-  const [matches, pair, projectList] = await Promise.all([getMatches({ limit: 100 }), id ? getPair(id) : Promise.resolve(null), tab === "site" ? getProjects() : Promise.resolve([])]);
+  const [matches, pair, projectList] = await Promise.all([getMatches({ limit: 100 }), id ? getPair(id) : Promise.resolve(null), getProjects()]);
   const detail = pair && !isUnavailable(pair) ? pair : null;
   const rows = isUnavailable(matches) ? [] : matches;
   const match = detail?.match;
@@ -40,20 +37,18 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
   return (
     <main className={s.page}>
       <header className={s.hero}>
-        <span className="eyebrow">Impact scenario / Matting & mobilization</span>
-        <h1>Move the package.<br />Understand the tradeoff.</h1>
-        <p>A worksheet for project managers weighing a second mobilization against transferring mats or equipment between jobs.</p>
-        <Badge>User-entered assumptions · USD</Badge>
-        <nav className={`${s.tabs} no-print`} aria-label="Impact worksheets">
-          <Link href={tabHref("mobilization")} aria-current={tab === "mobilization" ? "page" : undefined}>Mobilization</Link>
-          <Link href={tabHref("site")} aria-current={tab === "site" ? "page" : undefined}>Site factors</Link>
-        </nav>
+        <span className="eyebrow">Impact / Site weather report</span>
+        <h1>Pick a site. Pick a date.<br />See what the weather costs.</h1>
+        <p>Ten years of NOAA station records replayed for any U.S. location, with last year&rsquo;s weather, the NWS forecast, wetland and soil context, and a PDF you can hand to the team.</p>
+        <Badge>Historical replay · user-entered costs</Badge>
       </header>
+
+      <SiteFactors key={`factors-${id}`} pairLabel={pairLabel} points={sitePoints} projects={mapProjects} />
       <section className={s.section} aria-labelledby="pair-heading">
-        <span className="eyebrow">01 / Project context</span>
-        <h2 id="pair-heading">Start with the evidence.</h2>
+        <span className="eyebrow">07 / Project pair (optional)</span>
+        <h2 id="pair-heading">Attach a project pair.</h2>
+        <p className={s.muted}>Adds both project centers as one-click sites on the map and keeps their filing evidence with the report.</p>
         <form action="/impact" className={`${s.picker} no-print`}>
-          {tab === "site" && <input type="hidden" name="tab" value="site" />}
           <label htmlFor="pair">Project pair (optional)
             <select id="pair" name="pair" defaultValue={id}>
               <option value="">Standalone worksheet</option>
@@ -83,17 +78,13 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
           })}</div>
           <p className={s.warning}>{match.review_state === "rejected" ? "This pair was rejected in review. Its costs can be explored hypothetically, but it is not a validated coordination opportunity. " : match.review_state !== "confirmed" ? "This pair still needs review. " : "Review does not establish equipment availability. "}Center distance is not a truck route. Filed in-service dates are not construction windows.</p>
           <Link href={`/pair/${encodeURIComponent(match._id)}`}>Inspect pair evidence and review details →</Link>
-          {!sitePoints.length && <p className={s.muted}>Neither project center has published coordinates, so Field planning context is not attached.</p>}
+          {!sitePoints.length && <p className={s.muted}>Neither project center has published coordinates, so pick the site on the map below.</p>}
         </> : !id && <p className={s.muted}>No pair attached. Use this worksheet for your own two-job scenario, or choose a pair to keep its source evidence alongside your assumptions.</p>}
       </section>
-      {tab === "site" ? <SiteFactors key={`factors-${id}`} pairLabel={pairLabel} points={sitePoints} projects={mapProjects} /> : <>
-        {sitePoints.length > 0 && <SiteEvidence key={`site-${id}`} points={sitePoints} />}
-        <ImpactWorksheet key={id} pairLabel={pairLabel} />
-      </>}
       <aside className={s.research}>
-        <strong>Why these inputs?</strong> Sponsor conversations highlighted freight, short-notice mobilization and idle rented equipment.
-        One contractor described $1.5M in freight on a $5M job. That anecdote is context only; it is not a default rate or savings ratio.
-        Dakota describes access planning, mat installation/removal and rentals in its <a href="https://dakotamats.com/about/" target="_blank" rel="noreferrer">service overview</a>.
+        <strong>Where the numbers come from.</strong> Daily rain, temperature, snow and wind: <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noreferrer">NOAA NCEI GHCN-Daily</a> station records, 2016–2025, plus the latest observations.
+        Forecast: National Weather Service. Flood zones: FEMA NFHL. Wetlands: USFWS NWI. Soil: USDA SSURGO. Wetland permit times: <a href="https://www.govinfo.gov/content/pkg/FR-2025-06-18/html/2025-11190.htm" target="_blank" rel="noreferrer">USACE FY2024 averages</a>.
+        Costs are always your own rates; nothing here is a bid or a forecast guarantee.
       </aside>
     </main>
   );

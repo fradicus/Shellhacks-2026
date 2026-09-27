@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HeroStory } from "./HeroStory";
 import { HeroScene } from "./HeroScene";
+import { Integrations } from "./Integrations";
 import { NetworkIllustration } from "./NetworkIllustration";
 import s from "./landing.module.css";
 
@@ -206,6 +207,39 @@ export function LandingPage() {
               </Link>
             </div>
           </div>
+        </section>
+
+        <section className={`${s.section} ${s.connected}`} id="connected" aria-labelledby="connected-title">
+          <div className={s.connectedCopy}>
+            <p className={s.eyebrow}>04 / CONNECTED</p>
+            <h2 id="connected-title">
+              One plan.
+              <br />
+              <span>Every input.</span>
+            </h2>
+            <p>
+              Common Ground brings public weather, water, soil, satellite, and road data to the worksite, then puts your
+              crews, contractors, and cost rates beside it. Every figure keeps its source.
+            </p>
+            <ul className={s.connectedList}>
+              <li>
+                <b>Live public sources</b>
+                <span>NWS, NOAA, USGS, FEMA, USDA, WZDx</span>
+              </li>
+              <li>
+                <b>Your field inputs</b>
+                <span>Crew, contractor, and equipment rates you enter</span>
+              </li>
+              <li>
+                <b>Nothing assumed</b>
+                <span>Blank inputs stay blank; no default rates</span>
+              </li>
+            </ul>
+            <Link href="/operations" className={s.textLink}>
+              Open field planning <Arrow />
+            </Link>
+          </div>
+          <Integrations />
         </section>
 
         <section className={s.finalCta}>

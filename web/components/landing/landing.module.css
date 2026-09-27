@@ -129,6 +129,14 @@
 .changeArt span { display:block; height:4px; background:#ffffff12; margin-bottom:14px; border-radius:5px; }
 .changeArt span:nth-child(2) { background:#ffe2b075; width:80%; }
 .changeArt span:nth-child(4) { background:#2997ff75; width:55%; }
+.connected { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:clamp(40px,6vw,96px); align-items:center; }
+.connectedCopy > p:not(.eyebrow) { color:var(--landing-muted); font-size:14px; line-height:1.8; margin:26px 0 0; max-width:400px; }
+.connectedList { list-style:none; margin:34px 0 36px; padding:0; display:grid; gap:0; max-width:400px; }
+.connectedList li { display:grid; gap:3px; padding:14px 0; border-top:1px solid #ffffff14; }
+.connectedList li:last-child { border-bottom:1px solid #ffffff14; }
+.connectedList b { font-size:13px; font-weight:500; color:#e8e8ec; }
+.connectedList span { font-size:12px; color:#7d7d86; }
+@media(max-width:900px){ .connected { grid-template-columns:1fr; } }
 .finalCta { text-align:center; padding:60px 24px 125px; position:relative; background:radial-gradient(ellipse at 50% 60%,#ffe2b008,transparent 65%); }
 .finalCta .eyebrow { justify-content:center; font-size:9px; }
 .finalCta h2 { font-size:clamp(52px,6.6vw,96px); line-height:1.04; }

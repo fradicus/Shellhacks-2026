@@ -8,7 +8,22 @@ const num = z.number().finite().nullable();
 const Horizon = z.object({ depth_top_cm: num, depth_bottom_cm: num, ph_h2o_1_to_1: num });
 const Component = z.object({ name: z.string().nullable(), percent: num, drainage_class: z.string().nullable(), hydrologic_group: z.string().nullable(), horizons: z.array(Horizon).optional() });
 export const SoilSchema = z.object({ status: z.string(), limitations: z.array(z.string()), data: z.object({ map_units: z.array(z.object({ name: z.string(), components: z.array(Component) })) }).nullable() });
-const WeatherSchema = z.object({ status: z.string(), data: z.object({ samples: z.array(z.object({ alerts: z.array(z.object({ event: z.string() })) })) }).nullable() });
+const Period = z.object({ start: z.string(), end: z.string(), temperature: num, precipitation_probability: num, wind_speed: z.string().nullable(), description: z.string() });
+const WeatherSchema = z.object({ status: z.string(), data: z.object({ samples: z.array(z.object({ alerts: z.array(z.object({ event: z.string() })), forecast: z.array(Period).optional() })) }).nullable() });
+
+export type ForecastDay = { date: string; maxPrecipChance: number | null; maxTemp: number | null; summary: string };
+/** NWS hourly periods grouped by their local calendar date. Probability of precipitation, not a stop rule. */
+export function forecastDays(site: SiteEvidenceData | null): ForecastDay[] {
+  const periods = site?.weather.data?.samples[0]?.forecast ?? [];
+  const byDate = new Map<string, z.infer<typeof Period>[]>();
+  for (const p of periods) { const d = p.start.slice(0, 10); byDate.set(d, [...(byDate.get(d) ?? []), p]); }
+  return [...byDate].map(([date, ps]) => {
+    const chances = ps.map((p) => p.precipitation_probability).filter((v): v is number => v !== null);
+    const temps = ps.map((p) => p.temperature).filter((v): v is number => v !== null);
+    const counts = new Map<string, number>(); for (const p of ps) counts.set(p.description, (counts.get(p.description) ?? 0) + 1);
+    return { date, maxPrecipChance: chances.length ? Math.max(...chances) : null, maxTemp: temps.length ? Math.max(...temps) : null, summary: [...counts].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "" };
+  });
+}
 export const SiteSchema = z.object({ soil: SoilSchema, weather: WeatherSchema });
 
 const Gauge = z.object({ site_id: z.string(), name: z.string(), lat: z.number().finite(), lon: z.number().finite(), distance_mi: z.number().finite(), parameter_name: z.string(), unit: z.string(), value: num, observed_at: z.string() });
@@ -28,7 +43,8 @@ const DailySeries = z.array(num).min(365).max(4000);
 export const HistorySchema = z.object({ history: z.object({
   window: z.object({ start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }),
   citation: z.string().url(), rain: StationRef, wind: StationRef.nullable(),
-  prcp_in: DailySeries, tmax_f: DailySeries, wsf2_mph: DailySeries.nullable(),
+  prcp_in: DailySeries, tmax_f: DailySeries, wsf2_mph: DailySeries.nullable(), tmin_f: DailySeries.nullable().optional(), snow_in: DailySeries.nullable().optional(),
+  origin: z.enum(["committed", "live"]).optional(),
 }).refine((h) => h.prcp_in.length === h.tmax_f.length && (!h.wsf2_mph || h.wsf2_mph.length === h.prcp_in.length), "Series lengths differ").nullable() });
 export type SiteEvidenceData = z.infer<typeof SiteSchema>;
 export type WaterEvidence = z.infer<typeof WaterSchema>["water"];
@@ -76,3 +92,31 @@ export function evidenceLines(site: SiteEvidenceData | null, water: WaterEvidenc
   if (alerts.length) lines.push(`NWS alerts active: ${[...new Set(alerts.map((a) => a.event))].join(", ")}`);
   return lines;
 }
+
+/** Soil reaction classes from the NRCS Soil Survey Manual (ch. 3). A name for the number, not a schedule effect. */
+const PH_CLASSES: [number, string][] = [[3.5, "Ultra acid"], [4.5, "Extremely acid"], [5.1, "Very strongly acid"], [5.6, "Strongly acid"], [6.1, "Moderately acid"], [6.6, "Slightly acid"], [7.4, "Neutral"], [7.9, "Slightly alkaline"], [8.5, "Moderately alkaline"], [9.1, "Strongly alkaline"]];
+export const SOIL_SURVEY_MANUAL = "https://www.nrcs.usda.gov/resources/guides-and-instructions/soil-survey-manual";
+export function phClass(ph: number | null): string | null {
+  if (ph === null) return null;
+  return PH_CLASSES.find(([below]) => ph < below)?.[1] ?? "Very strongly alkaline";
+}
+
+/** Facts from the site lookups that change how long wet weather lasts on the ground. Unknown stays null. */
+export type SiteHints = { drainage: string | null; poorlyDrained: boolean; wetlandMapped: boolean | null; wetlandType: string | null; ph: number | null; floodZone: string | null; sfha: boolean | null };
+export function siteHints(site: SiteEvidenceData | null, water: WaterEvidence | null): SiteHints {
+  const component = site?.soil.data?.map_units[0]?.components.slice().sort((a, b) => (b.percent ?? 0) - (a.percent ?? 0))[0];
+  const drainage = component?.drainage_class ?? null;
+  const wet = water?.data?.wetlands ?? null, zone = water?.data?.flood?.zones[0] ?? null;
+  return {
+    drainage, poorlyDrained: !!drainage && /poorly/i.test(drainage) && !/somewhat poorly/i.test(drainage),
+    wetlandMapped: wet ? wet.mapped : null, wetlandType: wet?.features[0]?.wetland_type ?? null,
+    ph: soilPhSummary(site?.soil.data ?? null).value, floodZone: zone?.zone ?? null, sfha: zone?.special_flood_hazard_area ?? null,
+  };
+}
+
+const RecentDaily = z.array(num).max(500);
+/** /api/weather-history/recent: the latest ~13 months of NOAA observations for the chosen stations. */
+export const RecentSchema = z.object({ recent: z.object({
+  start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), source_url: z.string().url(),
+  prcp_in: RecentDaily, tmax_f: RecentDaily, tmin_f: RecentDaily, snow_in: RecentDaily, wsf2_mph: RecentDaily.nullable(),
+}).nullable() });

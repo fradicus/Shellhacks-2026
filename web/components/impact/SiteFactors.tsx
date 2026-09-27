@@ -6,7 +6,10 @@ import { money } from "./model";
 import type { SitePoint } from "./SiteEvidence";
 import { SiteMap, type MapProject } from "./SiteMap";
 import { WeatherDelay, type HistoryPayload } from "./WeatherDelay";
-import { evidenceLines, HistorySchema, PH_DEPTH_CM, SiteSchema, soilPhSummary, WaterSchema, type SiteEvidenceData, type WaterEvidence } from "./siteModel";
+import { SiteReport } from "./SiteReport";
+import { DEFAULT_DELAY, type DelayInputs } from "./delayModel";
+import type { Recent } from "./reportModel";
+import { evidenceLines, forecastDays, HistorySchema, PH_DEPTH_CM, RecentSchema, SiteSchema, siteHints, soilPhSummary, WaterSchema, type SiteEvidenceData, type WaterEvidence } from "./siteModel";
 import { calculateShare, calculateTask, emptyShare, emptyTask, type ShareInputs, type TaskInputs } from "./taskModel";
 import s from "./impact.module.css";
 
@@ -22,8 +25,8 @@ const TASK_FIELDS: { key: keyof TaskInputs; label: string; help: string; mode: "
   { key: "standbyPerDay", label: "Standby cost per closed day · USD", help: "Cost of a mobilized day with no usable window. Enter 0 if demobilized.", mode: "decimal" },
 ];
 
-type Loaded = { loading: boolean; siteError: string | null; waterError: string | null; historyError: string | null; site: SiteEvidenceData | null; water: WaterEvidence | null; history: HistoryPayload | null };
-const IDLE: Loaded = { loading: false, siteError: null, waterError: null, historyError: null, site: null, water: null, history: null };
+type Loaded = { loading: boolean; siteError: string | null; waterError: string | null; historyError: string | null; site: SiteEvidenceData | null; water: WaterEvidence | null; history: HistoryPayload | null; recent: Recent | null; recentError: string | null };
+const IDLE: Loaded = { loading: false, siteError: null, waterError: null, historyError: null, site: null, water: null, history: null, recent: null, recentError: null };
 
 async function getJson<T>(url: string, schema: { parse: (v: unknown) => T }, signal: AbortSignal): Promise<T> {
   const response = await fetch(url, { cache: "no-store", signal });
@@ -46,7 +49,8 @@ function useSite() {
     const controller = new AbortController(); lane.current = controller;
     setPoint(next); setState({ ...IDLE, loading: true });
     const year = Math.max(2017, new Date().getUTCFullYear() - 1);
-    const at = { lat: String(next.lat), lon: String(next.lon) };
+    // 4 decimals (~11 m): NWS /points answers 301 to finer coordinates, which the weather provider treats as unavailable.
+    const at = { lat: next.lat.toFixed(4), lon: next.lon.toFixed(4) };
     Promise.allSettled([
       getJson(`/api/operations/site?${new URLSearchParams({ ...at, year: String(year) })}`, SiteSchema, controller.signal),
       getJson(`/api/operations/water?${new URLSearchParams(at)}`, WaterSchema, controller.signal),
@@ -58,7 +62,13 @@ function useSite() {
         site: site.status === "fulfilled" ? site.value : null, siteError: site.status === "rejected" ? `Soil and weather: ${reason(site.reason)}` : null,
         water: water.status === "fulfilled" ? water.value.water : null, waterError: water.status === "rejected" ? `Water: ${reason(water.reason)}` : null,
         history: history.status === "fulfilled" ? history.value.history : null, historyError: history.status === "rejected" ? `Weather history: ${reason(history.reason)}` : null,
+        recent: null, recentError: null,
       });
+      // Second phase: the latest ~13 months at the same stations, for "this time last year". Never blocks the report.
+      const h = history.status === "fulfilled" ? history.value.history : null;
+      if (h) getJson(`/api/weather-history/recent?${new URLSearchParams({ rain: h.rain.id, wind: h.wind?.id ?? "" })}`, RecentSchema, controller.signal)
+        .then((v) => { if (!controller.signal.aborted) setState((prev) => ({ ...prev, recent: v.recent })); })
+        .catch((e) => { if (!controller.signal.aborted) setState((prev) => ({ ...prev, recentError: `Latest NOAA observations: ${reason(e)}` })); });
     });
   }
   return { point, select, ...state };
@@ -88,9 +98,14 @@ function WaterCard({ water }: { water: WaterEvidence }) {
 export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint[]; pairLabel: string | null; projects: MapProject[] }) {
   const [manual, setManual] = useState({ lat: "", lon: "" });
   const [manualError, setManualError] = useState<string | null>(null);
+  const [place, setPlace] = useState("");
+  const [placeState, setPlaceState] = useState<{ busy: boolean; note: string | null }>({ busy: false, note: null });
   const [task, setTask] = useState<TaskInputs>(emptyTask);
   const [share, setShare] = useState<ShareInputs>(emptyShare);
-  const { point, select, loading, siteError, waterError, historyError, site, water, history } = useSite();
+  const { point, select, loading, siteError, waterError, historyError, site, water, history, recent, recentError } = useSite();
+  const [delay, setDelay] = useState<DelayInputs>(DEFAULT_DELAY);
+  const [dayCost, setDayCost] = useState("");
+  const hints = site || water ? siteHints(site, water) : null;
   const outcome = calculateTask(task);
   const split = calculateShare(share);
   const evidence = evidenceLines(site, water);
@@ -104,24 +119,57 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
     setManualError(null);
     select({ label: "Entered point", lat: Math.round(lat * 1e5) / 1e5, lon: Math.round(lon * 1e5) / 1e5 });
   }
+  /** Typed place or address → our /api/geocode (Census, then OpenStreetMap) → the same lookups as a map click. */
+  async function searchPlace(event: React.FormEvent) {
+    event.preventDefault();
+    const q = place.trim();
+    if (q.length < 3) { setPlaceState({ busy: false, note: "Type at least 3 characters: a street address, town or landmark." }); return; }
+    setPlaceState({ busy: true, note: null });
+    try {
+      const response = await fetch(`/api/geocode?${new URLSearchParams({ q })}`, { cache: "no-store" });
+      const body = (await response.json()) as { result?: { label: string; lat: number; lon: number; source: string; attribution: string } | null; error?: string };
+      if (!response.ok) throw new Error(body.error ?? "Location search is unavailable.");
+      if (!body.result || !Number.isFinite(body.result.lat) || !Number.isFinite(body.result.lon)) { setPlaceState({ busy: false, note: `No U.S. match for "${q}". Try a fuller address or click the map.` }); return; }
+      const { label, lat, lon, source, attribution } = body.result;
+      setPlaceState({ busy: false, note: `Found via ${source} (${attribution}). Check the pin: a place name lands on its mapped center, not your exact site.` });
+      select({ label: label.length > 80 ? `${label.slice(0, 77)}…` : label, lat: Math.round(lat * 1e5) / 1e5, lon: Math.round(lon * 1e5) / 1e5 });
+    } catch (error) { setPlaceState({ busy: false, note: error instanceof Error ? error.message : "Location search is unavailable." }); }
+  }
   function reset() { setTask(emptyTask()); setShare(emptyShare()); }
 
   return <>
     <section className={s.section} aria-labelledby="site-heading">
-      <span className="eyebrow">02 / Site evidence</span>
-      <h2 id="site-heading">What does the ground and water look like?</h2>
-      <p className={s.muted}>Click a project or any spot on the map, choose a project center, or enter a point. Flood zone, wetland, gauges, tides, soil and weather are looked up server-side from public sources. They inform your assumptions below; they never set a number.</p>
-      <SiteMap projects={projects} point={point} water={water?.data ?? null} onPick={select} />
+      <span className="eyebrow">01 / Pick the site</span>
+      <h2 id="site-heading">Where is the work?</h2>
+      <p className={s.muted}>Search a town or address, or click anywhere on the map, then press <strong>Report this spot</strong>. Weather, flood, wetland and soil records are looked up from public sources on our server.</p>
+      <form className={`${s.placeSearch} no-print`} onSubmit={searchPlace} role="search">
+        <label htmlFor="place-search">Search a place or address</label>
+        <div><input id="place-search" type="search" value={place} maxLength={200} onChange={(e) => setPlace(e.target.value)} placeholder="e.g. Hardeeville, SC or 1 Main St, Bluffton, SC" autoComplete="off" />
+          <Button type="submit" variant="primary" disabled={placeState.busy}>{placeState.busy ? "Searching…" : "Go"}</Button></div>
+        {placeState.note && <small role="status">{placeState.note}</small>}
+      </form>
+      <SiteMap projects={projects} point={point} water={water?.data ?? null} onPick={select} loading={loading} onReport={() => document.getElementById("report")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
       <div className={`${s.pointPicker} no-print`}>
         {points.map((p) => <Button key={p.label} variant={point?.label === p.label ? "primary" : undefined} onClick={() => select(p)}>{p.label}</Button>)}
         <label>Latitude<input inputMode="decimal" value={manual.lat} onChange={(e) => setManual({ ...manual, lat: e.target.value })} placeholder="32.33" maxLength={12} /></label>
         <label>Longitude<input inputMode="decimal" value={manual.lon} onChange={(e) => setManual({ ...manual, lon: e.target.value })} placeholder="-81.03" maxLength={12} /></label>
         <Button onClick={checkManual}>Check point</Button>
       </div>
-      {!points.length && <p className={s.muted}>{pairLabel ? "Neither project in this pair has a located center, so enter a point." : "No pair attached. Enter a point, or choose a pair above to use its project centers."}</p>}
+      {!points.length && <p className={s.muted}>{pairLabel ? "Neither project in this pair has a located center, so enter a point." : "Tip: attach a project pair at the bottom of the page to add its project centers here."}</p>}
       {manualError && <p className={s.error} role="alert">{manualError}</p>}
       {point && <p className={s.muted} aria-live="polite">{loading ? `Checking ${point.label} (${point.lat.toFixed(5)}, ${point.lon.toFixed(5)})…` : `${point.label}: ${point.lat.toFixed(5)}, ${point.lon.toFixed(5)}`}</p>}
       {[siteError, waterError].filter(Boolean).map((e) => <p key={e} className={s.warning} role="alert">{e} The worksheet below still works with your own inputs.</p>)}
+    </section>
+
+    <SiteReport history={history} recent={recent} recentError={recentError} loading={loading} pointLabel={point?.label ?? null} point={point} hints={hints} forecast={forecastDays(site)}
+      inputs={delay} setInputs={setDelay} dayCost={dayCost} setDayCost={setDayCost} standbyPerDay={task.standbyPerDay} />
+
+    <WeatherDelay history={history} loading={loading} error={historyError} standbyPerDay={task.standbyPerDay} hints={hints} inputs={delay} dayCost={dayCost} />
+
+    <section className={s.section} aria-labelledby="evidence-heading">
+      <span className="eyebrow">04 / Site evidence</span>
+      <h2 id="evidence-heading">What does the ground and water look like?</h2>
+      {!site && !water && <p className={s.muted}>Pick a site to see its flood zone, wetland, gauges, tides and soil.</p>}
       {(site || water) && <div className={s.factorGrid}>
         {water && <WaterCard water={water} />}
         <article className={s.factorCard}>
@@ -137,11 +185,9 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
       </div>}
     </section>
 
-    <WeatherDelay history={history} loading={loading} error={historyError} standbyPerDay={task.standbyPerDay} />
-
     <section className={s.section} aria-labelledby="task-heading">
       <div className={s.sectionHead}>
-        <div><span className="eyebrow">04 / User scenario</span><h2 id="task-heading">What does a restricted work window cost?</h2></div>
+        <div><span className="eyebrow">05 / Task cost worksheet</span><h2 id="task-heading">What does a restricted work window cost?</h2></div>
         <div className={`no-print ${s.actions}`}><Button onClick={reset}>Reset site worksheet</Button><Button variant="primary" onClick={() => window.print()}>Print / save PDF</Button></div>
       </div>
       <p className={s.formula}>work days × paid hours/day × (crew + equipment rate) × site multiplier + permit cost + closed days × standby cost</p>
@@ -185,7 +231,7 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
     </section>
 
     <section className={s.section} aria-labelledby="share-heading">
-      <span className="eyebrow">05 / Shared access item</span>
+      <span className="eyebrow">06 / Shared access item</span>
       <h2 id="share-heading">If both utilities use one access road, mat run or bridge</h2>
       <p className={s.muted}>Split one shared item pro rata, for example by mat-days or crossings each utility uses. Optionally enter what each would pay to build alone to see the modeled difference.{pairLabel ? ` Pair: ${pairLabel}.` : ""}</p>
       <div className={s.shareGrid}>

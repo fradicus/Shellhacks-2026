@@ -135,13 +135,107 @@
 .tableView summary { cursor: pointer; color: var(--accent); font-size: 13px; }
 .tableView { overflow-x: auto; }
 .monthDetail { overflow-x: auto; }
+.placeSearch { display: grid; gap: 6px; margin: 18px 0 0; }
+.placeSearch label { font-size: 13px; font-weight: 600; }
+.placeSearch > div { display: flex; gap: 8px; }
+.placeSearch input { flex: 1; min-width: 0; min-height: 44px; }
+.placeSearch small { color: var(--muted); font-size: 12px; }
+.suggest { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 16px; padding: 12px 14px; border: 1px solid rgba(134, 229, 207, 0.35); border-radius: var(--radius); background: var(--band0-bg); font-size: 13px; }
+.suggest button { flex-shrink: 0; min-height: 36px; padding: 6px 12px; border-radius: var(--radius); border: 1px solid var(--band0); background: transparent; color: var(--band0); cursor: pointer; }
+.scenarioCards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 8px 0 16px; }
+.scenarioCards > div { display: grid; gap: 6px; align-content: start; padding: 16px 18px; border: 1px solid var(--border); border-radius: var(--radius-l); background: var(--surface); }
+.scenarioCards strong { font-family: var(--font-display); font-size: clamp(24px, 2.6vw, 32px); line-height: 1.05; }
+.scenarioCards span:not(:global(.eyebrow)) { color: var(--muted); font-size: 13px; }
+.scenarioCards em { font-style: normal; font-family: var(--font-mono); font-size: 13px; color: var(--text); }
+.scenarioCards em a { color: var(--accent); }
+.scenarioCards > div[data-wet="true"] { border-color: rgba(92, 200, 255, 0.4); background: linear-gradient(180deg, var(--desc-bg), var(--surface) 75%); }
+.scenarioCards > div[data-permit="flag"] { border-color: rgba(233, 205, 131, 0.45); background: linear-gradient(180deg, var(--band1-bg), var(--surface) 75%); }
+.scenarioCards select { width: 100%; min-height: 40px; font-size: 13px; }
+.conditions { margin: 18px 0; padding: 16px 18px; border: 1px solid var(--border); border-radius: var(--radius-l); background: var(--surface); }
+.conditions dl { display: grid; gap: 12px; margin: 10px 0 0; }
+.conditions dl div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; }
+.conditions dt { font: 600 12px var(--font-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--text-3); padding-top: 2px; }
+.conditions dd { margin: 0; font-size: 14px; line-height: 1.55; color: var(--muted); }
+.conditions dd strong { color: var(--text); }
+.conditions a { color: var(--accent); }
+/* Map call-to-action */
+.mapHint { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); padding: 7px 12px; border-radius: 999px; background: var(--glass); border: 1px solid var(--border); color: var(--muted); font-size: 12px; pointer-events: none; backdrop-filter: blur(8px); }
+.mapAction { position: absolute; left: 12px; right: 12px; bottom: 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 10px 10px 14px; border-radius: var(--radius-l); background: var(--glass); border: 1px solid var(--border-strong); backdrop-filter: blur(10px); box-shadow: var(--shadow); z-index: 2; }
+.mapAction span { font-size: 13px; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.mapAction button { flex-shrink: 0; min-height: 40px; padding: 8px 16px; border: 0; border-radius: var(--radius); background: var(--accent); color: var(--accent-ink); font-weight: 700; cursor: pointer; }
+.mapAction button:disabled { opacity: .6; cursor: progress; }
+
+/* Report layout */
+.reportGrid { display: grid; grid-template-columns: minmax(300px, 380px) minmax(0, 1fr); gap: 18px; align-items: start; margin-top: 16px; }
+.reportSide { display: grid; gap: 14px; }
+.reportInputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; }
+.reportInputs input { width: 100%; min-height: 42px; font-family: var(--font-mono); }
+.rules { border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; background: var(--surface); }
+.rules summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--accent); }
+.rules[open] summary { margin-bottom: 12px; }
+.rules .toggle { margin: 12px 0 2px; }
+.calPrompt { padding: 18px; border: 1px dashed var(--border-strong); border-radius: var(--radius-l); color: var(--muted); text-align: center; }
+.reportCards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.reportCards > div { display: grid; gap: 4px; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-l); background: var(--surface); }
+.reportCards strong { font-family: var(--font-display); font-size: 22px; line-height: 1.1; }
+.reportCards span:not(:global(.eyebrow)) { color: var(--muted); font-size: 13px; }
+.reportCards > div[data-wet="true"] { border-color: rgba(255, 154, 120, 0.45); background: linear-gradient(180deg, var(--warn-bg), var(--surface) 75%); }
+.reportCards > div[data-last="true"] { border-color: rgba(191, 233, 255, 0.35); background: linear-gradient(180deg, rgba(191, 233, 255, 0.08), var(--surface) 75%); }
+
+/* Calendar */
+.calendar { padding: 14px; border: 1px solid var(--border-strong); border-radius: var(--radius-l); background: radial-gradient(100% 70% at 50% 0%, #0b1220 0%, var(--surface) 75%); box-shadow: var(--shadow); }
+.calHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.calHead strong { font-family: var(--font-display); font-size: 20px; letter-spacing: .01em; }
+.calHead button { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); font-size: 18px; cursor: pointer; }
+.calHead button:hover { border-color: var(--accent); }
+.calGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+.calDow { text-align: center; font: 600 10px var(--font-mono); color: var(--text-3); padding: 2px 0 6px; }
+.calDay { --risk: 0; position: relative; aspect-ratio: 1; min-height: 36px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; color: var(--text); font: 13px var(--font-mono);
+  background: linear-gradient(0deg, rgba(255, 154, 120, calc(var(--risk) * 0.55)), rgba(255, 154, 120, calc(var(--risk) * 0.55))), var(--surface-2); transition: transform 80ms, border-color 80ms; }
+.calDay:hover { border-color: var(--accent); transform: translateY(-1px); }
+.calDay:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.calDay[data-today] span { text-decoration: underline; text-underline-offset: 3px; }
+.calDay[data-state="start"] { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.calDay[data-state="normal"] { border-color: var(--band0); box-shadow: inset 0 0 0 1px var(--band0); }
+.calDay[data-state="typical"] { border-color: var(--band1); border-style: dashed; }
+.calDay[data-state="worst"] { border-color: var(--warn); border-style: dotted; }
+.calDot { position: absolute; right: 5px; top: 5px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); display: inline-block; }
+.calLegend { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 12px; font-size: 11px; color: var(--muted); }
+.calLegend span { display: inline-flex; align-items: center; gap: 5px; }
+.calLegend i { display: inline-block; width: 12px; height: 12px; border-radius: 4px; }
+.calLegend .calDot { position: static; width: 6px; height: 6px; }
+.calSwatchLow { background: var(--surface-2); border: 1px solid var(--border); }
+.calSwatchHigh { background: rgba(255, 154, 120, 0.55); }
+.calSwatchWin { border: 1.5px solid var(--band0); }
+.calSwatchTyp { border: 1.5px dashed var(--band1); }
+.calSwatchWorst { border: 1.5px dotted var(--warn); }
+
+/* Forecast + last year */
+.forecast { margin: 18px 0; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-l); background: var(--surface); }
+.forecast ul { list-style: none; margin: 10px 0 8px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.forecast li { display: grid; gap: 2px; padding: 10px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 12px; }
+.forecast li span { color: var(--muted); }
+.forecast li em { font-style: normal; font-family: var(--font-mono); }
+.forecast small { color: var(--text-3); font-size: 11px; }
+.lastYearHead { margin: 22px 0 0; }
+.lastYearHead h3 { margin: 6px 0 0; font-size: var(--fs-l); }
+.threshold { stroke: var(--warn); stroke-width: 1; stroke-dasharray: 4 3; }
+.weekend { fill: var(--text-4); }
+.legend i.legendStation { background: var(--accent); opacity: .55; width: 7px; height: 7px; border: 0; box-shadow: 0 0 0 5px rgba(191, 233, 255, 0.08); }
+.coverageToggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.coverageToggle input { width: 14px; height: 14px; accent-color: var(--accent); }
+.stationPopup :global(.maplibregl-popup-content) { background: var(--glass); color: var(--text); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 6px 10px; font-size: 12px; backdrop-filter: blur(8px); box-shadow: var(--shadow); }
+.stationPopup :global(.maplibregl-popup-tip) { display: none; }
 .printNotes, .printOnly { display: none; }
 @media (max-width: 850px) {
   .sectionHead { align-items: start; flex-direction: column; }
   .scenarios { grid-template-columns: 1fr; }
   .factorGrid, .taskGrid { grid-template-columns: 1fr; }
   .delayInputs { grid-template-columns: 1fr 1fr; }
-  .headline { grid-template-columns: 1fr; }
+  .headline, .scenarioCards { grid-template-columns: 1fr; }
+  .reportGrid { grid-template-columns: 1fr; }
+  .conditions dl div { grid-template-columns: 1fr; gap: 2px; }
+  .suggest { flex-direction: column; align-items: stretch; }
   .result strong { font-size: 36px; }
 }
 @media (max-width: 540px) {
@@ -154,6 +248,9 @@
   .siteMap { height: 320px; }
   .siteMapWrap::after { height: 320px; }
   .pointPicker label { flex-basis: 100%; }
+  .reportInputs, .reportCards { grid-template-columns: 1fr; }
+  .calDay { min-height: 0; font-size: 12px; border-radius: 8px; }
+  .mapAction { flex-direction: column; align-items: stretch; }
 }
 @media print {
   .siteMapWrap { display: none; }

@@ -1,7 +1,8 @@
+import gzip
 import json
 
 from common.io import REPO_ROOT
-from weather_history.core import WINDOW, aligned, candidates, completeness, days, nearest, project_centers
+from weather_history.core import WINDOW, aligned, candidates, completeness, days, nearest, project_centers, release_centers, site_points, tiles
 
 
 def loc(pid, key, lat, lon, confidence="high", utility="DESC"):
@@ -49,6 +50,7 @@ def test_series_align_to_every_window_day_and_missing_stays_missing():
     assert s["prcp_in"][:3] == [0.41, None, None]
     assert s["tmax_f"][:3] == [66, None, 70]
     assert s["wsf2_mph"][0] == 13.0
+    assert s["tmin_f"][0] is None and s["snow_in"][0] is None
     assert completeness([1.0, None, 2.0, None]) == 0.5
 
 
@@ -63,12 +65,28 @@ def test_nearest_skips_rejected_stations_and_respects_the_distance_cap():
 
 def test_committed_index_matches_station_files():
     index = json.loads((REPO_ROOT / "data" / "weather_history" / "index.json").read_text())
-    files = {p.stem for p in (REPO_ROOT / "data" / "weather_history" / "stations").glob("*.json")}
+    files = {p.name.removesuffix(".json.gz") for p in (REPO_ROOT / "data" / "weather_history" / "stations").glob("*.json.gz")}
     assert files == set(index["stations"])
     for p in index["projects"]:
         assert p["rain_station"] in files and p["rain_distance_mi"] <= index["selection"]["rain_max_mi"]
         assert p["wind_station"] is None or p["wind_distance_mi"] <= index["selection"]["wind_max_mi"]
     first = index["projects"][0]["rain_station"]
-    sample = json.loads((REPO_ROOT / "data" / "weather_history" / "stations" / f"{first}.json").read_text())
-    assert len(sample["prcp_in"]) == len(sample["tmax_f"]) == len(sample["wsf2_mph"]) == 3653
+    sample = json.loads(gzip.decompress((REPO_ROOT / "data" / "weather_history" / "stations" / f"{first}.json.gz").read_bytes()))
+    lengths = {len(sample[k]) for k in ("prcp_in", "tmax_f", "tmin_f", "snow_in", "wsf2_mph")}
+    assert lengths == {3653}
     assert sample["source"]["url"].startswith("https://www.ncei.noaa.gov/")
+
+
+def test_release_centers_skip_legacy_rows_and_unlocated_projects():
+    releases = {"texas": [{"_id": "ercot:1", "center": {"lat": 30.0, "lon": -97.0}, "owner": "LCRA", "name": "A"},
+                          {"_id": "ercot:2", "center": None}, {"_id": "legacy:DESC:1@x", "center": {"lat": 32.0, "lon": -81.0}}]}
+    out = release_centers(releases)
+    assert [c["project_key"] for c in out] == ["ercot:1"] and out[0]["region"] == "texas"
+    assert tiles([{"lat": 30.5, "lon": -97.5}]) == [(33.0, -99.0, 29.0, -95.0)]
+
+
+def test_site_points_collect_every_coordinate_once_and_skip_bad_values():
+    docs = {"osm": [{"features": [{"lat": 32.001, "lon": -81.004}, {"lat": 32.003, "lon": -81.002}, {"lat": True, "lon": 1}]}],
+            "texas": [[{"center": {"lat": 30.0, "lon": -97.0}}, {"lat": 95, "lon": 0}]]}
+    got = site_points(docs)
+    assert [(p["lat"], p["lon"], p["source"]) for p in got] == [(30.0, -97.0, "texas"), (32.0, -81.0, "osm")]
