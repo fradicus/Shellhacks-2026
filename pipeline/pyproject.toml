@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["pytest", "ruff"]
+dev = ["pytest", "pytest-xdist", "ruff"]
 
 [project.optional-dependencies]
 # Only the bounded AlphaEarth COG sampling CLI needs GDAL/raster support.
