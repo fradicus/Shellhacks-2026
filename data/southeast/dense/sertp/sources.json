@@ -1,0 +1,143 @@
+[
+  {
+    "_id": "southeast:sertp:2023-final",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.southeasternrtp.com/docs/general/2023/2023_SERTP_Regional_Transmission_Plan_and_Input_Assumptions.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.southeasternrtp.com/archive.cshtml",
+    "notes": [
+      "CEII content check (pdftotext -layout): 5 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
+      "F39 dense Southeast (C40). History only: rows whose name a current-edition row repeats add planned_milestone events; other rows are excluded.",
+      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+    ],
+    "planning_region": "sertp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southeastern Regional Transmission Planning (SERTP)",
+    "retrieved_at": "2026-09-27T07:57:29Z",
+    "role": "project_plan",
+    "sha256": "32350b2b7dc953b71174d7491487dd47036d0824a414aa7f5da699ca20adfd02",
+    "states": [
+      "01",
+      "05",
+      "12",
+      "13",
+      "21",
+      "28",
+      "37",
+      "45",
+      "47",
+      "51"
+    ],
+    "title": "2023 SERTP Regional Transmission Plan and Input Assumptions",
+    "vintage": "2023"
+  },
+  {
+    "_id": "southeast:sertp:2024-preliminary",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.southeasternrtp.com/docs/general/2024/2024_SERTP_Preliminary_Expansion_Plan_Report_%28Non-CEII%29.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.southeasternrtp.com/archive.cshtml",
+    "notes": [
+      "CEII content check (pdftotext -layout): 0 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
+      "F39 dense Southeast (C40). History only: rows whose name a current-edition row repeats add planned_milestone events; other rows are excluded.",
+      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+    ],
+    "planning_region": "sertp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southeastern Regional Transmission Planning (SERTP)",
+    "retrieved_at": "2026-09-27T07:57:31Z",
+    "role": "project_plan",
+    "sha256": "4ea25c3db5dba8859f66a94cf81ed852e16bd01a74b45a0ce81c8ff94919276a",
+    "states": [
+      "01",
+      "05",
+      "12",
+      "13",
+      "21",
+      "28",
+      "37",
+      "45",
+      "47",
+      "51"
+    ],
+    "title": "2024 SERTP Preliminary Expansion Plan Report (Non-CEII)",
+    "vintage": "2024"
+  },
+  {
+    "_id": "southeast:sertp:2024-final",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.southeasternrtp.com/docs/general/2024/2024_Regional_Transmission_Plan_and_Input_Assumptions.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.southeasternrtp.com/archive.cshtml",
+    "notes": [
+      "CEII content check (pdftotext -layout): 5 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
+      "F39 dense Southeast (C40). History only: rows whose name a current-edition row repeats add planned_milestone events; other rows are excluded.",
+      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+    ],
+    "planning_region": "sertp",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southeastern Regional Transmission Planning (SERTP)",
+    "retrieved_at": "2026-09-27T07:57:32Z",
+    "role": "project_plan",
+    "sha256": "fa960646893d376d93fe1c75d9f4ff242618f4f5dd0da5c539581209a6f56236",
+    "states": [
+      "01",
+      "05",
+      "12",
+      "13",
+      "21",
+      "28",
+      "37",
+      "45",
+      "47",
+      "51"
+    ],
+    "title": "2024 SERTP Regional Transmission Plan and Input Assumptions",
+    "vintage": "2024"
+  },
+  {
+    "_id": "southeast:sertp:2025-preliminary",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.southeasternrtp.com/docs/general/2025/2025%20SERTP%20Preliminary%20Expansion%20Plan%20Report%20%28Non-CEII%29.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.southeasternrtp.com/archive.cshtml",
+    "notes": [
+      "CEII content check (pdftotext -layout): 0 line(s) name CEII, 0 CEII page markings; verdict pass (disclaimer sentences only). D15's 2026 preliminary-report exclusion stands; the 2025 final plan (\"TRANSMISSION PROJECTS (CEII)\" page headings) is not used. See specs/decisions/F39-sertp-editions.md.",
+      "Other editions checked, not ingested: 2025 Regional Transmission Plan and Input Assumptions.pdf (sha256 9183e3ffcb4fc06e46db2afc50510948b6c0f950312440b6272aaa862bc9da6b, CEII lines 319, markings 194): fail: \"TRANSMISSION PROJECTS (CEII)\" page headings; 2022_Regional_Transmission_Plan_and_Input_Assumptions_Final_Non-CEII.pdf (sha256 bf4fbdfbb9d8f98143aab1882c8c6c7cf24873c9db62940bcf06c64564bcd80f, CEII lines 5, markings 0): pass (disclaimer only); not used: different page layout; 2021-Regional-Transmission-Plan-and-Input-Assumptions-Non-CEII.pdf (sha256 679d4f16333ebfbc3d4563edb4b3a4730c41c5aeec5d333687c19c6a7611af85, CEII lines 5, markings 0): pass (disclaimer only); not used: older than the linked history; 2026 SERTP preliminary expansion report (sha256 n/a, CEII lines n/a, markings n/a): excluded by D15; not downloaded",
+      "F39 dense Southeast (C40). Current edition: one project per block.",
+      "Rows give no state or owner column: states come from the matched OSM facility within the Balancing Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."
+    ],
+    "planning_region": "sertp",
+    "project_count": 424,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Southeastern Regional Transmission Planning (SERTP)",
+    "retrieved_at": "2026-09-27T07:57:34Z",
+    "role": "project_plan",
+    "sha256": "462f9f3dee796a9c010d31581eca3402f8b93be625af68cc73b2bdba81bed0ae",
+    "states": [
+      "01",
+      "05",
+      "12",
+      "13",
+      "21",
+      "28",
+      "37",
+      "45",
+      "47",
+      "51"
+    ],
+    "title": "2025 SERTP Preliminary Expansion Plan Report (Non-CEII)",
+    "vintage": "2025"
+  }
+]
