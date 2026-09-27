@@ -48,7 +48,12 @@ export function HeroStory({ children }: { children: ReactNode }) {
     return()=>{cancelAnimationFrame(frame);removeEventListener('click',takeControl);removeEventListener('wheel',takeControl);removeEventListener('pointerdown',takeControl);removeEventListener('keydown',takeControl);removeEventListener('scroll',schedule);removeEventListener('resize',schedule);reduced.removeEventListener('change',schedule);};
   }, []);
   return (
-    <div ref={root} className={s.story} data-gridbridge-story="">
+    <div
+      ref={root}
+      className={s.story}
+      data-common-ground-story=""
+      data-gridbridge-story=""
+    >
       {children}
     </div>
   );
