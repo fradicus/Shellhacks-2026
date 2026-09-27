@@ -1,5 +1,8 @@
 "use client";
 
+import { bearing } from "./sceneCamera";
+import { SceneControls } from "./SceneControls";
+
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Map as MlMap } from "maplibre-gl";
 import Link from "next/link";
@@ -75,14 +78,6 @@ const monthOf = (epoch: number, years: number) =>
   });
 const fmtDate = (iso: string) =>
   new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
-
-/** Geographic bearing A -> B in degrees, for turning the camera side-on to a pair. */
-function bearing(a: { lat: number; lon: number }, b: { lat: number; lon: number }): number {
-  const r = Math.PI / 180;
-  const y = Math.sin((b.lon - a.lon) * r) * Math.cos(b.lat * r);
-  const x = Math.cos(a.lat * r) * Math.sin(b.lat * r) - Math.sin(a.lat * r) * Math.cos(b.lat * r) * Math.cos((b.lon - a.lon) * r);
-  return (Math.atan2(y, x) * 180) / Math.PI;
-}
 
 /** Camera padding that keeps the data clear of the panels: left column on desktop, bottom sheet on phones. */
 function overviewPadding(el: HTMLElement | null) {
@@ -1104,33 +1099,8 @@ export function TimeView({
             </span>
           </li>
         </ul>
-        <div className={s.controls}>
-          <div className={s.seg} role="group" aria-label="Dimensions">
-            <button type="button" aria-pressed={flat} onClick={() => toggleFlat(true)}>
-              2D
-            </button>
-            <button type="button" aria-pressed={!flat} onClick={() => toggleFlat(false)}>
-              3D
-            </button>
-          </div>
-          <label className={s.slider}>
-            <span>
-              1 year = <b>{yearPx}px</b>
-            </span>
-            <input
-              type="range"
-              min={16}
-              max={96}
-              step={2}
-              value={yearPx}
-              disabled={flat}
-              onChange={(e) => setYearPx(Number(e.target.value))}
-            />
-          </label>
-          <button type="button" className={s.reset} onClick={overview}>
-            Overview
-          </button>
-        </div>
+        <SceneControls styles={s} flat={flat} onFlat={toggleFlat} yearPx={yearPx} onYearPx={setYearPx}
+          range={[16, 96, 2]} onOverview={overview} />
         <label className={s.scrub}>
           <span>
             Sheet at <b>{asOf === null ? `Today · ${fmtDate(analysisDate)}` : monthOf(epoch, asOf)}</b>
