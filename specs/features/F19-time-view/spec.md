@@ -44,6 +44,10 @@ Motion and meaning, not more objects. Build order; each step ships only if the o
 12. **Loading.** The two-ring mark draws itself while the basemap loads.
 13. **List preview (issue #123).** Hovering or focusing a pair in the list lights its two pillars, draws its 25-mile
     circles and dims the rest before any click; a selected pair takes precedence.
+14. **Provenance and every project (F21 site structure).** Under the stats: the analysis date and source ids. The
+    "Projects" entry opens an All projects drawer: every current project, drawn ones selectable on the map and
+    unlocated ones listed with a hatched "no located endpoint", filterable by name or ID. Without WebGL the view says
+    so in one sentence, hides the 3D labels, and the pair list, detail card and drawer keep working.
 
 ## Requirements
 - Only stored values are shown: no recomputed distance or gap, no imputed dates. Review state shown as stored.
