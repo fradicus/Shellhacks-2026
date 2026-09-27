@@ -1,0 +1,667 @@
+[
+  {
+    "_id": "DESC:06367 D - G__GPC:20066",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20066",
+    "computed_at": "2026-09-27T03:43:42Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.05402935,
+      "lon": -81.09642410000001
+    },
+    "distance_m": 41112.2,
+    "drive_mi": 25.54593672949972,
+    "duration_s": 2682,
+    "end": {
+      "lat": 32.05403,
+      "lon": -81.096429
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^CtBO`BONA~BMvBOlDU|AM\\EjBO`BK|@Gr@ERAj@EZC@?FAp@EJAj@GLA@?p@E~@Ir@GJA`DQ~AMzFc@lCShGg@`N_ArE[~Fe@xGc@|Fe@rCSzCUtAKxCSz@GbCOhOgAtJs@fBMxBQlDW~AKr@GhF_@dDWxFc@jFa@~BQbBMdAItDYn@En@GxHi@nCUdBMh@Ef^mCbCSjPmAnE]vGe@~Ea@hBM`Gc@LAxKw@rFe@bEYf@Ej@E\\C`BM`BMlBOpAKj@EdAI|CUtGe@J?\\CZC|@Cz@ExDC`BBT@tADZ@P@zBPN@`@Dz@JlAN\\Dz@Nh@JnCb@hARjItAtA^JBnBX~I|BjGxAlG|AbGnA`HjA|@N~AXtB\\hG~@`Ht@XBtBVhN~ArJnAf@H|F~@xCd@nI`B`CVbB@NCfAIdA[RGrBeAVM~BuAhBcA~@m@ZSPMl@a@n@]vCuBdDyCdBcBTUr@q@tEkE`GoFf@g@DC`AaAvBqBZ[fBaBhAeAzBwBJIjGaGVWdDyCrJeJ~BmB`Au@dCgBpDqCn@e@`BuApE_Et@u@xAsA|EmFtDaEbGyG~A{AzAqA|@g@vB}AbE{BnB{@bCiAbCcAZOvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMJBx@TlBf@bAZPDf@Lb@Jl@Pl@N|@VD?X?f@NRFp@R^Jf@Nf@L~Ad@NDj@P@@B?j@NTFB@tA^F@fAZfAZx@TfAZFBH@RFj@Nb@L\\Hj@NLDPDZHz@TfAXLDJDTFrA\\F@l@PPDB?RHNNd@LD@d@Lt@RPFbAXjAZlA\\jAZNFr@RzA^tA^XFXHD@RDND`AXl@PDBRFNDdCl@|Bl@xCr@|Ab@hBf@lBb@jA\\pA\\lAZ~@TD@JBXFBQBOf@{C?EBODQDULu@X_Bz@aFZeBXaB@I@KRsARgABGBSDSRmAb@oC?EBMBKr@sDF_@XeBF[T{A@EBMXgBDa@DYBURFd@LZHvBj@b@LvA\\r@R",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      0.5
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20067",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20067",
+    "computed_at": "2026-09-27T03:43:43Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.044757399999995,
+      "lon": -81.0672826
+    },
+    "distance_m": 43262.7,
+    "drive_mi": 26.882195478406107,
+    "duration_s": 2903,
+    "end": {
+      "lat": 32.044759,
+      "lon": -81.067282
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^CtBO`BONA~BMvBOlDU|AM\\EjBO`BK|@Gr@ERAj@EZC@?FAp@EJAj@GLA@?p@E~@Ir@GJA`DQ~AMzFc@lCShGg@`N_ArE[~Fe@xGc@|Fe@rCSzCUtAKxCSz@GbCOhOgAtJs@fBMxBQlDW~AKr@GhF_@dDWxFc@jFa@~BQbBMdAItDYn@En@GxHi@nCUdBMh@Ef^mCbCSjPmAnE]vGe@~Ea@hBM`Gc@LAxKw@rFe@bEYf@Ej@E\\C`BM`BMlBOpAKj@EdAI|CUtGe@J?\\CZC|@Cz@ExDC`BBT@tADZ@P@zBPN@`@Dz@JlAN\\Dz@Nh@JnCb@hARjItAtA^JBnBX~I|BjGxAlG|AbGnA`HjA|@N~AXtB\\hG~@`Ht@XBtBVhN~ArJnAf@H|F~@xCd@nI`B`CVbB@NCfAIdA[RGrBeAVM~BuAhBcA~@m@ZSPMl@a@n@]vCuBdDyCdBcBTUr@q@tEkE`GoFf@g@DC`AaAvBqBZ[fBaBhAeAzBwBJIjGaGVWdDyCrJeJ~BmB`Au@dCgBpDqCn@e@`BuApE_Et@u@xAsA|EmFtDaEbGyG~A{AzAqA|@g@vB}AbE{BnB{@bCiAbCcAZOvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMFYBM?AFMPSPYP[Fe@BI?CDSBQf@{CDS@GFe@j@}CBSDSl@sD@EDSPFz@Vv@RLBf@NPDt@RHB~@Vr@RHBNDZHx@{Et@oEBMb@qCLw@D]F[p@{D?ABKh@}CF]VwARkA@EBQ@Gl@kD@GNy@ZmB@CD[FW\\uB@AVyAb@mCLo@?CDQBKFOFSHOBCNOTUJGNIf@Y~@i@RKNIf@YZQ`Ak@^STMDCn@]JEHEVMTK|@e@nAs@RKp@a@j@[d@[^UXSj@[PKv@c@j@[pAu@`Ai@p@a@hAo@f@WZQPKp@_@TONIZQt@c@\\SjB}@TONIPMJKHKBC\\c@`BwCJSRa@BERk@JWRaABUJs@@CLgAHo@TgBNgANiAVyBFa@JcAJy@D[b@gEBUFe@Dg@Hg@La@R]`@a@^ONERI^INC@?ZMLC^GjAU@Al@KXGnAUdCg@b@KXGHA\\Ir@OHAbBi@^Mb@O^QjB{@^Ob@Sd@SdAa@^KZMjDwAbBm@bBw@nD{AjCeAnAi@z@]\\OvAg@HELEPGR?\\EF@N?XDTFXJH@^JVFzA`@VHf@LnA`@fAZNDz@TdAZ^Jb@LfAXfCp@Ml@WlA",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      0.2
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20277",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20277",
+    "computed_at": "2026-09-27T03:43:44Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.3521162,
+      "lon": -81.1751124
+    },
+    "distance_m": 53381.3,
+    "drive_mi": 33.16960202417879,
+    "duration_s": 3598,
+    "end": {
+      "lat": 32.350888,
+      "lon": -81.173236
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^ClAVn@TZP^Xd@j@r@|@~@bAfAn@p@Nt@FdAEpAC~@Eb@@^Df@Pr@b@h@h@hAnA`CpChCzC`Az@rLjO~Yj_@BDxRtV`FpG`AnAbAvAdA~An@bAr@jAv@|Ap@nAn@xAj@tA|@`C|@rCj@lBd@pBf@zB\\jB^zBLt@NrARjBNxAHvANpCFpADlBB~B?jCCdC]lKOhGShHI`DC|A?`C@dBBbCDfBFpAHrAP`CH`ARpBVpB\\`C\\nBVnAz@vDn@~Br@zBXz@f@rAjAtCt@bBvAnC~@`B`A|A|@tAtHlL|EnHvElH`SzZrZfe@`LbQ|DjGnHdLtB~CxFtIzK|PrAtBtHlL|DlGtEvGrEjFnJxKfGjGfBzAnD|CzBrBtTfQnh@pa@`BpArVxRzVzR~D~CvHbGPLbAz@dEbDnJlHd@t@xEnEhAjAp@r@f@n@h@r@nAjBjA|Ab@h@HZDL@H?F@HALCHCHEHKHUT{Cz@]Jc@Jy@TsA`@i@NuA^IBg@NaDz@o@Pu@RcBd@UH_AVmA\\SDe@LQFQFWFaAVo@VqAd@uAj@aAZgAZ_Cn@iD|@kD`AyF~AcFvAgA\\I@k@PmBh@gAXgARmAJO@m@B{@Do@?O?YAu@EOAkAMG?qAWu@SWGaCy@]M_A[yAg@wDuAg@Qg@SwAc@cA]s@WqEsAMGmAa@iHuBo@UmA_@uCaAmC{@_A[q@WkEoAQGy@Yg@UmDeAg@Q{@YuDgA]KWIaAYsA[gAQiFk@wO}@iDQ_G]y@CeAIcAAg@@k@@mCNk@Fa@D_@FIBk@N}@PgCv@q@VsAj@sAt@yAdAEDSPa@\\QP[Vc@b@YZy@`AEDi@r@Yb@uA|BeAwAS[qAgB[w@i@_BOq@e@wBi@_Cs@cBsAmBoAkAyAw@aA]{@O]@MEq@Me@YGMKKMCM?MBCB_@Hq@NY@IFqACyBEwBEyCAaBAi@AyMuBcDi@uJiBwE{@yE}@wAYiCe@_Dk@]IyBa@iEw@uBa@kB]{Ck@gAUgDi@wFcAcAMwGy@_DHcDf@mIjBs@Pg@?iHZqM^aELqKZa@@s@@aDLy@BK@eABqETe@@]@Q@kBFgGRo@BcADoEN_@BI@yANeARE@_B^}Cx@iCp@C@wA\\gCp@sA^KB{Bj@{AZsATk@Fo@FO@[@m@D}AB}BEwJSuFOoAEmACoEKC?sISoFMqBG{CM[Ac@A_@?c@?m@Bi@Fi@Hc@Lc@NYJYNE@]Te@ZYRYVWVUXU\\S\\Ub@Sb@Sh@Wv@Y~@ITg@~A_@`Am@hAaAlAMDIAI@IBEFEHCJ?HQT_Av@qAp@aA^eD~AyJvEyBdAoB~@MFoCpAwAr@UJ{@d@eItDgAd@{Ad@eCh@aDb@mANcBT{ARmDd@o@LiALcH`AgCXA@E?A?oBVE?{C^yA\\k@VkAv@sEfEKJeCrBmGhFyD`DwAlA[ZOLSPy@v@uFvEmB`Bm@h@ED_BtA_CnBA@]Zi@b@{ChCkDvCA@k@TyAb@yBPmD?uFJqLFwEBC?oGB{@FcKl@a@DA@eFbAcFdAa@Jg@Xs@^s@f@g@l@GHSToElLK\\A@eDlJ]x@A@]v@aAhBs@|@s@p@m@n@k@j@WXGDIDI@G?G@G?C?CACAGEKMOUWa@S[S_@a@k@wAcDo@_BCEO]ACg@gAYs@Wq@mA{BCE}@cBEGAC}BgEACMU_@q@EKsBuD_AgBAAEKGISa@[m@_AgBa@w@q@oAgAuBACKSoA_C{FaLcAiB{@}A@C?Gq@qAEI_@u@]s@AAWi@??i@gACEuAoCQ_@ACgBmDo@qAaC{EUe@{AeDEGUe@eEuIwAeCMUEIaDsG}F{LaDkGAA{CaGCEqB}DaEmIUe@gSyb@`CgDj@s@n@q@j@g@l@c@n@a@x@c@RIf@Sh@QDC@?xA]nASxIoAx[gGlAQ~CWXCVCB?pAKl@GlAGtAAfEBnIC~IIlDEpCCjAA~FE@?xEE~BCrA?jA?n@@SaNCoBGmCO}@Ss@Ok@k@cAgFsE",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      223.0
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20407",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20407",
+    "computed_at": "2026-09-27T03:43:46Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.0226869,
+      "lon": -81.0861807
+    },
+    "distance_m": 46171.0,
+    "drive_mi": 28.689329316789944,
+    "duration_s": 2984,
+    "end": {
+      "lat": 32.022232,
+      "lon": -81.086348
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^CtBO`BONA~BMvBOlDU|AM\\EjBO`BK|@Gr@ERAj@EZC@?FAp@EJAj@GLA@?p@E~@Ir@GJA`DQ~AMzFc@lCShGg@`N_ArE[~Fe@xGc@|Fe@rCSzCUtAKxCSz@GbCOhOgAtJs@fBMxBQlDW~AKr@GhF_@dDWxFc@jFa@~BQbBMdAItDYn@En@GxHi@nCUdBMh@Ef^mCbCSjPmAnE]vGe@~Ea@hBM`Gc@LAxKw@rFe@bEYf@Ej@E\\C`BM`BMlBOpAKj@EdAI|CUtGe@J?\\CZC|@Cz@ExDC`BBT@tADZ@P@zBPN@`@Dz@JlAN\\Dz@Nh@JnCb@hARjItAtA^JBnBX~I|BjGxAlG|AbGnA`HjA|@N~AXtB\\hG~@`Ht@XBtBVhN~ArJnAf@H|F~@xCd@nI`B`CVbB@NCfAIdA[RGrBeAVM~BuAhBcA~@m@ZSPMl@a@n@]vCuBdDyCdBcBTUr@q@tEkE`GoFf@g@DC`AaAvBqBZ[fBaBhAeAzBwBJIjGaGVWdDyCrJeJ~BmB`Au@dCgBpDqCn@e@`BuApE_Et@u@xAsA|EmFtDaEbGyG~A{AzAqA|@g@vB}AbE{BnB{@bCiAbCcAZOvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMJBx@TlBf@bAZPDf@Lb@Jl@Pl@N|@VD?X?f@NRFp@R^Jf@Nf@L~Ad@NDj@P@@B?j@NTFB@tA^F@fAZfAZx@TfAZFBH@RFj@Nb@L\\Hj@NLDPDZHz@TfAXLDJDTFrA\\F@l@PPDB?RHNNd@LD@d@Lt@RPFbAXjAZlA\\jAZNFr@RzA^tA^XFXHD@RDND`AXl@PDBRFNDdCl@|Bl@xCr@|Ab@hBf@lBb@jA\\pA\\lAZ~@TD@JBXFlA\\pA\\~Ab@b@L^J`Dv@HBhAXnA\\tBh@hAZh@NJBF@RF@S@I?E@SBGBGBIDGFGDGLOFGDIDIBGDQDWRFb@L~@V`AVdAVt@R^JbAXJBhBf@RHF@n@Pl@PVFPFD@B?@@VHLDv@TLDb@NzCz@t@TRFbAVJB`AXfA\\v@TxA`@PFb@LxAb@dAZ~Ab@nBj@hAXvAb@vA`@xA`@zAb@PDB@h@N`@Lp@RvBl@xBl@t@Tl@Nd@LxA`@TLt@RnA\\zCt@tCx@lAZjCt@vBl@zBl@~Ad@ZHpDbA\\JxA`@bBd@~Br@`@JHDPFHDz@`@DBLHVNJc@DOT_ANg@H_@Ny@BKF_@Jm@Ly@RmADWTmAPaAXaB?CH_@BULm@@EDWDWTwAHc@^{BJq@X}AVwA?CBMH_@BWJk@PkACWb@iCVcBDSDQTuAj@kDp@wDtAkI^}Bn@sDF_@F]|@iFTiAVuALm@DUDQXqAVgALk@ZwAf@yBXmABOJa@Lm@Lm@No@Ji@RgA`@qB`@oBJc@p@aD`@mBLq@ReANy@@EL}@NkA@EBUT}A@GFa@b@cD@I`@{CXuBH_@",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      52.9
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20783",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20783",
+    "computed_at": "2026-09-27T03:43:47Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.0835097,
+      "lon": -81.1887223
+    },
+    "distance_m": 43745.3,
+    "drive_mi": 27.182069215779848,
+    "duration_s": 2697,
+    "end": {
+      "lat": 32.083001,
+      "lon": -81.189249
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^ClAVn@TZP^Xd@j@r@|@~@bAfAn@p@Nt@FdAEpAC~@Eb@@^Df@Pr@b@h@h@hAnA`CpChCzC`Az@rLjO~Yj_@BDxRtV`FpG`AnAbAvAdA~An@bAr@jAv@|Ap@nAn@xAj@tA|@`C|@rCj@lBd@pBf@zB\\jB^zBLt@NrARjBNxAHvANpCFpADlBB~B?jCCdC]lKOhGShHI`DC|A?`C@dBBbCDfBFpAHrAP`CH`ARpBVpB\\`C\\nBVnAz@vDn@~Br@zBXz@f@rAjAtCt@bBvAnC~@`B`A|A|@tAtHlL|EnHvElH`SzZrZfe@`LbQ|DjGnHdLtB~CxFtIzK|PrAtBtHlL|DlGtEvGrEjFnJxKfGjGfBzAnD|CzBrBtTfQnh@pa@`BpArVxRzVzR~D~CvHbGPLbAz@dEbDnJlHdCpBpUxQhDjCzEzDjWhS~d@r^vU|QhBzA|@r@nA|@jBzA`@XnCzBn@f@v@j@l@f@z@p@zV|RtDjDdDtD`HvIdC~D`CnEjCxF|HnQjBdEvEpKfFpLvJtT|@pBlA`CtBvDdA|AfF~GrE|E`DvBpCnBhDpBxFjCnBj@~EzAfCl@hCb@nCVxEZdDHlEAdLa@zQy@pPw@~@CfQy@`AEdRy@bOq@dNo@|FWb\\{AvE@hCVrBX|ARnAJpBDv@BlAAR?TARCJg@zAaHZwADQLs@?AVcAZmADQr@}B@GLYFS\\_ABGfAiCj@eA`@u@DGFKb@w@Xc@dCcD~AsBtE_G~@iApBsBf@}@TU~@cAv@y@HKPSzA_BHKdAmAv@}@b@g@rAuAl@o@|A{A|@aAx@y@|@_ArCwCHGz@}@|@_ADGFE\\_@NSn@m@t@y@LMNORUj@g@NQPQfAkAVWd@g@X[X[p@u@~@yA\\k@DGx@mBr@wBj@}Cf@mDr@gF`A}Hf@aD^wC|@_Hz@uGHo@RwAZ}BTcB^qCrA}JPyADY@GVoBZ{Bj@eER{A\\aCHu@V{Bb@yDxAuKT_BT@lADF?Z@nDPhADlDPrCLdFTx@BL@rBHB@f@@h@B\\AL?lACF@lAOd@KLCbAYj@Qp@W|Aw@lC_BHE\\UREfA]TE`@IASAMAc@E}AE_EAwADo@Di@?}@AO?G?WAaAAgAAg@A]Eg@A]Ik@MiAI}@Ii@M{A_@g@CA",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      75.2
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20784",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20784",
+    "computed_at": "2026-09-27T03:43:49Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.1552821,
+      "lon": -81.368377
+    },
+    "distance_m": 47145.3,
+    "drive_mi": 29.294731269386784,
+    "duration_s": 2966,
+    "end": {
+      "lat": 32.15466,
+      "lon": -81.369285
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^ClAVn@TZP^Xd@j@r@|@~@bAfAn@p@Nt@FdAEpAC~@Eb@@^Df@Pr@b@h@h@hAnA`CpChCzC`Az@rLjO~Yj_@BDxRtV`FpG`AnAbAvAdA~An@bAr@jAv@|Ap@nAn@xAj@tA|@`C|@rCj@lBd@pBf@zB\\jB^zBLt@NrARjBNxAHvANpCFpADlBB~B?jCCdC]lKOhGShHI`DC|A?`C@dBBbCDfBFpAHrAP`CH`ARpBVpB\\`C\\nBVnAz@vDn@~Br@zBXz@f@rAjAtCt@bBvAnC~@`B`A|A|@tAtHlL|EnHvElH`SzZrZfe@`LbQ|DjGnHdLtB~CxFtIzK|PrAtBtHlL|DlGtEvGrEjFnJxKfGjGfBzAnD|CzBrBtTfQnh@pa@`BpArVxRzVzR~D~CvHbGPLbAz@dEbDnJlHdCpBpUxQhDjCzEzDjWhS~d@r^vU|QhBzA|@r@nA|@jBzA`@XnCzBn@f@v@j@l@f@z@p@|@pAnCdCrCrCp@x@j@bA`@x@^|@Rl@Pp@P|@Nz@Jt@XpBNv@Nf@Xv@Zp@Td@V^TVTVVRXTXRZPDDDFBHBF@H@L?JALSz@Kf@If@Ih@Gh@Cb@Cb@Cb@Cj@Al@?j@@d@?P@TBd@Dd@BTFl@Hl@Jj@Lj@Lj@L\\J^l@~A|@|B~@`Ct@dB^hAr@lBRf@v@rB\\|@Z~@X~@X~@ZhAXhAXjAXtAXzAXzAN`AL`AJn@BPNnAh@dEFh@F`@D\\DZPtAFd@BNJt@@F`AbITvCTdDDrADrABtABrAHzI@t@@|@?b@@^@b@@vABnA@pCDzEF|EDtD@b@JbOL`LPvO?X@r@BbB?P@dA@jAR~PHzINjEJzAJzANxAJdAJbAL`ARpARlAVnAVrAZrAZpATz@bAlDHXd@pAlBdFhC|ErBjDzErHvClEnAlBf@t@x@hAj@v@tDpFvD~EzCrEx@nAnBzCnB|CdBbDrBzEVn@lAjDlAtEPx@\\zAXrBPlAVjB^lD^zD`AzKz@hK`AjKv@hJb@nFVrCLlAp@hIr@rHb@~ERhBt@vDbBrEz@xA|ArBxAvA`@Z`@X`@Xb@Tb@Td@Rd@Ph@Pf@Nj@Lx@N~@H~ANhBH~G|@j@Hd@Hl@Nd@P\\N\\R\\VXZ`@j@b@l@V^X^X^\\Xh@`@f@\\`@`@NXFb@A\\o@rCK`@a@jBaAjE@ZGZ{@nDABK`@GX}A|GAHOj@o@pC_@zAy@tDk@bCU`ACLWdAKd@yAtGI\\c@lBWhAg@~BKh@k@~By@nD_@hBMh@UdAUbAi@~BI^YdACHc@vBcAlEs@zCCJ_AdEUbAMl@YhAw@bDs@vCUz@YdAi@fBk@fByAbEWp@Ob@CDm@`BUh@ENO^Ob@_@`AMZO^ABADQb@i@xA]dAs@jBa@fA_@`AWp@EJYt@u@pBa@jAm@~Ag@xAGLy@|BwAzDq@fB{@~BCHABi@vACFSj@Yv@EHm@bBA@[|@ABO`@Yt@GLmG~Ok@zAoA~Ci@tAmAxCgBzEUl@iB~Ea@dAe@pAuApDYr@CFQd@IP?BO^kA~CA@e@nA[v@wCzH_GnOmBdF[v@??k@xAKZkA~CEHSj@GL]`A|ErC@@|A|@@@tBlA@@fFzCnF~CpCqHt@oBc@g@",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      110.0
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:20785",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:20785",
+    "computed_at": "2026-09-27T03:43:50Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.1481353,
+      "lon": -81.1459835
+    },
+    "distance_m": 36047.5,
+    "drive_mi": 22.398878052175295,
+    "duration_s": 2547,
+    "end": {
+      "lat": 32.148378,
+      "lon": -81.145707
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^ClAVn@TZP^Xd@j@r@|@~@bAfAn@p@Nt@FdAEpAC~@Eb@@^Df@Pr@b@h@h@hAnA`CpChCzC`Az@rLjO~Yj_@BDxRtV`FpG`AnAbAvAdA~An@bAr@jAv@|Ap@nAn@xAj@tA|@`C|@rCj@lBd@pBf@zB\\jB^zBLt@NrARjBNxAHvANpCFpADlBB~B?jCCdC]lKOhGShHI`DC|A?`C@dBBbCDfBFpAHrAP`CH`ARpBVpB\\`C\\nBVnAz@vDn@~Br@zBXz@f@rAjAtCt@bBvAnC~@`B`A|A|@tAtHlL|EnHvElH`SzZrZfe@`LbQ|DjGnHdLtB~CxFtIzK|PrAtBtHlL|DlGtEvGrEjFnJxKfGjGfBzAnD|CzBrBtTfQnh@pa@`BpArVxRzVzR~D~CvHbGPLbAz@dEbDnJlHd@t@xEnEhAjAp@r@f@n@h@r@nAjBjA|Ab@h@ZZRJXLVFTBD@`@?b@ETG`@MrBm@n@OTGTEPAR?`@@R?R?VE^KZG~@WDAd@O~@Ud@ONCv@UPGREx@Up@Qz@SzA_@`@Ox@Sr@SfAa@t@]h@Yh@]ZWr@i@p@o@v@{@r@_Ah@s@`B{BpAgBp@w@d@e@\\Yh@a@r@e@l@]v@a@f@Q`@MdAWdAS`AK~@GdGWD?DATATAfGWhKe@tH]rAGrDOz@GfAK|Dq@lDs@pEkAnCy@h@QvAa@jHqBjCw@dGcBjGgB`@MnCu@rBg@vDgAdHmB~GiBjA[xAc@nGeBXInBi@|DkArEkAbEgAXIbD_AvCw@|C{@nA[lEoAl@Q\\KGe@Gg@Ei@KkACUIy@Iy@K}@AKo@kFQkBK_ACWa@{DCSEg@gAwJa@sD]yCOuAGq@Go@?GCSMgAGq@Gk@COE[EQGs@E]Gi@CSCWIcAMkACUe@iEWgBFa@HYJWJKLKjAUb@Kp@]~@k@b@c@^_@V]x@_BPm@HWR_AX{Al@}CVu@\\y@\\i@TUNMh@e@~Ag@pEoApBg@x@Yj@KHAj@KKaAcAyJAIAEy@cISiB[}CCQAMCQ?GAIAIcBcAOOWSm@UUMe@{BOQy@]w@Su@GeAFuBTu@HI?MoAm@{Fs@iGKe@_AgAGGcAhASAY]_AsA@m@vAkB",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      37.5
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:21006",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:21006",
+    "computed_at": "2026-09-27T03:43:52Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.031958849999995,
+      "lon": -81.11532220000001
+    },
+    "distance_m": 43157.6,
+    "drive_mi": 26.816889366101964,
+    "duration_s": 2823,
+    "end": {
+      "lat": 32.03171,
+      "lon": -81.114923
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^CtBO`BONA~BMvBOlDU|AM\\EjBO`BK|@Gr@ERAj@EZC@?FAp@EJAj@GLA@?p@E~@Ir@GJA`DQ~AMzFc@lCShGg@`N_ArE[~Fe@xGc@|Fe@rCSzCUtAKxCSz@GbCOhOgAtJs@fBMxBQlDW~AKr@GhF_@dDWxFc@jFa@~BQbBMdAItDYn@En@GxHi@nCUdBMh@Ef^mCbCSjPmAnE]vGe@~Ea@hBM`Gc@LAxKw@rFe@bEYf@Ej@E\\C`BM`BMlBOpAKj@EdAI|CUtGe@J?\\CZC|@Cz@ExDC`BBT@tADZ@P@zBPN@`@Dz@JlAN\\Dz@Nh@JnCb@hARjItAtA^JBnBX~I|BjGxAlG|AbGnA`HjA|@N~AXtB\\hG~@`Ht@XBtBVhN~ArJnAf@H|F~@xCd@nI`B`CVbB@NCfAIdA[RGrBeAVM~BuAhBcA~@m@ZSPMl@a@n@]vCuBdDyCdBcBTUr@q@tEkE`GoFf@g@DC`AaAvBqBZ[fBaBhAeAzBwBJIjGaGVWdDyCrJeJ~BmB`Au@dCgBpDqCn@e@`BuApE_Et@u@xAsA|EmFtDaEbGyG~A{AzAqA|@g@vB}AbE{BnB{@bCiAbCcAZOvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMJBx@TlBf@bAZPDf@Lb@Jl@Pl@N|@VD?X?f@NRFp@R^Jf@Nf@L~Ad@NDj@P@@B?j@NTFB@tA^F@fAZfAZx@TfAZFBH@RFj@Nb@L\\Hj@NLDPDZHz@TfAXLDJDTFrA\\F@l@PPDB?RHNNd@LD@d@Lt@RPFbAXjAZlA\\jAZNFr@RzA^tA^XFXHD@RDND`AXl@PDBRFNDdCl@|Bl@xCr@|Ab@hBf@lBb@jA\\pA\\lAZ~@TD@JBXFlA\\pA\\~Ab@b@L^J`Dv@HBhAXnA\\tBh@hAZh@NJBF@RF@S@I?E@SBGBGBIDGFGDGLOFGDIDIBGDQDWRFb@L~@V`AVdAVt@R^JbAXJBhBf@RHF@n@Pl@PVFPFD@B?@@VHLDv@TLDb@NzCz@t@TRFbAVJB`AXfA\\v@TxA`@PFb@LxAb@dAZ~Ab@nBj@hAXvAb@vA`@xA`@zAb@PDB@h@N`@Lp@RvBl@xBl@t@Tl@Nd@LxA`@TLt@RnA\\zCt@tCx@lAZjCt@vBl@zBl@~Ad@ZHpDbA\\JxA`@bBd@CLQ`A",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      46.7
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:06367 D - G__GPC:21023",
+    "a": "DESC:06367 D - G",
+    "b": "GPC:21023",
+    "computed_at": "2026-09-27T03:43:53Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.045147799999995,
+      "lon": -81.2209368
+    },
+    "distance_m": 52071.8,
+    "drive_mi": 32.355916447944004,
+    "duration_s": 3248,
+    "end": {
+      "lat": 32.044768,
+      "lon": -81.220803
+    },
+    "origin": {
+      "lat": 32.3606993,
+      "lon": -81.1241523
+    },
+    "polyline": "}lodEvbcnNnABrABjDDD@dLNpGHxEHh@@r@?p@Al@Cx@IbAMd@MHARE|Bi@vVcGlCo@|Cs@XGz@K|AKbAEt@?j@@fSv@lFVpFZdFZ@O`@gFRkCX{DFy@^iFPqCN}B@It@gLF_AToCRoCHq@nB_XvCw_@v@mJl@mIVaCTuBn@qFd@{Cf@mDvBcP@ShEWlHi@rPgAF?tCS@?xGc@lJm@jOcAdAIfF]V?LAnCSTAz@E~@Gf@ED?j@ErCQpBOTAfBM|@GbAI`BMHARA`@CJA`AG^Ch@ERAVCtAIRClBKNAbBMzBOp@ElAKf@ChCO`AGtDWxF[VCfCO~CSlE[rDUpDULAnCSrCSrAI`BKlIm@dAI`EYPCjCQhAKTAJCH?jF[bCMjBK\\CtAKbAGzHc@~AS`DSpAGb@EnCSxAUTGxA]FA`CiABAz@m@vAaALM`@WnA_AbBwAfAm@pBy@FADCp@Qp@Sn@KNGNMJOv@Gp@E`@CTCp@ElAK^Ef@CzAKz@IRAn@Ed@CNA`@Cx@GPAf@CJAvAIXCH?VCNAF?t@GPALA@?NAVAr@ERAVCRAH?hBI^ClAVn@TZP^Xd@j@r@|@~@bAfAn@p@Nt@FdAEpAC~@Eb@@^Df@Pr@b@h@h@hAnA`CpChCzC`Az@rLjO~Yj_@BDxRtV`FpG`AnAbAvAdA~An@bAr@jAv@|Ap@nAn@xAj@tA|@`C|@rCj@lBd@pBf@zB\\jB^zBLt@NrARjBNxAHvANpCFpADlBB~B?jCCdC]lKOhGShHI`DC|A?`C@dBBbCDfBFpAHrAP`CH`ARpBVpB\\`C\\nBVnAz@vDn@~Br@zBXz@f@rAjAtCt@bBvAnC~@`B`A|A|@tAtHlL|EnHvElH`SzZrZfe@`LbQ|DjGnHdLtB~CxFtIzK|PrAtBtHlL|DlGtEvGrEjFnJxKfGjGfBzAnD|CzBrBtTfQnh@pa@`BpArVxRzVzR~D~CvHbGPLbAz@dEbDnJlHdCpBpUxQhDjCzEzDjWhS~d@r^vU|QhBzA|@r@nA|@jBzA`@XnCzBn@f@v@j@l@f@z@p@zV|RtDjDdDtD`HvIdC~D`CnEjCxF|HnQjBdEvEpKfFpLvJtT|@pBlA`CtBvDdA|AfF~GrE|E`DvBpCnBhDpBxFjCnBj@~EzAfCl@hCb@nCVxEZdDHlEAdLa@zQy@pPw@~@CfQy@`AEdRy@bOq@dNo@|FWb\\{Aj[uAbDKz`@iBlZsArCOtZsAxAE~E@fDJjCTnEh@|Cj@|Cv@hEtAh^rNrWtKhJvElDvAz@b@xFxBt@`@j@`@\\^`AlAdBvDl@jAZd@^`@`@\\^TXLTFTFVBVB\\@b@Ab@Eb@I`@M`@Ul@i@b@i@d@y@Nc@Pw@H}@Bw@CeAGc@EWK_@s@oBmAmDS{@Ic@Q_AI{@IkABkCJsD@qCPmEnFumAnC{m@b@uLj@wNvAg\\XqG^_Gh@gD`@mCTuAd@eDHOLINALBJFPR`@`@BBnCtCRRXXTR~@v@h@^nAt@z@ZnAd@FBHBDBPFPFl@TlFjBrAd@rDpAjA`@\\LbDhAh@R^Lt@V|Ah@pCbA~Ap@z@^bAb@vD`BHB`A\\rCbAjKvD~EhBfMrEZLzDzA~@\\tHtCt@Tb@FRB`AFbA?t@GPCTEf@MNC|@]PI^Uj@a@JKrAkAzAuANMlBeBfTqRd@i@l@{@rAyB??FIb@m@d@WP@NBJHHPFTJ^FZ?DLtALpBX`EF~BF`@LhA`@|BTx@d@fB`@jAFRb@dALZ`AfBLXDFb@p@PT[J_@B[Ei@]WOIGiDaCOKa@ZkA~@eBtAaBpAaC|AiClBeAr@wA~@kBrAUN{AjA_@VAHCP?VBTF\\`@lBVhAPx@JVDFCJ?PD^v@fD@FGFoBv@K@QEc@]SQGG[u@Ok@CCK@w@T",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      213.7,
+      44.0
+    ],
+    "start": {
+      "lat": 32.360627,
+      "lon": -81.121883
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20066",
+    "a": "DESC:6808 S",
+    "b": "GPC:20066",
+    "computed_at": "2026-09-27T03:43:55Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.05402935,
+      "lon": -81.09642410000001
+    },
+    "distance_m": 42002.0,
+    "drive_mi": 26.098832816352502,
+    "duration_s": 2401,
+    "end": {
+      "lat": 32.05403,
+      "lon": -81.096429
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAM|FAPATMzEIlBAr@?h@Bn@LxCNdEFvABn@Bf@JjC@R?|@?bA?P?jA[~E[|Eq@tJWvCU`CIp@?DCPADABKv@k@fDIb@eA~GYfBa@xBi@pD[`Cm@jDCPG^Kp@k@zDObAgAnGGVIn@Id@G`@Ih@WbBYjBWfBq@dEKv@OpBCvABjAFrAPtAHj@Ll@b@|A\\bAv@xAvDdIdA|B`@v@hAvBXr@fFlKnDnHDJtGpNn@nAn@nAP`@dJzRLXrAhCrBbEnBzDf@`An@dBx@bDLxANjCMlEi@jLUrEEn@A\\a@|Ik@vIGjAK~AcAdV}Ah]GlAyAjZGnA[~HAZSlDCj@GnAK|AGbAC\\CNaAbJIz@{BbRMdAKv@kAzJs@lGK~@Gl@]tCmA~Jq@dGQ`BWfBmAnKkAdKCXSvA[jCiAnJe@dEo@pFGx@]jEOfBMfBa@rEc@dGGv@UjCCPUjC[xBAJIh@WbBWzAAHYpBIl@kAtGm@tDEVAFQnAOz@_@zBYhBSrAKj@oAzH_@|BQjAy@bFY~AUp@AFQ\\INE@EDEDELAN@NDNBB?^?JC^OzAEXKn@UvAEZi@dDsAtKsBrRiDh\\EXKjAEV_@fDWtBOhBGfBCxAD~ABp@Dr@l@jGB^JdA`@~DXlCTfBRbAT`An@pBh@fAh@bA`@p@d@r@f@l@l@l@NPv@|@tB~BzCrDvA|Ab@d@bAhAhGlHbDdDf@d@x@`A\\d@Xd@T`@Vn@rAlDn@dB~@lCdAnCvCjHrAlDf@lAh@vA|B~Fh@lAr@lA^^z@dA^Vl@b@ZTlAf@FB~@\\NFl@XfAd@LDnAh@b@RpF|BhBv@XLjAf@dAb@XLnF|BhEhBB@|@`@VL`@N^P`A`@jCfArCjApChA@?~KnEb@Pn@ZhD|AfCjApYdNtDpA|Dj@xDFhAG~D{@vFqAzG{ApNcDhCm@jD[lC@L@pBHfDL|AFtHZr@B`CJzERt@Dp@BfADJ?h@BP@\\@T@p@BjBHf@BX@nCL^Bj@Bd@BhDJZ@pDN|@Dh@BpFXlHPpBIL?nDk@lH_CvHcCp@UPGnBq@NEjA_@v@UlDo@dAKvCG|AHvAF`C`@fBd@tCjAfBhAfAz@NJbBfBvMlPv@`AtAdBv@`AfArAhAxAlFxGvFdHtAbB`D~D`AlAdjA`xAbAnAhBjCV@XB|Ak@j@KvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMJBx@TlBf@bAZPDf@Lb@Jl@Pl@N|@VD?X?f@NRFp@R^Jf@Nf@L~Ad@NDj@P@@B?j@NTFB@tA^F@fAZfAZx@TfAZFBH@RFj@Nb@L\\Hj@NLDPDZHz@TfAXLDJDTFrA\\F@l@PPDB?RHNNd@LD@d@Lt@RPFbAXjAZlA\\jAZNFr@RzA^tA^XFXHD@RDND`AXl@PDBRFNDdCl@|Bl@xCr@|Ab@hBf@lBb@jA\\pA\\lAZ~@TD@JBXFBQBOf@{C?EBODQDULu@X_Bz@aFZeBXaB@I@KRsARgABGBSDSRmAb@oC?EBMBKr@sDF_@XeBF[T{A@EBMXgBDa@DYBURFd@LZHvBj@b@LvA\\r@R",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      0.5
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20067",
+    "a": "DESC:6808 S",
+    "b": "GPC:20067",
+    "computed_at": "2026-09-27T03:43:56Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.044757399999995,
+      "lon": -81.0672826
+    },
+    "distance_m": 44152.6,
+    "drive_mi": 27.43515370237811,
+    "duration_s": 2622,
+    "end": {
+      "lat": 32.044759,
+      "lon": -81.067282
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAM|FAPATMzEIlBAr@?h@Bn@LxCNdEFvABn@Bf@JjC@R?|@?bA?P?jA[~E[|Eq@tJWvCU`CIp@?DCPADABKv@k@fDIb@eA~GYfBa@xBi@pD[`Cm@jDCPG^Kp@k@zDObAgAnGGVIn@Id@G`@Ih@WbBYjBWfBq@dEKv@OpBCvABjAFrAPtAHj@Ll@b@|A\\bAv@xAvDdIdA|B`@v@hAvBXr@fFlKnDnHDJtGpNn@nAn@nAP`@dJzRLXrAhCrBbEnBzDf@`An@dBx@bDLxANjCMlEi@jLUrEEn@A\\a@|Ik@vIGjAK~AcAdV}Ah]GlAyAjZGnA[~HAZSlDCj@GnAK|AGbAC\\CNaAbJIz@{BbRMdAKv@kAzJs@lGK~@Gl@]tCmA~Jq@dGQ`BWfBmAnKkAdKCXSvA[jCiAnJe@dEo@pFGx@]jEOfBMfBa@rEc@dGGv@UjCCPUjC[xBAJIh@WbBWzAAHYpBIl@kAtGm@tDEVAFQnAOz@_@zBYhBSrAKj@oAzH_@|BQjAy@bFY~AUp@AFQ\\INE@EDEDELAN@NDNBB?^?JC^OzAEXKn@UvAEZi@dDsAtKsBrRiDh\\EXKjAEV_@fDWtBOhBGfBCxAD~ABp@Dr@l@jGB^JdA`@~DXlCTfBRbAT`An@pBh@fAh@bA`@p@d@r@f@l@l@l@NPv@|@tB~BzCrDvA|Ab@d@bAhAhGlHbDdDf@d@x@`A\\d@Xd@T`@Vn@rAlDn@dB~@lCdAnCvCjHrAlDf@lAh@vA|B~Fh@lAr@lA^^z@dA^Vl@b@ZTlAf@FB~@\\NFl@XfAd@LDnAh@b@RpF|BhBv@XLjAf@dAb@XLnF|BhEhBB@|@`@VL`@N^P`A`@jCfArCjApChA@?~KnEb@Pn@ZhD|AfCjApYdNtDpA|Dj@xDFhAG~D{@vFqAzG{ApNcDhCm@jD[lC@L@pBHfDL|AFtHZr@B`CJzERt@Dp@BfADJ?h@BP@\\@T@p@BjBHf@BX@nCL^Bj@Bd@BhDJZ@pDN|@Dh@BpFXlHPpBIL?nDk@lH_CvHcCp@UPGnBq@NEjA_@v@UlDo@dAKvCG|AHvAF`C`@fBd@tCjAfBhAfAz@NJbBfBvMlPv@`AtAdBv@`AfArAhAxAlFxGvFdHtAbB`D~D`AlAdjA`xAbAnAhBjCV@XB|Ak@j@KvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMFYBM?AFMPSPYP[Fe@BI?CDSBQf@{CDS@GFe@j@}CBSDSl@sD@EDSPFz@Vv@RLBf@NPDt@RHB~@Vr@RHBNDZHx@{Et@oEBMb@qCLw@D]F[p@{D?ABKh@}CF]VwARkA@EBQ@Gl@kD@GNy@ZmB@CD[FW\\uB@AVyAb@mCLo@?CDQBKFOFSHOBCNOTUJGNIf@Y~@i@RKNIf@YZQ`Ak@^STMDCn@]JEHEVMTK|@e@nAs@RKp@a@j@[d@[^UXSj@[PKv@c@j@[pAu@`Ai@p@a@hAo@f@WZQPKp@_@TONIZQt@c@\\SjB}@TONIPMJKHKBC\\c@`BwCJSRa@BERk@JWRaABUJs@@CLgAHo@TgBNgANiAVyBFa@JcAJy@D[b@gEBUFe@Dg@Hg@La@R]`@a@^ONERI^INC@?ZMLC^GjAU@Al@KXGnAUdCg@b@KXGHA\\Ir@OHAbBi@^Mb@O^QjB{@^Ob@Sd@SdAa@^KZMjDwAbBm@bBw@nD{AjCeAnAi@z@]\\OvAg@HELEPGR?\\EF@N?XDTFXJH@^JVFzA`@VHf@LnA`@fAZNDz@TdAZ^Jb@LfAXfCp@Ml@WlA",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      0.2
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20277",
+    "a": "DESC:6808 S",
+    "b": "GPC:20277",
+    "computed_at": "2026-09-27T03:43:58Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.3521162,
+      "lon": -81.1751124
+    },
+    "distance_m": 72068.9,
+    "drive_mi": 44.781538316233195,
+    "duration_s": 3899,
+    "end": {
+      "lat": 32.350888,
+      "lon": -81.173236
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAkCo@CA{A]uCs@QEwBg@wAa@aCg@wD}@a@KqAYcAWCAWIeCc@gDs@eAUEAICkBa@eAU[IkCs@kA[aD}@aD}@KCICgA[SQUMKIGIEKGOIKKEKCM@KBIFU@QCSE}@YuC{@MEw@UkDgAsFyA_Du@qHeBGAgBa@mBa@kHaAsBUUCcBWg@MUI][OSS_@QLcCnBqAjA{I|JkE~EwK|LKJsC`DeExEMLKNsCxDcBhCs@bAqNfTaCnDEFwFpIwAdBkBjBmB`BuDdC_DfBqBjAmAr@e@XKF[TkB`BgBlBoA`BeA`BcAdBu@hBg@lASn@m@fB_I~UmC|HIVsI|Ym@xBc@zBs@zE_ArIu@tE_AvD{B|FYp@AFCFGNmFdNKTgD`K_@nCSdDC|@YzQYbN?@QtKGnD?VCpAy@r_@?HC`GF~CVxDBb@BLN|ADZdBnPr@fHj@pFBNBT`B|OBh@Dz@Br@@lAAv@Cx@IxBYbCM|@?BQdAWbA_@zAaBbEoDlF_MfQsBrCkElGe@n@kDbFoBjDyBbFwAbFyEhWEViHlb@_@~DK`AMjA]bHAXU~GWtG}@hW]dGq@nF]|Bg@fCw@lC}@hC{@tBaD`GoJrPGLMVOVmJvPw@vAWf@KRg@x@mBjDkC~EqAxCqAtDABk@jCo@xESxCADKrB?vB@bCBx@@JHhBdAhK`@|Er@nHx@lHf@dIlA~Ll@vGHz@ZlD@Rj@xFFr@~AfQlAdO@RVjCJtABR^~Ev@tIdAhKDh@VvCRvBPjBh@~FnAnNPzBFj@~@jKRzBH|@BXBf@\\zDbA`LTlCNbBb@fFp@|G|@jKl@rFF`ANpA?BNxAN`B`@hEVvCP~Af@|FJnAFjB@|@?v@AbAMvCI~@Mz@Mp@Qx@S~@CJSt@[bASd@KXYp@]r@INS^a@l@a@p@e@l@s@v@_@`@g@b@s@j@y@l@o@f@cBlAaCdBg@^g@^}HxFqA|@{BdBi@`@sAvA}@hAs@fA{@~A_@z@_@nAIZa@pA_@tAOl@O|@G^Kr@MdAOfCC|A?\\?rAFhBNrFFhB@n@JfDIb@NpEHjDLxDJx@f@@d@A`@EHCf@O`F{Cj@W\\Kb@I`@EXA~ADjCAnBH`FRtBLjAH`AJ|ARdC\\pATpA\\`Cn@fs@hTno@zRzB|@zAn@dAh@j@XdAl@|@f@fAt@lAx@~@r@dAz@bAz@b@b@hAhAn@p@lBxB|BlCv@`AbE~EtLpNdQtSb]ta@rLjO~Yj_@BDxRtV`FpG`AnAbAvAdA~An@bAr@jAv@|Ap@nAn@xAj@tA|@`C|@rCj@lBd@pBf@zB\\jB^zBLt@NrARjBNxAHvANpCFpADlBB~B?jCCdC]lKOhGShHI`DC|A?`C@dBBbCDfBFpAHrAP`CH`ARpBVpB\\`C\\nBVnAz@vDn@~Br@zBXz@f@rAjAtCt@bBvAnC~@`B`A|A|@tAtHlL|EnHvElH`SzZrZfe@`LbQ|DjGnHdLtB~CxFtIzK|PrAtBtHlL|DlGtEvGrEjFnJxKfGjGfBzAnD|CzBrBtTfQnh@pa@`BpArVxRzVzR~D~CvHbGPLbAz@dEbDnJlHd@t@xEnEhAjAp@r@f@n@h@r@nAjBjA|Ab@h@HZDL@H?F@HALCHCHEHKHUT{Cz@]Jc@Jy@TsA`@i@NuA^IBg@NaDz@o@Pu@RcBd@UH_AVmA\\SDe@LQFQFWFaAVo@VqAd@uAj@aAZgAZ_Cn@iD|@kD`AyF~AcFvAgA\\I@k@PmBh@gAXgARmAJO@m@B{@Do@?O?YAu@EOAkAMG?qAWu@SWGaCy@]M_A[yAg@wDuAg@Qg@SwAc@cA]s@WqEsAMGmAa@iHuBo@UmA_@uCaAmC{@_A[q@WkEoAQGy@Yg@UmDeAg@Q{@YuDgA]KWIaAYsA[gAQiFk@wO}@iDQ_G]y@CeAIcAAg@@k@@mCNk@Fa@D_@FIBk@N}@PgCv@q@VsAj@sAt@yAdAEDSPa@\\QP[Vc@b@YZy@`AEDi@r@Yb@uA|BeAwAS[qAgB[w@i@_BOq@e@wBi@_Cs@cBsAmBoAkAyAw@aA]{@O]@MEq@Me@YGMKKMCM?MBCB_@Hq@NY@IFqACyBEwBEyCAaBAi@AyMuBcDi@uJiBwE{@yE}@wAYiCe@_Dk@]IyBa@iEw@uBa@kB]{Ck@gAUgDi@wFcAcAMwGy@_DHcDf@mIjBs@Pg@?iHZqM^aELqKZa@@s@@aDLy@BK@eABqETe@@]@Q@kBFgGRo@BcADoEN_@BI@yANeARE@_B^}Cx@iCp@C@wA\\gCp@sA^KB{Bj@{AZsATk@Fo@FO@[@m@D}AB}BEwJSuFOoAEmACoEKC?sISoFMqBG{CM[Ac@A_@?c@?m@Bi@Fi@Hc@Lc@NYJYNE@]Te@ZYRYVWVUXU\\S\\Ub@Sb@Sh@Wv@Y~@ITg@~A_@`Am@hAaAlAMDIAI@IBEFEHCJ?HQT_Av@qAp@aA^eD~AyJvEyBdAoB~@MFoCpAwAr@UJ{@d@eItDgAd@{Ad@eCh@aDb@mANcBT{ARmDd@o@LiALcH`AgCXA@E?A?oBVE?{C^yA\\k@VkAv@sEfEKJeCrBmGhFyD`DwAlA[ZOLSPy@v@uFvEmB`Bm@h@ED_BtA_CnBA@]Zi@b@{ChCkDvCA@k@TyAb@yBPmD?uFJqLFwEBC?oGB{@FcKl@a@DA@eFbAcFdAa@Jg@Xs@^s@f@g@l@GHSToElLK\\A@eDlJ]x@A@]v@aAhBs@|@s@p@m@n@k@j@WXGDIDI@G?G@G?C?CACAGEKMOUWa@S[S_@a@k@wAcDo@_BCEO]ACg@gAYs@Wq@mA{BCE}@cBEGAC}BgEACMU_@q@EKsBuD_AgBAAEKGISa@[m@_AgBa@w@q@oAgAuBACKSoA_C{FaLcAiB{@}A@C?Gq@qAEI_@u@]s@AAWi@??i@gACEuAoCQ_@ACgBmDo@qAaC{EUe@{AeDEGUe@eEuIwAeCMUEIaDsG}F{LaDkGAA{CaGCEqB}DaEmIUe@gSyb@`CgDj@s@n@q@j@g@l@c@n@a@x@c@RIf@Sh@QDC@?xA]nASxIoAx[gGlAQ~CWXCVCB?pAKl@GlAGtAAfEBnIC~IIlDEpCCjAA~FE@?xEE~BCrA?jA?n@@SaNCoBGmCO}@Ss@Ok@k@cAgFsE",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      223.0
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20407",
+    "a": "DESC:6808 S",
+    "b": "GPC:20407",
+    "computed_at": "2026-09-27T03:43:59Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.0226869,
+      "lon": -81.0861807
+    },
+    "distance_m": 47060.9,
+    "drive_mi": 29.24228754076195,
+    "duration_s": 2703,
+    "end": {
+      "lat": 32.022232,
+      "lon": -81.086348
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAM|FAPATMzEIlBAr@?h@Bn@LxCNdEFvABn@Bf@JjC@R?|@?bA?P?jA[~E[|Eq@tJWvCU`CIp@?DCPADABKv@k@fDIb@eA~GYfBa@xBi@pD[`Cm@jDCPG^Kp@k@zDObAgAnGGVIn@Id@G`@Ih@WbBYjBWfBq@dEKv@OpBCvABjAFrAPtAHj@Ll@b@|A\\bAv@xAvDdIdA|B`@v@hAvBXr@fFlKnDnHDJtGpNn@nAn@nAP`@dJzRLXrAhCrBbEnBzDf@`An@dBx@bDLxANjCMlEi@jLUrEEn@A\\a@|Ik@vIGjAK~AcAdV}Ah]GlAyAjZGnA[~HAZSlDCj@GnAK|AGbAC\\CNaAbJIz@{BbRMdAKv@kAzJs@lGK~@Gl@]tCmA~Jq@dGQ`BWfBmAnKkAdKCXSvA[jCiAnJe@dEo@pFGx@]jEOfBMfBa@rEc@dGGv@UjCCPUjC[xBAJIh@WbBWzAAHYpBIl@kAtGm@tDEVAFQnAOz@_@zBYhBSrAKj@oAzH_@|BQjAy@bFY~AUp@AFQ\\INE@EDEDELAN@NDNBB?^?JC^OzAEXKn@UvAEZi@dDsAtKsBrRiDh\\EXKjAEV_@fDWtBOhBGfBCxAD~ABp@Dr@l@jGB^JdA`@~DXlCTfBRbAT`An@pBh@fAh@bA`@p@d@r@f@l@l@l@NPv@|@tB~BzCrDvA|Ab@d@bAhAhGlHbDdDf@d@x@`A\\d@Xd@T`@Vn@rAlDn@dB~@lCdAnCvCjHrAlDf@lAh@vA|B~Fh@lAr@lA^^z@dA^Vl@b@ZTlAf@FB~@\\NFl@XfAd@LDnAh@b@RpF|BhBv@XLjAf@dAb@XLnF|BhEhBB@|@`@VL`@N^P`A`@jCfArCjApChA@?~KnEb@Pn@ZhD|AfCjApYdNtDpA|Dj@xDFhAG~D{@vFqAzG{ApNcDhCm@jD[lC@L@pBHfDL|AFtHZr@B`CJzERt@Dp@BfADJ?h@BP@\\@T@p@BjBHf@BX@nCL^Bj@Bd@BhDJZ@pDN|@Dh@BpFXlHPpBIL?nDk@lH_CvHcCp@UPGnBq@NEjA_@v@UlDo@dAKvCG|AHvAF`C`@fBd@tCjAfBhAfAz@NJbBfBvMlPv@`AtAdBv@`AfArAhAxAlFxGvFdHtAbB`D~D`AlAdjA`xAbAnAhBjCV@XB|Ak@j@KvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMJBx@TlBf@bAZPDf@Lb@Jl@Pl@N|@VD?X?f@NRFp@R^Jf@Nf@L~Ad@NDj@P@@B?j@NTFB@tA^F@fAZfAZx@TfAZFBH@RFj@Nb@L\\Hj@NLDPDZHz@TfAXLDJDTFrA\\F@l@PPDB?RHNNd@LD@d@Lt@RPFbAXjAZlA\\jAZNFr@RzA^tA^XFXHD@RDND`AXl@PDBRFNDdCl@|Bl@xCr@|Ab@hBf@lBb@jA\\pA\\lAZ~@TD@JBXFlA\\pA\\~Ab@b@L^J`Dv@HBhAXnA\\tBh@hAZh@NJBF@RF@S@I?E@SBGBGBIDGFGDGLOFGDIDIBGDQDWRFb@L~@V`AVdAVt@R^JbAXJBhBf@RHF@n@Pl@PVFPFD@B?@@VHLDv@TLDb@NzCz@t@TRFbAVJB`AXfA\\v@TxA`@PFb@LxAb@dAZ~Ab@nBj@hAXvAb@vA`@xA`@zAb@PDB@h@N`@Lp@RvBl@xBl@t@Tl@Nd@LxA`@TLt@RnA\\zCt@tCx@lAZjCt@vBl@zBl@~Ad@ZHpDbA\\JxA`@bBd@~Br@`@JHDPFHDz@`@DBLHVNJc@DOT_ANg@H_@Ny@BKF_@Jm@Ly@RmADWTmAPaAXaB?CH_@BULm@@EDWDWTwAHc@^{BJq@X}AVwA?CBMH_@BWJk@PkACWb@iCVcBDSDQTuAj@kDp@wDtAkI^}Bn@sDF_@F]|@iFTiAVuALm@DUDQXqAVgALk@ZwAf@yBXmABOJa@Lm@Lm@No@Ji@RgA`@qB`@oBJc@p@aD`@mBLq@ReANy@@EL}@NkA@EBUT}A@GFa@b@cD@I`@{CXuBH_@",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      52.9
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20783",
+    "a": "DESC:6808 S",
+    "b": "GPC:20783",
+    "computed_at": "2026-09-27T03:44:01Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.0835097,
+      "lon": -81.1887223
+    },
+    "distance_m": 49729.5,
+    "drive_mi": 30.9004787043665,
+    "duration_s": 2750,
+    "end": {
+      "lat": 32.083001,
+      "lon": -81.189249
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAM|FAPATMzEIlBAr@?h@Bn@LxCNdEFvABn@Bf@JjC@R?|@?bA?P?jA[~E[|Eq@tJWvCU`CIp@?DCPADABKv@k@fDIb@eA~GYfBa@xBi@pD[`Cm@jDCPG^Kp@k@zDObAgAnGGVIn@Id@G`@Ih@WbBYjBWfBq@dEKv@OpBCvABjAFrAPtAHj@Ll@b@|A\\bAv@xAvDdIdA|B`@v@hAvBXr@fFlKnDnHDJtGpNn@nAn@nAP`@dJzRLXrAhCrBbEnBzDf@`An@dBx@bDLxANjCMlEi@jLUrEEn@A\\a@|Ik@vIGjAK~AcAdV}Ah]GlAyAjZGnA[~HAZSlDCj@GnAK|AGbAC\\CNaAbJIz@{BbRMdAKv@kAzJs@lGK~@Gl@]tCmA~Jq@dGQ`BWfBmAnKkAdKCXSvA[jCiAnJe@dEo@pFGx@]jEOfBMfBa@rEc@dGGv@UjCCPUjC[xBAJIh@WbBWzAAHYpBIl@kAtGm@tDEVAFQnAOz@_@zBYhBSrAKj@oAzH_@|BQjAy@bFY~AUp@AFQ\\INE@EDEDELAN@NDNBB?^?JC^OzAEXKn@UvAEZi@dDsAtKsBrRiDh\\EXKjAEV_@fDWtBOhBGfBCxAD~ABp@Dr@l@jGB^JdA`@~DXlCTfBRbAT`An@pBh@fAh@bA`@p@d@r@f@l@l@l@NPv@|@tB~BzCrDvA|Ab@d@bAhAhGlHbDdDf@d@x@`A\\d@Xd@T`@Vn@rAlDn@dB~@lCdAnCvCjHrAlDf@lAh@vA|B~Fh@lAr@lA^^z@dA^Vl@b@ZTlAf@FB~@\\NFl@XfAd@LDnAh@b@RpF|BhBv@XLjAf@dAb@XLnF|BhEhBB@|@`@VL`@N^P`A`@jCfArCjApChA@?~KnEb@Pn@ZhD|AfCjApYdNtDpA|Dj@xDFhAG~D{@vFqAzG{ApNcDhCm@jD[lC@L@pBHfDL|AFtHZr@B`CJzERt@Dp@BfADJ?h@BP@\\@T@p@BjBHf@BX@nCL^Bj@Bd@BhDJZ@pDN|@Dh@BpFXlHPpBIL?nDk@lH_CvHcCp@UPGnBq@NEjA_@v@UlDo@dAKvCG|AHvAF`C`@fBd@tCjAfBhAfAz@NJbBfBvMlPv@`AtAdBv@`AfArAhAxAlFxGvFdHtAbB`D~D`AlAdjA`xAbAnAhBjCV@XB|Ak@j@KvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBxB~AvAjA|AhAvAfA|@f@j@X`AZ|@R~@Nz@D`@@R?t@Ax@Gd@GlBa@dAe@\\StAgApCqBh@_@f@Wj@Uf@O`@K`BQdAAh@Bf@Fl@P\\Jz@\\j@Xl@h@n@h@z@|@dB`C^^HNxAjC~@rBt@`Cb@tAbEdN`AdDZhBPhAL|ABfAB~AAdBC|@Ex@E|@MfBWjDq@bJ_AzG{@fFoEjXwBjMkBlIoD`O}@hFUlAMbAWjCCPm@lHItAi@~MSjGUnF_@hLI|AYpJQdGA|A?lAB|AFtAHlANbBVhBHl@F\\h@~CtJxm@XhBd@fDDVpFb]fChPz@~Ej@lEd@|EVjFFlBBtCAzFGhCK`CE`BMxCYdGWfGY`GaBx_@}B`g@c@vJMhCANeB~Q[hCi@~DS`@YHa@GSSQSeCiBo@k@O@AE{AqByCgDqB}BeAmAs@w@w@m@o@i@YWSKq@e@]Sg@Yk@Uo@Wa@QaA_@_@KQE[IeAUw@QeAMOAi@GgAGe@E]A}@Eo@C_@Cm@CwAIM?y@GyBGa@@_@D_BNASAMAc@E}AE_EAwADo@Di@?}@AO?G?WAaAAgAAg@A]Eg@A]Ik@MiAI}@Ii@M{A_@g@CA",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      75.2
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:20785",
+    "a": "DESC:6808 S",
+    "b": "GPC:20785",
+    "computed_at": "2026-09-27T03:44:03Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.1481353,
+      "lon": -81.1459835
+    },
+    "distance_m": 38806.4,
+    "drive_mi": 24.113179034438875,
+    "duration_s": 2430,
+    "end": {
+      "lat": 32.148378,
+      "lon": -81.145707
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAM|FAPATMzEIlBAr@?h@Bn@LxCNdEFvABn@Bf@JjC@R?|@?bA?P?jA[~E[|Eq@tJWvCU`CIp@?DCPADABKv@k@fDIb@eA~GYfBa@xBi@pD[`Cm@jDCPG^Kp@k@zDObAgAnGGVIn@Id@G`@Ih@WbBYjBWfBq@dEKv@OpBCvABjAFrAPtAHj@Ll@b@|A\\bAv@xAvDdIdA|B`@v@hAvBXr@fFlKnDnHDJtGpNn@nAn@nAP`@dJzRLXrAhCrBbEnBzDf@`An@dBx@bDLxANjCMlEi@jLUrEEn@A\\a@|Ik@vIGjAK~AcAdV}Ah]GlAyAjZGnA[~HAZSlDCj@GnAK|AGbAC\\CNaAbJIz@{BbRMdAKv@kAzJs@lGK~@Gl@]tCmA~Jq@dGQ`BWfBmAnKkAdKCXSvA[jCiAnJe@dEo@pFGx@]jEOfBMfBa@rEc@dGGv@UjCCPUjC[xBAJIh@WbBWzAAHYpBIl@kAtGm@tDEVAFQnAOz@_@zBYhBSrAKj@oAzH_@|BQjAy@bFY~AUp@AFQ\\INE@EDEDELAN@NDNBB?^?JC^OzAEXKn@UvAEZi@dDsAtKsBrRiDh\\EXKjAEV_@fDWtBOhBGfBCxAD~ABp@Dr@l@jGB^JdA`@~DXlCTfBRbAT`An@pBh@fAh@bA`@p@d@r@f@l@l@l@NPv@|@tB~BzCrDvA|Ab@d@bAhAhGlHbDdDf@d@x@`A\\d@Xd@T`@Vn@rAlDn@dB~@lCdAnCvCjHrAlDf@lAh@vA|B~Fh@lAr@lA^^z@dA^Vl@b@ZTlAf@FB~@\\NFl@XfAd@LDnAh@_@tAiAbEMr@Iz@Cp@@l@Df@H\\`CnJl@`Cj@nB\\rALb@ZjA?@b@`Bb@~A`@vAt@vCPl@J`@h@tB`@zATx@BL`@zAZnAfA`EFPFXx@`DNd@`@xANj@z@bD~@vDt@pClAnERv@T|@b@zAZpAvBdIPn@@HV|@`@zA@Dh@nBtArFRp@XbAFRf@pB|A~F`@zAHZH\\XdAn@bCrAzEJb@~@nDFTnD`NNj@bA|D|@hDv@vCrAbFxBjI|AzFJ^Lh@@Bf@jB`@|AT|@p@dCRx@Tv@t@nCFXT|@`BlGTz@xA|FXv@?B`@bA~@jAh@\\b@P\\Ln@LX@nDRn@DhCLvEX`@BJ@~@FjETpEZ^@R@ZBtDRt@FV@t@FbCNXBXFPDPHRHJHNLTTV\\P\\JXNb@F`@Bd@@Z?REFKhAGf@JBnBX~I|BjGxAlG|AbGnA`HjA|@N~AXtB\\hG~@`Ht@XBtBVhN~ArJnAf@H|F~@nCz@vEpAlEhAjGnAn@Vl@Vt@j@j@h@lApBDFHPVr@|ArFvGdVhEpOhD~Lh@lB`GfThBzGBFb@zAFTxBfI~BdI|AdGbIlYzBpIZ~@xLhc@nBtHPhAJfC@fETpm@@hALvX?H@lA@zE?dEC~AUhDCfB?bFDvL@zCDfENdDH|BLnELbT@|LJhQK|BGfAALCt@C|@@dF@|ABlANrHLdHPtKFr@RdAb@jA`@r@d@h@b@`@XRt@h@h@^d@f@Zb@pE|FpBlCf@p@lA|ArAjBPNp@~@p@x@\\`@d@b@l@^v@VjAPh@@`@AZA\\ExAURCjASzAWnJ_BjASZGtF_AtAUl@GpAUx@QjGeAdFy@RCdBYhAQjAUb@Kp@]~@k@b@c@^_@V]x@_BPm@HWR_AX{Al@}CVu@\\y@\\i@TUNMh@e@~Ag@pEoApBg@x@Yj@KHAj@KKaAcAyJAIAEy@cISiB[}CCQAMCQ?GAIAIcBcAOOWSm@UUMe@{BOQy@]w@Su@GeAFuBTu@HI?MoAm@{Fs@iGKe@_AgAGGcAhASAY]_AsA@m@vAkB",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      37.5
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6808 S__GPC:21006",
+    "a": "DESC:6808 S",
+    "b": "GPC:21006",
+    "computed_at": "2026-09-27T03:44:04Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 32.031958849999995,
+      "lon": -81.11532220000001
+    },
+    "distance_m": 44047.4,
+    "drive_mi": 27.369785452954744,
+    "duration_s": 2542,
+    "end": {
+      "lat": 32.03171,
+      "lon": -81.114923
+    },
+    "origin": {
+      "lat": 32.2350272,
+      "lon": -80.8533836
+    },
+    "polyline": "czvcEjvnlN[j@SZyAmAwBkB[UoAy@MhEAp@Ab@K~BC|@GdBGtAGlBCn@GpBC~@SjGShFGzAM|FAPATMzEIlBAr@?h@Bn@LxCNdEFvABn@Bf@JjC@R?|@?bA?P?jA[~E[|Eq@tJWvCU`CIp@?DCPADABKv@k@fDIb@eA~GYfBa@xBi@pD[`Cm@jDCPG^Kp@k@zDObAgAnGGVIn@Id@G`@Ih@WbBYjBWfBq@dEKv@OpBCvABjAFrAPtAHj@Ll@b@|A\\bAv@xAvDdIdA|B`@v@hAvBXr@fFlKnDnHDJtGpNn@nAn@nAP`@dJzRLXrAhCrBbEnBzDf@`An@dBx@bDLxANjCMlEi@jLUrEEn@A\\a@|Ik@vIGjAK~AcAdV}Ah]GlAyAjZGnA[~HAZSlDCj@GnAK|AGbAC\\CNaAbJIz@{BbRMdAKv@kAzJs@lGK~@Gl@]tCmA~Jq@dGQ`BWfBmAnKkAdKCXSvA[jCiAnJe@dEo@pFGx@]jEOfBMfBa@rEc@dGGv@UjCCPUjC[xBAJIh@WbBWzAAHYpBIl@kAtGm@tDEVAFQnAOz@_@zBYhBSrAKj@oAzH_@|BQjAy@bFY~AUp@AFQ\\INE@EDEDELAN@NDNBB?^?JC^OzAEXKn@UvAEZi@dDsAtKsBrRiDh\\EXKjAEV_@fDWtBOhBGfBCxAD~ABp@Dr@l@jGB^JdA`@~DXlCTfBRbAT`An@pBh@fAh@bA`@p@d@r@f@l@l@l@NPv@|@tB~BzCrDvA|Ab@d@bAhAhGlHbDdDf@d@x@`A\\d@Xd@T`@Vn@rAlDn@dB~@lCdAnCvCjHrAlDf@lAh@vA|B~Fh@lAr@lA^^z@dA^Vl@b@ZTlAf@FB~@\\NFl@XfAd@LDnAh@b@RpF|BhBv@XLjAf@dAb@XLnF|BhEhBB@|@`@VL`@N^P`A`@jCfArCjApChA@?~KnEb@Pn@ZhD|AfCjApYdNtDpA|Dj@xDFhAG~D{@vFqAzG{ApNcDhCm@jD[lC@L@pBHfDL|AFtHZr@B`CJzERt@Dp@BfADJ?h@BP@\\@T@p@BjBHf@BX@nCL^Bj@Bd@BhDJZ@pDN|@Dh@BpFXlHPpBIL?nDk@lH_CvHcCp@UPGnBq@NEjA_@v@UlDo@dAKvCG|AHvAF`C`@fBd@tCjAfBhAfAz@NJbBfBvMlPv@`AtAdBv@`AfArAhAxAlFxGvFdHtAbB`D~D`AlAdjA`xAbAnAhBjCV@XB|Ak@j@KvBk@bGsAjEk@~PkBnRoBxEe@hFSdEAjDHjDTxFt@tE~@jF|AfHvC~FlDpCtBzApAzExErLdOhfAjsAr`@tf@pDdEdElE`CtCl@t@LNlEdG~@tAjArAZZnBnB|@x@f[xW`KdHdEnCtAz@b@PrAn@RJxDjB~@b@z@d@nGtEr@l@rdAfx@~BnBt@p@|@`AdAz@d@f@h@j@V^Rd@Jf@Fn@?p@Gf@IZOZMTSRSLSHSFWD[?YAQCSIOIOMIIKOOYKWMc@Ga@Gi@?a@@k@B]D]Ja@HWJWHQr@gAbBeCfAgBz@yALS|@{Ap@gAHSL]\\{BHa@V{ADUBQF[V_BF[?Ah@aD|@iF@CBMJBx@TlBf@bAZPDf@Lb@Jl@Pl@N|@VD?X?f@NRFp@R^Jf@Nf@L~Ad@NDj@P@@B?j@NTFB@tA^F@fAZfAZx@TfAZFBH@RFj@Nb@L\\Hj@NLDPDZHz@TfAXLDJDTFrA\\F@l@PPDB?RHNNd@LD@d@Lt@RPFbAXjAZlA\\jAZNFr@RzA^tA^XFXHD@RDND`AXl@PDBRFNDdCl@|Bl@xCr@|Ab@hBf@lBb@jA\\pA\\lAZ~@TD@JBXFlA\\pA\\~Ab@b@L^J`Dv@HBhAXnA\\tBh@hAZh@NJBF@RF@S@I?E@SBGBGBIDGFGDGLOFGDIDIBGDQDWRFb@L~@V`AVdAVt@R^JbAXJBhBf@RHF@n@Pl@PVFPFD@B?@@VHLDv@TLDb@NzCz@t@TRFbAVJB`AXfA\\v@TxA`@PFb@LxAb@dAZ~Ab@nBj@hAXvAb@vA`@xA`@zAb@PDB@h@N`@Lp@RvBl@xBl@t@Tl@Nd@LxA`@TLt@RnA\\zCt@tCx@lAZjCt@vBl@zBl@~Ad@ZHpDbA\\JxA`@bBd@CLQ`A",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      41.5,
+      46.7
+    ],
+    "start": {
+      "lat": 32.234737,
+      "lon": -80.853663
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6809 G__GPC:17993",
+    "a": "DESC:6809 G",
+    "b": "GPC:17993",
+    "computed_at": "2026-09-27T03:44:06Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 33.5439942,
+      "lon": -82.1686481
+    },
+    "distance_m": 35533.8,
+    "drive_mi": 22.079679670722978,
+    "duration_s": 2249,
+    "end": {
+      "lat": 33.54462,
+      "lon": -82.167885
+    },
+    "origin": {
+      "lat": 33.7362884,
+      "lon": -82.2015043
+    },
+    "polyline": "up|lExrutNa@x@_AzBcApBOb@E`@Al@HzBDjC@TA^R~CCZMPk@Rs@NgBPiA\\o@j@j@v@HJNXj@l@^ZHLBNvFWxDQpCOx@EvDQz@Eb@?d@@l@DZBz@Hn@FbBPfAJl@Fz@L~Dp@pHnAfBZnARZDRBr@Fz@D|@@l@?~@CzBMnBMzIg@vHc@dKm@fEW~@G|@OzAc@xBy@pD_B~CoAhDwAxMqFvGwBlBe@jEoA~DgAlFwAfCs@rEoAxAc@|@QpAMjAInHFpCAtAKbBYlOuC~@Wv@[v@]l@a@nAgArC}CfFuFrBwBnAwAzBaCdImIhAaAzByArC{AlEeBvHoCtAc@|Ak@n@Yx@e@z@i@~@y@nAsAbAsAdAiBvHaN^q@fB_Dr@uA\\q@z@uAb@q@d@q@d@o@x@cAn@u@j@q@l@o@h@c@b@]`@Sx@Y|@Wd@Sd@Mf@Md@CnACb@?^Cb@Ib@Ml@Sb@Mj@It@IrAQRGlCmAjB_Ad@[dAcAv@aAp@}@vAeB^KNCP?RHRLZVNXLVRf@HTN^dBrFt@|BTr@~@vCL`@^jAJXL`@d@xAPj@bCrHb@zAZ~@Rn@HZTl@Pf@`@z@^l@HNVZZ\\VXHFVTh@^VNPHZNRFZJRFh@LJ@L@~@JZ@n@CT?zBKxCKJAnACf@@b@DB?l@JXFl@N\\Lf@T~@t@r@r@j@v@b@z@R`@Nf@VdAJ`AJtALxBDrApAxVd@vI|@rPbA`TB^H|@Jn@Nn@dD~I`ExK~@bChA~CnEnLpAnDdAfCnAtC`AlBtAfCxA~BzJfMhAnBlAxC\\dAp@zDV|CDdDGvCUbD_B|SIx@qFru@q@`JStEAfCDjCPdDf@lEv@tDhAnD~AxDnBlD`C`DhMbObArAlAxArHbJ|F|GlSxVxEzF|CvDpKdMfAjApCfC~BnB|@t@p@j@j@b@zCbC|FnEdF~Dl@b@|DzC|GnFzFpErIzG|D|CtAfAxDvCxB~AhCzAzC~AnBx@~CpAt@Z\\_Av@sBz@gBrFmLfLeWzH}PrJeTxFiM~A{D|BqGxBaH|Je]hDcLxMkd@hDiLjMwb@|CoK~@eDrB_HbEoNlAqDv@aCz@uB|AsDpAaCb@y@bA}A`E{FnC{CfCgCn]qZlFmEtMgLnAeAjAeArFuEjTaRdByArAeAjHiHvAmBfB_CrAoBrAyBvBiEpBaFxC{Ih@_BPi@v@aCpDwKbA}CJ[`@sAbA{ClBmG|@qCJ[L]J]z@yBTw@|@gCjAiDxEkNrGaS|@uCjCaIpE_NvFeQNc@L[`CwId@eBv@iC~F{STw@pCiJ`DwIl@{AJUpA_D`AaCHOv@gB\\w@j@oAj@gAZk@h@_AjAwBlAuBxBrAhBnAzBnArC~AlBp@hDp@|@PvCv@hHjBlA`@jAh@lCdBvA~@xAx@fBl@nHz@~APLBNz@r@xC\\pAVz@Vd@v@f@",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      300.9,
+      99.2
+    ],
+    "start": {
+      "lat": 33.738513,
+      "lon": -82.199646
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6809 G__GPC:20793",
+    "a": "DESC:6809 G",
+    "b": "GPC:20793",
+    "computed_at": "2026-09-27T03:44:08Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 33.5439942,
+      "lon": -82.1686481
+    },
+    "distance_m": 35533.8,
+    "drive_mi": 22.079679670722978,
+    "duration_s": 2249,
+    "end": {
+      "lat": 33.54462,
+      "lon": -82.167885
+    },
+    "origin": {
+      "lat": 33.7362884,
+      "lon": -82.2015043
+    },
+    "polyline": "up|lExrutNa@x@_AzBcApBOb@E`@Al@HzBDjC@TA^R~CCZMPk@Rs@NgBPiA\\o@j@j@v@HJNXj@l@^ZHLBNvFWxDQpCOx@EvDQz@Eb@?d@@l@DZBz@Hn@FbBPfAJl@Fz@L~Dp@pHnAfBZnARZDRBr@Fz@D|@@l@?~@CzBMnBMzIg@vHc@dKm@fEW~@G|@OzAc@xBy@pD_B~CoAhDwAxMqFvGwBlBe@jEoA~DgAlFwAfCs@rEoAxAc@|@QpAMjAInHFpCAtAKbBYlOuC~@Wv@[v@]l@a@nAgArC}CfFuFrBwBnAwAzBaCdImIhAaAzByArC{AlEeBvHoCtAc@|Ak@n@Yx@e@z@i@~@y@nAsAbAsAdAiBvHaN^q@fB_Dr@uA\\q@z@uAb@q@d@q@d@o@x@cAn@u@j@q@l@o@h@c@b@]`@Sx@Y|@Wd@Sd@Mf@Md@CnACb@?^Cb@Ib@Ml@Sb@Mj@It@IrAQRGlCmAjB_Ad@[dAcAv@aAp@}@vAeB^KNCP?RHRLZVNXLVRf@HTN^dBrFt@|BTr@~@vCL`@^jAJXL`@d@xAPj@bCrHb@zAZ~@Rn@HZTl@Pf@`@z@^l@HNVZZ\\VXHFVTh@^VNPHZNRFZJRFh@LJ@L@~@JZ@n@CT?zBKxCKJAnACf@@b@DB?l@JXFl@N\\Lf@T~@t@r@r@j@v@b@z@R`@Nf@VdAJ`AJtALxBDrApAxVd@vI|@rPbA`TB^H|@Jn@Nn@dD~I`ExK~@bChA~CnEnLpAnDdAfCnAtC`AlBtAfCxA~BzJfMhAnBlAxC\\dAp@zDV|CDdDGvCUbD_B|SIx@qFru@q@`JStEAfCDjCPdDf@lEv@tDhAnD~AxDnBlD`C`DhMbObArAlAxArHbJ|F|GlSxVxEzF|CvDpKdMfAjApCfC~BnB|@t@p@j@j@b@zCbC|FnEdF~Dl@b@|DzC|GnFzFpErIzG|D|CtAfAxDvCxB~AhCzAzC~AnBx@~CpAt@Z\\_Av@sBz@gBrFmLfLeWzH}PrJeTxFiM~A{D|BqGxBaH|Je]hDcLxMkd@hDiLjMwb@|CoK~@eDrB_HbEoNlAqDv@aCz@uB|AsDpAaCb@y@bA}A`E{FnC{CfCgCn]qZlFmEtMgLnAeAjAeArFuEjTaRdByArAeAjHiHvAmBfB_CrAoBrAyBvBiEpBaFxC{Ih@_BPi@v@aCpDwKbA}CJ[`@sAbA{ClBmG|@qCJ[L]J]z@yBTw@|@gCjAiDxEkNrGaS|@uCjCaIpE_NvFeQNc@L[`CwId@eBv@iC~F{STw@pCiJ`DwIl@{AJUpA_D`AaCHOv@gB\\w@j@oAj@gAZk@h@_AjAwBlAuBxBrAhBnAzBnArC~AlBp@hDp@|@PvCv@hHjBlA`@jAh@lCdBvA~@xAx@fBl@nHz@~APLBNz@r@xC\\pAVz@Vd@v@f@",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      300.9,
+      99.2
+    ],
+    "start": {
+      "lat": 33.738513,
+      "lon": -82.199646
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  },
+  {
+    "_id": "DESC:6809 G__GPC:20794",
+    "a": "DESC:6809 G",
+    "b": "GPC:20794",
+    "computed_at": "2026-09-27T03:44:09Z",
+    "data_source": "OpenStreetMap contributors (ODbL)",
+    "destination": {
+      "lat": 33.5439942,
+      "lon": -82.1686481
+    },
+    "distance_m": 35533.8,
+    "drive_mi": 22.079679670722978,
+    "duration_s": 2249,
+    "end": {
+      "lat": 33.54462,
+      "lon": -82.167885
+    },
+    "origin": {
+      "lat": 33.7362884,
+      "lon": -82.2015043
+    },
+    "polyline": "up|lExrutNa@x@_AzBcApBOb@E`@Al@HzBDjC@TA^R~CCZMPk@Rs@NgBPiA\\o@j@j@v@HJNXj@l@^ZHLBNvFWxDQpCOx@EvDQz@Eb@?d@@l@DZBz@Hn@FbBPfAJl@Fz@L~Dp@pHnAfBZnARZDRBr@Fz@D|@@l@?~@CzBMnBMzIg@vHc@dKm@fEW~@G|@OzAc@xBy@pD_B~CoAhDwAxMqFvGwBlBe@jEoA~DgAlFwAfCs@rEoAxAc@|@QpAMjAInHFpCAtAKbBYlOuC~@Wv@[v@]l@a@nAgArC}CfFuFrBwBnAwAzBaCdImIhAaAzByArC{AlEeBvHoCtAc@|Ak@n@Yx@e@z@i@~@y@nAsAbAsAdAiBvHaN^q@fB_Dr@uA\\q@z@uAb@q@d@q@d@o@x@cAn@u@j@q@l@o@h@c@b@]`@Sx@Y|@Wd@Sd@Mf@Md@CnACb@?^Cb@Ib@Ml@Sb@Mj@It@IrAQRGlCmAjB_Ad@[dAcAv@aAp@}@vAeB^KNCP?RHRLZVNXLVRf@HTN^dBrFt@|BTr@~@vCL`@^jAJXL`@d@xAPj@bCrHb@zAZ~@Rn@HZTl@Pf@`@z@^l@HNVZZ\\VXHFVTh@^VNPHZNRFZJRFh@LJ@L@~@JZ@n@CT?zBKxCKJAnACf@@b@DB?l@JXFl@N\\Lf@T~@t@r@r@j@v@b@z@R`@Nf@VdAJ`AJtALxBDrApAxVd@vI|@rPbA`TB^H|@Jn@Nn@dD~I`ExK~@bChA~CnEnLpAnDdAfCnAtC`AlBtAfCxA~BzJfMhAnBlAxC\\dAp@zDV|CDdDGvCUbD_B|SIx@qFru@q@`JStEAfCDjCPdDf@lEv@tDhAnD~AxDnBlD`C`DhMbObArAlAxArHbJ|F|GlSxVxEzF|CvDpKdMfAjApCfC~BnB|@t@p@j@j@b@zCbC|FnEdF~Dl@b@|DzC|GnFzFpErIzG|D|CtAfAxDvCxB~AhCzAzC~AnBx@~CpAt@Z\\_Av@sBz@gBrFmLfLeWzH}PrJeTxFiM~A{D|BqGxBaH|Je]hDcLxMkd@hDiLjMwb@|CoK~@eDrB_HbEoNlAqDv@aCz@uB|AsDpAaCb@y@bA}A`E{FnC{CfCgCn]qZlFmEtMgLnAeAjAeArFuEjTaRdByArAeAjHiHvAmBfB_CrAoBrAyBvBiEpBaFxC{Ih@_BPi@v@aCpDwKbA}CJ[`@sAbA{ClBmG|@qCJ[L]J]z@yBTw@|@gCjAiDxEkNrGaS|@uCjCaIpE_NvFeQNc@L[`CwId@eBv@iC~F{STw@pCiJ`DwIl@{AJUpA_D`AaCHOv@gB\\w@j@oAj@gAZk@h@_AjAwBlAuBxBrAhBnAzBnArC~AlBp@hDp@|@PvCv@hHjBlA`@jAh@lCdBvA~@xAx@fBl@nHz@~APLBNz@r@xC\\pAVz@Vd@v@f@",
+    "provider": "osrm:router.project-osrm.org",
+    "routing_preference": "FASTEST",
+    "snap_m": [
+      300.9,
+      99.2
+    ],
+    "start": {
+      "lat": 33.738513,
+      "lon": -82.199646
+    },
+    "status": "ok",
+    "travel_mode": "DRIVE"
+  }
+]

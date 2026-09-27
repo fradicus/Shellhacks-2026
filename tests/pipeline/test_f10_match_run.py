@@ -9,6 +9,7 @@ import pytest
 from common import REPO_ROOT, load_json, validate
 from match_run.build import _verify_f09_identity, run_match_adapter
 from matches import core
+from matches.routes import load_routes
 
 ANALYSIS_DATE = "2026-09-26"
 
@@ -112,34 +113,37 @@ def _golden_adapter_input() -> tuple[list[dict], list[dict], dict[str, str]]:
     return projects, locations, labels
 
 
-def test_sponsor_golden_uses_the_same_adapter_for_six_of_twenty_five() -> None:
-    projects, locations, labels = _golden_adapter_input()
-    matches, summary = run_match_adapter(projects, locations, analysis_date=ANALYSIS_DATE)
+def test_sponsor_golden_uses_the_same_adapter_and_keeps_drives_within_25() -> None:
+    projects, locations, _ = _golden_adapter_input()
+    routes = load_routes(REPO_ROOT / "data/fixtures/golden/routes.json")
+    matches, summary = run_match_adapter(projects, locations, analysis_date=ANALYSIS_DATE, routes=routes)
     sheet = load_json(REPO_ROOT / "data/fixtures/golden/overlaps.json")
     expected = {
         core.match_id(f"DESC:{row['project_id_a']}", f"GPC:{row['project_id_b']}"): row for row in sheet
     }
-    assert len(matches) == 6
+    within = {mid for mid in expected if routes[mid]["drive_mi"] <= core.OVERLAP_MI}
     assert summary["pairs"] == {
         "all_known_cross_utility_combinations": 25,
         "centered_cross_utility_pairs_evaluated": 25,
         "excluded_before_distance": 0,
-        "overlaps": 6,
-        "spatial_nonmatches": 19,
+        "within_straight_line_prefilter": len(expected),
+        "route_states": {"ok": len(expected), "no_route": 0, "missing": 0, "stale": 0},
+        "overlaps": len(within),
+        "drive_over_limit": len(expected) - len(within),
+        "spatial_nonmatches": 25 - len(within),
     }
-    assert set(match["_id"] for match in matches) == set(expected)
+    assert set(match["_id"] for match in matches) == within
     for match in matches:
         assert round(match["distance_mi"], 2) == expected[match["_id"]]["distance_mi"]
+        assert match["drive_mi"] == routes[match["_id"]]["drive_mi"]
         assert match["time_gap_days"] == expected[match["_id"]]["time_gap_days"]
-    by_pair = {(row["project_id_a"], row["project_id_b"]): row["overlap_id"] for row in sheet}
-    assert [by_pair[(labels[match["a"]], labels[match["b"]])] for match in matches] == [
-        "OVL_2",
-        "OVL_3",
-        "OVL_1",
-        "OVL_4",
-        "OVL_5",
-        "OVL_6",
-    ]
+    assert [match["rank"] for match in matches] == list(range(1, len(within) + 1))
+
+
+def test_no_stored_routes_means_no_overlaps() -> None:
+    projects, locations, _ = _golden_adapter_input()
+    matches, summary = run_match_adapter(projects, locations, analysis_date=ANALYSIS_DATE)
+    assert matches == [] and summary["pairs"]["route_states"]["missing"] == 6
 
 
 @pytest.mark.parametrize(
@@ -191,8 +195,12 @@ def test_centers_are_recomputed_unknown_owners_excluded_and_replay_is_determinis
     unknown = _project("GPC:SYNTH-UNKNOWN", "unknown")
     projects.append(unknown)
     locations.append(_location(unknown, lat=33.005))
-    first = run_match_adapter(projects, locations, analysis_date=ANALYSIS_DATE)
-    second = run_match_adapter(projects[::-1], locations[::-1], analysis_date=ANALYSIS_DATE)
+    mid = core.match_id("DESC:SYNTH-A", "GPC:SYNTH-B")
+    routes = {mid: {"_id": mid, "origin": {"lat": 33.0, "lon": -81.0}, "destination": {"lat": 33.01, "lon": -81.0},
+                    "status": "ok", "drive_mi": 1.2, "provider": "synthetic", "travel_mode": "DRIVE",
+                    "computed_at": "2026-09-26T00:00:00Z", "polyline": None}}
+    first = run_match_adapter(projects, locations, analysis_date=ANALYSIS_DATE, routes=routes)
+    second = run_match_adapter(projects[::-1], locations[::-1], analysis_date=ANALYSIS_DATE, routes=routes)
     assert first == second
     matches, summary = first
     assert len(matches) == 1 and matches[0]["distance_mi"] == pytest.approx(core.haversine_mi(33.0, -81.0, 33.01, -81.0))
@@ -226,22 +234,22 @@ def test_committed_full_corpus_is_reproducible_and_schema_valid() -> None:
     locations = load_json(REPO_ROOT / "data/locations/locations.json")
     expected_matches = load_json(REPO_ROOT / "data/matches/matches.json")
     expected_summary = load_json(REPO_ROOT / "data/matches/summary.json")
+    routes = load_routes(REPO_ROOT / "data/routes/routes.json")
     matches, summary = run_match_adapter(
         projects,
         locations,
         analysis_date=ANALYSIS_DATE,
+        routes=routes,
         input_identity=expected_summary["input_identity"],
     )
     assert matches == expected_matches and summary == expected_summary
-    assert summary["projects"]["active"] == 262
-    assert summary["projects"]["centered_including_unknown_owner"] == 79
-    assert summary["pairs"]["all_known_cross_utility_combinations"] == 7452
-    assert summary["pairs"]["centered_cross_utility_pairs_evaluated"] == 656
-    assert summary["pairs"]["overlaps"] == 19
-    assert summary["overlaps_by_view"] == {"historical": 16, "future": 0, "tentative": 3}
-    assert summary["overlaps_by_band"] == {"0": 1, "1": 18}
+    pairs = summary["pairs"]
+    assert pairs["route_states"]["missing"] == pairs["route_states"]["stale"] == 0, "fetch routes: match_run --fetch-routes"
+    assert sum(pairs["route_states"].values()) == pairs["within_straight_line_prefilter"]
+    assert pairs["overlaps"] == len(matches) == sum(summary["overlaps_by_band"].values())
     assert all(match["review_state"] == "needs_review" for match in matches)
-    assert [match["rank"] for match in matches] == list(range(1, 20))
+    assert [match["rank"] for match in matches] == list(range(1, len(matches) + 1))
     for match in matches:
         validate(match, "match")
-        assert match["distance_mi"] < 25.0
+        assert match["distance_mi"] <= match["drive_mi"] <= core.OVERLAP_MI
+        assert match["drive_mi"] == routes[match["_id"]]["drive_mi"] and match["route"]["polyline"]
