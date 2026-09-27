@@ -19,6 +19,8 @@ const COLOR: Record<HistoryProject["identity"], string> = { DESC: "#5cc8ff", GPC
 const DAY_MS = 86_400_000;
 const YEAR_D = 365.25;
 const NEAR_MI = 25;
+// ponytail: a coordinate box, not state lookups; the only drawn places outside it are Alaska and Hawaii.
+const inLower48 = (c: { lat: number; lon: number }) => c.lat > 24 && c.lat < 50 && c.lon > -125 && c.lon < -66;
 const MEANINGS: { v: Meaning | "all"; label: string; help: string }[] = [
   { v: "all", label: "All", help: "Every documented event" },
   { v: "actual", label: "Built", help: "Documented actual in-service dates" },
@@ -335,7 +337,10 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
   );
 
   const bbox = useMemo(() => {
-    const pts = (origin?.center ? [origin, ...near.map((r) => r.p)] : rows.map((r) => r.p)).map((p) => p.center!);
+    const all = (origin?.center ? [origin, ...near.map((r) => r.p)] : rows.map((r) => r.p)).map((p) => p.center!);
+    // Alaska and Hawaii would shrink the national overview to a corner; fit the lower 48 unless only they are shown.
+    const lower48 = all.filter(inLower48);
+    const pts = lower48.length ? lower48 : all;
     if (origin?.center && pts.length === 1) {
       const d = NEAR_MI / 69.05;
       return [origin.center.lon - d * 1.3, origin.center.lat - d, origin.center.lon + d * 1.3, origin.center.lat + d] as const;
