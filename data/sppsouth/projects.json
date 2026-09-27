@@ -3514,7 +3514,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:122727",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183461222 (Lubbock South), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/183461222 is named “Lubbock South Interchange”; “Lubbock South” is its alias.",
+      "lat": 33.511676,
+      "lon": -101.826289
+    },
     "counties": [],
     "description": "Rebuild 5.98 miles of 115 kV line from Allen to Lubbock and upgrade any necessary terminal equipment to achieve a summer emergency rating of 300 MVA.",
     "evidence": {
@@ -3557,9 +3562,23 @@
           "status": "operator_conflict"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183461222",
+            "lat": 33.5116755,
+            "lon": -101.8262887,
+            "name": "Lubbock South",
+            "operator": "Xcel Energy",
+            "osm_name": "Lubbock South Interchange",
+            "state": "TX",
+            "voltage": "230000;115000;69000"
+          },
           "name": "Lubbock South",
           "norm": "LUBBOCK SOUTH",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -3570,12 +3589,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Allen - Lubbock South 115kV",
     "name": "Allen - Lubbock South 115 kV Ckt 1 Rebuild",
     "native_id": "122727",
@@ -4910,12 +4929,9 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
-          "corroboration": [
-            "voltage"
-          ],
           "name": "Carlisle",
           "norm": "CARLISLE",
-          "status": "operator_conflict"
+          "status": "ambiguous"
         },
         {
           "corroboration": [
@@ -10080,10 +10096,10 @@
   {
     "_id": "spp-qpt-2026q3-south:143394",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/168087477 (Plant X Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
-      "lat": 34.164997,
-      "lon": -102.409816
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168217546 (Deaf Smith), OSM way/168087477 (Plant X Substation), corroborated by operator, voltage. OSM way/168217546 is named “Deaf Smith Interchange”; “Deaf Smith” is its alias.",
+      "lat": 34.492887,
+      "lon": -102.385331
     },
     "counties": [],
     "description": "Interconnection upgrades and cost estimates needed to interconnect the following Interconnection Customer facility, GEN-2017-146 (151.8 MW/Wind), into the Point of Interconnection (POI) at Deaf Smith - Plant X 230kV",
@@ -10119,9 +10135,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168217546",
+            "lat": 34.8207776,
+            "lon": -102.3608448,
+            "name": "Deaf Smith",
+            "operator": "Xcel Energy",
+            "osm_name": "Deaf Smith Interchange",
+            "state": "TX",
+            "voltage": "230000;115000"
+          },
           "name": "Deaf Smith",
           "norm": "DEAF SMITH",
-          "status": "ambiguous"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -10174,10 +10204,10 @@
   {
     "_id": "spp-qpt-2026q3-south:143395",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/168087477 (Plant X Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
-      "lat": 34.164997,
-      "lon": -102.409816
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168217546 (Deaf Smith), OSM way/168087477 (Plant X Substation), corroborated by operator, voltage. OSM way/168217546 is named “Deaf Smith Interchange”; “Deaf Smith” is its alias.",
+      "lat": 34.492887,
+      "lon": -102.385331
     },
     "counties": [],
     "description": "Interconnection upgrades and cost estimates needed to interconnect the following Interconnection Customer facility, GEN-2017-146 (151.8 MW/Wind), into the Point of Interconnection (POI) at Deaf Smith - Plant X 230kV",
@@ -10213,9 +10243,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168217546",
+            "lat": 34.8207776,
+            "lon": -102.3608448,
+            "name": "Deaf Smith",
+            "operator": "Xcel Energy",
+            "osm_name": "Deaf Smith Interchange",
+            "state": "TX",
+            "voltage": "230000;115000"
+          },
           "name": "Deaf Smith",
           "norm": "DEAF SMITH",
-          "status": "ambiguous"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -10582,7 +10626,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:143404",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168061127 (TUCO), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/168061127 is named “TUCO Interchange”; “TUCO” is its alias.",
+      "lat": 33.869321,
+      "lon": -101.842391
+    },
     "counties": [],
     "description": "Interconnection upgrades and cost estimates needed to interconnect the following Interconnection Customer facility, GEN-2017-151 (300 MW/Wind), into the Point of Interconnection (POI) at TUCO - Oklaunion 345kV",
     "evidence": {
@@ -10617,9 +10666,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168061127",
+            "lat": 33.8693215,
+            "lon": -101.8423909,
+            "name": "TUCO",
+            "operator": "Xcel Energy",
+            "osm_name": "TUCO Interchange",
+            "state": "TX",
+            "voltage": "345000;230000;115000;69000"
+          },
           "name": "TUCO",
           "norm": "TUCO",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": "Oklaunion",
@@ -10635,12 +10698,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "TUCO-Oklaunion 345kV GEN-2017-151 Interconnection Costs",
     "name": "TUCO - Oklaunion 345kV GEN-2017-151 Interconnection (Non-Shared NU) (SPS)",
     "native_id": "143404",
@@ -10679,7 +10742,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:143405",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168061127 (TUCO), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/168061127 is named “TUCO Interchange”; “TUCO” is its alias.",
+      "lat": 33.869321,
+      "lon": -101.842391
+    },
     "counties": [],
     "description": "Interconnection upgrades and cost estimates needed to interconnect the following Interconnection Customer facility, GEN-2017-151 (300 MW/Wind), into the Point of Interconnection (POI) at TUCO - Oklaunion 345kV",
     "evidence": {
@@ -10714,9 +10782,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168061127",
+            "lat": 33.8693215,
+            "lon": -101.8423909,
+            "name": "TUCO",
+            "operator": "Xcel Energy",
+            "osm_name": "TUCO Interchange",
+            "state": "TX",
+            "voltage": "345000;230000;115000;69000"
+          },
           "name": "TUCO",
           "norm": "TUCO",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": "Oklaunion",
@@ -10732,12 +10814,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "TUCO-Oklaunion 345kV GEN-2017-151 Interconnection Costs",
     "name": "TUCO - Oklaunion 345kV GEN-2017-151 Interconnection (TOIF) (SPS)",
     "native_id": "143405",
@@ -16121,7 +16203,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:156494",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Switch out the Potter County 345 kV 75 MVAR line reactor on the Potter County to Hitchland 345 kV line to be remote switchable",
     "evidence": {
@@ -16156,9 +16243,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -16169,12 +16270,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Device - Potter County 345 kV Line Reactor",
     "name": "Potter County 345 kV Line Reactor",
     "native_id": "156494",
@@ -16213,7 +16314,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:156497",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/168061127 (TUCO), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/168061127 is named “TUCO Interchange”; “TUCO” is its alias.",
+      "lat": 33.869321,
+      "lon": -101.842391
+    },
     "counties": [],
     "description": "Switch out the Border 345 kV (50 MVAR) - Tuco 345 kV (100 MVAR) 345kV line reactors to be switchable",
     "evidence": {
@@ -16252,9 +16358,23 @@
           "status": "not_a_facility"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/168061127",
+            "lat": 33.8693215,
+            "lon": -101.8423909,
+            "name": "TUCO",
+            "operator": "Xcel Energy",
+            "osm_name": "TUCO Interchange",
+            "state": "TX",
+            "voltage": "345000;230000;115000;69000"
+          },
           "name": "Tuco",
           "norm": "TUCO",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -16265,12 +16385,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Device - Border 345 kV-Tuco 345 kV Line Reactors",
     "name": "Border 345 kV-Tuco 345 kV Line Reactors",
     "native_id": "156497",
@@ -21849,7 +21969,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:158629",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Install new 345/230 transformer at Potter County 345 kV substation CKt2",
     "evidence": {
@@ -21884,9 +22009,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -21897,13 +22036,13 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         230,
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "XFR-Potter County 345/230 kV Ckt1 & Ckt2",
     "name": "Potter County 345/230 kV Transformer Ckt 2 (345 kV)",
     "native_id": "158629",
@@ -21942,7 +22081,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:158630",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Expand and replace 230 kV terminal equipment at Potter County substation to support the replacement of the 345/230 kV transformer ckt 1 and the new 345/230 kV transformer ckt 2",
     "evidence": {
@@ -21977,9 +22121,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -21990,13 +22148,13 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         230,
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "XFR-Potter County 345/230 kV Ckt1 & Ckt2",
     "name": "Potter County 345/230 kV Transformer Ckt 1 (230 kV)",
     "native_id": "158630",
@@ -22035,7 +22193,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:158631",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Replace existing 345/230 kV transformer at Potter County substation ckt 1",
     "evidence": {
@@ -22070,9 +22233,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -22083,13 +22260,13 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         230,
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "XFR-Potter County 345/230 kV Ckt1 & Ckt2",
     "name": "Potter County 345/230 kV Transformer Ckt 1",
     "native_id": "158631",
@@ -22128,7 +22305,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:158632",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Expand and replace 345 kV terminal equipment at Potter County substation to support the replacement of the 345/230 kV transformer ckt 1 and the new 345/230 kV transformer ckt 2",
     "evidence": {
@@ -22163,9 +22345,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -22176,12 +22372,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "XFR-Potter County 345/230 kV Ckt1 & Ckt2",
     "name": "Potter County 345 kV Substation Expansion",
     "native_id": "158632",
@@ -23264,7 +23460,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:159467",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183461222 (Lubbock South), corroborated by operator, voltage. OSM way/183461222 is named “Lubbock South Interchange”; “Lubbock South” is its alias.",
+      "lat": 33.511676,
+      "lon": -101.826289
+    },
     "counties": [],
     "description": "Install any necessary terminal equipment at Lubbock South 115 kV substation for the line from Lubbock South 115 kV substation to Lubbock East 115 kV substation to meet a summer emergency rating of 239 MVA.",
     "evidence": {
@@ -23299,9 +23500,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183461222",
+            "lat": 33.5116755,
+            "lon": -101.8262887,
+            "name": "Lubbock South",
+            "operator": "Xcel Energy",
+            "osm_name": "Lubbock South Interchange",
+            "state": "TX",
+            "voltage": "230000;115000;69000"
+          },
           "name": "Lubbock South",
           "norm": "LUBBOCK SOUTH",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -23312,12 +23527,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Sub - Lubbock South 115 kV - Lubbock East 115 kV Terminal Upgrades",
     "name": "Lubbock South 115 kV Terminal Upgrade #1",
     "native_id": "159467",
@@ -23356,7 +23571,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:159468",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183461223 (Lubbock East), corroborated by operator, voltage. OSM way/183461223 is named “Lubbock East Interchange”; “Lubbock East” is its alias.",
+      "lat": 33.571219,
+      "lon": -101.79149
+    },
     "counties": [],
     "description": "Install any necessary terminal equipment at Lubbock East 115 kV substation for the line from Lubbock East 115 kV substation to Lubbock South 115 kV substation to meet a summer emergency rating of 239 MVA.",
     "evidence": {
@@ -23391,9 +23611,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183461223",
+            "lat": 33.5712191,
+            "lon": -101.7914901,
+            "name": "Lubbock East",
+            "operator": "Xcel Energy",
+            "osm_name": "Lubbock East Interchange",
+            "state": "TX",
+            "voltage": "230000;115000;69000"
+          },
           "name": "Lubbock East",
           "norm": "LUBBOCK EAST",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -23404,12 +23638,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Sub - Lubbock South 115 kV - Lubbock East 115 kV Terminal Upgrades",
     "name": "Lubbock East 115 kV Terminal Upgrade",
     "native_id": "159468",
@@ -23448,7 +23682,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:159565",
-    "center": null,
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/463732641 (Kingsmill), OSM way/183493332 (Grapevine), corroborated by operator, voltage. OSM way/463732641 is named “Kingsmill Interchange”; “Kingsmill” is its alias. OSM way/183493332 is named “Grapevine Interchange”; “Grapevine” is its alias.",
+      "lat": 35.448798,
+      "lon": -100.966688
+    },
     "counties": [],
     "description": "Build 10.7-mile 115 kV Ckt 1 line from Kingsmill 115 kV substation to Grapevine 115 kV substation and upgrade any necessary terminal equipment to achieve a summer emergency rating of 303 MVA.",
     "evidence": {
@@ -23483,14 +23722,42 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/463732641",
+            "lat": 35.4956532,
+            "lon": -101.0423974,
+            "name": "Kingsmill",
+            "operator": "Xcel Energy",
+            "osm_name": "Kingsmill Interchange",
+            "state": "TX",
+            "voltage": "115000;69000"
+          },
           "name": "Kingsmill",
           "norm": "KINGSMILL",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183493332",
+            "lat": 35.4019438,
+            "lon": -100.8909778,
+            "name": "Grapevine",
+            "operator": "Xcel Energy",
+            "osm_name": "Grapevine Interchange",
+            "state": "TX",
+            "voltage": "230000;115000"
+          },
           "name": "Grapevine",
           "norm": "GRAPEVINE",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -23501,12 +23768,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Kingsmill 115 kV - Grapevine 115 kV New Line",
     "name": "Kingsmill - Grapevine 115 kV Ckt 1 New Line",
     "native_id": "159565",
@@ -23545,7 +23812,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:159566",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/463732641 (Kingsmill), corroborated by operator, voltage. OSM way/463732641 is named “Kingsmill Interchange”; “Kingsmill” is its alias.",
+      "lat": 35.495653,
+      "lon": -101.042397
+    },
     "counties": [],
     "description": "Install any necessary terminal equipment at Kingsmill 115 kV substation to support a new line from Kingsmill 115 kV substation to Grapevine 115 kV substation with a summer emergency rating of 303 MVA.",
     "evidence": {
@@ -23580,9 +23852,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/463732641",
+            "lat": 35.4956532,
+            "lon": -101.0423974,
+            "name": "Kingsmill",
+            "operator": "Xcel Energy",
+            "osm_name": "Kingsmill Interchange",
+            "state": "TX",
+            "voltage": "115000;69000"
+          },
           "name": "Kingsmill",
           "norm": "KINGSMILL",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -23593,12 +23879,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Kingsmill 115 kV - Grapevine 115 kV New Line",
     "name": "Kingsmill 115 kV Ckt 1 Terminal Upgrade",
     "native_id": "159566",
@@ -23637,7 +23923,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:159567",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183493332 (Grapevine), corroborated by operator, voltage. OSM way/183493332 is named “Grapevine Interchange”; “Grapevine” is its alias.",
+      "lat": 35.401944,
+      "lon": -100.890978
+    },
     "counties": [],
     "description": "Install any necessary terminal equipment at Grapevine 115 kV substation to support a new line from Grapevine 115 kV substation to Kingsmill 115 kV substation with a summer emergency rating of 303 MVA.",
     "evidence": {
@@ -23672,9 +23963,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183493332",
+            "lat": 35.4019438,
+            "lon": -100.8909778,
+            "name": "Grapevine",
+            "operator": "Xcel Energy",
+            "osm_name": "Grapevine Interchange",
+            "state": "TX",
+            "voltage": "230000;115000"
+          },
           "name": "Grapevine",
           "norm": "GRAPEVINE",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -23685,12 +23990,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         115
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Kingsmill 115 kV - Grapevine 115 kV New Line",
     "name": "Grapevine 115 kV Ckt 1 Terminal Upgrade",
     "native_id": "159567",
@@ -29484,7 +29789,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:170618",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Expand Potter County 345 kV substation",
     "evidence": {
@@ -29519,9 +29829,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -29532,12 +29856,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Potter County 765 kV - Crossroads 765 kV - Phantom 765 kV",
     "name": "Potter County 345 kV Substation Expansion #1",
     "native_id": "170618",
@@ -29760,7 +30084,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:170744",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Build a new 345 kV Ckt 1 line from Tecovas 345 kV substation to Potter County 345 kV substation.",
     "evidence": {
@@ -29800,9 +30129,23 @@
           "status": "no_facility"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -29813,12 +30156,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Potter County 765 kV - Crossroads 765 kV - Phantom 765 kV",
     "name": "Tecovas - Potter County 345 kV Ckt 1 New Line",
     "native_id": "170744",
@@ -29857,7 +30200,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:170745",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Build a new 345 kV Ckt 2 line from Tecovas 345 kV substation to Potter County 345 kV substation.",
     "evidence": {
@@ -29897,9 +30245,23 @@
           "status": "no_facility"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -29910,12 +30272,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Potter County 765 kV - Crossroads 765 kV - Phantom 765 kV",
     "name": "Tecovas - Potter County 345 kV Ckt 2 New Line",
     "native_id": "170745",
@@ -29954,7 +30316,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:170746",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/164420609 (Potter County), corroborated by operator, voltage. Partial: one of two endpoints. OSM way/164420609 is named “Potter County Interchange”; “Potter County” is its alias.",
+      "lat": 35.310279,
+      "lon": -101.92291
+    },
     "counties": [],
     "description": "Build a new 345 kV Ckt 3 line from Tecovas 345 kV substation to Potter County 345 kV substation.",
     "evidence": {
@@ -29994,9 +30361,23 @@
           "status": "no_facility"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/164420609",
+            "lat": 35.3102787,
+            "lon": -101.9229098,
+            "name": "Potter County",
+            "operator": "Xcel Energy",
+            "osm_name": "Potter County Interchange",
+            "state": "TX",
+            "voltage": "345000;230000"
+          },
           "name": "Potter County",
           "norm": "POTTER COUNTY",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -30007,12 +30388,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         345
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Potter County 765 kV - Crossroads 765 kV - Phantom 765 kV",
     "name": "Tecovas - Potter County 345 kV Ckt 3 New Line",
     "native_id": "170746",
@@ -51132,7 +51513,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:171209",
-    "center": null,
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183461222 (Lubbock South), OSM way/183383431 (Wolfforth), corroborated by operator, voltage. OSM way/183461222 is named “Lubbock South Interchange”; “Lubbock South” is its alias. OSM way/183383431 is named “Wolfforth Interchange”; “Wolfforth” is its alias.",
+      "lat": 33.501593,
+      "lon": -101.940981
+    },
     "counties": [],
     "description": "Rebuild 14.62-mile Ckt 1 line from Lubbock South 230 kV substation to Wolfforth 230 kV substation",
     "evidence": {
@@ -51167,14 +51553,42 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183461222",
+            "lat": 33.5116755,
+            "lon": -101.8262887,
+            "name": "Lubbock South",
+            "operator": "Xcel Energy",
+            "osm_name": "Lubbock South Interchange",
+            "state": "TX",
+            "voltage": "230000;115000;69000"
+          },
           "name": "Lubbock South",
           "norm": "LUBBOCK SOUTH",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183383431",
+            "lat": 33.4915109,
+            "lon": -102.0556733,
+            "name": "Wolfforth",
+            "operator": "Xcel Energy",
+            "osm_name": "Wolfforth Interchange",
+            "state": "TX",
+            "voltage": "230000;115000"
+          },
           "name": "Wolfforth",
           "norm": "WOLFFORTH",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -51185,12 +51599,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         230
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Lubbock South - Wolfforth 230 kV Rebuild",
     "name": "Lubbock South - Wolfforth 230 kV Ckt 1 Rebuild",
     "native_id": "171209",
@@ -51229,7 +51643,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:171210",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183461222 (Lubbock South), corroborated by operator, voltage. OSM way/183461222 is named “Lubbock South Interchange”; “Lubbock South” is its alias.",
+      "lat": 33.511676,
+      "lon": -101.826289
+    },
     "counties": [],
     "description": "Upgrade terminal equipment at Lubbock South 230 kV substation for Ckt 1 toward Wolfforth 230 kV",
     "evidence": {
@@ -51264,9 +51683,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183461222",
+            "lat": 33.5116755,
+            "lon": -101.8262887,
+            "name": "Lubbock South",
+            "operator": "Xcel Energy",
+            "osm_name": "Lubbock South Interchange",
+            "state": "TX",
+            "voltage": "230000;115000;69000"
+          },
           "name": "Lubbock South",
           "norm": "LUBBOCK SOUTH",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -51277,12 +51710,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         230
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Lubbock South - Wolfforth 230 kV Rebuild",
     "name": "Lubbock South 230 kV Ckt 1 Terminal Upgrade toward Wolfforth 230 kV",
     "native_id": "171210",
@@ -51321,7 +51754,12 @@
   },
   {
     "_id": "spp-qpt-2026q3-south:171211",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/183383431 (Wolfforth), corroborated by operator, voltage. OSM way/183383431 is named “Wolfforth Interchange”; “Wolfforth” is its alias.",
+      "lat": 33.491511,
+      "lon": -102.055673
+    },
     "counties": [],
     "description": "Upgrade terminal equipment at Wolfforth 230 kV substation for Ckt 1 toward Lubbock South 230 kV",
     "evidence": {
@@ -51356,9 +51794,23 @@
       "dataset": "OpenStreetMap power=substation, TX (ODbL)",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/183383431",
+            "lat": 33.4915109,
+            "lon": -102.0556733,
+            "name": "Wolfforth",
+            "operator": "Xcel Energy",
+            "osm_name": "Wolfforth Interchange",
+            "state": "TX",
+            "voltage": "230000;115000"
+          },
           "name": "Wolfforth",
           "norm": "WOLFFORTH",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "independent_review": false,
@@ -51369,12 +51821,12 @@
       ],
       "reason": null,
       "rule": "C33",
-      "tier": null,
+      "tier": "candidate",
       "voltages_kv": [
         230
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "major_project": "Line - Lubbock South - Wolfforth 230 kV Rebuild",
     "name": "Wolfforth 230 kV Ckt 1 Terminal Upgrade toward Lubbock South 230 kV",
     "native_id": "171211",

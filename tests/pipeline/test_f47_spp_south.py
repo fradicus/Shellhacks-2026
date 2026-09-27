@@ -5,7 +5,7 @@ from datetime import datetime
 from california.caiso import match
 from common import REPO_ROOT, load_json
 from national.build import OUTPUTS, _coverage, validate_snapshot_values
-from sppsouth.build import OPERATOR_KEYS, project, published_uids
+from sppsouth.build import OPERATOR_KEYS, project, published_uids, with_aliases
 from sppsouth.publish import apply_release
 
 ARTIFACT = {"url": "https://www.spp.org/x.zip", "sha256": "0" * 64, "retrieved_at": "2026-09-27T08:00:00Z"}
@@ -55,3 +55,14 @@ def test_committed_release_appends_unreviewed_candidates_in_their_states():
     assert all(p["location_review"] == ("unreviewed" if p["center"] else "unlocated") for p in added)
     assert not {p["native_id"] for p in added} & published_uids()
     assert snapshot["coverage"]["sppsouth"]["independently_confirmed_projects"] == 0
+
+
+def test_xcel_interchange_aliases_come_only_from_sps_osm_names():
+    site = facility("way/9", "Potter County Interchange", 35.31, -101.92, "Xcel Energy", state="TX")
+    named = {f["name"] for f in with_aliases([site])}
+    assert named == {"Potter County Interchange", "Potter County"}
+    assert with_aliases([site | {"operator": "Golden Spread Electric Cooperative"}]) == [
+        site | {"operator": "Golden Spread Electric Cooperative"}]
+    located = project(row(**{"ProjectOwner": "SPS", "State(s)": "TX", "Upgrade Name": "Potter County 345 kV Line Reactor"}),
+                      ARTIFACT, {"TX": with_aliases([site])})
+    assert located["center"]["basis"] == "source_point"

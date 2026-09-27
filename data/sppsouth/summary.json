@@ -1,8 +1,8 @@
 {
   "by_basis": {
-    "one": 72,
-    "source_point": 164,
-    "two": 17
+    "one": 77,
+    "source_point": 176,
+    "two": 21
   },
   "by_owner": {
     "AEP": 114,
@@ -32,7 +32,7 @@
       "projects": 327
     },
     "TX": {
-      "located": 29,
+      "located": 50,
       "projects": 269
     }
   },
@@ -44,14 +44,15 @@
     "unknown": 1
   },
   "by_tier": {
-    "candidate": 223,
+    "candidate": 244,
     "candidate_unique_name": 30
   },
-  "distinct_points": 106,
-  "located": 253,
+  "distinct_points": 114,
+  "located": 274,
   "located_by_status": {
-    "in_service": 56,
-    "planned": 164,
+    "cancelled": 2,
+    "in_service": 57,
+    "planned": 182,
     "proposed": 32,
     "unknown": 1
   },
@@ -62,9 +63,9 @@
     "ambiguous,not_a_facility": 2,
     "endpoint_not_named": 2,
     "multi_terminal_line": 17,
-    "no_facility": 326,
-    "no_facility,not_a_facility": 23,
-    "no_facility,operator_conflict": 12,
+    "no_facility": 307,
+    "no_facility,not_a_facility": 22,
+    "no_facility,operator_conflict": 11,
     "no_named_facility": 25,
     "not_a_facility": 3,
     "not_a_facility,operator_conflict": 1,
