@@ -101,3 +101,5 @@ An optional public-only probe is `node --import ./tests/web/operations-providers
 from repository root. It writes the historical verification report and does not
 read credentials or call Google routing. It is not part of offline CI.
 `GET /api/operations/conditions?lat=47.6062&lon=-122.3321` refreshes only weather and roadwork, at the published 60-second cadence. It does not repeat soil or annual AEF queries. NWS identifies this public project by default as `GridBridge (https://github.com/fradicus/Shellhacks-2026/issues)`; deployments may override the contact using `NWS_USER_AGENT`. No NWS secret is required.
+
+`GET /api/operations/water?lat=47.6062&lon=-122.3321` is additive free-public water context (USGS gage height vicinity, NOAA tides within 25 mi, FEMA flood zone, USFWS wetlands). It does not change site or conditions payloads. No paid keys. Each source can fail independently; missing coverage is not an all-clear.

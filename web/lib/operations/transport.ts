@@ -1,6 +1,16 @@
 import { createHash } from "node:crypto";
 
-const HOSTS = new Set(["api.weather.gov", "sdmdataaccess.nrcs.usda.gov", "sdmdataaccess.sc.egov.usda.gov", "wzdx.wsdot.wa.gov", "routes.googleapis.com"]);
+const HOSTS = new Set([
+  "api.weather.gov",
+  "sdmdataaccess.nrcs.usda.gov",
+  "sdmdataaccess.sc.egov.usda.gov",
+  "wzdx.wsdot.wa.gov",
+  "routes.googleapis.com",
+  "waterservices.usgs.gov",
+  "api.tidesandcurrents.noaa.gov",
+  "hazards.fema.gov",
+  "fwspublicservices.wim.usgs.gov",
+]);
 export type Fetcher = typeof fetch;
 export const digest = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 export type Transport = (url: string, init?: RequestInit, maxBytes?: number) => Promise<{ value: unknown; hash: string; retrieved: string }>;

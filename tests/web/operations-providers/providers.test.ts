@@ -1,13 +1,15 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
-import { RouteRequestSchema, parseSiteQuery, parseConditionsQuery, millimeters } from "../../../web/lib/operations/contracts.ts";
+import { RouteRequestSchema, parseSiteQuery, parseConditionsQuery, parseWaterQuery, millimeters } from "../../../web/lib/operations/contracts.ts";
 import { GET as getConditions } from "../../../web/app/api/operations/conditions/route.ts";
+import { GET as getWater } from "../../../web/app/api/operations/water/route.ts";
 import { washingtonContains } from "../../../web/lib/operations/jurisdiction.ts";
 import { transport } from "../../../web/lib/operations/transport.ts";
 import { weather, soil, roadwork, truckRoute, context, DEFAULT_NWS_USER_AGENT, type Context } from "../../../web/lib/operations/providers.ts";
+import { water as waterProvider, distanceMiles } from "../../../web/lib/operations/water.ts";
 import { validateSnapshot, aef } from "../../../web/lib/operations/aef.ts";
-import { sampleRoute, route, conditions, reference } from "../../../web/lib/operations/service.ts";
+import { sampleRoute, route, conditions, water, reference } from "../../../web/lib/operations/service.ts";
 
 const now = new Date("2026-09-26T20:00:00Z");
 const point = { lat: 47.6062, lon: -122.3321 };
@@ -175,4 +177,114 @@ test("partial AEF aggregate retrieval comes from actual data, not current unavai
   assert.equal(result.aef.data?.samples.length, 1); assert.equal(result.aef.coverage.failed, 1);
   assert.equal(result.aef.retrieved_at, new Date(evidence.records[0].retrieved_at).toISOString());
   assert.match(result.aef.limitations.join(" "), /retrieved/);
+});
+
+function waterIo(handlers: Record<string, unknown>): Context {
+  return {
+    now,
+    userAgent: "GridBridge test",
+    io: async (url) => {
+      const host = new URL(url).hostname;
+      if (!(host in handlers)) throw new Error(`Unexpected water host ${host}`);
+      const value = handlers[host];
+      if (typeof value === "function") return wrap((value as (u: string) => unknown)(url));
+      return wrap(value);
+    },
+  };
+}
+
+const usgsSeries = {
+  value: {
+    timeSeries: [
+      {
+        sourceInfo: {
+          siteName: "DUWAMISH RIVER AT SEATTLE",
+          siteCode: [{ value: "12113350" }],
+          geoLocation: { geogLocation: { latitude: 47.56, longitude: -122.34 } },
+        },
+        variable: { variableCode: [{ value: "00065" }], variableName: "Gage height", unit: { unitCode: "ft" } },
+        values: [{ value: [{ value: "8.12", dateTime: "2026-09-26T19:45:00.000-07:00" }] }],
+      },
+      {
+        sourceInfo: {
+          siteName: "FAR GAUGE",
+          siteCode: [{ value: "99999999" }],
+          geoLocation: { geogLocation: { latitude: 48.1, longitude: -121.5 } },
+        },
+        variable: { variableCode: [{ value: "00065" }], variableName: "Gage height", unit: { unitCode: "ft" } },
+        values: [{ value: [{ value: "1.00", dateTime: "2026-09-26T19:45:00.000-07:00" }] }],
+      },
+    ],
+  },
+};
+
+test("water combines USGS NOAA FEMA and wetlands, skips inland tides, and rejects query drift", async () => {
+  assert.ok(distanceMiles(point, { lat: 47.56, lon: -122.34 }) < 17);
+  assert.ok(distanceMiles(point, { lat: 48.1, lon: -121.5 }) > 17);
+  const coastal = waterIo({
+    "waterservices.usgs.gov": usgsSeries,
+    "api.tidesandcurrents.noaa.gov": (url: string) => {
+      if (url.includes("/mdapi/")) {
+        return {
+          stations: [
+            { id: "9447130", name: "Seattle", lat: 47.6029, lng: -122.3396, state: "WA", tidal: true },
+            { id: "9414290", name: "San Francisco", lat: 37.8063, lng: -122.4659, state: "CA", tidal: true },
+          ],
+        };
+      }
+      return { predictions: [{ t: "2026-09-26 04:12", v: "8.5", type: "H" }, { t: "2026-09-26 10:40", v: "1.2", type: "L" }] };
+    },
+    "hazards.fema.gov": { features: [{ attributes: { FLD_ZONE: "AE", ZONE_SUBTY: null, SFHA_TF: "T" } }] },
+    "fwspublicservices.wim.usgs.gov": { features: [] },
+  });
+  const result = await water(point, coastal);
+  assert.deepEqual(Object.keys(result).sort(), ["request", "water"]);
+  assert.equal(result.water.data?.rivers?.gauges.length, 1);
+  assert.equal(result.water.data?.rivers?.gauges[0].site_id, "12113350");
+  assert.equal(result.water.data?.tides?.station?.id, "9447130");
+  assert.equal(result.water.data?.tides?.highs_lows.length, 2);
+  assert.equal(result.water.data?.flood?.zones[0].zone, "AE");
+  assert.equal(result.water.data?.wetlands?.mapped, false);
+  assert.equal(result.water.coverage.requested, 4);
+  assert.equal(result.water.coverage.completed, 4);
+  assert.equal((await reference(coastal)).providers.some((p) => p.id === "water" && p.ready), true);
+
+  const inlandPoint = { lat: 39.8283, lon: -98.5795 };
+  const inland = await waterProvider(inlandPoint, {
+    now,
+    io: async (url) => {
+      const host = new URL(url).hostname;
+      if (host === "waterservices.usgs.gov") return wrap({ value: { timeSeries: [] } });
+      if (host === "api.tidesandcurrents.noaa.gov") return wrap({ stations: [{ id: "9447130", name: "Seattle", lat: 47.6029, lng: -122.3396, state: "WA" }] });
+      if (host === "hazards.fema.gov") return wrap({ features: [{ attributes: { FLD_ZONE: "X", ZONE_SUBTY: "AREA OF MINIMAL FLOOD HAZARD", SFHA_TF: "F" } }] });
+      if (host === "fwspublicservices.wim.usgs.gov") return wrap({ features: [{ attributes: { WETLAND_TYPE: "Freshwater Emergent Wetland", ATTRIBUTE: "PEM1C", ACRES: 12.5 } }] });
+      throw new Error(host);
+    },
+  });
+  assert.equal(inland.data?.tides?.station, null);
+  assert.match(inland.limitations.join(" "), /inland|25 miles/i);
+  assert.equal(inland.data?.flood?.zones[0].zone, "X");
+  assert.equal(inland.data?.wetlands?.mapped, true);
+
+  assert.deepEqual(parseWaterQuery(new URLSearchParams("lat=47.6062&lon=-122.3321")), point);
+  for (const query of ["lat=1&lon=2&year=2025", "lat=1&lon=2&lat=1", "lat=91&lon=2", "lat=NaN&lon=2", "lat=1&lon=2&url=x"]) {
+    assert.throws(() => parseWaterQuery(new URLSearchParams(query)));
+    const response = await getWater(new Request(`https://gridbridge.test/api/operations/water?${query}`));
+    assert.equal(response.status, 400);
+    assert.equal(response.headers.get("cache-control"), "no-store");
+  }
+
+  const failed = await waterProvider(point, {
+    now,
+    io: async () => { throw new Error("Provider HTTP 503"); },
+  });
+  assert.equal(failed.status, "unavailable");
+  assert.equal(failed.data, null);
+  assert.doesNotMatch(failed.limitations.join(" "), /https?:\/\//);
+
+  let approved = 0;
+  const io = transport(async () => { approved++; return new Response(JSON.stringify({ features: [] }), { status: 200, headers: { "content-type": "application/json" } }); }, 50);
+  await io("https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query?f=json");
+  await assert.rejects(io("https://evil.example/water"));
+  assert.equal(approved, 1);
 });
