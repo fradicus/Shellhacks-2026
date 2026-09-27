@@ -10,8 +10,9 @@ import s from "./impact.module.css";
 export type MapProject = { key: string; name: string; utility: string; lat: number; lon: number; confidence: string | null; inPair: boolean };
 export type PickedPoint = { label: string; lat: number; lon: number };
 
-const STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
-const COLORS = { DESC: "#2563eb", GPC: "#ea580c", unknown: "#71717a" };
+// Same dark basemap as /time; marker colors are the site tokens in app/globals.css (--desc, --gpc, --unknown, --accent, --warn, --band0).
+const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
+const COLORS = { DESC: "#5cc8ff", GPC: "#ffae42", unknown: "#a3a8b6", accent: "#bfe9ff", picked: "#ff9a78", gauge: "#86e5cf", tide: "#c9a7ff", ink: "#06080d" };
 const SOUTHEAST: [number, number, number, number] = [-85.6, 30.3, -78.5, 35.3];
 const EMPTY = { type: "FeatureCollection" as const, features: [] };
 
@@ -45,19 +46,19 @@ export function SiteMap({ projects, point, water, onPick }: { projects: MapProje
           if (!map) return;
           for (const id of ["projects", "picked", "gauges", "tide"]) map.addSource(id, { type: "geojson", data: EMPTY });
           const color = ["match", ["get", "utility"], "DESC", COLORS.DESC, "GPC", COLORS.GPC, COLORS.unknown];
-          map.addLayer({ id: "pair-halo", type: "circle", source: "projects", filter: ["==", ["get", "inPair"], 1], paint: { "circle-radius": 13, "circle-color": "#facc15", "circle-opacity": 0.55 } });
+          map.addLayer({ id: "pair-halo", type: "circle", source: "projects", filter: ["==", ["get", "inPair"], 1], paint: { "circle-radius": 14, "circle-color": COLORS.accent, "circle-opacity": 0.22, "circle-stroke-color": COLORS.accent, "circle-stroke-width": 1, "circle-stroke-opacity": 0.6 } });
           map.addLayer({
             id: "projects", type: "circle", source: "projects",
             paint: {
               "circle-radius": 6,
               "circle-color": ["case", ["==", ["get", "conf"], "low"], "rgba(0,0,0,0)", color] as never,
-              "circle-stroke-color": ["case", ["==", ["get", "conf"], "low"], color, "#ffffff"] as never,
+              "circle-stroke-color": ["case", ["==", ["get", "conf"], "low"], color, COLORS.ink] as never,
               "circle-stroke-width": ["case", ["==", ["get", "conf"], "low"], 2.5, 1.5],
             },
           });
-          map.addLayer({ id: "gauges", type: "circle", source: "gauges", paint: { "circle-radius": 5, "circle-color": "#0891b2", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.5 } });
-          map.addLayer({ id: "tide", type: "circle", source: "tide", paint: { "circle-radius": 6, "circle-color": "#7c3aed", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.5 } });
-          map.addLayer({ id: "picked", type: "circle", source: "picked", paint: { "circle-radius": 9, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#dc2626", "circle-stroke-width": 3 } });
+          map.addLayer({ id: "gauges", type: "circle", source: "gauges", paint: { "circle-radius": 5, "circle-color": COLORS.gauge, "circle-stroke-color": COLORS.ink, "circle-stroke-width": 1.5 } });
+          map.addLayer({ id: "tide", type: "circle", source: "tide", paint: { "circle-radius": 6, "circle-color": COLORS.tide, "circle-stroke-color": COLORS.ink, "circle-stroke-width": 1.5 } });
+          map.addLayer({ id: "picked", type: "circle", source: "picked", paint: { "circle-radius": 9, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": COLORS.picked, "circle-stroke-width": 3 } });
           map.on("click", (e) => {
             const hit = map!.queryRenderedFeatures(e.point, { layers: ["projects"] })[0];
             if (hit && hit.geometry.type === "Point") {
@@ -113,10 +114,10 @@ export function SiteMap({ projects, point, water, onPick }: { projects: MapProje
       <li><i style={{ background: COLORS.DESC }} />DESC project</li>
       <li><i style={{ background: COLORS.GPC }} />Georgia Power project</li>
       <li><i className={s.legendRing} />Low-confidence location</li>
-      <li><i style={{ background: "#facc15" }} />Selected pair</li>
+      <li><i className={s.legendHalo} />Selected pair</li>
       <li><i className={s.legendPicked} />Checked point</li>
-      <li><i style={{ background: "#0891b2" }} />USGS gauge</li>
-      <li><i style={{ background: "#7c3aed" }} />NOAA tide station</li>
+      <li><i style={{ background: COLORS.gauge }} />USGS gauge</li>
+      <li><i style={{ background: COLORS.tide }} />NOAA tide station</li>
     </ul>
   </div>;
 }
