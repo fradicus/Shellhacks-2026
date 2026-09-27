@@ -153,3 +153,10 @@ meaning one thing only: the filed in-service date of a project you are looking a
 
 Use summaries for initial rendering and load dataset-pinned evidence on selection.
 See [F19 compact payload](../../decisions/F19-compact-payload.md) for acceptance.
+
+## C48 nearby candidates
+
+The user selected provisional straight-line circles. Implement the scoped, paged
+national candidate list and existing map selection under
+[F19 national candidates](../../decisions/F19-national-candidates.md). Keep the
+legacy pair views accessible as a separate choice and load evidence on selection.
