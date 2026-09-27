@@ -21,7 +21,7 @@ for (const width of [1440, 390]) {
     await list.locator("ol li button").nth(55).click();
     const card = page.getByRole("complementary", { name: "Selected pair" });
     await expect(card).toContainText("Provisional candidate");
-    await expect(card).toContainText("straight-line miles");
+    await expect(card).toContainText("miles by road");
     expect(evidence).toBe(0);
     const shared = page.url();
     await card.locator("summary").first().click();
