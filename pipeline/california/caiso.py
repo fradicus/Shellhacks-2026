@@ -103,9 +103,25 @@ def match(name: str | None, facilities: list[dict], keys: list[str], kv: set[int
             "corroboration": ["unique_in_state"]}
 
 
+# FIX-F44: endpoint text the shared parser leaves attached to a name ("Re-conductor Fulton", "Wilson Sub: Convert",
+# "TL692: Japanese Mesa", bank codes "Windhub AA" / "Serrano 4AA", "Mesa Spare"). Applied here, not in named(), which
+# other rollouts import.
+ENDPOINT_NOISE = [re.compile(r"^Re-?conductor\s+", re.I), re.compile(r"^TL\s?\d+\w*:\s*"),
+                  re.compile(r"\s+Sub\b:?.*$"), re.compile(r"\s+(?:\d?[A-Z]{2}|Spare)$")]
+
+
+def endpoint_name(name: str | None) -> str | None:
+    if name is None:
+        return None
+    for pattern in ENDPOINT_NOISE:
+        name = pattern.sub("", name)
+    return name.strip(" :") or None
+
+
 def locate(project: str, description: str | None, facilities: list[dict], keys: list[str]
            ) -> tuple[dict | None, dict]:
     got = named(project, description)
+    got = got | {"names": [endpoint_name(n) for n in got["names"]]}
     kv = {round(float(v)) for group in re.findall(r"([\d.]+(?:/[\d.]+)*)\s?kV", project, re.I)
           for v in group.split("/") if v.replace(".", "", 1).isdigit()}
     matches = [match(n, facilities, keys, kv) if n else {"status": "not_a_facility", "name": None}

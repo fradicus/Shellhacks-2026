@@ -17,7 +17,7 @@ from common import REPO_ROOT, load_json, validate
 
 FOLDER = Path("data/california")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "california-caiso-tdf-2026-07-candidates-1"
+RELEASE_ID = "california-caiso-tdf-2026-07-candidates-2"
 TIERS = ("candidate", "candidate_unique_name")
 
 

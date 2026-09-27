@@ -62,3 +62,15 @@ def test_committed_release_appends_unreviewed_candidates_only():
     # The pins this rollout was asked for: History draws every located project with an event, Overlaps the unbuilt.
     assert sum(bool(p["project_events"]) for p in located) >= 100
     assert sum(p["status_group"] not in {"in_service", "cancelled"} for p in located) >= 100
+
+
+def test_endpoint_names_drop_attached_work_text_but_keep_single_letter_names():
+    from california.caiso import endpoint_name
+
+    assert endpoint_name("Re-conductor Fulton") == "Fulton"
+    assert endpoint_name("Wilson Sub: Convert") == "Wilson"
+    assert endpoint_name("TL692: Japanese Mesa") == "Japanese Mesa"
+    assert endpoint_name("Serrano 4AA") == "Serrano"
+    assert endpoint_name("Windhub AA") == "Windhub" and endpoint_name("Mesa Spare") == "Mesa"
+    assert endpoint_name("Receiving Station B") == "Receiving Station B"  # a one-letter name is not a bank code
+    assert endpoint_name(None) is None
