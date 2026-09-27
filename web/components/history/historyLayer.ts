@@ -7,7 +7,7 @@ import { LineMaterial } from "three/examples/jsm/lines/LineMaterial.js";
 import { LineSegments2 } from "three/examples/jsm/lines/LineSegments2.js";
 import { LineSegmentsGeometry } from "three/examples/jsm/lines/LineSegmentsGeometry.js";
 import type { CustomLayerInterface, CustomRenderMethodInput, Map as MlMap } from "maplibre-gl";
-import { metersPerPixel } from "@/components/time/timeScale";
+import { calmAt, metersPerPixel } from "@/components/time/timeScale";
 import { hex, mul, ease, points, fillPoints, lines, fillLines, project, createRenderer, disposeScene, type RGB, type Seg } from "@/components/time/scenePrimitives";
 import type { Meaning } from "@/lib/history/events";
 
@@ -160,6 +160,8 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
   let emphasis: (key: string) => Emphasis = () => "normal";
   let rulerAt = { lng: -70, lat: 40 };
   let labels: LabelSpec[] = [];
+  // Brightness of unfocused projects by zoom (calmAt, shared with /time).
+  let calm = 1;
   let yearPx = opts.yearPx;
   let heightFactor = 0;
   let anim: { from: number; to: number; start: number; ms: number } | null = null;
@@ -225,22 +227,29 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
     const ground: Pt[] = [];
     const glow: Pt[] = [];
     const rank = { dim: 0, normal: 1, hot: 2, sel: 3 } as const;
+    // Quiet overview, as on /time: an unfocused project at national zoom is a dim stem (q) with a dimmer glyph (dot)
+    // and no halo (glowK); it lights up toward regional zoom, on hover and on selection.
+    const q0 = calm;
+    const glow0 = Math.max(0, (calm - 0.4) / 0.6);
     for (const it of [...items].sort((a, b) => rank[emphasis(a.key)] - rank[emphasis(b.key)])) {
       const e = emphasis(it.key);
       const k = BRIGHT[e];
+      const q = e === "normal" ? q0 : 1;
+      const dot = 0.35 + 0.65 * q;
+      const glowK = e === "normal" ? glow0 : 1;
       const c = hex(it.color);
       const [x, y] = local(it.lng, it.lat);
       const top = topOf(it);
       const lit = Math.min(top, plane);
       const reached = it.glyphs.some((g) => g.z0 <= plane);
-      ground.push({ p: [x, y, 0], c, size: e === "sel" ? 18 : e === "dim" ? 6 : 9, shape: 1, bright: k * (reached ? 0.8 : 0.3) });
-      if (reached && e !== "dim") glow.push({ p: [x, y, 0], c, size: e === "sel" ? 44 : 24, shape: 3, bright: k * 0.3 });
+      ground.push({ p: [x, y, 0], c, size: e === "sel" ? 18 : e === "dim" ? 6 : 9, shape: 1, bright: k * (reached ? 0.8 : 0.3) * dot });
+      if (reached && e !== "dim" && glowK > 0) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 44 : 24, shape: 3, bright: k * 0.3 * glowK });
       // The pillar grows up to the plane; what the record documents later stands above it as a faint dashed ghost.
       if (lit > 0) {
         if (e === "sel") segs.sel.push({ a: [x, y, 0], b: [x, y, lit], ca: mul(c, 0.25), cb: mul(c, 1.1) });
-        else segs.lit.push({ a: [x, y, 0], b: [x, y, lit], ca: mul(c, 0.05 * k), cb: mul(c, 0.5 * k) });
+        else segs.lit.push({ a: [x, y, 0], b: [x, y, lit], ca: mul(c, 0.05 * k * q), cb: mul(c, 0.5 * k * q) });
       }
-      if (top > plane) segs.ghost.push({ a: [x, y, Math.max(plane, 0)], b: [x, y, top], ca: mul(c, 0.12 * k), cb: mul(c, 0.12 * k) });
+      if (top > plane) segs.ghost.push({ a: [x, y, Math.max(plane, 0)], b: [x, y, top], ca: mul(c, 0.12 * k * q), cb: mul(c, 0.12 * k * q) });
       if (it.thread) {
         const z0 = Math.min(it.thread.z0, it.thread.z1);
         const z1 = Math.min(Math.max(it.thread.z0, it.thread.z1), plane);
@@ -248,15 +257,15 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
       }
       for (const g of it.glyphs) {
         const on = g.z0 <= plane;
-        const b = k * (on ? (g.superseded ? 0.55 : 1) : GHOST);
+        const b = k * (on ? (g.superseded ? 0.55 : 1) : GHOST) * dot;
         const size = SIZE[e] * (g.meaning === "actual" ? 1.05 : 1.15);
         if (g.z1 > g.z0) {
           // A month or a year: the whole span as a frosted column, open rings at both ends. No day is picked.
-          segs.span.push({ a: [x, y, g.z0], b: [x, y, g.z1], ca: mul(c, 0.3 * b), cb: mul(c, 0.3 * b) });
+          segs.span.push({ a: [x, y, g.z0], b: [x, y, g.z1], ca: mul(c, 0.3 * b * q), cb: mul(c, 0.3 * b * q) });
           for (const z of [g.z0, g.z1]) (z > plane ? above : below).push({ p: [x, y, z], c, size: size * 0.8, shape: 1, bright: b });
         } else {
           (g.z0 > plane ? above : below).push({ p: [x, y, g.z0], c: g.meaning === "other" ? INK : c, size, shape: SHAPE[g.meaning], bright: b });
-          if (on && e !== "dim" && g.meaning === "actual") glow.push({ p: [x, y, g.z0], c, size: size * 3, shape: 3, bright: k * 0.5 });
+          if (on && e !== "dim" && g.meaning === "actual" && glowK > 0) glow.push({ p: [x, y, g.z0], c, size: size * 3, shape: 3, bright: k * 0.5 * glowK });
         }
       }
     }
@@ -336,13 +345,20 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
         if (t >= 1) anim = null;
         map.triggerRepaint();
       }
+      // Quantized, so zooming rebuilds a few dozen times rather than every frame.
+      const nextCalm = Math.round(calmAt(map.getZoom()) * 40) / 40;
+      if (nextCalm !== calm) {
+        calm = nextCalm;
+        rebuild();
+      }
       const w = gl.drawingBufferWidth;
       const h = gl.drawingBufferHeight;
       const dpr = w / Math.max(map.getCanvas().clientWidth, 1);
       for (const l of allLines) {
         const mat = l.mesh.material as LineMaterial;
         mat.resolution.set(w, h);
-        mat.linewidth = l.width * dpr;
+        // Unfocused stems thin out with the quiet overview; the selected beam (beamsSel) keeps its width.
+        mat.linewidth = l.width * dpr * (l === beamsLit || l === beamsGhost ? 0.5 + 0.5 * calm : 1);
         mat.dashSize = 5 * dpr;
         mat.gapSize = 5 * dpr;
       }

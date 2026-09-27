@@ -132,3 +132,10 @@ Longitude and latitude are the map; the vertical is time, later always higher, e
 - No new dependency or graphics framework, no universal procurement crawler, no history API or export until
   something consumes one.
 - Label the route **History**. Keep `/time` primary and its Historical pair filter intact.
+
+## Quiet overview (2026-09-27)
+
+Match `/time`'s quiet overview ([F19 quiet overview](../../decisions/F19-quiet-overview.md)): at national zoom an
+unfocused project draws as a dim, thin stem with a dimmer glyph and no halo, by the shared `calmAt(zoom)` ramp
+(0.25 at zoom ≤2.5, 0.4 at 4.2, 1 at ≥6.5). Hovered and selected projects stay fully lit; nothing is hidden and no
+date, glyph meaning, color or count changes. Validation: headless screenshots at 1440 and 390 on live data.
