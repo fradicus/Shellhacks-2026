@@ -1,0 +1,187 @@
+{
+  "publication_eligible": false,
+  "source_url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&outFields=*&returnGeometry=false&f=pjson",
+  "retrieved_at": "2026-09-27T01:20:34.972152+00:00",
+  "sha256": "4d0611f68b0743df874795cfb1ea7921ab5a18c0b80bd2c00009295f61a5a483",
+  "source_publication_date": null,
+  "row_count": 16,
+  "unique_certification_ids": 14,
+  "records": [
+    {
+      "object_id": 1,
+      "certification_raw": "TA89-07",
+      "name": "Levee - Midway",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "4/20/1990",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-levee-midway-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 2,
+      "certification_raw": "TA88-06",
+      "name": "Crane - Bridge - Plumosus",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "8/8/1989",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-crane-bridge-plumosus-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 3,
+      "certification_raw": "TA81-03",
+      "name": "Duval - Poinsett",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "11/18/1982",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-poinsett-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 4,
+      "certification_raw": "TA06-14",
+      "name": "Bobwhite - Manatee",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "11/6/2008",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 5,
+      "certification_raw": "TA03-12",
+      "name": "Collier - Orange River",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "7/19/2004",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-collier-orange-river-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 6,
+      "certification_raw": "TA05-13",
+      "name": "St. Johns - Pellicer - Pringle",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "4/27/2006",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-st-johns-pellicer-pringle-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 7,
+      "certification_raw": "TA16-17",
+      "name": "Duval - Raven",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "6/29/2016",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-duval-raven-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 8,
+      "certification_raw": "TA83-04",
+      "name": "Midway - Jensen - Crane",
+      "licensee": "Florida Power & Light",
+      "certification_date_raw": "1/17/1984",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/florida-power-light-midway-jensen-crane-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 9,
+      "certification_raw": "TA92-09",
+      "name": "DeBary - Winter Springs",
+      "licensee": "Duke Energy Florida",
+      "certification_date_raw": "5/11/1993",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-debary-winter-springs-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 10,
+      "certification_raw": "TA81-02",
+      "name": "Central Florida - Kathleen",
+      "licensee": "Duke Energy Florida",
+      "certification_date_raw": "7/26/1982",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-central-florida-kathleen-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 11,
+      "certification_raw": "TA07-16",
+      "name": "Lake Agnes - Gifford",
+      "licensee": "Duke Energy Florida",
+      "certification_date_raw": "2/18/2009",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 12,
+      "certification_raw": "TA07-15",
+      "name": "Davis to Willow",
+      "licensee": "Tampa Electric Company",
+      "certification_date_raw": "8/7/2008",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/tampa-electric-company-wheeler-davis-willow-oak-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 13,
+      "certification_raw": "TA07-16",
+      "name": "Lake Agnes to Gifford",
+      "licensee": "Tampa Electric Company",
+      "certification_date_raw": "2/18/2009",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 14,
+      "certification_raw": "TA81-01",
+      "name": "Hopkins - Bainbridge Line",
+      "licensee": "City of Tallahassee",
+      "certification_date_raw": "8/4/1981",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/city-tallahassee-hopkins-bainbridge-line",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 15,
+      "certification_raw": "TA90-08",
+      "name": "Seminole - Keystone - Firestone (SECI)",
+      "licensee": "Seminole Electric Cooperative",
+      "certification_date_raw": "6/12/1991",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    },
+    {
+      "object_id": 16,
+      "certification_raw": "TA90-08",
+      "name": "Seminole - Keystone - Firestone (JEA)",
+      "licensee": "JEA",
+      "certification_date_raw": "6/12/1991",
+      "project_page": "https://floridadep.gov/air/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "disposition": "pending_reconciliation",
+      "center": null,
+      "location_review": "unlocated"
+    }
+  ]
+}

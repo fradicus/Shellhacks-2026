@@ -1,0 +1,85 @@
+{
+  "expected_index_rows": 17,
+  "artifacts": [
+    {
+      "key": "index",
+      "file": "conditions-certification.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/conditions-certification",
+      "sha256": "eb4ba8f79804e48ed53cd7cbc7d1018d4567af5439104363851c60cc8b3f5216",
+      "retrieved_at": "2026-09-27T01:25:27.204217+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review."
+    },
+    {
+      "key": "gis",
+      "file": "transmission-attributes.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&outFields=*&returnGeometry=false&f=pjson",
+      "sha256": "4d0611f68b0743df874795cfb1ea7921ab5a18c0b80bd2c00009295f61a5a483",
+      "retrieved_at": "2026-09-27T01:20:34.972152+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review."
+    },
+    {
+      "key": "ids",
+      "file": "transmission-ids.json",
+      "url": "https://cadev.dep.state.fl.us/arcgis/rest/services/OpenData/ARMS/MapServer/5/query?where=1%3D1&returnIdsOnly=true&f=pjson",
+      "sha256": "ad2301c2b7ecfb0f6f1844e00bc8bb4eb080159cf02d1017ebecff02ba473124",
+      "retrieved_at": "2026-09-27T01:24:41.417532+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official index or OpenData GIS; structured factual observations only. Linked documents require separate review."
+    },
+    {
+      "key": "detail:duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "file": "duke-energy-florida-llc-and-tampa-electric-company-lake-agnes.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/duke-energy-florida-llc-and-tampa-electric-company-lake-agnes",
+      "sha256": "3b6644336997e23d96815d80f3be786c65b7693cb1ff05cd351cba03cc6a3332",
+      "retrieved_at": "2026-09-27T01:27:25.253727+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:florida-power-light-bobwhite-manatee-line",
+      "file": "florida-power-light-bobwhite-manatee-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-bobwhite-manatee-line",
+      "sha256": "2e8249d5f714a27082b8839e9127e2e1b8fd244ba272917fc9e2eea2e66f9fd3",
+      "retrieved_at": "2026-09-27T01:27:25.460834+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:florida-power-light-duval-raven-line",
+      "file": "florida-power-light-duval-raven-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/florida-power-light-duval-raven-line",
+      "sha256": "abd249bdbc370bb8dc80f00043ee720e1d5fa8bf47cbae7072400e1eb12dd3eb",
+      "retrieved_at": "2026-09-27T01:27:24.667501+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:ouc-st-cloud-magnolia-230-kv-line",
+      "file": "ouc-st-cloud-magnolia-230-kv-line.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/ouc-st-cloud-magnolia-230-kv-line",
+      "sha256": "caeb2e5a52296c2f15a6f1c11f18a876d6486bf2ed0de17df34713d4c9423add",
+      "retrieved_at": "2026-09-27T01:27:24.612462+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    },
+    {
+      "key": "detail:seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "file": "seminole-electric-cooperative-inc-and-jea-keystone-firestone.html",
+      "url": "https://floridadep.gov/water/siting-coordination-office/content/seminole-electric-cooperative-inc-and-jea-keystone-firestone",
+      "sha256": "08b9465e37f3de597dfcd6490fe62aeab9d94806102d8bf82643d6211f29f510",
+      "retrieved_at": "2026-09-27T01:27:25.724069+00:00",
+      "publication_date": null,
+      "publisher": "Florida Department of Environmental Protection",
+      "access_review": "Public official project page. Extract factual General Information table only; no linked restricted documents acquired."
+    }
+  ]
+}
