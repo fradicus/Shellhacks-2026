@@ -67,7 +67,7 @@ function WaterCard({ water }: { water: WaterEvidence }) {
   const d = water.data;
   const zone = d?.flood?.zones[0];
   const wet = d?.wetlands;
-  return <article className={s.siteCard} data-testid="site-water">
+  return <article className={s.factorCard} data-testid="site-water">
     <span className="eyebrow">Water & flood screening · {water.status.replaceAll("_", " ")}</span>
     {!d ? <p className={s.muted}>{water.limitations.at(-1) ?? "Water evidence is unavailable."}</p> : <>
       <div><strong>Flood zone (FEMA NFHL)</strong><p>{!d.flood ? "Unavailable" : zone ? <>Zone {zone.zone ?? "unknown"}{zone.special_flood_hazard_area ? <mark className={s.flag}> Special flood hazard area</mark> : ""}{zone.subtype ? ` · ${zone.subtype}` : ""}</> : "Unknown: no mapped polygon (not Zone X)"}</p></div>
@@ -119,9 +119,9 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
       {manualError && <p className={s.error} role="alert">{manualError}</p>}
       {point && <p className={s.muted} aria-live="polite">{loading ? `Checking ${point.label} (${point.lat.toFixed(5)}, ${point.lon.toFixed(5)})…` : `${point.label}: ${point.lat.toFixed(5)}, ${point.lon.toFixed(5)}`}</p>}
       {[siteError, waterError].filter(Boolean).map((e) => <p key={e} className={s.warning} role="alert">{e} The worksheet below still works with your own inputs.</p>)}
-      {(site || water) && <div className={s.siteGrid}>
+      {(site || water) && <div className={s.factorGrid}>
         {water && <WaterCard water={water} />}
-        <article className={s.siteCard}>
+        <article className={s.factorCard}>
           <span className="eyebrow">Soil pH (survey estimate, {PH_DEPTH_CM.top}–{PH_DEPTH_CM.bottom} cm)</span>
           {!site ? <p className={s.muted}>Soil survey unavailable.</p> : !site.soil.data ? <p className={s.muted}>{site.soil.limitations.at(-1) ?? "Soil survey unavailable."}</p>
             : <><strong className={s.phValue} data-testid="site-ph">{ph.value === null ? "No pH in survey for this map unit" : `pH ${ph.value.toFixed(1)}`}</strong>
