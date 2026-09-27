@@ -126,7 +126,7 @@ export function ImpactWorksheet({ pairLabel }: { pairLabel: string | null }) {
         <fieldset className={s.checklist}><legend>Confirm before treating this as a coordination opportunity</legend>
           {CHECKS.map((check, index) => <label key={check}><input type="checkbox" checked={checks[index]} onChange={(event) => setChecks((previous) => previous.map((value, i) => i === index ? event.target.checked : value))} /><span>{check}</span><small className={s.printOnly}>{checks[index] ? "Marked confirmed by user" : "Open"}</small></label>)}
         </fieldset>
-        <p className={s.muted}>For timber mats, ask about soil conditions, deployment duration and inspection requirements. This worksheet does not estimate decay or select a safe mat material.</p>
+        <p className={s.muted}>For timber mats, ask about soil conditions, deployment duration and inspection requirements. Pair project centers can open Field planning for survey pH and water context; this worksheet still does not estimate decay, select a safe mat material, or infer soil suitability.</p>
       </section>
     </>
   );
