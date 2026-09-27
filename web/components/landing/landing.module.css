@@ -219,7 +219,8 @@
 @media(max-width:700px) {
  .heroIntro { top:76px; left:24px; right:24px; grid-template-columns:1fr; gap:10px; }
  .heroIntro > a { grid-column:1; grid-row:auto; justify-self:start; margin-top:4px; }
- .hero .scrollHint { font-size:9px; gap:10px; bottom:75px; }
+ /* Left of the Pause button, which holds the right edge at this width (it sat on top of Pause). */
+ .hero .scrollHint { font-size:9px; gap:10px; bottom:75px; left:24px; right:auto; }
 }
 
 /* The final reveal becomes the main entry to the product. */
