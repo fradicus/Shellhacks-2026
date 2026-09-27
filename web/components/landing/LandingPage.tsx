@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeroScene } from "./HeroScene";
+import { HeroEntrance } from "./HeroEntrance";
 import { NetworkIllustration } from "./NetworkIllustration";
 import s from "./landing.module.css";
 
@@ -10,20 +10,8 @@ export function Arrow({diagonal=false}:{diagonal?:boolean}) {
 export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
   return <div className={s.landing}>
     <main className={s.main} id="main-content">
-      <section className={s.hero} aria-labelledby="hero-title">
-        <div className={s.heroContent}>
-          <p className={s.eyebrow}><span className={s.statusDot}/> TRANSMISSION INTELLIGENCE, CONNECTED</p>
-          <h1 id="hero-title">Every mile.<br/><span>Connected.</span></h1>
-          <p className={s.heroDescription}>The next opportunity could be just down the road.<br className={s.desktopBreak}/> See where utility projects meet—and where<br className={s.desktopBreak}/> a conversation could change the plan.</p>
-          <div className={s.actions}>
-            <Link href="/time" className={s.primary}>Explore the overlaps <Arrow/></Link>
-            <a href="#how-it-works" className={s.secondary}>See how it works <span aria-hidden="true">↘</span></a>
-          </div>
-          <p className={s.heroNote}>{fixtureMode ? "Sample data available · No account needed" : "Public-source evidence · No account needed"}</p>
-        </div>
-        <HeroScene/>
-        <a href="#how-it-works" className={s.scrollHint}>SCROLL TO CONNECT <span aria-hidden="true">↓</span></a>
-      </section>
+      {/* Hero strings from docs/GridBridge-reference.html; truck-first entrance then brand. */}
+      <HeroEntrance fixtureMode={fixtureMode} />
 
       <div className={s.proofStrip}>
         <span>GROUNDED IN<br/><b>PUBLIC UTILITY FILINGS</b></span>
@@ -35,24 +23,25 @@ export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
 
       <section className={`${s.section} ${s.workflow}`} id="how-it-works" aria-labelledby="how-title">
         <div className={s.sectionHeading}>
-          <div><p className={s.eyebrow}>01 / CONNECT THE DOTS</p><h2 id="how-title">Separate filings.<br/><span>A bigger picture.</span></h2></div>
-          <p>Neighboring utilities plan work independently. GridBridge brings the records together, so you can spot nearby projects and investigate the evidence behind them.</p>
+          <div><p className={s.eyebrow}>How it works</p><h2 id="how-title">From filing to fleet move.</h2></div>
+          <p>Utilities publish their construction plans in long public filings. Two companies can schedule work a few miles apart and never know it. <b>GridBridge reads both and puts the overlaps on one map.</b></p>
         </div>
         <div className={s.steps}>
-          <article className={s.step}><div className={s.stepTop}><span>01</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M14 7h16l8 8v26H14zM30 7v9h8M20 23h12M20 29h12M20 35h7" stroke="currentColor" strokeWidth="1.4"/><path d="M9 13H7v29h23" stroke="currentColor" strokeOpacity=".35"/></svg></div><h3>Start with the source.</h3><p>Public filings become project records with the utility, dates, location evidence, and source page kept in view.</p><Link href="/coverage">Inspect coverage <Arrow/></Link></article>
-          <article className={s.step}><div className={s.stepTop}><span>02</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="18" cy="24" r="13" stroke="currentColor" strokeWidth="1.4"/><circle cx="31" cy="24" r="13" stroke="currentColor" strokeWidth="1.4"/><path d="M18 24h13" stroke="currentColor" strokeDasharray="2 3"/><circle cx="18" cy="24" r="2" fill="currentColor"/><circle cx="31" cy="24" r="2" fill="currentColor"/></svg></div><h3>Find the common ground.</h3><p>Discover cross-utility project centers less than 25 miles apart. Compare their timing and review location confidence.</p><Link href="/time">Explore overlaps <Arrow/></Link></article>
-          <article className={s.step}><div className={s.stepTop}><span>03</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 9h30v23H22l-9 8v-8H9zM16 17h16M16 24h10" stroke="currentColor" strokeWidth="1.4"/></svg></div><h3>Make the next conversation count.</h3><p>Open the pair evidence, check what is still uncertain, and export a coordination card for the people planning the work.</p><Link href="/map">Open the project map <Arrow/></Link></article>
+          <article className={s.step}><div className={s.stepTop}><span>Step 1</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M14 7h16l8 8v26H14zM30 7v9h8M20 23h12M20 29h12M20 35h7" stroke="currentColor" strokeWidth="1.4"/><path d="M9 13H7v29h23" stroke="currentColor" strokeOpacity=".35"/></svg></div><h3>Read the filings.</h3><p>Projects from <b>Dominion Energy South Carolina</b> and <b>Georgia Power</b> filings are placed on the map and checked against the page they came from.</p><span className={s.stepOut}>Project · utility · location · source page</span><Link href="/coverage">Inspect coverage <Arrow/></Link></article>
+          <article className={s.step}><div className={s.stepTop}><span>Step 2</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="18" cy="24" r="13" stroke="currentColor" strokeWidth="1.4"/><circle cx="31" cy="24" r="13" stroke="currentColor" strokeWidth="1.4"/><path d="M18 24h13" stroke="currentColor" strokeDasharray="2 3"/><circle cx="18" cy="24" r="2" fill="currentColor"/><circle cx="31" cy="24" r="2" fill="currentColor"/></svg></div><h3>Find the overlaps.</h3><p>Every cross-utility pair is measured by straight-line distance. <b>Pairs under 25 miles</b> are ranked and shown with the evidence behind them.</p><span className={s.stepOut}>Pair · distance in miles · evidence</span><Link href="/time">Explore overlaps <Arrow/></Link></article>
+          <article className={s.step}><div className={s.stepTop}><span>Step 3</span><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M9 9h30v23H22l-9 8v-8H9zM16 17h16M16 24h10" stroke="currentColor" strokeWidth="1.4"/></svg></div><h3>Move once.</h3><p><b>MatFlow</b> takes a confirmed pair and plans the transfer: which trucks carry which mats from one job to the next, solved with OR-Tools.</p><span className={s.stepOut}>Transfer plan · trucks · mats · cost</span><Link href="/map">Open the project map <Arrow/></Link></article>
         </div>
       </section>
 
       <section className={s.corridor} id="the-corridor" aria-labelledby="corridor-title">
         <div className={s.corridorMap}><NetworkIllustration/><span className={s.mapCaption}><i/> ILLUSTRATIVE NETWORK · NOT LIVE FLEET DATA</span></div>
         <div className={s.corridorCopy}>
-          <p className={s.eyebrow}>02 / A SHARED CORRIDOR</p>
-          <h2 id="corridor-title">Closer than<br/>they look.</h2>
-          <p>Across Georgia and South Carolina, nearby work can sit in separate plans. Start at the border. Follow the evidence. See what connects.</p>
-          <div className={s.metrics}><div><strong>&lt;25<span>mi</span></strong><p>Project-center distance</p></div><div><strong>2</strong><p>Utilities in the overlap view</p></div></div>
-          <div className={s.scopeNote}><span aria-hidden="true">↗</span><p>Distance identifies a lead. Source evidence, timing, and a planner’s review determine what comes next.</p></div>
+          <p className={s.eyebrow}>The corridor</p>
+          <h2 id="corridor-title">Built for the Southeast.</h2>
+          <p>The first dataset covers South Carolina and Georgia, where the two service areas meet along the Savannah River. The network view carries the same idea across the interstates that already move the freight.</p>
+          <div className={s.metrics}><div><strong>25<span>mi</span></strong><p>Overlap radius</p></div><div><strong>2</strong><p>Utilities in the first dataset</p></div><div><strong>7</strong><p>States in the network view</p></div></div>
+          <div className={s.chips}><span>I-95</span><span>I-75</span><span>I-85</span><span>I-20</span><span>I-26</span><span>I-16</span><span>I-10</span><span>I-40</span><span>I-65</span></div>
+          <p className={s.states}>FL · GA · SC · NC · AL · TN · MS</p>
           <Link href="/time" className={s.textLink}>Investigate the corridor <Arrow/></Link>
         </div>
       </section>
@@ -68,8 +57,8 @@ export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
         </div>
       </section>
 
-      <section className={s.finalCta}><p className={s.eyebrow}>THE GRID IS CONNECTED. YOUR PLANS CAN BE, TOO.</p><h2>See what’s<br/><span>just down the road.</span></h2><Link href="/time" className={s.primary}>Find the connection <Arrow/></Link><p>Discover a lead. Check the evidence. Start a conversation.</p></section>
+      <section className={s.finalCta} id="go"><h2>Every mile. Connected.</h2><a href="#how-it-works" className={s.primary}>Read how it works <Arrow/></a><p>Network animation is simulated. Overlap analysis uses public utility filings.</p></section>
     </main>
-    <footer className={s.footer}><Link href="/" className={s.footerBrand}>GridBridge<span>Every mile. Connected.</span></Link><div><Link href="/map">Project map</Link><Link href="/explore">National explorer</Link><Link href="/coverage">Source coverage</Link></div><p>Coordination discovery from public records.<br/>Illustrations are conceptual. Project evidence stays in the app.</p></footer>
+    <footer className={s.footer}><Link href="/" className={s.footerBrand}>GridBridge<span>Every mile. Connected.</span></Link><div><Link href="/map">Project map</Link><Link href="/explore">National explorer</Link><Link href="/coverage">Source coverage</Link></div><p>GridBridge · Built at ShellHacks 2026 for the Sperry Gridlock challenge<br/>Network animation is simulated. Overlap analysis uses public utility filings.</p></footer>
   </div>;
 }
