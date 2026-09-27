@@ -15,7 +15,7 @@
     "public_status": "verified_public",
     "publication_date": null,
     "publisher": "Southwest Power Pool",
-    "retrieved_at": "2026-09-27T08:09:55Z",
+    "retrieved_at": "2026-09-27T09:19:53Z",
     "role": "project_plan",
     "sha256": "9870923806c427e4a390160ec20c4a9f0e2cf66dcec480fcf6c53f6891d3786d",
     "states": [
@@ -45,7 +45,7 @@
     "public_status": "verified_public",
     "publication_date": null,
     "publisher": "Midcontinent Independent System Operator (MISO)",
-    "retrieved_at": "2026-09-27T08:42:58Z",
+    "retrieved_at": "2026-09-27T10:09:25Z",
     "role": "project_plan",
     "sha256": "40f325fe4ce7cb4dbc24207219725f623956efafdf6febb2e67a90accb24e72e",
     "states": [
@@ -56,5 +56,33 @@
     ],
     "title": "MTEP Projects Under Evaluation (MTEP26 cycle)",
     "vintage": "MTEP26 cycle, retrieved date"
+  },
+  {
+    "_id": "miso-mtep25-appendix-a-midwest",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://cdn.misoenergy.org/MTEP25%20Appendix%20A%20-%20New%20Local%20Reliability%20Projects720399.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+    "notes": [
+      "FIX-F46 (Midwest release): rows listing only IA, MO, ND or SD whose MTEP ID no rollout publishes; F39 reads the same workbook for its own states.",
+      "Located from the Facility sheet's From/To substations when they name one site or line, else from the title. Unreviewed C33 candidates; none is independently confirmed."
+    ],
+    "planning_region": "miso",
+    "project_count": 81,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Midcontinent Independent System Operator (MISO)",
+    "retrieved_at": "2026-09-27T10:07:56Z",
+    "role": "project_plan",
+    "sha256": "53f74cfe5db7db136cf09887ff257c3fa88ff75476eabba2487ad5adca335bbb",
+    "states": [
+      "19",
+      "29",
+      "38",
+      "46"
+    ],
+    "title": "MTEP25 Appendix A workbook (App. A approved and App. B rows)",
+    "vintage": "MTEP25, as of 2025-08-28"
   }
 ]
