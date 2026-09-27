@@ -23,13 +23,41 @@ review, and distinguish its filed milestone from actual construction. Source-bac
 coordinates remain searchable. Success means a reviewed release is visible in the deployed demo, not merely
 that a source was found, a JSON file exists, or Atlas accepted a write.
 
+## Simplified location policy — user amendment, 2026-09-26
+
+The user explicitly relaxed mandatory independent confirmation and launched separate Texas research.
+This section supersedes the all-new-points confirmation requirement in the earlier C25 draft and the display
+eligibility requirement of C22/F38/C23. It does not redefine `confirmed` or silently bypass existing loader schemas.
+Existing owners implement additive compatibility changes before activating the new tiers.
+
+| Tier | Evidence needed | Display |
+|---|---|---|
+| Official location | Official project source explicitly supplies site/endpoint coordinates or uniquely linked official GIS; basic checks pass | Plot, labeled Official source; second reviewer not required |
+| Candidate location | Source names the project site/endpoint; public facility geometry matches exact normalized name plus owner, voltage or named county; unique surviving match | Plot with distinct outlined marker and Candidate / not independently reviewed label |
+| Area only | Only town/county/area is supported | Named area or boundary; no precise project dot |
+| Unlocated | No defensible location evidence | Searchable row with reason |
+
+Independent review is optional for routine official records and reserved for ambiguous matches and prominently
+featured project/pair claims. Reviewed locations retain a separate Confirmed badge. Official does not mean
+independently confirmed. Multiple surviving candidate matches remain unlocated until resolved.
+Basic checks: finite coordinates, declared CRS transformed correctly, axis/range and reported-state consistency,
+explicit project-to-site link, duplicate/conflict checks, source URL/locator, retrieval time, and recorded method.
+No arbitrary confidence percentages, inferred coordinates from prose offsets, town centroids, fuzzy-only joins,
+or location guesses by a model. Unknown dates and lifecycle facts remain unknown.
+Candidate points never enter overlap calculations. This task creates no new national pairs in any tier.
+Existing legacy pairs are unchanged. Counts distinguish official, candidate, independently reviewed, area-only and
+unlocated records without counting reviewed official records twice. Evidence and tier must be visible on selection,
+in the legend and exports; if a consumer cannot show the distinction, do not activate that tier there.
+The C26 Great Lakes candidate rule already follows this bounded matching approach; its ownership stays intact.
+
 ## 1. Data-agent handoff and publication
 
 - Each producer delivers its existing feature-owned batch with stable project/source IDs, source locators and
   vintage, raw milestone text and precision, lifecycle evidence, candidate location evidence and review disposition.
   Follow C23's accepted schema for publication; this document creates no competing payload or evidence format.
-- Candidate geometry, unresolved identities, stale reviews and research-only artifacts cannot enter the confirmed
-  map layer. Every new non-null published center requires a current independent review bound to its exact inputs.
+- Official and candidate geometry may enter their labeled layers under the amended policy. Unresolved identities,
+  conflicting geometry and research-only artifacts cannot become points. Stale independent reviews lose the confirmed
+  badge; changed geometry must pass its tier criteria again before display.
 - One assigned release integrator assembles approved batches, preserving provenance and resolving documented identity
   links. Four research agents do not independently write to the active database. Only the existing load Action writes
   Atlas. A failed validation/load preserves the prior active release.
@@ -53,7 +81,7 @@ F30/F31 provide the accepted national projection; F19 consumes it alongside the 
 | Unlocated records | Retain in All projects with a reason and evidence access; omit from spatial matching and point geometry. |
 
 The minimal presentation adapter must carry identity, dataset/source namespace, name, owner, accepted center and
-its site/complete-endpoints/partial-endpoint meaning, location review state, milestone value/raw text/precision,
+its site/complete-endpoints/partial-endpoint meaning, evidence tier and separate location review state, milestone value/raw text/precision,
 lifecycle status and evidence reference. Optional absent facts remain null. Exact shared types and any additive API
 changes belong to their existing owners under the accepted contract; do not invent a second schema in the renderer.
 
@@ -68,7 +96,7 @@ changes belong to their existing owners under the accepted contract; do not inve
   must not repeatedly reset a user's camera. If no points qualify, show the empty reason and searchable records.
 - Plot one canonical center per project. Lines use the mission's endpoint mean rule, one located endpoint is labeled
   partial, and substations use an accepted site point. Endpoints and evidence geometries are not extra project counts.
-- New national markers show their confirmed review state. Existing legacy/unconfirmed inputs remain visibly distinct
+- New national markers show their evidence tier and any separate confirmed review state. Existing legacy/unconfirmed inputs remain visibly distinct
   with their stored effective review state; never upgrade them through a new color or legend. Do not imply that every
   visible legacy point meets the new confirmation gate.
 - National owners use a neutral expansion palette with text labels, or a stable existing palette extension. Color
@@ -95,8 +123,8 @@ changes belong to their existing owners under the accepted contract; do not inve
 
 ## 5. Counts, unavailable states and performance
 
-Show clearly scoped counts: unique projects in the filtered dataset, projects with drawable locations, newly
-confirmed national projects, unlocated projects and legacy/unconfirmed drawable projects. Keep physical-site counts
+Show clearly scoped counts: unique projects in the filtered dataset, projects with drawable locations, official-source national projects, candidate national projects, independently
+reviewed national projects, unlocated projects and legacy/unconfirmed drawable projects. Keep physical-site counts
 separate if available; never infer them merely by counting markers. Counts must reconcile through explicit disjoint
 categories, with out-of-viewport, pagination and time-filter effects identified. State coverage is source-bounded;
 no uniform density quota and no nationwide completeness claim.
@@ -134,8 +162,8 @@ previous accepted dataset through the existing publication mechanism, retaining 
 
 Run all repo checks from `specs/tech-stack.md`, plus focused adapter/interaction checks:
 
-- Accepted national point is rendered/selectable; unreviewed, stale, rejected and null-center national records
-  cannot become confirmed dots. A partial endpoint is labeled partial.
+- Official and candidate points render with distinct labels; candidate, stale, rejected and null-center records
+  cannot become confirmed dots. Official points need no fabricated reviewer. Area-only records never become dots. A partial endpoint is labeled partial.
 - Explicit legacy mirror draws once; two same-name distinct projects remain distinct; coincident projects are both
   selectable. Native IDs and arbitrary real owner labels survive the adapter.
 - Exact/month/year/unknown milestone behavior is correct; unknown status is visible; past plans never imply completed
@@ -145,7 +173,7 @@ Run all repo checks from `specs/tech-stack.md`, plus focused adapter/interaction
 - National-only outage, legacy-only outage, both unavailable, valid-empty data, tile failure, WebGL failure and reduced
   motion produce the specified states. Check desktop and 390px layouts and record performance on the real batch.
 
-Live completion requires a recorded journey: approved source/project/location review -> merged release -> successful
+Live completion requires a recorded journey: approved source/project/location tier checks (independent review when claimed) -> merged release -> successful
 load Action -> active RO API response -> visible `/time` point -> matching source/review details. Record deploy URL,
 commit, dataset ID, time, representative project IDs, before/after scoped counts and screenshots of overview,
 selected evidence, unknown-date and unlocated states. Verify `/explore` agrees on the same project's coordinates,

@@ -11,7 +11,7 @@ lanes:
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
   claude-local: [F00, F05, F11, F14, F16, F19, F21]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F41]
 frozen_paths:
   - schemas/
   - scripts/
@@ -189,3 +189,13 @@ contract and loader integration are accepted. Research can proceed independently
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F39 | Verified Southeast project coverage and geographic delivery | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Texas
+
+The user assigned Texas to this Codex local session, separate from the active Southeast and Great Lakes workers.
+[F41](features/F41-texas/spec.md) starts a bounded public-source research checkpoint using the simplified official,
+candidate and area-only display tiers in [C25](decisions/C25-main-demo-map.md). Existing feature assignments remain.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F41 | Texas transmission project research and map delivery | A | data-researcher | 7 | F00, F30 | never |
