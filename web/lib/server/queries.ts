@@ -117,7 +117,13 @@ export async function pair(db: Db, dataset: string, id: string, read: ReadOption
   if (!match) return null;
   const [byKey, briefs, versionChanges, reviews] = await Promise.all([
     projectsByKey(db, dataset, [match.a, match.b], true, read),
-    find<Brief>(db, "briefs", { dataset, match_id: id, validation: "passed" }, { sort: { generated_at: -1 }, limit: 1 }, read),
+    find<Brief>(db, "briefs", { dataset, match_id: id, validation: "passed" }, { sort: { generated_at: -1 }, limit: 1 }, read)
+      .catch(() => {
+        // Generated prose is optional; mandatory project/source/review reads still fail closed.
+        read.signal?.throwIfAborted();
+        console.warn("Pair brief unavailable; retaining deterministic evidence.");
+        return [] as Brief[];
+      }),
     find<VersionChange>(db, "version_changes", { dataset, project_key: { $in: [match.a, match.b] } }, { sort: { id: 1 } }, read),
     find<Review>(db, "reviews", { dataset, record_id: id }, { sort: { at: 1 } }, read),
   ]);
