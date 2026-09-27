@@ -78,7 +78,7 @@ document both a required date and an actual one, 334 entered service early. The 
 
 All counts come from the active dataset (`489d9c2`), with an analysis date of Sep 26, 2026.
 
-| | |
+| Count | What it counts |
 |---:|---|
 | **3,366** | projects on the Overlaps map, drawn from **142** public sources |
 | **2,053** | national projects already in service, which live in History rather than on the planning map |
@@ -86,7 +86,7 @@ All counts come from the active dataset (`489d9c2`), with an analysis date of Se
 | **17** | of those pairs have an exact date on both sides, so their day gap is known |
 | **5,419** | located projects in History, with 5,439 dated events |
 | **5** | overlaps within 25 driving miles between Dominion Energy South Carolina and Georgia Power, out of 7,452 cross-utility combinations |
-| **15 / 15** | Gemini coordination briefs that passed validation against their cited facts |
+| **15/15** | Gemini coordination briefs that passed validation against their cited facts |
 
 ## The rules we don't bend
 
