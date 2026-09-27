@@ -28,3 +28,14 @@ Implementation may run alongside F30 against the national schema contract; final
 ## Validation
 
 Check cascading region/state/county filters, invalid/cross-state codes, unknown geography, URL/back restoration, exact filtered counts and bounded export, missing DB, empty results, map/list consistency and 390px/desktop layouts. Source dates and evidence links must be readable. Run repo-wide checks and focused web tests. Actual browser evidence and any verification limitation must be reported precisely.
+
+## Candidate and county dots (2026-09-27)
+
+The user explicitly requested the frontend hookup after the Texas release. This Codex local session adopts
+F31's frontend-engineer role under the existing codex-local assignment in specs/roadmap.md. No other F31
+claim is open. Apply C32 Texas's candidate and separate county-anchor representation to the existing
+map/API and evidence/export views. Include valid candidate centers and county display anchors by default;
+keep exact centers null for county-only records. Use visible Tentative / County reference labels, retain
+provenance and all named counties, and keep shared positions individually selectable. Count projects once.
+Keep reads bounded and disclose truncation. No new matching, geographic inference or date-policy changes.
+F19's main-map hookup is a separate claim and does not change F31's ownership.
