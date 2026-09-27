@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47, F49, F50]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37, F48]
 frozen_paths:
   - schemas/
@@ -332,3 +332,14 @@ documents), C33 tiers plus C38's operator guard, and an antimeridian-safe center
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F49 | Alaska and Hawaii project coverage from transcribed public documents | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Interior West (WY, NV, UT, ID, MT)
+
+Continuing the user's sparse-area goal after Oklahoma (C47). [C50](decisions/C50-interior-west.md) assigns
+[F50](features/F50-interior-west/spec.md): the WestConnect TPPL rows F45 left out as Wyoming, then page-verified
+transcriptions of the 2026 WECC Annual Progress Reports for NV Energy, PacifiCorp and Idaho Power (C33 tiers plus
+C38's operator guard).
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F50 | Interior West project coverage (WY, NV, UT, ID, MT) with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
