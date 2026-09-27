@@ -1,0 +1,1693 @@
+{
+  "file": "bpa_2025_transmission_plan",
+  "rows": [
+    {
+      "native_id": "P01092",
+      "name": "Silver Creek Substation Reinforcements (RN)",
+      "page": 100,
+      "quote": "Silver Creek Substation Reinforcements (RN) P01092 2028 $11,300,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Silver Creek"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$11,300,000",
+      "work_type": "transmission",
+      "section": "Chehalis – Centralia Load Area"
+    },
+    {
+      "native_id": "P01443",
+      "name": "Kitsap 115 kV Shunt Capacitor Modification",
+      "page": 100,
+      "quote": "Kitsap 115 kV Shunt Capacitor Modification P01443 2029 $4,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Kitsap"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2029",
+      "status_raw": null,
+      "cost_raw": "$4,000,000",
+      "work_type": "transmission",
+      "section": "Olympic Peninsula Load Area"
+    },
+    {
+      "native_id": "P00695",
+      "name": "Shelton – Fairmont #1 115 kV line rebuild",
+      "page": 100,
+      "quote": "Shelton – Fairmont #1 115 kV line rebuild P00695 2029 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Shelton",
+        "Fairmont"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2029",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Olympic Peninsula Load Area"
+    },
+    {
+      "native_id": "P00094",
+      "name": "Raver 500/230 kV Transformer (PSANI) (RN)",
+      "page": 100,
+      "quote": "Raver 500/230 kV Transformer (PSANI) (RN) P00094 2024 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Raver"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "2024",
+      "status_raw": "Completed",
+      "cost_raw": "Completed",
+      "work_type": "transmission",
+      "section": "Seattle – Tacoma – Olympia Load Area"
+    },
+    {
+      "native_id": "P06244",
+      "name": "Maple Valley 230 kV Shunt Reactor",
+      "page": 100,
+      "quote": "Maple Valley 230 kV Shunt Reactor P06244 2028 $7,800,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Maple Valley"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$7,800,000",
+      "work_type": "transmission",
+      "section": "Seattle – Tacoma – Olympia Load Area"
+    },
+    {
+      "native_id": "P02367",
+      "name": "Monroe-Novelty 230 kV Line Upgrade",
+      "page": 100,
+      "quote": "Monroe-Novelty 230 kV Line Upgrade P02367 2028 $2,500,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Monroe",
+        "Novelty"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$2,500,000",
+      "work_type": "transmission",
+      "section": "Seattle – Tacoma – Olympia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Sno-King 230/115 kV Bank #3 Power Circuit Breaker Bushing",
+      "page": 100,
+      "quote": "Sno-King 230/115 kV Bank #3 Power Circuit Breaker Bushing\nTBD TBD\nCTs",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Sno-King"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Seattle – Tacoma – Olympia Load Area"
+    },
+    {
+      "native_id": "P04132",
+      "name": "Covington 500/230 kV banks 4 and 5 upgrade",
+      "page": 100,
+      "quote": "Covington 500/230 kV banks 4 and 5 upgrade P04132 2027 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Covington"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Seattle – Tacoma – Olympia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Snohomish 230/115 kV Banks Replacement",
+      "page": 100,
+      "quote": "Snohomish 230/115 kV Banks Replacement 2027 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Snohomish"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Seattle – Tacoma – Olympia Load Area"
+    },
+    {
+      "native_id": "P03506",
+      "name": "Aberdeen-Aberdeen Tap to Satsop Park – Cosmopolis 115 kV",
+      "page": 100,
+      "quote": "Aberdeen-Aberdeen Tap to Satsop Park – Cosmopolis 115 kV\nP03506 2028 $1,172,000\nLine Upgrade",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$1,172,000",
+      "work_type": "transmission",
+      "section": "Southwest Washington Coast Load Area"
+    },
+    {
+      "native_id": "P05918",
+      "name": "Cosmopolis-Satsop Park 115 kV No.1 Upgrade project",
+      "page": 100,
+      "quote": "Cosmopolis-Satsop Park 115 kV No.1 Upgrade project P05918 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Cosmopolis",
+        "Satsop Park"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Southwest Washington Coast Load Area"
+    },
+    {
+      "native_id": "P05918",
+      "name": "South Elma – Satsop Park No. 1 Line – Remove Impairments",
+      "page": 100,
+      "quote": "South Elma – Satsop Park No. 1 Line – Remove Impairments P05918 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "South Elma",
+        "Satsop Park"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Southwest Washington Coast Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Naselle Shunt Capacitor Replacement",
+      "page": 100,
+      "quote": "Naselle Shunt Capacitor Replacement 2028 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Naselle"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Southwest Washington Coast Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "South Elma 115 kV Substation Addition",
+      "page": 100,
+      "quote": "South Elma 115 kV Substation Addition TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "South Elma"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Southwest Washington Coast Load Area"
+    },
+    {
+      "native_id": "P05435",
+      "name": "High-Side Breaker and Switchgear Associated with the Clatsop",
+      "page": 100,
+      "quote": "High-Side Breaker and Switchgear Associated with the Clatsop\nP05435 2027 $1,600,000\nTransformer Replacement",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Clatsop"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "$1,600,000",
+      "work_type": "transmission",
+      "section": "North Oregon Coast Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Clatsop 230/115 kV Transformer Upgrade",
+      "page": 100,
+      "quote": "Clatsop 230/115 kV Transformer Upgrade TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Clatsop"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "North Oregon Coast Load Area"
+    },
+    {
+      "native_id": "P04157",
+      "name": "Astoria-Driscoll 115 kV transmission line Rebuild",
+      "page": 100,
+      "quote": "Astoria-Driscoll 115 kV transmission line Rebuild P04157 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Astoria",
+        "Driscoll"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "North Oregon Coast Load Area"
+    },
+    {
+      "native_id": "P03469",
+      "name": "Forest Grove – McMinnville 115 kV Line Upgrade",
+      "page": 100,
+      "quote": "Forest Grove – McMinnville 115 kV Line Upgrade P03469 2026 $1,800,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Forest Grove",
+        "McMinnville"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2026",
+      "status_raw": null,
+      "cost_raw": "$1,800,000",
+      "work_type": "transmission",
+      "section": "Portland Load Area"
+    },
+    {
+      "native_id": "P01367",
+      "name": "Carlton Upgrades (RN)",
+      "page": 100,
+      "quote": "Carlton Upgrades (RN) P01367 2026 $19,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2026",
+      "status_raw": null,
+      "cost_raw": "$19,000,000",
+      "work_type": "transmission",
+      "section": "Portland Load Area"
+    },
+    {
+      "native_id": "P04401",
+      "name": "Troutdale 230 kV Series Bus Sectionalizing Breaker",
+      "page": 100,
+      "quote": "Troutdale 230 kV Series Bus Sectionalizing Breaker P04401 2027 $3,490,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Troutdale"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "$3,490,000",
+      "work_type": "transmission",
+      "section": "Portland Load Area"
+    },
+    {
+      "native_id": "P03619",
+      "name": "St. Johns 230/115 kV Low-Side Line Section",
+      "page": 100,
+      "quote": "St. Johns 230/115 kV Low-Side Line Section\nP03619 Completed\n(Remove Impairments)",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "St. Johns"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Portland Load Area"
+    },
+    {
+      "native_id": "P04632",
+      "name": "Keeler 230 kV Bus Sectionalizing Breaker Addition L0452",
+      "page": 100,
+      "quote": "Keeler 230 kV Bus Sectionalizing Breaker Addition L0452\nP04632 2029 $11,530,000\n(GERP1)",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Keeler"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2029",
+      "status_raw": null,
+      "cost_raw": "$11,530,000",
+      "work_type": "transmission",
+      "section": "Portland Load Area"
+    },
+    {
+      "native_id": "P04974",
+      "name": "Pearl-Sherwood-McLoughlin Upgrade (GERP1)",
+      "page": 100,
+      "quote": "Pearl-Sherwood-McLoughlin Upgrade (GERP1) P04974 2026-2028 $9,400,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2026-2028",
+      "status_raw": null,
+      "cost_raw": "$9,400,000",
+      "work_type": "transmission",
+      "section": "West of Cascades South Path (WOCS)"
+    },
+    {
+      "native_id": "P03259",
+      "name": "Schultz-Wautoma 500 kV Series Capacitor (RN)",
+      "page": 101,
+      "quote": "Schultz-Wautoma 500 kV Series Capacitor (RN) P03259 2024 $44,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Wautoma"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2024",
+      "status_raw": null,
+      "cost_raw": "$44,000,000",
+      "work_type": "transmission",
+      "section": "South of Allston Path (SOA)"
+    },
+    {
+      "native_id": "P05449",
+      "name": "Keeler 500 kV Expansion and Transformer Addition (GERP1)",
+      "page": 101,
+      "quote": "Keeler 500 kV Expansion and Transformer Addition (GERP1) P05449 2031 $36,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Keeler"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2031",
+      "status_raw": null,
+      "cost_raw": "$36,000,000",
+      "work_type": "transmission",
+      "section": "South of Allston Path (SOA)"
+    },
+    {
+      "native_id": "P03258",
+      "name": "Lookout Point – Alvey No. 1 and 2 Transfer Trip Addition",
+      "page": 101,
+      "quote": "Lookout Point – Alvey No. 1 and 2 Transfer Trip Addition P03258 2026 $3,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Lookout Point",
+        "Alvey"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2026",
+      "status_raw": null,
+      "cost_raw": "$3,000,000",
+      "work_type": "transmission",
+      "section": "Eugene Load Area"
+    },
+    {
+      "native_id": "P04286",
+      "name": "Alvey-Dillard Tap 115 kV Line Rebuild",
+      "page": 101,
+      "quote": "Alvey-Dillard Tap 115 kV Line Rebuild P04286 2028 $1,300,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$1,300,000",
+      "work_type": "transmission",
+      "section": "Eugene Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Chemawa 230/115 kV Transformer Upgrade",
+      "page": 101,
+      "quote": "Chemawa 230/115 kV Transformer Upgrade TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Chemawa"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Salem/Albany Area"
+    },
+    {
+      "native_id": null,
+      "name": "Santiam 500/230 kV Bank #4",
+      "page": 101,
+      "quote": "Santiam 500/230 kV Bank #4 TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Santiam"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Salem/Albany Area"
+    },
+    {
+      "native_id": null,
+      "name": "Lebanon 230/115 kV Transformer Addition",
+      "page": 101,
+      "quote": "Lebanon 230/115 kV Transformer Addition TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Lebanon"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Salem/Albany Area"
+    },
+    {
+      "native_id": "P02230",
+      "name": "Central Oregon Coast O&M Flex (RN)",
+      "page": 101,
+      "quote": "Central Oregon Coast O&M Flex (RN)\nP02230 Completed\n(Toledo, Wendson, Santiam, Tahkenitch)",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "South Oregon Coast Load Area"
+    },
+    {
+      "native_id": "P00076",
+      "name": "Columbia 230 kV Bus Tie and Sectionalizing Breaker Addition and Northern Mid-Columbia Area Reinforcement (Joint Utility)",
+      "page": 101,
+      "quote": "Columbia 230 kV Bus Tie and Sectionalizing Breaker Addition\nand Northern Mid-Columbia Area Reinforcement (Joint Utility) P00076 Completed\nand Northern Mid-Columbia Area Reinforcement (RN)",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Columbia"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Mid-Columbia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Columbia 115 kV Breaker(B-400) Free Standing Current",
+      "page": 101,
+      "quote": "Columbia 115 kV Breaker(B-400) Free Standing Current\nTBD TBD\nTransformer (C05409) Upgrade",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Columbia"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Mid-Columbia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Valhalla B-288 Bushing Current Transformer (BCT) #2 Upgrade",
+      "page": 101,
+      "quote": "Valhalla B-288 Bushing Current Transformer (BCT) #2 Upgrade TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Valhalla"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Mid-Columbia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Ellensburg 115 kV Shunt Capacitor Expansion",
+      "page": 101,
+      "quote": "Ellensburg 115 kV Shunt Capacitor Expansion TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Ellensburg"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Mid-Columbia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Grand Coulee 230 kV Fault reduction Project",
+      "page": 101,
+      "quote": "Grand Coulee 230 kV Fault reduction Project 2027",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Grand Coulee"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Mid-Columbia Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "East Omak 115 kV Shunt Capacitor Addition",
+      "page": 101,
+      "quote": "East Omak 115 kV Shunt Capacitor Addition TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "East Omak"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Okanogan Load Area"
+    },
+    {
+      "native_id": "P02364",
+      "name": "McNary-Patterson Tap 115 kV Line (RN)",
+      "page": 101,
+      "quote": "McNary-Patterson Tap 115 kV Line (RN) P02364 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Tri-Cities Load Area"
+    },
+    {
+      "native_id": "P03102",
+      "name": "Red-Mountain – Horn Rapids 115 kV Line Reconductor",
+      "page": 101,
+      "quote": "Red-Mountain – Horn Rapids 115 kV Line Reconductor P03102 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Red-Mountain",
+        "Horn Rapids"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Tri-Cities Load Area"
+    },
+    {
+      "native_id": "P02365",
+      "name": "Richland-Stevens Drive 115 kV Line (RN)",
+      "page": 101,
+      "quote": "Richland-Stevens Drive 115 kV Line (RN) P02365 2027 $12,600,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Richland",
+        "Stevens Drive"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "$12,600,000",
+      "work_type": "transmission",
+      "section": "Tri-Cities Load Area"
+    },
+    {
+      "native_id": "P04691",
+      "name": "G0558 South Tri-Cities Reinforcement Webber Canyon (RN)",
+      "page": 101,
+      "quote": "G0558 South Tri-Cities Reinforcement Webber Canyon (RN) P04691 2027 $105,800,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Webber Canyon"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "$105,800,000",
+      "work_type": "transmission",
+      "section": "Tri-Cities Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Sacajawea to Ice Harbor-Franklin #1",
+      "page": 101,
+      "quote": "Sacajawea to Ice Harbor-Franklin #1 TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Tri-Cities Load Area"
+    },
+    {
+      "native_id": "P04342",
+      "name": "Longhorn 500/230 kV Substation L0482",
+      "page": 101,
+      "quote": "Longhorn 500/230 kV Substation L0482 P04342 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Longhorn"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Umatilla – Boardman Load Area"
+    },
+    {
+      "native_id": "P04246",
+      "name": "McNary 230 kV Bay Addition L0481",
+      "page": 101,
+      "quote": "McNary 230 kV Bay Addition L0481 P04246 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "McNary"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Umatilla – Boardman Load Area"
+    },
+    {
+      "native_id": "P04423",
+      "name": "Morrow Flat 230 kV Shunt Reactor",
+      "page": 101,
+      "quote": "Morrow Flat 230 kV Shunt Reactor P04423 Cancelled",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Morrow Flat"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Cancelled",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Umatilla – Boardman Load Area"
+    },
+    {
+      "native_id": "P05580",
+      "name": "Six Mile Canyon 500/230 kV Substation Addition (West of",
+      "page": 101,
+      "quote": "Six Mile Canyon 500/230 kV Substation Addition (West of\nP05580 2028 $284,000,000\nBoardman) L0510 (GERP1)",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Six Mile Canyon"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$284,000,000",
+      "work_type": "transmission",
+      "section": "Umatilla – Boardman Load Area"
+    },
+    {
+      "native_id": "P04438",
+      "name": "Tucannon River 115 kV 15 Mvar Shunt Reactor (RN)",
+      "page": 101,
+      "quote": "Tucannon River 115 kV 15 Mvar Shunt Reactor (RN) P04438 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Tucannon River"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Walla Walla Load Area"
+    },
+    {
+      "native_id": "P03443",
+      "name": "La Pine 115 kV Substation Upgrade TSEP 2016",
+      "page": 102,
+      "quote": "La Pine 115 kV Substation Upgrade TSEP 2016 P03443 2026 $7,100,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "La Pine"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2026",
+      "status_raw": null,
+      "cost_raw": "$7,100,000",
+      "work_type": "transmission",
+      "section": "Central Oregon Load Area"
+    },
+    {
+      "native_id": "P05322",
+      "name": "La Pine Upgrade Transformer Addition TSEP 2016",
+      "page": 102,
+      "quote": "La Pine Upgrade Transformer Addition TSEP 2016 P05322 2027 $11,600,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "La Pine"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "$11,600,000",
+      "work_type": "transmission",
+      "section": "Central Oregon Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "New Bonanza 500/230 kV Substation addition (GERP2)",
+      "page": 102,
+      "quote": "New Bonanza 500/230 kV Substation addition (GERP2) 2030 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bonanza"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "2030",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Central Oregon Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Bonanza-La Pine 230 kV line addition (GERP2)",
+      "page": 102,
+      "quote": "Bonanza-La Pine 230 kV line addition (GERP2) 2030 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Bonanza",
+        "La Pine"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2030",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Central Oregon Load Area"
+    },
+    {
+      "native_id": "P03999",
+      "name": "Buckley Air Insulated Substation (GERP1)",
+      "page": 102,
+      "quote": "Buckley Air Insulated Substation (GERP1) P03999 2030 $150,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Buckley"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2030",
+      "status_raw": null,
+      "cost_raw": "$150,000,000",
+      "work_type": "transmission",
+      "section": "California to Oregon AC Intertie"
+    },
+    {
+      "native_id": "P04231",
+      "name": "Libby Power House 1 AND 2 Redundant Transfer Trip",
+      "page": 102,
+      "quote": "Libby Power House 1 AND 2 Redundant Transfer Trip P04231 2026 $800,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Libby"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2026",
+      "status_raw": null,
+      "cost_raw": "$800,000",
+      "work_type": "transmission",
+      "section": "North Idaho Load Area"
+    },
+    {
+      "native_id": "P02299",
+      "name": "Troy Substation Expansion and Breaker Addition",
+      "page": 102,
+      "quote": "Troy Substation Expansion and Breaker Addition P02299 2032 $10,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Troy"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2032",
+      "status_raw": null,
+      "cost_raw": "$10,000,000",
+      "work_type": "transmission",
+      "section": "North Idaho Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Troy 115 kV Shunt Capacitor Addition",
+      "page": 102,
+      "quote": "Troy 115 kV Shunt Capacitor Addition 2032 TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Troy"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "2032",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "North Idaho Load Area"
+    },
+    {
+      "native_id": "P02259",
+      "name": "Conkelley Substation Retirement (RN)",
+      "page": 102,
+      "quote": "Conkelley Substation Retirement (RN) P02259 2027 $32,000,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "MT"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Conkelley"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2027",
+      "status_raw": null,
+      "cost_raw": "$32,000,000",
+      "work_type": "transmission",
+      "section": "Northwest Montana Load Area"
+    },
+    {
+      "native_id": "P06349",
+      "name": "Columbia Falls 115/34.5 kV Transformer Replacement",
+      "page": 102,
+      "quote": "Columbia Falls 115/34.5 kV Transformer Replacement P06349 TBD $8,500,000",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "MT"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Columbia Falls"
+      ],
+      "voltages_kv": [
+        115,
+        34.5
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "$8,500,000",
+      "work_type": "transmission",
+      "section": "Northwest Montana Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Columbia Falls 230/115 kV Transformer Bank 2 and 3",
+      "page": 102,
+      "quote": "Columbia Falls 230/115 kV Transformer Bank 2 and 3\nTBD TBD\nReplacements",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "MT"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Columbia Falls"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Northwest Montana Load Area"
+    },
+    {
+      "native_id": "P05566",
+      "name": "Bell-Boundary 230 kV No. 1 (Sacheen) Line Upgrade",
+      "page": 102,
+      "quote": "Bell-Boundary 230 kV No. 1 (Sacheen) Line Upgrade P05566 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Boundary",
+        "Sacheen"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Spokane – Colville – Boundary Load Area"
+    },
+    {
+      "native_id": "P02306",
+      "name": "Spar Canyon 230 kV Reactor Addition",
+      "page": 102,
+      "quote": "Spar Canyon 230 kV Reactor Addition P02306 Completed",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Spar Canyon"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Southeast Idaho – Northwest Wyoming Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Rebuild Cattle Creek-Palisades and Palisades- Swan Valley",
+      "page": 102,
+      "quote": "Rebuild Cattle Creek-Palisades and Palisades- Swan Valley TBD TBD\n115 kV lines to 161 kV with additions of 161/115 kV\ntransformers at Palisades and Swan Valley",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        115,
+        161
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Southeast Idaho – Northwest Wyoming Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Build new 115 kV Targhee substation, remove 115 kV Targhee",
+      "page": 102,
+      "quote": "Build new 115 kV Targhee substation, remove 115 kV Targhee TBD TBD\nTap, add additional 16.5 Mvar shunt capacitor at Targhee,\nreconductor Targhee-Swan Valley and Targhee-Drummond\n115 kV lines",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Southeast Idaho – Northwest Wyoming Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Teton 115 kV substation",
+      "page": 102,
+      "quote": "At Teton 115 kV substation add a sectionalizing breaker and a TBD TBD\nnew 12.6 Mvar shunt capacitor",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Teton"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Southeast Idaho – Northwest Wyoming Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Heyburn- West Burley 138 kV line upgrade Line Upgrade",
+      "page": 102,
+      "quote": "Heyburn- West Burley 138 kV line upgrade Line Upgrade TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Heyburn",
+        "West Burley"
+      ],
+      "voltages_kv": [
+        138
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Southeast Idaho – Northwest Wyoming Load Area"
+    },
+    {
+      "native_id": "P02256",
+      "name": "Quenett Creek Substation Addition L0380 (RN)",
+      "page": 102,
+      "quote": "Quenett Creek Substation Addition L0380 (RN) P02256 2028 $57,500,000",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Quenett Creek"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$57,500,000",
+      "work_type": "transmission",
+      "section": "Hood River –The Dalles Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Big Eddy 230 kV Bus Differential Relay Addition",
+      "page": 102,
+      "quote": "Big Eddy 230 kV Bus Differential Relay Addition TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Big Eddy"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Hood River –The Dalles Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "NWCPUD’s Big Eddy- The Dalles 115 kV upgrade",
+      "page": 102,
+      "quote": "NWCPUD’s Big Eddy- The Dalles 115 kV upgrade TBD TBD",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Big Eddy",
+        "The Dalles"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": "TBD",
+      "status_raw": null,
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "Hood River –The Dalles Load Area"
+    },
+    {
+      "native_id": null,
+      "name": "Chehalis-Covington Line Upgrade to Cowlitz Tap",
+      "page": 103,
+      "quote": "Chehalis-Covington Line Upgrade to Cowlitz Tap, TSEP 2022, 2028",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": "L0543",
+      "name": "New Bonanza Substation",
+      "page": 103,
+      "quote": "New Bonanza Substation, L0543, 2028",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bonanza"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Ross-Rivergate 230 kV Line Upgrade",
+      "page": 103,
+      "quote": "Ross-Rivergate 230 kV Line Upgrade, TSEP 2022, 2030",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Ross",
+        "Rivergate"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2030",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "New La Pine-Bonanza 230 kV Line",
+      "page": 103,
+      "quote": "New La Pine-Bonanza 230 kV Line, 2030",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "La Pine",
+        "Bonanza"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2030",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Rock Creek – John Day 500 kV Line Upgrade",
+      "page": 103,
+      "quote": "Rock Creek – John Day 500 kV Line Upgrade, TSEP 2022, 2030",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Rock Creek",
+        "John Day"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2030",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Big Eddy-Chemawa-1 500 kV Line Rebuild",
+      "page": 103,
+      "quote": "Big Eddy-Chemawa-1 500 kV Line Rebuild, TSEP 2022, 2032",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Big Eddy",
+        "Chemawa"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2032",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    }
+  ]
+}

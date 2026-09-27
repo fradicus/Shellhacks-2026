@@ -1,0 +1,29 @@
+{
+  "by_basis": {
+    "one": 20,
+    "source_point": 71,
+    "two": 85
+  },
+  "by_state": {
+    "16": 39,
+    "30": 15,
+    "41": 118,
+    "53": 100
+  },
+  "by_status": {
+    "in_service": 1,
+    "planned": 311,
+    "proposed": 7,
+    "under_construction": 4
+  },
+  "by_tier": {
+    "candidate": 115,
+    "candidate_name_only": 8,
+    "official": 53
+  },
+  "distinct_points": 146,
+  "located": 176,
+  "projects": 323,
+  "unlocated": 147,
+  "verified": 0
+}

@@ -1,0 +1,1370 @@
+{
+  "file": "northerngrid_2026-2027_study_scope",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Barker Project",
+      "page": 12,
+      "quote": "1. IPCO Barker Project",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Barker"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Bennett Mountain - Danskin - Rattlesnake 3-Terminal Line",
+      "page": 12,
+      "quote": "2. IPCO Bennett Mountain - Danskin - Rattlesnake 3-Terminal Line",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Bethel-Monitor 230 kV",
+      "page": 12,
+      "quote": "3. PGN Bethel-Monitor 230 kV",
+      "owner": "PGN",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Bethel",
+        "Monitor"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; PGN"
+    },
+    {
+      "native_id": null,
+      "name": "Bethel-Round Butte 500kV upgrade",
+      "page": 12,
+      "quote": "4. PGN Bethel-Round Butte 500kV upgrade",
+      "owner": "PGN",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Bethel",
+        "Round Butte"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; PGN"
+    },
+    {
+      "native_id": null,
+      "name": "Blacks Creek Solar",
+      "page": 12,
+      "quote": "5. IPCO Blacks Creek Solar",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Blacks Creek"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Bluebird - Garden Springs 230kV Transmission Line",
+      "page": 12,
+      "quote": "6. AVA Bluebird - Garden Springs 230kV Transmission Line",
+      "owner": "AVA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Bluebird",
+        "Garden Springs"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; AVA"
+    },
+    {
+      "native_id": null,
+      "name": "Boardman - Hemingway (B2H) Project",
+      "page": 12,
+      "quote": "7. IPCO Boardman - Hemingway (B2H) Project",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Boardman",
+        "Hemingway"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Harborton-St Marys 230kV",
+      "page": 13,
+      "quote": "12. PGN Harborton-St Marys 230kV",
+      "owner": "PGN",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Harborton",
+        "St Marys"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; PGN"
+    },
+    {
+      "native_id": null,
+      "name": "Mayfield - Pleasant Valley Solar 230kV",
+      "page": 13,
+      "quote": "20. IPCO Mayfield - Pleasant Valley Solar 230kV",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Mayfield",
+        "Pleasant Valley"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Mayfield 230kV Substation",
+      "page": 13,
+      "quote": "21. IPCO Mayfield 230kV Substation",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Mayfield"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "McLoughlin-Monitor 230 kV",
+      "page": 13,
+      "quote": "22. PGN McLoughlin-Monitor 230 kV",
+      "owner": "PGN",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "McLoughlin",
+        "Monitor"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; PGN"
+    },
+    {
+      "native_id": null,
+      "name": "Pallette Junction Switching Station",
+      "page": 13,
+      "quote": "24. IPCO Pallette Junction Switching Station",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Pallette Junction"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Pearl-Sherwood Project",
+      "page": 13,
+      "quote": "25. PGN Pearl-Sherwood Project",
+      "owner": "PGN",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Pearl",
+        "Sherwood"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; PGN"
+    },
+    {
+      "native_id": null,
+      "name": "Pronghorn Project",
+      "page": 13,
+      "quote": "26. IPCO Pronghorn Project",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Pronghorn"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Rebuild T902 Phase 3",
+      "page": 13,
+      "quote": "27. IPCO Rebuild T902 Phase 3",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Rebuild T902 Phase 4",
+      "page": 13,
+      "quote": "28. IPCO Rebuild T902 Phase 4",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "SWIP-North",
+      "page": 13,
+      "quote": "31. IPCO SWIP-North",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Wrap T906 into Mayfield Substation",
+      "page": 13,
+      "quote": "34. IPCO Wrap T906 into Mayfield Substation",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Mayfield"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Wrap T912 into Rattlesnake Substation",
+      "page": 13,
+      "quote": "35. IPCO Wrap T912 into Rattlesnake Substation",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Rattlesnake"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Committed Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Big Eddy-Chemawa Rebuild",
+      "page": 14,
+      "quote": "1. BPA Big Eddy-Chemawa Rebuild",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Big Eddy",
+        "Chemawa"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "BIG EDDY-OSTRANDER-1: (STEEL) 2.5\" RECONDUCTOR WITH 2-ACSS PLOVER",
+      "page": 14,
+      "quote": "2. BPA BIG EDDY-OSTRANDER-1: (STEEL) 2.5\" RECONDUCTOR WITH 2-ACSS PLOVER",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "BIG EDDY",
+        "OSTRANDER"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Big Eddy-Quenett Creek Upgrade",
+      "page": 14,
+      "quote": "3. BPA Big Eddy-Quenett Creek Upgrade",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Big Eddy",
+        "Quenett Creek"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Carlin Bay - Ogara 115kV Transmission Line",
+      "page": 14,
+      "quote": "4. AVA Carlin Bay - Ogara 115kV Transmission Line",
+      "owner": "AVA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Carlin Bay",
+        "Ogara"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; AVA"
+    },
+    {
+      "native_id": null,
+      "name": "Chehalis-Cowlitz Tap Rebuild // CHEH-COVI-1: LINE UPGRADE TO COWLITZ TAP TSEP\n2022 (DES/CON)",
+      "page": 14,
+      "quote": "Chehalis-Cowlitz Tap Rebuild // CHEH-COVI-1: LINE UPGRADE TO COWLITZ TAP TSEP\n2022 (DES/CON)",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Coeur d’Alene Transmission Reinforcement",
+      "page": 14,
+      "quote": "6. AVA Coeur d’Alene Transmission Reinforcement",
+      "owner": "AVA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; AVA"
+    },
+    {
+      "native_id": null,
+      "name": "Cross-Cascades",
+      "page": 14,
+      "quote": "7. PSEI Cross-Cascades",
+      "owner": "PSEI",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; PSEI"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Transm. (Segment 10)",
+      "page": 14,
+      "quote": "8. IPCO Gateway West Transm. (Segment 10)",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Transm. (Segment 5)",
+      "page": 14,
+      "quote": "9. IPCO Gateway West Transm. (Segment 5)",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Transm. (Segment 6)",
+      "page": 14,
+      "quote": "10. IPCO Gateway West Transm. (Segment 6)",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Transm. (Segment 7)",
+      "page": 14,
+      "quote": "11. IPCO Gateway West Transm. (Segment 7)",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "La Pine-Bonanza Line",
+      "page": 14,
+      "quote": "13. BPA La Pine-Bonanza Line",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "La Pine",
+        "Bonanza"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Lewiston 230kV Mitigation",
+      "page": 14,
+      "quote": "14. AVA Lewiston 230kV Mitigation",
+      "owner": "AVA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; AVA"
+    },
+    {
+      "native_id": null,
+      "name": "Lolo – Oxbow Rebuild",
+      "page": 14,
+      "quote": "15. NWMT, IPCO Lolo – Oxbow Rebuild",
+      "owner": "NWMT, IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Lolo",
+        "Oxbow"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; NWMT, IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "M2I",
+      "page": 14,
+      "quote": "16. NWMT M2I",
+      "owner": "NWMT",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; NWMT"
+    },
+    {
+      "native_id": null,
+      "name": "PEARL-SHERWOOD-MCLOUGHLIN: UPGRADE 230 kV Lines",
+      "page": 14,
+      "quote": "18. BPA PEARL-SHERWOOD-MCLOUGHLIN: UPGRADE 230 kV Lines",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "ROCK CREEK-JOHN DAY-1 500KV LINE UPGRADE",
+      "page": 14,
+      "quote": "19. BPA ROCK CREEK-JOHN DAY-1 500KV LINE UPGRADE",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "ROCK CREEK",
+        "JOHN DAY"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Ross-Rivergate Rebuild",
+      "page": 14,
+      "quote": "20. BPA Ross-Rivergate Rebuild",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Ross",
+        "Rivergate"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Schultz SHUL: INSTALL SERIES CAPS ON SHUL-RAVE-3&4 // Schultz-Raver No 3 & No 4",
+      "page": 14,
+      "quote": "21. BPA Schultz SHUL: INSTALL SERIES CAPS ON SHUL-RAVE-3&4 // Schultz-Raver No 3 & No 4",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Schultz",
+        "Raver"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Schultz-Raver Reconductor and Paul Capacitor",
+      "page": 14,
+      "quote": "22. BPA Schultz-Raver Reconductor and Paul Capacitor",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "White River – BPA Covington #1 & #2 230 kV Transmission Project",
+      "page": 14,
+      "quote": "23. PSEI White River – BPA Covington #1 & #2 230 kV Transmission Project",
+      "owner": "PSEI",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "White River",
+        "Covington"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Uncommitted Projects; PSEI"
+    },
+    {
+      "native_id": null,
+      "name": "Lewiston 115kV Mitigation",
+      "page": 15,
+      "quote": "AVA Lewiston 115kV Mitigation Station 30MVA transformer at Lolo Station",
+      "owner": "AVA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; AVA"
+    },
+    {
+      "native_id": null,
+      "name": "Bonanza Substation",
+      "page": 15,
+      "quote": "BPA Bonanza Substation Bonanza gen in Ponderosa area",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bonanza"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Buckley Rebuild",
+      "page": 15,
+      "quote": "BPA Buckley Rebuild Buckley gas",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Buckley"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Transformer Addition",
+      "page": 15,
+      "quote": "Reconfiguration of the Keeler 500 kV\nKeeler 500kV Expansion and Substation into a breaker and a half\nBPA Transformer Addition Keeler layout",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Keeler"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "CANYON 500/230kV Substation",
+      "page": 15,
+      "quote": "West of Boardman (SIXMILE transformer banks and two 230kV\nBPA CANYON 500/230kV Substation) Boardman feeds to UEC.",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "CANYON"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "HOT SPRINGS 500KV 180 MVAR REACTOR",
+      "page": 15,
+      "quote": "HOT SPRINGS 500KV 180 MVAR\nREACTOR AND OTHER Hot",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "HOT SPRINGS"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Webber Canyon Substation",
+      "page": 15,
+      "quote": "BPA Webber Canyon Substation Canyon",
+      "owner": "BPA",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Webber Canyon"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; BPA"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West (Segment 8)",
+      "page": 15,
+      "quote": "IPC Gateway West (Segment 8) Midpoint Midpoint.",
+      "owner": "IPC",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Midpoint",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; IPC"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West (Segment 9)",
+      "page": 16,
+      "quote": "IPC Gateway West (Segment 9) Cedar Hill located at Cedar Hill.",
+      "owner": "IPC",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; IPC"
+    },
+    {
+      "native_id": null,
+      "name": "Borah T501",
+      "page": 16,
+      "quote": "New Tie Bank (1800MVA),\nassociated with Gateway West\nIPC Borah T501 Borah Segment #5.",
+      "owner": "IPC",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Borah"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; IPC"
+    },
+    {
+      "native_id": null,
+      "name": "MATL Expansion",
+      "page": 16,
+      "quote": "Installation of two (2) PSTs in\nMontana (at Hay Lake) for a nominal\ncapacity of 600MW to increase\nMATL MATL Expansion Montana merchant transmission capacity",
+      "owner": "MATL",
+      "states": [
+        "MT"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Hay Lake"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; MATL"
+    },
+    {
+      "native_id": null,
+      "name": "CTS Upgrade - Series Capacitors",
+      "page": 16,
+      "quote": "500 kV Loco Mountain - Broadview 500 kV\nNWMT CTS Upgrade - Series Capacitors lines A and B lines",
+      "owner": "NWMT",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Loco Mountain",
+        "Broadview"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; NWMT"
+    },
+    {
+      "native_id": null,
+      "name": "Loco Mountain Line Shunts",
+      "page": 16,
+      "quote": "Loco Mountain - Broadview 500 kV A and\nNWMT Loco Mountain Line Shunts Mountain B line",
+      "owner": "NWMT",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Loco Mountain",
+        "Broadview"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; NWMT"
+    },
+    {
+      "native_id": null,
+      "name": "Colstrip - Broadview Series",
+      "page": 16,
+      "quote": "Colstrip - Broadview Series 500 kV A the Broadview - Colstrip 500 kV A",
+      "owner": "NWMT",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Colstrip",
+        "Broadview"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; NWMT"
+    },
+    {
+      "native_id": null,
+      "name": "Townsend Substation (M2I)",
+      "page": 16,
+      "quote": "Townsend 500 kV substation tapping\nTownsend both Broadview - Garrison 500 kV 1\nNWMT Townsend Substation (M2I) 500 kV and 2 lines.",
+      "owner": "NWMT",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Townsend"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; NWMT"
+    },
+    {
+      "native_id": null,
+      "name": "Monitor Substation Rebuild",
+      "page": 16,
+      "quote": "New VWR1 transformer at the rebuilt\nPGE Monitor Substation Rebuild OR Monitor substation",
+      "owner": "PGE",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Monitor"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PGE"
+    },
+    {
+      "native_id": null,
+      "name": "Bethel 115 kV Rebuild",
+      "page": 16,
+      "quote": "New 22 MVAR, 115 kV cap bank at\nthe rebuilt Bethel 115 kV substation\nPGE Bethel 115 kV Rebuild Salem, OR yard",
+      "owner": "PGE",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bethel"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PGE"
+    },
+    {
+      "native_id": null,
+      "name": "Malin #2 Reactor Upgrade",
+      "page": 16,
+      "quote": "Upgrade 60MVAR single phase to\nPGE Malin #2 Reactor Upgrade Malin,OR 100MVAR reactors",
+      "owner": "PGE",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Malin"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PGE"
+    },
+    {
+      "native_id": null,
+      "name": "Sherwood Rebuild",
+      "page": 16,
+      "quote": "Sherwood,\nPGE Sherwood Rebuild OR New VWR3 Transformer",
+      "owner": "PGE",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Sherwood"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PGE"
+    },
+    {
+      "native_id": null,
+      "name": "Bethel Round Butte Series",
+      "page": 17,
+      "quote": "Bethel Round Butte Series\nPGE Capacitor Salem, OR Fixed Series Capacitor",
+      "owner": "PGE",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Bethel",
+        "Round Butte"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PGE"
+    },
+    {
+      "native_id": null,
+      "name": "Capacity Improvement at PSE Richards Creek Substation",
+      "page": 17,
+      "quote": "PSEI Capacity Improvement at PSE Richards Creek Substation",
+      "owner": "PSEI",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Richards Creek"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PSEI"
+    },
+    {
+      "native_id": null,
+      "name": "Transformer x3 Installation at PSE White River Substation",
+      "page": 17,
+      "quote": "PSEI Transformer x3 Installation at PSE White River Substation",
+      "owner": "PSEI",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "White River"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; PSEI"
+    },
+    {
+      "native_id": null,
+      "name": "Sky Valley Switching Station",
+      "page": 17,
+      "quote": "Construct a three breaker ring bus\nSkykomish switching station with one 28 MVA\nSNPD Sky Valley Switching Station Valley, WA transformer bank.",
+      "owner": "SNPD",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Sky Valley"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; SNPD"
+    },
+    {
+      "native_id": null,
+      "name": "Getchell 115 kV Switching Station",
+      "page": 17,
+      "quote": "Getchell, Stimson Crossing 115 kV line into\nSNPD Getchell 115 kV Switching Station WA the proposed switching station",
+      "owner": "SNPD",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Getchell"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Terminal Facilities; SNPD"
+    },
+    {
+      "native_id": null,
+      "name": "Crosswind New Substation",
+      "page": 17,
+      "quote": "Marysville, Construct a new 25 MVA Battery\nSNPD Crosswind New Substation WA storage with a switching station",
+      "owner": "SNPD",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Crosswind"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "Terminal Facilities; SNPD"
+    }
+  ]
+}

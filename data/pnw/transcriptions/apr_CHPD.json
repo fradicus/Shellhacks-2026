@@ -1,0 +1,23 @@
+{
+  "file": "apr_CHPD",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Jumpoff Ridge 230/115 kV station",
+      "page": 1,
+      "quote": "Our only active project is the Jumpoff Ridge 230/115 kV station for a large load; this was previously granted a waiver\nin the annual report process.",
+      "owner": "CHPD",
+      "states": ["WA"],
+      "state_basis": "owner_territory",
+      "counties": [],
+      "kind": "site",
+      "facilities": ["Jumpoff Ridge"],
+      "voltages_kv": [230, 115],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": null
+    }
+  ]
+}

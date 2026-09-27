@@ -1,0 +1,4462 @@
+[
+  {
+    "id": "node/5487520098",
+    "lat": 47.6175286,
+    "lon": -122.3202242,
+    "name": "TPSS #66",
+    "norm": "TPSS",
+    "operator": "King County Metro",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "node/8406688170",
+    "lat": 47.6212704,
+    "lon": -122.3124862,
+    "name": "Capitol Rectifier Sub. No. 6",
+    "norm": "CAPITOL RECTIFIER . NO. 6",
+    "operator": "King County Metro",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "relation/10383763",
+    "lat": 46.9995097,
+    "lon": -122.9529966,
+    "name": "Olympia Substation",
+    "norm": "OLYMPIA",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "relation/14293827",
+    "lat": 48.9812792,
+    "lon": -117.3578071,
+    "name": "Boundary Substation",
+    "norm": "BOUNDARY",
+    "operator": "Seattle City Light",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "relation/17872321",
+    "lat": 46.228762,
+    "lon": -119.2306969,
+    "name": "Vista Substation",
+    "norm": "VISTA",
+    "operator": "Benton Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "relation/18399015",
+    "lat": 45.622984,
+    "lon": -122.4647835,
+    "name": "Lacamas Substation",
+    "norm": "LACAMAS",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "relation/19209891",
+    "lat": 46.1404118,
+    "lon": -122.9933076,
+    "name": "Longview Substation",
+    "norm": "LONGVIEW",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "relation/7529197",
+    "lat": 47.6191006,
+    "lon": -122.331963,
+    "name": "Denny Substation",
+    "norm": "DENNY",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "relation/8527113",
+    "lat": 46.2716427,
+    "lon": -119.3486128,
+    "name": "Ledbeder Substation",
+    "norm": "LEDBEDER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/100706307",
+    "lat": 45.81214,
+    "lon": -120.8345189,
+    "name": "E. E. Clouse Substation",
+    "norm": "E. E. CLOUSE",
+    "operator": "Klickitat Public Utility District",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/100710221",
+    "lat": 47.3328779,
+    "lon": -117.1522135,
+    "name": "Latah Junction Substation",
+    "norm": "LATAH JUNCTION",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/101916486",
+    "lat": 48.2891542,
+    "lon": -117.2712518,
+    "name": "Usk Substation",
+    "norm": "USK",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/101941546",
+    "lat": 45.6369633,
+    "lon": -122.6656867,
+    "name": "20th and 'F' Substation",
+    "norm": "20TH AND 'F'",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/102061794",
+    "lat": 46.6422004,
+    "lon": -119.8970968,
+    "name": "Priest Rapids",
+    "norm": "PRIEST RAPIDS",
+    "operator": "Grant County Public Utility District",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/102147721",
+    "lat": 46.2936018,
+    "lon": -119.9506686,
+    "name": "Wine Country Substation",
+    "norm": "WINE COUNTRY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/102148322",
+    "lat": 46.3011589,
+    "lon": -120.2184865,
+    "name": "Alfalfa Substation",
+    "norm": "ALFALFA",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1022139164",
+    "lat": 47.6063937,
+    "lon": -122.3210103,
+    "name": "Broadway and Minor Traction Substation",
+    "norm": "BROADWAY AND MINOR TRACTION",
+    "operator": "King County Metro",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/102323021",
+    "lat": 45.6291915,
+    "lon": -122.6240146,
+    "name": "Mill Plain Substation",
+    "norm": "MILL PLAIN",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/102717706",
+    "lat": 48.1543853,
+    "lon": -122.0834438,
+    "name": "Murray Substation",
+    "norm": "MURRAY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/1027260897",
+    "lat": 47.0144181,
+    "lon": -120.5377299,
+    "name": "Helena Ave. Substation",
+    "norm": "HELENA AVE.",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/103127603",
+    "lat": 46.5226152,
+    "lon": -122.592316,
+    "name": "Silver Creek Substation",
+    "norm": "SILVER CREEK",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/103127607",
+    "lat": 46.5328956,
+    "lon": -122.4312493,
+    "name": "Mossyrock Substation",
+    "norm": "MOSSYROCK",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/103247184",
+    "lat": 48.0042558,
+    "lon": -119.4078847,
+    "name": "Nilles Substation",
+    "norm": "NILLES",
+    "operator": "Douglas County PUD No 1",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/103489693",
+    "lat": 48.5537314,
+    "lon": -117.8529456,
+    "name": "Colville Substation",
+    "norm": "COLVILLE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1058427463",
+    "lat": 46.1873388,
+    "lon": -119.1542212,
+    "name": "Ely Substation",
+    "norm": "ELY",
+    "operator": "Benton Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/106221018",
+    "lat": 48.0423835,
+    "lon": -123.1060539,
+    "name": "Happy Valley Substaton",
+    "norm": "HAPPY VALLEY SUBSTATON",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/108166999",
+    "lat": 47.706974,
+    "lon": -122.091409,
+    "name": "Avondale Substation",
+    "norm": "AVONDALE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/111662124",
+    "lat": 47.4423439,
+    "lon": -121.6889745,
+    "name": "Twin Falls Substation North Bend",
+    "norm": "TWIN FALLS NORTH BEND",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1134146068",
+    "lat": 47.0732874,
+    "lon": -119.2775673,
+    "name": "Sand Dunes Substation",
+    "norm": "SAND DUNES",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/1134232247",
+    "lat": 47.1382557,
+    "lon": -119.3265861,
+    "name": "Cascade Valley Substation",
+    "norm": "CASCADE VALLEY",
+    "operator": "Grant County Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1144539852",
+    "lat": 47.6211992,
+    "lon": -122.3467203,
+    "name": "Broad Street Substation Annex",
+    "norm": "BROAD STREET ANNEX",
+    "operator": "Seattle City Light",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1148383440",
+    "lat": 46.4681073,
+    "lon": -119.312728,
+    "name": "WNP 1 Substation",
+    "norm": "WNP 1",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1148453552",
+    "lat": 46.3029423,
+    "lon": -119.6613353,
+    "name": "Snipes Substation",
+    "norm": "SNIPES",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1153685792",
+    "lat": 46.1763413,
+    "lon": -119.0393301,
+    "name": "Hedges Substation",
+    "norm": "HEDGES",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1155330198",
+    "lat": 46.1767028,
+    "lon": -119.1088772,
+    "name": "Gum Street Substation",
+    "norm": "GUM STREET",
+    "operator": "Benton Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/116272329",
+    "lat": 47.6615038,
+    "lon": -117.4239206,
+    "name": "Post Street Substation",
+    "norm": "POST STREET",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1173822720",
+    "lat": 47.359674,
+    "lon": -120.155958,
+    "name": "Jumpoff Ridge",
+    "norm": "JUMPOFF RIDGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000,230000"
+  },
+  {
+    "id": "way/122591444",
+    "lat": 48.5982295,
+    "lon": -123.1309394,
+    "name": "Roche Harbor Substation",
+    "norm": "ROCHE HARBOR",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/122683528",
+    "lat": 47.6655812,
+    "lon": -117.2370107,
+    "name": "Opportunity Substation",
+    "norm": "OPPORTUNITY",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1231086480",
+    "lat": 47.1350724,
+    "lon": -122.4870452,
+    "name": "Building 733",
+    "norm": "BUILDING 733",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1233524353",
+    "lat": 47.5584623,
+    "lon": -122.6339032,
+    "name": "Building 408",
+    "norm": "BUILDING 408",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1233798347",
+    "lat": 47.560002,
+    "lon": -122.6302355,
+    "name": "Building 507",
+    "norm": "BUILDING 507",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1233798348",
+    "lat": 47.5581679,
+    "lon": -122.6301601,
+    "name": "Building 508",
+    "norm": "BUILDING 508",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1233798349",
+    "lat": 47.5581237,
+    "lon": -122.6302989,
+    "name": "Building 420",
+    "norm": "BUILDING 420",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1233798350",
+    "lat": 47.5606271,
+    "lon": -122.6281924,
+    "name": "Building 734",
+    "norm": "BUILDING 734",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1234279481",
+    "lat": 47.5590796,
+    "lon": -122.6372084,
+    "name": "Substation \"E\"",
+    "norm": "\"E\"",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1234279483",
+    "lat": 47.5592305,
+    "lon": -122.6372196,
+    "name": "Substation \"E\"",
+    "norm": "\"E\"",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/125659276",
+    "lat": 46.2043629,
+    "lon": -119.2215123,
+    "name": "Orchard View Substation",
+    "norm": "ORCHARD VIEW",
+    "operator": "Benton County PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1284251376",
+    "lat": 47.8949884,
+    "lon": -120.1585549,
+    "name": "Manson Substation",
+    "norm": "MANSON",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/128954536",
+    "lat": 45.9288739,
+    "lon": -122.7228163,
+    "name": "Lewis River Substation",
+    "norm": "LEWIS RIVER",
+    "operator": "Cowlitz Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1303605199",
+    "lat": 46.6634427,
+    "lon": -119.0053267,
+    "name": "Scooteney Substation",
+    "norm": "SCOOTENEY",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1315829143",
+    "lat": 47.7049628,
+    "lon": -120.214916,
+    "name": "Entiat Switchyard",
+    "norm": "ENTIAT SWITCHYARD",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1324031993",
+    "lat": 48.1015189,
+    "lon": -123.4159909,
+    "name": "College Substation",
+    "norm": "COLLEGE",
+    "operator": "Port Angeles Light",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1353702843",
+    "lat": 48.1027151,
+    "lon": -123.4167184,
+    "name": "Liberty Substation",
+    "norm": "LIBERTY",
+    "operator": "Callam County Public Utility District #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/140354175",
+    "lat": 46.0686695,
+    "lon": -118.406285,
+    "name": "Walla Walla Substation",
+    "norm": "WALLA WALLA",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1424400341",
+    "lat": 47.9669519,
+    "lon": -124.4056008,
+    "name": "Old Beaver Camp Substation",
+    "norm": "OLD BEAVER CAMP",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/142749141",
+    "lat": 46.3763548,
+    "lon": -123.8054975,
+    "name": "Naselle Substation",
+    "norm": "NASELLE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1429115533",
+    "lat": 46.9822426,
+    "lon": -119.2576456,
+    "name": "Potholes East Substation",
+    "norm": "POTHOLES EAST",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1432703090",
+    "lat": 47.1569418,
+    "lon": -122.0408994,
+    "name": "Buckley Substation",
+    "norm": "BUCKLEY",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/143899421",
+    "lat": 46.0296002,
+    "lon": -118.4516747,
+    "name": "Whitman Substation",
+    "norm": "WHITMAN",
+    "operator": "Columbia Rural Electric",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1452503398",
+    "lat": 46.9726608,
+    "lon": -123.6986,
+    "name": "Grays Harbor PUD Substation",
+    "norm": "GRAYS HARBOR PUD",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/1472877411",
+    "lat": 46.1146107,
+    "lon": -122.9369832,
+    "name": "Cowlitz Substation",
+    "norm": "COWLITZ",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/157654042",
+    "lat": 46.2110976,
+    "lon": -119.1716953,
+    "name": "Angus Substation",
+    "norm": "ANGUS",
+    "operator": "Benton Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/157654043",
+    "lat": 46.1977299,
+    "lon": -119.1192341,
+    "name": "Kennewick Substation",
+    "norm": "KENNEWICK",
+    "operator": "Benton Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/158275313",
+    "lat": 47.5681103,
+    "lon": -122.3301517,
+    "name": "South Substation",
+    "norm": "SOUTH",
+    "operator": "Seattle City Light",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/162043753",
+    "lat": 47.6852582,
+    "lon": -122.1497735,
+    "name": "Sammamish Substation",
+    "norm": "SAMMAMISH",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/162780834",
+    "lat": 47.2892728,
+    "lon": -122.3297648,
+    "name": "West Campus Substation",
+    "norm": "WEST CAMPUS",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/163555724",
+    "lat": 47.3220839,
+    "lon": -122.3526638,
+    "name": "Lakota Substation",
+    "norm": "LAKOTA",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/164769529",
+    "lat": 47.3780751,
+    "lon": -122.131619,
+    "name": "Berrydale Substation",
+    "norm": "BERRYDALE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/167541577",
+    "lat": 47.2014602,
+    "lon": -120.9690464,
+    "name": "Cascade Substation",
+    "norm": "CASCADE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/167561902",
+    "lat": 46.9988362,
+    "lon": -120.5640566,
+    "name": "Ellensburg Substation",
+    "norm": "ELLENSBURG",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/169066260",
+    "lat": 46.3808213,
+    "lon": -117.1165063,
+    "name": "Dry Gulch Substation",
+    "norm": "DRY GULCH",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/169137765",
+    "lat": 46.2265806,
+    "lon": -118.9863226,
+    "name": "Burbank Substation",
+    "norm": "BURBANK",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169137766",
+    "lat": 46.1383468,
+    "lon": -118.8267416,
+    "name": "Joso Substation",
+    "norm": "JOSO",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/169137767",
+    "lat": 46.0638543,
+    "lon": -118.845856,
+    "name": "Wallula Substation",
+    "norm": "WALLULA",
+    "operator": "PacifiCorp",
+    "state": "WA",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/169384549",
+    "lat": 48.3582071,
+    "lon": -117.8500646,
+    "name": "Addy Substation",
+    "norm": "ADDY",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/169384596",
+    "lat": 48.0903408,
+    "lon": -117.6294081,
+    "name": "Loon Substation",
+    "norm": "LOON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169384605",
+    "lat": 47.8387027,
+    "lon": -117.4102556,
+    "name": "Halfmoon Substation",
+    "norm": "HALFMOON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169384606",
+    "lat": 48.0126696,
+    "lon": -117.5656779,
+    "name": "Clayton Substation",
+    "norm": "CLAYTON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169389001",
+    "lat": 47.9597023,
+    "lon": -117.4964184,
+    "name": "Deer Park Substation",
+    "norm": "DEER PARK",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169393782",
+    "lat": 48.8144305,
+    "lon": -117.6460032,
+    "name": "Spirit Substation",
+    "norm": "SPIRIT",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/169405034",
+    "lat": 46.6829848,
+    "lon": -119.1906331,
+    "name": "Eagle Lake Substation",
+    "norm": "EAGLE LAKE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169463261",
+    "lat": 46.8860526,
+    "lon": -117.3559379,
+    "name": "East Colfax Substation",
+    "norm": "EAST COLFAX",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169463263",
+    "lat": 46.823258,
+    "lon": -117.2688984,
+    "name": "Shawnee Substation",
+    "norm": "SHAWNEE",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/169680694",
+    "lat": 47.4086853,
+    "lon": -120.1871874,
+    "name": "Pangborn Substation",
+    "norm": "PANGBORN",
+    "operator": "Douglas County PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/169759057",
+    "lat": 47.7296343,
+    "lon": -117.07276,
+    "name": "Moab Substation",
+    "norm": "MOAB",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169778765",
+    "lat": 46.5926644,
+    "lon": -120.3875078,
+    "name": "Moxee Substation",
+    "norm": "MOXEE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/169787394",
+    "lat": 46.9724497,
+    "lon": -120.2182762,
+    "name": "Poison Spring Substation",
+    "norm": "POISON SPRING",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/169788625",
+    "lat": 46.6504999,
+    "lon": -120.490229,
+    "name": "Pomona Heights Substation",
+    "norm": "POMONA HEIGHTS",
+    "operator": "PacifiCorp",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/169791239",
+    "lat": 46.5596727,
+    "lon": -120.4898494,
+    "name": "Union Gap Substation",
+    "norm": "UNION GAP",
+    "operator": "PacifiCorp",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/169806821",
+    "lat": 46.295372,
+    "lon": -119.2854434,
+    "name": "Stevens Drive Substation",
+    "norm": "STEVENS DRIVE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/170176222",
+    "lat": 48.6498587,
+    "lon": -118.6850668,
+    "name": "Republic Substation",
+    "norm": "REPUBLIC",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/170290593",
+    "lat": 47.7279626,
+    "lon": -117.5043964,
+    "name": "West Side Substation",
+    "norm": "WEST SIDE",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/170290619",
+    "lat": 47.7709807,
+    "lon": -118.505899,
+    "name": "Creston Substation",
+    "norm": "CRESTON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/170819494",
+    "lat": 48.4293357,
+    "lon": -119.5010675,
+    "name": "Omak Substation",
+    "norm": "OMAK",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/170823690",
+    "lat": 48.1499055,
+    "lon": -119.321897,
+    "name": "Goose Lake Substation",
+    "norm": "GOOSE LAKE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/170984397",
+    "lat": 47.6530954,
+    "lon": -120.2075958,
+    "name": "Orondo Substation",
+    "norm": "ORONDO",
+    "operator": "Public Utility District Number 1 of Douglas County",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/170984436",
+    "lat": 47.7369956,
+    "lon": -120.1982219,
+    "name": "Brays Substation",
+    "norm": "BRAYS",
+    "operator": "Douglas County PUD No 1",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/172463773",
+    "lat": 47.6128856,
+    "lon": -119.2771312,
+    "name": "Coulee City Substation",
+    "norm": "COULEE CITY",
+    "operator": "Grant County PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/173220881",
+    "lat": 47.4232332,
+    "lon": -119.2769085,
+    "name": "Stratford Substation",
+    "norm": "STRATFORD",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/179550348",
+    "lat": 47.7078566,
+    "lon": -121.3522915,
+    "name": "Skykomish Substation",
+    "norm": "SKYKOMISH",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/181554548",
+    "lat": 46.1955648,
+    "lon": -123.3708242,
+    "name": "Wahkiakum Substation",
+    "norm": "WAHKIAKUM",
+    "operator": "Wahkiakum Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/181932948",
+    "lat": 47.8270436,
+    "lon": -117.8505627,
+    "name": "Devil's Gap Substation",
+    "norm": "DEVIL'S GAP",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/182314610",
+    "lat": 47.026259,
+    "lon": -122.7244075,
+    "name": "Olympia Pumping Facility",
+    "norm": "OLYMPIA PUMPING FACILITY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/182466032",
+    "lat": 46.9460044,
+    "lon": -122.5960008,
+    "name": "Yelm Substation",
+    "norm": "YELM",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/186713377",
+    "lat": 45.7202608,
+    "lon": -121.8041973,
+    "name": "Carson Substation",
+    "norm": "CARSON",
+    "operator": "Skamania County Public Utility District #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/199761571",
+    "lat": 47.2561609,
+    "lon": -122.5260128,
+    "name": "North Mildred Substation",
+    "norm": "NORTH MILDRED",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/200242044",
+    "lat": 47.187642,
+    "lon": -122.4923434,
+    "name": "Southwest Substation",
+    "norm": "SOUTHWEST",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/204345660",
+    "lat": 47.1492952,
+    "lon": -122.4298424,
+    "name": "John Curtis Substation",
+    "norm": "JOHN CURTIS",
+    "operator": "Parkland Light and Water",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/204493600",
+    "lat": 47.1367695,
+    "lon": -122.4423156,
+    "name": "Brookdale Substation",
+    "norm": "BROOKDALE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/205963176",
+    "lat": 47.6630275,
+    "lon": -117.4336101,
+    "name": "College & Walnut Substation",
+    "norm": "COLLEGE & WALNUT",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/206047760",
+    "lat": 47.6202175,
+    "lon": -122.3263295,
+    "name": "Bellevue Rectifier Sub. No. 5",
+    "norm": "BELLEVUE RECTIFIER . NO. 5",
+    "operator": "King County Metro Transit",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/206943782",
+    "lat": 47.3545688,
+    "lon": -122.1767307,
+    "name": "Sequoia Substation",
+    "norm": "SEQUOIA",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/213327069",
+    "lat": 47.7333843,
+    "lon": -122.1406285,
+    "name": "Hollywood Substation",
+    "norm": "HOLLYWOOD",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/214963810",
+    "lat": 47.4235482,
+    "lon": -122.2981766,
+    "name": "Sweptwing Substation",
+    "norm": "SWEPTWING",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/215934780",
+    "lat": 47.7897404,
+    "lon": -122.1791082,
+    "name": "Park Ridge Substation",
+    "norm": "PARK RIDGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/218355361",
+    "lat": 48.1554489,
+    "lon": -122.302652,
+    "name": "Lake Goodwin Substation",
+    "norm": "LAKE GOODWIN",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/230497305",
+    "lat": 47.9100301,
+    "lon": -122.0900871,
+    "name": "Snohomish Substation",
+    "norm": "SNOHOMISH",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/230576046",
+    "lat": 47.0342107,
+    "lon": -122.8672426,
+    "name": "McKinley Substation",
+    "norm": "MCKINLEY",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/230912708",
+    "lat": 46.9958142,
+    "lon": -122.8067509,
+    "name": "Southwick Substation",
+    "norm": "SOUTHWICK",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/231362091",
+    "lat": 47.6097484,
+    "lon": -122.3443909,
+    "name": "Waterfront Streetcar Rectifier Sub. No. 20",
+    "norm": "WATERFRONT STREETCAR RECTIFIER . NO. 20",
+    "operator": "King County Metro",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/231656549",
+    "lat": 46.8600282,
+    "lon": -122.8517863,
+    "name": "Blumaer Substation",
+    "norm": "BLUMAER",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/231736568",
+    "lat": 47.9825058,
+    "lon": -122.2146701,
+    "name": "Waterfront Substation",
+    "norm": "WATERFRONT",
+    "operator": "PUD No. 1 of Snohomish County",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/233700902",
+    "lat": 47.8503973,
+    "lon": -122.2690305,
+    "name": "Polaris Substation",
+    "norm": "POLARIS",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/237325406",
+    "lat": 47.0033349,
+    "lon": -122.8633418,
+    "name": "Chambers Substation",
+    "norm": "CHAMBERS",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/237325610",
+    "lat": 47.0035587,
+    "lon": -122.7549685,
+    "name": "Distribution Substation",
+    "norm": "DISTRIBUTION",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/237727580",
+    "lat": 47.8545412,
+    "lon": -122.2190052,
+    "name": "North Creek Substation",
+    "norm": "NORTH CREEK",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/238146733",
+    "lat": 47.6340009,
+    "lon": -122.3203468,
+    "name": "North Broadway Rectifier Sub. No. 13",
+    "norm": "NORTH BROADWAY RECTIFIER . NO. 13",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/239014945",
+    "lat": 48.1468861,
+    "lon": -122.1818014,
+    "name": "Smokey Point Substation",
+    "norm": "SMOKEY POINT",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/239139731",
+    "lat": 48.1621274,
+    "lon": -122.4778469,
+    "name": "South Camano Substation",
+    "norm": "SOUTH CAMANO",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/239376329",
+    "lat": 47.0440174,
+    "lon": -122.8936074,
+    "name": "Plum St Substation",
+    "norm": "PLUM ST",
+    "operator": "PSE",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/239507228",
+    "lat": 47.0420885,
+    "lon": -122.8440667,
+    "name": "Johnson Hill Substation",
+    "norm": "JOHNSON HILL",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/240336796",
+    "lat": 47.6499619,
+    "lon": -122.6510585,
+    "name": "Valley Junction",
+    "norm": "VALLEY JUNCTION",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/240692606",
+    "lat": 47.0339846,
+    "lon": -122.8935329,
+    "name": "Capital Substation",
+    "norm": "CAPITAL",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/240981373",
+    "lat": 47.762857,
+    "lon": -122.2500839,
+    "name": "Kenmore Substation",
+    "norm": "KENMORE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/240986124",
+    "lat": 47.7176718,
+    "lon": -122.195575,
+    "name": "Juanita Substation",
+    "norm": "JUANITA",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/241035535",
+    "lat": 47.769842,
+    "lon": -122.2083867,
+    "name": "North Bothell Substation",
+    "norm": "NORTH BOTHELL",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/241064589",
+    "lat": 48.303067,
+    "lon": -122.6536109,
+    "name": "Faber Substation",
+    "norm": "FABER",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/241192103",
+    "lat": 47.0478995,
+    "lon": -122.8992617,
+    "name": "Thurston Substation",
+    "norm": "THURSTON",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/241827224",
+    "lat": 48.6972209,
+    "lon": -119.445849,
+    "name": "Tonasket Substation",
+    "norm": "TONASKET",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/241878898",
+    "lat": 47.6474689,
+    "lon": -121.9069899,
+    "name": "Tolt Substation",
+    "norm": "TOLT",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/241879617",
+    "lat": 47.5721865,
+    "lon": -121.8881782,
+    "name": "Fall City Substation",
+    "norm": "FALL CITY",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/241884006",
+    "lat": 47.4765365,
+    "lon": -122.0264576,
+    "name": "Mirrormont Substation",
+    "norm": "MIRRORMONT",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/242082123",
+    "lat": 47.535881,
+    "lon": -121.812202,
+    "name": "Weyerhauser Snoqualmie Mill Substation",
+    "norm": "WEYERHAUSER SNOQUALMIE MILL",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/242633368",
+    "lat": 47.6166418,
+    "lon": -122.1531473,
+    "name": "Midlakes Substation",
+    "norm": "MIDLAKES",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/243497998",
+    "lat": 47.4878013,
+    "lon": -122.1341822,
+    "name": "Maplewood Substation",
+    "norm": "MAPLEWOOD",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/243506237",
+    "lat": 47.6465008,
+    "lon": -122.1253162,
+    "name": "Evergreen Substation",
+    "norm": "EVERGREEN",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/243598395",
+    "lat": 47.4930382,
+    "lon": -121.873382,
+    "name": "Echo Lake Substation",
+    "norm": "ECHO LAKE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/243999324",
+    "lat": 47.6164988,
+    "lon": -122.1223956,
+    "name": "Lake Hills Substation",
+    "norm": "LAKE HILLS",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/243999393",
+    "lat": 47.595916,
+    "lon": -122.1322972,
+    "name": "Phantom Lake Substation",
+    "norm": "PHANTOM LAKE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/244227852",
+    "lat": 47.6488306,
+    "lon": -121.9721208,
+    "name": "Ames Lake Substation",
+    "norm": "AMES LAKE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/244450028",
+    "lat": 47.4574974,
+    "lon": -122.2418325,
+    "name": "Nelson Cable Station",
+    "norm": "NELSON CABLE STATION",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/244468438",
+    "lat": 47.6071121,
+    "lon": -122.339481,
+    "name": "Union Street Substation",
+    "norm": "UNION STREET",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/244650221",
+    "lat": 47.4298764,
+    "lon": -122.1820383,
+    "name": "Panther Lake Substation",
+    "norm": "PANTHER LAKE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/244910205",
+    "lat": 47.3408475,
+    "lon": -122.2230491,
+    "name": "Merideth Substation",
+    "norm": "MERIDETH",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/245084554",
+    "lat": 47.4450905,
+    "lon": -122.1535922,
+    "name": "Fairwood Substation",
+    "norm": "FAIRWOOD",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/245086239",
+    "lat": 47.322237,
+    "lon": -122.1781584,
+    "name": "Lea Hill Substation",
+    "norm": "LEA HILL",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/245563100",
+    "lat": 47.6726592,
+    "lon": -117.1074371,
+    "name": "Liberty Lake Substation",
+    "norm": "LIBERTY LAKE",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/245572019",
+    "lat": 47.4152745,
+    "lon": -122.2274353,
+    "name": "East Valley Substation",
+    "norm": "EAST VALLEY",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/246020621",
+    "lat": 47.3555509,
+    "lon": -122.0189376,
+    "name": "Four Corners Substation",
+    "norm": "FOUR CORNERS",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/248416962",
+    "lat": 47.4521395,
+    "lon": -122.2685053,
+    "name": "Tukwila Cable Station",
+    "norm": "TUKWILA CABLE STATION",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/248780457",
+    "lat": 47.4612769,
+    "lon": -122.55569,
+    "name": "Fragraria Substation",
+    "norm": "FRAGRARIA",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/251662147",
+    "lat": 47.2350236,
+    "lon": -121.9854359,
+    "name": "Krain Corner Substation",
+    "norm": "KRAIN CORNER",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/253359601",
+    "lat": 48.014491,
+    "lon": -122.7701414,
+    "name": "Chimacum Substation",
+    "norm": "CHIMACUM",
+    "operator": "Jefferson County PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/253360385",
+    "lat": 47.9343954,
+    "lon": -122.7325685,
+    "name": "Port Ludlow Substation",
+    "norm": "PORT LUDLOW",
+    "operator": "Jefferson County PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/254368511",
+    "lat": 47.2067871,
+    "lon": -121.9855625,
+    "name": "Enumclaw Substation",
+    "norm": "ENUMCLAW",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/254563796",
+    "lat": 47.1092232,
+    "lon": -122.0497299,
+    "name": "Wilkeson Substation",
+    "norm": "WILKESON",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/254564677",
+    "lat": 46.9930193,
+    "lon": -122.1811753,
+    "name": "Electron Heights Substation",
+    "norm": "ELECTRON HEIGHTS",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/254748794",
+    "lat": 46.8911155,
+    "lon": -122.6913064,
+    "name": "Rainier View Substation",
+    "norm": "RAINIER VIEW",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/254881950",
+    "lat": 47.1618141,
+    "lon": -122.3155987,
+    "name": "Woodland Substation",
+    "norm": "WOODLAND",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/256673217",
+    "lat": 47.1779653,
+    "lon": -121.7915664,
+    "name": "Clay Creek Substation",
+    "norm": "CLAY CREEK",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/257045049",
+    "lat": 47.5012083,
+    "lon": -121.8019314,
+    "name": "Tanner Substation",
+    "norm": "TANNER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/257045472",
+    "lat": 47.5246312,
+    "lon": -121.8627556,
+    "name": "Mount Si Substation",
+    "norm": "MOUNT SI",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/257358349",
+    "lat": 46.9176392,
+    "lon": -122.5656785,
+    "name": "Longmire Substation",
+    "norm": "LONGMIRE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/257366363",
+    "lat": 46.8729489,
+    "lon": -122.694985,
+    "name": "Olympic Vail Pipeline Substation",
+    "norm": "OLYMPIC VAIL PIPELINE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/258195256",
+    "lat": 47.1481615,
+    "lon": -122.547656,
+    "name": "Gravelly Lake Substation",
+    "norm": "GRAVELLY LAKE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/259158359",
+    "lat": 47.5046074,
+    "lon": -122.5889858,
+    "name": "Long Lake Substation",
+    "norm": "LONG LAKE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/259468483",
+    "lat": 47.3825991,
+    "lon": -122.6232625,
+    "name": "Purdy Substation",
+    "norm": "PURDY",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/260207736",
+    "lat": 47.2393803,
+    "lon": -122.4365599,
+    "name": "Nisqually Substation",
+    "norm": "NISQUALLY",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/260224365",
+    "lat": 47.2624798,
+    "lon": -122.4512807,
+    "name": "Stadium Substation",
+    "norm": "STADIUM",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/261313524",
+    "lat": 47.2131471,
+    "lon": -122.5577378,
+    "name": "Tacoma Power Cirque Substation",
+    "norm": "TACOMA POWER CIRQUE",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/264538093",
+    "lat": 46.3024212,
+    "lon": -120.0153247,
+    "name": "Sunnyside Port Substation",
+    "norm": "SUNNYSIDE PORT",
+    "operator": "Benton Rural Electric Association",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/287428362",
+    "lat": 47.6779698,
+    "lon": -117.3865719,
+    "name": "Ross Park Substation",
+    "norm": "ROSS PARK",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/289826522",
+    "lat": 47.6552185,
+    "lon": -117.4238317,
+    "name": "Metro Substation",
+    "norm": "METRO",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/291999830",
+    "lat": 47.6499329,
+    "lon": -122.5241358,
+    "name": "Murden Cove substation",
+    "norm": "MURDEN COVE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/291999831",
+    "lat": 47.6797253,
+    "lon": -122.5404725,
+    "name": "Port Madison substation",
+    "norm": "PORT MADISON",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/293226652",
+    "lat": 47.6610593,
+    "lon": -117.226975,
+    "name": "Valleyway Substation",
+    "norm": "VALLEYWAY",
+    "operator": "Vera Water & Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/294909439",
+    "lat": 48.4927505,
+    "lon": -122.9000563,
+    "name": "Lopez Substation",
+    "norm": "LOPEZ",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/306453860",
+    "lat": 46.0456415,
+    "lon": -122.8444592,
+    "name": "Cardwell Substation",
+    "norm": "CARDWELL",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/307395719",
+    "lat": 47.6781901,
+    "lon": -117.4584117,
+    "name": "Downriver Substation",
+    "norm": "DOWNRIVER",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/322307587",
+    "lat": 47.1831583,
+    "lon": -120.9567663,
+    "name": "The Substation",
+    "norm": "THE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/338165418",
+    "lat": 46.980558,
+    "lon": -120.5554993,
+    "name": "Clymer Substation",
+    "norm": "CLYMER",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/339831518",
+    "lat": 47.6191137,
+    "lon": -122.3319849,
+    "name": "Denny Substation",
+    "norm": "DENNY",
+    "operator": "Seattle City Light",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/34073178",
+    "lat": 47.8128727,
+    "lon": -122.1863307,
+    "name": "Sno-King Substation",
+    "norm": "SNO-KING",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/34088792",
+    "lat": 47.8972241,
+    "lon": -121.8904919,
+    "name": "Monroe Substation",
+    "norm": "MONROE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/34122150",
+    "lat": 47.7325057,
+    "lon": -122.0877304,
+    "name": "Cottage Brook Substation",
+    "norm": "COTTAGE BROOK",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/34610388",
+    "lat": 47.4186361,
+    "lon": -120.3034043,
+    "name": "Worthen Street Substation",
+    "norm": "WORTHEN STREET",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/34800157",
+    "lat": 47.9550524,
+    "lon": -118.9981521,
+    "name": "Grand Coulee 230 kV Switchyard",
+    "norm": "GRAND COULEE 230 KV SWITCHYARD",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/34859714",
+    "lat": 47.5299384,
+    "lon": -120.290612,
+    "name": "Rocky Reach Substation",
+    "norm": "ROCKY REACH",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/34908553",
+    "lat": 47.6840762,
+    "lon": -122.3193975,
+    "name": "North Substation",
+    "norm": "NORTH",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35125979",
+    "lat": 47.4681852,
+    "lon": -122.1913803,
+    "name": "Talbot Substation",
+    "norm": "TALBOT",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/35125980",
+    "lat": 47.4687492,
+    "lon": -122.1875849,
+    "name": "Maple Valley Substation",
+    "norm": "MAPLE VALLEY",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;345000;230000"
+  },
+  {
+    "id": "way/35126436",
+    "lat": 47.3474945,
+    "lon": -122.121556,
+    "name": "Covington Substation",
+    "norm": "COVINGTON",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/35127317",
+    "lat": 47.257007,
+    "lon": -122.369961,
+    "name": "Tacoma Substation",
+    "norm": "TACOMA",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/35153713",
+    "lat": 47.4559331,
+    "lon": -122.2431102,
+    "name": "Renton Junction Substation",
+    "norm": "RENTON JUNCTION",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/35153824",
+    "lat": 47.4385334,
+    "lon": -122.2422619,
+    "name": "Orillia Substation",
+    "norm": "ORILLIA",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/35154188",
+    "lat": 47.3389079,
+    "lon": -122.2415864,
+    "name": "Christopher Substation",
+    "norm": "CHRISTOPHER",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35262129",
+    "lat": 47.7477822,
+    "lon": -122.3336632,
+    "name": "Shoreline Substation",
+    "norm": "SHORELINE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35285169",
+    "lat": 47.5887266,
+    "lon": -122.3359197,
+    "name": "Massachusetts Substation",
+    "norm": "MASSACHUSETTS",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/35301443",
+    "lat": 46.2072941,
+    "lon": -119.2569615,
+    "name": "Badger Canyon Substation",
+    "norm": "BADGER CANYON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35301714",
+    "lat": 47.0919598,
+    "lon": -122.3719002,
+    "name": "South Tacoma Substation",
+    "norm": "SOUTH TACOMA",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/35301883",
+    "lat": 47.3363621,
+    "lon": -121.9346686,
+    "name": "Raver Substation",
+    "norm": "RAVER",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/353325510",
+    "lat": 45.6270326,
+    "lon": -122.6831903,
+    "name": "King Substation",
+    "norm": "KING",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35387118",
+    "lat": 47.5863596,
+    "lon": -122.1582959,
+    "name": "Lakeside Substation",
+    "norm": "LAKESIDE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/35394492",
+    "lat": 47.7059697,
+    "lon": -122.3504855,
+    "name": "Viewland/Hoffman Substation",
+    "norm": "VIEWLAND/HOFFMAN",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35397146",
+    "lat": 47.3704974,
+    "lon": -120.1423891,
+    "name": "Hanna Substation",
+    "norm": "HANNA",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/35398801",
+    "lat": 47.3533438,
+    "lon": -120.1276824,
+    "name": "Valhalla Substation",
+    "norm": "VALHALLA",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/35463781",
+    "lat": 47.5144537,
+    "lon": -122.3071695,
+    "name": "Duwamish Substation",
+    "norm": "DUWAMISH",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/354665138",
+    "lat": 45.6782305,
+    "lon": -122.563691,
+    "name": "Orchards Substation",
+    "norm": "ORCHARDS",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/354956318",
+    "lat": 45.6790975,
+    "lon": -122.6244135,
+    "name": "Elmgren Substation",
+    "norm": "ELMGREN",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/355834398",
+    "lat": 45.7363976,
+    "lon": -122.6000373,
+    "name": "Manor Substation",
+    "norm": "MANOR",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/355834399",
+    "lat": 45.6159912,
+    "lon": -122.5603806,
+    "name": "Saint Helens Substation",
+    "norm": "SAINT HELENS",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/356450563",
+    "lat": 45.7661815,
+    "lon": -122.5262774,
+    "name": "Heye Meyer Substation",
+    "norm": "HEYE MEYER",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/358284255",
+    "lat": 45.6781409,
+    "lon": -122.6542733,
+    "name": "Archer Substation",
+    "norm": "ARCHER",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/358454550",
+    "lat": 45.7120807,
+    "lon": -122.7074551,
+    "name": "Felida Substation",
+    "norm": "FELIDA",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/35960580",
+    "lat": 47.3900685,
+    "lon": -120.3065911,
+    "name": "Squilchuck Substation",
+    "norm": "SQUILCHUCK",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/361039663",
+    "lat": 47.4768194,
+    "lon": -117.5796065,
+    "name": "Cheney Substation",
+    "norm": "CHENEY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/361797523",
+    "lat": 48.8061414,
+    "lon": -122.3463376,
+    "name": "Van Wyck Substation",
+    "norm": "VAN WYCK",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/362272202",
+    "lat": 47.2732826,
+    "lon": -122.9810421,
+    "name": "Pioneer Substation",
+    "norm": "PIONEER",
+    "operator": "Mason Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/36333959",
+    "lat": 47.6548476,
+    "lon": -122.3234628,
+    "name": "University Receiving Substation",
+    "norm": "UNIVERSITY RECEIVING",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/363677915",
+    "lat": 46.2408609,
+    "lon": -119.0938627,
+    "name": "Court Street Substation",
+    "norm": "COURT STREET",
+    "operator": "Franklin PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/363834233",
+    "lat": 46.2207494,
+    "lon": -119.096885,
+    "name": "Pasco Substation",
+    "norm": "PASCO",
+    "operator": "Pacific Power",
+    "state": "WA",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/364843335",
+    "lat": 46.9988046,
+    "lon": -120.5618999,
+    "name": "Dolarway Substation",
+    "norm": "DOLARWAY",
+    "operator": "CIty of Ellensburg",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/364843336",
+    "lat": 46.9997956,
+    "lon": -120.5635924,
+    "name": "Ellensburg SubStation",
+    "norm": "ELLENSBURG",
+    "operator": "Kittitas PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/365213140",
+    "lat": 45.6920042,
+    "lon": -122.599805,
+    "name": "Barberton Substation",
+    "norm": "BARBERTON",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/365928021",
+    "lat": 46.059568,
+    "lon": -122.2620845,
+    "name": "Beaver Bay Substation",
+    "norm": "BEAVER BAY",
+    "operator": "Cowlitz Public Utility District",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/366756846",
+    "lat": 45.9038813,
+    "lon": -122.7572178,
+    "name": "Woodland West Substation",
+    "norm": "WOODLAND WEST",
+    "operator": "Cowlitz Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/36741994",
+    "lat": 47.5367887,
+    "lon": -120.2798703,
+    "name": "Sickler Substation",
+    "norm": "SICKLER",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/369186249",
+    "lat": 47.6217158,
+    "lon": -122.5482454,
+    "name": "Winslow substation",
+    "norm": "WINSLOW",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/36952798",
+    "lat": 47.4490768,
+    "lon": -120.2650695,
+    "name": "Mike Doneen Substation",
+    "norm": "MIKE DONEEN",
+    "operator": "Douglas County PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/36968547",
+    "lat": 47.4303092,
+    "lon": -120.3441787,
+    "name": "College Substation",
+    "norm": "COLLEGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/370283956",
+    "lat": 45.6391921,
+    "lon": -122.580917,
+    "name": "Burnt Bridge Substation",
+    "norm": "BURNT BRIDGE",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/370344659",
+    "lat": 46.8764849,
+    "lon": -122.2858815,
+    "name": "Lynch Creek Substation",
+    "norm": "LYNCH CREEK",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/37046541",
+    "lat": 47.6618409,
+    "lon": -122.3651184,
+    "name": "Canal Substation",
+    "norm": "CANAL",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/37046545",
+    "lat": 47.6214881,
+    "lon": -122.3456564,
+    "name": "Broad Street Substation",
+    "norm": "BROAD STREET",
+    "operator": "Seattle City Light",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/37046550",
+    "lat": 47.6146789,
+    "lon": -122.3031507,
+    "name": "East Pine Substation",
+    "norm": "EAST PINE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/37047357",
+    "lat": 47.506476,
+    "lon": -122.2670324,
+    "name": "Creston-Nelson Substation",
+    "norm": "CRESTON-NELSON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/37047581",
+    "lat": 47.8547268,
+    "lon": -122.1794177,
+    "name": "Bothell Substation",
+    "norm": "BOTHELL",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/371288998",
+    "lat": 45.8117745,
+    "lon": -122.6622475,
+    "name": "Union Ridge Substation",
+    "norm": "UNION RIDGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/371841491",
+    "lat": 45.7943863,
+    "lon": -122.5996131,
+    "name": "Battle Ground Substation",
+    "norm": "BATTLE GROUND",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/371993911",
+    "lat": 46.9999018,
+    "lon": -120.5223642,
+    "name": "East Ellensburg Substation",
+    "norm": "EAST ELLENSBURG",
+    "operator": "City of Ellensburg",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/37222218",
+    "lat": 47.5494932,
+    "lon": -122.3662135,
+    "name": "Delridge Substation",
+    "norm": "DELRIDGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/374199134",
+    "lat": 45.6595112,
+    "lon": -122.5966084,
+    "name": "Walnut Grove Substation",
+    "norm": "WALNUT GROVE",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/376781653",
+    "lat": 45.643018,
+    "lon": -122.5585689,
+    "name": "Burton Substation",
+    "norm": "BURTON",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/378415367",
+    "lat": 46.3034939,
+    "lon": -119.8742481,
+    "name": "Grandview Substation",
+    "norm": "GRANDVIEW",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/379002522",
+    "lat": 45.7329474,
+    "lon": -122.6621576,
+    "name": "Jones Substation",
+    "norm": "JONES",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/38316919",
+    "lat": 46.6518415,
+    "lon": -117.4199792,
+    "name": "Lower Granite Substation",
+    "norm": "LOWER GRANITE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/38325077",
+    "lat": 46.5501789,
+    "lon": -118.5448549,
+    "name": "Lower Monumental Substation",
+    "norm": "LOWER MONUMENTAL",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/38341642",
+    "lat": 47.463966,
+    "lon": -120.2971898,
+    "name": "'Cap' Terry Substation",
+    "norm": "'CAP' TERRY",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/384622972",
+    "lat": 45.7084924,
+    "lon": -122.5376322,
+    "name": "Union Substation",
+    "norm": "UNION",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/384622973",
+    "lat": 45.7093066,
+    "lon": -122.4965557,
+    "name": "Hockinson Substation",
+    "norm": "HOCKINSON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/384622974",
+    "lat": 45.7373304,
+    "lon": -122.4963321,
+    "name": "Hockinson Substation",
+    "norm": "HOCKINSON",
+    "operator": "Clark County",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/388950684",
+    "lat": 48.1006782,
+    "lon": -123.5377092,
+    "name": "Laird Substation",
+    "norm": "LAIRD",
+    "operator": "Callam County Public Utility District #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/388958707",
+    "lat": 48.1312126,
+    "lon": -123.767782,
+    "name": "Silverado Substation",
+    "norm": "SILVERADO",
+    "operator": "Callam County Public Utility District #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/389305225",
+    "lat": 48.2625542,
+    "lon": -124.3080735,
+    "name": "Sekiu Substation",
+    "norm": "SEKIU",
+    "operator": "Callam County Public Utility District",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/390358098",
+    "lat": 48.1112681,
+    "lon": -123.4185212,
+    "name": "Washington Substation",
+    "norm": "WASHINGTON",
+    "operator": "Port Angeles Light",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/39084570",
+    "lat": 47.4953912,
+    "lon": -122.1949053,
+    "name": "Paccar Substation",
+    "norm": "PACCAR",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/39198418",
+    "lat": 47.5306769,
+    "lon": -122.0111135,
+    "name": "Lake Tradition Substation",
+    "norm": "LAKE TRADITION",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/393077093",
+    "lat": 45.6738816,
+    "lon": -122.5053299,
+    "name": "Fourth Plain Substation",
+    "norm": "FOURTH PLAIN",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/39337925",
+    "lat": 47.7622399,
+    "lon": -122.1752446,
+    "name": "Vitulli Substation",
+    "norm": "VITULLI",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/39337931",
+    "lat": 47.8761328,
+    "lon": -122.1567121,
+    "name": "Cascade",
+    "norm": "CASCADE",
+    "operator": "Snohomish PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/39337952",
+    "lat": 47.9717032,
+    "lon": -122.1129991,
+    "name": "Horse Ranch Substation",
+    "norm": "HORSE RANCH",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/395442360",
+    "lat": 47.6309257,
+    "lon": -122.1352418,
+    "name": "Ardmore Substation",
+    "norm": "ARDMORE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/396448284",
+    "lat": 47.5601975,
+    "lon": -122.6322396,
+    "name": "Building 554",
+    "norm": "BUILDING 554",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/396448354",
+    "lat": 47.5585812,
+    "lon": -122.6322592,
+    "name": "Building 555",
+    "norm": "BUILDING 555",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/396448399",
+    "lat": 47.5631009,
+    "lon": -122.6286945,
+    "name": "Substation B",
+    "norm": "B",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/396448468",
+    "lat": 47.5593188,
+    "lon": -122.6322446,
+    "name": "Building 407",
+    "norm": "BUILDING 407",
+    "operator": "U.S. Navy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/397003775",
+    "lat": 45.6191298,
+    "lon": -122.6337777,
+    "name": "Shipyard Substation",
+    "norm": "SHIPYARD",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/397582017",
+    "lat": 45.8008173,
+    "lon": -122.5794103,
+    "name": "Cherry Grove Switching Substation",
+    "norm": "CHERRY GROVE SWITCHING",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/397909844",
+    "lat": 48.4924021,
+    "lon": -122.8651296,
+    "name": "Lopez Bonneville Power Substation",
+    "norm": "LOPEZ BONNEVILLE POWER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/39996573",
+    "lat": 47.7435669,
+    "lon": -122.1935714,
+    "name": "Norway Hill Substation",
+    "norm": "NORWAY HILL",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/404001860",
+    "lat": 45.621684,
+    "lon": -122.5010246,
+    "name": "Fisher Substation",
+    "norm": "FISHER",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/40404677",
+    "lat": 47.9662956,
+    "lon": -119.0198939,
+    "name": "Grand Coulee 500kV Switchyard",
+    "norm": "GRAND COULEE 500KV SWITCHYARD",
+    "operator": "Bureau of Reclamation",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/40421260",
+    "lat": 47.9240054,
+    "lon": -122.1038243,
+    "name": "Snohomish Substation",
+    "norm": "SNOHOMISH",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "345000;230000;115000"
+  },
+  {
+    "id": "way/40422878",
+    "lat": 48.5053614,
+    "lon": -122.2041832,
+    "name": "Sedro-Woolley Substation",
+    "norm": "SEDRO-WOOLLEY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/40514282",
+    "lat": 47.1208226,
+    "lon": -120.5109761,
+    "name": "Schultz Substation",
+    "norm": "SCHULTZ",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/40524142",
+    "lat": 47.7489803,
+    "lon": -117.3732194,
+    "name": "Bell Substation",
+    "norm": "BELL",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/405544209",
+    "lat": 46.0211186,
+    "lon": -122.8535723,
+    "name": "Kalama Industrial Substation",
+    "norm": "KALAMA INDUSTRIAL",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/40629109",
+    "lat": 46.6205011,
+    "lon": -119.7826994,
+    "name": "Midway Substation",
+    "norm": "MIDWAY",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/40629119",
+    "lat": 47.1052836,
+    "lon": -119.5291317,
+    "name": "Potholes Substation",
+    "norm": "POTHOLES",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/40629121",
+    "lat": 46.6694102,
+    "lon": -119.5714023,
+    "name": "Hanford Substation",
+    "norm": "HANFORD",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/40793898",
+    "lat": 47.6878281,
+    "lon": -122.0114368,
+    "name": "Novelty Hill Substation",
+    "norm": "NOVELTY HILL",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/412583026",
+    "lat": 45.5872433,
+    "lon": -122.4091016,
+    "name": "Division Street Substation",
+    "norm": "DIVISION STREET",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/41292373",
+    "lat": 47.4935866,
+    "lon": -122.207871,
+    "name": "Boeing Renton #2 Substation",
+    "norm": "BOEING RENTON",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/41293960",
+    "lat": 47.4208594,
+    "lon": -120.262976,
+    "name": "Eastmont Substation",
+    "norm": "EASTMONT",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/41429160",
+    "lat": 47.2949503,
+    "lon": -120.0772113,
+    "name": "Columbia Substation",
+    "norm": "COLUMBIA",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/41446536",
+    "lat": 46.8772469,
+    "lon": -119.9387324,
+    "name": "Vantage Substation",
+    "norm": "VANTAGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/41446699",
+    "lat": 47.9858641,
+    "lon": -119.6517671,
+    "name": "Chief Joseph Substation",
+    "norm": "CHIEF JOSEPH",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/41770978",
+    "lat": 47.227819,
+    "lon": -123.1233362,
+    "name": "Shelton Substation",
+    "norm": "SHELTON",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/41771102",
+    "lat": 47.5316423,
+    "lon": -122.704095,
+    "name": "Kitsap Substation",
+    "norm": "KITSAP",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/41772669",
+    "lat": 46.9691889,
+    "lon": -123.4622137,
+    "name": "Satsop Substation",
+    "norm": "SATSOP",
+    "operator": "Grays Harbor PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/41772672",
+    "lat": 46.9680274,
+    "lon": -123.4638662,
+    "name": "Satsop Substation",
+    "norm": "SATSOP",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/41772678",
+    "lat": 46.9794662,
+    "lon": -123.8513075,
+    "name": "Aberdeen Substation",
+    "norm": "ABERDEEN",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/419616271",
+    "lat": 47.7590288,
+    "lon": -117.4968706,
+    "name": "Indian Trail Substation",
+    "norm": "INDIAN TRAIL",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/420483332",
+    "lat": 47.6573244,
+    "lon": -117.1647938,
+    "name": "Greenacres Substation",
+    "norm": "GREENACRES",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/421739857",
+    "lat": 45.7535927,
+    "lon": -122.7134588,
+    "name": "Sara Substation",
+    "norm": "SARA",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/421739859",
+    "lat": 45.7921989,
+    "lon": -122.7064529,
+    "name": "Clark Substation",
+    "norm": "CLARK",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/42391096",
+    "lat": 47.3177971,
+    "lon": -122.3125467,
+    "name": "Belmore Substation",
+    "norm": "BELMORE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/42856326",
+    "lat": 47.5017022,
+    "lon": -122.2029448,
+    "name": "Shuffleton Substation",
+    "norm": "SHUFFLETON",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/434338256",
+    "lat": 47.6737226,
+    "lon": -117.2780255,
+    "name": "Locust Substation",
+    "norm": "LOCUST",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/439249837",
+    "lat": 48.5323476,
+    "lon": -123.013864,
+    "name": "Friday Harbor Substation",
+    "norm": "FRIDAY HARBOR",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/446923591",
+    "lat": 45.642307,
+    "lon": -122.6799702,
+    "name": "Harney Substation",
+    "norm": "HARNEY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/447941706",
+    "lat": 45.8031086,
+    "lon": -122.5273732,
+    "name": "Oxford Substation",
+    "norm": "OXFORD",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/450743945",
+    "lat": 47.1462608,
+    "lon": -119.2777231,
+    "name": "Moses Lake Substation",
+    "norm": "MOSES LAKE",
+    "operator": "Grant County Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/45984746",
+    "lat": 47.4123882,
+    "lon": -120.3255764,
+    "name": "Saddlerock Substation",
+    "norm": "SADDLEROCK",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/46522891",
+    "lat": 47.2391095,
+    "lon": -122.2102793,
+    "name": "White River Substation",
+    "norm": "WHITE RIVER",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/467815709",
+    "lat": 47.6863261,
+    "lon": -117.1511436,
+    "name": "Barker Substation",
+    "norm": "BARKER",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/47338560",
+    "lat": 47.6655485,
+    "lon": -122.1341345,
+    "name": "Spiritbrook Substation",
+    "norm": "SPIRITBROOK",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/47413470",
+    "lat": 47.749707,
+    "lon": -122.2122712,
+    "name": "Wayne Substation",
+    "norm": "WAYNE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/50061269",
+    "lat": 46.5995659,
+    "lon": -122.9470682,
+    "name": "Chehalis Substation",
+    "norm": "CHEHALIS",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/50102898",
+    "lat": 46.7547768,
+    "lon": -122.8758677,
+    "name": "Paul Substation",
+    "norm": "PAUL",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;115000"
+  },
+  {
+    "id": "way/50286671",
+    "lat": 46.6225147,
+    "lon": -122.9178239,
+    "name": "Napavine Substation",
+    "norm": "NAPAVINE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/50720327",
+    "lat": 47.3936803,
+    "lon": -120.2391345,
+    "name": "South Nile Substation",
+    "norm": "SOUTH NILE",
+    "operator": "Douglas County PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/507984449",
+    "lat": 45.825085,
+    "lon": -122.4960519,
+    "name": "Heisson Substation",
+    "norm": "HEISSON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/50889087",
+    "lat": 48.1004552,
+    "lon": -123.4175929,
+    "name": "Port Angeles Substation",
+    "norm": "PORT ANGELES",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/50889088",
+    "lat": 47.9752796,
+    "lon": -122.8847954,
+    "name": "Fairmount Substation",
+    "norm": "FAIRMOUNT",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/50942804",
+    "lat": 48.9041659,
+    "lon": -122.6261424,
+    "name": "Custer Substation",
+    "norm": "CUSTER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/50958242",
+    "lat": 48.797295,
+    "lon": -122.4230177,
+    "name": "Bellingham Substation",
+    "norm": "BELLINGHAM",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/510158041",
+    "lat": 47.6459789,
+    "lon": -117.9383283,
+    "name": "Reardan Substation",
+    "norm": "REARDAN",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/51064884",
+    "lat": 45.6531566,
+    "lon": -122.4995456,
+    "name": "Sifton Substation",
+    "norm": "SIFTON",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51085956",
+    "lat": 47.9592135,
+    "lon": -118.9950066,
+    "name": "500kV Spreader Yard",
+    "norm": "500KV SPREADER YARD",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/51086113",
+    "lat": 47.9545331,
+    "lon": -118.9937519,
+    "name": " Grand Coulee 115 kV Switchyard",
+    "norm": " GRAND COULEE 115 KV SWITCHYARD",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/51086141",
+    "lat": 47.9510996,
+    "lon": -119.0011134,
+    "name": "Grand Coulee Number One Substation",
+    "norm": "GRAND COULEE NUMBER ONE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/51570703",
+    "lat": 47.3498932,
+    "lon": -120.1275091,
+    "name": "Colockum Tap",
+    "norm": "COLOCKUM TAP",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/51600069",
+    "lat": 47.1825845,
+    "lon": -122.3705335,
+    "name": "Cowlitz Substation",
+    "norm": "COWLITZ",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51799304",
+    "lat": 45.6613241,
+    "lon": -122.6588264,
+    "name": "Ross Substation",
+    "norm": "ROSS",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51801255",
+    "lat": 45.6518315,
+    "lon": -122.7274564,
+    "name": "Alcoa Substation",
+    "norm": "ALCOA",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51801848",
+    "lat": 45.635169,
+    "lon": -122.6219648,
+    "name": "Caples Substation",
+    "norm": "CAPLES",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/519146143",
+    "lat": 47.3998153,
+    "lon": -120.3143068,
+    "name": "Okanogan Avenue Substation",
+    "norm": "OKANOGAN AVENUE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/52037754",
+    "lat": 47.5413639,
+    "lon": -121.8356575,
+    "name": "Snoqualmie Switching Station",
+    "norm": "SNOQUALMIE SWITCHING STATION",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/52037814",
+    "lat": 47.5389474,
+    "lon": -121.8340533,
+    "name": "Snoqualmie Substation",
+    "norm": "SNOQUALMIE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/521065706",
+    "lat": 48.0307066,
+    "lon": -122.4276192,
+    "name": "Brooks Hill Substation",
+    "norm": "BROOKS HILL",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/52518017",
+    "lat": 47.4318249,
+    "lon": -122.2273509,
+    "name": "Norpac Substation",
+    "norm": "NORPAC",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/52524667",
+    "lat": 47.380397,
+    "lon": -122.2414629,
+    "name": "Kent Substation",
+    "norm": "KENT",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/54051519",
+    "lat": 45.6043921,
+    "lon": -122.3697615,
+    "name": "North Camas Substation",
+    "norm": "NORTH CAMAS",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/54051614",
+    "lat": 45.5822287,
+    "lon": -122.3804344,
+    "name": "Oak Park Substation",
+    "norm": "OAK PARK",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/54061634",
+    "lat": 45.6484303,
+    "lon": -121.9602518,
+    "name": "North Bonneville Substation",
+    "norm": "NORTH BONNEVILLE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/55267246",
+    "lat": 46.1816417,
+    "lon": -122.9129362,
+    "name": "Lexington Substation",
+    "norm": "LEXINGTON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/55502618",
+    "lat": 47.4655887,
+    "lon": -122.2258582,
+    "name": "Earlington Substation",
+    "norm": "EARLINGTON",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/55947637",
+    "lat": 46.2313147,
+    "lon": -119.0412079,
+    "name": "Franklin Substation",
+    "norm": "FRANKLIN",
+    "operator": "Franklin Public Utility District",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/55949853",
+    "lat": 46.5822816,
+    "lon": -118.0530992,
+    "name": "Little Goose Substation",
+    "norm": "LITTLE GOOSE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/55972074",
+    "lat": 45.728807,
+    "lon": -120.7057229,
+    "name": "Harvalum Substation",
+    "norm": "HARVALUM",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/561069183",
+    "lat": 47.5374226,
+    "lon": -122.6913912,
+    "name": "South Bremerton Substation",
+    "norm": "SOUTH BREMERTON",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/56448691",
+    "lat": 46.4803496,
+    "lon": -119.3360712,
+    "name": "Ashe Substation",
+    "norm": "ASHE",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/57037737",
+    "lat": 45.5928286,
+    "lon": -122.1769767,
+    "name": "Cape Horn Substation",
+    "norm": "CAPE HORN",
+    "operator": "Skamania County Public Utility District #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/576767912",
+    "lat": 48.1050636,
+    "lon": -123.4880176,
+    "name": "Airport Substation",
+    "norm": "AIRPORT",
+    "operator": "Clallam County PUD",
+    "state": "WA",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/58725596",
+    "lat": 45.9801992,
+    "lon": -120.3842936,
+    "name": "Spring Creek Substation",
+    "norm": "SPRING CREEK",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/588860907",
+    "lat": 47.4918955,
+    "lon": -122.2100586,
+    "name": "Boeing 5-30",
+    "norm": "BOEING 5-30",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/58939522",
+    "lat": 46.5154651,
+    "lon": -119.8338993,
+    "name": "Wautoma Substation",
+    "norm": "WAUTOMA",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/59770483",
+    "lat": 47.6294812,
+    "lon": -122.1372544,
+    "name": "Interlaken Substation",
+    "norm": "INTERLAKEN",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/60274519",
+    "lat": 47.3524552,
+    "lon": -120.1257281,
+    "name": "McKenzie Switchyard",
+    "norm": "MCKENZIE SWITCHYARD",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/608194155",
+    "lat": 47.6536645,
+    "lon": -122.3125364,
+    "name": "West Receiving Station",
+    "norm": "WEST RECEIVING STATION",
+    "operator": "University of Washington",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/613536961",
+    "lat": 48.0553817,
+    "lon": -124.3418956,
+    "name": "Mill Substation",
+    "norm": "MILL",
+    "operator": "Clallam County Public Utility District",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/614142062",
+    "lat": 48.0985436,
+    "lon": -122.5739067,
+    "name": "Greenbank Substation",
+    "norm": "GREENBANK",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/61689959",
+    "lat": 47.0267642,
+    "lon": -120.2199713,
+    "name": "Wild Horse Substation",
+    "norm": "WILD HORSE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/61692211",
+    "lat": 46.9569458,
+    "lon": -120.2976326,
+    "name": "Wind Ridge Substation",
+    "norm": "WIND RIDGE",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/624333382",
+    "lat": 48.1075354,
+    "lon": -123.4436571,
+    "name": "14th & Laurel Substation",
+    "norm": "14TH & LAUREL",
+    "operator": "Port Angeles Light",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/63521204",
+    "lat": 47.472787,
+    "lon": -120.3361182,
+    "name": "Sunnyslope Substation",
+    "norm": "SUNNYSLOPE",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/635556469",
+    "lat": 47.679745,
+    "lon": -117.3448626,
+    "name": "Beacon Substation",
+    "norm": "BEACON",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/64377525",
+    "lat": 47.3864569,
+    "lon": -122.0614758,
+    "name": "Lake Wilderness Substation",
+    "norm": "LAKE WILDERNESS",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/645781988",
+    "lat": 46.1153236,
+    "lon": -122.9371292,
+    "name": "Columbia Way Substation",
+    "norm": "COLUMBIA WAY",
+    "operator": "Cowlitz Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/653838218",
+    "lat": 47.6488214,
+    "lon": -117.3222392,
+    "name": "9th & Central Substation",
+    "norm": "9TH & CENTRAL",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/65494013",
+    "lat": 47.4882059,
+    "lon": -120.4028941,
+    "name": "Andrew York Monitor Substation & Switchyard",
+    "norm": "ANDREW YORK MONITOR & SWITCHYARD",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/665114702",
+    "lat": 48.9301978,
+    "lon": -122.6591309,
+    "name": "Custer Substation",
+    "norm": "CUSTER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/665913463",
+    "lat": 46.2609083,
+    "lon": -119.3143659,
+    "name": "City View Substation",
+    "norm": "CITY VIEW",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/666271803",
+    "lat": 47.6415329,
+    "lon": -117.1972869,
+    "name": "Sullivan Substation",
+    "norm": "SULLIVAN",
+    "operator": "Vera Water & Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/666271922",
+    "lat": 47.6246718,
+    "lon": -117.1971018,
+    "name": "Vera Substation",
+    "norm": "VERA",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/666404858",
+    "lat": 47.6429171,
+    "lon": -117.2729033,
+    "name": "Chester Substation",
+    "norm": "CHESTER",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/682032711",
+    "lat": 46.2420287,
+    "lon": -119.1313255,
+    "name": "Ruby Street Substation",
+    "norm": "RUBY STREET",
+    "operator": "Franklin PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/682032726",
+    "lat": 46.2859902,
+    "lon": -119.1943019,
+    "name": "Broadmoor Substation",
+    "norm": "BROADMOOR",
+    "operator": "Franklin Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/683560651",
+    "lat": 46.2364822,
+    "lon": -119.27649,
+    "name": "Tapteal Substation",
+    "norm": "TAPTEAL",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/69546910",
+    "lat": 47.0007446,
+    "lon": -120.3472096,
+    "name": "Parke Substation",
+    "norm": "PARKE",
+    "operator": "Kittitas PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/69546923",
+    "lat": 47.1597725,
+    "lon": -119.8979879,
+    "name": "Ancient Lake Substation",
+    "norm": "ANCIENT LAKE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/696298628",
+    "lat": 45.7231639,
+    "lon": -121.4695506,
+    "name": "Bingen Substation",
+    "norm": "BINGEN",
+    "operator": "Public Utility District No. 1 of Klickitat County",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/696775423",
+    "lat": 47.4033475,
+    "lon": -123.1524122,
+    "name": "Hoodsport Substation",
+    "norm": "HOODSPORT",
+    "operator": "Mason Public Utility District  #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/698952419",
+    "lat": 48.7015556,
+    "lon": -122.9121168,
+    "name": "Eastsound Substation",
+    "norm": "EASTSOUND",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698953115",
+    "lat": 48.5068033,
+    "lon": -122.8045466,
+    "name": "Decatur Substation",
+    "norm": "DECATUR",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698957544",
+    "lat": 48.5514393,
+    "lon": -122.8117547,
+    "name": "Thatcher Substation",
+    "norm": "THATCHER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698957545",
+    "lat": 48.5770202,
+    "lon": -122.8098245,
+    "name": "Blakely Substation",
+    "norm": "BLAKELY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698965477",
+    "lat": 48.617865,
+    "lon": -122.8239531,
+    "name": "Olga Substation",
+    "norm": "OLGA",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698987272",
+    "lat": 48.5730931,
+    "lon": -122.9480587,
+    "name": "Shaw Substation",
+    "norm": "SHAW",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698987273",
+    "lat": 48.5992739,
+    "lon": -122.9450383,
+    "name": "Orcas Village Substation",
+    "norm": "ORCAS VILLAGE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/698991283",
+    "lat": 48.5182395,
+    "lon": -122.9818034,
+    "name": "Gravel Pit Substation",
+    "norm": "GRAVEL PIT",
+    "operator": "OPALCO",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/704807237",
+    "lat": 46.3153279,
+    "lon": -119.2938229,
+    "name": "Snyder Substation",
+    "norm": "SNYDER",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/70803910",
+    "lat": 47.5172446,
+    "lon": -120.4856309,
+    "name": "Mission Substation",
+    "norm": "MISSION",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/717755965",
+    "lat": 48.6286034,
+    "lon": -122.9441845,
+    "name": "Orcas Substation",
+    "norm": "ORCAS",
+    "operator": null,
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/72887526",
+    "lat": 45.7565668,
+    "lon": -121.5297544,
+    "name": "Bald Mountain Substation",
+    "norm": "BALD MOUNTAIN",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/73300347",
+    "lat": 46.3752947,
+    "lon": -120.0794418,
+    "name": "Outlook Substation",
+    "norm": "OUTLOOK",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/738435816",
+    "lat": 48.1156797,
+    "lon": -123.4698342,
+    "name": "\"F\" Street Substation",
+    "norm": "\"F\" STREET",
+    "operator": "Port Angeles Light",
+    "state": "WA",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/75322835",
+    "lat": 47.452641,
+    "lon": -122.2628838,
+    "name": "Southcenter Substation",
+    "norm": "SOUTHCENTER",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/75606963",
+    "lat": 46.262031,
+    "lon": -119.2898082,
+    "name": "Richland Substation",
+    "norm": "RICHLAND",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/765935876",
+    "lat": 47.6528656,
+    "lon": -117.2690036,
+    "name": "Nelson Substation",
+    "norm": "NELSON",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/765943728",
+    "lat": 47.6918019,
+    "lon": -117.2313081,
+    "name": "Irvin Substation",
+    "norm": "IRVIN",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/765973362",
+    "lat": 47.5948739,
+    "lon": -117.2548585,
+    "name": "Hopkins Substation",
+    "norm": "HOPKINS",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/766227532",
+    "lat": 47.4070298,
+    "lon": -118.0533056,
+    "name": "Gaffney Substation",
+    "norm": "GAFFNEY",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/766237117",
+    "lat": 47.3323594,
+    "lon": -118.1400422,
+    "name": "Sprague Substation",
+    "norm": "SPRAGUE",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/774901265",
+    "lat": 46.5953801,
+    "lon": -117.8070791,
+    "name": "Central Ferry Substation",
+    "norm": "CENTRAL FERRY",
+    "operator": null,
+    "state": "WA",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/775079559",
+    "lat": 46.2768422,
+    "lon": -119.2890883,
+    "name": "Thayer Drive Substation",
+    "norm": "THAYER DRIVE",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/775099205",
+    "lat": 46.2818915,
+    "lon": -119.4051248,
+    "name": "Red Mountain Substation",
+    "norm": "RED MOUNTAIN",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/776873235",
+    "lat": 46.1999599,
+    "lon": -119.2660984,
+    "name": "Leslie Road Substation",
+    "norm": "LESLIE ROAD",
+    "operator": "City of Richland",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/77965301",
+    "lat": 45.6127702,
+    "lon": -122.5158301,
+    "name": "Cascade Park Substation",
+    "norm": "CASCADE PARK",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/79462072",
+    "lat": 45.6446933,
+    "lon": -122.6381093,
+    "name": "Grand Avenue Substation",
+    "norm": "GRAND AVENUE",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/79638684",
+    "lat": 47.7628179,
+    "lon": -122.2329781,
+    "name": "Moorlands Substation",
+    "norm": "MOORLANDS",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/805779624",
+    "lat": 46.7367983,
+    "lon": -119.9134138,
+    "name": "Geneva Substation",
+    "norm": "GENEVA",
+    "operator": "Grant County PUD",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/80794931",
+    "lat": 45.6932266,
+    "lon": -122.6942487,
+    "name": "Van Dyke Substation",
+    "norm": "VAN DYKE",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/82484871",
+    "lat": 45.6875292,
+    "lon": -122.6711866,
+    "name": "Hazel Dell Switching Substation",
+    "norm": "HAZEL DELL SWITCHING",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/825463302",
+    "lat": 45.6234506,
+    "lon": -121.1359724,
+    "name": "Spearfish",
+    "norm": "SPEARFISH",
+    "operator": "Klickitat PUD",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/84514141",
+    "lat": 46.4583024,
+    "lon": -119.2729669,
+    "name": "Benton Substation",
+    "norm": "BENTON",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/84514151",
+    "lat": 46.3623357,
+    "lon": -119.3618446,
+    "name": "White Bluffs Substation",
+    "norm": "WHITE BLUFFS",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/84525937",
+    "lat": 46.4128594,
+    "lon": -119.19642,
+    "name": "Baxter Substation",
+    "norm": "BAXTER",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/849954082",
+    "lat": 47.4129962,
+    "lon": -120.1993193,
+    "name": "Veedol Substation",
+    "norm": "VEEDOL",
+    "operator": "Douglas County PUD",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/85111002",
+    "lat": 45.6497854,
+    "lon": -122.53141,
+    "name": "Evergreen Substation",
+    "norm": "EVERGREEN",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/859088590",
+    "lat": 47.1159509,
+    "lon": -119.2514058,
+    "name": "Nelson Substation",
+    "norm": "NELSON",
+    "operator": "Grant County Public Utility District",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/86577256",
+    "lat": 45.6933131,
+    "lon": -122.6622631,
+    "name": "Stockford Substation",
+    "norm": "STOCKFORD",
+    "operator": "Clark Public Utilities",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/876311328",
+    "lat": 46.3894338,
+    "lon": -120.7871133,
+    "name": "White Swan Substation",
+    "norm": "WHITE SWAN",
+    "operator": null,
+    "state": "WA",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/89382771",
+    "lat": 47.2067436,
+    "lon": -122.2378525,
+    "name": "Sumner Substation",
+    "norm": "SUMNER",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/89383689",
+    "lat": 47.1533135,
+    "lon": -122.2365885,
+    "name": "Alderton Substation",
+    "norm": "ALDERTON",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/89765008",
+    "lat": 47.2697213,
+    "lon": -122.5172509,
+    "name": "Pearl Substation",
+    "norm": "PEARL",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/89765009",
+    "lat": 47.2668757,
+    "lon": -122.4864597,
+    "name": "Cushman Substation",
+    "norm": "CUSHMAN",
+    "operator": "Tacoma Power",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/92831922",
+    "lat": 47.5668402,
+    "lon": -122.2200714,
+    "name": "Mercerwood",
+    "norm": "MERCERWOOD",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93411485",
+    "lat": 47.6854735,
+    "lon": -117.276648,
+    "name": "Millwood Substation",
+    "norm": "MILLWOOD",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93412342",
+    "lat": 47.687669,
+    "lon": -117.2040286,
+    "name": "Trentwood Substation",
+    "norm": "TRENTWOOD",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93589071",
+    "lat": 47.6527728,
+    "lon": -117.4014473,
+    "name": "Third & Hatch Substation",
+    "norm": "THIRD & HATCH",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93598255",
+    "lat": 47.6269641,
+    "lon": -117.4340133,
+    "name": "Sunset Substation",
+    "norm": "SUNSET",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93744180",
+    "lat": 46.374776,
+    "lon": -117.777255,
+    "name": "Marengo Wind Plant",
+    "norm": "MARENGO WIND PLANT",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/93814035",
+    "lat": 45.6377788,
+    "lon": -122.6987225,
+    "name": "Carborundum Substation",
+    "norm": "CARBORUNDUM",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/940949038",
+    "lat": 47.6812299,
+    "lon": -122.2634396,
+    "name": "Building 42",
+    "norm": "BUILDING 42",
+    "operator": null,
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/94313701",
+    "lat": 47.7039316,
+    "lon": -117.0533513,
+    "name": "East Farms Substation",
+    "norm": "EAST FARMS",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": null
+  },
+  {
+    "id": "way/94313708",
+    "lat": 47.6968064,
+    "lon": -117.1414162,
+    "name": "Boulder Park Substation",
+    "norm": "BOULDER PARK",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/94313712",
+    "lat": 47.6929438,
+    "lon": -117.1078997,
+    "name": "Otis Orchards Substation",
+    "norm": "OTIS ORCHARDS",
+    "operator": "Avista",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/94320538",
+    "lat": 47.0355202,
+    "lon": -122.735907,
+    "name": "St Clair Substation",
+    "norm": "ST CLAIR",
+    "operator": "Puget Sound Energy",
+    "state": "WA",
+    "voltage": "115000,230000"
+  },
+  {
+    "id": "way/967130569",
+    "lat": 45.7080827,
+    "lon": -121.8943289,
+    "name": "Stevenson Substation",
+    "norm": "STEVENSON",
+    "operator": "Skamania County Public Utility District #1",
+    "state": "WA",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/977670838",
+    "lat": 45.8777587,
+    "lon": -120.8875215,
+    "name": "Knight Substation",
+    "norm": "KNIGHT",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/98840181",
+    "lat": 48.3286796,
+    "lon": -117.3730939,
+    "name": "Cusick Substation",
+    "norm": "CUSICK",
+    "operator": "Bonneville Power Administration",
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/98840186",
+    "lat": 48.1759868,
+    "lon": -117.2771063,
+    "name": "Sacheen Substation",
+    "norm": "SACHEEN",
+    "operator": null,
+    "state": "WA",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/99271237",
+    "lat": 47.8090416,
+    "lon": -119.986012,
+    "name": "Chelan Falls Substation & Switchyard",
+    "norm": "CHELAN FALLS & SWITCHYARD",
+    "operator": "Chelan County PUD",
+    "state": "WA",
+    "voltage": null
+  }
+]

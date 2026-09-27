@@ -1,0 +1,1872 @@
+[
+  {
+    "id": "relation/10385577",
+    "lat": 48.3625949,
+    "lon": -114.1425179,
+    "name": "Columbia Falls Substation",
+    "norm": "COLUMBIA FALLS",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000;115000;69000"
+  },
+  {
+    "id": "relation/10385578",
+    "lat": 48.3905924,
+    "lon": -114.1341015,
+    "name": "BPA Conkelly Substation",
+    "norm": "BPA CONKELLY",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "relation/17780534",
+    "lat": 46.9476715,
+    "lon": -114.1916059,
+    "name": "Frenchtown",
+    "norm": "FRENCHTOWN",
+    "operator": "Missoula Electric Cooperative",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "relation/17863413",
+    "lat": 48.5083999,
+    "lon": -109.8018312,
+    "name": "Havre",
+    "norm": "HAVRE",
+    "operator": null,
+    "state": "MT",
+    "voltage": "161000;115000;69000"
+  },
+  {
+    "id": "relation/17866242",
+    "lat": 48.5006695,
+    "lon": -111.8690189,
+    "name": "Shelby",
+    "norm": "SHELBY",
+    "operator": null,
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "relation/18120233",
+    "lat": 47.6778327,
+    "lon": -114.2453406,
+    "name": "Kerr Substation",
+    "norm": "KERR",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "161000;115000;69000"
+  },
+  {
+    "id": "relation/19966141",
+    "lat": 47.8430639,
+    "lon": -115.6081676,
+    "name": "NLEC Trout Creek Substation",
+    "norm": "NLEC TROUT CREEK",
+    "operator": "Northern Lights Electric Cooperative",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1002855490",
+    "lat": 45.6068054,
+    "lon": -106.2820634,
+    "name": "Saint Labre Substation",
+    "norm": "SAINT LABRE",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/100723163",
+    "lat": 48.0899604,
+    "lon": -105.7130664,
+    "name": "Wolf Point",
+    "norm": "WOLF POINT",
+    "operator": "Western Area Power Administration",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1014464648",
+    "lat": 45.957935,
+    "lon": -108.1610419,
+    "name": "Worden Substation",
+    "norm": "WORDEN",
+    "operator": "Yellowstone Valley Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/101852412",
+    "lat": 45.8911296,
+    "lon": -106.6141602,
+    "name": "Colstrip Substation",
+    "norm": "COLSTRIP",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/102124678",
+    "lat": 46.515592,
+    "lon": -112.8876393,
+    "name": "Garrison Substation",
+    "norm": "GARRISON",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/1038389363",
+    "lat": 48.0947963,
+    "lon": -114.0320808,
+    "name": "FEC Swan Substation",
+    "norm": "FEC SWAN",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1064892469",
+    "lat": 48.1752679,
+    "lon": -104.2040119,
+    "name": "Red Bank Substation",
+    "norm": "RED BANK",
+    "operator": "Sheridan Electric Cooperative",
+    "state": "MT",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/1066955062",
+    "lat": 48.7650025,
+    "lon": -104.5136661,
+    "name": "Plentywood Substation",
+    "norm": "PLENTYWOOD",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "115000;57000"
+  },
+  {
+    "id": "way/1068070007",
+    "lat": 48.3505562,
+    "lon": -114.1599677,
+    "name": "FEC Badrock Substation",
+    "norm": "FEC BADROCK",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1086260859",
+    "lat": 47.6301979,
+    "lon": -114.6251965,
+    "name": "Hot Springs Substation",
+    "norm": "HOT SPRINGS",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1092736589",
+    "lat": 48.3130196,
+    "lon": -114.2330202,
+    "name": "FEC LaSalle Substation",
+    "norm": "FEC LASALLE",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1092736598",
+    "lat": 48.2400277,
+    "lon": -114.3960977,
+    "name": "FEC West Valley Substation",
+    "norm": "FEC WEST VALLEY",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1092736604",
+    "lat": 48.4057731,
+    "lon": -114.333557,
+    "name": "FEC Whitefish Substation",
+    "norm": "FEC WHITEFISH",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1093002819",
+    "lat": 48.3782791,
+    "lon": -114.2077251,
+    "name": "FEC Tamarack Substation",
+    "norm": "FEC TAMARACK",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1093002824",
+    "lat": 48.3771973,
+    "lon": -114.1872421,
+    "name": "FEC Teakettle Substation",
+    "norm": "FEC TEAKETTLE",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1093259678",
+    "lat": 48.4536075,
+    "lon": -114.3559133,
+    "name": "FEC Big Mountain Substation",
+    "norm": "FEC BIG MOUNTAIN",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/112409263",
+    "lat": 46.7545336,
+    "lon": -113.7090889,
+    "name": "Clinton Substation",
+    "norm": "CLINTON",
+    "operator": "Missoula Electric Cooperative",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/1136325349",
+    "lat": 46.2317952,
+    "lon": -114.1532815,
+    "name": "Hamilton Substation",
+    "norm": "HAMILTON",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1136325350",
+    "lat": 46.1952723,
+    "lon": -114.144335,
+    "name": "Grantsdale Substation",
+    "norm": "GRANTSDALE",
+    "operator": "Ravalli Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1136338673",
+    "lat": 46.3125175,
+    "lon": -114.1051966,
+    "name": "Corvallis Substation",
+    "norm": "CORVALLIS",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1136382075",
+    "lat": 46.2762432,
+    "lon": -114.0336494,
+    "name": "Hamilton Heights Substation",
+    "norm": "HAMILTON HEIGHTS",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/1137117977",
+    "lat": 46.129328,
+    "lon": -114.1792855,
+    "name": "Charlos Heights Substation",
+    "norm": "CHARLOS HEIGHTS",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1137179147",
+    "lat": 46.0157966,
+    "lon": -114.170877,
+    "name": "South Darby Substation",
+    "norm": "SOUTH DARBY",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1137179154",
+    "lat": 46.7440207,
+    "lon": -114.0809488,
+    "name": "Lolo Substation",
+    "norm": "LOLO",
+    "operator": "Missoula Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1137179155",
+    "lat": 46.4438625,
+    "lon": -114.1348232,
+    "name": "Bell Crossing Substation",
+    "norm": "BELL CROSSING",
+    "operator": "Ravalli Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1194600457",
+    "lat": 46.5147736,
+    "lon": -114.0794835,
+    "name": "Stevensville Substation",
+    "norm": "STEVENSVILLE",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/120171146",
+    "lat": 45.9888743,
+    "lon": -107.9580927,
+    "name": "Pompeys Substation",
+    "norm": "POMPEYS",
+    "operator": "Yellowstone Valley Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1202259956",
+    "lat": 46.8178779,
+    "lon": -106.3784055,
+    "name": "Clearwater Wind West Collection Substation",
+    "norm": "CLEARWATER WIND WEST COLLECTION",
+    "operator": null,
+    "state": "MT",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1202259960",
+    "lat": 45.9261815,
+    "lon": -106.5970911,
+    "name": "Clearwater Wind Autoyard",
+    "norm": "CLEARWATER WIND AUTOYARD",
+    "operator": null,
+    "state": "MT",
+    "voltage": "500000;345000"
+  },
+  {
+    "id": "way/1222614291",
+    "lat": 46.3243318,
+    "lon": -113.291375,
+    "name": "Phillipsburg Substation",
+    "norm": "PHILLIPSBURG",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/1225544163",
+    "lat": 46.479925,
+    "lon": -111.9930444,
+    "name": "Lump Gulch Substation",
+    "norm": "LUMP GULCH",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1291983211",
+    "lat": 46.3248818,
+    "lon": -114.1545257,
+    "name": "Woodside Substation",
+    "norm": "WOODSIDE",
+    "operator": "Ravalli Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1291983232",
+    "lat": 46.0130742,
+    "lon": -114.1695572,
+    "name": "Darby Substation",
+    "norm": "DARBY",
+    "operator": "Ravalli Electric Cooperative",
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1293795295",
+    "lat": 47.71875,
+    "lon": -114.2033169,
+    "name": "West Shore Substation",
+    "norm": "WEST SHORE",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1293795299",
+    "lat": 47.5290595,
+    "lon": -114.1172055,
+    "name": "Ronan Substation",
+    "norm": "RONAN",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1293798523",
+    "lat": 47.3341792,
+    "lon": -114.0976891,
+    "name": "Saint Ignatius Substation",
+    "norm": "SAINT IGNATIUS",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1294600470",
+    "lat": 48.3693046,
+    "lon": -114.1981166,
+    "name": "FEC Columbia Falls Substation",
+    "norm": "FEC COLUMBIA FALLS",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1294600487",
+    "lat": 48.4943696,
+    "lon": -113.9842639,
+    "name": "FEC West Glacier Substation",
+    "norm": "FEC WEST GLACIER",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1294600488",
+    "lat": 48.2252315,
+    "lon": -114.1024967,
+    "name": "FEC Lake Blaine Substation",
+    "norm": "FEC LAKE BLAINE",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1294600489",
+    "lat": 48.1791934,
+    "lon": -114.1074095,
+    "name": "FEC Creston Substation",
+    "norm": "FEC CRESTON",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1297283291",
+    "lat": 47.0335538,
+    "lon": -114.3392854,
+    "name": "Huson",
+    "norm": "HUSON",
+    "operator": "Missoula Electric Cooperative",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/1297589653",
+    "lat": 46.6299092,
+    "lon": -114.0798775,
+    "name": "Florence",
+    "norm": "FLORENCE",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1297788664",
+    "lat": 48.3843176,
+    "lon": -115.5394835,
+    "name": "FEC Kootenai Substation",
+    "norm": "FEC KOOTENAI",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1297788674",
+    "lat": 47.486956,
+    "lon": -114.6486414,
+    "name": "Camas Substation",
+    "norm": "CAMAS",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1301872316",
+    "lat": 47.2795651,
+    "lon": -110.6796744,
+    "name": "South Peak",
+    "norm": "SOUTH PEAK",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000;100000"
+  },
+  {
+    "id": "way/1303170753",
+    "lat": 48.6049214,
+    "lon": -112.7646395,
+    "name": "Meriwether Regulator",
+    "norm": "MERIWETHER REGULATOR",
+    "operator": "Glacier Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1303183216",
+    "lat": 48.5115041,
+    "lon": -111.8687434,
+    "name": "Shelby",
+    "norm": "SHELBY",
+    "operator": "Marias River Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1303186320",
+    "lat": 47.5078134,
+    "lon": -111.8160843,
+    "name": "Fort Shaw",
+    "norm": "FORT SHAW",
+    "operator": "Sun River Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1313894082",
+    "lat": 45.0270037,
+    "lon": -106.8261375,
+    "name": "Decker Substation",
+    "norm": "DECKER",
+    "operator": "Basin Electric Power Cooperative",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1314260732",
+    "lat": 46.2819087,
+    "lon": -114.1392756,
+    "name": "Hamilton North Substation",
+    "norm": "HAMILTON NORTH",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/134079601",
+    "lat": 46.9109425,
+    "lon": -113.9681542,
+    "name": "Rattlesnake Substation",
+    "norm": "RATTLESNAKE",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "230000;161000;115000"
+  },
+  {
+    "id": "way/134412496",
+    "lat": 46.8687341,
+    "lon": -113.9948679,
+    "name": "Missoula City Substation #1",
+    "norm": "MISSOULA CITY",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/1344826242",
+    "lat": 45.7996068,
+    "lon": -108.4986931,
+    "name": "Rimrock Substation",
+    "norm": "RIMROCK",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "230000;100000"
+  },
+  {
+    "id": "way/1358512435",
+    "lat": 48.0584083,
+    "lon": -114.0720346,
+    "name": "FEC Bigfork Substation",
+    "norm": "FEC BIGFORK",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1358665635",
+    "lat": 45.903916,
+    "lon": -108.3120178,
+    "name": "Huntley Substation",
+    "norm": "HUNTLEY",
+    "operator": "Yellowstone Valley Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1358883250",
+    "lat": 45.9003456,
+    "lon": -108.3848661,
+    "name": "Gallagher Substation",
+    "norm": "GALLAGHER",
+    "operator": "Yellowstone Valley Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1358883258",
+    "lat": 46.1260921,
+    "lon": -107.5735985,
+    "name": "Custer Substation",
+    "norm": "CUSTER",
+    "operator": "Yellowstone Valley Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1360541986",
+    "lat": 48.0958957,
+    "lon": -114.2133709,
+    "name": "FEC Somers Substation",
+    "norm": "FEC SOMERS",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1366153574",
+    "lat": 48.3701083,
+    "lon": -114.311178,
+    "name": "North Valley Substation",
+    "norm": "NORTH VALLEY",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/137822360",
+    "lat": 47.1062859,
+    "lon": -104.7698553,
+    "name": "Dawson County Substation",
+    "norm": "DAWSON COUNTY",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/137830202",
+    "lat": 46.1240373,
+    "lon": -107.5047651,
+    "name": "Custer Substation",
+    "norm": "CUSTER",
+    "operator": "Western Area Power Administration",
+    "state": "MT",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/137868388",
+    "lat": 46.412598,
+    "lon": -105.7918675,
+    "name": "Miles City Substation",
+    "norm": "MILES CITY",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1381292964",
+    "lat": 48.8758777,
+    "lon": -115.0477242,
+    "name": "Eureka Substation",
+    "norm": "EUREKA",
+    "operator": "Lincoln Electric Cooperative",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1382632730",
+    "lat": 48.3948191,
+    "lon": -115.3070582,
+    "name": "BPA Libby Substation",
+    "norm": "BPA LIBBY",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1383312516",
+    "lat": 48.5458359,
+    "lon": -114.5665111,
+    "name": "LEC Stillwater Substation",
+    "norm": "LEC STILLWATER",
+    "operator": "Lincoln Electric Cooperative",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1383312524",
+    "lat": 48.2166617,
+    "lon": -114.2164263,
+    "name": "BPA Kalispell Substation",
+    "norm": "BPA KALISPELL",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1383372814",
+    "lat": 48.402742,
+    "lon": -115.5484799,
+    "name": "FEC Libby Substation",
+    "norm": "FEC LIBBY",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1383623788",
+    "lat": 48.2453648,
+    "lon": -114.312606,
+    "name": "BPA Flathead Substation",
+    "norm": "BPA FLATHEAD",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000;34500"
+  },
+  {
+    "id": "way/1383623792",
+    "lat": 48.2456395,
+    "lon": -114.3093648,
+    "name": "FEC Stillwater Substation",
+    "norm": "FEC STILLWATER",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1383637631",
+    "lat": 48.599597,
+    "lon": -115.9877173,
+    "name": "BPA Yaak Substation",
+    "norm": "BPA YAAK",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1383857543",
+    "lat": 48.4419686,
+    "lon": -115.8709342,
+    "name": "NLEC Troy Substation",
+    "norm": "NLEC TROY",
+    "operator": "Northern Lights Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000;115000"
+  },
+  {
+    "id": "way/1383857544",
+    "lat": 48.441846,
+    "lon": -115.8701868,
+    "name": "BPA Troy Substation",
+    "norm": "BPA TROY",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1412919858",
+    "lat": 46.7966672,
+    "lon": -114.0631527,
+    "name": "Bitterroot Substation",
+    "norm": "BITTERROOT",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "161000;100000;69000"
+  },
+  {
+    "id": "way/1420305286",
+    "lat": 48.2253122,
+    "lon": -114.3299162,
+    "name": "FEC Four Mile Substation",
+    "norm": "FEC FOUR MILE",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1420305291",
+    "lat": 48.3864953,
+    "lon": -114.0646099,
+    "name": "FEC Hungry Horse Substation",
+    "norm": "FEC HUNGRY HORSE",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1420633642",
+    "lat": 48.2297212,
+    "lon": -114.2893143,
+    "name": "FEC Kingsway Substation",
+    "norm": "FEC KINGSWAY",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1420989309",
+    "lat": 47.5759628,
+    "lon": -114.6282685,
+    "name": "BPA Hot Springs Substation",
+    "norm": "BPA HOT SPRINGS",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/144003367",
+    "lat": 45.7365049,
+    "lon": -107.6078784,
+    "name": "Hardin Substation",
+    "norm": "HARDIN",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1485087555",
+    "lat": 46.3905006,
+    "lon": -104.4498378,
+    "name": "Butte Pipeline",
+    "norm": "BUTTE PIPELINE",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1485087567",
+    "lat": 48.1538892,
+    "lon": -104.9194208,
+    "name": "Brockton Substation",
+    "norm": "BROCKTON",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/1485087571",
+    "lat": 48.4873527,
+    "lon": -105.4299841,
+    "name": "Benrud Substation",
+    "norm": "BENRUD",
+    "operator": "NorVal Electric Cooperative",
+    "state": "MT",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/1485087572",
+    "lat": 48.7935542,
+    "lon": -105.4185552,
+    "name": "North Scobey Substation",
+    "norm": "NORTH SCOBEY",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/1485087573",
+    "lat": 48.7883246,
+    "lon": -105.4102692,
+    "name": "South Scobey Substation",
+    "norm": "SOUTH SCOBEY",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/1485087574",
+    "lat": 48.8021356,
+    "lon": -105.2782347,
+    "name": "Madoc Substation",
+    "norm": "MADOC",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/1485087575",
+    "lat": 48.7948335,
+    "lon": -105.2129672,
+    "name": "Flaxville Substation",
+    "norm": "FLAXVILLE",
+    "operator": "Sheridan Electric Cooperative",
+    "state": "MT",
+    "voltage": "57000;12470"
+  },
+  {
+    "id": "way/1485087576",
+    "lat": 48.802307,
+    "lon": -105.1703012,
+    "name": "Flaxville Substation",
+    "norm": "FLAXVILLE",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/1485087577",
+    "lat": 48.8190358,
+    "lon": -104.9442286,
+    "name": "Redstone Substation",
+    "norm": "REDSTONE",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;2400"
+  },
+  {
+    "id": "way/1485087582",
+    "lat": 48.6052149,
+    "lon": -104.463621,
+    "name": "Reserve Substation",
+    "norm": "RESERVE",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/1485087584",
+    "lat": 48.4186296,
+    "lon": -104.5193237,
+    "name": "Homestead Substation",
+    "norm": "HOMESTEAD",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/1485087586",
+    "lat": 48.1424742,
+    "lon": -104.514243,
+    "name": "Culbertson Substation",
+    "norm": "CULBERTSON",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/1485087597",
+    "lat": 47.5441572,
+    "lon": -104.8926376,
+    "name": "Retah",
+    "norm": "RETAH",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1485087598",
+    "lat": 47.3406258,
+    "lon": -105.1948388,
+    "name": "Lindsay",
+    "norm": "LINDSAY",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1485087608",
+    "lat": 45.2255336,
+    "lon": -112.6312942,
+    "name": "Dillon Substation",
+    "norm": "DILLON",
+    "operator": "Vigilante Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1485087610",
+    "lat": 45.8689897,
+    "lon": -112.0868439,
+    "name": "Whitehall",
+    "norm": "WHITEHALL",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1485087612",
+    "lat": 46.1808374,
+    "lon": -111.4353702,
+    "name": "Toston",
+    "norm": "TOSTON",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1485087630",
+    "lat": 45.6968927,
+    "lon": -108.6832085,
+    "name": "Mossmain",
+    "norm": "MOSSMAIN",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1485087643",
+    "lat": 46.572864,
+    "lon": -112.8605784,
+    "name": "Brock Creek Substation",
+    "norm": "BROCK CREEK",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/1485087645",
+    "lat": 47.018376,
+    "lon": -114.7380433,
+    "name": "Tarkio",
+    "norm": "TARKIO",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/1551004777",
+    "lat": 48.3316623,
+    "lon": -104.493931,
+    "name": "Froid Substation",
+    "norm": "FROID",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;12470"
+  },
+  {
+    "id": "way/1551004788",
+    "lat": 48.501488,
+    "lon": -104.5094758,
+    "name": "Medicine Lake Substation",
+    "norm": "MEDICINE LAKE",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;4160"
+  },
+  {
+    "id": "way/170263866",
+    "lat": 46.1043607,
+    "lon": -112.8764915,
+    "name": "Anaconda Mill Creek Substation",
+    "norm": "ANACONDA MILL CREEK",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000;161000;115000;100000"
+  },
+  {
+    "id": "way/170401627",
+    "lat": 46.0995529,
+    "lon": -112.8754048,
+    "name": "Anaconda Substation",
+    "norm": "ANACONDA",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/170405635",
+    "lat": 45.3087086,
+    "lon": -107.9526319,
+    "name": "Yellowtail",
+    "norm": "YELLOWTAIL",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/171237239",
+    "lat": 45.1105313,
+    "lon": -106.870707,
+    "name": "Wyomont Substation",
+    "norm": "WYOMONT",
+    "operator": "Basin Electric Power Cooperative",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/172384823",
+    "lat": 46.5919936,
+    "lon": -112.0029989,
+    "name": "Helena",
+    "norm": "HELENA",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/172866280",
+    "lat": 45.7740483,
+    "lon": -108.4800776,
+    "name": "Billings Steam Plant Substation",
+    "norm": "BILLINGS STEAM PLANT",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "230000;100000"
+  },
+  {
+    "id": "way/172866281",
+    "lat": 45.7996128,
+    "lon": -108.4960106,
+    "name": "Rimrock",
+    "norm": "RIMROCK",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000;100000;69000"
+  },
+  {
+    "id": "way/173216572",
+    "lat": 48.1294825,
+    "lon": -111.9386608,
+    "name": "Conrad Substation",
+    "norm": "CONRAD",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/173216573",
+    "lat": 48.4663549,
+    "lon": -111.8623329,
+    "name": "Shelby Substation",
+    "norm": "SHELBY",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/173697138",
+    "lat": 46.383962,
+    "lon": -104.2663237,
+    "name": "Baker Substation",
+    "norm": "BAKER",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/173785067",
+    "lat": 48.0134171,
+    "lon": -106.4120497,
+    "name": "Fort Peck Station",
+    "norm": "FORT PECK STATION",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/173900572",
+    "lat": 48.8822526,
+    "lon": -111.90613,
+    "name": "Sunburst",
+    "norm": "SUNBURST",
+    "operator": "Marias River Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/182953195",
+    "lat": 45.8712637,
+    "lon": -109.9386121,
+    "name": "Big Timber Auto Substation",
+    "norm": "BIG TIMBER AUTO",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/182953196",
+    "lat": 45.8525181,
+    "lon": -109.2573273,
+    "name": "Columbus-Rapelje Auto Substation",
+    "norm": "COLUMBUS-RAPELJE AUTO",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "230000;100000"
+  },
+  {
+    "id": "way/182953197",
+    "lat": 45.8489749,
+    "lon": -108.7157462,
+    "name": "Shorey Road Substation",
+    "norm": "SHOREY ROAD",
+    "operator": null,
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/182953198",
+    "lat": 45.9549011,
+    "lon": -110.6659348,
+    "name": "Wilsall Substation",
+    "norm": "WILSALL",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "230000;161000"
+  },
+  {
+    "id": "way/182955445",
+    "lat": 45.935512,
+    "lon": -111.5130894,
+    "name": "Three Rivers Substation",
+    "norm": "THREE RIVERS",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "230000;161000;100000"
+  },
+  {
+    "id": "way/183035543",
+    "lat": 47.3096139,
+    "lon": -114.3005237,
+    "name": "Dixon Substation",
+    "norm": "DIXON",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/183090685",
+    "lat": 48.1109874,
+    "lon": -114.6429957,
+    "name": "FEC Haskill Substation",
+    "norm": "FEC HASKILL",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/183094027",
+    "lat": 47.8335141,
+    "lon": -114.3536883,
+    "name": "Elmo Substation",
+    "norm": "ELMO",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/183094028",
+    "lat": 48.0297713,
+    "lon": -114.2513991,
+    "name": "FEC Lakeside Substation",
+    "norm": "FEC LAKESIDE",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/183094030",
+    "lat": 48.1020599,
+    "lon": -114.25233,
+    "name": "FEC Lion Mountain Substation",
+    "norm": "FEC LION MOUNTAIN",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "230000;34500"
+  },
+  {
+    "id": "way/194204826",
+    "lat": 48.7076924,
+    "lon": -114.8582186,
+    "name": "BPA Trego Substation",
+    "norm": "BPA TREGO",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/258636620",
+    "lat": 48.3613373,
+    "lon": -107.8279837,
+    "name": "Malta",
+    "norm": "MALTA",
+    "operator": null,
+    "state": "MT",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/277314739",
+    "lat": 47.2795479,
+    "lon": -114.1853417,
+    "name": "Ravalli Substation",
+    "norm": "RAVALLI",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/284333637",
+    "lat": 47.6895747,
+    "lon": -114.114577,
+    "name": "South Shore Substation",
+    "norm": "SOUTH SHORE",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000;34500"
+  },
+  {
+    "id": "way/284549283",
+    "lat": 47.6896929,
+    "lon": -114.1573978,
+    "name": "Polson Substation",
+    "norm": "POLSON",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/287666740",
+    "lat": 48.1826097,
+    "lon": -114.2993569,
+    "name": "FEC Green Acres Substation",
+    "norm": "FEC GREEN ACRES",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/290607529",
+    "lat": 47.7248682,
+    "lon": -114.0394654,
+    "name": "Finley Point Substation",
+    "norm": "FINLEY POINT",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/291400325",
+    "lat": 47.6515064,
+    "lon": -114.3445797,
+    "name": "Buffalo Bridge Substation",
+    "norm": "BUFFALO BRIDGE",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/294431753",
+    "lat": 47.1531009,
+    "lon": -114.0685735,
+    "name": "Arlee Substation",
+    "norm": "ARLEE",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/294687158",
+    "lat": 47.6760245,
+    "lon": -104.0762349,
+    "name": "East Sidney Substation",
+    "norm": "EAST SIDNEY",
+    "operator": "McKenzie Electric Cooperative",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/296526470",
+    "lat": 46.1336022,
+    "lon": -112.9485685,
+    "name": "Anaconda Substation",
+    "norm": "ANACONDA",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/296888664",
+    "lat": 46.8051054,
+    "lon": -114.0460863,
+    "name": "Hillview Heights Substation",
+    "norm": "HILLVIEW HEIGHTS",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/297054935",
+    "lat": 46.8751278,
+    "lon": -113.8728557,
+    "name": "Bonner Substation",
+    "norm": "BONNER",
+    "operator": null,
+    "state": "MT",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/297773046",
+    "lat": 46.6643251,
+    "lon": -113.1532538,
+    "name": "Drummond Substation",
+    "norm": "DRUMMOND",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/328464504",
+    "lat": 46.9981344,
+    "lon": -108.3566935,
+    "name": "Winnett",
+    "norm": "WINNETT",
+    "operator": "Fergus Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/346449800",
+    "lat": 46.4260882,
+    "lon": -110.0724541,
+    "name": "Two Dot Substation",
+    "norm": "TWO DOT",
+    "operator": null,
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/346449801",
+    "lat": 47.5373481,
+    "lon": -111.1952348,
+    "name": "Rainbow",
+    "norm": "RAINBOW",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/346449819",
+    "lat": 45.9447177,
+    "lon": -111.4822049,
+    "name": "Three Rivers Substation",
+    "norm": "THREE RIVERS",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "100000;69000"
+  },
+  {
+    "id": "way/353502433",
+    "lat": 46.5729195,
+    "lon": -109.7527492,
+    "name": "Judith Gap South Substation",
+    "norm": "JUDITH GAP SOUTH",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/35416167",
+    "lat": 48.3855499,
+    "lon": -114.2340881,
+    "name": "FEC Trumbull Creek Substation",
+    "norm": "FEC TRUMBULL CREEK",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "230000;34500;13800"
+  },
+  {
+    "id": "way/395700047",
+    "lat": 46.3123978,
+    "lon": -114.1036414,
+    "name": "Corvallis Substation",
+    "norm": "CORVALLIS",
+    "operator": "Ravalli Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/395713366",
+    "lat": 48.8186123,
+    "lon": -104.7815454,
+    "name": "Outlook Substation",
+    "norm": "OUTLOOK",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;12470"
+  },
+  {
+    "id": "way/403404656",
+    "lat": 45.7816542,
+    "lon": -108.5007786,
+    "name": "Billings City",
+    "norm": "BILLINGS CITY",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/406015782",
+    "lat": 45.7927254,
+    "lon": -108.4896064,
+    "name": "Billings Eastside",
+    "norm": "BILLINGS EASTSIDE",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/409895119",
+    "lat": 45.9427121,
+    "lon": -108.3478008,
+    "name": "Shepherd Substation",
+    "norm": "SHEPHERD",
+    "operator": "Yellowstone Valley Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/411568538",
+    "lat": 45.7834611,
+    "lon": -108.5758843,
+    "name": "Bellrock",
+    "norm": "BELLROCK",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/416628833",
+    "lat": 46.8572119,
+    "lon": -114.0683953,
+    "name": "Orchard Homes Substation",
+    "norm": "ORCHARD HOMES",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/417132479",
+    "lat": 46.8540874,
+    "lon": -114.0217075,
+    "name": "Southgate Substation",
+    "norm": "SOUTHGATE",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/440472408",
+    "lat": 48.1285847,
+    "lon": -105.0856054,
+    "name": "Sprole Substation",
+    "norm": "SPROLE",
+    "operator": "Montana-Dakota Utilities",
+    "state": "MT",
+    "voltage": "57000;12470"
+  },
+  {
+    "id": "way/499383676",
+    "lat": 46.3901851,
+    "lon": -112.7331493,
+    "name": "Deer Lodge Substation",
+    "norm": "DEER LODGE",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/500221466",
+    "lat": 48.1554141,
+    "lon": -110.1430335,
+    "name": "Verona Substation",
+    "norm": "VERONA",
+    "operator": "Hill County Electric Cooperative",
+    "state": "MT",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/510315336",
+    "lat": 46.6499812,
+    "lon": -114.0362064,
+    "name": "Lower Woodchuck Substation",
+    "norm": "LOWER WOODCHUCK",
+    "operator": "Ravalli Electric Cooperative",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/511261892",
+    "lat": 46.8774026,
+    "lon": -114.0526378,
+    "name": "Clark Fork Substation",
+    "norm": "CLARK FORK",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "161000;100000"
+  },
+  {
+    "id": "way/51474429",
+    "lat": 47.5422985,
+    "lon": -111.2220395,
+    "name": "Great Falls Substation",
+    "norm": "GREAT FALLS",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "230000;100000"
+  },
+  {
+    "id": "way/538325557",
+    "lat": 45.5952402,
+    "lon": -106.2739441,
+    "name": "Ashland Substation",
+    "norm": "ASHLAND",
+    "operator": null,
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/606784328",
+    "lat": 48.2011939,
+    "lon": -114.3252365,
+    "name": "FEC Appleway Substation",
+    "norm": "FEC APPLEWAY",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/611562978",
+    "lat": 46.4202297,
+    "lon": -114.1440489,
+    "name": "Victor Substation",
+    "norm": "VICTOR",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/615913456",
+    "lat": 47.5400279,
+    "lon": -111.2040059,
+    "name": "Crooked Falls",
+    "norm": "CROOKED FALLS",
+    "operator": null,
+    "state": "MT",
+    "voltage": "161000;100000;69000"
+  },
+  {
+    "id": "way/650742591",
+    "lat": 48.012135,
+    "lon": -106.4125427,
+    "name": "Fort Peck",
+    "norm": "FORT PECK",
+    "operator": null,
+    "state": "MT",
+    "voltage": "115000;161000;69000"
+  },
+  {
+    "id": "way/755680786",
+    "lat": 45.7664796,
+    "lon": -108.5364457,
+    "name": "Billings",
+    "norm": "BILLINGS",
+    "operator": "Northwestern Energy",
+    "state": "MT",
+    "voltage": "100000;69000"
+  },
+  {
+    "id": "way/810617583",
+    "lat": 46.759135,
+    "lon": -114.0751849,
+    "name": "Lolo Substation",
+    "norm": "LOLO",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/820186220",
+    "lat": 48.2885236,
+    "lon": -104.1931861,
+    "name": "Snake Butte Substation",
+    "norm": "SNAKE BUTTE",
+    "operator": "Sheridan Electric Cooperative",
+    "state": "MT",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/881789901",
+    "lat": 47.6018443,
+    "lon": -114.1137388,
+    "name": "Pablo Substation",
+    "norm": "PABLO",
+    "operator": "Mission Valley Power",
+    "state": "MT",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/89279731",
+    "lat": 46.9318703,
+    "lon": -113.0991547,
+    "name": "Ovando Substation",
+    "norm": "OVANDO",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/898551368",
+    "lat": 48.8669558,
+    "lon": -104.1158904,
+    "name": "Westby Substation",
+    "norm": "WESTBY",
+    "operator": "Sheridan Electric Cooperative",
+    "state": "MT",
+    "voltage": "41600;12470"
+  },
+  {
+    "id": "way/920857798",
+    "lat": 48.5511459,
+    "lon": -114.9565621,
+    "name": "Flathead Tunnel Substation",
+    "norm": "FLATHEAD TUNNEL",
+    "operator": null,
+    "state": "MT",
+    "voltage": "13800"
+  },
+  {
+    "id": "way/925355160",
+    "lat": 48.1079706,
+    "lon": -114.4612365,
+    "name": "Old FEC Kila Substation",
+    "norm": "OLD FEC KILA",
+    "operator": null,
+    "state": "MT",
+    "voltage": null
+  },
+  {
+    "id": "way/928059660",
+    "lat": 48.2157815,
+    "lon": -114.2733209,
+    "name": "FEC Evergreen Substation",
+    "norm": "FEC EVERGREEN",
+    "operator": "Flathead Electric Cooperative",
+    "state": "MT",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/931167952",
+    "lat": 48.3422777,
+    "lon": -114.0196122,
+    "name": "Hungry Horse Substation",
+    "norm": "HUNGRY HORSE",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/935117817",
+    "lat": 46.4303946,
+    "lon": -112.7279664,
+    "name": "Deer Lodge North Substation",
+    "norm": "DEER LODGE NORTH",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "100000"
+  },
+  {
+    "id": "way/94316202",
+    "lat": 47.9594293,
+    "lon": -115.7381521,
+    "name": "Noxon Substation",
+    "norm": "NOXON",
+    "operator": "Avista",
+    "state": "MT",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/97171697",
+    "lat": 45.8576188,
+    "lon": -108.5910355,
+    "name": "Alkali Creek Substation",
+    "norm": "ALKALI CREEK",
+    "operator": "NorthWestern Energy",
+    "state": "MT",
+    "voltage": "230000;161000"
+  },
+  {
+    "id": "way/97208559",
+    "lat": 46.0510279,
+    "lon": -108.851869,
+    "name": "Broadview Substation",
+    "norm": "BROADVIEW",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "500000;230000;100000"
+  },
+  {
+    "id": "way/97353037",
+    "lat": 46.6732654,
+    "lon": -109.8028328,
+    "name": "Judith Gap Substation",
+    "norm": "JUDITH GAP",
+    "operator": "Northwest Energy",
+    "state": "MT",
+    "voltage": "230000;100000"
+  },
+  {
+    "id": "way/9820217",
+    "lat": 48.1585031,
+    "lon": -104.3758844,
+    "name": "Culbertson East Substation",
+    "norm": "CULBERTSON EAST",
+    "operator": "Western Area Power Administration",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/99002354",
+    "lat": 47.4560362,
+    "lon": -115.5894574,
+    "name": "Taft Substation",
+    "norm": "TAFT",
+    "operator": "Bonneville Power Administration",
+    "state": "MT",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/99522733",
+    "lat": 48.157261,
+    "lon": -104.5244703,
+    "name": "Culbertson East Substation",
+    "norm": "CULBERTSON EAST",
+    "operator": "Upper Missouri Power Cooperative",
+    "state": "MT",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/99826816",
+    "lat": 48.1168359,
+    "lon": -105.1362932,
+    "name": "Poplar Substation",
+    "norm": "POPLAR",
+    "operator": "Western Area Power Administration",
+    "state": "MT",
+    "voltage": "115000"
+  }
+]
