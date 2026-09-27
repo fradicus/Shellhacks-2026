@@ -124,6 +124,8 @@ for (const width of [1440, 390]) {
     await expect(list).toContainText(target.source_id);
     await expect(list).toContainText(target.native_id);
     expect(new URL(page.url()).searchParams.get("q")).toBe(target._id);
+    const listBox = await list.locator("ol").boundingBox();
+    expect(listBox!.height).toBeGreaterThan(140);
     await page.screenshot({ path: testInfo.outputPath("candidate-search.png") });
     await expect(page.getByText("Raising the time axis…", { exact: true })).toBeHidden({ timeout: 45_000 });
     await list.locator("ol li button").first().click();

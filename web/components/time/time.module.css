@@ -1684,3 +1684,6 @@
 .candidateSearch button { cursor: pointer; }
 .endpointIdentity { min-width: 0; user-select: text; }
 .endpointIdentity small { display: block; color: #aab1ba; font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
+@media (max-width: 860px) {
+  .left:has(.candidateSearch) { height: 56%; max-height: 56%; }
+}
