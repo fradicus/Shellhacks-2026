@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { NationalProject, NationalSource, NationalExplorerPayload } from "@/lib/national/types";
 import { NationalProjectEvidence } from "./NationalProjectEvidence";
+import { CANDIDATE_COLOR } from "./nationalProjects";
 import type { InService, Utility, View } from "@/lib/types";
 import type { Emphasis, LabelSpec, Projected, SweepState, TimeItem, TimeLayer } from "./timeLayer";
 import { DAYS_PER_YEAR, dayOf, epochYear, fmtDays, span, type Span } from "./timeScale";
@@ -41,7 +42,8 @@ const UTILITY: Record<Utility, string> = { DESC: "Dominion Energy SC", GPC: "Geo
 /** An unmapped owner still has a filed code (MEAG, GTC ...); say which, and that it isn't matched to a utility. */
 const owner = (p: TimeProject) =>
   p.national ? (p.national.project.owner ?? "Owner unknown") : p.utility === "unknown" && p.owner_code ? `Owner code ${p.owner_code}, not mapped` : UTILITY[p.utility];
-const projectColor = (p: TimeProject) => p.national ? "#88dbc1" : COLOR[p.utility];
+const projectColor = (p: TimeProject) =>
+  p.national ? (p.national.project.location_review === "confirmed" ? "#88dbc1" : CANDIDATE_COLOR) : COLOR[p.utility];
 const VIEWS: { v: View; label: string; help: string }[] = [
   { v: "future", label: "Future", help: "Both dates exact and on or after the analysis date" },
   { v: "historical", label: "Historical", help: "At least one in-service date before the analysis date" },
@@ -115,7 +117,7 @@ export function TimeView({
   legacyAvailable: boolean;
   pairsAvailable: boolean;
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
-    drawn: number; inService: number; unlocated: number; truncated: boolean };
+    drawn: number; candidates: number; inService: number; unlocated: number; truncated: boolean };
 }) {
   const counts = useMemo(
     () => Object.fromEntries(VIEWS.map(({ v }) => [v, pairs.filter((p) => p.view === v).length])) as Record<View, number>,
@@ -816,7 +818,8 @@ export function TimeView({
         </details>
         {!legacyAvailable ? <p role="status" className={s.provenance}>Legacy projects unavailable; national projects remain available.</p> : null}
         <p className={s.provenance}>
-          {national.available ? <>{national.drawn} confirmed national projects not yet in service included.
+          {national.available ? <>{national.drawn} located national projects not yet in service included
+            {national.candidates ? <> ({national.candidates} at candidate locations, not independently reviewed)</> : null}.
             {national.inService ? <> {national.inService} already in service are in <Link href="/history">History →</Link></> : null}
             {national.mode === "snapshot" ? " Committed snapshot mode." : ""}
             {national.truncated ? " National map limit reached; more records are available in the explorer." : ""}
@@ -923,7 +926,7 @@ export function TimeView({
             </button>
           </header>
           <p className={s.drawerNote}>
-            Legacy projects and confirmed national map points. Unlocated legacy projects are listed below.
+            Legacy projects and located national map points, confirmed or labeled candidates. Unlocated legacy projects are listed below.
             Other national records remain searchable in the national explorer.
           </p>
           <input
@@ -1077,7 +1080,8 @@ export function TimeView({
             <i className={s.gDim} /> Day gap of the selected pair
           </li>
           <li className={s.utils}>
-            {national.drawn > 0 ? <span><i style={{ background: "#88dbc1" }} /> National projects</span> : null}
+            {national.drawn > national.candidates ? <span><i style={{ background: "#88dbc1" }} /> National, confirmed location</span> : null}
+            {national.candidates > 0 ? <span><i style={{ background: CANDIDATE_COLOR }} /> National, candidate location</span> : null}
             <span>
               <i style={{ background: COLOR.DESC }} /> Dominion SC
             </span>

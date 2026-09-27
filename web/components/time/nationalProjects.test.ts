@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { nationalTimeProjects, stillPlanned } from "./nationalProjects";
+import { locationLabel, nationalTimeProjects, stillPlanned } from "./nationalProjects";
 import { epochYear, span } from "./timeScale";
 import type { NationalProject, NationalSource } from "../../lib/national/types";
 
@@ -14,16 +14,16 @@ const project: NationalProject = {
   location_review: "confirmed", evidence: { page: 2, sheet: null, row: 3, raw: {} },
 };
 
-test("national projection excludes legacy duplicates and unapproved or invalid points, preserving facts", () => {
+test("national projection keeps confirmed and labeled candidate points, drops legacy, rejected and invalid ones", () => {
   const source = { _id: "test-source", publisher: "Test publisher" } as NationalSource;
-  const rows = [project, { ...project, _id: "legacy:1" },
-    { ...project, _id: "test-national:2", location_review: "unreviewed" as const },
+  const candidate = { ...project, _id: "test-national:2", location_review: "unreviewed" as const };
+  const rows = [project, { ...project, _id: "legacy:1" }, candidate,
     { ...project, _id: "test-national:3", location_review: "rejected" as const },
+    { ...project, _id: "test-national:6", location_review: "needs_review" as const },
     { ...project, _id: "test-national:4", center: null },
     { ...project, _id: "test-national:5", center: { ...project.center!, lat: NaN } }];
   const result = nationalTimeProjects(rows, [source]);
-  assert.equal(result.length, 1);
-  assert.equal(result[0].key, project._id);
+  assert.deepEqual(result.map((r) => r.key), [project._id, candidate._id]);
   assert.deepEqual(result[0].in_service, { date: "2028-04", raw: "April 2028", precision: "month" });
   assert.equal(result[0].national?.project, project);
   assert.equal(result[0].national?.source, source);
@@ -53,4 +53,12 @@ test("records their publisher lists as in service go to History, not the plannin
   assert.equal(stillPlanned(built), false);
   // Legacy filings are plans by definition and always stay.
   assert.equal(stillPlanned({ ...planned, national: undefined }), true);
+});
+
+test("every drawn point says which location tier it is", () => {
+  assert.equal(locationLabel(project), "Location confirmed");
+  const unreviewed = { ...project, location_review: "unreviewed" as const };
+  assert.equal(locationLabel(unreviewed), "Candidate location, not independently reviewed");
+  assert.match(locationLabel({ ...unreviewed, location_candidate: { tier: "official" } } as NationalProject), /^Official source/);
+  assert.match(locationLabel({ ...unreviewed, location_candidate: { tier: "candidate_unique_name" } } as NationalProject), /name match only/);
 });

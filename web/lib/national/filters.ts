@@ -10,7 +10,7 @@ import type {
 export const DEFAULT_LIMIT = 50;
 export const MAX_LIMIT = 100;
 export const MAX_EXPORT = 2_000;
-export const MAX_MAP_POINTS = 2_000;
+export const MAX_MAP_POINTS = 3_000;
 export const MAX_DATASET_PROJECTS = 10_000;
 
 const CODE = {

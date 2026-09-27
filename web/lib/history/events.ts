@@ -53,6 +53,9 @@ export interface HistoryProject {
   /** The publisher's status text as stored (ISO-NE "In-service", PJM "IS"); a status, not an event date. */
   status: string | null;
   center: { lat: number; lon: number } | null;
+  /** National points only: an unreviewed official/candidate location (C25) and its display label. */
+  candidate?: boolean;
+  location?: string;
   events: HistoryEvent[];
   thread: Thread | null;
 }

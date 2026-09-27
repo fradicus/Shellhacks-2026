@@ -6,6 +6,7 @@ import Link from "next/link";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { intersects, milesBetween, type HistoryEvent, type HistoryProject, type Meaning } from "@/lib/history/events";
 import type { HistoryPayload } from "@/lib/history/server";
+import { CANDIDATE_COLOR } from "@/components/time/nationalProjects";
 import type { Emphasis, HistoryItem, HistoryLayer, LabelSpec, Projected } from "./historyLayer";
 import { Ledger, type LedgerYear } from "./Ledger";
 import s from "./history.module.css";
@@ -48,7 +49,7 @@ function when(e: HistoryEvent): string {
   return `${new Date(e.from * DAY_MS).getUTCFullYear()} · year only`;
 }
 const signed = (d: number) => `${d > 0 ? "+" : d < 0 ? "−" : ""}${Math.abs(d).toLocaleString("en-US")}`;
-const color = (p: HistoryProject) => COLOR[p.identity];
+const color = (p: HistoryProject) => (p.candidate ? CANDIDATE_COLOR : COLOR[p.identity]);
 
 function bearingDeg(a: { lat: number; lon: number }, b: { lat: number; lon: number }) {
   const r = Math.PI / 180;
@@ -879,7 +880,7 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
             ) : null}
             {national.available && national.unlocated ? (
               <p className={s.footnote}>
-                {national.unlocated.toLocaleString("en-US")} national records have no confirmed location and are not drawn.{" "}
+                {national.unlocated.toLocaleString("en-US")} national records have no located position and are not drawn.{" "}
                 <Link href="/explore">Search them in the explorer →</Link>
               </p>
             ) : null}
@@ -899,6 +900,7 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
               {project.source_title ?? project.source_id}
               {project.status ? <> · publisher status “{project.status}”</> : null}
             </p>
+            {project.location ? <p className={s.projMeta}>{project.location}</p> : null}
           </section>
           {project.thread ? (
             <div className={s.figure} data-late={project.thread.days > 0 ? "1" : "0"}>
@@ -968,7 +970,10 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
           </li>
           <li className={s.utils}>
             <span>
-              <i style={{ background: COLOR.national }} /> National
+              <i style={{ background: COLOR.national }} /> National, confirmed
+            </span>
+            <span>
+              <i style={{ background: CANDIDATE_COLOR }} /> National, candidate location
             </span>
             <span>
               <i style={{ background: COLOR.DESC }} /> Dominion SC
