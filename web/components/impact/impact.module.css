@@ -60,10 +60,36 @@
 .checklist legend { padding: 0 8px; }
 .checklist label { display: flex; align-items: start; gap: 10px; padding: 8px 0; }
 .research { color: var(--muted); font-size: 12px; padding-top: 22px; max-width: 900px; }
+.tabs { display: flex; gap: 4px; margin: 22px 0 0; border-bottom: 1px solid var(--border); }
+.tabs a { padding: 10px 16px; border: 1px solid transparent; border-bottom: none; border-radius: var(--radius) var(--radius) 0 0; color: var(--muted); text-decoration: none; font-weight: 600; }
+.tabs a[aria-current="page"] { color: var(--text); border-color: var(--border); background: var(--surface); margin-bottom: -1px; }
+.pointPicker { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 18px 0; }
+.pointPicker label { display: grid; gap: 6px; font-size: 13px; font-weight: 600; }
+.pointPicker input { width: 140px; min-height: 44px; font-family: var(--font-mono); }
+.siteGrid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; margin-top: 16px; align-items: start; }
+.siteCard { display: grid; gap: 10px; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-l); overflow-wrap: anywhere; }
+.evidenceList { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: var(--fs-s); }
+.evidenceList li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid var(--border); }
+.evidenceList button { flex-shrink: 0; font-size: 12px; padding: 4px 8px; min-height: 32px; }
+.taskGrid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 16px; margin-top: 20px; align-items: start; }
+.taskGrid .fields { padding: 0; }
+.taskGrid textarea { width: 100%; font-family: var(--font-mono); resize: vertical; }
+.shareGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 18px 0; }
+.shareGrid input { width: 100%; min-height: 44px; font-family: var(--font-mono); }
+.breakdown dd[data-negative="true"] { color: var(--warn); }
+.siteMapWrap { position: relative; margin: 18px 0 0; }
+.siteMap { height: 420px; border: 1px solid var(--border); border-radius: var(--radius-l); overflow: hidden; background: var(--surface-2); }
+.siteMapStatus { position: absolute; left: 12px; top: 12px; padding: 8px 12px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); font-size: 13px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 10px 0 0; padding: 0; list-style: none; font-size: 12px; color: var(--muted); }
+.legend li { display: flex; align-items: center; gap: 6px; }
+.legend i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; border: 1.5px solid #ffffff; box-shadow: 0 0 0 1px var(--border); }
+.legend i.legendRing { background: transparent; border: 2.5px solid #71717a; box-shadow: none; }
+.legend i.legendPicked { background: transparent; border: 3px solid #dc2626; box-shadow: none; }
 .printNotes, .printOnly { display: none; }
 @media (max-width: 850px) {
   .sectionHead { align-items: start; flex-direction: column; }
   .scenarios { grid-template-columns: 1fr; }
+  .siteGrid, .taskGrid { grid-template-columns: 1fr; }
   .result strong { font-size: 36px; }
 }
 @media (max-width: 540px) {
@@ -72,8 +98,12 @@
   .picker label { flex-basis: 100%; }
   .dates { align-items: stretch; }
   .dates label { width: 100%; }
+  .pointPicker input { width: 100%; }
+  .siteMap { height: 320px; }
+  .pointPicker label { flex-basis: 100%; }
 }
 @media print {
+  .siteMapWrap { display: none; }
   .hero { padding: 0 0 10px; }
   .hero h1 { font-size: 32px; }
   .section { padding: 12px 0; }

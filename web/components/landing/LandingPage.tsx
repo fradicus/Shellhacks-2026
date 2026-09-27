@@ -52,25 +52,29 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
           </section>
         </HeroStory>
 
-        <div className={s.proofStrip}>
-          <span>
-            GROUNDED IN
-            <br />
-            <b>PUBLIC UTILITY FILINGS</b>
-          </span>
-          <div>
-            Dominion Energy <span>South Carolina</span>
+        <section className={s.ctaBand} aria-labelledby="cta-band-title">
+          <div className={s.ctaBandCopy}>
+            <p className={s.eyebrow}>
+              <span className={s.statusDot} /> START WITH ONE CORRIDOR
+            </p>
+            <h2 id="cta-band-title">
+              Two plans, one region.
+              <br />
+              <span>See where they meet.</span>
+            </h2>
           </div>
-          <span className={s.plus} aria-hidden="true">
-            +
-          </span>
-          <div>
-            Georgia Power <span>Georgia</span>
+          <div className={s.ctaBandSide}>
+            <p>Pick a project pair, read the filings side by side, and bring the evidence to the next planning call.</p>
+            <div className={s.actions}>
+              <Link href="/time" className={s.primary}>
+                Open the overlaps map <Arrow />
+              </Link>
+              <Link href="/explore" className={s.secondary}>
+                Browse by state <span aria-hidden="true">↗</span>
+              </Link>
+            </div>
           </div>
-          <Link href="/coverage">
-            See the evidence <Arrow diagonal />
-          </Link>
-        </div>
+        </section>
 
         <section className={`${s.section} ${s.workflow}`} id="how-it-works" aria-labelledby="how-title">
           <div className={s.sectionHeading}>
@@ -257,6 +261,26 @@ export function LandingPage({ fixtureMode }: { fixtureMode: boolean }) {
           </Link>
           <p>Discover a lead. Check the evidence. Start a conversation.</p>
         </section>
+
+        <div className={s.proofStrip}>
+          <span>
+            GROUNDED IN
+            <br />
+            <b>PUBLIC UTILITY FILINGS</b>
+          </span>
+          <div>
+            Dominion Energy <span>South Carolina</span>
+          </div>
+          <span className={s.plus} aria-hidden="true">
+            +
+          </span>
+          <div>
+            Georgia Power <span>Georgia</span>
+          </div>
+          <Link href="/coverage">
+            See the evidence <Arrow diagonal />
+          </Link>
+        </div>
       </main>
       <footer className={s.footer}>
         <Link href="/" className={s.footerBrand}>

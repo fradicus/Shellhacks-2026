@@ -24,22 +24,24 @@ export function HeroStory({ children }: { children: ReactNode }) {
       let rect=element.getBoundingClientRect();
       if(autoplay && !document.hidden && element.dataset.animationPaused!=='true'){
         elapsed+=dt;
-        if(elapsed>1.2){
-          const travel=Math.max(1,rect.height-innerHeight+52);
-          // Same roads on arrival, one truck pass turns it into One network, then Common Ground.
-          const position=Math.min(travel+innerHeight*.55,(elapsed-1.2)*travel/12);
-          scrollTo({top:scrollY+rect.top-52+position,behavior:'instant'});
-          rect=element.getBoundingClientRect();
-          if(position>=travel+innerHeight*.55)autoplay=false;
-        }
+        const travel=Math.max(1,rect.height-innerHeight+52),exit=1+innerHeight*.55/travel;
+        // Paced so each line can be read: [seconds, story progress]. Same roads holds, the truck
+        // passes, One network holds, Common Ground fades in and holds, then the page moves on.
+        const stops=[[0,0],[3,.1],[8,.46],[11,.58],[13.5,.8],[17,1],[19,exit]];
+        let i=1;while(i<stops.length-1&&elapsed>stops[i][0])i++;
+        const [t0,p0]=stops[i-1],[t1,p1]=stops[i],k=Math.max(0,Math.min(1,(elapsed-t0)/(t1-t0)));
+        const position=travel*(p0+(p1-p0)*k*k*(3-2*k));
+        scrollTo({top:scrollY+rect.top-52+position,behavior:'instant'});
+        rect=element.getBoundingClientRect();
+        if(elapsed>=stops[stops.length-1][0])autoplay=false;
       }
       const target=reduced.matches?0:Math.max(0,Math.min(1,(52-rect.top)/Math.max(1,rect.height-innerHeight+52)));
       current+=(target-current)*(1-Math.exp(-12*dt));
       if(Math.abs(target-current)<.0001)current=target;
       const segment=(a:number,b:number)=>Math.max(0,Math.min(1,(current-a)/(b-a)));
       element.style.setProperty('--story-progress',String(current));
-      element.style.setProperty('--beat-two',String(1-segment(.56,.68)));
-      element.style.setProperty('--brand-reveal',String(segment(.64,.86)));
+      element.style.setProperty('--beat-two',String(1-segment(.58,.66)));
+      element.style.setProperty('--brand-reveal',String(segment(.64,.8)));
       if(autoplay || current!==target)frame=requestAnimationFrame(update);
     }
     function schedule(){if(!frame)frame=requestAnimationFrame(update);}

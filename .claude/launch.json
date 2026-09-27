@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web-fixture",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd web && DATA_MODE=fixture npx next start -p 3017"],
+      "port": 3017
+    }
+  ]
+}

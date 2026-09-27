@@ -27,14 +27,12 @@ export function HeroScene() {
         <p>Find the overlap. See what connects.</p>
       </div>
       <div className={s.brandReveal} aria-hidden="true">
-        <span className={s.brandHalo} />
         <span className={s.brandMark}>
           <i />
           <i />
         </span>
-        <strong data-text="Common Ground">Common Ground</strong>
+        <strong>Common Ground</strong>
         <p>Every mile. Connected.</p>
-        <span className={s.brandRule} />
       </div>
       <div className={`${s.scene} ${paused ? s.paused : ""}`}>
         <div className={s.roadLayer}>

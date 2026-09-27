@@ -104,7 +104,7 @@ function truck(xf,rot,mk,hd){
    ctx.strokeStyle='rgba(255,255,255,.09)';ctx.setLineDash([48,100]);ctx.lineDashOffset=t*30;
    ctx.beginPath();ctx.moveTo(0,roadY+30);ctx.lineTo(W,roadY+30);ctx.stroke();ctx.setLineDash([]);
    // Same roads waits on arrival; one drive-by covers it and leaves One network in its wake.
-   const xf=reduced.matches?(W<700?(W-L)*.5:W-L-W*.04):W+60+(-L-80-W-60)*smooth(seg(.06,.5));
+   const xf=reduced.matches?(W<700?(W-L)*.5:W-L-W*.04):W+60+(-L-80-W-60)*smooth(seg(.1,.46));
    if(story){
      story.style.setProperty('--wipe-one',`${(1-clamp(xf/W))*100}%`);
      story.style.setProperty('--wipe-two',`${clamp((xf+L)/W)*100}%`);
