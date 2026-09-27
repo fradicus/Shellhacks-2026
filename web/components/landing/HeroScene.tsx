@@ -35,7 +35,7 @@ export function HeroScene() {
         <strong>Common Ground</strong>
         <p>Every mile. Connected.</p>
         <Link href="/time" className={s.brandExplore} aria-label="Explore nearby projects">
-          <span>Explore</span>
+          <span>Explore nearby projects</span>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -45,11 +45,6 @@ export function HeroScene() {
         <div className={s.roadLayer}>
           <Road paused={paused} />
         </div>
-      </div>
-      <div className={s.sceneCaption}>
-        <span className={s.statusDot} />
-        Same roads. One network.
-        <span>Illustrative animation</span>
       </div>
       <button
         className={s.pause}
