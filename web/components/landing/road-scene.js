@@ -1,21 +1,24 @@
 /** Truck artwork adapted from the user-supplied GridBridge_updated.html.
  * Decorative illustration only; no operational fleet data is represented.
  * @param {HTMLCanvasElement} cv
- * @param {boolean} paused
+ * @param {boolean | (() => boolean)} paused
  * @returns {() => void}
  */
 export function startRoadScene(cv, paused) {
  const ctx = cv.getContext("2d");
  if (!ctx) return () => {};
- const DISP = '"Public Sans", sans-serif';
+ const brand = document.querySelector("header a span");
+ const DISP = brand ? getComputedStyle(brand).fontFamily : '"Arial Narrow", sans-serif';
  const clamp = (v, a=0, b=1) => Math.max(a, Math.min(b, v));
  let W=1,H=1,DPR=1,L=1,roadY=1,frameId=0,visible=true,disposed=false;
+ let elapsed=0,last=performance.now();
+ const story=cv.closest("[data-gridbridge-story]");
  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
  const motes=Array.from({length:50},(_,i)=>({x:(i*.618)%1,y:(i*.371)%1,v:.2+(i%5)*.1,r:.6+(i%3)*.3,p:i}));
  function resize() {
    const box=cv.getBoundingClientRect(); W=box.width; H=box.height;
    DPR=Math.min(2,devicePixelRatio||1); cv.width=Math.round(W*DPR); cv.height=Math.round(H*DPR);
-   L=W<700?W*.95:Math.min(W*.59,900); roadY=H*.83;
+   L=W<700?W*.88:Math.min(W*.72,1080); roadY=H*.76;
    render(performance.now());
  }
 function beam(xf,h,t){
@@ -57,13 +60,22 @@ function truck(xf,rot,mk,hd){
   ctx.fillStyle='#1E1F23';ctx.fillRect(-.003,-.082,.038,.028);ctx.fillStyle=`rgba(255,255,255,${.12+.3*hd})`;ctx.fillRect(-.003,-.082,.038,.002);
   ctx.fillStyle='#0C0C0E';ctx.fillRect(.012,-.158,.007,.074);
   g=ctx.createLinearGradient(.237,0,.245,0);g.addColorStop(0,'#2A2B30');g.addColorStop(.5,'#8E9097');g.addColorStop(1,'#1E1F23');ctx.fillStyle=g;ctx.fillRect(.237,-.365,.007,.185);
-  ctx.fillStyle='#000';ctx.beginPath();ctx.arc(.085,-.052,.061,Math.PI,0);ctx.fill();
-  [.085,.262,.318,.872,.932].forEach(x=>wheel(x,.05,rot));
+  ctx.fillStyle='#000';ctx.beginPath();ctx.arc(.085,-.044,.054,Math.PI,0);ctx.fill();
+  // Tires have positive clearance: axle spacing exceeds the sum of tire radii.
+  wheel(.085,.044,rot);
+  [.254,.332,.855,.937].forEach(x=>wheel(x,.032,rot));
   ctx.fillStyle=hd>0?`rgba(255,250,238,${.3+.7*hd})`:'#1E1F23';ctx.fillRect(.012,-.123,.012,.016);
   ctx.fillStyle=`rgba(255,59,48,${.3+.7*mk})`;ctx.fillRect(.994,-.117,.006,.018);
   ctx.restore();
-  // wordmark on trailer (screen space, so it stays crisp)
-  ctx.save();ctx.font=`600 ${L*.05}px ${DISP}`;ctx.fillStyle=`rgba(245,245,247,${.07+.08*hd})`;ctx.fillText('GridBridge',xf+L*.56,roadY-L*.175);ctx.restore();
+  // Use the application's overlapping utility mark and condensed uppercase wordmark.
+  ctx.save();
+  const logoX=xf+L*.46,logoY=roadY-L*.197,r=L*.018;
+  ctx.lineWidth=L*.0023;
+  ctx.strokeStyle='#5cc8ff';ctx.beginPath();ctx.arc(logoX-L*.009,logoY,r,0,Math.PI*2);ctx.stroke();
+  ctx.strokeStyle='#ffae42';ctx.beginPath();ctx.arc(logoX+L*.009,logoY,r,0,Math.PI*2);ctx.stroke();
+  ctx.fillStyle='#f4efe6';ctx.beginPath();ctx.arc(logoX,logoY,L*.003,0,Math.PI*2);ctx.fill();
+  ctx.font=`800 ${L*.052}px ${DISP}`;ctx.textBaseline='middle';ctx.letterSpacing=`${L*.003}px`;
+  ctx.fillStyle='rgba(244,239,230,.86)';ctx.fillText('GRIDBRIDGE',xf+L*.51,logoY,L*.40);ctx.restore();
   // marker lights
   const mks=[];for(let i=0;i<5;i++)mks.push([.168+i*.015,-.29]);for(let x=.34;x<1;x+=.109)mks.push([x,-.306]);
   ctx.save();ctx.globalCompositeOperation='lighter';
@@ -76,7 +88,17 @@ function truck(xf,rot,mk,hd){
 
  function render(now) {
    if(disposed) return;
-   const t=reduced.matches||paused?0:now/1000;
+   const dt=Math.min(.05,Math.max(0,(now-last)/1000));last=now;
+   if(!(typeof paused === "function" ? paused() : paused)&&!reduced.matches)elapsed+=dt;
+   const t=elapsed;
+   const reveal=reduced.matches?1:clamp((t-.8)/1.6);
+   const ease=reveal*reveal*(3-2*reveal);
+   const introL=Math.min(W*.84,1100),finalL=W<700?W*.88:Math.min(W*.55,860);
+   L=introL+(finalL-introL)*ease;
+   const p=reduced.matches?0:Number(story?.style.getPropertyValue('--story-progress')||0);
+   const seg=(a,b)=>clamp((p-a)/(b-a));
+   const smooth=x=>x*x*(3-2*x);
+   roadY=H*(.65+.16*ease-.12*smooth(seg(.02,.14)));
    ctx.setTransform(DPR,0,0,DPR,0,0); ctx.clearRect(0,0,W,H);
    const road=ctx.createLinearGradient(0,roadY,0,H);
    road.addColorStop(0,'#111114'); road.addColorStop(1,'#000');
@@ -84,10 +106,20 @@ function truck(xf,rot,mk,hd){
    ctx.strokeStyle='rgba(255,226,176,.12)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,roadY);ctx.lineTo(W,roadY);ctx.stroke();
    ctx.strokeStyle='rgba(255,255,255,.09)';ctx.setLineDash([48,100]);ctx.lineDashOffset=t*30;
    ctx.beginPath();ctx.moveTo(0,roadY+30);ctx.lineTo(W,roadY+30);ctx.stroke();ctx.setLineDash([]);
-   const xf=W<700?W*.11:W*.48;
-   beam(xf,1,t); truck(xf,-t*.12,1,1);
+   const startX=(W-L)*.5,endX=W<700?(W-L)*.5:W-L-W*.04;
+   let xf=startX+(endX-startX)*ease;
+   if(p>=.04 && p<.28)xf=endX+(-L-80-endX)*smooth(seg(.04,.28));
+   else if(p>=.28 && p<.34)xf=-L-80;
+   else if(p>=.34 && p<.58)xf=W+60+(-L-80-W-60)*smooth(seg(.34,.58));
+   else if(p>=.58)xf=-L-80;
+   if(story){
+     const edge=`${clamp((xf+L)/W)*100}%`;
+     story.style.setProperty('--wipe-one',p<.04?'100%':p<.28?edge:'0%');
+     story.style.setProperty('--wipe-two',p<.34?'100%':p<.58?edge:'0%');
+   }
+   beam(xf,1,t); truck(xf,xf/(L*.032),1,1);
  }
- function tick(now) { frameId=0; if(disposed||!visible||document.hidden) return;render(now);if(!reduced.matches&&!paused)frameId=requestAnimationFrame(tick); }
+ function tick(now) { frameId=0; if(disposed||!visible||document.hidden) return;render(now);if(!reduced.matches)frameId=requestAnimationFrame(tick); }
  function schedule() {cancelAnimationFrame(frameId);frameId=requestAnimationFrame(tick);}
  const observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;schedule();});observer.observe(cv);
  const resizeObserver=new ResizeObserver(resize);resizeObserver.observe(cv);

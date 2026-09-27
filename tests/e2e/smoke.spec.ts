@@ -38,11 +38,7 @@ test("every navigation route returns 200 and renders without console errors", as
     expect((await page.goto(href!))?.status(), href!).toBe(200);
     await expect(page.getByRole("main")).toBeVisible();
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    if (href === "/") {
-      await expect(page.getByRole("link", { name: "Launch explorer", exact: true })).toHaveAttribute("href", "/time");
-    } else {
-      await expect(page.getByRole("navigation", { name: "Main" }).locator('[aria-current="page"]')).toHaveCount(1);
-    }
+    await expect(page.getByRole("navigation", { name: "Main" }).locator('[aria-current="page"]')).toHaveCount(1);
   }
 });
 

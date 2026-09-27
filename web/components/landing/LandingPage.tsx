@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HeroStory } from "./HeroStory";
 import { HeroScene } from "./HeroScene";
 import { NetworkIllustration } from "./NetworkIllustration";
 import s from "./landing.module.css";
@@ -10,6 +11,7 @@ export function Arrow({diagonal=false}:{diagonal?:boolean}) {
 export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
   return <div className={s.landing}>
     <main className={s.main} id="main-content">
+      <HeroStory>
       <section className={s.hero} aria-labelledby="hero-title">
         <div className={s.heroContent}>
           <p className={s.eyebrow}><span className={s.statusDot}/> TRANSMISSION INTELLIGENCE, CONNECTED</p>
@@ -24,6 +26,7 @@ export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
         <HeroScene/>
         <a href="#how-it-works" className={s.scrollHint}>SCROLL TO CONNECT <span aria-hidden="true">↓</span></a>
       </section>
+      </HeroStory>
 
       <div className={s.proofStrip}>
         <span>GROUNDED IN<br/><b>PUBLIC UTILITY FILINGS</b></span>
