@@ -189,7 +189,8 @@ test("landing controls work and the explorer returns to a working landing page",
   const network = page.getByRole("button", { name: "02 The network", exact: true });
   await network.click();
   await expect(network).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByText("One region. More possibilities.", { exact: true })).toBeVisible();
+  // Caption div also holds an "Illustrative animation" span, so exact element text never matches.
+  await expect(page.getByText("One region. More possibilities.")).toBeVisible();
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("link", { name: "Explore the overlaps", exact: true }).click();
