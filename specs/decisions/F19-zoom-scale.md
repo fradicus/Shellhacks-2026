@@ -20,3 +20,7 @@ selected pair's top so its day gap can fill the room; `room` is 75% of the canva
 every zoom at about 21 px/yr on a 17-year national axis, so zooming in never grew the pillars.
 
 **Undo.** Pass a constant to `yearPxAt` in `timeLayer.ts` and restore the `SceneControls` slider props in `TimeView`.
+
+## Revision (2026-09-27)
+The base is 12 px at zoom 3.5 (was 20), for the quiet overview ([F19-quiet-overview](F19-quiet-overview.md)). The
+√2-per-level growth, room cap and 8 px floor are unchanged.

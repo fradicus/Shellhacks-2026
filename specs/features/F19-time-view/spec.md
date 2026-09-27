@@ -179,3 +179,21 @@ The user selected provisional straight-line circles. Implement the scoped, paged
 national candidate list and existing map selection under
 [F19 national candidates](../../decisions/F19-national-candidates.md). Keep the
 legacy pair views accessible as a separate choice and load evidence on selection.
+
+## Quiet overview (2026-09-27)
+
+Decision: [F19 quiet overview](../../decisions/F19-quiet-overview.md). Amends item 9 (glow) and the zoom scale.
+
+24. **Quiet at national zoom.** With no scope, an unfocused point is drawn at `calmAt(zoom)`: 0.25 at zoom 2.5 and
+    out, 0.4 at 4.2, 1 from 6.5 in. Its stem's brightness and width scale with it, its dot and ground ring fade
+    less, and its halos are off until 0.4 and full at 1. Hovered, selected, related and previewed points, and every
+    point in a scope, are fully lit. Nothing is hidden, and no date, height, tier or color changes.
+25. **Bright entrance, quiet rest.** The intro sweep is drawn fully lit; when it ends the overview settles to its
+    quiet level over 1.2 s.
+26. **Shorter, flatter overview.** A year is 12 px at zoom 3.5 (was 20), still ×√2 per zoom level and capped by
+    the room, so scoped and pair views keep their heights. The overview tilt is 50° (was 58°); a pair stays at 66°.
+
+### Validation (quiet overview)
+- `node --import ./tests/web/operations-providers/loader.mjs --test web/components/time/timeScale.test.ts`
+  (`yearPxAt` at 12 px, the `calmAt` ramp).
+- Screenshots on live data: overview at 1900×910 after the settle, Texas scope at 1440, phone at 390.

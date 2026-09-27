@@ -6,7 +6,7 @@ import { LineMaterial } from "three/examples/jsm/lines/LineMaterial.js";
 import { LineSegments2 } from "three/examples/jsm/lines/LineSegments2.js";
 import { LineSegmentsGeometry } from "three/examples/jsm/lines/LineSegmentsGeometry.js";
 import type { CustomLayerInterface, CustomRenderMethodInput, Map as MlMap } from "maplibre-gl";
-import { metersPerPixel, yearPxAt, type Span } from "./timeScale";
+import { calmAt, metersPerPixel, yearPxAt, type Span } from "./timeScale";
 import { hex, mul, ease, points, fillPoints, lines, fillLines, project, createRenderer, disposeScene, type RGB, type Seg } from "./scenePrimitives";
 
 type Ml = typeof import("maplibre-gl");
@@ -32,6 +32,8 @@ export interface Focus {
   dimension: { a: string; b: string } | null;
   /** Where the time ruler stands. */
   ruler: { lng: number; lat: number };
+  /** No scope: unfocused points go quiet at national zoom (thin, dim stems, no halos). */
+  quiet: boolean;
 }
 export interface LabelSpec {
   id: string;
@@ -179,6 +181,16 @@ export function createTimeLayer(
   let rules: { a: [number, number, number]; b?: [number, number, number]; start: number } | null = null;
   // Last frame's screen geometry for picking: pillar foot and top per item.
   let hits: { key: string; x0: number; y0: number; x1: number; y1: number }[] = [];
+  // Brightness of unfocused points (calmAt), and when the post-sweep settle into it began.
+  let calm = 1;
+  let settle: number | null = null;
+  const calmNow = (now: number) => {
+    if (!map || !focus?.quiet || sweepAnim) return 1;
+    const t = settle === null ? 1 : Math.min((now - settle) / 1200, 1);
+    if (t >= 1) settle = null;
+    // Quantized, so zooming rebuilds a few dozen times rather than every frame.
+    return Math.round((1 + (calmAt(map.getZoom()) - 1) * ease(t)) * 40) / 40;
+  };
 
   const links = lines(1.2);
   const linksHot = lines(2.2);
@@ -254,9 +266,13 @@ export function createTimeLayer(
       const full = topOf(it.span);
       // Scrubber: anything filed after the chosen date is a ghost.
       const k = BRIGHT[e] * (asOf !== null && it.span.kind !== "unknown" && full > asOf ? GHOST : 1);
-      rings.push({ p: [x, y, 0], c, size: e === "dim" ? 8 : e === "sel" ? 20 : 11, shape: 1, bright: k * 0.8 });
-      if (it.ringed) rings.push({ p: [x, y, 0], c, size: e === "dim" ? 15 : e === "sel" ? 36 : 20, shape: 1, bright: k * 0.6 });
-      if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 46 : 20, shape: 3, bright: k * 0.16 });
+      // Quiet overview: an unfocused point is a dim stem (q) with a smaller-dimmed dot (dot) and no halo (lit).
+      const q = e === "normal" ? calm : 1;
+      const dot = 0.35 + 0.65 * q;
+      const lit = e === "normal" ? Math.max(0, (calm - 0.4) / 0.6) : 1;
+      rings.push({ p: [x, y, 0], c, size: e === "dim" ? 8 : e === "sel" ? 20 : 11, shape: 1, bright: k * 0.8 * dot });
+      if (it.ringed) rings.push({ p: [x, y, 0], c, size: e === "dim" ? 15 : e === "sel" ? 36 : 20, shape: 1, bright: k * 0.6 * dot });
+      if (e !== "dim" && k > GHOST && lit > 0) glow.push({ p: [x, y, 0], c, size: e === "sel" ? 46 : 20, shape: 3, bright: k * 0.16 * lit });
       if (it.span.kind === "unknown") continue;
       dated++;
       // Sweep: the pillar grows to min(date, sweep); its bead appears, with a flash, once the sweep passes it.
@@ -271,8 +287,8 @@ export function createTimeLayer(
       const beamSeg = ([z0, z1]: [number, number]): Seg => ({
         a: [x, y, z0],
         b: [x, y, z1],
-        ca: mul(c, (0.05 + (0.45 * z0) / Math.max(top, 1e-6)) * k),
-        cb: mul(c, (0.05 + (0.45 * z1) / Math.max(top, 1e-6)) * k),
+        ca: mul(c, (0.05 + (0.45 * z0) / Math.max(top, 1e-6)) * k * q),
+        cb: mul(c, (0.05 + (0.45 * z1) / Math.max(top, 1e-6)) * k * q),
       });
       if (e === "sel") {
         // A selected pillar is one bright, wide beam drawn above the glass, so it reads through it.
@@ -283,18 +299,18 @@ export function createTimeLayer(
       }
       if (it.span.kind === "exact") {
         if (!reached) continue;
-        (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: it.outline ? 1 : 0, bright: k * (1 + 1.1 * flash) });
-        if (it.ringed) (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * 2, shape: 1, bright: k * 0.8 });
-        if (e !== "dim" && k > GHOST) glow.push({ p: [x, y, top], c, size: SIZE[e] * (3.2 + 2.2 * flash), shape: 3, bright: k * (0.55 + 0.9 * flash) });
+        (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * (1 + 0.7 * flash), shape: it.outline ? 1 : 0, bright: k * (1 + 1.1 * flash) * dot });
+        if (it.ringed) (top >= zt ? beads.a : beads.b).push({ p: [x, y, top], c, size: SIZE[e] * 2, shape: 1, bright: k * 0.8 * dot });
+        if (e !== "dim" && k > GHOST && lit > 0) glow.push({ p: [x, y, top], c, size: SIZE[e] * (3.2 + 2.2 * flash), shape: 3, bright: k * (0.55 + 0.9 * flash) * lit });
       } else {
         // A month or year: frosted column over the whole span, with rings at both ends. No day is picked.
         if (sweep < it.span.from / 365.25) continue;
         const col = split(it.span.from / 365.25, top, zt);
-        const colSeg = ([z0, z1]: [number, number]): Seg => ({ a: [x, y, z0], b: [x, y, z1], ca: mul(c, 0.32 * k), cb: mul(c, 0.32 * k) });
+        const colSeg = ([z0, z1]: [number, number]): Seg => ({ a: [x, y, z0], b: [x, y, z1], ca: mul(c, 0.32 * k * q), cb: mul(c, 0.32 * k * q) });
         if (col.below) segs.rb.push(colSeg(col.below));
         if (col.above) segs.ra.push(colSeg(col.above));
         for (const z of [it.span.from / 365.25, top])
-          if (z <= sweep) (z >= zt ? beads.a : beads.b).push({ p: [x, y, z], c, size: SIZE[e] * 0.9, shape: 1, bright: k });
+          if (z <= sweep) (z >= zt ? beads.a : beads.b).push({ p: [x, y, z], c, size: SIZE[e] * 0.9, shape: 1, bright: k * dot });
       }
     }
     fillLines(pillarsBelow, segs.pb);
@@ -414,17 +430,25 @@ export function createTimeLayer(
         sweep = t >= 1 ? Infinity : t * sweepAnim.to;
         if (t >= 1) {
           sweepAnim = null;
+          settle = now;
           opts.onSweep?.(null);
         }
         rebuild();
       }
+      const c = calmNow(now);
+      if (c !== calm) {
+        calm = c;
+        rebuild();
+      }
+      if (settle !== null) map.triggerRepaint();
       const w = gl.drawingBufferWidth;
       const h = gl.drawingBufferHeight;
       const dpr = w / Math.max(map.getCanvas().clientWidth, 1);
       for (const l of allLines) {
         const mat = l.mesh.material as LineMaterial;
         mat.resolution.set(w, h);
-        mat.linewidth = l.width * dpr;
+        // Unfocused stems thin out with the quiet overview; selected pillars (pillarsSel) keep their width.
+        mat.linewidth = l.width * dpr * (l === pillarsBelow || l === pillarsAbove ? 0.5 + 0.5 * calm : 1);
         mat.dashSize = 6 * dpr;
         mat.gapSize = 5 * dpr;
       }

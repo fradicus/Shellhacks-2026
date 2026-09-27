@@ -71,10 +71,20 @@ export function metersPerPixel(lat: number, zoom: number): number {
 
 /** Screen pixels per year at a map zoom. Each zoom level doubles the ground spread and multiplies height by √2, so a
  * continent reads as short stubs and a pair as tall columns. Capped so `years` fit in `room` px; floored so a year
- * never vanishes. Tuned by eye: 20 px at zoom 3.5 (the national overview). */
+ * never vanishes. Tuned by eye: 12 px at zoom 3.5 (the national overview), low enough that the pillars don't wall off
+ * the map. */
 export function yearPxAt(zoom: number, years: number, room: number): number {
-  const grown = 20 * 2 ** (0.5 * (zoom - 3.5));
+  const grown = 12 * 2 ** (0.5 * (zoom - 3.5));
   return Math.max(8, Math.min(room / Math.max(years, 1), grown));
+}
+
+/**
+ * How lit an unfocused point is: 1 from regional zoom (6.5) in, 0.4 at zoom 4.2, and 0.25 at zoom 2.5 and out,
+ * where a phone fits the whole country in a few hundred pixels and overlapping marks would add up to white.
+ */
+export function calmAt(zoom: number): number {
+  const clamp = (x: number) => Math.min(1, Math.max(0, x));
+  return zoom >= 4.2 ? 0.4 + 0.6 * clamp((zoom - 4.2) / 2.3) : 0.25 + 0.15 * clamp((zoom - 2.5) / 1.7);
 }
 
 export const fmtDays = (d: number) => `${d.toLocaleString("en-US")} day${d === 1 ? "" : "s"}`;
