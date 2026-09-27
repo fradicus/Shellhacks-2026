@@ -40,6 +40,17 @@ OPERATOR_KEYS = spp.OPERATOR_KEYS | {
 }
 
 
+# Xcel names its SPS sites "Potter County Interchange", "TUCO Interchange"; SPP's workbook says "Potter County", "TUCO".
+# Aliases come only from the OSM name itself and only where OSM names SPS/Xcel as operator.
+SPS_SUFFIX = re.compile(r"^(.+?) (?:Interchange|Switching Station|Switchyard)$", re.I)
+
+
+def with_aliases(facilities: list[dict]) -> list[dict]:
+    return facilities + [f | {"name": m[1], "norm": m[1].upper(), "osm_name": f["name"]} for f in facilities
+                         if (m := SPS_SUFFIX.match(f["name"]))
+                         and any(k in (f.get("operator") or "").upper() for k in OPERATOR_KEYS["SPS"])]
+
+
 def published_uids(root: Path = REPO_ROOT) -> set[str]:
     return {p["native_id"] for path, fragment in PUBLISHED if (root / path).exists()
             for p in load_json(root / path) if fragment in p["source_id"]}
@@ -100,7 +111,9 @@ def fetch(cache: Path) -> None:
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
     manifest = verify_cache(cache, [spp.ZIP, *osm_files])
-    facilities = {s: osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s) for s in STATES}
+    facilities = {s: with_aliases(osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s))
+                  for s in STATES}
+    osm_names = {(f["id"], f["name"]): f["osm_name"] for fs in facilities.values() for f in fs if "osm_name" in f}
     artifact = manifest[spp.ZIP]
     taken = published_uids()
     projects, dispositions = [], []
@@ -115,6 +128,10 @@ def build(cache: Path) -> dict[Path, object]:
             dispositions.append(where | {"disposition": "excluded", "reason": reason})
             continue
         record = project(row, artifact, facilities)
+        for e in record["location_candidate"]["endpoints"]:  # an alias match still cites the OSM feature's own name
+            if (f := e.get("facility")) and (f["id"], f["name"]) in osm_names:
+                f["osm_name"] = osm_names[(f["id"], f["name"])]
+                record["center"]["evidence"] += f" OSM {f['id']} is named “{f['osm_name']}”; “{f['name']}” is its alias."
         projects.append(record)
         dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
                                      "location": record["location_candidate"]["tier"] or "unlocated"})

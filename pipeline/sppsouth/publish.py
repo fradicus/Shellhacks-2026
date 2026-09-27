@@ -17,7 +17,7 @@ from midwest.publish import _check_center, counts
 
 FOLDER = Path("data/sppsouth")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "sppsouth-spp-candidates-1"
+RELEASE_ID = "sppsouth-spp-candidates-2"
 FIPS = {"40", "35", "48"}  # OK, NM, TX
 
 
