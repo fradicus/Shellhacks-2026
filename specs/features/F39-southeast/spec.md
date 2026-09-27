@@ -22,6 +22,13 @@ The evidence, location, history, source-safety and visible-publication requireme
 transfer F38 ownership, its New England cohort, or its bounded-run deadline. This user requested no deadline or
 budget: checkpoint and resume until the full Southeast acceptance criteria hold. Root STOP and main-red gates apply.
 
+## C45 amendment (2026-09-27)
+
+[C45](../../decisions/C45-southeast-density.md) supersedes, for new batches in the fixed dense release only, the
+independent location review and the additive-contract requirement below. Those batches use C33's labeled tiers with
+C38's operator guard, stay `unreviewed`, and never count as verified. Everything else here, including row
+dispositions, source locators, unknowns kept null and new IDs only, still applies. The C27 release is unchanged.
+
 ## Plan
 
 1. Record source/provider coverage for every state, including investor-owned, municipal, cooperative and federal
