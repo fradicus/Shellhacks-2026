@@ -53,6 +53,8 @@ export default async function TimePage({ searchParams }: { searchParams: Promise
     a: m.a,
     b: m.b,
     distance_mi: m.distance_mi,
+    drive_mi: m.drive_mi ?? null,
+    route: m.route?.polyline ? { polyline: m.route.polyline, start: m.route.start ?? null, end: m.route.end ?? null } : null,
     time_gap_days: m.time_gap_days,
     band: m.band,
     view: m.view,
