@@ -12,7 +12,7 @@ Use Paperclip, local Claude Code + Codex, or both with separate feature assignme
 3. Only facts from the spec, the read-only inputs named in `specs/tech-stack.md`, and cited public sources count. Anything else (old plans, chat) is background, never authority.
 
 ## Repo-wide checks
-Run every command in the **Checks** section of `specs/tech-stack.md` before marking any PR ready, and paste the results.
+Follow the change-scoped **Checks** section of `specs/tech-stack.md` before marking a PR ready, and paste results or link successful CI for the exact revision. Docs-only PRs use the fast checks; code/data/config changes retain full validation. Do not duplicate successful CI with another full local run.
 Then review your diff (`git diff origin/main --stat`): no secrets, no `.env`, nothing in read-only paths, nothing outside your feature's `owns`.
 
 ## Never

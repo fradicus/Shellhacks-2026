@@ -13,7 +13,7 @@ time; don't upgrade during the run. New dependencies only via a `[C<n>]` contrac
 | Map | `maplibre-gl` + OpenFreeMap tiles (no key). An accessible table must work if tiles fail |
 | AI | Gemini via `google-genai`, **pipeline only** (batch). Model id in `GEMINI_MODEL`; the exact id, prompt version and schema version are stored with every output. The public site shows stored results; it never calls Gemini |
 | Tests | `pytest` (pipeline, golden), `next build` + `tsc` (web), Playwright smoke (`tests/e2e`, non-blocking job) |
-| CI | GitHub Actions: required check **`ci`** (ruff, pytest, lint, typecheck, build, ownership) and `load` (Atlas upsert from `main`) |
+| CI | GitHub Actions: required check **`ci`** (spec/ownership checks; parallel Python/web validation for full changes) and `load` (Atlas upsert from `main`) |
 | Hosting | Vercel project, root `web/`, production deploys from `main`, previews per PR |
 
 ## Repository layout (created by F00; the ownership globs in the feature specs refer to it)
@@ -34,14 +34,42 @@ web/app/<route>/, web/components/<feature>/, web/app/api/<route>/   one owner ea
 reports/ release/ submission/    lane C
 ```
 
-## Checks (every PR, from the repo root; referenced by AGENTS.md)
+## Checks (change-scoped; referenced by AGENTS.md)
+
+[C36](decisions/C36-fast-ci.md) replaces the full-suite requirement for every PR.
+Run focused checks while editing. Before ready/merge, either run the applicable
+commands below locally or link successful GitHub CI for the **exact PR revision**.
+Successful CI is sufficient; do not repeat the full suite locally. Report failures
+and optional browser job results honestly. Feature-specific acceptance still applies.
+
+Classify the complete PR diff (commit changes first):
 ```bash
-(cd pipeline && uv run ruff check . && uv run pytest -q)          # includes the golden test
-(cd web && npm run lint && npm run typecheck && DATA_MODE=fixture npm run build)
+python3 scripts/ci_scope.py --base origin/main
+```
+Only root README/agent instructions and Markdown under `specs/`, `reports/`, or
+`changes/` qualify as `docs`. Everything else, including mixed diffs and empty diffs,
+requires `full`. Renames check both paths; a failed classification blocks validation.
+
+For **every PR**, including docs:
+```bash
+python3 -m unittest discover -s tests/golden -p test_ci_scope.py
 python3 scripts/check_ownership.py --lint-specs
 python3 scripts/check_ownership.py --title "<your PR title>" --base origin/main
+(cd pipeline && uv run pytest ../tests/golden/test_ownership.py -q)
 ```
-Before F00 merges, only F00 runs, and it creates these tools.
+For **full** changes, also run (Python and web may run concurrently):
+```bash
+(cd pipeline && uv run ruff check . && uv run pytest -q --durations=10)
+(cd web && npm run lint && npm run typecheck && DATA_MODE=fixture npm run build)
+```
+CI additionally preserves the existing national, assistant and operations Node
+checks and optional browser suites. Required `ci` aggregates the applicable jobs;
+failed/cancelled prerequisites cannot pass. Main pushes always run full checks.
+
+After edits or a rebase, classify and validate the new revision. Keep a passing
+revision stable while CI finishes; rebase for conflicts, required branch protection,
+or a known integration dependency rather than continuously chasing unrelated merges.
+Before merge, inspect the diff for secrets, read-only paths and ownership violations.
 
 ## Read-only inputs
 `docs/` (sponsor originals) and `plans/` (historical plans A–E). Never edit them.
