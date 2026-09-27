@@ -12,6 +12,7 @@ import { Ledger, type LedgerYear } from "./Ledger";
 import s from "./history.module.css";
 import { bearing as bearingDeg } from "@/components/time/sceneCamera";
 import { SceneControls } from "@/components/time/SceneControls";
+import { LegendFold } from "@/components/time/LegendFold";
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 // Identity colours exactly as on /time: the utilities, and the national records.
@@ -958,43 +959,45 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
       ) : null}
 
       <section className={s.dock} aria-label="Legend and controls">
-        <ul className={s.legend}>
-          <li>
-            <i className={s.glyph} data-m="actual" /> Actual in-service date, documented
-          </li>
-          <li>
-            <i className={s.glyph} data-m="plan" /> Plan date: projected, required, revised, filed
-          </li>
-          <li>
-            <i className={s.glyph} data-m="other" /> Other documented event
-          </li>
-          <li>
-            <i className={s.gThread} /> Plan → actual, two documented dates
-          </li>
-          <li>
-            <i className={s.gPlane} /> Year plane · above it, ghosted
-          </li>
-          <li className={s.utils}>
-            <span>
-              <i style={{ background: TIER_COLOR.confirmed }} /> National, confirmed
-            </span>
-            <span>
-              <i style={{ background: TIER_COLOR.official }} /> Owner-published
-            </span>
-            <span>
-              <i style={{ background: TIER_COLOR.tentative }} /> Tentative
-            </span>
-            <span>
-              <i style={{ background: COLOR.DESC }} /> Dominion SC
-            </span>
-            <span>
-              <i style={{ background: COLOR.GPC }} /> Georgia Power
-            </span>
-          </li>
-        </ul>
+        <LegendFold styles={s}>
+          <ul className={s.legend}>
+            <li>
+              <i className={s.glyph} data-m="actual" /> Actual in-service date, documented
+            </li>
+            <li>
+              <i className={s.glyph} data-m="plan" /> Plan date: projected, required, revised, filed
+            </li>
+            <li>
+              <i className={s.glyph} data-m="other" /> Other documented event
+            </li>
+            <li>
+              <i className={s.gThread} /> Plan → actual, two documented dates
+            </li>
+            <li>
+              <i className={s.gPlane} /> Year plane · above it, ghosted
+            </li>
+            <li className={s.utils}>
+              <span>
+                <i style={{ background: TIER_COLOR.confirmed }} /> National, confirmed
+              </span>
+              <span>
+                <i style={{ background: TIER_COLOR.official }} /> Owner-published
+              </span>
+              <span>
+                <i style={{ background: TIER_COLOR.tentative }} /> Tentative
+              </span>
+              <span>
+                <i style={{ background: COLOR.DESC }} /> Dominion SC
+              </span>
+              <span>
+                <i style={{ background: COLOR.GPC }} /> Georgia Power
+              </span>
+            </li>
+          </ul>
+          <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through projects · Esc clears</p>
+        </LegendFold>
         <SceneControls styles={s} flat={flat} onFlat={toggleFlat} yearPx={yearPx} onYearPx={setYearPx}
           range={[4, 60, 1]} onOverview={overview} />
-        <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through projects · Esc clears</p>
       </section>
 
       <Ledger
