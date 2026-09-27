@@ -13,6 +13,7 @@ from briefs.validation import validate_response
 from common import REPO_ROOT, load_json, write_json
 from gemini_extract.transport import TransportFailure
 from load.build import join_projects
+from matches import core
 
 
 @pytest.fixture
@@ -77,6 +78,29 @@ def test_spelled_measurements_cannot_borrow_description_numbers(bundle, group, q
     else:
         response[group][0] = text
     assert "numeric_fact_type_mismatch" in validate_response(json.dumps(response), bundle["facts"])[1]
+
+
+def _drive_match(match: dict, drive: float) -> dict:
+    return {**match, "drive_mi": drive, "band": 0 if drive < core.NEAR_BAND_MI else 1,
+            "rule_version": core.DRIVE_RULE_VERSION, "rank_version": core.DRIVE_RANK_VERSION}
+
+
+def test_drive_match_cites_stored_drive_and_straight_line_match_is_unchanged(inputs, bundle):
+    tables = [unique(inputs[k]) for k in ("projects", "locations", "sources")]
+    legacy = inputs["matches"][0]
+    assert not {"match.drive_mi", "match.drive_display_mi"} & {f["id"] for f in bundle["facts"]}
+    drive = min(legacy["distance_mi"] + 1.5, core.OVERLAP_MI)
+    driven = build_match_input(_drive_match(legacy, drive), *tables)
+    facts = {f["id"]: f["value"] for f in driven["facts"]}
+    assert facts["match.drive_mi"] == drive and facts["match.drive_display_mi"] == f"{drive:.2f}"
+    assert driven["input_hash"] != bundle["input_hash"]
+    text = f"The driving route between the centers is {facts['match.drive_display_mi']} miles."
+    response = {**clean(bundle), "supported_facts": [{"text": text, "fact_ids": ["match.drive_display_mi"]}]}
+    assert validate_response(json.dumps(response), driven["facts"])[1] == []
+    with pytest.raises(ValueError, match="stale_match_facts"):
+        build_match_input({**legacy, "drive_mi": drive}, *tables)
+    with pytest.raises(ValueError, match="stale_match_facts"):
+        build_match_input(_drive_match(legacy, core.OVERLAP_MI + 0.01), *tables)
 
 
 def test_bool_endpoint_index_is_not_integer_slot(inputs):
