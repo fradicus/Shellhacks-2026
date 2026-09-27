@@ -90,6 +90,8 @@ records. Implementation and an overnight launch require F38's recorded prerequis
 
 ## Project map retirement — 2026-09-27
 
+The later explicit request to ship the AI side button authorizes the bounded F32/C60 live Gemini assistant. It interprets validated read-only app controls and documented help; server-derived facts remain authoritative. This supersedes the earlier F32 prototype-only provider deferral, not the data-quality rules or independent production-configuration requirements.
+
 The user retired the separate `/map` Project map. [C35](decisions/C35-retire-project-map.md)
 supersedes its active requirements: `/time` remains the main planning surface, `/history` retains
 historical research and `/explore` retains national search/evidence. Agents must not add a new
