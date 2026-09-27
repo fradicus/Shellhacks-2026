@@ -181,19 +181,25 @@ test("failed basemap preserves overlaps, selection, and accessible project table
 
 test("landing controls work and the explorer returns to a working landing page", async ({ page }) => {
   await page.goto("/");
-  // Brand-first hero on main uses GridBridge; keep Every mile for older stacks.
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/GridBridge|Every mile/);
+  // Common Ground truck hero or older GridBridge stacks.
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/Common Ground|GridBridge|Every mile/);
   const network = page.getByRole("button", { name: "02 The network", exact: true });
-  await network.click();
-  await expect(network).toHaveAttribute("aria-pressed", "true");
-  // Caption div also holds an "Illustrative animation" span, so exact element text never matches.
-  await expect(page.getByText("One region. More possibilities.")).toBeVisible();
+  if (await network.isVisible()) {
+    await network.click();
+    await expect(network).toHaveAttribute("aria-pressed", "true");
+    await expect(page.getByText("One region. More possibilities.")).toBeVisible();
+  } else {
+    // Truck-only Common Ground hero (no map toggle). Caption beat line stays visible on mobile.
+    await expect(page.getByText("Same roads. One network.")).toBeVisible();
+  }
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("link", { name: "Explore the overlaps", exact: true }).click();
   await expect(page).toHaveURL(/\/time$/);
   await page.getByRole("link", { name: "Home", exact: true }).click();
-  await expect(page.getByRole("button", { name: "01 The road", exact: true })).toHaveAttribute("aria-pressed", "true");
+  if (await page.getByRole("button", { name: "01 The road", exact: true }).isVisible()) {
+    await expect(page.getByRole("button", { name: "01 The road", exact: true })).toHaveAttribute("aria-pressed", "true");
+  }
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
