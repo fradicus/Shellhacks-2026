@@ -45,6 +45,9 @@
   background: radial-gradient(80% 70% at 55% 35%, #0b1220 0%, #05070b 70%);
 }
 
+/* Focusing an action must not scroll the entire scene underneath the fixed panels. */
+.stage.stage { overflow: clip; }
+
 .map :global(.maplibregl-ctrl-attrib) {
   background: rgba(5, 7, 11, 0.6);
   color: var(--ink-3);
