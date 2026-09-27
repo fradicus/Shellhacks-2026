@@ -2,6 +2,7 @@ from functools import cache
 from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker
+from referencing import Registry, Resource
 
 from common.io import REPO_ROOT, load_json
 
@@ -16,7 +17,9 @@ class SchemaError(ValueError):
 def _validator(schema_name: str) -> Draft202012Validator:
     schema = load_json(SCHEMA_DIR / f"{schema_name}.schema.json")
     Draft202012Validator.check_schema(schema)
-    return Draft202012Validator(schema, format_checker=FormatChecker())
+    resources = [load_json(path) for path in SCHEMA_DIR.glob("*.schema.json")]
+    registry = Registry().with_resources((item["$id"], Resource.from_contents(item)) for item in resources if "$id" in item)
+    return Draft202012Validator(schema, format_checker=FormatChecker(), registry=registry)
 
 
 def validate(obj: Any, schema_name: str) -> None:
