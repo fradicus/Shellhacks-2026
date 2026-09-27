@@ -319,8 +319,7 @@
   font-size: 12px;
   color: var(--ink);
 }
-.pairNames i,
-.utils i {
+.pairNames i {
   flex: none;
   width: 6px;
   height: 6px;
@@ -487,16 +486,96 @@
   padding: 14px 16px 12px;
 }
 
+/* Legend: what the points' colors are (with counts), the shapes on screen, then the states under them. */
 .legend {
-  composes: legend from "./scene.module.css";
-  gap: 7px;
+  display: grid;
+  gap: 10px;
   margin: 0 0 12px;
+  font-size: 11.5px;
+  color: var(--ink-2);
 }
-.legend i {
+.legend ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+.keys i {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 8px var(--c);
+}
+.keys i[data-ring] {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--c), 0 0 8px var(--c);
+}
+.keys b {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+.legend .shapes {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 11px;
+}
+.shapes i {
   flex: none;
   position: relative;
   width: 20px;
   height: 14px;
+}
+.stateKey {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.stateKey > span {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.stateNote {
+  margin: -2px 0 0;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.ramp {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 5px 8px;
+  margin-top: -2px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-3);
+}
+.ramp i {
+  grid-column: 1 / -1;
+  height: 6px;
+  border-radius: 3px;
+}
+.ramp span:nth-of-type(2) {
+  text-align: center;
 }
 .gBead::after {
   content: "";
@@ -542,16 +621,6 @@
   bottom: 0;
   border-top: 1.5px solid var(--ink);
   border-bottom: 1.5px solid var(--ink);
-}
-.utils {
-  composes: utils from "./scene.module.css";
-  flex-wrap: wrap;
-  gap: 14px !important;
-  padding-top: 4px;
-}
-.utils i {
-  width: 7px !important;
-  height: 7px !important;
 }
 
 .controls {
