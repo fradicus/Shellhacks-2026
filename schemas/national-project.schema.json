@@ -42,6 +42,7 @@
         "evidence": {"type": "string", "minLength": 1}
       }
     },
+    "location_verification": {"$ref": "https://gridbridge.local/schemas/expansion-release.schema.json#/$defs/verification"},
     "location_review": {"enum": ["confirmed", "needs_review", "rejected", "unreviewed", "unlocated"]},
     "evidence": {
       "type": "object", "required": ["page", "sheet", "row", "raw"],

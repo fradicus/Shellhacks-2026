@@ -1,0 +1,370 @@
+{
+  "$id": "https://gridbridge.local/schemas/expansion-release.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "F38 facts-bound national location release",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "release_id",
+    "created_at",
+    "scope",
+    "records",
+    "coverage_notes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "expansion-release-v1"
+    },
+    "release_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/verification"
+      },
+      "minItems": 1,
+      "maxItems": 5000
+    },
+    "coverage_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "maxItems": 100
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "publisher",
+        "url",
+        "artifact_sha256",
+        "locator",
+        "source_date",
+        "retrieved_at",
+        "access_review",
+        "facts"
+      ],
+      "properties": {
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "artifact_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "access_review": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facts": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "facility_id",
+        "facility_name",
+        "lat",
+        "lon",
+        "original_geometry",
+        "precision",
+        "uncertainty_m",
+        "geometry_evidence",
+        "identity_evidence",
+        "identity_rationale"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "site",
+            "a",
+            "b"
+          ]
+        },
+        "facility_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "facility_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lon": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "original_geometry": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "crs",
+            "type",
+            "coordinates",
+            "transform"
+          ],
+          "properties": {
+            "crs": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "Point"
+            },
+            "coordinates": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "transform": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "precision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "geometry_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "identity_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "identity_rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "reviewer",
+        "reviewed_at",
+        "decision",
+        "facts_sha256",
+        "reason"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "decision": {
+          "enum": [
+            "confirmed",
+            "insufficient",
+            "conflicting",
+            "rejected"
+          ]
+        },
+        "facts_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "date",
+        "precision",
+        "native_project_link",
+        "evidence",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "source_status",
+            "planned_milestone",
+            "certification",
+            "award",
+            "construction_start",
+            "completion",
+            "in_service",
+            "cancellation"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            "unknown"
+          ]
+        },
+        "native_project_link": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project_id",
+        "project_facts_sha256",
+        "producer",
+        "location_kind",
+        "points",
+        "reviews",
+        "events"
+      ],
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "project_facts_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "producer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location_kind": {
+          "enum": [
+            "site",
+            "line"
+          ]
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/point"
+          },
+          "minItems": 1,
+          "maxItems": 2
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/review"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        }
+      }
+    }
+  }
+}
