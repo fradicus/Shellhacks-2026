@@ -46,3 +46,11 @@ exports remain capped at 2,000 and pages at 100. `locatedTotal` retains center-b
 
 Latest user direction: county anchors may remain in the explorer, but must not enter F19’s Three.js map.
 F19 consumes only accepted facility centers, labeled tentative where unreviewed.
+
+## Dataset cache follow-up (2026-09-27)
+
+The user assigned this Codex local session the [map cache specification](../../decisions/F31-map-cache.md).
+Implement within F31: reuse the unfiltered map loader's successful Atlas result by
+active dataset ID, with fresh pointer reads, bounded per-instance retention and
+failure retry. Preserve payloads and visuals. This also benefits History's existing
+call to the same loader; no F19/F37 presentation files are part of this claim.
