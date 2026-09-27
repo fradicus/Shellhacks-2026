@@ -5,7 +5,7 @@ from datetime import datetime
 from california.caiso import date_of, match, named, status_group
 from california.publish import apply_release
 from common import REPO_ROOT, load_json
-from national.build import OUTPUTS, validate_snapshot_values
+from national.build import OUTPUTS, _coverage, validate_snapshot_values
 
 
 def facility(fid, name, lat, lon, operator=None, voltage=None):
@@ -48,6 +48,11 @@ def test_workbook_cells_and_statuses():
 def test_committed_release_appends_unreviewed_candidates_only():
     base = {name: load_json(REPO_ROOT / "data" / "national" / f"{name}.json") for name in OUTPUTS}
     snapshot = apply_release(base, REPO_ROOT)
+    # load_snapshot recounts coverage after each release; do the same before validating.
+    imported = {s["_id"] for s in snapshot["sources"] if s["import_status"] == "imported"}
+    measured = _coverage(snapshot["projects"], imported)
+    for name in ("projects_total", "located_count", "sources", "notes"):
+        snapshot["coverage"][name] = measured[name]
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / "data" / "california" / "releases" / "active.json")
     added = [p for p in snapshot["projects"] if p["source_id"].startswith("caiso-")]
