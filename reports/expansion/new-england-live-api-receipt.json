@@ -1,0 +1,99 @@
+{
+  "all_1286_original_ids_preserved": true,
+  "all_345_exact_review_records_match": true,
+  "all_original_statuses_and_other_facts_preserved": true,
+  "application": "http://localhost:3000",
+  "checked_at": "2026-09-27T01:57:22.493193+00:00",
+  "coverage": {
+    "complete_endpoint_projects": 41,
+    "confirmed_projects": 345,
+    "distinct_facility_sites": 187,
+    "notes": [
+      "Confirmed means independently reviewed documented facility/site or endpoint linkage, not survey accuracy.",
+      "NOAA/CZM geometry is a 2013 planning-scale dataset digitized at 1:40000; uncertainty in metres is unknown.",
+      "Vermont sites use official utility-submitted/E911 records; numerical transformation does not imply survey accuracy.",
+      "June 2026 project statuses remain source observations; location review does not certify current construction.",
+      "A one-endpoint line center is partial. Several project components can share a facility; site counts are separate.",
+      "No municipality centers, utility offices, geocoder guesses, cancelled projects or inventory-only assets were added."
+    ],
+    "partial_endpoint_projects": 92,
+    "release_id": "f38-new-england-345-v1",
+    "review_counts": {
+      "confirmed": 345
+    },
+    "standalone_site_projects": 212,
+    "state_counts": {
+      "09": 91,
+      "23": 61,
+      "25": 115,
+      "33": 33,
+      "44": 27,
+      "50": 18
+    },
+    "status_counts": {
+      "in_service": 329,
+      "planned": 13,
+      "under_construction": 3
+    },
+    "unconfirmed_records": 0
+  },
+  "dataset": "8c9d90d85b6a94ea3e2c014a282623ef751a811a",
+  "export_sha256": "53e9b57c10c98747ac0e4baed983736dd13bce707d1350ea7e902a1274508e89",
+  "export_sha256_encoding": "SHA-256 of UTF-8 Python json.dumps(export, sort_keys=True), default separators and ensure_ascii=True, no trailing newline",
+  "iso_ne_located": 345,
+  "iso_ne_total": 1024,
+  "iso_ne_unlocated": 679,
+  "mode": "atlas",
+  "national_located": 414,
+  "national_total": 1286,
+  "release_id": "f38-new-england-345-v1",
+  "states": [
+    {
+      "located": 115,
+      "map_points": 115,
+      "state_fips": "25",
+      "total": 402,
+      "unlocated": 287
+    },
+    {
+      "located": 91,
+      "map_points": 91,
+      "state_fips": "09",
+      "total": 196,
+      "unlocated": 105
+    },
+    {
+      "located": 61,
+      "map_points": 61,
+      "state_fips": "23",
+      "total": 200,
+      "unlocated": 139
+    },
+    {
+      "located": 33,
+      "map_points": 33,
+      "state_fips": "33",
+      "total": 96,
+      "unlocated": 63
+    },
+    {
+      "located": 27,
+      "map_points": 27,
+      "state_fips": "44",
+      "total": 63,
+      "unlocated": 36
+    },
+    {
+      "located": 18,
+      "map_points": 18,
+      "state_fips": "50",
+      "total": 63,
+      "unlocated": 45
+    }
+  ],
+  "status_counts": {
+    "in_service": 329,
+    "planned": 13,
+    "under_construction": 3
+  }
+}

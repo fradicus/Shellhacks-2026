@@ -1,0 +1,437 @@
+{
+  "distinct_canonical_map_centers": 199,
+  "distinct_coordinate_pairs": 187,
+  "distinct_facility_ids": 187,
+  "primary_owners": {
+    "Bangor Hydro-Electric Company": {
+      "confirmed_locations": 2,
+      "confirmed_statuses": {
+        "in_service": 2
+      },
+      "records": 9,
+      "statuses": {
+        "in_service": 9
+      },
+      "unlocated": 7
+    },
+    "Blue Sky": {
+      "confirmed_locations": 1,
+      "confirmed_statuses": {
+        "in_service": 1
+      },
+      "records": 2,
+      "statuses": {
+        "in_service": 2
+      },
+      "unlocated": 1
+    },
+    "CELD (Chicopee Electric Light Department)": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "CMEEC": {
+      "confirmed_locations": 3,
+      "confirmed_statuses": {
+        "in_service": 3
+      },
+      "records": 6,
+      "statuses": {
+        "cancelled": 1,
+        "in_service": 5
+      },
+      "unlocated": 3
+    },
+    "Central Maine Power Company": {
+      "confirmed_locations": 46,
+      "confirmed_statuses": {
+        "in_service": 42,
+        "planned": 4
+      },
+      "records": 148,
+      "statuses": {
+        "cancelled": 35,
+        "in_service": 106,
+        "planned": 7
+      },
+      "unlocated": 102
+    },
+    "Central Maine Power Company and Emera Maine": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "cancelled": 1
+      },
+      "unlocated": 1
+    },
+    "Emera Maine": {
+      "confirmed_locations": 5,
+      "confirmed_statuses": {
+        "in_service": 5
+      },
+      "records": 21,
+      "statuses": {
+        "cancelled": 11,
+        "in_service": 10
+      },
+      "unlocated": 16
+    },
+    "Eversource": {
+      "confirmed_locations": 173,
+      "confirmed_statuses": {
+        "in_service": 170,
+        "planned": 2,
+        "under_construction": 1
+      },
+      "records": 457,
+      "statuses": {
+        "cancelled": 151,
+        "in_service": 285,
+        "planned": 17,
+        "proposed": 2,
+        "under_construction": 2
+      },
+      "unlocated": 284
+    },
+    "Green Mountain Power": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 2,
+      "statuses": {
+        "cancelled": 1,
+        "in_service": 1
+      },
+      "unlocated": 2
+    },
+    "Holyoke Gas & Electric": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "Hudson Light and Power": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "Maine Electric Power Company": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "cancelled": 1
+      },
+      "unlocated": 1
+    },
+    "Middleborough Gas and Electric": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "NECEC Transmission LLC": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 3,
+      "statuses": {
+        "in_service": 3
+      },
+      "unlocated": 3
+    },
+    "National Grid, USA": {
+      "confirmed_locations": 59,
+      "confirmed_statuses": {
+        "in_service": 57,
+        "planned": 2
+      },
+      "records": 229,
+      "statuses": {
+        "cancelled": 91,
+        "in_service": 132,
+        "planned": 5,
+        "under_construction": 1
+      },
+      "unlocated": 170
+    },
+    "New Hampshire Transmission, LLC": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 4,
+      "statuses": {
+        "cancelled": 2,
+        "in_service": 2
+      },
+      "unlocated": 4
+    },
+    "Next Era": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "cancelled": 1
+      },
+      "unlocated": 1
+    },
+    "Northeast Utilities": {
+      "confirmed_locations": 2,
+      "confirmed_statuses": {
+        "in_service": 2
+      },
+      "records": 6,
+      "statuses": {
+        "in_service": 6
+      },
+      "unlocated": 4
+    },
+    "Northeast Utilities - NSTAR": {
+      "confirmed_locations": 3,
+      "confirmed_statuses": {
+        "in_service": 3
+      },
+      "records": 7,
+      "statuses": {
+        "cancelled": 1,
+        "in_service": 6
+      },
+      "unlocated": 4
+    },
+    "Norwood Municipal Light Department": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "Rhode Island Energy": {
+      "confirmed_locations": 4,
+      "confirmed_statuses": {
+        "in_service": 3,
+        "under_construction": 1
+      },
+      "records": 8,
+      "statuses": {
+        "in_service": 6,
+        "planned": 1,
+        "under_construction": 1
+      },
+      "unlocated": 4
+    },
+    "SELCO": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "Town of Wallingford Department of Public Utilities": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "Town of Wallingford, Department of Public Utilities (\u201cWED\u201d)": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "United Illuminating Company": {
+      "confirmed_locations": 22,
+      "confirmed_statuses": {
+        "in_service": 22
+      },
+      "records": 37,
+      "statuses": {
+        "cancelled": 7,
+        "in_service": 29,
+        "under_construction": 1
+      },
+      "unlocated": 15
+    },
+    "Unitil": {
+      "confirmed_locations": 0,
+      "confirmed_statuses": {},
+      "records": 1,
+      "statuses": {
+        "in_service": 1
+      },
+      "unlocated": 1
+    },
+    "Vermont Electric Power Company": {
+      "confirmed_locations": 18,
+      "confirmed_statuses": {
+        "in_service": 13,
+        "planned": 5
+      },
+      "records": 57,
+      "statuses": {
+        "cancelled": 26,
+        "in_service": 24,
+        "planned": 7
+      },
+      "unlocated": 39
+    },
+    "Versant Power": {
+      "confirmed_locations": 7,
+      "confirmed_statuses": {
+        "in_service": 6,
+        "under_construction": 1
+      },
+      "records": 16,
+      "statuses": {
+        "cancelled": 6,
+        "in_service": 8,
+        "under_construction": 2
+      },
+      "unlocated": 9
+    }
+  },
+  "release_id": "f38-new-england-345-v1",
+  "scope": "Existing imported project/component records; primary owner counts do not count all joint-owner relationships. No claim of utility or statewide completeness.",
+  "source_as_of": "2026-06",
+  "source_id": "iso-ne-rsp-2026-06",
+  "states": {
+    "09": {
+      "confirmed_locations": 91,
+      "confirmed_statuses": {
+        "in_service": 91
+      },
+      "records": 196,
+      "statuses": {
+        "cancelled": 45,
+        "in_service": 146,
+        "planned": 4,
+        "under_construction": 1
+      },
+      "unlocated": 105
+    },
+    "23": {
+      "confirmed_locations": 61,
+      "confirmed_statuses": {
+        "in_service": 56,
+        "planned": 4,
+        "under_construction": 1
+      },
+      "records": 200,
+      "statuses": {
+        "cancelled": 54,
+        "in_service": 137,
+        "planned": 7,
+        "under_construction": 2
+      },
+      "unlocated": 139
+    },
+    "25": {
+      "confirmed_locations": 115,
+      "confirmed_statuses": {
+        "in_service": 111,
+        "planned": 3,
+        "under_construction": 1
+      },
+      "records": 402,
+      "statuses": {
+        "cancelled": 156,
+        "in_service": 226,
+        "planned": 15,
+        "proposed": 2,
+        "under_construction": 3
+      },
+      "unlocated": 287
+    },
+    "33": {
+      "confirmed_locations": 33,
+      "confirmed_statuses": {
+        "in_service": 32,
+        "planned": 1
+      },
+      "records": 96,
+      "statuses": {
+        "cancelled": 28,
+        "in_service": 65,
+        "planned": 3
+      },
+      "unlocated": 63
+    },
+    "44": {
+      "confirmed_locations": 27,
+      "confirmed_statuses": {
+        "in_service": 26,
+        "under_construction": 1
+      },
+      "records": 63,
+      "statuses": {
+        "cancelled": 21,
+        "in_service": 40,
+        "planned": 1,
+        "under_construction": 1
+      },
+      "unlocated": 36
+    },
+    "50": {
+      "confirmed_locations": 18,
+      "confirmed_statuses": {
+        "in_service": 13,
+        "planned": 5
+      },
+      "records": 63,
+      "statuses": {
+        "cancelled": 27,
+        "in_service": 29,
+        "planned": 7
+      },
+      "unlocated": 45
+    }
+  },
+  "statewide_project_denominators": null,
+  "total": {
+    "confirmed_locations": 345,
+    "confirmed_statuses": {
+      "in_service": 329,
+      "planned": 13,
+      "under_construction": 3
+    },
+    "records": 1024,
+    "statuses": {
+      "cancelled": 335,
+      "in_service": 643,
+      "planned": 37,
+      "proposed": 2,
+      "under_construction": 7
+    },
+    "unlocated": 679
+  },
+  "unknown_state": {
+    "confirmed_locations": 0,
+    "confirmed_statuses": {},
+    "records": 4,
+    "statuses": {
+      "cancelled": 4
+    },
+    "unlocated": 4
+  }
+}
