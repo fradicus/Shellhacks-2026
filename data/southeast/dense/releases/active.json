@@ -61,6 +61,29 @@
         "projects": "c0484e6fe7e3ee3843efb4720961846c628de812a9c5e0e9e414a26d5b1c4a20",
         "sources": "d8a0188b085f73c45857cf9cb81af0a6a9ba081fa77e24b9467cba0717e4109c"
       }
+    },
+    "scrtp": {
+      "expected_counts": {
+        "by_state": {
+          "45": 87
+        },
+        "candidate": 16,
+        "candidate_unique_name": 5,
+        "distinct_points": 14,
+        "located": 21,
+        "located_by_state": {
+          "45": 21
+        },
+        "located_dated": 21,
+        "located_not_in_service": 21,
+        "official": 0,
+        "projects": 87,
+        "sources": 11
+      },
+      "files": {
+        "projects": "9c84dbffb36fc2074c5dec7e63d244203d8f53b0a7b6e5d035d548a79a0fcbea",
+        "sources": "50df1ed645e3d6e92fc9a0d67c805e1206d084c07f64f1a2034f194d8e8ed6c6"
+      }
     }
   },
   "policy": "C25",
