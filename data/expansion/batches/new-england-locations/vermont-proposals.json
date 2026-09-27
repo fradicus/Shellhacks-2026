@@ -1,0 +1,924 @@
+[
+  {
+    "project_id": "iso-ne:1617",
+    "project": {
+      "_id": "iso-ne:1617",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": 14000000,
+        "usd": 14000000
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": 14000000,
+          "Jun-26 Status": "In-service",
+          "Major Project": "Connecticut River Valley ",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Rebuild Chelsea Station to a three-breaker ring bus",
+          "Project ID": 1617,
+          "Projected In-Service Month/Year": "2018-01-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 324,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2018-01-01T00:00:00",
+        "value": "2018-01"
+      },
+      "location_review": "unlocated",
+      "major_project": "Connecticut River Valley",
+      "name": "Rebuild Chelsea Station to a three-breaker ring bus",
+      "native_id": "1617",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "In-service",
+      "status_group": "in_service"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -72.471138,
+        "GPSY": 43.9607315,
+        "PRIMARYADD2": "45 E RANDOLPH RD CHELSEA VT 05038",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "CHELSEA",
+        "OBJECTID": 71,
+        "ESITEID": 65694,
+        "PRIMARYADDRESS": "45 E RANDOLPH RD",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "CHELSEA",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 45,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -72.47113915797026,
+        "y": 43.96074042841999
+      }
+    },
+    "native_geometry": {
+      "x": 502316.3546000002,
+      "y": 162277.83330000006
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "standalone_site",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "Strong: CRVP slide6 explicitly matches 115kV three-breaker ring-bus rebuild; DEC report page3 ties Chelsea Substation to exact address and nearby coordinate.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=65694 OBJECTID=71",
+    "source_as_of": null,
+    "uncertainty_m": null,
+    "project_link_evidence": [
+      {
+        "file": "velco-crvp.pdf",
+        "page": 6,
+        "locator": "The Solution (continued), Chelsea Substation Upgrade",
+        "facts": "115kV station rebuilt to three-breaker ring; VELCO/GMP identified."
+      },
+      {
+        "file": "chelsea-dec-completion-2018.pdf",
+        "page": 3,
+        "locator": "1.1.1 Site Parameters and preceding Introduction",
+        "facts": "VELCO Chelsea Substation at45 East Randolph Road, expanding south; DMS site coordinate corroborates GIS point within approximately6.3m."
+      }
+    ]
+  },
+  {
+    "project_id": "iso-ne:1616",
+    "project": {
+      "_id": "iso-ne:1616",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": 4000000,
+        "usd": 4000000
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": 4000000,
+          "Jun-26 Status": "In-service",
+          "Major Project": "Connecticut River Valley ",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Split Hartford 25 MVAR capacitor  bank into two 12.5  MVAR  banks",
+          "Project ID": 1616,
+          "Projected In-Service Month/Year": "2016-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 325,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2016-12-01T00:00:00",
+        "value": "2016-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Connecticut River Valley",
+      "name": "Split Hartford 25 MVAR capacitor  bank into two 12.5  MVAR  banks",
+      "native_id": "1616",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "In-service",
+      "status_group": "in_service"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -72.31183438,
+        "GPSY": 43.68326056,
+        "PRIMARYADD2": "2393 HARTFORD AVE HARTFORD VT 05001",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "HARTFORD VELCO",
+        "OBJECTID": 273,
+        "ESITEID": 120596,
+        "PRIMARYADDRESS": "2393 HARTFORD AVE",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "HARTFORD",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 2393,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -72.31183547052505,
+        "y": 43.68326944547906
+      }
+    },
+    "native_geometry": {
+      "x": 515171.5630999999,
+      "y": 131466.28189999983
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "standalone_site",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "CRVP slide8 explicitly matches split Hartford 25MVAR bank into two12.5MVAR banks; official GIS explicitly names HARTFORD VELCO with same owner/state.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=120596 OBJECTID=273",
+    "source_as_of": null,
+    "uncertainty_m": null,
+    "project_link_evidence": [
+      {
+        "file": "velco-crvp.pdf",
+        "page": 8,
+        "locator": "The Solution (continued), Hartford Substation",
+        "facts": "25MVAr existing bank reduced to12.5; new12.5MVAr on Hartford-Wilder K26 terminal, same Hartford VELCO site."
+      }
+    ]
+  },
+  {
+    "project_id": "iso-ne:1033",
+    "project": {
+      "_id": "iso-ne:1033",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": 13500000,
+        "usd": 13500000
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": 13500000,
+          "Jun-26 Status": "In-service",
+          "Major Project": "Vermont Southern Loop Project (VELCO LSP - Newfane Substation)",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Installation of a new 345/115 kV substation called Newfane",
+          "Project ID": 1033,
+          "Projected In-Service Month/Year": "2010-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 883,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2010-12-01T00:00:00",
+        "value": "2010-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Vermont Southern Loop Project (VELCO LSP - Newfane Substation)",
+      "name": "Installation of a new 345/115 kV substation called Newfane",
+      "native_id": "1033",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "In-service",
+      "status_group": "in_service"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -72.65262085,
+        "GPSY": 42.96771772,
+        "PRIMARYADD2": "340 VT ROUTE 30 NEWFANE VT 05345",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "NEWFANE",
+        "OBJECTID": 311,
+        "ESITEID": 337014,
+        "PRIMARYADDRESS": "340 VT ROUTE 30",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "NEWFANE",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 340,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -72.65262200303441,
+        "y": 42.96772645412248
+      }
+    },
+    "native_geometry": {
+      "x": 487549.0784999998,
+      "y": 51967.06430000067
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "standalone_site",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO project explicitly creates Newfane substation; official government GIS names NEWFANE, GMP/VELCO, correct state/site. Needs reviewer judgment on absence voltage attribute.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=337014 OBJECTID=311",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1034",
+    "project": {
+      "_id": "iso-ne:1034",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": "Part of project 323",
+        "usd": null
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": "Part of project 323",
+          "Jun-26 Status": "In-service",
+          "Major Project": "Vermont Southern Loop Project",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Loop new 345 kV Line into Newfane Substation.",
+          "Project ID": 1034,
+          "Projected In-Service Month/Year": "2010-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 882,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2010-12-01T00:00:00",
+        "value": "2010-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Vermont Southern Loop Project",
+      "name": "Loop new 345 kV Line into Newfane Substation.",
+      "native_id": "1034",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "In-service",
+      "status_group": "in_service"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -72.65262085,
+        "GPSY": 42.96771772,
+        "PRIMARYADD2": "340 VT ROUTE 30 NEWFANE VT 05345",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "NEWFANE",
+        "OBJECTID": 311,
+        "ESITEID": 337014,
+        "PRIMARYADDRESS": "340 VT ROUTE 30",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "NEWFANE",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 340,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -72.65262200303441,
+        "y": 42.96772645412248
+      }
+    },
+    "native_geometry": {
+      "x": 487549.0784999998,
+      "y": 51967.06430000067
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "partial_endpoint",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO explicitly loops new line into Newfane; only Newfane endpoint known. Preserve partial.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=337014 OBJECTID=311",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1171",
+    "project": {
+      "_id": "iso-ne:1171",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": 2200000,
+        "usd": 2200000
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": 2200000,
+          "Jun-26 Status": "In-service",
+          "Major Project": "West Rutland Capacitor Rebuild",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Install two 115 kV 25 MVAR capacitor banks at West Rutland to address low voltage concerns",
+          "Project ID": 1171,
+          "Projected In-Service Month/Year": "2011-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 768,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2011-12-01T00:00:00",
+        "value": "2011-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "West Rutland Capacitor Rebuild",
+      "name": "Install two 115 kV 25 MVAR capacitor banks at West Rutland to address low voltage concerns",
+      "native_id": "1171",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "In-service",
+      "status_group": "in_service"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -73.05796506,
+        "GPSY": 43.63394738,
+        "PRIMARYADD2": "3000 PLEASANT ST WEST RUTLAND VT 05777",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "WEST RUTLAND VMPD",
+        "OBJECTID": 41,
+        "ESITEID": 280125,
+        "PRIMARYADDRESS": "3000 PLEASANT ST",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "WEST RUTLAND",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 3000,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -73.05796639875031,
+        "y": 43.63395622915792
+      }
+    },
+    "native_geometry": {
+      "x": 454975.0948999999,
+      "y": 126121.5859999992
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "standalone_site",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO explicitly installs two115kV25MVAR banks at West Rutland; GIS name WEST RUTLAND VMPD with GMP/VELCO. Needs reviewer voltage/site-suffix corroboration.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=280125 OBJECTID=41",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1250",
+    "project": {
+      "_id": "iso-ne:1250",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": "TBD",
+        "usd": null
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": "TBD",
+          "Jun-26 Status": "Cancelled",
+          "Major Project": "VELCO LSP - West Rutland Substation",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Installation of a 115/46 kV transformer at West Rutland between breakers K30 and K34",
+          "Project ID": 1250,
+          "Projected In-Service Month/Year": "2016-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 691,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2016-12-01T00:00:00",
+        "value": "2016-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "VELCO LSP - West Rutland Substation",
+      "name": "Installation of a 115/46 kV transformer at West Rutland between breakers K30 and K34",
+      "native_id": "1250",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1b",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "Cancelled",
+      "status_group": "cancelled"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -73.05796506,
+        "GPSY": 43.63394738,
+        "PRIMARYADD2": "3000 PLEASANT ST WEST RUTLAND VT 05777",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "WEST RUTLAND VMPD",
+        "OBJECTID": 41,
+        "ESITEID": 280125,
+        "PRIMARYADDRESS": "3000 PLEASANT ST",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "WEST RUTLAND",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 3000,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -73.05796639875031,
+        "y": 43.63395622915792
+      }
+    },
+    "native_geometry": {
+      "x": 454975.0948999999,
+      "y": 126121.5859999992
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "standalone_site",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO explicitly installs115/46kV transformer at West Rutland between K30/K34; same GIS candidate, require circuit/site corroboration.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=280125 OBJECTID=41",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1282",
+    "project": {
+      "_id": "iso-ne:1282",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": "NR",
+        "usd": null
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": "NR",
+          "Jun-26 Status": "Cancelled",
+          "Major Project": "Northwestern VT Solution ",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Upgrade K27 Williston-Tafts Corner 115 kV line",
+          "Project ID": 1282,
+          "Projected In-Service Month/Year": "2016-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 659,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2016-12-01T00:00:00",
+        "value": "2016-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Northwestern VT Solution",
+      "name": "Upgrade K27 Williston-Tafts Corner 115 kV line",
+      "native_id": "1282",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1b",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "Cancelled",
+      "status_group": "cancelled"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -73.11182163,
+        "GPSY": 44.44065278,
+        "PRIMARYADD2": "525 SYCAMORE ST WILLISTON VT 05495",
+        "Utility": "VEC/VELCO",
+        "Sub_NAME": "TAFTS CORNERS",
+        "OBJECTID": 129,
+        "ESITEID": 292242,
+        "PRIMARYADDRESS": "525 SYCAMORE ST",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "WILLISTON",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 525,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -73.11182303438457,
+        "y": 44.44066177452787
+      }
+    },
+    "native_geometry": {
+      "x": 451294.48110000044,
+      "y": 215784.6144999992
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "partial_endpoint",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO explicitly upgrades K27 Williston\u2013Tafts Corner; GIS TAFTS CORNERS, VEC/VELCO. Only named Tafts Corners endpoint supported.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=292242 OBJECTID=129",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1753",
+    "project": {
+      "_id": "iso-ne:1753",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": "NR",
+        "usd": null
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": "NR",
+          "Jun-26 Status": "Planned",
+          "Major Project": "Queue Position 501",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Reconductor the K27 (Williston - Tafts Corner) 115 kV line",
+          "Project ID": 1753,
+          "Projected In-Service Month/Year": "2027-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 188,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2027-12-01T00:00:00",
+        "value": "2027-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Queue Position 501",
+      "name": "Reconductor the K27 (Williston - Tafts Corner) 115 kV line",
+      "native_id": "1753",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "4a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Elective Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "Planned",
+      "status_group": "planned"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -73.11182163,
+        "GPSY": 44.44065278,
+        "PRIMARYADD2": "525 SYCAMORE ST WILLISTON VT 05495",
+        "Utility": "VEC/VELCO",
+        "Sub_NAME": "TAFTS CORNERS",
+        "OBJECTID": 129,
+        "ESITEID": 292242,
+        "PRIMARYADDRESS": "525 SYCAMORE ST",
+        "SITETYPE": "SUBSTATION",
+        "COMMENTS": "",
+        "TOWNNAME": "WILLISTON",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 525,
+        "Notes": null
+      },
+      "geometry": {
+        "x": -73.11182303438457,
+        "y": 44.44066177452787
+      }
+    },
+    "native_geometry": {
+      "x": 451294.48110000044,
+      "y": 215784.6144999992
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "partial_endpoint",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO reconductors K27 Williston\u2013Tafts Corner; same named Tafts Corners endpoint candidate.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=292242 OBJECTID=129",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1284",
+    "project": {
+      "_id": "iso-ne:1284",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": "NR",
+        "usd": null
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": "NR",
+          "Jun-26 Status": "Cancelled",
+          "Major Project": "Northwestern VT Solution ",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "K30 West Rutland - Middlebury 115 kV line rebuild",
+          "Project ID": 1284,
+          "Projected In-Service Month/Year": "2016-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 657,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2016-12-01T00:00:00",
+        "value": "2016-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Northwestern VT Solution",
+      "name": "K30 West Rutland - Middlebury 115 kV line rebuild",
+      "native_id": "1284",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "1b",
+      "planning_region": "iso-ne",
+      "primary_driver": "Reliability Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "Cancelled",
+      "status_group": "cancelled"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -73.13343048,
+        "GPSY": 44.01437377,
+        "PRIMARYADD2": "522 QUARRY RD MIDDLEBURY VT 05753",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "VELCO MIDDLEBURY",
+        "OBJECTID": 200,
+        "ESITEID": 154921,
+        "PRIMARYADDRESS": "522 QUARRY RD",
+        "SITETYPE": "UTILITY",
+        "COMMENTS": "",
+        "TOWNNAME": "MIDDLEBURY",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 522,
+        "Notes": "Sitetype: change to Substation"
+      },
+      "geometry": {
+        "x": -73.13343186224441,
+        "y": 44.01438268825329
+      }
+    },
+    "native_geometry": {
+      "x": 449208.9960000003,
+      "y": 168432.6018000003
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "partial_endpoint",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO K30 West Rutland\u2013Middlebury line; named VELCO MIDDLEBURY candidate, with Notes=Sitetype: change to Substation. Withhold until reviewer verifies note and line identity.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=154921 OBJECTID=200",
+    "source_as_of": null,
+    "uncertainty_m": null
+  },
+  {
+    "project_id": "iso-ne:1752",
+    "project": {
+      "_id": "iso-ne:1752",
+      "center": null,
+      "counties": [],
+      "description": null,
+      "estimated_ptf_cost": {
+        "raw": "NR",
+        "usd": null
+      },
+      "evidence": {
+        "page": null,
+        "raw": {
+          "Jun-26 Estimated PTF Costs": "NR",
+          "Jun-26 Status": "Planned",
+          "Major Project": "Queue Position 501",
+          "Other Equipment Owner(s)": null,
+          "Primary Equipment Owner": "Vermont Electric Power Company",
+          "Project": "Replace a line drop for the K30 (Middlebury - Florance) 115 kV line",
+          "Project ID": 1752,
+          "Projected In-Service Month/Year": "2027-12-01T00:00:00",
+          "State": "VT"
+        },
+        "row": 189,
+        "sheet": "RSP_sortable",
+        "source_sha256": "adfe05f5c0f24e260acca3b10c692785b4298a2067fa2e79efcf1d079953190d"
+      },
+      "footnote_number": null,
+      "geography_basis": "source_state",
+      "in_service": {
+        "precision": "month",
+        "raw": "2027-12-01T00:00:00",
+        "value": "2027-12"
+      },
+      "location_review": "unlocated",
+      "major_project": "Queue Position 501",
+      "name": "Replace a line drop for the K30 (Middlebury - Florance) 115 kV line",
+      "native_id": "1752",
+      "other_owners": [],
+      "owner": "Vermont Electric Power Company",
+      "part": "4a",
+      "planning_region": "iso-ne",
+      "primary_driver": "Elective Upgrade",
+      "source_id": "iso-ne-rsp-2026-06",
+      "states": [
+        "50"
+      ],
+      "status": "Planned",
+      "status_group": "planned"
+    },
+    "candidate_site": {
+      "attributes": {
+        "GPSX": -73.13343048,
+        "GPSY": 44.01437377,
+        "PRIMARYADD2": "522 QUARRY RD MIDDLEBURY VT 05753",
+        "Utility": "GMP/VELCO",
+        "Sub_NAME": "VELCO MIDDLEBURY",
+        "OBJECTID": 200,
+        "ESITEID": 154921,
+        "PRIMARYADDRESS": "522 QUARRY RD",
+        "SITETYPE": "UTILITY",
+        "COMMENTS": "",
+        "TOWNNAME": "MIDDLEBURY",
+        "SITETYPE_MULTI1": null,
+        "HOUSE_NUMBER": 522,
+        "Notes": "Sitetype: change to Substation"
+      },
+      "geometry": {
+        "x": -73.13343186224441,
+        "y": 44.01438268825329
+      }
+    },
+    "native_geometry": {
+      "x": 449208.9960000003,
+      "y": 168432.6018000003
+    },
+    "native_crs": "EPSG:32145",
+    "output_crs": "EPSG:4326",
+    "site_meaning": "partial_endpoint",
+    "method": "Official VT PSD/E911 substation point; ArcGIS outSR=4326; no geocoder or centroid",
+    "independent_review": "pending",
+    "published_center": null,
+    "reason": "ISO K30 Middlebury\u2013Florance terminal drop; named VELCO MIDDLEBURY candidate. Withhold until line/site identity review.",
+    "geometry_evidence_file": "vermont-open-wgs84.json",
+    "native_geometry_evidence_file": "vermont-open-native.json",
+    "geometry_locator": "layer38 ESITEID=154921 OBJECTID=200",
+    "source_as_of": null,
+    "uncertainty_m": null
+  }
+]

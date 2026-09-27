@@ -1,0 +1,56 @@
+[
+  {
+    "file": "vermont-substations.json",
+    "retrieved": "2026-09-27T01:14:01.200331+00:00",
+    "sha256": "891e7faef3a8ab8a2755dd29a4cb4ecb58cafe78b4d08b2cf2e91f5318bb4173",
+    "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/PSD_services/PSD_Published_Layers/MapServer/18/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+  },
+  {
+    "file": "vermont-policy.html",
+    "retrieved": "2026-09-27T01:14:01.515459+00:00",
+    "sha256": "5b41a89769d002c11ed7098ceb09275bdfa1127481bf6933e75fb39a74f73f47",
+    "url": "https://files.vcgi.vermont.gov/other/policies/vermont-open-geodata-policy.html"
+  },
+  {
+    "file": "vermont-service.json",
+    "retrieved": "2026-09-27T01:14:01.743826+00:00",
+    "sha256": "4ceb4a941ccbfb3ebf3837e57f2ef98850b77f31321042c76f849494b1b471ce",
+    "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/PSD_services/PSD_Published_Layers/MapServer?f=pjson"
+  },
+  {
+    "file": "vermont-open-meta.json",
+    "retrieved": "2026-09-27T01:14:46.421669+00:00",
+    "sha256": "9c1e72933f5f6add73744df86180c660f0de64ebe58a23b58d0e1caef8d786aa",
+    "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/PSD_services/OPENDATA_PSD_LAYERS_SP_NOCACHE_v1/MapServer/38?f=pjson"
+  },
+  {
+    "file": "vermont-open-native.json",
+    "retrieved": "2026-09-27T01:14:46.754649+00:00",
+    "sha256": "a852e57c41adfff99e1f62728e88cb0f9f63c716009af4abf92f1ba084c334c0",
+    "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/PSD_services/OPENDATA_PSD_LAYERS_SP_NOCACHE_v1/MapServer/38/query?where=1%3D1&outFields=%2A&returnGeometry=true&f=pjson"
+  },
+  {
+    "file": "vermont-open-wgs84.json",
+    "retrieved": "2026-09-27T01:14:47.060234+00:00",
+    "sha256": "16e3c3b26653761583f6c4a354ef5d896a241c148deea94683b5de79cf423718",
+    "url": "https://maps.vcgi.vermont.gov/arcgis/rest/services/PSD_services/OPENDATA_PSD_LAYERS_SP_NOCACHE_v1/MapServer/38/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+  },
+  {
+    "file": "velco-plan-2015.pdf",
+    "retrieved": "2026-09-27T01:14:47.834135+00:00",
+    "sha256": "724a9097c462b2b2aa88e4d96c9caa9e1a6f8623657b970b8b55f8ab534f01ab",
+    "url": "https://www.velco.com/assets/documents/2015Plan_Final_toPSB.pdf"
+  },
+  {
+    "file": "chelsea-dec-completion-2018.pdf",
+    "retrieved": "2026-09-27T01:15:23.687631+00:00",
+    "sha256": "07b0231c4f4c45165530c3ac5e450b544df853e3b55a385e52468568d9ff351f",
+    "url": "https://anrweb.vt.gov/PubDocs/DEC/Spills/2016-WMD226.corrective.action.completion.report.pdf"
+  },
+  {
+    "file": "velco-crvp.pdf",
+    "retrieved": "2026-09-27T01:15:25.400331+00:00",
+    "sha256": "dce4ca5078923c93f433f4bcdd7722c9132a8cc2c24afb786de922465ae6f6db",
+    "url": "https://www.velco.com/sites/default/files/2023-12/V%20CRVP.pdf"
+  }
+]

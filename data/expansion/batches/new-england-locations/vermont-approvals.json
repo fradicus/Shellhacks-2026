@@ -1,0 +1,24 @@
+[
+  {
+    "project_id": "iso-ne:1616",
+    "review": {
+      "decision": "confirmed",
+      "facts_sha256": "637448ad1c61306b30611ea8587d0a1c31e367bc61cd81e89a7c60ed978d69ad",
+      "id": "f38-vt-final-1616-637448ad1c61",
+      "reason": "Workbook row 325 identifies VELCO CRVP Hartford bank split (25 to two 12.5 MVAr banks). CRVP slide 8 independently identifies the exact work at Hartford substation and K26 terminal, and slide 9 identifies the VELCO Hartford 115/46 kV yard. PSD ESITEID 120596 is explicitly HARTFORD VELCO, utility GMP/VELCO, SITETYPE SUBSTATION, in Hartford VT. Review of all Hartford inventory entries distinguishes this named transmission site from Wilder, Quechee, Deweys Mills and GMP SUB_70/SUB_71. Confirmation is for the identified government-published substation site point, not individual capacitor placement; no numeric positional accuracy is supplied. Final publication record checked against original workbook row/hash, pinned PDF pages and source GIS native/WGS84 records. Original point, CRS and unknown precision retained; independent inverse ESRI:108190 reproduction agrees within 5.6e-10 degrees. No construction completion or equipment-level precision inferred.",
+      "reviewed_at": "2026-09-27T01:30:34.117862Z",
+      "reviewer": "f38_contract_review"
+    }
+  },
+  {
+    "project_id": "iso-ne:1617",
+    "review": {
+      "decision": "confirmed",
+      "facts_sha256": "9a549ed98e72596f7ff83b0c04861a68a4dd41aef14b63c747bf2aaa2c832a14",
+      "id": "f38-vt-final-1617-9a549ed98e72",
+      "reason": "Workbook row 324 identifies VELCO Connecticut River Valley Chelsea three-breaker rebuild. VELCO CRVP slide 6 independently identifies this exact 115 kV rebuild. DEC report PDF pages 3-4 explicitly connects the CRVP work to VELCO Chelsea Substation at 45 East Randolph Road, the exact address of PSD ESITEID 65694. DEC DMS coordinates independently corroborate the same site. Government geometry is a utility-submitted E911 substation site point; it does not locate individual breakers or certify survey accuracy. Final publication record checked against original workbook row/hash, pinned PDF pages and source GIS native/WGS84 records. Original point, CRS and unknown precision retained; independent inverse ESRI:108190 reproduction agrees within 5.6e-10 degrees. No construction completion or equipment-level precision inferred.",
+      "reviewed_at": "2026-09-27T01:30:34.118024Z",
+      "reviewer": "f38_contract_review"
+    }
+  }
+]
