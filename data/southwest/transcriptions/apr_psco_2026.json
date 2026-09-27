@@ -1,0 +1,663 @@
+{
+ "file": "PSCo_2026_APR",
+ "rows": [
+  {
+   "native_id": "colorados-power-pathway",
+   "name": "Colorado’s Power Pathway",
+   "page": 1,
+   "quote": "1. Colorado’s Power Pathway Colorado’s Power Pathway (CPP) is a major transmission project proposed by PSCo to improve the state’s electric grid and enable renewable energy development around the state. The project is estimated to consist of approximately 560 to 650 miles of new double circuit 345 kV lines (with optional radial extension into southeast Colorado)",
+   "owner": "Public Service Company of Colorado",
+   "states": [
+    "CO"
+   ],
+   "state_basis": "text",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2027",
+   "status_raw": "construction progressing",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1328"
+  },
+  {
+   "native_id": "ault-cloverly-230-115-kv",
+   "name": "Ault – Cloverly 230/115 kV",
+   "page": 1,
+   "quote": "2. Ault – Cloverly 230/115 kV This project was previously referred to as the Northern Greeley Transmission Project. It consists of approximately 25 miles of new transmission, and two new substations in order to increase reliability, load-serving capability and resource accommodation northeast of the City of Greeley, Colorado.",
+   "owner": "Public Service Company of Colorado",
+   "states": [
+    "CO"
+   ],
+   "state_basis": "text",
+   "kind": "line",
+   "facilities": [
+    "Ault",
+    "Cloverly"
+   ],
+   "voltages_kv": [
+    230,
+    115
+   ],
+   "in_service_raw": "2024",
+   "status_raw": "placed in-service",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:953"
+  },
+  {
+   "native_id": "central-weld-county-reliability-loop",
+   "name": "Central Weld County Reliability Loop",
+   "page": 2,
+   "quote": "3. Central Weld County Reliability Loop (formerly Southern Greeley Area Transmission) A Southern Greeley Area Transmission plan – now referred to as Central Weld County Reliability Loop (CWRL) – continues to be needed to improve the Greeley area system reliability, increase load- serving capability, and facilitate longer-term transmission plans.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    115,
+    230
+   ],
+   "in_service_raw": null,
+   "status_raw": "currently conceptual",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "pi-2024-06-generation-interconnection-substation",
+   "name": "PI-2024-06 Generation Interconnection Substation",
+   "page": 2,
+   "quote": "PI-2024-06 Generation Interconnection Substation 2028 Construct new 345 kV switching station for new generation interconnection.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1651"
+  },
+  {
+   "native_id": "circuit-5207-hopkins-rifle",
+   "name": "Circuit 5207: Hopkins to Rifle 230 kV",
+   "page": 2,
+   "quote": "Circuit 5207: Hopkins to Rifle 230 kV 202 9 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Hopkins",
+    "Rifle"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "202 9",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1668"
+  },
+  {
+   "native_id": "circuit-5205-parachute-rifle",
+   "name": "Circuit 5205: Parachute to Rifle 230 kV",
+   "page": 2,
+   "quote": "Circuit 5205: Parachute to Rifle 230 kV 2028 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Parachute",
+    "Rifle"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1669"
+  },
+  {
+   "native_id": "circuit-5509-bluestone-valley-parachute",
+   "name": "Circuit 5509: Bluestone Valley to Parachute 230 kV",
+   "page": 2,
+   "quote": "Circuit 5509: Bluestone Valley to Parachute 230 kV 202 9 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Bluestone Valley",
+    "Parachute"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "202 9",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1670"
+  },
+  {
+   "native_id": "circuit-5245-hopkins-hagerman-pass",
+   "name": "Circuit 5245: Hopkins to Hagerman Pass 230 kV",
+   "page": 2,
+   "quote": "Circuit 5245: Hopkins to Hagerman Pass 230 kV 2030 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Hopkins",
+    "Hagerman Pass"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1672"
+  },
+  {
+   "native_id": "circuit-5245-hagerman-pass-malta",
+   "name": "Circuit 5245: Hagerman Pass to Malta 230 kV",
+   "page": 2,
+   "quote": "Circuit 5245: Hagerman Pass to Malta 230 kV 2030 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Hagerman Pass",
+    "Malta"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1673"
+  },
+  {
+   "native_id": "circuit-5785-cooley-mesa-wolcott",
+   "name": "Circuit 5785: Cooley Mesa to Wolcott 230 kV",
+   "page": 2,
+   "quote": "Circuit 5785: Cooley Mesa to Wolcott 230 kV 2031 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Cooley Mesa",
+    "Wolcott"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2031",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1674"
+  },
+  {
+   "native_id": "circuit-5787-cooley-mesa-basalt",
+   "name": "Circuit 5787: Cooley Mesa to Basalt 230 kV",
+   "page": 2,
+   "quote": "Circuit 5787: Cooley Mesa to Basalt 230 kV 2031 Rebuild existing 230 kV circuit",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Cooley Mesa",
+    "Basalt"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2031",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1675"
+  },
+  {
+   "native_id": "leetsdale-elati-circuit-5283-underground",
+   "name": "Leetsdale – Elati 230 kV Circuit 5283 Underground",
+   "page": 2,
+   "quote": "Leetsdale – Elati 230 kV Circuit 5283 Underground 2027 T ransmission Line Upgrade",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Leetsdale",
+    "Elati"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2027",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1643"
+  },
+  {
+   "native_id": "daniels-park-prairie-greenwood-5111-5707-uprates",
+   "name": "Daniels Park – Prairie – Greenwood Circuit 5111",
+   "page": 2,
+   "quote": "Daniels Park – Prairie – Greenwood Circuit 5111 and 2027 5707 Uprates",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Daniels Park",
+    "Greenwood"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2027",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1642"
+  },
+  {
+   "native_id": "greenwood-arapahoe-circuit-5709-uprate",
+   "name": "Greenwood – Arapahoe Circuit 5709 Uprate",
+   "page": 3,
+   "quote": "Greenwood – Arapahoe Circuit 5709 Uprate 2027 Uprate 230 kV Circuit 5709 from Greenwood to Arapahoe substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Greenwood",
+    "Arapahoe"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2027",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1650"
+  },
+  {
+   "native_id": "daniels-park-santa-fe-circuit-5107-uprate",
+   "name": "Daniels Park – Santa Fe Circuit 5107 Uprate",
+   "page": 3,
+   "quote": "Daniels Park – Santa Fe Circuit 5107 Uprate 2030 Uprate 230 kV circuit 5107 from Daniels Park to Santa Fe by reconductoring",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Daniels Park",
+    "Santa Fe"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1653"
+  },
+  {
+   "native_id": "smoky-hill-buckley-circuit-5167-uprate",
+   "name": "Smoky Hill – Buckley Circuit 5167 Uprate",
+   "page": 3,
+   "quote": "Smoky Hill – Buckley Circuit 5167 Uprate 2030 Uprate 230 kV Circuit 5167 from Smoky Hill to Buckley by reconductoring",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Smoky Hill",
+    "Buckley"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1661"
+  },
+  {
+   "native_id": "smoky-hill-leetsdale-circuit-5285-uprate",
+   "name": "Smoky Hill – Buckley – Tollgate – Jewell – Leetsdale",
+   "page": 3,
+   "quote": "Smoky Hill – Buckley – Tollgate – Jewell – Leetsdale 2030 Circuit 5285 Uprate Uprate 230 kV Circuit 5285 from Smoky Hill to Leetsdale by reconductoring",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Smoky Hill",
+    "Leetsdale"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1661"
+  },
+  {
+   "native_id": "denver-terminal-elati-circuit-5625-uprate",
+   "name": "Denver Terminal – Elati Circuit 5625 Uprate",
+   "page": 3,
+   "quote": "Denver Terminal – Elati Circuit 5625 Uprate 2030 Uprate 230 kV Circuit 5625 from Denver Terminal to Elati by reconductoring",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Denver Terminal",
+    "Elati"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1663"
+  },
+  {
+   "native_id": "daniels-park-345-230-kv-transformer-4",
+   "name": "Daniels Park 345/230 kV Transformer #4",
+   "page": 2,
+   "quote": "Daniels Park 345/230 kV Transformer #4 2029 Add a fourth 345/230 kV transformer to the Daniels Park substation.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Daniels Park"
+   ],
+   "voltages_kv": [
+    345,
+    230
+   ],
+   "in_service_raw": "2029",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1647"
+  },
+  {
+   "native_id": "greenwood-substation-bus-tie-uprate",
+   "name": "Greenwood Substation Bus-Tie Uprate",
+   "page": 3,
+   "quote": "Greenwood Substation Bus-Tie Uprate 2028 Uprate the 230 kV bus-tie breaker in the Greenwood substation.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Greenwood"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1645"
+  },
+  {
+   "native_id": "greenwood-monaco-series-reactor",
+   "name": "Greenwood – Monaco Series Reactor",
+   "page": 3,
+   "quote": "Greenwood – Monaco Series Reactor 2030 Add a series reactor to 230 kV Circuit 5717 from Greenwood to Monaco, to be installed within the Greenwood substation.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Greenwood"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1654"
+  },
+  {
+   "native_id": "south-substation-230-kv-expansion",
+   "name": "South Substation 230 kV Expansion",
+   "page": 3,
+   "quote": "South Substation 230 kV Expansion 2030 Add new 230 kV yard to the South substation, along with a new 230/115 kV transformer to connect to the existing 115 kV portion of the substation.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "South"
+   ],
+   "voltages_kv": [
+    230,
+    115
+   ],
+   "in_service_raw": "2030",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1662"
+  },
+  {
+   "native_id": "smoky-hill-345-230-kv-transformer-3",
+   "name": "Smoky Hill Substation 345/230 kV Transformer #3",
+   "page": 3,
+   "quote": "Smoky Hill Substation 345/230 kV Transformer #3 2029 Add a third 345/230 kV transformer to the Smoky Hill substation.",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Smoky Hill"
+   ],
+   "voltages_kv": [
+    345,
+    230
+   ],
+   "in_service_raw": "2029",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1648"
+  },
+  {
+   "native_id": "fort-lupton-ct",
+   "name": "Fort Lupton CT",
+   "page": 4,
+   "quote": "Fort Lupton CT 200 Gas Fort Lupton 115 kV 2027",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    115
+   ],
+   "in_service_raw": "2027",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "ft-saint-vrain-ct-7-8",
+   "name": "Ft. Saint Vrain CT 7",
+   "page": 4,
+   "quote": "Ft. Saint Vrain CT 7 Fort St. Vrain 230 kV 400 Gas 2027 & 8 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2027",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "dryland-prairie-bess",
+   "name": "Dryland Prairie",
+   "page": 4,
+   "quote": "Goose Creek 345 kV Dryland Prairie 250 BESS 2026 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "south-platte-pawnee-storage",
+   "name": "South Platte",
+   "page": 4,
+   "quote": "South Platte Pawnee 345 kV 250 BESS 2027 (Pawnee) Storage Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2027",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "comanche-bess",
+   "name": "Comanche",
+   "page": 4,
+   "quote": "Comanche 345 kV Comanche 200 BESS 2026 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "spindle-bess",
+   "name": "Spindle",
+   "page": 4,
+   "quote": "Spindle 230 kV Spindle 199 BESS 2026 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "towner-wind-i",
+   "name": "Towner Wind I",
+   "page": 4,
+   "quote": "May Valley 345 kV Towner Wind I 500 Wind 2026 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "cheyenne-ridge-ii",
+   "name": "Cheyenne Ridge II",
+   "page": 4,
+   "quote": "Goose Creek 345 kV Cheyenne Ridge II 450 Wind 2026 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "singing-grass-wind",
+   "name": "Singing Grass Wind",
+   "page": 4,
+   "quote": "Goose Creek 345 kV Singing Grass Wind 603 Wind 2026 Substation",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "colt-creek-solar",
+   "name": "Colt Creek",
+   "page": 4,
+   "quote": "May Valley-Tundra 345 Colt Creek 400 Solar 2028 kV",
+   "owner": "Public Service Company of Colorado",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  }
+ ]
+}

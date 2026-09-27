@@ -16,7 +16,7 @@
     "public_status": "verified_public",
     "publication_date": null,
     "publisher": "WestConnect",
-    "retrieved_at": "2026-09-27T08:01:51Z",
+    "retrieved_at": "2026-09-27T09:36:01Z",
     "role": "project_plan",
     "sha256": "ed9261738c81311d63afdd6c79b49d04f8e201477e01c0c9c08e5afe37570b3a",
     "states": [
@@ -43,7 +43,7 @@
     "public_status": "verified_public",
     "publication_date": null,
     "publisher": "WestTEC (layer hosted by BPA)",
-    "retrieved_at": "2026-09-27T08:01:53Z",
+    "retrieved_at": "2026-09-27T11:17:25Z",
     "role": "project_plan",
     "sha256": "0490586465c9e95eca10bc8b1d2c9cae2d545af6504274ddddf203590ace764c",
     "states": [
@@ -52,5 +52,200 @@
     ],
     "title": "WestTEC 10-year planned projects layer (Nevada and Utah lines)",
     "vintage": null
+  },
+  {
+    "_id": "wecc-apr-2026-psco",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PSCo%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PSCo%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Public Service Company of Colorado",
+    "retrieved_at": "2026-09-27T11:19:26Z",
+    "role": "project_plan",
+    "sha256": "090f46e36ed8453217119a54c1a981c545751b8431279f192148e6bc9897b6f4",
+    "states": [],
+    "title": "Public Service Company of Colorado 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-tsgt",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TSGT%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TSGT%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 2,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Tri-State Generation and Transmission Association",
+    "retrieved_at": "2026-09-27T11:19:28Z",
+    "role": "project_plan",
+    "sha256": "d1b34d0e8dbe45af16140b2de2bbb4bda5de20343513ce16e3e06994ba9cfc3e",
+    "states": [
+      "08",
+      "35"
+    ],
+    "title": "Tri-State Generation and Transmission Association 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-aps",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/APS%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/APS%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 2,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Arizona Public Service",
+    "retrieved_at": "2026-09-27T11:19:30Z",
+    "role": "project_plan",
+    "sha256": "1639c6c5d89d5484681ab904a545f4978ea90c5422b10c95089d3a62b23971ec",
+    "states": [
+      "04"
+    ],
+    "title": "Arizona Public Service 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-tep",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TEP%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TEP%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 2,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Tucson Electric Power",
+    "retrieved_at": "2026-09-27T11:19:33Z",
+    "role": "project_plan",
+    "sha256": "057ed0ea538b1fc3f5a047f93b1dbaeb709f7e1cfe89383e733d8ba418de8e14",
+    "states": [
+      "04"
+    ],
+    "title": "Tucson Electric Power 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-aepco",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/AEPCO%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/AEPCO%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Arizona Electric Power Cooperative",
+    "retrieved_at": "2026-09-27T11:19:34Z",
+    "role": "project_plan",
+    "sha256": "6d3bf1cbab714b9dac9692edc63479eaa7e4844fab79738d9cb09643c8972d0b",
+    "states": [],
+    "title": "Arizona Electric Power Cooperative 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-pnm",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PNM%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PNM%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Public Service Company of New Mexico",
+    "retrieved_at": "2026-09-27T11:19:36Z",
+    "role": "project_plan",
+    "sha256": "eae860185aacad92a39a66c8f2cca7aadbd1a7c98a76851c4229021f9f1d6570",
+    "states": [],
+    "title": "Public Service Company of New Mexico 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-epe",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/EPE%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/EPE%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "El Paso Electric Company",
+    "retrieved_at": "2026-09-27T11:19:39Z",
+    "role": "project_plan",
+    "sha256": "a5ccd6bffb723bcc69da89d0b70bdf36cf34ffc98f6d97166031acc2b4b60912",
+    "states": [
+      "35"
+    ],
+    "title": "El Paso Electric Company 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-wapa",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/WAPA%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/WAPA%202026%20APR.pdf",
+    "notes": [
+      "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded.",
+      "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."
+    ],
+    "planning_region": "WECC",
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Western Area Power Administration",
+    "retrieved_at": "2026-09-27T11:19:41Z",
+    "role": "project_plan",
+    "sha256": "38b165117ffaed2619592c26215965a705aafaf5034bdf4e2073845875acd0fe",
+    "states": [
+      "04"
+    ],
+    "title": "Western Area Power Administration 2026 WECC Annual Progress Report",
+    "vintage": "2026"
   }
 ]

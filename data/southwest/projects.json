@@ -1,5 +1,793 @@
 [
   {
+    "_id": "wecc-apr-2026-aps:cholla-chevelon-cut-in-sitgreaves",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM relation/12206517 (Cholla Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 34.938422,
+      "lon": -110.303328
+    },
+    "counties": [],
+    "description": "Cholla-Chevelon 345kV Line Cut-In to Sitgreaves 2029",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "2029",
+        "quote": "Cholla-Chevelon 345kV Line Cut-In to Sitgreaves 2029",
+        "status_raw": "waivers granted",
+        "transcription": "transcriptions/apr_aps_2026.json#26"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "1639c6c5d89d5484681ab904a545f4978ea90c5422b10c95089d3a62b23971ec"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2029",
+      "value": "2029"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AZ (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "relation/12206517",
+            "lat": 34.9384224,
+            "lon": -110.3033277,
+            "name": "Cholla Substation",
+            "operator": null,
+            "state": "AZ",
+            "voltage": "500000;345000;230000"
+          },
+          "name": "Cholla",
+          "norm": "CHOLLA",
+          "status": "matched"
+        },
+        {
+          "name": "Chevelon",
+          "norm": "CHEVELON",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "ARIZONA PUBLIC SERVICE",
+        "APS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Cholla-Chevelon 345kV Line Cut-In to Sitgreaves",
+    "native_id": "cholla-chevelon-cut-in-sitgreaves",
+    "other_owners": [],
+    "owner": "Arizona Public Service",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2029",
+        "description": "Expected in service 2029 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "1639c6c5d89d5484681ab904a545f4978ea90c5422b10c95089d3a62b23971ec",
+            "facts": "Cholla-Chevelon 345kV Line Cut-In to Sitgreaves 2029",
+            "locator": "APS_2026_APR.pdf#page=2",
+            "publisher": "Arizona Public Service",
+            "retrieved_at": "2026-09-27T11:19:30Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/APS%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-aps:cholla-chevelon-cut-in-sitgreaves:planned-in-service",
+        "native_project_link": "cholla-chevelon-cut-in-sitgreaves",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-aps",
+    "states": [
+      "04"
+    ],
+    "status": "waivers granted",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-aps:four-corners-cholla-pinnacle-peak-345kv-rebuilds",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/297592435 (Pinnacle Peak Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 33.704637,
+      "lon": -111.938408
+    },
+    "counties": [],
+    "description": "Four Corners to Cholla to Pinnacle Peak 345kV Line Rebuilds 2038",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "2038",
+        "quote": "Four Corners to Cholla to Pinnacle Peak 345kV Line Rebuilds 2038",
+        "status_raw": "waivers granted",
+        "transcription": "transcriptions/apr_aps_2026.json#23"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "1639c6c5d89d5484681ab904a545f4978ea90c5422b10c95089d3a62b23971ec"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2038",
+      "value": "2038"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AZ (ODbL)",
+      "endpoints": [
+        {
+          "name": "Four Corners",
+          "norm": "FOUR CORNERS",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/297592435",
+            "lat": 33.7046372,
+            "lon": -111.9384078,
+            "name": "Pinnacle Peak Substation",
+            "operator": null,
+            "state": "AZ",
+            "voltage": "500000;345000;230000"
+          },
+          "name": "Pinnacle Peak",
+          "norm": "PINNACLE PEAK",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "ARIZONA PUBLIC SERVICE",
+        "APS"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Four Corners to Cholla to Pinnacle Peak 345kV Line Rebuilds",
+    "native_id": "four-corners-cholla-pinnacle-peak-345kv-rebuilds",
+    "other_owners": [],
+    "owner": "Arizona Public Service",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2038",
+        "description": "Expected in service 2038 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "1639c6c5d89d5484681ab904a545f4978ea90c5422b10c95089d3a62b23971ec",
+            "facts": "Four Corners to Cholla to Pinnacle Peak 345kV Line Rebuilds 2038",
+            "locator": "APS_2026_APR.pdf#page=2",
+            "publisher": "Arizona Public Service",
+            "retrieved_at": "2026-09-27T11:19:30Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/APS%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-aps:four-corners-cholla-pinnacle-peak-345kv-rebuilds:planned-in-service",
+        "native_project_link": "four-corners-cholla-pinnacle-peak-345kv-rebuilds",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-aps",
+    "states": [
+      "04"
+    ],
+    "status": "waivers granted",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-epe:afton-newman-in-out-vado-afton-vado-portion",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/163763972 (Afton), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 32.11406,
+      "lon": -106.848274
+    },
+    "counties": [],
+    "description": "The Afton to Newman 345 kV Line Reconfiguration consists of several elements. The reconfiguration will consist of cutting into the Afton to Newman 345 kV Line to connect to Vado 345 kV Bus. The new Path will consist of Afton to Vado to Newman 345 kV Circuits.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "May 2028",
+        "quote": "The Afton to Newman 345 kV Line Reconfiguration consists of several elements. The reconfiguration will consist of cutting into the Afton to Newman 345 kV Line to connect to Vado 345 kV Bus. The new Path will consist of Afton to Vado to Newman 345 kV Circuits.",
+        "status_raw": "Waiver of “Significant Impact” Granted",
+        "transcription": "transcriptions/apr_epe_2026.json#6"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a5ccd6bffb723bcc69da89d0b70bdf36cf34ffc98f6d97166031acc2b4b60912"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2028",
+      "value": "2028-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NM (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/163763972",
+            "lat": 32.11406,
+            "lon": -106.8482736,
+            "name": "Afton",
+            "operator": null,
+            "state": "NM",
+            "voltage": "345000"
+          },
+          "name": "Afton",
+          "norm": "AFTON",
+          "status": "matched"
+        },
+        {
+          "name": "Vado",
+          "norm": "VADO",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "EL PASO ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Afton-Newman 345 kV In and Out into Vado 345 kV Substation Line Reconfiguration (Afton-Vado 345 kV line Portion)",
+    "native_id": "afton-newman-in-out-vado-afton-vado-portion",
+    "other_owners": [],
+    "owner": "El Paso Electric Company",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-05",
+        "description": "Expected in service May 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a5ccd6bffb723bcc69da89d0b70bdf36cf34ffc98f6d97166031acc2b4b60912",
+            "facts": "The Afton to Newman 345 kV Line Reconfiguration consists of several elements. The reconfiguration will consist of cutting into the Afton to Newman 345 kV Line to connect to Vado 345 kV Bus. The new Path will consist of Afton to Vado to Newman 345 kV Circuits.",
+            "locator": "EPE_2026_APR.pdf#page=2",
+            "publisher": "El Paso Electric Company",
+            "retrieved_at": "2026-09-27T11:19:39Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/EPE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-epe:afton-newman-in-out-vado-afton-vado-portion:planned-in-service",
+        "native_project_link": "afton-newman-in-out-vado-afton-vado-portion",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-epe",
+    "states": [
+      "35"
+    ],
+    "status": "Waiver of “Significant Impact” Granted",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-tep:springerville-greenlee-3-345-kv-line",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/104746095 (Springerville Substation), OSM way/163267075 (Greenlee Substation), corroborated by operator, voltage.",
+      "lat": 33.639335,
+      "lon": -109.166653
+    },
+    "counties": [],
+    "description": "Springerville – Greenlee #3 345 kV Line",
+    "evidence": {
+      "page": 3,
+      "raw": {
+        "in_service_raw": "beyond the 10-year time frame",
+        "quote": "Springerville – Greenlee #3 345 kV Line",
+        "status_raw": "schedule is tentative",
+        "transcription": "transcriptions/apr_tep_2026.json#11"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "057ed0ea538b1fc3f5a047f93b1dbaeb709f7e1cfe89383e733d8ba418de8e14"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "unknown",
+      "raw": "beyond the 10-year time frame",
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AZ (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/104746095",
+            "lat": 34.3118699,
+            "lon": -109.1609719,
+            "name": "Springerville Substation",
+            "operator": null,
+            "state": "AZ",
+            "voltage": "345000"
+          },
+          "name": "Springerville",
+          "norm": "SPRINGERVILLE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/163267075",
+            "lat": 32.9668001,
+            "lon": -109.1723335,
+            "name": "Greenlee Substation",
+            "operator": "Tucson Electric Power",
+            "state": "AZ",
+            "voltage": "345000"
+          },
+          "name": "Greenlee",
+          "norm": "GREENLEE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "TUCSON ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Springerville – Greenlee #3 345 kV Line",
+    "native_id": "springerville-greenlee-3-345-kv-line",
+    "other_owners": [],
+    "owner": "Tucson Electric Power",
+    "planning_region": "WECC",
+    "project_events": [],
+    "source_id": "wecc-apr-2026-tep",
+    "states": [
+      "04"
+    ],
+    "status": "schedule is tentative",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-tep:tortolita-500-138-kv-transformer-addition",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/105925785 (Tortolita Substation), corroborated by operator, voltage.",
+      "lat": 32.544338,
+      "lon": -111.285872
+    },
+    "counties": [],
+    "description": "Tortolita 500/138 kV Transformer Addition: TEP plans to add a fourth 500/138 kV transformer at Tortolita substation to be operated in parallel to the existing transformers. The purpose of this transformer addition is to increase import capability into the TEP Load Pocket to accommodate increased forecasted load. The expected in- service date for this project is 2031.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "2031",
+        "quote": "Tortolita 500/138 kV Transformer Addition: TEP plans to add a fourth 500/138 kV transformer at Tortolita substation to be operated in parallel to the existing transformers. The purpose of this transformer addition is to increase import capability into the TEP Load Pocket to accommodate increased forecasted load. The expected in- service date for this project is 2031.",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_tep_2026.json#4"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "057ed0ea538b1fc3f5a047f93b1dbaeb709f7e1cfe89383e733d8ba418de8e14"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2031",
+      "value": "2031"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AZ (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/105925785",
+            "lat": 32.5443379,
+            "lon": -111.2858724,
+            "name": "Tortolita Substation",
+            "operator": "Tucson Electric Power",
+            "state": "AZ",
+            "voltage": "500000"
+          },
+          "name": "Tortolita",
+          "norm": "TORTOLITA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "TUCSON ELECTRIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        138,
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Tortolita 500/138 kV Transformer Addition",
+    "native_id": "tortolita-500-138-kv-transformer-addition",
+    "other_owners": [],
+    "owner": "Tucson Electric Power",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2031",
+        "description": "Expected in service 2031 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "057ed0ea538b1fc3f5a047f93b1dbaeb709f7e1cfe89383e733d8ba418de8e14",
+            "facts": "Tortolita 500/138 kV Transformer Addition: TEP plans to add a fourth 500/138 kV transformer at Tortolita substation to be operated in parallel to the existing transformers. The purpose of this transformer addition is to increase import capability into the TEP Load Pocket to accommodate increased forecasted load. The expected in- service date for this project is 2031.",
+            "locator": "TEP_2026_APR.pdf#page=2",
+            "publisher": "Tucson Electric Power",
+            "retrieved_at": "2026-09-27T11:19:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TEP%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-tep:tortolita-500-138-kv-transformer-addition:planned-in-service",
+        "native_project_link": "tortolita-500-138-kv-transformer-addition",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-tep",
+    "states": [
+      "04"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-tsgt:boone-lamar-230-kv-reconductor",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/163973338 (Lamar Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 38.206988,
+      "lon": -102.524997
+    },
+    "counties": [],
+    "description": "Boone – Lamar 230 kV Reconductor (2025 Waiver Granted) This project consists of replacing the Boone – Lamar 230 kV transmission line SD conductor with equivalently sized ACSR conductor.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "2028",
+        "quote": "Boone – Lamar 230 kV Reconductor (2025 Waiver Granted) This project consists of replacing the Boone – Lamar 230 kV transmission line SD conductor with equivalently sized ACSR conductor.",
+        "status_raw": "2025 Waiver Granted",
+        "transcription": "transcriptions/apr_tsgt_2026.json#8"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "d1b34d0e8dbe45af16140b2de2bbb4bda5de20343513ce16e3e06994ba9cfc3e"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, CO/NM (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Boone",
+          "norm": "BOONE",
+          "status": "operator_conflict"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/163973338",
+            "lat": 38.2069877,
+            "lon": -102.5249968,
+            "name": "Lamar Substation",
+            "operator": null,
+            "state": "CO",
+            "voltage": "230000;115000"
+          },
+          "name": "Lamar",
+          "norm": "LAMAR",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "TRI-STATE",
+        "TRI STATE"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Boone – Lamar 230 kV Reconductor",
+    "native_id": "boone-lamar-230-kv-reconductor",
+    "other_owners": [],
+    "owner": "Tri-State Generation and Transmission Association",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Expected in service 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "d1b34d0e8dbe45af16140b2de2bbb4bda5de20343513ce16e3e06994ba9cfc3e",
+            "facts": "Boone – Lamar 230 kV Reconductor (2025 Waiver Granted) This project consists of replacing the Boone – Lamar 230 kV transmission line SD conductor with equivalently sized ACSR conductor.",
+            "locator": "TSGT_2026_APR.pdf#page=2",
+            "publisher": "Tri-State Generation and Transmission Association",
+            "retrieved_at": "2026-09-27T11:19:28Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TSGT%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-tsgt:boone-lamar-230-kv-reconductor:planned-in-service",
+        "native_project_link": "boone-lamar-230-kv-reconductor",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-tsgt",
+    "states": [
+      "08"
+    ],
+    "status": "2025 Waiver Granted",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-tsgt:pegs-ambrosia-230-kv-line-upgrade",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/182451291 (Ambrosia Sub), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 35.402717,
+      "lon": -107.848272
+    },
+    "counties": [],
+    "description": "Project Description: Perform two structure replacements on the PEGS (Escalante) – Ambrosia 230 kV Line to improve its Maximum Operating Temperature from 50°C to 100°C. The line is constructed with 1590 kcmil ACSR “Falcon” conductor. Voltage Class: 230 kV Facility Rating: 446 MVA (terminal limited) Location: Western New Mexico, McKinley county",
+    "evidence": {
+      "page": 5,
+      "raw": {
+        "in_service_raw": "2027",
+        "quote": "Project Description: Perform two structure replacements on the PEGS (Escalante) – Ambrosia 230 kV Line to improve its Maximum Operating Temperature from 50°C to 100°C. The line is constructed with 1590 kcmil ACSR “Falcon” conductor. Voltage Class: 230 kV Facility Rating: 446 MVA (terminal limited) Location: Western New Mexico, McKinley county",
+        "status_raw": "Planned",
+        "transcription": "transcriptions/apr_tsgt_2026.json#9"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "d1b34d0e8dbe45af16140b2de2bbb4bda5de20343513ce16e3e06994ba9cfc3e"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "year",
+      "raw": "2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NM (ODbL)",
+      "endpoints": [
+        {
+          "name": "PEGS",
+          "norm": "PEGS",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/182451291",
+            "lat": 35.4027166,
+            "lon": -107.8482724,
+            "name": "Ambrosia Sub",
+            "operator": null,
+            "state": "NM",
+            "voltage": "230000"
+          },
+          "name": "Ambrosia",
+          "norm": "AMBROSIA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "TRI-STATE",
+        "TRI STATE"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Pegs – Ambrosia 230 kV Line Upgrade",
+    "native_id": "pegs-ambrosia-230-kv-line-upgrade",
+    "other_owners": [],
+    "owner": "Tri-State Generation and Transmission Association",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Expected in service 2027 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "d1b34d0e8dbe45af16140b2de2bbb4bda5de20343513ce16e3e06994ba9cfc3e",
+            "facts": "Project Description: Perform two structure replacements on the PEGS (Escalante) – Ambrosia 230 kV Line to improve its Maximum Operating Temperature from 50°C to 100°C. The line is constructed with 1590 kcmil ACSR “Falcon” conductor. Voltage Class: 230 kV Facility Rating: 446 MVA (terminal limited) Location: Western New Mexico, McKinley county",
+            "locator": "TSGT_2026_APR.pdf#page=5",
+            "publisher": "Tri-State Generation and Transmission Association",
+            "retrieved_at": "2026-09-27T11:19:28Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/TSGT%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-tsgt:pegs-ambrosia-230-kv-line-upgrade:planned-in-service",
+        "native_project_link": "pegs-ambrosia-230-kv-line-upgrade",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-tsgt",
+    "states": [
+      "35"
+    ],
+    "status": "Planned",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-wapa:bouse-upgrade",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/634026481 (Bouse Switchyard), corroborated by operator, voltage.",
+      "lat": 33.998613,
+      "lon": -114.216528
+    },
+    "counties": [],
+    "description": "B. Bouse Upgrade a) Description of Work: • Expand the existing Bouse Substation by adding a 230kV bus. • Add two 230/161kV Transformer Banks at the Bouse substation.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "4th Quarter 2030",
+        "quote": "B. Bouse Upgrade a) Description of Work: • Expand the existing Bouse Substation by adding a 230kV bus. • Add two 230/161kV Transformer Banks at the Bouse substation.",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_wapa_2026.json#4"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "38b165117ffaed2619592c26215965a705aafaf5034bdf4e2073845875acd0fe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "unknown",
+      "raw": "4th Quarter 2030",
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, AZ/CO/NV/UT (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/634026481",
+            "lat": 33.9986135,
+            "lon": -114.2165277,
+            "name": "Bouse Switchyard",
+            "operator": "Western Area Power Administration",
+            "state": "AZ",
+            "voltage": "161000"
+          },
+          "name": "Bouse",
+          "norm": "BOUSE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "WESTERN AREA",
+        "WAPA"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        161,
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Bouse Upgrade",
+    "native_id": "bouse-upgrade",
+    "other_owners": [],
+    "owner": "Western Area Power Administration",
+    "planning_region": "WECC",
+    "project_events": [],
+    "source_id": "wecc-apr-2026-wapa",
+    "states": [
+      "04"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
     "_id": "westconnect-tppl-2026-02:100",
     "center": {
       "basis": "one",
@@ -89,7 +877,7 @@
             "facts": "InService = 2032",
             "locator": "sheet All Projects, row 10 (projectid 100)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -198,7 +986,7 @@
             "facts": "InService = 2032",
             "locator": "sheet All Projects, row 11 (projectid 102)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -318,7 +1106,7 @@
             "facts": "InService = 2032",
             "locator": "sheet All Projects, row 12 (projectid 103)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -681,7 +1469,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 13 (projectid 106)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -784,7 +1572,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 49 (projectid 1072)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -945,7 +1733,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 14 (projectid 108)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -1130,7 +1918,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 52 (projectid 1081)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -1220,7 +2008,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 53 (projectid 1082)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -1823,7 +2611,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 15 (projectid 110)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2001,7 +2789,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 16 (projectid 112)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2120,7 +2908,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 62 (projectid 1129)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2228,7 +3016,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 64 (projectid 1131)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2347,7 +3135,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 65 (projectid 1132)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2434,7 +3222,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 66 (projectid 1136)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2555,7 +3343,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 67 (projectid 1137)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2676,7 +3464,7 @@
             "facts": "InService = 2033",
             "locator": "sheet All Projects, row 68 (projectid 1140)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -2859,7 +3647,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 70 (projectid 1142)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3029,7 +3817,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 72 (projectid 1144)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3264,7 +4052,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 75 (projectid 1148)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3419,7 +4207,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 77 (projectid 1195)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3507,7 +4295,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 78 (projectid 1197)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3595,7 +4383,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 79 (projectid 1199)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3705,7 +4493,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 80 (projectid 1200)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3860,7 +4648,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 82 (projectid 1202)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -3947,7 +4735,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 83 (projectid 1204)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4119,7 +4907,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 85 (projectid 1235)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4207,7 +4995,7 @@
             "facts": "InService = 2025",
             "locator": "sheet All Projects, row 86 (projectid 1236)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4295,7 +5083,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 87 (projectid 1237)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4399,7 +5187,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 88 (projectid 1238)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4487,7 +5275,7 @@
             "facts": "Development = In-Service; InService = In-service",
             "locator": "sheet All Projects, row 89 (projectid 1240)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4591,7 +5379,7 @@
             "facts": "Development = In-Service; InService = In-service",
             "locator": "sheet All Projects, row 90 (projectid 1241)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4679,7 +5467,7 @@
             "facts": "Development = In-Service; InService = in-service",
             "locator": "sheet All Projects, row 91 (projectid 1242)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4789,7 +5577,7 @@
             "facts": "Development = In-Service; InService = in-service",
             "locator": "sheet All Projects, row 92 (projectid 1243)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -4908,7 +5696,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 95 (projectid 1254)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5027,7 +5815,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 96 (projectid 1255)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5114,7 +5902,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 97 (projectid 1256)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5222,7 +6010,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 98 (projectid 1257)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5309,7 +6097,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 99 (projectid 1261)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5418,7 +6206,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 111 (projectid 1274)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5609,7 +6397,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 114 (projectid 1278)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5696,7 +6484,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 117 (projectid 1283)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5783,7 +6571,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 119 (projectid 1286)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5864,7 +6652,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 120 (projectid 1307)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -5974,7 +6762,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 135 (projectid 1328)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6056,7 +6844,7 @@
             "facts": "InService = 2024",
             "locator": "sheet All Projects, row 136 (projectid 1329)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6166,7 +6954,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 137 (projectid 1330)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6271,7 +7059,7 @@
             "facts": "InService = 2023",
             "locator": "sheet All Projects, row 138 (projectid 1331)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6375,7 +7163,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 139 (projectid 1332)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6561,7 +7349,7 @@
             "facts": "Development = In-Service; InService = 2026",
             "locator": "sheet All Projects, row 141 (projectid 1335)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6664,7 +7452,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 142 (projectid 1336)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6751,7 +7539,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 143 (projectid 1337)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6854,7 +7642,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 144 (projectid 1338)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -6973,7 +7761,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 145 (projectid 1339)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7092,7 +7880,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 146 (projectid 1340)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7197,7 +7985,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 147 (projectid 1341)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7301,7 +8089,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 148 (projectid 1342)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7405,7 +8193,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 149 (projectid 1343)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7492,7 +8280,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 150 (projectid 1344)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7601,7 +8389,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 151 (projectid 1345)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7709,7 +8497,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 152 (projectid 1346)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7801,7 +8589,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 153 (projectid 1347)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -7905,7 +8693,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 154 (projectid 1348)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8013,7 +8801,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 155 (projectid 1351)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8101,7 +8889,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 156 (projectid 1352)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8192,7 +8980,7 @@
             "facts": "InService = 2025",
             "locator": "sheet All Projects, row 157 (projectid 1353)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8301,7 +9089,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 158 (projectid 1355)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8397,7 +9185,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 159 (projectid 1356)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8507,7 +9295,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 160 (projectid 1357)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8617,7 +9405,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 161 (projectid 1358)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8705,7 +9493,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 163 (projectid 1361)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8793,7 +9581,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 164 (projectid 1367)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -8882,7 +9670,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 165 (projectid 1368)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9003,7 +9791,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 166 (projectid 1369)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9123,7 +9911,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 167 (projectid 1370)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9216,7 +10004,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 168 (projectid 1372)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9335,7 +10123,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 169 (projectid 1416)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9422,7 +10210,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 171 (projectid 1433)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9526,7 +10314,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 188 (projectid 1450)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9634,7 +10422,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 190 (projectid 1452)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9737,7 +10525,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 192 (projectid 1454)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9840,7 +10628,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 193 (projectid 1455)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -9927,7 +10715,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 195 (projectid 1457)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10014,7 +10802,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 197 (projectid 1459)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10117,7 +10905,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 198 (projectid 1460)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10227,7 +11015,7 @@
             "facts": "Development = In-Service; InService = in-service",
             "locator": "sheet All Projects, row 214 (projectid 1476)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10349,7 +11137,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 215 (projectid 1477)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10459,7 +11247,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 216 (projectid 1478)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10564,7 +11352,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 217 (projectid 1479)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10669,7 +11457,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 218 (projectid 1480)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10774,7 +11562,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 219 (projectid 1481)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10862,7 +11650,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 220 (projectid 1482)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -10950,7 +11738,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 221 (projectid 1502)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11032,7 +11820,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 222 (projectid 1503)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11190,7 +11978,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 225 (projectid 1506)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11294,7 +12082,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 226 (projectid 1507)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11386,7 +12174,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 227 (projectid 1518)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11478,7 +12266,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 228 (projectid 1519)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11573,7 +12361,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 229 (projectid 1520)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11668,7 +12456,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 230 (projectid 1521)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11763,7 +12551,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 231 (projectid 1522)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11858,7 +12646,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 232 (projectid 1523)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -11967,7 +12755,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 233 (projectid 1524)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12086,7 +12874,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 234 (projectid 1525)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12194,7 +12982,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 235 (projectid 1526)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12281,7 +13069,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 236 (projectid 1542)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12373,7 +13161,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 237 (projectid 1543)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12465,7 +13253,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 238 (projectid 1544)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12557,7 +13345,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 239 (projectid 1545)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12644,7 +13432,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 240 (projectid 1546)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12736,7 +13524,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 241 (projectid 1547)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12837,7 +13625,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 244 (projectid 1550)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -12930,7 +13718,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 245 (projectid 1551)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13018,7 +13806,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 246 (projectid 1552)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13106,7 +13894,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 247 (projectid 1553)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13215,7 +14003,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 248 (projectid 1554)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13320,7 +14108,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 249 (projectid 1555)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13408,7 +14196,7 @@
             "facts": "Development = In-Service; InService = 2026",
             "locator": "sheet All Projects, row 250 (projectid 1556)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13517,7 +14305,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 251 (projectid 1557)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13605,7 +14393,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 252 (projectid 1558)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13698,7 +14486,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 253 (projectid 1559)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13807,7 +14595,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 254 (projectid 1560)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13895,7 +14683,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 255 (projectid 1561)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -13988,7 +14776,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 256 (projectid 1562)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -14529,7 +15317,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 264 (projectid 1572)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -14633,7 +15421,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 265 (projectid 1573)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -14737,7 +15525,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 266 (projectid 1574)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -14829,7 +15617,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 290 (projectid 1598)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -14916,7 +15704,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 292 (projectid 1600)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15003,7 +15791,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 300 (projectid 1608)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15114,7 +15902,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 301 (projectid 1609)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15201,7 +15989,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 307 (projectid 1615)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15321,7 +16109,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 313 (projectid 1621)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15440,7 +16228,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 314 (projectid 1622)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15548,7 +16336,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 316 (projectid 1624)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15651,7 +16439,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 317 (projectid 1625)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15744,7 +16532,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 322 (projectid 1630)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15849,7 +16637,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 323 (projectid 1631)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -15954,7 +16742,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 324 (projectid 1632)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16047,7 +16835,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 325 (projectid 1634)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16157,7 +16945,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 326 (projectid 1635)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16267,7 +17055,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 327 (projectid 1636)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16389,7 +17177,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 328 (projectid 1637)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16511,7 +17299,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 329 (projectid 1638)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16616,7 +17404,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 330 (projectid 1639)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16721,7 +17509,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 331 (projectid 1640)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16831,7 +17619,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 332 (projectid 1641)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -16953,7 +17741,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 333 (projectid 1642)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17075,7 +17863,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 334 (projectid 1643)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17180,7 +17968,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 335 (projectid 1644)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17285,7 +18073,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 336 (projectid 1645)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17407,7 +18195,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 337 (projectid 1646)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17512,7 +18300,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 338 (projectid 1647)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17617,7 +18405,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 339 (projectid 1648)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17739,7 +18527,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 340 (projectid 1649)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17861,7 +18649,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 341 (projectid 1650)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -17971,7 +18759,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 342 (projectid 1651)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18093,7 +18881,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 343 (projectid 1652)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18215,7 +19003,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 344 (projectid 1653)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18337,7 +19125,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 345 (projectid 1654)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18459,7 +19247,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 346 (projectid 1655)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18547,7 +19335,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 347 (projectid 1656)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18657,7 +19445,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 348 (projectid 1657)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18767,7 +19555,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 349 (projectid 1658)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -18877,7 +19665,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 350 (projectid 1659)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19086,7 +19874,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 351 (projectid 1660)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19208,7 +19996,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 352 (projectid 1661)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19330,7 +20118,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 353 (projectid 1662)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19440,7 +20228,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 354 (projectid 1663)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19533,7 +20321,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 355 (projectid 1664)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19642,7 +20430,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 356 (projectid 1665)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19764,7 +20552,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 357 (projectid 1666)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19860,7 +20648,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 358 (projectid 1667)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -19970,7 +20758,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 359 (projectid 1668)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20080,7 +20868,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 360 (projectid 1669)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20202,7 +20990,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 361 (projectid 1670)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20324,7 +21112,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 362 (projectid 1671)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20434,7 +21222,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 363 (projectid 1672)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20544,7 +21332,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 364 (projectid 1673)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20653,7 +21441,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 365 (projectid 1674)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20763,7 +21551,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 366 (projectid 1675)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20885,7 +21673,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 367 (projectid 1676)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -20995,7 +21783,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 368 (projectid 1677)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21106,7 +21894,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 369 (projectid 1678)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21198,7 +21986,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 370 (projectid 1679)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21306,7 +22094,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 371 (projectid 1680)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21426,7 +22214,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 372 (projectid 1681)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21530,7 +22318,7 @@
             "facts": "InService = 2035",
             "locator": "sheet All Projects, row 373 (projectid 1682)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21622,7 +22410,7 @@
             "facts": "Development = In-Service; InService = 2029",
             "locator": "sheet All Projects, row 374 (projectid 1683)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21709,7 +22497,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 375 (projectid 1684)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21812,7 +22600,7 @@
             "facts": "InService = 2031",
             "locator": "sheet All Projects, row 376 (projectid 1685)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -21904,7 +22692,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 378 (projectid 1687)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22013,7 +22801,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 379 (projectid 1688)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22121,7 +22909,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 380 (projectid 1689)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22229,7 +23017,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 381 (projectid 1690)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22321,7 +23109,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 382 (projectid 1691)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22409,7 +23197,7 @@
             "facts": "Development = In-Service; InService = 2025",
             "locator": "sheet All Projects, row 383 (projectid 1693)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22513,7 +23301,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 384 (projectid 1694)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22612,7 +23400,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 386 (projectid 1696)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22716,7 +23504,7 @@
             "facts": "InService = 2026",
             "locator": "sheet All Projects, row 387 (projectid 1697)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22809,7 +23597,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 388 (projectid 1698)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -22902,7 +23690,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 389 (projectid 1699)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23079,7 +23867,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 390 (projectid 1700)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23365,7 +24153,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 20 (projectid 315)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23469,7 +24257,7 @@
             "facts": "InService = 2033",
             "locator": "sheet All Projects, row 21 (projectid 340)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23561,7 +24349,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 22 (projectid 347)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23653,7 +24441,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 23 (projectid 348)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23761,7 +24549,7 @@
             "facts": "InService = 2032",
             "locator": "sheet All Projects, row 24 (projectid 349)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -23937,7 +24725,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 25 (projectid 450)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -24048,7 +24836,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 26 (projectid 451)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -24140,7 +24928,7 @@
             "facts": "InService = 2028",
             "locator": "sheet All Projects, row 2 (projectid 5)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -24353,7 +25141,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 28 (projectid 675)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -24952,7 +25740,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 33 (projectid 877)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -25127,7 +25915,7 @@
             "facts": "InService = 2030",
             "locator": "sheet All Projects, row 8 (projectid 88)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -25436,7 +26224,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 9 (projectid 93)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -25549,7 +26337,7 @@
             "facts": "InService = 2029",
             "locator": "sheet All Projects, row 37 (projectid 951)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -25762,7 +26550,7 @@
             "facts": "Development = In-Service; InService = 2024",
             "locator": "sheet All Projects, row 39 (projectid 953)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -25949,7 +26737,7 @@
             "facts": "InService = 2027",
             "locator": "sheet All Projects, row 41 (projectid 970)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }
@@ -26104,7 +26892,7 @@
             "facts": "InService = 2036",
             "locator": "sheet All Projects, row 43 (projectid 987)",
             "publisher": "WestConnect",
-            "retrieved_at": "2026-09-27T08:01:51Z",
+            "retrieved_at": "2026-09-27T09:36:01Z",
             "source_date": null,
             "url": "https://doc.westconnect.com/Documents.aspx?NID=21174&dl=1"
           }

@@ -27,7 +27,10 @@ from california.caiso import match, slug
 from common import REPO_ROOT, load_json, write_json
 from greatlakes.match import candidate_center, facility_key, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
+from interiorwest import apr
 from texas.statewide import inside_geometry
+
+from . import apr as apr_reports
 
 OUT = REPO_ROOT / "data" / "southwest"
 TPPL = "westconnect-tppl-2026-02"
@@ -41,6 +44,7 @@ STATES_URL = ("https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Sta
               "&outSR=4326&maxAllowableOffset=0.001&returnGeometry=true&f=geojson")
 TPPL_STATES = {"Arizona": ("AZ", "04"), "New Mexico": ("NM", "35"), "Colorado": ("CO", "08")}
 WESTTEC_STATES = {"32": "NV", "49": "UT"}
+WESTTEC_USPS = {usps: fips for fips, usps in WESTTEC_STATES.items()}
 OPERATOR_KEYS = {
     "Arizona Public Service": ["ARIZONA PUBLIC SERVICE", "APS"],
     "Tucson Electric Power": ["TUCSON ELECTRIC"],
@@ -210,6 +214,10 @@ def fetch(cache: Path) -> None:
         if name not in manifest:
             fetch_into(cache, name, url, manifest)
             write_json(cache / "manifest.json", manifest)
+    for name, url, _, _ in apr_reports.REPORTS.values():
+        if name not in manifest:
+            fetch_into(cache, name, url, manifest)
+            write_json(cache / "manifest.json", manifest)
     for usps, _ in TPPL_STATES.values():
         if f"osm-{usps.lower()}.json" not in manifest:
             fetch_osm(cache, usps, manifest)
@@ -218,7 +226,8 @@ def fetch(cache: Path) -> None:
 
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{usps.lower()}.json" for usps, _ in TPPL_STATES.values()]
-    manifest = verify_cache(cache, ["tppl.xlsx", "westtec.geojson", "states.geojson", *osm_files])
+    manifest = verify_cache(cache, ["tppl.xlsx", "westtec.geojson", "states.geojson",
+                                    *(r[0] for r in apr_reports.REPORTS.values()), *osm_files])
     facilities = {usps: osm_extract(json.loads((cache / f"osm-{usps.lower()}.json").read_bytes()), usps)
                   for usps, _ in TPPL_STATES.values()}
     rows, stamp = read_tppl(cache / "tppl.xlsx")
@@ -238,8 +247,14 @@ def build(cache: Path) -> dict[Path, object]:
                  if p["source_id"] == "westtec-10yr-planned"}
     westtec, more = westtec_projects(load_json(cache / "westtec.geojson"), states, manifest["westtec.geojson"],
                                      published)
-    projects = sorted(projects + westtec, key=lambda p: p["_id"])
-    dispositions += more
+    # FIX-F45: WECC progress-report rows the TPPL and other rollouts do not already publish.
+    scope = {u: f for u, f in TPPL_STATES.values()} | WESTTEC_USPS
+    reported, reported_dispositions = apr.projects(
+        cache, manifest, facilities, scope, reports=apr_reports.REPORTS, territory=apr_reports.TERRITORY,
+        operator_keys=apr_reports.OPERATOR_KEYS, transcriptions=apr_reports.TRANSCRIPTIONS,
+        published=apr_reports.published_ids() | {p["_id"] for p in projects + westtec}, scope="C42")
+    projects = sorted(projects + westtec + reported, key=lambda p: p["_id"])
+    dispositions += more + reported_dispositions
     tppl, wt = manifest["tppl.xlsx"], manifest["westtec.geojson"]
     note = "F45 Southwest release (C42). Pins are unreviewed; none is independently confirmed. Source-bounded."
     sources = [
@@ -263,6 +278,18 @@ def build(cache: Path) -> dict[Path, object]:
          "notes": [note, "Only lines whose terminal-vertex mean is in Nevada or Utah and that F42 did not publish. "
                    "The layer gives no dates."]},
     ]
+    for name, url, source_id, publisher in apr_reports.REPORTS.values():
+        artifact = manifest[name]
+        sources.append({
+            "_id": source_id, "publisher": publisher, "title": f"{publisher} 2026 WECC Annual Progress Report",
+            "authority": "utility", "role": "project_plan", "landing_url": url, "download_url": artifact["url"],
+            "publication_date": None, "vintage": "2026", "retrieved_at": artifact["retrieved_at"],
+            "sha256": artifact["sha256"], "public_status": "verified_public", "import_status": "imported",
+            "access_policy": "public_document", "planning_region": "WECC",
+            "states": sorted({s for p in projects if p["source_id"] == source_id for s in p["states"]}),
+            "project_count": sum(p["source_id"] == source_id for p in projects),
+            "notes": [note, "FIX-F45: transmission rows transcribed with page and verbatim quote, re-verified against "
+                      "the pinned PDF by F50's reader; rows the TPPL or another rollout publishes are excluded."]})
     return {OUT / "projects.json": projects, OUT / "sources.json": sources, OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",

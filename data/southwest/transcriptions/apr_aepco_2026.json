@@ -1,0 +1,41 @@
+{
+ "file": "AEPCO_2026_APR",
+ "rows": [
+  {
+   "native_id": "apache-solar-2-road-runner",
+   "name": "Apache Solar 2 (Road Runner) Solar and Battery Energy Storage Facility",
+   "page": 1,
+   "quote": "Apache Solar 2 (Road Runner) Solar and Battery Energy Storage Facility This project is a photovoltaic (PV) facility with a 235 MW capacity, paired with a Battery Energy Storage System (BESS) of 235 MW capacity. This configuration is expected to deliver a maximum output of 261 MW",
+   "owner": "Arizona Electric Power Cooperative",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [],
+   "in_service_raw": "December 2025",
+   "status_raw": "in service",
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "cochise-230-kv-substation",
+   "name": "Cochise Substation",
+   "page": 1,
+   "quote": "which is interconnected to AEPCO’s new 230 kV Cochise Substation, radially fed in close proximity to the Apache 230 kV Substation. The project has been in service as of December 2025.",
+   "owner": "Arizona Electric Power Cooperative",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Cochise"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "December 2025",
+   "status_raw": "in service",
+   "work_type": "transmission",
+   "published_as": null
+  }
+ ]
+}

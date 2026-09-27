@@ -1,0 +1,89 @@
+{
+ "file": "PNM_2026_APR",
+ "rows": [
+  {
+   "native_id": "hidden-mountain-345-kv-station",
+   "name": "Hidden Mountain 345 kV Station",
+   "page": 1,
+   "quote": "Hidden Mountain 345 kV Station (2024 Waiver Granted) This project consists of a new 345 kV station (Hidden Mountain) on the existing Pajarito-Western Spirit 345 kV line in central New Mexico.",
+   "owner": "Public Service Company of New Mexico",
+   "states": [
+    "NM"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Hidden Mountain"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "October 2025",
+   "status_raw": "energized",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1476"
+  },
+  {
+   "native_id": "pajarito-345-kv-station-expansion",
+   "name": "Pajarito 345 kV Station Expansion",
+   "page": 1,
+   "quote": "Pajarito 345 kV Station Expansion (New 2026 Waiver Request) The project consists of expanding the Pajarito 345 kV station to accommodate the interconnection of a 150 BESS generation facility. The in-service date is 2027.",
+   "owner": "Public Service Company of New Mexico",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Pajarito"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2027",
+   "status_raw": "New 2026 Waiver Request",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1631"
+  },
+  {
+   "native_id": "hidden-mountain-345-kv-expansion",
+   "name": "Hidden Mountain 345 kV Expansion",
+   "page": 1,
+   "quote": "Hidden Mountain 345 kV Expansion (New 2026 Waiver Request) This project consists of expanding the Hidden Mountain 345 kV station for two additional 345/115 kV transformers. The in-service date is 2028.",
+   "owner": "Public Service Company of New Mexico",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Hidden Mountain"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "New 2026 Waiver Request",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1634"
+  },
+  {
+   "native_id": "rio-puerco-pajarito-prosperity-345-kv-lines",
+   "name": "Rio Puerco-Pajarito-Prosperity 345 kV Lines",
+   "page": 2,
+   "quote": "Rio Puerco-Pajarito-Prosperity 345 kV Lines (New 2026 Waiver Request) The project consists of constructing a new 345 kV station (Prosperity) in southeast Albuquerque, construction of two 345 kV lines: Rio Puerco-Pajarito (34 miles), Pajarito-Prosperity (0.47 miles) and looping the existing Pajarito-Sandia 345 kV line into Prosperity 345 kV station. The in-service date is 2029.",
+   "owner": "Public Service Company of New Mexico",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Rio Puerco",
+    "Prosperity"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "2029",
+   "status_raw": "New 2026 Waiver Request",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1635"
+  }
+ ]
+}
