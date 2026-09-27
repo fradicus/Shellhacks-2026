@@ -19,15 +19,28 @@ function parts(iso: string | null): [number, number, number] | null {
   return m ? [Number(m[1]), Number(m[2]), Number(m[3])] : null;
 }
 
+/** Month/year values describe intervals, including national YYYY-MM / YYYY values.
+ * Boundary components are used only for the drawn interval, never stored as an exact milestone. */
+function milestoneParts(s: InService): [number, number, number] | null {
+  if (!s.date || s.precision === "unknown") return null;
+  if (s.precision === "day") return parts(s.date);
+  if (s.precision === "month") {
+    const m = /^(\d{4})-(\d{2})(?:-\d{2})?$/.exec(s.date);
+    return m && +m[2] >= 1 && +m[2] <= 12 ? [+m[1], +m[2], 1] : null;
+  }
+  const y = /^(\d{4})(?:-\d{2}-\d{2})?$/.exec(s.date);
+  return y ? [+y[1], 1, 1] : null;
+}
+
 /** The axis ground: 1 January of the earliest year drawn. Declared on screen; it is an axis origin, not a date
  * assigned to any project. */
 export function epochYear(spans: InService[]): number {
-  const years = spans.map((s) => parts(s.date)?.[0]).filter((y): y is number => y !== undefined);
+  const years = spans.map((s) => milestoneParts(s)?.[0]).filter((y): y is number => y !== undefined);
   return years.length ? Math.min(...years) : new Date().getUTCFullYear();
 }
 
 export function span(s: InService, epoch: number): Span {
-  const p = parts(s.date);
+  const p = milestoneParts(s);
   if (!p) return { kind: "unknown" };
   const [y, m, d] = p;
   const base = utcDay(epoch, 1, 1);

@@ -1,13 +1,19 @@
+import { loadNationalExplorer } from "@/lib/national/server";
+import { nationalTimeProjects } from "@/components/time/nationalProjects";
 import { TimeView, type TimePair, type TimeProject } from "@/components/time/TimeView";
 import { ErrorState } from "@/components/ui";
 import { analysisDate, getMatches, getProjects, isFixtureMode } from "@/lib/data";
 import { isUnavailable, type Project } from "@/lib/types";
 
 
+export const dynamic = "force-dynamic";
+
 export const metadata = { title: "Overlaps · GridBridge" };
 
 export default async function TimePage() {
-  const [matches, projects] = await Promise.all([getMatches({ limit: 500 }), getProjects()]);
+  const [matches, projects, national] = await Promise.all([
+    getMatches({ limit: 500 }), getProjects(), loadNationalExplorer({ page: 1, limit: 1 }),
+  ]);
   if (isUnavailable(matches) || isUnavailable(projects)) {
     return (
       <main>
@@ -33,6 +39,8 @@ export default async function TimePage() {
     source_id: p.source.source_id,
     page: p.source.page,
   }));
+  const nationalPoints = national.available ? nationalTimeProjects(national.mapProjects, national.sources) : [];
+  slim.push(...nationalPoints);
   const pairs: TimePair[] = matches.map((m) => ({
     id: m._id,
     a: m.a,
@@ -46,6 +54,8 @@ export default async function TimePage() {
   }));
 
   return (
-    <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} />
+    <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()}
+      national={{ available: national.available, mode: national.mode, dataset: national.dataset,
+        drawn: nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );
 }
