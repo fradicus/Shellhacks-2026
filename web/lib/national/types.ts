@@ -47,6 +47,56 @@ export interface NationalProject {
   center: { lat: number; lon: number; basis: "one" | "two" | "source_point"; evidence: string } | null;
   location_review: "confirmed" | "needs_review" | "rejected" | "unreviewed" | "unlocated";
   evidence: { page: number | null; sheet: string | null; row: number | null; raw: Record<string, unknown> };
+  location_verification?: LocationVerification;
+}
+
+/** Additive C23 publication evidence; the pipeline controls confirmation. */
+export interface LocationEvidenceSource {
+  publisher: string;
+  url: string;
+  artifact_sha256: string;
+  locator: string;
+  source_date: string | null;
+  retrieved_at: string;
+  access_review: string;
+  facts: string;
+}
+
+export interface LocationVerification {
+  project_id: string;
+  project_facts_sha256: string;
+  producer: string;
+  location_kind: "site" | "line";
+  points: {
+    role: "site" | "a" | "b";
+    facility_id: string;
+    facility_name: string;
+    lat: number;
+    lon: number;
+    original_geometry: { crs: string; type: "Point"; coordinates: [number, number]; transform: string };
+    precision: string | null;
+    uncertainty_m: number | null;
+    geometry_evidence: LocationEvidenceSource[];
+    identity_evidence: LocationEvidenceSource[];
+    identity_rationale: string;
+  }[];
+  reviews: {
+    id: string;
+    reviewer: string;
+    reviewed_at: string;
+    decision: "confirmed" | "insufficient" | "conflicting" | "rejected";
+    facts_sha256: string;
+    reason: string;
+  }[];
+  events: {
+    id: string;
+    type: "source_status" | "planned_milestone" | "certification" | "award" | "construction_start" | "completion" | "in_service" | "cancellation";
+    date: string | null;
+    precision: "day" | "month" | "year" | "unknown";
+    native_project_link: string;
+    evidence: LocationEvidenceSource[];
+    description: string;
+  }[];
 }
 
 export interface GeoBounds {

@@ -23,6 +23,7 @@ import type {
   NationalSource,
 } from "@/lib/national/types";
 import { NationalMap } from "./NationalMap";
+import { LocationEvidence } from "./LocationEvidence";
 import s from "./national.module.css";
 
 const n = (value: number) => value.toLocaleString("en-US");
@@ -55,6 +56,7 @@ function SourceEvidence({ project, source }: { project: NationalProject; source?
       <p>Access: {source?.access_policy?.replaceAll("_", " ") ?? "not reported"} · SHA-256: <code>{source?.sha256 ?? "not available"}</code></p>
       {source?.notes.length ? <ul>{source.notes.map((note, index) => <li key={`${source._id}-note-${index}`}>{note}</li>)}</ul> : null}
       {source?.landing_url ? <p><a href={source.landing_url} target="_blank" rel="noreferrer">Open source landing page</a></p> : null}
+      {project.location_verification ? <LocationEvidence verification={project.location_verification} /> : null}
       {raw.length ? <details><summary>Imported source fields</summary><dl className={s.rawFields}>{raw.map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{rawValue(value)}</dd></div>)}</dl></details> : null}
     </div>
   );
@@ -237,7 +239,7 @@ export function NationalExplorer({
         <section className={s.results} aria-label="Filtered projects">
           <div className={s.resultsHead}>
             <div><h2>Projects</h2><p>{initial.available ? <>Showing {initial.projects.length ? n((initial.page - 1) * initial.limit + 1) : 0}–{n(Math.min(initial.page * initial.limit, initial.total))} of {n(initial.total)}</> : "Results unavailable"}</p></div>
-            {initial.available ? <a className={s.export} href={`/api/national/export${exportQuery ? `?${exportQuery}` : ""}`}>Export CSV</a> : null}
+            {initial.available ? <div><a className={s.export} href={`/api/national/export${exportQuery ? `?${exportQuery}` : ""}`}>Export CSV</a><br /><a className={s.export} href={`/api/national/export?${exportQuery ? `${exportQuery}&` : ""}format=json`}>Export JSON evidence</a></div> : null}
           </div>
           {!initial.available ? <EmptyState title="Project records are unavailable">Reference geography is not a project dataset.</EmptyState> : initial.projects.length === 0 ? <EmptyState title="No matches in the imported records">This does not mean the selected area has no planned construction. Records with unknown state or county cannot satisfy a geographic filter.</EmptyState> : (
             <ol className={s.projectList}>
