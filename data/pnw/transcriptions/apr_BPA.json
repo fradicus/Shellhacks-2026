@@ -1,0 +1,295 @@
+{
+  "file": "apr_BPA",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Schultz-Wautoma 500 kV Series Capacitor Addition",
+      "page": 4,
+      "quote": "2.1 Schultz-Wautoma 500 kV Series Capacitor Addition\n2.1.1 Project Description\nThis project is necessary to increase South of Allston (SOA) available transfer capability and\nimprove operations and maintenance flexibility for SOA. The project will add 1152 Mvar, 24\nOHM series capacitor (rated 4000A at 500 kV) on the Schultz-Wautoma line at the Wautoma\nsubstation.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Wautoma"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "energized in late 2024",
+      "status_raw": "in the completion phase",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "2 Planned Transmission Projects"
+    },
+    {
+      "native_id": null,
+      "name": "Keeler 500 kV Expansion and Transformer Addition",
+      "page": 4,
+      "quote": "2.2 Keeler 500 kV Expansion and Transformer Addition\n2.2.1 Project Description\nThis project will add 500 kV breakers at Keeler substation to reconfigure the Keeler 500 kV bus\nlayout into a double-breaker-double-bus arrangement. This project also adds a second 500/230\nkV transformer bank at Keeler substation.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Keeler"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "expected to be completed sometime by 2027",
+      "status_raw": "in the scoping phase and is subject to final funding approval",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "2 Planned Transmission Projects"
+    },
+    {
+      "native_id": "L0510",
+      "name": "Six Mile Canyon 500/230 kV Substation Addition",
+      "page": 4,
+      "quote": "2.3 Six Mile Canyon 500/230 kV Substation Addition\n2.3.1 Project Description\nThis project is associated with L0510 interconnection request. This project is to add a new 500\nkV substation tentatively named West of Boardman with 230 kV connection to the Umatilla\nElectric Cooperative. This project will enable local area capacity for load and generation service.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "West of Boardman"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "expected to be completed in 2027",
+      "status_raw": "in the scoping phase",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "2 Planned Transmission Projects"
+    },
+    {
+      "native_id": null,
+      "name": "Bell-Boundary 230 kV No. 1 (Sacheen) Line Upgrade",
+      "page": 5,
+      "quote": "2.4 Bell-Boundary 230 kV No. 1 (Sacheen) Line Upgrade\n2.4.1 Project Description\nThe Boundary-Sacheen No. 1 230 kV line has been de-rated from 80°C to 60°C MOT. The line will\nbe restored to 80°C MOT and eventually increase it to 100°C MOT. This project is needed to\nmaintain reliable load service in the area.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Boundary",
+        "Sacheen"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "expected to be completed in 2027",
+      "status_raw": "in the construction phase",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "2 Planned Transmission Projects"
+    },
+    {
+      "native_id": null,
+      "name": "LaPine 230/115 kV Transformer Addition",
+      "page": 5,
+      "quote": "2.5 LaPine 230/115 kV Transformer Addition\n2.5.1 Project Description\nThis project will replace and relocate transformer bank no. 2. La Pine's existing 230/115 kV 100\nMVA transformer will be replaced with a new 230/115 kV 300 MVA transformer. The project will\naccommodate new generation in the La Pine, Oregon area that is associated with transmission\nservice requests.",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "La Pine"
+      ],
+      "voltages_kv": [
+        230,
+        115
+      ],
+      "in_service_raw": "expected to be completed in 2027",
+      "status_raw": "in the queue phase",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "2 Planned Transmission Projects"
+    },
+    {
+      "native_id": "G0362 & G0738",
+      "name": "G0362 & G0738 Wind Project, 204 MW",
+      "page": 6,
+      "quote": "3.1 G0362 & G0738 Wind Project, 204 MW\n3.1.1 Project Description\nThe Wheatridge project is 204 MW. The wind generation project is located near Morrow Flat\nSubstation in Morrow County, Oregon with a point of interconnection requested at BPA Morrow\nFlat Substation.",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Morrow"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "requested in-service date is 2027",
+      "status_raw": "in the scoping phase",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "3 Planned Generation Interconnection Projects"
+    },
+    {
+      "native_id": "G0539",
+      "name": "G0539 Solar Project, 600 MW total",
+      "page": 6,
+      "quote": "3.2 G0539 Solar Project, 600 MW total\n3.2.1 Project Description\nA 600 MW solar project interconnecting at BPA’s Ponderosa substation in Central Oregon.",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "requested in-service date is 2025",
+      "status_raw": "in the design phase",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "3 Planned Generation Interconnection Projects"
+    },
+    {
+      "native_id": "G0559",
+      "name": "G0559 Wind Project, 250 MW total",
+      "page": 6,
+      "quote": "3.3 G0559 Wind Project, 250 MW total\n3.3.1 Project Description\nA 250 MW wind project interconnecting on BPA’s McNary-Franklin No. 2 230 kV line in Eastern\nWashington.",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "WA"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "requested in-service date is 2026",
+      "status_raw": "in the design phase",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "3 Planned Generation Interconnection Projects"
+    },
+    {
+      "native_id": "G0367 & G0368",
+      "name": "G0367 & G0368 Wind and Solar Project, 202 MW total",
+      "page": 7,
+      "quote": "3.4 G0367 & G0368 Wind and Solar Project, 202 MW total\n3.4.1 Project Description\nA 202 MW wind and solar project interconnecting at BPA’s Maupin substation in Wasco County,\nOregon.",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Wasco"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "requested in-service date is 2024",
+      "status_raw": "in the completion phase",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "3 Planned Generation Interconnection Projects"
+    },
+    {
+      "native_id": null,
+      "name": "Boardman Area Reinforcement Longhorn Substation",
+      "page": 9,
+      "quote": "5.1 Boardman Area Reinforcement Longhorn Substation (2024 Waiver)\nThis project adds a new source to the Boardman area by looping the McNary – Coyote Springs\n500 kV line into 500 kV breaker-and-a-half yard, adds two 1200 MVA 500-230 kV transformers,\nand adds a 230 kV breaker-and-a-half yard to serve growing data center load in the area.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Longhorn"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "5 Prior Submissions Granted Waiver of “Significant Transmission Projects”"
+    },
+    {
+      "native_id": null,
+      "name": "Cross Cascades North Upgrade",
+      "page": 9,
+      "quote": "5.2 Cross Cascades North Upgrade (2024 Waiver)\nThis project enables additional transmission capacity on West of Cascades North (WOCN). Both\nSchultz-Raver #3 and #4 500 kV lines will be re-conductored; the 500 kV series capacitor on the\nSchultz-Raver #4 500 kV line will be upgraded to its ultimate rating to match the 500 kV series\ncapacitor on the Schultz-Raver #3 500 kV line; a new +350/-300 Mvar STATCOM will be installed\nat Olympia 230 kV; a new 221 Mvar shunt capacitor bank will be installed at Paul 500 kV.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "5 Prior Submissions Granted Waiver of “Significant Transmission Projects”"
+    },
+    {
+      "native_id": null,
+      "name": "Pearl-Sherwood-McLoughlin Upgrade",
+      "page": 9,
+      "quote": "5.3 Pearl-Sherwood-McLoughlin Upgrade (2023 Waiver)\n(Formerly Pearl-Sherwood 230 kV Corridor Reconfiguration)\nThis project will split two sets of 230 kV circuits jumpered together and add 230 kV switch gear\nat BPA Pearl and PGE Sherwood substations, to be operated as four standalone 230 kV circuits\n(Pearl-Sherwood #1, #2 and #3 230; and Pearl-Sherwood-McLoughlin #1 230).",
+      "owner": "BPA and PGE",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "5 Prior Submissions Granted Waiver of “Significant Transmission Projects”"
+    },
+    {
+      "native_id": null,
+      "name": "South Tri-Cities Reinforcement",
+      "page": 9,
+      "quote": "5.5 South Tri-Cities Reinforcement (2022 Waiver)\nThis project proposes to add a Webber Canyon 500/115 kV transformer and new Webber\nCanyon-Badger Canyon 115kV line in the Tri-Cities area. This project will maintain reliable local\nload service to the Tri-Cities area.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Webber Canyon",
+        "Badger Canyon"
+      ],
+      "voltages_kv": [
+        500,
+        115
+      ],
+      "in_service_raw": "expected to be completed in 2027",
+      "status_raw": "in the design phase",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "5 Prior Submissions Granted Waiver of “Significant Transmission Projects”"
+    }
+  ]
+}

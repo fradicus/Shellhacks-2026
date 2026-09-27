@@ -1,0 +1,5012 @@
+[
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#North of Pearl",
+    "native_id": "P01322",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Ostrander-Pearl #1 500 kV Line Upgrade",
+    "native_id": "P02505",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Salem Area Upgrades #2 (North of Marion)",
+    "native_id": "P02506",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Buckley 500 kV Substation Rebuild",
+    "native_id": "P03999",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Schultz-Raver 500kV Series Capacitors",
+    "native_id": "P04364",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Keeler-Horizon 230 kV Line",
+    "native_id": "P04632",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Pearl-Sherwood-Mcloughlin 230 kV Line Upgrade",
+    "native_id": "P04974",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Keeler 230/500 kV Transformer Addition",
+    "native_id": "P05449",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Big Eddy-Chemawa 230/500 kV Line Upgrade",
+    "native_id": "P05468",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Schultz-Raver 500 kV Line Upgrade",
+    "native_id": "P05470",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Ross-Rivergate 230 kV Line Upgrade",
+    "native_id": "P05471",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Rock Creek-John Day 500 kV Line Upgrade",
+    "native_id": "P05472",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Chehalis-Covington 230 kV Line Upgrade",
+    "native_id": "P05473",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Six Mile Canyon 230/500 kV Substation",
+    "native_id": "P05580",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Bonanza 230/500 kV Substation",
+    "native_id": "P05847",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#La Pine-Bonanza 230 kV Line",
+    "native_id": "P05971",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Bonanza to Nevada-Oregon Border",
+    "native_id": "P05978",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Olympia 230 kV Substation Upgrade",
+    "native_id": "P06219",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Schultz-Olympia 500 kV Line Upgrade",
+    "native_id": "P06538",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_gerp_substation_projects.geojson#Hilltop Reactive Addition",
+    "native_id": "P06539",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Salem Area Upgrades #1 (North of Marion)",
+    "native_id": "P06540",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Grand Coulee-Columbia-Schultz 500 kV Line Upgrade",
+    "native_id": "P06544",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Lower Columbia to Bonanza",
+    "native_id": "P06545",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Captain Jack Substation",
+    "native_id": "P06546",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_substation_projects.geojson#Nevada-Oregon Border Substation",
+    "native_id": "P06644",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Big Eddy-Quenett Creek 230 kV Line Upgrade",
+    "native_id": "P06660",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_line_projects.geojson#Big Eddy-The Dalles Line Rebuild",
+    "native_id": "P06692",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Afton North-Airport 345 kV Line (New)",
+    "native_id": "afton-north-airport-345-kv-line-new",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Afton-Afton North 345 kV Double Bundled Line (New)",
+    "native_id": "afton-afton-north-345-kv-double-bundled-line-new",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Bethel-Round Butte 500kV upgrade",
+    "native_id": "bethel-round-butte-500kv-upgrade",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Big Eddy - Ostrander-Pearl rebuild",
+    "native_id": "big-eddy-ostrander-pearl-rebuild",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Bolo Tie",
+    "native_id": "bolo-tie",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Bonanza to Lower Columbia 500kV Reinforcement Project",
+    "native_id": "bonanza-to-lower-columbia-500kv-reinforcement-project",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Colorado River-Red Bluff 500 kV 1 Line Upgrade",
+    "native_id": "colorado-river-red-bluff-500-kv-1-line-upgrade",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Colorado's Power Pathway",
+    "native_id": "colorado-s-power-pathway",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Corral to Grassland Annex 500kV Line",
+    "native_id": "corral-to-grassland-annex-500kv-line",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Corral to Snow Goose 500kV Line",
+    "native_id": "corral-to-snow-goose-500kv-line",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Cross Cascades North Upgrade TSEP 2022",
+    "native_id": "cross-cascades-north-upgrade-tsep-2022",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Cross-Cascades Project",
+    "native_id": "cross-cascades-project",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Cross-Cascades Project --> Line break at Schultz",
+    "native_id": "cross-cascades-project-line-break-at-schultz",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Energize the existing Red Butte – St. George line at 345 kV",
+    "native_id": "energize-the-existing-red-butte-st-george-line-at-345-kv",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Gateway Central: Limber to Terminal (Segment C)",
+    "native_id": "gateway-central-limber-to-terminal-segment-c",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Borah to Midpoint (E-North)",
+    "native_id": "gateway-west-borah-to-midpoint-e-north",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Bridger/Anticline to Populus (Segment D3)",
+    "native_id": "gateway-west-bridger-anticline-to-populus-segment-d3",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Cedar Hill to Hemingway (E-south)",
+    "native_id": "gateway-west-cedar-hill-to-hemingway-e-south",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Cedar Hill to Midpoint (Segment E)",
+    "native_id": "gateway-west-cedar-hill-to-midpoint-segment-e",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Midpoint to Hemingway (Segment E8)",
+    "native_id": "gateway-west-midpoint-to-hemingway-segment-e8",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Populus to Borah (E-North)",
+    "native_id": "gateway-west-populus-to-borah-e-north",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Gateway West: Populus to Cedar Hill (E-south)",
+    "native_id": "gateway-west-populus-to-cedar-hill-e-south",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Grand Coulee - Columbia - Schultz  - Olympia 500-kV",
+    "native_id": "grand-coulee-columbia-schultz-olympia-500-kv",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Grassland Annex to B2H Tap Substation 500kV Line",
+    "native_id": "grassland-annex-to-b2h-tap-substation-500kv-line",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Greenlink North",
+    "native_id": "greenlink-north",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Greenlink West",
+    "native_id": "greenlink-west",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Hassayampa - Pinal West 500kV #2",
+    "native_id": "hassayampa-pinal-west-500kv-2",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Humboldt to Collinsville",
+    "native_id": "humboldt-to-collinsville",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Humboldt to Fern Road",
+    "native_id": "humboldt-to-fern-road",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Imperial Valley–North of SONGS 500 kV Line and Substation",
+    "native_id": "imperial-valley-north-of-songs-500-kv-line-and-substation",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Jojoba to Rudd 500kV line",
+    "native_id": "jojoba-to-rudd-500kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Lantern – Comstock Meadows 345 kV line",
+    "native_id": "lantern-comstock-meadows-345-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Longhorn to Hemingway (B2H)",
+    "native_id": "longhorn-to-hemingway-b2h",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Montana to Washington (M2W)",
+    "native_id": "montana-to-washington-m2w",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#North Gila - Imperial Valley #2",
+    "native_id": "north-gila-imperial-valley-2",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#North Plains Connector",
+    "native_id": "north-plains-connector",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#North of Marion: Marion-Chemawa-Pearl 500",
+    "native_id": "north-of-marion-marion-chemawa-pearl-500",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#North of Pearl 500-kV upgrade (incl. Pearl-Keeler #2 500)",
+    "native_id": "north-of-pearl-500-kv-upgrade-incl-pearl-keeler-2-500",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#North of SONGS–Serrano 500 kV line",
+    "native_id": "north-of-songs-serrano-500-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Oquirrh-Terminal 345 kV #3 and #4 Double Circuit Line",
+    "native_id": "oquirrh-terminal-345-kv-3-and-4-double-circuit-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#Ostrander - Pearl #1 500",
+    "native_id": "ostrander-pearl-1-500",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Rio Puerco-Prosperity 345kV Line",
+    "native_id": "rio-puerco-prosperity-345kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#SWIP-North",
+    "native_id": "swip-north",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#San Jose Area HVDC 230 kV Line (Newark - NRS)",
+    "native_id": "san-jose-area-hvdc-230-kv-line-newark-nrs",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Serrano–Del Amo–Mesa 500 kV Transmission Reinforcement",
+    "native_id": "serrano-del-amo-mesa-500-kv-transmission-reinforcement",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Sigurd - Clover 345 kV line",
+    "native_id": "sigurd-clover-345-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_planned.geojson#South of Knight:  Rock Creek-John Day 500 kV line upgrade",
+    "native_id": "south-of-knight-rock-creek-john-day-500-kv-line-upgrade",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Spanish Fork - Mercer 345 kV line",
+    "native_id": "spanish-fork-mercer-345-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#SunZia",
+    "native_id": "sunzia",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Ten West Link",
+    "native_id": "ten-west-link",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Three Peaks - Purgatory Flat 345 kV line",
+    "native_id": "three-peaks-purgatory-flat-345-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#TransWest Express",
+    "native_id": "transwest-express",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Western Spirit - Chavez County 345kV Line",
+    "native_id": "western-spirit-chavez-county-345kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_planned.geojson#Western Spirit - Hidden Mountain 345kV #2 Line",
+    "native_id": "western-spirit-hidden-mountain-345kv-2-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Add a new Mead - Liberty - West Wing 500 kV line",
+    "native_id": "add-a-new-mead-liberty-west-wing-500-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Amrad to Chavez Upgrade",
+    "native_id": "amrad-to-chavez-upgrade",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#Colstrip - Broadview 500 kV series cap upgrade",
+    "native_id": "colstrip-broadview-500-kv-series-cap-upgrade",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Laramie River - Dave Johnston 230 kV line reconductor",
+    "native_id": "laramie-river-dave-johnston-230-kv-line-reconductor",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Mead - Perkins 345 kV line rebuild/reconductor",
+    "native_id": "mead-perkins-345-kv-line-rebuild-reconductor",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#New Four Corners - Pintado 345 kV ckt 2",
+    "native_id": "new-four-corners-pintado-345-kv-ckt-2",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#New Keeler - Pearl 500 kV line #2",
+    "native_id": "new-keeler-pearl-500-kv-line-2",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#New Manning - Metcalf line",
+    "native_id": "new-manning-metcalf-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#New Rio Puerco - San Juan 345 kV ckt 2",
+    "native_id": "new-rio-puerco-san-juan-345-kv-ckt-2",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#New Townsend to Midpoint 500 kV line",
+    "native_id": "new-townsend-to-midpoint-500-kv-line",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#Ostrander - Pearl 500kV Reconductor",
+    "native_id": "ostrander-pearl-500kv-reconductor",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Picante to Otero Upgrade",
+    "native_id": "picante-to-otero-upgrade",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Rebuild Clines Corner - Guadalupe - Taiban Mesa to double circuit",
+    "native_id": "rebuild-clines-corner-guadalupe-taiban-mesa-to-double-circuit",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#Rebuild Hemingway - Summer Lake Ckt 1&2",
+    "native_id": "rebuild-hemingway-summer-lake-ckt-1-2",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Reconductor Ault to Archer",
+    "native_id": "reconductor-ault-to-archer",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Reconductor Ault to Terry Ranch",
+    "native_id": "reconductor-ault-to-terry-ranch",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Reconductor Diamond Tail – B-A ckt 1 and 2",
+    "native_id": "reconductor-diamond-tail-b-a-ckt-1-and-2",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Reconductor Rio Puerco - Pintado ckt 1",
+    "native_id": "reconductor-rio-puerco-pintado-ckt-1",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#RioSol",
+    "native_id": "riosol",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Second Four Corners - San Juan 345 kV line",
+    "native_id": "second-four-corners-san-juan-345-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "westtec_identified.geojson#Second Mead - Market Place 500 kV line",
+    "native_id": "second-mead-market-place-500-kv-line",
+    "reason": "geometry outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#Townsend - Ashe 500kV Line #1",
+    "native_id": "townsend-ashe-500kv-line-1",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#Uprate Hemingway - Summer Lake Ckt 1 via Substation upgrades",
+    "native_id": "uprate-hemingway-summer-lake-ckt-1-via-substation-upgrades",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westtec_identified.geojson#Walker - Bonanza 500kV Line #1",
+    "native_id": "walker-bonanza-500kv-line-1",
+    "reason": "project geometry touches WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_AVA.pdf#page=1",
+    "native_id": "bluebird-garden-springs",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_AVA.pdf#page=1",
+    "native_id": "cloudwalker-dry-creek-interconnection",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_BPA.pdf#page=4",
+    "native_id": "schultz-wautoma-500-kv-series-capacitor-addition",
+    "reason": "historical: in the completion phase"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=4",
+    "native_id": "keeler-500-kv-expansion-and-transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=4",
+    "native_id": "L0510",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=5",
+    "native_id": "bell-boundary-230-kv-no-1-sacheen-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=5",
+    "native_id": "lapine-230-115-kv-transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_BPA.pdf#page=6",
+    "native_id": "G0362 & G0738",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_BPA.pdf#page=6",
+    "native_id": "G0539",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_BPA.pdf#page=6",
+    "native_id": "G0559",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_BPA.pdf#page=7",
+    "native_id": "G0367 & G0368",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=9",
+    "native_id": "boardman-area-reinforcement-longhorn-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=9",
+    "native_id": "cross-cascades-north-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=9",
+    "native_id": "pearl-sherwood-mcloughlin-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_BPA.pdf#page=9",
+    "native_id": "south-tri-cities-reinforcement",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_CHPD.pdf#page=1",
+    "native_id": "jumpoff-ridge-230-115-kv-station",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_GCPD.pdf#page=2",
+    "native_id": "1",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_GCPD.pdf#page=2",
+    "native_id": "2",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_GCPD.pdf#page=3",
+    "native_id": "3",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_GCPD.pdf#page=3",
+    "native_id": "4",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=2",
+    "native_id": "boise-bench-midpoint-1-230kv-transmission-line-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=2",
+    "native_id": "boise-bench-230kv-shunt-capacitor-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_IPC.pdf#page=2",
+    "native_id": "boise-bench-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_IPC.pdf#page=3",
+    "native_id": "pleasant-valley-solar-2-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_IPC.pdf#page=3",
+    "native_id": "happy-valley-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_IPC.pdf#page=3",
+    "native_id": "kuna-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_IPC.pdf#page=3",
+    "native_id": "blacks-creek-generation-project-and-blacks-creek-substation",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=4",
+    "native_id": "B2H",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=5",
+    "native_id": "midpoint-kinport-345-kv-series-capacitor-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=5",
+    "native_id": "midpoint-500-345-kv-second-transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=12",
+    "native_id": "gateway-west-transmission-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=12",
+    "native_id": "mayfield-myfd-500kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_IPC.pdf#page=13",
+    "native_id": "pallette-junction-station-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "300",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "310",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "311",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "335 & 347",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "360",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "368",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "375",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=1",
+    "native_id": "421",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_NWE.pdf#page=2",
+    "native_id": "438",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PGE.pdf#page=2",
+    "native_id": "rivergate-230kv-battery-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=2",
+    "native_id": "pearl-sherwood-reinforcement-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=2",
+    "native_id": "reconductor-horizon-keeler-1-230kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=3",
+    "native_id": "harborton-reliability-project-phase-2",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PGE.pdf#page=3",
+    "native_id": "madras-solar-230kv",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PGE.pdf#page=3",
+    "native_id": "jefferson-solar-230kv",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=3",
+    "native_id": "north-of-sherwood-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=4",
+    "native_id": "evergreen-harborton-230kv-reconductor",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=5",
+    "native_id": "monitor-rebuild-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=5",
+    "native_id": "sherwood-230-115kv-transformer-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=5",
+    "native_id": "harborton-st-marys-230kv-reconductor",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PGE.pdf#page=6",
+    "native_id": "horizon-keeler-1-and-2-230-230kv-4000a-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PSE.pdf#page=1",
+    "native_id": "energize-eastside-230-kv-transformer-addition-and-line",
+    "reason": "historical: completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PSE.pdf#page=1",
+    "native_id": "spire-i-and-ii-battery-energy-storage-system-bess",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PSE.pdf#page=1",
+    "native_id": "goldeneye-battery-energy-storage-system-bess",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "apr_PSE.pdf#page=2",
+    "native_id": "greenwater-battery-energy-storage-system-bess",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PSE.pdf#page=2",
+    "native_id": "double-circuit-midc-white-river-500-kv-lines-and-longhorn-midc-500-kv-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PSE.pdf#page=2",
+    "native_id": "issaquah-area-distribution-capacity",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "apr_PSE.pdf#page=3",
+    "native_id": "sedro-woolley-230-kv-substation-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=108",
+    "native_id": "P01092",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=45",
+    "native_id": "P01443",
+    "reason": "historical: Recently Completed Plans of Service"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=47",
+    "native_id": "P00094",
+    "reason": "historical: Recently Completed Plans of Service"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=108",
+    "native_id": "P02367",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=108",
+    "native_id": "P06244",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=48",
+    "native_id": "P03506",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=48",
+    "native_id": "P05918",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=108",
+    "native_id": "P05470",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=51",
+    "native_id": "P05435",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=108",
+    "native_id": "P01367",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P03469",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P04401",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P04632",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "st-johns-230-115-kv-low-side-line-section-remove-impairments",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P04974",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P03259",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P05449",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P03258",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P04286",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P02230",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=62",
+    "native_id": "P00076",
+    "reason": "historical: Recently Completed Plans of Service"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=109",
+    "native_id": "P02364",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P03102",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P02365",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P04691",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=69",
+    "native_id": "P03491",
+    "reason": "historical: Recently Completed Plans of Service"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P04246",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P04342",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P04423",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P04438",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P03443",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P05322",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P03999",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P01106",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P04231",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "P02259",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=110",
+    "native_id": "bell-boundary-230-kv-no-1-sacheen-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2023_transmission_plan.pdf#page=111",
+    "native_id": "P02306",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2023_transmission_plan.pdf#page=111",
+    "native_id": "P02256",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P01092",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P01443",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P00695",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P00094",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P06244",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P02367",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "sno-king-230-115-kv-bank-3-power-circuit-breaker-bushing",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P04132",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "snohomish-230-115-kv-banks-replacement",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P03506",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P05918",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P05918",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "naselle-shunt-capacitor-replacement",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "south-elma-115-kv-substation-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P05435",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "clatsop-230-115-kv-transformer-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P04157",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P03469",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P01367",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P04401",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P03619",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P04632",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=100",
+    "native_id": "P04974",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P03259",
+    "reason": "in-service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P05449",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P03258",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P04286",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "chemawa-230-115-kv-transformer-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "santiam-500-230-kv-bank-4",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "lebanon-230-115-kv-transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P02230",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P00076",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "columbia-115-kv-breaker-b-400-free-standing-current",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "valhalla-b-288-bushing-current-transformer-bct-2-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "ellensburg-115-kv-shunt-capacitor-expansion",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "grand-coulee-230-kv-fault-reduction-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "east-omak-115-kv-shunt-capacitor-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P02364",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P03102",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P02365",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P04691",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "sacajawea-to-ice-harbor-franklin-1",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P04342",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P04246",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P04423",
+    "reason": "historical: Cancelled"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P05580",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=101",
+    "native_id": "P04438",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P03443",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P05322",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "new-bonanza-500-230-kv-substation-addition-gerp2",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "bonanza-la-pine-230-kv-line-addition-gerp2",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P03999",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P04231",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P02299",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "troy-115-kv-shunt-capacitor-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P02259",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P06349",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "columbia-falls-230-115-kv-transformer-bank-2-and-3",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P05566",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P02306",
+    "reason": "historical: Completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "rebuild-cattle-creek-palisades-and-palisades-swan-valley",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "build-new-115-kv-targhee-substation-remove-115-kv-targhee",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "teton-115-kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "heyburn-west-burley-138-kv-line-upgrade-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "P02256",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "big-eddy-230-kv-bus-differential-relay-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=102",
+    "native_id": "nwcpud-s-big-eddy-the-dalles-115-kv-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=103",
+    "native_id": "chehalis-covington-line-upgrade-to-cowlitz-tap",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=103",
+    "native_id": "L0543",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=103",
+    "native_id": "ross-rivergate-230-kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=103",
+    "native_id": "new-la-pine-bonanza-230-kv-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=103",
+    "native_id": "rock-creek-john-day-500-kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_2025_transmission_plan.pdf#page=103",
+    "native_id": "big-eddy-chemawa-1-500-kv-line-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=2",
+    "native_id": "big-eddy-chemawa-230-500-kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=2",
+    "native_id": "bonanza-230-500-kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=2",
+    "native_id": "buckley-500-kv-substation-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "bpa_gerp_project_update.pdf#page=2",
+    "native_id": "buckley-by-pass",
+    "reason": "historical: has been completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=2",
+    "native_id": "chehalis-covington-230-kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=2",
+    "native_id": "cross-cascades-north-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "la-pine-bonanza-230-kv-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "portland-area-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "pearl-sherwood-mcloughlin",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "keeler-horizon-230kv-no-2",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "keeler-transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "rock-creek-john-day-500-kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "ross-rivergate",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=3",
+    "native_id": "six-mile-canyon",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "big-eddy-quenett",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "big-eddy-the-dallas",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "central-oregon-reactive-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "lower-columbia-to-nob",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "lower-columbia-to-bonanza",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "bonanza-to-nob",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=4",
+    "native_id": "nevada-oregon-border-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "north-of-pearl",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "ostrander-peral-1-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "warner-hilltop-reactive-additions",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "warner-115-kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "hilltop-230-kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "salem-area-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "north-of-marion-upgrade-1",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "north-of-marion-upgrade-2",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "grand-coulee-columbia-schultz-500-kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "bpa_gerp_project_update.pdf#page=5",
+    "native_id": "schultz-olympia-500-kv-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "boardman-to-hemingway-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "bowmont-to-hubbard-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "gateway-west-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "huston-to-gem-transmission-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "mayfield-substation-and-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "swip-north-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "wood-river-to-ketchum-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "bennett-mountain",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "boise-bench-substation-battery-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "peregrine-energy-center",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "idahopower_current_projects.html#page=1",
+    "native_id": "south-hills-power-plant",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-segment-e-phase-1-cedar-hill-midpoint-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-segment-e-phase-1-midpoint-hemingway-2-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-segment-e-phase-2-populus-borah-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-segment-e-phase-2-borah-midpoint-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-segment-e-phase-2-cedar-hill-hemingway-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-segment-e-phase-1-populus-cedar-hill-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "gateway-west-anticline-populus-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "apex-to-b2h-switching-station-500-kv-line-apex-to-maverick",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "snow-goose-full-circle-500-kv-line-blueprint-south",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2024-2025_study_scope.pdf#page=20",
+    "native_id": "full-circle-apex-500-kv-line-blueprint-north",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "barker-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "bennett-mountain-danskin-rattlesnake-3-terminal-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "bethel-monitor-230-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "bethel-round-butte-500kv-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "blacks-creek-solar",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "bluebird-garden-springs-230kv-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=12",
+    "native_id": "boardman-hemingway-b2h-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "harborton-st-marys-230kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "mayfield-pleasant-valley-solar-230kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "mayfield-230kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "mcloughlin-monitor-230-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "pallette-junction-switching-station",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "pearl-sherwood-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "pronghorn-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "rebuild-t902-phase-3",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "rebuild-t902-phase-4",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "swip-north",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "wrap-t906-into-mayfield-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=13",
+    "native_id": "wrap-t912-into-rattlesnake-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "big-eddy-chemawa-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "big-eddy-ostrander-1-steel-2-5-reconductor-with-2-acss-plover",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "big-eddy-quenett-creek-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "carlin-bay-ogara-115kv-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "chehalis-cowlitz-tap-rebuild-cheh-covi-1-line-upgrade-to-cowlitz-tap-tsep-2022-d",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "coeur-d-alene-transmission-reinforcement",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "cross-cascades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "gateway-west-transm-segment-10",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "gateway-west-transm-segment-5",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "gateway-west-transm-segment-6",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "gateway-west-transm-segment-7",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "la-pine-bonanza-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "lewiston-230kv-mitigation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "lolo-oxbow-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "m2i",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "pearl-sherwood-mcloughlin-upgrade-230-kv-lines",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "rock-creek-john-day-1-500kv-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "ross-rivergate-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "schultz-shul-install-series-caps-on-shul-rave-3-4-schultz-raver-no-3-no-4",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "schultz-raver-reconductor-and-paul-capacitor",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=14",
+    "native_id": "white-river-bpa-covington-1-2-230-kv-transmission-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "lewiston-115kv-mitigation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "bonanza-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "buckley-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "canyon-500-230kv-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "hot-springs-500kv-180-mvar-reactor",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "webber-canyon-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=15",
+    "native_id": "gateway-west-segment-8",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "gateway-west-segment-9",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "borah-t501",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "matl-expansion",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "cts-upgrade-series-capacitors",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "loco-mountain-line-shunts",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "colstrip-broadview-series",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "townsend-substation-m2i",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "monitor-substation-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "bethel-115-kv-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "malin-2-reactor-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=16",
+    "native_id": "sherwood-rebuild",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=17",
+    "native_id": "bethel-round-butte-series",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=17",
+    "native_id": "capacity-improvement-at-pse-richards-creek-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=17",
+    "native_id": "transformer-x3-installation-at-pse-white-river-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=17",
+    "native_id": "sky-valley-switching-station",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=17",
+    "native_id": "getchell-115-kv-switching-station",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "northerngrid_2026-2027_study_scope.pdf#page=17",
+    "native_id": "crosswind-new-substation",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "scl_current_projects.html#page=1",
+    "native_id": "relicensing-the-skagit-hydroelectric-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "scl_current_projects.html#page=1",
+    "native_id": "relicensing-the-south-fork-tolt-hydroelectric-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "north-camano-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "crosswind-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "lake-goodwin-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "stimson-crossing-switching-station",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "getchell-switching-station",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "clearview-substation",
+    "reason": "historical: completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "thrashers-corner-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "brier-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "picnic-point-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "stanwood-to-camano-115-kv-line",
+    "reason": "historical: completed"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "stimson-to-stanwood-115-kv-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "stimson-to-sills-corner-115-kv-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "jennings-park-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "sky-valley-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "crosswind-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "115-kv-line-connecting-its-perrinville-and-maplewood-substations",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "new-115-kv-line-to-the-new-getchell-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "new-115-kv-line-from-the-everett-to-delta-substations",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "snopud_system_improvements.html#page=1",
+    "native_id": "hat-island-submarine-cable",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=6",
+    "native_id": "windstar-to-shirley-basin",
+    "reason": "in-service In service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=6",
+    "native_id": "aeolus-freezeout",
+    "reason": "in-service In service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "dj-amasa-heward-new-shirley-basin-230-kv-line",
+    "reason": "in-service In service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "addition-of-two-525-230-kv-1600-mva-autotransformers-6-x-1",
+    "reason": "in-service In service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "add-one-new-60-mvar-reactor-at-aeolus-230-kv",
+    "reason": "in-service In service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "modification-of-the-remedial-action-scheme-ras-at-aeolus-for-loss",
+    "reason": "in-service In service 2024 outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "addition-of-one-500-345-kv-1600-mva-auto-transformer-3-x-1",
+    "reason": "in-service October 2020 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "replace-the-bridger-345-230-kv-2-200-mva-autotransformer-with-a",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "replace-the-bridger-345-230-kv-1-and-3-2-x-200-mva-autotransformers-with-a-singl",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "addition-of-four-345-345-kv-533-3-mva-phase-shifting-transformers",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "anticline-to-bridger",
+    "reason": "in-service October 2020 outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "anticline-to-populus",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "addition-of-one-500-345-kv-2000-mva-autotransformer-3-x-1-at",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "aeolus-230-kv-svc-150-300-mvar",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=7",
+    "native_id": "borah-populus-west-path-17",
+    "reason": "in-service 2036 (earliest) outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=8",
+    "native_id": "populus-to-cedar-hill",
+    "reason": "in-service Q4 2036 (earliest) outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=8",
+    "native_id": "cedar-hill-to-hemingway",
+    "reason": "in-service 2036 (earliest) outside 2025-2035"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=8",
+    "native_id": "cedar-hill-to-midpoint",
+    "reason": "in-service 2036 (earliest) outside 2025-2035"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=8",
+    "native_id": "midpoint-hemingway-section",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=10",
+    "native_id": "longhorn-to-hemingway-b2h",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=11",
+    "native_id": "blueprint-south-snow-goose-full-circle-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "blueprint-north-full-circle-apex-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "blueprint-east-apex-maverick-feedville-500-kv",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "snow-goose-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "twin-river-substation-future",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "chemult-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "paulina-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "full-circle-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "snowball-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "dual-mesa-substation-future",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "apex-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "maverick-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=12",
+    "native_id": "feedville-substation-future",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=13",
+    "native_id": "687",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=13",
+    "native_id": "C1-23",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=14",
+    "native_id": "C1-43",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=14",
+    "native_id": "C1-44",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=14",
+    "native_id": "C2-82",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=15",
+    "native_id": "southern-oregon-230-kv-line-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_pacificorp.pdf#page=15",
+    "native_id": "alvey-malin-500-kv-series-compensation-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "six-mile-canyon-500-230-kv-substation-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "bell-boundary-230-kv-no-1-sacheen-line-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "lapine-230-115-kv-transformer-addition",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "mountain-view-transmission-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "monument-hill-transmission-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "painted-hills-transmission-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "boise-bench-midpoint-1-230-kv-transmission-line-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "boise-bench-230-kv-shunt-capacitor-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "boise-bench-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "pleasant-valley-2-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "happy-valley-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "kuna-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "black-creek-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "jackalope-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=4",
+    "native_id": "palette-substation-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "monitor-rebuild-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "sherwood-230-115kv-transformer-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "harborton-st-mary-230-kv-reconductor",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "horizon-keeler-1-2-230-kv-4000a-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "double-circuit-midc-white-river-longhorn-midc-500-kv-lines",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "issaquah-area-distribution-capacity",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=5",
+    "native_id": "sedro-woolley-230-kv-substation-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=7",
+    "native_id": "boardman-area-reinforcement-longhorn-substation",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=7",
+    "native_id": "cross-cascades-north-upgrade",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=7",
+    "native_id": "wanapum-mountain-view-230-kv-transmission-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "apex-substation-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "feedville-substation-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "southern-oregon-230-kv-line",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "alvey-malin-500-kv-series-compensation-upgrades",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "limber-terminal-345-kv-lines",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "blue-lake-230-kv-battery-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "rivergate-230-kv-battery-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "evergreen-115-kv-batter-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "madras-solar-230-kv",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "jefferson-solar-230-kv",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "wecc_apr_2025_summary.pdf#page=8",
+    "native_id": "evergreen-harborton-230-kv-reconductor",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "schultz-raver-500-kv-series-capacitors",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "pearl-sherwood-230-kv-corridor-reconfiguration",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "jumpoff-ridge",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "chip-substation-project",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "pleasant-valley-solar-project-and-substation",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "rimrock-substation-upgrade",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "aeolus-freezeout-2-230-kv",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "clearwater-wind-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "pearl-sherwood-reinforcement-project",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=10",
+    "native_id": "reconductor-horizon-keeler-1-230-kv",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=11",
+    "native_id": "reconductor-murrayhill-st-mary-1-and-2-230-kv",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=11",
+    "native_id": "sherwood-st-mary-230-kv-line",
+    "reason": "historical waiver list (2023) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "northern-mid-columbia-area-project",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "south-tri-cities-reinforcement",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "cole-substation-project",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "jackpot-solar-interconnection-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "rimrock-substation-upgrade",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "south-butte-230-161-kv-bank-replacement",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=12",
+    "native_id": "aeolus-freezeout-2-230-kv-line",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=13",
+    "native_id": "sherwood-230-kv-breaker-replacement",
+    "reason": "historical waiver list (2022) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "raver-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "longview-area-230-115-kv-transformer-addition",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "rocky-reach-solar-interconnection",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "midpoint-t231-230-138-kv-transformer-replacement-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "cloverdale-t231-230-138kv-transformer-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "boise-bench-cloverdale-230kv-transmission-line-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "cloverdale-locust-230-kv-transmission-line-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "cloverdale-hubbard-230-kv-transmission-line-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=15",
+    "native_id": "jackpot-solar-interconnection-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=16",
+    "native_id": "aeolus-shirley-basin-2-230-kv",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=16",
+    "native_id": "horizon-keeler-bpa-2-230-kv-project",
+    "reason": "historical waiver list (2021) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "saddle-mountain-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "raver-500-230-kv-transformer-addition",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "longview-area-230-115-kv-transformer-addition",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "midpoint-t231-230-138-kv-transformer-replacement",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "hines-t131-138-115-kv-transformer-replacement",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "cloverdale-t231-230-138-kv-transformer-replacement",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "boise-bench-cloverdale-230-kv-transmission-line",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "cloverdale-locust-230-kv-transmission-line",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "beacon-light-138-kv-transmission-line",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "can-ada-blackcat-138-kv-transmission-line",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "cloverdale-hubbard-230-kv-transmission-line",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "wood-river-ketchum-138-kv-transmission-line",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "orchard-138-kv-conversion-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=17",
+    "native_id": "jackpot-solar-interconnection-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "camp-william-345-138-kv-transformer-and-138-kv-yard-addition",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "helvetia-substation-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "horizon-vwr3-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "kelley-point-reconfiguration-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "st-marys-battery-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "sherwood-230-kv-breaker-replacement-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "sunset-breaker-replacement-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "butler-substation-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "murrayhill-st-marys-230-kv-reconductor-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "canyon-urban-115-kv-reconductor-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "century-substation-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "arrowhead-substation-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "hillsboro-reliability-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "tonquin-substation-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "mt-pleasant-substation-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "harborton-reliability-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=18",
+    "native_id": "se-portland-conversion-project",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=19",
+    "native_id": "wheatridge-renewable-energy-facility",
+    "reason": "historical waiver list (2020) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "malin-230-kv-breaker-addition",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "sams-valley-500-230-kv-substation",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "lone-pine-whetstone-230-kv-line",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "spanish-fork-345-138-kv-transformer-3-upgrade",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "camp-williams-oquirrh-345-kv-line-upgrade",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "jim-bridger-345-230-kv-transformer-2-upgrade",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "90th-south-terminal-345-kv-line-loop-into-midvalley-substation",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "harborton-project",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "hillsboro-project",
+    "reason": "historical waiver list (2019) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=20",
+    "native_id": "skookumchuck-wind-generation-project",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=22",
+    "native_id": "install-goshen-345-161-kv-3-transformer",
+    "reason": "historical waiver list (2018) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=22",
+    "native_id": "replace-outlook-230-115-kv-transformer",
+    "reason": "historical waiver list (2018) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=22",
+    "native_id": "blue-lake-phase-2-project",
+    "reason": "historical waiver list (2018) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=22",
+    "native_id": "pierce-county-transformer-addition-and-line-reroutes",
+    "reason": "historical waiver list (2018) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=22",
+    "native_id": "eastside-230-kv-transformer-addition-and-line",
+    "reason": "historical waiver list (2018) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=22",
+    "native_id": "west-kitsap-transmission-project-phase-ii",
+    "reason": "historical waiver list (2018) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "raver-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "mcnary-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "longview-area-230-115-kv-transformer-addition",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "midpoint-t232-230-138-kv-transformer-replacement-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "borah-populus-345kv-ckt-1-series-capacitor-replacement-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "kinport-populus-345kv-series-capacitor-replacement-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "cloverdale-230-138kv-transformer-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "cloverdale-hubbard-230kv-transmission-line-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "king-wood-river-138kv-transmission-line-rebuild",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "willis-lansing-star-138kv-transmission-line-project",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "goshen-spare-345-161-kv-transformer",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "convers-county-wy",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=24",
+    "native_id": "klamath-or",
+    "reason": "historical waiver list (2017) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "raver-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "mcnary-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "longview-area-230-115-kv-transformer-addition",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "midpoint-t232-230-138-kv-transformer-addition-project",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "syracuse-2nd-345-138-kv-700-mva-transformer",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "replae-red-butte-transformer",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "spanish-fork-345-kv-substation-circuit-breaker-additions",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "project-335-wind-plant-80-mw",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "project-226-wind-plant-151-2-mw",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "project-276-wind-plant-98-9-mw",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=25",
+    "native_id": "project-721-solar-plant-55-mw",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "blue-lake-gresham-230-kv-project",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "horizon-phase-ii-project",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "harborton-reliability-project",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "carty-generation-station",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "pierce-county-transformer-addition-and-line-reroutes",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "eastside-230-kv-transformer-addition-and-line",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=26",
+    "native_id": "west-kitsap-transmission-project-phase-ii",
+    "reason": "historical waiver list (2016) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "raver-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "mcnary-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "midpoint-t232-230-138-kv-transformer-addition-project",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "midpoint-west-upgrade-project",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "wallula-mcnary-230-kv-line",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "planned-generation-interconnection-projects-pace",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=27",
+    "native_id": "table-8b-planned-generation-interconnection-projects-pacw",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=28",
+    "native_id": "blue-lake-gresham-230-kv-project",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=28",
+    "native_id": "horizon-phase-ii-project",
+    "reason": "historical waiver list (2015) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=28",
+    "native_id": "port-westward-ii-generation",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=28",
+    "native_id": "tucannon-river-wind-farm",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "raver-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "casper-substation-install-230-115-mva-transformer",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "mid-valley-substation-replace-345-138kv-450-mva-with-700-mva",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "st-george-substation-install-345kv-138kv-transformer-expand-yard",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "snow-goose-500-230kv-substation",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "syracuse-install-345-138-kv-2-transformer",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "table-mountain-500-230kv-substation",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "troutdale-substation-add-3-230-kv-circuit-breakers",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "union-gap-230-115-kv-transformer-addition",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "vantage-pomona-heights-230-kv-line",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "whetstone-230-115kv-substation",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=29",
+    "native_id": "planned-generation-waiver",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=30",
+    "native_id": "blue-lake-gresham-230-kv-project",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=30",
+    "native_id": "horizon-phase-ii-project",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=30",
+    "native_id": "port-westward-ii-generation",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=30",
+    "native_id": "eastside-230-kv-transformer-addition-and-line",
+    "reason": "historical waiver list (2014) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "eastside-230-kv-transformer-addition-and-line",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "starwood-tideflats-115-110-kv-transformer-removal",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "clover-substation-add-345-138-kv-transformer",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "terminal-345-138-kv-1-2-transformer-upgrade",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "copco-substation-increase",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "ben-lomond-345-138-kv-2-transformer-450-mva",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "carbon-county-system-upgrade",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "line-3-conversion-project",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "union-gap-230-115-kv-increase-in-capacity-add-a-third-250-mva-transformer",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "whetstone-230-115-kv-substation",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "red-butte-st-george-double-circuit-line-and-345-138-kv-transformer",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "syracuse-345-138-kv-2-transformer",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "midvalley-345-138-kv-1-2-transformer-replacement-700-mva",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "yellowtail-230-138-kv-2-transformer",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "fry-substation-install-115-kv-capacitors",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "troutdale-substation-230-kv-switchyard-addition",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "planned-generation-interconnection-projects-68-projects-in-apr",
+    "reason": "generation work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=31",
+    "native_id": "midpoint-t232-230-138-kv-transformer-replacement-project",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=32",
+    "native_id": "blue-lake-gresham-230-kv",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=32",
+    "native_id": "pearl-sherwood-230-kv",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=32",
+    "native_id": "raver-500-230-kv-transformer-addition-project",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=32",
+    "native_id": "southwest-230-kv-ring-bus-conversion",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=32",
+    "native_id": "reconductor-delridge-duwamish-230-kv-line",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "wecc_apr_2025_summary.pdf#page=32",
+    "native_id": "reconductor-bothell-snoking-230-kv-lines",
+    "reason": "historical waiver list (2013) with no 2025-2035 date"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240122-bellingham-substation-maintenance-and-disconnect-switch-replacements.pdf#page=1",
+    "native_id": "P04421",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240123-hood-river-electric-co-op-interconnection.pdf#page=1",
+    "native_id": "L0402",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240123-northern-wasco-county-pud-service-line-replace.pdf#page=1",
+    "native_id": "20230314",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240201-P-12-Water-Source-Switch-Project.pdf#page=1",
+    "native_id": "2010-072-00",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240205-cascade-locks-substation-sale.pdf#page=1",
+    "native_id": "P05745; OR 2023 095",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240206-leslie-rd-reata-transmission-line-interconnection.pdf#page=1",
+    "native_id": "P03038 – L0408",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240207-stjohns-substation-transformer-and-tie-line-conductor-replacement.pdf#page=1",
+    "native_id": "P03619",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240207-tillamook-substation-disconnect-switches-and-maintenance.pdf#page=1",
+    "native_id": "P04163",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240220-rogue-substation-communications-site-beam-path-maintenance.pdf#page=1",
+    "native_id": "rogue-substation-communications-site-beam-path-maintenance-pp-a-no-4812",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240220-ross-calibration-chemistry-mangan-pcb-labs-and-surveyor-garage-upgrade-cx-update-02-2023.pdf#page=1",
+    "native_id": "P04526",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240226-columbia-substation-transformer-bank-1.pdf#page=1",
+    "native_id": "P02400",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240401-walla-walla-service-lighting-upgrade-project.pdf#page=1",
+    "native_id": "P04627",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240411_lane-wendson_no2_structures_213_to_223_line_repair_project.pdf#page=1",
+    "native_id": "lane-wendson-no-2-structures-21-3-to-22-3-line-repair-project-pp-a-no-4993",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240419-santiam-sub-equipment-upgrade-and-santiam-albany-no-1-transmission-line-modification.pdf#page=1",
+    "native_id": "P02460",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20240429-bell-addy-no1-transmission-line-switch-replacements-and-structure.pdf#page=1",
+    "native_id": "P04335",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240514_ostrea_sola_interconnection_project.pdf#page=1",
+    "native_id": "G0596",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240521-lapine-substation-shunt-capacitor-expansion.pdf#page=1",
+    "native_id": "la-pine-substation-shunt-capacitor-expansion",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240529-snohomish-pud-battery-energy-storage-system-interconnection.pdf#page=1",
+    "native_id": "G0832",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240529-uec-transmission-lines-longhorn-substation.pdf#page=1",
+    "native_id": "LURR20240078",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240611-hood-river-electric-coop-interconnection-update-on-jan-2024-cx.pdf#page=1",
+    "native_id": "L0402",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240614-richland-substation-to-stevens-dr-transmission-line-rebuild.pdf#page=1",
+    "native_id": "P02365",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240625-umatilla-electric-cooperative-mcnary-rockpile-transmission-line-upgrade.pdf#page=1",
+    "native_id": "LURR-29750193",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240702-northwest-pipeline-installation-at-north-bonneville-midway-no1-transmission-line-row.pdf#page=1",
+    "native_id": "LURR 2024-0053",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240711-snohomish-pud-battery-energy-storage-system-interconnection-may292024-cx-update.pdf#page=1",
+    "native_id": "G0832",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240716-chief-joe-substation-upgrade-and-4160v-chief-joe-dam-line-replacement-and-reroute.pdf#page=1",
+    "native_id": "P01037",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240719-rocky-reach-substation-transformer-and-disconnect-switch-replacements.pdf#page=1",
+    "native_id": "P03556",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240724-snohomish-substation-maintenance-project.pdf#page=1",
+    "native_id": "P03611",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240729-glade-tap-reconductor.pdf#page=1",
+    "native_id": "5050",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240730-hot-springs-substation-equipment-replacements-and-upgrades.pdf#page=1",
+    "native_id": "P03624",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240801-mcnary-badger-canyon-no1-line-relocation.pdf#page=1",
+    "native_id": "P02609",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240809-ice-age-dr-extension-xing-keeler-oregon-city-no2-transmission-line-corridor.pdf#page=1",
+    "native_id": "LURR-20230151",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240809-nwnatural-gas-lines-xing-keeler-oregon-city-no2.pdf#page=1",
+    "native_id": "LURR-20230356",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240829-lund-hill-battery-energy-storage-system-interconnection.pdf#page=1",
+    "native_id": "G0717",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240918-keller-tap-grand-coulee-okanogan-no2-structures-204-and-212-urgent-replacement.pdf#page=1",
+    "native_id": "P06642",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20240920-or-trail-solar-facility-battery-energy-storage-system-interconnection.pdf#page=1",
+    "native_id": "G0709",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241003-john-day-grizzly-500kv-no2-38-1-impairments.pdf#page=1",
+    "native_id": "john-day-grizzly-500kv-no-2-38-1-impairments-pp-a-no-5080",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241016-shelton-fairmount-no2-line-miles-49-and-50-structure-relocation.pdf#page=1",
+    "native_id": "shelton-fairmount-no-2-line-miles-49-50-structure-relocation-project-pp-a-no-507",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241022-laclede-sub-transformer-replacement-and-metering-upgrade.pdf#page=1",
+    "native_id": "N1015",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241028-red-mountain-horn-rapids-rebuild-update-to-previous-cx-01-23.pdf#page=1",
+    "native_id": "P03102",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241031-bridge-substation-upgrade-and-expansion.pdf#page=1",
+    "native_id": "P03372 / L0479",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20241101-columbia-generating-station-500kV-motor-operated-disconnect-switch-replacement.pdf#page=1",
+    "native_id": "P06520",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241126-wheatridge-east-interconnection-project.pdf#page=1",
+    "native_id": "P05402/G0362 and G0738",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20241219-biglow-canyon-wind-generation-interconnection-project.pdf#page=1",
+    "native_id": "G0978",
+    "reason": "2024 CX memo with no 2025-2035 year in its text"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250115-lapine-substation-shunt-capacitor-expansion.pdf#page=1",
+    "native_id": "P03443",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250115-pge-reconductor-project-crossing-bpa-keeler-oregon-city-2-on-bpa-fee-owned-row.pdf#page=1",
+    "native_id": "LURR 19680131",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250221-heyburn-minico-reconductor.pdf#page=1",
+    "native_id": "P04353",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250221-pearl-sherwood-no-1-and-no-2-transmission-line-and-pearl-substation.pdf#page=1",
+    "native_id": "P04974 / 20240178",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250224-targhee-substation.pdf#page=1",
+    "native_id": "P03589",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250228-cx-bluebird-solar-generation-interconnection-project-g0586.pdf#page=1",
+    "native_id": "G0586",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250303-harrisburg-substation-battery-replacement.pdf#page=1",
+    "native_id": "harrisburg-substation-battery-replacement-pp-a-no-5112",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250314-communication-system-upgrade-port-angeles-and-sappho-substations.pdf#page=1",
+    "native_id": "P05153",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250423-morrow-solar-generation-interconnection.pdf#page=1",
+    "native_id": "P02302; G0513 and G0532",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250424-silver-creek-sub-and-silver-creekmayfield-no1-230kv-upgrade.pdf#page=1",
+    "native_id": "P01092",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250501-the-dalles-substation-expansion-and-updates.pdf#page=1",
+    "native_id": "P02699",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250609-ccx-transmission-line-and-communication-tower-safety-upgrades-fall-protection-2030.pdf#page=1",
+    "native_id": "transmission-line-and-communication-tower-safety-upgrades-fall-protection-throug",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250610-wautoma-rock-creek-transmission-line-miles-37-to-43-reconductor.pdf#page=1",
+    "native_id": "P02678",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250623-city-of-forest-grove-powerline-upgrades.pdf#page=1",
+    "native_id": "LURR 2001 0522",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250722-chief-joseph-monroe-no1-681-ransmission-line-veg-mgmt.pdf#page=1",
+    "native_id": "chief-joseph-monroe-no-1-68-1-transmission-line-vegetation-management-pp-a-no-68",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250728-vhf-radio-system-upgrades-at-noxon-and-miller-peak-radio.pdf#page=1",
+    "native_id": "P01237",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250729-winnemucca-sub-equipment-removal.pdf#page=1",
+    "native_id": "N0847",
+    "reason": "outside WA/OR/ID/MT"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250729ccxtransmissionlinestructurehardwareandequipmentmaintenancereplacementandinstallthrough2030.pdf#page=1",
+    "native_id": "transmission-line-structure-hardware-and-equipment-maintenance-replacement-and-i",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250731-urgent-response-on-hatton-tap-disconnect-switch-replacement.pdf#page=1",
+    "native_id": "06891",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250811-pacificorp-lyons-loop-upgrade.pdf#page=1",
+    "native_id": "LURR 20230352",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250813-canyon-creek-pivot-pipeline-repair.pdf#page=1",
+    "native_id": "2010-072-00",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250819-douglas-county-pud-line-upgrade-at--valhalla-substation.pdf#page=1",
+    "native_id": "N0827 and LURR 20230328",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250821-chie-joseph-substation-property-transfer.pdf#page=1",
+    "native_id": "LURR 20240099",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20250826-ross-cold-creek-yard-expansion-project.pdf#page=1",
+    "native_id": "P07034",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20250930-driveway-improvements-and-solar-array-on-nbonneville-troutdale-no1-230kV-row.pdf#page=1",
+    "native_id": "LURR-20250010",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20251006-maple-valley-substation-transformer-installation-and-yard-expansion.pdf#page=1",
+    "native_id": "P05738",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20251009-chenowith-goldendale-line-mile-7-impairment-remediation.pdf#page=1",
+    "native_id": "P04870",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20251009-surprise-lake-substation-trenching-and-cable-replacement.pdf#page=1",
+    "native_id": "LURR 20250289",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20251020-avista-bluebird-substation-interconnection-to-grand-coulee-bell-no5.pdf#page=1",
+    "native_id": "P04646 (L0485)",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20251021-broadview-garrison-no2-transmission-line-impairments-164_4-to-165_2.pdf#page=1",
+    "native_id": "P05322",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20251023-troutdale-substation-terminal-expansion.pdf#page=1",
+    "native_id": "P03835 / G0609",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20251028-monroe-substation-maintenance-project.pdf#page=1",
+    "native_id": "P-03623",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20251118-morrow-solar-generation-interconnect-project-previous-cx-updated-20250423.pdf#page=1",
+    "native_id": "P02302; G0513, G0532, and LURR20260015",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20251121-sound-transit-line-raises.pdf#page=1",
+    "native_id": "P03470",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20251216-ringold-springs-hatchery-electrical-upgrades-project.pdf#page=1",
+    "native_id": "ringold-springs-hatchery-electrical-upgrades-project",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260105-lapine-fort-rock-access-road-upgrades.pdf#page=1",
+    "native_id": "P05780",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260106-lapine-substation-shunt-capacitor-expansion-update-to-cx-issued-01152025.pdf#page=1",
+    "native_id": "P03443",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260112-physical-security-system-upgrade-at-midway-substation.pdf#page=1",
+    "native_id": "P06207",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260115-wheatridge-surplus-generation-interconnection-projects.pdf#page=1",
+    "native_id": "G1062 and G1063",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260126-rocky-reach-maple-valley-rebuild-miles-99-103.pdf#page=1",
+    "native_id": "P06863",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260202-filbert-tap-forest-grov-mcminnville-no1-structure-relocation.pdf#page=1",
+    "native_id": "filbert-tap-forest-grove-mcminnville-no1-structure-relocation-pp-a-no-6922",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260226-jones-canyon-santiam-no1-access-rd-improvement-project-ph2-line-miles-109-and-115-132.pdf#page=1",
+    "native_id": "jones-canyon-santiam-no-1-access-road-improvement-project-phase-2-line-miles-109",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260226toledowendsonno1linemiles1516accessrdimprovementprojectph2.pdf#page=1",
+    "native_id": "toledo-wendson-no-1-line-miles-15-16-access-road-improvement-project-phase-ii-pp",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260309-filbert-tap-to-forest-grove-mcminnville-no1-danger-tree-removal-project.pdf#page=1",
+    "native_id": "filbert-tap-to-forest-grove-mcminnville-no-1-danger-tree-removal-project-pp-a-no",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260312-port-angeles-sappho-no1-access-rd-upgrade-phase-1.pdf#page=1",
+    "native_id": "P05228",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260316-sacheen-alternate-station-service-transformer-move-project-update-cx-issued-20211101.pdf#page=1",
+    "native_id": "P04369",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260319accessrdbridgereplacementsnearstructures963and973onthechiefjosephmonroeno1transmissionline.pdf#page=1",
+    "native_id": "access-road-bridge-replacements-near-structures-96-3-and-97-3-on-the-chief-josep",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260319richlandsubstationtostevensdrivetransmissionlinerebuildprojectupdatetopreviouscx.pdf#page=1",
+    "native_id": "P02365",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260323underwoodtaptobonnevilleph1alcoano12insulatorreplacementreconductor.pdf#page=1",
+    "native_id": "underwood-tap-to-bonneville-ph1-alcoa-no-1-2-insulator-replacement-reconductor-p",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260325-125vdc-station-service-battery-purchase-at-connell-substation.pdf#page=1",
+    "native_id": "P06992",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260325-john-day-grizzly-500kv-no2-impairment-and-access-road-improvement-project.pdf#page=1",
+    "native_id": "john-day-grizzly-500kv-no-2-impairment-and-access-road-improvement-project-pp-a-",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260330accessrdbridgereplacementsnearstructures963and973onthechiefjoemonroeno1txlineupdate20260319.pdf#page=1",
+    "native_id": "access-road-bridge-replacements-near-structures-96-3-and-97-3-on-the-chief-josep",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260406targheesubbreakerinstallationandtransfertripupgradesupdate-to-previous-CX-issued-20250224.pdf#page=1",
+    "native_id": "P03589",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260413-palouse-junction-solar-facility-and-battery-storage-interconnection-projects.pdf#page=1",
+    "native_id": "G0689 and G1079",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260501-security-system-upgrade-at-monroe-substation.pdf#page=1",
+    "native_id": "P06650",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260512-troy-sub-city-of-troy-public-utility-district-distribution-corridor-danger-tree-removal.pdf#page=1",
+    "native_id": "troy-substation-city-of-troy-public-utility-district-distribution-corridor-dange",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260527-mcnary-roundup-no1-transmission-line-rebuild-project.pdf#page=1",
+    "native_id": "mcnary-roundup-no-1-transmission-line-rebuild-project",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260529-nez-perce-tribal-hatchery-chilled-water-system-upgrade.pdf#page=1",
+    "native_id": "2025-003-00",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260529-tillamook-substation-line-terminal-swap-project.pdf#page=1",
+    "native_id": "P00492",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260617-pge-carty-solar-interconnection.pdf#page=1",
+    "native_id": "G0706/G0713",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260622-benton-franklin-no1-transmission-line-switch-installation-and-structure-reconfig.pdf#page=1",
+    "native_id": "L0488",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260708-eugene-alderwood-no1-115kV-rebuild-and-upgrades-cx.pdf#page=1",
+    "native_id": "P01292",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260709-physical-security-system-upgrade-at-olympia-substation.pdf#page=1",
+    "native_id": "P06657",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260715-actions-to-accommodate-construction-of-idaho-power-cos-boardman-to-hemingway-tx-line.pdf#page=1",
+    "native_id": "P07376; LURR-20250374, L0516",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260727-carriger-solar-interconnection-project.pdf#page=1",
+    "native_id": "P04517 / G0598",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260803-fy26-westside-substation-defensible-space-veg-mgmt.pdf#page=1",
+    "native_id": "fy26-westside-substation-defensible-space-vegetation-management-pp-a-no-7140",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260810-chief-joseph-sickler-no1-transmission-line-insulator-replacement.pdf#page=1",
+    "native_id": "chief-joseph-sickler-no-1-transmission-line-insulator-replacement-pp-a-no-7151",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260915-chief-joseph-substation-transformer-maintenance-project.pdf#page=1",
+    "native_id": "P03611",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "cx_20260915-ross-substation-and-complex-station-service-upgrade-project-updated-cx-from-20230104.pdf#page=1",
+    "native_id": "P03425",
+    "reason": "transcribed row verified on its cited page"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "cx_20260924-warner-substation-and-happy-camp-radio-site-alignment-project.pdf#page=1",
+    "native_id": "P06036",
+    "reason": "other work, not a transmission construction project"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "westtec_identified.geojson",
+    "native_id": "ostrander-pearl-500kv-reconductor",
+    "reason": "same project as bpa-gerp-lines:P02505"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "westtec_planned.geojson",
+    "native_id": "ostrander-pearl-1-500",
+    "reason": "same project as bpa-gerp-lines:P02505"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P03999",
+    "reason": "same project as bpa-gerp-substations:P03999"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P03999",
+    "reason": "same project as bpa-gerp-substations:P03999"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P04632",
+    "reason": "same project as bpa-gerp-substations:P04632"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P04632",
+    "reason": "same project as bpa-gerp-substations:P04632"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P04974",
+    "reason": "same project as bpa-gerp-substations:P04974"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P04974",
+    "reason": "same project as bpa-gerp-substations:P04974"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P05449",
+    "reason": "same project as bpa-gerp-substations:P05449"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P05449",
+    "reason": "same project as bpa-gerp-substations:P05449"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P05470",
+    "reason": "same project as bpa-gerp-lines:P05470"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P05580",
+    "reason": "same project as bpa-gerp-substations:P05580"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "six-mile-canyon-500-230-kv-substation-addition",
+    "reason": "same project as wecc-apr-2025-bpa:L0510"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "lapine-230-115-kv-transformer-addition",
+    "reason": "same project as wecc-apr-2025-bpa:lapine-230-115-kv-transformer-addition"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "boardman-area-reinforcement-longhorn-substation",
+    "reason": "same project as wecc-apr-2025-bpa:boardman-area-reinforcement-longhorn-substation"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "cross-cascades-north-upgrade",
+    "reason": "same project as wecc-apr-2025-bpa:cross-cascades-north-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "boise-bench-midpoint-1-230-kv-transmission-line-project",
+    "reason": "same project as wecc-apr-2025-ipc:boise-bench-midpoint-1-230kv-transmission-line-project"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "boise-bench-230-kv-shunt-capacitor-project",
+    "reason": "same project as wecc-apr-2025-ipc:boise-bench-230kv-shunt-capacitor-project"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "apr_IPC.pdf",
+    "native_id": "gateway-west-transmission-project",
+    "reason": "same project as northerngrid-scope-2026-2027:gateway-west-segment-8"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2024-2025_study_scope.pdf",
+    "native_id": "gateway-west-segment-e-phase-1-midpoint-hemingway-2-500-kv",
+    "reason": "same project as northerngrid-scope-2026-2027:gateway-west-segment-8"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "apr_IPC.pdf",
+    "native_id": "mayfield-myfd-500kv-substation",
+    "reason": "same project as northerngrid-scope-2026-2027:mayfield-230kv-substation"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "apr_PGE.pdf",
+    "native_id": "reconductor-horizon-keeler-1-230kv",
+    "reason": "same project as wecc-apr-2025-pge:horizon-keeler-1-and-2-230-230kv-4000a-upgrades"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "horizon-keeler-1-2-230-kv-4000a-upgrades",
+    "reason": "same project as wecc-apr-2025-pge:horizon-keeler-1-and-2-230-230kv-4000a-upgrades"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "evergreen-harborton-230-kv-reconductor",
+    "reason": "same project as wecc-apr-2025-pge:evergreen-harborton-230kv-reconductor"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "monitor-rebuild-project",
+    "reason": "same project as wecc-apr-2025-pge:monitor-rebuild-project"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "sherwood-230-115kv-transformer-project",
+    "reason": "same project as wecc-apr-2025-pge:sherwood-230-115kv-transformer-project"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "apr_PGE.pdf",
+    "native_id": "harborton-st-marys-230kv-reconductor",
+    "reason": "same project as northerngrid-scope-2026-2027:harborton-st-marys-230kv"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "issaquah-area-distribution-capacity",
+    "reason": "same project as wecc-apr-2025-pse:issaquah-area-distribution-capacity"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P01092",
+    "reason": "same project as bpa-transmission-plan-2025:P01092"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "cx_20250424-silver-creek-sub-and-silver-creekmayfield-no1-230kv-upgrade.pdf",
+    "native_id": "P01092",
+    "reason": "same project as bpa-transmission-plan-2025:P01092"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P02367",
+    "reason": "same project as bpa-transmission-plan-2025:P02367"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P06244",
+    "reason": "same project as bpa-transmission-plan-2025:P06244"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P03506",
+    "reason": "same project as bpa-transmission-plan-2023:P03506"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P05435",
+    "reason": "same project as bpa-transmission-plan-2025:P05435"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P04401",
+    "reason": "same project as bpa-transmission-plan-2025:P04401"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P03258",
+    "reason": "same project as bpa-transmission-plan-2025:P03258"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P04286",
+    "reason": "same project as bpa-transmission-plan-2025:P04286"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P02365",
+    "reason": "same project as bpa-cx-20260319richlandsubstationtostevensdrivetransmissionlinerebuildprojectupdatetopreviouscx:P02365"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P02365",
+    "reason": "same project as bpa-cx-20260319richlandsubstationtostevensdrivetransmissionlinerebuildprojectupdatetopreviouscx:P02365"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P04691",
+    "reason": "same project as bpa-transmission-plan-2025:P04691"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P05322",
+    "reason": "same project as bpa-transmission-plan-2025:P05322"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P02259",
+    "reason": "same project as bpa-transmission-plan-2025:P02259"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "bell-boundary-230-kv-no-1-sacheen-line-upgrade",
+    "reason": "same project as wecc-apr-2025-summary:bell-boundary-230-kv-no-1-sacheen-line-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2023_transmission_plan.pdf",
+    "native_id": "P02256",
+    "reason": "same project as bpa-transmission-plan-2025:P02256"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "cx_20250115-lapine-substation-shunt-capacitor-expansion.pdf",
+    "native_id": "P03443",
+    "reason": "same project as bpa-cx-20260106-lapine-substation-shunt-capacitor-expansion-update-to-cx-issued-01152025:P03443"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "P03443",
+    "reason": "same project as bpa-cx-20260106-lapine-substation-shunt-capacitor-expansion-update-to-cx-issued-01152025:P03443"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "new-la-pine-bonanza-230-kv-line",
+    "reason": "same project as bpa-transmission-plan-2025:bonanza-la-pine-230-kv-line-addition-gerp2"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_gerp_project_update.pdf",
+    "native_id": "la-pine-bonanza-230-kv-line",
+    "reason": "same project as bpa-transmission-plan-2025:bonanza-la-pine-230-kv-line-addition-gerp2"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "la-pine-bonanza-line",
+    "reason": "same project as bpa-transmission-plan-2025:bonanza-la-pine-230-kv-line-addition-gerp2"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_gerp_project_update.pdf",
+    "native_id": "ross-rivergate",
+    "reason": "same project as bpa-transmission-plan-2025:ross-rivergate-230-kv-line-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "ross-rivergate-rebuild",
+    "reason": "same project as bpa-transmission-plan-2025:ross-rivergate-230-kv-line-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "rock-creek-john-day-500-kv-line-upgrade",
+    "reason": "same project as northerngrid-scope-2026-2027:rock-creek-john-day-1-500kv-line-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_gerp_project_update.pdf",
+    "native_id": "rock-creek-john-day-500-kv-line-upgrade",
+    "reason": "same project as northerngrid-scope-2026-2027:rock-creek-john-day-1-500kv-line-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_2025_transmission_plan.pdf",
+    "native_id": "big-eddy-chemawa-1-500-kv-line-rebuild",
+    "reason": "same project as northerngrid-scope-2026-2027:big-eddy-chemawa-rebuild"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_gerp_project_update.pdf",
+    "native_id": "big-eddy-chemawa-230-500-kv-line-upgrade",
+    "reason": "same project as northerngrid-scope-2026-2027:big-eddy-chemawa-rebuild"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_gerp_project_update.pdf",
+    "native_id": "bonanza-230-500-kv-substation",
+    "reason": "same project as northerngrid-scope-2026-2027:bonanza-substation"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "bpa_gerp_project_update.pdf",
+    "native_id": "buckley-500-kv-substation-rebuild",
+    "reason": "same project as northerngrid-scope-2026-2027:buckley-rebuild"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "idahopower_current_projects.html",
+    "native_id": "boardman-to-hemingway-transmission-line",
+    "reason": "same project as northerngrid-scope-2026-2027:boardman-hemingway-b2h-project"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "bethel-round-butte-500kv-upgrade",
+    "reason": "same project as westtec-10yr-planned:bethel-round-butte-500kv-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "bethel-round-butte-series",
+    "reason": "same project as westtec-10yr-planned:bethel-round-butte-500kv-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "gateway-west-transm-segment-5",
+    "reason": "same project as northerngrid-scope-2026-2027:gateway-west-transm-segment-10"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "gateway-west-transm-segment-6",
+    "reason": "same project as northerngrid-scope-2026-2027:gateway-west-transm-segment-10"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "gateway-west-transm-segment-7",
+    "reason": "same project as northerngrid-scope-2026-2027:gateway-west-transm-segment-10"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "lewiston-230kv-mitigation",
+    "reason": "same project as northerngrid-scope-2026-2027:lewiston-115kv-mitigation"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "northerngrid_2026-2027_study_scope.pdf",
+    "native_id": "colstrip-broadview-series",
+    "reason": "same project as westtec-10yr-identified:colstrip-broadview-500-kv-series-cap-upgrade"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "snopud_system_improvements.html",
+    "native_id": "getchell-switching-station",
+    "reason": "same project as northerngrid-scope-2026-2027:getchell-115-kv-switching-station"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "wecc_apr_2025_summary.pdf",
+    "native_id": "alvey-malin-500-kv-series-compensation-upgrades",
+    "reason": "same project as wecc-apr-2025-pacificorp:alvey-malin-500-kv-series-compensation-upgrades"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "cx_20250224-targhee-substation.pdf",
+    "native_id": "P03589",
+    "reason": "same project as bpa-cx-20260406targheesubbreakerinstallationandtransfertripupgradesupdate-to-previous-CX-issued-20250224:P03589"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "cx_20251118-morrow-solar-generation-interconnect-project-previous-cx-updated-20250423.pdf",
+    "native_id": "P02302; G0513, G0532, and LURR20260015",
+    "reason": "same project as bpa-cx-20250423-morrow-solar-generation-interconnection:P02302; G0513 and G0532"
+  }
+]

@@ -1,0 +1,940 @@
+{
+  "file": "wecc_apr_2025_pacificorp",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Windstar to Shirley Basin",
+      "page": 6,
+      "quote": "Construction of one new 230 kilovolt (kV) circuit from Windstar to\nShirley Basin (57 miles) with 2-1272 ACSR Bittern/phase [PAC In service 2024\nowned facility].",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Windstar",
+        "Shirley Basin"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "In service 2024",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Aeolus - Freezeout",
+      "page": 6,
+      "quote": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line with\nIn service 2024\n2X1158.4 Hudson conductor. [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Aeolus",
+        "Freezeout"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "In service 2024",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "DJ-Amasa-Heward (new)-Shirley Basin 230 kV line",
+      "page": 7,
+      "quote": "Rebuild the DJ-Amasa-Heward (new)-Shirley Basin 230 kV line from\nIn service 2024\n1-1272 ACSR/phase to 2-1272 ACSR/phase. [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "In service 2024",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ)",
+      "page": 7,
+      "quote": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ)\nIn service 2024\nat Aeolus [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [
+        525,
+        230
+      ],
+      "in_service_raw": "In service 2024",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Add one new 60 MVAR reactor at Aeolus 230 kV.",
+      "page": 7,
+      "quote": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt\ncapacitors. Add one new 60 MVAR reactor at Aeolus 230 kV. [PAC\nowned facility] In service 2024",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [
+        230,
+        500
+      ],
+      "in_service_raw": "In service 2024",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Modification of the Remedial Action Scheme (RAS) at Aeolus for loss",
+      "page": 7,
+      "quote": "Modification of the Remedial Action Scheme (RAS) at Aeolus for loss\nof Bridger/Anticline-Aeolus facilities and Aeolus – Clover facilities In service 2024",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": null,
+      "in_service_raw": "In service 2024",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ)",
+      "page": 7,
+      "quote": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ) In-Service:\nat Anticline [PAC owned facility] – Initial D.2 Project facility October 2020",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Anticline"
+      ],
+      "voltages_kv": [
+        500,
+        345
+      ],
+      "in_service_raw": "October 2020",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Replace the Bridger 345/230 kV #2 (200 MVA) autotransformer with a",
+      "page": 7,
+      "quote": "Replace the Bridger 345/230 kV #2 (200 MVA) autotransformer with a In-service: April\n700 MVA autotransformer [PAC/IPC jointly owned facility] 2022",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bridger"
+      ],
+      "voltages_kv": [
+        345,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Replace the Bridger 345/230 kV #1 and #3 (2 x 200 MVA) autotransformers with a single 700 MVA auto transformer.",
+      "page": 7,
+      "quote": "Replace the Bridger 345/230 kV #1 and #3 (2 x 200 MVA)\nautotransformers with a single 700 MVA auto transformer. [jointly 2033 (earliest)\nowned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bridger"
+      ],
+      "voltages_kv": [
+        345,
+        230
+      ],
+      "in_service_raw": "2033 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Addition of four 345/345 kV (533.3 MVA) phase-shifting transformers",
+      "page": 7,
+      "quote": "Addition of four 345/345 kV (533.3 MVA) phase-shifting transformers In service Dec\nat Anticline [PAC owned facility] 2024",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Anticline"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Anticline to Bridger",
+      "page": 7,
+      "quote": "Construction of one new 345 kV circuit from Anticline to Bridger (5 In-Service:\nmiles) [PAC owned facility] – Initial D.2 Project facility October 2020",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Anticline",
+        "Bridger"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "October 2020",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Anticline to Populus",
+      "page": 7,
+      "quote": "Construction of one new 500 kV circuit from Anticline to Populus with\nQ4 2034 (earliest)\n50% of series compensation (203 miles) [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Anticline",
+        "Populus"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2034 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Addition of one - 500/345 kV (2000 MVA) autotransformer (3 x 1Φ) at",
+      "page": 7,
+      "quote": "Addition of one - 500/345 kV (2000 MVA) autotransformer (3 x 1Φ) at\nQ4 2034 (earliest)\nPopulus [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Populus"
+      ],
+      "voltages_kv": [
+        500,
+        345
+      ],
+      "in_service_raw": "Q4 2034 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Aeolus 230 kV SVC (-150/+300 MVAr)",
+      "page": 7,
+      "quote": "Aeolus 230 kV SVC (-150/+300 MVAr) Q4 2034 (earliest)",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "Q4 2034 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Borah [/Populus] West (Path 17)",
+      "page": 7,
+      "quote": "Borah [/Populus] West (Path 17)\nConstruction of one new 500 kV circuit from Populus to Borah (55\nmiles) and new 500 kV circuit between Borah and Midpoint (88 miles). 2036 (earliest)",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Populus to Cedar Hill",
+      "page": 8,
+      "quote": "Construction of one new 500 kV circuit from Populus to Cedar Hill\nwith approximately 45% series compensation. (118 miles) [PAC Q4 2036 (earliest)\nowned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Populus",
+        "Cedar Hill"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2036 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Cedar Hill to Hemingway",
+      "page": 8,
+      "quote": "Construction of one new 500 kV circuit from Cedar Hill to Hemingway\nwith approximately 45% series compensation. (161 miles) [PAC/IPC 2036 (earliest)\njointly owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Cedar Hill to Midpoint",
+      "page": 8,
+      "quote": "Construction of one new 500 kV circuit from Cedar Hill to Midpoint.\nThis line will connect the Idaho southern route to Midpoint for\n2036 (earliest)",
+      "owner": "PacifiCorp",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Midpoint"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Midpoint – Hemingway Section",
+      "page": 8,
+      "quote": "Midpoint – Hemingway Section\nThis section of the project will include two-500 kV circuits:\n The first 500 kV circuit from Midpoint to Hemingway has",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Midpoint",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "A. Gateway West Transmission Project – Project Update"
+    },
+    {
+      "native_id": null,
+      "name": "Longhorn to Hemingway (B2H)",
+      "page": 10,
+      "quote": "PacifiCorp is jointly participating with Idaho Power in the construction of the Longhorn to\nHemingway (B2H) 500 kV transmission line. This new line, previously referred to as the\nBoardman to Hemingway line, will be approximately 290 miles between the planned Longhorn\nsubstation near Boardman, Oregon and the Hemingway substation near Melba, Idaho. The\nproject has a planned in-service date of Q4 2027.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR",
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Longhorn",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2027",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "D. Longhorn-to-Hemingway (B2H)"
+    },
+    {
+      "native_id": null,
+      "name": "Blueprint South: Snow Goose-Full Circle 500 kV",
+      "page": 11,
+      "quote": "Blueprint South: Snow Goose-Full Circle 500 kV\nConstruct a new, approximately 166-mile 500 kV line with two 500 kV mid-line series capacitor\nstations providing 40% series compensation each, for 80% series compensation in total.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Snow Goose",
+        "Full Circle"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Blueprint North: Full Circle-Apex 500 kV",
+      "page": 12,
+      "quote": "Blueprint North: Full Circle-Apex 500 kV\nConstruct new, approximately 144-mile 500 kV line with one 500 kV mid-line series capacitor\nstation providing 50% series compensation.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Full Circle",
+        "Apex"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Blueprint East: Apex-Maverick-Feedville 500 kV",
+      "page": 12,
+      "quote": "Blueprint East: Apex-Maverick-Feedville 500 kV\nFacilities to be constructed under individual service agreements for load interconnection\nrequests, to include 500 kV between Apex and Maverick substations and a future 500 kV\nconnection to the planned Feedville substation.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Snow Goose Substation",
+      "page": 12,
+      "quote": "Snow Goose Substation – Expand to accommodate new 500 kV line termination",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Snow Goose"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Twin River Substation (Future)",
+      "page": 12,
+      "quote": "Twin River Substation (Future) – Future 500/230 kV Chiloquin area source substation",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Twin River"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Chemult Substation",
+      "page": 12,
+      "quote": "Chemult Substation – New 500 kV series compensation station",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Chemult"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Paulina Substation",
+      "page": 12,
+      "quote": "Paulina Substation – New 500 kV series compensation station",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Paulina"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Full Circle Substation",
+      "page": 12,
+      "quote": "Full Circle Substation – New 500/230 kV substation, connecting to existing 230 kV system\nin Deschutes or Crook County, Oregon",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Full Circle"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Snowball Substation",
+      "page": 12,
+      "quote": "Snowball Substation – New 500 kV series compensation station",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Snowball"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Dual Mesa Substation (Future)",
+      "page": 12,
+      "quote": "Dual Mesa Substation (Future) – Future 500/230 kV substation to accommodate potential\nload interconnection requests currently under study",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Dual Mesa"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Apex Substation",
+      "page": 12,
+      "quote": "Apex Substation – Being constructed in 2026 for customer load interconnection requests,\nexpand to accommodate new 500 kV line termination",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Apex"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2026",
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Maverick Substation",
+      "page": 12,
+      "quote": "Maverick Substation – Series compensation station on the Hemingway to Longhorn\n(B2H) line, approximately 15 miles south of Longhorn. Convert to 500 kV substation\nwith connection to Apex-Maverick 500 kV line.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Maverick"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": null,
+      "name": "Feedville Substation (Future)",
+      "page": 12,
+      "quote": "Feedville Substation (Future) – New 500/230 kV transformation connecting to Feedville\n230 kV substation being constructed for customer load interconnection requests",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Feedville"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "II. Blueprint Transmission Project"
+    },
+    {
+      "native_id": "687",
+      "name": "687",
+      "page": 13,
+      "quote": "Klamath, Pumped\n687 PacifiCorp On File Suspended 415.8 500 Complete\nOR Storage",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Klamath"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": "Suspended",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "III. Future Generation Projects; Table 4: Significant Generation Additions- PacifiCorp East/ West"
+    },
+    {
+      "native_id": "C1-23",
+      "name": "C1-23",
+      "page": 13,
+      "quote": "Solar\nKlamath,\nC1-23 PacifiCorp On File Executed IA 300 & 230 Complete\nOR\nBattery",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Klamath"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "III. Future Generation Projects; Table 4: Significant Generation Additions- PacifiCorp East/ West"
+    },
+    {
+      "native_id": "C1-43",
+      "name": "C1-43",
+      "page": 14,
+      "quote": "Solar\nC1-43 Clark, ID PacifiCorp On File Executed IA 200 & 230 Complete\nBattery",
+      "owner": "PacifiCorp",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Clark"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "III. Future Generation Projects; Table 4: Significant Generation Additions- PacifiCorp East/ West"
+    },
+    {
+      "native_id": "C1-44",
+      "name": "C1-44",
+      "page": 14,
+      "quote": "Solar\nC1-44 Lake, OR PacifiCorp On File Suspended 400 & 500 Complete\nBattery",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Lake"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": "Suspended",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "III. Future Generation Projects; Table 4: Significant Generation Additions- PacifiCorp East/ West"
+    },
+    {
+      "native_id": "C2-82",
+      "name": "C2-82",
+      "page": 14,
+      "quote": "Solar\nBannock,\nC2-82 PacifiCorp On File Executed IA 300 & 345 Complete\nID\nBattery",
+      "owner": "PacifiCorp",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "source_text",
+      "counties": [
+        "Bannock"
+      ],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "III. Future Generation Projects; Table 4: Significant Generation Additions- PacifiCorp East/ West"
+    },
+    {
+      "native_id": null,
+      "name": "Southern Oregon 230 kV Line Upgrades",
+      "page": 15,
+      "quote": "Southern Oregon 230 kV Line Upgrades – This project was granted a Waiver of\n“Significant Impact” Status in 2024 based on no comments received from WECC\nMembers and was removed from Table 5.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "C. Updates to the Annual Progress Report from the Previous Submittal (2024)"
+    },
+    {
+      "native_id": null,
+      "name": "Alvey-Malin 500 kV Series Compensation Upgrades",
+      "page": 15,
+      "quote": "Alvey-Malin 500 kV Series Compensation Upgrades – This project was granted a\nWaiver of “Significant Impact” Status in 2024 based on no comments received\nfrom WECC Members and was removed from Table 5.",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Alvey",
+        "Malin"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "C. Updates to the Annual Progress Report from the Previous Submittal (2024)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "file": "scl_current_projects",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Relicensing the Skagit Hydroelectric Project",
+      "page": 1,
+      "quote": "Relicensing the Skagit Hydroelectric Project\nCollaborating with partners to renew the federal license for the Skagit Hydroelectric Project.",
+      "owner": "Seattle City Light",
+      "states": ["WA"],
+      "state_basis": "owner_territory",
+      "counties": [],
+      "kind": "site",
+      "facilities": ["Skagit"],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "Programs"
+    },
+    {
+      "native_id": null,
+      "name": "Relicensing the South Fork Tolt Hydroelectric Project",
+      "page": 1,
+      "quote": "Relicensing the South Fork Tolt Hydroelectric Project\nCollaborating with partners to renew the federal license for the South Fork Tolt Hydroelectric Project.",
+      "owner": "Seattle City Light",
+      "states": ["WA"],
+      "state_basis": "owner_territory",
+      "counties": [],
+      "kind": "site",
+      "facilities": ["South Fork Tolt"],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "Programs"
+    }
+  ]
+}
