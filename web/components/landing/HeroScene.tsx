@@ -36,8 +36,9 @@ export function HeroScene() {
       </div>
       <div className={s.sceneCaption}>
         <span className={s.statusDot} />
-        <span>{view === "road" ? "Separate projects. A shared horizon." : "One region. More possibilities."}</span>
-        <span>Illustrative animation</span>
+        {/* Scroll-story beats from GridBridge-reference.html texts.B / texts.C */}
+        <span>{view === "road" ? "Same roads." : "One network."}</span>
+        <span>{view === "road" ? "Two utilities. Separate filings. Separate trucks." : "GridBridge finds jobs within 25 miles and moves the fleet once."}</span>
       </div>
       <button className={s.pause} type="button" onClick={() => setPaused(!paused)} aria-pressed={paused}>
         {paused ? "Play animation" : "Pause animation"}
