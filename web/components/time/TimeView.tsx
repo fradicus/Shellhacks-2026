@@ -132,7 +132,6 @@ export function TimeView({
   // A pair under the pointer (or keyboard focus) in the list: previewed on the map before any click.
   const [preview, setPreview] = useState<string | null>(null);
   const [flat, setFlat] = useState(false);
-  const [yearPx, setYearPx] = useState(30);
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
   const [trayOpen, setTrayOpen] = useState(false);
@@ -152,7 +151,6 @@ export function TimeView({
   const reduced = useRef(false);
   const leftRef = useRef<HTMLDivElement>(null);
   const detailRef = useRef<HTMLElement>(null);
-  const fitPx = useRef(30);
   const epochRef = useRef(0);
   const topYearsRef = useRef(1);
   const incoming = useRef<string | null | undefined>(undefined);
@@ -274,9 +272,6 @@ export function TimeView({
   // --- the map, created once ------------------------------------------------------------------------------------------
   useEffect(() => {
     reduced.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const h = container.current?.clientHeight ?? 800;
-    fitPx.current = Math.max(16, Math.min(96, Math.round((h * 0.36) / Math.max(topYears, 1) / 2) * 2));
-    setYearPx(fitPx.current);
     let cancelled = false;
     let map: MlMap | null = null;
     (async () => {
@@ -312,7 +307,6 @@ export function TimeView({
             }
           }
           const layer = createTimeLayer(ml, {
-            yearPx,
             onSweep: (st: SweepState) => {
               const el = sweepEl.current;
               if (!el) return;
@@ -458,9 +452,14 @@ export function TimeView({
     });
   }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt]);
 
+  // Pillar height follows the zoom (yearPxAt); a selected pair's own top sets the cap so its day gap fills the room.
   useEffect(() => {
-    layerRef.current?.setYearPx(yearPx);
-  }, [yearPx, ready]);
+    const top = (k: string) => {
+      const sp = drawn.get(k);
+      return sp?.kind === "exact" ? sp.day : sp?.kind === "range" ? sp.to : 0;
+    };
+    layerRef.current?.setFitYears(pair ? Math.max(top(pair.a), top(pair.b)) / DAYS_PER_YEAR : null);
+  }, [pair, drawn, ready]);
 
   // The 25-mile rule, drawn around both stored centers of the selected (or previewed) pair.
   const ra = pa ?? (previewed ? byKey.get(previewed.a) : undefined);
@@ -599,18 +598,9 @@ export function TimeView({
       setPairId(id);
       setProjectKey(null);
       const p = id ? pairs.find((x) => x.id === id) : null;
-      if (p) {
-        const tops = [p.a, p.b].map((k) => {
-          const sp = drawn.get(k);
-          return sp?.kind === "exact" ? sp.day : sp?.kind === "range" ? sp.to : 0;
-        });
-        const years = Math.max(...tops, 1) / DAYS_PER_YEAR;
-        const room = (container.current?.clientHeight ?? 800) * 0.42;
-        setYearPx(Math.max(16, Math.min(84, Math.round(room / years / 2) * 2)));
-        frame(byKey.get(p.a), byKey.get(p.b));
-      }
+      if (p) frame(byKey.get(p.a), byKey.get(p.b));
     },
-    [pairs, byKey, frame, drawn],
+    [pairs, byKey, frame],
   );
 
   useEffect(() => {
@@ -618,7 +608,6 @@ export function TimeView({
   }, [selectPair]);
 
   const overview = useCallback(() => {
-    setYearPx(fitPx.current);
     setPairId(null);
     setProjectKey(null);
     setScope(null);
@@ -1245,8 +1234,7 @@ export function TimeView({
             </span>
           </li>
         </ul>
-        <SceneControls styles={s} flat={flat} onFlat={toggleFlat} yearPx={yearPx} onYearPx={setYearPx}
-          range={[16, 96, 2]} onOverview={overview} />
+        <SceneControls styles={s} flat={flat} onFlat={toggleFlat} onOverview={overview} />
         <label className={s.scrub}>
           <span>
             Sheet at <b>{asOf === null ? `Today · ${fmtDate(analysisDate)}` : monthOf(epoch, asOf)}</b>

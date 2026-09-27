@@ -69,4 +69,12 @@ export function metersPerPixel(lat: number, zoom: number): number {
   return (40_075_016.686 * Math.cos((lat * Math.PI) / 180)) / (512 * 2 ** zoom);
 }
 
+/** Screen pixels per year at a map zoom. Each zoom level doubles the ground spread and multiplies height by √2, so a
+ * continent reads as short stubs and a pair as tall columns. Capped so `years` fit in `room` px; floored so a year
+ * never vanishes. Tuned by eye: 20 px at zoom 3.5 (the national overview). */
+export function yearPxAt(zoom: number, years: number, room: number): number {
+  const grown = 20 * 2 ** (0.5 * (zoom - 3.5));
+  return Math.max(8, Math.min(room / Math.max(years, 1), grown));
+}
+
 export const fmtDays = (d: number) => `${d.toLocaleString("en-US")} day${d === 1 ? "" : "s"}`;

@@ -19,7 +19,7 @@ Added by the human after run 1's freeze (Plan E VIS-01..04, issue 23's 3D part o
 2. **Heights are display only.** Axis ground = 1 January of the year before the analysis date (or the earliest drawn
    year, if later), declared on screen. A filed date before the ground keeps its facts in every text and lies flat on
    the ground, counted in the Projects tray; it never stretches the planning axis (2026-09-27, see below). Scale is
-   pixels per year (user slider, shown), so it reads at any zoom. Height never feeds distance, overlap or rank.
+   pixels per year, set by the zoom (no user slider, [F19-zoom-scale](../../decisions/F19-zoom-scale.md)). Height never feeds distance, overlap or rank.
 3. Exact dates draw as a bead on a light pillar. Month- or year-only dates draw as a column over the whole span; no day
    is picked. Unknown dates stay on the ground and are listed. Unlocated projects are counted, not drawn.
 4. A translucent sheet at the analysis date ("today", 10-mile grid) and a year ruler.

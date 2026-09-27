@@ -4,6 +4,7 @@
    pair zoom. The layer multiplies years by `yearPx × metres-per-pixel` at the map centre each frame, so a year is the
    same height on screen at any zoom. The slider shows the scale in use; it rises to 84 px when a pair is selected so a
    day gap is legible, and returns to the fitted value on "Overview". Undo: fix `metresPerYear` to a constant.
+   *Superseded 2026-09-27 by [F19-zoom-scale](F19-zoom-scale.md): the slider is gone and years grow with the zoom.*
 2. **Axis ground = 1 January of the earliest drawn year**, declared in the masthead. It's an axis origin, not a date
    given to any project.
 3. **Month/year dates draw as the whole span** (a column with ring caps). Today's data has none (261 exact, 1 unknown),
