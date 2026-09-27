@@ -1,29 +1,39 @@
 {
   "by_source": {
+    "wecc-apr-2026-ipc": 3,
+    "wecc-apr-2026-nve": 11,
+    "wecc-apr-2026-pacificorp": 10,
     "westconnect-tppl-2026-02-wy": 24
   },
   "by_state": {
-    "56": 24
+    "16": 3,
+    "32": 11,
+    "49": 3,
+    "56": 32
   },
   "by_status": {
-    "in_service": 14,
-    "planned": 10
+    "in_service": 24,
+    "planned": 24
   },
   "by_tier": {
-    "candidate": 11
+    "candidate": 31,
+    "candidate_unique_name": 1
   },
-  "distinct_points": 7,
-  "located": 11,
+  "distinct_points": 26,
+  "located": 32,
   "located_by_state": {
-    "56": 11
+    "16": 2,
+    "32": 9,
+    "49": 3,
+    "56": 19
   },
   "located_by_status": {
-    "in_service": 7,
-    "planned": 4
+    "in_service": 17,
+    "planned": 15
   },
-  "projects": 24,
+  "projects": 48,
   "unlocated_reasons": {
-    "no_facility": 9,
+    "no_facility": 12,
     "no_facility,operator_conflict": 1,
     "no_named_endpoint": 3
   },

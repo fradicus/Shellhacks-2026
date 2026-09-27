@@ -23,5 +23,81 @@
     ],
     "title": "WestConnect Transmission Plan Project List (TPPL) workbook",
     "vintage": null
+  },
+  {
+    "_id": "wecc-apr-2026-nve",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf",
+    "notes": [
+      "F50 Interior West release (C50 part 2): transmission rows transcribed with a page and verbatim quote the build re-finds in the PDF; rows another rollout publishes are excluded.",
+      "Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; a row whose text names no state is placed only by a corroborated facility in the owner's territory."
+    ],
+    "planning_region": "WECC",
+    "project_count": 11,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "NV Energy",
+    "retrieved_at": "2026-09-27T09:47:33Z",
+    "role": "project_plan",
+    "sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+    "states": [
+      "32"
+    ],
+    "title": "NV Energy 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf",
+    "notes": [
+      "F50 Interior West release (C50 part 2): transmission rows transcribed with a page and verbatim quote the build re-finds in the PDF; rows another rollout publishes are excluded.",
+      "Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; a row whose text names no state is placed only by a corroborated facility in the owner's territory."
+    ],
+    "planning_region": "WECC",
+    "project_count": 10,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "PacifiCorp",
+    "retrieved_at": "2026-09-27T09:47:35Z",
+    "role": "project_plan",
+    "sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+    "states": [
+      "49",
+      "56"
+    ],
+    "title": "PacifiCorp 2026 WECC Annual Progress Report",
+    "vintage": "2026"
+  },
+  {
+    "_id": "wecc-apr-2026-ipc",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/IPC%202026%20APR.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/IPC%202026%20APR.pdf",
+    "notes": [
+      "F50 Interior West release (C50 part 2): transmission rows transcribed with a page and verbatim quote the build re-finds in the PDF; rows another rollout publishes are excluded.",
+      "Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; a row whose text names no state is placed only by a corroborated facility in the owner's territory."
+    ],
+    "planning_region": "WECC",
+    "project_count": 3,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Idaho Power Company",
+    "retrieved_at": "2026-09-27T09:47:37Z",
+    "role": "project_plan",
+    "sha256": "ff4556b3e43c369f7f57f58ee8efa5662875d93fdbaaea6f613a9cd385d92455",
+    "states": [
+      "16"
+    ],
+    "title": "Idaho Power Company 2026 WECC Annual Progress Report",
+    "vintage": "2026"
   }
 ]

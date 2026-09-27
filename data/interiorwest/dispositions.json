@@ -2745,5 +2745,701 @@
     "name": "Thoreau DP",
     "reason": "state New Mexico; F45 or outside C50",
     "source_id": "westconnect-tppl-2026-02-wy"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=1",
+    "name": "Lantern 345 kV Substation",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=1",
+    "name": "Lantern – Comstock Meadows 345 kV line",
+    "reason": "same project as westtec-10yr-planned-sw:lantern-comstock-meadows-345-kv-line",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=1",
+    "name": "Sierra Solar",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=1",
+    "name": "Hilltop Phase Shifter Move",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=2",
+    "name": "Lazy 5 120 kV Substation",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=2",
+    "name": "Gerlach 15 MW, Ormat North Valley 2 15 MW, San Emedio 45 MW at Eagle 120 kV",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:tric-newton-120-kv-switchyard",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=2",
+    "name": "TRIC – Newton 120 kV Switchyard and Associated Upgrades",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:redwood-expansion-project-sutro",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=2",
+    "name": "Redwood Expansion (Project Sutro)",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=3",
+    "name": "Bordertown to California Sub 120 kV Project",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:west-tracy-comstock-meadows-345-kv-line",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=3",
+    "name": "West Tracy – Comstock Meadows 345 kV line",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=3",
+    "name": "Shaffer Substation – LMUD Interconnection",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=3",
+    "name": "Greenlink Nevada North (GLN)",
+    "reason": "same project as westtec-10yr-planned-sw:greenlink-north",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:buckeye-120-kv-substation-rebuild",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=4",
+    "name": "Buckeye 120 kV Substation Rebuild",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=4",
+    "name": "Peavine 120kV Substation",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=4",
+    "name": "Libra Solar 700 MW Interconnection",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=4",
+    "name": "Valmy Simple Cycle Peaker Plants 436.6 MW",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=5",
+    "name": "Corsac Geothermal Project 115 MW",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:west-tracy-wild-horse-120-kv-line",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=5",
+    "name": "West Tracy – Wild Horse 120 kV Line",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:reid-gardner-harry-allen-line-3",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=6",
+    "name": "Reid Gardner – Harry Allen Line #3",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=6",
+    "name": "HG III 230/12kV Substation (aka Apex Central/ Goforth)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:el-capitan-to-northwest-138-kv-reconductor",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=6",
+    "name": "El Capitan to Northwest 138 kV Reconductor",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=6",
+    "name": "Winston 138kV Switchyard",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=7",
+    "name": "Project Quasar – 138kV Switching Station",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=7",
+    "name": "Reid Gardner – Tortoise 230kV line #2",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=7",
+    "name": "Boulder Solar III",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:sapphire-230-12-kv-substation",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "NVE_2026_APR.pdf#page=7",
+    "name": "Sapphire 230/12 kV Substation",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=8",
+    "name": "Dry Lake East II Interconnection 200 MW PV/ BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=8",
+    "name": "Dry Lake East I Interconnection 150 MW BESS",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=8",
+    "name": "Greenlink Nevada West (GLW)",
+    "reason": "same project as westtec-10yr-planned-sw:greenlink-west",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:harry-allen-to-northwest-525-kv-line",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "locator": "NVE_2026_APR.pdf#page=9",
+    "name": "Harry Allen to Northwest 525 kV transmission line",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:spring-canyon-230-12-kv-substation",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "NVE_2026_APR.pdf#page=9",
+    "name": "Spring Canyon 230/12 kV Substation",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "NVE_2026_APR.pdf#page=9",
+    "name": "Sand Dune 230 kV Switching Station",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:harry-allen-230-kv-bus-split-and-line-reactor",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "NVE_2026_APR.pdf#page=9",
+    "name": "Harry Allen 230 kV Bus Split and Line Reactor on Harry Allen – Pecos 230 kV Lines",
+    "source_id": "wecc-apr-2026-nve"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:windstar-shirley-basin-230-kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=6",
+    "name": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles)",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:aeolus-freezeout-230-kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=6",
+    "name": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Rebuild the DJ-Amasa-Heward (new)-Shirley Basin 230 kV line",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:aeolus-525-230-kv-autotransformers",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ)",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:aeolus-shunt-capacitors-and-reactor",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:latham-series-compensation-aeolus-anticline",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Addition of 50% of series compensation near Latham on the Aeolus",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Modification of the Remedial Action Scheme (RAS) at Aeolus",
+    "reason": "other work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:anticline-500-345-kv-autotransformer",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ)",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Replace the Bridger 345/230 kV #2 (200 MVA) autotransformer with a",
+    "reason": "same project as wecc-apr-2025-pacificorp:replace-the-bridger-345-230-kv-2-200-mva-autotransformer-with-a",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Replace the Bridger 345/230 kV #1 and #3 (2 x 200 MVA) autotransformers with a single 700 MVA auto transformer.",
+    "reason": "same project as wecc-apr-2025-pacificorp:replace-the-bridger-345-230-kv-1-and-3-2-x-200-mva-autotransformers-with-a-singl",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Addition of four 345/345 kV (533.3 MVA) phase-shifting transformers",
+    "reason": "same project as wecc-apr-2025-pacificorp:addition-of-four-345-345-kv-533-3-mva-phase-shifting-transformers",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:anticline-bridger-345-kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Construction of one new 345 kV circuit from Anticline to Bridger",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Construction of one new 500 kV circuit from Anticline to Populus",
+    "reason": "same project as wecc-apr-2025-pacificorp:anticline-to-populus",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Addition of one - 500/345 kV (2000 MVA) autotransformer (3 x 1Φ) at",
+    "reason": "same project as wecc-apr-2025-pacificorp:addition-of-one-500-345-kv-2000-mva-autotransformer-3-x-1-at",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Aeolus 230 kV SVC (-150/+300 MVAr)",
+    "reason": "same project as wecc-apr-2025-pacificorp:aeolus-230-kv-svc-150-300-mvar",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Modification of the generator tripping scheme at Bridger (RAS C/D)",
+    "reason": "other work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "Construction of one new 500 kV circuit from Populus to Borah (55 miles)",
+    "reason": "same project as westtec-10yr-planned:gateway-west-populus-to-borah-e-north",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=7",
+    "name": "new 500 kV circuit between Borah and Midpoint (88 miles)",
+    "reason": "same project as westtec-10yr-planned:gateway-west-borah-to-midpoint-e-north",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=8",
+    "name": "Construction of one new 500 kV circuit from Populus to Cedar Hill",
+    "reason": "same project as northerngrid-scope-2024-2025:gateway-west-segment-e-phase-1-populus-cedar-hill-500-kv",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=8",
+    "name": "Construction of one new 500 kV circuit from Cedar Hill to Hemingway",
+    "reason": "same project as westtec-10yr-planned:gateway-west-cedar-hill-to-hemingway-e-south",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=8",
+    "name": "Construction of one new 500 kV circuit from Cedar Hill to Midpoint.",
+    "reason": "same project as westtec-10yr-planned:gateway-west-cedar-hill-to-midpoint-segment-e",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=8",
+    "name": "Midpoint – Hemingway Section",
+    "reason": "same project as wecc-apr-2025-pacificorp:midpoint-hemingway-section",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:gateway-south-aeolus-clover-500-kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=8",
+    "name": "Gateway South Transmission Project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:clover-loop-in-and-clover-mona-rebuild",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=9",
+    "name": "Loop-in the 345 kV circuit between Huntington and Mona into Clover",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:clover-camp-williams-3-345-kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "PacifiCorp_2026_APR.pdf#page=9",
+    "name": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=9",
+    "name": "Oquirrh to Terminal",
+    "reason": "same project as westtec-10yr-planned-sw:oquirrh-terminal-345-kv-3-and-4-double-circuit-line",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=10",
+    "name": "Construct Limber 500/345/138 kV substation",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=10",
+    "name": "Longhorn-to-Hemingway (B2H)",
+    "reason": "same project as wecc-apr-2025-pacificorp:longhorn-to-hemingway-b2h",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=15",
+    "name": "Spanish Fork – Mercer",
+    "reason": "same project as westtec-10yr-planned-sw:spanish-fork-mercer-345-kv-line",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "409",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "713",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "719",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "778",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "787",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "836",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "838",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "C1-34",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "C1-35",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=13",
+    "name": "C1-39",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=14",
+    "name": "C1-50",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=14",
+    "name": "C1-51",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=14",
+    "name": "C2-10",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=14",
+    "name": "C2-32",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=14",
+    "name": "C2-45",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PacifiCorp_2026_APR.pdf#page=14",
+    "name": "C2-82",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-pacificorp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=2",
+    "name": "Boise Bench Generation Project",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=2",
+    "name": "Oxbow Switch Yard T233 Transformer Replacement Project",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=2",
+    "name": "Horseflat T232 Transformer Project",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=2",
+    "name": "Pronghorn 230/138/161 Substation Project",
+    "reason": "same project as northerngrid-scope-2026-2027:pronghorn-project",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=3",
+    "name": "Crimson Orchard Generation Project",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "_id": "wecc-apr-2026-ipc:blacks-creek-substation",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "locator": "IPC_2026_APR.pdf#page=3",
+    "name": "Blacks Creek Substation",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=3",
+    "name": "Blacks Creek Generation Project",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=3",
+    "name": "Boardman to Hemingway Transmission Project",
+    "reason": "same project as wecc-apr-2025-ipc:B2H",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "_id": "wecc-apr-2026-ipc:hemingway-500-kv-line-terminal",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "IPC_2026_APR.pdf#page=5",
+    "name": "Hemingway 500 kV Line Terminal with Shunt Reactors and Series Capacitor",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "_id": "wecc-apr-2026-ipc:hemingway-bowmont-2-230-kv-line",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "IPC_2026_APR.pdf#page=5",
+    "name": "Hemingway-Bowmont #2 230 kV line",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=5",
+    "name": "Bowmont-Hubbard 230 kV line",
+    "reason": "same project as idahopower-current-projects:bowmont-to-hubbard-transmission-line",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=5",
+    "name": "Midpoint-Kinport 345 kV Series Capacitor Addition",
+    "reason": "same project as wecc-apr-2025-ipc:midpoint-kinport-345-kv-series-capacitor-addition",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=5",
+    "name": "Midpoint 500/345 kV Second Transformer Addition",
+    "reason": "same project as wecc-apr-2025-ipc:midpoint-500-345-kv-second-transformer-addition",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=13",
+    "name": "Gateway West Transmission Project",
+    "reason": "same project as idahopower-current-projects:gateway-west-transmission-line",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=13",
+    "name": "GWW Second Midpoint-Hemingway",
+    "reason": "same project as westtec-10yr-planned:gateway-west-midpoint-to-hemingway-segment-e8",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=13",
+    "name": "Mayfield (MYFD) 500kV substation",
+    "reason": "same project as idahopower-current-projects:mayfield-substation-and-transmission-line",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=14",
+    "name": "Loop in of existing Chip-Rattlesnake 230 kV line",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ipc"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "IPC_2026_APR.pdf#page=14",
+    "name": "Pleasant Valley – Mayfield 230kV line",
+    "reason": "same project as northerngrid-scope-2026-2027:mayfield-pleasant-valley-solar-230kv",
+    "source_id": "wecc-apr-2026-ipc"
   }
 ]

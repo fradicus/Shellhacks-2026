@@ -1,0 +1,388 @@
+{
+  "file": "IPC_2026_APR",
+  "rows": [
+    {
+      "native_id": "boise-bench-generation-project",
+      "name": "Boise Bench Generation Project",
+      "page": 2,
+      "quote": "The Boise Bench BESS Generation Project (BOBS) at the existing Boise Bench 138 kV substation located near Boise, ID is a 200 MW inverter-based battery generation resource.",
+      "owner": "Idaho Power Company",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Boise Bench"
+      ],
+      "voltages_kv": [
+        138
+      ],
+      "in_service_raw": "Summer 2026",
+      "status_raw": "requesting a waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "oxbow-switch-yard-t233-transformer-replacement",
+      "name": "Oxbow Switch Yard T233 Transformer Replacement Project",
+      "page": 2,
+      "quote": "This transformer will be upgraded with a larger 200 MVA 230kV/138kV transformer to better serve growing load and system transfers through the underlying 138k and 69kV system. This project is intended to improve system performance to the West Central Mountains local area of the system and has no significant impact to the WECC Interconnected electric system. The planned in-service date Spring 2026.",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Oxbow"
+      ],
+      "voltages_kv": [
+        230,
+        138
+      ],
+      "in_service_raw": "Spring 2026",
+      "status_raw": "requesting a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "horseflat-t232-transformer-project",
+      "name": "Horseflat T232 Transformer Project",
+      "page": 2,
+      "quote": "Horseflat substation will install the previous Oxbow 230/138kV transformer as a new T232 that has a 100 MVA rating.",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Horseflat"
+      ],
+      "voltages_kv": [
+        230,
+        138
+      ],
+      "in_service_raw": "Spring 2027",
+      "status_raw": "requesting a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "pronghorn-230-138-161-substation-project",
+      "name": "Pronghorn 230/138/161 Substation Project",
+      "page": 2,
+      "quote": "Pronghorn substation will be a new 230/161/138kV switching station to better serve load from the existing 230kV and 161 kV and 138kV system located in Butte County, ID.",
+      "owner": "Idaho Power Company",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Pronghorn"
+      ],
+      "voltages_kv": [
+        230,
+        161,
+        138
+      ],
+      "in_service_raw": "Fall 2026",
+      "status_raw": "requesting a waiver",
+      "work_type": "transmission",
+      "published_as": "northerngrid-scope-2026-2027:pronghorn-project"
+    },
+    {
+      "native_id": "crimson-orchard-generation-project",
+      "name": "Crimson Orchard Generation Project",
+      "page": 3,
+      "quote": "The Crimson Orchard Solar and BESS Generation Project (CRIM) at the existing Danskin 230 kV substation located near Elmore, ID is a 100 MW inverter-based battery generation resource and a 100 MW inverter-based solar generation resource for a comined point of injection of 100 MW max output.",
+      "owner": "Idaho Power Company",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Danskin"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "Spring 2027",
+      "status_raw": "requesting a waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "blacks-creek-substation",
+      "name": "Blacks Creek Substation",
+      "page": 3,
+      "quote": "The new Blacks Creek substation (BKSR) is being built south of Boise, ID to interconnect the Blacks Creek Generation Project. The BKSR substation will be fed by splitting the existing 13 mile Chip-Hubbard 230 kV transmission line and building approximately 1 mile of new 230 kV transmission to the new BSKR substation.",
+      "owner": "Idaho Power Company",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Blacks Creek"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "end of 2027",
+      "status_raw": "requesting a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "blacks-creek-generation-project",
+      "name": "Blacks Creek Generation Project",
+      "page": 3,
+      "quote": "The Blacks Creek Generation project is a 400 MW inverter-based solar generation resource. The new generation is in proximity to Idaho Power’s main load center and will serve Idaho Power native load. The project was studied during the generation interconnection process and has no significant impact on the WECC interconnected electric system. The planned in-service date of end of 2027.",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Blacks Creek"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "end of 2027",
+      "status_raw": "requesting a waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "boardman-to-hemingway",
+      "name": "Boardman to Hemingway Transmission Project",
+      "page": 3,
+      "quote": "The Boardman to Hemingway Transmission Line Project (B2H) is a planned 500-kilovolt (kV) transmission project that would span between the Hemingway 500-kV substation near Melba, Idaho, and the Longhorn Substation near Boardman, Oregon.",
+      "owner": "Idaho Power Company",
+      "states": [
+        "ID",
+        "OR"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Hemingway",
+        "Longhorn"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "no earlier than 2027",
+      "status_raw": "Construction began in June 2025",
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-ipc:B2H"
+    },
+    {
+      "native_id": "hemingway-500-kv-line-terminal",
+      "name": "Hemingway 500 kV Line Terminal with Shunt Reactors and Series Capacitor",
+      "page": 5,
+      "quote": "Hemingway 500 kV Line Terminal with Shunt Reactors and Series Capacitor",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "hemingway-bowmont-2-230-kv-line",
+      "name": "Hemingway-Bowmont #2 230 kV line",
+      "page": 5,
+      "quote": "Hemingway-Bowmont #2 230 kV line, 13 miles",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Hemingway",
+        "Bowmont"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "bowmont-hubbard-230-kv-line",
+      "name": "Bowmont-Hubbard 230 kV line",
+      "page": 5,
+      "quote": "Bowmont-Hubbard 230 kV line, 16 miles",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Bowmont",
+        "Hubbard"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "idahopower-current-projects:bowmont-to-hubbard-transmission-line"
+    },
+    {
+      "native_id": "midpoint-kinport-345-kv-series-capacitor-addition",
+      "name": "Midpoint-Kinport 345 kV Series Capacitor Addition",
+      "page": 5,
+      "quote": "Midpoint-Kinport 345 kV Series Capacitor Addition",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Midpoint",
+        "Kinport"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-ipc:midpoint-kinport-345-kv-series-capacitor-addition"
+    },
+    {
+      "native_id": "midpoint-500-345-kv-second-transformer-addition",
+      "name": "Midpoint 500/345 kV Second Transformer Addition",
+      "page": 5,
+      "quote": "Midpoint 500/345 kV Second Transformer Addition",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Midpoint"
+      ],
+      "voltages_kv": [
+        500,
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-ipc:midpoint-500-345-kv-second-transformer-addition"
+    },
+    {
+      "native_id": "gateway-west-transmission-project",
+      "name": "Gateway West Transmission Project",
+      "page": 13,
+      "quote": "Idaho Power and PacifiCorp are pursuing the joint development of the Gateway West project, a high-voltage transmission line project between a substation located near Douglas, Wyoming, and the Hemingway substation located near Boise, Idaho.",
+      "owner": "Idaho Power Company",
+      "states": [
+        "WY",
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "idahopower-current-projects:gateway-west-transmission-line"
+    },
+    {
+      "native_id": "gww-second-midpoint-hemingway",
+      "name": "GWW Second Midpoint-Hemingway",
+      "page": 13,
+      "quote": "Current permitting and pre-construction activities are focused on the section of line between Hemingway and Midpoint substations. Idaho Power expects the in-service date for this section of line, or a portion of this section, will be 2028 or later.",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Midpoint",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2028 or later",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned:gateway-west-midpoint-to-hemingway-segment-e8"
+    },
+    {
+      "native_id": "mayfield-500kv-substation",
+      "name": "Mayfield (MYFD) 500kV substation",
+      "page": 13,
+      "quote": "A new 500kV substation MYFD has been proposed by Idaho Power to connect on the second 500kV circuit from Midpoint to Hemingway Gateway West Section. The resulting lines will be an approximate 36 mile Hemingway-Mayfield 500kV, and an approximate 90 mile Mayfiled-Mipoint 500kV line.",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Mayfield"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "end of 2028",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "idahopower-current-projects:mayfield-substation-and-transmission-line"
+    },
+    {
+      "native_id": "loop-in-chip-rattlesnake-230-kv-at-mayfield",
+      "name": "Loop in of existing Chip-Rattlesnake 230 kV line",
+      "page": 14,
+      "quote": "Loop in of existing Chip-Rattlesnake 230 kV line  Chip-Mayfield 230 kV line, approx.16 miles  Mayfield-Rattlesnake 230 kV line, approx.21 miles",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Chip",
+        "Rattlesnake"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "end of 2028",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "pleasant-valley-mayfield-230kv-line",
+      "name": "Pleasant Valley – Mayfield 230kV line",
+      "page": 14,
+      "quote": "Pleasant Valley – Mayfield 230kV line, approx. 6 miles",
+      "owner": "Idaho Power Company",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Pleasant Valley",
+        "Mayfield"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "end of 2028",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "northerngrid-scope-2026-2027:mayfield-pleasant-valley-solar-230kv"
+    }
+  ]
+}

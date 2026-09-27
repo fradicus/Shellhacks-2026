@@ -1,5 +1,33 @@
 {
   "extracts": {
+    "osm-id.json": {
+      "bytes": 121810,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-ID\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:48:58Z",
+      "sha256": "547115d650210f01a94676235d6f4658da09ffa697d1e59ce5ee29882fef6c9d",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    "osm-mt.json": {
+      "bytes": 189490,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MT\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:49:17Z",
+      "sha256": "042f4d77fdcb536fb5fd1f74a7a5f2a50d463b088c1ac989c139b18dcf37347a",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    "osm-nv.json": {
+      "bytes": 116669,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-NV\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:48:25Z",
+      "sha256": "d3f50479c17f746a5d58d3a8fb5d027bc0e49e6428f0609d1b118f029e0aa279",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    "osm-ut.json": {
+      "bytes": 189693,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-UT\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T09:48:42Z",
+      "sha256": "4c344a3665bf437a9415be12192f9006b3b7feeef3841770377adec1a2ed7772",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
     "osm-wy.json": {
       "bytes": 137544,
       "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WY\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
@@ -9,6 +37,10 @@
     }
   },
   "named_substations": {
+    "ID": 53,
+    "MT": 187,
+    "NV": 111,
+    "UT": 138,
     "WY": 99
   },
   "publisher": "OpenStreetMap contributors",

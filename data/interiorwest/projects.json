@@ -1,5 +1,2444 @@
 [
   {
+    "_id": "wecc-apr-2026-ipc:blacks-creek-substation",
+    "center": null,
+    "counties": [],
+    "description": "The new Blacks Creek substation (BKSR) is being built south of Boise, ID to interconnect the Blacks Creek Generation Project. The BKSR substation will be fed by splitting the existing 13 mile Chip-Hubbard 230 kV transmission line and building approximately 1 mile of new 230 kV transmission to the new BSKR substation.",
+    "evidence": {
+      "page": 3,
+      "raw": {
+        "in_service_raw": "end of 2027",
+        "quote": "The new Blacks Creek substation (BKSR) is being built south of Boise, ID to interconnect the Blacks Creek Generation Project. The BKSR substation will be fed by splitting the existing 13 mile Chip-Hubbard 230 kV transmission line and building approximately 1 mile of new 230 kV transmission to the new BSKR substation.",
+        "status_raw": "requesting a waiver",
+        "transcription": "transcriptions/apr_ipc_2026.json#6"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "ff4556b3e43c369f7f57f58ee8efa5662875d93fdbaaea6f613a9cd385d92455"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "year",
+      "raw": "end of 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ID (ODbL)",
+      "endpoints": [
+        {
+          "name": "Blacks Creek",
+          "norm": "BLACKS CREEK",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "IDAHO POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Blacks Creek Substation",
+    "native_id": "blacks-creek-substation",
+    "other_owners": [],
+    "owner": "Idaho Power Company",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Expected in service end of 2027 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "ff4556b3e43c369f7f57f58ee8efa5662875d93fdbaaea6f613a9cd385d92455",
+            "facts": "The new Blacks Creek substation (BKSR) is being built south of Boise, ID to interconnect the Blacks Creek Generation Project. The BKSR substation will be fed by splitting the existing 13 mile Chip-Hubbard 230 kV transmission line and building approximately 1 mile of new 230 kV transmission to the new BSKR substation.",
+            "locator": "IPC_2026_APR.pdf#page=3",
+            "publisher": "Idaho Power Company",
+            "retrieved_at": "2026-09-27T09:47:37Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/IPC%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-ipc:blacks-creek-substation:planned-in-service",
+        "native_project_link": "blacks-creek-substation",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-ipc",
+    "states": [
+      "16"
+    ],
+    "status": "requesting a waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ipc:hemingway-500-kv-line-terminal",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/103393516 (Hemingway Substation), corroborated by operator, voltage.",
+      "lat": 43.350455,
+      "lon": -116.663007
+    },
+    "counties": [],
+    "description": "Hemingway 500 kV Line Terminal with Shunt Reactors and Series Capacitor",
+    "evidence": {
+      "page": 5,
+      "raw": {
+        "in_service_raw": null,
+        "quote": "Hemingway 500 kV Line Terminal with Shunt Reactors and Series Capacitor",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_ipc_2026.json#9"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "ff4556b3e43c369f7f57f58ee8efa5662875d93fdbaaea6f613a9cd385d92455"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/103393516",
+            "lat": 43.3504547,
+            "lon": -116.6630069,
+            "name": "Hemingway Substation",
+            "operator": "Idaho Power",
+            "state": "ID",
+            "voltage": "500000;230000"
+          },
+          "name": "Hemingway",
+          "norm": "HEMINGWAY",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "IDAHO POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Hemingway 500 kV Line Terminal with Shunt Reactors and Series Capacitor",
+    "native_id": "hemingway-500-kv-line-terminal",
+    "other_owners": [],
+    "owner": "Idaho Power Company",
+    "planning_region": "WECC",
+    "project_events": [],
+    "source_id": "wecc-apr-2026-ipc",
+    "states": [
+      "16"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-ipc:hemingway-bowmont-2-230-kv-line",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/103393516 (Hemingway Substation), OSM way/167144323 (Bowmont Substation), corroborated by operator, voltage.",
+      "lat": 43.394465,
+      "lon": -116.598957
+    },
+    "counties": [],
+    "description": "Hemingway-Bowmont #2 230 kV line, 13 miles",
+    "evidence": {
+      "page": 5,
+      "raw": {
+        "in_service_raw": null,
+        "quote": "Hemingway-Bowmont #2 230 kV line, 13 miles",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_ipc_2026.json#10"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "ff4556b3e43c369f7f57f58ee8efa5662875d93fdbaaea6f613a9cd385d92455"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/103393516",
+            "lat": 43.3504547,
+            "lon": -116.6630069,
+            "name": "Hemingway Substation",
+            "operator": "Idaho Power",
+            "state": "ID",
+            "voltage": "500000;230000"
+          },
+          "name": "Hemingway",
+          "norm": "HEMINGWAY",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/167144323",
+            "lat": 43.4384762,
+            "lon": -116.5349073,
+            "name": "Bowmont Substation",
+            "operator": "Idaho Power",
+            "state": "ID",
+            "voltage": "230000;138000"
+          },
+          "name": "Bowmont",
+          "norm": "BOWMONT",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "IDAHO POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Hemingway-Bowmont #2 230 kV line",
+    "native_id": "hemingway-bowmont-2-230-kv-line",
+    "other_owners": [],
+    "owner": "Idaho Power Company",
+    "planning_region": "WECC",
+    "project_events": [],
+    "source_id": "wecc-apr-2026-ipc",
+    "states": [
+      "16"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:buckeye-120-kv-substation-rebuild",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/170362865 (Buckeye Substation), corroborated by operator.",
+      "lat": 38.963387,
+      "lon": -119.710433
+    },
+    "counties": [],
+    "description": "This project is a rebuild of existing and aging 120 kV Buckeye substation with a planned ISD of August 21, 2030.",
+    "evidence": {
+      "page": 4,
+      "raw": {
+        "in_service_raw": "August 21, 2030",
+        "quote": "This project is a rebuild of existing and aging 120 kV Buckeye substation with a planned ISD of August 21, 2030.",
+        "status_raw": "requests waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#13"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "day",
+      "raw": "August 21, 2030",
+      "value": "2030-08-21"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/170362865",
+            "lat": 38.9633874,
+            "lon": -119.7104334,
+            "name": "Buckeye Substation",
+            "operator": "Sierra Pacific Power Company",
+            "state": "NV",
+            "voltage": "125000"
+          },
+          "name": "Buckeye",
+          "norm": "BUCKEYE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        120
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Buckeye 120 kV Substation Rebuild",
+    "native_id": "buckeye-120-kv-substation-rebuild",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030-08-21",
+        "description": "Expected in service August 21, 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is a rebuild of existing and aging 120 kV Buckeye substation with a planned ISD of August 21, 2030.",
+            "locator": "NVE_2026_APR.pdf#page=4",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:buckeye-120-kv-substation-rebuild:planned-in-service",
+        "native_project_link": "buckeye-120-kv-substation-rebuild",
+        "precision": "day",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "requests waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:el-capitan-to-northwest-138-kv-reconductor",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/166551123 (Northwest Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 36.334304,
+      "lon": -115.330208
+    },
+    "counties": [],
+    "description": "This project is comprised of the reconductor of the existing El Capitan to Northwest 138 kV line originally in pursuant to a Power Purchase Agreement for a generator interconnection.",
+    "evidence": {
+      "page": 6,
+      "raw": {
+        "in_service_raw": "May 2027",
+        "quote": "This project is comprised of the reconductor of the existing El Capitan to Northwest 138 kV line originally in pursuant to a Power Purchase Agreement for a generator interconnection.",
+        "status_raw": "granted waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#21"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2027",
+      "value": "2027-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "El Capitan",
+          "norm": "EL CAPITAN",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/166551123",
+            "lat": 36.3343036,
+            "lon": -115.3302075,
+            "name": "Northwest Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000;230000;138000"
+          },
+          "name": "Northwest",
+          "norm": "NORTHWEST",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "El Capitan to Northwest 138 kV Reconductor",
+    "native_id": "el-capitan-to-northwest-138-kv-reconductor",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2027-05",
+        "description": "Expected in service May 2027 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is comprised of the reconductor of the existing El Capitan to Northwest 138 kV line originally in pursuant to a Power Purchase Agreement for a generator interconnection.",
+            "locator": "NVE_2026_APR.pdf#page=6",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:el-capitan-to-northwest-138-kv-reconductor:planned-in-service",
+        "native_project_link": "el-capitan-to-northwest-138-kv-reconductor",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "granted waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:harry-allen-230-kv-bus-split-and-line-reactor",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71837876 (Harry Allen Substation), OSM way/130771397 (Pecos Substation), corroborated by voltage.",
+      "lat": 36.351039,
+      "lon": -115.001609
+    },
+    "counties": [],
+    "description": "This project is comprised of splitting the Harry Allen 230 kV into two by installing 2-20 ohm series reactors.",
+    "evidence": {
+      "page": 9,
+      "raw": {
+        "in_service_raw": "May 2028",
+        "quote": "This project is comprised of splitting the Harry Allen 230 kV into two by installing 2-20 ohm series reactors.",
+        "status_raw": "requests a waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#33"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "May 2028",
+      "value": "2028-05"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/71837876",
+            "lat": 36.4274003,
+            "lon": -114.9069319,
+            "name": "Harry Allen Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000;345000;230000"
+          },
+          "name": "Harry Allen",
+          "norm": "HARRY ALLEN",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/130771397",
+            "lat": 36.2746771,
+            "lon": -115.0962861,
+            "name": "Pecos Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "230000"
+          },
+          "name": "Pecos",
+          "norm": "PECOS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Harry Allen 230 kV Bus Split and Line Reactor on Harry Allen – Pecos 230 kV Lines",
+    "native_id": "harry-allen-230-kv-bus-split-and-line-reactor",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-05",
+        "description": "Expected in service May 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is comprised of splitting the Harry Allen 230 kV into two by installing 2-20 ohm series reactors.",
+            "locator": "NVE_2026_APR.pdf#page=9",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:harry-allen-230-kv-bus-split-and-line-reactor:planned-in-service",
+        "native_project_link": "harry-allen-230-kv-bus-split-and-line-reactor",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "requests a waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:harry-allen-to-northwest-525-kv-line",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71837876 (Harry Allen Substation), OSM way/166551123 (Northwest Substation), corroborated by unique_in_state.",
+      "lat": 36.380852,
+      "lon": -115.11857
+    },
+    "counties": [],
+    "description": "As necessary part of GLW but approved by the PUCN as part of GLN is a 30-mile line in Southern Nevada from Harry Allen substation in North Las Vegas to Northwest Substation in northwest Las Vegas strengthening the system to accommodate flows on both - GLW and GLN projects.",
+    "evidence": {
+      "page": 9,
+      "raw": {
+        "in_service_raw": "December 2028",
+        "quote": "As necessary part of GLW but approved by the PUCN as part of GLN is a 30-mile line in Southern Nevada from Harry Allen substation in North Las Vegas to Northwest Substation in northwest Las Vegas strengthening the system to accommodate flows on both - GLW and GLN projects.",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_nve_2026.json#30"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2028",
+      "value": "2028-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/71837876",
+            "lat": 36.4274003,
+            "lon": -114.9069319,
+            "name": "Harry Allen Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000;345000;230000"
+          },
+          "name": "Harry Allen",
+          "norm": "HARRY ALLEN",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "unique_in_state"
+          ],
+          "facility": {
+            "id": "way/166551123",
+            "lat": 36.3343036,
+            "lon": -115.3302075,
+            "name": "Northwest Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000;230000;138000"
+          },
+          "name": "Northwest",
+          "norm": "NORTHWEST",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate_unique_name",
+      "voltages_kv": [
+        525
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Harry Allen to Northwest 525 kV transmission line",
+    "native_id": "harry-allen-to-northwest-525-kv-line",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-12",
+        "description": "Expected in service December 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "As necessary part of GLW but approved by the PUCN as part of GLN is a 30-mile line in Southern Nevada from Harry Allen substation in North Las Vegas to Northwest Substation in northwest Las Vegas strengthening the system to accommodate flows on both - GLW and GLN projects.",
+            "locator": "NVE_2026_APR.pdf#page=9",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:harry-allen-to-northwest-525-kv-line:planned-in-service",
+        "native_project_link": "harry-allen-to-northwest-525-kv-line",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:redwood-expansion-project-sutro",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1217911215 (Comstock Meadows), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 39.495106,
+      "lon": -119.438014
+    },
+    "counties": [],
+    "description": "This project is comprised of a new 120 kV line out of Comstock Meadows Substation to serve Redwood Materials in the Tahoe Reno Industrial Complex. This includes new Redwood 120 kV substation, initial load addition of 82 MW and ultimate addition of 140 MW in 2027. Phase-1 of this project was energized in November 2024 with an initial load of about 3MW.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": null,
+        "quote": "This project is comprised of a new 120 kV line out of Comstock Meadows Substation to serve Redwood Materials in the Tahoe Reno Industrial Complex. This includes new Redwood 120 kV substation, initial load addition of 82 MW and ultimate addition of 140 MW in 2027. Phase-1 of this project was energized in November 2024 with an initial load of about 3MW.",
+        "status_raw": "energized in November 2024",
+        "transcription": "transcriptions/apr_nve_2026.json#8"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1217911215",
+            "lat": 39.4951059,
+            "lon": -119.4380139,
+            "name": "Comstock Meadows",
+            "operator": null,
+            "state": "NV",
+            "voltage": "120000"
+          },
+          "name": "Comstock Meadows",
+          "norm": "COMSTOCK MEADOWS",
+          "status": "matched"
+        },
+        {
+          "name": "Redwood",
+          "norm": "REDWOOD",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        120
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Redwood Expansion (Project Sutro)",
+    "native_id": "redwood-expansion-project-sutro",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": null,
+        "description": "Reported “energized in November 2024”.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is comprised of a new 120 kV line out of Comstock Meadows Substation to serve Redwood Materials in the Tahoe Reno Industrial Complex. This includes new Redwood 120 kV substation, initial load addition of 82 MW and ultimate addition of 140 MW in 2027. Phase-1 of this project was energized in November 2024 with an initial load of about 3MW.",
+            "locator": "NVE_2026_APR.pdf#page=2",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:redwood-expansion-project-sutro:in-service",
+        "native_project_link": "redwood-expansion-project-sutro",
+        "precision": "unknown",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "energized in November 2024",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:reid-gardner-harry-allen-line-3",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/71837876 (Harry Allen Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 36.4274,
+      "lon": -114.906932
+    },
+    "counties": [],
+    "description": "This project is a new 22-mile Harry Allen to Reid Gardner #3 230 kV transmission line. The new #3 line will double the transmission capacity between Reid Gardner to Harry Allen, so that new large generator interconnections at Reid Gardner Substation do not overload the Harry Allen - Reid Gardner #1 or #2 230 kV lines. The estimated ISD is June 30, 2028.",
+    "evidence": {
+      "page": 6,
+      "raw": {
+        "in_service_raw": "June 30, 2028",
+        "quote": "This project is a new 22-mile Harry Allen to Reid Gardner #3 230 kV transmission line. The new #3 line will double the transmission capacity between Reid Gardner to Harry Allen, so that new large generator interconnections at Reid Gardner Substation do not overload the Harry Allen - Reid Gardner #1 or #2 230 kV lines. The estimated ISD is June 30, 2028.",
+        "status_raw": "granted waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#19"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "day",
+      "raw": "June 30, 2028",
+      "value": "2028-06-30"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Reid Gardner",
+          "norm": "REID GARDNER",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/71837876",
+            "lat": 36.4274003,
+            "lon": -114.9069319,
+            "name": "Harry Allen Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "500000;345000;230000"
+          },
+          "name": "Harry Allen",
+          "norm": "HARRY ALLEN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Reid Gardner – Harry Allen Line #3",
+    "native_id": "reid-gardner-harry-allen-line-3",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-06-30",
+        "description": "Expected in service June 30, 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is a new 22-mile Harry Allen to Reid Gardner #3 230 kV transmission line. The new #3 line will double the transmission capacity between Reid Gardner to Harry Allen, so that new large generator interconnections at Reid Gardner Substation do not overload the Harry Allen - Reid Gardner #1 or #2 230 kV lines. The estimated ISD is June 30, 2028.",
+            "locator": "NVE_2026_APR.pdf#page=6",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:reid-gardner-harry-allen-line-3:planned-in-service",
+        "native_project_link": "reid-gardner-harry-allen-line-3",
+        "precision": "day",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "granted waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:sapphire-230-12-kv-substation",
+    "center": null,
+    "counties": [],
+    "description": "This project is being proposed to support the fast load growth in the Apex area of North Las Vegas.",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "in_service_raw": "January 2028",
+        "quote": "This project is being proposed to support the fast load growth in the Apex area of North Las Vegas.",
+        "status_raw": "requests a waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#26"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "month",
+      "raw": "January 2028",
+      "value": "2028-01"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Sapphire",
+          "norm": "SAPPHIRE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        12,
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Sapphire 230/12 kV Substation",
+    "native_id": "sapphire-230-12-kv-substation",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2028-01",
+        "description": "Expected in service January 2028 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is being proposed to support the fast load growth in the Apex area of North Las Vegas.",
+            "locator": "NVE_2026_APR.pdf#page=7",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:sapphire-230-12-kv-substation:planned-in-service",
+        "native_project_link": "sapphire-230-12-kv-substation",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "requests a waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:spring-canyon-230-12-kv-substation",
+    "center": null,
+    "counties": [],
+    "description": "This project is being proposed to support the growing commercial and industrial center in southern Henderson, specifically in the El Dorado Valley. The substation built out consists of two initial 230/12 kV 37.3 MVA transformers and is facilitated to accommodate additional one similar transformers based on load growth. The proposed ISD is March 2030.",
+    "evidence": {
+      "page": 9,
+      "raw": {
+        "in_service_raw": "March 2030",
+        "quote": "This project is being proposed to support the growing commercial and industrial center in southern Henderson, specifically in the El Dorado Valley. The substation built out consists of two initial 230/12 kV 37.3 MVA transformers and is facilitated to accommodate additional one similar transformers based on load growth. The proposed ISD is March 2030.",
+        "status_raw": "requests a waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#31"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "month",
+      "raw": "March 2030",
+      "value": "2030-03"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "name": "Spring Canyon",
+          "norm": "SPRING CANYON",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": null,
+      "voltages_kv": [
+        12,
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Spring Canyon 230/12 kV Substation",
+    "native_id": "spring-canyon-230-12-kv-substation",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030-03",
+        "description": "Expected in service March 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is being proposed to support the growing commercial and industrial center in southern Henderson, specifically in the El Dorado Valley. The substation built out consists of two initial 230/12 kV 37.3 MVA transformers and is facilitated to accommodate additional one similar transformers based on load growth. The proposed ISD is March 2030.",
+            "locator": "NVE_2026_APR.pdf#page=9",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:spring-canyon-230-12-kv-substation:planned-in-service",
+        "native_project_link": "spring-canyon-230-12-kv-substation",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "requests a waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:tric-newton-120-kv-switchyard",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/700974838 (Newton Substation), corroborated by operator, voltage.",
+      "lat": 39.575128,
+      "lon": -119.530343
+    },
+    "counties": [],
+    "description": "This project is comprised of the Newton 120 kV switching station and upgrades at the existing Pah Rah and West Tracy substations. This project requires the rebuilding of portions of the existing Tracy to Patrick 120 kV line, Tracy to Newton 120 kV line, Tracy to Pah Rah 120 kV line, and Pah Rah to Newton 120 kV line. The ISD for these upgrades are pushed out to July 2026.",
+    "evidence": {
+      "page": 2,
+      "raw": {
+        "in_service_raw": "July 2026",
+        "quote": "This project is comprised of the Newton 120 kV switching station and upgrades at the existing Pah Rah and West Tracy substations. This project requires the rebuilding of portions of the existing Tracy to Patrick 120 kV line, Tracy to Newton 120 kV line, Tracy to Pah Rah 120 kV line, and Pah Rah to Newton 120 kV line. The ISD for these upgrades are pushed out to July 2026.",
+        "status_raw": "granted waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#7"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "July 2026",
+      "value": "2026-07"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/700974838",
+            "lat": 39.5751281,
+            "lon": -119.5303433,
+            "name": "Newton Substation",
+            "operator": "NV Energy",
+            "state": "NV",
+            "voltage": "120000"
+          },
+          "name": "Newton",
+          "norm": "NEWTON",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        120
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "TRIC – Newton 120 kV Switchyard and Associated Upgrades",
+    "native_id": "tric-newton-120-kv-switchyard",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2026-07",
+        "description": "Expected in service July 2026 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is comprised of the Newton 120 kV switching station and upgrades at the existing Pah Rah and West Tracy substations. This project requires the rebuilding of portions of the existing Tracy to Patrick 120 kV line, Tracy to Newton 120 kV line, Tracy to Pah Rah 120 kV line, and Pah Rah to Newton 120 kV line. The ISD for these upgrades are pushed out to July 2026.",
+            "locator": "NVE_2026_APR.pdf#page=2",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:tric-newton-120-kv-switchyard:planned-in-service",
+        "native_project_link": "tric-newton-120-kv-switchyard",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "granted waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:west-tracy-comstock-meadows-345-kv-line",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/392184987 (West Tracy Substation), OSM way/1217911215 (Comstock Meadows), corroborated by voltage.",
+      "lat": 39.528278,
+      "lon": -119.483589
+    },
+    "counties": [],
+    "description": "This project comprises of 345 kV addition at Comstock Meadow substation with addition of two (2) 345/120kV transformers to accommodate rapid load growth in the Reno TRIC area. An additional 345kV line from East Tracy or Veterans is also proposed based on load growth requirements. The ISD planned for this project is February 2027.",
+    "evidence": {
+      "page": 3,
+      "raw": {
+        "in_service_raw": "February 2027",
+        "quote": "This project comprises of 345 kV addition at Comstock Meadow substation with addition of two (2) 345/120kV transformers to accommodate rapid load growth in the Reno TRIC area. An additional 345kV line from East Tracy or Veterans is also proposed based on load growth requirements. The ISD planned for this project is February 2027.",
+        "status_raw": "requests waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#10"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "month",
+      "raw": "February 2027",
+      "value": "2027-02"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/392184987",
+            "lat": 39.5614509,
+            "lon": -119.5291634,
+            "name": "West Tracy Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "345000;120000"
+          },
+          "name": "West Tracy",
+          "norm": "WEST TRACY",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1217911215",
+            "lat": 39.4951059,
+            "lon": -119.4380139,
+            "name": "Comstock Meadows",
+            "operator": null,
+            "state": "NV",
+            "voltage": "120000"
+          },
+          "name": "Comstock Meadows",
+          "norm": "COMSTOCK MEADOWS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        120,
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "West Tracy – Comstock Meadows 345 kV line",
+    "native_id": "west-tracy-comstock-meadows-345-kv-line",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2027-02",
+        "description": "Expected in service February 2027 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project comprises of 345 kV addition at Comstock Meadow substation with addition of two (2) 345/120kV transformers to accommodate rapid load growth in the Reno TRIC area. An additional 345kV line from East Tracy or Veterans is also proposed based on load growth requirements. The ISD planned for this project is February 2027.",
+            "locator": "NVE_2026_APR.pdf#page=3",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:west-tracy-comstock-meadows-345-kv-line:planned-in-service",
+        "native_project_link": "west-tracy-comstock-meadows-345-kv-line",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "requests waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-nve:west-tracy-wild-horse-120-kv-line",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/392184987 (West Tracy Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 39.561451,
+      "lon": -119.529163
+    },
+    "counties": [],
+    "description": "This project is a new 6-mile West Tracy to Wild Horse 120 kV transmission line to accommodate growing data center and native loads around the Wild Horse switching station.",
+    "evidence": {
+      "page": 5,
+      "raw": {
+        "in_service_raw": "June 2030",
+        "quote": "This project is a new 6-mile West Tracy to Wild Horse 120 kV transmission line to accommodate growing data center and native loads around the Wild Horse switching station.",
+        "status_raw": "requests waiver",
+        "transcription": "transcriptions/apr_nve_2026.json#18"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "June 2030",
+      "value": "2030-06"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, NV (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/392184987",
+            "lat": 39.5614509,
+            "lon": -119.5291634,
+            "name": "West Tracy Substation",
+            "operator": null,
+            "state": "NV",
+            "voltage": "345000;120000"
+          },
+          "name": "West Tracy",
+          "norm": "WEST TRACY",
+          "status": "matched"
+        },
+        {
+          "name": "Wild Horse",
+          "norm": "WILD HORSE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "NV ENERGY",
+        "NEVADA POWER",
+        "SIERRA PACIFIC"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        120
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "West Tracy – Wild Horse 120 kV Line",
+    "native_id": "west-tracy-wild-horse-120-kv-line",
+    "other_owners": [],
+    "owner": "NV Energy",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2030-06",
+        "description": "Expected in service June 2030 (2026 progress report).",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "2c12f990b5911887820a398ba2e65b6113477e170f656754c6486267686ebf6f",
+            "facts": "This project is a new 6-mile West Tracy to Wild Horse 120 kV transmission line to accommodate growing data center and native loads around the Wild Horse switching station.",
+            "locator": "NVE_2026_APR.pdf#page=5",
+            "publisher": "NV Energy",
+            "retrieved_at": "2026-09-27T09:47:33Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/NVE%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-nve:west-tracy-wild-horse-120-kv-line:planned-in-service",
+        "native_project_link": "west-tracy-wild-horse-120-kv-line",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "wecc-apr-2026-nve",
+    "states": [
+      "32"
+    ],
+    "status": "requests waiver",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:aeolus-525-230-kv-autotransformers",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079484 (Aeolus Substation), corroborated by operator, voltage.",
+      "lat": 42.011765,
+      "lon": -106.37855
+    },
+    "counties": [],
+    "description": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ) In service 2024 at Aeolus [PAC owned facility]",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "in_service_raw": "2024",
+        "quote": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ) In service 2024 at Aeolus [PAC owned facility]",
+        "status_raw": "In service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#4"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079484",
+            "lat": 42.0117651,
+            "lon": -106.3785501,
+            "name": "Aeolus Substation",
+            "operator": "PacifiCorp",
+            "state": "WY",
+            "voltage": "500000;230000"
+          },
+          "name": "Aeolus",
+          "norm": "AEOLUS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230,
+        525
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ)",
+    "native_id": "aeolus-525-230-kv-autotransformers",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Reported “In service”; in service 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ) In service 2024 at Aeolus [PAC owned facility]",
+            "locator": "PacifiCorp_2026_APR.pdf#page=7",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:aeolus-525-230-kv-autotransformers:in-service",
+        "native_project_link": "aeolus-525-230-kv-autotransformers",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "In service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:aeolus-freezeout-230-kv",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079484 (Aeolus Substation), OSM way/101830555 (Freezeout Substation), corroborated by operator, voltage.",
+      "lat": 41.985908,
+      "lon": -106.386573
+    },
+    "counties": [],
+    "description": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line with In service 2024 2X1158.4 Hudson conductor. [PAC owned facility]",
+    "evidence": {
+      "page": 6,
+      "raw": {
+        "in_service_raw": "2024",
+        "quote": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line with In service 2024 2X1158.4 Hudson conductor. [PAC owned facility]",
+        "status_raw": "In service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#2"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079484",
+            "lat": 42.0117651,
+            "lon": -106.3785501,
+            "name": "Aeolus Substation",
+            "operator": "PacifiCorp",
+            "state": "WY",
+            "voltage": "500000;230000"
+          },
+          "name": "Aeolus",
+          "norm": "AEOLUS",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/101830555",
+            "lat": 41.9600512,
+            "lon": -106.394595,
+            "name": "Freezeout Substation",
+            "operator": null,
+            "state": "WY",
+            "voltage": "230000"
+          },
+          "name": "Freezeout",
+          "norm": "FREEZEOUT",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line",
+    "native_id": "aeolus-freezeout-230-kv",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Reported “In service”; in service 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line with In service 2024 2X1158.4 Hudson conductor. [PAC owned facility]",
+            "locator": "PacifiCorp_2026_APR.pdf#page=6",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:aeolus-freezeout-230-kv:in-service",
+        "native_project_link": "aeolus-freezeout-230-kv",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "In service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:aeolus-shunt-capacitors-and-reactor",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079484 (Aeolus Substation), corroborated by operator, voltage.",
+      "lat": 42.011765,
+      "lon": -106.37855
+    },
+    "counties": [],
+    "description": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors. Add one new 60 MVAR reactor at Aeolus 230 kV. [PAC owned facility] In service 2024",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "in_service_raw": "2024",
+        "quote": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors. Add one new 60 MVAR reactor at Aeolus 230 kV. [PAC owned facility] In service 2024",
+        "status_raw": "In service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#5"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079484",
+            "lat": 42.0117651,
+            "lon": -106.3785501,
+            "name": "Aeolus Substation",
+            "operator": "PacifiCorp",
+            "state": "WY",
+            "voltage": "500000;230000"
+          },
+          "name": "Aeolus",
+          "norm": "AEOLUS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230,
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors",
+    "native_id": "aeolus-shunt-capacitors-and-reactor",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Reported “In service”; in service 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors. Add one new 60 MVAR reactor at Aeolus 230 kV. [PAC owned facility] In service 2024",
+            "locator": "PacifiCorp_2026_APR.pdf#page=7",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:aeolus-shunt-capacitors-and-reactor:in-service",
+        "native_project_link": "aeolus-shunt-capacitors-and-reactor",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "In service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:anticline-500-345-kv-autotransformer",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079488 (Anticline Substation), corroborated by voltage.",
+      "lat": 41.711671,
+      "lon": -108.744911
+    },
+    "counties": [],
+    "description": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ) In-Service: at Anticline [PAC owned facility] – Initial D.2 Project facility October 2020",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "in_service_raw": "October 2020",
+        "quote": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ) In-Service: at Anticline [PAC owned facility] – Initial D.2 Project facility October 2020",
+        "status_raw": "In-Service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#8"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "October 2020",
+      "value": "2020-10"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079488",
+            "lat": 41.7116711,
+            "lon": -108.7449114,
+            "name": "Anticline Substation",
+            "operator": null,
+            "state": "WY",
+            "voltage": "500000;345000"
+          },
+          "name": "Anticline",
+          "norm": "ANTICLINE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345,
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ)",
+    "native_id": "anticline-500-345-kv-autotransformer",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2020-10",
+        "description": "Reported “In-Service”; in service 2020-10.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ) In-Service: at Anticline [PAC owned facility] – Initial D.2 Project facility October 2020",
+            "locator": "PacifiCorp_2026_APR.pdf#page=7",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:anticline-500-345-kv-autotransformer:in-service",
+        "native_project_link": "anticline-500-345-kv-autotransformer",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:anticline-bridger-345-kv",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079488 (Anticline Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 41.711671,
+      "lon": -108.744911
+    },
+    "counties": [],
+    "description": "Construction of one new 345 kV circuit from Anticline to Bridger (5 In-Service: miles) [PAC owned facility] – Initial D.2 Project facility October 2020",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "in_service_raw": "October 2020",
+        "quote": "Construction of one new 345 kV circuit from Anticline to Bridger (5 In-Service: miles) [PAC owned facility] – Initial D.2 Project facility October 2020",
+        "status_raw": "In-Service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#12"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "October 2020",
+      "value": "2020-10"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079488",
+            "lat": 41.7116711,
+            "lon": -108.7449114,
+            "name": "Anticline Substation",
+            "operator": null,
+            "state": "WY",
+            "voltage": "500000;345000"
+          },
+          "name": "Anticline",
+          "norm": "ANTICLINE",
+          "status": "matched"
+        },
+        {
+          "name": "Bridger",
+          "norm": "BRIDGER",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Construction of one new 345 kV circuit from Anticline to Bridger",
+    "native_id": "anticline-bridger-345-kv",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2020-10",
+        "description": "Reported “In-Service”; in service 2020-10.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Construction of one new 345 kV circuit from Anticline to Bridger (5 In-Service: miles) [PAC owned facility] – Initial D.2 Project facility October 2020",
+            "locator": "PacifiCorp_2026_APR.pdf#page=7",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:anticline-bridger-345-kv:in-service",
+        "native_project_link": "anticline-bridger-345-kv",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "In-Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:clover-camp-williams-3-345-kv",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/702276779 (Clover Substation), OSM way/33655642 (Camp Williams Substation), corroborated by voltage.",
+      "lat": 40.127656,
+      "lon": -111.921621
+    },
+    "counties": [],
+    "description": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover In Service Dec 2024 making it Clover – Camp Williams # 3 345 kV line.",
+    "evidence": {
+      "page": 9,
+      "raw": {
+        "in_service_raw": "Dec 2024",
+        "quote": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover In Service Dec 2024 making it Clover – Camp Williams # 3 345 kV line.",
+        "status_raw": "In Service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#25"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "Dec 2024",
+      "value": "2024-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/702276779",
+            "lat": 39.7876498,
+            "lon": -111.8946117,
+            "name": "Clover Substation",
+            "operator": null,
+            "state": "UT",
+            "voltage": "500000;345000;138000"
+          },
+          "name": "Clover",
+          "norm": "CLOVER",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/33655642",
+            "lat": 40.4676614,
+            "lon": -111.9486304,
+            "name": "Camp Williams Substation",
+            "operator": null,
+            "state": "UT",
+            "voltage": "345000;138000"
+          },
+          "name": "Camp Williams",
+          "norm": "CAMP WILLIAMS",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover",
+    "native_id": "clover-camp-williams-3-345-kv",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024-12",
+        "description": "Reported “In Service”; in service 2024-12.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover In Service Dec 2024 making it Clover – Camp Williams # 3 345 kV line.",
+            "locator": "PacifiCorp_2026_APR.pdf#page=9",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:clover-camp-williams-3-345-kv:in-service",
+        "native_project_link": "clover-camp-williams-3-345-kv",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "49"
+    ],
+    "status": "In Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:clover-loop-in-and-clover-mona-rebuild",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/702276779 (Clover Substation), OSM way/33835720 (Mona Substation), corroborated by voltage.",
+      "lat": 39.805885,
+      "lon": -111.899383
+    },
+    "counties": [],
+    "description": "Loop-in the 345 kV circuit between Huntington and Mona into Clover and rebuild the existing Clover – Mona 345 kV #1 and #2 In Service Dec 2024 lines. [PAC owned facility]",
+    "evidence": {
+      "page": 9,
+      "raw": {
+        "in_service_raw": "Dec 2024",
+        "quote": "Loop-in the 345 kV circuit between Huntington and Mona into Clover and rebuild the existing Clover – Mona 345 kV #1 and #2 In Service Dec 2024 lines. [PAC owned facility]",
+        "status_raw": "In Service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#24"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "month",
+      "raw": "Dec 2024",
+      "value": "2024-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/702276779",
+            "lat": 39.7876498,
+            "lon": -111.8946117,
+            "name": "Clover Substation",
+            "operator": null,
+            "state": "UT",
+            "voltage": "500000;345000;138000"
+          },
+          "name": "Clover",
+          "norm": "CLOVER",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/33835720",
+            "lat": 39.8241209,
+            "lon": -111.9041534,
+            "name": "Mona Substation",
+            "operator": null,
+            "state": "UT",
+            "voltage": "345000"
+          },
+          "name": "Mona",
+          "norm": "MONA",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        345
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Loop-in the 345 kV circuit between Huntington and Mona into Clover",
+    "native_id": "clover-loop-in-and-clover-mona-rebuild",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024-12",
+        "description": "Reported “In Service”; in service 2024-12.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Loop-in the 345 kV circuit between Huntington and Mona into Clover and rebuild the existing Clover – Mona 345 kV #1 and #2 In Service Dec 2024 lines. [PAC owned facility]",
+            "locator": "PacifiCorp_2026_APR.pdf#page=9",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:clover-loop-in-and-clover-mona-rebuild:in-service",
+        "native_project_link": "clover-loop-in-and-clover-mona-rebuild",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "49"
+    ],
+    "status": "In Service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:gateway-south-aeolus-clover-500-kv",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079484 (Aeolus Substation), OSM way/702276779 (Clover Substation), corroborated by operator, voltage.",
+      "lat": 40.899707,
+      "lon": -109.136581
+    },
+    "counties": [],
+    "description": "The 500 kV transmission segment extends 416 miles between the new (as part of Gateway West sub-segment D.2) Aeolus substation near Medicine Bow, Wyoming, and the existing Clover substation located near Mona, Utah.",
+    "evidence": {
+      "page": 8,
+      "raw": {
+        "in_service_raw": "December 2024",
+        "quote": "The 500 kV transmission segment extends 416 miles between the new (as part of Gateway West sub-segment D.2) Aeolus substation near Medicine Bow, Wyoming, and the existing Clover substation located near Mona, Utah.",
+        "status_raw": "placed in service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#23"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "source_text",
+    "in_service": {
+      "precision": "month",
+      "raw": "December 2024",
+      "value": "2024-12"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079484",
+            "lat": 42.0117651,
+            "lon": -106.3785501,
+            "name": "Aeolus Substation",
+            "operator": "PacifiCorp",
+            "state": "WY",
+            "voltage": "500000;230000"
+          },
+          "name": "Aeolus",
+          "norm": "AEOLUS",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/702276779",
+            "lat": 39.7876498,
+            "lon": -111.8946117,
+            "name": "Clover Substation",
+            "operator": null,
+            "state": "UT",
+            "voltage": "500000;345000;138000"
+          },
+          "name": "Clover",
+          "norm": "CLOVER",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "tier": "candidate",
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Gateway South Transmission Project",
+    "native_id": "gateway-south-aeolus-clover-500-kv",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024-12",
+        "description": "Reported “placed in service”; in service 2024-12.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "The 500 kV transmission segment extends 416 miles between the new (as part of Gateway West sub-segment D.2) Aeolus substation near Medicine Bow, Wyoming, and the existing Clover substation located near Mona, Utah.",
+            "locator": "PacifiCorp_2026_APR.pdf#page=8",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:gateway-south-aeolus-clover-500-kv:in-service",
+        "native_project_link": "gateway-south-aeolus-clover-500-kv",
+        "precision": "month",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "49",
+      "56"
+    ],
+    "status": "placed in service",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:latham-series-compensation-aeolus-anticline",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1042079484 (Aeolus Substation), OSM way/1042079488 (Anticline Substation), corroborated by operator, voltage.",
+      "lat": 41.861718,
+      "lon": -107.561731
+    },
+    "counties": [],
+    "description": "Addition of 50% of series compensation near Latham on the Aeolus – 2036 (earliest) Anticline 500 kV line",
+    "evidence": {
+      "page": 7,
+      "raw": {
+        "in_service_raw": "2036 (earliest)",
+        "quote": "Addition of 50% of series compensation near Latham on the Aeolus – 2036 (earliest) Anticline 500 kV line",
+        "status_raw": null,
+        "transcription": "transcriptions/apr_pacificorp_2026.json#6"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "unknown",
+      "raw": "2036 (earliest)",
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079484",
+            "lat": 42.0117651,
+            "lon": -106.3785501,
+            "name": "Aeolus Substation",
+            "operator": "PacifiCorp",
+            "state": "WY",
+            "voltage": "500000;230000"
+          },
+          "name": "Aeolus",
+          "norm": "AEOLUS",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1042079488",
+            "lat": 41.7116711,
+            "lon": -108.7449114,
+            "name": "Anticline Substation",
+            "operator": null,
+            "state": "WY",
+            "voltage": "500000;345000"
+          },
+          "name": "Anticline",
+          "norm": "ANTICLINE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Addition of 50% of series compensation near Latham on the Aeolus",
+    "native_id": "latham-series-compensation-aeolus-anticline",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "Not stated",
+    "status_group": "planned"
+  },
+  {
+    "_id": "wecc-apr-2026-pacificorp:windstar-shirley-basin-230-kv",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/167015118 (Windstar Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 42.861624,
+      "lon": -105.779433
+    },
+    "counties": [],
+    "description": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles) with 2-1272 ACSR Bittern/phase [PAC In service 2024 owned facility].",
+    "evidence": {
+      "page": 6,
+      "raw": {
+        "in_service_raw": "2024",
+        "quote": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles) with 2-1272 ACSR Bittern/phase [PAC In service 2024 owned facility].",
+        "status_raw": "In service",
+        "transcription": "transcriptions/apr_pacificorp_2026.json#1"
+      },
+      "row": null,
+      "sheet": null,
+      "source_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe"
+    },
+    "geography_basis": "owner_territory_facility",
+    "in_service": {
+      "precision": "year",
+      "raw": "2024",
+      "value": "2024"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation, WY/UT/ID (ODbL)",
+      "endpoints": [
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/167015118",
+            "lat": 42.8616239,
+            "lon": -105.7794329,
+            "name": "Windstar Substation",
+            "operator": "Black Hills Energy;Rocky Mountain Power",
+            "state": "WY",
+            "voltage": "230000"
+          },
+          "name": "Windstar",
+          "norm": "WINDSTAR",
+          "status": "matched"
+        },
+        {
+          "name": "Shirley Basin",
+          "norm": "SHIRLEY BASIN",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "operator_keys": [
+        "PACIFICORP",
+        "ROCKY MOUNTAIN POWER"
+      ],
+      "reason": null,
+      "rule": "C33",
+      "state_basis": "owner_territory_facility",
+      "tier": "candidate",
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles)",
+    "native_id": "windstar-shirley-basin-230-kv",
+    "other_owners": [],
+    "owner": "PacifiCorp",
+    "planning_region": "WECC",
+    "project_events": [
+      {
+        "date": "2024",
+        "description": "Reported “In service”; in service 2024.",
+        "evidence": [
+          {
+            "access_review": "Public WECC Annual Progress Report PDF on wecc.org; no login.",
+            "artifact_sha256": "a7063590517bfdf129a9adcc3847ca68232bea61b0cd913f13dbcaf4918aeabe",
+            "facts": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles) with 2-1272 ACSR Bittern/phase [PAC In service 2024 owned facility].",
+            "locator": "PacifiCorp_2026_APR.pdf#page=6",
+            "publisher": "PacifiCorp",
+            "retrieved_at": "2026-09-27T09:47:35Z",
+            "source_date": null,
+            "url": "https://www.wecc.org/sites/default/files/documents/progress_report/2026/PacifiCorp%202026%20APR.pdf"
+          }
+        ],
+        "id": "wecc-apr-2026-pacificorp:windstar-shirley-basin-230-kv:in-service",
+        "native_project_link": "windstar-shirley-basin-230-kv",
+        "precision": "year",
+        "type": "in_service"
+      }
+    ],
+    "source_id": "wecc-apr-2026-pacificorp",
+    "states": [
+      "56"
+    ],
+    "status": "In service",
+    "status_group": "in_service"
+  },
+  {
     "_id": "westconnect-tppl-2026-02-wy:1314",
     "center": null,
     "counties": [],

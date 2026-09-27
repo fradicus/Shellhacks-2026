@@ -1,8 +1,9 @@
-"""F50 Interior West (WY, NV, UT, ID, MT): WestConnect TPPL Wyoming rows with C33/C38 loose, labeled candidates (C50).
+"""F50 Interior West (WY, NV, UT, ID, MT): TPPL Wyoming rows and 2026 WECC progress reports, C33/C38 candidates (C50).
 
 Part 1 reads the TPPL workbook F45 pins (same artifact and hash) and keeps the Wyoming rows F45 excluded by scope.
 Origin and Termination name the endpoints, parsed and matched exactly as F45 does; a substation row whose endpoints
-say only "Cheyenne, WY" is placed from its ProjectName with F46's name parser. No point is independently reviewed.
+say only "Cheyenne, WY" is placed from its ProjectName with F46's name parser. Part 2 adds page-verified rows from
+the 2026 WECC Annual Progress Reports (interiorwest.apr). No point is independently reviewed.
 
 From pipeline/:
   uv run python -m interiorwest.build fetch --cache /tmp/interiorwest-f50
@@ -25,8 +26,10 @@ from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
 from midwest.build import named
 from southwest import build as sw
 
+from . import apr
+
 OUT = REPO_ROOT / "data" / "interiorwest"
-STATES = {"WY": "56"}
+STATES = {"WY": "56", "NV": "32", "UT": "49", "ID": "16", "MT": "30"}
 TPPL_STATES = {"Wyoming": "WY"}
 TPPL = "westconnect-tppl-2026-02-wy"
 OPERATOR_KEYS = sw.OPERATOR_KEYS | {"Cheyenne Light Fuel and Power": ["CHEYENNE LIGHT", "BLACK HILLS"]}
@@ -114,6 +117,10 @@ def fetch(cache: Path) -> None:
     if "tppl.xlsx" not in manifest:
         fetch_into(cache, "tppl.xlsx", sw.TPPL_URL, manifest)
         write_json(cache / "manifest.json", manifest)
+    for name, url, _, _ in apr.REPORTS.values():
+        if name not in manifest:
+            fetch_into(cache, name, url, manifest)
+            write_json(cache / "manifest.json", manifest)
     for usps in STATES:
         if f"osm-{usps.lower()}.json" not in manifest:
             fetch_osm(cache, usps, manifest)
@@ -122,7 +129,7 @@ def fetch(cache: Path) -> None:
 
 def build(cache: Path) -> dict[Path, object]:
     osm_files = [f"osm-{s.lower()}.json" for s in STATES]
-    manifest = verify_cache(cache, ["tppl.xlsx", *osm_files])
+    manifest = verify_cache(cache, ["tppl.xlsx", *(r[0] for r in apr.REPORTS.values()), *osm_files])
     facilities = {s: osm_extract(json.loads((cache / f"osm-{s.lower()}.json").read_bytes()), s) for s in STATES}
     rows, stamp = sw.read_tppl(cache / "tppl.xlsx")
     projects, dispositions = [], []
@@ -137,8 +144,11 @@ def build(cache: Path) -> dict[Path, object]:
         projects.append(project)
         dispositions.append(where | {"disposition": "accepted", "_id": project["_id"],
                                      "location": project["location_candidate"]["tier"] or "unlocated"})
+    reported, more = apr.projects(cache, manifest, facilities, STATES)
+    projects += reported
+    dispositions += more
     if len({p["_id"] for p in projects}) != len(projects):
-        raise SystemExit("project ID repeated within the workbook")
+        raise SystemExit("project ID repeated within a source")
     projects.sort(key=lambda p: p["_id"])
     tppl = manifest["tppl.xlsx"]
     sources = [
@@ -147,12 +157,27 @@ def build(cache: Path) -> dict[Path, object]:
          "download_url": tppl["url"], "publication_date": None, "vintage": None,
          "retrieved_at": tppl["retrieved_at"], "sha256": tppl["sha256"], "public_status": "verified_public",
          "import_status": "imported", "access_policy": "public_document", "planning_region": "westconnect",
-         "states": sorted({s for p in projects for s in p["states"]}), "project_count": len(projects),
+         "states": sorted({s for p in projects if p["source_id"] == TPPL for s in p["states"]}),
+         "project_count": sum(p["source_id"] == TPPL for p in projects),
          "notes": ["F50 Interior West release (C50): the workbook's Wyoming rows; the same artifact and hash as F45's "
                    "westconnect-tppl-2026-02. Candidate points are unreviewed C33 exact-name OSM matches with C38's "
                    "operator guard; none is independently confirmed. Source-bounded.",
                    f"The workbook's Control sheet TimeStamp reads {stamp}; its meaning (save or send) is not stated."]},
     ]
+    for name, url, source_id, publisher in apr.REPORTS.values():
+        artifact = manifest[name]
+        sources.append({
+            "_id": source_id, "publisher": publisher, "title": f"{publisher} 2026 WECC Annual Progress Report",
+            "authority": "utility", "role": "project_plan", "landing_url": url, "download_url": artifact["url"],
+            "publication_date": None, "vintage": "2026", "retrieved_at": artifact["retrieved_at"],
+            "sha256": artifact["sha256"], "public_status": "verified_public", "import_status": "imported",
+            "access_policy": "public_document", "planning_region": "WECC",
+            "states": sorted({s for p in projects if p["source_id"] == source_id for s in p["states"]}),
+            "project_count": sum(p["source_id"] == source_id for p in projects),
+            "notes": ["F50 Interior West release (C50 part 2): transmission rows transcribed with a page and verbatim "
+                      "quote the build re-finds in the PDF; rows another rollout publishes are excluded.",
+                      "Candidate points are unreviewed C33 exact-name OSM matches with C38's operator guard; a row "
+                      "whose text names no state is placed only by a corroborated facility in the owner's territory."]})
     return {OUT / "projects.json": projects, OUT / "sources.json": sources, OUT / "dispositions.json": dispositions,
             OUT / "osm-sources.json": {"publisher": "OpenStreetMap contributors", "rights": "ODbL 1.0; attribution "
                                        "required", "role": "candidate facility geometry only (C33)",

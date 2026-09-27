@@ -17,7 +17,7 @@ from midwest.publish import _check_center, counts
 
 FOLDER = Path("data/interiorwest")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "interiorwest-candidates-1"
+RELEASE_ID = "interiorwest-candidates-2"
 FIPS = {"56", "32", "49", "16", "30"}  # WY, NV, UT, ID, MT
 
 
@@ -73,7 +73,7 @@ def apply_release(snapshot: dict, root: Path) -> dict:
     result["projects"].extend(deepcopy(projects))
     result["coverage"]["interiorwest"] = {
         "release_id": RELEASE_ID, **measured, "independently_confirmed_projects": 0,
-        "notes": "WestConnect TPPL Wyoming projects (C50 part 1). Candidate points are labeled and never confirmed; no "
-                 "statewide completeness claim.",
+        "notes": "WestConnect TPPL Wyoming projects and 2026 WECC progress report projects in WY, NV, UT, ID and "
+                 "MT. Candidate points are labeled and never confirmed; no statewide completeness claim.",
     }
     return result
