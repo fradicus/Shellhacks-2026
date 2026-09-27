@@ -5,8 +5,10 @@ const root = new URL("../../../web/", import.meta.url);
 let active = "test:A", ready = true, fail = false, missingProject = false;
 let reads = 0;
 let lastFilter: Record<string, unknown> = {};
-const candidate = { id: `npc:${"a".repeat(32)}`, a: "p1", b: "p2", distance_mi: 2, time_gap_days: null,
-  band: 0, rank: 1, tier: "tentative", rule_version: "national-provisional-25mi-v1", identity_version: "test" };
+const candidate = { id: `npc:${"a".repeat(32)}`, a: "p1", b: "p2", distance_mi: 2, drive_mi: 3, time_gap_days: null,
+  route: { polyline: "_p~iF~ps|U", start: null, end: null, provider: "test", data_source: "test", computed_at: "2026-09-27T00:00:00Z",
+    duration_s: 60 },
+  band: 0, rank: 1, tier: "tentative", rule_version: "national-drive-25mi-v1", identity_version: "test" };
 let rows = [candidate];
 const project = (id: string) => ({ id, name: id, source_id: "test", native_id: id, owner: "Test", other_owners: [],
   center: { lat: 30, lon: -95, basis: "one", evidence: "test only" }, states: ["48"], counties: [],
@@ -43,6 +45,8 @@ test("dataset-pinned pages, compact summaries, scope validation and explicit fai
   assert.equal(res.headers.get("cache-control"), "no-store");
   const body = await res.json();
   assert.equal(body.total, 1); assert.equal(body.nextOffset, null);
+  assert.equal(body.pairs[0].drive_mi, 3); assert.equal(body.pairs[0].route.polyline, "_p~iF~ps|U");
+  assert.equal("duration_s" in body.pairs[0].route, false);
   assert.equal(body.projects.length, 2); assert.equal("raw" in body.projects[0].evidence, false);
   await get("dataset=test:A&scope=state:48"); assert.equal(lastFilter.shared_states, "48");
   await get("dataset=test:A&scope=region:3"); assert.equal(lastFilter.shared_regions, "3");
