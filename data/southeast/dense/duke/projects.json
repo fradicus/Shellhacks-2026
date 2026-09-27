@@ -1,0 +1,4960 @@
+[
+  {
+    "_id": "southeast:duke-transmission-map:1",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[0] (id 1); placement precision unstated; not independently reviewed.",
+      "lat": 34.747252,
+      "lon": -82.410706
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.7472518008911,
+          "longitude": -82.4107056017299
+        },
+        "details": {
+          "city": "Greenville and Anderson counties",
+          "state": "SC"
+        },
+        "id": "1",
+        "name": "Piedmont and Lee Transmission Line Upgrades",
+        "page_http_status": null,
+        "page_sha256": "b2c8397ba42d751d7294e2d402b77ee940b6a300dfefd08f07e09bcebce46617",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Piedmont-and-Lee-Transmission",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Piedmont-and-Lee-Transmission"
+        }
+      },
+      "row": 1,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "targeted for late 2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Greenville and Anderson counties",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.747252,
+        "lon": -82.410706
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Piedmont and Lee Transmission Line Upgrades",
+    "native_id": "1",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “targeted for late 2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "b2c8397ba42d751d7294e2d402b77ee940b6a300dfefd08f07e09bcebce46617",
+            "facts": "targeted for late 2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:45:46Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Piedmont-and-Lee-Transmission"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:1:expected-completion",
+        "native_project_link": "1",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "targeted for late 2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:10",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[5] (id 10); placement precision unstated; not independently reviewed.",
+      "lat": 34.210964,
+      "lon": -77.885117
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 34.210964,
+          "longitude": -77.885117
+        },
+        "details": {
+          "city": "Wilmington",
+          "state": "NC"
+        },
+        "id": "10",
+        "name": "Wilmington NE Transmission Project",
+        "page_http_status": null,
+        "page_sha256": "0e1cd8c158c266346ceeb1cdb98c3c625e375c3c70f250f84884d999bb2880f7",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/wilmington-ne-project",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/wilmington-ne-project"
+        }
+      },
+      "row": 6,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "Anticipated completion: December 2023",
+      "value": "2023-12"
+    },
+    "location_candidate": {
+      "area": "Wilmington",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.210964,
+        "lon": -77.885117
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Wilmington NE Transmission Project",
+    "native_id": "10",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2023-12",
+        "description": "Duke's project page states “Anticipated completion: December 2023”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "0e1cd8c158c266346ceeb1cdb98c3c625e375c3c70f250f84884d999bb2880f7",
+            "facts": "Anticipated completion: December 2023",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:49:09Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/wilmington-ne-project"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:10:expected-completion",
+        "native_project_link": "10",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": "Anticipated completion: December 2023",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:100",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[75] (id 100); placement precision unstated; not independently reviewed.",
+      "lat": 39.077467,
+      "lon": -84.521323
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 39.077466519015,
+          "longitude": -84.5213225742857
+        },
+        "details": {
+          "city": "Covington",
+          "state": "KY"
+        },
+        "id": "100",
+        "name": "Brent Spence Bridge Corridor Planning",
+        "page_http_status": null,
+        "page_sha256": "7be2bc21c31542fecd4f2f31555ec016ac366d2486eec1fe2e0d28d2ecb2bb10",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/brent-spence-bridge-corridor-planning",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/brent-spence-bridge-corridor-planning"
+        }
+      },
+      "row": 76,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Covington",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 39.077467,
+        "lon": -84.521323
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Brent Spence Bridge Corridor Planning",
+    "native_id": "100",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:101",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[76] (id 101); placement precision unstated; not independently reviewed.",
+      "lat": 34.417778,
+      "lon": -79.368056
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.417778,
+          "longitude": -79.368056
+        },
+        "details": {
+          "city": "Marion",
+          "state": "SC"
+        },
+        "id": "101",
+        "name": "Weatherspoon Plant to Marion Line Project",
+        "page_http_status": null,
+        "page_sha256": "68868fe8cbe65269b34b4806476f24244a121c13d90f27667d49232065dfff68",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Weatherspoon",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Weatherspoon"
+        }
+      },
+      "row": 77,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Marion",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.417778,
+        "lon": -79.368056
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Weatherspoon Plant to Marion Line Project",
+    "native_id": "101",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:103",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[78] (id 103); placement precision unstated; not independently reviewed.",
+      "lat": 35.046206,
+      "lon": -84.080369
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.046206,
+          "longitude": -84.080369
+        },
+        "details": {
+          "city": "Murphy",
+          "state": "NC"
+        },
+        "id": "103",
+        "name": "Almond Transmission Line",
+        "page_http_status": null,
+        "page_sha256": "378e73cc6914fcae6cdce8422961c386385c6fc4def46de100108cae12529613",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Almond-Transmission-Line",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Almond-Transmission-Line"
+        }
+      },
+      "row": 79,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Murphy",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.046206,
+        "lon": -84.080369
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Almond Transmission Line",
+    "native_id": "103",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:105",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[79] (id 105); placement precision unstated; not independently reviewed.",
+      "lat": 35.775,
+      "lon": -78.64
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 35.775,
+          "longitude": -78.64
+        },
+        "details": {
+          "city": "Raleigh",
+          "state": "NC"
+        },
+        "id": "105",
+        "name": "Energizing Wake County",
+        "page_http_status": null,
+        "page_sha256": "d9d3be3f4fc87066f377d11b4fc2c7d81b1efd9f7e720badc1378a277b9b28e8",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Energizing-Wake-County",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Energizing-Wake-County"
+        }
+      },
+      "row": 80,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Raleigh",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.775,
+        "lon": -78.64
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Energizing Wake County",
+    "native_id": "105",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:107",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[81] (id 107); placement precision unstated; not independently reviewed.",
+      "lat": 39.071948,
+      "lon": -84.101308
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 39.071948,
+          "longitude": -84.101308
+        },
+        "details": {
+          "city": "Batavia",
+          "state": "OH/KY"
+        },
+        "id": "107",
+        "name": "State Route 32 Pole Replacements",
+        "page_http_status": null,
+        "page_sha256": "32e501a40e7a79e1245344f7cb5df1c3b198a4b35cc6fe777701bc1913367374",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/state-route-32",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/state-route-32"
+        }
+      },
+      "row": 82,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Batavia",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 39.071948,
+        "lon": -84.101308
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "State Route 32 Pole Replacements",
+    "native_id": "107",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21",
+      "39"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:109",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[83] (id 109); placement precision unstated; not independently reviewed.",
+      "lat": 34.97253,
+      "lon": -81.945674
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.9725297,
+          "longitude": -81.945674
+        },
+        "details": {
+          "city": "Spartanburg",
+          "state": "SC"
+        },
+        "id": "109",
+        "name": "Pinewood Transmission Line Upgrade",
+        "page_http_status": null,
+        "page_sha256": "3069840a9abb118d8cce2131e5ba7e61584a2177f22af7f0c5e29fd88ed8ea3c",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinewood",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/pinewood?"
+        }
+      },
+      "row": 84,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Expected completion Mid 2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "area": "Spartanburg",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.97253,
+        "lon": -81.945674
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Pinewood Transmission Line Upgrade",
+    "native_id": "109",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Duke's project page states “Expected completion Mid 2028”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "3069840a9abb118d8cce2131e5ba7e61584a2177f22af7f0c5e29fd88ed8ea3c",
+            "facts": "Expected completion Mid 2028",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:56Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinewood"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:109:expected-completion",
+        "native_project_link": "109",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "Expected completion Mid 2028",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:11",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[6] (id 11); placement precision unstated; not independently reviewed.",
+      "lat": 34.70249,
+      "lon": -82.463245
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 34.70249,
+          "longitude": -82.463245
+        },
+        "details": {
+          "city": "Piedmont",
+          "state": "SC"
+        },
+        "id": "11",
+        "name": "Woodmont Transmission Line Routing Study",
+        "page_http_status": 404,
+        "page_sha256": null,
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/woodmont-transmission-line",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/woodmont-transmission-line"
+        }
+      },
+      "row": 7,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Piedmont",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.70249,
+        "lon": -82.463245
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Woodmont Transmission Line Routing Study",
+    "native_id": "11",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:110",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[84] (id 110); placement precision unstated; not independently reviewed.",
+      "lat": 35.6131,
+      "lon": -78.41566
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.6131,
+          "longitude": -78.41566
+        },
+        "details": {
+          "city": "Johnston County",
+          "state": "NC"
+        },
+        "id": "110",
+        "name": "Clayton Industrial-Selma Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "48b940a1e2762e542fbbe6f27c196bbd577c884b04c2f113e050a4ea10ea33ef",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/clayton-industrial-upgrade-project",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/clayton-industrial-upgrade-project"
+        }
+      },
+      "row": 85,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Johnston County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.6131,
+        "lon": -78.41566
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Clayton Industrial-Selma Line Upgrade Project",
+    "native_id": "110",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:111",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[85] (id 111); placement precision unstated; not independently reviewed.",
+      "lat": 29.558145,
+      "lon": -82.505377
+    },
+    "counties": [],
+    "description": "Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Substation"
+        ],
+        "coords": {
+          "latitude": 29.558145,
+          "longitude": -82.505377
+        },
+        "details": {
+          "city": "Archer",
+          "state": "FL"
+        },
+        "id": "111",
+        "name": "Archer Substation Upgrade",
+        "page_http_status": null,
+        "page_sha256": "32a4d6e7568b69ba0fde14a4d49982fd52f7c51c6d4ddc3dfecc5dd28d48f07b",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/archer/archer-substation-upgrade",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/archer/archer-substation-upgrade"
+        }
+      },
+      "row": 86,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project Complete Mid-2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Archer",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.558145,
+        "lon": -82.505377
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Archer Substation Upgrade",
+    "native_id": "111",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “Project Complete Mid-2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "32a4d6e7568b69ba0fde14a4d49982fd52f7c51c6d4ddc3dfecc5dd28d48f07b",
+            "facts": "Project Complete Mid-2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:46:28Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/archer/archer-substation-upgrade"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:111:expected-completion",
+        "native_project_link": "111",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project Complete Mid-2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:112",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[86] (id 112); placement precision unstated; not independently reviewed.",
+      "lat": 29.669871,
+      "lon": -82.594308
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 29.669871,
+          "longitude": -82.594308
+        },
+        "details": {
+          "city": "Archer",
+          "state": "FL"
+        },
+        "id": "112",
+        "name": "Ginnie to Haile Tap to Archer Transmission Line",
+        "page_http_status": null,
+        "page_sha256": "e9a37d7d5f8dc465da197856ee6eec7cee89401ce0db12819e89bedac6fd7120",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/archer/ginnie-to-haile-tap",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/archer/ginnie-to-haile-tap"
+        }
+      },
+      "row": 87,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project Complete 2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "area": "Archer",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.669871,
+        "lon": -82.594308
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Ginnie to Haile Tap to Archer Transmission Line",
+    "native_id": "112",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Duke's project page states “Project Complete 2028”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "e9a37d7d5f8dc465da197856ee6eec7cee89401ce0db12819e89bedac6fd7120",
+            "facts": "Project Complete 2028",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:46:32Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/archer/ginnie-to-haile-tap"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:112:expected-completion",
+        "native_project_link": "112",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project Complete 2028",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:114",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[88] (id 114); placement precision unstated; not independently reviewed.",
+      "lat": 35.677639,
+      "lon": -80.850797
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.677639,
+          "longitude": -80.850797
+        },
+        "details": {
+          "city": "Iredell County",
+          "state": "NC"
+        },
+        "id": "114",
+        "name": "Perth Road 100-kV Tap Line Project",
+        "page_http_status": null,
+        "page_sha256": "10d717d2ae3a0850a6759df3ade88e90dccc3ffd69de5d08708e17da376dac71",
+        "project_url": "https://www.duke-energy.com/our-company/grid-infrastructure/north-carolina/perth-road",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/grid-infrastructure/north-carolina/perth-road"
+        }
+      },
+      "row": 89,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Iredell County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.677639,
+        "lon": -80.850797
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Perth Road 100-kV Tap Line Project",
+    "native_id": "114",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:116",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[90] (id 116); placement precision unstated; not independently reviewed.",
+      "lat": 28.144141,
+      "lon": -82.695215
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 28.1441408630246,
+          "longitude": -82.6952149742089
+        },
+        "details": {
+          "city": "Tarpon Springs",
+          "state": "FL"
+        },
+        "id": "116",
+        "name": "Brooker Creek to Tarpon Springs Transmission Line Upgrade",
+        "page_http_status": null,
+        "page_sha256": "0926ac28d1e959ec64501e1700e5d05eb522dd68fa91e0faeb47b440e854fa6f",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/brooker-creek",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/brooker-creek"
+        }
+      },
+      "row": 91,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion expected–2029",
+      "value": "2029"
+    },
+    "location_candidate": {
+      "area": "Tarpon Springs",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.144141,
+        "lon": -82.695215
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Brooker Creek to Tarpon Springs Transmission Line Upgrade",
+    "native_id": "116",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2029",
+        "description": "Duke's project page states “Project completion expected–2029”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "0926ac28d1e959ec64501e1700e5d05eb522dd68fa91e0faeb47b440e854fa6f",
+            "facts": "Project completion expected–2029",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:46:49Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/brooker-creek"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:116:expected-completion",
+        "native_project_link": "116",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion expected–2029",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:12",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[7] (id 12); placement precision unstated; not independently reviewed.",
+      "lat": 28.852976,
+      "lon": -81.684254
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 28.852976,
+          "longitude": -81.684254
+        },
+        "details": {
+          "city": "Eustis",
+          "state": "FL"
+        },
+        "id": "12",
+        "name": "Eustis - Dona Vista Transmission Line Project",
+        "page_http_status": null,
+        "page_sha256": "8dc7ca5160a3f7abafb21a6bb43b2d66c0264ec7f7d5a2c1d48ab5291a02e9de",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/eustis-transmission-line",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/eustis-transmission-line"
+        }
+      },
+      "row": 8,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Eustis",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.852976,
+        "lon": -81.684254
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Eustis - Dona Vista Transmission Line Project",
+    "native_id": "12",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:14",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[8] (id 14); placement precision unstated; not independently reviewed.",
+      "lat": 29.216936,
+      "lon": -82.096958
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 29.2169355994724,
+          "longitude": -82.096957528192
+        },
+        "details": {
+          "city": "Ocala",
+          "state": "FL"
+        },
+        "id": "14",
+        "name": "Vanguard to Archer Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "7c8f62b2ebde7bd270a71d708ffbde58dd410ec36fa823876aa5df12f2a945ee",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/vanguard-to-archer-reliability",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/vanguard-to-archer-reliability"
+        }
+      },
+      "row": 9,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "expected to be completed by mid-2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Ocala",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.216936,
+        "lon": -82.096958
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Vanguard to Archer Reliability Project",
+    "native_id": "14",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “expected to be completed by mid-2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "7c8f62b2ebde7bd270a71d708ffbde58dd410ec36fa823876aa5df12f2a945ee",
+            "facts": "expected to be completed by mid-2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:54Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/vanguard-to-archer-reliability"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:14:expected-completion",
+        "native_project_link": "14",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "expected to be completed by mid-2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:15",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[9] (id 15); placement precision unstated; not independently reviewed.",
+      "lat": 29.557399,
+      "lon": -82.508634
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 29.557399,
+          "longitude": -82.508634
+        },
+        "details": {
+          "city": "Alachua County",
+          "state": "FL"
+        },
+        "id": "15",
+        "name": "Archer Reliability Upgrade Projects",
+        "page_http_status": null,
+        "page_sha256": "8d3434e7e89bdd15389d03bf966d0398d53a18b66f5730492b592c7848cf20da",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/archer",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/archer"
+        }
+      },
+      "row": 10,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Alachua County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.557399,
+        "lon": -82.508634
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Archer Reliability Upgrade Projects",
+    "native_id": "15",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:16",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[10] (id 16); placement precision unstated; not independently reviewed.",
+      "lat": 34.75398,
+      "lon": -77.45224
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.75398,
+          "longitude": -77.45224
+        },
+        "details": {
+          "city": "Jacksonville",
+          "state": "NC"
+        },
+        "id": "16",
+        "name": "Folkstone-Jacksonville Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "c035ccd6d275e8ad8558ad858a8212460fa93f54342ede05e2893d9db3aec7fc",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/folkstone",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/folkstone"
+        }
+      },
+      "row": 11,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Jacksonville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.75398,
+        "lon": -77.45224
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Folkstone-Jacksonville Reliability Project",
+    "native_id": "16",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:17",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[11] (id 17); placement precision unstated; not independently reviewed.",
+      "lat": 28.065133,
+      "lon": -81.788123
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 28.065133,
+          "longitude": -81.788123
+        },
+        "details": {
+          "city": "Auburndale",
+          "state": "FL"
+        },
+        "id": "17",
+        "name": "Polk County Reliability Enhancement Project",
+        "page_http_status": null,
+        "page_sha256": "4c303d0dce8f7f88a6412b04a90e1db854c8c0e335f2045343e0a1b843537313",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/polk-county",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/polk-county"
+        }
+      },
+      "row": 12,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Auburndale",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.065133,
+        "lon": -81.788123
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Polk County Reliability Enhancement Project",
+    "native_id": "17",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:18",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[12] (id 18); placement precision unstated; not independently reviewed.",
+      "lat": 39.08466,
+      "lon": -84.71069
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 39.08466,
+          "longitude": -84.71069
+        },
+        "details": {
+          "city": "Hebron",
+          "state": "KY"
+        },
+        "id": "18",
+        "name": "Hebron to Oakbrook Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "f017b2aa66fb597792c35270af9682563e8b48cfd2146a47c8049bde5f5e1ba6",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/hebron",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/hebron"
+        }
+      },
+      "row": 13,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Hebron",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 39.08466,
+        "lon": -84.71069
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Hebron to Oakbrook Reliability Project",
+    "native_id": "18",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:20",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[13] (id 20); placement precision unstated; not independently reviewed.",
+      "lat": 29.387654,
+      "lon": -82.444535
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 29.387654,
+          "longitude": -82.444535
+        },
+        "details": {
+          "city": "Williston",
+          "state": "FL"
+        },
+        "id": "20",
+        "name": "Williston North Bronson Enhancement Project",
+        "page_http_status": null,
+        "page_sha256": "3ef9aedef005c21cb36ea7684c1e950a64a046195fca3a35010cdfba1d9f28b6",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/williston-north-bronson",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/williston-north-bronson"
+        }
+      },
+      "row": 14,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Williston",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.387654,
+        "lon": -82.444535
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Williston North Bronson Enhancement Project",
+    "native_id": "20",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:21",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[14] (id 21); placement precision unstated; not independently reviewed.",
+      "lat": 34.509321,
+      "lon": -81.99925
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.5093207507529,
+          "longitude": -81.9992496305703
+        },
+        "details": {
+          "city": "Laurens",
+          "state": "SC"
+        },
+        "id": "21",
+        "name": "Clinton 100-kV Line Improvement Project",
+        "page_http_status": null,
+        "page_sha256": "984922c77be474ec048714e5ecae9fc0f59a4d00cac8db971f86c89ec5249820",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/clinton-line-rebuild",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/clinton-line-rebuild"
+        }
+      },
+      "row": 15,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "targeted for late 2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Laurens",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.509321,
+        "lon": -81.99925
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Clinton 100-kV Line Improvement Project",
+    "native_id": "21",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “targeted for late 2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "984922c77be474ec048714e5ecae9fc0f59a4d00cac8db971f86c89ec5249820",
+            "facts": "targeted for late 2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:01Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/clinton-line-rebuild"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:21:expected-completion",
+        "native_project_link": "21",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "targeted for late 2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:23",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[16] (id 23); placement precision unstated; not independently reviewed.",
+      "lat": 28.776481,
+      "lon": -81.956375
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 28.776481,
+          "longitude": -81.956375
+        },
+        "details": {
+          "city": "Sumter County",
+          "state": "FL"
+        },
+        "id": "23",
+        "name": "Southern Oaks Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "a2ae76c8f5d4a55d524e8de9596710da17c01061c36c29a27cddda9d80269519",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/southern-oaks",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/southern-oaks"
+        }
+      },
+      "row": 17,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "Project completion and restoration January 2024",
+      "value": "2024-01"
+    },
+    "location_candidate": {
+      "area": "Sumter County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.776481,
+        "lon": -81.956375
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Southern Oaks Reliability Project",
+    "native_id": "23",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2024-01",
+        "description": "Duke's project page states “Project completion and restoration January 2024”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "a2ae76c8f5d4a55d524e8de9596710da17c01061c36c29a27cddda9d80269519",
+            "facts": "Project completion and restoration January 2024",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:45Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/southern-oaks"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:23:expected-completion",
+        "native_project_link": "23",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion and restoration January 2024",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:27",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[18] (id 27); placement precision unstated; not independently reviewed.",
+      "lat": 38.914561,
+      "lon": -84.396266
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 38.914561,
+          "longitude": -84.396266
+        },
+        "details": {
+          "city": "Alexandria",
+          "state": "KY"
+        },
+        "id": "27",
+        "name": "Claryville-Decoursey Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "388fd93f0b449a2bcd5bdb71ba2d52dd6aad285d33e1412f378005efe14ae6be",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/claryville",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/claryville"
+        }
+      },
+      "row": 19,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Alexandria",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 38.914561,
+        "lon": -84.396266
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Claryville-Decoursey Reliability Project",
+    "native_id": "27",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:29",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[19] (id 29); placement precision unstated; not independently reviewed.",
+      "lat": 28.9025,
+      "lon": -82.5926
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 28.9025,
+          "longitude": -82.5926
+        },
+        "details": {
+          "city": "Crystal River",
+          "state": "FL"
+        },
+        "id": "29",
+        "name": "Crystal River – Bronson Transmission Line Project",
+        "page_http_status": 404,
+        "page_sha256": null,
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/Crystal-River-Bronson",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/Crystal-River-Bronson"
+        }
+      },
+      "row": 20,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Crystal River",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.9025,
+        "lon": -82.5926
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Crystal River – Bronson Transmission Line Project",
+    "native_id": "29",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:3",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[1] (id 3); placement precision unstated; not independently reviewed.",
+      "lat": 34.7494,
+      "lon": -82.5238
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 34.7494,
+          "longitude": -82.5238
+        },
+        "details": {
+          "city": "Anderson County",
+          "state": "SC"
+        },
+        "id": "3",
+        "name": "Patriot Substation and 100-kV Transmission Line",
+        "page_http_status": null,
+        "page_sha256": "3cca9259423b7aec622eb39dee7a8c70ed520b117b433fb41b54a7fc682dcdc5",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Patriot-Substation",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Patriot-Substation"
+        }
+      },
+      "row": 2,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Anderson County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.7494,
+        "lon": -82.5238
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Patriot Substation and 100-kV Transmission Line",
+    "native_id": "3",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:30",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[20] (id 30); placement precision unstated; not independently reviewed.",
+      "lat": 27.876913,
+      "lon": -82.77928
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 27.8769125941267,
+          "longitude": -82.7792804594765
+        },
+        "details": {
+          "city": "Pinellas County",
+          "state": "FL"
+        },
+        "id": "30",
+        "name": "Pinellas County Reliability Program",
+        "page_http_status": null,
+        "page_sha256": "b85b4fb0327aae979b547989d751799d39ec2f26b22befe63aa5e9280e22ce02",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program"
+        }
+      },
+      "row": 21,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Pinellas County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 27.876913,
+        "lon": -82.77928
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Pinellas County Reliability Program",
+    "native_id": "30",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:32",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[22] (id 32); placement precision unstated; not independently reviewed.",
+      "lat": 29.005216,
+      "lon": -82.261611
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 29.005216,
+          "longitude": -82.261611
+        },
+        "details": {
+          "city": "Ocala",
+          "state": "FL"
+        },
+        "id": "32",
+        "name": "Ross Prairie to Shaw Transmission Project",
+        "page_http_status": null,
+        "page_sha256": "2268b80b53e35b68c010aed45defaa28da9df493450d46be9541b75a64e657b6",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/ross-prairie-to-shaw",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/ross-prairie-to-shaw"
+        }
+      },
+      "row": 23,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion 2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "area": "Ocala",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.005216,
+        "lon": -82.261611
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Ross Prairie to Shaw Transmission Project",
+    "native_id": "32",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Duke's project page states “Project completion 2028”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "2268b80b53e35b68c010aed45defaa28da9df493450d46be9541b75a64e657b6",
+            "facts": "Project completion 2028",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:39Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/ross-prairie-to-shaw"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:32:expected-completion",
+        "native_project_link": "32",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion 2028",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:33",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[23] (id 33); placement precision unstated; not independently reviewed.",
+      "lat": 28.555704,
+      "lon": -82.366103
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 28.5557039,
+          "longitude": -82.3661031
+        },
+        "details": {
+          "city": "Hernando and Sumter counties",
+          "state": "FL"
+        },
+        "id": "33",
+        "name": "Brooksville West – Mondon Hill – Bushnell East",
+        "page_http_status": null,
+        "page_sha256": "c8e3560245d3f37e6570a2f8c753a3689de9a780f04f96714a78e72672af4609",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/mondon-hill",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/mondon-hill"
+        }
+      },
+      "row": 24,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "In-service Date December 2025",
+      "value": "2025-12"
+    },
+    "location_candidate": {
+      "area": "Hernando and Sumter counties",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.555704,
+        "lon": -82.366103
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Brooksville West – Mondon Hill – Bushnell East",
+    "native_id": "33",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2025-12",
+        "description": "Duke's project page states “In-service Date December 2025”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "c8e3560245d3f37e6570a2f8c753a3689de9a780f04f96714a78e72672af4609",
+            "facts": "In-service Date December 2025",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:37Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/mondon-hill"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:33:expected-completion",
+        "native_project_link": "33",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "In-service Date December 2025",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:34",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[24] (id 34); placement precision unstated; not independently reviewed.",
+      "lat": 35.53957,
+      "lon": -82.63018
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.53957,
+          "longitude": -82.63018
+        },
+        "details": {
+          "city": "Asheville",
+          "state": "NC"
+        },
+        "id": "34",
+        "name": "Craggy-Enka Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "8a79605d3078423991398a92727128a9ff7ad822fddf0755470b7b44202e395b",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/craggy-enka",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/craggy-enka"
+        }
+      },
+      "row": 25,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Asheville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.53957,
+        "lon": -82.63018
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Craggy-Enka Reliability Project",
+    "native_id": "34",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:35",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[25] (id 35); placement precision unstated; not independently reviewed.",
+      "lat": 35.154163,
+      "lon": -82.811381
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.1541633,
+          "longitude": -82.8113808
+        },
+        "details": {
+          "city": "Rosman",
+          "state": "NC"
+        },
+        "id": "35",
+        "name": "Quebec Transmission Line Reliability Improvement Project",
+        "page_http_status": null,
+        "page_sha256": "c5091b6c98524a4c25dc83b83f4ee80d7a55785c255da085e01c353db880d2f4",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/quebec",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/quebec"
+        }
+      },
+      "row": 26,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "expected to be completed in 2029",
+      "value": "2029"
+    },
+    "location_candidate": {
+      "area": "Rosman",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.154163,
+        "lon": -82.811381
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Quebec Transmission Line Reliability Improvement Project",
+    "native_id": "35",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2029",
+        "description": "Duke's project page states “expected to be completed in 2029”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "c5091b6c98524a4c25dc83b83f4ee80d7a55785c255da085e01c353db880d2f4",
+            "facts": "expected to be completed in 2029",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:00Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/quebec"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:35:expected-completion",
+        "native_project_link": "35",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": "expected to be completed in 2029",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:36",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[26] (id 36); placement precision unstated; not independently reviewed.",
+      "lat": 35.59769,
+      "lon": -82.55454
+    },
+    "counties": [],
+    "description": "Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Substation"
+        ],
+        "coords": {
+          "latitude": 35.59769,
+          "longitude": -82.55454
+        },
+        "details": {
+          "city": "Asheville",
+          "state": "NC"
+        },
+        "id": "36",
+        "name": "Rankin Avenue Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "ba7b7814f5523d79d13242df46d70ad51bd5c1d9f157840a7f8e8023d0a30e33",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/rankin",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/rankin"
+        }
+      },
+      "row": 27,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Asheville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.59769,
+        "lon": -82.55454
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Rankin Avenue Reliability Project",
+    "native_id": "36",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:37",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[27] (id 37); placement precision unstated; not independently reviewed.",
+      "lat": 35.33469,
+      "lon": -78.65612
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.33469,
+          "longitude": -78.65612
+        },
+        "details": {
+          "city": "Fayetteville",
+          "state": "NC"
+        },
+        "id": "37",
+        "name": "Erwin-Fayetteville Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "800916dad07a5ced58639f9eb4c7b0f552b370c96c5c4679fd8d29f318758e50",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/erwin-fayetteville-reliability-project",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/erwin-fayetteville-reliability-project"
+        }
+      },
+      "row": 28,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Fayetteville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.33469,
+        "lon": -78.65612
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Erwin-Fayetteville Line Upgrade Project",
+    "native_id": "37",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:40",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[29] (id 40); placement precision unstated; not independently reviewed.",
+      "lat": 30.107929,
+      "lon": -83.574183
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 30.107929,
+          "longitude": -83.574183
+        },
+        "details": {
+          "city": "Perry",
+          "state": "FL"
+        },
+        "id": "40",
+        "name": "Fort White-Perry Transmission Line Rebuild Project",
+        "page_http_status": null,
+        "page_sha256": "507b479ec8f9d6a3636f764e908afda0545bd1d5fa65dfd61cf8547734ed0a22",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/fort-white-perry-project",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/fort-white-perry-project"
+        }
+      },
+      "row": 30,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "In-service Date: November 2023",
+      "value": "2023-11"
+    },
+    "location_candidate": {
+      "area": "Perry",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 30.107929,
+        "lon": -83.574183
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Fort White-Perry Transmission Line Rebuild Project",
+    "native_id": "40",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2023-11",
+        "description": "Duke's project page states “In-service Date: November 2023”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "507b479ec8f9d6a3636f764e908afda0545bd1d5fa65dfd61cf8547734ed0a22",
+            "facts": "In-service Date: November 2023",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:16Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/fort-white-perry-project"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:40:expected-completion",
+        "native_project_link": "40",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "In-service Date: November 2023",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:41",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[30] (id 41); placement precision unstated; not independently reviewed.",
+      "lat": 27.810119,
+      "lon": -82.68773
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 27.810119,
+          "longitude": -82.68773
+        },
+        "details": {
+          "city": "Pinellas County",
+          "state": "FL"
+        },
+        "id": "41",
+        "name": "Disston Underground Transmission Line",
+        "page_http_status": null,
+        "page_sha256": "288b85beb41ed531696dcac60995ca176fc34d33336a9b52cfd2bf7d02d38209",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/disston",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/disston"
+        }
+      },
+      "row": 31,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion and restoration Mid-2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Pinellas County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 27.810119,
+        "lon": -82.68773
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Disston Underground Transmission Line",
+    "native_id": "41",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “Project completion and restoration Mid-2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "288b85beb41ed531696dcac60995ca176fc34d33336a9b52cfd2bf7d02d38209",
+            "facts": "Project completion and restoration Mid-2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:48Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/disston"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:41:expected-completion",
+        "native_project_link": "41",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion and restoration Mid-2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:45",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[31] (id 45); placement precision unstated; not independently reviewed.",
+      "lat": 34.820589,
+      "lon": -82.09616
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.8205886990807,
+          "longitude": -82.0961597373668
+        },
+        "details": {
+          "city": "Spartanburg",
+          "state": "SC"
+        },
+        "id": "45",
+        "name": "Big Ferguson Transmission Line Project",
+        "page_http_status": null,
+        "page_sha256": "9dd107770e8cc686a3844514be4da5fb63c2dc488e4ed78991029ff5104974eb",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/big-ferguson",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/big-ferguson"
+        }
+      },
+      "row": 32,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "Completion expected in April 2024",
+      "value": "2024-04"
+    },
+    "location_candidate": {
+      "area": "Spartanburg",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.820589,
+        "lon": -82.09616
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Big Ferguson Transmission Line Project",
+    "native_id": "45",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2024-04",
+        "description": "Duke's project page states “Completion expected in April 2024”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "9dd107770e8cc686a3844514be4da5fb63c2dc488e4ed78991029ff5104974eb",
+            "facts": "Completion expected in April 2024",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:46:38Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/big-ferguson"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:45:expected-completion",
+        "native_project_link": "45",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "Completion expected in April 2024",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:48",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[33] (id 48); placement precision unstated; not independently reviewed.",
+      "lat": 34.898458,
+      "lon": -78.94545
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.898458,
+          "longitude": -78.94545
+        },
+        "details": {
+          "city": "Cumberland County",
+          "state": "NC"
+        },
+        "id": "48",
+        "name": "Fayetteville-Fayetteville DuPont 115kV Line Rebuilds",
+        "page_http_status": null,
+        "page_sha256": "4964ae146e556ee77477590d1453954dd6f314fa04da5e1b87aea38aacb8883b",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/fayetteville-dupont-line-rebuild",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/fayetteville-dupont-line-rebuild"
+        }
+      },
+      "row": 34,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Cumberland County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.898458,
+        "lon": -78.94545
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Fayetteville-Fayetteville DuPont 115kV Line Rebuilds",
+    "native_id": "48",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:52",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[34] (id 52); placement precision unstated; not independently reviewed.",
+      "lat": 35.952248,
+      "lon": -77.832841
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.952248,
+          "longitude": -77.832841
+        },
+        "details": {
+          "city": "Rocky Mount",
+          "state": "NC"
+        },
+        "id": "52",
+        "name": "Rocky Mount-Battleboro Reliability Project",
+        "page_http_status": 404,
+        "page_sha256": null,
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/rocky-mount",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/rocky-mount"
+        }
+      },
+      "row": 35,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Rocky Mount",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.952248,
+        "lon": -77.832841
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Rocky Mount-Battleboro Reliability Project",
+    "native_id": "52",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:53",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[35] (id 53); placement precision unstated; not independently reviewed.",
+      "lat": 34.6489,
+      "lon": -82.30997
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.6489,
+          "longitude": -82.30997
+        },
+        "details": {
+          "city": "Greenville County",
+          "state": "SC"
+        },
+        "id": "53",
+        "name": "Harrison Bridge Transmission Line Project",
+        "page_http_status": null,
+        "page_sha256": "624bb9bc5d42df705b546f9d22e4d2d2924c4a14fd67ff71f4a656acf118e123",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/harrison-bridge",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/harrison-bridge"
+        }
+      },
+      "row": 36,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Greenville County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.6489,
+        "lon": -82.30997
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Harrison Bridge Transmission Line Project",
+    "native_id": "53",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:56",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[36] (id 56); placement precision unstated; not independently reviewed.",
+      "lat": 35.350906,
+      "lon": -79.3705
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 35.3509059374925,
+          "longitude": -79.3705000026035
+        },
+        "details": {
+          "city": "Lee and Moore counties",
+          "state": "NC"
+        },
+        "id": "56",
+        "name": "Cape Fear-West End Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "9d6f075be0e9998c4f889c96ef7e9c6edfb815a81f4e2bf2031b6cb6e7fd1427",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/cape-fear-west-end",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/cape-fear-west-end"
+        }
+      },
+      "row": 37,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Lee and Moore counties",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.350906,
+        "lon": -79.3705
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Cape Fear-West End Line Upgrade Project",
+    "native_id": "56",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:6",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[3] (id 6); placement precision unstated; not independently reviewed.",
+      "lat": 28.672653,
+      "lon": -81.455414
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 28.672653,
+          "longitude": -81.455414
+        },
+        "details": {
+          "city": "Seminole County",
+          "state": "FL"
+        },
+        "id": "6",
+        "name": "Piedmont-Wekiva Transmission Reliability Enhancement Project",
+        "page_http_status": null,
+        "page_sha256": "e4890d27b3dea75fb4373fec41454cc5fe5dc025475d3fa9c5dcde33e379c967",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/wekiva",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/wekiva"
+        }
+      },
+      "row": 4,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Expected Completion : 2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Seminole County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.672653,
+        "lon": -81.455414
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Piedmont-Wekiva Transmission Reliability Enhancement Project",
+    "native_id": "6",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “Expected Completion : 2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "e4890d27b3dea75fb4373fec41454cc5fe5dc025475d3fa9c5dcde33e379c967",
+            "facts": "Expected Completion : 2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:57Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/wekiva"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:6:expected-completion",
+        "native_project_link": "6",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Expected Completion : 2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:61",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[40] (id 61); placement precision unstated; not independently reviewed.",
+      "lat": 30.474297,
+      "lon": -83.614372
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 30.474297,
+          "longitude": -83.614372
+        },
+        "details": {
+          "city": "Hamilton/Madison counties",
+          "state": "FL"
+        },
+        "id": "61",
+        "name": "North Central Florida Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "d5b354b8065488e28497baba61736e2ae1c4eaca72e0c43ac133c42664b527fb",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/central-florida",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/central-florida"
+        }
+      },
+      "row": 41,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "This project was completed in March 2023",
+      "value": "2023-03"
+    },
+    "location_candidate": {
+      "area": "Hamilton/Madison counties",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 30.474297,
+        "lon": -83.614372
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "North Central Florida Upgrade Project",
+    "native_id": "61",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2023-03",
+        "description": "Duke's project page states “This project was completed in March 2023”.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "d5b354b8065488e28497baba61736e2ae1c4eaca72e0c43ac133c42664b527fb",
+            "facts": "This project was completed in March 2023",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:46:54Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/central-florida"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:61:completed",
+        "native_project_link": "61",
+        "precision": "month",
+        "type": "completion"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "This project was completed in March 2023",
+    "status_group": "in_service"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:64",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[42] (id 64); placement precision unstated; not independently reviewed.",
+      "lat": 27.914392,
+      "lon": -82.773493
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 27.9143921117983,
+          "longitude": -82.7734926779111
+        },
+        "details": {
+          "city": "Pinellas County",
+          "state": "FL"
+        },
+        "id": "64",
+        "name": "Disston to Largo Transmission Upgrade",
+        "page_http_status": null,
+        "page_sha256": "50872ab91798eaae19fac9004b9642354296ac1aaae2e20ef24d7fe39d4104d6",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/disston-to-largo",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/disston-to-largo"
+        }
+      },
+      "row": 43,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion and restoration 2029",
+      "value": "2029"
+    },
+    "location_candidate": {
+      "area": "Pinellas County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 27.914392,
+        "lon": -82.773493
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Disston to Largo Transmission Upgrade",
+    "native_id": "64",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2029",
+        "description": "Duke's project page states “Project completion and restoration 2029”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "50872ab91798eaae19fac9004b9642354296ac1aaae2e20ef24d7fe39d4104d6",
+            "facts": "Project completion and restoration 2029",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:50Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/disston-to-largo"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:64:expected-completion",
+        "native_project_link": "64",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion and restoration 2029",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:65",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[43] (id 65); placement precision unstated; not independently reviewed.",
+      "lat": 28.335775,
+      "lon": -81.529322
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 28.335774985621,
+          "longitude": -81.5293215313096
+        },
+        "details": {
+          "city": "Osceola County",
+          "state": "FL"
+        },
+        "id": "65",
+        "name": "Bonnet Creek to Intercession City Transmission Reliability Upgrade",
+        "page_http_status": null,
+        "page_sha256": "4f363429362cbad555d14560694607caaab5327f227ae74919b20df88086302a",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/bonnet-creek-to-intercession-city",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/bonnet-creek-to-intercession-city"
+        }
+      },
+      "row": 44,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion : Late 2025",
+      "value": "2025"
+    },
+    "location_candidate": {
+      "area": "Osceola County",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.335775,
+        "lon": -81.529322
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Bonnet Creek to Intercession City Transmission Reliability Upgrade",
+    "native_id": "65",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2025",
+        "description": "Duke's project page states “Project completion : Late 2025”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "4f363429362cbad555d14560694607caaab5327f227ae74919b20df88086302a",
+            "facts": "Project completion : Late 2025",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:46:40Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/bonnet-creek-to-intercession-city"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:65:expected-completion",
+        "native_project_link": "65",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion : Late 2025",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:66",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[44] (id 66); placement precision unstated; not independently reviewed.",
+      "lat": 39.114386,
+      "lon": -84.806088
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 39.114385849901,
+          "longitude": -84.8060881288358
+        },
+        "details": {
+          "city": "Hamilton County, OH and Boone County, KY",
+          "state": "OH/KY"
+        },
+        "id": "66",
+        "name": "Miami Fort to Hebron Transmission Line Rebuild",
+        "page_http_status": null,
+        "page_sha256": "a0a40e3779968f22e46f1dfc9339d11ccbb123e0fa708e71b9f1f02b91038122",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/miami-fort-to-hebron",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/miami-fort-to-hebron"
+        }
+      },
+      "row": 45,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Hamilton County, OH and Boone County, KY",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 39.114386,
+        "lon": -84.806088
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Miami Fort to Hebron Transmission Line Rebuild",
+    "native_id": "66",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21",
+      "39"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:69",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[46] (id 69); placement precision unstated; not independently reviewed.",
+      "lat": 35.395269,
+      "lon": -78.512684
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.395269,
+          "longitude": -78.512684
+        },
+        "details": {
+          "city": "Chatham, Harnett and Wake counties",
+          "state": "NC"
+        },
+        "id": "69",
+        "name": "Cape Fear Plant to Method Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "fb60406875f57a3337726e159f402fd986f73a9f4c66ba537431e664eb087c2b",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Cape-Fear-Method",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Cape-Fear-Method"
+        }
+      },
+      "row": 47,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Chatham, Harnett and Wake counties",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.395269,
+        "lon": -78.512684
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Cape Fear Plant to Method Reliability Project",
+    "native_id": "69",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:71",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[48] (id 71); placement precision unstated; not independently reviewed.",
+      "lat": 35.849091,
+      "lon": -78.826833
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 35.849090600418,
+          "longitude": -78.8268333023232
+        },
+        "details": {
+          "city": "Morrisville",
+          "state": "NC"
+        },
+        "id": "71",
+        "name": "Morrisville Industrial Transmission Project",
+        "page_http_status": null,
+        "page_sha256": "12f69a1c0899b6af3bae7b01b510e2f25d0289e93f4ce7f65a7ece72fe70ce32",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/morrisville-transmission-line",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/morrisville-transmission-line"
+        }
+      },
+      "row": 49,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Morrisville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.849091,
+        "lon": -78.826833
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Morrisville Industrial Transmission Project",
+    "native_id": "71",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:72",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[49] (id 72); placement precision unstated; not independently reviewed.",
+      "lat": 39.021942,
+      "lon": -84.638872
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 39.0219416833989,
+          "longitude": -84.6388718307832
+        },
+        "details": {
+          "city": "Florence",
+          "state": "KY"
+        },
+        "id": "72",
+        "name": "Turfway Reliabiity Project",
+        "page_http_status": null,
+        "page_sha256": "e3bca95e07abb83b62c0846bcf6f190f22296af0d70cac37e593846022b46f5f",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/turfway",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/turfway"
+        }
+      },
+      "row": 50,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Florence",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 39.021942,
+        "lon": -84.638872
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Turfway Reliabiity Project",
+    "native_id": "72",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:73",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[50] (id 73); placement precision unstated; not independently reviewed.",
+      "lat": 35.612377,
+      "lon": -77.366528
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.6123769096694,
+          "longitude": -77.3665278001862
+        },
+        "details": {
+          "city": "Greenville",
+          "state": "NC"
+        },
+        "id": "73",
+        "name": " Aurora-Greenville Transmission Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "e699dca92c47a292443c0ea7cd93bfd5bc404a4a9732208504bc0146d9079e56",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/aurora",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/aurora"
+        }
+      },
+      "row": 51,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Greenville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.612377,
+        "lon": -77.366528
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": " Aurora-Greenville Transmission Line Upgrade Project",
+    "native_id": "73",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:75",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[51] (id 75); placement precision unstated; not independently reviewed.",
+      "lat": 39.021787,
+      "lon": -84.638856
+    },
+    "counties": [],
+    "description": "Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Substation"
+        ],
+        "coords": {
+          "latitude": 39.0217870666741,
+          "longitude": -84.6388557377796
+        },
+        "details": {
+          "city": "Florence",
+          "state": "KY"
+        },
+        "id": "75",
+        "name": "Turfway Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "e3bca95e07abb83b62c0846bcf6f190f22296af0d70cac37e593846022b46f5f",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/turfway",
+        "region": "Ohio/Kentucky",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/turfway"
+        }
+      },
+      "row": 52,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Florence",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 39.021787,
+        "lon": -84.638856
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Turfway Reliability Project",
+    "native_id": "75",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:76",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[52] (id 76); placement precision unstated; not independently reviewed.",
+      "lat": 34.680248,
+      "lon": -79.886016
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.680248,
+          "longitude": -79.886016
+        },
+        "details": {
+          "city": "Cheraw",
+          "state": "SC"
+        },
+        "id": "76",
+        "name": "Robinson Plant-Rockingham Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "60ca3ce4536adec480b14aac2d96951b6df821b748ef77dc4408c357e3105cc2",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/robinson-rockingham-line-upgrade",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/robinson-rockingham-line-upgrade"
+        }
+      },
+      "row": 53,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "expected to be completed in 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "area": "Cheraw",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.680248,
+        "lon": -79.886016
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Robinson Plant-Rockingham Line Upgrade Project",
+    "native_id": "76",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Duke's project page states “expected to be completed in 2027”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "60ca3ce4536adec480b14aac2d96951b6df821b748ef77dc4408c357e3105cc2",
+            "facts": "expected to be completed in 2027",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:04Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/robinson-rockingham-line-upgrade"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:76:expected-completion",
+        "native_project_link": "76",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "expected to be completed in 2027",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:77",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[53] (id 77); placement precision unstated; not independently reviewed.",
+      "lat": 34.904398,
+      "lon": -79.758741
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.904398,
+          "longitude": -79.758741
+        },
+        "details": {
+          "city": "Rockingham",
+          "state": "NC"
+        },
+        "id": "77",
+        "name": "Robinson Plant-Rockingham Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "60ca3ce4536adec480b14aac2d96951b6df821b748ef77dc4408c357e3105cc2",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/robinson-rockingham-line-upgrade",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/robinson-rockingham-line-upgrade"
+        }
+      },
+      "row": 54,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "expected to be completed in 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "area": "Rockingham",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.904398,
+        "lon": -79.758741
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Robinson Plant-Rockingham Line Upgrade Project",
+    "native_id": "77",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Duke's project page states “expected to be completed in 2027”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "60ca3ce4536adec480b14aac2d96951b6df821b748ef77dc4408c357e3105cc2",
+            "facts": "expected to be completed in 2027",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:48:04Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/robinson-rockingham-line-upgrade"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:77:expected-completion",
+        "native_project_link": "77",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": "expected to be completed in 2027",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:78",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[54] (id 78); placement precision unstated; not independently reviewed.",
+      "lat": 35.660174,
+      "lon": -81.209989
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.6601743138842,
+          "longitude": -81.2099892734918
+        },
+        "details": {
+          "city": "Newton",
+          "state": "NC"
+        },
+        "id": "78",
+        "name": "Henry Fork Transmission Line Project",
+        "page_http_status": null,
+        "page_sha256": "70f2fef4ff600f1518a84d9afb8f5f015e1c91ee24fe643c7bc12eb77c5a76d1",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/henry-fork",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/henry-fork"
+        }
+      },
+      "row": 55,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Newton",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.660174,
+        "lon": -81.209989
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Henry Fork Transmission Line Project",
+    "native_id": "78",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:85",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[60] (id 85); placement precision unstated; not independently reviewed.",
+      "lat": 34.852619,
+      "lon": -82.394012
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.852619,
+          "longitude": -82.394012
+        },
+        "details": {
+          "city": "Greenville",
+          "state": "SC"
+        },
+        "id": "85",
+        "name": "Sevier 100-kV Transmission Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "a5ee141cbdb73cb62b3890eca5a252eaedcba09001d34a6ee22ca129290f1d85",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/sevier-transmission-line-upgrade",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/sevier-transmission-line-upgrade"
+        }
+      },
+      "row": 61,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Greenville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.852619,
+        "lon": -82.394012
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Sevier 100-kV Transmission Line Upgrade Project",
+    "native_id": "85",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:86",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[61] (id 86); placement precision unstated; not independently reviewed.",
+      "lat": 34.2746,
+      "lon": -81.6187
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.2746,
+          "longitude": -81.6187
+        },
+        "details": {
+          "city": "Newberry",
+          "state": "SC"
+        },
+        "id": "86",
+        "name": "Newberry Line Improvement Project",
+        "page_http_status": null,
+        "page_sha256": "d6012e432c167cad5ec822235a9615def32c2836b497375ae1dfe584f507cdff",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/newberry",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/newberry"
+        }
+      },
+      "row": 62,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion & restoration Mid-to-late 2026",
+      "value": "2026"
+    },
+    "location_candidate": {
+      "area": "Newberry",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.2746,
+        "lon": -81.6187
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Newberry Line Improvement Project",
+    "native_id": "86",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2026",
+        "description": "Duke's project page states “Project completion & restoration Mid-to-late 2026”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "d6012e432c167cad5ec822235a9615def32c2836b497375ae1dfe584f507cdff",
+            "facts": "Project completion & restoration Mid-to-late 2026",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:44Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/newberry"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:86:expected-completion",
+        "native_project_link": "86",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "Project completion & restoration Mid-to-late 2026",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:87",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[62] (id 87); placement precision unstated; not independently reviewed.",
+      "lat": 34.9854,
+      "lon": -80.5495
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.9854,
+          "longitude": -80.5495
+        },
+        "details": {
+          "city": "Monroe",
+          "state": "NC"
+        },
+        "id": "87",
+        "name": "Monroe Lines Upgrade Projct",
+        "page_http_status": null,
+        "page_sha256": "6d2ea25e9cd81cbb9cf7881edf9988e3dc0722d1c5555374e9120efdd3493407",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/monroe-rebuild-project",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/monroe-rebuild-project"
+        }
+      },
+      "row": 63,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Monroe",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.9854,
+        "lon": -80.5495
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Monroe Lines Upgrade Projct",
+    "native_id": "87",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:88",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[63] (id 88); placement precision unstated; not independently reviewed.",
+      "lat": 27.758134,
+      "lon": -82.671496
+    },
+    "counties": [],
+    "description": "Transmission Line and Substation",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line and Substation"
+        ],
+        "coords": {
+          "latitude": 27.758134,
+          "longitude": -82.671496
+        },
+        "details": {
+          "city": "St. Petersburg",
+          "state": "FL"
+        },
+        "id": "88",
+        "name": "Wildwood Heights Substation and Underground Line",
+        "page_http_status": null,
+        "page_sha256": "85e519eeb7f704ef217f88e13fa0613098444121c089360b04134aad005394af",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/wildwood",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/wildwood"
+        }
+      },
+      "row": 64,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Project completion and restoration 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "area": "St. Petersburg",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 27.758134,
+        "lon": -82.671496
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Wildwood Heights Substation and Underground Line",
+    "native_id": "88",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Duke's project page states “Project completion and restoration 2027”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "85e519eeb7f704ef217f88e13fa0613098444121c089360b04134aad005394af",
+            "facts": "Project completion and restoration 2027",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:54Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/pinellas-county-reliability-program/wildwood"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:88:expected-completion",
+        "native_project_link": "88",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "Project completion and restoration 2027",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:89",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[64] (id 89); placement precision unstated; not independently reviewed.",
+      "lat": 34.9677,
+      "lon": -79.9845
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.9677,
+          "longitude": -79.9845
+        },
+        "details": {
+          "city": "Lilesville",
+          "state": "NC"
+        },
+        "id": "89",
+        "name": "Lilesville-Oakboro Line Upgrade Project",
+        "page_http_status": null,
+        "page_sha256": "55dbb2bf64ded31e9ebdf03aac60cbc1fb9e79f144bacaf01081c8597cbb6b02",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/lilesville-oakboro",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/lilesville-oakboro"
+        }
+      },
+      "row": 65,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "expected to be completed in 2028",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "area": "Lilesville",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.9677,
+        "lon": -79.9845
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Lilesville-Oakboro Line Upgrade Project",
+    "native_id": "89",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Duke's project page states “expected to be completed in 2028”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "55dbb2bf64ded31e9ebdf03aac60cbc1fb9e79f144bacaf01081c8597cbb6b02",
+            "facts": "expected to be completed in 2028",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:47:29Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/lilesville-oakboro"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:89:expected-completion",
+        "native_project_link": "89",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": "expected to be completed in 2028",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:90",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[65] (id 90); placement precision unstated; not independently reviewed.",
+      "lat": 36.191351,
+      "lon": -80.215785
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 36.191351,
+          "longitude": -80.215785
+        },
+        "details": {
+          "city": "Winston-Salem",
+          "state": "NC"
+        },
+        "id": "90",
+        "name": "Baux Mountain Transmission Line Project",
+        "page_http_status": null,
+        "page_sha256": "10cd996b62f5ee804b7f783f605b793aeabe42935d16890e98966fb844f1aaea",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/baux-mountain",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/baux-mountain"
+        }
+      },
+      "row": 66,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Winston-Salem",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 36.191351,
+        "lon": -80.215785
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Baux Mountain Transmission Line Project",
+    "native_id": "90",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:92",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[67] (id 92); placement precision unstated; not independently reviewed.",
+      "lat": 35.427081,
+      "lon": -80.958408
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 35.427081,
+          "longitude": -80.958408
+        },
+        "details": {
+          "city": "Denver",
+          "state": "NC"
+        },
+        "id": "92",
+        "name": "Lowe Line Rebuild Project",
+        "page_http_status": null,
+        "page_sha256": "b537261efc019274bab5327e3af9114e31be0a9bd5d5457fbcc3873522ae9b61",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/lowe-line-rebuild",
+        "region": "North Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/lowe-line-rebuild"
+        }
+      },
+      "row": 68,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Denver",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 35.427081,
+        "lon": -80.958408
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Lowe Line Rebuild Project",
+    "native_id": "92",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "37"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:94",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[69] (id 94); placement precision unstated; not independently reviewed.",
+      "lat": 34.788333,
+      "lon": -82.695
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 34.788333,
+          "longitude": -82.695
+        },
+        "details": {
+          "city": "Liberty",
+          "state": "SC"
+        },
+        "id": "94",
+        "name": "Liberty-Norris Line Relocation Project",
+        "page_http_status": null,
+        "page_sha256": "24e025275c24bcdbf5120e3fbaa688ba2eb3eb084c24d24a9b68e7c652aa550b",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Liberty-Norris",
+        "region": "South Carolina",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/Liberty-Norris"
+        }
+      },
+      "row": 70,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "month",
+      "raw": "Completion is expected in October 2025",
+      "value": "2025-10"
+    },
+    "location_candidate": {
+      "area": "Liberty",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 34.788333,
+        "lon": -82.695
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Liberty-Norris Line Relocation Project",
+    "native_id": "94",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2025-10",
+        "description": "Duke's project page states “Completion is expected in October 2025”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "24e025275c24bcdbf5120e3fbaa688ba2eb3eb084c24d24a9b68e7c652aa550b",
+            "facts": "Completion is expected in October 2025",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:45:38Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/Liberty-Norris"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:94:expected-completion",
+        "native_project_link": "94",
+        "precision": "month",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "45"
+    ],
+    "status": "Completion is expected in October 2025",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:95",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[70] (id 95); placement precision unstated; not independently reviewed.",
+      "lat": 28.974444,
+      "lon": -81.539722
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 28.974444,
+          "longitude": -81.539722
+        },
+        "details": {
+          "city": "DeLand",
+          "state": "FL"
+        },
+        "id": "95",
+        "name": "DeLand West to Dona Vista Reliability Project",
+        "page_http_status": null,
+        "page_sha256": "b50971f73f71b0d69054070eabfbb503ddc1101b697f1e373e2d343a68e256d4",
+        "project_url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/deland",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/Our-Company/About-Us/Electric-Transmission-Projects/deland"
+        }
+      },
+      "row": 71,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "expected to be completed in 2030",
+      "value": "2030"
+    },
+    "location_candidate": {
+      "area": "DeLand",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 28.974444,
+        "lon": -81.539722
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "DeLand West to Dona Vista Reliability Project",
+    "native_id": "95",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2030",
+        "description": "Duke's project page states “expected to be completed in 2030”. A planned date, not a completion.",
+        "evidence": [
+          {
+            "access_review": "Public Duke Energy website; no login.",
+            "artifact_sha256": "b50971f73f71b0d69054070eabfbb503ddc1101b697f1e373e2d343a68e256d4",
+            "facts": "expected to be completed in 2030",
+            "locator": "project page schedule text",
+            "publisher": "Duke Energy",
+            "retrieved_at": "2026-09-27T07:45:51Z",
+            "source_date": null,
+            "url": "https://www.duke-energy.com/Our-Company/About-Us/Electric-Transmission-Projects/deland"
+          }
+        ],
+        "id": "southeast:duke-transmission-map:95:expected-completion",
+        "native_project_link": "95",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": "expected to be completed in 2030",
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:duke-transmission-map:97",
+    "center": {
+      "basis": "source_point",
+      "evidence": "Official source: Duke Energy transmission-project map point, data.json#locations[72] (id 97); placement precision unstated; not independently reviewed.",
+      "lat": 29.460274,
+      "lon": -82.653924
+    },
+    "counties": [],
+    "description": "Transmission Line",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "categories": [
+          "Transmission Line"
+        ],
+        "coords": {
+          "latitude": 29.460274,
+          "longitude": -82.6539243
+        },
+        "details": {
+          "city": "Bronson",
+          "state": "FL"
+        },
+        "id": "97",
+        "name": "Bronson to Newberry Reliability Transmission Project",
+        "page_http_status": null,
+        "page_sha256": "313841752568c5c14573a98cb1ac763c52423236dd68923882c5a17d5820f6bd",
+        "project_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects/bronson",
+        "region": "Florida",
+        "relatedLinks": {
+          "text": "Project Page",
+          "url": "/our-company/about-us/electric-transmission-projects/bronson"
+        }
+      },
+      "row": 73,
+      "sheet": "data.json",
+      "source_sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "area": "Bronson",
+      "independent_review": false,
+      "kind": "site",
+      "rule": "C45",
+      "source_point": {
+        "lat": 29.460274,
+        "lon": -82.653924
+      },
+      "tier": "official"
+    },
+    "location_review": "unreviewed",
+    "name": "Bronson to Newberry Reliability Transmission Project",
+    "native_id": "97",
+    "other_owners": [],
+    "owner": "Duke Energy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:duke-transmission-map",
+    "states": [
+      "12"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  }
+]

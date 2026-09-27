@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "southeast:duke-transmission-map",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.duke-energy.com/-/media/json/maps/transmission-projects/data.json",
+    "import_status": "imported",
+    "landing_url": "https://www.duke-energy.com/our-company/about-us/electric-transmission-projects",
+    "notes": [
+      "F39 dense Southeast (C45). Points are Duke's own map coordinates (official tier), placement precision unstated, not independently reviewed. The map lists no status; pages give schedules in prose, read only from an expected-completion statement."
+    ],
+    "planning_region": null,
+    "project_count": 63,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Duke Energy",
+    "retrieved_at": "2026-09-27T07:45:29Z",
+    "role": "project_plan",
+    "sha256": "17d70a679adf357c1581a6e1063570b8f93ca14c66207d3f344fdf8f41e56954",
+    "states": [
+      "12",
+      "21",
+      "37",
+      "39",
+      "45"
+    ],
+    "title": "Duke Energy transmission projects map",
+    "vintage": null
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "batches": {
+    "aep": {
+      "expected_counts": {
+        "by_state": {
+          "05": 7,
+          "21": 9,
+          "22": 9,
+          "51": 28,
+          "54": 25
+        },
+        "candidate": 0,
+        "candidate_unique_name": 0,
+        "distinct_points": 74,
+        "located": 77,
+        "located_by_state": {
+          "05": 7,
+          "21": 9,
+          "22": 9,
+          "51": 28,
+          "54": 25
+        },
+        "located_dated": 24,
+        "located_not_in_service": 74,
+        "official": 77,
+        "projects": 77,
+        "sources": 6
+      },
+      "files": {
+        "projects": "b49c40fd87ad41e3e06463c61cd7099caf916455888f1a22b62538330bcf4da7",
+        "sources": "3adc09d2c53129b90d88d7f7bc15a2d17957a29c454922abd08a9dd2fd9a7aad"
+      }
+    },
+    "duke": {
+      "expected_counts": {
+        "by_state": {
+          "12": 22,
+          "21": 7,
+          "37": 22,
+          "39": 2,
+          "45": 12
+        },
+        "candidate": 0,
+        "candidate_unique_name": 0,
+        "distinct_points": 63,
+        "located": 63,
+        "located_by_state": {
+          "12": 22,
+          "21": 7,
+          "37": 22,
+          "39": 2,
+          "45": 12
+        },
+        "located_dated": 26,
+        "located_not_in_service": 62,
+        "official": 63,
+        "projects": 63,
+        "sources": 1
+      },
+      "files": {
+        "projects": "c0484e6fe7e3ee3843efb4720961846c628de812a9c5e0e9e414a26d5b1c4a20",
+        "sources": "d8a0188b085f73c45857cf9cb81af0a6a9ba081fa77e24b9467cba0717e4109c"
+      }
+    }
+  },
+  "policy": "C25",
+  "release_id": "southeast-dense-1",
+  "rule": "C45"
+}

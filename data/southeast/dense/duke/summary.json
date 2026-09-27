@@ -1,0 +1,31 @@
+{
+  "by_state": {
+    "12": 22,
+    "21": 7,
+    "37": 22,
+    "39": 2,
+    "45": 12
+  },
+  "by_status": {
+    "in_service": 1,
+    "unknown": 62
+  },
+  "candidate": 0,
+  "candidate_unique_name": 0,
+  "distinct_points": 63,
+  "located": 63,
+  "located_by_state": {
+    "12": 22,
+    "21": 7,
+    "37": 22,
+    "39": 2,
+    "45": 12
+  },
+  "located_dated": 26,
+  "located_not_in_service": 62,
+  "official": 63,
+  "projects": 63,
+  "sources": 1,
+  "unlocated_reasons": {},
+  "verified": 0
+}
