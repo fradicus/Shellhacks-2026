@@ -5,7 +5,7 @@
 
 .stage {
   --ink: #f4efe6;
-  --ink-3: rgba(244, 239, 230, 0.56);
+  --ink-3: rgba(244, 239, 230, 0.56); /* Small mono labels retain their original contrast. */
   --ink-4: rgba(244, 239, 230, 0.16);
   --display: var(--font-display);
   --sans: var(--font-sans);
@@ -24,6 +24,7 @@
   font-size: 13px;
 }
 
+/* Keep MapLibre CSS from making the scene container relative after navigation. */
 .stage .map {
   position: absolute;
   inset: 0;
