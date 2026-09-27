@@ -17,7 +17,7 @@ from common import REPO_ROOT, load_json, validate
 
 FOLDER = Path("data/midwest")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "midwest-spp-qpt-2026q3-candidates-1"
+RELEASE_ID = "midwest-spp-miso-candidates-2"
 TIERS = ("candidate", "candidate_unique_name")
 FIPS = {"19", "29", "20", "31", "38", "46"}  # IA, MO, KS, NE, ND, SD
 
@@ -98,7 +98,8 @@ def apply_release(snapshot: dict, root: Path) -> dict:
     result["projects"].extend(deepcopy(projects))
     result["coverage"]["midwest"] = {
         "release_id": RELEASE_ID, **measured, "independently_confirmed_projects": 0,
-        "notes": "SPP-approved transmission upgrades (Q3 2026 project tracking) in IA, MO, KS, NE, ND and SD. "
-                 "Candidate points are labeled and never confirmed; no statewide completeness claim.",
+        "notes": "SPP-approved transmission upgrades (Q3 2026 project tracking) and MISO MTEP26 projects under "
+                 "evaluation in IA, MO, KS, NE, ND and SD. Candidate points are labeled and never confirmed; no "
+                 "statewide completeness claim.",
     }
     return result

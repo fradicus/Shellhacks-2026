@@ -1,10 +1,10 @@
-"""F46: SPP upgrade-name forms, status and date mapping, the operator guard, and the committed Midwest release."""
+"""F46: SPP and MISO name forms, status and date mapping, the operator guard, and the committed Midwest release."""
 
 from datetime import datetime
 
 from california.caiso import match
 from common import REPO_ROOT, load_json
-from midwest.build import OPERATOR_KEYS, named, project, status_group
+from midwest.build import OPERATOR_KEYS, miso_keys, named, project, status_group
 from midwest.publish import apply_release
 from national.build import OUTPUTS, _coverage, validate_snapshot_values
 
@@ -38,6 +38,18 @@ def test_spp_upgrade_name_forms():
         "kind": "site", "names": ["Holt County"], "from": "name", "reason": None}
     assert named("S3454 - S3740 345 kV New Line")["kind"] is None
     assert named("North Dakota/Saskatchewan Border (Tableland) - Tande 230 kV Ckt 1")["names"] == [None, "Tande"]
+
+
+def test_miso_name_forms_and_submitters():
+    assert named("Replace Labadie 345 kV 3-4 bus tie switches")["names"] == ["Labadie"]
+    assert named("Booneville: Retire 13 kV Reactors") == {"kind": "site", "names": ["Booneville"], "from": "name",
+                                                          "reason": None}
+    assert named("Leland to Forest City N43 69 kV Rebuild")["names"] == ["Leland", "Forest City"]
+    assert named("Upgrade Baumgartner-Watson-1 138 kV Line")["names"] == ["Baumgartner", "Watson"]
+    assert named("Plymouth 161-69 kV Transformer Replacement")["names"] == ["Plymouth"]
+    assert miso_keys("MIDAMERICAN ENERGY CO. MEC") == ["MIDAMERICAN"]
+    assert miso_keys("MONTANA-DAKOTA UTILITIES CO.MDU") == ["MONTANA-DAKOTA", "MDU"]
+    assert miso_keys("AMEREN MISSOURI") == ["AMEREN"]  # F40's list still answers what it knows
 
 
 def test_statuses_and_dates():
@@ -80,7 +92,7 @@ def test_committed_release_appends_unreviewed_candidates_in_their_states():
     snapshot["coverage"].update(_coverage(snapshot["projects"], imported))
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / "data" / "midwest" / "releases" / "active.json")
-    added = [p for p in snapshot["projects"] if p["source_id"] == "spp-qpt-2026q3"]
+    added = [p for p in snapshot["projects"] if p["source_id"] in {"spp-qpt-2026q3", "miso-mtep26-eval-midwest"}]
     assert len(added) == release["expected_counts"]["projects"]
     assert all(set(p["states"]) <= {"19", "29", "20", "31", "38", "46"} for p in added)
     assert all(p["location_review"] == ("unreviewed" if p["center"] else "unlocated") for p in added)
