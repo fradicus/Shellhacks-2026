@@ -11,7 +11,10 @@ cut: never
 
 # F38 Verified geographic project data
 
-Status: New England research checkpoint launched; publication contracts and geographic delivery pending. [C22](../../decisions/C22-verified-geographic-data.md)
+Status: First New England location release published to Atlas: 345 independently reviewed project/component records,
+199 distinct canonical map positions and 187 referenced facilities. C23 and F30/F31 integration are merged; `/explore`
+exposes the evidence. Main `/time` integration and broader geographic/history milestones remain pending; F38 is incomplete.
+See the [publication report](../../../reports/expansion/new-england-location-release.md). [C22](../../decisions/C22-verified-geographic-data.md)
 authorizes this spec. Shared contracts and a recorded launch are prerequisites, even when dependency markers exist.
 The [source research](sources.md) is a discovery starting point, not an ingestion allowlist or an acquired dataset.
 

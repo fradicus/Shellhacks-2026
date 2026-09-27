@@ -2,9 +2,9 @@
 
 Release `f38-new-england-345-v1` updates existing ISO-NE project/component IDs. It creates zero new project identities. C23 supplies the evidence contract; F30 assembles it; F31 presents and exports it. This is a bounded New England increment, not completion of F38 or national coverage.
 
-## Before and intended after
+## Before and after
 
-The live Atlas API at `http://localhost:3000/api/national?planningregion=iso-ne&limit=1` reported dataset `a0cfee7da1d0e5e097fae74db21f5c8aad9af60e`, 1,024 ISO-NE records and **zero located** before publication. Offline assembly with the F30 hook validates all 1,286 national IDs unchanged and increases located records from 69 to 414. Live activation and browser evidence will be recorded after the load Action; these offline results are not a claim that Atlas has changed.
+The live Atlas API at `http://localhost:3000/api/national?planningregion=iso-ne&limit=1` reported dataset `a0cfee7da1d0e5e097fae74db21f5c8aad9af60e`, 1,024 ISO-NE records and **zero located** before publication. Offline assembly with the F30 hook validates all 1,286 national IDs unchanged and increases located records from 69 to 414. The authorized load Action subsequently activated this same projection; the live receipt below confirms the actual database counts.
 
 | State | Confirmed project/component records |
 |---|---:|
@@ -60,4 +60,31 @@ F38 release PR #142 merged as `6a038d92b0309f4dd040516ce2f05ad2d0334b22` after r
 
 F31 evidence/export PR #148 merged as `3ab64daf2833df53cd0e594a4123203993fc5eeb` after required hosted CI passed. Its actual assembled-snapshot browser check selected Chelsea, exposed the pinned evidence and matching review receipt, verified complete/partial endpoint labels, and found no horizontal overflow at 390px. Optional legacy landing smoke failures are tracked separately in #134/#150; optional Azure testgen failure is tracked in #130. These failures were not silently reported as passing.
 
-The original local main checkout has been fast-forwarded to the merged evidence UI. F30 loader integration and the subsequent live receipt remain pending at this checkpoint.
+F30 loader integration PR #147 merged as `8c9d90d85b6a94ea3e2c014a282623ef751a811a` after required hosted CI passed. Its full local checks passed, including **428 pytest passed, 1 skipped**. The original local main checkout has been fast-forwarded through this merge.
+
+## Live Atlas publication
+
+The sole-writer [load Action](https://github.com/fradicus/Shellhacks-2026/actions/runs/36287012823) succeeded on 2026-09-27. Its log reports 26 national sources, 1,286 national projects and active dataset `8c9d90d85b6a94ea3e2c014a282623ef751a811a` at 01:56:20 UTC. A redundant queued manual dispatch was cancelled before execution; no local database writer was used.
+
+At **2026-09-27 01:57:22 UTC**, read-only checks through the actual Atlas-backed app at `http://localhost:3000` verified:
+
+- All 345 published location evidence/review records exactly match the approved release.
+- Every published center equals its approved site or endpoint mean; original project IDs, statuses and other facts remain unchanged.
+- ISO-NE: **1,024 records, 345 located, 679 unlocated**. National: **1,286 records, 414 located**; the pre-existing 69 locations are not newly verified by this release.
+- All six state API/map-record counts match the table above, under the same dataset ID.
+- JSON export retains the complete source and review evidence, including unknown precision/uncertainty.
+
+See `new-england-live-api-receipt.json` for the exact timestamp, counts, active dataset and export hash. `new-england-location-coverage.json` reconciles all 28 primary-owner labels, states, lifecycle cohorts and shared positions. These checks establish the real Atlas dataset through the local application; no remote production-host deployment is claimed. The browser receipts below complete the live check.
+
+## Live browser acceptance
+
+Browser checks completed at **2026-09-27 01:59:43 UTC** against the same real Atlas dataset through localhost:3000. Default filters show 1,286 records / 414 evidenced map records / 872 unknown locations, with the New England cohort visible. All six state filters match their API counts. Selected examples were CT 1054 (partial endpoint), MA 1000 (complete endpoints), ME 1029, NH 1137, RI 1095 and VT 1617 (site points). Clicking the actual Chelsea marker opens the selected project's independently reviewed evidence. Expanded source URLs, source dates, precision, original/transformed geometry and review hashes match the JSON export. The 390px mobile view has client and scroll widths of 380px, with no horizontal overflow.
+
+- [Default map](evidence/new-england-default-desktop.jpg)
+- [Selected Chelsea marker](evidence/chelsea-map-selected.jpg)
+- [Expanded source/review evidence](evidence/chelsea-evidence-desktop.jpg)
+- [Mobile evidence](evidence/chelsea-evidence-mobile.jpg)
+
+`new-england-live-browser-receipt.json` retains the six-state browser observations. This completes the bounded Atlas-to-`/explore` delivery. `/time` remains pending with its separate owner in issue #139; broader geographic and history acceptance remains incomplete.
+
+Final audit-checkpoint checks: ruff passed; **428 pytest passed, 1 skipped**; web lint, typecheck and fixture production build passed; spec lint passed for 31 features. Ownership and hosted CI are recorded in PR #155. Only F38 reports and its own spec status are changed in that checkpoint; no release facts or approvals were changed after publication.
