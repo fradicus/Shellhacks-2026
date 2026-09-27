@@ -1,13 +1,29 @@
 # Deployment verification
 
-No production verification has been run. The Vercel project URL, MongoDB Atlas bindings and qualifying custom
-domain were not configured or supplied for this release, so HTTPS, deployed-revision, Atlas-read and browser-bundle
-checks remain pending in [issue #10](https://github.com/fradicus/Shellhacks-2026/issues/10). This is deliberately not
-a passing production row.
+The Vercel origin is live, but it reports a different, unmapped revision from the reviewed `main`. The passing row below proves
+the listed deployed commit and infrastructure checks only. It does not prove that later fixes, every application
+workflow, Google integrations, or contract upload are live. No qualifying custom domain has been verified.
 
 | Recorded | Target | Revision | Health / Atlas | HTTPS + `/` | JS secret scan | Result |
 |---|---|---|---|---|---|---|
+| 2026-09-27T12:00:13Z | `https://shellhacks2026-mu.vercel.app` | `4b30678aadee6f96c25a19d17d94179f23256b36` | 200; database up; dataset `9548c28191b2ac4eb703ec9283c31e364a911bce` | HTTPS; home 200 | 8 bundles; no configured markers found | **PASSED** |
+| 2026-09-27T11:59:39Z | `https://shellhacks2026-mu.vercel.app` | target `1fbcb5d97369a651d8853753aca4caeda1b4638f` | health reported deployed commit `4b30678aadee6f96c25a19d17d94179f23256b36` | live origin; revision not accepted | not release-accepting | **FAILED** — deployed commit mismatch |
 | 2026-09-26 | Vercel URL and custom domain | not available | not run | not run | not run | **DEFERRED** — no live targets |
+
+The 2026-09-26 row is retained as dated context from before the Vercel origin was supplied. The authenticated
+Vercel account available during the 2026-09-27 review could not manage this exact host, and its alias lookup returned
+404. The deployment owner must redeploy the intended `main` revision after its exact-revision required CI passes,
+in the existing Vercel project with `web` as the
+project root, then rerun the verifier against the full deployed commit. Infrastructure is alive; current fixes are
+not live until that check passes.
+
+Passing command for the currently deployed revision:
+
+```bash
+node release/verify-deployment.mjs \
+  --commit 4b30678aadee6f96c25a19d17d94179f23256b36 \
+  --url https://shellhacks2026-mu.vercel.app
+```
 
 ## Local implementation evidence
 
