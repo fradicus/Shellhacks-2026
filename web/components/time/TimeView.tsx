@@ -3,11 +3,10 @@
 import { bearing } from "./sceneCamera";
 import { SceneControls } from "./SceneControls";
 import { ScopeBar, type ScopeOption } from "./ScopeBar";
-import { MAP_PALETTE, neighborColors, type StateFeature } from "./stateFill";
 import { formatScope, haversineMi, inScope, parseScope, planName, planOf, RULE_MI, scopeName, statesOf, type Scope, type ScopeGeography } from "./scope";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { ExpressionSpecification, Map as MlMap } from "maplibre-gl";
+import type { Map as MlMap } from "maplibre-gl";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { NationalProjectSummary, NationalExplorerPayload } from "@/lib/national/types";
@@ -51,14 +50,9 @@ const owner = (p: TimeProject) =>
 /** National points by how they were located; tentative ones also draw as hollow beads (C25). */
 const TIER_COLOR: Record<NationalTier, string> = { confirmed: "#88dbc1", official: "#8fb4ff", tentative: "#f0c36a" };
 const TIER_LABEL: Record<NationalTier, string> = {
-  confirmed: "Confirmed location", official: "Owner-published location", tentative: "Tentative location",
+  confirmed: "National, confirmed location", official: "National, owner-published location",
+  tentative: "National, tentative location (not independently reviewed)",
 };
-const TIER_HELP: Record<NationalTier, string> = {
-  confirmed: "Located and independently reviewed", official: "Located from the owner's own publication",
-  tentative: "Located, not independently reviewed",
-};
-/** Density ramp: faint to teal, on a square-root scale so Texas doesn't wash out every other state. */
-const RAMP = ["#1a2a3d", "#2fa3b3"] as const;
 const projectColor = (p: TimeProject) => p.national ? TIER_COLOR[p.national.tier] : COLOR[p.utility];
 const VIEWS: { v: View; label: string; help: string }[] = [
   { v: "future", label: "Future", help: "Both dates exact and on or after the analysis date" },
@@ -132,8 +126,6 @@ export function TimeView({
   const [view, setView] = useState<View>(() => VIEWS.find(({ v }) => pairs.some((p) => p.view === v))?.v ?? "future");
   const [scope, setScope] = useState<Scope | null>(null);
   const [pinArmed, setPinArmed] = useState(false);
-  // The states under the points: a map's colors, or drawn projects per state.
-  const [fill, setFill] = useState<"map" | "density">("map");
   const [pairId, setPairId] = useState<string | null>(null);
   const [projectKey, setProjectKey] = useState<string | null>(null);
   const [hover, setHover] = useState<string | null>(null);
@@ -174,12 +166,6 @@ export function TimeView({
   const scoped = useMemo(() => (scope ? located.filter((p) => inScope(p, scope, regionOf)) : located), [scope, located, regionOf]);
   const scopeKeys = useMemo(() => (scope ? new Set(scoped.map((p) => p.key)) : null), [scope, scoped]);
   const scopeLabel = scope ? scopeName(scope, geography) : null;
-  const stateCounts = useMemo(() => {
-    const n = new Map<string, number>();
-    for (const p of located) for (const st of new Set(statesOf(p))) n.set(st, (n.get(st) ?? 0) + 1);
-    return n;
-  }, [located]);
-  const stateMax = Math.max(1, ...stateCounts.values());
   const scopeOptions = useMemo(() => {
     const tally = (keyOf: (p: TimeProject) => string[]) => {
       const n = new Map<string, number>();
@@ -189,7 +175,7 @@ export function TimeView({
     const byCount = (a: ScopeOption, b: ScopeOption) => b.count - a.count || a.label.localeCompare(b.label);
     const regions = tally((p) => statesOf(p).map((st) => regionOf.get(st) ?? "").filter(Boolean));
     const plans = tally((p) => { const pl = planOf(p); return pl ? [pl] : []; });
-    const states = stateCounts;
+    const states = tally(statesOf);
     // Places read as a map legend: the country, its regions by size, then states A–Z (people look a state up by name).
     return [
       { tab: "places", group: null, scope: null, label: "United States", count: located.length },
@@ -201,7 +187,7 @@ export function TimeView({
       ...[...plans].map(([code, count]): ScopeOption =>
         ({ tab: "grid", group: "Grid plans", scope: { kind: "plan", code }, label: planName(code), count })).sort(byCount),
     ] satisfies ScopeOption[];
-  }, [located, geography, regionOf, stateCounts]);
+  }, [located, geography, regionOf]);
   const unplanned = useMemo(() => located.filter((p) => !planOf(p)).length, [located]);
   // The planning window: the ground is 1 Jan of the year before the analysis date (or the earliest drawn year, if
   // later), so one old filing can't stretch the axis. Earlier dates keep their facts and lie flat on the ground.
@@ -234,16 +220,6 @@ export function TimeView({
         outline: p.national?.tier === "tentative" })),
     [located, drawn],
   );
-  // The legend names only what is drawn: location tiers and legacy owners with at least one located project.
-  const drawnKinds = useMemo(() => {
-    const tiers: Record<NationalTier, number> = { confirmed: 0, official: 0, tentative: 0 };
-    const owners = new Map<Utility, number>();
-    for (const p of located) {
-      if (p.national) tiers[p.national.tier]++;
-      else owners.set(p.utility, (owners.get(p.utility) ?? 0) + 1);
-    }
-    return { tiers, owners };
-  }, [located]);
   const tierCounts = useMemo(() => {
     const counts: Record<NationalTier, number> = { confirmed: 0, official: 0, tentative: 0 };
     for (const p of projects) if (p.national) counts[p.national.tier]++;
@@ -300,7 +276,7 @@ export function TimeView({
     let map: MlMap | null = null;
     (async () => {
       try {
-        const [ml, { createTimeLayer }, usStates] = await Promise.all([import("maplibre-gl"), import("./timeLayer"), import("./usStates.json")]);
+        const [ml, { createTimeLayer }] = await Promise.all([import("maplibre-gl"), import("./timeLayer")]);
         if (cancelled || !container.current) return;
         ml.setWorkerUrl(`https://cdn.jsdelivr.net/npm/maplibre-gl@${ml.getVersion()}/dist/maplibre-gl-worker.mjs`);
         map = new ml.Map({
@@ -330,20 +306,6 @@ export function TimeView({
               else map.setPaintProperty(l.id, "text-opacity", 0.55);
             }
           }
-          // Census state shapes under the labels and the time layer; colors and counts arrive by feature state.
-          const features = (usStates.default as unknown as { features: StateFeature[] }).features;
-          const colors = neighborColors(features);
-          map.addSource("states", {
-            type: "geojson",
-            promoteId: "GEOID",
-            data: {
-              type: "FeatureCollection",
-              features: features.map((f) => ({ type: "Feature", geometry: f.geometry, properties: { ...f.properties, color: MAP_PALETTE[colors.get(f.properties.GEOID)!] } })),
-            },
-          });
-          const firstLabel = map.getStyle().layers?.find((l) => l.type === "symbol")?.id;
-          map.addLayer({ id: "states-fill", type: "fill", source: "states", paint: { "fill-opacity-transition": { duration: 400 }, "fill-color-transition": { duration: 400 } } }, firstLabel);
-          map.addLayer({ id: "states-line", type: "line", source: "states", paint: { "line-color": "#c8d6f0", "line-width": 0.6, "line-opacity": 0.22 } }, firstLabel);
           const layer = createTimeLayer(ml, {
             onSweep: (st: SweepState) => {
               const el = sweepEl.current;
@@ -489,24 +451,6 @@ export function TimeView({
       ruler: rulerAt,
     });
   }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt]);
-
-  // States: a map's colors or the density ramp. A region or state scope keeps its own states lit and dims the rest.
-  const litStates = useMemo(() => {
-    if (scope?.kind === "state") return new Set([scope.code]);
-    if (scope?.kind === "region") return new Set(geography.states.filter((st) => st.region === scope.code).map((st) => st.fips));
-    return null;
-  }, [scope, geography]);
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!ready || !map?.getLayer("states-fill")) return;
-    for (const { fips } of geography.states)
-      map.setFeatureState({ source: "states", id: fips }, { n: stateCounts.get(fips) ?? 0, out: !!litStates && !litStates.has(fips) });
-    const n: ExpressionSpecification = ["coalesce", ["feature-state", "n"], 0];
-    map.setPaintProperty("states-fill", "fill-color",
-      fill === "map" ? ["get", "color"] : ["interpolate", ["linear"], ["sqrt", n], 0, RAMP[0], Math.sqrt(stateMax), RAMP[1]]);
-    map.setPaintProperty("states-fill", "fill-opacity",
-      ["case", ["boolean", ["feature-state", "out"], false], 0.07, fill === "map" ? 0.42 : ["case", [">", n, 0], 0.62, 0.18]]);
-  }, [ready, fill, stateCounts, stateMax, litStates, geography]);
 
   // Pillar height follows the zoom (yearPxAt); a selected pair's own top sets the cap so its day gap fills the room.
   useEffect(() => {
@@ -1256,48 +1200,40 @@ export function TimeView({
       ) : null}
 
       <section className={s.dock} aria-label="Legend and controls">
-        <div className={s.legend}>
-          <ul className={s.keys} aria-label="Project colors">
-            {(["tentative", "official", "confirmed"] as const).filter((t) => drawnKinds.tiers[t]).map((t) => (
-              <li key={t} title={TIER_HELP[t]}>
-                <i data-ring={t === "tentative" ? "1" : undefined} style={{ ["--c" as string]: TIER_COLOR[t] }} />
-                {TIER_LABEL[t]}
-                <b>{drawnKinds.tiers[t].toLocaleString("en-US")}</b>
-              </li>
-            ))}
-            {[...drawnKinds.owners].map(([u, n]) => (
-              <li key={u}>
-                <i style={{ ["--c" as string]: COLOR[u] }} />
-                {UTILITY[u]}
-                <b>{n.toLocaleString("en-US")}</b>
-              </li>
-            ))}
-          </ul>
-          <ul className={s.shapes} aria-label="Shapes">
-            <li><i className={s.gBead} /> Exact date</li>
-            {hasRanges ? <li title="Only a month or year filed: the whole span, no day picked"><i className={s.gColumn} /> Month or year only</li> : null}
-            <li title="The today sheet, on a 10-mile grid"><i className={s.gSheet} /> Today, {fmtDate(analysisDate)}</li>
-            {dimension ? <li><i className={s.gDim} /> Day gap of the pair</li> : null}
-            {scope ? <li title="Grey ground trace, no date shown"><i className={s.gTrace} /> Outside the scope</li> : null}
-          </ul>
-          <div className={s.stateKey}>
-            <span>States</span>
-            <div className={s.seg} role="group" aria-label="State colors">
-              <button type="button" aria-pressed={fill === "map"} onClick={() => setFill("map")}>Map</button>
-              <button type="button" aria-pressed={fill === "density"} onClick={() => setFill("density")}>Density</button>
-            </div>
-          </div>
-          {fill === "map" ? (
-            <p className={s.stateNote}>Colors only tell neighboring states apart.</p>
-          ) : (
-            <div className={s.ramp} title="Square-root scale; a project filed in two states counts in both">
-              <i style={{ background: `linear-gradient(90deg, ${RAMP[0]}, ${RAMP[1]})` }} />
-              <span>0</span>
-              <span>Drawn projects per state</span>
-              <span>{stateMax.toLocaleString("en-US")}</span>
-            </div>
-          )}
-        </div>
+        <ul className={s.legend}>
+          <li>
+            <i className={s.gBead} /> Exact in-service date
+          </li>
+          {hasRanges ? (
+            <li>
+              <i className={s.gColumn} /> Only a month or year filed: the whole span, no day picked
+            </li>
+          ) : null}
+          <li>
+            <i className={s.gSheet} /> Today, {fmtDate(analysisDate)} · 10-mile grid
+          </li>
+          <li>
+            <i className={s.gDim} /> Day gap of the selected pair
+          </li>
+          {scope ? (
+            <li>
+              <i className={s.gTrace} /> Outside the scope: grey ground trace, no date shown
+            </li>
+          ) : null}
+          <li className={s.utils}>
+            {(["confirmed", "official", "tentative"] as const).filter((t) => tierCounts[t] > 0).map((t) =>
+              <span key={t}><i style={{ background: TIER_COLOR[t] }} /> {TIER_LABEL[t]}</span>)}
+            <span>
+              <i style={{ background: COLOR.DESC }} /> Dominion SC
+            </span>
+            <span>
+              <i style={{ background: COLOR.GPC }} /> Georgia Power
+            </span>
+            <span>
+              <i style={{ background: COLOR.unknown }} /> Owner not mapped
+            </span>
+          </li>
+        </ul>
         <SceneControls styles={s} flat={flat} onFlat={toggleFlat} onOverview={overview} />
         <label className={s.scrub}>
           <span>
