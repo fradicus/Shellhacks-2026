@@ -23099,5 +23099,2921 @@
     "row": 31,
     "sheet": "MTEP25 Data Pull - App. B",
     "source_id": "miso-mtep25-appendix-a-midwest"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:72006",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Bismarck 115 kV Terminal Upgrades",
+    "row": 23,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "72006"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:72033",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Wild Plains 345kV Switching Station GEN-2015-052 Interconnection (NU)",
+    "row": 34,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "72033"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:112339",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Ft. Thompson to Oahe 230kV GEN-2016-094 Interconnection (TOIF) (WAPA)",
+    "row": 53,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "112339"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:112340",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Ft. Thompson to Oahe 230kV GEN-2016-094 Interconnection (Non-Shared NU) (WAPA)",
+    "row": 54,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "112340"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:122668",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "GEN-2016-130 Interconnection (TOIF) (BEPC)",
+    "row": 93,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "122668"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:122669",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Leland Olds 345 kV Substation Reconfiguration (DISIS-2016-002-2)",
+    "row": 94,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "122669"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:122673",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Viola 345kV GEN-2016-153 Interconnection (Non-Shared NU) (WERE)",
+    "row": 95,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "122673"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:122792",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Viola 345/138 kV Transformer CKT 2 (DISIS-2016-002-2)",
+    "row": 114,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "122792"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:133065",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Viola 345 kV Substation GEN-2017-086 Interconnection (Non-Shared NU) (EKC)",
+    "row": 173,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "133065"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:143125",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Renfrow 345 kV Substation",
+    "row": 182,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143125"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:143157",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Bismarck 12.47 kV Reactors",
+    "row": 185,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143157"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:143181",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Aberdeen Jct - Richmond 115 kV Ckt 1 (NWE)",
+    "row": 188,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143181"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Neset to Tioga 230kV Rebuild (DISIS-2017-001) (BEPC)",
+    "reason": "dropped after 2025q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 191,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143236"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:143373",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Swissvale 345kV GEN-2017-128 Interconnection (TOIF) (WERE)",
+    "row": 212,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143373"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:143613",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sully Buttes - Whitlock 230 kV Line Clearance Increase",
+    "row": 295,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143613"
+  },
+  {
+    "_id": "spp-qpt-2025q4-midwest:143614",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Whitlock - Glenham 230 kV Clearance Increase",
+    "row": 296,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "143614"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Existing 230 kV substation Ckt 1 Terminal Upgrade",
+    "reason": "dropped after 2025q4 while “NTC-C Project Estimate Window”; its outcome is not in any edition (C43)",
+    "row": 692,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "170530"
+  },
+  {
+    "disposition": "excluded",
+    "name": "New Underwood 2 to an existing substation 230 kV Ckt 1 New Line",
+    "reason": "dropped after 2025q4 while “NTC-C Project Estimate Window”; its outcome is not in any edition (C43)",
+    "row": 693,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2025q4-midwest",
+    "uid": "170531"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Russell 115 kV Capacitor Bank",
+    "reason": "dropped after 2024q4 while “Withdrawn”; its outcome is not in any edition (C43)",
+    "row": 57,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "122803"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:132893",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Aberdeen Junction 115 kV Terminal Upgrades",
+    "row": 71,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "132893"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:143664",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Shawnee Mission 161 kV",
+    "row": 97,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "143664"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:143665",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Shawnee Mission 161 kV Breaker",
+    "row": 98,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "143665"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:143980",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hinton 69 kV Terminal Equipment",
+    "row": 106,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "143980"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eagle - J1 Center 69 kV Ckt 1 rebuild",
+    "reason": "dropped after 2024q4 while “Delay - Mitigation Window”; its outcome is not in any edition (C43)",
+    "row": 141,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "156320"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Butler 138 kV Terminal Upgrade",
+    "reason": "dropped after 2024q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 188,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157405"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Midian 138 kV Ckt 1 Terminal Upgrade",
+    "reason": "dropped after 2024q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 189,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157406"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huron West Park 115 kV Terminal Upgrade",
+    "reason": "dropped after 2024q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 205,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157721"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huron B Tap 115 kV Terminal Upgrade",
+    "reason": "dropped after 2024q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 206,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157724"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huron - Huron West Park 115 kV Ckt 1 Rebuild (NWE)",
+    "reason": "dropped after 2024q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 212,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157891"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Huron - Huron 'B' Tap 115 kV Ckt 1 Rebuild (NWE)",
+    "reason": "dropped after 2024q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 213,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157892"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Yankton Junction 115 kV Ckt 1 Terminal Upgrade",
+    "reason": "dropped after 2024q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 217,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "157949"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S3456 to S3458 345 kV Ckt 1 Terminal Upgrades",
+    "reason": "dropped after 2024q4 while “Delay - Mitigation”; its outcome is not in any edition (C43)",
+    "row": 275,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "143178"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:143179",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S3455 to S3740 345 kV CKT1 Rebuild",
+    "row": 276,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "143179"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Post Rock 230 kV Substation GEN-2016-160 Interconnection (TOIF) (MIDW)",
+    "reason": "dropped after 2024q4 while “Cancelled”; its outcome is not in any edition (C43)",
+    "row": 326,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "112349"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Marmaton - Litchfield 161 kV GEN-2017-005 Interconnection (Non-Shared NU) (EKC)",
+    "reason": "dropped after 2024q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 350,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "132939"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:133077",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Underwood 115 kV Substation GEN-2017-097 Interconnection (Non-Shared NU) (WAPA)",
+    "row": 395,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "133077"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:112456",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neosho - Riverton 161kV Rebuild (EDE)",
+    "row": 495,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "112456"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:156844",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1254 - S1281 161 kV Ckt 1 Reconductor",
+    "row": 496,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "156844"
+  },
+  {
+    "_id": "spp-qpt-2024q4-midwest:158448",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Tap S1345 - S1236 161 kV",
+    "row": 500,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2024q4-midwest",
+    "uid": "158448"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:51338",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Burns 345kV (GEN-2014-001 NU)",
+    "row": 24,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "51338"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:51360",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Tap Emporia Energy Center - Wichita 345kV (GEN-2014-001 TOIF)",
+    "row": 25,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "51360"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:71954",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "City of Winfield - Rainbow 69 kV Ckt 1",
+    "row": 39,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "71954"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:71955",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Oak - Rainbow 69 kV Ckt 1",
+    "row": 40,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "71955"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112366",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Canaday 115 kV Breakers",
+    "row": 106,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112366"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112367",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hastings 115 kV Breakers",
+    "row": 107,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112367"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112368",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Moore 13.8 kV Breaker",
+    "row": 108,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112368"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112370",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Leeds 161 kV Breakers",
+    "row": 109,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112370"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112372",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Southtown 161 kV Breakers",
+    "row": 110,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112372"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112381",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Baileyville - South Seneca 115kV Ckt 1",
+    "row": 115,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112381"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112383",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Multi-Marshall County - Baileyville - South Seneca 115 kV",
+    "row": 116,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112383"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Arnold - Ransom 115kV Terminal Upgrades",
+    "reason": "dropped after 2023q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 127,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112451"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Pile - Scott City 115kV Terminal Upgrades",
+    "reason": "dropped after 2023q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 128,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112452"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Scott City - Setab 115kV Terminal Upgrades",
+    "reason": "dropped after 2023q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 129,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112453"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:112457",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neosho - Riverton 161kV Rebuild (EKC)",
+    "row": 131,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "112457"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122570",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neset - Northshore 230 kV Ckt 1",
+    "row": 147,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122570"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122571",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Northshore - New Town 115 kV Ckt 1",
+    "row": 148,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122571"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122572",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Northshore 230/115 kV Transformer",
+    "row": 149,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122572"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122575",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Northshore 230 kV Substation",
+    "row": 150,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122575"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122599",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Aberdeen A-Tap Breaker 115 kV",
+    "row": 154,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122599"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Swissvale 345 kV Substation Upgrades",
+    "reason": "dropped after 2023q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 158,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122622"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122623",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Swissvale 345 kV Terminal Upgrades",
+    "row": 159,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122623"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122661",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Riverdale 230/115 kV Transformer ckt 2",
+    "row": 170,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122661"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122664",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Pauline - Hastings 115 kV Ckt 1 & Ckt 2 Reconductor",
+    "row": 172,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122664"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122735",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sully Buttes 230 kV Terminal Upgrades",
+    "row": 192,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122735"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122806",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Leeds 161 kV Breaker",
+    "row": 205,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122806"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122807",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Shawnee Mission 161 kV Breaker",
+    "row": 206,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122807"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:122808",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Southtown 161 kV Breaker",
+    "row": 207,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "122808"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Swissvale 345kV Interconnection Expansion (DISIS-2017-002)",
+    "reason": "dropped after 2023q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 247,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "143370"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:143587",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Platte City 161 kV Terminal Upgrade",
+    "row": 248,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "143587"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:143663",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Jarbalo Junction 115 kV Breaker",
+    "row": 260,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "143663"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:143666",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Craig 161 kV Breaker #2",
+    "row": 263,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "143666"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:156359",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Dadeville 161 kV Breaker",
+    "row": 316,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "156359"
+  },
+  {
+    "_id": "spp-qpt-2023q4-midwest:156360",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Joplin 69 kV Breaker",
+    "row": 317,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "156360"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Ozark Dam 161 kV Breaker",
+    "reason": "dropped after 2023q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 318,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2023q4-midwest",
+    "uid": "156361"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Cass Co. - S.W. Omaha (aka S3454) 345 kV Ckt1",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 22,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50492"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Maryville 345/161 kV Transformer Ckt1",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 28,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50771"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Nashua 345/161 kV Transformer Upgrade Ckt11",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 29,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50772"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Keystone - Red Willow 345 kV Ckt1",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 30,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50773"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Holcomb 345/115 kV Transformer Ckt2",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 32,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50775"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Neosho - Wolf Creek 345 kV Ckt1",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 33,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50776"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Clinton - Truman 161 kV Ckt1 Reconductor",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 34,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50777"
+  },
+  {
+    "disposition": "excluded",
+    "name": "North Warsaw - Truman 161 kV Ckt1 Reconductor",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 35,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50778"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Auburn 345/115 kV Transformer Ckt2",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 36,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50779"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Auburn - Swissvale 345 kV Ckt1 Voltage Conversion",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 37,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50780"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Auburn - Jeffrey EC 345 kV Ckt1 Voltage Conversion",
+    "reason": "dropped after 2022q4 while “Identified”; its outcome is not in any edition (C43)",
+    "row": 38,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "50781"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:112369",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Craig 161 kV Breaker",
+    "row": 125,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "112369"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:122657",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub - Donald Feldman 69kV Switching Station",
+    "row": 188,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "122657"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:122676",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Benton 345kV GEN-2016-162 and 163 Interconnection (Non-Shared NU) (WERE)",
+    "row": 198,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "122676"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Whitlock 230 kV Terminal Upgrades",
+    "reason": "dropped after 2022q4 while “NTC - Commitment Window”; its outcome is not in any edition (C43)",
+    "row": 211,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "122733"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:122812",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Circleville - Goff 115 kV Ckt 1 Rebuild",
+    "row": 230,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "122812"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:122814",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Goff - Kelly 115 kV Ckt 1 Rebuild",
+    "row": 231,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "122814"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:143150",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Benton 345kV GEN-2016-162 and 163 Interconnection (TOIF) (WERE)",
+    "row": 255,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143150"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Agate 115 kV Reactor",
+    "reason": "dropped after 2022q4 while “Delay - Mitigation”; its outcome is not in any edition (C43)",
+    "row": 259,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143162"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S1260 - S1362 161 kV Ckt 1 Rebuild",
+    "reason": "dropped after 2022q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 265,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143177"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:143183",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Greenwood 161 kV Terminal Upgrades",
+    "row": 270,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143183"
+  },
+  {
+    "_id": "spp-qpt-2022q4-midwest:143184",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Pleasant Hill 161kV and Lake Winnebago 161 kV Terminal Upgrades",
+    "row": 271,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143184"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Joplin West 7th - Stateline 161 kV Rebuild",
+    "reason": "dropped after 2022q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 290,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143668"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Joplin West 7th 161 kV Terminal Upgrades",
+    "reason": "dropped after 2022q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 291,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143669"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stateline 161 kV Terminal Upgrades",
+    "reason": "dropped after 2022q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 292,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2022q4-midwest",
+    "uid": "143670"
+  },
+  {
+    "disposition": "excluded",
+    "name": "CLARKS 115KV",
+    "reason": "dropped after 2021q4 while “Delay - Mitigation”; its outcome is not in any edition (C43)",
+    "row": 17,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "50208"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:50698",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sumner County - Viola 138 kV Ckt 1",
+    "row": 26,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "50698"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Friend 115kV Substation - GEN-2014-039 Addition (TOIF)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 51,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "51467"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Friend 115kV Substation - GEN-2014-039 Addition",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 52,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "51468"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Rosemont 115kV Substation GEN-2008-123N Addition (TOIF)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 73,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71940"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:71958",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Creswell (CRSW TX-1) 138/69/13.2 kV Transformer Ckt 1",
+    "row": 79,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71958"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:71959",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Creswell (CRSW TX-2) 138/69/13.2 kV Transformer Ckt 2",
+    "row": 80,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71959"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Belvidere – Fairbury 115kV circuit #1",
+    "reason": "dropped after 2021q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 88,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71982"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Beatrice – Harbine 115kV circuit #1",
+    "reason": "dropped after 2021q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 89,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71983"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tobias 345kV Substation GEN-2015-088 Addition (TOIF)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 90,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71984"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tobias 345kV Substation GEN-2015-088 Addition (NU)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 91,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "71985"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:72004",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1255 - S1260 161 kV Ckt 1 New Line",
+    "row": 92,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "72004"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:72076",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Lawrence Hill 230/115kV Transformer",
+    "row": 117,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "72076"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Belden 115 kV Substation GEN-2015-076 Interconnection (TOIF)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 128,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "82132"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Belden 115 kV Substation GEN-2015-076 Interconnection (NU)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 129,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "82133"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:102159",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S3761 345 kV Substation",
+    "row": 138,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "102159"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:102160",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S3761 - S3455 345 kV New Line",
+    "row": 139,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "102160"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:102161",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1361 161 kV Substation and 345/161 kV Transformer",
+    "row": 140,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "102161"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:102162",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1260 161/69 kV Transformer (161 kV)",
+    "row": 141,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "102162"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:102165",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1259 - S1260 161 kV Rebuild",
+    "row": 143,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "102165"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:102166",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1255 161 kV Terminal Upgrades (new breakers)",
+    "row": 144,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "102166"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:112357",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1260 161/69 kV Transformer (69 kV)",
+    "row": 160,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "112357"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Aberdeen Jct - Richmond 115 kV Ckt 1 (EREC)",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 193,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "112500"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Richmond 115/69 kV Transformer",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 198,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122511"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Richmond 69 kV Capacitor Bank",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 199,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122512"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:122576",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Aberdeen City - Aberdeen Industrial Park 115 kV Ckt 1 New Line",
+    "row": 213,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122576"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Marietta 69 kV",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 215,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122597"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Fort Randall - Spencer 115kV Ckt 1 Re-conductor",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 222,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122631"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Martin - Vetal Tap 115 kV Ckt 1 Rebuild",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 223,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122632"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Eagle Creek 27 MVAR Capacitor Bank 115 kV",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 224,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122633"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:122650",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Caney River - Neosho 345 kV Terminal Upgrades",
+    "row": 236,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122650"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:122670",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Tande 345kV GEN-2016-151 Interconnection (TOIF) (BEPC)",
+    "row": 245,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122670"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:122671",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Tande 345kV GEN-2016-151 Interconnection (Non-Shared NU) (BEPC)",
+    "row": 246,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122671"
+  },
+  {
+    "_id": "spp-qpt-2021q4-midwest:122726",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Meadowlark - Tower 33 115 kV Ckt 1 Rebuild",
+    "row": 260,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122726"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Stilwell 161 kV Breaker",
+    "reason": "dropped after 2021q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 274,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122805"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lake Road 161 kV Breakers",
+    "reason": "dropped after 2021q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 278,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122809"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Craig 161 kV Breakers",
+    "reason": "dropped after 2021q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 279,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "122810"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Richmond 69 kV Substation",
+    "reason": "dropped after 2021q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 302,
+    "sheet": "Q4 2021 QPT Appendix 1",
+    "source_id": "spp-qpt-2021q4-midwest",
+    "uid": "132894"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:11238",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sibley - Mullin Creek 345 kV",
+    "row": 31,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "11238"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:11239",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Nebraska City - Mullin Creek 345 kV (GMO)",
+    "row": 32,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "11239"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:50210",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "ONEILL 115KV",
+    "row": 49,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "50210"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:50441",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neligh 345/115 kV Substation",
+    "row": 53,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "50441"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:50609",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Bobcat Canyon - Scottsbluff 115 kV Ckt 1",
+    "row": 76,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "50609"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:50740",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Elk Junction - Sedan 69 kV Ckt 1 Rebuild",
+    "row": 90,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "50740"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:50757",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Broken Bow Wind - Ord 115 kV Ckt 1",
+    "row": 92,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "50757"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:50760",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "North Loup - Ord 115 kV Ckt 1",
+    "row": 93,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "50760"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51200",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Bassett 115 kV Substation",
+    "row": 153,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51200"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51235",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Stevens Co. 345 kV Substation",
+    "row": 155,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51235"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51276",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Ainsworth - Ainsworth Wind 115 kV Ckt 1 Rebuild",
+    "row": 158,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51276"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51277",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Bassett 115 kV Cap Bank",
+    "row": 159,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51277"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lower Brule - Witten 230 kV Ckt 1",
+    "reason": "dropped after 2020q4 while “Delay - Mitigation”; its outcome is not in any edition (C43)",
+    "row": 161,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51318"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lower Brule 230 kV Substation",
+    "reason": "dropped after 2020q4 while “Delay - Mitigation”; its outcome is not in any edition (C43)",
+    "row": 162,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51319"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lower Brule - Witten 230 kV Terminal Upgrades",
+    "reason": "dropped after 2020q4 while “Delay - Mitigation”; its outcome is not in any edition (C43)",
+    "row": 163,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51320"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51333",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Lane Scott 115 kV Cap Bank",
+    "row": 164,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51333"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S964 69 kV Cap Bank",
+    "reason": "dropped after 2020q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 196,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51521"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51630",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Northeast - Charlotte - Crosstown 161 kV Reactor",
+    "row": 214,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51630"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:51631",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "DePaul - Girard Jct 69 kV",
+    "row": 215,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51631"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crosstown 161 kV Terminal Upgrades",
+    "reason": "dropped after 2020q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 217,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51757"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Valley 161 kV Terminal Upgrades",
+    "reason": "dropped after 2020q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 218,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51758"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Blue Valley - Crosstown 161kV Ckt1",
+    "reason": "dropped after 2020q4 while “Re-evaluation”; its outcome is not in any edition (C43)",
+    "row": 219,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "51759"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:61856",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Williston 115 kV Terminal Upgrades",
+    "row": 231,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "61856"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:61869",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Nichols – Republic North 69 kV Reconductor",
+    "row": 233,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "61869"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:61870",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Republic Hines Street - Republic North 69 kV Reconductor",
+    "row": 234,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "61870"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:61871",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Republic East - Republic Hines Street 69 kV Reconductor",
+    "row": 235,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "61871"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:61894",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "East Ruthville - SW Minot 115 kV New Line",
+    "row": 236,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "61894"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:61895",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "East Ruthville - SW Minot 115 kV line Terminal Upgrades",
+    "row": 237,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "61895"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:71926",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Roberts County 115 kV Substation",
+    "row": 238,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "71926"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:71927",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "XFR - Roberts County 115/69 kV Transformer",
+    "row": 239,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "71927"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:71961",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "L-10 Southern 69 kV Terminal Upgrades",
+    "row": 256,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "71961"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:71962",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "J16 69 kV Substation",
+    "row": 257,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "71962"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:71976",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Prestage Family 69 kV Cap Bank",
+    "row": 264,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "71976"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:72005",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "North Bismarck 115 kV Terminal Upgrades",
+    "row": 270,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "72005"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:72037",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Brookline 345kV Reactor",
+    "row": 294,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "72037"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:72038",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Brookline 345kV Substation Expansion",
+    "row": 295,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "72038"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:82125",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Nixa Downtown - Nixa Espy 69 kV Ckt1",
+    "row": 308,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "82125"
+  },
+  {
+    "disposition": "excluded",
+    "name": "GEN-2016-115 Interconnection Costs (NU) (OPPD)",
+    "reason": "dropped after 2020q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 340,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "112180"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Baileyville - Smittyville 115kV Ckt 1",
+    "reason": "dropped after 2020q4 while “Delay - Mitigation Window”; its outcome is not in any edition (C43)",
+    "row": 368,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "112382"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:112428",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Lawrence Energy Center - Midland 115 kV Terminal Upgrades",
+    "row": 377,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "112428"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Hobbs Interchange to Millen Rebuild 115 kV Ckt1",
+    "reason": "dropped after 2020q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 390,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "112510"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Johnson Draw 115 kV Capacitor Bank",
+    "reason": "dropped after 2020q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 391,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "122510"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Anadarko - Gracemont 138kV Ckt 1 Rebuild",
+    "reason": "dropped after 2020q4 while “On Schedule < 4”; its outcome is not in any edition (C43)",
+    "row": 397,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "122577"
+  },
+  {
+    "_id": "spp-qpt-2020q4-midwest:122594",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Wentworth 69 kV Capacitor Bank",
+    "row": 399,
+    "sheet": "QPT Appendix 1",
+    "source_id": "spp-qpt-2020q4-midwest",
+    "uid": "122594"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:11142",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub 917 - Sub 918 69 kV Ckt 1",
+    "row": 40,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "11142"
+  },
+  {
+    "disposition": "excluded",
+    "name": "S3459 345/161 kV Transformer Ckt 2",
+    "reason": "dropped after 2019q4 while “ON SCHEDULE > 4”; its outcome is not in any edition (C43)",
+    "row": 89,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50493"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50532",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Geary County 345/115 kV Substation",
+    "row": 96,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50532"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50534",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Chapman Junction - Geary County 115 kV Ckt 1",
+    "row": 98,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50534"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50574",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "6815 Tap South - Sub 6815 T3 69 kV Ckt 1",
+    "row": 110,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50574"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50582",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Viola 345/138 kV Transformer Ckt 1",
+    "row": 113,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50582"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50583",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Clearwater - Viola 138 kV Ckt 1",
+    "row": 114,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50583"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50584",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Gill - Viola 138 kV Ckt 1",
+    "row": 115,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50584"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50605",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Geary County 345 kV",
+    "row": 121,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50605"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50612",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Viola 345 kV Terminal Equipment",
+    "row": 126,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50612"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50733",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Kenmar - Northeast 69 kV Ckt 1 Rebuild",
+    "row": 146,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50733"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50739",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Elk Junction - Montgomery 69 kV Ckt 1 Rebuild",
+    "row": 147,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50739"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50745",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Fremont 161/69 kV Transformer Ckt 1",
+    "row": 149,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50745"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50746",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Fremont - S991 E 69 kV Ckt 1",
+    "row": 150,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50746"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50747",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1226 161kV Ckt 1",
+    "row": 151,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50747"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50748",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S906 - S924 69 kV Ckt 1 Rebuild",
+    "row": 152,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50748"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50749",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S924 - S912 69 kV Ckt 1 Terminal Upgrades",
+    "row": 153,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50749"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50827",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Anthony - Harper 138 kV Ckt 1",
+    "row": 184,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50827"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50828",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Harper - Rago 138 kV Ckt 1",
+    "row": 185,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50828"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50991",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Anthony - Bluff City 138 kV Ckt 1",
+    "row": 226,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50991"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50993",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Bluff City - Caldwell 138 kV Ckt 1",
+    "row": 228,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50993"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50994",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Caldwell - Mayfield 138 kV Ckt 1",
+    "row": 229,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50994"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:50995",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Mayfield - Milan 138 kV Ckt 1",
+    "row": 230,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "50995"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51048",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Midwest Pump Tap 115 kV Substation",
+    "row": 241,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51048"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51049",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Midwest Pump - Midwest Pump Tap 115 kV Ckt 1",
+    "row": 242,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51049"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51133",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub 3459 345/161 kV Transformer",
+    "row": 253,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51133"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51136",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Sub 3459 345 kV Terminal Upgrades",
+    "row": 254,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51136"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51151",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Iatan 345 kV Voltage Conversion",
+    "row": 256,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51151"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51271",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Ellsworth 115 kV Cap Bank",
+    "row": 273,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51271"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51283",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Iatan - Stranger Creek 345 kV Ckt 1 Voltage Conversion (GMO)",
+    "row": 278,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51283"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51284",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Iatan - Stranger Creek 345 kV Ckt 1 Voltage Conversion (WR)",
+    "row": 279,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51284"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51306",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "AVS - Charlie Creek 345 kV Ckt 2",
+    "row": 281,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51306"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51307",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "AVS 345 kV Substation",
+    "row": 282,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51307"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51308",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Charlie Creek 345 kV Substation",
+    "row": 283,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51308"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51310",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Charlie Creek - Judson 345 kV Ckt 1",
+    "row": 284,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51310"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51311",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Judson 345/230 kV Substation",
+    "row": 285,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51311"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51312",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Judson - Williston 230 kV Ckt 1",
+    "row": 286,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51312"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51314",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Judson - Tande 345 kV Ckt 1",
+    "row": 287,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51314"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51315",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Tande 345/230 kV Substation",
+    "row": 288,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51315"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51316",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neset - Tande 230 kV Ckt 1",
+    "row": 289,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51316"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51317",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neset 230 kV Terminal Upgrades",
+    "row": 290,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51317"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51326",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Walkemeyer Tap 345 kV Substation (SEPC)",
+    "row": 294,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51326"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51327",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Stevens Co. 345/115 kV Transformer",
+    "row": 295,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51327"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51332",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Ingalls 115 kV Cap Bank",
+    "row": 296,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51332"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51394",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Viola 138 kV Line Tap (MKEC)",
+    "row": 307,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51394"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51503",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Roundup 345/115 kV Transformer",
+    "row": 343,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51503"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51504",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Patent Gate 345/115 kV Transformer",
+    "row": 344,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51504"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51506",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Plaza 115 kV Substation",
+    "row": 345,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51506"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51507",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Blaisdell - Plaza 115 kV New Line",
+    "row": 346,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51507"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51508",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Plaza 115 kV Cap Bank",
+    "row": 347,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51508"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51509",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Berthold - Southwest Minot 115 kV Ckt 1 Reconductor",
+    "row": 348,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51509"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51543",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Patent Gate 345 kV Substation",
+    "row": 357,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51543"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51544",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Roundup 345 kV Substation",
+    "row": 358,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51544"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51570",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Stegall 345 kV Terminal Upgrades",
+    "row": 369,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51570"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51615",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Tap Centerville-Marmaton 161kV GEN-2015-016 Addition (WERE)",
+    "row": 374,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51615"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51626",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Butler - Altoona 138 kV Terminal Upgrades",
+    "row": 378,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51626"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51628",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neosho 161 kV Terminal Upgrades",
+    "row": 379,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51628"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51632",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Franklin - Frontenac 69 kV",
+    "row": 382,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51632"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51730",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Knoll - Post Rock 230 kV New Line Ckt 2",
+    "row": 383,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51730"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51815",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Knoll Sub 230 kV Terminal",
+    "row": 393,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51815"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:51816",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Post Rock Sub 230 kV Terminal",
+    "row": 394,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "51816"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Roberts County - Sisseton 69 kV New Line",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 422,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "71938"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Brookridge - Overland Park 161kV Terminal Upgrades",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 482,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "72047"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Olathe - Switzer 161kV Ckt1",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 483,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "72049"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakeview 69 kV Substation #3",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 497,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "82123"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Lakeview 69 kV Capacitor Bank",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 498,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "82124"
+  },
+  {
+    "_id": "spp-qpt-2019q4-midwest:82140",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "James River Power Station 161/69 kV Ckt 2 Transformer",
+    "row": 512,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "82140"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McDowell Creek 230/115kV Substation",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 513,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "92151"
+  },
+  {
+    "disposition": "excluded",
+    "name": "McDowell Creek 230/115kV Transformer",
+    "reason": "dropped after 2019q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 514,
+    "sheet": "Appendix 1, 4Q 2019",
+    "source_id": "spp-qpt-2019q4-midwest",
+    "uid": "92152"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:10600",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "East Manhattan - Jeffrey Energy Center 230 kV Ckt 1 Rebuild",
+    "row": 27,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "10600"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:10604",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Arkansas City - Paris 69 kV Terminal Upgrades",
+    "row": 28,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "10604"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:11240",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Nebraska City - Mullin Creek 345 kV (OPPD)",
+    "row": 53,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "11240"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:11311",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "COLBY 115/34.5 kV transformer Ckt 4",
+    "row": 55,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "11311"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50197",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "PAWNEE 115KV",
+    "row": 76,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50197"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50425",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Elm Creek - Summit 345 kV Ckt 1 (ITCGP)",
+    "row": 91,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50425"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50426",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Elm Creek 345/230 kV Transformer",
+    "row": 92,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50426"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50427",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Elm Creek 345 kV Terminal Upgrades",
+    "row": 93,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50427"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50428",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Elm Creek 230 kV Terminal Upgrades",
+    "row": 94,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50428"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50440",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Hoskins - Neligh 345 kV Ckt 1",
+    "row": 95,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50440"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50519",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Pheasant Run - Seguin 115 kV Ckt 1",
+    "row": 113,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50519"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50606",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Hays Plant - South Hays 115 kV Ckt 1 #2",
+    "row": 145,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50606"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50608",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Bobcat Canyon 345/115 kV Transformer Ckt 1",
+    "row": 147,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50608"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50616",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Bobcat Canyon 345 kV Terminal Upgrades",
+    "row": 153,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50616"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50621",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neligh 115 kV Terminal Upgrades",
+    "row": 155,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50621"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50634",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Hays Plant - Vine Street 115kV Ckt 1 Terminal Upgrade",
+    "row": 159,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50634"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50691",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Butler - Weaver 138 kV Terminal Upgrades Ckt 1",
+    "row": 164,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50691"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50696",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neosho 138/69 kV Ckt 1 Transformer",
+    "row": 166,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50696"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50699",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1366 161/69 kV Ckt 1 Transformer",
+    "row": 168,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50699"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:50761",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "S1366 161 kV Ckt 1 Terminal Upgrades",
+    "row": 200,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "50761"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:51209",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Buckner - Spearville 345 kV Ckt 1 Terminal Upgrades",
+    "row": 303,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "51209"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:51240",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Walkemeyer - Stevens Co. 115 kV Ckt 1",
+    "row": 309,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "51240"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:51241",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Walkemeyer 115 kV Terminal Upgrades",
+    "row": 310,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "51241"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:51395",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Viola 138 kV Line Tap (WR)",
+    "row": 354,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "51395"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Heizer 115/69 kV Ckt 4 Transformer",
+    "reason": "dropped after 2018q4 while “ON SCHEDULE < 4”; its outcome is not in any edition (C43)",
+    "row": 422,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "51578"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:71928",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Redundancy Relaying at Stilwell",
+    "row": 474,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "71928"
+  },
+  {
+    "_id": "spp-qpt-2018q4-midwest:72007",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Neosho 138 kV Terminal Equipment",
+    "row": 514,
+    "sheet": "Appendix 1",
+    "source_id": "spp-qpt-2018q4-midwest",
+    "uid": "72007"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:10413",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Cowskin - Westlink 69 kV Ckt 1 Rebuild",
+    "row": 17,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "10413"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:10414",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Tyler - Westlink 69 kV Ckt 1 Rebuild",
+    "row": 18,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "10414"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:10538",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Eastborough - Sixty-Fourth (64th) 69 kV Ckt 1",
+    "row": 24,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "10538"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50103",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Vaughn 115 kV Cap Bank",
+    "row": 82,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50103"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50328",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "HALSTEAD SOUTH BUS - SEDGWICK COUNTY NO. 12 COLWICH 138KV CKT 1",
+    "row": 88,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50328"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Clay Center Switching Station - TC Riley 115 kV Ckt 1",
+    "reason": "dropped after 2017q4 while “RE-EVALUATION”; its outcome is not in any edition (C43)",
+    "row": 92,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50372"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50429",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Elm Creek - Summit 345 kV Ckt 1 (WR)",
+    "row": 109,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50429"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:10425",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Moundridge 138/115 kV Transformer Ckt 2",
+    "row": 110,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "10425"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50520",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Mingo 345/115 kV Ckt 2 Transformer",
+    "row": 127,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50520"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51180",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Mingo 345 kV Terminal Upgrades",
+    "row": 128,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51180"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50581",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Gill 138/69 kV Transformer Ckt 3",
+    "row": 150,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50581"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50726",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "City of Wellington - Sumner County No.4 Rome 69 kV Ckt 1 Rebuild",
+    "row": 203,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50726"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50727",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Creswell - Sumner County No.4 Rome 69 kV Ckt 1 Rebuild",
+    "row": 204,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50727"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:50730",
+    "disposition": "accepted",
+    "location": "candidate_unique_name",
+    "name": "Crestview - Northeast 69 kV Ckt 1 Rebuild",
+    "row": 205,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "50730"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51197",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "South Waverly 161/69 kV Ckt 1 Transformer",
+    "row": 319,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51197"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51268",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "South Waverly 161 kV Terminal Upgrades",
+    "row": 320,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51268"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51211",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Benton 138 kV Terminal Upgrades",
+    "row": 328,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51211"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51313",
+    "disposition": "accepted",
+    "location": "unlocated",
+    "name": "Williston 230 kV Terminal Upgrades",
+    "row": 364,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51313"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Tap Nebraska City - Mullin Creek 345 kV (Holt County) POI for GEN-2014-021 (OPPD NU)",
+    "reason": "dropped after 2017q4 while “ON SCHEDULE < 4”; its outcome is not in any edition (C43)",
+    "row": 407,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51404"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Kummer Ridge - Roundup 345 kV Ckt 1 New Line",
+    "reason": "dropped after 2017q4 while “DELAY - MITIGATION”; its outcome is not in any edition (C43)",
+    "row": 449,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51501"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51548",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Summit 115 kV Terminal Upgrades",
+    "row": 470,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51548"
+  },
+  {
+    "disposition": "excluded",
+    "name": "Crawford - Neosho 69 kV Terminal Upgrades",
+    "reason": "dropped after 2017q4 while “RE-EVALUATION”; its outcome is not in any edition (C43)",
+    "row": 478,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51563"
+  },
+  {
+    "_id": "spp-qpt-2017q4-midwest:51635",
+    "disposition": "accepted",
+    "location": "candidate",
+    "name": "Sibley 345kV Substation Relays for Ketchem 345kV Station GEN-2015-005 Addition",
+    "row": 504,
+    "sheet": "Appendix I",
+    "source_id": "spp-qpt-2017q4-midwest",
+    "uid": "51635"
   }
 ]
