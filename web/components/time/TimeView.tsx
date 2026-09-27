@@ -53,6 +53,8 @@ const REVIEW: Record<string, string> = {
   rejected: "Not confirmed by audit",
 };
 const miles = (d: number) => `${d.toFixed(2)} mi`;
+/** F37: History opens around this project's stored center, as a research aid. */
+const pastWork = (key: string) => `/history?origin=${encodeURIComponent(key)}`;
 const SWEEP_MS = 4200;
 const BOOTH_IDLE_MS = 25_000;
 /** 25 statute miles in degrees of latitude (1° ≈ 69.05 mi), to place the rule's label on its circle. */
@@ -81,7 +83,14 @@ function overviewPadding(el: HTMLElement | null) {
   const h = el?.clientHeight ?? 800;
   return w <= 860
     ? { top: 70, bottom: Math.round(h * 0.5), left: 12, right: 96 }
-    : { top: 60, bottom: 150, left: Math.min(460, w * 0.34), right: 250 };
+    : { top: 60, bottom: 150, left: Math.min(460, w * 0.34), right: 420 };
+}
+
+/** Drawing only: a date before the axis ground lies on the ground; a span crossing it starts at the ground. */
+function clampToGround(sp: Span): Span {
+  if (sp.kind === "exact") return sp.day < 0 ? { kind: "unknown" } : sp;
+  if (sp.kind === "range") return sp.to <= 0 ? { kind: "unknown" } : sp.from < 0 ? { ...sp, from: 0 } : sp;
+  return sp;
 }
 
 function describe(sp: Span, raw: string | null): string {
@@ -106,7 +115,7 @@ export function TimeView({
   legacyAvailable: boolean;
   pairsAvailable: boolean;
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
-    drawn: number; unlocated: number; truncated: boolean };
+    drawn: number; inService: number; unlocated: number; truncated: boolean };
 }) {
   const counts = useMemo(
     () => Object.fromEntries(VIEWS.map(({ v }) => [v, pairs.filter((p) => p.view === v).length])) as Record<View, number>,
@@ -148,8 +157,13 @@ export function TimeView({
   // --- facts, derived once --------------------------------------------------------------------------------------------
   const byKey = useMemo(() => new Map(projects.map((p) => [p.key, p])), [projects]);
   const located = useMemo(() => projects.filter((p) => p.center), [projects]);
-  const epoch = useMemo(() => epochYear(located.map((p) => p.in_service)), [located]);
+  // The planning window: the ground is 1 Jan of the year before the analysis date (or the earliest drawn year, if
+  // later), so one old filing can't stretch the axis. Earlier dates keep their facts and lie flat on the ground.
+  const analysisYear = Number(analysisDate.slice(0, 4));
+  const epoch = useMemo(() => Math.max(Math.min(epochYear(located.map((p) => p.in_service)), analysisYear), analysisYear - 1), [located, analysisYear]);
   const spans = useMemo(() => new Map(located.map((p) => [p.key, span(p.in_service, epoch)])), [located, epoch]);
+  const drawn = useMemo(() => new Map([...spans].map(([k, sp]) => [k, clampToGround(sp)])), [spans]);
+  const beforeGround = located.filter((p) => spans.get(p.key)?.kind !== "unknown" && drawn.get(p.key)?.kind === "unknown").length;
   const todayYears = dayOf(analysisDate, epoch) / DAYS_PER_YEAR;
   const hasRanges = [...spans.values()].some((sp) => sp.kind === "range");
   const undated = located.filter((p) => spans.get(p.key)?.kind === "unknown");
@@ -167,13 +181,13 @@ export function TimeView({
   const notLocated = projects.length - located.length;
   const items: TimeItem[] = useMemo(
     () =>
-      located.map((p) => ({ key: p.key, color: projectColor(p), lng: p.center!.lon, lat: p.center!.lat, span: spans.get(p.key)! })),
-    [located, spans],
+      located.map((p) => ({ key: p.key, color: projectColor(p), lng: p.center!.lon, lat: p.center!.lat, span: drawn.get(p.key)! })),
+    [located, drawn],
   );
   const topYears = useMemo(() => {
-    const tops = [...spans.values()].map((sp) => (sp.kind === "exact" ? sp.day : sp.kind === "range" ? sp.to : 0));
+    const tops = [...drawn.values()].map((sp) => (sp.kind === "exact" ? sp.day : sp.kind === "range" ? sp.to : 0));
     return Math.max(todayYears, ...tops.map((d) => d / DAYS_PER_YEAR), 1);
-  }, [spans, todayYears]);
+  }, [drawn, todayYears]);
   useEffect(() => {
     epochRef.current = epoch;
     topYearsRef.current = topYears;
@@ -353,7 +367,7 @@ export function TimeView({
     return { lng: bbox[2] + 0.35, lat: bbox[1] + (bbox[3] - bbox[1]) * 0.42 };
   }, [pa, pb, bbox]);
 
-  const dimension = pair && pair.time_gap_days !== null && spans.get(pair.a)?.kind === "exact" && spans.get(pair.b)?.kind === "exact";
+  const dimension = pair && pair.time_gap_days !== null && drawn.get(pair.a)?.kind === "exact" && drawn.get(pair.b)?.kind === "exact";
 
   useEffect(() => {
     const layer = layerRef.current;
@@ -401,7 +415,7 @@ export function TimeView({
 
   // --- labels: React owns their content, the layer moves them every frame ---------------------------------------------
   const heightOf = (key: string) => {
-    const sp = spans.get(key);
+    const sp = drawn.get(key);
     return sp?.kind === "exact" ? sp.day / DAYS_PER_YEAR : sp?.kind === "range" ? sp.to / DAYS_PER_YEAR : 0;
   };
   const labelSpecs: (LabelSpec & { text: React.ReactNode; kind: string })[] = [];
@@ -505,7 +519,7 @@ export function TimeView({
       const p = id ? pairs.find((x) => x.id === id) : null;
       if (p) {
         const tops = [p.a, p.b].map((k) => {
-          const sp = spans.get(k);
+          const sp = drawn.get(k);
           return sp?.kind === "exact" ? sp.day : sp?.kind === "range" ? sp.to : 0;
         });
         const years = Math.max(...tops, 1) / DAYS_PER_YEAR;
@@ -514,7 +528,7 @@ export function TimeView({
         frame(byKey.get(p.a), byKey.get(p.b));
       }
     },
-    [pairs, byKey, frame, spans],
+    [pairs, byKey, frame, drawn],
   );
 
   useEffect(() => {
@@ -802,7 +816,8 @@ export function TimeView({
         </details>
         {!legacyAvailable ? <p role="status" className={s.provenance}>Legacy projects unavailable; national projects remain available.</p> : null}
         <p className={s.provenance}>
-          {national.available ? <>{national.drawn} confirmed national projects included.
+          {national.available ? <>{national.drawn} confirmed national projects not yet in service included.
+            {national.inService ? <> {national.inService} already in service are in <Link href="/history">History →</Link></> : null}
             {national.mode === "snapshot" ? " Committed snapshot mode." : ""}
             {national.truncated ? " National map limit reached; more records are available in the explorer." : ""}
           </> : "National projects unavailable; showing the legacy dataset."}
@@ -885,6 +900,12 @@ export function TimeView({
             <>
               {" "}
               · <b>{undated.length}</b> no exact date
+            </>
+          ) : null}
+          {beforeGround ? (
+            <>
+              {" "}
+              · <b>{beforeGround}</b> dated before {epoch}, on the ground
             </>
           ) : null}
           <i aria-hidden>{trayOpen ? "×" : "→"}</i>
@@ -990,6 +1011,9 @@ export function TimeView({
                 {p.source_id}
                 {p.page !== null ? ` p. ${p.page}` : ""} · location {p.confidence ?? "unknown"} confidence
               </p>
+              <Link href={pastWork(p.key)} className={s.evidence}>
+                Past work nearby →
+              </Link>
             </section>
           ))}
           <div className={s.detailFoot}>
@@ -1030,6 +1054,9 @@ export function TimeView({
           {project.national ? <NationalProjectEvidence {...project.national} dataset={national.dataset} /> : <p className={s.note}>
             {related.size ? `In ${related.size - 1} ${view} pair${related.size === 2 ? "" : "s"}; linked projects glow.` : `Not in any ${view} pair.`}
           </p>}
+          <Link href={pastWork(project.key)} className={s.evidence}>
+            Find past work nearby in History →
+          </Link>
         </aside>
       ) : null}
 

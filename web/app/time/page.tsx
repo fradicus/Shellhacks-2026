@@ -1,5 +1,5 @@
 import { loadNationalExplorer } from "@/lib/national/server";
-import { nationalTimeProjects } from "@/components/time/nationalProjects";
+import { nationalTimeProjects, stillPlanned } from "@/components/time/nationalProjects";
 import { TimeView, type TimePair, type TimeProject } from "@/components/time/TimeView";
 import { ErrorState } from "@/components/ui";
 import { analysisDate, getMatches, getProjects, isFixtureMode } from "@/lib/data";
@@ -39,7 +39,8 @@ export default async function TimePage() {
     source_id: p.source.source_id,
     page: p.source.page,
   }));
-  const nationalPoints = national.available ? nationalTimeProjects(national.mapProjects, national.sources) : [];
+  const nationalAll = national.available ? nationalTimeProjects(national.mapProjects, national.sources) : [];
+  const nationalPoints = nationalAll.filter(stillPlanned);
   slim.push(...nationalPoints);
   const pairs: TimePair[] = (isUnavailable(matches) || isUnavailable(projects) ? [] : matches).map((m) => ({
     id: m._id,
@@ -56,6 +57,6 @@ export default async function TimePage() {
   return (
     <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
-        drawn: nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
+        drawn: nationalPoints.length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );
 }

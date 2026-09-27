@@ -1,6 +1,10 @@
 import type { NationalProject, NationalSource } from "@/lib/national/types";
 import type { TimeProject } from "./TimeView";
 
+/** /time plans; /history keeps the record. A national record its publisher lists as in service belongs to History,
+ * and drawing 2001-2025 completions here stretched the planning axis over 25 years of past. */
+export const stillPlanned = (p: TimeProject) => p.national?.project.status_group !== "in_service";
+
 /** The national collection also projects legacy filing versions; F19 already selects those itself. */
 export function nationalTimeProjects(projects: NationalProject[], sources: NationalSource[]): TimeProject[] {
   const sourceById = new Map(sources.map((source) => [source._id, source]));

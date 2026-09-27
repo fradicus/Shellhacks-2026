@@ -16,7 +16,9 @@ Added by the human after run 1's freeze (Plan E VIS-01..04, issue 23's 3D part o
 ## Plan
 1. `/time`: the overlap map on a dark basemap with a Three.js custom MapLibre layer. Each located current project
    stands on its center; its height is its filed in-service date on a vertical time axis.
-2. **Heights are display only.** Axis ground = 1 January of the earliest drawn year, declared on screen. Scale is
+2. **Heights are display only.** Axis ground = 1 January of the year before the analysis date (or the earliest drawn
+   year, if later), declared on screen. A filed date before the ground keeps its facts in every text and lies flat on
+   the ground, counted in the Projects tray; it never stretches the planning axis (2026-09-27, see below). Scale is
    pixels per year (user slider, shown), so it reads at any zoom. Height never feeds distance, overlap or rank.
 3. Exact dates draw as a bead on a light pillar. Month- or year-only dates draw as a column over the whole span; no day
    is picked. Unknown dates stay on the ground and are listed. Unlocated projects are counted, not drawn.
@@ -76,3 +78,11 @@ Expose source and independent review evidence when selecting a national project.
 unavailability and map truncation; link to the explorer for unlocated records. Default bounds include
 the delivered points. Validate projection/deduplication and date precision, desktop/mobile selection,
 2D/3D, navigation re-entry, fallback behavior and the repo-wide checks.
+
+## Planning window (2026-09-27)
+
+The user reported the axis running 2001–2035 after the national integration: 566 of the 612 drawn national records
+are ones their publisher lists as in service, dated 2001–2025, which pushed "today" to the top of the axis. `/time`
+plans and `/history` (F37) keeps the record, so `/time` now draws national records that are not in service; the
+in-service count links to History. The ground rule in step 2 bounds the axis to about 2025–2035 on the current data.
+Stored pairs, distances, gaps and rankings are unchanged. Each project card links to `/history?origin=<key>`.
