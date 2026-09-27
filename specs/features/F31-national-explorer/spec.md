@@ -35,7 +35,7 @@ The user explicitly requested the frontend hookup after the Texas release. This 
 F31's frontend-engineer role under the existing codex-local assignment in specs/roadmap.md. No other F31
 claim is open. Apply C32 Texas's candidate and separate county-anchor representation to the existing
 map/API and evidence/export views. Include valid candidate centers and county display anchors by default;
-keep exact centers null for county-only records. Use visible Tentative / County reference labels, retain
+keep exact centers null for county-only records. Use visible Tentative / Approximate location labels, retain
 provenance and all named counties, and keep shared positions individually selectable. Count projects once.
 Keep reads bounded and disclose truncation. No new matching, geographic inference or date-policy changes.
 F19's main-map hookup is a separate claim and does not change F31's ownership.
@@ -43,3 +43,6 @@ F19's main-map hookup is a separate claim and does not change F31's ownership.
 The bounded map projection admits at most 10,000 project records (matching the existing snapshot ceiling);
 exports remain capped at 2,000 and pages at 100. `locatedTotal` retains center-based counts; the additive
 `approximateTotal` counts county-only projects, and `unlocatedTotal` excludes those known county locations.
+
+Latest user direction: county anchors may remain in the explorer, but must not enter F19’s Three.js map.
+F19 consumes only accepted facility centers, labeled tentative where unreviewed.

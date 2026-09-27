@@ -16,6 +16,6 @@ export function displayPoints(project: NationalProject): DisplayPoint[] {
 
 export function locationLabel(project: NationalProject): string {
   if (!displayPoints(project).length) return "Location unknown";
-  if (!project.center) return "County reference — exact site unknown";
+  if (!project.center) return "Approximate location — county only";
   return project.location_review === "confirmed" ? "Confirmed location" : "Tentative location";
 }

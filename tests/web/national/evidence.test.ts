@@ -69,7 +69,7 @@ test("county details and CSV retain precision, attribution and null exact coordi
   const county = texas.find((p: { approximate_location?: unknown }) => p.approximate_location);
   const candidate = texas.find((p: { location_candidate?: unknown }) => p.location_candidate);
   const details = renderToStaticMarkup(createElement(LocationSummary, { project: county }));
-  assert.match(details, /County reference — exact site unknown/);
+  assert.match(details, /Approximate location — county only/);
   assert.match(details, /Census reference geography/);
   assert.match(renderToStaticMarkup(createElement(LocationSummary, { project: candidate })), /not independently reviewed/);
   assert.match(renderToStaticMarkup(createElement(LocationSummary, { project: candidate })), /OpenStreetMap contributors/);

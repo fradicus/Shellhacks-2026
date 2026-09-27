@@ -154,7 +154,7 @@ export function NationalMap({
         <span><i className={`${s.dot} ${s.planned}`} /> Planned</span>
         <span><i className={`${s.dot} ${s.construction}`} /> Under construction</span>
         <span><i className={s.ring} /> Tentative location</span>
-        <span><i className={s.ring} style={{ opacity: 0.4 }} /> County reference · exact site unknown</span>
+        <span><i className={s.ring} style={{ opacity: 0.4 }} /> Approximate location · county only</span>
         <span>Click shared dots again to select another project; all remain in the list.</span>
       </div>
       <p className={s.attribution}><a href="https://openfreemap.org/" target="_blank" rel="noreferrer">OpenFreeMap</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap</a></p>

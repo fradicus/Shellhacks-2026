@@ -7,7 +7,7 @@ export function LocationSummary({ project }: { project: NationalProject }) {
   return <section aria-label="Location precision">
     <p><strong>{locationLabel(project)}</strong></p>
     {project.center ? <p>{project.center.basis === "two" ? "Mean of two located endpoints."
-      : project.center.basis === "one" ? "Partial location: one known endpoint." : "Source reference point."}</p> : null}
+      : project.center.basis === "one" ? "Partial location: one matched endpoint." : "Source reference point."}</p> : null}
     {candidate || (project.center && project.location_review !== "confirmed") ? <>
       <p>{candidate?.note ?? project.center?.evidence ?? "Not independently reviewed."}</p>
       {candidate?.attribution ? <p><a href={candidate.license_url ?? "https://www.openstreetmap.org/copyright"}
