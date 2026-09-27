@@ -44,3 +44,14 @@ contents are immutable under the existing loader; the five-minute bound limits
 memory retention and refreshes metadata under the same ID. Serialization, legacy
 queries, basemap loading, GPU work and the opening animation are unaffected.
 Remove the small cache wrapper to restore uncached behavior.
+
+## Measurements on 2026-09-27
+
+Local read-only Atlas loader, active dataset `4aa0691b3154beacaba7d6e377813c703a26c8a8`:
+3,472 map records; full explorer payload 14,178,406 serialized bytes. Four uncached
+loads took 5,374 / 7,236 / 3,924 / 5,171 ms. With the cache, the cold load took
+8,206 ms and three warm loads took 89 / 75 / 86 ms. Each measurement includes JSON
+serialization; all four cached-run outputs were identical. These are small local
+samples with variable network latency, not hosted page-load or frame-rate claims.
+The installed Next Data Cache has a 2 MB entry limit, so this complete payload uses
+the bounded in-process cache instead of silently exceeding that limit.

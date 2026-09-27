@@ -174,8 +174,28 @@ async function facets(db: Db, dataset: string) {
   return { planningRegions, owners, statuses: statuses as NationalStatus[] };
 }
 
+// One large map payload per warm instance; keep the active pointer outside the cache.
+// Cold instances still load from Atlas. A shared cache is only needed if cold starts dominate.
+let mapCache: { dataset: string; expires: number; pending: ReturnType<typeof queryDataset> } | undefined;
+
 async function atlasQuery(filters: NationalFilters, geography: NationalGeography | null) {
   const { db, dataset } = await activeNationalDb();
+  // Only the unfiltered request used by /time and /history. New filter keys bypass by default.
+  const isMapRequest = filters.page === 1 && filters.limit === 1
+    && Object.keys(filters).every((key) => key === "page" || key === "limit");
+  if (!isMapRequest) return queryDataset(db, dataset, filters, geography);
+  if (!mapCache || mapCache.dataset !== dataset || mapCache.expires <= Date.now()) {
+    const entry = { dataset, expires: Date.now() + 5 * 60_000, pending: queryDataset(db, dataset, filters, geography) };
+    mapCache = entry;
+    entry.pending.catch(() => {
+      // An older failed fill must not evict a newer dataset's result.
+      if (mapCache === entry) mapCache = undefined;
+    });
+  }
+  return mapCache.pending;
+}
+
+async function queryDataset(db: Db, dataset: string, filters: NationalFilters, geography: NationalGeography | null) {
   const filter = mongoFilter(filters, geography, dataset);
   const offset = (filters.page - 1) * filters.limit;
   const [total, locatedTotal, approximateTotal, projectDocs, mapDocs, sourceDocs, run, filterFacets] = await Promise.all([
