@@ -69,12 +69,21 @@ const WeatherDataSchema: z.ZodType<WeatherData> = z.object({
   }).strict()),
   scope: z.string(),
 }).strict();
+const SoilHorizonSchema = z.object({
+  chkey: z.string(),
+  depth_top_cm: z.number().finite().nullable(),
+  depth_bottom_cm: z.number().finite().nullable(),
+  ph_h2o_1_to_1: z.number().finite().nullable(),
+  ph_method: z.literal("1:1 soil-water"),
+  depth_unit: z.literal("cm"),
+}).strict();
 const SoilDataSchema: z.ZodType<SoilData> = z.object({
   map_units: z.array(z.object({
     mukey: z.string(), name: z.string(), area_symbol: z.string(), survey_updated_at: z.string().nullable(),
     components: z.array(z.object({
       cokey: z.string(), name: z.string().nullable(), percent: z.number().finite().nullable(),
       drainage_class: z.string().nullable(), hydrologic_group: z.string().nullable(),
+      horizons: z.array(SoilHorizonSchema),
     }).strict()),
   }).strict()),
   scope: z.string(),
@@ -291,6 +300,25 @@ export function buildSiteRequest(draft: SiteDraft): { label: string; request: Si
     lat: requiredNumber(draft.lat, "Worksite latitude"), lon: requiredNumber(draft.lon, "Worksite longitude"),
     year: requiredInteger(draft.year, "AEF year"),
   }) };
+}
+
+/** Round WGS84 degrees for form fields without inventing precision beyond map clicks. */
+export function formatCoordinate(value: number): string {
+  if (!Number.isFinite(value)) throw new Error("Coordinate must be finite.");
+  return value.toFixed(6);
+}
+
+export function draftFromSearchParams(params: URLSearchParams): Partial<SiteDraft> {
+  const next: Partial<SiteDraft> = {};
+  const label = params.get("label");
+  const lat = params.get("lat");
+  const lon = params.get("lon");
+  const year = params.get("year");
+  if (label != null && label.trim()) next.label = label.trim().slice(0, 120);
+  if (lat != null && /^-?\d+(\.\d+)?$/.test(lat)) next.lat = lat;
+  if (lon != null && /^-?\d+(\.\d+)?$/.test(lon)) next.lon = lon;
+  if (year != null && /^\d{4}$/.test(year)) next.year = year;
+  return next;
 }
 
 export function buildRouteRequest(draft: RouteDraft, destination: Point): RouteRequest {

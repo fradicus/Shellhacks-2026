@@ -14,6 +14,8 @@ import {
   claimAttempt,
   conditionsInterval,
   directoryBinding,
+  draftFromSearchParams,
+  formatCoordinate,
   pointBinding,
   readResponse,
   siteBinding,
@@ -40,6 +42,11 @@ test("manual worksite and vehicle builders require explicit facts and preserve e
   const site = buildSiteRequest({ label: "  Test yard  ", lat: "47.6", lon: "-122.3", year: "2025" });
   assert.deepEqual(site, { label: "Test yard", request: { lat: 47.6, lon: -122.3, year: 2025 } });
   assert.throws(() => buildSiteRequest({ label: "", lat: "47.6", lon: "-122.3", year: "2025" }), /label/);
+  assert.equal(formatCoordinate(47.60621234), "47.606212");
+  assert.deepEqual(draftFromSearchParams(new URLSearchParams("lat=47.6062&lon=-122.3321&label=Seattle&year=2025")), {
+    lat: "47.6062", lon: "-122.3321", label: "Seattle", year: "2025",
+  });
+  assert.deepEqual(draftFromSearchParams(new URLSearchParams("lat=nope&year=25")), {});
   const draft = { originLabel: "Depot", originLat: "47.5", originLon: "-122.2", departureLocal: "2026-09-26T12:00",
     heightM: "4.101", widthM: "2.59", lengthM: "18", grossWeightKg: "36000", axleCount: "5",
     trailerMode: "none" as const, trailers: [], hazmatReviewed: true, hazmat: [] };
@@ -48,6 +55,35 @@ test("manual worksite and vehicle builders require explicit facts and preserve e
   assert.throws(() => buildRouteRequest({ ...draft, heightM: "4.1008" }, route.destination), /millimetres/);
   assert.throws(() => buildRouteRequest({ ...draft, hazmatReviewed: false }, route.destination), /hazardous/);
   assert.throws(() => buildRouteRequest({ ...draft, trailerMode: "" }, route.destination), /trailers/);
+});
+
+test("soil envelope requires horizon depth units when survey pH is present", () => {
+  const soil = base("soil", "available", {
+    scope: "synthetic soil",
+    map_units: [{ mukey: "1", name: "Unit", area_symbol: "WA001", survey_updated_at: null, components: [{
+      cokey: "2", name: "Component", percent: 80, drainage_class: null, hydrologic_group: null,
+      horizons: [{ chkey: "h1", depth_top_cm: 0, depth_bottom_cm: 20, ph_h2o_1_to_1: 6.2, ph_method: "1:1 soil-water", depth_unit: "cm" }],
+    }] }],
+  });
+  assert.equal(SiteResponseSchema.parse({
+    request: { lat: 47.6, lon: -122.3, year: 2025 },
+    weather: base("weather", "unavailable", null),
+    roadwork: base("roadwork", "unavailable", null),
+    soil,
+    aef: base("aef", "unavailable", null),
+  }).soil.data?.map_units[0].components[0].horizons[0].ph_h2o_1_to_1, 6.2);
+  assert.equal(SiteResponseSchema.safeParse({
+    request: { lat: 47.6, lon: -122.3, year: 2025 },
+    weather: base("weather", "unavailable", null),
+    roadwork: base("roadwork", "unavailable", null),
+    soil: base("soil", "available", {
+      scope: "synthetic soil",
+      map_units: [{ mukey: "1", name: "Unit", area_symbol: "WA001", survey_updated_at: null, components: [{
+        cokey: "2", name: "Component", percent: 80, drainage_class: null, hydrologic_group: null,
+      }] }],
+    }),
+    aef: base("aef", "unavailable", null),
+  }).success, false);
 });
 
 test("outcome requests require an explicit as-of baseline confirmation", () => {

@@ -192,6 +192,45 @@ test("readiness can retry and bounds errors are field-friendly", async ({ page }
   await expect(alert).not.toContainText('"code"');
 });
 
+test("map click with year selected calls the site API for the clicked point", async ({ page }) => {
+  await mockMetadata(page);
+  let siteUrl = "";
+  await page.route("**/api/operations/site?*", async (route) => {
+    siteUrl = route.request().url();
+    const url = new URL(siteUrl);
+    const requestPoint = { lat: Number(url.searchParams.get("lat")), lon: Number(url.searchParams.get("lon")) };
+    const boundWeather = { ...weather, data: { ...weather.data, samples: [{ ...weather.data.samples[0], point: requestPoint }] } };
+    await route.fulfill({ json: {
+      request: { ...requestPoint, year: 2025 }, weather: boundWeather, roadwork,
+      soil: {
+        ...emptyEnvelope("soil", "available", "Synthetic soil with horizon pH."),
+        evidence_hash: "c".repeat(64),
+        coverage: { requested: 1, completed: 1, failed: 0, truncated: false },
+        data: {
+          scope: "Synthetic soil horizons.",
+          map_units: [{ mukey: "1", name: "Synthetic unit", area_symbol: "WA001", survey_updated_at: null, components: [{
+            cokey: "2", name: "Synthetic component", percent: 100, drainage_class: "Well drained", hydrologic_group: "B",
+            horizons: [{ chkey: "h1", depth_top_cm: 0, depth_bottom_cm: 15, ph_h2o_1_to_1: 6.4, ph_method: "1:1 soil-water", depth_unit: "cm" }],
+          }] }],
+        },
+      },
+      aef: emptyEnvelope("aef", "unavailable", "Synthetic test-only AEF unavailable."),
+    } });
+  });
+  await page.goto("/operations?year=2025");
+  await expect(page.getByLabel("Annual AEF year")).toHaveValue("2025");
+  const map = page.getByRole("application", { name: "Click the map to set the worksite coordinates" });
+  await expect(map.locator(".maplibregl-canvas")).toBeVisible({ timeout: 30_000 });
+  await map.locator(".maplibregl-canvas").click({ position: { x: 180, y: 110 } });
+  await expect(page.getByRole("heading", { name: "Map-selected worksite" })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByText("pH 6.4")).toBeVisible();
+  await expect(page.getByText(/depth 0-15 cm/)).toBeVisible();
+  const called = new URL(siteUrl);
+  expect(called.searchParams.get("year")).toBe("2025");
+  expect(Number(called.searchParams.get("lat"))).toBeGreaterThan(20);
+  expect(Number(called.searchParams.get("lon"))).toBeLessThan(-60);
+});
+
 test("mobile layout keeps the worksite form before the evidence board and does not overflow", async ({ page }, testInfo: TestInfo) => {
   await mockMetadata(page);
   await page.setViewportSize({ width: 390, height: 844 });
