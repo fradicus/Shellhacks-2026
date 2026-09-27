@@ -181,7 +181,8 @@ test("failed basemap preserves overlaps, selection, and accessible project table
 
 test("landing controls work and the explorer returns to a working landing page", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Every mile.Connected.");
+  // Brand-first hero on main uses GridBridge; keep Every mile for older stacks.
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/GridBridge|Every mile/);
   const network = page.getByRole("button", { name: "02 The network", exact: true });
   await network.click();
   await expect(network).toHaveAttribute("aria-pressed", "true");
