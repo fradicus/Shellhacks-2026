@@ -100,19 +100,26 @@ async function loadPoint(point: SitePoint, signal: AbortSignal): Promise<Omit<Po
   }
 }
 
-export function SiteEvidence({ points }: { points: SitePoint[] }) {
-  const [rows, setRows] = useState<PointSummary[]>(() => points.map((point) => ({
+function loadingRows(points: SitePoint[]): PointSummary[] {
+  return points.map((point) => ({
     label: point.label, lat: point.lat, lon: point.lon, loading: true, error: null,
     ph: null, phNote: null, flood: null, wetland: null, gauges: null,
-  })));
+  }));
+}
+
+export function SiteEvidence({ points }: { points: SitePoint[] }) {
+  const pointsKey = points.map((point) => `${point.label}:${point.lat}:${point.lon}`).join("|");
+  const [rows, setRows] = useState<PointSummary[]>(() => loadingRows(points));
+  const [loadedKey, setLoadedKey] = useState(pointsKey);
+  if (loadedKey !== pointsKey) {
+    setLoadedKey(pointsKey);
+    setRows(loadingRows(points));
+  }
 
   useEffect(() => {
     if (!points.length) return;
     const controller = new AbortController();
-    setRows(points.map((point) => ({
-      label: point.label, lat: point.lat, lon: point.lon, loading: true, error: null,
-      ph: null, phNote: null, flood: null, wetland: null, gauges: null,
-    })));
+    const expected = pointsKey;
     void Promise.all(points.map(async (point) => {
       try {
         return { ...(await loadPoint(point, controller.signal)), loading: false };
@@ -122,9 +129,10 @@ export function SiteEvidence({ points }: { points: SitePoint[] }) {
     })).then((results) => {
       if (controller.signal.aborted) return;
       setRows(results.filter((row): row is PointSummary => row !== null));
+      setLoadedKey(expected);
     });
     return () => controller.abort();
-  }, [points]);
+  }, [points, pointsKey]);
 
   if (!points.length) return null;
 
