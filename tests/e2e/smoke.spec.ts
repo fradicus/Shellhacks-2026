@@ -184,8 +184,8 @@ test("landing controls work and the explorer returns to a working landing page",
   // Truck-first Common Ground hero; keep Every mile / GridBridge for older stacks.
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(/Common Ground|GridBridge|Every mile/);
   // Hero is truck-only now (no road/network map toggle). Caption names the scroll beats.
+  // "Illustrative animation" is display:none on narrow viewports — assert the beat line only.
   await expect(page.getByText("Same roads. One network.")).toBeVisible();
-  await expect(page.getByText("Illustrative animation")).toBeVisible();
   await page.getByRole("button", { name: "Pause animation", exact: true }).click();
   await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("link", { name: "Explore the overlaps", exact: true }).click();
