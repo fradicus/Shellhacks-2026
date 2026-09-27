@@ -46,9 +46,9 @@ contract PR for frozen shared files.
 
 ## Validation
 - Per PR, the change-scoped Checks in `specs/tech-stack.md`.
-- For `/time` PRs: a 1440 × 900 screenshot of a selected rejected filing pair and of the candidate list, plus a
-  390 px screenshot, attached to the PR.
-- `/gemini`: a screenshot of the default tab with the committed (empty) extraction data.
+- For `/time` PRs: check a selected rejected filing pair and the candidate list at 1440 × 900, and the list at
+  390 px, in a real browser against the active dataset. Describe what was seen in the PR.
+- `/gemini`: check the default tab against the committed (empty) extraction data, and describe it the same way.
 
 ## Defaults
 - Rejected rows stay in the list, dimmed and labeled. A hide toggle is not part of F52; add one only if the user asks.
