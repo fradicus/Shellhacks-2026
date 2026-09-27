@@ -57,9 +57,9 @@ python3 scripts/check_ownership.py --lint-specs
 python3 scripts/check_ownership.py --title "<your PR title>" --base origin/main
 (cd pipeline && uv run pytest -c pyproject.toml ../tests/golden/test_ownership.py -q)
 ```
-For **full** changes, also run (Python and web may run concurrently):
+For **full** changes, also run (Python and web may run concurrently; [C39](decisions/C39-parallel-pytest.md) spreads pytest across CPUs):
 ```bash
-(cd pipeline && uv run ruff check . && uv run pytest -q --durations=10)
+(cd pipeline && uv run ruff check . && uv run pytest -q -n auto --durations=10)
 (cd web && npm run lint && npm run typecheck && DATA_MODE=fixture npm run build)
 ```
 CI additionally preserves the existing national, assistant and operations Node
