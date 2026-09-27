@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F19, F21]
+  claude-local: [F00, F05, F11, F14, F16, F19, F21, F40]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F41]
 frozen_paths:
   - schemas/
@@ -199,3 +199,14 @@ candidate and area-only display tiers in [C25](decisions/C25-main-demo-map.md). 
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F41 | Texas transmission project research and map delivery | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Great Lakes coverage
+
+The user instructed Claude local to fill the map across the Great Lakes, starting with Minnesota, targeting ~5,000
+points, and chose a labeled candidate-location tier over the F38 review bar for this rollout. [C26](decisions/C26-great-lakes-candidates.md)
+assigns [F40](features/F40-great-lakes/spec.md): MN, WI, MI, IL, IN, OH, PA, NY. Candidates are never counted as verified.
+Publication uses a fixed F40 release appended by F30's owner, following C29.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F40 | Great Lakes project coverage with labeled candidate locations | A | data-researcher | 7 | F00, F30 | never |
