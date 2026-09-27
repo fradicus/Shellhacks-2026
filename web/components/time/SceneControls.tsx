@@ -1,11 +1,11 @@
-/** The two scenes share controls, but keep their own scale range and scoped styles. */
+/** The two scenes share controls and scoped styles. The year scale slider is optional: /time sizes years from the zoom. */
 export function SceneControls({ styles: s, flat, onFlat, yearPx, onYearPx, range, onOverview }: {
   styles: Record<string, string>;
   flat: boolean;
   onFlat(flat: boolean): void;
-  yearPx: number;
-  onYearPx(value: number): void;
-  range: readonly [min: number, max: number, step: number];
+  yearPx?: number;
+  onYearPx?(value: number): void;
+  range?: readonly [min: number, max: number, step: number];
   onOverview(): void;
 }) {
   return (
@@ -14,11 +14,11 @@ export function SceneControls({ styles: s, flat, onFlat, yearPx, onYearPx, range
         <button type="button" aria-pressed={flat} onClick={() => onFlat(true)}>2D</button>
         <button type="button" aria-pressed={!flat} onClick={() => onFlat(false)}>3D</button>
       </div>
-      <label className={s.slider}>
+      {yearPx !== undefined && onYearPx && range && <label className={s.slider}>
         <span>1 year = <b>{yearPx}px</b></span>
         <input type="range" min={range[0]} max={range[1]} step={range[2]} value={yearPx} disabled={flat}
           onChange={(event) => onYearPx(Number(event.target.value))} />
-      </label>
+      </label>}
       <button type="button" className={s.reset} onClick={onOverview}>Overview</button>
     </div>
   );

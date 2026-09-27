@@ -6,7 +6,7 @@ import { LineMaterial } from "three/examples/jsm/lines/LineMaterial.js";
 import { LineSegments2 } from "three/examples/jsm/lines/LineSegments2.js";
 import { LineSegmentsGeometry } from "three/examples/jsm/lines/LineSegmentsGeometry.js";
 import type { CustomLayerInterface, CustomRenderMethodInput, Map as MlMap } from "maplibre-gl";
-import { metersPerPixel, type Span } from "./timeScale";
+import { metersPerPixel, yearPxAt, type Span } from "./timeScale";
 import { hex, mul, ease, points, fillPoints, lines, fillLines, project, createRenderer, disposeScene, type RGB, type Seg } from "./scenePrimitives";
 
 type Ml = typeof import("maplibre-gl");
@@ -152,7 +152,7 @@ function split(z0: number, z1: number, zt: number): { below: [number, number] | 
 
 export function createTimeLayer(
   ml: Ml,
-  opts: { yearPx: number; onFrame: (p: Projected) => void; onSweep?: (s: SweepState) => void },
+  opts: { onFrame: (p: Projected) => void; onSweep?: (s: SweepState) => void },
 ) {
   let map: MlMap | null = null;
   let renderer: THREE.WebGLRenderer | null = null;
@@ -166,7 +166,8 @@ export function createTimeLayer(
   let maxYears = 1;
   let focus: Focus | null = null;
   let labels: LabelSpec[] = [];
-  let yearPx = opts.yearPx;
+  // Years the axis must fit on screen: a selected pair's top, or null for every drawn item (maxYears).
+  let fitYears: number | null = null;
   let heightFactor = 0;
   let anim: { from: number; to: number; start: number; ms: number } | null = null;
   // Intro sweep (years reached; Infinity = everything shown) and the scrubber's chosen date (null = analysis date).
@@ -371,7 +372,9 @@ export function createTimeLayer(
 
   function frameMatrix(args: CustomRenderMethodInput): THREE.Matrix4 {
     const c = map!.getCenter();
-    const metresPerYear = yearPx * metersPerPixel(c.lat, map!.getZoom()) * Math.max(heightFactor, 1e-4);
+    const zoom = map!.getZoom();
+    const yearPx = yearPxAt(zoom, fitYears ?? maxYears, map!.getCanvas().clientHeight * 0.75);
+    const metresPerYear = yearPx * metersPerPixel(c.lat, zoom) * Math.max(heightFactor, 1e-4);
     const main = new THREE.Matrix4().fromArray(args.defaultProjectionData.mainMatrix as unknown as number[]);
     const localM = new THREE.Matrix4()
       .makeTranslation(origin.x, origin.y, origin.z)
@@ -489,8 +492,8 @@ export function createTimeLayer(
       labels = next;
       map?.triggerRepaint();
     },
-    setYearPx(px: number) {
-      yearPx = px;
+    setFitYears(years: number | null) {
+      fitYears = years;
       map?.triggerRepaint();
     },
     /** Grow (1) or flatten (0) the time axis. Facts are untouched either way. */
