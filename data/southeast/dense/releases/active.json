@@ -95,6 +95,36 @@
         "sources": "e7130f362b5f86bf0fdc85158bd618bd20afefdc774391729896671acc5f77a0"
       }
     },
+    "pages": {
+      "expected_counts": {
+        "by_state": {
+          "01": 1,
+          "13": 12,
+          "21": 6,
+          "24": 1,
+          "51": 3,
+          "54": 6
+        },
+        "candidate": 3,
+        "candidate_unique_name": 0,
+        "distinct_points": 3,
+        "located": 3,
+        "located_by_state": {
+          "24": 1,
+          "51": 2,
+          "54": 2
+        },
+        "located_dated": 0,
+        "located_not_in_service": 3,
+        "official": 0,
+        "projects": 25,
+        "sources": 6
+      },
+      "files": {
+        "projects": "434fbac196ef51e27e6a6dd01a5df32a4d1ca16de47ddfa8eef418847b9f9967",
+        "sources": "4100289718a18989d2d143866ca8513c24a40645379ccd9f04044ddc1953805f"
+      }
+    },
     "scrtp": {
       "expected_counts": {
         "by_state": {

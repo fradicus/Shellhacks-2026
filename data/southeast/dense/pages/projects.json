@@ -1,0 +1,1866 @@
+[
+  {
+    "_id": "southeast:ekpc:autumn-leaf-transmission-line-substation-project",
+    "center": null,
+    "counties": [],
+    "description": "Bullitt County Document More about this project (2.45 MB)",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "block_text": "Bullitt County Document More about this project (2.45 MB)",
+        "documents": [
+          {
+            "sha256": "cf1e66e70ccffad9642bd02958b8ffe34ffe54b86cdd9e4fc1ee1d0fa88e3fb8",
+            "url": "https://www.ekpc.coop/sites/default/files/2026-03/open-house-autumn-leaf-02_05_2024.pdf"
+          }
+        ],
+        "locator": "ekpc.html project summaries block 5"
+      },
+      "row": null,
+      "sheet": "ekpc.html",
+      "source_sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "Autumn Leaf",
+      "operator_keys": [
+        "EAST KENTUCKY",
+        "EKPC"
+      ],
+      "reason": "no_named_facility",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Autumn Leaf transmission line & substation project",
+    "native_id": "autumn-leaf-transmission-line-substation-project",
+    "other_owners": [],
+    "owner": "East Kentucky Power Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:ekpc",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:ekpc:big-hill-to-three-links-transmission-line-substation-project",
+    "center": null,
+    "counties": [],
+    "description": "Jackson & Madison County More about this project",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "block_text": "Jackson & Madison County More about this project",
+        "documents": [
+          {
+            "sha256": "27a28aac5230d62173621c14dba84b71667623e02fd9e4ae9f81d3eb79cac014",
+            "url": "https://www.ekpc.coop/big-hill-three-links"
+          }
+        ],
+        "locator": "ekpc.html project summaries block 6"
+      },
+      "row": null,
+      "sheet": "ekpc.html",
+      "source_sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Big Hill",
+          "norm": "BIG HILL",
+          "status": "no_facility"
+        },
+        {
+          "name": "Three Links",
+          "norm": "THREE LINKS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Big Hill to Three Links",
+      "operator_keys": [
+        "EAST KENTUCKY",
+        "EKPC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Big Hill to Three Links transmission line & substation project",
+    "native_id": "big-hill-to-three-links-transmission-line-substation-project",
+    "other_owners": [],
+    "owner": "East Kentucky Power Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:ekpc",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:ekpc:bonnieville-cub-run-transmission-line-substation",
+    "center": null,
+    "counties": [],
+    "description": "Hart County Document More about this project (2.73 MB)",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "block_text": "Hart County Document More about this project (2.73 MB)",
+        "documents": [
+          {
+            "sha256": "efc1bcce47dfe341a4976a45843eea12080891768e47cb42701fd326d8f9546c",
+            "url": "https://www.ekpc.coop/sites/default/files/2026-03/bonnieville-cub_run_69kv-substation.pdf"
+          }
+        ],
+        "locator": "ekpc.html project summaries block 2"
+      },
+      "row": null,
+      "sheet": "ekpc.html",
+      "source_sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Bonnieville",
+          "norm": "BONNIEVILLE",
+          "status": "operator_conflict"
+        },
+        {
+          "name": "Cub Run",
+          "norm": "CUB RUN",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Bonnieville-Cub Run",
+      "operator_keys": [
+        "EAST KENTUCKY",
+        "EKPC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Bonnieville-Cub Run transmission line & substation",
+    "native_id": "bonnieville-cub-run-transmission-line-substation",
+    "other_owners": [],
+    "owner": "East Kentucky Power Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:ekpc",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:ekpc:coburg-campbellsville-transmission-line",
+    "center": null,
+    "counties": [],
+    "description": "Adair, Green & Taylor Counties Document More about this project (3.87 MB) The study area for this project has been revised and condensed since 2024. An informational public meeting about the revised study area this project was conducted Thursday, March 27, 2025, from 3 p.m. to 7 p.m. EDT, at the Taylor County Extension Office located at 1143 South Columbia Ave., Campbellsville KY.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "block_text": "Adair, Green & Taylor Counties Document More about this project (3.87 MB) The study area for this project has been revised and condensed since 2024. An informational public meeting about the revised study area this project was conducted Thursday, March 27, 2025, from 3 p.m. to 7 p.m. EDT, at the Taylor County Extension Office located at 1143 South Columbia Ave., Campbellsville KY.",
+        "documents": [
+          {
+            "sha256": "20e6fc11bb91db0a46a5f580cb761eac6093ca0fc74a78fa037373cb1821c89b",
+            "url": "https://www.ekpc.coop/sites/default/files/2026-03/open-house-coburg-to-campbellsville-03_14_2025.pdf"
+          }
+        ],
+        "locator": "ekpc.html project summaries block 3"
+      },
+      "row": null,
+      "sheet": "ekpc.html",
+      "source_sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Coburg",
+          "norm": "COBURG",
+          "status": "no_facility"
+        },
+        {
+          "name": "Campbellsville",
+          "norm": "CAMPBELLSVILLE",
+          "status": "operator_conflict"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Coburg - Campbellsville",
+      "operator_keys": [
+        "EAST KENTUCKY",
+        "EKPC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Coburg - Campbellsville transmission line",
+    "native_id": "coburg-campbellsville-transmission-line",
+    "other_owners": [],
+    "owner": "East Kentucky Power Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:ekpc",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:ekpc:cooper-station-to-ku-alcalde-double-circuit-transmission-line",
+    "center": null,
+    "counties": [],
+    "description": "Pulaski County Document More about this project (2.52 MB) An informational meeting about this project was conducted Thursday, July 24, 2025, from 4 to 7 p.m. at the Center for Rural Development, 2292 South Hwy 27, Somerset KY.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "block_text": "Pulaski County Document More about this project (2.52 MB) An informational meeting about this project was conducted Thursday, July 24, 2025, from 4 to 7 p.m. at the Center for Rural Development, 2292 South Hwy 27, Somerset KY.",
+        "documents": [
+          {
+            "sha256": "87532b26d1af4b162c9140690887b085937a43a3541b1b7ad965ea4686b7cdf1",
+            "url": "https://www.ekpc.coop/sites/default/files/2026-03/cooper_station_to_ku_alcalde.pdf"
+          }
+        ],
+        "locator": "ekpc.html project summaries block 1"
+      },
+      "row": null,
+      "sheet": "ekpc.html",
+      "source_sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Cooper",
+          "norm": "COOPER",
+          "status": "ambiguous"
+        },
+        {
+          "name": "KU Alcalde",
+          "norm": "KU ALCALDE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Cooper Station to KU Alcalde",
+      "operator_keys": [
+        "EAST KENTUCKY",
+        "EKPC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Cooper Station to KU Alcalde double-circuit transmission line",
+    "native_id": "cooper-station-to-ku-alcalde-double-circuit-transmission-line",
+    "other_owners": [],
+    "owner": "East Kentucky Power Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:ekpc",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:ekpc:marion-county-metts-transmission-line-substation-project",
+    "center": null,
+    "counties": [],
+    "description": "Marion County Document More about this project (2.49 MB)",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "block_text": "Marion County Document More about this project (2.49 MB)",
+        "documents": [
+          {
+            "sha256": "b1861f9aa63e844f7156f96629b229b3c4c68d20e6ca055bcc9c791169146855",
+            "url": "https://www.ekpc.coop/sites/default/files/2026-03/open-house-marion-county-metts-oh-02_07_2024.pdf"
+          }
+        ],
+        "locator": "ekpc.html project summaries block 4"
+      },
+      "row": null,
+      "sheet": "ekpc.html",
+      "source_sha256": "fa86862c83a5e88a55d4d97654c222db9c310549ea9d9eaa410eb7ae79d4649b"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Marion County",
+          "norm": "MARION COUNTY",
+          "status": "no_facility"
+        },
+        {
+          "name": "Metts",
+          "norm": "METTS",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Marion County - Metts",
+      "operator_keys": [
+        "EAST KENTUCKY",
+        "EKPC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Marion County - Metts transmission line & substation project",
+    "native_id": "marion-county-metts-transmission-line-substation-project",
+    "other_owners": [],
+    "owner": "East Kentucky Power Cooperative",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:ekpc",
+    "states": [
+      "21"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:firstenergy-va:page-sperryville",
+    "center": {
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/1230105717 (Page Substation), OSM way/329778181 (Sperryville Substation), corroborated by voltage.",
+      "lat": 38.664029,
+      "lon": -78.336333
+    },
+    "counties": [],
+    "description": "Page-Sperryville 138 kV Transmission Line Rebuild Project The project consists of rebuilding approximately 13.8 miles of the existing Page-Sperryville 138-kV transmission line. Potomac Edison will rebuild the existing transmission line between the Page Substation in Luray, Virginia, and the Sperryville Substation in Sperryville, Virginia. The proposed project will enhance service reliability for customers by reducing the risk of unplanned outages due to equipment failure. The project has been presented to PJM, the regional transmission system operator. More information about the project can be found at www.pjm.com. Project Documents Fact Sheet Map Book Project Location Map Interactive Map Public Information Meeting The purpose of the public information meeting is to explain the proposed project and to seek input from the community. The meeting will be held on: Wednesday, January 7, 2026 6 PM – 8 PM Sperryville Volunteer Fire Department 11871 Lee Highway Sperryville, VA 22740 Virtual Public Information Session Public engagement and feedback is an important part of the project. We invite you to view an update on the project through our ( https://firstenergy.consultation.ai/page-sperryville/ ) Questions: If you have comments or questions please feel free to view the information available on the website and reach out to leave a message for the project team at 1-888-311-4737 or send an email to transmissionprojects@firstenergycorp.com . Written comments or questions about the Proj",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [],
+        "last_modified": "2026-07-08",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/virginia/page-sperryville.html",
+        "page_sha256": "d5392213bad39a807ac0688ab9d8c8b7435825d4fb068bd95957046dcde821fc",
+        "title": "Page-Sperryville 138 kV Transmission Line Rebuild Project"
+      },
+      "row": null,
+      "sheet": "fe-virginia.html",
+      "source_sha256": "18251b814873f2bf3151eb5eeabe36e3db9d9631f9e66860c28a161cf4848d83"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/1230105717",
+            "lat": 38.6695792,
+            "lon": -78.4521195,
+            "name": "Page Substation",
+            "operator": null,
+            "voltage": "138000"
+          },
+          "name": "Page",
+          "norm": "PAGE",
+          "status": "matched"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/329778181",
+            "lat": 38.6584797,
+            "lon": -78.2205465,
+            "name": "Sperryville Substation",
+            "operator": null,
+            "voltage": "138000"
+          },
+          "name": "Sperryville",
+          "norm": "SPERRYVILLE",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Page-Sperryville 138 kV Transmission Line Rebuild Project",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": "candidate",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Page-Sperryville 138 kV Transmission Line Rebuild Project",
+    "native_id": "page-sperryville",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:firstenergy-va",
+    "states": [
+      "51"
+    ],
+    "status": "proposed",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "southeast:firstenergy-wv:glen-falls",
+    "center": null,
+    "counties": [],
+    "description": "Glen Falls and Fairview Substation Equipment Replacement Project Mon Power proposes to replace substation equipment at the terminal ends of the existing Glen Falls-Fairview 138 kV Transmission Line and the construction of a temporary transmission line bypass at one end. Mon Power Transmission Planning has identified transmission substation protection schemes that are using a certain vintage of substation electromechanical relays and communication equipment that have a history of misoperation at both the Glen Falls Substation and Fairview Substation. FirstEnergy’s Energizing the Future (EtF) Standards call for enhancement of fault protection to reduce relay misoperations, reduce the number of transmission system elements removed from service during a fault and increase the availability of transmission system elements. From 2013 to present, there were four outages on the Glen-Falls-Fairview 138 kV Transmission Line that were the direct result of failed AC equipment. This Project will mitigate the potential for outages of this nature and better serve the approximately 55.7MW of load and 5,556 customers served from this transmission line. Project Documents Glen Falls and Fairview Substation Equipment Replacement Project TMP A paper copy of the application can be supplied within 5 business days upon request at no more than the cost of printing and shipping. Request for a paper copy can be made by contacting the transmission project hotline at 1-800-589-2837 or by email ( transmiss",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [],
+        "last_modified": "2025-07-21",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/glen-falls.html",
+        "page_sha256": "7529b51e6676f3829ef89d1691a9c943900a31119b833331a91671c3af541d72",
+        "title": "Glen Falls and Fairview Substation Equipment Replacement Project"
+      },
+      "row": null,
+      "sheet": "fe-westvirginia.html",
+      "source_sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "Glen Falls and Fairview Substation Equipment Replacement Project",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Glen Falls and Fairview Substation Equipment Replacement Project",
+    "native_id": "glen-falls",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:firstenergy-wv",
+    "states": [
+      "54"
+    ],
+    "status": "proposed",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "southeast:firstenergy-wv:gore-doubs",
+    "center": null,
+    "counties": [],
+    "description": "Gore-Doubs-Goose Creek Improvements Project Potomac Edison has been awarded a project by regional transmission organization, PJM Interconnection LLC, to upgrade the company’s transmission lines in Frederick County, Clarke County, and Loudon County, Virginia, and Jefferson County, West Virginia. The project will primarily utilize existing transmission rights of way, minimizing environmental and community impacts. The work will primarily take place within approximately 44 miles of existing rights of way, beginning at the Gore Substation in Frederick County, Virginia. The work will utilize an existing right of way that traverses east through Frederick County, Virginia (17.9 miles); Clarke County, Virginia (0.2 miles); Jefferson County, West Virginia (15.4 miles); and Loudoun County, Virginia (10.5 miles). Potomac Edison will also build two new 138-kv lines between the Stonewall Substation in Clear Brook, Virginia, and the proposed Woodside Substation nearby. Public Information Meeting The purpose of the public information meeting is to explain the proposed project and to seek input from the community. The meeting will be held on: Tuesday, August 12, 2025 6 PM – 8 PM Lovettsville Volunteer Fire Hall 12837 Berlin Turnpike Lovettsville, VA 20180 Wednesday, August 13, 2025 6 PM – 8 PM Shepherd University Wellness Center 164 University Drive Shepherdstown, WV 25443 Thursday, August 14, 2025 6 PM – 8 PM Museum of the Shenandoah Valley 901 Amherst Street Winchester, VA 22601 Virtual Pu",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [
+          {
+            "index": "fe-virginia.html",
+            "page": "https://www.firstenergycorp.com/about/transmission_projects/virginia/gore-doubs.html",
+            "page_sha256": "04b022c71243c1f7f59fbb7af2ec9d14d723e62b4e9d0833923c06ef016f5383"
+          }
+        ],
+        "last_modified": "2026-01-26",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/gore-doubs.html",
+        "page_sha256": "bb579750f23fec3ba0b382e4adffcbbe1a017d3075512f29c5a6f1c781dbb3e0",
+        "title": "Gore-Doubs-Goose Creek Improvements Project"
+      },
+      "row": null,
+      "sheet": "fe-westvirginia.html",
+      "source_sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "Gore-Doubs-Goose Creek Improvements Project",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": "multi_terminal_line",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Gore-Doubs-Goose Creek Improvements Project",
+    "native_id": "gore-doubs",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:firstenergy-wv",
+    "states": [
+      "51",
+      "54"
+    ],
+    "status": "proposed",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "southeast:firstenergy-wv:gore-hampshire-rebuild",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/97366577 (Gore Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 39.27621,
+      "lon": -78.364525
+    },
+    "counties": [],
+    "description": "Gore-Hampshire 138-kV Transmission Line Rebuild Project Potomac Edison, a FirstEnergy subsidiary, is planning to rebuild 6.4 miles of its 138-kilovolt (kV) Gore-Hampshire transmission line. Approximately 2.1 miles of the line are in Frederick County, Virginia, and 4.3 miles are in Hampshire County, West Virginia. The work is necessary due to the age and condition of the current wood pole structures. Project Documents & Links Project Fact Sheet Questions: If you have comments or questions please feel free to view the information available on the website and reach out to leave a message for the project team at 1-888-311-4737 or send an email to transmissionprojects@firstenergycorp.com . Written comments or questions about the project can also be addressed to Attention: Gore-Hampshire 138-kV Transmission Line Rebuild Project, 341 White Pond Drive, Akron, Ohio 44320.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [
+          {
+            "index": "fe-virginia.html",
+            "page": "https://www.firstenergycorp.com/about/transmission_projects/virginia/gore-hampshire-rebuild.html",
+            "page_sha256": "141498d09235f00a3ea36419dc24bc459de0e179d06375fdd462fe14769b7c0e"
+          }
+        ],
+        "last_modified": "2025-12-17",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/gore-hampshire-rebuild.html",
+        "page_sha256": "1345c55fb5d608adb05d7f8e47c2331d799f346280303e954018006f0d35997d",
+        "title": "Gore-Hampshire 138-kV Transmission Line Rebuild Project"
+      },
+      "row": null,
+      "sheet": "fe-westvirginia.html",
+      "source_sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/97366577",
+            "lat": 39.2762103,
+            "lon": -78.3645252,
+            "name": "Gore Substation",
+            "operator": null,
+            "voltage": "138000"
+          },
+          "name": "Gore",
+          "norm": "GORE",
+          "status": "matched"
+        },
+        {
+          "name": "Hampshire",
+          "norm": "HAMPSHIRE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Gore-Hampshire 138-kV Transmission Line Rebuild Project",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": "candidate",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Gore-Hampshire 138-kV Transmission Line Rebuild Project",
+    "native_id": "gore-hampshire-rebuild",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:firstenergy-wv",
+    "states": [
+      "51",
+      "54"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:firstenergy-wv:messick-road-morgan",
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/221995508 (Morgan Substation), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 39.606992,
+      "lon": -78.219666
+    },
+    "counties": [],
+    "description": "Messick Road-Morgan 138-kV Transmission Line Rebuild Project The Messick Road-Morgan 138-kV transmission line rebuild project proposes rebuilding approximately 27.3 miles of the existing transmission line. The Potomac Edison Company will rebuild approximately 16.4 miles of existing transmission line in Allegany County, Maryland and approximately 10.9 miles in Morgan County, West Virginia. The proposed project is necessary to mitigate the risks associated with current conductor load limitations. Virtual Public Engagement The initial virtual public engagement platform will be available for review beginning March 31, 2025 and will provide additional information on the project. The online material includes instructions on how to contact Potomac Edison with questions or concerns. The Virtual Meeting Room can be accessed at the link listed below. Project Documents & Links Project Fact Sheet Project Map Virtual Meeting Room Interactive Project Map Questions: If you have comments or questions please feel free to view the information available on the website and reach out to leave a message for the project team at 1-888-311-4737 or send an email to transmissionprojects@firstenergycorp.com . Written comments or questions about the project will also be accepted and can be addressed to: Attention Messick Road-Morgan 138 kV Transmission Line Rebuild Project, 341 White Pond Drive, Akron, Ohio 44320.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [],
+        "last_modified": "2026-07-08",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/messick-road-morgan.html",
+        "page_sha256": "d4e08273fcaf7917858d311043ae1d2f0e694b262912d39bdafbad822b2b7501",
+        "title": "Messick Road-Morgan 138-kV Transmission Line Rebuild Project"
+      },
+      "row": null,
+      "sheet": "fe-westvirginia.html",
+      "source_sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Messick Road",
+          "norm": "MESSICK ROAD",
+          "status": "no_facility"
+        },
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/221995508",
+            "lat": 39.606992,
+            "lon": -78.2196656,
+            "name": "Morgan Substation",
+            "operator": null,
+            "voltage": "138000"
+          },
+          "name": "Morgan",
+          "norm": "MORGAN",
+          "status": "matched"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Messick Road-Morgan 138-kV Transmission Line Rebuild Project",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": "candidate",
+      "voltages_kv": [
+        138
+      ]
+    },
+    "location_review": "unreviewed",
+    "name": "Messick Road-Morgan 138-kV Transmission Line Rebuild Project",
+    "native_id": "messick-road-morgan",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:firstenergy-wv",
+    "states": [
+      "24",
+      "54"
+    ],
+    "status": "proposed",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "southeast:firstenergy-wv:sutton-substation-equipment-replacement-project",
+    "center": null,
+    "counties": [],
+    "description": "Sutton Substation Equipment Replacement Project Monongahela Power Transmission Planning has identified transmission substation protection schemes that are using a certain vintage of substation electromechanical relays and communication equipment that have a history of misoperation at the Sutton Substation. FirstEnergy’s standards call for enhancement of fault protection to reduce relay misoperations, reduce the number of transmission system elements removed from service during a fault and increase the availability of transmission system elements. The required equipment upgrades that need to be made at the Sutton Substation include: Foundations, conduit and grounding for new equipment Three 138-kV surge arresters One 138-kV CVT One 138-kV Wave trap and line tuner Construction of the project is expected to commence on or about April 2, 2024, and be complete on or about October 18, 2024. Project Documents Sutton Substation Equipment Replacement Project TMP A paper copy of the application can be supplied within 5 business days upon request at no more than the cost of printing and shipping. Request for a paper copy can be made by contacting the transmission project hotline at 1-800-589-2837 or by email. The project name should be referenced in all communications.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [],
+        "last_modified": "2025-07-21",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/sutton-substation-equipment-replacement-project.html",
+        "page_sha256": "7a04c707e08654d39668d815b467a17005da14ff74abacf41408e260f965d850",
+        "title": "Sutton Substation Equipment Replacement Project"
+      },
+      "row": null,
+      "sheet": "fe-westvirginia.html",
+      "source_sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "day",
+      "raw": "be complete on or about October 18, 2024",
+      "value": "2024-10-18"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Sutton",
+          "norm": "SUTTON",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "located_text": "Sutton Substation Equipment Replacement Project",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Sutton Substation Equipment Replacement Project",
+    "native_id": "sutton-substation-equipment-replacement-project",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2024-10-18",
+        "description": "FirstEnergy's page states “be complete on or about October 18, 2024”. A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "7a04c707e08654d39668d815b467a17005da14ff74abacf41408e260f965d850",
+            "facts": "be complete on or about October 18, 2024",
+            "locator": "project page text",
+            "publisher": "FirstEnergy",
+            "retrieved_at": "2026-09-27T08:13:29Z",
+            "source_date": "2025-07-21",
+            "url": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/sutton-substation-equipment-replacement-project.html"
+          }
+        ],
+        "id": "southeast:firstenergy-wv:sutton-substation-equipment-replacement-project:planned-2024-10-18",
+        "native_project_link": "sutton-substation-equipment-replacement-project",
+        "precision": "day",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:firstenergy-wv",
+    "states": [
+      "54"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:firstenergy-wv:wv-misop-projects",
+    "center": null,
+    "counties": [],
+    "description": "WV Misop Projects: Edgelawn-Goff Run, Weirton-Wylie Ridge-South Toronto, Albright-Kingwood-Pruntytown Projects Monongahela Power Transmission Planning has identified transmission substation protection schemes that are using a certain vintage of substation electromechanical relays and communication equipment that have a history of misoperation at the Sutton Substation. FirstEnergy’s standards call for enhancement of fault protection to reduce relay misoperations, reduce the number of transmission system elements removed from service during a fault and increase the availability of transmission system elements. Various proposed upgrades will be made at the following substations, Edgelawn, Goff Run, Albright, Kingwood, Pruntytown, Wylie ridge, and Weirton. Construction of the Projects are expected to commence on or about May 1, 2024, and be completed on or about November 1, 2024. Project Documents TMP Substation Equipment Replacement A paper copy of the application can be supplied within 5 business days upon request at no more than the cost of printing and shipping. Request for a paper copy can be made by contacting the transmission project hotline at 1-800-589-2837 or by email ( transmissionprojects@firstenergycorp.com ). The project name should be referenced in all communications.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "also_listed": [],
+        "last_modified": "2025-07-21",
+        "page": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/wv-misop-projects.html",
+        "page_sha256": "f9104dbba7b6c00ffc79d4a0b9f827ff97808e4a1766d86ad53b8d5e9cf5d130",
+        "title": "WV Misop Projects: Edgelawn-Goff Run, Weirton-Wylie Ridge-South Toronto, Albright-Kingwood-Pruntytown Projects"
+      },
+      "row": null,
+      "sheet": "fe-westvirginia.html",
+      "source_sha256": "07ec3a59044ee4b1d9142b0657a6f30479f37455a3eabfa92c2915023c969655"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "day",
+      "raw": "be completed on or about November 1, 2024",
+      "value": "2024-11-01"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "WV Misop Projects: Edgelawn-Goff Run, Weirton-Wylie Ridge-South Toronto, Albright-Kingwood-Pruntytown Projects",
+      "operator_keys": [
+        "FIRSTENERGY",
+        "FIRST ENERGY",
+        "MON POWER",
+        "MONONGAHELA",
+        "POTOMAC EDISON",
+        "ALLEGHENY"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "WV Misop Projects: Edgelawn-Goff Run, Weirton-Wylie Ridge-South Toronto, Albright-Kingwood-Pruntytown Projects",
+    "native_id": "wv-misop-projects",
+    "other_owners": [],
+    "owner": "FirstEnergy",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2024-11-01",
+        "description": "FirstEnergy's page states “be completed on or about November 1, 2024”. A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "f9104dbba7b6c00ffc79d4a0b9f827ff97808e4a1766d86ad53b8d5e9cf5d130",
+            "facts": "be completed on or about November 1, 2024",
+            "locator": "project page text",
+            "publisher": "FirstEnergy",
+            "retrieved_at": "2026-09-27T08:13:30Z",
+            "source_date": "2025-07-21",
+            "url": "https://www.firstenergycorp.com/about/transmission_projects/westvirginia/wv-misop-projects.html"
+          }
+        ],
+        "id": "southeast:firstenergy-wv:wv-misop-projects:planned-2024-11-01",
+        "native_project_link": "wv-misop-projects",
+        "precision": "day",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:firstenergy-wv",
+    "states": [
+      "54"
+    ],
+    "status": "proposed",
+    "status_group": "proposed"
+  },
+  {
+    "_id": "southeast:georgia-power:big-tazewell-farley",
+    "center": null,
+    "counties": [],
+    "description": "About the Project As part of Georgia Power’s ongoing investment in a stronger, more resilient transmission system, the Big Tazewell–Farley 500 kV Transmission Line Project includes construction of an approximately 102‑mile transmission line extending from the Farley Switching Station in Houston County, Alabama, to the new Big Tazewell 500 kV Substation in Marion County, Georgia. Crossing six Georgia counties and one Alabama county, the project will enhance grid reliability, support Georgia’s growing energy needs, and help ensure dependable electric service for customers while minimizing community impacts and maintaining ongoing engagement with local stakeholders. Strengthen the electric grid to provide reliable power today and into the future. Support growing energy needs across Georgia’s communities. Improves system performance by adding resilient transmission pathways and increasing operational efficiency. What to Expect As the project progresses, you may experience different impacts depending on your location in relation to the project. Below are some examples of what you may encounter. Vegetation Removal Restoration Site Grading Noise and Traffic Construction Activities Project Timeline Q3 2025 Substation Survey Notification Began Q3 2025 Survey Notification for Line Began Q4 2025 Substation Land Acquisition Began Q1 2026 Land Acquisition Activities for Line Began Q1-Q2 2026 Community Meetings See Dates & Locations Q3 2026 Line Clearing and Grading Begins Q1 2027 Substati",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/big-tazewell-farley.html",
+        "page_sha256": "a82b31fd8a4cb3d4b96d7921534c6301c3cb0f49f5ec8b0d65d9c9647d70db4a",
+        "title": "Big Tazewell - Farley 500kv Transmission Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Big Tazewell",
+          "norm": "BIG TAZEWELL",
+          "status": "no_facility"
+        },
+        {
+          "name": "Farley",
+          "norm": "FARLEY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Big Tazewell - Farley 500kv Transmission Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Big Tazewell - Farley 500kv Transmission Project",
+    "native_id": "big-tazewell-farley",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "01",
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:georgia-power:callaway-thomson",
+    "center": null,
+    "counties": [],
+    "description": "About the Project Georgia Power is planning the Callaway Road – Thomson Primary 500 kV Area Transmission Project. The project will include a new 500/230 kV Callaway Road Substation, approximately 17 miles of new 500 kV transmission infrastructure, and associated facilities in McDuffie and Columbia Counties. The project is being planned to provide the transmission infrastructure needed to serve a large-load customer while also strengthening the local electric grid in a rapidly growing area. These improvements are expected to add capacity, enhance reliability for homes and businesses, and help support continued growth and evolving energy needs. As planning progresses, project details will continue to be refined based on engineering, environmental, and routing studies. What's included in the project? Certain project components are designed to serve the large load customer site, while all improvements contribute to strengthening the overall transmission system. Callaway Road Substation : Construction of a new substation in Columbia County to support both 500 kV and 230 kV transmission infrastructure. Callaway Road–Thomson #1 500 kV Transmission Line : Approximately 10 miles of new 500 kV transmission line in McDuffie and Columbia counties. Callaway Road–Thomson #2 500 kV Transmission Line : Approximately 7 miles of new 500 kV transmission line in McDuffie and Columbia counties. Strengthen the electric grid with added transmission capacity Support large-load demands while reinforc",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+        "page_sha256": "c8d12cdbc88301ae316479c0b64d68fdb1b2afa5d65b7684ae01807dc7ad9ea5",
+        "title": "Callaway Road – Thomson Transmission Area Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "Callaway Road – Thomson Transmission Area Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Callaway Road – Thomson Transmission Area Project",
+    "native_id": "callaway-thomson",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:georgia-power:decatur-scottdale",
+    "center": null,
+    "counties": [],
+    "description": "About the Project As part of long-term investments in Georgia Power’s statewide transmission system, this project includes rebuilding the existing approximately 2.5‑mile Decatur – Scottdale 115 kV transmission line between the Scottdale Substation in DeKalb County and the Decatur Substation on East College Avenue, as well as relocating approximately 0.7 miles of line. This is a rebuild project driven by the age of the existing infrastructure, which was originally constructed in 1965. This project is part of Georgia Power’s ongoing commitment to strengthen and expand the electric grid. By replacing aging infrastructure with more modern materials and design, the project will enhance system reliability, support Georgia’s evolving energy needs, and help ensure safe, resilient electric service for decades to come. Strengthen the electric grid to support reliable service now and in the future Support growing energy needs across Georgia communities Prepare system performance and operational flexibility. What to Expect As the project progresses, you may experience different impacts depending on your location in relation to the project. Below are some examples of what you may encounter. Vegetation Removal Restoration Site Grading Noise and Traffic Construction Activities Project Timeline Q1 - Q3 2026 Easement Acquisition Q4 2026 Line Clearing Begins Q1 2027 Construction Begins Q4 2027 Project Completion",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html",
+        "page_sha256": "5418c2580519476e24528e7d3b415c34b6043b14dd2800f1ef3bac37d234649c",
+        "title": "Decatur – Scottdale 115 kV Transmission Line Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q4 2027 Project Completion",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Decatur",
+          "norm": "DECATUR",
+          "status": "no_facility"
+        },
+        {
+          "name": "Scottdale",
+          "norm": "SCOTTDALE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Decatur – Scottdale 115 kV Transmission Line Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        115
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Decatur – Scottdale 115 kV Transmission Line Project",
+    "native_id": "decatur-scottdale",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Power's page states “Q4 2027 Project Completion” (tentative quarter Q4 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "5418c2580519476e24528e7d3b415c34b6043b14dd2800f1ef3bac37d234649c",
+            "facts": "Q4 2027 Project Completion",
+            "locator": "project page timeline",
+            "publisher": "Georgia Power",
+            "retrieved_at": "2026-09-27T08:13:41Z",
+            "source_date": null,
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/decatur-scottdale.html"
+          }
+        ],
+        "id": "southeast:georgia-power:decatur-scottdale:planned-2027",
+        "native_project_link": "decatur-scottdale",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:georgia-power:effingham-county",
+    "center": null,
+    "counties": [],
+    "description": "About the Project The project is expected to include a new 500/230 kV Effingham County Substation , new 500 kV transmission infrastructure, and associated facilities. The project is being planned to provide the transmission infrastructure needed to serve a large-load customer while also strengthening the local electric grid in a rapidly growing area. These improvements will add capacity, enhance reliability for homes and businesses, and help support continued growth and evolving energy needs. Although some project elements are designed to meet specific customer requirements, the improvements are also expected to strengthen the transmission network and support future growth. As planning progresses, project details will be refined based on engineering, environmental, and routing studies. Strengthen the electric grid with added transmission capacity. Support large-load demands while reinforcing local system. Prepare for growing energy needs in Georgia. What to Expect As the project progresses, you may experience different impacts depending on your location in relation to the project. Below are some examples of what you may encounter. Vegetation Removal Restoration Site Grading Noise and Traffic Construction Activities Project Timeline Project timeline is tentative and as planning progresses schedule may change. Summer 2026 Notification to elected officials Summer 2026 Substation survey notifications to property owners Fall 2026 Substation land acquisition activities begin Spring",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+        "page_sha256": "e03576015e417b8d4bd3deba6d4fc584bd6290797614f48ee568dbcf1bc39057",
+        "title": "Effingham County Transmission Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "unknown",
+      "raw": null,
+      "value": null
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "Effingham County Transmission Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": "no_named_facility",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Effingham County Transmission Project",
+    "native_id": "effingham-county",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:georgia-power:grassy-hollow-great-valley",
+    "center": null,
+    "counties": [],
+    "description": "About the Project As part of long-term investments in Georgia’s statewide transmission system, Georgia Power planned the Grassy Hollow–Great Valley 230 kV Transmission Project in Bartow County, which includes construction of a new Grassy Hollow substation and a new approximately 10.4-mile 230 kV transmission line connecting the Grassy Hollow Substation to the Great Valley substation. The project was developed to serve the electric needs of a large‑load customer that requires new transmission infrastructure, while also adding capacity and strengthening reliability for the local electric grid. Strengthen the electric grid with added transmission capacity. Support large-load demands while reinforcing local system. Prepare for growing energy needs in Georgia. What to Expect As the project progresses, you may experience different impacts depending on your location in relation to the project. Below are some examples of what you may encounter. Vegetation Removal Restoration Site Grading Noise and Traffic Construction Activities Project Timeline Q4 2023 Survey Notification to Landowners Q1 2024 Easement Acquisition Begins Q2 2026 Construction Begins Q1 2027 Project Completion",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html",
+        "page_sha256": "6f977b4d712365d6db2ac749193300706e9aac0783e24e9c131e8cd0f3fc892a",
+        "title": "Grassy Hollow–Great Valley 230 kv Transmission Line Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q1 2027 Project Completion",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Grassy Hollow",
+          "norm": "GRASSY HOLLOW",
+          "status": "no_facility"
+        },
+        {
+          "name": "Great Valley",
+          "norm": "GREAT VALLEY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Grassy Hollow–Great Valley 230 kv Transmission Line Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Grassy Hollow–Great Valley 230 kv Transmission Line Project",
+    "native_id": "grassy-hollow-great-valley",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Power's page states “Q1 2027 Project Completion” (tentative quarter Q1 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "6f977b4d712365d6db2ac749193300706e9aac0783e24e9c131e8cd0f3fc892a",
+            "facts": "Q1 2027 Project Completion",
+            "locator": "project page timeline",
+            "publisher": "Georgia Power",
+            "retrieved_at": "2026-09-27T08:13:44Z",
+            "source_date": null,
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/grassy-hollow-great-valley.html"
+          }
+        ],
+        "id": "southeast:georgia-power:grassy-hollow-great-valley:planned-2027",
+        "native_project_link": "grassy-hollow-great-valley",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:georgia-power:hills-bridge-speedway",
+    "center": null,
+    "counties": [],
+    "description": "About the Project Georgia Power is planning the Hills Bridge–Speedway 500 kV Transmission Project in Henry and Clayton counties to support the electric needs of a data center customer that requires new transmission infrastructure, while also strengthening the local electric grid in a rapidly growing area. The project currently includes construction of three transmission lines, one 500 kV line and two 230 kV lines, as well as two new substations, Hills Bridge 500/230 kV Substation and Speedway 230 kV Substation. Together, these improvements will add capacity, enhance reliability for homes and businesses, and position the region to support continued growth and evolving energy needs. What’s included in the project? Certain components of the project are being evaluated to support customer-specific needs, while all improvements contribute to strengthening the overall transmission system. Some elements are in the planning phase, and details may be refined as the project progresses. Hills Bridge 500/230 kV Substation: Construction of a new substation in Clayton County to support both 500 kV and 230 kV transmission infrastructure. Speedway 230 kV Substation: Construction of a new substation in Henry County that will serve this new data customer on the customer’s property. O’Hara–Scherer 500 kV Transmission Line (Hills Bridge Loop): Approximately .25 mile of new 500 kV transmission line in Clayton County connecting the new substation to existing transmission facilities. Hills Bridge–S",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html",
+        "page_sha256": "90ab0ce80b7a7bd49f96526485dfc3222a91745e3e9966d2a4a9c30f34b17347",
+        "title": "Hills Bridge - Speedway 230/500 kV Transmission Line Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q4 2028 Project Completion",
+      "value": "2028"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Hills Bridge",
+          "norm": "HILLS BRIDGE",
+          "status": "no_facility"
+        },
+        {
+          "name": "Speedway",
+          "norm": "SPEEDWAY",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Hills Bridge - Speedway 230/500 kV Transmission Line Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        230,
+        500
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Hills Bridge - Speedway 230/500 kV Transmission Line Project",
+    "native_id": "hills-bridge-speedway",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2028",
+        "description": "Georgia Power's page states “Q4 2028 Project Completion” (tentative quarter Q4 2028; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "90ab0ce80b7a7bd49f96526485dfc3222a91745e3e9966d2a4a9c30f34b17347",
+            "facts": "Q4 2028 Project Completion",
+            "locator": "project page timeline",
+            "publisher": "Georgia Power",
+            "retrieved_at": "2026-09-27T08:13:46Z",
+            "source_date": null,
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/hills-bridge-speedway.html"
+          }
+        ],
+        "id": "southeast:georgia-power:hills-bridge-speedway:planned-2028",
+        "native_project_link": "hills-bridge-speedway",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:georgia-power:tomochichi-towaliga",
+    "center": null,
+    "counties": [],
+    "description": "About the Project Georgia Power is planning the Tomochichi – Towaliga River Transmission Project in Butts and Spalding counties to support the electric needs of a large‑load customer that requires new transmission infrastructure, while also strengthening the local electric grid in a growing area. The project includes construction of new transmission lines and substations to add capacity, enhance reliability for homes and businesses, and support continued growth and evolving energy needs across the region. What’s included in the project? Certain components of the project are being evaluated to support specific customer needs, while all improvements contribute to strengthening the overall transmission system. Some elements are currently in the planning phase, and details may be refined as the project progresses. Tomochichi – Towaliga River #1 230 kV Transmission Line : Construction of one new approximately 5‑mile 230 kV transmission line located in portions of Butts and Spalding counties. Tomochichi – Towaliga River #2 230 kV Transmission Line : Construction of one new approximately 5‑mile 230 kV transmission line located in portions of Butts and Spalding counties. Tomochichi Substation : Construction of a new substation to support the new transmission lines and enhance system capacity and reliability in the area. Strengthen the electric grid with added transmission capacity. Support large-load demands while reinforcing local system. Prepare for growing energy needs in Georgia ",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "page": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html",
+        "page_sha256": "3e78969c5058c2d6d700cd02c31abecea0d771153f454d512113d0755efea9a1",
+        "title": "Tomochichi – Towaliga River Area Project"
+      },
+      "row": null,
+      "sheet": "gpc.html",
+      "source_sha256": "ddaf9cedc37a7380fe5eafebac0eef7cc2c7ee0a5cb98b11c06e8ab62a00bbbd"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "Q4 2027 Project Completion Target",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [],
+      "independent_review": false,
+      "kind": null,
+      "located_text": "Tomochichi – Towaliga River Area Project",
+      "operator_keys": [
+        "GEORGIA POWER",
+        "SOUTHERN"
+      ],
+      "reason": "program_area_or_multi_facility",
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": []
+    },
+    "location_review": "unlocated",
+    "name": "Tomochichi – Towaliga River Area Project",
+    "native_id": "tomochichi-towaliga",
+    "other_owners": [],
+    "owner": "Georgia Power",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Power's page states “Q4 2027 Project Completion Target” (tentative quarter Q4 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "3e78969c5058c2d6d700cd02c31abecea0d771153f454d512113d0755efea9a1",
+            "facts": "Q4 2027 Project Completion Target",
+            "locator": "project page timeline",
+            "publisher": "Georgia Power",
+            "retrieved_at": "2026-09-27T08:13:48Z",
+            "source_date": null,
+            "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/tomochichi-towaliga.html"
+          }
+        ],
+        "id": "southeast:georgia-power:tomochichi-towaliga:planned-2027",
+        "native_project_link": "tomochichi-towaliga",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:georgia-power",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:gtc-ecrp:bethabara-east-walton-230-kv-transmission-line",
+    "center": null,
+    "counties": [],
+    "description": "This project is approximately 10.2 miles long. While the majority of the easements were purchased in 2013, some easements still need to be acquired.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "text": "This project is approximately 10.2 miles long. While the majority of the easements were purchased in 2013, some easements still need to be acquired.",
+        "title": "Bethabara – East Walton 230 kV Transmission Line (Walton and Oconee Counties)"
+      },
+      "row": null,
+      "sheet": "gtc-ecrp.html",
+      "source_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "ready for service Q2 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "corroboration": [
+            "voltage"
+          ],
+          "name": "Bethabara",
+          "norm": "BETHABARA",
+          "status": "operator_conflict"
+        },
+        {
+          "name": "East Walton",
+          "norm": "EAST WALTON",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Bethabara – East Walton 230 kV Transmission Line",
+      "operator_keys": [
+        "GEORGIA TRANSMISSION",
+        "GTC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Bethabara – East Walton 230 kV Transmission Line",
+    "native_id": "bethabara-east-walton-230-kv-transmission-line",
+    "other_owners": [],
+    "owner": "Georgia Transmission Corporation",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Transmission Corporation's page states “ready for service Q2 2027” (tentative quarter Q2 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0",
+            "facts": "ready for service Q2 2027",
+            "locator": "What To Expect: Next Steps",
+            "publisher": "Georgia Transmission Corporation",
+            "retrieved_at": "2026-09-27T08:13:49Z",
+            "source_date": null,
+            "url": "https://www.gatransmission.com/ecrp/"
+          }
+        ],
+        "id": "southeast:gtc-ecrp:bethabara-east-walton-230-kv-transmission-line:planned-2027",
+        "native_project_link": "bethabara-east-walton-230-kv-transmission-line",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:gtc-ecrp",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:gtc-ecrp:bostwick-230-kv-switching-station",
+    "center": null,
+    "counties": [],
+    "description": "The parcel for this switching station was acquired in 2009 and is located along High Shoals Road about two miles northeast of the intersection with State Route 83.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "text": "The parcel for this switching station was acquired in 2009 and is located along High Shoals Road about two miles northeast of the intersection with State Route 83.",
+        "title": "Bostwick 230 kV Switching Station (Morgan County)"
+      },
+      "row": null,
+      "sheet": "gtc-ecrp.html",
+      "source_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "ready for service Q2 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Bostwick",
+          "norm": "BOSTWICK",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "site",
+      "located_text": "Bostwick 230 kV Switching Station",
+      "operator_keys": [
+        "GEORGIA TRANSMISSION",
+        "GTC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Bostwick 230 kV Switching Station",
+    "native_id": "bostwick-230-kv-switching-station",
+    "other_owners": [],
+    "owner": "Georgia Transmission Corporation",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Transmission Corporation's page states “ready for service Q2 2027” (tentative quarter Q2 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0",
+            "facts": "ready for service Q2 2027",
+            "locator": "What To Expect: Next Steps",
+            "publisher": "Georgia Transmission Corporation",
+            "retrieved_at": "2026-09-27T08:13:49Z",
+            "source_date": null,
+            "url": "https://www.gatransmission.com/ecrp/"
+          }
+        ],
+        "id": "southeast:gtc-ecrp:bostwick-230-kv-switching-station:planned-2027",
+        "native_project_link": "bostwick-230-kv-switching-station",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:gtc-ecrp",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:gtc-ecrp:bostwick-east-walton-230-kv-transmission-line",
+    "center": null,
+    "counties": [],
+    "description": "This project is approximately 5.2 miles long. All easements were purchased in 2011. This transmission line will be constructed adjacent to a portion of the proposed East Walton – Rockville Transmission Line corridor.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "text": "This project is approximately 5.2 miles long. All easements were purchased in 2011. This transmission line will be constructed adjacent to a portion of the proposed East Walton – Rockville Transmission Line corridor.",
+        "title": "Bostwick – East Walton 230 kV Transmission Line (Walton and Morgan Counties)"
+      },
+      "row": null,
+      "sheet": "gtc-ecrp.html",
+      "source_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "ready for service Q2 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "Bostwick",
+          "norm": "BOSTWICK",
+          "status": "no_facility"
+        },
+        {
+          "name": "East Walton",
+          "norm": "EAST WALTON",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "Bostwick – East Walton 230 kV Transmission Line",
+      "operator_keys": [
+        "GEORGIA TRANSMISSION",
+        "GTC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "Bostwick – East Walton 230 kV Transmission Line",
+    "native_id": "bostwick-east-walton-230-kv-transmission-line",
+    "other_owners": [],
+    "owner": "Georgia Transmission Corporation",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Transmission Corporation's page states “ready for service Q2 2027” (tentative quarter Q2 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0",
+            "facts": "ready for service Q2 2027",
+            "locator": "What To Expect: Next Steps",
+            "publisher": "Georgia Transmission Corporation",
+            "retrieved_at": "2026-09-27T08:13:49Z",
+            "source_date": null,
+            "url": "https://www.gatransmission.com/ecrp/"
+          }
+        ],
+        "id": "southeast:gtc-ecrp:bostwick-east-walton-230-kv-transmission-line:planned-2027",
+        "native_project_link": "bostwick-east-walton-230-kv-transmission-line",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:gtc-ecrp",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:gtc-ecrp:east-walton-jacks-creek-230-kv-transmission-line",
+    "center": null,
+    "counties": [],
+    "description": "This project is approximately 9 miles long. All easements were purchased in 2010.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "text": "This project is approximately 9 miles long. All easements were purchased in 2010.",
+        "title": "East Walton – Jacks Creek 230 kV Transmission Line (Walton County)"
+      },
+      "row": null,
+      "sheet": "gtc-ecrp.html",
+      "source_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "ready for service Q2 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "East Walton",
+          "norm": "EAST WALTON",
+          "status": "no_facility"
+        },
+        {
+          "name": "Jacks Creek",
+          "norm": "JACKS CREEK",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "East Walton – Jacks Creek 230 kV Transmission Line",
+      "operator_keys": [
+        "GEORGIA TRANSMISSION",
+        "GTC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        230
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "East Walton – Jacks Creek 230 kV Transmission Line",
+    "native_id": "east-walton-jacks-creek-230-kv-transmission-line",
+    "other_owners": [],
+    "owner": "Georgia Transmission Corporation",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Transmission Corporation's page states “ready for service Q2 2027” (tentative quarter Q2 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0",
+            "facts": "ready for service Q2 2027",
+            "locator": "What To Expect: Next Steps",
+            "publisher": "Georgia Transmission Corporation",
+            "retrieved_at": "2026-09-27T08:13:49Z",
+            "source_date": null,
+            "url": "https://www.gatransmission.com/ecrp/"
+          }
+        ],
+        "id": "southeast:gtc-ecrp:east-walton-jacks-creek-230-kv-transmission-line:planned-2027",
+        "native_project_link": "east-walton-jacks-creek-230-kv-transmission-line",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:gtc-ecrp",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  },
+  {
+    "_id": "southeast:gtc-ecrp:east-walton-rockville-500-kv-transmission-line",
+    "center": null,
+    "counties": [],
+    "description": "This project is approximately 46.5 miles long with approximately 15 miles of the transmission line route in Putnam County located in a vacant but maintained right of way purchased from Georgia Power Company. All easements were purchased in 2011.",
+    "evidence": {
+      "page": null,
+      "raw": {
+        "text": "This project is approximately 46.5 miles long with approximately 15 miles of the transmission line route in Putnam County located in a vacant but maintained right of way purchased from Georgia Power Company. All easements were purchased in 2011.",
+        "title": "East Walton – Rockville 500 kV Transmission Line (Walton, Morgan and Putnam Counties)"
+      },
+      "row": null,
+      "sheet": "gtc-ecrp.html",
+      "source_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0"
+    },
+    "geography_basis": "source_state",
+    "in_service": {
+      "precision": "year",
+      "raw": "ready for service Q2 2027",
+      "value": "2027"
+    },
+    "location_candidate": {
+      "dataset": "OpenStreetMap power=substation (ODbL), reported state",
+      "endpoints": [
+        {
+          "name": "East Walton",
+          "norm": "EAST WALTON",
+          "status": "no_facility"
+        },
+        {
+          "name": "Rockville",
+          "norm": "ROCKVILLE",
+          "status": "no_facility"
+        }
+      ],
+      "independent_review": false,
+      "kind": "line",
+      "located_text": "East Walton – Rockville 500 kV Transmission Line",
+      "operator_keys": [
+        "GEORGIA TRANSMISSION",
+        "GTC"
+      ],
+      "reason": null,
+      "rule": "C45",
+      "tier": null,
+      "voltages_kv": [
+        500
+      ]
+    },
+    "location_review": "unlocated",
+    "name": "East Walton – Rockville 500 kV Transmission Line",
+    "native_id": "east-walton-rockville-500-kv-transmission-line",
+    "other_owners": [],
+    "owner": "Georgia Transmission Corporation",
+    "planning_region": null,
+    "project_events": [
+      {
+        "date": "2027",
+        "description": "Georgia Transmission Corporation's page states “ready for service Q2 2027” (tentative quarter Q2 2027; kept at year precision). A planned date as the page states it, not evidence of completion.",
+        "evidence": [
+          {
+            "access_review": "Public utility website; no login, no CEII banner.",
+            "artifact_sha256": "c9a8c08537d2580822e128fc3645ae3f83f4fedb9d49f2072b064a95e53034f0",
+            "facts": "ready for service Q2 2027",
+            "locator": "What To Expect: Next Steps",
+            "publisher": "Georgia Transmission Corporation",
+            "retrieved_at": "2026-09-27T08:13:49Z",
+            "source_date": null,
+            "url": "https://www.gatransmission.com/ecrp/"
+          }
+        ],
+        "id": "southeast:gtc-ecrp:east-walton-rockville-500-kv-transmission-line:planned-2027",
+        "native_project_link": "east-walton-rockville-500-kv-transmission-line",
+        "precision": "year",
+        "type": "planned_milestone"
+      }
+    ],
+    "source_id": "southeast:gtc-ecrp",
+    "states": [
+      "13"
+    ],
+    "status": null,
+    "status_group": "unknown"
+  }
+]
