@@ -42,3 +42,7 @@ plans (for sponsor judges), and to make the pin its own quick control.
   merging them would be our inference.
 - **States A–Z down two columns.** People look a state up by name; two columns halve the height.
 - **Pin is a button (`P`), not the last row.** It is picked on the map, not from a list.
+
+## Superseded (2026-09-27)
+"Not recoloured by region" is superseded by [F19 state ink](F19-state-ink.md): color is now the state, and the C25
+tier is carried by shape.

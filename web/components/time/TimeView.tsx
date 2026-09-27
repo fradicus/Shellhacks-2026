@@ -3,6 +3,7 @@
 import { bearing } from "./sceneCamera";
 import { SceneControls } from "./SceneControls";
 import { ScopeBar, type ScopeOption } from "./ScopeBar";
+import { INKS, NO_STATE_INK } from "./stateInk";
 import { formatScope, haversineMi, inScope, parseScope, planName, planOf, RULE_MI, scopeName, statesOf, type Scope, type ScopeGeography } from "./scope";
 
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -42,18 +43,10 @@ export interface TimePair {
 }
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
-const COLOR: Record<Utility, string> = { DESC: "#5cc8ff", GPC: "#ffae42", unknown: "#8b93a7" };
 const UTILITY: Record<Utility, string> = { DESC: "Dominion Energy SC", GPC: "Georgia Power", unknown: "Owner not mapped" };
 /** An unmapped owner still has a filed code (MEAG, GTC ...); say which, and that it isn't matched to a utility. */
 const owner = (p: TimeProject) =>
   p.national ? (p.national.project.owner ?? "Owner unknown") : p.utility === "unknown" && p.owner_code ? `Owner code ${p.owner_code}, not mapped` : UTILITY[p.utility];
-/** National points by how they were located; tentative ones also draw as hollow beads (C25). */
-const TIER_COLOR: Record<NationalTier, string> = { confirmed: "#88dbc1", official: "#8fb4ff", tentative: "#f0c36a" };
-const TIER_LABEL: Record<NationalTier, string> = {
-  confirmed: "National, confirmed location", official: "National, owner-published location",
-  tentative: "National, tentative location (not independently reviewed)",
-};
-const projectColor = (p: TimeProject) => p.national ? TIER_COLOR[p.national.tier] : COLOR[p.utility];
 const VIEWS: { v: View; label: string; help: string }[] = [
   { v: "future", label: "Future", help: "Both dates exact and on or after the analysis date" },
   { v: "historical", label: "Historical", help: "At least one in-service date before the analysis date" },
@@ -110,6 +103,7 @@ export function TimeView({
   fixtureMode,
   national,
   geography,
+  stateInk,
   legacyAvailable,
   pairsAvailable,
 }: {
@@ -120,6 +114,8 @@ export function TimeView({
   legacyAvailable: boolean;
   pairsAvailable: boolean;
   geography: ScopeGeography;
+  /** State FIPS → pen color; a project is drawn in its first stored state's ink. */
+  stateInk: Record<string, string>;
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
     drawn: number; inService: number; unlocated: number; truncated: boolean };
 }) {
@@ -159,6 +155,7 @@ export function TimeView({
   const scopeRead = useRef(false);
 
   // --- facts, derived once --------------------------------------------------------------------------------------------
+  const projectColor = useCallback((p: TimeProject) => stateInk[statesOf(p)[0]] ?? NO_STATE_INK, [stateInk]);
   const byKey = useMemo(() => new Map(projects.map((p) => [p.key, p])), [projects]);
   const located = useMemo(() => projects.filter((p) => p.center), [projects]);
   // --- scope: which part of the map is lifted (spec 15–21) ------------------------------------------------------------
@@ -217,8 +214,8 @@ export function TimeView({
   const items: TimeItem[] = useMemo(
     () =>
       located.map((p) => ({ key: p.key, color: projectColor(p), lng: p.center!.lon, lat: p.center!.lat, span: drawn.get(p.key)!,
-        outline: p.national?.tier === "tentative" })),
-    [located, drawn],
+        outline: p.national?.tier === "tentative", ringed: p.national?.tier === "confirmed" })),
+    [located, drawn, projectColor],
   );
   const tierCounts = useMemo(() => {
     const counts: Record<NationalTier, number> = { confirmed: 0, official: 0, tentative: 0 };
@@ -470,14 +467,14 @@ export function TimeView({
     layerRef.current?.setRules(
       ra?.center && rb?.center
         ? {
-            a: { lng: ra.center.lon, lat: ra.center.lat, color: COLOR[ra.utility] },
-            b: { lng: rb.center.lon, lat: rb.center.lat, color: COLOR[rb.utility] },
+            a: { lng: ra.center.lon, lat: ra.center.lat, color: projectColor(ra) },
+            b: { lng: rb.center.lon, lat: rb.center.lat, color: projectColor(rb) },
           }
         : pin
           ? { a: { lng: pin.lon, lat: pin.lat, color: "#bfe9ff" } }
           : null,
     );
-  }, [ready, ra, rb, pin]);
+  }, [ready, ra, rb, pin, projectColor]);
 
   useEffect(() => {
     layerRef.current?.setAsOf(asOf);
@@ -992,11 +989,11 @@ export function TimeView({
                     <span className={s.rank}>{String(i + 1).padStart(2, "0")}</span>
                     <span className={s.pairNames}>
                       <span>
-                        <i style={{ background: COLOR[a?.utility ?? "unknown"] }} />
+                        <i style={{ background: a ? projectColor(a) : NO_STATE_INK }} />
                         {a?.name ?? p.a}
                       </span>
                       <span>
-                        <i style={{ background: COLOR[b?.utility ?? "unknown"] }} />
+                        <i style={{ background: b ? projectColor(b) : NO_STATE_INK }} />
                         {b?.name ?? p.b}
                       </span>
                     </span>
@@ -1132,7 +1129,7 @@ export function TimeView({
             </div>
           </div>
           {[pa, pb].map((p) => (
-            <section key={p.key} className={s.proj} style={{ ["--c" as string]: COLOR[p.utility] }}>
+            <section key={p.key} className={s.proj} style={{ ["--c" as string]: projectColor(p) }}>
               <p className={s.projUtil}>{owner(p)}</p>
               <h2>{p.name}</h2>
               <p>
@@ -1221,17 +1218,24 @@ export function TimeView({
             </li>
           ) : null}
           <li className={s.utils}>
-            {(["confirmed", "official", "tentative"] as const).filter((t) => tierCounts[t] > 0).map((t) =>
-              <span key={t}><i style={{ background: TIER_COLOR[t] }} /> {TIER_LABEL[t]}</span>)}
             <span>
-              <i style={{ background: COLOR.DESC }} /> Dominion SC
+              <i style={{ background: `conic-gradient(${INKS.join(", ")}, ${INKS[0]})` }} /> Color: the project&apos;s state
             </span>
-            <span>
-              <i style={{ background: COLOR.GPC }} /> Georgia Power
+          </li>
+          <li className={s.utils}>
+            {tierCounts.confirmed > 0 ? (
+              <span title="Location independently reviewed">
+                <i style={{ background: NO_STATE_INK, boxShadow: `0 0 0 2px #0b0f16, 0 0 0 3.2px ${NO_STATE_INK}` }} /> Confirmed
+              </span>
+            ) : null}
+            <span title="Located from the owner's own filing or publication, not independently reviewed">
+              <i style={{ background: NO_STATE_INK, boxShadow: "none" }} /> Owner-published
             </span>
-            <span>
-              <i style={{ background: COLOR.unknown }} /> Owner not mapped
-            </span>
+            {tierCounts.tentative > 0 ? (
+              <span title="Location not independently reviewed">
+                <i style={{ background: "transparent", boxShadow: `inset 0 0 0 1.5px ${NO_STATE_INK}` }} /> Tentative location
+              </span>
+            ) : null}
           </li>
         </ul>
         <SceneControls styles={s} flat={flat} onFlat={toggleFlat} onOverview={overview} />
