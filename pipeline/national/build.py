@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 from collections import Counter
+from importlib import import_module
 from pathlib import Path
 from typing import Any
 
@@ -69,7 +70,7 @@ def _coverage(projects: list[dict[str, Any]], imported_source_ids: set[str]) -> 
         "notes": [
             "Counts cover imported records only and do not claim nationwide project completeness.",
             "ISO-NE supplies no counties or coordinates; independently reviewed expansion evidence may locate projects.",
-            "Legacy project state assignments and every current project county remain unknown rather than inferred.",
+            "Unknown project states and counties remain unknown rather than inferred.",
             "Legacy discovery includes current filing versions only; superseded versions remain in the filing-change view.",
             "Census bounds and representative points frame reference geography and never become project locations.",
             "EIA-861 remains a reference-only catalog entry; no utility identity or service-area match is inferred.",
@@ -178,11 +179,12 @@ def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     errors = validate_snapshot_values(snapshot)
     if errors:
         raise ValueError("national snapshot validation failed:\n" + "\n".join(errors))
-    # Only the fixed release path activates F38; source/candidate folders are never scanned.
-    if (root / "data" / "expansion" / "releases" / "active.json").exists():
-        from expansion.publish import apply_release
-
-        snapshot = apply_release(snapshot, root)
+    # Fixed producer order: C23 locations first, then C27 new Southeast identities.
+    # Source/candidate folders are never scanned and cannot activate themselves.
+    for producer in ("expansion", "southeast"):
+        if not (root / "data" / producer / "releases" / "active.json").exists():
+            continue
+        snapshot = import_module(f"{producer}.publish").apply_release(snapshot, root)
         imported_source_ids = {
             source["_id"] for source in snapshot["sources"] if source["import_status"] == "imported"
         }
