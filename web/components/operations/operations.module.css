@@ -175,7 +175,7 @@
 .results { min-width: 0; }
 .resultsHeading { display: flex; align-items: end; justify-content: space-between; min-height: 42px; padding: 0 4px; gap: 15px; }
 .resultsHeading h2 { margin: 1px 0 0; font-size: 28px; }
-.blankSlate { min-height: 360px; display: grid; place-content: center; text-align: center; padding: 38px; color: var(--muted); }
+.blankSlate { min-height: 360px; display: grid; place-content: center; text-align: center; padding: 38px; color: var(--muted); gap: 10px; justify-items: center; }
 .blankSlate span { font: 50px var(--font-display); color: var(--accent); }
 .blankSlate h3 { color: var(--text); font: 28px var(--font-display); margin: 2px 0; }
 .blankSlate p { max-width: 430px; }
@@ -239,12 +239,176 @@
 .footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--border-strong); margin-top: 28px; padding-top: 14px; color: var(--text-3); font-size: var(--fs-xs); }
 .footer p { max-width: 700px; margin: 0; }
 
+.viewTabs {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  margin: 16px 0 4px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface) 88%, #123a38);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.viewTab,
+.viewTabActive {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  color: var(--muted);
+  background: transparent;
+}
+
+.viewTabActive {
+  color: #f7fbfa;
+  background: #123a38;
+}
+
+.factorsBoard {
+  display: grid;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.factorsIntro {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: end;
+}
+
+.factorsIntro h2 {
+  margin: 4px 0 8px;
+  font-size: clamp(28px, 4vw, 42px);
+}
+
+.factorsIntro p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.factorsActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.factorsTotals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  background: var(--surface);
+  padding: 14px;
+}
+
+.factorsTotals strong {
+  display: block;
+  margin-top: 4px;
+  font: 28px/1 var(--font-display);
+}
+
+.factorsTotals span:last-child {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+}
+
+.factorsTableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  background: var(--surface);
+}
+
+.factorsTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.factorsTable th,
+.factorsTable td {
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+  vertical-align: top;
+  text-align: left;
+}
+
+.factorsTable thead th {
+  border-top: 0;
+  color: var(--text-3);
+  font: 10px var(--font-mono);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  background: var(--surface-2);
+}
+
+.factorLabel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.factorEvidence {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--fs-s);
+}
+
+.factorRate {
+  display: grid;
+}
+
+.factorRate input {
+  width: 100%;
+  min-width: 96px;
+  min-height: 40px;
+}
+
+.disclosure {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--fs-s);
+}
+
+.error {
+  display: block;
+  margin-top: 4px;
+  color: var(--warn);
+  font-size: var(--fs-xs);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (max-width: 1050px) {
   .readiness { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .readiness > div:nth-child(2) { border-right: 0; }
   .readiness > div:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
   .workspace { grid-template-columns: 1fr; }
   .blankSlate { min-height: 220px; }
+  .factorsTotals { grid-template-columns: 1fr; }
+  .factorsIntro { flex-direction: column; align-items: start; }
 }
 
 @media (max-width: 640px) {
@@ -264,12 +428,17 @@
   .refreshLine,
   .metadataRetry,
   .footer { align-items: flex-start; flex-direction: column; }
+  .viewTabs { width: 100%; }
+  .viewTab,
+  .viewTabActive { flex: 1; text-align: center; }
 }
 
 @media print {
   .controls,
   .readiness,
-  .refreshLine { display: none; }
+  .refreshLine,
+  .viewTabs,
+  .factorsActions { display: none; }
   .workspace { display: block; }
   .evidenceCard { break-inside: avoid; box-shadow: none; }
 }

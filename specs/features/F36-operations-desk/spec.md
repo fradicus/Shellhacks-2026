@@ -24,3 +24,13 @@ Test validation, unavailable and mixed success, malformed/outdated responses, co
 The shipped page keeps the manual worksite, optional verified directory lookup, truck route and actual-outcome cohort as separate progressive sections. Initial worksite evidence is fetched once; visible current-condition refreshes share a per-point attempt clock with manual refreshes and failed requests. Soil and annual AEF evidence retain their original retrieval times. Every response is strictly validated and bound to the submitted point, vehicle or cohort before display, and provider failures remain independent.
 
 The normal route shows real readiness from the public server APIs. Test-only mixed states are intercepted only in Playwright and labeled synthetic in both visible content and artifact names. Without Google LVR configuration or an externally approved actual-history model, routing and duration estimates stay unavailable and no numeric fallback is shown.
+
+## Route factors tab
+
+`/operations?view=factors` is a Factors tab on the same desk (Planning remains the default). A pure client
+pipeline (`factors.ts`) derives evidence-backed factor rows from the last checked worksite and truck route:
+baseline travel, weather alerts, precipitation, road work, ignored restrictions, route warnings, soil drainage,
+and AEF coverage. Presence comes from provider envelopes; minutes and dollars stay null until the user enters
+rates (provider travel minutes may seed only the baseline travel row). Totals stay unknown until every
+time/cost-relevant present factor has a valid rate. No invented savings, delay probabilities, or default
+mobilization costs. See [F36-route-factors](../../decisions/F36-route-factors.md).
