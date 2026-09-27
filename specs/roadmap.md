@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F19, F21, F37, F40, F42]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41]
+  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41, F19, F37]
 frozen_paths:
   - schemas/
   - scripts/
@@ -225,3 +225,11 @@ labeled official, candidate, unique-name candidate and county-reference tiers; n
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F42 | Pacific Northwest project coverage with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Time and History cleanup
+
+The user explicitly launched [issue #190](https://github.com/fradicus/Shellhacks-2026/issues/190).
+[C34](decisions/C34-time-history-cleanup.md) transfers F19/F37 to codex-local for sequential,
+behavior-preserving presentation cleanup. This reserves their scene/view/CSS work to
+that session until its feature PRs finish. Existing data and F31 claims remain intact.
+This does not launch F37 contract/award discovery or change either page's evidence semantics.
