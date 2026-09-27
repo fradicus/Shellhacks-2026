@@ -1,6 +1,7 @@
 import { HazmatSchema, SCHEMA_VERSION, PointSchema, type Envelope, type Point, type ConditionsResponse, type WaterResponse, type RouteRequest, type RouteResponse, type SiteRequest, type SiteResponse, type ReferenceResponse, type WeatherData, type RoadworkData, type AEFData } from "./contracts";
 import { aef, readSnapshot, type AEFSnapshot, ATTRIBUTION } from "./aef";
 import { context, empty, weather, soil, roadwork, truckRoute } from "./providers";
+import { OperationsError } from "./errors";
 import { water as waterProviders } from "./water";
 import { digest } from "./transport";
 
@@ -74,7 +75,7 @@ function combine<T>(provider: "weather" | "roadwork" | "aef", request: RouteRequ
 }
 export async function route(request: RouteRequest, ctx = context(), snapshot?: AEFSnapshot | null): Promise<RouteResponse> {
   const delta = Date.parse(request.departure_at) - ctx.now.getTime();
-  if (delta < -60000 || delta > LIMITS.max_departure_days * 86400_000) throw new Error("Departure must be now through seven days ahead");
+  if (delta < -60000 || delta > LIMITS.max_departure_days * 86400_000) throw new OperationsError("departure_window");
   const unavailable = (provider: "weather" | "roadwork" | "aef") => empty<never>(provider, request, "No validated truck route geometry is available for sampling.", "unavailable", ctx.now);
   const { result, polyline } = await truckRoute(request, ctx);
   const response: RouteResponse = { request, status: "incomplete", route: result, weather: unavailable("weather"), roadwork: unavailable("roadwork"), aef: unavailable("aef"), limitations: ["Point samples cannot certify continuous corridor conditions or legal vehicle access."] };
