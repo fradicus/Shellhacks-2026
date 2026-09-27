@@ -38,14 +38,12 @@
 
 .stage {
   composes: stage from "./scene.module.css";
-  --ink-2: rgba(244, 239, 230, 0.66); /* small mono labels: 0.56 keeps AA (≈5:1) over the dark glass */
+  --ink-2: rgba(244, 239, 230, 0.66);
   --sheet: #bfe9ff;
   --glass: rgba(9, 12, 19, 0.74);
   --edge: rgba(190, 225, 255, 0.1);
   background: radial-gradient(80% 70% at 55% 35%, #0b1220 0%, #05070b 70%);
 }
-
-/* Other routes also load MapLibre CSS; keep its relative positioning from winning. */
 
 .map :global(.maplibregl-ctrl-attrib) {
   background: rgba(5, 7, 11, 0.6);
