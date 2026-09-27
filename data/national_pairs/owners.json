@@ -1,0 +1,597 @@
+{
+  "version": "national-owner-aliases-v1",
+  "notes": [
+    "Exact case/whitespace normalization only. Explicit grouped aliases conservatively suppress intra-family pairs. Unlisted owners and unresolved co-owners are excluded. Filed literal identities cite their imported public sources; no publisher is substituted for an owner."
+  ],
+  "entries": [
+    {
+      "identities": [
+        "aep"
+      ],
+      "aliases": [
+        "AEP",
+        "AEP Transmission",
+        "AEP TCC",
+        "AEP TNC",
+        "AEP Texas",
+        "Appalachian Power Company",
+        "Indiana Michigan Power Company",
+        "Kentucky Power Company"
+      ],
+      "evidence": [
+        "https://www.aep.com/about/businesses/opcos/",
+        "https://www.aeptransmission.com/texas/"
+      ]
+    },
+    {
+      "identities": [
+        "duke"
+      ],
+      "aliases": [
+        "Duke Energy",
+        "Duke Energy Carolinas (DEC)",
+        "Duke Energy Progress (DEP)",
+        "Duke Energy Florida"
+      ],
+      "evidence": [
+        "https://news.duke-energy.com/releases/duke-energy-reaches-agreements-with-north-carolina-customer-advocates-nc-attorney-generals-office-and-others-on-proposed-combination-of-duke-energy-carolinas-duke-energy-progress"
+      ]
+    },
+    {
+      "identities": [
+        "xcel"
+      ],
+      "aliases": [
+        "Xcel Energy",
+        "Public Service Company of Colorado/ Xcel Energy",
+        "NORTHERN STATES POWER COMPANY",
+        "SPS"
+      ],
+      "evidence": [
+        "https://www.transmissionprod2.xcelenergy.com/About"
+      ]
+    },
+    {
+      "identities": [
+        "firstenergy"
+      ],
+      "aliases": [
+        "FirstEnergy",
+        "American Transmission Systems",
+        "Mid-Atlantic Interstate Transmission",
+        "Trans-Allegheny Interstate Line"
+      ],
+      "evidence": [
+        "https://www.firstenergycorp.com/about/leadership_team.html"
+      ]
+    },
+    {
+      "identities": [
+        "fpl"
+      ],
+      "aliases": [
+        "Florida Power & Light Company",
+        "Gulf Power Company"
+      ],
+      "evidence": [
+        "https://www.investor.nexteraenergy.com/news-and-events/news-releases/2022/01-01-2022-140028400"
+      ]
+    },
+    {
+      "identities": [
+        "centerpoint"
+      ],
+      "aliases": [
+        "CNP",
+        "CenterPoint Energy",
+        "CenterPoint Energy Houston Electric"
+      ],
+      "evidence": [
+        "https://www.centerpointenergy.com/en-us/Documents/Specification-for-remote-telemetry-of-interconnections.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "lcra"
+      ],
+      "aliases": [
+        "LCRATSC",
+        "LCRA Transmission Services Corporation"
+      ],
+      "evidence": [
+        "https://www.lcra.org/energy/electric-transmission/"
+      ]
+    },
+    {
+      "identities": [
+        "oncor"
+      ],
+      "aliases": [
+        "ONCOR",
+        "Oncor Electric Delivery"
+      ],
+      "evidence": [
+        "https://www.oncor.com/us/en/home/about-us.html"
+      ]
+    },
+    {
+      "identities": [
+        "bonneville-power-administration"
+      ],
+      "aliases": [
+        "Bonneville Power Administration"
+      ],
+      "evidence": [
+        "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Substation_Projects/FeatureServer/10/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/Evolving_Grid_Transmission_Lines_Projects/FeatureServer/11/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2024/20240429-bell-addy-no1-transmission-line-switch-replacements-and-structure.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2024/20241101-columbia-generating-station-500kV-motor-operated-disconnect-switch-replacement.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250115-pge-reconductor-project-crossing-bpa-keeler-oregon-city-2-on-bpa-fee-owned-row.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250221-heyburn-minico-reconductor.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250221-pearl-sherwood-no-1-and-no-2-transmission-line-and-pearl-substation.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250228-cx-bluebird-solar-generation-interconnection-project-g0586.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250303-harrisburg-substation-battery-replacement.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250423-morrow-solar-generation-interconnection.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250501-the-dalles-substation-expansion-and-updates.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250609-ccx-transmission-line-and-communication-tower-safety-upgrades-fall-protection-2030.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250610-wautoma-rock-creek-transmission-line-miles-37-to-43-reconductor.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250729ccxtransmissionlinestructurehardwareandequipmentmaintenancereplacementandinstallthrough2030.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250731-urgent-response-on-hatton-tap-disconnect-switch-replacement.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20250826-ross-cold-creek-yard-expansion-project.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20251006-maple-valley-substation-transformer-installation-and-yard-expansion.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20251020-avista-bluebird-substation-interconnection-to-grand-coulee-bell-no5.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20251023-troutdale-substation-terminal-expansion.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20251028-monroe-substation-maintenance-project.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2025/20251121-sound-transit-line-raises.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260106-lapine-substation-shunt-capacitor-expansion-update-to-cx-issued-01152025.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260115-wheatridge-surplus-generation-interconnection-projects.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260202-filbert-tap-forest-grov-mcminnville-no1-structure-relocation.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260316-sacheen-alternate-station-service-transformer-move-project-update-cx-issued-20211101.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260319richlandsubstationtostevensdrivetransmissionlinerebuildprojectupdatetopreviouscx.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260323underwoodtaptobonnevilleph1alcoano12insulatorreplacementreconductor.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260406targheesubbreakerinstallationandtransfertripupgradesupdate-to-previous-CX-issued-20250224.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260413-palouse-junction-solar-facility-and-battery-storage-interconnection-projects.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260501-security-system-upgrade-at-monroe-substation.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260527-mcnary-roundup-no1-transmission-line-rebuild-project.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260529-tillamook-substation-line-terminal-swap-project.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260622-benton-franklin-no1-transmission-line-switch-installation-and-structure-reconfig.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260708-eugene-alderwood-no1-115kV-rebuild-and-upgrades-cx.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260715-actions-to-accommodate-construction-of-idaho-power-cos-boardman-to-hemingway-tx-line.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260727-carriger-solar-interconnection-project.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260915-chief-joseph-substation-transformer-maintenance-project.pdf",
+        "https://www.bpa.gov/-/media/Aep/environmental-initiatives/categorical-exclusions/cx-2026/20260915-ross-substation-and-complex-station-service-upgrade-project-updated-cx-from-20230104.pdf",
+        "https://www.bpa.gov/-/media/Aep/transmission/Grid-Expansion-and-Reinforcement-Portfolio-GERP/GERP-Project-Update.pdf",
+        "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2023-BPA-Transmission-Plan.pdf",
+        "https://www.bpa.gov/-/media/Aep/transmission/attachment-k/2025-BPA-Transmission-Plan_Final.pdf",
+        "https://www.northerngrid.net/private-media/documents/NG_Study_Scope_2026_2027_yAcCvCa.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/2025%20Annual%20Progress%20Report%20Summary_Draft.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/BPA%202025%20APR.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "tucson-electric-power"
+      ],
+      "aliases": [
+        "Tucson Electric Power"
+      ],
+      "evidence": [
+        "https://regplanning.westconnect.com/tppl.htm"
+      ]
+    },
+    {
+      "identities": [
+        "santee-cooper"
+      ],
+      "aliases": [
+        "Santee Cooper"
+      ],
+      "evidence": [
+        "https://www.scrtp.com/meeting-archives.html"
+      ]
+    },
+    {
+      "identities": [
+        "arizona-public-service"
+      ],
+      "aliases": [
+        "Arizona Public Service"
+      ],
+      "evidence": [
+        "https://regplanning.westconnect.com/tppl.htm"
+      ]
+    },
+    {
+      "identities": [
+        "el-paso-electric-company"
+      ],
+      "aliases": [
+        "El Paso Electric Company"
+      ],
+      "evidence": [
+        "https://regplanning.westconnect.com/tppl.htm"
+      ]
+    },
+    {
+      "identities": [
+        "minnesota-power"
+      ],
+      "aliases": [
+        "Minnesota Power"
+      ],
+      "evidence": [
+        "https://www.minnelectrans.com/report-2025.html"
+      ]
+    },
+    {
+      "identities": [
+        "tampa-electric-company"
+      ],
+      "aliases": [
+        "Tampa Electric Company"
+      ],
+      "evidence": [
+        "https://www.psc.state.fl.us/ten-year-site-plans"
+      ]
+    },
+    {
+      "identities": [
+        "portland-general-electric"
+      ],
+      "aliases": [
+        "Portland General Electric"
+      ],
+      "evidence": [
+        "https://www.northerngrid.net/private-media/documents/NG_Study_Scope_2026_2027_yAcCvCa.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/2025%20Annual%20Progress%20Report%20Summary_Draft.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/PGE%202025%20APR.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "idaho-power"
+      ],
+      "aliases": [
+        "Idaho Power"
+      ],
+      "evidence": [
+        "https://www.idahopower.com/energy-environment/energy/planning-and-electrical-projects/current-projects/",
+        "https://www.northerngrid.net/private-media/documents/2024_2025_Approved_Study_Scope.pdf",
+        "https://www.northerngrid.net/private-media/documents/NG_Study_Scope_2026_2027_yAcCvCa.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/2025%20Annual%20Progress%20Report%20Summary_Draft.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/IPC%202025%20APR.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "powersouth-energy-cooperative"
+      ],
+      "aliases": [
+        "PowerSouth Energy Cooperative"
+      ],
+      "evidence": [
+        "https://www.psc.state.fl.us/ten-year-site-plans"
+      ]
+    },
+    {
+      "identities": [
+        "great-river-energy"
+      ],
+      "aliases": [
+        "Great River Energy"
+      ],
+      "evidence": [
+        "https://www.minnelectrans.com/report-2025.html"
+      ]
+    },
+    {
+      "identities": [
+        "vermont-electric-power-company"
+      ],
+      "aliases": [
+        "Vermont Electric Power Company"
+      ],
+      "evidence": [
+        "https://www.iso-ne.com/system-planning/system-plans-studies/rsp/rsp-project-list-and-the-asset-condition-list"
+      ]
+    },
+    {
+      "identities": [
+        "snohomish-county-pud"
+      ],
+      "aliases": [
+        "Snohomish County PUD"
+      ],
+      "evidence": [
+        "https://www.northerngrid.net/private-media/documents/NG_Study_Scope_2026_2027_yAcCvCa.pdf",
+        "https://www.snopud.com/community-environment/our-energy-future/reliability/system-improvements/"
+      ]
+    },
+    {
+      "identities": [
+        "public-service-company-of-new-mexico"
+      ],
+      "aliases": [
+        "Public Service Company of New Mexico"
+      ],
+      "evidence": [
+        "https://regplanning.westconnect.com/tppl.htm"
+      ]
+    },
+    {
+      "identities": [
+        "puget-sound-energy"
+      ],
+      "aliases": [
+        "Puget Sound Energy"
+      ],
+      "evidence": [
+        "https://www.northerngrid.net/private-media/documents/NG_Study_Scope_2026_2027_yAcCvCa.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/2025%20Annual%20Progress%20Report%20Summary_Draft.pdf",
+        "https://www.wecc.org/sites/default/files/documents/progress_report/2025/PSE%202025%20APR.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "eversource"
+      ],
+      "aliases": [
+        "Eversource"
+      ],
+      "evidence": [
+        "https://www.iso-ne.com/system-planning/system-plans-studies/rsp/rsp-project-list-and-the-asset-condition-list"
+      ]
+    },
+    {
+      "identities": [
+        "american-transmission-company"
+      ],
+      "aliases": [
+        "American Transmission Company"
+      ],
+      "evidence": [
+        "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+        "https://www.atc10yearplan.com/projects/network-projects-list/",
+        "https://www.atc10yearplan.com/wp-content/uploads/2025/11/TYA-2025-Network-Project-List.pdf",
+        "https://www.misoenergy.org/planning/transmission-planning/mtep/"
+      ]
+    },
+    {
+      "identities": [
+        "dominion"
+      ],
+      "aliases": [
+        "Dominion Energy",
+        "Dominion Energy Virginia",
+        "Dominion Energy South Carolina"
+      ],
+      "evidence": [
+        "https://www.dominionenergy.com/about/delivering-energy/electric-projects/power-line-projects",
+        "https://www.dominionenergy.com/en/About/Our-Company/Operating-Segments",
+        "https://www.scc.virginia.gov/consumers/public-utility/electricity-faqs/transmission-line-projects/",
+        "https://www.scrtp.com/",
+        "https://www.scrtp.com/assets/pdfs/home/2026-2030-2million-and-above-project-descriptions.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "avangrid"
+      ],
+      "aliases": [
+        "NYSEG",
+        "RGE",
+        "Central Maine Power Company"
+      ],
+      "evidence": [
+        "https://www.avangrid.com/aboutus/avangridnetworks",
+        "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx",
+        "https://www.iso-ne.com/system-planning/system-plans-studies/rsp/rsp-project-list-and-the-asset-condition-list",
+        "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+        "https://www.nyiso.com/load-capacity-data-report-gold-book-"
+      ]
+    },
+    {
+      "identities": [
+        "evergy"
+      ],
+      "aliases": [
+        "EM",
+        "EMW",
+        "EKC",
+        "WR"
+      ],
+      "evidence": [
+        "https://investors.evergy.com/about-evergy/company-information",
+        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+        "https://www.spp.org/engineering/project-tracking-ntcs/"
+      ]
+    },
+    {
+      "identities": [
+        "itc"
+      ],
+      "aliases": [
+        "ITC",
+        "ITC Midwest",
+        "ITCGP",
+        "METC"
+      ],
+      "evidence": [
+        "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+        "https://www.itc-holdings.com/wp-content/uploads/2023/07/itc-2021-12-31-10k-final.pdf",
+        "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.7.htm",
+        "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.8.htm",
+        "https://www.minnelectrans.com/report-2025.html",
+        "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+        "https://www.spp.org/engineering/project-tracking-ntcs/"
+      ]
+    },
+    {
+      "identities": [
+        "national-grid"
+      ],
+      "aliases": [
+        "NGRID",
+        "National Grid, USA",
+        "Niagara Mohawk Power Corporation d/b/a National Grid"
+      ],
+      "evidence": [
+        "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B0051A68B-0000-CF79-9689-08670EC0961C%7D",
+        "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BF00F699E-0000-C731-998F-D04728FA0220%7D",
+        "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=23-T-0660",
+        "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0184",
+        "https://www.iso-ne.com/static-assets/documents/100037/final_rsp_project_list_jun_2026.xlsx",
+        "https://www.iso-ne.com/system-planning/system-plans-studies/rsp/rsp-project-list-and-the-asset-condition-list",
+        "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+        "https://www.nyiso.com/load-capacity-data-report-gold-book-"
+      ]
+    },
+    {
+      "identities": [
+        "lipa"
+      ],
+      "aliases": [
+        "LIPA",
+        "Long Island Lighting Company d/b/a LIPA"
+      ],
+      "evidence": [
+        "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B100E3B96-0000-C013-A1AC-AB256FFF7BC0%7D",
+        "https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7BE0856597-0000-C24D-B9B9-7E15895499DF%7D",
+        "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=24-T-0113",
+        "https://documents.dps.ny.gov/public/MatterManagement/CaseMaster.aspx?MatterCaseNo=25-T-0241",
+        "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+        "https://www.nyiso.com/load-capacity-data-report-gold-book-"
+      ]
+    },
+    {
+      "identities": [
+        "nypa"
+      ],
+      "aliases": [
+        "NYPA"
+      ],
+      "evidence": [
+        "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+        "https://www.nyiso.com/load-capacity-data-report-gold-book-"
+      ]
+    },
+    {
+      "identities": [
+        "bepc"
+      ],
+      "aliases": [
+        "BEPC"
+      ],
+      "evidence": [
+        "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "https://www.ercot.com/gridinfo/sysplan",
+        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+        "https://www.spp.org/engineering/project-tracking-ntcs/"
+      ]
+    },
+    {
+      "identities": [
+        "nppd"
+      ],
+      "aliases": [
+        "NPPD"
+      ],
+      "evidence": [
+        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+        "https://www.spp.org/engineering/project-tracking-ntcs/"
+      ]
+    },
+    {
+      "identities": [
+        "pge"
+      ],
+      "aliases": [
+        "PG&E"
+      ],
+      "evidence": [
+        "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jan-2025.xlsx",
+        "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jul-2025.xlsx",
+        "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jul-2026.xlsx",
+        "https://www.caiso.com/documents/network-upgrades-generator-interconnection-jul-2025.xlsx",
+        "https://www.caiso.com/library/transmission-development-forum"
+      ]
+    },
+    {
+      "identities": [
+        "sce"
+      ],
+      "aliases": [
+        "SCE"
+      ],
+      "evidence": [
+        "https://www.caiso.com/documents/approved-projects-transmission-planning-process-jul-2026.xlsx",
+        "https://www.caiso.com/documents/network-upgrades-generator-interconnection-jul-2025.xlsx",
+        "https://www.caiso.com/library/transmission-development-forum"
+      ]
+    },
+    {
+      "identities": [
+        "southeasterntx"
+      ],
+      "aliases": [
+        "STEC"
+      ],
+      "evidence": [
+        "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "https://www.ercot.com/gridinfo/sysplan"
+      ]
+    },
+    {
+      "identities": [
+        "georgia-transmission"
+      ],
+      "aliases": [
+        "GTC"
+      ],
+      "evidence": [
+        "https://www.southeasternrtp.com/archive.cshtml",
+        "https://www.southeasternrtp.com/docs/general/2025/2025%20SERTP%20Preliminary%20Expansion%20Plan%20Report%20%28Non-CEII%29.pdf"
+      ]
+    },
+    {
+      "identities": [
+        "wapa"
+      ],
+      "aliases": [
+        "WAPA"
+      ],
+      "evidence": [
+        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+        "https://www.spp.org/engineering/project-tracking-ntcs/"
+      ]
+    },
+    {
+      "identities": [
+        "oge"
+      ],
+      "aliases": [
+        "OGE"
+      ],
+      "evidence": [
+        "https://www.spp.org/Documents/58950/Q4%202018%20Appendix%201.xlsx",
+        "https://www.spp.org/Documents/60925/Q4%202019%20Appendix%201.xlsx",
+        "https://www.spp.org/Documents/77416/3Q%202026%20Quarterly%20Project%20Tracking%20Report%20Appendix%201%262.zip",
+        "https://www.spp.org/engineering/project-tracking-ntcs/",
+        "https://www.spp.org/spp-documents-filings/?id=18641"
+      ]
+    },
+    {
+      "identities": [
+        "pec"
+      ],
+      "aliases": [
+        "PEC"
+      ],
+      "evidence": [
+        "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx",
+        "https://www.ercot.com/gridinfo/sysplan"
+      ]
+    }
+  ]
+}
