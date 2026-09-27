@@ -794,8 +794,12 @@ export function TimeView({
           </div>
         </dl>
         <p className={s.provenance}>
-          Analysis date <b>{fmtDate(analysisDate)}</b> · {sources.length} sources
+          Analysis date <b>{fmtDate(analysisDate)}</b>
         </p>
+        <details className={s.provenance}>
+          <summary>{sources.length} sources</summary>
+          {sources.map((id) => <div key={id}><code>{id}</code></div>)}
+        </details>
         {!legacyAvailable ? <p role="status" className={s.provenance}>Legacy projects unavailable; national projects remain available.</p> : null}
         <p className={s.provenance}>
           {national.available ? <>{national.drawn} confirmed national projects included.

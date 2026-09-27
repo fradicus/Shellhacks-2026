@@ -20,3 +20,28 @@ projection, including independent legacy/national failure states. C25's new offi
 await additive shared producer/loader/read contracts; no unpublished tier is inferred here. Its broader
 state filters and unified unlocated search remain a separate follow-up; the existing explorer provides
 those controls now. This PR does not claim full C25 acceptance or regional data completion.
+
+## Verification receipt — 2026-09-27 UTC
+
+- Final API read: Atlas dataset `d4e5855c29a113ed36e4e743fb2c86d6d513d8ae`, 1,286 national
+  records, 414 located, 872 unlocated, no map truncation. The main view draws 424 records:
+  345 confirmed nonlegacy national points plus 79 legacy points, with 183 legacy records unlocated.
+  Legacy current-version selection differs from the national legacy projection; the two located totals
+  are not interchangeable. National points retain the native ID and source/review evidence.
+- Representative point: `iso-ne:1617`, Chelsea, Vermont Electric Power Company, latitude
+  43.96074042841999 / longitude -72.47113915797026, confirmed source site; milestone `2018-01`
+  remains month precision and raw text `2018-01-01T00:00:00` is separately displayed.
+- Local Atlas-backed app: `http://localhost:3019/time`; Playwright Chromium at 1440×1000 and
+  390×844 verified the overview, Chelsea selection/owner/month interval/source links, 2D, and
+  Home → Overlaps → National explorer → Overlaps. Main interaction run had zero page errors.
+  Disabled WebGL and blocked basemap requests both retain mobile project selection and evidence.
+  Screenshots were visually inspected. This is local integration evidence, not hosted deployment.
+- Headless Chromium requestAnimationFrame averaged approximately 53 fps over five seconds at
+  1440×1000. Headed demo-laptop performance remains unmeasured for this batch.
+- Explicit mocked page probes pass independent legacy, national and pair outages, both-unavailable
+  and valid-empty states. Two committed Node 24 adapter tests cover legacy mirror exclusion,
+  unapproved/null/invalid centers and exact/month/year/unknown milestone semantics.
+- Final required commands: `uv run ruff check .` passed; `uv run pytest -q` passed with 490 passed,
+  1 skipped; `npm run lint`, `npm run typecheck`, `DATA_MODE=fixture npm run build` passed.
+  Existing Big Shoulders fallback-font warning remains. Spec lint (32 features), F19 ownership,
+  whitespace and diff scope/secrets review passed. No source data, secrets or read-only paths changed.
