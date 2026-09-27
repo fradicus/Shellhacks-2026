@@ -199,3 +199,10 @@ candidate and area-only display tiers in [C25](decisions/C25-main-demo-map.md). 
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F41 | Texas transmission project research and map delivery | A | data-researcher | 7 | F00, F30 | never |
+
+### Planning and History date windows — specification only
+
+[C30](decisions/C30-planning-history-windows.md) proposes bounded `/time` and `/history` windows over the existing
+database records, consistent map/grid filtering and a window-based axis. [Issue #170](https://github.com/fradicus/Shellhacks-2026/issues/170)
+tracks future delivery. Implementation is explicitly deferred by the user; this is not an autonomous pickup,
+worker assignment or F37 completion. A separate explicit launch and shared-interface ownership agreement are required.
