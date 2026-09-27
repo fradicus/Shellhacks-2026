@@ -68,34 +68,5 @@
         "WI"
       ]
     }
-  },
-  {
-    "_id": "osm-substations",
-    "artifacts": [
-      {
-        "bytes": 381280,
-        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-        "retrieved_at": "2026-09-27T02:16:50Z",
-        "sha256": "146a341f5359e27ac1c0c0959ca7d016bbfe586fc18327a42590663e0f17ce07",
-        "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-      },
-      {
-        "bytes": 990791,
-        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-        "retrieved_at": "2026-09-27T02:18:04Z",
-        "sha256": "02f8354aa41b3f9698a9bd0b45a8d6261a44b03bfbf72867f03d2ad10e0ab365",
-        "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-      },
-      {
-        "bytes": 636624,
-        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-IL\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-        "retrieved_at": "2026-09-27T02:19:24Z",
-        "sha256": "05bbd627f9e4c208abf236d0d5913edc34558cead14d16dd5e53ba90e5e32438",
-        "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
-      }
-    ],
-    "publisher": "OpenStreetMap contributors",
-    "rights": "ODbL 1.0; attribution required",
-    "role": "candidate facility geometry only (C26)"
   }
 ]

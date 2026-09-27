@@ -136,10 +136,10 @@
   {
     "_id": "atc-tya-2025:13739",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/1022441240 (Spring Brook), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 43.479063,
-      "lon": -88.552961
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218684 (South Fond du Lac Station), OSM way/1022441240 (Spring Brook), corroborated by operator, voltage.",
+      "lat": 43.607004,
+      "lon": -88.523647
     },
     "counties": [],
     "description": null,
@@ -175,9 +175,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218684",
+            "lat": 43.7349441,
+            "lon": -88.4943339,
+            "name": "South Fond du Lac Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "South Fond du Lac",
           "norm": "SOUTH FOND DU LAC",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -225,7 +237,12 @@
   },
   {
     "_id": "atc-tya-2025:13756",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218680 (Edgewater Station), corroborated by operator.",
+      "lat": 43.715112,
+      "lon": -87.707773
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -260,9 +277,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218680",
+            "lat": 43.7151116,
+            "lon": -87.7077733,
+            "name": "Edgewater Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Edgewater",
           "norm": "EDGEWATER",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -275,7 +304,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Edgewater SS, Bus Reconfiguration",
     "native_id": "13756",
     "other_owners": [],
@@ -1034,7 +1063,12 @@
   },
   {
     "_id": "atc-tya-2025:15126",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218680 (Edgewater Station), corroborated by operator.",
+      "lat": 43.715112,
+      "lon": -87.707773
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -1069,9 +1103,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218680",
+            "lat": 43.7151116,
+            "lon": -87.7077733,
+            "name": "Edgewater Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Edgewater",
           "norm": "EDGEWATER",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -1084,7 +1130,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Edgewater SS, DIC, replace transformer and substation rebuild",
     "native_id": "15126",
     "other_owners": [],
@@ -5048,7 +5094,12 @@
   },
   {
     "_id": "atc-tya-2025:22049",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176113080 (Kewaunee Station), corroborated by operator.",
+      "lat": 44.342869,
+      "lon": -87.539615
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -5083,9 +5134,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176113080",
+            "lat": 44.3428695,
+            "lon": -87.5396148,
+            "name": "Kewaunee Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Kewaunee",
           "norm": "KEWAUNEE",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -5098,7 +5161,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "J1101 Kewaunee SS Network Upgrades and Interconnection Facilities",
     "native_id": "22049",
     "other_owners": [],
@@ -5558,7 +5621,12 @@
   },
   {
     "_id": "atc-tya-2025:22798-5",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/40720863 (Oak Creek Station), corroborated by voltage. Partial: one of two endpoints.",
+      "lat": 42.842462,
+      "lon": -87.834718
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -5593,9 +5661,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/40720863",
+            "lat": 42.842462,
+            "lon": -87.8347184,
+            "name": "Oak Creek Station",
+            "operator": null,
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Oak Creek",
           "norm": "OAK CREEK",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": "Oakview",
@@ -5615,7 +5695,7 @@
         138
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Oak Creek – Oakview 138 kV (836), Uprate",
     "native_id": "22798-5",
     "other_owners": [],
@@ -7791,7 +7871,12 @@
   },
   {
     "_id": "atc-tya-2025:23906",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218684 (South Fond du Lac Station), corroborated by operator.",
+      "lat": 43.734944,
+      "lon": -88.494334
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -7826,9 +7911,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218684",
+            "lat": 43.7349441,
+            "lon": -88.4943339,
+            "name": "South Fond du Lac Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "South Fond du Lac",
           "norm": "SOUTH FOND DU LAC",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -7841,7 +7938,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "South Fond du Lac SS, Power Transformer and Breaker Asset Renewal",
     "native_id": "23906",
     "other_owners": [],
@@ -9434,17 +9531,9 @@
           "name": "Paris",
           "norm": "PARIS",
           "status": "no_facility"
-        },
-        {
-          "facility_ids": [
-            "way/1011141117"
-          ],
-          "name": "Fox River",
-          "norm": "FOX RIVER",
-          "status": "not_corroborated"
         }
       ],
-      "kind": "line",
+      "kind": "site",
       "names_from": "name",
       "operator_keys": [
         "AMERICAN TRANSMISSION",
@@ -11647,7 +11736,12 @@
   },
   {
     "_id": "atc-tya-2025:25185-5",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218680 (Edgewater Station), corroborated by operator.",
+      "lat": 43.715112,
+      "lon": -87.707773
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -11682,9 +11776,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218680",
+            "lat": 43.7151116,
+            "lon": -87.7077733,
+            "name": "Edgewater Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Edgewater",
           "norm": "EDGEWATER",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -11697,7 +11803,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Edgewater SS Breaker Asset Renewal",
     "native_id": "25185-5",
     "other_owners": [],
@@ -13812,7 +13918,12 @@
   },
   {
     "_id": "atc-tya-2025:50122",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176434079 (Columbia Station), corroborated by operator.",
+      "lat": 43.486381,
+      "lon": -89.417124
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -13847,9 +13958,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176434079",
+            "lat": 43.4863809,
+            "lon": -89.4171238,
+            "name": "Columbia Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000;69000"
+          },
           "name": "Columbia",
           "norm": "COLUMBIA",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -13862,7 +13985,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Columbia SS Power Transformer Asset Renewal",
     "native_id": "50122",
     "other_owners": [],
@@ -15519,10 +15642,10 @@
   {
     "_id": "atc-tya-2025:50179-1",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/230478091 (East Krok), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 44.428599,
-      "lon": -87.572616
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176113080 (Kewaunee Station), OSM way/230478091 (East Krok), corroborated by operator, voltage.",
+      "lat": 44.385734,
+      "lon": -87.556116
     },
     "counties": [],
     "description": null,
@@ -15558,9 +15681,22 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176113080",
+            "lat": 44.3428695,
+            "lon": -87.5396148,
+            "name": "Kewaunee Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Kewaunee",
           "norm": "KEWAUNEE",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -16887,7 +17023,12 @@
   },
   {
     "_id": "atc-tya-2025:50511",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176434079 (Columbia Station), corroborated by operator.",
+      "lat": 43.486381,
+      "lon": -89.417124
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -16922,9 +17063,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176434079",
+            "lat": 43.4863809,
+            "lon": -89.4171238,
+            "name": "Columbia Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000;69000"
+          },
           "name": "Columbia",
           "norm": "COLUMBIA",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -16937,7 +17090,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "J1746 Columbia SS Network Upgrades and Interconnection Facilities",
     "native_id": "50511",
     "other_owners": [],
@@ -18548,10 +18701,10 @@
   {
     "_id": "atc-tya-2025:50563",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/1420924219 (Sugar Creek Substation), corroborated by operator. Partial: one of two endpoints.",
-      "lat": 42.702799,
-      "lon": -88.552955
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176434079 (Columbia Station), OSM way/1420924219 (Sugar Creek Substation), corroborated by operator.",
+      "lat": 43.09459,
+      "lon": -88.985039
     },
     "counties": [],
     "description": null,
@@ -18587,13 +18740,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
-          "facility_ids": [
-            "way/1058321260",
-            "way/1173691655"
+          "corroboration": [
+            "operator"
           ],
+          "facility": {
+            "id": "way/176434079",
+            "lat": 43.4863809,
+            "lon": -89.4171238,
+            "name": "Columbia Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000;69000"
+          },
           "name": "Columbia",
           "norm": "COLUMBIA",
-          "status": "not_corroborated"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -19244,10 +19405,10 @@
   {
     "_id": "atc-tya-2025:50627",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/177922186 (Portage), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 43.548109,
-      "lon": -89.466994
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176434079 (Columbia Station), OSM way/177922186 (Portage), corroborated by operator, voltage.",
+      "lat": 43.517245,
+      "lon": -89.442059
     },
     "counties": [],
     "description": null,
@@ -19283,9 +19444,22 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176434079",
+            "lat": 43.4863809,
+            "lon": -89.4171238,
+            "name": "Columbia Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000;69000"
+          },
           "name": "Columbia",
           "norm": "COLUMBIA",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -20015,10 +20189,10 @@
   {
     "_id": "atc-tya-2025:50645",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/745349130 (Erdman), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 43.789304,
-      "lon": -87.765642
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/745349130 (Erdman), OSM way/176218680 (Edgewater Station), corroborated by operator, voltage.",
+      "lat": 43.752208,
+      "lon": -87.736708
     },
     "counties": [],
     "description": null,
@@ -20071,9 +20245,21 @@
           "status": "matched"
         },
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218680",
+            "lat": 43.7151116,
+            "lon": -87.7077733,
+            "name": "Edgewater Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Edgewater",
           "norm": "EDGEWATER",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -20768,10 +20954,10 @@
   {
     "_id": "atc-tya-2025:50653",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/176218789 (NORTH MULLET RIVER), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 43.739042,
-      "lon": -87.981515
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218789 (NORTH MULLET RIVER), OSM way/176218683 (Sheboygan Falls Station), corroborated by operator, voltage.",
+      "lat": 43.745479,
+      "lon": -87.928948
     },
     "counties": [],
     "description": null,
@@ -20824,9 +21010,21 @@
           "status": "matched"
         },
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218683",
+            "lat": 43.7519156,
+            "lon": -87.8763812,
+            "name": "Sheboygan Falls Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000"
+          },
           "name": "Sheboygan Falls",
           "norm": "SHEBOYGAN FALLS",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -20958,7 +21156,12 @@
   },
   {
     "_id": "atc-tya-2025:50655",
-    "center": null,
+    "center": {
+      "basis": "source_point",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218680 (Edgewater Station), corroborated by operator.",
+      "lat": 43.715112,
+      "lon": -87.707773
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -20993,9 +21196,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218680",
+            "lat": 43.7151116,
+            "lon": -87.7077733,
+            "name": "Edgewater Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Edgewater",
           "norm": "EDGEWATER",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "site",
@@ -21008,7 +21223,7 @@
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "R1049/R5061 Edgewater SS, Network Upgrades and Interconnection Facilities",
     "native_id": "50655",
     "other_owners": [],
@@ -21678,8 +21893,8 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
-          "name": "Rio Pumping Station",
-          "norm": "RIO PUMPING STATION",
+          "name": "Rio Pumping",
+          "norm": "RIO PUMPING",
           "status": "no_facility"
         }
       ],
@@ -22099,10 +22314,10 @@
   {
     "_id": "atc-tya-2025:50672",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/176515510 (St. Martins Substation), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 42.902308,
-      "lon": -88.060046
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176515510 (St. Martins Substation), OSM way/40720863 (Oak Creek Station), corroborated by voltage.",
+      "lat": 42.872385,
+      "lon": -87.947382
     },
     "counties": [],
     "description": null,
@@ -22155,9 +22370,21 @@
           "status": "matched"
         },
         {
+          "corroboration": [
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/40720863",
+            "lat": 42.842462,
+            "lon": -87.8347184,
+            "name": "Oak Creek Station",
+            "operator": null,
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "Oak Creek",
           "norm": "OAK CREEK",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -22187,7 +22414,12 @@
   },
   {
     "_id": "atc-tya-2025:50673",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176434079 (Columbia Station), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 43.486381,
+      "lon": -89.417124
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -22231,9 +22463,22 @@
           "status": "ambiguous"
         },
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176434079",
+            "lat": 43.4863809,
+            "lon": -89.4171238,
+            "name": "Columbia Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000;69000"
+          },
           "name": "Columbia",
           "norm": "COLUMBIA",
-          "status": "no_facility"
+          "status": "matched"
         }
       ],
       "kind": "line",
@@ -22248,7 +22493,7 @@
         138
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "Portage - Columbia 138 kV (X-13/X-20), Reconductor",
     "native_id": "50673",
     "other_owners": [],
@@ -24153,10 +24398,10 @@
   {
     "_id": "atc-tya-2025:50708",
     "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/176340490 (Forward Energy Center), corroborated by voltage. Partial: one of two endpoints.",
-      "lat": 43.646558,
-      "lon": -88.461872
+      "basis": "two",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218684 (South Fond du Lac Station), OSM way/176340490 (Forward Energy Center), corroborated by operator, voltage.",
+      "lat": 43.690751,
+      "lon": -88.478103
     },
     "counties": [],
     "description": null,
@@ -24192,9 +24437,22 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/176218684",
+            "lat": 43.7349441,
+            "lon": -88.4943339,
+            "name": "South Fond du Lac Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "South Fond du Lac",
           "norm": "SOUTH FOND DU LAC",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "corroboration": [
@@ -24241,7 +24499,12 @@
   },
   {
     "_id": "atc-tya-2025:50709",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/176218684 (South Fond du Lac Station), corroborated by operator. Partial: one of two endpoints.",
+      "lat": 43.734944,
+      "lon": -88.494334
+    },
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -24276,9 +24539,21 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
+          "corroboration": [
+            "operator"
+          ],
+          "facility": {
+            "id": "way/176218684",
+            "lat": 43.7349441,
+            "lon": -88.4943339,
+            "name": "South Fond du Lac Station",
+            "operator": "American Transmission Company",
+            "state": "WI",
+            "voltage": "345000;138000"
+          },
           "name": "South Fond Du Lac",
           "norm": "SOUTH FOND DU LAC",
-          "status": "no_facility"
+          "status": "matched"
         },
         {
           "name": null,
@@ -24297,7 +24572,7 @@
         69
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "South Fond Du Lac - Str 127484 69 kV (Y-25), Partial Rebuild",
     "native_id": "50709",
     "other_owners": [],

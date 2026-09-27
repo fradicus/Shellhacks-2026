@@ -1,0 +1,5782 @@
+[
+  {
+    "id": "relation/14044310",
+    "lat": 40.2380312,
+    "lon": -85.4076606,
+    "name": "Delaware Substation",
+    "norm": "DELAWARE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "relation/14158554",
+    "lat": 41.2379446,
+    "lon": -85.8867824,
+    "name": "West Warsaw",
+    "norm": "WEST WARSAW",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1017743160",
+    "lat": 40.0006825,
+    "lon": -85.9939117,
+    "name": "Noblesvile Wellington Substation",
+    "norm": "NOBLESVILE WELLINGTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1024050063",
+    "lat": 41.5693124,
+    "lon": -85.8249397,
+    "name": "Illinois Sub",
+    "norm": "ILLINOIS",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1033095467",
+    "lat": 40.5037566,
+    "lon": -86.8635733,
+    "name": "Battleground Station",
+    "norm": "BATTLEGROUND STATION",
+    "operator": "Tipmont REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/103532292",
+    "lat": 41.7044126,
+    "lon": -87.5160298,
+    "name": "State Line Substation",
+    "norm": "STATE LINE",
+    "operator": "Commonwealth Edison",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/103532295",
+    "lat": 41.6906831,
+    "lon": -87.5234904,
+    "name": "Stateline Substation",
+    "norm": "STATELINE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103849349",
+    "lat": 41.1940978,
+    "lon": -84.9731381,
+    "name": "Grabill Substation",
+    "norm": "GRABILL",
+    "operator": null,
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/103850867",
+    "lat": 41.0250504,
+    "lon": -85.1799544,
+    "name": "Waynedale Substation",
+    "norm": "WAYNEDALE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103871734",
+    "lat": 41.1251071,
+    "lon": -84.8926166,
+    "name": "Woodburn Substation",
+    "norm": "WOODBURN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103871738",
+    "lat": 41.0201752,
+    "lon": -84.869907,
+    "name": "Tillman Substation",
+    "norm": "TILLMAN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103900105",
+    "lat": 38.8662042,
+    "lon": -85.140886,
+    "name": "Fairview Substation",
+    "norm": "FAIRVIEW",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1040060921",
+    "lat": 40.1795428,
+    "lon": -85.3715399,
+    "name": "Blaine Street",
+    "norm": "BLAINE STREET",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/104060281",
+    "lat": 37.9296618,
+    "lon": -87.0295508,
+    "name": "Rockport Station",
+    "norm": "ROCKPORT STATION",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "765000;138000"
+  },
+  {
+    "id": "way/1042716188",
+    "lat": 40.1981416,
+    "lon": -85.4195479,
+    "name": "Kenmore Station",
+    "norm": "KENMORE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/104297949",
+    "lat": 41.5516397,
+    "lon": -87.5186584,
+    "name": "Fisher Substation",
+    "norm": "FISHER",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/104297953",
+    "lat": 41.5458703,
+    "lon": -87.5158957,
+    "name": "Munster Substation",
+    "norm": "MUNSTER",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1047320097",
+    "lat": 40.1486293,
+    "lon": -85.3419867,
+    "name": "Medford Substation",
+    "norm": "MEDFORD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104903083",
+    "lat": 39.148471,
+    "lon": -86.5398021,
+    "name": "Rogers Street Substation",
+    "norm": "ROGERS STREET",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1055079624",
+    "lat": 40.8470668,
+    "lon": -84.9385463,
+    "name": "Yost Bridge",
+    "norm": "YOST BRIDGE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1055559607",
+    "lat": 40.1344359,
+    "lon": -85.5925462,
+    "name": "Cross Street",
+    "norm": "CROSS STREET",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1056129511",
+    "lat": 39.7759366,
+    "lon": -86.1355716,
+    "name": "Arsenal Tech Substation",
+    "norm": "ARSENAL TECH",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1059273920",
+    "lat": 39.8406188,
+    "lon": -84.8790082,
+    "name": "Shawnee",
+    "norm": "SHAWNEE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1059353622",
+    "lat": 39.8225389,
+    "lon": -84.8611346,
+    "name": "Henley",
+    "norm": "HENLEY",
+    "operator": "Richmond Power & Light",
+    "state": "IN",
+    "voltage": "4160"
+  },
+  {
+    "id": "way/1060909773",
+    "lat": 38.2950478,
+    "lon": -85.9263176,
+    "name": "Floyds Knobs Substation",
+    "norm": "FLOYDS KNOBS",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/106326168",
+    "lat": 39.8146159,
+    "lon": -84.8179655,
+    "name": "Hodgin",
+    "norm": "HODGIN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/106367849",
+    "lat": 40.37868,
+    "lon": -85.1916497,
+    "name": "AEP Jay Station",
+    "norm": "AEP JAY STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1070466271",
+    "lat": 38.2295936,
+    "lon": -87.8968171,
+    "name": "Griffin Substation",
+    "norm": "GRIFFIN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1078686143",
+    "lat": 41.612736,
+    "lon": -86.7220497,
+    "name": "LaPorte Substation",
+    "norm": "LAPORTE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1080660970",
+    "lat": 41.6843854,
+    "lon": -87.4209502,
+    "name": "INDIANA HARBOR E 5 AC STATION",
+    "norm": "INDIANA HARBOR E 5 AC STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1095049067",
+    "lat": 41.1742676,
+    "lon": -87.3129954,
+    "name": "Thayer",
+    "norm": "THAYER",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1095049907",
+    "lat": 41.070747,
+    "lon": -87.2749415,
+    "name": "Fair Oaks Substation",
+    "norm": "FAIR OAKS",
+    "operator": "Jasper County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1097295668",
+    "lat": 41.5186074,
+    "lon": -86.6336412,
+    "name": "Deer Run Substation",
+    "norm": "DEER RUN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1098270296",
+    "lat": 41.7000392,
+    "lon": -86.4790095,
+    "name": "Elderberry Substation",
+    "norm": "ELDERBERRY",
+    "operator": "AEP Ohio",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1098270301",
+    "lat": 41.7000385,
+    "lon": -86.4802667,
+    "name": "Elderberry Substation",
+    "norm": "ELDERBERRY",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1104970766",
+    "lat": 39.8145497,
+    "lon": -84.8770249,
+    "name": "Richards",
+    "norm": "RICHARDS",
+    "operator": "RP&L",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/1107563175",
+    "lat": 41.7178066,
+    "lon": -86.6939898,
+    "name": "Tee Lake Substation",
+    "norm": "TEE LAKE",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1117673199",
+    "lat": 41.4839408,
+    "lon": -86.7002308,
+    "name": "Kingsford Hts. Substation",
+    "norm": "KINGSFORD HTS.",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1128582356",
+    "lat": 39.8456558,
+    "lon": -84.8330115,
+    "name": "East Substation",
+    "norm": "EAST",
+    "operator": "Richmond Power & Light",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1136030884",
+    "lat": 39.7846139,
+    "lon": -86.1375623,
+    "name": "13th Street Substation",
+    "norm": "13TH STREET",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/113863670",
+    "lat": 40.4502609,
+    "lon": -86.2866627,
+    "name": "New London Substation",
+    "norm": "NEW LONDON",
+    "operator": null,
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1138710064",
+    "lat": 41.1358533,
+    "lon": -86.9878007,
+    "name": "Asphaltum Substation",
+    "norm": "ASPHALTUM",
+    "operator": "Jasper County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1149512465",
+    "lat": 41.6216151,
+    "lon": -87.5230625,
+    "name": "Willow Court Substation",
+    "norm": "WILLOW COURT",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1150248969",
+    "lat": 41.6441339,
+    "lon": -87.4372956,
+    "name": "Guthrie Substation",
+    "norm": "GUTHRIE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1150580812",
+    "lat": 37.9762516,
+    "lon": -87.5679033,
+    "name": "Civic Center Substation",
+    "norm": "CIVIC CENTER",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1150900637",
+    "lat": 39.8386427,
+    "lon": -84.9642932,
+    "name": "Centerville Station",
+    "norm": "CENTERVILLE STATION",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1152795047",
+    "lat": 37.9390664,
+    "lon": -87.6837563,
+    "name": "Perry Township Substation",
+    "norm": "PERRY TOWNSHIP",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1155341608",
+    "lat": 40.0693241,
+    "lon": -86.0909841,
+    "name": "Westfield Northeast Substation",
+    "norm": "WESTFIELD NORTHEAST",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1160274809",
+    "lat": 41.6781665,
+    "lon": -86.2465737,
+    "name": "Colfax Station",
+    "norm": "COLFAX STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1160720436",
+    "lat": 41.6836998,
+    "lon": -86.3091856,
+    "name": "Grandview Substation",
+    "norm": "GRANDVIEW",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/1164863893",
+    "lat": 41.0386173,
+    "lon": -85.1281272,
+    "name": "AEP Pettit Avenue",
+    "norm": "AEP PETTIT AVENUE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1165127836",
+    "lat": 41.0698228,
+    "lon": -85.1156366,
+    "name": "AEP Anthony Substation",
+    "norm": "AEP ANTHONY",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1165497267",
+    "lat": 41.1824449,
+    "lon": -84.9216758,
+    "name": "Harlan Substation",
+    "norm": "HARLAN",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1165716752",
+    "lat": 41.1771598,
+    "lon": -85.1912584,
+    "name": "AEP Woodland Substation",
+    "norm": "AEP WOODLAND",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1165882162",
+    "lat": 41.1888067,
+    "lon": -85.2934321,
+    "name": "AEP Carrol Substation",
+    "norm": "AEP CARROL",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1165920678",
+    "lat": 41.2061887,
+    "lon": -85.2399114,
+    "name": "Eel River Substation",
+    "norm": "EEL RIVER",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1166138068",
+    "lat": 39.8259417,
+    "lon": -84.8812512,
+    "name": "Glass",
+    "norm": "GLASS",
+    "operator": "Richmond Power & Light",
+    "state": "IN",
+    "voltage": "4160"
+  },
+  {
+    "id": "way/1176510528",
+    "lat": 41.55648,
+    "lon": -87.3349956,
+    "name": "Univeristy Substation",
+    "norm": "UNIVERISTY",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1176749807",
+    "lat": 37.9781611,
+    "lon": -87.7159439,
+    "name": "St. Phillips Substation",
+    "norm": "ST. PHILLIPS",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1178304423",
+    "lat": 40.9615971,
+    "lon": -85.3175305,
+    "name": "Lafayette Substation",
+    "norm": "LAFAYETTE",
+    "operator": "Heartland REMC",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1182383818",
+    "lat": 41.7260675,
+    "lon": -85.6976029,
+    "name": "Middlebury Substation 1",
+    "norm": "MIDDLEBURY 1",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1184058375",
+    "lat": 41.6958484,
+    "lon": -86.2003217,
+    "name": "AEP South Bend Substation",
+    "norm": "AEP SOUTH BEND",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1184382407",
+    "lat": 41.7330918,
+    "lon": -86.2525822,
+    "name": "Darden Substation",
+    "norm": "DARDEN",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1184916704",
+    "lat": 39.1756605,
+    "lon": -86.5276867,
+    "name": "Dunn Street Substation",
+    "norm": "DUNN STREET",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189012727",
+    "lat": 40.6974565,
+    "lon": -85.2847047,
+    "name": "Liberty Center Station",
+    "norm": "LIBERTY CENTER STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189322498",
+    "lat": 38.1221338,
+    "lon": -87.4762333,
+    "name": "Elliot Dist. Substation",
+    "norm": "ELLIOT DIST.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189393100",
+    "lat": 41.1835641,
+    "lon": -85.5962839,
+    "name": "AEP Richland Substation",
+    "norm": "AEP RICHLAND",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189402918",
+    "lat": 41.2359539,
+    "lon": -85.4586029,
+    "name": "Ummel Substation",
+    "norm": "UMMEL",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189402919",
+    "lat": 41.2359545,
+    "lon": -85.4581773,
+    "name": "AEP Tri-Lakes Substation",
+    "norm": "AEP TRI-LAKES",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189421562",
+    "lat": 41.1426427,
+    "lon": -85.4809185,
+    "name": "Southwest Substation",
+    "norm": "SOUTHWEST",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189682126",
+    "lat": 40.5615944,
+    "lon": -85.6568282,
+    "name": "AEP Marion Substation",
+    "norm": "AEP MARION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189743523",
+    "lat": 40.550489,
+    "lon": -85.6564838,
+    "name": "AEP McClure Substation",
+    "norm": "AEP MCCLURE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189751332",
+    "lat": 40.5642708,
+    "lon": -85.6822082,
+    "name": "AEP West End Substation",
+    "norm": "AEP WEST END",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189757533",
+    "lat": 40.5611529,
+    "lon": -85.7023499,
+    "name": "AEP Fisher Body Substation",
+    "norm": "AEP FISHER BODY",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1189832390",
+    "lat": 40.4853942,
+    "lon": -85.6285831,
+    "name": "AEP Jonesboro Substation",
+    "norm": "AEP JONESBORO",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189845361",
+    "lat": 40.4220325,
+    "lon": -85.6809411,
+    "name": "AEP Dean Substation",
+    "norm": "AEP DEAN",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189985695",
+    "lat": 41.2413602,
+    "lon": -85.8265175,
+    "name": "McKinley Substation",
+    "norm": "MCKINLEY",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1189992625",
+    "lat": 38.283099,
+    "lon": -86.9988302,
+    "name": "Dubois Transmission Station",
+    "norm": "DUBOIS TRANSMISSION STATION",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1190201609",
+    "lat": 41.4231799,
+    "lon": -85.7108609,
+    "name": "Warner Road Sub",
+    "norm": "WARNER ROAD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1190211927",
+    "lat": 41.3210994,
+    "lon": -85.7909082,
+    "name": "Oswego Sub",
+    "norm": "OSWEGO",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1190466708",
+    "lat": 41.5654319,
+    "lon": -85.8041702,
+    "name": "Lincolnway",
+    "norm": "LINCOLNWAY",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1191260789",
+    "lat": 41.540461,
+    "lon": -85.547377,
+    "name": "Topeka Sub",
+    "norm": "TOPEKA",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1191304356",
+    "lat": 41.5406873,
+    "lon": -85.252626,
+    "name": "South Milford Sub",
+    "norm": "SOUTH MILFORD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1191474202",
+    "lat": 41.6211179,
+    "lon": -84.97034,
+    "name": "East Angola Substation",
+    "norm": "EAST ANGOLA",
+    "operator": "Wbash Valley Power Association",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1191580361",
+    "lat": 41.4350498,
+    "lon": -85.2664504,
+    "name": "AEP Kendallville Station",
+    "norm": "AEP KENDALLVILLE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1191599494",
+    "lat": 41.4820292,
+    "lon": -85.1933526,
+    "name": "Fairfield Substation",
+    "norm": "FAIRFIELD",
+    "operator": "Noble REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1191601649",
+    "lat": 41.3396054,
+    "lon": -85.5145842,
+    "name": "AEP Wolf Lake Station",
+    "norm": "AEP WOLF LAKE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1191948466",
+    "lat": 41.6513434,
+    "lon": -86.196058,
+    "name": "Logan Substation",
+    "norm": "LOGAN",
+    "operator": "Mishawaka Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192138036",
+    "lat": 41.679283,
+    "lon": -86.1876191,
+    "name": "Russ Substation",
+    "norm": "RUSS",
+    "operator": "Mishawaka Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192367601",
+    "lat": 41.6743115,
+    "lon": -86.1654792,
+    "name": "Borley Substation",
+    "norm": "BORLEY",
+    "operator": "Mishawaka Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192524163",
+    "lat": 41.7014303,
+    "lon": -86.4502481,
+    "name": "Harbison Substation",
+    "norm": "HARBISON",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192638066",
+    "lat": 41.708069,
+    "lon": -86.5050469,
+    "name": "New Carlisle Substation",
+    "norm": "NEW CARLISLE",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1192729203",
+    "lat": 41.4531113,
+    "lon": -86.3102517,
+    "name": "AEP Vintage Station",
+    "norm": "AEP VINTAGE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192757716",
+    "lat": 41.5340922,
+    "lon": -86.5005366,
+    "name": "Whispering Pines Substation",
+    "norm": "WHISPERING PINES",
+    "operator": "Kankakee Valley REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192759771",
+    "lat": 41.4623696,
+    "lon": -86.4086454,
+    "name": "Shilo Sub",
+    "norm": "SHILO",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192762871",
+    "lat": 41.4636361,
+    "lon": -86.476453,
+    "name": "East Walkerton Sub",
+    "norm": "EAST WALKERTON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1192942375",
+    "lat": 41.3904462,
+    "lon": -86.396626,
+    "name": "Tyner Sub 9",
+    "norm": "TYNER 9",
+    "operator": "Marshall County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193031049",
+    "lat": 41.4535489,
+    "lon": -86.1418777,
+    "name": "2nd Street Substation",
+    "norm": "2ND STREET",
+    "operator": "Bremen Power & Light",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193033140",
+    "lat": 41.4491639,
+    "lon": -86.1558163,
+    "name": "Third Street Sub",
+    "norm": "THIRD STREET",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193033141",
+    "lat": 41.4489473,
+    "lon": -86.1566462,
+    "name": "Bowen Avenue Substation",
+    "norm": "BOWEN AVENUE",
+    "operator": "Bremen Power & Light",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193036863",
+    "lat": 41.3306741,
+    "lon": -86.1361346,
+    "name": "Bourbon Sub 6",
+    "norm": "BOURBON 6",
+    "operator": "Marshall County REMC",
+    "state": "IN",
+    "voltage": "12470"
+  },
+  {
+    "id": "way/1193036864",
+    "lat": 41.330164,
+    "lon": -86.1361561,
+    "name": "Bourbon Sub",
+    "norm": "BOURBON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193043452",
+    "lat": 41.3772259,
+    "lon": -86.2137274,
+    "name": "Ironwood Sub",
+    "norm": "IRONWOOD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193304771",
+    "lat": 41.2879642,
+    "lon": -86.4146111,
+    "name": "Knox Junction Sub",
+    "norm": "KNOX JUNCTION",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193438466",
+    "lat": 41.2962438,
+    "lon": -86.6240794,
+    "name": "Knox Sub",
+    "norm": "KNOX",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1193841330",
+    "lat": 40.5969891,
+    "lon": -86.7749821,
+    "name": "Springboro Station",
+    "norm": "SPRINGBORO STATION",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1194504807",
+    "lat": 41.1135546,
+    "lon": -86.5243259,
+    "name": "Lawton Sub",
+    "norm": "LAWTON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1194536416",
+    "lat": 41.2148059,
+    "lon": -86.7710175,
+    "name": "North Judson Sub",
+    "norm": "NORTH JUDSON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1194852841",
+    "lat": 41.4373314,
+    "lon": -86.9538927,
+    "name": "Washington Substation",
+    "norm": "WASHINGTON",
+    "operator": "Kankakee Valley REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1195335014",
+    "lat": 41.7106505,
+    "lon": -86.9084304,
+    "name": "Kentuky Station",
+    "norm": "KENTUKY STATION",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1195611783",
+    "lat": 41.6642188,
+    "lon": -86.8839714,
+    "name": "Kiefer Road Sub",
+    "norm": "KIEFER ROAD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1195621235",
+    "lat": 41.7390703,
+    "lon": -86.8417626,
+    "name": "Freyer Road Sub",
+    "norm": "FREYER ROAD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1196581295",
+    "lat": 41.3220989,
+    "lon": -87.2024792,
+    "name": "Hebron Sub",
+    "norm": "HEBRON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1196628234",
+    "lat": 41.4127051,
+    "lon": -87.0843751,
+    "name": "Morgan Substation",
+    "norm": "MORGAN",
+    "operator": "Kankakee Valley REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1196920449",
+    "lat": 41.53251,
+    "lon": -87.1535771,
+    "name": "Wolf Rd. Sub",
+    "norm": "WOLF RD.",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197051558",
+    "lat": 41.5213536,
+    "lon": -87.171476,
+    "name": "Buckeye Pipeline",
+    "norm": "BUCKEYE PIPELINE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197077816",
+    "lat": 41.5720788,
+    "lon": -87.2020914,
+    "name": "Willowdale Sub",
+    "norm": "WILLOWDALE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197085916",
+    "lat": 41.5966231,
+    "lon": -87.1823974,
+    "name": "Woodland Park Sub",
+    "norm": "WOODLAND PARK",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197231879",
+    "lat": 41.6058105,
+    "lon": -87.1018805,
+    "name": "Crocker Sub",
+    "norm": "CROCKER",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197439219",
+    "lat": 41.5739551,
+    "lon": -87.2360825,
+    "name": "East Gary Sub",
+    "norm": "EAST GARY",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197441328",
+    "lat": 41.5698941,
+    "lon": -87.2770458,
+    "name": "Central Avenue Substation",
+    "norm": "CENTRAL AVENUE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1197825012",
+    "lat": 41.5731125,
+    "lon": -87.3324186,
+    "name": "Delaware Substation",
+    "norm": "DELAWARE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1198401830",
+    "lat": 41.6093278,
+    "lon": -87.4604953,
+    "name": "Kennedy Avenue Pumping Station",
+    "norm": "KENNEDY AVENUE PUMPING STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1198438703",
+    "lat": 41.5779758,
+    "lon": -87.4861726,
+    "name": "Woodmar Subtaion",
+    "norm": "WOODMAR SUBTAION",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1198517732",
+    "lat": 37.9894068,
+    "lon": -87.2844007,
+    "name": "Pelzer Transmission Station",
+    "norm": "PELZER TRANSMISSION STATION",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1198628169",
+    "lat": 41.5963517,
+    "lon": -87.48135,
+    "name": "Pullman Sub",
+    "norm": "PULLMAN",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1199490848",
+    "lat": 41.6306277,
+    "lon": -87.5181423,
+    "name": "North Hammond Substation",
+    "norm": "NORTH HAMMOND",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1202656446",
+    "lat": 41.6447006,
+    "lon": -87.4525239,
+    "name": "Indiana Harbor Sub",
+    "norm": "INDIANA HARBOR",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1202822431",
+    "lat": 41.6439733,
+    "lon": -87.4591097,
+    "name": "Mich. Ave. Pumping Station",
+    "norm": "MICH. AVE. PUMPING STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1203385544",
+    "lat": 39.1738355,
+    "lon": -86.5392886,
+    "name": "11th Street Substation",
+    "norm": "11TH STREET",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1203499627",
+    "lat": 41.6098625,
+    "lon": -87.4509729,
+    "name": "Carroll Substation",
+    "norm": "CARROLL",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1203499632",
+    "lat": 41.5986978,
+    "lon": -87.4333018,
+    "name": "Gibson Substation",
+    "norm": "GIBSON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1203806600",
+    "lat": 41.5505505,
+    "lon": -87.4134904,
+    "name": "Ridge Rd. Sub",
+    "norm": "RIDGE RD.",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1204027206",
+    "lat": 41.5190556,
+    "lon": -87.4385527,
+    "name": "Griffith Pump Station",
+    "norm": "GRIFFITH PUMP STATION",
+    "operator": "Buckeye Pipeline",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1204035160",
+    "lat": 41.5230788,
+    "lon": -87.4236801,
+    "name": "Griffith Sub",
+    "norm": "GRIFFITH",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1204049645",
+    "lat": 41.5076765,
+    "lon": -87.4926435,
+    "name": "Meadow Lane Sub",
+    "norm": "MEADOW LANE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1204564701",
+    "lat": 41.5295625,
+    "lon": -87.384972,
+    "name": "Ross Substation",
+    "norm": "ROSS",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205237991",
+    "lat": 41.4644948,
+    "lon": -87.4312968,
+    "name": "Lake Hills",
+    "norm": "LAKE HILLS",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205247071",
+    "lat": 41.4875277,
+    "lon": -87.4024599,
+    "name": "Schererville",
+    "norm": "SCHERERVILLE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205523824",
+    "lat": 41.4205549,
+    "lon": -87.4517555,
+    "name": "Hanover Station",
+    "norm": "HANOVER STATION",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205636686",
+    "lat": 41.432423,
+    "lon": -87.4883985,
+    "name": "Palmira Sub",
+    "norm": "PALMIRA",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205646078",
+    "lat": 41.3786926,
+    "lon": -87.4212552,
+    "name": "Cedar Lake Substation",
+    "norm": "CEDAR LAKE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205649615",
+    "lat": 41.398758,
+    "lon": -87.3684119,
+    "name": "Court Substation",
+    "norm": "COURT",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205839967",
+    "lat": 41.3335172,
+    "lon": -87.4602558,
+    "name": "Creston",
+    "norm": "CRESTON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205877731",
+    "lat": 41.2960205,
+    "lon": -87.4202921,
+    "name": "Lowell Sub",
+    "norm": "LOWELL",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205950118",
+    "lat": 41.1727025,
+    "lon": -87.1513297,
+    "name": "DeMotte Substation",
+    "norm": "DEMOTTE",
+    "operator": "Jasper County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1205976024",
+    "lat": 41.1494002,
+    "lon": -87.237085,
+    "name": "Sutton Substation",
+    "norm": "SUTTON",
+    "operator": "Jasper County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1206281976",
+    "lat": 41.0231886,
+    "lon": -87.1521669,
+    "name": "Parr Substation",
+    "norm": "PARR",
+    "operator": "Jasper County REMC",
+    "state": "IN",
+    "voltage": "12470"
+  },
+  {
+    "id": "way/1206352335",
+    "lat": 40.9924524,
+    "lon": -87.0169238,
+    "name": "Moody Substation",
+    "norm": "MOODY",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1206497589",
+    "lat": 40.5187622,
+    "lon": -87.222093,
+    "name": "Templeton Substation",
+    "norm": "TEMPLETON",
+    "operator": "Warren County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1206599346",
+    "lat": 40.3153588,
+    "lon": -87.3194663,
+    "name": "Kramer Substation",
+    "norm": "KRAMER",
+    "operator": "Warren County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1207177984",
+    "lat": 40.3412245,
+    "lon": -86.9341434,
+    "name": "Taylor Substation",
+    "norm": "TAYLOR",
+    "operator": "Tipmont REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1207890446",
+    "lat": 40.243894,
+    "lon": -86.7199344,
+    "name": "Clarks Hill Substation",
+    "norm": "CLARKS HILL",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208120161",
+    "lat": 40.1260454,
+    "lon": -86.4748531,
+    "name": "Pike Substation",
+    "norm": "PIKE",
+    "operator": "Boone County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208130183",
+    "lat": 39.9756749,
+    "lon": -86.366093,
+    "name": "Anson North Substation",
+    "norm": "ANSON NORTH",
+    "operator": "Boone Cont REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208533816",
+    "lat": 40.2822507,
+    "lon": -86.052015,
+    "name": "Tipton 69 kV Substation",
+    "norm": "TIPTON 69 KV",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208588305",
+    "lat": 40.3345167,
+    "lon": -85.9571336,
+    "name": "Windfall Substation",
+    "norm": "WINDFALL",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208768942",
+    "lat": 40.1980389,
+    "lon": -86.0695877,
+    "name": "Arcadia North Substation",
+    "norm": "ARCADIA NORTH",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208771591",
+    "lat": 40.1615847,
+    "lon": -86.0698523,
+    "name": "Arcadia Substation",
+    "norm": "ARCADIA",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1208802939",
+    "lat": 40.1151755,
+    "lon": -86.1766953,
+    "name": "Sheridan Substation",
+    "norm": "SHERIDAN",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1209574175",
+    "lat": 40.2998216,
+    "lon": -85.6534813,
+    "name": "South Summitville Station",
+    "norm": "SOUTH SUMMITVILLE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1209755417",
+    "lat": 40.0833443,
+    "lon": -85.6663924,
+    "name": "32d Street Station",
+    "norm": "32D STREET STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1210600278",
+    "lat": 40.2078726,
+    "lon": -85.4147635,
+    "name": "Bethel Substation",
+    "norm": "BETHEL",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1210783558",
+    "lat": 40.1780428,
+    "lon": -85.1308077,
+    "name": "Farmland Substation",
+    "norm": "FARMLAND",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1210802800",
+    "lat": 40.1746437,
+    "lon": -84.9920107,
+    "name": "Shugga Substation",
+    "norm": "SHUGGA",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1210993904",
+    "lat": 39.8764272,
+    "lon": -84.9392062,
+    "name": "Northwest Richmond Substation",
+    "norm": "NORTHWEST RICHMOND",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1211647485",
+    "lat": 40.0259411,
+    "lon": -85.3953148,
+    "name": "Springport Substation",
+    "norm": "SPRINGPORT",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1212226091",
+    "lat": 39.8702901,
+    "lon": -86.1566877,
+    "name": "Warfleigh Pumping Station",
+    "norm": "WARFLEIGH PUMPING STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1212376890",
+    "lat": 39.7769939,
+    "lon": -86.1927409,
+    "name": "Evans Milling Substation",
+    "norm": "EVANS MILLING",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1214658606",
+    "lat": 39.7596004,
+    "lon": -86.1132315,
+    "name": "English Avenue Substation",
+    "norm": "ENGLISH AVENUE",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1215367601",
+    "lat": 39.7334842,
+    "lon": -86.2235372,
+    "name": "Strip Mill Substation",
+    "norm": "STRIP MILL",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1215611409",
+    "lat": 39.8137978,
+    "lon": -86.428814,
+    "name": "C. G Stamper Substation",
+    "norm": "C. G STAMPER",
+    "operator": "Hendricks Power Cooperative",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1215879650",
+    "lat": 39.8486315,
+    "lon": -86.7119816,
+    "name": "Barnard Substation",
+    "norm": "BARNARD",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1215880954",
+    "lat": 39.7646555,
+    "lon": -86.8100496,
+    "name": "Bainbridge Substation",
+    "norm": "BAINBRIDGE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1216052835",
+    "lat": 39.7238079,
+    "lon": -86.7063191,
+    "name": "Heritage Lake Substation",
+    "norm": "HERITAGE LAKE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1216055727",
+    "lat": 39.7120859,
+    "lon": -86.6701074,
+    "name": "Reno Station",
+    "norm": "RENO STATION",
+    "operator": "Marathon Pipeline LLC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1216105437",
+    "lat": 39.7626942,
+    "lon": -86.9353091,
+    "name": "Morton Substation",
+    "norm": "MORTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1216110105",
+    "lat": 39.8476843,
+    "lon": -86.979023,
+    "name": "Russellville Substation",
+    "norm": "RUSSELLVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1216262727",
+    "lat": 39.8171962,
+    "lon": -87.4038164,
+    "name": "Hillsdale Substation",
+    "norm": "HILLSDALE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1216949591",
+    "lat": 39.4905608,
+    "lon": -87.4103608,
+    "name": "Terre Haute Central Substation",
+    "norm": "TERRE HAUTE CENTRAL",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1217161966",
+    "lat": 39.4620496,
+    "lon": -87.3739249,
+    "name": "29th St. Substation",
+    "norm": "29TH ST.",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1217398964",
+    "lat": 39.2740472,
+    "lon": -87.3788261,
+    "name": "Farmersburg Substation",
+    "norm": "FARMERSBURG",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1217604514",
+    "lat": 39.1412619,
+    "lon": -86.4800144,
+    "name": "Bloomington South East Substation",
+    "norm": "BLOOMINGTON SOUTH EAST",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1217618077",
+    "lat": 39.2700264,
+    "lon": -87.0731071,
+    "name": "Clay City Substation",
+    "norm": "CLAY CITY",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1217821950",
+    "lat": 39.4158748,
+    "lon": -86.7612229,
+    "name": "Carp Substation",
+    "norm": "CARP",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218138483",
+    "lat": 39.5643482,
+    "lon": -86.4190245,
+    "name": "Nelson Stader Substation",
+    "norm": "NELSON STADER",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218141497",
+    "lat": 39.5440484,
+    "lon": -86.3551658,
+    "name": "Brooklyn Nirth Substation",
+    "norm": "BROOKLYN NIRTH",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218144573",
+    "lat": 39.4303963,
+    "lon": -86.4302122,
+    "name": "Martinsville Substation",
+    "norm": "MARTINSVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218318385",
+    "lat": 39.3923717,
+    "lon": -86.5639584,
+    "name": "Paragon Substation",
+    "norm": "PARAGON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1218341036",
+    "lat": 39.3975103,
+    "lon": -86.1788737,
+    "name": "Samaria Substation",
+    "norm": "SAMARIA",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218557152",
+    "lat": 39.5207683,
+    "lon": -86.1576821,
+    "name": "Harrod Substation",
+    "norm": "HARROD",
+    "operator": "Bargerville Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218567959",
+    "lat": 39.5177076,
+    "lon": -86.2104899,
+    "name": "Kinder",
+    "norm": "KINDER",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218571405",
+    "lat": 39.5820937,
+    "lon": -85.9906182,
+    "name": "Willard Green Substation",
+    "norm": "WILLARD GREEN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1218571406",
+    "lat": 39.581868,
+    "lon": -85.9894639,
+    "name": "Clark Township Substation",
+    "norm": "CLARK TOWNSHIP",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/1219030377",
+    "lat": 39.430851,
+    "lon": -85.6330618,
+    "name": "St. Paul Substation",
+    "norm": "ST. PAUL",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1219295967",
+    "lat": 39.7421287,
+    "lon": -85.5464185,
+    "name": "Carthage Substation",
+    "norm": "CARTHAGE",
+    "operator": "RushShelby Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1219339534",
+    "lat": 39.6274081,
+    "lon": -85.5243931,
+    "name": "Pioneer Substation",
+    "norm": "PIONEER",
+    "operator": "RushShelby Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1219393007",
+    "lat": 39.6945329,
+    "lon": -85.2234865,
+    "name": "Harrisburg Substation",
+    "norm": "HARRISBURG",
+    "operator": "Hoossier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1219773698",
+    "lat": 39.3817526,
+    "lon": -85.2855072,
+    "name": "Kingston Substation",
+    "norm": "KINGSTON",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1220278720",
+    "lat": 39.1433136,
+    "lon": -85.7804382,
+    "name": "Elizabethtown Substation",
+    "norm": "ELIZABETHTOWN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1220519799",
+    "lat": 39.09774,
+    "lon": -86.7404873,
+    "name": "Solsberry",
+    "norm": "SOLSBERRY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1221301271",
+    "lat": 39.2267022,
+    "lon": -87.3995563,
+    "name": "Scott City Substation",
+    "norm": "SCOTT CITY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1221368639",
+    "lat": 38.8718471,
+    "lon": -87.0786154,
+    "name": "Elnora Substation",
+    "norm": "ELNORA",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1221379315",
+    "lat": 38.8947774,
+    "lon": -87.4110199,
+    "name": "Oaktown Substation",
+    "norm": "OAKTOWN",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "12000"
+  },
+  {
+    "id": "way/1221566840",
+    "lat": 38.6418448,
+    "lon": -87.3463995,
+    "name": "Palmyra Township Substation",
+    "norm": "PALMYRA TOWNSHIP",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1221581496",
+    "lat": 38.5064065,
+    "lon": -87.6044064,
+    "name": "Decker Substation",
+    "norm": "DECKER",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1223335418",
+    "lat": 39.5180531,
+    "lon": -86.488317,
+    "name": "Wilbur Substation",
+    "norm": "WILBUR",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1224905631",
+    "lat": 38.8717918,
+    "lon": -84.7913507,
+    "name": "Mexico Bottoms Substation",
+    "norm": "MEXICO BOTTOMS",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225206550",
+    "lat": 38.7175737,
+    "lon": -85.4676846,
+    "name": "Hanover Substation",
+    "norm": "HANOVER",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1225432949",
+    "lat": 38.7199481,
+    "lon": -85.7384541,
+    "name": "New Frankfort Junction Substation",
+    "norm": "NEW FRANKFORT JUNCTION",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1225440307",
+    "lat": 38.7397637,
+    "lon": -85.7386053,
+    "name": "New Frankfort Substation",
+    "norm": "NEW FRANKFORT",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1225444199",
+    "lat": 38.7444408,
+    "lon": -85.8080428,
+    "name": "Austin Substation",
+    "norm": "AUSTIN",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225467034",
+    "lat": 38.844368,
+    "lon": -85.8490461,
+    "name": "Dudleytown Substation",
+    "norm": "DUDLEYTOWN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225469632",
+    "lat": 38.9101527,
+    "lon": -85.8638113,
+    "name": "Chestnut Ridge Substation",
+    "norm": "CHESTNUT RIDGE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225480512",
+    "lat": 38.6997551,
+    "lon": -85.8553323,
+    "name": "Little York Substation",
+    "norm": "LITTLE YORK",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225489285",
+    "lat": 38.6807389,
+    "lon": -85.7718697,
+    "name": "Tatlock Sub Electric Substation",
+    "norm": "TATLOCK ELECTRIC",
+    "operator": "Scottsburg Electric Dept.",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225490467",
+    "lat": 38.6707689,
+    "lon": -85.7734309,
+    "name": "Lake Rd. Sub Electric Substation",
+    "norm": "LAKE RD. ELECTRIC",
+    "operator": "Scottsburg Electric Department",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225491305",
+    "lat": 38.6639295,
+    "lon": -85.7703762,
+    "name": "South Main Sub Electric Substation",
+    "norm": "SOUTH MAIN ELECTRIC",
+    "operator": "Sottsburg Electric Department",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225523393",
+    "lat": 38.5418904,
+    "lon": -85.7679134,
+    "name": "Henryville Substation",
+    "norm": "HENRYVILLE",
+    "operator": "Clark County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225529112",
+    "lat": 38.5998529,
+    "lon": -85.6770304,
+    "name": "Reeves Substation",
+    "norm": "REEVES",
+    "operator": "Clark County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225785616",
+    "lat": 38.4285764,
+    "lon": -85.7008955,
+    "name": "Bethany Substation",
+    "norm": "BETHANY",
+    "operator": "Clark County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225787330",
+    "lat": 38.438509,
+    "lon": -85.6607638,
+    "name": "Charlestown Substation",
+    "norm": "CHARLESTOWN",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1225930230",
+    "lat": 38.2750114,
+    "lon": -85.7437321,
+    "name": "Jeffersonville Kentucky Avenue Substation",
+    "norm": "JEFFERSONVILLE KENTUCKY AVENUE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1226224915",
+    "lat": 38.3102514,
+    "lon": -85.9758161,
+    "name": "Georgetown Substation",
+    "norm": "GEORGETOWN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226557578",
+    "lat": 38.3251295,
+    "lon": -86.1707108,
+    "name": "Ramsey Substation",
+    "norm": "RAMSEY",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226599677",
+    "lat": 38.5542039,
+    "lon": -86.364024,
+    "name": "Mahan Substation",
+    "norm": "MAHAN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226612619",
+    "lat": 38.5574541,
+    "lon": -86.4457766,
+    "name": "Indian Trail Substation",
+    "norm": "INDIAN TRAIL",
+    "operator": "Town of Paoli",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226720957",
+    "lat": 38.421075,
+    "lon": -86.7882504,
+    "name": "Dubois Substation",
+    "norm": "DUBOIS",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226727085",
+    "lat": 38.2356558,
+    "lon": -86.3413731,
+    "name": "Tower Substation",
+    "norm": "TOWER",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226737043",
+    "lat": 38.3177412,
+    "lon": -86.171432,
+    "name": "Ramsey Substation",
+    "norm": "RAMSEY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226940906",
+    "lat": 38.1423062,
+    "lon": -86.1019372,
+    "name": "Dogwood Substation",
+    "norm": "DOGWOOD",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226951137",
+    "lat": 38.0482431,
+    "lon": -86.188466,
+    "name": "Mauckport Substation",
+    "norm": "MAUCKPORT",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226973368",
+    "lat": 38.4161701,
+    "lon": -86.9282755,
+    "name": "North Substation",
+    "norm": "NORTH",
+    "operator": "Jasper Municipal Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1226993232",
+    "lat": 38.5538806,
+    "lon": -87.0153346,
+    "name": "Glendale Substation",
+    "norm": "GLENDALE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227149262",
+    "lat": 38.3017897,
+    "lon": -87.0030937,
+    "name": "Huntingburg Substation",
+    "norm": "HUNTINGBURG",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227166721",
+    "lat": 38.3201414,
+    "lon": -86.9788612,
+    "name": "Patoka Valley Substation",
+    "norm": "PATOKA VALLEY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227176860",
+    "lat": 38.1898008,
+    "lon": -86.8904455,
+    "name": "New Haven Substation",
+    "norm": "NEW HAVEN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227180964",
+    "lat": 38.2208572,
+    "lon": -86.9240669,
+    "name": "St. Henry Transmission Station",
+    "norm": "ST. HENRY TRANSMISSION STATION",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227468886",
+    "lat": 38.3626486,
+    "lon": -87.4831066,
+    "name": "Francisco",
+    "norm": "FRANCISCO",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227470413",
+    "lat": 38.413745,
+    "lon": -87.5194175,
+    "name": "Princeton Substation",
+    "norm": "PRINCETON",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227474056",
+    "lat": 38.319266,
+    "lon": -87.6782458,
+    "name": "Owensville Substation",
+    "norm": "OWENSVILLE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227588802",
+    "lat": 38.227858,
+    "lon": -87.7850926,
+    "name": "Poseyville Substation",
+    "norm": "POSEYVILLE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227789335",
+    "lat": 38.1682863,
+    "lon": -86.9880706,
+    "name": "Dale Substation",
+    "norm": "DALE",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227801197",
+    "lat": 38.0026564,
+    "lon": -86.952811,
+    "name": "Newtonville Substation",
+    "norm": "NEWTONVILLE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227806625",
+    "lat": 38.0190263,
+    "lon": -87.0692822,
+    "name": "Chesney Substation",
+    "norm": "CHESNEY",
+    "operator": "Hoosierr Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227866384",
+    "lat": 38.0419768,
+    "lon": -87.222803,
+    "name": "Degonia Substation",
+    "norm": "DEGONIA",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1227897235",
+    "lat": 38.2041431,
+    "lon": -87.1516416,
+    "name": "Hemenway Substation",
+    "norm": "HEMENWAY",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228044395",
+    "lat": 38.0923799,
+    "lon": -87.3495513,
+    "name": "Vigo Substation",
+    "norm": "VIGO",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228234403",
+    "lat": 37.9730635,
+    "lon": -87.3885681,
+    "name": "Broadview Substation",
+    "norm": "BROADVIEW",
+    "operator": "Vectren Energy Delivery",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228239234",
+    "lat": 37.9667581,
+    "lon": -87.4328061,
+    "name": "Grimm Road Substation",
+    "norm": "GRIMM ROAD",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1228291866",
+    "lat": 38.0983277,
+    "lon": -87.59734,
+    "name": "St. Wendell Substation",
+    "norm": "ST. WENDELL",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228293825",
+    "lat": 38.0509869,
+    "lon": -87.5991127,
+    "name": "Mohr Road Substation",
+    "norm": "MOHR ROAD",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228295689",
+    "lat": 38.0263525,
+    "lon": -87.6057508,
+    "name": "Folz Rd. Substation",
+    "norm": "FOLZ RD.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228301817",
+    "lat": 38.0201771,
+    "lon": -87.6985036,
+    "name": "County Line Substation",
+    "norm": "COUNTY LINE",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228470797",
+    "lat": 37.9954635,
+    "lon": -87.4874369,
+    "name": "Smythe Substation",
+    "norm": "SMYTHE",
+    "operator": "Vectren Energy Delivery",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228483246",
+    "lat": 37.9486232,
+    "lon": -87.5351487,
+    "name": "Fairlawn Substation",
+    "norm": "FAIRLAWN",
+    "operator": "Vectren Energy Delivery",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228504746",
+    "lat": 37.9812796,
+    "lon": -87.498577,
+    "name": "Eastland Dist. Substation",
+    "norm": "EASTLAND DIST.",
+    "operator": "Vectren Energy Delivery",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228545270",
+    "lat": 37.991077,
+    "lon": -87.5517656,
+    "name": "Plymouth Substation",
+    "norm": "PLYMOUTH",
+    "operator": "Vectren Energy Delivery",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228681893",
+    "lat": 37.96764,
+    "lon": -87.5656057,
+    "name": "Mulberry Substation",
+    "norm": "MULBERRY",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228740209",
+    "lat": 37.9728386,
+    "lon": -87.5761658,
+    "name": "Ingle Station",
+    "norm": "INGLE STATION",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228888067",
+    "lat": 37.9810937,
+    "lon": -87.6236293,
+    "name": "Tekoppel Substation",
+    "norm": "TEKOPPEL",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1228933804",
+    "lat": 37.9605315,
+    "lon": -87.6819376,
+    "name": "USI Substation",
+    "norm": "USI",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1229464319",
+    "lat": 38.0741315,
+    "lon": -87.7857328,
+    "name": "Wadesville Substation",
+    "norm": "WADESVILLE",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1232970080",
+    "lat": 39.6402341,
+    "lon": -84.8171529,
+    "name": "AEP College Corner Substation",
+    "norm": "AEP COLLEGE CORNER",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/123845680",
+    "lat": 39.8304111,
+    "lon": -84.9007307,
+    "name": "Johnson Street",
+    "norm": "JOHNSON STREET",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1274185630",
+    "lat": 41.6054441,
+    "lon": -87.3574134,
+    "name": "Grant Substation",
+    "norm": "GRANT",
+    "operator": null,
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/127768026",
+    "lat": 41.7464091,
+    "lon": -85.0496955,
+    "name": "Barton Lake Substation",
+    "norm": "BARTON LAKE",
+    "operator": "Northern Indiana Public Service Company",
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/130414507",
+    "lat": 41.6490086,
+    "lon": -86.2508262,
+    "name": "AEP South Side Station",
+    "norm": "AEP SOUTH SIDE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1386631882",
+    "lat": 41.6295748,
+    "lon": -87.5003758,
+    "name": "Columbia Substation",
+    "norm": "COLUMBIA",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/1386631884",
+    "lat": 41.6051727,
+    "lon": -87.341838,
+    "name": "Madison Substation",
+    "norm": "MADISON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1386631885",
+    "lat": 41.6054215,
+    "lon": -87.3417973,
+    "name": "Madison Substation",
+    "norm": "MADISON",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/1428320219",
+    "lat": 38.3157917,
+    "lon": -86.0756763,
+    "name": "New Salisbury Substation",
+    "norm": "NEW SALISBURY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1454098114",
+    "lat": 41.2215638,
+    "lon": -86.9471098,
+    "name": "Hinshaw Substation",
+    "norm": "HINSHAW",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1454457420",
+    "lat": 39.8401169,
+    "lon": -84.9205094,
+    "name": "State Hospital Substation",
+    "norm": "STATE HOSPITAL",
+    "operator": "Richmond Power & Light",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/147044596",
+    "lat": 41.6231341,
+    "lon": -86.2558035,
+    "name": "Jackson Road",
+    "norm": "JACKSON ROAD",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/147054449",
+    "lat": 41.651063,
+    "lon": -86.1921676,
+    "name": "AEP Dragoon Station",
+    "norm": "AEP DRAGOON STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1492431156",
+    "lat": 40.1986507,
+    "lon": -85.4140785,
+    "name": "BSU South Service",
+    "norm": "BSU SOUTH SERVICE",
+    "operator": null,
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/149698099",
+    "lat": 41.5651551,
+    "lon": -85.8436554,
+    "name": "Goshen Junction Sub",
+    "norm": "GOSHEN JUNCTION",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/152944363",
+    "lat": 40.4733997,
+    "lon": -85.9155466,
+    "name": "Greentown Substation",
+    "norm": "GREENTOWN",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "765000;230000;138000"
+  },
+  {
+    "id": "way/152944383",
+    "lat": 40.4764301,
+    "lon": -85.9163508,
+    "name": "Greentown Substation",
+    "norm": "GREENTOWN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/152946530",
+    "lat": 40.2734069,
+    "lon": -85.3652598,
+    "name": "Royerton Substation",
+    "norm": "ROYERTON",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/153009583",
+    "lat": 39.0656599,
+    "lon": -87.5116647,
+    "name": "Merom Station",
+    "norm": "MEROM STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/153027203",
+    "lat": 38.0404788,
+    "lon": -87.2581105,
+    "name": "Booneville Substation",
+    "norm": "BOONEVILLE",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/153129470",
+    "lat": 40.5611477,
+    "lon": -85.7130653,
+    "name": "AEP Grant Substation",
+    "norm": "AEP GRANT",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/153129471",
+    "lat": 40.4663551,
+    "lon": -86.1495398,
+    "name": "Kokomo Highland Park Substation",
+    "norm": "KOKOMO HIGHLAND PARK",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/153129472",
+    "lat": 40.7882815,
+    "lon": -85.8175898,
+    "name": "Wabash Substation",
+    "norm": "WABASH",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/153209353",
+    "lat": 40.4690647,
+    "lon": -87.0145878,
+    "name": "Dequine Substation",
+    "norm": "DEQUINE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/153209358",
+    "lat": 40.7711336,
+    "lon": -86.8677287,
+    "name": "Reynolds Substation",
+    "norm": "REYNOLDS",
+    "operator": null,
+    "state": "IN",
+    "voltage": "765000;345000;138000"
+  },
+  {
+    "id": "way/153209365",
+    "lat": 40.2819317,
+    "lon": -87.2207599,
+    "name": "Duke Energy Attica Substation",
+    "norm": "DUKE ENERGY ATTICA",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/153209366",
+    "lat": 39.9424659,
+    "lon": -87.5009546,
+    "name": "Eugene Substation",
+    "norm": "EUGENE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/153209370",
+    "lat": 40.7527039,
+    "lon": -86.7681712,
+    "name": "Monticello Substation",
+    "norm": "MONTICELLO",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/153230186",
+    "lat": 40.520761,
+    "lon": -86.1369764,
+    "name": "Kokomo Webster Street Substation",
+    "norm": "KOKOMO WEBSTER STREET",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1539173439",
+    "lat": 41.6165724,
+    "lon": -87.5244257,
+    "name": "NIPSCO Russell Substartion",
+    "norm": "NIPSCO RUSSELL SUBSTARTION",
+    "operator": null,
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/156574100",
+    "lat": 38.8708348,
+    "lon": -86.5099589,
+    "name": "Bedford Substation (345kV)",
+    "norm": "BEDFORD",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/156957269",
+    "lat": 39.7259377,
+    "lon": -86.3116936,
+    "name": "IPL Substation",
+    "norm": "IPL",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/159619269",
+    "lat": 39.351823,
+    "lon": -85.4614069,
+    "name": "Canter A-B",
+    "norm": "CANTER A-B",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/171168733",
+    "lat": 41.073025,
+    "lon": -85.2948348,
+    "name": "AEP Illinois Road Substation",
+    "norm": "AEP ILLINOIS ROAD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/178083916",
+    "lat": 40.6530817,
+    "lon": -86.9345883,
+    "name": "Meadow Lake Substation",
+    "norm": "MEADOW LAKE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178087549",
+    "lat": 40.6476486,
+    "lon": -86.9357416,
+    "name": "South Prairie Sub",
+    "norm": "SOUTH PRAIRIE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/178100011",
+    "lat": 41.2227991,
+    "lon": -86.6216414,
+    "name": "Bass Lake Sub",
+    "norm": "BASS LAKE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/178591680",
+    "lat": 38.3222097,
+    "lon": -87.4239731,
+    "name": "Francisco Substation",
+    "norm": "FRANCISCO",
+    "operator": "Southern Indiana Gas & Electric",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/178591686",
+    "lat": 38.3744499,
+    "lon": -87.7638106,
+    "name": "Gibson Station",
+    "norm": "GIBSON STATION",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178592482",
+    "lat": 38.3116946,
+    "lon": -87.0239969,
+    "name": "Duff Substation",
+    "norm": "DUFF",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/178652394",
+    "lat": 38.5273554,
+    "lon": -87.2494654,
+    "name": "Petersburg Station",
+    "norm": "PETERSBURG STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178652395",
+    "lat": 38.6722246,
+    "lon": -87.2917827,
+    "name": "Wheatland Station",
+    "norm": "WHEATLAND STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178744140",
+    "lat": 39.6925614,
+    "lon": -86.3238491,
+    "name": "Thompson Substation",
+    "norm": "THOMPSON",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/178826075",
+    "lat": 39.1741739,
+    "lon": -85.8697262,
+    "name": "Columbus Substation (345kV)",
+    "norm": "COLUMBUS",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000;230000;138000;69000"
+  },
+  {
+    "id": "way/178843564",
+    "lat": 39.2961001,
+    "lon": -86.5203899,
+    "name": "Bloomington Substation (230kV)",
+    "norm": "BLOOMINGTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/178843565",
+    "lat": 39.1654379,
+    "lon": -85.9597806,
+    "name": "Columbus Denois Creek Substation",
+    "norm": "COLUMBUS DENOIS CREEK",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/178883972",
+    "lat": 39.6043401,
+    "lon": -86.1723973,
+    "name": "Frances Creek Substation",
+    "norm": "FRANCES CREEK",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/178910725",
+    "lat": 39.7090056,
+    "lon": -86.6283147,
+    "name": "Amo Substation",
+    "norm": "AMO",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178910727",
+    "lat": 39.971762,
+    "lon": -86.831727,
+    "name": "Nucor Substation",
+    "norm": "NUCOR",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178910729",
+    "lat": 39.8782662,
+    "lon": -86.4833986,
+    "name": "Qualitech Substation",
+    "norm": "QUALITECH",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178910730",
+    "lat": 39.9824636,
+    "lon": -86.3066219,
+    "name": "Whitestown Substation",
+    "norm": "WHITESTOWN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/178915006",
+    "lat": 39.8559719,
+    "lon": -86.2283439,
+    "name": "Guion Substation",
+    "norm": "GUION",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/178915007",
+    "lat": 39.784033,
+    "lon": -86.3046277,
+    "name": "Rockville Substation",
+    "norm": "ROCKVILLE",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/179005711",
+    "lat": 40.094115,
+    "lon": -86.1663662,
+    "name": "Hortonville Substation",
+    "norm": "HORTONVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/179005713",
+    "lat": 40.0983559,
+    "lon": -85.972674,
+    "name": "Noblesville Substation",
+    "norm": "NOBLESVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000;230000;138000"
+  },
+  {
+    "id": "way/179005714",
+    "lat": 40.0959137,
+    "lon": -85.9724571,
+    "name": "Noblesville Substation (69kV)",
+    "norm": "NOBLESVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/179005757",
+    "lat": 39.8198907,
+    "lon": -85.9698276,
+    "name": "German Church Rd. Substation",
+    "norm": "GERMAN CHURCH RD.",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/179005764",
+    "lat": 40.0534485,
+    "lon": -85.7394762,
+    "name": "Anderson",
+    "norm": "ANDERSON",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/179014854",
+    "lat": 39.4917091,
+    "lon": -85.7253793,
+    "name": "Prescott Substation",
+    "norm": "PRESCOTT",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/179076459",
+    "lat": 40.1924828,
+    "lon": -85.3215759,
+    "name": "Mayfield",
+    "norm": "MAYFIELD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/179127808",
+    "lat": 38.4405426,
+    "lon": -85.7548973,
+    "name": "Speed Substation",
+    "norm": "SPEED",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/179127845",
+    "lat": 38.3824864,
+    "lon": -85.8093243,
+    "name": "Grant Line Substation",
+    "norm": "GRANT LINE",
+    "operator": "Clark County REMC",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/179127849",
+    "lat": 38.4025204,
+    "lon": -85.7853623,
+    "name": "St. Joe Substation",
+    "norm": "ST. JOE",
+    "operator": "Clark Coounty REMC",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/179188161",
+    "lat": 40.7284501,
+    "lon": -86.0379882,
+    "name": "Duke Energy Peru Southeast Substation",
+    "norm": "DUKE ENERGY PERU SOUTHEAST",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/179188162",
+    "lat": 40.6774861,
+    "lon": -86.2603078,
+    "name": "Walton Substation",
+    "norm": "WALTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/179320471",
+    "lat": 41.0638792,
+    "lon": -85.4672709,
+    "name": "Meridian",
+    "norm": "MERIDIAN",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/179388783",
+    "lat": 41.3690299,
+    "lon": -84.921312,
+    "name": "South Butler Substation",
+    "norm": "SOUTH BUTLER",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/179723387",
+    "lat": 40.2998737,
+    "lon": -86.5758526,
+    "name": "Frankfort Substation",
+    "norm": "FRANKFORT",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/179723390",
+    "lat": 40.4309856,
+    "lon": -86.8534199,
+    "name": "Lafayette 230 Substation",
+    "norm": "LAFAYETTE 230",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/179723392",
+    "lat": 40.1133449,
+    "lon": -86.6131202,
+    "name": "Thorntown Substation",
+    "norm": "THORNTOWN",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/179735350",
+    "lat": 40.2762561,
+    "lon": -86.0916696,
+    "name": "Tipton West Substation",
+    "norm": "TIPTON WEST",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/179735363",
+    "lat": 39.9639296,
+    "lon": -86.8040491,
+    "name": "Whitesville Substation",
+    "norm": "WHITESVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/179736191",
+    "lat": 39.8819138,
+    "lon": -85.4589819,
+    "name": "Greensboro Substation",
+    "norm": "GREENSBORO",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/179907671",
+    "lat": 38.4966542,
+    "lon": -85.5616605,
+    "name": "Vesta Substation",
+    "norm": "VESTA",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/184389988",
+    "lat": 40.1285937,
+    "lon": -87.2990558,
+    "name": "Veedersburg Substation",
+    "norm": "VEEDERSBURG",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/184390017",
+    "lat": 39.7250511,
+    "lon": -87.4338785,
+    "name": "Clinton Substation",
+    "norm": "CLINTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/184393182",
+    "lat": 38.3596658,
+    "lon": -85.727309,
+    "name": "Northside Substation",
+    "norm": "NORTHSIDE",
+    "operator": "Louisville Gas & Eletric",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/198713883",
+    "lat": 39.4222815,
+    "lon": -85.0182238,
+    "name": "Brookville Substation",
+    "norm": "BROOKVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/202776555",
+    "lat": 39.6389011,
+    "lon": -84.9282344,
+    "name": "Liberty Substation",
+    "norm": "LIBERTY",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/204624399",
+    "lat": 39.091836,
+    "lon": -84.8539646,
+    "name": "Walker Substation",
+    "norm": "WALKER",
+    "operator": "LawrenceBurg Municipal Utilities",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/204629273",
+    "lat": 39.1008167,
+    "lon": -84.8627341,
+    "name": "Ridge Avenue Substation",
+    "norm": "RIDGE AVENUE",
+    "operator": "Greendale Utilities",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/207828941",
+    "lat": 41.6776916,
+    "lon": -86.2888147,
+    "name": "AEP West Side Substation",
+    "norm": "AEP WEST SIDE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/237669309",
+    "lat": 39.7490692,
+    "lon": -86.1658486,
+    "name": "Center Substation",
+    "norm": "CENTER",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/239085936",
+    "lat": 39.7363212,
+    "lon": -86.2106305,
+    "name": "Maywood Substation",
+    "norm": "MAYWOOD",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/251219380",
+    "lat": 41.4525402,
+    "lon": -85.5896354,
+    "name": "AEP Ligonier Station",
+    "norm": "AEP LIGONIER STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/251223252",
+    "lat": 41.4562157,
+    "lon": -85.6051255,
+    "name": "AEP Guardian Station",
+    "norm": "AEP GUARDIAN STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/283275008",
+    "lat": 40.4311425,
+    "lon": -86.9265686,
+    "name": "Purdue Northwest",
+    "norm": "PURDUE NORTHWEST",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/297996429",
+    "lat": 39.6540209,
+    "lon": -85.8957468,
+    "name": "Sugar Creek Substation",
+    "norm": "SUGAR CREEK",
+    "operator": "RushShelby Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/299296027",
+    "lat": 39.6562372,
+    "lon": -85.1757186,
+    "name": "Connersville",
+    "norm": "CONNERSVILLE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/299840098",
+    "lat": 39.524312,
+    "lon": -85.4606765,
+    "name": "Milroy Substation",
+    "norm": "MILROY",
+    "operator": "ShelbyRush Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/300958482",
+    "lat": 39.9862425,
+    "lon": -86.1276268,
+    "name": "Carmel First Avenue Substation",
+    "norm": "CARMEL FIRST AVENUE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/302960626",
+    "lat": 39.810792,
+    "lon": -85.8405805,
+    "name": "Mohawk Substation",
+    "norm": "MOHAWK",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/306512348",
+    "lat": 41.6298154,
+    "lon": -87.500484,
+    "name": "Columbia Susbstation",
+    "norm": "COLUMBIA SUSBSTATION",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/314758942",
+    "lat": 39.9036481,
+    "lon": -85.1600917,
+    "name": "Hagerstown Substation",
+    "norm": "HAGERSTOWN",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/318325815",
+    "lat": 39.9050352,
+    "lon": -86.1992987,
+    "name": "St. Vincent Substation",
+    "norm": "ST. VINCENT",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/321215858",
+    "lat": 40.8036846,
+    "lon": -84.9326892,
+    "name": "AEP South Decatur Substation",
+    "norm": "AEP SOUTH DECATUR",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/322456697",
+    "lat": 39.8187632,
+    "lon": -85.7923836,
+    "name": "Hastings Park Substation",
+    "norm": "HASTINGS PARK",
+    "operator": "Greeenfield Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/323566243",
+    "lat": 39.9160615,
+    "lon": -85.3530715,
+    "name": "New Castle Substation",
+    "norm": "NEW CASTLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/323566269",
+    "lat": 39.9173046,
+    "lon": -85.3545739,
+    "name": "New Castle I Avenue Sub.",
+    "norm": "NEW CASTLE I AVENUE .",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/323567624",
+    "lat": 39.8603461,
+    "lon": -85.4036929,
+    "name": "Spiceland Substation",
+    "norm": "SPICELAND",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/346046483",
+    "lat": 40.1767043,
+    "lon": -84.9862581,
+    "name": "Winchester Substation",
+    "norm": "WINCHESTER",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/353280340",
+    "lat": 37.9845797,
+    "lon": -87.5729059,
+    "name": "Deaconess Substation",
+    "norm": "DEACONESS",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/354968911",
+    "lat": 39.8389356,
+    "lon": -84.9655421,
+    "name": "Richmond Station",
+    "norm": "RICHMOND STATION",
+    "operator": "Indiana Municipal Power Agency",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/354969790",
+    "lat": 40.0475701,
+    "lon": -85.1115533,
+    "name": "Modoc Station",
+    "norm": "MODOC STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/363163988",
+    "lat": 38.3238551,
+    "lon": -85.7500764,
+    "name": "Jeffersonville Substation",
+    "norm": "JEFFERSONVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/363306972",
+    "lat": 40.1884848,
+    "lon": -85.4572275,
+    "name": "Arnold Hogan Substation",
+    "norm": "ARNOLD HOGAN",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/366282957",
+    "lat": 41.0935615,
+    "lon": -85.1383039,
+    "name": "AEP Spy Run Substation",
+    "norm": "AEP SPY RUN",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/369597733",
+    "lat": 40.4172724,
+    "lon": -86.9112427,
+    "name": "Purdue University",
+    "norm": "PURDUE UNIVERSITY",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/380509627",
+    "lat": 41.6665354,
+    "lon": -86.2525819,
+    "name": "AEP Studebaker Substation",
+    "norm": "AEP STUDEBAKER",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/391277588",
+    "lat": 39.7714717,
+    "lon": -86.0489606,
+    "name": "East Washington St. Substation",
+    "norm": "EAST WASHINGTON ST.",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/394118083",
+    "lat": 41.5527661,
+    "lon": -85.8040039,
+    "name": "Dierdorff Rd",
+    "norm": "DIERDORFF RD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/39815554",
+    "lat": 40.2367631,
+    "lon": -85.3057223,
+    "name": "Desoto Substation",
+    "norm": "DESOTO",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/404328481",
+    "lat": 38.5190875,
+    "lon": -87.2698513,
+    "name": "Frank E Ratts Station",
+    "norm": "FRANK E RATTS STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/405091275",
+    "lat": 41.6997814,
+    "lon": -86.4663338,
+    "name": "Edison Substation",
+    "norm": "EDISON",
+    "operator": "AEP Ohio",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/410620079",
+    "lat": 39.9961907,
+    "lon": -85.7387597,
+    "name": "Pendleton Muncipal Substation",
+    "norm": "PENDLETON MUNCIPAL",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/410666347",
+    "lat": 39.5982111,
+    "lon": -85.8797266,
+    "name": "Fairland Substation",
+    "norm": "FAIRLAND",
+    "operator": "RsuhShelby Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/428641302",
+    "lat": 39.5633138,
+    "lon": -86.1390631,
+    "name": "Tracy Road A-B",
+    "norm": "TRACY ROAD A-B",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/428666858",
+    "lat": 39.1176762,
+    "lon": -84.867077,
+    "name": "Cemetery Substation",
+    "norm": "CEMETERY",
+    "operator": "Greendale Utilities",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/438853455",
+    "lat": 41.6165414,
+    "lon": -87.1888206,
+    "name": "Wickliffe Substation",
+    "norm": "WICKLIFFE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/442497732",
+    "lat": 39.4318217,
+    "lon": -86.1508735,
+    "name": "Trafalgar Stubstation",
+    "norm": "TRAFALGAR STUBSTATION",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/443388926",
+    "lat": 37.9486758,
+    "lon": -87.4758586,
+    "name": "Angel Mounds Transmission Substation",
+    "norm": "ANGEL MOUNDS TRANSMISSION",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/443446258",
+    "lat": 37.9728905,
+    "lon": -87.4454175,
+    "name": "Gateway Blvd. Substation",
+    "norm": "GATEWAY BLVD.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/443462135",
+    "lat": 38.4442138,
+    "lon": -87.1736396,
+    "name": "Cato Substation",
+    "norm": "CATO",
+    "operator": "Vectren Energy Delivery",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/458144505",
+    "lat": 40.7686026,
+    "lon": -87.4906326,
+    "name": "Morrison Sub",
+    "norm": "MORRISON",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/458530286",
+    "lat": 41.1618146,
+    "lon": -85.1648036,
+    "name": "Wallen Substation",
+    "norm": "WALLEN",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/458749318",
+    "lat": 41.1728224,
+    "lon": -85.3434037,
+    "name": "Union Substation",
+    "norm": "UNION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/458771213",
+    "lat": 40.8351733,
+    "lon": -84.9309695,
+    "name": "AEP Decatur Substation",
+    "norm": "AEP DECATUR",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/468781281",
+    "lat": 37.9554445,
+    "lon": -87.5153729,
+    "name": "Green Oaks Substation",
+    "norm": "GREEN OAKS",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/469490542",
+    "lat": 40.5160371,
+    "lon": -85.6442862,
+    "name": "AEP Deer Creek",
+    "norm": "AEP DEER CREEK",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/476466761",
+    "lat": 39.9579136,
+    "lon": -86.1391325,
+    "name": "Carmel Guilford Road Substation",
+    "norm": "CARMEL GUILFORD ROAD",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/479070229",
+    "lat": 41.1207322,
+    "lon": -85.1728046,
+    "name": "Industrial Park Substation",
+    "norm": "INDUSTRIAL PARK",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/482571823",
+    "lat": 39.4812343,
+    "lon": -86.417883,
+    "name": "Centerton Substation",
+    "norm": "CENTERTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/482781088",
+    "lat": 39.7873231,
+    "lon": -86.0771641,
+    "name": "Community Hospital Substation",
+    "norm": "COMMUNITY HOSPITAL",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/482878329",
+    "lat": 40.2622035,
+    "lon": -85.8296689,
+    "name": "South Elwood Substation",
+    "norm": "SOUTH ELWOOD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/487084588",
+    "lat": 41.2063167,
+    "lon": -85.1517392,
+    "name": "HUNTEAEP",
+    "norm": "HUNTEAEP",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/487084891",
+    "lat": 41.2786545,
+    "lon": -85.2229091,
+    "name": "Laotto Substation",
+    "norm": "LAOTTO",
+    "operator": "Noble REMC",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/487085017",
+    "lat": 41.3147165,
+    "lon": -85.3122901,
+    "name": "EGE",
+    "norm": "EGE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/487087545",
+    "lat": 41.2822202,
+    "lon": -85.0419871,
+    "name": "DUNTONLK",
+    "norm": "DUNTONLK",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/487087640",
+    "lat": 41.3073368,
+    "lon": -85.1371853,
+    "name": "Butler Center",
+    "norm": "BUTLER CENTER",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/492429284",
+    "lat": 40.9755732,
+    "lon": -85.0557674,
+    "name": "Paulding Putnam Hessen Substation",
+    "norm": "PAULDING PUTNAM HESSEN",
+    "operator": "Paulding Putnam REA",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/495730551",
+    "lat": 38.5690531,
+    "lon": -86.567432,
+    "name": "Abydel Substation",
+    "norm": "ABYDEL",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/496186629",
+    "lat": 37.9759374,
+    "lon": -86.7334848,
+    "name": "Tell City Substation",
+    "norm": "TELL CITY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/498304788",
+    "lat": 38.3748499,
+    "lon": -85.9504225,
+    "name": "Greenville Substation",
+    "norm": "GREENVILLE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/498359819",
+    "lat": 39.2547762,
+    "lon": -86.3419632,
+    "name": "Needmore Substation",
+    "norm": "NEEDMORE",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/498904837",
+    "lat": 40.9463696,
+    "lon": -85.0538595,
+    "name": "Muldoon Mill",
+    "norm": "MULDOON MILL",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/498943408",
+    "lat": 40.710855,
+    "lon": -85.5622901,
+    "name": "Mt. Etna Substation",
+    "norm": "MT. ETNA",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/500077994",
+    "lat": 39.4772956,
+    "lon": -87.3791938,
+    "name": "Terre Haute 25th St. Substation",
+    "norm": "TERRE HAUTE 25TH ST.",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/501454972",
+    "lat": 38.2068972,
+    "lon": -86.4247113,
+    "name": "Beechwood Substation",
+    "norm": "BEECHWOOD",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/501528612",
+    "lat": 39.2642933,
+    "lon": -86.2388646,
+    "name": "Beanblossom Substation",
+    "norm": "BEANBLOSSOM",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/501756744",
+    "lat": 39.2215522,
+    "lon": -85.1130941,
+    "name": "Sunman Substation",
+    "norm": "SUNMAN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/512169790",
+    "lat": 39.0528503,
+    "lon": -84.9222129,
+    "name": "Aurora Substation",
+    "norm": "AURORA",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/51262571",
+    "lat": 39.7139236,
+    "lon": -86.052464,
+    "name": "Hanna Substation",
+    "norm": "HANNA",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/518464164",
+    "lat": 40.1937032,
+    "lon": -85.7514231,
+    "name": "AEP Linwood Substation",
+    "norm": "AEP LINWOOD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/520432379",
+    "lat": 40.5306112,
+    "lon": -85.6533548,
+    "name": "AEP South Side Station",
+    "norm": "AEP SOUTH SIDE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/523819902",
+    "lat": 39.4384156,
+    "lon": -85.667112,
+    "name": "Waldron Substation",
+    "norm": "WALDRON",
+    "operator": "RushShelby Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/525206533",
+    "lat": 38.3474164,
+    "lon": -85.6976104,
+    "name": "Northport Substation",
+    "norm": "NORTHPORT",
+    "operator": "Clark County REMC",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/526629482",
+    "lat": 41.0860231,
+    "lon": -85.1343047,
+    "name": "AEP Three Rivers Substation",
+    "norm": "AEP THREE RIVERS",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/526931979",
+    "lat": 40.3201076,
+    "lon": -85.7771199,
+    "name": "Strawton Substation",
+    "norm": "STRAWTON",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/529282084",
+    "lat": 39.7837215,
+    "lon": -85.7736019,
+    "name": "Riley Substation",
+    "norm": "RILEY",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/535330850",
+    "lat": 40.4500316,
+    "lon": -85.3610485,
+    "name": "AEP Hartford City Station",
+    "norm": "AEP HARTFORD CITY STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/542234186",
+    "lat": 39.0522461,
+    "lon": -85.1515131,
+    "name": "Elrod Substation",
+    "norm": "ELROD",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/545343638",
+    "lat": 39.771811,
+    "lon": -85.6891792,
+    "name": "Westland Substation",
+    "norm": "WESTLAND",
+    "operator": "NineStar Connect",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/561402342",
+    "lat": 41.0727985,
+    "lon": -84.9226843,
+    "name": "Paulding Putnam TR 14 Substation",
+    "norm": "PAULDING PUTNAM TR 14",
+    "operator": "Paulding Putnam REA",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/585498907",
+    "lat": 39.2088593,
+    "lon": -85.9095729,
+    "name": "Columbus Michigan Avenue Substation",
+    "norm": "COLUMBUS MICHIGAN AVENUE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/589486709",
+    "lat": 41.0480456,
+    "lon": -85.0530227,
+    "name": "Paulding Putnam Seiler Substation",
+    "norm": "PAULDING PUTNAM SEILER",
+    "operator": "Paulding Putnam REA",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/589502271",
+    "lat": 41.0740663,
+    "lon": -84.9610536,
+    "name": "Paulding Putnam Monroe Substation",
+    "norm": "PAULDING PUTNAM MONROE",
+    "operator": "Paulding Putnam REA",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/610047695",
+    "lat": 39.919933,
+    "lon": -86.2021707,
+    "name": "IPL Substation",
+    "norm": "IPL",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/610277575",
+    "lat": 39.2358218,
+    "lon": -87.5465553,
+    "name": "Sullivan Substation",
+    "norm": "SULLIVAN",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "765000;345000"
+  },
+  {
+    "id": "way/612123213",
+    "lat": 39.8679399,
+    "lon": -85.9709235,
+    "name": "IPL Sunnyside Substation",
+    "norm": "IPL SUNNYSIDE",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/614768952",
+    "lat": 41.6165492,
+    "lon": -87.1888267,
+    "name": "Wickliffe Substation",
+    "norm": "WICKLIFFE",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/617723176",
+    "lat": 38.9042019,
+    "lon": -86.9184831,
+    "name": "Scotland Substation",
+    "norm": "SCOTLAND",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/618996187",
+    "lat": 40.3788071,
+    "lon": -85.6906368,
+    "name": "AEP Peacock Substation",
+    "norm": "AEP PEACOCK",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/619213507",
+    "lat": 40.0798051,
+    "lon": -86.9607405,
+    "name": "Crawfordsville Substation",
+    "norm": "CRAWFORDSVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/619480054",
+    "lat": 40.2227195,
+    "lon": -85.5386425,
+    "name": "Jones Creek Station",
+    "norm": "JONES CREEK STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/619494039",
+    "lat": 40.1512876,
+    "lon": -85.4151121,
+    "name": "Fuson Station",
+    "norm": "FUSON STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/619896099",
+    "lat": 40.1695207,
+    "lon": -85.3779797,
+    "name": "Twenty First St. Substation",
+    "norm": "TWENTY FIRST ST.",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/619900227",
+    "lat": 40.1807578,
+    "lon": -85.409551,
+    "name": "Utica Station",
+    "norm": "UTICA STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/620189011",
+    "lat": 40.3732667,
+    "lon": -85.1994514,
+    "name": "AEP Armstrong Cork Station",
+    "norm": "AEP ARMSTRONG CORK STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/620200166",
+    "lat": 40.427646,
+    "lon": -84.9768671,
+    "name": "AEP Portland Station",
+    "norm": "AEP PORTLAND STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/620937021",
+    "lat": 39.9706027,
+    "lon": -85.9924783,
+    "name": "Fishers North Substation",
+    "norm": "FISHERS NORTH",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/622831132",
+    "lat": 39.5868244,
+    "lon": -86.081002,
+    "name": "Gilmore A-B Substation",
+    "norm": "GILMORE A-B",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/625666089",
+    "lat": 37.9780126,
+    "lon": -87.5606607,
+    "name": "Heidelbach",
+    "norm": "HEIDELBACH",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/627287476",
+    "lat": 38.4487588,
+    "lon": -86.3649042,
+    "name": "Valeen Substation",
+    "norm": "VALEEN",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/627295237",
+    "lat": 38.5018286,
+    "lon": -87.1840732,
+    "name": "Algiers Substation",
+    "norm": "ALGIERS",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/627462478",
+    "lat": 41.6226031,
+    "lon": -87.4299127,
+    "name": "Gary-Chicago Airport Substation",
+    "norm": "GARY-CHICAGO AIRPORT",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/632676831",
+    "lat": 41.6681236,
+    "lon": -86.2655439,
+    "name": "AEP Oliver Plow Substation",
+    "norm": "AEP OLIVER PLOW",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/634343537",
+    "lat": 37.9999284,
+    "lon": -87.541434,
+    "name": "Dixieland Substation",
+    "norm": "DIXIELAND",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/634343543",
+    "lat": 37.9700232,
+    "lon": -87.6042432,
+    "name": "Ohio River Substation",
+    "norm": "OHIO RIVER",
+    "operator": "Vectren Energy Supply",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/634343545",
+    "lat": 37.9923256,
+    "lon": -87.559511,
+    "name": "Garvin Substation",
+    "norm": "GARVIN",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/641645874",
+    "lat": 40.4419984,
+    "lon": -86.8619637,
+    "name": "SAGAMORE PLANT COGENERATION",
+    "norm": "SAGAMORE PLANT COGENERATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/642578555",
+    "lat": 38.3492689,
+    "lon": -87.3390046,
+    "name": "Oakland City Substation",
+    "norm": "OAKLAND CITY",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/642664893",
+    "lat": 38.0201364,
+    "lon": -87.4831429,
+    "name": "Hirsch Rd. Substation",
+    "norm": "HIRSCH RD.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/642675941",
+    "lat": 37.9552853,
+    "lon": -87.4603364,
+    "name": "Fuquay Substation",
+    "norm": "FUQUAY",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/646018407",
+    "lat": 37.9281428,
+    "lon": -87.9000593,
+    "name": "Water St. Substation",
+    "norm": "WATER ST.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/656631462",
+    "lat": 40.0767198,
+    "lon": -85.071916,
+    "name": "Huntsville Substation",
+    "norm": "HUNTSVILLE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/659501736",
+    "lat": 37.955003,
+    "lon": -86.7740738,
+    "name": "Tell City Substation",
+    "norm": "TELL CITY",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/667669742",
+    "lat": 41.6596036,
+    "lon": -86.2778168,
+    "name": "AEP Kankakee Substation",
+    "norm": "AEP KANKAKEE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/667747892",
+    "lat": 40.1973882,
+    "lon": -85.3847476,
+    "name": "Haymond Station",
+    "norm": "HAYMOND STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/668720081",
+    "lat": 39.8355038,
+    "lon": -86.1233183,
+    "name": "Water Co. Fall Creek Substation",
+    "norm": "WATER CO. FALL CREEK",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/668755724",
+    "lat": 39.8557094,
+    "lon": -86.1104864,
+    "name": "Northeast",
+    "norm": "NORTHEAST",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/669546388",
+    "lat": 41.6711278,
+    "lon": -86.2159252,
+    "name": "AEP East Side Substation",
+    "norm": "AEP EAST SIDE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/671313363",
+    "lat": 39.0830878,
+    "lon": -84.8601459,
+    "name": "Tanners Creek",
+    "norm": "TANNERS CREEK",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/671941391",
+    "lat": 41.6837756,
+    "lon": -86.3092015,
+    "name": "Grandview Ave Substation",
+    "norm": "GRANDVIEW AVE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/673702971",
+    "lat": 39.6101937,
+    "lon": -86.3162861,
+    "name": "East Madison Substation",
+    "norm": "EAST MADISON",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/675161169",
+    "lat": 39.006755,
+    "lon": -85.6515381,
+    "name": "North Vernon Road Subsation",
+    "norm": "NORTH VERNON ROAD SUBSATION",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/681934916",
+    "lat": 41.215715,
+    "lon": -86.2337433,
+    "name": "Argos Sub",
+    "norm": "ARGOS",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/682329487",
+    "lat": 39.423113,
+    "lon": -85.8103838,
+    "name": "Lewis Creek Substation",
+    "norm": "LEWIS CREEK",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/682799134",
+    "lat": 41.7118783,
+    "lon": -86.2377417,
+    "name": "AEP Notre Dame Substation",
+    "norm": "AEP NOTRE DAME",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/684688414",
+    "lat": 39.3494276,
+    "lon": -85.837299,
+    "name": "Flat Rock Substation",
+    "norm": "FLAT ROCK",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/684830878",
+    "lat": 39.2914394,
+    "lon": -85.7792075,
+    "name": "Hope Substation",
+    "norm": "HOPE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/685527170",
+    "lat": 39.7917116,
+    "lon": -86.1674505,
+    "name": "Mill St. Substation",
+    "norm": "MILL ST.",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/686671065",
+    "lat": 41.6868944,
+    "lon": -85.9388329,
+    "name": "AEP Conant Substation",
+    "norm": "AEP CONANT",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/686712109",
+    "lat": 41.6832057,
+    "lon": -86.1330616,
+    "name": "AEP Capital Ave/Currant Rd Substation",
+    "norm": "AEP CAPITAL AVE/CURRANT RD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/692491399",
+    "lat": 39.7497493,
+    "lon": -86.2054097,
+    "name": "Southwest Substation",
+    "norm": "SOUTHWEST",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/694199549",
+    "lat": 41.413495,
+    "lon": -85.8441483,
+    "name": "Milford Sub",
+    "norm": "MILFORD",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/704372948",
+    "lat": 41.0698429,
+    "lon": -85.1416468,
+    "name": "AEP Webster Substation",
+    "norm": "AEP WEBSTER",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/704372949",
+    "lat": 41.0705804,
+    "lon": -85.1414476,
+    "name": "AEP Melita Substation",
+    "norm": "AEP MELITA",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/718882204",
+    "lat": 39.0051983,
+    "lon": -85.6271937,
+    "name": "North Vernon Substation",
+    "norm": "NORTH VERNON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/720813727",
+    "lat": 41.6541112,
+    "lon": -86.1763572,
+    "name": "Union Substation",
+    "norm": "UNION",
+    "operator": "Mishawaka Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/721048204",
+    "lat": 40.4455405,
+    "lon": -85.3591531,
+    "name": "AEP 3M Substation",
+    "norm": "AEP 3M",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/722435728",
+    "lat": 38.3931235,
+    "lon": -86.9265989,
+    "name": "Central Substatioin",
+    "norm": "CENTRAL SUBSTATIOIN",
+    "operator": "Jasper Municipal Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/722523648",
+    "lat": 38.4994383,
+    "lon": -87.2772765,
+    "name": "Petersburg Substation",
+    "norm": "PETERSBURG",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/723505323",
+    "lat": 41.2671847,
+    "lon": -85.835435,
+    "name": "Airport Substation",
+    "norm": "AIRPORT",
+    "operator": "Kosciuscko REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/736321901",
+    "lat": 38.6631782,
+    "lon": -87.5247743,
+    "name": "Vincennes Bayou St. Substation",
+    "norm": "VINCENNES BAYOU ST.",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/741340903",
+    "lat": 40.0362247,
+    "lon": -85.7399927,
+    "name": "AMLP Nestle Substation",
+    "norm": "AMLP NESTLE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/741344401",
+    "lat": 40.0680422,
+    "lon": -85.6695715,
+    "name": "Meadowbrook Substation",
+    "norm": "MEADOWBROOK",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/741344944",
+    "lat": 40.1669013,
+    "lon": -85.3950172,
+    "name": "Twenty Third Street Station",
+    "norm": "TWENTY THIRD STREET STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/743529752",
+    "lat": 38.079225,
+    "lon": -87.5558786,
+    "name": "Hillsdale Substation",
+    "norm": "HILLSDALE",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/743532164",
+    "lat": 37.9909455,
+    "lon": -87.5846581,
+    "name": "Devon Substation",
+    "norm": "DEVON",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/743532165",
+    "lat": 37.9888173,
+    "lon": -87.5838326,
+    "name": "Pigeon Creek Trans. Substation",
+    "norm": "PIGEON CREEK TRANS.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/743532174",
+    "lat": 37.9905075,
+    "lon": -87.5682396,
+    "name": "Read St. Substation",
+    "norm": "READ ST.",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/743543077",
+    "lat": 38.2378949,
+    "lon": -87.5789731,
+    "name": "Ft. Branch Rural Distribution Substation",
+    "norm": "FT. BRANCH RURAL DISTRIBUTION",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/760039682",
+    "lat": 38.1709574,
+    "lon": -87.5728119,
+    "name": "St. James Substation",
+    "norm": "ST. JAMES",
+    "operator": "CenterPoint Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/765208332",
+    "lat": 41.4461783,
+    "lon": -85.5675472,
+    "name": "Diamond Lake Substation",
+    "norm": "DIAMOND LAKE",
+    "operator": "Noble REMC",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/769472522",
+    "lat": 41.7140027,
+    "lon": -86.8651757,
+    "name": "Eastport Substation",
+    "norm": "EASTPORT",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/769534289",
+    "lat": 41.6817846,
+    "lon": -86.90309,
+    "name": "Ohio Substation",
+    "norm": "OHIO",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/770894655",
+    "lat": 39.4739859,
+    "lon": -87.4066784,
+    "name": "Terre Haute Spriuce Substation",
+    "norm": "TERRE HAUTE SPRIUCE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/771997697",
+    "lat": 39.4331277,
+    "lon": -87.3378781,
+    "name": "East Terre Haute Substation",
+    "norm": "EAST TERRE HAUTE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/775332832",
+    "lat": 39.7536915,
+    "lon": -86.5209321,
+    "name": "Danville Substation",
+    "norm": "DANVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/775362001",
+    "lat": 39.9198861,
+    "lon": -87.2414398,
+    "name": "Sylvania Substation",
+    "norm": "SYLVANIA",
+    "operator": "Parke County REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/777624182",
+    "lat": 41.667119,
+    "lon": -85.9609489,
+    "name": "AEP Lusher Avenue Station",
+    "norm": "AEP LUSHER AVENUE STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/779612911",
+    "lat": 40.0580169,
+    "lon": -85.9866739,
+    "name": "Noblesville Norheast Substation",
+    "norm": "NOBLESVILLE NORHEAST",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/783767128",
+    "lat": 39.284965,
+    "lon": -87.0727595,
+    "name": "Clay City Substation",
+    "norm": "CLAY CITY",
+    "operator": "Hoosier Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/785979180",
+    "lat": 41.2195848,
+    "lon": -85.8660212,
+    "name": "Rosella Sub",
+    "norm": "ROSELLA",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/805671387",
+    "lat": 39.2119463,
+    "lon": -85.0785364,
+    "name": "Hubbell",
+    "norm": "HUBBELL",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/807921970",
+    "lat": 41.2607464,
+    "lon": -85.8558263,
+    "name": "Kosciusko Sub",
+    "norm": "KOSCIUSKO",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/808578050",
+    "lat": 41.3611754,
+    "lon": -85.0469906,
+    "name": "Auburn",
+    "norm": "AUBURN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/813951694",
+    "lat": 39.6512717,
+    "lon": -85.1395646,
+    "name": "Connorsville Illinois St. Substation",
+    "norm": "CONNORSVILLE ILLINOIS ST.",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/81604245",
+    "lat": 41.1713446,
+    "lon": -85.0953317,
+    "name": "Robison Park Substation",
+    "norm": "ROBISON PARK",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/81780931",
+    "lat": 41.0702271,
+    "lon": -85.0624687,
+    "name": "Lincoln Substation",
+    "norm": "LINCOLN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/81780936",
+    "lat": 41.0979392,
+    "lon": -85.0653464,
+    "name": "AEP State Street Substation",
+    "norm": "AEP STATE STREET",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/81780943",
+    "lat": 41.0856378,
+    "lon": -84.9889567,
+    "name": "Harper Substation",
+    "norm": "HARPER",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/81780949",
+    "lat": 41.1134213,
+    "lon": -85.0701236,
+    "name": "Trier Substation",
+    "norm": "TRIER",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/82103193",
+    "lat": 38.7417724,
+    "lon": -85.4379378,
+    "name": "Jefferson Substation",
+    "norm": "JEFFERSON",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "765000"
+  },
+  {
+    "id": "way/82104554",
+    "lat": 39.2668841,
+    "lon": -85.2190409,
+    "name": "Batesville",
+    "norm": "BATESVILLE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/82106094",
+    "lat": 39.9918062,
+    "lon": -85.5931995,
+    "name": "Fall Creek Substation",
+    "norm": "FALL CREEK",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/82109555",
+    "lat": 40.0869852,
+    "lon": -85.6444785,
+    "name": "Madison",
+    "norm": "MADISON",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/82117938",
+    "lat": 39.6132356,
+    "lon": -85.6535443,
+    "name": "Gwynneville Substation",
+    "norm": "GWYNNEVILLE",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/831482903",
+    "lat": 40.7392485,
+    "lon": -85.7172179,
+    "name": "Treaty",
+    "norm": "TREATY",
+    "operator": "Heartland REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/831544001",
+    "lat": 40.2622725,
+    "lon": -85.7729303,
+    "name": "Makahoy Substation",
+    "norm": "MAKAHOY",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/831544150",
+    "lat": 40.2912587,
+    "lon": -85.8624427,
+    "name": "Ohio Oil Substation",
+    "norm": "OHIO OIL",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/831550686",
+    "lat": 40.2776406,
+    "lon": -85.8441739,
+    "name": "Elwood Substation",
+    "norm": "ELWOOD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/832256342",
+    "lat": 39.6378418,
+    "lon": -87.1062745,
+    "name": "Mansfield Substation",
+    "norm": "MANSFIELD",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/833044048",
+    "lat": 39.4690198,
+    "lon": -87.4185389,
+    "name": "Terre Haute Water Street Substation",
+    "norm": "TERRE HAUTE WATER STREET",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/840537377",
+    "lat": 39.8649547,
+    "lon": -86.4060705,
+    "name": "Brownsburg North Substation",
+    "norm": "BROWNSBURG NORTH",
+    "operator": "Hendricks Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/845850842",
+    "lat": 41.6994395,
+    "lon": -86.4485695,
+    "name": "AEP Tulip Road Station",
+    "norm": "AEP TULIP ROAD STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/856997889",
+    "lat": 40.0627661,
+    "lon": -84.9402732,
+    "name": "Lynn Station",
+    "norm": "LYNN STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/877950654",
+    "lat": 39.8608019,
+    "lon": -86.4438229,
+    "name": "Pittsboro Substation",
+    "norm": "PITTSBORO",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/888223635",
+    "lat": 41.4659863,
+    "lon": -87.0381262,
+    "name": "Campus Sub",
+    "norm": "CAMPUS",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/889396848",
+    "lat": 38.1808049,
+    "lon": -87.4060869,
+    "name": "Elberfeld North Substation",
+    "norm": "ELBERFELD NORTH",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/89370345",
+    "lat": 41.5339647,
+    "lon": -87.1022387,
+    "name": "Babcock Substation",
+    "norm": "BABCOCK",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89370353",
+    "lat": 41.5371679,
+    "lon": -86.5785252,
+    "name": "Stillwell Substation",
+    "norm": "STILLWELL",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/89374665",
+    "lat": 41.6687838,
+    "lon": -86.1360705,
+    "name": "Twin Branch Substation",
+    "norm": "TWIN BRANCH",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89400229",
+    "lat": 41.0609058,
+    "lon": -85.1722664,
+    "name": "McKinley Substation",
+    "norm": "MCKINLEY",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89400230",
+    "lat": 41.0249434,
+    "lon": -85.0742057,
+    "name": "Wayne Trace Substation",
+    "norm": "WAYNE TRACE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89400231",
+    "lat": 41.0252961,
+    "lon": -85.1257009,
+    "name": "Hillcrest Substation",
+    "norm": "HILLCREST",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89400236",
+    "lat": 41.0140978,
+    "lon": -84.9772697,
+    "name": "Allen IM Substation",
+    "norm": "ALLEN IM",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89403408",
+    "lat": 41.7066938,
+    "lon": -86.4836449,
+    "name": "Olive Substation",
+    "norm": "OLIVE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "345000;138000;69000"
+  },
+  {
+    "id": "way/89405950",
+    "lat": 41.3366599,
+    "lon": -85.9008591,
+    "name": "Leesburg Substation",
+    "norm": "LEESBURG",
+    "operator": "Northern Indiana Public Service Company",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89406749",
+    "lat": 41.523151,
+    "lon": -86.3610826,
+    "name": "Indiana Michigan Power/AEP Dumont 345kV-765kV Substation",
+    "norm": "INDIANA MICHIGAN POWER/AEP DUMONT 345KV-765KV",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "765000;345000"
+  },
+  {
+    "id": "way/89426318",
+    "lat": 41.7010527,
+    "lon": -86.886905,
+    "name": "Tilden Substation",
+    "norm": "TILDEN",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/89426326",
+    "lat": 41.6565282,
+    "lon": -87.0289851,
+    "name": "Furnessville Substation",
+    "norm": "FURNESSVILLE",
+    "operator": "NICTD",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/89455861",
+    "lat": 41.4843597,
+    "lon": -87.1176911,
+    "name": "Tower Road Substation",
+    "norm": "TOWER ROAD",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/89455865",
+    "lat": 41.2204835,
+    "lon": -87.0234233,
+    "name": "Schahfer Station",
+    "norm": "SCHAHFER STATION",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89455876",
+    "lat": 41.4624189,
+    "lon": -87.2731199,
+    "name": "Green Acres Substation",
+    "norm": "GREEN ACRES",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89504598",
+    "lat": 41.3372892,
+    "lon": -86.314909,
+    "name": "Plymouth Sub",
+    "norm": "PLYMOUTH",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89513774",
+    "lat": 41.2576945,
+    "lon": -86.4225728,
+    "name": "Burr Oak Substation",
+    "norm": "BURR OAK",
+    "operator": "Northern Indiana Public Service Company",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89527909",
+    "lat": 40.8835014,
+    "lon": -85.4510645,
+    "name": "Huntington Substation",
+    "norm": "HUNTINGTON",
+    "operator": "Duke Energy",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89528666",
+    "lat": 40.9835355,
+    "lon": -85.3413751,
+    "name": "Indiana Michigan Power/AEP 345kV-765kV Sorenson Substation",
+    "norm": "INDIANA MICHIGAN POWER/AEP 345KV-765KV SORENSON",
+    "operator": "Indiana Michigan Power",
+    "state": "IN",
+    "voltage": "765000;345000;138000"
+  },
+  {
+    "id": "way/89547614",
+    "lat": 41.659054,
+    "lon": -86.1311974,
+    "name": "Kline Substation",
+    "norm": "KLINE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89584414",
+    "lat": 41.7234088,
+    "lon": -86.5067011,
+    "name": "New Carlisle Substation",
+    "norm": "NEW CARLISLE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89602277",
+    "lat": 41.7043925,
+    "lon": -86.0827936,
+    "name": "AEP Beech Road Substation",
+    "norm": "AEP BEECH ROAD",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89602280",
+    "lat": 41.725785,
+    "lon": -86.0390285,
+    "name": "AEP Cleveland Substation",
+    "norm": "AEP CLEVELAND",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89607436",
+    "lat": 41.5575991,
+    "lon": -85.5963441,
+    "name": "Hiple Substation",
+    "norm": "HIPLE",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/89607450",
+    "lat": 41.6298937,
+    "lon": -85.7152813,
+    "name": "Crystal Valley Sub",
+    "norm": "CRYSTAL VALLEY",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/89607454",
+    "lat": 41.7064995,
+    "lon": -85.8629996,
+    "name": "East Elkhart Substation",
+    "norm": "EAST ELKHART",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89613182",
+    "lat": 41.6469436,
+    "lon": -85.9307376,
+    "name": "AEP",
+    "norm": "AEP",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89627899",
+    "lat": 41.6377352,
+    "lon": -86.7080177,
+    "name": "Maple Substation",
+    "norm": "MAPLE",
+    "operator": "NIPSCO",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89646000",
+    "lat": 41.5379524,
+    "lon": -87.2827427,
+    "name": "Lake George Substation",
+    "norm": "LAKE GEORGE",
+    "operator": "NIPS",
+    "state": "IN",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/89710645",
+    "lat": 41.4511614,
+    "lon": -87.398893,
+    "name": "St. John Substation",
+    "norm": "ST. JOHN",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000;138000;69000"
+  },
+  {
+    "id": "way/89716647",
+    "lat": 41.6123274,
+    "lon": -87.4745892,
+    "name": "Hammond Substation",
+    "norm": "HAMMOND",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89716653",
+    "lat": 41.5599124,
+    "lon": -87.4415236,
+    "name": "Liable Road Substation",
+    "norm": "LIABLE ROAD",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/89716660",
+    "lat": 41.5603399,
+    "lon": -87.4650396,
+    "name": "Highland Substation",
+    "norm": "HIGHLAND",
+    "operator": null,
+    "state": "IN",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/89724866",
+    "lat": 41.658897,
+    "lon": -87.5104823,
+    "name": "Sheffield Substation",
+    "norm": "SHEFFIELD",
+    "operator": null,
+    "state": "IN",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/907647916",
+    "lat": 41.0456146,
+    "lon": -85.284842,
+    "name": "Aboite Substation",
+    "norm": "ABOITE",
+    "operator": null,
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/918013033",
+    "lat": 41.3622396,
+    "lon": -85.8058204,
+    "name": "Maple Leaf Substation",
+    "norm": "MAPLE LEAF",
+    "operator": "Kosciusko REMC",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/948193578",
+    "lat": 40.5552423,
+    "lon": -85.2875099,
+    "name": "AEP Montpelier Substation",
+    "norm": "AEP MONTPELIER",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/951297840",
+    "lat": 39.8200521,
+    "lon": -86.1444385,
+    "name": "Fairfield Substation",
+    "norm": "FAIRFIELD",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/951311740",
+    "lat": 39.8226393,
+    "lon": -86.1386492,
+    "name": "Monon Trail Substation",
+    "norm": "MONON TRAIL",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/962519388",
+    "lat": 41.7167753,
+    "lon": -86.1953745,
+    "name": "University Park Mall",
+    "norm": "UNIVERSITY PARK MALL",
+    "operator": "Mishawaka Utilities",
+    "state": "IN",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/974410954",
+    "lat": 40.1877335,
+    "lon": -85.3848453,
+    "name": "Jobes Station",
+    "norm": "JOBES STATION",
+    "operator": "American Electric Power",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/978845601",
+    "lat": 39.743093,
+    "lon": -86.2173653,
+    "name": "Reilly Substation",
+    "norm": "REILLY",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/978934685",
+    "lat": 41.706771,
+    "lon": -87.521553,
+    "name": "State Line Substation",
+    "norm": "STATE LINE",
+    "operator": "Commonwealth Edison",
+    "state": "IN",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/978934686",
+    "lat": 41.7077467,
+    "lon": -87.5236783,
+    "name": "State Line Substation",
+    "norm": "STATE LINE",
+    "operator": "Commonwealth Edison",
+    "state": "IN",
+    "voltage": null
+  },
+  {
+    "id": "way/986995703",
+    "lat": 39.8042352,
+    "lon": -86.0899254,
+    "name": "Brookwood",
+    "norm": "BROOKWOOD",
+    "operator": "Indianapolis Power & Light",
+    "state": "IN",
+    "voltage": "138000"
+  }
+]

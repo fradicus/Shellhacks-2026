@@ -106,3 +106,16 @@ def test_short_leading_numbers_and_work_after_a_dash():
     site = facilities_named("North Lake SS – Transformer Asset Renewal", None)
     assert (site["kind"], site["names"]) == ("site", ["North Lake"])
     assert facilities_named("0754 Buffalo - Maple Lake Rebuild", None)["names"] == ["Buffalo", "Maple Lake"]
+
+
+def test_miso_names_sites_and_operator_keys():
+    from greatlakes.miso import operator_keys
+
+    assert facilities_named("Replace 138 kV Breakers at Northeast Substation", None)["names"] == ["Northeast"]
+    assert facilities_named("Remediate Sag on Delhi - Green 138 kV", None)["names"] == ["Delhi", "Green"]
+    assert facilities_named("Reconductor Brownstown-Monroe #1 345 kV", None)["names"] == ["Brownstown", "Monroe"]
+    assert facilities_named("Long Lake - DC Redundancy", None)["kind"] is None
+    assert facilities_named("Spicer tap to Willmar line rebuild projects", None)["names"] == [None, "Willmar"]
+    assert operator_keys("METC") == ["ITC", "METC", "MICHIGAN ELECTRIC TRANS"]
+    assert operator_keys("NORTHERN STATES POWER COMPANY") == ["XCEL", "NORTHERN STATES"]
+    assert operator_keys("Unknown Utility") == []

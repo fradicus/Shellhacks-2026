@@ -18,23 +18,26 @@ DESCRIPTORS = {
     "DOUBLE", "RECONDUCTOR", "SWAP", "ELR", "DISTRIBUTION", "BREAKER", "BREAKERS", "RING", "BUS", "CAP", "BANK",
     "CAPACITOR", "TRANSFORMER", "TRANSFORMERS", "THIRD", "SECOND", "STATCOM", "REACTOR", "SINGLE", "ASSET", "RENEWAL",
     "INTERCONNECTION", "DELIVERY", "RETIREMENT", "RELAY", "RELAYS", "SS", "SWT", "STA", "SW", "DIC", "GENERATOR",
-    "NETWORK", "OPGW", "CONTROL", "POWER", "HOUSE", "NEW", "PARTIAL", "SVC",
+    "NETWORK", "OPGW", "CONTROL", "POWER", "HOUSE", "NEW", "PARTIAL", "SVC", "STATION", "SWITCHYARD", "AUTOTRANSFORMER",
+    "SWITCH", "CBS", "EQUIPMENT", "POINT", "LOAD", "DC", "REDUNDANCY",
 }
 NUMERIC = re.compile(r"T\d+|TR\d+|[\d./]+(KV)?")
 QUEUE_ID = re.compile(r"[JSR]\d+(/[JSR]\d+)*")
 PARTICLES = {"du", "de", "la", "le"}
 ABBREVIATIONS = {"RD": "ROAD", "CO": "COUNTY", "SAINT": "ST", "JCT": "JUNCTION", "AVE": "AVENUE", "MT": "MOUNT"}
 TRAILING_CODE = re.compile(r"\s*[–—-]\s*[A-Z]+\d+$")
-LEADING = {"LINE", "REBUILD", "INSTALL", "REINFORCE", "JTIQ"}
+LEADING = {"LINE", "REBUILD", "INSTALL", "REINFORCE", "JTIQ", "REPLACE", "UPGRADE", "RECONDUCTOR", "CONSTRUCT", "BUILD",
+           "ADD", "EXPAND", "RETIRE", "UPRATE", "CONVERT", "RELOCATE", "REROUTE", "NEW"}
 # A site project must name facility equipment after the facility name.
 SITE_EQUIPMENT = re.compile(
     r"\b(Substations?|Sub|Transformers?|TR\d+|STATCOM|Ring Bus|Breakers?|Capacitors?|Cap Bank|Reactor|"
-    r"Switching Station|Single Point of Failure|SS|Swt St|SW STA|DIC|SVC)\b",
+    r"Switching Station|Single Point of Failure|SS|Swt St|SW STA|DIC|SVC|Station|Switchyard|Autotransformers?|Bank|"
+    r"Switch|CBs|Delivery Point)\b",
     re.I,
 )
 # Names that are not a single facility: programs, areas, multi-line lists. Taps/structures are not endpoints.
 NOT_A_FACILITY = re.compile(r"\bArea\b|,|&")
-NOT_AN_ENDPOINT = re.compile(r"\b(Tap|STR|Str)\b")
+NOT_AN_ENDPOINT = re.compile(r"\b(tap|str)\b", re.I)
 SEPARATOR = re.compile(r"\s+[–—-]\s+|(?<=[A-Za-z])[–—-](?=\s?[A-Z])|\s+to\s+")
 KV = re.compile(r"([\d.]+(?:\s*/\s*[\d.]+)*)\s*-?\s*kV", re.I)
 DESCRIPTION_ENDPOINTS = re.compile(
@@ -68,7 +71,8 @@ def _facility_name(text: str) -> str | None:
 
 def facilities_named(project_name: str, description: str | None) -> dict:
     """Return {'kind': 'site'|'line'|None, 'names': [...], 'from': 'name'|'description', 'reason': str|None}."""
-    name = TRAILING_CODE.sub("", re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", project_name).strip())
+    name = TRAILING_CODE.sub("", re.sub(r"\([^)]*\)|\[[^\]]*(\]|$)", " ", project_name).strip())
+    name = re.sub(r"^[A-Z][\w ]*?\bon\s+(?=[A-Z])", "", name)  # "Remediate Sag on Delhi - Green"
     second = re.search(r"\band\s+(\S+)", name)
     if NOT_A_FACILITY.search(name) or (second and second[1][0].isupper() and second[1].upper() not in DESCRIPTORS):
         return {"kind": None, "names": [], "from": "name", "reason": "program_area_or_multi_facility"}
@@ -85,6 +89,8 @@ def facilities_named(project_name: str, description: str | None) -> dict:
             return {"kind": "line", "names": names, "from": "name", "reason": None}
         else:
             return {"kind": None, "names": [], "from": "name", "reason": "endpoint_not_named"}
+    if at := re.search(r"\bat (?:the )?([A-Z][\w.'’]*(?: [A-Z][\w.'’]*){0,3}) (?:Substation|Station|Sub)\b", name):
+        return {"kind": "site", "names": [at[1]], "from": "name", "reason": None}
     if SITE_EQUIPMENT.search(name) and not NOT_AN_ENDPOINT.search(name) and (site := _facility_name(name)):
         return {"kind": "site", "names": [site], "from": "name", "reason": None}
     if description and (m := DESCRIPTION_ENDPOINTS.search(description)):
@@ -95,7 +101,7 @@ def facilities_named(project_name: str, description: str | None) -> dict:
 def facility_key(name: str) -> str:
     """Shared name normalization for both sides: common noise words, voltage suffixes, abbreviations."""
     key = re.sub(r"\b[\d./]+\s*KV\b", " ", norm_name(name).replace(".", ""))
-    return " ".join(ABBREVIATIONS.get(token, token) for token in key.split())
+    return " ".join(ABBREVIATIONS.get(token, token) for token in key.split() if token not in {"STATION", "SWITCHYARD"})
 
 
 def voltages_kv(*texts: str | None) -> set[int]:

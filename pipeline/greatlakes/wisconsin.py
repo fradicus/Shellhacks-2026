@@ -1,7 +1,7 @@
 """Wisconsin: ATC's 2025 10-Year Assessment network project list -> national-project records with C26 candidates.
 
 From pipeline/:
-  uv run python -m greatlakes.wisconsin fetch --cache /tmp/gl-cache-wi   # network: 1 PDF, 5 zone pages, 3 Overpass
+  uv run python -m greatlakes.wisconsin fetch --cache /tmp/gl-cache-wi   # network: 1 PDF, 5 zone pages (OSM: greatlakes.osm)
   uv run python -m greatlakes.wisconsin build --cache /tmp/gl-cache-wi   # offline; add --check to compare
 States come from ATC's own zone pages ("Zone N includes the counties of: ..., Wis. ..., Mich."), not inference.
 """
@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import argparse
 import html
-import json
 import re
 import sys
 from collections import Counter
@@ -20,8 +19,9 @@ import pdfplumber
 
 from common import REPO_ROOT, load_json, validate, write_json
 
+from . import osm as osm_data
 from .match import voltages_kv
-from .shared import OPERATOR_KEYS, fetch_into, fetch_osm, locate, osm_extract, verify_cache, write_outputs
+from .shared import OPERATOR_KEYS, fetch_into, locate, verify_cache, write_outputs
 
 SOURCE_ID = "atc-tya-2025"
 PDF = "TYA-2025-Network-Project-List.pdf"
@@ -46,8 +46,6 @@ def fetch(cache: Path) -> None:
     fetch_into(cache, PDF, PDF_URL, manifest)
     for zone in ZONES:
         fetch_into(cache, zone, ZONE_URL.format(zone.removesuffix(".html")), manifest)
-    for state in OSM_STATES:
-        fetch_osm(cache, state, manifest)
     write_json(cache / "manifest.json", manifest)
 
 
@@ -76,10 +74,7 @@ def cost(raw: str | None) -> dict:
 
 
 def build(cache: Path) -> dict:
-    osm_files = [f"osm-{s.lower()}.json" for s in OSM_STATES]
-    manifest = verify_cache(cache, [PDF, *ZONES, *osm_files])
-    osm = {s.lower(): osm_extract(json.loads((cache / f).read_bytes()), s) for s, f in zip(OSM_STATES, osm_files,
-                                                                                           strict=True)}
+    manifest = verify_cache(cache, [PDF, *ZONES])
     zones = {str(n): zone_states((cache / z).read_text(encoding="utf-8")) for n, z in enumerate(ZONES, start=1)}
     mn_mtep = {str(p["evidence"]["raw"].get("MTEP Project Number")): p["_id"]
                for p in load_json(REPO_ROOT / "data" / "greatlakes" / "mn" / "projects.json")
@@ -114,7 +109,7 @@ def build(cache: Path) -> dict:
             group = STATUS.get(c["Status"] or "", "unknown")
         m = ISD.fullmatch(c["ISD"])
         in_service = {"raw": c["ISD"], "value": f"20{m[2]}-{MONTHS[m[1]]:02d}", "precision": "month"}
-        facilities = [f for s in (states or OSM_STATES) for f in osm.get(s.lower(), [])]
+        facilities = osm_data.load(states or OSM_STATES)
         # Text after the first comma describes the work; "LRTP Tranche N Project NN:" prefixes the endpoints.
         facility_text = re.sub(r"^LRTP Tranche \d+ Project \d+:\s*", "", name.split(",")[0])
         center, candidate = locate(facility_text, None, facilities, OPERATOR_KEYS["ATC"], voltages_kv(name), DATASET)
@@ -137,11 +132,8 @@ def build(cache: Path) -> dict:
     sources = [{"_id": SOURCE_ID, "publisher": "American Transmission Company",
                 "title": "ATC's 2025 10-Year Assessment Project List (network projects) and zone pages",
                 "vintage": "2025-11", "rights": "Published openly on atc10yearplan.com",
-                "zone_states": zones, "artifacts": [{"file": f} | manifest[f] for f in [PDF, *ZONES]]},
-               {"_id": "osm-substations", "publisher": "OpenStreetMap contributors",
-                "rights": "ODbL 1.0; attribution required", "role": "candidate facility geometry only (C26)",
-                "artifacts": [manifest[f] for f in osm_files]}]
-    return {"projects": projects, "dispositions": dispositions, "sources": sources, "osm": osm}
+                "zone_states": zones, "artifacts": [{"file": f} | manifest[f] for f in [PDF, *ZONES]]}]
+    return {"projects": projects, "dispositions": dispositions, "sources": sources}
 
 
 def main(argv: list[str] | None = None) -> int:

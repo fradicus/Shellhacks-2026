@@ -1,0 +1,29 @@
+{
+  "by_basis": {
+    "one": 19,
+    "source_point": 23,
+    "two": 18
+  },
+  "by_status": {
+    "in_service": 11,
+    "planned": 43,
+    "proposed": 256
+  },
+  "candidate_located": 60,
+  "distinct_points": 58,
+  "located_by_status": {
+    "planned": 7,
+    "proposed": 53
+  },
+  "projects": 310,
+  "unlocated_reasons": {
+    "multi_terminal_line": 25,
+    "no_facility": 96,
+    "no_facility,not_a_facility": 3,
+    "no_facility,not_corroborated": 3,
+    "no_named_facility": 89,
+    "not_corroborated": 6,
+    "program_area_or_multi_facility": 28
+  },
+  "verified": 0
+}

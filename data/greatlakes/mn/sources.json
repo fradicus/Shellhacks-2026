@@ -49,20 +49,5 @@
     "rights": "Public regulatory filing, published openly on minnelectrans.com",
     "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6 zone pages",
     "vintage": "2025-10-31"
-  },
-  {
-    "_id": "osm-mn-substations",
-    "artifacts": [
-      {
-        "bytes": 420436,
-        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MN\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
-        "retrieved_at": "2026-09-27T01:40:51Z",
-        "sha256": "7587377b6372f0863721e1f0a3631243b6b32812d9025f522c19125bade23435",
-        "url": "https://overpass-api.de/api/interpreter"
-      }
-    ],
-    "publisher": "OpenStreetMap contributors",
-    "rights": "ODbL 1.0; attribution required",
-    "role": "candidate facility geometry only (C26)"
   }
 ]

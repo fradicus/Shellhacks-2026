@@ -5983,14 +5983,20 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Steep",
+          "norm": "STEEP",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
       "names_from": "name",
       "operator_keys": [
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "no_named_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         345
@@ -8668,13 +8674,19 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Johnson Junction",
+          "norm": "JOHNSON JUNCTION",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
       "names_from": "name",
       "operator_keys": [
         "GREAT RIVER"
       ],
-      "reason": "no_named_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": []
     },
@@ -11893,8 +11905,8 @@
             "state": "MN",
             "voltage": "69000;13800;7970"
           },
-          "name": "Tracy Switching Station",
-          "norm": "TRACY SWITCHING STATION",
+          "name": "Tracy Switching",
+          "norm": "TRACY SWITCHING",
           "status": "matched"
         }
       ],

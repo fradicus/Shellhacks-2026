@@ -1,7 +1,7 @@
 """Minnesota: 2025 Biennial Transmission Projects Report zone tables -> national-project records with C26 candidates.
 
 From pipeline/:
-  uv run python -m greatlakes.minnesota fetch --cache /tmp/gl-cache   # network: 6 report pages + 1 Overpass query
+  uv run python -m greatlakes.minnesota fetch --cache /tmp/gl-cache   # network: 6 report pages (OSM: greatlakes.osm)
   uv run python -m greatlakes.minnesota build --cache /tmp/gl-cache   # offline; add --check to compare committed output
 Raw pages stay in the cache outside the checkout. A changed page hash fails the build until sources.json is reviewed.
 """
@@ -10,15 +10,15 @@ from __future__ import annotations
 
 import argparse
 import html
-import json
 import re
 import sys
 from pathlib import Path
 
 from common import REPO_ROOT, load_json, validate, write_json
 
+from . import osm as osm_data
 from .match import voltages_kv
-from .shared import OPERATOR_KEYS, fetch_into, fetch_osm, locate, osm_extract, verify_cache, write_outputs
+from .shared import OPERATOR_KEYS, fetch_into, locate, verify_cache, write_outputs
 
 SOURCE_ID = "mn-btpr-2025"
 STATE_FIPS = "27"
@@ -36,7 +36,6 @@ def fetch(cache: Path) -> None:
     manifest: dict = {}
     for page in PAGES:
         fetch_into(cache, page, BASE + page, manifest)
-    fetch_osm(cache, "MN", manifest)
     write_json(cache / "manifest.json", manifest)
 
 
@@ -114,8 +113,8 @@ def county_fips(description: str | None, counties: dict[str, str]) -> list[str]:
 
 
 def build(cache: Path) -> dict:
-    manifest = verify_cache(cache, [*PAGES, "osm-mn.json"])
-    osm = osm_extract(json.loads((cache / "osm-mn.json").read_bytes()), "MN")
+    manifest = verify_cache(cache, PAGES)
+    osm = osm_data.load(["MN"])
     geography = load_json(REPO_ROOT / "data" / "national" / "geography.json")
     counties = {c["name"]: c["county_geoid"] for c in geography["counties"] if c["county_geoid"].startswith(STATE_FIPS)}
 
@@ -174,11 +173,8 @@ def build(cache: Path) -> dict:
     sources = [{"_id": SOURCE_ID, "publisher": "Minnesota Transmission Owners (MPUC Docket E999/M-25-99)",
                 "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6 zone pages",
                 "vintage": "2025-10-31", "rights": "Public regulatory filing, published openly on minnelectrans.com",
-                "artifacts": [{"page": p} | manifest[p] for p in PAGES]},
-               {"_id": "osm-mn-substations", "publisher": "OpenStreetMap contributors",
-                "rights": "ODbL 1.0; attribution required",
-                "role": "candidate facility geometry only (C26)", "artifacts": [manifest["osm-mn.json"]]}]
-    return {"projects": projects, "dispositions": dispositions, "sources": sources, "osm": {"mn": osm}}
+                "artifacts": [{"page": p} | manifest[p] for p in PAGES]}]
+    return {"projects": projects, "dispositions": dispositions, "sources": sources}
 
 
 def main(argv: list[str] | None = None) -> int:
