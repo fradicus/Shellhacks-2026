@@ -94,8 +94,17 @@
               }
             },
             "not": {
-              "required": [
-                "location_verification"
+              "anyOf": [
+                {
+                  "required": [
+                    "location_verification"
+                  ]
+                },
+                {
+                  "required": [
+                    "project_events"
+                  ]
+                }
               ]
             }
           }

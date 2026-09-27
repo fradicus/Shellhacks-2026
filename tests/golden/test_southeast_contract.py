@@ -38,7 +38,7 @@ def test_contract_requires_unlocated_input_and_preserves_national_schema():
     cases = [
         ("_id", "legacy:fixture:1"), ("states", ["09"]), ("location_review", "confirmed"),
         ("center", {"lat": 28, "lon": -81, "basis": "source_point", "evidence": "synthetic"}),
-        ("location_verification", {}), ("in_service", {"raw": None, "value": "2026-01-01", "precision": "unknown"}),
+        ("location_verification", {}), ("project_events", []), ("in_service", {"raw": None, "value": "2026-01-01", "precision": "unknown"}),
     ]
     for field, value in cases:
         bad = deepcopy(valid)

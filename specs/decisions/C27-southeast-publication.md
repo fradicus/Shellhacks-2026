@@ -66,7 +66,7 @@ binds these historical claims. A schema-valid event date still requires semantic
 
 ## Location projection
 
-Every input project starts with null center and `unlocated`, without embedded location_verification. Optional
+Every input project starts with null center and `unlocated`, without embedded location_verification or project_events. Both are assembled only from the typed release fields. Optional
 `location_verifications` use C23's exact verification schema, hash encoding, append-only review and event semantics.
 They may reference only new projects in this release. Each record binds the exact pre-projection project facts.
 Reuse the same review rules: no self-review, duplicate review IDs, future/unordered review time, stale facts,
