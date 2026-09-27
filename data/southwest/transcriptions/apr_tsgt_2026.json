@@ -1,0 +1,194 @@
+{
+ "file": "TSGT_2026_APR",
+ "rows": [
+  {
+   "native_id": "san-luis-valley-poncha-230-kv-line",
+   "name": "San Luis Valley-Poncha 230 kV Line Project",
+   "page": 1,
+   "quote": "This project consists of a new 230 kV transmission line from the existing San Luis Valley Substation to the existing Poncha Substation. This project is under re-evaluation through sub-regional planning groups and the projected in-service date for this project is TBD.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "San Luis Valley",
+    "Poncha"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "TBD",
+   "status_raw": "under re-evaluation",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:885"
+  },
+  {
+   "native_id": "burlington-lamar-230-kv-line",
+   "name": "Burlington – Lamar 230 kV Line",
+   "page": 1,
+   "quote": "Burlington – Lamar 230 kV Line (2022 Waiver Granted) This project consists of a new 230 kV transmission line from the existing Burlington Substation to the existing Lamar (Tri-State) Substation.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Burlington",
+    "Lamar"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "March 2025",
+   "status_raw": "went into service",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1355"
+  },
+  {
+   "native_id": "boone-huckleberry-230-kv-line",
+   "name": "Boone – Huckleberry 230 kV Line",
+   "page": 1,
+   "quote": "Boone – Huckleberry 230 kV Line (2022 Waiver Granted) This project consists of a new 230 kV transmission line from the existing Boone Substation to a new Huckleberry Substation, which will sectionalize the existing Comanche – Walsenburg 230 kV line near Comanche Substation.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Boone",
+    "Huckleberry"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "April 2026",
+   "status_raw": "final stages of the substation construction process have begun",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1356"
+  },
+  {
+   "native_id": "badger-creek-big-sandy-230-kv-line",
+   "name": "Badger Creek – Big Sandy 230 kV Line",
+   "page": 1,
+   "quote": "Badger Creek – Big Sandy 230 kV Line (2022 Waiver Granted) This project consists of a new 230 kV transmission line from the existing Big Sandy Substation to a new Badger Creek Substation, which will sectionalize the existing Henry Lake – Story 230 kV line.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Badger Creek",
+    "Big Sandy"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "2022 Waiver Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1357"
+  },
+  {
+   "native_id": "big-sandy-burlington-230-kv-line-uprate",
+   "name": "Big Sandy – Burlington 230 kV Line Uprate",
+   "page": 1,
+   "quote": "Big Sandy – Burlington 230 kV Line Uprate (2022 Waiver Granted) This project consists of structure replacements and/or modifications along the existing Big Sandy – Windtalker – Landsman Creek – Burlington 230 kV line to improve the line rating.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Big Sandy",
+    "Burlington"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "2022 Waiver Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1358"
+  },
+  {
+   "native_id": "crosspoint-230-kv-substation",
+   "name": "Crosspoint 230 kV Substation",
+   "page": 2,
+   "quote": "Crosspoint 230 kV Substation (2023 Waiver Granted) This project consists of a new 230 kV Crosspoint Substation, which will sectionalize the existing Lincoln – Midway 230 kV line.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Crosspoint"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "June 2027",
+   "status_raw": "2023 Waiver Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1502"
+  },
+  {
+   "native_id": "milk-creek-345-kv-substation",
+   "name": "Milk Creek 345 kV Substation",
+   "page": 2,
+   "quote": "Milk Creek 345 kV Substation (2024 Waiver Granted) This project consists of a new 345 kV Milk Substation, which will sectionalize the existing Craig – Meeker 345 kV line. This project is needed to interconnect a 145 MW generator, and is not expected to have significant impact to the reliability of the WECC interconnected system. This substation went into service August 2025",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Milk Creek"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "August 2025",
+   "status_raw": "went into service",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1235"
+  },
+  {
+   "native_id": "boone-lamar-230-kv-reconductor",
+   "name": "Boone – Lamar 230 kV Reconductor",
+   "page": 2,
+   "quote": "Boone – Lamar 230 kV Reconductor (2025 Waiver Granted) This project consists of replacing the Boone – Lamar 230 kV transmission line SD conductor with equivalently sized ACSR conductor.",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Boone",
+    "Lamar"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": "2025 Waiver Granted",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "pegs-ambrosia-230-kv-line-upgrade",
+   "name": "Pegs – Ambrosia 230 kV Line Upgrade",
+   "page": 5,
+   "quote": "Project Description: Perform two structure replacements on the PEGS (Escalante) – Ambrosia 230 kV Line to improve its Maximum Operating Temperature from 50°C to 100°C. The line is constructed with 1590 kcmil ACSR “Falcon” conductor. Voltage Class: 230 kV Facility Rating: 446 MVA (terminal limited) Location: Western New Mexico, McKinley county",
+   "owner": "Tri-State Generation and Transmission Association",
+   "states": [
+    "NM"
+   ],
+   "state_basis": "text",
+   "kind": "line",
+   "facilities": [
+    "PEGS",
+    "Ambrosia"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2027",
+   "status_raw": "Planned",
+   "work_type": "transmission",
+   "published_as": null
+  }
+ ]
+}

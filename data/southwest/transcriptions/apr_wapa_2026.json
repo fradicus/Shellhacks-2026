@@ -1,0 +1,105 @@
+{
+ "file": "WAPA_2026_APR",
+ "rows": [
+  {
+   "native_id": "vidal-solar-generation-plant",
+   "name": "Vidal Solar Generation Plant",
+   "page": 2,
+   "quote": "A. Vidal Solar Generation Planto Construct a new 160MW solar PV generation plant interconnected on the existing Blythe – Headgate 161-",
+   "owner": "Western Area Power Administration",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    161
+   ],
+   "in_service_raw": "4th Quarter 2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "sterling-solar-generation-plant",
+   "name": "Sterling Solar Generation Plant",
+   "page": 2,
+   "quote": "B. Sterling Solar Generation Plant a) DCeosncsrtriupctito an n oefw W 4o5r0kM: W solar PV generation plant interconnected on the existing Topock-Black Mesa 230-kV transmission line.",
+   "owner": "Western Area Power Administration",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": null,
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "pinal-central-ed5-transmission-line",
+   "name": "Pinal Central – ED5 Transmission Line",
+   "page": 2,
+   "quote": "C. Pinal Central – ED5 Transmission Line c) Description of Work: Construct a new 230kV transmission line, connecting the existing Pinal Central substation to the existing ED-5 substation. d) Completion Date: 4th Quarter 2026",
+   "owner": "Western Area Power Administration",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Pinal Central",
+    "ED-5"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "4th Quarter 2026",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "bouse-upgrade",
+   "name": "Bouse Upgrade",
+   "page": 2,
+   "quote": "B. Bouse Upgrade a) Description of Work: • Expand the existing Bouse Substation by adding a 230kV bus. • Add two 230/161kV Transformer Banks at the Bouse substation.",
+   "owner": "Western Area Power Administration",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Bouse"
+   ],
+   "voltages_kv": [
+    230,
+    161
+   ],
+   "in_service_raw": "4th Quarter 2030",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "crossover-60-ohm-series-reactor",
+   "name": "Crossover 60-Ohm Series Reactor Project",
+   "page": 4,
+   "quote": "for the Crossover 60-Ohm Series Reactor Project, per the process outlined in Section 3 of the WECC Progress Report Policies and Procedures. This project is not seeking a new or revised path rating. Its primary purpose is to restore operation of an existing 230 kV transmission line from Crossover to Yellowtail on WAPA-UGPR’s Southern Montana Transmission System",
+   "owner": "Western Area Power Administration",
+   "states": [
+    "MT"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Crossover"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "April 4th, 2026",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  }
+ ]
+}

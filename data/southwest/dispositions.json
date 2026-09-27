@@ -3371,5 +3371,839 @@
     "name": "Western Spirit - Hidden Mountain 345kV #2 Line",
     "reason": "terminal mean outside NV/UT",
     "source_id": "westtec-10yr-planned-sw"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=1",
+    "name": "Colorado’s Power Pathway",
+    "reason": "same project as westconnect-tppl-2026-02:1328",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=1",
+    "name": "Ault – Cloverly 230/115 kV",
+    "reason": "same project as westconnect-tppl-2026-02:953",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Central Weld County Reliability Loop",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "PI-2024-06 Generation Interconnection Substation",
+    "reason": "same project as westconnect-tppl-2026-02:1651",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5207: Hopkins to Rifle 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1668",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5205: Parachute to Rifle 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1669",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5509: Bluestone Valley to Parachute 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1670",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5245: Hopkins to Hagerman Pass 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1672",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5245: Hagerman Pass to Malta 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1673",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5785: Cooley Mesa to Wolcott 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1674",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Circuit 5787: Cooley Mesa to Basalt 230 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1675",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Leetsdale – Elati 230 kV Circuit 5283 Underground",
+    "reason": "same project as westconnect-tppl-2026-02:1643",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Daniels Park – Prairie – Greenwood Circuit 5111",
+    "reason": "same project as westconnect-tppl-2026-02:1642",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Greenwood – Arapahoe Circuit 5709 Uprate",
+    "reason": "same project as westconnect-tppl-2026-02:1650",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Daniels Park – Santa Fe Circuit 5107 Uprate",
+    "reason": "same project as westconnect-tppl-2026-02:1653",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Smoky Hill – Buckley Circuit 5167 Uprate",
+    "reason": "same project as westconnect-tppl-2026-02:1661",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Smoky Hill – Buckley – Tollgate – Jewell – Leetsdale",
+    "reason": "same project as westconnect-tppl-2026-02:1661",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Denver Terminal – Elati Circuit 5625 Uprate",
+    "reason": "same project as westconnect-tppl-2026-02:1663",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=2",
+    "name": "Daniels Park 345/230 kV Transformer #4",
+    "reason": "same project as westconnect-tppl-2026-02:1647",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Greenwood Substation Bus-Tie Uprate",
+    "reason": "same project as westconnect-tppl-2026-02:1645",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Greenwood – Monaco Series Reactor",
+    "reason": "same project as westconnect-tppl-2026-02:1654",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "South Substation 230 kV Expansion",
+    "reason": "same project as westconnect-tppl-2026-02:1662",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=3",
+    "name": "Smoky Hill Substation 345/230 kV Transformer #3",
+    "reason": "same project as westconnect-tppl-2026-02:1648",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Fort Lupton CT",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Ft. Saint Vrain CT 7",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Dryland Prairie",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "South Platte",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Comanche",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Spindle",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Towner Wind I",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Cheyenne Ridge II",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Singing Grass Wind",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PSCo_2026_APR.pdf#page=4",
+    "name": "Colt Creek",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-psco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=1",
+    "name": "San Luis Valley-Poncha 230 kV Line Project",
+    "reason": "same project as westconnect-tppl-2026-02:885",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=1",
+    "name": "Burlington – Lamar 230 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1355",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=1",
+    "name": "Boone – Huckleberry 230 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1356",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=1",
+    "name": "Badger Creek – Big Sandy 230 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1357",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=1",
+    "name": "Big Sandy – Burlington 230 kV Line Uprate",
+    "reason": "same project as westconnect-tppl-2026-02:1358",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=2",
+    "name": "Crosspoint 230 kV Substation",
+    "reason": "same project as westconnect-tppl-2026-02:1502",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TSGT_2026_APR.pdf#page=2",
+    "name": "Milk Creek 345 kV Substation",
+    "reason": "same project as westconnect-tppl-2026-02:1235",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "_id": "wecc-apr-2026-tsgt:boone-lamar-230-kv-reconductor",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "TSGT_2026_APR.pdf#page=2",
+    "name": "Boone – Lamar 230 kV Reconductor",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "_id": "wecc-apr-2026-tsgt:pegs-ambrosia-230-kv-line-upgrade",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "TSGT_2026_APR.pdf#page=5",
+    "name": "Pegs – Ambrosia 230 kV Line Upgrade",
+    "source_id": "wecc-apr-2026-tsgt"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=1",
+    "name": "Morgan to Outer Circle 230kV lines",
+    "reason": "same project as westconnect-tppl-2026-02:88",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=1",
+    "name": "Panda -Freedom 230kV line",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=1",
+    "name": "Desert Sun 230kV",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Goodyear 230kV Lines",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Parkway 230kV Liness",
+    "reason": "same project as westconnect-tppl-2026-02:1199",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Broadway 230kV Lines",
+    "reason": "same project as westconnect-tppl-2026-02:1202",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Dromedary 230kV Lines",
+    "reason": "same project as westconnect-tppl-2026-02:1553",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Proving Ground (Ironwood) Solar and Storage 500kV Interconnection",
+    "reason": "same project as westconnect-tppl-2026-02:1555",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "West Camp Wind Gen-Tie Project",
+    "reason": "same project as westconnect-tppl-2026-02:1556",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Contrail 230kV Lines",
+    "reason": "same project as westconnect-tppl-2026-02:1200",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Hashknife Energy Center Transmission Provider Interconnection Facilities",
+    "reason": "same project as westconnect-tppl-2026-02:1554",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Diamond 230kV Lines (formerly Runway)",
+    "reason": "same project as westconnect-tppl-2026-02:1367",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Sun Valley to Outer Circle 230kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1557",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Helios to Milligan (previously Sundance) 230kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:93",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Bagdad 230kV Transmission Line",
+    "reason": "same project as westconnect-tppl-2026-02:1372",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Bianco 230kV Lines",
+    "reason": "same project as westconnect-tppl-2026-02:1558",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Wafer 500kV and 230kV Lines (previously TS22)",
+    "reason": "same project as westconnect-tppl-2026-02:1368",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Pinnacle Peak to Ocotillo 230kV Line Rebuilds",
+    "reason": "same project as westconnect-tppl-2026-02:1560",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Panda to Freedom 230kV New Line #2 (previous Rebuild)",
+    "reason": "same project as westconnect-tppl-2026-02:1559",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Jojoba to Rudd 500kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1369",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Runway to Stratus 230kV Line Cut-In to TS21",
+    "reason": "same project as westconnect-tppl-2026-02:1561",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Independence – Broadway 230kV Line (previously TS21-Broadway)",
+    "reason": "same project as westconnect-tppl-2026-02:1562",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "_id": "wecc-apr-2026-aps:four-corners-cholla-pinnacle-peak-345kv-rebuilds",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Four Corners to Cholla to Pinnacle Peak 345kV Line Rebuilds",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Snowflake Solar Transmission Provider Interconnection Facilities",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Q264 Transmission Provider Interconnection Facilities",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "_id": "wecc-apr-2026-aps:cholla-chevelon-cut-in-sitgreaves",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Cholla-Chevelon 345kV Line Cut-In to Sitgreaves",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "North Gila-Orchard 230kV Line Circuit #2",
+    "reason": "same project as westconnect-tppl-2026-02:1370",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Agua Fria – Contrail 230kV line",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "APS_2026_APR.pdf#page=2",
+    "name": "Saguaro Power Campus Upgrades",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aps"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=1",
+    "name": "Tortolita to DeMoss Petrie portion",
+    "reason": "same project as westconnect-tppl-2026-02:1339",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=1",
+    "name": "DeMoss Petrie to Vail portion",
+    "reason": "same project as westconnect-tppl-2026-02:1340",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=1",
+    "name": "Roadrunner Reserve Battery Energy Storage System",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "_id": "wecc-apr-2026-tep:tortolita-500-138-kv-transformer-addition",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "TEP_2026_APR.pdf#page=2",
+    "name": "Tortolita 500/138 kV Transformer Addition",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=2",
+    "name": "Vail 345/138 kV Transformer Addition",
+    "reason": "same project as westconnect-tppl-2026-02:340",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=2",
+    "name": "Pinal West 500/345 kV Transformer Addition",
+    "reason": "same project as westconnect-tppl-2026-02:1682",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=2",
+    "name": "UNSE Black Mountain Generating Station Expansion",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=2",
+    "name": "UNSE Golden Valley 230kV Transmission Line",
+    "reason": "same project as westconnect-tppl-2026-02:106",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=2",
+    "name": "Saguaro – Winchester 500 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1087",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=3",
+    "name": "Vail – South #2 345 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1088",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "_id": "wecc-apr-2026-tep:springerville-greenlee-3-345-kv-line",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "TEP_2026_APR.pdf#page=3",
+    "name": "Springerville – Greenlee #3 345 kV Line",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=3",
+    "name": "Tortolita – South 345 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1090",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "TEP_2026_APR.pdf#page=3",
+    "name": "Westwing – South #2 345 Line",
+    "reason": "same project as westconnect-tppl-2026-02:1091",
+    "source_id": "wecc-apr-2026-tep"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "AEPCO_2026_APR.pdf#page=1",
+    "name": "Apache Solar 2 (Road Runner) Solar and Battery Energy Storage Facility",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-aepco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "AEPCO_2026_APR.pdf#page=1",
+    "name": "Cochise Substation",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-aepco"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PNM_2026_APR.pdf#page=1",
+    "name": "Hidden Mountain 345 kV Station",
+    "reason": "same project as westconnect-tppl-2026-02:1476",
+    "source_id": "wecc-apr-2026-pnm"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PNM_2026_APR.pdf#page=1",
+    "name": "Pajarito 345 kV Station Expansion",
+    "reason": "same project as westconnect-tppl-2026-02:1631",
+    "source_id": "wecc-apr-2026-pnm"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PNM_2026_APR.pdf#page=1",
+    "name": "Hidden Mountain 345 kV Expansion",
+    "reason": "same project as westconnect-tppl-2026-02:1634",
+    "source_id": "wecc-apr-2026-pnm"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "PNM_2026_APR.pdf#page=2",
+    "name": "Rio Puerco-Pajarito-Prosperity 345 kV Lines",
+    "reason": "same project as westconnect-tppl-2026-02:1635",
+    "source_id": "wecc-apr-2026-pnm"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=1",
+    "name": "Renewable Generation Solar & Battery Storage (Generation)",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=1",
+    "name": "Gas Combustion Turbine",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=2",
+    "name": "Afton North 345 kV Switching Station",
+    "reason": "same project as westconnect-tppl-2026-02:1256",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=2",
+    "name": "Airport 345/115/24 kV Substation",
+    "reason": "same project as westconnect-tppl-2026-02:1455",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=2",
+    "name": "Vado Substation 345/115 kV",
+    "reason": "same project as westconnect-tppl-2026-02:1261",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "_id": "wecc-apr-2026-epe:afton-newman-in-out-vado-afton-vado-portion",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "EPE_2026_APR.pdf#page=2",
+    "name": "Afton-Newman 345 kV In and Out into Vado 345 kV Substation Line Reconfiguration (Afton-Vado 345 kV line Portion)",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=3",
+    "name": "Afton North-Airport 345 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1452",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=3",
+    "name": "Afton-Afton North 345 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1257",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=3",
+    "name": "Afton North-Vado 345 kV Line (New)",
+    "reason": "same project as westconnect-tppl-2026-02:1598",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=4",
+    "name": "Airport 345/115 kV Autotransformer",
+    "reason": "same project as westconnect-tppl-2026-02:1454",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=4",
+    "name": "Vado 345/115 kV Autotransformers T1 & T2",
+    "reason": "same project as westconnect-tppl-2026-02:1283",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=4",
+    "name": "Mirage 345 kV Substation, Airport to Mirage 345 kV Line and Related 345 kV Line Reconfiguration",
+    "reason": "same project as westconnect-tppl-2026-02:1460",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=4",
+    "name": "T_W1 345/115 kV Switching Station (New) & Related 345 kV Line Reconfiguration",
+    "reason": "same project as westconnect-tppl-2026-02:1608",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=4",
+    "name": "Airport-Mirage 345 kV Line",
+    "reason": "same project as westconnect-tppl-2026-02:1460",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=5",
+    "name": "Luna-Diablo 345 kV Line Reconfiguration (In-and-Out at Afton 345 kV Substation)",
+    "reason": "same project as westconnect-tppl-2026-02:1609",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=5",
+    "name": "T_W1 345/115 kV Autotransformer (New)",
+    "reason": "same project as westconnect-tppl-2026-02:1615",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=5",
+    "name": "Pine 345/115 kV Switching Station (New)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=5",
+    "name": "Caliente-Pine 345 kV Line (New)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=5",
+    "name": "HVDC Tie Replacement",
+    "reason": "same project as westconnect-tppl-2026-02:1457",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=5",
+    "name": "Amrad 345/115 kV Autotransformer",
+    "reason": "same project as westconnect-tppl-2026-02:1625",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=6",
+    "name": "Pine 345/115 kV Autotransformer (New)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=6",
+    "name": "Alamo – Pine 345 kV Line (New)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "EPE_2026_APR.pdf#page=6",
+    "name": "Alamo 345/115 kV Autotransformer (New)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-epe"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WAPA_2026_APR.pdf#page=2",
+    "name": "Vidal Solar Generation Plant",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-wapa"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WAPA_2026_APR.pdf#page=2",
+    "name": "Sterling Solar Generation Plant",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-wapa"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WAPA_2026_APR.pdf#page=2",
+    "name": "Pinal Central – ED5 Transmission Line",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-wapa"
+  },
+  {
+    "_id": "wecc-apr-2026-wapa:bouse-upgrade",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "WAPA_2026_APR.pdf#page=2",
+    "name": "Bouse Upgrade",
+    "source_id": "wecc-apr-2026-wapa"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "WAPA_2026_APR.pdf#page=4",
+    "name": "Crossover 60-Ohm Series Reactor Project",
+    "reason": "outside C42 states (MT)",
+    "source_id": "wecc-apr-2026-wapa"
   }
 ]

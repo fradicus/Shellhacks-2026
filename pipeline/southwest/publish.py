@@ -17,7 +17,7 @@ from common import REPO_ROOT, load_json, validate
 
 FOLDER = Path("data/southwest")
 ACTIVE = FOLDER / "releases" / "active.json"
-RELEASE_ID = "southwest-westconnect-tppl-2026-02-candidates-1"
+RELEASE_ID = "southwest-westconnect-tppl-2026-02-candidates-2"
 TIERS = ("official", "candidate", "candidate_unique_name")
 STATES = {"04", "08", "32", "35", "49"}
 

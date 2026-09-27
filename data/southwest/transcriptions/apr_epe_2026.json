@@ -1,0 +1,474 @@
+{
+ "file": "EPE_2026_APR",
+ "rows": [
+  {
+   "native_id": "renewable-solar-battery-250mw",
+   "name": "Renewable Generation Solar & Battery Storage (Generation)",
+   "page": 1,
+   "quote": "Renewable Generation Solar & Battery Storage (Generation) 250 MW Maximum, 250 MW Solar, 250 MW Battery, December 2028",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [],
+   "in_service_raw": "December 2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "gas-combustion-turbine-325mw",
+   "name": "Gas Combustion Turbine",
+   "page": 1,
+   "quote": "Gas Combustion Turbine, 325 MW, May 2032",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [],
+   "in_service_raw": "May 2032",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "afton-north-345-kv-switching-station",
+   "name": "Afton North 345 kV Switching Station",
+   "page": 2,
+   "quote": "This project involves the construction of a new Afton North 345 kV Switching Station. The Afton North 345 kV Bus will be used to connect multiple 345 kV Circuits in an effort to increase the reliability and strength of EPE’s Transmission System. The project is expected to be in service in May 2028.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Afton North"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1256"
+  },
+  {
+   "native_id": "airport-345-115-24-kv-substation",
+   "name": "Airport 345/115/24 kV Substation",
+   "page": 2,
+   "quote": "This project involves the construction of a new Airport 345/115/24 KV Substation. The Airport 345 & 115 kV Buses will be used to connect multiple circuits at these voltage levels as an effort to increase the reliability of EPE’s Transmission System. This substation will also be replacing the existing Airport 115/24 kV Substation. The project is expected to be in service in May 2028.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Airport"
+   ],
+   "voltages_kv": [
+    345,
+    115,
+    24
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1455"
+  },
+  {
+   "native_id": "vado-substation-345-115-kv",
+   "name": "Vado Substation 345/115 kV",
+   "page": 2,
+   "quote": "3. Vado Substation 345/115 kV (Waiver of “Significant Impact” Granted in 2022 as part of the heading “Vado Projects”) The addition of Vado 345/115 kV Substation involves several elements. The project involves an in-and-out connection on the Afton to Newman 345 kV transmission line with terminations into Vado 345 kV resulting in the Afton to Vado 345 kV Line and the Vado to Newman 345 kV Line.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Vado"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1261"
+  },
+  {
+   "native_id": "afton-newman-in-out-vado-afton-vado-portion",
+   "name": "Afton-Newman 345 kV In and Out into Vado 345 kV Substation Line Reconfiguration (Afton-Vado 345 kV line Portion)",
+   "page": 2,
+   "quote": "The Afton to Newman 345 kV Line Reconfiguration consists of several elements. The reconfiguration will consist of cutting into the Afton to Newman 345 kV Line to connect to Vado 345 kV Bus. The new Path will consist of Afton to Vado to Newman 345 kV Circuits.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Afton",
+    "Vado"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "afton-north-airport-345-kv-line",
+   "name": "Afton North-Airport 345 kV Line",
+   "page": 3,
+   "quote": "5. Afton North-Airport 345 kV Line (Waiver of “Significant Impact” Granted in 2023 as part of the heading “Airport Projects”) A new 345 kV transmission line is planned to be built from Afton North Substation to Airport Substation. The Afton North to Airport connection will become one of the main serving points for the Airport Substation. The project is expected to be in service in May 2028.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Afton North",
+    "Airport"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1452"
+  },
+  {
+   "native_id": "afton-afton-north-345-kv-line",
+   "name": "Afton-Afton North 345 kV Line",
+   "page": 3,
+   "quote": "6. Afton-Afton North 345 kV Line (Waiver of “Significant Impact” Granted in 2022 as part of the heading “Afton North Projects”) A new 345 kV transmission line is planned to be built from Afton North Substation to Vado Substation.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Afton",
+    "Afton North"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1257"
+  },
+  {
+   "native_id": "afton-north-vado-345-kv-line",
+   "name": "Afton North-Vado 345 kV Line (New)",
+   "page": 3,
+   "quote": "7. Afton North-Vado 345 kV Line (New) A new 345 kV transmission line is planned to be built from Afton North Substation to Vado.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Afton North",
+    "Vado"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1598"
+  },
+  {
+   "native_id": "airport-345-115-kv-autotransformer",
+   "name": "Airport 345/115 kV Autotransformer",
+   "page": 4,
+   "quote": "A new Airport 345/115 kV autotransformer will enhance system reliability. This autotransformer will serve as the connection point from the load at Airport to its serving point through the 345 kV Line from Airport to Afton North. The project is expected to be in service in May 2028.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Airport"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2028",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1454"
+  },
+  {
+   "native_id": "vado-345-115-kv-autotransformers-t1-t2",
+   "name": "Vado 345/115 kV Autotransformers T1 & T2",
+   "page": 4,
+   "quote": "9. Vado 345/115 kV Autotransformers T1 & T2 (Waiver of “Significant Impact” Granted in 2022 for T1 and 2023 for T2 as part of the heading “Vado Projects”) It is planned to add two new Vado 345/115 kV Autotransformers to connect the Vado 345/115 kV system. The project is expected to be in service in May 2029.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Vado"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2029",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1283"
+  },
+  {
+   "native_id": "mirage-345-kv-substation",
+   "name": "Mirage 345 kV Substation, Airport to Mirage 345 kV Line and Related 345 kV Line Reconfiguration",
+   "page": 4,
+   "quote": "This project involves the construction of a new Mirage 345 kV Switching Station. The 345 kV Line Reconfiguration consists of splitting the Macho Springs to Luna 345 kV circuit to introduce the Mirage 345 kV Substation. The new Path will consist of Luna to Mirage to Macho Springs 345 kV Circuits. The project is expected to be in service in May 2030.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Mirage"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2030",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1460"
+  },
+  {
+   "native_id": "t-w1-345-115-kv-switching-station",
+   "name": "T_W1 345/115 kV Switching Station (New) & Related 345 kV Line Reconfiguration",
+   "page": 4,
+   "quote": "This project involves the construction of a new T_W1 345/115 kV Switching Station. The 345 kV Line Reconfiguration consists of splitting the Afton to Diablo 345 kV circuit to introduce the T_W1 345/115 kV Substation. The new Path will consist of Afton to T_W1 to Diablo 345 kV Circuits. The project is expected to be in service in May 2030.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "T_W1"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2030",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1608"
+  },
+  {
+   "native_id": "airport-mirage-345-kv-line",
+   "name": "Airport-Mirage 345 kV Line",
+   "page": 4,
+   "quote": "12. Airport-Mirage 345 kV Line (Waiver of “Significant Impact” Granted in 2025) A new 345 kV transmission line is planned to be built from Airport Substation to Mirage. The Airport to Mirage connection will become one of the main serving points for the Airport Substation. The project is expected to be in service in May 2030.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Airport",
+    "Mirage"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2030",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1460"
+  },
+  {
+   "native_id": "luna-diablo-345-kv-reconfiguration-afton",
+   "name": "Luna-Diablo 345 kV Line Reconfiguration (In-and-Out at Afton 345 kV Substation)",
+   "page": 5,
+   "quote": "The Luna to Diablo 345 kV Line Reconfiguration consists of cutting into this line to connect to the Afton 345 kV Substation. This transmission line reconfiguration will improve system reliability and increase the El Paso Import Capability (EPIC). The project is expected to be in service in May 2030.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Luna",
+    "Diablo"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2030",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1609"
+  },
+  {
+   "native_id": "t-w1-345-115-kv-autotransformer",
+   "name": "T_W1 345/115 kV Autotransformer (New)",
+   "page": 5,
+   "quote": "14. T_W1 345/115 kV Autotransformer (New) This project identifies a new T_W1 345/115 kV autotransformer to connect the 345 kV & 115 kV Buses at T_W1 Substation. The project is expected to be in service in May 2030.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "T_W1"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2030",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1615"
+  },
+  {
+   "native_id": "pine-345-115-kv-switching-station",
+   "name": "Pine 345/115 kV Switching Station (New)",
+   "page": 5,
+   "quote": "15. Pine 345/115 kV Switching Station (New) This project involves the construction of a new Pine 345/115 kV Switching Station that will be part of the East Side Loop Expansion Project.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Pine"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2031",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "caliente-pine-345-kv-line",
+   "name": "Caliente-Pine 345 kV Line (New)",
+   "page": 5,
+   "quote": "16. Caliente-Pine 345 kV Line (New) A new 345 kV transmission line is planned to be built from Caliente Substation to Pine Substation. The project is expected to be in service in May 2031.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Caliente",
+    "Pine"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2031",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "hvdc-tie-replacement",
+   "name": "HVDC Tie Replacement",
+   "page": 5,
+   "quote": "17. HVDC Tie Replacement (Waiver of “Significant Impact” Granted in 2023) This project involves options for the replacement of the existing Eddy HVDC Tie. The project is expected to be in service in May 2031.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Eddy"
+   ],
+   "voltages_kv": [],
+   "in_service_raw": "May 2031",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1457"
+  },
+  {
+   "native_id": "amrad-345-115-kv-autotransformer",
+   "name": "Amrad 345/115 kV Autotransformer",
+   "page": 5,
+   "quote": "18. Amrad 345/115 kV Autotransformer (Waiver of “Significant Impact” Granted in 2025) A new additional Amrad 345/115 kV autotransformer has been identified to enhance system reliability. The project is expected to be in service in May 2031.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Amrad"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2031",
+   "status_raw": "Waiver of “Significant Impact” Granted",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1625"
+  },
+  {
+   "native_id": "pine-345-115-kv-autotransformer",
+   "name": "Pine 345/115 kV Autotransformer (New)",
+   "page": 6,
+   "quote": "19. Pine 345/115 kV Autotransformer (New) This project identifies a new Pine 345/115 kV autotransformer to connect the 345 kV & 115 kV Buses at Pine Substation. The project is expected to be in service in May 2031.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Pine"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2031",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "alamo-pine-345-kv-line",
+   "name": "Alamo – Pine 345 kV Line (New)",
+   "page": 6,
+   "quote": "20. Alamo – Pine 345 kV Line (New) A new 345 kV transmission line is planned to be built from Alamo Substation to Pine Substation. The project is expected to be in service in May 2035.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Alamo",
+    "Pine"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "May 2035",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "alamo-345-115-kv-autotransformer",
+   "name": "Alamo 345/115 kV Autotransformer (New)",
+   "page": 6,
+   "quote": "21. Alamo 345/115 kV Autotransformer (New) This project identifies a new Alamo 345/115 kV autotransformer to connect the 345 kV & 115 kV Buses at Alamo Substation. The project is expected to be in service in May 2035.",
+   "owner": "El Paso Electric Company",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Alamo"
+   ],
+   "voltages_kv": [
+    345,
+    115
+   ],
+   "in_service_raw": "May 2035",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  }
+ ]
+}

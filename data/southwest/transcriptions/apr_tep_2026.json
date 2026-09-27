@@ -1,0 +1,276 @@
+{
+ "file": "TEP_2026_APR",
+ "rows": [
+  {
+   "native_id": "vail-tortolita-tortolita-demoss-petrie-portion",
+   "name": "Tortolita to DeMoss Petrie portion",
+   "page": 1,
+   "quote": "This project will be constructed in phases with an expected in-service date of Q4 2026 for the Tortolita to DeMoss Petrie portion of the project",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Tortolita",
+    "DeMoss Petrie"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "Q4 2026",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1339"
+  },
+  {
+   "native_id": "vail-tortolita-demoss-petrie-vail-portion",
+   "name": "DeMoss Petrie to Vail portion",
+   "page": 1,
+   "quote": "This project will be constructed in phases with an expected in-service date of Q4 2026 for the Tortolita to DeMoss Petrie portion of the project, and an expected in-service date of Q4 2027 for the DeMoss Petrie to Vail portion of the project.",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "DeMoss Petrie",
+    "Vail"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "Q4 2027",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1340"
+  },
+  {
+   "native_id": "roadrunner-reserve-bess",
+   "name": "Roadrunner Reserve Battery Energy Storage System",
+   "page": 1,
+   "quote": "Roadrunner Reserve Battery Energy Storage System: TEP plans to add a 400MW Battery Energy Storage System connected at 138kV to the Vail substation.",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": null,
+   "facilities": [],
+   "voltages_kv": [
+    138
+   ],
+   "in_service_raw": "expected to be placed in service in 2026",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "tortolita-500-138-kv-transformer-addition",
+   "name": "Tortolita 500/138 kV Transformer Addition",
+   "page": 2,
+   "quote": "Tortolita 500/138 kV Transformer Addition: TEP plans to add a fourth 500/138 kV transformer at Tortolita substation to be operated in parallel to the existing transformers. The purpose of this transformer addition is to increase import capability into the TEP Load Pocket to accommodate increased forecasted load. The expected in- service date for this project is 2031.",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Tortolita"
+   ],
+   "voltages_kv": [
+    500,
+    138
+   ],
+   "in_service_raw": "2031",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "vail-345-138-kv-transformer-addition",
+   "name": "Vail 345/138 kV Transformer Addition",
+   "page": 2,
+   "quote": "Vail 345/138 kV Transformer Addition: TEP plans to add a fourth 345/138 kV transformer at Vail substation to be operated in parallel to the existing transformers. The purpose of this transformer addition is to increase import capability into the TEP Load Pocket to accommodate increased forecasted load. The expected in-service date for this project is 2033.",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Vail"
+   ],
+   "voltages_kv": [
+    345,
+    138
+   ],
+   "in_service_raw": "2033",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:340"
+  },
+  {
+   "native_id": "pinal-west-500-345-kv-transformer-addition",
+   "name": "Pinal West 500/345 kV Transformer Addition",
+   "page": 2,
+   "quote": "Pinal West 500/345 kV Transformer Addition: TEP plans to add a third 500/345 kV transformer at Pinal West substation to be operated in parallel to the existing transformers. The purpose of this transformer addition is to increase import capability into the TEP Load Pocket to accommodate increased forecasted load. The expected in- service date for this project is 2035.",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "site",
+   "facilities": [
+    "Pinal West"
+   ],
+   "voltages_kv": [
+    500,
+    345
+   ],
+   "in_service_raw": "2035",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1682"
+  },
+  {
+   "native_id": "unse-black-mountain-generating-station-expansion",
+   "name": "UNSE Black Mountain Generating Station Expansion",
+   "page": 2,
+   "quote": "UNSE plans to add four 50 MW Gas-Fired generation units for a total of 200 MW at the existing Black Mountain Generating Station in Mohave County, Arizona. A 230 kV line will connect this new generation to Western Area Power Administration (WAPA)’s Griffith substation in Mohave County.",
+   "owner": "Unisource Electric",
+   "states": [
+    "AZ"
+   ],
+   "state_basis": "text",
+   "kind": "site",
+   "facilities": [
+    "Black Mountain"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2028",
+   "status_raw": null,
+   "work_type": "generation",
+   "published_as": null
+  },
+  {
+   "native_id": "unse-golden-valley-230kv-line",
+   "name": "UNSE Golden Valley 230kV Transmission Line",
+   "page": 2,
+   "quote": "UNSE Golden Valley 230kV Transmission Line UNSE plans to construct a new 230kV transmission line in Mohave County from the WAPA’s McConnico 230 kV substation to the planned UNSE Mineral Park 230 kV substation.",
+   "owner": "Unisource Electric",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "McConnico",
+    "Mineral Park"
+   ],
+   "voltages_kv": [
+    230
+   ],
+   "in_service_raw": "2031",
+   "status_raw": null,
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:106"
+  },
+  {
+   "native_id": "saguaro-winchester-500-kv-line",
+   "name": "Saguaro – Winchester 500 kV Line",
+   "page": 2,
+   "quote": "Saguaro – Winchester 500 kV Line",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Saguaro",
+    "Winchester"
+   ],
+   "voltages_kv": [
+    500
+   ],
+   "in_service_raw": "beyond the 10-year time frame",
+   "status_raw": "schedule is tentative",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1087"
+  },
+  {
+   "native_id": "vail-south-2-345-kv-line",
+   "name": "Vail – South #2 345 kV Line",
+   "page": 3,
+   "quote": "Vail – South #2 345 kV Line",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Vail",
+    "South"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "beyond the 10-year time frame",
+   "status_raw": "schedule is tentative",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1088"
+  },
+  {
+   "native_id": "springerville-greenlee-3-345-kv-line",
+   "name": "Springerville – Greenlee #3 345 kV Line",
+   "page": 3,
+   "quote": "Springerville – Greenlee #3 345 kV Line",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Springerville",
+    "Greenlee"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "beyond the 10-year time frame",
+   "status_raw": "schedule is tentative",
+   "work_type": "transmission",
+   "published_as": null
+  },
+  {
+   "native_id": "tortolita-south-345-kv-line",
+   "name": "Tortolita – South 345 kV Line",
+   "page": 3,
+   "quote": "Tortolita – South 345 kV Line",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Tortolita",
+    "South"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "beyond the 10-year time frame",
+   "status_raw": "schedule is tentative",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1090"
+  },
+  {
+   "native_id": "westwing-south-2-345-line",
+   "name": "Westwing – South #2 345 Line",
+   "page": 3,
+   "quote": "Westwing – South #2 345 Line",
+   "owner": "Tucson Electric Power",
+   "states": [],
+   "state_basis": "owner_territory",
+   "kind": "line",
+   "facilities": [
+    "Westwing",
+    "South"
+   ],
+   "voltages_kv": [
+    345
+   ],
+   "in_service_raw": "beyond the 10-year time frame",
+   "status_raw": "schedule is tentative",
+   "work_type": "transmission",
+   "published_as": "westconnect-tppl-2026-02:1091"
+  }
+ ]
+}
