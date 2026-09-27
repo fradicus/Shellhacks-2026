@@ -74,8 +74,8 @@ function truck(xf,rot,mk,hd){
   ctx.strokeStyle='#5cc8ff';ctx.beginPath();ctx.arc(logoX-L*.009,logoY,r,0,Math.PI*2);ctx.stroke();
   ctx.strokeStyle='#ffae42';ctx.beginPath();ctx.arc(logoX+L*.009,logoY,r,0,Math.PI*2);ctx.stroke();
   ctx.fillStyle='#f4efe6';ctx.beginPath();ctx.arc(logoX,logoY,L*.003,0,Math.PI*2);ctx.fill();
-  ctx.font=`800 ${L*.052}px ${DISP}`;ctx.textBaseline='middle';ctx.letterSpacing=`${L*.003}px`;
-  ctx.fillStyle='rgba(244,239,230,.86)';ctx.fillText('GRIDBRIDGE',xf+L*.51,logoY,L*.40);ctx.restore();
+  ctx.font=`800 ${L*.048}px ${DISP}`;ctx.textBaseline='middle';ctx.letterSpacing=`${L*.0025}px`;
+  ctx.fillStyle='rgba(244,239,230,.9)';ctx.fillText('COMMON GROUND',xf+L*.505,logoY,L*.44);ctx.restore();
   // marker lights
   const mks=[];for(let i=0;i<5;i++)mks.push([.168+i*.015,-.29]);for(let x=.34;x<1;x+=.109)mks.push([x,-.306]);
   ctx.save();ctx.globalCompositeOperation='lighter';
@@ -106,16 +106,17 @@ function truck(xf,rot,mk,hd){
    ctx.strokeStyle='rgba(255,226,176,.12)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,roadY);ctx.lineTo(W,roadY);ctx.stroke();
    ctx.strokeStyle='rgba(255,255,255,.09)';ctx.setLineDash([48,100]);ctx.lineDashOffset=t*30;
    ctx.beginPath();ctx.moveTo(0,roadY+30);ctx.lineTo(W,roadY+30);ctx.stroke();ctx.setLineDash([]);
+   // Park briefly, then Same roads pass, pause off-screen, One network pass, hold for brand.
    const startX=(W-L)*.5,endX=W<700?(W-L)*.5:W-L-W*.04;
    let xf=startX+(endX-startX)*ease;
-   if(p>=.04 && p<.28)xf=endX+(-L-80-endX)*smooth(seg(.04,.28));
-   else if(p>=.28 && p<.34)xf=-L-80;
-   else if(p>=.34 && p<.58)xf=W+60+(-L-80-W-60)*smooth(seg(.34,.58));
-   else if(p>=.58)xf=-L-80;
+   if(p>=.05 && p<.32)xf=endX+(-L-80-endX)*smooth(seg(.05,.32));
+   else if(p>=.32 && p<.38)xf=-L-80;
+   else if(p>=.38 && p<.68)xf=W+60+(-L-80-W-60)*smooth(seg(.38,.68));
+   else if(p>=.68)xf=-L-80;
    if(story){
      const edge=`${clamp((xf+L)/W)*100}%`;
-     story.style.setProperty('--wipe-one',p<.04?'100%':p<.28?edge:'0%');
-     story.style.setProperty('--wipe-two',p<.34?'100%':p<.58?edge:'0%');
+     story.style.setProperty('--wipe-one',p<.05?'100%':p<.32?edge:'0%');
+     story.style.setProperty('--wipe-two',p<.38?'100%':p<.68?edge:'0%');
    }
    beam(xf,1,t); truck(xf,xf/(L*.032),1,1);
  }
