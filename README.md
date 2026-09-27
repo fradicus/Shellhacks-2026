@@ -7,11 +7,21 @@ not a compliance tool and does not promise savings.
 
 ## Deployment status
 
-No production URL or qualifying custom domain has been verified. Atlas, Vercel and domain configuration remain
-pending in [issue #10](https://github.com/fradicus/Shellhacks-2026/issues/10). Local fixture and local MongoDB checks
-do not count as production or MongoDB Atlas evidence.
+The live Vercel origin is [https://shellhacks2026-mu.vercel.app/](https://shellhacks2026-mu.vercel.app/). At
+`2026-09-27T12:00:13Z`, `release/verify-deployment.mjs` passed against deployed commit
+`4b30678aadee6f96c25a19d17d94179f23256b36`: HTTPS and the home page returned 200, `/api/health` returned 200
+with the database up and active dataset `9548c28191b2ac4eb703ec9283c31e364a911bce`, and all eight discovered
+client bundles were scanned without the verifier's credential markers.
 
-When a deployment is configured, `GET /api/health` reports the deployed Git commit, database state and active
+That pass verifies the reported deployed commit, not the merged fixes on `main`. A check at `2026-09-27T11:59:39Z`
+targeting `1fbcb5d97369a651d8853753aca4caeda1b4638f` failed because the health endpoint still reported the older
+commit. The infrastructure is live, but the current fixes are not live. The authenticated Vercel account available
+for this review cannot manage this exact host, and its alias lookup returned 404; the deployment owner must redeploy
+the current green `main` from the existing Vercel project with `web` as the project root. No qualifying custom
+domain has been verified. See [deployment evidence](release/deploys.md) and the
+[judge-readiness report](release/judge-readiness.md) for the release boundary.
+
+`GET /api/health` reports the deployed Git commit, database state and active
 dataset without returning connection details. `release/verify-deployment.mjs` checks the real HTTPS origins,
 revision, home page and browser bundles; see `release/deploys.md` for the procedure and current evidence.
 
