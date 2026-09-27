@@ -64,8 +64,10 @@ NWS requests use the public project issue URL as identifying contact, with an op
 `NWS_USER_AGENT` override. Forecasts older than
 six hours or without future periods are stale; future source timestamps fail.
 Point alerts retain null-geometry county/zone warnings. Poll no faster than 60s.
-USDA supplies map-unit/component survey context and source vintage, never measured
-soil strength or present moisture. WSDOT is the sole work-zone adapter; its broad
+USDA supplies map-unit/component survey context, optional horizon 1:1 soil-water pH
+(`ph1to1h2o_r`) with top/bottom depth in centimeters, and source vintage. Missing pH
+stays null with depth retained when published. This is never measured soil strength,
+present moisture, or a geotechnical approval. WSDOT is the sole work-zone adapter; its broad
 WA bounding box is only a request prefilter. A hash-bound 2026 Census Washington
 polygon then verifies jurisdiction, with boundary uncertainty failing closed.
 This does not assert complete road coverage. Work zones within the 0.05-degree point vicinity can be

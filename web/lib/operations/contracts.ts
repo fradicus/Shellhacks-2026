@@ -38,7 +38,34 @@ export type Envelope<T> = Omit<z.infer<typeof EnvelopeSchema>, "data"> & { data:
 export type ForecastPeriod = { start: string; end: string; temperature: number | null; temperature_unit: string | null; wind_speed: string | null; wind_direction: string | null; precipitation_probability: number | null; description: string };
 export type WeatherAlert = { id: string; event: string; severity: string | null; certainty: string | null; urgency: string | null; onset: string | null; expires: string; description: string; geometry_available: boolean; affected_zones: string[] };
 export type WeatherData = { samples: { point: Point; forecast: ForecastPeriod[]; alerts: WeatherAlert[]; updated_at: string; alerts_checked_at: string; alert_coverage: "point_county_and_zone" }[]; scope: string };
-export type SoilData = { map_units: { mukey: string; name: string; area_symbol: string; survey_updated_at: string | null; components: { cokey: string; name: string | null; percent: number | null; drainage_class: string | null; hydrologic_group: string | null }[] }[]; scope: string };
+export type SoilHorizon = {
+  chkey: string;
+  depth_top_cm: number | null;
+  depth_bottom_cm: number | null;
+  /** Representative 1:1 soil-water pH (SSURGO ph1to1h2o_r). Unitless pH scale; not a field lab result. */
+  ph_h2o_1_to_1: number | null;
+  ph_method: "1:1 soil-water";
+  depth_unit: "cm";
+};
+export type SoilComponent = {
+  cokey: string;
+  name: string | null;
+  percent: number | null;
+  drainage_class: string | null;
+  hydrologic_group: string | null;
+  /** Present on current site responses; optional so pre-horizon UI schemas still typecheck. */
+  horizons?: SoilHorizon[];
+};
+export type SoilData = {
+  map_units: {
+    mukey: string;
+    name: string;
+    area_symbol: string;
+    survey_updated_at: string | null;
+    components: SoilComponent[];
+  }[];
+  scope: string;
+};
 export type RoadworkData = { jurisdictions: string[]; events: { id: string; road_names: string[]; direction: string; start: string; end: string; vehicle_impact: string; description: string | null; event_status: string | null; start_verified: boolean | null; end_verified: boolean | null; source_updated_at: string | null; restrictions: { type: string; value: number | null; unit: string | null }[] }[]; scope: string };
 export type AEFSample = { point: Point; year: number; object_url: string; object_etag: string; index_sha256: string; sample_sha256: string; crs: string; row: number; col: number; pixel_size_m: number; raw: number[]; embedding: number[]; attribution: string };
 export type AEFData = { samples: AEFSample[]; scope: "annual_satellite_embedding" };
