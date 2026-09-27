@@ -7,13 +7,16 @@ import { displayPoints } from "./locations";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Db, Document, Filter } from "mongodb";
+import { fileIdentity, IdentityCache } from "@/lib/server/cache";
 import { getDb } from "@/lib/server/db";
+import { DeadlineExceeded, withDeadline } from "@/lib/server/deadline";
 import { filterNationalProjects, MAX_DATASET_PROJECTS, MAX_EXPORT, MAX_MAP_POINTS, validateGeographyFilters } from "./filters";
 import type {
   NationalCoverage,
   NationalExplorerPayload,
   NationalFilters,
   NationalGeography,
+  NationalHistoryRecord,
   NationalProject,
   NationalReference,
   NationalSource,
@@ -24,15 +27,28 @@ const DATA_DIR = resolve(process.cwd(), "..", "data", "national");
 const SOURCE_LIMIT = 2_000;
 const FACET_LIMIT = 500;
 const QUERY_TIMEOUT_MS = 5_000;
+/** One budget for every query a page issues together; per-query `maxTimeMS` alone could add up past it. */
+const TOTAL_DEADLINE_MS = 8_000;
 
 class NationalUnavailable extends Error {}
 
 const snapshotEnabled = () => process.env.NATIONAL_DATA_MODE === "snapshot" && process.env.VERCEL_ENV !== "production";
 const snapshotRejected = () => process.env.NATIONAL_DATA_MODE === "snapshot" && process.env.VERCEL_ENV === "production";
 
+// Parsed files by file identity (size + mtime): a re-published file is re-read, an unchanged one never is.
+const parsedFiles = new IdentityCache<unknown>(8);
+// Validated snapshots by the identity of all three files, and Atlas facets by release id. Both are immutable per key.
+const snapshots = new IdentityCache<Awaited<ReturnType<typeof readSnapshot>>>(2);
+const facetsByRelease = new IdentityCache<Awaited<ReturnType<typeof facets>>>(4);
+
 async function jsonFile<T>(name: string): Promise<T> {
-  return JSON.parse(await readFile(resolve(DATA_DIR, name), "utf8")) as T;
+  const path = resolve(DATA_DIR, name);
+  const identity = await fileIdentity(path);
+  return (await parsedFiles.get(identity, async () => JSON.parse(await readFile(path, "utf8")))) as T;
 }
+
+const reason = (error: unknown, fallback: string) =>
+  error instanceof NationalUnavailable ? error.message : error instanceof DeadlineExceeded ? "national database timed out" : fallback;
 
 function validGeography(value: unknown): value is NationalGeography {
   const item = value as Partial<NationalGeography> | null;
@@ -48,7 +64,7 @@ function validSources(value: unknown): value is NationalSource[] {
   });
 }
 
-function validProjects(value: unknown): value is NationalProject[] {
+function validProjects(value: unknown, requireRaw = true): value is NationalProject[] {
   const statuses = new Set(["planned", "under_construction", "proposed", "in_service", "cancelled", "unknown"]);
   return Array.isArray(value) && value.every((raw) => {
     const item = raw as Partial<NationalProject> | null;
@@ -63,7 +79,8 @@ function validProjects(value: unknown): value is NationalProject[] {
       && (!item.approximate_location || (center === null && Array.isArray(item.approximate_location.anchors)
         && item.approximate_location.anchors.length > 0
         && displayPoints(item as NationalProject).length === item.approximate_location.anchors.length))
-      && !!item.evidence && item.evidence.raw !== null && typeof item.evidence.raw === "object" && !Array.isArray(item.evidence.raw) && centerValid;
+      && !!item.evidence && (!requireRaw || (item.evidence.raw !== null && typeof item.evidence.raw === "object" && !Array.isArray(item.evidence.raw)))
+      && centerValid;
   });
 }
 
@@ -97,9 +114,9 @@ function clean<T>(doc: Document): T {
   return { ...rest, _id: id } as T;
 }
 
-async function activeNationalDb(): Promise<{ db: Db; dataset: string }> {
+async function activeNationalDb(signal?: AbortSignal): Promise<{ db: Db; dataset: string }> {
   const db = await getDb();
-  const pointer = await db.collection<{ _id: string; dataset?: string }>("meta").findOne({ _id: "national_active" }, { maxTimeMS: QUERY_TIMEOUT_MS });
+  const pointer = await db.collection<{ _id: string; dataset?: string }>("meta").findOne({ _id: "national_active" }, { maxTimeMS: QUERY_TIMEOUT_MS, signal });
   if (!pointer?.dataset) throw new NationalUnavailable("no active national dataset loaded");
   return { db, dataset: pointer.dataset };
 }
@@ -162,7 +179,7 @@ async function facets(db: Db, dataset: string) {
   const grouped = async (pipeline: Document[]) => {
     const rows = await db.collection("national_projects").aggregate<{ _id: string }>([
       { $match: { dataset } }, ...pipeline, { $group: { _id: "$value" } }, { $sort: { _id: 1 } }, { $limit: FACET_LIMIT + 1 },
-    ]).maxTimeMS(QUERY_TIMEOUT_MS).toArray();
+    ], { maxTimeMS: QUERY_TIMEOUT_MS }).toArray();
     if (rows.length > FACET_LIMIT) throw new NationalUnavailable("national filter catalog exceeds its safety bound");
     return rows.map((row) => row._id).filter((value) => typeof value === "string" && value.length > 0);
   };
@@ -181,13 +198,14 @@ async function facets(db: Db, dataset: string) {
 // Cold instances still load from Atlas. A shared cache is only needed if cold starts dominate.
 let mapCache: { dataset: string; expires: number; pending: ReturnType<typeof queryDataset> } | undefined;
 
-async function atlasQuery(filters: NationalFilters, geography: NationalGeography | null) {
-  const { db, dataset } = await activeNationalDb();
+async function atlasQuery(filters: NationalFilters, geography: NationalGeography | null, signal: AbortSignal) {
+  const { db, dataset } = await activeNationalDb(signal);
   // Only the unfiltered request used by /time and /history. New filter keys bypass by default.
   const isMapRequest = filters.page === 1 && filters.limit === 1
     && Object.keys(filters).every((key) => key === "page" || key === "limit");
-  if (!isMapRequest) return queryDataset(db, dataset, filters, geography);
+  if (!isMapRequest) return queryDataset(db, dataset, filters, geography, signal);
   if (!mapCache || mapCache.dataset !== dataset || mapCache.expires <= Date.now()) {
+    // The shared fill serves many requests, so no single caller's abort cancels it; maxTimeMS still bounds it.
     const entry = { dataset, expires: Date.now() + 5 * 60_000, pending: queryDataset(db, dataset, filters, geography) };
     mapCache = entry;
     entry.pending.catch(() => {
@@ -198,18 +216,21 @@ async function atlasQuery(filters: NationalFilters, geography: NationalGeography
   return mapCache.pending;
 }
 
-async function queryDataset(db: Db, dataset: string, filters: NationalFilters, geography: NationalGeography | null) {
+async function queryDataset(db: Db, dataset: string, filters: NationalFilters, geography: NationalGeography | null, signal?: AbortSignal) {
   const filter = mongoFilter(filters, geography, dataset);
   const offset = (filters.page - 1) * filters.limit;
+  const opts = { maxTimeMS: QUERY_TIMEOUT_MS, signal };
   const [total, locatedTotal, approximateTotal, projectDocs, mapDocs, sourceDocs, run, filterFacets] = await Promise.all([
-    db.collection("national_projects").countDocuments(filter, { maxTimeMS: QUERY_TIMEOUT_MS }),
-    db.collection("national_projects").countDocuments(locatedFilter(filter), { maxTimeMS: QUERY_TIMEOUT_MS }),
-    db.collection("national_projects").countDocuments(approximateFilter(filter), { maxTimeMS: QUERY_TIMEOUT_MS }),
-    db.collection("national_projects").find(filter).sort({ id: 1 }).skip(offset).limit(filters.limit).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
-    db.collection("national_projects").find(displayFilter(filter)).sort({ id: 1 }).limit(MAX_MAP_POINTS + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
-    db.collection("national_sources").find({ dataset }).sort({ id: 1 }).limit(SOURCE_LIMIT + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
-    db.collection("national_runs").findOne({ dataset }, { sort: { finished_at: -1, _id: -1 }, maxTimeMS: QUERY_TIMEOUT_MS }),
-    facets(db, dataset),
+    db.collection("national_projects").countDocuments(filter, opts),
+    db.collection("national_projects").countDocuments(locatedFilter(filter), opts),
+    db.collection("national_projects").countDocuments(approximateFilter(filter), opts),
+    db.collection("national_projects").find(filter, opts).sort({ id: 1 }).skip(offset).limit(filters.limit).toArray(),
+    // Full records: a point selected on the map opens the same evidence panel (raw source fields included) as a row.
+    db.collection("national_projects").find(displayFilter(filter), opts).sort({ id: 1 }).limit(MAX_MAP_POINTS + 1).toArray(),
+    db.collection("national_sources").find({ dataset }, opts).sort({ id: 1 }).limit(SOURCE_LIMIT + 1).toArray(),
+    db.collection("national_runs").findOne({ dataset }, { ...opts, sort: { finished_at: -1, _id: -1 } }),
+    // A release never changes after it is published, so its filter catalog is computed once per dataset id.
+    facetsByRelease.get(dataset, () => facets(db, dataset)),
   ]);
   if (sourceDocs.length > SOURCE_LIMIT) throw new NationalUnavailable("active national source catalog exceeds the explorer safety bound");
   const projects = projectDocs.map((doc) => clean<NationalProject>(doc));
@@ -225,17 +246,42 @@ async function queryDataset(db: Db, dataset: string, filters: NationalFilters, g
   };
 }
 
-async function fileSnapshot() {
-  const [projects, sources, coverage] = await Promise.all([
-    jsonFile<unknown>("projects.json"), jsonFile<unknown>("sources.json"), jsonFile<unknown>("coverage.json"),
-  ]);
+
+async function readSnapshot(projects: unknown, sources: unknown, coverage: unknown) {
   if (!validProjects(projects) || !validSources(sources) || !validCoverage(coverage)) {
     throw new NationalUnavailable("committed national snapshot failed its public shape check");
   }
   if (projects.length > MAX_DATASET_PROJECTS || sources.length > SOURCE_LIMIT) {
     throw new NationalUnavailable("committed national snapshot exceeds the explorer safety bound");
   }
-  return { dataset: "committed-snapshot", projects, sources, coverage };
+  return {
+    dataset: "committed-snapshot", projects, sources, coverage,
+    facets: {
+      planningRegions: values(projects.map((project) => project.planning_region)),
+      owners: values(projects.flatMap((project) => [project.owner, ...project.other_owners])),
+      statuses: [...new Set(projects.map((project) => project.status_group))].sort(),
+    },
+  };
+}
+
+/** The committed snapshot, validated once per identity of its three files. Callers must not mutate the result. */
+async function fileSnapshot() {
+  const names = ["projects.json", "sources.json", "coverage.json"];
+  const identity = (await Promise.all(names.map((name) => fileIdentity(resolve(DATA_DIR, name))))).join("|");
+  return snapshots.get(identity, async () => {
+    const [projects, sources, coverage] = await Promise.all(names.map((name) => jsonFile<unknown>(name)));
+    return readSnapshot(projects, sources, coverage);
+  });
+}
+
+/** Readiness for /api/health when the committed snapshot serves national data: its dataset, or why not. */
+export async function nationalSnapshotReadiness(): Promise<{ enabled: boolean; ready: boolean; release: string | null }> {
+  if (!snapshotEnabled()) return { enabled: false, ready: false, release: null };
+  try {
+    return { enabled: true, ready: true, release: (await fileSnapshot()).dataset };
+  } catch {
+    return { enabled: true, ready: false, release: null };
+  }
 }
 
 function unavailable(reference: NationalReference, filters: NationalFilters, reason: string, invalidQuery = false): NationalExplorerPayload {
@@ -247,9 +293,11 @@ function unavailable(reference: NationalReference, filters: NationalFilters, rea
   };
 }
 
-const values = (items: (string | null)[]) => [...new Set(items.filter((item): item is string => !!item))].sort((a, b) => a.localeCompare(b));
+function values(items: (string | null)[]) {
+  return [...new Set(items.filter((item): item is string => !!item))].sort((a, b) => a.localeCompare(b));
+}
 
-export async function loadNationalExplorer(filters: NationalFilters): Promise<NationalExplorerPayload> {
+export async function loadNationalExplorer(filters: NationalFilters, signal?: AbortSignal): Promise<NationalExplorerPayload> {
   const reference = await loadNationalReference();
   const geographyIssue = validateGeographyFilters(filters, reference.geography);
   if (geographyIssue) return unavailable(reference, filters, geographyIssue, reference.geography !== null);
@@ -268,14 +316,10 @@ export async function loadNationalExplorer(filters: NationalFilters): Promise<Na
         projects: filtered.slice(offset, offset + filters.limit), mapProjects: mapped.slice(0, MAX_MAP_POINTS),
         total: filtered.length, locatedTotal: located.length, approximateTotal, unlocatedTotal: filtered.length - located.length - approximateTotal,
         page: filters.page, limit: filters.limit, mapTruncated: mapped.length > MAX_MAP_POINTS,
-        facets: {
-          planningRegions: values(source.projects.map((project) => project.planning_region)),
-          owners: values(source.projects.flatMap((project) => [project.owner, ...project.other_owners])),
-          statuses: [...new Set(source.projects.map((project) => project.status_group))].sort(),
-        },
+        facets: source.facets,
       };
     }
-    const source = await atlasQuery(filters, reference.geography);
+    const source = await withDeadline("national explorer", TOTAL_DEADLINE_MS, (inner) => atlasQuery(filters, reference.geography, inner), signal);
     return {
       ...reference, sources: source.sources, coverage: source.coverage,
       available: true, mode: "atlas", dataset: source.dataset, filters,
@@ -285,12 +329,11 @@ export async function loadNationalExplorer(filters: NationalFilters): Promise<Na
       page: filters.page, limit: filters.limit, mapTruncated: source.mapTruncated, facets: source.facets,
     };
   } catch (error) {
-    const reason = error instanceof NationalUnavailable ? error.message : "national database unavailable";
-    return unavailable(reference, filters, reason);
+    return unavailable(reference, filters, reason(error, "national database unavailable"));
   }
 }
 
-export async function loadNationalExport(filters: NationalFilters): Promise<NationalExplorerPayload> {
+export async function loadNationalExport(filters: NationalFilters, signal?: AbortSignal): Promise<NationalExplorerPayload> {
   const reference = await loadNationalReference();
   const geographyIssue = validateGeographyFilters(filters, reference.geography);
   if (geographyIssue) return unavailable(reference, filters, geographyIssue, reference.geography !== null);
@@ -307,19 +350,24 @@ export async function loadNationalExport(filters: NationalFilters): Promise<Nati
       ({ sources, coverage, dataset } = source);
       mode = "snapshot";
     } else {
-      const active = await activeNationalDb();
-      dataset = active.dataset;
-      const filter = mongoFilter(filters, reference.geography, dataset);
-      const [docs, sourceDocs, run] = await Promise.all([
-        active.db.collection("national_projects").find(filter).sort({ id: 1 }).limit(MAX_EXPORT + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
-        active.db.collection("national_sources").find({ dataset }).sort({ id: 1 }).limit(SOURCE_LIMIT + 1).maxTimeMS(QUERY_TIMEOUT_MS).toArray(),
-        active.db.collection("national_runs").findOne({ dataset }, { sort: { finished_at: -1, _id: -1 }, maxTimeMS: QUERY_TIMEOUT_MS }),
-      ]);
-      projects = docs.map((doc) => clean<NationalProject>(doc));
-      sources = sourceDocs.map((doc) => clean<NationalSource>(doc));
-      const candidate = run?.coverage ?? run?.counts?.coverage ?? null;
-      coverage = validCoverage(candidate) ? candidate : null;
       mode = "atlas";
+      ({ projects, sources, coverage, dataset } = await withDeadline("national export", TOTAL_DEADLINE_MS, async (inner) => {
+        const active = await activeNationalDb(inner);
+        const filter = mongoFilter(filters, reference.geography, active.dataset);
+        const opts = { maxTimeMS: QUERY_TIMEOUT_MS, signal: inner };
+        const [docs, sourceDocs, run] = await Promise.all([
+          active.db.collection("national_projects").find(filter, opts).sort({ id: 1 }).limit(MAX_EXPORT + 1).toArray(),
+          active.db.collection("national_sources").find({ dataset: active.dataset }, opts).sort({ id: 1 }).limit(SOURCE_LIMIT + 1).toArray(),
+          active.db.collection("national_runs").findOne({ dataset: active.dataset }, { ...opts, sort: { finished_at: -1, _id: -1 } }),
+        ]);
+        const candidate = run?.coverage ?? run?.counts?.coverage ?? null;
+        return {
+          dataset: active.dataset,
+          projects: docs.map((doc) => clean<NationalProject>(doc)),
+          sources: sourceDocs.map((doc) => clean<NationalSource>(doc)),
+          coverage: validCoverage(candidate) ? candidate : null,
+        };
+      }, signal));
     }
     if (projects.length > MAX_EXPORT) return unavailable(reference, filters, `Export is limited to ${MAX_EXPORT.toLocaleString("en-US")} filtered records.`);
     const located = projects.filter((project) => project.center !== null);
@@ -331,7 +379,69 @@ export async function loadNationalExport(filters: NationalFilters): Promise<Nati
       mapTruncated: false, facets: { planningRegions: [], owners: [], statuses: [] },
     };
   } catch (error) {
-    return unavailable(reference, filters, error instanceof NationalUnavailable ? error.message : "national database unavailable");
+    return unavailable(reference, filters, reason(error, "national database unavailable"));
+  }
+}
+
+/** Fields History reads. The raw source row stays out: History cites the source by locator, it does not reprint it. */
+const HISTORY_PROJECTION = { "evidence.raw": 0 } as const;
+
+const withoutRaw = (project: NationalProject): NationalHistoryRecord => {
+  const { raw: _raw, ...evidence } = project.evidence;
+  void _raw;
+  return { ...project, evidence };
+};
+
+export interface NationalRecords {
+  available: boolean;
+  mode: NationalExplorerPayload["mode"];
+  dataset: string | null;
+  /** Every filtered record, located or not, up to MAX_DATASET_PROJECTS. */
+  projects: NationalHistoryRecord[];
+  sources: NationalSource[];
+  /** Filtered records in the dataset; more than `projects.length` only when `truncated`. */
+  total: number;
+  truncated: boolean;
+  reason: string | null;
+}
+
+/** The whole filtered national dataset for History's ledger: documented events do not need a map position, so this
+ * does not stop at the located subset the map draws. Bounded, and says so when the bound is reached. */
+export async function loadNationalRecords(filters: Partial<NationalFilters> = {}, signal?: AbortSignal): Promise<NationalRecords> {
+  const full: NationalFilters = { page: 1, limit: 1, ...filters };
+  const none = (mode: NationalRecords["mode"], why: string): NationalRecords =>
+    ({ available: false, mode, dataset: null, projects: [], sources: [], total: 0, truncated: false, reason: why });
+  if (snapshotRejected()) return none("unavailable", "Committed national project snapshots are disabled in production.");
+  try {
+    const reference = await loadNationalReference();
+    const geographyIssue = validateGeographyFilters(full, reference.geography);
+    if (geographyIssue) return none("unavailable", geographyIssue);
+    if (snapshotEnabled()) {
+      const source = await fileSnapshot();
+      const filtered = filterNationalProjects(source.projects, full, reference.geography);
+      return {
+        available: true, mode: "snapshot", dataset: source.dataset, sources: source.sources,
+        projects: filtered.slice(0, MAX_DATASET_PROJECTS).map(withoutRaw), total: filtered.length,
+        truncated: filtered.length > MAX_DATASET_PROJECTS, reason: null,
+      };
+    }
+    return await withDeadline("national history", TOTAL_DEADLINE_MS, async (inner) => {
+      const { db, dataset } = await activeNationalDb(inner);
+      const filter = mongoFilter(full, reference.geography, dataset);
+      const opts = { maxTimeMS: QUERY_TIMEOUT_MS, signal: inner };
+      const [total, docs, sourceDocs] = await Promise.all([
+        db.collection("national_projects").countDocuments(filter, opts),
+        db.collection("national_projects").find(filter, { ...opts, projection: HISTORY_PROJECTION }).sort({ id: 1 }).limit(MAX_DATASET_PROJECTS).toArray(),
+        db.collection("national_sources").find({ dataset }, opts).sort({ id: 1 }).limit(SOURCE_LIMIT + 1).toArray(),
+      ]);
+      if (sourceDocs.length > SOURCE_LIMIT) throw new NationalUnavailable("active national source catalog exceeds the history safety bound");
+      const projects = docs.map((doc) => clean<NationalHistoryRecord>(doc));
+      const sources = sourceDocs.map((doc) => clean<NationalSource>(doc));
+      if (!validProjects(projects, false) || !validSources(sources)) throw new NationalUnavailable("active national records failed their public shape check");
+      return { available: true, mode: "atlas" as const, dataset, projects, sources, total, truncated: total > projects.length, reason: null };
+    }, signal);
+  } catch (error) {
+    return none("unavailable", reason(error, "national database unavailable"));
   }
 }
 

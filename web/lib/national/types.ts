@@ -62,6 +62,9 @@ export interface NationalProject {
   };
 }
 
+/** A national record as History receives it: everything but the raw source row, which History cites by locator. */
+export type NationalHistoryRecord = Omit<NationalProject, "evidence"> & { evidence: Omit<NationalProject["evidence"], "raw"> };
+
 /** Additive C23 publication evidence; the pipeline controls confirmation. */
 export interface LocationEvidenceSource {
   publisher: string;
