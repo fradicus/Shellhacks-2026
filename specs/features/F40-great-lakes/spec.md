@@ -32,6 +32,9 @@ its location bar is relaxed only through C26's labeled candidate tier. Do not ed
 
 - Output `data/greatlakes/projects.json` (national-project schema, `_id` `<source>:<native id>`, new IDs only) and
   `data/greatlakes/sources.json` (publisher, URL, vintage, retrieval UTC, SHA-256, rights).
+- A transmission owner's own public project-map coordinate for a named project (e.g. AEP Transmission's state maps)
+  is also a candidate: `basis: source_point`, evidence naming the map file and marker, precision unstated. It is
+  stronger than a name match but still unreviewed, never `confirmed`.
 - Candidate centers use `location_review: "unreviewed"` and an additive `location_candidate` field with facility
   ID(s), dataset, normalized name, corroborating fields and endpoint role. Never `confirmed`.
 - Raw downloads stay outside the checkout. OSM use carries ODbL attribution. Do not bypass access controls.

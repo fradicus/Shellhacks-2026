@@ -1,0 +1,776 @@
+[
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.1",
+    "native_id": "ohio/Astor-EastBroad",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.3",
+    "native_id": "ohio/MillbrookPark-SouthPoint",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.4",
+    "native_id": "ohio/SoutheastColumbus",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.7",
+    "native_id": "ohio/Bluffton",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.8",
+    "native_id": "ohio/Hillsboro-Portsmouth",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.9",
+    "native_id": "ohio/NorthNewark-SharpRoad",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.12",
+    "native_id": "ohio/Barnesville-Summerfield",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.18",
+    "native_id": "ohio/BellRidge-Devola",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.18",
+    "native_id": "ohio/Lamping-Rouse",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.18",
+    "native_id": "ohio/LampingSubstation",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.18",
+    "native_id": "ohio/Macksburg-Devola",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.37",
+    "native_id": "ohio/Dunkirk-Berwick",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.39",
+    "native_id": "ohio/NewLiberty-EastLeipsic",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.46",
+    "native_id": "ohio/Haviland-SouthHicksville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.48",
+    "native_id": "ohio/Hemlock-Bryson",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.51",
+    "native_id": "ohio/Lamping-Woodsfield",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.53",
+    "native_id": "ohio/Lott",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.58",
+    "native_id": "ohio/Parlett-SouthCadiz",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.59",
+    "native_id": "ohio/Pickaway-Madison",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.60",
+    "native_id": "ohio/Rarden-Rosemount",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.61",
+    "native_id": "ohio/Republic-Tiffin",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.62",
+    "native_id": "ohio/Roselms-Kalida",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.64",
+    "native_id": "ohio/Senecaville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.65",
+    "native_id": "ohio/StClairsville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.66",
+    "native_id": "ohio/Stuart-Seaman",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.68",
+    "native_id": "ohio/Sycamore-Bucyrus",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.70",
+    "native_id": "ohio/WestUnion",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.71",
+    "native_id": "ohio/Holmes",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.72",
+    "native_id": "ohio/SouthCoshocton",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.74",
+    "native_id": "ohio/Bucyrus-EastBucyrus",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.75",
+    "native_id": "ohio/Wheelersburg",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.76",
+    "native_id": "ohio/Stillwell",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.78",
+    "native_id": "ohio/EastLogan-SouthLancaster",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.79",
+    "native_id": "ohio/Millwood",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.80",
+    "native_id": "ohio/NELima-ColumbusGrove",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.81",
+    "native_id": "ohio/Holmes2",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.82",
+    "native_id": "ohio/Zoarville-Atwood",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.83",
+    "native_id": "ohio/WestWatertown",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.84",
+    "native_id": "ohio/MountVernon",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.85",
+    "native_id": "ohio/Philo",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.86",
+    "native_id": "ohio/BlackDiamond",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.87",
+    "native_id": "ohio/Millwood-Howard",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.88",
+    "native_id": "ohio/SouthGreenwich-NewLondon",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.89",
+    "native_id": "indiana/fortwayne-hicksville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.90",
+    "native_id": "ohio/Shadyside",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.91",
+    "native_id": "ohio/Grace",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.92",
+    "native_id": "ohio/GreenChapel",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.93",
+    "native_id": "ohio/Morse-Gahanna-EastBroad",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.94",
+    "native_id": "ohio/Fostoria-ELima",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.95",
+    "native_id": "ohio/Athens",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.97",
+    "native_id": "ohio/JeromeExtension",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.98",
+    "native_id": "ohio/Howard-Fostoria",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.101",
+    "native_id": "ohio/Elgin",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.102",
+    "native_id": "ohio/Celtic",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.103",
+    "native_id": "ohio/vanwert-haviland",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.104",
+    "native_id": "ohio/LancasterMillersport",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.106",
+    "native_id": "ohio/LancasterArea",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.108",
+    "native_id": "ohio/hayden-roberts",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.109",
+    "native_id": "ohio/NorthColumbus",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.110",
+    "native_id": "ohio/NorthPortsmouth",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.111",
+    "native_id": "ohio/Delphos",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.112",
+    "native_id": "ohio/allen-maddox",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.113",
+    "native_id": "ohio/Souder",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.114",
+    "native_id": "ohio/Blackburn",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.115",
+    "native_id": "ohio/fortsteuben-hammondsville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.116",
+    "native_id": "ohio/conesvillebixby",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.117",
+    "native_id": "ohio/northbaltimore-portage",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.118",
+    "native_id": "ohio/HuntleyExtension",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.119",
+    "native_id": "ohio/Sowers-Lockwood",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.120",
+    "native_id": "ohio/BeattyStuart",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.121",
+    "native_id": "ohio/Marysville-Hyatt",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.122",
+    "native_id": "ohio/Kiber",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.123",
+    "native_id": "ohio/brysoncoolville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.124",
+    "native_id": "ohio/fultonham",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.125",
+    "native_id": "ohio/SouthCoshocton-Wooster",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.126",
+    "native_id": "ohio/Beatty-Canal",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.127",
+    "native_id": "ohio/Hopetown",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.128",
+    "native_id": "ohio/petros",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.129",
+    "native_id": "ohio/Patina-Mirkwood",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.130",
+    "native_id": "ohio/Lyka",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.131",
+    "native_id": "ohio/PiketonArea",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.132",
+    "native_id": "ohio/EastCambridge-Newcomerstown",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.133",
+    "native_id": "ohio/Maliszewski-Corridor",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.134",
+    "native_id": "ohio/kiwi",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.135",
+    "native_id": "ohio/MaddoxCreek-Norse",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.136",
+    "native_id": "ohio/Chickamauga-Addison",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "ohio-map-setup.json#markers.137",
+    "native_id": "ohio/Conesvillewmp",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.1",
+    "native_id": "indiana/Anderson",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.7",
+    "native_id": "indiana/FortWayneBluffton",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.10",
+    "native_id": "indiana/HamiltonButler",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.14",
+    "native_id": "indiana/KenmoreUnderground",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.15",
+    "native_id": "indiana/Leesburg-Covington",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.26",
+    "native_id": "indiana/SouthernMishawaka",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.28",
+    "native_id": "indiana/WesternFortWayne",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.30",
+    "native_id": "indiana/WhitleyCounty",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.31",
+    "native_id": "indiana/Winchester",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.34",
+    "native_id": "indiana/Wiremill",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.38",
+    "native_id": "indiana/EastAllenCounty",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.41",
+    "native_id": "indiana/TillotsonAvenue",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.42",
+    "native_id": "indiana/pettit-larez",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.43",
+    "native_id": "indiana/WallenRoad",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.44",
+    "native_id": "indiana/centralfortwayne",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.47",
+    "native_id": "indiana/EastElkhart",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.48",
+    "native_id": "indiana/SouthBend-Niles",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "indiana-map-setup.json#markers.49",
+    "native_id": "indiana/fortwayne-hicksville",
+    "reason": "same project page as aep-transmission-projects:indiana/fortwayne-hicksville"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.50",
+    "native_id": "indiana/aboitecenter-illinois",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.51",
+    "native_id": "indiana/AlbionTriLakes",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.53",
+    "native_id": "indiana/Markle",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.54",
+    "native_id": "indiana/Anderson-Elwood",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.55",
+    "native_id": "indiana/Olive-Reynolds",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.56",
+    "native_id": "indiana/allenzodiac",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.57",
+    "native_id": "indiana/EasternMelita",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.58",
+    "native_id": "indiana/Elcona",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.59",
+    "native_id": "indiana/Greentown-Sorenson",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.60",
+    "native_id": "indiana/Lulu-Sorenson",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.61",
+    "native_id": "indiana/EastIndianaGridReliability",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.62",
+    "native_id": "indiana/Olive-UniParkTowerRaise",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "indiana-map-setup.json#markers.63",
+    "native_id": "indiana/Batesville",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.10",
+    "native_id": "michigan/SouthCassCounty",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.11",
+    "native_id": "michigan/NilesArea",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.12",
+    "native_id": "michigan/HartfordMichigan",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.13",
+    "native_id": "michigan/BentonHarborRiverside",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.14",
+    "native_id": "michigan/FourFlag",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.15",
+    "native_id": "michigan/buchanan-bridgman",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "michigan-map-setup.json#markers.16",
+    "native_id": "indiana/SouthBend-Niles",
+    "reason": "same project page as aep-transmission-projects:indiana/SouthBend-Niles"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.17",
+    "native_id": "michigan/NewBuffalo-Bridgman",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.18",
+    "native_id": "michigan/BentonHarbor",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.19",
+    "native_id": "michigan/BentonHarborArea",
+    "reason": "project listed on AEP's state project map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "michigan-map-setup.json#markers.20",
+    "native_id": "michigan/Kalamazoo-Vicksburg",
+    "reason": "project listed on AEP's state project map"
+  }
+]

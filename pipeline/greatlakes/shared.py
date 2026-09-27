@@ -22,7 +22,7 @@ OVERPASS_URLS = ["https://overpass-api.de/api/interpreter", "https://maps.mail.r
 MAX_BYTES = 16 * 1024 * 1024
 OUT = REPO_ROOT / "data" / "greatlakes"
 # Fixed publication order (C26): each state's projects are appended to data/greatlakes/projects.json.
-STATES = ["mn", "wi", "miso", "ny"]
+STATES = ["mn", "wi", "miso", "ny", "aep"]
 # Operator-name fragments per utility, matched against the OSM operator tag.
 OPERATOR_KEYS = {
     "XEL": ["XCEL", "NORTHERN STATES"], "XCEL": ["XCEL", "NORTHERN STATES"], "GRE": ["GREAT RIVER"],

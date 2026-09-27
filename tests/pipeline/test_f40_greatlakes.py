@@ -132,3 +132,23 @@ def test_nyiso_columns_terminals_and_owners():
     assert terminal("CT State Line", in_service=False) is None
     assert terminal("TBD", in_service=False) is None
     assert operator_keys("NYPA/NGRID") == ["NYPA", "NEW YORK POWER AUTHORITY", "NATIONAL GRID", "NIAGARA MOHAWK"]
+
+
+def test_aep_status_reads_only_plain_statements():
+    import re
+
+    from greatlakes.aep import FINISHED, FUTURE, PENDING, UNDERWAY, describe
+
+    def status(update):
+        sentences = re.split(r"(?<=[.!?])\s+", update)
+        if any(FINISHED.search(s) and not FUTURE.search(s) for s in sentences) and not PENDING.search(update):
+            return "in_service"
+        return "under_construction" if any(UNDERWAY.search(s) for s in sentences) else "legend"
+
+    assert status("Crews have completed construction of the line and placed it in service.") == "in_service"
+    assert status("Construction is underway and is expected to conclude by early 2027.") == "under_construction"
+    assert status("Construction is expected to be complete in 2027.") == "legend"
+    assert status("Clearing to prepare for construction on Niles Central begins in January. "
+                  "All components of Niles North are now in service.") == "legend"
+    text = "Menu X Project AEP plans a rebuild. Project Updates Fall 2026: Construction is underway. Summer 2026: Prep."
+    assert describe(text, "X Project") == ("AEP plans a rebuild.", "Fall 2026: Construction is underway.")

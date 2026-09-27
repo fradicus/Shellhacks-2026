@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "aep-transmission-projects",
+    "artifacts": [
+      {
+        "bytes": 10598,
+        "file": "indiana-map-setup.json",
+        "retrieved_at": "2026-09-27T04:01:28Z",
+        "sha256": "27400a1b8669fb40ad9d661786415efd01872cc2f1bf8ba2db9d07a21816b99f",
+        "url": "https://www.aeptransmission.com/indiana/geojson/map-setup.json"
+      },
+      {
+        "bytes": 4206,
+        "file": "michigan-map-setup.json",
+        "retrieved_at": "2026-09-27T04:02:20Z",
+        "sha256": "0b33a02b7bd6fc3184bdbce0688ec8ada5b09af77df28d119a231e83a4de8075",
+        "url": "https://www.aeptransmission.com/michigan/geojson/map-setup.json"
+      },
+      {
+        "bytes": 30314,
+        "file": "ohio-map-setup.json",
+        "retrieved_at": "2026-09-27T03:59:13Z",
+        "sha256": "33ddd80a4ab1371330aff40f9142797b924d011664ce1423dba12fd19d85ca1c",
+        "url": "https://www.aeptransmission.com/ohio/geojson/map-setup.json"
+      }
+    ],
+    "note": "Legend colors: yellow = pending regulatory approval, green = regulatory approved & additional projects. Marker coordinates are AEP's; their placement method is not stated.",
+    "project_pages": 129,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "rights": "Public website; AEP terms of use",
+    "title": "AEP Transmission state project maps and project pages (Ohio, Indiana, Michigan)",
+    "vintage": "live site, retrieved date"
+  }
+]
