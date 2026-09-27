@@ -10,7 +10,6 @@ export const ROUTES = [
   { href: "/", label: "Home" },
   { href: "/time", label: "Overlaps" },
   { href: "/history", label: "History" },
-  { href: "/map", label: "Project map" },
   { href: "/explore", label: "National explorer" },
   { href: "/operations", label: "Field planning" },
   { href: "/changes", label: "Filing changes" },
@@ -51,13 +50,6 @@ export function Nav() {
           ))}
         </ul>
       </nav>
-      <span className={styles.scope} aria-hidden="true">
-        <i style={{ background: "var(--desc)" }} />
-        DESC
-        <b>×</b>
-        <i style={{ background: "var(--gpc)" }} />
-        GPC
-      </span>
     </header>
   );
 }

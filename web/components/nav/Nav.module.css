@@ -103,33 +103,7 @@
   border-radius: 6px;
 }
 
-.scope {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-left: auto;
-  flex: none;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.1em;
-  color: var(--text-3);
-}
-
-.scope i {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-}
-
-.scope b {
-  font-weight: 400;
-  margin: 0 2px;
-}
-
 @media (max-width: 900px) {
-  .scope {
-    display: none;
-  }
   .bar {
     gap: 10px;
     padding: 0 0 0 12px;
