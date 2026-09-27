@@ -155,7 +155,7 @@ export function SiteFactors({ points, pairLabel, projects }: { points: SitePoint
         <label>Longitude<input inputMode="decimal" value={manual.lon} onChange={(e) => setManual({ ...manual, lon: e.target.value })} placeholder="-81.03" maxLength={12} /></label>
         <Button onClick={checkManual}>Check point</Button>
       </div>
-      {!points.length && <p className={s.muted}>{pairLabel ? "Neither project in this pair has a located center, so enter a point." : "Tip: attach a project pair at the bottom of the page to add its project centers here."}</p>}
+      {!points.length && <p className={s.muted}>{pairLabel ? "Neither project in this pair has a located center, so enter a point." : "Attach a project pair above to drop its centers onto this map."}</p>}
       {manualError && <p className={s.error} role="alert">{manualError}</p>}
       {point && <p className={s.muted} aria-live="polite">{loading ? `Checking ${point.label} (${point.lat.toFixed(5)}, ${point.lon.toFixed(5)})…` : `${point.label}: ${point.lat.toFixed(5)}, ${point.lon.toFixed(5)}`}</p>}
       {[siteError, waterError].filter(Boolean).map((e) => <p key={e} className={s.warning} role="alert">{e} The worksheet below still works with your own inputs.</p>)}
