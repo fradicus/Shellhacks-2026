@@ -153,29 +153,3 @@ meaning one thing only: the filed in-service date of a project you are looking a
 
 Use summaries for initial rendering and load dataset-pinned evidence on selection.
 See [F19 compact payload](../../decisions/F19-compact-payload.md) for acceptance.
-
-## State fills and legend (2026-09-27)
-
-Decision: [F19 state fill](../../decisions/F19-state-fill.md).
-
-22. **State fills.** Every state and DC is filled under the labels and the time layer, from the Census Bureau's
-    generalized 1:20M state boundaries (TIGERweb `Generalized_ACS2025/State_County` layer 9), committed byte-for-byte
-    as `web/components/time/usStates.json` with its query, retrieval time and SHA-256 in `usStates.source.json`.
-    Two modes, switched under **States** in the legend:
-    - **Map** (the default): an atlas's colors from a fixed six-color palette, so no two states sharing a border
-      match. Neighbors are derived from shared border vertices in the committed file; the colors carry no data and
-      the legend says so.
-    - **Density**: drawn projects per state (a project filed in two states counts in both), faint to teal on a
-      square-root scale, with the ramp's 0 and maximum in the legend. States with none drawn stay faint.
-    A region or state scope keeps its own states filled and dims every other state; a plan or pin scope leaves the
-    fills as they are. The fills never change a point, pair, date or tier.
-23. **Legend lists what is drawn.** Point colors first, each with its drawn count: location tiers (tentative drawn
-    as a ring, as on the map) and legacy owners, only those with at least one drawn project. Then the shapes on
-    screen: exact date, month-or-year span (when any), today's sheet, the pair's day gap (only with a pair selected)
-    and the out-of-scope trace (only with a scope). Then the States key. Long explanations are tooltips.
-
-### Validation (state fills)
-- `node --import ./tests/web/operations-providers/loader.mjs --test web/components/time/stateFill.test.ts`: 51
-  features, no shared border vertex between two states of one color, colors spread across the palette.
-- `shasum -a 256 web/components/time/usStates.json` matches `usStates.source.json`.
-- Screenshots at 1440 (Map and Density, 2D and 3D, a region scope) and 390.
