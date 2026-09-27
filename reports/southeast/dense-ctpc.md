@@ -1,4 +1,4 @@
-# Dense Southeast: CTPC Collaborative Transmission Plans (C40)
+# Dense Southeast: CTPC Collaborative Transmission Plans (C45)
 
 Source: the Carolinas Transmission Planning Collaborative (formerly NCTPC) reference library,
 <https://carolinastpc.org/reference/>. Public PDFs, no login; the plans are not the CEII-marked study reports.
@@ -33,7 +33,7 @@ as an owner-ID project would be excluded as a likely duplicate (no row triggered
 shares no word with the newest name for its ID is not linked: E220378 appears on the Asheboro–Siler City row in the
 2025 mid-year update but is Durham–RTP everywhere else; 0043 is unnamed in 2017.
 
-**Locations.** C40 OSM candidates over NC+SC substations combined; `states` come from the matched facility.
+**Locations.** C45 OSM candidates over NC+SC substations combined; `states` come from the matched facility.
 Operator keys DEC → DUKE, DEP → DUKE/PROGRESS. Added guards: a DEC match to a Progress-operated facility (or DEP to
 "Duke Energy Carolinas") is an operator conflict; a name-only match whose OSM voltages exclude the project's voltage
 is a voltage conflict. VEPCO/SCEG terminals match only a facility operated by Dominion (Everetts matched).

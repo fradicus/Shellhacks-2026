@@ -3,7 +3,7 @@
 Each annual Collaborative Transmission Plan (and mid-year update) lists the major DEC/DEP projects with an ID,
 name, owner, status, projected in-service date and cost. The newest edition supplies current projects; older
 editions add one planned_milestone per changed projected date, and in-service projects the newer editions no
-longer list. Locations are C40 OSM name candidates over NC and SC substations combined (the DEC/DEP footprint);
+longer list. Locations are C45 OSM name candidates over NC and SC substations combined (the DEC/DEP footprint);
 none is independently reviewed.
 
 From pipeline/:
@@ -161,7 +161,7 @@ def clean_name(name: str, tie: bool = False) -> str:
 
 
 def place(name: str, owner: str, facilities: list[dict], state_of: dict[str, str]) -> tuple[dict | None, dict, list]:
-    """C40 candidate over NC+SC facilities; the project's states are the matched facilities' states."""
+    """C45 candidate over NC+SC facilities; the project's states are the matched facilities' states."""
     facility = clean_name(name)
     center, candidate = locate(facility, None, facilities, OWNERS[owner][1])
     if center is None and clean_name(name, tie=True) != facility:
@@ -342,7 +342,7 @@ def build(cache: Path) -> dict:
             "vintage": edition, "retrieved_at": item["retrieved_at"], "sha256": item["sha256"],
             "public_status": "verified_public", "import_status": "imported", "access_policy": "public_document",
             "planning_region": "ctpc", "states": sorted({s for p in mine for s in p["states"]}), "project_count": kept,
-            "notes": ["F39 dense Southeast (C40). Locations are unreviewed OSM name candidates over NC and SC "
+            "notes": ["F39 dense Southeast (C45). Locations are unreviewed OSM name candidates over NC and SC "
                       "substations; none is independently confirmed. Source-bounded major-project listing, not "
                       "statewide coverage."]
             + ([] if edition == NEWEST else ["Only in-service projects no newer edition lists are imported; other "

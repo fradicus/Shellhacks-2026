@@ -1,4 +1,4 @@
-"""F39/C40 CTPC batch: listing-row parser, name cleaning, location guards and dated events.
+"""F39/C45 CTPC batch: listing-row parser, name cleaning, location guards and dated events.
 
 Fixture rows and facilities are explicit test inputs (IDs X000001.., places Alpha/Beta/...), not real projects.
 """
