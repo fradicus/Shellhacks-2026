@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const PAGE_SIZE = 50;
-export const RULE = "national-provisional-25mi-v1";
+export const RULE = "national-drive-25mi-v1";
 const fields = z.object({
   dataset: z.string().regex(/^[a-zA-Z0-9._:-]{1,128}$/),
   scope: z.string().max(160).optional(),

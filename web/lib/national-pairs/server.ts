@@ -8,9 +8,16 @@ import { PAGE_SIZE, RULE, pairFilter, type PairQuery } from "./query";
 
 const TIMEOUT = 5000;
 const MAX_SEARCH_PROJECTS = 10_000;
+
+const point = z.object({ lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) });
 const pair = z.object({
   id: z.string().regex(/^npc:[a-f0-9]{32}$/), a: z.string().min(1), b: z.string().min(1),
-  distance_mi: z.number().min(0).lt(25), time_gap_days: z.number().int().min(0).nullable(),
+  distance_mi: z.number().min(0).max(25), drive_mi: z.number().min(0).max(25),
+  route: z.object({
+    polyline: z.string().min(1), start: point.nullable(), end: point.nullable(),
+    provider: z.string(), data_source: z.string(), computed_at: z.string(),
+  }),
+  time_gap_days: z.number().int().min(0).nullable(),
   band: z.union([z.literal(0), z.literal(1)]), rank: z.number().int().positive(),
   tier: z.enum(["confirmed", "official", "tentative"]), rule_version: z.literal(RULE),
   identity_version: z.string().min(1),

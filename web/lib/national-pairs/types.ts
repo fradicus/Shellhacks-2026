@@ -5,6 +5,15 @@ export interface CandidatePair {
   a: string;
   b: string;
   distance_mi: number;
+  drive_mi: number;
+  route: {
+    polyline: string;
+    start: { lat: number; lon: number } | null;
+    end: { lat: number; lon: number } | null;
+    provider: string;
+    data_source: string;
+    computed_at: string;
+  };
   time_gap_days: number | null;
   band: 0 | 1;
   rank: number;

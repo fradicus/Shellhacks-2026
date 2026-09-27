@@ -9,10 +9,12 @@ from math import cos, floor, isfinite, radians, sin
 from pathlib import Path
 from typing import Any
 
-from common import REPO_ROOT, load_json
-from matches.core import EARTH_RADIUS_MI, haversine_mi, priority_sort, time_gap_days
+from common import REPO_ROOT, load_json, match_id
+from matches.core import EARTH_RADIUS_MI, NEAR_BAND_MI, haversine_mi, priority_sort, time_gap_days
+from matches.routes import Candidate, drives_for, load_routes, route_summary
 
-RULE = "national-provisional-25mi-v1"
+RULE = "national-drive-25mi-v1"
+ROUTES = Path("data/national_pairs/routes.json")
 LIMIT_MI = 25.0
 COLLECTION = "national_candidate_pairs"
 MAX_PAIRS = 100_000  # fail publication explicitly rather than truncate the candidate universe
@@ -84,7 +86,8 @@ def cell(p: dict) -> tuple[int, int, int]:
     return tuple(floor(EARTH_RADIUS_MI * v / CELL) for v in xyz)
 
 
-def generate(snapshot: dict, ledger: dict | None = None, root: Path = REPO_ROOT) -> dict[str, Any]:
+def candidates(snapshot: dict, ledger: dict | None = None, root: Path = REPO_ROOT) -> dict[str, Any]:
+    """Straight-line prefilter: every cross-owner pair within 25 straight-line miles (inclusive), straight-line ranked."""
     ledger = ledger if ledger is not None else load_json(root / "data/national_pairs/owners.json")
     owners = owner_index(ledger)
     regions = {s["state_fips"]: s.get("census_region_code") for s in snapshot.get("geography", {}).get("states", [])}
@@ -118,7 +121,7 @@ def generate(snapshot: dict, ledger: dict | None = None, root: Path = REPO_ROOT)
                 a, b = q, p  # input is sorted by ID; earlier records are canonical first
                 ca, cb = a["center"], b["center"]
                 distance = haversine_mi(ca["lat"], ca["lon"], cb["lat"], cb["lon"])
-                if distance >= LIMIT_MI:
+                if distance > LIMIT_MI:
                     continue
                 milestones = [{"date": x.get("in_service", {}).get("value"),
                                "precision": x.get("in_service", {}).get("precision")} for x in (a, b)]
@@ -146,5 +149,41 @@ def generate(snapshot: dict, ledger: dict | None = None, root: Path = REPO_ROOT)
         "rule_version": RULE, "identity_version": ledger["version"],
         "input_projects": len(seen), "eligible_projects": len(accepted), "excluded": dict(sorted(excluded.items())),
         "unresolved_owners": dict(sorted(unknown.items())), "distance_comparisons": comparisons,
+        "pairs": len(pairs), "tiers": dict(sorted(Counter(p["tier"] for p in pairs).items())),
+    }}
+
+
+def route_candidates(pairs: list[dict[str, Any]]) -> list[Candidate]:
+    """Prefilter pairs in the shape matches.routes binds and fetches: centers taken from the pair's stored points."""
+    def end(key: str, geo: dict[str, Any]) -> dict[str, Any]:
+        lon, lat = geo["coordinates"]
+        return {"project_key": key, "center": {"lat": lat, "lon": lon}}
+    return [(end(p["a"], p["geo_a"]), end(p["b"], p["geo_b"]), p["distance_mi"]) for p in pairs]
+
+
+def generate(snapshot: dict, ledger: dict | None = None, root: Path = REPO_ROOT,
+             routes: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
+    """C46 drive rule: a prefilter pair is kept when its stored route to the current centers is <= 25 driving miles.
+
+    A pair without a current route (missing, stale or no drivable road) is excluded and counted, never guessed."""
+    found = candidates(snapshot, ledger, root)
+    routes = load_routes(root / ROUTES) if routes is None else routes
+    drives, states = drives_for(route_candidates(found["pairs"]), routes)
+    pairs, over = [], 0
+    for p in found["pairs"]:
+        mid = match_id(p["a"], p["b"])
+        drive = drives[mid]
+        if drive is None:
+            continue
+        if drive > LIMIT_MI:
+            over += 1
+            continue
+        rest = {k: v for k, v in p.items() if k != "rank"}
+        pairs.append({**rest, "drive_mi": drive, "band": 0 if drive < NEAR_BAND_MI else 1,
+                      "route": route_summary(routes[mid])})
+    pairs = priority_sort(pairs)
+    return {"pairs": pairs, "coverage": {
+        **found["coverage"], "straight_line_candidates": len(found["pairs"]),
+        "route_states": dict(sorted(Counter(states.values()).items())), "drive_over_limit": over,
         "pairs": len(pairs), "tiers": dict(sorted(Counter(p["tier"] for p in pairs).items())),
     }}
