@@ -11,7 +11,7 @@ from texas.tpit import GIS_URL, SOURCE_ID
 SOURCE_URL = "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
 
 
-def stage(rows: list[dict], summary: dict) -> tuple[dict, list[dict]]:
+def stage(rows: list[dict], summary: dict, future_rows: list[dict] | None = None) -> tuple[dict, list[dict]]:
     source = {
         "_id": SOURCE_ID,
         "title": "July 2026 Transmission Project Information Tracking",
@@ -93,6 +93,20 @@ def stage(rows: list[dict], summary: dict) -> tuple[dict, list[dict]]:
         raise ValueError("staged project count/identity changed")
     if summary["source_sha256"] != rows[0]["source_sha256"]:
         raise ValueError("source hash mismatch")
+    if future_rows is not None:
+        from texas.more import stage_future
+
+        projects.extend(stage_future(future_rows, summary["source_sha256"]))
+        projects.sort(key=lambda item: item["_id"])
+        if len(projects) != 8 or len({item["_id"] for item in projects}) != 8:
+            raise ValueError("staged project count/identity changed")
+        source["project_count"] = 8
+        source["notes"] = [
+            "Eight manually scoped transmission projects staged from July 2026 TPIT; other rows remain research observations.",
+            "All eight point candidates use City of Georgetown facility geometry and carry unreviewed labels.",
+            "The workbook's Month/Yr headers determine milestone precision; source cohort and row statuses remain separate.",
+        ]
+        validate(source, "national-source")
     return source, projects
 
 
@@ -101,7 +115,9 @@ def main() -> None:
     folder = root / "data" / "texas"
     rows = json.loads((folder / "planned-observations.json").read_text())
     summary = json.loads((folder / "planned-summary.json").read_text())
-    source, projects = stage(rows, summary)
+    future = folder / "future-observations.json"
+    future_rows = json.loads(future.read_text()) if future.exists() else None
+    source, projects = stage(rows, summary, future_rows)
     (folder / "publication-source.json").write_text(json.dumps(source, indent=2) + "\n")
     (folder / "publication-candidates.json").write_text(json.dumps(projects, indent=2) + "\n")
 
