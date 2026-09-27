@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useLayoutEffect, useMemo } from "react";
 import { NationalExplorer } from "@/components/national/NationalExplorer";
 import type { NationalAssistantRenderer, NationalExplorerController, NationalSummaryPayload } from "@/lib/national/types";
 import { AssistantHost, useAssistantHost, type AssistantRegistration } from "./AssistantHost";
 
 function RegistrationBridge({ value }: { value: AssistantRegistration }) {
   const host = useAssistantHost();
-  useEffect(() => host?.register(value), [host, value]);
+  useLayoutEffect(() => host?.register(value), [host, value]);
   return null;
 }
 
