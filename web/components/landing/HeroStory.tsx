@@ -3,11 +3,11 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import s from "./landing.module.css";
 
-export function HeroStory({children}:{children:ReactNode}) {
-  const root=useRef<HTMLDivElement>(null);
-  useEffect(()=>{
-    const element=root.current;
-    if(!element)return;
+export function HeroStory({ children }: { children: ReactNode }) {
+  const root = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const element = root.current;
+    if (!element) return;
     const reduced=matchMedia('(prefers-reduced-motion: reduce)');
     let frame=0, current=0, last=performance.now(), elapsed=0;
     let autoplay=!reduced.matches && scrollY<80 && !location.hash;
@@ -24,30 +24,33 @@ export function HeroStory({children}:{children:ReactNode}) {
       let rect=element.getBoundingClientRect();
       if(autoplay && !document.hidden && element.dataset.animationPaused!=='true'){
         elapsed+=dt;
-        if(elapsed>4){
+        if(elapsed>2.2){
           const travel=Math.max(1,rect.height-innerHeight+52);
-          // Twenty seconds across the story, then gently release the sticky stage.
-          const position=Math.min(travel+innerHeight*.65,(elapsed-4)*travel/20);
+          // Truck passes: Same roads, then One network, then Common Ground.
+          const position=Math.min(travel+innerHeight*.55,(elapsed-2.2)*travel/18);
           scrollTo({top:scrollY+rect.top-52+position,behavior:'instant'});
           rect=element.getBoundingClientRect();
-          if(position>=travel+innerHeight*.65)autoplay=false;
+          if(position>=travel+innerHeight*.55)autoplay=false;
         }
       }
       const target=reduced.matches?0:Math.max(0,Math.min(1,(52-rect.top)/Math.max(1,rect.height-innerHeight+52)));
-      current+= (target-current)*(1-Math.exp(-12*dt));
+      current+=(target-current)*(1-Math.exp(-12*dt));
       if(Math.abs(target-current)<.0001)current=target;
       const segment=(a:number,b:number)=>Math.max(0,Math.min(1,(current-a)/(b-a)));
       element.style.setProperty('--story-progress',String(current));
-      element.style.setProperty('--network-progress',String(segment(.60,.88)));
-      element.style.setProperty('--intro-opacity',String(1-segment(.04,.14)));
-      element.style.setProperty('--beat-one',String(segment(.04,.07)*(1-segment(.36,.46))));
-      element.style.setProperty('--beat-two',String(segment(.34,.37)*(1-segment(.62,.73))));
+      element.style.setProperty('--beat-one',String(segment(.05,.1)*(1-segment(.32,.4))));
+      element.style.setProperty('--beat-two',String(segment(.38,.44)*(1-segment(.68,.78))));
+      element.style.setProperty('--brand-reveal',String(segment(.78,.9)));
       if(autoplay || current!==target)frame=requestAnimationFrame(update);
     }
     function schedule(){if(!frame)frame=requestAnimationFrame(update);}
     addEventListener('click',takeControl);addEventListener('wheel',takeControl,{passive:true});addEventListener('pointerdown',takeControl,{passive:true});addEventListener('keydown',takeControl);
     addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);reduced.addEventListener('change',schedule);update();
     return()=>{cancelAnimationFrame(frame);removeEventListener('click',takeControl);removeEventListener('wheel',takeControl);removeEventListener('pointerdown',takeControl);removeEventListener('keydown',takeControl);removeEventListener('scroll',schedule);removeEventListener('resize',schedule);reduced.removeEventListener('change',schedule);};
-  },[]);
-  return <div ref={root} className={s.story} data-gridbridge-story="">{children}</div>;
+  }, []);
+  return (
+    <div ref={root} className={s.story} data-gridbridge-story="">
+      {children}
+    </div>
+  );
 }
