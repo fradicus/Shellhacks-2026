@@ -13,6 +13,7 @@ import {
   RequestEpoch,
   RouteResponseSchema,
   SiteResponseSchema,
+  WaterResponseSchema,
   VerifiedCoverageResponseSchema,
   VerifiedListResponseSchema,
   VisibilityPoller,
@@ -36,8 +37,9 @@ import {
   type RouteResponse,
   type SiteDraft,
   type SiteResponse,
+  type WaterResponse,
 } from "./logic";
-import { AEFPanel, OutcomePanel, RoadworkPanel, RoutePanel, SoilPanel, StatusBadge, WeatherPanel, formatTime } from "./Evidence";
+import { AEFPanel, OutcomePanel, RoadworkPanel, RoutePanel, SoilPanel, StatusBadge, WaterPanel, WeatherPanel, formatTime } from "./Evidence";
 import { WorksiteMap } from "./WorksiteMap";
 import styles from "./operations.module.css";
 
@@ -86,6 +88,8 @@ export function OperationsDesk() {
   const [conditions, setConditions] = useState<ConditionsResponse | null>(null);
   const [conditionsError, setConditionsError] = useState<string | null>(null);
   const [conditionsLoading, setConditionsLoading] = useState(false);
+  const [waterResult, setWaterResult] = useState<WaterResponse | null>(null);
+  const [waterError, setWaterError] = useState<string | null>(null);
 
   const [routeDraft, setRouteDraft] = useState<RouteDraft>(EMPTY_ROUTE);
   const [routeResult, setRouteResult] = useState<RouteResponse | null>(null);
@@ -184,6 +188,8 @@ export function OperationsDesk() {
     setSiteLoading(false); setConditionsLoading(false); setRouteLoading(false);
     if (siteResult) setSiteOutdated(true);
     if (routeResult) setRouteOutdated(true);
+    setWaterResult(null);
+    setWaterError(null);
   };
 
   const changeRoute = (update: (current: RouteDraft) => RouteDraft) => {
@@ -214,13 +220,28 @@ export function OperationsDesk() {
     const ticket = siteLane.current.begin(); setSiteLoading(true);
     try {
       const query = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon), year: String(built.request.year) });
-      const response = await fetch(`/api/operations/site?${query}`, { cache: "no-store", signal: ticket.signal });
+      const waterQuery = new URLSearchParams({ lat: String(built.request.lat), lon: String(built.request.lon) });
+      const [response, waterResponse] = await Promise.all([
+        fetch(`/api/operations/site?${query}`, { cache: "no-store", signal: ticket.signal }),
+        fetch(`/api/operations/water?${waterQuery}`, { cache: "no-store", signal: ticket.signal }),
+      ]);
       const value = await readResponse(response, SiteResponseSchema);
       if (!siteBinding(value, built.request)) throw new Error("Site evidence did not match the submitted worksite.");
+      let water: WaterResponse | null = null;
+      let nextWaterError: string | null = null;
+      try {
+        water = await readResponse(waterResponse, WaterResponseSchema);
+        if (water.request.lat !== built.request.lat || water.request.lon !== built.request.lon) {
+          throw new Error("Water evidence did not match the submitted worksite.");
+        }
+      } catch (error) {
+        nextWaterError = message(error);
+      }
       if (ticket.current()) {
         setSiteResult(value); setActiveSite({ label: built.label, point: { lat: built.request.lat, lon: built.request.lon }, year: built.request.year });
         setConditions({ request: { lat: built.request.lat, lon: built.request.lon }, weather: value.weather, roadwork: value.roadwork });
         setConditionsError(null); setSiteOutdated(false); setRouteOutdated(routeResult !== null);
+        setWaterResult(water); setWaterError(nextWaterError);
       }
     } catch (error) { if (ticket.current()) setSiteError(message(error)); }
     finally { if (ticket.current()) setSiteLoading(false); }
@@ -412,6 +433,7 @@ export function OperationsDesk() {
             {currentWeather && <WeatherPanel envelope={currentWeather} refreshFailed={conditionsError} />}
             {currentRoadwork && <RoadworkPanel envelope={currentRoadwork} refreshFailed={conditionsError} />}
             <SoilPanel envelope={siteResult.soil} />
+            {waterResult ? <WaterPanel envelope={waterResult.water} /> : waterError ? <article className={styles.evidenceCard}><div className={styles.cardHeading}><div><span className="eyebrow">Water context</span><h3>Water context</h3></div><StatusBadge status="unavailable" /></div><p className={styles.empty}>{waterError}</p></article> : null}
             <AEFPanel envelope={siteResult.aef} />
           </div>
           {!siteOutdated && activeSite && <div className={styles.refreshLine}><span>Current conditions are bound to {activeSite.point.lat}, {activeSite.point.lon}. Attempts are limited to every {conditionRefresh}s.</span><button type="button" disabled={conditionsLoading || conditionCoolingDown} onClick={() => void refreshConditions(JSON.stringify(activeSite.point))}>{conditionCoolingDown ? "Refresh cooling down" : "Refresh now"}</button></div>}
