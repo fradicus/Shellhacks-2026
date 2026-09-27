@@ -9,6 +9,7 @@ import styles from "./Nav.module.css";
 export const ROUTES = [
   { href: "/", label: "Home" },
   { href: "/time", label: "Overlaps" },
+  { href: "/map", label: "Project map" },
   { href: "/explore", label: "National explorer" },
   { href: "/operations", label: "Field planning" },
   { href: "/changes", label: "Filing changes" },
@@ -32,6 +33,21 @@ export function Nav() {
   const path = usePathname();
   const active = (href: string) =>
     href === "/" ? path === "/" : href === "/time" ? path.startsWith("/time") || path.startsWith("/pair/") : path.startsWith(href);
+  if (path === "/") return (
+    <header className={`${styles.landingBar} no-print`}>
+      <a href="#main-content" className={styles.skip}>Skip to content</a>
+      <Link href="/" className={styles.landingBrand} aria-label="GridBridge home">
+        <svg width="26" height="22" viewBox="0 0 28 24" fill="none" aria-hidden="true"><path d="M4 17C8 5 20 5 24 17M4 17h20" stroke="currentColor" strokeWidth="1.5"/><circle cx="4" cy="17" r="2.5" fill="currentColor"/><circle cx="24" cy="17" r="2.5" fill="currentColor"/></svg>
+        GridBridge
+      </Link>
+      <nav aria-label="Main" className={styles.landingLinks}>
+        <a href="#how-it-works">How it works</a>
+        <a href="#the-corridor">The corridor</a>
+        <a href="#workspace">Workspace</a>
+      </nav>
+      <Link href="/time" className={styles.launch}>Launch explorer <span aria-hidden="true">↗</span></Link>
+    </header>
+  );
   return (
     <header className={`${styles.bar} no-print`}>
       <Link href="/" className={styles.brand}>

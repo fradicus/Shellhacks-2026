@@ -28,7 +28,7 @@ const test = base.extend({
 });
 
 test("every navigation route returns 200 and renders without console errors", async ({ page }) => {
-  expect((await page.goto("/"))?.status()).toBe(200);
+  expect((await page.goto("/map"))?.status()).toBe(200);
   const nav = page.getByRole("navigation", { name: "Main" });
   const hrefs = await nav.getByRole("link").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
   expect(hrefs).toEqual(expect.arrayContaining(["/", "/time", "/changes", "/coverage", "/gemini", "/impact"]));
@@ -38,12 +38,16 @@ test("every navigation route returns 200 and renders without console errors", as
     expect((await page.goto(href!))?.status(), href!).toBe(200);
     await expect(page.getByRole("main")).toBeVisible();
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    await expect(page.getByRole("navigation", { name: "Main" }).locator('[aria-current="page"]')).toHaveCount(1);
+    if (href === "/") {
+      await expect(page.getByRole("link", { name: "Launch explorer", exact: true })).toHaveAttribute("href", "/time");
+    } else {
+      await expect(page.getByRole("navigation", { name: "Main" }).locator('[aria-current="page"]')).toHaveCount(1);
+    }
   }
 });
 
 test("six historical pairs rank correctly, select on map, and open evidence", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/map");
   await expect(page.getByText("Sample data (fixture mode)")).toBeVisible();
   await expect(page.getByRole("button", { name: "Historical (6)", exact: true })).toHaveAttribute("aria-pressed", "true");
   const list = page.getByRole("region", { name: "Ranked overlaps" });
@@ -166,7 +170,7 @@ test("filing history cites both public pages and filters to an honest empty stat
 
 test("failed basemap preserves overlaps, selection, and accessible project table", async ({ page }) => {
   await page.route(styleUrl, (route) => route.fulfill({ status: 503, body: "Injected basemap failure" }));
-  await page.goto("/");
+  await page.goto("/map");
   await expect(page.getByRole("status").filter({ hasText: "Basemap tiles failed to load" })).toBeVisible();
   const rows = page.getByRole("region", { name: "Ranked overlaps" }).getByRole("listitem");
   await expect(rows).toHaveCount(6);
@@ -176,4 +180,23 @@ test("failed basemap preserves overlaps, selection, and accessible project table
   await expect(page.getByRole("table")).toBeVisible();
   await expect(page.getByRole("table").locator("tbody tr")).toHaveCount(10);
   await expect(page.getByRole("link", { name: "OpenStreetMap", exact: true })).toBeVisible();
+});
+
+
+test("landing controls work and the explorer returns to a working landing page", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Every mile.Connected.");
+  const network = page.getByRole("button", { name: "02 The network", exact: true });
+  await network.click();
+  await expect(network).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByText("One region. More possibilities.", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Pause animation", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Play animation", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("link", { name: "Explore the overlaps", exact: true }).click();
+  await expect(page).toHaveURL(/\/time$/);
+  await page.getByRole("link", { name: "Home", exact: true }).click();
+  await expect(page.getByRole("button", { name: "01 The road", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "Pause animation", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Play animation", exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 });
