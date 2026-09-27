@@ -210,8 +210,10 @@ The web application's database identity remains read-only; the GitHub load workf
 
 The root owned Git integration, live browser acceptance and this report. A principal-architecture reviewer (`gpt-6-astra`, high reasoning) independently checked the patches and Git hygiene. A source/workflow reviewer (`gpt-6-astra`, high reasoning) owned the bounded F06/F11 implementation and plan/evidence checks. A frontend QA implementer (`gpt-5.6-sol`, high reasoning) handled the isolated F31/CSS fixes and release documentation. File ownership was exclusive. The external data and OSRM workers were left running; their branches and shared files were not reset, force-pushed or overwritten.
 
-### Final delivery note — 2026-09-27, 12:08 UTC
+### Final delivery note — 2026-09-27, 12:14 UTC
 
-All four fixes are merged: #301 `bda19d8`, #302 `b21c4fb`, #303 `1fbcb5d`, and #304 `040d98f`. Both #304 CI runs completed successfully before its merge. The main revision after that merge is `040d98ff650d41c09e47618f0be793277da13760`; its integration CI is running at this checkpoint. The separate owner's intervening overview-fit change #306 is preserved. Production deployment of these fixes is still unverified and the configured hosting account cannot update the target URL.
+All four fixes are merged: #301 `bda19d8`, #302 `b21c4fb`, #303 `1fbcb5d`, and #304 `040d98f`. Both #304 CI runs completed successfully before its merge. The integrated main revision `040d98ff650d41c09e47618f0be793277da13760` passed checks, pipeline, web, e2e and aggregate CI ([run 36317951715](https://github.com/fradicus/Shellhacks-2026/actions/runs/36317951715)). All 13 files from the four reviewed patches match their merged main versions. The separate owner's intervening overview-fit change #306 is preserved.
+
+A fresh production health read at 12:14 UTC still reported code `4b30678aadee6f96c25a19d17d94179f23256b36`, database up and dataset `9548c28191b2ac4eb703ec9283c31e364a911bce`. Deployment of the reviewed fixes remains unverified, and the configured hosting account cannot update the target URL. The deployment owner can now use the green integrated revision above or a later revision whose own required CI has passed.
 
 The report is also saved locally at the requested `docs/audit-report.md`. The repository copy is kept under the existing release owner's `release/` directory so sponsor originals and ownership gates remain intact. The README and deployment ledger now identify the actual live origin and its code mismatch. No video or MP4 was produced.

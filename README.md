@@ -77,8 +77,8 @@ uv run python -m osm
 ```
 
 `uv run python -m gemini_extract` exercises the no-call path. A real batch request requires the separately
-authorized `--live` flag plus `GEMINI_API_KEY` and `GEMINI_MODEL`; no live Gemini run is claimed in the current
-release for extraction. The separate committed brief-generation evidence is described in the judge-readiness
+authorized `--live` flag plus `GEMINI_API_KEY` and `GEMINI_MODEL`; no live Gemini extraction run is claimed in the
+current release. The separate committed brief-generation evidence is described in the judge-readiness
 report. Generated records are validated against the schemas before they are accepted.
 
 The `load` GitHub Action is the only writer to MongoDB Atlas. It validates committed data, stages it under the Git
