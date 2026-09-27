@@ -11,9 +11,19 @@ cut: never
 
 # F38 Verified geographic project data
 
-Status: specified; implementation and overnight launch pending. [C22](../../decisions/C22-verified-geographic-data.md)
+Status: New England research checkpoint launched; publication contracts and geographic delivery pending. [C22](../../decisions/C22-verified-geographic-data.md)
 authorizes this spec. Shared contracts and a recorded launch are prerequisites, even when dependency markers exist.
 The [source research](sources.md) is a discovery starting point, not an ingestion allowlist or an acquired dataset.
+
+## New England launch amendment
+
+The user explicitly launched work on 2026-09-26 and redirected the first cohort to New England, targeting
+roughly 250–500 verified project points. [F38 decision](../../decisions/F38-new-england-first.md) supersedes the
+Florida-first sequence for this bounded checkpoint. CT, ME, MA, NH, RI and VT come first. The broader geographic
+backlog remains; no nationwide completion is claimed. Initial research tooling may replay the existing approved
+F30 source and emit non-publishable audit artifacts before the shared integration contract. Production adapters,
+location promotion, release assembly and map publication still require that contract and independent evidence review.
+This research checkpoint does not pass the geographic pilot gate.
 
 ## Refined request
 
