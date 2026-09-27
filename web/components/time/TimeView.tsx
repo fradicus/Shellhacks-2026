@@ -9,7 +9,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import type { Map as MlMap } from "maplibre-gl";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { NationalProject, NationalSource, NationalExplorerPayload } from "@/lib/national/types";
+import type { NationalProjectSummary, NationalExplorerPayload } from "@/lib/national/types";
 import type { NationalTier } from "./nationalProjects";
 import { NationalProjectEvidence } from "./NationalProjectEvidence";
 import type { InService, Utility, View } from "@/lib/types";
@@ -27,7 +27,7 @@ export interface TimeProject {
   confidence: "high" | "medium" | "low" | null;
   source_id: string;
   page: number | null;
-  national?: { project: NationalProject; source?: NationalSource; tier: NationalTier };
+  national?: { project: NationalProjectSummary; tier: NationalTier };
 }
 export interface TimePair {
   id: string;

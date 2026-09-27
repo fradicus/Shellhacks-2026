@@ -1,4 +1,4 @@
-import { loadNationalExplorer } from "@/lib/national/server";
+import { loadNationalSummaries } from "@/lib/national/server";
 import { nationalTimeProjects, stillPlanned } from "@/components/time/nationalProjects";
 import { TimeView, type TimePair, type TimeProject } from "@/components/time/TimeView";
 import { ErrorState } from "@/components/ui";
@@ -12,7 +12,7 @@ export const metadata = { title: "Overlaps · GridBridge" };
 
 export default async function TimePage() {
   const [matches, projects, national] = await Promise.all([
-    getMatches({ limit: 500 }), getProjects(), loadNationalExplorer({ page: 1, limit: 1 }),
+    getMatches({ limit: 500 }), getProjects(), loadNationalSummaries({ page: 1, limit: 1 }),
   ]);
   if (isUnavailable(projects) && !national.available) {
     return (
@@ -39,7 +39,7 @@ export default async function TimePage() {
     source_id: p.source.source_id,
     page: p.source.page,
   }));
-  const nationalAll = national.available ? nationalTimeProjects(national.mapProjects, national.sources) : [];
+  const nationalAll = national.available ? nationalTimeProjects(national.mapProjects) : [];
   const nationalPoints = nationalAll.filter(stillPlanned);
   slim.push(...nationalPoints);
   const pairs: TimePair[] = (isUnavailable(matches) || isUnavailable(projects) ? [] : matches).map((m) => ({

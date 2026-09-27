@@ -21,3 +21,11 @@ selection and 2D/3D. Record serialized payload sizes separately from network tim
 ## Decision and rollback
 Reuse F31 without a new dependency or cache. Reverting this adapter restores full
 initial records. The original overnight gates are historical for this user task.
+
+## Measurement
+Read-only Atlas dataset `0f54a370b82d59ce365dc497baa9460d094c4d0b`,
+2026-09-27: the adapter's 2,361 national records serialize to 13,340,401 bytes
+before and 2,455,296 bytes after (81.6% smaller). IDs, names, coordinates,
+filed dates, tiers, states, planning regions and lifecycle statuses compare equal
+for every record. This includes the adapter's in-service records before `/time`
+filters them; it measures uncompressed props, not HTTP transfer or load timing.

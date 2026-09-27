@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { nationalTimeProjects, stillPlanned } from "./nationalProjects";
+import { projectSummary } from "../../lib/national/summaries";
 import { epochYear, span } from "./timeScale";
-import type { NationalProject, NationalSource } from "../../lib/national/types";
+import type { NationalProject } from "../../lib/national/types";
 
 // Explicit test-only records; no synthetic data enters the application.
 const project: NationalProject = {
@@ -15,19 +16,17 @@ const project: NationalProject = {
 };
 
 test("national projection excludes legacy duplicates and rejected or invalid points, preserving facts", () => {
-  const source = { _id: "test-source", publisher: "Test publisher" } as NationalSource;
   const rows = [project, { ...project, _id: "legacy:1" },
     { ...project, _id: "test-national:3", location_review: "rejected" as const },
     { ...project, _id: "test-national:4", center: null },
     { ...project, _id: "test-national:5", center: { ...project.center!, lat: NaN } },
     { ...project, _id: "test-national:6", location_review: "needs_review" as const }];
-  const result = nationalTimeProjects(rows, [source]);
+  const result = nationalTimeProjects(rows.map(projectSummary));
   assert.equal(result.length, 1);
   assert.equal(result[0].key, project._id);
   assert.equal(result[0].national?.tier, "confirmed");
   assert.deepEqual(result[0].in_service, { date: "2028-04", raw: "April 2028", precision: "month" });
-  assert.equal(result[0].national?.project, project);
-  assert.equal(result[0].national?.source, source);
+  assert.deepEqual(result[0].national?.project, projectSummary(project));
   assert.equal(result[0].center?.lat, 42);
   assert.equal(result[0].national?.project.owner, "Test owner");
   assert.equal(result[0].national?.project.center?.basis, "one");
@@ -48,8 +47,8 @@ test("partial milestones remain intervals and legacy exact dates stay exact", ()
 });
 
 test("records their publisher lists as in service go to History, not the planning axis", () => {
-  const [planned] = nationalTimeProjects([project], []);
-  const [built] = nationalTimeProjects([{ ...project, status_group: "in_service", in_service: { value: "2003-06-13", raw: "6/13/2003", precision: "day" } }], []);
+  const [planned] = nationalTimeProjects([project]);
+  const [built] = nationalTimeProjects([{ ...project, status_group: "in_service", in_service: { value: "2003-06-13", raw: "6/13/2003", precision: "day" } }]);
   assert.equal(stillPlanned(planned), true);
   assert.equal(stillPlanned(built), false);
   // Legacy filings are plans by definition and always stay.
@@ -62,6 +61,23 @@ test("unreviewed published points draw as labeled tentative or owner-published, 
   const official = { ...project, _id: "test-national:8", location_review: "unreviewed" as const,
     location_candidate: { tier: "official" } } as NationalProject;
   const untiered = { ...project, _id: "test-national:9", location_review: "unreviewed" as const };
-  const tiers = nationalTimeProjects([tentative, official, untiered], []).map((p) => [p.key, p.national?.tier]);
+  const tiers = nationalTimeProjects([tentative, official, untiered]).map((p) => [p.key, p.national?.tier]);
   assert.deepEqual(tiers, [["test-national:7", "tentative"], ["test-national:8", "official"], ["test-national:9", "tentative"]]);
+});
+
+test("compact records preserve map facts without embedding raw evidence or source documents", () => {
+  const rows = [project, { ...project, _id: "test-national:built", status_group: "in_service" as const }];
+  const full = nationalTimeProjects(rows);
+  const compact = nationalTimeProjects(rows.map(projectSummary));
+  const facts = (points: typeof full) => points.map(p => ({
+    key: p.key, name: p.name, lat: p.center?.lat, lon: p.center?.lon,
+    date: p.in_service, tier: p.national?.tier, planned: stillPlanned(p),
+    states: p.national?.project.states, region: p.national?.project.planning_region,
+  }));
+  assert.deepEqual(facts(compact), facts(full));
+  for (const p of compact) {
+    assert.equal("raw" in p.national!.project.evidence, false);
+    assert.equal("evidence" in p.national!.project.center!, false);
+    assert.equal("source" in p.national!, false);
+  }
 });
