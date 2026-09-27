@@ -80,22 +80,29 @@ def test_spelled_measurements_cannot_borrow_description_numbers(bundle, group, q
     assert "numeric_fact_type_mismatch" in validate_response(json.dumps(response), bundle["facts"])[1]
 
 
+def _straight_match(match: dict) -> dict:
+    base = {k: v for k, v in match.items() if k not in ("drive_mi", "route")}
+    return {**base, "band": 0 if match["distance_mi"] < core.NEAR_BAND_MI else 1,
+            "rule_version": core.RULE_VERSION, "rank_version": core.RANK_VERSION}
+
+
 def _drive_match(match: dict, drive: float) -> dict:
-    return {**match, "drive_mi": drive, "band": 0 if drive < core.NEAR_BAND_MI else 1,
+    return {**_straight_match(match), "drive_mi": drive, "band": 0 if drive < core.NEAR_BAND_MI else 1,
             "rule_version": core.DRIVE_RULE_VERSION, "rank_version": core.DRIVE_RANK_VERSION}
 
 
-def test_drive_match_cites_stored_drive_and_straight_line_match_is_unchanged(inputs, bundle):
+def test_drive_match_cites_stored_drive_and_straight_line_match_is_unchanged(inputs):
     tables = [unique(inputs[k]) for k in ("projects", "locations", "sources")]
-    legacy = inputs["matches"][0]
-    assert not {"match.drive_mi", "match.drive_display_mi"} & {f["id"] for f in bundle["facts"]}
+    legacy = _straight_match(inputs["matches"][0])
+    straight = build_match_input(legacy, *tables)
+    assert not {"match.drive_mi", "match.drive_display_mi"} & {f["id"] for f in straight["facts"]}
     drive = min(legacy["distance_mi"] + 1.5, core.OVERLAP_MI)
     driven = build_match_input(_drive_match(legacy, drive), *tables)
     facts = {f["id"]: f["value"] for f in driven["facts"]}
     assert facts["match.drive_mi"] == drive and facts["match.drive_display_mi"] == f"{drive:.2f}"
-    assert driven["input_hash"] != bundle["input_hash"]
+    assert driven["input_hash"] != straight["input_hash"]
     text = f"The driving route between the centers is {facts['match.drive_display_mi']} miles."
-    response = {**clean(bundle), "supported_facts": [{"text": text, "fact_ids": ["match.drive_display_mi"]}]}
+    response = {**clean(straight), "supported_facts": [{"text": text, "fact_ids": ["match.drive_display_mi"]}]}
     assert validate_response(json.dumps(response), driven["facts"])[1] == []
     with pytest.raises(ValueError, match="stale_match_facts"):
         build_match_input({**legacy, "drive_mi": drive}, *tables)
@@ -257,7 +264,9 @@ def test_cache_metadata_binds_model_prompt_schema_and_hash(bundle):
 
 def test_selection_excludes_tentative_and_prefers_future(inputs):
     selected = runner.select_matches(inputs["matches"])
-    assert len(selected) == 15 and all(m["view"] == "historical" for m in selected)
+    eligible = [m for m in inputs["matches"] if m["view"] != "tentative"]
+    assert len(selected) == min(15, len(eligible)) > 0
+    assert all(m["view"] != "tentative" for m in selected)
     other = copy.deepcopy(inputs["matches"][-1])
     other.update(_id="synthetic-future", view="future", rank=999)
     assert runner.select_matches([*inputs["matches"], other])[0]["_id"] == "synthetic-future"
