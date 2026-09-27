@@ -47,11 +47,16 @@ DUPLICATE_METERS = 1000.0
 def _facility_name(text: str) -> str | None:
     """Leading run of capitalized name tokens, dropping work descriptors; None if nothing name-like remains."""
     tokens = text.split()
-    while tokens and (tokens[0].upper() in LEADING or tokens[0].isdigit() or QUEUE_ID.fullmatch(tokens[0])):
+    # Line numbers ("0754", "5400") lead some names; short numbers ("9 Mile") are part of the name.
+    while tokens and (tokens[0].upper() in LEADING or (tokens[0].isdigit() and len(tokens[0]) >= 3)
+                      or QUEUE_ID.fullmatch(tokens[0])):
         tokens = tokens[1:]
     name: list[str] = []
     for token in tokens:
         up = token.upper()
+        if not name and token.isdigit():  # "9 Mile", "7 Mile Creek"
+            name.append(token)
+            continue
         if token in PARTICLES and name:
             name.append(token)
             continue
@@ -72,9 +77,14 @@ def facilities_named(project_name: str, description: str | None) -> dict:
         return {"kind": None, "names": [], "from": "name", "reason": "multi_terminal_line"}
     if len(parts) == 2:
         names = [None if NOT_AN_ENDPOINT.search(p) else _facility_name(p) for p in parts]
-        if any(names) and names[0] != names[1]:
+        work_only = [n is None and not NOT_AN_ENDPOINT.search(p) for n, p in zip(names, parts, strict=True)]
+        if any(work_only) and not all(work_only):
+            # "North Lake SS – Transformer Asset Renewal": the dash introduces work, not a second endpoint.
+            name = parts[work_only.index(False)] + " " + parts[work_only.index(True)]
+        elif any(names) and names[0] != names[1]:
             return {"kind": "line", "names": names, "from": "name", "reason": None}
-        return {"kind": None, "names": [], "from": "name", "reason": "endpoint_not_named"}
+        else:
+            return {"kind": None, "names": [], "from": "name", "reason": "endpoint_not_named"}
     if SITE_EQUIPMENT.search(name) and not NOT_AN_ENDPOINT.search(name) and (site := _facility_name(name)):
         return {"kind": "site", "names": [site], "from": "name", "reason": None}
     if description and (m := DESCRIPTION_ENDPOINTS.search(description)):

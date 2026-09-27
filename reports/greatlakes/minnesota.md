@@ -1,14 +1,14 @@
 # F40 Minnesota (part 1)
 
-**225 projects, 52 with an unverified candidate location (48 distinct points), 0 verified.** Rule: [C26](../../specs/decisions/C26-great-lakes-candidates.md).
+**225 projects, 51 with an unverified candidate location (48 distinct points), 0 verified.** Rule: [C26](../../specs/decisions/C26-great-lakes-candidates.md).
 
 | | Count |
 |---|---|
 | Projects (unique MPUC tracking numbers) | 225 (229 table rows; 4 duplicate rows) |
 | Status | planned 158, in service 54, cancelled 10, unknown 3 |
-| Candidate located | 52: 38 sites, 7 lines with both endpoints, 7 partial lines (one endpoint) |
-| Candidate located by status | planned 41, in service 9, cancelled 2 |
-| Unlocated | 173: no OSM facility with that exact name 58, no single facility named 58, area/program/multi-facility 24, name found but no operator/voltage corroboration 11, multi-terminal line 10, mixed endpoint reasons 10, endpoints unnamed 2 |
+| Candidate located | 51: 38 sites, 7 lines with both endpoints, 6 partial lines (one endpoint) |
+| Candidate located by status | planned 41, in service 8, cancelled 2 |
+| Unlocated | 174: no single facility named 62, no OSM facility with that exact name 58, area/program/multi-facility 24, name found but no operator/voltage corroboration 11, multi-terminal line 10, mixed endpoint reasons 9 |
 | Counties from source text | 11 projects |
 
 ## Sources
@@ -30,7 +30,7 @@
 
 ## Spot check
 
-All 52 candidates were reviewed by hand: project name, extracted facility, matched OSM name/operator/voltage and
+All candidates were reviewed by hand: project name, extracted facility, matched OSM name/operator/voltage and
 coordinates (e.g. Prairie Island 44.625, -92.634; Forbes 47.364, -92.691). One systematic error was found and fixed:
 names joining two facilities with "and" (Priam … and St John's Lake …) had been placed at the first facility; they are
 now unlocated as multi-facility. This check was done by the producer, not an independent reviewer.

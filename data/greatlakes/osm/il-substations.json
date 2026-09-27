@@ -1,0 +1,5302 @@
+[
+  {
+    "id": "node/12360623313",
+    "lat": 41.8216582,
+    "lon": -87.6106891,
+    "name": "Bronzeville Community Microgrid Substation",
+    "norm": "BRONZEVILLE COMMUNITY MICROGRID",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "relation/13588390",
+    "lat": 38.7010922,
+    "lon": -90.1589948,
+    "name": "American Steel Substation",
+    "norm": "AMERICAN STEEL",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "relation/15999383",
+    "lat": 39.5444498,
+    "lon": -87.9714597,
+    "name": "Kansas West Substation",
+    "norm": "KANSAS WEST",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "relation/18052331",
+    "lat": 41.8920894,
+    "lon": -87.6388688,
+    "name": "Ohio Substation",
+    "norm": "OHIO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "relation/18983640",
+    "lat": 40.1741721,
+    "lon": -88.8317752,
+    "name": "Clinton Station",
+    "norm": "CLINTON STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "relation/20300282",
+    "lat": 41.9798366,
+    "lon": -87.9957764,
+    "name": "ComEd Itasca 138kV-345kV Substation",
+    "norm": "COMED ITASCA 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/102575133",
+    "lat": 41.8283037,
+    "lon": -88.1692814,
+    "name": "Warrenville Substation",
+    "norm": "WARRENVILLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102577182",
+    "lat": 41.7075374,
+    "lon": -88.2325752,
+    "name": "Wolfs Crossing Substation",
+    "norm": "WOLFS CROSSING",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/102577184",
+    "lat": 41.7477558,
+    "lon": -88.2344528,
+    "name": "Frontenac Substation",
+    "norm": "FRONTENAC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102580488",
+    "lat": 41.7033869,
+    "lon": -88.2096485,
+    "name": "Route 59 Substation",
+    "norm": "ROUTE 59",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102580496",
+    "lat": 41.7037995,
+    "lon": -88.0969338,
+    "name": "Bollingbrook Substation",
+    "norm": "BOLLINGBROOK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102580497",
+    "lat": 41.7151142,
+    "lon": -88.11806,
+    "name": "Royce Substation",
+    "norm": "ROYCE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102580499",
+    "lat": 41.7028304,
+    "lon": -88.1660234,
+    "name": "Spring Brook Substation",
+    "norm": "SPRING BROOK",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102597846",
+    "lat": 41.7077141,
+    "lon": -88.2983799,
+    "name": "Oswego Substation",
+    "norm": "OSWEGO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102597859",
+    "lat": 41.6837247,
+    "lon": -88.4793542,
+    "name": "Plano Substation",
+    "norm": "PLANO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "765000"
+  },
+  {
+    "id": "way/102597862",
+    "lat": 41.7118565,
+    "lon": -88.3577347,
+    "name": "Montgomery Substation",
+    "norm": "MONTGOMERY",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/102601566",
+    "lat": 41.8954274,
+    "lon": -88.046825,
+    "name": "ComEd Lombard Substation",
+    "norm": "COMED LOMBARD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/102630293",
+    "lat": 40.6802953,
+    "lon": -89.5860656,
+    "name": "Wallace Substation",
+    "norm": "WALLACE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103532273",
+    "lat": 41.6634426,
+    "lon": -87.5507663,
+    "name": "Hegewisch Substation",
+    "norm": "HEGEWISCH",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103532285",
+    "lat": 41.6692333,
+    "lon": -87.5398229,
+    "name": "Tower Automotive Substation",
+    "norm": "TOWER AUTOMOTIVE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103532296",
+    "lat": 41.6336092,
+    "lon": -87.5457552,
+    "name": "ComEd Burnham 138kV-345kV Substation",
+    "norm": "COMED BURNHAM 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/103533965",
+    "lat": 41.6629517,
+    "lon": -87.6181621,
+    "name": "Wildwood Substation",
+    "norm": "WILDWOOD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103533968",
+    "lat": 41.6367591,
+    "lon": -87.6663186,
+    "name": "ComEd Blue Island 138kV-345kV Substation",
+    "norm": "COMED BLUE ISLAND 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/103541280",
+    "lat": 41.6399394,
+    "lon": -87.7331619,
+    "name": "Crestwood Substation",
+    "norm": "CRESTWOOD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103541285",
+    "lat": 41.6888001,
+    "lon": -87.7421893,
+    "name": "TSS60 Alsip Substation",
+    "norm": "TSS60 ALSIP",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103541742",
+    "lat": 41.621682,
+    "lon": -87.5941138,
+    "name": "ComEd South Holland Substation",
+    "norm": "COMED SOUTH HOLLAND",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103542223",
+    "lat": 41.6008073,
+    "lon": -87.8187856,
+    "name": "Tinley Park Substation",
+    "norm": "TINLEY PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/103567861",
+    "lat": 41.2098089,
+    "lon": -87.9112799,
+    "name": "ComEd Davis Creek Substation",
+    "norm": "COMED DAVIS CREEK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/103571684",
+    "lat": 41.2443981,
+    "lon": -88.6649952,
+    "name": "LaSalle Substation",
+    "norm": "LASALLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/103591940",
+    "lat": 41.4386233,
+    "lon": -88.1154305,
+    "name": "Elwood Substation",
+    "norm": "ELWOOD",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1039701029",
+    "lat": 42.4725742,
+    "lon": -89.0585238,
+    "name": "Rec Shaw Substation",
+    "norm": "REC SHAW",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039701031",
+    "lat": 42.4944184,
+    "lon": -89.0700303,
+    "name": "Shirland Ave",
+    "norm": "SHIRLAND AVE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/104296608",
+    "lat": 41.5696579,
+    "lon": -87.5676656,
+    "name": "Lansing Substation",
+    "norm": "LANSING",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104296610",
+    "lat": 41.5880061,
+    "lon": -87.5546233,
+    "name": "Sand Ridge Substation",
+    "norm": "SAND RIDGE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104299382",
+    "lat": 41.4855457,
+    "lon": -87.6696364,
+    "name": "Park Forest Substation",
+    "norm": "PARK FOREST",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104299383",
+    "lat": 41.4920101,
+    "lon": -87.7089777,
+    "name": "ComEd Matteson Substation",
+    "norm": "COMED MATTESON",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104302014",
+    "lat": 41.5564641,
+    "lon": -87.7373775,
+    "name": "Country Club Hills Substation",
+    "norm": "COUNTRY CLUB HILLS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104305807",
+    "lat": 41.2642607,
+    "lon": -89.8753448,
+    "name": "Kewanee Substation",
+    "norm": "KEWANEE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/104334522",
+    "lat": 41.7265209,
+    "lon": -90.3062786,
+    "name": "Quad Cities Substation",
+    "norm": "QUAD CITIES",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/104393255",
+    "lat": 39.8232139,
+    "lon": -89.5912467,
+    "name": "Interstate",
+    "norm": "INTERSTATE",
+    "operator": "City Water, Light & Power",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1049138672",
+    "lat": 41.8033226,
+    "lon": -87.6054961,
+    "name": "ComEd Hyde Park Substation",
+    "norm": "COMED HYDE PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1057031750",
+    "lat": 38.7859006,
+    "lon": -89.3196317,
+    "name": "Hookdale",
+    "norm": "HOOKDALE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1057031752",
+    "lat": 38.8810025,
+    "lon": -89.3726837,
+    "name": "Greenville-McCord Substation",
+    "norm": "GREENVILLE-MCCORD",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/106015694",
+    "lat": 42.0646094,
+    "lon": -88.1436403,
+    "name": "Hoffman Estates Substation",
+    "norm": "HOFFMAN ESTATES",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/106016960",
+    "lat": 42.0674367,
+    "lon": -88.2129702,
+    "name": "Prairie Stone Substation",
+    "norm": "PRAIRIE STONE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1070461220",
+    "lat": 40.4201957,
+    "lon": -90.7938532,
+    "name": "Ameren Illinois",
+    "norm": "AMEREN ILLINOIS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1079728102",
+    "lat": 41.054613,
+    "lon": -89.774346,
+    "name": "Ameren Illinois",
+    "norm": "AMEREN ILLINOIS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1088651828",
+    "lat": 41.7503367,
+    "lon": -87.5520432,
+    "name": "Metra Cheltenham Substation",
+    "norm": "METRA CHELTENHAM",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1089052372",
+    "lat": 38.0113706,
+    "lon": -89.6669873,
+    "name": "Steeleville Substation",
+    "norm": "STEELEVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1089351899",
+    "lat": 38.199833,
+    "lon": -89.6574354,
+    "name": "Tilden Substation",
+    "norm": "TILDEN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1089351907",
+    "lat": 38.2115883,
+    "lon": -89.580926,
+    "name": "Aster Substation",
+    "norm": "ASTER",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1091021679",
+    "lat": 40.1754078,
+    "lon": -87.627054,
+    "name": "Danville Liberty Lane Substation",
+    "norm": "DANVILLE LIBERTY LANE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1092306859",
+    "lat": 38.5991122,
+    "lon": -89.9392696,
+    "name": "O'Fallon Porter Road Subtation",
+    "norm": "O'FALLON PORTER ROAD SUBTATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1099651393",
+    "lat": 42.2795116,
+    "lon": -87.8974974,
+    "name": "ComEd Rondout Substation",
+    "norm": "COMED RONDOUT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1104831674",
+    "lat": 38.8739089,
+    "lon": -90.0968673,
+    "name": "Ameren Illinois",
+    "norm": "AMEREN ILLINOIS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1111213082",
+    "lat": 42.1639833,
+    "lon": -87.7809346,
+    "name": "ComEd DC C-93 Substation",
+    "norm": "COMED DC C-93",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/111536313",
+    "lat": 41.8064291,
+    "lon": -88.1892506,
+    "name": "Raymond Drive Substation",
+    "norm": "RAYMOND DRIVE",
+    "operator": "City of Naperville",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1128095457",
+    "lat": 37.7459915,
+    "lon": -88.5422311,
+    "name": "Harrisburg Substation",
+    "norm": "HARRISBURG",
+    "operator": "Amern",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/116559066",
+    "lat": 41.9796599,
+    "lon": -88.1514422,
+    "name": "Bartlett Substation",
+    "norm": "BARTLETT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/116856690",
+    "lat": 42.0044755,
+    "lon": -88.2405236,
+    "name": "Spaulding Substation",
+    "norm": "SPAULDING",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/116856798",
+    "lat": 41.982812,
+    "lon": -88.2405005,
+    "name": "ComEd Wayne 138kV-345kV Substation",
+    "norm": "COMED WAYNE 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1178599771",
+    "lat": 38.5291179,
+    "lon": -90.2340471,
+    "name": "Beehive Substation",
+    "norm": "BEEHIVE",
+    "operator": "Ameren Missouri",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1178753516",
+    "lat": 38.5345504,
+    "lon": -89.9387226,
+    "name": "East Belleville Substation",
+    "norm": "EAST BELLEVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1178753523",
+    "lat": 38.685262,
+    "lon": -89.8973337,
+    "name": "Jarvis Substation",
+    "norm": "JARVIS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1178753541",
+    "lat": 38.7125896,
+    "lon": -89.9375711,
+    "name": "Collinsville Canteen Substation",
+    "norm": "COLLINSVILLE CANTEEN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1178753544",
+    "lat": 38.6839246,
+    "lon": -89.936897,
+    "name": "East Collinsville Substation",
+    "norm": "EAST COLLINSVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1178753545",
+    "lat": 38.6827002,
+    "lon": -89.9375232,
+    "name": "Kren Substation",
+    "norm": "KREN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1178753559",
+    "lat": 38.8316699,
+    "lon": -90.0341527,
+    "name": "Wanda Substation",
+    "norm": "WANDA",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1178753560",
+    "lat": 38.7243569,
+    "lon": -89.7457637,
+    "name": "Ameren",
+    "norm": "AMEREN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1179586663",
+    "lat": 38.6588395,
+    "lon": -90.1749074,
+    "name": "Gateway Substation",
+    "norm": "GATEWAY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1179983962",
+    "lat": 38.3694741,
+    "lon": -89.7740208,
+    "name": "Bee Hollow Road Subtation",
+    "norm": "BEE HOLLOW ROAD SUBTATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1179983965",
+    "lat": 38.3033309,
+    "lon": -89.8475721,
+    "name": "New Athens Dutch Hills Substation",
+    "norm": "NEW ATHENS DUTCH HILLS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1179983971",
+    "lat": 38.5206659,
+    "lon": -90.0027794,
+    "name": "Belleville 17th Street Substation",
+    "norm": "BELLEVILLE 17TH STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1179983975",
+    "lat": 38.5437733,
+    "lon": -90.1011858,
+    "name": "Centerville Substation",
+    "norm": "CENTERVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/119097401",
+    "lat": 41.8933579,
+    "lon": -88.2242639,
+    "name": "West Chicago Substation",
+    "norm": "WEST CHICAGO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/120237346",
+    "lat": 42.3351916,
+    "lon": -88.2802241,
+    "name": "McHenry Substation",
+    "norm": "MCHENRY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1206006299",
+    "lat": 38.6668576,
+    "lon": -90.1705771,
+    "name": "Venice 4th Street Substation",
+    "norm": "VENICE 4TH STREET",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1225446913",
+    "lat": 40.9163904,
+    "lon": -89.8138991,
+    "name": "Ameren",
+    "norm": "AMEREN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/123387706",
+    "lat": 41.7772868,
+    "lon": -88.2067056,
+    "name": "Naperville Substation",
+    "norm": "NAPERVILLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/124764750",
+    "lat": 39.8458857,
+    "lon": -89.5973924,
+    "name": "Bissell Substation",
+    "norm": "BISSELL",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/124865475",
+    "lat": 41.8837701,
+    "lon": -87.629166,
+    "name": "Dearborn Street  Substation",
+    "norm": "DEARBORN STREET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/124912791",
+    "lat": 41.7480525,
+    "lon": -88.1954693,
+    "name": "Fort Hill Substation",
+    "norm": "FORT HILL",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1250486697",
+    "lat": 41.5607599,
+    "lon": -87.6358061,
+    "name": "Thornton Substation",
+    "norm": "THORNTON",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1258365036",
+    "lat": 40.0996708,
+    "lon": -88.2224013,
+    "name": "Southeast Substation",
+    "norm": "SOUTHEAST",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1270467764",
+    "lat": 38.1152598,
+    "lon": -89.3494516,
+    "name": "Commodore Substation",
+    "norm": "COMMODORE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/129955360",
+    "lat": 39.5935113,
+    "lon": -89.4962175,
+    "name": "Kincaid Station",
+    "norm": "KINCAID STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1301780206",
+    "lat": 38.6735631,
+    "lon": -88.4318613,
+    "name": "Flora East Substation",
+    "norm": "FLORA EAST",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1305986866",
+    "lat": 41.9537904,
+    "lon": -87.7452864,
+    "name": "Irving Park Substation",
+    "norm": "IRVING PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1307553869",
+    "lat": 38.0852675,
+    "lon": -89.3806503,
+    "name": "Pickneyville Substation",
+    "norm": "PICKNEYVILLE",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1307999684",
+    "lat": 38.6772345,
+    "lon": -88.3818683,
+    "name": "Clay City Substation",
+    "norm": "CLAY CITY",
+    "operator": "Hoosier Energy",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1309086602",
+    "lat": 38.5448621,
+    "lon": -88.4024469,
+    "name": "Rinard Substation",
+    "norm": "RINARD",
+    "operator": "Hoosier Energy",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1314057405",
+    "lat": 38.5441793,
+    "lon": -90.0570345,
+    "name": "Belleville 74th Street Substation",
+    "norm": "BELLEVILLE 74TH STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1326411470",
+    "lat": 42.2776788,
+    "lon": -88.7917712,
+    "name": "Embrace Substation",
+    "norm": "EMBRACE",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1327807518",
+    "lat": 42.3134922,
+    "lon": -87.8329097,
+    "name": "Building 11A",
+    "norm": "BUILDING 11A",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1330190133",
+    "lat": 39.9617989,
+    "lon": -89.617134,
+    "name": "Fancy Creek Substation",
+    "norm": "FANCY CREEK",
+    "operator": "Prairie Power, Inc.",
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1330210707",
+    "lat": 41.9281978,
+    "lon": -87.6531188,
+    "name": "CTA Lincoln Substation",
+    "norm": "CTA LINCOLN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1331761646",
+    "lat": 41.9056399,
+    "lon": -87.9037087,
+    "name": "Northlake Substation",
+    "norm": "NORTHLAKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1332831214",
+    "lat": 41.9103932,
+    "lon": -87.6394353,
+    "name": "CTA Sedgwick Substation",
+    "norm": "CTA SEDGWICK",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1333101516",
+    "lat": 41.9018298,
+    "lon": -87.6366374,
+    "name": "CTA Hill Substation",
+    "norm": "CTA HILL",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1334387012",
+    "lat": 41.8599357,
+    "lon": -87.8417658,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387013",
+    "lat": 41.8605016,
+    "lon": -87.8418307,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387015",
+    "lat": 41.8596819,
+    "lon": -87.8417141,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387016",
+    "lat": 41.8592737,
+    "lon": -87.841689,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387017",
+    "lat": 41.8579201,
+    "lon": -87.8416801,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387018",
+    "lat": 41.8560956,
+    "lon": -87.8416724,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387026",
+    "lat": 41.8604602,
+    "lon": -87.8383599,
+    "name": "Emergency Generator",
+    "norm": "EMERGENCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1334387027",
+    "lat": 41.8544186,
+    "lon": -87.8417711,
+    "name": "Emergancy Generator",
+    "norm": "EMERGANCY GENERATOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/134249121",
+    "lat": 41.7825518,
+    "lon": -88.1716344,
+    "name": "Ogden Substation",
+    "norm": "OGDEN",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1354415239",
+    "lat": 38.4571457,
+    "lon": -90.0901549,
+    "name": "Millstadt Substation",
+    "norm": "MILLSTADT",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1361863737",
+    "lat": 38.7178765,
+    "lon": -90.0111165,
+    "name": "Southwestern Electric Cooperative",
+    "norm": "SOUTHWESTERN ELECTRIC COOPERATIVE",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1363352224",
+    "lat": 39.9610446,
+    "lon": -89.6175545,
+    "name": "Athens Substation",
+    "norm": "ATHENS",
+    "operator": "Prairie Power, Inc.",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1374277512",
+    "lat": 39.4434488,
+    "lon": -89.6636163,
+    "name": "Waggoner Junction Substation",
+    "norm": "WAGGONER JUNCTION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1377088940",
+    "lat": 38.5534287,
+    "lon": -90.0421333,
+    "name": "Belleville 65th Street Substation",
+    "norm": "BELLEVILLE 65TH STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1378956418",
+    "lat": 41.9837579,
+    "lon": -89.5761988,
+    "name": "Polo Substation",
+    "norm": "POLO",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1381548185",
+    "lat": 41.6966173,
+    "lon": -87.9695824,
+    "name": "ESS J310-1 Argonne",
+    "norm": "ESS J310-1 ARGONNE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1387869164",
+    "lat": 38.4180939,
+    "lon": -88.3674566,
+    "name": "Martin Creek Meter Point",
+    "norm": "MARTIN CREEK METER POINT",
+    "operator": "Hoosier Energy",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1391818318",
+    "lat": 42.066149,
+    "lon": -87.9791238,
+    "name": "DCE 39",
+    "norm": "DCE 39",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1395577384",
+    "lat": 40.5283163,
+    "lon": -89.1779672,
+    "name": "Ameren",
+    "norm": "AMEREN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1414990931",
+    "lat": 38.8991819,
+    "lon": -90.1581425,
+    "name": "Ameren",
+    "norm": "AMEREN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1420989196",
+    "lat": 41.5311201,
+    "lon": -88.0835809,
+    "name": "Joliet Substation",
+    "norm": "JOLIET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/143796828",
+    "lat": 41.9164676,
+    "lon": -88.3132459,
+    "name": "City of St. Charles Electrical Substation",
+    "norm": "CITY OF ST. CHARLES ELECTRICAL",
+    "operator": "City of St. Charles",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1441706935",
+    "lat": 38.5956767,
+    "lon": -90.0736945,
+    "name": "Edgemont substation",
+    "norm": "EDGEMONT",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "34000"
+  },
+  {
+    "id": "way/144479779",
+    "lat": 41.7929448,
+    "lon": -87.5886243,
+    "name": "Harper Avenue Substation",
+    "norm": "HARPER AVENUE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1450988051",
+    "lat": 39.2253412,
+    "lon": -90.4844681,
+    "name": "Eldred Substation",
+    "norm": "ELDRED",
+    "operator": "Prairie Power Inc.",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1451448580",
+    "lat": 40.267176,
+    "lon": -89.2243446,
+    "name": "Atlanta Substation",
+    "norm": "ATLANTA",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1458500404",
+    "lat": 40.7232592,
+    "lon": -89.2732931,
+    "name": "Eureka Substation",
+    "norm": "EUREKA",
+    "operator": null,
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1458500418",
+    "lat": 41.1360396,
+    "lon": -89.3400601,
+    "name": "Orbia Substation",
+    "norm": "ORBIA",
+    "operator": "Orbia",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1459054535",
+    "lat": 41.1337774,
+    "lon": -89.3635459,
+    "name": "Ameren Henry Substation",
+    "norm": "AMEREN HENRY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "69000/12.47kv"
+  },
+  {
+    "id": "way/1462641671",
+    "lat": 41.7805943,
+    "lon": -87.6184229,
+    "name": "CTA East 63rd Street Substation",
+    "norm": "CTA EAST 63RD STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1462666467",
+    "lat": 41.7787026,
+    "lon": -87.6597003,
+    "name": "CTA Loomis Substation",
+    "norm": "CTA LOOMIS",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1462930850",
+    "lat": 41.8744062,
+    "lon": -87.8183961,
+    "name": "CTA Forest Park Substation",
+    "norm": "CTA FOREST PARK",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1463956813",
+    "lat": 38.6341209,
+    "lon": -89.1228935,
+    "name": "Sandoval Substation",
+    "norm": "SANDOVAL",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1482296894",
+    "lat": 42.3632033,
+    "lon": -88.9460684,
+    "name": "Argyle Substation",
+    "norm": "ARGYLE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1485092178",
+    "lat": 38.5821178,
+    "lon": -89.5540089,
+    "name": "Breese Substation",
+    "norm": "BREESE",
+    "operator": "Clinton County Electric Cooperative",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/148803815",
+    "lat": 41.8728501,
+    "lon": -87.631379,
+    "name": "LaSalle Substation",
+    "norm": "LASALLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/148903010",
+    "lat": 41.8689811,
+    "lon": -87.6427867,
+    "name": "DeKoven Substation",
+    "norm": "DEKOVEN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/149119621",
+    "lat": 41.8752557,
+    "lon": -87.6284038,
+    "name": "Plymouth Court Substation",
+    "norm": "PLYMOUTH COURT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1502580937",
+    "lat": 41.8829883,
+    "lon": -87.6701381,
+    "name": "CTA Washington Blvd Substation",
+    "norm": "CTA WASHINGTON BLVD",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1503923965",
+    "lat": 41.8734925,
+    "lon": -87.6698432,
+    "name": "CTA Hermitage Substation",
+    "norm": "CTA HERMITAGE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1506161604",
+    "lat": 41.8587285,
+    "lon": -87.6260905,
+    "name": "CTA 18th Street Substation",
+    "norm": "CTA 18TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1507555583",
+    "lat": 41.7870437,
+    "lon": -87.6185578,
+    "name": "CTA 59th Street Substation",
+    "norm": "CTA 59TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1507835769",
+    "lat": 41.7807146,
+    "lon": -87.6032347,
+    "name": "CTA Cottage Grove Substation",
+    "norm": "CTA COTTAGE GROVE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1507864669",
+    "lat": 41.808931,
+    "lon": -87.6185008,
+    "name": "CTA Calumet Substation",
+    "norm": "CTA CALUMET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1508003021",
+    "lat": 41.886068,
+    "lon": -87.6273662,
+    "name": "CTA East Lake Substation",
+    "norm": "CTA EAST LAKE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1508003475",
+    "lat": 41.8776041,
+    "lon": -87.6347844,
+    "name": "CTA Franklin Substation",
+    "norm": "CTA FRANKLIN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1508523813",
+    "lat": 41.9372564,
+    "lon": -87.7127461,
+    "name": "CTA Barry Substation",
+    "norm": "CTA BARRY",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1508615950",
+    "lat": 41.9101242,
+    "lon": -87.6782956,
+    "name": "CTA Damen Substation",
+    "norm": "CTA DAMEN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509577140",
+    "lat": 42.0730566,
+    "lon": -87.6912324,
+    "name": "CTA Linden Substation",
+    "norm": "CTA LINDEN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509579998",
+    "lat": 42.0586823,
+    "lon": -87.6833348,
+    "name": "CTA Noyes Substation",
+    "norm": "CTA NOYES",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509584059",
+    "lat": 42.0212549,
+    "lon": -87.6770182,
+    "name": "CTA Calvary Substation",
+    "norm": "CTA CALVARY",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509590151",
+    "lat": 42.0230344,
+    "lon": -87.7218411,
+    "name": "CTA Hamlin Substation",
+    "norm": "CTA HAMLIN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509597178",
+    "lat": 42.0352059,
+    "lon": -87.7496363,
+    "name": "CTA Skokie Substation",
+    "norm": "CTA SKOKIE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509599806",
+    "lat": 42.0063468,
+    "lon": -87.6657589,
+    "name": "CTA Farwell Substation",
+    "norm": "CTA FARWELL",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509645587",
+    "lat": 41.9882025,
+    "lon": -87.6593129,
+    "name": "CTA Broadway Substation",
+    "norm": "CTA BROADWAY",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509653311",
+    "lat": 41.9620176,
+    "lon": -87.6572445,
+    "name": "ComEd Montrose Substation",
+    "norm": "COMED MONTROSE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1509653317",
+    "lat": 41.9624756,
+    "lon": -87.6574538,
+    "name": "CTA Clifton Substation",
+    "norm": "CTA CLIFTON",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509659911",
+    "lat": 41.9430562,
+    "lon": -87.6535062,
+    "name": "CTA Clark Substation",
+    "norm": "CTA CLARK",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1509939765",
+    "lat": 41.9501786,
+    "lon": -87.674466,
+    "name": "CTA Grace Substation",
+    "norm": "CTA GRACE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1510040524",
+    "lat": 41.9660801,
+    "lon": -87.6874026,
+    "name": "CTA Ravenswood Substation",
+    "norm": "CTA RAVENSWOOD",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1510045041",
+    "lat": 41.9663399,
+    "lon": -87.7116885,
+    "name": "CTA Kimball Substation",
+    "norm": "CTA KIMBALL",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1510719443",
+    "lat": 41.917536,
+    "lon": -87.6526191,
+    "name": "CTA Armitage Substation",
+    "norm": "CTA ARMITAGE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1511813371",
+    "lat": 41.9803439,
+    "lon": -87.8981052,
+    "name": "CTA O'Hare Substation",
+    "norm": "CTA O'HARE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1511815043",
+    "lat": 41.9827126,
+    "lon": -87.7845473,
+    "name": "CTA Nagle Substation",
+    "norm": "CTA NAGLE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1511816896",
+    "lat": 41.9718333,
+    "lon": -87.7658986,
+    "name": "CTA Edmunds Substation",
+    "norm": "CTA EDMUNDS",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1512123171",
+    "lat": 41.9542454,
+    "lon": -87.7302296,
+    "name": "CTA Kedvale Substation",
+    "norm": "CTA KEDVALE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1512293519",
+    "lat": 41.9254614,
+    "lon": -87.702724,
+    "name": "CTA Sacramento Substation",
+    "norm": "CTA SACRAMENTO",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1512615537",
+    "lat": 41.901345,
+    "lon": -87.6637701,
+    "name": "CTA Milwaukee Substation",
+    "norm": "CTA MILWAUKEE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1512627678",
+    "lat": 41.8755358,
+    "lon": -87.65216,
+    "name": "CTA Morgan Substation",
+    "norm": "CTA MORGAN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1512668126",
+    "lat": 41.891037,
+    "lon": -87.6332159,
+    "name": "CTA Illinois Substation",
+    "norm": "CTA ILLINOIS",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1513541362",
+    "lat": 41.8867265,
+    "lon": -87.8053912,
+    "name": "CTA Harlem Substation",
+    "norm": "CTA HARLEM",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1513565194",
+    "lat": 41.8870772,
+    "lon": -87.7621401,
+    "name": "CTA Lotus Substation",
+    "norm": "CTA LOTUS",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1513725968",
+    "lat": 41.885632,
+    "lon": -87.7241054,
+    "name": "CTA Springfield Substation",
+    "norm": "CTA SPRINGFIELD",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1513749375",
+    "lat": 41.8848691,
+    "lon": -87.6861329,
+    "name": "CTA Western Substation",
+    "norm": "CTA WESTERN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1513869140",
+    "lat": 40.1603442,
+    "lon": -88.3152906,
+    "name": "Anderson Grain Substation",
+    "norm": "ANDERSON GRAIN",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1514064698",
+    "lat": 41.88407,
+    "lon": -87.6438536,
+    "name": "CTA Haymarket Substation",
+    "norm": "CTA HAYMARKET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1514904501",
+    "lat": 41.8709787,
+    "lon": -87.7832806,
+    "name": "CTA Ridgeland Substation",
+    "norm": "CTA RIDGELAND",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1514951863",
+    "lat": 41.8727284,
+    "lon": -87.7394274,
+    "name": "CTA Kolmar Substation",
+    "norm": "CTA KOLMAR",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1515050412",
+    "lat": 41.873851,
+    "lon": -87.7063504,
+    "name": "CTA Kedzie Substation",
+    "norm": "CTA KEDZIE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1515705709",
+    "lat": 41.854006,
+    "lon": -87.7608778,
+    "name": "CTA 54th Avenue Substation",
+    "norm": "CTA 54TH AVENUE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1515712776",
+    "lat": 41.8542506,
+    "lon": -87.7239186,
+    "name": "CTA Harding Substation",
+    "norm": "CTA HARDING",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1516672432",
+    "lat": 41.8542864,
+    "lon": -87.685313,
+    "name": "CTA Douglas Substation",
+    "norm": "CTA DOUGLAS",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1516695552",
+    "lat": 41.8584045,
+    "lon": -87.6693376,
+    "name": "CTA 17th Street Substation",
+    "norm": "CTA 17TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1517049881",
+    "lat": 41.7876408,
+    "lon": -87.7386467,
+    "name": "CTA Midway Substation",
+    "norm": "CTA MIDWAY",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1517051376",
+    "lat": 41.7989187,
+    "lon": -87.7279079,
+    "name": "CTA Keeler Substation",
+    "norm": "CTA KEELER",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1518480541",
+    "lat": 41.8045886,
+    "lon": -87.705107,
+    "name": "CTA Kedzie Substation",
+    "norm": "CTA KEDZIE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1518515154",
+    "lat": 41.8260633,
+    "lon": -87.6863735,
+    "name": "CTA Archer Substation",
+    "norm": "CTA ARCHER",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1518533298",
+    "lat": 41.8382711,
+    "lon": -87.6652415,
+    "name": "CTA Ashland Substation",
+    "norm": "CTA ASHLAND",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1518976195",
+    "lat": 41.852362,
+    "lon": -87.6381584,
+    "name": "CTA Canal Substation",
+    "norm": "CTA CANAL",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1518981795",
+    "lat": 41.8665479,
+    "lon": -87.6269737,
+    "name": "CTA State Substation",
+    "norm": "CTA STATE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1519725193",
+    "lat": 41.8440162,
+    "lon": -87.6302716,
+    "name": "CTA 27th Street Substation",
+    "norm": "CTA 27TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1519749335",
+    "lat": 41.830336,
+    "lon": -87.6260979,
+    "name": "CTA 35th Street Substation",
+    "norm": "CTA 35TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1520822938",
+    "lat": 41.8224256,
+    "lon": -87.6316853,
+    "name": "CTA Pershing Substation",
+    "norm": "CTA PERSHING",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1521925734",
+    "lat": 41.8032321,
+    "lon": -87.6324361,
+    "name": "CTA 50th Street Substation",
+    "norm": "CTA 50TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1521957810",
+    "lat": 41.7802012,
+    "lon": -87.6324125,
+    "name": "CTA Princeton Substation",
+    "norm": "CTA PRINCETON",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1523077517",
+    "lat": 41.7511648,
+    "lon": -87.6273367,
+    "name": "CTA 79th Street Substation",
+    "norm": "CTA 79TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1523109395",
+    "lat": 41.7205376,
+    "lon": -87.6254522,
+    "name": "CTA 95th Street Substation",
+    "norm": "CTA 95TH STREET",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1523786653",
+    "lat": 41.8050874,
+    "lon": -87.6815907,
+    "name": "CTA 48th Place Substation",
+    "norm": "CTA 48TH PLACE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/1532545420",
+    "lat": 40.9365028,
+    "lon": -89.2854064,
+    "name": "Solar Switch Richland",
+    "norm": "SOLAR SWITCH RICHLAND",
+    "operator": "Ameren Trajectory Azimuth",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1532545421",
+    "lat": 40.9365068,
+    "lon": -89.2843546,
+    "name": "Richland Collection Sub",
+    "norm": "RICHLAND COLLECTION",
+    "operator": "Azimuth and Trajectory",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1532922764",
+    "lat": 40.6625868,
+    "lon": -89.6223948,
+    "name": "Peoria sanitation substation",
+    "norm": "PEORIA SANITATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1532928323",
+    "lat": 40.731574,
+    "lon": -89.5232569,
+    "name": "Reos",
+    "norm": "REOS",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1533427888",
+    "lat": 40.5614257,
+    "lon": -89.9753511,
+    "name": "Canton City Waterworks",
+    "norm": "CANTON CITY WATERWORKS",
+    "operator": null,
+    "state": "IL",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1533459179",
+    "lat": 40.2001184,
+    "lon": -89.7167896,
+    "name": "Mason city solar collector",
+    "norm": "MASON CITY SOLAR COLLECTOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1536092783",
+    "lat": 40.7384578,
+    "lon": -88.9970117,
+    "name": "Corteva Agriscience Substation",
+    "norm": "CORTEVA AGRISCIENCE",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1536092785",
+    "lat": 40.7421784,
+    "lon": -88.8789678,
+    "name": "Gridley Substation",
+    "norm": "GRIDLEY",
+    "operator": null,
+    "state": "IL",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1541167629",
+    "lat": 39.0414528,
+    "lon": -89.472145,
+    "name": "Redhawk Substation",
+    "norm": "REDHAWK",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1541168159",
+    "lat": 39.0415635,
+    "lon": -89.7519661,
+    "name": "Rezzy Substation",
+    "norm": "REZZY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1541220194",
+    "lat": 38.8160455,
+    "lon": -89.9625709,
+    "name": "Edwardsville Second Street Substation",
+    "norm": "EDWARDSVILLE SECOND STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/1548054776",
+    "lat": 39.8962469,
+    "lon": -88.9284541,
+    "name": "Decatur correctional substation",
+    "norm": "DECATUR CORRECTIONAL",
+    "operator": null,
+    "state": "IL",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/156582012",
+    "lat": 41.7978468,
+    "lon": -88.233356,
+    "name": "Electric Junction Substation",
+    "norm": "ELECTRIC JUNCTION",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/157842593",
+    "lat": 38.3334506,
+    "lon": -88.9683201,
+    "name": "West Mount Vernon Substation",
+    "norm": "WEST MOUNT VERNON",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/157842608",
+    "lat": 37.8785222,
+    "lon": -88.8492701,
+    "name": "West Frankfort East Substation",
+    "norm": "WEST FRANKFORT EAST",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/157842609",
+    "lat": 37.2100977,
+    "lon": -88.860219,
+    "name": "Joppa Station",
+    "norm": "JOPPA STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/158621273",
+    "lat": 41.8930095,
+    "lon": -87.6300277,
+    "name": "Ontario Street Substation",
+    "norm": "ONTARIO STREET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/163086993",
+    "lat": 41.9399228,
+    "lon": -87.786474,
+    "name": "School Street Substation",
+    "norm": "SCHOOL STREET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/163327752",
+    "lat": 41.9820569,
+    "lon": -87.8098006,
+    "name": "CTA Bryn Mawr Substation",
+    "norm": "CTA BRYN MAWR",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/163490893",
+    "lat": 41.9800873,
+    "lon": -87.8964416,
+    "name": "RB-40 Substation",
+    "norm": "RB-40",
+    "operator": "Chicago Department of Aviation",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/163490905",
+    "lat": 41.9881964,
+    "lon": -87.8833552,
+    "name": "Facility Power Substation 6",
+    "norm": "FACILITY POWER 6",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/163490929",
+    "lat": 41.9811838,
+    "lon": -87.8831551,
+    "name": "Traction Power Substation C",
+    "norm": "TRACTION POWER C",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/163490930",
+    "lat": 41.9764302,
+    "lon": -87.8913679,
+    "name": "Traction Power Substation B",
+    "norm": "TRACTION POWER B",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/163500118",
+    "lat": 41.9798972,
+    "lon": -87.9050678,
+    "name": "Facility Power Substation 1 & 2",
+    "norm": "FACILITY POWER 1 & 2",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/163500151",
+    "lat": 41.9766741,
+    "lon": -87.9030931,
+    "name": "Traction Power Substation A",
+    "norm": "TRACTION POWER A",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/164021885",
+    "lat": 41.9862609,
+    "lon": -87.719684,
+    "name": "Transformer Building",
+    "norm": "TRANSFORMER BUILDING",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/170481316",
+    "lat": 41.5254785,
+    "lon": -90.3538231,
+    "name": "Sub 39",
+    "norm": "39",
+    "operator": "MidAmerican Energy",
+    "state": "IL",
+    "voltage": "345000;161000;69000"
+  },
+  {
+    "id": "way/170481687",
+    "lat": 41.8277289,
+    "lon": -89.4072859,
+    "name": "Lee County Energy Center Station",
+    "norm": "LEE COUNTY ENERGY CENTER STATION",
+    "operator": "Duke Energy",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/170772176",
+    "lat": 41.3976969,
+    "lon": -90.5860201,
+    "name": "Oak Grove Substation",
+    "norm": "OAK GROVE",
+    "operator": "MidAmerican Energy",
+    "state": "IL",
+    "voltage": "345000;161000"
+  },
+  {
+    "id": "way/176733289",
+    "lat": 42.0740617,
+    "lon": -89.2866069,
+    "name": "Byron Station",
+    "norm": "BYRON STATION",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176749154",
+    "lat": 40.5406064,
+    "lon": -89.6865624,
+    "name": "Powerton Station",
+    "norm": "POWERTON STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176877468",
+    "lat": 38.0313568,
+    "lon": -88.2769083,
+    "name": "Norris City North Substation",
+    "norm": "NORRIS CITY NORTH",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176884615",
+    "lat": 37.8893064,
+    "lon": -88.9331723,
+    "name": "West Frankfort Substation",
+    "norm": "WEST FRANKFORT",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/176889941",
+    "lat": 38.2738349,
+    "lon": -89.666783,
+    "name": "Prairie State Station",
+    "norm": "PRAIRIE STATE STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176900411",
+    "lat": 38.2039164,
+    "lon": -89.8515766,
+    "name": "Baldwin Station",
+    "norm": "BALDWIN STATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176900440",
+    "lat": 38.1978131,
+    "lon": -89.8466198,
+    "name": "Baldwin Substation",
+    "norm": "BALDWIN",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176907954",
+    "lat": 38.4813953,
+    "lon": -89.9555676,
+    "name": "Turkey Hill Substation",
+    "norm": "TURKEY HILL",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176907971",
+    "lat": 38.482691,
+    "lon": -89.9940945,
+    "name": "South Belleville Substation",
+    "norm": "SOUTH BELLEVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176911637",
+    "lat": 38.1116369,
+    "lon": -89.3484177,
+    "name": "Pinckneyville Station",
+    "norm": "PINCKNEYVILLE STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/176915613",
+    "lat": 38.7356546,
+    "lon": -90.043922,
+    "name": "Stallings Substation",
+    "norm": "STALLINGS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176915614",
+    "lat": 38.8249854,
+    "lon": -90.0971383,
+    "name": "Roxford Substation",
+    "norm": "ROXFORD",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176919488",
+    "lat": 38.699455,
+    "lon": -88.5378171,
+    "name": "Raccoon Creek Station",
+    "norm": "RACCOON CREEK STATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177059087",
+    "lat": 39.2676007,
+    "lon": -88.0828873,
+    "name": "Casey West Substation",
+    "norm": "CASEY WEST",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/177059088",
+    "lat": 39.2214242,
+    "lon": -88.759197,
+    "name": "Holland Station",
+    "norm": "HOLLAND STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177059089",
+    "lat": 39.276865,
+    "lon": -88.4743711,
+    "name": "Neoga Substation",
+    "norm": "NEOGA",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177059090",
+    "lat": 38.9387713,
+    "lon": -88.2746917,
+    "name": "Newton Station",
+    "norm": "NEWTON STATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177059091",
+    "lat": 39.1849145,
+    "lon": -89.0287579,
+    "name": "Ramsey Substation",
+    "norm": "RAMSEY",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177068496",
+    "lat": 39.0632404,
+    "lon": -89.4002838,
+    "name": "Coffeen Station",
+    "norm": "COFFEEN STATION",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177076013",
+    "lat": 39.5913245,
+    "lon": -89.5942697,
+    "name": "Pawnee Substation",
+    "norm": "PAWNEE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177076023",
+    "lat": 39.408489,
+    "lon": -89.0799142,
+    "name": "Pana",
+    "norm": "PANA",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177078584",
+    "lat": 39.8512445,
+    "lon": -89.3353811,
+    "name": "Lanesville Substation",
+    "norm": "LANESVILLE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177078585",
+    "lat": 40.8421713,
+    "lon": -88.5990679,
+    "name": "Pontiac Midpoint Substation",
+    "norm": "PONTIAC MIDPOINT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177078586",
+    "lat": 40.4526771,
+    "lon": -88.9045724,
+    "name": "Brokaw Substation",
+    "norm": "BROKAW",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000;69000"
+  },
+  {
+    "id": "way/177081445",
+    "lat": 40.5622137,
+    "lon": -89.5374492,
+    "name": "Tazewell",
+    "norm": "TAZEWELL",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000;69000"
+  },
+  {
+    "id": "way/177188586",
+    "lat": 40.4788407,
+    "lon": -88.7973997,
+    "name": "Blue Mound Substation",
+    "norm": "BLUE MOUND",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177333262",
+    "lat": 40.0236465,
+    "lon": -88.0553883,
+    "name": "Sidney Substation",
+    "norm": "SIDNEY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177340098",
+    "lat": 39.9926851,
+    "lon": -87.699193,
+    "name": "Bunsenville Substation",
+    "norm": "BUNSENVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/177545384",
+    "lat": 41.8945229,
+    "lon": -88.0434599,
+    "name": "ComEd Lombard Substation",
+    "norm": "COMED LOMBARD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177545536",
+    "lat": 41.8445468,
+    "lon": -88.2554304,
+    "name": "Fermilab Master Substation",
+    "norm": "FERMILAB MASTER",
+    "operator": "Fermilab National Accelerator Laboratory",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177545537",
+    "lat": 41.8233711,
+    "lon": -88.2597544,
+    "name": "Fermilab Kautz Road Substation",
+    "norm": "FERMILAB KAUTZ ROAD",
+    "operator": "Fermilab National Accelerator Laboratory",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177599080",
+    "lat": 42.4466688,
+    "lon": -87.8053221,
+    "name": "Zion Substation",
+    "norm": "ZION",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/177599162",
+    "lat": 42.3211855,
+    "lon": -87.8765152,
+    "name": "North Chicago Substation",
+    "norm": "NORTH CHICAGO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177767948",
+    "lat": 42.2785672,
+    "lon": -87.866631,
+    "name": "Lake Bluff Substation",
+    "norm": "LAKE BLUFF",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177930721",
+    "lat": 41.8333092,
+    "lon": -88.045926,
+    "name": "Butterfield Substation",
+    "norm": "BUTTERFIELD",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177930723",
+    "lat": 41.6382094,
+    "lon": -88.0948301,
+    "name": "Romeoville Substation",
+    "norm": "ROMEOVILLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/178383395",
+    "lat": 42.2027591,
+    "lon": -88.2350719,
+    "name": "Cary Substation",
+    "norm": "CARY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/181036332",
+    "lat": 41.805329,
+    "lon": -88.1477419,
+    "name": "Tollway Electrical Substation",
+    "norm": "TOLLWAY ELECTRICAL",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/182950157",
+    "lat": 41.928737,
+    "lon": -88.0796349,
+    "name": "Glendale Heights Substation",
+    "norm": "GLENDALE HEIGHTS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/184516768",
+    "lat": 41.9843481,
+    "lon": -88.3282662,
+    "name": "South Elgin Substation",
+    "norm": "SOUTH ELGIN",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/187195010",
+    "lat": 42.3060869,
+    "lon": -87.8996114,
+    "name": "AP11",
+    "norm": "AP11",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/188354290",
+    "lat": 39.0419778,
+    "lon": -89.7495341,
+    "name": "North Staunton Subtation",
+    "norm": "NORTH STAUNTON SUBTATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/188551149",
+    "lat": 42.0018979,
+    "lon": -87.8820861,
+    "name": "ComEd - TSS198 Des Plaines",
+    "norm": "COMED - TSS198 DES PLAINES",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/188551315",
+    "lat": 42.2603491,
+    "lon": -89.0189659,
+    "name": "Alpine Substation",
+    "norm": "ALPINE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/190664577",
+    "lat": 38.6186441,
+    "lon": -88.9763817,
+    "name": "West Salem Substation",
+    "norm": "WEST SALEM",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/192332574",
+    "lat": 39.7991218,
+    "lon": -88.0566194,
+    "name": "Murdock Substation",
+    "norm": "MURDOCK",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/192681935",
+    "lat": 39.8131515,
+    "lon": -88.3532431,
+    "name": "Tuscola West Substation",
+    "norm": "TUSCOLA WEST",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/197208030",
+    "lat": 42.0243477,
+    "lon": -87.7217119,
+    "name": "CTA Hamlin Substation",
+    "norm": "CTA HAMLIN",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/197982597",
+    "lat": 42.0781475,
+    "lon": -87.7088489,
+    "name": "ComEd Wilmette Substation",
+    "norm": "COMED WILMETTE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/199560762",
+    "lat": 41.8786606,
+    "lon": -87.6226349,
+    "name": "Metra Jackson Substation",
+    "norm": "METRA JACKSON",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/202150196",
+    "lat": 41.5235537,
+    "lon": -87.6057943,
+    "name": "ComEd Chicago Heights Substation",
+    "norm": "COMED CHICAGO HEIGHTS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/209359404",
+    "lat": 41.8744004,
+    "lon": -87.6909009,
+    "name": "Congress Substation",
+    "norm": "CONGRESS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/209388403",
+    "lat": 41.9008469,
+    "lon": -87.6873531,
+    "name": "Humboldt Park Substation",
+    "norm": "HUMBOLDT PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/209477942",
+    "lat": 41.9660796,
+    "lon": -87.6863833,
+    "name": "ComEd Substation",
+    "norm": "COMED",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/209884169",
+    "lat": 41.930761,
+    "lon": -87.6759467,
+    "name": "ComEd Diversey Substation",
+    "norm": "COMED DIVERSEY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/210013474",
+    "lat": 41.6704403,
+    "lon": -87.6589532,
+    "name": "Metra Laflin Street Substation",
+    "norm": "METRA LAFLIN STREET",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/210320778",
+    "lat": 41.9319526,
+    "lon": -87.656639,
+    "name": "Lakeview Substation",
+    "norm": "LAKEVIEW",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/210542510",
+    "lat": 41.8596053,
+    "lon": -87.6211789,
+    "name": "Metra 16th Street Substation",
+    "norm": "METRA 16TH STREET",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/210665969",
+    "lat": 41.8708331,
+    "lon": -87.6430491,
+    "name": "Jefferson Street Substation",
+    "norm": "JEFFERSON STREET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/210679946",
+    "lat": 41.8917733,
+    "lon": -87.6384342,
+    "name": "Kingsbury Substation",
+    "norm": "KINGSBURY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/210694350",
+    "lat": 41.6815593,
+    "lon": -87.6136138,
+    "name": "Metra Front Street Substation",
+    "norm": "METRA FRONT STREET",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/210701571",
+    "lat": 41.6967204,
+    "lon": -87.62047,
+    "name": "Roseland Substation",
+    "norm": "ROSELAND",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/210815064",
+    "lat": 41.721793,
+    "lon": -87.604248,
+    "name": "Metra Burnside Substation",
+    "norm": "METRA BURNSIDE",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/210906244",
+    "lat": 41.7824997,
+    "lon": -87.6055406,
+    "name": "62nd Street Substation",
+    "norm": "62ND STREET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/210910677",
+    "lat": 41.8036342,
+    "lon": -87.6069572,
+    "name": "University Substation",
+    "norm": "UNIVERSITY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/211173325",
+    "lat": 41.7692495,
+    "lon": -87.5919999,
+    "name": "Metra Brookdale Substation",
+    "norm": "METRA BROOKDALE",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/211173326",
+    "lat": 41.7694398,
+    "lon": -87.591961,
+    "name": "Brookdale Substation",
+    "norm": "BROOKDALE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/211327656",
+    "lat": 41.6505865,
+    "lon": -87.5490184,
+    "name": "Metra Hegewisch Substation",
+    "norm": "METRA HEGEWISCH",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/214219062",
+    "lat": 41.8849023,
+    "lon": -87.8714998,
+    "name": "Bellwood Substation",
+    "norm": "BELLWOOD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/214219064",
+    "lat": 41.8945135,
+    "lon": -87.9109514,
+    "name": "ComEd Berkeley 138kV Substation",
+    "norm": "COMED BERKELEY 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/214219066",
+    "lat": 41.9227501,
+    "lon": -87.9227152,
+    "name": "ComEd Elmhurst 138kV-345kV Substation",
+    "norm": "COMED ELMHURST 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/214219068",
+    "lat": 41.8513515,
+    "lon": -87.9346482,
+    "name": "Oak Brook Substation",
+    "norm": "OAK BROOK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/214219069",
+    "lat": 41.7957576,
+    "lon": -87.6281376,
+    "name": "ComEd Garfield 345kV Substation",
+    "norm": "COMED GARFIELD 345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/214219077",
+    "lat": 41.921259,
+    "lon": -87.9121802,
+    "name": "Northlake Substation",
+    "norm": "NORTHLAKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/217007024",
+    "lat": 41.7035218,
+    "lon": -87.6541455,
+    "name": "ComEd Beverly Substation",
+    "norm": "COMED BEVERLY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/217755461",
+    "lat": 41.9597507,
+    "lon": -87.8339427,
+    "name": "Norridge Substation",
+    "norm": "NORRIDGE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/217817024",
+    "lat": 41.9252156,
+    "lon": -87.7909031,
+    "name": "ComEd Natoma Substation",
+    "norm": "COMED NATOMA",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/225718685",
+    "lat": 41.7985355,
+    "lon": -87.9459378,
+    "name": "Electric Substation",
+    "norm": "ELECTRIC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/229431907",
+    "lat": 41.827119,
+    "lon": -87.7263238,
+    "name": "Crawford Substation",
+    "norm": "CRAWFORD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/229431908",
+    "lat": 41.8290712,
+    "lon": -87.7268334,
+    "name": "Crawford 138kV-345kV Substation",
+    "norm": "CRAWFORD 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/234925628",
+    "lat": 41.7597218,
+    "lon": -87.9308925,
+    "name": "Burr Ridge Substation",
+    "norm": "BURR RIDGE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/238267973",
+    "lat": 40.1179858,
+    "lon": -88.2235647,
+    "name": "Urbana Goodwin Substation",
+    "norm": "URBANA GOODWIN",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/241490186",
+    "lat": 41.8918634,
+    "lon": -87.6922771,
+    "name": "ComEd Rockwell 138kV Substation",
+    "norm": "COMED ROCKWELL 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/243339659",
+    "lat": 40.5946766,
+    "lon": -89.4440442,
+    "name": "Southwood Substation",
+    "norm": "SOUTHWOOD",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/243593090",
+    "lat": 40.607221,
+    "lon": -89.4617577,
+    "name": "Ameren",
+    "norm": "AMEREN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/248031131",
+    "lat": 40.7053102,
+    "lon": -89.4500331,
+    "name": "Kice Substation",
+    "norm": "KICE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/248101101",
+    "lat": 40.7151348,
+    "lon": -89.4497267,
+    "name": "Eastern Substation",
+    "norm": "EASTERN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/24885939",
+    "lat": 41.9987711,
+    "lon": -87.7391533,
+    "name": "ComEd Devon 138kV Substation",
+    "norm": "COMED DEVON 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/24886742",
+    "lat": 42.0504232,
+    "lon": -87.7563586,
+    "name": "Skokie 345kV Substation",
+    "norm": "SKOKIE 345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/24886758",
+    "lat": 42.0498948,
+    "lon": -87.7549011,
+    "name": "Skokie 138kV Substation",
+    "norm": "SKOKIE 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/24887190",
+    "lat": 42.0818322,
+    "lon": -87.7651944,
+    "name": "Elmwood Substation",
+    "norm": "ELMWOOD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/24887581",
+    "lat": 42.0559583,
+    "lon": -87.8326968,
+    "name": "ComEd Golf Mill 138kV-345kV Substation",
+    "norm": "COMED GOLF MILL 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/24888067",
+    "lat": 42.0218798,
+    "lon": -87.7760115,
+    "name": "ComEd Niles 138kV Substation",
+    "norm": "COMED NILES 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/24888435",
+    "lat": 42.0222701,
+    "lon": -87.7322783,
+    "name": "DC S32",
+    "norm": "DC S32",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/24888554",
+    "lat": 42.0234979,
+    "lon": -87.7137814,
+    "name": "ComEd Skokie-Oakton Street 138kV Substation",
+    "norm": "COMED SKOKIE-OAKTON STREET 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/258033691",
+    "lat": 41.7475741,
+    "lon": -88.1469359,
+    "name": "Modaff Substation",
+    "norm": "MODAFF",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/26196644",
+    "lat": 41.99605,
+    "lon": -87.9776555,
+    "name": "Tonne 138kV Substation",
+    "norm": "TONNE 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/26196884",
+    "lat": 42.0376598,
+    "lon": -87.9622373,
+    "name": "Busse 138kV Substation",
+    "norm": "BUSSE 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/26320534",
+    "lat": 42.0504271,
+    "lon": -87.8969815,
+    "name": "Des Plaines 138kV-345kV Substation",
+    "norm": "DES PLAINES 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/263302132",
+    "lat": 39.4981042,
+    "lon": -88.1784676,
+    "name": "Charleston Substation",
+    "norm": "CHARLESTON",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/279663470",
+    "lat": 42.3786347,
+    "lon": -88.0557441,
+    "name": "Round Lake Beach TDC",
+    "norm": "ROUND LAKE BEACH TDC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/28084754",
+    "lat": 41.9451859,
+    "lon": -87.6969101,
+    "name": "ComEd Northwest 138kV Substation",
+    "norm": "COMED NORTHWEST 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/285152710",
+    "lat": 42.2549392,
+    "lon": -88.3022268,
+    "name": "Crystal Lake Substation",
+    "norm": "CRYSTAL LAKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/28520759",
+    "lat": 42.0510903,
+    "lon": -87.6957964,
+    "name": "ComEd Evanston 138kV Substation",
+    "norm": "COMED EVANSTON 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/28520830",
+    "lat": 42.0873613,
+    "lon": -87.766759,
+    "name": "Happ Substation",
+    "norm": "HAPP",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/28520867",
+    "lat": 42.1266947,
+    "lon": -87.7856935,
+    "name": "Northbrook 138kV-345kV Substation",
+    "norm": "NORTHBROOK 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/28521145",
+    "lat": 42.1873597,
+    "lon": -87.825287,
+    "name": "Highland Park Substation",
+    "norm": "HIGHLAND PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/285341538",
+    "lat": 42.3524422,
+    "lon": -88.3795052,
+    "name": "Nicor Substation",
+    "norm": "NICOR",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/285354847",
+    "lat": 42.2536549,
+    "lon": -88.6283721,
+    "name": "Marengo Substation",
+    "norm": "MARENGO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/285364158",
+    "lat": 42.2539174,
+    "lon": -88.7193529,
+    "name": "Garden Prarie Substation",
+    "norm": "GARDEN PRARIE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/285381309",
+    "lat": 42.2641068,
+    "lon": -89.1363871,
+    "name": "Pierpont Substation",
+    "norm": "PIERPONT",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/285384469",
+    "lat": 42.3184156,
+    "lon": -89.6180906,
+    "name": "Lancaster Substation",
+    "norm": "LANCASTER",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/285387036",
+    "lat": 42.3588236,
+    "lon": -89.8294058,
+    "name": "Lena Substation",
+    "norm": "LENA",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/28705347",
+    "lat": 38.6001768,
+    "lon": -90.1787289,
+    "name": "Cahokia Substation",
+    "norm": "CAHOKIA",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;230000;138000"
+  },
+  {
+    "id": "way/305062106",
+    "lat": 41.9828493,
+    "lon": -87.865625,
+    "name": "CTA Gage Substation",
+    "norm": "CTA GAGE",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/311354363",
+    "lat": 41.8081467,
+    "lon": -89.6496336,
+    "name": "Sterling TDC",
+    "norm": "STERLING TDC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/311851586",
+    "lat": 41.8251156,
+    "lon": -89.0273094,
+    "name": "TSS 169",
+    "norm": "TSS 169",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/311856507",
+    "lat": 41.8423399,
+    "lon": -89.495435,
+    "name": "Dixon Substation",
+    "norm": "DIXON",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/311944988",
+    "lat": 41.9502366,
+    "lon": -88.7919177,
+    "name": "West DeKalb Substation",
+    "norm": "WEST DEKALB",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/311944989",
+    "lat": 41.9362097,
+    "lon": -88.7282736,
+    "name": "Glidden Substation",
+    "norm": "GLIDDEN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/313769112",
+    "lat": 41.5968673,
+    "lon": -87.6424316,
+    "name": "Harvey Substation",
+    "norm": "HARVEY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/33127731",
+    "lat": 41.6302426,
+    "lon": -88.0951937,
+    "name": "ComEd Lockport 345kV Substation",
+    "norm": "COMED LOCKPORT 345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/337845506",
+    "lat": 40.7103287,
+    "lon": -89.6362148,
+    "name": "Nebraska Substation",
+    "norm": "NEBRASKA",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/339622137",
+    "lat": 42.1565555,
+    "lon": -88.1422771,
+    "name": "Barrington Substation",
+    "norm": "BARRINGTON",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/340153768",
+    "lat": 37.8093039,
+    "lon": -88.4450638,
+    "name": "Eldorado M09 Substation",
+    "norm": "ELDORADO M09",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/340164029",
+    "lat": 37.765917,
+    "lon": -88.5234623,
+    "name": "Muddy",
+    "norm": "MUDDY",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/35799001",
+    "lat": 41.9138469,
+    "lon": -87.6561285,
+    "name": "Clybourn Substation",
+    "norm": "CLYBOURN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/363537668",
+    "lat": 41.2229004,
+    "lon": -89.9544617,
+    "name": "Kewanee Substation",
+    "norm": "KEWANEE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/366694545",
+    "lat": 42.1172817,
+    "lon": -89.2100977,
+    "name": "Stillman Valley Substation",
+    "norm": "STILLMAN VALLEY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/366916296",
+    "lat": 42.0312196,
+    "lon": -88.2822585,
+    "name": "Elgin Substation",
+    "norm": "ELGIN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/367010812",
+    "lat": 40.7378671,
+    "lon": -89.5831879,
+    "name": "Hines Substation",
+    "norm": "HINES",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/367150801",
+    "lat": 40.4617451,
+    "lon": -88.9860093,
+    "name": "South Bloomington Substation",
+    "norm": "SOUTH BLOOMINGTON",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/367270573",
+    "lat": 42.4923876,
+    "lon": -89.9832692,
+    "name": "Warren Substation",
+    "norm": "WARREN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/367338284",
+    "lat": 42.3024106,
+    "lon": -89.618581,
+    "name": "Freeport Substation",
+    "norm": "FREEPORT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/367355675",
+    "lat": 42.0623945,
+    "lon": -89.5094787,
+    "name": "Maryland Substation",
+    "norm": "MARYLAND",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/367359871",
+    "lat": 42.2642058,
+    "lon": -89.0926694,
+    "name": "Fordham Substation",
+    "norm": "FORDHAM",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/367364844",
+    "lat": 42.3186678,
+    "lon": -89.038652,
+    "name": "Sand Park Substation",
+    "norm": "SAND PARK",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/367918361",
+    "lat": 42.1000466,
+    "lon": -88.7351735,
+    "name": "Genoa Power Substation",
+    "norm": "GENOA POWER",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/368672495",
+    "lat": 41.3528115,
+    "lon": -88.3471262,
+    "name": "Collins Substation",
+    "norm": "COLLINS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "765000"
+  },
+  {
+    "id": "way/369266898",
+    "lat": 41.2624072,
+    "lon": -88.6595047,
+    "name": "Commonwealth Edison",
+    "norm": "COMMONWEALTH EDISON",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/369283636",
+    "lat": 41.12611,
+    "lon": -88.8461016,
+    "name": "Streator Substation",
+    "norm": "STREATOR",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/369452525",
+    "lat": 40.8137184,
+    "lon": -89.6580501,
+    "name": "Alta Substation",
+    "norm": "ALTA",
+    "operator": null,
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/370122399",
+    "lat": 42.210957,
+    "lon": -88.0733959,
+    "name": "Lake Zurich Substation",
+    "norm": "LAKE ZURICH",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/391781249",
+    "lat": 40.5578489,
+    "lon": -89.7503931,
+    "name": "Cat Mapleton Substation",
+    "norm": "CAT MAPLETON",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/397696899",
+    "lat": 40.5900204,
+    "lon": -89.0467413,
+    "name": "McLean Wind Farm Step-Up Transformer",
+    "norm": "MCLEAN WIND FARM STEP-UP TRANSFORMER",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/397699297",
+    "lat": 40.5173105,
+    "lon": -89.0277282,
+    "name": "Parkside Substation",
+    "norm": "PARKSIDE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/403683305",
+    "lat": 41.9011706,
+    "lon": -87.6537938,
+    "name": "ComEd 138kV-345kV West Loop Substation",
+    "norm": "COMED 138KV-345KV WEST LOOP",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/406305839",
+    "lat": 41.7240532,
+    "lon": -87.5883597,
+    "name": "Finkl Steel Substation",
+    "norm": "FINKL STEEL",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/408441353",
+    "lat": 39.7820001,
+    "lon": -89.7999899,
+    "name": "Mansfield Substation",
+    "norm": "MANSFIELD",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/42851924",
+    "lat": 42.294028,
+    "lon": -88.9692908,
+    "name": "East Rockford Substation",
+    "norm": "EAST ROCKFORD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/42851983",
+    "lat": 42.2164932,
+    "lon": -88.9758897,
+    "name": "ComEd Cherry Valley 138kV-345kV Substation",
+    "norm": "COMED CHERRY VALLEY 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/42853607",
+    "lat": 42.2570914,
+    "lon": -88.4400389,
+    "name": "Pleasant Valley Substation",
+    "norm": "PLEASANT VALLEY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/43086055",
+    "lat": 42.2546461,
+    "lon": -88.2506475,
+    "name": "Silver Lake Substation",
+    "norm": "SILVER LAKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/43092005",
+    "lat": 42.3135757,
+    "lon": -87.9753144,
+    "name": "Libertyville Substation",
+    "norm": "LIBERTYVILLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/43100914",
+    "lat": 42.1811251,
+    "lon": -87.9620115,
+    "name": "Aptakisic Substation",
+    "norm": "APTAKISIC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/43217075",
+    "lat": 42.1178206,
+    "lon": -87.9846864,
+    "name": "Arlington Heights Substation",
+    "norm": "ARLINGTON HEIGHTS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/43310282",
+    "lat": 42.1194001,
+    "lon": -88.057512,
+    "name": "Palatine Substation",
+    "norm": "PALATINE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/43315609",
+    "lat": 42.342456,
+    "lon": -89.1926557,
+    "name": "Wempletown Substation",
+    "norm": "WEMPLETOWN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/43571062",
+    "lat": 42.2332619,
+    "lon": -89.0959167,
+    "name": "Sabrooke Substation",
+    "norm": "SABROOKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/43822091",
+    "lat": 41.3495136,
+    "lon": -88.3476833,
+    "name": "Collins Substation",
+    "norm": "COLLINS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/43879037",
+    "lat": 41.3990529,
+    "lon": -87.9525918,
+    "name": "ComEd Wilton Center 765kV Substation",
+    "norm": "COMED WILTON CENTER 765KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "765000"
+  },
+  {
+    "id": "way/43881289",
+    "lat": 41.3992201,
+    "lon": -87.9490727,
+    "name": "ComEd Wilton Center 345kV Substation",
+    "norm": "COMED WILTON CENTER 345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/43929667",
+    "lat": 41.3910347,
+    "lon": -88.2749014,
+    "name": "Dresden Station",
+    "norm": "DRESDEN STATION",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/44148911",
+    "lat": 41.6961232,
+    "lon": -87.9707844,
+    "name": "ESS J310-2 Argonne",
+    "norm": "ESS J310-2 ARGONNE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/44391737",
+    "lat": 41.8022139,
+    "lon": -87.8231539,
+    "name": "ComEd McCook 138kV-345kV Substation",
+    "norm": "COMED MCCOOK 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/44758583",
+    "lat": 42.2759679,
+    "lon": -88.8670159,
+    "name": "Belvidere Substation",
+    "norm": "BELVIDERE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449369701",
+    "lat": 41.8515342,
+    "lon": -87.75461,
+    "name": "Cicero Substation",
+    "norm": "CICERO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/449369703",
+    "lat": 41.8724891,
+    "lon": -87.8169913,
+    "name": "Forest Park Substation",
+    "norm": "FOREST PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/449369704",
+    "lat": 41.9231687,
+    "lon": -87.7857887,
+    "name": "ComEd Galewood Substation",
+    "norm": "COMED GALEWOOD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449369705",
+    "lat": 41.9164634,
+    "lon": -87.7539034,
+    "name": "Hanson Park Substation",
+    "norm": "HANSON PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449369706",
+    "lat": 41.9482827,
+    "lon": -87.7413103,
+    "name": "Portage Substation",
+    "norm": "PORTAGE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449369707",
+    "lat": 41.7820558,
+    "lon": -87.6194003,
+    "name": "Washington Park Substation",
+    "norm": "WASHINGTON PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449418937",
+    "lat": 41.1642163,
+    "lon": -87.859338,
+    "name": "Bradley Substation",
+    "norm": "BRADLEY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449418938",
+    "lat": 41.9793224,
+    "lon": -87.8076624,
+    "name": "ComEd Higgins 138kV Substation",
+    "norm": "COMED HIGGINS 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449872367",
+    "lat": 41.7619861,
+    "lon": -87.7333558,
+    "name": "Ford City Substation",
+    "norm": "FORD CITY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449872370",
+    "lat": 41.9023155,
+    "lon": -87.6462308,
+    "name": "ComEd Crosby 138kV Substation",
+    "norm": "COMED CROSBY 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449872373",
+    "lat": 41.9870802,
+    "lon": -87.6741928,
+    "name": "ComEd Rosehill Substation",
+    "norm": "COMED ROSEHILL",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449889485",
+    "lat": 41.8357649,
+    "lon": -87.7846948,
+    "name": "Berwyn Substation",
+    "norm": "BERWYN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/449889487",
+    "lat": 41.8113449,
+    "lon": -87.7852812,
+    "name": "Ridgeland Substation",
+    "norm": "RIDGELAND",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/449909855",
+    "lat": 42.3788517,
+    "lon": -87.9655281,
+    "name": "Gurnee TDC",
+    "norm": "GURNEE TDC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449909856",
+    "lat": 42.2121741,
+    "lon": -87.8416106,
+    "name": "Old Elm TDC",
+    "norm": "OLD ELM TDC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449913425",
+    "lat": 42.3834627,
+    "lon": -87.816954,
+    "name": "Waukegan Substation",
+    "norm": "WAUKEGAN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/449950599",
+    "lat": 41.8424857,
+    "lon": -87.7480946,
+    "name": "Hawthorne Substation",
+    "norm": "HAWTHORNE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/450081262",
+    "lat": 41.560766,
+    "lon": -89.7071832,
+    "name": "Normandy Substation",
+    "norm": "NORMANDY",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/450081265",
+    "lat": 41.7466648,
+    "lon": -87.639718,
+    "name": "Wallace Substation",
+    "norm": "WALLACE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/450081266",
+    "lat": 41.8278728,
+    "lon": -88.7547823,
+    "name": "Waterman Substation",
+    "norm": "WATERMAN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/450130915",
+    "lat": 41.7928385,
+    "lon": -90.1106032,
+    "name": "Garden Plain Substation",
+    "norm": "GARDEN PLAIN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/450130916",
+    "lat": 41.8357415,
+    "lon": -87.8660014,
+    "name": "LaGrange Park Substation",
+    "norm": "LAGRANGE PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/450130917",
+    "lat": 41.7658472,
+    "lon": -89.66106,
+    "name": "Rock Falls Substation",
+    "norm": "ROCK FALLS",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/45309008",
+    "lat": 42.2593409,
+    "lon": -89.051848,
+    "name": "Charles Substation",
+    "norm": "CHARLES",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/461646629",
+    "lat": 38.5366994,
+    "lon": -90.0236329,
+    "name": "Belleville 44th Street Substation",
+    "norm": "BELLEVILLE 44TH STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/47015693",
+    "lat": 41.7607802,
+    "lon": -89.6089402,
+    "name": "Nelson Substation",
+    "norm": "NELSON",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/47058568",
+    "lat": 41.7842134,
+    "lon": -88.3087516,
+    "name": "North Aurora Substation",
+    "norm": "NORTH AURORA",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/471153258",
+    "lat": 39.895533,
+    "lon": -89.5940939,
+    "name": "Sherman Substation",
+    "norm": "SHERMAN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/486428779",
+    "lat": 42.0596341,
+    "lon": -88.055435,
+    "name": "Schaumburg Substation",
+    "norm": "SCHAUMBURG",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/486466382",
+    "lat": 42.016627,
+    "lon": -87.8873311,
+    "name": "Howard Substation",
+    "norm": "HOWARD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/486695133",
+    "lat": 41.9480025,
+    "lon": -89.054008,
+    "name": "Rochelle Substation",
+    "norm": "ROCHELLE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/486695134",
+    "lat": 41.9069657,
+    "lon": -89.0451129,
+    "name": "Rochelle Municipal Utilites Power Substation",
+    "norm": "ROCHELLE MUNICIPAL UTILITES POWER",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/486720994",
+    "lat": 41.8064581,
+    "lon": -88.4337233,
+    "name": "Sugar Grove Substation",
+    "norm": "SUGAR GROVE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/486721268",
+    "lat": 41.7952277,
+    "lon": -88.2430576,
+    "name": "GFX Data Center Substation",
+    "norm": "GFX DATA CENTER",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/488376709",
+    "lat": 42.0211228,
+    "lon": -87.9718349,
+    "name": "Landmeier Substation",
+    "norm": "LANDMEIER",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/488394423",
+    "lat": 42.1936828,
+    "lon": -89.0689339,
+    "name": "Blackhawk Substation",
+    "norm": "BLACKHAWK",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/488397577",
+    "lat": 42.3172568,
+    "lon": -89.087789,
+    "name": "Roscoe Bert Substation",
+    "norm": "ROSCOE BERT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/489724769",
+    "lat": 41.643057,
+    "lon": -87.8530857,
+    "name": "Orland Substation",
+    "norm": "ORLAND",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/489956850",
+    "lat": 41.6577391,
+    "lon": -87.8104194,
+    "name": "Palos Township Substation",
+    "norm": "PALOS TOWNSHIP",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/489965625",
+    "lat": 41.705077,
+    "lon": -87.8121915,
+    "name": "ComEd Roberts Road Substation",
+    "norm": "COMED ROBERTS ROAD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/489965741",
+    "lat": 41.7385112,
+    "lon": -87.8085852,
+    "name": "Bridgeview Substation",
+    "norm": "BRIDGEVIEW",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/489966009",
+    "lat": 41.7530419,
+    "lon": -87.7931478,
+    "name": "Sayre Substation",
+    "norm": "SAYRE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/489994413",
+    "lat": 41.7709502,
+    "lon": -87.7763996,
+    "name": "Clearing Substation",
+    "norm": "CLEARING",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/489998639",
+    "lat": 41.8047583,
+    "lon": -87.713162,
+    "name": "ComEd Sawyer Substation",
+    "norm": "COMED SAWYER",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/490252922",
+    "lat": 41.7247373,
+    "lon": -87.5452746,
+    "name": "Harbor Substation",
+    "norm": "HARBOR",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/490381431",
+    "lat": 41.6020665,
+    "lon": -87.5487996,
+    "name": "Green Lake Substation",
+    "norm": "GREEN LAKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/490631449",
+    "lat": 41.8876532,
+    "lon": -87.7916606,
+    "name": "Oak Park Substation",
+    "norm": "OAK PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491241659",
+    "lat": 41.5321498,
+    "lon": -88.0784534,
+    "name": "Joliet Central Substation",
+    "norm": "JOLIET CENTRAL",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491264408",
+    "lat": 41.6434354,
+    "lon": -88.0555634,
+    "name": "Citgo Substation",
+    "norm": "CITGO",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491477656",
+    "lat": 42.0007173,
+    "lon": -88.244625,
+    "name": "Elgin Energy Center Substation",
+    "norm": "ELGIN ENERGY CENTER",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491512747",
+    "lat": 41.7481274,
+    "lon": -88.0036992,
+    "name": "Downers Grove Substation",
+    "norm": "DOWNERS GROVE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491528894",
+    "lat": 41.9469886,
+    "lon": -88.0324592,
+    "name": "Nordic Substation",
+    "norm": "NORDIC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491648670",
+    "lat": 41.7189334,
+    "lon": -87.5454743,
+    "name": "Southeast Chicago EC Substation",
+    "norm": "SOUTHEAST CHICAGO EC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491651625",
+    "lat": 41.5356228,
+    "lon": -87.6235121,
+    "name": "Glenwood Substation",
+    "norm": "GLENWOOD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491664325",
+    "lat": 41.4398863,
+    "lon": -87.7514576,
+    "name": "University Park South EC Substation",
+    "norm": "UNIVERSITY PARK SOUTH EC",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/491664326",
+    "lat": 41.442083,
+    "lon": -87.7512548,
+    "name": "University Park North EC Substation",
+    "norm": "UNIVERSITY PARK NORTH EC",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/492482857",
+    "lat": 41.2924612,
+    "lon": -88.178937,
+    "name": "Wilmington Substation",
+    "norm": "WILMINGTON",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/493781207",
+    "lat": 41.6872121,
+    "lon": -87.5590369,
+    "name": "River Energy Center Substation",
+    "norm": "RIVER ENERGY CENTER",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/494054837",
+    "lat": 42.238585,
+    "lon": -88.8660619,
+    "name": "Chrysler Corp. Substation",
+    "norm": "CHRYSLER CORP.",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/494075557",
+    "lat": 42.3015579,
+    "lon": -87.8724967,
+    "name": "Great Lakes Substation",
+    "norm": "GREAT LAKES",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/494337230",
+    "lat": 41.3271468,
+    "lon": -88.7149967,
+    "name": "Marseilles Substation",
+    "norm": "MARSEILLES",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/52007676",
+    "lat": 41.7614054,
+    "lon": -87.7660398,
+    "name": "ComEd Bedford 138kV-345kV Substation",
+    "norm": "COMED BEDFORD 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/52008692",
+    "lat": 41.6246287,
+    "lon": -87.9325897,
+    "name": "ComEd Goodings Grove 138kV-345kV Substation",
+    "norm": "COMED GOODINGS GROVE 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/52035154",
+    "lat": 41.6454442,
+    "lon": -88.0004262,
+    "name": "Archer Substation",
+    "norm": "ARCHER",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/545946405",
+    "lat": 40.9214429,
+    "lon": -90.652427,
+    "name": "Ameren Illinois",
+    "norm": "AMEREN ILLINOIS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/547519573",
+    "lat": 38.614359,
+    "lon": -90.1363346,
+    "name": "Ridge Avenue Substation",
+    "norm": "RIDGE AVENUE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/561175271",
+    "lat": 41.8049461,
+    "lon": -87.9749754,
+    "name": "Westmont Substation",
+    "norm": "WESTMONT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/584422093",
+    "lat": 40.7848522,
+    "lon": -89.7005086,
+    "name": "Fargo",
+    "norm": "FARGO",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/584487024",
+    "lat": 39.577259,
+    "lon": -89.5834521,
+    "name": "Pawnee substation",
+    "norm": "PAWNEE",
+    "operator": null,
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/59432115",
+    "lat": 42.0505274,
+    "lon": -88.0037689,
+    "name": "ComEd Rolling Meadows 138kV Substation",
+    "norm": "COMED ROLLING MEADOWS 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/602700984",
+    "lat": 38.5109571,
+    "lon": -90.2322255,
+    "name": "Dupo Ferry Substation",
+    "norm": "DUPO FERRY",
+    "operator": "Ameren Missouri",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/606213212",
+    "lat": 40.4602779,
+    "lon": -88.9785698,
+    "name": "Beltline Substation",
+    "norm": "BELTLINE",
+    "operator": "Corn Belt Energy Corporation",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/610259048",
+    "lat": 39.9707062,
+    "lon": -89.1937344,
+    "name": "Latham Substation",
+    "norm": "LATHAM",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/610259049",
+    "lat": 40.158085,
+    "lon": -88.3399345,
+    "name": "Rising Substation",
+    "norm": "RISING",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/610277553",
+    "lat": 40.9732348,
+    "lon": -90.3302326,
+    "name": "Sandburg",
+    "norm": "SANDBURG",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "345000;161000;138000"
+  },
+  {
+    "id": "way/617201938",
+    "lat": 39.7579528,
+    "lon": -89.5267042,
+    "name": "Rochester Oak Street Substation",
+    "norm": "ROCHESTER OAK STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/625732211",
+    "lat": 42.4561445,
+    "lon": -89.013393,
+    "name": "REC East Rockton Substation",
+    "norm": "REC EAST ROCKTON",
+    "operator": null,
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/637336275",
+    "lat": 40.6916489,
+    "lon": -89.6005009,
+    "name": "Fisher Substation",
+    "norm": "FISHER",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/653979529",
+    "lat": 38.5042527,
+    "lon": -89.1539405,
+    "name": "South Centralia Subtation",
+    "norm": "SOUTH CENTRALIA SUBTATION",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/664013719",
+    "lat": 38.7054155,
+    "lon": -90.1146739,
+    "name": "Granite City 23rd Street Substation",
+    "norm": "GRANITE CITY 23RD STREET",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/680273088",
+    "lat": 41.9833469,
+    "lon": -87.8384928,
+    "name": "CTA Cumberland Substation",
+    "norm": "CTA CUMBERLAND",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": "600"
+  },
+  {
+    "id": "way/692637135",
+    "lat": 42.1151679,
+    "lon": -87.9202035,
+    "name": "Prospect Heights 138kV-345kV Substation",
+    "norm": "PROSPECT HEIGHTS 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/70735815",
+    "lat": 41.900235,
+    "lon": -88.1351176,
+    "name": "Pleasant Hill Substation",
+    "norm": "PLEASANT HILL",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/71870004",
+    "lat": 41.7995573,
+    "lon": -88.0587593,
+    "name": "ComEd Lisle 138kV-345kV Substation",
+    "norm": "COMED LISLE 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/722737785",
+    "lat": 40.9344081,
+    "lon": -90.3986058,
+    "name": "Galesburg Monmouth Boulevard",
+    "norm": "GALESBURG MONMOUTH BOULEVARD",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/72861542",
+    "lat": 41.8599681,
+    "lon": -88.0433041,
+    "name": "Glen Ellyn Substation",
+    "norm": "GLEN ELLYN",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/73978235",
+    "lat": 42.353526,
+    "lon": -87.8762876,
+    "name": "Lakehurst Substation",
+    "norm": "LAKEHURST",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/747377917",
+    "lat": 38.8394332,
+    "lon": -90.0752049,
+    "name": "Wood River Power Substation",
+    "norm": "WOOD RIVER POWER",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/754333370",
+    "lat": 41.5989069,
+    "lon": -89.4563967,
+    "name": "Big Sky Wind LLC Substation",
+    "norm": "BIG SKY WIND LLC",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/758383349",
+    "lat": 38.3775387,
+    "lon": -89.3717716,
+    "name": "North Nashville Substation",
+    "norm": "NORTH NASHVILLE",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/758383351",
+    "lat": 38.3328204,
+    "lon": -89.1908859,
+    "name": "Ashley",
+    "norm": "ASHLEY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/764020658",
+    "lat": 41.2906463,
+    "lon": -89.0706723,
+    "name": "Oglesby Substation",
+    "norm": "OGLESBY",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/771993776",
+    "lat": 41.6877897,
+    "lon": -88.4740958,
+    "name": "Plano Substation",
+    "norm": "PLANO",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/771993777",
+    "lat": 41.6858338,
+    "lon": -88.4759416,
+    "name": "Plano Substation",
+    "norm": "PLANO",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/785704123",
+    "lat": 42.3695654,
+    "lon": -88.8512247,
+    "name": "Poplar Grove Substation",
+    "norm": "POPLAR GROVE",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/822112561",
+    "lat": 37.8366827,
+    "lon": -88.6136681,
+    "name": "Galatia Substation",
+    "norm": "GALATIA",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/823978568",
+    "lat": 38.7932033,
+    "lon": -89.0869632,
+    "name": "Patoka Substation",
+    "norm": "PATOKA",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/824403862",
+    "lat": 39.0416096,
+    "lon": -89.4741114,
+    "name": "Midway",
+    "norm": "MIDWAY",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/834609993",
+    "lat": 38.6905639,
+    "lon": -90.1581455,
+    "name": "Madison State Street Substation",
+    "norm": "MADISON STATE STREET",
+    "operator": null,
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/849944365",
+    "lat": 37.7490022,
+    "lon": -88.5423168,
+    "name": "Harrisburg North Substation",
+    "norm": "HARRISBURG NORTH",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/86193601",
+    "lat": 41.9354167,
+    "lon": -87.888521,
+    "name": "Franklin Park Substation",
+    "norm": "FRANKLIN PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/863697066",
+    "lat": 42.488237,
+    "lon": -89.0276739,
+    "name": "REC Park Substation",
+    "norm": "REC PARK",
+    "operator": null,
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/889125372",
+    "lat": 40.3114865,
+    "lon": -89.1496375,
+    "name": "Mclean Substation",
+    "norm": "MCLEAN",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/891416247",
+    "lat": 40.6830447,
+    "lon": -88.7587559,
+    "name": "Lexington Substation",
+    "norm": "LEXINGTON",
+    "operator": "Corn Belt Energy Corporation",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/89480216",
+    "lat": 41.494901,
+    "lon": -87.8252647,
+    "name": "ComEd East Frankfort Substation",
+    "norm": "COMED EAST FRANKFORT",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/89705938",
+    "lat": 41.4310639,
+    "lon": -87.6191373,
+    "name": "Crete Substation",
+    "norm": "CRETE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/89705943",
+    "lat": 41.4336319,
+    "lon": -87.7411347,
+    "name": "Woodhill Substation",
+    "norm": "WOODHILL",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/89709585",
+    "lat": 41.4880361,
+    "lon": -87.6040759,
+    "name": "Bloom 345 kV Substation",
+    "norm": "BLOOM 345 KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/906270967",
+    "lat": 41.1336929,
+    "lon": -89.3449167,
+    "name": "Ameren switch henry",
+    "norm": "AMEREN SWITCH HENRY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/912701382",
+    "lat": 38.8976401,
+    "lon": -90.0817976,
+    "name": "Cottage Hills Substation",
+    "norm": "COTTAGE HILLS",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/91611113",
+    "lat": 41.7154204,
+    "lon": -87.5461568,
+    "name": "Calumet Substation",
+    "norm": "CALUMET",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/92041794",
+    "lat": 41.5519682,
+    "lon": -88.1310315,
+    "name": "Hillcrest Substation",
+    "norm": "HILLCREST",
+    "operator": null,
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/92998435",
+    "lat": 42.3628367,
+    "lon": -88.1058795,
+    "name": "Round Lake Substation",
+    "norm": "ROUND LAKE",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/93457004",
+    "lat": 41.6220233,
+    "lon": -88.2081881,
+    "name": "Plainfield Substation",
+    "norm": "PLAINFIELD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/934956755",
+    "lat": 38.6641699,
+    "lon": -90.1768287,
+    "name": "Venice Substation",
+    "norm": "VENICE",
+    "operator": "Ameren Missouri",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/948901681",
+    "lat": 40.6919008,
+    "lon": -89.6151565,
+    "name": "Bradley Substation",
+    "norm": "BRADLEY",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/95063618",
+    "lat": 41.7564078,
+    "lon": -87.713398,
+    "name": "Hayford Substation",
+    "norm": "HAYFORD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/95063623",
+    "lat": 41.7272244,
+    "lon": -87.7069383,
+    "name": "Evergreen Park Substation",
+    "norm": "EVERGREEN PARK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/953290008",
+    "lat": 41.8949401,
+    "lon": -87.7746206,
+    "name": "CTA Chicago/Austin Susbstation",
+    "norm": "CTA CHICAGO/AUSTIN SUSBSTATION",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/953291457",
+    "lat": 41.8928083,
+    "lon": -87.6103672,
+    "name": "CTA Navy Pier Substation",
+    "norm": "CTA NAVY PIER",
+    "operator": "Chicago Transit Authority",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/95357393",
+    "lat": 41.8709016,
+    "lon": -87.6365871,
+    "name": "ComEd Taylor 138kV-345kV Substation",
+    "norm": "COMED TAYLOR 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/95999528",
+    "lat": 42.0823417,
+    "lon": -88.3446359,
+    "name": "ComEd Gilberts 138kV Substation",
+    "norm": "COMED GILBERTS 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/95999530",
+    "lat": 42.0636195,
+    "lon": -88.240136,
+    "name": "ComEd Tollway 138kV-345kV Substation",
+    "norm": "COMED TOLLWAY 138KV-345KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/975154968",
+    "lat": 42.1522491,
+    "lon": -87.8405252,
+    "name": "ComEd Lake Cook Substation",
+    "norm": "COMED LAKE COOK",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/977746108",
+    "lat": 40.7099653,
+    "lon": -89.5869358,
+    "name": "New York Substation",
+    "norm": "NEW YORK",
+    "operator": "Ameren",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/978925854",
+    "lat": 41.6388244,
+    "lon": -87.6277211,
+    "name": "Metra Riverdale Substation",
+    "norm": "METRA RIVERDALE",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979442857",
+    "lat": 41.6031721,
+    "lon": -87.6443752,
+    "name": "Harvey Susbstation",
+    "norm": "HARVEY SUSBSTATION",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979442858",
+    "lat": 41.6034143,
+    "lon": -87.6446375,
+    "name": "Harvey Substation",
+    "norm": "HARVEY",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979444622",
+    "lat": 41.5612495,
+    "lon": -87.6692551,
+    "name": "Homewood Substation",
+    "norm": "HOMEWOOD",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979444623",
+    "lat": 41.5282954,
+    "lon": -87.6854702,
+    "name": "Vollmer Road Substation",
+    "norm": "VOLLMER ROAD",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979444624",
+    "lat": 41.5284623,
+    "lon": -87.6855209,
+    "name": "Vollmer Road Substation",
+    "norm": "VOLLMER ROAD",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979444625",
+    "lat": 41.492229,
+    "lon": -87.7062978,
+    "name": "Matteson Substation",
+    "norm": "MATTESON",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/979444626",
+    "lat": 41.4572408,
+    "lon": -87.7239731,
+    "name": "University Park Substation",
+    "norm": "UNIVERSITY PARK",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/984992673",
+    "lat": 41.8039096,
+    "lon": -87.5881512,
+    "name": "Metra 51st Street Substation",
+    "norm": "METRA 51ST STREET",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/984992704",
+    "lat": 41.8377582,
+    "lon": -87.6108367,
+    "name": "Metra 31st Street Substation",
+    "norm": "METRA 31ST STREET",
+    "operator": "Metra",
+    "state": "IL",
+    "voltage": null
+  },
+  {
+    "id": "way/992584924",
+    "lat": 41.8473079,
+    "lon": -87.6540466,
+    "name": "Quarry TDC",
+    "norm": "QUARRY TDC",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/994824354",
+    "lat": 42.02655,
+    "lon": -87.9636178,
+    "name": "ComEd Elk Grove 138kV Substation",
+    "norm": "COMED ELK GROVE 138KV",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/998082284",
+    "lat": 41.8025477,
+    "lon": -88.3510389,
+    "name": "North Aurora Substation",
+    "norm": "NORTH AURORA",
+    "operator": "Commonwealth Edison",
+    "state": "IL",
+    "voltage": null
+  }
+]

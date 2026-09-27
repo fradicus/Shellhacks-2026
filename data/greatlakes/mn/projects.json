@@ -1425,12 +1425,7 @@
   },
   {
     "_id": "mn-btpr-2025:2019-SE-N3",
-    "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/104535667 (Adams Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
-      "lat": 43.557131,
-      "lon": -92.680633
-    },
+    "center": null,
     "counties": [],
     "description": null,
     "evidence": {
@@ -1455,42 +1450,19 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [
-        {
-          "name": null,
-          "status": "not_a_facility"
-        },
-        {
-          "corroboration": [
-            "operator",
-            "voltage"
-          ],
-          "facility": {
-            "id": "way/104535667",
-            "lat": 43.5571308,
-            "lon": -92.6806332,
-            "name": "Adams Substation",
-            "operator": "ITC",
-            "state": "MN",
-            "voltage": "345000;161000;69000"
-          },
-          "name": "Adams",
-          "norm": "ADAMS",
-          "status": "matched"
-        }
-      ],
-      "kind": "line",
+      "endpoints": [],
+      "kind": null,
       "names_from": "name",
       "operator_keys": [
         "ITC"
       ],
-      "reason": null,
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         161
       ]
     },
-    "location_review": "unreviewed",
+    "location_review": "unlocated",
     "name": "J523 Generator Interconnection to Adams 161 kV",
     "native_id": "2019-SE-N3",
     "other_owners": [],
@@ -5244,7 +5216,7 @@
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "endpoint_not_named",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         69
@@ -7100,7 +7072,7 @@
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "endpoint_not_named",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         69
@@ -11091,24 +11063,14 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [
-        {
-          "name": "Owatonna",
-          "norm": "OWATONNA",
-          "status": "no_facility"
-        },
-        {
-          "name": null,
-          "status": "not_a_facility"
-        }
-      ],
-      "kind": "line",
+      "endpoints": [],
+      "kind": null,
       "names_from": "name",
       "operator_keys": [
         "SOUTHERN MINNESOTA MUNICIPAL",
         "SMMPA"
       ],
-      "reason": null,
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         12,

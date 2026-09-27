@@ -1,0 +1,6852 @@
+[
+  {
+    "id": "node/3996706236",
+    "lat": 43.0364178,
+    "lon": -87.9173984,
+    "name": "Everett Substation",
+    "norm": "EVERETT",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "relation/14283071",
+    "lat": 44.8472151,
+    "lon": -89.6560994,
+    "name": "Gardner Park Substation",
+    "norm": "GARDNER PARK",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "115000;345000"
+  },
+  {
+    "id": "way/1000656715",
+    "lat": 44.4486609,
+    "lon": -88.0765011,
+    "name": "OAK ST",
+    "norm": "OAK ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;24900"
+  },
+  {
+    "id": "way/1002290863",
+    "lat": 44.2939999,
+    "lon": -88.2903763,
+    "name": "Rose Hill Substation",
+    "norm": "ROSE HILL",
+    "operator": "Kaukauna Utilities",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1002290879",
+    "lat": 44.2890306,
+    "lon": -88.2667807,
+    "name": "Tobacnoir Street Substation",
+    "norm": "TOBACNOIR STREET",
+    "operator": "Kaukauna Utilities",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1002436358",
+    "lat": 44.4658092,
+    "lon": -89.4246978,
+    "name": "Arnot",
+    "norm": "ARNOT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1003810600",
+    "lat": 44.269242,
+    "lon": -88.4000847,
+    "name": "Winnebago Substation",
+    "norm": "WINNEBAGO",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1005061666",
+    "lat": 45.8969992,
+    "lon": -89.4696366,
+    "name": "St Germain",
+    "norm": "ST GERMAIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1005061668",
+    "lat": 45.9093065,
+    "lon": -89.7565404,
+    "name": "Woodmin",
+    "norm": "WOODMIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1006199869",
+    "lat": 45.6400658,
+    "lon": -89.4188745,
+    "name": "Rhinelander Paper",
+    "norm": "RHINELANDER PAPER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1006199877",
+    "lat": 45.3015327,
+    "lon": -89.7902914,
+    "name": "Grandfather Falls Transmission Substation",
+    "norm": "GRANDFATHER FALLS TRANSMISSION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "46000;115000"
+  },
+  {
+    "id": "way/1006199879",
+    "lat": 45.3014455,
+    "lon": -89.7913764,
+    "name": "Grandfather Falls Generator Substation",
+    "norm": "GRANDFATHER FALLS GENERATOR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "6900;46000"
+  },
+  {
+    "id": "way/1009376615",
+    "lat": 44.6569762,
+    "lon": -89.2859667,
+    "name": "Rosholt",
+    "norm": "ROSHOLT",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1009376616",
+    "lat": 44.6568914,
+    "lon": -89.2864561,
+    "name": "Rosholt CEC",
+    "norm": "ROSHOLT CEC",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1009376619",
+    "lat": 44.6837229,
+    "lon": -89.4213694,
+    "name": "Groenier",
+    "norm": "GROENIER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1009376621",
+    "lat": 44.6758295,
+    "lon": -88.8787495,
+    "name": "Marion",
+    "norm": "MARION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1010992043",
+    "lat": 44.476023,
+    "lon": -89.3109714,
+    "name": "Amherst Junction Substation",
+    "norm": "AMHERST JUNCTION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1010992047",
+    "lat": 44.5041126,
+    "lon": -89.5297176,
+    "name": "Hoover",
+    "norm": "HOOVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;115000"
+  },
+  {
+    "id": "way/1011120146",
+    "lat": 43.8007799,
+    "lon": -88.826363,
+    "name": "Metomen",
+    "norm": "METOMEN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1011121122",
+    "lat": 42.9322713,
+    "lon": -87.8816198,
+    "name": "Barland",
+    "norm": "BARLAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1011139212",
+    "lat": 44.3653772,
+    "lon": -89.4510394,
+    "name": "Golden Sands",
+    "norm": "GOLDEN SANDS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1011139218",
+    "lat": 44.2237295,
+    "lon": -89.2447774,
+    "name": "ACEC Wildrose",
+    "norm": "ACEC WILDROSE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011139220",
+    "lat": 44.1849131,
+    "lon": -89.2477258,
+    "name": "Wild Rose",
+    "norm": "WILD ROSE",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011139223",
+    "lat": 44.1468925,
+    "lon": -89.2677352,
+    "name": "ACEC Wild Rose Pump",
+    "norm": "ACEC WILD ROSE PUMP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011139226",
+    "lat": 44.1048283,
+    "lon": -89.2872021,
+    "name": "ACEC Wautoma",
+    "norm": "ACEC WAUTOMA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141102",
+    "lat": 44.0474342,
+    "lon": -89.2340479,
+    "name": "Silver Lake (ALTE)",
+    "norm": "SILVER LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141106",
+    "lat": 44.0303001,
+    "lon": -89.1580276,
+    "name": "ACEC Spring Lake",
+    "norm": "ACEC SPRING LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141109",
+    "lat": 44.0376263,
+    "lon": -89.1104394,
+    "name": "Red Granite",
+    "norm": "RED GRANITE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141112",
+    "lat": 44.1090801,
+    "lon": -88.9869155,
+    "name": "Fountain Valley",
+    "norm": "FOUNTAIN VALLEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141115",
+    "lat": 43.9911383,
+    "lon": -88.9461958,
+    "name": "River Run",
+    "norm": "RIVER RUN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141116",
+    "lat": 43.9607368,
+    "lon": -88.9344198,
+    "name": "Berlin",
+    "norm": "BERLIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1011141117",
+    "lat": 43.9662979,
+    "lon": -88.949827,
+    "name": "Fox River",
+    "norm": "FOX RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1014621428",
+    "lat": 44.1312082,
+    "lon": -87.6286389,
+    "name": "Northeast",
+    "norm": "NORTHEAST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1014907443",
+    "lat": 44.2155667,
+    "lon": -87.8796067,
+    "name": "Branch River Substation",
+    "norm": "BRANCH RIVER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1014969704",
+    "lat": 43.7600662,
+    "lon": -87.9207582,
+    "name": "Plymouth Sub 3",
+    "norm": "PLYMOUTH 3",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/1014969711",
+    "lat": 43.7418215,
+    "lon": -87.8206312,
+    "name": "Northside",
+    "norm": "NORTHSIDE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1014969712",
+    "lat": 43.7277544,
+    "lon": -87.8088916,
+    "name": "Adams St",
+    "norm": "ADAMS ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1014969725",
+    "lat": 43.727837,
+    "lon": -87.8402205,
+    "name": "Bemis",
+    "norm": "BEMIS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015072327",
+    "lat": 43.7754104,
+    "lon": -87.7287269,
+    "name": "North Gate",
+    "norm": "NORTH GATE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015072335",
+    "lat": 43.7460385,
+    "lon": -87.7144775,
+    "name": "20th St",
+    "norm": "20TH ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015072345",
+    "lat": 43.7328224,
+    "lon": -87.7315446,
+    "name": "Sauk Trail",
+    "norm": "SAUK TRAIL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1015144648",
+    "lat": 43.4260261,
+    "lon": -88.255077,
+    "name": "Glacier Substation",
+    "norm": "GLACIER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;24900"
+  },
+  {
+    "id": "way/1015144652",
+    "lat": 43.5551195,
+    "lon": -88.2396573,
+    "name": "Auburn",
+    "norm": "AUBURN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1015144656",
+    "lat": 43.6024245,
+    "lon": -88.4419348,
+    "name": "Butternut",
+    "norm": "BUTTERNUT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1015158188",
+    "lat": 43.7398254,
+    "lon": -88.4679933,
+    "name": "Willow Lawn",
+    "norm": "WILLOW LAWN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015158196",
+    "lat": 43.7631917,
+    "lon": -88.4171326,
+    "name": "Rienzi",
+    "norm": "RIENZI",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1015317275",
+    "lat": 43.7931056,
+    "lon": -88.6645205,
+    "name": "Rosendale",
+    "norm": "ROSENDALE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015317282",
+    "lat": 43.8410211,
+    "lon": -88.8299531,
+    "name": "Ripon",
+    "norm": "RIPON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015369751",
+    "lat": 43.7363477,
+    "lon": -88.8638313,
+    "name": "Fairwater",
+    "norm": "FAIRWATER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015369755",
+    "lat": 43.7384964,
+    "lon": -88.8047179,
+    "name": "Brandon",
+    "norm": "BRANDON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015369759",
+    "lat": 43.7065835,
+    "lon": -88.9552324,
+    "name": "Mackford Prairie",
+    "norm": "MACKFORD PRAIRIE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015448916",
+    "lat": 43.8583254,
+    "lon": -88.8563399,
+    "name": "Northwest Ripon",
+    "norm": "NORTHWEST RIPON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015448928",
+    "lat": 44.0373057,
+    "lon": -88.721347,
+    "name": "Omro Industrial Park",
+    "norm": "OMRO INDUSTRIAL PARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015448930",
+    "lat": 44.03662,
+    "lon": -88.7500356,
+    "name": "Omro",
+    "norm": "OMRO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015690451",
+    "lat": 42.7984134,
+    "lon": -88.7999761,
+    "name": "Lakehead Delavan",
+    "norm": "LAKEHEAD DELAVAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1015690457",
+    "lat": 42.8558549,
+    "lon": -88.7293655,
+    "name": "University",
+    "norm": "UNIVERSITY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1015722598",
+    "lat": 42.7382727,
+    "lon": -89.0480537,
+    "name": "Russell",
+    "norm": "RUSSELL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1015966747",
+    "lat": 43.1845622,
+    "lon": -89.4689415,
+    "name": "Centennial Park",
+    "norm": "CENTENNIAL PARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015966751",
+    "lat": 43.2060606,
+    "lon": -89.4503208,
+    "name": "North Side",
+    "norm": "NORTH SIDE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015966752",
+    "lat": 43.3093561,
+    "lon": -89.52762,
+    "name": "Lodi",
+    "norm": "LODI",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015966759",
+    "lat": 43.3483584,
+    "lon": -89.5426254,
+    "name": "Okee",
+    "norm": "OKEE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1015966762",
+    "lat": 43.4098665,
+    "lon": -89.6299715,
+    "name": "Merrimac",
+    "norm": "MERRIMAC",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1016764825",
+    "lat": 46.802842,
+    "lon": -90.8633626,
+    "name": "Bayfield Substation",
+    "norm": "BAYFIELD",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1017239846",
+    "lat": 45.7371641,
+    "lon": -90.4710913,
+    "name": "Crane Chase Substation",
+    "norm": "CRANE CHASE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1017239849",
+    "lat": 45.9354074,
+    "lon": -90.4448133,
+    "name": "Flambeau Substation",
+    "norm": "FLAMBEAU",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1017486294",
+    "lat": 42.6171232,
+    "lon": -88.810134,
+    "name": "Bradford",
+    "norm": "BRADFORD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1018146404",
+    "lat": 45.9956753,
+    "lon": -90.4475814,
+    "name": "Butternut Substation",
+    "norm": "BUTTERNUT",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1018146408",
+    "lat": 46.4988437,
+    "lon": -90.3285027,
+    "name": "Saxon Pump Substation",
+    "norm": "SAXON PUMP",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "88000;4160"
+  },
+  {
+    "id": "way/1018146415",
+    "lat": 46.4114821,
+    "lon": -90.8002448,
+    "name": "Minersville Substation",
+    "norm": "MINERSVILLE",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1018272625",
+    "lat": 46.1878701,
+    "lon": -90.1394126,
+    "name": "Weber Lake Substation",
+    "norm": "WEBER LAKE",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1018708520",
+    "lat": 45.1397353,
+    "lon": -92.0944629,
+    "name": "Connorsville Substation",
+    "norm": "CONNORSVILLE",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1018936421",
+    "lat": 45.3092474,
+    "lon": -92.054279,
+    "name": "Clayton Substation",
+    "norm": "CLAYTON",
+    "operator": "Barron Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1019581711",
+    "lat": 45.9932582,
+    "lon": -91.2828403,
+    "name": "Round Lake Substation",
+    "norm": "ROUND LAKE",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/1021545813",
+    "lat": 43.6973504,
+    "lon": -88.6761824,
+    "name": "Koch Oil",
+    "norm": "KOCH OIL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1022441235",
+    "lat": 43.5015631,
+    "lon": -88.5557207,
+    "name": "Mayville",
+    "norm": "MAYVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1022441240",
+    "lat": 43.4790632,
+    "lon": -88.5529607,
+    "name": "Spring Brook",
+    "norm": "SPRING BROOK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1022441244",
+    "lat": 43.4428743,
+    "lon": -88.5956976,
+    "name": "Hubbard",
+    "norm": "HUBBARD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1022441247",
+    "lat": 43.3446418,
+    "lon": -88.5954625,
+    "name": "HUSTISFORD",
+    "norm": "HUSTISFORD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1022730170",
+    "lat": 42.948183,
+    "lon": -88.8653774,
+    "name": "FORT ATKINSON",
+    "norm": "FORT ATKINSON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1022730171",
+    "lat": 42.9933325,
+    "lon": -89.0217488,
+    "name": "CAMBRIDGE",
+    "norm": "CAMBRIDGE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1022730184",
+    "lat": 42.9275188,
+    "lon": -89.4408457,
+    "name": "SUN VALLEY",
+    "norm": "SUN VALLEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023096103",
+    "lat": 42.8037044,
+    "lon": -89.6229867,
+    "name": "NEW GLARUS",
+    "norm": "NEW GLARUS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023096110",
+    "lat": 42.6201479,
+    "lon": -89.6417723,
+    "name": "IDLE HOUR",
+    "norm": "IDLE HOUR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023096119",
+    "lat": 42.6095969,
+    "lon": -89.9895361,
+    "name": "GRADIOT",
+    "norm": "GRADIOT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023483516",
+    "lat": 42.7582414,
+    "lon": -88.9134547,
+    "name": "RED HAWK",
+    "norm": "RED HAWK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023483521",
+    "lat": 42.7751352,
+    "lon": -89.0325031,
+    "name": "Fulton",
+    "norm": "FULTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023483524",
+    "lat": 42.8258383,
+    "lon": -89.0658904,
+    "name": "SAUNDERS CREEK",
+    "norm": "SAUNDERS CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023483527",
+    "lat": 42.8395428,
+    "lon": -89.0925646,
+    "name": "DANA CORP",
+    "norm": "DANA CORP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023483539",
+    "lat": 42.9044397,
+    "lon": -89.2185899,
+    "name": "STOUGHTON SOUTH",
+    "norm": "STOUGHTON SOUTH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023483543",
+    "lat": 42.8636015,
+    "lon": -89.3686398,
+    "name": "BROOKLYN",
+    "norm": "BROOKLYN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1023613853",
+    "lat": 43.1877316,
+    "lon": -89.4477288,
+    "name": "WAUNAKEE MUNICIPAL 2",
+    "norm": "WAUNAKEE MUNICIPAL 2",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1024013734",
+    "lat": 43.0627181,
+    "lon": -89.3111659,
+    "name": "Pflaum",
+    "norm": "PFLAUM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1024949090",
+    "lat": 43.0765468,
+    "lon": -88.2045962,
+    "name": "Dauplainville",
+    "norm": "DAUPLAINVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1025352983",
+    "lat": 43.0754101,
+    "lon": -88.0259341,
+    "name": "Burleigh Substation",
+    "norm": "BURLEIGH",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1025723114",
+    "lat": 44.0356617,
+    "lon": -89.5029722,
+    "name": "Coloma",
+    "norm": "COLOMA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723115",
+    "lat": 44.1114798,
+    "lon": -89.5030426,
+    "name": "Hancock",
+    "norm": "HANCOCK",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723118",
+    "lat": 44.1113466,
+    "lon": -89.504048,
+    "name": "Hancock",
+    "norm": "HANCOCK",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723122",
+    "lat": 44.2147948,
+    "lon": -89.4813871,
+    "name": "Plainfield",
+    "norm": "PLAINFIELD",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723124",
+    "lat": 44.0254308,
+    "lon": -89.5985964,
+    "name": "Coloma",
+    "norm": "COLOMA",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723129",
+    "lat": 43.9497107,
+    "lon": -89.6840703,
+    "name": "LINCOLN PUMP STA",
+    "norm": "LINCOLN PUMP STA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723132",
+    "lat": 43.8843558,
+    "lon": -89.6777858,
+    "name": "GRAND MARSH",
+    "norm": "GRAND MARSH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723135",
+    "lat": 43.8763527,
+    "lon": -89.6779873,
+    "name": "ACEC BROOKS",
+    "norm": "ACEC BROOKS",
+    "operator": "Adams Columbia Electric Coperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723140",
+    "lat": 43.8712598,
+    "lon": -89.9388225,
+    "name": "ACEC QUINCY",
+    "norm": "ACEC QUINCY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723141",
+    "lat": 43.8655087,
+    "lon": -89.954314,
+    "name": "Castle Rock",
+    "norm": "CASTLE ROCK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025723146",
+    "lat": 43.8621652,
+    "lon": -89.9712863,
+    "name": "DPC BUCKHORN",
+    "norm": "DPC BUCKHORN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1025997375",
+    "lat": 44.7608639,
+    "lon": -92.7215662,
+    "name": "Oak Grove Substation",
+    "norm": "OAK GROVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1026090061",
+    "lat": 43.9446425,
+    "lon": -89.8134649,
+    "name": "HOUGHTON ROCK",
+    "norm": "HOUGHTON ROCK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1026090065",
+    "lat": 43.9855592,
+    "lon": -89.9551996,
+    "name": "ACEC DELLWOOD",
+    "norm": "ACEC DELLWOOD",
+    "operator": "ACEC",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1026090068",
+    "lat": 43.9742451,
+    "lon": -90.0717549,
+    "name": "DPC WHISTLING WINGS",
+    "norm": "DPC WHISTLING WINGS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1026564070",
+    "lat": 43.6263672,
+    "lon": -89.7596651,
+    "name": "ATC Platte 69kV Substation",
+    "norm": "ATC PLATTE 69KV",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1026870109",
+    "lat": 44.3048503,
+    "lon": -89.647896,
+    "name": "ACEC GRANT",
+    "norm": "ACEC GRANT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1029159689",
+    "lat": 44.7088843,
+    "lon": -89.6067778,
+    "name": "Guenther",
+    "norm": "GUENTHER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1029159691",
+    "lat": 44.6682306,
+    "lon": -89.6071763,
+    "name": "Dewey",
+    "norm": "DEWEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1029159693",
+    "lat": 44.5514291,
+    "lon": -89.5973918,
+    "name": "Northpoint",
+    "norm": "NORTHPOINT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/102924097",
+    "lat": 44.0036583,
+    "lon": -88.5839709,
+    "name": "ELLINWOOD",
+    "norm": "ELLINWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000;24900"
+  },
+  {
+    "id": "way/1030463139",
+    "lat": 43.0167244,
+    "lon": -88.0565965,
+    "name": "Greenfield Substation",
+    "norm": "GREENFIELD",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1035563042",
+    "lat": 45.2376433,
+    "lon": -91.8811544,
+    "name": "Ridgeland",
+    "norm": "RIDGELAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1036143449",
+    "lat": 44.6856599,
+    "lon": -90.172846,
+    "name": "Mcmillan",
+    "norm": "MCMILLAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1036143452",
+    "lat": 44.6497266,
+    "lon": -90.1844437,
+    "name": "Wildwood",
+    "norm": "WILDWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1036816192",
+    "lat": 43.2485552,
+    "lon": -89.2272459,
+    "name": "Vinburn",
+    "norm": "VINBURN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1036816193",
+    "lat": 43.3111176,
+    "lon": -89.2325598,
+    "name": "Hampden",
+    "norm": "HAMPDEN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039693568",
+    "lat": 43.0012267,
+    "lon": -89.7301014,
+    "name": "Mount Horeb",
+    "norm": "MOUNT HOREB",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039700985",
+    "lat": 42.5870768,
+    "lon": -88.5525822,
+    "name": "Williams Bay",
+    "norm": "WILLIAMS BAY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1039700995",
+    "lat": 42.540186,
+    "lon": -88.6347211,
+    "name": "Brick Church",
+    "norm": "BRICK CHURCH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1039701007",
+    "lat": 42.5064286,
+    "lon": -89.0079633,
+    "name": "East Beloit",
+    "norm": "EAST BELOIT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1039703859",
+    "lat": 42.5346419,
+    "lon": -89.2284475,
+    "name": "Rec Newark",
+    "norm": "REC NEWARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039703864",
+    "lat": 42.536624,
+    "lon": -89.4259692,
+    "name": "Spring Grove",
+    "norm": "SPRING GROVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039703869",
+    "lat": 42.5646672,
+    "lon": -89.5430333,
+    "name": "Blacksmith",
+    "norm": "BLACKSMITH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039705109",
+    "lat": 42.5152499,
+    "lon": -89.0287685,
+    "name": "Fairbanks Morse Engine",
+    "norm": "FAIRBANKS MORSE ENGINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039744367",
+    "lat": 42.8653829,
+    "lon": -89.9569672,
+    "name": "New Hollendale",
+    "norm": "NEW HOLLENDALE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039744368",
+    "lat": 42.9633224,
+    "lon": -90.1227583,
+    "name": "Dodgeville",
+    "norm": "DODGEVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039991167",
+    "lat": 42.5236755,
+    "lon": -88.8641937,
+    "name": "Tiger",
+    "norm": "TIGER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039991176",
+    "lat": 42.5532266,
+    "lon": -88.8655733,
+    "name": "Clinton (ATLE)",
+    "norm": "CLINTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039991178",
+    "lat": 42.55039,
+    "lon": -88.8703624,
+    "name": "Scot",
+    "norm": "SCOT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1039991183",
+    "lat": 42.5080257,
+    "lon": -88.7217278,
+    "name": "Sharon",
+    "norm": "SHARON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1041551005",
+    "lat": 42.7722237,
+    "lon": -88.1994222,
+    "name": "Tichigan",
+    "norm": "TICHIGAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1044299900",
+    "lat": 46.7752548,
+    "lon": -91.3905414,
+    "name": "Port Wing Substation",
+    "norm": "PORT WING",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;4160"
+  },
+  {
+    "id": "way/1049747594",
+    "lat": 42.9748631,
+    "lon": -90.1445132,
+    "name": "Lands' End Substation",
+    "norm": "LANDS' END",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1052162786",
+    "lat": 43.1772875,
+    "lon": -89.2187886,
+    "name": "Sun Prairie",
+    "norm": "SUN PRAIRIE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1052888246",
+    "lat": 44.4914676,
+    "lon": -88.0408006,
+    "name": "South Broadway",
+    "norm": "SOUTH BROADWAY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1052888254",
+    "lat": 44.5229091,
+    "lon": -87.9974315,
+    "name": "Van Buren St",
+    "norm": "VAN BUREN ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1054262010",
+    "lat": 45.2795964,
+    "lon": -88.2004479,
+    "name": "High Falls Substation",
+    "norm": "HIGH FALLS",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/105682512",
+    "lat": 43.1249677,
+    "lon": -89.3012628,
+    "name": "East Towne",
+    "norm": "EAST TOWNE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1057742202",
+    "lat": 45.872681,
+    "lon": -88.071433,
+    "name": "Twin Falls Substation",
+    "norm": "TWIN FALLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1060285953",
+    "lat": 44.2604606,
+    "lon": -88.2777946,
+    "name": "Ann Street Substation",
+    "norm": "ANN STREET",
+    "operator": "Kaukauna Utiliites",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1062225689",
+    "lat": 43.4222897,
+    "lon": -88.9964448,
+    "name": "ACEC Calamus",
+    "norm": "ACEC CALAMUS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1062226602",
+    "lat": 43.3770038,
+    "lon": -89.0375403,
+    "name": "Fountain Prairie",
+    "norm": "FOUNTAIN PRAIRIE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1062226611",
+    "lat": 43.3163818,
+    "lon": -89.02469,
+    "name": "Columbus South",
+    "norm": "COLUMBUS SOUTH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1063607756",
+    "lat": 43.4503759,
+    "lon": -88.8393766,
+    "name": "Center St",
+    "norm": "CENTER ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1063612077",
+    "lat": 43.5462195,
+    "lon": -88.9059839,
+    "name": "Fox Lake",
+    "norm": "FOX LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1064477767",
+    "lat": 43.4617031,
+    "lon": -89.7593303,
+    "name": "Moore St",
+    "norm": "MOORE ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1064477770",
+    "lat": 43.4738047,
+    "lon": -89.7575221,
+    "name": "Island",
+    "norm": "ISLAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1064477781",
+    "lat": 43.5296659,
+    "lon": -89.7648463,
+    "name": "Fox Hills",
+    "norm": "FOX HILLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1064477785",
+    "lat": 43.4863073,
+    "lon": -89.9059434,
+    "name": "Rock Springs",
+    "norm": "ROCK SPRINGS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1064477801",
+    "lat": 43.435141,
+    "lon": -90.0393724,
+    "name": "Loganville",
+    "norm": "LOGANVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1064638678",
+    "lat": 44.4228429,
+    "lon": -89.961675,
+    "name": "Lakehead Vesper",
+    "norm": "LAKEHEAD VESPER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1065327975",
+    "lat": 43.0279553,
+    "lon": -91.1369142,
+    "name": "La Pointe",
+    "norm": "LA POINTE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1067690130",
+    "lat": 43.8810908,
+    "lon": -90.1752625,
+    "name": "New Lisbon",
+    "norm": "NEW LISBON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1070618753",
+    "lat": 43.458165,
+    "lon": -88.835088,
+    "name": "Bever Dam 3rd St",
+    "norm": "BEVER DAM 3RD ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1070618757",
+    "lat": 43.475919,
+    "lon": -88.8091974,
+    "name": "Bever Dam East",
+    "norm": "BEVER DAM EAST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1070788038",
+    "lat": 42.9631916,
+    "lon": -87.9790478,
+    "name": "Allerton",
+    "norm": "ALLERTON",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1070818341",
+    "lat": 42.5861074,
+    "lon": -88.278858,
+    "name": "Balsam",
+    "norm": "BALSAM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1071011539",
+    "lat": 42.6050327,
+    "lon": -89.3735379,
+    "name": "Brodhead South",
+    "norm": "BRODHEAD SOUTH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1071011542",
+    "lat": 42.6120992,
+    "lon": -89.3734631,
+    "name": "Brodhead Central",
+    "norm": "BRODHEAD CENTRAL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1071011549",
+    "lat": 42.619231,
+    "lon": -89.3804579,
+    "name": "Brodhead North",
+    "norm": "BRODHEAD NORTH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1071011553",
+    "lat": 42.6326228,
+    "lon": -89.2886134,
+    "name": "Orfordville",
+    "norm": "ORFORDVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1071024210",
+    "lat": 43.8873572,
+    "lon": -88.2747815,
+    "name": "Cypress Substation",
+    "norm": "CYPRESS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/1071257423",
+    "lat": 43.0721199,
+    "lon": -89.1991483,
+    "name": "Cottage Grove",
+    "norm": "COTTAGE GROVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1071257427",
+    "lat": 43.1075602,
+    "lon": -89.209293,
+    "name": "Gaston Rd",
+    "norm": "GASTON RD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/107573336",
+    "lat": 43.1131336,
+    "lon": -89.3132231,
+    "name": "Sycamore Substation",
+    "norm": "SYCAMORE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1078054499",
+    "lat": 42.7299565,
+    "lon": -90.4677394,
+    "name": "McGregor Substation",
+    "norm": "MCGREGOR",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1099940847",
+    "lat": 44.9635267,
+    "lon": -91.9862649,
+    "name": "Knapp",
+    "norm": "KNAPP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1099940850",
+    "lat": 44.9708234,
+    "lon": -91.7927964,
+    "name": "Tainter",
+    "norm": "TAINTER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1099963620",
+    "lat": 45.1996923,
+    "lon": -91.4389487,
+    "name": "New Auburn Substation",
+    "norm": "NEW AUBURN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1101696249",
+    "lat": 43.5944545,
+    "lon": -90.6447204,
+    "name": "La Farge",
+    "norm": "LA FARGE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1101696268",
+    "lat": 43.4940576,
+    "lon": -90.907962,
+    "name": "Liberty Pole DPC Solar",
+    "norm": "LIBERTY POLE DPC SOLAR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1106592894",
+    "lat": 43.9975307,
+    "lon": -90.5074716,
+    "name": "North Tomah",
+    "norm": "NORTH TOMAH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1106592905",
+    "lat": 44.0034641,
+    "lon": -90.5343829,
+    "name": "Flare Avenue",
+    "norm": "FLARE AVENUE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1106669773",
+    "lat": 44.1086233,
+    "lon": -90.5446762,
+    "name": "Warrens",
+    "norm": "WARRENS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1106701182",
+    "lat": 43.9163743,
+    "lon": -90.2646801,
+    "name": "Camp Douglas",
+    "norm": "CAMP DOUGLAS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1106779183",
+    "lat": 43.8012115,
+    "lon": -90.0925439,
+    "name": "West Mauston",
+    "norm": "WEST MAUSTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1106779186",
+    "lat": 43.7969785,
+    "lon": -90.0704184,
+    "name": "Mauston",
+    "norm": "MAUSTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1107669381",
+    "lat": 42.5878045,
+    "lon": -90.5920742,
+    "name": "Kieler",
+    "norm": "KIELER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1107707316",
+    "lat": 42.7133416,
+    "lon": -90.5045587,
+    "name": "DPC Platteville",
+    "norm": "DPC PLATTEVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1107849125",
+    "lat": 42.8446106,
+    "lon": -90.3977823,
+    "name": "Rewey Substation",
+    "norm": "REWEY",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1107849128",
+    "lat": 42.7346979,
+    "lon": -90.3369029,
+    "name": "Belmont Substation",
+    "norm": "BELMONT",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1108043184",
+    "lat": 42.581069,
+    "lon": -90.2454488,
+    "name": "DPC Shullsburg",
+    "norm": "DPC SHULLSBURG",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1108043198",
+    "lat": 42.7262935,
+    "lon": -90.4952176,
+    "name": "Pioneer Substation",
+    "norm": "PIONEER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1117118682",
+    "lat": 43.5943711,
+    "lon": -90.3224374,
+    "name": "Sauk DPC Solar",
+    "norm": "SAUK DPC SOLAR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/112288481",
+    "lat": 43.0310084,
+    "lon": -87.9982419,
+    "name": "O'Connor Substation",
+    "norm": "O'CONNOR",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1127637650",
+    "lat": 44.438405,
+    "lon": -88.5759666,
+    "name": "Shiocton Substation",
+    "norm": "SHIOCTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1148860388",
+    "lat": 43.1438606,
+    "lon": -90.1278766,
+    "name": "Wyoming Valley",
+    "norm": "WYOMING VALLEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1157950732",
+    "lat": 42.945957,
+    "lon": -90.3487183,
+    "name": "Badger Hollow Substation",
+    "norm": "BADGER HOLLOW",
+    "operator": "Wisconsin Electric Power Co",
+    "state": "WI",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/1161573414",
+    "lat": 43.1993739,
+    "lon": -90.2315373,
+    "name": "Bear Creek Solar",
+    "norm": "BEAR CREEK SOLAR",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1163130821",
+    "lat": 44.2775731,
+    "lon": -89.8314308,
+    "name": "Wood County Solar",
+    "norm": "WOOD COUNTY SOLAR",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/117159712",
+    "lat": 43.0447047,
+    "lon": -89.3996321,
+    "name": "WINGRA",
+    "norm": "WINGRA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1177408014",
+    "lat": 43.0121457,
+    "lon": -89.5542315,
+    "name": "Northern Lights Substation",
+    "norm": "NORTHERN LIGHTS",
+    "operator": "Epic Systems & ATC",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1186514437",
+    "lat": 44.482759,
+    "lon": -90.124668,
+    "name": "Pittsville",
+    "norm": "PITTSVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1186518606",
+    "lat": 44.6469566,
+    "lon": -90.1492368,
+    "name": "Hume",
+    "norm": "HUME",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1186518613",
+    "lat": 44.6274885,
+    "lon": -89.964019,
+    "name": "Auburndale",
+    "norm": "AUBURNDALE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1186579984",
+    "lat": 44.1261652,
+    "lon": -89.7972757,
+    "name": "Cottonville",
+    "norm": "COTTONVILLE",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1187063224",
+    "lat": 42.9989994,
+    "lon": -90.3451355,
+    "name": "Highland Substation",
+    "norm": "HIGHLAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1191678454",
+    "lat": 43.1066072,
+    "lon": -88.0663642,
+    "name": "Cameron Subsation",
+    "norm": "CAMERON SUBSATION",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "24900;8320"
+  },
+  {
+    "id": "way/119881006",
+    "lat": 43.0699395,
+    "lon": -89.3997482,
+    "name": "East Campus",
+    "norm": "EAST CAMPUS",
+    "operator": "Madison Gas & Electric",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/120735391",
+    "lat": 43.2565427,
+    "lon": -89.4163921,
+    "name": "North Madison Substation",
+    "norm": "NORTH MADISON",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1211716389",
+    "lat": 44.0174776,
+    "lon": -89.4353548,
+    "name": "Richford",
+    "norm": "RICHFORD",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1212363763",
+    "lat": 43.5372061,
+    "lon": -89.0011602,
+    "name": "Randolph",
+    "norm": "RANDOLPH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1212363780",
+    "lat": 43.5354324,
+    "lon": -89.287063,
+    "name": "Sanborn Substation",
+    "norm": "SANBORN",
+    "operator": "Pardeeville Electric Utility",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1212386108",
+    "lat": 43.8838529,
+    "lon": -89.5109318,
+    "name": "Westfield",
+    "norm": "WESTFIELD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1213047946",
+    "lat": 43.2134266,
+    "lon": -87.9250462,
+    "name": "Orchard Substation",
+    "norm": "ORCHARD",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1214433456",
+    "lat": 43.7650042,
+    "lon": -89.619492,
+    "name": "Glen",
+    "norm": "GLEN",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1214433457",
+    "lat": 43.7749302,
+    "lon": -89.7968683,
+    "name": "Winnebago",
+    "norm": "WINNEBAGO",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1217397843",
+    "lat": 45.2241169,
+    "lon": -91.1106611,
+    "name": "Holcombe Substation",
+    "norm": "HOLCOMBE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/123169198",
+    "lat": 43.0543828,
+    "lon": -89.5095103,
+    "name": "West Towne",
+    "norm": "WEST TOWNE",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/123213038",
+    "lat": 42.9770582,
+    "lon": -89.0426138,
+    "name": "Rockdale Substation",
+    "norm": "ROCKDALE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/123213152",
+    "lat": 43.0129908,
+    "lon": -88.8634296,
+    "name": "JEFFERSON",
+    "norm": "JEFFERSON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1243590743",
+    "lat": 44.988517,
+    "lon": -92.538279,
+    "name": "Kinnickinnic (New) Substation",
+    "norm": "KINNICKINNIC",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1256881132",
+    "lat": 42.5789636,
+    "lon": -88.4130365,
+    "name": "South Lake Geneva",
+    "norm": "SOUTH LAKE GENEVA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1265663360",
+    "lat": 45.6378851,
+    "lon": -91.6060928,
+    "name": "Angus Substation",
+    "norm": "ANGUS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1274741572",
+    "lat": 44.8575334,
+    "lon": -92.0814024,
+    "name": "Lucas Substation",
+    "norm": "LUCAS",
+    "operator": "Dunn Energy Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1290492903",
+    "lat": 43.4813556,
+    "lon": -90.5388955,
+    "name": "Ash Ridge",
+    "norm": "ASH RIDGE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1290736637",
+    "lat": 42.7544151,
+    "lon": -90.9275516,
+    "name": "Cassville Solar Farm",
+    "norm": "CASSVILLE SOLAR FARM",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/1290787650",
+    "lat": 42.7184399,
+    "lon": -90.7019756,
+    "name": "Potosi",
+    "norm": "POTOSI",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1290802087",
+    "lat": 42.8174054,
+    "lon": -89.1048845,
+    "name": "North Rock Solar",
+    "norm": "NORTH ROCK SOLAR",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1290802481",
+    "lat": 43.011112,
+    "lon": -88.8629179,
+    "name": "Crawfish River Solar",
+    "norm": "CRAWFISH RIVER SOLAR",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1324337764",
+    "lat": 43.0787474,
+    "lon": -87.962434,
+    "name": "Concordia Substation",
+    "norm": "CONCORDIA",
+    "operator": "We Engergies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1339341755",
+    "lat": 46.1426434,
+    "lon": -89.8900757,
+    "name": "Rest Lake Substation",
+    "norm": "REST LAKE",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1339341756",
+    "lat": 46.2494777,
+    "lon": -89.729153,
+    "name": "Presque Isle Substation",
+    "norm": "PRESQUE ISLE",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1366989238",
+    "lat": 43.0683849,
+    "lon": -87.9516847,
+    "name": "Center Substation",
+    "norm": "CENTER",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1368026318",
+    "lat": 42.956524,
+    "lon": -90.433566,
+    "name": "Hill Valley Substation",
+    "norm": "HILL VALLEY",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/1368026812",
+    "lat": 42.7194235,
+    "lon": -90.7006165,
+    "name": "Tennyson",
+    "norm": "TENNYSON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1370600222",
+    "lat": 45.4963193,
+    "lon": -87.9736597,
+    "name": "Benson Lake SVC",
+    "norm": "BENSON LAKE SVC",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1387836005",
+    "lat": 46.0104763,
+    "lon": -90.4890688,
+    "name": "Butternut Substation",
+    "norm": "BUTTERNUT",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1393247976",
+    "lat": 44.3142426,
+    "lon": -89.8975277,
+    "name": "Nekoosa Mill",
+    "norm": "NEKOOSA MILL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1395747510",
+    "lat": 42.7625237,
+    "lon": -88.2062346,
+    "name": "Waterford Substation",
+    "norm": "WATERFORD",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1395755216",
+    "lat": 42.9597499,
+    "lon": -87.9680507,
+    "name": "Layton Substation",
+    "norm": "LAYTON",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1420924219",
+    "lat": 42.7027994,
+    "lon": -88.5529552,
+    "name": "Sugar Creek Substation",
+    "norm": "SUGAR CREEK",
+    "operator": "American Transmission Company, We Energies",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1436253563",
+    "lat": 43.0114374,
+    "lon": -89.8821651,
+    "name": "Barneveld",
+    "norm": "BARNEVELD",
+    "operator": "Wisconsin Power & Light",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/144850085",
+    "lat": 44.2359179,
+    "lon": -88.484314,
+    "name": "Butte des Morts Substation",
+    "norm": "BUTTE DES MORTS",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;34500;12470"
+  },
+  {
+    "id": "way/1462713076",
+    "lat": 43.1813555,
+    "lon": -88.0430799,
+    "name": "Swan Substation",
+    "norm": "SWAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1474310310",
+    "lat": 45.1058374,
+    "lon": -87.6499304,
+    "name": "KC Paper Substation",
+    "norm": "KC PAPER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1474944591",
+    "lat": 44.9622528,
+    "lon": -88.0253766,
+    "name": "LIttle River Substation",
+    "norm": "LITTLE RIVER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1474945715",
+    "lat": 45.0971754,
+    "lon": -87.9926407,
+    "name": "9th Road Substation",
+    "norm": "9TH ROAD",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/147683795",
+    "lat": 43.7110261,
+    "lon": -87.8383363,
+    "name": "South Sheboygan Falls",
+    "norm": "SOUTH SHEBOYGAN FALLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1478725058",
+    "lat": 46.5343959,
+    "lon": -90.3795371,
+    "name": "Saxon Falls Substation",
+    "norm": "SAXON FALLS",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1479042436",
+    "lat": 46.1592437,
+    "lon": -90.0475405,
+    "name": "Mercer Area Substation",
+    "norm": "MERCER AREA",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1479086987",
+    "lat": 46.5812175,
+    "lon": -90.972053,
+    "name": "Fish Creek Substation",
+    "norm": "FISH CREEK",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/1479098377",
+    "lat": 46.802694,
+    "lon": -90.8662275,
+    "name": "Pikes Creek Substation",
+    "norm": "PIKES CREEK",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1479472666",
+    "lat": 46.322634,
+    "lon": -90.6468346,
+    "name": "East Mellen Substation",
+    "norm": "EAST MELLEN",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/1479475416",
+    "lat": 46.3274881,
+    "lon": -90.5849844,
+    "name": "Morse Substation",
+    "norm": "MORSE",
+    "operator": "Bayfield Electric Cooperrative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1479477732",
+    "lat": 46.3697933,
+    "lon": -90.4046536,
+    "name": "Upson Substation",
+    "norm": "UPSON",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/1495716298",
+    "lat": 43.6574303,
+    "lon": -90.2226552,
+    "name": "Wonewoc",
+    "norm": "WONEWOC",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1495716318",
+    "lat": 43.3909584,
+    "lon": -90.7224775,
+    "name": "Soldier's Grove",
+    "norm": "SOLDIER'S GROVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1496656132",
+    "lat": 43.7056956,
+    "lon": -89.8773089,
+    "name": "Lyndon Station",
+    "norm": "LYNDON STATION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1497377441",
+    "lat": 43.0028851,
+    "lon": -89.7620464,
+    "name": "Military Ridge",
+    "norm": "MILITARY RIDGE",
+    "operator": "Mount Horeb Utilities",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/1501182322",
+    "lat": 44.6148585,
+    "lon": -88.7576841,
+    "name": "East Madison Substation",
+    "norm": "EAST MADISON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "34500;4160"
+  },
+  {
+    "id": "way/1502090704",
+    "lat": 44.4822184,
+    "lon": -89.5599731,
+    "name": "Tommy's Turnpike",
+    "norm": "TOMMY'S TURNPIKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/152903712",
+    "lat": 43.6257098,
+    "lon": -89.7788687,
+    "name": "ATC Kilbourn 69kV-138kV Substation",
+    "norm": "ATC KILBOURN 69KV-138KV",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/1531203676",
+    "lat": 42.9332695,
+    "lon": -87.8704943,
+    "name": "Ramsey Substation",
+    "norm": "RAMSEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/1534662686",
+    "lat": 43.207727,
+    "lon": -87.9801055,
+    "name": "Donges Bay Substation",
+    "norm": "DONGES BAY",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/156430944",
+    "lat": 43.1305761,
+    "lon": -88.0081706,
+    "name": "Granville Substation",
+    "norm": "GRANVILLE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/156430945",
+    "lat": 43.1277079,
+    "lon": -88.1329691,
+    "name": "Tamarack Substation",
+    "norm": "TAMARACK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/156430946",
+    "lat": 43.0278462,
+    "lon": -88.2242595,
+    "name": "Waukesha Substation",
+    "norm": "WAUKESHA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/156432846",
+    "lat": 42.7061612,
+    "lon": -87.8683808,
+    "name": "Racine Substation",
+    "norm": "RACINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/156691053",
+    "lat": 43.3721953,
+    "lon": -87.9589986,
+    "name": "Saukville Substation",
+    "norm": "SAUKVILLE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/158454816",
+    "lat": 43.0980188,
+    "lon": -89.3393559,
+    "name": "Gateway",
+    "norm": "GATEWAY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/158462321",
+    "lat": 43.0846314,
+    "lon": -89.3208058,
+    "name": "Royster Substation",
+    "norm": "ROYSTER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/158581684",
+    "lat": 44.8261564,
+    "lon": -87.3883991,
+    "name": "Redwood",
+    "norm": "REDWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/163677457",
+    "lat": 43.1586222,
+    "lon": -88.344661,
+    "name": "BARK RIVER",
+    "norm": "BARK RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/165141195",
+    "lat": 46.585776,
+    "lon": -90.9015638,
+    "name": "Bayfront Substation",
+    "norm": "BAYFRONT",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;88000"
+  },
+  {
+    "id": "way/166039570",
+    "lat": 45.191693,
+    "lon": -88.4788037,
+    "name": "Mountain Substation",
+    "norm": "MOUNTAIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/167147794",
+    "lat": 43.0799302,
+    "lon": -88.4537611,
+    "name": "SUMMIT",
+    "norm": "SUMMIT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/171309283",
+    "lat": 44.9941045,
+    "lon": -92.702163,
+    "name": "Willow River Substation",
+    "norm": "WILLOW RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;13800"
+  },
+  {
+    "id": "way/172876860",
+    "lat": 43.2980505,
+    "lon": -88.5157804,
+    "name": "Rubicon",
+    "norm": "RUBICON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/174506724",
+    "lat": 43.9304827,
+    "lon": -90.7918336,
+    "name": "Monroe",
+    "norm": "MONROE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/174538775",
+    "lat": 43.8938596,
+    "lon": -91.0858669,
+    "name": "West Salem Substation",
+    "norm": "WEST SALEM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/176104615",
+    "lat": 44.368562,
+    "lon": -88.354512,
+    "name": "North Appleton Substation",
+    "norm": "NORTH APPLETON",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000;34500"
+  },
+  {
+    "id": "way/176106518",
+    "lat": 44.3216688,
+    "lon": -88.2075758,
+    "name": "Fox River Station",
+    "norm": "FOX RIVER STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176110930",
+    "lat": 44.4176431,
+    "lon": -88.7183373,
+    "name": "Hintz Substation",
+    "norm": "HINTZ",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176110933",
+    "lat": 44.4187429,
+    "lon": -88.718372,
+    "name": "Werner Substation",
+    "norm": "WERNER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176110934",
+    "lat": 44.4201589,
+    "lon": -88.7191332,
+    "name": "Werner West Substation",
+    "norm": "WERNER WEST",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176110962",
+    "lat": 44.387466,
+    "lon": -88.5584056,
+    "name": "Ellington",
+    "norm": "ELLINGTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;3450"
+  },
+  {
+    "id": "way/176113080",
+    "lat": 44.3428695,
+    "lon": -87.5396148,
+    "name": "Kewaunee Station",
+    "norm": "KEWAUNEE STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176113081",
+    "lat": 44.2805285,
+    "lon": -87.5383704,
+    "name": "Point Beach Station",
+    "norm": "POINT BEACH STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176113105",
+    "lat": 44.3835388,
+    "lon": -88.1231118,
+    "name": "Lost Dauphin Substation",
+    "norm": "LOST DAUPHIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000;24900"
+  },
+  {
+    "id": "way/176124346",
+    "lat": 44.2207409,
+    "lon": -88.1318481,
+    "name": "Forest Junction Substation",
+    "norm": "FOREST JUNCTION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176218680",
+    "lat": 43.7151116,
+    "lon": -87.7077733,
+    "name": "Edgewater Station",
+    "norm": "EDGEWATER STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176218681",
+    "lat": 43.84549,
+    "lon": -87.8277339,
+    "name": "Howards Grove Substation",
+    "norm": "HOWARDS GROVE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176218682",
+    "lat": 43.7969078,
+    "lon": -87.9072482,
+    "name": "Plymouth Substation 4",
+    "norm": "PLYMOUTH 4",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176218683",
+    "lat": 43.7519156,
+    "lon": -87.8763812,
+    "name": "Sheboygan Falls Station",
+    "norm": "SHEBOYGAN FALLS STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176218684",
+    "lat": 43.7349441,
+    "lon": -88.4943339,
+    "name": "South Fond du Lac Station",
+    "norm": "SOUTH FOND DU LAC STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176218771",
+    "lat": 43.7390393,
+    "lon": -88.320019,
+    "name": "Cedar Ridge Wind Generation",
+    "norm": "CEDAR RIDGE WIND GENERATION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176218775",
+    "lat": 43.6009494,
+    "lon": -87.8960393,
+    "name": "Holland",
+    "norm": "HOLLAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176218787",
+    "lat": 43.7377845,
+    "lon": -87.9814722,
+    "name": "MULLET RIVER",
+    "norm": "MULLET RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/176218789",
+    "lat": 43.7390416,
+    "lon": -87.9815148,
+    "name": "NORTH MULLET RIVER",
+    "norm": "NORTH MULLET RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/176263710",
+    "lat": 44.5579891,
+    "lon": -89.9445042,
+    "name": "Arpin Substation",
+    "norm": "ARPIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000;138000;115000"
+  },
+  {
+    "id": "way/176263711",
+    "lat": 44.7199428,
+    "lon": -88.6747477,
+    "name": "Highway 22 Substation",
+    "norm": "HIGHWAY 22",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/176263740",
+    "lat": 44.7194115,
+    "lon": -88.676461,
+    "name": "Badger Substation",
+    "norm": "BADGER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;115000"
+  },
+  {
+    "id": "way/176264958",
+    "lat": 44.8384119,
+    "lon": -88.1942303,
+    "name": "Morgan Substation",
+    "norm": "MORGAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176266200",
+    "lat": 45.2842197,
+    "lon": -88.1778337,
+    "name": "Thunder",
+    "norm": "THUNDER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/176273563",
+    "lat": 44.7824181,
+    "lon": -89.1485027,
+    "name": "Whitcomb",
+    "norm": "WHITCOMB",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/176273565",
+    "lat": 44.7223903,
+    "lon": -88.8376922,
+    "name": "Caroline",
+    "norm": "CAROLINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/176275865",
+    "lat": 44.9347784,
+    "lon": -90.0783512,
+    "name": "Wien Substation",
+    "norm": "WIEN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/176332697",
+    "lat": 43.9798559,
+    "lon": -88.632978,
+    "name": "Fitzgerald Substation",
+    "norm": "FITZGERALD",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/176340490",
+    "lat": 43.6465575,
+    "lon": -88.4618718,
+    "name": "Forward Energy Center",
+    "norm": "FORWARD ENERGY CENTER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176359808",
+    "lat": 43.4381117,
+    "lon": -88.1722187,
+    "name": "Barton Substation",
+    "norm": "BARTON",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;24900"
+  },
+  {
+    "id": "way/176359859",
+    "lat": 43.3603231,
+    "lon": -88.1829418,
+    "name": "Pleasant Valley Substation",
+    "norm": "PLEASANT VALLEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176359864",
+    "lat": 43.3568456,
+    "lon": -88.3176794,
+    "name": "St Lawrence",
+    "norm": "ST LAWRENCE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176434079",
+    "lat": 43.4863809,
+    "lon": -89.4171238,
+    "name": "Columbia Station",
+    "norm": "COLUMBIA STATION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000;69000"
+  },
+  {
+    "id": "way/176434188",
+    "lat": 43.5639917,
+    "lon": -89.0369852,
+    "name": "North Randolph",
+    "norm": "NORTH RANDOLPH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/176434190",
+    "lat": 42.9774867,
+    "lon": -89.0486985,
+    "name": "ROCKDALE",
+    "norm": "ROCKDALE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176434194",
+    "lat": 43.570535,
+    "lon": -89.1580237,
+    "name": "Cambria",
+    "norm": "CAMBRIA",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/176434202",
+    "lat": 43.5676462,
+    "lon": -89.0599664,
+    "name": "Friesland",
+    "norm": "FRIESLAND",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176515493",
+    "lat": 43.0108324,
+    "lon": -88.0345686,
+    "name": "West Junction Substation",
+    "norm": "WEST JUNCTION",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176515494",
+    "lat": 43.0737674,
+    "lon": -88.0610305,
+    "name": "Tosa Substation",
+    "norm": "TOSA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176515496",
+    "lat": 43.0991991,
+    "lon": -88.0609739,
+    "name": "Butler Substation",
+    "norm": "BUTLER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176515510",
+    "lat": 42.9023081,
+    "lon": -88.0600457,
+    "name": "St. Martins Substation",
+    "norm": "ST. MARTINS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/176555242",
+    "lat": 42.8330041,
+    "lon": -89.1116216,
+    "name": "SHEEPSKIN",
+    "norm": "SHEEPSKIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/176555244",
+    "lat": 42.8323518,
+    "lon": -89.1116975,
+    "name": "Sheepskin Substation",
+    "norm": "SHEEPSKIN",
+    "operator": "Rock Energy Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/176603260",
+    "lat": 45.8984804,
+    "lon": -91.5209884,
+    "name": "Stone Lake Substation",
+    "norm": "STONE LAKE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;161000;69000"
+  },
+  {
+    "id": "way/176671841",
+    "lat": 46.6954316,
+    "lon": -92.0586845,
+    "name": "Stinson Avenue Substation",
+    "norm": "STINSON AVENUE",
+    "operator": "Superior Water, Light and Power Company",
+    "state": "WI",
+    "voltage": "161000;115000"
+  },
+  {
+    "id": "way/177922186",
+    "lat": 43.5481086,
+    "lon": -89.4669943,
+    "name": "Portage",
+    "norm": "PORTAGE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/185667670",
+    "lat": 43.0992798,
+    "lon": -88.3534595,
+    "name": "COTTONWOOD",
+    "norm": "COTTONWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/186640781",
+    "lat": 43.0512691,
+    "lon": -89.47779,
+    "name": "Tokay Substation",
+    "norm": "TOKAY",
+    "operator": "Madison Gas and Electric",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/192167879",
+    "lat": 43.2516966,
+    "lon": -89.5015169,
+    "name": "Dane",
+    "norm": "DANE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/192182327",
+    "lat": 43.1479991,
+    "lon": -89.481588,
+    "name": "Westport",
+    "norm": "WESTPORT",
+    "operator": "Madison Gas and Electric",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/192182333",
+    "lat": 43.1079288,
+    "lon": -89.5011123,
+    "name": "Pheasant Branch",
+    "norm": "PHEASANT BRANCH",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/194681783",
+    "lat": 43.158021,
+    "lon": -89.4114448,
+    "name": "Huiskamp",
+    "norm": "HUISKAMP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/195127095",
+    "lat": 46.7304705,
+    "lon": -92.1080111,
+    "name": "Winter St. Substation",
+    "norm": "WINTER ST.",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/201933963",
+    "lat": 43.7111362,
+    "lon": -87.7481675,
+    "name": "Huebner",
+    "norm": "HUEBNER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/201933964",
+    "lat": 43.7572839,
+    "lon": -87.7336821,
+    "name": "North Gate Riverside",
+    "norm": "NORTH GATE RIVERSIDE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/201982491",
+    "lat": 43.0155034,
+    "lon": -89.5322053,
+    "name": "Cross Country",
+    "norm": "CROSS COUNTRY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/201982492",
+    "lat": 43.0255773,
+    "lon": -89.2674407,
+    "name": "Siggelkow Substation",
+    "norm": "SIGGELKOW",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/201982521",
+    "lat": 43.1409247,
+    "lon": -89.2642632,
+    "name": "Reiner Rd",
+    "norm": "REINER RD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/201982523",
+    "lat": 43.0509988,
+    "lon": -89.2819222,
+    "name": "Femrite",
+    "norm": "FEMRITE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/201982526",
+    "lat": 43.0506965,
+    "lon": -89.2810576,
+    "name": "Femrite Drive Substation",
+    "norm": "FEMRITE DRIVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/201982537",
+    "lat": 43.0938886,
+    "lon": -89.569451,
+    "name": "West Middleton Substation",
+    "norm": "WEST MIDDLETON",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/202054532",
+    "lat": 43.1011043,
+    "lon": -88.5025477,
+    "name": "COONEY",
+    "norm": "COONEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/204882400",
+    "lat": 43.9747459,
+    "lon": -89.8167463,
+    "name": "Friendship",
+    "norm": "FRIENDSHIP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/204882402",
+    "lat": 43.9743042,
+    "lon": -89.7972964,
+    "name": "ACEC Friendship",
+    "norm": "ACEC FRIENDSHIP",
+    "operator": "ACEC",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/205009411",
+    "lat": 43.9129373,
+    "lon": -89.7977475,
+    "name": "MCKENNA",
+    "norm": "MCKENNA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/205717770",
+    "lat": 44.340835,
+    "lon": -89.8833568,
+    "name": "Port Edwards",
+    "norm": "PORT EDWARDS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/205783707",
+    "lat": 44.4820675,
+    "lon": -89.9464516,
+    "name": "Sigel",
+    "norm": "SIGEL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/205783710",
+    "lat": 44.4816392,
+    "lon": -89.9605368,
+    "name": "Vesper",
+    "norm": "VESPER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/205870397",
+    "lat": 44.4020802,
+    "lon": -89.7803978,
+    "name": "Northern Steel Casting Substation",
+    "norm": "NORTHERN STEEL CASTING",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;43800"
+  },
+  {
+    "id": "way/205946782",
+    "lat": 44.4466791,
+    "lon": -89.597944,
+    "name": "Plover",
+    "norm": "PLOVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/206047528",
+    "lat": 43.1358295,
+    "lon": -88.2051723,
+    "name": "SUSSEX",
+    "norm": "SUSSEX",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/206056300",
+    "lat": 44.0078659,
+    "lon": -88.5667454,
+    "name": "12TH AVE",
+    "norm": "12TH AVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;24900"
+  },
+  {
+    "id": "way/206138040",
+    "lat": 44.3158285,
+    "lon": -89.8582458,
+    "name": "Hollywood",
+    "norm": "HOLLYWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/206138043",
+    "lat": 44.367866,
+    "lon": -89.7810655,
+    "name": "Baker St",
+    "norm": "BAKER ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;43800;13200"
+  },
+  {
+    "id": "way/206138044",
+    "lat": 44.314667,
+    "lon": -89.8005855,
+    "name": "Saratoga",
+    "norm": "SARATOGA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;115000;69000"
+  },
+  {
+    "id": "way/206198544",
+    "lat": 45.1118692,
+    "lon": -92.5191812,
+    "name": "Highview Substation",
+    "norm": "HIGHVIEW",
+    "operator": "New Richmond Utilities",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/207553059",
+    "lat": 44.8923267,
+    "lon": -87.3471874,
+    "name": "Dunn Rd",
+    "norm": "DUNN RD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000;24900"
+  },
+  {
+    "id": "way/207562805",
+    "lat": 44.8173616,
+    "lon": -87.3847226,
+    "name": "Industrial",
+    "norm": "INDUSTRIAL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/207713767",
+    "lat": 46.3852093,
+    "lon": -90.7053169,
+    "name": "High Bridge Substation",
+    "norm": "HIGH BRIDGE",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/209548366",
+    "lat": 46.618285,
+    "lon": -91.4489814,
+    "name": "Iron River Substation",
+    "norm": "IRON RIVER",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/209548367",
+    "lat": 46.6187836,
+    "lon": -91.4489881,
+    "name": "Iron River Substation",
+    "norm": "IRON RIVER",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/210924162",
+    "lat": 46.6339255,
+    "lon": -91.4485274,
+    "name": "Oulu Substation",
+    "norm": "OULU",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/211114462",
+    "lat": 46.7966481,
+    "lon": -91.258205,
+    "name": "Herbster Substation",
+    "norm": "HERBSTER",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/211120208",
+    "lat": 46.8328626,
+    "lon": -91.2566547,
+    "name": "Herbster Substation",
+    "norm": "HERBSTER",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/213189295",
+    "lat": 46.8576259,
+    "lon": -91.1011601,
+    "name": "Cornucopia Substation",
+    "norm": "CORNUCOPIA",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/215018343",
+    "lat": 46.8087741,
+    "lon": -90.8155312,
+    "name": "Bayfield Substation",
+    "norm": "BAYFIELD",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/215140314",
+    "lat": 45.957385,
+    "lon": -91.642938,
+    "name": "Springbrook Substation",
+    "norm": "SPRINGBROOK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/215528233",
+    "lat": 46.6698122,
+    "lon": -90.897172,
+    "name": "Washburn Substation",
+    "norm": "WASHBURN",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;13200"
+  },
+  {
+    "id": "way/215983064",
+    "lat": 46.5586192,
+    "lon": -90.8822315,
+    "name": "Gingles",
+    "norm": "GINGLES",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "161000;115000;69000;34500"
+  },
+  {
+    "id": "way/216473614",
+    "lat": 46.4134059,
+    "lon": -91.0293811,
+    "name": "Bibon Substation",
+    "norm": "BIBON",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/216480329",
+    "lat": 46.4986536,
+    "lon": -90.9044381,
+    "name": "White River Substation",
+    "norm": "WHITE RIVER",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000;12470;2400"
+  },
+  {
+    "id": "way/216489547",
+    "lat": 46.5447281,
+    "lon": -90.8653988,
+    "name": "Ashland Substation",
+    "norm": "ASHLAND",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/216945248",
+    "lat": 46.3636988,
+    "lon": -91.1053013,
+    "name": "Grandview Substation",
+    "norm": "GRANDVIEW",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/217703854",
+    "lat": 44.6345869,
+    "lon": -90.134836,
+    "name": "Mill Creek",
+    "norm": "MILL CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/218018280",
+    "lat": 43.7029218,
+    "lon": -88.9961246,
+    "name": "Markesan",
+    "norm": "MARKESAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/218296046",
+    "lat": 44.074323,
+    "lon": -87.6842005,
+    "name": "DEWEY",
+    "norm": "DEWEY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/218296048",
+    "lat": 44.0852148,
+    "lon": -87.7267902,
+    "name": "CUSTER",
+    "norm": "CUSTER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/218397418",
+    "lat": 44.2069639,
+    "lon": -88.4247682,
+    "name": "Melissa",
+    "norm": "MELISSA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/219058540",
+    "lat": 44.5045834,
+    "lon": -89.1299094,
+    "name": "Iola",
+    "norm": "IOLA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/219477120",
+    "lat": 43.5303907,
+    "lon": -90.0103189,
+    "name": "Reedsburg",
+    "norm": "REEDSBURG",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/219477121",
+    "lat": 43.5214312,
+    "lon": -89.9951695,
+    "name": "Artesian",
+    "norm": "ARTESIAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/219477994",
+    "lat": 43.4692692,
+    "lon": -89.7880995,
+    "name": "Kirkwood",
+    "norm": "KIRKWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/220700402",
+    "lat": 46.2089874,
+    "lon": -91.2840699,
+    "name": "Cable Substation",
+    "norm": "CABLE",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/225190395",
+    "lat": 43.1775295,
+    "lon": -90.0516379,
+    "name": "Spring Green",
+    "norm": "SPRING GREEN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/225348299",
+    "lat": 43.0967552,
+    "lon": -89.6511051,
+    "name": "Stage Coach Substation",
+    "norm": "STAGE COACH",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/225353679",
+    "lat": 43.0952449,
+    "lon": -89.5194515,
+    "name": "Terrace Riser",
+    "norm": "TERRACE RISER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/225635740",
+    "lat": 45.8533748,
+    "lon": -89.6444754,
+    "name": "Clear Lake",
+    "norm": "CLEAR LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/228502562",
+    "lat": 44.7683632,
+    "lon": -87.5189695,
+    "name": "Brusbay Substation",
+    "norm": "BRUSBAY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/229098965",
+    "lat": 42.9959929,
+    "lon": -88.3240175,
+    "name": "MERRILL HILLS",
+    "norm": "MERRILL HILLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/229542085",
+    "lat": 44.6138727,
+    "lon": -87.4492537,
+    "name": "Algoma City",
+    "norm": "ALGOMA CITY",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/229629084",
+    "lat": 43.2530801,
+    "lon": -89.3411143,
+    "name": "Deforest",
+    "norm": "DEFOREST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/230309339",
+    "lat": 44.5036534,
+    "lon": -87.4868298,
+    "name": "Barnett",
+    "norm": "BARNETT",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/230443571",
+    "lat": 44.461393,
+    "lon": -87.5079245,
+    "name": "Beardsley St",
+    "norm": "BEARDSLEY ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/230478091",
+    "lat": 44.4285989,
+    "lon": -87.5726164,
+    "name": "East Krok",
+    "norm": "EAST KROK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/230837548",
+    "lat": 44.4776763,
+    "lon": -87.9776382,
+    "name": "Highway V",
+    "norm": "HIGHWAY V",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/230982071",
+    "lat": 44.5311769,
+    "lon": -87.997013,
+    "name": "Tower Dr",
+    "norm": "TOWER DR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/230990479",
+    "lat": 44.5206558,
+    "lon": -87.9678167,
+    "name": "DANZ AVE SW STA",
+    "norm": "DANZ AVE SW STA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/230990481",
+    "lat": 44.5056939,
+    "lon": -87.9701199,
+    "name": "Preble",
+    "norm": "PREBLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/230990482",
+    "lat": 44.5062855,
+    "lon": -87.9774422,
+    "name": "Henry St",
+    "norm": "HENRY ST",
+    "operator": "WPS",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/231073694",
+    "lat": 44.5204497,
+    "lon": -88.0003541,
+    "name": "Eastman",
+    "norm": "EASTMAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/231078148",
+    "lat": 44.488675,
+    "lon": -87.9714491,
+    "name": "Finger Rd SW STA",
+    "norm": "FINGER RD SW STA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/231088847",
+    "lat": 44.4352552,
+    "lon": -88.0205657,
+    "name": "Mystery Hills",
+    "norm": "MYSTERY HILLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/231088849",
+    "lat": 44.4656264,
+    "lon": -87.96892,
+    "name": "BLUESTONE",
+    "norm": "BLUESTONE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/231218621",
+    "lat": 44.4015626,
+    "lon": -88.0669137,
+    "name": "ROCKLAND",
+    "norm": "ROCKLAND",
+    "operator": "Wisconsin Public Service",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/231704601",
+    "lat": 44.3429879,
+    "lon": -87.8964093,
+    "name": "Wesmark",
+    "norm": "WESMARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/231818100",
+    "lat": 44.340281,
+    "lon": -88.0866355,
+    "name": "Greenleaf",
+    "norm": "GREENLEAF",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;24900"
+  },
+  {
+    "id": "way/232893408",
+    "lat": 43.3269129,
+    "lon": -89.5461945,
+    "name": "Lodi Industrial Park",
+    "norm": "LODI INDUSTRIAL PARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/234949467",
+    "lat": 43.5614379,
+    "lon": -91.2304727,
+    "name": "Genoa Substation",
+    "norm": "GENOA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/236151627",
+    "lat": 45.0483668,
+    "lon": -87.7430122,
+    "name": "Sherwood Substation",
+    "norm": "SHERWOOD",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/238327754",
+    "lat": 44.1530231,
+    "lon": -87.5905255,
+    "name": "Columbus St",
+    "norm": "COLUMBUS ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/238327755",
+    "lat": 44.1539613,
+    "lon": -87.6253088,
+    "name": "Shoto",
+    "norm": "SHOTO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/239391640",
+    "lat": 44.225891,
+    "lon": -87.817657,
+    "name": "Kellnersville",
+    "norm": "KELLNERSVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;24900"
+  },
+  {
+    "id": "way/241075862",
+    "lat": 44.1018048,
+    "lon": -87.7015502,
+    "name": "Manrap",
+    "norm": "MANRAP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/241075863",
+    "lat": 44.0971295,
+    "lon": -87.6725511,
+    "name": "Revere Dr",
+    "norm": "REVERE DR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/242588637",
+    "lat": 44.0366518,
+    "lon": -87.9217249,
+    "name": "St Nazianz",
+    "norm": "ST NAZIANZ",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/242612310",
+    "lat": 44.5406268,
+    "lon": -88.0099002,
+    "name": "Pulliam SW YD",
+    "norm": "PULLIAM SW YD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/243043574",
+    "lat": 43.9557743,
+    "lon": -88.0895667,
+    "name": "New Holstein Switch Station",
+    "norm": "NEW HOLSTEIN SWITCH STATION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/243071570",
+    "lat": 44.5481593,
+    "lon": -88.049448,
+    "name": "Velp Ave",
+    "norm": "VELP AVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/243071572",
+    "lat": 44.5495851,
+    "lon": -88.0706772,
+    "name": "Howard",
+    "norm": "HOWARD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/243077706",
+    "lat": 44.5241851,
+    "lon": -88.0146618,
+    "name": "James St",
+    "norm": "JAMES ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/243164375",
+    "lat": 44.5059865,
+    "lon": -88.030236,
+    "name": "Eighth Street Substation",
+    "norm": "EIGHTH STREET",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;24900"
+  },
+  {
+    "id": "way/243753768",
+    "lat": 44.6482065,
+    "lon": -88.0685357,
+    "name": "Suamico Substation",
+    "norm": "SUAMICO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/244945144",
+    "lat": 44.5738301,
+    "lon": -88.0792102,
+    "name": "Bayport SW STA",
+    "norm": "BAYPORT SW STA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/244949469",
+    "lat": 44.5743414,
+    "lon": -88.1486215,
+    "name": "Maplewood",
+    "norm": "MAPLEWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/245610489",
+    "lat": 44.4169766,
+    "lon": -88.0997739,
+    "name": "Red Maple Substation",
+    "norm": "RED MAPLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/246822850",
+    "lat": 44.9027559,
+    "lon": -87.8859142,
+    "name": "Oconto Substation",
+    "norm": "OCONTO",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/247048774",
+    "lat": 44.8787954,
+    "lon": -88.004846,
+    "name": "Stiles Substation",
+    "norm": "STILES",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/247139306",
+    "lat": 44.365132,
+    "lon": -89.0912538,
+    "name": "Harrison North",
+    "norm": "HARRISON NORTH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/247139307",
+    "lat": 44.3634778,
+    "lon": -89.090828,
+    "name": "Harrison",
+    "norm": "HARRISON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/247156248",
+    "lat": 44.8727515,
+    "lon": -88.0490939,
+    "name": "Pioneer",
+    "norm": "PIONEER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/247201882",
+    "lat": 44.8864744,
+    "lon": -88.1351393,
+    "name": "Oconto Falls Substation",
+    "norm": "OCONTO FALLS",
+    "operator": "Oconto Electric Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/247201883",
+    "lat": 44.8673808,
+    "lon": -88.1254232,
+    "name": "Falls",
+    "norm": "FALLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/247358954",
+    "lat": 44.3583923,
+    "lon": -89.0448537,
+    "name": "WAUPACA",
+    "norm": "WAUPACA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/247561542",
+    "lat": 44.3289882,
+    "lon": -88.9321804,
+    "name": "White Lake",
+    "norm": "WHITE LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/247814596",
+    "lat": 43.1845944,
+    "lon": -89.4612584,
+    "name": "Waunakee SW STA",
+    "norm": "WAUNAKEE SW STA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/248402515",
+    "lat": 44.2173969,
+    "lon": -88.4497843,
+    "name": "Northside Substation",
+    "norm": "NORTHSIDE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/249303021",
+    "lat": 46.3962383,
+    "lon": -90.3420954,
+    "name": "Iron Belt Substation",
+    "norm": "IRON BELT",
+    "operator": "Bayfield Electric Cooperative",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/249657286",
+    "lat": 45.9531511,
+    "lon": -90.4464243,
+    "name": "Park Falls Substation",
+    "norm": "PARK FALLS",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;34500"
+  },
+  {
+    "id": "way/249657296",
+    "lat": 45.935758,
+    "lon": -90.4432913,
+    "name": "North Fork Substation",
+    "norm": "NORTH FORK",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/249834855",
+    "lat": 42.5932048,
+    "lon": -89.6517822,
+    "name": "South Monroe",
+    "norm": "SOUTH MONROE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/25080836",
+    "lat": 43.131636,
+    "lon": -87.9460988,
+    "name": "Range Line SW",
+    "norm": "RANGE LINE SW",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/25080859",
+    "lat": 43.1248456,
+    "lon": -87.9444798,
+    "name": "Sidney Term",
+    "norm": "SIDNEY TERM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/25080903",
+    "lat": 43.0986115,
+    "lon": -87.9362097,
+    "name": "Cornell",
+    "norm": "CORNELL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/25080923",
+    "lat": 43.0920029,
+    "lon": -87.9364406,
+    "name": "Fiebrantz Substation",
+    "norm": "FIEBRANTZ",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/251106423",
+    "lat": 45.469786,
+    "lon": -89.6973737,
+    "name": "Eastom",
+    "norm": "EASTOM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/251106424",
+    "lat": 45.4400511,
+    "lon": -89.7313476,
+    "name": "Tomahawk",
+    "norm": "TOMAHAWK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/251434839",
+    "lat": 45.174752,
+    "lon": -89.6525855,
+    "name": "Pine",
+    "norm": "PINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/251982062",
+    "lat": 45.025407,
+    "lon": -89.6763284,
+    "name": "Maine",
+    "norm": "MAINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/252074122",
+    "lat": 44.9511909,
+    "lon": -89.7088673,
+    "name": "Sunnyvale",
+    "norm": "SUNNYVALE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/252074123",
+    "lat": 44.9668465,
+    "lon": -89.6855118,
+    "name": "Hilltop",
+    "norm": "HILLTOP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/252074124",
+    "lat": 44.951246,
+    "lon": -89.6746234,
+    "name": "Sherman St",
+    "norm": "SHERMAN ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/252078356",
+    "lat": 44.9013535,
+    "lon": -89.5666007,
+    "name": "Kelly",
+    "norm": "KELLY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/252571811",
+    "lat": 43.0004625,
+    "lon": -87.9709128,
+    "name": "Lincoln Substation",
+    "norm": "LINCOLN",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/252592145",
+    "lat": 45.0892092,
+    "lon": -87.6595111,
+    "name": "Roosevelt Rd Substation",
+    "norm": "ROOSEVELT RD",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/25353126",
+    "lat": 43.1175588,
+    "lon": -87.9200871,
+    "name": "Glendale",
+    "norm": "GLENDALE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/254364418",
+    "lat": 45.6314026,
+    "lon": -89.4286949,
+    "name": "Highway Eight",
+    "norm": "HIGHWAY EIGHT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/254364420",
+    "lat": 45.6210215,
+    "lon": -89.3690091,
+    "name": "Hodag",
+    "norm": "HODAG",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/254397267",
+    "lat": 45.5631934,
+    "lon": -89.1651129,
+    "name": "Venus",
+    "norm": "VENUS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/256804892",
+    "lat": 45.0999839,
+    "lon": -87.6268411,
+    "name": "Wells St Substation",
+    "norm": "WELLS ST",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/256852987",
+    "lat": 45.0948473,
+    "lon": -87.6029494,
+    "name": "Ogden Substation",
+    "norm": "OGDEN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/257588043",
+    "lat": 45.1767174,
+    "lon": -87.9949018,
+    "name": "Crivitz Substation",
+    "norm": "CRIVITZ",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/258582476",
+    "lat": 44.2933362,
+    "lon": -91.2550361,
+    "name": "Tremval Substation",
+    "norm": "TREMVAL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/258609191",
+    "lat": 45.2332873,
+    "lon": -88.0673249,
+    "name": "Sandstone Rapids",
+    "norm": "SANDSTONE RAPIDS",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/262091881",
+    "lat": 43.1154074,
+    "lon": -87.9269968,
+    "name": "Custer Term",
+    "norm": "CUSTER TERM",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/262113809",
+    "lat": 42.8585986,
+    "lon": -88.32732,
+    "name": "Mukwonago",
+    "norm": "MUKWONAGO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/262113811",
+    "lat": 43.0938697,
+    "lon": -87.9035413,
+    "name": "Humbolt Terminal",
+    "norm": "HUMBOLT TERMINAL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/262113813",
+    "lat": 42.6834112,
+    "lon": -88.2676772,
+    "name": "Burlington",
+    "norm": "BURLINGTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/262113814",
+    "lat": 42.8194774,
+    "lon": -88.7306545,
+    "name": "Whitewater Substation",
+    "norm": "WHITEWATER",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/262397449",
+    "lat": 45.3568722,
+    "lon": -88.2305881,
+    "name": "Caldron Falls Substation",
+    "norm": "CALDRON FALLS",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/262556706",
+    "lat": 45.4964812,
+    "lon": -87.9757299,
+    "name": "Amberg Substation",
+    "norm": "AMBERG",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/262556707",
+    "lat": 45.4927418,
+    "lon": -87.9839707,
+    "name": "Daves Falls",
+    "norm": "DAVES FALLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/262603839",
+    "lat": 44.7069065,
+    "lon": -88.6113996,
+    "name": "Cloverleaf Substation",
+    "norm": "CLOVERLEAF",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/263616256",
+    "lat": 44.0639737,
+    "lon": -89.288709,
+    "name": "Wautoma",
+    "norm": "WAUTOMA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/263616286",
+    "lat": 43.7628618,
+    "lon": -88.4013126,
+    "name": "Ohmstead",
+    "norm": "OHMSTEAD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/263616290",
+    "lat": 44.1501651,
+    "lon": -89.4816436,
+    "name": "Sand Lake",
+    "norm": "SAND LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/263616298",
+    "lat": 43.7986848,
+    "lon": -88.4745612,
+    "name": "North Fond du Lac",
+    "norm": "NORTH FOND DU LAC",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/263624831",
+    "lat": 42.9679435,
+    "lon": -90.4226845,
+    "name": "Eden Substation",
+    "norm": "EDEN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/264293297",
+    "lat": 45.4255759,
+    "lon": -88.3557158,
+    "name": "Silver Cliff Substation",
+    "norm": "SILVER CLIFF",
+    "operator": "Wisconsin Public Service Corporation",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/265725806",
+    "lat": 45.9103184,
+    "lon": -89.2583632,
+    "name": "Eagle River",
+    "norm": "EAGLE RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/271946220",
+    "lat": 42.6698915,
+    "lon": -88.9568148,
+    "name": "Sunrise",
+    "norm": "SUNRISE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/271946838",
+    "lat": 42.5764937,
+    "lon": -89.0018703,
+    "name": "Turtle",
+    "norm": "TURTLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/273030219",
+    "lat": 45.7835124,
+    "lon": -87.9976747,
+    "name": "Bluff View Substation",
+    "norm": "BLUFF VIEW",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/273030220",
+    "lat": 45.7752401,
+    "lon": -87.9886779,
+    "name": "Niagara Paper of Wisconsin",
+    "norm": "NIAGARA PAPER OF WISCONSIN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/275188589",
+    "lat": 45.9447697,
+    "lon": -88.2665559,
+    "name": "Aspen Substation",
+    "norm": "ASPEN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/277232011",
+    "lat": 45.6269134,
+    "lon": -88.361473,
+    "name": "Goodman Substation",
+    "norm": "GOODMAN",
+    "operator": "Wisconsin Public Service Corporation",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/28269279",
+    "lat": 44.5000769,
+    "lon": -89.6052715,
+    "name": "Rocky Run Substation",
+    "norm": "ROCKY RUN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;115000"
+  },
+  {
+    "id": "way/28269984",
+    "lat": 44.4962152,
+    "lon": -89.5720982,
+    "name": "Whiting Ave",
+    "norm": "WHITING AVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;43800"
+  },
+  {
+    "id": "way/283095311",
+    "lat": 45.9253073,
+    "lon": -88.2616518,
+    "name": "Florence Substation",
+    "norm": "FLORENCE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/286848328",
+    "lat": 44.2699542,
+    "lon": -88.7702051,
+    "name": "Readfield",
+    "norm": "READFIELD",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/292463164",
+    "lat": 42.6005302,
+    "lon": -89.6418494,
+    "name": "MONROE CENTRAL",
+    "norm": "MONROE CENTRAL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/293335424",
+    "lat": 43.3307166,
+    "lon": -90.3864042,
+    "name": "James Olson",
+    "norm": "JAMES OLSON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/296714366",
+    "lat": 45.5630563,
+    "lon": -88.9200153,
+    "name": "Metonga",
+    "norm": "METONGA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/299956516",
+    "lat": 43.2867328,
+    "lon": -90.8243911,
+    "name": "Bell Center",
+    "norm": "BELL CENTER",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/302706349",
+    "lat": 45.167288,
+    "lon": -88.9906744,
+    "name": "Polar",
+    "norm": "POLAR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/303643324",
+    "lat": 42.7775606,
+    "lon": -89.2924307,
+    "name": "Evansville Muni",
+    "norm": "EVANSVILLE MUNI",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/303668786",
+    "lat": 43.6672281,
+    "lon": -90.4594847,
+    "name": "Hillsboro",
+    "norm": "HILLSBORO",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/306188998",
+    "lat": 43.0353695,
+    "lon": -91.1218734,
+    "name": "Hillside",
+    "norm": "HILLSIDE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/306188999",
+    "lat": 43.0591814,
+    "lon": -91.0042251,
+    "name": "Gran Grae",
+    "norm": "GRAN GRAE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/306193118",
+    "lat": 43.8286267,
+    "lon": -91.2594436,
+    "name": "French Island Substation",
+    "norm": "FRENCH ISLAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/306434408",
+    "lat": 43.0897451,
+    "lon": -90.880352,
+    "name": "Wauzeka",
+    "norm": "WAUZEKA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/307210003",
+    "lat": 42.7731594,
+    "lon": -88.9646254,
+    "name": "Lamar",
+    "norm": "LAMAR",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/307210005",
+    "lat": 42.7397888,
+    "lon": -88.990363,
+    "name": "HARMONY",
+    "norm": "HARMONY",
+    "operator": "Wisconsin Power & Power",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/307516405",
+    "lat": 42.5815071,
+    "lon": -89.0357858,
+    "name": "Boc Gasses",
+    "norm": "BOC GASSES",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/307519003",
+    "lat": 42.5494333,
+    "lon": -88.872504,
+    "name": "Forge 2",
+    "norm": "FORGE 2",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/307519005",
+    "lat": 42.6051249,
+    "lon": -88.9629135,
+    "name": "Laprairie",
+    "norm": "LAPRAIRIE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/307662305",
+    "lat": 42.5179256,
+    "lon": -88.9807168,
+    "name": "Cranston",
+    "norm": "CRANSTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/307814807",
+    "lat": 42.5959,
+    "lon": -88.7268936,
+    "name": "West Darien",
+    "norm": "WEST DARIEN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/307816579",
+    "lat": 42.629614,
+    "lon": -88.6403113,
+    "name": "Delavan",
+    "norm": "DELAVAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/307816581",
+    "lat": 42.6406746,
+    "lon": -88.6144698,
+    "name": "Bristol",
+    "norm": "BRISTOL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/307816582",
+    "lat": 42.6144579,
+    "lon": -88.6754183,
+    "name": "Southwest Delavan",
+    "norm": "SOUTHWEST DELAVAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/307818965",
+    "lat": 42.5376143,
+    "lon": -88.5991213,
+    "name": "Walworth",
+    "norm": "WALWORTH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/308267623",
+    "lat": 43.0384746,
+    "lon": -89.3586921,
+    "name": "Nine Springs Substation",
+    "norm": "NINE SPRINGS",
+    "operator": "Madison Gas & Eletric",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/308364830",
+    "lat": 42.7468206,
+    "lon": -89.5935939,
+    "name": "MONTICELLO",
+    "norm": "MONTICELLO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/308366911",
+    "lat": 45.1455161,
+    "lon": -89.1408998,
+    "name": "Aurora St",
+    "norm": "AURORA ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/308393285",
+    "lat": 43.7400424,
+    "lon": -88.431159,
+    "name": "Martin Road Substation",
+    "norm": "MARTIN ROAD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/309506081",
+    "lat": 43.9109912,
+    "lon": -91.2355601,
+    "name": "Cedar Creek Substation",
+    "norm": "CEDAR CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/311243504",
+    "lat": 43.4687,
+    "lon": -89.5176331,
+    "name": "Caledonia",
+    "norm": "CALEDONIA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/313264111",
+    "lat": 44.7716765,
+    "lon": -88.5825834,
+    "name": "EAST SHAWANO",
+    "norm": "EAST SHAWANO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/313555343",
+    "lat": 44.7730482,
+    "lon": -88.6304076,
+    "name": "West Shawano Substation",
+    "norm": "WEST SHAWANO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/313837840",
+    "lat": 44.734851,
+    "lon": -88.4464501,
+    "name": "Bondual Substation",
+    "norm": "BONDUAL",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/315504824",
+    "lat": 43.9907023,
+    "lon": -88.5936478,
+    "name": "Progress",
+    "norm": "PROGRESS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/316374871",
+    "lat": 44.7457873,
+    "lon": -89.0624811,
+    "name": "Tigerton",
+    "norm": "TIGERTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/316477695",
+    "lat": 42.8973513,
+    "lon": -89.7700652,
+    "name": "Forward",
+    "norm": "FORWARD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/316493118",
+    "lat": 42.8168754,
+    "lon": -89.8625747,
+    "name": "Blanchardville",
+    "norm": "BLANCHARDVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/316909229",
+    "lat": 44.8349097,
+    "lon": -89.1437514,
+    "name": "CWEC WHITTENBERG",
+    "norm": "CWEC WHITTENBERG",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/316909230",
+    "lat": 44.8401492,
+    "lon": -89.1581951,
+    "name": "WITTENBERG",
+    "norm": "WITTENBERG",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/317481620",
+    "lat": 44.9211723,
+    "lon": -89.0422457,
+    "name": "Brooks Corners",
+    "norm": "BROOKS CORNERS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/317811175",
+    "lat": 44.9282384,
+    "lon": -89.220059,
+    "name": "BRIAMWOOD",
+    "norm": "BRIAMWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/318056470",
+    "lat": 45.0001922,
+    "lon": -89.0088856,
+    "name": "Deer Tail",
+    "norm": "DEER TAIL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/319416601",
+    "lat": 44.8558112,
+    "lon": -92.6351566,
+    "name": "River Falls Substation",
+    "norm": "RIVER FALLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/330451302",
+    "lat": 42.5621646,
+    "lon": -90.2945979,
+    "name": "Miner Substation",
+    "norm": "MINER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/331024186",
+    "lat": 42.5730184,
+    "lon": -90.4067247,
+    "name": "Benton Substation",
+    "norm": "BENTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/334854367",
+    "lat": 43.0320206,
+    "lon": -87.9646518,
+    "name": "Park Hill Substation",
+    "norm": "PARK HILL",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/349343126",
+    "lat": 43.0726721,
+    "lon": -89.538022,
+    "name": "Pleasant View",
+    "norm": "PLEASANT VIEW",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/359230296",
+    "lat": 42.5801619,
+    "lon": -89.7947827,
+    "name": "BROWNTOWN",
+    "norm": "BROWNTOWN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/362336454",
+    "lat": 43.0862735,
+    "lon": -89.2674157,
+    "name": "Sprecher Substation",
+    "norm": "SPRECHER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/370277871",
+    "lat": 43.0141554,
+    "lon": -89.4602405,
+    "name": "Fitchburg Substation",
+    "norm": "FITCHBURG",
+    "operator": "MG&E",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/370745670",
+    "lat": 42.9206824,
+    "lon": -87.9220667,
+    "name": "Branch",
+    "norm": "BRANCH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/380018779",
+    "lat": 43.9879762,
+    "lon": -89.5216876,
+    "name": "CHAFFEE CREEK",
+    "norm": "CHAFFEE CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/381081962",
+    "lat": 43.9870041,
+    "lon": -90.4727646,
+    "name": "Tomah Industrial Park",
+    "norm": "TOMAH INDUSTRIAL PARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/381081963",
+    "lat": 43.9695943,
+    "lon": -90.4957085,
+    "name": "Council Creek",
+    "norm": "COUNCIL CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/389646449",
+    "lat": 43.0789259,
+    "lon": -87.8784226,
+    "name": "Electrical Substation East",
+    "norm": "ELECTRICAL EAST",
+    "operator": "University of Wisconsin-Milwaukee",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/407031351",
+    "lat": 42.7806456,
+    "lon": -87.8137193,
+    "name": "Saint Rita Substation",
+    "norm": "SAINT RITA",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/40720863",
+    "lat": 42.842462,
+    "lon": -87.8347184,
+    "name": "Oak Creek Station",
+    "norm": "OAK CREEK STATION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/40788257",
+    "lat": 42.5528528,
+    "lon": -87.9008103,
+    "name": "Bain",
+    "norm": "BAIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/40833383",
+    "lat": 42.5642377,
+    "lon": -87.8742108,
+    "name": "Kenosha Substation",
+    "norm": "KENOSHA",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/40836734",
+    "lat": 43.0085704,
+    "lon": -88.17333,
+    "name": "Arcadian Substation",
+    "norm": "ARCADIAN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/40836896",
+    "lat": 43.0090104,
+    "lon": -88.1207522,
+    "name": "Moorland Substation",
+    "norm": "MOORLAND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/40837860",
+    "lat": 43.0287768,
+    "lon": -88.0538575,
+    "name": "Bluemound Substation",
+    "norm": "BLUEMOUND",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/40837912",
+    "lat": 43.0300129,
+    "lon": -88.0310917,
+    "name": "96th Street Substation",
+    "norm": "96TH STREET",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/419410650",
+    "lat": 44.7103412,
+    "lon": -90.0239249,
+    "name": "Rozellville",
+    "norm": "ROZELLVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/439506918",
+    "lat": 43.792068,
+    "lon": -88.4253415,
+    "name": "East Scott St",
+    "norm": "EAST SCOTT ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/444420083",
+    "lat": 44.2559922,
+    "lon": -88.410759,
+    "name": "Water Street Substation",
+    "norm": "WATER STREET",
+    "operator": null,
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/450419868",
+    "lat": 42.5074113,
+    "lon": -89.0313242,
+    "name": "Blackhawk SW YD",
+    "norm": "BLACKHAWK SW YD",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/450423217",
+    "lat": 42.9729567,
+    "lon": -89.5149993,
+    "name": "Verona",
+    "norm": "VERONA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/450526768",
+    "lat": 43.1949566,
+    "lon": -88.1492509,
+    "name": "Germantown SW YD",
+    "norm": "GERMANTOWN SW YD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/450527030",
+    "lat": 43.4854857,
+    "lon": -87.9525847,
+    "name": "Fredonia",
+    "norm": "FREDONIA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/464750115",
+    "lat": 42.6109361,
+    "lon": -89.9004087,
+    "name": "JENNINGS RD SW STA",
+    "norm": "JENNINGS RD SW STA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/465065327",
+    "lat": 44.2803931,
+    "lon": -88.4824094,
+    "name": "Casaloma Substation",
+    "norm": "CASALOMA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;34500;12470"
+  },
+  {
+    "id": "way/466742446",
+    "lat": 44.8322263,
+    "lon": -87.3775359,
+    "name": "First Ave",
+    "norm": "FIRST AVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/481650676",
+    "lat": 44.2753503,
+    "lon": -88.4558643,
+    "name": "County Hospital Substation",
+    "norm": "COUNTY HOSPITAL",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/499577109",
+    "lat": 43.7820481,
+    "lon": -88.3621515,
+    "name": "Ledgeview",
+    "norm": "LEDGEVIEW",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/510305280",
+    "lat": 46.4427355,
+    "lon": -90.1953491,
+    "name": "Hurley Substation",
+    "norm": "HURLEY",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/511860479",
+    "lat": 44.9437461,
+    "lon": -89.8479848,
+    "name": "Cassel",
+    "norm": "CASSEL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/520160503",
+    "lat": 43.0357164,
+    "lon": -87.9178712,
+    "name": "City of Milwaukee Substation",
+    "norm": "CITY OF MILWAUKEE",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/520160504",
+    "lat": 43.0358656,
+    "lon": -87.9180422,
+    "name": "City of Milwaukee Substation",
+    "norm": "CITY OF MILWAUKEE",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/521647249",
+    "lat": 42.7781166,
+    "lon": -88.056489,
+    "name": "Raymond Substation",
+    "norm": "RAYMOND",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/532127973",
+    "lat": 43.0477813,
+    "lon": -87.9170964,
+    "name": "Haymarket Square Substation",
+    "norm": "HAYMARKET SQUARE",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/541739865",
+    "lat": 43.953262,
+    "lon": -91.2826922,
+    "name": "Briggs Road Substation",
+    "norm": "BRIGGS ROAD",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "345000;161000"
+  },
+  {
+    "id": "way/544438831",
+    "lat": 44.2064228,
+    "lon": -88.4526503,
+    "name": "Tayco Substation",
+    "norm": "TAYCO",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/567298749",
+    "lat": 44.2875846,
+    "lon": -88.3047506,
+    "name": "00 Substation",
+    "norm": "00",
+    "operator": "Kaukauna Utilities",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/570029035",
+    "lat": 44.2364711,
+    "lon": -88.4030276,
+    "name": "City Limits Substation",
+    "norm": "CITY LIMITS",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;34500;12470"
+  },
+  {
+    "id": "way/570306739",
+    "lat": 42.9154405,
+    "lon": -89.2064472,
+    "name": "STOUGHTON EAST",
+    "norm": "STOUGHTON EAST",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/570306740",
+    "lat": 42.9150305,
+    "lon": -89.2057983,
+    "name": "STOUGHTON",
+    "norm": "STOUGHTON",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/578140500",
+    "lat": 44.2633921,
+    "lon": -88.4031266,
+    "name": "Metro Substation",
+    "norm": "METRO",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/585896693",
+    "lat": 42.9652423,
+    "lon": -88.0323427,
+    "name": "Brookdale",
+    "norm": "BROOKDALE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/603746639",
+    "lat": 43.9600911,
+    "lon": -88.1062062,
+    "name": "Ford Drive",
+    "norm": "FORD DRIVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/603746640",
+    "lat": 43.9033366,
+    "lon": -88.1006406,
+    "name": "Meyer Rd",
+    "norm": "MEYER RD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/603746641",
+    "lat": 44.0374152,
+    "lon": -88.1412694,
+    "name": "Gravesville",
+    "norm": "GRAVESVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/603746642",
+    "lat": 43.8248395,
+    "lon": -88.0403875,
+    "name": "Elkhart Lake",
+    "norm": "ELKHART LAKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;24900;8320"
+  },
+  {
+    "id": "way/603746643",
+    "lat": 43.9651436,
+    "lon": -88.1316403,
+    "name": "Tecumseh Road",
+    "norm": "TECUMSEH ROAD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/603751069",
+    "lat": 43.7396486,
+    "lon": -88.1700603,
+    "name": "Kettle Moraine",
+    "norm": "KETTLE MORAINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/622933994",
+    "lat": 44.9102523,
+    "lon": -90.3347792,
+    "name": "T Corners",
+    "norm": "T CORNERS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/62343981",
+    "lat": 43.0808452,
+    "lon": -89.4724995,
+    "name": "Blackhawk Substation",
+    "norm": "BLACKHAWK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/626408880",
+    "lat": 43.7810784,
+    "lon": -91.2162034,
+    "name": "Coulee Avenue Substation",
+    "norm": "COULEE AVENUE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/629124622",
+    "lat": 44.0555929,
+    "lon": -88.5751184,
+    "name": "Sunset Point Substation",
+    "norm": "SUNSET POINT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000;24900"
+  },
+  {
+    "id": "way/655674549",
+    "lat": 46.0532214,
+    "lon": -89.171736,
+    "name": "Lakota Rd",
+    "norm": "LAKOTA RD",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;115000;69000"
+  },
+  {
+    "id": "way/655674551",
+    "lat": 46.0401363,
+    "lon": -89.0980033,
+    "name": "Twin Lake Substation",
+    "norm": "TWIN LAKE",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/655918614",
+    "lat": 45.0863839,
+    "lon": -87.6890415,
+    "name": "West Marinette Substation",
+    "norm": "WEST MARINETTE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/663303808",
+    "lat": 45.7574495,
+    "lon": -91.257887,
+    "name": "Radisson Substation",
+    "norm": "RADISSON",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "161000;69000"
+  },
+  {
+    "id": "way/663303817",
+    "lat": 45.8706578,
+    "lon": -91.5116297,
+    "name": "Sand Lake Substation",
+    "norm": "SAND LAKE",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000;12470"
+  },
+  {
+    "id": "way/663303841",
+    "lat": 45.8996494,
+    "lon": -91.5186102,
+    "name": "Stone Lake Pump Substation",
+    "norm": "STONE LAKE PUMP",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000;4160"
+  },
+  {
+    "id": "way/663964154",
+    "lat": 46.0550256,
+    "lon": -89.1713299,
+    "name": "Conover Substation",
+    "norm": "CONOVER",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/663986942",
+    "lat": 45.5543344,
+    "lon": -90.9569581,
+    "name": "Osprey Substation",
+    "norm": "OSPREY",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "161000;115000;69000;23000"
+  },
+  {
+    "id": "way/663986961",
+    "lat": 45.4752415,
+    "lon": -91.2571763,
+    "name": "Trails End Substation",
+    "norm": "TRAILS END",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000;23000"
+  },
+  {
+    "id": "way/664723176",
+    "lat": 45.4032341,
+    "lon": -92.6102303,
+    "name": "Border Substation",
+    "norm": "BORDER",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/664925103",
+    "lat": 44.8773241,
+    "lon": -92.7115682,
+    "name": "Glenmont",
+    "norm": "GLENMONT",
+    "operator": null,
+    "state": "WI",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/666515991",
+    "lat": 43.0229729,
+    "lon": -89.4835353,
+    "name": "Prairie Substation",
+    "norm": "PRAIRIE",
+    "operator": "MG&E",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/669158378",
+    "lat": 42.7187465,
+    "lon": -90.4663235,
+    "name": "Hillman Substation",
+    "norm": "HILLMAN",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/671127043",
+    "lat": 43.0169809,
+    "lon": -89.4025146,
+    "name": "Syene",
+    "norm": "SYENE",
+    "operator": "MG&E",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/672676412",
+    "lat": 42.9859743,
+    "lon": -89.4306175,
+    "name": "Oak Ridge Substation",
+    "norm": "OAK RIDGE",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/683026012",
+    "lat": 42.9690851,
+    "lon": -87.883265,
+    "name": "Kansas Substation",
+    "norm": "KANSAS",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/683026020",
+    "lat": 42.8730066,
+    "lon": -87.888259,
+    "name": "Pennsylvania",
+    "norm": "PENNSYLVANIA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/683026026",
+    "lat": 42.7074785,
+    "lon": -87.8177461,
+    "name": "Hayes Substation",
+    "norm": "HAYES",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/683026035",
+    "lat": 42.9723689,
+    "lon": -87.8750467,
+    "name": "Norwich Substation",
+    "norm": "NORWICH",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/683253257",
+    "lat": 43.9513123,
+    "lon": -90.503749,
+    "name": "Timberwolf",
+    "norm": "TIMBERWOLF",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/683253290",
+    "lat": 43.9278559,
+    "lon": -90.7762808,
+    "name": "Sparta",
+    "norm": "SPARTA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/683282587",
+    "lat": 43.1797283,
+    "lon": -89.2536874,
+    "name": "COLORADO",
+    "norm": "COLORADO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/683358816",
+    "lat": 43.1934048,
+    "lon": -89.2254666,
+    "name": "Bird St",
+    "norm": "BIRD ST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/686507722",
+    "lat": 43.0921976,
+    "lon": -89.5681981,
+    "name": "Cardinal Substation",
+    "norm": "CARDINAL",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/687496305",
+    "lat": 43.9590213,
+    "lon": -88.5816087,
+    "name": "Aviation",
+    "norm": "AVIATION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/692633900",
+    "lat": 42.6304923,
+    "lon": -89.2686436,
+    "name": "REC Orfordville",
+    "norm": "REC ORFORDVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/705550138",
+    "lat": 44.6955105,
+    "lon": -92.5574685,
+    "name": "Trimbelle Substation",
+    "norm": "TRIMBELLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/705826837",
+    "lat": 42.7016019,
+    "lon": -89.2006103,
+    "name": "REC Center",
+    "norm": "REC CENTER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/705826851",
+    "lat": 42.7588572,
+    "lon": -89.2789126,
+    "name": "Union Townline",
+    "norm": "UNION TOWNLINE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/712246065",
+    "lat": 44.4492237,
+    "lon": -88.0703642,
+    "name": "NICOLET PAPER CO",
+    "norm": "NICOLET PAPER CO",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/717818992",
+    "lat": 44.2692952,
+    "lon": -88.3031174,
+    "name": "Kaukauna Utilities Combined Locks Substation",
+    "norm": "KAUKAUNA UTILITIES COMBINED LOCKS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;34500;12470"
+  },
+  {
+    "id": "way/724157947",
+    "lat": 44.9596657,
+    "lon": -92.5167853,
+    "name": "Warren Substation",
+    "norm": "WARREN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/724396897",
+    "lat": 45.0346147,
+    "lon": -92.5335774,
+    "name": "Three Lakes Substation",
+    "norm": "THREE LAKES",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/724462435",
+    "lat": 45.0337582,
+    "lon": -92.3403737,
+    "name": "Pine Lake South",
+    "norm": "PINE LAKE SOUTH",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/724618438",
+    "lat": 43.0101856,
+    "lon": -89.9364293,
+    "name": "Hooterville",
+    "norm": "HOOTERVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/724798106",
+    "lat": 44.0570434,
+    "lon": -90.0225131,
+    "name": "PETENWELL",
+    "norm": "PETENWELL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/724798108",
+    "lat": 44.1546749,
+    "lon": -89.9069147,
+    "name": "Badger West",
+    "norm": "BADGER WEST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/725846458",
+    "lat": 42.5382631,
+    "lon": -87.9082212,
+    "name": "Pleasant Prairie Substation",
+    "norm": "PLEASANT PRAIRIE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/726860925",
+    "lat": 45.0497983,
+    "lon": -92.5380303,
+    "name": "Roberts Substation",
+    "norm": "ROBERTS",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/726860929",
+    "lat": 45.0970772,
+    "lon": -92.5574472,
+    "name": "White Pine Substation",
+    "norm": "WHITE PINE",
+    "operator": "New Richmond Utilities",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/745349130",
+    "lat": 43.7893036,
+    "lon": -87.7656419,
+    "name": "Erdman",
+    "norm": "ERDMAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/764226472",
+    "lat": 43.8565092,
+    "lon": -88.8205526,
+    "name": "Ripon Ind Park",
+    "norm": "RIPON IND PARK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/764613252",
+    "lat": 44.1943462,
+    "lon": -88.5043749,
+    "name": "NEEVIN",
+    "norm": "NEEVIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/764651816",
+    "lat": 44.6076817,
+    "lon": -92.5491926,
+    "name": "Trenton Substation",
+    "norm": "TRENTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/765467037",
+    "lat": 43.4874547,
+    "lon": -88.8257527,
+    "name": "North Beaver Dam",
+    "norm": "NORTH BEAVER DAM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/766143153",
+    "lat": 42.990564,
+    "lon": -87.9072413,
+    "name": "Dewey Substation",
+    "norm": "DEWEY",
+    "operator": "We Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/768388616",
+    "lat": 42.614296,
+    "lon": -88.4447813,
+    "name": "North Lake Geneva",
+    "norm": "NORTH LAKE GENEVA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/770864845",
+    "lat": 43.0317192,
+    "lon": -87.923817,
+    "name": "Valley Substation",
+    "norm": "VALLEY",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/771954251",
+    "lat": 44.0399486,
+    "lon": -88.5273854,
+    "name": "BOWEN STREET",
+    "norm": "BOWEN STREET",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;24900"
+  },
+  {
+    "id": "way/773624462",
+    "lat": 42.9978241,
+    "lon": -87.8925981,
+    "name": "Russel Term",
+    "norm": "RUSSEL TERM",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/775830536",
+    "lat": 44.284915,
+    "lon": -88.4161682,
+    "name": "Richmond Street Substation",
+    "norm": "RICHMOND STREET",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/803487096",
+    "lat": 44.6303033,
+    "lon": -88.742172,
+    "name": "Industrial Substation",
+    "norm": "INDUSTRIAL",
+    "operator": null,
+    "state": "WI",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/803487098",
+    "lat": 44.6360251,
+    "lon": -88.7373488,
+    "name": "Clintonville Substation",
+    "norm": "CLINTONVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/805583637",
+    "lat": 44.9359551,
+    "lon": -91.8881619,
+    "name": "Cedar Falls",
+    "norm": "CEDAR FALLS",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/813921944",
+    "lat": 42.9247889,
+    "lon": -89.3765195,
+    "name": "OREGON",
+    "norm": "OREGON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/821270485",
+    "lat": 43.193569,
+    "lon": -89.2966846,
+    "name": "TOKEN CREEK",
+    "norm": "TOKEN CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/822249851",
+    "lat": 43.0879067,
+    "lon": -87.8939443,
+    "name": "Shorewood Substation",
+    "norm": "SHOREWOOD",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/825425010",
+    "lat": 44.1479096,
+    "lon": -88.5262084,
+    "name": "Woodenshoe Substation",
+    "norm": "WOODENSHOE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;34500"
+  },
+  {
+    "id": "way/837984085",
+    "lat": 44.1113922,
+    "lon": -88.545804,
+    "name": "MEARS CORNERS",
+    "norm": "MEARS CORNERS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;24900"
+  },
+  {
+    "id": "way/849913935",
+    "lat": 43.988854,
+    "lon": -90.4791689,
+    "name": "Cardinal Glass Tomah",
+    "norm": "CARDINAL GLASS TOMAH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/850694578",
+    "lat": 43.7785135,
+    "lon": -89.5776849,
+    "name": "Oxford",
+    "norm": "OXFORD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/850694579",
+    "lat": 43.7791693,
+    "lon": -89.5776948,
+    "name": "Neenah Creek",
+    "norm": "NEENAH CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/851111461",
+    "lat": 43.8170676,
+    "lon": -89.4813444,
+    "name": "Chateau Substation",
+    "norm": "CHATEAU",
+    "operator": "Adams-Columbia Electric Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/856970720",
+    "lat": 42.5252615,
+    "lon": -88.9618514,
+    "name": "Beloit Gateway",
+    "norm": "BELOIT GATEWAY",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/857521480",
+    "lat": 43.1062404,
+    "lon": -89.3602641,
+    "name": "Ruskin",
+    "norm": "RUSKIN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/86681968",
+    "lat": 43.0243147,
+    "lon": -87.9061571,
+    "name": "Harbor Substation",
+    "norm": "HARBOR",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000;13200"
+  },
+  {
+    "id": "way/869700385",
+    "lat": 42.8590387,
+    "lon": -89.5269029,
+    "name": "BELLEVILLE",
+    "norm": "BELLEVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/895682469",
+    "lat": 44.0250846,
+    "lon": -88.5551237,
+    "name": "PEARL AVE",
+    "norm": "PEARL AVE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/903983674",
+    "lat": 42.6781984,
+    "lon": -87.9117878,
+    "name": "Mount Pleasant Substation",
+    "norm": "MOUNT PLEASANT",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/910774711",
+    "lat": 42.6177944,
+    "lon": -89.3831932,
+    "name": "Brodhead",
+    "norm": "BRODHEAD",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/910774743",
+    "lat": 42.8512582,
+    "lon": -87.9608012,
+    "name": "Root River",
+    "norm": "ROOT RIVER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/939185224",
+    "lat": 42.6686286,
+    "lon": -88.2656006,
+    "name": "Air Liquide",
+    "norm": "AIR LIQUIDE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/96334930",
+    "lat": 43.0319023,
+    "lon": -87.9510769,
+    "name": "Walker",
+    "norm": "WALKER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/965483389",
+    "lat": 45.1584806,
+    "lon": -92.6454156,
+    "name": "Somerset Substation",
+    "norm": "SOMERSET",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/967064577",
+    "lat": 45.1321251,
+    "lon": -92.5367528,
+    "name": "Knowles Substation",
+    "norm": "KNOWLES",
+    "operator": "New Richmond Utilities",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/967123580",
+    "lat": 45.158428,
+    "lon": -92.5070633,
+    "name": "Stanton Substation",
+    "norm": "STANTON",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/96783323",
+    "lat": 43.0342933,
+    "lon": -87.948801,
+    "name": "28th Street Substation",
+    "norm": "28TH STREET",
+    "operator": "American Transmission Company",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/968597057",
+    "lat": 45.1052858,
+    "lon": -92.3396095,
+    "name": "Deer Park Substation",
+    "norm": "DEER PARK",
+    "operator": "Dairyland Power Cooperative",
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/972686562",
+    "lat": 42.5924919,
+    "lon": -88.4309701,
+    "name": "Lake Geneva",
+    "norm": "LAKE GENEVA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/983084555",
+    "lat": 44.2161778,
+    "lon": -88.4018403,
+    "name": "Meadows",
+    "norm": "MEADOWS",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/983241633",
+    "lat": 43.6778146,
+    "lon": -89.8586112,
+    "name": "Lyndon Station",
+    "norm": "LYNDON STATION",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/983408757",
+    "lat": 44.1067125,
+    "lon": -88.7199944,
+    "name": "Winneconne",
+    "norm": "WINNECONNE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/983447509",
+    "lat": 42.5234929,
+    "lon": -88.8947432,
+    "name": "REC Clinton",
+    "norm": "REC CLINTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/983737710",
+    "lat": 43.1576645,
+    "lon": -89.2820973,
+    "name": "Burke",
+    "norm": "BURKE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/983743585",
+    "lat": 44.0127456,
+    "lon": -88.5334943,
+    "name": "Oshkosh",
+    "norm": "OSHKOSH",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000;24900"
+  },
+  {
+    "id": "way/983884744",
+    "lat": 44.2625255,
+    "lon": -88.4126465,
+    "name": "Washing Street",
+    "norm": "WASHING STREET",
+    "operator": "WE Energies",
+    "state": "WI",
+    "voltage": "34500;12470"
+  },
+  {
+    "id": "way/986067960",
+    "lat": 44.4680213,
+    "lon": -88.9304861,
+    "name": "Manawa Substation",
+    "norm": "MANAWA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/986069088",
+    "lat": 44.5436155,
+    "lon": -89.102923,
+    "name": "CWEC IOLA",
+    "norm": "CWEC IOLA",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/987416545",
+    "lat": 43.8010178,
+    "lon": -90.0558329,
+    "name": "Hilltop",
+    "norm": "HILLTOP",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/991481034",
+    "lat": 42.6686201,
+    "lon": -90.1137374,
+    "name": "Darlington",
+    "norm": "DARLINGTON",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/991481039",
+    "lat": 42.6692806,
+    "lon": -89.6177296,
+    "name": "North Monroe",
+    "norm": "NORTH MONROE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/991481040",
+    "lat": 42.6696357,
+    "lon": -89.4440475,
+    "name": "Albany",
+    "norm": "ALBANY",
+    "operator": "Alliant Energy",
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/991481041",
+    "lat": 42.6635408,
+    "lon": -89.2078648,
+    "name": "Bass Creek",
+    "norm": "BASS CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "way/991481042",
+    "lat": 42.6670325,
+    "lon": -89.2090755,
+    "name": "Footville",
+    "norm": "FOOTVILLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/991481047",
+    "lat": 42.5362944,
+    "lon": -89.1119326,
+    "name": "Paddock",
+    "norm": "PADDOCK",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/991504406",
+    "lat": 43.2668811,
+    "lon": -90.4468806,
+    "name": "Eagle",
+    "norm": "EAGLE",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/99278149",
+    "lat": 46.0177366,
+    "lon": -91.4762295,
+    "name": "Farmers Inn Substation",
+    "norm": "FARMERS INN",
+    "operator": "Xcel Energy",
+    "state": "WI",
+    "voltage": "161000;115000;12470"
+  },
+  {
+    "id": "way/993732889",
+    "lat": 43.787344,
+    "lon": -88.5250223,
+    "name": "Forest",
+    "norm": "FOREST",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/995932480",
+    "lat": 44.4868757,
+    "lon": -87.6040938,
+    "name": "Booster",
+    "norm": "BOOSTER",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/995946403",
+    "lat": 44.2806978,
+    "lon": -88.260722,
+    "name": "Thilmany Elm Reg",
+    "norm": "THILMANY ELM REG",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/995946404",
+    "lat": 44.2782715,
+    "lon": -88.2634824,
+    "name": "Island Elm HP-LP Reg",
+    "norm": "ISLAND ELM HP-LP REG",
+    "operator": null,
+    "state": "WI",
+    "voltage": null
+  },
+  {
+    "id": "way/999742498",
+    "lat": 44.3590758,
+    "lon": -89.1843947,
+    "name": "Hartman Creek",
+    "norm": "HARTMAN CREEK",
+    "operator": null,
+    "state": "WI",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/999742507",
+    "lat": 44.4006105,
+    "lon": -89.1838501,
+    "name": "Sheridan",
+    "norm": "SHERIDAN",
+    "operator": null,
+    "state": "WI",
+    "voltage": "69000"
+  }
+]

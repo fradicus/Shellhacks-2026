@@ -99,3 +99,10 @@ def test_atc_zone_states_and_cost():
     assert zone_states(page) == ["IL", "WI"]
     assert cost("$ 1 3,857,000") == {"raw": "$ 1 3,857,000", "usd": 13857000}
     assert cost("$ -")["usd"] is None
+
+
+def test_short_leading_numbers_and_work_after_a_dash():
+    assert facilities_named("9 Mile SW STA – Pine River 69kV", None)["names"] == ["9 Mile", "Pine River"]
+    site = facilities_named("North Lake SS – Transformer Asset Renewal", None)
+    assert (site["kind"], site["names"]) == ("site", ["North Lake"])
+    assert facilities_named("0754 Buffalo - Maple Lake Rebuild", None)["names"] == ["Buffalo", "Maple Lake"]

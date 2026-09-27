@@ -17,7 +17,8 @@ from common.names import norm_name
 from .match import candidate_center, facilities_named, match_facility
 
 USER_AGENT = "GridBridge/0.1 (https://github.com/fradicus/Shellhacks-2026)"
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+# Public instances from the OSM wiki, tried in order; the manifest records which one answered.
+OVERPASS_URLS = ["https://overpass-api.de/api/interpreter", "https://maps.mail.ru/osm/tools/overpass/api/interpreter"]
 MAX_BYTES = 16 * 1024 * 1024
 OUT = REPO_ROOT / "data" / "greatlakes"
 # Fixed publication order (C26): each state's projects are appended to data/greatlakes/projects.json.
@@ -36,7 +37,7 @@ def utc_now() -> str:
     return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def get(url: str, data: bytes | None = None, timeout: int = 180, attempts: int = 3) -> bytes:
+def get(url: str, data: bytes | None = None, timeout: int = 180, attempts: int = 2) -> bytes:
     request = Request(url, data=data, headers={"User-Agent": USER_AGENT})
     for attempt in range(1, attempts + 1):
         try:
@@ -66,8 +67,14 @@ def overpass_query(state: str) -> str:
 
 def fetch_osm(cache: Path, state: str, manifest: dict) -> None:
     query = overpass_query(state)
-    fetch_into(cache, f"osm-{state.lower()}.json", OVERPASS_URL, manifest, urlencode({"data": query}).encode(),
-               query=query)
+    for url in OVERPASS_URLS:
+        try:
+            fetch_into(cache, f"osm-{state.lower()}.json", url, manifest, urlencode({"data": query}).encode(),
+                       query=query)
+            break
+        except OSError:
+            if url == OVERPASS_URLS[-1]:
+                raise
     time.sleep(10)  # Overpass etiquette between heavy queries
 
 
