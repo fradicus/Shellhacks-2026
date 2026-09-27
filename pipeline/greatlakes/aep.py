@@ -109,8 +109,9 @@ def build(cache: Path) -> dict:
                     group = "under_construction"
                 lat, lon = marker["center"]["lat"], marker["center"]["lng"]
                 center = {"lat": round(lat, 6), "lon": round(lon, 6), "basis": "source_point",
-                          "evidence": f"Unverified candidate: AEP Transmission project-map marker {marker_id} "
-                                      f"({BASE.format(state)}geojson/map-setup.json); placement precision unstated."}
+                          "evidence": f"Official source: AEP Transmission project-map marker {marker_id} "
+                                      f"({BASE.format(state)}geojson/map-setup.json); placement precision unstated; "
+                                      "not independently reviewed."}
                 record = {
                     "_id": f"{SOURCE_ID}:{native}", "source_id": SOURCE_ID, "native_id": native, "name": name,
                     "description": description, "owner": "AEP Transmission", "other_owners": [],
@@ -119,7 +120,7 @@ def build(cache: Path) -> dict:
                     "status": "; ".join(x for x in (legend, update) if x) or None, "status_group": group,
                     "in_service": {"raw": None, "value": None, "precision": "unknown"},
                     "center": center, "location_review": "unreviewed",
-                    "location_candidate": {"rule": "C26 utility-published marker", "kind": "site",
+                    "location_candidate": {"rule": "C25 official source", "kind": "site",
                                            "marker_id": marker_id, "shared_marker": len(marker["projects"]) > 1,
                                            "latest_update": update, "legend": legend},
                     "evidence": {"page": None, "sheet": setup_name, "row": None,

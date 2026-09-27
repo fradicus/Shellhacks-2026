@@ -442,7 +442,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -696,7 +696,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -753,7 +753,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -810,7 +810,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -867,7 +867,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -924,7 +924,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -1046,7 +1046,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -1571,7 +1571,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -1628,7 +1628,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -1751,7 +1751,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -2845,7 +2845,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -2902,7 +2902,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -2959,7 +2959,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -3559,7 +3559,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -5750,7 +5750,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -6269,7 +6269,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -6451,7 +6451,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "multi_terminal_line",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -6508,7 +6508,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "multi_terminal_line",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -8312,7 +8312,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -11858,7 +11858,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -11915,7 +11915,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -12101,7 +12101,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -12565,7 +12565,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -13247,7 +13247,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "endpoint_not_named",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -15252,7 +15252,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "endpoint_not_named",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -15783,7 +15783,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -15840,7 +15840,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -15897,7 +15897,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -15954,7 +15954,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -18569,7 +18569,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "multi_terminal_line",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -18626,7 +18626,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "multi_terminal_line",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -18683,7 +18683,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "multi_terminal_line",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -18700,12 +18700,7 @@
   },
   {
     "_id": "atc-tya-2025:50563",
-    "center": {
-      "basis": "two",
-      "evidence": "Unverified candidate: exact-name match to OSM way/176434079 (Columbia Station), OSM way/1420924219 (Sugar Creek Substation), corroborated by operator.",
-      "lat": 43.09459,
-      "lon": -88.985039
-    },
+    "center": null,
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -18740,38 +18735,14 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
-          "corroboration": [
-            "operator"
-          ],
-          "facility": {
-            "id": "way/176434079",
-            "lat": 43.4863809,
-            "lon": -89.4171238,
-            "name": "Columbia Station",
-            "operator": "American Transmission Company",
-            "state": "WI",
-            "voltage": "345000;138000;69000"
-          },
           "name": "Columbia",
           "norm": "COLUMBIA",
-          "status": "matched"
+          "status": "no_facility"
         },
         {
-          "corroboration": [
-            "operator"
-          ],
-          "facility": {
-            "id": "way/1420924219",
-            "lat": 42.7027994,
-            "lon": -88.5529552,
-            "name": "Sugar Creek Substation",
-            "operator": "American Transmission Company, We Energies",
-            "state": "WI",
-            "voltage": "138000"
-          },
           "name": "Sugar Creek",
           "norm": "SUGAR CREEK",
-          "status": "matched"
+          "status": "no_facility"
         }
       ],
       "kind": "line",
@@ -18780,11 +18751,11 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": null,
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unreviewed",
+    "location_review": "unlocated",
     "name": "LRTP Tranche 2 Project 30: Columbia - Sugar Creek",
     "native_id": "50563",
     "other_owners": [],
@@ -18797,12 +18768,7 @@
   },
   {
     "_id": "atc-tya-2025:50564",
-    "center": {
-      "basis": "one",
-      "evidence": "Unverified candidate: exact-name match to OSM way/1420924219 (Sugar Creek Substation), corroborated by operator. Partial: one of two endpoints.",
-      "lat": 42.702799,
-      "lon": -88.552955
-    },
+    "center": null,
     "counties": [],
     "description": null,
     "estimated_cost": {
@@ -18837,31 +18803,14 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/{wi,mi,il}-substations.json",
       "endpoints": [
         {
-          "corroboration": [
-            "operator"
-          ],
-          "facility": {
-            "id": "way/1420924219",
-            "lat": 42.7027994,
-            "lon": -88.5529552,
-            "name": "Sugar Creek Substation",
-            "operator": "American Transmission Company, We Energies",
-            "state": "WI",
-            "voltage": "138000"
-          },
           "name": "Sugar Creek",
           "norm": "SUGAR CREEK",
-          "status": "matched"
+          "status": "no_facility"
         },
         {
-          "facility_ids": [
-            "way/186936930",
-            "way/368672495",
-            "way/43822091"
-          ],
           "name": "Collins",
           "norm": "COLLINS",
-          "status": "not_corroborated"
+          "status": "no_facility"
         }
       ],
       "kind": "line",
@@ -18870,11 +18819,11 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": null,
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
-    "location_review": "unreviewed",
+    "location_review": "unlocated",
     "name": "LRTP Tranche 2 Project 31: Sugar Creek - Collins",
     "native_id": "50564",
     "other_owners": [],
@@ -19387,7 +19336,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -25162,7 +25111,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -25285,7 +25234,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -25342,7 +25291,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -25399,7 +25348,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -25456,7 +25405,7 @@
         "AMERICAN TRANSMISSION",
         "ATC"
       ],
-      "reason": "no_named_facility",
+      "reason": "no_source_state",
       "rule": "C26",
       "voltages_kv": []
     },

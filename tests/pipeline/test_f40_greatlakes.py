@@ -166,3 +166,70 @@ def test_firstenergy_titles_and_status():
     assert status_of(text) == "proposed"
     assert facilities_named(title, None)["names"] == ["Avery", "Hayes"]
     assert facilities_named("Evergreen-Highland No. 3 138-kV Transmission Line", None)["names"] == ["Evergreen", "Highland"]
+
+
+def _release_root(tmp_path):
+    """A throwaway repo root holding copies of the committed Great Lakes release files."""
+    import shutil
+
+    folder = tmp_path / "data" / "greatlakes"
+    (folder / "releases").mkdir(parents=True)
+    for name in ("projects.json", "sources.json", "releases/active.json"):
+        shutil.copy(REPO_ROOT / "data" / "greatlakes" / name, folder / name)
+    return tmp_path
+
+
+def test_release_applies_to_the_national_snapshot_and_validates():
+    from greatlakes.publish import apply_release
+    from national.build import _coverage, load_snapshot, validate_snapshot_values
+
+    snapshot = load_snapshot(REPO_ROOT)
+    before = len(snapshot["projects"])
+    result = apply_release(snapshot, REPO_ROOT)
+    imported = {s["_id"] for s in result["sources"] if s["import_status"] == "imported"}
+    measured = _coverage(result["projects"], imported)
+    for key in ("projects_total", "located_count", "sources", "notes"):
+        result["coverage"][key] = measured[key]
+    assert validate_snapshot_values(result) == []
+    release = load_json(REPO_ROOT / "data" / "greatlakes" / "releases" / "active.json")
+    assert len(result["projects"]) == before + release["expected_counts"]["projects"]
+    assert result["coverage"]["great_lakes"]["independently_confirmed_projects"] == 0
+    added = [p for p in result["projects"] if p["_id"] not in {q["_id"] for q in snapshot["projects"]}]
+    assert all(p["location_review"] in {"unreviewed", "unlocated"} for p in added)
+
+
+def test_release_fails_closed_on_tampering(tmp_path):
+    import json
+
+    import pytest
+
+    from greatlakes.publish import apply_release
+    from national.build import load_snapshot
+
+    snapshot = load_snapshot(REPO_ROOT)
+    root = _release_root(tmp_path)
+    assert apply_release(snapshot, tmp_path / "missing") is snapshot  # no active file: no change
+    projects_path = root / "data" / "greatlakes" / "projects.json"
+    projects = json.loads(projects_path.read_text())
+    projects[0]["name"] += " (edited)"
+    projects_path.write_text(json.dumps(projects, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
+    with pytest.raises(ValueError, match="hash changed"):
+        apply_release(snapshot, root)
+
+
+def test_candidate_center_must_follow_its_facilities():
+    import pytest
+
+    from greatlakes.publish import _check_center
+    from national.build import load_snapshot
+
+    snapshot = load_snapshot(REPO_ROOT)
+    project = next(p for p in load_json(REPO_ROOT / "data" / "greatlakes" / "projects.json")
+                   if p["center"] and p["center"]["basis"] == "two")
+    _check_center(project, snapshot)
+    project["center"]["lat"] += 0.01
+    with pytest.raises(ValueError, match="does not follow"):
+        _check_center(project, snapshot)
+    project["center"]["lat"] = 10.0
+    with pytest.raises(ValueError, match="outside its states"):
+        _check_center(project, snapshot)

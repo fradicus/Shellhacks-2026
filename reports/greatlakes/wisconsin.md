@@ -1,15 +1,15 @@
 # F40 Wisconsin (part 1)
 
-**348 projects, 125 with an unverified candidate location (107 distinct points), 0 verified.** Rule: [C26](../../specs/decisions/C26-great-lakes-candidates.md).
+**348 projects, 123 with an unverified candidate location (105 distinct points), 0 verified.** Rule: [C26](../../specs/decisions/C26-great-lakes-candidates.md).
 
 | | Count |
 |---|---|
 | Projects | 348 accepted from 352 table rows: 3 duplicates of Minnesota records (same MTEP number: LRTP 04, 21, 26), 1 row with no name rejected |
 | Status | planned 166, proposed 167 (ATC "Proposed" and "Provisional"), cancelled 10 (withdrawn), in service 4, unknown 1 |
-| Candidate located | 125: 33 sites, 56 lines with both endpoints, 36 partial lines (one endpoint) |
-| Candidate located by status | planned 51, proposed 66, cancelled 8 |
+| Candidate located | 123: 33 sites, 55 lines with both endpoints, 35 partial lines (one endpoint) |
+| Candidate located by status | planned 49, proposed 66, cancelled 8 |
 | States (from ATC zone pages) | WI only 145, WI+IL (zone 3) 120, WI+MI (zone 2) 43, unknown ("Various" programs) 40 |
-| Unlocated | 223: no single facility named 64, no OSM facility with that exact name 63, name found but no operator/voltage corroboration 43, program/area/multi-facility 31, multi-terminal line 8, mixed endpoint reasons 9, endpoints unnamed 5 |
+| Unlocated | 225: no OSM facility with that exact name 63, name found but no operator/voltage corroboration 43, "Various" zone with no source state 40 (never matched), no single facility named 33, program/area/multi-facility 31, mixed endpoint reasons 9, multi-terminal line 3, endpoints unnamed 3 |
 
 ## Sources
 

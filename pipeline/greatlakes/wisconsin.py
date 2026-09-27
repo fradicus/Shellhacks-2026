@@ -28,7 +28,6 @@ PDF = "TYA-2025-Network-Project-List.pdf"
 PDF_URL = "https://www.atc10yearplan.com/wp-content/uploads/2025/11/" + PDF
 ZONES = [f"zone-{n}.html" for n in range(1, 6)]
 ZONE_URL = "https://www.atc10yearplan.com/blog/zones-directory/{}/"
-OSM_STATES = ["WI", "MI", "IL"]
 STATE_ABBREV = {"Wis.": "WI", "Mich.": "MI", "Ill.": "IL", "Minn.": "MN"}
 FIPS = {"WI": "55", "MI": "26", "IL": "17", "MN": "27"}
 OWNER = "American Transmission Company"  # the document is "ATC's 2025 10-Year Assessment Project List"
@@ -109,10 +108,12 @@ def build(cache: Path) -> dict:
             group = STATUS.get(c["Status"] or "", "unknown")
         m = ISD.fullmatch(c["ISD"])
         in_service = {"raw": c["ISD"], "value": f"20{m[2]}-{MONTHS[m[1]]:02d}", "precision": "month"}
-        facilities = osm_data.load(states or OSM_STATES)
+        facilities = osm_data.load(states)  # no source state ("Various" zone): nothing to match against
         # Text after the first comma describes the work; "LRTP Tranche N Project NN:" prefixes the endpoints.
         facility_text = re.sub(r"^LRTP Tranche \d+ Project \d+:\s*", "", name.split(",")[0])
         center, candidate = locate(facility_text, None, facilities, OPERATOR_KEYS["ATC"], voltages_kv(name), DATASET)
+        if not states:
+            candidate["reason"] = "no_source_state"
         project = {
             "_id": f"{SOURCE_ID}:{native}", "source_id": SOURCE_ID, "native_id": native, "name": name,
             "description": None, "owner": OWNER, "other_owners": [], "planning_region": "atc-tya",

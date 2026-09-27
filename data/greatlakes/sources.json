@@ -1,0 +1,1311 @@
+[
+  {
+    "_id": "aep-transmission-projects:indiana-map-setup",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/indiana/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 30,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission",
+    "retrieved_at": "2026-09-27T04:01:28Z",
+    "role": "project_plan",
+    "sha256": "27400a1b8669fb40ad9d661786415efd01872cc2f1bf8ba2db9d07a21816b99f",
+    "states": [
+      "18",
+      "26"
+    ],
+    "title": "AEP Transmission state project map",
+    "vintage": null
+  },
+  {
+    "_id": "aep-transmission-projects:michigan-map-setup",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/michigan/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 10,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission",
+    "retrieved_at": "2026-09-27T04:02:20Z",
+    "role": "project_plan",
+    "sha256": "0b33a02b7bd6fc3184bdbce0688ec8ada5b09af77df28d119a231e83a4de8075",
+    "states": [
+      "26"
+    ],
+    "title": "AEP Transmission state project map",
+    "vintage": null
+  },
+  {
+    "_id": "aep-transmission-projects:ohio-map-setup",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/ohio/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 87,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission",
+    "retrieved_at": "2026-09-27T03:59:13Z",
+    "role": "project_plan",
+    "sha256": "33ddd80a4ab1371330aff40f9142797b924d011664ce1423dba12fd19d85ca1c",
+    "states": [
+      "18",
+      "39"
+    ],
+    "title": "AEP Transmission state project map",
+    "vintage": null
+  },
+  {
+    "_id": "atc-tya-2025",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.atc10yearplan.com/wp-content/uploads/2025/11/TYA-2025-Network-Project-List.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.atc10yearplan.com/projects/network-projects-list/",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "atc-tya",
+    "project_count": 348,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "American Transmission Company",
+    "retrieved_at": "2026-09-27T02:15:38Z",
+    "role": "project_plan",
+    "sha256": "f272998128001faa141fb7175d2f5e58d190376b97dfc191d26608e9bf7e8103",
+    "states": [
+      "17",
+      "26",
+      "55"
+    ],
+    "title": "ATC's 2025 10-Year Assessment Project List",
+    "vintage": "2025"
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/TUSC-138KV-SUBSTATION-SIX-BREAKER-RING-BUS-EXPANSION-PROJECT.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:12:53Z",
+    "role": "project_plan",
+    "sha256": "974b35382f1dcbb3fc8f815215717c27954437de056db65046392214f43f34bd",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--ashtabula-east-substation-138kv-line-connection-reconfiguation-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/ashtabula-east-substation-138kv-line-connection-reconfiguation-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:12:54Z",
+    "role": "project_plan",
+    "sha256": "42c15dd6fe1e8ee4a338319ac15ab0ed9d94c208febe3e562e01bb1e8d5f6c2e",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--avery-hayes",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/avery-hayes.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:12:56Z",
+    "role": "project_plan",
+    "sha256": "c7054ef84e97c149b3a42374b44526a183a94189f433140d5932178460fc39a4",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--ayersville-substation-expansion-and-transmission-rebuild",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/ayersville-substation-expansion-and-transmission-rebuild.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:12:57Z",
+    "role": "project_plan",
+    "sha256": "5f926332ae12ba6d7617c48b0e797e48b9e63d2a6aa6f0dc9e20e10d9a558236",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--bayshore-jeep",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-jeep.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:12:59Z",
+    "role": "project_plan",
+    "sha256": "f184d627fe3da414c465641bc17e4958acc458c85210c3d6ac6fc23c1058ee56",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--bayshore-substation-expansion-ii-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-substation-expansion-ii-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:00Z",
+    "role": "project_plan",
+    "sha256": "d3e912c649078a455ceefbc52531be0bac9cdafba07b23d4b6dbe34d48bee443",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--bayshore-substation-expansion-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bayshore-substation-expansion-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:02Z",
+    "role": "project_plan",
+    "sha256": "999155a604a2af96fd473caf2ab110e556467cb1646fdd04c6177b29ed34fa1d",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--bloomingville-345-kv-transmission-line-loop-to-bloomingville-substation-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/bloomingville-345-kv-transmission-line-loop-to-bloomingville-substation-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:03Z",
+    "role": "project_plan",
+    "sha256": "b22f8897a47c786e907d3f7edf68587c410835d3a1e72d4caf92abca2efadb22",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--brady-darrow-138kv-tx-line-damaged-twr-no7832-replacement-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/brady-darrow-138kv-tx-line-damaged-twr-no7832-replacement-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:05Z",
+    "role": "project_plan",
+    "sha256": "7ef6c721f7dbc1ef1dcc5edc46a795a59179e8d2726b1b7541582959bdfe9ebc",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--broadview-substation-expansion-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/broadview-substation-expansion-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:06Z",
+    "role": "project_plan",
+    "sha256": "db22add71529fbf47d07f44adbd4d605272c49d24a6889b418e699651cc7af78",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--brookside-longview-madison-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/brookside-longview-madison-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:07Z",
+    "role": "project_plan",
+    "sha256": "9654b5584f04555a316f8ae23290bb0c462c6813346d5de01cefc648ab40478b",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--dobbins-toronto-transmission-line-tower-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/dobbins-toronto-transmission-line-tower-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:09Z",
+    "role": "project_plan",
+    "sha256": "f8cb1a47f5c7376aa32d5cadfd197f702276c7f58b05e301a90a4315e334179a",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--east-akron-evans-138kv-transmission-line-switch-replacement",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-akron-evans-138kv-transmission-line-switch-replacement.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:10Z",
+    "role": "project_plan",
+    "sha256": "11f38a57f9fb5f5aeba74b348e7e9ebb7981a5c544f8f065a1e9d3c65a127cbb",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--east-fayette-stryker-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-fayette-stryker-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:12Z",
+    "role": "project_plan",
+    "sha256": "ab40e00c539aa47496df224dc2cd391ce27f832a3e9f5a5aeec9f384af56e309",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--east-fayette-substation-transmission-line-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/east-fayette-substation-transmission-line-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:13Z",
+    "role": "project_plan",
+    "sha256": "c4e764dee95d7d30fb8a5c8b5599a4ee8b9bead6c4344a33f4cec9e1b0fc8b1a",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--evergreen-highland-interconnection-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/evergreen-highland-interconnection-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:15Z",
+    "role": "project_plan",
+    "sha256": "f57871d4757c8c0728b267e0600327f8db72576b354fdb5b3dbf582c13133739",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--evergreen-highland-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/evergreen-highland-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:16Z",
+    "role": "project_plan",
+    "sha256": "94bc00e630f43a7cbda8d4c54b2c1c7ea1ed980cc2be5dccfe75e6b54833370c",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--fowles-fox-138-kv-q-12-transmission-line",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fowles-fox-138-kv-q-12-transmission-line.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:18Z",
+    "role": "project_plan",
+    "sha256": "ce183f53851d7755f4d1fc1350d9325fa10bcb7e77424985bf862dd799093d2e",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--fowles-pleasant-valley-tower-2047-replacement",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fowles-pleasant-valley-tower-2047-replacement.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:19Z",
+    "role": "project_plan",
+    "sha256": "6b0e84ae8fc5fc93792e3b7b018b7b253214b3e32f1e20aa053128629268b33b",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--fulton-north-star-melbourne-sydney",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/fulton-north-star-melbourne-sydney.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:20Z",
+    "role": "project_plan",
+    "sha256": "575d7306adfedf2e942adf16e7f5bccb12be339c0935a2aba7409e8f0138710b",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--glenmount-substation-transmission-lines-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/glenmount-substation-transmission-lines-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:22Z",
+    "role": "project_plan",
+    "sha256": "67e26e449168be86572651d251f3ec509ce41f40a5b6fe72ac24a4cc96a22dc4",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--harding-juniper-and-chamberlin-harding",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/harding-juniper-and-chamberlin-harding.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:23Z",
+    "role": "project_plan",
+    "sha256": "3df17bb9405e6a972f224316d0a101d62be4a900e72b1d659d081e3418538980",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--harding-leroy-center-glenwillow-inland-transmission-lines-structure-replacement",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/harding-leroy-center-glenwillow-inland-transmission-lines-structure-replacement.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:24Z",
+    "role": "project_plan",
+    "sha256": "3a9d15c0b900b49ff99b8a2a996102e33b351f9228c52054b197780583614617",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--hawthorne-substation-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/hawthorne-substation-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:26Z",
+    "role": "project_plan",
+    "sha256": "a960ff7a9bbf4b77b5e72a5a623145bd997291be96c5b35491ec27b074028dce",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--london-tangy-harriot-substation-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/london-tangy-harriot-substation-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:28Z",
+    "role": "project_plan",
+    "sha256": "14fb3501ee9bdbbf40ee22e8793f905200619cee7df89e17ecbea96b5d9d561f",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--nevada-substation-expansion-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/nevada-substation-expansion-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:29Z",
+    "role": "project_plan",
+    "sha256": "8682708e22dd2c2451ad4e3fcfc1f90b65dd26f1ace75161ac5b85f176b4f158",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--niles-shenango-transmission-line-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/niles-shenango-transmission-line-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:30Z",
+    "role": "project_plan",
+    "sha256": "195b444c7195caf5ec7a57cd60831978359ccec6c6840cf397ade723f15f96ac",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--pine-wadsworth-transmission-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/pine-wadsworth-transmission-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:32Z",
+    "role": "project_plan",
+    "sha256": "79ddb8ea89877c07367fa3976d959f945a39f43cc0925c123939c39e0c227c8f",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--sandusky-south-substations-and-138-kv-transmission-line-connections",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/sandusky-south-substations-and-138-kv-transmission-line-connections.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:33Z",
+    "role": "project_plan",
+    "sha256": "80b0f1937d48cd9cf27bd6b9614c9b8c21e8ed8a7534c1afdd92026e3f4cfbee",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:ohio--visteon-greenfield-138kv-switch-replacement-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/ohio/visteon-greenfield-138kv-switch-replacement-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:34Z",
+    "role": "project_plan",
+    "sha256": "a59d4791957e7d7f0ea464cb0e0c267bcebd8280192ee0a0e404503166e196cf",
+    "states": [
+      "39"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--bethlen-ethelsprings",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/bethlen-ethelsprings.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:37Z",
+    "role": "project_plan",
+    "sha256": "304762e4824426266b76cc4bf584cacf2e9faa1fc4563fd109cb962ea94dbfc8",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--carroll-hunterstown-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/carroll-hunterstown-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:39Z",
+    "role": "project_plan",
+    "sha256": "45a540e13a3a7eb1d112c04a0093d58973381e5ad663d6919ccf5dd0265914f2",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--cranberry-pine",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/cranberry-pine.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:40Z",
+    "role": "project_plan",
+    "sha256": "8a1e6c4d6acb6258d64d4d6af047d5735b4cba0ba8f06130021982190334af8a",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--dutch-fork-enon-rebuild-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/dutch-fork-enon-rebuild-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:41Z",
+    "role": "project_plan",
+    "sha256": "f5e18afecfe37cdb59e12a449bf3a1a25ecc00fd88b71a3eb7c386d55ed7738d",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--east-germantown",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/east-germantown.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:43Z",
+    "role": "project_plan",
+    "sha256": "211c6fb3ee5b8042e6b58683e1529c5330fdccfd77790ac970e58eb419f49b2f",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--elko-moshannon-transmission-line-rebuild-project",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/elko-moshannon-transmission-line-rebuild-project.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:44Z",
+    "role": "project_plan",
+    "sha256": "97d9f41032ef8fc69a667b6936973ef6cd07b70a9932ab28ff9860ef1a96283f",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--erie-south-piney-seward-trans-projects",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/erie-south-piney-seward-trans-projects.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:46Z",
+    "role": "project_plan",
+    "sha256": "24e1c8f5df9b6b2d7474857f6562227833c9835a6daf108a545145607b964a26",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--hunterstown-orrtanna",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/hunterstown-orrtanna.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:48Z",
+    "role": "project_plan",
+    "sha256": "d04a0237ecdf150c7ec7cb218827cf4b781e4f85f7dad114d857dc570a5dc79b",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--niles-valley",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/niles-valley.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:49Z",
+    "role": "project_plan",
+    "sha256": "653af11a3dec79b8c388b9c72403d047ee6473bf9f48d8cc3cdb698fa6c1bf1d",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--saxton-shade-gap",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/saxton-shade-gap.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:50Z",
+    "role": "project_plan",
+    "sha256": "08d4594ec5410433c22e99fe17683363bc567f0802551ee2fc193ee148676090",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--shawnee-walker",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/shawnee-walker.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:52Z",
+    "role": "project_plan",
+    "sha256": "23aa94561dd980beeda81874c1478e348730e902e02dd1f4dc073dc1db2e50a9",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "firstenergy-transmission-projects:pennsylvania--van-reed",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.firstenergycorp.com/about/transmission_projects/pennsylvania/van-reed.html",
+    "import_status": "imported",
+    "landing_url": "https://www.firstenergycorp.com/about/transmission_projects.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": null,
+    "project_count": 1,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "FirstEnergy",
+    "retrieved_at": "2026-09-27T04:13:53Z",
+    "role": "project_plan",
+    "sha256": "8ce24296d95831b661321a6f8417e8df4862da099aaef2c8a22e034519a3f077",
+    "states": [
+      "42"
+    ],
+    "title": "FirstEnergy transmission project page",
+    "vintage": null
+  },
+  {
+    "_id": "miso-mtep26-eval",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://cdn.misoenergy.org/MTEP%20Projects%20Under%20Evaluation368757.xlsx",
+    "import_status": "imported",
+    "landing_url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "miso",
+    "project_count": 310,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "MISO",
+    "retrieved_at": "2026-09-27T02:37:03Z",
+    "role": "project_plan",
+    "sha256": "40f325fe4ce7cb4dbc24207219725f623956efafdf6febb2e67a90accb24e72e",
+    "states": [
+      "17",
+      "18",
+      "19",
+      "21",
+      "26",
+      "27",
+      "29",
+      "38",
+      "46",
+      "55"
+    ],
+    "title": "MISO MTEP Projects Under Evaluation",
+    "vintage": "MTEP26 cycle"
+  },
+  {
+    "_id": "mn-btpr-2025:Ch_6_Needs-6.3",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.3.htm",
+    "import_status": "imported",
+    "landing_url": "https://www.minnelectrans.com/report-2025.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "mn-biennial",
+    "project_count": 15,
+    "public_status": "verified_public",
+    "publication_date": "2025-10-31",
+    "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
+    "retrieved_at": "2026-09-27T01:40:27Z",
+    "role": "project_plan",
+    "sha256": "208cd57374a4b6e7b34f79c4a3811224adfc7cf803641e5a5dfecc67aa68cf22",
+    "states": [
+      "27"
+    ],
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
+    "vintage": "2025"
+  },
+  {
+    "_id": "mn-btpr-2025:Ch_6_Needs-6.4",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.4.htm",
+    "import_status": "imported",
+    "landing_url": "https://www.minnelectrans.com/report-2025.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "mn-biennial",
+    "project_count": 63,
+    "public_status": "verified_public",
+    "publication_date": "2025-10-31",
+    "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
+    "retrieved_at": "2026-09-27T01:40:28Z",
+    "role": "project_plan",
+    "sha256": "74db979ccfdb1cc2fb1b6ee54ae0cc3591c210f32301395ad20004bd844e97d2",
+    "states": [
+      "27"
+    ],
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
+    "vintage": "2025"
+  },
+  {
+    "_id": "mn-btpr-2025:Ch_6_Needs-6.5",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.5.htm",
+    "import_status": "imported",
+    "landing_url": "https://www.minnelectrans.com/report-2025.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "mn-biennial",
+    "project_count": 42,
+    "public_status": "verified_public",
+    "publication_date": "2025-10-31",
+    "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
+    "retrieved_at": "2026-09-27T01:40:30Z",
+    "role": "project_plan",
+    "sha256": "0795a6808161a96a345de56967af20b6854e11d62afc7f45124a933ee29c3db4",
+    "states": [
+      "27"
+    ],
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
+    "vintage": "2025"
+  },
+  {
+    "_id": "mn-btpr-2025:Ch_6_Needs-6.6",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.6.htm",
+    "import_status": "imported",
+    "landing_url": "https://www.minnelectrans.com/report-2025.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "mn-biennial",
+    "project_count": 50,
+    "public_status": "verified_public",
+    "publication_date": "2025-10-31",
+    "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
+    "retrieved_at": "2026-09-27T01:40:31Z",
+    "role": "project_plan",
+    "sha256": "287612985b96be2fa42b71724cc6e8832effe520d7f074946b90ad16df7407c6",
+    "states": [
+      "27"
+    ],
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
+    "vintage": "2025"
+  },
+  {
+    "_id": "mn-btpr-2025:Ch_6_Needs-6.7",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.7.htm",
+    "import_status": "imported",
+    "landing_url": "https://www.minnelectrans.com/report-2025.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "mn-biennial",
+    "project_count": 27,
+    "public_status": "verified_public",
+    "publication_date": "2025-10-31",
+    "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
+    "retrieved_at": "2026-09-27T01:40:33Z",
+    "role": "project_plan",
+    "sha256": "47c88d39b3582de1f26324d9a7bc6528f07f6ca0d2961450300ebb5d29785942",
+    "states": [
+      "27"
+    ],
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
+    "vintage": "2025"
+  },
+  {
+    "_id": "mn-btpr-2025:Ch_6_Needs-6.8",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.minnelectrans.com/documents/2025_Biennial_Report/html/Ch_6_Needs-6.8.htm",
+    "import_status": "imported",
+    "landing_url": "https://www.minnelectrans.com/report-2025.html",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "mn-biennial",
+    "project_count": 28,
+    "public_status": "verified_public",
+    "publication_date": "2025-10-31",
+    "publisher": "Minnesota transmission-owning utilities (MPUC Docket E999/M-25-99)",
+    "retrieved_at": "2026-09-27T01:40:34Z",
+    "role": "project_plan",
+    "sha256": "25cd194c4fd64d4dfc2aa5d1d78d4aaf37b5c265bd9944a5ac889116af74613b",
+    "states": [
+      "27"
+    ],
+    "title": "2025 Minnesota Biennial Transmission Projects Report, Chapter 6",
+    "vintage": "2025"
+  },
+  {
+    "_id": "nyiso-gold-book-2026",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.nyiso.com/documents/20142/2226333/2026-Gold-Book-Public.pdf/a8fd42fe-5a8c-88cb-5052-f93dfd6423b8",
+    "import_status": "imported",
+    "landing_url": "https://www.nyiso.com/load-capacity-data-report-gold-book-",
+    "notes": [
+      "F40 Great Lakes release (C26). Locations are unverified candidates or the owner's own map coordinate; none is independently confirmed. Source-bounded, not statewide coverage."
+    ],
+    "planning_region": "nyiso",
+    "project_count": 423,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "NYISO",
+    "retrieved_at": "2026-09-27T02:53:05Z",
+    "role": "project_plan",
+    "sha256": "43865c1cbe38ca2ef4c8319d11454881de2b9dde3e48867dbbd2e94855b908bf",
+    "states": [
+      "36"
+    ],
+    "title": "NYISO 2026 Gold Book, Table VII: Proposed Transmission Facilities",
+    "vintage": "as of 2026-03-15"
+  }
+]
