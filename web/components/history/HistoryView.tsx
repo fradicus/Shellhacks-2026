@@ -6,7 +6,7 @@ import Link from "next/link";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { intersects, milesBetween, type HistoryEvent, type HistoryProject, type Meaning } from "@/lib/history/events";
 import type { HistoryPayload } from "@/lib/history/server";
-import { CANDIDATE_COLOR } from "@/components/time/nationalProjects";
+import type { NationalTier } from "@/components/time/nationalProjects";
 import type { Emphasis, HistoryItem, HistoryLayer, LabelSpec, Projected } from "./historyLayer";
 import { Ledger, type LedgerYear } from "./Ledger";
 import s from "./history.module.css";
@@ -49,7 +49,13 @@ function when(e: HistoryEvent): string {
   return `${new Date(e.from * DAY_MS).getUTCFullYear()} · year only`;
 }
 const signed = (d: number) => `${d > 0 ? "+" : d < 0 ? "−" : ""}${Math.abs(d).toLocaleString("en-US")}`;
-const color = (p: HistoryProject) => (p.candidate ? CANDIDATE_COLOR : COLOR[p.identity]);
+// /time's tier colours and labels (C25); confirmed keeps the national colour.
+const TIER_COLOR: Record<NationalTier, string> = { confirmed: COLOR.national, official: "#8fb4ff", tentative: "#f0c36a" };
+const TIER_LABEL: Record<NationalTier, string> = {
+  confirmed: "Location confirmed", official: "Owner-published location, not independently reviewed",
+  tentative: "Tentative location, not independently reviewed",
+};
+const color = (p: HistoryProject) => (p.tier ? TIER_COLOR[p.tier] : COLOR[p.identity]);
 
 function bearingDeg(a: { lat: number; lon: number }, b: { lat: number; lon: number }) {
   const r = Math.PI / 180;
@@ -900,7 +906,7 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
               {project.source_title ?? project.source_id}
               {project.status ? <> · publisher status “{project.status}”</> : null}
             </p>
-            {project.location ? <p className={s.projMeta}>{project.location}</p> : null}
+            {project.tier ? <p className={s.projMeta}>{TIER_LABEL[project.tier]}</p> : null}
           </section>
           {project.thread ? (
             <div className={s.figure} data-late={project.thread.days > 0 ? "1" : "0"}>
@@ -970,10 +976,13 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
           </li>
           <li className={s.utils}>
             <span>
-              <i style={{ background: COLOR.national }} /> National, confirmed
+              <i style={{ background: TIER_COLOR.confirmed }} /> National, confirmed
             </span>
             <span>
-              <i style={{ background: CANDIDATE_COLOR }} /> National, candidate location
+              <i style={{ background: TIER_COLOR.official }} /> Owner-published
+            </span>
+            <span>
+              <i style={{ background: TIER_COLOR.tentative }} /> Tentative
             </span>
             <span>
               <i style={{ background: COLOR.DESC }} /> Dominion SC

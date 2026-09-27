@@ -50,9 +50,7 @@ def test_committed_release_appends_unreviewed_candidates_only():
     snapshot = apply_release(base, REPO_ROOT)
     # load_snapshot recounts coverage after each release; do the same before validating.
     imported = {s["_id"] for s in snapshot["sources"] if s["import_status"] == "imported"}
-    measured = _coverage(snapshot["projects"], imported)
-    for name in ("projects_total", "located_count", "sources", "notes"):
-        snapshot["coverage"][name] = measured[name]
+    snapshot["coverage"].update(_coverage(snapshot["projects"], imported))
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / "data" / "california" / "releases" / "active.json")
     added = [p for p in snapshot["projects"] if p["source_id"].startswith("caiso-")]

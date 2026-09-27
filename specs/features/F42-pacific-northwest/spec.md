@@ -30,7 +30,10 @@ apply; its location bar is replaced by C33's labeled tiers. Do not edit F38/F39/
 - Output `data/pnw/projects.json` (national-project schema, `_id` `<source>:<native id>`, new IDs only) and
   `data/pnw/sources.json` (publisher, URL, vintage, retrieval UTC, SHA-256, rights).
 - Candidate centers carry an additive `location_candidate` block (facility IDs, dataset, normalized name,
-  corroboration or `unique_in_state`, endpoint role). County references carry `approximate_location` per C33.
+  corroboration or `unique_in_state`, endpoint role).
+- **User amendments, 2026-09-27:** publish only work dated 2025-2035 (completed, cancelled, older waiver-list rows and
+  out-of-window in-service dates are excluded with the reason), and **no county dots**: C33's county-reference tier
+  is not used. A named county is kept only as `counties` GEOIDs for filtering; such a project stays unlocated.
 - Reuse the F40 matcher and shared helpers by import; do not fork their rules.
 - Raw downloads stay outside the checkout. OSM use carries ODbL attribution. Do not bypass access controls.
 - A project listed by two sources is linked, not duplicated.
@@ -38,7 +41,7 @@ apply; its location bar is replaced by C33's labeled tiers. Do not edit F38/F39/
 ## Validation
 
 Tech-stack checks, plus `tests/pipeline/test_f42_*`: parser replay against the pinned source hash; the loosened
-unique-name rule rejects names with two in-state facilities and out-of-state facilities; county references keep a
-null center; every record validates against the national schema. Spot-check 10 located projects per state against
+unique-name rule rejects names with two in-state facilities, out-of-state facilities and contradicting
+voltage/county; no record carries `approximate_location`; every record validates against the national schema. Spot-check 10 located projects per state against
 the source text and report the sample and any errors. `changes/F42.md` only after all four states have ledgers and
 published data.

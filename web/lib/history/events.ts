@@ -1,5 +1,6 @@
 // Documented history events, derived read-only from the records /time and /explore already serve (F37 part 1).
 // Nothing here invents a date, a status or a link: every event is a stored field with its source and locator.
+import type { NationalTier } from "../../components/time/nationalProjects";
 import type { NationalProject, NationalSource } from "../national/types";
 import type { InService, Project, Source, Utility, VersionChange } from "../types";
 
@@ -53,9 +54,8 @@ export interface HistoryProject {
   /** The publisher's status text as stored (ISO-NE "In-service", PJM "IS"); a status, not an event date. */
   status: string | null;
   center: { lat: number; lon: number } | null;
-  /** National points only: an unreviewed official/candidate location (C25) and its display label. */
-  candidate?: boolean;
-  location?: string;
+  /** National points only: how the location was established (C25), as /time draws it. */
+  tier?: NationalTier;
   events: HistoryEvent[];
   thread: Thread | null;
 }

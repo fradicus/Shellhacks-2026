@@ -1,0 +1,532 @@
+[
+  {
+    "id": "relation/12203359",
+    "lat": 42.8348206,
+    "lon": -114.4240108,
+    "name": "Midpoint Substation",
+    "norm": "MIDPOINT",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "500000;230000;138000"
+  },
+  {
+    "id": "relation/12206604",
+    "lat": 43.3080779,
+    "lon": -112.1220034,
+    "name": "Goshen Substation",
+    "norm": "GOSHEN",
+    "operator": null,
+    "state": "ID",
+    "voltage": "345000;161000"
+  },
+  {
+    "id": "way/100710222",
+    "lat": 47.3464934,
+    "lon": -117.0324454,
+    "name": "Benewah Substation",
+    "norm": "BENEWAH",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/102794987",
+    "lat": 43.1750892,
+    "lon": -115.6247961,
+    "name": "Mountain Home",
+    "norm": "MOUNTAIN HOME",
+    "operator": null,
+    "state": "ID",
+    "voltage": "138000;115000"
+  },
+  {
+    "id": "way/102891417",
+    "lat": 42.7500071,
+    "lon": -112.9303433,
+    "name": "Borah Substation",
+    "norm": "BORAH",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "345000;230000"
+  },
+  {
+    "id": "way/102968066",
+    "lat": 42.7105346,
+    "lon": -111.5963223,
+    "name": "Three Mile Knoll Substation",
+    "norm": "THREE MILE KNOLL",
+    "operator": null,
+    "state": "ID",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/102996330",
+    "lat": 42.4246194,
+    "lon": -112.1554096,
+    "name": "Populus Substation",
+    "norm": "POPULUS",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "345000"
+  },
+  {
+    "id": "way/103077409",
+    "lat": 42.7730443,
+    "lon": -112.8702606,
+    "name": "Brady Substation",
+    "norm": "BRADY",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/103236961",
+    "lat": 42.8926903,
+    "lon": -112.5587431,
+    "name": "Kinport Substation",
+    "norm": "KINPORT",
+    "operator": null,
+    "state": "ID",
+    "voltage": "345000;230000"
+  },
+  {
+    "id": "way/103393516",
+    "lat": 43.3504547,
+    "lon": -116.6630069,
+    "name": "Hemingway Substation",
+    "norm": "HEMINGWAY",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/103403760",
+    "lat": 42.7055393,
+    "lon": -113.668707,
+    "name": "Adelaide Substation",
+    "norm": "ADELAIDE",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "way/103505877",
+    "lat": 42.2225717,
+    "lon": -111.8498298,
+    "name": "Treasureton Substation",
+    "norm": "TREASURETON",
+    "operator": "PacifiCorp",
+    "state": "ID",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/1092403104",
+    "lat": 47.7300338,
+    "lon": -116.8951585,
+    "name": "Prairie Substation",
+    "norm": "PRAIRIE",
+    "operator": null,
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1221899494",
+    "lat": 42.7129101,
+    "lon": -111.5981336,
+    "name": "Hooper Springs Substation",
+    "norm": "HOOPER SPRINGS",
+    "operator": null,
+    "state": "ID",
+    "voltage": "138000;115000"
+  },
+  {
+    "id": "way/1305127769",
+    "lat": 48.2528143,
+    "lon": -116.625202,
+    "name": "Sandpoint Substation",
+    "norm": "SANDPOINT",
+    "operator": "Bonneville Power Administration",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1346925576",
+    "lat": 47.9658357,
+    "lon": -116.8610205,
+    "name": "Spirit Lake Substation",
+    "norm": "SPIRIT LAKE",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/1351096809",
+    "lat": 44.663124,
+    "lon": -115.6872028,
+    "name": "Warm Lake Sub Station",
+    "norm": "WARM LAKE STATION",
+    "operator": "Idaho Power Company",
+    "state": "ID",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/135241079",
+    "lat": 43.5123531,
+    "lon": -111.9645914,
+    "name": "Sand Creek Substation",
+    "norm": "SAND CREEK",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/1451854652",
+    "lat": 42.3451654,
+    "lon": -114.0102126,
+    "name": "Buckhorn Substation",
+    "norm": "BUCKHORN",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/1451854654",
+    "lat": 42.4318526,
+    "lon": -114.229261,
+    "name": "Artesian Substation",
+    "norm": "ARTESIAN",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/1485092562",
+    "lat": 46.7223071,
+    "lon": -116.9373366,
+    "name": "Moscow",
+    "norm": "MOSCOW",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/156277897",
+    "lat": 48.273336,
+    "lon": -116.574934,
+    "name": "Sandpoint",
+    "norm": "SANDPOINT",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/159767893",
+    "lat": 43.4610523,
+    "lon": -111.9885441,
+    "name": "Washington Substation",
+    "norm": "WASHINGTON",
+    "operator": null,
+    "state": "ID",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/162934427",
+    "lat": 42.6326817,
+    "lon": -114.2325267,
+    "name": "Hunt Substation",
+    "norm": "HUNT",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/167144323",
+    "lat": 43.4384762,
+    "lon": -116.5349073,
+    "name": "Bowmont Substation",
+    "norm": "BOWMONT",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/167377989",
+    "lat": 44.8400361,
+    "lon": -116.8965103,
+    "name": "Brownlee Substation",
+    "norm": "BROWNLEE",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/168663107",
+    "lat": 43.5069244,
+    "lon": -116.3355475,
+    "name": "Mora Substation",
+    "norm": "MORA",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/169483375",
+    "lat": 46.7223219,
+    "lon": -116.9373188,
+    "name": "Moscow Substation",
+    "norm": "MOSCOW",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/169486726",
+    "lat": 46.3569007,
+    "lon": -116.9154286,
+    "name": "Lolo Substation",
+    "norm": "LOLO",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/169759068",
+    "lat": 47.8040819,
+    "lon": -116.8705667,
+    "name": "Rathdrum",
+    "norm": "RATHDRUM",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/170229057",
+    "lat": 43.5336674,
+    "lon": -112.9263885,
+    "name": "Antelope Substation",
+    "norm": "ANTELOPE",
+    "operator": "PacifiCorp",
+    "state": "ID",
+    "voltage": "230000;161000;138000"
+  },
+  {
+    "id": "way/170229059",
+    "lat": 43.5374508,
+    "lon": -112.9367349,
+    "name": "Scoville Substation",
+    "norm": "SCOVILLE",
+    "operator": null,
+    "state": "ID",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/172447921",
+    "lat": 47.5395994,
+    "lon": -116.2302455,
+    "name": "Pine Creek Substation",
+    "norm": "PINE CREEK",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/172459089",
+    "lat": 48.0872811,
+    "lon": -116.0575051,
+    "name": "Cabinet Gorge Substation",
+    "norm": "CABINET GORGE",
+    "operator": null,
+    "state": "ID",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/174338798",
+    "lat": 44.2475155,
+    "lon": -116.9860623,
+    "name": "Weiser Substation",
+    "norm": "WEISER",
+    "operator": null,
+    "state": "ID",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/177038567",
+    "lat": 43.7147652,
+    "lon": -112.220793,
+    "name": "Jefferson Substation",
+    "norm": "JEFFERSON",
+    "operator": null,
+    "state": "ID",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/177038571",
+    "lat": 44.0011176,
+    "lon": -112.1703316,
+    "name": "Big Grassy Substation",
+    "norm": "BIG GRASSY",
+    "operator": null,
+    "state": "ID",
+    "voltage": "161000"
+  },
+  {
+    "id": "way/254847578",
+    "lat": 44.9127131,
+    "lon": -116.1248381,
+    "name": "McCall",
+    "norm": "MCCALL",
+    "operator": null,
+    "state": "ID",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/286532785",
+    "lat": 48.181663,
+    "lon": -117.0369958,
+    "name": "Newport Substation",
+    "norm": "NEWPORT",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/304084412",
+    "lat": 47.7561581,
+    "lon": -116.8490982,
+    "name": "Hayden Substation",
+    "norm": "HAYDEN",
+    "operator": "Kootenai Electric Cooperative",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/310012809",
+    "lat": 43.9180154,
+    "lon": -116.1962711,
+    "name": "Horseshoe Bend Substation",
+    "norm": "HORSESHOE BEND",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/333374747",
+    "lat": 47.7042065,
+    "lon": -116.7958545,
+    "name": "Appleway Substation",
+    "norm": "APPLEWAY",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/347953732",
+    "lat": 47.7439961,
+    "lon": -116.7854076,
+    "name": "Dalton Gardens Substation",
+    "norm": "DALTON GARDENS",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/495243333",
+    "lat": 43.5591153,
+    "lon": -116.1584897,
+    "name": "Boise Bench Substation",
+    "norm": "BOISE BENCH",
+    "operator": "Idaho Power",
+    "state": "ID",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/55950058",
+    "lat": 46.5284829,
+    "lon": -116.3672977,
+    "name": "Dworshak Substation",
+    "norm": "DWORSHAK",
+    "operator": null,
+    "state": "ID",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/622548761",
+    "lat": 47.7089181,
+    "lon": -117.0240174,
+    "name": "Beck Road Substation",
+    "norm": "BECK ROAD",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/665324286",
+    "lat": 47.7313723,
+    "lon": -117.0012169,
+    "name": "Pleasant View Substation",
+    "norm": "PLEASANT VIEW",
+    "operator": "Avista Corporation;Kootenai Electric Cooperative",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/687913581",
+    "lat": 48.6743115,
+    "lon": -116.3028729,
+    "name": "Bonners Ferry",
+    "norm": "BONNERS FERRY",
+    "operator": "Bonneville Power Administration",
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/698375818",
+    "lat": 44.6347817,
+    "lon": -111.3265862,
+    "name": "Henry's Lake Substation",
+    "norm": "HENRY'S LAKE",
+    "operator": null,
+    "state": "ID",
+    "voltage": null
+  },
+  {
+    "id": "way/765906093",
+    "lat": 47.63641,
+    "lon": -116.8660804,
+    "name": "Dower Substation",
+    "norm": "DOWER",
+    "operator": null,
+    "state": "ID",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/98830485",
+    "lat": 46.4310418,
+    "lon": -117.0260267,
+    "name": "North Lewiston Substation",
+    "norm": "NORTH LEWISTON",
+    "operator": "Avista",
+    "state": "ID",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/98830488",
+    "lat": 46.4692299,
+    "lon": -116.910354,
+    "name": "Hatwai Substation",
+    "norm": "HATWAI",
+    "operator": null,
+    "state": "ID",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/99451597",
+    "lat": 47.7854233,
+    "lon": -116.9196107,
+    "name": "Lancaster",
+    "norm": "LANCASTER",
+    "operator": "Bonneville Power Administration",
+    "state": "ID",
+    "voltage": "230000"
+  }
+]

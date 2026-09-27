@@ -1,0 +1,43 @@
+{
+  "artifacts": [
+    {
+      "bytes": 121810,
+      "named_substations": 53,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-ID\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:57:21Z",
+      "sha256": "5455c8686c49603532b913bc4102c6eaa15c170ae93eb9acafa6240df04dac97",
+      "state": "ID",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 189490,
+      "named_substations": 187,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MT\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:58:19Z",
+      "sha256": "b84a059dcec612a16d9cd5f45bb0d6c93bd15eac30fee9a038e10fced445637a",
+      "state": "MT",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 286561,
+      "named_substations": 446,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-OR\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:57:04Z",
+      "sha256": "6ed0e299d4143c220438956d73ade12493346b5318ccf32ad945332025a94cfd",
+      "state": "OR",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 414634,
+      "named_substations": 446,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:56:36Z",
+      "sha256": "7f6f4f5571a92c1e1b4bb08c60b5182bb47250b621904ce7e87d05eebe82fd6b",
+      "state": "WA",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    }
+  ],
+  "publisher": "OpenStreetMap contributors",
+  "rights": "ODbL 1.0; attribution required",
+  "role": "candidate facility geometry only (C33)"
+}

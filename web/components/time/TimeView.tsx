@@ -5,8 +5,8 @@ import type { Map as MlMap } from "maplibre-gl";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { NationalProject, NationalSource, NationalExplorerPayload } from "@/lib/national/types";
+import type { NationalTier } from "./nationalProjects";
 import { NationalProjectEvidence } from "./NationalProjectEvidence";
-import { CANDIDATE_COLOR } from "./nationalProjects";
 import type { InService, Utility, View } from "@/lib/types";
 import type { Emphasis, LabelSpec, Projected, SweepState, TimeItem, TimeLayer } from "./timeLayer";
 import { DAYS_PER_YEAR, dayOf, epochYear, fmtDays, span, type Span } from "./timeScale";
@@ -22,7 +22,7 @@ export interface TimeProject {
   confidence: "high" | "medium" | "low" | null;
   source_id: string;
   page: number | null;
-  national?: { project: NationalProject; source?: NationalSource };
+  national?: { project: NationalProject; source?: NationalSource; tier: NationalTier };
 }
 export interface TimePair {
   id: string;
@@ -42,8 +42,13 @@ const UTILITY: Record<Utility, string> = { DESC: "Dominion Energy SC", GPC: "Geo
 /** An unmapped owner still has a filed code (MEAG, GTC ...); say which, and that it isn't matched to a utility. */
 const owner = (p: TimeProject) =>
   p.national ? (p.national.project.owner ?? "Owner unknown") : p.utility === "unknown" && p.owner_code ? `Owner code ${p.owner_code}, not mapped` : UTILITY[p.utility];
-const projectColor = (p: TimeProject) =>
-  p.national ? (p.national.project.location_review === "confirmed" ? "#88dbc1" : CANDIDATE_COLOR) : COLOR[p.utility];
+/** National points by how they were located; tentative ones also draw as hollow beads (C25). */
+const TIER_COLOR: Record<NationalTier, string> = { confirmed: "#88dbc1", official: "#8fb4ff", tentative: "#f0c36a" };
+const TIER_LABEL: Record<NationalTier, string> = {
+  confirmed: "National, confirmed location", official: "National, owner-published location",
+  tentative: "National, tentative location (not independently reviewed)",
+};
+const projectColor = (p: TimeProject) => p.national ? TIER_COLOR[p.national.tier] : COLOR[p.utility];
 const VIEWS: { v: View; label: string; help: string }[] = [
   { v: "future", label: "Future", help: "Both dates exact and on or after the analysis date" },
   { v: "historical", label: "Historical", help: "At least one in-service date before the analysis date" },
@@ -117,7 +122,7 @@ export function TimeView({
   legacyAvailable: boolean;
   pairsAvailable: boolean;
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
-    drawn: number; candidates: number; inService: number; unlocated: number; truncated: boolean };
+    drawn: number; inService: number; unlocated: number; truncated: boolean };
 }) {
   const counts = useMemo(
     () => Object.fromEntries(VIEWS.map(({ v }) => [v, pairs.filter((p) => p.view === v).length])) as Record<View, number>,
@@ -183,9 +188,15 @@ export function TimeView({
   const notLocated = projects.length - located.length;
   const items: TimeItem[] = useMemo(
     () =>
-      located.map((p) => ({ key: p.key, color: projectColor(p), lng: p.center!.lon, lat: p.center!.lat, span: drawn.get(p.key)! })),
+      located.map((p) => ({ key: p.key, color: projectColor(p), lng: p.center!.lon, lat: p.center!.lat, span: drawn.get(p.key)!,
+        outline: p.national?.tier === "tentative" })),
     [located, drawn],
   );
+  const tierCounts = useMemo(() => {
+    const counts: Record<NationalTier, number> = { confirmed: 0, official: 0, tentative: 0 };
+    for (const p of projects) if (p.national) counts[p.national.tier]++;
+    return counts;
+  }, [projects]);
   const topYears = useMemo(() => {
     const tops = [...drawn.values()].map((sp) => (sp.kind === "exact" ? sp.day : sp.kind === "range" ? sp.to : 0));
     return Math.max(todayYears, ...tops.map((d) => d / DAYS_PER_YEAR), 1);
@@ -818,8 +829,8 @@ export function TimeView({
         </details>
         {!legacyAvailable ? <p role="status" className={s.provenance}>Legacy projects unavailable; national projects remain available.</p> : null}
         <p className={s.provenance}>
-          {national.available ? <>{national.drawn} located national projects not yet in service included
-            {national.candidates ? <> ({national.candidates} at candidate locations, not independently reviewed)</> : null}.
+          {national.available ? <>{national.drawn} national projects not yet in service included ({tierCounts.confirmed} confirmed,
+            {" "}{tierCounts.official} owner-published, {tierCounts.tentative} tentative; only confirmed ones are independently reviewed).
             {national.inService ? <> {national.inService} already in service are in <Link href="/history">History →</Link></> : null}
             {national.mode === "snapshot" ? " Committed snapshot mode." : ""}
             {national.truncated ? " National map limit reached; more records are available in the explorer." : ""}
@@ -926,7 +937,7 @@ export function TimeView({
             </button>
           </header>
           <p className={s.drawerNote}>
-            Legacy projects and located national map points, confirmed or labeled candidates. Unlocated legacy projects are listed below.
+            Legacy projects and national map points: confirmed, owner-published or tentative (hollow beads). Unlocated legacy projects are listed below.
             Other national records remain searchable in the national explorer.
           </p>
           <input
@@ -1080,8 +1091,8 @@ export function TimeView({
             <i className={s.gDim} /> Day gap of the selected pair
           </li>
           <li className={s.utils}>
-            {national.drawn > national.candidates ? <span><i style={{ background: "#88dbc1" }} /> National, confirmed location</span> : null}
-            {national.candidates > 0 ? <span><i style={{ background: CANDIDATE_COLOR }} /> National, candidate location</span> : null}
+            {(["confirmed", "official", "tentative"] as const).filter((t) => tierCounts[t] > 0).map((t) =>
+              <span key={t}><i style={{ background: TIER_COLOR[t] }} /> {TIER_LABEL[t]}</span>)}
             <span>
               <i style={{ background: COLOR.DESC }} /> Dominion SC
             </span>

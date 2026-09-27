@@ -57,6 +57,6 @@ export default async function TimePage() {
   return (
     <TimeView projects={slim} pairs={pairs} analysisDate={analysisDate()} fixtureMode={isFixtureMode()} legacyAvailable={!isUnavailable(projects)} pairsAvailable={!isUnavailable(matches) && !isUnavailable(projects)}
       national={{ available: national.available, mode: national.mode, dataset: national.dataset,
-        drawn: nationalPoints.length, candidates: nationalPoints.filter((p) => p.national?.project.location_review !== "confirmed").length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
+        drawn: nationalPoints.length, inService: nationalAll.length - nationalPoints.length, unlocated: national.unlocatedTotal, truncated: national.mapTruncated }} />
   );
 }

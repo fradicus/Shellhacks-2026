@@ -3,7 +3,7 @@ import "server-only";
 import { analysisDate, getProjects, getSources, getVersionChanges, isFixtureMode } from "@/lib/data";
 import { loadNationalExplorer } from "@/lib/national/server";
 import { isUnavailable, type Project } from "@/lib/types";
-import { drawnNational, locationLabel } from "@/components/time/nationalProjects";
+import { nationalTier } from "@/components/time/nationalProjects";
 import { legacyHistory, nationalHistory, type HistoryProject } from "./events";
 
 export interface HistoryPayload {
@@ -32,9 +32,10 @@ export async function loadHistory(): Promise<HistoryPayload> {
   if (national.available) {
     const bySource = new Map(national.sources.map((s) => [s._id, s]));
     // The points /time draws (confirmed or labeled candidate); legacy projections are already covered above.
-    for (const p of national.mapProjects)
-      if (drawnNational(p))
-        out.push({ ...nationalHistory(p, bySource.get(p.source_id)), candidate: p.location_review !== "confirmed", location: locationLabel(p) });
+    for (const p of national.mapProjects) {
+      const tier = p._id.startsWith("legacy:") || !p.center ? null : nationalTier(p);
+      if (tier) out.push({ ...nationalHistory(p, bySource.get(p.source_id)), tier });
+    }
   }
   return {
     projects: out,
