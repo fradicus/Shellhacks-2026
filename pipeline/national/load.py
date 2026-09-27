@@ -6,6 +6,7 @@ Run from ``pipeline/`` with ``uv run python -m national.load``. Without
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import subprocess
@@ -16,7 +17,7 @@ from typing import Any
 
 from pymongo import ASCENDING, GEOSPHERE
 
-from common import REPO_ROOT
+from common import REPO_ROOT, load_summary
 from national.build import load_snapshot
 from national_pairs.build import COLLECTION as PAIRS_COLLECTION
 from national_pairs.build import generate
@@ -88,30 +89,76 @@ def _run(db: Any, dataset: str, started: str, status: str, counts: dict[str, int
     db.national_runs.replace_one({"_id": document["_id"]}, document, upsert=True)
 
 
-def load(db: Any, snapshot: dict[str, Any], dataset: str, candidates: dict | None = None) -> int:
-    started = _now()
+def _metrics(snapshot: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+    failures = (snapshot.get("coverage") or {}).get("failures")
+    return (load_summary.source_freshness(snapshot.get("sources", [])),
+            {"failed_sources": len(failures) if isinstance(failures, list) else None})
+
+
+def load_release(db: Any, snapshot: dict[str, Any], dataset: str, candidates: dict | None = None) -> dict[str, Any]:
+    """Stage and activate one national release; the named outcome says what was staged and what is active."""
+    freshness, quarantined = _metrics(snapshot)
     try:
         candidates = generate(snapshot) if candidates is None else candidates
         records = stage(snapshot, dataset, candidates["pairs"])
     except (ValueError, KeyError, TypeError) as exc:
-        print(f"national load: candidate generation failed ({type(exc).__name__}); previous dataset retained")
-        return 1
-    candidate_coverage = candidates["coverage"]
+        meta = db.meta.find_one({"_id": "national_active"}) or {}
+        return load_summary.summary(
+            "national load", load_summary.VALIDATION_FAILED, requested=dataset, staged=None, active=meta.get("dataset"),
+            previous=meta.get("previous"), counts={}, freshness=freshness, quarantined=quarantined,
+            failures=[f"candidate generation failed ({type(exc).__name__})"], detail="previous dataset retained",
+        )
     counts = {collection: len(records[collection]) for collection in COLLECTIONS}
+    outcome, staged, failures, detail = _load(db, snapshot, dataset, records, counts, candidates["coverage"])
+    meta = db.meta.find_one({"_id": "national_active"}) or {}
+    return load_summary.summary(
+        "national load", outcome, requested=dataset, staged=staged, active=meta.get("dataset"), previous=meta.get("previous"),
+        counts=counts, freshness=freshness, quarantined=quarantined, failures=failures, detail=detail,
+    )
+
+
+def load(db: Any, snapshot: dict[str, Any], dataset: str, candidates: dict | None = None) -> int:
+    result = load_release(db, snapshot, dataset, candidates)
+    load_summary.emit(result)
+    return 0 if result["ok"] else 1
+
+
+def rollback(db: Any) -> dict[str, Any]:
+    """Serve national_active.previous again when its documents are still complete; stages nothing."""
+    meta = db.meta.find_one({"_id": "national_active"}) or {}
+    active, previous = meta.get("dataset"), meta.get("previous")
+    receipt = db.national_runs.find_one({"_id": f"national-load:{previous}", "status": "ok"}) if previous else None
+    recorded = (receipt or {}).get("counts") or {}
+    intact = bool(receipt) and all(db[c].count_documents({"dataset": previous}) == recorded.get(c, 0) for c in COLLECTIONS)
+    outcome, failures, detail = load_summary.PUBLICATION_FAILED, ["no previous national release recorded"], None
+    if previous and not intact:
+        outcome, failures = load_summary.PRUNED_RECEIPT, [f"previous national release {previous} is no longer complete"]
+        detail = "Rollback refused; the active national release is unchanged. Check out that commit and load it again."
+    elif previous:
+        db.meta.replace_one({"_id": "national_active"},
+                            {"_id": "national_active", "dataset": previous, "previous": active, "loaded_at": _now()}, upsert=True)
+        outcome, failures, detail = load_summary.REACTIVATED, [], f"rolled back from {active} to {previous}"
+    meta = db.meta.find_one({"_id": "national_active"}) or {}
+    return load_summary.summary("national load", outcome, requested=previous, staged=None, active=meta.get("dataset"),
+                                previous=meta.get("previous"), counts={}, freshness=None, quarantined=None,
+                                failures=failures, detail=detail)
+
+
+def _load(db: Any, snapshot: dict[str, Any], dataset: str, records: dict[str, list[dict[str, Any]]],
+          counts: dict[str, int], candidate_coverage: dict[str, Any]) -> tuple[str, str | None, list[str], str | None]:
+    started = _now()
+    failed = load_summary.PUBLICATION_FAILED
     meta = db.meta.find_one({"_id": "national_active"}) or {}
     if meta.get("dataset") == dataset:
         complete = all(db[collection].count_documents({"dataset": dataset}) == count
                        for collection, count in counts.items())
         if not complete:
-            print(f"national load: active dataset {dataset} is incomplete; refusing in-place rewrite")
-            return 1
+            return failed, None, [f"active dataset {dataset} is incomplete; refusing in-place rewrite"], None
         try:
             _run(db, dataset, started, "ok", counts, snapshot["coverage"], candidate_coverage=candidate_coverage)
         except Exception as exc:  # noqa: BLE001 - an active dataset must retain its coverage record
-            print(f"national load: could not persist active coverage ({type(exc).__name__})")
-            return 1
-        print(f"national load: dataset {dataset} already loaded; nothing to do")
-        return 0
+            return failed, None, [f"could not persist active coverage ({type(exc).__name__})"], None
+        return load_summary.ALREADY_ACTIVE, None, [], f"dataset {dataset} is already active; nothing to do"
     try:
         ensure_indexes(db)
         for collection, documents in records.items():
@@ -128,7 +175,7 @@ def load(db: Any, snapshot: dict[str, Any], dataset: str, candidates: dict | Non
                  [f"write failed: {type(exc).__name__}"], candidate_coverage=candidate_coverage)
         except Exception:  # noqa: BLE001 - the original failure remains the actionable result
             pass
-        return 1
+        return failed, None, [f"write failed: {type(exc).__name__}"], None
     previous = meta.get("dataset")
     try:
         db.meta.replace_one(
@@ -137,19 +184,19 @@ def load(db: Any, snapshot: dict[str, Any], dataset: str, candidates: dict | Non
             upsert=True,
         )
     except Exception as exc:  # noqa: BLE001 - the candidate is not active
-        print(f"national load: activation did not complete ({type(exc).__name__})")
-        return 1
+        return failed, dataset, [f"activation did not complete ({type(exc).__name__})"], "staged but not activated"
+    warnings = []
     try:
         _run(db, dataset, started, "ok", counts, snapshot["coverage"], candidate_coverage=candidate_coverage)
     except Exception as exc:  # noqa: BLE001 - ready coverage was persisted before the active pointer moved
-        print(f"national load: warning: active with ready coverage; final run status failed ({type(exc).__name__})")
+        warnings.append(f"active with ready coverage; final run status failed ({type(exc).__name__})")
     keep = [value for value in (dataset, previous) if value][:KEEP_DATASETS]
     for collection in COLLECTIONS:
         try:
             db[collection].delete_many({"dataset": {"$nin": keep}})
         except Exception as exc:  # noqa: BLE001 - retention cleanup cannot invalidate the active snapshot
-            print(f"national load: warning: {collection} retention cleanup failed ({type(exc).__name__})")
-    return 0
+            warnings.append(f"{collection} retention cleanup failed ({type(exc).__name__})")
+    return load_summary.ACTIVATED, dataset, [], "; ".join(f"warning: {w}" for w in warnings) or None
 
 
 def dataset_id(root: Path = REPO_ROOT) -> str:
@@ -158,20 +205,46 @@ def dataset_id(root: Path = REPO_ROOT) -> str:
     ).stdout.strip()
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(prog="python -m national.load")
+    parser.add_argument("--rollback", action="store_true", help="serve national_active.previous again if complete; loads nothing")
+    args = parser.parse_args([] if argv is None else argv)
+    uri = os.environ.get("MONGODB_URI_RW")
+    if args.rollback:
+        if not uri:
+            print("national load: --rollback needs MONGODB_URI_RW; nothing changed")
+            return 1
+        from pymongo import MongoClient
+
+        client = MongoClient(uri, serverSelectionTimeoutMS=20_000, appname="gridbridge-national-load")
+        try:
+            result = rollback(client[os.environ.get("MONGODB_DB", "gridbridge")])
+        finally:
+            client.close()
+        load_summary.emit(result)
+        return 0 if result["ok"] else 1
     try:
         snapshot = load_snapshot(REPO_ROOT)
         candidates = generate(snapshot)
     except (OSError, ValueError) as exc:
         print(f"national load: INVALID {exc}")
+        load_summary.emit(load_summary.summary(
+            "national load", load_summary.VALIDATION_FAILED, requested=None, staged=None, active=None, previous=None,
+            counts={}, freshness=None, quarantined=None, failures=[str(exc)[:500]]))
         return 1
     dataset = dataset_id()
     print(f"national load: sources  {len(snapshot['sources']):6} records")
     print(f"national load: projects {len(snapshot['projects']):6} records")
     print("national candidate coverage: " + json.dumps(candidates["coverage"], sort_keys=True))
-    uri = os.environ.get("MONGODB_URI_RW")
     if not uri:
         print("::warning::MONGODB_URI_RW is not set; validated only, nothing loaded")
+        freshness, quarantined = _metrics(snapshot)
+        load_summary.emit(load_summary.summary(
+            "national load", load_summary.VALIDATED_ONLY, requested=dataset, staged=None, active=None, previous=None,
+            counts={"national_sources": len(snapshot["sources"]), "national_projects": len(snapshot["projects"]),
+                    PAIRS_COLLECTION: len(candidates["pairs"])},
+            freshness=freshness, quarantined=quarantined,
+            detail="no write credentials: the snapshot validated, nothing was written, and the active release was not read"))
         return 0
     from pymongo import MongoClient
 
@@ -191,11 +264,10 @@ def main() -> int:
             if os.environ.get("GITHUB_STEP_SUMMARY"):
                 with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as out:
                     out.write(report)
+        return result
     finally:
         client.close()
-    print(f"national load: dataset {dataset} {'active' if result == 0 else 'NOT activated'}")
-    return result
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))
