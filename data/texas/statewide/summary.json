@@ -1,0 +1,32 @@
+{
+  "observations": 2049,
+  "canonical_projects": 2044,
+  "observation_tiers": {
+    "candidate": 637,
+    "full": 184,
+    "partial": 453,
+    "area_only": 1221,
+    "unlocated": 191
+  },
+  "project_tiers": {
+    "candidate": 635,
+    "full": 183,
+    "partial": 452,
+    "area_only": 1218,
+    "unlocated": 191
+  },
+  "terminals": {
+    "unnamed": 1020,
+    "no_match": 2177,
+    "unique": 821,
+    "ambiguous": 80
+  },
+  "ambiguous_observations": 77,
+  "duplicate_ids": [
+    "102795",
+    "110733",
+    "110749",
+    "110751",
+    "110753"
+  ]
+}
