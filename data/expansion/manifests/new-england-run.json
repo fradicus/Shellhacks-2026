@@ -1,0 +1,53 @@
+{
+  "checkpoint": "F38-new-england-research-01",
+  "started_at": "2026-09-27T00:56:53.868058+00:00",
+  "deadline": "2026-09-27T01:56:53.868058+00:00",
+  "runtime": "Codex local",
+  "model": "GPT-6 (session declaration; exact variant unavailable)",
+  "worker": "root / data-researcher",
+  "reviewer": "f38_source_review / independent workbook review",
+  "scope": [
+    "CT",
+    "ME",
+    "MA",
+    "NH",
+    "RI",
+    "VT"
+  ],
+  "allowed_sources": [
+    "iso-ne-rsp-2026-06"
+  ],
+  "target_verified_project_points": {
+    "min": 250,
+    "max": 500
+  },
+  "research_cohort_size": 300,
+  "budget": {
+    "wall_clock_minutes": 60,
+    "monetary_budget": null,
+    "token_budget": null,
+    "note": "No account spending meter is exposed; this is a bounded interactive research checkpoint, not an overnight run."
+  },
+  "limits": {
+    "source_artifacts": 1,
+    "download_attempts_per_source": 2,
+    "max_download_bytes": 8388608,
+    "request_timeout_seconds": 30,
+    "discovery_page_requests": 20
+  },
+  "prior_gate_evidence": {
+    "main_revision": "84de54ee2209507f1816124a13b80dc18fb8516f",
+    "main_ci_run": 36283727147,
+    "main_ci": "success",
+    "root_stop_present": false,
+    "source_pin": "data/national/source-manifest.json",
+    "shared_publication_contract": "pending"
+  },
+  "stop_rules": [
+    "Honor origin/main STOP and main-red protocol.",
+    "At 45 minutes stop new research; finish validation/reporting.",
+    "No overnight process or new source ingestion.",
+    "Stop by deadline; preserve pending location tasks."
+  ],
+  "publication": "research only; zero activation eligibility"
+}

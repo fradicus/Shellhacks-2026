@@ -46,3 +46,23 @@ Prioritize public machine-readable project registers, then primary permit/projec
 Utility directories, EIA plants and infrastructure inventories may support entity/location reconciliation but must not
 be relabeled as a national construction-project database. Include non-ISO utility, cooperative, municipal and federal
 planning sources where relevant. Alaska/Hawaii need their own discovery and remain stretch work.
+
+## New England checkpoint (2026-09-27 UTC)
+
+The user's later launch changes the initial priority to CT, ME, MA, NH, RI and VT; see
+[F38-new-england-first](../../decisions/F38-new-england-first.md). The existing approved June 2026 RSP workbook
+was downloaded again and matched its F30 hash. Its current rows were replayed against the committed snapshot.
+This confirms extraction reproducibility, not precise location or freshness on the day of download.
+
+| Source inspected | Supported discovery facts | Next check before location promotion |
+|---|---|---|
+| [ISO-NE RSP and Asset Condition List](https://www.iso-ne.com/system-planning/system-plans-studies/rsp) | Distinguishes regional RSP projects from owner-identified asset-condition work; points to list updates | The directory warns that some linked material is restricted. Review each exact public artifact; latest/prior vintages remain pending. Do not infer acquisition permission for all links |
+| [Connecticut Docket 490](https://portal.ct.gov/CSC/1_Applications-and-Other-Pending-Matters/Applications/3_DocketNos400s/Docket-No-490---UI_Bridgeport) | United Illuminating's Old Town 115/13.8 kV rebuild; project parcels at 282, 312 and 330 Kaechele Place, Bridgeport; public project maps and construction updates are linked | Candidate link to `iso-ne:1618`. Establish the final replacement site versus existing equipment, source geometry and exact project relationship; a street address is not a coordinate |
+| [Old Town application, June 2020](https://portal.ct.gov/-/media/csc/1_dockets-medialibrary/media_do400-499/do490/applicantsubmissions/application/002---united-illuminating-re-old-town-substation---csc-application---final---061120.pdf) | Page FR-1 (PDF page 9) identifies UI, Fairfield County, 115/13.8 kV and the adjoining rebuild site; useful corroboration | Searched document has no `1618` or `latitude` match. The utility's office address is separate. Application proposes work and does not prove completion. Full artifact pin/restriction review pending |
+| [National Grid Massachusetts substation layer](https://systemdataportal.nationalgrid.com/arcgis/rest/services/MASDP/MASDP_Substations/MapServer/0) | Utility-hosted point layer, CRS 4326, facility name/number, address and voltage fields; supports pagination | Metadata inspected only, no geometry imported. Item metadata has blank license information. Review portal use terms, field meaning/accuracy and explicit project-to-facility identities before acquisition |
+| [Acushnet–Fall River](https://www.mass.gov/info-details/acushnet-to-fall-river-reliability-project) | Official siting page describes line and associated substation work | Review petitions/appendices and explicit links to RSP component IDs before accepting endpoints; landing-page search discovery only |
+| [Greater Cambridge](https://www.mass.gov/info-details/greater-cambridge-energy-program) | Official siting page describes a multi-line program and proposed underground substation | Separate program from component IDs; a program is not several independently located sites. Landing-page search discovery only |
+| [MassGIS transmission layer](https://www.mass.gov/info-details/massgis-data-transmission-lines) | Search discovery identifies an asset inventory | Direct page read returned 403. Do not bypass; asset routes alone cannot establish RSP project endpoints |
+
+NH, ME, RI and VT regulator/utility location sources remain to be reviewed. No state is geographically complete.
+No newly discovered source above is enabled for bulk ingestion by this checkpoint.
