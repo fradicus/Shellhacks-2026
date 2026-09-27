@@ -5,11 +5,21 @@ import type { TimeProject } from "./TimeView";
  * and drawing 2001-2025 completions here stretched the planning axis over 25 years of past. */
 export const stillPlanned = (p: TimeProject) => p.national?.project.status_group !== "in_service";
 
+/** How a drawn national point was located (C25): independently reviewed, the owner's own published coordinate, or a
+ * labeled tentative match. Rejected, stale and unlocated records are never drawn. */
+export type NationalTier = "confirmed" | "official" | "tentative";
+export function nationalTier(project: NationalProject): NationalTier | null {
+  if (project.location_review === "confirmed") return "confirmed";
+  if (project.location_review !== "unreviewed") return null;
+  const tier = (project as { location_candidate?: { tier?: unknown } }).location_candidate?.tier;
+  return tier === "official" ? "official" : "tentative";
+}
+
 /** The national collection also projects legacy filing versions; F19 already selects those itself. */
 export function nationalTimeProjects(projects: NationalProject[], sources: NationalSource[]): TimeProject[] {
   const sourceById = new Map(sources.map((source) => [source._id, source]));
   return projects.filter((project) => !project._id.startsWith("legacy:")
-    && project.location_review === "confirmed" && project.center
+    && nationalTier(project) !== null && project.center
     && Number.isFinite(project.center.lat) && Math.abs(project.center.lat) <= 90
     && Number.isFinite(project.center.lon) && Math.abs(project.center.lon) <= 180)
     .map((project) => ({
@@ -22,6 +32,6 @@ export function nationalTimeProjects(projects: NationalProject[], sources: Natio
       confidence: null,
       source_id: project.source_id,
       page: project.evidence.page,
-      national: { project, source: sourceById.get(project.source_id) },
+      national: { project, source: sourceById.get(project.source_id), tier: nationalTier(project)! },
     }));
 }
