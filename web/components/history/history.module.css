@@ -1299,3 +1299,12 @@
     grid-template-columns: 1fr 110px;
   }
 }
+
+/* Drawn count beside each legend color. */
+.kindCount {
+  margin-left: 2px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--ink-3);
+}

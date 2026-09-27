@@ -347,6 +347,18 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
   }, [located, matches, kept, minYear, maxYear]);
 
   const eventCount = rows.reduce((n, r) => n + r.events.length, 0);
+  // The legend names only the colors on screen: each tier and legacy owner with at least one drawn row, with its count.
+  const kinds = useMemo(() => {
+    const n = new Map<string, number>();
+    const key = (p: HistoryProject) => (p.tier ? `tier:${p.tier}` : `id:${p.identity}`);
+    for (const { p } of rows) n.set(key(p), (n.get(key(p)) ?? 0) + 1);
+    const order: [string, string, string][] = [
+      ["tier:confirmed", "National, confirmed", TIER_COLOR.confirmed], ["tier:official", "Owner-published", TIER_COLOR.official],
+      ["tier:tentative", "Tentative", TIER_COLOR.tentative], ["id:national", "National", COLOR.national],
+      ["id:DESC", "Dominion SC", COLOR.DESC], ["id:GPC", "Georgia Power", COLOR.GPC], ["id:unknown", "Owner not mapped", COLOR.unknown],
+    ];
+    return order.filter(([k]) => n.get(k)).map(([k, label, color]) => ({ label, color, n: n.get(k)! }));
+  }, [rows]);
   const builtRows = rows.flatMap((r) => r.events.filter((e) => e.meaning === "actual"));
   const builtByPlane = builtRows.filter((e) => e.from! <= planeDay).length;
   // The record's own verdict: documented actual dates against the same row's required date.
@@ -1020,21 +1032,11 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
               <i className={s.gPlane} /> Year plane · above it, ghosted
             </li>
             <li className={s.utils}>
-              <span>
-                <i style={{ background: TIER_COLOR.confirmed }} /> National, confirmed
-              </span>
-              <span>
-                <i style={{ background: TIER_COLOR.official }} /> Owner-published
-              </span>
-              <span>
-                <i style={{ background: TIER_COLOR.tentative }} /> Tentative
-              </span>
-              <span>
-                <i style={{ background: COLOR.DESC }} /> Dominion SC
-              </span>
-              <span>
-                <i style={{ background: COLOR.GPC }} /> Georgia Power
-              </span>
+              {kinds.map((k) => (
+                <span key={k.label} title={`${k.n.toLocaleString("en-US")} drawn in the window`}>
+                  <i style={{ background: k.color }} /> {k.label} <b className={s.kindCount}>{k.n.toLocaleString("en-US")}</b>
+                </span>
+              ))}
             </li>
           </ul>
           <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through projects · Esc clears</p>
