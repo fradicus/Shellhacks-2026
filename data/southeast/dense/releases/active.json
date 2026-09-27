@@ -84,6 +84,33 @@
         "projects": "a0332207dce11edd495b2c166fbcf9b59fa5933a9bb516222d794daa50002900",
         "sources": "94ee6514af6e285d16d6d531825cbb5572e4df42014ddf4dbdfff4836e3a49a6"
       }
+    },
+    "virginia": {
+      "expected_counts": {
+        "by_state": {
+          "37": 6,
+          "45": 11,
+          "51": 151
+        },
+        "candidate": 35,
+        "candidate_unique_name": 25,
+        "distinct_points": 54,
+        "located": 60,
+        "located_by_state": {
+          "37": 2,
+          "45": 4,
+          "51": 55
+        },
+        "located_dated": 44,
+        "located_not_in_service": 60,
+        "official": 0,
+        "projects": 166,
+        "sources": 2
+      },
+      "files": {
+        "projects": "87c4489449cccc7aa08482f69fe98c351a12535db25aebfcbb7d57aeba4c0822",
+        "sources": "cd850a83345df77f79e5163a8af909ead0be5d8727c022bc0bb505a8b425119b"
+      }
     }
   },
   "policy": "C25",

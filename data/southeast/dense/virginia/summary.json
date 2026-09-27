@@ -1,0 +1,36 @@
+{
+  "by_state": {
+    "37": 6,
+    "45": 11,
+    "51": 151
+  },
+  "by_status": {
+    "in_service": 1,
+    "planned": 15,
+    "proposed": 51,
+    "under_construction": 6,
+    "unknown": 93
+  },
+  "candidate": 35,
+  "candidate_unique_name": 25,
+  "distinct_points": 54,
+  "located": 60,
+  "located_by_state": {
+    "37": 2,
+    "45": 4,
+    "51": 55
+  },
+  "located_dated": 44,
+  "located_not_in_service": 60,
+  "official": 0,
+  "projects": 166,
+  "sources": 2,
+  "unlocated_reasons": {
+    "multi_terminal_line": 5,
+    "no_facility": 16,
+    "no_facility,operator_conflict": 1,
+    "no_named_facility": 66,
+    "program_area_or_multi_facility": 18
+  },
+  "verified": 0
+}
