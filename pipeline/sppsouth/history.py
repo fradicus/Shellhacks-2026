@@ -20,8 +20,8 @@ from southeast import misospp
 EDITIONS = [e for e in misospp.SPP_EDITIONS if e != "2026q3"]  # newest first
 
 
-def source_id(edition: str) -> str:
-    return f"spp-qpt-{edition}-south"
+def source_id(edition: str, suffix: str = "south") -> str:
+    return f"spp-qpt-{edition}-{suffix}"
 
 
 def files() -> dict[str, str]:
@@ -30,9 +30,9 @@ def files() -> dict[str, str]:
 
 
 def project(uid: str, edition: str, n: int, sheet: str, member: str | None, c: dict, artifact: dict,
-            facilities: dict[str, list[dict]], states: list[str], fips: dict[str, str], keys: dict[str, list[str]]
-            ) -> dict:
-    sid = source_id(edition)
+            facilities: dict[str, list[dict]], states: list[str], fips: dict[str, str], keys: dict[str, list[str]],
+            suffix: str = "south") -> dict:
+    sid = source_id(edition, suffix)
     pid = f"{sid}:{uid}"
     status = " ".join(str(c["projectstatus"] or "").split())
     locator = f"{misospp.spp_file(edition)}{'!' + member if member else ''}#{sheet}!row-{n}"
@@ -67,8 +67,10 @@ def project(uid: str, edition: str, n: int, sheet: str, member: str | None, c: d
 
 
 def projects(cache: Path, manifest: dict, current: set[str], taken: set[str], facilities: dict[str, list[dict]],
-             fips: dict[str, str], keys: dict[str, list[str]], scope: str) -> tuple[list[dict], list[dict], dict]:
-    """Records, dispositions and the artifact of each edition used, for UIDs in `fips` states absent from `current`."""
+             fips: dict[str, str], keys: dict[str, list[str]], scope: str, suffix: str = "south"
+             ) -> tuple[list[dict], list[dict], dict]:
+    """Records, dispositions and the artifact of each edition used, for UIDs in `fips` states absent from `current`.
+    Another SPP rollout passes its own states, operator keys and source-ID suffix."""
     seen, out, dispositions, used = set(current) | set(taken), [], [], {}
     for edition in EDITIONS:
         name = misospp.spp_file(edition)
@@ -81,13 +83,13 @@ def projects(cache: Path, manifest: dict, current: set[str], taken: set[str], fa
                 continue
             seen.add(uid)
             status = " ".join(str(c["projectstatus"] or "").split())
-            where = {"source_id": source_id(edition), "sheet": sheet, "row": n, "uid": uid,
+            where = {"source_id": source_id(edition, suffix), "sheet": sheet, "row": n, "uid": uid,
                      "name": " ".join(str(c["upgradename"] or "").split())}
             if misospp.spp_group(status) != "in_service":
                 dispositions.append(where | {"disposition": "excluded", "reason": f"dropped after {edition} while "
                                              f"“{status}”; its outcome is not in any edition ({scope})"})
                 continue
-            record = project(uid, edition, n, sheet, member, c, artifact, facilities, states, fips, keys)
+            record = project(uid, edition, n, sheet, member, c, artifact, facilities, states, fips, keys, suffix)
             out.append(record)
             used[edition] = artifact
             dispositions.append(where | {"disposition": "accepted", "_id": record["_id"],
@@ -95,10 +97,10 @@ def projects(cache: Path, manifest: dict, current: set[str], taken: set[str], fa
     return out, dispositions, used
 
 
-def sources(used: dict, projects_: list[dict], scope_note: str) -> list[dict]:
+def sources(used: dict, projects_: list[dict], scope_note: str, suffix: str = "south") -> list[dict]:
     out = []
     for edition, artifact in used.items():
-        sid = source_id(edition)
+        sid = source_id(edition, suffix)
         out.append({
             "_id": sid, "publisher": "Southwest Power Pool", "title": misospp.spp_title(edition),
             "authority": "regional_planning_organization", "role": "project_plan",
