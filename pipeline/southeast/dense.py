@@ -24,7 +24,7 @@ FOLDER = Path("data/southeast/dense")
 ACTIVE = FOLDER / "releases" / "active.json"
 RELEASE_ID = "southeast-dense-1"
 # Fixed application order; a batch absent from the release file is simply not applied.
-BATCHES = ("aep", "duke")
+BATCHES = ("aep", "duke", "scrtp")
 FILES = ("projects", "sources")
 TIERS = ("official", "candidate", "candidate_unique_name")
 SE_STATES = {"FL": "12", "GA": "13", "AL": "01", "MS": "28", "SC": "45", "NC": "37", "TN": "47", "KY": "21",
@@ -44,6 +44,8 @@ def official_center(lat: float, lon: float, evidence: str) -> dict:
 
 def locate(name: str, description: str | None, facilities: list[dict], keys: list[str]) -> tuple[dict | None, dict]:
     """C33 candidate (C38 operator guard) from facility names the source text states, else None with the reason."""
+    # "230-115 kV" names two voltages; F40's key only strips the slash form, so the facility name kept "230-115".
+    name = re.sub(r"(\d+)\s*-\s*(?=\d+(?:\s*[-/]\s*\d+)*\s*-?\s*kV)", r"\1/", name, flags=re.I)
     got = named(name, description)
     kv = voltages_kv(name)
     matches = [match(n, facilities, keys, kv) if n else {"status": "not_a_facility", "name": None}

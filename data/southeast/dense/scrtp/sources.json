@@ -1,0 +1,266 @@
+[
+  {
+    "_id": "southeast:scrtp-desc-2026",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.scrtp.com/assets/pdfs/home/2026-2030-2million-and-above-project-descriptions.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/",
+    "notes": [
+      "F39 dense Southeast (C45). Rows repeating a legacy DESC register ID are duplicates of it; the legacy record keeps its own filing facts. Locations are unreviewed OSM name candidates."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 14,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "Dominion Energy South Carolina (via SCRTP)",
+    "retrieved_at": "2026-09-27T08:00:01Z",
+    "role": "project_plan",
+    "sha256": "e98bfeb86f2263f790f95f3510a9ab1e1b128c47e4ae633b8ccd27bedfea9b26",
+    "states": [
+      "45"
+    ],
+    "title": "DESC Planned Transmission Projects $2M and above, 2026–2030 (SCRTP)",
+    "vintage": "2026-2030"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2017-01-24",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2017-01-24-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 2,
+    "public_status": "verified_public",
+    "publication_date": "2017-01-24",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:01:12Z",
+    "role": "project_plan",
+    "sha256": "3a29d73c8b25e3b448dc9ff69816ee620795a5549eb1e8f1625fb918ef34104e",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2017-01-24: Santee Cooper committed transmission facilities",
+    "vintage": "2017-01-24"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2017-12-12",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2017-12-12-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 8,
+    "public_status": "verified_public",
+    "publication_date": "2017-12-12",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:01:35Z",
+    "role": "project_plan",
+    "sha256": "00873996c44faea46f2513f0d86b64a50e4614500c8d231242ff25e5b7a7d115",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2017-12-12: Santee Cooper committed transmission facilities",
+    "vintage": "2017-12-12"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2019-03-05",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2019-03-05-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 8,
+    "public_status": "verified_public",
+    "publication_date": "2019-03-05",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:01:56Z",
+    "role": "project_plan",
+    "sha256": "c3aa8c267bade2f73a428a5472533a74256929f602c7b8e34eb47f98dd65e94d",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2019-03-05: Santee Cooper committed transmission facilities",
+    "vintage": "2019-03-05"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2020-02-05",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2020-02-05-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 6,
+    "public_status": "verified_public",
+    "publication_date": "2020-02-05",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:05Z",
+    "role": "project_plan",
+    "sha256": "d2051f1f8c2893cedd73485f5cdff45d6dda11d748e4c4a1262494377d5f534f",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2020-02-05: Santee Cooper committed transmission facilities",
+    "vintage": "2020-02-05"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2021-02-11",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2021-02-11-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 9,
+    "public_status": "verified_public",
+    "publication_date": "2021-02-11",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:15Z",
+    "role": "project_plan",
+    "sha256": "a8cc0feb2b1acfa4ae0bde2da84c900272d04b8f4401f4afe6eb4b0545e1f903",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2021-02-11: Santee Cooper committed transmission facilities",
+    "vintage": "2021-02-11"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2022-02-23",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2022-02-23-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 3,
+    "public_status": "verified_public",
+    "publication_date": "2022-02-23",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:21Z",
+    "role": "project_plan",
+    "sha256": "099a24e67ef35aac0c2a4d5d491069ff3ccd1cc0bfb682450bbe36414a8b904f",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2022-02-23: Santee Cooper committed transmission facilities",
+    "vintage": "2022-02-23"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2023-02-22",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2023-02-22-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 9,
+    "public_status": "verified_public",
+    "publication_date": "2023-02-22",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:30Z",
+    "role": "project_plan",
+    "sha256": "ab7a24734bd3009a45459ac76432ccace17e51d4b9fa9a2ef124c12787e9ed23",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2023-02-22: Santee Cooper committed transmission facilities",
+    "vintage": "2023-02-22"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2024-02-28",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2024-02-28-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 6,
+    "public_status": "verified_public",
+    "publication_date": "2024-02-28",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:38Z",
+    "role": "project_plan",
+    "sha256": "87630fca5b8d632c6cbbfece941e66228bb8c1ce1c78a0640479759a1ab46c13",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2024-02-28: Santee Cooper committed transmission facilities",
+    "vintage": "2024-02-28"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2025-03-05",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2025-03-05-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 10,
+    "public_status": "verified_public",
+    "publication_date": "2025-03-05",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:44Z",
+    "role": "project_plan",
+    "sha256": "e557334b42ea92baea0ed00a6484fddd63abe5e0c71ab0eb8a3ce79857821270",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2025-03-05: Santee Cooper committed transmission facilities",
+    "vintage": "2025-03-05"
+  },
+  {
+    "_id": "southeast:scrtp-santee-cooper:2026-03-11",
+    "access_policy": "public_document",
+    "authority": "regional_planning_organization",
+    "download_url": "https://www.scrtp.com/assets/pdfs/meeting-archives/scrtp-meeting-2026-03-11-presentation.pdf",
+    "import_status": "imported",
+    "landing_url": "https://www.scrtp.com/meeting-archives.html",
+    "notes": [
+      "F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across decks. Dropping out of a later deck is not evidence of completion."
+    ],
+    "planning_region": "scrtp",
+    "project_count": 12,
+    "public_status": "verified_public",
+    "publication_date": "2026-03-11",
+    "publisher": "South Carolina Regional Transmission Planning (SCRTP)",
+    "retrieved_at": "2026-09-27T08:02:52Z",
+    "role": "project_plan",
+    "sha256": "d522c353eb3c1dc7c156580307ecaceb2f83f3705f8d7b0fc48da9cd02a83c5c",
+    "states": [
+      "45"
+    ],
+    "title": "SCRTP stakeholder meeting 2026-03-11: Santee Cooper committed transmission facilities",
+    "vintage": "2026-03-11"
+  }
+]
