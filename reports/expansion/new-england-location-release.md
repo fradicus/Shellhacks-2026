@@ -16,7 +16,7 @@ The live Atlas API at `http://localhost:3000/api/national?planningregion=iso-ne&
 | Vermont | 18 |
 | Total | 345 |
 
-The records reference **187 distinct facility IDs/coordinates**: 212 standalone-site projects, 41 projects with both endpoints, and 92 with one endpoint only. Multiple components can share a facility; 345 is not a count of separate substations. Line centers are the arithmetic mean of two supported endpoints or the single supported endpoint, following the existing contract. They do not locate individual replacement structures or a route.
+The records reference **187 distinct facility IDs/coordinates**: 212 standalone-site projects, 41 projects with both endpoints, and 92 with one endpoint only. Multiple components can share a facility: the 345 records occupy **199 distinct canonical map positions**. Neither 345 nor 199 is a count of separate substations. Line centers are the arithmetic mean of two supported endpoints or the single supported endpoint, following the existing contract. They do not locate individual replacement structures or a route.
 
 Lifecycle cohorts remain the June 2026 workbook observations: **329 in service, 13 planned, 3 under construction**. No cancelled record receives a new location. No new completion dates or historical events are asserted. Unknown contractor, county, geometry accuracy and other original fields remain unknown.
 
