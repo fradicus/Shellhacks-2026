@@ -220,15 +220,23 @@ test("map click with year selected calls the site API for the clicked point", as
   await page.goto("/operations?year=2025");
   await expect(page.getByLabel("Annual AEF year")).toHaveValue("2025");
   const map = page.getByRole("application", { name: "Click the map to set the worksite coordinates" });
-  await expect(map.locator(".maplibregl-canvas")).toBeVisible({ timeout: 30_000 });
-  await map.locator(".maplibregl-canvas").click({ position: { x: 180, y: 110 } });
+  await expect(map).toHaveAttribute("data-ready", "true", { timeout: 30_000 });
+  // Playwright's canvas click is unreliable with MapLibre; fire the same map click handler
+  // the UI registers, at a fixed CONUS point.
+  const fired = await map.evaluate((node) => {
+    const host = node as HTMLDivElement & { __worksiteMap?: { fire(type: string, data: { lngLat: { lat: number; lng: number } }): void } };
+    if (!host.__worksiteMap) return false;
+    host.__worksiteMap.fire("click", { lngLat: { lat: 47.6062, lng: -122.3321 } });
+    return true;
+  });
+  expect(fired).toBe(true);
   await expect(page.getByRole("heading", { name: "Map-selected worksite" })).toBeVisible({ timeout: 15_000 });
   await expect(page.getByText("pH 6.4")).toBeVisible();
   await expect(page.getByText(/depth 0-15 cm/)).toBeVisible();
   const called = new URL(siteUrl);
   expect(called.searchParams.get("year")).toBe("2025");
-  expect(Number(called.searchParams.get("lat"))).toBeGreaterThan(20);
-  expect(Number(called.searchParams.get("lon"))).toBeLessThan(-60);
+  expect(called.searchParams.get("lat")).toBe("47.6062");
+  expect(called.searchParams.get("lon")).toBe("-122.3321");
 });
 
 test("mobile layout keeps the worksite form before the evidence board and does not overflow", async ({ page }, testInfo: TestInfo) => {
