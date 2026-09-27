@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ImpactWorksheet } from "@/components/impact/ImpactWorksheet";
+import { SiteEvidence, type SitePoint } from "@/components/impact/SiteEvidence";
 import { Badge, ReviewBadge, UtilityBadge, buttonClass, fmtMiles, gapText } from "@/components/ui";
 import { getMatches, getPair, isFixtureMode } from "@/lib/data";
-import { isUnavailable } from "@/lib/types";
+import { isUnavailable, type Project } from "@/lib/types";
 import s from "@/components/impact/impact.module.css";
 
 export const metadata: Metadata = { title: "Impact scenario · Common Ground" };
+
+function projectPoint(project: Project | null | undefined, fallbackLabel: string): SitePoint | null {
+  const lat = project?.center?.lat ?? project?.geo?.coordinates?.[1];
+  const lon = project?.center?.lon ?? project?.geo?.coordinates?.[0];
+  if (lat == null || lon == null || !Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  return { label: project?.name ?? fallbackLabel, lat, lon };
+}
 
 export default async function ImpactPage({ searchParams }: { searchParams: Promise<{ pair?: string | string[] }> }) {
   const params = await searchParams;
@@ -15,6 +23,9 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
   const detail = pair && !isUnavailable(pair) ? pair : null;
   const rows = isUnavailable(matches) ? [] : matches;
   const match = detail?.match;
+  const sitePoints = detail && match
+    ? [projectPoint(detail.a, match.a ?? "Project A"), projectPoint(detail.b, match.b ?? "Project B")].filter((point): point is SitePoint => point !== null)
+    : [];
   return (
     <main className={s.page}>
       <header className={s.hero}>
@@ -56,8 +67,10 @@ export default async function ImpactPage({ searchParams }: { searchParams: Promi
           })}</div>
           <p className={s.warning}>{match.review_state === "rejected" ? "This pair was rejected in review. Its costs can be explored hypothetically, but it is not a validated coordination opportunity. " : match.review_state !== "confirmed" ? "This pair still needs review. " : "Review does not establish equipment availability. "}Center distance is not a truck route. Filed in-service dates are not construction windows.</p>
           <Link href={`/pair/${encodeURIComponent(match._id)}`}>Inspect pair evidence and review details →</Link>
+          {!sitePoints.length && <p className={s.muted}>Neither project center has published coordinates, so Field planning context is not attached.</p>}
         </> : !id && <p className={s.muted}>No pair attached. Use this worksheet for your own two-job scenario, or choose a pair to keep its source evidence alongside your assumptions.</p>}
       </section>
+      {sitePoints.length > 0 && <SiteEvidence key={`site-${id}`} points={sitePoints} />}
       <ImpactWorksheet key={id} pairLabel={detail ? `${detail.a?.name ?? match?.a} / ${detail.b?.name ?? match?.b}` : null} />
       <aside className={s.research}>
         <strong>Why these inputs?</strong> Sponsor conversations highlighted freight, short-notice mobilization and idle rented equipment.
