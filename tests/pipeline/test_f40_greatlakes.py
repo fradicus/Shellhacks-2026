@@ -179,11 +179,27 @@ def _release_root(tmp_path):
     return tmp_path
 
 
+def _without_great_lakes(snapshot):
+    """The national snapshot as it is before this release, whether or not F30's loader already applied it."""
+    from national.build import _coverage
+
+    ids = {p["_id"] for p in load_json(REPO_ROOT / "data" / "greatlakes" / "projects.json")}
+    sources = {s["_id"] for s in load_json(REPO_ROOT / "data" / "greatlakes" / "sources.json")}
+    snapshot = {**snapshot, "projects": [p for p in snapshot["projects"] if p["_id"] not in ids],
+                "sources": [s for s in snapshot["sources"] if s["_id"] not in sources],
+                "coverage": {k: v for k, v in snapshot["coverage"].items() if k != "great_lakes"}}
+    imported = {s["_id"] for s in snapshot["sources"] if s["import_status"] == "imported"}
+    measured = _coverage(snapshot["projects"], imported)
+    for key in ("projects_total", "located_count", "sources", "notes"):
+        snapshot["coverage"][key] = measured[key]
+    return snapshot
+
+
 def test_release_applies_to_the_national_snapshot_and_validates():
     from greatlakes.publish import apply_release
     from national.build import _coverage, load_snapshot, validate_snapshot_values
 
-    snapshot = load_snapshot(REPO_ROOT)
+    snapshot = _without_great_lakes(load_snapshot(REPO_ROOT))
     before = len(snapshot["projects"])
     result = apply_release(snapshot, REPO_ROOT)
     imported = {s["_id"] for s in result["sources"] if s["import_status"] == "imported"}
@@ -206,7 +222,7 @@ def test_release_fails_closed_on_tampering(tmp_path):
     from greatlakes.publish import apply_release
     from national.build import load_snapshot
 
-    snapshot = load_snapshot(REPO_ROOT)
+    snapshot = _without_great_lakes(load_snapshot(REPO_ROOT))
     root = _release_root(tmp_path)
     assert apply_release(snapshot, tmp_path / "missing") is snapshot  # no active file: no change
     projects_path = root / "data" / "greatlakes" / "projects.json"
