@@ -100,3 +100,25 @@ def test_name_only_match_with_other_voltages_is_rejected():
 def test_one_sided_dash_separates_terminals():
     assert locate_name("GTC: FOO - BAR CREEK -BAZ 500 KV NEW TRANSMISSION LINES, CONSTRUCT") == \
         "Foo - Bar Creek - Baz 500 kV New Transmission Lines"
+
+
+def test_legacy_duplicates_need_exactly_one_legacy_project_and_one_claimant():
+    from southeast.sertp import legacy_duplicates
+
+    def rows(*names, baa="SOUTHERN"):
+        return [{"baa": baa, "name": n} for n in names]
+
+    legacy = [{"_id": "legacy:GPC:1", "name": "FOO - BAR 115KV REBUILD"},
+              {"_id": "legacy:GPC:2", "name": "ZED - QUUX 230KV LINE"},
+              {"_id": "legacy:GPC:3", "name": "QUUX - ZED 230KV RECONDUCTOR"},
+              {"_id": "legacy:GPC:4", "name": "ALPHA 230/115KV BANK REPLACEMENT"},
+              {"_id": "legacy:GPC:5", "name": "BRAVO - CHARLIE 115KV REBUILD"}]
+    current = rows("BAR - FOO 115 KV TRANSMISSION LINE, REBUILD",       # reversed pair, one legacy match
+                   "ZED - QUUX 230 KV TRANSMISSION LINE, UPGRADE",      # two legacy matches: stays new
+                   "ALPHA 230/115 KV BANK, REPLACE",                    # same site and kV
+                   "ALPHA 500 KV BUS, EXPANSION",                       # same site, other kV: stays new
+                   "BRAVO - CHARLIE 115 KV (BLACK), REBUILD",           # two SERTP rows claim one legacy
+                   "BRAVO - CHARLIE 115 KV (WHITE), REBUILD")
+    matched, kept = legacy_duplicates(current + rows("FOO - BAR 115 KV, REBUILD", baa="TVA"), legacy)
+    assert {j: p["_id"] for j, p in matched.items()} == {0: "legacy:GPC:1", 2: "legacy:GPC:4"}
+    assert sorted(kept) == [1, 4, 5]

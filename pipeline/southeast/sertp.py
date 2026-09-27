@@ -9,7 +9,9 @@ the 2025 report renamed most projects, so an older row without that exact link i
 own (a dropout cannot be told from a rename, and neither means built). D15 still excludes the 2026 preliminary
 report; the 2025 final plan carries "(CEII)" page headings and is not used (specs/decisions/F39-sertp-editions.md).
 Rows give no state: each Balancing Authority Area's footprint states are matched together, and a project's states
-come from its matched OSM facility. OSM data (c) OpenStreetMap contributors, ODbL 1.0.
+come from its matched OSM facility. A Southern row naming the same place as exactly one legacy Georgia Power
+project (legacy:GPC:*) is recorded as that project's duplicate, not a new project.
+OSM data (c) OpenStreetMap contributors, ODbL 1.0.
 """
 
 from __future__ import annotations
@@ -23,8 +25,8 @@ from pathlib import Path
 from urllib.parse import quote
 
 from california.caiso import named
-from common import load_json, write_json
-from greatlakes.match import DUPLICATE_METERS, _meters, candidate_center, facility_key
+from common import REPO_ROOT, load_json, write_json
+from greatlakes.match import DUPLICATE_METERS, _meters, candidate_center, facility_key, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
 
 from .dense import SE_STATES, locate, slug, write_batch
@@ -48,6 +50,8 @@ EDITIONS = {
                          "docs/general/2025/2025 SERTP Preliminary Expansion Plan Report (Non-CEII).pdf"),
 }
 CURRENT = "2025-preliminary"
+# Legacy Georgia Power register already in the national snapshot; a SERTP row naming the same place is a duplicate.
+LEGACY = Path("data/national/projects.json")
 # Editions checked but not ingested (specs/decisions/F39-sertp-editions.md): file, sha256, CEII lines, markings, verdict.
 NOT_INGESTED = [
     ("2025 Regional Transmission Plan and Input Assumptions.pdf",
@@ -234,6 +238,45 @@ def place(row: dict, by_state: dict[str, list[dict]]) -> tuple[dict | None, dict
     return center, candidate, sorted({SE_STATES[e["facility"]["state"]] for e in found})
 
 
+def identity(name: str) -> tuple | None:
+    """What a project name states about where it is: ("line", {two endpoint keys}) or ("site", key, kV set)."""
+    text = re.sub(r"(\d+)\s*-\s*(?=\d+(?:\s*[-/]\s*\d+)*\s*-?\s*kV)", r"\1/", locate_name(name), flags=re.I)
+    got = named(text)
+    names = [facility_key(n) for n in got["names"] if n]
+    if got["kind"] == "line" and len(set(names)) == 2:
+        return ("line", frozenset(names))
+    if got["kind"] == "site" and len(names) == 1:
+        return ("site", names[0], frozenset(voltages_kv(text)))
+    return None
+
+
+def same_place(a: tuple, b: tuple) -> bool:
+    if a[0] != b[0] or a[1] != b[1]:
+        return False
+    return a[0] == "line" or not (a[2] and b[2]) or a[2] == b[2]  # a site's kV must agree when both state one
+
+
+def legacy_duplicates(rows: list[dict], legacy: list[dict]) -> tuple[dict[int, dict], dict[int, str]]:
+    """Southern rows naming the same endpoint pair (or site) as exactly one legacy Georgia Power project, and that
+    project claimed by no other SERTP row. Returns {row: legacy project} and {row: why it stayed new}."""
+    known = [(p, identity(p["name"])) for p in legacy]
+    hits: dict[int, list[dict]] = {}
+    for j, row in enumerate(rows):
+        if row["baa"] in ("SOUTHERN", "SOCO") and (mine := identity(row["name"])):
+            hits[j] = [p for p, theirs in known if theirs and same_place(mine, theirs)]
+    claims = Counter(h[0]["_id"] for h in hits.values() if len(h) == 1)
+    matched, kept = {}, {}
+    for j, h in hits.items():
+        if len(h) > 1:
+            kept[j] = f"same named place as {len(h)} legacy GPC projects ({', '.join(p['_id'] for p in h)}); kept new"
+        elif h and claims[h[0]["_id"]] > 1:
+            kept[j] = (f"shares {h[0]['_id']} with {claims[h[0]['_id']] - 1} other SERTP row(s) (e.g. two circuits or "
+                       "two work items on one line); kept new")
+        elif h:
+            matched[j] = h[0]
+    return matched, kept
+
+
 def event(pid: str, native: str, edition: str, row: dict, artifact: dict, title: str) -> dict:
     return {"id": f"{pid}:{edition}", "type": "planned_milestone", "date": row["year"], "precision": "year",
             "native_project_link": native,
@@ -315,6 +358,18 @@ def build(cache: Path) -> dict:
                                  "Project Name": row["name"], "Description": row["description"],
                                  "Supporting Statement": row["support"]}},
         })
+    legacy = [p for p in load_json(REPO_ROOT / LEGACY) if p["_id"].startswith("legacy:GPC:")]
+    matched, kept = legacy_duplicates(current, legacy)
+    for j, note in kept.items():
+        projects[j]["location_candidate"]["legacy_overlap"] = note
+    moved = {projects[j]["_id"]: p for j, p in matched.items()}
+    for d in dispositions:
+        if (legacy_project := moved.get(d.get("project_id"))) is not None:
+            d |= {"disposition": "duplicate", "project_id": legacy_project["_id"],
+                  "reason": f"same two named endpoints as {legacy_project['name']} (legacy GPC register)"
+                  if identity(legacy_project["name"])[0] == "line" else
+                  f"same named site and kV as {legacy_project['name']} (legacy GPC register)"}
+    projects = [p for p in projects if p["_id"] not in moved]
     fips = sorted({SE_STATES[s] for s in OSM_STATES})
     sources = []
     for edition, (title, _) in EDITIONS.items():
