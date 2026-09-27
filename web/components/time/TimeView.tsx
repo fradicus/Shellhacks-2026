@@ -2,6 +2,8 @@
 
 import { bearing } from "./sceneCamera";
 import { SceneControls } from "./SceneControls";
+import { ScopeBar, type ScopeOption } from "./ScopeBar";
+import { formatScope, haversineMi, inScope, parseScope, planName, planOf, RULE_MI, scopeName, statesOf, type Scope, type ScopeGeography } from "./scope";
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Map as MlMap } from "maplibre-gl";
@@ -107,6 +109,7 @@ export function TimeView({
   analysisDate,
   fixtureMode,
   national,
+  geography,
   legacyAvailable,
   pairsAvailable,
 }: {
@@ -116,14 +119,13 @@ export function TimeView({
   fixtureMode: boolean;
   legacyAvailable: boolean;
   pairsAvailable: boolean;
+  geography: ScopeGeography;
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
     drawn: number; inService: number; unlocated: number; truncated: boolean };
 }) {
-  const counts = useMemo(
-    () => Object.fromEntries(VIEWS.map(({ v }) => [v, pairs.filter((p) => p.view === v).length])) as Record<View, number>,
-    [pairs],
-  );
-  const [view, setView] = useState<View>(() => VIEWS.find(({ v }) => counts[v] > 0)?.v ?? "future");
+  const [view, setView] = useState<View>(() => VIEWS.find(({ v }) => pairs.some((p) => p.view === v))?.v ?? "future");
+  const [scope, setScope] = useState<Scope | null>(null);
+  const [pinArmed, setPinArmed] = useState(false);
   const [pairId, setPairId] = useState<string | null>(null);
   const [projectKey, setProjectKey] = useState<string | null>(null);
   const [hover, setHover] = useState<string | null>(null);
@@ -155,10 +157,35 @@ export function TimeView({
   const topYearsRef = useRef(1);
   const incoming = useRef<string | null | undefined>(undefined);
   const selectPairRef = useRef<(id: string | null) => void>(() => {});
+  const stopTourRef = useRef<() => void>(() => {});
+  const scopeRead = useRef(false);
 
   // --- facts, derived once --------------------------------------------------------------------------------------------
   const byKey = useMemo(() => new Map(projects.map((p) => [p.key, p])), [projects]);
   const located = useMemo(() => projects.filter((p) => p.center), [projects]);
+  // --- scope: which part of the map is lifted (spec 15–21) ------------------------------------------------------------
+  const regionOf = useMemo(() => new Map(geography.states.map((st) => [st.fips, st.region])), [geography]);
+  const scoped = useMemo(() => (scope ? located.filter((p) => inScope(p, scope, regionOf)) : located), [scope, located, regionOf]);
+  const scopeKeys = useMemo(() => (scope ? new Set(scoped.map((p) => p.key)) : null), [scope, scoped]);
+  const scopeLabel = scope ? scopeName(scope, geography) : null;
+  const scopeOptions = useMemo(() => {
+    const tally = (keyOf: (p: TimeProject) => string[]) => {
+      const n = new Map<string, number>();
+      for (const p of located) for (const k of new Set(keyOf(p))) n.set(k, (n.get(k) ?? 0) + 1);
+      return n;
+    };
+    const byCount = (a: ScopeOption, b: ScopeOption) => b.count - a.count || a.label.localeCompare(b.label);
+    const regions = tally((p) => statesOf(p).map((st) => regionOf.get(st) ?? "").filter(Boolean));
+    const plans = tally((p) => { const pl = planOf(p); return pl ? [pl] : []; });
+    const states = tally(statesOf);
+    return [
+      ...geography.regions.filter((r) => regions.get(r.code)).map((r): ScopeOption =>
+        ({ group: "Regions", scope: { kind: "region", code: r.code }, label: r.name, count: regions.get(r.code)! })).sort(byCount),
+      ...[...plans].map(([code, count]): ScopeOption => ({ group: "Grid plans", scope: { kind: "plan", code }, label: planName(code), count })).sort(byCount),
+      ...geography.states.filter((st) => states.get(st.fips)).map((st): ScopeOption =>
+        ({ group: "States", scope: { kind: "state", code: st.fips }, label: st.name, hint: st.usps, count: states.get(st.fips)! })).sort(byCount),
+    ];
+  }, [located, geography, regionOf]);
   // The planning window: the ground is 1 Jan of the year before the analysis date (or the earliest drawn year, if
   // later), so one old filing can't stretch the axis. Earlier dates keep their facts and lie flat on the ground.
   const analysisYear = Number(analysisDate.slice(0, 4));
@@ -175,11 +202,14 @@ export function TimeView({
     const q = projectQuery.trim().toLowerCase();
     const hit = (p: TimeProject) => !q || p.name.toLowerCase().includes(q) || p.key.toLowerCase().includes(q);
     const byName = (a: TimeProject, b: TimeProject) => a.name.localeCompare(b.name);
+    const pin = scope?.kind === "pin" ? scope : null;
+    const near = (p: TimeProject) => (pin ? haversineMi(pin.lat, pin.lon, p.center!.lat, p.center!.lon) : 0);
     return {
-      drawn: located.filter(hit).sort(byName),
-      unplaced: projects.filter((p) => !p.center && hit(p)).sort(byName),
+      drawn: scoped.filter(hit).sort((a, b) => near(a) - near(b) || byName(a, b)),
+      unplaced: scope ? [] : projects.filter((p) => !p.center && hit(p)).sort(byName),
+      near: pin ? near : null,
     };
-  }, [projects, located, projectQuery]);
+  }, [projects, scoped, scope, projectQuery]);
   const notLocated = projects.length - located.length;
   const items: TimeItem[] = useMemo(
     () =>
@@ -200,6 +230,18 @@ export function TimeView({
     epochRef.current = epoch;
     topYearsRef.current = topYears;
   }, [epoch, topYears]);
+  // The scope's frame: its drawn projects, or the pin's 25-mile circle.
+  const scopeBox = useMemo(() => {
+    if (scope?.kind === "pin") {
+      const dLat = RULE_MI / 69.05;
+      const dLon = dLat / Math.cos((scope.lat * Math.PI) / 180);
+      return [scope.lon - dLon, scope.lat - dLat, scope.lon + dLon, scope.lat + dLat] as const;
+    }
+    if (!scoped.length || !scope) return null;
+    const lons = scoped.map((p) => p.center!.lon);
+    const lats = scoped.map((p) => p.center!.lat);
+    return [Math.min(...lons), Math.min(...lats), Math.max(...lons), Math.max(...lats)] as const;
+  }, [scope, scoped]);
   const bbox = useMemo(() => {
     const lons = located.map((p) => p.center!.lon);
     const lats = located.map((p) => p.center!.lat);
@@ -208,9 +250,15 @@ export function TimeView({
       : ([-85.6, 30.3, -78.5, 35.3] as const);
   }, [located]);
 
+  // Pairs follow the scope: both ends inside it.
+  const scopedPairs = useMemo(() => (scopeKeys ? pairs.filter((p) => scopeKeys.has(p.a) && scopeKeys.has(p.b)) : pairs), [pairs, scopeKeys]);
+  const counts = useMemo(
+    () => Object.fromEntries(VIEWS.map(({ v }) => [v, scopedPairs.filter((p) => p.view === v).length])) as Record<View, number>,
+    [scopedPairs],
+  );
   const visible = useMemo(
-    () => pairs.filter((p) => p.view === view).sort((x, y) => (x.rank ?? 1e9) - (y.rank ?? 1e9) || x.id.localeCompare(y.id)),
-    [pairs, view],
+    () => scopedPairs.filter((p) => p.view === view).sort((x, y) => (x.rank ?? 1e9) - (y.rank ?? 1e9) || x.id.localeCompare(y.id)),
+    [scopedPairs, view],
   );
   const pair = pairId ? (pairs.find((p) => p.id === pairId) ?? null) : null;
   const previewed = !pair && preview ? (pairs.find((p) => p.id === preview) ?? null) : null;
@@ -306,6 +354,10 @@ export function TimeView({
           if (process.env.NODE_ENV !== "production") (window as unknown as { __tv: unknown }).__tv = { map, layer };
           map.addLayer(layer.layer);
           setReady(true);
+          // An incoming ?scope= (malformed values are ignored) arrives with the data.
+          scopeRead.current = true;
+          const incomingScope = parseScope(new URLSearchParams(window.location.search).get("scope"));
+          if (incomingScope) setScope(incomingScope);
         });
       } catch (err) {
         const msg = err instanceof Error ? err.message : "";
@@ -360,20 +412,23 @@ export function TimeView({
 
   const emphasis = useCallback(
     (key: string): Emphasis => {
+      const lit = key === pair?.a || key === pair?.b || key === previewed?.a || key === previewed?.b || key === projectKey || key === hover;
+      if (scopeKeys && !scopeKeys.has(key) && !lit) return "out";
       if (pair) return key === pair.a || key === pair.b ? "sel" : key === hover ? "hot" : "dim";
       if (previewed) return key === previewed.a || key === previewed.b ? "hot" : "dim";
       if (projectKey) return key === projectKey ? "sel" : related.has(key) || key === hover ? "hot" : "dim";
       return key === hover ? "hot" : "normal";
     },
-    [pair, previewed, projectKey, related, hover],
+    [pair, previewed, projectKey, related, hover, scopeKeys],
   );
 
   // The ruler stands east of the data (over open water) in the overview; for a pair it stands at the pair's midpoint,
   // so the dimension line is read against the year ticks.
   const rulerAt = useMemo(() => {
     if (pa?.center && pb?.center) return { lng: (pa.center.lon + pb.center.lon) / 2, lat: (pa.center.lat + pb.center.lat) / 2 };
-    return { lng: bbox[2] + 0.35, lat: bbox[1] + (bbox[3] - bbox[1]) * 0.42 };
-  }, [pa, pb, bbox]);
+    const b = scopeBox ?? bbox;
+    return { lng: b[2] + (scopeBox ? (b[2] - b[0]) * 0.04 + 0.03 : 0.35), lat: b[1] + (b[3] - b[1]) * 0.42 };
+  }, [pa, pb, bbox, scopeBox]);
 
   const dimension = pair && pair.time_gap_days !== null && drawn.get(pair.a)?.kind === "exact" && drawn.get(pair.b)?.kind === "exact";
 
@@ -405,6 +460,7 @@ export function TimeView({
   // The 25-mile rule, drawn around both stored centers of the selected (or previewed) pair.
   const ra = pa ?? (previewed ? byKey.get(previewed.a) : undefined);
   const rb = pb ?? (previewed ? byKey.get(previewed.b) : undefined);
+  const pin = scope?.kind === "pin" ? scope : null;
   useEffect(() => {
     if (!ready) return;
     layerRef.current?.setRules(
@@ -413,9 +469,11 @@ export function TimeView({
             a: { lng: ra.center.lon, lat: ra.center.lat, color: COLOR[ra.utility] },
             b: { lng: rb.center.lon, lat: rb.center.lat, color: COLOR[rb.utility] },
           }
-        : null,
+        : pin
+          ? { a: { lng: pin.lon, lat: pin.lat, color: "#bfe9ff" } }
+          : null,
     );
-  }, [ready, ra, rb]);
+  }, [ready, ra, rb, pin]);
 
   useEffect(() => {
     layerRef.current?.setAsOf(asOf);
@@ -461,6 +519,17 @@ export function TimeView({
       });
     for (const p of [pa, pb])
       labelSpecs.push({ id: `sel-${p.key}`, lng: p.center!.lon, lat: p.center!.lat, years: flat ? 0 : heightOf(p.key), kind: "bead", text: p.name });
+  }
+  if (pin && !(ra && rb)) {
+    labelSpecs.push({ id: "pin", lng: pin.lon, lat: pin.lat, years: 0, kind: "pin", text: null });
+    labelSpecs.push({
+      id: "pinRule",
+      lng: pin.lon,
+      lat: pin.lat + RULE_DEG_LAT,
+      years: 0,
+      kind: "rule",
+      text: <>{RULE_MI} mi · {scoped.length} project{scoped.length === 1 ? "" : "s"}</>,
+    });
   }
   const hovered = hover ? byKey.get(hover) : undefined;
   if (hovered?.center && hover !== pair?.a && hover !== pair?.b)
@@ -547,6 +616,8 @@ export function TimeView({
     setYearPx(fitPx.current);
     setPairId(null);
     setProjectKey(null);
+    setScope(null);
+    setPinArmed(false);
     const map = mapRef.current;
     if (!map) return;
     const cam = map.cameraForBounds(
@@ -566,6 +637,45 @@ export function TimeView({
     mapRef.current?.easeTo({ pitch: next ? 0 : pair ? 66 : 58, duration: ms });
   };
 
+  // Arrival (spec 18): fly to the scope and let it rise in date order. Clearing is handled by Overview.
+  const scopeId = scope ? formatScope(scope) : null;
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map || !scopeBox) return;
+    const cam = map.cameraForBounds(
+      [
+        [scopeBox[0], scopeBox[1]],
+        [scopeBox[2], scopeBox[3]],
+      ],
+      { padding: overviewPadding(container.current), bearing: -16, maxZoom: 9.5 },
+    );
+    if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : 58, bearing: -16, duration: reduced.current ? 0 : 1600, essential: true });
+    layerRef.current?.sweepIn(reduced.current ? 0 : 1600, 250);
+    // Only a new scope moves the camera; flat and the box follow from it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scopeId, ready]);
+
+  // The scope lives in the URL too (spec 21). The map's load reads it once; until then the URL is left alone.
+  useEffect(() => {
+    if (!scopeRead.current) return;
+    const u = new URL(window.location.href);
+    if (scopeId) u.searchParams.set("scope", scopeId);
+    else u.searchParams.delete("scope");
+    window.history.replaceState(window.history.state, "", u);
+  }, [scopeId]);
+
+  const pickScope = useCallback(
+    (next: Scope | null) => {
+      stopTourRef.current();
+      setPinArmed(false);
+      setPairId(null);
+      setPreview(null);
+      if (next) setScope(next);
+      else overview();
+    },
+    [overview],
+  );
+
   // Pointer: hover and click on pillars and beads, picked in screen space.
   useEffect(() => {
     const el = container.current;
@@ -577,12 +687,17 @@ export function TimeView({
       raf = requestAnimationFrame(() => {
         const r = el.getBoundingClientRect();
         const key = layerRef.current?.pick(e.clientX - r.left, e.clientY - r.top) ?? null;
-        setHover(key);
-        map.getCanvas().style.cursor = key ? "pointer" : "";
+        setHover(pinArmed ? null : key);
+        map.getCanvas().style.cursor = pinArmed ? "crosshair" : key ? "pointer" : "";
       });
     };
     const onLeave = () => setHover(null);
-    const onClick = (e: { point: { x: number; y: number } }) => {
+    const onClick = (e: { point: { x: number; y: number }; lngLat: { lng: number; lat: number } }) => {
+      if (pinArmed) {
+        pickScope({ kind: "pin", lat: e.lngLat.lat, lon: e.lngLat.lng });
+        map.getCanvas().style.cursor = "";
+        return;
+      }
       const key = layerRef.current?.pick(e.point.x, e.point.y) ?? null;
       if (!key) {
         if (pairId || projectKey) {
@@ -607,7 +722,7 @@ export function TimeView({
       el.removeEventListener("mouseleave", onLeave);
       map.off("click", onClick);
     };
-  }, [ready, visible, selectPair, pairId, projectKey]);
+  }, [ready, visible, selectPair, pairId, projectKey, pinArmed, pickScope]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -626,13 +741,17 @@ export function TimeView({
         setTrayOpen(false);
         if (tourTimer.current) window.clearTimeout(tourTimer.current);
         setTour(null);
-        setPairId(null);
-        setProjectKey(null);
+        // One layer at a time: an armed pin, then the selection, then the scope.
+        if (pinArmed) setPinArmed(false);
+        else if (pairId || projectKey) {
+          setPairId(null);
+          setProjectKey(null);
+        } else if (scope) pickScope(null);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [visible, pairId, selectPair]);
+  }, [visible, pairId, projectKey, selectPair, pinArmed, scope, pickScope]);
 
   // The selected pair lives in the URL, so a demo can open straight onto it and a link can be shared.
   useEffect(() => {
@@ -681,6 +800,9 @@ export function TimeView({
     tourTimer.current = null;
     setTour(null);
   }, []);
+  useEffect(() => {
+    stopTourRef.current = stopTour;
+  }, [stopTour]);
   const stepRef = useRef<(i: number) => void>(() => {});
   const goStep = useCallback(
     (i: number) => {
@@ -791,6 +913,9 @@ export function TimeView({
         ))}
       </div>
 
+      <ScopeBar current={scopeLabel} count={scoped.length} total={located.length} options={scopeOptions} pinArmed={pinArmed}
+        onPick={pickScope} onClear={() => pickScope(null)} onPin={setPinArmed} />
+
       <div className={s.left} ref={leftRef}>
       <header className={s.masthead}>
         <p className={s.overline}>GridBridge · Overlaps in time</p>
@@ -891,7 +1016,9 @@ export function TimeView({
           </ol>
         ) : (
           <div className={s.empty}>
-            <p>{pairsAvailable ? `No ${view} pairs in this data. Zero is a valid result, not a failure to look.` : "Legacy overlap pairs unavailable. Project discovery remains available."}</p>
+            <p>{!pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
+              : scopeLabel ? `No ${view} pairs with both projects ${scope?.kind === "pin" ? `within ${RULE_MI} mi of the pin` : `in ${scopeLabel}`}. Zero is a valid result, not a failure to look.`
+              : `No ${view} pairs in this data. Zero is a valid result, not a failure to look.`}</p>
             {VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (
               <button key={v} type="button" onClick={() => changeView(v)}>
                 Show {label.toLowerCase()} ({counts[v]}) →
@@ -904,7 +1031,7 @@ export function TimeView({
       <section className={s.tray} aria-label="All projects">
         <button type="button" onClick={() => setTrayOpen((o) => !o)} aria-expanded={trayOpen} aria-controls="all-projects">
           <span>Projects</span>
-          <b>{located.length}</b> drawn · <b>{notLocated}</b> not located
+          {scope ? <><b>{scoped.length}</b> of {located.length} drawn</> : <><b>{located.length}</b> drawn</>} · <b>{notLocated}</b> not located
           {undated.length ? (
             <>
               {" "}
@@ -945,7 +1072,7 @@ export function TimeView({
           />
           <div className={s.drawerBody}>
             <h3>
-              Drawn <span>{listed.drawn.length}</span>
+              {scopeLabel ? `Drawn in ${scope?.kind === "pin" ? `${RULE_MI} mi of the pin, nearest first` : scopeLabel}` : "Drawn"} <span>{listed.drawn.length}</span>
             </h3>
             <ul>
               {listed.drawn.map((p) => (
@@ -968,15 +1095,16 @@ export function TimeView({
                     <i style={{ background: projectColor(p) }} />
                     <b>{p.name}</b>
                     <span>
+                      {listed.near ? `${listed.near(p).toFixed(1)} mi · ` : null}
                       {describe(spans.get(p.key) ?? { kind: "unknown" }, p.in_service.raw)} · <code>{p.key}</code>
                     </span>
                   </button>
                 </li>
               ))}
             </ul>
-            <h3>
+            {scope ? null : <h3>
               Legacy unlocated <span>{listed.unplaced.length}</span>
-            </h3>
+            </h3>}
             <ul>
               {listed.unplaced.map((p) => (
                 <li key={p.key} className={s.unplaced}>
@@ -1063,9 +1191,16 @@ export function TimeView({
           {project.national ? <NationalProjectEvidence {...project.national} dataset={national.dataset} /> : <p className={s.note}>
             {related.size ? `In ${related.size - 1} ${view} pair${related.size === 2 ? "" : "s"}; linked projects glow.` : `Not in any ${view} pair.`}
           </p>}
-          <Link href={pastWork(project.key)} className={s.evidence}>
-            Find past work nearby in History →
-          </Link>
+          <div className={s.projectActions}>
+            {project.center ? (
+              <button type="button" className={s.evidence} onClick={() => pickScope({ kind: "pin", lat: project.center!.lat, lon: project.center!.lon })}>
+                Everything within {RULE_MI} mi →
+              </button>
+            ) : null}
+            <Link href={pastWork(project.key)} className={s.evidence}>
+              Find past work nearby in History →
+            </Link>
+          </div>
         </aside>
       ) : null}
 
@@ -1085,6 +1220,11 @@ export function TimeView({
           <li>
             <i className={s.gDim} /> Day gap of the selected pair
           </li>
+          {scope ? (
+            <li>
+              <i className={s.gTrace} /> Outside the scope: grey ground trace, no date shown
+            </li>
+          ) : null}
           <li className={s.utils}>
             {(["confirmed", "official", "tentative"] as const).filter((t) => tierCounts[t] > 0).map((t) =>
               <span key={t}><i style={{ background: TIER_COLOR[t] }} /> {TIER_LABEL[t]}</span>)}
