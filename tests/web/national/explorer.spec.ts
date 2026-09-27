@@ -53,8 +53,8 @@ test("API rejects duplicate parameters and its exact counts drive the page", asy
   expect(response.status()).toBe(200);
   const payload = await response.json();
   expect(payload.total).toBeGreaterThanOrEqual(0);
-  expect(payload.locatedTotal + payload.unlocatedTotal).toBe(payload.total);
-  expect(payload.mapProjects.length).toBe(payload.locatedTotal);
+  expect(payload.locatedTotal + (payload.approximateTotal ?? 0) + payload.unlocatedTotal).toBe(payload.total);
+  expect(payload.mapProjects.length).toBe(payload.locatedTotal + (payload.approximateTotal ?? 0));
 
   await page.goto("/explore?state=25&limit=25");
   await expect(page.locator("section[aria-label='Filtered project counts'] strong").first()).toHaveText(payload.total.toLocaleString("en-US"));

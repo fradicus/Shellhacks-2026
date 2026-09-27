@@ -4,6 +4,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import type { GeoJSONSource, Map as MlMap } from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
 import type { GeoBounds, NationalProject } from "@/lib/national/types";
+import { displayPoints } from "@/lib/national/locations";
 import s from "./national.module.css";
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
@@ -33,12 +34,14 @@ export function NationalMap({
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
   const selectRef = useRef(onSelect);
+  const selectedRef = useRef(selectedId);
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
 
   useEffect(() => {
     selectRef.current = onSelect;
-  }, [onSelect]);
+    selectedRef.current = selectedId;
+  }, [onSelect, selectedId]);
 
   useEffect(() => {
     let cancelled = false;
@@ -78,14 +81,17 @@ export function NationalMap({
             paint: {
               "circle-radius": 7,
               "circle-color": ["get", "color"],
-              "circle-opacity": ["case", ["==", ["get", "review"], "confirmed"], 0.9, 0.58],
+              "circle-opacity": ["case", ["==", ["get", "approximate"], 1], 0.15, ["==", ["get", "review"], "confirmed"], 0.9, 0.58],
               "circle-stroke-color": ["case", ["==", ["get", "review"], "confirmed"], "#ffffff", ["get", "color"]],
               "circle-stroke-width": ["case", ["==", ["get", "review"], "confirmed"], 1.5, 2.5],
             },
           });
           map.on("click", "national-projects", (event) => {
-            const id = event.features?.[0]?.properties?.id;
-            if (typeof id === "string") selectRef.current(id);
+            const ids = [...new Set(event.features?.map((f) => f.properties?.id).filter((id): id is string => typeof id === "string"))];
+            if (ids.length) {
+              const current = selectedRef.current;
+              selectRef.current(ids[(ids.indexOf(current ?? "") + 1) % ids.length]);
+            }
           });
           map.on("mouseenter", "national-projects", () => (map!.getCanvas().style.cursor = "pointer"));
           map.on("mouseleave", "national-projects", () => (map!.getCanvas().style.cursor = ""));
@@ -107,16 +113,17 @@ export function NationalMap({
     if (!ready || !map) return;
     (map.getSource("national-projects") as GeoJSONSource).setData({
       type: "FeatureCollection",
-      features: projects.flatMap((project) => project.center ? [{
+      features: projects.flatMap((project) => displayPoints(project).map((point) => ({
         type: "Feature" as const,
-        geometry: { type: "Point" as const, coordinates: [project.center.lon, project.center.lat] },
+        geometry: { type: "Point" as const, coordinates: [point.lon, point.lat] },
         properties: {
           id: project._id,
           selected: project._id === selectedId ? 1 : 0,
           review: project.location_review,
+          approximate: project.center === null ? 1 : 0,
           color: STATUS_COLORS[project.status_group] ?? STATUS_COLORS.unknown,
         },
-      }] : []),
+      }))),
     });
 
     if (focusBounds) {
@@ -126,7 +133,7 @@ export function NationalMap({
       );
       return;
     }
-    const points = projects.flatMap((project) => project.center ? [[project.center.lon, project.center.lat] as [number, number]] : []);
+    const points = projects.flatMap((project) => displayPoints(project).map((point) => [point.lon, point.lat] as [number, number]));
     if (points.length === 1) map.easeTo({ center: points[0], zoom: 7 });
     else if (points.length > 1) {
       const lons = points.map(([lon]) => lon);
@@ -142,7 +149,9 @@ export function NationalMap({
       <div className={s.legend} aria-label="Map legend">
         <span><i className={`${s.dot} ${s.planned}`} /> Planned</span>
         <span><i className={`${s.dot} ${s.construction}`} /> Under construction</span>
-        <span><i className={s.ring} /> Unconfirmed location</span>
+        <span><i className={s.ring} /> Tentative location</span>
+        <span><i className={s.ring} style={{ opacity: 0.4 }} /> County reference · exact site unknown</span>
+        <span>Click shared dots again to select another project; all remain in the list.</span>
       </div>
       <p className={s.attribution}><a href="https://openfreemap.org/" target="_blank" rel="noreferrer">OpenFreeMap</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap</a></p>
     </section>

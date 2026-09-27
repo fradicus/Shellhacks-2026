@@ -16,6 +16,7 @@ registerHooks({
       shortCircuit: true,
     };
     if (specifier.startsWith("@/")) return next(new URL(`../../../web/${specifier.slice(2)}.ts`, import.meta.url).href, context);
+    if (specifier.endsWith("/locations")) return next(`${specifier}.ts`, context);
     return next(specifier, context);
   },
   load(url, context, next) {
@@ -30,6 +31,7 @@ registerHooks({
 });
 const { GET } = await import("../../../web/app/api/national/export/route.ts");
 const { LocationEvidence } = await import("../../../web/components/national/LocationEvidence.tsx");
+const { LocationSummary } = await import("../../../web/components/national/LocationSummary.tsx");
 const source = {
   publisher: "Test publisher", url: "https://example.org/test-only", artifact_sha256: "a".repeat(64),
   locator: "Test row 2", source_date: null, retrieved_at: "2026-09-27T00:00:00Z", access_review: "Test only", facts: "Test identity evidence",
@@ -60,6 +62,30 @@ test("location evidence retains unknowns, clickable citations, latest review and
   const partial = { ...verification, location_kind: "line" as const, points: [{ ...verification.points[0], role: "a" as const }] };
   assert.match(render(partial), /Partial endpoint coverage/);
   assert.match(render({ ...partial, points: [...partial.points, { ...partial.points[0], role: "b" }] }), /Complete endpoint coverage/);
+});
+
+test("county details and CSV retain precision, attribution and null exact coordinates", async () => {
+  const texas = JSON.parse(readFileSync(new URL("../../../data/texas/statewide/projects.json", import.meta.url), "utf8"));
+  const county = texas.find((p: { approximate_location?: unknown }) => p.approximate_location);
+  const candidate = texas.find((p: { location_candidate?: unknown }) => p.location_candidate);
+  const details = renderToStaticMarkup(createElement(LocationSummary, { project: county }));
+  assert.match(details, /County reference — exact site unknown/);
+  assert.match(details, /Census reference geography/);
+  assert.match(renderToStaticMarkup(createElement(LocationSummary, { project: candidate })), /not independently reviewed/);
+  assert.match(renderToStaticMarkup(createElement(LocationSummary, { project: candidate })), /OpenStreetMap contributors/);
+  fixtureGlobal.nationalExportTestPayload = {
+    available: true, projects: [county, candidate], sources: [], total: 2, locatedTotal: 1,
+    approximateTotal: 1, unlocatedTotal: 0,
+  };
+  try {
+    const csv = await (await GET(new Request("https://example.org/api/national/export"))).text();
+    assert.match(csv, /approximate_location,candidate_evidence/);
+    assert.match(csv, /eligible_for_matching/);
+    assert.match(csv, /ODbL/);
+    const json = await (await GET(new Request("https://example.org/api/national/export?format=json"))).json();
+    assert.equal(json.projects[0].center, null);
+    assert.deepEqual(json.projects[0].approximate_location, county.approximate_location);
+  } finally { delete fixtureGlobal.nationalExportTestPayload; }
 });
 
 test("actual export route preserves embedded evidence and dataset while retaining CSV and strict query handling", async () => {

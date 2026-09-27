@@ -39,3 +39,7 @@ keep exact centers null for county-only records. Use visible Tentative / County 
 provenance and all named counties, and keep shared positions individually selectable. Count projects once.
 Keep reads bounded and disclose truncation. No new matching, geographic inference or date-policy changes.
 F19's main-map hookup is a separate claim and does not change F31's ownership.
+
+The bounded map projection admits at most 10,000 project records (matching the existing snapshot ceiling);
+exports remain capped at 2,000 and pages at 100. `locatedTotal` retains center-based counts; the additive
+`approximateTotal` counts county-only projects, and `unlocatedTotal` excludes those known county locations.
