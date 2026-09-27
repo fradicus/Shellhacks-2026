@@ -45,6 +45,9 @@
   background: radial-gradient(80% 70% at 55% 35%, #0b1220 0%, #05070b 70%);
 }
 
+/* Focusing an action must not scroll the entire scene underneath the fixed panels. */
+.stage.stage { overflow: clip; }
+
 .map :global(.maplibregl-ctrl-attrib) {
   background: rgba(5, 7, 11, 0.6);
   color: var(--ink-3);
@@ -147,14 +150,18 @@
 
 .left {
   composes: left from "./scene.module.css";
-  gap: 18px;
+  gap: 10px;
 }
 .left > * {
   pointer-events: auto;
 }
 
 .masthead {
-  flex: none;
+  flex: 0 1 auto;
+  max-height: 38%;
+  min-height: 80px;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 .masthead > * {
   animation: rise 0.9s both cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -224,8 +231,8 @@
 }
 
 .pairs {
-  flex: 0 1 auto;
-  min-height: 0;
+  flex: 1 1 240px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   animation: rise 0.9s 0.32s both cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -258,6 +265,7 @@
   flex: 1 1 auto;
   min-height: 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
   margin: 0;
   padding: 2px 6px 6px;
   list-style: none;
@@ -956,6 +964,7 @@
     position: absolute;
     width: 1px;
     height: 1px;
+    min-height: 0;
     padding: 0;
     margin: -1px;
     overflow: hidden;
@@ -1005,6 +1014,18 @@
   .vignette {
     background: radial-gradient(130% 95% at 50% 30%, transparent 50%, rgba(3, 5, 9, 0.8) 100%);
   }
+}
+
+@media (max-height: 800px) and (min-width: 861px) {
+  .title { font-size: 42px; }
+  .lede { margin-top: 8px; }
+  .stats { margin-top: 8px; }
+  .left { top: 14px; bottom: 14px; }
+}
+
+@media (max-width: 860px) {
+  .left { max-height: 52%; }
+  .pairs { min-height: 160px; }
 }
 
 .l_bead[data-side="l"] .labelInner {
