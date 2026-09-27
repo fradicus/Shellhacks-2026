@@ -1,0 +1,28 @@
+{
+  "by_basis": {
+    "one": 77,
+    "source_point": 134,
+    "two": 68
+  },
+  "by_status": {
+    "in_service": 54,
+    "planned": 281,
+    "proposed": 88
+  },
+  "candidate_located": 279,
+  "distinct_points": 172,
+  "located_by_status": {
+    "in_service": 40,
+    "planned": 175,
+    "proposed": 64
+  },
+  "projects": 423,
+  "unlocated_reasons": {
+    "no_facility": 126,
+    "no_facility,not_a_facility": 2,
+    "no_facility,not_corroborated": 8,
+    "not_corroborated": 7,
+    "terminals_not_facilities": 1
+  },
+  "verified": 0
+}

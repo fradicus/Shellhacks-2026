@@ -1,0 +1,79 @@
+{
+  "artifacts": [
+    {
+      "bytes": 636624,
+      "named_substations": 530,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-IL\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T02:19:24Z",
+      "sha256": "05bbd627f9e4c208abf236d0d5913edc34558cead14d16dd5e53ba90e5e32438",
+      "state": "IL",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    },
+    {
+      "bytes": 514300,
+      "named_substations": 578,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-IN\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T02:35:26Z",
+      "sha256": "a44ae9ef18b331eaa3fd1075501173bb32386cdcbe82dc477cc6f0571cd7dbf5",
+      "state": "IN",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    },
+    {
+      "bytes": 990791,
+      "named_substations": 2400,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T02:18:04Z",
+      "sha256": "02f8354aa41b3f9698a9bd0b45a8d6261a44b03bfbf72867f03d2ad10e0ab365",
+      "state": "MI",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    },
+    {
+      "bytes": 420436,
+      "named_substations": 593,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MN\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T01:40:51Z",
+      "sha256": "7587377b6372f0863721e1f0a3631243b6b32812d9025f522c19125bade23435",
+      "state": "MN",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 709215,
+      "named_substations": 1275,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-NY\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T02:55:35Z",
+      "sha256": "802fde5029d4cad52c3edc8a6da077afc4e154ef79cdc52a914b56b9ce71e5ce",
+      "state": "NY",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 975151,
+      "named_substations": 1338,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-OH\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:10:42Z",
+      "sha256": "240bb8e2742b452542f01c9efce2c759935bbe159ad6fa209d2460fb39fa975a",
+      "state": "OH",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "bytes": 885836,
+      "named_substations": 1373,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-PA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T04:12:07Z",
+      "sha256": "313fc6f7e176f6e338b8b4d58f71723d76309c1a046f40c930b1dd2e8f61c574",
+      "state": "PA",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    },
+    {
+      "bytes": 381280,
+      "named_substations": 685,
+      "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WI\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+      "retrieved_at": "2026-09-27T02:16:50Z",
+      "sha256": "146a341f5359e27ac1c0c0959ca7d016bbfe586fc18327a42590663e0f17ce07",
+      "state": "WI",
+      "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    }
+  ],
+  "publisher": "OpenStreetMap contributors",
+  "rights": "ODbL 1.0; attribution required",
+  "role": "candidate facility geometry only (C26)"
+}

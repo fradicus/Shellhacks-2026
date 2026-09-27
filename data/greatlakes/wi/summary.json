@@ -1,0 +1,33 @@
+{
+  "by_basis": {
+    "one": 36,
+    "source_point": 33,
+    "two": 56
+  },
+  "by_status": {
+    "cancelled": 10,
+    "in_service": 4,
+    "planned": 166,
+    "proposed": 167,
+    "unknown": 1
+  },
+  "candidate_located": 125,
+  "distinct_points": 107,
+  "located_by_status": {
+    "cancelled": 8,
+    "planned": 51,
+    "proposed": 66
+  },
+  "projects": 348,
+  "unlocated_reasons": {
+    "endpoint_not_named": 5,
+    "multi_terminal_line": 8,
+    "no_facility": 63,
+    "no_facility,not_a_facility": 4,
+    "no_facility,not_corroborated": 5,
+    "no_named_facility": 64,
+    "not_corroborated": 43,
+    "program_area_or_multi_facility": 31
+  },
+  "verified": 0
+}
