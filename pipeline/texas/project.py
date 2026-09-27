@@ -1,4 +1,4 @@
-"""Stage the four source-linked Georgetown transmission projects for national review."""
+"""Stage bounded source-linked Georgetown transmission candidates for national review."""
 
 from __future__ import annotations
 
@@ -11,7 +11,8 @@ from texas.tpit import GIS_URL, SOURCE_ID
 SOURCE_URL = "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
 
 
-def stage(rows: list[dict], summary: dict, future_rows: list[dict] | None = None) -> tuple[dict, list[dict]]:
+def stage(rows: list[dict], summary: dict, future_rows: list[dict] | None = None,
+          retrieved_at: str | None = None) -> tuple[dict, list[dict]]:
     source = {
         "_id": SOURCE_ID,
         "title": "July 2026 Transmission Project Information Tracking",
@@ -22,7 +23,7 @@ def stage(rows: list[dict], summary: dict, future_rows: list[dict] | None = None
         "download_url": SOURCE_URL,
         "publication_date": "2026-07-17",
         "vintage": "2026-07-13",
-        "retrieved_at": None,
+        "retrieved_at": retrieved_at,
         "sha256": summary["source_sha256"],
         "public_status": "verified_public",
         "access_policy": "public_document",
@@ -115,9 +116,10 @@ def main() -> None:
     folder = root / "data" / "texas"
     rows = json.loads((folder / "planned-observations.json").read_text())
     summary = json.loads((folder / "planned-summary.json").read_text())
+    audit = json.loads((folder / "source-audit.json").read_text())
     future = folder / "future-observations.json"
     future_rows = json.loads(future.read_text()) if future.exists() else None
-    source, projects = stage(rows, summary, future_rows)
+    source, projects = stage(rows, summary, future_rows, audit.get("reacquired_at"))
     (folder / "publication-source.json").write_text(json.dumps(source, indent=2) + "\n")
     (folder / "publication-candidates.json").write_text(json.dumps(projects, indent=2) + "\n")
 
