@@ -79,3 +79,23 @@ def test_committed_minnesota_records_are_candidates_never_verified():
             assert project["location_review"] == "unlocated"
     summary = load_json(REPO_ROOT / "data" / "greatlakes" / "mn" / "summary.json")
     assert summary["candidate_located"] == sum(1 for p in projects if p["center"]) and summary["verified"] == 0
+
+
+def test_atc_names_ordinals_particles_queue_ids_and_brackets():
+    assert facilities_named("Menominee – 30th Ave. 69 kV (Y-199)", None)["names"] == ["Menominee", "30th Ave."]
+    assert facilities_named("South Fond du Lac - Forward Energy Center 138 kV", None)["names"][0] == "South Fond du Lac"
+    assert facilities_named("R1049/R5061 Edgewater SS", None)["names"] == ["Edgewater"]
+    assert facilities_named("J1316 Paris SS Network Upgrades [North Appleton - Fox River]", None)["names"] == ["Paris"]
+    assert facilities_named("Range Line Dist (WE) – Range Line Switchyard 138 kV", None)["kind"] is None
+    partial = facilities_named("Harrison Tap – Iola 69kV (Y-70)", None)
+    assert (partial["kind"], partial["names"]) == ("line", [None, "Iola"])
+
+
+def test_atc_zone_states_and_cost():
+    from greatlakes.wisconsin import cost, zone_states
+
+    page = "<p>Zone 3 includes the counties of:</p><ul><li>Dane, Wis.</li><li>Winnebago (N), Ill.</li></ul>" \
+           "<h2>Zone 3 Planned Projects</h2><p>Mich.</p>"
+    assert zone_states(page) == ["IL", "WI"]
+    assert cost("$ 1 3,857,000") == {"raw": "$ 1 3,857,000", "usd": 13857000}
+    assert cost("$ -")["usd"] is None

@@ -322,6 +322,7 @@
             "lon": -93.303368,
             "name": "Iron Range Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "500000;230000;46000"
           },
           "name": "Iron Range",
@@ -338,6 +339,7 @@
             "lon": -92.293976,
             "name": "Arrowhead Substation 345/230 kV",
             "operator": "American Transmission Company",
+            "state": "MN",
             "voltage": "345000;230000;24900"
           },
           "name": "Arrowhead",
@@ -482,6 +484,7 @@
             "lon": -96.4494651,
             "name": "Ortonville 115kV Substation",
             "operator": "Otter Tail Power Company",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Ortonville",
@@ -557,6 +560,7 @@
             "lon": -94.2991958,
             "name": "Little Falls Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "115000;34500"
           },
           "name": "Little Falls",
@@ -1160,6 +1164,7 @@
             "lon": -94.7223589,
             "name": "Badoura 115/34 KV Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000;34000"
           },
           "name": "Badoura",
@@ -1241,6 +1246,7 @@
             "lon": -95.6998291,
             "name": "Frazee Substation",
             "operator": "Otter Tail Power Company",
+            "state": "MN",
             "voltage": "41600"
           },
           "name": "Frazee",
@@ -1380,6 +1386,7 @@
             "lon": -92.6806332,
             "name": "Adams Substation",
             "operator": "ITC",
+            "state": "MN",
             "voltage": "345000;161000;69000"
           },
           "name": "Adams",
@@ -1418,7 +1425,12 @@
   },
   {
     "_id": "mn-btpr-2025:2019-SE-N3",
-    "center": null,
+    "center": {
+      "basis": "one",
+      "evidence": "Unverified candidate: exact-name match to OSM way/104535667 (Adams Substation), corroborated by operator, voltage. Partial: one of two endpoints.",
+      "lat": 43.557131,
+      "lon": -92.680633
+    },
     "counties": [],
     "description": null,
     "evidence": {
@@ -1443,19 +1455,42 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": null,
+          "status": "not_a_facility"
+        },
+        {
+          "corroboration": [
+            "operator",
+            "voltage"
+          ],
+          "facility": {
+            "id": "way/104535667",
+            "lat": 43.5571308,
+            "lon": -92.6806332,
+            "name": "Adams Substation",
+            "operator": "ITC",
+            "state": "MN",
+            "voltage": "345000;161000;69000"
+          },
+          "name": "Adams",
+          "norm": "ADAMS",
+          "status": "matched"
+        }
+      ],
+      "kind": "line",
       "names_from": "name",
       "operator_keys": [
         "ITC"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         161
       ]
     },
-    "location_review": "unlocated",
+    "location_review": "unreviewed",
     "name": "J523 Generator Interconnection to Adams 161 kV",
     "native_id": "2019-SE-N3",
     "other_owners": [],
@@ -1728,6 +1763,7 @@
             "lon": -92.6906654,
             "name": "Forbes Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "500000;230000;115000;20000"
           },
           "name": "Forbes",
@@ -1807,6 +1843,7 @@
             "lon": -92.4496757,
             "name": "Cloquet 115/14 KV Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "115000;13800"
           },
           "name": "Cloquet",
@@ -2156,6 +2193,7 @@
             "lon": -94.0663819,
             "name": "Riverton 230/115 KV Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "230000;115000;69000"
           },
           "name": "Riverton",
@@ -2469,6 +2507,7 @@
             "lon": -95.0195307,
             "name": "Verndale Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Verndale",
@@ -2547,6 +2586,7 @@
             "lon": -94.7223589,
             "name": "Badoura 115/34 KV Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000;34000"
           },
           "name": "Badoura",
@@ -2609,8 +2649,8 @@
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
       "endpoints": [
         {
-          "name": "Ave West",
-          "norm": "AVENUE WEST",
+          "name": "15th Ave West",
+          "norm": "15TH AVENUE WEST",
           "status": "no_facility"
         }
       ],
@@ -3043,6 +3083,7 @@
             "lon": -93.2627184,
             "name": "Hayward Substation",
             "operator": "ITC Midwest",
+            "state": "MN",
             "voltage": "161000;69000"
           },
           "name": "Hayward",
@@ -3423,6 +3464,7 @@
             "lon": -93.3070206,
             "name": "Bunker Lake Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "345000;230000;69000"
           },
           "name": "Bunker Lake",
@@ -3500,6 +3542,7 @@
             "lon": -93.5832157,
             "name": "Medina Substation",
             "operator": "Great River Energy;Wright-Hennepin Electric Cooperative",
+            "state": "MN",
             "voltage": "115000;69000;12470"
           },
           "name": "Medina",
@@ -3634,6 +3677,7 @@
             "lon": -94.88584,
             "name": "Black Oak Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "69000"
           },
           "name": "Black Oak",
@@ -3650,6 +3694,7 @@
             "lon": -94.9585843,
             "name": "Sauk Centre Substation",
             "operator": "Sauk Centre Public Utilities",
+            "state": "MN",
             "voltage": "69000"
           },
           "name": "Sauk Centre",
@@ -3900,6 +3945,7 @@
             "lon": -96.0420251,
             "name": "Appleton Substation",
             "operator": "Western Minnesota Municipal Power Agency",
+            "state": "MN",
             "voltage": "115000;41600;12470"
           },
           "name": "Appleton",
@@ -3987,6 +4033,7 @@
             "lon": -94.2807193,
             "name": "Big Swan Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000;69000"
           },
           "name": "Big Swan",
@@ -4185,6 +4232,7 @@
             "lon": -92.3320812,
             "name": "Wrenshall Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Wrenshall",
@@ -4601,6 +4649,7 @@
             "lon": -92.2943144,
             "name": "Arrowhead Substation 230/115 kV",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "250000;230000;115000"
           },
           "name": "Arrowhead",
@@ -4679,6 +4728,7 @@
             "lon": -92.6906654,
             "name": "Forbes Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "500000;230000;115000;20000"
           },
           "name": "Forbes",
@@ -4757,6 +4807,7 @@
             "lon": -92.1126419,
             "name": "Ridgeview Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Ridgeview",
@@ -4890,6 +4941,7 @@
             "lon": -95.8142185,
             "name": "Silver Lake Substation",
             "operator": "Great River Energy",
+            "state": "MN",
             "voltage": "230000;41600"
           },
           "name": "Silver Lake",
@@ -5054,14 +5106,24 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Waseca",
+          "norm": "WASECA",
+          "status": "no_facility"
+        },
+        {
+          "name": null,
+          "status": "not_a_facility"
+        }
+      ],
+      "kind": "line",
       "names_from": "name",
       "operator_keys": [
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         69
@@ -5182,7 +5244,7 @@
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "endpoint_not_named",
       "rule": "C26",
       "voltages_kv": [
         69
@@ -5428,7 +5490,7 @@
       "operator_keys": [
         "DAIRYLAND"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         161
@@ -5543,7 +5605,7 @@
       "operator_keys": [
         "ITC"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -5827,6 +5889,7 @@
             "lon": -95.8773382,
             "name": "Lake Yankton Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Lake Yankton",
@@ -6064,14 +6127,24 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Winthrop",
+          "norm": "WINTHROP",
+          "status": "no_facility"
+        },
+        {
+          "name": null,
+          "status": "not_a_facility"
+        }
+      ],
+      "kind": "line",
       "names_from": "name",
       "operator_keys": [
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": []
     },
@@ -6133,6 +6206,7 @@
             "lon": -95.5291756,
             "name": "Minnesota Valley Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "230000;115000;69000;23900"
           },
           "name": "Minnesota Valley",
@@ -6363,6 +6437,7 @@
             "lon": -95.6738187,
             "name": "Lyon County (LYC) Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;69000"
           },
           "name": "Lyon Co",
@@ -6550,6 +6625,7 @@
             "lon": -93.4640383,
             "name": "Elm Creek Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;34500;13800"
           },
           "name": "Elm Creek",
@@ -6739,6 +6815,7 @@
             "lon": -93.8058829,
             "name": "Lake Pulaski Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Lake Pulaski",
@@ -6817,6 +6894,7 @@
             "lon": -93.0643233,
             "name": "Inver Grove Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Inver Grove",
@@ -6895,6 +6973,7 @@
             "lon": -92.6342857,
             "name": "Prairie Island Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "345000;161000;34500;13800"
           },
           "name": "Prairie Island",
@@ -7021,7 +7100,7 @@
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "endpoint_not_named",
       "rule": "C26",
       "voltages_kv": [
         69
@@ -7244,6 +7323,7 @@
             "lon": -93.4570648,
             "name": "Parkers Lake Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;13800"
           },
           "name": "Parkers Lake",
@@ -7317,6 +7397,7 @@
             "lon": -93.0387451,
             "name": "Kohlman Lake",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;13800"
           },
           "name": "Kohlman Lake",
@@ -7392,6 +7473,7 @@
             "lon": -94.008568,
             "name": "Wilmarth Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "69000"
           },
           "name": "Wilmarth",
@@ -7681,7 +7763,7 @@
       "operator_keys": [
         "GREAT RIVER"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": []
     },
@@ -7852,6 +7934,7 @@
             "lon": -93.2518916,
             "name": "Burnsville Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000;69000"
           },
           "name": "Burnsville",
@@ -8214,6 +8297,7 @@
             "lon": -94.8283917,
             "name": "Cedar Mountain Substation",
             "operator": "Great River Energy",
+            "state": "MN",
             "voltage": "345000;115000"
           },
           "name": "Cedar Mountain",
@@ -8378,13 +8462,19 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Alexandria Light",
+          "norm": "ALEXANDRIA LIGHT",
+          "status": "no_facility"
+        }
+      ],
+      "kind": "site",
       "names_from": "name",
       "operator_keys": [
         "MISSOURI RIVER"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         115
@@ -9380,6 +9470,7 @@
             "lon": -94.1669227,
             "name": "Brainerd Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Brainerd",
@@ -9685,7 +9776,8 @@
       "operator_keys": [
         "MINNESOTA POWER",
         "ALLETE",
-        "AMERICAN TRANSMISSION"
+        "AMERICAN TRANSMISSION",
+        "ATC"
       ],
       "reason": "multi_terminal_line",
       "rule": "C26",
@@ -9917,6 +10009,7 @@
             "lon": -92.293976,
             "name": "Arrowhead Substation 345/230 kV",
             "operator": "American Transmission Company",
+            "state": "MN",
             "voltage": "345000;230000;24900"
           },
           "name": "Arrowhead",
@@ -10048,6 +10141,7 @@
             "lon": -93.303368,
             "name": "Iron Range Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "500000;230000;46000"
           },
           "name": "Iron Range",
@@ -10125,6 +10219,7 @@
             "lon": -93.0330662,
             "name": "Shannon Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "230000;115000;69000"
           },
           "name": "Shannon",
@@ -10259,6 +10354,7 @@
             "lon": -92.1769441,
             "name": "Haines Road Substation",
             "operator": "Minnesota Power",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Haines Rd",
@@ -10381,7 +10477,7 @@
       "operator_keys": [
         "OTTER TAIL"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         115
@@ -10435,7 +10531,7 @@
       "operator_keys": [
         "OTTER TAIL"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         115
@@ -10679,14 +10775,24 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Goodview",
+          "norm": "GOODVIEW",
+          "status": "no_facility"
+        },
+        {
+          "name": null,
+          "status": "not_a_facility"
+        }
+      ],
+      "kind": "line",
       "names_from": "name",
       "operator_keys": [
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         69
@@ -10985,14 +11091,24 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Owatonna",
+          "norm": "OWATONNA",
+          "status": "no_facility"
+        },
+        {
+          "name": null,
+          "status": "not_a_facility"
+        }
+      ],
+      "kind": "line",
       "names_from": "name",
       "operator_keys": [
         "SOUTHERN MINNESOTA MUNICIPAL",
         "SMMPA"
       ],
-      "reason": "endpoint_not_named",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         12,
@@ -11180,7 +11296,7 @@
         "SOUTHERN MINNESOTA MUNICIPAL",
         "SMMPA"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         345
@@ -11244,6 +11360,7 @@
             "lon": -92.6695116,
             "name": "Byron Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "345000;161000"
           },
           "name": "Byron",
@@ -11260,6 +11377,7 @@
             "lon": -92.4905678,
             "name": "Cascade Creek Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "161000"
           },
           "name": "Cascade Creek",
@@ -11560,7 +11678,7 @@
         "SOUTHERN MINNESOTA MUNICIPAL",
         "SMMPA"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": "no_named_facility",
       "rule": "C26",
       "voltages_kv": [
         161
@@ -11627,6 +11745,7 @@
             "lon": -95.6738187,
             "name": "Lyon County (LYC) Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;69000"
           },
           "name": "Lyon Co",
@@ -11643,6 +11762,7 @@
             "lon": -95.1437998,
             "name": "Lakefield Junction Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "345000;161000;69000"
           },
           "name": "Lakefield Junction",
@@ -11729,6 +11849,7 @@
             "lon": -96.0522078,
             "name": "Chanarambie Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000;34500"
           },
           "name": "Chanarambie",
@@ -11807,6 +11928,7 @@
             "lon": -95.6335859,
             "name": "Tracy Switching Station",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "69000;13800;7970"
           },
           "name": "Tracy Switching Station",
@@ -11887,6 +12009,7 @@
             "lon": -95.7195836,
             "name": "Nobles County Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;34500"
           },
           "name": "Nobles County",
@@ -11973,6 +12096,7 @@
             "lon": -95.6738187,
             "name": "Lyon County (LYC) Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "345000;115000;69000"
           },
           "name": "Lyon County",
@@ -12299,6 +12423,7 @@
             "lon": -93.6625725,
             "name": "Mound Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "69000;13800"
           },
           "name": "Mound",
@@ -12535,6 +12660,7 @@
             "lon": -94.1415581,
             "name": "Granite City Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Granite City",
@@ -12552,6 +12678,7 @@
             "lon": -94.2028848,
             "name": "Crossroads Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Crossroads",
@@ -12870,6 +12997,7 @@
             "lon": -93.2846147,
             "name": "Coon Creek Substation",
             "operator": null,
+            "state": "MN",
             "voltage": "345000;115000"
           },
           "name": "Coon Creek",
@@ -12948,6 +13076,7 @@
             "lon": -93.5029736,
             "name": "Gleason Lake Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000;69000;34500;13800"
           },
           "name": "Gleason Lake",
@@ -12964,6 +13093,7 @@
             "lon": -93.6625725,
             "name": "Mound Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "69000;13800"
           },
           "name": "Mound",
@@ -13161,6 +13291,7 @@
             "lon": -94.2755735,
             "name": "West St. Cloud Substation",
             "operator": "Great River Energy",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "West St Cloud",
@@ -13178,6 +13309,7 @@
             "lon": -94.2028848,
             "name": "Crossroads Substation",
             "operator": "Xcel Energy",
+            "state": "MN",
             "voltage": "115000"
           },
           "name": "Crossroads",
@@ -13298,14 +13430,24 @@
     },
     "location_candidate": {
       "dataset": "OpenStreetMap (ODbL), data/greatlakes/osm/mn-substations.json",
-      "endpoints": [],
-      "kind": null,
+      "endpoints": [
+        {
+          "name": "Richmond",
+          "norm": "RICHMOND",
+          "status": "no_facility"
+        },
+        {
+          "name": null,
+          "status": "not_a_facility"
+        }
+      ],
+      "kind": "line",
       "names_from": "name",
       "operator_keys": [
         "XCEL",
         "NORTHERN STATES"
       ],
-      "reason": "program_area_or_multi_facility",
+      "reason": null,
       "rule": "C26",
       "voltages_kv": [
         69
@@ -13872,6 +14014,7 @@
             "lon": -95.7897112,
             "name": "Erie Road Substation",
             "operator": "Marshall Municipal Utilities",
+            "state": "MN",
             "voltage": "115000;13800"
           },
           "name": "Erie Road",

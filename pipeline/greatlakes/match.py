@@ -17,20 +17,24 @@ DESCRIPTORS = {
     "TRANSMISSION", "SUBSTATION", "SUB", "ADDITION", "REPLACEMENT", "CIRCUIT", "CIRCUITS", "SEGMENT", "AND", "TO",
     "DOUBLE", "RECONDUCTOR", "SWAP", "ELR", "DISTRIBUTION", "BREAKER", "BREAKERS", "RING", "BUS", "CAP", "BANK",
     "CAPACITOR", "TRANSFORMER", "TRANSFORMERS", "THIRD", "SECOND", "STATCOM", "REACTOR", "SINGLE", "ASSET", "RENEWAL",
-    "INTERCONNECTION", "DELIVERY", "RETIREMENT", "RELAY",
+    "INTERCONNECTION", "DELIVERY", "RETIREMENT", "RELAY", "RELAYS", "SS", "SWT", "STA", "SW", "DIC", "GENERATOR",
+    "NETWORK", "OPGW", "CONTROL", "POWER", "HOUSE", "NEW", "PARTIAL", "SVC",
 }
-NUMERIC = re.compile(r"TR\d+|[\d./]+(KV)?")
+NUMERIC = re.compile(r"T\d+|TR\d+|[\d./]+(KV)?")
+QUEUE_ID = re.compile(r"[JSR]\d+(/[JSR]\d+)*")
+PARTICLES = {"du", "de", "la", "le"}
 ABBREVIATIONS = {"RD": "ROAD", "CO": "COUNTY", "SAINT": "ST", "JCT": "JUNCTION", "AVE": "AVENUE", "MT": "MOUNT"}
 TRAILING_CODE = re.compile(r"\s*[–—-]\s*[A-Z]+\d+$")
 LEADING = {"LINE", "REBUILD", "INSTALL", "REINFORCE", "JTIQ"}
 # A site project must name facility equipment after the facility name.
 SITE_EQUIPMENT = re.compile(
     r"\b(Substations?|Sub|Transformers?|TR\d+|STATCOM|Ring Bus|Breakers?|Capacitors?|Cap Bank|Reactor|"
-    r"Switching Station|Single Point of Failure)\b",
+    r"Switching Station|Single Point of Failure|SS|Swt St|SW STA|DIC|SVC)\b",
     re.I,
 )
-# Names that are not a single facility: programs, areas, taps, structure numbers, multi-line lists.
-NOT_A_FACILITY = re.compile(r"\b(Area|Tap|STR|Str)\b|,|&|\bJ\d{3,}")
+# Names that are not a single facility: programs, areas, multi-line lists. Taps/structures are not endpoints.
+NOT_A_FACILITY = re.compile(r"\bArea\b|,|&")
+NOT_AN_ENDPOINT = re.compile(r"\b(Tap|STR|Str)\b")
 SEPARATOR = re.compile(r"\s+[–—-]\s+|(?<=[A-Za-z])[–—-](?=\s?[A-Z])|\s+to\s+")
 KV = re.compile(r"([\d.]+(?:\s*/\s*[\d.]+)*)\s*-?\s*kV", re.I)
 DESCRIPTION_ENDPOINTS = re.compile(
@@ -43,11 +47,14 @@ DUPLICATE_METERS = 1000.0
 def _facility_name(text: str) -> str | None:
     """Leading run of capitalized name tokens, dropping work descriptors; None if nothing name-like remains."""
     tokens = text.split()
-    while tokens and (tokens[0].upper() in LEADING or tokens[0][0].isdigit()):
+    while tokens and (tokens[0].upper() in LEADING or tokens[0].isdigit() or QUEUE_ID.fullmatch(tokens[0])):
         tokens = tokens[1:]
     name: list[str] = []
     for token in tokens:
         up = token.upper()
+        if token in PARTICLES and name:
+            name.append(token)
+            continue
         if up in DESCRIPTORS or NUMERIC.fullmatch(up) or not (token[0].isupper() or token[0].isdigit()):
             break
         name.append(token)
@@ -56,7 +63,7 @@ def _facility_name(text: str) -> str | None:
 
 def facilities_named(project_name: str, description: str | None) -> dict:
     """Return {'kind': 'site'|'line'|None, 'names': [...], 'from': 'name'|'description', 'reason': str|None}."""
-    name = TRAILING_CODE.sub("", re.sub(r"\([^)]*\)", " ", project_name).strip())
+    name = TRAILING_CODE.sub("", re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", project_name).strip())
     second = re.search(r"\band\s+(\S+)", name)
     if NOT_A_FACILITY.search(name) or (second and second[1][0].isupper() and second[1].upper() not in DESCRIPTORS):
         return {"kind": None, "names": [], "from": "name", "reason": "program_area_or_multi_facility"}
@@ -64,11 +71,11 @@ def facilities_named(project_name: str, description: str | None) -> dict:
     if len(parts) > 2:
         return {"kind": None, "names": [], "from": "name", "reason": "multi_terminal_line"}
     if len(parts) == 2:
-        names = [_facility_name(p) for p in parts]
-        if all(names):
+        names = [None if NOT_AN_ENDPOINT.search(p) else _facility_name(p) for p in parts]
+        if any(names) and names[0] != names[1]:
             return {"kind": "line", "names": names, "from": "name", "reason": None}
         return {"kind": None, "names": [], "from": "name", "reason": "endpoint_not_named"}
-    if SITE_EQUIPMENT.search(name) and (site := _facility_name(name)):
+    if SITE_EQUIPMENT.search(name) and not NOT_AN_ENDPOINT.search(name) and (site := _facility_name(name)):
         return {"kind": "site", "names": [site], "from": "name", "reason": None}
     if description and (m := DESCRIPTION_ENDPOINTS.search(description)):
         return {"kind": "line", "names": [m.group(1), m.group(2)], "from": "description", "reason": None}
@@ -100,8 +107,10 @@ def _meters(a: dict, b: dict) -> float:
     return 2 * 6_371_000 * math.asin(math.sqrt(h))
 
 
-def match_facility(name: str, facilities: list[dict], operator_keys: list[str], kv: set[int]) -> dict:
+def match_facility(name: str | None, facilities: list[dict], operator_keys: list[str], kv: set[int]) -> dict:
     """Exact normalized name, then operator or voltage corroboration, then a single physical site."""
+    if name is None:
+        return {"status": "not_a_facility", "name": None}
     key = facility_key(name)
     hits = [f for f in facilities if facility_key(f["name"]) == key]
     if not hits:
