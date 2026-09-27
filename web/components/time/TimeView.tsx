@@ -112,6 +112,7 @@ export function TimeView({
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState<string | null>(null);
   const [trayOpen, setTrayOpen] = useState(false);
+  const [projectQuery, setProjectQuery] = useState("");
   const [copied, setCopied] = useState(false);
   const [tour, setTour] = useState<number | null>(null);
   const [asOf, setAsOf] = useState<number | null>(null);
@@ -141,6 +142,17 @@ export function TimeView({
   const todayYears = dayOf(analysisDate, epoch) / DAYS_PER_YEAR;
   const hasRanges = [...spans.values()].some((sp) => sp.kind === "range");
   const undated = located.filter((p) => spans.get(p.key)?.kind === "unknown");
+  const sources = useMemo(() => [...new Set(projects.map((p) => p.source_id))].sort(), [projects]);
+  // The drawer lists every current project: the drawn ones and the ones that can't be placed yet.
+  const listed = useMemo(() => {
+    const q = projectQuery.trim().toLowerCase();
+    const hit = (p: TimeProject) => !q || p.name.toLowerCase().includes(q) || p.key.toLowerCase().includes(q);
+    const byName = (a: TimeProject, b: TimeProject) => a.name.localeCompare(b.name);
+    return {
+      drawn: located.filter(hit).sort(byName),
+      unplaced: projects.filter((p) => !p.center && hit(p)).sort(byName),
+    };
+  }, [projects, located, projectQuery]);
   const notLocated = projects.length - located.length;
   const items: TimeItem[] = useMemo(
     () =>
@@ -263,7 +275,12 @@ export function TimeView({
           setReady(true);
         });
       } catch (err) {
-        setFailure(`3D view unavailable (${err instanceof Error ? err.message : "WebGL failed"}). The pair list still works.`);
+        const msg = err instanceof Error ? err.message : "";
+        setFailure(
+          /webgl/i.test(msg) || !msg
+            ? "3D view unavailable: this browser has no WebGL2. The pair list, pair details and All projects still work."
+            : `3D view unavailable (${msg.slice(0, 120)}). The pair list still works.`,
+        );
       }
     })();
     return () => {
@@ -573,6 +590,7 @@ export function TimeView({
         return;
       }
       if (e.key === "Escape") {
+        setTrayOpen(false);
         if (tourTimer.current) window.clearTimeout(tourTimer.current);
         setTour(null);
         setPairId(null);
@@ -724,7 +742,8 @@ export function TimeView({
             ? `Selected project: ${project.name}.`
             : ""}
       </p>
-      <div className={s.labels} aria-hidden>
+      {/* Labels ride on the 3D layer; without it they have nowhere to be. */}
+      <div className={s.labels} aria-hidden hidden={!!failure}>
         {labelSpecs.map((l) => (
           <div
             key={l.id}
@@ -763,6 +782,14 @@ export function TimeView({
             <dd>1 Jan {epoch}</dd>
           </div>
         </dl>
+        <p className={s.provenance}>
+          Analysis date <b>{fmtDate(analysisDate)}</b> · from {sources.map((id, i) => (
+            <span key={id}>
+              {i ? " · " : ""}
+              <code>{id}</code>
+            </span>
+          ))}
+        </p>
         <button type="button" className={s.play} onClick={() => (tour === null ? goStep(0) : stopTour())} disabled={!ready}>
           <span aria-hidden>{tour === null ? "▶" : "■"}</span> {tour === null ? "Play the story" : "Stop the story"}
         </button>
@@ -832,40 +859,89 @@ export function TimeView({
         )}
         <p className={s.footnote}>Priority order as stored: nearer band first, then the smaller exact day gap.</p>
       </nav>
-      <section className={s.tray} aria-label="What is not drawn">
-        <button type="button" onClick={() => setTrayOpen((o) => !o)} aria-expanded={trayOpen}>
-          <span>Not drawn</span>
-          <b>{notLocated}</b> without a located endpoint
+      <section className={s.tray} aria-label="All projects">
+        <button type="button" onClick={() => setTrayOpen((o) => !o)} aria-expanded={trayOpen} aria-controls="all-projects">
+          <span>Projects</span>
+          <b>{located.length}</b> drawn · <b>{notLocated}</b> not located
           {undated.length ? (
             <>
               {" "}
-              · <b>{undated.length}</b> without an exact date
+              · <b>{undated.length}</b> no exact date
             </>
           ) : null}
+          <i aria-hidden>{trayOpen ? "×" : "→"}</i>
         </button>
-        {trayOpen ? (
-          <div className={s.trayBody}>
-            <p>
-              A project needs at least one located endpoint to stand on the map. {notLocated} current projects have none yet,
-              so they are listed on the overlap page but not drawn here.
-            </p>
-            {undated.length ? (
-              <>
-                <p>Located, but the filing gives no single date. They sit on the ground with no height:</p>
-                <ul>
-                  {undated.map((p) => (
-                    <li key={p.key}>
-                      <b>{p.name}</b> · “{p.in_service.raw ?? "no date"}”
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : null}
-          </div>
-        ) : null}
       </section>
       </div>
 
+
+      {trayOpen ? (
+        <aside className={s.drawer} id="all-projects" aria-label="All projects">
+          <header className={s.drawerHead}>
+            <h2>All projects</h2>
+            <button type="button" className={s.close} onClick={() => setTrayOpen(false)} aria-label="Close all projects">
+              ×
+            </button>
+          </header>
+          <p className={s.drawerNote}>
+            Every current project in this data. Drawn projects stand on the map; the others have no located endpoint yet, so
+            they can&apos;t be placed or matched.
+          </p>
+          <input
+            type="search"
+            className={s.drawerSearch}
+            placeholder="Filter by name or ID"
+            value={projectQuery}
+            onChange={(e) => setProjectQuery(e.target.value)}
+            aria-label="Filter projects by name or ID"
+          />
+          <div className={s.drawerBody}>
+            <h3>
+              Drawn <span>{listed.drawn.length}</span>
+            </h3>
+            <ul>
+              {listed.drawn.map((p) => (
+                <li key={p.key}>
+                  <button
+                    type="button"
+                    aria-pressed={p.key === projectKey}
+                    onClick={() => {
+                      setPairId(null);
+                      setProjectKey(p.key);
+                      mapRef.current?.easeTo({
+                        center: [p.center!.lon, p.center!.lat],
+                        zoom: Math.max(mapRef.current.getZoom(), 7.5),
+                        duration: reduced.current ? 0 : 900,
+                      });
+                    }}
+                  >
+                    <i style={{ background: COLOR[p.utility] }} />
+                    <b>{p.name}</b>
+                    <span>
+                      {describe(spans.get(p.key) ?? { kind: "unknown" }, p.in_service.raw)} · <code>{p.key}</code>
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <h3>
+              Not located <span>{listed.unplaced.length}</span>
+            </h3>
+            <ul>
+              {listed.unplaced.map((p) => (
+                <li key={p.key} className={s.unplaced}>
+                  <i style={{ background: COLOR[p.utility] }} />
+                  <b>{p.name}</b>
+                  <span>
+                    {p.in_service.raw ? `filed “${p.in_service.raw}”` : "no date filed"} · <code>{p.key}</code> ·{" "}
+                    <em className="unknown">no located endpoint</em>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+      ) : null}
 
       {pair && pa && pb ? (
         <aside className={s.detail} aria-label="Selected pair" key={pair.id} ref={detailRef}>
