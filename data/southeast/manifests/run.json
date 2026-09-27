@@ -22,10 +22,10 @@
   "deadline": null,
   "budget": null,
   "authority": "specs/decisions/C24-southeast-launch.md",
-  "phase": "Florida publication pilot validation",
-  "publication_gate_passed": false,
+  "phase": "Florida live publication acceptance and PSC provider-source audit",
+  "publication_gate_passed": true,
   "new_confirmed_points": 1,
-  "new_activated_projects": 0,
+  "new_activated_projects": 17,
   "request_limits": {
     "timeout_seconds": 45,
     "maximum_bytes_per_response": 15000000,
@@ -34,6 +34,17 @@
   },
   "stop_resume": "Honor origin/main STOP and main-red. Checkpoint per source/state; resume until full F39 acceptance. No completion marker for research.",
   "raw_cache": "/private/tmp/gridbridge-southeast-sources",
-  "next": "Complete release gates, merge fixed-path release, verify Action/Atlas RO/export/maps. Continue Florida provider coverage, Georgia, and all remaining Southeast states.",
-  "publication_contract": "C27 accepted; F30 assembly hook merged in 5a5c822. No live activation claimed by this manifest."
+  "next": "Expand Florida PSC provider-source audit, assess prior vintages and exact locations, then Georgia and remaining states. All12states incomplete.",
+  "publication_contract": "C27 accepted; F30 assembly hook merged in 5a5c822. No live activation claimed by this manifest.",
+  "publication_status": "Florida DEP pilot locally verified: PR161, successful Action, exact Atlas source/project comparison, JSON export plus added GeoJSON validated, and visible Hopkins point/evidence on /explore and /time. No production-host claim.",
+  "acquisition_overrides": [
+    {
+      "scope": "PSC FPL2026 and2025 exact links from pinned public index only",
+      "maximum_bytes_per_response": 65000000,
+      "timeout_seconds": 90,
+      "retries": 1,
+      "maximum_requests": 4,
+      "decision": "specs/decisions/F39-psc-large-records.md"
+    }
+  ]
 }

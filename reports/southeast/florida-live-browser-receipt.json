@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-09-27T03:52:05.407689+00:00",
+  "application": "http://localhost:3101",
+  "scope": "Local app reading real Atlas; not production-host verification",
+  "dataset": "748f56a34073c417ce1662431c0d12ca72489eb3",
+  "project_id": "southeast:fl-dep:ta81-01",
+  "explorer": {
+    "state": "12",
+    "records": 17,
+    "points": 1,
+    "unlocated": 16,
+    "point_visually_observed": true,
+    "selected_details": true,
+    "unknown_status_preserved": true,
+    "partial_endpoint_disclosed": true
+  },
+  "main_time_map": {
+    "drawn": 425,
+    "confirmed_national": 346,
+    "legacy_drawn": 79,
+    "hopkins_selectable": true,
+    "hopkins_point_visually_observed": true,
+    "unknown_milestone_visible": true,
+    "partial_endpoint_disclosed": true,
+    "dataset_visible": true,
+    "independent_review_expanded": true,
+    "review_facts_sha256": "0deaeccf5914240b7a2ad1d1f8c3ba71c35f09c5a100cc182965ea935463ddd2"
+  },
+  "screenshots": {
+    "florida-explorer.png": "5aa5c2bfd3c4e1d86ebe229b4c8bf1d98df333d6f038dace4767888ad078f1dd",
+    "florida-main-map.png": "fe046e3d4d6a47b5202bc2d0a46f5c3d53e68aa8bb754f30fe2d0dd9f3e06968"
+  },
+  "limits": [
+    "One partial facility-reference location only; no statewide completion.",
+    "Explorer legend lists only planned, under construction and unconfirmed symbols; selected details correctly disclose confirmed/unknown status.",
+    "Main map idle presentation resumed during inspection; project was reselected and exact review recorded."
+  ]
+}

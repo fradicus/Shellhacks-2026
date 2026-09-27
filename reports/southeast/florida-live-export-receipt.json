@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-27T03:54:23.815971+00:00",
+  "application": "http://localhost:3101",
+  "scope": "Local app reading Atlas; no production-host claim",
+  "dataset": "748f56a34073c417ce1662431c0d12ca72489eb3",
+  "mode": "atlas",
+  "total": 17,
+  "located": 1,
+  "unlocated": 16,
+  "events": 17,
+  "all_project_fields_match_reviewed_assembly": true,
+  "additional_atlas_geo_matches_center": true,
+  "export_sha256": "84bb2328e9e1fda192aac32b14bcdf6d21ad2ebae51eeb2962f3cbb279eca987",
+  "export_hash_encoding": "UTF8 Python json.dumps(parsed_export,sort_keys=True), default separators and ensure_ascii=True, plus newline"
+}

@@ -1,0 +1,126 @@
+{
+  "publishable": false,
+  "scope": "Five proposed bulk-line component rows; not five newly accepted canonical projects",
+  "rows": [
+    {
+      "row": 1,
+      "owner_raw": "FPL",
+      "terminal_to": "Sweatt",
+      "terminal_from": "Whidden",
+      "line_length_circuit_miles": 79,
+      "planned_commercial_in_service_raw": "June/2026",
+      "precision": "month",
+      "nominal_voltage_kv": 230,
+      "capacity_mva": 1195,
+      "source_project_group": "Whidden to Sweatt",
+      "relationship": "existing Sweatt-Whidden identity requires reconciliation",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/Florida%20Power%20and%20Light%20Company.pdf",
+        "artifact_sha256": "4a32eddda8018748bbb0a6696caa31432d0975506628117a0a3cf1834601540b",
+        "retrieved_at": "2026-09-27T03:53:57.482314+00:00",
+        "pdf_page": 110,
+        "printed_page": "96",
+        "locator": "Table III.E.1 row 1"
+      }
+    },
+    {
+      "row": 2,
+      "owner_raw": "FPL",
+      "terminal_to": "Oasis",
+      "terminal_from": "Andytown",
+      "line_length_circuit_miles": 30,
+      "planned_commercial_in_service_raw": "December/2031",
+      "precision": "month",
+      "nominal_voltage_kv": 500,
+      "capacity_mva": 3464,
+      "source_project_group": "Andytown-Oasis Transmission Lines Project",
+      "relationship": "one of four related lines explicitly grouped in source footnote2",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/Florida%20Power%20and%20Light%20Company.pdf",
+        "artifact_sha256": "4a32eddda8018748bbb0a6696caa31432d0975506628117a0a3cf1834601540b",
+        "retrieved_at": "2026-09-27T03:53:57.482314+00:00",
+        "pdf_page": 110,
+        "printed_page": "96",
+        "locator": "Table III.E.1 row 2"
+      }
+    },
+    {
+      "row": 3,
+      "owner_raw": "FPL",
+      "terminal_to": "Oasis",
+      "terminal_from": "Quarry",
+      "line_length_circuit_miles": 15,
+      "planned_commercial_in_service_raw": "December/2033",
+      "precision": "month",
+      "nominal_voltage_kv": 500,
+      "capacity_mva": 3464,
+      "source_project_group": "Andytown-Oasis Transmission Lines Project",
+      "relationship": "one of four related lines explicitly grouped in source footnote2",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/Florida%20Power%20and%20Light%20Company.pdf",
+        "artifact_sha256": "4a32eddda8018748bbb0a6696caa31432d0975506628117a0a3cf1834601540b",
+        "retrieved_at": "2026-09-27T03:53:57.482314+00:00",
+        "pdf_page": 110,
+        "printed_page": "96",
+        "locator": "Table III.E.1 row 3"
+      }
+    },
+    {
+      "row": 4,
+      "owner_raw": "FPL",
+      "terminal_to": "Quarry",
+      "terminal_from": "Oasis",
+      "line_length_circuit_miles": 15,
+      "planned_commercial_in_service_raw": "December/2033",
+      "precision": "month",
+      "nominal_voltage_kv": 230,
+      "capacity_mva": 1195,
+      "source_project_group": "Andytown-Oasis Transmission Lines Project",
+      "relationship": "one of four related lines explicitly grouped in source footnote2",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/Florida%20Power%20and%20Light%20Company.pdf",
+        "artifact_sha256": "4a32eddda8018748bbb0a6696caa31432d0975506628117a0a3cf1834601540b",
+        "retrieved_at": "2026-09-27T03:53:57.482314+00:00",
+        "pdf_page": 110,
+        "printed_page": "96",
+        "locator": "Table III.E.1 row 4"
+      }
+    },
+    {
+      "row": 5,
+      "owner_raw": "FPL",
+      "terminal_to": "Levee",
+      "terminal_from": "Oasis",
+      "line_length_circuit_miles": 15,
+      "planned_commercial_in_service_raw": "December/2033",
+      "precision": "month",
+      "nominal_voltage_kv": 230,
+      "capacity_mva": 1195,
+      "source_project_group": "Andytown-Oasis Transmission Lines Project",
+      "relationship": "one of four related lines explicitly grouped in source footnote2",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/Florida%20Power%20and%20Light%20Company.pdf",
+        "artifact_sha256": "4a32eddda8018748bbb0a6696caa31432d0975506628117a0a3cf1834601540b",
+        "retrieved_at": "2026-09-27T03:53:57.482314+00:00",
+        "pdf_page": 110,
+        "printed_page": "96",
+        "locator": "Table III.E.1 row 5"
+      }
+    }
+  ]
+}

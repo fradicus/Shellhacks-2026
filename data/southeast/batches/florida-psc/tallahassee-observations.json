@@ -1,0 +1,68 @@
+{
+  "publishable": false,
+  "scope": "Two rows in Table4.2 of April2026 City of Tallahassee plan; no statewide or provider-wide completeness claim",
+  "projects": [
+    {
+      "project_name_raw": "Line 20A",
+      "project_type_raw": "Reconductor / Rebuild",
+      "from_bus": {
+        "name": "Sub 7",
+        "number": "7507"
+      },
+      "to_bus": {
+        "name": "Sub 16",
+        "number": "7516"
+      },
+      "expected_in_service": {
+        "raw": "12/2030",
+        "value": "2030-12",
+        "precision": "month"
+      },
+      "voltage_kv": 115,
+      "line_length_miles_raw": "3.03",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/City%20of%20Tallahassee.pdf",
+        "artifact_sha256": "48b0a56a6f562ef335068c03980494b5336d212fcad07a151a3e010710068c05",
+        "retrieved_at": "2026-09-27T03:45:06.958139+00:00",
+        "publication_raw": "April 2026",
+        "pdf_page": 49,
+        "printed_page": "50",
+        "locator": "Table 4.2: Line 20A"
+      }
+    },
+    {
+      "project_name_raw": "Line 20B",
+      "project_type_raw": "Reconductor / Rebuild",
+      "from_bus": {
+        "name": "Sub 16",
+        "number": "7516"
+      },
+      "to_bus": {
+        "name": "Bradfordville W (DEF)",
+        "number": "3105"
+      },
+      "expected_in_service": {
+        "raw": "12/2030",
+        "value": "2030-12",
+        "precision": "month"
+      },
+      "voltage_kv": 115,
+      "line_length_miles_raw": "3.08",
+      "center": null,
+      "current_status": null,
+      "review_status": "producer-extracted; independent review pending",
+      "source": {
+        "url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2026/City%20of%20Tallahassee.pdf",
+        "artifact_sha256": "48b0a56a6f562ef335068c03980494b5336d212fcad07a151a3e010710068c05",
+        "retrieved_at": "2026-09-27T03:45:06.958139+00:00",
+        "publication_raw": "April 2026",
+        "pdf_page": 49,
+        "printed_page": "50",
+        "locator": "Table 4.2: Line 20B"
+      }
+    }
+  ]
+}
