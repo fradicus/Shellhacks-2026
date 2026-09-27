@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46]
+  claude-local: [F00, F05, F11, F14, F16, F21, F39, F40, F42, F44, F45, F46, F47]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F41, F19, F37]
 frozen_paths:
   - schemas/
@@ -300,3 +300,13 @@ The user told Claude local to make the Southeast dense with present and past poi
 [C45](decisions/C45-southeast-density.md) moves [F39](features/F39-southeast/spec.md) to claude-local and applies
 C33's labeled tiers (with C38's operator guard) to new Southeast batches through one fixed dense release. The
 strict C27 release and its reviewed records are unchanged.
+
+## Launched follow-on: SPP South (Oklahoma, eastern New Mexico, non-ERCOT Texas)
+
+The user told Claude local to fill sparse areas of the map, starting with Oklahoma, as a continuous goal.
+[C47](decisions/C47-spp-south.md) assigns [F47](features/F47-spp-south/spec.md): the rows of SPP's public project
+tracking workbook that list only OK, NM or TX, none of which any rollout publishes (C33 tiers plus C38's operator guard).
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F47 | SPP South project coverage (OK, NM, non-ERCOT TX) with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
