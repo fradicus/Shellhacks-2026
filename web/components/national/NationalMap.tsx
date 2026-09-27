@@ -3,7 +3,7 @@
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { GeoJSONSource, Map as MlMap } from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
-import type { GeoBounds, NationalProject } from "@/lib/national/types";
+import type { GeoBounds, NationalProjectSummary } from "@/lib/national/types";
 import { displayPoints } from "@/lib/national/locations";
 import s from "./national.module.css";
 
@@ -25,7 +25,7 @@ export function NationalMap({
   emptyMessage,
   onSelect,
 }: {
-  projects: NationalProject[];
+  projects: NationalProjectSummary[];
   selectedId: string | null;
   focusBounds: GeoBounds | null;
   emptyMessage?: string;

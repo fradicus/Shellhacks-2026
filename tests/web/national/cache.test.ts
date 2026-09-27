@@ -34,7 +34,11 @@ const db = {
     }
     return {
       async findOne(filter: unknown) {
-        if (name !== "meta") return read(filter, false);
+        if (name === "national_runs") return read(filter, false);
+        if (name !== "meta") {
+          const rows = await read(filter, true);
+          return rows?.find((row) => row.id === (filter as { id: string }).id) ?? null;
+        }
         pointers++;
         if (pointerFails) throw new Error("test-only pointer failure");
         return active ? { dataset: active } : null;
@@ -58,13 +62,14 @@ registerHooks({ resolve(specifier, context, next) {
   if (specifier === "@/lib/server/db") return {
     url: "data:text/javascript,export async function getDb(){return globalThis.__nationalCacheTestDb}", shortCircuit: true,
   };
+  if (specifier.startsWith("@/")) return next(new URL(`${specifier.slice(2)}.ts`, root).href, context);
   try { return next(specifier, context); }
   catch (error) {
     if (specifier.startsWith(".") && !/\.[a-z]+$/i.test(specifier)) return next(`${specifier}.ts`, context);
     throw error;
   }
 } });
-const { loadNationalExplorer } = await import("../../../web/lib/national/server.ts");
+const { loadNationalExplorer, loadNationalSummaries } = await import("../../../web/lib/national/server.ts");
 const map = () => loadNationalExplorer({ page: 1, limit: 1 });
 const nextFill = async () => {
   const before = reads;
@@ -157,6 +162,49 @@ test("map cache preserves results, dataset freshness, isolation and retry", { ti
   assert.equal(snapshot.mode, "snapshot");
   assert.equal(snapshot.available, true);
   assert.equal(reads, afterNew, "snapshot mode bypasses Atlas/cache");
+  delete process.env.NATIONAL_DATA_MODE;
+  delete process.env.VERCEL_ENV;
+});
+
+
+test("compact loader and detail API retain full evidence without mixing datasets", async () => {
+  const { GET } = await import("../../../web/app/api/national/project/route.ts");
+  active = "test:detail";
+  const full = await map();
+  const original = JSON.stringify(full);
+  const summary = await loadNationalSummaries({ page: 1, limit: 1 });
+  assert.equal("raw" in summary.mapProjects[0].evidence, false);
+  assert.equal(JSON.stringify(full), original, "projection must not mutate the cached record");
+  const get = (query: string) => GET(new Request(`https://example.org/api/national/project?${query}`));
+  const query = new URLSearchParams({ id: "test:detail:project", dataset: active }).toString();
+  const response = await get(query);
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("Cache-Control"), "no-store");
+  const detail = await response.json();
+  assert.deepEqual(detail.project, full.mapProjects[0]);
+  assert.equal(detail.source._id, "test:source");
+  assert.equal((await get("id=missing&dataset=test:detail")).status, 404);
+  const before = pointers;
+  for (const bad of ["", "id=x", "dataset=test:detail", query + "&id=other", query + "&unknown=x",
+    "id=%00&dataset=test:detail", "id=x&dataset=%24bad", `id=${"x".repeat(513)}&dataset=test:detail`]) {
+    assert.equal((await get(bad)).status, 400);
+  }
+  assert.equal(pointers, before, "invalid parameters never query the database");
+  active = "test:new-publication";
+  assert.equal((await get(query)).status, 409);
+  active = "test:detail";
+  pointerFails = true;
+  assert.equal((await get(query)).status, 503);
+  pointerFails = false;
+  invalidRecord = true;
+  assert.equal((await get(query)).status, 503);
+  invalidRecord = false;
+  process.env.NATIONAL_DATA_MODE = "snapshot";
+  process.env.VERCEL_ENV = "production";
+  assert.equal((await get(query)).status, 503);
+  process.env.VERCEL_ENV = "preview";
+  assert.equal((await get(query)).status, 409);
+  assert.equal((await get("id=missing&dataset=committed-snapshot")).status, 404);
   delete process.env.NATIONAL_DATA_MODE;
   delete process.env.VERCEL_ENV;
 });
