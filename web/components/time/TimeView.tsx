@@ -64,6 +64,8 @@ const miles = (d: number) => `${d.toFixed(2)} mi`;
 /** F37: History opens around this project's stored center, as a research aid. */
 const pastWork = (key: string) => `/history?origin=${encodeURIComponent(key)}`;
 const SWEEP_MS = 4200;
+/** Overview tilt: enough to read height, flat enough that pillars don't wall off the ones behind them. */
+const OVERVIEW_PITCH = 50;
 // ponytail: a coordinate box, not state lookups; the only located places outside it are Alaska and Hawaii (C49).
 const inLower48 = (c: { lat: number; lon: number }) => c.lat > 24 && c.lat < 50 && c.lon > -125 && c.lon < -66;
 const BOOTH_IDLE_MS = 25_000;
@@ -416,7 +418,7 @@ export function TimeView({
     if (!wanted) {
       // The timelapse: pillars rise in the order they were filed to enter service, while the camera tilts.
       layer.sweepIn(reduced.current ? 0 : SWEEP_MS, 700);
-      map.easeTo({ pitch: 58, bearing: -16, duration: ms, easing: (t) => 1 - (1 - t) ** 3 });
+      map.easeTo({ pitch: OVERVIEW_PITCH, bearing: -16, duration: ms, easing: (t) => 1 - (1 - t) ** 3 });
       return;
     }
     const id = window.setTimeout(() => {
@@ -474,8 +476,9 @@ export function TimeView({
       })),
       dimension: dimension && pair ? { a: pair.a, b: pair.b } : null,
       ruler: rulerAt,
+      quiet: !scope,
     });
-  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt, candidateMode]);
+  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt, candidateMode, scope]);
 
   // Pillar height follows the zoom (yearPxAt); a selected pair's own top sets the cap so its day gap fills the room.
   useEffect(() => {
@@ -653,14 +656,14 @@ export function TimeView({
       ],
       { padding: overviewPadding(container.current), bearing: -16 },
     );
-    if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : 58, bearing: -16, duration: reduced.current ? 0 : 1600 });
+    if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : OVERVIEW_PITCH, bearing: -16, duration: reduced.current ? 0 : 1600 });
   }, [bbox, flat]);
 
   const toggleFlat = (next: boolean) => {
     setFlat(next);
     const ms = reduced.current ? 0 : 1100;
     layerRef.current?.setHeight(next ? 0 : 1, ms);
-    mapRef.current?.easeTo({ pitch: next ? 0 : pair ? 66 : 58, duration: ms });
+    mapRef.current?.easeTo({ pitch: next ? 0 : pair ? 66 : OVERVIEW_PITCH, duration: ms });
   };
 
   // Arrival (spec 18): fly to the scope and let it rise in date order. Clearing is handled by Overview.
@@ -675,7 +678,7 @@ export function TimeView({
       ],
       { padding: overviewPadding(container.current), bearing: -16, maxZoom: 9.5 },
     );
-    if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : 58, bearing: -16, duration: reduced.current ? 0 : 1600, essential: true });
+    if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : OVERVIEW_PITCH, bearing: -16, duration: reduced.current ? 0 : 1600, essential: true });
     layerRef.current?.sweepIn(reduced.current ? 0 : 1600, 250);
     // Only a new scope moves the camera; flat and the box follow from it.
     // eslint-disable-next-line react-hooks/exhaustive-deps
