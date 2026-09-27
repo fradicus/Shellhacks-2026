@@ -239,6 +239,8 @@ This does not launch F37 contract/award discovery or change either page's eviden
 [C35](decisions/C35-retire-project-map.md) retires the separate Project map as an active product
 requirement. Issue #193 tracks navigation removal, `/map` redirect and unused-component cleanup;
 existing F05 landing-page claims retain ownership. Do not rebuild or expand the retired map.
-The user explicitly assigns the bounded Texas tentative-point hookup to the F41/F31 Codex session,
-after the active issue #190 F19 cleanup releases its claim. No concurrent F19 writers are authorized.
-County-only anchors are excluded from `/time`; tentative facility centers remain eligible for display.
+The user assigned the Texas frontend follow-up to the F41/F31 Codex session. Shared F31 support
+merged in #189; the existing F19 owner delivered the compatible tentative-point renderer in #196.
+The Texas session verified their combined result instead of opening a duplicate F19 implementation.
+Issue #190 retains its separate cleanup claim. County-only anchors are excluded from `/time`;
+tentative facility centers remain eligible for display.

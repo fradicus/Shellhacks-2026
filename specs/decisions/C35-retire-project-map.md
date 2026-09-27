@@ -21,8 +21,9 @@ The shared navigation owner removes the frozen nav entry in a contract PR; F05 h
 unused components after active landing claims finish. Other owners repair their entry points in
 separate PRs. No reassignment or concurrent edits to active landing work are implied.
 
-The F41/F31 Codex session owns the bounded tentative-point F19 follow-up once issue #190's active
-cleanup releases F19. Reuse its resulting helpers. No second writer may edit F19 while reserved.
+The F41/F31 Codex session delivered #189 and verified the existing F19 owner’s compatible #196,
+which merged first with the cleanup owner’s agreement. No duplicate F19 implementation was opened.
+Issue #190 retains its separate cleanup claim; preserve the merged tentative-point behavior.
 
 ## Acceptance
 Required repository checks; no visible Project map entry; `/map` redirects to `/time`; Home, 3D
