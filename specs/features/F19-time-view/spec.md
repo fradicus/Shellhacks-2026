@@ -148,3 +148,8 @@ meaning one thing only: the filed in-service date of a project you are looking a
   GPU path to stay cheap. Revisit only if a scoped view still feels crowded.
 - Rebuilding GPU buffers on every hover change is fine at 1.4k projects; move emphasis to a shader attribute when
   the drawn count passes ~10k.
+
+## Compact initial payload — 2026-09-27
+
+Use summaries for initial rendering and load dataset-pinned evidence on selection.
+See [F19 compact payload](../../decisions/F19-compact-payload.md) for acceptance.
