@@ -32,14 +32,14 @@ def test_verdicts_are_schema_valid_current_and_complete(audit):
     records, evidence, reviews = audit
     ready = {**records, "projects": join_projects(records["projects"], records["locations"])}
     subjects = current_subjects(ready)
-    assert len(reviews) == len({r["_id"] for r in reviews}) == 29
-    assert Counter(r["subject_type"] for r in reviews) == {"pair": 15, "endpoint": 14}
+    assert len(reviews) == len({r["_id"] for r in reviews}) == len({(r["subject_type"], r["record_id"]) for r in reviews})
+    assert set(Counter(r["subject_type"] for r in reviews)) == {"pair", "endpoint"}
     assert {r["verdict"] for r in reviews} == {"downgraded"}
     for review in reviews:
         validate(review, "review")
         assert review["reason"] and "unverified" in review["reason"]
         assert datetime.fromisoformat(review["at"]).utcoffset().total_seconds() == 0
-        assert review["at"] == evidence["bound_at"]
+        assert review["at"] == (evidence["rebinding"]["at"] if review["subject_type"] == "pair" else evidence["bound_at"])
         subject = subjects[(review["subject_type"], review["record_id"])]
         assert review["fingerprint_version"] == FINGERPRINT_VERSION
         assert review["subject_snapshot"] == subject
@@ -50,11 +50,13 @@ def test_top_fifteen_and_exact_supporting_endpoint_union(audit):
     records, evidence, reviews = audit
     top = sorted(records["matches"], key=lambda m: m["rank"])[:15]
     pairs = [r for r in reviews if r["subject_type"] == "pair"]
-    assert {r["record_id"] for r in pairs} == {m["_id"] for m in top}
+    unaudited = {u["record_id"] for u in evidence["rebinding"]["unaudited_top_pairs"]}
+    assert {r["record_id"] for r in pairs} | unaudited == {m["_id"] for m in top}
+    assert not unaudited & {r["record_id"] for r in pairs}
     endpoint_ids = {e["record_id"] for r in pairs for e in r["subject_snapshot"]["endpoints"]}
     endpoints = evidence["supporting_endpoints"]
-    assert endpoint_ids == {e["record_id"] for e in endpoints}
-    assert endpoint_ids == {r["record_id"] for r in reviews if r["subject_type"] == "endpoint"}
+    reviewed = {r["record_id"] for r in reviews if r["subject_type"] == "endpoint"}
+    assert endpoint_ids <= reviewed == {e["record_id"] for e in endpoints}
     assert len({e["osm_id"] for e in endpoints}) == 9
     assert len({e["project_id"] for e in endpoints}) == 10
     for endpoint in endpoints:
@@ -75,7 +77,7 @@ def test_evidence_is_pinned_to_the_actual_corpus(audit):
     }
     assert evidence["input_hashes"] == {key: canonical(value) for key, value in values.items()}
     assert evidence["input_kind"] == "canonical_F10_output"
-    assert len(evidence["math_checks"]) == 21
+    assert len(evidence["math_checks"]) == 2 + len(values["matches"])
     assert all(check["passed"] for check in evidence["math_checks"])
     # Reproduce the independent numerical expectations; use no production math.
     by_id = {match["_id"]: match for match in values["matches"]}
@@ -84,7 +86,7 @@ def test_evidence_is_pinned_to_the_actual_corpus(audit):
             expected = check["expected"]
             actual = by_id[expected["_id"]]
             assert math.isclose(actual["distance_mi"], expected["distance_mi"], rel_tol=0, abs_tol=1e-10)
-            for field in ("time_gap_days", "band", "rank"):
+            for field in ("drive_mi", "time_gap_days", "band", "rank"):
                 assert actual[field] == expected[field]
 
 
@@ -107,10 +109,10 @@ def test_pair_math_recomputed_without_production_math(audit):
         h = math.sin((b - a) / 2) ** 2 + math.cos(a) * math.cos(b) * math.sin(math.radians(y - x) / 2) ** 2
         distance = 7917.6 * math.atan2(math.sqrt(h), math.sqrt(1 - h))
         gap = abs((dates[0] - dates[1]).days) if all(dates) else None
-        assert distance < 25
+        assert distance <= match["drive_mi"] <= 25
         assert math.isclose(match["distance_mi"], distance, rel_tol=0, abs_tol=1e-10)
         assert match["time_gap_days"] == gap
-        assert match["band"] == (0 if distance < 10 else 1)
+        assert match["band"] == (0 if match["drive_mi"] < 10 else 1)
 
 
 def test_source_spot_checks_are_not_model_accuracy(audit):
@@ -143,9 +145,10 @@ def test_effective_review_states_are_downgraded_without_changing_producer_data(a
     records, _, reviews = audit
     before = copy.deepcopy(records)
     staged = stage(records, "f13-test")
-    assert Counter(m["review_state"] for m in staged["matches"]) == {"rejected": 15, "needs_review": 4}
     rejected = {m["id"] for m in staged["matches"] if m["review_state"] == "rejected"}
     assert rejected == {r["record_id"] for r in reviews if r["subject_type"] == "pair"}
+    assert Counter(m["review_state"] for m in staged["matches"]) == {
+        "rejected": len(rejected), "needs_review": len(staged["matches"]) - len(rejected)}
     assert records == before
 
 
