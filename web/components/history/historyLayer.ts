@@ -8,10 +8,10 @@ import { LineSegments2 } from "three/examples/jsm/lines/LineSegments2.js";
 import { LineSegmentsGeometry } from "three/examples/jsm/lines/LineSegmentsGeometry.js";
 import type { CustomLayerInterface, CustomRenderMethodInput, Map as MlMap } from "maplibre-gl";
 import { metersPerPixel } from "@/components/time/timeScale";
+import { hex, mul, ease, points, fillPoints, lines, fillLines, project, createRenderer, disposeScene, type RGB, type Seg } from "@/components/time/scenePrimitives";
 import type { Meaning } from "@/lib/history/events";
 
 type Ml = typeof import("maplibre-gl");
-type RGB = [number, number, number];
 type V3 = [number, number, number];
 
 export type Emphasis = "normal" | "dim" | "hot" | "sel";
@@ -40,12 +40,6 @@ export interface LabelSpec {
 }
 export type Projected = Map<string, { x: number; y: number; on: boolean }>;
 
-const hex = (h: string): RGB => {
-  const n = parseInt(h.slice(1), 16);
-  return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
-};
-const mul = (c: RGB, k: number): RGB => [c[0] * k, c[1] * k, c[2] * k];
-const ease = (t: number) => 1 - (1 - t) ** 3;
 const INK: RGB = hex("#f4efe6");
 const AMBER: RGB = hex("#f1c27d");
 const SKY: RGB = hex("#bfe9ff");
@@ -121,66 +115,6 @@ const PLANE_FS = /* glsl */ `
   }`;
 
 type Pt = { p: V3; c: RGB; size: number; shape: number; bright: number };
-type Seg = { a: V3; b: V3; ca: RGB; cb: RGB };
-
-function points() {
-  const mat = new THREE.ShaderMaterial({
-    vertexShader: POINT_VS,
-    fragmentShader: POINT_FS,
-    uniforms: { uDpr: { value: 1 }, uW0: { value: 0 } },
-    transparent: true,
-    depthTest: false,
-    depthWrite: false,
-    blending: THREE.AdditiveBlending,
-  });
-  const pts = new THREE.Points(new THREE.BufferGeometry(), mat);
-  pts.frustumCulled = false;
-  return pts;
-}
-
-function fillPoints(pts: THREE.Points<THREE.BufferGeometry, THREE.ShaderMaterial>, rows: Pt[]) {
-  const g = new THREE.BufferGeometry();
-  g.setAttribute("position", new THREE.Float32BufferAttribute(rows.flatMap((r) => r.p), 3));
-  g.setAttribute("tint", new THREE.Float32BufferAttribute(rows.flatMap((r) => r.c), 3));
-  g.setAttribute("size", new THREE.Float32BufferAttribute(rows.map((r) => r.size), 1));
-  g.setAttribute("shape", new THREE.Float32BufferAttribute(rows.map((r) => r.shape), 1));
-  g.setAttribute("bright", new THREE.Float32BufferAttribute(rows.map((r) => r.bright), 1));
-  pts.geometry.dispose();
-  pts.geometry = g;
-  pts.visible = rows.length > 0;
-}
-
-function lines(width: number, dashed = false) {
-  const mat = new LineMaterial({
-    vertexColors: true,
-    linewidth: width,
-    transparent: true,
-    depthTest: false,
-    depthWrite: false,
-    dashed,
-    dashSize: 5,
-    gapSize: 5,
-    blending: THREE.AdditiveBlending,
-  });
-  const mesh = new LineSegments2(new LineSegmentsGeometry(), mat);
-  mesh.frustumCulled = false;
-  return { mesh, width, dashed };
-}
-
-function fillLines(l: ReturnType<typeof lines>, segs: Seg[]) {
-  if (!segs.length) {
-    l.mesh.visible = false;
-    return;
-  }
-  const g = new LineSegmentsGeometry();
-  g.setPositions(segs.flatMap((s) => [...s.a, ...s.b]));
-  g.setColors(segs.flatMap((s) => [...s.ca, ...s.cb]));
-  l.mesh.geometry.dispose();
-  l.mesh.geometry = g;
-  if (l.dashed) l.mesh.computeLineDistances();
-  l.mesh.visible = true;
-}
-
 /** A unit circle on the ground: the 25-mile research radius around a /time origin. */
 function circle() {
   const pos: number[] = [];
@@ -233,20 +167,20 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
   let originAt: { x: number; y: number; r: number } | null = null;
   let hits: { key: string; x0: number; y0: number; x1: number; y1: number }[] = [];
 
-  const beamsLit = lines(1.5);
-  const beamsGhost = lines(1, true);
-  const beamsSel = lines(3);
-  const threads = lines(3.4);
-  const spans = lines(6);
-  const ruler = lines(1.2);
-  const ghostPillar = lines(2, true);
+  const beamsLit = lines(1.5, { dashSize: 5 });
+  const beamsGhost = lines(1, { dashed: true, dashSize: 5 });
+  const beamsSel = lines(3, { dashSize: 5 });
+  const threads = lines(3.4, { dashSize: 5 });
+  const spans = lines(6, { dashSize: 5 });
+  const ruler = lines(1.2, { dashSize: 5 });
+  const ghostPillar = lines(2, { dashed: true, dashSize: 5 });
   const radius = circle();
-  const anchors = points();
-  const halos = points();
-  const glyphsBelow = points();
-  const glyphsAbove = points();
-  const marks = points();
-  const rippleDots = points();
+  const anchors = points(POINT_VS, POINT_FS);
+  const halos = points(POINT_VS, POINT_FS);
+  const glyphsBelow = points(POINT_VS, POINT_FS);
+  const glyphsAbove = points(POINT_VS, POINT_FS);
+  const marks = points(POINT_VS, POINT_FS);
+  const rippleDots = points(POINT_VS, POINT_FS);
   const sheet = new THREE.Mesh(
     new THREE.PlaneGeometry(1, 1),
     new THREE.ShaderMaterial({
@@ -380,32 +314,16 @@ export function createHistoryLayer(ml: Ml, opts: { yearPx: number; onFrame: (p: 
     );
   }
 
-  function project(m: THREE.Matrix4, x: number, y: number, z: number, w: number, h: number) {
-    const v = new THREE.Vector4(x, y, z, 1).applyMatrix4(m);
-    if (v.w <= 0) return { x: 0, y: 0, on: false };
-    const sx = ((v.x / v.w + 1) / 2) * w;
-    const sy = ((1 - v.y / v.w) / 2) * h;
-    return { x: sx, y: sy, on: sx > -40 && sy > -40 && sx < w + 40 && sy < h + 40 };
-  }
-
   const layer: CustomLayerInterface = {
     id: "gridbridge-history",
     type: "custom",
     renderingMode: "3d",
     onAdd(m, gl) {
       map = m;
-      THREE.ColorManagement.enabled = false;
-      renderer = new THREE.WebGLRenderer({ canvas: m.getCanvas(), context: gl, antialias: true });
-      renderer.autoClear = false;
-      renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+      renderer = createRenderer(m, gl);
     },
     onRemove() {
-      scene.traverse((o) => {
-        const mesh = o as THREE.Mesh;
-        mesh.geometry?.dispose();
-        (mesh.material as THREE.Material | undefined)?.dispose();
-      });
-      renderer?.dispose();
+      disposeScene(scene, renderer);
       renderer = null;
       map = null;
     },

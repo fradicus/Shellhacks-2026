@@ -1,0 +1,640 @@
+{
+  "file": "bpa_gerp_project_update",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Big Eddy – Chemawa 230/500 kV Line Upgrade",
+      "page": 2,
+      "quote": "- Big Eddy – Chemawa 230/500 kV Line Upgrade - On track, Scoping with the OC to be completed Fall 2025 (3,920MW), est.\ndirect cost $670M, ISD 2033",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Big Eddy",
+        "Chemawa"
+      ],
+      "voltages_kv": [
+        230,
+        500
+      ],
+      "in_service_raw": "2033",
+      "status_raw": "On track",
+      "cost_raw": "$670M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Bonanza 230/500 kV Substation",
+      "page": 2,
+      "quote": "- Bonanza 230/500 kV Substationa - Substation being built near BPA's Ponderosa Substation. Project creates additional\ncapacity to support new resource development to non-federal resources, est. direct cost $300M, ISD 2031",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Bonanza"
+      ],
+      "voltages_kv": [
+        230,
+        500
+      ],
+      "in_service_raw": "2031",
+      "status_raw": "currently in Scoping",
+      "cost_raw": "$300M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Buckley 500 kV Substation Rebuild",
+      "page": 2,
+      "quote": "- Buckley 500 kV Substation Rebuild - On track, design in progress, construction planned start 2028, est. direct cost $150M,",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Buckley"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2029",
+      "status_raw": "On track, design in progress",
+      "cost_raw": "$150M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Buckley By-Pass",
+      "page": 2,
+      "quote": "Chemawa Project is planned to complete Scoping in the ISD 2029. Buckley By-Pass has been completed.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Buckley"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "has been completed",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Chehalis-Covington 230 kV Line Upgrade",
+      "page": 2,
+      "quote": "- Chehalis-Covington 230 kV Line Upgrade - Line upgrade replacing conductor on 35 miles between Chehalis Sub and\nUpgrade Cowlitz Tap, est. direct cost $73M, ISD 2028.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2028",
+      "status_raw": null,
+      "cost_raw": "$73M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Cross-Cascades North Upgrades",
+      "page": 2,
+      "quote": "- Cross-Cascades North Upgrades - On track, Scoping with the OC to complete Spring 2026 (3,140MW), est. direct cost\nBonanza\nProject is currently in Scoping and focused on\n$400M, ISD 2032.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2032",
+      "status_raw": "On track",
+      "cost_raw": "$400M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "La Pine-Bonanza 230 kV Line",
+      "page": 3,
+      "quote": "- La Pine-Bonanza 230 kV Line - On track, In Scoping, est. direct cost $150M, ISD pushed from 2030 to 2032.",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "La Pine",
+        "Bonanza"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "pushed from 2030 to 2032",
+      "status_raw": "On track, In Scoping",
+      "cost_raw": "$150M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Portland Area Upgrades",
+      "page": 3,
+      "quote": "- Portland Area Upgrades – est. direct cost $150M",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": "$150M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Pearl-Sherwood-Mcloughlin",
+      "page": 3,
+      "quote": "- Pearl-Sherwood-Mcloughlin - On track, In Construction (5,534MW), ISD May 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "May 2026",
+      "status_raw": "On track, In Construction",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Keeler-Horizon 230kV No.2",
+      "page": 3,
+      "quote": "- Keeler-Horizon 230kV No.2 - Project energized",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Keeler",
+        "Horizon"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Project energized",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Keeler Transformer Addition",
+      "page": 3,
+      "quote": "- Keeler Transformer Addition - On track, in Scoping, ISD pushed from 2029 to 2030",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Keeler"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "pushed from 2029 to 2030",
+      "status_raw": "On track, in Scoping",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Rock Creek – John Day 500 kV line Upgrade",
+      "page": 3,
+      "quote": "- Rock Creek – John Day 500 kV line Upgrade - On track, Design kick off this Fall (630MW), est. direct cost\nkV Line Estimated ISD is 2032 $109M, ISD early 2030",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Rock Creek",
+        "John Day"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "early 2030",
+      "status_raw": "On track, Design kick off this Fall",
+      "cost_raw": "$109M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Ross-Rivergate",
+      "page": 3,
+      "quote": "- Ross-Rivergate - On track, Design kick off this Fall (3,570MW), est. direct cost $46M, ISD pushed from 2029\nto 2031",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Ross",
+        "Rivergate"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "pushed from 2029 to 2031",
+      "status_raw": "On track, Design kick off this Fall",
+      "cost_raw": "$46M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Six Mile Canyon",
+      "page": 3,
+      "quote": "- Six Mile Canyon - On track, final stages of Design, Construction start early 2026, est. direct cost $250M, ISD\nHorizon#2: Energized. 3. Keeler Transformer early 2028",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Six Mile Canyon"
+      ],
+      "voltages_kv": [
+        500,
+        230
+      ],
+      "in_service_raw": "early 2028",
+      "status_raw": "On track, final stages of Design, Construction start early 2026",
+      "cost_raw": "$250M",
+      "work_type": "transmission",
+      "section": "GERP 1.0"
+    },
+    {
+      "native_id": null,
+      "name": "Big Eddy-Quenett",
+      "page": 4,
+      "quote": "- Big Eddy-Quenett - Scoping starts in Feb 2026, preliminary est. of projected cost $10M, ISD 2031",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2031",
+      "status_raw": "Scoping starts in Feb 2026",
+      "cost_raw": "$10M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Big Eddy-The Dallas",
+      "page": 4,
+      "quote": "- Big Eddy-The Dallas - In Scoping, preliminary est. of projected cost TBD, ISD 2033",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2033",
+      "status_raw": "In Scoping",
+      "cost_raw": "TBD",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Central Oregon Reactive Upgrades",
+      "page": 4,
+      "quote": "- Central Oregon Reactive Upgrades - Scoping starts in Q3 or Q4 2026, preliminary est. of projected cost\n$170M, ISD 2035",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2035",
+      "status_raw": "Scoping starts in Q3 or Q4 2026",
+      "cost_raw": "$170M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Lower Columbia to NOB",
+      "page": 4,
+      "quote": "- Lower Columbia to NOB - Preliminary estimate of projected cost $1.9B, ISD 2035",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2035",
+      "status_raw": null,
+      "cost_raw": "$1.9B",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Lower Columbia to Bonanza",
+      "page": 4,
+      "quote": "- Lower Columbia to Bonanza - Scoping starts in Q3 or Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3 or Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Bonanza to NOB",
+      "page": 4,
+      "quote": "- Bonanza to NOB - Scoping starts in Q3 or Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3 or Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Nevada-Oregon Border Substation",
+      "page": 4,
+      "quote": "- Nevada-Oregon Border Substation - Scoping starts in Q3 or Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [
+        "OR"
+      ],
+      "state_basis": "source_text",
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Nevada-Oregon Border"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3 or Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "North of Pearl",
+      "page": 5,
+      "quote": "- North of Pearl – Scoping starts in Q2 2026, preliminary est. of projected cost $300M, ISD 2033",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2033",
+      "status_raw": "Scoping starts in Q2 2026",
+      "cost_raw": "$300M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Ostrander-Peral #1 Upgrade",
+      "page": 5,
+      "quote": "- Ostrander-Peral #1 Upgrade – Scoping starts in Q2 2026, preliminary est. of projected cost $50M, ISD 2031",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Ostrander",
+        "Peral"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2031",
+      "status_raw": "Scoping starts in Q2 2026",
+      "cost_raw": "$50M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Warner/Hilltop Reactive Additions",
+      "page": 5,
+      "quote": "- Warner/Hilltop Reactive Additions – preliminary est. of projected cost $90M, ISD 2031",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2031",
+      "status_raw": null,
+      "cost_raw": "$90M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Warner 115 kV Substation",
+      "page": 5,
+      "quote": "- Warner 115 kV Substation - Scoping starts in Q3/Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Warner"
+      ],
+      "voltages_kv": [
+        115
+      ],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3/Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Hilltop 230 kV Substation",
+      "page": 5,
+      "quote": "- Hilltop 230 kV Substation - Scoping starts in Q3/Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": [
+        "Hilltop"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3/Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Salem Area Upgrades",
+      "page": 5,
+      "quote": "- Salem Area Upgrades – preliminary est. of projected cost $250M, ISD 2035",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": "2035",
+      "status_raw": null,
+      "cost_raw": "$250M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "North of Marion Upgrade 1",
+      "page": 5,
+      "quote": "- North of Marion Upgrade 1 – Scoping starts in Q3/Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3/Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "North of Marion Upgrade 2",
+      "page": 5,
+      "quote": "- North of Marion Upgrade 2 – Scoping starts in Q3/Q4 2026",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [],
+      "in_service_raw": null,
+      "status_raw": "Scoping starts in Q3/Q4 2026",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Grand Coulee-Columbia-Schultz 500 kV Line Upgrade",
+      "page": 5,
+      "quote": "Grand Coulee-Columbia-Schultz 500 kV Line Upgrade – Scoping starts in Q2 2026, preliminary est. of\nISD is 2031\n500kV Line Upgrade\nprojected cost $330M, ISD 2035",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2035",
+      "status_raw": "Scoping starts in Q2 2026",
+      "cost_raw": "$330M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    },
+    {
+      "native_id": null,
+      "name": "Schultz-Olympia 500 kV Rebuild",
+      "page": 5,
+      "quote": "Schultz-Olympia 500 kV Rebuild - Scoping starts in Q3/Q4 2026, preliminary est. of projected cost $860M,\n1 (Warner 115 kV Substation) Scoping\nISD 2035",
+      "owner": "Bonneville Power Administration",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Schultz",
+        "Olympia"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2035",
+      "status_raw": "Scoping starts in Q3/Q4 2026",
+      "cost_raw": "$860M",
+      "work_type": "transmission",
+      "section": "GERP 2.0"
+    }
+  ]
+}

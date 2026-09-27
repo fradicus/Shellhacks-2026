@@ -13,6 +13,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 from common import REPO_ROOT, load_json, validate
 from expansion.new_england import facts_hash
 from expansion.publish import center, check_evidence, record_hash, utc
+from southeast import florida_tentative
 from southeast.florida_crs import TRANSFORM, to_wgs84
 
 ACTIVE_RELEASE = Path("data/southeast/releases/active.json")
@@ -108,6 +109,11 @@ def check_location(record: dict, project: dict) -> str:
 
 
 def apply_release(snapshot: dict, root: Path) -> dict:
+    # Tentative Florida candidates append after the reviewed batch, whose DEP IDs absorb their duplicates.
+    return florida_tentative.apply_release(_apply_reviewed(snapshot, root), root)
+
+
+def _apply_reviewed(snapshot: dict, root: Path) -> dict:
     path = root / ACTIVE_RELEASE
     if not path.exists():
         return snapshot

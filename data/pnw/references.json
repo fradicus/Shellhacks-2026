@@ -1,0 +1,105 @@
+{
+  "bpa_substations.geojson": {
+    "bytes": 147292,
+    "retrieved_at": "2026-09-27T05:07:16Z",
+    "sha256": "5963ca4f26f908dc6c7bad66d3a8787d7a87803626dcf93e543d8303983892e2",
+    "url": "https://services3.arcgis.com/Iz3chmSt4P7oOoZy/arcgis/rest/services/BPA_Substation_Storymap/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson"
+  },
+  "hifld_id_0.geojson": {
+    "bytes": 244747,
+    "retrieved_at": "2026-09-27T05:28:56Z",
+    "sha256": "553a56af5e63c49ea62f3e8ca8855fbfe71745542ff356c8f7bf955771482216",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27ID%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_id_2000.geojson": {
+    "bytes": 98,
+    "retrieved_at": "2026-09-27T05:28:57Z",
+    "sha256": "1ce7eb457779acd1dc230a1bcb4692d06f27533481f26cbfe0e9e599134c0cd4",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27ID%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_mt_0.geojson": {
+    "bytes": 332041,
+    "retrieved_at": "2026-09-27T05:28:58Z",
+    "sha256": "1c352e7f0f98206397e1d40bd33f8a3c0c7f42e21b8a3e89c8e02e6e0ac5c408",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27MT%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_mt_2000.geojson": {
+    "bytes": 98,
+    "retrieved_at": "2026-09-27T05:29:00Z",
+    "sha256": "1ce7eb457779acd1dc230a1bcb4692d06f27533481f26cbfe0e9e599134c0cd4",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27MT%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_or_0.geojson": {
+    "bytes": 385338,
+    "retrieved_at": "2026-09-27T05:28:52Z",
+    "sha256": "8a51e2fe28ed6fbddea922ffe16b7ea6d5115e0d15911dfda0164b7efd8b4b7a",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27OR%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_or_2000.geojson": {
+    "bytes": 98,
+    "retrieved_at": "2026-09-27T05:28:53Z",
+    "sha256": "1ce7eb457779acd1dc230a1bcb4692d06f27533481f26cbfe0e9e599134c0cd4",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27OR%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_wa_0.geojson": {
+    "bytes": 545738,
+    "retrieved_at": "2026-09-27T05:28:48Z",
+    "sha256": "7042a5c6009fd0dff35a655c37c2b165cb6abbe8a75cdd4980b35a9ad176c44c",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27WA%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "hifld_wa_2000.geojson": {
+    "bytes": 28889,
+    "retrieved_at": "2026-09-27T05:28:50Z",
+    "sha256": "fcd1422c3e484e58bcd78e4ec4209e3270e92af54b9439328ad93bb43d69abbe",
+    "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27WA%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+  },
+  "osm": {
+    "artifacts": [
+      {
+        "bytes": 121810,
+        "named_substations": 53,
+        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-ID\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+        "retrieved_at": "2026-09-27T04:57:21Z",
+        "sha256": "5455c8686c49603532b913bc4102c6eaa15c170ae93eb9acafa6240df04dac97",
+        "state": "ID",
+        "url": "https://overpass-api.de/api/interpreter"
+      },
+      {
+        "bytes": 189490,
+        "named_substations": 187,
+        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-MT\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+        "retrieved_at": "2026-09-27T04:58:19Z",
+        "sha256": "b84a059dcec612a16d9cd5f45bb0d6c93bd15eac30fee9a038e10fced445637a",
+        "state": "MT",
+        "url": "https://overpass-api.de/api/interpreter"
+      },
+      {
+        "bytes": 286561,
+        "named_substations": 446,
+        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-OR\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+        "retrieved_at": "2026-09-27T04:57:04Z",
+        "sha256": "6ed0e299d4143c220438956d73ade12493346b5318ccf32ad945332025a94cfd",
+        "state": "OR",
+        "url": "https://overpass-api.de/api/interpreter"
+      },
+      {
+        "bytes": 414634,
+        "named_substations": 446,
+        "query": "[out:json][timeout:170];area[\"ISO3166-2\"=\"US-WA\"]->.a;nwr[\"power\"=\"substation\"](area.a);out center tags;",
+        "retrieved_at": "2026-09-27T04:56:36Z",
+        "sha256": "7f6f4f5571a92c1e1b4bb08c60b5182bb47250b621904ce7e87d05eebe82fd6b",
+        "state": "WA",
+        "url": "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+      }
+    ],
+    "publisher": "OpenStreetMap contributors",
+    "rights": "ODbL 1.0; attribution required",
+    "role": "candidate facility geometry only (C33)"
+  },
+  "tiger_counties.geojson": {
+    "bytes": 1167790,
+    "retrieved_at": "2026-09-27T05:07:22Z",
+    "sha256": "a58d4aa4290057ebac6a8d1c803ba6ab6a01717ebd94c5c9731c48829b0eb5a7",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE+IN+%28%2753%27%2C%2741%27%2C%2716%27%2C%2730%27%29&outFields=GEOID%2CNAME%2CSTATE&outSR=4326&maxAllowableOffset=0.0005&returnGeometry=true&f=geojson"
+  }
+}

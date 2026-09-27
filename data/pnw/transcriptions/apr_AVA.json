@@ -1,0 +1,41 @@
+{
+  "file": "apr_AVA",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Bluebird - Garden Springs",
+      "page": 1,
+      "quote": "Bluebird - Garden Springs 230 230 2027\nConceptual",
+      "owner": "Avista",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": ["Bluebird", "Garden Springs"],
+      "voltages_kv": [230],
+      "in_service_raw": "2027",
+      "status_raw": "Conceptual",
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Major Transmission Line Additions"
+    },
+    {
+      "native_id": null,
+      "name": "Cloudwalker Dry Creek Interconnection",
+      "page": 1,
+      "quote": "Cloudwalker Dry Creek InterconnectionNot released at this time.\nDescription: Wind and battery storage facility in the 230kV Agreement Signed,\nLewiston – Clarkston area with a 14 mile lead line to Station Transmission Service\nDry Creek 230kV Station. 375 Sept 2026 Agreement Signed",
+      "owner": "Avista",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "site",
+      "facilities": ["Dry Creek"],
+      "voltages_kv": [230],
+      "in_service_raw": "Sept 2026",
+      "status_raw": "Agreement Signed",
+      "cost_raw": null,
+      "work_type": "generation",
+      "section": "Major Generation Facility Additions"
+    }
+  ]
+}

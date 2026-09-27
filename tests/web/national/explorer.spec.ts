@@ -45,6 +45,15 @@ test("mobile explorer has no document-level horizontal overflow", async ({ page 
   await page.screenshot({ path: testInfo.outputPath("explore-mobile.png"), fullPage: true });
 });
 
+test("mind map tab is reachable from explorer URL state", async ({ page }) => {
+  await page.goto("/explore?view=mindmap");
+  await expect(page.getByRole("tab", { name: "Mind map" })).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByRole("heading", { name: /Region circle → state → place → electrical/i })).toBeVisible({ timeout: 30_000 });
+  await expect(page.getByLabel("Mind map charts")).toBeVisible();
+  await page.getByRole("tab", { name: "Map & list" }).click();
+  await expect(page).not.toHaveURL(/view=mindmap/);
+});
+
 test("API rejects duplicate parameters and its exact counts drive the page", async ({ page, request }) => {
   const duplicate = await request.get("/api/national?state=25&state=13");
   expect(duplicate.status()).toBe(400);
@@ -53,8 +62,8 @@ test("API rejects duplicate parameters and its exact counts drive the page", asy
   expect(response.status()).toBe(200);
   const payload = await response.json();
   expect(payload.total).toBeGreaterThanOrEqual(0);
-  expect(payload.locatedTotal + payload.unlocatedTotal).toBe(payload.total);
-  expect(payload.mapProjects.length).toBe(payload.locatedTotal);
+  expect(payload.locatedTotal + (payload.approximateTotal ?? 0) + payload.unlocatedTotal).toBe(payload.total);
+  expect(payload.mapProjects.length).toBe(payload.locatedTotal + (payload.approximateTotal ?? 0));
 
   await page.goto("/explore?state=25&limit=25");
   await expect(page.locator("section[aria-label='Filtered project counts'] strong").first()).toHaveText(payload.total.toLocaleString("en-US"));

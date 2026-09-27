@@ -17,7 +17,40 @@ supported fact and possible activity. Numbers must come from the cited fact's va
 Use the supplied distance_display_mi when displaying distance. Dates are in-service milestones, not construction
 windows. Never claim savings, simultaneous construction, or an actual construction schedule. Activities must be
 explicit possibilities (may/could/possible/potential), not commitments. Ask 3-5 planner questions and state missing
-location/county and schedule evidence as limitations. Do not add monetary estimates or coordinates."""
+location/county and schedule evidence as limitations. Do not add monetary estimates or coordinates.
+
+A deterministic validator rejects any violation of these hard rules:
+1. Every number you write must be copied verbatim from a fact value you cite in the same item. Never invent,
+   round, compute, or convert numbers. Never write numbers as words: avoid one, two, three, half, quarter,
+   percent and similar words entirely, even for counts (write "both projects", never "the two projects").
+2. A number may appear ONLY in these forms:
+   - "<n> miles" copied from the match.distance_display_mi fact (the only miles figure allowed; never quote
+     a line length in miles from a project description);
+   - "<n> days" copied from the match.time_gap_days fact;
+   - a date copied verbatim from an in_service fact or match.analysis_date;
+   - an identifier immediately after the label "native ID" or "owner code";
+   - "<n> kV" only when that exact "<n> kV" string appears in a cited name or description fact.
+   Never write "#" immediately followed by digits: when naming projects, drop any "#2"-style suffix.
+   Questions and limitations should normally contain no numbers at all.
+3. Never use "$", "%", "dollar", "dollars", "cost", "costs", or "percent".
+4. Never use "saving", "savings", "save money", "save costs", "simultaneous", "simultaneously", "concurrent",
+   "concurrently", "construction window", "construction overlap", or "overlapping construction", and never
+   place "built", "constructed", or "construction" within 50 characters of "together", "same time", or
+   "overlap". Prefer "coordinate", "align", or "sequence".
+5. Every possible_shared_activities text must name at least one of: crews, equipment, freight/mobilization,
+   matting, outage window, landowner outreach, procurement — and must include one of the exact words
+   "possible", "could", "may", or "potential" ("might" is not accepted).
+6. Keep every number inside the fact_ids that carry it: a sentence stating the separation must cite the
+   match.distance_display_mi fact, a sentence stating a date must cite that in_service fact.
+
+When validation_errors_to_correct is non-empty, it lists validator error labels from your previous attempt:
+- number_not_in_cited_facts: a number is absent from the facts cited by that item (rules 1, 2, 6).
+- numeric_fact_type_mismatch: a number's context is wrong — number word, wrong unit, bare "#" digits, or a
+  miles/days/kV value that did not come from the matching fact slot (rules 1, 2, 3).
+- prohibited_claim: forbidden wording (rules 3, 4).
+- activity_not_allowed_or_not_tentative: missing an allowed activity word or tentative modal (rule 5).
+- number_not_in_input: a question or limitation contains a number absent from every input fact (rule 2).
+Regenerate the whole response with those violations fixed; do not explain."""
 
 
 class GeminiTransport:

@@ -1,0 +1,4462 @@
+[
+  {
+    "id": "relation/12204687",
+    "lat": 42.0059168,
+    "lon": -121.316707,
+    "name": "Malin Substation",
+    "norm": "MALIN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "relation/12206445",
+    "lat": 44.7724533,
+    "lon": -122.6729133,
+    "name": "Santiam Substation",
+    "norm": "SANTIAM",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "relation/12590022",
+    "lat": 45.5528531,
+    "lon": -122.9170472,
+    "name": "Sunset Substation",
+    "norm": "SUNSET",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "relation/13249575",
+    "lat": 45.7602952,
+    "lon": -123.29636,
+    "name": "Timber Substation",
+    "norm": "TIMBER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "relation/13249647",
+    "lat": 45.4189332,
+    "lon": -122.6621427,
+    "name": "Oswego Substation",
+    "norm": "OSWEGO",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "relation/13259362",
+    "lat": 45.4905366,
+    "lon": -122.4621814,
+    "name": "Gresham Substation",
+    "norm": "GRESHAM",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000;13000"
+  },
+  {
+    "id": "relation/13369601",
+    "lat": 42.3463463,
+    "lon": -122.8231633,
+    "name": "Lone Pine Substation",
+    "norm": "LONE PINE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "relation/15310567",
+    "lat": 45.5388215,
+    "lon": -122.6778651,
+    "name": "Albina Substation",
+    "norm": "ALBINA",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "relation/15782441",
+    "lat": 43.2435115,
+    "lon": -120.9204555,
+    "name": "Fort Rock Capacitor Station",
+    "norm": "FORT ROCK CAPACITOR STATION",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "relation/18765035",
+    "lat": 45.5410916,
+    "lon": -122.6956919,
+    "name": "Station E",
+    "norm": "STATION E",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000;11100"
+  },
+  {
+    "id": "relation/19704695",
+    "lat": 45.3647827,
+    "lon": -122.5982266,
+    "name": "Abernathy Substation",
+    "norm": "ABERNATHY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "relation/19776499",
+    "lat": 45.5589212,
+    "lon": -122.4038563,
+    "name": "Troutdale Substation",
+    "norm": "TROUTDALE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/100586555",
+    "lat": 44.0074086,
+    "lon": -124.0106986,
+    "name": "Wendson Substation",
+    "norm": "WENDSON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/101121557",
+    "lat": 44.9704473,
+    "lon": -116.8502838,
+    "name": "Oxbow Substation",
+    "norm": "OXBOW",
+    "operator": "Idaho Power",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/101278680",
+    "lat": 42.173899,
+    "lon": -121.8135219,
+    "name": "Klamath Substation",
+    "norm": "KLAMATH",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/101278685",
+    "lat": 42.364164,
+    "lon": -122.7541026,
+    "name": "Meridian Substation",
+    "norm": "MERIDIAN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/101458605",
+    "lat": 43.2061466,
+    "lon": -123.2384119,
+    "name": "Dixonville Substation",
+    "norm": "DIXONVILLE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/101458606",
+    "lat": 43.2180089,
+    "lon": -123.2249879,
+    "name": "Dixonville Substation",
+    "norm": "DIXONVILLE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/102151065",
+    "lat": 45.6758223,
+    "lon": -120.7357023,
+    "name": "John Day Substation",
+    "norm": "JOHN DAY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/103038480",
+    "lat": 45.6746922,
+    "lon": -120.2156073,
+    "name": "Jones Canyon Substation",
+    "norm": "JONES CANYON",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/103095379",
+    "lat": 45.6380463,
+    "lon": -118.7468672,
+    "name": "Roundup Substation",
+    "norm": "ROUNDUP",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/103121717",
+    "lat": 45.312349,
+    "lon": -118.0717962,
+    "name": "La Grande Substation",
+    "norm": "LA GRANDE",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1085059913",
+    "lat": 43.9685692,
+    "lon": -122.9094861,
+    "name": "Pleasant Hill Substation",
+    "norm": "PLEASANT HILL",
+    "operator": "Emerald People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1091631147",
+    "lat": 44.1527521,
+    "lon": -122.3201715,
+    "name": "Blue River Substation",
+    "norm": "BLUE RIVER",
+    "operator": "Lane Electric Cooperative",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1094274331",
+    "lat": 44.5797692,
+    "lon": -123.3330847,
+    "name": "Oak Creek Substation",
+    "norm": "OAK CREEK",
+    "operator": "Consumers Power Incorporated",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/111203613",
+    "lat": 44.0621324,
+    "lon": -121.343818,
+    "name": "Shevlin Park Substation",
+    "norm": "SHEVLIN PARK",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/111294361",
+    "lat": 45.4925853,
+    "lon": -122.891082,
+    "name": "Reedville Substation",
+    "norm": "REEDVILLE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/112976143",
+    "lat": 44.5681578,
+    "lon": -123.2573548,
+    "name": "Dixon Substation",
+    "norm": "DIXON",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1132402166",
+    "lat": 45.3651605,
+    "lon": -122.8049542,
+    "name": "Tonquin Substation",
+    "norm": "TONQUIN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1133440778",
+    "lat": 45.163099,
+    "lon": -122.8315986,
+    "name": "North Marion Substation",
+    "norm": "NORTH MARION",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1143756154",
+    "lat": 44.8830013,
+    "lon": -122.9803834,
+    "name": "Mill Creek Substation",
+    "norm": "MILL CREEK",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1154579256",
+    "lat": 44.0444639,
+    "lon": -123.0106829,
+    "name": "Nicolai Substation",
+    "norm": "NICOLAI",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "20800"
+  },
+  {
+    "id": "way/1155671027",
+    "lat": 44.1501093,
+    "lon": -123.3669254,
+    "name": "Alderwood Substation",
+    "norm": "ALDERWOOD",
+    "operator": "Blachly-Lane Electric Cooperative",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1155671617",
+    "lat": 44.1928166,
+    "lon": -123.2304144,
+    "name": "Cheshire Substation",
+    "norm": "CHESHIRE",
+    "operator": "Emerald People's Utility District",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1156848025",
+    "lat": 45.5219299,
+    "lon": -122.6900308,
+    "name": "18th Avenue Substation",
+    "norm": "18TH AVENUE",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/115698248",
+    "lat": 44.0260309,
+    "lon": -123.0811845,
+    "name": "Hilyard Substation",
+    "norm": "HILYARD",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/116057536",
+    "lat": 44.0435638,
+    "lon": -123.1024824,
+    "name": "Jefferson Substation",
+    "norm": "JEFFERSON",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/116419650",
+    "lat": 44.0411248,
+    "lon": -123.1654492,
+    "name": "Willow Creek Substation",
+    "norm": "WILLOW CREEK",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/117169170",
+    "lat": 45.4765386,
+    "lon": -122.5579827,
+    "name": "Lents Substation",
+    "norm": "LENTS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/117600640",
+    "lat": 45.6883404,
+    "lon": -121.5246929,
+    "name": "Hood River Substation",
+    "norm": "HOOD RIVER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000;69000"
+  },
+  {
+    "id": "way/118117211",
+    "lat": 45.5699716,
+    "lon": -122.8979915,
+    "name": "West Union Substation",
+    "norm": "WEST UNION",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1181904239",
+    "lat": 44.0356426,
+    "lon": -123.0345818,
+    "name": "Glenwood Substation",
+    "norm": "GLENWOOD",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/118255262",
+    "lat": 45.5329013,
+    "lon": -122.5293165,
+    "name": "Glendoveer Substation",
+    "norm": "GLENDOVEER",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/118255264",
+    "lat": 45.4820638,
+    "lon": -122.5314888,
+    "name": "Ramapo Substation",
+    "norm": "RAMAPO",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1185584837",
+    "lat": 46.1756436,
+    "lon": -123.1674596,
+    "name": "Electric Room",
+    "norm": "ELECTRIC ROOM",
+    "operator": "Global Partners CPBR",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1185584932",
+    "lat": 46.1747661,
+    "lon": -123.1665134,
+    "name": "Electric Room",
+    "norm": "ELECTRIC ROOM",
+    "operator": "Global Partners CPBR",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1185585729",
+    "lat": 46.1759128,
+    "lon": -123.1688513,
+    "name": "Electric Room",
+    "norm": "ELECTRIC ROOM",
+    "operator": "Global Partners CPBR",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/118771233",
+    "lat": 45.482613,
+    "lon": -122.8530284,
+    "name": "Huber Substation",
+    "norm": "HUBER",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/118881452",
+    "lat": 45.3710441,
+    "lon": -122.7861052,
+    "name": "Tualatin Substation",
+    "norm": "TUALATIN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/1190727977",
+    "lat": 43.7418022,
+    "lon": -124.0831355,
+    "name": "Tahkenitch Capacitor",
+    "norm": "TAHKENITCH CAPACITOR",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/119971355",
+    "lat": 45.5354285,
+    "lon": -122.4777793,
+    "name": "Rockwood Substation",
+    "norm": "ROCKWOOD",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1207916083",
+    "lat": 45.5615279,
+    "lon": -122.6207382,
+    "name": "Kennedy Substation",
+    "norm": "KENNEDY",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1209260335",
+    "lat": 42.9117017,
+    "lon": -124.4519635,
+    "name": "Langolis",
+    "norm": "LANGOLIS",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1209262686",
+    "lat": 43.1084647,
+    "lon": -124.161908,
+    "name": "Norway Substation",
+    "norm": "NORWAY",
+    "operator": "Coos-Curry Electric Cooperative",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/121003923",
+    "lat": 45.5630927,
+    "lon": -122.5989309,
+    "name": "Killingsworth Substation",
+    "norm": "KILLINGSWORTH",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1235787305",
+    "lat": 45.5768642,
+    "lon": -122.6927782,
+    "name": "Delaware Substation",
+    "norm": "DELAWARE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/128370036",
+    "lat": 44.3882023,
+    "lon": -123.0097227,
+    "name": "Calapooya Substation",
+    "norm": "CALAPOOYA",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/1284770924",
+    "lat": 44.5654856,
+    "lon": -123.2895281,
+    "name": "35th Street Substation",
+    "norm": "35TH STREET",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/128586196",
+    "lat": 44.9579221,
+    "lon": -124.0074466,
+    "name": "Devils Lake Substation",
+    "norm": "DEVILS LAKE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/128587677",
+    "lat": 45.1931576,
+    "lon": -123.1918228,
+    "name": "Booth Bend Road Substation",
+    "norm": "BOOTH BEND ROAD",
+    "operator": "McMinnville Water & Light",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/128588927",
+    "lat": 45.2094916,
+    "lon": -123.2230382,
+    "name": "Walnut City Substation",
+    "norm": "WALNUT CITY",
+    "operator": "McMinnville Water & Light",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1305776968",
+    "lat": 43.7203964,
+    "lon": -120.8526375,
+    "name": "Sand Springs Capacitor Station",
+    "norm": "SAND SPRINGS CAPACITOR STATION",
+    "operator": "Portland General Electric;Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/132500312",
+    "lat": 45.4668795,
+    "lon": -122.7483916,
+    "name": "Garden Home Substation",
+    "norm": "GARDEN HOME",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/1330536432",
+    "lat": 45.3488759,
+    "lon": -117.2314494,
+    "name": "Joseph Substation",
+    "norm": "JOSEPH",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "20800"
+  },
+  {
+    "id": "way/133945827",
+    "lat": 45.6353646,
+    "lon": -121.9454582,
+    "name": "Acton Substation",
+    "norm": "ACTON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/134333469",
+    "lat": 45.3446729,
+    "lon": -121.9537519,
+    "name": "Welches Substation",
+    "norm": "WELCHES",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/134340625",
+    "lat": 45.6992781,
+    "lon": -121.5217462,
+    "name": "Hood River Substation",
+    "norm": "HOOD RIVER",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1347899407",
+    "lat": 45.5283787,
+    "lon": -122.6025011,
+    "name": "60th Avenue Substation",
+    "norm": "60TH AVENUE",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1358274328",
+    "lat": 45.5214719,
+    "lon": -122.9851656,
+    "name": "Hillsboro Central Substation",
+    "norm": "HILLSBORO CENTRAL",
+    "operator": "Trimet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/136371891",
+    "lat": 44.5622025,
+    "lon": -123.2793472,
+    "name": "Coliseum Substation",
+    "norm": "COLISEUM",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1384788417",
+    "lat": 42.9670598,
+    "lon": -123.3536362,
+    "name": "Riddle Substation",
+    "norm": "RIDDLE",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1412872899",
+    "lat": 45.825789,
+    "lon": -119.815225,
+    "name": "Tower Road",
+    "norm": "TOWER ROAD",
+    "operator": null,
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1418809680",
+    "lat": 45.8454235,
+    "lon": -119.615922,
+    "name": "Longhorn",
+    "norm": "LONGHORN",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/142569210",
+    "lat": 45.502689,
+    "lon": -122.8365746,
+    "name": "Saint Mary's East Substation",
+    "norm": "SAINT MARY'S EAST",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1430168737",
+    "lat": 44.1902506,
+    "lon": -123.458516,
+    "name": "High Pass Substation",
+    "norm": "HIGH PASS",
+    "operator": "Blachly-Lane Electric Cooperative",
+    "state": "OR",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/143926750",
+    "lat": 45.2044868,
+    "lon": -123.1040418,
+    "name": "Dayton Substation",
+    "norm": "DAYTON",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;115000"
+  },
+  {
+    "id": "way/1445657246",
+    "lat": 44.7180881,
+    "lon": -123.9278646,
+    "name": "SS 135 - Siletz Substation",
+    "norm": "135 - SILETZ",
+    "operator": "Central Lincoln People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/145081797",
+    "lat": 45.3910794,
+    "lon": -122.6887629,
+    "name": "Rosemont Substation",
+    "norm": "ROSEMONT",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/145225060",
+    "lat": 45.2916497,
+    "lon": -122.947625,
+    "name": "Springbrook Substation",
+    "norm": "SPRINGBROOK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1469015130",
+    "lat": 43.696349,
+    "lon": -124.1242112,
+    "name": "SS 301 Reesdport Substation",
+    "norm": "301 REESDPORT",
+    "operator": "Central Lincoln PUD",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1469017740",
+    "lat": 43.5204529,
+    "lon": -124.1932364,
+    "name": "Hauser Tap",
+    "norm": "HAUSER TAP",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1469359212",
+    "lat": 45.6774278,
+    "lon": -118.7570782,
+    "name": "Pendleton Substation",
+    "norm": "PENDLETON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/1472033038",
+    "lat": 44.7035715,
+    "lon": -123.2173836,
+    "name": "Adair Substation",
+    "norm": "ADAIR",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1474808990",
+    "lat": 45.0747197,
+    "lon": -123.7173413,
+    "name": "Boyer Substation",
+    "norm": "BOYER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1476543833",
+    "lat": 45.0638556,
+    "lon": -123.4763485,
+    "name": "Willamina Substation",
+    "norm": "WILLAMINA",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/1476564410",
+    "lat": 45.0957444,
+    "lon": -123.4022437,
+    "name": "Sheridan Substation",
+    "norm": "SHERIDAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/1477004190",
+    "lat": 44.6401341,
+    "lon": -123.9303179,
+    "name": "Arcadia Substation 139",
+    "norm": "ARCADIA 139",
+    "operator": "Central Lincoln People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1490902204",
+    "lat": 45.3199525,
+    "lon": -122.7679801,
+    "name": "Memorial Substation",
+    "norm": "MEMORIAL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/149092031",
+    "lat": 45.2695914,
+    "lon": -122.3188894,
+    "name": "Faraday Plant Substation",
+    "norm": "FARADAY PLANT",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1492875517",
+    "lat": 44.6413614,
+    "lon": -124.0439835,
+    "name": "SS 101 Benfield Substation",
+    "norm": "101 BENFIELD",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1507573455",
+    "lat": 45.4933946,
+    "lon": -122.5661789,
+    "name": "TriMet Bike & Ride",
+    "norm": "TRIMET BIKE & RIDE",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/1517825899",
+    "lat": 42.4065056,
+    "lon": -124.4206372,
+    "name": "Coos-Curry Electric Co-op",
+    "norm": "COOS-CURRY ELECTRIC CO-OP",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/153739231",
+    "lat": 44.0398192,
+    "lon": -123.1298484,
+    "name": "Westmoreland Substation",
+    "norm": "WESTMORELAND",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/1550181843",
+    "lat": 45.6937836,
+    "lon": -119.8097995,
+    "name": "Remnants of Boardman Coal Plant",
+    "norm": "REMNANTS OF BOARDMAN COAL PLANT",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/1550893780",
+    "lat": 44.6378098,
+    "lon": -124.0594108,
+    "name": "SS 103 Nye Beach Substation",
+    "norm": "103 NYE BEACH",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/159123135",
+    "lat": 45.4373947,
+    "lon": -117.284843,
+    "name": "Hurricane Substation",
+    "norm": "HURRICANE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/161344062",
+    "lat": 45.5152537,
+    "lon": -120.6863446,
+    "name": "De Moss Substation",
+    "norm": "DE MOSS",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/162046467",
+    "lat": 45.3759132,
+    "lon": -122.741294,
+    "name": "Meridian Substation",
+    "norm": "MERIDIAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/167703840",
+    "lat": 45.1365798,
+    "lon": -122.8387765,
+    "name": "Woodburn Substation",
+    "norm": "WOODBURN",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/168003305",
+    "lat": 42.1985467,
+    "lon": -121.7838313,
+    "name": "Klamath Falls Substation",
+    "norm": "KLAMATH FALLS",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/168640490",
+    "lat": 44.7174159,
+    "lon": -117.7755726,
+    "name": "Quartz Substation",
+    "norm": "QUARTZ",
+    "operator": "Idaho Power",
+    "state": "OR",
+    "voltage": "230000;138000"
+  },
+  {
+    "id": "way/168646522",
+    "lat": 44.0526303,
+    "lon": -116.9779717,
+    "name": "Ontario Substation",
+    "norm": "ONTARIO",
+    "operator": "Idaho Power",
+    "state": "OR",
+    "voltage": "230000;138000;69000"
+  },
+  {
+    "id": "way/168814285",
+    "lat": 45.6239232,
+    "lon": -121.5347752,
+    "name": "Willard Johnson Substation",
+    "norm": "WILLARD JOHNSON",
+    "operator": "Hood River Electric Cooperative",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/169922073",
+    "lat": 44.4214213,
+    "lon": -118.9845232,
+    "name": "John Day Substation",
+    "norm": "JOHN DAY",
+    "operator": null,
+    "state": "OR",
+    "voltage": "138000"
+  },
+  {
+    "id": "way/170152151",
+    "lat": 42.0966771,
+    "lon": -123.6813278,
+    "name": "O'Brien Substation",
+    "norm": "O'BRIEN",
+    "operator": null,
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/172360109",
+    "lat": 45.5675401,
+    "lon": -122.5581677,
+    "name": "Alderwood Substation",
+    "norm": "ALDERWOOD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/172360832",
+    "lat": 45.5578384,
+    "lon": -122.5572463,
+    "name": "Parkrose Substation",
+    "norm": "PARKROSE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/172360990",
+    "lat": 45.5199398,
+    "lon": -122.6017092,
+    "name": "Tabor Substation",
+    "norm": "TABOR",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;57000;13000"
+  },
+  {
+    "id": "way/172360991",
+    "lat": 45.5498975,
+    "lon": -122.6041469,
+    "name": "Cully Substation",
+    "norm": "CULLY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/172449559",
+    "lat": 45.5507018,
+    "lon": -122.4952001,
+    "name": "Hemlock Substation",
+    "norm": "HEMLOCK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/176273925",
+    "lat": 42.5249504,
+    "lon": -122.8470273,
+    "name": "Dodge Bridge Substation",
+    "norm": "DODGE BRIDGE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/176878174",
+    "lat": 45.522863,
+    "lon": -123.04748,
+    "name": "Cornelius Substation",
+    "norm": "CORNELIUS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/177075524",
+    "lat": 44.5896593,
+    "lon": -123.0369132,
+    "name": "Fry Substation",
+    "norm": "FRY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/178592860",
+    "lat": 44.0755271,
+    "lon": -123.1464232,
+    "name": "Eugene Substation",
+    "norm": "EUGENE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/178592867",
+    "lat": 44.0758258,
+    "lon": -123.1449705,
+    "name": "Bethel Substation",
+    "norm": "BETHEL",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/178593047",
+    "lat": 44.1167932,
+    "lon": -123.1774985,
+    "name": "Enid Substation",
+    "norm": "ENID",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/179734576",
+    "lat": 44.3892025,
+    "lon": -123.014671,
+    "name": "Brownsville Substation",
+    "norm": "BROWNSVILLE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/180344641",
+    "lat": 44.2147584,
+    "lon": -123.2212772,
+    "name": "Junction City Substation",
+    "norm": "JUNCTION CITY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/181200960",
+    "lat": 45.921605,
+    "lon": -118.3822927,
+    "name": "Milton Substation",
+    "norm": "MILTON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/181383361",
+    "lat": 46.1727951,
+    "lon": -123.8372496,
+    "name": "Youngs Bay Substation",
+    "norm": "YOUNGS BAY",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/181388952",
+    "lat": 42.4469952,
+    "lon": -123.2781372,
+    "name": "Grants Pass Substation",
+    "norm": "GRANTS PASS",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000;115000;69000"
+  },
+  {
+    "id": "way/181388953",
+    "lat": 42.931178,
+    "lon": -123.4102843,
+    "name": "Nickel Mountain Substation",
+    "norm": "NICKEL MOUNTAIN",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/181388954",
+    "lat": 43.2131158,
+    "lon": -124.075699,
+    "name": "Fairview Substation",
+    "norm": "FAIRVIEW",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000;150000"
+  },
+  {
+    "id": "way/181388971",
+    "lat": 43.1776985,
+    "lon": -123.5648285,
+    "name": "Reston Substation",
+    "norm": "RESTON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/181388979",
+    "lat": 43.7418546,
+    "lon": -123.1134196,
+    "name": "Martin Creek Substation",
+    "norm": "MARTIN CREEK",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/181393031",
+    "lat": 43.7429615,
+    "lon": -124.0829107,
+    "name": "Tahkenitch Substation",
+    "norm": "TAHKENITCH",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/181510021",
+    "lat": 44.769739,
+    "lon": -122.9468821,
+    "name": "Parrish Gap",
+    "norm": "PARRISH GAP",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/181510022",
+    "lat": 44.2476791,
+    "lon": -123.0479653,
+    "name": "Diamond Hill Substation",
+    "norm": "DIAMOND HILL",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/181548170",
+    "lat": 42.0937389,
+    "lon": -122.0716142,
+    "name": "John C. Boyle Substation",
+    "norm": "JOHN C. BOYLE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/181554549",
+    "lat": 46.1423183,
+    "lon": -123.8406905,
+    "name": "Clatsop Substation",
+    "norm": "CLATSOP",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/181554551",
+    "lat": 46.1747415,
+    "lon": -123.7572761,
+    "name": "Astoria Substation",
+    "norm": "ASTORIA",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/181559685",
+    "lat": 45.4579349,
+    "lon": -123.82931,
+    "name": "Tillamook Substation",
+    "norm": "TILLAMOOK",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/181559696",
+    "lat": 45.2808202,
+    "lon": -123.1528036,
+    "name": "Carlton Substation",
+    "norm": "CARLTON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/182809241",
+    "lat": 43.9825931,
+    "lon": -124.0831545,
+    "name": "Florence Substation",
+    "norm": "FLORENCE",
+    "operator": "Central Lincoln PUD",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/183093610",
+    "lat": 43.3551703,
+    "lon": -124.2143309,
+    "name": "Lockhart Substation",
+    "norm": "LOCKHART",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/183094267",
+    "lat": 43.352064,
+    "lon": -124.1822442,
+    "name": "Isthmus Substation",
+    "norm": "ISTHMUS",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/183094782",
+    "lat": 43.6957552,
+    "lon": -124.1245124,
+    "name": "Reedsport Substation",
+    "norm": "REEDSPORT",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/183385163",
+    "lat": 43.5763872,
+    "lon": -124.1826375,
+    "name": "Lakeside Substation",
+    "norm": "LAKESIDE",
+    "operator": "Central Lincoln PUD",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/183428808",
+    "lat": 44.4906657,
+    "lon": -124.0675508,
+    "name": "Substation 162",
+    "norm": "162",
+    "operator": "Central Lincoln People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/183811160",
+    "lat": 43.5135348,
+    "lon": -124.2136303,
+    "name": "Hauser Substation",
+    "norm": "HAUSER",
+    "operator": "Central Lincoln PUD",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/183820294",
+    "lat": 43.1066025,
+    "lon": -124.3965818,
+    "name": "Bandon Substation",
+    "norm": "BANDON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/183820297",
+    "lat": 42.4836059,
+    "lon": -124.4073423,
+    "name": "Rogue",
+    "norm": "ROGUE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/184450462",
+    "lat": 44.4152218,
+    "lon": -124.0655279,
+    "name": "Frank E Lundy Substation 163",
+    "norm": "FRANK E LUNDY 163",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/184505717",
+    "lat": 44.0224808,
+    "lon": -123.8630022,
+    "name": "Mapleton Substation",
+    "norm": "MAPLETON",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/185810701",
+    "lat": 45.787176,
+    "lon": -118.2801101,
+    "name": "Umatilla Electric Cooperative",
+    "norm": "UMATILLA ELECTRIC COOPERATIVE",
+    "operator": "Umatilla Electric Cooperative",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/187750268",
+    "lat": 44.0655885,
+    "lon": -123.3584029,
+    "name": "Elmira Substation",
+    "norm": "ELMIRA",
+    "operator": "Emerald People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/188843051",
+    "lat": 43.2504564,
+    "lon": -120.8993511,
+    "name": "Fort Rock Substation",
+    "norm": "FORT ROCK",
+    "operator": null,
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/199484621",
+    "lat": 43.751025,
+    "lon": -122.4846512,
+    "name": "Oakridge",
+    "norm": "OAKRIDGE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/199613797",
+    "lat": 43.9155212,
+    "lon": -122.7577074,
+    "name": "Lookout Point",
+    "norm": "LOOKOUT POINT",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/200676615",
+    "lat": 44.0599047,
+    "lon": -122.9844598,
+    "name": "Olympic Substation",
+    "norm": "OLYMPIC",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/202516309",
+    "lat": 44.5341623,
+    "lon": -122.9106849,
+    "name": "Lebanon Substation",
+    "norm": "LEBANON",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/213949786",
+    "lat": 45.491073,
+    "lon": -122.6410748,
+    "name": "Holgate Substation",
+    "norm": "HOLGATE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/219361414",
+    "lat": 44.0403708,
+    "lon": -121.3178348,
+    "name": "Bond Street Substation",
+    "norm": "BOND STREET",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/220142342",
+    "lat": 45.5630499,
+    "lon": -122.6655482,
+    "name": "Mallory Substation",
+    "norm": "MALLORY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/223060387",
+    "lat": 42.250859,
+    "lon": -122.793017,
+    "name": "Talent Substation",
+    "norm": "TALENT",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/231877008",
+    "lat": 45.5062846,
+    "lon": -122.756059,
+    "name": "West Portal Substation",
+    "norm": "WEST PORTAL",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/233583418",
+    "lat": 45.3417574,
+    "lon": -122.7815419,
+    "name": "Coffee Creek Substation",
+    "norm": "COFFEE CREEK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/237889021",
+    "lat": 42.2006727,
+    "lon": -122.699469,
+    "name": "Mountain Avenue Substation",
+    "norm": "MOUNTAIN AVENUE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/243022877",
+    "lat": 45.3983765,
+    "lon": -122.5673417,
+    "name": "Clackamas Substation",
+    "norm": "CLACKAMAS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/243612706",
+    "lat": 45.298255,
+    "lon": -122.9746018,
+    "name": "Newberg Substation",
+    "norm": "NEWBERG",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/243993207",
+    "lat": 45.560305,
+    "lon": -123.8802655,
+    "name": "Garibaldi Substation",
+    "norm": "GARIBALDI",
+    "operator": "Tillamook People's Utility District",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/244902550",
+    "lat": 44.1429712,
+    "lon": -123.0752935,
+    "name": "Coburg Substation",
+    "norm": "COBURG",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/245138440",
+    "lat": 45.4557553,
+    "lon": -122.5973824,
+    "name": "Bell Substation",
+    "norm": "BELL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/247875102",
+    "lat": 46.1510778,
+    "lon": -123.9107684,
+    "name": "Warrenton Substation",
+    "norm": "WARRENTON",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/262582303",
+    "lat": 44.5504926,
+    "lon": -123.2648043,
+    "name": "Pacific Power Marys River Substation",
+    "norm": "PACIFIC POWER MARYS RIVER",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/265895476",
+    "lat": 43.3907365,
+    "lon": -123.3008114,
+    "name": "Sutherlin Substation",
+    "norm": "SUTHERLIN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/277944592",
+    "lat": 44.271002,
+    "lon": -121.1713726,
+    "name": "Redmond Substation",
+    "norm": "REDMOND",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/278396278",
+    "lat": 43.1292471,
+    "lon": -123.3717053,
+    "name": "Roberts Creek Substation",
+    "norm": "ROBERTS CREEK",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/279876873",
+    "lat": 43.1544874,
+    "lon": -123.3721613,
+    "name": "Green Substation",
+    "norm": "GREEN",
+    "operator": null,
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/280413391",
+    "lat": 44.100954,
+    "lon": -122.6896306,
+    "name": "Leaburg Substation",
+    "norm": "LEABURG",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/281941258",
+    "lat": 43.2832381,
+    "lon": -123.3523876,
+    "name": "Winchester Substation",
+    "norm": "WINCHESTER",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/282124291",
+    "lat": 45.3984893,
+    "lon": -122.7635858,
+    "name": "Durham Substation",
+    "norm": "DURHAM",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/283015366",
+    "lat": 45.5290737,
+    "lon": -122.9326375,
+    "name": "Brookwood Substation",
+    "norm": "BROOKWOOD",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/293466222",
+    "lat": 44.7744265,
+    "lon": -122.6189352,
+    "name": "Lyons Substation",
+    "norm": "LYONS",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/293601241",
+    "lat": 44.5460287,
+    "lon": -123.3125768,
+    "name": "Hillview Substation",
+    "norm": "HILLVIEW",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/296144640",
+    "lat": 45.2855245,
+    "lon": -122.3348627,
+    "name": "Estacada Substation",
+    "norm": "ESTACADA",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/296591771",
+    "lat": 42.3239621,
+    "lon": -122.822406,
+    "name": "Foothills Substation",
+    "norm": "FOOTHILLS",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/303230798",
+    "lat": 44.3076561,
+    "lon": -120.8540883,
+    "name": "Prineville Substation",
+    "norm": "PRINEVILLE",
+    "operator": null,
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/307377619",
+    "lat": 45.6004396,
+    "lon": -122.9923758,
+    "name": "North Plains Substation",
+    "norm": "NORTH PLAINS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/310318242",
+    "lat": 45.3913761,
+    "lon": -122.6121589,
+    "name": "Jennings Lodge Substation",
+    "norm": "JENNINGS LODGE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/310318392",
+    "lat": 45.4319842,
+    "lon": -122.5776434,
+    "name": "Town Center Substation",
+    "norm": "TOWN CENTER",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/311692101",
+    "lat": 45.3542611,
+    "lon": -122.6205197,
+    "name": "Sullivan Substation",
+    "norm": "SULLIVAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;57000;13000;4160"
+  },
+  {
+    "id": "way/313762461",
+    "lat": 45.4665177,
+    "lon": -122.7117815,
+    "name": "Multnomah Substation",
+    "norm": "MULTNOMAH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/314503818",
+    "lat": 45.4908436,
+    "lon": -122.5814972,
+    "name": "Eastpoint Substation",
+    "norm": "EASTPOINT",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/314895622",
+    "lat": 44.5746841,
+    "lon": -123.2600659,
+    "name": "Buchanan Substation",
+    "norm": "BUCHANAN",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/317813827",
+    "lat": 45.4252644,
+    "lon": -122.8525839,
+    "name": "Friendly Lane Substation",
+    "norm": "FRIENDLY LANE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/317920324",
+    "lat": 42.1659332,
+    "lon": -123.6375252,
+    "name": "Cave Junction Substation",
+    "norm": "CAVE JUNCTION",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/319042499",
+    "lat": 43.4120999,
+    "lon": -123.3154025,
+    "name": "Oakland Substation",
+    "norm": "OAKLAND",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/320733775",
+    "lat": 45.516722,
+    "lon": -122.6912041,
+    "name": "Canyon Substation",
+    "norm": "CANYON",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/321763974",
+    "lat": 45.494404,
+    "lon": -122.8203754,
+    "name": "Tektronix Substation",
+    "norm": "TEKTRONIX",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/322976264",
+    "lat": 42.1761072,
+    "lon": -122.6483612,
+    "name": "Oak Knoll Substation",
+    "norm": "OAK KNOLL",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/32333686",
+    "lat": 45.0147441,
+    "lon": -122.9994016,
+    "name": "Chemawa Substation",
+    "norm": "CHEMAWA",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000;57000"
+  },
+  {
+    "id": "way/324173791",
+    "lat": 45.5141,
+    "lon": -122.4562854,
+    "name": "Ruby Junction North Substation",
+    "norm": "RUBY JUNCTION NORTH",
+    "operator": "Trimet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/324173792",
+    "lat": 45.509737,
+    "lon": -122.4570341,
+    "name": "Ruby Yard South Substation",
+    "norm": "RUBY YARD SOUTH",
+    "operator": "Trimet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/325633824",
+    "lat": 45.4950007,
+    "lon": -122.821088,
+    "name": "Tektronix Substation",
+    "norm": "TEKTRONIX",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/325839752",
+    "lat": 45.4999675,
+    "lon": -122.7910107,
+    "name": "Walker Road Substation",
+    "norm": "WALKER ROAD",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/327016903",
+    "lat": 45.5098337,
+    "lon": -122.8507554,
+    "name": "170th Substation",
+    "norm": "170TH",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/331179655",
+    "lat": 45.5272553,
+    "lon": -122.9454248,
+    "name": "Hillsboro Airport/Fairgrounds Substation",
+    "norm": "HILLSBORO AIRPORT/FAIRGROUNDS",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/331952764",
+    "lat": 45.4155429,
+    "lon": -123.7984023,
+    "name": "Trask River Substation",
+    "norm": "TRASK RIVER",
+    "operator": "Tillamook People's Utility District",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/333102030",
+    "lat": 45.5046786,
+    "lon": -122.6765376,
+    "name": "Marquam Substation",
+    "norm": "MARQUAM",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/334235740",
+    "lat": 45.4355726,
+    "lon": -122.3773361,
+    "name": "Boring Substation",
+    "norm": "BORING",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/338900026",
+    "lat": 44.1186401,
+    "lon": -123.1393985,
+    "name": "Spring Creek Substation",
+    "norm": "SPRING CREEK",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/338900027",
+    "lat": 44.1036938,
+    "lon": -123.1579761,
+    "name": "Prairie Substation",
+    "norm": "PRAIRIE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/345135957",
+    "lat": 43.9376517,
+    "lon": -123.0103708,
+    "name": "Cloverdale",
+    "norm": "CLOVERDALE",
+    "operator": "Emerald People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/346414621",
+    "lat": 44.5676571,
+    "lon": -123.2797367,
+    "name": "26th Street Substation",
+    "norm": "26TH STREET",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/347364779",
+    "lat": 42.4206724,
+    "lon": -122.9645483,
+    "name": "Tolo Substation",
+    "norm": "TOLO",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/349918251",
+    "lat": 45.4326325,
+    "lon": -122.6357924,
+    "name": "27th Ave Substation",
+    "norm": "27TH AVE",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/353744564",
+    "lat": 43.766013,
+    "lon": -123.0728785,
+    "name": "Latham Substation",
+    "norm": "LATHAM",
+    "operator": "Emerald People's Utility District",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/354397564",
+    "lat": 45.4413424,
+    "lon": -122.7447057,
+    "name": "West Portland Substation",
+    "norm": "WEST PORTLAND",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/357935861",
+    "lat": 44.6383674,
+    "lon": -124.0195643,
+    "name": "Substation 109",
+    "norm": "109",
+    "operator": "Central Lincoln People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/360068866",
+    "lat": 45.6075862,
+    "lon": -123.1129423,
+    "name": "Banks Substation",
+    "norm": "BANKS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/360756580",
+    "lat": 45.5853912,
+    "lon": -122.7350229,
+    "name": "Northern Substation",
+    "norm": "NORTHERN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/366599215",
+    "lat": 45.4300621,
+    "lon": -122.2754518,
+    "name": "Dunn's Corner Substation",
+    "norm": "DUNN'S CORNER",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/367601864",
+    "lat": 45.5193905,
+    "lon": -122.8060786,
+    "name": "Cornell Substation",
+    "norm": "CORNELL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/368277651",
+    "lat": 45.483846,
+    "lon": -122.7978237,
+    "name": "Beaverton Substation",
+    "norm": "BEAVERTON",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/368336248",
+    "lat": 45.5191065,
+    "lon": -122.6987465,
+    "name": "East Portal Substation",
+    "norm": "EAST PORTAL",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/368730866",
+    "lat": 45.5012011,
+    "lon": -122.8274019,
+    "name": "Tektronix Industrial Park Substation",
+    "norm": "TEKTRONIX INDUSTRIAL PARK",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/369025931",
+    "lat": 45.3004795,
+    "lon": -122.3503147,
+    "name": "River Mill Substation",
+    "norm": "RIVER MILL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/369317168",
+    "lat": 45.3963053,
+    "lon": -122.8010605,
+    "name": "King City Substation",
+    "norm": "KING CITY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/370381569",
+    "lat": 45.5711577,
+    "lon": -122.6817377,
+    "name": "Peninsula Park Substation",
+    "norm": "PENINSULA PARK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/372281048",
+    "lat": 45.5019257,
+    "lon": -122.8354908,
+    "name": "153rd Substation",
+    "norm": "153RD",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/376178683",
+    "lat": 45.4992145,
+    "lon": -122.9252786,
+    "name": "Roseway Substation",
+    "norm": "ROSEWAY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/379388741",
+    "lat": 45.6184071,
+    "lon": -122.6994632,
+    "name": "Hayden Island Substation",
+    "norm": "HAYDEN ISLAND",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/381902373",
+    "lat": 45.5051798,
+    "lon": -122.5639388,
+    "name": "Kelly Butte Substation",
+    "norm": "KELLY BUTTE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/382802967",
+    "lat": 45.8476723,
+    "lon": -122.8208798,
+    "name": "St. Helens Substation",
+    "norm": "ST. HELENS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/384747008",
+    "lat": 44.7030113,
+    "lon": -123.2172662,
+    "name": "Adair Substation",
+    "norm": "ADAIR",
+    "operator": "Consumers Power Incorporated",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/387625616",
+    "lat": 45.5228166,
+    "lon": -122.9591844,
+    "name": "Main Substation",
+    "norm": "MAIN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/389423783",
+    "lat": 45.5663837,
+    "lon": -122.7504651,
+    "name": "Willbridge Substation",
+    "norm": "WILLBRIDGE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/390869260",
+    "lat": 45.5062785,
+    "lon": -122.6605057,
+    "name": "Grand Substation",
+    "norm": "GRAND",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/392877544",
+    "lat": 45.426643,
+    "lon": -122.7067713,
+    "name": "Boones Ferry Substation",
+    "norm": "BOONES FERRY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/393306819",
+    "lat": 44.0564197,
+    "lon": -122.9589044,
+    "name": "Weyerhaeuser Substation #3",
+    "norm": "WEYERHAEUSER",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/39380969",
+    "lat": 45.5332929,
+    "lon": -122.6601472,
+    "name": "Holladay Substation",
+    "norm": "HOLLADAY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/39636199",
+    "lat": 45.541427,
+    "lon": -122.6651785,
+    "name": "Knott Substation",
+    "norm": "KNOTT",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000;57000;12470"
+  },
+  {
+    "id": "way/399345262",
+    "lat": 43.7988126,
+    "lon": -123.0400927,
+    "name": "Village Green Substation",
+    "norm": "VILLAGE GREEN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/402011057",
+    "lat": 45.5186971,
+    "lon": -122.6729136,
+    "name": "Morrison Substation",
+    "norm": "MORRISON",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/40941186",
+    "lat": 45.2673451,
+    "lon": -122.7221646,
+    "name": "Canby Substation",
+    "norm": "CANBY",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/409579242",
+    "lat": 45.1857752,
+    "lon": -123.2245109,
+    "name": "Gormely Substation",
+    "norm": "GORMELY",
+    "operator": "McMinville Water & Light",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/410400925",
+    "lat": 45.5217839,
+    "lon": -122.9932975,
+    "name": "Hillsboro Substation",
+    "norm": "HILLSBORO",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/413768132",
+    "lat": 44.0188366,
+    "lon": -123.1376104,
+    "name": "Hawkins Substation",
+    "norm": "HAWKINS",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/414267620",
+    "lat": 44.1219369,
+    "lon": -123.1905914,
+    "name": "Parker Substation",
+    "norm": "PARKER",
+    "operator": "Blachly-Lane Electric Cooperative",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/419593725",
+    "lat": 44.1749102,
+    "lon": -123.100828,
+    "name": "Powerline Substation",
+    "norm": "POWERLINE",
+    "operator": "EPUD",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/421124807",
+    "lat": 44.046528,
+    "lon": -122.8871188,
+    "name": "East Springfield Feeder Regulating Substation",
+    "norm": "EAST SPRINGFIELD FEEDER REGULATING",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "12470"
+  },
+  {
+    "id": "way/42169433",
+    "lat": 45.3178143,
+    "lon": -122.7667702,
+    "name": "Wilsonville Substation",
+    "norm": "WILSONVILLE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/423730886",
+    "lat": 45.7210319,
+    "lon": -123.9009,
+    "name": "Nehalem Substation",
+    "norm": "NEHALEM",
+    "operator": "Tillmook People's Utility District",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/428791081",
+    "lat": 45.739964,
+    "lon": -122.8784405,
+    "name": "Dutch Canyon Substation",
+    "norm": "DUTCH CANYON",
+    "operator": "Columbia River People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/42910216",
+    "lat": 45.2686583,
+    "lon": -122.6784867,
+    "name": "Westcott Substation",
+    "norm": "WESTCOTT",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/435508251",
+    "lat": 45.5217031,
+    "lon": -122.4224253,
+    "name": "McGill Substation",
+    "norm": "MCGILL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/437244251",
+    "lat": 45.524622,
+    "lon": -123.0892367,
+    "name": "Forest Grove Substation",
+    "norm": "FOREST GROVE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/438300789",
+    "lat": 44.6219081,
+    "lon": -121.1404699,
+    "name": "Madras Substation",
+    "norm": "MADRAS",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/441966380",
+    "lat": 43.7418972,
+    "lon": -124.113483,
+    "name": "Gardiner Substation",
+    "norm": "GARDINER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/444681066",
+    "lat": 42.3817976,
+    "lon": -122.9253628,
+    "name": "Scenic Substation",
+    "norm": "SCENIC",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/455343104",
+    "lat": 42.3009535,
+    "lon": -122.9108374,
+    "name": "Griffin Creek Substation",
+    "norm": "GRIFFIN CREEK",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/45702222",
+    "lat": 45.5161745,
+    "lon": -122.6319074,
+    "name": "Alder Substation",
+    "norm": "ALDER",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/47286861",
+    "lat": 45.508635,
+    "lon": -122.7722447,
+    "name": "Cedar Hills Substation",
+    "norm": "CEDAR HILLS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/48532391",
+    "lat": 45.5061512,
+    "lon": -122.6744848,
+    "name": "Lincoln Substation",
+    "norm": "LINCOLN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/48871578",
+    "lat": 45.4588139,
+    "lon": -122.651714,
+    "name": "Sellwood Substation",
+    "norm": "SELLWOOD",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;57000;13000"
+  },
+  {
+    "id": "way/488793806",
+    "lat": 45.5094477,
+    "lon": -122.7386075,
+    "name": "Sylvan Substation",
+    "norm": "SYLVAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/494487872",
+    "lat": 45.4889252,
+    "lon": -123.0940676,
+    "name": "Dilley Substation",
+    "norm": "DILLEY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/495412810",
+    "lat": 45.5036437,
+    "lon": -122.5208736,
+    "name": "Midway Substation",
+    "norm": "MIDWAY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/49552887",
+    "lat": 45.4972505,
+    "lon": -122.6772795,
+    "name": "Urban Substation",
+    "norm": "URBAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/504119585",
+    "lat": 45.5490046,
+    "lon": -122.8289101,
+    "name": "Bethany Substation",
+    "norm": "BETHANY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/507096228",
+    "lat": 44.0526302,
+    "lon": -116.9779719,
+    "name": "Ontario Substation",
+    "norm": "ONTARIO",
+    "operator": "Idaho Power",
+    "state": "OR",
+    "voltage": "230000;138000;69000"
+  },
+  {
+    "id": "way/507096972",
+    "lat": 42.2956515,
+    "lon": -122.8269326,
+    "name": "Campbell Substation",
+    "norm": "CAMPBELL",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/51541608",
+    "lat": 45.4380399,
+    "lon": -122.830867,
+    "name": "Murrayhill Substation",
+    "norm": "MURRAYHILL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51756731",
+    "lat": 45.5498064,
+    "lon": -122.8957348,
+    "name": "Keeler Substation",
+    "norm": "KEELER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/51757614",
+    "lat": 45.6138531,
+    "lon": -122.7646992,
+    "name": "Saint Johns Substation",
+    "norm": "SAINT JOHNS",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51757617",
+    "lat": 45.6143172,
+    "lon": -122.7676973,
+    "name": "Rivergate North Substation",
+    "norm": "RIVERGATE NORTH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51757619",
+    "lat": 45.6127761,
+    "lon": -122.7677438,
+    "name": "Rivergate South Substation",
+    "norm": "RIVERGATE SOUTH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/51777289",
+    "lat": 45.5074525,
+    "lon": -122.8440295,
+    "name": "Saint Mary's Substation",
+    "norm": "SAINT MARY'S",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/51777297",
+    "lat": 45.5321337,
+    "lon": -122.8469099,
+    "name": "Oak Hills Substation",
+    "norm": "OAK HILLS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/538126287",
+    "lat": 45.5190436,
+    "lon": -122.6118447,
+    "name": "Glencoe Substation",
+    "norm": "GLENCOE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/539486275",
+    "lat": 44.0584092,
+    "lon": -123.1400766,
+    "name": "Seneca Substation",
+    "norm": "SENECA",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/539946919",
+    "lat": 45.5867447,
+    "lon": -122.6979577,
+    "name": "Curtis Substation",
+    "norm": "CURTIS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/540361037",
+    "lat": 44.1635664,
+    "lon": -123.200189,
+    "name": "Junction City Substation",
+    "norm": "JUNCTION CITY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/54051861",
+    "lat": 45.5592869,
+    "lon": -122.4089269,
+    "name": "Troutdale Substation",
+    "norm": "TROUTDALE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/54051932",
+    "lat": 45.5545141,
+    "lon": -122.4299315,
+    "name": "Blue Lake Substation",
+    "norm": "BLUE LAKE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/544018457",
+    "lat": 45.5098454,
+    "lon": -123.1007235,
+    "name": "Filbert Substation",
+    "norm": "FILBERT",
+    "operator": "City of Forest Grove",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/54674660",
+    "lat": 45.3292898,
+    "lon": -122.777461,
+    "name": "Pearl Substation",
+    "norm": "PEARL",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/54674661",
+    "lat": 45.3326573,
+    "lon": -122.779218,
+    "name": "Oregon City Substation",
+    "norm": "OREGON CITY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/54675166",
+    "lat": 45.3717276,
+    "lon": -122.8362968,
+    "name": "Sherwood Substation",
+    "norm": "SHERWOOD",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/54717629",
+    "lat": 44.7998606,
+    "lon": -122.6987822,
+    "name": "Marion Substation",
+    "norm": "MARION",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/54717927",
+    "lat": 44.7709664,
+    "lon": -122.660368,
+    "name": "Lyons UHV Transformer",
+    "norm": "LYONS UHV TRANSFORMER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "1100000"
+  },
+  {
+    "id": "way/55262606",
+    "lat": 46.1079836,
+    "lon": -123.0339864,
+    "name": "Alston Substation",
+    "norm": "ALSTON",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/555603934",
+    "lat": 44.0290207,
+    "lon": -123.3522362,
+    "name": "Fern Ridge Substation",
+    "norm": "FERN RIDGE",
+    "operator": "Lane Electric Co-op",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/55972035",
+    "lat": 45.6778677,
+    "lon": -120.7379801,
+    "name": "John Day Substation",
+    "norm": "JOHN DAY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/55975040",
+    "lat": 45.5958931,
+    "lon": -121.1133004,
+    "name": "Celilo Converter Station",
+    "norm": "CELILO CONVERTER STATION",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/55975045",
+    "lat": 45.6036675,
+    "lon": -121.1079791,
+    "name": "Big Eddy Substation",
+    "norm": "BIG EDDY",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/55975082",
+    "lat": 45.6063815,
+    "lon": -121.1157655,
+    "name": "Big Eddy Substation",
+    "norm": "BIG EDDY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/56024635",
+    "lat": 45.7024674,
+    "lon": -120.1528519,
+    "name": "Slatt Substation",
+    "norm": "SLATT",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/56027291",
+    "lat": 45.9240199,
+    "lon": -119.3134756,
+    "name": "McNary Substation",
+    "norm": "MCNARY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/56028647",
+    "lat": 45.2308714,
+    "lon": -120.900401,
+    "name": "Buckley Substation",
+    "norm": "BUCKLEY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/56392639",
+    "lat": 45.1938221,
+    "lon": -121.0358399,
+    "name": "Maupin Substation",
+    "norm": "MAUPIN",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000;69000"
+  },
+  {
+    "id": "way/578399036",
+    "lat": 45.8484168,
+    "lon": -119.6202696,
+    "name": "Morrow Flat Substation",
+    "norm": "MORROW FLAT",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/587350797",
+    "lat": 44.0517561,
+    "lon": -123.0825784,
+    "name": "Willamette Substation",
+    "norm": "WILLAMETTE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/596339841",
+    "lat": 44.0377277,
+    "lon": -123.0499516,
+    "name": "Laurel Substation",
+    "norm": "LAUREL",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/599610975",
+    "lat": 42.3015111,
+    "lon": -122.7728259,
+    "name": "Baldy Substation",
+    "norm": "BALDY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/599613602",
+    "lat": 42.3418264,
+    "lon": -122.7842132,
+    "name": "Roxy Ann Substation",
+    "norm": "ROXY ANN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/599614070",
+    "lat": 42.35759,
+    "lon": -122.9042541,
+    "name": "Beall Lane Substation",
+    "norm": "BEALL LANE",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/600273888",
+    "lat": 44.0312167,
+    "lon": -122.933024,
+    "name": "Mt. Vernon Substation",
+    "norm": "MT. VERNON",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/601468686",
+    "lat": 42.3072853,
+    "lon": -122.8534926,
+    "name": "Belknap Substation",
+    "norm": "BELKNAP",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/604243655",
+    "lat": 42.3468997,
+    "lon": -122.8880788,
+    "name": "Medco Substation",
+    "norm": "MEDCO",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/605318061",
+    "lat": 42.4366454,
+    "lon": -122.8497328,
+    "name": "Biomass One Power Plant",
+    "norm": "BIOMASS ONE POWER PLANT",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/606406304",
+    "lat": 42.4260043,
+    "lon": -122.8595304,
+    "name": "White City Substation",
+    "norm": "WHITE CITY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/641102052",
+    "lat": 45.5306634,
+    "lon": -123.1244086,
+    "name": "Thatcher Junction Substation",
+    "norm": "THATCHER JUNCTION",
+    "operator": "City of Forest Grove",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/660631678",
+    "lat": 45.599724,
+    "lon": -123.2228536,
+    "name": "Gales Creek Substation",
+    "norm": "GALES CREEK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/664883775",
+    "lat": 42.3338327,
+    "lon": -122.8695391,
+    "name": "Medford Substation",
+    "norm": "MEDFORD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/667528834",
+    "lat": 43.3928109,
+    "lon": -124.2305445,
+    "name": "State Street Substation",
+    "norm": "STATE STREET",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/678807123",
+    "lat": 42.3357341,
+    "lon": -122.8882985,
+    "name": "Sage Road Substation",
+    "norm": "SAGE ROAD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/67976306",
+    "lat": 45.4608196,
+    "lon": -122.4832338,
+    "name": "Pleasant Valley Substation",
+    "norm": "PLEASANT VALLEY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/68481568",
+    "lat": 45.5374877,
+    "lon": -122.6154623,
+    "name": "Hollywood Substation",
+    "norm": "HOLLYWOOD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/687020262",
+    "lat": 45.4317944,
+    "lon": -122.640547,
+    "name": "Island Substation",
+    "norm": "ISLAND",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/68862388",
+    "lat": 45.5549161,
+    "lon": -122.6465943,
+    "name": "Vernon Substation",
+    "norm": "VERNON",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/692799270",
+    "lat": 44.6210563,
+    "lon": -123.9249021,
+    "name": "Lower Olalla Substation",
+    "norm": "LOWER OLALLA",
+    "operator": "Central Lincoln People’s Utility District",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/706776314",
+    "lat": 45.7986411,
+    "lon": -119.3715701,
+    "name": "Cottonwood",
+    "norm": "COTTONWOOD",
+    "operator": null,
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/707365253",
+    "lat": 45.349483,
+    "lon": -122.6161326,
+    "name": "Canemah Substation",
+    "norm": "CANEMAH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;57000;13000"
+  },
+  {
+    "id": "way/70945980",
+    "lat": 45.5090096,
+    "lon": -122.6582438,
+    "name": "Harrison Substation",
+    "norm": "HARRISON",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000;11100"
+  },
+  {
+    "id": "way/70945981",
+    "lat": 45.5090067,
+    "lon": -122.6572613,
+    "name": "Harrison Substation",
+    "norm": "HARRISON",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/718526373",
+    "lat": 45.3570182,
+    "lon": -122.359506,
+    "name": "Eagle Creek Substation",
+    "norm": "EAGLE CREEK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/71872271",
+    "lat": 45.3690623,
+    "lon": -122.8458565,
+    "name": "Six Corners Substation",
+    "norm": "SIX CORNERS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/733069760",
+    "lat": 44.5874715,
+    "lon": -123.2469042,
+    "name": "Circle Boulevard",
+    "norm": "CIRCLE BOULEVARD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/733069781",
+    "lat": 44.6097342,
+    "lon": -123.1012487,
+    "name": "Oremet Substation",
+    "norm": "OREMET",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/735145719",
+    "lat": 45.5579945,
+    "lon": -122.938124,
+    "name": "Shute Substation",
+    "norm": "SHUTE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/73581685",
+    "lat": 45.4692963,
+    "lon": -122.6720623,
+    "name": "Riverview Substation",
+    "norm": "RIVERVIEW",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/74459430",
+    "lat": 44.074011,
+    "lon": -123.1772868,
+    "name": "Danebo Substation",
+    "norm": "DANEBO",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/74460378",
+    "lat": 44.0910694,
+    "lon": -123.1718046,
+    "name": "Jessen Substation",
+    "norm": "JESSEN",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/74846397",
+    "lat": 44.0982199,
+    "lon": -123.1213522,
+    "name": "Santa Clara Substation",
+    "norm": "SANTA CLARA",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/749266501",
+    "lat": 42.409531,
+    "lon": -124.4164418,
+    "name": "Gold Beach",
+    "norm": "GOLD BEACH",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/759169972",
+    "lat": 42.3452188,
+    "lon": -122.8442466,
+    "name": "Brookhurst Substation",
+    "norm": "BROOKHURST",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/765261297",
+    "lat": 45.6946597,
+    "lon": -119.8294915,
+    "name": "Grassland Switchyard",
+    "norm": "GRASSLAND SWITCHYARD",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/76554675",
+    "lat": 44.0052254,
+    "lon": -123.0775254,
+    "name": "Dillard Substation",
+    "norm": "DILLARD",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/76554756",
+    "lat": 43.9933691,
+    "lon": -123.0638395,
+    "name": "Hideaway Substation",
+    "norm": "HIDEAWAY",
+    "operator": "Lane Electric Co-op",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/766862606",
+    "lat": 45.5585049,
+    "lon": -122.9446039,
+    "name": "Evergreen Substation West",
+    "norm": "EVERGREEN WEST",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/77087420",
+    "lat": 45.4887334,
+    "lon": -122.6076299,
+    "name": "Arleta Substation",
+    "norm": "ARLETA",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000;13000"
+  },
+  {
+    "id": "way/77707503",
+    "lat": 45.521377,
+    "lon": -122.9698262,
+    "name": "Washington Street Substation",
+    "norm": "WASHINGTON STREET",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/784955988",
+    "lat": 45.5818854,
+    "lon": -122.8638784,
+    "name": "Rock Creek Substation",
+    "norm": "ROCK CREEK",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/790877438",
+    "lat": 44.0756035,
+    "lon": -123.1169589,
+    "name": "River Road Substation",
+    "norm": "RIVER ROAD",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/790915718",
+    "lat": 44.0569031,
+    "lon": -123.1061491,
+    "name": "Adams Substation",
+    "norm": "ADAMS",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/793342274",
+    "lat": 45.2927564,
+    "lon": -122.5663115,
+    "name": "Leland Substation",
+    "norm": "LELAND",
+    "operator": null,
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/79879329",
+    "lat": 45.4866998,
+    "lon": -122.7246656,
+    "name": "Glencullen Substation",
+    "norm": "GLENCULLEN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/81347729",
+    "lat": 45.5222609,
+    "lon": -122.5604724,
+    "name": "Russellville Substation",
+    "norm": "RUSSELLVILLE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/81798052",
+    "lat": 45.4304154,
+    "lon": -122.7770663,
+    "name": "Tigard Substation",
+    "norm": "TIGARD",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/824003738",
+    "lat": 44.5263209,
+    "lon": -122.9426668,
+    "name": "Airport Substation",
+    "norm": "AIRPORT",
+    "operator": "Consumers Power Inc.",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/824617992",
+    "lat": 45.3174481,
+    "lon": -123.1743033,
+    "name": "Yamhill Substation",
+    "norm": "YAMHILL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/828381091",
+    "lat": 45.1139722,
+    "lon": -123.2379426,
+    "name": "Amity Substation",
+    "norm": "AMITY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/83073427",
+    "lat": 44.0396997,
+    "lon": -122.9614794,
+    "name": "Jasper Substation",
+    "norm": "JASPER",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/83568786",
+    "lat": 44.0531895,
+    "lon": -122.9440948,
+    "name": "Weyerhaeuser Substation #2",
+    "norm": "WEYERHAEUSER",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/83672864",
+    "lat": 44.0274993,
+    "lon": -123.1045381,
+    "name": "Monroe Substation",
+    "norm": "MONROE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/83789747",
+    "lat": 44.0715943,
+    "lon": -122.9669965,
+    "name": "Hayden Bridge Substation",
+    "norm": "HAYDEN BRIDGE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/83789750",
+    "lat": 44.0712668,
+    "lon": -122.972313,
+    "name": "Hayden Bridge Switching Station North",
+    "norm": "HAYDEN BRIDGE SWITCHING STATION NORTH",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/837910686",
+    "lat": 44.0691328,
+    "lon": -122.8353802,
+    "name": "Walterville Substation",
+    "norm": "WALTERVILLE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/837910692",
+    "lat": 44.0547171,
+    "lon": -122.9605644,
+    "name": "Weyerhaeuser Substation #1",
+    "norm": "WEYERHAEUSER",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/837915425",
+    "lat": 44.0671586,
+    "lon": -123.0738319,
+    "name": "Oakway Substation",
+    "norm": "OAKWAY",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/837915429",
+    "lat": 44.0640148,
+    "lon": -123.0293431,
+    "name": "Laura Substation",
+    "norm": "LAURA",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/837934434",
+    "lat": 44.0995863,
+    "lon": -122.6972504,
+    "name": "Holden Creek Substation",
+    "norm": "HOLDEN CREEK",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/837934460",
+    "lat": 44.0985678,
+    "lon": -123.0629991,
+    "name": "Coburg Substation",
+    "norm": "COBURG",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/843654879",
+    "lat": 45.5447549,
+    "lon": -122.6975284,
+    "name": "Sulzer Pump",
+    "norm": "SULZER PUMP",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/850198682",
+    "lat": 43.6610662,
+    "lon": -121.4543814,
+    "name": "La Pine Substation",
+    "norm": "LA PINE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/85195293",
+    "lat": 45.2123082,
+    "lon": -123.1807687,
+    "name": "McMinnville Substation",
+    "norm": "MCMINNVILLE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/86092858",
+    "lat": 45.4028118,
+    "lon": -122.5267918,
+    "name": "Carver Substation",
+    "norm": "CARVER",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000;13000"
+  },
+  {
+    "id": "way/86191896",
+    "lat": 45.3981397,
+    "lon": -122.2708961,
+    "name": "Sandy Substation",
+    "norm": "SANDY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/86419706",
+    "lat": 44.0452071,
+    "lon": -123.0124644,
+    "name": "10th Street Substation",
+    "norm": "10TH STREET",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/86419707",
+    "lat": 44.0439813,
+    "lon": -123.0008213,
+    "name": "Springfield Substation",
+    "norm": "SPRINGFIELD",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/882584879",
+    "lat": 44.0880491,
+    "lon": -123.0852972,
+    "name": "Cal Young Substation",
+    "norm": "CAL YOUNG",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/88615577",
+    "lat": 44.0957551,
+    "lon": -123.0436781,
+    "name": "McKenzie Substation",
+    "norm": "MCKENZIE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/88622814",
+    "lat": 44.055872,
+    "lon": -123.1655292,
+    "name": "Bertelsen Substation",
+    "norm": "BERTELSEN",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/887282763",
+    "lat": 45.0626316,
+    "lon": -123.608627,
+    "name": "Grand Ronde Substation",
+    "norm": "GRAND RONDE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/887995062",
+    "lat": 45.8265456,
+    "lon": -122.983489,
+    "name": "Chapman Substation",
+    "norm": "CHAPMAN",
+    "operator": "West Oregon Electric Cooperative",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/88982442",
+    "lat": 44.2702087,
+    "lon": -121.2106158,
+    "name": "Redmond Substation",
+    "norm": "REDMOND",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/893455699",
+    "lat": 46.0128883,
+    "lon": -123.3082404,
+    "name": "Mist Substation",
+    "norm": "MIST",
+    "operator": "West Oregon Electric Cooperative",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/89384747",
+    "lat": 45.4463128,
+    "lon": -122.7840773,
+    "name": "Progress Substation",
+    "norm": "PROGRESS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/89534328",
+    "lat": 45.5239925,
+    "lon": -122.8989445,
+    "name": "Orenco Substation",
+    "norm": "ORENCO",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/90298373",
+    "lat": 45.4700288,
+    "lon": -122.7871416,
+    "name": "Denny Substation",
+    "norm": "DENNY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/925009140",
+    "lat": 45.540632,
+    "lon": -122.9018027,
+    "name": "Intel Ronler Acres Substation",
+    "norm": "INTEL RONLER ACRES",
+    "operator": "Intel",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93174018",
+    "lat": 45.3385566,
+    "lon": -122.5589454,
+    "name": "McLoughlin Substation",
+    "norm": "MCLOUGHLIN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/93416192",
+    "lat": 43.9965553,
+    "lon": -123.0161471,
+    "name": "Alvey Substation",
+    "norm": "ALVEY",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/93417092",
+    "lat": 44.0821698,
+    "lon": -123.0313688,
+    "name": "Gateway Substation",
+    "norm": "GATEWAY",
+    "operator": "Springfield Utility Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93417102",
+    "lat": 44.0821858,
+    "lon": -123.0493712,
+    "name": "Willakenzie Substation",
+    "norm": "WILLAKENZIE",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/93893875",
+    "lat": 45.594502,
+    "lon": -122.7206007,
+    "name": "Portsmouth Substation",
+    "norm": "PORTSMOUTH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/93896131",
+    "lat": 45.639528,
+    "lon": -122.7611902,
+    "name": "Kelley Point Substation",
+    "norm": "KELLEY POINT",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/93984357",
+    "lat": 42.0796144,
+    "lon": -121.3899577,
+    "name": "Captain Jack Substation",
+    "norm": "CAPTAIN JACK",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/94019612",
+    "lat": 43.0139807,
+    "lon": -120.9559068,
+    "name": "Summer Lake Substation",
+    "norm": "SUMMER LAKE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/94019615",
+    "lat": 42.8534718,
+    "lon": -120.9874095,
+    "name": "Sycan Capacitor Station",
+    "norm": "SYCAN CAPACITOR STATION",
+    "operator": "Bonneville Power Administration;Portland General Electric;PacifiCorp",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/94053265",
+    "lat": 45.1613768,
+    "lon": -120.9022861,
+    "name": "Bakeoven Capacitor Station",
+    "norm": "BAKEOVEN CAPACITOR STATION",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/94053268",
+    "lat": 43.7203806,
+    "lon": -120.8551892,
+    "name": "Sand Springs Capacitor Stattion",
+    "norm": "SAND SPRINGS CAPACITOR STATTION",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/94053279",
+    "lat": 44.4819547,
+    "lon": -121.0202547,
+    "name": "Grizzly Substation",
+    "norm": "GRIZZLY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000"
+  },
+  {
+    "id": "way/94053280",
+    "lat": 44.2261249,
+    "lon": -120.9328556,
+    "name": "Ponderosa Substation",
+    "norm": "PONDEROSA",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/942097967",
+    "lat": 45.3417364,
+    "lon": -122.6016113,
+    "name": "Mount Pleasant Substation",
+    "norm": "MOUNT PLEASANT",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/94369503",
+    "lat": 45.6023197,
+    "lon": -122.7450882,
+    "name": "St. John's Switching Station",
+    "norm": "ST. JOHN'S SWITCHING STATION",
+    "operator": "Pacific Power",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/94369521",
+    "lat": 45.6005878,
+    "lon": -122.7275477,
+    "name": "Bloss Substation",
+    "norm": "BLOSS",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000;12470"
+  },
+  {
+    "id": "way/94849047",
+    "lat": 44.9587806,
+    "lon": -123.0920017,
+    "name": "Jim Hughes Substation",
+    "norm": "JIM HUGHES",
+    "operator": "Salem Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/94885714",
+    "lat": 45.3609501,
+    "lon": -122.4074028,
+    "name": "Ostrander Substation",
+    "norm": "OSTRANDER",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/94922211",
+    "lat": 45.5291672,
+    "lon": -121.5647449,
+    "name": "Parkdale Substation",
+    "norm": "PARKDALE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/94922230",
+    "lat": 45.6355781,
+    "lon": -121.2040871,
+    "name": "Chenoweth Substation",
+    "norm": "CHENOWETH",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/94933901",
+    "lat": 45.3301993,
+    "lon": -122.5063823,
+    "name": "Redland Substation",
+    "norm": "REDLAND",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/954769079",
+    "lat": 45.534153,
+    "lon": -122.5793575,
+    "name": "82nd Avenue Substation",
+    "norm": "82ND AVENUE",
+    "operator": "TriMet",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/95768138",
+    "lat": 44.0621077,
+    "lon": -123.0570395,
+    "name": "Currin Substation",
+    "norm": "CURRIN",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/95813050",
+    "lat": 46.0397061,
+    "lon": -122.889121,
+    "name": "Trojan Substation",
+    "norm": "TROJAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/963263631",
+    "lat": 45.4305538,
+    "lon": -122.6018121,
+    "name": "Harmony Substation",
+    "norm": "HARMONY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/96851045",
+    "lat": 45.5798973,
+    "lon": -122.6675121,
+    "name": "Columbia Substation",
+    "norm": "COLUMBIA",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000;69000;12470"
+  },
+  {
+    "id": "way/970415842",
+    "lat": 42.1613852,
+    "lon": -121.7911632,
+    "name": "Snow Goose Substation",
+    "norm": "SNOW GOOSE",
+    "operator": null,
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/97339344",
+    "lat": 45.3801774,
+    "lon": -122.0446731,
+    "name": "Brightwood Substation",
+    "norm": "BRIGHTWOOD",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/979459888",
+    "lat": 44.0708482,
+    "lon": -122.9722088,
+    "name": "Hayden Bridge Switching Station South",
+    "norm": "HAYDEN BRIDGE SWITCHING STATION SOUTH",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/979503369",
+    "lat": 43.985713,
+    "lon": -123.0105772,
+    "name": "Goshen Substation",
+    "norm": "GOSHEN",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/98077525",
+    "lat": 45.4850194,
+    "lon": -122.7485916,
+    "name": "Raleigh Hills Substation",
+    "norm": "RALEIGH HILLS",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/980810307",
+    "lat": 44.0731159,
+    "lon": -123.1028589,
+    "name": "Delta Substation",
+    "norm": "DELTA",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/981082495",
+    "lat": 44.1889408,
+    "lon": -123.1041072,
+    "name": "Wilkins Corner Substation",
+    "norm": "WILKINS CORNER",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "69000"
+  },
+  {
+    "id": "way/982440460",
+    "lat": 44.0371876,
+    "lon": -123.1847825,
+    "name": "Hyundai Substation",
+    "norm": "HYUNDAI",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/983756926",
+    "lat": 43.9516163,
+    "lon": -123.1552974,
+    "name": "Fox Hollow Substation",
+    "norm": "FOX HOLLOW",
+    "operator": "Lane Electric Co-op",
+    "state": "OR",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/983822184",
+    "lat": 43.8541004,
+    "lon": -123.0459361,
+    "name": "Lynx Hollow Substation",
+    "norm": "LYNX HOLLOW",
+    "operator": "Lane Electric Co-op",
+    "state": "OR",
+    "voltage": "34500"
+  },
+  {
+    "id": "way/98398193",
+    "lat": 45.5251623,
+    "lon": -122.4457517,
+    "name": "Glisan Substation",
+    "norm": "GLISAN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/98404998",
+    "lat": 45.5347224,
+    "lon": -122.4315035,
+    "name": "Fairview Substation",
+    "norm": "FAIRVIEW",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/984923139",
+    "lat": 44.0021301,
+    "lon": -123.2412281,
+    "name": "Rainbow Valley Substation",
+    "norm": "RAINBOW VALLEY",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/984929334",
+    "lat": 44.0192522,
+    "lon": -123.4062043,
+    "name": "Noti Creek Substation",
+    "norm": "NOTI CREEK",
+    "operator": "EPUD",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/984939839",
+    "lat": 44.033404,
+    "lon": -123.5907372,
+    "name": "Walton Substation",
+    "norm": "WALTON",
+    "operator": "Blachly-Lane Electric Cooperative",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/98570950",
+    "lat": 45.5007805,
+    "lon": -122.4170252,
+    "name": "Hogan South Substation",
+    "norm": "HOGAN SOUTH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;57000;13000"
+  },
+  {
+    "id": "way/98570951",
+    "lat": 45.5009529,
+    "lon": -122.4144143,
+    "name": "Hogan North Substation",
+    "norm": "HOGAN NORTH",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/985717553",
+    "lat": 45.2274002,
+    "lon": -123.1659089,
+    "name": "Windishar Substation",
+    "norm": "WINDISHAR",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/985717554",
+    "lat": 45.2298614,
+    "lon": -123.1631129,
+    "name": "Cascade Steel Substation",
+    "norm": "CASCADE STEEL",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/985717555",
+    "lat": 45.7057504,
+    "lon": -123.8542553,
+    "name": "Mohler Substation",
+    "norm": "MOHLER",
+    "operator": "Tillamook People's Utility District",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/985717556",
+    "lat": 45.2764002,
+    "lon": -123.82364,
+    "name": "Beaver Substation",
+    "norm": "BEAVER",
+    "operator": "Tillamook People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/985717557",
+    "lat": 45.2176494,
+    "lon": -123.8429998,
+    "name": "Hebo Substation",
+    "norm": "HEBO",
+    "operator": "Tillamook People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/985717558",
+    "lat": 45.1783785,
+    "lon": -123.9163473,
+    "name": "Nestuca Substation",
+    "norm": "NESTUCA",
+    "operator": "Tillamook People's Utility District",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/985717559",
+    "lat": 45.4619301,
+    "lon": -123.1573424,
+    "name": "Scoggin Substation",
+    "norm": "SCOGGIN",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "57000"
+  },
+  {
+    "id": "way/985717560",
+    "lat": 45.4658793,
+    "lon": -123.1898891,
+    "name": "Hagg Lake Substation",
+    "norm": "HAGG LAKE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/985875407",
+    "lat": 45.6143297,
+    "lon": -122.7971051,
+    "name": "Harborton Substation",
+    "norm": "HARBORTON",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/986711579",
+    "lat": 45.5052917,
+    "lon": -122.484173,
+    "name": "Centennial Substation",
+    "norm": "CENTENNIAL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/986711580",
+    "lat": 45.5159077,
+    "lon": -122.4563562,
+    "name": "Ruby Substation",
+    "norm": "RUBY",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "115000;13000"
+  },
+  {
+    "id": "way/986734505",
+    "lat": 45.4688074,
+    "lon": -122.3273017,
+    "name": "Orient Substation",
+    "norm": "ORIENT",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/99002047",
+    "lat": 44.0509589,
+    "lon": -123.2319979,
+    "name": "Lane Substation",
+    "norm": "LANE",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "500000;230000;115000"
+  },
+  {
+    "id": "way/99002049",
+    "lat": 44.5045757,
+    "lon": -122.8658701,
+    "name": "Lebanon Substation",
+    "norm": "LEBANON",
+    "operator": null,
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/99002052",
+    "lat": 44.0635022,
+    "lon": -122.9290884,
+    "name": "Thurston Substation",
+    "norm": "THURSTON",
+    "operator": "Eugene Water & Electric Board",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/993211167",
+    "lat": 45.6779959,
+    "lon": -121.8530619,
+    "name": "Cascade Locks Substation",
+    "norm": "CASCADE LOCKS",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/99446830",
+    "lat": 44.9301198,
+    "lon": -122.9490885,
+    "name": "Bethel Substation",
+    "norm": "BETHEL",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/99446842",
+    "lat": 44.6014322,
+    "lon": -121.2684101,
+    "name": "Round Butte Substation",
+    "norm": "ROUND BUTTE",
+    "operator": "Portland General Electric",
+    "state": "OR",
+    "voltage": "500000;230000"
+  },
+  {
+    "id": "way/99449566",
+    "lat": 44.6213204,
+    "lon": -123.9231917,
+    "name": "Toledo Substation",
+    "norm": "TOLEDO",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000"
+  },
+  {
+    "id": "way/99450146",
+    "lat": 44.6211527,
+    "lon": -123.1271288,
+    "name": "Albany Substation",
+    "norm": "ALBANY",
+    "operator": "Bonneville Power Administration",
+    "state": "OR",
+    "voltage": "230000;115000"
+  },
+  {
+    "id": "way/99450148",
+    "lat": 44.6226366,
+    "lon": -123.1253489,
+    "name": "Hazelwood Substation",
+    "norm": "HAZELWOOD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/996904815",
+    "lat": 42.3281843,
+    "lon": -122.939361,
+    "name": "Jacksonville Substation",
+    "norm": "JACKSONVILLE",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/996912406",
+    "lat": 42.3885264,
+    "lon": -122.853567,
+    "name": "Vilas Road Substation",
+    "norm": "VILAS ROAD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/996920131",
+    "lat": 42.4681,
+    "lon": -122.758221,
+    "name": "Stevens Road Substation",
+    "norm": "STEVENS ROAD",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/996920555",
+    "lat": 42.4655653,
+    "lon": -122.8807238,
+    "name": "Fraley Substation",
+    "norm": "FRALEY",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/996922822",
+    "lat": 42.4286065,
+    "lon": -123.0433279,
+    "name": "Gold Hill Substation",
+    "norm": "GOLD HILL",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/996923425",
+    "lat": 42.2101313,
+    "lon": -122.7072621,
+    "name": "Ashland Substation",
+    "norm": "ASHLAND",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/996924660",
+    "lat": 42.1207916,
+    "lon": -122.5477731,
+    "name": "Green Springs Substation",
+    "norm": "GREEN SPRINGS",
+    "operator": "PacifiCorp",
+    "state": "OR",
+    "voltage": null
+  },
+  {
+    "id": "way/998953897",
+    "lat": 43.7784467,
+    "lon": -122.9653134,
+    "name": "Dorena Substation",
+    "norm": "DORENA",
+    "operator": "Lane Electric",
+    "state": "OR",
+    "voltage": "115000"
+  },
+  {
+    "id": "way/998966485",
+    "lat": 43.7108992,
+    "lon": -122.8601324,
+    "name": "Culp Creek Station",
+    "norm": "CULP CREEK STATION",
+    "operator": "Lane Electric",
+    "state": "OR",
+    "voltage": null
+  }
+]

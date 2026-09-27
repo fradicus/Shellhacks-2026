@@ -10,8 +10,8 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F19, F21, F37, F40, F42]
-  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41]
+  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42]
+  codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41, F19, F37]
 frozen_paths:
   - schemas/
   - scripts/
@@ -82,7 +82,7 @@ Continuous status reports, final acceptance, submission draft, `STOP`.
 | F02 | Georgia register (Ten-Year Plan tables, owner codes) | A | data-researcher | 1 | F00 | never |
 | F03 | Gemini extraction of DESC cards + evaluation | A | gemini-engineer | 1 | F01 | never |
 | F04 | OSM power-infrastructure inventory | A | geo-engineer | 1 | F00 | allowed |
-| F05 | Map + ranked list (fixtures, then API) | B | frontend-engineer | 1 | F00 | never |
+| F05 | Landing page and retired map cleanup (C35) | B | frontend-engineer | 1 | F00 | never |
 | F06 | Atlas loader + read API | B | technical-lead | 1 | F00 | never |
 | F07 | QA harness: independent golden + e2e smoke | C | qa-verifier | 1 | F00 | allowed |
 | F08 | Release: deploy, health, domain verification | C | release-engineer | 1 | F05 | never |
@@ -225,3 +225,22 @@ labeled official, candidate, unique-name candidate and county-reference tiers; n
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F42 | Pacific Northwest project coverage with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Time and History cleanup
+
+The user explicitly launched [issue #190](https://github.com/fradicus/Shellhacks-2026/issues/190).
+[C34](decisions/C34-time-history-cleanup.md) transfers F19/F37 to codex-local for sequential,
+behavior-preserving presentation cleanup. This reserves their scene/view/CSS work to
+that session until its feature PRs finish. Existing data and F31 claims remain intact.
+This does not launch F37 contract/award discovery or change either page's evidence semantics.
+
+## Project map retirement and Texas frontend follow-up
+
+[C35](decisions/C35-retire-project-map.md) retires the separate Project map as an active product
+requirement. Issue #193 tracks navigation removal, `/map` redirect and unused-component cleanup;
+existing F05 landing-page claims retain ownership. Do not rebuild or expand the retired map.
+The user assigned the Texas frontend follow-up to the F41/F31 Codex session. Shared F31 support
+merged in #189; the existing F19 owner delivered the compatible tentative-point renderer in #196.
+The Texas session verified their combined result instead of opening a duplicate F19 implementation.
+Issue #190 retains its separate cleanup claim. County-only anchors are excluded from `/time`;
+tentative facility centers remain eligible for display.

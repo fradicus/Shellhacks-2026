@@ -6,7 +6,7 @@ from decimal import Decimal, InvalidOperation
 
 from jsonschema import Draft202012Validator
 
-PROMPT_VERSION = "coordination-brief-v1"
+PROMPT_VERSION = "coordination-brief-v2"
 SCHEMA_VERSION = "coordination-response-v1"
 ACTIVITIES = ("crews", "equipment", "freight/mobilization", "matting", "outage window", "landowner outreach", "procurement")
 ITEM = {"type": "object", "additionalProperties": False, "required": ["text", "fact_ids"], "properties": {

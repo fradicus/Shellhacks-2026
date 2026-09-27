@@ -21,8 +21,9 @@ one product in the time view's language. Background: [C16 sponsor context](../..
 2. The time view (`/time`) is the app's main surface. The nav calls it **Overlaps** and lists it first among app
    routes; `/pair/[id]` marks it active. The URL stays `/time`, so `?pair=` links and tests keep working.
 3. `/` is labeled **Home** in the nav until the marketing page ships its own header.
-4. When the marketing page replaces `/`, the old overlap map (`web/components/map/`, `web/components/list/`) has no
-   importer left. F05 deletes it in a `[FIX-F05]` after `grep` shows no imports; not before.
+4. Project map is retired by [C35](../../decisions/C35-retire-project-map.md). Remove its navigation
+   entry in a shared contract PR; F05 redirects `/map` to `/time` and deletes unused legacy map/list
+   components after importer checks. Agents must not recreate this separate view.
 5. Folded into the time view (FIX-F19): a provenance strip (analysis date, source ids, fixture badge), a
    **Projects** drawer listing every current project including unlocated ones and unknown dates, and a no-WebGL
    fallback that keeps the ranked pair list and the drawer usable.

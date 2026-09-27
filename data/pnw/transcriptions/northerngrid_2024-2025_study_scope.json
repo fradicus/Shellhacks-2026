@@ -1,0 +1,235 @@
+{
+  "file": "northerngrid_2024-2025_study_scope",
+  "rows": [
+    {
+      "native_id": null,
+      "name": "Gateway West Segment E Phase 1: Cedar Hill – Midpoint 500 kV",
+      "page": 20,
+      "quote": "IPCO Gateway West Segment E Phase 1: Cedar Hill – Midpoint 500 kV",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Midpoint"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Segment E Phase 1: Midpoint – Hemingway #2 500 kV",
+      "page": 20,
+      "quote": "IPCO Gateway West Segment E Phase 1: Midpoint – Hemingway #2 500 kV",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Midpoint",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Segment E Phase 2: Populus – Borah 500 kV",
+      "page": 20,
+      "quote": "IPCO Gateway West Segment E Phase 2: Populus – Borah 500 kV",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Populus",
+        "Borah"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Segment E Phase 2: Borah – Midpoint 500 kV",
+      "page": 20,
+      "quote": "IPCO Gateway West Segment E Phase 2: Borah – Midpoint 500 kV",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Borah",
+        "Midpoint"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Segment E Phase 2: Cedar Hill – Hemingway 500 kV",
+      "page": 20,
+      "quote": "IPCO Gateway West Segment E Phase 2: Cedar Hill – Hemingway 500 kV",
+      "owner": "IPCO",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; IPCO"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West Segment E Phase 1: Populus – Cedar Hill 500 kV",
+      "page": 20,
+      "quote": "PACE Gateway West Segment E Phase 1: Populus – Cedar Hill 500 kV",
+      "owner": "PACE",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Populus",
+        "Cedar Hill"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; PACE"
+    },
+    {
+      "native_id": null,
+      "name": "Gateway West: Anticline – Populus 500 kV",
+      "page": 20,
+      "quote": "PACE Gateway West: Anticline – Populus 500 kV",
+      "owner": "PACE",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Anticline",
+        "Populus"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; PACE"
+    },
+    {
+      "native_id": null,
+      "name": "Apex to B2H Switching Station 500 kV Line (Apex to Maverick)",
+      "page": 20,
+      "quote": "PACW Apex to B2H Switching Station 500 kV Line (Apex to Maverick)",
+      "owner": "PACW",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Apex",
+        "Maverick"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; PACW"
+    },
+    {
+      "native_id": null,
+      "name": "Snow Goose-Full Circle 500 kV Line (Blueprint South)",
+      "page": 20,
+      "quote": "PACW Snow Goose-Full Circle 500 kV Line (Blueprint South)",
+      "owner": "PACW",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Snow Goose",
+        "Full Circle"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; PACW"
+    },
+    {
+      "native_id": null,
+      "name": "Full Circle-Apex 500 kV Line (Blueprint North)",
+      "page": 20,
+      "quote": "PACW Full Circle-Apex 500 kV Line (Blueprint North)",
+      "owner": "PACW",
+      "states": [],
+      "state_basis": null,
+      "counties": [],
+      "kind": "line",
+      "facilities": [
+        "Full Circle",
+        "Apex"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": null,
+      "status_raw": null,
+      "cost_raw": null,
+      "work_type": "transmission",
+      "section": "Appendix B; PACW"
+    }
+  ]
+}

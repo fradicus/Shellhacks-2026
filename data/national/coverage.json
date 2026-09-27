@@ -1,10 +1,18 @@
 {
   "failures": [],
   "located_count": 69,
+  "location_counts": {
+    "approximate_only": 0,
+    "candidate_centers": 69,
+    "confirmed_centers": 0,
+    "no_display_location": 1217,
+    "rejected_projects": 10
+  },
   "notes": [
     "Counts cover imported records only and do not claim nationwide project completeness.",
-    "ISO-NE county and coordinate fields are absent from the source and remain unknown.",
-    "Legacy project state assignments and every current project county remain unknown rather than inferred.",
+    "ISO-NE supplies no counties or coordinates; independently reviewed expansion evidence may locate projects.",
+    "Legacy state membership uses eligible endpoint containment in pinned Census boundaries; it retains candidate review status and does not establish full route extent. Other unknown geography stays unknown.",
+    "Located counts require a project center. Approximate-only county references remain outside that count; confirmed centers, candidate centers, approximate-only records and no-display-location records partition projects. Rejected projects are an overlapping review count, not an additional location category.",
     "Legacy discovery includes current filing versions only; superseded versions remain in the filing-change view.",
     "Census bounds and representative points frame reference geography and never become project locations.",
     "EIA-861 remains a reference-only catalog entry; no utility identity or service-area match is inferred."
@@ -33,7 +41,7 @@
         "under_construction": 31
       },
       "unknown_county_count": 47,
-      "unknown_state_count": 47
+      "unknown_state_count": 33
     },
     {
       "active_status_count": 0,
@@ -44,7 +52,7 @@
         "unknown": 208
       },
       "unknown_county_count": 208,
-      "unknown_state_count": 208
+      "unknown_state_count": 153
     },
     {
       "active_status_count": 46,

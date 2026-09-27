@@ -471,6 +471,299 @@
   margin-top: 5px;
 }
 
+.viewTabs {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface) 88%, #123a38);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.viewTab,
+.viewTabActive {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  color: var(--muted);
+  background: transparent;
+}
+
+.viewTabActive {
+  color: #f7fbfa;
+  background: #123a38;
+}
+
+.mindMap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mmIntro {
+  display: grid;
+  gap: 10px;
+}
+
+.mmIntro h2 {
+  margin: 2px 0 6px;
+  font-size: clamp(20px, 2.4vw, 28px);
+  letter-spacing: -0.03em;
+}
+
+.mmIntro p {
+  margin: 0;
+  max-width: 70ch;
+  color: var(--muted);
+}
+
+.chartGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.chartCard {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.chartCard figcaption {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.chartEmpty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.barList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.barMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.barTrack {
+  height: 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--border) 70%, transparent);
+  overflow: hidden;
+}
+
+.barFill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.donutWrap {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.donut {
+  width: 120px;
+  height: 120px;
+}
+
+.donutValue {
+  font-size: 16px;
+  font-weight: 700;
+  fill: #123a38;
+}
+
+.donutUnit {
+  font-size: 9px;
+  fill: #5f746f;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.donutLegend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.donutLegend li {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.mmTree {
+  display: grid;
+  gap: 12px;
+}
+
+.mmRegion {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(180deg, color-mix(in srgb, #123a38 6%, var(--surface)), var(--surface));
+  overflow: hidden;
+}
+
+.mmRegionHead,
+.mmStateHead,
+.mmPlaceHead,
+.mmProject,
+.mmMore {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+
+.mmRegionHead,
+.mmStateHead {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.mmRegionHead span small,
+.mmStateHead span small,
+.mmPlaceHead span small,
+.mmProject span small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.mmRegionCircle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #f7fbfa;
+  background: radial-gradient(circle at 30% 30%, #2f8f84, #123a38 70%);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.18);
+  font-weight: 700;
+}
+
+.mmStates,
+.mmPlaces,
+.mmProjects {
+  display: grid;
+  gap: 8px;
+}
+
+.mmStates {
+  padding: 0 12px 12px 28px;
+  border-top: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+}
+
+.mmState {
+  border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.mmStateDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c47a2c;
+  box-shadow: 0 0 0 4px color-mix(in srgb, #c47a2c 18%, transparent);
+}
+
+.mmCountNum {
+  font-variant-numeric: tabular-nums;
+}
+
+.mmPlaces {
+  padding: 0 10px 10px 18px;
+}
+
+.mmPlace {
+  padding: 8px 10px;
+  border-left: 3px solid color-mix(in srgb, #1f6f68 55%, var(--border));
+  background: color-mix(in srgb, var(--surface) 92%, #1f6f68);
+}
+
+.mmPlaceHead {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.mmProjects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mmProject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-top: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+
+.mmMore {
+  width: 100%;
+  padding: 8px 0;
+  color: #1f6f68;
+  font-weight: 650;
+  border-top: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+
+.mmNotes {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 @media (max-width: 1100px) {
   .filters {
     grid-template-columns: repeat(4, minmax(140px, 1fr));
@@ -480,6 +773,9 @@
   }
   .projectList {
     max-height: 65vh;
+  }
+  .chartGrid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -523,6 +819,19 @@
   .rawFields {
     grid-template-columns: 1fr;
   }
+  .mmRegionHead,
+  .mmStateHead {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .mmCountNum {
+    display: none;
+  }
+  .mmStates {
+    padding-left: 12px;
+  }
+  .donutWrap {
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 390px) {
@@ -540,5 +849,13 @@
   }
   .rowMeta {
     max-width: 118px;
+  }
+  .viewTabs {
+    width: 100%;
+  }
+  .viewTab,
+  .viewTabActive {
+    flex: 1;
+    text-align: center;
   }
 }

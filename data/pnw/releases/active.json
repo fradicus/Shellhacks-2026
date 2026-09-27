@@ -1,0 +1,18 @@
+{
+  "expected_counts": {
+    "candidate": 115,
+    "candidate_name_only": 8,
+    "distinct_points": 146,
+    "official": 53,
+    "projects": 323,
+    "sources": 56,
+    "unlocated": 147
+  },
+  "files": {
+    "projects": "ab3ade7aeb8fd97ed22a970141b0bfbdd15d880ab703e97bbffc577e9e725116",
+    "sources": "aab990d658414bd36d277aa5f08d6df72daa28c581c6af32660d1f4bda854cdd"
+  },
+  "policy": "C25",
+  "release_id": "pacific-northwest-2026-09-1",
+  "rule": "C33"
+}

@@ -10,7 +10,7 @@ import type {
 export const DEFAULT_LIMIT = 50;
 export const MAX_LIMIT = 100;
 export const MAX_EXPORT = 2_000;
-export const MAX_MAP_POINTS = 2_000;
+export const MAX_MAP_POINTS = 10_000;
 export const MAX_DATASET_PROJECTS = 10_000;
 
 const CODE = {
@@ -36,6 +36,7 @@ export const NationalQuery = z.strictObject({
   from: DateValue.optional(),
   to: DateValue.optional(),
   text: OptionalTrimmed(120),
+  view: z.enum(["map", "mindmap"]).optional(),
   page: z.coerce.number().int().min(1).max(10_000).default(1),
   limit: z.coerce.number().int().min(1).max(MAX_LIMIT).default(DEFAULT_LIMIT),
 });
@@ -57,6 +58,7 @@ export function parseNationalFilters(raw: Record<string, string | string[] | und
     from: parsed.data.from,
     to: parsed.data.to,
     text: parsed.data.text,
+    view: parsed.data.view,
     page: parsed.data.page,
     limit: parsed.data.limit,
   };
@@ -120,6 +122,7 @@ export function serializeNationalFilters(filters: NationalFilters): string {
     ["region", filters.region], ["state", filters.state], ["county", filters.county],
     ["planningregion", filters.planningRegion], ["owner", filters.owner], ["status", filters.status],
     ["from", filters.from], ["to", filters.to], ["text", filters.text],
+    ["view", filters.view && filters.view !== "map" ? filters.view : undefined],
     ["page", filters.page === 1 ? undefined : filters.page], ["limit", filters.limit === DEFAULT_LIMIT ? undefined : filters.limit],
   ];
   for (const [key, value] of entries) if (value !== undefined && value !== "") params.set(key, String(value));
@@ -138,7 +141,7 @@ export function cascadeFilters(current: NationalFilters, patch: Partial<Omit<Nat
 }
 
 export function applyFilterAction(current: NationalFilters, action: NationalFilterAction): NationalFilters | null {
-  if (action.type === "filters.reset") return { page: 1, limit: current.limit };
+  if (action.type === "filters.reset") return { page: 1, limit: current.limit, view: current.view ?? "map" };
   if (action.type === "filters.patch") return cascadeFilters(current, action.filters);
   if (action.type === "filters.clear") {
     const patch = Object.fromEntries(action.keys.map((key) => [key, undefined]));
