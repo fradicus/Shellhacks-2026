@@ -1,6 +1,19 @@
 import { expect, test as base } from "@playwright/test";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { cell, toCsv } from "../../web/app/api/export/csv";
+
+// Expected pairs come from the fixture the app serves, so a rule or fixture change (C41) never needs new ids here.
+interface FixtureMatch { _id: string; a: string; b: string; view: string; band: 0 | 1; rank: number;
+  distance_mi: number; drive_mi?: number | null; time_gap_days: number | null }
+interface FixtureProject { project_key: string; name: string; in_service: { date: string | null };
+  center: { basis: "one" | "two" } | null }
+function fixture<T>(name: string): T {
+  return JSON.parse(readFileSync(path.resolve(__dirname, `../../data/fixtures/${name}.json`), "utf8")) as T;
+}
+const historical = fixture<FixtureMatch[]>("matches").filter((m) => m.view === "historical").sort((x, y) => x.rank - y.rank);
+const projects = new Map(fixture<FixtureProject[]>("projects").map((p) => [p.project_key, p]));
+const top = historical[0];
 
 const styleUrl = "https://tiles.openfreemap.org/styles/positron";
 // Overlaps (/time) draws on the dark style; stub it the same way.
@@ -47,16 +60,15 @@ test("every navigation route returns 200 and renders without console errors", as
 });
 
 // /map was retired (C35) and redirects to /time; the sponsor pairs now live in its Legacy pairs list.
-test("six historical pairs rank correctly, select on the Overlaps map, and open evidence", async ({ page }) => {
+test("fixture historical pairs rank correctly, select on the Overlaps map, and open evidence", async ({ page }) => {
   await page.goto("/time");
   await expect(page.getByText("Sample data · fixture mode")).toBeVisible();
   const list = page.getByRole("navigation", { name: "Overlap pairs" });
   await list.getByRole("button", { name: "Legacy pairs", exact: true }).click();
-  await expect(list.getByRole("button", { name: "Historical 6", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(list.getByRole("button", { name: `Historical ${historical.length}`, exact: true })).toHaveAttribute("aria-pressed", "true");
   const rows = list.locator("ol > li > button");
-  await expect(rows).toHaveCount(6);
-  const pairs = ["DESC:DESC_3__GPC:GPC_2", "DESC:DESC_3__GPC:GPC_3", "DESC:DESC_2__GPC:GPC_1",
-    "DESC:DESC_1__GPC:GPC_1", "DESC:DESC_5__GPC:GPC_2", "DESC:DESC_5__GPC:GPC_3"];
+  await expect(rows).toHaveCount(historical.length);
+  const pairs = historical.map((m) => m._id);
   for (const [index, pair] of pairs.entries()) {
     // Each row's title leads with its two project keys, in stored rank order.
     await expect(rows.nth(index)).toHaveAttribute("title", new RegExp(`^${pair.replace("__", " · ")} · `));
@@ -64,8 +76,8 @@ test("six historical pairs rank correctly, select on the Overlaps map, and open 
   await rows.first().click();
   await expect(rows.first()).toHaveAttribute("aria-pressed", "true");
   const detail = page.getByRole("complementary", { name: "Selected pair" });
-  await expect(detail).toContainText("5.65");
-  await expect(detail).toContainText("miles apart, center to center");
+  await expect(detail).toContainText(`${(top.drive_mi ?? top.distance_mi).toFixed(2)}`);
+  await expect(detail).toContainText(/miles (apart, center to center|by road)/);
   const evidence = detail.getByRole("link", { name: /Open evidence/ });
   await expect(evidence).toHaveAttribute("href", `/pair/${encodeURIComponent(pairs[0])}`);
   await evidence.click();
@@ -76,22 +88,20 @@ test("six historical pairs rank correctly, select on the Overlaps map, and open 
 });
 
 test("pair evidence preserves sponsor facts, missing briefs, and review uncertainty", async ({ page }) => {
-  const pair = "DESC:DESC_3__GPC:GPC_2";
+  const pair = top._id;
   expect((await page.goto(`/pair/${encodeURIComponent(pair)}`))?.status()).toBe(200);
   const card = page.getByRole("region", { name: "Coordination card" });
-  await expect(card).toContainText("5.65 mi");
-  await expect(card).toContainText("in service 152 days apart");
+  await expect(card).toContainText(`${top.distance_mi.toFixed(2)} mi`);
+  if (top.time_gap_days !== null) await expect(card).toContainText(`in service ${top.time_gap_days} days apart`);
   await expect(card).toContainText("Brief unavailable");
   await expect(card).toContainText("milestone, not a construction window");
   await expect(card).toContainText("Needs review");
   await expect(page.getByText("Reviewed", { exact: true })).toHaveCount(0);
-  const desc = page.getByRole("article", { name: "Jasper - Okatie 230 kV #2: Construct" });
-  const gpc = page.getByRole("article", { name: "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS" });
-  await expect(desc).toContainText("exact date 2025-12-31");
-  await expect(desc).toContainText("mean of two located endpoints");
-  await expect(gpc).toContainText("exact date 2026-06-01");
-  await expect(gpc).toContainText("from one located endpoint");
-  for (const panel of [desc, gpc]) {
+  for (const key of [top.a, top.b]) {
+    const project = projects.get(key)!;
+    const panel = page.getByRole("article", { name: project.name });
+    await expect(panel).toContainText(`exact date ${project.in_service.date}`);
+    await expect(panel).toContainText(project.center?.basis === "one" ? "from one located endpoint" : "mean of two located endpoints");
     await expect(panel).toContainText("Projects_Overlaps.xlsx");
     await expect(panel).toContainText("Not published");
   }
@@ -102,7 +112,7 @@ test("print invokes the browser and preserves the card and citations", async ({ 
   await page.addInitScript(() => {
     window.print = () => { document.documentElement.dataset.printRequested = "true"; };
   });
-  await page.goto(`/pair/${encodeURIComponent("DESC:DESC_3__GPC:GPC_2")}`);
+  await page.goto(`/pair/${encodeURIComponent(top._id)}`);
   await page.getByRole("button", { name: "Print card" }).click();
   await expect(page.locator("html")).toHaveAttribute("data-print-requested", "true");
   await page.emulateMedia({ media: "print" });
@@ -123,9 +133,10 @@ test("CSV exports contain source and uncertainty fields and filter historical ma
   expect(response.headers()["content-disposition"]).toContain("gridbridge-matches-historical.csv");
   const csv = await response.text();
   const rows = csv.trimEnd().split("\r\n");
-  expect(rows).toHaveLength(7); // Sponsor fixture contains no multiline fields.
+  expect(rows).toHaveLength(historical.length + 1); // Sponsor fixture contains no multiline fields.
   expect(rows[0]).toContain("a_in_service_precision,a_location_confidence,a_center_basis,a_source_id,a_source_page");
-  expect(rows[1]).toContain("1,DESC:DESC_3__GPC:GPC_2,historical,<10 mi,5.650181138667416,5.65,152,needs_review");
+  expect(rows[1]).toContain([top.rank, top._id, "historical", top.band === 0 ? "<10 mi" : "10-25 mi", top.distance_mi,
+    top.distance_mi.toFixed(2), top.time_gap_days ?? "", "needs_review"].join(","));
   expect(rows.slice(1).every((row) => row.includes("sperry-sample"))).toBe(true);
   const future = await request.get("/api/export?type=matches&view=future");
   expect(future.status()).toBe(200);
@@ -181,10 +192,10 @@ test("failed basemap preserves overlaps, selection, and accessible project table
   const list = page.getByRole("navigation", { name: "Overlap pairs" });
   await list.getByRole("button", { name: "Legacy pairs", exact: true }).click();
   const rows = list.locator("ol > li > button");
-  await expect(rows).toHaveCount(6);
+  await expect(rows).toHaveCount(historical.length);
   await rows.first().click();
   await expect(rows.first()).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByRole("complementary", { name: "Selected pair" })).toContainText("5.65");
+  await expect(page.getByRole("complementary", { name: "Selected pair" })).toContainText(`${(top.drive_mi ?? top.distance_mi).toFixed(2)}`);
   await page.getByRole("region", { name: "All projects" }).getByRole("button").click();
   const drawer = page.getByRole("complementary", { name: "All projects" });
   await expect(drawer).toBeVisible();
