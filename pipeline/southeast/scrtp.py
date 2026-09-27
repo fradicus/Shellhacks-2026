@@ -6,7 +6,7 @@ From pipeline/ (needs `pdftotext`):
   uv run python -m southeast.scrtp build --cache <dir> [--check]
 DESC rows whose project ID is already a legacy DESC register ID are duplicates of that record. Santee Cooper rows
 carry no IDs: a project is its exact normalized title across decks. A project dropping out of a later deck is not
-evidence it was built. Locations are C40 OSM name candidates, never reviewed.
+evidence it was built. Locations are C45 OSM name candidates, never reviewed.
 """
 
 from __future__ import annotations
@@ -181,7 +181,7 @@ def build(cache: Path, root: Path = REPO_ROOT) -> dict:
         "retrieved_at": artifact["retrieved_at"], "sha256": artifact["sha256"], "public_status": "verified_public",
         "import_status": "imported", "access_policy": "public_document", "planning_region": "scrtp",
         "states": ["45"], "project_count": kept,
-        "notes": ["F39 dense Southeast (C40). Rows repeating a legacy DESC register ID are duplicates of it; the "
+        "notes": ["F39 dense Southeast (C45). Rows repeating a legacy DESC register ID are duplicates of it; the "
                   "legacy record keeps its own filing facts. Locations are unreviewed OSM name candidates."]})
 
     # Santee Cooper committed facilities, every deck. Identity: the exact normalized title. A project's primary
@@ -246,7 +246,7 @@ def build(cache: Path, root: Path = REPO_ROOT) -> dict:
             "sha256": artifact["sha256"], "public_status": "verified_public", "import_status": "imported",
             "access_policy": "public_document", "planning_region": "scrtp", "states": ["45"],
             "project_count": sum(p["source_id"] == deck_sid[name] for p in projects),
-            "notes": ["F39 dense Southeast (C40). Titles carry no IDs; one project per exact normalized title across "
+            "notes": ["F39 dense Southeast (C45). Titles carry no IDs; one project per exact normalized title across "
                       "decks. Dropping out of a later deck is not evidence of completion."]})
     return {"projects": projects, "sources": sources, "dispositions": dispositions}
 

@@ -1,4 +1,4 @@
-"""F39/C40 SCRTP: DESC page blocks, Santee Cooper deck tables, dates and names."""
+"""F39/C45 SCRTP: DESC page blocks, Santee Cooper deck tables, dates and names."""
 
 from southeast.dense import locate
 from southeast.scrtp import desc_rows, santee_rows, site_name, when
