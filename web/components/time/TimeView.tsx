@@ -4,6 +4,7 @@ import { useCandidatePairs } from "./useCandidatePairs";
 import { nationalTimeProjects } from "./nationalProjects";
 import { bearing } from "./sceneCamera";
 import { SceneControls } from "./SceneControls";
+import { LegendFold } from "./LegendFold";
 import { ScopeBar, type ScopeOption } from "./ScopeBar";
 import { INKS, NO_STATE_INK } from "./stateInk";
 import { formatScope, haversineMi, inScope, parseScope, planName, planOf, RULE_MI, scopeName, statesOf, type Scope, type ScopeGeography } from "./scope";
@@ -1281,47 +1282,50 @@ export function TimeView({
       ) : null}
 
       <section className={s.dock} aria-label="Legend and controls">
-        <ul className={s.legend}>
-          <li>
-            <i className={s.gBead} /> Exact in-service date
-          </li>
-          {hasRanges ? (
+        <LegendFold styles={s}>
+          <ul className={s.legend}>
             <li>
-              <i className={s.gColumn} /> Only a month or year filed: the whole span, no day picked
+              <i className={s.gBead} /> Exact in-service date
             </li>
-          ) : null}
-          <li>
-            <i className={s.gSheet} /> Today, {fmtDate(analysisDate)} · 10-mile grid
-          </li>
-          <li>
-            <i className={s.gDim} /> Day gap of the selected pair
-          </li>
-          {scope ? (
+            {hasRanges ? (
+              <li>
+                <i className={s.gColumn} /> Only a month or year filed: the whole span, no day picked
+              </li>
+            ) : null}
             <li>
-              <i className={s.gTrace} /> Outside the scope: grey ground trace, no date shown
+              <i className={s.gSheet} /> Today, {fmtDate(analysisDate)} · 10-mile grid
             </li>
-          ) : null}
-          <li className={s.utils}>
-            <span>
-              <i style={{ background: `conic-gradient(${INKS.join(", ")}, ${INKS[0]})` }} /> Color: the project&apos;s state
-            </span>
-          </li>
-          <li className={s.utils}>
-            {tierCounts.confirmed > 0 ? (
-              <span title="Location independently reviewed">
-                <i style={{ background: NO_STATE_INK, boxShadow: `0 0 0 2px #0b0f16, 0 0 0 3.2px ${NO_STATE_INK}` }} /> Confirmed
-              </span>
+            <li>
+              <i className={s.gDim} /> Day gap of the selected pair
+            </li>
+            {scope ? (
+              <li>
+                <i className={s.gTrace} /> Outside the scope: grey ground trace, no date shown
+              </li>
             ) : null}
-            <span title="Located from the owner's own filing or publication, not independently reviewed">
-              <i style={{ background: NO_STATE_INK, boxShadow: "none" }} /> Owner-published
-            </span>
-            {tierCounts.tentative > 0 ? (
-              <span title="Location not independently reviewed">
-                <i style={{ background: "transparent", boxShadow: `inset 0 0 0 1.5px ${NO_STATE_INK}` }} /> Tentative location
+            <li className={s.utils}>
+              <span>
+                <i style={{ background: `conic-gradient(${INKS.join(", ")}, ${INKS[0]})` }} /> Color: the project&apos;s state
               </span>
-            ) : null}
-          </li>
-        </ul>
+            </li>
+            <li className={s.utils}>
+              {tierCounts.confirmed > 0 ? (
+                <span title="Location independently reviewed">
+                  <i style={{ background: NO_STATE_INK, boxShadow: `0 0 0 2px #0b0f16, 0 0 0 3.2px ${NO_STATE_INK}` }} /> Confirmed
+                </span>
+              ) : null}
+              <span title="Located from the owner's own filing or publication, not independently reviewed">
+                <i style={{ background: NO_STATE_INK, boxShadow: "none" }} /> Owner-published
+              </span>
+              {tierCounts.tentative > 0 ? (
+                <span title="Location not independently reviewed">
+                  <i style={{ background: "transparent", boxShadow: `inset 0 0 0 1.5px ${NO_STATE_INK}` }} /> Tentative location
+                </span>
+              ) : null}
+            </li>
+          </ul>
+          <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through pairs · Esc clears</p>
+        </LegendFold>
         <SceneControls styles={s} flat={flat} onFlat={toggleFlat} onOverview={overview} />
         <label className={s.scrub}>
           <span>
@@ -1358,7 +1362,6 @@ export function TimeView({
             ) : null}
           </span>
         </label>
-        <p className={s.hint}>Drag to pan · right-drag or ⌃-drag to tilt · ↑ ↓ step through pairs · Esc clears</p>
       </section>
 
 
