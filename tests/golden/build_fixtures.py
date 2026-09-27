@@ -13,7 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "pipeline"))
 import openpyxl  # noqa: E402
 
 from common import REPO_ROOT, load_json, project_id, validate, write_json  # noqa: E402
-from matches.core import center, overlaps, priority_sort  # noqa: E402
+from matches.core import center, overlaps, priority_sort, route_candidates  # noqa: E402
+from matches.routes import drives_for, load_routes, route_summary  # noqa: E402
 
 WORKBOOK = REPO_ROOT / "docs/Sperry-Tech-Challenge/Projects_Overlaps.xlsx"
 FIXTURES = REPO_ROOT / "data/fixtures"
@@ -124,7 +125,10 @@ def ui_fixtures(golden):
             "location_confidence": "high" if c else None,
             "geo": {"type": "Point", "coordinates": [c["lon"], c["lat"]]} if c else None,
         })
-    matches = [m | {"review_state": "needs_review"} for m in priority_sort(overlaps(projects, ANALYSIS_DATE))]
+    routes = load_routes(FIXTURES / "routes.json")
+    drives, _ = drives_for(route_candidates(projects), routes)
+    matches = [m | {"route": route_summary(routes[m["_id"]]), "review_state": "needs_review"}
+               for m in priority_sort(overlaps(projects, ANALYSIS_DATE, drives))]
     version_changes = [{
         "_id": "DESC:0139 M,N|in_service.date|desc-2024>desc-2025",
         "project_key": "DESC:0139 M,N",

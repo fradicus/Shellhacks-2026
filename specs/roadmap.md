@@ -404,3 +404,11 @@ Play. It ships as `[FIX-F37]` PRs and changes no data or count definition.
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F54 | History parity with Overlaps | B | frontend-engineer | 7 | F37, F19, F52 | allowed |
+
+## Drive-route overlaps (C46)
+
+The user asked that a pair overlap when the driving route between the two project centers is 25 miles or less,
+and that the same rule apply to every data point. [C46](decisions/C46-drive-route-overlaps.md) applies it to the
+filing pairs (F10) and draws the stored routes on the Overlaps page (F19). The user then chose to upgrade F48's
+national pairs to the same rule as a follow-up on F48's own files; until F48 stores routes, its pairs stay
+straight-line and labeled provisional.
