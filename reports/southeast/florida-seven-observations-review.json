@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-09-27T04:06:55.639471+00:00",
+  "reviewer": "local-claude-f39-source-review",
+  "runtime": "Installed local Claude Code; restricted mode; Read tool only; no MCP tools",
+  "session_id": "a9c943f7-1e8f-4884-b7f2-8187906d46a7",
+  "review_output_sha256": "f8f0f97975205a4b16efe39ecf2d7c6f0a2e5c6cbc8971d914ed80e50cc25455",
+  "scope": "Rendered Tallahassee printed50 and FPL printed96 against seven observation rows; not raw PDF hash, whole identity, geometry or publication approval",
+  "verdict": "approved_observations_only",
+  "finding": "FPL row1 relationship mixed a producer duplicate-reconciliation note with source facts. All seven table rows otherwise matched.",
+  "producer_correction": "Moved tentative canonical match into producer_reconciliation_note and retained only source footnote meaning in relationship. Independent reviewer confirmed F1 resolved.",
+  "other_limits": [
+    "Tallahassee miles are unqualified, not asserted circuit or route miles.",
+    "FPL owner means line ownership, not terminal ownership.",
+    "FPL Oasis-Quarry500kV and230kV components are distinct despite shared endpoints.",
+    "No past planned date is evidence of completion.",
+    "All draft coordinates/current statuses remain null; publishable remains false."
+  ],
+  "correction_recheck": {
+    "reviewer": "local-claude-f39-source-review",
+    "session_id": "a9c943f7-1e8f-4884-b7f2-8187906d46a7",
+    "output_sha256": "1c0f355a5907d2805f66f18e663d19471cc34420507faa5ae0cb8ff954cbe67f",
+    "receipt_recorded_at": "2026-09-27T04:11:46.346052+00:00",
+    "verdict": "approved_observations_only",
+    "limits": "Reviewer compared corrected fields with the previously inspected version; did not reopen images, recompute PDF hashes, verify URLs, or approve identity, location, activation or publication."
+  }
+}

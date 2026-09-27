@@ -13,7 +13,7 @@
       "nominal_voltage_kv": 230,
       "capacity_mva": 1195,
       "source_project_group": "Whidden to Sweatt",
-      "relationship": "existing Sweatt-Whidden identity requires reconciliation",
+      "relationship": "Whidden to Sweatt project identified in source footnote 1",
       "center": null,
       "current_status": null,
       "review_status": "producer-extracted; independent review pending",
@@ -24,7 +24,8 @@
         "pdf_page": 110,
         "printed_page": "96",
         "locator": "Table III.E.1 row 1"
-      }
+      },
+      "producer_reconciliation_note": "Potential match to existing southeast:fl-dep:ta22-19; cross-source identity reconciliation is not approved by these observations."
     },
     {
       "row": 2,
@@ -122,5 +123,6 @@
         "locator": "Table III.E.1 row 5"
       }
     }
-  ]
+  ],
+  "review_status": "independently reviewed source observations only; identity, location and publication not approved"
 }
