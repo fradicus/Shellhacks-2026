@@ -36,13 +36,20 @@ def project(row: dict, source: dict, facilities: list[dict]) -> dict:
     title = " ".join(s for s in (raw["Location"].title(),
                                 f"{raw['Voltage']} kV" if raw["Voltage"] else "",
                                 raw["Equipment"].title()) if s)
-    site = re.search(r"\bat (?:the )?([A-Z][\w.'’]*(?: [A-Z][\w.'’]*){0,3}) (?:[Ss]ubstation|[Ss]tation)\b",
+    sites = re.findall(r"\bat (?:the )?([A-Z][\w.'’]*(?: [A-Z][\w.'’]*){0,3}) (?:[Ss]ubstation|[Ss]tation)\b",
                      raw["Description"])
-    if site:
+    site_equipment = raw["Equipment"] in {"Circuit Breaker", "Transformer", "Capacitor", "Bus", "Substation",
+                                                   "Substation equipment", "Disconnect Switch", "Relay",
+                                                   "Communication Equipment", "Reactive Device"}
+    if len(sites) == 1 and site_equipment:
         # A breaker at Elroy is at that site even when Location names the entire Elroy–Hosensack circuit.
-        title = f"{site[1]} Substation"
+        title = f"{sites[0]} Substation"
     center, candidate = locate(title, raw["Description"], facilities, [],
                                voltages_kv(title, f"{raw['Voltage']} kV"), DATASET)
+    if site_equipment and candidate["kind"] == "line":
+        # A circuit label does not tell us which terminal contains the site equipment.
+        center = None
+        candidate["reason"] = "site_equipment_work_site_unresolved"
     p["center"] = center
     p["location_review"] = "unreviewed" if center else "unlocated"
     p["location_candidate"] = candidate

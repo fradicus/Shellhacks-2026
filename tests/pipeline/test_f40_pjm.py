@@ -43,3 +43,22 @@ def test_explicit_work_site_wins_over_circuit_location():
     p = project(row, source, facilities)
     assert p["center"]["basis"] == "source_point"
     assert p["center"]["lat"] == 40.0 and p["center"]["lon"] == -77.0
+
+    raw["Description"] = "Replace a circuit breaker on the Alpha - Bravo circuit."
+    p = project(row, source, facilities)
+    assert p["center"] is None
+    assert p["location_candidate"]["reason"] == "site_equipment_work_site_unresolved"
+
+def test_committed_pjm_rows_reconcile_and_do_not_duplicate_mid_atlantic():
+    from common import REPO_ROOT, load_json
+
+    folder = REPO_ROOT / "data/greatlakes/pjm"
+    rows = load_json(folder / "dispositions.json")
+    projects = load_json(folder / "projects.json")
+    existing = load_json(REPO_ROOT / "data/expansion/mid-atlantic/releases/active.json")["projects"]
+    published = {p["native_id"] for p in existing if p["source_id"] == "mid-atlantic:pjm-construction"}
+    assert len(rows) == len({r["native_id"] for r in rows}) == 15662
+    assert {r["project_id"] for r in rows if r["disposition"] == "accepted"} == {p["_id"] for p in projects}
+    assert not published & {p["native_id"] for p in projects}
+    assert all(p["states"] == ["42"] for p in projects)
+    assert all(p["location_review"] == ("unreviewed" if p["center"] else "unlocated") for p in projects)

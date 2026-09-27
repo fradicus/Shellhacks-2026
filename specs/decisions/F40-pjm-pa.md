@@ -15,3 +15,18 @@ The previous F40 increment (#309) is merged and loaded. F39 #319 implementation 
 waiting for the unrelated main-red repair; this is the only new implementation in this session.
 
 Undo: remove the PJM producer, adapter and its data, rebuild the Great Lakes release. No other feature changes.
+
+## Final audit
+
+The final adapter adds 2,966 PA upgrade/component records, 1,203 candidate centers and 503 distinct coordinates.
+It preserves all 1,475 existing F40 projects and their centers. There are 106 partial line candidates,
+211 two-endpoint means and 886 site points; all new locations remain unreviewed. Raw status and separate
+actual/projected/revised dates remain visible. The source has no reliable publication date, so it stays null.
+
+An explicit single `at … substation/station` description overrides a circuit Location for site equipment.
+If site equipment still parses as a circuit, the work site is unresolved and the center stays null (98 records).
+This rule applies only to the new PJM adapter; the deferred shared one-endpoint policy is unchanged.
+Three source-described distribution-only rows are excluded. See the committed summary for all status cohorts
+and unresolved reasons, and [the ten-record source/geometry sample](../../reports/greatlakes/pjm-pa-sample.md).
+
+F39 #319 subsequently merged and its Atlas readback succeeded. This supersedes the waiting status above.
