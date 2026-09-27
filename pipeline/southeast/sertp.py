@@ -9,7 +9,7 @@ the 2025 report renamed most projects, so an older row without that exact link i
 own (a dropout cannot be told from a rename, and neither means built). D15 still excludes the 2026 preliminary
 report; the 2025 final plan carries "(CEII)" page headings and is not used (specs/decisions/F39-sertp-editions.md).
 Rows give no state: each Balancing Authority Area's footprint states are matched together, and a project's states
-come from its matched OSM facility. A Southern row naming the same place as exactly one legacy Georgia Power
+come from its matched OSM or HIFLD facility. A Southern row naming the same place as exactly one legacy Georgia Power
 project (legacy:GPC:*) is recorded as that project's duplicate, not a new project.
 OSM data (c) OpenStreetMap contributors, ODbL 1.0.
 """
@@ -24,12 +24,13 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import quote
 
-from california.caiso import named
+from california.caiso import match, named
 from common import REPO_ROOT, load_json, write_json
 from greatlakes.match import DUPLICATE_METERS, _meters, candidate_center, facility_key, voltages_kv
 from greatlakes.shared import fetch_into, fetch_osm, osm_extract, verify_cache
 
 from .dense import SE_STATES, locate, slug, write_batch
+from .hifld import load as load_hifld
 
 BATCH = "sertp"
 PREFIX = "southeast:sertp"
@@ -176,12 +177,17 @@ def locate_name(name: str) -> str:
 
 def fetch(cache: Path) -> None:
     cache.mkdir(parents=True, exist_ok=True)
-    manifest: dict = {}
+    manifest = load_json(cache / "manifest.json") if (cache / "manifest.json").exists() else {}
+    if manifest:
+        verify_cache(cache, list(manifest))
     for edition, (_, path) in EDITIONS.items():
-        fetch_into(cache, f"sertp-{edition}.pdf", SITE + quote(path), manifest)
+        if f"sertp-{edition}.pdf" not in manifest:
+            fetch_into(cache, f"sertp-{edition}.pdf", SITE + quote(path), manifest)
+            write_json(cache / "manifest.json", manifest)
     for state in OSM_STATES:
-        fetch_osm(cache, state, manifest)
-    write_json(cache / "manifest.json", manifest)
+        if f"osm-{state.lower()}.json" not in manifest:
+            fetch_osm(cache, state, manifest)
+            write_json(cache / "manifest.json", manifest)
 
 
 def footprint_facilities(states: list[str], by_state: dict[str, list[dict]]) -> tuple[list[dict], set[str]]:
@@ -214,7 +220,8 @@ def rejected(endpoint: dict, text: str, kv: set[int], from_name: bool) -> str | 
     return None
 
 
-def place(row: dict, by_state: dict[str, list[dict]]) -> tuple[dict | None, dict, list[str]]:
+def place(row: dict, by_state: dict[str, list[dict]], fallback: dict[str, list[dict]] | None = None
+          ) -> tuple[dict | None, dict, list[str]]:
     baa = row["baa"]
     facilities, repeated = footprint_facilities(FOOTPRINT[baa], by_state)
     state_of = {f["id"]: f["state"] for f in facilities}
@@ -222,18 +229,29 @@ def place(row: dict, by_state: dict[str, list[dict]]) -> tuple[dict | None, dict
     center, candidate = locate(text, row["description"], facilities, OPERATOR_KEYS[baa])
     from_name = named(text, row["description"])["from"] == "name"
     endpoints = candidate["endpoints"]
+    hifld, hifld_repeated = footprint_facilities(FOOTPRINT[baa], fallback) if fallback else ([], set())
     for endpoint in endpoints:
         if endpoint["status"] == "no_facility" and endpoint.get("norm") in repeated:
             endpoint["status"] = "ambiguous_in_footprint"
-        elif endpoint["status"] == "matched":
-            endpoint["facility"]["state"] = state_of[endpoint["facility"]["id"]]
+        if endpoint["status"] == "no_facility" and fallback:
+            if endpoint.get("norm") in hifld_repeated:
+                endpoint["status"] = "ambiguous_in_footprint"
+            else:
+                hit = match(endpoint["name"], hifld, OPERATOR_KEYS[baa], set(candidate["voltages_kv"]))
+                endpoint.clear()
+                endpoint.update(hit)
+        if endpoint["status"] == "matched":
+            endpoint["facility"]["state"] = endpoint["facility"].get("state") or state_of[endpoint["facility"]["id"]]
             if why := rejected(endpoint, text, set(candidate["voltages_kv"]), from_name):
                 endpoint["status"] = why
     found = [e for e in endpoints if e["status"] == "matched"]
-    if center and len(found) < sum("facility" in e for e in endpoints):
+    if fallback or (center and len(found) < sum("facility" in e for e in endpoints)):
         center = candidate_center(candidate["kind"], found) if found else None
         candidate["tier"] = None if not center else "candidate" if all(
             e["corroboration"] != ["unique_in_state"] for e in found) else "candidate_unique_name"
+    if any(e["facility"]["id"].startswith("hifld/") for e in found):
+        center["evidence"] = center["evidence"].replace("OSM hifld/", "HIFLD substation ")
+        candidate["dataset"] += "; HIFLD public substations, data/southeast/hifld/sources.json"
     candidate["footprint_states"] = FOOTPRINT[baa]
     return center, candidate, sorted({SE_STATES[e["facility"]["state"]] for e in found})
 
@@ -290,6 +308,7 @@ def event(pid: str, native: str, edition: str, row: dict, artifact: dict, title:
 def build(cache: Path) -> dict:
     manifest = load_json(cache / "manifest.json")
     verify_cache(cache, [name for name, row in manifest.items() if "sha256" in row])
+    fallback = load_hifld(OSM_STATES)
     by_state = {s: osm_extract(load_json(cache / f"osm-{s.lower()}.json"), s) for s in OSM_STATES}
     editions: dict[str, list[dict]] = {}
     checks: dict[str, tuple[int, list[str]]] = {}
@@ -339,7 +358,7 @@ def build(cache: Path) -> dict:
                 events.append(event(pid, native, edition, observed, manifest[f"sertp-{edition}.pdf"],
                                     EDITIONS[edition][0]))
                 last = observed["year"]
-        center, candidate, states = place(row, by_state)
+        center, candidate, states = place(row, by_state, fallback)
         tag = OWNER_TAG.match(row["name"])
         owner = tag[1] if tag and tag[1] in OWNERS else None
         projects.append({
@@ -394,7 +413,7 @@ def build(cache: Path) -> dict:
                 "F39 dense Southeast (C45). " + ("Current edition: one project per block." if edition == CURRENT else
                                                  "History only: rows whose name a current-edition row repeats add "
                                                  "planned_milestone events; other rows are excluded."),
-                "Rows give no state or owner column: states come from the matched OSM facility within the Balancing "
+                "Rows give no state or owner column: states come from the matched OSM or HIFLD facility within the Balancing "
                 "Authority Area's footprint; unlocated rows keep states []. Owner is only a name tag such as \"GTC:\"."]})
     return {"projects": projects, "sources": sources, "dispositions": dispositions}
 

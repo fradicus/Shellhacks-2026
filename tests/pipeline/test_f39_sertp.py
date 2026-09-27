@@ -122,3 +122,62 @@ def test_legacy_duplicates_need_exactly_one_legacy_project_and_one_claimant():
     matched, kept = legacy_duplicates(current + rows("FOO - BAR 115 KV, REBUILD", baa="TVA"), legacy)
     assert {j: p["_id"] for j, p in matched.items()} == {0: "legacy:GPC:1", 2: "legacy:GPC:4"}
     assert sorted(kept) == [1, 4, 5]
+
+
+def test_hifld_fallback_preserves_osm_and_footprint_guards():
+    from southeast.sertp import FOOTPRINT, place
+
+    # Invented facilities exercise matching only; none is public project data.
+    def facility(id, name, state="TN", lat=35.0, voltage="161000"):
+        return {"id": id, "name": name, "state": state, "lat": lat, "lon": -86.0,
+                "operator": None, "voltage": voltage}
+
+    states = FOOTPRINT["TVA"]
+    osm = {s: [] for s in states}
+    fallback = {s: [] for s in states}
+    project = {"baa": "TVA", "name": "FOO 161 KV, REBUILD", "description": "Replace equipment."}
+    fallback["TN"] = [facility("hifld/1", "Foo")]
+    center, evidence, states_found = place(project, osm, fallback)
+    assert center and "HIFLD substation 1" in center["evidence"] and states_found == ["47"]
+    assert evidence["endpoints"][0]["facility"]["id"] == "hifld/1"
+    # A second same-name site anywhere in the BAA footprint makes the fallback ambiguous.
+    fallback["AL"] = [facility("hifld/2", "Foo", "AL", lat=33.0)]
+    assert place(project, osm, fallback)[0] is None
+    fallback["AL"] = []
+    # Existing OSM matches win even if HIFLD puts the name elsewhere.
+    osm["TN"] = [facility("node/1", "Foo", lat=36.0)]
+    assert place(project, osm, fallback) == place(project, osm)
+    # OSM ambiguity cannot be rescued by an apparently unique HIFLD name.
+    osm["AL"] = [facility("node/2", "Foo", "AL", lat=33.0)]
+    assert place(project, osm, fallback)[0] is None
+    osm = {s: [] for s in states}
+    fallback["TN"][0]["voltage"] = "115000"
+    assert place(project, osm, fallback)[0] is None
+
+
+def test_fetch_records_completed_sources_before_network_failure(tmp_path, monkeypatch):
+    import hashlib
+
+    import pytest
+    from southeast import sertp
+
+    monkeypatch.setattr(sertp, "EDITIONS", {"fixture": ("Invented fixture", "fixture.pdf")})
+    monkeypatch.setattr(sertp, "OSM_STATES", ["TN"])
+    calls = []
+
+    def download(cache, name, url, manifest):
+        calls.append(name)
+        body = b"invented source fixture"
+        (cache / name).write_bytes(body)
+        manifest[name] = {"sha256": hashlib.sha256(body).hexdigest(), "url": url}
+
+    def unavailable(*args):
+        raise OSError("fixture network failure")
+
+    monkeypatch.setattr(sertp, "fetch_into", download)
+    monkeypatch.setattr(sertp, "fetch_osm", unavailable)
+    for _ in range(2):
+        with pytest.raises(OSError, match="fixture network failure"):
+            sertp.fetch(tmp_path)
+    assert calls == ["sertp-fixture.pdf"]
+    assert "sertp-fixture.pdf" in load_json(tmp_path / "manifest.json")

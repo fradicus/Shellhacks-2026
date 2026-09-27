@@ -99,3 +99,10 @@ Use the existing Python stack and national projection. Transmission and associat
 first, documented history retained. Frontend redesign is deferred; required existing-map integration is included.
 No density quota, guessed geometry, private data, paid subscription or new credential is required. Report actual
 source-bounded completeness; the unknown denominator of all real-world projects must never become an invented total.
+
+### SERTP fallback (part 13)
+
+The dense SERTP batch may use the public HIFLD substation layer when OSM has no matching facility name.
+Preserve existing OSM matches and all footprint ambiguity, operator, voltage and name-truncation guards.
+HIFLD geometry never creates project records. Pin geometry pages and verify deterministic replay;
+report gained/lost/moved centers and retain unreviewed tiers. See `F39-sertp-hifld.md` in the decisions directory.
