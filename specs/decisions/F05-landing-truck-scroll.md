@@ -9,7 +9,7 @@ The marketing `/` page already lives under F05's `web/app/page.tsx` and renders 
 3. Open a new feature id for marketing-only work.
 
 ## Choice
-Option 2. Extend F05 `owns` with `web/components/landing/` via `[C24]` (frozen golden ownership expectation updated in the same contract). Keep the existing hero strings because they already match the landing e2e contract and the prior GridBridge HTML adaptation in `road-scene.js`; the attached `GridBridge_24df.html` was not present on the agent VM. Implement continuous right-to-left truck travel on the road canvas in `[FIX-F05]`. `prefers-reduced-motion` parks the truck; Pause freezes mid-route.
+Option 2. Extend F05 `owns` with `web/components/landing/` via `[C24]` (frozen golden ownership expectation updated in the same contract). Hero copy comes from the reference HTML final overlay (`docs/GridBridge-reference.html` in the Project store): brand `GridBridge`, tag `Every mile. Connected.`, primary CTA `See how it works`, scroll hint `Scroll`. The HTML ghost CTA `Replay` is omitted (no replayable scroll-story on the Next landing). Continuous right-to-left truck travel stays on the road canvas. `prefers-reduced-motion` parks the truck; Pause freezes mid-route. Landing e2e heading expectations in `tests/e2e/` are F07-owned and need a follow-up `[FIX-F07]`.
 
 ## Undo
 Revert the owns amendment, the golden expectation, and restore the fixed-`xf` road scene.

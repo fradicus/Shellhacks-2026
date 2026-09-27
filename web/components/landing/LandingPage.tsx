@@ -12,17 +12,16 @@ export function LandingPage({fixtureMode}:{fixtureMode:boolean}) {
     <main className={s.main} id="main-content">
       <section className={s.hero} aria-labelledby="hero-title">
         <div className={s.heroContent}>
-          <p className={s.eyebrow}><span className={s.statusDot}/> TRANSMISSION INTELLIGENCE, CONNECTED</p>
-          <h1 id="hero-title">Every mile.<br/><span>Connected.</span></h1>
-          <p className={s.heroDescription}>The next opportunity could be just down the road.<br className={s.desktopBreak}/> See where utility projects meet—and where<br className={s.desktopBreak}/> a conversation could change the plan.</p>
+          {/* Hero strings from docs/GridBridge-reference.html final overlay (h1 + .tag + primary CTA). */}
+          <h1 id="hero-title">GridBridge</h1>
+          <p className={s.heroTag}>Every mile. Connected.</p>
           <div className={s.actions}>
-            <Link href="/time" className={s.primary}>Explore the overlaps <Arrow/></Link>
-            <a href="#how-it-works" className={s.secondary}>See how it works <span aria-hidden="true">↘</span></a>
+            <a href="#how-it-works" className={s.primary}>See how it works <Arrow/></a>
           </div>
           <p className={s.heroNote}>{fixtureMode ? "Sample data available · No account needed" : "Public-source evidence · No account needed"}</p>
         </div>
         <HeroScene/>
-        <a href="#how-it-works" className={s.scrollHint}>SCROLL TO CONNECT <span aria-hidden="true">↓</span></a>
+        <a href="#how-it-works" className={s.scrollHint}>Scroll <span aria-hidden="true">↓</span></a>
       </section>
 
       <div className={s.proofStrip}>
