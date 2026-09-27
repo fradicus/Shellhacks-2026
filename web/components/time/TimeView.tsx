@@ -16,6 +16,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { NationalProjectSummary, NationalExplorerPayload } from "@/lib/national/types";
 import type { NationalTier } from "./nationalProjects";
 import { NationalProjectEvidence } from "./NationalProjectEvidence";
+import { BEATS, pickStoryPairs, STORY_STATE, type BeatId } from "./story";
 import type { InService, Utility, View } from "@/lib/types";
 import type { Emphasis, LabelSpec, Projected, SweepState, TimeItem, TimeLayer } from "./timeLayer";
 import { DAYS_PER_YEAR, dayOf, epochYear, fmtDays, span, type Span } from "./timeScale";
@@ -84,14 +85,24 @@ const monthOf = (epoch: number, years: number) =>
 const fmtDate = (iso: string) =>
   new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
-/** Camera padding that keeps the data clear of the panels: left column on desktop, bottom sheet on phones. */
-function overviewPadding(el: HTMLElement | null) {
+/** Camera padding that keeps the data clear of the panels: left column on desktop, bottom sheet on phones. In the
+ * story the panels are gone and only the title card at the bottom needs room. */
+function overviewPadding(el: HTMLElement | null, cinema = false) {
   const w = el?.clientWidth ?? 1400;
   const h = el?.clientHeight ?? 800;
+  if (cinema) return w <= 860 ? { top: 60, bottom: Math.round(h * 0.34), left: 16, right: 16 } : { top: 70, bottom: 200, left: 90, right: 90 };
   return w <= 860
     ? { top: 70, bottom: Math.round(h * 0.5), left: 12, right: 96 }
     : { top: 60, bottom: 150, left: Math.min(460, w * 0.34), right: 420 };
 }
+
+/** "The first call to make" only when nothing stored says otherwise (F52). */
+const verdict = (p: TimePair) =>
+  p.candidate ? "A provisional lead to check, not a confirmed overlap."
+    : p.review_state === "rejected" ? "An audit rejected this pair, so treat it as a reference, not a call."
+      : p.view === "historical" ? "At least one of the two is already in service."
+        : p.view === "tentative" ? "A location or a date here is uncertain, so check it first."
+          : "The first call to make.";
 
 /** Drawing only: a date before the axis ground lies on the ground; a span crossing it starts at the ground. */
 function clampToGround(sp: Span): Span {
@@ -167,7 +178,7 @@ export function TimeView({
   const [trayOpen, setTrayOpen] = useState(false);
   const [projectQuery, setProjectQuery] = useState("");
   const [copied, setCopied] = useState(false);
-  const [tour, setTour] = useState<number | null>(null);
+  const [beat, setBeat] = useState<{ i: number; id: BeatId; ms: number; title: React.ReactNode; text: string; names?: string } | null>(null);
   const [asOf, setAsOf] = useState<number | null>(null);
   const [booth, setBooth] = useState(false);
   const boothRef = useRef(false);
@@ -186,6 +197,11 @@ export function TimeView({
   const incoming = useRef<string | null | undefined>(undefined);
   const selectPairRef = useRef<(id: string | null) => void>(() => {});
   const stopTourRef = useRef<() => void>(() => {});
+  const overviewRef = useRef<() => void>(() => {});
+  // The story is running (F53): cameras use cinema padding and data refreshes don't replay the intro.
+  const touring = useRef(false);
+  const dawnCount = useRef<HTMLElement>(null);
+  const stepRef = useRef<(i: number) => void>(() => {});
   const scopeRead = useRef(false);
 
   // --- facts, derived once --------------------------------------------------------------------------------------------
@@ -341,6 +357,10 @@ export function TimeView({
             }
           }
           const layer = createTimeLayer(ml, {
+            onDawn: (st) => {
+              const el = dawnCount.current;
+              if (el) el.textContent = st ? st.shown.toLocaleString("en-US") : (el.dataset.total ?? "");
+            },
             onSweep: (st: SweepState) => {
               const el = sweepEl.current;
               if (!el) return;
@@ -423,8 +443,16 @@ export function TimeView({
     const map = mapRef.current;
     if (!ready || !layer || !map) return;
     layer.setItems(items, todayYears);
+    // A candidate page adding projects mid-story must not replay the intro over the film.
+    if (touring.current) return;
     const ms = reduced.current ? 0 : 2200;
     layer.setHeight(1, ms);
+    // `?story` (F53 7): the demo link plays the film once, over any ?pair or ?scope.
+    if (new URLSearchParams(window.location.search).has("story")) {
+      incoming.current = null;
+      const id = window.setTimeout(() => stepRef.current(0), 0);
+      return () => window.clearTimeout(id);
+    }
     const want = incoming.current ?? new URLSearchParams(window.location.search).get("pair");
     const wanted = pairs.find((p) => p.id === want);
     if (!want?.startsWith("npc:")) incoming.current = null;
@@ -623,7 +651,7 @@ export function TimeView({
                   left: 40,
                   right: 40,
                 }
-              : { top: 300, bottom: 150, left: 500, right: 460 },
+              : touring.current ? { top: 260, bottom: 210, left: 160, right: 460 } : { top: 300, bottom: 150, left: 500, right: 460 },
           bearing: brg,
           maxZoom: 10.5,
         },
@@ -672,6 +700,10 @@ export function TimeView({
     if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : OVERVIEW_PITCH, bearing: -16, duration: reduced.current ? 0 : 1600 });
   }, [bbox, flat]);
 
+  useEffect(() => {
+    overviewRef.current = overview;
+  }, [overview]);
+
   const toggleFlat = (next: boolean) => {
     setFlat(next);
     const ms = reduced.current ? 0 : 1100;
@@ -689,7 +721,7 @@ export function TimeView({
         [scopeBox[0], scopeBox[1]],
         [scopeBox[2], scopeBox[3]],
       ],
-      { padding: overviewPadding(container.current), bearing: -16, maxZoom: 9.5 },
+      { padding: overviewPadding(container.current, touring.current), bearing: -16, maxZoom: 9.5 },
     );
     if (cam) map.flyTo({ ...cam, pitch: flat ? 0 : OVERVIEW_PITCH, bearing: -16, duration: reduced.current ? 0 : 1600, essential: true });
     layerRef.current?.sweepIn(reduced.current ? 0 : 1600, 250);
@@ -795,15 +827,16 @@ export function TimeView({
         e.preventDefault();
         const i = visible.findIndex((p) => p.id === pairId);
         const next = e.key === "ArrowDown" ? (i + 1) % visible.length : (i <= 0 ? visible.length : i) - 1;
-        if (tourTimer.current) window.clearTimeout(tourTimer.current);
-        setTour(null);
+        stopTourRef.current();
         selectPair(visible[next].id);
         return;
       }
       if (e.key === "Escape") {
         setTrayOpen(false);
-        if (tourTimer.current) window.clearTimeout(tourTimer.current);
-        setTour(null);
+        if (tourTimer.current) {
+          stopTourRef.current();
+          return;
+        }
         // One layer at a time: an armed pin, then the selection, then the scope.
         if (pinArmed) setPinArmed(false);
         else if (pairId || projectKey) {
@@ -827,87 +860,180 @@ export function TimeView({
     window.history.replaceState(window.history.state, "", u);
   }, [pairId]);
 
-  // --- the story: a short guided flight for people who have never read a transmission filing ---------------------------
-  // Every caption is built from stored facts: the top-ranked pair, then the pair with the widest day gap.
-  const story = useMemo(() => {
-    const first = visible[0];
-    const wide = [...visible]
-      .filter((p) => p.id !== first?.id && p.time_gap_days !== null)
-      .sort((x, y) => y.time_gap_days! - x.time_gap_days!)[0];
-    const name = (k: string) => byKey.get(k)?.name ?? k;
-    const facts = (p: TimePair) =>
-      `${miles(p.distance_mi)} apart on the ground, ${p.time_gap_days === null ? "day gap unknown" : fmtDays(p.time_gap_days) + " apart in service"}.`;
-    const names = (p: TimePair) => `${name(p.a)}  ·  ${name(p.b)}`;
-    const steps: { pair: string | null; kicker: string; text: string; names?: string }[] = [
-      {
-        pair: null,
-        kicker: "The map",
-        text: `${located.length} utility projects from public filings, each raised to its filed in-service date. The glass sheet is today.`,
-      },
-    ];
-    // "The first call to make" only when nothing stored says otherwise (F52).
-    const verdict = (p: TimePair) =>
-      p.candidate ? "A provisional lead to check, not a confirmed overlap."
-        : p.review_state === "rejected" ? "An audit rejected this pair, so treat it as a reference, not a call."
-          : p.view === "historical" ? "At least one of the two is already in service."
-            : p.view === "tentative" ? "A location or a date here is uncertain, so check it first."
-              : "The first call to make.";
-    if (first)
-      steps.push({ pair: first.id, kicker: "The top lead", text: `${facts(first)} ${verdict(first)}`, names: names(first) });
-    if (wide && first)
-      steps.push({
-        pair: wide.id,
-        kicker: wide.distance_mi < first.distance_mi ? "Closer, but not sooner" : "Near, but not together",
-        text: `${facts(wide)} Same neighborhood, different years, so it ranks lower.${wide.review_state === "rejected" ? " An audit rejected it." : ""}`,
-        names: names(wide),
-      });
-    steps.push({ pair: null, kicker: "The rule", text: candidateMode ? "Provisional candidates are under 25 straight-line miles apart. Routes and construction schedules have not been checked." : "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
-    return steps;
-  }, [visible, byKey, located.length, candidateMode]);
+  // --- the story (F53): a 35-second film. The country wakes east to west; then one state, its best-timed pair, a
+  // closer pair years apart, and back out. Every caption is built from drawn and stored values; only the state is named.
+  const beatTimers = useRef<number[]>([]);
+  const storyPairs = useRef<{ lead: TimePair; contrast: TimePair | null } | null>(null);
+  const waitUntil = useRef(0);
+  const clearBeatTimers = () => {
+    beatTimers.current.forEach((t) => window.clearTimeout(t));
+    beatTimers.current = [];
+  };
+  const later = (fn: () => void, ms: number) => void beatTimers.current.push(window.setTimeout(fn, ms));
+  const dropStoryParam = () => {
+    const u = new URL(window.location.href);
+    if (!u.searchParams.has("story")) return;
+    u.searchParams.delete("story");
+    window.history.replaceState(window.history.state, "", u);
+  };
 
   const stopTour = useCallback(() => {
     if (tourTimer.current) window.clearTimeout(tourTimer.current);
     tourTimer.current = null;
-    setTour(null);
+    if (!touring.current) return;
+    // Interrupted: hand back a clean national view, never a scope or pair the story picked (F53 5).
+    touring.current = false;
+    beatTimers.current.forEach((t) => window.clearTimeout(t));
+    beatTimers.current = [];
+    waitUntil.current = 0;
+    setBeat(null);
+    setAsOf(null);
+    mapRef.current?.stop();
+    layerRef.current?.dawnIn(0);
+    overviewRef.current();
+    dropStoryParam();
   }, []);
   useEffect(() => {
     stopTourRef.current = stopTour;
   }, [stopTour]);
-  const stepRef = useRef<(i: number) => void>(() => {});
-  const goStep = useCallback(
-    (i: number) => {
-      const step = story[i];
-      if (tourTimer.current) window.clearTimeout(tourTimer.current);
-      if (!step) {
-        // Booth mode loops the story; otherwise it ends.
-        if (boothRef.current) {
-          tourTimer.current = window.setTimeout(() => stepRef.current(0), 1500);
-          return;
-        }
-        tourTimer.current = null;
-        setTour(null);
+  const orbit = (deg: number, ms: number, after: number) =>
+    later(() => {
+      const map = mapRef.current;
+      if (map && !reduced.current) map.rotateTo(map.getBearing() + deg, { duration: ms, easing: (t) => t });
+    }, after);
+
+  function goStep(i: number) {
+    const def = BEATS[i];
+    clearBeatTimers();
+    if (tourTimer.current) window.clearTimeout(tourTimer.current);
+    if (!def) {
+      // Booth mode loops the story; otherwise it ends where beat 7 left it, on the nation.
+      if (boothRef.current) {
+        tourTimer.current = window.setTimeout(() => stepRef.current(0), 1500);
         return;
       }
-      setTour(i);
-      if (step.pair) selectPair(step.pair);
-      else overview();
-      if (i === 0) layerRef.current?.sweepIn(reduced.current ? 0 : SWEEP_MS, 900);
-      // Booth mode: a slow orbit once the camera has arrived.
-      if (boothRef.current && !reduced.current) {
-        const map = mapRef.current;
-        window.setTimeout(() => {
-          if (boothRef.current && map) map.rotateTo(map.getBearing() + 24, { duration: 4600, easing: (t) => t });
-        }, 2100);
+      touring.current = false;
+      tourTimer.current = null;
+      setBeat(null);
+      dropStoryParam();
+      return;
+    }
+    touring.current = true;
+    const skipTo = (j: number) => stepRef.current(j);
+    const show = (title: React.ReactNode, text: string, names?: string) => setBeat({ i, title, text, names, ms: def.ms, id: def.id });
+    const map = mapRef.current;
+    const motion = !reduced.current;
+    const stateName = geography.states.find((st) => st.fips === STORY_STATE)?.name;
+    const count = (kind: "region" | "state", code: string) =>
+      scopeOptions.find((o) => o.scope?.kind === kind && o.scope.code === code)?.count ?? 0;
+    const name = (k: string) => byKey.get(k)?.name ?? k;
+    const names = (p: TimePair) => `${name(p.a)}  ·  ${name(p.b)}`;
+
+    switch (def.id) {
+      case "nation": {
+        storyPairs.current = null;
+        setTrayOpen(false);
+        setPinArmed(false);
+        setSharedId(null);
+        setAsOf(null);
+        setPreview(null);
+        setHover(null);
+        setPairId(null);
+        setProjectKey(null);
+        setScope(null);
+        incoming.current = null;
+        if (!candidateMode) setCandidateMode(true);
+        if (searchQuery) {
+          setSearchQuery("");
+          setSearchDraft("");
+        }
+        if (flat) toggleFlat(false);
+        const cam = map?.cameraForBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: overviewPadding(container.current, true), bearing: -16 });
+        if (map && cam) {
+          map.flyTo({ ...cam, pitch: OVERVIEW_PITCH, bearing: -16, duration: motion ? 1200 : 0, essential: true });
+          orbit(20, def.ms - 1250, 1250);
+        }
+        layerRef.current?.dawnIn(motion ? 5800 : 0, 300, bbox);
+        const n = located.length.toLocaleString("en-US");
+        show(<><b ref={dawnCount} data-total={n}>{motion ? "0" : n}</b> grid projects on file</>,
+          "Each rises to its filed in-service date. The glass is today.");
+        break;
       }
-      tourTimer.current = window.setTimeout(() => stepRef.current(i + 1), 7000);
-    },
-    [story, selectPair, overview],
-  );
+      case "region": {
+        const code = regionOf.get(STORY_STATE);
+        const region = geography.regions.find((r) => r.code === code);
+        if (!code || !region) return skipTo(i + 1);
+        setScope({ kind: "region", code });
+        orbit(6, def.ms - 1700, 1650);
+        show(`${region.name} · ${count("region", code).toLocaleString("en-US")} projects`,
+          "Narrow to a region, a state, a grid plan, or 25 miles around a pin.");
+        break;
+      }
+      case "state": {
+        if (!stateName) return skipTo(i + 1);
+        setScope({ kind: "state", code: STORY_STATE });
+        orbit(6, def.ms - 1700, 1650);
+        show(`${stateName} · ${count("state", STORY_STATE).toLocaleString("en-US")} projects`,
+          "Projects under 25 straight-line miles apart become candidate pairs.");
+        break;
+      }
+      case "pair": {
+        // The state's candidate page loads during beat 3; give it up to 3 s more, then skip to the close.
+        if (!candidates.page || candidates.loading) {
+          waitUntil.current ||= performance.now() + 3000;
+          if (performance.now() < waitUntil.current) {
+            tourTimer.current = window.setTimeout(() => stepRef.current(i), 250);
+            return;
+          }
+        }
+        waitUntil.current = 0;
+        const picked = candidates.page && !candidates.loading ? pickStoryPairs(candidatePairs) : null;
+        if (!picked) return skipTo(BEATS.length - 1);
+        storyPairs.current = picked;
+        const { lead } = picked;
+        selectPair(lead.id);
+        show(lead.time_gap_days! <= 7 ? "Same week" : lead.time_gap_days! <= 31 ? "Same month" : "Best timing here",
+          `${miles(lead.distance_mi)} apart on the ground, ${fmtDays(lead.time_gap_days!)} apart in service.`, names(lead));
+        break;
+      }
+      case "evidence": {
+        const lead = storyPairs.current?.lead;
+        const a = lead && byKey.get(lead.a);
+        const b = lead && byKey.get(lead.b);
+        if (!lead || !a || !b) return skipTo(BEATS.length - 1);
+        orbit(8, def.ms, 0);
+        const who = owner(a) === owner(b) ? `${owner(a)} filed both` : `Two owners, ${owner(a)} and ${owner(b)}`;
+        const where = a.source_id === b.source_id ? `, in one filing.` : `, in two filings.`;
+        show("The evidence", `${who}${where} ${verdict(lead)}`,
+          a.source_id === b.source_id ? a.source_id : `${a.source_id}  ·  ${b.source_id}`);
+        break;
+      }
+      case "contrast": {
+        const c = storyPairs.current?.contrast;
+        const lead = storyPairs.current?.lead;
+        if (!c || !lead) return skipTo(i + 1);
+        selectPair(c.id);
+        const delayed = [c.a, c.b].map((k) => byKey.get(k)?.national?.project.status).find((st) => st && /delay/i.test(st));
+        show(c.distance_mi < lead.distance_mi ? "Closer, but not sooner" : "Near, but not together",
+          `${miles(c.distance_mi)} apart, but ${fmtDays(c.time_gap_days!)} apart in service.${delayed ? ` One is filed as “${delayed}”.` : ""}`,
+          names(c));
+        break;
+      }
+      case "out": {
+        storyPairs.current = null;
+        overview();
+        show("Every number traces to a public filing", "Search a project, or drop a pin.");
+        break;
+      }
+    }
+    tourTimer.current = window.setTimeout(() => stepRef.current(i + 1), def.ms);
+  }
   useEffect(() => {
     stepRef.current = goStep;
-  }, [goStep]);
+  });
   useEffect(() => () => {
     if (tourTimer.current) window.clearTimeout(tourTimer.current);
+    beatTimers.current.forEach((t) => window.clearTimeout(t));
   }, []);
 
   // Booth mode: idle for a while and the view presents itself; any input hands it back.
@@ -917,6 +1043,8 @@ export function TimeView({
     const arm = () => {
       window.clearTimeout(idle);
       idle = window.setTimeout(() => {
+        // A story someone started (Play, ?story) is already presenting; check again later.
+        if (touring.current) return arm();
         boothRef.current = true;
         setBooth(true);
         stepRef.current(0);
@@ -927,7 +1055,6 @@ export function TimeView({
         boothRef.current = false;
         setBooth(false);
         stopTour();
-        mapRef.current?.stop();
       }
       arm();
     };
@@ -948,7 +1075,8 @@ export function TimeView({
 
   // --- render ---------------------------------------------------------------------------------------------------------
   return (
-    <main className={s.stage} data-national-dataset={national.dataset ?? undefined}>
+    <main className={s.stage} data-national-dataset={national.dataset ?? undefined}
+      data-cinema={beat ? "1" : undefined} data-beat={beat?.id}>
       <div
         ref={container}
         className={s.map}
@@ -1034,8 +1162,8 @@ export function TimeView({
           </p>
         </details>
         </details>
-        <button type="button" className={s.play} onClick={() => (tour === null ? goStep(0) : stopTour())} disabled={!ready}>
-          <span aria-hidden>{tour === null ? "▶" : "■"}</span> {tour === null ? "Play the story" : "Stop the story"}
+        <button type="button" className={s.play} onClick={() => goStep(0)} disabled={!ready}>
+          <span aria-hidden>▶</span> Play the story
         </button>
         {fixtureMode ? <p className={s.fixture}>Sample data · fixture mode</p> : null}
       </header>
@@ -1405,21 +1533,23 @@ export function TimeView({
       </section>
 
 
-      {tour !== null && story[tour] ? (
-        <div className={s.caption} role="status" aria-live="polite" key={tour}>
-          {booth ? (
-            <p className={s.booth}>
-              <i aria-hidden /> Presenting · move the mouse to explore
-            </p>
-          ) : null}
+      {beat ? (
+        <div className={s.caption} style={{ ["--beat-ms" as string]: `${beat.ms}ms` }}>
           <p className={s.kicker}>
-            {String(tour + 1).padStart(2, "0")} / {String(story.length).padStart(2, "0")} · {story[tour].kicker}
+            {booth ? <span className={s.booth}><i aria-hidden /> Presenting · move the mouse to explore</span> : null}
+            <span>{String(beat.i + 1).padStart(2, "0")} / {String(BEATS.length).padStart(2, "0")}</span>
+            <button type="button" className={s.captionStop} onClick={stopTour}>
+              <span aria-hidden>■</span> Stop the story
+            </button>
           </p>
-          <p className={s.captionText}>{story[tour].text}</p>
-          {story[tour].names ? <p className={s.captionNames}>{story[tour].names}</p> : null}
+          <div className={s.captionBody} key={beat.i} role="status" aria-live="polite">
+            <p className={s.captionTitle}>{beat.title}</p>
+            <p className={s.captionText}>{beat.text}</p>
+            {beat.names ? <p className={s.captionNames}>{beat.names}</p> : null}
+          </div>
           <div className={s.progress} aria-hidden>
-            {story.map((_, i) => (
-              <i key={i} data-state={i < tour ? "done" : i === tour ? "now" : "next"} />
+            {BEATS.map((b, i) => (
+              <i key={b.id} data-state={i < beat.i ? "done" : i === beat.i ? "now" : "next"} />
             ))}
           </div>
         </div>

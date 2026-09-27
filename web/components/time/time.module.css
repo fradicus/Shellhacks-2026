@@ -898,7 +898,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 10px;
+  margin: 0;
   font-family: var(--mono);
   font-size: 9.5px;
   letter-spacing: 0.1em;
@@ -1086,30 +1086,100 @@
   cursor: default;
 }
 
+/* --- the story (F53): cinema mode and the lower-third title card ------------------------------------------------ */
+/* Panels fade out by animation, not transition: their entrance animations fill both ways and would pin opacity at 1.
+ * Leaving cinema restores those animations, so the panels make their normal entrance again. Hidden panels also leave
+ * the accessibility tree and tab order (visibility). */
+.stage[data-cinema] .left,
+.stage[data-cinema] .dock,
+.stage[data-cinema] .scope,
+.stage[data-beat="nation"] .detail,
+.stage[data-beat="region"] .detail,
+.stage[data-beat="state"] .detail,
+.stage[data-beat="pair"] .detail,
+.stage[data-beat="out"] .detail {
+  animation: cinemaOut 0.5s both ease;
+  pointer-events: none;
+}
+@keyframes cinemaOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .caption {
   position: absolute;
   z-index: 3;
   left: 50%;
-  bottom: 30px;
-  width: min(540px, calc(100% - 880px));
-  min-width: 340px;
+  bottom: 34px;
+  width: min(760px, calc(100% - 48px));
   translate: -50% 0;
-  padding: 16px 20px 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(191, 233, 255, 0.16);
-  background: rgba(7, 10, 16, 0.84);
+  padding: 16px 24px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(191, 233, 255, 0.14);
+  background: linear-gradient(180deg, rgba(7, 10, 16, 0.62), rgba(7, 10, 16, 0.86));
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
   animation: rise 0.7s both cubic-bezier(0.2, 0.7, 0.2, 1);
 }
+/* The detail panel is the evidence in beats 5 and 6; the card steps left of it. */
+.stage[data-beat="evidence"] .caption,
+.stage[data-beat="contrast"] .caption {
+  left: calc(50% - 190px);
+  width: min(700px, calc(100% - 480px));
+}
 .kicker {
-  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 8px;
   font-family: var(--mono);
   font-size: 9.5px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--sheet);
+}
+.captionStop {
+  margin-left: auto;
+  padding: 3px 8px;
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-3);
+  font: inherit;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+.captionStop:hover {
+  color: var(--ink);
+  border-color: rgba(191, 233, 255, 0.35);
+}
+.captionBody {
+  animation: beatIn 0.35s both ease-out;
+}
+@keyframes beatIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.captionTitle {
+  margin: 0 0 6px;
+  font-family: var(--display);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.captionTitle b {
+  font-weight: inherit;
+  font-variant-numeric: tabular-nums;
+  color: #ffd9a0;
+  text-shadow: 0 0 24px rgba(255, 217, 160, 0.45);
 }
 .captionText {
   margin: 0;
@@ -1117,7 +1187,7 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 1.45;
-  color: var(--ink);
+  color: var(--ink-2);
   text-wrap: pretty;
 }
 .captionNames {
@@ -1125,13 +1195,14 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 11.5px;
+  font-family: var(--mono);
+  font-size: 11px;
   color: var(--ink-3);
 }
 .progress {
   display: flex;
   gap: 5px;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 .progress i {
   flex: 1;
@@ -1150,7 +1221,7 @@
   inset: 0;
   background: var(--sheet);
   transform-origin: left;
-  animation: fill 7s linear both;
+  animation: fill var(--beat-ms, 7s) linear both;
 }
 @keyframes fill {
   from {
@@ -1161,14 +1232,24 @@
   }
 }
 @media (max-width: 860px) {
-  .caption {
-    top: auto;
-    bottom: calc(48% + 24px);
+  .caption,
+  .stage[data-beat="evidence"] .caption,
+  .stage[data-beat="contrast"] .caption {
+    left: 50%;
+    bottom: 14px;
     width: calc(100% - 24px);
-    min-width: 0;
+    padding: 12px 14px;
+  }
+  .captionTitle {
+    font-size: 24px;
   }
   .captionText {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  /* Phones have no room for the pair panel beside the card: the card carries the facts. */
+  .stage[data-cinema] .detail {
+    animation: cinemaOut 0.5s both ease;
+    pointer-events: none;
   }
 }
 .l_todayShort .labelInner {
