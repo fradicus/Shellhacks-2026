@@ -114,8 +114,9 @@
   animation: pop 0.5s 0.5s both cubic-bezier(0.2, 0.9, 0.2, 1.2);
 }
 
+/* Below the dimension line: the bead labels sit above the pillar tops, so equal heights can't collide (F52). */
 .l_gap .labelInner {
-  transform: translate(16px, -50%);
+  transform: translate(16px, 10px);
   font-family: var(--display);
   font-weight: 800;
   font-size: 40px;
@@ -348,6 +349,16 @@
 .pairNums span + span {
   color: var(--ink-3);
 }
+/* Filing pairs name their review state; rejected rows stay in rank order, dimmed (F52). */
+.pairNums small[data-review="rejected"] {
+  color: #ffb3b3;
+}
+.pairNums small[data-review="confirmed"] {
+  color: #a6f0c0;
+}
+.pairList button[data-review="rejected"] .pairNames {
+  opacity: 0.55;
+}
 
 .empty {
   margin: 14px 18px 16px;
@@ -394,6 +405,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
+  /* Starts below Copy link and the close button, whatever the digit count (F52). */
+  margin-top: 18px;
   margin-bottom: 14px;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);

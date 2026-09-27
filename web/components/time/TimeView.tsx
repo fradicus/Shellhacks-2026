@@ -58,8 +58,10 @@ const VIEWS: { v: View; label: string; help: string }[] = [
 const REVIEW: Record<string, string> = {
   needs_review: "Needs review",
   confirmed: "Confirmed by audit",
-  rejected: "Not confirmed by audit",
+  rejected: "Rejected by audit",
 };
+/** Short form for the pair rows; the full label rides in the title. Order never depends on it (F52). */
+const REVIEW_SHORT: Record<string, string> = { needs_review: "Needs review", confirmed: "Confirmed", rejected: "Rejected" };
 const miles = (d: number) => `${d.toFixed(2)} mi`;
 /** F37: History opens around this project's stored center, as a research aid. */
 const pastWork = (key: string) => `/history?origin=${encodeURIComponent(key)}`;
@@ -356,9 +358,11 @@ export function TimeView({
                 labelEls.current.get(l[0])?.setAttribute("data-side", near ? "l" : "c");
                 labelEls.current.get(r[0])?.setAttribute("data-side", near ? "r" : "c");
               }
-              // Keep bead and hover labels in the open band between the side panels.
+              // Keep bead and hover labels in the open band between the side panels and below the scope bar.
               const box = container.current?.getBoundingClientRect();
               if (!box) return;
+              const pill = container.current?.parentElement?.querySelector(`.${s.scopePill}`);
+              const top = pill ? pill.getBoundingClientRect().bottom - box.top + 8 : 8;
               const lo = leftRef.current && box.width > 860 ? leftRef.current.getBoundingClientRect().right - box.left + 10 : 8;
               const hi = detailRef.current ? detailRef.current.getBoundingClientRect().left - box.left - 10 : box.width - 8;
               for (const [id, p] of pos) {
@@ -370,7 +374,11 @@ export function TimeView({
                 const side = el.dataset.side ?? (id === "hover" ? "r" : "c");
                 const x0 = side === "l" ? p.x - w - 14 : side === "r" ? p.x + 14 : p.x - w / 2;
                 const dx = x0 < lo ? lo - x0 : x0 + w > hi ? Math.max(hi - (x0 + w), lo - x0) : 0;
-                inner.style.translate = `${dx.toFixed(1)}px 0`;
+                // The label's own top before last frame's push; push it down only as far as the bar needs.
+                const y0 = inner.getBoundingClientRect().top - box.top - Number(inner.dataset.dy ?? 0);
+                const dy = y0 < top ? top - y0 : 0;
+                inner.dataset.dy = String(dy);
+                inner.style.translate = `${dx.toFixed(1)}px ${dy.toFixed(1)}px`;
               }
             },
           });
@@ -810,13 +818,20 @@ export function TimeView({
         text: `${located.length} utility projects from public filings, each raised to its filed in-service date. The glass sheet is today.`,
       },
     ];
+    // "The first call to make" only when nothing stored says otherwise (F52).
+    const verdict = (p: TimePair) =>
+      p.candidate ? "A provisional lead to check, not a confirmed overlap."
+        : p.review_state === "rejected" ? "An audit rejected this pair, so treat it as a reference, not a call."
+          : p.view === "historical" ? "At least one of the two is already in service."
+            : p.view === "tentative" ? "A location or a date here is uncertain, so check it first."
+              : "The first call to make.";
     if (first)
-      steps.push({ pair: first.id, kicker: "The top lead", text: `${facts(first)} The first call to make.`, names: names(first) });
+      steps.push({ pair: first.id, kicker: "The top lead", text: `${facts(first)} ${verdict(first)}`, names: names(first) });
     if (wide && first)
       steps.push({
         pair: wide.id,
         kicker: wide.distance_mi < first.distance_mi ? "Closer, but not sooner" : "Near, but not together",
-        text: `${facts(wide)} Same neighbourhood, different years, so it ranks lower.`,
+        text: `${facts(wide)} Same neighborhood, different years, so it ranks lower.${wide.review_state === "rejected" ? " An audit rejected it." : ""}`,
         names: names(wide),
       });
     steps.push({ pair: null, kicker: "The rule", text: candidateMode ? "Provisional candidates are under 25 straight-line miles apart. Routes and construction schedules have not been checked." : "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
@@ -964,7 +979,7 @@ export function TimeView({
             <dd>{located.length}</dd>
           </div>
           <div>
-            <dt>Legacy unlocated</dt>
+            <dt>Not located</dt>
             <dd>{notLocated}</dd>
           </div>
           <div>
@@ -1030,7 +1045,8 @@ export function TimeView({
                   <button
                     type="button"
                     aria-pressed={p.id === pairId}
-                    title={`${p.a} · ${p.b}`}
+                    data-review={p.candidate ? undefined : (p.review_state ?? "needs_review")}
+                    title={p.candidate ? `${p.a} · ${p.b}` : `${p.a} · ${p.b} · ${REVIEW[p.review_state ?? "needs_review"]}`}
                     onClick={() => {
                       stopTour();
                       selectPair(p.id === pairId ? null : p.id);
@@ -1057,7 +1073,8 @@ export function TimeView({
                     <span className={s.pairNums}>
                       <span>{miles(p.distance_mi)}</span>
                       {p.candidate ? <small title="Location evidence tier">{[a, b].some((x) => x?.national?.tier === "tentative") ? "Tentative"
-                        : [a, b].some((x) => x?.national?.tier === "official") ? "Published" : "Confirmed"}</small> : null}
+                        : [a, b].some((x) => x?.national?.tier === "official") ? "Published" : "Confirmed"}</small>
+                        : <small data-review={p.review_state ?? "needs_review"}>{REVIEW_SHORT[p.review_state ?? "needs_review"]}</small>}
                       <span>{p.time_gap_days === null ? "gap —" : `${p.time_gap_days.toLocaleString("en-US")} d`}</span>
                     </span>
                   </button>
@@ -1114,8 +1131,8 @@ export function TimeView({
             </button>
           </header>
           <p className={s.drawerNote}>
-            Legacy projects and national map points: confirmed, owner-published or tentative (hollow beads). Unlocated legacy projects are listed below.
-            Other national records remain searchable in the national explorer.
+            Every project on the map (confirmed, owner-published, or tentative as hollow beads), then the DESC and Georgia Power
+            filings we couldn&rsquo;t locate. Search every imported record in the national explorer.
           </p>
           <input
             type="search"
@@ -1158,7 +1175,7 @@ export function TimeView({
               ))}
             </ul>
             {scope ? null : <h3>
-              Legacy unlocated <span>{listed.unplaced.length}</span>
+              Not located <span>{listed.unplaced.length}</span>
             </h3>}
             <ul>
               {listed.unplaced.map((p) => (
@@ -1184,11 +1201,11 @@ export function TimeView({
           <div className={s.figures}>
             <div>
               <strong>{pair.distance_mi.toFixed(2)}</strong>
-              <span>{pair.candidate ? "straight-line miles between centers" : "miles apart, centre to centre"}</span>
+              <span>{pair.candidate ? "straight-line miles between centers" : "miles apart, center to center"}</span>
             </div>
             <div>
               <strong>{pair.time_gap_days === null ? "—" : pair.time_gap_days.toLocaleString("en-US")}</strong>
-              <span>{pair.time_gap_days === null ? "day gap unknown: a date isn't exact" : "days between in-service dates"}</span>
+              <span>{pair.time_gap_days === null ? "day gap unknown: a date isn't exact" : pair.time_gap_days === 1 ? "day between in-service dates" : "days between in-service dates"}</span>
             </div>
           </div>
           {[pa, pb].map((p) => (
