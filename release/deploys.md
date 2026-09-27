@@ -1,6 +1,6 @@
 # Deployment verification
 
-The Vercel origin is live, but its deployed revision trails the current green `main`. The passing row below proves
+The Vercel origin is live, but it reports a different, unmapped revision from the reviewed `main`. The passing row below proves
 the listed deployed commit and infrastructure checks only. It does not prove that later fixes, every application
 workflow, Google integrations, or contract upload are live. No qualifying custom domain has been verified.
 
@@ -12,7 +12,8 @@ workflow, Google integrations, or contract upload are live. No qualifying custom
 
 The 2026-09-26 row is retained as dated context from before the Vercel origin was supplied. The authenticated
 Vercel account available during the 2026-09-27 review could not manage this exact host, and its alias lookup returned
-404. The deployment owner must redeploy the current green `main` in the existing Vercel project with `web` as the
+404. The deployment owner must redeploy the intended `main` revision after its exact-revision required CI passes,
+in the existing Vercel project with `web` as the
 project root, then rerun the verifier against the full deployed commit. Infrastructure is alive; current fixes are
 not live until that check passes.
 

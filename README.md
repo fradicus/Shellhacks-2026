@@ -14,10 +14,11 @@ with the database up and active dataset `9548c28191b2ac4eb703ec9283c31e364a911bc
 client bundles were scanned without the verifier's credential markers.
 
 That pass verifies the reported deployed commit, not the merged fixes on `main`. A check at `2026-09-27T11:59:39Z`
-targeting `1fbcb5d97369a651d8853753aca4caeda1b4638f` failed because the health endpoint still reported the older
+targeting `1fbcb5d97369a651d8853753aca4caeda1b4638f` failed because the health endpoint reported a different, unmapped
 commit. The infrastructure is live, but the current fixes are not live. The authenticated Vercel account available
 for this review cannot manage this exact host, and its alias lookup returned 404; the deployment owner must redeploy
-the current green `main` from the existing Vercel project with `web` as the project root. No qualifying custom
+the intended `main` revision after that exact revision's required CI passes, using the existing Vercel project with
+`web` as the project root. No qualifying custom
 domain has been verified. See [deployment evidence](release/deploys.md) and the
 [judge-readiness report](release/judge-readiness.md) for the release boundary.
 
@@ -77,7 +78,8 @@ uv run python -m osm
 
 `uv run python -m gemini_extract` exercises the no-call path. A real batch request requires the separately
 authorized `--live` flag plus `GEMINI_API_KEY` and `GEMINI_MODEL`; no live Gemini run is claimed in the current
-release. Generated records are validated against the schemas before they are accepted.
+release for extraction. The separate committed brief-generation evidence is described in the judge-readiness
+report. Generated records are validated against the schemas before they are accepted.
 
 The `load` GitHub Action is the only writer to MongoDB Atlas. It validates committed data, stages it under the Git
 revision, and changes the active-dataset pointer only after the complete load succeeds. Local application runs use
