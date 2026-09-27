@@ -1,5 +1,7 @@
 "use client";
 
+import { useCandidatePairs } from "./useCandidatePairs";
+import { nationalTimeProjects } from "./nationalProjects";
 import { bearing } from "./sceneCamera";
 import { SceneControls } from "./SceneControls";
 import { ScopeBar, type ScopeOption } from "./ScopeBar";
@@ -39,6 +41,7 @@ export interface TimePair {
   band: 0 | 1;
   view: View;
   rank: number | null;
+  candidate?: boolean;
   review_state: "needs_review" | "confirmed" | "rejected" | null;
 }
 
@@ -97,8 +100,10 @@ function describe(sp: Span, raw: string | null): string {
 }
 
 export function TimeView({
-  projects,
-  pairs,
+  projects: baseProjects,
+  pairs: legacyPairs,
+  initialScope,
+  initialPairId,
   analysisDate,
   fixtureMode,
   national,
@@ -107,6 +112,8 @@ export function TimeView({
   legacyAvailable,
   pairsAvailable,
 }: {
+  initialScope: string | null;
+  initialPairId: string | null;
   projects: TimeProject[];
   pairs: TimePair[];
   analysisDate: string;
@@ -119,8 +126,23 @@ export function TimeView({
   national: { available: boolean; mode: NationalExplorerPayload["mode"]; dataset: string | null;
     drawn: number; inService: number; unlocated: number; truncated: boolean };
 }) {
-  const [view, setView] = useState<View>(() => VIEWS.find(({ v }) => pairs.some((p) => p.view === v))?.v ?? "future");
-  const [scope, setScope] = useState<Scope | null>(null);
+  const [view, setView] = useState<View>(() => VIEWS.find(({ v }) => legacyPairs.some((p) => p.view === v))?.v ?? "future");
+  const [scope, setScope] = useState<Scope | null>(() => parseScope(initialScope));
+  const [candidateMode, setCandidateMode] = useState(!initialPairId || initialPairId.startsWith("npc:"));
+  const [sharedId, setSharedId] = useState(initialPairId?.startsWith("npc:") ? initialPairId : null);
+  const candidates = useCandidatePairs(national.dataset, scope ? formatScope(scope) : null, candidateMode, sharedId);
+  const candidatePairs = useMemo<TimePair[]>(() => (candidates.page?.pairs ?? []).map((p) => ({ ...p,
+    candidate: true, view: "tentative", review_state: null })), [candidates.page]);
+  const pairs = useMemo<TimePair[]>(() => candidateMode ? [...candidatePairs,
+    ...(candidates.shared?.pairs ?? []).filter((p) => !candidatePairs.some((x) => x.id === p.id)).map((p): TimePair =>
+      ({ ...p, candidate: true, view: "tentative", review_state: null }))] : legacyPairs,
+    [candidateMode, candidatePairs, candidates.shared, legacyPairs]);
+  const projects = useMemo(() => {
+    const known = new Set(baseProjects.map((p) => p.key));
+    const extra = [...new Map([...(candidates.page?.projects ?? []), ...(candidates.shared?.projects ?? [])]
+      .filter((p) => !known.has(p._id)).map((p) => [p._id, p])).values()];
+    return extra.length ? [...baseProjects, ...nationalTimeProjects(extra)] : baseProjects;
+  }, [baseProjects, candidates.page, candidates.shared]);
   const [pinArmed, setPinArmed] = useState(false);
   const [pairId, setPairId] = useState<string | null>(null);
   const [projectKey, setProjectKey] = useState<string | null>(null);
@@ -257,8 +279,8 @@ export function TimeView({
     [scopedPairs],
   );
   const visible = useMemo(
-    () => scopedPairs.filter((p) => p.view === view).sort((x, y) => (x.rank ?? 1e9) - (y.rank ?? 1e9) || x.id.localeCompare(y.id)),
-    [scopedPairs, view],
+    () => candidateMode ? candidatePairs : scopedPairs.filter((p) => p.view === view).sort((x, y) => (x.rank ?? 1e9) - (y.rank ?? 1e9) || x.id.localeCompare(y.id)),
+    [scopedPairs, view, candidateMode, candidatePairs],
   );
   const pair = pairId ? (pairs.find((p) => p.id === pairId) ?? null) : null;
   const previewed = !pair && preview ? (pairs.find((p) => p.id === preview) ?? null) : null;
@@ -384,7 +406,7 @@ export function TimeView({
     layer.setHeight(1, ms);
     const want = incoming.current ?? new URLSearchParams(window.location.search).get("pair");
     const wanted = pairs.find((p) => p.id === want);
-    incoming.current = null;
+    if (!want?.startsWith("npc:")) incoming.current = null;
     if (!wanted) {
       // The timelapse: pillars rise in the order they were filed to enter service, while the camera tilts.
       layer.sweepIn(reduced.current ? 0 : SWEEP_MS, 700);
@@ -433,7 +455,7 @@ export function TimeView({
     if (!ready || !layer) return;
     layer.setFocus({
       emphasis,
-      links: visible
+      links: (candidateMode ? [pair ?? previewed].filter((p): p is TimePair => !!p) : visible)
         .filter((p) => !(pairId || projectKey) || p.id === pairId || p.a === projectKey || p.b === projectKey)
         .map((p) => ({
         a: p.a,
@@ -447,7 +469,7 @@ export function TimeView({
       dimension: dimension && pair ? { a: pair.a, b: pair.b } : null,
       ruler: rulerAt,
     });
-  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt]);
+  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt, candidateMode]);
 
   // Pillar height follows the zoom (yearPxAt); a selected pair's own top sets the cap so its day gap fills the room.
   useEffect(() => {
@@ -508,7 +530,7 @@ export function TimeView({
       lat: pa.center.lat + RULE_DEG_LAT * Math.cos(far),
       years: 0,
       kind: "rule",
-      text: "25 mi overlap rule",
+      text: pair.candidate ? "25 mi provisional circle" : "25 mi overlap rule",
     });
     if (dimension && !flat)
       labelSpecs.push({
@@ -603,6 +625,13 @@ export function TimeView({
   useEffect(() => {
     selectPairRef.current = selectPair;
   }, [selectPair]);
+  const openedShared = useRef<string | null>(null);
+  useEffect(() => {
+    if (!ready || !sharedId || !candidates.shared || openedShared.current === sharedId) return;
+    openedShared.current = sharedId;
+    incoming.current = null;
+    selectPairRef.current(sharedId);
+  }, [ready, sharedId, candidates.shared]);
 
   const overview = useCallback(() => {
     setPairId(null);
@@ -659,6 +688,8 @@ export function TimeView({
     (next: Scope | null) => {
       stopTourRef.current();
       setPinArmed(false);
+      setSharedId(null);
+      incoming.current = null;
       setPairId(null);
       setPreview(null);
       if (next) setScope(next);
@@ -782,9 +813,9 @@ export function TimeView({
         text: `${facts(wide)} Same neighbourhood, different years, so it ranks lower.`,
         names: names(wide),
       });
-    steps.push({ pair: null, kicker: "The rule", text: "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
+    steps.push({ pair: null, kicker: "The rule", text: candidateMode ? "Provisional candidates are under 25 straight-line miles apart. Routes and construction schedules have not been checked." : "Geography decides an overlap. Time only ranks it. Every number here is traced to a filing page." });
     return steps;
-  }, [visible, byKey, located.length]);
+  }, [visible, byKey, located.length, candidateMode]);
 
   const stopTour = useCallback(() => {
     if (tourTimer.current) window.clearTimeout(tourTimer.current);
@@ -883,7 +914,7 @@ export function TimeView({
         {pair && pa && pb
           ? `Selected: ${pa.name} and ${pb.name}. ${miles(pair.distance_mi)} apart; ${
               pair.time_gap_days === null ? "day gap unknown" : fmtDays(pair.time_gap_days) + " between in-service dates"
-            }. ${REVIEW[pair.review_state ?? "needs_review"]}.`
+            }. ${pair.candidate ? "Provisional candidate" : REVIEW[pair.review_state ?? "needs_review"]}.`
           : project
             ? `Selected project: ${project.name}.`
             : ""}
@@ -915,8 +946,9 @@ export function TimeView({
           When, <em>above</em> where.
         </h1>
         <p className={s.lede}>
-          Every located project rises to its filed in-service date. Distance on the ground decides an overlap; height only
-          shows timing.
+          Every located project rises to its filed in-service date. {candidateMode
+            ? "Nearby candidates are under 25 straight-line miles apart; height shows filed timing."
+            : "Distance on the ground decides an overlap; height only shows timing."}
         </p>
         <dl className={s.stats}>
           <div>
@@ -940,15 +972,17 @@ export function TimeView({
           {sources.map((id) => <div key={id}><code>{id}</code></div>)}
         </details>
         {!legacyAvailable ? <p role="status" className={s.provenance}>Legacy projects unavailable; national projects remain available.</p> : null}
-        <p className={s.provenance}>
-          {national.available ? <>{national.drawn} national projects not yet in service included ({tierCounts.confirmed} confirmed,
+        <details className={s.provenance}>
+          <summary>National coverage and location confidence</summary>
+          <p>{national.available ? <>{national.drawn} national projects not yet in service included ({tierCounts.confirmed} confirmed,
             {" "}{tierCounts.official} owner-published, {tierCounts.tentative} tentative; only confirmed ones are independently reviewed).
             {national.inService ? <> {national.inService} already in service are in <Link href="/history">History →</Link></> : null}
             {national.mode === "snapshot" ? " Committed snapshot mode." : ""}
             {national.truncated ? " National map limit reached; more records are available in the explorer." : ""}
           </> : "National projects unavailable; showing the legacy dataset."}
           {" "}<Link href="/explore">Explore national records{national.available ? ` (${national.unlocated} unlocated)` : ""} →</Link>
-        </p>
+          </p>
+        </details>
         <button type="button" className={s.play} onClick={() => (tour === null ? goStep(0) : stopTour())} disabled={!ready}>
           <span aria-hidden>{tour === null ? "▶" : "■"}</span> {tour === null ? "Play the story" : "Stop the story"}
         </button>
@@ -956,13 +990,27 @@ export function TimeView({
       </header>
 
       <nav className={s.pairs} aria-label="Overlap pairs">
-        <div className={s.tabs} role="group" aria-label="Which pairs">
+        <div className={s.tabs} role="group" aria-label="Pair collection">
+          {[true, false].map((mode) => <button key={String(mode)} type="button" aria-pressed={candidateMode === mode}
+            onClick={() => { setCandidateMode(mode); setPairId(null); setPreview(null); setSharedId(null); incoming.current = null; }}>
+            {mode ? "Nearby candidates" : "Legacy pairs"}
+          </button>)}
+        </div>
+        {candidateMode ? <p className={s.footnote} aria-live="polite">
+          {candidates.page ? `${candidates.page.total.toLocaleString("en-US")} candidates · ${scopeLabel ?? "United States"}` : candidates.loading ? "Loading candidates…" : "Candidates unavailable"}
+        </p> : <div className={s.tabs} role="group" aria-label="Which pairs">
           {VIEWS.map(({ v, label, help }) => (
             <button key={v} type="button" aria-pressed={view === v} title={help} onClick={() => changeView(v)}>
               {label} <span>{counts[v]}</span>
             </button>
           ))}
-        </div>
+        </div>}
+        {candidateMode && candidates.error ? <div className={s.empty} role="alert">
+          <p>{candidates.error}</p>
+          <button type="button" onClick={() => candidates.refresh ? window.location.reload() : candidates.retry()}>
+            {candidates.refresh ? "Refresh page" : "Retry candidates"}
+          </button>
+        </div> : null}
         {visible.length ? (
           <ol className={s.pairList}>
             {visible.map((p, i) => {
@@ -987,18 +1035,20 @@ export function TimeView({
                     onBlur={() => setPreview(null)}
                   >
                     <span className={s.rank}>{String(i + 1).padStart(2, "0")}</span>
-                    <span className={s.pairNames}>
+                    <span className={`${s.pairNames} ${candidateMode ? s.candidateNames : ""}`}>
                       <span>
                         <i style={{ background: a ? projectColor(a) : NO_STATE_INK }} />
-                        {a?.name ?? p.a}
+                        {(a?.name ?? p.a).replaceAll("_", " ")}
                       </span>
                       <span>
                         <i style={{ background: b ? projectColor(b) : NO_STATE_INK }} />
-                        {b?.name ?? p.b}
+                        {(b?.name ?? p.b).replaceAll("_", " ")}
                       </span>
                     </span>
                     <span className={s.pairNums}>
                       <span>{miles(p.distance_mi)}</span>
+                      {p.candidate ? <small title="Location evidence tier">{[a, b].some((x) => x?.national?.tier === "tentative") ? "Tentative"
+                        : [a, b].some((x) => x?.national?.tier === "official") ? "Published" : "Confirmed"}</small> : null}
                       <span>{p.time_gap_days === null ? "gap —" : `${p.time_gap_days.toLocaleString("en-US")} d`}</span>
                     </span>
                   </button>
@@ -1008,17 +1058,21 @@ export function TimeView({
           </ol>
         ) : (
           <div className={s.empty}>
-            <p>{!pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
+            <p>{candidateMode ? (candidates.loading ? "Loading candidates…" : candidates.error ? "" : "No candidates with both projects in this scope.") : !pairsAvailable ? "Legacy overlap pairs unavailable. Project discovery remains available."
               : scopeLabel ? `No ${view} pairs with both projects ${scope?.kind === "pin" ? `within ${RULE_MI} mi of the pin` : `in ${scopeLabel}`}. Zero is a valid result, not a failure to look.`
               : `No ${view} pairs in this data. Zero is a valid result, not a failure to look.`}</p>
-            {VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (
+            {!candidateMode && VIEWS.filter(({ v }) => v !== view && counts[v] > 0).map(({ v, label }) => (
               <button key={v} type="button" onClick={() => changeView(v)}>
                 Show {label.toLowerCase()} ({counts[v]}) →
               </button>
             ))}
           </div>
         )}
-        <p className={s.footnote}>Priority order as stored: nearer band first, then the smaller exact day gap.</p>
+        {candidateMode && candidates.page?.nextOffset != null ? <button type="button" className={s.loadMore}
+          disabled={candidates.loading} onClick={candidates.loadMore}>{candidates.loading ? "Loading…" : "Load more candidates"}</button> : null}
+        <p className={s.footnote}>{candidateMode
+          ? "Provisional · under 25 miles straight-line. Driving routes and construction schedules have not been checked."
+          : "Priority order as stored: nearer band first, then the smaller exact day gap."}</p>
       </nav>
       <section className={s.tray} aria-label="All projects">
         <button type="button" onClick={() => setTrayOpen((o) => !o)} aria-expanded={trayOpen} aria-controls="all-projects">
@@ -1121,7 +1175,7 @@ export function TimeView({
           <div className={s.figures}>
             <div>
               <strong>{pair.distance_mi.toFixed(2)}</strong>
-              <span>miles apart, centre to centre</span>
+              <span>{pair.candidate ? "straight-line miles between centers" : "miles apart, centre to centre"}</span>
             </div>
             <div>
               <strong>{pair.time_gap_days === null ? "—" : pair.time_gap_days.toLocaleString("en-US")}</strong>
@@ -1138,8 +1192,9 @@ export function TimeView({
               </p>
               <p className={s.src}>
                 {p.source_id}
-                {p.page !== null ? ` p. ${p.page}` : ""} · location {p.confidence ?? "unknown"} confidence
+                {p.page !== null ? ` p. ${p.page}` : ""}{p.national ? ` · ${p.national.tier} location` : ` · location ${p.confidence ?? "unknown"} confidence`}
               </p>
+              {p.national ? <CandidateEvidence project={p.national.project} tier={p.national.tier} dataset={national.dataset} /> : null}
               <Link href={pastWork(p.key)} className={s.evidence}>
                 Past work nearby →
               </Link>
@@ -1147,7 +1202,7 @@ export function TimeView({
           ))}
           <div className={s.detailFoot}>
             <span className={s.review} data-state={pair.review_state ?? "needs_review"}>
-              {REVIEW[pair.review_state ?? "needs_review"]}
+              {pair.candidate ? "Provisional candidate" : REVIEW[pair.review_state ?? "needs_review"]}
             </span>
             <button
               type="button"
@@ -1161,9 +1216,9 @@ export function TimeView({
             >
               {copied ? "Copied" : "Copy link"}
             </button>
-            <Link href={`/pair/${encodeURIComponent(pair.id)}`} className={s.evidence}>
+            {!pair.candidate ? <Link href={`/pair/${encodeURIComponent(pair.id)}`} className={s.evidence}>
               Open evidence →
-            </Link>
+            </Link> : null}
           </div>
         </aside>
       ) : project ? (
@@ -1319,4 +1374,12 @@ export function TimeView({
       ) : null}
     </main>
   );
+}
+
+function CandidateEvidence({ project, tier, dataset }: { project: NationalProjectSummary; tier: NationalTier; dataset: string | null }) {
+  const [open, setOpen] = useState(false);
+  return <details onToggle={(e) => setOpen(e.currentTarget.open)}>
+    <summary>Source evidence · {tier} location</summary>
+    {open ? <NationalProjectEvidence project={project} dataset={dataset} /> : null}
+  </details>;
 }
