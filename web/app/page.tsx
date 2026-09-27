@@ -3,7 +3,7 @@ import { LandingPage } from "@/components/landing/LandingPage";
 import { isFixtureMode } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "GridBridge — Every mile. Connected.",
+  title: "Common Ground — Every mile. Connected.",
   description: "Discover nearby transmission projects, compare public utility filings, and find the evidence for your next coordination conversation.",
 };
 
