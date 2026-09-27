@@ -31,6 +31,31 @@
         "sources": "3adc09d2c53129b90d88d7f7bc15a2d17957a29c454922abd08a9dd2fd9a7aad"
       }
     },
+    "ctpc": {
+      "expected_counts": {
+        "by_state": {
+          "37": 41,
+          "45": 8
+        },
+        "candidate": 48,
+        "candidate_unique_name": 1,
+        "distinct_points": 40,
+        "located": 49,
+        "located_by_state": {
+          "37": 41,
+          "45": 8
+        },
+        "located_dated": 47,
+        "located_not_in_service": 25,
+        "official": 0,
+        "projects": 150,
+        "sources": 12
+      },
+      "files": {
+        "projects": "7f9d779653a5e346286baae247a09115db0c89023707a129720f130972024641",
+        "sources": "21bbcf30ab3da6954b3431c3535d91692d7395c60261ae587e1e866dcaabd7b9"
+      }
+    },
     "duke": {
       "expected_counts": {
         "by_state": {

@@ -1,0 +1,40 @@
+{
+  "by_state": {
+    "37": 41,
+    "45": 8
+  },
+  "by_status": {
+    "cancelled": 5,
+    "in_service": 51,
+    "planned": 42,
+    "proposed": 6,
+    "under_construction": 46
+  },
+  "candidate": 48,
+  "candidate_unique_name": 1,
+  "distinct_points": 40,
+  "located": 49,
+  "located_by_state": {
+    "37": 41,
+    "45": 8
+  },
+  "located_dated": 47,
+  "located_not_in_service": 25,
+  "official": 0,
+  "projects": 150,
+  "sources": 12,
+  "unlocated_reasons": {
+    "ambiguous": 1,
+    "ambiguous,no_facility": 4,
+    "endpoint_not_named": 1,
+    "generic_name": 1,
+    "multi_terminal_line": 2,
+    "no_facility": 55,
+    "no_facility,not_a_facility": 4,
+    "no_facility,operator_conflict": 1,
+    "no_facility,voltage_conflict": 3,
+    "no_named_facility": 20,
+    "program_area_or_multi_facility": 9
+  },
+  "verified": 0
+}
