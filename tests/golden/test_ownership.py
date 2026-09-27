@@ -25,7 +25,7 @@ def test_every_frozen_path_exists(frozen):
 def test_roadmap_parsed():
     assert "web/lib/types.ts" in ROADMAP["frozen_paths"]
     assert ROADMAP["contract_owner"] == "technical-lead"
-    assert FEATURES["F05"][0]["owns"] == ["web/app/page.tsx", "web/components/map/", "web/components/list/"]
+    assert FEATURES["F05"][0]["owns"] == ["web/app/page.tsx", "web/components/map/", "web/components/list/", "web/components/landing/"]
     assert FEATURES["F00"][0]["bootstrap"] is True
 
 
