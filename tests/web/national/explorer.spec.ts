@@ -54,6 +54,18 @@ test("mind map tab is reachable from explorer URL state", async ({ page }) => {
   await expect(page).not.toHaveURL(/view=mindmap/);
 });
 
+test("clicking the active map tab preserves the selected project", async ({ page }) => {
+  await page.goto("/explore");
+  const rows = page.getByRole("region", { name: "Filtered projects", exact: true }).locator("ol > li > button");
+  await expect(rows.first()).toBeVisible();
+  await rows.first().click();
+  const drawer = page.getByRole("complementary", { name: "Selected project details" });
+  await expect(drawer).toBeVisible();
+
+  await page.getByRole("tab", { name: "Map & list" }).click();
+  await expect(drawer).toBeVisible();
+});
+
 test("API rejects duplicate parameters and its exact counts drive the page", async ({ page, request }) => {
   const duplicate = await request.get("/api/national?state=25&state=13");
   expect(duplicate.status()).toBe(400);
