@@ -32,6 +32,10 @@ export function HeroScene() {
       <div className={s.networkLayer}><NetworkIllustration /></div>
     </div>
     <div className={s.sceneCaption}><span className={s.statusDot} />{view === "road" ? "Separate projects. A shared horizon." : "One region. More possibilities."}<span>Illustrative animation</span></div>
-    <button className={s.pause} type="button" onClick={()=>setPaused(!paused)} aria-pressed={paused}>{paused ? "Play animation" : "Pause animation"}</button>
+    <button className={s.pause} type="button" data-animation-pause="" onClick={(event)=>{
+      const story=event.currentTarget.closest<HTMLElement>('[data-gridbridge-story]');
+      if(story)story.dataset.animationPaused=String(!paused);
+      setPaused(!paused);
+    }} aria-pressed={paused}>{paused ? "Play animation" : "Pause animation"}</button>
   </>;
 }

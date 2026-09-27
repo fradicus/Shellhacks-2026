@@ -9,13 +9,31 @@ export function HeroStory({children}:{children:ReactNode}) {
     const element=root.current;
     if(!element)return;
     const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-    let frame=0, current=0, last=performance.now();
+    let frame=0, current=0, last=performance.now(), elapsed=0;
+    let autoplay=!reduced.matches && scrollY<80 && !location.hash;
+    function takeControl(event:Event){
+      if(event.type==='keydown' && !['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' ','Tab','Escape'].includes((event as KeyboardEvent).key))return;
+      if((event.target as HTMLElement).closest?.('[data-animation-pause]') && (event.type!=='keydown' || [' ','Enter'].includes((event as KeyboardEvent).key)))return;
+      autoplay=false;
+    }
     function update(){
       frame=0;
       if(!element)return;
-      const rect=element.getBoundingClientRect();
-      const target=reduced.matches?0:Math.max(0,Math.min(1,(52-rect.top)/Math.max(1,rect.height-innerHeight+52)));
       const now=performance.now(),dt=Math.min(.05,(now-last)/1000);last=now;
+      if(reduced.matches)autoplay=false;
+      let rect=element.getBoundingClientRect();
+      if(autoplay && !document.hidden && element.dataset.animationPaused!=='true'){
+        elapsed+=dt;
+        if(elapsed>4){
+          const travel=Math.max(1,rect.height-innerHeight+52);
+          // Twenty seconds across the story, then gently release the sticky stage.
+          const position=Math.min(travel+innerHeight*.65,(elapsed-4)*travel/20);
+          scrollTo({top:scrollY+rect.top-52+position,behavior:'instant'});
+          rect=element.getBoundingClientRect();
+          if(position>=travel+innerHeight*.65)autoplay=false;
+        }
+      }
+      const target=reduced.matches?0:Math.max(0,Math.min(1,(52-rect.top)/Math.max(1,rect.height-innerHeight+52)));
       current+= (target-current)*(1-Math.exp(-12*dt));
       if(Math.abs(target-current)<.0001)current=target;
       const segment=(a:number,b:number)=>Math.max(0,Math.min(1,(current-a)/(b-a)));
@@ -24,11 +42,12 @@ export function HeroStory({children}:{children:ReactNode}) {
       element.style.setProperty('--intro-opacity',String(1-segment(.04,.14)));
       element.style.setProperty('--beat-one',String(segment(.04,.07)*(1-segment(.36,.46))));
       element.style.setProperty('--beat-two',String(segment(.34,.37)*(1-segment(.62,.73))));
-      if(current!==target)frame=requestAnimationFrame(update);
+      if(autoplay || current!==target)frame=requestAnimationFrame(update);
     }
     function schedule(){if(!frame)frame=requestAnimationFrame(update);}
+    addEventListener('click',takeControl);addEventListener('wheel',takeControl,{passive:true});addEventListener('pointerdown',takeControl,{passive:true});addEventListener('keydown',takeControl);
     addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);reduced.addEventListener('change',schedule);update();
-    return()=>{cancelAnimationFrame(frame);removeEventListener('scroll',schedule);removeEventListener('resize',schedule);reduced.removeEventListener('change',schedule);};
+    return()=>{cancelAnimationFrame(frame);removeEventListener('click',takeControl);removeEventListener('wheel',takeControl);removeEventListener('pointerdown',takeControl);removeEventListener('keydown',takeControl);removeEventListener('scroll',schedule);removeEventListener('resize',schedule);reduced.removeEventListener('change',schedule);};
   },[]);
   return <div ref={root} className={s.story} data-gridbridge-story="">{children}</div>;
 }

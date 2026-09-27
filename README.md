@@ -41,6 +41,17 @@ For read-only MongoDB mode, set `MONGODB_URI_RO` in the process environment and 
 shell history, logs and repository files. The application returns an explicit unavailable state when MongoDB
 cannot be reached; it does not fall back to fixtures.
 
+## Landing page and standalone demo
+
+The animated landing page is integrated at `/`, using the same header as the app. Its truck-first opening,
+leftward text reveals, and network transition lead into the existing product tools. The overlap explorer is
+at `/time`; the original 2D project map is at `/map`.
+
+See [the landing-page guide](docs/landing-page.md) for the component map, local preview command, animation
+behavior, validation limits, and instructions for exporting a self-contained HTML page and ZIP. The export
+command is checked into `web/scripts/export-landing.cjs`; standalone app links can be configured with
+`GRIDBRIDGE_APP_URL`. Exports contain the landing experience, not the application's backend or database.
+
 ## Run the data pipeline
 
 Python 3.12 and `uv` are required. The deterministic parsers and cached OSM normalization run without service
