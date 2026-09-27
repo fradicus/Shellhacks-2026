@@ -6,6 +6,7 @@
   "additionalProperties": true,
   "required": ["_id", "source_id", "native_id", "name", "owner", "other_owners", "planning_region", "states", "counties", "geography_basis", "status", "status_group", "in_service", "center", "location_review", "evidence"],
   "properties": {
+    "project_events": {"type": "array", "items": {"$ref": "https://gridbridge.local/schemas/expansion-release.schema.json#/$defs/event"}},
     "_id": {"type": "string", "minLength": 1, "maxLength": 240},
     "source_id": {"type": "string", "minLength": 1},
     "native_id": {"type": "string", "minLength": 1},

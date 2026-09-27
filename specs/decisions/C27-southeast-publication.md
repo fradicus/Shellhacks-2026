@@ -28,6 +28,14 @@ not a second Southeast project. Parent/component and cross-source duplicate deci
 If a new source repeats an existing project, record that row as duplicate pointing to its canonical ID. If it reports
 an actual separate construction component, retain evidence establishing the distinction before accepting a new ID.
 
+Each source has an `acquisition` entry binding its exact scope, acquired row locator set, independently known source
+row total (null if unknown), complete/bounded_partial flag and hash-pinned enumeration evidence. For APIs use returned
+ID sets and pagination/count responses; for tables use inspected page/sheet row boundaries and totals. The independent
+reviewer verifies those underlying artifacts rather than trusting the producer's expected_counts. Disposition locators
+must equal the acquisition row set exactly. A complete claim requires a known matching source total and evidence
+that no pages/rows remain; bounded_partial stays visibly partial even when its acquired subset fully reconciles.
+Do not silently define the acquired subset as the entire source. The whole-release review binds these ledgers too.
+
 Each source row gets one unique `(source_id, locator)` disposition: accepted, duplicate, excluded or rejected, with
 reason. Accepted/duplicate rows reference a release or existing canonical project; excluded/rejected rows have no
 project ID. Each new project needs at least one accepted row in its primary source. Repeated evidence rows do not
@@ -44,6 +52,17 @@ UTF-8 JSON, sorted keys, ensure_ascii=False, indent=2, allow_nan=False and trail
 must differ; UTC review time cannot be future and cannot predate acquisition evidence being reviewed. Missing,
 stale or self-review fails activation. This verifies acquisition reconciliation and canonical project interpretation;
 it does not approve coordinates. A changed release needs a new review; retain previous decisions in F39 batch history.
+
+## History independent of geometry
+
+`project_events` groups typed C23 event records by new project ID independently of location_verifications. Validate
+unique project/event IDs, native_project_link against that project's native_id, source evidence, and date precision.
+Embed these as additive `national_projects.project_events`; the schema references the existing C23 event definition.
+This allows unlocated projects to preserve certification, planned and actual historical events without a fabricated
+coordinate. Keep location record events for backwards compatibility; duplicate event IDs across the two paths must
+be byte-identical and are displayed once. F31's JSON read/export includes this field and its evidence; event display
+is a separately owned additive integration, not a new History-page implementation. Whole-release identity review
+binds these historical claims. A schema-valid event date still requires semantic precision/calendar validation.
 
 ## Location projection
 
@@ -87,7 +106,7 @@ IDs, dataset/counts, RO reads, export and point selection on existing maps. This
 Contract PR owns only this decision, additive schema and frozen contract tests. No feature completion marker.
 F39 implements adapter/reconciliation/promotion/release checks and approved data under its ownership. F30 implements
 assembly and failed-load/rollback checks; F31/F19 retain API/UI integration. Preserve all currently active claims.
-Test namespace/collision/source-hash failures, changed/self/stale reviews, out-of-scope records, malformed dates,
+Schema checks are structural only; producer semantic gates remain mandatory. Test namespace/collision/source-hash failures, changed/self/stale reviews, out-of-scope records, malformed dates,
 missing/duplicate row dispositions, candidate isolation, exact counts, history semantics, unlocated accessibility,
 unchanged legacy matching, deterministic replay and failure preserving prior activation.
 
