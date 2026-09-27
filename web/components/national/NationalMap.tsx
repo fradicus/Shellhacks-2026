@@ -125,7 +125,11 @@ export function NationalMap({
         },
       }))),
     });
+  }, [projects, ready, selectedId]);
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map) return;
     if (focusBounds) {
       map.fitBounds(
         [[focusBounds.fit_west, focusBounds.south], [focusBounds.fit_east_unwrapped, focusBounds.north]],
@@ -140,7 +144,7 @@ export function NationalMap({
       const lats = points.map(([, lat]) => lat);
       map.fitBounds([[Math.min(...lons), Math.min(...lats)], [Math.max(...lons), Math.max(...lats)]], { padding: 34, maxZoom: 8 });
     } else map.fitBounds(US_BOUNDS, { padding: 24 });
-  }, [focusBounds, projects, ready, selectedId]);
+  }, [focusBounds, projects, ready]);
 
   return (
     <section className={s.mapWrap} aria-label="Filtered national projects map">
