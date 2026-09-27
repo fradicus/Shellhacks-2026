@@ -257,8 +257,10 @@ def main(argv: list[str] | None = None) -> int:
             if actual != len(candidates["pairs"]):
                 print("national candidate readback mismatch")
                 return 1
+            rule = ("Stored driving route <=25 mi (straight-line prefilter)"
+                    if "route_states" in candidates["coverage"] else "Straight-line distance <25 mi; no driving-route claim")
             report = (f"\n## Provisional national pairs\n\nDataset `{dataset}`: {actual:,} pairs. "
-                      "Straight-line distance <25 mi; no driving-route or construction-window claim.\n\n"
+                      f"{rule}; no construction-window claim.\n\n"
                       + "```json\n" + json.dumps(candidates["coverage"], indent=2) + "\n```\n")
             print(report)
             if os.environ.get("GITHUB_STEP_SUMMARY"):

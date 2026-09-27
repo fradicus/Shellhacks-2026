@@ -1,6 +1,18 @@
 import mongomock
+import pytest
 
 from national.load import ensure_indexes, load, stage
+
+
+@pytest.fixture(autouse=True)
+def candidate_route(monkeypatch):
+    """Under C46, F48 publishes a pair only with a stored driving route; give the synthetic pair one."""
+    center = {"lat": 42.1, "lon": -71.2}
+    record = {"_id": "project__second", "a": "project", "b": "second", "origin": center, "destination": center,
+              "status": "ok", "distance_m": 0.0, "drive_mi": 0.0, "duration_s": 0, "polyline": "_p~iF~ps|U",
+              "start": center, "end": center, "snap_m": [0.0, 0.0], "provider": "test", "travel_mode": "DRIVE",
+              "routing_preference": "test", "data_source": "test", "computed_at": "2026-09-27T00:00:00Z"}
+    monkeypatch.setattr("national_pairs.build.load_routes", lambda path: {record["_id"]: record}, raising=False)
 
 
 def snapshot():
