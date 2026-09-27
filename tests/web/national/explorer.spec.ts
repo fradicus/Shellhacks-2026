@@ -68,3 +68,54 @@ test("API rejects duplicate parameters and its exact counts drive the page", asy
   await page.goto("/explore?state=25&limit=25");
   await expect(page.locator("section[aria-label='Filtered project counts'] strong").first()).toHaveText(payload.total.toLocaleString("en-US"));
 });
+
+test("evidence loads only when opened and retries a failed detail request", async ({ page }) => {
+  let requests = 0;
+  await page.route("**/api/national/project?**", async (route) => {
+    requests++;
+    if (requests === 1) await route.fulfill({ status: 503, contentType: "application/json",
+      body: JSON.stringify({ available: false, reason: "Test-only temporary evidence failure" }) });
+    else await route.continue();
+  });
+  await page.goto("/explore");
+  const rows = page.getByRole("region", { name: "Filtered projects", exact: true }).locator("ol > li > button");
+  await expect(rows.first()).toBeVisible();
+  expect(requests).toBe(0);
+  await rows.first().click();
+  const drawer = page.getByRole("complementary", { name: "Selected project details" });
+  await expect(drawer.getByText("Test-only temporary evidence failure")).toBeVisible();
+  await drawer.getByRole("button", { name: "Retry evidence" }).click();
+  await expect(drawer.getByText("Imported source fields")).toBeVisible();
+  expect(requests).toBe(2);
+  await expect(drawer.getByRole("status")).toHaveCount(0);
+});
+
+test("a delayed old response cannot replace the newly selected project's evidence", async ({ page }) => {
+  let release!: () => void;
+  let started!: () => void;
+  const held = new Promise<void>((resolve) => { release = resolve; });
+  const firstStarted = new Promise<void>((resolve) => { started = resolve; });
+  let first = true;
+  await page.route("**/api/national/project?**", async (route) => {
+    if (!first) { await route.continue(); return; }
+    first = false;
+    const response = await route.fetch();
+    const body = await response.json();
+    body.project.description = "TEST OLD EVIDENCE MUST NOT APPEAR";
+    started();
+    await held;
+    await route.fulfill({ response, json: body }).catch(() => {}); // the old fetch may already be aborted
+  });
+  await page.goto("/explore");
+  const rows = page.getByRole("region", { name: "Filtered projects", exact: true }).locator("ol > li > button");
+  const nextName = await rows.nth(1).locator("strong").innerText();
+  await rows.first().click();
+  await firstStarted;
+  const drawer = page.getByRole("complementary", { name: "Selected project details" });
+  await expect(drawer.getByRole("status")).toBeVisible();
+  await rows.nth(1).click();
+  await expect(drawer.getByRole("heading", { name: nextName, exact: true })).toBeVisible();
+  await expect(drawer.getByText("Imported source fields")).toBeVisible();
+  release();
+  await expect(drawer).not.toContainText("TEST OLD EVIDENCE MUST NOT APPEAR");
+});

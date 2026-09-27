@@ -37,3 +37,11 @@ parameters, absent records, unavailable DB, snapshot restrictions and dataset
 changes are handled. Browser checks cover selection, rapid selection changes,
 retry and existing evidence. Run required CI and measure serialized full vs summary
 payload sizes from the same read-only dataset. Report local measurements honestly.
+
+## Local payload measurement
+
+Read-only Atlas dataset `b73dc34bb745f79f494504b8ac25553b8aa2b59d`, 2026-09-27,
+3,648 map records, page 1 / 25: full explorer JSON 14,631,749 bytes; summary JSON
+4,841,341 bytes (66.9% smaller). Map-project arrays alone: 12,788,053 to 3,055,038
+bytes. Counts, geometry, labels and date precision are preserved. These are
+uncompressed serialized loader payloads, not measured HTTP transfer or page timings.
