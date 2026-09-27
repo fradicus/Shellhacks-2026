@@ -6,6 +6,7 @@ import Link from "next/link";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { intersects, milesBetween, type HistoryEvent, type HistoryProject, type Meaning } from "@/lib/history/events";
 import type { HistoryPayload } from "@/lib/history/server";
+import { SLIP_SPAN, slipBins } from "@/lib/history/slip";
 import type { NationalTier } from "@/components/time/nationalProjects";
 import type { Emphasis, HistoryItem, HistoryLayer, LabelSpec, Projected } from "./historyLayer";
 import { Ledger, type LedgerYear } from "./Ledger";
@@ -133,6 +134,45 @@ const ProjectList = memo(function ProjectList({
 });
 
 /** The selected project's documented events on a flat, readable track, with its plan -> actual bracket. */
+/**
+ * Plan against record: each upgrade's actual in-service date minus its required date, in half-year bars. Left of the
+ * line came in early, right on the day or late. Two documented dates per row; not a construction duration.
+ */
+function SlipChart({ days }: { days: number[] }) {
+  const { counts, early, late, median } = slipBins(days);
+  const max = Math.max(1, ...counts);
+  const [W, H] = [280, 40];
+  const bw = W / counts.length;
+  const half = (i: number) => (i - SLIP_SPAN) / 2;
+  const span = (i: number) =>
+    i === 0 ? "3 or more years early" : i === counts.length - 1 ? "3 or more years late"
+      : i < SLIP_SPAN ? `${-half(i + 1)}–${-half(i)} yr early` : `${half(i)}–${half(i + 1)} yr late`;
+  return (
+    <figure className={s.slip}>
+      <svg viewBox={`0 0 ${W} ${H + 13}`} role="img"
+        aria-label={`${early} early, ${late} late${median === null ? "" : `, median ${signed(Math.round(median))} days`}; half-year bars from 3 years early to 3 years late`}>
+        {counts.map((c, i) => {
+          const h = c ? Math.max(2, (c / max) * H) : 0;
+          return (
+            <rect key={i} x={i * bw + 1.5} width={bw - 3} y={H - h} height={h} rx="1.5" data-late={i >= SLIP_SPAN ? "1" : "0"}>
+              <title>{`${c} ${c === 1 ? "upgrade" : "upgrades"}, ${span(i)}`}</title>
+            </rect>
+          );
+        })}
+        <line className={s.slipAxis} x1={W / 2} x2={W / 2} y1={-2} y2={H + 2} />
+        <text x="1" y={H + 12}>early</text>
+        <text x={W / 2} y={H + 12} textAnchor="middle">required date</text>
+        <text x={W - 1} y={H + 12} textAnchor="end">late</text>
+      </svg>
+      {median !== null ? (
+        <figcaption>
+          Median <b data-late={median > 0 ? "1" : "0"}>{signed(Math.round(median))} days</b> · half-year bars
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
 function EventTrack({ p }: { p: HistoryProject }) {
   const dated = p.events.filter((e) => e.from !== null);
   if (!dated.length) return null;
@@ -780,10 +820,13 @@ export function HistoryView({ data, initial }: { data: HistoryPayload; initial: 
             </div>
           </dl>
           {required.length ? (
-            <p className={s.verdict}>
-              <b>{early}</b> of {required.length} upgrades documenting both a required date and an actual in-service date entered
-              service before the required date.
-            </p>
+            <div className={s.verdict}>
+              <p>
+                <b>{early}</b> of {required.length} upgrades documenting both a required date and an actual in-service date
+                entered service before the required date.
+              </p>
+              <SlipChart days={required.map((r) => r.p.thread!.days)} />
+            </div>
           ) : null}
           <p className={s.provenance}>
             Window <b>{range[0]}–{range[1]}</b> · analysis date <b>{fmtDay(analysisDay)}</b>

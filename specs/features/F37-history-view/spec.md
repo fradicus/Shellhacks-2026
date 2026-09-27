@@ -139,3 +139,12 @@ Match `/time`'s quiet overview ([F19 quiet overview](../../decisions/F19-quiet-o
 unfocused project draws as a dim, thin stem with a dimmer glyph and no halo, by the shared `calmAt(zoom)` ramp
 (0.25 at zoom ≤2.5, 0.4 at 4.2, 1 at ≥6.5). Hovered and selected projects stay fully lit; nothing is hidden and no
 date, glyph meaning, color or count changes. Validation: headless screenshots at 1440 and 390 on live data.
+
+## Plan against record (2026-09-27)
+
+Under the verdict ("N of M upgrades … entered service before the required date"), a small diverging histogram of
+the same M rows: actual in-service date minus required date, in half-year bars from 3 years early to 3 years late
+(the end bars hold everything beyond), early bars in the early color and on-time-or-late in the late color, with the
+median in days. Same rows and same two documented dates as the verdict; not a construction duration. Hidden with the
+masthead on phones. Validation: `node --import ./tests/web/loader.mjs --test tests/web/history/slip.test.ts`;
+headless screenshot at 1440 on live data.

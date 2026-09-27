@@ -243,7 +243,52 @@
   line-height: 1.45;
   color: var(--ink-2);
 }
-.verdict b {
+.verdict p {
+  margin: 0;
+}
+/* Plan against record, under the verdict: early bars in the early color, late in the late color. */
+.slip {
+  margin: 9px 0 1px;
+}
+.slip svg {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  overflow: visible;
+}
+.slip rect {
+  fill: var(--early);
+  opacity: 0.85;
+}
+.slip rect[data-late="1"] {
+  fill: var(--late);
+}
+.slip text {
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+  fill: var(--ink-3);
+}
+.slipAxis {
+  stroke: var(--ink-2);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
+.slip figcaption {
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--ink-3);
+}
+.slip figcaption b {
+  font-weight: 400;
+  color: var(--early);
+}
+.slip figcaption b[data-late="1"] {
+  color: var(--late);
+}
+.verdict > p > b {
   font-family: var(--display);
   font-size: 18px;
   color: var(--early);
