@@ -225,7 +225,7 @@ def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     texas = ("texas/statewide", "texas.statewide_publish") if (
         root / "data/texas/statewide/releases/active.json"
     ).exists() else ("texas", "texas.publish")
-    # Fixed producer order: C23 locations, C27 Southeast, C28 Mid-Atlantic, Texas, C26 Great Lakes, then C36 California.
+    # Fixed producer order: C23 locations, C27 Southeast, C28 Mid-Atlantic, Texas, C26 Great Lakes, then C37 California.
     # Source/candidate folders are never scanned and cannot activate themselves.
     for directory, module in (
         ("expansion", "expansion.publish"),

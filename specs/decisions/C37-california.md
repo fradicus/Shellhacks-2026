@@ -1,4 +1,4 @@
-# C36: California rollout, and the labeled candidate tier on History
+# C37: California rollout, and the labeled candidate tier on History
 
 ## Authority
 
@@ -15,7 +15,7 @@ and 100 Overlaps pins there. Claude local adopts the technical-lead contract rol
 
 ## Decision
 
-1. **F43 (claude-local): California from CAISO.** The Transmission Development Forum workbooks list every
+1. **F44 (claude-local): California from CAISO.** The Transmission Development Forum workbooks list every
    CAISO-approved transmission project and interconnection network upgrade, with each forum's expected in-service
    date. Sources: approved projects July 2026 (current), July 2025 and January 2025 (only in-service projects the
    newer edition dropped), and network upgrades July 2025 (the newest public edition; removed, replaced and

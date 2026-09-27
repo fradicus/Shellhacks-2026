@@ -1,4 +1,4 @@
-"""Fixed C29/C26-pattern release of the F43 California projects into the national snapshot.
+"""Fixed C29/C26-pattern release of the F44 California projects into the national snapshot.
 
 `california.caiso build` writes data/california/{projects,sources}.json and releases/active.json. F30's
 load_snapshot calls apply_release(snapshot, root) only when that fixed active file exists; it validates everything

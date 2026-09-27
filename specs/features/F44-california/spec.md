@@ -1,19 +1,19 @@
 ---
-id: F43
+id: F44
 name: California project coverage from CAISO with loose labeled locations
 lane: A
 agent: data-researcher
 phase: 7
 depends_on: [F00, F30]
-owns: [pipeline/california/, data/california/, tests/pipeline/test_f43_]
+owns: [pipeline/california/, data/california/, tests/pipeline/test_f44_]
 cut: never
 ---
 
-# F43: California project coverage
+# F44: California project coverage
 
 ## Scope
 
-California under [C36](../../decisions/C36-california.md), using C33's location tiers plus C36's operator guard.
+California under [C37](../../decisions/C37-california.md), using C33's location tiers plus C37's operator guard.
 F38's source, identity and no-invention rules apply. Do not edit other rollouts' artifacts or releases.
 
 ## Plan
@@ -36,6 +36,6 @@ F38's source, identity and no-invention rules apply. Do not edit other rollouts'
 
 ## Validation
 
-Tech-stack checks plus `tests/pipeline/test_f43_*`: name forms, unique-name and operator-conflict rules, typo dates,
+Tech-stack checks plus `tests/pipeline/test_f44_*`: name forms, unique-name and operator-conflict rules, typo dates,
 status mapping, and the committed release applied to the base snapshot (unreviewed only, ≥100 located with events,
 ≥100 located not in service or cancelled). Spot-check 12 located records against the source text and report errors.

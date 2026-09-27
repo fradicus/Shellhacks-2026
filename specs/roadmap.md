@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42, F43]
+  claude-local: [F00, F05, F11, F14, F16, F21, F40, F42, F44]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F38, F39, F41, F19, F37]
 frozen_paths:
   - schemas/
@@ -247,10 +247,10 @@ tentative facility centers remain eligible for display.
 
 ## Launched follow-on: California coverage
 
-The user instructed Claude local to get about 100 History and 100 Overlaps pins in California. [C36](decisions/C36-california.md)
-assigns [F43](features/F43-california/spec.md) (CAISO Transmission Development Forum workbooks, C33 tiers plus an
+The user instructed Claude local to get about 100 History and 100 Overlaps pins in California. [C37](decisions/C37-california.md)
+assigns [F44](features/F44-california/spec.md) (CAISO Transmission Development Forum workbooks, C33 tiers plus an
 operator guard) and draws C25's labeled tiers on `/history` (`/time` already does since #196).
 
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
-| F43 | California project coverage from CAISO with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+| F44 | California project coverage from CAISO with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
