@@ -46,7 +46,7 @@ def test_collect_reads_owned_folders_only(data_root):
     assert errors == []
     assert skipped == ["data/matches/summary.json"]
     assert len(records["projects"]) == 10 and len(records["locations"]) == 20  # 2 endpoints x 10, incl. 4 unlocated
-    assert len(records["matches"]) == 6 and len(records["version_changes"]) == 1
+    assert len(records["matches"]) == len(load_json(FIX / "matches.json")) and len(records["version_changes"]) == 1
 
 
 def test_join_recomputes_fixture_centers(data_root):
@@ -333,8 +333,11 @@ T1, T2 = "2026-09-26T10:00:00Z", "2026-09-26T11:00:00Z"
 def test_pair_and_endpoint_subjects_exist_for_fixture_data(data_root):
     records, _, _ = collect(data_root)
     subs = subjects_of(records)
-    pair = records["matches"][0]["_id"]
-    assert len(supporting_endpoints(subs[("pair", pair)])) == 3  # GPC_2 has one located endpoint
+    match = records["matches"][0]
+    pair = match["_id"]
+    located = [loc for loc in load_json(FIX / "locations.json") if loc["project_key"] in (match["a"], match["b"])
+               and loc.get("lat") is not None and loc.get("confidence") != "rejected"]
+    assert len(supporting_endpoints(subs[("pair", pair)])) == len(located) > 0  # one per located endpoint
     assert all(("endpoint", e) in subs for e in supporting_endpoints(subs[("pair", pair)]))
     # canonical JSON, so the hash is stable across machines and TypeScript/Python reimplementations
     assert subject_hash({"b": 1, "a": [1.5, None, "é"]}) == "10c71012fb391fead6e4d481b11c8b16696561c1fd93a68cca35fa194c3aa97d"
