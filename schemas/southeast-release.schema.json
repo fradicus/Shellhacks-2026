@@ -1,0 +1,207 @@
+{
+  "$id": "https://gridbridge.local/schemas/southeast-release.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Approved Southeast additions before independent location projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "release_id",
+    "created_at",
+    "producer",
+    "sources",
+    "projects",
+    "location_verifications",
+    "dispositions",
+    "expected_counts",
+    "coverage_notes",
+    "identity_review"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "southeast-release-v1"
+    },
+    "release_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "producer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "https://gridbridge.local/schemas/national-source.schema.json"
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "https://gridbridge.local/schemas/national-project.schema.json"
+          },
+          {
+            "properties": {
+              "_id": {
+                "type": "string",
+                "pattern": "^southeast:"
+              },
+              "center": {
+                "type": "null"
+              },
+              "location_review": {
+                "const": "unlocated"
+              },
+              "states": {
+                "contains": {
+                  "enum": [
+                    "01",
+                    "05",
+                    "12",
+                    "13",
+                    "21",
+                    "22",
+                    "28",
+                    "37",
+                    "45",
+                    "47",
+                    "51",
+                    "54"
+                  ]
+                }
+              }
+            },
+            "not": {
+              "required": [
+                "location_verification"
+              ]
+            }
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "location_verifications": {
+      "type": "array",
+      "items": {
+        "$ref": "https://gridbridge.local/schemas/expansion-release.schema.json#/$defs/verification"
+      }
+    },
+    "dispositions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "locator",
+          "disposition",
+          "project_id",
+          "reason"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposition": {
+            "enum": [
+              "accepted",
+              "duplicate",
+              "excluded",
+              "rejected"
+            ]
+          },
+          "project_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "expected_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "new_sources",
+        "new_projects",
+        "confirmed_projects",
+        "source_rows"
+      ],
+      "properties": {
+        "new_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "new_projects": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "confirmed_projects": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_rows": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "coverage_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "identity_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewer",
+        "reviewed_at",
+        "facts_sha256",
+        "decision",
+        "evidence"
+      ],
+      "properties": {
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "facts_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "decision": {
+          "const": "approved"
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
