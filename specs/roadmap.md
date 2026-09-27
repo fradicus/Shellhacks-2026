@@ -374,3 +374,10 @@ follow stored state, selected-pair layout fixes, and the Gemini page's default t
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F52 | Overlaps clarity pass | B | frontend-engineer | 7 | F19, F21 | allowed |
+
+## Candidate search and row identity
+
+[C55](decisions/C55-candidate-search.md) assigns Codex local a bounded follow-up:
+F48 adds dataset-scoped project/utility/ID search before pair pagination; F19 adds
+the search form and filed owner/source/native-ID labels. Ship sequential owner PRs
+against the current matching contract, preserving F52 and the quiet overview.
