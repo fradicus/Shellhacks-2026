@@ -21,3 +21,10 @@ not a nationwide completeness claim or a page-load benchmark.
 The generator refuses more than 100,000 pairs instead of silently truncating;
 publication must preserve the previous dataset on that failure. The read API caps
 pages at 50 and pins all joins to the requested active dataset.
+
+## Source-specific owner codes
+A real-pair spot check found `BEPC` means Brazos in ERCOT and Basin in SPP.
+Use source-scoped aliases for those records, with no fallback for an unknown
+source's BEPC code. This is identity reconciliation, not a geometry/rule change.
+Evidence: [ERCOT Temple review](https://www.ercot.com/files/docs/2024/08/13/10-2-oncor-temple-area-regional-planning-group-rpg-project.pdf)
+and [SPP Basin facility study](https://opsportal.spp.org/documents/studies/files/2019_Generation_Studies/GEN2019037%20IFS%20Summary%20FINAL%20Combined.pdf).
