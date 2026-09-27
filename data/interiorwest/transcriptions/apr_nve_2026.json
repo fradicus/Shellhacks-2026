@@ -1,0 +1,701 @@
+{
+  "file": "NVE_2026_APR",
+  "rows": [
+    {
+      "native_id": "lantern-345-kv-substation",
+      "name": "Lantern 345 kV Substation",
+      "page": 1,
+      "quote": "The Lantern substation will be connected to the existing transmission system by folding the Valmy – East Tracy 345 kV line #3422. Later, for phase 2, a new Lantern to Comstock Meadows 345 kV line will be constructed, in service date (ISD) 2028. Lantern substation estimated in service date is December 2026.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Lantern"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "December 2026",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "lantern-comstock-meadows-345-kv-line",
+      "name": "Lantern – Comstock Meadows 345 kV line",
+      "page": 1,
+      "quote": "Later, for phase 2, a new Lantern to Comstock Meadows 345 kV line will be constructed, in service date (ISD) 2028.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Lantern",
+        "Comstock Meadows"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "2028",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned-sw:lantern-comstock-meadows-345-kv-line"
+    },
+    {
+      "native_id": "sierra-solar",
+      "name": "Sierra Solar",
+      "page": 1,
+      "quote": "The new Lantern 345 kV substation will be a new generation collector substation and will interconnect NV Energy’s Sierra Solar phase 1 and phase 2, which are 400 MW and 600 MW of solar and battery generation, respectively.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Lantern"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "granted waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "hilltop-phase-shifter-move",
+      "name": "Hilltop Phase Shifter Move",
+      "page": 1,
+      "quote": "Hilltop Phase Shifter Move A new phase shifter will be installed at the Hilltop 345 kV substation to replace the phase shifter at the Bordertown 345 kV substation. The 300 MVA phase shifter at the Hilltop substation will mitigate the restricted import capacity at Hilltop substation when the Fish Spring Solar facility generation is at the maximum output of 100 MW. The projected ISD is June 2027.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Hilltop"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "June 2027",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "lazy-5-120-kv-substation",
+      "name": "Lazy 5 120 kV Substation",
+      "page": 2,
+      "quote": "Lazy 5 120 kV Substation This new 120 kV substation includes the installation of two 120/24 kV 60 MVA transformers, five 1,200 A feeder breakers and getaways, and associated equipment.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Lazy 5"
+      ],
+      "voltages_kv": [
+        120,
+        24
+      ],
+      "in_service_raw": "January 2029",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "gerlach-ormat-north-valley-2-san-emedio-at-eagle-120-kv",
+      "name": "Gerlach 15 MW, Ormat North Valley 2 15 MW, San Emedio 45 MW at Eagle 120 kV",
+      "page": 2,
+      "quote": "It has proposed to interconnect a 15 MW geothermal generator to the Eagle 120 kV substation using a shared lead line with Co. KI, North Valley Geo-2 38.5 MW geothermal generations, and Co. HN, North valley (aka San Emidio) 45 MW geothermal generation. The projected ISD of Co. KJ is in June 2028, and the ISD of Co. is in December 2029.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Eagle"
+      ],
+      "voltages_kv": [
+        120
+      ],
+      "in_service_raw": "June 2028",
+      "status_raw": "granted waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "tric-newton-120-kv-switchyard",
+      "name": "TRIC – Newton 120 kV Switchyard and Associated Upgrades",
+      "page": 2,
+      "quote": "This project is comprised of the Newton 120 kV switching station and upgrades at the existing Pah Rah and West Tracy substations. This project requires the rebuilding of portions of the existing Tracy to Patrick 120 kV line, Tracy to Newton 120 kV line, Tracy to Pah Rah 120 kV line, and Pah Rah to Newton 120 kV line. The ISD for these upgrades are pushed out to July 2026.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Newton"
+      ],
+      "voltages_kv": [
+        120
+      ],
+      "in_service_raw": "July 2026",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "redwood-expansion-project-sutro",
+      "name": "Redwood Expansion (Project Sutro)",
+      "page": 2,
+      "quote": "This project is comprised of a new 120 kV line out of Comstock Meadows Substation to serve Redwood Materials in the Tahoe Reno Industrial Complex. This includes new Redwood 120 kV substation, initial load addition of 82 MW and ultimate addition of 140 MW in 2027. Phase-1 of this project was energized in November 2024 with an initial load of about 3MW.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Comstock Meadows",
+        "Redwood"
+      ],
+      "voltages_kv": [
+        120
+      ],
+      "in_service_raw": null,
+      "status_raw": "energized in November 2024",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "bordertown-to-california-sub-120-kv",
+      "name": "Bordertown to California Sub 120 kV Project",
+      "page": 3,
+      "quote": "This project is comprised of a new 345/120 kV 280 MVA transformer at NV Energy’s Bordertown Substation and a 120 kV, 12-mile line from Bordertown to California substation. This project is expected to be in service by April 2030.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Bordertown",
+        "California"
+      ],
+      "voltages_kv": [
+        345,
+        120
+      ],
+      "in_service_raw": "April 2030",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "west-tracy-comstock-meadows-345-kv-line",
+      "name": "West Tracy – Comstock Meadows 345 kV line",
+      "page": 3,
+      "quote": "This project comprises of 345 kV addition at Comstock Meadow substation with addition of two (2) 345/120kV transformers to accommodate rapid load growth in the Reno TRIC area. An additional 345kV line from East Tracy or Veterans is also proposed based on load growth requirements. The ISD planned for this project is February 2027.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "West Tracy",
+        "Comstock Meadows"
+      ],
+      "voltages_kv": [
+        345,
+        120
+      ],
+      "in_service_raw": "February 2027",
+      "status_raw": "requests waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "shaffer-substation-lmud-interconnection",
+      "name": "Shaffer Substation – LMUD Interconnection",
+      "page": 3,
+      "quote": "Shaffer substation will be connected to the existing transmission system by way of a fold of Hilltop – Ft Sage 345 kV line adjacent to LMUD’s Skedaddle 60kV switching station, with a new 345/60kV transformer at Shaffer and 60 kV phase shifter at Skedaddle. The expected ISD is September 2029.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Shaffer"
+      ],
+      "voltages_kv": [
+        345,
+        60
+      ],
+      "in_service_raw": "September 2029",
+      "status_raw": "requests waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "greenlink-nevada-north",
+      "name": "Greenlink Nevada North (GLN)",
+      "page": 3,
+      "quote": "Greenlink North is a proposed 525kV series compensated line that would run east-to-west along a 235-mile path between Robinson Summit substation in Northeast Nevada and the Walker River (f.k.a. Fort Churchill) substation in western Nevada.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Robinson Summit",
+        "Walker River"
+      ],
+      "voltages_kv": [
+        525,
+        230
+      ],
+      "in_service_raw": "December 2028",
+      "status_raw": "requests a waiver",
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned-sw:greenlink-north"
+    },
+    {
+      "native_id": "buckeye-120-kv-substation-rebuild",
+      "name": "Buckeye 120 kV Substation Rebuild",
+      "page": 4,
+      "quote": "This project is a rebuild of existing and aging 120 kV Buckeye substation with a planned ISD of August 21, 2030.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Buckeye"
+      ],
+      "voltages_kv": [
+        120
+      ],
+      "in_service_raw": "August 21, 2030",
+      "status_raw": "requests waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "peavine-120kv-substation",
+      "name": "Peavine 120kV Substation",
+      "page": 4,
+      "quote": "The new Peavine 120 kV substation project relieves load on the existing Silver Lake and Valley Road Substations. Peavine will increase capacity to serve expanding commercial and residential loads in the North Valleys area. The planned ISD is December 2026",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Peavine"
+      ],
+      "voltages_kv": [
+        120
+      ],
+      "in_service_raw": "December 2026",
+      "status_raw": "requests waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "libra-solar-700-mw-interconnection",
+      "name": "Libra Solar 700 MW Interconnection",
+      "page": 4,
+      "quote": "Company LU, Libra Solar proposes to interconnect 700 MW PV/ BESS at Fort Churchill 345 kV substation to serve NV Energy’s native load. The proposed ISD for this project is October 2027.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Fort Churchill"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "October 2027",
+      "status_raw": "requests waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "valmy-simple-cycle-peaker-plants",
+      "name": "Valmy Simple Cycle Peaker Plants 436.6 MW",
+      "page": 4,
+      "quote": "The two Simple Cycle Peaker Plants at NV Energy’s North Valmy 345 kV Substation would allow dispatch of Natural gas generation for a total of up to 436.6 MW to serve NV Energy’s native load during peak demand periods. The expected ISD of this project is 12/2027 January 2028.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "North Valmy"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "12/2027 January 2028",
+      "status_raw": "requests waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "corsac-geothermal-project",
+      "name": "Corsac Geothermal Project 115 MW",
+      "page": 5,
+      "quote": "Company LB, Fervo Energy seeks a 115 MW Geothermal project interconnection at NV Energy’s proposed Lantern 345 kV substation that was proposed for Sierra Solar interconnection. The proposed ISD for this geothermal project is June 2036.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Lantern"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "June 2036",
+      "status_raw": "requests waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "west-tracy-wild-horse-120-kv-line",
+      "name": "West Tracy – Wild Horse 120 kV Line",
+      "page": 5,
+      "quote": "This project is a new 6-mile West Tracy to Wild Horse 120 kV transmission line to accommodate growing data center and native loads around the Wild Horse switching station.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "West Tracy",
+        "Wild Horse"
+      ],
+      "voltages_kv": [
+        120
+      ],
+      "in_service_raw": "June 2030",
+      "status_raw": "requests waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "reid-gardner-harry-allen-line-3",
+      "name": "Reid Gardner – Harry Allen Line #3",
+      "page": 6,
+      "quote": "This project is a new 22-mile Harry Allen to Reid Gardner #3 230 kV transmission line. The new #3 line will double the transmission capacity between Reid Gardner to Harry Allen, so that new large generator interconnections at Reid Gardner Substation do not overload the Harry Allen - Reid Gardner #1 or #2 230 kV lines. The estimated ISD is June 30, 2028.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Reid Gardner",
+        "Harry Allen"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "June 30, 2028",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "hg-iii-230-12kv-substation",
+      "name": "HG III 230/12kV Substation (aka Apex Central/ Goforth)",
+      "page": 6,
+      "quote": "HG III is a new 230/12kV substation, energized by the Prospector 230 kV line, and is proposed with initial two 35 MVA transformers to accommodate for increased load growth in the central Apex area.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "HG III"
+      ],
+      "voltages_kv": [
+        230,
+        12
+      ],
+      "in_service_raw": "October 2028",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "el-capitan-to-northwest-138-kv-reconductor",
+      "name": "El Capitan to Northwest 138 kV Reconductor",
+      "page": 6,
+      "quote": "This project is comprised of the reconductor of the existing El Capitan to Northwest 138 kV line originally in pursuant to a Power Purchase Agreement for a generator interconnection.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "El Capitan",
+        "Northwest"
+      ],
+      "voltages_kv": [
+        138
+      ],
+      "in_service_raw": "May 2027",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "winston-138kv-switchyard",
+      "name": "Winston 138kV Switchyard",
+      "page": 6,
+      "quote": "This improves reliability of the Northwest to Mercury 138 kV line from Indian Springs to Creech Air Force Base, preventing outages and deficiencies. The expected ISD is now January 2028.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Winston"
+      ],
+      "voltages_kv": [
+        138
+      ],
+      "in_service_raw": "January 2028",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "project-quasar-138kv-switching-station",
+      "name": "Project Quasar – 138kV Switching Station",
+      "page": 7,
+      "quote": "The customer will be served from Pecos substation by building the Pecos to Quasar 138 kV line. The expected ISD is August 2026.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Pecos",
+        "Quasar"
+      ],
+      "voltages_kv": [
+        138
+      ],
+      "in_service_raw": "August 2026",
+      "status_raw": "granted waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "reid-gardner-tortoise-230kv-line-2",
+      "name": "Reid Gardner – Tortoise 230kV line #2",
+      "page": 7,
+      "quote": "This project will construct the second 230 kV line from Reid Gardner to Tortoise. The planned ISD is December 2035. This line was energized from NVE side during November 2024.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Reid Gardner",
+        "Tortoise"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "December 2035",
+      "status_raw": "energized from NVE side during November 2024",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "boulder-solar-iii",
+      "name": "Boulder Solar III",
+      "page": 7,
+      "quote": "This planned 128 MW Solar project, which also includes a 58 MW BESS, will be in Clark County, NV in the Eldorado valley south of Boulder city and will be interconnected at 230kV Nevada Solar One. It is being developed by 174 Power Global and KOMIPO America Inc. This is one of the approved projects by PUCN in November 2020. Planned ISD is December 2026.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Nevada Solar One"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "December 2026",
+      "status_raw": "requests a waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "sapphire-230-12-kv-substation",
+      "name": "Sapphire 230/12 kV Substation",
+      "page": 7,
+      "quote": "This project is being proposed to support the fast load growth in the Apex area of North Las Vegas.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Sapphire"
+      ],
+      "voltages_kv": [
+        230,
+        12
+      ],
+      "in_service_raw": "January 2028",
+      "status_raw": "requests a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "dry-lake-east-ii-interconnection",
+      "name": "Dry Lake East II Interconnection 200 MW PV/ BESS",
+      "page": 8,
+      "quote": "Company 166, NextEra Energy Resources desires to interconnect 200 MW PV Solar at NV Energy’s Harry Allen Substation. A System Impact Study was conducted and required contingent facilities were identified prior to the generator interconnection. The projected ISD is December 2029.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Harry Allen"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "December 2029",
+      "status_raw": "requests a waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "dry-lake-east-i-interconnection",
+      "name": "Dry Lake East I Interconnection 150 MW BESS",
+      "page": 8,
+      "quote": "Company 168, NextEra Energy Resources desires to interconnect 150 MW BESS at NV Energy’s Harry Allen Substation through Dry Lake East II generator lead line sharing. A System Impact Study was conducted and required contingent facilities were identified prior to the generator interconnection. The projected ISD is in March 2027.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Harry Allen"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "March 2027",
+      "status_raw": "requests a waiver",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "greenlink-nevada-west",
+      "name": "Greenlink Nevada West (GLW)",
+      "page": 8,
+      "quote": "Greenlink West is a proposed 320-mile long 525kV series compensated line from Northwest Substation in northwest Las Vegas to Walker River (f.k.a.,Ft. Churchill) Substation in Yerington Nevada, approximately in parallel to the western border of Nevada.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Northwest",
+        "Walker River"
+      ],
+      "voltages_kv": [
+        525,
+        345,
+        230,
+        120
+      ],
+      "in_service_raw": "May 2027",
+      "status_raw": "initiated construction of Segment 1",
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned-sw:greenlink-west"
+    },
+    {
+      "native_id": "harry-allen-to-northwest-525-kv-line",
+      "name": "Harry Allen to Northwest 525 kV transmission line",
+      "page": 9,
+      "quote": "As necessary part of GLW but approved by the PUCN as part of GLN is a 30-mile line in Southern Nevada from Harry Allen substation in North Las Vegas to Northwest Substation in northwest Las Vegas strengthening the system to accommodate flows on both - GLW and GLN projects.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Harry Allen",
+        "Northwest"
+      ],
+      "voltages_kv": [
+        525
+      ],
+      "in_service_raw": "December 2028",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "spring-canyon-230-12-kv-substation",
+      "name": "Spring Canyon 230/12 kV Substation",
+      "page": 9,
+      "quote": "This project is being proposed to support the growing commercial and industrial center in southern Henderson, specifically in the El Dorado Valley. The substation built out consists of two initial 230/12 kV 37.3 MVA transformers and is facilitated to accommodate additional one similar transformers based on load growth. The proposed ISD is March 2030.",
+      "owner": "NV Energy",
+      "states": [
+        "NV"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Spring Canyon"
+      ],
+      "voltages_kv": [
+        230,
+        12
+      ],
+      "in_service_raw": "March 2030",
+      "status_raw": "requests a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "sand-dune-230-kv-switching-station",
+      "name": "Sand Dune 230 kV Switching Station",
+      "page": 9,
+      "quote": "The switching station will be energized by folding the existing Harry Allen to Pecos 230 kV transmission line #1 into Sand Dune. The proposed ISD is June 2030.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Sand Dune"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "June 2030",
+      "status_raw": "requests a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "harry-allen-230-kv-bus-split-and-line-reactor",
+      "name": "Harry Allen 230 kV Bus Split and Line Reactor on Harry Allen – Pecos 230 kV Lines",
+      "page": 9,
+      "quote": "This project is comprised of splitting the Harry Allen 230 kV into two by installing 2-20 ohm series reactors.",
+      "owner": "NV Energy",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Harry Allen",
+        "Pecos"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "May 2028",
+      "status_raw": "requests a waiver",
+      "work_type": "transmission",
+      "published_as": null
+    }
+  ]
+}

@@ -1,0 +1,940 @@
+{
+  "file": "PacifiCorp_2026_APR",
+  "rows": [
+    {
+      "native_id": "windstar-shirley-basin-230-kv",
+      "name": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles)",
+      "page": 6,
+      "quote": "Construction of one new 230 kilovolt (kV) circuit from Windstar to Shirley Basin (57 miles) with 2-1272 ACSR Bittern/phase [PAC In service 2024 owned facility].",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Windstar",
+        "Shirley Basin"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "aeolus-freezeout-230-kv",
+      "name": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line",
+      "page": 6,
+      "quote": "Construction of one new 3.5-mile 230 kV Aeolus - Freezeout line with In service 2024 2X1158.4 Hudson conductor. [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Aeolus",
+        "Freezeout"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "rebuild-dj-amasa-heward-shirley-basin-230-kv",
+      "name": "Rebuild the DJ-Amasa-Heward (new)-Shirley Basin 230 kV line",
+      "page": 7,
+      "quote": "Rebuild the DJ-Amasa-Heward (new)-Shirley Basin 230 kV line from In service 2024 1-1272 ACSR/phase to 2-1272 ACSR/phase. [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "DJ",
+        "Shirley Basin"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "aeolus-525-230-kv-autotransformers",
+      "name": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ)",
+      "page": 7,
+      "quote": "Addition of two – 525/230 kV (1600 MVA) autotransformers (6 x 1Φ) In service 2024 at Aeolus [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [
+        525,
+        230
+      ],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "aeolus-shunt-capacitors-and-reactor",
+      "name": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors",
+      "page": 7,
+      "quote": "Two - 200 MVAr (230 kV), two - 200 MVAr (500 kV), shunt capacitors. Add one new 60 MVAR reactor at Aeolus 230 kV. [PAC owned facility] In service 2024",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [
+        230,
+        500
+      ],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "latham-series-compensation-aeolus-anticline",
+      "name": "Addition of 50% of series compensation near Latham on the Aeolus",
+      "page": 7,
+      "quote": "Addition of 50% of series compensation near Latham on the Aeolus – 2036 (earliest) Anticline 500 kV line",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Aeolus",
+        "Anticline"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "aeolus-ras-modification",
+      "name": "Modification of the Remedial Action Scheme (RAS) at Aeolus",
+      "page": 7,
+      "quote": "Modification of the Remedial Action Scheme (RAS) at Aeolus for loss of Bridger/Anticline-Aeolus facilities and Aeolus – Clover facilities In service 2024",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "other",
+      "published_as": null
+    },
+    {
+      "native_id": "anticline-500-345-kv-autotransformer",
+      "name": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ)",
+      "page": 7,
+      "quote": "Addition of one - 500/345 kV (1600 MVA) auto transformer (3 x 1Φ) In-Service: at Anticline [PAC owned facility] – Initial D.2 Project facility October 2020",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Anticline"
+      ],
+      "voltages_kv": [
+        500,
+        345
+      ],
+      "in_service_raw": "October 2020",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "bridger-2-autotransformer-replacement",
+      "name": "Replace the Bridger 345/230 kV #2 (200 MVA) autotransformer with a",
+      "page": 7,
+      "quote": "Replace the Bridger 345/230 kV #2 (200 MVA) autotransformer with a In-service: April 700 MVA autotransformer [PAC/IPC jointly owned facility] 2022",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Bridger"
+      ],
+      "voltages_kv": [
+        345,
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "In-service",
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:replace-the-bridger-345-230-kv-2-200-mva-autotransformer-with-a"
+    },
+    {
+      "native_id": "bridger-1-3-autotransformer-replacement",
+      "name": "Replace the Bridger 345/230 kV #1 and #3 (2 x 200 MVA) autotransformers with a single 700 MVA auto transformer.",
+      "page": 7,
+      "quote": "Replace the Bridger 345/230 kV #1 and #3 (2 x 200 MVA) autotransformers with a single 700 MVA auto transformer. [jointly 2036 (earliest) owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Bridger"
+      ],
+      "voltages_kv": [
+        345,
+        230
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:replace-the-bridger-345-230-kv-1-and-3-2-x-200-mva-autotransformers-with-a-singl"
+    },
+    {
+      "native_id": "anticline-phase-shifting-transformers",
+      "name": "Addition of four 345/345 kV (533.3 MVA) phase-shifting transformers",
+      "page": 7,
+      "quote": "Addition of four 345/345 kV (533.3 MVA) phase-shifting transformers In service Dec at Anticline [PAC owned facility] 2024",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Anticline"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "In service",
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:addition-of-four-345-345-kv-533-3-mva-phase-shifting-transformers"
+    },
+    {
+      "native_id": "anticline-bridger-345-kv",
+      "name": "Construction of one new 345 kV circuit from Anticline to Bridger",
+      "page": 7,
+      "quote": "Construction of one new 345 kV circuit from Anticline to Bridger (5 In-Service: miles) [PAC owned facility] – Initial D.2 Project facility October 2020",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Anticline",
+        "Bridger"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "October 2020",
+      "status_raw": "In-Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "anticline-populus-500-kv",
+      "name": "Construction of one new 500 kV circuit from Anticline to Populus",
+      "page": 7,
+      "quote": "Construction of one new 500 kV circuit from Anticline to Populus with Q4 2036 (earliest) 50% of series compensation (203 miles) [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Anticline",
+        "Populus"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:anticline-to-populus"
+    },
+    {
+      "native_id": "populus-500-345-kv-autotransformer",
+      "name": "Addition of one - 500/345 kV (2000 MVA) autotransformer (3 x 1Φ) at",
+      "page": 7,
+      "quote": "Addition of one - 500/345 kV (2000 MVA) autotransformer (3 x 1Φ) at Q4 2036 (earliest) Populus [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Populus"
+      ],
+      "voltages_kv": [
+        500,
+        345
+      ],
+      "in_service_raw": "Q4 2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:addition-of-one-500-345-kv-2000-mva-autotransformer-3-x-1-at"
+    },
+    {
+      "native_id": "aeolus-230-kv-svc",
+      "name": "Aeolus 230 kV SVC (-150/+300 MVAr)",
+      "page": 7,
+      "quote": "Aeolus 230 kV SVC (-150/+300 MVAr) Q4 2036 (earliest)",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Aeolus"
+      ],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": "Q4 2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:aeolus-230-kv-svc-150-300-mvar"
+    },
+    {
+      "native_id": "bridger-generator-tripping-scheme-ras-c-d",
+      "name": "Modification of the generator tripping scheme at Bridger (RAS C/D)",
+      "page": 7,
+      "quote": "Modification of the generator tripping scheme at Bridger (RAS C/D) to include tripping of eastern Wyoming wind generation for loss of In service 2024 Bridger West transmission facilities.",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY"
+      ],
+      "state_basis": "text",
+      "kind": "site",
+      "facilities": [
+        "Bridger"
+      ],
+      "voltages_kv": [],
+      "in_service_raw": "2024",
+      "status_raw": "In service",
+      "work_type": "other",
+      "published_as": null
+    },
+    {
+      "native_id": "populus-borah-500-kv",
+      "name": "Construction of one new 500 kV circuit from Populus to Borah (55 miles)",
+      "page": 7,
+      "quote": "Construction of one new 500 kV circuit from Populus to Borah (55 miles) and new 500 kV circuit between Borah and Midpoint (88 miles). 2036 (earliest)",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Populus",
+        "Borah"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned:gateway-west-populus-to-borah-e-north"
+    },
+    {
+      "native_id": "borah-midpoint-500-kv",
+      "name": "new 500 kV circuit between Borah and Midpoint (88 miles)",
+      "page": 7,
+      "quote": "Construction of one new 500 kV circuit from Populus to Borah (55 miles) and new 500 kV circuit between Borah and Midpoint (88 miles). 2036 (earliest) These line sections will be built by conversion of the operating voltage",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Borah",
+        "Midpoint"
+      ],
+      "voltages_kv": [
+        500,
+        345
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned:gateway-west-borah-to-midpoint-e-north"
+    },
+    {
+      "native_id": "populus-cedar-hill-500-kv",
+      "name": "Construction of one new 500 kV circuit from Populus to Cedar Hill",
+      "page": 8,
+      "quote": "Construction of one new 500 kV circuit from Populus to Cedar Hill with approximately 45% series compensation. (118 miles) [PAC Q4 2036 (earliest) owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Populus",
+        "Cedar Hill"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "northerngrid-scope-2024-2025:gateway-west-segment-e-phase-1-populus-cedar-hill-500-kv"
+    },
+    {
+      "native_id": "cedar-hill-hemingway-500-kv",
+      "name": "Construction of one new 500 kV circuit from Cedar Hill to Hemingway",
+      "page": 8,
+      "quote": "Construction of one new 500 kV circuit from Cedar Hill to Hemingway with approximately 45% series compensation. (161 miles) [PAC/IPC 2036 (earliest) jointly owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned:gateway-west-cedar-hill-to-hemingway-e-south"
+    },
+    {
+      "native_id": "cedar-hill-midpoint-500-kv",
+      "name": "Construction of one new 500 kV circuit from Cedar Hill to Midpoint.",
+      "page": 8,
+      "quote": "Construction of one new 500 kV circuit from Cedar Hill to Midpoint. This line will connect the Idaho southern route to Midpoint for 2036 (earliest) improved reliability. (34 miles) [PAC/IPC jointly owned facility]",
+      "owner": "PacifiCorp",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Cedar Hill",
+        "Midpoint"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "2036 (earliest)",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned:gateway-west-cedar-hill-to-midpoint-segment-e"
+    },
+    {
+      "native_id": "midpoint-hemingway-section",
+      "name": "Midpoint – Hemingway Section",
+      "page": 8,
+      "quote": "Construction of the second 500 kV circuit from Midpoint to Hemingway with approximately 50% series compensation. Q4 2028 (126 miles) [PAC/IPC jointly owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Midpoint",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2028",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:midpoint-hemingway-section"
+    },
+    {
+      "native_id": "gateway-south-aeolus-clover-500-kv",
+      "name": "Gateway South Transmission Project",
+      "page": 8,
+      "quote": "The 500 kV transmission segment extends 416 miles between the new (as part of Gateway West sub-segment D.2) Aeolus substation near Medicine Bow, Wyoming, and the existing Clover substation located near Mona, Utah.",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY",
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Aeolus",
+        "Clover"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "December 2024",
+      "status_raw": "placed in service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "clover-loop-in-and-clover-mona-rebuild",
+      "name": "Loop-in the 345 kV circuit between Huntington and Mona into Clover",
+      "page": 9,
+      "quote": "Loop-in the 345 kV circuit between Huntington and Mona into Clover and rebuild the existing Clover – Mona 345 kV #1 and #2 In Service Dec 2024 lines. [PAC owned facility]",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Clover",
+        "Mona"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "Dec 2024",
+      "status_raw": "In Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "clover-camp-williams-3-345-kv",
+      "name": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover",
+      "page": 9,
+      "quote": "Re-terminate Mona – Camp Williams #3 345 kV line into Clover In Service Dec 2024 making it Clover – Camp Williams # 3 345 kV line.",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Clover",
+        "Camp Williams"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "Dec 2024",
+      "status_raw": "In Service",
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "oquirrh-to-terminal",
+      "name": "Oquirrh to Terminal",
+      "page": 9,
+      "quote": "The Oquirrh – Terminal #3 & #4 double circuit 345 kV lines would parallel the existing Oquirrh – Terminal #1 & #2 345 kV lines.",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "line",
+      "facilities": [
+        "Oquirrh",
+        "Terminal"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "December 2025",
+      "status_raw": "placed in-service",
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned-sw:oquirrh-terminal-345-kv-3-and-4-double-circuit-line"
+    },
+    {
+      "native_id": "limber-500-345-138-kv-substation",
+      "name": "Construct Limber 500/345/138 kV substation",
+      "page": 10,
+      "quote": "Construct Limber 500/345/138 kV substation • Terminate Clover – Oquirrh 345 kV line into Limber • Energize the Clover – Limber section of the Clover –line to 500 kV • Install one (1) 1600 MVA 525/345 kV auto transformer at Limber • Install two (2) 700 MVA 345/138 kV auto transformer at Q4 2032 Limber",
+      "owner": "PacifiCorp",
+      "states": [],
+      "state_basis": "owner_territory",
+      "kind": "site",
+      "facilities": [
+        "Limber"
+      ],
+      "voltages_kv": [
+        500,
+        345,
+        138
+      ],
+      "in_service_raw": "Q4 2032",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": null
+    },
+    {
+      "native_id": "longhorn-to-hemingway-b2h",
+      "name": "Longhorn-to-Hemingway (B2H)",
+      "page": 10,
+      "quote": "This new line, previously referred to as the Boardman to Hemingway line, will be approximately 290 miles between the planned Longhorn substation near Boardman, Oregon and the Hemingway substation near Melba, Idaho. The project has a planned in-service date of Q4 2027.",
+      "owner": "PacifiCorp",
+      "states": [
+        "OR",
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Longhorn",
+        "Hemingway"
+      ],
+      "voltages_kv": [
+        500
+      ],
+      "in_service_raw": "Q4 2027",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "wecc-apr-2025-pacificorp:longhorn-to-hemingway-b2h"
+    },
+    {
+      "native_id": "spanish-fork-mercer-345-kv-line",
+      "name": "Spanish Fork – Mercer",
+      "page": 15,
+      "quote": "The Spanish Fork – Mercer is a 45 mile long 345 kV line connecting two existing substations both in Utah County.",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": "line",
+      "facilities": [
+        "Spanish Fork",
+        "Mercer"
+      ],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": "Q1 2028",
+      "status_raw": null,
+      "work_type": "transmission",
+      "published_as": "westtec-10yr-planned-sw:spanish-fork-mercer-345-kv-line"
+    },
+    {
+      "native_id": "queue-409",
+      "name": "409",
+      "page": 13,
+      "quote": "Albany, 409 PacifiCorp On File In Service 320 Wind 230 Complete WY",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "In Service",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-713",
+      "name": "713",
+      "page": 13,
+      "quote": "Converse, In- 713 PacifiCorp On File Executed IA 350 Wind 230 WY service",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-719",
+      "name": "719",
+      "page": 13,
+      "quote": "Albany, 719 PacifiCorp On File Suspended 280 Wind 230 Complete WY",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Suspended",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-778",
+      "name": "778",
+      "page": 13,
+      "quote": "Emery, In- 778 PacifiCorp On File Construction 200 Solar 345 UT service",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Construction",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-787",
+      "name": "787",
+      "page": 13,
+      "quote": "Emery, In- 787 PacifiCorp On File Executed IA 200 Solar 345 UT service",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-836",
+      "name": "836",
+      "page": 13,
+      "quote": "Carbon, 836 PacifiCorp On File Executed IA 400 Wind 230 Complete WY",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-838",
+      "name": "838",
+      "page": 13,
+      "quote": "838 Utah, UT PacifiCorp On File Executed IA 525 Solar 345 Complete",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c1-34",
+      "name": "C1-34",
+      "page": 13,
+      "quote": "C1-34 Utah, UT PacifiCorp On File Executed IA 200 & 345 Complete",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c1-35",
+      "name": "C1-35",
+      "page": 13,
+      "quote": "C1-35 PacifiCorp On File Executed IA 500 Wind 230 Complete UT",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c1-39",
+      "name": "C1-39",
+      "page": 13,
+      "quote": "C1-39 PacifiCorp On File Construction 300 & 345 Complete on, UT",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Construction",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c1-50",
+      "name": "C1-50",
+      "page": 14,
+      "quote": "C1-50 Utah, UT PacifiCorp On File Suspended 400 & 345 Complete",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Suspended",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c1-51",
+      "name": "C1-51",
+      "page": 14,
+      "quote": "C1-51 Juab, UT PacifiCorp On File Suspended 300 & 345 Complete",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Suspended",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c2-10",
+      "name": "C2-10",
+      "page": 14,
+      "quote": "C2-10 PacifiCorp On File Executed IA 500 Storag 345 Complete UT",
+      "owner": "PacifiCorp",
+      "states": [
+        "UT"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c2-32",
+      "name": "C2-32",
+      "page": 14,
+      "quote": "C2-32 PacifiCorp On File Executed IA 500 230 due to WY r",
+      "owner": "PacifiCorp",
+      "states": [
+        "WY"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        230
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c2-45",
+      "name": "C2-45",
+      "page": 14,
+      "quote": "C2-45 PacifiCorp On File Executed IA 600 Battery 345 ID d",
+      "owner": "PacifiCorp",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    },
+    {
+      "native_id": "queue-c2-82",
+      "name": "C2-82",
+      "page": 14,
+      "quote": "C2-82 PacifiCorp On File Executed IA 300 & 345 Complete",
+      "owner": "PacifiCorp",
+      "states": [
+        "ID"
+      ],
+      "state_basis": "text",
+      "kind": null,
+      "facilities": [],
+      "voltages_kv": [
+        345
+      ],
+      "in_service_raw": null,
+      "status_raw": "Executed IA",
+      "work_type": "generation",
+      "published_as": null
+    }
+  ]
+}

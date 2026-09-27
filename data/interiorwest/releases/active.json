@@ -1,17 +1,17 @@
 {
   "expected_counts": {
-    "candidate": 11,
-    "candidate_unique_name": 0,
-    "centers": 11,
-    "distinct_points": 7,
-    "projects": 24,
-    "sources": 1
+    "candidate": 31,
+    "candidate_unique_name": 1,
+    "centers": 32,
+    "distinct_points": 26,
+    "projects": 48,
+    "sources": 4
   },
   "files": {
-    "projects": "677049d1568fc8eed63985c93781b42782ee78cb4c275991f29a6876f9e58ed5",
-    "sources": "abdf6f066e78f814943087e29e215ebd8a3f829eea22852d2b6d1a0cfb3452de"
+    "projects": "c1e46bd1395380296fbb70c54f3e797e0c9f8dbb6e080de29980f820afb3b1ec",
+    "sources": "24d4124254d1cafaebee6d6fe0161d2c697728c4d11b5a1cefb5f5247ab23143"
   },
   "policy": "C25",
-  "release_id": "interiorwest-candidates-1",
+  "release_id": "interiorwest-candidates-2",
   "rule": "C33"
 }
