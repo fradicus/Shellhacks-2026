@@ -1,0 +1,84 @@
+{
+  "pages": {
+    "hifld-il-0.json": {
+      "bytes": 546298,
+      "retrieved_at": "2026-09-27T12:15:01Z",
+      "sha256": "dc574d642c04baffa6f39e7b325f69d6be03f86f22e121678db0a5a48093843c",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27IL%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-in-0.json": {
+      "bytes": 550885,
+      "retrieved_at": "2026-09-27T12:15:02Z",
+      "sha256": "f0d69a5e726262f1ad2953422d865dc801c0d090c4e1cf64dd19aa9a9f4f8f48",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27IN%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-in-1.json": {
+      "bytes": 21252,
+      "retrieved_at": "2026-09-27T12:15:03Z",
+      "sha256": "1fd1c9876c119c9d37171210ada9d86def24e6b9c91d89c579458189eef00c19",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27IN%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-mi-0.json": {
+      "bytes": 520848,
+      "retrieved_at": "2026-09-27T12:14:59Z",
+      "sha256": "859c3c8700ad800b8ee489b85a53c26095b2a5248cef2c761565b74e2101370b",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27MI%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-mn-0.json": {
+      "bytes": 546140,
+      "retrieved_at": "2026-09-27T12:14:55Z",
+      "sha256": "2688e7e7e70e60064b1541f1d9da39dbd67506d84ec37c05254576c9cee4fdd7",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27MN%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-mn-1.json": {
+      "bytes": 98464,
+      "retrieved_at": "2026-09-27T12:14:56Z",
+      "sha256": "aa796e5140a9895166e80268eb2db8c47ea1ad6eb798af24844e6913aa244636",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27MN%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-ny-0.json": {
+      "bytes": 559465,
+      "retrieved_at": "2026-09-27T12:15:11Z",
+      "sha256": "abfc238fbda17bf1d37708cf63273f2a599542a49cecbf026b96a00720d0d11b",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27NY%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-ny-1.json": {
+      "bytes": 218345,
+      "retrieved_at": "2026-09-27T12:15:12Z",
+      "sha256": "8b424c3dfabfac0bee3158aef1f308f2dd953d75a164b4e6a52c59167321a437",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27NY%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-oh-0.json": {
+      "bytes": 553546,
+      "retrieved_at": "2026-09-27T12:15:05Z",
+      "sha256": "28e690eead9b8f08f300e1e30364fa7d52a88407e7a76ca3e82758f8d5f9c3aa",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27OH%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-oh-1.json": {
+      "bytes": 158111,
+      "retrieved_at": "2026-09-27T12:15:06Z",
+      "sha256": "2294e44d1e8d21dc42ac90cc9bda548d235d4d9f095f0a90fc5aeac39cb6cbde",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27OH%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-pa-0.json": {
+      "bytes": 556598,
+      "retrieved_at": "2026-09-27T12:15:07Z",
+      "sha256": "d9d7b5ea6974e9f9769c885529d8853253ef909d804aa2d3027589c01c11d333",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27PA%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-pa-1.json": {
+      "bytes": 30739,
+      "retrieved_at": "2026-09-27T12:15:09Z",
+      "sha256": "6248a4a70e0cc69c3068fa2ede280dcc1ac5249b16191caa196e6aa77a2c4dec",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27PA%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=2000&resultRecordCount=2000&outSR=4326&f=geojson"
+    },
+    "hifld-wi-0.json": {
+      "bytes": 524405,
+      "retrieved_at": "2026-09-27T12:14:58Z",
+      "sha256": "5da14fb69b4af1dc79d3b22fd31ccb4ef2f9cbbfa706d08a737820a60da06364",
+      "url": "https://services5.arcgis.com/HDRa0B57OVrv2E1q/arcgis/rest/services/Electric_Substations/FeatureServer/0/query?where=STATE%3D%27WI%27&outFields=ID,NAME,CITY,STATE,COUNTY,STATUS,MAX_VOLT,MIN_VOLT,SOURCEDATE&orderByFields=OBJECTID_1&resultOffset=0&resultRecordCount=2000&outSR=4326&f=geojson"
+    }
+  },
+  "publisher": "Homeland Infrastructure Foundation-Level Data (HIFLD), Electric Substations (public layer)",
+  "role": "candidate facility geometry only (C33), used when OSM names no facility"
+}

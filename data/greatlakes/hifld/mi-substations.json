@@ -1,0 +1,6502 @@
+[
+  {
+    "id": "hifld/107659",
+    "lat": 45.5137806,
+    "lon": -87.8009208,
+    "name": "CHALK HILLS HY",
+    "norm": "CHALK HILLS HY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128246",
+    "lat": 43.4013754,
+    "lon": -84.9142741,
+    "name": "VESTABURG",
+    "norm": "VESTABURG",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128288",
+    "lat": 44.5614484,
+    "lon": -83.8030342,
+    "name": "ALCONA",
+    "norm": "ALCONA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128350",
+    "lat": 41.8162638,
+    "lon": -83.834138,
+    "name": "MOROCCO",
+    "norm": "MOROCCO",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128374",
+    "lat": 45.8404659,
+    "lon": -88.0636839,
+    "name": "BASS LAKE",
+    "norm": "BASS LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128375",
+    "lat": 46.0416056,
+    "lon": -88.0618095,
+    "name": "SAGOLA",
+    "norm": "SAGOLA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128376",
+    "lat": 45.1437785,
+    "lon": -87.6148165,
+    "name": "MENOMINEE",
+    "norm": "MENOMINEE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128377",
+    "lat": 45.7804047,
+    "lon": -87.1429053,
+    "name": "DELTA (UPPCO)",
+    "norm": "DELTA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128385",
+    "lat": 46.3354226,
+    "lon": -85.145516,
+    "name": "HULBERT",
+    "norm": "HULBERT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128386",
+    "lat": 46.3458279,
+    "lon": -85.0187418,
+    "name": "ECKERMAN",
+    "norm": "ECKERMAN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128387",
+    "lat": 46.3786899,
+    "lon": -84.6132685,
+    "name": "BRIMLEY",
+    "norm": "BRIMLEY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128388",
+    "lat": 46.1872531,
+    "lon": -84.3429228,
+    "name": "PICKFORD",
+    "norm": "PICKFORD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128468",
+    "lat": 42.3273832,
+    "lon": -83.1963209,
+    "name": "CRESTWOOD",
+    "norm": "CRESTWOOD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "230000;120000"
+  },
+  {
+    "id": "hifld/128492",
+    "lat": 45.987783,
+    "lon": -88.039809,
+    "name": "RANDVILLE",
+    "norm": "RANDVILLE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128493",
+    "lat": 45.9944657,
+    "lon": -87.9533316,
+    "name": "NORDIC",
+    "norm": "NORDIC",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128495",
+    "lat": 45.8549786,
+    "lon": -87.1308138,
+    "name": "CHANDLER",
+    "norm": "CHANDLER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128496",
+    "lat": 45.975819,
+    "lon": -87.1030711,
+    "name": "ATC PERKINS",
+    "norm": "ATC PERKINS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128497",
+    "lat": 45.9050267,
+    "lon": -86.9885255,
+    "name": "MASONVILLE (UPPCO)",
+    "norm": "MASONVILLE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128509",
+    "lat": 42.6391763,
+    "lon": -83.2048223,
+    "name": "HAMLIN",
+    "norm": "HAMLIN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/128510",
+    "lat": 42.6614787,
+    "lon": -83.1209247,
+    "name": "SENECA",
+    "norm": "SENECA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;120000"
+  },
+  {
+    "id": "hifld/128520",
+    "lat": 42.7642815,
+    "lon": -82.4746271,
+    "name": "ST. CLAIR",
+    "norm": "ST. CLAIR",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/128536",
+    "lat": 43.1029784,
+    "lon": -82.7018043,
+    "name": "GREENWOOD",
+    "norm": "GREENWOOD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/128544",
+    "lat": 45.8586211,
+    "lon": -84.7359016,
+    "name": "STRAITS",
+    "norm": "STRAITS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128568",
+    "lat": 46.1880011,
+    "lon": -84.5968829,
+    "name": "PINE RIVER",
+    "norm": "PINE RIVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128574",
+    "lat": 46.3740599,
+    "lon": -84.4177643,
+    "name": "DAFTER",
+    "norm": "DAFTER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/128575",
+    "lat": 46.3739203,
+    "lon": -84.4023613,
+    "name": "9 MILE SW STA",
+    "norm": "9 MILE SW STA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128576",
+    "lat": 45.784322,
+    "lon": -84.7712125,
+    "name": "MCGULPIN",
+    "norm": "MCGULPIN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128590",
+    "lat": 43.3748053,
+    "lon": -84.6686499,
+    "name": "ALMA",
+    "norm": "ALMA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128599",
+    "lat": 42.6792422,
+    "lon": -84.5292737,
+    "name": "DELHI",
+    "norm": "DELHI",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128643",
+    "lat": 42.4690841,
+    "lon": -83.428243,
+    "name": "SUNSET",
+    "norm": "SUNSET",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/128660",
+    "lat": 46.3213299,
+    "lon": -85.4862025,
+    "name": "ROBERTS SW STA",
+    "norm": "ROBERTS SW STA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128675",
+    "lat": 46.1970867,
+    "lon": -85.0208165,
+    "name": "TROUT LAKE (ESE)",
+    "norm": "TROUT LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128686",
+    "lat": 44.9371466,
+    "lon": -85.1237416,
+    "name": "STOVER",
+    "norm": "STOVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128691",
+    "lat": 46.0290684,
+    "lon": -85.0448309,
+    "name": "BREVORT",
+    "norm": "BREVORT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128703",
+    "lat": 46.3409259,
+    "lon": -85.9611919,
+    "name": "SENEY (AD-REA)",
+    "norm": "SENEY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128704",
+    "lat": 46.3413799,
+    "lon": -85.961198,
+    "name": "SENEY (UPPCO)",
+    "norm": "SENEY",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128707",
+    "lat": 43.4379076,
+    "lon": -85.6660503,
+    "name": "CROTON",
+    "norm": "CROTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128716",
+    "lat": 46.1293605,
+    "lon": -85.5496247,
+    "name": "ENGADINE",
+    "norm": "ENGADINE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128717",
+    "lat": 46.1270155,
+    "lon": -85.548613,
+    "name": "HIAWATHA (ESE)",
+    "norm": "HIAWATHA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128721",
+    "lat": 41.9973106,
+    "lon": -86.091126,
+    "name": "AEP COLBY",
+    "norm": "AEP COLBY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128723",
+    "lat": 42.1019365,
+    "lon": -85.968853,
+    "name": "VALLEY",
+    "norm": "VALLEY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128724",
+    "lat": 45.9749523,
+    "lon": -86.2701514,
+    "name": "INDIAN LAKE",
+    "norm": "INDIAN LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128726",
+    "lat": 41.9959192,
+    "lon": -85.6284877,
+    "name": "MOOREPARK",
+    "norm": "MOOREPARK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128735",
+    "lat": 45.9684552,
+    "lon": -86.2016872,
+    "name": "VALLEY (ESE)",
+    "norm": "VALLEY",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128739",
+    "lat": 41.8859969,
+    "lon": -86.1895467,
+    "name": "KENZIE CREEK",
+    "norm": "KENZIE CREEK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/128740",
+    "lat": 41.8759982,
+    "lon": -86.1761329,
+    "name": "POKAGON",
+    "norm": "POKAGON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128761",
+    "lat": 46.0974577,
+    "lon": -85.8908892,
+    "name": "BLANEY PARK SW STA",
+    "norm": "BLANEY PARK SW STA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128771",
+    "lat": 41.9171962,
+    "lon": -85.6840175,
+    "name": "COREY",
+    "norm": "COREY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128774",
+    "lat": 41.9339367,
+    "lon": -85.6314079,
+    "name": "THREE RIVERS",
+    "norm": "THREE RIVERS",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128786",
+    "lat": 42.1429619,
+    "lon": -86.4357591,
+    "name": "RIVERSIDE",
+    "norm": "RIVERSIDE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128793",
+    "lat": 46.4977952,
+    "lon": -87.8971938,
+    "name": "GREENSTONE",
+    "norm": "GREENSTONE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128794",
+    "lat": 46.5009331,
+    "lon": -87.7303549,
+    "name": "NORTH LAKE",
+    "norm": "NORTH LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128795",
+    "lat": 46.4458245,
+    "lon": -87.7204816,
+    "name": "NATIONAL",
+    "norm": "NATIONAL",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128796",
+    "lat": 45.6969083,
+    "lon": -87.5032597,
+    "name": "POWERS",
+    "norm": "POWERS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128799",
+    "lat": 46.0188268,
+    "lon": -87.4167193,
+    "name": "WATSON",
+    "norm": "WATSON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128800",
+    "lat": 46.3334487,
+    "lon": -87.3794651,
+    "name": "K I SAWYER",
+    "norm": "K I SAWYER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128801",
+    "lat": 45.7035997,
+    "lon": -87.3658503,
+    "name": "HARRIS",
+    "norm": "HARRIS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128802",
+    "lat": 45.9054092,
+    "lon": -87.2232958,
+    "name": "CORNELL-UP",
+    "norm": "CORNELL-UP",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128804",
+    "lat": 45.8488148,
+    "lon": -87.0372176,
+    "name": "NORTH BLUFF",
+    "norm": "NORTH BLUFF",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128805",
+    "lat": 46.4072594,
+    "lon": -86.643578,
+    "name": "MUNISING",
+    "norm": "MUNISING",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128806",
+    "lat": 45.9059553,
+    "lon": -86.4858917,
+    "name": "GARDEN CORNERS",
+    "norm": "GARDEN CORNERS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128807",
+    "lat": 45.7715721,
+    "lon": -87.0657308,
+    "name": "ESCANABA STEAM PLANT",
+    "norm": "ESCANABA STEAM PLANT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128808",
+    "lat": 47.368698,
+    "lon": -88.1801392,
+    "name": "KEWEENAW",
+    "norm": "KEWEENAW",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128810",
+    "lat": 46.5169667,
+    "lon": -87.4895964,
+    "name": "FREEMAN",
+    "norm": "FREEMAN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128811",
+    "lat": 46.3847769,
+    "lon": -86.6404806,
+    "name": "ALGER",
+    "norm": "ALGER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128812",
+    "lat": 46.4024102,
+    "lon": -87.9625583,
+    "name": "PERCH LAKE",
+    "norm": "PERCH LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128814",
+    "lat": 46.2755509,
+    "lon": -87.437652,
+    "name": "GWINN",
+    "norm": "GWINN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128815",
+    "lat": 46.2673791,
+    "lon": -87.4336051,
+    "name": "FORSYTH",
+    "norm": "FORSYTH",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128818",
+    "lat": 46.7598443,
+    "lon": -89.0790496,
+    "name": "MASS",
+    "norm": "MASS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128819",
+    "lat": 47.0983881,
+    "lon": -88.627278,
+    "name": "ATLANTIC",
+    "norm": "ATLANTIC",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128821",
+    "lat": 47.1342704,
+    "lon": -88.5930074,
+    "name": "ELEVATION ST",
+    "norm": "ELEVATION ST",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128822",
+    "lat": 46.7880901,
+    "lon": -88.6083139,
+    "name": "M-38",
+    "norm": "M-38",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128823",
+    "lat": 46.0854603,
+    "lon": -88.654202,
+    "name": "IRON GROVE",
+    "norm": "IRON GROVE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128824",
+    "lat": 46.0876089,
+    "lon": -88.6537463,
+    "name": "STRAWBERRY HILL",
+    "norm": "STRAWBERRY HILL",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128825",
+    "lat": 46.8664415,
+    "lon": -89.3264997,
+    "name": "UPSCO",
+    "norm": "UPSCO",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128826",
+    "lat": 46.8613513,
+    "lon": -89.3037239,
+    "name": "ONTONAGON",
+    "norm": "ONTONAGON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128827",
+    "lat": 46.8567102,
+    "lon": -88.9247018,
+    "name": "WINONA",
+    "norm": "WINONA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128828",
+    "lat": 47.1211915,
+    "lon": -88.5515917,
+    "name": "MTU",
+    "norm": "MTU",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128829",
+    "lat": 46.0876628,
+    "lon": -88.6282043,
+    "name": "LINCOLN AVE (UPPCO)",
+    "norm": "LINCOLN AVE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128831",
+    "lat": 46.4483796,
+    "lon": -90.166933,
+    "name": "IRONWOOD",
+    "norm": "IRONWOOD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/128834",
+    "lat": 46.7484546,
+    "lon": -89.5702525,
+    "name": "WHITE PINE VLG",
+    "norm": "WHITE PINE VLG",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128862",
+    "lat": 45.4789549,
+    "lon": -87.8020723,
+    "name": "HOLMES",
+    "norm": "HOLMES",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;69000"
+  },
+  {
+    "id": "hifld/128863",
+    "lat": 45.4815117,
+    "lon": -87.8021395,
+    "name": "WHITE RAPIDS HY",
+    "norm": "WHITE RAPIDS HY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128864",
+    "lat": 45.3544424,
+    "lon": -87.6484547,
+    "name": "GRAND RAPIDS HY",
+    "norm": "GRAND RAPIDS HY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128865",
+    "lat": 45.3531625,
+    "lon": -87.6429368,
+    "name": "INGALIS",
+    "norm": "INGALIS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128878",
+    "lat": 45.1021084,
+    "lon": -87.6123622,
+    "name": "FOURTH AVENUE",
+    "norm": "FOURTH AVENUE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128884",
+    "lat": 44.3636711,
+    "lon": -85.8200915,
+    "name": "HODENPYL",
+    "norm": "HODENPYL",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/128885",
+    "lat": 44.2759177,
+    "lon": -83.7557399,
+    "name": "WHITTEMORE",
+    "norm": "WHITTEMORE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128889",
+    "lat": 44.2796515,
+    "lon": -83.5062296,
+    "name": "EAST TAWAS",
+    "norm": "EAST TAWAS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128895",
+    "lat": 42.4430877,
+    "lon": -83.230603,
+    "name": "SOUTHFIELD",
+    "norm": "SOUTHFIELD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/128915",
+    "lat": 44.1126283,
+    "lon": -83.8053476,
+    "name": "TWINING",
+    "norm": "TWINING",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128960",
+    "lat": 41.9557895,
+    "lon": -84.9801278,
+    "name": "MICHIGAN AVENUE",
+    "norm": "MICHIGAN AVENUE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/128963",
+    "lat": 41.7989822,
+    "lon": -85.4252653,
+    "name": "STURGIS",
+    "norm": "STURGIS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128965",
+    "lat": 41.8437009,
+    "lon": -85.6697431,
+    "name": "CONSTANTINE HYDRO",
+    "norm": "CONSTANTINE HYDRO",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128974",
+    "lat": 45.9837278,
+    "lon": -83.9044083,
+    "name": "DETOUR",
+    "norm": "DETOUR",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/128975",
+    "lat": 46.5015516,
+    "lon": -84.3549302,
+    "name": "MAGAZINE SUBSTATION NO. 21",
+    "norm": "MAGAZINE NO. 21",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128977",
+    "lat": 46.3520612,
+    "lon": -85.5049476,
+    "name": "NEWBERRY VLG",
+    "norm": "NEWBERRY VLG",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/128978",
+    "lat": 45.9580599,
+    "lon": -86.2569084,
+    "name": "MANISTIQUE",
+    "norm": "MANISTIQUE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/128980",
+    "lat": 45.8475814,
+    "lon": -87.0043247,
+    "name": "GLADSTONE",
+    "norm": "GLADSTONE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/128981",
+    "lat": 45.099202,
+    "lon": -87.5972452,
+    "name": "BAYSHORE",
+    "norm": "BAYSHORE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/128982",
+    "lat": 45.0995292,
+    "lon": -87.6002934,
+    "name": "2ND ST",
+    "norm": "2ND ST",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129054",
+    "lat": 45.8719123,
+    "lon": -88.068902,
+    "name": "TWIN FALLS SW STA",
+    "norm": "TWIN FALLS SW STA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/129055",
+    "lat": 45.9553432,
+    "lon": -88.1963091,
+    "name": "MICHIGAMME FALLS HY",
+    "norm": "MICHIGAMME FALLS HY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129056",
+    "lat": 45.9882934,
+    "lon": -88.2070537,
+    "name": "PEAVY FALL HY",
+    "norm": "PEAVY FALL HY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129062",
+    "lat": 46.7532969,
+    "lon": -88.456388,
+    "name": "JH WARDEN",
+    "norm": "JH WARDEN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129064",
+    "lat": 47.0810676,
+    "lon": -88.6474007,
+    "name": "PORTAGE (UPPCO)",
+    "norm": "PORTAGE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/129065",
+    "lat": 46.695516,
+    "lon": -89.2092009,
+    "name": "VICTORIA HY",
+    "norm": "VICTORIA HY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129066",
+    "lat": 46.7652399,
+    "lon": -89.5675006,
+    "name": "WHITE PINE MINE",
+    "norm": "WHITE PINE MINE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/129068",
+    "lat": 42.0041505,
+    "lon": -85.6638602,
+    "name": "FLOWERFIELD",
+    "norm": "FLOWERFIELD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/129482",
+    "lat": 42.1830525,
+    "lon": -86.3854333,
+    "name": "HAGAR",
+    "norm": "HAGAR",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/129484",
+    "lat": 42.2111323,
+    "lon": -86.1722154,
+    "name": "HARTFORD",
+    "norm": "HARTFORD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/129511",
+    "lat": 42.2130229,
+    "lon": -85.8633539,
+    "name": "ALMENA",
+    "norm": "ALMENA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129514",
+    "lat": 42.110658,
+    "lon": -85.6307477,
+    "name": "SCHOOLCRAFT",
+    "norm": "SCHOOLCRAFT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/129524",
+    "lat": 41.9028923,
+    "lon": -86.0116923,
+    "name": "STONE LAKE",
+    "norm": "STONE LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/129525",
+    "lat": 41.7902052,
+    "lon": -86.7382842,
+    "name": "NEW BUFFALO",
+    "norm": "NEW BUFFALO",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/129988",
+    "lat": 41.8073736,
+    "lon": -83.6391831,
+    "name": "SAMARIA",
+    "norm": "SAMARIA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/130518",
+    "lat": 42.5670891,
+    "lon": -84.8217418,
+    "name": "ISLAND ROAD",
+    "norm": "ISLAND ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/131006",
+    "lat": 42.9191318,
+    "lon": -82.7046,
+    "name": "FITZ",
+    "norm": "FITZ",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/132507",
+    "lat": 46.4409446,
+    "lon": -90.1436269,
+    "name": "NORRIE",
+    "norm": "NORRIE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "115000"
+  },
+  {
+    "id": "hifld/132965",
+    "lat": 46.3320793,
+    "lon": -86.8535933,
+    "name": "FOREST LAKE",
+    "norm": "FOREST LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/132967",
+    "lat": 45.859353,
+    "lon": -84.738618,
+    "name": "MACKINAC",
+    "norm": "MACKINAC",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/133168",
+    "lat": 44.2564749,
+    "lon": -85.9405216,
+    "name": "TIPPY DAM",
+    "norm": "TIPPY DAM",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/133297",
+    "lat": 45.9478941,
+    "lon": -88.218594,
+    "name": "BRULE",
+    "norm": "BRULE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/133853",
+    "lat": 43.3692394,
+    "lon": -83.6915864,
+    "name": "BAUER",
+    "norm": "BAUER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/133905",
+    "lat": 46.4461918,
+    "lon": -87.6047788,
+    "name": "EMPIRE MINE",
+    "norm": "EMPIRE MINE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/133907",
+    "lat": 46.4396578,
+    "lon": -87.6541086,
+    "name": "TILDEN",
+    "norm": "TILDEN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/137284",
+    "lat": 41.8881936,
+    "lon": -83.6151966,
+    "name": "TAP137284",
+    "norm": "TAP137284",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/137285",
+    "lat": 41.8828745,
+    "lon": -83.3965804,
+    "name": "TAP137285",
+    "norm": "TAP137285",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/137286",
+    "lat": 41.8828437,
+    "lon": -83.3965539,
+    "name": "TAP137286",
+    "norm": "TAP137286",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/137287",
+    "lat": 42.2736811,
+    "lon": -83.4110745,
+    "name": "TAP137287",
+    "norm": "TAP137287",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/137290",
+    "lat": 41.8020574,
+    "lon": -83.4691632,
+    "name": "TAP137290",
+    "norm": "TAP137290",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/137291",
+    "lat": 41.8937934,
+    "lon": -84.0290601,
+    "name": "TAP137291",
+    "norm": "TAP137291",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/137292",
+    "lat": 42.2657334,
+    "lon": -84.145595,
+    "name": "TAP137292",
+    "norm": "TAP137292",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/137293",
+    "lat": 42.1300958,
+    "lon": -84.1191467,
+    "name": "TAP137293",
+    "norm": "TAP137293",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/137294",
+    "lat": 42.1789845,
+    "lon": -84.0890604,
+    "name": "TAP137294",
+    "norm": "TAP137294",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/137295",
+    "lat": 42.0226736,
+    "lon": -83.8378399,
+    "name": "TAP137295",
+    "norm": "TAP137295",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/137296",
+    "lat": 42.1491694,
+    "lon": -83.9254592,
+    "name": "TAP137296",
+    "norm": "TAP137296",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/137297",
+    "lat": 42.2836331,
+    "lon": -83.8238454,
+    "name": "TAP137297",
+    "norm": "TAP137297",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/137298",
+    "lat": 42.0811737,
+    "lon": -83.6556707,
+    "name": "TAP137298",
+    "norm": "TAP137298",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/137299",
+    "lat": 42.1875084,
+    "lon": -83.5596297,
+    "name": "TAP137299",
+    "norm": "TAP137299",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/137300",
+    "lat": 41.9856064,
+    "lon": -83.412794,
+    "name": "TAP137300",
+    "norm": "TAP137300",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/137301",
+    "lat": 42.1049642,
+    "lon": -83.4502325,
+    "name": "TAP137301",
+    "norm": "TAP137301",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/137308",
+    "lat": 41.905954,
+    "lon": -83.3748503,
+    "name": "FRONT SUBSTATION",
+    "norm": "FRONT",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/137410",
+    "lat": 41.8548929,
+    "lon": -84.2900302,
+    "name": "TAP137410",
+    "norm": "TAP137410",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/137411",
+    "lat": 41.854944,
+    "lon": -84.2881064,
+    "name": "TAP137411",
+    "norm": "TAP137411",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/137412",
+    "lat": 41.8563638,
+    "lon": -84.2409328,
+    "name": "TAP137412",
+    "norm": "TAP137412",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/137413",
+    "lat": 42.1007376,
+    "lon": -84.2480693,
+    "name": "TAP137413",
+    "norm": "TAP137413",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/137518",
+    "lat": 42.1832576,
+    "lon": -84.4871918,
+    "name": "TAP137518",
+    "norm": "TAP137518",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138458",
+    "lat": 46.028768,
+    "lon": -85.044817,
+    "name": "TAP138458",
+    "norm": "TAP138458",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138459",
+    "lat": 46.3092447,
+    "lon": -85.550804,
+    "name": "NEWBERRY",
+    "norm": "NEWBERRY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/138461",
+    "lat": 42.9239708,
+    "lon": -85.682532,
+    "name": "TAP138461",
+    "norm": "TAP138461",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138462",
+    "lat": 43.0162846,
+    "lon": -85.7579217,
+    "name": "TAP138462",
+    "norm": "TAP138462",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138463",
+    "lat": 43.0615239,
+    "lon": -85.6946959,
+    "name": "TAP138463",
+    "norm": "TAP138463",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138464",
+    "lat": 42.9757418,
+    "lon": -85.6601496,
+    "name": "TAP138464",
+    "norm": "TAP138464",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138465",
+    "lat": 42.9742943,
+    "lon": -85.6581535,
+    "name": "TAP138465",
+    "norm": "TAP138465",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138466",
+    "lat": 43.1172953,
+    "lon": -85.661016,
+    "name": "TAP138466",
+    "norm": "TAP138466",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138467",
+    "lat": 42.3088902,
+    "lon": -85.5760073,
+    "name": "TAP138467",
+    "norm": "TAP138467",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138468",
+    "lat": 42.3064324,
+    "lon": -85.4578784,
+    "name": "TAP138468",
+    "norm": "TAP138468",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138469",
+    "lat": 42.5666,
+    "lon": -85.5091971,
+    "name": "TAP138469",
+    "norm": "TAP138469",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/138470",
+    "lat": 42.7102132,
+    "lon": -85.5549229,
+    "name": "TAP138470",
+    "norm": "TAP138470",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138471",
+    "lat": 42.9107691,
+    "lon": -85.5391742,
+    "name": "TAP138471",
+    "norm": "TAP138471",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138472",
+    "lat": 42.3697031,
+    "lon": -85.1772218,
+    "name": "TAP138472",
+    "norm": "TAP138472",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138473",
+    "lat": 42.9335128,
+    "lon": -85.6895161,
+    "name": "TAP138473",
+    "norm": "TAP138473",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138474",
+    "lat": 42.9849418,
+    "lon": -85.5231285,
+    "name": "TAP138474",
+    "norm": "TAP138474",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138475",
+    "lat": 43.2915057,
+    "lon": -85.1127317,
+    "name": "TAP138475",
+    "norm": "TAP138475",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138651",
+    "lat": 46.4995642,
+    "lon": -87.7294786,
+    "name": "TAP138651",
+    "norm": "TAP138651",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138652",
+    "lat": 46.5779499,
+    "lon": -87.4195038,
+    "name": "TAP138652",
+    "norm": "TAP138652",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138660",
+    "lat": 47.2305176,
+    "lon": -88.4498603,
+    "name": "OSCEOLA",
+    "norm": "OSCEOLA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/138661",
+    "lat": 46.5340774,
+    "lon": -89.1267604,
+    "name": "BRUCE CROSSING",
+    "norm": "BRUCE CROSSING",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/138662",
+    "lat": 46.3456058,
+    "lon": -86.9659402,
+    "name": "CHATHAM",
+    "norm": "CHATHAM",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/138663",
+    "lat": 46.3962158,
+    "lon": -89.6940278,
+    "name": "TAP138663",
+    "norm": "TAP138663",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138682",
+    "lat": 46.0579834,
+    "lon": -87.5076376,
+    "name": "ARNOLD",
+    "norm": "ARNOLD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/138683",
+    "lat": 46.5771185,
+    "lon": -87.4072024,
+    "name": "DEAD RIVER",
+    "norm": "DEAD RIVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/138684",
+    "lat": 46.5791357,
+    "lon": -87.3973283,
+    "name": "PRESQUE ISLE STATION",
+    "norm": "PRESQUE ISLE STATION",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/138685",
+    "lat": 44.5616274,
+    "lon": -83.7921571,
+    "name": "TAP138685",
+    "norm": "TAP138685",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138688",
+    "lat": 43.2439179,
+    "lon": -83.7847775,
+    "name": "TAP138688",
+    "norm": "TAP138688",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138689",
+    "lat": 42.8849035,
+    "lon": -83.6503381,
+    "name": "TAP138689",
+    "norm": "TAP138689",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138690",
+    "lat": 42.8190902,
+    "lon": -83.6823009,
+    "name": "TAP138690",
+    "norm": "TAP138690",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138691",
+    "lat": 42.8187819,
+    "lon": -83.6825061,
+    "name": "TAP138691",
+    "norm": "TAP138691",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138693",
+    "lat": 43.0166427,
+    "lon": -83.8090118,
+    "name": "TAP138693",
+    "norm": "TAP138693",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138694",
+    "lat": 43.4543213,
+    "lon": -83.7826802,
+    "name": "TAP138694",
+    "norm": "TAP138694",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/138695",
+    "lat": 43.4546513,
+    "lon": -83.7818769,
+    "name": "TAP138695",
+    "norm": "TAP138695",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138696",
+    "lat": 43.4577152,
+    "lon": -83.781818,
+    "name": "TAP138696",
+    "norm": "TAP138696",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138697",
+    "lat": 42.7254701,
+    "lon": -83.8780251,
+    "name": "TAP138697",
+    "norm": "TAP138697",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138698",
+    "lat": 42.6376286,
+    "lon": -83.8708251,
+    "name": "TAP138698",
+    "norm": "TAP138698",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138699",
+    "lat": 42.3112125,
+    "lon": -83.824603,
+    "name": "TAP138699",
+    "norm": "TAP138699",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138700",
+    "lat": 43.0553078,
+    "lon": -83.6638499,
+    "name": "TAP138700",
+    "norm": "TAP138700",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138701",
+    "lat": 43.0772132,
+    "lon": -83.6502926,
+    "name": "TAP138701",
+    "norm": "TAP138701",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138702",
+    "lat": 43.0965157,
+    "lon": -83.6468051,
+    "name": "TAP138702",
+    "norm": "TAP138702",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138703",
+    "lat": 43.4722152,
+    "lon": -83.6739878,
+    "name": "TAP138703",
+    "norm": "TAP138703",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/138704",
+    "lat": 42.4910691,
+    "lon": -83.318956,
+    "name": "TAP138704",
+    "norm": "TAP138704",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138705",
+    "lat": 42.3075953,
+    "lon": -83.4128188,
+    "name": "TAP138705",
+    "norm": "TAP138705",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/138706",
+    "lat": 42.3069911,
+    "lon": -83.4146405,
+    "name": "TAP138706",
+    "norm": "TAP138706",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138708",
+    "lat": 43.262469,
+    "lon": -83.379962,
+    "name": "TAP138708",
+    "norm": "TAP138708",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138709",
+    "lat": 43.4739845,
+    "lon": -83.4092776,
+    "name": "TAP138709",
+    "norm": "TAP138709",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138710",
+    "lat": 42.4598151,
+    "lon": -83.3966314,
+    "name": "TAP138710",
+    "norm": "TAP138710",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138712",
+    "lat": 42.4177537,
+    "lon": -83.4338518,
+    "name": "TAP138712",
+    "norm": "TAP138712",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138713",
+    "lat": 42.4700223,
+    "lon": -83.4290617,
+    "name": "TAP138713",
+    "norm": "TAP138713",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138715",
+    "lat": 42.3563113,
+    "lon": -83.562298,
+    "name": "TAP138715",
+    "norm": "TAP138715",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138716",
+    "lat": 42.3096011,
+    "lon": -83.53225,
+    "name": "TAP138716",
+    "norm": "TAP138716",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138717",
+    "lat": 42.4083416,
+    "lon": -83.5134481,
+    "name": "TAP138717",
+    "norm": "TAP138717",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138720",
+    "lat": 42.496781,
+    "lon": -83.5262937,
+    "name": "TAP138720",
+    "norm": "TAP138720",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/138722",
+    "lat": 42.4936112,
+    "lon": -83.3972397,
+    "name": "TAP138722",
+    "norm": "TAP138722",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139024",
+    "lat": 42.983836,
+    "lon": -85.9016061,
+    "name": "TAP139024",
+    "norm": "TAP139024",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139025",
+    "lat": 42.846171,
+    "lon": -85.8552568,
+    "name": "TAP139025",
+    "norm": "TAP139025",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139026",
+    "lat": 41.9122867,
+    "lon": -85.9982919,
+    "name": "TAP139026",
+    "norm": "TAP139026",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139027",
+    "lat": 42.1684781,
+    "lon": -85.8556796,
+    "name": "TAP139027",
+    "norm": "TAP139027",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139028",
+    "lat": 42.9563438,
+    "lon": -85.924905,
+    "name": "TAP139028",
+    "norm": "TAP139028",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139029",
+    "lat": 43.0537198,
+    "lon": -85.8856739,
+    "name": "TAP139029",
+    "norm": "TAP139029",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139030",
+    "lat": 42.9854559,
+    "lon": -85.8001849,
+    "name": "TAP139030",
+    "norm": "TAP139030",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139523",
+    "lat": 45.8021846,
+    "lon": -87.973411,
+    "name": "PLAINS",
+    "norm": "PLAINS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;69000"
+  },
+  {
+    "id": "hifld/139545",
+    "lat": 45.8192162,
+    "lon": -87.0741935,
+    "name": "OLD MEAD ROAD",
+    "norm": "OLD MEAD ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/139548",
+    "lat": 45.802508,
+    "lon": -87.0597979,
+    "name": "MEAD PUMP",
+    "norm": "MEAD PUMP",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139549",
+    "lat": 45.801422,
+    "lon": -87.973616,
+    "name": "TAP139549",
+    "norm": "TAP139549",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139550",
+    "lat": 45.8037321,
+    "lon": -88.0680008,
+    "name": "ARMORY",
+    "norm": "ARMORY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139895",
+    "lat": 43.6028882,
+    "lon": -84.2479736,
+    "name": "TAP139895",
+    "norm": "TAP139895",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139896",
+    "lat": 44.179787,
+    "lon": -84.1407405,
+    "name": "TAP139896",
+    "norm": "TAP139896",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139898",
+    "lat": 43.5791129,
+    "lon": -84.1302582,
+    "name": "TAP139898",
+    "norm": "TAP139898",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139899",
+    "lat": 43.6782794,
+    "lon": -84.3600343,
+    "name": "TAP139899",
+    "norm": "TAP139899",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139901",
+    "lat": 42.690606,
+    "lon": -84.4365445,
+    "name": "TAP139901",
+    "norm": "TAP139901",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139902",
+    "lat": 42.7204722,
+    "lon": -84.3832072,
+    "name": "TAP139902",
+    "norm": "TAP139902",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139903",
+    "lat": 42.7119476,
+    "lon": -84.4309292,
+    "name": "TAP139903",
+    "norm": "TAP139903",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139904",
+    "lat": 44.7263863,
+    "lon": -84.0664492,
+    "name": "TAP139904",
+    "norm": "TAP139904",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139905",
+    "lat": 44.8519271,
+    "lon": -84.3827167,
+    "name": "TAP139905",
+    "norm": "TAP139905",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139906",
+    "lat": 42.250859,
+    "lon": -84.4434431,
+    "name": "TAP139906",
+    "norm": "TAP139906",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139907",
+    "lat": 42.2096029,
+    "lon": -84.4422187,
+    "name": "TAP139907",
+    "norm": "TAP139907",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139908",
+    "lat": 42.2653345,
+    "lon": -84.4257813,
+    "name": "TAP139908",
+    "norm": "TAP139908",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139909",
+    "lat": 42.2890829,
+    "lon": -84.4180871,
+    "name": "TAP139909",
+    "norm": "TAP139909",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139910",
+    "lat": 42.2262996,
+    "lon": -84.3744908,
+    "name": "TAP139910",
+    "norm": "TAP139910",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139911",
+    "lat": 42.2476595,
+    "lon": -84.3568306,
+    "name": "TAP139911",
+    "norm": "TAP139911",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139912",
+    "lat": 42.2333652,
+    "lon": -84.3562926,
+    "name": "TAP139912",
+    "norm": "TAP139912",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139913",
+    "lat": 42.2403664,
+    "lon": -84.3226142,
+    "name": "TAP139913",
+    "norm": "TAP139913",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139914",
+    "lat": 42.2686248,
+    "lon": -84.3585805,
+    "name": "TAP139914",
+    "norm": "TAP139914",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139915",
+    "lat": 42.2472825,
+    "lon": -84.2148975,
+    "name": "TAP139915",
+    "norm": "TAP139915",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139916",
+    "lat": 42.7120617,
+    "lon": -84.5037151,
+    "name": "TAP139916",
+    "norm": "TAP139916",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139917",
+    "lat": 42.7338682,
+    "lon": -84.4173198,
+    "name": "TAP139917",
+    "norm": "TAP139917",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139918",
+    "lat": 42.7556918,
+    "lon": -84.3834334,
+    "name": "TAP139918",
+    "norm": "TAP139918",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139919",
+    "lat": 42.7276506,
+    "lon": -84.3832556,
+    "name": "TAP139919",
+    "norm": "TAP139919",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139920",
+    "lat": 43.0066502,
+    "lon": -84.0368029,
+    "name": "TAP139920",
+    "norm": "TAP139920",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139921",
+    "lat": 43.4181384,
+    "lon": -84.0766327,
+    "name": "TAP139921",
+    "norm": "TAP139921",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139922",
+    "lat": 43.4997943,
+    "lon": -84.1521964,
+    "name": "TAP139922",
+    "norm": "TAP139922",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139923",
+    "lat": 42.2932973,
+    "lon": -84.3853812,
+    "name": "TAP139923",
+    "norm": "TAP139923",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139926",
+    "lat": 45.5550511,
+    "lon": -84.6087144,
+    "name": "RIGGSVILLE",
+    "norm": "RIGGSVILLE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139927",
+    "lat": 46.0428696,
+    "lon": -84.2896199,
+    "name": "TALENTINO SW STA",
+    "norm": "TALENTINO SW STA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139928",
+    "lat": 46.070377,
+    "lon": -84.259489,
+    "name": "TAP139928",
+    "norm": "TAP139928",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139929",
+    "lat": 46.187524,
+    "lon": -84.342711,
+    "name": "TAP139929",
+    "norm": "TAP139929",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139930",
+    "lat": 46.1902698,
+    "lon": -84.5926196,
+    "name": "RUDYARD",
+    "norm": "RUDYARD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139931",
+    "lat": 46.4881942,
+    "lon": -84.3899564,
+    "name": "US HYDRO 9 & 10",
+    "norm": "US HYDRO 9 & 10",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139965",
+    "lat": 41.8497782,
+    "lon": -86.6639446,
+    "name": "TAP139965",
+    "norm": "TAP139965",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/139966",
+    "lat": 42.122889,
+    "lon": -86.4603242,
+    "name": "TAP139966",
+    "norm": "TAP139966",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139967",
+    "lat": 42.1826973,
+    "lon": -86.3854259,
+    "name": "TAP139967",
+    "norm": "TAP139967",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/139975",
+    "lat": 42.5864933,
+    "lon": -83.0405948,
+    "name": "TAP139975",
+    "norm": "TAP139975",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139976",
+    "lat": 42.8510855,
+    "lon": -82.5219399,
+    "name": "TAP139976",
+    "norm": "TAP139976",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139977",
+    "lat": 42.848995,
+    "lon": -82.5244014,
+    "name": "TAP139977",
+    "norm": "TAP139977",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139978",
+    "lat": 42.9146822,
+    "lon": -83.0092619,
+    "name": "TAP139978",
+    "norm": "TAP139978",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/139979",
+    "lat": 42.4446199,
+    "lon": -83.2100668,
+    "name": "TAP139979",
+    "norm": "TAP139979",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139980",
+    "lat": 42.4450421,
+    "lon": -83.1945812,
+    "name": "TAP139980",
+    "norm": "TAP139980",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139981",
+    "lat": 42.4470766,
+    "lon": -83.1006478,
+    "name": "TAP139981",
+    "norm": "TAP139981",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139982",
+    "lat": 42.4470661,
+    "lon": -83.0894674,
+    "name": "TAP139982",
+    "norm": "TAP139982",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139983",
+    "lat": 42.4503664,
+    "lon": -82.9417221,
+    "name": "TAP139983",
+    "norm": "TAP139983",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139984",
+    "lat": 42.2576429,
+    "lon": -83.133062,
+    "name": "TAP139984",
+    "norm": "TAP139984",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139985",
+    "lat": 42.7037681,
+    "lon": -83.267117,
+    "name": "TAP139985",
+    "norm": "TAP139985",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139986",
+    "lat": 42.7037069,
+    "lon": -83.2668081,
+    "name": "TAP139986",
+    "norm": "TAP139986",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139987",
+    "lat": 42.7975335,
+    "lon": -83.0057412,
+    "name": "TAP139987",
+    "norm": "TAP139987",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139988",
+    "lat": 42.2697878,
+    "lon": -83.2056502,
+    "name": "TAP139988",
+    "norm": "TAP139988",
+    "operator": null,
+    "state": "MI",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/139989",
+    "lat": 42.2698871,
+    "lon": -83.2068934,
+    "name": "TAP139989",
+    "norm": "TAP139989",
+    "operator": null,
+    "state": "MI",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/139990",
+    "lat": 42.3793113,
+    "lon": -83.2362449,
+    "name": "TAP139990",
+    "norm": "TAP139990",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139991",
+    "lat": 42.9284146,
+    "lon": -82.4948887,
+    "name": "TAP139991",
+    "norm": "TAP139991",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139992",
+    "lat": 42.8683388,
+    "lon": -82.6897919,
+    "name": "TAP139992",
+    "norm": "TAP139992",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/139993",
+    "lat": 42.0954333,
+    "lon": -83.2552358,
+    "name": "TAP139993",
+    "norm": "TAP139993",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139994",
+    "lat": 42.2640281,
+    "lon": -83.1785944,
+    "name": "TAP139994",
+    "norm": "TAP139994",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139995",
+    "lat": 42.2994208,
+    "lon": -83.1493999,
+    "name": "TAP139995",
+    "norm": "TAP139995",
+    "operator": null,
+    "state": "MI",
+    "voltage": "230000;230000"
+  },
+  {
+    "id": "hifld/139996",
+    "lat": 42.5244991,
+    "lon": -82.9981041,
+    "name": "TAP139996",
+    "norm": "TAP139996",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139997",
+    "lat": 43.0611354,
+    "lon": -82.5371071,
+    "name": "TAP139997",
+    "norm": "TAP139997",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/139998",
+    "lat": 42.6692999,
+    "lon": -83.0043464,
+    "name": "TAP139998",
+    "norm": "TAP139998",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/140000",
+    "lat": 42.7312072,
+    "lon": -83.2681515,
+    "name": "TAP140000",
+    "norm": "TAP140000",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/140001",
+    "lat": 42.7303304,
+    "lon": -83.2680802,
+    "name": "TAP140001",
+    "norm": "TAP140001",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/140005",
+    "lat": 41.801683,
+    "lon": -83.8929159,
+    "name": "TAP140005",
+    "norm": "TAP140005",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140006",
+    "lat": 43.3919697,
+    "lon": -83.8962692,
+    "name": "TAP140006",
+    "norm": "TAP140006",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140007",
+    "lat": 43.403161,
+    "lon": -83.9726183,
+    "name": "TAP140007",
+    "norm": "TAP140007",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140009",
+    "lat": 42.1540516,
+    "lon": -83.8304883,
+    "name": "TAP140009",
+    "norm": "TAP140009",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/140010",
+    "lat": 41.8558923,
+    "lon": -83.8074138,
+    "name": "TAP140010",
+    "norm": "TAP140010",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140011",
+    "lat": 43.5774669,
+    "lon": -83.9740596,
+    "name": "TAP140011",
+    "norm": "TAP140011",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140012",
+    "lat": 43.4487377,
+    "lon": -84.0114822,
+    "name": "TAP140012",
+    "norm": "TAP140012",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140013",
+    "lat": 43.0229413,
+    "lon": -83.9119852,
+    "name": "TAP140013",
+    "norm": "TAP140013",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140014",
+    "lat": 43.8212361,
+    "lon": -83.9547908,
+    "name": "TAP140014",
+    "norm": "TAP140014",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140015",
+    "lat": 45.0674065,
+    "lon": -83.8931917,
+    "name": "TAP140015",
+    "norm": "TAP140015",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140016",
+    "lat": 45.0211444,
+    "lon": -83.900972,
+    "name": "TAP140016",
+    "norm": "TAP140016",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140018",
+    "lat": 43.2924571,
+    "lon": -83.8038352,
+    "name": "TAP140018",
+    "norm": "TAP140018",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140019",
+    "lat": 43.3519638,
+    "lon": -83.8315403,
+    "name": "TAP140019",
+    "norm": "TAP140019",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140107",
+    "lat": 43.0128407,
+    "lon": -84.8435248,
+    "name": "TAP140107",
+    "norm": "TAP140107",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140108",
+    "lat": 43.3970161,
+    "lon": -84.671571,
+    "name": "TAP140108",
+    "norm": "TAP140108",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140109",
+    "lat": 45.0077723,
+    "lon": -84.6803397,
+    "name": "TAP140109",
+    "norm": "TAP140109",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140110",
+    "lat": 42.5905281,
+    "lon": -84.8112939,
+    "name": "TAP140110",
+    "norm": "TAP140110",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140111",
+    "lat": 42.2543136,
+    "lon": -84.7665275,
+    "name": "TAP140111",
+    "norm": "TAP140111",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140127",
+    "lat": 45.7874823,
+    "lon": -84.7784508,
+    "name": "TAP140127",
+    "norm": "TAP140127",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140128",
+    "lat": 46.3595671,
+    "lon": -84.8019687,
+    "name": "RACO",
+    "norm": "RACO",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/140129",
+    "lat": 45.8786039,
+    "lon": -84.7380874,
+    "name": "EVERGREEN",
+    "norm": "EVERGREEN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/140179",
+    "lat": 42.3084901,
+    "lon": -86.1194125,
+    "name": "TAP140179",
+    "norm": "TAP140179",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140180",
+    "lat": 42.8412227,
+    "lon": -86.1103385,
+    "name": "TAP140180",
+    "norm": "TAP140180",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140181",
+    "lat": 41.8900031,
+    "lon": -86.0778338,
+    "name": "TAP140181",
+    "norm": "TAP140181",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/140182",
+    "lat": 41.9793484,
+    "lon": -86.122166,
+    "name": "TAP140182",
+    "norm": "TAP140182",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140183",
+    "lat": 41.9907113,
+    "lon": -86.0994803,
+    "name": "TAP140183",
+    "norm": "TAP140183",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140186",
+    "lat": 41.9943426,
+    "lon": -86.0960148,
+    "name": "TAP140186",
+    "norm": "TAP140186",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140187",
+    "lat": 42.9102926,
+    "lon": -86.195611,
+    "name": "TAP140187",
+    "norm": "TAP140187",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140396",
+    "lat": 43.3683065,
+    "lon": -86.2670146,
+    "name": "TAP140396",
+    "norm": "TAP140396",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140397",
+    "lat": 43.3464105,
+    "lon": -86.2318238,
+    "name": "TAP140397",
+    "norm": "TAP140397",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140398",
+    "lat": 43.2154274,
+    "lon": -86.2231592,
+    "name": "TAP140398",
+    "norm": "TAP140398",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/140399",
+    "lat": 41.9852918,
+    "lon": -86.3008608,
+    "name": "TAP140399",
+    "norm": "TAP140399",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140400",
+    "lat": 41.9672929,
+    "lon": -86.3588891,
+    "name": "TAP140400",
+    "norm": "TAP140400",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140401",
+    "lat": 41.9673071,
+    "lon": -86.3588434,
+    "name": "TAP140401",
+    "norm": "TAP140401",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140402",
+    "lat": 42.1950861,
+    "lon": -86.2592489,
+    "name": "TAP140402",
+    "norm": "TAP140402",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/140403",
+    "lat": 43.3849377,
+    "lon": -86.3276208,
+    "name": "TAP140403",
+    "norm": "TAP140403",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141274",
+    "lat": 41.8016523,
+    "lon": -85.7751979,
+    "name": "TAP141274",
+    "norm": "TAP141274",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/141275",
+    "lat": 42.2628843,
+    "lon": -84.9952253,
+    "name": "TAP141275",
+    "norm": "TAP141275",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141276",
+    "lat": 42.1419165,
+    "lon": -85.7641057,
+    "name": "TAP141276",
+    "norm": "TAP141276",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141277",
+    "lat": 42.0045284,
+    "lon": -85.6636653,
+    "name": "TAP141277",
+    "norm": "TAP141277",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/141279",
+    "lat": 41.9381615,
+    "lon": -85.6315963,
+    "name": "TAP141279",
+    "norm": "TAP141279",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141280",
+    "lat": 42.1418306,
+    "lon": -85.6867825,
+    "name": "TAP141280",
+    "norm": "TAP141280",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/141281",
+    "lat": 42.2254136,
+    "lon": -85.6586905,
+    "name": "TAP141281",
+    "norm": "TAP141281",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/141282",
+    "lat": 42.2161209,
+    "lon": -85.5048166,
+    "name": "TAP141282",
+    "norm": "TAP141282",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143775",
+    "lat": 45.3248154,
+    "lon": -84.228697,
+    "name": "TAP143775",
+    "norm": "TAP143775",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143780",
+    "lat": 44.9365196,
+    "lon": -85.684728,
+    "name": "TAP143780",
+    "norm": "TAP143780",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/143781",
+    "lat": 45.2894212,
+    "lon": -83.424502,
+    "name": "ROCKPORT",
+    "norm": "ROCKPORT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143784",
+    "lat": 45.4101003,
+    "lon": -83.7919193,
+    "name": "PORT CALCITE",
+    "norm": "PORT CALCITE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143786",
+    "lat": 45.1387175,
+    "lon": -85.0757709,
+    "name": "TAP143786",
+    "norm": "TAP143786",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143787",
+    "lat": 45.205315,
+    "lon": -85.0714283,
+    "name": "TAP143787",
+    "norm": "TAP143787",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143789",
+    "lat": 45.242533,
+    "lon": -84.955542,
+    "name": "TAP143789",
+    "norm": "TAP143789",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143790",
+    "lat": 45.243358,
+    "lon": -84.955078,
+    "name": "TAP143790",
+    "norm": "TAP143790",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143791",
+    "lat": 44.9698489,
+    "lon": -85.0445561,
+    "name": "TAP143791",
+    "norm": "TAP143791",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143795",
+    "lat": 45.0618395,
+    "lon": -84.8378334,
+    "name": "TAP143795",
+    "norm": "TAP143795",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143799",
+    "lat": 45.363602,
+    "lon": -84.886048,
+    "name": "TAP143799",
+    "norm": "TAP143799",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143800",
+    "lat": 45.348596,
+    "lon": -84.977623,
+    "name": "TAP143800",
+    "norm": "TAP143800",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143801",
+    "lat": 45.03901,
+    "lon": -85.067453,
+    "name": "TAP143801",
+    "norm": "TAP143801",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143803",
+    "lat": 44.9102384,
+    "lon": -85.0439584,
+    "name": "TAP143803",
+    "norm": "TAP143803",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143807",
+    "lat": 45.0236557,
+    "lon": -84.7764183,
+    "name": "VAN TYLE",
+    "norm": "VAN TYLE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143808",
+    "lat": 45.159207,
+    "lon": -84.675994,
+    "name": "TAP143808",
+    "norm": "TAP143808",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143810",
+    "lat": 45.3186865,
+    "lon": -84.6075612,
+    "name": "TAP143810",
+    "norm": "TAP143810",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143812",
+    "lat": 45.0295185,
+    "lon": -84.7327945,
+    "name": "LIVINGSTON",
+    "norm": "LIVINGSTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/143825",
+    "lat": 45.1019,
+    "lon": -87.610638,
+    "name": "TAP143825",
+    "norm": "TAP143825",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143859",
+    "lat": 45.1264116,
+    "lon": -87.615582,
+    "name": "30TH AVE",
+    "norm": "30TH AVE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/143992",
+    "lat": 42.1160473,
+    "lon": -83.2487861,
+    "name": "BROWNSTOWN",
+    "norm": "BROWNSTOWN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;120000"
+  },
+  {
+    "id": "hifld/143993",
+    "lat": 45.134222,
+    "lon": -85.197762,
+    "name": "TAP143993",
+    "norm": "TAP143993",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/143997",
+    "lat": 45.138984,
+    "lon": -85.1197043,
+    "name": "TAP143997",
+    "norm": "TAP143997",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/144566",
+    "lat": 44.727598,
+    "lon": -83.528138,
+    "name": "TAP144566",
+    "norm": "TAP144566",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/144567",
+    "lat": 44.6807869,
+    "lon": -83.4425871,
+    "name": "TAP144567",
+    "norm": "TAP144567",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/144568",
+    "lat": 43.823889,
+    "lon": -83.220617,
+    "name": "TAP144568",
+    "norm": "TAP144568",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144570",
+    "lat": 42.5050499,
+    "lon": -83.5856923,
+    "name": "TAP144570",
+    "norm": "TAP144570",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144571",
+    "lat": 41.9764635,
+    "lon": -83.3766405,
+    "name": "TAP144571",
+    "norm": "TAP144571",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144587",
+    "lat": 43.0457273,
+    "lon": -83.7916538,
+    "name": "TAP144587",
+    "norm": "TAP144587",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/144588",
+    "lat": 43.0457094,
+    "lon": -83.7915765,
+    "name": "TAP144588",
+    "norm": "TAP144588",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/144599",
+    "lat": 42.5115264,
+    "lon": -83.7562952,
+    "name": "TAP144599",
+    "norm": "TAP144599",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144602",
+    "lat": 43.6229799,
+    "lon": -83.4971682,
+    "name": "TAP144602",
+    "norm": "TAP144602",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/144625",
+    "lat": 42.1112609,
+    "lon": -83.6531964,
+    "name": "MILAN",
+    "norm": "MILAN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;120000"
+  },
+  {
+    "id": "hifld/144626",
+    "lat": 42.1546264,
+    "lon": -83.8297592,
+    "name": "BLACKSTONE",
+    "norm": "BLACKSTONE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144627",
+    "lat": 42.2069783,
+    "lon": -83.6156072,
+    "name": "COLLINS",
+    "norm": "COLLINS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144628",
+    "lat": 42.1756929,
+    "lon": -83.5332453,
+    "name": "DAYTON",
+    "norm": "DAYTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144629",
+    "lat": 42.1674099,
+    "lon": -83.5321967,
+    "name": "SUMPTER",
+    "norm": "SUMPTER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000"
+  },
+  {
+    "id": "hifld/144630",
+    "lat": 42.1398994,
+    "lon": -83.446782,
+    "name": "SUMPTER",
+    "norm": "SUMPTER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144631",
+    "lat": 42.2076159,
+    "lon": -83.4109902,
+    "name": "AIRPORT",
+    "norm": "AIRPORT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144632",
+    "lat": 42.1264037,
+    "lon": -83.3859222,
+    "name": "ALAMO",
+    "norm": "ALAMO",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144633",
+    "lat": 42.1571275,
+    "lon": -83.1824664,
+    "name": "DETROIT EDISON KING ROAD",
+    "norm": "DETROIT EDISON KING ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144634",
+    "lat": 41.91939,
+    "lon": -83.3857766,
+    "name": "MONROE",
+    "norm": "MONROE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144635",
+    "lat": 43.6399399,
+    "lon": -83.8434249,
+    "name": "WEADOCK",
+    "norm": "WEADOCK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/144636",
+    "lat": 43.6311656,
+    "lon": -83.8254126,
+    "name": "HAMPTON",
+    "norm": "HAMPTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/144637",
+    "lat": 42.5128515,
+    "lon": -83.5282363,
+    "name": "WIXOM",
+    "norm": "WIXOM",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/144638",
+    "lat": 42.6185826,
+    "lon": -83.275294,
+    "name": "PONTIAC",
+    "norm": "PONTIAC",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144639",
+    "lat": 42.5370539,
+    "lon": -83.18227,
+    "name": "BLOOMFIELD",
+    "norm": "BLOOMFIELD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144640",
+    "lat": 42.3110063,
+    "lon": -83.8239664,
+    "name": "LARK",
+    "norm": "LARK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144641",
+    "lat": 42.2753378,
+    "lon": -83.7796554,
+    "name": "HEMLOCK",
+    "norm": "HEMLOCK",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144642",
+    "lat": 42.2700367,
+    "lon": -83.74648,
+    "name": "HOOVER",
+    "norm": "HOOVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144643",
+    "lat": 42.250262,
+    "lon": -83.7384086,
+    "name": "STATE",
+    "norm": "STATE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144644",
+    "lat": 42.2122396,
+    "lon": -83.727352,
+    "name": "PIONEER",
+    "norm": "PIONEER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000"
+  },
+  {
+    "id": "hifld/144645",
+    "lat": 42.3177628,
+    "lon": -83.7234165,
+    "name": "PHOENIX",
+    "norm": "PHOENIX",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144646",
+    "lat": 42.2159399,
+    "lon": -83.6664854,
+    "name": "PIONEER",
+    "norm": "PIONEER",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144647",
+    "lat": 42.2699438,
+    "lon": -83.6519311,
+    "name": "MCAULEY",
+    "norm": "MCAULEY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144648",
+    "lat": 42.2643679,
+    "lon": -83.6426857,
+    "name": "SUPERIOR",
+    "norm": "SUPERIOR",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000"
+  },
+  {
+    "id": "hifld/144649",
+    "lat": 42.2250987,
+    "lon": -83.5591851,
+    "name": "ARIZONA",
+    "norm": "ARIZONA",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144650",
+    "lat": 42.2385984,
+    "lon": -83.5542504,
+    "name": "WILLOW RUN",
+    "norm": "WILLOW RUN",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144651",
+    "lat": 42.2347458,
+    "lon": -83.5526164,
+    "name": "SCOTTSDALE",
+    "norm": "SCOTTSDALE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000"
+  },
+  {
+    "id": "hifld/144652",
+    "lat": 42.2942871,
+    "lon": -83.5309884,
+    "name": "ZEBRA",
+    "norm": "ZEBRA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/144653",
+    "lat": 42.2892005,
+    "lon": -83.7399673,
+    "name": "ARGO",
+    "norm": "ARGO",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144654",
+    "lat": 42.3101055,
+    "lon": -83.4651522,
+    "name": "WAYNE",
+    "norm": "WAYNE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/144655",
+    "lat": 42.3531478,
+    "lon": -83.6230889,
+    "name": "COVENTRY",
+    "norm": "COVENTRY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;120000"
+  },
+  {
+    "id": "hifld/144656",
+    "lat": 43.024032,
+    "lon": -83.9433089,
+    "name": "GOSS",
+    "norm": "GOSS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/144657",
+    "lat": 42.6536984,
+    "lon": -83.386943,
+    "name": "NIXON",
+    "norm": "NIXON",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144658",
+    "lat": 43.1583654,
+    "lon": -83.6304988,
+    "name": "THETFORD",
+    "norm": "THETFORD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/144659",
+    "lat": 42.3530583,
+    "lon": -83.4195895,
+    "name": "FLORIDA",
+    "norm": "FLORIDA",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144660",
+    "lat": 42.3835227,
+    "lon": -83.3725723,
+    "name": "STARK",
+    "norm": "STARK",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144661",
+    "lat": 42.3779348,
+    "lon": -83.9808459,
+    "name": "MAJESTIC",
+    "norm": "MAJESTIC",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/144662",
+    "lat": 43.6457411,
+    "lon": -83.8376558,
+    "name": "KARN",
+    "norm": "KARN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/144663",
+    "lat": 42.4163791,
+    "lon": -83.2547183,
+    "name": "REDFORD",
+    "norm": "REDFORD",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/144737",
+    "lat": 44.2418697,
+    "lon": -86.1950525,
+    "name": "TAP144737",
+    "norm": "TAP144737",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/144741",
+    "lat": 42.191113,
+    "lon": -86.232358,
+    "name": "AEP EAST WATERVLIET",
+    "norm": "AEP EAST WATERVLIET",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145621",
+    "lat": 42.4470378,
+    "lon": -83.1006483,
+    "name": "TAP145621",
+    "norm": "TAP145621",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145622",
+    "lat": 42.44702,
+    "lon": -83.0894625,
+    "name": "TAP145622",
+    "norm": "TAP145622",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145623",
+    "lat": 42.4503347,
+    "lon": -82.9417234,
+    "name": "TAP145623",
+    "norm": "TAP145623",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145624",
+    "lat": 42.6885016,
+    "lon": -82.8734213,
+    "name": "TAP145624",
+    "norm": "TAP145624",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145625",
+    "lat": 42.7537964,
+    "lon": -82.7564841,
+    "name": "TAP145625",
+    "norm": "TAP145625",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145626",
+    "lat": 43.8076108,
+    "lon": -83.0410759,
+    "name": "TAP145626",
+    "norm": "TAP145626",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145628",
+    "lat": 43.8295267,
+    "lon": -82.8691433,
+    "name": "RAPSON",
+    "norm": "RAPSON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;120000"
+  },
+  {
+    "id": "hifld/145629",
+    "lat": 43.3861792,
+    "lon": -82.7995155,
+    "name": "BANNER",
+    "norm": "BANNER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/145630",
+    "lat": 42.5025034,
+    "lon": -83.1244837,
+    "name": "TAP145630",
+    "norm": "TAP145630",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145631",
+    "lat": 42.5024953,
+    "lon": -83.124613,
+    "name": "TAP145631",
+    "norm": "TAP145631",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145632",
+    "lat": 42.5612995,
+    "lon": -83.1484924,
+    "name": "APACHE",
+    "norm": "APACHE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/145638",
+    "lat": 42.5056837,
+    "lon": -84.4774913,
+    "name": "TAP145638",
+    "norm": "TAP145638",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145639",
+    "lat": 42.5057111,
+    "lon": -84.4775241,
+    "name": "TAP145639",
+    "norm": "TAP145639",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145640",
+    "lat": 44.034164,
+    "lon": -84.504803,
+    "name": "TAP145640",
+    "norm": "TAP145640",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145642",
+    "lat": 44.1538112,
+    "lon": -84.1397461,
+    "name": "TAP145642",
+    "norm": "TAP145642",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145648",
+    "lat": 43.649039,
+    "lon": -84.3601459,
+    "name": "TAP145648",
+    "norm": "TAP145648",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145650",
+    "lat": 44.6459333,
+    "lon": -84.1509632,
+    "name": "TAP145650",
+    "norm": "TAP145650",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145652",
+    "lat": 43.0115966,
+    "lon": -84.1208667,
+    "name": "TAP145652",
+    "norm": "TAP145652",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145654",
+    "lat": 42.805946,
+    "lon": -84.643776,
+    "name": "TAP145654",
+    "norm": "TAP145654",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145655",
+    "lat": 43.3970151,
+    "lon": -84.6527564,
+    "name": "TAP145655",
+    "norm": "TAP145655",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145656",
+    "lat": 42.269269,
+    "lon": -84.3597524,
+    "name": "TAP145656",
+    "norm": "TAP145656",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145659",
+    "lat": 44.2739066,
+    "lon": -84.1360416,
+    "name": "GALLAGHER",
+    "norm": "GALLAGHER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145660",
+    "lat": 43.4139358,
+    "lon": -84.6453645,
+    "name": "REGAL",
+    "norm": "REGAL",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145661",
+    "lat": 42.4154474,
+    "lon": -84.4855152,
+    "name": "TOMPKINS",
+    "norm": "TOMPKINS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145662",
+    "lat": 42.2702,
+    "lon": -84.4114679,
+    "name": "JACKSON",
+    "norm": "JACKSON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145663",
+    "lat": 43.5738422,
+    "lon": -84.1814078,
+    "name": "TITTABAWASSEE",
+    "norm": "TITTABAWASSEE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145665",
+    "lat": 43.4041428,
+    "lon": -85.8507581,
+    "name": "TAP145665",
+    "norm": "TAP145665",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145668",
+    "lat": 43.2941915,
+    "lon": -85.6813933,
+    "name": "TAP145668",
+    "norm": "TAP145668",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/145671",
+    "lat": 44.026667,
+    "lon": -85.415167,
+    "name": "TAP145671",
+    "norm": "TAP145671",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145674",
+    "lat": 43.895626,
+    "lon": -85.272887,
+    "name": "TAP145674",
+    "norm": "TAP145674",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145678",
+    "lat": 44.743492,
+    "lon": -85.138751,
+    "name": "TAP145678",
+    "norm": "TAP145678",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145679",
+    "lat": 44.7366033,
+    "lon": -85.4388691,
+    "name": "TAP145679",
+    "norm": "TAP145679",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145680",
+    "lat": 44.655383,
+    "lon": -85.696695,
+    "name": "TAP145680",
+    "norm": "TAP145680",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145682",
+    "lat": 44.712322,
+    "lon": -85.701139,
+    "name": "TAP145682",
+    "norm": "TAP145682",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145684",
+    "lat": 44.6832862,
+    "lon": -85.7600815,
+    "name": "TAP145684",
+    "norm": "TAP145684",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145686",
+    "lat": 44.5711662,
+    "lon": -85.7368221,
+    "name": "TAP145686",
+    "norm": "TAP145686",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145688",
+    "lat": 44.359247,
+    "lon": -85.828635,
+    "name": "TAP145688",
+    "norm": "TAP145688",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145689",
+    "lat": 44.697318,
+    "lon": -85.617908,
+    "name": "TAP145689",
+    "norm": "TAP145689",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145690",
+    "lat": 44.697522,
+    "lon": -85.617565,
+    "name": "TAP145690",
+    "norm": "TAP145690",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145692",
+    "lat": 42.24503,
+    "lon": -85.496578,
+    "name": "TAP145692",
+    "norm": "TAP145692",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145694",
+    "lat": 41.92737,
+    "lon": -85.023685,
+    "name": "TAP145694",
+    "norm": "TAP145694",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145696",
+    "lat": 41.9533098,
+    "lon": -84.9807519,
+    "name": "TAP145696",
+    "norm": "TAP145696",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145697",
+    "lat": 41.9918923,
+    "lon": -85.4418228,
+    "name": "TAP145697",
+    "norm": "TAP145697",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145698",
+    "lat": 42.254031,
+    "lon": -85.127452,
+    "name": "TAP145698",
+    "norm": "TAP145698",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145700",
+    "lat": 42.3472668,
+    "lon": -85.1387601,
+    "name": "TAP145700",
+    "norm": "TAP145700",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145701",
+    "lat": 42.85889,
+    "lon": -84.922937,
+    "name": "TAP145701",
+    "norm": "TAP145701",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145702",
+    "lat": 42.0360074,
+    "lon": -85.5085931,
+    "name": "TAP145702",
+    "norm": "TAP145702",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145703",
+    "lat": 42.0356618,
+    "lon": -85.4438985,
+    "name": "TAP145703",
+    "norm": "TAP145703",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145705",
+    "lat": 43.0133442,
+    "lon": -85.039878,
+    "name": "TAP145705",
+    "norm": "TAP145705",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145707",
+    "lat": 43.044262,
+    "lon": -85.434329,
+    "name": "TAP145707",
+    "norm": "TAP145707",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145709",
+    "lat": 42.9983092,
+    "lon": -85.3817048,
+    "name": "TAP145709",
+    "norm": "TAP145709",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145718",
+    "lat": 42.696813,
+    "lon": -85.824871,
+    "name": "TAP145718",
+    "norm": "TAP145718",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145721",
+    "lat": 42.843065,
+    "lon": -85.077359,
+    "name": "TAP145721",
+    "norm": "TAP145721",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145724",
+    "lat": 42.846488,
+    "lon": -85.012113,
+    "name": "TAP145724",
+    "norm": "TAP145724",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145725",
+    "lat": 42.857861,
+    "lon": -84.924727,
+    "name": "TAP145725",
+    "norm": "TAP145725",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145741",
+    "lat": 43.8947915,
+    "lon": -85.6812683,
+    "name": "CHASE",
+    "norm": "CHASE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145743",
+    "lat": 42.7978699,
+    "lon": -85.5277316,
+    "name": "ELECTRICAL",
+    "norm": "ELECTRICAL",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145746",
+    "lat": 42.9580188,
+    "lon": -84.8138531,
+    "name": "TAP145746",
+    "norm": "TAP145746",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145748",
+    "lat": 43.3634364,
+    "lon": -84.6716636,
+    "name": "TAP145748",
+    "norm": "TAP145748",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145750",
+    "lat": 41.9054199,
+    "lon": -85.8284858,
+    "name": "TAP145750",
+    "norm": "TAP145750",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145760",
+    "lat": 41.796896,
+    "lon": -85.478903,
+    "name": "STUBEY ROAD",
+    "norm": "STUBEY ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/145770",
+    "lat": 43.0000275,
+    "lon": -85.4154319,
+    "name": "VERGENNES",
+    "norm": "VERGENNES",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145771",
+    "lat": 42.368678,
+    "lon": -85.1584111,
+    "name": "BATTLE CREEK",
+    "norm": "BATTLE CREEK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145772",
+    "lat": 42.3360745,
+    "lon": -85.1436598,
+    "name": "VERONA",
+    "norm": "VERONA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145773",
+    "lat": 41.9343848,
+    "lon": -85.1214123,
+    "name": "BATAVIA",
+    "norm": "BATAVIA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145774",
+    "lat": 43.1870815,
+    "lon": -84.8430214,
+    "name": "RENAISSANCE STATION",
+    "norm": "RENAISSANCE STATION",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/145775",
+    "lat": 43.2108298,
+    "lon": -84.8301087,
+    "name": "NELSON ROAD",
+    "norm": "NELSON ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/145776",
+    "lat": 42.6856175,
+    "lon": -84.7851301,
+    "name": "ONEIDA",
+    "norm": "ONEIDA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145777",
+    "lat": 43.1794798,
+    "lon": -85.8212867,
+    "name": "KENOWA",
+    "norm": "KENOWA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/145778",
+    "lat": 42.9695699,
+    "lon": -85.8088416,
+    "name": "TALLMADGE",
+    "norm": "TALLMADGE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145779",
+    "lat": 42.4360849,
+    "lon": -85.6082935,
+    "name": "ARGENTA",
+    "norm": "ARGENTA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/145780",
+    "lat": 42.8177763,
+    "lon": -85.5536022,
+    "name": "GAINES",
+    "norm": "GAINES",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145781",
+    "lat": 44.6956286,
+    "lon": -85.6163226,
+    "name": "KEYSTONE",
+    "norm": "KEYSTONE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/145810",
+    "lat": 43.4874434,
+    "lon": -84.033866,
+    "name": "TAP145810",
+    "norm": "TAP145810",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145814",
+    "lat": 44.264905,
+    "lon": -84.004731,
+    "name": "TAP145814",
+    "norm": "TAP145814",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145816",
+    "lat": 43.0156214,
+    "lon": -84.0367831,
+    "name": "TAP145816",
+    "norm": "TAP145816",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145819",
+    "lat": 42.1586781,
+    "lon": -84.0245212,
+    "name": "PARR ROAD",
+    "norm": "PARR ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145820",
+    "lat": 41.8904997,
+    "lon": -84.0103674,
+    "name": "BEECHER",
+    "norm": "BEECHER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145840",
+    "lat": 41.9576288,
+    "lon": -86.5525389,
+    "name": "TAP145840",
+    "norm": "TAP145840",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145845",
+    "lat": 41.9741456,
+    "lon": -86.5559434,
+    "name": "COOK",
+    "norm": "COOK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "765000"
+  },
+  {
+    "id": "hifld/145846",
+    "lat": 43.8899377,
+    "lon": -86.4414072,
+    "name": "LUDINGTON",
+    "norm": "LUDINGTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/145847",
+    "lat": 41.9767905,
+    "lon": -86.5541731,
+    "name": "COOK",
+    "norm": "COOK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/145859",
+    "lat": 42.870555,
+    "lon": -86.069399,
+    "name": "TAP145859",
+    "norm": "TAP145859",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145860",
+    "lat": 41.998481,
+    "lon": -86.091391,
+    "name": "TAP145860",
+    "norm": "TAP145860",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145862",
+    "lat": 44.3275218,
+    "lon": -86.0449406,
+    "name": "TAP145862",
+    "norm": "TAP145862",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145865",
+    "lat": 41.8868794,
+    "lon": -86.088712,
+    "name": "TAP145865",
+    "norm": "TAP145865",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/145867",
+    "lat": 42.8317092,
+    "lon": -86.0776644,
+    "name": "GREENLY",
+    "norm": "GREENLY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145868",
+    "lat": 42.7336737,
+    "lon": -86.0572913,
+    "name": "SOUTH HOLLAND",
+    "norm": "SOUTH HOLLAND",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145869",
+    "lat": 42.807208,
+    "lon": -86.0555224,
+    "name": "BLACK RIVER",
+    "norm": "BLACK RIVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145884",
+    "lat": 42.7741456,
+    "lon": -86.1277433,
+    "name": "OTTAWA AVENUE",
+    "norm": "OTTAWA AVENUE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145885",
+    "lat": 42.7548718,
+    "lon": -86.1172672,
+    "name": "WASHINGTON AVENUE",
+    "norm": "WASHINGTON AVENUE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145886",
+    "lat": 42.8419267,
+    "lon": -86.1103745,
+    "name": "QUINCY STREET",
+    "norm": "QUINCY STREET",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/145887",
+    "lat": 42.8113142,
+    "lon": -86.1070913,
+    "name": "JAMES STREET",
+    "norm": "JAMES STREET",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/145888",
+    "lat": 43.0784115,
+    "lon": -86.1550776,
+    "name": "CONSUMERS ENERGY",
+    "norm": "CONSUMERS ENERGY",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/146039",
+    "lat": 44.213027,
+    "lon": -86.287291,
+    "name": "TAP146039",
+    "norm": "TAP146039",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/146040",
+    "lat": 43.9519455,
+    "lon": -86.3800881,
+    "name": "AMBER",
+    "norm": "AMBER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000"
+  },
+  {
+    "id": "hifld/146041",
+    "lat": 43.6880607,
+    "lon": -86.3215211,
+    "name": "DONALDSON CREEK",
+    "norm": "DONALDSON CREEK",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/146043",
+    "lat": 43.2023029,
+    "lon": -86.30366,
+    "name": "CONSUMERS ENERGY",
+    "norm": "CONSUMERS ENERGY",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/146046",
+    "lat": 42.1890996,
+    "lon": -86.3349412,
+    "name": "BENTON HARBOR",
+    "norm": "BENTON HARBOR",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/146047",
+    "lat": 42.3210987,
+    "lon": -86.306489,
+    "name": "PALISADES",
+    "norm": "PALISADES",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000"
+  },
+  {
+    "id": "hifld/146048",
+    "lat": 42.3215249,
+    "lon": -86.2939662,
+    "name": "COVERT",
+    "norm": "COVERT",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/146061",
+    "lat": 42.8157921,
+    "lon": -85.9898756,
+    "name": "TAP146061",
+    "norm": "TAP146061",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/146065",
+    "lat": 43.3057344,
+    "lon": -86.0154793,
+    "name": "TAP146065",
+    "norm": "TAP146065",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/146068",
+    "lat": 42.8324599,
+    "lon": -85.9768844,
+    "name": "ROOSEVELT",
+    "norm": "ROOSEVELT",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/146112",
+    "lat": 43.1687145,
+    "lon": -82.5057793,
+    "name": "TAP146112",
+    "norm": "TAP146112",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/146113",
+    "lat": 43.0714232,
+    "lon": -82.4938058,
+    "name": "TAP146113",
+    "norm": "TAP146113",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/146114",
+    "lat": 42.7760554,
+    "lon": -82.5155563,
+    "name": "TAP146114",
+    "norm": "TAP146114",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/146115",
+    "lat": 42.8757854,
+    "lon": -82.5141886,
+    "name": "TAP146115",
+    "norm": "TAP146115",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/146119",
+    "lat": 42.8770538,
+    "lon": -82.4894164,
+    "name": "TAP146119",
+    "norm": "TAP146119",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/155868",
+    "lat": 43.4884951,
+    "lon": -84.0886251,
+    "name": "TAP155868",
+    "norm": "TAP155868",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/155869",
+    "lat": 42.9161159,
+    "lon": -86.0224074,
+    "name": "TAP155869",
+    "norm": "TAP155869",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/155870",
+    "lat": 42.8436919,
+    "lon": -85.0767191,
+    "name": "TAP155870",
+    "norm": "TAP155870",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/155871",
+    "lat": 44.3049445,
+    "lon": -84.6008846,
+    "name": "TAP155871",
+    "norm": "TAP155871",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/156014",
+    "lat": 41.8871534,
+    "lon": -86.1877562,
+    "name": "TAP156014",
+    "norm": "TAP156014",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/156311",
+    "lat": 42.2628959,
+    "lon": -85.4964812,
+    "name": "TAP156311",
+    "norm": "TAP156311",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/156312",
+    "lat": 42.3589968,
+    "lon": -85.1384865,
+    "name": "TAP156312",
+    "norm": "TAP156312",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/156313",
+    "lat": 43.361405,
+    "lon": -85.004931,
+    "name": "TAP156313",
+    "norm": "TAP156313",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/157153",
+    "lat": 45.173783,
+    "lon": -87.614569,
+    "name": "BAY DE NOC",
+    "norm": "BAY DE NOC",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/157155",
+    "lat": 45.993447,
+    "lon": -87.88186,
+    "name": "FELCH MOUNTAIN",
+    "norm": "FELCH MOUNTAIN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157156",
+    "lat": 46.097293,
+    "lon": -84.362638,
+    "name": "ROCKVIEW",
+    "norm": "ROCKVIEW",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157157",
+    "lat": 46.267481,
+    "lon": -84.468137,
+    "name": "KINCHELOE HOUSING",
+    "norm": "KINCHELOE HOUSING",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157158",
+    "lat": 46.335711,
+    "lon": -86.740313,
+    "name": "HIAWATHA (AD-REA)",
+    "norm": "HIAWATHA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157272",
+    "lat": 45.4153907,
+    "lon": -84.8695784,
+    "name": "CONWAY",
+    "norm": "CONWAY",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/157544",
+    "lat": 42.1202586,
+    "lon": -85.5416481,
+    "name": "VICKSBURG",
+    "norm": "VICKSBURG",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157956",
+    "lat": 45.944246,
+    "lon": -86.972813,
+    "name": "LAKEHEAD RAPID RIVER",
+    "norm": "LAKEHEAD RAPID RIVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157957",
+    "lat": 45.965479,
+    "lon": -86.239726,
+    "name": "GLEN JENKS",
+    "norm": "GLEN JENKS",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/157958",
+    "lat": 46.263379,
+    "lon": -84.475642,
+    "name": "KINCHELOE MAIN",
+    "norm": "KINCHELOE MAIN",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/157959",
+    "lat": 46.490707,
+    "lon": -87.679711,
+    "name": "BARNUM",
+    "norm": "BARNUM",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158232",
+    "lat": 46.1145,
+    "lon": -85.320077,
+    "name": "LAKEHEAD NAUBINWAY",
+    "norm": "LAKEHEAD NAUBINWAY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/158233",
+    "lat": 46.259762,
+    "lon": -84.544404,
+    "name": "TONE",
+    "norm": "TONE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158234",
+    "lat": 46.728189,
+    "lon": -89.173153,
+    "name": "ROCKLAND",
+    "norm": "ROCKLAND",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158613",
+    "lat": 45.703514,
+    "lon": -87.366525,
+    "name": "TAP158613",
+    "norm": "TAP158613",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158614",
+    "lat": 45.890827,
+    "lon": -87.387082,
+    "name": "TAP158614",
+    "norm": "TAP158614",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158615",
+    "lat": 46.019216,
+    "lon": -87.415888,
+    "name": "TAP158615",
+    "norm": "TAP158615",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158616",
+    "lat": 45.905518,
+    "lon": -87.230745,
+    "name": "TAP158616",
+    "norm": "TAP158616",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158617",
+    "lat": 45.905596,
+    "lon": -87.22331,
+    "name": "TAP158617",
+    "norm": "TAP158617",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158618",
+    "lat": 45.769193,
+    "lon": -87.09636,
+    "name": "TAP158618",
+    "norm": "TAP158618",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158619",
+    "lat": 45.908006,
+    "lon": -87.002931,
+    "name": "TAP158619",
+    "norm": "TAP158619",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158620",
+    "lat": 45.987806,
+    "lon": -88.039415,
+    "name": "TAP158620",
+    "norm": "TAP158620",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/158634",
+    "lat": 45.808484,
+    "lon": -87.0766469,
+    "name": "TAP158634",
+    "norm": "TAP158634",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/159015",
+    "lat": 44.4273649,
+    "lon": -85.8983954,
+    "name": "TAP159015",
+    "norm": "TAP159015",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/159027",
+    "lat": 45.0275148,
+    "lon": -84.7824956,
+    "name": "TAP159027",
+    "norm": "TAP159027",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/159028",
+    "lat": 45.4634548,
+    "lon": -84.9205571,
+    "name": "TAP159028",
+    "norm": "TAP159028",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/159029",
+    "lat": 45.4634405,
+    "lon": -84.9206927,
+    "name": "TAP159029",
+    "norm": "TAP159029",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/159034",
+    "lat": 42.1247067,
+    "lon": -83.1846538,
+    "name": "TAP159034",
+    "norm": "TAP159034",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/159035",
+    "lat": 42.8201163,
+    "lon": -85.5539462,
+    "name": "TAP159035",
+    "norm": "TAP159035",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/159036",
+    "lat": 42.8200855,
+    "lon": -85.5539072,
+    "name": "TAP159036",
+    "norm": "TAP159036",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/159037",
+    "lat": 42.911359,
+    "lon": -85.675183,
+    "name": "TAP159037",
+    "norm": "TAP159037",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/159039",
+    "lat": 42.1164483,
+    "lon": -83.2472085,
+    "name": "TAP159039",
+    "norm": "TAP159039",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/159040",
+    "lat": 42.1169555,
+    "lon": -83.2463803,
+    "name": "TAP159040",
+    "norm": "TAP159040",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/159045",
+    "lat": 42.2746157,
+    "lon": -83.1202625,
+    "name": "TAP159045",
+    "norm": "TAP159045",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/159057",
+    "lat": 42.2639683,
+    "lon": -83.1283949,
+    "name": "TAP159057",
+    "norm": "TAP159057",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/159075",
+    "lat": 43.7365102,
+    "lon": -85.1872412,
+    "name": "TAP159075",
+    "norm": "TAP159075",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/159077",
+    "lat": 43.756905,
+    "lon": -85.245532,
+    "name": "TAP159077",
+    "norm": "TAP159077",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/159078",
+    "lat": 41.8115546,
+    "lon": -85.764985,
+    "name": "TAP159078",
+    "norm": "TAP159078",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/159084",
+    "lat": 42.874575,
+    "lon": -85.068377,
+    "name": "TAP159084",
+    "norm": "TAP159084",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/161568",
+    "lat": 45.801856,
+    "lon": -87.089585,
+    "name": "TAP161568",
+    "norm": "TAP161568",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/161608",
+    "lat": 43.3855508,
+    "lon": -86.3274931,
+    "name": "TAP161608",
+    "norm": "TAP161608",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/161609",
+    "lat": 46.737513,
+    "lon": -89.376962,
+    "name": "TAP161609",
+    "norm": "TAP161609",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/163112",
+    "lat": 42.7948519,
+    "lon": -83.6819351,
+    "name": "TAP163112",
+    "norm": "TAP163112",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/163120",
+    "lat": 42.459825,
+    "lon": -83.3966934,
+    "name": "TAP163120",
+    "norm": "TAP163120",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/163485",
+    "lat": 46.1638328,
+    "lon": -89.2042609,
+    "name": "LAND O LAKES",
+    "norm": "LAND O LAKES",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/163486",
+    "lat": 46.2667381,
+    "lon": -89.1754203,
+    "name": "WATERSMEET",
+    "norm": "WATERSMEET",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/167206",
+    "lat": 41.9941576,
+    "lon": -86.0956455,
+    "name": "RISER167206",
+    "norm": "RISER167206",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/167207",
+    "lat": 42.1052389,
+    "lon": -83.4493544,
+    "name": "DEADEND167207",
+    "norm": "DEADEND167207",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/167208",
+    "lat": 42.487125,
+    "lon": -83.4410422,
+    "name": "TAP167208",
+    "norm": "TAP167208",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/167209",
+    "lat": 42.4871074,
+    "lon": -83.4412183,
+    "name": "TAP167209",
+    "norm": "TAP167209",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/167210",
+    "lat": 42.4870873,
+    "lon": -83.4412014,
+    "name": "TAP167210",
+    "norm": "TAP167210",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/167211",
+    "lat": 41.9857833,
+    "lon": -83.4124646,
+    "name": "TAP167211",
+    "norm": "TAP167211",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/167212",
+    "lat": 41.984725,
+    "lon": -83.409618,
+    "name": "DEADEND167212",
+    "norm": "DEADEND167212",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/167213",
+    "lat": 41.9846138,
+    "lon": -83.4096651,
+    "name": "DEADEND167213",
+    "norm": "DEADEND167213",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/167214",
+    "lat": 42.76066,
+    "lon": -83.0109368,
+    "name": "DEADEND167214",
+    "norm": "DEADEND167214",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/167215",
+    "lat": 42.7596962,
+    "lon": -83.0086045,
+    "name": "DEADEND167215",
+    "norm": "DEADEND167215",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;345000"
+  },
+  {
+    "id": "hifld/171033",
+    "lat": 44.359028,
+    "lon": -86.162548,
+    "name": "TAP171033",
+    "norm": "TAP171033",
+    "operator": null,
+    "state": "MI",
+    "voltage": "46000;46000"
+  },
+  {
+    "id": "hifld/171034",
+    "lat": 44.3686149,
+    "lon": -86.0136466,
+    "name": "TAP171034",
+    "norm": "TAP171034",
+    "operator": null,
+    "state": "MI",
+    "voltage": "46000;46000"
+  },
+  {
+    "id": "hifld/171035",
+    "lat": 44.292616,
+    "lon": -86.283324,
+    "name": "TAP171035",
+    "norm": "TAP171035",
+    "operator": null,
+    "state": "MI",
+    "voltage": "46000;46000"
+  },
+  {
+    "id": "hifld/171036",
+    "lat": 44.726605,
+    "lon": -85.623453,
+    "name": "TAP171036",
+    "norm": "TAP171036",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171038",
+    "lat": 44.7555218,
+    "lon": -85.5959651,
+    "name": "TAP171038",
+    "norm": "TAP171038",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171039",
+    "lat": 44.809249,
+    "lon": -85.566023,
+    "name": "RISER171039",
+    "norm": "RISER171039",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171040",
+    "lat": 44.757438,
+    "lon": -85.605578,
+    "name": "TAP171040",
+    "norm": "TAP171040",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171041",
+    "lat": 44.757042,
+    "lon": -85.605385,
+    "name": "TAP171041",
+    "norm": "TAP171041",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171042",
+    "lat": 44.7348,
+    "lon": -85.621239,
+    "name": "RISER171042",
+    "norm": "RISER171042",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171043",
+    "lat": 44.755326,
+    "lon": -85.621022,
+    "name": "TAP171043",
+    "norm": "TAP171043",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171044",
+    "lat": 44.759066,
+    "lon": -85.617632,
+    "name": "TAP171044",
+    "norm": "TAP171044",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171045",
+    "lat": 44.763423,
+    "lon": -85.628296,
+    "name": "RISER171045",
+    "norm": "RISER171045",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171046",
+    "lat": 44.769103,
+    "lon": -85.6353819,
+    "name": "RISER171046",
+    "norm": "RISER171046",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000"
+  },
+  {
+    "id": "hifld/171268",
+    "lat": 46.327904,
+    "lon": -85.5013689,
+    "name": "NEWBERRY CORRECTIONAL FACILITY",
+    "norm": "NEWBERRY CORRECTIONAL FACILITY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171269",
+    "lat": 46.323437,
+    "lon": -85.498949,
+    "name": "TAP171269",
+    "norm": "TAP171269",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171270",
+    "lat": 46.345415,
+    "lon": -85.018723,
+    "name": "TAP171270",
+    "norm": "TAP171270",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171271",
+    "lat": 46.375289,
+    "lon": -84.801718,
+    "name": "TAP171271",
+    "norm": "TAP171271",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171272",
+    "lat": 46.379051,
+    "lon": -84.612861,
+    "name": "TAP171272",
+    "norm": "TAP171272",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171273",
+    "lat": 46.156977,
+    "lon": -85.237259,
+    "name": "REXTON",
+    "norm": "REXTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171274",
+    "lat": 46.196722,
+    "lon": -85.02078,
+    "name": "TAP171274",
+    "norm": "TAP171274",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171275",
+    "lat": 46.1139275,
+    "lon": -85.3206819,
+    "name": "TAP171275",
+    "norm": "TAP171275",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/171280",
+    "lat": 45.8586101,
+    "lon": -84.7071238,
+    "name": "ST IGNACE",
+    "norm": "ST IGNACE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171282",
+    "lat": 46.0489215,
+    "lon": -84.2927177,
+    "name": "LIMESTON",
+    "norm": "LIMESTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171283",
+    "lat": 46.043277,
+    "lon": -84.289483,
+    "name": "TAP171283",
+    "norm": "TAP171283",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171286",
+    "lat": 44.9456284,
+    "lon": -84.4546751,
+    "name": "TAP171286",
+    "norm": "TAP171286",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171287",
+    "lat": 44.9866569,
+    "lon": -84.5866534,
+    "name": "TAP171287",
+    "norm": "TAP171287",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171288",
+    "lat": 44.9873288,
+    "lon": -84.6498562,
+    "name": "TAP171288",
+    "norm": "TAP171288",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171289",
+    "lat": 46.3849148,
+    "lon": -86.6411575,
+    "name": "TAP171289",
+    "norm": "TAP171289",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171290",
+    "lat": 46.351331,
+    "lon": -86.7367592,
+    "name": "TAP171290",
+    "norm": "TAP171290",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171291",
+    "lat": 46.345931,
+    "lon": -86.965785,
+    "name": "TAP171291",
+    "norm": "TAP171291",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171292",
+    "lat": 46.3290459,
+    "lon": -87.3943658,
+    "name": "SAWYER LUMBER",
+    "norm": "SAWYER LUMBER",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171293",
+    "lat": 46.326742,
+    "lon": -87.38788,
+    "name": "TAP171293",
+    "norm": "TAP171293",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171294",
+    "lat": 45.987559,
+    "lon": -88.053425,
+    "name": "TAP171294",
+    "norm": "TAP171294",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171296",
+    "lat": 45.804889,
+    "lon": -87.995885,
+    "name": "TAP171296",
+    "norm": "TAP171296",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171301",
+    "lat": 45.793364,
+    "lon": -88.0425945,
+    "name": "TAP171301",
+    "norm": "TAP171301",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171602",
+    "lat": 46.0147536,
+    "lon": -84.0530087,
+    "name": "GOETZVILLE",
+    "norm": "GOETZVILLE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171603",
+    "lat": 46.015036,
+    "lon": -84.053,
+    "name": "TAP171603",
+    "norm": "TAP171603",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171604",
+    "lat": 46.259636,
+    "lon": -84.542027,
+    "name": "TAP171604",
+    "norm": "TAP171604",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171605",
+    "lat": 46.276347,
+    "lon": -84.508873,
+    "name": "TAP171605",
+    "norm": "TAP171605",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171606",
+    "lat": 46.267572,
+    "lon": -84.476901,
+    "name": "TAP171606",
+    "norm": "TAP171606",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171607",
+    "lat": 46.4583761,
+    "lon": -84.3691739,
+    "name": "3 MILE",
+    "norm": "3 MILE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171608",
+    "lat": 46.497872,
+    "lon": -84.365173,
+    "name": "RISER171608",
+    "norm": "RISER171608",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171609",
+    "lat": 46.4666493,
+    "lon": -84.3401542,
+    "name": "TAP171609",
+    "norm": "TAP171609",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171612",
+    "lat": 46.1026771,
+    "lon": -85.6984187,
+    "name": "GOULD CITY SW STA",
+    "norm": "GOULD CITY SW STA",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171613",
+    "lat": 46.102009,
+    "lon": -85.698058,
+    "name": "TAP171613",
+    "norm": "TAP171613",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171614",
+    "lat": 46.1001455,
+    "lon": -85.7386871,
+    "name": "CURTIS",
+    "norm": "CURTIS",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171615",
+    "lat": 45.975293,
+    "lon": -85.869954,
+    "name": "TAP171615",
+    "norm": "TAP171615",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171616",
+    "lat": 46.340751,
+    "lon": -85.962702,
+    "name": "TAP171616",
+    "norm": "TAP171616",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171617",
+    "lat": 46.3540323,
+    "lon": -86.4703786,
+    "name": "SHINGLETON",
+    "norm": "SHINGLETON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171618",
+    "lat": 46.35411,
+    "lon": -86.470547,
+    "name": "TAP171618",
+    "norm": "TAP171618",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171619",
+    "lat": 46.3365111,
+    "lon": -87.8840797,
+    "name": "MICH TRANSMITTER FACILITY",
+    "norm": "MICH TRANSMITTER FACILITY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171620",
+    "lat": 46.496842,
+    "lon": -87.731032,
+    "name": "TAP171620",
+    "norm": "TAP171620",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171621",
+    "lat": 46.4942928,
+    "lon": -87.8880496,
+    "name": "TAP171621",
+    "norm": "TAP171621",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171622",
+    "lat": 46.4835767,
+    "lon": -87.8961303,
+    "name": "HUMBOLT MINE",
+    "norm": "HUMBOLT MINE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171623",
+    "lat": 47.108819,
+    "lon": -88.578161,
+    "name": "TAP171623",
+    "norm": "TAP171623",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/171625",
+    "lat": 46.459055,
+    "lon": -90.1371302,
+    "name": "TAP171625",
+    "norm": "TAP171625",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/171626",
+    "lat": 46.4590971,
+    "lon": -90.1372983,
+    "name": "TAP171626",
+    "norm": "TAP171626",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/172040",
+    "lat": 46.4841245,
+    "lon": -87.6459317,
+    "name": "DEADEND172040",
+    "norm": "DEADEND172040",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/172258",
+    "lat": 41.982713,
+    "lon": -84.958399,
+    "name": "NEWTON",
+    "norm": "NEWTON",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/172450",
+    "lat": 42.891313,
+    "lon": -85.6752566,
+    "name": "TAP172450",
+    "norm": "TAP172450",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/172453",
+    "lat": 42.4587489,
+    "lon": -83.1226426,
+    "name": "TAP172453",
+    "norm": "TAP172453",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173183",
+    "lat": 41.9336692,
+    "lon": -85.6320275,
+    "name": "RIPPLE",
+    "norm": "RIPPLE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173187",
+    "lat": 42.0628055,
+    "lon": -86.029943,
+    "name": "ROTHADEW",
+    "norm": "ROTHADEW",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173188",
+    "lat": 42.0790499,
+    "lon": -86.1661183,
+    "name": "SISTER LAKES",
+    "norm": "SISTER LAKES",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173190",
+    "lat": 42.38182,
+    "lon": -86.2788849,
+    "name": "SOUTH HAVEN",
+    "norm": "SOUTH HAVEN",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173191",
+    "lat": 42.1123876,
+    "lon": -85.6265276,
+    "name": "KALAMAZOO",
+    "norm": "KALAMAZOO",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/173192",
+    "lat": 42.6597568,
+    "lon": -83.1325644,
+    "name": "TAP173192",
+    "norm": "TAP173192",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173193",
+    "lat": 42.29448,
+    "lon": -83.706057,
+    "name": "APEX",
+    "norm": "APEX",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173194",
+    "lat": 43.7319619,
+    "lon": -84.5475596,
+    "name": "SALT RIVER",
+    "norm": "SALT RIVER",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173195",
+    "lat": 42.3371374,
+    "lon": -85.0255908,
+    "name": "TAP173195",
+    "norm": "TAP173195",
+    "operator": null,
+    "state": "MI",
+    "voltage": "138000;138000"
+  },
+  {
+    "id": "hifld/173196",
+    "lat": 42.320989,
+    "lon": -83.206482,
+    "name": "MERCURY",
+    "norm": "MERCURY",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173197",
+    "lat": 42.3222987,
+    "lon": -83.1955066,
+    "name": "RISER173197",
+    "norm": "RISER173197",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173198",
+    "lat": 42.3224255,
+    "lon": -83.1955121,
+    "name": "RISER173198",
+    "norm": "RISER173198",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173199",
+    "lat": 43.8180911,
+    "lon": -83.14812,
+    "name": "GRASSMERE",
+    "norm": "GRASSMERE",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173201",
+    "lat": 41.839922,
+    "lon": -83.770277,
+    "name": "MOROCCO",
+    "norm": "MOROCCO",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/173202",
+    "lat": 41.965394,
+    "lon": -83.274323,
+    "name": "TOLL ROAD",
+    "norm": "TOLL ROAD",
+    "operator": null,
+    "state": "MI",
+    "voltage": "120000;120000"
+  },
+  {
+    "id": "hifld/173203",
+    "lat": 42.2656864,
+    "lon": -85.7678158,
+    "name": "WEEDS LAKE",
+    "norm": "WEEDS LAKE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "345000;138000"
+  },
+  {
+    "id": "hifld/173259",
+    "lat": 46.7518938,
+    "lon": -88.541462,
+    "name": "BARAGA VLG",
+    "norm": "BARAGA VLG",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/173260",
+    "lat": 46.7515366,
+    "lon": -88.5418756,
+    "name": "TAP173260",
+    "norm": "TAP173260",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/173261",
+    "lat": 46.7770358,
+    "lon": -89.0477543,
+    "name": "LAKE MINE",
+    "norm": "LAKE MINE",
+    "operator": null,
+    "state": "MI",
+    "voltage": "69000;69000"
+  },
+  {
+    "id": "hifld/173262",
+    "lat": 45.5767443,
+    "lon": -87.708942,
+    "name": "NATHAN",
+    "norm": "NATHAN",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173263",
+    "lat": 45.576209,
+    "lon": -87.7091959,
+    "name": "TAP173263",
+    "norm": "TAP173263",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  },
+  {
+    "id": "hifld/173430",
+    "lat": 42.4416225,
+    "lon": -85.870013,
+    "name": "TAP173430",
+    "norm": "TAP173430",
+    "operator": null,
+    "state": "MI",
+    "voltage": null
+  }
+]

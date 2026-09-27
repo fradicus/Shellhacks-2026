@@ -1,8 +1,8 @@
 {
   "by_basis": {
-    "one": 6,
-    "source_point": 38,
-    "two": 7
+    "one": 13,
+    "source_point": 46,
+    "two": 9
   },
   "by_status": {
     "cancelled": 10,
@@ -10,21 +10,21 @@
     "planned": 158,
     "unknown": 3
   },
-  "candidate_located": 51,
-  "distinct_points": 48,
+  "candidate_located": 68,
+  "distinct_points": 62,
   "located_by_status": {
     "cancelled": 2,
-    "in_service": 8,
-    "planned": 41
+    "in_service": 16,
+    "planned": 50
   },
   "projects": 225,
   "unlocated_reasons": {
+    "ambiguous,not_a_facility": 1,
     "multi_terminal_line": 10,
-    "no_facility": 60,
-    "no_facility,not_a_facility": 4,
-    "no_facility,not_corroborated": 5,
+    "no_facility": 57,
+    "no_facility,not_a_facility": 1,
+    "no_facility,operator_conflict": 4,
     "no_named_facility": 60,
-    "not_corroborated": 11,
     "program_area_or_multi_facility": 24
   },
   "verified": 0
