@@ -59,13 +59,13 @@ Keep the merged eight-project C29 release unchanged. Expand the 2,049 TPIT obser
 substations and Census TIGERweb Texas county polygons. A terminal matches only when `_facility` normalizes
 its name exactly to an OSM `name`, `alt_name` or `old_name`, its reference point falls inside the row's named
 county, and exactly one OSM element survives. Ambiguous terminals remain unmatched. One matched endpoint
-is partial; two use the mission arithmetic mean. County-only records have named county evidence and no dot.
-Never use fuzzy matching or county centroids. Preserve all five duplicate Future native IDs as observations;
+is partial; two use the mission arithmetic mean. County-only records may use labeled Census county reference dots, as amended by the user later on 2026-09-27.
+Keep exact centers null and store county display anchors separately. Never use fuzzy facility matching. Preserve all five duplicate Future native IDs as observations;
 resolve canonical identity explicitly before publication.
 
 Display these points as Candidate / tentative with the note: "OSM facility reference point matched by exact
 name + county; not independently reviewed; not survey-grade." Keep raw OSM/TIGER downloads outside Git;
 commit derived facility evidence with OSM element IDs, exact query, retrieval provenance, SHA-256 and ODbL
 attribution. Report full/partial candidate, area-only, unlocated and ambiguous counts with denominators.
-The supplied prototype is a lead to reproduce, not an authoritative count. C30 must authorize the broader
+The supplied prototype is a lead to reproduce, not an authoritative count. C32 must authorize the broader
 release and F30 consumer hook before activation; C29's eight-ID release must not be expanded silently.
