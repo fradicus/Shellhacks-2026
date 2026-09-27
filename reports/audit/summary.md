@@ -20,3 +20,15 @@ The source review read public DESC cards on pages 8 and 18 and independently rec
 The independent oracle uses its own arithmetic means, atan2 haversine and date arithmetic, without production matching or parser imports. The safe loader helper is reused only for subject projection/hash. Each decision includes its current subject snapshot and `audit-subject-v1` fingerprint. Changes to reviewed source, filing or endpoint facts invalidate the decision. Loader corrections for issues [66](https://github.com/fradicus/Shellhacks-2026/issues/66) and [43](https://github.com/fradicus/Shellhacks-2026/issues/43) were required before binding this audit.
 
 The twelve-card extraction check is documented separately in [extraction_check.md](extraction_check.md). Live Gemini, Atlas and domain verification remain user-deferred. No new coordinate or source mismatch was found that would justify inventing a replacement; the remaining location uncertainty is recorded per endpoint and pair.
+
+## C46 re-binding
+
+C46 changed the overlap rule to a driving route of 25 miles or less, so the match records changed and every pair verdict above went stale (the loader applies a verdict only to the exact facts it reviewed). [rebind_c46.py](rebind_c46.py) re-checks the new pair set with its own arithmetic and the stored routes (7/7 checks pass), then:
+
+| Pairs | Result |
+|---|---|
+| 2 historical pairs that were audited and whose endpoints all keep a current verdict | original downgrade carried to the new record |
+| 3 tentative pairs never audited | no verdict; they stay needs review |
+| 13 old pair verdicts | retired; those pairs are over 25 road miles and no longer overlap |
+
+The 14 endpoint verdicts are unchanged. Effective loader states are 2 rejected and 3 needs review; nothing is confirmed or promoted. This is a re-binding, not a new source review.
