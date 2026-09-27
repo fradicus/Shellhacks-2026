@@ -1,0 +1,416 @@
+[
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-rinaldi-tarzana-line-1-2",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "Upgrade Rinaldi Tarzana Line 1 & 2",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "IPP AC Switchyard extension",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "New Receiving Station RS-X (LAX)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "(COD): Eland I and II",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-barren-ridge-statcom",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "New Barren Ridge STATCOM",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "IPP Coal Unit Replacement with CC Natural Gas",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "Upgrade Victorville Bank K (Phase IV)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-rs-e-reactor",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "New RS-E Reactor",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "Upgrade Wavetraps and CVTs at Mead 287kV to 300kV",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-for-victorville-rinaldi-line-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "Clearance Mitigation Upgrade for Victorville - Rinaldi Line 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-b-rack-a-and-bank-a",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "RS-B Rack A and Bank A",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "New IPP Synchronous Condensers",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "New Rosamond Switching Station",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "Lugo - Victorville Line 1 upgrade",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "New Haskell Bank G (PP1-Haskell L1)",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=1",
+    "name": "Lugo-Victorville Line 1 Terminal Equipment",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New Apex-Crystal Line 1 & Subsynchronous Resonance",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-adelanto-rinaldi-line-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Clearance Mitigation Upgrade Adelanto - Rinaldi Line 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New Spare Mead Bank M",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Adelanto STATCOM",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New Converter Station at IPP and Adelanto",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Adelanto AC Switchyard extension",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Scattergood Auto and Phase Shifting Transformer",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-toluca-hollywood-line-1-underground-cable",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Toluca-Hollywood Line 1 Underground Cable",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-mccullough-victorville-series-compensation",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade McCullough – Victorville Series Compensation",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-mccullough-victorville-transmission-line",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade McCullough – Victorville Transmission Line",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-tarzana-olympic-1a-and-1b-conversion-to-2-230kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Tarzana - Olympic 1A and 1B - Conversion to 2-230kV",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-wavetraps-and-cvts-at-victorville-287kv-to-300kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Wavetraps and CVTs at Victorville 287kV to 300kV",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Wavetraps and CVTs at Century (RS-B) 287kV to",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-circuit-breakers-at-victorville-500kv",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Circuit Breakers at Victorville 500kV",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:clearance-mitigation-upgrade-for-adelanto-toluca-line-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Clearance Mitigation Upgrade for Adelanto - Toluca Line 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-rinaldi-airway-lines-1-and-2",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Rinaldi - Airway Lines 1 and 2",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:upgrade-circuit-switcher-for-mccullough-victorville-lines-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Upgrade Circuit Switcher for McCullough - Victorville Lines 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-valley-toluca-line-3-and-upgrade-valley-toluca-lines-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New Valley - Toluca Line 3 and upgrade Valley -Toluca Lines 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-toluca-atwater-line-2-and-upgrade-toluca-atwater-line-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New Toluca - Atwater Line 2 and upgrade Toluca -Atwater Line 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-a-substation-replacement",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "RS-A Substation Replacement",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:new-valley-rinaldi-line-3-and-upgrade-valley-rinaldi-lines-1",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New Valley - Rinaldi Line 3 and upgrade Valley -Rinaldi Lines 1",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "New 180 MVAR Variable Shunt Reactor at Marketplace",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Valley (RS-M) Rack A",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-e-bank-g-replacement",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "RS-E Bank G Replacement",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-ladwp:rs-rinaldi-bank-g1-g2-replacement",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "RS-Rinaldi Bank G1 & G2 Replacement",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=2",
+    "name": "Castaic - Haskell Line 1 Disconnect Switches",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Haynes GS Cooling System Retrofit",
+    "reason": "other work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Harbor GS Cooling System Retrofit",
+    "reason": "other work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Scattergood Units 1&2 Green",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Milford Solar",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Notch Peak Solar",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Utah Solar 1",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=3",
+    "name": "Dodger Solar/Champagne Solar",
+    "reason": "generation work, not a transmission project",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=4",
+    "name": "Sylmar Bank E",
+    "reason": "same project as caiso-tdf-2026-07:2223-R-22",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=4",
+    "name": "Sylmar Bank F",
+    "reason": "same project as caiso-tdf-2026-07:2223-R-22",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "LADWP_2026_APR.pdf#page=4",
+    "name": "Sylmar Bank G",
+    "reason": "same project as caiso-tdf-2026-07:2223-R-22",
+    "source_id": "wecc-apr-2026-ladwp"
+  },
+  {
+    "_id": "wecc-apr-2026-iid:ks2-ramon-mirage-circuit-2",
+    "disposition": "accepted",
+    "location": "candidate",
+    "locator": "IID_2026_APR.pdf#page=1",
+    "name": "230kV “KS2” Ramon-Mirage Circuit #2",
+    "source_id": "wecc-apr-2026-iid"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "SMUD_2026_APR.pdf#page=1",
+    "name": "Country Acres Generation Project",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-smud"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "SMUD_2026_APR.pdf#page=2",
+    "name": "Elverta (El Rio) 230 kV Substation Rebuild and Expansion",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-smud"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "SMUD_2026_APR.pdf#page=2",
+    "name": "Sacramento Valley Energy Center (Coyote Creek) Generation Project",
+    "reason": "no state in the text and no corroborated facility in the owner's territory",
+    "source_id": "wecc-apr-2026-smud"
+  }
+]
