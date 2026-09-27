@@ -179,12 +179,16 @@ def load_snapshot(root: Path = REPO_ROOT) -> dict[str, Any]:
     errors = validate_snapshot_values(snapshot)
     if errors:
         raise ValueError("national snapshot validation failed:\n" + "\n".join(errors))
-    # Fixed producer order: C23 locations first, then C27 new Southeast identities.
+    # Fixed producer order: C23 locations, C27 Southeast, then C28 Mid-Atlantic identities.
     # Source/candidate folders are never scanned and cannot activate themselves.
-    for producer in ("expansion", "southeast"):
-        if not (root / "data" / producer / "releases" / "active.json").exists():
+    for directory, module in (
+        ("expansion", "expansion.publish"),
+        ("southeast", "southeast.publish"),
+        ("expansion/mid-atlantic", "expansion.mid_atlantic"),
+    ):
+        if not (root / "data" / directory / "releases" / "active.json").exists():
             continue
-        snapshot = import_module(f"{producer}.publish").apply_release(snapshot, root)
+        snapshot = import_module(module).apply_release(snapshot, root)
         imported_source_ids = {
             source["_id"] for source in snapshot["sources"] if source["import_status"] == "imported"
         }

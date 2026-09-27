@@ -41,3 +41,11 @@ After the validated base and optional C23 overlay, invoke F39's fixed-path assem
 the combined snapshot before staging. Preserve both producer summaries, project events and
 location evidence. Missing active releases leave the original base behavior intact; invalid
 Southeast releases must prevent activation. The existing load Action remains the sole writer.
+
+## Mid-Atlantic additions (C28)
+
+After C23 and C27, invoke F38’s `expansion.mid_atlantic.apply_release` only when
+`data/expansion/mid-atlantic/releases/active.json` exists. Pass the full assembled snapshot,
+preserve all producer summaries and evidence, recompute national and per-source coverage,
+and validate before staging. Missing releases preserve prior behavior; invalid releases
+prevent activation. Original snapshot generation and the sole load Action writer are unchanged.

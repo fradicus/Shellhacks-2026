@@ -21,13 +21,19 @@ uv run python -m national.load
 
 ## Reviewed expansion locations
 
-`national.build.load_snapshot` first validates these base files, then applies only
-`data/expansion/releases/active.json` through F38's facts-bound release validator. It recomputes source/total
+`national.build.load_snapshot` first validates these base files, then applies these fixed releases in order:
+
+1. New England locations: `data/expansion/releases/active.json` (C23).
+2. Southeast additions: `data/southeast/releases/active.json` (C27).
+3. Mid-Atlantic additions: `data/expansion/mid-atlantic/releases/active.json` (C28).
+
+Each producer validates its facts-bound release. The loader recomputes source/total
 coverage and validates the assembled snapshot before the national loader can stage it. Missing active releases
 leave the base unchanged; invalid releases fail before staging. Candidate and research folders never activate.
 
 Expansion geometry and its source/review evidence are embedded in the same national project document and move
 with the existing atomic dataset pointer. Project IDs, original source rows, statuses and milestone precision
-remain unchanged. Runtime `coverage.expansion` reports reviewed location counts separately from base locations.
+remain unchanged. Runtime `coverage.expansion`, `coverage.southeast` and `coverage.mid_atlantic` preserve
+each producer’s coverage, review counts and gaps separately from the recomputed national totals.
 The workbook still supplies no coordinates; separate reviewed evidence supplies any accepted ISO-NE locations.
 `national build` continues to write base snapshots only, so repeated loads do not bake overlays into originals.
