@@ -14,6 +14,11 @@ function fixture<T>(name: string): T {
 const historical = fixture<FixtureMatch[]>("matches").filter((m) => m.view === "historical").sort((x, y) => x.rank - y.rank);
 const projects = new Map(fixture<FixtureProject[]>("projects").map((p) => [p.project_key, p]));
 const top = historical[0];
+// Each distance with its own label: road miles once the pair view draws the stored route (#281), the stored
+// center-to-center distance until then. Either way the number must match the words next to it.
+const topMiles = new RegExp(
+  [`${top.distance_mi.toFixed(2)}\\s*miles apart, center to center`, ...(top.drive_mi == null ? [] : [`${top.drive_mi.toFixed(2)}\\s*miles by road`])].join("|"),
+);
 
 const styleUrl = "https://tiles.openfreemap.org/styles/positron";
 // Overlaps (/time) draws on the dark style; stub it the same way.
@@ -76,8 +81,7 @@ test("fixture historical pairs rank correctly, select on the Overlaps map, and o
   await rows.first().click();
   await expect(rows.first()).toHaveAttribute("aria-pressed", "true");
   const detail = page.getByRole("complementary", { name: "Selected pair" });
-  await expect(detail).toContainText(`${(top.drive_mi ?? top.distance_mi).toFixed(2)}`);
-  await expect(detail).toContainText(/miles (apart, center to center|by road)/);
+  await expect(detail).toContainText(topMiles);
   const evidence = detail.getByRole("link", { name: /Open evidence/ });
   await expect(evidence).toHaveAttribute("href", `/pair/${encodeURIComponent(pairs[0])}`);
   await evidence.click();
@@ -195,7 +199,7 @@ test("failed basemap preserves overlaps, selection, and accessible project table
   await expect(rows).toHaveCount(historical.length);
   await rows.first().click();
   await expect(rows.first()).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByRole("complementary", { name: "Selected pair" })).toContainText(`${(top.drive_mi ?? top.distance_mi).toFixed(2)}`);
+  await expect(page.getByRole("complementary", { name: "Selected pair" })).toContainText(topMiles);
   await page.getByRole("region", { name: "All projects" }).getByRole("button").click();
   const drawer = page.getByRole("complementary", { name: "All projects" });
   await expect(drawer).toBeVisible();
