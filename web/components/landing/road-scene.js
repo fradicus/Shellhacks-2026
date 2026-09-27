@@ -1,4 +1,4 @@
-/** Truck artwork adapted from the user-supplied GridBridge_updated.html.
+/** Truck artwork adapted from the user-supplied Common Ground / GridBridge reference HTML.
  * Decorative illustration only; no operational fleet data is represented.
  * @param {HTMLCanvasElement} cv
  * @param {boolean | (() => boolean)} paused
@@ -12,7 +12,7 @@ export function startRoadScene(cv, paused) {
  const clamp = (v, a=0, b=1) => Math.max(a, Math.min(b, v));
  let W=1,H=1,DPR=1,L=1,roadY=1,frameId=0,visible=true,disposed=false;
  let elapsed=0,last=performance.now();
- const story=cv.closest("[data-gridbridge-story]");
+ const story=cv.closest("[data-common-ground-story],[data-gridbridge-story]");
  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
  const motes=Array.from({length:50},(_,i)=>({x:(i*.618)%1,y:(i*.371)%1,v:.2+(i%5)*.1,r:.6+(i%3)*.3,p:i}));
  function resize() {

@@ -36,15 +36,6 @@ export function HeroScene() {
         <p>Every mile. Connected.</p>
         <span className={s.brandRule} />
       </div>
-      {/* Hidden controls keep the standalone HTML exporter’s adapter stable; map toggle is retired. */}
-      <div className={s.sceneControls} role="group" aria-label="Illustration view" hidden>
-        <button type="button" aria-pressed="true">
-          <span>01</span> The road
-        </button>
-        <button type="button" aria-pressed="false" tabIndex={-1}>
-          <span>02</span> The network
-        </button>
-      </div>
       <div className={`${s.scene} ${paused ? s.paused : ""}`}>
         <div className={s.roadLayer}>
           <Road paused={paused} />
@@ -60,7 +51,9 @@ export function HeroScene() {
         type="button"
         data-animation-pause=""
         onClick={(event) => {
-          const story = event.currentTarget.closest<HTMLElement>("[data-gridbridge-story]");
+          const story = event.currentTarget.closest<HTMLElement>(
+            "[data-common-ground-story], [data-gridbridge-story]",
+          );
           if (story) story.dataset.animationPaused = String(!paused);
           setPaused(!paused);
         }}
