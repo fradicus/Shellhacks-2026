@@ -3,6 +3,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { fileIdentity, IdentityCache } from "@/lib/server/cache";
 import { filterVerifiedUtilities, InvalidVerifiedQuery, validateVerifiedGeography } from "./filters";
 import type {
   VerifiedCoverage, VerifiedCoverageResponse, VerifiedFilters, VerifiedListResponse, VerifiedUtilityRecord,
@@ -28,8 +29,8 @@ type Manifest = {
 
 const hash = (value: Buffer) => createHash("sha256").update(value).digest("hex");
 
-async function checkedJson<T>(name: string, manifest: Manifest): Promise<T> {
-  const bytes = await readFile(resolve(DATA_DIR, name));
+async function checkedJson<T>(dir: string, name: string, manifest: Manifest): Promise<T> {
+  const bytes = await readFile(/* turbopackIgnore: true */ resolve(dir, name));
   if (!manifest.files[name] || hash(bytes) !== manifest.files[name].sha256) throw new Error(`${name} failed its manifest hash check`);
   return JSON.parse(bytes.toString("utf8")) as T;
 }
@@ -50,24 +51,57 @@ function validUtilities(value: Envelope, manifest: Manifest): value is Envelope 
     });
 }
 
-async function loadDirectory() {
-  const manifestBytes = await readFile(resolve(DATA_DIR, "manifest.json"));
-  const manifest = JSON.parse(manifestBytes.toString("utf8")) as Manifest;
-  if (manifest.schema_version !== "verified-directory-v1" || !/^[a-f0-9]{64}$/.test(manifest.dataset)) {
-    throw new Error("verified manifest failed its public shape check");
+type Directory = {
+  manifest: Manifest;
+  utilities: VerifiedUtilityRecord[];
+  coverage: VerifiedCoverage;
+  geography: { states: { state_fips: string }[]; counties: { county_geoid: string; state_fips: string }[] };
+};
+
+/** The verified artifacts in `dir`, hash-checked and shape-checked once per artifact identity. Rewriting any of the
+ * four files changes the identity, so a re-published directory is read afresh; a failed check is never cached. */
+export function verifiedStore(dir: string, geographyPath: string) {
+  const files = ["manifest.json", "utilities.json", "coverage.json"].map((name) => resolve(dir, name));
+  const cache = new IdentityCache<Directory>(2);
+
+  async function read(): Promise<Directory> {
+    const manifestBytes = await readFile(/* turbopackIgnore: true */ files[0]);
+    const manifest = JSON.parse(manifestBytes.toString("utf8")) as Manifest;
+    if (manifest.schema_version !== "verified-directory-v1" || !/^[a-f0-9]{64}$/.test(manifest.dataset)) {
+      throw new Error("verified manifest failed its public shape check");
+    }
+    const [utilities, coverage, geography] = await Promise.all([
+      checkedJson<Envelope>(dir, "utilities.json", manifest),
+      checkedJson<VerifiedCoverage>(dir, "coverage.json", manifest),
+      readFile(/* turbopackIgnore: true */ geographyPath, "utf8").then((value) => JSON.parse(value) as Directory["geography"]),
+    ]);
+    if (!validUtilities(utilities, manifest) || coverage.dataset !== manifest.dataset
+      || coverage.generated_at !== manifest.generated_at || coverage.schema_version !== "verified-directory-v1") {
+      throw new Error("verified artifacts failed their public shape check");
+    }
+    return { manifest, utilities: utilities.records, coverage, geography };
   }
-  const [utilities, coverage, geography] = await Promise.all([
-    checkedJson<Envelope>("utilities.json", manifest),
-    checkedJson<VerifiedCoverage>("coverage.json", manifest),
-    readFile(GEOGRAPHY_PATH, "utf8").then((value) => JSON.parse(value) as {
-      states: { state_fips: string }[]; counties: { county_geoid: string; state_fips: string }[];
-    }),
-  ]);
-  if (!validUtilities(utilities, manifest) || coverage.dataset !== manifest.dataset
-    || coverage.generated_at !== manifest.generated_at || coverage.schema_version !== "verified-directory-v1") {
-    throw new Error("verified artifacts failed their public shape check");
+
+  return {
+    async load(): Promise<Directory> {
+      const identity = (await Promise.all([...files, geographyPath].map(fileIdentity))).join("|");
+      return cache.get(identity, read);
+    },
+    invalidate: () => cache.clear(),
+  };
+}
+
+const store = verifiedStore(DATA_DIR, GEOGRAPHY_PATH);
+const loadDirectory = () => store.load();
+
+/** Readiness for /api/health: whether the published artifacts pass their checks, and which dataset they are. */
+export async function verifiedReadiness(): Promise<{ ready: boolean; dataset: string | null; generated_at: string | null }> {
+  try {
+    const { manifest } = await loadDirectory();
+    return { ready: true, dataset: manifest.dataset, generated_at: manifest.generated_at };
+  } catch {
+    return { ready: false, dataset: null, generated_at: null };
   }
-  return { manifest, utilities: utilities.records, coverage, geography };
 }
 
 export async function loadVerifiedDirectory(filters: VerifiedFilters): Promise<VerifiedListResponse> {
