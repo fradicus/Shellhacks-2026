@@ -64,6 +64,8 @@ const miles = (d: number) => `${d.toFixed(2)} mi`;
 /** F37: History opens around this project's stored center, as a research aid. */
 const pastWork = (key: string) => `/history?origin=${encodeURIComponent(key)}`;
 const SWEEP_MS = 4200;
+// ponytail: a coordinate box, not state lookups; the only located places outside it are Alaska and Hawaii (C49).
+const inLower48 = (c: { lat: number; lon: number }) => c.lat > 24 && c.lat < 50 && c.lon > -125 && c.lon < -66;
 const BOOTH_IDLE_MS = 25_000;
 /** 25 statute miles in degrees of latitude (1° ≈ 69.05 mi), to place the rule's label on its circle. */
 const RULE_DEG_LAT = 25 / 69.05;
@@ -266,8 +268,11 @@ export function TimeView({
     return [Math.min(...lons), Math.min(...lats), Math.max(...lons), Math.max(...lats)] as const;
   }, [scope, scoped]);
   const bbox = useMemo(() => {
-    const lons = located.map((p) => p.center!.lon);
-    const lats = located.map((p) => p.center!.lat);
+    // Alaska and Hawaii would shrink the national overview to a corner; fit the lower 48 unless only they are located.
+    const lower48 = located.filter((p) => inLower48(p.center!));
+    const fit = lower48.length ? lower48 : located;
+    const lons = fit.map((p) => p.center!.lon);
+    const lats = fit.map((p) => p.center!.lat);
     return lons.length
       ? ([Math.min(...lons), Math.min(...lats), Math.max(...lons), Math.max(...lats)] as const)
       : ([-85.6, 30.3, -78.5, 35.3] as const);
