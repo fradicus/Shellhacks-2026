@@ -26,8 +26,9 @@ export interface TimeItem {
 }
 export interface Focus {
   emphasis: (key: string) => Emphasis;
-  /** Ground links (the current view's pairs); `hot` links draw brighter. */
-  links: { a: string; b: string; hot: boolean }[];
+  /** Ground links (the current view's pairs); `hot` links draw brighter. `path` ([lng, lat], A to B) is a stored
+   * road route; without it the link is centre to centre. */
+  links: { a: string; b: string; hot: boolean; path?: [number, number][] | null }[];
   /** Selected pair whose dates are both exact: draw the dimension bracket between their beads. */
   dimension: { a: string; b: string } | null;
   /** Where the time ruler stands. */
@@ -324,7 +325,7 @@ export function createTimeLayer(
     fillPoints(halos, glow);
     if (sweeping) opts.onSweep?.({ years: sweep, shown, total: dated });
 
-    // Ground links: centre to centre, never a route.
+    // Ground links: the stored road route when the pair has one, otherwise centre to centre.
     const link = (hot: boolean) =>
       (focus?.links ?? [])
         .filter((l) => l.hot === hot)
@@ -332,8 +333,9 @@ export function createTimeLayer(
           const a = byKey.get(l.a);
           const b = byKey.get(l.b);
           if (!a || !b) return [];
-          const k = hot ? 0.95 : 0.22;
-          return [{ a: [...local(a.lng, a.lat), 0], b: [...local(b.lng, b.lat), 0], ca: mul(INK, k), cb: mul(INK, k) }];
+          const c = mul(INK, hot ? 0.95 : 0.22);
+          const pts: [number, number][] = l.path && l.path.length >= 2 ? l.path : [[a.lng, a.lat], [b.lng, b.lat]];
+          return pts.slice(1).map((p, k): Seg => ({ a: [...local(...pts[k]), 0], b: [...local(...p), 0], ca: c, cb: c }));
         });
     fillLines(links, link(false));
     fillLines(linksHot, link(true));

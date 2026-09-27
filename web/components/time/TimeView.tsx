@@ -16,6 +16,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { NationalProjectSummary, NationalExplorerPayload } from "@/lib/national/types";
 import type { NationalTier } from "./nationalProjects";
 import { NationalProjectEvidence } from "./NationalProjectEvidence";
+import { roadPath } from "./polyline";
 import type { InService, Utility, View } from "@/lib/types";
 import type { Emphasis, LabelSpec, Projected, SweepState, TimeItem, TimeLayer } from "./timeLayer";
 import { DAYS_PER_YEAR, dayOf, epochYear, fmtDays, span, type Span } from "./timeScale";
@@ -38,6 +39,10 @@ export interface TimePair {
   a: string;
   b: string;
   distance_mi: number;
+  /** Stored driving distance between the two centers (C46); null for straight-line pairs. */
+  drive_mi?: number | null;
+  /** Stored road route, decoded only for drawing. */
+  route?: { polyline: string | null; start: { lat: number; lon: number } | null; end: { lat: number; lon: number } | null } | null;
   time_gap_days: number | null;
   band: 0 | 1;
   view: View;
@@ -45,6 +50,10 @@ export interface TimePair {
   candidate?: boolean;
   review_state: "needs_review" | "confirmed" | "rejected" | null;
 }
+
+/** The pair's distance as labeled: by road when a drive is stored, otherwise the straight line. */
+const pairMiles = (p: TimePair) => p.drive_mi ?? p.distance_mi;
+const apart = (p: TimePair) => (p.drive_mi != null ? "by road" : "apart");
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 const UTILITY: Record<Utility, string> = { DESC: "Dominion Energy SC", GPC: "Georgia Power", unknown: "Owner not mapped" };
@@ -297,6 +306,16 @@ export function TimeView({
     () => candidateMode ? candidatePairs : scopedPairs.filter((p) => p.view === view).sort((x, y) => (x.rank ?? 1e9) - (y.rank ?? 1e9) || x.id.localeCompare(y.id)),
     [scopedPairs, view, candidateMode, candidatePairs],
   );
+  const paths = useMemo(() => {
+    const out = new Map<string, [number, number][]>();
+    for (const p of pairs) {
+      const a = byKey.get(p.a)?.center;
+      const b = byKey.get(p.b)?.center;
+      const path = a && b ? roadPath(a, b, p.route ?? null) : null;
+      if (path) out.set(p.id, path);
+    }
+    return out;
+  }, [pairs, byKey]);
   const pair = pairId ? (pairs.find((p) => p.id === pairId) ?? null) : null;
   const previewed = !pair && preview ? (pairs.find((p) => p.id === preview) ?? null) : null;
   const pa = pair ? byKey.get(pair.a) : undefined;
@@ -481,6 +500,7 @@ export function TimeView({
         .map((p) => ({
         a: p.a,
         b: p.b,
+        path: paths.get(p.id) ?? null,
         hot:
           p.id === pairId ||
           p.id === previewed?.id ||
@@ -491,7 +511,7 @@ export function TimeView({
       ruler: rulerAt,
       quiet: !scope,
     });
-  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt, candidateMode, scope]);
+  }, [ready, emphasis, visible, pairId, projectKey, hover, previewed, dimension, pair, rulerAt, candidateMode, scope, paths]);
 
   // Pillar height follows the zoom (yearPxAt); a selected pair's own top sets the cap so its day gap fills the room.
   useEffect(() => {
@@ -543,7 +563,7 @@ export function TimeView({
   }
   if (pair && pa?.center && pb?.center) {
     const mid = { lng: (pa.center.lon + pb.center.lon) / 2, lat: (pa.center.lat + pb.center.lat) / 2 };
-    labelSpecs.push({ id: "dist", ...mid, years: 0, kind: "dist", text: <>{miles(pair.distance_mi)} apart</> });
+    labelSpecs.push({ id: "dist", ...mid, years: 0, kind: "dist", text: <>{miles(pairMiles(pair))} {apart(pair)}</> });
     // The rule's label sits where A's 25-mile circle crosses the far side of the view: the camera faces A→B minus 90°.
     const far = ((bearing(pa.center, pb.center) - 90) * Math.PI) / 180;
     labelSpecs.push({
@@ -605,14 +625,17 @@ export function TimeView({
 
   // --- camera moves ---------------------------------------------------------------------------------------------------
   const frame = useCallback(
-    (a: TimeProject | undefined, b: TimeProject | undefined) => {
+    (a: TimeProject | undefined, b: TimeProject | undefined, path?: [number, number][] | null) => {
       const map = mapRef.current;
       if (!map || !a?.center || !b?.center) return;
       const brg = bearing(a.center, b.center) - 90;
+      const pts: [number, number][] = [[a.center.lon, a.center.lat], [b.center.lon, b.center.lat], ...(path ?? [])];
+      const lngs = pts.map((p) => p[0]);
+      const lats = pts.map((p) => p[1]);
       const cam = map.cameraForBounds(
         [
-          [Math.min(a.center.lon, b.center.lon), Math.min(a.center.lat, b.center.lat)],
-          [Math.max(a.center.lon, b.center.lon), Math.max(a.center.lat, b.center.lat)],
+          [Math.min(...lngs), Math.min(...lats)],
+          [Math.max(...lngs), Math.max(...lats)],
         ],
         {
           padding:
@@ -639,9 +662,9 @@ export function TimeView({
       setPairId(id);
       setProjectKey(null);
       const p = id ? pairs.find((x) => x.id === id) : null;
-      if (p) frame(byKey.get(p.a), byKey.get(p.b));
+      if (p) frame(byKey.get(p.a), byKey.get(p.b), paths.get(p.id));
     },
-    [pairs, byKey, frame],
+    [pairs, byKey, frame, paths],
   );
 
   useEffect(() => {
@@ -836,7 +859,7 @@ export function TimeView({
       .sort((x, y) => y.time_gap_days! - x.time_gap_days!)[0];
     const name = (k: string) => byKey.get(k)?.name ?? k;
     const facts = (p: TimePair) =>
-      `${miles(p.distance_mi)} apart on the ground, ${p.time_gap_days === null ? "day gap unknown" : fmtDays(p.time_gap_days) + " apart in service"}.`;
+      `${miles(pairMiles(p))} ${p.drive_mi != null ? "by road" : "apart on the ground"}, ${p.time_gap_days === null ? "day gap unknown" : fmtDays(p.time_gap_days) + " apart in service"}.`;
     const names = (p: TimePair) => `${name(p.a)}  ·  ${name(p.b)}`;
     const steps: { pair: string | null; kicker: string; text: string; names?: string }[] = [
       {
@@ -857,7 +880,7 @@ export function TimeView({
     if (wide && first)
       steps.push({
         pair: wide.id,
-        kicker: wide.distance_mi < first.distance_mi ? "Closer, but not sooner" : "Near, but not together",
+        kicker: pairMiles(wide) < pairMiles(first) ? "Closer, but not sooner" : "Near, but not together",
         text: `${facts(wide)} Same neighborhood, different years, so it ranks lower.${wide.review_state === "rejected" ? " An audit rejected it." : ""}`,
         names: names(wide),
       });
@@ -960,7 +983,7 @@ export function TimeView({
 
       <p className="visually-hidden" role="status" aria-live="polite">
         {pair && pa && pb
-          ? `Selected: ${pa.name} and ${pb.name}. ${miles(pair.distance_mi)} apart; ${
+          ? `Selected: ${pa.name} and ${pb.name}. ${miles(pairMiles(pair))} ${apart(pair)}; ${
               pair.time_gap_days === null ? "day gap unknown" : fmtDays(pair.time_gap_days) + " between in-service dates"
             }. ${pair.candidate ? "Provisional candidate" : REVIEW[pair.review_state ?? "needs_review"]}.`
           : project
@@ -1115,7 +1138,7 @@ export function TimeView({
                       </span>
                     </span>
                     <span className={s.pairNums}>
-                      <span>{miles(p.distance_mi)}</span>
+                      <span>{miles(pairMiles(p))}</span>
                       {p.candidate ? <small title="Location evidence tier">{[a, b].some((x) => x?.national?.tier === "tentative") ? "Tentative"
                         : [a, b].some((x) => x?.national?.tier === "official") ? "Published" : "Confirmed"}</small>
                         : <small data-review={p.review_state ?? "needs_review"}>{REVIEW_SHORT[p.review_state ?? "needs_review"]}</small>}
@@ -1244,14 +1267,21 @@ export function TimeView({
           </button>
           <div className={s.figures}>
             <div>
-              <strong>{pair.distance_mi.toFixed(2)}</strong>
-              <span>{pair.candidate ? "straight-line miles between centers" : "miles apart, center to center"}</span>
+              <strong>{pairMiles(pair).toFixed(2)}</strong>
+              <span>
+                {pair.drive_mi != null
+                  ? `miles by road · ${pair.distance_mi.toFixed(2)} center to center`
+                  : pair.candidate
+                    ? "straight-line miles between centers"
+                    : "miles apart, center to center"}
+              </span>
             </div>
             <div>
               <strong>{pair.time_gap_days === null ? "—" : pair.time_gap_days.toLocaleString("en-US")}</strong>
               <span>{pair.time_gap_days === null ? "day gap unknown: a date isn't exact" : pair.time_gap_days === 1 ? "day between in-service dates" : "days between in-service dates"}</span>
             </div>
           </div>
+          {pair.route ? <p className={s.src}>Routes © OpenStreetMap contributors (ODbL), OSRM</p> : null}
           {[pa, pb].map((p) => (
             <section key={p.key} className={s.proj} style={{ ["--c" as string]: projectColor(p) }}>
               <p className={s.projUtil}>{owner(p)}</p>
