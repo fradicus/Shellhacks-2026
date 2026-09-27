@@ -260,3 +260,14 @@ operator guard) and draws C25's labeled tiers on `/history` (`/time` already doe
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F44 | California project coverage from CAISO with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Closed stale claims (2026-09-27)
+
+At the user's direction, ten stale or failing draft claims were closed with their branches kept:
+#77 (F18) and #78 (FIX-F08), empty since 2026-09-26; #93/#94/#95 (C14/FIX-F06/F20 semantic search);
+#89 (F32); #173 (C30 date windows); #175 (C31 county locations); #150 (FIX-F07); and #167 (F39 part 4).
+These features have no active claim now. The earlier notes that F08/F18 drafts are "paused" and that the
+C14/F20 embedding work "remains with its current owners" describe those closed PRs. To resume, open a fresh
+draft from the kept branch, which is the normal claim. #167's receipts are superseded by C37; its Florida
+PSC provider-audit research can be carried into a new F39 part. C31 is not adopted: new geographic work
+prefers exact or tentative facility locations over county anchors.
