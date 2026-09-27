@@ -1,0 +1,647 @@
+[
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.1",
+    "name": "Belfry Area Transmission Line Project",
+    "project_id": "southeast:aep:kentucky/Belfry",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.4",
+    "name": "Garrett Area Transmission Line Project",
+    "project_id": "southeast:aep:kentucky/Garrett",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.6",
+    "name": "Wooton - Stinnett Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:kentucky/Wooton-Stinnett",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.7",
+    "name": "Middle Creek - Prestonsburg Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:kentucky/MiddleCreek",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.8",
+    "name": "Myra Substation and Transmission Line Project",
+    "project_id": "southeast:aep:kentucky/Myra",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.9",
+    "name": "Prestonsburg - Thelma Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:kentucky/Thelma",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.10",
+    "name": "Breaks - Dorton Transmission Improvements Project",
+    "project_id": "southeast:aep:kentucky/BreaksDorton",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.11",
+    "name": "Stinnett - Pineville Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:kentucky/Stinnett-Pineville",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "kentucky-map-setup.json#markers.12",
+    "name": "Big Sandy-Thelma Transmission Improvements Project",
+    "project_id": "southeast:aep:kentucky/bigsandythelma",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:kentucky"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.3",
+    "name": "Danville Area Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/DanvilleArea",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.5",
+    "name": "Fieldale - Ridgeway Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Fieldale-Ridgeway",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.8",
+    "name": "Hillman Highway - Saltville Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/HillmanHighway",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.11",
+    "name": "Washington County Improvements Project: South Abingdon-Arrowhead",
+    "project_id": "southeast:aep:virginia/WashingtonCounty",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.12",
+    "name": "Mount Heron - Coal Creek Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/MountHeron",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.13",
+    "name": "Wildwood Commerce Transmission Project",
+    "project_id": "southeast:aep:virginia/wildwood",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "virginia-map-setup.json#markers.14",
+    "name": "Projects Overview",
+    "reason": "program overview page, not a single project",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.14",
+    "name": "Amherst - Reusens",
+    "project_id": "southeast:aep:virginia/Amherst-Reusens",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.14",
+    "name": "Joshua Falls - Gladstone",
+    "project_id": "southeast:aep:virginia/JoshuaFallsGladstone",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.14",
+    "name": "Shipman - Schuyler / Soapstone - James River",
+    "project_id": "southeast:aep:virginia/Shipman-Schuyler",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "virginia-map-setup.json#markers.15",
+    "name": "Projects Overview",
+    "reason": "program overview page, not a single project",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.15",
+    "name": "Substation Upgrades",
+    "project_id": "southeast:aep:virginia/Independence/Substation-Upgrades",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.15",
+    "name": "Transmission Upgrades",
+    "project_id": "southeast:aep:virginia/Independence/Transmission-Line-Upgrades",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.16",
+    "name": "Stuart Area Improvements Project",
+    "project_id": "southeast:aep:virginia/Stuart",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.17",
+    "name": "Fort Robinson - Hill Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/FortRobinson-Hill",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.20",
+    "name": "Pure Salmon Transmission Improvements Project",
+    "project_id": "southeast:aep:westvirginia/PureSalmon",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.21",
+    "name": "Fries - Independence Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Fries-Independence",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.22",
+    "name": "Saltville - Wolf Hills Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Saltville-WolfHills",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.23",
+    "name": "Sourwood - Hales Branch Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Sourwood-HalesBranch",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.24",
+    "name": "Reusens - Roanoke Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Reusens-Roanoke",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.25",
+    "name": "Levisa Substation Project",
+    "project_id": "southeast:aep:virginia/Levisa",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.26",
+    "name": "Midway - South Christiansburg Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Midway",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.27",
+    "name": "Conaway Transmission Improvements Project",
+    "project_id": "southeast:aep:virginia/Conaway",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.28",
+    "name": "Altavista - Leesville Transmission Improvements Project",
+    "project_id": "southeast:aep:virginia/Altavista-Leesville",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.29",
+    "name": "Abert - Reusens Transmission Improvements Project",
+    "project_id": "southeast:aep:virginia/Abert-Reusens",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.30",
+    "name": "Claytor - Floyd Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Claytor",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.31",
+    "name": "Daleville Area Transmission Improvements Project",
+    "project_id": "southeast:aep:virginia/DalevilleArea",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.32",
+    "name": "New London - Otter Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/NewLondon-Otter",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.33",
+    "name": "Joshua Falls 765-kV Substation Relocation Project",
+    "project_id": "southeast:aep:virginia/JoshuaFallsStation",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "virginia-map-setup.json#markers.34",
+    "name": "Opossum Creek - Smith Mountain Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Opossum",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:virginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.1",
+    "name": "Alum Creek - Madison Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/AlumCreek",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.3",
+    "name": "Bancroft - Turner Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Bancroft-Turner",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.5",
+    "name": "Blair - Danville Transmission Improvements Project",
+    "project_id": "southeast:aep:westvirginia/BlairDanville",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.10",
+    "name": "Carbondale - Kincaid Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Carbondale-Kincaid",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.14",
+    "name": "Kenna Area Transmission Line Project",
+    "project_id": "southeast:aep:westvirginia/Kenna",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.15",
+    "name": "Kincaid Area Transmission Line Project",
+    "project_id": "southeast:aep:westvirginia/Kincaid",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.17",
+    "name": "Lincoln - Logan Power Improvements",
+    "project_id": "southeast:aep:westvirginia/LincolnLogan",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.22",
+    "name": "Victor Substation Transmission Line Project",
+    "project_id": "southeast:aep:westvirginia/Victor",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.23",
+    "name": "Chemical - South Charleston Transmission Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Chemical-SouthCharleston",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.24",
+    "name": "South Point - West Huntington Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/SouthPoint",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.25",
+    "name": "Kincaid - Pax Branch Transmission Line Project",
+    "project_id": "southeast:aep:westvirginia/Kincaid-PaxBranch",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.26",
+    "name": "Becco Area Transmission Improvements Project",
+    "project_id": "southeast:aep:westvirginia/BeccoArea",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "duplicate",
+    "locator": "westvirginia-map-setup.json#markers.27",
+    "name": "Sourwood - Hales Branch Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:virginia/Sourwood-HalesBranch",
+    "reason": "same project page listed on another state map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.28",
+    "name": "Apple Grove - Lakin Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/AppleGrove",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.29",
+    "name": "Nauvoo Ridge Transmission Line Project",
+    "project_id": "southeast:aep:westvirginia/NauvooRidge",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.30",
+    "name": "George Washington - Natrium Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/GeorgeWashington",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.31",
+    "name": "Layland - Mollys Creek Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Layland",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.32",
+    "name": "Baileysville - Rockridge Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Baileysville",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.33",
+    "name": "Mercers Bottom Transmission Project",
+    "project_id": "southeast:aep:westvirginia/mercersbottom",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.34",
+    "name": "Cabin Creek - Cedar Grove Transmission Project",
+    "project_id": "southeast:aep:westvirginia/CabinCreekCedar",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.35",
+    "name": "Bancroft-Milton Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Bancroft-Milton",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.37",
+    "name": "Darrah - Barnett Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/Darrah-Barnett",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.38",
+    "name": "Tri-State - East Lynn Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:westvirginia/TriState-EastLynn",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.39",
+    "name": "Coleman - Grapevine Transmission Improvements Project",
+    "project_id": "southeast:aep:westvirginia/coleman-grapevine",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "westvirginia-map-setup.json#markers.40",
+    "name": "Estes Farm Substation Project",
+    "project_id": "southeast:aep:westvirginia/Estes",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:westvirginia"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "tennessee-map-setup.json#markers.1",
+    "name": "No Active Projects",
+    "reason": "placeholder marker: no active project",
+    "source_id": "southeast:aep:tennessee"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.2",
+    "name": "South Shreveport - Wallace Lake Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/SouthShreveport-WallaceLake",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.3",
+    "name": "Sabine Parish Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/sabineparish",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.4",
+    "name": "Kingston - Gravel Point Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/Kingston-GravelPoint",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.5",
+    "name": "Blanchard - North Market Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/Blanchard-NorthMarket",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.6",
+    "name": "Northwest Louisiana Transmission Improvements Plan",
+    "project_id": "southeast:aep:louisiana/NWLouisiana",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.7",
+    "name": "Blanchard - Lieberman Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/Blanchard-Lieberman",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.8",
+    "name": "Ellerbe Road - Fern Street Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/Ellerbe-Fern",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.9",
+    "name": "Lieberman - Longwood Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/Lieberman-Longwood",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "louisiana-map-setup.json#markers.10",
+    "name": "South Shreveport - Western Electric Transmission Improvements Project",
+    "project_id": "southeast:aep:louisiana/SouthShreveport-WesternElectric",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:louisiana"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.3",
+    "name": "Ashdown - 12th Street Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:arkansas/Ashdown-12Street",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.5",
+    "name": "Bloomburg - South Texarkana Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:arkansas/Bloomburg-Texarkana",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.6",
+    "name": "Dierks - Mena Transmission Improvements Project",
+    "project_id": "southeast:aep:arkansas/Dierks-Mena",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.10",
+    "name": "Dierks - West Murfreesboro Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:arkansas/Dierks-WM",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.11",
+    "name": "Dyess - Flint Creek Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:arkansas/Dyess-FlintCreek",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.12",
+    "name": "De Queen - Nashville Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:arkansas/DQ-Nashville",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "arkansas-map-setup.json#markers.13",
+    "name": "Branch - North Magazine Transmission Line Rebuild Project",
+    "project_id": "southeast:aep:arkansas/Branch-NorthMag",
+    "reason": "project listed on AEP's state project map",
+    "source_id": "southeast:aep:arkansas"
+  }
+]

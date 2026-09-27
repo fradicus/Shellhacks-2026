@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "southeast:aep:kentucky",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/kentucky/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/kentucky/",
+    "notes": [
+      "F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement precision unstated, not independently reviewed. Legend colors are the map's own labels."
+    ],
+    "planning_region": null,
+    "project_count": 9,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "retrieved_at": "2026-09-27T07:40:01Z",
+    "role": "project_plan",
+    "sha256": "82fbecf0608b115cc216f3494f24f7170997a0138535d913c6164e19736ad033",
+    "states": [
+      "21"
+    ],
+    "title": "AEP Transmission Kentucky project map",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:aep:virginia",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/virginia/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/virginia/",
+    "notes": [
+      "F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement precision unstated, not independently reviewed. Legend colors are the map's own labels."
+    ],
+    "planning_region": null,
+    "project_count": 28,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "retrieved_at": "2026-09-27T07:40:16Z",
+    "role": "project_plan",
+    "sha256": "fb86f2e2db2a2c532dd5db552c49b36dcbae5e51887a4a149df45a58b1d014a5",
+    "states": [
+      "51"
+    ],
+    "title": "AEP Transmission Virginia project map",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:aep:westvirginia",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/westvirginia/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/westvirginia/",
+    "notes": [
+      "F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement precision unstated, not independently reviewed. Legend colors are the map's own labels."
+    ],
+    "planning_region": null,
+    "project_count": 24,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "retrieved_at": "2026-09-27T07:40:58Z",
+    "role": "project_plan",
+    "sha256": "dc904161a11ebca76e79e4d71de571c93a24238cfd3e9b3600143735e8cb0844",
+    "states": [
+      "54"
+    ],
+    "title": "AEP Transmission Westvirginia project map",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:aep:tennessee",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/tennessee/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/tennessee/",
+    "notes": [
+      "F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement precision unstated, not independently reviewed. Legend colors are the map's own labels."
+    ],
+    "planning_region": null,
+    "project_count": 0,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "retrieved_at": "2026-09-27T07:42:07Z",
+    "role": "project_plan",
+    "sha256": "20213f6ee39be8f4e216607da785185852df2aa34bc79fa47e776be434806eb5",
+    "states": [
+      "47"
+    ],
+    "title": "AEP Transmission Tennessee project map",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:aep:louisiana",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/louisiana/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/louisiana/",
+    "notes": [
+      "F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement precision unstated, not independently reviewed. Legend colors are the map's own labels."
+    ],
+    "planning_region": null,
+    "project_count": 9,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "retrieved_at": "2026-09-27T07:42:09Z",
+    "role": "project_plan",
+    "sha256": "43c8e295e72144e7a002558d3db364b3d9f464e7cee908aa25eb0575efe5561c",
+    "states": [
+      "22"
+    ],
+    "title": "AEP Transmission Louisiana project map",
+    "vintage": null
+  },
+  {
+    "_id": "southeast:aep:arkansas",
+    "access_policy": "public_document",
+    "authority": "utility",
+    "download_url": "https://www.aeptransmission.com/arkansas/geojson/map-setup.json",
+    "import_status": "imported",
+    "landing_url": "https://www.aeptransmission.com/arkansas/",
+    "notes": [
+      "F39 dense Southeast (C40). Markers are AEP's own project points (official tier), placement precision unstated, not independently reviewed. Legend colors are the map's own labels."
+    ],
+    "planning_region": null,
+    "project_count": 7,
+    "public_status": "verified_public",
+    "publication_date": null,
+    "publisher": "AEP Transmission (American Electric Power)",
+    "retrieved_at": "2026-09-27T07:42:24Z",
+    "role": "project_plan",
+    "sha256": "12790b81b6836055407e52202a2e0bf75a1061dcfcef94b6da9d851b4365c23b",
+    "states": [
+      "05"
+    ],
+    "title": "AEP Transmission Arkansas project map",
+    "vintage": null
+  }
+]

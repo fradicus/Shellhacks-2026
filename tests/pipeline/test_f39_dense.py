@@ -26,8 +26,9 @@ def test_committed_release_appends_unreviewed_southeast_points():
     snapshot = applied()
     assert validate_snapshot_values(snapshot) == []
     release = load_json(REPO_ROOT / dense.ACTIVE)
-    added = [p for p in snapshot["projects"] if p["_id"].startswith("southeast:")
-             and p["source_id"].split(":")[1] in {b for b in dense.BATCHES}]
+    ids = {p["_id"] for batch in release["batches"]
+           for p in load_json(REPO_ROOT / dense.FOLDER / batch / "projects.json")}
+    added = [p for p in snapshot["projects"] if p["_id"] in ids]
     assert len(added) == sum(b["expected_counts"]["projects"] for b in release["batches"].values())
     for project in added:
         if project["center"]:
@@ -54,9 +55,9 @@ def rewrite(path, change):
     projects = load_json(path)
     change(projects)
     path.write_text(json.dumps(projects, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
-    release = load_json(path.parents[2] / "releases" / "active.json")
+    release = load_json(path.parents[1] / "releases" / "active.json")
     release["batches"][path.parent.name]["files"]["projects"] = dense.sha(projects)
-    (path.parents[2] / "releases" / "active.json").write_text(json.dumps(release, indent=2, sort_keys=True) + "\n")
+    (path.parents[1] / "releases" / "active.json").write_text(json.dumps(release, indent=2, sort_keys=True) + "\n")
 
 
 def test_edited_batch_fails_its_pinned_hash(tmp_path):
@@ -102,3 +103,17 @@ def test_aep_map_labels_and_placeholders():
     assert skip_reason({"name": "Projects Overview"}, {"center": {"lat": 37.0}})
     assert skip_reason({"name": "No Active Projects"}, {"center": {"lat": -55.1}})
     assert skip_reason({"name": "Belfry Area Improvements"}, {"center": {"lat": 37.6}}) is None
+
+
+def test_duke_schedule_reads_one_stated_date_only():
+    from southeast.duke import schedule, states_of
+
+    assert schedule("Expected Completion : 2026 Project Map")["value"] == "2026"
+    got = schedule("In-service Date: November 2023* *Dates are subject to change")
+    assert (got["kind"], got["value"], got["precision"]) == ("planned_milestone", "2023-11", "month")
+    assert schedule("This project was completed in March 2023.")["kind"] == "completion"
+    # Phases stating different years leave the project date unknown rather than picking one.
+    assert schedule("Project Completion and Restoration: Fall 2025 ... Project Completion and Restoration: "
+                    "Fall 2026") is None
+    assert schedule("Construction starts in 2025.") is None
+    assert states_of("OH/KY") == ["21", "39"] and states_of("TX") == []

@@ -1,0 +1,33 @@
+{
+  "by_state": {
+    "05": 7,
+    "21": 9,
+    "22": 9,
+    "51": 28,
+    "54": 25
+  },
+  "by_status": {
+    "in_service": 3,
+    "planned": 49,
+    "proposed": 23,
+    "under_construction": 2
+  },
+  "candidate": 0,
+  "candidate_unique_name": 0,
+  "distinct_points": 74,
+  "located": 77,
+  "located_by_state": {
+    "05": 7,
+    "21": 9,
+    "22": 9,
+    "51": 28,
+    "54": 25
+  },
+  "located_dated": 24,
+  "located_not_in_service": 74,
+  "official": 77,
+  "projects": 77,
+  "sources": 6,
+  "unlocated_reasons": {},
+  "verified": 0
+}

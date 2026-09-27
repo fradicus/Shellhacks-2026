@@ -1,0 +1,709 @@
+[
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[0] (id 1)",
+    "name": "Piedmont and Lee Transmission Line Upgrades",
+    "project_id": "southeast:duke-transmission-map:1",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[1] (id 3)",
+    "name": "Patriot Substation and 100-kV Transmission Line",
+    "project_id": "southeast:duke-transmission-map:3",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[2] (id 5)",
+    "name": "Linwood Transmission Line Relocation",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[3] (id 6)",
+    "name": "Piedmont-Wekiva Transmission Reliability Enhancement Project",
+    "project_id": "southeast:duke-transmission-map:6",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[4] (id 7)",
+    "name": "Edinburgh Industrial Park New Transmission Lines Project",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[5] (id 10)",
+    "name": "Wilmington NE Transmission Project",
+    "project_id": "southeast:duke-transmission-map:10",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[6] (id 11)",
+    "name": "Woodmont Transmission Line Routing Study",
+    "project_id": "southeast:duke-transmission-map:11",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[7] (id 12)",
+    "name": "Eustis - Dona Vista Transmission Line Project",
+    "project_id": "southeast:duke-transmission-map:12",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[8] (id 14)",
+    "name": "Vanguard to Archer Reliability Project",
+    "project_id": "southeast:duke-transmission-map:14",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[9] (id 15)",
+    "name": "Archer Reliability Upgrade Projects",
+    "project_id": "southeast:duke-transmission-map:15",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[10] (id 16)",
+    "name": "Folkstone-Jacksonville Reliability Project",
+    "project_id": "southeast:duke-transmission-map:16",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[11] (id 17)",
+    "name": "Polk County Reliability Enhancement Project",
+    "project_id": "southeast:duke-transmission-map:17",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[12] (id 18)",
+    "name": "Hebron to Oakbrook Reliability Project",
+    "project_id": "southeast:duke-transmission-map:18",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[13] (id 20)",
+    "name": "Williston North Bronson Enhancement Project",
+    "project_id": "southeast:duke-transmission-map:20",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[14] (id 21)",
+    "name": "Clinton 100-kV Line Improvement Project",
+    "project_id": "southeast:duke-transmission-map:21",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[15] (id 22)",
+    "name": "Avon Reliability Project",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[16] (id 23)",
+    "name": "Southern Oaks Reliability Project",
+    "project_id": "southeast:duke-transmission-map:23",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[17] (id 25)",
+    "name": "Aicholtz Substation Expansion and Line Relocation",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[18] (id 27)",
+    "name": "Claryville-Decoursey Reliability Project",
+    "project_id": "southeast:duke-transmission-map:27",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[19] (id 29)",
+    "name": "Crystal River – Bronson Transmission Line Project",
+    "project_id": "southeast:duke-transmission-map:29",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[20] (id 30)",
+    "name": "Pinellas County Reliability Program",
+    "project_id": "southeast:duke-transmission-map:30",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[21] (id 31)",
+    "name": "Linneman Substation and Transmission Line Upgrades",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[22] (id 32)",
+    "name": "Ross Prairie to Shaw Transmission Project",
+    "project_id": "southeast:duke-transmission-map:32",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[23] (id 33)",
+    "name": "Brooksville West – Mondon Hill – Bushnell East",
+    "project_id": "southeast:duke-transmission-map:33",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[24] (id 34)",
+    "name": "Craggy-Enka Reliability Project",
+    "project_id": "southeast:duke-transmission-map:34",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[25] (id 35)",
+    "name": "Quebec Transmission Line Reliability Improvement Project",
+    "project_id": "southeast:duke-transmission-map:35",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[26] (id 36)",
+    "name": "Rankin Avenue Reliability Project",
+    "project_id": "southeast:duke-transmission-map:36",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[27] (id 37)",
+    "name": "Erwin-Fayetteville Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:37",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[28] (id 39)",
+    "name": "Transmission Line Relocation Near Little Miami River",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[29] (id 40)",
+    "name": "Fort White-Perry Transmission Line Rebuild Project",
+    "project_id": "southeast:duke-transmission-map:40",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[30] (id 41)",
+    "name": "Disston Underground Transmission Line",
+    "project_id": "southeast:duke-transmission-map:41",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[31] (id 45)",
+    "name": "Big Ferguson Transmission Line Project",
+    "project_id": "southeast:duke-transmission-map:45",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[32] (id 47)",
+    "name": "Remington Substation Expansion and Transmission Line Relocation",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[33] (id 48)",
+    "name": "Fayetteville-Fayetteville DuPont 115kV Line Rebuilds",
+    "project_id": "southeast:duke-transmission-map:48",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[34] (id 52)",
+    "name": "Rocky Mount-Battleboro Reliability Project",
+    "project_id": "southeast:duke-transmission-map:52",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[35] (id 53)",
+    "name": "Harrison Bridge Transmission Line Project",
+    "project_id": "southeast:duke-transmission-map:53",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[36] (id 56)",
+    "name": "Cape Fear-West End Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:56",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[37] (id 58)",
+    "name": "Noblesville-Westfield Reliability Projects",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[38] (id 59)",
+    "name": "Vigo County Industrial Park Transmission Line Project",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[39] (id 60)",
+    "name": "Ross Transmission Line Extensions",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[40] (id 61)",
+    "name": "North Central Florida Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:61",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[41] (id 63)",
+    "name": "Camp Washington Substation and Transmission Line Project",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[42] (id 64)",
+    "name": "Disston to Largo Transmission Upgrade",
+    "project_id": "southeast:duke-transmission-map:64",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[43] (id 65)",
+    "name": "Bonnet Creek to Intercession City Transmission Reliability Upgrade",
+    "project_id": "southeast:duke-transmission-map:65",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[44] (id 66)",
+    "name": "Miami Fort to Hebron Transmission Line Rebuild",
+    "project_id": "southeast:duke-transmission-map:66",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[45] (id 67)",
+    "name": "Attica Reliabiity Project",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[46] (id 69)",
+    "name": "Cape Fear Plant to Method Reliability Project",
+    "project_id": "southeast:duke-transmission-map:69",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[47] (id 70)",
+    "name": "Crane South Substation to Crane New Transmission Line",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[48] (id 71)",
+    "name": "Morrisville Industrial Transmission Project",
+    "project_id": "southeast:duke-transmission-map:71",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[49] (id 72)",
+    "name": "Turfway Reliabiity Project",
+    "project_id": "southeast:duke-transmission-map:72",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[50] (id 73)",
+    "name": " Aurora-Greenville Transmission Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:73",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[51] (id 75)",
+    "name": "Turfway Reliability Project",
+    "project_id": "southeast:duke-transmission-map:75",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[52] (id 76)",
+    "name": "Robinson Plant-Rockingham Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:76",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[53] (id 77)",
+    "name": "Robinson Plant-Rockingham Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:77",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[54] (id 78)",
+    "name": "Henry Fork Transmission Line Project",
+    "project_id": "southeast:duke-transmission-map:78",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[55] (id 79)",
+    "name": "Fields Ertel, McCauly and Conrey Roads Transmission Pole Relocations & Upgrades",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[56] (id 81)",
+    "name": "Kokomo Industrial Transmission Line Project",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[57] (id 82)",
+    "name": "Franklin and Carlisle Pole Replacements",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[58] (id 83)",
+    "name": "Miami Fort to Clifty Creek Transmission Line Retirement and Removal",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[59] (id 84)",
+    "name": "Clark County Reliability Project",
+    "reason": "outside F39 states (IN)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[60] (id 85)",
+    "name": "Sevier 100-kV Transmission Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:85",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[61] (id 86)",
+    "name": "Newberry Line Improvement Project",
+    "project_id": "southeast:duke-transmission-map:86",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[62] (id 87)",
+    "name": "Monroe Lines Upgrade Projct",
+    "project_id": "southeast:duke-transmission-map:87",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[63] (id 88)",
+    "name": "Wildwood Heights Substation and Underground Line",
+    "project_id": "southeast:duke-transmission-map:88",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[64] (id 89)",
+    "name": "Lilesville-Oakboro Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:89",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[65] (id 90)",
+    "name": "Baux Mountain Transmission Line Project",
+    "project_id": "southeast:duke-transmission-map:90",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[66] (id 91)",
+    "name": "Ebenezer and Hutchinson Transmission Pole Project",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[67] (id 92)",
+    "name": "Lowe Line Rebuild Project",
+    "project_id": "southeast:duke-transmission-map:92",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[68] (id 93)",
+    "name": "Monroe Transmission Line Extension",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[69] (id 94)",
+    "name": "Liberty-Norris Line Relocation Project",
+    "project_id": "southeast:duke-transmission-map:94",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[70] (id 95)",
+    "name": "DeLand West to Dona Vista Reliability Project",
+    "project_id": "southeast:duke-transmission-map:95",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[71] (id 96)",
+    "name": "Transmission Tower Replacement at Kings Island",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[72] (id 97)",
+    "name": "Bronson to Newberry Reliability Transmission Project",
+    "project_id": "southeast:duke-transmission-map:97",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[73] (id 98)",
+    "name": "McCauly Pole Replacement Project",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[74] (id 99)",
+    "name": "Morrow Pole Replacements",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[75] (id 100)",
+    "name": "Brent Spence Bridge Corridor Planning",
+    "project_id": "southeast:duke-transmission-map:100",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[76] (id 101)",
+    "name": "Weatherspoon Plant to Marion Line Project",
+    "project_id": "southeast:duke-transmission-map:101",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[77] (id 102)",
+    "name": "Mount Orab Pole Replacements",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[78] (id 103)",
+    "name": "Almond Transmission Line",
+    "project_id": "southeast:duke-transmission-map:103",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[79] (id 105)",
+    "name": "Energizing Wake County",
+    "project_id": "southeast:duke-transmission-map:105",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[80] (id 106)",
+    "name": "Lebanon Pole Replacements",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[81] (id 107)",
+    "name": "State Route 32 Pole Replacements",
+    "project_id": "southeast:duke-transmission-map:107",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[82] (id 108)",
+    "name": "West End Substation Line Relocation Project",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[83] (id 109)",
+    "name": "Pinewood Transmission Line Upgrade",
+    "project_id": "southeast:duke-transmission-map:109",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[84] (id 110)",
+    "name": "Clayton Industrial-Selma Line Upgrade Project",
+    "project_id": "southeast:duke-transmission-map:110",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[85] (id 111)",
+    "name": "Archer Substation Upgrade",
+    "project_id": "southeast:duke-transmission-map:111",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[86] (id 112)",
+    "name": "Ginnie to Haile Tap to Archer Transmission Line",
+    "project_id": "southeast:duke-transmission-map:112",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[87] (id 113)",
+    "name": "Woodsdale Substation Expansion Project",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[88] (id 114)",
+    "name": "Perth Road 100-kV Tap Line Project",
+    "project_id": "southeast:duke-transmission-map:114",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[89] (id 115)",
+    "name": "Blue Ash Road Pole Upgrades",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "accepted",
+    "locator": "data.json#locations[90] (id 116)",
+    "name": "Brooker Creek to Tarpon Springs Transmission Line Upgrade",
+    "project_id": "southeast:duke-transmission-map:116",
+    "reason": "project listed on Duke's transmission-project map",
+    "source_id": "southeast:duke-transmission-map"
+  },
+  {
+    "disposition": "excluded",
+    "locator": "data.json#locations[91] (id 117)",
+    "name": "Old Charles Substation Retirement Project",
+    "reason": "outside F39 states (OH)",
+    "source_id": "southeast:duke-transmission-map"
+  }
+]

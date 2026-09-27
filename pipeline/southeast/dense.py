@@ -24,7 +24,7 @@ FOLDER = Path("data/southeast/dense")
 ACTIVE = FOLDER / "releases" / "active.json"
 RELEASE_ID = "southeast-dense-1"
 # Fixed application order; a batch absent from the release file is simply not applied.
-BATCHES = ("aep",)
+BATCHES = ("aep", "duke")
 FILES = ("projects", "sources")
 TIERS = ("official", "candidate", "candidate_unique_name")
 SE_STATES = {"FL": "12", "GA": "13", "AL": "01", "MS": "28", "SC": "45", "NC": "37", "TN": "47", "KY": "21",
@@ -159,7 +159,8 @@ def check_batch(batch: str, entry: dict, snapshot: dict, root: Path) -> tuple[li
             raise ValueError(f"{project['_id']}: namespace or source missing")
         if project["evidence"]["source_sha256"] != source["sha256"]:
             raise ValueError(f"{project['_id']}: evidence hash does not match its source")
-        if not se & set(project["states"]):
+        # A multi-state footprint source (e.g. one planning region) may leave an unlocated row's state unknown.
+        if project["states"] and not se & set(project["states"]) or project["center"] and not project["states"]:
             raise ValueError(f"{project['_id']}: no Southeast state")
         if project["center"]:
             check_center(project, snapshot)
@@ -199,5 +200,22 @@ def apply_release(snapshot: dict, root: Path) -> dict:
     return result
 
 
+def refresh(root: Path = REPO_ROOT) -> dict:
+    """Re-pin every committed batch (after a merge of two batch branches); producers still own the batch files."""
+    release = {"release_id": RELEASE_ID, "policy": "C25", "rule": "C40", "batches": {}}
+    for batch in BATCHES:
+        folder = root / FOLDER / batch
+        if (folder / "projects.json").exists():
+            projects, sources = load_json(folder / "projects.json"), load_json(folder / "sources.json")
+            release["batches"][batch] = {"files": {"projects": sha(projects), "sources": sha(sources)},
+                                         "expected_counts": counts(projects, sources)}
+    write_json(root / ACTIVE, release)
+    return release
+
+
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+if __name__ == "__main__":
+    print(json.dumps(refresh(), indent=2))
