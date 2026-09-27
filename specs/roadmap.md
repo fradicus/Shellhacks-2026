@@ -10,7 +10,7 @@ lanes:
   C: { name: quality, agents: [qa-verifier, release-engineer, ceo] }
 # Ignored in paperclip mode. In hybrid mode, keep only locally assigned features here.
 local_workers:
-  claude-local: [F00, F05, F11, F14, F16, F19, F21, F40]
+  claude-local: [F00, F05, F11, F14, F16, F19, F21, F40, F42]
   codex-local: [F01, F02, F03, F04, F06, F07, F08, F09, F10, F12, F13, F15, F17, F18, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F41]
 frozen_paths:
   - schemas/
@@ -210,3 +210,13 @@ Publication uses a fixed F40 release appended by F30's owner, following C29.
 | ID | Feature | Lane | Agent | Phase | Depends on | Cut |
 |---|---|---|---|---|---|---|
 | F40 | Great Lakes project coverage with labeled candidate locations | A | data-researcher | 7 | F00, F30 | never |
+
+## Launched follow-on: Pacific Northwest coverage
+
+The user instructed Claude local to cover Washington, Oregon, Idaho and Montana and to loosen location review for
+the hackathon. [C33](decisions/C33-pacific-northwest.md) assigns [F42](features/F42-pacific-northwest/spec.md) with
+labeled official, candidate, unique-name candidate and county-reference tiers; none is counted as verified.
+
+| ID | Feature | Lane | Agent | Phase | Depends on | Cut |
+|---|---|---|---|---|---|---|
+| F42 | Pacific Northwest project coverage with loose labeled locations | A | data-researcher | 7 | F00, F30 | never |
