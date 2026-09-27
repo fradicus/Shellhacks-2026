@@ -70,8 +70,21 @@ export type RoadworkData = { jurisdictions: string[]; events: { id: string; road
 export type AEFSample = { point: Point; year: number; object_url: string; object_etag: string; index_sha256: string; sample_sha256: string; crs: string; row: number; col: number; pixel_size_m: number; raw: number[]; embedding: number[]; attribution: string };
 export type AEFData = { samples: AEFSample[]; scope: "annual_satellite_embedding" };
 export type RouteData = { distance_m: number; travel_seconds: number; eta: string; restrictions_partially_ignored: boolean; warnings: string[]; attribution: "Google Maps" };
+export type RiverGauge = { site_id: string; name: string; lat: number; lon: number; distance_mi: number; parameter: string; parameter_name: string; unit: string; value: number | null; observed_at: string };
+export type TideStationSummary = { id: string; name: string; lat: number; lon: number; state: string | null; distance_mi: number };
+export type TideExtremum = { time: string; value_ft: number | null; type: "high" | "low" };
+export type FloodZone = { zone: string | null; subtype: string | null; special_flood_hazard_area: boolean | null };
+export type WetlandHit = { wetland_type: string | null; attribute: string | null; acres: number | null };
+export type WaterData = {
+  rivers: { search_radius_mi: number; gauges: RiverGauge[]; scope: string } | null;
+  tides: { search_radius_mi: number; station: TideStationSummary | null; highs_lows: TideExtremum[]; scope: string } | null;
+  flood: { zones: FloodZone[]; scope: string } | null;
+  wetlands: { mapped: boolean; features: WetlandHit[]; scope: string } | null;
+  scope: string;
+};
 export type SiteResponse = { request: SiteRequest; weather: Envelope<WeatherData>; soil: Envelope<SoilData>; aef: Envelope<AEFData>; roadwork: Envelope<RoadworkData> };
 export type ConditionsResponse = { request: Point; weather: Envelope<WeatherData>; roadwork: Envelope<RoadworkData> };
+export type WaterResponse = { request: Point; water: Envelope<WaterData> };
 export type RouteResponse = { request: RouteRequest; status: "complete" | "incomplete"; route: Envelope<RouteData>; weather: Envelope<WeatherData>; roadwork: Envelope<RoadworkData>; aef: Envelope<AEFData>; limitations: string[] };
 export type ReferenceResponse = { schema_version: typeof SCHEMA_VERSION; aef_years: number[]; providers: { id: string; ready: boolean; jurisdictions: string[]; refresh_seconds: number | null; attribution: string; reason: string | null }[]; hazmat: string[]; limits: { route_samples: number; route_sample_max_gap_km: number; max_departure_days: number }; };
 
@@ -86,4 +99,9 @@ export function parseConditionsQuery(params: URLSearchParams): Point {
   for (const key of params.keys()) if (!["lat", "lon"].includes(key) || params.getAll(key).length !== 1) throw new Error("Unknown or duplicate parameter");
   const number = (key: string) => { const value = params.get(key); if (!value || !/^-?\d+(\.\d+)?$/.test(value)) throw new Error(`Invalid ${key}`); return Number(value); };
   return PointSchema.parse({ lat: number("lat"), lon: number("lon") });
+}
+
+/** Same strict point rules as conditions; separate so water stays additive and does not widen site/conditions contracts. */
+export function parseWaterQuery(params: URLSearchParams): Point {
+  return parseConditionsQuery(params);
 }

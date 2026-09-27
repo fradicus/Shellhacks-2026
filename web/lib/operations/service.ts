@@ -1,6 +1,7 @@
-import { HazmatSchema, SCHEMA_VERSION, PointSchema, type Envelope, type Point, type ConditionsResponse, type RouteRequest, type RouteResponse, type SiteRequest, type SiteResponse, type ReferenceResponse, type WeatherData, type RoadworkData, type AEFData } from "./contracts";
+import { HazmatSchema, SCHEMA_VERSION, PointSchema, type Envelope, type Point, type ConditionsResponse, type WaterResponse, type RouteRequest, type RouteResponse, type SiteRequest, type SiteResponse, type ReferenceResponse, type WeatherData, type RoadworkData, type AEFData } from "./contracts";
 import { aef, readSnapshot, type AEFSnapshot, ATTRIBUTION } from "./aef";
 import { context, empty, weather, soil, roadwork, truckRoute } from "./providers";
+import { water as waterProviders } from "./water";
 import { digest } from "./transport";
 
 export const LIMITS = { route_samples: 5, route_sample_max_gap_km: 25, max_departure_days: 7 };
@@ -12,6 +13,7 @@ export async function reference(ctx = context()): Promise<ReferenceResponse> {
     { id: "roadwork", ready: true, jurisdictions: ["WSDOT reported work zones"], refresh_seconds: 60, attribution: "Washington State Department of Transportation", reason: "Partial network coverage; not a nationwide closure service" },
     { id: "aef", ready: !!snapshot?.records.length, jurisdictions: ["Exact evidenced point/year artifacts only"], refresh_seconds: null, attribution: ATTRIBUTION, reason: snapshot?.records.length ? null : "No validated AEF point artifacts" },
     { id: "route", ready: !!ctx.googleKey && !!ctx.lvrEnabled, jurisdictions: ["Contiguous 48 United States; provider restrictions apply"], refresh_seconds: null, attribution: "Google Maps", reason: "Separate LVR provisioning required; no route is guaranteed safe or legal" },
+    { id: "water", ready: true, jurisdictions: ["USGS gage height vicinity", "NOAA CO-OPS tides within 25 mi", "FEMA NFHL flood zones", "USFWS NWI wetlands"], refresh_seconds: 900, attribution: "USGS NWIS; NOAA CO-OPS; FEMA NFHL; USFWS NWI", reason: "Free public sources; each part may be unavailable or out of coverage independently" },
   ] };
 }
 // No provider result caching: fresh independent calls, with UI refresh limits published above.
@@ -19,6 +21,11 @@ export async function conditions(request: Point, ctx = context()): Promise<Condi
   const point = PointSchema.parse(request);
   const [w, r] = await Promise.all([weather(point, ctx), roadwork(point, ctx)]);
   return { request: point, weather: w, roadwork: r };
+}
+/** Additive point water context; does not alter site or conditions contracts. */
+export async function water(request: Point, ctx = context()): Promise<WaterResponse> {
+  const point = PointSchema.parse(request);
+  return { request: point, water: await waterProviders(point, { io: ctx.io, now: ctx.now }) };
 }
 export async function site(request: SiteRequest, ctx = context(), snapshot?: AEFSnapshot | null): Promise<SiteResponse> {
   const point = { lat: request.lat, lon: request.lon };
