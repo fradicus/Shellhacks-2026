@@ -244,3 +244,9 @@ merged in #189; the existing F19 owner delivered the compatible tentative-point 
 The Texas session verified their combined result instead of opening a duplicate F19 implementation.
 Issue #190 retains its separate cleanup claim. County-only anchors are excluded from `/time`;
 tentative facility centers remain eligible for display.
+
+## Publication receipts
+
+[C37](decisions/C37-publication-receipts.md) moves post-merge publication checks into the load Action.
+Data PRs paste the expected per-state table; the Action's readback of the active Atlas dataset is the receipt.
+Receipt-only PRs and committed receipt files are no longer required for any geographic feature.

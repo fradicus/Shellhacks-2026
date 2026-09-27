@@ -78,8 +78,9 @@ Run all tech-stack checks and the F38 validation cases relevant to this scope. I
 - Test stale/self/rejected reviews, wrong CRS and axes, conflicting identity, duplicates, repeated releases,
   unchanged legacy facts/matching, failed activation and rollback. Tests use explicit fixtures, never synthetic
   records labeled as real public projects.
-- Confirm each release's dataset/IDs/counts through Atlas RO after the Action. Verify at least one newly covered
-  point in each state on the existing maps, with matching source/review evidence and accurate lifecycle filters.
+- Confirm each release's dataset/IDs/counts through Atlas RO after the Action, and that at least one newly covered
+  point per state is drawn on the existing maps with matching source/review evidence and accurate lifecycle
+  filters. Under [C37](../../decisions/C37-publication-receipts.md) the load Action's readback is that receipt.
   Verify unlocated records remain accessible. A database row count alone does not prove geographic delivery.
 - The Florida pilot, all twelve state source ledgers, accepted release activation, existing-map visibility and
   remaining evidence gaps must be audited before changes/F39.md is written. Research-only checkpoints never write
