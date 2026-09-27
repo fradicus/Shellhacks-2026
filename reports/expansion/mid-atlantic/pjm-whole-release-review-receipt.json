@@ -1,0 +1,163 @@
+{
+  "acquisition": "PJM all 15,662 direct XML rows completely enumerated; five separately bounded NY case documents, one accepted project each, unknown wider denominators remain null. Complete acquired XML does not imply complete statewide publication.",
+  "baseline_dataset": "6373fc13414a73a59ca156ecbeac95574d578027",
+  "baseline_projects_checked": 1286,
+  "baseline_sha256": "7d017e203f5b3da1abbc7d80057ba7598450a905079e37541d474334e0ac3628",
+  "c27_scope": "Current repository data/southeast/releases/active.json absent at review; C27 currently adds no release. Later F39 additions require the runtime full-snapshot collision gates; this review makes no claim about unpublished candidates.",
+  "checks": "All accepted source hashes and exact row locators, source counts, project hashes, exact independently reviewed location records and review times, independent producer/reviewer separation, 768 typed events and their retained actual/planned semantics, null input centers, geography and unknown NY lifecycle fields verified. Original EPSG:3395 transforms independently reproduced by pyproj/Fiona on all 1,813 regional points.",
+  "dispositions": {
+    "accepted": 275,
+    "excluded": 15392
+  },
+  "distinct_facilities": 62,
+  "distinct_map_positions": 65,
+  "identity": "All 270 original PJM UpgradeId/raw rows independently compared; all five NY original case identity pages and acquired public project-description PDFs independently read; correct owner/agent distinction. Native component IDs remain separate supported work records even when sharing a facility/parent. No exact/native/normalized-name collision in the entire 1,286-project current national baseline.",
+  "limitations": "Historical planning-scale facility sites/endpoints, not surveyed equipment or route geometry; no DC confirmed point; sparse inland PA/NY coverage; nine source-backed project locations unresolved; current NY construction status and prior comparable source vintages unknown.",
+  "location_review_decisions": {
+    "complete": 3,
+    "confirmed": 266,
+    "insufficient": 2,
+    "partial": 8,
+    "site": 255
+  },
+  "primary_source_artifacts_checked": 6,
+  "production_validation": {
+    "apply_release": "expansion.mid_atlantic.apply_release passed using isolated fixed activation path",
+    "assembled_located": 680,
+    "assembled_projects": 1561,
+    "assembled_sources": 32,
+    "baseline_loader": "national.build.load_snapshot with accepted C23/C27 producers",
+    "baseline_unmodified": true,
+    "deterministic_replay": true,
+    "existing_project_records_preserved_exactly": 1286,
+    "mid_atlantic_coverage": {
+      "complete_endpoint_projects": 3,
+      "confirmed_projects": 266,
+      "confirmed_state_counts": {
+        "10": 5,
+        "24": 63,
+        "34": 101,
+        "36": 3,
+        "42": 94
+      },
+      "distinct_facility_sites": 62,
+      "distinct_map_positions": 65,
+      "event_type_counts": {
+        "in_service": 235,
+        "planned_milestone": 533
+      },
+      "new_projects": 275,
+      "new_sources": 6,
+      "notes": [
+        "Scope NY, NJ, PA, DE, MD and DC. VA/WV remain F39. Preserve all previously accepted New England projects and other producer summaries.",
+        "Counts represent native construction upgrades/cases, not distinct facilities, project programs or map positions; shared sites and component IDs remain explicit.",
+        "PJM XML acquisition is complete for the pinned 15,662-row artifact. Publication is a bounded selected cohort, not complete PJM or state coverage; 5,749 initially eligible rows included deferred work.",
+        "PJM 80 target rows explicitly withholding Location as CEII were excluded without geocoding; 17 cross-assignment rows deferred; 574 missing-state and 9,242 out-of-assignment rows excluded.",
+        "Current statuses are retained as reported; most selected PJM records are historical in-service upgrades. Active queue-related network upgrades are proposed, never inferred to be under construction.",
+        "Reference points are historical: NOAA 2017 coastal subset (processed 2018), maximum intended scale 1:80000, unknown numerical uncertainty. It includes taps; confirmed facility identity was separately reviewed.",
+        "NY uses five original public case-description documents with bounded-partial acquisition. Current construction status and service date stay unknown; September2025 register web text is research only.",
+        "New York Clay and STAR East component scope remains insufficient; no center implied for either. Partial endpoints do not trace routes or locate every ancillary project component.",
+        "DC has no approved point in this cohort. Inland PA and NY coverage is sparse because coastal/345kV references are incomplete. No comparable prior project-register vintage was acquired; source status timestamps are not construction event dates.",
+        "PJM authenticated system-map geometry, restrictive PSEG MPRP map content, route centroids and name-only asset matches were excluded.",
+        "No /time UI change; typed source-backed events are exported through the existing optional project_events field."
+      ],
+      "partial_endpoint_projects": 8,
+      "release_id": "mid-atlantic-2026-09-27-01",
+      "review_counts": {
+        "confirmed": 266,
+        "insufficient": 2
+      },
+      "source_completeness": {
+        "mid-atlantic:nypsc:23-T-0660": "bounded_partial",
+        "mid-atlantic:nypsc:24-T-0113": "bounded_partial",
+        "mid-atlantic:nypsc:25-T-0184": "bounded_partial",
+        "mid-atlantic:nypsc:25-T-0238": "bounded_partial",
+        "mid-atlantic:nypsc:25-T-0241": "bounded_partial",
+        "mid-atlantic:pjm-construction": "complete"
+      },
+      "source_counts": {
+        "mid-atlantic:nypsc:23-T-0660": 1,
+        "mid-atlantic:nypsc:24-T-0113": 1,
+        "mid-atlantic:nypsc:25-T-0184": 1,
+        "mid-atlantic:nypsc:25-T-0238": 1,
+        "mid-atlantic:nypsc:25-T-0241": 1,
+        "mid-atlantic:pjm-construction": 270
+      },
+      "source_freshness": {
+        "mid-atlantic:nypsc:23-T-0660": {
+          "publication_date": "2023-11-06",
+          "retrieved_at": "2026-09-27T02:18:24.278335+00:00",
+          "vintage": "2023-11-06"
+        },
+        "mid-atlantic:nypsc:24-T-0113": {
+          "publication_date": "2025-06-12",
+          "retrieved_at": "2026-09-27T02:21:46.893937+00:00",
+          "vintage": "2025-06-12"
+        },
+        "mid-atlantic:nypsc:25-T-0184": {
+          "publication_date": "2026-05-27",
+          "retrieved_at": "2026-09-27T02:18:23.491710+00:00",
+          "vintage": "2026-05-27"
+        },
+        "mid-atlantic:nypsc:25-T-0238": {
+          "publication_date": "2025-04-14",
+          "retrieved_at": "2026-09-27T02:19:03.548487+00:00",
+          "vintage": "2025-04-14"
+        },
+        "mid-atlantic:nypsc:25-T-0241": {
+          "publication_date": "2025-04-15",
+          "retrieved_at": "2026-09-27T02:21:46.100920+00:00",
+          "vintage": "2025-04-15"
+        },
+        "mid-atlantic:pjm-construction": {
+          "publication_date": null,
+          "retrieved_at": "2026-09-27T02:17:08.797434+00:00",
+          "vintage": null
+        }
+      },
+      "source_rows": 15667,
+      "standalone_site_projects": 255,
+      "state_counts": {
+        "10": 5,
+        "24": 66,
+        "34": 105,
+        "36": 5,
+        "42": 94
+      },
+      "status_counts": {
+        "in_service": 237,
+        "planned": 24,
+        "proposed": 6,
+        "under_construction": 3,
+        "unknown": 5
+      },
+      "unlocated_projects": 9,
+      "unresolved_reasons": {
+        "insufficient": 2,
+        "no_location": 7
+      }
+    },
+    "national_coverage_recomputed": true,
+    "national_snapshot_validation_errors": [],
+    "schema": "mid-atlantic-release passed"
+  },
+  "release_facts_sha256": "4d62455a61f698eda04fce8bf25ec18cb4886a8030a3c7445f8b1c43f651871b",
+  "release_id": "mid-atlantic-2026-09-27-01",
+  "renewal_delta": {
+    "actual_events_unchanged": 768,
+    "new_event_bundles": 269,
+    "old_candidate_reconstructed_to_exact_prior_hash": true,
+    "old_event_bundles": 270,
+    "only_changes": [
+      "removed empty project_events wrapper for mid-atlantic:pjm:b0003",
+      "updated created_at"
+    ],
+    "previous_approval_history": "/private/tmp/f38-midatlantic-review/history/756d43aa2f6217001cf1702b9a86cadf6088b113804c58faa2641df39cab0db0",
+    "previous_facts_sha256": "756d43aa2f6217001cf1702b9a86cadf6088b113804c58faa2641df39cab0db0"
+  },
+  "reviewed_at": "2026-09-27T02:53:30.872118+00:00",
+  "reviewer": "f38_contract_review",
+  "source_project_identities_checked": 275,
+  "source_rows_independently_reconciled": 15667,
+  "unlocated_new_projects": 9
+}

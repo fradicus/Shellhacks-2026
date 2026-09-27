@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-27T02:32:13.469568+00:00",
+  "reviewer": "f38_contract_review",
+  "original_source_files": {
+    "/private/tmp/f38-midatlantic-pjm/pjm-projectCostUpgrades.xml": "5aa1fbc06e26e8f3a6c366d29302fb60fb3a1cbb66d9d239c4b26a4d4dce2a67",
+    "/private/tmp/f38-midatlantic-pjm/pjm-producer-site-proposals.json": "bffb67592287563d3385c904bdfc7d3b8996c870ed9a3a4b3d2596001f9fd86a",
+    "/private/tmp/f38-midatlantic-pjm/pjm-producer-current-additional-proposals.json": "ba2f4c7f1e1b7cfe750252bfe048cb43810dd08fbe3688582bb453e81ad300cf",
+    "/private/tmp/f38-midatlantic-pjm/pjm-legal.html": "39e118ff0e2bab60458bf5437f9b554a5e0b28a14f71809d4341a7782d955e14",
+    "/private/tmp/f38-midatlantic-pjm/pjm-construction.html": "3443d52bccb61ad538cc9b982d0d4c236bd22c3be803e91d5beb67846375d468",
+    "/private/tmp/f38-midatlantic-reference/marinecadastre-substations.zip": "a2d43c47d0fe31cf0afc9c691fee45b451d2c4051bf4f09c858a995a02490b59",
+    "/private/tmp/f38-midatlantic-reference/noaa-substations-metadata.html": "304456348ceef1cb21031c312d430551e9dc70f8b0643319d44f36e16a5783c6",
+    "/private/tmp/f38-midatlantic-reference/noaa-midatlantic-reference.json": "6424281f0344c273785b5f79734985b2133a5e54849ccf2d8c6b70b52c9db0c2"
+  },
+  "xml_unique_rows": 15662,
+  "all_270_proposals_raw_fields_and_xpath_match_original_xml": true,
+  "all_proposed_facilities_match_independently_unzipped_original_gdb": true,
+  "gdb_total_features": 10923,
+  "regional_features_checked": 1813,
+  "gdb_crs": "EPSG:3395",
+  "independent_transform": "pyproj 3.8.0 PROJ EPSG:3395 to EPSG:4326, always_xy=True; original GDB directly inspected by Fiona 1.10.1",
+  "maximum_coordinate_disagreement_degrees": 0
+}

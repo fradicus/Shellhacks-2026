@@ -1,0 +1,176 @@
+[
+  {
+    "file": "status-engineering-and-procurement.html",
+    "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+    "sha256": "9ec493b46f3916d1ef78ca2a99289624e8c90d59faa56cc94ceefbe5ee366fed",
+    "bytes": 21089,
+    "retrieved_at": "2026-09-27T02:35:14.225372+00:00",
+    "request": {
+      "GridName": "CostAllocation",
+      "ItemType": 0,
+      "Items": [
+        {
+          "ItemType": 3,
+          "FilterName": "Status",
+          "IsSingleItem": false,
+          "Filter": [
+            "Engineering%20%26%20Procurement"
+          ]
+        }
+      ],
+      "Paginator": {
+        "ItemType": 7,
+        "CurrentItmsPerPageValue": "10",
+        "CurrentPageIndex": "0"
+      },
+      "Sort": "UpgradeId",
+      "SortDirection": "asc",
+      "RelatedGridsFilters": null
+    }
+  },
+  {
+    "file": "status-under-construction.html",
+    "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+    "sha256": "1678f8b3b37b655873fa897fbf721a370b992cb572407e7a9ba745e87e95678e",
+    "bytes": 21982,
+    "retrieved_at": "2026-09-27T02:35:14.217307+00:00",
+    "request": {
+      "GridName": "CostAllocation",
+      "ItemType": 0,
+      "Items": [
+        {
+          "ItemType": 3,
+          "FilterName": "Status",
+          "IsSingleItem": false,
+          "Filter": [
+            "Under%20Construction"
+          ]
+        }
+      ],
+      "Paginator": {
+        "ItemType": 7,
+        "CurrentItmsPerPageValue": "10",
+        "CurrentPageIndex": "0"
+      },
+      "Sort": "UpgradeId",
+      "SortDirection": "asc",
+      "RelatedGridsFilters": null
+    }
+  },
+  {
+    "file": "status-planning.html",
+    "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+    "sha256": "2efb435308947d20b3b1601e893b7e96aa9a1cd6dddd70c997737166208ed342",
+    "bytes": 20371,
+    "retrieved_at": "2026-09-27T02:35:14.216717+00:00",
+    "request": {
+      "GridName": "CostAllocation",
+      "ItemType": 0,
+      "Items": [
+        {
+          "ItemType": 3,
+          "FilterName": "Status",
+          "IsSingleItem": false,
+          "Filter": [
+            "Planning"
+          ]
+        }
+      ],
+      "Paginator": {
+        "ItemType": 7,
+        "CurrentItmsPerPageValue": "10",
+        "CurrentPageIndex": "0"
+      },
+      "Sort": "UpgradeId",
+      "SortDirection": "asc",
+      "RelatedGridsFilters": null
+    }
+  },
+  {
+    "file": "status-active.html",
+    "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+    "sha256": "a44abd6949eac8255d03746f8998669dabdd3f1ef73715207e6bb5f53e031a4e",
+    "bytes": 19573,
+    "retrieved_at": "2026-09-27T02:35:14.571428+00:00",
+    "request": {
+      "GridName": "CostAllocation",
+      "ItemType": 0,
+      "Items": [
+        {
+          "ItemType": 3,
+          "FilterName": "Status",
+          "IsSingleItem": false,
+          "Filter": [
+            "Active"
+          ]
+        }
+      ],
+      "Paginator": {
+        "ItemType": 7,
+        "CurrentItmsPerPageValue": "10",
+        "CurrentPageIndex": "0"
+      },
+      "Sort": "UpgradeId",
+      "SortDirection": "asc",
+      "RelatedGridsFilters": null
+    }
+  },
+  {
+    "file": "status-partially-in-service---under-construction.html",
+    "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+    "sha256": "db3e8746de2bba10365b68329bdec53cacba328e0ef66c0eee97a8e303a7c208",
+    "bytes": 11966,
+    "retrieved_at": "2026-09-27T02:35:14.558637+00:00",
+    "request": {
+      "GridName": "CostAllocation",
+      "ItemType": 0,
+      "Items": [
+        {
+          "ItemType": 3,
+          "FilterName": "Status",
+          "IsSingleItem": false,
+          "Filter": [
+            "Partially%20In%20Service%20-%20Under%20Construction"
+          ]
+        }
+      ],
+      "Paginator": {
+        "ItemType": 7,
+        "CurrentItmsPerPageValue": "10",
+        "CurrentPageIndex": "0"
+      },
+      "Sort": "UpgradeId",
+      "SortDirection": "asc",
+      "RelatedGridsFilters": null
+    }
+  },
+  {
+    "file": "status-withdrawn.html",
+    "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+    "sha256": "558f69ef9e5495cba1526ba91daac55a2d7f3500c6213f3409aaae1c9d2f9097",
+    "bytes": 11823,
+    "retrieved_at": "2026-09-27T02:35:14.579470+00:00",
+    "request": {
+      "GridName": "CostAllocation",
+      "ItemType": 0,
+      "Items": [
+        {
+          "ItemType": 3,
+          "FilterName": "Status",
+          "IsSingleItem": false,
+          "Filter": [
+            "Withdrawn"
+          ]
+        }
+      ],
+      "Paginator": {
+        "ItemType": 7,
+        "CurrentItmsPerPageValue": "10",
+        "CurrentPageIndex": "0"
+      },
+      "Sort": "UpgradeId",
+      "SortDirection": "asc",
+      "RelatedGridsFilters": null
+    }
+  }
+]

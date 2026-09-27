@@ -1,0 +1,1628 @@
+{
+  "all_270_project_changes_checked": [
+    {
+      "new_project_facts_sha256": "7b7408714d2f3ecf02f05a2f011465232550aa6be38e5d1e1fbfdf73eba01e67",
+      "old_project_facts_sha256": "360499bcaf18698b87c61cda81328ebea01b2eb826222a5977747c47ef9d0ec7",
+      "project_id": "mid-atlantic:pjm:b3867.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "54376217a781754fd92a2f06e3d06981321fc2d435b27d8862723f71e255abaf",
+      "old_project_facts_sha256": "ad6afe434de1d2927a072e13900fa846772918f9774f7bcdd42a7650202e746b",
+      "project_id": "mid-atlantic:pjm:b4004.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "59643e598a44955a8b4f18c665295a6f37fec3ecb026d63879a0cf8ffaeca417",
+      "old_project_facts_sha256": "b265628ea9d4a699cc088fee4ac534df7dc0f37cd39bc22bcd1c903326c31d6a",
+      "project_id": "mid-atlantic:pjm:b4018.6",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7ff38c456acc0f81096cc8f9559d07638ff7b0c6838ec725381f65dcc9fb20e2",
+      "old_project_facts_sha256": "52b2b067a81eefc2cbfdfc2a0a3fb72c69911db260b8d94908676a0c5b2a5ea1",
+      "project_id": "mid-atlantic:pjm:n5235",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f676edb1fe2151e735f2e983aea3dc23313a5121811d8d1e52a6de124bf6cc1f",
+      "old_project_facts_sha256": "2bd622fa41ca3bdbeee81399a48b59344f2439282ab3f3d0754df791ffc105a2",
+      "project_id": "mid-atlantic:pjm:n7051",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d29ad68ff154915f6e1ee491493eb207609878a00b5b020ea1f885e382da9710",
+      "old_project_facts_sha256": "3715e5faad43ed987b1c39bfafcf6a4e98701a142663e5da0a5a7128e44a4979",
+      "project_id": "mid-atlantic:pjm:n8620.0",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e587aced679d1f8661032b96d88cd79d7beafc60905b42eecbf5d3540043db72",
+      "old_project_facts_sha256": "20364e7db4a94dcfdb180a46f07bdac632e4650e5f6b2600a7a0d756b3355899",
+      "project_id": "mid-atlantic:pjm:s2678.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "576e9e77f47f8c96a38365b83436b21c3bbfac189c29089a71f1054eadf45c90",
+      "old_project_facts_sha256": "0bc8226fec040a5d7ee518a75c2d399f4b53e991af4cd704e101d7f863dda840",
+      "project_id": "mid-atlantic:pjm:s2678.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9399c04795b57c7d04620a978c0e5ccbb2e9f157a315ad02b807ef81bc2c25d4",
+      "old_project_facts_sha256": "da47a8fc97395374ae596e8931e5365ad8bbc994fc6830603c55fb1172853715",
+      "project_id": "mid-atlantic:pjm:s2805",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "265566e13fe85c9e84c3f6201a63ee72036abd43494f84eedb6f8f1735356330",
+      "old_project_facts_sha256": "1e56c7a7da493746ecafba51aceb0939b5aafcbecb3b94425a19c4d52491f5d0",
+      "project_id": "mid-atlantic:pjm:s2976",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "82e9af7ebf5e90830449494a5daf26d33ea35f6515d874f606b3abcc9b61e97b",
+      "old_project_facts_sha256": "10b8a819e1fd46da34426f6b9d154d7f6c04d1f89cda275893cd36d31b431e7f",
+      "project_id": "mid-atlantic:pjm:s3261.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4f6ea41afecd6507b37c01c6859f1931a568483f4aad5af075e4a25132b3ef9d",
+      "old_project_facts_sha256": "817f5b97b42d1e43e4e285444321ffe031af73e42273f2e80d08c736b4a7929e",
+      "project_id": "mid-atlantic:pjm:s3663.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b5b3424963d07940b89416321c7df67400b016b3f518e3b35e3a31515426e246",
+      "old_project_facts_sha256": "25a6ba1eb80a4d64657476f25df04e253df588ffff3a06c122c27dab9bf6d80a",
+      "project_id": "mid-atlantic:pjm:TOI028",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e5251e1426897f1debb47eab4ca82a284f8dc6ad31250f030a5e2e0d3d46cd3a",
+      "old_project_facts_sha256": "276fef89640a8549af008ae01ee13918007b9b1561191cdb736f9ed6392ddf34",
+      "project_id": "mid-atlantic:pjm:TOI029",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1223b003b662961a009e319e8332ca426376c34a7b98bfbf18c4609c9dbca073",
+      "old_project_facts_sha256": "1ea485dc90195da9bc5c916114ff38dd8616463a0499db941cf1579991bad187",
+      "project_id": "mid-atlantic:pjm:TOI093",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4052d60aaa714753ae4459ef8f0383d0ec5fa48147d1b3fc0ee8513728288d72",
+      "old_project_facts_sha256": "7ca9bb67f5cfbfdff86d34a3e9c1de5bd811e665168bf90077c9f5457e285cbd",
+      "project_id": "mid-atlantic:pjm:TOI172",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1829e6db25907e82973beed21e181e0d9bad9a973d99e5f37bb7d946a5a5f4d8",
+      "old_project_facts_sha256": "006466503660c4fc92f3b0eaaf252bc4116a3c719ded16caa909719b7a493021",
+      "project_id": "mid-atlantic:pjm:TOI267",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4d73a312e6b9838c55a3669df5c6b03a89081b3b21126e2a775c0182f18d0262",
+      "old_project_facts_sha256": "8c486cbba272941479bf3bae128bdaf371ceb41c9225c050542c1dc3f7f39ee5",
+      "project_id": "mid-atlantic:pjm:b0003",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "39069e1135ecf08d75b88ff5a4a0899031e11b9827430ff56b91d358c2895721",
+      "old_project_facts_sha256": "fe15b95acb4bf9635d17222bd46a75cfbf4aeca88bff3d15d82765bc7d5edd1f",
+      "project_id": "mid-atlantic:pjm:b0005",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "2774c3d53860ced991c466e7e41d2d42d80d6abceec3f8c42367528ce0092374",
+      "old_project_facts_sha256": "06b1ed4a28d168619866e476a75007c4ff31c1d7962d551d33ab00c09ea51991",
+      "project_id": "mid-atlantic:pjm:b0017",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c830f38494529a253d3500d4ec08d7f6b7499f45dc34870ee34e7b241ed30eff",
+      "old_project_facts_sha256": "68e9b7b6ee48188cca0ffe291af72d4f91bc8db1327c5d722393db3e746064c9",
+      "project_id": "mid-atlantic:pjm:b0022",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4a3741a987845b60bd4f49c7844c16e7231162cd7fdd0eb5347df1d0d99180a2",
+      "old_project_facts_sha256": "57f054d9d7a4f34eb6f84e18c794cadb0d86e5739b029fb5150df52f381bf7f0",
+      "project_id": "mid-atlantic:pjm:b0032",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0819899821a8e1394bb76286b6f8603da131d980524219d4bc800384bb018176",
+      "old_project_facts_sha256": "ad04f366954b891aad05f78be74f0ac55ef3a4316a8c914b0759fb304495ae24",
+      "project_id": "mid-atlantic:pjm:b0039.5",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b3cfb20ef5bcf5709626469933de84eafcf924b7f16aac8948cc3d445cba27b7",
+      "old_project_facts_sha256": "a9134b986a37de5c2d2b65b3f7afb0dd5173e14d95a9a4182eeb6daf8b7de37f",
+      "project_id": "mid-atlantic:pjm:b0057",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c020f5e62cf4015373017cc5c47817e8b9f9caaaea4b670612e30b15923a32d5",
+      "old_project_facts_sha256": "11579a687f5caaa5a749c9ee3c0c7ef24339659d456f324159b1d943c4dc14ca",
+      "project_id": "mid-atlantic:pjm:b0138",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "915e6662a2b676ecfa3b6b05f48890929f6b3c23fa57952b0327a8f084044de4",
+      "old_project_facts_sha256": "e6166a88f8dda2bb2ec6f541ea18fcb8112f17b559a044a9421e5b47e68d7a9d",
+      "project_id": "mid-atlantic:pjm:b0152.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5600253e65dab06cc7a4d2fa7d318785cb44e9b9d96271007f7b49ea8e75413e",
+      "old_project_facts_sha256": "203d36f66a7a77e76c586d78a82d4532b9d70f279808382e29301d9672354487",
+      "project_id": "mid-atlantic:pjm:b0152.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "2224a5f39ff8117601a8d9bdd7921204756936d8bfb955d0576f6cda7ff58feb",
+      "old_project_facts_sha256": "61d200044eed8a85d85263778fdc99d15468c49b0feecd84f0646ffc21c5b3d5",
+      "project_id": "mid-atlantic:pjm:b0167",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8fd618b311c7aa5c4f05b9ba9d15d3d7ec651a74322e89401571e8ac5c10212d",
+      "old_project_facts_sha256": "f8b5ad4fc8a7758b1b8580d308e825d529b36834a0cee1a1c4cdc8e16cc24e3e",
+      "project_id": "mid-atlantic:pjm:b0168",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f6aeefe0c29a9e0e1eba56d99bf1f38f8c2acaacc625f72a87033d547c5a09fc",
+      "old_project_facts_sha256": "60a3966df27e3efd3fbb68e605bd140e78d1383111a6b3948f1c3f49fa1d4499",
+      "project_id": "mid-atlantic:pjm:b0175",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b7aa05163587106e92fefd52d4852312212c4d7f8beb0314ff44ed08b611a5e7",
+      "old_project_facts_sha256": "cf0c83c070149b7c61bb138dd56366ad77b31c331d335470d4513755d124205e",
+      "project_id": "mid-atlantic:pjm:b0180",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4550c927332967fbf65d0ac64bb4f3b1371ae89368831a0c175aec87bb7bb66b",
+      "old_project_facts_sha256": "efda6375a145a9fda78bab0ef92910fa73244616be1e4c68665b2a0c3318f7e0",
+      "project_id": "mid-atlantic:pjm:b0181",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "387c1ac56e8ed1bc5342e2b7a78c2be888f6612d2029c577ceb6cc4a15b5d526",
+      "old_project_facts_sha256": "0022f49bdeca29a2be228d1744283e15ce7c19eaec95931ecdab9856fdbe7881",
+      "project_id": "mid-atlantic:pjm:b0182",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ba3c919c0d9370a269cdba1ace1a9f1e8ec8332e76c3e790696a3022d2bc5afa",
+      "old_project_facts_sha256": "94af7e66f44d0652a457bae105c80c9c396a487d9e979d500e66dc7a07c92da0",
+      "project_id": "mid-atlantic:pjm:b0208",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f916b3f5a55f4321b7af37f6e76fe1ced1074ce8e72e9bc0678fa51f2d0e8c13",
+      "old_project_facts_sha256": "57acf255393ab328ad0ddac454800d7cddad8322d0346fcf55b803b07a7061b4",
+      "project_id": "mid-atlantic:pjm:b0212",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "6896654cda6920e5399bf7344bce70d265e5572ae65b38f746b0bf78caadaa6c",
+      "old_project_facts_sha256": "7954d09f7910d592de78adc1dac0b07ef32e4975ec2e40faac61ee63c361cbd5",
+      "project_id": "mid-atlantic:pjm:b0213.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ae97eca51493cb453d20e8d4c068e075cf16bf8de627714bc1a396b0a84b984b",
+      "old_project_facts_sha256": "fbba57da48f0431b884d55434877f078eea9fbc1d7d6a9be6be2375de5e78100",
+      "project_id": "mid-atlantic:pjm:b0213.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1c98d37566ad9117773c15cac175017c498709e63b17b8df8564b984128cb7e7",
+      "old_project_facts_sha256": "b6b557ac535c6c87a461b83f71b14700c06aef7865e25e4ea03adc34958e3348",
+      "project_id": "mid-atlantic:pjm:b0214",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "50246ad9a356743116a9750f3b88e05b13e9cadf6a0cc63b8ff511a718e6b5e0",
+      "old_project_facts_sha256": "a8fe4b940684dd10c4936f4e7ce5f90d0d88ad5e0c5469eec546ce4eb365b7f2",
+      "project_id": "mid-atlantic:pjm:b0244",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8710ddecb6284d6b8204ae6c639bd5c3072e1fd0e128131e401feeff59c01b21",
+      "old_project_facts_sha256": "fa2a9ae3e1723af7d87a0b3799f63a770dc9a923a92c4ae10edc9d321f66197a",
+      "project_id": "mid-atlantic:pjm:b0269.8",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "794c5e8af7dac007670e98110440d7c336cc89b83f81b07ad059b3a9edd062f3",
+      "old_project_facts_sha256": "6d15fbf4957f6a9c4e6b38099a0787c0d4b0df1a0bbc6f0e07a414058c744860",
+      "project_id": "mid-atlantic:pjm:b0274",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "15b4ae8401c0e50841f5c748ecfa52151ece54a257b19e17ca361f318ed626ef",
+      "old_project_facts_sha256": "bdaf94434d9d630179d746d94d2ce1b3a52ff26efaa880f2f480d195a5d874e1",
+      "project_id": "mid-atlantic:pjm:b0276",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e971dbf0258e9dd7530f14b87671d03bd4616a1815d367d2e849a8afdf896775",
+      "old_project_facts_sha256": "b19ab772bd184e4424d71fd661fadfcbdd3222e25643bbb9622e6abde65cedb3",
+      "project_id": "mid-atlantic:pjm:b0278",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "841ef6bf3c745c45f8d6dc588b005d1652e2adb5621f9c14f08258ec1c002c34",
+      "old_project_facts_sha256": "c08028394dfe533fc2c9860eae45e7f23d5194ebe3d09497ddab3c712d0f103a",
+      "project_id": "mid-atlantic:pjm:b0280.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a25bdd059120ed91886899c50f0e03d086357ecb9bab69e68415771d375ae6ef",
+      "old_project_facts_sha256": "a9408dba483cd0065fdd01ec463b866c679d0d85dfc8e03f7cfae8b04ae5bf6f",
+      "project_id": "mid-atlantic:pjm:b0280.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b254bf7f289139fbb886ed5dc672b461617720945e803d7833027b3f84c01c89",
+      "old_project_facts_sha256": "ea033df345f0620560d1afcbb860ece4fe13fdd76a1b65fa90fa228dbf358aa8",
+      "project_id": "mid-atlantic:pjm:b0353.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1f65cc29ca42e80bd1890051ac8adc7ae8d857e7d4c368fcd4b7bf1be1ee8bdb",
+      "old_project_facts_sha256": "dd07d08f1fac115b4a18cbd2f9f0150c541b6bc21f5e231f9fa8ddca6d6a2237",
+      "project_id": "mid-atlantic:pjm:b0353.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "2097e847d956e80ed8460a103aeac5a7e00ab8bb7c68b002e3491beb2e91b24d",
+      "old_project_facts_sha256": "94b7894d90c78f796144ea101fbc71407fc1698ec40a378977aac0c821e07226",
+      "project_id": "mid-atlantic:pjm:b0353.4",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "443d6476ac948f2358f43ec23b0f958750e776977543e0d1f0c45c7cd4fce3cb",
+      "old_project_facts_sha256": "04d1e4858b18fdb81a45d3026d06c660695674c455b00075ba64f6f862b08eeb",
+      "project_id": "mid-atlantic:pjm:b0401.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3004d18ce9aa26d6aecf47ae4d558002a91c292919684d3866d0cb14e99b1e7a",
+      "old_project_facts_sha256": "74f81ba5e276a6ba55912722314f720ebc06e57d879b2cd871df6992e401e24e",
+      "project_id": "mid-atlantic:pjm:b0411",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "da36c75aed6820fac124d362cc83aa34c7f61cc50ad757b374ed2d39fc13c01f",
+      "old_project_facts_sha256": "4054ad9def3403461e3f7b1a41387f252b0717b773f48eb56ee2fd19d94e0b3d",
+      "project_id": "mid-atlantic:pjm:b0424",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e64387d9d380965fcfd9e12fbad231bfde7719ae982b2d8ce08af38306964568",
+      "old_project_facts_sha256": "5fa18a74caf33e53c966de34dcda36f17c1a645eca68f2f88635c98c464684ef",
+      "project_id": "mid-atlantic:pjm:b0435",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c22395cec0803575356be095357ca7f6ebf0e0724e35a4ae4fcbf4b2c1047d74",
+      "old_project_facts_sha256": "705a0d39e7f1000b5c6e72b4dd747324316c9c37e374a06499f07106934381ab",
+      "project_id": "mid-atlantic:pjm:b0474",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "926b243dbb2b6f792b57f019868e4bf2a68944c5e52b12088cd9ec04b91b73c3",
+      "old_project_facts_sha256": "70e376079cdc18ccae467dd6edb0ae21ee66fb21bd73c927c038c020cd2748d4",
+      "project_id": "mid-atlantic:pjm:b0476",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "33d2edcca07d6eb0441c81a9d2bea41d2faee0288f291ed9cb57c8f41881da47",
+      "old_project_facts_sha256": "aeed2c09cbf6e63f06db6dcce49f4256398b54cabe576ea063f0f465371d3cc9",
+      "project_id": "mid-atlantic:pjm:b0477",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3e8cbc0e29654753004b7777c68e6eb5ff7c586b2e50bd6fe01dcf6018969fb9",
+      "old_project_facts_sha256": "4e7dfdf6d2614f158215a6f597de7b0b6d42078a29584a90c46669a62451c06f",
+      "project_id": "mid-atlantic:pjm:b0489.10",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9ac0980cfb62babbbbf6eba10239a5da2fee2d659d8fa462a5f42488d7af5d35",
+      "old_project_facts_sha256": "0be1c0d06c7ec145138850b23a30cdae6ebf596a8a887dde1db8cb02b0603089",
+      "project_id": "mid-atlantic:pjm:b0489.11",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "90faccc632d716c6b73234a51191058eeba9cad023a4a1204654c54b43fc20fd",
+      "old_project_facts_sha256": "9e3da687662f78a065f1676505a2bae3080582ab6e738247e58c8d6c190d25fe",
+      "project_id": "mid-atlantic:pjm:b0489.12",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "43b44f53c017a9c1ec911cfcff016ae1380ccda0c545c3ce4c3fd08725bae992",
+      "old_project_facts_sha256": "874d53e1b0863f1b58b0db065fb70329e848e7197f782f9e0781ecf5b6e83d5e",
+      "project_id": "mid-atlantic:pjm:b0489.13",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0110f71ce48ff4991effff025b62ade87071618a2ed35c05ffc49d3f55cd536f",
+      "old_project_facts_sha256": "4260c8775ff64a6367a7147d86a68839edbc8fad05e7830c1576a0f0e18debe7",
+      "project_id": "mid-atlantic:pjm:b0489.14",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "23c82a00a2abbdf4a4b489d322d72b9cfb3cc68e83d4cd44862d78d254baef71",
+      "old_project_facts_sha256": "7456cc8a3754c8975b9c0bbfae4cf249a09d34f015e63d7ccd5f9f8fd5c6cbea",
+      "project_id": "mid-atlantic:pjm:b0489.15",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "dcdada5662966f4d59821a2ac1832fcc28c6d99940dee985a569fb0a9ff1e1e2",
+      "old_project_facts_sha256": "f991f93b4d5c79f6be44fcef05792e39c85a21519ebaecef3200c56ebe0e9760",
+      "project_id": "mid-atlantic:pjm:b0489.4",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fdaa20f548a25ca3bdac73f2e45e2b149a272e1e687275d4a886922c1f59b597",
+      "old_project_facts_sha256": "3b3b341b9920e8baadbfefc6f3ce9dd9534895e52a00c6b8f034b41a868d8831",
+      "project_id": "mid-atlantic:pjm:b0489.5",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "343bd2b330089ff7cfedea1e890dcf759706e334afb3267ccad02d36915b8a08",
+      "old_project_facts_sha256": "4f2c34c6090707a43a194ab210677ff40da82eb7ad1166cc44a831425cd29cf1",
+      "project_id": "mid-atlantic:pjm:b0489.6",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "39f22a3d566a4b46f52023178aaf5407a4271b1f4256925e566fdfcd4acf9dc0",
+      "old_project_facts_sha256": "81b0fd4f540c36bba3923e51eb7f0ae9993bfff00f1ba23a642e1d482520eed8",
+      "project_id": "mid-atlantic:pjm:b0489.7",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "2db92575e1fbe37d5c9a74e57c2dba31961019813191765b4e386a9ee5ec4342",
+      "old_project_facts_sha256": "71ae3b57083aeb163bca8e434bba12a44a9e68d5baa3874fb4d292dca1035863",
+      "project_id": "mid-atlantic:pjm:b0489.8",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0eb054d34971360d3c53981c8e71b4587128625f59dbb6b748c25808912294a9",
+      "old_project_facts_sha256": "695cf42f4cece53bb8b6af2b704cc1e11b3adbbb091749f1d831126721e0ddb7",
+      "project_id": "mid-atlantic:pjm:b0489.9",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5cf0752b156b6167b83c24d8f11ed715381d51c6441ec803887ba974f0baac78",
+      "old_project_facts_sha256": "eb372ba5455b99ed3b02ea15c9ea16ef3cd607a6ef718ebc007cadd8a6e4a070",
+      "project_id": "mid-atlantic:pjm:b0498.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "dc588da4adfee9ac0938c727ca8334c5c7fcef86fd97884b5fce29ad41f9a37d",
+      "old_project_facts_sha256": "5bf2b0d4c5ed6a9492f240b2fdae81772b63376f0ad0df417c5a6e9fbb4843e5",
+      "project_id": "mid-atlantic:pjm:b0498.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b843d5bc621bc39a2fc6e5dd677601a976fdc9c7a4f80e2d59dd14a1d73fb053",
+      "old_project_facts_sha256": "8cbe452a0d6a6a0d9d5218e3a2f558bf5f190b679f6a88f7c9083227bb90e6a1",
+      "project_id": "mid-atlantic:pjm:b0498.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0ea297c0c329c3c754b7362a9b27f34fe6fcd4c150ff5f375959b9705bcf4555",
+      "old_project_facts_sha256": "2b98ffc6f72e33d7cb7e5c68e32f531f1269e4e58043d4fc7e1600c0d438520b",
+      "project_id": "mid-atlantic:pjm:b0498.4",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "50bc663b36fe3760a728570bc6692598fc459d65027c7adb6ff70cf505d453e8",
+      "old_project_facts_sha256": "7daa22700c6d8f861e5e5178730144e9da71cd26dcc0e295111fd91b0896941d",
+      "project_id": "mid-atlantic:pjm:b0498.5",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a4ea9f3dba3d87dc3d8830433ad7598b374dde6dd1321dc4f9522075fb3f326f",
+      "old_project_facts_sha256": "c4cb7d28263cc9f32bf769fa21a7ebf8d6d73c50cb5ce3afb7246ee45b62acdb",
+      "project_id": "mid-atlantic:pjm:b0498.6",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1564295733bdec4c0b52d0fab26b6c9471dee0007070f76bcc62cecbf09016b6",
+      "old_project_facts_sha256": "cb329994abeaa70672521301ee597681812da8641e5ed1f2e9b0bebbb10a2729",
+      "project_id": "mid-atlantic:pjm:b0521",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d7ddf09e615898f78f088517dd80594b2c417b8131725d52d797df74723689d4",
+      "old_project_facts_sha256": "91530035910acf063c0df6803ab0022b2b7a3d65ccc28a84e2cfc5f1a9d4bd9c",
+      "project_id": "mid-atlantic:pjm:b0522",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a8f092bf2fb9235cec44405a5828ae7a10a6e274266dbaa59c6b1bf905ebf683",
+      "old_project_facts_sha256": "1c23ae978691e3bdc45a49311945f4aeab68aa8ff7f4eddd026fc7fa3c4d312e",
+      "project_id": "mid-atlantic:pjm:b0523",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e2540e3dfeb667a6a46abb9fe34ce5408bff12278d8c1e5337dea7120a68f515",
+      "old_project_facts_sha256": "27563b54fb9b54f435b0b225b8171eb8cdd85128d2db4d7f96b4dadf17b6f02e",
+      "project_id": "mid-atlantic:pjm:b0524",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "74b79128d0240e3642559024da335e7db6b693d02ebb8fe8694517b8ca6106ef",
+      "old_project_facts_sha256": "43c95af38890574eeea5d4a524c41b451175b36023040813b5e9e14e93980913",
+      "project_id": "mid-atlantic:pjm:b0576",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "30b47faf3ad37c4fd62274e02e62a7cc800b0598291f10d7ee8f1f2afba82ea0",
+      "old_project_facts_sha256": "b358779c24625b764a5925cb96d585e4f0564b6d6c2f253036bd0f70cabd15fe",
+      "project_id": "mid-atlantic:pjm:b0637",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7cc605e91607cb1eb3bd5789aaaabc5d4982d818d8d5acab33dc006a6414529a",
+      "old_project_facts_sha256": "7b5a07cf31218fb3c878e3015f89db16b6a2016ae2acbe7e11a1d0e37f4e53a4",
+      "project_id": "mid-atlantic:pjm:b0638",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1a4d440cf1b7b9fb52de73265c6bcbc0021c5f2da909388a3b909803e8933a04",
+      "old_project_facts_sha256": "176fcd5a23d7488c5008da687bb76cf6fc5c9bc01195d6ba15f0f08a4592006c",
+      "project_id": "mid-atlantic:pjm:b0639",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8940814068ad68b792fc7d5d2e1daa5f00e69e22948c90d0652daafacad44a0e",
+      "old_project_facts_sha256": "2d073d7d1029daad63abcc1709a844a4546d932da80078892be683dfe7d02443",
+      "project_id": "mid-atlantic:pjm:b0640",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3e85c7d356813cd640a9bb60c5fc3c2588985dbd7a6bf92c3198c421b71ac7e4",
+      "old_project_facts_sha256": "ea83b245c4c153510742449f59b3e4fe9bea35c904638f03ffcd1e7528d2d1cb",
+      "project_id": "mid-atlantic:pjm:b0641",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5ad880615e727d3d64f2b943064ee03da807ec00036593f533fbab500fc47709",
+      "old_project_facts_sha256": "b461f97c1138e1b843b9c4f83e51b2367436ddc0e8bb53a9012344e0e1557d35",
+      "project_id": "mid-atlantic:pjm:b0642",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0e4b8e7ecc9c7c0964e85a9e30ca9a3e6baea000a54c744b396932a5091f0ff3",
+      "old_project_facts_sha256": "658433fd651826c57204bb2d24004708632b12b11324a9442290ae9a46ddb5ef",
+      "project_id": "mid-atlantic:pjm:b0643",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f2feed260ae0685bc022481b3b7bc3855989e9591fd25ba97006bd0f43fe3617",
+      "old_project_facts_sha256": "9fa7ed417333f2d11f6dd09ca7fafac72dfeea2764d75c2be641250e12954a50",
+      "project_id": "mid-atlantic:pjm:b0644",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "414922fc1ad9bc38840bc3b9b5ed6a6107ecffd7e4d3be9e41f1e617a2684184",
+      "old_project_facts_sha256": "c3c6719af1b57d0298c5a2476bc6855920779d344a6246f9e550012e8098753e",
+      "project_id": "mid-atlantic:pjm:b0645",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "99ba671aa69c741d1fa90714302832e4ee4bcd34f65d5bb54fe2caad4076943e",
+      "old_project_facts_sha256": "3694371a893340227c5c44018b5b5190fb086687be65da6c14f7b3766bc073a3",
+      "project_id": "mid-atlantic:pjm:b0646",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f7ce2e6c8ab77ea9359aebfbb5d56c1af5cb9c1a1eeb8468750e82fb68b5e55d",
+      "old_project_facts_sha256": "9c7d154709c56a1c2dd1c075aec15c390df9a5f774b036fd2540a0b25b8bc2b1",
+      "project_id": "mid-atlantic:pjm:b0647",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ecce7831e9dbda7b79980fe2d971164dea942650f9cd809dba1eea2df9d67714",
+      "old_project_facts_sha256": "12c421fa385ccfaa1947a47ab8df877ad9e36300b27ab4e317552729b3b79a07",
+      "project_id": "mid-atlantic:pjm:b0648",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fa758f89a258f5a006fd77be8ddc178d260e5382fac8773c31a5b715b658bea1",
+      "old_project_facts_sha256": "bf83efdfd0bf931638b69173d11c2577cce691fcc3f84166b113a8e8da3aa6ea",
+      "project_id": "mid-atlantic:pjm:b0649",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d64d524b551760d65f8400d33dc7d5c4a384527d7081db3e691b95d50b5d230b",
+      "old_project_facts_sha256": "9de9102b255392656cf862455b1cae22a57d2e0fa724c8fc34647560748b7740",
+      "project_id": "mid-atlantic:pjm:b0744",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c4061d60051fd3f7580d015fc3370ab075929640ef63624a4e0766087b082b18",
+      "old_project_facts_sha256": "451b61a40566d2c542d7c6ab870a655aca24083769f82f346b17147a5df25e09",
+      "project_id": "mid-atlantic:pjm:b0829.5",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fa25af1f699e79c2c5acb1f232e4f2549f6e9b07931be702e9fb860605b9e6d9",
+      "old_project_facts_sha256": "906d53344668a7f5e3926357e70271efd4369c39997c6dc3b6652b72ac318cab",
+      "project_id": "mid-atlantic:pjm:b0830.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "37f4faabe1b7f2491d10235f53c1f79a7d8168383c54bf4eaec9d15ceaf42ca2",
+      "old_project_facts_sha256": "398588889b9cc770b020c05e11faf431e83d8674f001dcb9ea4b7051536b8654",
+      "project_id": "mid-atlantic:pjm:b0830.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "6df3c357e860444f5521eaad97196eccea3c8eab2e1d1d915d02891ce9024be1",
+      "old_project_facts_sha256": "62028e6e8dfcb28d33eafc33fac446cde8244292eedff1a020e8a4b31b8157e7",
+      "project_id": "mid-atlantic:pjm:b0830.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "057a61a137f6a412bb4e7a706e4ddee8b342c3474a9b722169cb3dd52261213c",
+      "old_project_facts_sha256": "1de44e2a73590d8475c2796aff2214df7878aa01a287a8470f325bd88d04af85",
+      "project_id": "mid-atlantic:pjm:b0842",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9b7104a3c5b8123482c9597185a46a4709c7d3276a1731d4362d4ac91bda6388",
+      "old_project_facts_sha256": "5354e655b604fa53b95a32e7462693f440bf348034367ca1836185ddc53b8dee",
+      "project_id": "mid-atlantic:pjm:b0842.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8ee7ecc7cc6816c19e0309bf0eb6fe96b0dc7c0b9e70dd31ef3941847d9b9a19",
+      "old_project_facts_sha256": "099d5fe37a467b8fc684759bd1b1c04f8d418516b3892810234fe7d766a51938",
+      "project_id": "mid-atlantic:pjm:b0843",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a38634e30db53836102c4576377de05a89974bbc3b6d94de8e0b3d512a088b15",
+      "old_project_facts_sha256": "83e40ecadfec11118748d333021060a59f4312c7f56fede5afb85f963ecf0781",
+      "project_id": "mid-atlantic:pjm:b0845",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a826140fed85b074c46747a2f805d83832c07460fdedaff8c6df44e626f1d5ea",
+      "old_project_facts_sha256": "6f9ad4593b49b3376c994d6e9e2ac7acc436ff0e6ba9fbc8cfb48542a0913fae",
+      "project_id": "mid-atlantic:pjm:b0846",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b9b66ca7ebbbbe3d59773eec90ddb470b73e4530a86b5b9e98c885aee2160ea6",
+      "old_project_facts_sha256": "89d0ca8a8c31e8b22c0c2cf49880a1cc56303689789fb1d1463b2f3ca5a43a69",
+      "project_id": "mid-atlantic:pjm:b0847",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4bff8e032eae42403da05cd57618384bdc9088a103910ee7666a1e5b94f68254",
+      "old_project_facts_sha256": "a3dd3009d034df051495abf0979c27b7283d9a355deaf26ac86a35c4b73fd7bf",
+      "project_id": "mid-atlantic:pjm:b0848",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0da514ab6c20915985f4ee375ce9c81526c4c1cb404b2fb4ac7ee824b214b1e6",
+      "old_project_facts_sha256": "89487410b4de5848dde629b542014d118c58913f9af5011a7ee743e2b96e14e8",
+      "project_id": "mid-atlantic:pjm:b0849",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4089a00af2cdb7eee4ebeba3967051e3ceec6b167dcdb6efdf79f7be03e643b6",
+      "old_project_facts_sha256": "4fdfb0eb4b21e30db0d9d17e2b26119da23e40cc4dc11dfe4c276482bb6d97fd",
+      "project_id": "mid-atlantic:pjm:b0850",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fa6ef5c14aa6db8913309e26bbd1921fb58703f46e045d5900b0115182b89490",
+      "old_project_facts_sha256": "748cbbd6f4331690b47168e95b1c9e9f83f1ee3a49ad81f7cd926b4c4bfba114",
+      "project_id": "mid-atlantic:pjm:b0851",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d8330c5be44c053a6a92ac07dc2243153e7587ba8d193e21907c3d7f6cf1e875",
+      "old_project_facts_sha256": "60a541c04dedfbb5ac8c32a3bce96607d56e70043d82a85da3ebf5bc5f1fa140",
+      "project_id": "mid-atlantic:pjm:b0852",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ba78a23ac0021f9b343d69022ae7f5279f33e4ecaf6519b7108b0bc4e5d57df1",
+      "old_project_facts_sha256": "daf1257de63b3cc2cc5f9de0e5925dd5d5f9d173b4f60c518eda2ec402ec0fcc",
+      "project_id": "mid-atlantic:pjm:b0853",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b1434b9c54ed537e66e4f799e2ce32b3cecf99d4860c89bfb6d3b4d087ddab9f",
+      "old_project_facts_sha256": "4f9cf793ef4404a9c871f92e26b275357bd8d9cd43905ccc344526d7a4305f27",
+      "project_id": "mid-atlantic:pjm:b0854",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e3239825bb0403aa5784f5be0e13b4558e806395dff2630880f3fdfd19bf7830",
+      "old_project_facts_sha256": "1126d6ea9a328b22d322ff915431ddaa97d03004d548287524e51a9981b20171",
+      "project_id": "mid-atlantic:pjm:b0855",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c37b284d765395a24f633794f63a9ba7240104c059c1985188b18deb0d0ce170",
+      "old_project_facts_sha256": "331e4be2412035bb64af11cd409a7f39352581871a57f7bd3ee16af6e9f4c73f",
+      "project_id": "mid-atlantic:pjm:b0856",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c52142ae139cc26b51c06d43f85704259c2200889df2b84c721e4b827aca8e2d",
+      "old_project_facts_sha256": "bf766dd72fa288129c1b099c8ccb711e7410628bc20a7feded1903ce45dca549",
+      "project_id": "mid-atlantic:pjm:b0857",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4ec4c51a9dd3992d7d222a81a6efb80725f93f0355215e2e99176ca30525fd7c",
+      "old_project_facts_sha256": "6e30fc46330321491f199dab942a9c6ba8efd00e81c7c9d02f57f1d1f48c714c",
+      "project_id": "mid-atlantic:pjm:b0858",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "665d32144f8cbe1ecb3e9f9f558f91811af3bab2bb527a2cf4df8f8b1f8497b1",
+      "old_project_facts_sha256": "36587eddd692d65e85cd6152ab4702adebc72d0e9e68e532b4fc263da594979e",
+      "project_id": "mid-atlantic:pjm:b0859",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d40e2acbd8432d22b5b10c21752d2439bc1dfab542662a65ee60b4a92149ad18",
+      "old_project_facts_sha256": "84f895154362ab463cb8a52bbbd282aeac16b43b99c95770dfde02cc518d3c7c",
+      "project_id": "mid-atlantic:pjm:b0860",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9c6b53991a0ff216587adb3eae129990db807c7368fc5a7bfe1cf13410d5e50c",
+      "old_project_facts_sha256": "474e64d7889be6f9627b6a6d305d71dbf5b8396e1eb8362f359b4f70f78b13ad",
+      "project_id": "mid-atlantic:pjm:b0861",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "818972d3ded6a64dec5829993890d20176a4da198c56023ec77696ae76de221c",
+      "old_project_facts_sha256": "341ed53d85ea7521a0102f6c80067944f304b8f2ae3d9154a020770c5502a233",
+      "project_id": "mid-atlantic:pjm:b0862",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "57bc60c72bae6f99763ee649956aed1a825257b5b9ea6005d0db051e1d1e0afb",
+      "old_project_facts_sha256": "92bb7c80d97ef0e7e9e5f751712918386c2f6ce3d1ea4599e9cea8793d898b89",
+      "project_id": "mid-atlantic:pjm:b0863",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f3dea9907d9e4803f2d8dab7616cedcbc2e816b88506ce3c91c14966257660e7",
+      "old_project_facts_sha256": "0a7929bbbd9d8c2e0338d0810816bcd0b43b4227eb093e3fa123d7057f82de45",
+      "project_id": "mid-atlantic:pjm:b0864",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "13346dc63161f98b1e1d880806dfc22c8149815091e033ae45efe9940cb75fbc",
+      "old_project_facts_sha256": "4350fdcc34aa45f346555fcdc96e36c672191dc1e3a2c32a9ff9f7932eaa5388",
+      "project_id": "mid-atlantic:pjm:b0865",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1d10fec952d0051fb8f1523552bc5df436c7972d8b4b0233c04d96657bc205d6",
+      "old_project_facts_sha256": "a43946f33b757820a3265fdcae0c3074788b32d03ccb3746027caaa7ea6b39c1",
+      "project_id": "mid-atlantic:pjm:b0866",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7f84f570d1fd69302dc83aa49f4196b052be9273bc456b30f0bf31501b6bd40c",
+      "old_project_facts_sha256": "be5b833b8567b3d354b8d7f25f501b7fa5fcf8584f7e8235f3afb0054143601f",
+      "project_id": "mid-atlantic:pjm:b0867",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b48574db58e9b29da0e48e3433913aaf705433f600f445f8bba76b9c01aa1de7",
+      "old_project_facts_sha256": "6d2c329b2a13bbe222e542f71836b7ff065d17bd804f142ca475ae824e4da269",
+      "project_id": "mid-atlantic:pjm:b1019.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7b62f926d334ce816831291151d5c3ac71f7bd6ec49fa7bf74daf6c2d7b074be",
+      "old_project_facts_sha256": "0bad8579ffe9cfde0cf0d54421277da8ee32aec4eca6d820a4df7794fffadf3e",
+      "project_id": "mid-atlantic:pjm:b1105",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "aff338ba72b25fb164d546a6593087e8862c634f0189498a107e80773bdfa151",
+      "old_project_facts_sha256": "ff0d7949db1ab82927228955e4e30e2021c7383757127b61125c9447b9117d54",
+      "project_id": "mid-atlantic:pjm:b1107",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ee988d4ff3fafddd6fd6bf72f7f0630297784457fecd04801e6fdcc3b6420382",
+      "old_project_facts_sha256": "1688a55bcf1e84367cc34b15d8fed7b80935f0c48670f3b7761c3972147698b7",
+      "project_id": "mid-atlantic:pjm:b1156.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8764d9740f6ac7c2029b63d0782e819a4259ea30360d0028d490d9871fbc463d",
+      "old_project_facts_sha256": "85ae0e9b8b1b2817c9499894f801177b84a1f3a21932f50e508644967bf993af",
+      "project_id": "mid-atlantic:pjm:b1156.12",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "10b8d85f557234ab2e57d92e1464314bfcd2a75c597ca0812c17a2ab7f1d31c8",
+      "old_project_facts_sha256": "45cae683535c8e5aa3d14e970263f6bf99bb8ddd357c10760ca9074e2fc525d2",
+      "project_id": "mid-atlantic:pjm:b1156.16",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "34b7429da0797cc0f3725d543caa9af18c8a50f877f8a958bd6e586391415658",
+      "old_project_facts_sha256": "d68fdf023d7a7c3c079d17aeee030382e3d12897bb2fbf4f2bc40ca5ca33150b",
+      "project_id": "mid-atlantic:pjm:b1156.17",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3c6a0ccc6f77e8c14fd6c16e776bad5db9aa731ef15518c95d8df23fcc70ec54",
+      "old_project_facts_sha256": "633b1feab0753589a5a0442407d1f39e04bb417b9e32e601e1c4266235a07c5e",
+      "project_id": "mid-atlantic:pjm:b1156.18",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8c32f2c211d8a054592eea3277802eae05d3ec57dc8a42e1f4d14e07655da8d1",
+      "old_project_facts_sha256": "ff37f973300ba609aca75155672335f20c0f5310abfc0e2d51973ef0cc609f4b",
+      "project_id": "mid-atlantic:pjm:b1156.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "51d9de2ad25c9ad2a68a820eee1fb9fd3696e3a17882ce6055d76f0193e05a45",
+      "old_project_facts_sha256": "52df3517ac5204e03b454593eeeb9a459a937c2d91df82b6a800deace99341ca",
+      "project_id": "mid-atlantic:pjm:b1156.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "06b688eea3ffbcc0e293c5ed9f30895f3d0c471880db66b5c41f3f56cd3f0bd1",
+      "old_project_facts_sha256": "55327138d3a550fafd37ad5812c7a124128ed5dbefd82eed0813752a24c32a22",
+      "project_id": "mid-atlantic:pjm:b1156.4",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "62d0a28965d099282bc45014e4f4f5a67b5ba17c38ccd4fd133f767ccf047859",
+      "old_project_facts_sha256": "1faa99b56aa85109249d98a3dc1e509e6c2740a8fd24fd27f1157a096a14705a",
+      "project_id": "mid-atlantic:pjm:b1156.5",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8afd4702691993232fcc14cd82ec4fb7685fe56781e407b0ab9471f301b40d9c",
+      "old_project_facts_sha256": "19310ad05f2926ede3b55ddc1a67f5a5b9d8fe1a845963f1aa6ac0bae7da5104",
+      "project_id": "mid-atlantic:pjm:b1156.6",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fe81f203c13c96d6e91fbf38118b1897bf757bd3b5cc13bf08f10873a9a74fa4",
+      "old_project_facts_sha256": "bb9b48d2bc8d4b09b0350da4c0df719450e2c587af5800bfec2ff87b6f4f63de",
+      "project_id": "mid-atlantic:pjm:b1156.7",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "62592c2fbdf85a2fb174236c95d64a3baaa4b5f8a1e5ce49874c8f6eddcf6465",
+      "old_project_facts_sha256": "efa7b73e3813a93b06417d6b260f525a639ae77c6fb58b288353640d69da5513",
+      "project_id": "mid-atlantic:pjm:b1156.8",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "89468516a4595129b9a5eb392ddbf38cedf5dd63825ce5d78df329a24eba2a2e",
+      "old_project_facts_sha256": "b319ea5ccb439283657c2d0ee86704096bc53dbe3b42a9dc3980e64dfd943359",
+      "project_id": "mid-atlantic:pjm:b1156.9",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fb3628265501f93dc1fe5c99c721186a5797156934ae6c4fb24a0081590705c9",
+      "old_project_facts_sha256": "d301974cbd7e6986eef2b73941e2601c87e4bb624426c110411811be2ba907a3",
+      "project_id": "mid-atlantic:pjm:b1181",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "54df1679260ac4706ff8fa02496f698df6c4473ecc43be86967d8e1f19f3e120",
+      "old_project_facts_sha256": "0ac02e3be745c1c50bfe7dfabc331f704a07c3874c445fe4ca43a35546778c4a",
+      "project_id": "mid-atlantic:pjm:b1185",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fa9bc0830de5c0bfdf0b562bd9cce17c727f5ac01ac5cee6cc79bd2b6d32a521",
+      "old_project_facts_sha256": "8ace03c2c4f648fd3580b642701cecf20d86a7692bfa5b18605d282c440962a5",
+      "project_id": "mid-atlantic:pjm:b1186",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "66fbfcd154439266ab3691c67d978e47b93ae29d5c1fc6a90855b339733d8799",
+      "old_project_facts_sha256": "1abfde8b7bd763056c1b8401e1dfca75255781e3e9343af9ac0049671b10e06d",
+      "project_id": "mid-atlantic:pjm:b1195.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b3ad211f74ea2c473569bcd4a144e2bc6af6d2c075624ec3a2b1538bb50ceef7",
+      "old_project_facts_sha256": "7ecbc8c7371120b7519dc9f3df51384a8f3cdd0e14dee0a4e7f336d360c85810",
+      "project_id": "mid-atlantic:pjm:b1253",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "51f3e4eebf725a8ce8c6a0ad4d0ed62421a6c2d1f08e81f95af62c4c4c1a1eb5",
+      "old_project_facts_sha256": "6fc405fcc90db1a1dc222775dd871c472d478a4d64d3e6937a7b85f70d85a5f5",
+      "project_id": "mid-atlantic:pjm:b1253.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "940bbcfae1028e99dfe8044b8445c1334354de760d5ba36faf28470db0b9ec06",
+      "old_project_facts_sha256": "8edf41011699949a38af4766e6f6aae33357972569834ea59eec55edf7dd131d",
+      "project_id": "mid-atlantic:pjm:b1396",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9a0c58e79fc0c42fb8d6c82d89e9541910367aaf8b1bb268003429d42e3946ef",
+      "old_project_facts_sha256": "04a20bb63084bf1f16f831220421919b4d613976dfe5efb8be747751aabed8db",
+      "project_id": "mid-atlantic:pjm:b1546",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "fcbe0e8d6e4ea52b0a124f78e7de2115836610de5983da9f13bab0366eb15e3f",
+      "old_project_facts_sha256": "0db7bcd417c7da03d93d1821216f33d743c640d88f933d9a4f260a8bccb54765",
+      "project_id": "mid-atlantic:pjm:b1590.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f6d186ecda1e9b90d3f0732f144efd66a46140b743a8d674b1e58a1b66460ade",
+      "old_project_facts_sha256": "a80b1a6f420ede15a4e11da13f4258f97b4ea97078a3ea1770c12b0fa488cd1a",
+      "project_id": "mid-atlantic:pjm:b1600",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1299dd5d671244e95787c1174c736cabdf7d367705a083a1314bd3b07ef28648",
+      "old_project_facts_sha256": "47cd36cefc6dc6e7bee0a551af640d9b6ef6d0c5c80bacd28841f2d69700858a",
+      "project_id": "mid-atlantic:pjm:b1717",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "de4908042a8688624e9ef4a2587597530b98e999daf84e6ae6c49efdfc0a0223",
+      "old_project_facts_sha256": "0bad7b7838c6bac33f9ea108a6d155b3f868879593f618c730efed784ce83420",
+      "project_id": "mid-atlantic:pjm:b1720",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3378bb70044744f09775aa3ac4788da04e44c8b0e8361c001fa97f9f1ef21a9f",
+      "old_project_facts_sha256": "c468aa3b3bb5b2bcf2ad7c74e2411fcc10317a45399252dc1090b854cb989165",
+      "project_id": "mid-atlantic:pjm:b2140",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "92bfbea04af9ef4e2d4cfbb2c6b5438ad89a98a2bd7b79ad6f3575a156d35ab0",
+      "old_project_facts_sha256": "ee8802a5621ec6570c10853d9403e6cfaf815b7b86f8efa70fdd3e73b1dcb013",
+      "project_id": "mid-atlantic:pjm:b2222",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b624c95835b1f55bf28daf4f74bcbb14f014c48f6a821a3b749b1e0ba594674b",
+      "old_project_facts_sha256": "6275abb4045ccfe2079655e7ff7cd8543ea13ee9f6b0ce344b79c389e707f969",
+      "project_id": "mid-atlantic:pjm:b2296",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ca5c8c44f8f8abb3001e4a3d31f872cae4901cf189a14197680c804170bbb12c",
+      "old_project_facts_sha256": "8d2d71df8bab963602e55273853f47d35646f16147c71a6763078bb7dbd661be",
+      "project_id": "mid-atlantic:pjm:b2297",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "2976cae88f0231229d243a8287948073891d52576dfa455e01ce44a3c1db8541",
+      "old_project_facts_sha256": "aa29dd34c6aa993713f5a28e7382cbf577b8d8f8dde5dae2d5c3a9d140c00cab",
+      "project_id": "mid-atlantic:pjm:b2354",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4257c05cee64323adaf5e7886d23600d6989a2121041a710155e1cc54dc768c9",
+      "old_project_facts_sha256": "107b1f31a6bef05dfadd236e97b42bba01590a508e353b8855497c00c23de1b2",
+      "project_id": "mid-atlantic:pjm:b2357",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9b874362b05a05c5a0fab4d532483b133b6ed7b5f4fcf9b243cc945c544d2ad5",
+      "old_project_facts_sha256": "373e2c1f1c2c1a571e84b34188f73b8765406570d470ceda0e1bbfa9f9cd999d",
+      "project_id": "mid-atlantic:pjm:b2477",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3e1f474516866afc4ddfbfefaf34a6093a7cb67ecab32c454d310c9c1afce26b",
+      "old_project_facts_sha256": "108665d3b1f07e421981f4a1c00c8d92a43cacddc374e0d9a72c0c35b6be0a5f",
+      "project_id": "mid-atlantic:pjm:b2527",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b8100c2e1fdc0d6ee7ec4b38cb2c37b8653ae6292759e1d681ac98677b84c582",
+      "old_project_facts_sha256": "53d26c45a0f80496d0d0b865655aeed2dae03282bdad27fab81efc15c67be101",
+      "project_id": "mid-atlantic:pjm:b2528",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e09e99e485d6e86c777494cb1536169581d079be8416d8fbb91d507f8e05b443",
+      "old_project_facts_sha256": "262f10f50de52be159484b362d76a768543d8a11beefd8e0acebcf02bfae5027",
+      "project_id": "mid-atlantic:pjm:b2529",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "6935924e7df1d9acebea9c738f0c384364e3a88be6c58ce3161acbbce781e3fd",
+      "old_project_facts_sha256": "a19af5bc7160b895254e2bbfa6fde79884c7336599880323ff19bfd413c91646",
+      "project_id": "mid-atlantic:pjm:b2538",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "807c05e38b50bf7987ee87418a94c6accf3773fc16b382b9970e535552d54b27",
+      "old_project_facts_sha256": "cb6bc098c04ac551229f965b7916d4ea7c7e7c9f500ea47dcac5e797a2d98a50",
+      "project_id": "mid-atlantic:pjm:b2550",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0952ea5794a3d467ec7eba9c11c71307cdca2c6b88a6ac6d0ac9da3dbba28a7e",
+      "old_project_facts_sha256": "61c44a00f588c84f4f11201aecad2dc3ed31667771116715e7182ad8990518f7",
+      "project_id": "mid-atlantic:pjm:b2551",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c7e919af8206c5cb696aa6921ce397803b402dfa5bfb9769ce2f6177321f3742",
+      "old_project_facts_sha256": "cd294cfbde3a579ed3f72252ef9e52e68c3127d968878ce9b5dd174788b14e4e",
+      "project_id": "mid-atlantic:pjm:b2708",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c07e8ff2146ab77e5b1d54b97e44162214bd700334c63228208086a5e58047e2",
+      "old_project_facts_sha256": "3a2095616aa4ad6034748153658fd403060d50ec9721f88ef0405d9e16195552",
+      "project_id": "mid-atlantic:pjm:b2850",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "784fad0db52bee817bcb1cbbae09dd775cafa04a836af0c4b445b152e4201f2d",
+      "old_project_facts_sha256": "4ea015479e1ec7497eed322546850fdeb7175bfcfc4fbaee7e0a956e8582f445",
+      "project_id": "mid-atlantic:pjm:b2851",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a4be0d6d03e3df16d8b0d3204bfbfb657d6f2e7c4a5ef4f38b61cc6b74207d1c",
+      "old_project_facts_sha256": "8a5c48c7d20054b490f72c9895e582933837efb868ca2a9f722c7c64babbc0ba",
+      "project_id": "mid-atlantic:pjm:b2853",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1c5ff903dd0518a1a42b8d2223eed61a3c833258661f65d9d7d95302bf86814b",
+      "old_project_facts_sha256": "2af1dfbc4868a1329b86cea6d2acddda46dbf01a7e34675d0eb64e6235a021d7",
+      "project_id": "mid-atlantic:pjm:b2854",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "220a76be79f1681fa4ed1a510c250eec48f0bf5fca2b6af8b70057dd57a8a3db",
+      "old_project_facts_sha256": "28f4b2fcba5f22685b99117e3ecc282281264062deb8eee9aa09ff58f3070a94",
+      "project_id": "mid-atlantic:pjm:b2855",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d151bb9c0819cebbcffe8671a0e77bead0ae4497b05fdb889124c560d3003b96",
+      "old_project_facts_sha256": "e9c32d0821bb93827e719aa2495ec82a2520a9486113aaf3509951135babcbf7",
+      "project_id": "mid-atlantic:pjm:b2856",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1058cc3e3de773ff30c1cff8a625bb7d9a3f192711e092ec3f0d02658a6ce48b",
+      "old_project_facts_sha256": "c42b0e6fccebb54fc6a34fad30590dbfe51201ec063b1ab0ae29cd61a80a93f2",
+      "project_id": "mid-atlantic:pjm:b2857",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5b660e7be489ceaa16ddf2f8de476b4df0d6d33dff4aa1c608d10bd807c0a396",
+      "old_project_facts_sha256": "9d4b5512b39d478f532fadb2c9eb54a86d8ea4a58f3401cd6b885b1620303d09",
+      "project_id": "mid-atlantic:pjm:b2858",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5308ed2331ed2682c463e425a1f4d380a474c9263c3097e71d2d7e2dd8bab9a3",
+      "old_project_facts_sha256": "475e189ee9028b1e44114d7f651fed927741ceb8fb9f8fe1ae091189cd6d9a3e",
+      "project_id": "mid-atlantic:pjm:b2859",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7ee4a980e10689363e0c1ca5115c5ebc3bb7b74cebd25081947106bb7dc2aaef",
+      "old_project_facts_sha256": "f05928b7556883929ed047c44f4e5f32ef9781d0122787c65e39c206d28f6feb",
+      "project_id": "mid-atlantic:pjm:b2860",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "396292dd7d9a344e844c0024e98a13c5701dfeeb9d971f3daba80bb9e9af7ea4",
+      "old_project_facts_sha256": "79e59da6100a44742c48e043ec381d8c5b88e677c37a319fda8d560823450d59",
+      "project_id": "mid-atlantic:pjm:b2861",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "9e14062611ac4f7890a90d0316aa1e995c62bad4f0717124691a7c8d6482b3cc",
+      "old_project_facts_sha256": "6faf477099462d7bf51a253a291f267b5c5a53a0f39938069d298d0943916388",
+      "project_id": "mid-atlantic:pjm:b2924",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4808cb1a3a2eeedf1022221cad426fa385be8ab38e07ce4ab9e8b99db35d62c5",
+      "old_project_facts_sha256": "bf316e49e4389dfc661e71f884a6b9aeeb144b1eba3d5cb4655682dd6fb3f72c",
+      "project_id": "mid-atlantic:pjm:b2925",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "191d66f24821cc6eb180db76032815398f8c801909408570c9f973a9371552a1",
+      "old_project_facts_sha256": "011ceeabfbd0fddb696bf0b245667c0fcd083bdc265ce2aba054820c26f1b6fe",
+      "project_id": "mid-atlantic:pjm:b2927",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c5f4efe72476d90308f2204ce923c9e130f1bc42713b9e27a9f854edc551cf26",
+      "old_project_facts_sha256": "5a92d1da698e01aeb95ef49a6d84fe159d9a539aa03be15ee1f132d1bc4de2a4",
+      "project_id": "mid-atlantic:pjm:b2985",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1cb450a809d947435a985eb0281260e495a421452960d3a0a0cd2202d64291de",
+      "old_project_facts_sha256": "a64d7e76dfd798f8fddeae278d1a3b28b84a03f948b47f35a1c70c5407bd1c8a",
+      "project_id": "mid-atlantic:pjm:b3120",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "322da9714a0a997999b70178c07260953eb2ad4270d5a913032656069200e50a",
+      "old_project_facts_sha256": "13f9c71fae827a9bbb086326c8047e9d61f469e5c4197a52200aa9feec03864d",
+      "project_id": "mid-atlantic:pjm:b3135",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5834e4e57a6d2aa600348e29dbee7d04d701041559d88929f0377ba59ba9f937",
+      "old_project_facts_sha256": "ac70c2965d64e4124567fd3ad7a2a8535f7757ebef09a5dafe36d4c5a4fe7c32",
+      "project_id": "mid-atlantic:pjm:b3737.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7bbef7886a697fbd84daa5137597d800637eb4afa2d80b9e332d35a905e7e722",
+      "old_project_facts_sha256": "1716ccf3f24240476003024eb3aac1e38eca257c768e79ff41503851d97b22f2",
+      "project_id": "mid-atlantic:pjm:n0027",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e1924de8d90ba585a70b4e6e74d3e272ff84cfca2dfd518d2fcd2c337b3e5c66",
+      "old_project_facts_sha256": "a76777f35281c2f2bf206f3f376d02624a39e34146cee64cfdafdf8c91d1eec4",
+      "project_id": "mid-atlantic:pjm:n0032",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8554056762d13f5454acf9e87ca70ef31f8d882aec8c9c57119a0d499df9e9d2",
+      "old_project_facts_sha256": "040f73a35b4575e0ed66860b57e8816dc7a3c6847cea92af4a2b4dbe34384ff3",
+      "project_id": "mid-atlantic:pjm:n0051",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "648989075efefbd97adffdda5ff1067512b66ad75b23dcd3976128df2cc8b40a",
+      "old_project_facts_sha256": "b21418df0e935425168dae218f42f61bf05de4d68147841743618553e0d5f67f",
+      "project_id": "mid-atlantic:pjm:n0052",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "abbe05918fbeaf9ce6a872150b7453873351c752faf3112821378ba10c1ba3c3",
+      "old_project_facts_sha256": "9652a68d1792a47ef14c9ae7b6e72cde6b1c6c2b02733f5f106b061f4af47aac",
+      "project_id": "mid-atlantic:pjm:n0054",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4cd61f864a69a332577b17e748c1a8822e45df66cc85c3bf01b7611bca119e42",
+      "old_project_facts_sha256": "06aff3a67c46635938a35d3c88ebd7bd00e6d155c6880787f3376b545594d3ae",
+      "project_id": "mid-atlantic:pjm:n0056",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "6e5ace946fa60b39980f65331e9e9de87b81a29a496404173f61db6cbde657c1",
+      "old_project_facts_sha256": "848daf8054d2bfbc54526f7de636f419dcaa698e227ec6548f5956a6f226cf44",
+      "project_id": "mid-atlantic:pjm:n0060",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e1d91544b837c71e8b4b27ef26bc7b74f39f01ee494025082f4e077a1e9f1ebc",
+      "old_project_facts_sha256": "bcbd49292385c8163a3b458710dcaea194744d2718b51eb1a9ea0b434b15e078",
+      "project_id": "mid-atlantic:pjm:n0061",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8304601ac873f7ba2a565f07b9ce63187614ec0c8a33eb4801fe445646e2b751",
+      "old_project_facts_sha256": "038dfb7f9aa37a6fc4aed1dfec6bd65a9e61c2c0e3522c7b73c4b624a726872e",
+      "project_id": "mid-atlantic:pjm:n0062",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3ea93c883e4af7be2709e2e8a76403cdfab9afc3d1e6ad647d2fe352ec6de876",
+      "old_project_facts_sha256": "0eea395ae4dbf8b77acfa1079e6eb87e4ede80054e5049013bce6357f3154a23",
+      "project_id": "mid-atlantic:pjm:n0063",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "072ea016c4bebef83defda815a0756097fc2f8e65731508556ae2a83a9a7c069",
+      "old_project_facts_sha256": "5efa4b58c7b466c7e35a5ddbabafdb4ad9d8b0a5512c89c8ebeb3723357a8b4b",
+      "project_id": "mid-atlantic:pjm:n0064",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "aca00f731d8cb40ffb3b7fee812893c265886b9e61fee6cfb4d70124e9453e11",
+      "old_project_facts_sha256": "85f1d357fb89cc70429503ed35b7f1bd3740d43ba7f14bfb942e29b315b6e10e",
+      "project_id": "mid-atlantic:pjm:n0065",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a0bf6df490c0872cdf23471e137b85c78cdd20563aabe33914c99f0caa6a11a5",
+      "old_project_facts_sha256": "dde38971ca84dacaf4fc400e960818029625a4b3e23521ff7733cce393c5fe87",
+      "project_id": "mid-atlantic:pjm:n0076",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f457b00f8c0544679b1dc34a39bda3c639fabb8743845f7309c255af9a606351",
+      "old_project_facts_sha256": "aef7391c40449af3549cc5d871d75aa3f31a827ff95ce7ee1c4c452843758b2d",
+      "project_id": "mid-atlantic:pjm:n0077",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "65a0e36de3fc78f8d39504f12f8da3574c5c8cf0a2759a22ce247f7b875b80be",
+      "old_project_facts_sha256": "7e39b7408ab8cd4dbe738fd2ac943fa6e37f8c1dc979e1981cd49e89001d0905",
+      "project_id": "mid-atlantic:pjm:n0078",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "54d03236e618f568f875497839cea79e5438de92d98b11bfbe176ce040556cdc",
+      "old_project_facts_sha256": "c7168ad4287de1d4865dc633c999ea2f68ac8f48b29ed0c568d1601f4645d304",
+      "project_id": "mid-atlantic:pjm:n0079",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5f0cc4f33e8e1dd8c4d93405cbf4094c4cc11f2aee0556e947e169f76b5983d8",
+      "old_project_facts_sha256": "38f3c232397db4ad9b7d446c7f69eec4bd4ce46133e6f5724a7385ada17e0925",
+      "project_id": "mid-atlantic:pjm:n0087",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "98279d6914ab20c52e212654742b5cd298fe349c7771cb90a9564f4d2cfd4edf",
+      "old_project_facts_sha256": "fec081600aab9b1ba9d8bccebfd37cacc7327c8fc4194f3cfd56eeee394bc120",
+      "project_id": "mid-atlantic:pjm:n0095",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3eb4f867b14d41f0664a3011e19b6f4eacba1c6b41bb6d673906d4c4a13c29ed",
+      "old_project_facts_sha256": "e40705dbe64f30fc4e76c3dd2b96928719a502e795f33b088f97371fdabf7382",
+      "project_id": "mid-atlantic:pjm:n0117",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "6f6b9d642e440020de21562a505d7a8fdc395b156ab739b04efc548f13db9ae8",
+      "old_project_facts_sha256": "4e27b15ada5eddd4af87f9a968e593d5e4a7858dee479c5bcc01583a8f56df3b",
+      "project_id": "mid-atlantic:pjm:n0178",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8f80f4b730be38ec3abb8982ddda46df09d25ad67274449a08d2fc1c4e0d9352",
+      "old_project_facts_sha256": "3d56329160149c976fafddbec1e1ff73aee0e7ece3de9864bbe17bd50acaa464",
+      "project_id": "mid-atlantic:pjm:n0179",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4d706cee3ccdb723fbf8cdd41889a1a0b2b0a800463fee97081758fdb571e310",
+      "old_project_facts_sha256": "31c1d33282e45c2542583deb622f8e7566f4e86b987476c52213745ee71c66cf",
+      "project_id": "mid-atlantic:pjm:n0180",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5e59d4abdd97cfd7a6a16944ac19b1230719909f4ca8bbe79054ac77a85bd618",
+      "old_project_facts_sha256": "d2490006436827d82d7a6c19c15ff216579645312e1510720ac2e34e62a3d84a",
+      "project_id": "mid-atlantic:pjm:n0182",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "175cf97a1ef93fab2652954b3f46037855e8a1ced9759c9ce027b4f45805ffb2",
+      "old_project_facts_sha256": "f612c177dd659d6e66dc943d1928230e65dd7ba30c6bd82d21ec1f38f104d531",
+      "project_id": "mid-atlantic:pjm:n0187",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5c6593a15e139659b17a8c026d7b6b1728bb4bf81cdcd1504ce96e88b96d332f",
+      "old_project_facts_sha256": "962376fa2bdac9cc2feaaf1f3bf760e056bdb4716533f80a9135699eceaf94ab",
+      "project_id": "mid-atlantic:pjm:n0645.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a97e84d5a28f3c05977aae6e4a293ca857a3a7215dd26758c1595229721d6fda",
+      "old_project_facts_sha256": "70f411c3e69736a92cf875acbe3f575192bfd638269c6aca28d960f145eaaaa5",
+      "project_id": "mid-atlantic:pjm:n0692",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "405f636a3c42b985c3521a55ad4c56bc68facecdf5b5d9252b1f51304bb228f2",
+      "old_project_facts_sha256": "94bf13cd80b13a3b23f067c9b81cc8bddb293caadb24732d26ef85166bb7e5f9",
+      "project_id": "mid-atlantic:pjm:n0693",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f192d1c6c881454a0e0578a7990888580a89ec208e6d71db19d9acf74154c174",
+      "old_project_facts_sha256": "59c7dba988aa370d01effe2a25f611b8fb3a5405f9f61871bb7cb3d8b5398ac1",
+      "project_id": "mid-atlantic:pjm:n2194",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7bcc716e83fabcd5e4b2690674c1520bc7c5bf21cd1456f93fce94645eecce88",
+      "old_project_facts_sha256": "69d89b1fe4c980d4923a4707426f2f553e38433ca30618b912e7b12e056a75e6",
+      "project_id": "mid-atlantic:pjm:s0075",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "78efebd63430ecddf4ed125ea80e9fea82bb31accf561f07a2ceed47dc516d28",
+      "old_project_facts_sha256": "3e08337c83ba0516ef6961c05807a335733888c54e8a6b2c75fc8c4d5b7e36fe",
+      "project_id": "mid-atlantic:pjm:s0080",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "34835c61b2f3beffd6f2785c37951bdcee554472bdfb5c030d08587edd80b034",
+      "old_project_facts_sha256": "79f85fe9ba0a56b47b84bf987cd963e52c115e6ae9d5c904094a14768fd31968",
+      "project_id": "mid-atlantic:pjm:s0173",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "875e85b3b2d1a04c5ed448bf1d93110513d686e131235f1737fd82209ba53a5b",
+      "old_project_facts_sha256": "a29f437d75ecce6451a889b4b3c6378c2e853d027613bcc1c665771d80413d91",
+      "project_id": "mid-atlantic:pjm:s0279",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3c8de22b35d8d50a3fa02aab04288a054b563512f9c94a67d416de04fa190ae5",
+      "old_project_facts_sha256": "cafbc8b6989a90eb25a0b0442701a9f33454e772897b535d0e1bbc3ec1a8282c",
+      "project_id": "mid-atlantic:pjm:s0286",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b60119b3b2e98616e6efab6ac458036328ceb51742dedc52e543ad1f739afca7",
+      "old_project_facts_sha256": "eae070809e1face0078a46277e37ba604c1d4e2823b618b47173bd2c6b58cf99",
+      "project_id": "mid-atlantic:pjm:s0287",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "833336095d2f69721a498f06f3d38d5894ad9a5c0e969af4ed4b1282b115b113",
+      "old_project_facts_sha256": "052b64edebbba025b8aab8fdbc64f070245d6a1fd4d6b40793c513e62a5df0cc",
+      "project_id": "mid-atlantic:pjm:s0298",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "bbc681da539ed2443176c71697327f88acdd5a968db5f6dca289ecd6324f1bce",
+      "old_project_facts_sha256": "29ffc9fc598e5af70567bcdae78c2c53a4e2f88a67e32f0830a05053ab33acdd",
+      "project_id": "mid-atlantic:pjm:s0384",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e49b7b5fd9836df6a55609e07aafecf393ee2d10830347e1e89c2a4114ab2c91",
+      "old_project_facts_sha256": "e0662c599878b74a155d9c76af7f0c4f8024bbf2c86ca7b7858645b96141eb00",
+      "project_id": "mid-atlantic:pjm:s0472",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "675de386d8ddb0da41de832e6cd1ddb15bfb07fe26f9fee4cabb39f99725c172",
+      "old_project_facts_sha256": "3cf396719b5face625559a944983a20574be8db374ee7dd6cb91c6dde319d3d5",
+      "project_id": "mid-atlantic:pjm:s0584",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f2f71c71da5ef46be7656423de4d0e3aa1589aa94acf6acc407d04f2f0fec8df",
+      "old_project_facts_sha256": "2ee4a2f8f5817d6f1e5226d485adb242b8758a6d7e67f54a0e382d117e933a51",
+      "project_id": "mid-atlantic:pjm:s0790",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1f5cf5b6aead9b0ed0c1599e17c6b0123481d1fec7f1f96afbdf956883517319",
+      "old_project_facts_sha256": "52375bf073672cf3f110467b08a38b1f4e32d1101c427bb68892d1f0bc3aca87",
+      "project_id": "mid-atlantic:pjm:s0794",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "96a458ca476ec916ffe18265a694a04105d0326406c109b3ff42f025342c5aec",
+      "old_project_facts_sha256": "1aa8bf3fa54c90ce74b7fc60802947dce08e81c7e85b29218d3e91a0f39aaff8",
+      "project_id": "mid-atlantic:pjm:s0799",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4f9e339362704b273c7a4a460fbf4a4519075119aadcb22157435778693da986",
+      "old_project_facts_sha256": "965ef7295c0205add833097e8260697b77ea01f9f1c5dc78412b522be47376d8",
+      "project_id": "mid-atlantic:pjm:s0843",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "16c28d65a9f7fb0b3fe779c91d4efbce498ca08d69f788b371208ca79c73ec07",
+      "old_project_facts_sha256": "54ecc9d3dfd67c97bfe17a460e0754cf3689589df72df7eb9f61092c83225455",
+      "project_id": "mid-atlantic:pjm:s0845",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "a1c2e357d24b6cb855b46a6ea32e2e340cabcae58e0369c3c3e03d9249a59b6a",
+      "old_project_facts_sha256": "3ce9d3b713046ebe123c54914db2d8319a2ce8183b677786ec042d4fee3e8530",
+      "project_id": "mid-atlantic:pjm:s0874",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "ecafa93fcb8977ccc1daecf1e7763a2aaa11c507b9ab280827afce491ed28804",
+      "old_project_facts_sha256": "123fe6d1c68152ff10f4f338da5686ec1bef6518153a518aaa4fc0a4191a5f50",
+      "project_id": "mid-atlantic:pjm:s1005",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "27f1f067c251ec6c6c563154226694d895471e1ddf2622b0c88d3587643fafae",
+      "old_project_facts_sha256": "57c1acf61022df33e15dd48bf48927ed4ccbb828a8e910817a0da700b06f2b94",
+      "project_id": "mid-atlantic:pjm:s1138",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c14ed3b64b43763980b403cc330c3a4e71c4edd4503e2ed5579152aca5589a6d",
+      "old_project_facts_sha256": "bf3bcb3184dd8ab6b1682d6072bbd8694be8c5551293fb5a4ede8acb2b87104e",
+      "project_id": "mid-atlantic:pjm:s1139",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "21fc4ef2e4a0a9664b0c225c3ffdd45dc91a8ae2867819a2ba47244433a6cec3",
+      "old_project_facts_sha256": "bba7a1ce1905959be8950059ed7ad41a09eae653a1410c95a3e7c8819ba86236",
+      "project_id": "mid-atlantic:pjm:s1531.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0c7a2af0b4f6b49ffd6e12e2af90c4f6998a042d768e21230e171f762f9a5398",
+      "old_project_facts_sha256": "1f40d1496cfd720f9796fb494394d38125b121b4bf137bcc0d3ffa37f2a5e2a6",
+      "project_id": "mid-atlantic:pjm:s1574.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "1129aaad7b8dde129a469647d0baf3795e3d46c8ac90c2965a789cc2e9de36a9",
+      "old_project_facts_sha256": "87151f58c74c971f10e0175c694536d34c59d42e1bc11c0d7805632b396e4105",
+      "project_id": "mid-atlantic:pjm:s1806.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3854fe50bb4bfa9cdc77db2eb1f291dbd9fb43130b23093f65d6550ebd762615",
+      "old_project_facts_sha256": "61c177e1411540310025a14d32ece52a21ba1ea76ad176c2c5d00c1dc343ca15",
+      "project_id": "mid-atlantic:pjm:s1806.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "dc7a358805ada9339c96cff747f090382ce5782bc73964575f3f0efb36d4eb84",
+      "old_project_facts_sha256": "6446621e5659beb21e498a5f9fb48fa48e91ae59b24a8345f1db7e3df6081a72",
+      "project_id": "mid-atlantic:pjm:s1806.4",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "660a43be7f0405e5dcf6746916527a086dcee0bd8ba3174782af51b936ca3a4c",
+      "old_project_facts_sha256": "114d29bcbb40260665c5568132bda4e1b2ea31ff78996b80fb2e7e35a57afb1d",
+      "project_id": "mid-atlantic:pjm:s2206",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "104a7e30c44c8100d27dc48150d0e1215d1db8aa0f4208f9c3279eecd2121f2e",
+      "old_project_facts_sha256": "652971e2bbfd5ef31838717f102b63a35db3ca99a87ac37a79a47b230fcd76c8",
+      "project_id": "mid-atlantic:pjm:s2278",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f2d7bcf5bef4fe45ade07ae30d0ef2613ff0f3c062edabec81d2f2f5732bbb26",
+      "old_project_facts_sha256": "b54f30dbf2d3ac0101df80bde49dbacf14f35a154db1ee8583b8676c555ab62c",
+      "project_id": "mid-atlantic:pjm:s2300",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e23027641764d716fe56c2abcd5bd0fd3952cf54cce7afaebca3a26c7577c35f",
+      "old_project_facts_sha256": "dec884b259d19ff3824d4a0c291a4017223e28b9bc0543f753511f4f68f7aa5f",
+      "project_id": "mid-atlantic:pjm:s2361",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "87d3ec60ae0a6837e66025e0b0ab9315561cf90bd6a9247a6d93ad0754944395",
+      "old_project_facts_sha256": "c420d046d9f58ee66c2cce466172552f0300b961fa0894280fc904d492dc7012",
+      "project_id": "mid-atlantic:pjm:s2362",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "224370f5553d120ca3bbbedb5166a677f75eedbfa9a9c5a80a7acdce0cc66d74",
+      "old_project_facts_sha256": "f8f2bff2a290b2b71239c525d1d41b15e29774cf3495f7879f041580bfb079d6",
+      "project_id": "mid-atlantic:pjm:s2417",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "e89b01a674fde21cbee829b4eef091b7ed627d934213ef7744eb69d73116d415",
+      "old_project_facts_sha256": "b5eb24d45113d6794826894d3844ddb2f58e6a3575295503825032f6db9dbbdb",
+      "project_id": "mid-atlantic:pjm:s2418",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "66a873c5659195e91fee7e8d88fe73c31818446f1f12e178f218bd82dc48723a",
+      "old_project_facts_sha256": "d6b370c54370fbbcb3d8bcbc13cf068cb3899dd0f0b8faa0d591ac3f9a4b56d3",
+      "project_id": "mid-atlantic:pjm:s2484",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "490f1605f2934b7537000808d056a13b3f6e28482803fa90f8a92d3c8528e0a8",
+      "old_project_facts_sha256": "02da593da0543511fbb1792255f15c0c0325ee39b668ce257d2c393876da747f",
+      "project_id": "mid-atlantic:pjm:s2487",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d68d8e4999db018c0229893ae1d6182720af2f2e1aa5917acb3478aab5d7173f",
+      "old_project_facts_sha256": "34af5bddd71edaa8af30d24256dc87d60e766cb86ab9c90585d1ccc4319cd499",
+      "project_id": "mid-atlantic:pjm:s2508",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c88e817877b2ad0f8e8255e708e9563f8bfe6cf32a436fef07edda942e98b05e",
+      "old_project_facts_sha256": "b6aa62dcc39e4e019c78313b2cbc0eef9f44c79f0d4e8910997f2e4b2211c7d8",
+      "project_id": "mid-atlantic:pjm:s2808",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "2eef7b9f8a47560e7d4f865ab3c34a42e1b19394d2f6ec9ca37c72b0abffbc80",
+      "old_project_facts_sha256": "8654003bdca6d02ab92e72b387dc883f2f406a52e3af15199425e7b7c7b542d6",
+      "project_id": "mid-atlantic:pjm:s2839",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "40db1384d88f1b6d922d93beaf870ea61781afbbc8d22f789598bd553a624370",
+      "old_project_facts_sha256": "44b7425a4d7bb42bd1885e248f73910144f34e492759af4902610fdb1766ee64",
+      "project_id": "mid-atlantic:pjm:s2900",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "590f723d8388927f2596e767b13e3a927b5e6617b49021aaee062d2cb28d0622",
+      "old_project_facts_sha256": "f1c3dea5bfcd56c583b0d864e31cff104a994d3c7bc2fc1298f26e03089ebe69",
+      "project_id": "mid-atlantic:pjm:s2975",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "19b7b3e49228fc4075b51d5c04406ee69718a2145ed6cc7f156202c7d55987b9",
+      "old_project_facts_sha256": "c1183a925e02021c89a09457b42b5ed8616088206777dfc910e2f1799599f0b3",
+      "project_id": "mid-atlantic:pjm:s3180.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "bd105f70bfb8ef39736b6be85d334b5979c22bab53e6b1180bda80cea94ab397",
+      "old_project_facts_sha256": "83eaa2262062df1339e9c176b47a012fddf5ef5ac84494aba1ddc04e86a88117",
+      "project_id": "mid-atlantic:pjm:b3800.38",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "f858e43807c3431a41a5ad3e06c8cedfb4b923ecd1f3e47ac0e22100d92e1afc",
+      "old_project_facts_sha256": "37591d909ab29f37ea39f14e79ca372654815485b128bbeec4caf17cd48314f3",
+      "project_id": "mid-atlantic:pjm:b3855.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "8ee0a5946ce27ab2c29a51dd6bf03c5227f1d8f84284de43774acc6656d9cf23",
+      "old_project_facts_sha256": "eaafde00b86034ca1964691d1abe57516b412262835ac81be6f6822021e60efd",
+      "project_id": "mid-atlantic:pjm:b3855.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "c40cc90eec3c97142ada4271248aab4b0f2be301bf1916762e823f2a39a8ab8e",
+      "old_project_facts_sha256": "2441c4c19b04c93ce6910fc784931af2a0f270beb5c70ad90fcb553fdb85db91",
+      "project_id": "mid-atlantic:pjm:b3907.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0573f0522695c50946343ad2a5a7876df01fe3ad7d5364f9091a31ffd8a0ae49",
+      "old_project_facts_sha256": "486d8dc1fc724e8911831afaaeee804fd035a6ede0e33e704d136e204d68c08e",
+      "project_id": "mid-atlantic:pjm:b3907.2",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "b1e85406db59f3154214ac78d98178ce98c5969ab99c85ee32b87a24b4af3de8",
+      "old_project_facts_sha256": "fe230003cdb4144d6057b438e96d454b03ba4884f4ff4da128892f5e0d8f86e7",
+      "project_id": "mid-atlantic:pjm:b3907.3",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "702984f8f10129515224b912f499e6a93be419dbd2f9d1092eba8b8011b8a4ba",
+      "old_project_facts_sha256": "a76b15c757d17ecab3b0617a754c34925f97bc01b6df13ab40eac3e1f99258ac",
+      "project_id": "mid-atlantic:pjm:b4053.29",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4113bc5782e57abd11f250009d844acb03ed36481c5d06182853ca5f946d938f",
+      "old_project_facts_sha256": "c9e46254924c6e2826377f94ddf3ed02579d6acf0911f50ad575772932fc65d6",
+      "project_id": "mid-atlantic:pjm:n4658",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "5ca0a5dc165eb47be3764747c72cdacb4ce9a772f2a821aa6a1c550a783e6988",
+      "old_project_facts_sha256": "71dee8a92b34f74921b71f9cae7ef272e39328be5b0c6cbc413f73d7854dfac2",
+      "project_id": "mid-atlantic:pjm:n4663",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "6221d70922ddfbfb7396d5798478a2f898305d54e9827ee839ee13af9f88c7ae",
+      "old_project_facts_sha256": "7e179aa3a0738b036d45cbaf38b8ca8a62d6a7fcb6b2e2757c802894f01b0e4e",
+      "project_id": "mid-atlantic:pjm:n4668",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "19530a2c75d303f86f2ea16772d42c87ad4eaf5e60025c5549002b65683630f4",
+      "old_project_facts_sha256": "20654a40eb9a11fbc1eadc8af83908269098c5f75f5c4b811f4667043db47322",
+      "project_id": "mid-atlantic:pjm:n8222.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "3e049c0cd20be988663889e8f7a87c3fac4e90682bf0618552105ccc48cb6cd6",
+      "old_project_facts_sha256": "c3d3d0efd99f1df441e890e0ca075fcda540921421cbdfa50ae225e89ad08905",
+      "project_id": "mid-atlantic:pjm:s0275",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "d7638aa1e044bbd0935c56a0e1787ae6710734131169b588262cb87c69e67918",
+      "old_project_facts_sha256": "00a1e65c05bc6f3acb2f46613c5f053c93132fdd326c1b4bf232c884c3f7857c",
+      "project_id": "mid-atlantic:pjm:s3185.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "70a7c8e613559145b31d3ff6ff03676ece49d5ab76ef080a0ed9c8f918192c4e",
+      "old_project_facts_sha256": "ea991842bc5c9d6561254fe00c412a6d16a29cb39e0108060700d513d30bffe6",
+      "project_id": "mid-atlantic:pjm:s3186.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "057dc5404278bfb311c921593873d926776061e428886eae56f0e08896c53b2c",
+      "old_project_facts_sha256": "b2ff5c0f424cda36db0abcaeb5b32359f8d28ddd4c84bc51aab888b3a9245d20",
+      "project_id": "mid-atlantic:pjm:s3272.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0b402157514a7bb5e5cfa82f801b967e75926e32a50c7abbfb62569ee758fe80",
+      "old_project_facts_sha256": "d08ff6a95290688eda0443f8eaf4bf3b15e77a67e308b932c730b27f381e4774",
+      "project_id": "mid-atlantic:pjm:s3384.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "24af118e05fa92fde4043d9c7fa9daf0d1592486e9c48eeffe6f220f1f479575",
+      "old_project_facts_sha256": "2245e31fbe31e9de12b1d61091092781e068dd6eb8182cc98fa99605f0d23147",
+      "project_id": "mid-atlantic:pjm:s3385.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "4ed995e7e2a70a8b83155a8f221180b7e7b0a09c0bb07cbfd7bbc5ce242dff32",
+      "old_project_facts_sha256": "62bc5ae3da9d76d5e75a70db30950656106c44af26cd761496a202d9d8b65331",
+      "project_id": "mid-atlantic:pjm:s3532.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "0c850f1f7ff7a98f4e143fabef11ec812f2cb7fd0dc26539bd56ddc3bb01d55b",
+      "old_project_facts_sha256": "c7cd917b38e3a87e6accfe0d12313b9a035c8e07aa73ec94b9fa1ac075415004",
+      "project_id": "mid-atlantic:pjm:s3533.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "7187443decf4ff5c911acba9ea2138deb204c9684a627e67cfd6bc97157ba25a",
+      "old_project_facts_sha256": "5b1c5003c88fea0ff461b1ea27d53767b83e0141c320e4a797850f0f6058eee0",
+      "project_id": "mid-atlantic:pjm:s3615.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    },
+    {
+      "new_project_facts_sha256": "03df38efd5fbd97ddff1921f5936084edbd28863a4f4c18abe236d150e72f335",
+      "old_project_facts_sha256": "f747571b7fa09a3209753a846095101c7976184f86bfc118b84ca7a7b1c8a22e",
+      "project_id": "mid-atlantic:pjm:s3619.1",
+      "sole_change": "Added evidence.source_sha256 equal to independently pinned original PJM XML artifact hash."
+    }
+  ],
+  "locations_with_appended_independent_review": 263,
+  "reviewed_at": "2026-09-27T02:45:18.652773+00:00",
+  "reviewed_locations_file_sha256": "696cbeb68c0d139f8eb8acb00dc5850ea799264a871848a132e22391fbb46304",
+  "reviewer": "f38_contract_review"
+}

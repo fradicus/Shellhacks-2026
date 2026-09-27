@@ -1,0 +1,31 @@
+{
+  "acquisition": "PJM all 15,662 direct XML rows completely enumerated; five separately bounded NY case documents, one accepted project each, unknown wider denominators remain null. Complete acquired XML does not imply complete statewide publication.",
+  "baseline_dataset": "6373fc13414a73a59ca156ecbeac95574d578027",
+  "baseline_projects_checked": 1286,
+  "baseline_sha256": "7d017e203f5b3da1abbc7d80057ba7598450a905079e37541d474334e0ac3628",
+  "c27_scope": "Current repository data/southeast/releases/active.json absent at review; C27 currently adds no release. Later F39 additions require the runtime full-snapshot collision gates; this review makes no claim about unpublished candidates.",
+  "checks": "All accepted source hashes and exact row locators, source counts, project hashes, exact independently reviewed location records and review times, independent producer/reviewer separation, 768 typed events and their retained actual/planned semantics, null input centers, geography and unknown NY lifecycle fields verified. Original EPSG:3395 transforms independently reproduced by pyproj/Fiona on all 1,813 regional points.",
+  "dispositions": {
+    "accepted": 275,
+    "excluded": 15392
+  },
+  "distinct_facilities": 62,
+  "distinct_map_positions": 65,
+  "identity": "All 270 original PJM UpgradeId/raw rows independently compared; all five NY original case identity pages and acquired public project-description PDFs independently read; correct owner/agent distinction. Native component IDs remain separate supported work records even when sharing a facility/parent. No exact/native/normalized-name collision in the entire 1,286-project current national baseline.",
+  "limitations": "Historical planning-scale facility sites/endpoints, not surveyed equipment or route geometry; no DC confirmed point; sparse inland PA/NY coverage; nine source-backed project locations unresolved; current NY construction status and prior comparable source vintages unknown.",
+  "location_review_decisions": {
+    "complete": 3,
+    "confirmed": 266,
+    "insufficient": 2,
+    "partial": 8,
+    "site": 255
+  },
+  "primary_source_artifacts_checked": 6,
+  "release_facts_sha256": "756d43aa2f6217001cf1702b9a86cadf6088b113804c58faa2641df39cab0db0",
+  "release_id": "mid-atlantic-2026-09-27-01",
+  "reviewed_at": "2026-09-27T02:46:22.973774+00:00",
+  "reviewer": "f38_contract_review",
+  "source_project_identities_checked": 275,
+  "source_rows_independently_reconciled": 15667,
+  "unlocated_new_projects": 9
+}

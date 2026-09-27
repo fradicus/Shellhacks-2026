@@ -1,0 +1,143 @@
+[
+  {
+    "native_id": "25-T-0184",
+    "project_id": "mid-atlantic:nypsc:25-T-0184",
+    "project_facts_sha256": "3f1985159c21f954d20dca573cdec092514d66eeb60e1a984dab4f3052b38df9",
+    "project_facts_decision": "accepted",
+    "source_boundary_decision": "accepted bounded public native case document; current status and in-service unknown",
+    "location_review": {
+      "id": "ny-independent-sourcehash-25-T-0184-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:44:20.208228+00:00",
+      "decision": "insufficient",
+      "facts_sha256": "7173496e97f57426c9740701709b526e3f9ffe04bcab8bf366500be58a3b7324",
+      "reason": "Clay facility identity and coordinate are supported, but the native case combines four lines/eight segments plus a new substation. A single endpoint of Lighthouse Hill–Clay #7 cannot establish the center of the complete case under this line-only record. Preserve candidate; await explicit component representation. Black River station is not the northern construction endpoint. Verified the sole project change is evidence.source_sha256, exactly matching the pinned original primary PDF source hash and existing raw evidence. Decision unchanged."
+    },
+    "superseded_location_reviews": [
+      {
+        "id": "ny-independent-25-T-0184-20260927",
+        "reviewer": "f38_grid_research",
+        "reviewed_at": "2026-09-27T02:35:21.293398+00:00",
+        "decision": "insufficient",
+        "facts_sha256": "034759c8f35941a5d98bf7cd246e999304fdae6758b90408d15bf6ec535f88d3",
+        "reason": "Clay facility identity and coordinate are supported, but the native case combines four lines/eight segments plus a new substation. A single endpoint of Lighthouse Hill–Clay #7 cannot establish the center of the complete case under this line-only record. Preserve candidate; await explicit component representation. Black River station is not the northern construction endpoint."
+      }
+    ]
+  },
+  {
+    "native_id": "23-T-0660",
+    "project_id": "mid-atlantic:nypsc:23-T-0660",
+    "project_facts_sha256": "9c5091a99607abe1a76f1ed6d5422d15e8f40a37521bd4d95014edd509922a6d",
+    "project_facts_decision": "accepted",
+    "source_boundary_decision": "accepted bounded public native case document; current status and in-service unknown",
+    "location_review": {
+      "id": "ny-independent-sourcehash-23-T-0660-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:44:20.208228+00:00",
+      "decision": "confirmed",
+      "facts_sha256": "137b1690091fc301997c5452aa563b00df341bd07bd0eb10432f8a1b742abae3",
+      "reason": "Public E-1-2 explicitly extends rebuilt Segment 5 of paired Lines 24/25 to Pannell Station. The government GIS point matches Pannell in Monroe County and the Fairport/Perinton project area; 115 kV GIS value is inferred and is not treated as measured corroboration. Approve only this historical facility point as one partial endpoint of the paired line rebuild. Mortimer and ancillary shared-right-of-way circuits remain unlocated. Original EPSG:3857 and transform independently checked; uncertainty unknown. Current lifecycle status remains unknown. Verified the sole project change is evidence.source_sha256, exactly matching the pinned original primary PDF source hash and existing raw evidence. Decision unchanged."
+    },
+    "superseded_location_reviews": [
+      {
+        "id": "ny-independent-23-T-0660-20260927",
+        "reviewer": "f38_grid_research",
+        "reviewed_at": "2026-09-27T02:35:21.293398+00:00",
+        "decision": "confirmed",
+        "facts_sha256": "7ac349916e6556071cd280f673128532007bff4adc4c4541621c907feb0f0739",
+        "reason": "Public E-1-2 explicitly extends rebuilt Segment 5 of paired Lines 24/25 to Pannell Station. The government GIS point matches Pannell in Monroe County and the Fairport/Perinton project area; 115 kV GIS value is inferred and is not treated as measured corroboration. Approve only this historical facility point as one partial endpoint of the paired line rebuild. Mortimer and ancillary shared-right-of-way circuits remain unlocated. Original EPSG:3857 and transform independently checked; uncertainty unknown. Current lifecycle status remains unknown."
+      }
+    ]
+  },
+  {
+    "native_id": "25-T-0238",
+    "project_id": "mid-atlantic:nypsc:25-T-0238",
+    "project_facts_sha256": "d83652c01d0889f36f831adeb319475c1efceee9ea7d11e0dc928fb53c1d3474",
+    "project_facts_decision": "accepted",
+    "source_boundary_decision": "accepted bounded public native case document; current status and in-service unknown",
+    "location_review": {
+      "id": "ny-independent-sourcehash-25-T-0238-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:44:20.208228+00:00",
+      "decision": "insufficient",
+      "facts_sha256": "a9305bce66b2bee315138f6640c78b9db1f52c3b5f0947840dfcea0c00b173fd",
+      "reason": "Public glossary links proposed Line 961 to proposed Oakdale after an expansion undertaken as a separate project, within a larger case also covering other lines and underbuild. Historical existing Oakdale point does not establish the expanded termination or a center for the whole case. Preserve candidate until component scope and proposed termination are resolved. Verified the sole project change is evidence.source_sha256, exactly matching the pinned original primary PDF source hash and existing raw evidence. Decision unchanged."
+    },
+    "superseded_location_reviews": [
+      {
+        "id": "ny-independent-25-T-0238-20260927",
+        "reviewer": "f38_grid_research",
+        "reviewed_at": "2026-09-27T02:35:21.293398+00:00",
+        "decision": "insufficient",
+        "facts_sha256": "e3f275bfc809dedaf70c4435dfbf585906c53734708b144b67a2e612ba5ae3db",
+        "reason": "Public glossary links proposed Line 961 to proposed Oakdale after an expansion undertaken as a separate project, within a larger case also covering other lines and underbuild. Historical existing Oakdale point does not establish the expanded termination or a center for the whole case. Preserve candidate until component scope and proposed termination are resolved."
+      }
+    ]
+  },
+  {
+    "native_id": "25-T-0241",
+    "project_id": "mid-atlantic:nypsc:25-T-0241",
+    "project_facts_sha256": "f48dd2d0d6d279bdf896f8204e25a0b3fe3d39422f8e1682f0df7d6dc6563020",
+    "project_facts_decision": "accepted",
+    "source_boundary_decision": "accepted bounded public native case document; current status and in-service unknown",
+    "location_review": {
+      "id": "ny-independent-sourcehash-25-T-0241-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:44:20.208228+00:00",
+      "decision": "confirmed",
+      "facts_sha256": "889da6d451bd1d6f255f96820bcbb7d9d039bc957380a8d05d5d3b3a85c69c0a",
+      "reason": "E-1-2 explicitly connects the new line to Oakwood and its west end to Woodbury Terminal South. Independently acquired public glossary page 3 identifies Oakwood as the applicant’s existing 138 kV substation in Huntington, Suffolk County, corroborating the NOAA named facility and town. Approve Oakwood as one partial endpoint at historical planning scale 1:80,000. NOAA owner/voltage remain unknown; glossary facts do not fill those source attributes. Woodbury Terminal South remains unlocated; do not substitute Syosset station. Original EPSG:3395 and independent ellipsoidal inverse checked; uncertainty unknown; current lifecycle status unknown. Rechecked the original PDF applicant/agency wording: LIPA is the named utility; PSEG Long Island acts on its behalf. The owner/agent split is supported. No coordinate or scope changed. Verified the sole project change is evidence.source_sha256, exactly matching the pinned original primary PDF source hash and existing raw evidence. Decision unchanged."
+    },
+    "prior_location_review": {
+      "id": "ny-independent-25-T-0241-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:35:21.293398+00:00",
+      "decision": "confirmed",
+      "facts_sha256": "e5a6024a79241292afc6d216b388a38f527f698c98b1d5d766865cf557cde0e7",
+      "reason": "E-1-2 explicitly connects the new line to Oakwood and its west end to Woodbury Terminal South. Independently acquired public glossary page 3 identifies Oakwood as the applicant’s existing 138 kV substation in Huntington, Suffolk County, corroborating the NOAA named facility and town. Approve Oakwood as one partial endpoint at historical planning scale 1:80,000. NOAA owner/voltage remain unknown; glossary facts do not fill those source attributes. Woodbury Terminal South remains unlocated; do not substitute Syosset station. Original EPSG:3395 and independent ellipsoidal inverse checked; uncertainty unknown; current lifecycle status unknown."
+    },
+    "superseded_location_reviews": [
+      {
+        "id": "ny-independent-owner-25-T-0241-20260927",
+        "reviewer": "f38_grid_research",
+        "reviewed_at": "2026-09-27T02:40:07.908686+00:00",
+        "decision": "confirmed",
+        "facts_sha256": "5bf1a113f56f1abf40d5abe7e1aa2c644d8286fb8530b4fee4de5bac52a58067",
+        "reason": "E-1-2 explicitly connects the new line to Oakwood and its west end to Woodbury Terminal South. Independently acquired public glossary page 3 identifies Oakwood as the applicant’s existing 138 kV substation in Huntington, Suffolk County, corroborating the NOAA named facility and town. Approve Oakwood as one partial endpoint at historical planning scale 1:80,000. NOAA owner/voltage remain unknown; glossary facts do not fill those source attributes. Woodbury Terminal South remains unlocated; do not substitute Syosset station. Original EPSG:3395 and independent ellipsoidal inverse checked; uncertainty unknown; current lifecycle status unknown. Rechecked the original PDF applicant/agency wording: LIPA is the named utility; PSEG Long Island acts on its behalf. The owner/agent split is supported. No coordinate or scope changed."
+      }
+    ]
+  },
+  {
+    "native_id": "24-T-0113",
+    "project_id": "mid-atlantic:nypsc:24-T-0113",
+    "project_facts_sha256": "710cf02f3fcf0db3593db8b70c853c405f065745cba3ab4c78e0b752cf0115fe",
+    "project_facts_decision": "accepted",
+    "source_boundary_decision": "accepted bounded public native case document; current status and in-service unknown",
+    "location_review": {
+      "id": "ny-independent-sourcehash-24-T-0113-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:44:20.208228+00:00",
+      "decision": "confirmed",
+      "facts_sha256": "5ba2e875473624463120ed281b7ca5666c8b7ed5b0c5fdcc8b8bd57ffb12b99e",
+      "reason": "Appendix B page 1 explicitly describes the new line between existing Southampton and Deerfield stations in Southampton, Suffolk County, with 138 kV design and initial 69 kV operation. NOAA Southampton point matches town and 69 kV source values. Approve only Southampton as one partial endpoint at historical planning scale 1:80,000; Deerfield unlocated. Marshalling yard address is excluded. Original EPSG:3395 and independent ellipsoidal inverse checked; uncertainty unknown; current lifecycle status unknown. Rechecked the original PDF applicant/agency wording: LIPA is the named utility; PSEG Long Island acts on its behalf. The owner/agent split is supported. No coordinate or scope changed. Verified the sole project change is evidence.source_sha256, exactly matching the pinned original primary PDF source hash and existing raw evidence. Decision unchanged."
+    },
+    "prior_location_review": {
+      "id": "ny-independent-24-T-0113-20260927",
+      "reviewer": "f38_grid_research",
+      "reviewed_at": "2026-09-27T02:35:21.293398+00:00",
+      "decision": "confirmed",
+      "facts_sha256": "cff51a0b26367b1ed9dc9cca5a3421a1dcd55815177f2a4a86f138758b6616d3",
+      "reason": "Appendix B page 1 explicitly describes the new line between existing Southampton and Deerfield stations in Southampton, Suffolk County, with 138 kV design and initial 69 kV operation. NOAA Southampton point matches town and 69 kV source values. Approve only Southampton as one partial endpoint at historical planning scale 1:80,000; Deerfield unlocated. Marshalling yard address is excluded. Original EPSG:3395 and independent ellipsoidal inverse checked; uncertainty unknown; current lifecycle status unknown."
+    },
+    "superseded_location_reviews": [
+      {
+        "id": "ny-independent-owner-24-T-0113-20260927",
+        "reviewer": "f38_grid_research",
+        "reviewed_at": "2026-09-27T02:40:07.908686+00:00",
+        "decision": "confirmed",
+        "facts_sha256": "3653c812c6fe220cc0e2e6ede5b21341d70f60b31fae599c183c80b3d78059b8",
+        "reason": "Appendix B page 1 explicitly describes the new line between existing Southampton and Deerfield stations in Southampton, Suffolk County, with 138 kV design and initial 69 kV operation. NOAA Southampton point matches town and 69 kV source values. Approve only Southampton as one partial endpoint at historical planning scale 1:80,000; Deerfield unlocated. Marshalling yard address is excluded. Original EPSG:3395 and independent ellipsoidal inverse checked; uncertainty unknown; current lifecycle status unknown. Rechecked the original PDF applicant/agency wording: LIPA is the named utility; PSEG Long Island acts on its behalf. The owner/agent split is supported. No coordinate or scope changed."
+      }
+    ]
+  }
+]

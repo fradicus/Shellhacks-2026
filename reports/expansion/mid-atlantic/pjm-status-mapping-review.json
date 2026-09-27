@@ -1,0 +1,282 @@
+{
+  "observations": [
+    {
+      "bytes": 21089,
+      "checked_native_ids": [
+        "b2597",
+        "b2598",
+        "b2604.1",
+        "b2604.10",
+        "b2604.11",
+        "b2604.2",
+        "b2604.5",
+        "b2604.7",
+        "b2604.8",
+        "b2743.1"
+      ],
+      "file": "status-engineering-and-procurement.html",
+      "icons": [
+        "engineering-procurement"
+      ],
+      "request": {
+        "GridName": "CostAllocation",
+        "ItemType": 0,
+        "Items": [
+          {
+            "Filter": [
+              "Engineering%20%26%20Procurement"
+            ],
+            "FilterName": "Status",
+            "IsSingleItem": false,
+            "ItemType": 3
+          }
+        ],
+        "Paginator": {
+          "CurrentItmsPerPageValue": "10",
+          "CurrentPageIndex": "0",
+          "ItemType": 7
+        },
+        "RelatedGridsFilters": null,
+        "Sort": "UpgradeId",
+        "SortDirection": "asc"
+      },
+      "retrieved_at": "2026-09-27T02:35:14.225372+00:00",
+      "sha256": "9ec493b46f3916d1ef78ca2a99289624e8c90d59faa56cc94ceefbe5ee366fed",
+      "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+      "xml_codes": [
+        "EP"
+      ]
+    },
+    {
+      "bytes": 21982,
+      "checked_native_ids": [
+        "b1570.3",
+        "b1696",
+        "b1696.2",
+        "b2361",
+        "b2443.6",
+        "b2604.3",
+        "b2604.4",
+        "b2604.6",
+        "b2604.9",
+        "b2793"
+      ],
+      "file": "status-under-construction.html",
+      "icons": [
+        "immediate_need",
+        "under-construction"
+      ],
+      "request": {
+        "GridName": "CostAllocation",
+        "ItemType": 0,
+        "Items": [
+          {
+            "Filter": [
+              "Under%20Construction"
+            ],
+            "FilterName": "Status",
+            "IsSingleItem": false,
+            "ItemType": 3
+          }
+        ],
+        "Paginator": {
+          "CurrentItmsPerPageValue": "10",
+          "CurrentPageIndex": "0",
+          "ItemType": 7
+        },
+        "RelatedGridsFilters": null,
+        "Sort": "UpgradeId",
+        "SortDirection": "asc"
+      },
+      "retrieved_at": "2026-09-27T02:35:14.217307+00:00",
+      "sha256": "1678f8b3b37b655873fa897fbf721a370b992cb572407e7a9ba745e87e95678e",
+      "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+      "xml_codes": [
+        "UC"
+      ]
+    },
+    {
+      "bytes": 20371,
+      "checked_native_ids": [
+        "b3869.3",
+        "b3905.1",
+        "b3905.2",
+        "b3938.1",
+        "b3938.2",
+        "b3938.3",
+        "b3938.6",
+        "b3939.1",
+        "b3939.2",
+        "b3939.3"
+      ],
+      "file": "status-planning.html",
+      "icons": [
+        "planning"
+      ],
+      "request": {
+        "GridName": "CostAllocation",
+        "ItemType": 0,
+        "Items": [
+          {
+            "Filter": [
+              "Planning"
+            ],
+            "FilterName": "Status",
+            "IsSingleItem": false,
+            "ItemType": 3
+          }
+        ],
+        "Paginator": {
+          "CurrentItmsPerPageValue": "10",
+          "CurrentPageIndex": "0",
+          "ItemType": 7
+        },
+        "RelatedGridsFilters": null,
+        "Sort": "UpgradeId",
+        "SortDirection": "asc"
+      },
+      "retrieved_at": "2026-09-27T02:35:14.216717+00:00",
+      "sha256": "2efb435308947d20b3b1601e893b7e96aa9a1cd6dddd70c997737166208ed342",
+      "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+      "xml_codes": [
+        "PL"
+      ]
+    },
+    {
+      "bytes": 19573,
+      "checked_native_ids": [
+        "n0613",
+        "n1030",
+        "n1054",
+        "n1055",
+        "n1056",
+        "n1178",
+        "n1179",
+        "n1180",
+        "n1181",
+        "n1271"
+      ],
+      "file": "status-active.html",
+      "icons": [
+        "active"
+      ],
+      "request": {
+        "GridName": "CostAllocation",
+        "ItemType": 0,
+        "Items": [
+          {
+            "Filter": [
+              "Active"
+            ],
+            "FilterName": "Status",
+            "IsSingleItem": false,
+            "ItemType": 3
+          }
+        ],
+        "Paginator": {
+          "CurrentItmsPerPageValue": "10",
+          "CurrentPageIndex": "0",
+          "ItemType": 7
+        },
+        "RelatedGridsFilters": null,
+        "Sort": "UpgradeId",
+        "SortDirection": "asc"
+      },
+      "retrieved_at": "2026-09-27T02:35:14.571428+00:00",
+      "sha256": "a44abd6949eac8255d03746f8998669dabdd3f1ef73715207e6bb5f53e031a4e",
+      "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+      "xml_codes": [
+        "Active"
+      ]
+    },
+    {
+      "bytes": 11966,
+      "checked_native_ids": [
+        "n8733.0",
+        "n8734.0",
+        "n8735.0",
+        "n8736.0",
+        "n8737.0",
+        "n8738.0"
+      ],
+      "file": "status-partially-in-service---under-construction.html",
+      "icons": [
+        "partially-in-service"
+      ],
+      "request": {
+        "GridName": "CostAllocation",
+        "ItemType": 0,
+        "Items": [
+          {
+            "Filter": [
+              "Partially%20In%20Service%20-%20Under%20Construction"
+            ],
+            "FilterName": "Status",
+            "IsSingleItem": false,
+            "ItemType": 3
+          }
+        ],
+        "Paginator": {
+          "CurrentItmsPerPageValue": "10",
+          "CurrentPageIndex": "0",
+          "ItemType": 7
+        },
+        "RelatedGridsFilters": null,
+        "Sort": "UpgradeId",
+        "SortDirection": "asc"
+      },
+      "retrieved_at": "2026-09-27T02:35:14.558637+00:00",
+      "sha256": "db3e8746de2bba10365b68329bdec53cacba328e0ef66c0eee97a8e303a7c208",
+      "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+      "xml_codes": [
+        "UC-ISP"
+      ]
+    },
+    {
+      "bytes": 11823,
+      "checked_native_ids": [
+        "n4381",
+        "n5088",
+        "n5089",
+        "n5090",
+        "n5091",
+        "n5092"
+      ],
+      "file": "status-withdrawn.html",
+      "icons": [
+        "withdrawn"
+      ],
+      "request": {
+        "GridName": "CostAllocation",
+        "ItemType": 0,
+        "Items": [
+          {
+            "Filter": [
+              "Withdrawn"
+            ],
+            "FilterName": "Status",
+            "IsSingleItem": false,
+            "ItemType": 3
+          }
+        ],
+        "Paginator": {
+          "CurrentItmsPerPageValue": "10",
+          "CurrentPageIndex": "0",
+          "ItemType": 7
+        },
+        "RelatedGridsFilters": null,
+        "Sort": "UpgradeId",
+        "SortDirection": "asc"
+      },
+      "retrieved_at": "2026-09-27T02:35:14.579470+00:00",
+      "sha256": "558f69ef9e5495cba1526ba91daac55a2d7f3500c6213f3409aaae1c9d2f9097",
+      "url": "https://www.pjm.com/m/ProjectConst/CostAllocResetGrdBody",
+      "xml_codes": [
+        "W"
+      ]
+    }
+  ],
+  "reviewed_at": "2026-09-27T02:41:08.068934+00:00",
+  "reviewer": "f38_contract_review",
+  "semantics": "Read pinned PJM construction status legend: Active denotes queue upgrade with system impact study but no executed agreements, not active construction; Engineering & Procurement is engineering/design/materials stage; actual service, planned/revised/required service and ISA dates remain distinct."
+}

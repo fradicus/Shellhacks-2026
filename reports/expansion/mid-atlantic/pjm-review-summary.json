@@ -1,0 +1,21 @@
+{
+  "corrections": "Added source-specific independent identity rationales. Added PJM PDF corroboration for New Freedom and Oyster Creek, explicitly correcting misleading NOAA CITY labels. Corrected complete and partial line endpoint roles to source name order. Six ambiguous point matches withheld; multisite project retained without a location record.",
+  "limits": "NOAA dated 2017/processed 2018, coastal coverage only, intended maximum scale 1:80000, numerical uncertainty unknown, no owner attribute, contains substations and taps. PJM component IDs may share facilities/parent projects; counts are source projects, not unique facilities. No CEII locations, authenticated maps, PSEG/MPRP material, guessed geometry, invented dates, dollars or owners used.",
+  "locations_confirmed": 263,
+  "locations_pending": 7,
+  "maximum_transform_disagreement_degrees": 0.0,
+  "original_coordinate_transforms_independently_checked": 1813,
+  "reviewed_at": "2026-09-27T02:41:08.068934+00:00",
+  "reviewed_outputs": {
+    "additional-identity-source-manifest.json": "318ac8f1ea0c3f61cff08290ff94cfbcf12cea20a4624f567b880287498eaf55",
+    "candidate-decisions.json": "71e9ff74032881dff4cb0150092320c87ccaba667acae9859c89f9ad7c079630",
+    "normalization-review.json": "4fea5b2cf80c08cdb04e2d3523a66dd3c2cecd4f16452a6afce559dc7d39c41d",
+    "originals-and-crs-review.json": "923ffda656c30f1edb5c5313d87f42e4c06f4f0e3a12bbe54b1575f2036d1afa",
+    "pending-location-decisions.json": "e28923d73ed7731662c48da53c893eed332bc6b46e99d6dd06ce3116e642c2b2",
+    "pjm-reviewed-locations.json": "0affa8df451b99827be82a9048622c14386802734d291cd5b9653781e3b9c366",
+    "status-mapping-review.json": "92c7dcf715c85175d1fc8e0e8c4b7f4f04ec3c49dc04f2a177594b5323adcbc5"
+  },
+  "reviewer": "f38_contract_review",
+  "source_projects_verified": 270,
+  "status_mapping_pinned_and_independently_checked": true
+}
