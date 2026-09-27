@@ -15,7 +15,8 @@ cut: never
 
 MN, WI, MI, IL, IN, OH, PA and NY, in that order, per [C26](../../decisions/C26-great-lakes-candidates.md). The user's
 target is ~5,000 map points; it is a target, not a quota. F38's source, identity, history and no-invention rules apply;
-its location bar is relaxed only through C26's labeled candidate tier. Do not edit F38/F39 artifacts or releases.
+its location bar is relaxed only through C26's labeled candidate tier and, from part 4, C33's labeled unique-name
+tier and HIFLD fallback ([F40-hifld-c33](../../decisions/F40-hifld-c33.md)). Do not edit F38/F39 artifacts or releases.
 
 ## Plan
 

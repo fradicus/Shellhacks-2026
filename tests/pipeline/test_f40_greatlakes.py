@@ -274,3 +274,28 @@ def test_date_overlay_fills_only_unknown_dates():
         for pid, entry in load_json(REPO_ROOT / "data" / "greatlakes" / "dates" / f"{name}.json").items():
             assert projects[pid]["in_service"] == entry["in_service"]
             assert projects[pid]["in_service_evidence"] == entry["evidence"]
+
+
+def test_part4_keeps_c26_matches_and_loosens_only_what_c26_could_not_place(monkeypatch):
+    from greatlakes import hifld, shared
+
+    def site(fid, name, operator=None, voltage=None, lat=45.0, lon=-93.0):
+        return {"id": fid, "name": name, "norm": name.upper(), "operator": operator, "voltage": voltage, "state": "MN",
+                "lat": lat, "lon": lon}
+
+    line = {"kind": "line", "names": ["Edic", "Marcy"], "from": "name", "reason": None}
+    # C26: voltage corroborates another utility's substation; part 4 keeps that match (tie lines are real).
+    osm = [site("way/1", "Edic Substation", "New York Power Authority", "345000"),
+           site("way/2", "Marcy Substation", "National Grid", "345000", 43.1, -75.3)]
+    monkeypatch.setattr(hifld, "load", lambda states: [])
+    center, block = shared.locate_named(line, osm, ["NATIONAL GRID"], {345}, "test")
+    assert center["basis"] == "two" and [e["status"] for e in block["endpoints"]] == ["matched", "matched"]
+    # Uncorroborated but unique in the pool: a labeled C33 candidate.
+    center, block = shared.locate_named({"kind": "site", "names": ["Arpin"], "from": "name", "reason": None},
+                                        [site("way/3", "Arpin Substation")], [], set(), "test")
+    assert block["endpoints"][0]["corroboration"] == ["unique_in_state"]
+    # OSM has no such name: HIFLD's substation places it, and the evidence says HIFLD.
+    monkeypatch.setattr(hifld, "load", lambda states: [site("hifld/9", "GOODVIEW", voltage="161000")])
+    center, block = shared.locate_named({"kind": "site", "names": ["Goodview"], "from": "name", "reason": None},
+                                        [site("way/4", "Other Substation")], [], {161}, "test")
+    assert "HIFLD substation 9" in center["evidence"] and block["endpoints"][0]["facility"]["id"] == "hifld/9"

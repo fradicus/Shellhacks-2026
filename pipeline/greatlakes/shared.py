@@ -106,14 +106,38 @@ def locate(name: str, description: str | None, facilities: list[dict], keys: lis
 
 def locate_named(named: dict, facilities: list[dict], keys: list[str], kv: set[int], dataset: str
                  ) -> tuple[dict | None, dict]:
-    """Candidate from facility names already stated by the source (e.g. a table's From/To terminal columns)."""
-    matches = [match_facility(n, facilities, keys, kv) for n in named["names"]]
+    """Candidate from facility names already stated by the source (e.g. a table's From/To terminal columns).
+
+    Part 4 keeps every C26 match (operator/voltage corroborated) as it was. Only names C26 could not place are
+    loosened: an uncorroborated name unique in the pool becomes a C33 candidate, and a name OSM lacks is tried
+    against HIFLD's public substations. Those new matches, and only those, get C38's operator guard; a C26 tie line
+    may legitimately end at another utility's substation."""
+    from california.caiso import match  # C33/C38; imported here because caiso imports this module
+
+    from .hifld import load as hifld
+
+    fallback: list[dict] | None = None
+
+    def one(name: str | None) -> dict:
+        nonlocal fallback
+        hit = match_facility(name, facilities, keys, kv)
+        if hit["status"] == "not_corroborated":
+            return match(name, facilities, keys, kv)
+        if hit["status"] != "no_facility":
+            return hit
+        if fallback is None:
+            fallback = hifld(sorted({f["state"] for f in facilities}))
+        return match(name, fallback, keys, kv) if fallback else hit
+
+    matches = [one(n) for n in named["names"]]
     center = candidate_center(named["kind"], matches) if named["kind"] else None
+    if center and "OSM hifld/" in center["evidence"]:
+        center["evidence"] = center["evidence"].replace("OSM hifld/", "HIFLD substation ")
     fields = ("id", "name", "operator", "voltage", "state", "lat", "lon")
     endpoints = [{k: v for k, v in m.items() if k != "facility"}
                  | ({"facility": {f: m["facility"].get(f) for f in fields}} if m["status"] == "matched" else {})
                  for m in matches]
-    return center, {"rule": "C26", "kind": named["kind"], "names_from": named["from"], "reason": named["reason"],
+    return center, {"rule": "C33", "kind": named["kind"], "names_from": named["from"], "reason": named["reason"],
                     "voltages_kv": sorted(kv), "operator_keys": keys, "endpoints": endpoints, "dataset": dataset}
 
 
