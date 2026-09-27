@@ -483,29 +483,115 @@ p.unknown {
   }
 }
 
-/* One-page card with citations. */
+/* One-page card with citations: paper is dense and flat. The screen's display sizes, glows and roomy padding are
+   for a dark room; printed, they only cost pages. */
+@page {
+  margin: 11mm 12mm;
+}
+
 @media print {
   .page {
-    gap: 8px;
-    font-size: 11px;
+    gap: 6px;
+    font-size: 10px;
+    line-height: 1.35;
   }
   .card,
   .panel,
   .header {
     border-color: #999;
+    border-radius: 6px;
     box-shadow: none;
+    background: none;
     break-inside: avoid;
   }
   .header::after,
-  .card::before {
+  .card::before,
+  .panel::before {
     display: none;
   }
+  .header {
+    gap: 4px 16px;
+    padding: 8px 12px;
+  }
+  .names {
+    gap: 4px;
+  }
+  .pairName {
+    gap: 6px;
+    padding-left: 9px;
+  }
+  .nameText {
+    font-size: 15px;
+  }
   .big {
-    font-size: 40px;
+    font-size: 28px;
     text-shadow: none;
+  }
+  .headline {
+    gap: 3px 4px;
+  }
+  .headline > :nth-child(2) {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+  .header > .muted {
+    padding-top: 4px;
+    font-size: 9.5px;
+  }
+  .card {
+    padding: 8px 12px 10px;
+  }
+  .card h3 {
+    margin: 8px 0 4px;
+  }
+  .cardHead h2 {
+    font-size: 16px;
+  }
+  .factList {
+    gap: 3px;
+  }
+  .factList > li {
+    line-height: 1.35;
+  }
+  .sectionTitle {
+    margin: 2px 0 0;
+    font-size: 14px;
   }
   .panels {
     grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .panel {
+    padding: 8px 10px;
+  }
+  .panel h4 {
+    margin: 8px 0 3px;
+  }
+  .panelHead h3 {
+    font-size: 13px;
+  }
+  .side {
+    flex-basis: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .facts {
+    gap: 1px 8px;
+    margin-top: 6px;
+  }
+  .endpoint {
+    padding: 0 0 0 8px;
+  }
+  .basis {
+    margin-top: 5px;
+    padding: 4px 8px;
+  }
+  .evidence th,
+  .evidence td {
+    padding: 2px 0;
+  }
+  .muted {
+    font-size: 9px;
   }
   .raw,
   .rejected {
@@ -514,9 +600,10 @@ p.unknown {
   .quote summary {
     color: #000;
   }
-  .panel a[href^="http"]::after {
+  /* Spell out a link once, on the source line; every field below cites the same page. */
+  .facts a[href^="http"]::after {
     content: " (" attr(href) ")";
-    font-size: 9px;
+    font-size: 8px;
     overflow-wrap: anywhere;
   }
 }
