@@ -19,6 +19,7 @@ RESPONSE_SCHEMA = {"type": "object", "additionalProperties": False,
     "questions": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string", "minLength": 1}},
     "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
 }}
+DISTANCE_FACTS = ("match.distance_mi", "match.distance_display_mi", "match.drive_mi", "match.drive_display_mi")
 NUMBER = re.compile(r"(?<![A-Za-z0-9])[+-]?\d+(?:,\d{3})*(?:\.\d+)?(?:[eE][+-]?\d+)?%?")
 NUMBER_WORDS = re.compile(r"\b(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
                           r"thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|"
@@ -53,7 +54,7 @@ def typed_numbers_supported(text: str, cited: dict) -> bool:
         prefix = text[:token.start()].lower()
         eligible = {}
         if re.match(r"\s*(?:miles?|mi)\b", suffix):
-            eligible = {k: v for k, v in cited.items() if k in ("match.distance_mi", "match.distance_display_mi")}
+            eligible = {k: v for k, v in cited.items() if k in DISTANCE_FACTS}
         elif re.match(r"\s*days?\b", suffix):
             eligible = {k: v for k, v in cited.items() if k == "match.time_gap_days"}
         elif re.match(r"\s*kv\b", suffix):
@@ -65,8 +66,8 @@ def typed_numbers_supported(text: str, cited: dict) -> bool:
             eligible = {k: v for k, v in cited.items() if k.endswith((".native_id", ".owner_code"))}
         elif re.search(r"\b(?:gap|days?)\b", text, re.I):
             eligible = {k: v for k, v in cited.items() if k == "match.time_gap_days"}
-        elif re.search(r"\b(?:distance|miles?|apart)\b", text, re.I):
-            eligible = {k: v for k, v in cited.items() if k in ("match.distance_mi", "match.distance_display_mi")}
+        elif re.search(r"\b(?:distance|miles?|apart|drive|driving)\b", text, re.I):
+            eligible = {k: v for k, v in cited.items() if k in DISTANCE_FACTS}
         elif re.search(r"\b(?:date|milestone|in.service)\b", text, re.I):
             eligible = {k: v for k, v in cited.items() if k.endswith(".in_service") or k == "match.analysis_date"}
         allowed = set().union(*(numbers(v) for v in eligible.values()))

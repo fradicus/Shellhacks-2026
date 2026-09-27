@@ -87,12 +87,16 @@ def build_match_input(match: dict, projects_by_id: dict, locations_by_id: dict, 
         bindings[side] = {"project_id": project["_id"], "source": project["source"], "source_sha256": source["sha256"],
                           "endpoints": [{k: e.get(k) for k in ("_id", "project_id", "source_id", "endpoint_index", "norm",
                                        "lat", "lon", "confidence", "evidence", "osm_id", "osm_url")} for e in eps]}
-    computed = core.overlaps(prepared, match["analysis_date"])
+    drives = {match["_id"]: match["drive_mi"]} if "drive_mi" in match else None
+    computed = core.overlaps(prepared, match["analysis_date"], drives)
     if len(computed) != 1 or any(match.get(k) != value for k, value in computed[0].items()):
         raise ValueError("stale_match_facts")
     for name in ("distance_mi", "time_gap_days", "band", "view", "analysis_date"):
         facts.append({"id": f"match.{name}", "value": match[name]})
     facts.append({"id": "match.distance_display_mi", "value": f"{match['distance_mi']:.2f}"})
+    if drives:
+        facts.append({"id": "match.drive_mi", "value": match["drive_mi"]})
+        facts.append({"id": "match.drive_display_mi", "value": f"{match['drive_mi']:.2f}"})
     binding = {"version": INPUT_VERSION, "match_id": match["_id"],
                "rule_version": match["rule_version"], "projects": bindings}
     return {"facts": facts, "binding": binding, "input_hash": canonical_hash({"facts": facts, "binding": binding})}
